@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: 352c66ad34508d06d4673dab4ebc2b98a27649d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea1638b3dd97c97354eff64d0e33d6a4b84a0313
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216560"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175112"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 
@@ -64,7 +64,7 @@ Estas carpetas ocultas no están diseñadas para que los usuarios o administrado
 > 
 > Sin embargo, una copia del mensaje original sigue estando disponible en la carpeta oculta del buzón del grupo de la comunidad y es accesible con las búsquedas de exhibición de documentos electrónicos con fines de cumplimiento.
 
-Los mensajes de Yammer no se ven afectados por las directivas de retención que se configuran para los buzones de Exchange. Si bien los mensajes de Yammer se almacenan en Exchange, estos datos de Yammer se incluyen solo por una directiva de retención que está configurada para los **mensajes de la comunidad de Yammer** y las ubicaciones de los **mensajes privados de Yammer**.
+Los mensajes de Yammer no se ven afectados por las directivas de retención configuradas para buzones de Exchange. Aunque los mensajes de Yammer se almacenan en Exchange, estos datos de Yammer solo se incluyen mediante una directiva de retención configurada para las ubicaciones de **mensajes de la comunidad de Yammer** y **mensajes de usuario de Yammer**.
 
 > [!NOTE]
 > Si un usuario está incluido en una directiva de retención activa que retiene los datos de Yammer y usted elimina el buzón de un usuario incluido en esta directiva, dicho buzón se convierte en un [buzón inactivo](inactive-mailboxes-in-office-365.md) para retener los datos de Yammer. Si no necesita retener los datos de Yammer del usuario, excluya la cuenta del usuario de la directiva de retención antes de eliminar su buzón.
@@ -93,7 +93,7 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Rutas de contenido para la directiva de retención de solo retención
 
-1. **Si se edita o elimina un mensaje de Yammer**: se crea, de manera inmediata, una copia del mensaje original en la carpeta SubstrateHolds y se retiene ahí hasta que expire el periodo de retención. Luego, el mensaje se elimina de forma permanente e inmediata de la carpeta SubstrateHolds.
+1. **Si se edita o elimina un mensaje de Yammer**: se crea inmediatamente una copia del mensaje original en la carpeta SubstrateHolds y se conserva allí hasta que expire el período de retención. A continuación, el mensaje se elimina de forma permanente de la carpeta SubstrateHolds.
 
 2. **Si el mensaje de Yammer no se modifica ni se elimina** y se editan mensajes actuales durante el período de retención: no sucede nada antes ni después del período de retención. El mensaje permanece en su ubicación original.
 

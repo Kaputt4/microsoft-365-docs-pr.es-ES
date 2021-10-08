@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: 95939aa0ae967ba74861e631d6abfc6ecd50dbaf
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c428d070d0d4c20034a5a2a6ab94c8896549ea90
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934016"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176132"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -136,7 +136,7 @@ Asegúrese de que ha realizado lo siguiente en Microsoft 365 u Office 365:
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurar un conector desde Microsoft 365 u Office 365 hacia su servidor de correo electrónico
 
-Para crear un conector en Microsoft 365 u Office 365, haga clic en **Administración** y, luego, haga clic en **Exchange** para ir al Centro de administración de Exchange. A continuación, haga clic en **flujo de correo**, y en **conectores**.
+Para crear un conector en Microsoft 365 u Office 365, haga clic en **admin** y, a continuación, haga clic en **Exchange** para ir al Centro de administración de Exchange. A continuación, haga clic en **flujo de correo** y, a continuación, haga clic en **conectores**.
 
 Configure los conectores con el asistente.
 
@@ -189,6 +189,6 @@ Cuando finalice este paso, todo el correo electrónico enviado a usera@yourcompa
 
 ### <a name="step-10-move-mailbox-contents"></a>Paso 10: mover contenido del buzón de correo
 
-Como va a mover solo dos usuarios de prueba, y el usuario A y el usuario B usan Outlook, puede mover el correo electrónico abriendo el archivo .PST antiguo en el nuevo perfil de Outlook y copie los mensajes, los elementos de calendario, los contactos, etc. Para obtener más información, vea [Importar correo electrónico, contactos y calendario desde un archivo .pst de Outlook](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+Dado que solo va a mover dos usuarios de prueba y los usuarios A y B usan Outlook, puede mover el correo electrónico abriendo el antiguo . Archivo PST en el nuevo perfil de Outlook y copiando los mensajes, elementos de calendario, contactos, etc. Para obtener más información, vea [Importar correo electrónico, contactos y calendario desde un archivo .pst de Outlook](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 Una vez que se importan a las ubicaciones adecuadas en el buzón de correo de Microsoft 365, se puede acceder a ellos desde cualquier dispositivo y en cualquier lugar.

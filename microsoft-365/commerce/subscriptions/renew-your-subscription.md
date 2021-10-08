@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información acerca de cómo renovar la mayoría de la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
 ms.date: 05/04/2021
-ms.openlocfilehash: ee39c45529c4dbfa54ff0a12fcfe19d29bdef025
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a2f43433c883a5380f4f4f92921bc99e5bf9effb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59188361"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188438"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
@@ -42,9 +42,9 @@ Si ya ha comprado una clave de producto para la renovación en una tienda minori
   
 ## <a name="turn-recurring-billing-off-or-on"></a>Activar o desactivar la facturación periódica
 
-Si paga mediante tarjeta de crédito, la **facturación periódica** se activa de forma predeterminada. Cuando la **facturación periódica** está activada, la suscripción seguirá siendo facturada cada año el día en que se suscribió. Puede desactivar o volver a activar esta opción en el centro de administración mientras su suscripción esté activa.
+Si paga con tarjeta de crédito o cuenta bancaria, **facturación periódica** está activado de forma predeterminada. Cuando **facturación periódica** está activada, la suscripción se seguirá facturando cada año el día en que se haya suscrito. Puede desactivarla o volver a activarla en el centro de administración si la suscripción está activa.
   
-Si pagó por adelantado la suscripción con una clave de producto, expirará al final del período de suscripción. Puede activar la **facturación periódica** y proporcionar la información de su tarjeta de crédito o cuenta bancaria para que la suscripción se facture cada año el día en el que se suscribió. También tiene la opción de pagar cada mes o pagar por todo el año por adelantado. No se le realizará ningún cargo en la tarjeta de crédito ni en la cuenta bancaria hasta que no expire el período de suscripción inicial.
+Si ha pagado por adelantado su suscripción con una clave de producto, la suscripción expirará al final del período de suscripción. Puede activar **facturación periódica** y proporcionar información de tarjeta de crédito o cuenta bancaria para que la suscripción se siga facturando cada año el día en que se haya suscrito. También tiene la opción de pagar cada mes o de pagar todo el año por adelantado. La tarjeta de crédito o la cuenta bancaria no se cobrarán hasta que haya expirado el período de suscripción inicial.
 
 ::: moniker range="o365-worldwide"
 
@@ -71,7 +71,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
     > [!NOTE]
     >
-    > - Solo puede cambiar la **facturación periódica** para las suscripciones activas. Si la suscripción ya ha expirado o si está desactivada, tendrá que [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar la **facturación periódica**.
+    > - Solo puede cambiar la configuración de **facturación periódica** para las suscripciones activas. Si la suscripción ya ha expirado o está deshabilitada, deberá [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar **facturación periódica**.
     > - La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**. Si desea mantener la suscripción activada, debe pagar la factura manualmente.
     > - Si desactiva la **Facturación periódica**, la suscripción permanece activa hasta que expira. Puede ver la fecha de expiración en la página Detalles de la suscripción en la sección **Configuración de la suscripción y el pago**.
     > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).
@@ -79,6 +79,6 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Reactivar la suscripción](reactivate-your-subscription.md) (artículo)\
-[¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md) (artículo)\
+[¿Qué ocurre con mis datos y acceso cuando finaliza mi suscripción?](what-if-my-subscription-expires.md) (artículo)\
 [Especificar la clave de producto](../enter-your-product-key.md) (artículo)\
 [Comprar la versión de prueba de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) (artículo)

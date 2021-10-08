@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 search.appverid:
 - MET150
@@ -21,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-ms.openlocfilehash: f9af8ccf5a6a8cadfa192fdac5706de6c9d0890b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ae8dc1c1d2f603e81d2affd723df2be460a873de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164817"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -170,7 +171,7 @@ Ejemplo: `_sip._tls`
 
 Si el proveedor de host no ofrece estos campos para los registros SRV, debe especificarlos en el campo **Destino** del registro. (Nota: en función de su proveedor de host, el campo **Destino** puede llamarse de otra forma, como: **Contenido**, **Dirección IP** o **Host de destino**).
 
-Para agregar estos valores, cree una sola cadena, separando los valores con espacios y *en ocasiones con un punto* (si no está seguro, consulte con el proveedor). Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino.
+Para agregar estos valores, cree una sola cadena, con separación de los valores con espacios y *que terminen con un punto* (comuníquese con su proveedor si no está seguro). Los valores deben incluirse en este orden: Prioridad, Peso, Puerto, Destino.
 
 - Ejemplo 1: `100 1 443 sipdir.online.lync.com.`
 - Ejemplo 2: `100 1 443 sipdir.online.lync.com`
@@ -179,4 +180,4 @@ Para agregar estos valores, cree una sola cadena, separando los valores con espa
 
 [Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](change-nameservers-at-any-domain-registrar.md) (artículo)\
 [Buscar y corregir problemas después de agregar el dominio o los registros DNS](find-and-fix-issues.md) (artículo)\
-[Administrar dominios](index.yml) (página de vínculo)
+[Administrar dominios](/admin) (página de vínculo)

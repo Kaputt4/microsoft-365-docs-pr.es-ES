@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: 2851fd356efe4405d4355547f364f4a147cb26d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ce355b2780016dfd7732399546567696e7c2301
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59213920"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170816"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -73,7 +73,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
     Para obtener más información acerca de la configuración de las etiquetas, consulte [Qué pueden hacer las etiquetas de confidencialidad](sensitivity-labels.md#what-sensitivity-labels-can-do) en la parte de información general. Use la ayuda en el asistente para la configuración individual.
 
-5. Repita estos pasos para crear más etiquetas. Sin embargo, si desea crear una subetiqueta, seleccione la etiqueta principal primero y luego **...** para **Más acciones** y, a continuación, seleccione **Agregar subetiqueta**.
+5. Repita estos pasos para crear más etiquetas. Sin embargo, si desea crear una subetiqueta, primero seleccione la etiqueta principal y seleccione **...** para **Más acciones** y, a continuación, seleccione **Agregar subetiqueta**.
 
 6. Cuando haya creado todas las etiquetas que necesita, revise el pedido y, si es necesario, muévalos hacia arriba o hacia abajo. Para cambiar el orden de una etiqueta, seleccione **...** para **Más acciones** y, a continuación, seleccione **Subir** o **Bajar**. Para obtener más información, consulte [Prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters) en la parte de información general.
 
@@ -157,7 +157,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     > [!IMPORTANT]
     > Si selecciona una etiqueta, asegúrese de seleccionar también su etiqueta principal.
 
-4. Revise las etiquetas seleccionadas y para realizar cualquier cambio, seleccione **Editar**. De lo contrario, seleccione **Siguiente**.
+4. Revise las etiquetas seleccionadas y, para realizar los cambios, seleccione **Editar**. De lo contrario, seleccione **siguiente**.
 
 5. Siga las indicaciones para configurar las configuraciones de la directiva.
 

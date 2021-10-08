@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkMAC
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: ac98276e79679d2917a955f02318132c96e2863b
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 1b34ac4d8c9afead9ed72b060f8417affc2062b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480873"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179240"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -32,7 +32,7 @@ Use la página **Eliminación** de **Administración de registros** en el Centro
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Requisitos previos para ver las eliminaciones de contenido
 
-Para administrar las revisiones de eliminación y confirmar que los registros se han eliminado, debe tener los permisos necesarios y la auditoría debe estar habilitada. Además, tenga en cuenta cualquier [limitación](retention-limits.md#maximum-number-of-items-for-disposition) de eliminación.
+Para administrar las revisiones para eliminación y confirmar que los registros se han eliminado, debe tener permisos suficientes y debe habilitarse la auditoría. Tenga en cuenta también las [limitaciones](retention-limits.md#maximum-number-of-items-for-disposition) para su eliminación.
 
 ### <a name="permissions-for-disposition"></a>Permisos para la eliminación
 
@@ -47,9 +47,9 @@ Para obtener instrucciones sobre cómo agregar usuarios a los roles predetermina
 
 Además:
 
-- Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **Visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, aún pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa en miniatura del centro de cumplimiento.
+- Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, todavía pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa mínima del centro de cumplimiento.
 
-- De forma predeterminada, cada persona que accede a la página **Eliminación** solo ve los elementos que tienen asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que están configuradas para la revisión para eliminación: vaya a **Configuración de administración de registros** > **General** > **Grupo de seguridad para el administrador de registros** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contiene las cuentas de administrador.
+- De forma predeterminada, cada persona que tiene acceso a la página **eliminación** solo ve los elementos que están asignados a revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención configuradas para revisión para eliminación: vaya a **configuración de administración de registros** > **General** > **Grupo de seguridad para administrador de registros** y seleccione y habilite un grupo de seguridad habilitado para correo que contenga las cuentas de administrador.
     
     Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se muestran en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para un correo nuevo, use el vínculo al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para crear el grupo nuevo. 
     
@@ -60,7 +60,7 @@ Además:
 
 #### <a name="enabling-another-security-group-for-disposition"></a>Habilitar otro grupo de seguridad para su eliminación
 
-Después de habilitar un grupo de seguridad para su eliminación de la **Configuración de administración de registros** en el Centro de cumplimiento de Microsoft 365, no puede deshabilitar este permiso para el grupo ni reemplazar el grupo seleccionado en el centro de cumplimiento. Sin embargo, puede habilitar otro grupo de seguridad habilitado para correo si usa el cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+Después de habilitar un grupo de seguridad para su eliminación desde la **configuración de administración de registros** en el Centro de cumplimiento de Microsoft 365, no puede deshabilitar este permiso para el grupo ni reemplazar el grupo seleccionado en el centro de cumplimiento. Sin embargo, puede habilitar otro grupo de seguridad habilitado para correo mediante el cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
 
 Por ejemplo: 
 
@@ -101,11 +101,11 @@ Una revisión para eliminación puede incluir contenido en buzones de Exchange, 
 > [!NOTE]
 > Un buzón debe tener al menos 10 MB de datos para admitir las revisiones para eliminación.
 
-Los administradores pueden ver una descripción general de todas las eliminaciones pendientes en la pestaña **Información general**. Los revisores solo ven sus elementos pendientes de eliminación. Por ejemplo:
+Los administradores pueden ver información general de todas las eliminaciones pendientes en la pestaña **información general**. Los revisores solo ven sus elementos pendientes de eliminación. Por ejemplo:
 
 ![Disposiciones pendientes en la información general de Administración de registros.](../media/dispositions-overview.png)
 
-Al seleccionar **Ver todas las eliminaciones pendientes**, se le dirigirá a la página **Eliminación**. Por ejemplo:
+Al seleccionar  **Ver todas las eliminaciones pendientes**, se le dirigirá a la página **Eliminación**. Por ejemplo:
 
 ![Página Eliminaciones en el Centro de cumplimiento de Microsoft 365.](../media/disposition-tab.png)
 
@@ -177,7 +177,7 @@ Cuando un revisor recibe una notificación por correo electrónico de que el con
 
 ![Abrir en una nueva ventana para revisión para eliminación.](../media/open-in-new-window.png)
 
-En la página **Eliminaciones pendientes**, pueden ven todas las eliminacións pendientes para esa etiqueta. Cuando se seleccionan uno o más elementos, pueden usar el panel de vista previa en miniatura y las pestañas de **Origen**, **Detalles** e **Historial** para inspeccionar el contenido antes de realizar alguna acción:
+En la página **eliminaciones pendientes**, ven todas las eliminaciones pendientes para esa etiqueta. Cuando se seleccionan uno o varios elementos, pueden usar el panel de vista previa mínima y la pestaña **origen**, **detalles** e **historial** para inspeccionar el contenido antes de realizar acciones en él:
 
 ![Opciones de eliminación.](../media/retention-disposition-options.png)
 
@@ -209,14 +209,14 @@ Use la pestaña **Eliminación** en la página **Administración de registros** 
 - Los elementos eliminados como resultado de una revisión para eliminación.
 - Elementos marcados como un registro o un registro normativo que se eliminaron automáticamente al final de su periodo de retención.
 
-Estos elementos muestran **Registros eliminados** en la columna **Tipo**. Por ejemplo:
+Estos elemetos muestran **Registros eliminados** en la comumna **Tipo** column. Por ejemplo:
 
 ![Elementos que se eliminaron sin una revisión para eliminación.](../media/records-disposed2.png)
 
 > [!NOTE]
 > Esta funcionalidad usa la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.
 
-Para auditar los elementos eliminados marcados como registros o registros normativos, busque un **Archivo eliminado marcado como un registro** en la categoría **Actividades de archivo y página**. Este evento de auditoría se aplica a documentos y mensajes de correo electrónico.
+Para la auditoría de elementos eliminados marcados como registros o registros normativos, busque **archivo eliminado marcado como** de registros en la categoría **actividades de página y archivo**. Este evento de auditoría es aplicable a documentos y correos electrónicos.
 
 ## <a name="filter-and-export-the-views"></a>Filtrar y exportar las vistas
 

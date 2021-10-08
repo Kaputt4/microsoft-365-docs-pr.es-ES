@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar PowerShell para crear y publicar etiquetas de retención desde la línea de comandos, de manera independiente del centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f64fc7aede06e512d735908b8f06b7a8cb3e032
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166099"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170900"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención con PowerShell
 
@@ -32,7 +32,7 @@ ms.locfileid: "59166099"
 
 Si decide usar [etiquetas de retención](retention.md) para ayudarle a guardar o eliminar documentos y mensajes de correo electrónico en Microsoft 365, puede que advierta que dispone de una gran cantidad de etiquetas de retención (quizá incluso cientos de ellas) para crear y publicar. Se recomienda crear etiquetas de retención a escala mediante el uso del [plan de archivos](file-plan-manager.md) del centro de cumplimiento de Microsoft 365. Sin embargo, también puede usar [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
-Use la información, los archivos de plantilla, los ejemplos y el script de este artículo como ayuda para crear de forma masiva etiquetas de retención y publicarlas en directivas de etiquetas de retención. A continuación, las etiquetas de retención se pueden [aplicar a los administradores y usuarios](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
+Use la información, los archivos de plantilla y los ejemplos, y el script de este artículo para ayudarle a crear etiquetas de retención de forma masiva y publicarlas en directivas de etiquetas de retención. A continuación, los administradores y usuarios pueden [aplicar las etiquetas de retención](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
 Las instrucciones proporcionadas no son compatibles con las etiquetas de retención que se aplican automáticamente.
 
@@ -54,7 +54,7 @@ Los scripts de ejemplo que se proporcionan en este artículo no son compatibles 
 
 2. Reemplace los ejemplos con entradas para su configuración y etiquetas de retención. Para más información sobre los valores de parámetro, consulte [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
-3. Guarde la hoja de cálculo como un archivo .csv en una ubicación que resulte fácil de encontrar en un paso posterior. Por ejemplo: C:\>Scripts\Etiquetas.csv
+3. Guarde la hoja de cálculo como un archivo .csv en una ubicación que sea fácil de encontrar para un paso posterior. Por ejemplo: C:\>Scripts\Labels.csv
 
   
 Notas:
@@ -81,7 +81,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. Reemplace los ejemplos con entradas para sus directivas de etiquetas de retención y la configuración de las mismas. Para más información sobre los valores de parámetro para este cmdlet, consulte [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
-3. Guarde la hoja de cálculo como un archivo .csv en una ubicación que resulte fácil de encontrar en un paso posterior. Por ejemplo: `<path>Policies.csv`
+3. Guarde la hoja de cálculo como un archivo .csv en una ubicación que sea fácil de encontrar para un paso posterior. Por ejemplo: `<path>Policies.csv`
 
 
 Notas:
@@ -103,7 +103,7 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 1. Copie y pegue el siguiente script de PowerShell en el Bloc de notas.
 
-2. Guarde el archivo con una extensión de nombre de archivo de **.ps1** en una ubicación que resulte fácil de encontrar. Por ejemplo: `<path>CreateRetentionSchedule.ps1`
+2. Guarde el archivo con una extensión de nombre de archivo de **.ps1** en una ubicación que sea fácil de encontrar. Por ejemplo: `<path>CreateRetentionSchedule.ps1`
 
 Notas:
 
@@ -741,7 +741,7 @@ En primer lugar, [Conéctese a PowerShell del Centro de seguridad y cumplimiento
 
 A continuación, ejecute el script que crea y publica las etiquetas de retención:
   
-1. En la sesión de PowerShell del Centro de seguridad y cumplimiento, escriba la ruta de acceso, seguida de los caracteres `.\` y del nombre de archivo del script y, a continuación, presione ENTER para ejecutar el script. Por ejemplo:
+1. En la sesión de PowerShell del Centro de seguridad y cumplimiento, escriba la ruta de acceso, seguida de los caracteres `.\` y del nombre de archivo del script y, a continuación, presione ENTER para ejecutar el script.
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1

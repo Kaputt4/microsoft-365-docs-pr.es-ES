@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - m365-security-compliance
 - m365solution-audit
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afed2a8a12f158ff7e283e7d82d1abe7c35a0732
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: fbd00bdff46bebb73535f2b24c1b0bfa997dd55a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498117"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163437"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
 
@@ -46,7 +46,7 @@ La auditoría básica le proporciona la capacidad de registrar y buscar activida
 
    ![Herramienta de búsqueda de registros de auditoría del Centro de cumplimiento de Microsoft 365.](../media/AuditLogSearchToolMCC.png)
 
-- **cmdlet Search-UnifiedAuditLog**. También puede usar el cmdlet **Search-UnifiedAudtLog** en PowerShell de Exchange Online (el cmdlet subyacente de la herramienta de búsqueda) para buscar eventos de auditoría o para usarlo en un script. Para más información vea:
+- **cmdlet Search-UnifiedAuditLog**. También puede usar el cmdlet **Search-UnifiedAudtLog** en PowerShell de Exchange Online (el cmdlet subyacente de la herramienta de búsqueda) para buscar eventos de auditoría o para usarlo en un script. Para obtener más información, consulte:
 
   - [Referencia del cmdlet Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
   - [Usar un script de PowerShell para buscar en el registro de auditoría](audit-log-search-script.md)
@@ -65,7 +65,7 @@ La auditoría avanzada se desarrolla a partir de las funcionalidades de la audit
 
 - **Retención prolongada de registros de auditoría**. Los registros de auditoría de Exchange, SharePoint y Azure Active Directory se conservan durante un año de forma predeterminada. Los registros de auditoría del resto de las actividades se conservan durante 90 días de forma predeterminada, pero puede usar directivas de retención de registros de auditoría para configurar períodos de retención más largos.
 
-- **Eventos de auditoría avanzada fundamentales y de alto valor**. Los registros de auditoría de eventos cruciales pueden ayudar a su organización a llevar a cabo investigaciones forenses y de cumplimiento proporcionando visibilidad de eventos como, por ejemplo, cuándo se accede a los elementos de correo o cuándo se responde a, y se reenvían los elementos de correo, y cuándo y qué ha buscado un usuario en Exchange Online y SharePoint Online. Estos eventos cruciales pueden ayudarle a investigar posibles infracciones y a determinar el ámbito del compromiso.
+- **Eventos fundamentales, de alto valor, de auditoría avanzada**. Los registros de auditoría para los eventos fundamentales pueden ayudar a la organización a dirigir investigaciones forenses y de cumplimiento al proporcionar visibilidad a los eventos como cuando se accede a un elemento del correo o cuando se responde o se reenvían determinados elementos del correo, o el momento y el usuario que realizó la búsqueda en Exchange Online y SharePoint Online. Estos eventos fundamentales pueden ayudarle a investigar las posibles brechas y determinar el alcance de la intromisión.
 
 - **Mayor ancho de banda para la API de Actividad de administración de Office 365** La auditoría avanzada proporciona a las organizaciones más ancho de banda para tener acceso a los registros de auditoría a través de la API de Actividad de administración de Office 365. Aunque inicialmente todas las organizaciones (que tienen auditoría básica o auditoría avanzada) asignan una línea base de 2 000 solicitudes por minuto, este límite aumentará dinámicamente según el recuento de puestos de una organización y su suscripción a las licencias. El resultado es que las organizaciones con auditoría avanzada pueden obtener aproximadamente el doble de ancho de banda que las organizaciones con auditoría básica.
 

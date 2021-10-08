@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Use la API de REST para crear una solicitud para clasificar una carpeta completa con un modelo entrenado de comprensión mediante documentos.
-ms.openlocfilehash: 44e1969628fb61b797f59a7378b95403c94dda8a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ea5748b5eb376872738d30b142927314abfe9d3e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777131"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186878"
 ---
 # <a name="create-folder-classification-request"></a>Crear solicitud de clasificación de carpetas
 
@@ -64,7 +64,7 @@ Ninguno
 
 | Nombre   | Tipo  | Descripción|
 |--------|-------|------------|
-|StatusCode |int |El código de estado HTTP. Si no es 200 o 201, la API debería haber producido un error.|
+|StatusCode |int |Código de estado HTTP. Si no es 200 o 201, la API debería haber producido un error.|
 |ErrorMessage |string |Mensaje de error que indica el problema al aplicar el modelo a la biblioteca de documentos.|
 
 ## <a name="examples"></a>Ejemplos

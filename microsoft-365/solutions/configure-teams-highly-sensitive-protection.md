@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 27d2183a3f6f5f43f4461bc83fe3b33ac9f4f56e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219750"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169364"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -71,7 +71,7 @@ Crear una etiqueta de confidencialidad
 1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
-4. Asigne un nombre a la etiqueta. Le sugerimos **Confidencialidad alta**, pero puede elegir otro nombre si ya está en uso.
+4. Asigne un nombre a la etiqueta. Se recomienda **Altamente confidencial**, pero puede elegir otro nombre si ya está en uso.
 5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
 6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
 7. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.
@@ -87,7 +87,7 @@ Crear una etiqueta de confidencialidad
 17. Haga clic en **Siguiente**.
 18. En la página **Definir el uso compartido externo y el acceso al dispositivo**, seleccione **Controlar el uso compartido externo en sitios de SharePoint etiquetados**.
 19. En **El contenido se puede compartir con**, elija **Invitados nuevos y existentes** si va a permitir el acceso de invitado o **Solo los usuarios de su organización** en caso contrario.
-20. En **Equipos no administrados**, elija **Bloquear el acceso**. (Si está permitiendo invitados y no tienen dispositivos administrados, es posible que quiera elegir **Permitir acceso limitado, solo Web**).
+20. En **Acceso desde dispositivos no administrados**, elija **Bloquear acceso**. (Si permite invitados y no tienen dispositivos administrados, puede elegir **Permitir acceso limitado solo web**).
 21. Haga clic en **Siguiente**.
 22. En la página **Etiquetado automático para las columnas de la base de datos**, haga clic en **Siguiente**.
 23. Haga clic en **Crear etiqueta** y después en **Listo**.

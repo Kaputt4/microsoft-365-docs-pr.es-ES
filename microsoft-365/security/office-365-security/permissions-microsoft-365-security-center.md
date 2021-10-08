@@ -9,7 +9,7 @@ ms.date: ''
 ms.audience: Admin
 ms.topic: article
 audience: Admin
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -19,12 +19,12 @@ description: Los administradores pueden aprender a administrar los permisos en e
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5980249d3df0dc94a83b8250f3be55298de5bd
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 629cb9e4ab275d1af6f218df4f6e1b0e60dee201
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482864"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180858"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Permisos en el portal de Microsoft 365 Defender
 
@@ -83,13 +83,13 @@ Para más información, consulte [Visualización y asignación de roles de admin
 |Función|Descripción|
 |---|---|
 |**Administrador global**|Acceso a todas las características administrativas en todos los servicios de Microsoft 365. Los administradores globales son los únicos que pueden asignar otros roles de administrador. Para más información, consulte [Administrador global / Administrador de empresa](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
-|**Administrador de datos de cumplimiento**|Realizar un seguimiento de los datos de su organización a través de Microsoft 365, asegurarse de que están protegidos y obtener información sobre los problemas para ayudar a reducir los riesgos. Para obtener más información, consulte [Administrador de datos de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
-|**Administrador de cumplimiento**|Ayudar a que su organización cumpla con los requisitos normativos, administrar casos de eDiscovery y mantener directivas de gobierno de datos en todas las ubicaciones, identidades y aplicaciones de Microsoft 365. Para obtener más información, consulte [Administrador de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
+|**Administrador de datos de cumplimiento**|Realice un seguimiento de los datos de su organización en Microsoft 365, asegúrese de que están protegidos y obtenga información sobre los problemas para ayudar a mitigar los riesgos. Para obtener más información, vea [Administrador de datos de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
+|**Administrador de cumplimiento**|Ayude a su organización a cumplir los requisitos normativos, administre casos de exhibición de documentos electrónicos y mantenga directivas de gobernanza de datos en  ubicaciones, identidades y aplicaciones de Microsoft 365. Para obtener más información, vea [administrador de cumplimiento](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
 |**Operador de seguridad**|Ver, investigar y responder a las amenazas activas a usuarios, dispositivos y contenido de Microsoft 365. Para obtener más información, vea [Operador de seguridad de seguridad](/azure/active-directory/roles/permissions-reference#security-operator).|
-|**Lector de seguridad**|Ver e investigar amenazas activas a usuarios, dispositivos y contenido de Microsoft 365, pero, a diferencia del operador de seguridad, no tienen permisos para responder realizando una acción. Para obtener más información, vea [Lector de seguridad](/azure/active-directory/roles/permissions-reference#security-reader).|
-|**Administrador de seguridad**|Controlar la seguridad global de la organización mediante la administración de directivas de seguridad, la revisión de análisis de seguridad y los informes en los productos de Microsoft 365, así como mantenerse al día con el panorama de amenazas. Para obtener más información, vea [Administrador de seguridad](/azure/active-directory/roles/permissions-reference#security-administrator).|
+|**Lector de seguridad**|Vea e investigue las amenazas activas a los usuarios, dispositivos y contenido de Microsoft 365, pero (a diferencia del operador de seguridad) no tienen permisos para responder tomando medidas. Para obtener más información, vea [lector de seguridad](/azure/active-directory/roles/permissions-reference#security-reader).|
+|**Administrador de seguridad**|Controle la seguridad general de su organización mediante la administración de directivas de seguridad, la revisión de análisis e informes de seguridad en los productos de Microsoft 365 y el mantenimiento al día del panorama de amenazas. Para obtener más información, vea [administrador de seguridad](/azure/active-directory/roles/permissions-reference#security-administrator).|
 |**Lector global**|La versión de solo lectura del rol de **Administrador global**. Ver todas las configuraciones e información administrativa en Microsoft 365. Para más información, vea [Lector global](/azure/active-directory/roles/permissions-reference#global-reader).|
-|**Administrador de simulación de ataque**|Crea y administra todos los aspectos de la creación de [simulación de ataques](attack-simulation-training.md), el lanzamiento o la programación de la simulación y la revisión de los resultados de la misma. Para más información, consulte [Administrador de simulación de ataque](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
+|**Administrador de simulación de ataque**|Cree y administre todos los aspectos de [simulación de ataques](attack-simulation-training.md) la creación, el inicio o la programación de una simulación y la revisión de los resultados de la simulación. Para obtener más información, vea [administrador de simulación de ataques](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
 |**Autor de carga de ataque**|Crea cargas de ataques pero no las inicia ni programa. Para más información, consulte [Autor de carga de ataques](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 

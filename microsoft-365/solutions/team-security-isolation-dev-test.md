@@ -9,19 +9,19 @@ ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
 ms.custom: ''
 description: Configure la infraestructura y seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29b97c570972527ef30f3333797a213bf2722932
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165472"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176324"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
 
@@ -46,7 +46,7 @@ En esta fase se crea y configuran un grupo y usuarios de Azure AD para la organi
 
 En primer lugar, cree un grupo de seguridad con Azure Portal.
 
-1. Cree una pestaña aparte en el explorador y, después, vaya a Azure Portal, en [https://portal.azure.com](https://portal.azure.com). Si es necesario, inicie sesión con las credenciales de la cuenta de administrador global de la suscripción de pago o de la suscripción de prueba de Microsoft 365 E5.
+1. Cree una pestaña independiente en el explorador y, a continuación, vaya al Azure Portal en [https://portal.azure.com](https://portal.azure.com). Si es necesario, inicie sesión con las credenciales de la cuenta de administrador global para su suscripción de prueba o de pago de Microsoft 365 E5.
 
 2. En Azure Portal, haga clic en **Azure Active Directory > Grupos**.
 
@@ -145,11 +145,7 @@ Siga estos pasos:
 4. Escriba **Estrategia de la empresa** en el nombre de la etiqueta.
 5. Escriba **Documentos de estrategia empresarial de la directiva** como información y, después, haga clic en **Siguiente**.
 6. En la página **Cifrado**, en el menú desplegable **Cifrado**, elija **Aplicar**.
-7. Para agregar los permisos de equipo:<br>
-  a. Haga clic en **Asignar permisos**<br>
-  b. Haga clic en **Agregar usuarios o grupos**, seleccione **Estrategia de la empresa** y, después, haga clic en **Agregar**.<br>
-  c. Haga clic en **Elegir permisos**.<br>
-  d. Elija **coautoría** de la lista desplegable y, después, haga clic en **Guardar**.<br>
+7. Para agregar los permisos de equipo:<br> a. Haga clic en **Asignar permisos**.<br> b. Haga clic en **Agregar usuarios o grupos**, seleccione **Estrategia de empresa** y, a continuación, haga clic en **Agregar**.<br> c. Haga clic en **Elegir permisos**.<br> d. Elija **coautor** en la lista desplegable y, a continuación, haga clic en **Guardar**.<br>
 8. Haga clic en **Siguiente**.
 9. En **Distintivo de contenido**, haga clic en **Siguiente**.
 10. En la página **Configuración de sitio y grupo**, establezca **Configuración de sitio y grupo** como **Activado**.

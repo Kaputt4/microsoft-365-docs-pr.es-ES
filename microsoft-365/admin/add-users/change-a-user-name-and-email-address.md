@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre. '
-ms.openlocfilehash: b0327dafd875fdcec787e21f5299a32e11aa2a3d
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f3400947130d84ebe7831676ec3c1d31e9ab1bd3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161875"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
@@ -64,7 +65,7 @@ Debe ser [administrador global](about-admin-roles.md) para completar estos pasos
 
 1. Seleccione el nombre de usuario y después, en la pestaña **Cuenta** seleccione **Administrar nombre de usuario**.
 
-1. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico a través de la lista desplegable. [Obtenga información sobre cómo agregar un dominio](../setup/add-domain.md).
+1. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico a través de la lista desplegable. [Obtenga información sobre cómo agregar un dominio](../setup/add-domain.md).
 
 1. Seleccione **Guardar cambios**.
 
@@ -100,7 +101,7 @@ Debe ser [administrador global](about-admin-roles.md) para completar estos pasos
    >
    > Además, solo verá esta opción si es un administrador global. Si no ve la opción, no tiene permisos para cambiar el nombre ni la dirección de correo electrónico principal del usuario.
 
-4. Verá una gran advertencia amarilla que le dice que va a cambiar la información de inicio de sesión del usuario. Seleccione **Guardar** y, a continuación, **Cerrar**.
+4. Verá una gran advertencia amarilla que le dice que va a cambiar la información de inicio de sesión del usuario. Seleccione **Guardar**, y a continuación, **Cerrar**.
 
 5. Comunique a la persona la siguiente información:
 
@@ -164,7 +165,7 @@ Si el usuario está usando Exchange Online o si su cuenta está vinculada al ent
 
 Esto es debido a la dirección de enrutamiento de correo electrónico de Microsoft Online (MOERA). La dirección MOERA se crea a partir del atributo  _userPrincipalName_ de la persona en Active Directory y se asigna automáticamente a la cuenta de la nube durante la sincronización inicial. Una vez que se ha creado, no puede modificarse ni quitarse en Microsoft 365. Posteriormente, podrá cambiar el nombre de usuario en Active Directory, pero esto no cambiará la dirección MOERA. Además, es posible que se produzcan problemas al mostrar el nombre recién cambiado en la lista global de direcciones.
 
-Para corregir este error, inicie sesión en el [Módulo Microsoft Azure Active Directory para PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) con sus credenciales de administrador de Microsoft 365. Use la sintaxis que se muestra a continuación:
+Para corregir este error, inicie sesión en el [Módulo Microsoft Azure Active Directory para Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) con sus credenciales de administrador de Microsoft 365 y use la sintaxis siguiente:
 
 ```powershell
 Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.com -NewUserPrincipalName anne.jones@contoso.com

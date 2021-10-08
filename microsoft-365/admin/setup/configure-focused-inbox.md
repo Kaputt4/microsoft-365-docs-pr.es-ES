@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si es el responsable de configurar las opciones de correo electrónico para todos los usuarios de una empresa, en este artículo se explica cómo configurar Bandeja de entrada Prioritarios para los usuarios.
-ms.openlocfilehash: 0b9a48a394f563d897217599daa2c1836e920d1e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b2c315b6fb4a4c80f245bcf4731b93996753586a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774405"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176096"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurar la Bandeja de entrada Prioritarios para todos los usuarios de la organización
 
@@ -89,7 +90,7 @@ Cuando un usuario decide empezar a usar la Bandeja de entrada Prioritarios, Otro
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Activar o desactivar la Bandeja de entrada Prioritarios para usuarios específicos
 
-En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker Arteaga en la organización de Contoso. Sin embargo, no bloquea la disponibilidad de la característica para él. Si quiere, pueden volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes. 
+En este ejemplo **se desactiva** la bandeja de entrada Prioritarios para Tim Runtimes en la organización Contoso. Sin embargo, no bloquea la disponibilidad de la característica para él. Si lo desea, todavía puede volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes. 
   
 1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -121,7 +122,7 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 
-2. Vaya a **flujo de correo** \> **Reglas**. Seleccione ![ EAC Agregar icono.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) y, a continuación, seleccione **Crear una nueva regla...**. 
+2. Vaya a **flujo de correo**\>**reglas**. Seleccione ![icono Agregar EAC.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) y, a continuación, seleccione **Crear una nueva regla...**. 
 
 3. Cuando termine de crear la regla, seleccione **Guardar** para iniciarla.
 

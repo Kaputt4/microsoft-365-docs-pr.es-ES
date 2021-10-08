@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo modificar un esquema de EDM para usar la coincidencia configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d470b986d4a94206935efb832deec7171f8e404
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce02113cd8e6b0d0e2b2b5b950a78e2958b95004
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218847"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167215"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificar el esquema de coincidencia de datos exactos para usar la coincidencia configurable
 
@@ -66,7 +66,7 @@ Este es un esquema de ejemplo en el que se simula la coincidencia que no disting
 
 En el ejemplo anterior, las variantes de la columna `PolicyNumber` original ya no serán necesarias si se agregan tanto `caseInsensitive` como `ignoredDelimiters`.
 
-Para actualizar este esquema para que EDM use la coincidencia configurable, utilice las marcas `caseInsensitive` y `ignoredDelimiters`.  Este es el aspecto que tiene:
+Para actualizar este esquema para que EDM use coincidencias configurables, use las marcas `caseInsensitive` y `ignoredDelimiters`. Este es el aspecto:
 
 ```xml
 <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -104,7 +104,7 @@ El indicador `ignoredDelimiters` no es compatible con:
 6. Conéctese al Centro de seguridad y cumplimiento por medio de los procedimientos que se describen en [Conectar al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 > [!NOTE]
-> Si su organización ha configurado una [Clave de cliente de para Microsoft 365 en el nivel de inquilino (versión preliminar pública)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la coincidencia de datos exacta hará que se use automáticamente su funcionalidad de cifrado. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
+> Si su organización ha configurado [Clave de cliente para Microsoft 365 en el nivel de inquilino (versión preliminar pública)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la coincidencia exacta de datos usará automáticamente su funcionalidad de cifrado. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
 
 7. Actualice el esquema ejecutando estos cmdlets uno por vez:
 

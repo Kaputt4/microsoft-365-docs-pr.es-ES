@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: beee298e18fd46adfc11925de51274a60328a3a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 873a6e10117f1573b4679c14f054dd15c2c16949
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59219060"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175376"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 
@@ -45,7 +45,7 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
 
 ## <a name="create-and-run-a-search"></a>Crear y ejecutar una búsqueda
 
-Para acceder a la página de **Búsqueda de contenido** en el Centro de cumplimiento de Microsoft 365 (para buscar, obtener una vista previa o exportar los resultados de búsqueda), es necesario que un administrador, responsable de cumplimento normativo o administrador de eDiscovery sea miembro del grupo de roles de administradores de eDiscovery en el Centro de cumplimiento de Microsoft 365. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
+Para acceder a la página de **búsqueda de contenido** enel Centro de cumplimiento de Microsoft 365 (para ejecutar búsquedas y obtener una vista previa de los resultados y exportar resultados), un administrador, responsable de cumplimiento o administrador de exhibición de documentos electrónicos debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Para obtener más información, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta a la que se han asignado los permisos adecuados.
 

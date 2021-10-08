@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Este artículo contiene información de referencia sobre la herramienta de eDiscovery de búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para ayudarle a obtener una gran cantidad de detalles sobre la búsqueda de contenido.
-ms.openlocfilehash: ba990ab0478e1dc525101de2d583b800e14f4342
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59184225"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175412"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 
@@ -97,7 +97,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 
 - Cuando se busca en el buzón de un usuario, no se buscará en los equipos o grupos de Microsoft 365 a los que pertenece dicho usuario. De forma similar, al buscar en un equipo o en un grupo de Microsoft 365, solo se busca en el buzón de grupo y en el sitio de grupo que especifique. Tampoco se busca en los buzones y las cuentas de OneDrive para la Empresa de los miembros del grupo a menos que los agregue explícitamente a la búsqueda.
 
-- Si quiere obtener una lista de los miembros de un equipo o un grupo de Microsoft 365, puede ver las propiedades en la página **Inicio** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"> **Grupos**</a> del Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
+- Para obtener una lista de los miembros de un equipo o un grupo de Microsoft 365, puede ver las propiedades en la página **Home** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>del Centro de administración de Microsoft 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell:
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -155,7 +155,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
   ![Mismo contenido de tarjetas en los resultados de una búsqueda de contenido.](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
-  > Para ver las imágenes del contenido de tarjetas en los resultados de la búsqueda en este momento (como las marcas de verificación del recorte de pantalla anterior), debe iniciar sesión en Teams (enhttps://teams.microsoft.com) en una pestaña diferente en la misma sesión del navegador que utiliza para ver los resultados de la búsqueda. De lo contrario, se mostrarán marcadores de posición de las imágenes.
+  > Para mostrar imágenes del contenido de la tarjeta en los resultados de búsqueda en este momento (como las marcas de verificación de la captura de pantalla anterior), debe iniciar sesión en Teams (en https://teams.microsoft.com) de otra pestaña de la misma sesión del explorador que usa para ver los resultados de la búsqueda. De lo contrario, se muestran los marcadores de posición de imagen.
 
 - Puede usar la propiedad de correo **Tipo** o la condición de búsqueda **Tipo de mensaje** para buscar contenido en Teams de forma más específica.
 
@@ -257,7 +257,7 @@ New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@
 
 Tenga en cuenta lo siguiente al usar filtros de permisos de búsqueda para buscar contenido en entornos multigeográficos:
 
-- El parámetro **Region** dirige las búsquedas a la ubicación por satélite especificada. Si el administrador de eDiscovery solo busca en los sitios de SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelve ningún resultado de búsqueda.
+- El parámetro **Región** dirige las búsquedas a la ubicación satélite especificada. Si un administrador de exhibición de documentos electrónicos solo busca sitios de SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelve ningún resultado de búsqueda.
 
 - El parámetro **Region** no controla las búsquedas de los buzones de Exchange. Al realizar una búsqueda en los buzones se buscan todos los centros de datos.
 

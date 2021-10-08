@@ -9,18 +9,18 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Use la API de REST para crear una solicitud para clasificar uno o más archivos con un modelo entrenado de comprensión mediante documentos.
-ms.openlocfilehash: 50aa406d25e6d598b568d7c21db6f56e04e111da
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 9f57799a9d1b631be5586dd285dc02cff1237b98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776733"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186998"
 ---
 # <a name="create-file-classification-request"></a>Crear solicitud de clasificación de archivos
 
-Crea una solicitud para clasificar uno o más archivos con el modelo de comprensión mediante documentos aplicado (para obtener más información, consulte el [ejemplo](rest-createclassificationrequest.md#examples)).
+Crea una solicitud para clasificar uno o varios archivos mediante el modelo de comprensión de documentos aplicado (para obtener más información, vea [ejemplo](rest-createclassificationrequest.md#examples)).
 
 El servicio REST de SharePoint Online (y SharePoint 2016 y versiones posteriores locales) admite la combinación de varias solicitudes. Las solicitudes se combinan en una sola llamada al servicio mediante el uso de la opción de consulta $batch de OData Este método se puede usar para poner en cola los elementos de trabajo de clasificación para cientos de documentos a la vez.
 

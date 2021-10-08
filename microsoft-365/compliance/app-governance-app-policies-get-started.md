@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Introducción a las directivas de aplicación.
-ms.openlocfilehash: 72702dfb8962750a3e6161eaefa360f6189870e6
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: c015a8ef97bc16963b670ae00c9067f35dafc1e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941996"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188402"
 ---
 # <a name="get-started-with-app-policies"></a>Introducción a las directivas de aplicación
 
@@ -67,14 +67,14 @@ También puede:
 ## <a name="edit-an-existing-policy"></a>Editar una directiva existente
 
 1. En el portal de gobernanza de aplicaciones, seleccione la pestaña **Directivas**.
-1. Seleccione la directiva que desee editar. Se abrirá un panel en la parte derecha con los detalles de la directiva existente.
+1. Seleccione la directiva que desea editar. Se abrirá un panel en el lado derecho con los detalles de la directiva existente.
 1. Seleccione **Editar**.
-1. No puede cambiar el nombre de la directiva una vez creada, pero puede cambiar la descripción y la gravedad de la directiva. Seleccione **Siguiente**
+1. No puede cambiar el nombre de la directiva una vez creada, pero puede cambiar la descripción y la gravedad de la directiva. Seleccione **siguiente**.
 1. Elija si desea continuar con la configuración de la directiva existente o personalizarla. Seleccione **No. Quiero personalizar la directiva** para realizar cambios. Seleccione **Siguiente**
 1. Elija si esta directiva se aplicará a todas las aplicaciones o a las aplicaciones que especifique en la lista. Seleccione **Agregar aplicaciones** para agregar más aplicaciones a la lista si aplicas la directiva a aplicaciones específicas. Seleccione **Siguiente**
 1. Elija si desea modificar las condiciones existentes de la directiva. Si decide modificar las condiciones, seleccione **Editar condiciones**. Seleccione **Siguiente**
-1. Elija si desea deshabilitar la aplicación si se desencadena las condiciones de la directiva. Seleccione **Siguiente**
-1. Establezca el estado de la directiva en Auditoría, Activo o Inactivo. Seleccione **Siguiente**
+1. Elija si desea deshabilitar la aplicación si desencadena las condiciones de la directiva. Seleccione **siguiente**.
+1. Establezca el estado de la directiva en Auditoría, Activo o Inactivo. Seleccione **siguiente**.
 1. Revise las opciones de configuración de la directiva y, si todo está como desea, seleccione **Enviar**.
 
 ## <a name="next-step"></a>Paso siguiente

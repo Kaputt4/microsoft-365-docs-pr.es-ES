@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Usar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoUsar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoría+ Este script está optimizado para devolver un gran conjunto (hasta 50 000) de registros de auditoría. El script exporta dichos registros a un archivo CSV que puede visualizar o transformar mediante Power Query en Excel.
-ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7f54924cf0f90b976c52c8ee7c53e151f50111b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166150"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173552"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usar un script de PowerShell para buscar en el registro de auditoría
 
@@ -165,7 +165,7 @@ Una vez que se haya conectado a Exchange Online PowerShell, el siguiente paso se
    .\SearchAuditLog.ps1
    ```
 
-El script muestra mensajes de progreso durante la ejecución. Una vez que el script haya terminado de ejecutarse, creará el archivo de registro y el archivo CSV que contiene los registros de auditoría y los guarda en las carpetas definidas por las variables `$logFile` y `$outputFile`.
+El script muestra los mensajes de progreso mientras se ejecuta. Una vez que el script ha terminado de ejecutarse, crea el archivo de registro y el archivo CSV que contiene los registros de auditoría y los guarda en las carpetas definidas por las variables `$logFile` y `$outputFile` .
 
 > [!IMPORTANT]
 > Existe un límite de 50 000 registros de auditoría como máximo que se devuelven cada vez que ejecuta este script. Si ejecuta este script y devuelve 50 000 resultados, es probable que no se incluyeran los registros de auditoría de las actividades que tuvieron lugar dentro del intervalo de fechas. Si esto sucede, se recomienda que divida el intervalo de fechas en intervalos menores y que vuelva ejecutar el script para cada intervalo de fecha. Por ejemplo, si un intervalo de fechas de 90 días devuelve 50 000 resultados, puede volver a ejecutar el script dos veces; una vez para los primeros 45 días del intervalo de fechas y una segunda vez para los siguientes 45 días.

@@ -10,17 +10,17 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Use el Bloqueo de conservación con las directivas de retención y las directivas de etiquetas de retención para ayudar a cumplir los requisitos normativos y protegerse frente a administradores no autorizados.
-ms.openlocfilehash: eb842a3d5add719338773f088b07dcf4c32ede53
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71cd5aaa4b868d85f94f92370c50ef57253cc084
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179012"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención
 
@@ -58,7 +58,7 @@ Todas las directivas de retención, con cualquier configuración, admiten el Blo
 
 1. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
-2. Busque el nombre de la directiva que quiere bloquear ejecutando [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). Por ejemplo:
+2. Busque el nombre de la directiva que desea bloquear ejecutando [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). Por ejemplo:
     
    ![Lista de las directivas de retención en PowerShell.](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
@@ -82,7 +82,7 @@ Ahora, se coloca un Bloqueo de preservación en la directiva. Para confirmar, vu
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
 
-Debería ver que **RestrictiveRetention** esté establecida en **True**. Por ejemplo:
+Debería ver **restrictRetention** está establecido en **True**. Por ejemplo:
 
 ![Directiva bloqueada con todos los parámetros visibles en PowerShell.](../media/retention-policy-preservation-lock-locked-policy.PNG)
 

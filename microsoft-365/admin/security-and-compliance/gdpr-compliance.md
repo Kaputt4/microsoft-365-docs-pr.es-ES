@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: a32c31f0acd072d7c30eb7639b7f700a7f06048a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 50ee497d57438994a4a5f839ff5a2afb103cd59b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776289"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174032"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
@@ -125,7 +126,7 @@ Elimine los datos cuando ya no sean necesarios para los fines para los que los r
 Si almacena datos personales en un sistema de TI, limite el acceso a los archivos que contienen los datos utilizando, por ejemplo, una contraseña segura. Actualice la configuración de seguridad del sistema de forma periódica.
 
 > [!NOTE]
-> El RGPD no ordena el uso de ningún sistema de TI específico, pero exige que el sistema tenga el nivel de seguridad adecuado. Consulte el [Artículo 32 del RGPD: Seguridad del procesamiento](https://gdpr.eu/article-32-security-of-processing/) para obtener más información.
+> El RGPD no ordena el uso de ningún sistema de TI específico, sino que hace que el sistema tenga el nivel de seguridad adecuado. Consulte [artículo 32 de GDRP: Seguridad del procesamiento](https://gdpr.eu/article-32-security-of-processing/) para obtener más información.
 
 Si almacena documentos físicos con datos personales, asegúrese de que no sean accesibles para personas no autorizadas.
 
@@ -165,7 +166,7 @@ Si subcontrata el procesamiento de datos personales a otra empresa, solo use un 
  
 Para proteger mejor los datos personales, es posible que las organizaciones tengan que designar un <b>Delegado de protección de datos (DPO)</b>. Sin embargo, es posible que no tenga que designar un Delegado de protección de datos si el procesamiento de datos personales no es una parte fundamental de su empresa o si es una pequeña empresa. Por ejemplo, si su empresa solo recopila datos de los clientes para la entrega en casa, no debería tener que designar un DPO. Incluso si necesita hacer uso de un DPO, estas tareas pueden asignarse a un empleado existente, además de sus otras tareas. O bien, podría elegir contratar a un consultor externo para este trabajo, según sea necesario.
 
-Normalmente no es necesario llevar a cabo una [Evaluación del impacto de la protección de datos](https://gdpr.eu/article-35-impact-assessment/). Esto está reservado para las empresas que suponen más riesgo para los datos personales (por ejemplo, si realizan una supervisión a gran escala de un área de acceso público, como la vigilancia de vídeo).
+Normalmente no es necesario llevar a cabo una [evaluación del impacto de la protección de datos](https://gdpr.eu/article-35-impact-assessment/). Esto está reservado para las empresas que suponen más riesgo para los datos personales (por ejemplo, si realizan una supervisión a gran escala de un área de acceso público, como la vigilancia de vídeo).
 
 Si es una pequeña empresa que administra los salarios de los empleados y una lista de clientes, normalmente no es necesario realizar una Evaluación del impacto en la protección de datos.  
  

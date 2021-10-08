@@ -10,13 +10,13 @@ ms.topic: article
 ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
-localization_priority: Priority
-ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: high
+ms.openlocfilehash: 6f472754484d7bb41485b94d65689009d2c615fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59210840"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189218"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importar un conjunto de términos con un formato basado en SKOS
 
@@ -38,7 +38,7 @@ Le recomendamos mantener sus archivos de importación con menos de 20 000 térmi
 
 7. Haga clic en **Examinar**, desplácese al archivo de importación y agréguelo.
 
-8. Haga clic en **Importar**. No cierre el panel hasta que finalice la importación.
+8. Haga clic en **Importar**. No cierre el panel hasta que se complete la importación.
 
 Si la importación del archivo se ha realizado correctamente, se mostrará un mensaje que así lo indicará, se actualizará el almacén de términos y podrá navegar a los conjuntos de términos recién creados.
 
