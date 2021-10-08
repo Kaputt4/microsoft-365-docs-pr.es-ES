@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
-ms.openlocfilehash: 8c34e8fe860f3704ac96e852393e6661115bb58a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fe24f13609752dd5a5e73f4631644bd1cf4d4e6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59166131"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151355"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
@@ -63,7 +63,7 @@ Cada producto tiene un sitio de SharePoint dedicado que contiene una biblioteca 
 [ ![Biblioteca de documentos para la documentación del producto.](../media/SPRetention3.png) ](../media/SPRetention3.png#lightbox)
 
 > [!NOTE]
-> En lugar de tener un sitio de SharePoint por producto, en este escenario, la empresa de fabricación podría usar un equipo de Microsoft Teams por producto para permitir la colaboración entre los miembros del equipo, como a través del chat persistente y el uso de la pestaña **Archivos** en Teams para la administración de documentos. En este artículo nos centraremos solo en los documentos, por lo tanto solo usaremos un sitio.
+> En lugar de tener un sitio de SharePoint por producto, en este escenario, la empresa de fabricación podría usar un equipo de Microsoft Teams por producto para permitir la colaboración entre los miembros del equipo, como a través del chat persistente y el uso de la pestaña **Archivos** en Teams para la administración de documentos. En este artículo solo nos centraremos en documentos, entonces, solo usaremos un sitio.
 
 La siguiente es una vista de la biblioteca de documentos para el producto Spinning Widget:
 
@@ -124,7 +124,7 @@ La siguiente captura de pantalla muestra la configuración al crear la etiqueta 
 
     ![Crear un nuevo tipo de evento para el cuadro de diálogo de etiqueta de Especificaciones del producto](../media/SPRetention6.png)
 
-3. En la página **Asignar un nombre al tipo de evento**, escriba **Cese de producción** y una descripción opcional. Luego, seleccione **Siguiente**, **Enviar** y **Hecho**.
+3. En la página **Asignar un nombre al tipo de evento**, escriba **Cese de producción** y una descripción opcional. A continuación, seleccione **Siguiente**, **Enviar**, y **Listo**.
 
 4. Regrese a la página **Definir la configuración de retención**, para **Iniciar el período de retención adecuado**, utilice el cuadro desplegable para seleccionar el tipo de evento **Cese de producción** que creó.
 
@@ -168,7 +168,7 @@ La propiedad **ows\_Doc\_x0020\_Type** es la segunda propiedad que nos interesa.
 
 Si las propiedades rastreadas que está buscando no aparecen en la sección Administrar esquema de búsqueda en el Centro de administración de SharePoint:
 
-- Tal vez los documentos no se han indexado. Puede forzar que se repita la indexación de la biblioteca en **Configuración de la biblioteca de documentos** > **Configuración avanzada**.
+- Quizás los documentos no se hayan indexado. Puede forzar que se repita la indexación de la biblioteca en **Configuración de la biblioteca de documentos** > **Configuración avanzada**.
 
 - Si la biblioteca de documentos está en un sitio moderno, asegúrese de que el administrador de SharePoint también es un administrador de la colección de sitios.
 
@@ -219,7 +219,7 @@ Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una direct
 
    [ ![Seleccione "Aplicar automáticamente una etiqueta" en la página Etiquetas](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
-2. En el asistente para Crear directiva de etiquetado automático, en la página **Asignar un nombre a la directiva de etiquetado automático**, introduzca un nombre como **Aplicación automática de la etiqueta Especificación de producto** y una descripción opcional. Después, seleccione **Siguiente**.
+2. En el asistente para Crear directiva de etiquetado automático, en la página **Asignar un nombre a la directiva de etiquetado automático**, introduzca un nombre como **Aplicación automática de la etiqueta Especificación de producto** y una descripción opcional. A continuación, seleccione **Siguiente**.
 
 3. En la página **Elegir el tipo de contenido al que quiere aplicar la etiqueta**, seleccione **Aplicar la etiqueta al contenido que tenga palabras, frases o propiedades específicas** y, a continuación, seleccione **Siguiente**.
 
@@ -240,7 +240,7 @@ Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una direct
 
 6. En la página **Elegir una etiqueta para aplicar automáticamente**, seleccione **Añadir etiqueta**.
 
-7. En la lista de etiquetas de retención, seleccione **Especificación de producto**. Después, seleccione **Agregar** y **Siguiente**.
+7. En la lista de etiquetas, seleccione **Especificaciones del producto**, seleccione **Agregar** y seleccione **Siguiente**.
 
 8. Revisar la configuración:
 

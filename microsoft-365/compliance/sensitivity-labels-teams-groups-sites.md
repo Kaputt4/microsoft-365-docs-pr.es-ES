@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 5e8e18d85a0161542d988107c450a6abb9f7c7d4
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: fff0326df591ad5cd414be73afe9f365b1bc04b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010334"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151007"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clasificar y proteger documentos y mensajes de correo electrónico, también puede usarlas para proteger el contenido en los siguientes contenedores: sitios de Microsoft Teams, grupos de Microsoft 365 ([anteriormente grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), y sitios de SharePoint. Para esta clasificación y protección de nivel de contenedor, utilice la siguiente configuración de etiquetas:
+Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clasificar y proteger documentos y mensajes de correo electrónico, también puede usarlas para proteger el contenido en los siguientes contenedores: sitios de Microsoft Teams, grupos de Microsoft 365 ([anteriormente grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), y sitios de SharePoint. Para esta clasificación y protección de etiquetas, use la siguiente configuración de etiquetas:
 
 - Privacidad (pública o privada) de los sitios de equipos y Grupos de Microsoft 365
 - Acceso de usuarios externos
@@ -106,7 +106,7 @@ Una vez habilitadas las etiquetas de confidencialidad para los contenedores como
     
     - **Controlar el uso compartido externo desde sitios de SharePoint etiquetados**: seleccione esta opción para seleccionar el uso compartido externo para cualquier usuario, invitados nuevos y existentes, invitados existentes o solo para los usuarios de su organización. Para más información sobre esta configuración y opciones, consulte la documentación de SharePoint [Activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site).
     
-    - **Usar el acceso condicional de Azure AD para proteger los sitios de SharePoint etiquetados**: seleccione esta opción solo si su organización la tiene configurada y está usando el [Acceso condicional de Azure Active Directory](/azure/active-directory/conditional-access/overview). Luego, seleccione uno de los siguientes parámetros:
+    - **Usar el acceso condicional de Azure AD para proteger los sitios de SharePoint etiquetados**: seleccione esta opción solo si su organización la tiene configurada y está usando el [Acceso condicional de Azure Active Directory](/azure/active-directory/conditional-access/overview). A continuación, seleccione una de las siguientes opciones: 
     
         - **Determinar si los usuarios pueden acceder a los sitios de SharePoint desde dispositivos no administrados**: esta opción emplea la característica de SharePoint que usa el acceso condicional de Azure AD para bloquear o limitar el acceso a contenido de SharePoint y OneDrive desde dispositivos no administrados. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices) en la documentación de SharePoint. La opción que especifique para esta configuración de etiqueta constituye el equivalente a ejecutar un comando de PowerShell para un sitio, tal y como se describe en los pasos 3-5 en la sección de instrucciones de SharePoint [Bloquear o limitar el acceso a un sitio específico de SharePoint o a OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
             
@@ -209,7 +209,7 @@ Ejemplos de PowerShell, donde el GUID de la etiqueta de confidencialidad es **8f
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Sugerencias de PowerShell para especificar la configuración avanzada
 
-Aunque puede especificar la etiqueta de confidencialidad por su nombre, se recomienda usar el GUID de etiqueta para evitar posibles confusiones sobre la especificación del nombre de la etiqueta o el nombre para mostrar. Para buscar el GUID:
+Aunque puede especificar la etiqueta de confidencialidad por su nombre, se recomienda usar el GUID de etiqueta para evitar posibles confusiones sobre la especificación del nombre de la etiqueta o el nombre para mostrar. Para encontrar el GUID:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
@@ -317,7 +317,7 @@ Cuando los usuarios exploren el sitio, podrán ver el nombre de la etiqueta y la
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Usar PowerShell para aplicar una etiqueta de confidencialidad a varios sitios
 
-Puede usar los cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) y [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) con el parámetro *SensitivityLabel* desde el [Shell de SharePoint Online Management](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) actual para aplicar una etiqueta de confidencialidad a muchos sitios. Los sitios pueden ser cualquiera de los pertenecientes a la colección de sitios de SharePoint o un sitio de OneDrive.
+Puede usar los cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) y [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) con el parámetro *SensitivityLabel* desde el [Shell de SharePoint Online Management](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) actual para aplicar una etiqueta de confidencialidad a muchos sitios. Los sitios pueden ser cualquier colección de sitios de SharePoint o un sitio de OneDrive.
 
 Asegúrese de que tiene la versión 16.0.19418.12000 o posterior del Shell de administración de SharePoint Online.
 
@@ -329,7 +329,7 @@ Asegúrese de que tiene la versión 16.0.19418.12000 o posterior del Shell de ad
    Get-Label |ft Name, Guid
    ```
 
-3. Ahora, [conéctese a SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) y almacene el GUID de etiqueta como una variable. Por ejemplo:
+3. Ahora, [conéctese a SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) y almacene su GUID de etiqueta como una variable. Por ejemplo:
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -351,7 +351,7 @@ Esta serie de comandos le permite etiquetar varios sitios en el espacio empresar
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Ver y administrar etiquetas de confidencialidad en el centro de administración de SharePoint
 
-Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página **Sitios activos** en el nuevo Centro de administración de SharePoint. Es posible que primero tenga que agregar la columna **confidencialidad**:
+Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página **Sitios activos** en el nuevo Centro de administración de SharePoint. Puede que primero necesite agregar la columna **Confidencialidad**:
 
 ![La columna Confidencialidad en la página Sitios activos.](../media/manage-site-sensitivity-labels.png)
 
