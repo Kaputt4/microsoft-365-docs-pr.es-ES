@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2cb0f62fa64570e0b18b5bb0ea3d2009b0421e91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 79ba3d241a913ca967c590c856e53d4073e76f3f
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163030"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239821"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Evaluar las reglas de la reducción de la superficie expuesta a ataques
 
@@ -41,6 +41,8 @@ Establecer reglas de reducción de superficie de ataque para dispositivos que ej
 - Windows 10 Enterprise, versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows Servidor, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+-  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
 - Windows Server 2022
 
 > [!WARNING]
@@ -90,7 +92,7 @@ Durante la evaluación, es posible que desee configurar cada regla individualmen
 
 Consulta [Personalizar reglas de reducción de](customize-attack-surface-reduction.md) superficie de ataque para obtener información sobre cómo configurar la característica con herramientas de administración, incluidas directivas de grupo y directivas de CSP de MDM.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
 - [Usar el modo de auditoría para evaluar Windows Defender](audit-windows-defender.md)

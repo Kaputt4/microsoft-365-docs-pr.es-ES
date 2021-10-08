@@ -1,6 +1,6 @@
 ---
 title: Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles
-description: Usa las herramientas de administración de dispositivos móviles para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
+description: Usa las herramientas de administración de dispositivos móviles para implementar el paquete de configuración en dispositivos de modo que se incorpore al servicio Defender for Endpoint.
 keywords: incorporar dispositivos con mdm, administración de dispositivos, incorporación de Microsoft Defender para dispositivos de punto de conexión, mdm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6aaa510df9b3155015979f4d3a5278c601b56223
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: a92b663eeddfcfb8ccf17bad204074764711685d
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217131"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239886"
 ---
-# <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>Incorporar los dispositivos Windows con las herramientas de administración de dispositivos móviles
+# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,8 @@ ms.locfileid: "60217131"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
-Puedes usar soluciones de administración de dispositivos móviles (MDM) para configurar dispositivos. Defender for Endpoint admite MDM proporcionando OMA-URIs para crear directivas para administrar dispositivos.
+Puedes usar soluciones de administración de dispositivos móviles (MDM) para configurar Windows 10 dispositivos. Defender for Endpoint admite MDM proporcionando OMA-URIs para crear directivas para administrar dispositivos.
+
 
 Para obtener más información sobre cómo usar Defender para CSP de extremo, consulta [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) y [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
@@ -94,7 +95,6 @@ Para obtener más información sobre Microsoft Intune de directiva, [vea Windows
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
 
 ## <a name="related-topics"></a>Temas relacionados
-
 - [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
 - [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)

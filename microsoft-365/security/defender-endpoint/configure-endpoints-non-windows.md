@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 775db5f94cacbca08993b0cb9aac67019515174a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d403005c66a636e5e485fb396d055b5d94b4106
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210034"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239857"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -40,7 +40,7 @@ ms.locfileid: "60210034"
 
 Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Microsoft 365 Defender y proteger mejor la red de la organización.
 
-Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para más información vea:
+Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para obtener más información, vea:
 
 - [Requisitos del sistema de Microsoft Defender para endpoint en Linux](microsoft-defender-endpoint-linux.md#system-requirements)
 - [Requisitos del sistema de Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md#system-requirements).
@@ -68,7 +68,6 @@ Para dispositivos macOS y Linux, puedes elegir salir a través de Microsoft Defe
 También puede desactivar la integración de terceros Windows dispositivos no integrados. Habilite la cobertura para dispositivos que ejecutan plataformas que no Windows mediante [la integración de soluciones de terceros.](https://securitycenter.windows.com/interoperability/partners) 
 
 ## <a name="related-topics"></a>Temas relacionados
-
 - [incorporar dispositivos Windows](configure-endpoints.md)
 - [Servidores integrados](configure-server-endpoints.md)
 - [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)

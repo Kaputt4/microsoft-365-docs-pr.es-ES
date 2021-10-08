@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 68d69f45820dd014ead07a7a9f2f6bbcb82a7d3a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 42f21f27e30cc4a2bc4af5a2ecefd07c7353d96a
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60186625"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240229"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -186,7 +186,7 @@ Si un proxy o firewall bloquea el tráfico anónimo, ya que el sensor Defender f
 
 ### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA): requisitos de proxy y firewall para versiones anteriores de Windows cliente o Windows server
 
-La siguiente información enumera la información de configuración de proxy y firewall necesaria para comunicarse con el agente de Log Analytics (a menudo denominado Microsoft Monitoring Agent) para las versiones anteriores de Windows como Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 y Windows Server 2016.
+La siguiente información enumera la información de configuración de proxy y firewall necesaria para comunicarse con el agente de Log Analytics (a menudo denominado Microsoft Monitoring Agent) para las versiones anteriores de Windows como Windows 7 SP1, Windows 8.1 y Windows Server 2008 R2*
 
 <br>
 
@@ -199,6 +199,9 @@ La siguiente información enumera la información de configuración de proxy y f
 |*.blob.core.windows.net|Puerto 443|Salida|Yes|
 |*.azure-automation.net|Puerto 443|Salida|Yes|
 
+>[!NOTE]
+>*Estos requisitos de conectividad también se aplican al anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para incorporar estos sistemas operativos con la nueva solución unificada se encuentran en Onboard [Windows servers](configure-server-endpoints.md), o para migrar a la nueva solución no fiada en [escenarios](/microsoft-365/security/defender-endpoint/server-migration)de migración de servidor en Microsoft Defender para endpoint .
+
 > [!NOTE]
 > Como solución basada en la nube, el intervalo IP puede cambiar. Se recomienda pasar a la configuración de resolución de DNS.
 
@@ -206,7 +209,7 @@ La siguiente información enumera la información de configuración de proxy y f
 
  Consulte las siguientes instrucciones para eliminar el requisito de comodín (*) para su entorno específico al usar el Microsoft Monitoring Agent (MMA) para versiones anteriores de Windows.
 
-1. Incorporar un sistema operativo anterior con el Microsoft Monitoring Agent (MMA) en Defender para endpoint (para obtener más información, vea [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and Onboard Windows [servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
+1.  Incorporar un sistema operativo anterior con el Microsoft Monitoring Agent (MMA) en Defender para endpoint (para obtener más información, vea [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and Onboard Windows [servers](configure-server-endpoints.md).
 
 2. Asegúrese de que la máquina se está informando correctamente en el portal Microsoft 365 Defender usuario.
 

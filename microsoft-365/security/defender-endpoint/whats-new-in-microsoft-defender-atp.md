@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a92cf747142dbb01908b1ea3931d9b7a6bfa115
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ac6aa01877b7b4968b01b5a16c931079e2b4360e
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159167"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239581"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -34,7 +34,7 @@ ms.locfileid: "60159167"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Las siguientes características están en versión preliminar o generalmente disponibles (GA) en la versión más reciente de Microsoft Defender para endpoint y características de seguridad en Windows 10 y Windows Server.
+Las siguientes características están en versión preliminar o generalmente disponibles (GA) en la versión más reciente de Microsoft Defender para endpoint.
 
 Para obtener más información sobre las características de vista previa, vea [Preview features](preview.md).
 
@@ -59,7 +59,10 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 - [Novedades de Defender para endpoint en iOS](ios-whatsnew.md)
 - [Novedades de Defender para Endpoint en Linux](linux-whatsnew.md)
 
+
 ## <a name="october-2021"></a>Octubre de 2021
+
+- [Incorporación actualizada y paridad de características para Windows Server 2012 R2 y Windows Server 2016 (versión preliminar)](configure-server-endpoints.md)<br> El nuevo paquete de solución unificada facilita la incorporación de servidores mediante la eliminación de dependencias y pasos de instalación. Además, este paquete de solución unificada incluye muchas mejoras de características nuevas.
 
 - Windows 11 compatibilidad agregada a Microsoft Defender para endpoint y Microsoft 365 Defender.
 

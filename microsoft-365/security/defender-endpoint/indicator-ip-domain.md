@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0aaeb4a290c43b8fc725fe806014acfe61a939e8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e90495ee1f803731296cc1df6b55ddf99bbdad35
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150034"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240493"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
@@ -49,9 +49,13 @@ Puedes hacerlo a través de la página de configuración o por grupos de máquin
 Es importante comprender los siguientes requisitos previos antes de crear indicadores para IPS, direcciones URL o dominios:
 
 - La dirección URL/IP permiten y bloquean la protección de red del componente Defender for Endpoint para habilitarse en modo de bloqueo. Para obtener más información sobre la protección de red y las instrucciones de configuración, vea [Enable network protection](enable-network-protection.md).
-- La versión del cliente Antimalware debe ser 4.18.1906.x o posterior.
-- Compatible con máquinas en Windows 10, versión 1709 o posterior, o Windows 11.
-- Asegúrese de **que los indicadores de red personalizados** están **habilitados Microsoft 365 Defender > Configuración > endpoints > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
+- La versión del cliente Antimalware debe ser 4.18.1906.x o posterior. 
+- Compatible con máquinas de Windows 10, versión 1709 o posterior, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019 y Windows Server 2022.
+   
+    >[!NOTE]
+    >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. 
+
+- Asegúrese de **que los indicadores de red personalizados** **están habilitados Centro de seguridad de Microsoft Defender > Configuración > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
 - Para obtener compatibilidad con indicadores en iOS, vea [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 > [!IMPORTANT]

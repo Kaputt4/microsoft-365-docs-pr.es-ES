@@ -17,15 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 9d64ee92d543fd10bfaa706998aa5c0bf61110e9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86332ff7e9a5a9dc08d5bb278ea856990e4cb0c6
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210010"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240325"
 ---
-# <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual no persistente
-
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistentes en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +36,7 @@ ms.locfileid: "60210010"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
-## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
+## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual (VDI) no persistentes
 
 Defender for Endpoint admite la incorporación de sesiones VDI no persistentes.
 
@@ -62,11 +61,17 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
 ### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>Para Windows 10 o Windows 11 o Windows Server 2019 o Windows Server 2022
 
-1. Abra el archivo de configuración .zip VDI (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde el [portal de Microsoft 365 Defender:](https://security.microsoft.com/)
-   1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.
-   2. Seleccione Windows 10 o Windows 11 como sistema operativo.
-   3. En el **campo Método de** implementación, seleccione Scripts de incorporación de VDI para puntos de conexión no **persistentes.**
-   4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
+1.  Abra el archivo de configuración .zip VDI (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde el [portal de Microsoft 365 Defender:](https://security.microsoft.com/)
+
+    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints**  >  **Device management**  >  **Onboarding**.
+
+    1. Seleccione el sistema operativo.
+
+    1.  En el **campo Método de** implementación, seleccione Scripts de incorporación de VDI para puntos de conexión no **persistentes.**
+
+    1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
+
+2. Copie los archivos de la carpeta WindowsDefenderATPOnboardingPackage extraída del archivo .zip en la imagen dorada/maestra de la ruta de acceso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
 
 2. Copie los archivos de la carpeta WindowsDefenderATPOnboardingPackage extraída del archivo .zip en la imagen dorada/maestra de la ruta de acceso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` .
     1. Si va a implementar varias entradas para cada dispositivo, una para cada sesión, copie WindowsDefenderATPOnboardingScript.cmd.
@@ -120,7 +125,7 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 
-2. Siga el [proceso de incorporación del servidor](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
+2. Siga el [proceso de incorporación del servidor](configure-server-endpoints.md). 
 
 ## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Actualización de imágenes de infraestructura de escritorio virtual (VDI) no persistente
 
@@ -165,7 +170,6 @@ Si el mantenimiento sin conexión no es una opción viable para el entorno VDI n
 5. Vuelva a sesar la imagen dorada/maestra como lo haría normalmente.
 
 ## <a name="related-topics"></a>Temas relacionados
-
 - [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
 - [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)

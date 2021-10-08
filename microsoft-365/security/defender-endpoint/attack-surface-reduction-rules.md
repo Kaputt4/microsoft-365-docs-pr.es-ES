@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d84a234a07edddf22f560bc55b5efb5f5dbb62de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c19d2bc64ffda9e6b101af170bb836a434e993d0
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201522"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240361"
 ---
 # <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
@@ -35,15 +35,50 @@ En este artículo se proporciona información sobre las reglas de reducción de 
   - GUID
   - Nombres de reglas del sistema de administración de configuración
 
-## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
+## <a name="public-preview-supported-operating-systems"></a>Versión preliminar pública: sistemas operativos compatibles
 
-En la tabla siguiente se enumeran las reglas de reducción de superficie de ataque en orden alfabético. Una marca de verificación indica que la regla es compatible con el sistema operativo enumerado en esa columna.
+> [!IMPORTANT]
+> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+
+En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas de reducción de superficie de ataque que actualmente son productos de versión preliminar. Las reglas se enumeran en orden alfabético.
 
 > [!Note]
 >
 > - A menos que se indique lo contrario, la compilación mínima Windows 10 es la &nbsp; versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es &nbsp; la versión 1809 o posterior.
 >
-> - \* Todas las reglas admiten exclusiones de archivos y carpetas, a menos que se indique lo contrario.
+
+| Nombre de regla | &nbsp;Windows Servidor 2016 <sup> [[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+|---|:---:|:---:|
+|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v |
+|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v | v |
+|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v |
+|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v | v |
+|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | v | v |
+|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v | v |
+|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | v | v |
+|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | N |
+|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v |
+|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v |
+|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v |
+|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) \* _No se admiten exclusiones de archivos y carpetas._ | N | N |
+|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v | v |
+|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v |
+|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | N | N |
+|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | v | v |
+| **Nombre de la regla** | **Windows &nbsp; Servidor 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp; Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+
+(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, vea [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+
+_End Public Preview: Sistemas operativos compatibles_
+
+## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
+
+En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas que actualmente se liberan a disponibilidad general. Las reglas se enumeran en orden alfabético.
+
+> [!Note]
+>
+> - A menos que se indique lo contrario, la compilación mínima Windows 10 es la &nbsp; versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es &nbsp; la versión 1809 o posterior.
+>
 
 |Nombre de regla|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Servidor|&nbsp;Windows Server 2016|&nbsp;Windows Server 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|

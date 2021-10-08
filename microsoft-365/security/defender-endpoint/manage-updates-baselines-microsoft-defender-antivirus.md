@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/04/2021
+ms.date: 10/07/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 881711359313bb0b22870ce15bbbc7ff2d91d1b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ea87ef0acbcd0cda0fb9d4861042ac1e181ff7fb
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205312"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239629"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -544,6 +544,20 @@ Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Wind
 Para obtener más información, vea [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2110.01</summary>
+
+&ensp;Versión del paquete: **1.1.2110.01**<br/>
+&ensp;Versión de la **plataforma: 4.18.2109.6**<br/>
+&ensp;Versión del motor: **1.1.18500.10**<br/>
+&ensp;Versión de firma: **1.349.2103.0**<br/>
+
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+<br/>
+</details><details>
 <summary>1.1.2109.01</summary>
 
 &ensp;Versión del paquete: **1.1.2109.01**<br/>

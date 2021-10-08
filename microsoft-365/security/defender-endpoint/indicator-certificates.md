@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e74fd5a0ffc62d077f9110b014af5d3b0813afd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b87c249fad5f3d6e2dd4f5ce7076a7f1b00506c7
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154847"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240097"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Crear indicadores basados en certificados
 
@@ -44,7 +44,11 @@ Es importante comprender los siguientes requisitos antes de crear indicadores pa
 
 - Esta característica está disponible si su organización usa Antivirus de Windows Defender y la protección basada en la nube está habilitada. Para obtener más información, vea [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior.
-- Compatible con máquinas de Windows 11, Windows 10, versión 1703 o posterior, Windows server 2016, 2019 y Windows Server 2022.
+- Compatible con máquinas de Windows 10, versión 1703 o posterior, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
+    
+    >[!NOTE]
+    >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. 
+
 - Las definiciones de protección contra virus y amenazas deben estar actualizadas.
 - Actualmente, esta característica admite la introducción de . CER o . Extensiones de archivo PEM.
 

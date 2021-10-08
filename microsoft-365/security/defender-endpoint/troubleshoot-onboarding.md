@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 9c9d731fa8a1632ab6804ebed9fdb2594564eaf8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8f6a4278918dc364f160aea1665c56878a05a41a
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212430"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240049"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -151,7 +151,7 @@ Nombre del canal: Administrador
 
 ****
 
-|ID|Severity|Descripción del evento|Pasos para la solución de problemas|
+|Id.|Severity|Descripción del evento|Pasos para la solución de problemas|
 |---|---|---|---|
 |1819|Error|Microsoft Defender para CSP de extremo: no se pudo establecer el valor del nodo. NodeId: (%1), TokenName: (%2), Result: (%3).|Descargue la [actualización acumulativa para Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).|
 |
@@ -189,7 +189,7 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 
    ****
 
-   |Identificador de evento|Mensaje|Pasos de resolución|
+   |Identificador de evento|Message|Pasos de resolución|
    |:---:|---|---|
    |`5`|Error al conectarse al servidor en la variable Microsoft Defender para el servicio de _punto de conexión_|[Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)|
    |`6`|El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación. Código de error: _variable_|[Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md).|
@@ -232,7 +232,7 @@ En primer lugar, debe comprobar que el servicio está configurado para iniciarse
 
 2. Escriba el siguiente comando y presione **Entrar**:
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
@@ -252,21 +252,19 @@ En primer lugar, debe comprobar que el servicio está configurado para iniciarse
 
 2. Escriba el siguiente comando y presione **Entrar**:
 
-   ```text
+   ```console
    sc config diagtrack start=auto
    ```
 
 3. Se muestra un mensaje de éxito. Para comprobar el cambio, escriba el siguiente comando y presione **Entrar**:
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
-4. Inicie el servicio.
+4. Inicie el servicio. En el símbolo del sistema, escriba el siguiente comando y presione **ENTRAR**:
 
-   a. En el símbolo del sistema, escriba el siguiente comando y presione **ENTRAR**:
-
-   ```text
+   ```console
    sc start diagtrack
    ```
 
@@ -304,7 +302,7 @@ Si se produce un error en la comprobación y el entorno usa un proxy para conect
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> La configuración se suspende y se omitirá en todos los dispositivos cliente, a partir de la actualización de agosto de `disableAntiSpyware` 2020 (versión 4.18.2007.8) a Antivirus de Microsoft Defender.
+> La configuración se suspende y se omitirá en todos los dispositivos Windows 10, a partir de la actualización de agosto de `disableAntiSpyware` 2020 (versión 4.18.2007.8) a Antivirus de Microsoft Defender.
 
 - Después de borrar la directiva, vuelva a ejecutar los pasos de incorporación.
 
@@ -320,12 +318,13 @@ Si se produce un error en la comprobación y el entorno usa un proxy para conect
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
-## <a name="troubleshoot-onboarding-issues-on-a-server"></a>Solucionar problemas de incorporación en un servidor
+## <a name="troubleshoot-onboarding-issues"></a>Solucionar problemas de incorporación 
 
 > [!NOTE]
 > La siguiente guía de solución de problemas solo se aplica Windows Server 2016 y inferior.
 
 Si encuentra problemas al incorporar un servidor, siga los siguientes pasos de comprobación para solucionar posibles problemas.
+
 
 - [Asegúrese Microsoft Monitoring Agent (MMA) está instalado y configurado para informar de los datos del sensor al servicio](configure-server-endpoints.md)
 - [Asegúrese de que la configuración de proxy de servidor y conectividad a Internet esté configurada correctamente](configure-server-endpoints.md)

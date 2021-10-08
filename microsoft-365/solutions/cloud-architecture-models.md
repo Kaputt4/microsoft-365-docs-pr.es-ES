@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: f7d663dc403d3323bf1dd1fa0ba210c26433cee1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9e4899aa2e1719139c211a00c247a19023d109ea
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210358"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239687"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos de TI
 
@@ -50,7 +50,7 @@ Lo que los arquitectos de TI necesitan saber sobre la seguridad en las plataform
   
 | Elemento | Descripción |
 |:-----|:-----|
-|[![Miniatura del modelo de seguridad en la nube de Microsoft para arquitectos empresariales.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>Actualizado en abril de 2021 | Este modelo contiene lo siguiente: <ul><li>Responsabilidades de seguridad de Microsoft y clientes</li><li>Acceso de dispositivos e identidades</li><li>Protección contra amenazas</li><li>Protección de la información </ul><br/>|
+|[![Miniatura del modelo de seguridad en la nube de Microsoft para arquitectos empresariales.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf)  \| <br/>Actualizado en octubre de 2021 | Este modelo contiene lo siguiente: <ul><li>Responsabilidades de seguridad de Microsoft y clientes</li><li>Acceso de dispositivos e identidades</li><li>Protección contra amenazas</li><li>Protección de la información </ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>Redes en la nube de Microsoft para arquitectos de TI
@@ -73,7 +73,7 @@ Lo que los arquitectos de TI necesitan saber sobre la nube híbrida para las pla
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Métodos de arquitectura para migraciones de inquilino a inquilino de la nube de Microsoft 
 En esta serie de temas se muestran varios métodos de arquitectura para las fusiones, las adquisiciones, las ventas y otros casos que podrían llevarle a migrar a un nuevo inquilino en la nube. Estos temas proporcionan instrucciones de punto de partida para la planeación de recursos empresariales. 
 
-| Elemento | Descripción |
+| Item | Descripción |
 |:-----|:-----|
 |[![Imagen digital de las migraciones de inquilino a inquilino en la nube de Microsoft.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| Actualizado en febrero de 2021    |Este modelo contiene lo siguiente: <ul><li>Una asignación de escenarios empresariales a métodos arquitectónicos</li><li>Consideraciones sobre diseño</li><li>Ejemplo de flujo de migración de eventos únicos</li><li>Ejemplo de flujo de migración por fases</li><li>Ejemplo de movimiento de inquilino o flujo dividido</li></ul>|
 

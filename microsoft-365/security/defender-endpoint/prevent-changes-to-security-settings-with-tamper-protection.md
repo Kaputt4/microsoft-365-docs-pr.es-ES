@@ -18,12 +18,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.date: 09/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 352cf74b85ed24eba47fd6973702dd4eb7f73a40
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cf64e4d8c808551ea98afc8d135e7f2d614e5fb0
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209326"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240553"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -38,6 +38,8 @@ La protección contra alteraciones está disponible para dispositivos que ejecut
 - Windows Server 2022
 - Windows Servidor, versión 1803 o posterior
 - Windows Server 2016
+- Windows Server 2012 R2
+
 
 ## <a name="overview"></a>Información general
 
@@ -102,7 +104,7 @@ La protección contra alteraciones puede estar activada o desactivada para el in
 
 - Cuando usa el portal de Microsoft 365 Defender para administrar la protección contra alteraciones, no tiene que usar Intune ni el método de adjuntar inquilino.
 
-- Al administrar la protección contra alteraciones en el portal de Microsoft 365 Defender, la configuración se aplica en todo el espacio empresarial, lo que afecta a todos los dispositivos que ejecutan Windows 10, Windows Server 2016 o Windows Server 2019 o Windows Server 2022. Para ajustar la protección contra manipulaciones (por ejemplo, tener la protección contra manipulaciones en algunos dispositivos, pero desactivada para otros), use [Intune](#manage-tamper-protection-for-your-organization-using-intune) o Configuration Manager con el inquilino [adjuntado](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
+- Al administrar la protección contra alteraciones en el Centro de seguridad de Microsoft Defender, la configuración se aplica en todo el espacio empresarial, lo que afecta a todos los dispositivos que ejecutan Windows 10, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 o Windows Server 2022. Para ajustar la protección contra manipulaciones (por ejemplo, tener la protección contra manipulaciones en algunos dispositivos, pero desactivada para otros), use [Intune](#manage-tamper-protection-for-your-organization-using-intune) o Configuration Manager con el inquilino [adjuntado](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
 - Si tienes un entorno híbrido, las opciones de protección contra alteraciones configuradas en Intune tienen prioridad sobre las opciones configuradas en el portal Microsoft 365 Defender usuario.
 
@@ -117,7 +119,14 @@ La protección contra alteraciones puede estar activada o desactivada para el in
   - Windows Servidor, versión [1803](/windows/release-health/status-windows-10-1803) o posterior
   - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 
-  Para obtener más información acerca de las [versiones, vea Windows 10 información de la versión](/windows/release-health/release-information).
+   - Windows 10
+   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+   - [Windows server, versión 1803](/windows/release-health/status-windows-10-1803) o posterior
+   - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+   - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+
+Para obtener más información acerca de las [versiones, vea Windows 10 información de la versión](/windows/release-health/release-information).
+
 
 - Los dispositivos deben [incorporarse a Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
@@ -184,7 +193,7 @@ Al Windows Server 2016, la Configuración no reflejará con precisión el estado
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Administrar la protección contra alteraciones de su organización con Configuration Manager, versión 2006
 
-Si usa la versión [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)de Configuration Manager, puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *tenant attach*. La conexión de inquilino permite sincronizar los dispositivos de Configuration Manager locales en el Centro de administración de Microsoft Endpoint Manager y, a continuación, entregar directivas de configuración de seguridad de puntos de conexión a colecciones locales & dispositivos.
+Si usa la versión [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)de Configuration Manager, puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *inquilino adjunta*. La conexión de inquilino permite sincronizar los dispositivos de Configuration Manager locales en el Centro de administración de Microsoft Endpoint Manager y, a continuación, entregar directivas de configuración de seguridad de puntos de conexión a colecciones locales & dispositivos.
 
 > [!NOTE]
 > El procedimiento se puede usar para extender la protección contra alteraciones a dispositivos que ejecutan Windows 10, Windows Server 2019 y Windows Server 2022. Asegúrese de revisar los requisitos previos y otra información en los recursos mencionados en este procedimiento.
@@ -250,7 +259,7 @@ Para obtener más información sobre la administración & vulnerabilidad de amen
 
 Windows 10 Sistema operativo [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)o posterior junto con [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint).
 
-Si usa Configuration Manager, versión 2006, con la conexión de inquilino, la protección contra alteraciones se puede extender a Windows Server 2019 y Windows Server 2022. Vea [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview).](/mem/configmgr/tenant-attach/deploy-antivirus-policy)
+Si usa Configuration Manager, versión 2006, con agregado de inquilino, la protección contra alteraciones se puede extender a Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 y Windows Server 2022. Vea [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview).](/mem/configmgr/tenant-attach/deploy-antivirus-policy)
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>¿Afectará la protección contra alteraciones al registro de antivirus que no es de Microsoft en la Seguridad de Windows aplicación?
 
@@ -311,7 +320,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 

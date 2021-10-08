@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 41c51657d748ef1503c5540b1162d7ea43722b9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25b5aa85bc11cf7819c6a878aebdf2cbcdeeb237
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205552"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239869"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -149,15 +149,14 @@ Puede usar PowerShell para confirmar que el EDR en modo de bloque está activado
 Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en modo de bloque se admite de las siguientes versiones de Windows:
 
 - Windows 10 (todas las versiones)
-- Windows Servidor, versión 1803 o posterior
-- Windows Server 2019
+- Windows Servidor, versión 1803 o posterior 
 - Windows Server 2022
+- Windows Server 2019 
+- Windows Server 2016
+- Windows Server 2012 R2
 
-#### <a name="what-about-windows-server-2016"></a>¿Qué hay Windows Server 2016?
-
-Si Windows Server 2016 se Antivirus de Microsoft Defender en modo activo y el extremo se incorpora a Defender para endpoint, se admite técnicamente EDR en modo de bloqueo. Sin embargo, EDR en modo de bloqueo está pensado para ser una protección adicional cuando Antivirus de Microsoft Defender no es la solución antivirus principal en un extremo. En esos casos, Antivirus de Microsoft Defender se ejecuta en modo pasivo.
-
-Actualmente, la ejecución Antivirus de Microsoft Defender en modo pasivo no se admite en Windows Server 2016. Para obtener más información, vea [Passive mode and Windows Server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server) and Antivirus de Microsoft Defender [compatibility](microsoft-defender-antivirus-compatibility.md).
+>[!NOTE]
+>Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md) para que esta característica funcione. 
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>¿Cuánto tiempo se necesita para deshabilitar EDR en modo de bloque?
 

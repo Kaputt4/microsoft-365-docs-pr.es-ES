@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 069fb6b29021f8008be9752dedd12ba81dcfef51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b7aedad0c66544c24e572987c0d777aa0e02a92c
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156203"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240565"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -73,7 +73,7 @@ Puedes iniciar una nueva investigación automatizada de propósito general en el
 
 Para obtener más información sobre las investigaciones automatizadas, vea [Overview of Automated investigations](automated-investigations.md).
 
-## <a name="initiate-live-response-session"></a>Iniciar sesión de respuesta activa
+## <a name="initiate-live-response-session"></a>Iniciar sesión de respuesta en directo
 
 La respuesta en directo es una funcionalidad que te proporciona acceso instantáneo a un dispositivo mediante una conexión remota del shell. Esto le da la capacidad de realizar un trabajo de investigación en profundidad y tomar acciones de respuesta inmediatas para contener rápidamente las amenazas identificadas en tiempo real.
 
@@ -133,10 +133,9 @@ El paquete contiene las siguientes carpetas:
 
 Como parte del proceso de investigación o respuesta, puedes iniciar de forma remota un examen antivirus para ayudar a identificar y corregir malware que podría estar presente en un dispositivo en peligro.
 
-> [!IMPORTANT]
->
-> - Esta acción está disponible para dispositivos Windows 10 versión 1709 o posterior.
-> - Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+>[!IMPORTANT]
+>- Esta acción está disponible para dispositivos de Windows 10, versión 1709 o posterior, Windows Server 2019, Windows Server 2016 y Windows Server 2012 R2.
+>- Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 Uno que haya seleccionado **Ejecutar examen antivirus,** seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
@@ -155,9 +154,8 @@ El Centro de acciones mostrará la información del examen y la escala de tiempo
 
 Además de contener un ataque al detener procesos malintencionados, también puedes bloquear un dispositivo e impedir que se ejecuten los intentos posteriores de programas potencialmente malintencionados.
 
-> [!IMPORTANT]
->
-> - Esta acción está disponible para dispositivos Windows 10 versión 1709 o posterior.
+>[!IMPORTANT]
+> - Esta acción está disponible para dispositivos Windows 10, versión 1709 o posterior y Windows Server 2016. 
 > - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender.
 > - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender control de aplicaciones. Para obtener más información, vea [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
@@ -176,15 +174,17 @@ Cuando una aplicación está restringida, se muestra la siguiente notificación 
 
 ![Imagen de la restricción de la aplicación.](images/atp-app-restriction.png)
 
+>[!NOTE]
+>La notificación no está disponible en Windows Server 2016 y Windows Server 2012 R2.
+
 ## <a name="isolate-devices-from-the-network"></a>Aislar dispositivos de la red
 
 Según la gravedad del ataque y la confidencialidad del dispositivo, es posible que quieras aislar el dispositivo de la red. Esta acción puede ayudar a evitar que el atacante controle el dispositivo en peligro y realice otras actividades, como la exfiltración de datos y el movimiento lateral.
 
-> [!IMPORTANT]
->
-> - El aislamiento total está disponible para dispositivos de Windows 10, versión 1703, Windows Server 2019 y Windows Server 2022.
-> - El aislamiento selectivo está disponible para dispositivos de Windows 10, versión 1709 o posterior, Windows Server 2019 y Windows Server 2022.
-> - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
+>[!IMPORTANT]
+>- El aislamiento total está disponible para dispositivos de Windows 10, versión 1703, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
+>- El aislamiento selectivo está disponible para dispositivos Windows 10 versión 1709 o posterior.
+>- Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
 
 Esta característica de aislamiento de dispositivos desconecta el dispositivo en peligro de la red y conserva la conectividad con el servicio Defender for Endpoint, que sigue supervisando el dispositivo.
 
@@ -225,7 +225,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, fecha 
 
 ![Imagen del centro de acción con información.](images/action-center-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manuales en Microsoft Defender para endpoint plan 1 (versión preliminar)](defender-endpoint-plan-1.md#manual-response-actions)

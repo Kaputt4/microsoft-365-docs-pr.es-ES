@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 680171f2edc23b1d41a0665287c141e2a36d839e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 26f4789ed5c44a2a3380476c78cea67daab84917
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150297"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240516"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Herramientas y métodos de incorporación para Windows dispositivos en Defender para endpoint
 
@@ -37,8 +37,22 @@ ms.locfileid: "60150297"
 
 Los dispositivos de la organización deben configurarse para que el servicio Defender for Endpoint pueda obtener datos de sensores de ellos. Existen varios métodos y herramientas de implementación que puede usar para configurar los dispositivos de la organización.
 
-Se admiten las siguientes herramientas y métodos de implementación:
+En general, identificarás el dispositivo Windows que estás incorporando y, a continuación, sigue la herramienta correspondiente adecuada para el dispositivo o el entorno.
 
+![Imagen de herramientas y métodos de incorporación](images/onboarding-config-tools.png)
+
+## <a name="endpoint-onboarding-tools"></a>Herramientas de incorporación de puntos de conexión
+En función del Windows de conexión que desee incorporar, use la herramienta o el método correspondiente que se describe en la tabla siguiente.
+
+Windows dispositivo | Herramienta o método de incorporación
+:---|:---
+|<ul><li> Windows 10</li> <li>Windows Server 1803 y 2019 y 2022</li> <li>Windows Server 2012 R2 y 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br>   [Directiva de grupo](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[Incorporar versiones anteriores de Windows](onboard-downlevel.md) o Azure [Defender](/azure/security-center/security-center-wdatp) <br><br> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).
+
+
+
+(<a id="fn1">1</a>) Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 Tema|Descripción
 :---|:---

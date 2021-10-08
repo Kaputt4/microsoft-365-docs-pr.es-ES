@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c2d590445265d1189463312f969f7b8b57b5eed5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e490123a06c2384568e4aabe9119936ed618b2c2
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210894"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240490"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos sin acceso a Internet a Microsoft Defender para endpoint
 
@@ -54,7 +54,9 @@ Para obtener más información acerca de los métodos de incorporación, vea los
 
 - Configurar Azure Log Analytics (anteriormente conocido como puerta de enlace OMS) para que actúe como proxy o concentrador:
   - [Agente de Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Instalar y configurar el Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) apunta a la clave Defender para endpoint workspace & id.
+  - [Instalar y configurar el Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) apunta a la clave Defender para endpoint workspace & id.
+
+[Incorporar versiones anteriores de Windows](onboard-downlevel.md)
 
 - Dispositivos sin conexión en la misma red de Azure Log Analytics
   - Configure MMA para que apunte a:
@@ -63,15 +65,14 @@ Para obtener más información acerca de los métodos de incorporación, vea los
 
 ## <a name="azure-virtual-machines"></a>Máquinas virtuales de Azure
 
-- Configurar y habilitar el área [de trabajo de Azure Log Analytics](/azure/azure-monitor/platform/gateway)
-  - Configurar Azure Log Analytics Gateway (anteriormente conocida como puerta de enlace OMS) para que actúe como proxy o concentrador:
+- Configurar Azure Log Analytics Gateway (anteriormente conocida como puerta de enlace OMS) para que actúe como proxy o concentrador:
     - [Puerta de enlace de Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-    - [Instalar y configurar el Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) apunta a la clave Defender para endpoint workspace & id.
-    - Máquinas virtuales de Azure sin conexión en la misma red de OMS Gateway
-      - Configurar la IP de Azure Log Analytics como proxy
-      - Identificador de clave de área de trabajo de Azure Log Analytics & de trabajo
-    - Azure Defender
-      - [Área de trabajo de análisis \> de registro de directivas de seguridad](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [Detección de \> amenazas Permitir que Defender for Endpoint acceda a mis datos](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [Instalar y configurar el Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) apunta a la clave Defender para endpoint workspace & id.
+- Máquinas virtuales de Azure sin conexión en la misma red de OMS Gateway
+    - Configurar la IP de Azure Log Analytics como proxy
+    - Identificador de clave de área de trabajo de Azure Log Analytics & de trabajo
+- Azure Defender
+    - [Área de trabajo de análisis \> de registro de directivas de seguridad](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [Detección de \> amenazas Permitir que Defender for Endpoint acceda a mis datos](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
-        Para obtener más información, vea [Trabajar con directivas de seguridad](/azure/security-center/tutorial-security-policy).
+    Para obtener más información, vea [Trabajar con directivas de seguridad](/azure/security-center/tutorial-security-policy).

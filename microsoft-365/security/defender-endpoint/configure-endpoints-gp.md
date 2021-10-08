@@ -1,6 +1,6 @@
 ---
 title: Incorporación Windows dispositivos a Microsoft Defender para endpoint a través de la directiva de grupo
-description: Use la directiva de grupo para implementar el paquete de configuración en los Windows para que se incorpore al servicio.
+description: Use la directiva de grupo para implementar el paquete de configuración Windows dispositivos para que se incorpore al servicio.
 keywords: configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,16 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: cac2cb06478d115b28163cb8c0aa6575d900be93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d0f97dcbde929c7661fd3bf3a2aba8eb9f69c3c1
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158087"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239953"
 ---
-# <a name="onboard-windows-devices-using-group-policy"></a>Incorporación Windows dispositivos con directiva de grupo
+# <a name="onboard-windows-devices-using-group-policy"></a>Incorporación Windows dispositivos con directiva de grupo 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 **Se aplica a:**
 
@@ -39,15 +41,23 @@ ms.locfileid: "60158087"
 >
 > Para Windows Server 2019 y Windows Server 2022, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
 
-## <a name="onboard-devices-using-group-policy"></a>Incorporar dispositivos con la directiva de grupo
+> [!NOTE]
+> Si usa la nueva solución unificada de Microsoft Defender para endpoints para Windows Server 2012 R2 y 2016, asegúrese de usar los archivos ADMX más recientes del almacén central para obtener acceso a las opciones de directiva correctas de Microsoft Defender. Consulta [Cómo crear y administrar la](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Tienda central para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**. 
 
 Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
-1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
-    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.  
-    2. Seleccione Windows 10 o Windows 11 como sistema operativo.
-    3. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
-    4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
+
+1. Abra el archivo de .zip de configuración de GP (*WindowsDefenderATPOnboardingPackage. zip*) que descargó del asistente de incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
+ 
+    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints**  >  **Device management**   >  **Onboarding**.
+
+    1. Seleccione el sistema operativo.
+    
+    1. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
+
+    1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
+
+     
 
 2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada *OptionalParamsPolicy* y el archivo *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -117,7 +127,7 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Directiva|Configuración
+Policy|Setting
 ---|---
 Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -125,7 +135,7 @@ Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muest
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Directiva|Configuración
+Policy|Setting
 ---|---
 Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, Block
 
@@ -133,7 +143,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, B
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Directiva|Configuración
+Policy|Setting
 ---|---
 Unirse a Microsoft MAPS|Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -142,9 +152,9 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Real-time Protection
 
-Directiva|Configuración
+Policy|Setting
 ---|---
-Desactivar la protección en tiempo real|Deshabilitado
+Desactivar la protección en tiempo real|Deshabilitada
 Activar la supervisión del comportamiento|Habilitado
 Examinar todos los archivos y datos adjuntos descargados|Habilitado
 Supervisar la actividad de archivos y programas en el equipo|Habilitado
@@ -155,7 +165,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Directiva|Configuración
+Policy|Setting
 ---|---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -177,7 +187,7 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
    ![Imagen de configuración de reducción de superficie de ataque.](images/asr-guid.png)
 
-Directiva|Configuración
+Policy|Setting
 ---|---
 Configurar acceso controlado a carpetas| Habilitado, modo auditoría
 
@@ -193,10 +203,14 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 > Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
 
 1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
-    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.
-    2. Seleccione Windows 10 o Windows 11 como sistema operativo.
-    3. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
-    4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
+
+    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints** Administración  >  **de dispositivos**  >  **Offboarding**.
+
+    1. Seleccione el sistema operativo.
+    
+    1. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
+
+    1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
 2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -306,7 +320,6 @@ Al configurar la directiva de nivel de protección en la nube en Antivirus de Mi
 :::image type="content" source="images/cloud-protection-level.png" alt-text="nivel de protección de la nube config.":::
 
 ## <a name="related-topics"></a>Temas relacionados
-
 - [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)

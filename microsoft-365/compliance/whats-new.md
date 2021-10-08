@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c341034169def6627d0b03c043bc32aa399f70c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbe868ea7f5418b9013719caa9858317d1fd6ba3
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167083"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240349"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -45,12 +45,29 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 ### <a name="app-governance"></a>Gobierno de aplicaciones
 
-- [La información de introducción](https://docs.microsoft.com/microsoft-365/compliance/app-governance-get-started) al gobierno de aplicaciones optimizada ha cambiado el flujo de trabajo y ha agregado nuevos vínculos al registro de vista previa pública
-- [Nueva definición de alertas](https://docs.microsoft.com/microsoft-365/compliance/app-governance-anomaly-detection-alerts#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) de detección agregada (actualizada; se agregó una nueva definición para alertas de colección)
+- [La información de introducción](app-governance-get-started.md) al gobierno de aplicaciones optimizada ha cambiado el flujo de trabajo y ha agregado nuevos vínculos al registro de vista previa pública
+- [Nueva definición de alertas](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) de detección agregada (actualizada; se agregó una nueva definición para alertas de colección)
 
 ### <a name="auditing"></a>Auditoría
 
 - [Activar o desactivar la auditoría se](turn-audit-log-search-on-or-off.md) agregó una nueva sección sobre cómo se auditan los cambios en el estado de auditoría de una organización; esto significa que los registros de auditoría se registran cuando la auditoría está activada o desactivada; puede buscar en el registro Exchange de auditoría de administración para estos registros de auditoría
+
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
+
+- [Cumplimiento de la comunicación con la guía de soluciones SIEM](communication-compliance-siem.md) para la integración de cumplimiento de comunicaciones con soluciones SIEM)
+
+### <a name="compliance-offerings"></a>Ofertas de cumplimiento
+
+- [Seguridad en la nube de varios niveles (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Actualizaciones estándar para Singapur para cobertura de Dynamics 365
+- [Sector de tarjetas de pago (PCI)](/compliance/regulatory/offering-pci-dss) Actualizaciones del estándar de seguridad de datos (DSS) para SharePoint cobertura en línea
+- Nueva guía de software de cliente de [la sección 508 de EE. UU.](/compliance/regulatory/offering-section-508-vpats)
+- [Directrices de accesibilidad de contenido web](/compliance/regulatory/offering-wcag-2-1) nuevas instrucciones de software de cliente
+
+### <a name="compliance--service-assurance"></a>Garantía de & cumplimiento
+
+- [Control de servicio](/compliance/) revisa trimestralmente las actualizaciones de contenido para las certificaciones y las instrucciones de aplicabilidad
+  - Destrucción de dispositivos que contienen datos
+  - Ataques DDOS
 
 ### <a name="data-connectors"></a>Conectores de datos
 
@@ -60,6 +77,19 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 ### <a name="ediscovery"></a>eDiscovery
 
 - [Use el editor KQL](ediscovery-kql-editor.md) para crear consultas de búsqueda de vista previa pública de una nueva forma de crear consultas de búsqueda en búsqueda de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery; el editor de KQL proporciona autocompletion para las propiedades y condiciones compatibles con búsquedas y muestra listas de valores admitidos para las propiedades y condiciones estándar; el editor de KQL también proporciona detección de errores y sugerencias para corregir posibles errores en consultas de búsqueda
+
+### <a name="information-barriers"></a>Barreras de información
+
+- [Introducción a las barreras de información](information-barriers-policies.md#step-6-information-barriers-modes-preview) nueva característica de vista previa para los modos de barreras de información
+- [Barreras de información con Microsoft Teams](/microsoftteams/information-barriers-in-teams) nueva característica de vista previa para los modos de barreras de información
+- [Barreras de información con OneDrive](/onedrive/information-barriers) nueva característica de vista previa para los modos de barreras de información
+- [Barreras de información con SharePoint nueva](/sharepoint/information-barriers) característica de vista previa en línea para los modos de barreras de información
+
+### <a name="insider-risk-management"></a>Administración de riesgos internos
+
+- [Introducción a la nueva característica de vista](insider-risk-management-configure.md#recommended-actions-preview) previa de administración de riesgos insider para empezar a usar las acciones recomendadas
+- [Investigar actividades de riesgo interno](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) nueva sección de instrucciones "Obtener ayuda para administrar la cola de alertas de riesgo de insider"
+- [Introducción a la configuración de administración](insider-risk-management-settings.md#admin-notifications) de riesgos insider nueva característica de vista previa de la configuración de notificaciones de administrador
 
 ### <a name="retention-and-records-management"></a>Administración de registros y retención
 - [La revisión de disposición de varias](disposition.md) fases ya está disponible (GA), con nuevos eventos de [auditoría.](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) La revisión de disposición de varias fases permite especificar hasta cinco fases consecutivas de revisión de disposición para una etiqueta de retención y los revisores pueden agregar otros usuarios a su fase de revisión de eliminación. También puede personalizar las notificaciones por correo electrónico y los avisos.
@@ -76,7 +106,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 ### <a name="app-governance"></a>Gobierno de aplicaciones
 - [Entradas expandida para información de alertas](app-governance-anomaly-detection-alerts.md#collection-alerts). Se agregaron nuevas entradas para describir información adicional sobre alertas ahora disponible en el gobierno de la aplicación.
 
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 - [La referencia de característica de cumplimiento de](communication-compliance-feature-reference.md) comunicación agregó nueva compatibilidad con características de vista previa para el examen de datos adjuntos modernos en Teams chats y canales privados.
 
 ### <a name="compliance--service-assurance"></a>Garantía de & cumplimiento

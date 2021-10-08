@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ffc1e8b7872f399a03e09b8f6b2b0f65b4ed3eac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7266a92c43e87b6ccf1bda5d78451c54066297cd
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205276"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240197"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Incorporar al servicio Microsoft Defender para punto de conexión
 
@@ -36,18 +36,15 @@ ms.locfileid: "60205276"
 
 Obtenga información sobre las distintas fases de implementación de Microsoft Defender para endpoint y cómo configurar las funcionalidades de la solución.
 
-La implementación de Defender for Endpoint es un proceso de tres fases:
-
-|[![fase de implementación: preparar.](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [Fase 1: Preparación](prepare-deployment.md)|[![fase de implementación: configuración](images/phase-diagrams/setup.png)](production-deployment.md) <br> [Fase 2: Configuración](production-deployment.md)|![fase de implementación: incorporación](images/phase-diagrams/onboard.png) <br> Fase 3: Incorporación|
-|---|---|---|
-|||*¡Estás aquí!*|
-
-Actualmente se encuentra en la fase de incorporación.
 
 Estos son los pasos que debe seguir para implementar Defender for Endpoint:
 
 - Paso 1: Incorporar puntos de conexión al servicio
 - Paso 2: configurar las capacidades
+
+![Ilustración de los pasos de implementación](images/deployment-steps.png)
+
+
 
 ## <a name="step-1-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Paso 1: Incorporar puntos de conexión con cualquiera de las herramientas de administración admitidas
 
@@ -64,15 +61,26 @@ Después de identificar la arquitectura, deberá decidir qué método de impleme
 
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
-|Punto de conexión|Opciones de herramientas|
-|---|---|
-|**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
-|**macOS**|[Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)|
-|**Servidor Linux**|[Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-|**iOS**|[Basado en aplicaciones](ios-install.md)|
-|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
+| Punto de conexión     | Opciones de herramientas                       |
+|--------------|------------------------------------------|
+| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Azure Defender](azure-server-integration.md) |
+| **macOS**    | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
+| **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
+
 
 ## <a name="step-2-configure-capabilities"></a>Paso 2: configurar las capacidades
+Después de incorporar los puntos de conexión, configurará las capacidades. En la tabla siguiente se enumeran los componentes que puede configurar. Elija los componentes que desea usar y quite los que no se aplican.
+
+| Funcionalidad | Descripción |
+|-|-|
+| [Respuesta de & de detección de puntos de conexión (EDR)](overview-endpoint-detection-response.md) | Las capacidades de defender para detección y respuesta de puntos de conexión endpoint proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas. |
+| [Administración & vulnerabilidad de amenazas (TVM)](next-gen-threat-and-vuln-mgt.md) | Threat & Vulnerability Management es un componente de Microsoft Defender para endpoint y proporciona tanto a los administradores de seguridad como a los equipos de operaciones de seguridad un valor único, incluidos: - Información en tiempo real de detección y respuesta de puntos de conexión (EDR) correlacionada con vulnerabilidades de punto de conexión - Contexto de vulnerabilidad de dispositivo incalculable durante investigaciones de incidentes - Procesos de corrección integrados a Microsoft Intune y Microsoft System Center Configuration Manager.  |
+| [Protección de última generación (NGP)](microsoft-defender-antivirus-windows.md) | Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona protección de última generación para escritorios, equipos portátiles y servidores. El Antivirus de Microsoft Defender incluye:<br> <br>-Protección entregada en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes. Junto con Intelligent Security Graph y el aprendizaje automático, la protección en la nube forma parte de las tecnologías de última generación utilizadas por el Antivirus de Microsoft Defender.<br> <br> - Análisis siempre continuo mediante la supervisión avanzada del comportamiento de procesos y archivos y otras heurísticas (también conocida como "protección en tiempo real").<br><br> - Actualizaciones de protección dedicadas basadas en aprendizaje automático, análisis de big data humanos y automatizados e investigación detallada de resistencia a amenazas. |
+| [Reducción de superficie de ataque (ASR)](overview-attack-surface-reduction.md) | Las capacidades de reducción de superficie de ataque en Microsoft Defender para endpoint ayudan a proteger los dispositivos y aplicaciones de la organización frente a amenazas nuevas y emergentes. |
+| [Auto Investigation & Remediation (AIR)](automated-investigations.md) | Microsoft Defender para endpoint usa investigaciones automatizadas para reducir significativamente el volumen de alertas que deben investigarse individualmente. La característica de investigación automatizada aprovecha varios algoritmos de inspección y procesos usados por analistas (como playbooks) para examinar alertas y tomar medidas de corrección inmediatas para resolver infracciones. Esto reduce considerablemente el volumen de alertas, lo que facilita que los expertos de operaciones de seguridad puedan centrarse en amenazas más complejas y otras iniciativas de alto valor. |
+| [Expertos en amenazas de Microsoft (MTE)](microsoft-threat-experts.md) | Expertos en amenazas de Microsoft es un servicio de búsqueda administrado que proporciona a los Centros de operaciones de seguridad (SOC) supervisión y análisis de nivel de experto para ayudarles a garantizar que las amenazas críticas en sus entornos únicos no se pierden.      |
 
 Después de incorporar los puntos de conexión, configurarás las distintas funcionalidades, como detección y respuesta de puntos de conexión, protección de última generación y reducción de superficie de ataque.
 

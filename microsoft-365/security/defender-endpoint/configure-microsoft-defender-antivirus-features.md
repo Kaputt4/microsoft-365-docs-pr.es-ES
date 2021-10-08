@@ -17,12 +17,12 @@ ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6837e63b24a0d95cc7f8ccb8535f8f8e98c8dec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 333ea6a30ee9740b6556e1adc6576b742d277ce2
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201445"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240169"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurar las funciones del Antivirus de Microsoft Defender
 
@@ -37,6 +37,7 @@ Puede configurar Antivirus de Microsoft Defender con una serie de herramientas, 
 - Directiva de grupo
 - Cmdlets de PowerShell
 - Instrumental de administración de Windows (WMI)
+- [Asociación de inquilinos](/mem/configmgr/tenant-attach/)
 
 Se pueden configurar las siguientes categorías generales de características:
 

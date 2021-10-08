@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c00130dba6dcb742ff3f321d7a51edcbfb378f62
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 74e0289c2233a4df1a4e9810a31e960a49078177
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205684"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239845"
 ---
-# <a name="onboard-the-windows-devices-using-a-local-script"></a>Incorporación de Windows dispositivos con un script local
+# <a name="onboard-windows-devices-using-a-local-script"></a>Incorporación Windows dispositivos con un script local
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,13 @@ También puedes incorporar manualmente dispositivos individuales a Defender para
 >
 > Para implementar a escala, use [otras opciones de implementación.](configure-endpoints.md) Por ejemplo, puedes implementar un script de incorporación en más de 10 dispositivos en producción con el script disponible en [Onboard Windows devices using Group Policy](configure-endpoints-gp.md).
 
-## <a name="onboard-devices"></a>Incorporar dispositivos
+Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint. 
+
+## <a name="onboard-devices"></a>Incorporar dispositivos 
+
+1.  Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Portal de Defender:](https://security.microsoft.com/)
+
+    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints**  >  **Device management**  >  **Onboarding**.
 
 
 Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
@@ -131,7 +137,6 @@ La supervisión también se puede realizar directamente en el portal o mediante 
 3. Compruebe que aparecen dispositivos.
 
 ## <a name="related-topics"></a>Temas relacionados
-
 - [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
 - [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)

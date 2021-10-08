@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe Microsoft 365 grupos para conocer los grupos y sus actividades.
-ms.openlocfilehash: 62d2ed90a29a75062dcce98346aa5ed3f5460428
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 332ffc9c570994de364f6559218d7bfa78d532db
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157343"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240337"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Informes en el Centro de administración: Microsoft 365 grupos
 
 El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe Microsoft 365 grupos, puede obtener información sobre la actividad de los grupos de su organización y ver cuántos grupos se crean y usan.
   
 > [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial para ver informes.  
+> Para ver informes, debe ser un administrador global y un lector global en Microsoft 365, un lector de informes en Azure o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial.  
   
 ## <a name="how-to-get-to-the-groups-report"></a>Cómo llegar al informe de grupos
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7fd686c21003a467c4d2d5c5d7326feda4c1045d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1eec095110378c74cd0a5aa8279ca591e2a15e47
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162631"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239663"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -115,7 +115,7 @@ iOS|![No.](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg)
 > [!NOTE]
 > Cuando se especifica una revisión, debe implementarse antes de la incorporación del dispositivo para configurar Defender for Endpoint en el entorno correcto.
 >
-> ¿Intenta incorporar Windows dispositivos anteriores a Windows 10 o Windows Server 2019 o Windows Server 2022 con [Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) Deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1.
+> Intentar incorporar Windows dispositivos anteriores Windows 10 o Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839))| ![ Sí. ](images/svg/check-yes.svg) | ![ Sí ](images/svg/check-yes.svg) | ![ Sí o ](images/svg/check-yes.svg) Windows Server 2022 con [Microsoft Monitoring Agent](configure-server-endpoints.md)? Deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1.
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versiones del sistema operativo al usar Azure Defender para servidores
 

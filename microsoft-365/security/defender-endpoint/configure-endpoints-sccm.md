@@ -1,6 +1,6 @@
 ---
 title: Incorporación Windows dispositivos con Configuration Manager
-description: Use Configuration Manager para implementar el paquete de configuración en dispositivos para que los dispositivos se incorpore al servicio.
+description: Use Configuration Manager para implementar el paquete de configuración en dispositivos de modo que se incorpore al servicio Defender for Endpoint.
 keywords: incorporar dispositivos con sccm, administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: ff1863a24e352823fce6d1c9e57f228528cda016
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0faeb2039f0a66c014d0bb63e6bbc657206e3e16
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176889"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240205"
 ---
-# <a name="onboard-the-windows-devices-using-configuration-manager"></a>Incorporar los dispositivos Windows con Configuration Manager
+# <a name="onboard-windows-devices-using-configuration-manager"></a>Incorporación Windows dispositivos con Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,43 +35,16 @@ ms.locfileid: "60176889"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
-## <a name="supported-client-operating-systems"></a>Sistemas operativos cliente compatibles
 
-En función de la versión de Configuration Manager que esté ejecutando, se pueden incorporar los siguientes sistemas operativos cliente:
+Puede usar Configuration Manager para incorporar puntos de conexión al servicio de Microsoft Defender para endpoints. 
 
-- **Configuration Manager versión 1910 y anterior:**
-  - Equipos clientes que ejecutan Windows 10
-- **Configuration Manager versión 2002 y versiones posteriores:**
+Hay varias opciones que puede usar para incorporar dispositivos con Configuration Manager:
+- [Incorporar dispositivos con System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
+- [Asociación de inquilinos](/mem/configmgr/tenant-attach/)
 
-  A partir de la versión 2002 de Configuration Manager, puede incorporar los siguientes sistemas operativos:
 
-  - Windows 8.1
-  - Windows 10
-  - Windows 11
-  - Windows Server 2012 R2
-  - Windows Server 2016
-  - Windows Server 2016 versión 1803 o posterior
-  - Windows Server 2019
-  - Windows Server 2022
 
-> [!NOTE]
-> Para obtener más información sobre cómo incorporar Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 y Windows Server 2022, vea [Onboard Windows servers](configure-server-endpoints.md).
-
-### <a name="onboard-devices-using-system-center-configuration-manager"></a>Incorporar dispositivos con System Center Configuration Manager
-
-Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) o [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso para implementar Microsoft Defender para endpoint.
-
-1. Abra el paquete de configuración de Configuration Manager .zip archivo (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde [Microsoft 365 Defender portal:](https://security.microsoft.com/)
-    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.
-    2. Seleccione Windows 10 o Windows 11 como sistema operativo.
-    3. En el **campo Método de** implementación, seleccione System Center Configuration Manager **2012/2012 R2/1511/1602**.
-    4. Seleccione **Descargar paquete** y guarde el .zip archivo.
-
-2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los administradores de red que implementarán el paquete. Debe tener un archivo denominado *WindowsDefenderATPOnboardingScript.cmd*.
-
-3. Implemente el paquete siguiendo los pasos descritos en el artículo Paquetes y [programas System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
-
-   Elija una colección de dispositivos predefinida en la que implementar el paquete.
+Para Windows Server 2012 R2 y Windows Server 2016: después de completar los pasos de incorporación, deberá configurar y actualizar System Center Endpoint Protection [clientes](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 > Defender for Endpoint no admite la incorporación durante la fase de la experiencia de implementación [(OOBE).](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Asegúrese de que los usuarios completen OOBE después de ejecutar Windows instalación o actualización.
@@ -226,7 +199,6 @@ Value: "1"
 Para obtener más información, vea Introducción a [la configuración de cumplimiento en System Center Configuration Manager de 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="related-topics"></a>Temas relacionados
-
 - [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
 - [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)

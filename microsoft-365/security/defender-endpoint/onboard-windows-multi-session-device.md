@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6b39dfe3a080b339ca5f4bbaf91c3db7d84c8d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 709cd408d548e8a7c16973c08b0369616f3b91d1
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209338"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240541"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Incorporación Windows de varias sesiones en Azure Virtual Desktop
 
@@ -55,14 +55,13 @@ Hay varias formas de incorporar un equipo host WVD:
 
 - Ejecute el script en la imagen dorada (o desde una ubicación compartida) durante el inicio.
 - Use una herramienta de administración para ejecutar el script.
-- A [través de la integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)
+- A [través de la integración con Azure Defender](azure-server-integration.md)
 
 #### <a name="scenario-1-using-local-group-policy"></a>*Escenario 1: Uso de la directiva de grupo local*
 
 Este escenario requiere colocar el script en una imagen dorada y usa la directiva de grupo local para ejecutarse al principio del proceso de arranque.
 
-Use las instrucciones de Incorporación de dispositivos de infraestructura de escritorio [virtual (VDI)](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices)no persistentes .
-
+Use las instrucciones de Incorporación de los dispositivos de infraestructura de escritorio [virtual (VDI)](configure-endpoints-vdi.md)no persistentes .
 
 Siga las instrucciones de una sola entrada para cada dispositivo.
 

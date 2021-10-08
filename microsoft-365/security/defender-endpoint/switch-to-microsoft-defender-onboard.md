@@ -21,12 +21,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 10/06/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 47a698d2e0832ed477808be379a6ad99b932b702
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 52c1c4ba86f596e7832b5cb3feaaa65688ba452d
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217095"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239593"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -64,17 +64,21 @@ ms.locfileid: "60217095"
 
 Los métodos de implementación varían según el sistema operativo y los métodos preferidos. En la tabla siguiente se enumeran los recursos que le ayudarán a incorporarse a Defender for Endpoint:
 
-<br/><br/>
+|Sistemas operativos  |Métodos  |
+|---------|---------|
+|<ul><li> Windows 10</li> <li>Windows Servidor 1803 y 2019</li> <li>Windows Server 2012 R2 y 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br>   [Directiva de grupo](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA) o](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Azure Defender](/azure/security-center/security-center-wdatp) <br><br> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
+| <ul><li> macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave) | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md)   |
+| <ul><li>Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |  [Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|  
+| <ul><li>iOS | [Microsoft Endpoint Manager](ios-install.md)     |
+|<ul><li> Android  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
-|Sistemas operativos|Métodos|
-|---|---|
-|Windows 10|[Directiva de grupo](configure-endpoints-gp.md) <br/><br/> [Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md) <br/><br/> [Script local](configure-endpoints-script.md) <br/><br/> **NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.|
-|Windows 8.1 Enterprise <br/><br/> Windows 8.1 Pro <br/><br/> Windows 7 SP1 Enterprise <br/><br/> Windows 7 SP1 Pro|[Microsoft Monitoring Agent](onboard-downlevel.md) <br/><br/> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).|
-|Windows Server 2019 y versiones posteriores <br/><br/> Windows Edición principal de Server 2019 <br/><br/> Windows Versión 1803 del servidor y versiones posteriores|[Script local](configure-endpoints-script.md) <br/><br/> [Directiva de grupo](configure-endpoints-gp.md) <br/><br/> [Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [System Center Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [Scripts de incorporación de VDI para dispositivos no persistentes](configure-endpoints-vdi.md) <br/><br/> **NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.|
-|Windows Server 2016 <br/><br/> Windows Server 2012 R2 <br/><br/> Windows Server 2008 R2 SP1|[Portal de Microsoft 365 Defender](configure-server-endpoints.md) <br/><br/> [Azure Defender](/azure/security-center/security-center-wdatp)|
-|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)|
-|iOS|[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)|
-|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS o LTS superior; SLES 12+; Debian 9+; Oracle Linux 7.2|[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)|
+
+
+
+(<a id="fn1">1</a>) Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
+
 
 ## <a name="run-a-detection-test"></a>Ejecutar una prueba de detección
 
@@ -159,7 +163,7 @@ Ahora que has incorporado a Defender for Endpoint y has desinstalado la solució
 - Aplicaciones potencialmente no deseadas (PUA)
 - Protección de red (NP)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 **¡Enhorabuena!** Ha completado la migración [a Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
 
