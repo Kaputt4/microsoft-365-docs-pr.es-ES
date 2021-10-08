@@ -7,7 +7,7 @@ ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
-ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c9d888a175b5e070acfd3a9be7b428ee2404ec0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59220898"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197298"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
@@ -195,7 +195,7 @@ El resultado del método web de extremos es una matriz de registros en la que ca
 - tcpPorts: los puertos TCP del conjunto de extremos. Todos los elementos de los puertos tienen formato de lista de valores separados por comas de puertos o intervalos de puertos separados por un carácter de guión (-). Los puertos se aplican a todas las direcciones IP y todas las direcciones URL en ese conjunto de extremos para esa categoría. Se omite si está en blanco.
 - udpPorts: los puertos UDP para los intervalos de direcciones IP en ese conjunto de extremos. Se omite si está en blanco.
 - ips: los intervalos de direcciones IP asociados a este conjunto de puntos de conexión que se establece como asociado a los puertos TCP o UDP mencionados. Una matriz de JSON de intervalos de direcciones IP. Se omite si está en blanco.
-- category: la categoría de conectividad del conjunto de puntos de conexión. Los valores válidos son _Optimize_, _Allow_ y _Default_. Si busca el resultado del método web de puntos de conexión para la categoría de una dirección IP o dirección URL específica, es posible que la consulta devuelva varias categorías. En ese caso, siga la recomendación de la categoría de prioridad más alta. Por ejemplo, si el punto de conexión se muestra tanto en _Optimize_ como en _Allow_, debe seguir los requisitos de _Optimize_. Obligatorio.
+- categoría: la categoría de conectividad para el conjunto de puntos de conexión. Los valores válidos son _Optimizar_, _Permitir_ y _Predeterminado_. Si realiza una búsqueda del resultado del método web de puntos de conexión para la categoría de una dirección IP o URL específica, es posible que la consulta muestre varias categorías. En ese caso, siga la recomendación para la categoría de prioridad más alta. Por ejemplo, si el punto de conexión aparece tanto en _Optimizar_ y _Permitir_, debe seguir los requisitos para _Optimizar_. Obligatorio.
 - expressRoute: _True_ si este conjunto de puntos de conexión se enruta a través de ExpressRoute; _False_ en caso contrario.
 - required: _verdadero_ si se requiere que el conjunto de extremos tenga conectividad para Office 365 para ser compatible. _Falso_ si el conjunto de extremos es opcional.
 - notes: para puntos de conexión opcionales, este texto describe la funcionalidad de Office 365 que no será disponible si no se puede tener acceso a las direcciones IP o las direcciones URL en este conjunto de puntos de conexión en el nivel de red.
@@ -357,7 +357,7 @@ Este script hace lo siguiente:
 
 - Comprueba el número de versión de los puntos de conexión de las instancias Worldwide de Office 365 actuales llamando a la API de REST del servicio web.
 - Comprueba si hay un archivo de versión actual en _$env:TEMP\O365_endpoints_latestversion.txt_. La ruta de acceso de la variable global **$env:Temp** es, por lo general, _C:\Users\\ <nombre_usuario\>\AppData\Local\Temp_.
-- Si esta es la primera vez que se ejecuta el script, este devuelve la versión actual y todas las direcciones IP y URL actuales, escribe la versión de los puntos de conexión en el archivo _$env:TEMP\O365_endpoints_latestversion.txt_ y el resultado de los datos de los puntos de conexión en el archivo _$env:TEMP\O365_endpoints_data.txt_. Puede modificar la ruta de acceso y/o el nombre del archivo de salida editando las líneas siguientes:
+- Si esta es la primera vez que se ejecuta el script, este devuelve la versión actual y todas las direcciones IP y URL actuales, escribe la versión de los puntos de conexión en el archivo _$env:TEMP\O365_endpoints_latestversion.txt_ y el resultado de los datos de los puntos de conexión en el archivo _$env:TEMP\O365_endpoints_data.txt_. Puede modificar la ruta o el nombre del archivo de resultado mediante la edición de las líneas siguientes:
 
     ``` powershell
     $versionpath = $Env:TEMP + "\O365_endpoints_latestversion.txt"
@@ -367,7 +367,7 @@ Este script hace lo siguiente:
 - En cada ejecución subsiguiente del script, si la versión más reciente del servicio web es la misma que la versión del archivo _O365_endpoints_latestversion.txt_, el script saldrá sin realizar cambios.
 - Si la versión más reciente del servicio web es más reciente que la versión del archivo _O365_endpoints_latestversion.txt_, el script devuelve los puntos de conexión y los filtros de los puntos de conexión de las categorías **Allow** y **Optimize**, actualiza la versión en el archivo _O365_endpoints_latestversion.txt_ y escribe los datos actualizados en el archivo _O365_endpoints_data.txt_.
 
-El script genera un _ClientRequestId_ único para el equipo en el que se ejecuta y reutiliza este identificador en varias llamadas. Este ID se almacena en el archivo _O365_endpoints_latestversion.txt_.
+El script genera un _ClientRequestId_ único para el equipo en el que se ejecuta y reutiliza este id. en varias llamadas. Este id. se almacena en el archivo _O365_endpoints_latestversion.txt_.
 
 ### <a name="to-run-the-powershell-script"></a>Ejecución del script de PowerShell
 

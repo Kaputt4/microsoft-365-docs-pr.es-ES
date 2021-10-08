@@ -19,15 +19,15 @@ f1.keywords: NOCSH
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkTEAMS
-localization_priority: Priority
+ms.localizationpriority: high
 recommendations: false
 description: Obtenga más información sobre las opciones para limitar o deshabilitar el uso compartido de Microsoft 365.
-ms.openlocfilehash: 500d2dd8aa1a657cd3a71cb87b30a2faf63bb4c4
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: 9d1784e4520b59aedc53a71110f1c7ab0e9d8914
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479770"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154163"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitar el uso compartido en Microsoft 365
 
@@ -180,7 +180,7 @@ Desactivar los vínculos de tipo *Cualquiera*
 
 ## <a name="people-in-your-organization-sharing-links"></a>Vínculos de uso compartido de *Personas de su organización*
 
-De forma predeterminada, los miembros de un sitio pueden compartir archivos y carpetas con otras personas de su organización con un vínculo de *Personas de su organización*. Puede deshabilitar los vínculos de *Personas de su organización* con PowerShell:
+De forma predeterminada, los miembros de un sitio pueden compartir archivos y carpetas con otras personas de su organización con un vínculo de *Personas de su organización*. Puede deshabilitar vínculos de *Personas de su organización* mediante PowerShell:
 
 ```powershell
 Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
@@ -212,7 +212,7 @@ Los usuarios que tienen acceso a los archivos y carpetas de Microsoft 365 pueden
 
 ## <a name="conditional-access"></a>Acceso condicional
 
-El acceso condicional de Azure Active Directory proporciona opciones para limitar o impedir el uso compartido con personas en función de la ubicación de la red, el estado del dispositivo, el riesgo de inicio de sesión y otros factores. Vea [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview)
+El acceso condicional de Azure Active Directory proporciona opciones para limitar o impedir el uso compartido con personas en función de la ubicación de la red, el estado del dispositivo, el riesgo de inicio de sesión y otros factores. Vea [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview).
 
 SharePoint proporciona integración directa con acceso condicional de Azure AD para dispositivos no administrados y la ubicación de red. Vea las referencias siguientes para obtener más información:
 

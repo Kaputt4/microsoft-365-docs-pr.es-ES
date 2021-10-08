@@ -10,15 +10,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 description: Microsoft 365 ayuda a las organizaciones de energía a mudarse a una plataforma de colaboración moderna, mientras las ayuda a mantener sus datos y sistemas seguros y conforme a las normativas.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: a9e104516b203d81ef69058b2d31d4b4c97df39e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70be71b33c471d31207215be6c518f3429b31bf7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59189037"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206414"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Consideraciones clave de cumplimiento y seguridad para la Industria energética
 ![Metáfora ilustrativa de una visión global de varias industrias que utilizan la nube.](../media/solution-arch-center/MSC17_global_016.png)
@@ -86,7 +86,7 @@ Microsoft 365 proporciona capacidades de directiva común para Microsoft Teams a
 
 **Directivas de nombramiento del Grupo Office 365** ayudan a asegurar que los Grupos de Office 365, y por lo tanto Microsoft Teams, sean nombrados de acuerdo a la directiva corporativa. El nombre de un equipo puede presentar desafíos si no se nombra adecuadamente, por ejemplo, es posible que los empleados no sepan en qué equipos trabajar o compartir información si se les nombra incorrectamente. Las directivas de nombramiento de grupo pueden hacer cumplir una buena higiene y también pueden evitar el uso de palabras específicas, como palabras reservadas o terminología inapropiada. 
 
-**Las directivas de expiración de Grupos de Office 365** ayudan a garantizar que los Grupos de Office 365 y, por lo tanto Microsoft Teams, no se conserven durante períodos de tiempo más largos de lo que la organización quiere o necesita Esta función ayuda a evitar dos problemas clave en la administración de información:
+**Las directivas de caducidad de grupos de Office 365** ayudan a garantizar que los Grupos de Office 365, y por tanto Microsoft Teams, no se conserven durante más tiempo del requerido por la organización. Esta capacidad ayuda a prevenir dos problemas clave de administración de la información:
 - La proliferación de Microsoft Teams que no son necesarios ni utilizados
 - La retención excesiva de datos que ya no son necesarios para la organización
 
@@ -130,7 +130,7 @@ Microsoft 365 proporciona una plataforma de identificación segura con **Azure A
 
 **Microsoft Cloud App Security (MCAS)** proporciona a las organizaciones la capacidad de hacer cumplir las directivas a un nivel detallado y de detectar anomalías de comportamiento basadas en perfiles de usuario individuales que se definen automáticamente mediante el aprendizaje automático. El MCAS puede basarse en las directivas de Azure Conditional Access, para proteger aún más los activos sensibles evaluando señales adicionales relacionadas con el comportamiento del usuario y las propiedades de los documentos a los que se accede. Con el tiempo, el MCAS aprenderá lo que se considera un comportamiento típico de cada empleado, con respecto a los datos a los que acceden y las aplicaciones que utilizan. Basándose en los patrones de comportamiento aprendidos, las directivas pueden hacer cumplir automáticamente los controles de seguridad si un empleado se sale de ese perfil de comportamiento. Por ejemplo, si un empleado suele acceder a una aplicación de contabilidad de 9 de la mañana a 5 de la tarde, de lunes a viernes, pero ese mismo usuario comienza a acceder a esa aplicación en gran medida un domingo por la tarde, el MCAS puede hacer cumplir dinámicamente las directivas para exigir al usuario que se vuelva a autentificar. Esto ayuda a asegurar que las credenciales no se han visto comprometidas. Además, el MCAS puede ayudar a descubrir e identificar Shadow IT en la organización, ayudando a los equipos de InfoSec a asegurarse de que los empleados están utilizando herramientas autorizadas cuando trabajan con datos confidenciales. Por último, el MCAS puede proteger los datos sensibles en cualquier lugar de la Nube, incluso fuera de la plataforma Microsoft 365. Permite a las organizaciones sancionar (o no sancionar) determinadas aplicaciones externas de la Nube, controlando el acceso y la vigilancia cuando los usuarios trabajan en esas aplicaciones.
 
-**Azure Active Directory**, y los servicios de seguridad conexos de Microsoft 365, constituyen la base sobre la que se puede desplegar una moderna plataforma de colaboración en la nube para las organizaciones de la industria energética, de modo que el acceso a los datos y las aplicaciones se pueda asegurar firmemente y se puedan cumplir las obligaciones de cumplimiento de la normativa. En resumen, estos instrumentos proporcionan las siguientes capacidades clave:
+**Azure Active Directory**, y los servicios de seguridad relacionados de Microsoft 365, proporcionan la base sobre la que se puede desplegar una moderna plataforma de colaboración en la nube para las organizaciones del sector energético, de modo que el acceso a los datos y las aplicaciones pueda estar fuertemente asegurado y se puedan cumplir las obligaciones de cumplimiento normativo. En resumen, estas herramientas proporcionan las siguientes capacidades clave:
 - Almacenar centralmente y administrar de forma segura las identidades de los usuarios
 - Utilizar un protocolo de autenticación fuerte, incluida la autenticación multifactorial, para autenticar a los usuarios en las solicitudes de acceso y proporcionar una experiencia de autenticación coherente y sólida en cualquier aplicación
 - Validar dinámicamente las directivas sobre todas las solicitudes de acceso, incorporando múltiples señales en el proceso de toma de decisión de directivas, incluyendo la identidad, la pertenencia a un usuario o grupo, la solicitud, el dispositivo, la red, la ubicación y la puntuación de riesgo en tiempo real

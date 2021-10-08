@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Implemente funcionalidades de gobernanza de aplicaciones de Microsoft para controlar sus aplicaciones.
-ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ca1a77c4f5a1543a000b563dde98238136b3115d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59190024"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189554"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Complemento de gobernanza de aplicaciones para Microsoft Cloud App Security (en versión preliminar)
 
@@ -50,7 +50,7 @@ La gobernanza de aplicaciones es una solución basada en una plataforma que form
 
 ## <a name="a-first-glimpse-at-app-governance"></a>Primer vistazo a la gobernanza de aplicaciones
 
-Para ver el panel de gobernanza de aplicaciones, diríjase a [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Tenga en cuenta que su cuenta de inicio de sesión debe tener uno de los [roles de administrador](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobernanza de aplicaciones.
+Para ver el panel de control de la aplicación, diríjase a [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Tenga en cuenta que su cuenta de inicio de sesión debe tener uno de los [roles de administrador](app-governance-get-started.md#administrator-roles) para ver cualquier dato de gobierno de la aplicación.
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>Integración de gobernanza de aplicaciones con Azure AD y Microsoft Cloud App Security
 

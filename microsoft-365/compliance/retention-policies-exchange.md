@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: d927927aea3f27ecfb99ca68b37d89820efda006
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e757bc41b7291f7a71ba44aec6bb6dc0ac917924
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59216587"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192180"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
 
-La información de este artículo complementa el contenido de [Más información sobre la retención](retention.md) porque tiene información que es específica de Exchange.  Para otras cargas de trabajo, vea:
+La información de este artículo complementa el contenido de [Más información sobre la retención](retention.md) porque tiene información que es específica de Exchange. Para otras cargas de trabajo, consulte:
 
-- [Obtenga más información sobre la retención de SharePoint y OneDrive](retention-policies-sharepoint.md)
+- [Más información sobre las directivas de retención de SharePoint y OneDrive](retention-policies-sharepoint.md)
 - [Más información sobre las directivas de retención para Microsoft Teams](retention-policies-teams.md)
 - [Más información sobre la retención para Yammer](retention-policies-yammer.md)
 
@@ -44,7 +44,7 @@ Otros elementos almacenados en un buzón de correo, como los mensajes de Skype y
 
 ## <a name="how-retention-works-for-exchange"></a>Cómo funciona la retención para Exchange
 
-Tanto un buzón como una carpeta pública utilizan la [carpeta Elementos recuperables](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) para retener elementos. Sólo las personas a las que se les han asignado permisos de eDiscovery pueden ver los elementos de la carpeta Elementos recuperables de otro usuario.
+Tanto el buzón de correo como la carpeta pública usan la [carpeta Elementos recuperables](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) para retener elementos. Solo los usuarios a los que se les han asignado permisos de eDiscovery pueden ver elementos en la carpeta Elementos recuperables de otro usuario.
   
 Cuando un usuario elimina un mensaje de una carpeta distinta de la carpeta Elementos eliminados, el mensaje se mueve de forma predeterminada a la carpeta Elementos eliminados. Sin embargo, un usuario puede eliminar temporalmente un elemento (Mayús+Eliminar) en cualquier carpeta, lo que omite la carpeta Elementos eliminados y mueve el elemento directamente a la carpeta Elementos recuperables.
   
@@ -63,7 +63,7 @@ Cuando los ajustes de retención son para retener y borrar:
 
 ![Diagrama de flujo de retención en el correo electrónico y las carpetas públicas.](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
-1. **Si el elemento se ha modificado o eliminado permanentemente** por el usuario (usando MAYÚS+SUPR o eliminarlo de Elementos eliminados) durante el periodo de retención: el elemento se mueve (o es copiado, en el caso de la modificación) a la carpeta Elementos recuperables. Allí, un trabajo de temporizador se ejecuta periódicamente e identifica los artículos cuyo período de retención ha expirado, y estos artículos se eliminan de forma permanente dentro de los 14 días siguientes a la finalización del período de retención. Tenga en cuenta que 14 días es la opción predeterminada, pero puede configurar hasta 30 días.
+1. **Si el usuario modifica o elimina el elemento de forma permanente** (mediante MAYÚS+SUPR o eliminándolo de Elementos eliminados) durante el período de retención, el elemento se mueve (o copia, en el caso de la edición) a la carpeta Elementos recuperables. Allí se ejecuta un trabajo de temporizador de forma periódica que identifica los elementos cuyo período de retención ha expirado y estos se eliminan permanentemente en un plazo de 14 días al finalizar el período de retención. Tenga en cuenta que 14 días es la configuración predeterminada, pero es posible cambiar la configuración hasta un máximo de 30 días.
 
 2. **Si el elemento no se ha modificado o eliminado** durante el período de retención, el mismo proceso se ejecuta periódicamente en todas las carpetas del buzón para identificar los elementos cuyo período de retención ha expirado y estos se eliminan de forma permanente en un plazo de 14 días al final del período de retención. Tenga en cuenta que 14 días es la configuración predeterminada, pero es posible configurar hasta 30 días. 
 
@@ -91,9 +91,9 @@ Recuerde que, en este contexto, la fecha de caducidad para la eliminación de un
 
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 
-Si un usuario deja la organización y su buzón está incluido en una directiva de retención, el buzón pasa a estado inactivo cuando se elimina la cuenta de Microsoft 365 del usuario. El contenido de un buzón inactivo sigue estando sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estar inactivo, y está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md).
+Si un usuario deja la organización y su buzón de correo está incluido en una directiva de retención, el buzón pasa a estar inactivo cuando se elimina la cuenta de Microsoft 365 de dicho usuario. El contenido de un buzón inactivo sigue sujeto a cualquier directiva de retención que se le hubiera aplicado antes de que pasara a estar inactivo, y el contenido estará disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones inactivos en Exchange Online](inactive-mailboxes-in-office-365.md).
 
-Cuando la configuración de retención ya no se aplica porque los datos se eliminan permanentemente o el período de retención ha expirado, el administrador de Exchange ahora puede [eliminar el buzón inactivo](delete-an-inactive-mailbox.md). En este escenario, el buzón inactivo no se elimina automáticamente.
+Cuando la configuración de retención ya no aplique porque los datos se eliminaron permanentemente, o el período de retención expiró, el administrador de Exchange podrá [eliminar el buzón de correo inactivo](delete-an-inactive-mailbox.md). En este caso, el buzón inactivo no se elimina automáticamente.
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 

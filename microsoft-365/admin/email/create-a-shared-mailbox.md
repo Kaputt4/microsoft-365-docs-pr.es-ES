@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 53e82d0cdd1fb9f11ab15ce4a2fbdc4b0c0ac980
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 64ee2649127445e8438d915734dad9f2aa965933
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775593"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165045"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -45,7 +46,7 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Crear un buzón compartido y agregar miembros
   
-1. Inicie sesión con una cuenta de administrador global o una cuenta de administrador de Exchange. Si recibe el mensaje "**No tiene permiso para acceder a esta página o realizar esta acción**" quiere decir que no es administrador. 
+1. Inicie sesión con una cuenta de administrador global o una cuenta de administrador de Exchange. Si recibe el mensaje "**No tiene permiso para acceder a esta página o realizar esta acción**", no es administrador. 
 
 ::: moniker range="o365-worldwide"
 
@@ -69,13 +70,13 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
     
     ![Asigne un nombre a su buzón compartido.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Seleccione **Guardar cambios**. Puede tardar unos minutos antes de poder agregar miembros.
+4. Seleccione **Guardar cambios**. Puede tardar unos minutos en agregar miembros.
 
-5. En **Pasos siguientes**, elija **Agregar miembros a este buzón**. Los miembros son las personas que podrán ver el correo entrante para este buzón de correo compartido y las respuestas salientes.
+5. En **Pasos siguientes**, seleccione **Agregar miembros a este buzón**. Los miembros son las personas que podrán ver el correo entrante en este buzón compartido y las respuestas salientes.
 
    ![Seleccione Agregar miembros.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Elija el botón **+ Agregar miembros**. Coloque una marca de verificación junto a las personas con las que desea usar este buzón compartido y, a continuación, seleccione **Guardar**.
+6. Seleccione el botón **+Agregar miembros**. Coloque una marca de verificación junto a las personas que desea usar este buzón compartido y, a continuación, seleccione **Guardar**.
 
    ![Asignar miembros al buzón compartido.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
@@ -87,9 +88,9 @@ Tiene un buzón compartido que incluye un calendario compartido. Vaya al siguien
 
 Puede usar los siguientes permisos con un buzón compartido:
 
-- **Acceso completo**: el permiso Acceso completo permite al usuario iniciar sesión en el buzón compartido y actuar como el propietario de ese buzón. Después de acceder al buzón compartido, un usuario puede crear elementos de calendario, leer, ver, eliminar y cambiar los mensajes de correo electrónico, y crear tareas y contactos de calendario. Sin embargo, un usuario con un permiso de Acceso total no puede enviar mensajes de correo electrónico desde el buzón compartido a menos que tenga un permiso para Enviar como o En nombre de.
+- **Acceso completo**: el permiso de Acceso completo permite al usuario iniciar sesión en el buzón compartido y actuar como el propietario de ese buzón. Después de tener acceso al buzón compartido, el usuario puede crear elementos de calendario; leer, ver, eliminar y modificar mensajes de correo electrónico y crear tareas y contactos del calendario. Sin embargo, un usuario con un permiso de Acceso completo no puede enviar mensajes de correo electrónico desde el buzón compartido a menos que tenga un permiso para Enviar como o En nombre de.
 
-- **Enviar como**: el permiso para Enviar como le permite al usuario suplantar el buzón compartido al enviar un mensaje de correo. Por ejemplo, si Carlos inicia sesión en el buzón compartido del departamento de marketing y envía un correo electrónico, el remitente de dicho correo será el departamento de marketing.
+- **Enviar como**: el permiso Enviar como permite al usuario suplantar el buzón compartido al enviar correo. Por ejemplo, si Katerina inicia sesión en el buzón compartido del departamento de marketing y envía un correo electrónico, parecerá que el departamento de marketing envió el correo electrónico.
 
 - **Enviar en nombre de**: el permiso Enviar en nombre de le permite al usuario enviar mensajes en nombre del buzón compartido. Por ejemplo, si Sergio inicia sesión en el buzón compartido del Edificio de recepción 32 y envía un mensaje de correo electrónico, los destinatarios verán el mensaje como enviado por “Sergio en nombre del Edificio de recepción 32”. No puede usar el CEF para conceder permisos de Enviar en nombre de. En este caso, debe utilizar el cmdlet **Set-Mailbox** con el parámetro _GrantSendonBehalf_.
 

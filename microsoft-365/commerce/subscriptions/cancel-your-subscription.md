@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Si tiene menos de 25 licencias de usuario, puede cancelar la suscripción de prueba o de pago de Microsoft 365 para empresas en el Centro de administración.
 ms.date: 09/16/2021
-ms.openlocfilehash: 932cac44b9bf1b8632116d544cf4b33c0cb19a27
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 942953f586a65659609660363593c0f6e86c8ca6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481041"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204580"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -43,11 +43,11 @@ ms.locfileid: "59481041"
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para realizar las tareas de este artículo. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="steps-to-cancel-your-subscription"></a>Pasos para cancelar su suscripción
 
-Si ha agregado su propio nombre de dominio para usarlo con su suscripción, deberá quitar dicho dominio antes de cancelar la suscripción. Para obtener más información, consulte [Quitar un dominio](../../admin/get-help-with-domains/remove-a-domain.md).
+Si ha agregado su propio nombre de dominio para utilizarlo con su suscripción, debe eliminar el dominio antes de cancelar su suscripción. Para más información, consulte [Eliminar un dominio](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
 
@@ -67,13 +67,13 @@ Si ha agregado su propio nombre de dominio para usarlo con su suscripción, debe
 
 ::: moniker-end
 
-2. Busque la suscripción que desea cancelar. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
+2. Busque la suscripción que desea cancelar. Seleccione los tres puntos (más acciones), y luego, seleccione **Cancelar suscripción**.
 
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
 
 4. Seleccione **Guardar**.
 
-Su suscripción ahora aparecerá en estado de **Deshabilitada** y tendrá funcionalidad reducida hasta que se elimine. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, consulte [¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?](what-if-my-subscription-expires.md)
+Su suscripción aparece ahora en estado **Desactivado**, y tiene una funcionalidad reducida hasta que se elimine. Para obtener más información sobre lo que puede esperar cuando se cancela una suscripción de pago a Microsoft 365 para empresas, consulte [¿Qué ocurre con mis datos y mi acceso cuando finaliza mi suscripción a Microsoft 365 para empresas?](what-if-my-subscription-expires.md) 
 
 > [!NOTE]
 > Si elimina explícitamente una suscripción, omite las fases Expirada y Deshabilitada, y los datos y el contenido de SharePoint Online, incluido OneDrive, se eliminan inmediatamente.
