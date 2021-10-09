@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: fc519ea7a8d76135b4d536a64e6a411844bd3e47
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5a3f401f17ee71ff78e15f6e1b3e9c7348ac40c
+ms.sourcegitcommit: 96618d21ad0424b7b51090afad5079ad0e955c21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151055"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60251105"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -90,7 +90,8 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
     - **Prevención de pérdida de datos de punto de conexión (DLP de punto de conexión):**
         - Windows 10 1809 con KB 4601383
         - Windows 10 1903 y 1909 con KB 4601380
-        - Windows 10 2004 con KB 4601382
+        - Windows 10 2004 con KB 46013
+        - Las versiones de Windows posteriores a Windows 10 2004 se admiten sin actualizaciones de KB
     
     - **Aplicaciones y servicios que usan el SDK de Microsoft Information Protection:** 
         - Versión mínima de 1.7 
