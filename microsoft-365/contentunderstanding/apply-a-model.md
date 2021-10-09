@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar un modelo publicado a una SharePoint de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 23a885194a1bfa6c0f468188944dd00d309f3a09
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f8e6cc20b010df5deafe478bbd718946f328a6af
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194410"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245734"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 
@@ -38,7 +38,7 @@ Después de publicar el modelo de comprensión de documentos, puede aplicarlo a 
 
 Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
-1. En la página principal del modelo, en el icono Aplicar modelo a **bibliotecas,** seleccione **Aplicar modelo**. O bien, en la sección Dónde se aplica **el modelo,** seleccione  **+Agregar biblioteca** .
+1. En la página principal del modelo, en el icono Aplicar modelo a **bibliotecas,** seleccione **Aplicar modelo**. O bien, en la sección Dónde se aplica **el modelo,** seleccione **+Agregar biblioteca**.
 
     ![Captura de pantalla de la sección Donde se aplica el modelo con la opción Agregar biblioteca resaltada.](../media/content-understanding/apply-to-library.png)
 

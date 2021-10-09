@@ -978,8 +978,16 @@
           href: compliance-manager-setup.md
         - name: Compilar y administrar evaluaciones
           href: compliance-manager-assessments.md
-        - name: Trabajar con plantillas de evaluación
+        - name: Más información sobre las plantillas de evaluación
           href: compliance-manager-templates.md
+        - name: Crear plantillas de evaluación
+          href: compliance-manager-templates-create.md
+        - name: Ampliar plantillas de evaluación
+          href: compliance-manager-templates-extend.md
+        - name: Modificar plantillas de evaluación
+          href: compliance-manager-templates-modify.md
+        - name: Dar formato a los datos de plantilla en Excel
+          href: compliance-manager-templates-format-excel.md
         - name: Lista de plantillas del Administrador de cumplimiento
           href: compliance-manager-templates-list.md
         - name: Asignar y completar las acciones de mejora

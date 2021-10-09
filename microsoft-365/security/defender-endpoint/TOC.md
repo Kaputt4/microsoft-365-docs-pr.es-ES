@@ -31,32 +31,46 @@
 #### [Anillos de implementación](deployment-rings.md)
 #### [Incorporación mediante Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 #### [Incorporación con Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
-#### [Incorporar dispositivos admitidos](onboard-configure.md)
 
 ## [Guías de migración](migration-guides.md)
 ### [Cambiar de una protección de puntos de conexión distinta de Microsoft a Defender para punto de conexión](switch-to-microsoft-defender-migration.md)
 #### [Fase 1: Preparación](switch-to-microsoft-defender-prepare.md)
 #### [Fase 2: Configuración](switch-to-microsoft-defender-setup.md)
 #### [Fase 3: Incorporación](switch-to-microsoft-defender-onboard.md)
+
+
+
 ### [Administrar Defender para punto de conexión después de la migración](manage-atp-post-migration.md)
 #### [Usar Intune (recomendado)](manage-atp-post-migration-intune.md)
 #### [Usar el Administrador de configuración](manage-atp-post-migration-configuration-manager.md)
 #### [Usar la directiva de grupo](manage-atp-post-migration-group-policy-objects.md)
 #### [Usar PowerShell, WMI o MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+#### [Escenarios de migración de Server](server-migration.md)
 
 ## [Configurar e incorporar dispositivos]()
+### [Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión](onboard-configure.md)
+
+
 ### [Microsoft Defender para punto de conexión en Windows Server]()
-#### [Incorporar dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md)
-#### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
-#### [incorporar dispositivos Windows]()
-##### [Herramientas y métodos de incorporación para equipos con Windows 10](configure-endpoints.md)
-##### [Incorporar dispositivos con la directiva de grupo](configure-endpoints-gp.md)
-##### [Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-##### [Incorporar dispositivos con las herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
-##### [Incorporar dispositivos con un script local](configure-endpoints-script.md)
-##### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
-##### [incorporar dispositivos de sesión múltiple de Windows en Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-#### [Incorporar servidores Windows](configure-server-endpoints.md)
+#### [Herramientas y métodos de incorporación para puntos de conexión de Windows](configure-endpoints.md)
+#### [Incorporar dispositivos Windows y servidores de Windows]()
+
+##### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
+
+
+##### [Incorporar dispositivos Windows y servidores de Windows]()
+###### [Incorporar Windows Server 2012 R2, 2016, Canal semestral, 2019 y 2022](configure-server-endpoints.md)
+###### [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
+###### [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)
+###### [Incorporar dispositivos Windows mediante Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+###### [Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
+###### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
+###### [Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+
+
+
+
+#### [Integración con Azure Defender](azure-server-integration.md)
 
 #### [Incorporar dispositivos sin acceso a Internet](onboard-offline-machines.md)
 #### [Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)

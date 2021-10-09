@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: 'Obtenga información sobre cómo encontrar un nuevo Microsoft 365 asociado o obtener información de contacto para un partner con el que ha trabajado en el pasado. '
-ms.openlocfilehash: be68ea0f270a974951b59309139db7773addad62
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo encontrar un nuevo Microsoft 365 asociado o obtener información de contacto para un partner con el que ha trabajado en el pasado.
+ms.openlocfilehash: d50c829281654842079a2124be4f8a8e16e993bf
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164373"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245657"
 ---
 # <a name="find-your-partner-or-reseller"></a>Buscar un asociado o distribuidor
 
@@ -41,7 +41,7 @@ Como administrador, puedes trabajar con un partner para comprar, activar y renov
 
 Si estás listo para comprar o renovar Microsoft 365 a través de licencias por volumen abiertas, o simplemente quieres más información sobre cómo trabajar con un partner, elige una opción a continuación. 
   
-- [Buscar un partner con Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
+- [Buscar un partner de servicio certificado por Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
 - [Llamar a Licencias por volumen de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613305)
     

@@ -14,21 +14,21 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
+ms.date: 10/05/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f23ff6ccbde512b8c8b3f1da36e86ede1c2d0324
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ffb8ccb40a6fcbe90d8dd0636402f8e9a40f058b
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208570"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245780"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
-- Antivirus de Microsoft Defender
+- [Antivirus de Microsoft Defender](microsoft-defender-antivirus-windows.md)
 
 Antivirus de Microsoft Defender muchos mecanismos inteligentes para detectar malware. Una de las capacidades más eficaces es la capacidad de aplicar la potencia de la nube para detectar malware y realizar análisis rápidos. La protección en la nube y el envío automático de muestras funcionan Antivirus de Microsoft Defender para ayudar a proteger contra amenazas nuevas y emergentes. 
 
@@ -103,7 +103,7 @@ Para obtener información acerca de las opciones de configuración con Intune, C
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>Ejemplos de metadatos enviados al servicio de protección en la nube
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figura 2. Ejemplos de metadatos enviados a Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="imagen que muestra ejemplos de metadatos enviados a Microsoft Defender Cloud Protection":::
 
 En la tabla siguiente se enumeran ejemplos de metadatos enviados para su análisis por la protección en la nube:
 

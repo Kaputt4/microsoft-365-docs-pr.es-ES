@@ -17,7 +17,7 @@ search.appverid:
 description: El Administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en el flujo de trabajo que se encuentra dentro del Portal de confianza de servicios de Microsoft. El Administrador de cumplimiento le permite realizar un seguimiento, asignar y verificar las actividades de cumplimiento reglamentarias de su organización en relación con los servicios en la nube de Microsoft.
 ms.openlocfilehash: b4a648c43fb20f557b85e24e9e67de036cc4f2e0
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60168667"

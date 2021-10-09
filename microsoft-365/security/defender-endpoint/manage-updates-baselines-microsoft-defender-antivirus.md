@@ -18,12 +18,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/07/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ea87ef0acbcd0cda0fb9d4861042ac1e181ff7fb
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: a5f5428ce3c710cc99c7c86306a64501419ae60f
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239629"
+ms.locfileid: "60245674"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -84,8 +84,26 @@ Todas nuestras actualizaciones contienen
 - mejoras en el rendimiento;
 - mejoras en la capacidad de servicio; y
 - mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/>
+<br/><br/>
 <details>
+<summary> Septiembre-2021 (Plataforma: 4.18.2109.6 | Motor: 1.1.18600.4)</summary>
+
+&ensp;Versión de actualización de inteligencia de seguridad: **1.351.7.0**<br/>
+&ensp;Publicado: **7 de octubre de 2021**<br/>
+&ensp;Plataforma: **4.18.2109.6**<br/>
+&ensp;Motor: **1.1.18600.4**<br/>
+&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
+
+Versión del motor: 1.1.18600.4 Versión de actualización de inteligencia de seguridad: actualización
+
+### <a name="whats-new"></a>Novedades
+- Nuevo anillo de retraso para Antivirus de Microsoft Defender de motor y plataforma. Los dispositivos que opten por este anillo recibirán actualizaciones con un retraso de 48 horas. El nuevo anillo de retraso solo se sugiere para entornos críticos. Consulte [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
+- Mejoras en el proceso de implementación gradual de actualizaciones de Microsoft Defender
+
+### <a name="known-issues"></a>Problemas conocidos
+Sin problemas conocidos
+<br/>
+</details><details>
 <summary> Agosto-2021 (Plataforma: 4.18.2108.7 | Motor: 1.1.18500.10)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.349.22.0**<br/>
@@ -123,14 +141,19 @@ Sin problemas conocidos
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
+
+Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.
+<details>
 <summary> Junio-2021 (Plataforma: 4.18.2106.5 | Motor: 1.1.18300.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.343.17.0**<br/>
 &ensp;Publicado: **28 de junio de 2021**<br/>
 &ensp;Plataforma: **4.18.2106.5**<br/>
 &ensp;Motor: **1.1.18300.4**<br/>
-&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 - Nuevos controles para administrar el proceso de implementación gradual de las actualizaciones de Microsoft Defender. Consulte [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -141,12 +164,7 @@ Sin problemas conocidos
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
-
-Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.
-<details>
+</details><details>
 <summary> Mayo-2021 (Plataforma: 4.18.2105.4 | Motor: 1.1.18200.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.341.8.0**<br/>

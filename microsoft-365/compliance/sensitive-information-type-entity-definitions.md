@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay 200 tipos de información confidencial que están listos para su uso en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 80c0c0fa2a916b44204ea930a282c5b2e6402a85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d018833f6dd6d63ff32e8a3d77209177d7709f6
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159735"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245686"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -3318,6 +3318,8 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - Identidad de Chile no.
 - Número de identidad de Chile
 - Identidad de Chile #
+- R.U.T
+- R.U.N
 
 
 ## <a name="china-resident-identity-card-prc-number"></a>Número de tarjeta de identidad de residente de China (PRC)
@@ -3382,7 +3384,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ### <a name="format"></a>Formato
 
-De 14 a 16 dígitos que se pueden dar formato o sin formato (ddddddddddd) y que deben pasar la prueba de Luhn.
+De 14 a 19 dígitos que pueden tener formato o sin formato (dddddddddd) y que deben pasar la prueba de Luhn.
 
 ### <a name="pattern"></a>Patrón
 
@@ -3390,7 +3392,7 @@ Detecta tarjetas de todas las principales marcas del mundo, como Visa, MasterCar
 
 ### <a name="checksum"></a>Suma de comprobación
 
-Sí, la suma de comprobación de Luhn
+Sí, la comprobación de Luhn
 
 ### <a name="definition"></a>Definición
 
@@ -5027,7 +5029,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 10 dígitos:
 - seis dígitos en el formato DDMMYY, que son la fecha de nacimiento
-- un guión
+- un espacio o guión opcional
 - cuatro dígitos donde el dígito final es un dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -7212,37 +7214,58 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ### <a name="format"></a>Formato
 
-desde el 1 de noviembre de 2010: Nueve letras y dígitos
+desde el 1 de noviembre de 2010: de nueve a once letras y dígitos
 
 del 1 de abril de 1987 al 31 de octubre de 2010: 10 dígitos
 
 ### <a name="pattern"></a>Patrón
 
-desde el 1 de noviembre de 2010:
-- una letra (no distingue mayúsculas de minúsculas)
-- ocho dígitos
+desde el 1 de noviembre de 2010: patrón alfanumérico de 9 a 11 caracteres
+- una L, M, N, P, R, T, V, W, X, Y (no tiene mayúsculas de minúsculas)
+- ocho dígitos o letras en C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y y Z (no tiene mayúsculas de minúsculas)
+- dígito de comprobación opcional
+- D/D opcional
 
 del 1 de abril de 1987 al 31 de octubre de 2010:
 - 10 dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
-No
+Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular Regex_germany_id_card encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_german_id_card_with_check` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_germany_id_card` clave de.
+- Se supera la suma de comprobación.
+
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular busca contenido que coincida con el patrón (9 caracteres sin dígito de comprobación emitido antes de `Regex_germany_id_card` 2010 o patrón de 10 dígitos emitido posy 2010).
 - Se encuentra una palabra clave de Keyword_germany_id_card.
 
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_german_id_card_with_check` busca contenido que coincida con el patrón.
+- Se supera la suma de comprobación.
+
+
 ```xml
-<!-- Germany Identity Card Number -->
-<Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
-  <Pattern confidenceLevel="65">
-     <IdMatch idRef="Regex_germany_id_card"/>
-     <Match idRef="Keyword_germany_id_card"/>
-  </Pattern>
-</Entity>
+      <!-- Germany Identity Card Number -->
+      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75"> 
+        <Pattern confidenceLevel="75">
+         <IdMatch idRef="Regex_germany_id_card" /> 
+         <Match idRef="Keyword_germany_id_card" /> 
+        </Pattern>
+        <Version minEngineVersion="15.20.4545.000"> 
+          <Pattern confidenceLevel="85">
+           <IdMatch idRef="Func_german_id_card_with_check" />
+            <Match idRef="Keyword_germany_id_card" /> 
+          </Pattern> 
+          <Pattern confidenceLevel="65">
+           <IdMatch idRef="Func_german_id_card_with_check" /> 
+          </Pattern> 
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -7266,19 +7289,16 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="germany-passport-number"></a>Número de pasaporte de Alemania
 
-Esta entidad se incluye en el tipo de información confidencial Número de pasaporte de la UE y está disponible como una entidad de tipo de información confidencial independiente.
-
 ### <a name="format"></a>Formato
 
-10 dígitos o letras
+De 9 a 11 caracteres
 
 ### <a name="pattern"></a>Patrón
 
-El patrón debe incluir todo lo siguiente:
-- el primer carácter es un dígito o una letra de este conjunto (C, F, G, H, J, K)
-- tres dígitos
-- cinco dígitos o letras de este conjunto (C, -H, J-N, P, R, T, V-Z)
-- un dígito
+- una letra en C, F, G, H, J, K (mayúsculas de minúsculas)
+- ocho dígitos o letras en C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y y Z (no tiene mayúsculas de minúsculas)
+- dígito de comprobación opcional
+- D/D opcional
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -7287,32 +7307,40 @@ Sí
 ### <a name="definition"></a>Definición
 
 Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_german_passport encuentra contenido que coincide con el patrón.
+- La función `Func_german_passport_checksum` busca contenido que coincida con el patrón.
 - Una palabra clave `Keyword_german_passport` de o `Keywords_eu_passport_number_common` se encuentra.
 - Se supera la suma de comprobación.
 
 Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_german_passport_data encuentra contenido que coincide con el patrón.
+- La función busca contenido que coincide con el patrón de nueve caracteres (sin dígito de comprobación `Func_german_passport` y D/D opcional).
 - Una palabra clave `Keyword_german_passport` de o `Keywords_eu_passport_number_common` se encuentra.
+
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_german_passport_checksum` busca contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
     <!-- German Passport Number -->
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-      <Pattern confidenceLevel="85">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport" />
         <Any minMatches="1">
           <Match idRef="Keyword_german_passport" />
           <Match idRef="Keywords_eu_passport_number_common" />
         </Any>
       </Pattern>
-      <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keywords_eu_passport_number_common" />
-        </Any>
-      </Pattern>
+      <Version minEngineVersion="15.20.4570.0">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_german_passport_checksum" />
+          <Any minMatches="1">
+            <Match idRef="Keyword_german_passport" />
+            <Match idRef="Keywords_eu_passport_number_common" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_german_passport_checksum" />
+        </Pattern>
+      </Version>
     </Entity>
 ```
 
@@ -13024,12 +13052,11 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ### <a name="format"></a>Formato
 
-tres letras, un espacio (opcional) y cuatro dígitos
+tres letras y cuatro dígitos
 
 ### <a name="pattern"></a>Patrón
 
 - tres letras (no distingue mayúsculas de minúsculas) excepto 'I' y 'O'
-- un espacio (opcional)
 - cuatro dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -13066,14 +13093,8 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 - NHI
 - New Zealand
-- Mantenimiento
-- tratamiento
-- Número de índice de estado nacional
-- nhi number
-- nhi no.
+- Índice nacional de salud
 - NHI #
-- Índice nacional de salud No.
-- Id. de índice de estado nacional
 - Índice nacional de salud #
 
 ## <a name="new-zealand-social-welfare-number"></a>Número de bienestar social de Nueva Zelanda
@@ -15452,7 +15473,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- ID
+- Id.
 - Identificación
 
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -17454,7 +17475,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 - DLS
 - CDL
 - CDLS
-- ID
+- Id.
 - IDs
 - DL #
 - DLS #
@@ -17717,7 +17738,8 @@ nueve dígitos
 
 ### <a name="pattern"></a>Patrón
 
-nueve dígitos consecutivos
+- una letra o un dígito
+- ocho dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 

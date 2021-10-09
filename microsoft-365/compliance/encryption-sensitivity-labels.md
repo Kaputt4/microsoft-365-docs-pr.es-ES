@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba6e8e44a3f41bcd64257faf62c597d3b019e359
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 05e09bbd07bb8b4d15ce9bb82b64f49b49d88ffd
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206186"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239965"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -52,6 +52,29 @@ La configuración de cifrado está disponible cuando se [crea una etiqueta de co
 El cifrado usa el servicio Azure Rights Management (Azure RMS) de Azure Information Protection. Esta solución de protección usa directivas de cifrado, identidades y de autorización. Para obtener más información, consulte [¿qué es Azure Rights Management?](/azure/information-protection/what-is-azure-rms) en la documentación de Azure Information Protection. 
 
 Cuando usa esta solución de cifrado, la característica de **superusuario** garantiza que los usuarios y los servicios autorizados siempre puedan leer e inspeccionar los datos que se han cifrado para la organización. Si es necesario, el cifrado puede quitarse o modificarse. Para obtener más información, consulte [configuración de superusuarios para Azure Information Protection y servicios de detección y de recuperación de datos de Azure](/azure/information-protection/configure-super-users).
+
+## <a name="important-prerequisites"></a>Requisitos previos importantes
+
+Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de configuración. Al configurar las opciones de cifrado, no hay ninguna comprobación para validar que se cumplen los requisitos previos.
+
+- Activar la protección de Azure Information Protection
+    
+    Para que las etiquetas de confidencialidad puedan aplicar el cifrado, el servicio de protección (Azure Rights Management) de Azure Information Protection debe estar activado para su espacio empresarial. En los espacios empresariales más recientes, esta es la configuración predeterminada, pero es posible que tenga que activar el servicio manualmente. Para obtener más información, consulte [Activar el servicio de protección de Azure Information Protection](/azure/information-protection/activate-service).
+
+- Comprobar los requisitos de red
+    
+    Es posible que deba realizar algunos cambios en sus dispositivos de red, como firewalls. Para obtener más información, consulte [Firewalls y la infraestructura de red](/azure/information-protection/requirements#firewalls-and-network-infrastructure) de la documentación de Azure Information Protection.
+
+- Configurar Exchange para Azure Information Protection
+    
+    Exchange no tiene que estar configurado para Azure Information Protection antes de que los usuarios puedan aplicar etiquetas en Outlook para cifrar los mensajes de correo. Sin embargo, hasta que Exchange no esté configurado para Azure Information Protection, no obtendrá toda la funcionalidad del uso de la protección de Azure Rights Management con Exchange.
+    
+    Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico cifrados en teléfonos móviles o con Outlook en la Web, no se pueden indizar mensajes de correo electrónico cifrados para la búsqueda y no puede configurar Exchange Online DLP para la protección de administración de derechos. 
+    
+    Para asegurarse de que Exchange puede admitir estos escenarios adicionales, vea lo siguiente:
+    
+    - Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](/azure/information-protection/deploy-rms-connector). 
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Cómo configurar una etiqueta para el cifrado
 
@@ -422,28 +445,6 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 Para disfrutar de la mejor experiencia de colaboración para los archivos que se cifran con una etiqueta de confidencialidad, le recomendamos que use [etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) y Office para la Web.
 
 
-## <a name="important-prerequisites"></a>Requisitos previos importantes
-
-Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de configuración.
-
-- Activar la protección de Azure Information Protection
-    
-    Para que las etiquetas de confidencialidad puedan aplicar el cifrado, el servicio de protección (Azure Rights Management) de Azure Information Protection debe estar activado para su espacio empresarial. En los espacios empresariales más recientes, esta es la configuración predeterminada, pero es posible que tenga que activar el servicio manualmente. Para obtener más información, consulte [Activar el servicio de protección de Azure Information Protection](/azure/information-protection/activate-service).
-
-- Comprobar los requisitos de red
-    
-    Es posible que deba realizar algunos cambios en sus dispositivos de red, como firewalls. Para obtener más información, consulte [Firewalls y la infraestructura de red](/azure/information-protection/requirements#firewalls-and-network-infrastructure) de la documentación de Azure Information Protection.
-
-- Configurar Exchange para Azure Information Protection
-    
-    Exchange no tiene que estar configurado para Azure Information Protection antes de que los usuarios puedan aplicar etiquetas en Outlook para cifrar los mensajes de correo. Sin embargo, hasta que Exchange no esté configurado para Azure Information Protection, no obtendrá toda la funcionalidad del uso de la protección de Azure Rights Management con Exchange.
-    
-    Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico cifrados en teléfonos móviles o con Outlook en la Web, no se pueden indizar mensajes de correo electrónico cifrados para la búsqueda y no puede configurar Exchange Online DLP para la protección de administración de derechos. 
-    
-    Para asegurarse de que Exchange puede admitir estos escenarios adicionales, vea lo siguiente:
-    
-    - Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](/azure/information-protection/deploy-rms-connector). 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -20,14 +20,15 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
+ms.date: 10/07/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 3182c8360628ab7227840951cb69cc7fc38bdc55
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 17fac205740fca442489ae0608e7998b894128d1
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163113"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60245758"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -79,7 +80,7 @@ Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un
    |Estado de alerta|Qué hacer|
    |---|---|
    |La alerta es precisa|Asigne la alerta y, a [continuación, investigue más.](investigate-alerts.md)|
-   |La alerta es un falso positivo|<ol><li>[Clasifique la alerta](#classify-an-alert) como falso positivo.</li><li>[Suprimir la alerta](#suppress-an-alert).</li><li>[Cree un indicador para](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender para Endpoint.</li><li>[Enviar un archivo a Microsoft para su análisis.](#part-4-submit-a-file-for-analysis)</li></ol>|
+   |La alerta es un falso positivo|1. [Clasifique la alerta](#classify-an-alert) como un falso positivo.<br/><br/>2. [Suprimir la alerta](#suppress-an-alert).<br/><br/>3. [Cree un indicador para](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender para Endpoint.<br/><br/>4. [Enviar un archivo a Microsoft para su análisis.](#part-4-submit-a-file-for-analysis)|
    |La alerta es precisa, pero benigna (sin importancia)|[Clasifique la alerta](#classify-an-alert) como un verdadero positivo y, a continuación, [suprima la alerta](#suppress-an-alert).|
 
 ### <a name="classify-an-alert"></a>Clasificar una alerta
