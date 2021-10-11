@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Algunos registradores de dominios ofrecen servicios limitados, lo que significa que no todas las características de Microsoft funcionarán con todos los dominios.
-ms.openlocfilehash: 7fe6b047773e47964b5a00728b8c1443bdeef36e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2d192f03c5a586e4355c1f9a08d312a07af3d501
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774597"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164743"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>Registradores de dominios con limitaciones de configuración
 
@@ -57,7 +57,7 @@ El sitio web MyDomain no admite registros SRV, lo que significa que varias carac
 
 ## <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
 
-Vaya a la página donde están los registros DNS del dominio. Si está trabajando en Windows Server 2008, vaya a **Inicio**, **Ejecutar**. Si está trabajando en Windows Server 2012, presione la **Tecla Windows** y **r**. Escriba **dnsmgmnt.msc** y luego seleccione **Aceptar**. En el Administrador de DNS, expanda **Nombre del servidor DNS**, **Zonas de búsqueda directa**. Seleccione su dominio. Ya está listo para crear los registros DNS.
+Vaya a la página que tiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Iniciar**, **Ejecutar**. Si está trabajando en Windows Server 2012, presione la tecla **Windows** y **r**. Escriba **dnsmgmnt.msc** y, a continuación, seleccione **Aceptar**. En el Administrador de DNS, expanda **nombre del servidor DNS**,  **Zonas de búsqueda directa**. Seleccione el dominio. Ya está listo para crear los registros DNS.
 
 ## <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Crear registros DNS cuando Google (eNom) administra su dominio
 
@@ -84,7 +84,7 @@ Si a pesar de esta limitación de servicio, decide administrar sus propios regis
 
 1.  En primer lugar, deberá crear el subdominio Autodiscover. En la sección **Información general de subdominio**, elija **Crear subdominio**.
 
-1.  En el cuadro **Crear subdominio** del nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor **Alias** en un paso posterior).
+1.  En el cuadro **Crearde subdominio** para el nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor de **Alias** en un paso posterior).
 
     |Crear subdominio|Alias|
     |:----|:----|
@@ -116,7 +116,7 @@ Los registros CNAME adicionales del procedimiento siguiente habilitan los servic
 
 1.  En la sección **Información general de subdominio**, seleccione **Crear subdominio**.
 
-1.  En el cuadro **Crear subdominio** del nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor **Alias** en un paso posterior).
+1.  En el cuadro **Crearde subdominio** para el nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor de **Alias** en un paso posterior).
 
     |Crear subdominio|Alias|
     |:----|:----|
@@ -126,7 +126,7 @@ Los registros CNAME adicionales del procedimiento siguiente habilitan los servic
 
 1.  En la página Centro de dominios, seleccione **Administrar subdominios**.
 
-1.  En la sección **Información general de subdominio**, localice el subdominio lyncdiscover que acaba de crear y, a continuación, seleccione el Panel de (v) control para ese subdominio. En el área **Configuración del subdominio**, seleccione **Editar configuración DNS**.
+1.  En la sección **información general de subdominio**, busque el subdominio lyncdiscover que acaba de crear y, a continuación, seleccione el control Panel (v) para ese subdominio. En el área **configuración de subdominio**, seleccione **Editar configuración DNS**.
 
 1.  En la sección **Registros A/AAAA (direcciones IP)**, en el área **Dirección IP (registro A)**, seleccione **CNAME**.
 
@@ -144,7 +144,7 @@ Los registros CNAME adicionales del procedimiento siguiente habilitan los servic
 
 1.  En la sección **Información general de subdominio**, elija **Crear subdominio**.
 
-1.  En el cuadro **Crear subdominio** del nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor **Alias** en un paso posterior).
+1.  En el cuadro **Crear subdominio** para el nuevo subdominio, escriba o copie y pegue solo el valor **Crear subdominio** de la tabla siguiente. (Agregará el valor de **alia** en un paso posterior).
 
     |Crear subdominio|Alias|
     |:----|:----|
