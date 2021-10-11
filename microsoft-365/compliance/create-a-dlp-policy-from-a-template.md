@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, aprenderá a crear directivas DLP con una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: 4f3647d5f1d320f57243570b58d10cb1726728b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7ea3e320a75953f51315579549a6dd5086706d12
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167383"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264905"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -40,7 +40,7 @@ También puede elegir la plantilla Personalizada, que no tiene reglas predetermi
 
 1. Inicie sesión en <https://compliance.microsoft.com> .
 
-2. En el Centro de cumplimiento de navegación izquierda Directiva de prevención \> \> **de pérdida de datos** \>  \> **+ Crear una directiva**.
+2. En el Centro de cumplimiento de \> navegación izquierda \> **Soluciones** \> **Prevención de pérdida de datos** \> **Directivas** + Crear \> **directiva**.
 
     ![Crear un botón de directiva.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           

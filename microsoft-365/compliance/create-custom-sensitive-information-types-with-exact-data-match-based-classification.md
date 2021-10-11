@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 141178db0ba221d6e8ef9c5f3d4d85bb90607fb1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98dae682c8837a87d7c757b25111f4985e6e6489
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160069"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264809"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -37,12 +37,12 @@ ms.locfileid: "60160069"
 
 Pero ¿qué sucede si quiere un tipo de información confidencial personalizado (SIT) que use valores de datos exactos, en lugar de uno que encontrara coincidencias basándose en patrones genéricos? Con la clasificación basada en la coincidencia exacta de datos (EDM), puede crear un tipo de información confidencial personalizada que está diseñado para:
 
-- ser dinámico y actualizarse fácilmente
-- ser más escalable
-- generar menos falsos positivos
-- funcionar con datos confidenciales estructurados
-- trabajar con información confidencial de forma más segura
-- usarse con varios servicios en la nube de Microsoft.
+- ser dinámico y actualizarse fácilmente.
+- ser más escalable.
+- dar como resultado menos falsos positivos.
+- trabajar con datos confidenciales estructurados.
+- controlar la información confidencial de forma más segura.
+- usarse con varios servicios de nube de Microsoft.
 
 ![Clasificación basada en EDM.](../media/EDMClassification.png)
 
@@ -62,7 +62,7 @@ La clasificación basada en EDM le permite crear tipos de información confidenc
 
 Debe ser un administrador global, administrador de cumplimiento o administrador de Exchange Online para realizar las tareas descritas en este artículo. Para obtener más información acerca de los permisos de DLP, consulte [Permisos](data-loss-prevention-policies.md#permissions).
 
-La clasificación basada en EDM se incluye en estas suscripciones
+La clasificación basada en EDM se incluye en estas suscripciones:
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -89,9 +89,9 @@ La clasificación basada en EDM se incluye en estas suscripciones
 
 La configuración y la configuración de la clasificación basada en EDM incluye lo siguiente:
 
-1. [Guardar datos confidenciales en .csv o en formato .tsv](#save-sensitive-data-in-csv-or-tsv-format)
-2. [Definir el esquema de la base de datos de su información confidencial](#define-the-schema-for-your-database-of-sensitive-information)
-3. [Crear un paquete de reglas](#set-up-a-rule-package)
+1. [Guardar datos confidenciales en .csv o en formato .tsv](#save-sensitive-data-in-csv-or-tsv-format).
+2. [Defina el esquema de la base de datos de información confidencial](#define-the-schema-for-your-database-of-sensitive-information).
+3. [Crear un paquete de reglas](#set-up-a-rule-package).
 
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Guardar datos confidenciales en .csv o en formato .tsv
 
@@ -269,21 +269,21 @@ Recuerde del procedimiento anterior que nuestro esquema RegistrosPacientes defin
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
-      <Pattern confidenceLevel="65">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-      </Pattern>
-      <Pattern confidenceLevel="75">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-        <Any minMatches ="3" maxMatches ="100">
-          <match matches="PatientID" />
-          <match matches="MRN"/>
-          <match matches="FirstName"/>
-          <match matches="LastName"/>
-          <match matches="Phone"/>
-          <match matches="DOB"/>
-        </Any>
-      </Pattern>
-    </ExactMatch>
+  <Pattern confidenceLevel="65">
+    <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+  </Pattern>
+  <Pattern confidenceLevel="75">
+    <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+    <Any minMatches ="3" maxMatches ="100">
+      <match matches="PatientID" />
+      <match matches="MRN"/>
+      <match matches="FirstName"/>
+      <match matches="LastName"/>
+      <match matches="Phone"/>
+      <match matches="DOB"/>
+    </Any>
+  </Pattern>
+</ExactMatch>
 ```
 
 En este ejemplo, tenga en cuenta lo siguiente:
@@ -376,14 +376,14 @@ Si no desea que se muestre el archivo de datos confidenciales de texto no cifrad
 
 #### <a name="prerequisites"></a>Requisitos previos
 
-- una cuenta profesional o educativa de Microsoft 365 que se agregará al grupo de seguridad de **EDM\_DataUploaders**
-- un equipo con Windows 10 o Windows Server 2016 con .NET versión 4.6.2 para ejecutar el EDMUploadAgent
+- una cuenta laboral o educativa para Microsoft 365 que se agregará al grupo de seguridad **\_ DataUploaders de EDM.**
+- un Windows 10 o Windows Server 2016 con .NET versión 4.6.2 para ejecutar EDMUploadAgent.
 - un directorio en el equipo de carga para lo siguiente:
-  - EDMUploadAgent
-  - el archivo de elemento confidencial en .csv formato .tsv o .tsv, **PatientRecords.csv** en nuestros ejemplos
-  - los archivos hash y sal de salida
-  - el nombre del almacén de datos del archivo **edm.xml** que para este ejemplo es `PatientRecords`
-- Si ha usado el [esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial](sit-edm-wizard.md) entonces ***debe*** descargarlo
+  - EDMUploadAgent.
+  - el archivo de elemento confidencial en .csv o .tsv, **PatientRecords.csv** en nuestros ejemplos.
+  - los archivos hash y sal de salida.
+  - el nombre del almacén de datos **deledm.xml** archivo; para este ejemplo, es `PatientRecords` .
+- Si usó el esquema Coincidencia exacta de datos y el asistente para tipos de información [confidencial,](sit-edm-wizard.md) ***debe*** descargarlo.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configuración de la cuenta de usuario y del grupo de seguridad personalizado
 
@@ -433,25 +433,25 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
 
    OPCIONAL: Si usó el esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial con el fin de crear los archivos de esquema y de patrón, ejecute el siguiente comando en una ventana de símbolo del sistema:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
    ```
 
 5. Para crear un hash y cargar los datos confidenciales, ejecute el siguiente comando en la ventana del Símbolo del sistema:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
    Ejemplo: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
    El formato predeterminado del archivo de datos confidenciales son valores separados por comas. Puede especificar un archivo separado por tabulaciones indicando la opción "{Tab}" con el parámetro /ColumnSeparator, o bien puede especificar un archivo separado por canalización indicando la opción "|".
-   Si la tabla de información confidencial tiene algunos valores con formato incorrecto, pero desea importar los datos restantes ignorando filas no válidas de todos modos, puede usar el parámetro /AllowedBadLinesPercentage en el comando. En el ejemplo anterior se especifica un umbral del cinco por ciento. Esto significa que la herramienta hash y cargará la tabla de información confidencial incluso si hasta el cinco por ciento de las filas no son válidas. El valor predeterminado de esta configuración es el uno por ciento. 
+   Si la tabla de información confidencial tiene algunos valores con formato incorrecto, pero desea importar los datos restantes ignorando filas no válidas de todos modos, puede usar el parámetro **/AllowedBadLinesPercentage** en el comando. En el ejemplo anterior se especifica un umbral del cinco por ciento. Esto significa que la herramienta hash y cargará la tabla de información confidencial incluso si hasta el cinco por ciento de las filas no son válidas. En las versiones de la herramienta que admiten este parámetro, el umbral predeterminado es cero por ciento. Por lo tanto, las líneas erróneas provocarán un error. 
    Este comando agregará automáticamente un valor de sal generado aleatoriamente al hash para mayor seguridad. De forma opcional, si quiere usar su propio valor de sal, agregue **/Salt <saltvalue>** al comando. Este valor debe tener 64 caracteres de longitud y solo puede contener los caracteres a-z y 0-9.
 
 6. Compruebe el estado de la carga al ejecutar este comando:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
    ```
 
@@ -465,23 +465,23 @@ Aplique el algoritmo hash en un equipo en un entorno seguro.
 
 OPCIONAL: Si usó el esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial con el fin de crear los archivos de esquema y de patrón, ejecute el siguiente comando en una ventana de símbolo del sistema:
 
-```dos
+```console
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
 ````
 
 1. Ejecute el siguiente comando en la ventana del Símbolo del sistema:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
    Por ejemplo:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
-   De este forma, se obtendrá un archivo con hash y un archivo de sal con estas extensiones si no ha especificado la opción **/Salt <saltvalue>**:
+   De este forma, se obtendrá un archivo con hash y un archivo de sal con estas extensiones si no ha especificado la opción **/Salt \<saltvalue\>**:
 
    - .EdmHash
    - .EdmSalt
@@ -490,19 +490,19 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    Para cargar los datos con hash, ejecute el siguiente comando en el Símbolo del sistema de Windows:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
    ```
 
    Por ejemplo:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
    ```
 
    Para comprobar que se hayan cargado los datos confidenciales, ejecute el siguiente comando en el Símbolo del sistema de Windows:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetDataStore
    ```
 
@@ -510,7 +510,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    Si desea ver todos los datos cargados en una determinada tienda, ejecute el comando siguiente en un símbolo del sistema de Windows:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
 
@@ -526,8 +526,8 @@ Puede actualizar la base de datos de información confidencial diariamente y la 
 
 2. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en formato .csv o .tsv. Mantenga el mismo nombre de archivo y ubicación que usó cuando siguió los pasos descritos en [Crear un hash y cargar los datos confidenciales](#part-2-hash-and-upload-the-sensitive-data).
 
-      > [!NOTE]
-      > Si no hay cambios en la estructura (nombres de campo) del archivo .csv o .tsv, no tendrá que realizar cambios en el archivo de esquema de base de datos al actualizar los datos. Pero si necesita realizar cambios, asegúrese de editar el esquema de la base de datos y su paquete de reglas consecuentemente.
+    > [!NOTE]
+    > Si no hay cambios en la estructura (nombres de campo) del archivo .csv o .tsv, no tendrá que realizar cambios en el archivo de esquema de base de datos al actualizar los datos. Pero si necesita realizar cambios, asegúrese de editar el esquema de la base de datos y su paquete de reglas consecuentemente.
 
 3. Use el [Programador de tareas](/windows/desktop/TaskSchd/task-scheduler-start-page) para automatizar los pasos 2 y 3 en el procedimiento [Hash y carga de los datos confidenciales](#part-2-hash-and-upload-the-sensitive-data). Puede programar tareas con varios métodos:
 
@@ -650,7 +650,7 @@ Estas ubicaciones son compatibles con los tipos de información confidencial de 
 
 10. En la sección **Condiciones** en la lista **+ Agregar una condición**, elija **El contenido incluye tipo confidencial**.
 
-      ![El contenido contiene tipos de información confidencial.](../media/edm-dlp-newrule-conditions.png)
+    ![El contenido contiene tipos de información confidencial.](../media/edm-dlp-newrule-conditions.png)
 
 11. Busque el tipo de información confidencial que creó al configurar el paquete de reglas y elija **+ Agregar**.
     Elija **Hecho**.

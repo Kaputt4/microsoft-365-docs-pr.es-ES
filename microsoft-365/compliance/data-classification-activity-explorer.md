@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: d44d285959e0529a694b2022d35f2b7e7a575fdc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 113fd3ec196ec6b16c49435e14ed213cd193e5db
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192264"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264749"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
-La [introducción a la](data-classification-overview.md) clasificación de datos y las pestañas del [explorador](data-classification-content-explorer.md) de contenido le dan visibilidad sobre qué contenido se ha detectado y etiquetado, y dónde está ese contenido. El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta. El explorador de actividades proporciona una vista histórica de las actividades en el contenido etiquetado. La información de actividad se recopila Microsoft 365 registros de auditoría unificados, transformados y puestos a disposición en la interfaz de usuario del explorador de actividades. 
+La [introducción a la](data-classification-overview.md) clasificación de datos y las pestañas del [explorador](data-classification-content-explorer.md) de contenido le dan visibilidad sobre qué contenido se ha detectado y etiquetado, y dónde está ese contenido. El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta. El explorador de actividades proporciona una vista histórica de las actividades en el contenido etiquetado. La información de actividad se recopila Microsoft 365 registros de auditoría unificados, transformados y puestos a disposición en la interfaz de usuario del explorador de actividades. El explorador de actividades informa sobre datos de hasta 30 días.
 
 ![Explorador de actividades de información general de captura de pantalla de marcador de posición.](../media/data-classification-activity-explorer-1.png)
 
@@ -74,6 +74,7 @@ Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben
 
 - Administrador de cumplimiento
 - Administrador de seguridad
+- Lector de seguridad
 
 ## <a name="activity-types"></a>Tipos de actividad
 

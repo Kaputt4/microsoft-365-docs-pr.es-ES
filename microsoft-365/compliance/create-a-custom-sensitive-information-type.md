@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fa6527c2c33eb4bf245f6e1a54a1d6995d074b1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d1856d0019a95f200b6be33f3f29ae3e471685e
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167407"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264929"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -58,7 +58,7 @@ Hay dos formas de crear un tipo de información confidencial:
 
 Use este procedimiento para crear un nuevo tipo de información confidencial y definirlo usted mismo por completo. 
 
-1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial** y elija **Crear tipo de información**.
+1. En el Centro de cumplimiento, vaya a **Clasificación** de datos Tipos de \> **información confidencial** y elija Crear tipo de información **confidencial.**
 2. Rellene los valores de **Nombre** y **Descripción** y elija **Siguiente**.
 3. Elija **Crear patrón**. Puede crear varios patrones, cada uno con diferentes elementos y niveles de confianza, a medida que defina el nuevo tipo de información confidencial.
 4. Elija el valor predeterminado del Nivel de confianza para el patrón. Los valores son **Confianza baja**, **Confianza media** y **Confianza alta**.

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: b2cfc2e9387b9c29fd7bd6141046436254f88704
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5b4c4f99d146ceff683a4fbf6dcb36018d40a16
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201246"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264776"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -322,7 +322,7 @@ Por ejemplo, manteniendo la directiva HIPPA, podríamos modificar la regla para 
 
 ![Directiva de HIPPA con exclusiones](../media/dlp-rule-exceptions.png)
 
-Las condiciones de excepciones admitidas por ubicación son idénticas a todas las condiciones de inclusión, con la única diferencia de que se antepone "Excepto si" a cada condición admitida.
+Las condiciones de excepciones admitidas por ubicación son idénticas a todas las condiciones de inclusión, con la única diferencia de que se antepone "Excepto si" a cada condición admitida. Si una regla solo contiene excepciones, se aplicará a todos los correos electrónicos o archivos que no cumplan los criterios de exclusión.
 
 Al igual que todas las ubicaciones admiten la condición inclusiva:
 
@@ -587,7 +587,7 @@ DLP analiza el correo electrónico de forma diferente desde elementos en SharePo
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

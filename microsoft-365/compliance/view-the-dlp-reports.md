@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Use los informes DLP de Office 365 para ver el número de coincidencias de directivas DLP, invalidaciones o falsos positivos y ver si van hacia arriba o hacia abajo con el tiempo.
-ms.openlocfilehash: c585d65a9ce91ca0fae3881efc107efdd4537889
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 711ed74ca53ec09be6b2fd5738246dffab332307
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198582"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264941"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
@@ -88,7 +88,7 @@ Para ver los informes DLP en el Centro de seguridad & cumplimiento, debe tener a
 
 Para usar la mayoría de los cmdlets para el Centro de seguridad y cumplimiento, necesita:
   
-1. [Conectar al Centro de cumplimiento &amp; de seguridad con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
+1. [Conectar al Centro de cumplimiento &amp; de seguridad con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
     
 2. Use cualquiera de estos [ &amp; cmdlets del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell)
     

@@ -11,23 +11,20 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2021
+ms.date: 10/11/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6c9b334f2da04c3ad55f8c1faedad5f823c2571a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9aecf89ca654bb4f1896fb8f632a72da83f2f1e9
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151907"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264701"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Informe en el Antivirus de Windows Defender
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -36,8 +33,6 @@ ms.locfileid: "60151907"
 Antivirus de Microsoft Defender está integrado en Windows 10, Windows Server 2019, Windows Server 2022 y Windows Server 2016. Antivirus de Microsoft Defender es de la protección de próxima generación en Microsoft Defender para endpoint. La protección de última generación ayuda a proteger los dispositivos de amenazas de software como virus, malware y spyware en el correo electrónico, las aplicaciones, la nube y la web.
 
 Con Antivirus de Microsoft Defender, tiene varias opciones para revisar el estado de protección y las alertas. Puede usar Microsoft Endpoint Manager para [supervisar Antivirus de Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) o [crear alertas de correo electrónico](/configmgr/protect/deploy-use/endpoint-configure-alerts). O bien, puede supervisar la protección mediante [Microsoft Intune](/intune/introduction-intune).
-
-Microsoft Operations Management Suite tiene un complemento [Update Compliance](/windows/deployment/update/update-compliance-get-started) que informa sobre problemas clave Antivirus de Microsoft Defender, incluidas las actualizaciones de protección y la configuración de protección en tiempo real.
 
 Si tiene un servidor de administración de eventos (SIEM) y de información de seguridad de terceros, también puede consumir Windows Defender [eventos de cliente](/windows/win32/events/windows-events).
 
@@ -49,7 +44,7 @@ También puede supervisar [eventos de malware mediante la solución de evaluaci�
 
 Para supervisar o determinar el estado con PowerShell, WMI o Microsoft Azure, vea [la tabla (Opciones](deploy-manage-report-microsoft-defender-antivirus.md#ref2)de implementación, administración e informes).
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Antivirus de Microsoft Defender en Windows Server 2016 y 2019](microsoft-defender-antivirus-on-windows-server.md)

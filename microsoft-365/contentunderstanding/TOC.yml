@@ -79,4 +79,4 @@
     - name: Informes del almacén de términos
       href: term-store-analytics.md
 - name: Extensibilidad
-  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api.md
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

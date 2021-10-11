@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d40ed80bdbf77e6cbc2c9489462c734840755cd
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 50077baad1bb028e9686cf29105ec2c05eb25024
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240623"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264785"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidor de la solución anterior de Microsoft Defender para endpoint basada en MMA
 
@@ -49,19 +49,23 @@ Estas instrucciones se aplican a la nueva solución unificada y al paquete de in
 
 Para facilitar las actualizaciones cuando Microsoft Endpoint Configuration Manager o Azure Defender no están en uso o aún no están disponibles para realizar la actualización, puede usar este [script de actualización](https://github.com/microsoft/mdefordownlevelserver). Puede ayudar a automatizar los siguientes pasos necesarios:
 
-1. Quitar el área de trabajo oms para Microsoft Defender para endpoint (OPTIONAL)
-2. Quitar System Center Endpoint Protection cliente si está instalado
-3. Descargar e instalar (Windows Server 2012 [R2)](configure-server-endpoints.md#prerequisites) si es necesario
-4. Instalar Microsoft Defender para el punto de conexión
+1. Quite el área de trabajo oms para Microsoft Defender para endpoint (OPTIONAL).
+2. Quite System Center Endpoint Protection cliente si está instalado.
+3. Descargue e instale los [requisitos previos](configure-server-endpoints.md#prerequisites) (Windows Server 2012 R2) si es necesario.
+4. Instalar Microsoft Defender para endpoint.
 5. Aplicar el script de incorporación **para su uso con la directiva de** grupo descargada desde [Centro de seguridad de Microsoft Defender](https://securitycenter.microsoft.com).
 
-Para usar el script, descárbalo en un directorio de instalación en el que también haya colocado los paquetes de instalación e incorporación (vea [Configure server endpoints](configure-server-endpoints.md).
+Para usar el script, descárbalo en un directorio de instalación donde también haya colocado los paquetes de instalación e incorporación (vea [Configure server endpoints](configure-server-endpoints.md)).
 
 EJEMPLO: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
 ## <a name="microsoft-endpoint-configuration-manager-migration-scenarios"></a>Microsoft Endpoint Configuration Manager de migración 
 
 ### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-including-system-center-endpoint-protection-scep-and-are-running-the-microsoft-monitoring-agent-mma-based-sensor-you-want-to-upgrade-to-the-microsoft-defender-for-endpoint-unified-solution-preview"></a>Actualmente está usando Microsoft Endpoint Configuration Manager para administrar los servidores, incluido System Center Endpoint Protection (SCEP) y está ejecutando el sensor basado en Microsoft Monitoring Agent (MMA). Desea actualizar a la versión preliminar de la solución unificada de Microsoft Defender para endpoint **.**
+
+>[!NOTE]
+>Necesitarás una Microsoft Endpoint Configuration Manager, versión 2107.
+
 
 Pasos de migración: 
 

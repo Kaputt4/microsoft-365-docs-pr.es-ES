@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2752de976329f3fbef047557e6a626afd05a520f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a7be2c43a2ff97fddfa9db0a6d02bcc611e13173
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206642"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264869"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
@@ -46,7 +46,7 @@ Las siguientes condiciones se relacionan con todas las consultas.
 
 1. Las consultas exploran y devuelven datos de los últimos 30 días.
 2. Los resultados pueden devolver hasta 100 000 filas.
-3. Puede realizar hasta 15 llamadas por minuto por inquilino.
+3. Puede realizar hasta 45 llamadas por minuto por inquilino.
 4. Las consultas se bloquean si el inquilino ha alcanzado el 100 % hasta después del siguiente ciclo de 15 minutos.
 5. Si una sola solicitud se ejecuta durante más de 10 minutos, agotará el tiempo de espera y devolverá un error.
 6. Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo `429` de ejecución asignado. Lea el cuerpo de la respuesta para comprender el límite que ha alcanzado. 
@@ -88,7 +88,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 Parámetro | Tipo | Descripción
 -|-|-
-Query | Text | Consulta que se debe ejecutar. **Nota: obligatorio**
+Consulta | Text | Consulta que se debe ejecutar. **Nota: obligatorio**
 
 ## <a name="response"></a>Respuesta
 
@@ -104,7 +104,7 @@ El objeto response contiene tres propiedades de nivel superior:
 
 En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un objeto de respuesta api que contiene `Stats` , `Schema` y `Results` .
 
-### <a name="query"></a>Query
+### <a name="query"></a>Consulta
 
 ```json
 {

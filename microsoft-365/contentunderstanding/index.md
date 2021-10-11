@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo encontrar recursos de Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0b81da28d587b9041e6a59e183926f4486282d36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e738a90486b0aa1d37c483a6e369a84a2196a9d
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195490"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264713"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introducción a Microsoft SharePoint Syntex
 
@@ -70,6 +70,7 @@ Los recursos de esta sección ayudan al administrador de su organización a inst
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
 |Instalar y configurar SharePoint Syntex|[Configurar SharePoint Syntex](./set-up-content-understanding.md)|
+|Más información sobre las licencias para SharePoint Syntex|[Licencias para SharePoint Syntex](./syntex-licensing.md)|
 |Obtenga información sobre el etiquetado de imágenes y cómo deshabilitar|[Etiquetado de imágenes en SharePoint Syntex](./image-tagging.md)|
 
 ## <a name="models"></a>Modelos
@@ -95,3 +96,10 @@ Una licencia de SharePoint Syntex ofrece a los usuarios servicios de contenido p
 |Información sobre cómo hacer que los tipos de contenido estén disponibles de forma más coherente en las listas y bibliotecas de SharePoint|[Insertar tipos de contenido en un centro](./push-content-type-to-hub.md)|
 |Obtenga información sobre los informes del almacén de términos que tiene disponibles.|[Informes del almacén de términos](./term-store-analytics.md)|
 
+## <a name="extensibility"></a>Extensibilidad
+
+Use las API de REST para crear un modelo de comprensión de documentos, aplicar o quitar el modelo a una o más bibliotecas y obtener o actualizar información sobre el modelo.
+
+| Si busca esta información: | Vea este recurso: |
+|:-----|:-----|
+|Usar las API de REST para los modelos de comprensión de documentos|[API de REST del modelo de comprensión mediante documentos de SharePoint Syntex](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|
