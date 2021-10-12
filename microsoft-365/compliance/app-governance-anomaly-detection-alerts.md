@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Investigar las alertas de detección de anomalías.
-ms.openlocfilehash: add90085634571608d0b7aceff85439898bb9fef
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d19a5c5dc1b07b0851ec70ada5111ecf5166ab5
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204568"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264725"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Investigar las alertas de detección de anomalías
 
@@ -37,6 +37,8 @@ Esta guía proporciona información sobre cómo investigar y solucionar las aler
 - Elevación de privilegios
 - Evasión de defensa
 - Acceso a credenciales
+- Descubrimiento
+- Movimiento posterior
 - Colección
 - Filtración
 - Impacto
@@ -64,9 +66,59 @@ Utilice las siguientes directrices generales cuando investigue cualquier tipo de
 
 Esta sección describe las alertas que indican que una aplicación maliciosa puede estar intentando mantenerse en su organización.  
 
+### <a name="app-created-recently-has-low-consent-rate"></a>La aplicación que se ha creado recientemente tiene una tasa de consentimiento baja
+
+**Gravedad**: baja
+
+La detección identifica una aplicación de OAuth creada recientemente que tiene una tasa de consentimiento baja. Podría indicar que es una aplicación malintencionada o de riesgo que tiende el cebo a los usuarios para que den su consentimiento de forma no legal.
+
+**¿TP o FP?**
+
+- **TP**: si se confirma que la aplicación OAuth procede de un origen desconocido, se indica un verdadero positivo (TP).
+
+  **Acción recomendada**: revise el nombre para mostrar, las direcciones URL de respuesta y los dominios de la aplicación. Basándose en su investigación, puede optar por prohibir el acceso a esta aplicación. Revise el nivel de permiso solicitado por esta aplicación y qué usuarios han concedido el acceso.
+
+- **Falso positivo (FP)**: Si tras la investigación, puede confirmar que la aplicación tiene un uso empresarial legítimo en la organización.
+
+  **Acción recomendada**: descartar la alerta.
+
+**Comprender el alcance de la infracción**
+
+1. Revise todas las actividades realizadas por la aplicación.  
+1. Si sospecha de una aplicación, le recomendamos que investigue el nombre de la aplicación y el dominio de respuesta en diferentes tiendas de aplicaciones. Cuando compruebe las tiendas de aplicaciones, céntrese en los siguientes tipos de aplicaciones:
+   - Aplicaciones que se han creado recientemente
+   - Aplicación con nombre para mostrar inusual
+   - Aplicaciones con un dominio de respuesta sospechoso
+1. Si todavía cree que una aplicación es sospechosa, puede investigar el nombre para mostrar y el dominio de respuesta de la aplicación.
+
+### <a name="app-with-bad-url-reputation"></a>Aplicación con URL de mala reputación
+
+**Gravedad**: media
+
+Esta detección identifica una aplicación de OAuth cuyo URL sufre de mala reputación.  
+
+**¿TP o FP?**
+
+- **TP**: si se confirma que la aplicación OAuth procede de un origen desconocido y redirige a una URL sospechosa, se indica un verdadero positivo (TP).
+
+  **Acción recomendada**: revise la URL de respuesta, los dominios y los ámbitos solicitados por la aplicación. Basándose en su investigación, puede optar por prohibir el acceso a esta aplicación. Revise el nivel de permiso solicitado por esta aplicación y qué usuarios han concedido el acceso.
+
+- **Falso positivo (FP)**: Si tras la investigación, puede confirmar que la aplicación tiene un uso empresarial legítimo en la organización.
+
+  **Acción recomendada**: descartar la alerta.
+
+**Comprender el alcance de la infracción**
+
+1. Revise todas las actividades realizadas por la aplicación.  
+1. Si sospecha de una aplicación, le recomendamos que investigue el nombre de la aplicación y el dominio de respuesta en diferentes tiendas de aplicaciones. Cuando compruebe las tiendas de aplicaciones, céntrese en los siguientes tipos de aplicaciones:
+   - Aplicaciones que se han creado recientemente
+   - Aplicación con nombre para mostrar inusual
+   - Aplicaciones con un dominio de respuesta sospechoso
+1. Si todavía cree que una aplicación es sospechosa, puede investigar el nombre para mostrar y el dominio de respuesta de la aplicación.
+
 ### <a name="encoded-app-name-with-suspicious-consent-scopes"></a>Nombre de la aplicación codificado con ámbitos de consentimiento sospechosos
 
-**Gravedad:** media
+**Gravedad**: media
 
 **Descripción**: esta detección identifica aplicaciones OAuth con caracteres (como Unicode o caracteres codificados) solicitados para ámbitos de consentimiento sospechosos y que accedieron a las carpetas de correo de los usuarios a través de la Graph API. Esta alerta puede indicar un intento de camuflar una aplicación maliciosa como una aplicación conocida y de confianza para que los adversarios puedan engañar a los usuarios para que den su consentimiento a la aplicación maliciosa.
 
@@ -117,8 +169,6 @@ Siga el tutorial sobre cómo [investigar aplicaciones de OAuth de riesgo](/cloud
 
 **Gravedad**: media  
 
-**Descripción**
-
 Esta detección identifica la aplicación con un nombre para mostrar inusual y redirige a un dominio de respuesta sospechoso con un dominio de primer nivel (TLD) inusual a través de la Graph API. Esto puede indicar un intento de camuflar una aplicación maliciosa o de riesgo como una aplicación conocida y de confianza para que los adversarios puedan engañar a los usuarios y que den su consentimiento a la aplicación maliciosa o de riesgo.  
 
 **¿TP o FP?**
@@ -144,6 +194,56 @@ Si todavía cree que una aplicación es sospechosa, puede investigar el nombre p
 ## <a name="persistence-alerts"></a>Alertas de persistencia
 
 Esta sección describe las alertas que indican que un actor malicioso puede estar intentando mantener su posición en su organización.
+
+### <a name="app-made-anomalous-graph-calls-to-exchange-workload-post-certificate-update-or-addition-of-new-credentials"></a>La aplicación realizó llamadas anómalas de Graph a la carga de trabajo de Exchange después de actualizar certificados o añadir nuevas credenciales
+
+**Gravedad**: media
+
+**ID. DE MITRE**: T1098.001, T1114
+
+Esta detección desencadena una alerta cuando una aplicación de línea de negocio (LOB) ha actualizado el certificado o los secretos o cuando agrega nuevas credenciales y unos días después se observan actividades inusuales o un gran volumen de uso en la carga de trabajo de Exchange a través de Graph API mediante el algoritmo de aprendizaje automático.
+
+**¿TP o FP?**
+
+- **TP**: si se confirma que la aplicación de línea de negocio ha realizado actividades inusuales o experimentado un gran volumen de uso para la carga de trabajo de Exchange a través de Graph API  
+
+  **Acción recomendada**: deshabilite temporalmente la aplicación, restablezca la contraseña y vuelva a habilitarla.
+
+- **FP**: si se confirma que ninguna aplicación de línea de negocio ha realizado actividades inusuales o si la aplicación está diseñada para realizar un volumen inusualmente elevado de llamadas a grafos.
+
+  **Acción recomendada**: descartar la alerta.
+
+**Comprender el alcance de la infracción**
+
+1. Revise toda la actividad realizada por esta aplicación.
+1. Revise los alcances otorgados por la aplicación.
+1. Revise la actividad de usuario asociada a esta aplicación.
+
+### <a name="app-with-suspicious-oauth-scope-was-flagged-high-risk-by-machine-learning-model-made-graph-calls-to-read-email-and-created-inbox-rule"></a>La aplicación con ámbito de OAuth sospechoso se marcó como de alto riesgo por el modelo de aprendizaje automático, realizó llamadas a grafo para leer el correo electrónico y creó reglas de bandeja de entrada
+
+**Gravedad**: media
+
+**ID. DE MITRE**: T1137.005, T1114
+
+Esta detección identifica una aplicación OAuth que se marcó como de alto riesgo por el modelo de aprendizaje automático y que ha dado consentimiento a ámbitos sospechosos, ha creado una regla de bandeja de entrada sospechosa y luego accedido a las carpetas de correo de los usuarios y a los mensajes a través de la Graph API. Las reglas de la bandeja de entrada, como el reenvío de todos los correos electrónicos o de algunos específicos a otra cuenta de correo electrónico, y las llamadas de Graph para acceder a los correos electrónicos y enviarlos a otra cuenta de correo electrónico, pueden ser un intento de filtrar información de su organización.
+
+**¿TP o FP?**
+
+- **TP**: si se puede confirmar que la regla de la bandeja de entrada fue creada por una aplicación OAuth de terceros con alcances sospechosos procedentes de origen desconocido, se indica un verdadero positivo (TP).
+
+  **Acción recomendada**: deshabilitar y quitar la aplicación, restablecer la contraseña y quitar la regla de bandeja de entrada.
+
+Siga el tutorial sobre cómo restablecer una contraseña utilizando Azure Active Directory y siga el tutorial sobre cómo quitar la regla de la bandeja de entrada.
+
+- **FP**: Si puede confirmar que la aplicación creó una regla de bandeja de entrada a una cuenta de correo electrónico externa nueva o personal por razones legítimas.
+
+  **Acción recomendada**: descartar la alerta.
+
+**Comprender el alcance de la infracción**
+
+1. Revise todas las actividades realizadas por la aplicación.
+1. Revise los alcances otorgados por la aplicación.
+1. Revise la acción y la condición de la regla de entrada creada por la aplicación.
 
 ### <a name="app-with-suspicious-oauth-scope-made-graph-calls-to-read-email-and-created-inbox-rule"></a>La aplicación con ámbito de OAuth sospechoso realizó llamadas de Graph para leer el correo electrónico y creó la regla de la Bandeja de entrada  
 
@@ -212,6 +312,32 @@ Esta detección desencadena una alerta cuando una aplicación de línea de negoc
 - **Falso positivo (FP)**: si puede confirmar que la aplicación LOB accedió desde una ubicación inusual con fines legítimos y no se realizaron actividades inusuales.
 
     **Acción recomendada**: descartar la alerta.
+
+**Comprender el alcance de la infracción**
+
+1. Revise toda la actividad realizada por esta aplicación.
+1. Revise los alcances otorgados por la aplicación.
+1. Revise la actividad de usuario asociada a esta aplicación.
+
+## <a name="discovery-alerts"></a>Alertas de detección
+
+### <a name="app-performed-drive-enumeration"></a>La aplicación ha realizado enumeración de unidades de disco
+
+**Gravedad**: media
+
+**ID. DE MITRE**: T1087
+
+Esta detección identifica una aplicación de OAuth detectada por el modelo de aprendizaje automático que realiza enumeraciones en archivos de OneDrive mediante Graph API.  
+
+**¿TP o FP?**
+
+- **TP**: si se confirma que la aplicación de línea de negocio ha realizado uso o actividades inusuales en OneDrive a través de Graph API.
+
+  **Acción recomendada**: deshabilitar y quitar la aplicación y restablecer la contraseña.
+
+- **FP**: si se confirma que la aplicación no ha realizado ninguna actividad inusual.
+
+  **Acción recomendada**: descartar la alerta.
 
 **Comprender el alcance de la infracción**
 
