@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15dd2d09746ad934e50376c1d4a9172011983cde
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 704c9c11ee12d9e08d5ede73440f5fde7de3d51b
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154823"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268721"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -113,9 +113,41 @@ Especifica si se debe iniciar un examen de proceso después de que se descarguen
 |---|---|
 |**Clave**|scanAfterDefinitionUpdate|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|false (predeterminado) <p> true|
-|**Comments**|Disponible en Defender para endpoint versión 101.41.51 o posterior.|
+|**Posibles valores**|true (valor predeterminado) <p> false|
+|**Comments**|Disponible en Defender para endpoint versión 101.45.00 o posterior.|
 |
+
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Examinar archivos (solo exámenes antivirus a petición)
+
+Especifica si se deben examinar los archivos durante los exámenes antivirus a petición.
+
+<br>
+
+****
+
+|Descripción|Valor|
+|---|---|
+|**Clave**|scanArchives|
+|**Tipo de datos**|Booleano|
+|**Posibles valores**|true (valor predeterminado) <p> false|
+|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.45.00 o posterior.|
+|||
+
+#### <a name="degree-of-parallelism-for-on-demand-scans"></a>Grado de paralelismo para exámenes a petición
+
+Especifica el grado de paralelismo de los exámenes a petición. Esto corresponde al número de subprocesos usados para realizar el examen y afecta al uso de la CPU, así como a la duración del examen a petición.
+
+<br>
+
+****
+
+|Descripción|Valor|
+|---|---|
+|**Clave**|maximumOnDemandScanThreads|
+|**Tipo de datos**|Entero|
+|**Posibles valores**|2 (valor predeterminado). Los valores permitidos son enteros entre 1 y 64.|
+|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.45.00 o posterior.|
+|||
   
 
 #### <a name="exclusion-merge-policy"></a>Directiva de combinación de exclusión
@@ -485,7 +517,9 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
-      "maximumOnDemandScanThreads":1,
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
       "passiveMode":false,
       "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",

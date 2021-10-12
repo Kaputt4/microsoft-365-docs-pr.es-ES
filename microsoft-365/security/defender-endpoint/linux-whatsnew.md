@@ -16,16 +16,25 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: cc24857adacf3b6fbb787030136f5ebb53f00937
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1692c80d400cbae3ebaefd2a6995cba9c362c580
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178352"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268901"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
+
+- Se agregaron nuevos modificadores a la herramienta de línea de comandos:
+  - Controlar el grado de paralelismo de los exámenes a petición. Esto se puede configurar a través `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` de . De forma predeterminada, se usa un grado de paralelismo `2` de.
+  - Controlar si los exámenes después de las actualizaciones de inteligencia de seguridad están habilitados o deshabilitados. Esto se puede configurar a través `mdatp config scan-after-definition-update --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
+  - Controlar si los archivos se examinan durante los exámenes a petición. Esto se puede configurar a través `mdatp config scan-archives --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
+- Cambiar el nivel de registro de producto ahora requiere elevación
+- Correcciones de errores
 
 ## <a name="1013998-30121062139980"></a>101.39.98 (30.121062.13998.0)
 

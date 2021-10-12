@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 89178fc9c8ec44da0f9f51e2c4bfc6b1dfbab138
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d7de5d6b897d93b0112745ed566879a451e5448
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211074"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268559"
 ---
 # <a name="resources"></a>Recursos
 
@@ -125,6 +125,9 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Configuración|Activar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application --action block`|
 |Configuración|Desactivar la protección de LA PUA|`mdatp threat policy set --type potentially_unwanted_application --action off`|
 |Configuración|Activar el modo de auditoría para la protección de PUA|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
+|Configuración|Configurar el grado de paralelismo para los exámenes a petición|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|Configuración|Activar y desactivar exámenes después de las actualizaciones de inteligencia de seguridad|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuración|Activar/desactivar el examen del archivo (solo exámenes a petición)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Cambiar el nivel de registro|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |Diagnostics|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
 |Mantenimiento|Comprobar el estado del producto|`mdatp health`|
@@ -143,36 +146,5 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Detección y respuesta de extremos|Establecer la vista previa anticipada (sin usar)|`mdatp edr early-preview [enable|disable]`|
 |Detección y respuesta de extremos|Establecer group-id|`mdatp edr group-ids --group-id [group-id]`|
 |Detección y respuesta de extremos|Establecer o quitar etiqueta, solo `GROUP` compatible|`mdatp edr tag set --name GROUP --value [tag]`|
-|Detección y respuesta de extremos|exclusiones de lista (raíz)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|Detección y respuesta de extremos|Enumerar exclusiones (raíz)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |
-
-## <a name="microsoft-defender-for-endpoint-portal-information"></a>Información del portal de Microsoft Defender para puntos de conexión
-
-En el portal de Defender para endpoint, verá dos categorías de información:
-
-- Alertas antivirus, incluidas:
-  - Severity
-  - Tipo de examen
-  - Información del dispositivo (nombre de host, identificador de dispositivo, identificador de inquilino, versión de aplicación y tipo de sistema operativo)
-  - Información de archivo (nombre, ruta de acceso, tamaño y hash)
-  - Información sobre amenazas (nombre, tipo y estado)
-- Información del dispositivo, incluida:
-  - Identificador de dispositivo
-  - Identificador de inquilino
-  - Versión de la aplicación
-  - Nombre de host
-  - Tipo de sistema operativo
-  - Versión del sistema operativo
-  - Modelo de equipo
-  - Arquitectura del procesador
-  - Si el dispositivo es una máquina virtual
-
-### <a name="known-issues"></a>Problemas conocidos
-
-- Es posible que vea "Sin datos de sensores, comunicaciones deficientes" en la página de información de la máquina del portal de Microsoft 365 Defender, aunque el producto funciona como se esperaba. Estamos trabajando en solucionar este problema.
-- Los usuarios que han iniciado sesión no aparecen en Microsoft 365 Defender portal.
-- En las distribuciones de SUSE, si se produce un error en la instalación de *libatomic1,* debe validar que el sistema operativo está registrado:
-
-   ```bash
-   sudo SUSEConnect --status-text
-   ```

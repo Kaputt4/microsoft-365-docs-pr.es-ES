@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 44966b07154b8661aee95f00d1eba1c9a3866715
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 20f5f94db051e905dca48ca46f2beac560978691
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198150"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268604"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -33,8 +33,10 @@ ms.locfileid: "60198150"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!IMPORTANT]
-> En macOS 11 (Big Sur), Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en [esta página](mac-sysext-policies.md).
+## <a name="1014384-20121082143840"></a>101.43.84 (20.121082.14384.0)
+
+- Compilación candidata para macOS 12 (Monterrey)
+- Correcciones de errores
 
 ## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0)
 

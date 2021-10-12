@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b50e320752f64360132410c50f454fbfbfd27a82
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5fa3ad73ffbc869a700776319477c5ab3128cae5
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195622"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268759"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -127,8 +127,9 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 - Si desea descargar mediante programación los datos del registro de auditoría, le recomendamos que use la API de Actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de Actividad de administración de Office 365 es un servicio REST de la web que puede usar para desarrollar operaciones, soluciones de supervisión de seguridad y cumplimiento para su organización. Para obtener más información, consulte[la referencia de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- Después de que se produzca un evento, puede llevar de 30 minutos a 24 horas para que se devuelva el registro de auditoría correspondiente en los resultados de la búsqueda en el registro de auditoría. En la tabla siguiente se muestra el tiempo que tarda para los distintos servicios en Microsoft 365.
+- Azure Active Directory (Azure AD) es el servicio de directorio para Microsoft 365. El registro de auditoría unificado contiene las actividades del usuario, dominio, aplicación, grupo y directorio que se realizaron en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> o en el portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
+- Después de que se produzca un evento, puede llevar de 30 minutos a 24 horas para que se devuelva el registro de auditoría correspondiente en los resultados de la búsqueda en el registro de auditoría. En la tabla siguiente se muestra el tiempo que tarda para los distintos servicios en Microsoft 365.
 
   |Característica o servicio de Microsoft 365|30 minutos|24 horas|
   |---|:---:|:---:|
@@ -151,8 +152,6 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   |Yammer||![Marca de verificación.](../media/checkmark.png)|
   |Microsoft Forms|![Marca de verificación.](../media/checkmark.png)||
   ||||
-
-- Azure Active Directory (Azure AD) es el servicio de directorio para Microsoft 365. El registro de auditoría unificado contiene las actividades del usuario, dominio, aplicación, grupo y directorio que se realizaron en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> o en el portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 - El registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría, debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría"[en el portal de administración de Power BI](/power-bi/service-admin-portal#audit-logs).
 
@@ -425,7 +424,6 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
         
     :::column-end:::
 :::row-end:::
-
 
 ### <a name="file-and-page-activities"></a>Actividades de páginas y archivos
 
@@ -826,8 +824,13 @@ Workplace Analytics ofrece información sobre cómo colaboran los grupos en la o
 |Configuración de acceso a datos actualizada|UpdatedDataAccessSetting|Configuración de acceso a datos de administrador actualizada|
 |Configuración de privacidad actualizada|UpdatedPrivacySetting|Configuración de Privacidad de administrador actualizada; por ejemplo, grupo de tamaño mínimo.|
 |Datos de la organización cargados.|UploadedOrgData|Archivo de datos de la organización cargado por el administrador.|
+|Usuario que ha iniciado sesión<sup>*</sup>| UserLoggedIn |Un usuario ha iniciado sesión en su cuenta de usuario de Microsoft 365.|
+|Usuario que ha cerrado sesión<sup>*</sup>| UserLoggedOff |Un usuario ha cerrado sesión en su cuenta de usuario de Microsoft 365.
 |Explorar vista|ViewedExplore|El analista visualizó una o más pestañas de la página de exploración.|
 ||||
+
+> [!NOTE]
+> <sup>*</sup>Estas son actividades de inicio y cierre de sesión de Azure Active Directory. Estas actividades se registran incluso si no tiene Workplace Analytics activado en su organización. Para obtener más información acerca de las actividades de inicio de sesión del usuario, consulte [Registros de inicios de sesión en Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
 ### <a name="microsoft-teams-activities"></a>Actividades de Microsoft Teams
 

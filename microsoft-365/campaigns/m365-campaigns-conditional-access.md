@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada.
-ms.openlocfilehash: 49b20e4880774ce97d99dc95e60c0cb417b213bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ce8cd568fa452aa6c4ff9b03cf2a17ed57d959b6
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198984"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268699"
 ---
 # <a name="turn-on-security-defaults"></a>Activar valores predeterminados de seguridad
 
@@ -41,7 +41,7 @@ Si la suscripción se creó el 22 de octubre de 2019 o después, es posible que 
 
 Para habilitar los valores predeterminados de seguridad en Azure Active Directory (Azure AD) o para comprobar si ya están habilitados:
 
-1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> con credenciales de administrador global.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> de seguridad, administrador de acceso condicional o credenciales de administrador global.
 
 2. En el panel izquierdo, seleccione **Mostrar todo y, a continuación,** en Centros de **administración,** **seleccione Azure Active Directory**.
 
@@ -79,7 +79,7 @@ Si desea usar el acceso condicional para configurar directivas equivalentes a la
 - [Requerir MFA para la administración de Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [Bloquear la autenticación heredada](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [Requerir MFA para todos los usuarios](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Requerir el registro de MFA de Azure AD:](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) requiere Azure AD Identity Protection, que forma parte de Azure Active Directory Premium P2
+- [Requerir Azure AD de MFA:](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) requiere Azure AD de identidad, que forma parte de Azure Active Directory Premium P2
 
 Para obtener más información sobre el acceso condicional, vea [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview) Para obtener más información acerca de cómo crear directivas de acceso condicional, [vea Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
 

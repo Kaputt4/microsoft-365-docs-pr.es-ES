@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informes para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47ba6d4d9f02934f05a98cf8ef01820a9daac8d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b0f8e835f8439c4b45c8cd005429f68f267150d2
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191460"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268817"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 
@@ -50,7 +50,7 @@ Si eres un usuario individual, puedes habilitar ambos complementos por ti mismo.
 
 Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Report Message y el complemento Report Phishing para su organización. Ambos complementos ya están disponibles a través [de la implementación centralizada](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tanto el complemento Report Message como el complemento Report Phishing funcionan con la mayoría Microsoft 365 suscripciones y los siguientes productos:
   - Outlook en la Web
@@ -69,7 +69,7 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
 
 - Para obtener más información sobre cómo notificar un mensaje mediante la característica Mensaje de informe, vea [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
-- Las organizaciones que tengan una solución de seguridad o filtrado de direcciones URL (como Proxy y FireWall) tendrán que tener puntos de conexión ipagave.azurewebsites.net y outlook.office.com que se puedan alcanzar en el protocolo HTTPS.
+- Las organizaciones que tengan una solución de seguridad o filtrado de direcciones URL (como un proxy o un firewall) tendrán que tener ipagave.azurewebsites.net y outlook.office.com puntos de conexión permitidos en el protocolo HTTPS.
 
 
 > [!IMPORTANT]
