@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: Usar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoUsar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoría+ Este script está optimizado para devolver un gran conjunto (hasta 50 000) de registros de auditoría. El script exporta dichos registros a un archivo CSV que puede visualizar o transformar mediante Power Query en Excel.
-ms.openlocfilehash: 7f54924cf0f90b976c52c8ee7c53e151f50111b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Usar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoUsar un script de PowerShell que ejecute el cmdlet Search-UnifiedAuditLog en Exchange Online para buscar en el registro de auditoría+ Este script está optimizado para devolver un gran conjunto de registros de auditoría cada vez que se ejecuta. El script exporta dichos registros a un archivo CSV que puede visualizar o transformar mediante Power Query en Excel.
+ms.openlocfilehash: d104ac5bb056d898dd03aaf3765a35950a7ea094
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173552"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268571"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usar un script de PowerShell para buscar en el registro de auditoría
 
@@ -36,7 +36,7 @@ Hoy en día, la seguridad, el cumplimiento y la auditoría son la prioridad núm
 
 Si necesita recuperar registros de auditoría con regularidad, debería considerar una solución que utilice la API de Actividad de administración de Office 365, ya que puede ofrecer a grandes organizaciones la escalabilidad y el rendimiento necesarios para recuperar millones de registros de auditoría de manera continua. Utilizar la herramienta de búsqueda en el registro de auditoría en el Centro de cumplimiento de Microsoft 365 es una manera rápida de encontrar registros de auditoría para operaciones específicas que puedan tener lugar en un intervalo de tiempo más corto. Utilizar intervalos de tiempo mayores en la herramienta de búsqueda en el registro de auditoría, especialmente en el caso de grandes organizaciones, puede entregar un número de registros demasiado elevado como para poderlos administrar o exportar con facilidad.
 
-Cuando se den situaciones en las que necesite recuperar datos de auditoría de forma manual para una investigación o incidente en concreto, sobre todo en el caso de intervalos de fechas mayores en grandes organizaciones, puede que usar el cmdlet **Search-UnifiedAuditLog** sea la mejor opción. Este artículo incluye un script de PowerShell que utiliza el cmdlet para recuperar hasta 50 000 registros de auditoría y, a continuación, exportarlos al archivo CSV al que puede dar formato mediante Power Query en Excel para ayudarle con la revisión. Asimismo, utilizar el script de este artículo minimiza la posibilidad de que se agote el tiempo de espera de búsquedas en grandes registros de auditoría en el servicio.
+Cuando se den situaciones en las que necesite recuperar datos de auditoría de forma manual para una investigación o incidente en concreto, sobre todo en el caso de intervalos de fechas mayores en grandes organizaciones, puede que usar el cmdlet **Search-UnifiedAuditLog** sea la mejor opción. Este artículo incluye un script de PowerShell que utiliza el cmdlet que puede recuperar 50 000 registros de auditoría (por cada vez que ejecuta el cmdlet) y, luego, exportarlos al archivo CSV al que puede dar formato con Power Query en Excel para que se le facilite la revisión. Asimismo, utilizar el script de este artículo minimiza la posibilidad de que se agote el tiempo de espera de búsquedas en grandes registros de auditoría en el servicio.
 
 ## <a name="before-you-run-the-script"></a>Antes de ejecutar el script:
 
@@ -56,7 +56,7 @@ Cuando se den situaciones en las que necesite recuperar datos de auditoría de f
 
 ## <a name="step-1-connect-to-exchange-online-powershell"></a>Paso 1: Conectar con Exchange Online PowerShell
 
-El primer paso es conectar al PowerShell de Exchange Online. Puede conectarse con la autenticación moderna o con la autenticación multifactor (MFA). Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+El primer paso es conectar al PowerShell de Exchange Online. Puede conectarse mediante la autenticación moderna o la autenticación multifactor (MFA). Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a>Paso 2: modificar y ejecutar el script para recuperar registros de auditoría
 
@@ -168,7 +168,7 @@ Una vez que se haya conectado a Exchange Online PowerShell, el siguiente paso se
 El script muestra los mensajes de progreso mientras se ejecuta. Una vez que el script ha terminado de ejecutarse, crea el archivo de registro y el archivo CSV que contiene los registros de auditoría y los guarda en las carpetas definidas por las variables `$logFile` y `$outputFile` .
 
 > [!IMPORTANT]
-> Existe un límite de 50 000 registros de auditoría como máximo que se devuelven cada vez que ejecuta este script. Si ejecuta este script y devuelve 50 000 resultados, es probable que no se incluyeran los registros de auditoría de las actividades que tuvieron lugar dentro del intervalo de fechas. Si esto sucede, se recomienda que divida el intervalo de fechas en intervalos menores y que vuelva ejecutar el script para cada intervalo de fecha. Por ejemplo, si un intervalo de fechas de 90 días devuelve 50 000 resultados, puede volver a ejecutar el script dos veces; una vez para los primeros 45 días del intervalo de fechas y una segunda vez para los siguientes 45 días.
+> Existe un límite de 50 000 registros de auditoría que se devuelven cada vez que ejecuta el cmdlet en el script. Si ejecuta este script y devuelve 50 000 resultados, es probable que no se incluyeran los registros de auditoría de las actividades que tuvieron lugar dentro del intervalo de fechas. Si esto sucede, se recomienda que divida el intervalo de fechas en intervalos menores y que vuelva ejecutar el script para cada intervalo de fecha. Por ejemplo, si un intervalo de fechas de 90 días devuelve 50 000 resultados, puede volver a ejecutar el script dos veces; una vez para los primeros 45 días del intervalo de fechas y una segunda vez para los siguientes 45 días.
 
 ## <a name="step-3-format-and-view-the-audit-records"></a>Paso 3: Dar formato y visualizar los registros de auditoría
 

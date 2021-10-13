@@ -19,10 +19,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtén información sobre cómo instalar Microsoft Office aplicaciones.
+description: Obtenga información sobre cómo instalar aplicaciones de Microsoft Office.
 ms.openlocfilehash: 55f384350db4763d7e93aa887191691583c7b421
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60173900"
@@ -33,23 +33,23 @@ ms.locfileid: "60173900"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Microsoft Office aplicaciones se pueden encontrar en el **menú** Inicio. Si no los&#39;, puede instalarlos usted mismo.
+Las aplicaciones de Microsoft Office se pueden encontrar en el menú **Inicio**. Si no las ve, puede instalarlas usted mismo.
 
-1. Vaya a office.com. Es posible que deba iniciar sesión con su cuenta de trabajo.
-2. Selecciona **Instalar Office** Microsoft 365 ejecutar aplicaciones y, a   >      >    continuación, selecciona **Sí**.
-3. Las Office se instalarán. El proceso puede tardar varios minutos. Cuando se complete, seleccione  **Cerrar**.
-4. Para instalar Microsoft Teams, vaya a la página office.com y elija **Teams**.
-5. Obtenga la Windows y, a continuación, seleccione **Ejecutar**. Teams muestra un mensaje cuando se completa la instalación.
+1. Vaya a Office.com. Es posible que deba iniciar sesión con su cuenta profesional.
+2. Seleccione **Instalar aplicaciones de Office**  >  **de Microsoft 365**  >  **Ejecutar** y, a continuación, seleccione **Sí**.
+3. Se instalarán las aplicaciones de Office. Es posible que este proceso tarde varios minutos. Cuando finalice, seleccione  **Cerrar**.
+4. Para instalar Microsoft Teams, vaya a la página office.com y elija  **Teams**.
+5. Obtenga la aplicación de Windows y, a continuación, seleccione  **Ejecutar**. Teams le mostrará un mensaje al terminar la instalación.
 
-Las Office que instalaste ahora aparecen en el **menú** Inicio.
+Las aplicaciones de Office que acaba de instalar ya aparecen en el menú  **Inicio**.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Migrar el contenido a Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (artículo)
+[Migrar el contenido a Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (artículo)
 
-[Instalar la Administración de Microsoft 365 móvil en el teléfono](admin-mobile.md) (vídeo)
+[Instalar la aplicación móvil Administración de Microsoft 365 en el teléfono](admin-mobile.md) (vídeo)
 
-[Introducción a la Microsoft Teams en su pequeña empresa](get-started-teams-small-business.md) (vídeo)
+[Introducción a Microsoft Teams en pequeñas empresas](get-started-teams-small-business.md) (vídeo)
 
-[Compartir archivos fácilmente externamente](share-files-externally.md) (vídeo)
+[Compartir archivos de forma externa fácilmente](share-files-externally.md) (vídeo)
 
