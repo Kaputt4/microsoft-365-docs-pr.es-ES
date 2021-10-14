@@ -3,7 +3,7 @@ title: Soluciones de riesgo interno
 description: Obtenga información sobre cómo ayudar a minimizar los riesgos en su organización con soluciones de riesgo de insider en Microsoft 365.
 keywords: Microsoft 365, riesgo interno, cumplimiento
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: ab7f0b26770c78298d620fa1f7d991dc5c7cae4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5028b2f577d5eb67a3e1316048878d1020a7e53c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175244"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334679"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Soluciones de riesgos internos en Microsoft 365
 

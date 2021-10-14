@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 7f90c011eab86341d08411bbef24213925489a75
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 75fb613aa1e0256c6c819336f9bcdd340acdff7d
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158267"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335495"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 

@@ -3,7 +3,7 @@ title: Configuración de administración de riesgos de Insider
 description: Obtenga información sobre la configuración de administración de riesgos de insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ea91263cf6f466f718d30d8cfdc303611bf755ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89a6947aa9ada34df0e60ed2d552254edb6719a5
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204304"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335315"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -87,7 +87,7 @@ Para habilitar la supervisión de actividades de riesgo en dispositivos e inclui
 Asegúrese de que los dispositivos Windows 10 que planea informar en la administración de riesgos de insider cumplan estos requisitos.
 
 1. Debe ejecutar Windows 10 x64 compilación 1809 o posterior y debe haber instalado la actualización de Windows 10 (compilación del sistema operativo [17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) a partir del 20 de febrero de 2020.
-2. La cuenta de usuario usada para iniciar sesión en el dispositivo Windows 10 debe ser una cuenta Azure Active Directory (AAD) activa. El Windows 10 puede ser [AAD,](/azure/active-directory/devices/concept-azure-ad-join)AAD híbrido o unido a Active Directory, o AAD registrado.
+2. La cuenta de usuario usada para iniciar sesión en el dispositivo Windows 10 debe ser una cuenta Azure Active Directory (AAD). El Windows 10 puede [estar](/azure/active-directory/devices/concept-azure-ad-join)AAD, híbrido AAD, unido a Active Directory o AAD registrado.
 3. Instale microsoft Chromium explorador perimetral en el dispositivo de extremo para supervisar las acciones de la actividad de carga en la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### <a name="step-2-onboarding-devices"></a>Paso 2: Incorporación de dispositivos

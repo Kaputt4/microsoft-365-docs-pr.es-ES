@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2133c6139c737b8a0080bfdf60e3a2c5bc8b320d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b8d5aba4974bf4ac179f88a08ae5f8c037fa0a71
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210454"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335543"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -103,12 +103,12 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
 
 3. En el **control desplegable Editar simulación de suplantación** de identidad de terceros que se abre, configure las siguientes opciones:
 
-   - **Dominio:** expanda esta configuración y escriba al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com) haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas.
+   - **Dominio:** expanda esta configuración y escriba al menos un dominio de dirección de correo electrónico (por ejemplo, contoso.com) haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 20 entradas.
 
      > [!NOTE]
      > Use el dominio de la dirección (también conocida como dirección MAIL FROM, remitente P1 o remitente de sobre) que se usa en la transmisión SMTP del mensaje o en un dominio `5321.MailFrom` domainKeys Identified Mail  (DKIM), según lo especificado por el proveedor de simulación de suplantación de identidad ( phishing simulation vendor).  
 
-   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores válidos son:
+   - **Enviar IP:** expanda esta configuración y escriba al menos una dirección IPv4 válida haciendo clic en el cuadro, especificando un valor y presionando Entrar o seleccionando el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Puede agregar hasta 10 entradas. Los valores admitidos son:
      - IP única: por ejemplo, 192.168.1.1.
      - Intervalo IP: por ejemplo, 192.168.0.1-192.168.0.254.
      - IP cidr: por ejemplo, 192.168.0.1/25.

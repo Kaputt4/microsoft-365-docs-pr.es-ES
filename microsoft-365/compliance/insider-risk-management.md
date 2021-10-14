@@ -3,7 +3,7 @@ title: Información sobre riesgos internos de Microsoft
 description: Obtenga información sobre cómo ayudar a minimizar los riesgos en su organización con la administración de riesgos de insider en Microsoft 365.
 keywords: Microsoft 365, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d588d4792bc8396fb3720a08e0624bd8273b5d93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 30f73f99b60092c854ae7d1ccc2d8eac1e7a49b7
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201090"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335847"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos de insider en Microsoft 365
 

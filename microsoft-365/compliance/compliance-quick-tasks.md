@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 ms.localizationpriority: medium
 description: Obtenga información sobre las tareas que le ayudarán a empezar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: d60a9f589b6dc0c29d60c96fac9a8e30fbc4a3e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 422459bb9831fff265e67c3887fab4288f468f0f
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156551"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335447"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -84,11 +84,11 @@ Cuando el contenido está sujeto a una directiva de retención, las personas pue
 
 Puede establecer rápidamente una directiva de retención para varias ubicaciones del entorno de Microsoft 365, como correo Exchange, sitios de SharePoint, cuentas de OneDrive y grupos Microsoft 365. No hay límites en el número de buzones o sitios que esta directiva puede incluir automáticamente. Pero si necesita ser más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluir o excluir sitios o usuarios.
 
-Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
+Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 7: Configurar la información confidencial y las directivas de lenguaje ofensivo
 
-Proteger la información confidencial y detectar y actuar en incidentes de acoso en el lugar de trabajo es una parte importante del cumplimiento de las directivas y estándares internos. [El cumplimiento](communication-compliance-feature-reference.md) de la comunicación en Microsoft 365 ayuda a minimizar estos riesgos al ayudarle a detectar, capturar y tomar rápidamente acciones de corrección para el correo electrónico y Microsoft Teams comunicaciones. Entre ellas se incluyen comunicaciones inapropiadas que contienen palabras profanas, amenazas y hostigamiento y comunicaciones que comparten información confidencial dentro y fuera de su organización.
+Proteger la información confidencial y detectar y actuar en incidentes de acoso en el lugar de trabajo es una parte importante del cumplimiento de las directivas y estándares internos. [El cumplimiento](communication-compliance.md) de la comunicación en Microsoft 365 ayuda a minimizar estos riesgos al ayudarle a detectar, capturar y tomar rápidamente acciones de corrección para el correo electrónico y Microsoft Teams comunicaciones. Entre ellas se incluyen comunicaciones inapropiadas que contienen palabras profanas, amenazas y hostigamiento y comunicaciones que comparten información confidencial dentro y fuera de su organización.
 
 Una plantilla de  directiva contra acoso y lenguaje ofensivo predefinida permite examinar las comunicaciones internas y externas en busca de coincidencias de directivas para que puedan ser examinadas por revisores designados. Los revisores pueden investigar el correo electrónico escaneado, Microsoft Teams, Yammer o comunicaciones de terceros en su organización y realizar las acciones de corrección adecuadas para asegurarse de que cumplen con los estándares de su organización.
 
@@ -124,7 +124,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener instrucciones paso a paso sobre cómo usar el explorador de actividades, vea [Introducción al explorador de actividades](data-classification-activity-explorer.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento de su organización, tenga en cuenta las siguientes soluciones de cumplimiento en Microsoft 365 para ayudarle a proteger la información confidencial y detectar y actuar en riesgos adicionales de insider.
 

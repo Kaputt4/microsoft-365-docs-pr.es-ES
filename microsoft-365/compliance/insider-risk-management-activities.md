@@ -3,7 +3,7 @@ title: Investigar actividades de administración de riesgos de insider
 description: Obtenga información sobre cómo investigar las actividades de administración de riesgos de insider en Microsoft 365
 keywords: Microsoft 365, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d97ddce798a043f2f73bf3f6bf62fdb890fdfee1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f52b9391940204e53af03aaee3d5776da67b219
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190814"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334547"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigar actividades de administración de riesgos de insider
 

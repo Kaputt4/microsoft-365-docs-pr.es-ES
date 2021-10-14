@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del Administrador de cumplimiento para ayudarle a lo largo de su recorrido de comprensión, configuración y uso del Administrador de cumplimiento.
-ms.openlocfilehash: d70167341082c851ee25d94c3ee5b827d6e1492f
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 40453034c169c5969694425bea25f6f6b3ec4f84
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223460"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335747"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 

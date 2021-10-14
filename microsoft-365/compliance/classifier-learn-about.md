@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que se puede entrenar para reconocer varios tipos de contenido para la aplicación de directivas o de la formación, ya que le proporciona ejemplos positivos y negativos que buscar.
-ms.openlocfilehash: b218fea598049e8a3b621b4b6711550227e3cbd4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91944d4d0d958c71232e2c9ea461eab9bf21c0cc
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204472"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335871"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -105,9 +105,6 @@ Microsoft 365 viene con cinco clasificadores previamente formados:
 - **Amenaza:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad
 - **Discriminación:** detecta un lenguaje discriminatorio explícito y es especialmente sensible al lenguaje discriminatorio frente a las comunidades afroestadounides/negras en comparación con otras comunidades.
 
-> [!IMPORTANT]
-> El clasificador de discriminación solo está disponible como versión preliminar pública para clientes cuyas Microsoft 365 inquilinos se encuentran en centros de datos de Norteamérica. Para ver dónde se encuentra Microsoft 365 inquilino, abra el Centro de administración de Microsoft 365 y vaya **a** Configuración configuración de la organización Ficha Perfil de organización Ubicación de  >    >  [](https://go.microsoft.com/fwlink/p/?linkid=2067339)  >  **datos**. 
-
 Aparecen en la vista **clasificadores Centro de cumplimiento de Microsoft 365** clasificación de datos  >    >  **trainable con** el estado de `Ready to use` .
 
 ![clasificadores-clasificadores previamente formados.](../media/classifiers-ready-to-use-classifiers.png)
@@ -142,7 +139,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores personalizados 
 
 ![flujo de trabajo de reciclaje de clasificadores.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

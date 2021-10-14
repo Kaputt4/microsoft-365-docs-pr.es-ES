@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a59954ba862122b27f2c2fb4bc87f1cff73eacc8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5333b198413c25aed4b894721803c5fa4772b439
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155063"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334695"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de comunicaciones en Microsoft 365
 
@@ -35,9 +35,8 @@ Siga estos pasos para configurar el cumplimiento de las comunicaciones para su o
 
 1. Obtenga información [sobre el cumplimiento de la](communication-compliance.md) comunicación en Microsoft 365
 2. Planear el cumplimiento [de las comunicaciones y](communication-compliance-plan.md) comprobar las [licencias](communication-compliance-configure.md#subscriptions-and-licensing)
-3. Revisar [las funcionalidades de solución y referencia de características](communication-compliance-feature-reference.md)
-4. Configurar [requisitos previos](communication-compliance-configure.md#step-2-required-enable-the-audit-log) [y permisos](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
-5. Crear y configurar directivas [de cumplimiento de comunicaciones](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
+3. Configurar [requisitos previos](communication-compliance-configure.md#step-2-required-enable-the-audit-log) [y permisos](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+4. Crear y configurar directivas [de cumplimiento de comunicaciones](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
 
 ## <a name="more-information-about-communication-compliance"></a>Más información sobre el cumplimiento de la comunicación
 

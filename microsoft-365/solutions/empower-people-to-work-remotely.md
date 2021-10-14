@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: trabajar desde casa, trabajo desde casa, híbrido, trabajador remoto, trabajo híbrido, empleados remotos, conectividad híbrida, acceso remoto, trabajo remoto, teletrabajo, teletrabajar, trabajo móvil, trabajo remoto, empleo remoto, trabajar desde cualquier lugar, lugar de trabajo flexible
 description: Desplazarse por las capas de la infraestructura para que los trabajadores híbridos puedan acceder de forma segura a los recursos locales y de Microsoft 365..
-ms.openlocfilehash: b93469fe1cb60dd1f0b86d34e23c49faa5c9e373
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae6d9ab0017ed4d4a33fc57be74ac0ea4aa955a4
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205036"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335955"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configure su infraestructura para el trabajo híbrido con Microsoft 365
 
@@ -91,7 +91,7 @@ Para habilitar las funcionalidades de Microsoft 365 para sus trabajadores híbri
 |Proxy de aplicación de Azure AD|Da acceso remoto seguro para aplicaciones basadas en web que se encuentren en servidores de intranet.|Se requiere una suscripción de pago de Azure aparte.|
 |VPN de Azure de punto a sitio|Crea una conexión segura desde el dispositivo de un trabajador remoto a la intranet a través de una red virtual de Azure.|Se requiere una suscripción de pago de Azure aparte.|
 |Windows Virtual Desktop|Apoya a los trabajadores remotos que solo pueden usar sus propios dispositivos personales no administrados ofreciéndoles escritorios virtuales que se ejecutan en Azure.|Se requiere una suscripción de pago de Azure aparte.|
-|Servicios de Escritorio remoto (RDS)|Permite que los empleados se conecten a equipos con Windows en la intranet.|Microsoft 365 E3 o E5|
+|Escritorio remoto |Permite que los empleados se conecten a equipos con Windows en la intranet.|Microsoft 365 E3 o E5|
 |Puerta de enlace de Servicios de Escritorio remoto|Cifra las comunicaciones y evita que los hosts de RDS se expongan directamente a Internet.|Requiere licencias aparte de Windows Server.|
 |Microsoft Intune|Administra dispositivos y aplicaciones.|Microsoft 365 E3 o E5|
 |Configuration Manager|Administra instalaciones, actualizaciones y configuraciones de software en sus dispositivos.|Se requieren licencias aparte de Configuration Manager.|

@@ -3,7 +3,7 @@ title: Planificar la administración de riesgos internos
 description: Obtenga información sobre cómo planear el uso de directivas de administración de riesgos de insider en su organización.
 keywords: Microsoft 365, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e9e946643decf18da4324a8204f2170c96e9edad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a915130fe080622d7373e6a0d550606f623dd9b
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206138"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335615"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 

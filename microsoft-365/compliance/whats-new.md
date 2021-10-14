@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cbe868ea7f5418b9013719caa9858317d1fd6ba3
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 94f5f0be4a0498107217cfc0b88e21c64d8acb3f
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240349"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60336039"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -52,7 +52,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 - [Activar o desactivar la auditoría se](turn-audit-log-search-on-or-off.md) agregó una nueva sección sobre cómo se auditan los cambios en el estado de auditoría de una organización; esto significa que los registros de auditoría se registran cuando la auditoría está activada o desactivada; puede buscar en el registro Exchange de auditoría de administración para estos registros de auditoría
 
-### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
 
 - [Cumplimiento de la comunicación con la guía de soluciones SIEM](communication-compliance-siem.md) para la integración de cumplimiento de comunicaciones con soluciones SIEM)
 
@@ -106,8 +106,8 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 ### <a name="app-governance"></a>Gobierno de aplicaciones
 - [Entradas expandida para información de alertas](app-governance-anomaly-detection-alerts.md#collection-alerts). Se agregaron nuevas entradas para describir información adicional sobre alertas ahora disponible en el gobierno de la aplicación.
 
-### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
-- [La referencia de característica de cumplimiento de](communication-compliance-feature-reference.md) comunicación agregó nueva compatibilidad con características de vista previa para el examen de datos adjuntos modernos en Teams chats y canales privados.
+### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+- [Los canales de cumplimiento](communication-compliance-channels.md) de comunicación agregaron nueva compatibilidad con características de vista previa para el examen de datos adjuntos modernos en Teams chats y canales privados.
 
 ### <a name="compliance--service-assurance"></a>Garantía de & cumplimiento
 
@@ -115,7 +115,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
   - Arquitectura
   - Registro de auditoría
   - Cifrado y administración de claves
-  - Administración de identidad y acceso
+  - Administración de acceso e identidad  
   - Microsoft 365 de acceso
   - Seguridad de red
   - Privacidad
@@ -256,7 +256,7 @@ Se agregaron las páginas siguientes:
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-- En versión preliminar, ahora hay disponible una nueva configuración para el contexto **de** autenticación al configurar una etiqueta de confidencialidad [para grupos y sitios](sensitivity-labels-teams-groups-sites.md). Esta opción funciona junto con las directivas de acceso condicional de Azure AD para aplicar condiciones más estrictas cuando los usuarios acceden SharePoint sitios que tienen aplicada la etiqueta. Asegúrese de leer las [dependencias y limitaciones antes](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) de configurar esta configuración.
+- En versión preliminar, ahora hay disponible una nueva configuración para el contexto **de** autenticación al configurar una etiqueta de confidencialidad [para grupos y sitios](sensitivity-labels-teams-groups-sites.md). Esta opción funciona junto con Azure AD de acceso condicional para aplicar condiciones más estrictas cuando los usuarios acceden SharePoint sitios que tienen aplicada la etiqueta. Asegúrese de leer las [dependencias y limitaciones antes](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) de configurar esta configuración.
 - [Las directivas de etiquetado](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) automático configuradas solo para Exchange ahora admiten **etiquetas** de confidencialidad que aplican cifrado con Permitir a los usuarios asignar permisos para las opciones No reenviar o Encrypt-Only.
 - [El etiquetado obligatorio](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) ahora está disponible por lo general para todas Office aplicaciones, en todas las plataformas.
 

@@ -9,18 +9,21 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo modificar plantillas de evaluación en Microsoft Compliance Manager.
-ms.openlocfilehash: 846c3bc02105a50863afa7caca6041d9f72a5d95
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 539da4118843e8d72ead07b06a351d2245c2f6d9
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223558"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335471"
 ---
 # <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Modificar plantillas de evaluación en Microsoft Compliance Manager
 

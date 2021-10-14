@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: Crea vínculos rápidos a tu correo electrónico, documentos, aplicaciones, sitios SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones.
-ms.openlocfilehash: 18438aa97cc8956a9d38ed3a5f3851a4c8c31e96
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f0123eefb421c22108f61bd45a27b1bc50d7309
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164397"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335339"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
@@ -63,7 +63,7 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
   
 8. Seleccione **Guardar cambios** para crear el icono personalizado. 
     
-    El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **Todas** para sus usuarios y usted. 
+    El icono personalizado aparecerá en las próximas 24 horas en el iniciador de aplicaciones en la **pestaña** Todo para ti y los usuarios. 
 
     > [!NOTE]
     > Si no ve el icono personalizado que se creó en los pasos anteriores, asegúrese de que tiene un buzón de Exchange Online asignado a usted y de que ha iniciado sesión en su buzón al menos una vez. Estos pasos son necesarios para los iconos personalizados de Microsoft 365. 
@@ -80,7 +80,7 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
     
 Para eliminar un icono personalizado, en la ventana Iconos **personalizados,** seleccione el icono, seleccione **Quitar icono**  >  **Eliminar**. 
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Además de agregar iconos al iniciador de aplicaciones, puedes agregar iconos del iniciador de aplicaciones a la barra de navegación ([más información](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Para personalizar el aspecto de Microsoft 365 para que coincida con la marca de su [organización,](../setup/customize-your-organization-theme.md)vea Personalizar el Microsoft 365 tema .
 

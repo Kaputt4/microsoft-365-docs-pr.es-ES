@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: 74a9a9ad29e9d99740500d7dd249fd69cbbc6547
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb5fa0e54eadec89124c39a350b7591be82b7583
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189578"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335883"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
-[![Registrarse para la prueba gratuita de la gobernanza de aplicaciones](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+[![Registrarse para la prueba gratuita de la gobernanza de aplicaciones](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
 Para empezar a usar el complemento de gobernanza de aplicaciones para Microsoft Cloud App Security, debe realizar tres pasos:
 
@@ -37,7 +37,7 @@ Para empezar a usar el complemento de gobernanza de aplicaciones para Microsoft 
 
 Para los clientes existentes de Microsoft 365:
 
-1. Vaya a la página de registro[para obtener la evaluación gratuita](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
+1. Vaya a la página de registro[para obtener la evaluación gratuita](https://aka.ms/appgovernancetrial).
 1. Complete los pasos para agregar gobernanza de aplicaciones. El registro es sencillo, tal como se muestra en el siguiente gráfico.
 
 <!--

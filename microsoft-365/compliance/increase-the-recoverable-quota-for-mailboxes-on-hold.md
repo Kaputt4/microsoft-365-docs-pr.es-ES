@@ -16,33 +16,32 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta Elementos recuperables de un buzón en Microsoft 365.
-ms.openlocfilehash: eb729ca48ea4cca1af009e43ef0d3c420b567273
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fef1a5f77551006ed6df180185ad865c8b26b285
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200502"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335627"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
 La directiva de retención de Exchange predeterminada, denominada *Directiva de MRM* predeterminada, que se aplica automáticamente a nuevos buzones de Exchange Online contiene una etiqueta de retención denominada Elementos recuperables 14 días que se mueven al archivo. Esta etiqueta de retención mueve elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables del buzón de archivo del usuario después de que expire el período de retención de 14 días para un elemento. Para que esto suceda, el buzón de archivo del usuario debe estar habilitado. Si el buzón de archivo no está habilitado, no se realizarán acciones, lo que significa que los elementos de la carpeta Elementos recuperables de un buzón en espera no se mueven al buzón de archivo después de que expire el período de retención de 14 días. Dado que no se elimina nada de un buzón en espera, es posible que se supere la cuota de almacenamiento de la carpeta Elementos recuperables, especialmente si el buzón de archivo del usuario no está habilitado.
 
-Para ayudar a reducir la posibilidad de superar este límite, la cuota de almacenamiento de la carpeta Elementos recuperables aumenta automáticamente de 30 GB a 100 GB cuando se coloca una retención en un buzón de correo en Exchange Online. Si el buzón de archivo está habilitado, la cuota de almacenamiento de la carpeta Elementos recuperables del buzón de archivo también se incrementa de 30 GB a 100 GB. Si la característica de archivado de expansión automática en Exchange Online está habilitada, la cuota de almacenamiento para la carpeta Elementos recuperables en el archivo del usuario es de 1,5 TB.
+Para ayudar a reducir la posibilidad de superar este límite, la cuota de almacenamiento de la carpeta Elementos recuperables aumenta automáticamente de 30 GB a 100 GB cuando se coloca una retención en un buzón de correo en Exchange Online. Si el buzón de archivo está habilitado, la cuota de almacenamiento de la carpeta Elementos recuperables del buzón de archivo también se incrementa de 30 GB a 100 GB. Si la característica de archivado de expansión automática de Exchange Online está habilitada, la cuota de almacenamiento total del buzón de archivo del usuario, incluida la carpeta Elementos recuperables, es de 1,5 TB.
 
   En la tabla siguiente se resume la cuota de almacenamiento de la carpeta Elementos recuperables.
 
-|**Ubicación de la carpeta Elementos recuperables**|**Buzones que no están en suspensión**|**Buzones en suspensión**|
+| Ubicación de la carpeta Elementos recuperables | Buzones que no están en suspensión | Buzones en suspensión |
 |:-----|:-----|:-----|
-|Buzón principal  <br/> |30 GB  <br/> |100 GB  <br/> |
-|Buzón de archivo<sup>\*</sup> <br/> |1,5 TB  <br/> |1,5 TB  <br/> |
-|**Cuota de almacenamiento total de la carpeta Elementos recuperables** <br/> |1,5 TB  <br/> |1,5 TB  <br/> |
+|Buzón principal |30 GB |100 GB |
+|Buzón de archivo, incluida la carpeta Elementos recuperables <sup>\*</sup> |1,5 TB |1,5 TB |
 
 > [!NOTE]
-> <sup>\*</sup>La cuota de almacenamiento inicial para el buzón de archivo es de 100 GB para los usuarios con una Exchange Online (plan 2) archivo. Sin embargo, cuando el archivado de expansión automática está activado para buzones en espera, la cuota de almacenamiento para el buzón de archivo y la carpeta Elementos recuperables aumenta a 110 GB. Se aprovisionará espacio de almacenamiento de archivo adicional de hasta 1,5 TB cuando sea necesario. Para obtener más información sobre el archivado de expansión automática, vea [Overview of auto-expanding archiving](autoexpanding-archiving.md).
+> <sup>\*</sup>La cuota de almacenamiento inicial para el buzón de archivo es de 100 GB para los usuarios con una Exchange Online (plan 2) archivo. Sin embargo, cuando el archivado de expansión automática está activado para buzones en espera, la cuota de almacenamiento para el buzón de archivo y la carpeta Elementos recuperables aumenta a 110 GB. Se aprovisionará espacio de almacenamiento de archivo adicional (que incluye la carpeta Elementos recuperables) de hasta 1,5 TB cuando sea necesario. Para obtener más información sobre el archivado de expansión automática, vea [Overview of auto-expanding archiving](autoexpanding-archiving.md).
 
 Cuando la cuota de almacenamiento de la carpeta Elementos recuperables en el buzón principal de un buzón en suspensión está a punto de alcanzar su límite, puede hacer lo siguiente:
 
-- **Habilite el buzón de archivo y active el archivado de expansión automática.** Puede habilitar una capacidad de almacenamiento adicional para la carpeta Elementos recuperables simplemente habilitando el buzón de archivo y activando la característica de archivado de expansión automática en Exchange Online. Esto da como resultado 110 GB para la carpeta Elementos recuperables en el buzón principal y hasta 1,5 TB de capacidad de almacenamiento para la carpeta Elementos recuperables en el archivo del usuario. Vea cómo: [Habilitar buzones de archivo](enable-archive-mailboxes.md) y Habilitar el archivado de [expansión automática.](enable-autoexpanding-archiving.md)
+- **Habilite el buzón de archivo y active el archivado de expansión automática.** Puede habilitar una capacidad de almacenamiento adicional para la carpeta Elementos recuperables simplemente habilitando el buzón de archivo y activando la característica de archivado de expansión automática en Exchange Online. Esto da como resultado 110 GB para la carpeta Elementos recuperables en el buzón principal y hasta 1,5 TB de capacidad de almacenamiento combinada para el archivo y la carpeta Elementos recuperables. Para obtener más información, vea [Enable archive mailboxes](enable-archive-mailboxes.md) y [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
 
     > [!NOTE]
     > Después de habilitar el archivo para un buzón que está cerca de superar la cuota de almacenamiento de la carpeta Elementos recuperables, es posible que desee ejecutar el Asistente para carpeta administrada para activar manualmente el asistente para procesar el buzón de modo que los elementos expirados se mueven a la carpeta Elementos recuperables del buzón de archivo. Vea el [paso 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) para obtener instrucciones. Tenga en cuenta que podrían moverse otros elementos del buzón del usuario al nuevo buzón de archivo. Considere la posibilidad de decirle al usuario que esto puede ocurrir después de habilitar el buzón de archivo.
@@ -122,7 +121,6 @@ Ejecute el comando siguiente para crear una directiva de retención para buzones
 
 ```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
-
 ```
 
 Por ejemplo, el siguiente comando crea la directiva de retención y las etiquetas de retención vinculadas que se muestran en la ilustración anterior.

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 258adabaa29420ca0b713e290926048a2ed1752d
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: ad973120d2051a6a4834b1db4877c1b5ed6dc2ec
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460021"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335435"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -60,7 +60,7 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 
 3. `cd XMDEClientAnalyzer`
 
-4. `chmod +x mde_support_tool.sh"`
+4. `chmod +x mde_support_tool.sh`
 
 3. Ejecutar como uso no raíz para instalar pip y lxml necesarios qué componentes: `./mde_support_tool.sh`
 
@@ -104,7 +104,7 @@ Ayuda de sintaxis adicional:
 
   Descripción: el mismo resultado de diagnóstico que se genera al ejecutar la creación de diagnóstico de *mdatp* en [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
-  o bien
+  o
 
   [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 

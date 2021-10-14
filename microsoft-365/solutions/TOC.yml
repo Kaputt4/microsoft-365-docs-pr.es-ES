@@ -289,7 +289,7 @@
         - name: Configuraciones de acceso a dispositivos e identidades
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
         - name: Implementar Microsoft Defender para punto de conexión
-          href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+          href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Migrar desde Symantec a Microsoft Defender para punto de conexión
           href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
         - name: Migrar desde McAfee a Microsoft Defender para punto de conexión

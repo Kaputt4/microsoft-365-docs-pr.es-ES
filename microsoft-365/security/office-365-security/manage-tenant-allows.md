@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 411fc860ad59c214000936486d3c0456c732df19
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98ae7b53ce793809ae93cf32d574d979e5b7c6e5
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190322"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335567"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -32,7 +32,11 @@ ms.locfileid: "60190322"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-No se puede agregar allows directamente a la lista de inquilinos permitidos o bloqueados. Use el proceso de envío de administrador para agregar la dirección URL, el archivo y/o el remitente a la lista de inquilinos permitidos o bloqueados. Microsoft no permite que los administradores agreguen permisos directamente, pero determina lo que se bloqueó y le permite. En la mayoría de los casos, se agregan los permitidos para dar al sistema algo de tiempo y permitirlo de forma natural si se garantiza. En algunos casos, Microsoft administra la opción para usted.
+Los administradores no pueden agregar permisos directamente a la lista de inquilinos permitidos o bloqueados. En su lugar, use el proceso de envío de administrador para enviar el mensaje que se bloqueó para que la dirección URL, el archivo y los remitentes correspondientes se agregarán a la lista de inquilinos permitidos o bloqueados. En la mayoría de los casos en los que se determinó que el mensaje era un falso positivo que se bloqueó incorrectamente, los permisos se mantienen durante el tiempo necesario para dar al sistema tiempo para permitirlo de forma natural.
+
+> [!IMPORTANT]
+>
+> Dado que Microsoft administra las permite, se quitará el remitente, la dirección URL o el archivo que no sean necesarios o que se consideren como no deseados. Esto es para proteger el entorno y evitar una configuración incorrecta de las permite. En los casos en los que no esté de acuerdo, es posible que se necesite un caso de soporte técnico para ayudar a determinar por qué un mensaje aún se considera como malo.
 
 ## <a name="add-allows-using-the-submissions-portal"></a>Agregar permite usar el portal de envíos 
 
@@ -42,7 +46,7 @@ Permitir archivos, direcciones URL y remitentes en la sección Envíos de Micros
 
 2. En la **página Envíos,** compruebe que la pestaña **Enviado** para el análisis está seleccionada y, a continuación, haga clic ![ en Icono de anuncio.](../../media/m365-cc-sc-create-icon.png) **Enviar a Microsoft para su análisis**.
 
-3. Use el menú desplegable **Enviar a Microsoft para** revisión para marcar el remitente, el archivo o la dirección URL como falso positivo. 
+3. Use el menú desplegable Enviar a **Microsoft** para revisión para enviar un mensaje, ya sea agregando el identificador de mensaje de red o cargando el archivo de correo electrónico. 
 
 4. En la **sección Seleccionar un motivo para enviar a Microsoft,** seleccione No se debe haber bloqueado **(falso positivo).** 
 
@@ -57,12 +61,12 @@ Permitir archivos, direcciones URL y remitentes en la sección Envíos de Micros
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Crear entradas de permitido de remitente suplantado mediante Microsoft 365 Defender
 
-**Notas**:
-
-- Solo se _permite o_ bloquea  específicamente la combinación del usuario suplantado y la infraestructura de envío definida en el par de dominio.
-- Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia suplantación.
-- Las entradas de remitentes suplantados nunca expiran.
-- La suplantación admite permitir y bloquear. La dirección URL solo admite permitir.
+> [!NOTE]
+> 
+> - Solo se _permite o_ bloquea  específicamente la combinación del usuario suplantado y la infraestructura de envío definida en el par de dominio.
+> - Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia suplantación.
+> - Las entradas de remitentes suplantados nunca expiran.
+> - La suplantación admite permitir y bloquear. La dirección URL solo admite permitir.
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
 

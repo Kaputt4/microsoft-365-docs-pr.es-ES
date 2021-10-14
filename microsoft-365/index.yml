@@ -157,7 +157,7 @@ additionalContent:
             - text: Centro de administración de Microsoft 365
               url: admin/index.yml
             - text: Microsoft 365 Empresa Premium
-              url: admin/index.yml
+              url: business/index.yml
             - text: Microsoft 365 para empresas
               url: enterprise/index.yml
             - text: Cumplimiento de Microsoft 365
@@ -267,3 +267,6 @@ additionalContent:
         - title: Comunidad técnica
           summary: 'Únase a la comunidad técnica de Microsoft 365 para compartir experiencias, interactuar y aprender de expertos.'
           url: 'https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365'
+        - title: Contenido de la comunidad de Microsoft 365.
+          summary: Obtenga soluciones y una guía de escenarios para los usuarios de Microsoft 365 como los aportados por el profesional de TI y la comunidad de administradores.
+          url: /microsoft-365/community/

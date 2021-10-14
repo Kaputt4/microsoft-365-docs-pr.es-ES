@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear y administrar directivas para controlar los datos personales de su organización en Microsoft 365, responder a alertas y solucionar problemas.
-ms.openlocfilehash: dec7fd3692330dc267bace22451f1dc65ccd8fd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78a446851a0ce964e5685b8cfab760214cdf3536
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179024"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335979"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Crear y administrar directivas en la administración de privacidad (versión preliminar)
 
@@ -64,7 +64,7 @@ Hay dos rutas para crear directivas de administración de privacidad. La primera
 
 Para empezar inmediatamente con una directiva, seleccione uno de los tres tipos de directiva predefinidos. Para revisar los detalles sobre cualquiera de ellos, puede seleccionar Ver configuración para ver las propiedades específicas que la hacen, incluidos los tipos de datos, las ubicaciones de datos y las condiciones que desencadenan coincidencias de directiva.
 
-Al crear una directiva directamente desde una plantilla, se elegirán automáticamente muchas opciones de configuración. Esto incluye activar la directiva de forma predeterminada. Si quieres obtener una vista previa de la directiva en acción antes de activarla completamente, en la lista después de crearla, edita la directiva y alterna al modo de prueba. Para obtener más información, vea [Test your policy](#test-your-policy).
+Al crear una directiva directamente desde una plantilla, se elegirán automáticamente muchas opciones de configuración. Se iniciará en modo de prueba y, a continuación, se puede activar hasta el estado activo completo. Para obtener más información, vea [Test your policy](#test-your-policy).
 
 ### <a name="create-custom-policy"></a>Crear directiva personalizada
 

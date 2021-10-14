@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 46ba59bc1e9e2d137c254939847c5de8a68a861a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 71dfd68ce690491497e6926eb1046d1c31f41408
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153227"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335943"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -118,7 +118,7 @@ Las directivas de cumplimiento de comunicación examinan y capturan mensajes en 
 - **Skype Empresarial Online:** las directivas de cumplimiento de comunicación admiten el análisis de comunicaciones de chat y datos adjuntos [asociados en Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online).
 - **Orígenes de terceros:** puede examinar [](archiving-third-party-data.md) mensajes de orígenes de terceros en busca de datos importados en buzones de correo de su Microsoft 365 organización. El cumplimiento de la comunicación admite conexiones a varias plataformas populares, como Instant Bloomberg y otras.
 
-Para obtener más información acerca de la compatibilidad del canal de mensajería en las directivas de cumplimiento de [comunicaciones, vea tipos de comunicación admitidos.](communication-compliance-feature-reference.md#supported-communication-types)
+Para obtener más información sobre la compatibilidad del canal de mensajería en las directivas de cumplimiento de comunicaciones, vea [Detectar señales de canal con cumplimiento de comunicaciones.](communication-compliance-channels.md)
 
 ## <a name="workflow"></a>Flujo de trabajo
 

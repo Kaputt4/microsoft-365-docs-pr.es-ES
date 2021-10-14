@@ -10,17 +10,20 @@ ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: 9b3ee570b116d501ec092fd417e5b2fc1ca07251
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: dd9f2b2f673164bce7f05f7e390b13012247c362
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223445"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335991"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Obtenga información sobre las plantillas de evaluación en el Administrador de cumplimiento
 

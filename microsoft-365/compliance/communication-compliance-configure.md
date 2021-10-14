@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 171a28eceecc03239c06410191c781a4400b2ef7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9b1fd596988498a543778b097b2a8a431a200aba
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197682"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335759"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -202,7 +202,7 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
     - Elija un campo de condición limitado, normalmente un tipo de información confidencial o un diccionario de palabras clave para aplicar a la directiva.
 
     > [!NOTE]
-    > Si desea habilitar el reconocimiento óptico de caracteres [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) para examinar imágenes incrustadas o adjuntas en mensajes de texto impreso o escrito a mano que coincidan con las condiciones de directiva, seleccione **Personalizar** las condiciones y el porcentaje de directiva y habilite Extraer texto impreso o escrito a mano de las imágenes para su  >   evaluación.
+    > Si desea habilitar el reconocimiento óptico de caracteres [(OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) para examinar imágenes incrustadas o adjuntas en mensajes de texto impreso o escrito a mano que coincidan con las condiciones de directiva, seleccione **Personalizar** las condiciones y el porcentaje de directiva y habilite Extraer texto impreso o escrito a mano de las imágenes para su  >   evaluación.
 
     Si elige usar el Asistente para directivas para crear una directiva personalizada, hará lo siguiente:
 
@@ -216,13 +216,13 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 
     - Elija la dirección de comunicación que desea supervisar, incluidas las comunicaciones entrantes, salientes o internas.
 
-    - Definir las condiciones de la directiva de cumplimiento de [comunicaciones](communication-compliance-feature-reference.md#ConditionalSettings). Puede elegir entre la dirección del mensaje, la palabra clave, los tipos de archivo y las condiciones de coincidencia de tamaño.
+    - Definir las condiciones de la directiva de cumplimiento de [comunicaciones](communication-compliance-policies.md#ConditionalSettings). Puede elegir entre la dirección del mensaje, la palabra clave, los tipos de archivo y las condiciones de coincidencia de tamaño.
 
     - Elija si desea incluir tipos de información confidencial. Este paso es donde puede seleccionar tipos de información confidencial predeterminados y personalizados. Elija entre tipos de información confidencial personalizados existentes o diccionarios de palabras clave personalizadas en el Asistente para directivas de cumplimiento de comunicaciones. Puede crear estos elementos antes de ejecutar el asistente si es necesario. También puede crear nuevos tipos de información confidencial desde el Asistente para directivas de cumplimiento de comunicaciones.
 
     - Elija si desea habilitar clasificadores. Los clasificadores pueden detectar el idioma inapropiado y las imágenes enviadas o recibidas en el cuerpo de los mensajes de correo electrónico u otros tipos de texto. Puede elegir los siguientes clasificadores integrados: *Threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images* y *Gory images*.
 
-    - Habilite el reconocimiento óptico de caracteres [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) para examinar imágenes incrustadas o adjuntas en mensajes en busca de texto impreso o escrito a mano que coincida con las condiciones de la directiva. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con texto, palabras clave, clasificadores o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen óptico de reconocimiento de caracteres.
+    - Habilite el reconocimiento óptico de caracteres [(OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) para examinar imágenes incrustadas o adjuntas en mensajes en busca de texto impreso o escrito a mano que coincida con las condiciones de la directiva. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con texto, palabras clave, clasificadores o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen óptico de reconocimiento de caracteres.
 
     - Definir el porcentaje de comunicaciones que se revisan.
 

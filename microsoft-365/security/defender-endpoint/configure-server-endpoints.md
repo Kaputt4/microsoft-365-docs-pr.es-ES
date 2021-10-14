@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31f8d4343f425369f842122c3dfd483edeefe3d9
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: b180cedbad90082fa548e0dbd41af7313bc9e5b8
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239904"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335783"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -242,23 +242,6 @@ Compruebe que Antivirus de Microsoft Defender y Microsoft Defender para Endpoint
 
 Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
 
-## <a name="offboard-windows-servers"></a>Servidores de Windows offboard
-
-Puede Windows Server 2012 Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition en el mismo método disponible para dispositivos cliente Windows 10.
-
-- [Offboarding con directiva de grupo](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [Dispositivos offboard con Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [Offboard y supervisar dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
-- [Dispositivos offboard con un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
-
-Para otras Windows de servidor, tiene dos opciones para salir Windows servidores del servicio:
-
-- Desinstalar el agente mma
-- Quitar la configuración del área de trabajo de Defender for Endpoint
-
->[!NOTE]
->*Estas instrucciones de offboarding para otras versiones de servidor de Windows también se aplican si está ejecutando el anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución no fiada se encuentran en [Escenarios](/microsoft-365/security/defender-endpoint/server-migration)de migración de servidor en Microsoft Defender para endpoint .
-
 > [!NOTE]
 > La Antivirus de Microsoft Defender no es necesaria, pero se recomienda. Si otro producto de proveedor de antivirus es la solución principal de protección de puntos de conexión, puede ejecutar Defender Antivirus en modo pasivo. Solo puedes confirmar que el modo pasivo está activo después de comprobar que se está ejecutando el sensor de Microsoft Defender para endpoints (SENSE). 
 
@@ -283,8 +266,26 @@ Para otras Windows de servidor, tiene dos opciones para salir Windows servidores
 Siga los pasos descritos en Ejecutar una prueba de detección en un dispositivo recién incorporado para comprobar que el servidor está informando [a](run-detection-test.md) Defender para el servicio de extremo.
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 Después de incorporar dispositivos correctamente al servicio, deberá configurar los componentes individuales de Microsoft Defender para endpoint. Siga el [orden de adopción](prepare-deployment.md#adoption-order) para guiarse en la habilitación de los distintos componentes.
+
+
+## <a name="offboard-windows-servers"></a>Servidores de Windows offboard
+
+Puede Windows Server 2012 Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition en el mismo método disponible para dispositivos cliente Windows 10.
+
+- [Offboarding con directiva de grupo](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Dispositivos offboard con Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [Offboard y supervisar dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Dispositivos offboard con un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
+Para otras Windows de servidor, tiene dos opciones para salir Windows servidores del servicio:
+
+- Desinstalar el agente mma
+- Quitar la configuración del área de trabajo de Defender for Endpoint
+
+>[!NOTE]
+>*Estas instrucciones de offboarding para otras versiones de servidor de Windows también se aplican si está ejecutando el anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución no fiada se encuentran en [Escenarios](/microsoft-365/security/defender-endpoint/server-migration)de migración de servidor en Microsoft Defender para endpoint .
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporar versiones anteriores de Windows](onboard-downlevel.md)

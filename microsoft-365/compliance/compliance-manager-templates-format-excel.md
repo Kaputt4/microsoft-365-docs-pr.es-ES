@@ -9,18 +9,21 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo trabajar con los Excel para plantillas de evaluación en Microsoft Compliance Manager.
-ms.openlocfilehash: fc7e54089bc0d2445c45c785ba426cce95651351
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 899dd42401bb4c7acceb1db5bfe5816b383ae16b
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223561"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335663"
 ---
 # <a name="format-assessment-template-data-in-excel-for-microsoft-compliance-manager"></a>Dar formato a los datos de plantilla de evaluación Excel microsoft Compliance Manager
 

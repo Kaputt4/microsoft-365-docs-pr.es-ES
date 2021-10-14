@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo realizar la implementación y las pruebas en los controles en El Administrador de cumplimiento de Microsoft. Asignar informes de trabajo, almacenar documentación e exportar.
-ms.openlocfilehash: 6b8c85b4d22fdd8161300d250d7322f68959f808
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0f1faa6ede05358eeafa8740fcf3cd79613b39c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156539"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60336003"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Asignar y completar acciones de mejora en el Administrador de cumplimiento
 

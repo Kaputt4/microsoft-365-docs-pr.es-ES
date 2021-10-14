@@ -1,7 +1,7 @@
 ---
-title: Configurar Microsoft Defender para señales de riesgo de extremo mediante la directiva de protección de aplicaciones (MAM)
-description: Describe cómo configurar Microsoft Defender para señales de riesgo de extremo mediante la directiva de protección de aplicaciones
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mde, android, configuration
+title: Configurar Microsoft Defender para señales de riesgo de extremo mediante directivas de protección de aplicaciones (MAM)
+description: Describe cómo configurar Microsoft Defender para señales de riesgo de extremo con directivas de App Protection
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mde, android, configuration, MAM, App Protectection Policies, Managed app
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9e6ffb2f3df7df707619189e0fb3a29c470ef20
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: b497d93b18136bbc64f296c8277df1d483ec1541
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217323"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335591"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policy-mam"></a>Configurar Microsoft Defender para señales de riesgo de extremo mediante la directiva de protección de aplicaciones (MAM)
+# <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Configurar Microsoft Defender para señales de riesgo de extremo mediante directivas de protección de aplicaciones (MAM)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "60217323"
 
 
 
-Microsoft Defender para Endpoint Android, que ya protege a los usuarios empresariales en escenarios de administración de dispositivos móviles (MDM), ahora amplía la compatibilidad con la Administración de aplicaciones móviles (MAM). Esta funcionalidad le permite administrar y proteger los datos de su organización dentro de una aplicación.
+Microsoft Defender para Endpoint en Android, que ya protege a los usuarios empresariales en escenarios de administración de dispositivos móviles (MDM), ahora amplía la compatibilidad con Mobile App Management (MAM), para dispositivos que no están inscritos con la administración de dispositivos móviles (MDM) de Intune. También amplía esta compatibilidad a los clientes que usan otras soluciones de administración de movilidad empresarial, mientras que sigue usando Intune para la administración de aplicaciones móviles (MAM). Esta funcionalidad le permite administrar y proteger los datos de su organización dentro de una aplicación.
 
-Las directivas de Protección de aplicaciones de Intune aprovechan la información de amenazas de Microsoft Defender para Endpoint Android para proteger estas aplicaciones. Las directivas de protección de aplicaciones (APP) son reglas que garantizan que los datos de una organización permanecen seguros o contenidos en una aplicación administrada. Una aplicación administrada tiene directivas de protección de aplicaciones aplicadas a ella y Intune puede administrarla.  
+Las directivas de Protección de aplicaciones de Intune aprovechan la información de las amenazas de Microsoft Defender para Endpoint en Android para proteger estas aplicaciones. Las directivas de protección de aplicaciones (APP) son reglas que garantizan que los datos de una organización permanecen seguros o contenidos en una aplicación administrada. Una aplicación administrada tiene directivas de protección de aplicaciones aplicadas a ella y Intune puede administrarla.  
 
-Microsoft Defender para endpoint (Mobile) admite ambas configuraciones de MAM
+Microsoft Defender para Endpoint en Android admite ambas configuraciones de MAM
 - **MDM y MAM** de Intune: los administradores de TI solo pueden administrar aplicaciones con directivas de protección de aplicaciones en dispositivos inscritos con la administración de dispositivos móviles (MDM) de Intune.
 - **MAM sin inscripción de dispositivos:** MAM sin inscripción de dispositivos, [](/mem/intune/app/app-protection-policy) o MAM-WE, permite a los administradores de TI administrar aplicaciones mediante directivas de protección de aplicaciones en dispositivos que no están inscritos con MDM de Intune. Esto significa que Intune puede administrar aplicaciones en dispositivos inscritos con proveedores de EMM de terceros. Para administrar las aplicaciones que usan en ambas configuraciones anteriores, los clientes deben usar Intune en el [centro de administración Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431)
 
@@ -63,13 +63,13 @@ Los usuarios finales también deben tomar medidas para instalar Microsoft Defend
 
   ![Imagen de Defender for Endpoint-Intune connector en Intune](images/validate-intune-connector.png)
 
-- **Habilitar Microsoft Defender para el conector de punto de conexión (móvil) para la directiva de protección de aplicaciones (APP)**
+- **Habilitar Microsoft Defender para endpoint en Android Connector para la directiva de protección de aplicaciones (APP)**
   
   Configure el conector en Intune Microsoft Endpoint Manager directivas de protección de aplicaciones:
 
   a. Vaya a **Administración de inquilinos > conectores y tokens > Microsoft Defender para endpoint**.
 
-  b. Activa las alternancias de la directiva de protección de aplicaciones para Android e iOS (como se ve en la siguiente captura de pantalla).
+  b. Activa la alternancia de la directiva de protección de aplicaciones para Android (como se ve en la siguiente captura de pantalla).
 
   c. Seleccione **Guardar**.
 
@@ -98,7 +98,7 @@ Dado que la administración de aplicaciones móviles no requiere administración
     ![Imagen Outlook como aplicación administrada](images/managed-app.png)
 
  3. Establezca los requisitos de seguridad de inicio de sesión para la directiva de protección. <br>
-Selecciona **Establecer > nivel máximo** de amenaza de dispositivo permitido en Condiciones del **dispositivo** y escribe un valor. A **continuación, seleccione Acción: "Bloquear acceso".** Microsoft Defender para punto de conexión (móvil) comparte este nivel de amenaza de dispositivo.
+Selecciona **Establecer > nivel máximo** de amenaza de dispositivo permitido en Condiciones del **dispositivo** y escribe un valor. A **continuación, seleccione Acción: "Bloquear acceso".** Microsoft Defender para Endpoint en Android comparte este nivel de amenaza de dispositivo.
 
     ![Imagen del inicio condicional](images/conditional-launch.png)
 
@@ -111,7 +111,7 @@ Selecciona **Establecer > nivel máximo** de amenaza de dispositivo permitido en
 
 ## <a name="end-user-prerequisites"></a>Requisitos previos del usuario final
 - La aplicación de agente debe instalarse
-    - Android: Portal de empresa de Intune
+    - Portal de empresa de Intune
     
 - Los usuarios tienen las licencias necesarias para la aplicación administrada y tienen instalada la aplicación
 
@@ -119,7 +119,7 @@ Selecciona **Establecer > nivel máximo** de amenaza de dispositivo permitido en
 
 1. Inicie sesión en una aplicación administrada, por ejemplo, Outlook. El dispositivo está registrado y la directiva de protección de aplicaciones se sincroniza con el dispositivo. La directiva de protección de aplicaciones reconoce el estado de mantenimiento del dispositivo.  
 
-2. Seleccione **Continuar**. Se presenta una pantalla que recomienda descargar y configurar la aplicación De Microsoft Defender para Endpoint Android.
+2. Seleccione **Continuar**. Se presenta una pantalla que recomienda descargar y configurar Microsoft Defender para endpoint en la aplicación Android.
 
 3. Seleccione **Descargar**. Se te redirigirá a la tienda de aplicaciones (Google Play). 
 

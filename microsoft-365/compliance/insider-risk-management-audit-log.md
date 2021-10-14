@@ -3,7 +3,7 @@ title: Registro de auditoría de administración de riesgos de Insider
 description: Obtenga información sobre el registro de auditoría de administración de riesgos de insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9355c3e41025ae8002bc9d40fc4ff06333c72e94
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3024c0861f0530c59fb5f620959a2b28f3078ea0
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179084"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334655"
 ---
 # <a name="insider-risk-management-audit-log"></a>Registro de auditoría de administración de riesgos de Insider
 

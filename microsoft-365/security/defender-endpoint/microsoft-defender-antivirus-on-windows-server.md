@@ -14,14 +14,14 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 08/05/2021
+ms.date: 10/13/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2b2545205af25a07fc8addab4818e603c18ff846
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 8f5ae71ecc602a7bc588ff62036be20b883087db
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240073"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335483"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -33,8 +33,8 @@ ms.locfileid: "60240073"
 
 Antivirus de Microsoft Defender está disponible en las siguientes ediciones o versiones de Windows Server:
 
-- Windows Server 2019
 - Windows Server 2022
+- Windows Server 2019
 - Windows Servidor, versión 1803 o posterior
 - Windows Server 2016
 - Windows Server 2012 R2 (requiere Microsoft Defender para endpoint)
@@ -65,8 +65,8 @@ Si la GUI no está instalada en el servidor y desea instalarla, el Asistente par
 
 
 
->[!NOTE]
->Esta opción no está disponible para Windows Server 2012 R2. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+> [!NOTE]
+> Esta opción no está disponible para Windows Server 2012 R2. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
 
 ### <a name="turn-on-the-gui-using-the-add-roles-and-features-wizard"></a>Activar la GUI mediante el Asistente para agregar roles y características
 
@@ -138,11 +138,11 @@ De forma predeterminada, Windows Update no descarga e instala actualizaciones au
 
 <br/><br/>
 
-|Método|Descripción|
+| Método | Descripción |
 |---|---|
-|**Windows actualización en** el Panel de control|**Instalar actualizaciones automáticamente da como** resultado que todas las actualizaciones se instalen automáticamente, incluidas Windows Defender de inteligencia de seguridad. <p> **Descargue las actualizaciones, pero permítanme** elegir si instalarlas permite a Windows Defender descargar e instalar actualizaciones de inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente.|
-|**Directiva de grupo**|Puede configurar y administrar Windows Update mediante la configuración disponible en la directiva de grupo, en la siguiente ruta de acceso: **Plantillas administrativas\componentes Windows\Windows Actualizar\Configurar** actualizaciones automáticas|
-|La **clave del Registro AUOptions**|Los dos valores siguientes permiten a Windows Update descargar e instalar automáticamente las actualizaciones de inteligencia de seguridad: <p> **4**  -  **Instalar actualizaciones automáticamente**. Este valor da como resultado que todas las actualizaciones se instalen automáticamente, incluidas Windows Defender de inteligencia de seguridad. <p> **3**  -  **Descargue las actualizaciones, pero permítanme elegir si desea instalarlas.** Este valor permite Windows Defender descargar e instalar actualizaciones de inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente.|
+| **Windows actualización en** el Panel de control | **Instalar actualizaciones automáticamente da como** resultado que todas las actualizaciones se instalen automáticamente, incluidas Windows Defender de inteligencia de seguridad. <br/><br/> **Descargue las actualizaciones, pero permítanme** elegir si instalarlas permite a Windows Defender descargar e instalar actualizaciones de inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente. |
+| **Directiva de grupo** | Puede configurar y administrar Windows Update mediante la configuración disponible en la directiva de grupo, en la siguiente ruta de acceso: **Plantillas administrativas\componentes Windows\Windows Actualizar\Configurar** actualizaciones automáticas |
+| La **clave del Registro AUOptions** | Los dos valores siguientes permiten a Windows Update descargar e instalar automáticamente las actualizaciones de inteligencia de seguridad: <br/><br/> **4**  -  **Instalar actualizaciones automáticamente**. Este valor da como resultado que todas las actualizaciones se instalen automáticamente, incluidas Windows Defender de inteligencia de seguridad. <br/><br/> **3**  -  **Descargue las actualizaciones, pero permítanme elegir si desea instalarlas.** Este valor permite Windows Defender descargar e instalar actualizaciones de inteligencia de seguridad automáticamente, pero otras actualizaciones no se instalan automáticamente. |
 
 Para garantizar que se mantiene la protección contra malware, se recomienda habilitar los siguientes servicios:
 
@@ -151,17 +151,15 @@ Para garantizar que se mantiene la protección contra malware, se recomienda hab
 
 En la tabla siguiente se enumeran los servicios Antivirus de Microsoft Defender y los servicios dependientes.
 
-<br>
+<br/><br/>
 
-****
 
-|Nombre del servicio|Ubicación del archivo|Descripción|
+| Nombre del servicio | Ubicación del archivo | Descripción |
 |---|---|---|
-|Windows Defender Servicio (WinDefend)|`C:\Program Files\Windows Defender\MsMpEng.exe`|Este es el servicio Antivirus de Microsoft Defender principal que debe ejecutarse en todo momento.|
-|Informe de errores de Windows Servicio (Wersvc)|`C:\WINDOWS\System32\svchost.exe -k WerSvcGroup`|Este servicio devuelve informes de error a Microsoft.|
-|Windows Defender Firewall (MpsSvc)|`C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork`|Se recomienda dejar el servicio Windows Defender firewall habilitado.|
-|Windows Actualización (Wuauserv)|`C:\WINDOWS\system32\svchost.exe -k netsvcs`|Windows La actualización es necesaria para obtener actualizaciones de inteligencia de seguridad y actualizaciones del motor antimalware|
-|
+| Windows Defender Servicio (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Este es el servicio Antivirus de Microsoft Defender principal que debe ejecutarse en todo momento.|
+| Informe de errores de Windows Servicio (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | Este servicio devuelve informes de error a Microsoft. |
+| Windows Defender Firewall (MpsSvc) | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Se recomienda dejar el servicio Windows Defender firewall habilitado. |
+| Windows Actualización (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows La actualización es necesaria para obtener actualizaciones de inteligencia de seguridad y actualizaciones del motor antimalware |
 
 ## <a name="submit-samples"></a>Enviar ejemplos
 
@@ -176,20 +174,17 @@ El envío de ejemplo permite a Microsoft recopilar muestras de software potencia
 
 Para habilitar el envío automático de ejemplo, inicie una consola Windows PowerShell como administrador y establezca los datos de valor **SubmitSamplesConsent** de acuerdo con una de las opciones siguientes:
 
-<br>
-
-****
+<br/><br/>
 
 |Configuración|Descripción|
 |---|---|
-|**0**  -  **Preguntar siempre**|El Antivirus de Microsoft Defender solicita que confirme el envío de todos los archivos necesarios. Esta es la configuración predeterminada para Antivirus de Microsoft Defender, pero no se recomienda para instalaciones en Windows Server 2016 o 2019, o Windows Server 2022 sin una GUI.|
-|**1**   -  **Enviar muestras seguras automáticamente**|El Antivirus de Microsoft Defender envía todos los archivos marcados como "seguros" y solicita el resto de los archivos.|
-|**2**  -  **Nunca enviar**|El Antivirus de Microsoft Defender no solicita y no envía ningún archivo.|
-|**3**  -  **Enviar todas las muestras automáticamente**|El Antivirus de Microsoft Defender envía todos los archivos sin necesidad de confirmación.|
-|
+| **0**  -  **Preguntar siempre** | El Antivirus de Microsoft Defender solicita que confirme el envío de todos los archivos necesarios. Esta es la configuración predeterminada para Antivirus de Microsoft Defender, pero no se recomienda para instalaciones en Windows Server 2016 o 2019, o Windows Server 2022 sin una GUI. |
+| **1**   -  **Enviar muestras seguras automáticamente** | El Antivirus de Microsoft Defender envía todos los archivos marcados como "seguros" y solicita el resto de los archivos. |
+| **2**  -  **Nunca enviar** | El Antivirus de Microsoft Defender no solicita y no envía ningún archivo. |
+| **3**  -  **Enviar todas las muestras automáticamente** | El Antivirus de Microsoft Defender envía todos los archivos sin necesidad de confirmación. |
 
->[!NOTE]
->Esta opción no está disponible para Windows Server 2012 R2. 
+> [!NOTE]
+> Esta opción no está disponible para Windows Server 2012 R2. 
 
 
 ## <a name="configure-automatic-exclusions"></a>Configurar exclusiones automáticas
@@ -213,10 +208,6 @@ Puede establecer el Antivirus de Microsoft Defender en modo pasivo estableciendo
 - Tipo: `REG_DWORD`
 - Valor: `1`
 
-
-
-
-
 ### <a name="disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard"></a>Deshabilitar Antivirus de Microsoft Defender mediante el Asistente para quitar roles y características
 
 1. Vea [Instalar o desinstalar roles, servicios de roles o características](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard)y use el Asistente para quitar roles y **características.**
@@ -239,21 +230,17 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows Server 2012 R2 y Windows Server 2016. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
 
+<br/><br/>
 
-<br>
-
-****
-
-|Procedure|Descripción|
+| Procedure | Descripción |
 |---|---|
-|Deshabilitar Antivirus de Microsoft Defender con la directiva de grupo|En el Editor de directivas de grupo local, vaya **a Windows Defender** y, a continuación, seleccione **Desactivar Antivirus de Windows Defender**.|
-|Deshabilitar Antivirus de Microsoft Defender con una clave del Registro|Para usar la clave del Registro [DisableAntiSpyware,](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) vaya `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` a y establezca o cree una entrada DWORD denominada `DisableAntiSpyware` . Establezca su valor en (que establece el valor de la `1` clave del Registro en *true*).|
-|Deshabilitar Antivirus de Microsoft Defender con PowerShell|Use el siguiente cmdlet de PowerShell: `Set-MpPreference -DisableRealtimeMonitoring $true`|
-|Desinstalar Antivirus de Microsoft Defender con PowerShell|Use el siguiente cmdlet de PowerShell: `Uninstall-WindowsFeature -Name Windows-Defender`|
-|
+| Deshabilitar Antivirus de Microsoft Defender con la directiva de grupo | En el Editor de directivas de grupo local, vaya **a Windows Defender** y, a continuación, seleccione **Desactivar Antivirus de Windows Defender**. |
+| Deshabilitar Antivirus de Microsoft Defender con una clave del Registro | Para usar la clave del Registro [DisableAntiSpyware,](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) vaya `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` a y establezca o cree una entrada DWORD denominada `DisableAntiSpyware` . Establezca su valor en (que establece el valor de la `1` clave del Registro en *true*). |
+| Deshabilitar Antivirus de Microsoft Defender con PowerShell | Use el siguiente cmdlet de PowerShell: `Set-MpPreference -DisableRealtimeMonitoring $true` |
+| Desinstalar Antivirus de Microsoft Defender con PowerShell | Use el siguiente cmdlet de PowerShell: `Uninstall-WindowsFeature -Name Windows-Defender` |
 
 
-## <a name="see-also"></a>Consulte también
-- [Instalar Antivirus de Microsoft Defender en Windows Server]()
-- [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-windows.md)
+## <a name="see-also"></a>Vea también
+
+- [Antivirus de Microsoft Defender en Windows](microsoft-defender-antivirus-windows.md)
 - [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)
