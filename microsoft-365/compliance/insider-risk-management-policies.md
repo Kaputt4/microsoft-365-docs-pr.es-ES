@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9bc29db2ffd4914093b7045241395732f49a8b16
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 3548f23964f50740ce8c3adb96d82a2f0cbafddd
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335651"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364608"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -127,13 +127,13 @@ La siguiente tabla enumera los eventos desencadenantes y los requisitos previos 
 
 | **Plantilla de directiva** | **Desencadenar eventos para directivas** | **Requisitos previos** |
 | :------------------ | :--------------------------------- | :---------------- |
-| Robo de datos por parte de los usuarios que abandonan la organización | Indicador de la fecha de renuncia o finalización del conector de recursos humanos | (opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia o integración de Azure Active Directory habilitada |
-| Filtraciones de datos generales | Actividad de la directiva de filtración de datos que crea una alerta de gravedad alta | (opcional) Directiva DLP configurada para alertas de alta gravedad o evento desencadenante de filtración de datos incorporado |
+| Robo de datos por parte de los usuarios que abandonan la organización | Indicador de fecha de dimisión o finalización del conector de recursos humanos o Azure Active Directory de la cuenta | (opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia. |
+| Filtraciones de datos generales | La actividad de la directiva de filtración de datos que crea una alerta de *Alta gravedad* o desencadena un evento de filtración incorporado | (opcional) Directiva DLP configurada para alertas de alta gravedad |
 | Filtraciones de datos por parte de usuarios prioritarios | La actividad de la directiva de filtración de datos que crea una alerta de *Alta gravedad* o desencadena un evento de filtración incorporado | (opcional) Directiva DLP configurada para alertas de alta gravedad <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno |
 | Filtraciones de datos por parte de usuarios inconformes | Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos | Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad |
-| Infracciones generales de la directiva de seguridad | Evasión defensiva de los controles de seguridad o del software no deseado detectado por ATP de Microsoft Defender | Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado |
+| Infracciones generales de la directiva de seguridad | Evasión de defensa de controles de seguridad o software no deseado detectado por Microsoft Defender para endpoint | Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado |
 | Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización | Indicadores de la fecha de renuncia o finalización del contrato desde el conector de recursos humanos o la eliminación de la cuenta de Azure Active Directory | (opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia. <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado |
-| Infracciones de la directiva de seguridad por parte de los usuarios prioritarios | Evasión defensiva de los controles de seguridad o del software no deseado detectado por ATP de Microsoft Defender | Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno |
+| Infracciones de la directiva de seguridad por parte de los usuarios prioritarios | Evasión de defensa de controles de seguridad o software no deseado detectado por Microsoft Defender para endpoint | Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno |
 | Infracciones de la directiva de seguridad por parte de un usuario inconforme | Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos | Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado |
 
 ## <a name="prioritize-content-in-policies"></a>Priorizar los contenidos en las directivas
@@ -271,7 +271,7 @@ Siga los siguientes pasos para crear una nueva directiva:
     - **Descripción (opcional)**: escriba una descripción para la directiva.
 
 6. Seleccione **Siguiente** para continuar.
-7. En la página **Usuarios y grupos**, seleccione **Incluir todos los usuarios y grupos** o **Incluir usuarios y grupos específicos** para definir qué usuarios o grupos se incluyen en la directiva, o si ha elegido una plantilla basada en usuarios prioritarios; seleccione **Agregar o editar grupos de usuarios prioritarios**. Si se selecciona **Incluir a todos los usuarios y grupos**, se buscarán los eventos desencadenantes de todos los usuarios y grupos de su organización para empezar a asignar puntuaciones de riesgo para la directiva. Seleccionar **Incluir usuarios y grupos específicos** permite definir qué usuarios y grupos se asignan a la directiva.
+7. En la página **Usuarios y grupos**, seleccione **Incluir todos los usuarios y grupos** o **Incluir usuarios y grupos específicos** para definir qué usuarios o grupos se incluyen en la directiva, o si ha elegido una plantilla basada en usuarios prioritarios; seleccione **Agregar o editar grupos de usuarios prioritarios**. Si se selecciona **Incluir a todos los usuarios y grupos**, se buscarán los eventos desencadenantes de todos los usuarios y grupos de su organización para empezar a asignar puntuaciones de riesgo para la directiva. Seleccionar **Incluir usuarios y grupos específicos** permite definir qué usuarios y grupos se asignan a la directiva. No se admiten cuentas de usuario invitadas.
 8. Seleccione **Siguiente** para continuar.
 9. En la página **Contenido a priorizar**, puede asignar (si es necesario) las fuentes a priorizar, lo que aumenta la posibilidad de generar una alerta de alta gravedad para estas fuentes. Seleccione una de las siguientes opciones:
 

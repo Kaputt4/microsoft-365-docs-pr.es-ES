@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo planear Temas Microsoft Viva.
-ms.openlocfilehash: dd7b56342a3881c25be65a62028d024aa55c35ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61729eeaa4a30a3f7e0faf50ab40320d88f3d78a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163197"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364584"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planeación de Temas Microsoft Viva
 
@@ -71,9 +71,7 @@ Se recomienda crear un proceso para que los usuarios o administradores de conoci
 
 ### <a name="multi-geo"></a>Multi-Geo
 
-Si su organización ha implementado [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), el centro de temas se aprovisiona en la ubicación central y solo SharePoint los sitios de la ubicación central están disponibles para su uso como orígenes para los temas. (Si selecciona Todos **los sitios,** Viva Topics usará todos los sitios de la ubicación central).
-
-Todo el procesamiento y almacenamiento del contenido se realiza en la ubicación central.
+Si su organización ha implementado [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), Viva Topics respeta la soberanía de los datos al garantizar que los datos de los temas siempre se almacenan en la ubicación geográfica correcta. El centro de temas se aprovisiona en la ubicación central y el contenido de todas las ubicaciones geográficas se procesa allí. Los temas detectados resultantes se almacenan en la misma ubicación geográfica que el contenido de origen. Si los datos de origen del tema se mueven entre ubicaciones geográficas, las propiedades del tema correspondientes, como la descripción, también se mueven.
 
 ## <a name="user-permissions"></a>Permisos de usuario
 
@@ -148,7 +146,7 @@ Cuando configures experiencias de tema, necesitarás los siguientes elementos a 
 > * Lista de temas confidenciales que se excluirán de la detección de temas
 > * Un nombre para el sitio del centro de temas
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Configurar las experiencias temáticas](set-up-topic-experiences.md)
 

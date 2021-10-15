@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo agregar o quitar los miembros que pueden tener acceso a un caso al administrar un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 13a97af715a3f81b5570617f18b10cd8e35f9aec
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 8e239622add6965a280e9c2b01bc00d9f2b9b0d5
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217107"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364668"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 
@@ -32,18 +32,20 @@ Puede agregar o quitar miembros para administrar quién tiene acceso al caso. Si
 
 2. Haga clic en la pestaña **Configuración** y luego haga clic en **Seleccionar** en el mosaico **Acceso y permisos**.
 
-3. Haga clic en **Actualizar**.
+3. En **Administrar miembros a**, haga clic en **Agregar** para agregar miembros al caso. También puede elegir agregar un grupo de roles al caso haciendo clic en  **Agregar en** Administrar grupos **de roles**.
 
-4. En **Administrar miembros a**, haga clic en **Agregar** para agregar miembros al caso. También puede elegir agregar un grupo de roles al caso haciendo clic en  **Agregar en** Administrar grupos **de roles**.
-
-5. En la lista de personas o grupos de roles que se pueden agregar como miembros del caso, active la casilla situada junto a los nombres de las personas o grupos de roles que quiera agregar.
+4. En la lista de personas o grupos de roles que se pueden agregar como miembros del caso, active la casilla situada junto a los nombres de las personas o grupos de roles que quiera agregar.
 
    > [!NOTE]
    > Al agregar un grupo de roles a un caso, solo puede agregar los grupos de roles de los que es miembro.
 
-6. Después de seleccionar las personas o grupos de roles que se agregarán como miembros del caso, haga clic en **Agregar**.
+5. Después de seleccionar las personas o grupos de roles que se agregarán como miembros del caso, haga clic en **Agregar**.
 
-7. En la página desplegable **Administrar este caso**, haga clic en **Guardar** para guardar la nueva lista de miembros del caso.
+6. En la página desplegable **Administrar este caso**, haga clic en **Guardar** para guardar la nueva lista de miembros del caso.
 
 > [!IMPORTANT]
 > Si se agrega o quita un rol de un grupo de roles que ha agregado como miembro de un caso, el grupo de roles se quitará automáticamente como miembro del caso (o en cualquier caso el grupo de roles es miembro de). El motivo es proteger la organización de proporcionar permisos adicionales a los miembros de un caso de forma involuntaria. Del mismo modo, si se elimina un grupo de roles, se quitará de todos los casos de los que era miembro. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases).
+
+## <a name="removing-members-from-a-case"></a>Quitar miembros de un caso
+
+Solo un [administrador de exhibición de documentos](assign-ediscovery-permissions.md) electrónicos puede quitar miembros de un caso. Incluso si está asignado al grupo de roles administrador de exhibición de documentos electrónicos o si creó el caso inicialmente, no podrá quitarse a sí mismo ni a otros miembros de un caso a menos que también sea administrador de exhibición de documentos electrónicos. Para quitarse a sí mismo u otros miembros de un caso, póngase en contacto con un administrador de exhibición de documentos electrónicos de su organización.

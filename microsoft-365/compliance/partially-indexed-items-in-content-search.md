@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que se ejecuta en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: b2d52ba6b518aba746a7c2b50b04d872c78b47ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 09bc5959550a21b27298ea2fb2e0857bcd598381
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195610"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364716"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos parcialmente indizados en eDiscovery
 
@@ -34,7 +34,7 @@ Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el
   
 - El tipo de archivo no se admite o está deshabilitado para la indexación.
 
-- Los mensajes tienen un archivo adjunto sin un controlador válido, como archivos de imagen; esta es la causa más común de elementos de correo electrónico parcialmente indizados.
+- Los mensajes tienen un archivo adjunto que no se puede abrir, como archivos de imagen; esta es la causa más común de elementos de correo electrónico parcialmente indizados.
 
 - El tipo de archivo se admite para indización pero se produjo un error de indización en un archivo específico.
 
@@ -168,6 +168,6 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 
 - Si crea una retención basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos parcialmente indizados se colocan en espera. Esto incluye elementos parcialmente indizados que no coinciden con los criterios de consulta de búsqueda para la retención. Para obtener más información acerca de cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Create an eDiscovery hold](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Investigar elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

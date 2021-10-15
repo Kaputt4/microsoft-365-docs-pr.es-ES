@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (también denominados elementos no indexados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 9e5930cb54d3903053bb09384d29a3134b243da6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b919500c929c4bc92c6ef090442b737ecadf212
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201066"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364644"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigar elementos parcialmente indizados en eDiscovery
 
 Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el Centro de cumplimiento de Microsoft 365 incluye automáticamente elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos parcialmente indizados Exchange elementos de buzón de correo y documentos en SharePoint y OneDrive para la Empresa sitios que, por algún motivo, no se indizaron completamente para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos del sitio se indizan correctamente porque se encuentran dentro de los [límites de indización de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indización y se indizarán parcialmente. Estos son otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
-- Los mensajes de correo electrónico tienen un archivo adjunto sin un controlador válido, como archivos de imagen; esta es la causa más común de elementos de correo electrónico parcialmente indizados.
+- Los mensajes de correo electrónico tienen un archivo adjunto que no se puede abrir, como archivos de imagen; esta es la causa más común de elementos de correo electrónico parcialmente indizados.
 
 - Se han adjuntado demasiados archivos a un mensaje de correo electrónico.
 
@@ -183,6 +183,6 @@ Este es un ejemplo de la salida devuelta por el script.
 > 
 > - Etiquetas de error de lista y los tipos de archivo correspondientes para los que se produjo el error.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Elementos parcialmente indizados en eDiscovery](partially-indexed-items-in-content-search.md)

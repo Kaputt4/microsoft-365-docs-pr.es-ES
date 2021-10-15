@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c1e2b871c8b8dfb8229482d43ca02898f6adb852
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc76ad5e41610c23f60392c2f13655049018a1eb
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208138"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364596"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -56,7 +56,7 @@ Los administradores de TI se benefician de estas características:
 ## <a name="device-management"></a>Administración de dispositivos
 El Escritorio administrado de Microsoft asume la carga de administración de dispositivos registrados y el software de Microsoft que usan.
 
-- **Hardware:** En lugar de que el departamento de TI tenga que investigar y averiguar si un dispositivo es compatible con el servicio, hemos proporcionado requisitos específicos de hardware y software, herramientas y procesos para simplificar la selección, para que pueda elegir dispositivos con confianza. Para encontrar los dispositivos recomendados, filtre por Escritorio administrado de Microsoft en el sitio [Comprar dispositivos Windows 10 Pro para empresas](https://www.microsoft.com/windowsforbusiness/view-all-devices). Puede obtener sus propios dispositivos (o trabajar con un partner) o volver a usar dispositivos que ya tiene. El registro de dispositivos es claro y sencillo, y antes de que se implementen, también puede [personalizar](../working-with-managed-desktop/config-setting-overview.md) determinados aspectos de la experiencia del dispositivo para los usuarios.
+- **Hardware:** En lugar de que el departamento de TI tenga que investigar y averiguar si un dispositivo es compatible con el servicio, hemos proporcionado requisitos específicos de hardware y software, herramientas y procesos para simplificar la selección, para que pueda elegir dispositivos con confianza. Puedes encontrar dispositivos recomendados mediante el filtrado de Microsoft Managed Desktop en el sitio [De Windows Pro dispositivos empresariales.](https://www.microsoft.com/windows/business/devices) Puede obtener sus propios dispositivos (o trabajar con un partner) o volver a usar dispositivos que ya tiene. El registro de dispositivos es claro y sencillo, y antes de que se implementen, también puede [personalizar](../working-with-managed-desktop/config-setting-overview.md) determinados aspectos de la experiencia del dispositivo para los usuarios.
 
 - **Actualizaciones:** el Escritorio administrado de Microsoft configura y administra todos los aspectos de [grupos de implementación](../service-description/updates.md) para las actualizaciones de características y calidad de Windows 10, controladores, firmware, definiciones de antivirus y actualizaciones de Aplicaciones de Microsoft 365 para empresas. Esto incluye una amplia comprobación y verificación de todas las actualizaciones, asegurando que los dispositivos registrados siempre estén actualizados y minimizando las interrupciones, lo que libera al departamento de TI de esa tarea constante.
 

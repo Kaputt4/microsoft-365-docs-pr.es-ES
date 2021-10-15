@@ -1,6 +1,6 @@
 ---
-title: Escritorio administrado de Microsoft de dispositivos
-description: En este tema se enumeran los servicios de dispositivo y la limitación de Escritorio administrado de Microsoft.
+title: Servicios de dispositivos de Escritorio administrado de Microsoft
+description: En este tema se enumeran los servicios de dispositivo y la limitación de Microsoft Managed Desktop.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -9,26 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 256598a1eb7a51c0e07bd7be9ebf616d2d1ce4ec
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0e90d4fd51c0e25a20b6ef985d7a15edc001bfb5
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198270"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364139"
 ---
-# <a name="microsoft-managed-desktop-device-services"></a>Escritorio administrado de Microsoft de dispositivos
+# <a name="microsoft-managed-desktop-device-services"></a>Servicios de dispositivos de Escritorio administrado de Microsoft
 
-En este tema se enumeran los servicios y las limitaciones de servicio para Escritorio administrado de Microsoft dispositivos.
+En este tema se enumeran los servicios y las limitaciones de servicio para dispositivos de Escritorio administrado de Microsoft.
 
 ## <a name="device-services"></a>Servicios de dispositivo
 
-Microsoft proporcionará estos servicios para Escritorio administrado de Microsoft dispositivos. Para obtener una lista de dispositivos Escritorio administrado de Microsoft de programa recomendados, filtre para Escritorio administrado de Microsoft en el sitio De [Windows 10 Pro dispositivos empresariales.](https://www.microsoft.com/windowsforbusiness/view-all-devices)
+Microsoft proporcionará estos servicios para dispositivos de Escritorio administrado de Microsoft. Para obtener una lista de los dispositivos de programa de Escritorio administrado de Microsoft recomendados, filtre para Microsoft Managed Desktop en el sitio [Windows Pro dispositivos empresariales.](https://www.microsoft.com/windows/business/devices)
 
 Servicio | Descripción
 --- | ---
 Soporte técnico | Los agentes de soporte técnico responderán a las preguntas relacionadas directamente con la funcionalidad del dispositivo y diagnosticarán problemas del dispositivo.
-Inventario | Se realiza un seguimiento de todos los dispositivos en el portal Escritorio administrado de Microsoft administración para realizar un seguimiento de inventario y estado.
-Actualizaciones de firmware y controladores | De forma predeterminada, Escritorio administrado de Microsoft dispositivos reciben actualizaciones de firmware y controladores de Windows Update. No todos los partners de hardware implementan sus actualizaciones mediante Windows Update. Las actualizaciones no publicadas como automáticas requieren una excepción y el cliente debe implementarla.
+Inventario | Se realiza un seguimiento de todos los dispositivos en el portal de administración de Escritorio administrado de Microsoft para realizar un seguimiento de inventario y estado.
+Actualizaciones de firmware y controladores | De forma predeterminada, los dispositivos de Escritorio administrado de Microsoft reciben actualizaciones de firmware y controladores de Windows Update. No todos los partners de hardware implementan sus actualizaciones mediante Windows Update. Las actualizaciones no publicadas como automáticas requieren una excepción y el cliente debe implementarla.
 Accesorios | Los accesorios que vienen con el dispositivo están cubiertos por los mismos servicios que el propio dispositivo, pero los términos de garantía pueden diferir. Consulta los términos de garantía elegidos al seleccionar tus dispositivos. 
 Configuración del dispositivo | Los dispositivos se preconfigurarán con la versión actual de Windows y recibirán sus aplicaciones y configuraciones a través de la nube.
 

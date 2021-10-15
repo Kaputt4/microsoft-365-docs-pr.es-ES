@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 84caa800657ee33d4bb44f81eda0acf433a7e227
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 193fed7b4e211fa1389902d7da9f92b96977a118
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212670"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364163"
 ---
 # <a name="device-images"></a>Imágenes del dispositivo
 
@@ -25,13 +25,13 @@ ms.locfileid: "60212670"
 Ya sea que [ordenes nuevos dispositivos](#new-devices) o reutilices los existentes, tienes varias opciones para asegurarte de que la imagen del dispositivo cumple con nuestros requisitos [de dispositivo.](device-requirements.md#check-hardware-requirements) [](#existing-devices)
 
 ## <a name="new-devices"></a>Nuevos dispositivos
-Cuando ordenes un nuevo dispositivo a un fabricante [aprobado,](device-requirements.md#minimum-requirements)sigue estos pasos para asegurarte de que envían dispositivos con la configuración Escritorio administrado de Microsoft imagen y software. Cada vez que planees inscribir un modelo de dispositivo determinado en el servicio por primera vez, debes probar un ejemplo para asegurarte de que ofrece la experiencia de usuario que esperas. Para obtener más información, vea [Validate new devices](/microsoft-365/managed-desktop/get-started/validate-device).
+Cuando ordenes un nuevo dispositivo a un fabricante [aprobado,](device-requirements.md#minimum-requirements)sigue estos pasos para asegurarte de que envían dispositivos con la configuración correcta de software y imagen de Escritorio administrado de Microsoft. Cada vez que planees inscribir un modelo de dispositivo determinado en el servicio por primera vez, debes probar un ejemplo para asegurarte de que ofrece la experiencia de usuario que esperas. Para obtener más información, vea [Validate new devices](/microsoft-365/managed-desktop/get-started/validate-device).
 
 ### <a name="dell"></a>Dell
-Trabaje directamente con el representante de ventas de Dell, que se asegurará de que la imagen aprobada por Escritorio administrado de Microsoft se aplique a los dispositivos para su pedido. Para obtener más preguntas sobre dispositivos Dell, la imagen y el proceso de pedido, póngase en contacto con MMD_at_dell@dell.com.
+Trabaje directamente con el representante de ventas de Dell, que se asegurará de que la imagen aprobada por Microsoft Managed Desktop se aplique a los dispositivos para su pedido. Para obtener más preguntas sobre dispositivos Dell, la imagen y el proceso de pedido, póngase en contacto con MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-Cuando ordenes nuevos dispositivos de HP, asegúrate de usar la SKU específica que se muestra en la sección Requisitos adicionales para cada modelo que se encuentra en el sitio de dispositivos empresariales de [Shop Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) (filtra la vista para mostrar Escritorio administrado de Microsoft dispositivos).
+Cuando ordene nuevos dispositivos de HP, asegúrese de usar la SKU específica que se muestra en la sección Requisitos adicionales para cada modelo que se encuentra en el sitio de dispositivos empresariales de Shop [Windows Pro](https://www.microsoft.com/windows/business/devices#view-all-filter) (filtre la vista para mostrar los dispositivos de Escritorio administrado de Microsoft).
 
 Si estás ordenando un dispositivo de HP [](customizing.md) que se ha aprobado como una excepción pero que no aparece actualmente en la página Lista de dispositivos, asegúrate de solicitar la SKU que se usará para el modelo. Trabajaremos con HP para obtener esta información mediante su solicitud de excepción. También puedes ponerse en contacto directamente con HP para obtener cualquier pregunta sobre dispositivos e instrucciones de ordenación de dispositivos mediante estas direcciones:
  
@@ -41,10 +41,10 @@ Si estás ordenando un dispositivo de HP [](customizing.md) que se ha aprobado c
 - Global: mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Cuando ordenes dispositivos de Lenovo para usarlos en Escritorio administrado de Microsoft, tendrás que indicar un número de parte específico incluido como parte del pedido. Póngase en contacto con su representante de ventas de Lenovo o con el partner de canal de Lenovo y pídales que creen un *"modelo* de oferta especial" con un sistema que cumpla con nuestros requisitos [de dispositivo.](device-requirements.md#minimum-requirements) Para incluir una imagen precargado compatible con Escritorio administrado de Microsoft, pida al representante de ventas que haga referencia a "*System building block part number SBB0Q94938 – MMD Enablement*." Trabaje con el representante de ventas de Lenovo o el partner de canal de Lenovo para obtener servicios recomendados, soporte técnico e imágenes.
+Cuando ordenes dispositivos de Lenovo para usarlos en Microsoft Managed Desktop, tendrás que indicar un número de parte específico incluido como parte del pedido. Póngase en contacto con su representante de ventas de Lenovo o con el partner de canal de Lenovo y pídales que creen un *"modelo* de oferta especial" con un sistema que cumpla con nuestros requisitos [de dispositivo.](device-requirements.md#minimum-requirements) Para incluir una imagen precargado compatible con Microsoft Managed Desktop, pida al representante de ventas que haga referencia a "*System building block part number SBB0Q94938 – MMD Enablement*." Trabaje con el representante de ventas de Lenovo o el partner de canal de Lenovo para obtener servicios recomendados, soporte técnico e imágenes.
 
 ### <a name="microsoft"></a>Microsoft
-Todos los dispositivos microsoft que cumplen los requisitos del dispositivo vienen con una imagen que funciona con Escritorio administrado de Microsoft. No se requieren otros pasos.
+Todos los dispositivos de Microsoft que cumplen los requisitos del dispositivo vienen con una imagen que funciona con Microsoft Managed Desktop. No se requieren otros pasos.
 
 Para obtener la imagen más reciente disponible en la fábrica en un dispositivo Microsoft, trabaja con el especialista de Surface para usar el proceso de surface "Poteado".
 
@@ -52,7 +52,7 @@ Para obtener la imagen más reciente disponible en la fábrica en un dispositivo
 
 Puedes reutilizar los dispositivos existentes siempre que cumplan los requisitos [del](device-requirements.md#minimum-requirements) dispositivo y los [requisitos de software.](device-requirements.md#installed-software) Siga los pasos relevantes para el fabricante.
 
-Puede volver a crear una imagen de dispositivos con una imagen del fabricante o mediante el Escritorio administrado de Microsoft "imagen universal". Para obtener una imagen de fabricante adecuada, podrías ordenar al menos un [nuevo](#new-devices) dispositivo del modelo que estás reusando. A continuación, puedes obtener la imagen de ese dispositivo y aplicarla a otros dispositivos del mismo modelo.
+Puede volver a crear una imagen de dispositivos con una imagen del fabricante o mediante la "imagen universal" de Escritorio administrado de Microsoft. Para obtener una imagen de fabricante adecuada, podrías ordenar al menos un [nuevo](#new-devices) dispositivo del modelo que estás reusando. A continuación, puedes obtener la imagen de ese dispositivo y aplicarla a otros dispositivos del mismo modelo.
 
 > [!NOTE]
 > Es usted el responsable de crear, probar e implementar imágenes. También se recomienda usar imágenes apropiadas proporcionadas por el fabricante siempre que sea posible en lugar de imágenes personalizadas, incluida la "imagen universal".
@@ -83,7 +83,7 @@ Estas imágenes usan el Windows de recuperación (WinRE) y este es un proceso ma
 
 
 ### <a name="universal-image"></a>Imagen universal
-Escritorio administrado de Microsoft ha creado una imagen que contiene Windows 10 Pro y Aplicaciones Microsoft 365 para Enterprise que puede usar con Escritorio administrado de Microsoft. Sin embargo, es mejor usar imágenes adecuadas Escritorio administrado de Microsoft proporcionadas por el fabricante siempre que sea posible, incluso si eso significa una versión de Windows anterior que, a continuación, debe actualizarse una vez que el usuario inicia sesión. El uso Escritorio administrado de Microsoft imagen universal debe ser una opción final.
+Microsoft Managed Desktop ha creado una imagen que contiene Windows Pro y Aplicaciones Microsoft 365 para Enterprise que puede usar con Microsoft Managed Desktop. Sin embargo, lo mejor es usar las imágenes apropiadas para el Escritorio administrado de Microsoft proporcionadas por el fabricante siempre que sea posible, incluso si eso significa una versión de Windows anterior que, a continuación, debe actualizarse una vez que el usuario inicia sesión. El uso de la imagen universal de Escritorio administrado de Microsoft debe ser una opción final.
 
 - Actualizamos la imagen con las actualizaciones de calidad mensuales más recientes Windows cada 30-60 días y Aplicaciones Microsoft 365 actualizaciones Enterprise actualizaciones al menos dos veces al año.
 - La imagen contiene un paquete de aprovisionamiento de recuperación para garantizar Aplicaciones Microsoft 365 para Enterprise se restaura después Windows escenarios de recuperación.

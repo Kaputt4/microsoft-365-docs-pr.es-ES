@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo empezar a usar eDiscovery principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede agregar miembros, crear retenciones de exhibición de documentos electrónicos y, a continuación, buscar y exportar contenido relevante para la investigación.
-ms.openlocfilehash: d8827f5f63e0fc0432aef7869436112c00ca4151
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 4245cd391adbaca4284d7861a44f3c41ed3104e4
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217179"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60363959"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Introducción a la exhibición de documentos electrónicos principal en Microsoft 365
 
@@ -93,6 +93,8 @@ Hay dos subgrupos en el grupo de roles administrador de exhibición de documento
   - Administre cualquier caso en la organización después de que se agreguen como miembro del caso.
 
   - Acceda y exporte datos de casos en cualquier caso de la organización.
+  
+  - Quite miembros de un caso de exhibición de documentos electrónicos. Solo un administrador de exhibición de documentos electrónicos puede quitar miembros de un caso. Los usuarios que son miembros del subgrupo administrador de exhibición de documentos electrónicos no pueden quitar miembros de un caso, incluso si el usuario creó el caso.
 
   Debido a la amplia gama de acceso que tiene que tener una organización, solo unos pocos administradores que sean miembros del subgrupo de administradores de eDiscovery.
 
@@ -131,7 +133,11 @@ Si crea un caso en el paso 3 y es la única persona que usará el caso, no tiene
 5. Después de seleccionar las personas o grupos de roles  que se agregarán como miembros del caso, haga clic en Guardar para guardar los nuevos miembros o grupos de roles.
 
 > [!IMPORTANT]
-> Si se agrega o quita un rol de un grupo de roles que ha agregado como miembro de un caso, el grupo de roles se quitará automáticamente como miembro del caso (o en cualquier caso el grupo de roles es miembro de). El motivo es proteger la organización de proporcionar permisos adicionales a los miembros de un caso de forma involuntaria. Del mismo modo, si se elimina un grupo de roles, se quitará de todos los casos de los que era miembro. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases).
+>
+>- Si se agrega o quita un rol de un grupo de roles que ha agregado como miembro de un caso, el grupo de roles se quitará automáticamente como miembro del caso (o en cualquier caso el grupo de roles es miembro de). El motivo es proteger la organización de proporcionar permisos adicionales a los miembros de un caso de forma involuntaria. Del mismo modo, si se elimina un grupo de roles, se quitará de todos los casos de los que era miembro. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases). 
+>
+>- Como se explicó anteriormente, solo un administrador de exhibición de documentos electrónicos puede quitar miembros de un caso. Los usuarios que son miembros del subgrupo administrador de exhibición de documentos electrónicos no pueden quitar miembros de un caso, incluso si el usuario creó el caso.
+>
 
 ## <a name="explore-the-core-ediscovery-workflow"></a>Explorar el flujo de trabajo de eDiscovery principal
 

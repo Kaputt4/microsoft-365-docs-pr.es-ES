@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0fd58f038992e3728915a822500bbbe1b7db1a26
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 188c6c16f9e0a56d18f160123d94843c30f02c26
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169628"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364885"
 ---
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
@@ -260,7 +260,7 @@ Información clave de Microsoft:
 - [La creciente amenaza de ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), entrada de blog de Microsoft On the Issues del 20 de julio de 2021
 - [Ransomware operado por humanos](/security/compass/human-operated-ransomware)
 - [Protéjase contra ransomware y extorsión de manera rápida](/security/compass/protect-against-ransomware)
-- [El informe de inteligencia de seguridad de Microsoft más reciente](https://www.microsoft.com/securityinsights/) (vea las páginas 22-24)
+- [Informe de Microsoft Digital Defense 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (vea las páginas 10-19)
 - **Ransomware: Un informe de amenazas generalizado y continuo** en el nodo del **Análisis de amenazas** del portal de Microsoft 365 Defender (consulte estos [requisitos de licencia](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365:

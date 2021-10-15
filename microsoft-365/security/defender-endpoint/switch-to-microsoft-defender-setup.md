@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 76b390c8f4ff3cd83dacd308ac6d9fc64da21017
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 36de4b9703c0200d8e2eddba8e3ec0f9b6fe47f9
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245506"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364764"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Cambiar a Microsoft Defender para endpoint - Fase 2: Configuración
 
@@ -48,7 +48,7 @@ ms.locfileid: "60245506"
 
 ## <a name="reinstallenable-microsoft-defender-antivirus-on-your-endpoints"></a>Reinstalar o habilitar Antivirus de Microsoft Defender en los puntos de conexión
 
-En algunas versiones de Windows, Antivirus de Microsoft Defender se desinstale o deshabilitó probablemente cuando se instaló la solución antivirus o antimalware que no es de Microsoft. Cuando los puntos de conexión Windows se incorpore a Defender for Endpoint, Antivirus de Microsoft Defender puede ejecutarse en modo pasivo junto con una solución antivirus que no sea de Microsoft. Para obtener más información, vea [Antivirus protection with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-protection-with-defender-for-endpoint).
+En algunas versiones de Windows, Antivirus de Microsoft Defender se desinstale o deshabilitó probablemente cuando se instaló la solución antivirus o antimalware que no es de Microsoft. Cuando los puntos de conexión Windows se incorpore a Defender for Endpoint, Antivirus de Microsoft Defender puede ejecutarse en modo pasivo junto con una solución antivirus que no sea de Microsoft. Para obtener más información, vea [Antivirus protection with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-protection-without-defender-for-endpoint).
 
 Al cambiar a Defender for Endpoint, es posible que deba realizar ciertos pasos para reinstalar o habilitar Antivirus de Microsoft Defender. En la tabla siguiente se describe qué hacer en los Windows clientes y servidores.
 </br> </br>

@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4b845f9a34eecde953d3736b1a82f37b54b05d6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a146c08834d0b7c4dc6d184a09176d986af1913f
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205048"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364825"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -119,7 +119,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
     - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que fueron puestos en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que fueron puestos en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
 ### <a name="unauthenticated-sender"></a>Remitente no autenticado
 
@@ -170,6 +170,9 @@ La suplantación es donde el remitente o el dominio de correo electrónico del r
 - Un ejemplo de suplantación del dominio contoso.com es ćóntoso.com.
 - Un ejemplo de suplantación del usuario michelle@contoso.com es michele@contoso.com.
 
+> [!NOTE]
+> La protección de suplantación busca dominios similares. Por ejemplo, si el dominio es contoso.com, buscamos diferentes dominios de nivel superior (.com, .biz, etc.) como intentos de suplantación, pero también dominios que son incluso algo similares. Por ejemplo, contosososo.com o contoabcdef.com pueden verse como intentos de suplantación de contoso.com.
+
 Un dominio suplantado podría considerarse legítimo (dominio registrado, registros de autenticación de correo electrónico configurados, etc.), salvo que su intención sea engañar a los destinatarios.
 
 La siguiente configuración de suplantación solo está disponible en las directivas contra suplantación de identidad en Defender para Office 365:
@@ -205,7 +208,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
     - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por suplantación de usuario o protección de suplantación de dominio. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+    Si selecciona **Poner en cuarentena el** mensaje, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por suplantación de usuario o protección de suplantación de dominio. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
   - Entregue el mensaje y agregue otras direcciones a la línea **CCO:** entregue el mensaje a los destinatarios previstos y entregue el mensaje de forma silenciosa a los destinatarios especificados.
   - **Elimine el mensaje antes de entregarlo:** elimina silenciosamente todo el mensaje, incluidos todos los datos adjuntos.
@@ -225,7 +228,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **No aplicar ninguna acción:** tenga en cuenta que este  valor tiene el mismo resultado que activar la inteligencia de buzones pero desactivar Habilitar protección de **suplantación de inteligencia**.
   - **Redirigir el mensaje a otras direcciones de correo electrónico**
   - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-  - **Poner en cuarentena el** mensaje: si selecciona esta acción, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+  - **Poner en cuarentena el** mensaje: si selecciona esta acción, también puede seleccionar la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
   - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
   - **Eliminar el mensaje antes de entregarlo**
 

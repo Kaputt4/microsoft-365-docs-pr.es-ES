@@ -20,12 +20,12 @@ description: Asigne los permisos necesarios para realizar tareas relacionadas co
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2ff6a589ce8b4db6adf00a820eaf00b20f9f7bcc
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: d6515dc213fe6b89a9a638c9df8dcad63785967c
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217155"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364560"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365
 
@@ -43,6 +43,8 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
   
   - Administrar cualquier caso de eDiscovery después de agregarse como miembro del caso.
   
+  - Quite miembros de un caso de exhibición de documentos electrónicos. Solo un administrador de exhibición de documentos electrónicos puede quitar miembros de un caso. Los usuarios que son miembros del subgrupo administrador de exhibición de documentos electrónicos no pueden quitar miembros de un caso, incluso si el usuario creó el caso.
+  
   Por motivos por los que es posible que desee administradores de exhibición de documentos electrónicos en su organización, vea [Más información](#more-information).
 
 > [!NOTE]
@@ -52,7 +54,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 
 - Debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol Administración de roles para asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
 
-- Puede usar el cmdlet [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) en PowerShell del Centro de seguridad & para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de exhibición de documentos electrónicos en el grupo de roles administrador de exhibición de documentos electrónicos. Sin embargo, no puede agregar un grupo de seguridad habilitado para correo al subgrupo administradores de exhibición de documentos electrónicos. Para obtener más información, [vea More information](#more-information). 
+- Puede usar el cmdlet [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) en PowerShell del Centro de seguridad & para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de exhibición de documentos electrónicos en el grupo de roles administrador de exhibición de documentos electrónicos. Sin embargo, no puede agregar un grupo de seguridad habilitado para correo al subgrupo administradores de exhibición de documentos electrónicos. Para obtener más información, [vea More information](#more-information).
   
 ## <a name="assign-ediscovery-permissions"></a>Asignar permisos de eDiscovery
 
@@ -79,7 +81,7 @@ En **la** página Permisos de la Centro de cumplimiento de Microsoft 365, tambi�
 
 En la tabla siguiente se enumeran los roles RBAC relacionados con la exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 e indica los grupos de roles integrados a los que se asigna cada función de forma predeterminada.
   
-| Rol | Administrador de cumplimiento | Administrador de eDiscovery & administrador | Administración de la organización | Reviewer |
+| Role | Administrador de cumplimiento | Administrador de eDiscovery & administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
 |Comunicación <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -99,7 +101,7 @@ En las secciones siguientes se describe cada uno de los roles RBAC relacionados 
 
 Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a la exhibición de documentos electrónicos principales y Advanced eDiscovery casos en el Centro de cumplimiento de Microsoft 365. Como se explicó anteriormente, se debe asignar a un usuario el rol de administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para que sea un administrador de exhibición de documentos electrónicos.
 
-Para más información vea:
+Para más información, vea:
 
 - [Introducción a Core eDiscovery](get-started-core-ediscovery.md)
 
@@ -171,13 +173,13 @@ Con esto en mente, es importante saber que si se agrega o quita un rol de un gru
 
 Antes de agregar o quitar roles a un grupo de roles que puede ser miembro de un caso de exhibición de documentos electrónicos, puede ejecutar los siguientes comandos en [PowerShell](/powershell/exchange/connect-to-scc-powershell) de seguridad & cumplimiento para obtener una lista de casos de los que el grupo de roles es miembro. Después de actualizar el grupo de roles, se vuelve a agregar el grupo de roles como miembro de esos casos.
 
-### <a name="get-a-list-of-role-groups-assigned-to-core-ediscovery-cases"></a>Obtener una lista de grupos de roles asignados a casos principales de exhibición de documentos electrónicos
+### <a name="get-a-list-of-core-ediscovery-cases-a-role-group-is-assigned-to"></a>Obtener una lista de casos principales de exhibición de documentos electrónicos a los que se asigna un grupo de roles
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group"
 ```
 
-### <a name="get-a-list-of-role-groups-assigned-to-advanced-ediscovery-cases"></a>Obtener una lista de grupos de roles asignados a Advanced eDiscovery casos
+### <a name="get-a-list-of-advanced-ediscovery-cases-a-role-group-is-assigned-to"></a>Obtener una lista de Advanced eDiscovery casos a los que se asigna un grupo de roles
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery

@@ -10,22 +10,22 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c10d7f59f31b3cfbd8baf34247e9fc4288751dd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6542769d203604738f863af7da211bfc21ba8ac7
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208090"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364680"
 ---
 # <a name="service-changes-and-communication"></a>Cambios en el servicio y comunicación
 
-A veces, Microsoft puede necesitar cambiar los detalles sobre la forma en que Escritorio administrado de Microsoft funciona. Del mismo modo, es posible que también tenga que realizar cambios que afecten al servicio. Estos cambios se controlan de forma diferente en función de su importancia. En este tema se definen los cambios que consideramos principales y se explica cómo los manejamos frente a otros cambios.
+En ocasiones, Es posible que Microsoft necesite cambiar los detalles sobre el funcionamiento del Escritorio administrado de Microsoft. Del mismo modo, es posible que también tenga que realizar cambios que afecten al servicio. Estos cambios se controlan de forma diferente en función de su importancia. En este tema se definen los cambios que consideramos principales y se explica cómo los manejamos frente a otros cambios.
 
 
 
 ## <a name="changes-made-by-microsoft"></a>Cambios realizados por Microsoft
 
-Le aviso con al menos 30 días de antelación para cualquier cambio importante que requiera acción. Le haremos saber mediante el sistema de mensajería Escritorio administrado de Microsoft portal de administración.
+Le aviso con al menos 30 días de antelación para cualquier cambio importante que requiera acción. Le haremos saber mediante el sistema de mensajería del portal de administración de escritorio administrado de Microsoft.
 
 **Los cambios** principales son los que pueden afectar a cualquiera de estas áreas:
 - Cambios que afectan a la productividad diaria
@@ -45,17 +45,17 @@ Rutinariamente, realizaremos otros cambios en el servicio para mejorar la experi
 
 - Instalación de Windows y Office actualizaciones
 - Actualizaciones de la línea base de seguridad aplicada a dispositivos
-- Dispositivos compatibles. Para ver los dispositivos recomendados, filtre Escritorio administrado de Microsoft en el sitio [De Windows 10 Pro de dispositivos](https://www.microsoft.com/windowsforbusiness/view-all-devices) empresariales.
+- Dispositivos compatibles. Para ver los dispositivos recomendados, filtra el escritorio administrado de Microsoft en el sitio [Windows Pro dispositivos empresariales.](https://www.microsoft.com/windows/business/devices)
 
-Comunicaremos estos cambios mediante canales establecidos. Si tiene alguna pregunta sobre los cambios, póngase en contacto con el equipo Escritorio administrado de Microsoft [operaciones](../working-with-managed-desktop/admin-support.md). Los cambios en el servicio también se documentan según sea necesario en el [historial de cambios](../change-history-managed-desktop.md).
+Comunicaremos estos cambios mediante canales establecidos. Si tiene alguna pregunta sobre los cambios, póngase en contacto con el equipo de operaciones de escritorio [administrado de](../working-with-managed-desktop/admin-support.md)Microsoft . Los cambios en el servicio también se documentan según sea necesario en el [historial de cambios](../change-history-managed-desktop.md).
 
-Escritorio administrado de Microsoft cambios y comunicaciones se rigen por dos directivas de Microsoft:
+Los cambios y las comunicaciones de Escritorio administrado de Microsoft se rigen por dos directivas de Microsoft:
 - [Directiva de ciclo de vida moderno](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
 - [Microsoft 365 Cambiar directiva de comunicación](/office365/admin/manage/message-center)
 
 ## <a name="changes-you-make"></a>Cambios que realice
 
-Algunos cambios que puede realizar en el entorno podrían afectar a Escritorio administrado de Microsoft. Para estos cambios importantes, le pedimos que nos dé un aviso de al menos 30 días enviando una solicitud de servicio en el portal de administración Escritorio administrado de Microsoft administración. Consulta [Compatibilidad con administradores Escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md) para obtener instrucciones. Esto nos permite un tiempo adecuado para planear y preparar el cambio para evitar interrupciones.
+Algunos cambios que puede realizar en su entorno podrían afectar al Escritorio administrado de Microsoft. Para estos cambios importantes, le pedimos que nos dé un aviso de al menos 30 días enviando una solicitud de servicio en el portal de administración de escritorio administrado de Microsoft. Consulta [Compatibilidad con administradores de Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md) para obtener instrucciones. Esto nos permite un tiempo adecuado para planear y preparar el cambio para evitar interrupciones.
 
 Los cambios principales son los que pueden afectar a cualquiera de estas áreas:
 
@@ -71,5 +71,5 @@ Es probable que estos cambios no sean perjudiciales, por lo que no es necesario 
 
 - Limpieza de objetos huérfanos
 - Agregar o quitar usuarios del servicio
-- Configuración del sistema que no tiene un impacto material en la entrega del Escritorio administrado de Microsoft
+- Configuración del sistema que no tiene un impacto material en la entrega del escritorio administrado de Microsoft
 - Actualizaciones de la versión de la aplicación, a excepción de las aplicaciones VPN o proxy

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8f6ca7e0b1996a7213eae0612f8b801b28514f50
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 99b17e10cdf3396fc715d83d5ca6de51ae4cb9c9
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335459"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364175"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
@@ -86,11 +86,16 @@ Al crear una directiva de cumplimiento de comunicaciones, debe determinar quién
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Grupos para usuarios y revisores supervisados
 
-Para simplificar la configuración, cree grupos para las personas que necesitan revisar sus comunicaciones y grupos para las personas que revisan dichas comunicaciones. Si usa grupos, es posible que necesite varios. Por ejemplo, si quiere examinar las comunicaciones entre dos grupos distintos de personas, o si desea especificar un grupo que no esté supervisado.
-
-Al asignar un grupo de distribución en la directiva, la directiva supervisa todos los correos electrónicos de cada usuario en el grupo de distribución. Al asignar un grupo Microsoft 365 en la directiva, la directiva supervisa todos los correos electrónicos enviados a ese grupo, no los correos electrónicos individuales recibidos por cada miembro del grupo.
+Para simplificar la configuración, cree grupos para las personas que necesitan revisar sus comunicaciones y grupos para las personas que revisan dichas comunicaciones. Si usa grupos, es posible que necesite varios. Por ejemplo, si quiere examinar las comunicaciones entre dos grupos distintos de personas, o si desea especificar un grupo que no esté supervisado. Al asignar un grupo de distribución en la directiva, la directiva supervisa todos los correos electrónicos de cada usuario en el grupo de distribución. Al asignar un grupo Microsoft 365 en la directiva, la directiva supervisa todos los correos electrónicos enviados a ese grupo, no los correos electrónicos individuales recibidos por cada miembro del grupo.
 
 La adición de grupos y listas de distribución a las directivas de cumplimiento de comunicaciones forma parte de las condiciones generales y las reglas establecidas, por lo que el número máximo de grupos y listas de distribución que admite una directiva varía en función del número de condiciones que también se agreguen a la directiva. Cada directiva debe admitir aproximadamente 20 grupos o listas de distribución, según el número de condiciones adicionales presentes en la directiva.
+
+Use el siguiente gráfico para ayudarle a configurar grupos en su organización para las directivas de cumplimiento de comunicaciones:
+
+| **Miembro de la directiva** | **Grupos admitidos** | **Grupos no admitidos** |
+|:-----|:-----|:-----|
+|Usuarios supervisados <br> Usuarios excluidos | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos <br> Grupos de distribución anidados <br> Grupos de seguridad habilitados para correo <br> Microsoft 365 grupos con pertenencia dinámica |
+| Reviewers | Ninguno | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de distribución anidados <br> Grupos de seguridad habilitados para correo |
 
 ### <a name="privacy"></a>Privacidad
 

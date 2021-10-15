@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180cedbad90082fa548e0dbd41af7313bc9e5b8
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 041f4840f3c06439c37043e0779d7acf0173c56c
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335783"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60363995"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -31,7 +31,7 @@ ms.locfileid: "60335783"
 
 - Windows Server 2012 R2
 - Windows Server 2016
-- Windows Canal Semi-Annual servidor
+- Windows Canal Semi-Annual Enterprise servidor
 - Windows Server 2019 y versiones posteriores
 - Windows Edición principal de Server 2019
 - Windows Server 2022
@@ -61,7 +61,7 @@ Deberá completar los siguientes pasos generales para incorporar correctamente l
 - Instalar aplicación
 - Siga los pasos de incorporación de la herramienta correspondiente
 
-**Windows Server Semi-Annual Channel y Windows Server 2019**
+**Windows Server Semi-Annual Enterprise Channel y Windows Server 2019**
 
 - Descargar el paquete de incorporación
 - Siga los pasos de incorporación de la herramienta correspondiente
@@ -93,16 +93,16 @@ Los siguientes detalles se aplican al nuevo paquete de soluciones unificado para
 - Asegúrese de que se cumplen los requisitos de conectividad especificados en [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server.](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Son equivalentes a los de Windows Server 2019. 
 - Anteriormente, el uso de la Microsoft Monitoring Agent (MMA) en Windows Server 2016 y a continuación permitía que la puerta de enlace OMS proporcionara conectividad a los servicios en la nube de Defender. La nueva solución, como Microsoft Defender para endpoint en Windows Server 2019, Windows Server 2022 y Windows 10, no admite esta puerta de enlace.
 - Al Windows Server 2016, compruebe que Antivirus de Microsoft Defender está instalado, está activo y actualizado. Puede descargar e instalar la versión más reciente de la plataforma mediante Windows Update. Como alternativa, descargue el paquete de actualización manualmente desde el Catálogo [de Microsoft Update o](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) desde [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
-- En Windows Server 2012 R2, no hay ninguna interfaz de usuario para Antivirus de Microsoft Defender. Además, la interfaz de usuario en Windows Server 2016 solo permite operaciones básicas. Para realizar operaciones en un dispositivo localmente, consulte [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). Como resultado, es posible que las características que se basan específicamente en la interacción del usuario, como cuando se le pida al usuario que tome una decisión o realice una tarea específica, no funcionen como se esperaba. Por lo general, se recomienda deshabilitar o no habilitar la interfaz de usuario ni requerir la interacción del usuario en cualquier servidor administrado, ya que puede afectar a la capacidad de protección.
-- No todas las reglas de reducción de superficie de ataque están disponibles en todos los sistemas operativos. Revisa las reglas de reducción de superficie de [ataque (ASR).](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
+- En Windows Server 2012 R2, no hay ninguna interfaz de usuario para Antivirus de Microsoft Defender. Además, la interfaz de usuario en Windows Server 2016 solo permite operaciones básicas. Para realizar operaciones en un dispositivo localmente, consulte [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). Como resultado, es posible que las características que se basan específicamente en la interacción del usuario, como cuando se le pida al usuario que tome una decisión o realice una tarea específica, no funcionen como se esperaba. Se recomienda deshabilitar o no habilitar la interfaz de usuario ni requerir la interacción del usuario en cualquier servidor administrado, ya que puede afectar a la funcionalidad de protección.
+- No todas las reglas de reducción de superficie de ataque están disponibles en todos los sistemas operativos. Consulta Reglas de reducción de superficie de [ataque (ASR).](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
 - Para habilitar [La protección de red,](/microsoft-365/security/defender-endpoint/network-protection)se requiere una configuración adicional:   
     -- Set-MpPreference -EnableNetworkProtection Enabled  
     -- Set-MpPreference -AllowNetworkProtectionOnWinServer 1  
     -- Set-MpPreference -AllowNetworkProtectionDownLevel 1  
     -- Set-MpPreference -AllowDatagramProcessingOnWinServer 1  
   Además, en máquinas con un gran volumen de tráfico de red, se recomienda encarecidamente realizar pruebas de rendimiento en el entorno antes de habilitar esta funcionalidad de forma general. Es posible que deba tener en cuenta el consumo de recursos adicional.
- - En Windows Server 2012 R2, es posible que los eventos de red no se rellenen en la escala de tiempo. Este problema requiere una actualización Windows KB4645768 publicada como parte de la revisión del 12 de octubre del martes.
- - No se admiten actualizaciones del sistema operativo. Por favor, desinstale antes de actualizar.
+ - En Windows Server 2012 R2, es posible que los eventos de red no se rellenen en la escala de tiempo. Este problema requiere una actualización Windows KB4645768 publicada como parte de la revisión del 12 de octubre de 2021.
+ - No se admiten actualizaciones del sistema operativo. A continuación, desinstale offboard antes de actualizar.
 
 ## <a name="integration-with-azure-defender"></a>Integración con Azure Defender
 Microsoft Defender para endpoint se integra perfectamente con Azure Defender. Puede incorporar servidores automáticamente, hacer que los servidores supervisados por Azure Defender aparezcan en Defender for Endpoint y llevar a cabo investigaciones detalladas como cliente de Azure Defender. 
@@ -133,7 +133,7 @@ Compruebe que Antivirus de Microsoft Defender está instalado, está activo y ac
 
 **Nuevo paquete de actualización para Microsoft Defender para Endpoint en Windows Server 2012 R2 y 2016**
 
-Para recibir mejoras y correcciones periódicas del producto para el componente del sensor de EDR, asegúrese de que Windows se aplique o apruebe la actualización [KB5005292.](https://go.microsoft.com/fwlink/?linkid=2168277) Además, para mantener actualizados los componentes de protección, consulte [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base.](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
+Para recibir mejoras y correcciones periódicas del producto para el componente del sensor de EDR, asegúrese de que Windows se aplique o apruebe la actualización [KB5005292.](https://go.microsoft.com/fwlink/?linkid=2168277) Además, para mantener actualizados los componentes de protección, [vea Manage Antivirus de Microsoft Defender updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
 ### <a name="download-installation-and-onboarding-packages"></a>Descargar paquetes de instalación e incorporación 
 
@@ -188,7 +188,7 @@ La compatibilidad con Windows Server proporciona información más detallada sob
 
 También puede usar el [script del instalador para](server-migration.md#installer-script) ayudar a automatizar la instalación, desinstalación e incorporación.
 
-## <a name="windows-server-semi-annual-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Channel y Windows Server 2019 y Windows Server 2022
+## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel y Windows Server 2019 y Windows Server 2022
 
 El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Microsoft Endpoint Manager envía actualmente un script. Para obtener más información sobre cómo implementar scripts en Configuration Manager, vea [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 
@@ -223,14 +223,22 @@ El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Mi
     ```
         
     > [!NOTE]
-    > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha ampliado para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+    >
+    > - La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha ampliado para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+    > - La supervisión de extremos de servidor que utiliza esta integración se ha deshabilitado para Office 365 GCC clientes.
 
       
 
     3. Confirme que se encuentra un evento reciente que contiene el evento de modo pasivo:
+    
+     ![Imagen del resultado de comprobación del modo pasivo](images/atp-verify-passive-mode.png)
 
-       ![Imagen del resultado de comprobación del modo pasivo](images/atp-verify-passive-mode.png)
-
+> [!IMPORTANT]
+>
+> - Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios de Estados Unidos, en la UE para usuarios europeos y en el Reino Unido para usuarios del Reino Unido).
+Los datos recopilados por Defender para endpoint se almacenan en la ubicación geográfica del inquilino tal como se identifica durante el aprovisionamiento.
+> - Si usa Defender para endpoint antes de usar Azure Defender, los datos se almacenarán en la ubicación que especificó al crear el inquilino, incluso si se integra con Azure Defender más adelante.
+> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, póngase en contacto con el soporte técnico de Microsoft para restablecer el espacio empresarial.
 
 
 ## <a name="verify-the-onboarding-and-installation"></a>Comprobar la incorporación e instalación
@@ -266,7 +274,7 @@ Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de dete
 Siga los pasos descritos en Ejecutar una prueba de detección en un dispositivo recién incorporado para comprobar que el servidor está informando [a](run-detection-test.md) Defender para el servicio de extremo.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 Después de incorporar dispositivos correctamente al servicio, deberá configurar los componentes individuales de Microsoft Defender para endpoint. Siga el [orden de adopción](prepare-deployment.md#adoption-order) para guiarse en la habilitación de los distintos componentes.
 
 

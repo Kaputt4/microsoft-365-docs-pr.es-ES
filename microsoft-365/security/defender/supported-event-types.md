@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender de eventos admitidos en la API de streaming de eventos
-description: Información sobre qué tipos de eventos de búsqueda (tablas) son compatibles con la API de streaming
+title: Microsoft 365 Defender de eventos de streaming admitidos en la API de streaming de eventos
+description: Información sobre qué tipos de eventos de streaming (tablas) son compatibles con la API de streaming
 keywords: Exportación de datos sin procesar, API de streaming, API, centros de eventos, almacenamiento de Azure, cuenta de almacenamiento, búsqueda, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 780cac298206127d52e14b3888a0a8d7f05ae0c5
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: e8264ccb9e3181f6b58a6206417eb2b842bec6e7
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216975"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364801"
 ---
-# <a name="supported-microsoft-365-defender-event-types-in-event-streaming-api"></a>Tipos Microsoft 365 Defender eventos admitidos en la API de streaming de eventos
+# <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>Tipos Microsoft 365 Defender eventos de streaming admitidos en la API de streaming de eventos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +38,13 @@ La API de streaming de eventos se expande constantemente para admitir más tipos
 
 ## <a name="hunting-tables-support-status-in-event-streaming-api"></a>Las tablas de búsqueda admiten el estado en la API de streaming de eventos
 
+La tabla siguiente solo incluye la lista de tablas admitidas en la API de streaming y no incluye todo el esquema AH. Para obtener una lista completa de la API, vea [Learn the schema tables](advanced-hunting-schema-tables.md#learn-the-schema-tables).
+
+
 | Nombre de tabla | Estado |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA  |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Aún no compatible |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA |
@@ -57,7 +59,5 @@ La API de streaming de eventos se expande constantemente para admitir más tipos
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Aún no compatible |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Aún no compatible |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Aún no compatible |
+
 

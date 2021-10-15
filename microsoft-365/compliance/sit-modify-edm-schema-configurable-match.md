@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo modificar un esquema de EDM para usar la coincidencia configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a409b8bad43b6a6ade81c96ae14f691289e11cec
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: a7d401c89ccff96615c4b367341542bf0ab5c697
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336051"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364704"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificar el esquema de coincidencia de datos exactos para usar la coincidencia configurable
 
@@ -48,81 +48,81 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
 
 5. Personalice el esquema para que todas las columnas usen “caseInsensitive” y/o “ignoredDelimiters”.  El valor predeterminado de "caseInsensitive" es "false" y de "ignoredDelimiters" es una cadena vacía. 
 
-> [!NOTE]
-> El tipo de información confidencial personalizado subyacente o el tipo de información confidencial integrado que se usa para detectar el patrón de regex general debe admitir la detección de las entradas de variantes que aparecen en ignoredDelimiters. Por ejemplo, el tipo de información confidencial integrado del número de la seguridad social de Estados Unidos (SSN) puede detectar variaciones en los datos que incluyen guiones, espacios o la falta de espacios entre los números agrupados que componen el SSN. Como resultado, solo los delimitadores que son relevantes para incluir en ignoredDelimiters de EDM para los datos SSN son: guion y espacio.
-
-Este es un esquema de ejemplo en el que se simula la coincidencia que no distingue mayúsculas de minúsculas creando las columnas adicionales necesarias para reconocer las variaciones de mayúsculas y minúsculas en los datos confidenciales.
-
-```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-  <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
-           <Field name="PolicyNumber" searchable="true" />
-           <Field name="PolicyNumberLowerCase" searchable="true" />
-           <Field name="PolicyNumberUpperCase" searchable="true" />
-           <Field name="PolicyNumberCapitalLetters" searchable="true" />
-  </DataStore>
-</EdmSchema>
-```
-
-En el ejemplo anterior, las variantes de la columna `PolicyNumber` original ya no serán necesarias si se agregan tanto `caseInsensitive` como `ignoredDelimiters`.
-
-Para actualizar este esquema para que EDM use coincidencias configurables, use las marcas `caseInsensitive` y `ignoredDelimiters`. Este es el aspecto:
-
-```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-  <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
-         <Field name="PolicyNumber" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
-  </DataStore>
-</EdmSchema>
-```
-
-El indicador `ignoredDelimiters` admite cualquier carácter no alfanumérico. Aquí se muestran algunos ejemplos:
-- \.
-- \-
-- \/
-- \_
-- \*
-- \^
-- \#
-- \!
-- \?
-- \[
-- \]
-- \{
-- \}
-- \\
-- \~
-- \;
-
-El indicador `ignoredDelimiters` no es compatible con:
-- caracteres 0-9
-- A-Z
-- a-z
-- \"
-- \,
-- |
+    > [!NOTE]
+    > El tipo de información confidencial personalizado subyacente o el tipo de información confidencial integrado que se usa para detectar el patrón de regex general debe admitir la detección de las entradas de variantes que aparecen en ignoredDelimiters. Por ejemplo, el tipo de información confidencial integrado del número de la seguridad social de Estados Unidos (SSN) puede detectar variaciones en los datos que incluyen guiones, espacios o la falta de espacios entre los números agrupados que componen el SSN. Como resultado, solo los delimitadores que son relevantes para incluir en ignoredDelimiters de EDM para los datos SSN son: guion y espacio.
+    
+    Este es un esquema de ejemplo en el que se simula la coincidencia que no distingue mayúsculas de minúsculas creando las columnas adicionales necesarias para reconocer las variaciones de mayúsculas y minúsculas en los datos confidenciales.
+    
+    ```xml
+    <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+      <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
+               <Field name="PolicyNumber" searchable="true" />
+               <Field name="PolicyNumberLowerCase" searchable="true" />
+               <Field name="PolicyNumberUpperCase" searchable="true" />
+               <Field name="PolicyNumberCapitalLetters" searchable="true" />
+      </DataStore>
+    </EdmSchema>
+    ```
+    
+    En el ejemplo anterior, las variantes de la columna `PolicyNumber` original ya no serán necesarias si se agregan tanto `caseInsensitive` como `ignoredDelimiters`.
+    
+    Para actualizar este esquema para que EDM use coincidencias configurables, use las marcas `caseInsensitive` y `ignoredDelimiters`. Este es el aspecto:
+    
+    ```xml
+    <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+      <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
+             <Field name="PolicyNumber" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
+      </DataStore>
+    </EdmSchema>
+    ```
+    
+    El indicador `ignoredDelimiters` admite cualquier carácter no alfanumérico. Aquí se muestran algunos ejemplos:
+    - \.
+    - \-
+    - \/
+    - \_
+    - \*
+    - \^
+    - \#
+    - \!
+    - \?
+    - \[
+    - \]
+    - \{
+    - \}
+    - \\
+    - \~
+    - \;
+    
+    El indicador `ignoredDelimiters` no es compatible con:
+    - caracteres 0-9
+    - A-Z
+    - a-z
+    - \"
+    - \,
+    - |
 
 6. Conéctese al Centro de seguridad y cumplimiento por medio de los procedimientos que se describen en [Conectar al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
-> [!NOTE]
-> Si su organización ha configurado [Clave de cliente para Microsoft 365 en el nivel de inquilino (versión preliminar pública)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la coincidencia exacta de datos usará automáticamente su funcionalidad de cifrado. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
+    > [!NOTE]
+    > Si su organización ha configurado [Clave de cliente para Microsoft 365 en el nivel de inquilino (versión preliminar pública)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la coincidencia exacta de datos usará automáticamente su funcionalidad de cifrado. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
 
 7. Actualice el esquema ejecutando estos cmdlets uno por vez:
 
-`$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
-
-`Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
+    `$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
+    
+    `Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
 8. Si es necesario, actualice el archivo de datos para que coincida con la nueva versión de esquema.
 
-> [!TIP]
-> De forma opcional, puede ejecutar una validación en el archivo CSV antes de cargarlo ejecutando lo siguiente:
->
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
->
->Para más información sobre todos los parámetros admitidos de EdmUploadAgent.exe >, ejecute
->
-> `EdmUploadAgent.exe /?`
+    > [!TIP]
+    > De forma opcional, puede ejecutar una validación en el archivo CSV antes de cargarlo ejecutando lo siguiente:
+    >
+    >`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    >
+    >Para más información sobre todos los parámetros admitidos de EdmUploadAgent.exe >, ejecute
+    >
+    > `EdmUploadAgent.exe /?`
 
 9. Abra la ventana del símbolo del sistema (como administrador) y ejecute el siguiente comando para obtener el hash y cargar los datos confidenciales:
 

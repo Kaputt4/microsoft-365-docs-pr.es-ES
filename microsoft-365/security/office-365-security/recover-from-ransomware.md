@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administradores pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2bb99111142be683c6504010576253784d3cd68
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 898456075cd0298973b94ab8b8ea700fe52f5c08
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210406"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364548"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -93,7 +93,7 @@ Restaurar archivos en OneDrive para la Empresa permite restaurar toda la OneDriv
 
 ## <a name="step-6-recover-deleted-email"></a>Paso 6: Recuperar correo electrónico eliminado
 
-En el caso excepcional de que el ransomware eliminó todo el correo electrónico, probablemente puede recuperar los elementos eliminados. Para más información vea:
+En el caso excepcional de que el ransomware eliminó todo el correo electrónico, probablemente puede recuperar los elementos eliminados. Para más información, vea:
 
 - [Recuperar mensajes eliminados en el buzón de un usuario](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -148,7 +148,7 @@ Información clave de Microsoft:
 - [La creciente amenaza de ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), entrada de blog de Microsoft On the Issues del 20 de julio de 2021
 - [Ransomware operado por humanos](/security/compass/human-operated-ransomware)
 - [Protéjase contra ransomware y extorsión de manera rápida](/security/compass/protect-against-ransomware)
-- [El informe de inteligencia de seguridad de Microsoft más reciente](https://www.microsoft.com/securityinsights/) (vea las páginas 22-24)
+- [Informe de Microsoft Digital Defense 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (vea las páginas 10-19)
 - **Ransomware: Un informe de amenazas generalizado y continuo** en el nodo del **Análisis de amenazas** del portal de Microsoft 365 Defender (consulte estos [requisitos de licencia](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365:

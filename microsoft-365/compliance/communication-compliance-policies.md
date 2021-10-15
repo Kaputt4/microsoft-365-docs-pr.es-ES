@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ddfa1a9e0e4fb622b03cec09429370fa25a2f11f
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: ae0c68ec8b8c34679c0dbf5bce1570f558831af3
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336083"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364728"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -223,7 +223,7 @@ Si desea reducir la cantidad de contenido que se va a revisar, puede especificar
 
 ## <a name="alert-policies"></a>Directivas de alerta
 
-Después de configurar una directiva, se crea automáticamente una directiva de alerta correspondiente y se generan alertas para los mensajes que coinciden con las condiciones definidas en la directiva. Puede tardar hasta 24 horas después de crear una directiva de inicio para recibir alertas de indicadores de actividad. De forma predeterminada, todos los desencadenadores de alerta de coincidencias de directiva tienen asignado un nivel de gravedad de medio en la directiva de alerta asociada. Las alertas se generan para una directiva de cumplimiento de comunicaciones una vez que se cumple el nivel de umbral de desencadenador de agregación en la directiva de alerta asociada.
+Después de configurar una directiva, se crea automáticamente una directiva de alerta correspondiente y se generan alertas para los mensajes que coinciden con las condiciones definidas en la directiva. Puede tardar hasta 24 horas después de crear una directiva de inicio para recibir alertas de indicadores de actividad. De forma predeterminada, todos los desencadenadores de alerta de coincidencias de directiva tienen asignado un nivel de gravedad de medio en la directiva de alerta asociada. Las alertas se generan para una directiva de cumplimiento de comunicaciones una vez que se cumple el nivel de umbral de desencadenador de agregación en la directiva de alerta asociada. Se envía una notificación de correo electrónico una vez cada 24 horas para las alertas, independientemente del número de mensajes individuales que coincidan con las condiciones de la directiva. Por ejemplo, Contoso tiene habilitada una directiva de idioma ofensivo y, para el 1 de enero, hubo 100 coincidencias de directiva que generaron 6 alertas. Una única notificación por correo electrónico para las 6 alertas se envía a finales del 1 de enero.
 
 Para las directivas de cumplimiento de comunicaciones, los siguientes valores de directiva de alerta están configurados de forma predeterminada:
 

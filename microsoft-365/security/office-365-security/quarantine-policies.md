@@ -16,14 +16,17 @@ ms.collection:
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6b7ee1d93023e18beb1a0858151474fcf048721
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c8e8e81f44ab50ef0f670589551cb529a5c6ab6f
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208978"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364861"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
+
+> [!NOTE]
+> Las características que se describen en este artículo están en proceso de implantarse y es posible que aún no esté disponible. La fecha de destino del lanzamiento mundial es el 31 de octubre de 2021.
 
 Las directivas de cuarentena (anteriormente conocidas como etiquetas de _cuarentena)_ en Exchange Online Protection (EOP) y Microsoft Defender para Office 365 permiten a los administradores controlar lo que los usuarios pueden hacer con los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena.
 
@@ -92,7 +95,7 @@ Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Def
        - **Permitir que los destinatarios liberen un mensaje de cuarentena**
        - **Permitir que los destinatarios soliciten un mensaje que se liberará de la cuarentena**
      - **Seleccionar acciones adicionales que los** destinatarios pueden realizar en mensajes en cuarentena: seleccione algunos, todos o ninguno de los siguientes valores:
-       - **Delete**
+       - **Eliminar**
        - **Versión preliminar**
        - **Bloquear remitente**
 
@@ -166,7 +169,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ne
 
 Para crear una directiva de cuarentena mediante el _parámetro EndUserQuarantinePermissionsValue,_ siga estos pasos:
 
-A. Almacene un objeto de permisos de cuarentena en una variable mediante el cmdlet **New-QuarantinePermissions.**
+R. Almacene un objeto de permisos de cuarentena en una variable mediante el cmdlet **New-QuarantinePermissions.**
 
 <p>
 
@@ -226,7 +229,7 @@ En _las características de_ protección admitidas que ponen en cuarentena los m
 |Directivas de protección contra phishing: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>Protección de suplantación:<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul></li></ul>|
 |[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
 |[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
-|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|No aplicable|
+|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|N/D|
 |
 
 Las directivas de cuarentena predeterminadas, los grupos de permisos preestablecidos y los permisos se describen al [principio de este artículo](#quarantine-policies) y más adelante en este [artículo](#preset-permissions-groups).
@@ -699,7 +702,7 @@ Si la directiva de cuarentena asigna los **permisos de** acceso completo (todos 
 
 - **Notificaciones en cuarentena:** los botones siguientes están disponibles:
   - **Bloquear remitente**
-  - **Versión**
+  - **Release**
   - **Revisar**
 
   ![Botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total.](../../media/quarantine-tags-esn-full-access.png)

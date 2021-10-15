@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Los usuarios pueden aprender a ver y actuar en mensajes en cuarentena que se enviaron a buzones compartidos a los que tienen permisos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d98e228bc966dd95210276ad3ad86543c3ac711f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e78a46bca97ea58a88195c9d05e11332528cf3af
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196278"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364873"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Ver y liberar mensajes en cuarentena de buzones compartidos
 
@@ -36,17 +36,11 @@ Anteriormente, la capacidad de los usuarios para administrar los mensajes en cua
 Ahora, la automapping ya no es necesaria para que los usuarios administren los mensajes en cuarentena que se enviaron a buzones compartidos. Solo funciona. Hay dos métodos diferentes para obtener acceso a los mensajes en cuarentena que se enviaron a un buzón compartido:
 
 - Si el administrador [](quarantine-policies.md) ha configurado directivas de cuarentena para permitir notificaciones de cuarentena (anteriormente conocidas como notificaciones de correo  no deseado del usuario final), cualquier usuario que tenga acceso a las notificaciones de cuarentena en el buzón compartido puede hacer clic en el botón Revisar de la notificación para pasar a la cuarentena en el portal de Microsoft 365 Defender. Tenga en cuenta que este método solo permite a los usuarios administrar mensajes en cuarentena que se enviaron al buzón compartido. Los usuarios no pueden administrar sus propios mensajes de cuarentena en este contexto.
-- El usuario puede [ir a la cuarentena en el portal de Microsoft 365 Defender .](find-and-release-quarantined-messages-as-a-user.md) De forma predeterminada, solo se muestran los mensajes que se enviaron al usuario. Sin embargo, el usuario puede  cambiar los resultados de ordenación **(el** botón Id. de  mensaje de forma predeterminada) a Dirección de correo electrónico del **destinatario,** escribir la dirección de correo electrónico del buzón compartido y, a continuación, hacer clic en Actualizar para ver los mensajes en cuarentena que se enviaron al buzón compartido.
-
-  ![Ordenar los mensajes en cuarentena por dirección de correo electrónico del destinatario.](../../media/quarantine-sort-results-by-recipient-email-address.png)
-
-Independientemente del método, los usuarios pueden evitar confusiones al incluir la **columna Recipient** para los mensajes en cuarentena. El número máximo de columnas que se van a mostrar es 7, por lo que el usuario tendrá  que hacer clic en Modificar **columnas,** quitar una columna existente (por **ejemplo,** Tipo de directiva), seleccionar Destinatario **y,** a continuación, hacer clic en Guardar o Guardar como valor **predeterminado.**
-
-  ![Quite la columna Tipo de directiva y agregue la columna Destinatario a la cuarentena.](../../media/quarantine-add-recipient-column.png)
+- El usuario puede [pasar a la](find-and-release-quarantined-messages-as-a-user.md) cuarentena en  el portal de Microsoft 365 Defender y hacer clic en Filtrar para filtrar los resultados por dirección de destinatario **(la** dirección de correo electrónico del buzón compartido). En la página **cuarentena** principal, puede hacer clic en la columna **Destinatario** para ordenar por mensajes que se enviaron al buzón compartido.
 
 ## <a name="things-to-keep-in-mind"></a>Aspectos importantes
 
-- _Las directivas de_ cuarentena definen lo que los usuarios pueden hacer o no hacer en los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características admitidas). Las directivas de cuarentena predeterminadas aplican las capacidades históricas que permiten a los destinatarios ver y actuar en los mensajes. Los administradores pueden crear y aplicar directivas de cuarentena personalizadas que definen capacidades menos restrictivas o más restrictivas para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+- _Las directivas de_ cuarentena definen lo que los usuarios pueden hacer o no hacer en los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características admitidas). Las directivas de cuarentena predeterminadas aplican las capacidades históricas que permiten a los destinatarios ver y actuar en los mensajes. Los administradores pueden crear y aplicar directivas de cuarentena personalizadas que definen capacidades menos restrictivas o más restrictivas para los usuarios. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
 - El primer usuario que actúa en el mensaje en cuarentena decide el destino del mensaje para todos los usuarios que usan el buzón compartido. Por ejemplo, si 10 usuarios tienen acceso a un buzón compartido y un usuario decide eliminar el mensaje en cuarentena, el mensaje se elimina para los 10 usuarios. Del mismo modo, si un usuario decide liberar el mensaje, se libera en el buzón compartido y es accesible para todos los demás usuarios del buzón compartido.
 

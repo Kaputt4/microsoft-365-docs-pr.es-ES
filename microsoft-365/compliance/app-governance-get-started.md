@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: bb5fa0e54eadec89124c39a350b7591be82b7583
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 8998a0e4f6cf01a7394e44695cd06f0b60915c7e
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335883"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364740"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
@@ -101,7 +101,6 @@ Se requiere uno de los siguientes roles de administrador para ver las páginas d
 - Administrador de la empresa
 - Administrador de cumplimiento
 - Administrador de datos de cumplimiento
-- Lector de cumplimiento (solo lectura)
 - Lector global
 - Administrador de seguridad
 - Operador de seguridad
