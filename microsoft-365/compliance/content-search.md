@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: 873a6e10117f1573b4679c14f054dd15c2c16949
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e3d8ee540ab403eb2e3ebeaf930d498599be530a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175376"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364692"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 
-Puede usar la herramienta de eDiscovery de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar contenido local como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización. Use esta herramienta para buscar contenido en estos orígenes de datos de Microsoft 365:
+Puede usar la herramienta de eDiscovery de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar contenido local como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización. Use esta herramienta para buscar contenido en estos orígenes de datos de Microsoft 365 basados en la nube:
   
 - Buzones de correo de Exchange Online
 
@@ -43,13 +43,17 @@ Puede usar la herramienta de eDiscovery de búsqueda de contenido en el Centro d
 
 Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de contenido y un número estimado de resultados de la búsqueda en la página flotante de búsqueda. Puede ver rápidamente estadísticas como las ubicaciones de contenido con la mayor cantidad de elementos encontrados por la consulta de búsqueda. Después de ejecutar una búsqueda, puede obtener una vista previa de los resultados o exportarlos a un equipo local.
 
-## <a name="create-and-run-a-search"></a>Crear y ejecutar una búsqueda
+## <a name="before-you-run-a-search"></a>Antes de ejecutar una búsqueda
 
-Para acceder a la página de **búsqueda de contenido** enel Centro de cumplimiento de Microsoft 365 (para ejecutar búsquedas y obtener una vista previa de los resultados y exportar resultados), un administrador, responsable de cumplimiento o administrador de exhibición de documentos electrónicos debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Para obtener más información, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Para acceder a la página de herramienta de Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 (para ejecutar búsquedas y obtener una vista previa de los resultados y exportar resultados), un administrador, responsable de cumplimiento o administrador de exhibición de documentos electrónicos debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Para más información, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+
+- En una implementación de Exchange híbrida, no puede usar la herramienta de búsqueda de contenido para buscar buzones locales. Solo puede usar la herramienta para buscar buzones basados en la nube.
+
+## <a name="create-and-run-a-search"></a>Crear y ejecutar una búsqueda
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta a la que se han asignado los permisos adecuados.
 
-2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, luego, seleccione **Búsqueda de contenido**.
+2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Búsqueda de contenido**.
 
 3. En la página **Búsqueda de contenido**, haga clic en **Nueva búsqueda**.
 
@@ -62,7 +66,7 @@ Para acceder a la página de **búsqueda de contenido** enel Centro de cumplimie
 
     ![Elegir las ubicaciones de contenido para colocar en suspensión.](../media/ContentSearchLocations.png)
   
-   1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede buscar en el buzón asociado a un equipo de Microsoft (para los mensajes del canal), grupo de Office 365 y grupo de Yammer. Para más información sobre los datos de la aplicación almacenados en buzones, vea [Contenido almacenado en buzones de eDiscovery](what-is-stored-in-exo-mailbox.md).
+   1. **Buzones de Exchange**: establezca el botón de alternancia en **Activado** y después haga clic en **Elegir usuarios, grupos o equipos** para especificar los buzones para colocar en suspensión. Use el cuadro de búsqueda para buscar buzones de usuario y grupos de distribución. También puede buscar en el buzón asociado a un equipo de Microsoft (para los mensajes del canal), grupo de Office 365 y grupo de Yammer. Para más información sobre los datos de la aplicación almacenados en buzones, vea [Contenido almacenado en buzones de eDiscovery](what-is-stored-in-exo-mailbox.md).
 
    2. **Sitios de SharePoint**: establezca el botón de alternancia en **Activado** y haga clic en **Elegir sitios** para especificar los sitios de SharePoint y las cuentas de OneDrive que se deben colocar en suspensión. Escriba la dirección URL de cada sitio que quiere colocar en suspensión. También puede agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Office 365 o un grupo de Yammer.
   
