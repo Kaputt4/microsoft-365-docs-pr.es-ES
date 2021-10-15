@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 858149ce169d335924a643e3c90b895906d28d9b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1c06cdf9492fa18797bfbf25f8153fa347137ced
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170636"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335603"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -209,7 +209,7 @@ Para las etiquetas de retención estándar (no marcan los elementos como un [reg
 
 - Los administradores y los usuarios finales pueden cambiar o quitar manualmente una etiqueta de retención existente que se aplique al contenido. 
 
-- Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con una posible excepción: si la etiqueta existente se aplicó como etiqueta predeterminada.
+- Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con una posible excepción: si la etiqueta existente se aplicó como etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra etiqueta predeterminada o quitarse automáticamente. 
     
     Para más información sobre el comportamiento de la etiqueta cuando se aplica utilizando una etiqueta predeterminada:
     - Etiqueta predeterminada para SharePoint: [El comportamiento de la etiqueta cuando se usa una etiqueta predeterminada para SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
@@ -526,4 +526,4 @@ Si ha configurado los sitios de SharePoint para directivas de tipo de contenido 
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de retención.
+Consulte [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de retención.

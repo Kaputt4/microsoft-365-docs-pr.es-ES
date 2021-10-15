@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5fa3ad73ffbc869a700776319477c5ab3128cae5
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 3edb4307937bcf76a87f9bbdf8930a646794156e
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268759"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335835"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -418,10 +418,10 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
         [Actividades del cumplimiento de comunicaciones](#communication-compliance-activities)
     :::column-end:::
     :::column:::
-        [Actividades de administración de Exchange](#exchange-admin-audit-log)
+        [Actividades de informe](#report-activities)
     :::column-end:::
     :::column:::
-        
+        [Actividades de administración de Exchange](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
 
@@ -587,8 +587,8 @@ La siguiente tabla enumera la sincronización de archivos de actividades en Shar
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-|Equipo permitido para sincronizar archivos|ManagedSyncClientAllowed|El usuario establece correctamente una relación de sincronización con un sitio. La relación de sincronización es correcta porque el equipo del usuario es un miembro de un dominio que se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros*) que puede obtener acceso a las bibliotecas de documentos de su organización. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
-|Computadora bloqueada de los archivos de sincronización|UnmanagedSyncClientBlocked|El usuario intenta establecer una relación de sincronización con un sitio desde una computadora que no es un miembro del dominio de la organización o es un miembro de un dominio que no se ha agregado a la lista de dominios (denominada la *lista de destinatarios seguros)* que puede tener acceso a las librerías de documentos de su organización. La relación de sincronización no se permite y el equipo del usuario queda bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
+|Equipo permitido para sincronizar archivos|ManagedSyncClientAllowed|El usuario establece correctamente una relación de sincronización con un sitio. La relación de sincronización es correcta porque el equipo del usuario es miembro de un dominio que se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
+|Computadora bloqueada de los archivos de sincronización|UnmanagedSyncClientBlocked|El usuario intenta establecer una relación de sincronización con un sitio desde un equipo que no es un miembro del dominio de la organización o es un miembro de un dominio que no se ha agregado a la lista de dominios (denominada la *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. La relación de sincronización no se permite y el equipo del usuario está bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos.<br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
 |Archivos descargados al equipo|FileSyncDownloadedFull|El usuario establece una relación de sincronización y descarga archivos correctamente la primera vez a su equipo desde la biblioteca de documentos.|
 |Cambios de archivos descargados al equipo|FileSyncDownloadedPartial|El usuario descarga correctamente cualquier cambio a los archivos de una librería de documentos. Esta actividad indica que cualquier cambio que se realice en los archivos de la librería de documentos se descarga en el equipo del usuario. Solo se descargaron los cambios porque la biblioteca de documentos se había descargado anteriormente por el usuario (como se indica en la actividad **Archivos descargados al equipo**).|
 |Archivos cargados a la biblioteca de documentos|FileSyncUploadedFull|El usuario establece una relación de sincronización y carga archivos correctamente la primera vez desde su equipo a la biblioteca de documentos.|
@@ -1026,7 +1026,7 @@ En la tabla siguiente se enumeran las actividades del correo de Informe de tarea
 - [Configurar el correo de informe de tareas pendientes](/Briefing/be-admin)
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
-|:-----|:-----|:-----|
+|:----|:-----|:-----|
 |Configuración actualizada de privacidad de la organización|UpdatedOrganizationBriefingSettings|El administrador actualiza la configuración de privacidad de la organización para el correo de informe de tareas pendientes. |
 |Configuración actualizada de privacidad del usuario|UpdatedUserBriefingSettings|Configuración de privacidad del usuario de actualizaciones de administrador para el correo de informe de tareas pendientes.
 ||||
@@ -1073,6 +1073,15 @@ En la tabla siguiente se enumeran las actividades de cumplimiento de comunicacio
 |Actualización de directiva|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|Un administrador de cumplimiento de comunicaciones ha realizado una actualización de directiva.|
 |Coincidencia de directiva|SupervisionRuleMatch|Un usuario ha enviado un mensaje que coincide con la condición de una directiva.|
 |Etiqueta aplicada a los mensajes|SupervisoryReviewTag|Las etiquetas se aplican a los mensajes o se resuelven los mensajes.|
+||||
+
+### <a name="report-activities"></a>Actividades de informe
+
+En la tabla siguiente se enumeran las actividades de los informes de uso que se registran en el registro de auditoría de Microsoft 365.
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Configuración de privacidad del informe de uso actualizada|UpdateUsageReportsPrivacySetting|El administrador ha actualizado la configuración de privacidad de los informes de uso. |
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange

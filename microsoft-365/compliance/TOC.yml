@@ -36,10 +36,14 @@
           href: communication-compliance-plan.md
         - name: Introducción al cumplimiento de las comunicaciones
           href: communication-compliance-configure.md
+        - name: Detección de señales de canal con cumplimiento de comunicaciones
+          href: communication-compliance-channels.md
+        - name: Crear y administrar directivas de cumplimiento de comunicaciones
+          href: communication-compliance-policies.md
         - name: Investigar y corregir las alertas de cumplimiento de las comunicaciones
           href: communication-compliance-investigate-remediate.md
-        - name: Referencia de características para el cumplimiento de las comunicaciones
-          href: communication-compliance-feature-reference.md
+        - name: Más información sobre los informes de cumplimiento de comunicaciones y auditorías
+          href: communication-compliance-reports-audits.md
         - name: Cumplimiento de comunicaciones con soluciones de SIEM
           href: communication-compliance-siem.md
         - name: 'Caso práctico: Contoso configura rápidamente una directiva de lenguaje ofensivo'
@@ -343,16 +347,6 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Referencia de sugerencias de directiva de prevención de pérdida de datos
               href: dlp-policy-tips-reference.md
-        - name: Solución de problemas de DLP
-          items:
-            - name: Solución de problemas de sugerencias de directiva DLP
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-policy-tips.md
-            - name: "Los cambios en una directiva DLP no surten efecto en Outlook\_2013 en Office\_365"
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-not-work.md
-            - name: Las sugerencias de directiva DLP en el Centro de cumplimiento no funcionan en OWA o Outlook
-              href: /office365/troubleshoot/data-loss-prevention/dlp-tips-not-work.md
-            - name: "Cómo solucionar problemas de sugerencias de directiva DLP en Exchange Online Protection en Office\_365"
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-tips.md
 - name: Administrar el gobierno de información
   items:
     - name: Gobierno de datos
@@ -629,6 +623,8 @@
           href: app-governance-detect-remediate-overview.md
         - name: Introducción
           href: app-governance-detect-remediate-get-started.md
+        - name: Supervisión y respuesta a aplicaciones con uso de datos inusual
+          href: app-governance-monitor-apps-unusual-data-usage.md
         - name: Investigar las alertas de detección de anomalías
           href: app-governance-anomaly-detection-alerts.md
         - name: Corrija las amenazas de la aplicación
