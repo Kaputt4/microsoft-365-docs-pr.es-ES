@@ -1,5 +1,5 @@
 ---
-title: Antivirus de Microsoft Defender
+title: Antivirus de Microsoft Defender en Windows
 description: Información sobre cómo administrar, configurar y usar Antivirus de Microsoft Defender, una protección integrada antimalware y antivirus.
 keywords: Antivirus de Microsoft Defender, windows defender, antimalware, scep, protección de punto de conexión del centro del sistema, administrador de configuración del centro del sistema, virus, malware, amenazas, detección, protección, seguridad
 search.product: eADQiWindows 10XVcnh
@@ -16,18 +16,21 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 585fa260452a69572f6498429f3675af22ca8479
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7de844673c12b1bc72853f07683da47deaa5aae1
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174644"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335895"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Antivirus de Microsoft Defender en Windows
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- Antivirus de Microsoft Defender
+
+Antivirus de Microsoft Defender está disponible en Windows 10, Windows 11 y en versiones de Windows Server.
 
 Antivirus de Microsoft Defender es el mayor componente de protección de nueva generación en Microsoft Defender para punto de conexión. Esta protección reúne el aprendizaje automático, el análisis de macrodatos, la investigación de resistencia contra amenazas en profundidad y la infraestructura de nube de Microsoft para proteger a los dispositivos (o puntos de conexión) en la organización. El antivirus de Microsoft Defender está integrado en Windows y funciona con Microsoft Defender para punto de conexión para proporcionar protección en el dispositivo y en la nube.
 
@@ -39,16 +42,13 @@ Si usa un producto antimalware o antivirus que no es de Microsoft en el disposit
 
 En la tabla siguiente se describe qué esperar cuando el Antivirus de Microsoft Defender está en modo activo, en modo pasivo o deshabilitado.
 
-<br>
+<br/><br/>
 
-****
-
-|Modo|Qué ocurre|
+| Modo | Qué ocurre |
 |---|---|
-|Modo activo|En modo activo, el Antivirus de Microsoft Defender se usa como la aplicación antivirus principal en el dispositivo. Los archivos se examinan, se corrigen las amenazas y las amenazas detectadas se enumeran en los informes de seguridad de la organización y en la aplicación de Seguridad de Windows.|
-|Modo pasivo|En modo pasivo, el Antivirus de Microsoft Defender no se usa como la aplicación antivirus principal en el dispositivo. Los archivos se examinan y se notifican las amenazas detectadas, pero el Antivirus de Microsoft Defender no corrige las amenazas. <p> **IMPORTANTE**: El Antivirus de Microsoft Defender solo se puede ejecutar en modo pasivo en los puntos de conexión que se incorporan a Microsoft Defender para punto de conexión. Consulte [Requisitos para que el Antivirus de Microsoft Defender se ejecute en modo pasivo](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).|
-|Deshabilitado o desinstalado|Cuando se deshabilita o desinstala, no se usa el Antivirus de Microsoft Defender. Los archivos no se examinan y las amenazas no se corrigen. En general, no se recomienda deshabilitar o desinstalar el Antivirus de Microsoft Defender.|
-|
+| Modo activo | En modo activo, el Antivirus de Microsoft Defender se usa como la aplicación antivirus principal en el dispositivo. Los archivos se examinan, se corrigen las amenazas y las amenazas detectadas se enumeran en los informes de seguridad de la organización y en la aplicación de Seguridad de Windows. |
+| Modo pasivo | En modo pasivo, el Antivirus de Microsoft Defender no se usa como la aplicación antivirus principal en el dispositivo. Los archivos se examinan y se notifican las amenazas detectadas, pero el Antivirus de Microsoft Defender no corrige las amenazas. <br/><br/> **IMPORTANTE**: El Antivirus de Microsoft Defender solo se puede ejecutar en modo pasivo en los puntos de conexión que se incorporan a Microsoft Defender para punto de conexión. Consulte [Requisitos para que el Antivirus de Microsoft Defender se ejecute en modo pasivo](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode). |
+| Deshabilitado o desinstalado | Cuando se deshabilita o desinstala, no se usa el Antivirus de Microsoft Defender. Los archivos no se examinan y las amenazas no se corrigen. En general, no se recomienda deshabilitar o desinstalar el Antivirus de Microsoft Defender. |
 
 Para más información, consulte [Compatibilidad con Antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
 

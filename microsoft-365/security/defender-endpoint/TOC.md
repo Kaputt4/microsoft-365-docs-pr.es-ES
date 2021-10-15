@@ -176,6 +176,7 @@
 
 ##### [Configurar]()
 ###### [Configurar Microsoft Defender para punto de conexión en funciones de Android](android-configure.md)
+###### [Configurar señales de riesgo de Microsoft Defender para punto de conexión mediante la directiva de protección de aplicaciones](android-configure-mam.md)
 
 ##### [Privacidad]()
 ###### [Microsoft Defender para punto de conexión en Android: información de privacidad](android-privacy.md)

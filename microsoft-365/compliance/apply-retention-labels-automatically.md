@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: eeeda9a41f35f6380d2d20adf80b00bc80ba4c4e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed123a772d3c3db23f4519beeb32903bb43267a7
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198774"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335771"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -41,7 +41,7 @@ Las etiquetas de retención auto aplicadas son poderosas porque:
     
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
     
-Las etiquetas de retención se pueden aplicar a contenido automáticamente cuando dicho contenido contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores que se puedan entrenar](classifier-get-started-with.md).
+Puede aplicar etiquetas de retención al contenido automáticamente cuando ese contenido aún no tiene aplicada una etiqueta de retención y contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores entrenables](classifier-get-started-with.md).
 
 > [!TIP]
 > Use las propiedades que se pueden buscar para identificar [Grabaciones de reuniones de Teams](#microsoft-teams-meeting-recordings) y [elementos que tienen aplicada una etiqueta de confidencialidad](#identify-files-and-emails-that-have-a-sensitivity-label).
@@ -83,15 +83,16 @@ Las instrucciones de navegación dependerán de si está usando o no la [adminis
     
     ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo**. 
 
-2. Siga las instrucciones del asistente. Si utiliza la administración de registros:
+2. Siga las indicaciones de la configuración. Si utiliza la administración de registros:
     
     - Para obtener información sobre los descriptores del plan de archivos, consulte [Usar plan de archivos para administrar etiquetas de retención](file-plan-manager.md) 
     
     - Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplique la etiqueta automáticamente o simplemente guárdela: seleccione **Aplicar esta etiqueta automáticamente a un tipo de contenido específico** y luego, seleccione **Finalizado** para iniciar el Asistente para la creación de etiquetas automáticas, que lo llevará directamente al paso 2 del procedimiento siguiente.
+3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplique la etiqueta automáticamente o simplemente guárdela: seleccione **Aplicar esta etiqueta automáticamente a un tipo de contenido específico** y seleccione **Finalizado** 
+4.  que le lleva directamente al paso 2 del procedimiento siguiente.
 
-Para editar una etiqueta existente, selecciónela y después seleccione la opción **Editar etiqueta** para iniciar el Asistente de edición de etiquetas de retención, el cual le permite cambiar las descripciones de las etiquetas, así como cualquier [configuración que cumpla con los requisitos](#updating-retention-labels-and-their-policies) del paso 2.
+Para editar una etiqueta existente, selecciónela y seleccione la opción **Editar etiqueta** para iniciar la configuración **Editar etiqueta de retención** que le permite cambiar las descripciones de las etiquetas y cualquier [configuración válida](#updating-retention-labels-and-their-policies) del paso 2.
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>Paso 2: Cree una directiva de aplicación automática
 
@@ -107,15 +108,18 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
     
     ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo**. 
 
-2. Siga las indicaciones del Asistente para la creación de etiquetas automáticas.
+2. Siga las indicaciones para crear la configuración de etiquetado automático.
     
     Para obtener información sobre la configuración de las condiciones que aplican automáticamente la etiqueta de retención, consulte la sección [Configuración de las condiciones para la aplicación automática de etiquetas de retención en](#configuring-conditions-for-auto-apply-retention-labels) esta página.
     
     Para obtener información sobre las ubicaciones compatibles con las etiquetas de retención, vea la sección [Etiquetas de retención y ubicaciones](retention.md#retention-label-policies-and-locations).
 
-Para editar una directiva existente de aplicación automática, selecciónela para iniciar el Asistente para editar directivas de retención, el cual le permite cambiar la etiqueta de retención seleccionada, así como cualquier [configuración que cumpla con los requisitos](#updating-retention-labels-and-their-policies) del paso 2.
+Para editar una directiva de aplicación automática existente, selecciónela para iniciar la configuración **Editar directiva de retención** que le permite cambiar la etiqueta de retención seleccionada y cualquier [configuración válida](#updating-retention-labels-and-their-policies) del paso 2.
 
 Después de etiquetar el contenido con una directiva de la etiqueta de aplicación automática, la etiqueta aplicada no se puede quitar o cambiar automáticamente cambiando el contenido o la directiva, o mediante una nueva directiva de etiqueta de aplicación automática. Para obtener más información, consulte [Solo una etiqueta de retención a la vez](retention.md#only-one-retention-label-at-a-time).
+
+> [!NOTE]
+> Una directiva de etiqueta de retención de aplicación automática nunca reemplazará una etiqueta de retención existente que se aplique al contenido. Si quiere volver a etiquetar el contenido mediante las condiciones que configure, deberá quitar manualmente la etiqueta de retención actual del contenido existente.
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configurar las condiciones para la aplicación automática de etiquetas de retención
 
