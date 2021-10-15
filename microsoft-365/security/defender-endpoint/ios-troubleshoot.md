@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 809954847f1ef96f3efae1b243061af4f573a21e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad31350c8936b1a7303050397e43f61408fe1be8
+ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199806"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60386228"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -64,7 +64,9 @@ Microsoft Defender para endpoint VPN puede coexistir con otras VPN configuradas 
 
 ## <a name="battery-consumption"></a>Consumo de batería
 
-En la Configuración, iOS solo muestra el uso de batería de aplicaciones que son visibles para el usuario durante un período de tiempo específico. El uso de la batería por parte de las aplicaciones mostradas en la pantalla solo es durante ese tiempo y lo calcula iOS en función de una gran variedad de factores, incluido el uso de la CPU y la red. Microsoft Defender para endpoint usa una VPN local/loop-back en segundo plano para comprobar el tráfico web en busca de sitios web o conexiones malintencionadas. Los paquetes de red de cualquier aplicación pasan por esta comprobación y eso hace que el uso de la batería de Microsoft Defender para Endpoint se calcule incorrectamente. El consumo real de batería de Microsoft Defender para Endpoint es mucho menor que lo que se muestra en la página Battery Configuración en el dispositivo.
+Para proporcionar protección continua contra amenazas basadas en web, Microsoft Defender for Endpoint debe ejecutarse en segundo plano en todo momento. Esto puede provocar un aumento menor en el consumo de batería general del dispositivo.
+
+Además, en la Configuración, iOS solo muestra el uso de batería de aplicaciones que son visibles para el usuario durante un período de tiempo específico. El uso de la batería por parte de las aplicaciones mostradas en la pantalla solo es durante ese tiempo y lo calcula iOS en función de una gran variedad de factores, incluido el uso de la CPU y la red. Microsoft Defender para endpoint usa una VPN local/loop-back en segundo plano para comprobar el tráfico web en busca de sitios web o conexiones malintencionadas. Los paquetes de red de cualquier aplicación pasan por esta comprobación y eso hace que el uso de la batería de Microsoft Defender para Endpoint se calcule incorrectamente. El consumo real de batería de Microsoft Defender para Endpoint es menor que lo que se muestra en la página De Configuración batería en el dispositivo.
 
 En promedio, el uso de batería por día por parte de Microsoft Defender para endpoint que se ejecuta en segundo plano es aproximadamente el **8,81 %** de la batería total consumida en ese día. Apple informa de esta métrica en función del uso real de Microsoft Defender para Endpoint en dispositivos de usuario final y debido a los motivos mencionados anteriormente también se pueden tener en cuenta en otras aplicaciones que tienen actividad de red.
 
@@ -93,10 +95,10 @@ Además, se muestra una notificación en el dispositivo iOS. Al pulsar en la not
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>El dispositivo no se ve en la consola de Defender for Endpoint después de la incorporación.
 
-Después de la incorporación, el dispositivo tarda unas horas en aparecer en el inventario de dispositivos en la consola de seguridad de Defender para endpoints. Además, asegúrate de que el dispositivo esté registrado correctamente con Azure Active Directory dispositivo tenga conectividad a Internet. Para una incorporación correcta, el dispositivo debe registrarse a través de Microsoft Authenticator o Portal de empresa de Intune y el usuario debe iniciar sesión con la misma cuenta con la que el dispositivo está registrado en Azure AD.
+Después de la incorporación, el dispositivo tarda unas horas en aparecer en el inventario de dispositivos en la consola de seguridad de Defender para endpoints. Además, asegúrate de que el dispositivo esté registrado correctamente con Azure Active Directory dispositivo tenga conectividad a Internet. Para una incorporación correcta, el dispositivo debe registrarse a través de Microsoft Authenticator o Portal de empresa de Intune y el usuario debe iniciar sesión con la misma cuenta con la que el dispositivo está registrado con Azure AD.
 
 > [!NOTE]
-> A veces, el nombre del dispositivo no es coherente con el de Microsoft Endpoint Manager (Intune). El nombre del dispositivo en la consola defender para endpoint tiene el formato <username_iPhone/iPad modelo>. También puedes usar el id. de dispositivo de Azure AD para identificar el dispositivo en la consola de Defender para endpoint.
+> A veces, el nombre del dispositivo no es coherente con el de Microsoft Endpoint Manager (Intune). El nombre del dispositivo en la consola defender para endpoint tiene el formato <username_iPhone/iPad modelo>. También puedes usar el Azure AD de dispositivo para identificar el dispositivo en la consola de Defender para endpoint.
 
 ## <a name="data-and-privacy"></a>Datos y privacidad
 

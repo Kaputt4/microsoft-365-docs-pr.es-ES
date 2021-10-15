@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre Microsoft 365 Business Voice.
-ms.openlocfilehash: ef3c0d08ac2a419e8d15b825272f6689f6cd3eaf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e95a472ee70e38851dc0552968d2494304be1df4
+ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199062"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60386175"
 ---
 # <a name="overview-of-business-voice"></a>Información general de Business Voice
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4C56M?autoplay=false]
 
-Microsoft 365 Business Voice proporciona y un sistema telefónico basado en la nube de extremo a extremo para su empresa y sus empleados.
+Microsoft 365 Business Voice proporciona un sistema telefónico completo basado en la nube para su empresa y sus empleados.
 
 ## <a name="what-is-business-voice"></a>What is Business Voice
 
@@ -49,7 +49,7 @@ Business Voice va a todas partes porque forma parte de Microsoft Teams. Por lo t
 
 1. Compre el Microsoft 365 Business Voice complemento a una suscripción de Microsoft 365 existente.
 1. Asegúrese de obtener una licencia para todos los empleados que necesiten un número de teléfono empresarial para realizar y recibir llamadas con personas ajenas a su empresa.
-1. Al configurar Business Voice, recibirás nuevos números de teléfono para tu empresa y empleados. Debe hacerlo incluso si tiene previsto importar los números de negocio existentes más adelante.
+1. Al configurar Business Voice, recibirás nuevos números de teléfono para tu empresa y empleados. Haga esto incluso si planea importar los números de negocio existentes más adelante.
 1. Si quieres números gratuitos o la posibilidad de llamar a cualquier número internacionalmente, compra créditos de comunicación para tu empresa, lo que proporciona minutos de llamadas más allá de lo que se incluye con Business Voice.
 1. Crea un saludo para tus clientes cargando una grabación o escribiendo un mensaje y convertiremos el texto en voz.
 1. A continuación, cree un menú de enrutamiento de llamadas desde su número de negocio principal que dirija a los clientes a la persona o departamento adecuados por voz o las claves de su teléfono. Puede programar un saludo y un menú diferentes para días festivos o después del horario laboral.
@@ -60,4 +60,4 @@ Business Voice va a todas partes porque forma parte de Microsoft Teams. Por lo t
 
 Para realizar una llamada telefónica, abre la aplicación Teams en el equipo, tableta o teléfono y elige Llamadas. Verás el número de teléfono asignado y el panel de marcado que puedes usar para llamar a cualquier número. O bien, selecciona cualquiera de tus contactos Outlook o el teléfono y llámelos directamente.
 
-Llega una llamada, se le pedirá que acepte o ignore la llamada, similar a la experiencia en cualquier teléfono normal. Si es necesario, reenvía llamadas o llama a varios dispositivos para asegurarte de que no te pierdas ninguna llamada importante de tus clientes.
+Cuando llegue una llamada, se te pedirá que aceptes o ignores la llamada, similar a la experiencia en cualquier teléfono normal. Si es necesario, reenvía llamadas o llama a varios dispositivos para asegurarte de que no te pierdas ninguna llamada importante de tus clientes.

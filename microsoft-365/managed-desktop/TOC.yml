@@ -21,20 +21,23 @@
           href: service-description/regions-languages.md
         - name: Ciclo de vida del producto
           href: service-description/device-lifecycle.md
-        - name: Requisitos del dispositivo
-          href: service-description/device-requirements.md
-        - name: Imágenes del dispositivo
-          href: service-description/device-images.md
-        - name: Nombres del dispositivo
-          href: service-description/device-names.md
-        - name: Servicios de dispositivo
-          href: service-description/device-services.md
-        - name: Perfiles de dispositivo
-          href: service-description/profiles.md
-        - name: Grupos de implementación de dispositivos
-          href: service-description/deployment-groups.md
-        - name: Configuración de dispositivos
-          href: service-description/device-policies.md
+        - name: Dispositivos
+          href: null
+          items:
+            - name: Requisitos del dispositivo
+              href: service-description/device-requirements.md
+            - name: Imágenes del dispositivo
+              href: service-description/device-images.md
+            - name: Nombres del dispositivo
+              href: service-description/device-names.md
+            - name: Servicios de dispositivo
+              href: service-description/device-services.md
+            - name: Perfiles de dispositivo
+              href: service-description/profiles.md
+            - name: Grupos de implementación de dispositivos
+              href: service-description/deployment-groups.md
+            - name: Configuración de dispositivos
+              href: service-description/device-policies.md
         - name: Tecnologías de seguridad
           href: service-description/security.md
         - name: Operaciones de seguridad
@@ -154,6 +157,8 @@
               href: working-with-managed-desktop/device-status-report.md
             - name: Informe de actualizaciones de seguridad de Windows
               href: working-with-managed-desktop/security-updates-report.md
+            - name: Informe de uso de aplicaciones
+              href: working-with-managed-desktop/app-usage-report.md
         - name: Soporte de administrador
           href: working-with-managed-desktop/admin-support.md
         - name: Soporte al usuario

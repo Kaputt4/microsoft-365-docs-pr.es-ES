@@ -16,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: El Microsoft 365 Programa para partners de redes permite que el dispositivo se certifice como trabajo con Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: c269c63a9637eda1f1b4950cace4ed75dd963a49
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fb08aad09fbeabb7b1e0a4a40f708f3249d4fe1f
+ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197286"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60386163"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Programa para partners de redes de Microsoft 365
 
@@ -35,4 +35,4 @@ Para modernizar las redes empresariales para una gran conectividad a Microsoft 3
 
 El Microsoft 365 Programa para partners de redes ayuda a responder a estas preguntas y demuestra el compromiso de Microsoft para ayudar a nuestros clientes a crear y optimizar su arquitectura de red para obtener la mejor Microsoft 365 experiencia. El Microsoft 365 está trabajando con muchos partners del sector de red para garantizar que los principios clave para una conectividad óptima se basen de forma nativa en sus soluciones y productos de red.
 
-El Microsoft 365 Programa para partners de redes designa soluciones de red calificadas como "Funciona con Microsoft 365". Solo los dispositivos o soluciones que cumplan los rigurosos requisitos de pruebas de Microsoft, tengan experiencias perfectas con la configuración y demuestren una experiencia de red de alta calidad cuando se usan con Microsoft 365 recibirán la designación "Trabaja con Microsoft 365". Estas soluciones de partners validadas se enumeran en [la Microsoft 365 Programa para partners de redes,](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners)junto con los detalles de la solución y vínculos para obtener más información.
+El Microsoft 365 Programa para partners de redes designa soluciones de red calificadas como "Funciona con Microsoft 365". Solo los dispositivos o soluciones que cumplan los rigurosos requisitos de pruebas de Microsoft, tengan experiencias perfectas con la configuración y demuestren una experiencia de red de alta calidad cuando se usan con Microsoft 365 recibirán la designación "Trabaja con Microsoft 365". Estas soluciones de partners validadas se enumeran en la [página Microsoft 365 partners](https://cloudpartners.transform.microsoft.com/m365networkingpartners)de red, junto con los detalles de la solución y vínculos para obtener más información.

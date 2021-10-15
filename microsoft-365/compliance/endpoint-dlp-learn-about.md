@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: be83c796312a61e4411d8cd7107d0330678f95de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d1577cff0cc06589c833a568af214c99059e829
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159819"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364536"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -74,6 +74,10 @@ Si solo quiere supervisar los datos de las coincidencias de directivas, puede de
 
 > [!NOTE]
 > Si la configuración **Auditar siempre la actividad de archivos para dispositivos** está instalada, las actividades de cualquier archivo Word, PowerPoint, Excel, PDF y .csv siempre se auditan, incluso si el dispositivo no está dirigido por ninguna directiva.
+
+> [!TIP]
+> Para garantizar que las actividades se auditan para todos los tipos de archivo admitidos, cree una [directiva DLP personalizada](create-test-tune-dlp-policy.md) junto con la directiva predeterminada.
+
 
 DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo.
 
