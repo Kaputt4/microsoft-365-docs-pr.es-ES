@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 3edb4307937bcf76a87f9bbdf8930a646794156e
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: dd79e0c74e2313855e2bf698053c99a50e5aaefd
+ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335835"
+ms.lasthandoff: 10/16/2021
+ms.locfileid: "60400064"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -646,6 +646,7 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 |Origen de resultados habilitado para las búsquedas de personas|PeopleResultsScopeSet|El administrador del sitio crea el origen de resultados de las búsquedas de personas para un sitio.|
 |Fuentes RSS habilitadas|NewsFeedEnabledSet|El administrador o el propietario del sitio habilita las fuentes RSS para un sitio. Los administradores globales pueden habilitar las fuentes RSS para toda la organización en el Centro de administración de SharePoint.|
 |Sitio unido al centro del sitio|HubSiteJoined|El propietario de un sitio lo asocia a un sitio central.|
+|Cuota de colección de sitios modificada|SiteCollectionQuotaModified|El administrador del sitio modifica la cuota de una colección de sitios.|
 |Sitio central registrado|HubSiteRegistered|Un administrador global o de SharePoint crea un sitio central. El resultado es que el sitio se registra para ser un sitio central.|
 |Ubicación de datos permitidos removidos|AllowedDataLocationDeleted|Un administrador global o de SharePoint ha removido una ubicación de datos permitida en un entorno multi geográfico.|
 |Se ha removido el administrador de ubicación geográfica|GeoAdminDeleted|Un administrador global o de SharePoint removió a un usuario como administrador geográfico de una ubicación.|
