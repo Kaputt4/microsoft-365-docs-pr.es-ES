@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/07/2021
+ms.date: 10/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a5f5428ce3c710cc99c7c86306a64501419ae60f
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: de1ab0bc8f58123bb24bd9d9d6d855f924c54986
+ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245674"
+ms.lasthandoff: 10/16/2021
+ms.locfileid: "60400028"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -74,6 +74,7 @@ Para obtener más información, vea [Manage the sources for Antivirus de Microso
 > - En este artículo se enumeran los cambios que se incluyen en el canal de versión general. [Vea la versión de canal general más reciente aquí.](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 > - Para obtener más información sobre el proceso de implementación gradual y para obtener más información acerca de la próxima versión, consulte [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
 > - Para obtener más información acerca de las actualizaciones de inteligencia de seguridad, vea Actualizaciones de inteligencia de seguridad [para Antivirus de Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/wdsi/defenderupdates).
+> - Si está buscando una lista de procesos de Microsoft Defender, descargue el libro **[mde-urls](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)** y, a continuación, seleccione la hoja de cálculo **Procesos de Microsoft Defender.** El libro mde-urls también enumera los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse, como se describe en [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versiones mensuales de plataforma y motor
 

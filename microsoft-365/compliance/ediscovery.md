@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: f8419176e8307c6e87d376f04c8395f18c175740
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 61a4f02d122a83b3279ebe7701b0a26d27b287de
+ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216903"
+ms.lasthandoff: 10/16/2021
+ms.locfileid: "60400246"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
 
