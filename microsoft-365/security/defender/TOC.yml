@@ -380,7 +380,7 @@
                       href: streaming-api-event-hub.md
                     - name: Transmitir eventos de búsqueda avanzada de amenazas a su cuenta de almacenamiento
                       href: streaming-api-storage.md
-                    - name: Tipos de eventos admitidos
+                    - name: Tipos de eventos de streaming admitidos
                       href: supported-event-types.md
                     - name: Configuración del Centro de eventos
                       href: configure-event-hub.md
