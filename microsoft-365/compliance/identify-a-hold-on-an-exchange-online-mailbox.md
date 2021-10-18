@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo identificar los diferentes tipos de retención que se pueden colocar en un buzón Exchange Online en Microsoft 365.
-ms.openlocfilehash: 8696ab52fdb0826dddd9f1a186f56f853b6fae3d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 05c169bd8ac7e3fdb71a6ee474f723a62df6da41
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201858"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432666"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -43,9 +43,9 @@ Microsoft 365 ofrece varias formas de que su organización pueda impedir que el 
 
   Hay dos tipos de directivas Microsoft 365 de retención que se pueden asignar a los buzones.
 
-    - **Directivas de retención de ubicaciones específicas:** Se trata de directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet **Get-Mailbox** en Exchange Online PowerShell para obtener información sobre las directivas de retención asignadas a buzones específicos. Para obtener más información acerca de este tipo de directiva de retención, vea la sección Directiva A con inclusiones o [exclusiones](create-retention-policies.md#a-policy-with-specific-inclusions-or-exclusions) específicas de la documentación de la directiva de retención.
+    - **Directivas de retención de ubicaciones específicas:** Se trata de directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet **Get-Mailbox** en Exchange Online PowerShell para obtener información sobre las directivas de retención asignadas a buzones específicos. Para obtener más información acerca de este tipo de directiva de retención, vea la sección Directiva A con inclusiones o [exclusiones](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions) específicas de la documentación de la directiva de retención.
 
-    - **Directivas de retención en toda la organización:** Se trata de directivas asignadas a todas las ubicaciones de contenido de la organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información sobre las directivas de retención de toda la organización. Para obtener más información acerca de este tipo de directiva de retención, vea la sección Directiva A que se aplica a ubicaciones [enteras](create-retention-policies.md#a-policy-that-applies-to-entire-locations) de la documentación de la directiva de retención.
+    - **Directivas de retención en toda la organización:** Se trata de directivas asignadas a todas las ubicaciones de contenido de la organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información sobre las directivas de retención de toda la organización. Para obtener más información acerca de este tipo de directiva de retención, vea la sección Directiva A que se aplica a ubicaciones [enteras](retention-settings.md#a-policy-that-applies-to-entire-locations) de la documentación de la directiva de retención.
 
 - **[Microsoft 365](retention.md)** etiquetas de retención: si un usuario aplica una etiqueta de retención de Microsoft 365 (una que está  configurada para retener contenido o retener y, a continuación, eliminar contenido) a cualquier carpeta o elemento de su buzón, se coloca una retención en el buzón como si el buzón se colocara en retención por juicio o se asignara a una directiva de retención de Microsoft 365. Para obtener más información, vea la sección Identificación de buzones en espera porque se ha aplicado una etiqueta de retención a una [carpeta](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) o elemento en este artículo.
 
@@ -59,7 +59,7 @@ Puede ejecutar los dos cmdlets siguientes en Exchange Online PowerShell para obt
 
 - **Get-OrganizationConfig:** Use este cmdlet para obtener los GUID de directivas de retención de toda la organización.
 
-Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -119,7 +119,7 @@ En la tabla siguiente se definen las tres posibles acciones de retención:
 | **2** | Indica que la directiva de retención está configurada para contener elementos. La directiva no elimina elementos después de que expire el período de retención. |
 | **3** | Indica que la directiva de retención está configurada para contener elementos y, a continuación, eliminarlos después de que expire el período de retención.             |
 
-Para obtener más información acerca de las acciones de retención, consulte la sección [Retener contenido durante un período de tiempo](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) específico.
+Para obtener más información acerca de las acciones de retención, consulte la sección [Retener contenido durante un período de tiempo](retention-settings.md#retaining-content-for-a-specific-period-of-time) específico.
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Paso 2: Usar el GUID para identificar la retención
 
@@ -204,7 +204,7 @@ Para quitar la retención de retraso antes de que expire, puede ejecutar uno (o 
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien
+O bien:
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -218,7 +218,7 @@ Para quitar la retención de retraso en un buzón inactivo, ejecute uno de los s
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-O bien
+O bien:
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -282,7 +282,7 @@ Use la tabla siguiente para ayudarle a comprender cada uno de los valores anteri
 
 Cuando ya no se aplique una directiva de retención a un buzón, se realizará una retención de retraso temporal en el usuario para evitar la depuración de contenido. Una retención retrasada se puede deshabilitar ejecutando el `Set-Mailbox -RemoveDelayHoldApplied` comando.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
 Después de identificar las retenciones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la retención, quitar temporal o permanentemente la retención o excluir un buzón inactivo de una directiva de retención de Microsoft 365. Para obtener más información acerca de cómo realizar tareas relacionadas con las retenciones, vea uno de los temas siguientes:
 

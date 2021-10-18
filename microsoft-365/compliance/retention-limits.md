@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: 881aa208036bab4fe476bb424e42ff16dbb5344f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52318fb2f8ae81022734bb1f620b220830214ad7
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195574"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432654"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -31,9 +31,9 @@ ms.locfileid: "60195574"
 
 Al usar [directivas de retención y directivas de etiqueta de retención](retention.md#retention-policies-and-retention-labels) para conservar o eliminar automáticamente datos de su organización, debe conocer ciertos límites.
 
-## <a name="maximum-number-of-retention-labels-per-tenant"></a>Número máximo de etiquetas de retención por inquilino
+## <a name="maximum-number-of-retention-labels-per-tenant"></a>Número máximo de etiquetas de retención por espacio empresarial
 
-Se admite un máximo de 1000 etiquetas de retención por inquilino.
+Se admite un máximo de 1 000 etiquetas de retención por espacio empresarial.
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Número máximo de directivas por espacio empresarial
 
@@ -47,11 +47,25 @@ Dentro de este límite de 10 000 directivas, también hay algunos límites en el
 
 Aunque las directivas de retención para Microsoft Teams y Yammer usan buzones para almacenar datos con fines de retención, el número máximo de directivas para Exchange Online excluye las directivas de retención para Teams y Yammer.
 
+## <a name="maximums-for-adaptive-policy-scopes"></a>Valores máximos para ámbitos de directivas adaptables
+
+No existe un límite en el número de [ámbitos de directivas adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention) que puede agregar a una directiva de retención, pero existen algunos límites máximos para la consulta que define cada ámbito adaptable:
+
+- Longitud de cadena para valores de atributo o propiedad: 200
+- Número de atributos o propiedades sin grupo o dentro de un grupo: 10
+- Número de grupos: 10
+- Número de caracteres en una consulta avanzada: 10 000
+
+No se admite la agrupación de atributos o propiedades dentro de un grupo. Por tanto, el número máximo de propiedades o atributos que se admiten en un único ámbito adaptable es 100.
+
 ## <a name="maximum-number-of-items-per-policy"></a>Número máximo de elementos por directiva
 
-Deben tenerse en cuenta ciertos límites por directiva si usa la configuración opcional para definir el ámbito de la configuración de retención para usuarios específicos, grupos específicos de Microsoft 365 o determinados sitios: 
+> [!IMPORTANT]
+> Solo se aplica si usa [ámbitos estáticos de directiva en lugar de ámbitos adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
-Número máximo de elementos por directiva para la retención:
+Si usa ámbitos estáticos y la configuración opcional para incluir o excluir usuarios específicos, grupos específicos de Microsoft 365 o sitios específicos, hay algunos límites por directiva que debe tener en cuenta. 
+
+Número máximo de elementos por directiva para la retención de ámbitos estáticos:
 
 - Buzones de Exchange: 1000
 - Grupos de Microsoft 365: 1000
@@ -66,14 +80,11 @@ Skype Empresarial debe limitarse a usuarios específicos y el número máximo ad
 
 Estas limitaciones son por directiva, por lo que si necesita usar inclusiones o exclusiones específicas por las que se superan estos números, puede crear otras directivas de retención con la misma configuración de retención. Vea la siguiente sección con [algunos escenarios de ejemplo y soluciones](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) que usan varias directivas de retención por este motivo.
 
-Sin embargo, tener varias directivas generan más sobrecargas administrativas, por lo que siempre debe confirmar si necesita realmente inclusiones y exclusiones. Recuerde que la configuración predeterminada que se aplica a toda la ubicación no tiene ninguna limitación y esta opción de configuración puede ser una solución mejor que la creación y el mantenimiento de varias directivas.
-
-> [!TIP]
-> Si necesita crear y mantener varias directivas para este escenario, plantéese usar [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) para una configuración más eficaz.
+Sin embargo, cuantas más directivas, mayor es la sobrecarga administrativa. Considere utilizar ámbitos adaptables en lugar de crear y mantener varias directivas con inclusiones y exclusiones.
 
 ### <a name="examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers"></a>Ejemplos de uso de varias directivas para evitar superar los límites máximos
 
-Los ejemplos siguientes proporcionan algunas soluciones de diseño para cuando no pueda especificar solo la ubicación de una directiva de retención y debe tener en cuenta el máximo número de elementos documentados en la sección anterior.
+Los ejemplos siguientes refieren a ámbitos estáticos y proporcionan algunas soluciones de diseño para cuando no pueda especificar solo la ubicación de una directiva de retención y deba tener en cuenta el máximo número de elementos documentados en la sección anterior.
 
 Ejemplo de Exchange:
 
