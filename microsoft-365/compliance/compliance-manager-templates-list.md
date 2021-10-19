@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager proporciona plantillas para crear evaluaciones que se alineen con las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: b0ed861380b365cfeb20d5bdbe9e929f64c0b3e4
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 858442e54277c32c6510d211f225f73feaf7c4d3
+ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334523"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462218"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
@@ -171,6 +171,7 @@ La organización puede comprar estas plantillas.
 - California - Privacy Rights Act (CPRA) (Microsoft 365)
 - California - SB-327 Information Privacy: Dispositivos conectados (Microsoft 365)
 - Ley de agencias de informes de crédito al consumidor de California (Microsoft 365)
+- Ley de privacidad de Colorado (CPA) (Microsoft 365)
 - [Ley de privacidad del consumidor de California (CCPA)](/compliance/regulatory/offering-ccpa) (Microsoft 365)
 - Protección de Colorado para la privacidad de datos del consumidor (Microsoft 365)
 - Estatutos revisados de Colorado, Sección 6-1-716, Aviso de infracción de seguridad (Microsoft 365)
@@ -234,6 +235,7 @@ La organización puede comprar estas plantillas.
 - Información electrónica o privacidad de datos de Utah (Microsoft 365)
 - Vermont: Ley sobre privacidad de datos y protección del consumidor (Microsoft 365)
 - Ley de vulneración de la información personal de Virginia (Microsoft 365)
+- Ley de privacidad de datos de consumidor de Virginia (CDPA) (Microsoft 365)
 - Washington DC- Estándar de notificación de infracciones de seguridad del consumidor (Microsoft 365)
 - West Virginia: vulneración de la seguridad de la información del consumidor (Microsoft 365)
 - Notificación de vulneración de seguridad de Wisconsin (Microsoft 365)
@@ -244,6 +246,9 @@ La organización puede comprar estas plantillas.
 
 - Marco de privacidad de la Cooperación Económica Asia Pacífico (APEC)
 - Australia - ASD Essential 8 (Microsoft 365)
+- Australia - ASD Essential 8 Maturity Level 1
+- Australia - ASD Essential 8 Maturity Level 2
+- Australia - ASD Essential 8 Maturity Level 3
 - Australia - National Archives Act
 - Australia- Public Records Office Victoria Recordkeeping Standards (Microsoft 365)
 - Australia - Ley de correo no deseado de 2003 (Microsoft 365)
@@ -326,6 +331,7 @@ La organización puede comprar estas plantillas.
 - Dubái: Reglamento de protección de datos de salud (Microsoft 365)
 - Dubái Consumer Protection Regulations (Telecommunications Regulatory Authority)(Microsoft 365)
 - ISR de Dubái (Microsoft 365)
+- Egipto: Ley de protección de datos (Microsoft 365)
 - Estonia: Ley de protección de datos personales (Microsoft 365)
 - Estonia: el sistema de medidas de seguridad de los sistemas de información (Microsoft 365)
 - UE: Directiva 2006/24/CE (Microsoft 365)

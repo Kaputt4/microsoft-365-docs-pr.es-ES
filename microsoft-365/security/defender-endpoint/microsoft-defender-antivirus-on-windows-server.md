@@ -14,14 +14,14 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/13/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8f5ae71ecc602a7bc588ff62036be20b883087db
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 9e92096ab6b1b291094781fed9ee994ca1fd7358
+ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335483"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462230"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -62,8 +62,6 @@ El proceso de configuración y ejecución de Antivirus de Microsoft Defender en 
 De forma predeterminada, Antivirus de Microsoft Defender está instalado y funcional en Windows server. A veces, la interfaz de usuario (GUI) se instala de forma predeterminada, pero no es necesaria. Puede usar PowerShell, directiva de grupo u otros métodos para administrar Antivirus de Microsoft Defender.
 
 Si la GUI no está instalada en el servidor y desea instalarla, el Asistente para agregar **roles** y características o cmdlets de PowerShell.
-
-
 
 > [!NOTE]
 > Esta opción no está disponible para Windows Server 2012 R2. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
@@ -234,13 +232,13 @@ Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows S
 
 | Procedure | Descripción |
 |---|---|
-| Deshabilitar Antivirus de Microsoft Defender con la directiva de grupo | En el Editor de directivas de grupo local, vaya **a Windows Defender** y, a continuación, seleccione **Desactivar Antivirus de Windows Defender**. |
+| Deshabilitar Antivirus de Microsoft Defender con la directiva de grupo | En el Editor de directivas de grupo local, vaya a **Plantilla** administrativa Windows componente Endpoint Protection  >    >    >  **Deshabilitar Endpoint Protection** y,   >  a continuación, seleccione Habilitado aceptar . |
 | Deshabilitar Antivirus de Microsoft Defender con una clave del Registro | Para usar la clave del Registro [DisableAntiSpyware,](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) vaya `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` a y establezca o cree una entrada DWORD denominada `DisableAntiSpyware` . Establezca su valor en (que establece el valor de la `1` clave del Registro en *true*). |
 | Deshabilitar Antivirus de Microsoft Defender con PowerShell | Use el siguiente cmdlet de PowerShell: `Set-MpPreference -DisableRealtimeMonitoring $true` |
 | Desinstalar Antivirus de Microsoft Defender con PowerShell | Use el siguiente cmdlet de PowerShell: `Uninstall-WindowsFeature -Name Windows-Defender` |
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Antivirus de Microsoft Defender en Windows](microsoft-defender-antivirus-windows.md)
 - [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)
