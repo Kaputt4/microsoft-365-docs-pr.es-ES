@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la solución Advanced eDiscovery en Microsoft 365. En este artículo se proporciona información general Advanced eDiscovery en Microsoft 365, una herramienta que le ayudará a administrar investigaciones internas y externas. También enmarca las razones empresariales para usar Advanced eDiscovery para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40ff0b39f71dd124f641a60e4431aebbc2c08793
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 769f88b6bd2f3348061a759655c8169e9a8310f5
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201018"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478820"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Información general sobre Microsoft 365 Advanced eDiscovery
 
@@ -71,9 +71,9 @@ Las capacidades adicionales de aprendizaje automático pueden refinar e identifi
 
 El flujo de trabajo integrado de Advanced eDiscovery en Microsoft 365 se alinea con el proceso de exhibición de documentos electrónicos descrito por el Modelo de referencia de detección electrónica (EDRM).
 
-![Modelo de referencia de detección electrónica (EDRM).](../media/EDRMv1.png)
+![Modelo de referencia de detección electrónica (EDRM).](../media/EDRMv2.png)
 
-(Origen de la imagen cortesía de edrm.net. La imagen de origen estaba disponible en Creative Commons Attribution 3.0 Unported License).)
+(Imagen basada en el modelo EDRM en edrm.net)
 
 A grandes rasgos, así es como eDiscovery avanzado apoya el flujo de trabajo de EDRM:
 

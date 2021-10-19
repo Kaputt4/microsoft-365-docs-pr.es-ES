@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Introducción a las funcionalidades de gobernanza de aplicaciones para controlar sus aplicaciones.
-ms.openlocfilehash: 8998a0e4f6cf01a7394e44695cd06f0b60915c7e
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 78e9570c1c5a19353eb9868a649eba958d23067b
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364740"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478798"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Introducción a la gobernanza de aplicaciones (en versión preliminar)
 
@@ -29,16 +29,16 @@ ms.locfileid: "60364740"
 Para empezar a usar el complemento de gobernanza de aplicaciones para Microsoft Cloud App Security, debe realizar tres pasos:
 
 1. [Compruebe los requisitos previos de licencia y administrador](#licensing-and-administrator-role-prerequisites).
-1. [Regístrate para la prueba de gobernanza de aplicaciones](#sign-up-for-free-trial-of-app-governance).
+1. [Regístrese para la prueba de gobernanza de aplicaciones](#sign-up-for-app-governance).
 1. [Agregar integración de MCAS](#add-integration-with-mcas).
 
 
-## <a name="sign-up-for-free-trial-of-app-governance"></a>Regístrese para obtener una evaluación gratuita de gobernanza de aplicaciones
+## <a name="sign-up-for-app-governance"></a>Regístrese para la prueba de gobernanza de aplicaciones.
 
 Para los clientes existentes de Microsoft 365:
 
 1. Vaya a la página de registro[para obtener la evaluación gratuita](https://aka.ms/appgovernancetrial).
-1. Complete los pasos para agregar gobernanza de aplicaciones. El registro es sencillo, tal como se muestra en el siguiente gráfico.
+1. Complete los pasos para agregar gobernanza de aplicaciones. 
 
 <!--
 :::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
@@ -49,6 +49,8 @@ Si aún no es cliente de Microsoft 365, puede registrarse para obtener una prueb
 1. En la parte superior de esta página, seleccione el botón  **Cuenta gratuita** .
 1. En  **Probar Microsoft 365 para empresas** seleccione **Probar 1 mes gratis**.
 1. Complete los pasos para el registro.
+
+Para comprar una suscripción de gobernanza de aplicaciones, póngase en contacto con el equipo de su cuenta de ventas.
 
 ## <a name="add-integration-with-mcas"></a>Incorporación de la integración con MCAS
 
@@ -131,7 +133,7 @@ Si no ha participado en la versión preliminar privada y desea cancelar la versi
 1. En el Centro de administración de Microsoft 365, vaya a **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Sus productos**</a>.
 1. Vaya a la prueba de gobernanza de aplicaciones, haga clic en los tres puntos y seleccione **Cancelar suscripción**.
 1. En el panel flotante resultante, proporcione un motivo para la cancelación, cualquier comentario adicional y seleccione **Cancelar suscripción**.
-1. Seleccione **Cancelar suscripción** en la pantalla emergente. La versión de prueba se ha cancelado. Perderá el acceso a la gobernanza de aplicaciones y se eliminarán los datos asociados (los datos de registro que se usan para crear la información y detecciones de la gobernanza de aplicaciones; ni los correos electrónico ni otros archivos se verán afectados).
+1. Seleccione **Cancelar suscripción** en la pantalla emergente. La versión de prueba será cancelada, perderá el acceso a la gobernanza de aplicaciones y se eliminarán los datos asociados (los datos de registro que se usan para crear la información y detecciones de la gobernanza de aplicaciones; ni los correos electrónico ni otros archivos se verán afectados).
 
 ## <a name="known-issues-for-the-public-preview"></a>Problemas conocidos para esta versión preliminar pública.
 

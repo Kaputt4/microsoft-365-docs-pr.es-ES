@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7e737ecba6acfd9ebf09b826d6cec643936f090c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 437669f392f108526670d3eca3aef4071aa8cb02
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169844"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478882"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -39,7 +39,7 @@ En este artículo se describe cómo implementar Microsoft Defender para Endpoint
 - [Implementar Microsoft Defender para Endpoint en Linux manualmente](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Requisitos previos y requisitos del sistema](#prerequisites-and-system-requirements)
   - [Configurar el repositorio de software de Linux](#configure-the-linux-software-repository)
-    - [RHEL y variantes (CentOS y Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
+    - [RHEL y variantes (CentOS y Oracle Linux)](#rhel-and-variants-centos-oracle-linux-and-amazon-linux-2)
     - [SLES y variantes](#sles-and-variants)
     - [Sistemas Ubuntu y Debian](#ubuntu-and-debian-systems)
   - [Instalación de la aplicación](#application-installation)
@@ -65,7 +65,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 > [!WARNING]
 > Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.
 
-### <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL y variantes (CentOS y Oracle Linux)
+### <a name="rhel-and-variants-centos-oracle-linux-and-amazon-linux-2"></a>RHEL y variantes (CentOS, Oracle Linux y Amazon Linux 2)
 
 - Instale `yum-utils` si aún no está instalado:
 
@@ -83,14 +83,12 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 
     |Distro & versión|Paquete|
     |---|---|
-    |Para RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod/>|
-    |Para RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod/>|
-    |
+    |Para RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
+    |Para RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
+    | Para RHEL/Centos/Oracle 6.7-6.10 | <https://packages.microsoft.com/config/rhel/6/[channel].repo>
 
     En los siguientes comandos, reemplace *[versión]* y *[canal]* por la información que haya identificado:
 
-    > [!NOTE]
-    > En el caso de Oracle Linux, reemplace *[distro]* por "rhel".
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo

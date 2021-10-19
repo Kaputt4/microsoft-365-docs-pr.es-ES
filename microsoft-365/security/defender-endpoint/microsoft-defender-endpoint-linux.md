@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1717a184bb03bbc4165e4637a1a04557925f8abb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b8fceed1e749a21323ade7ee87ab54a7fcffde8
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157919"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478990"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -73,15 +73,55 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
 
 - Distribuciones de servidor Linux compatibles y versiones x64 (AMD64/EM64T):
 
-  - Red Hat Enterprise Linux 7.2 o posterior
+  - Red Hat Enterprise Linux 6.7 o posterior
+  - Red Hat Enterprise Linux 7.2 o posterior 
+  - CentOS 6,7 o superior 
   - CentOS 7.2 o superior
   - Ubuntu 16,04 LTS o superior LTS
   - Debian 9 o posterior
   - SUSE Linux Enterprise Server 12 o posterior
   - Oracle Linux 7.2 o posterior
+  - Amazon Linux 2
+  - Fedora 33 o posterior
 
     > [!NOTE]
     > Las distribuciones y las versiones que no se enumeran explícitamente no son compatibles (incluso si se derivan de las distribuciones admitidas oficialmente).
+
+
+    Para Red Hat Enterprise Linux 6 y CentOS 6, la lista de versiones de kernel compatibles son:
+       - Para 6.7: 2.6.32-573.* 
+       - Para 6.8: 2.6.32-642.* 
+       - Para 6.9: 2.6.32-696.* 
+       - Para la 6.10: 2.6.32.754.2.1.el6.x86_64 a 2.6.32-754.41.2:
+
+    Lista de versiones:
+
+    - 2.6.32-754.2.1.el6.x86_64 
+    - 2.6.32-754.17.1.el6.x86_64
+    - 2.6.32-754.29.1.el6.x86_64
+    - 2.6.32-754.3.5.el6.x86_64 
+    - 2.6.32-754.18.2.el6.x86_64
+    - 2.6.32-754.29.2.el6.x86_64
+    - 2.6.32-754.6.3.el6.x86_64 
+    - 2.6.32-754.22.1.el6.x86_64
+    - 2.6.32-754.30.2.el6.x86_64
+    - 2.6.32-754.9.1.el6.x86_64 
+    - 2.6.32-754.23.1.el6.x86_64
+    - 2.6.32-754.33.1.el6.x86_64
+    - 2.6.32-754.10.1.el6.x86_64
+    - 2.6.32-754.24.2.el6.x86_64
+    - 2.6.32-754.35.1.el6.x86_64
+    - 2.6.32-754.11.1.el6.x86_64
+    - 2.6.32-754.24.3.el6.x86_64
+    - 2.6.32-754.39.1.el6.x86_64
+    - 2.6.32-754.12.1.el6.x86_64
+    - 2.6.32-754.25.1.el6.x86_64
+    - 2.6.32-754.41.2.el6.x86_64
+    - 2.6.32-754.14.2.el6.x86_64
+    - 2.6.32-754.27.1.el6.x86_64
+    - 2.6.32-754.15.3.el6.x86_64
+    - 2.6.32-754.28.1.el6.x86_64       
+
 
 - Versión mínima del kernel 3.10.0-327
 

@@ -15,24 +15,24 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: ''
 description: Obtenga información sobre cómo configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 3161841f3c69992d7cc532e86f99bed7704ba016
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 82b26e01928bf62c443545a045c64ae585fddcb3
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208174"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478757"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365
 
 > [!NOTE]
-> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. 
+> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. La vista previa no está abierta actualmente para los nuevos participantes.
 
 Los administradores de la Centro de administración de Microsoft 365, ya sea por sí mismos o asignando el rol de administrador de conocimientos a personas seleccionadas de la organización, pueden administrar la configuración relacionada con Viva Learning (versión preliminar) y pueden configurar los orígenes de contenido de aprendizaje.
 
 El administrador selecciona qué otros orígenes de contenido de aprendizaje (por ejemplo, SharePoint o orígenes de proveedores de contenido de terceros compatibles) estarán disponibles para los usuarios de Viva Learning (versión preliminar). A continuación, el administrador configura esos orígenes para asegurarse de que el contenido está disponible para la búsqueda y la detección y los empleados que usan Viva Learning (versión preliminar) pueden examinarlo.
 
 > [!NOTE]
->  Los usuarios inician sesión en aprendizajes que no son de Microsoft y LinkedIn Learning Pro en un explorador o un visor incrustado. Este aprendizaje configurado está sujeto a los términos de licencia, privacidad y servicio independientes entre su organización y el tercero, y no a los términos de Viva Learning (versión preliminar). Antes de seleccionar este tipo de aprendizaje, compruebe que tiene un acuerdo para la organización y los usuarios.
+> Los usuarios inician sesión en aprendizajes que no son de Microsoft y LinkedIn Learning Pro en un explorador o un visor incrustado. Este aprendizaje configurado está sujeto a los términos de licencia, privacidad y servicio independientes entre su organización y el tercero, y no a los términos de Viva Learning (versión preliminar). Antes de seleccionar este tipo de aprendizaje, compruebe que tiene un acuerdo para la organización y los usuarios.
 
 ## <a name="assign-the-knowledge-admin-role-optional"></a>Asignar el rol de administrador de conocimientos (opcional)
 
@@ -47,7 +47,7 @@ Para agregar un administrador de conocimientos para Viva Learning (versión prel
 
 1. En la navegación izquierda de la Centro de administración de Microsoft 365, vaya a **Roles**.
 
-2. En la **página Roles,** en la **pestaña Azure AD,** seleccione **Administrador de conocimientos.**
+2. En la **página Roles,** en la **Azure AD,** seleccione **Administrador de conocimientos**.
  
 3. En el panel **Administrador de** conocimientos, seleccione **Administradores asignados** y, a continuación, **seleccione Agregar**.
 
@@ -63,7 +63,7 @@ Para quitar un administrador de conocimientos para Viva Learning (versión preli
 
 1. En la navegación izquierda de la Centro de administración de Microsoft 365, vaya a **Roles**.
 
-2. En la **página Roles,** en la **pestaña Azure AD** y, a continuación, seleccione Administrador de **conocimientos.**
+2. En la **página Roles,** en la **Azure AD** y, a continuación, seleccione **Administrador de conocimientos**.
  
 3. En el panel **Administrador de** conocimientos, en la pestaña Administradores **asignados,** seleccione Quitar **y,** a continuación, seleccione la persona que desea quitar del rol. Para confirmarlo, seleccione **Quitar**.
 

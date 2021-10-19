@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: dd79e0c74e2313855e2bf698053c99a50e5aaefd
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: b1cb482b478259177044a1af84bf865b8f8ec882
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400064"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432714"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -1006,13 +1006,17 @@ En la tabla siguiente se describen las actividades de configuración de las [dir
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
+| Modificación de la pertenencia al ámbito de adaptación |ApplicableAdaptiveScopeChange |Los usuarios, sitios o grupos se agregaron o quitaron del ámbito de adaptación. Estos cambios son los resultados de ejecutar la consulta del ámbito. Dado que los cambios se inician en el sistema, el usuario notificado se muestra como un GUID en lugar de como una cuenta de usuario.|
 | Opciones configuradas para una directiva de retención |NewRetentionComplianceRule |El administrador estableció la configuración de retención para una nueva directiva de retención. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule).|
+| Ámbito de adaptación creado |NewAdaptiveScope |El administrador creó un ámbito de adaptación.|
 | Etiqueta de retención creada |NewComplianceTag |El administrador creó una etiqueta de retención nueva.|
 | Directiva de retención creada |NewRetentionCompliancePolicy|El administrador creó una nueva directiva de retención.|
+| Ámbito de adaptación eliminado | RemoveAdaptiveScope| El administrador eliminó un ámbito de adaptación.|
 | Configuración eliminada de una directiva de retención| RemoveRetentionComplianceRule<br/>| El administrador eliminó las opciones de configuración de una directiva de retención. Lo más probable es que esta actividad se registre cuando un administrador elimina una directiva de retención o ejecuta el cmdlet [Remove-RetentionComplianceRule](/powershell/module/exchange/Remove-RetentionComplianceRule).|
 | Etiqueta de retención eliminada |RemoveComplianceTag | El administrador eliminó una etiqueta de retención.|
 | Directiva de retención eliminada |RemoveRetentionCompliancePolicy<br/> |El administrador eliminó una directiva de retención. |
 | Opción de registro normativo habilitada para etiquetas de retención<br/> |SetRestrictiveRetentionUI |El administrador ejecutó el cmdlet [Set-RegulatoryComplianceUI](/powershell/module/exchange/set-regulatorycomplianceui) para que un administrador pueda seleccionar la opción de configuración de la interfaz de usuario para que una etiqueta de retención marque el contenido como un registro reglamentario.|
+| Ámbito de adaptación actualizado | SetAdaptiveScope | El administrador cambió la descripción o consulta de un ámbito de adaptación existente. |
 | Configuración actualizada para una directiva de retención | SetRetentionComplianceRule | El administrador cambió la configuración de retención de una directiva de retención existente. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule). |
 | Etiqueta de retención actualizada |SetComplianceTag  | El administrador actualizó una etiqueta de retención existente.|
 | Directiva de retención actualizada |SetRetentionCompliancePolicy |El administrador actualizó una directiva de retención existente. Las actualizaciones que desencadenan este evento incluyen agregar o excluir ubicaciones de contenido a las que se aplica la directiva de retención.|

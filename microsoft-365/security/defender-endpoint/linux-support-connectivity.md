@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint en Linux
 ms.reviewer: ''
-description: Solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint en Linux
+description: Obtenga información sobre cómo solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint en Linux
 keywords: microsoft, defender, Microsoft Defender para endpoint, linux, nube, conectividad, comunicación
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbd0e45a44f3053e48b3714bb526e70d5d634502
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4f547e6701e0b22c2d55d0fa68a236f85b821a11
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211002"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478918"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint en Linux
 
@@ -94,22 +94,12 @@ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.micr
 
 Asegúrese de usar la misma dirección de proxy y el mismo puerto configurados en el `/lib/system/system/mdatp.service` archivo. Compruebe la configuración de proxy si hay errores de los comandos anteriores.
 
-> [!WARNING]
-> El proxy estático no se puede configurar a través de una variable de entorno en `HTTPS_PROXY` todo el sistema. En su lugar, `HTTPS_PROXY` asegúrese de que está correctamente establecido en el `/lib/system/system/mdatp.service` archivo.
-
-Para usar un proxy estático, se `mdatp.service` debe modificar el archivo. Asegúrese de que `#` el inicial se quita para descomprimir la siguiente línea de `/lib/systemd/system/mdatp.service` :
+Para establecer el proxy de mdatp, use el siguiente comando:
 
 ```bash
-#Environment="HTTPS_PROXY=http://address:port"
+mdatp config proxy set --value http://address:port 
 ```
 
-Asegúrese también de que la dirección de proxy estática correcta esté rellenada para reemplazar `address:port` .
-
-Si este archivo es correcto, intente ejecutar el siguiente comando en el terminal para volver a cargar Defender para Endpoint en Linux y propagar la configuración:
-
-```bash
-sudo systemctl daemon-reload; sudo systemctl restart mdatp
-```
 
 Una vez que se ha hecho correctamente, intente otra prueba de conectividad desde la línea de comandos:
 

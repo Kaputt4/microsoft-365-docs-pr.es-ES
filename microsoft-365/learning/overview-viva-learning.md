@@ -15,22 +15,22 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: ''
 description: Obtenga información Aprendizaje Microsoft Viva (versión preliminar) en el entorno Microsoft 365 usuario.
-ms.openlocfilehash: 41a10fe0e4179e9d56fbf8eca3793d0c41ad339b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 563b808a55efcbdba08119d721e52f73873cd9ea
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205778"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478858"
 ---
-# <a name="overview-of-microsoft-viva-learning-preview"></a>Información general sobre Aprendizaje Microsoft Viva (versión preliminar) 
+# <a name="overview-of-microsoft-viva-learning-preview"></a>Información general sobre Aprendizaje Microsoft Viva (versión preliminar)
 
 > [!NOTE]
-> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. 
+> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. La vista previa no está abierta actualmente para los nuevos participantes.
 
 Viva Learning (versión preliminar) es un centro de aprendizaje centralizado en Microsoft Teams que te permite integrar perfectamente el aprendizaje y la creación de habilidades en tu día. En Viva Learning (versión preliminar), el equipo puede descubrir, compartir, asignar y aprender de bibliotecas de contenido proporcionadas por su organización y asociados. Pueden hacer todo esto sin salir de Microsoft Teams.
 
    ![Captura de pantalla de la página principal de Viva Learning (vista previa) en Teams.](../media/learning/learning-home-teams.png)
- 
+
 Es más probable que los empleados informen de que están satisfechos y permanecen en una organización más tiempo cuando se les dan oportunidades de aprender y crecer. Viva Learning (versión preliminar) facilita la creación de estas oportunidades para su organización sin necesidad de alejarse de las herramientas de comunicación que ya usa.
 
 ## <a name="learn-while-working"></a>Información durante el trabajo
@@ -61,7 +61,7 @@ Los administradores establecen permisos y permiten orígenes de contenido de apr
 
 ### <a name="knowledge-admin"></a>Administrador de la información
 
-El administrador de conocimientos es un nuevo Azure Active Directory (Azure AD) en el Centro de administración de Microsoft 365 que se puede asignar a cualquier persona de la organización. Este rol administra los orígenes de contenido de aprendizaje de la organización a través del Centro de administración de Microsoft 365. Para obtener más información, [vea Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference#knowledge-administrator).
+El administrador de conocimientos es un nuevo Azure Active Directory (Azure AD) en el Centro de administración de Microsoft 365 que se puede asignar a cualquier persona de la organización. Este rol administra los orígenes de contenido de aprendizaje de la organización a través del Centro de administración de Microsoft 365. Para obtener más información, [vea Azure AD roles integrados](/azure/active-directory/roles/permissions-reference#knowledge-administrator).
 
 El administrador de conocimientos debe ser moderadamente técnico y tener credenciales SharePoint administrador existentes. El administrador de conocimientos debe estar bien informado en la parte de educación, aprendizaje, formación o experiencia de los empleados de la organización.
 

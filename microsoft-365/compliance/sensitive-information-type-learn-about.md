@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial como números de cuenta bancaria, tarjeta de crédito o seguridad social para identificar elementos confidenciales
-ms.openlocfilehash: 915a92ca7023aa9fbf13d36c3fa00707c664a688
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4be28abc7f343fa7b396c736255f1c8e15872d0b
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192144"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478954"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -41,7 +41,7 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 - [Administración de riesgos internos](insider-risk-management.md)
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Administración de privacidad (versión preliminar)](privacy-management.md)
+- [Administración de privacidad](/privacy/solutions/privacymanagement/privacy-management)
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Partes fundamentales de un tipo de información confidencial
 

@@ -16,20 +16,26 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 722d446a9b8dcde216c8dd26b51ca3a4d13fe54d
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: 779f77b39eeaf58918c115582f62fb08199f1b91
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386221"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478894"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
+- A partir de esta versión, vamos a llevar la compatibilidad de Microsoft Defender para endpoint a las siguientes distros: 
+  -  Versiones RHEL6.7-6.10 y CentOS6.7-6.10.
+  - Amazon Linux 2
+  - Fedora 33 o posterior
 - Correcciones de errores
+
 
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
 

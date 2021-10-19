@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Asegúrese de que los trabajadores remotos puedan tener acceso a los recursos locales y optimizar el acceso a los servicios en la nube de Microsoft 365.
-ms.openlocfilehash: e9f5bbe04120cd2e49a56ec0fbe47e4ecdb0778e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7266db5ba0149caaeb5057ad2ca1c3d082760c15
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190190"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478774"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Paso 2: Proporcionar acceso remoto a los servicios y aplicaciones locales
 
@@ -91,16 +91,16 @@ Para obtener más información, vea esta [introducción a la red virtual privada
 > [!NOTE]
 > La VPN de Azure P2S no está incluida en una suscripción de Microsoft 365. Debe pagar para usarlo con una suscripción de Azure por separado.
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Implementación de Windows Virtual Desktop para proporcionar acceso remoto para trabajadores remotos con dispositivos personales
+## <a name="deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Implementación de Azure Virtual Desktop para proporcionar acceso remoto a trabajadores remotos con dispositivos personales
 
-Para admitir a los trabajadores remotos que solo pueden usar sus dispositivos personales y no administrados, use Windows Virtual Desktop en Azure para crear y asignar escritorios virtuales para que los usuarios los usen desde casa. Las PC virtualizadas pueden actuar como las PC conectadas a la red de su organización.
+Para admitir a los trabajadores remotos que solo pueden usar sus dispositivos personales y no administrados, use Azure Virtual Desktop para crear y asignar escritorios virtuales para que los usuarios los usen desde casa. Las PC virtualizadas pueden actuar como las PC conectadas a la red de su organización.
 
-![Componentes de Azure en Windows Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+![Componentes de Azure Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Para obtener más información, consulte [esta introducción a Windows Virtual Desktop](/azure/virtual-desktop/overview).
+Para obtener más información, consulte esta [introducción a Azure Virtual Desktop](/azure/virtual-desktop/overview).
 
 > [!NOTE]
->Windows Virtual Desktop no está incluido en una suscripción de Microsoft 365. Debe pagar para usarlo con una suscripción de Azure por separado.
+> Azure Virtual Desktop no está incluido en una suscripción de Microsoft 365. Debe pagar para usarlo con una suscripción de Azure por separado.
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Proteja las conexiones de los servicios de escritorio remoto con la puerta de enlace de servicios de escritorio remoto
 
@@ -124,7 +124,7 @@ Después de implementar una solución de acceso remoto para los trabajadores rem
 | Se ha establecido una solución de VPN de acceso remoto | Se configuró el cliente VPN de acceso remoto para túnel dividido y para la categoría Optimizar de los puntos de conexión de Microsoft 365. |
 | No cuenta con una solución de VPN de acceso remoto y solo necesita el acceso remoto a aplicaciones locales basadas en la web | Configuró el proxy de aplicación de Azure. |
 | No está usando una solución de VPN de acceso remoto y necesita tener acceso a las aplicaciones locales, algunas de las cuales no se basan en la web | Configuró la red privada virtual de P2S de Azure. |
-| Los trabajadores remotos usan sus dispositivos personales desde casa | Configuró Windows Virtual Desktop. |
+| Los trabajadores remotos usan sus dispositivos personales desde casa | Configuró Azure Virtual Desktop. |
 | Los trabajadores remotos usan conexiones de RDS a sistemas locales | Ha implementado una puerta de enlace de servicios de escritorio remoto en la red perimetral. |
 |||
 

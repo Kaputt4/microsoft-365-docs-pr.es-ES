@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de Microsoft 365 de búsqueda de registro de auditoría para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
-ms.openlocfilehash: 026a0d86d1f8d4dd6dbe3d1f93eae167c817e5dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0ac1bbb2ff0a9c09b661abd8f60fd960d33fd774
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201954"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478582"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de soporte técnico comunes
 
@@ -180,7 +180,11 @@ Cuando los usuarios crean una regla de bandeja de entrada Exchange Online buzón
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registro de auditoría para este escenario:
 
-**Actividades:** En **Exchange de buzón** de correo, seleccione Nueva-Bandeja de entrada **Crear/modificar/habilitar/deshabilitar regla de bandeja de entrada**.
+**Actividades:** En **Exchange de buzón** de correo, seleccione una o ambas de las siguientes actividades:
+
+- **New-InboxRule Crear nueva regla de bandeja de** entrada a partir Outlook Web App . Esta actividad devuelve registros de auditoría cuando se crean reglas de bandeja de entrada Outlook una aplicación web o Exchange Online PowerShell.
+
+- **Se han actualizado las reglas de la bandeja Outlook cliente**. Esta actividad devuelve registros de auditoría cuando se crean, modifican o quitan reglas de bandeja de entrada mediante el Outlook escritorio.
 
 **Fecha de inicio** y **fecha de finalización:** seleccione un intervalo de fechas que sea aplicable a la investigación.
 
@@ -204,7 +208,7 @@ d. El **campo UserId** indica el usuario que creó la regla de bandeja de entrad
 
 Al revisar los registros de auditoría en el registro de auditoría, es posible que vea registros que indican que un usuario externo fue autenticado por Azure Active Directory inició sesión correctamente en su organización. Por ejemplo, un administrador de contoso.onmicrosoft.com puede ver un registro de auditoría que muestra que un usuario de una organización diferente (por ejemplo, fabrikam.onmicrosoft.com) ha iniciado sesión correctamente en contoso.onmicrosoft.com. Del mismo modo, es posible que vea registros de auditoría que indican que los usuarios con una cuenta de Microsoft (MSA), como Outlook.com o Live.com, iniciaron sesión correctamente en su organización. En estas situaciones, la actividad auditada es **User logged In**. 
 
-Este comportamiento es una característica del diseño de la aplicación. Azure Active Directory (Azure AD), el servicio de directorio, permite algo denominado autenticación de paso a través cuando un usuario externo intenta obtener acceso a un sitio de SharePoint o a una ubicación OneDrive de la organización.  Cuando el usuario externo intenta hacerlo, se le pide que escriba sus credenciales. Azure AD usa las credenciales para autenticar al usuario, lo que significa que solo Azure AD comprueba que el usuario es quien dice ser. La indicación del inicio de sesión correcto en el registro de auditoría es el resultado de la autenticación de Azure AD al usuario. El inicio de sesión correcto no significa que el usuario pueda tener acceso a ningún recurso o realizar otras acciones en la organización. Solo indica que azure AD ha autenticado al usuario. Para que un usuario de paso a través tenga acceso a recursos SharePoint o OneDrive, un usuario de la organización tendría que compartir explícitamente un recurso con el usuario externo enviándoles una invitación para compartir o un vínculo de uso compartido anónimo. 
+Este comportamiento es una característica del diseño de la aplicación. Azure Active Directory (Azure AD), el servicio de directorio,  permite algo denominado autenticación de paso a través cuando un usuario externo intenta obtener acceso a un sitio SharePoint o a una ubicación OneDrive de la organización. Cuando el usuario externo intenta hacerlo, se le pide que escriba sus credenciales. Azure AD las credenciales para autenticar al usuario, lo que significa Azure AD comprueba que el usuario es quien dice ser. La indicación del inicio de sesión correcto en el registro de auditoría es el resultado de Azure AD autenticación del usuario. El inicio de sesión correcto no significa que el usuario pueda tener acceso a ningún recurso o realizar otras acciones en la organización. Solo indica que el usuario se autenticó mediante Azure AD. Para que un usuario de paso a través tenga acceso a recursos SharePoint o OneDrive, un usuario de la organización tendría que compartir explícitamente un recurso con el usuario externo enviándoles una invitación para compartir o un vínculo de uso compartido anónimo. 
 
 > [!NOTE]
 > Azure AD permite la autenticación de paso a través solo para aplicaciones de primer *nivel,* como SharePoint Online y OneDrive para la Empresa. No está permitido para otras aplicaciones de terceros.
@@ -213,17 +217,17 @@ Este es un ejemplo y descripciones de propiedades relevantes en un registro de a
 
 ![Ejemplo de registro de auditoría para la autenticación de paso a través correcta.](../media/PassThroughAuth1.png)
 
-   a. Este campo indica que el usuario que intentó obtener acceso a un recurso de la organización no se encontró en Azure AD de la organización.
+   a. Este campo indica que el usuario que intentó obtener acceso a un recurso de la organización no se encontró en el Azure AD.
 
    b. Este campo muestra el UPN del usuario externo que intentó obtener acceso a un recurso de la organización. Este identificador de usuario también se identifica en las **propiedades User** **y UserId** del registro de auditoría.
 
    c. La **propiedad ApplicationId** identifica la aplicación que desencadenó la solicitud de inicio de sesión. El valor de 00000003-0000-0ff1-ce00-00000000000 que se muestra en la propiedad ApplicationId de este registro de auditoría indica SharePoint Online. OneDrive para la Empresa también tiene el mismo ApplicationId.
 
-   d. Esto indica que la autenticación de paso a través se ha realizado correctamente. En otras palabras, Azure AD ha autenticado correctamente al usuario. 
+   d. Esto indica que la autenticación de paso a través se ha realizado correctamente. En otras palabras, el usuario se autenticó correctamente mediante Azure AD. 
 
    e. El **valor RecordType** de **15** indica que la actividad auditada (UserLoggedIn) es un evento de inicio de sesión del Servicio de token seguro (STS) en Azure AD.
 
-Para obtener más información acerca de las otras propiedades que se muestran en un registro de auditoría UserLoggedIn, vea la información de esquema relacionada con Azure AD en [Office 365 de la API de actividad de administración.](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)
+Para obtener más información acerca de las otras propiedades que se muestran en un registro de auditoría UserLoggedIn, vea la información de esquema relacionada Azure AD en Office 365 de la API de actividad [de administración.](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)
 
 Estos son dos escenarios de ejemplo que darían como resultado una actividad de auditoría **de usuario** iniciada correctamente debido a la autenticación de paso a través: 
 

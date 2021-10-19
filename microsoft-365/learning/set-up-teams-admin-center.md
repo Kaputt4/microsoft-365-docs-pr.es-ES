@@ -16,17 +16,20 @@ ms.collection:
 ms.custom: admindeeplinkTEAMS
 ms.localizationpriority: ''
 description: Obtenga información sobre cómo configurar Aprendizaje Microsoft Viva (versión preliminar) en el centro Teams administración.
-ms.openlocfilehash: 4a54bc478c22d7a7ba3cb64c7efe69153882e308
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98dc352de2196ff557a1cbc0ae3bc899ebee868d
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198330"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479002"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurar Aprendizaje Microsoft Viva (versión preliminar) en el Centro Teams administración
 
 > [!NOTE]
-> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. 
+> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial.
+
+> [!NOTE]
+> [La vista previa está cerrada actualmente para los nuevos participantes.]
 
 El Teams debe realizar determinados pasos para habilitar Viva Learning (versión preliminar) para sus usuarios en el espacio empresarial. Estos pasos varían en función de cómo se habilita el espacio empresarial: [*Vista previa*](set-up-teams-admin-center.md#public-preview-tenants) pública o Vista [ *previa privada* (o Beta).](set-up-teams-admin-center.md#private-preview-tenants)
 
@@ -34,19 +37,19 @@ El Teams debe realizar determinados pasos para habilitar Viva Learning (versión
 
 ### <a name="administrator-steps-for-public-preview-tenants"></a>Pasos de administrador para inquilinos de vista previa pública
 
-Dado que viva Learning (versión preliminar) todavía no está disponible en general, se requieren ciertos pasos para habilitar las características y establecer permisos para usuarios o grupos específicos. 
+Dado que viva Learning (versión preliminar) todavía no está disponible en general, se requieren ciertos pasos para habilitar las características y establecer permisos para usuarios o grupos específicos.
 
 1. Habilitar las características de vista previa pública para los Learning (versión preliminar) de Viva.
 
-    a. Modifique Teams de actualización para habilitar las características de Vista previa pública. Vea [Microsoft Teams Public Preview](/microsoftteams/public-preview-doc-updates).
+   1. Modifique Teams de actualización para habilitar las características de Vista previa pública. Vea [Microsoft Teams Public Preview](/microsoftteams/public-preview-doc-updates).
 
-    b. Habilite la directiva de actualización para los usuarios o grupos que realizarán las pruebas de Viva Learning (versión preliminar). Vea [Asignar directivas a usuarios y grupos.](/microsoftteams/assign-policies-users-and-groups)
+   1. Habilite la directiva de actualización para los usuarios o grupos que realizarán las pruebas de Viva Learning (versión preliminar). Vea [Asignar directivas a usuarios y grupos.](/microsoftteams/assign-policies-users-and-groups)
 
 2. Modifique la directiva de permisos de la aplicación para los Learning (versión preliminar) de Viva.
 
-    a. A menos que actualmente forma parte de la directiva global, permita todas las aplicaciones de Microsoft en la directiva de permisos de la aplicación. Consulta [Administrar directivas de permisos de aplicaciones en Microsoft Teams](/microsoftteams/teams-app-permission-policies). 
+   1. A menos que actualmente forma parte de la directiva global, permita todas las aplicaciones de Microsoft en la directiva de permisos de la aplicación. Consulta [Administrar directivas de permisos de aplicaciones en Microsoft Teams](/microsoftteams/teams-app-permission-policies). 
 
-    b. Habilite la directiva de permisos de la aplicación para los usuarios o grupos que realizarán las pruebas de Viva Learning (versión preliminar). Vea [Asignar directivas a usuarios y grupos.](/microsoftteams/assign-policies-users-and-groups)
+   1. Habilite la directiva de permisos de la aplicación para los usuarios o grupos que realizarán las pruebas de Viva Learning (versión preliminar). Vea [Asignar directivas a usuarios y grupos.](/microsoftteams/assign-policies-users-and-groups)
 
 3. Notificar a los usuarios que probarán Viva Learning (versión preliminar) para cambiar su cliente de compilación a [Public Preview para Teams](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants).
 

@@ -14,23 +14,23 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: ''
 description: Obtenga información sobre cómo buscar recursos para Aprendizaje Microsoft Viva (versión preliminar).
-ms.openlocfilehash: 0979d9e2a5b8f0f04565ccc8d2089e85eb6f8411
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 00ce845dcb5cc5dd8b86620c7e7aafddaab334f5
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213990"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478846"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>Introducción a Aprendizaje Microsoft Viva (versión preliminar)
 
 > [!NOTE]
-> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. 
+> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. La vista previa no está abierta actualmente para los nuevos participantes.
 
 Aprendizaje Microsoft Viva (versión preliminar) permite a los equipos y a los individuos de la organización hacer que el aprendizaje sea una parte natural de su día. La aplicación crea un centro central en Microsoft Teams donde los empleados pueden compartir, asignar y aprender de bibliotecas de contenido en toda la organización.
 
 Los recursos de esta página están diseñados para empezar a aprender y usar Viva Learning (versión preliminar) de la organización.
 
-## <a name="get-started"></a>Introducción
+## <a name="get-started"></a>Comenzar
 
 Los recursos de esta sección le ayudarán a obtener más información sobre lo que es Viva Learning (versión preliminar) y cómo puede ayudar a su organización.
 

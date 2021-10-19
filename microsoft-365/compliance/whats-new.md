@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 94f5f0be4a0498107217cfc0b88e21c64d8acb3f
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 2beb65d3f5d73265df72b1d052dec0d1a9c6e512
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336039"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478570"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -193,7 +193,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 ### <a name="privacy-management"></a>Administración de privacidad
 
-- La [administración de privacidad de](privacy-management.md) Microsoft ha pasado a la versión preliminar pública. La administración de privacidad ayuda a su organización a comprender y administrar los datos personales en su entorno de Microsoft 365, corregir posibles riesgos de privacidad y cumplir con las solicitudes de derechos del sujeto.
+- La [administración de privacidad de](/privacy/solutions/privacymanagement/privacy-management) Microsoft ha pasado a la versión preliminar pública. La administración de privacidad ayuda a su organización a comprender y administrar los datos personales en su entorno de Microsoft 365, corregir posibles riesgos de privacidad y cumplir con las solicitudes de derechos del sujeto.
 
 ### <a name="retention-and-records-management"></a>Administración de registros y retención
 - En versión preliminar: [las directivas de](create-retention-policies.md#retention-policy-for-teams-locations) retención Teams ahora admiten canales privados como una nueva ubicación de Teams al crear o editar una directiva de retención

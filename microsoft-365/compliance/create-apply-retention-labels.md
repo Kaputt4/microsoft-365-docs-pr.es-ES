@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: bfe4fa129488595e6e9713d909c2c4020a2b5bb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f86692d07f7636f35ba700b9750510219a6ef380
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175364"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432642"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -49,6 +49,8 @@ Utilice las siguientes instrucciones para los dos pasos de administrador.
 
 El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no va a iniciar sesión como administrador global, consulte [Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
+Antes de crear la directiva de etiqueta de retención, decida si será **adaptable** o **estática**. Para obtener más información, vea [Ámbitos de directivas adaptables o estáticas para retención](retention.md#adaptive-or-static-policy-scopes-for-retention). Si decide usar una directiva adaptable, debe crear uno o más ámbitos adaptables antes de crear la directiva de etiqueta de retención. Luego deberá seleccionarlos durante el proceso de creación de directivas de etiqueta de retención. Para obtener instrucciones, vea [Información de configuración para ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
+
 ## <a name="how-to-create-and-publish-retention-labels"></a>Cómo crear y publicar etiquetas de retención
 
 Primero, cree sus etiquetas de retención. A continuación, cree una directiva de etiqueta para que las etiquetas estén disponibles para aplicarlas en las aplicaciones.
@@ -65,9 +67,13 @@ El lugar donde se crean y configuran las etiquetas de retención depende de si s
     - Si no está utilizando la administración de registros:
        - **Soluciones** > **Gobierno de información** > pestaña **Etiquetas** > + **Crear una etiqueta**
     
-    ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo**. 
+    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
 
-2. Siga las instrucciones del asistente. Si utiliza la administración de registros:
+2. Siga las instrucciones del asistente.
+    
+    Para obtener más información sobre la configuración de retención, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
+    
+    Si utiliza la administración de registros:
     
     - Para obtener información sobre los descriptores del plan de archivos, consulte [Usar plan de archivos para administrar etiquetas de retención](file-plan-manager.md).
     
@@ -91,14 +97,25 @@ Publique etiquetas de retención para que los usuarios puedan usarlas en aplicac
     - Si no está utilizando la administración de registros:
         - **Soluciones** > **Gobierno de información** > pestaña **Directivas de etiquetas** > **Publicar etiquetas**
     
-    ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo**. 
+    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
 
-2. Siga las instrucciones del asistente.
+2. Use el vínculo para seleccionar las etiquetas de retención que desea publicar y, a continuación, seleccione **Siguiente**.
+
+3. En la página **Elegir el tipo de directiva de retención que desea crear**, seleccione **Adaptable** o **Estática**, en función de lo que haya elegido en las instrucciones de [Antes de empezar](#before-you-begin). Si aún no ha creado ámbitos adaptables, podrá seleccionar **Adaptable**, pero no habrá ámbitos adaptables que seleccionar, por lo tanto no podrá finalizar el asistente con esta opción.
+
+4. Según el ámbito seleccionado:
     
-    Para obtener información sobre las ubicaciones compatibles con las etiquetas de retención, vea [Etiquetas de retención y ubicaciones](retention.md#retention-label-policies-and-locations). 
+    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **correo de Exchange** pero no **sitios de SharePoint**. 
+    
+    - Si ha elegido **Estático**: en la página **Elegir ubicaciones**, active o desactive cualquiera de las ubicaciones. Para cada ubicación, puede dejar de forma predeterminada [aplicar la directiva a toda la ubicación](retention-settings.md#a-policy-that-applies-to-entire-locations), o [especificar lo que se incluye y excluye](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
+    
+    Para obtener información sobre las opciones de ubicación, vea [Ubicaciones](retention-settings.md#locations).
 
-Para editar una directiva de la etiqueta de retención existente (el tipo de directiva es **Publicar**), selecciónela y, a continuación, seleccione la opción **Editar** para iniciar la directiva Editar retención. Este asistente le permite cambiar las descripciones de las directivas y los [parámetros de configuración adecuados](#updating-retention-labels-and-their-policies) del paso 2.
+5.  Siga las indicaciones del asistente para asignar un nombre a la directiva, revisar y enviar las opciones de configuración.
+    
+    Para obtener información sobre las opciones de ubicación, vea [Ubicaciones](retention-settings.md#locations). 
 
+Para editar una directiva de la etiqueta de retención existente (el tipo de directiva es **Publicar**), selecciónela y, a continuación, seleccione la opción **Editar** para iniciar la directiva Editar retención. Este asistente le permite cambiar las descripciones de las directivas y los [parámetros de configuración adecuados](#updating-retention-labels-and-their-policies).
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Cuando las etiquetas de retención estén disponibles para aplicarlas
 
