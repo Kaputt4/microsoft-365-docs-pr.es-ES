@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 1c06cdf9492fa18797bfbf25f8153fa347137ced
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: c8c5fc71cc7f6757cb40cc5ae649021ba020dcc2
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335603"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432700"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -63,7 +63,7 @@ Use las secciones siguientes para obtener más información sobre cómo funciona
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Cómo funciona la configuración de retención con el contenido local
 
-Cuando se incluye en una directiva de retención una ubicación como un sitio o buzón, el contenido permanece en su ubicación original. Los usuarios pueden seguir trabajando con sus documentos o buzones como si nada hubiera cambiado, pero si modifican o eliminan contenido que esté incluido en la directiva, se conservará una copia del mismo tal como era cuando se aplicó la directiva.
+Cuando el contenido tiene asignada la configuración de retención, ese contenido permanece en su ubicación original. La mayoría de las veces, las personas continúan trabajando con sus documentos o correo como si nada hubiera cambiado. Pero si editan o eliminan contenido incluido en la directiva de retención, se conserva automáticamente una copia del contenido.
   
 - Para sitios de SharePoint y OneDrive: la copia se conserva en la biblioteca de **Suspensión para conservación**.
 
@@ -272,6 +272,61 @@ No tiene que elegir entre usar solo directivas de retención o solo etiquetas de
 
 Para obtener más información acerca de cómo funcionan las directivas de retención y las etiquetas de retención conjuntamente y cómo determinar el resultado combinado, vea la siguiente sección en la que se explican los principios de la retención y las prioridades.
 
+## <a name="adaptive-or-static-policy-scopes-for-retention"></a>Ámbitos de directiva adaptables o estáticos para la retención
+
+> [!NOTE]
+> Los ámbitos de directiva adaptables como una nueva característica se encuentran actualmente en versión preliminar y están sujetos a cambios. La opción alternativa es un ámbito estático, que proporciona el mismo comportamiento antes de que se introdujesen ámbitos adaptables y se puede usar si los ámbitos adaptables no cumplen los requisitos empresariales.
+
+Al crear una directiva de retención o una directiva de etiqueta de retención, debe elegir entre adaptable y estática para definir el ámbito de la directiva.
+
+- Un **ámbito adaptable** usa una consulta que usted especifique, por lo que la pertenencia no es estática, sino dinámica, ya que se ejecuta diariamente en los atributos o propiedades que especifique para las ubicaciones seleccionadas. Puede usar varios ámbitos adaptables con una sola directiva.
+    
+    Ejemplo: los correos electrónicos y los documentos de OneDrive para ejecutivos requieren un período de retención más largo que los usuarios estándares. Cree una directiva de retención con un ámbito adaptable que use el puesto de trabajo del atributo Azure AD de "Ejecutivo" y, a continuación, seleccione las ubicaciones de correo electrónico de Exchange y cuentas de OneDrive para la directiva. No es necesario especificar direcciones de correo electrónico ni direcciones URL de OneDrive para estos usuarios porque el ámbito adaptable recupera automáticamente estos valores. Para los nuevos ejecutivos, no es necesario volver a configurar la directiva de retención porque estos nuevos usuarios con sus valores correspondientes para el correo electrónico y OneDrive se seleccionan automáticamente.
+
+- Un **ámbito estático** no usa consultas y está limitado en la configuración, ya que puede aplicarse a todas las instancias de una ubicación especificada o usar la inclusión y exclusiones para instancias específicas de esa ubicación. Estas tres opciones a veces se conocen como "de toda la organización", "includes" y "excluye", respectivamente.
+    
+    Ejemplo: los correos electrónicos y los documentos de OneDrive para ejecutivos requieren un período de retención más largo que los usuarios estándares. Crea una directiva de retención con un ámbito estático que selecciona las ubicaciones de correo electrónico de Exchange y cuentas de OneDrive para la directiva. Para la ubicación del correo electrónico de Exchange, puede identificar un grupo que contenga solo los ejecutivos, por lo que debe especificar este grupo para la directiva de retención y la pertenencia al grupo con las direcciones de correo electrónico respectivas se recupera cuando se crea la directiva. Para la ubicación de cuentas OneDrive, debe identificar y, a continuación, especificar direcciones URL de OneDrive individuales para cada ejecutivo. Para los nuevos ejecutivos, debe volver a configurar la directiva de retención para agregar las nuevas direcciones de correo electrónico y direcciones URL de OneDrive. También debe actualizar las direcciones URL de OneDrive siempre que se produzca un cambio en el UPN de un ejecutivo.
+    
+    Las direcciones URL de OneDrive son especialmente difíciles de especificar de forma confiable porque, de forma predeterminada, estas direcciones URL no se crean hasta que el usuario accede a su OneDrive por primera vez. Y si el UPN de un usuario cambia, lo que es posible que no sepa, su dirección URL OneDrive cambia automáticamente.
+
+Ventajas de usar ámbitos adaptables:
+
+- No hay límites en el [número de elementos por directiva](retention-limits.md#maximum-number-of-items-per-policy). Aunque las directivas adaptables siguen estando sujetas a las limitaciones de [número máximo de directivas por inquilino](retention-limits.md#maximum-number-of-policies-per-tenant), la configuración más flexible probablemente dará como resultado muchas menos directivas.
+
+- Objetivos más eficaces para sus requisitos de retención. Por ejemplo, puede asignar diferentes configuraciones de retención a los usuarios según su ubicación geográfica mediante el uso de atributos de Azure AD existentes sin la sobrecarga administrativa de crear y mantener grupos para este fin.
+
+- La pertenencia basada en consultas proporciona resistencia frente a cambios empresariales que podrían no reflejarse de forma confiable en la pertenencia a grupos o en procesos externos que dependen de la comunicación entre departamentos.
+
+- Una sola directiva de retención puede incluir ubicaciones para Microsoft Teams y Yammer, mientras que cuando se usa un ámbito estático, estas ubicaciones requieren su propia directiva de retención.
+
+Ventajas de usar ámbitos estáticos:
+
+- Configuración más sencilla si quiere que todas las instancias se seleccionen automáticamente para una carga de trabajo.
+    
+    Para "includes" y "excludes", esta opción puede ser una configuración más sencilla inicialmente si el número de instancias que tiene que especificar es bajo y no cambia. Sin embargo, cuando este número de instancias empieza a aumentar y tiene cambios frecuentes en su organización que requieren que vuelva a configurar las directivas, los ámbitos adaptables pueden ser más fáciles de configurar y mucho más fáciles de mantener.
+
+- Las ubicaciones **Skype empresarial** y **las carpetas públicas de Exchange** no admiten ámbitos adaptables. Para esas ubicaciones, debe usar un ámbito estático. 
+
+Para obtener información de configuración, vea [Configurar ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
+
+Para ver un seminario web grabado (requiere registro), visite [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
+
+> [!IMPORTANT]
+> Actualmente, los ámbitos adaptables no admiten [Bloqueo de conservación para restringir los cambios en las directivas de retención y las directivas de etiquetas de retención](#use-preservation-lock-to-restrict-changes-to-policies).
+
+## <a name="policy-lookup"></a>Búsqueda de directiva
+
+> [!NOTE]
+> La búsqueda de directivas está actualmente en versión preliminar y está sujeta a cambios.
+
+Puede configurar varias directivas de retención para Microsoft 365, así como varias directivas de etiquetas de retención que publique o aplique automáticamente. Para buscar las directivas de retención que se asignan a usuarios, sitios y grupos de Microsoft 365 específicos, use **búsqueda de directivas** en la solución **Información de gobierno** del Centro de cumplimiento de Microsoft 365:
+
+![Búsqueda de directivas para buscar las directivas de retención asignadas a usuarios, sitios y grupos de Microsoft 365 específicos ](../media/policy-lookup.png)
+
+Debe especificar la dirección de correo electrónico exacta de un usuario, la dirección URL exacta de un sitio o la dirección de correo electrónico exacta de un grupo de Microsoft 365.
+
+La opción para sitios incluye cuentas de OneDrive. Para obtener información sobre cómo especificar la dirección URL de la cuenta de OneDrive de un usuario, vea [Obtener una lista de todas las direcciones URL de OneDrive de usuario de su organización](/onedrive/list-onedrive-urls).
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Los principios de retención o qué tiene precedencia
 
 A diferencia de las etiquetas de retención, puede aplicar más de una directiva de retención al mismo contenido. Cada directiva de retención puede resultar en una acción de retención y una acción de eliminación. Además, ese elemento también podría estar sujeto a estas acciones desde una etiqueta de retención.
@@ -327,17 +382,17 @@ Explicación de los cuatro niveles diferentes:
         
         El documento se elimina permanentemente siete años después porque la acción de eliminación de la etiqueta de retención tiene prioridad.
     
-    2. Cuando tenga solo directivas de retención: si una directiva de retención para una ubicación tiene como ámbito el utilizar una configuración de inclusión (como usuarios específicos para el correo electrónico de Exchange), esa directiva de retención tiene prioridad sobre las directivas de retención sin ámbito para la misma ubicación.
+    2. Solo cuando tiene directivas de retención: si una directiva de retención para una ubicación usa un ámbito adaptable o un ámbito estático que incluye instancias específicas (como usuarios específicos para el correo electrónico de Exchange), esa directiva de retención tiene prioridad sobre un ámbito estático configurado para todas las instancias de la misma ubicación.
         
-        Una directiva de retención sin ámbito es el lugar donde se selecciona una ubicación sin especificar instancias específicas. Por ejemplo, el correo electrónico de Exchange y la configuración predeterminada de todos los destinatarios es una directiva de retención sin ámbito. O bien, los sitios de SharePoint y la configuración predeterminada de todos los sitios. Cuando las directivas de retención tienen ámbito establecido, tienen la misma precedencia en este nivel.
+        Un ámbito estático que está configurado para todas las instancias de una ubicación a veces se conoce como una "directiva para toda la organización". Por ejemplo, **correo electrónico de Exchange** y la configuración predeterminada de **todos los destinatarios**. O bien, los **sitios de SharePoint** y la configuración predeterminada de **todos los sitios**. Cuando las directivas de retención no son de toda la organización, pero se han configurado con un ámbito adaptable o un ámbito estático que incluye instancias específicas, tienen la misma prioridad en este nivel.
         
         **Ejemplo 1 para este tercer principio (directivas)**: un mensaje de correo electrónico está sujeto a dos directivas de retención. La primera directiva de retención no tiene ámbito y elimina los elementos después de diez años. La segunda directiva de retención tiene como ámbito buzones específicos y elimina los elementos después de cinco años.
         
-        El mensaje de correo electrónico se elimina permanentemente después de cinco años porque la acción de eliminación de la directiva de retención con ámbito tiene prioridad sobre la directiva de retención sin ámbito.
+        El mensaje de correo electrónico se elimina permanentemente después de cinco años porque la acción de eliminación de la directiva de retención con ámbito tiene prioridad sobre la directiva de retención de toda la organización.
         
         **Ejemplo 2 de este tercer principio (directivas)**: un documento de la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 10 años. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 7 años.
         
-        En este nivel, no se puede determinar cuándo se eliminará permanentemente este documento porque ambas directivas de retención tienen un ámbito.
+        No se puede determinar cuándo se eliminará permanentemente este documento en este nivel porque ambas directivas de retención tienen como ámbito incluir instancias específicas.
 
 4. **El periodo de eliminación más corto prevalece.** Se aplica para determinar cuándo se eliminarán los elementos de las directivas de retención y el resultado no se haya podido resolver desde el nivel anterior: el contenido se elimina permanentemente al final del período de retención más corto.
     
@@ -366,8 +421,8 @@ Los ejemplos siguientes son más complejos para ilustrar los principios de reten
 
 2.  Se aplicó la siguiente configuración de retención a un elemento:
     
-    - Una directiva de retención sin ámbito que elimina después de diez años
-    - Una directiva de retención con ámbito para conservar durante cinco años y, después, eliminar
+    - Una directiva de retención para toda la organización que solo se elimina después de diez años
+    - Una directiva de retención con ámbito de instancias específicas que se conserva durante cinco años y, a continuación, se elimina.
     - Una etiqueta de retención para conservar durante tres años y, después, eliminar
     
     **Resultado**: el elemento se conserva durante cinco años, ya que este es el período de retención más largo. Al final de ese período de retención, el elemento se eliminará permanentemente debido a la acción de eliminación de tres años a partir de la etiqueta de retención. La acción de eliminar de las etiquetas de retención tiene prioridad sobre la acción de eliminar de todas las directivas de retención. En este ejemplo, todos los conflictos se resuelven antes del tercer nivel.
