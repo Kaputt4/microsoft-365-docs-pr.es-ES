@@ -1014,22 +1014,10 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Seguridad en servicios energéticos y cumplimiento
           href: ../solutions/energy-secure-collaboration.md
-- name: Administrar los riesgos de privacidad
+- name: Administración de privacidad
   items:
     - name: Más información acerca de la administración de privacidad
-      href: privacy-management.md
-    - name: Introducción a la administración de privacidad
-      href: privacy-management-setup.md
-    - name: Establecer permisos de usuario en la administración de privacidad
-      href: privacy-management-permissions.md
-    - name: Administrar configuración de privacidad
-      href: privacy-management-settings.md
-    - name: Buscar y visualizar datos personales en la administración de privacidad
-      href: privacy-management-data-profile.md
-    - name: Crear y administrar directivas en la administración de privacidad
-      href: privacy-management-policies.md
-    - name: Administrar solicitudes de derechos de sujeto en la administración de privacidad
-      href: privacy-management-subject-rights-requests.md
+      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Funcionalidades de cumplimiento híbrido
   items:
     - name: Cifrado de correo de Exchange Online con AD RMS

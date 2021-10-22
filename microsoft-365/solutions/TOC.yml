@@ -139,6 +139,8 @@
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Paso 7. Eliminar la cuenta de usuario de un exempleado
                   href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Migrar el contenido a Microsoft 365
+          href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Migrar recursos compartidos de archivos a Microsoft 365
           items:
             - name: Información general
@@ -268,6 +270,8 @@
           href: ../compliance/insider-risk-solution-overview.md
         - name: Soluciones de auditoría
           href: ../compliance/auditing-solutions-overview.md
+        - name: Soluciones de eDiscovery en Microsoft 365
+          href: ../compliance/ediscovery.md
         - name: eDiscovery avanzado de Microsoft 365
           href: ../compliance/overview-ediscovery-20.md
         - name: Planes de acción de cumplimiento de normativas
@@ -288,14 +292,18 @@
           href: ../security/microsoft-365-security-for-bdm.md
         - name: Configuraciones de acceso a dispositivos e identidades
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
+        - name: Evaluar Microsoft 365 Defender y realizar una prueba piloto
+          href: ../security/defender/eval-overview.md
+        - name: Responder al primer incidente
+          href: ../security/defender/first-incident-overview.md
         - name: Implementar Microsoft Defender para punto de conexión
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
-        - name: Migrar desde Symantec a Microsoft Defender para punto de conexión
-          href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
-        - name: Migrar desde McAfee a Microsoft Defender para punto de conexión
-          href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
         - name: Cambiar de una protección de puntos de conexión distinta de Microsoft a Microsoft Defender para punto de conexión
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+        - name: Recomendaciones de seguridad para cuentas prioritarias en Microsoft 365
+          href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+        - name: Quitar un antiguo empleado y proteger los datos
+          href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Casos prácticos de Contoso
       items:
         - name: Soluciones de Microsoft 365 para Contoso Corporation
