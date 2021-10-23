@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 description: Más información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que se encarga de la parte de TI por usted.
 feedback_system: None
-ms.date: 7/28/2020
-ms.openlocfilehash: 683c45c4f88dbd45ed810fe16b4932b7f40e5c43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.date: 10/20/2021
+ms.openlocfilehash: c1514be3cb1f8aa19a78a5a2c2ef37b80dada217
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191054"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555385"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Empresa Premium
 
@@ -45,7 +45,7 @@ Cuando se suscribe a Microsoft 365 Empresa Premium, obtiene todas las mismas her
 | Protección contra amenazas | Microsoft 365 Empresa Premium le ayuda a protegerse contra las amenazas con protección de amenazas avanzada, datos adjuntos seguros y protección de vínculos seguros. |
 | Proteger datos empresariales | Sus datos personales se protegen en dispositivos personales con acceso a PIN, y la copia y almacenamiento restringidos. También puede agregar la protección de la información para asegurarse de que solo los usuarios autorizados puedan acceder a información confidencial. |
 | Proteger sus dispositivos | Para proteger los archivos de trabajo en dispositivos, restrinja el acceso móvil, como copiar y pegar. También puede borrar de forma selectiva los datos comerciales de los dispositivos móviles registrados en caso de pérdida o robo. |
-| Características de seguridad adicionales | Las características avanzadas de Microsoft 365 Empresa Premium están disponibles para ayudarle a proteger su empresa frente a amenazas cibernéticos y proteger la información confidencial. Entre las características se incluyen Office 365, la protección contra amenazas avanzada, las directivas de prevención de pérdida de datos (DLP), archivado de Exchange Online, Azure Information Protection y Intune. |
+| Características de seguridad adicionales | Las características avanzadas de Microsoft 365 Empresa Premium están disponibles para ayudarle a proteger su empresa frente a amenazas cibernéticos y proteger la información confidencial. Las funcionalidades incluyen Microsoft Defender para Office 365 Plan 1, directivas de prevención de pérdida de datos (DLP), archivado de Exchange Online, Azure Information Protection e Intune. |
 
 Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../campaigns/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados. 
 

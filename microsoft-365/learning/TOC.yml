@@ -4,6 +4,8 @@
   items:
     - name: Información general sobre Aprendizaje Microsoft Viva
       href: overview-viva-learning.md
+    - name: Descripción de los términos y condiciones
+      href: terms-and-conditions.md
 - name: Configuración y administración
   items:
     - name: Configuración en el Centro de administración de Teams

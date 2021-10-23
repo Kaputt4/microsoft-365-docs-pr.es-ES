@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de aplicación.
-ms.openlocfilehash: 25aa33fad47abd5faebb90b28b47564f32d6b008
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61394e280478e7d240fd035c569e17b85e45a076
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204544"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554353"
 ---
 # <a name="create-app-policies"></a>Crear directivas de aplicación
 
@@ -69,6 +69,8 @@ El gobierno de las aplicaciones incluye estas plantillas para generar alertas so
 |---|---|
 |Aplicaciones con exceso de privilegios|Destaca cualquier aplicación con más permisos concedidos de los que están siendo utilizados por esas aplicaciones para identificar oportunidades de reducción potencial de permisos. <p> Por defecto, esta directiva marcará todas las aplicaciones que estén marcadas como con exceso de privilegios si no se utilizan durante 90 días. Este filtro de periodo de tiempo se puede personalizar con más condiciones y acciones.|
 |Nueva aplicación con permisos de alto privilegio|Destaca todas las nuevas aplicaciones con permisos de alto privilegio para identificar las posibles aplicaciones de alto impacto que pueden necesitar una mayor investigación. <p> De forma predeterminada, esta directiva marcará todas las aplicaciones registradas en los últimos 7 días que tengan permisos de alto alcance.|
+ |Nueva aplicación con permisos que no son de Graph|Resalta todas las aplicaciones nuevas con permisos para que las API que no son de Graph identifiquen y revisen las API que podrían no recibir las actualizaciones de seguridad más recientes o que podrían no ser compatibles en el futuro.
+ <p> De forma predeterminada, esta directiva marcará todas las aplicaciones registradas en los últimos 7 días que tengan permisos que no sean de Graph.|
 |||
 
 ### <a name="m365-certification"></a>Certificación M365
@@ -130,6 +132,7 @@ Estas son las condiciones disponibles para una directiva de aplicación personal
 |Permiso delegado|Seleccione uno o más permisos de API de la lista|[Referencia de permisos de Microsoft Graph](/graph/permissions-reference)|
 |Privilegio alto|Sí o no|Se trata de una designación interna basada en la misma lógica utilizada por el MCAS.|
 |Aplicación sobre privilegiada|Sí o no|Aplicaciones con más permisos concedidos de los que están siendo utilizados por esas aplicaciones.|
+|Permisos que no son de la API de Graph|Sí o no|Aplicaciones que tienen permisos que no son de Graph API.|
 |Acceso a los datos de la aplicación|Más de X GB de acceso a datos por hora||
 |Tendencia de acceso a los datos de la aplicación|X% de aumento en el uso de datos en los últimos 7 días||
 |Acceso a la API de la aplicación|Más de X llamadas a la API por hora||
