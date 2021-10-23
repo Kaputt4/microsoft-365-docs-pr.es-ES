@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 87df624f35231a43cd8d9e2d34912d2bc48a5252
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 5840368c8d73bcafd486db9c3aa982fa03896b5e
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478966"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555037"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -544,6 +544,7 @@ En la siguiente tabla se describen las actividades relacionadas cuando los usuar
 |Lista de elementos actualizada|ListItemUpdated|Un usuario ha actualizado una lista de elementos de SharePoint modificando una o más propiedades.|
 |Una columna de sitio actualizada.|SiteColumnUpdated|Un usuario ha actualizado una de columna de sitio de SharePoint modificando una o más propiedades.|
 |Tipo de contenido de sitio actualizado|SiteContentTypeUpdated|Un usuario ha actualizado una lista de tipo de contenido modificando una o más propiedades.|
+|Elemento de lista visualizado|ListItemViewed|Un usuario ha visto un elemento de lista de SharePoint.|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>Actividades de solicitud de acceso y uso compartido
@@ -589,10 +590,10 @@ La siguiente tabla enumera la sincronización de archivos de actividades en Shar
 |:-----|:-----|:-----|
 |Equipo permitido para sincronizar archivos|ManagedSyncClientAllowed|El usuario establece correctamente una relación de sincronización con un sitio. La relación de sincronización es correcta porque el equipo del usuario es miembro de un dominio que se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
 |Computadora bloqueada de los archivos de sincronización|UnmanagedSyncClientBlocked|El usuario intenta establecer una relación de sincronización con un sitio desde un equipo que no es un miembro del dominio de la organización o es un miembro de un dominio que no se ha agregado a la lista de dominios (denominada la *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. La relación de sincronización no se permite y el equipo del usuario está bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos.<br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](/powershell/module/sharepoint-online/).|
-|Archivos descargados al equipo|FileSyncDownloadedFull|El usuario establece una relación de sincronización y descarga archivos correctamente la primera vez a su equipo desde la biblioteca de documentos.|
-|Cambios de archivos descargados al equipo|FileSyncDownloadedPartial|El usuario descarga correctamente cualquier cambio a los archivos de una librería de documentos. Esta actividad indica que cualquier cambio que se realice en los archivos de la librería de documentos se descarga en el equipo del usuario. Solo se descargaron los cambios porque la biblioteca de documentos se había descargado anteriormente por el usuario (como se indica en la actividad **Archivos descargados al equipo**).|
-|Archivos cargados a la biblioteca de documentos|FileSyncUploadedFull|El usuario establece una relación de sincronización y carga archivos correctamente la primera vez desde su equipo a la biblioteca de documentos.|
-|Cambios de archivos cargados a la biblioteca de documentos|FileSyncUploadedPartial|El usuario carga correctamente los cambios a una librería de documentos. Este evento indica que cualquier cambio realizado en la versión local de un archivo de una biblioteca de documentos se carga correctamente en dicha biblioteca. Solo se cargaron los cambios porque esos archivos se habían cargado anteriormente por el usuario (como se indica en la actividad **Archivos cargados a la librería de documentos**).|
+|Archivos descargados al equipo|FileSyncDownloadedFull|El usuario descarga un archivo en su equipo desde una biblioteca de documentos de SharePoint o OneDrive para la Empresa con la aplicación de Sincronización de OneDrive (OneDrive.exe).|
+|Cambios de archivos descargados al equipo|FileSyncDownloadedPartial|Este evento ha quedado en desuso junto con la antigua aplicación de Sincronización de OneDrive para la Empresa (Groove.exe).|
+|Archivos cargados a la biblioteca de documentos|FileSyncUploadedFull|El usuario carga un nuevo archivo o cambios en un archivo en la biblioteca de documentos de SharePoint o OneDrive para la Empresa con la aplicación de Sincronización de OneDrive (OneDrive.exe).|
+|Cambios de archivos cargados a la biblioteca de documentos|FileSyncUploadedPartial|Este evento ha quedado en desuso junto con la antigua aplicación de Sincronización de OneDrive para la Empresa (Groove.exe).|
 ||||
 
 ### <a name="site-permissions-activities"></a>Actividades de sitios de permisos 
