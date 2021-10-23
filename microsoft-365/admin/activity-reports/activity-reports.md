@@ -22,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 15d2ac283f3687863355d44016a468f69d8efe7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10c2fdeae19746358745308d3b5171afb0647ebd
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156095"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553357"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
-Puede ver fácilmente el uso que hacen los usuarios de su empresa de los servicios de Microsoft 365. Por ejemplo, puede identificar quién usa con más frecuencia el servicio y las cuotas alcanzadas o quién puede no necesitar la licencia de Microsoft 365 en lo absoluto. El modelo de licencia perpetua no se incluirá en los informes. 
+Puede ver fácilmente el uso que hacen de los servicios de Microsoft 365 los usuarios de su empresa. Por ejemplo, puede identificar quién los usa con más frecuencia y ha alcanzado el límite o aquellos que no necesiten una licencia de Microsoft 365 en absoluto. El modelo de licencia perpetua no se incluirá en los informes. 
   
 Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los datos no estarán disponibles para todos los períodos de informes al instante. Los informes están disponibles en 48 horas.
   
@@ -160,7 +160,7 @@ La lista de usuarios será similar a la siguiente:
 ![Informes: lista anónima de usuarios](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 
-Si desea mostrar información de nivel de usuario al generar los informes, un administrador global puede realizar ese cambio de manera rápida en el centro de administración.
+Si desea mostrar información a nivel de usuario al generar los informes, un **administrador global** puede realizar ese cambio fácilmente en el centro de administración.
 
 Los informes proporcionan información sobre los datos de uso de la organización. De forma predeterminada, los informes muestran información con nombres identificables para usuarios, grupos y sitios. A partir del 1 de septiembre de 2021, ocultamos información de usuario de forma predeterminada para todos los informes como parte de nuestro compromiso continuo de ayudar a las empresas a apoyar sus leyes de privacidad locales.
 
@@ -185,9 +185,9 @@ Aplicar estos cambios a los informes del panel Informes puede tardar unos minuto
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>¿Qué ocurre con los datos de uso cuando se cierra una cuenta de usuario?
 
-Siempre que cierre una cuenta de usuario, Microsoft eliminará los datos de uso de ese usuario en un plazo de 30 días. Este usuario se incluirá en el gráfico de actividad totales (ver número 1) para los períodos en los que estaba activo, pero no aparecerá en la tabla detalles del usuario (ver número 2).
+Siempre que cierre una cuenta de usuario, Microsoft eliminará los datos de uso de ese usuario en un plazo de 30 días. Ese usuario seguirá estando incluido en el total del gráfico de actividades durante los períodos de actividad, pero no aparecerá en la tabla Detalles del usuario.
   
-Sin embargo, si selecciona un día concreto (ver número 3), hasta 28 días después de la fecha actual, el informe mostrará el uso que el usuario hace a ese día en la tabla detalles del usuario (ver número 2).
+Sin embargo, al seleccionar un día concreto, hasta 28 días a partir de la fecha actual, el informe muestra el uso del usuario para ese día en la tabla Detalles del usuario.
   
 ## <a name="related-content"></a>Contenido relacionado
 
