@@ -2,7 +2,6 @@
 title: Habilitar el bloqueo a primera vista para detectar malware en segundos
 description: Active la característica de bloqueo a primera vista para detectar y bloquear el malware en pocos segundos.
 keywords: analizar, bloquear a primera vista, malware, primera vista, nube, defender, antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,16 +11,16 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 07/29/2021
+ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fe20298dbfbea1b81f82864beb5d2ccb66ef66d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53ef056a61da1dca83c1c6bdf611e37a50dc9008
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193008"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552841"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -199,7 +198,7 @@ Si no es un administrador empresarial o un profesional de TI pero le interesa sa
 
 Si tiene un dispositivo personal que no está administrado por una organización, puede que se pregunte cómo activar o desactivar el bloqueo a primera vista. Puede usar la aplicación de Seguridad de Windows para administrar el bloqueo a primera vista.
 
-1. En el equipo con Windows 10, abra la aplicación de Seguridad de Windows.
+1. En el equipo con Windows 10 o Windows 11, abra la aplicación de Seguridad de Windows.
 
 2. Seleccione **Protección antivirus y contra amenazas**.
 
