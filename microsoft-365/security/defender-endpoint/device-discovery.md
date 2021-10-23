@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 90e2c3ddf2ba44af00c95ef1112e7406f665a7b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf0341ec4c77b8f3c803d087ff52ad4bde40decd
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192888"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552606"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -62,13 +62,17 @@ Hay dos modos de detección:
 > [!IMPORTANT]
 > La detección se establece en modo básico. Puede elegir conservar esta configuración a través de la página de configuración. La detección estándar será el modo predeterminado para todos los clientes a partir del 19 de julio de 2021, a menos que se modifique a través de la página de configuración antes de esta fecha.
 
+
+Solo los dispositivos observados por el modo de detección básico se sondearán activamente en modo estándar.
+
+
 ### <a name="basic-discovery"></a>Detección básica
 
 En este modo, los puntos de conexión recopilarán pasivamente eventos en la red y extraerán información del dispositivo de ellos. La detección básica usa el SenseNDR.exe binario para la recopilación de datos de red pasiva y no se iniciará tráfico de red. Los puntos de conexión simplemente extraerán datos de cada tráfico de red que ve un dispositivo incorporado.
 
 ### <a name="standard-discovery"></a>Detección estándar
 
-Este modo permite a los puntos de conexión sondear activamente los dispositivos observados en la red para enriquecer los datos recopilados, lo que le ayuda a crear un inventario de dispositivos confiable y coherente. El modo estándar usa sondeos inteligentes y activos para descubrir aún más información sobre los dispositivos observados para enriquecer la información del dispositivo existente.
+Este modo permite a los puntos de conexión sondear activamente los dispositivos observados en la red para enriquecer los datos recopilados y descubrir más dispositivos, lo que te ayuda a crear un inventario de dispositivos confiable y coherente. El modo estándar usa sondeos inteligentes y activos para descubrir aún más información sobre los dispositivos observados para enriquecer la información del dispositivo existente. El modo estándar también aprovecha los protocolos comunes de detección que usan consultas de multidifusión en la red para encontrar aún más dispositivos, además de los que se han ovserved mediante el método pasivo.
 
 Cuando el modo estándar está habilitado, las herramientas de supervisión de red de la organización pueden observar una actividad de red mínima y insignificante generada por el sensor de detección.
 
@@ -136,7 +140,7 @@ En la siguiente sección se enumeran los cambios que observará en Microsoft Def
 2. Los dispositivos no administrados se asignarán a grupos de dispositivos existentes según los criterios definidos.
 3. En raras ocasiones, la detección estándar puede desencadenar alertas en monitores de red o herramientas de seguridad. Proporcione comentarios, si experimenta este tipo de eventos, para evitar que estos problemas se repitan. Puede excluir explícitamente destinos específicos o subredes enteras de ser sondeados activamente por la detección estándar.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Configuración de la detección de dispositivo](configure-device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

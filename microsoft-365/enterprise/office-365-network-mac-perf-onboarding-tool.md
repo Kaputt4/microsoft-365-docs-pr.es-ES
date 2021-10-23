@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
-ms.openlocfilehash: e19c9863be6e5b827e15dd86fadc55ace7e427e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4671db1e09713ff6b25ef163a30fb524576d6932
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199962"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554305"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 
@@ -254,13 +254,11 @@ Esto muestra cualquier problema de mantenimiento significativo con la red global
 
 Estas son las respuestas a algunas de nuestras preguntas más frecuentes.
 
-### <a name="is-this-tool-released-and-supported-by-microsoft"></a>¿Microsoft ha lanzado y admitido esta herramienta?
-
-Actualmente es una versión preliminar y tenemos previsto proporcionar actualizaciones periódicamente hasta que alcancemos el estado de la versión de disponibilidad general con el soporte técnico de Microsoft. Proporcione comentarios para ayudarnos a mejorar. Estamos planeando publicar una guía de incorporación de Office 365 de red más detallada como parte de esta herramienta, que se personaliza para la organización mediante sus resultados de prueba.
-
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>¿Qué es necesario para ejecutar el cliente de prueba avanzada?
 
 El cliente de prueba avanzada requiere .NET Core 3.1 Desktop Runtime. Si ejecuta el cliente de prueba avanzada sin que esté instalado, se le dirigirá a la página del instalador [de .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Asegúrese de instalar Desktop Runtime y no el SDK, ni el ASP.NET Core Runtime, que están más arriba en la página. Los permisos de administrador en el equipo son necesarios para instalar .NET Core.
+
+El cliente de prueba avanzada usa SignalR para comunicarse con la página web. Para ello, debe asegurarse de que la conectividad del puerto TCP 443 connectivity.service.signalr.net está abierta. Esta dirección URL no se publica en el porque esa conectividad no es necesaria para un usuario Office 365 https://aka.ms/o365ip aplicación cliente.
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>¿Qué Microsoft 365 la puerta principal del servicio?
 

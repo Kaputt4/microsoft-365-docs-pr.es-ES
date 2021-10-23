@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d288a9a5821521a68e254aa3ff97182140d66b63
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0ec5e495e23326c52af37858d596caa3fbead606
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203800"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556321"
 ---
 # <a name="user-reported-message-settings"></a>Configuración del mensaje notificado por el usuario
 
@@ -54,9 +54,7 @@ Use los artículos siguientes para configurar los requisitos previos necesarios 
 
 - [Cree](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) una directiva contra correo no deseado que incluya el buzón personalizado donde ZAP para correo no deseado y ZAP para phishing están desactivados **(** No está seleccionada la sección Purga automática de hora cero habilitada \> **(ZAP).**
 
-- Deshabilite la regla de correo no deseado en el buzón personalizado. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Después de deshabilitarlo, EOP no puede mover mensajes a la carpeta correo  no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado o a la colección de listas seguras del buzón.
-
-Si tiene Microsoft Defender para Office 365, también debe configurar lo siguiente para que nuestro filtrado avanzado no repercuta en los mensajes de informes de los usuarios:
+Si tienes Microsoft Defender para Office 365, también debes configurar las siguientes opciones para que nuestro filtrado avanzado no tenga impacto en los usuarios que informan mensajes:
 
 - [Crear una directiva de vínculos](set-up-safe-links-policies.md) de Caja fuerte que incluya el buzón personalizado donde está desactivado el examen de vínculos de Caja fuerte (**Seleccione** la acción para direcciones URL potencialmente malintencionadas desconocidas en la sección mensajes \> **Desactivado**).
 

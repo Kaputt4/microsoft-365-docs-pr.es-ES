@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderás a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de la organización.
-ms.openlocfilehash: a7d7541f90573df4f86b71aa02e377ff20717f85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 490af48e3279147af31178e809010d6316367d7f
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203296"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554785"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -111,7 +111,7 @@ En la pantalla de revisión final, haga clic **en Crear** para terminar de crear
 
 ## <a name="test-a-dlp-policy"></a>Probar una directiva DLP
 
-La nueva directiva DLP empezará a tener efecto en aproximadamente 1 hora. Puede sentarse y esperar a que se desencadene por la actividad normal del usuario, o puede intentar desencadenarla usted mismo. Anteriormente me vinculé a definiciones de entidad de tipo de información confidencial, que le proporciona información sobre cómo desencadenar [coincidencias](sensitive-information-type-entity-definitions.md)dlp.
+Puede sentarse y esperar a que la directiva se desencadene por la actividad normal del usuario, o puede intentar desencadenarla usted mismo. Anteriormente me vinculé a definiciones de entidad de tipo de información confidencial, que le proporciona información sobre cómo desencadenar [coincidencias](sensitive-information-type-entity-definitions.md)dlp.
 
 Por ejemplo, la directiva DLP que creé para este artículo detectará números de archivo fiscal australiano (TFN). Según la documentación, la coincidencia se basa en los siguientes criterios.
 

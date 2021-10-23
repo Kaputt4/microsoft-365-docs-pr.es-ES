@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 20f5f94db051e905dca48ca46f2beac560978691
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 172b23ee84c8a8a9518e2e3df000dedfa998dc16
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268604"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555157"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -32,6 +32,10 @@ ms.locfileid: "60268604"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1014727-20121082147270"></a>101.47.27 (20.121082.14727.0)
+
+- Corrección de un bloqueo del sistema que se produce al apagar macOS Mojave y macOS Catalina
 
 ## <a name="1014384-20121082143840"></a>101.43.84 (20.121082.14384.0)
 

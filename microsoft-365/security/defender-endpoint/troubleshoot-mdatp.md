@@ -2,8 +2,6 @@
 title: Solucionar problemas de servicio de Microsoft Defender para punto de conexión
 description: Busque soluciones y soluciones alternativas a problemas conocidos, como errores de servidor al intentar obtener acceso al servicio.
 keywords: solucionar problemas de Microsoft Defender para el extremo, error del servidor, acceso denegado, credenciales no válidas, sin datos, portal de panel, permitir, visor de eventos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2d001d8c554738415e1108bd273aef642851e619
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d46fb5d456377a3089e5d6cfa45918eb42849227
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191580"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553864"
 ---
 # <a name="troubleshoot-service-issues"></a>Solucionar problemas de servicio
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro Administración de Microsoft 365 red
-ms.openlocfilehash: 479b779e466f9c3e7168856642be4a129dbbcf1a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 579166cef377810dfe38993bf3736e65d46f8c0c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150599"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552853"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro Administración de Microsoft 365 red
 
@@ -63,7 +63,11 @@ Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer 24 
 
 Para esta opción, no Windows servicios de ubicación ni Wi-Fi son necesarios. El OneDrive para Windows versión debe estar actualizado e instalado en al menos un equipo en la ubicación.
 
-También debe agregar ubicaciones en la página **Ubicaciones** o importarlas desde un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred DE LAN de office.
+Asegúrese de agregar también ubicaciones en la página **de ubicaciones** o importar las de un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred DE LAN de office. En el cuadro de diálogo para agregar o editar una ubicación, puede especificar un número de subredes LAN y varias subredes IP de salida pública. Las subredes LAN son necesarias y una de ellas debe coincidir con el atributo de subred LAN en una evaluación de red recibida para que se muestren los resultados. No se admiten super redes, por lo que la subred LAN debe coincidir exactamente.
+
+Tenga en cuenta que, por lo general, las subredes LAN son intervalos de direcciones IP privados definidos en RFC1918, de manera que es probable que el uso de direcciones IP públicas como subredes LAN sea incorrecto. El cuadro de diálogo mostrará sugerencias de subredes LAN que se han visto en pruebas de evaluación de red recientes para su organización para que pueda elegir.
+
+Si agrega direcciones IP de salida públicas, estas se usan como un diferenciador secundario y están diseñadas para cuando tiene varios sitios que usan los mismos intervalos de direcciones IP de subred LAN. Para asegurarse de que se muestran los resultados de la prueba, debe empezar dejando los intervalos de direcciones IP de salida públicos en blanco. Si se incluyen, un resultado de prueba debe coincidir con uno de los intervalos de direcciones IP de subred LAN y uno de los intervalos de direcciones IP de salida públicos.
 
 Esta opción le permite tener varias oficinas definidas dentro de una ciudad.
 

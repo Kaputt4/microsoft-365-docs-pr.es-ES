@@ -2,7 +2,6 @@
 title: Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 description: Obtenga información sobre la protección y la protección entregadas en la nube Antivirus de Microsoft Defender
 keywords: Antivirus de Microsoft Defender, tecnologías de última generación, envío de ejemplo antivirus, av de próxima generación, aprendizaje automático, antimalware, seguridad, defender, nube, protección entregada en la nube
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,14 +13,14 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 10/05/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ffb8ccb40a6fcbe90d8dd0636402f8e9a40f058b
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 6e86f4c7f311a356d38d5ecee5498e120190d7b9
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245780"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554089"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 

@@ -22,21 +22,18 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 y averiguar cuántas licencias de productos se usan.
-ms.openlocfilehash: abb2c4459ac52151fbf1af5712e52ac49f0d5762
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 793f83e28c396add9046f2c464efbdfef2b291f8
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156071"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553369"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Evaluar el informe Microsoft 365 usuarios activos
 
-El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
 Por ejemplo, puede usar el informe **Usuarios activos** para conocer cuántas licencias de productos están en uso por usuarios de la organización y explorar en profundidad la información sobre los productos que usa cada usuario. Este informe puede ayudar a los administradores a identificar productos no usados o usuarios que pueden necesitar aprendizaje o información adicional. 
-  
-> [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial para ver informes.  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Obtener acceso al informe Usuarios activos
 
@@ -47,7 +44,7 @@ Por ejemplo, puede usar el informe **Usuarios activos** para conocer cuántas li
 
 Puede ver usuarios activos en el informe de Office 365 seleccionando la **pestaña Usuarios activos.**<br/>![Microsoft 365: Microsoft Office 365 usuarios activos.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
 
-- El informe Usuarios activos permite ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si ve un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+- El informe Usuarios activos permite ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si ve un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
 
 - Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.
 

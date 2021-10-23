@@ -2,8 +2,6 @@
 title: Proveedores de servicios de seguridad administrados compatibles
 description: Consulta la lista de MSSP con los que se integra Microsoft Defender para endpoint
 keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ae2e8d45e8a3fc95c9cbca42981a73c15b04d6d1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 28868e619fbfd51919ecfba470827b6b9a43eef6
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199818"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554101"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 

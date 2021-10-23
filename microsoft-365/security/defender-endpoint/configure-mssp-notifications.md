@@ -2,8 +2,6 @@
 title: Configurar las notificaciones de alerta que se envían a los MSSP
 description: Configurar las notificaciones de alerta que se envían a los MSSP
 keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d30bc5150277dd54a4a38dce8ac515d6be7dfb21
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 01e6e6c09561ecfaec861473a9be4d7a5659106a
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208534"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553458"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>Configurar las notificaciones de alerta que se envían a los MSSP
 

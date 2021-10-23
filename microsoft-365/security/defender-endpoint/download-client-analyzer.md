@@ -2,8 +2,6 @@
 title: Descargar el analizador de cliente de Microsoft Defender para endpoint
 description: Obtenga información sobre cómo descargar microsoft defender para endpoint client analyzer en Windows, macOS o Linux.
 keywords: descargar, analizador de cliente, sensor de solución de problemas, analizador, mdeanalyzer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c3a115cc972fa6eeb7d30395f11873c4eb409a09
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5ef1a35516858128c8baf4f119dc3f421592daf2
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222771"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555817"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Descargar el analizador de cliente de Microsoft Defender para endpoint
 

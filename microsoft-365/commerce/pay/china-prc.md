@@ -1,5 +1,5 @@
 ---
-title: Información de pago para China (PRC)
+title: Información de pago para China
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,14 +13,14 @@ ms.custom: commerce_billing_payinfo
 ms.localizationpriority: medium
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d48398e3d6e91f257b3e813bc1caee5feec8be5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 07d6bdec585625da6e3399a1235178af0edc24bc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153611"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554473"
 ---
-# <a name="payment-information-for-china-prc"></a>Información de pago para China (PRC)
+# <a name="payment-information-for-china"></a>Información de pago para China
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 

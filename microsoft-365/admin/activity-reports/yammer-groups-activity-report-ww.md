@@ -20,19 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe Yammer actividad de grupos de usuarios para conocer el número de grupos de Yammer que se crean y usan en la organización y su actividad.
-ms.openlocfilehash: a06dfef0863683f0b8b4d97d8c06c09d57a15add
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dcf1851d2ce7d5e21daaaa8fffeff11b8e9c6213
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158867"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552901"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer actividad de grupos
 
 El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md). En el informe de actividad de grupos de Yammer puede obtener estadísticas sobre la actividad de grupos de Yammer en su organización y consultar cuántos grupos de Yammer se crean y utilizan.
-  
-> [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial para ver informes.  
  
 ## <a name="how-do-i-get-to-the-yammer-groups-activity-report"></a>¿Cómo puedo llegar al informe de actividad Yammer grupos?
 
@@ -47,13 +44,15 @@ Puede ver las actividades de grupos en el informe Yammer seleccionando la **pest
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer actividad de grupos: elija columnas.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+
+Puede visualizar el informe **Actividad de grupos de Yammer** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre del grupo  <br/> |Nombre del grupo. <br/> |
 |Administrador de grupo  <br/> |Nombre del administrador del grupo o propietario.  <br/> |
-|Eliminada  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
+|Deleted  <br/> |El número de grupos Yammer eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true.  <br/> |
 |Tipo  <br/> |Tipo de grupo, público o privado. <br/> |
 |Conectado a Office 365  <br/> |Indica si el grupo Yammer es también un Microsoft 365 grupo. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La fecha más reciente en la que el grupo leyó, publicó o gustó un mensaje.  <br/> |

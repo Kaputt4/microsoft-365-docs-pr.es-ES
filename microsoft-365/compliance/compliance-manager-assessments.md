@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 536b153a847ef038c4dee25d3dcd23aa638049ee
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 5bc96e6b1fdeec4c7da7f18a199f66d64c093c52
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335931"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554749"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -75,9 +75,17 @@ Puede crear un grupo al crear una nueva evaluación. Los grupos no se pueden cre
 - Al eliminar una evaluación, se rompe la relación entre esa evaluación y el grupo.
 - Los grupos no se pueden eliminar manualmente.
 
+## <a name="understand-templates-before-creating-assessments"></a>Comprender plantillas antes de crear evaluaciones
+
+Las plantillas de evaluación contienen los controles y las recomendaciones de acción para las evaluaciones, basadas en certificaciones para diferentes normativas y estándares de privacidad. Las plantillas disponibles de su organización pueden incluir una o más plantillas que se incluyeron como parte del contrato de licencia, junto con cualquier otra plantilla premium que haya adquirido.
+
+Cada plantilla, incluida o premium, existe en dos versiones: una para su uso con Microsoft 365 y una versión universal que se puede personalizar para evaluar otros productos que use. Puede elegir el tipo de plantilla adecuado para el producto que desea evaluar.
+
+Para obtener más información acerca de las plantillas, vea [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
+
 ## <a name="create-assessments"></a>Crear evaluaciones
 
-Para crear una evaluación, usará un asistente para seleccionar la plantilla que debe usar y establecer las propiedades de la evaluación. Las plantillas contienen los controles y las recomendaciones de acción para la evaluación, basadas en certificaciones para diferentes normativas y estándares de privacidad. Las plantillas disponibles de su organización pueden incluir una o más plantillas que se incluyeron como parte del contrato de licencia, junto con cualquier otra plantilla premium que haya adquirido. Cada plantilla, incluida o premium, existe en dos versiones: una para su uso con Microsoft 365 y una versión universal que se puede adaptar a otros productos que use. Para obtener más información acerca de las plantillas, vea [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
+Para crear una evaluación, usará un asistente para seleccionar la plantilla que debe usar y establecer las propiedades de la evaluación.
 
 > [!NOTE]
 > Solo los usuarios que tienen un rol de administrador global, administración del administrador de cumplimiento o evaluador de administrador de cumplimiento pueden crear y modificar evaluaciones. Obtenga más información [sobre roles y permisos](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
@@ -90,11 +98,11 @@ Para empezar a crear evaluaciones, siga estos pasos.
     - Vaya a la **página evaluaciones** del Administrador de cumplimiento y seleccione **Agregar evaluación;** o
     - Busque la plantilla que desea usar en la pestaña plantillas **de** evaluación, vea sus detalles y seleccione **Crear evaluación.** Esto rellenará el campo de selección de plantilla del asistente.
 
-3. **Seleccione una plantilla:** si no ha elegido una plantilla en el paso 2, elija una plantilla para que sirva de base para su evaluación. Verá la lista de plantillas divididas en categorías incluidas y premium (vea [Tipos de plantilla](compliance-manager-templates.md#template-availability-and-licensing) para obtener más información). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Siguiente**.
+3. **Seleccione una plantilla:** si no ha elegido una plantilla en el paso 2, elija una plantilla para que sirva de base para su evaluación. Verá la lista de plantillas divididas en categorías incluidas y premium (vea [Disponibilidad de](compliance-manager-templates.md#template-availability-and-licensing) plantillas y licencias para obtener más información). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Siguiente**.
 
 4. **Producto, nombre y grupo:** Establezca estas propiedades para identificar la evaluación, elija el producto que va a evaluar y asígnelo a un grupo.
 
-    - **Producto:** si usa una plantilla universal, seleccione si está creando esta evaluación para un producto nuevo o un producto personalizado existente que ya haya definido en el Administrador de cumplimiento. Si elige un producto nuevo, escriba su nombre. Tenga en cuenta que no puede Microsoft 365 como el producto al usar una plantilla universal. Si usa una plantilla Microsoft 365, este campo se rellenará para que pueda indicar Microsoft 365 y no se puede cambiar.
+    - **Producto:** seleccione el producto al que desea que se aplique la evaluación. Si usa una plantilla Microsoft 365, este campo se rellenará para que pueda indicar Microsoft 365 y no se puede cambiar. Si usa una plantilla universal, seleccione si está creando esta evaluación para un producto nuevo o un producto personalizado que ya haya definido en el Administrador de cumplimiento. Si elige un producto nuevo, escriba su nombre. Tenga en cuenta que no puede Microsoft 365 como el producto al usar una plantilla universal.
     - **Nombre:** escriba un nombre para la evaluación en el **campo Nombre de** evaluación. Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
     - **Grupo:** asigne la evaluación a un grupo. Puede:
         - Seleccione **Usar grupo existente** para asignarlo a un grupo que ya ha creado; o

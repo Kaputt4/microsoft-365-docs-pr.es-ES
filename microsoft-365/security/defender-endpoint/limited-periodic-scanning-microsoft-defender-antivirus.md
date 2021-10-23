@@ -2,7 +2,6 @@
 title: Habilitar la característica de examen periódico Antivirus de Microsoft Defender limitada
 description: El análisis periódico limitado te permite usar Antivirus de Microsoft Defender además de los otros proveedores de ANTIVIRUS instalados
 keywords: lps, limited, periodic, scan, scanning, compatibility, 3rd party, other av, disable
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 10/18/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b2ad3b7d1ff4ae2be4aff5e970395a9db2dc42de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c97947ae081d6b01db2717cfc35a4c328e7c61ec
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174692"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555769"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Usar el análisis rápido limitado en el Antivirus de Windows Defender
 
@@ -32,7 +31,7 @@ ms.locfileid: "60174692"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-El examen periódico limitado es un tipo especial de detección y corrección de amenazas que se puede habilitar cuando se instala otro producto antivirus en un Windows 10 dispositivo.
+El examen periódico limitado es un tipo especial de detección y corrección de amenazas que se puede habilitar cuando se ha instalado otro producto antivirus en un dispositivo Windows 10 o Windows 11.
 
 Solo se puede habilitar en determinadas situaciones. Para obtener más información sobre el examen periódico limitado y cómo Antivirus de Microsoft Defender con otros productos antivirus, [vea Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md).
 
@@ -40,7 +39,7 @@ Solo se puede habilitar en determinadas situaciones. Para obtener más informaci
 
 ## <a name="how-to-enable-limited-periodic-scanning"></a>Cómo habilitar el examen periódico limitado
 
-De forma predeterminada, Antivirus de Microsoft Defender se habilitará en un dispositivo Windows 10 si no hay ningún otro producto antivirus instalado, o si el otro producto está des actualizado, expirado o no funciona correctamente.
+De forma predeterminada, Antivirus de Microsoft Defender se habilitará en un dispositivo Windows 10 o Windows 11 si no hay ningún otro producto antivirus instalado, o si el otro producto está des actualizado, expirado o no funciona correctamente.
 
 Si Antivirus de Microsoft Defender está habilitado, aparecerán las opciones habituales para configurarlo en ese dispositivo:
 

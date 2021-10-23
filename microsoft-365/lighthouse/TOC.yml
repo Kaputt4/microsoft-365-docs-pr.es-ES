@@ -26,6 +26,10 @@
   items:
     - name: Introducción a la página de usuarios
       href: m365-lighthouse-users-page-overview.md
+    - name: Administrar la autenticación multifactor
+      href: m365-lighthouse-manage-mfa.md
+    - name: Administrar el restablecimiento de contraseñas de autoservicio
+      href: m365-lighthouse-manage-sspr.md
 - name: Administrar dispositivos
   items:
     - name: Introducción a la página de cumplimiento de dispositivos

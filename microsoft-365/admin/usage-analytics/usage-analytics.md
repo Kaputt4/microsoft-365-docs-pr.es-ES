@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: 1db5444c5d7829e5f55a961827122817f4d5885e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acdd6899a8f555e4deb9f6f2c262c45ca299abff
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155723"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552673"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 
@@ -82,6 +82,9 @@ Este informe contiene un informe independiente para cada servicio de Microsoft 3
 
 Los informes de actividad de usuario están disponibles para determinados servicios individuales. Estos informes proporcionan datos de uso de detalles de usuario unidos con atributos de Active Directory. Además, el informe de adopción del departamento le permite segmentar por atributos de Active Directory para que pueda ver usuarios activos en todos los servicios individuales. Todas las métricas se agregan para el último mes completo. Para ver la fecha de contenido, vaya a la página de la tabla y seleccione Tabla UserActivity donde el valor de TimeFrame proporciona el período de informes. 
 
+> [!NOTE]
+> El lector global y el lector de informes de resumen de uso no tienen permiso para ver los informes de actividad del usuario. 
+
 ## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>¿Esta aplicación de plantilla va a estar disponible a través de la compra o será gratuita?
@@ -89,13 +92,10 @@ Los informes de actividad de usuario están disponibles para determinados servic
 No es gratuito, necesitará una Power BI Pro licencia. Para obtener más información, consulta [requisitos previos](/power-bi/service-template-apps-install-distribute#prerequisites) para instalar, personalizar y distribuir una aplicación de plantilla.
 
 Para compartir los paneles con otros usuarios, vea más información en [Compartir paneles e informes.](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)
-### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>¿El rol Lector de informes de resumen de uso es suficiente para ver el análisis de uso?
-
-El rol Lector de informes de resumen de uso solo permite el acceso a agregados de nivel de inquilino en Microsoft 365 análisis de uso.  Se recomienda el rol Lector de informes o Lector de informes de resumen de uso a cualquier persona responsable de la administración y adopción de cambios, pero no necesariamente un administrador de TI.
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>¿Quién puede conectarse a análisis de uso de Microsoft 365?
 
-Debe ser un administrador **global**, un administrador **de Exchange,** un administrador de **Skype Empresarial,** un administrador **SharePoint,** un lector **global** o un lector de **informes** para establecer la conexión a la aplicación de plantilla. Consulta [Acerca de los roles de administrador](../add-users/about-admin-roles.md) para obtener más información.
+Debe ser un  administrador **global**, un administrador de **Exchange**, un administrador de **Skype Empresarial**, un administrador SharePoint, un lector **global,** un lector de **informes,** un lector de informes de uso, un lector de informes de resumen de uso para establecer la conexión **a** la aplicación de plantilla. Consulta [Acerca de los roles de administrador](../add-users/about-admin-roles.md) para obtener más información. **Nota: El**  lector **global** y el lector de informes de resumen de uso solo permiten el acceso a los agregados de nivel de inquilino en el análisis de uso de Microsoft 365 y no tienen permiso para ver los informes de actividad del usuario. 
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>Quién Puede personalizar los informes de análisis de uso?
 

@@ -19,19 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Obtenga información sobre cómo obtener el informe Microsoft Teams actividad del usuario y obtener información sobre la Teams actividad de la organización.
-ms.openlocfilehash: d1fe93248db16928d84ad8857130e3a8107a2d7b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d431a96834a7e7ad69d637cf4009296ca2493211
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157427"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553105"
 ---
 # <a name="microsoft-365-admin-center-reports---microsoft-teams-user-activity"></a>Centro de administración de Microsoft 365: Microsoft Teams actividad del usuario
 
 El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de actividad de los usuarios de Microsoft Teams puede obtener estadísticas sobre la actividad de Microsoft Teams en su organización.
-  
-> [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial para ver informes.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Cómo obtener el informe de actividad de los usuarios de Microsoft Teams
 
@@ -44,9 +41,9 @@ El panel Microsoft 365 **informes le** muestra la introducción a la actividad e
 
 Puede consultar la actividad de los usuarios en Microsoft Teams mediante los gráficos **Actividad** y **Usuarios**.<br/>![Microsoft 365: Microsoft Teams de usuario.](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
   
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
-|1.  <br/> |Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
+|1.  <br/> |Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |
 |3.  <br/> |Para garantizar la calidad de los datos, llevamos a cabo comprobaciones diarias de validación de datos durante los últimos cinco días y se rellenarán los vacíos detectados. Es posible que observe diferencias en los datos históricos durante el proceso.  <br/> |
 |4.  <br/> |La vista **Actividad** muestra el número de actividades de Microsoft Teams por tipo. Los tipos de actividad incluyen los mensajes de chat públicos o privados, las llamadas y las reuniones.  <br/> |

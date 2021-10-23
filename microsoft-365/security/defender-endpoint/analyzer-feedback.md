@@ -2,8 +2,6 @@
 title: Proporcionar comentarios sobre la herramienta Analizador de cliente de Endpoint de Microsoft Defender para endpoint
 description: Proporcionar comentarios sobre la herramienta del analizador de cliente de Microsoft Defender para endpoints
 keywords: sensor, estado del sensor, mal configurado, inactivo, sin datos de sensor, datos de sensor, comunicaciones deficientes, comunicación
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d0638b6d76c4d2675c98dca1bd28e3b9f26a32fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 957bf2479a4c9d49532b072a3c18d73b9b5e6966
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59187590"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554989"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Proporcionar comentarios sobre la herramienta del analizador de cliente de Microsoft Defender para endpoints
 

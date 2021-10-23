@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c19d2bc64ffda9e6b101af170bb836a434e993d0
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 6a7b7bb094a18eadab6e3353ef99a9ac440b1b8d
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240361"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553658"
 ---
 # <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
@@ -146,8 +146,10 @@ La regla Bloquear el uso indebido de controladores **firmados vulnerables** no b
 >
 > Para que se examine un controlador, use este sitio web para [enviar un controlador para su análisis.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
-Nombre de Intune: `Block abuse of exploited vulnerable signed drivers`
+Nombre de Intune: `Block abuse of exploited vulnerable signed drivers` (aún no disponible)
 
+Nombre de Configuration Manager: Aún no disponible
+  
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 <!-- Hide this intro with no subsequent list items

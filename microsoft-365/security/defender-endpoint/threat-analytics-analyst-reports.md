@@ -3,8 +3,6 @@ title: Comprenda la sección de informe de analistas en análisis de amenazas.
 ms.reviewer: ''
 description: La sección de informes de informes de análisis de amenazas proporciona información sobre amenazas, mitigación, detecciones, consultas avanzadas de búsqueda y mucho más.
 keywords: informe de analistas, análisis de amenazas, detecciones, consultas avanzadas de búsqueda, mitigaciones,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49a0b34fb278fbb517bcfecc9d9e524d669029e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9f1744735008c201795a43344e7fb81c65cf2431
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195190"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554293"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>El informe de analistas en análisis de amenazas
 

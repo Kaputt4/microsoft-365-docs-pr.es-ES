@@ -21,19 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe Microsoft 365 grupos para conocer los grupos y sus actividades.
-ms.openlocfilehash: 332ffc9c570994de364f6559218d7bfa78d532db
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: aa757fd70cec700e18196a11df522529e6fdc6fc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240337"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553081"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Informes en el Centro de administración: Microsoft 365 grupos
 
 El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe Microsoft 365 grupos, puede obtener información sobre la actividad de los grupos de su organización y ver cuántos grupos se crean y usan.
-  
-> [!NOTE]
-> Para ver informes, debe ser un administrador global y un lector global en Microsoft 365, un lector de informes en Azure o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial.  
   
 ## <a name="how-to-get-to-the-groups-report"></a>Cómo llegar al informe de grupos
 
@@ -53,10 +50,12 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
+El **informe** de grupos se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+
 |Métrica|Definición|
 |:-----|:-----|
 |Nombre del grupo |Nombre del grupo. |
-|Eliminada |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true. |
+|Deleted |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true. |
 |Propietario del grupo |Nombre del propietario del grupo. |
 |Fecha de última actividad (UTC) |La última fecha en la que el grupo recibió un mensaje. Es la última fecha en que hubo actividad en una conversación de correo electrónico, Yammer o el sitio. |
 |Tipo |Tipo de grupo. Puede ser un grupo público o privado. |
@@ -64,7 +63,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Correos electrónicos en Exchange (total) |El número total de elementos en el buzón del grupo. |
 |Almacenamiento de buzones usado para Exchange (MB) |El almacenamiento usado por el buzón del grupo. |
 |SharePoint (total) |El número de archivos almacenados en SharePoint de grupo. |
-|SharePoint (activo) |Número de archivos del sitio de grupo SharePoint que se actuaron (vistos o modificados, sincronizados, compartidos interna o externamente) durante el período de informes. |
+|SharePoint (activo) |El número de archivos del sitio de grupo SharePoint que se actuaron (vistos o modificados, sincronizados, compartidos interna o externamente) durante el período de informes. |
 |Almacenamiento total del sitio usado para SharePoint (MB) |La cantidad de almacenamiento en MB usada durante el período de informes. |
 |Mensajes en Yammer (publicado) |Número de mensajes publicados en el grupo Yammer durante el período de informes. |
 |Mensajes en Yammer (lectura) |Número de conversaciones leídas en el grupo Yammer durante el período de informes. |

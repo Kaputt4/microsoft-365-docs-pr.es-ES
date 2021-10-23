@@ -2,7 +2,6 @@
 title: Detección y respuesta de puntos de conexión en modo de bloqueo
 description: Obtenga información sobre detección y respuesta de puntos de conexión en modo de bloque
 keywords: Microsoft Defender para endpoint, mde, EDR en modo de bloque, bloqueo de modo pasivo
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -20,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9ab524d58e318625773291a9d206ff32753eca91
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 2c463da937222939586029a970439b05134315a3
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245698"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554581"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -90,7 +89,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 > [!IMPORTANT]
 > Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales y de que las [exclusiones están configuradas.](configure-exclusions-microsoft-defender-antivirus.md) EDR en modo de bloque respeta las exclusiones que se definen para Antivirus de Microsoft Defender, pero no los indicadores [definidos](manage-indicators.md) para Microsoft Defender para endpoint.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo si tengo Antivirus de Microsoft Defender en dispositivos?
 
@@ -113,7 +112,7 @@ Se necesita protección en la nube para activar la característica en el disposi
 
 ### <a name="what-is-the-difference-between-active-and-passive-mode"></a>¿Cuál es la diferencia entre el modo activo y el pasivo?
 
-Para los puntos de conexión que ejecutan Windows 10, Windows Server, versión 1803 o posterior, Windows Server 2019 o Windows Server 2022 cuando Antivirus de Microsoft Defender está en modo activo, se usa como el antivirus principal del dispositivo. Cuando se ejecuta en modo pasivo, Antivirus de Microsoft Defender no es el producto antivirus principal. En este caso, las amenazas no se corrigen Antivirus de Microsoft Defender en tiempo real.
+Para los puntos de conexión que ejecutan Windows 10, Windows 11, Windows Server, versión 1803 o posterior, Windows Server 2019 o Windows Server 2022 cuando Antivirus de Microsoft Defender está en modo activo, se usa como el antivirus principal del dispositivo. Cuando se ejecuta en modo pasivo, Antivirus de Microsoft Defender no es el producto antivirus principal. En este caso, las amenazas no se corrigen Antivirus de Microsoft Defender en tiempo real.
 
 > [!NOTE]
 > Antivirus de Microsoft Defender puede ejecutarse en modo pasivo solo cuando el dispositivo está incorporado a Microsoft Defender para Endpoint.
@@ -154,6 +153,7 @@ Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en mo
 - Windows Server 2019 
 - Windows Server 2016
 - Windows Server 2012 R2
+- Windows 11
 
 >[!NOTE]
 >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md) para que esta característica funcione. 

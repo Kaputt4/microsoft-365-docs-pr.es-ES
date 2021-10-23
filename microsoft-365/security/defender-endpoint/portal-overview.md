@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3450eebd549589f20b074f025d581783acdb23c1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c53cce4cb12d08d59b09b041883531b4dee11ce9
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168355"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554941"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Información general del portal del Centro de Microsoft 365 Defender
 
@@ -59,23 +59,24 @@ Puede navegar por el portal con las opciones de menú disponibles en todas las s
 
 Área|Descripción
 :---|:---
-**(1) Panel de navegación**|Use el panel de navegación para moverse entre **Paneles**, Incidentes **,** Lista de **dispositivos** **,** Cola de alertas , Investigaciones **automatizadas** **,** Búsqueda avanzada **,** Informes , API de **&** partners, Administración de vulnerabilidades **de &,** Evaluación y **tutoriales,** Estado del **servicio,** **Administración** de configuración **y Configuración**. Seleccione las líneas horizontales en la parte superior del panel de navegación para mostrarla u ocultarla.
-**Paneles**|Acceda a las investigaciones automatizadas activas, alertas activas, estadísticas de investigaciones automatizadas, dispositivos en riesgo, usuarios en riesgo, dispositivos con problemas de sensor, estado del servicio, orígenes de detección y paneles de informes de dispositivos diarios.
-**Incidentes**|Ver alertas que se han agregado como incidentes.
-**Lista de dispositivos**|Muestra la lista de dispositivos que están incorporados a Defender for Endpoint, información sobre ellos y sus niveles de exposición y riesgo.
-**Cola de alertas**|Ver alertas generadas desde dispositivos de las organizaciones.
-**Investigaciones automatizadas**|Muestra las investigaciones automatizadas que se han llevado a cabo en la red, la alerta desencadenante, el estado de cada investigación y otros detalles, como cuándo se inició la investigación y la duración de la investigación.
-**Búsqueda avanzada de amenazas**|La búsqueda avanzada le permite buscar e investigar proactivamente en toda la organización mediante una herramienta de búsqueda y consulta eficaz.
-**Informes**|Vea gráficos que detallan la protección contra amenazas, el estado y el cumplimiento del dispositivo, la protección web y la vulnerabilidad.
-**Socios y API**|Vea las conexiones de partners compatibles, que mejoran las capacidades de detección, investigación e inteligencia de amenazas de la plataforma. También puede ver las aplicaciones conectadas, el explorador de API, la información general sobre el uso de la API y la configuración de exportación de datos.
-**Administración & vulnerabilidad de amenazas**|Consulta la puntuación segura de Microsoft para dispositivos, la puntuación de exposición, los dispositivos expuestos, el software vulnerable y toma medidas en las recomendaciones de seguridad más destacadas.
-**Evaluación y tutoriales**|Administrar dispositivos de prueba, simulaciones de ataques e informes. Aprenda y experimente las capacidades de Defender for Endpoint a través de un recorrido guiado en un entorno de prueba.
-**Estado del servicio**|Proporciona información sobre el estado actual del servicio Defender for Endpoint. Podrá comprobar si el estado del servicio es correcto o si hay problemas actuales.
-**Administración de configuración**|Muestra los dispositivos abordo, la línea base de seguridad de la organización, el análisis predictivo, la cobertura de protección web y te permite realizar la administración de superficies de ataques en tus dispositivos.
-**Configuración**|Muestra la configuración que seleccionó durante la incorporación y le permite actualizar las preferencias del sector y el período de directiva de retención. También puedes establecer otras opciones de configuración como permisos, API, reglas, administración de dispositivos, administración de servicios de TI y evaluaciones de red.
-**(2) Búsqueda, Community, Localización, Ayuda y soporte técnico, Comentarios**|**Búsqueda:** búsqueda por dispositivo, archivo, usuario, dirección URL, IP, vulnerabilidad, software y recomendación. <p> **Community:** acceda al centro de Community para aprender, colaborar y compartir experiencias sobre el producto. <p> **Localización:** establecer zonas horarias. <p> **Ayuda y** soporte técnico: obtenga acceso a la guía de Defender para endpoints, soporte técnico de Microsoft y Microsoft Premier, información de licencias, simulaciones & tutoriales, laboratorio de evaluación de Defender for Endpoint, consulte a un experto en amenazas. <p> **Comentarios:** proporcione comentarios sobre lo que le gusta o lo que podemos hacer mejor.
+**(1) Panel de navegación** | Use el panel de navegación para moverse entre **Paneles**, Incidentes **,** Lista de **dispositivos** **,** Cola de alertas , Investigaciones **automatizadas** **,** Búsqueda avanzada **,** Informes , API de **&** partners, Administración de vulnerabilidades **de &,** Evaluación y **tutoriales,** Estado del **servicio,** **Administración** de configuración **y Configuración**. Seleccione las líneas horizontales en la parte superior del panel de navegación para mostrarla u ocultarla.
+**Paneles** | Acceda a las investigaciones automatizadas activas, alertas activas, estadísticas de investigaciones automatizadas, dispositivos en riesgo, usuarios en riesgo, dispositivos con problemas de sensor, estado del servicio, orígenes de detección y paneles de informes de dispositivos diarios.
+**Incidentes** | Ver alertas que se han agregado como incidentes.
+**Lista de dispositivos** | Muestra la lista de dispositivos que están incorporados a Defender for Endpoint, información sobre ellos y sus niveles de exposición y riesgo.
+**Cola de alertas** | Ver alertas generadas desde dispositivos de las organizaciones.
+**Investigaciones automatizadas** | Muestra las investigaciones automatizadas que se han llevado a cabo en la red, la alerta desencadenante, el estado de cada investigación y otros detalles, como cuándo se inició la investigación y la duración de la investigación.
+**Búsqueda avanzada de amenazas** | La búsqueda avanzada le permite buscar e investigar proactivamente en toda la organización mediante una herramienta de búsqueda y consulta eficaz.
+**Informes** | Vea gráficos que detallan la protección contra amenazas, el estado y el cumplimiento del dispositivo, la protección web y la vulnerabilidad.
+**Socios y API** | Vea las conexiones de partners compatibles, que mejoran las capacidades de detección, investigación e inteligencia de amenazas de la plataforma. También puede ver las aplicaciones conectadas, el explorador de API, la información general sobre el uso de la API y la configuración de exportación de datos.
+**Administración & vulnerabilidad de amenazas** | Consulta la puntuación segura de Microsoft para dispositivos, la puntuación de exposición, los dispositivos expuestos, el software vulnerable y toma medidas en las recomendaciones de seguridad más destacadas.
+**Evaluación y tutoriales** | Administrar dispositivos de prueba, simulaciones de ataques e informes. Aprenda y experimente las capacidades de Defender for Endpoint a través de un recorrido guiado en un entorno de prueba.
+**Estado del servicio** | Proporciona información sobre el estado actual del servicio Defender for Endpoint. Podrá comprobar si el estado del servicio es correcto o si hay problemas actuales.
+**Administración de configuración** | Muestra los dispositivos abordo, la línea base de seguridad de la organización, el análisis predictivo, la cobertura de protección web y te permite realizar la administración de superficies de ataques en tus dispositivos.
+**Configuración** | Muestra la configuración que seleccionó durante la incorporación y le permite actualizar las preferencias del sector y el período de directiva de retención. También puedes establecer otras opciones de configuración como permisos, API, reglas, administración de dispositivos, administración de servicios de TI y evaluaciones de red.
+**(2) Búsqueda, Community, Localización, Ayuda y soporte técnico, Comentarios** |  Buscar por dispositivo, archivo, usuario, dirección URL, IP, vulnerabilidad, software y recomendación. La búsqueda admite el uso de formatos hash criptográficos SHA1 y SHA256. <p> **Community:** acceda al centro de Community para aprender, colaborar y compartir experiencias sobre el producto. <p> **Localización:** establecer zonas horarias. <p> **Ayuda y** soporte técnico: obtenga acceso a la guía de Defender para endpoints, soporte técnico de Microsoft y Microsoft Premier, información de licencias, simulaciones & tutoriales, laboratorio de evaluación de Defender for Endpoint, consulte a un experto en amenazas. <p> **Comentarios:** proporcione comentarios sobre lo que le gusta o lo que podemos hacer mejor.
 
 > [!NOTE]
+>
 > Para los dispositivos con problemas de escalado de PPP de alta resolución, consulte Windows de escalado para [dispositivos](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) de ppp altos para obtener posibles soluciones.
 
 ## <a name="microsoft-defender-for-endpoint-icons"></a>Iconos de Microsoft Defender para puntos de conexión
@@ -114,7 +115,7 @@ Icono|Descripción
 ![Icono de árbol de proceso.](images/atp-process-tree.png)|Árbol de procesos
 ![Icono de asignación de memoria.](images/atp-memory-allocation-icon.png)|Asignación de memoria
 ![Icono de inserción de procesos.](images/atp-process-injection.png)|Inyección de procesos
-![Icono de ejecución de comandos de Powershell.](images/atp-powershell-command-run-icon.png)|Ejecución de comandos de Powershell
+![Icono de ejecución de comandos de PowerShell.](images/atp-powershell-command-run-icon.png)|Ejecución de comandos de PowerShell
 ![Community icono central.](images/atp-community-center.png)|Community centro
 ![Icono de notificaciones.](images/atp-notifications.png)|Notificaciones
 ![No se han encontrado amenazas.](images/no-threats-found.png)|Investigación automatizada: no se han encontrado amenazas

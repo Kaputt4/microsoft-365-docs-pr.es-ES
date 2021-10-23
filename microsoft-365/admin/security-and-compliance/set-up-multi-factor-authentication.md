@@ -26,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 0dddf5cbc1bcf921d239c7a93031be6cce419eb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 824eefed4dbda14edab7608324a317b0f504b7ef
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178088"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554161"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 
@@ -98,14 +98,6 @@ Para la mayoría de las suscripciones, la autenticación moderna se activa autom
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en el panel de navegación izquierdo, elija **Configuración** \> **Configuración de la organización**.
 2. En la pestaña **Servicios**, elija **Autenticación moderna** y, en el panel **Autenticación moderna**, asegúrese de que esté seleccionada la opción **Activar autenticación moderna**. Seleccione **Guardar cambios**.
 
-
-### <a name="turn-off-legacy-per-user-mfa"></a>Desactivar la MFA heredada por usuario
-
-Si ha activado previamente la MFA por usuario, debe desactivarla antes de habilitar los valores predeterminados de seguridad.
-
-1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, elija **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios activos**</a>.
-1. En la página **Usuarios activos**, elija **Autenticación multifactor**.
-1. En la página de autenticación multifactor, seleccione cada usuario y establezca el estado de la autenticación multifactor en **Deshabilitado**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

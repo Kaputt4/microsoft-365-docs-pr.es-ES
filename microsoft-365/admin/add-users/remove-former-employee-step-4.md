@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga los pasos de este artículo para dar a otro empleado acceso a los datos de OneDrive y Outlook antiguos.
-ms.openlocfilehash: a87db595ae3191a294e5287d13a68396f64a2426
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15ad3de7b7493e2c1a6eba99b40c1fd0a9a03c19
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161683"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552927"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Paso 4: Dar a otro empleado acceso a OneDrive y Outlook datos
 
@@ -47,7 +47,7 @@ Para conservar los archivos OneDrive de un usuario anterior, primero dé acceso 
 
 2. Seleccione un usuario.
 
-3. En el panel derecho, seleccione **OneDrive**. En **Obtener acceso a archivos,** seleccione Crear vínculo a **archivos**.
+3. En la página de propiedades del usuario, **seleccione OneDrive**. En **Obtener acceso a archivos,** seleccione Crear vínculo a **archivos**.
 
 4. Seleccione el vínculo para abrir la ubicación del archivo. Descargue los archivos en el  equipo  o seleccione Mover a o Copiar para moverlos o copiarlos en su propio OneDrive o en una biblioteca compartida.
 

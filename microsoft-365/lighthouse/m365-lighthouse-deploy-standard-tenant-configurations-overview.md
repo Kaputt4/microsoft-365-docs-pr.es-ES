@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo usar líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: 793a8f61634660487dc9256d23f0f7d83ff68983
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2818b0e611bad7ae8895a1f44dcf557cb293aba8
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177044"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554953"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Introducción al uso de líneas base para implementar configuraciones de inquilino estándar 
 
@@ -45,9 +45,9 @@ Las configuraciones de línea base de la tabla siguiente vienen estándar con la
 | Requerir MFA para administradores | Una directiva de acceso condicional de solo informe que requiere autenticación multifactor para los administradores. Es necesario para todas las aplicaciones en la nube. |
 | Requerir MFA para usuarios finales | Una directiva de acceso condicional de solo informe que requiere autenticación multifactor para los usuarios. Es necesario para todas las aplicaciones en la nube. |
 | Bloquear la autenticación heredada | Una directiva de acceso condicional de solo informe para bloquear la autenticación de cliente heredada. |
-| Inscribir dispositivos en Microsoft Endpoint Manager: combinación de Azure AD | Inscripción de dispositivos para permitir que los dispositivos de inquilino se inscriban en Microsoft Endpoint Manager. Para ello, configura la inscripción automática entre Azure Active Directory y Microsoft Endpoint Manager. |
-| Configuración de directiva antivirus (AV) | Un perfil de configuración de dispositivo para Windows dispositivos con una configuración Antivirus de Microsoft Defender configuración predeterminada. |
-| Configuración de la directiva de cumplimiento de la ventana 10 | Una Windows de dispositivos con configuraciones preconfiguradas para cumplir los requisitos básicos de cumplimiento. |
+| Configurar la inscripción de dispositivos | Inscripción de dispositivos para permitir que los dispositivos de inquilino se inscriban en Microsoft Endpoint Manager. Para ello, configura la inscripción automática entre Azure Active Directory y Microsoft Endpoint Manager. |
+| Configurar Antivirus de Microsoft Defender para Windows 10 y versiones posteriores | Un perfil de configuración de dispositivo para Windows dispositivos con una configuración Antivirus de Microsoft Defender configuración predeterminada. |
+| Configurar una directiva de cumplimiento de dispositivos para Windows 10 y versiones posteriores | Una Windows de dispositivos con configuraciones preconfiguradas para cumplir los requisitos básicos de cumplimiento. |
 
 ## <a name="related-content"></a>Contenido relacionado
 

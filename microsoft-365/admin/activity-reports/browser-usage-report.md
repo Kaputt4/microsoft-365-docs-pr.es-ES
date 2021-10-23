@@ -18,19 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
-ms.openlocfilehash: f7878ddaef778c3a8a751f0ab1765df26b7c3a58
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 973129b6b5bccf26e6a37dada5fde13c97e69f18
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156047"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553333"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del explorador de Microsoft
 
 El panel Microsoft 365 **informes le** muestra una introducción a la actividad en todos los productos de la organización. Le permite profundizar en informes de nivel de producto individuales para ofrecer información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador de Microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso Microsoft Edge explorador. Los informes de uso se basan Microsoft 365 los servicios en línea a los que se accede mediante un explorador de Microsoft.
-
-> [!NOTE]
-> Debe ser un administrador global, un lector global o un lector de informes en Microsoft 365 o un administrador Exchange, SharePoint o Skype Empresarial para ver informes.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Cómo obtener acceso al informe de uso del explorador de Microsoft
 
@@ -50,7 +47,7 @@ Puede encontrar esta característica en la página de informe. Una vez creado el
 
 :::image type="content" alt-text="Informe de uso del explorador de Microsoft." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
 
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |1. |El **informe de uso del** explorador de Microsoft se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. |
 |2. |Los datos de cada informe suelen abarcar hasta los últimos siete días. |

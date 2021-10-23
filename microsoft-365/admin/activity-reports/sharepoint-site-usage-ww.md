@@ -22,21 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: 3b84a31b787e3ccf855e26befcf570e364a9e148
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1adf1175569b1d798b238d4d55037a6461c34558
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162043"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553033"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Informes en el Centro de administración: SharePoint de sitio
 
 Como administrador Microsoft 365, el panel **Informes** le muestra la información general sobre la actividad en varios productos de su organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Por ejemplo, puede obtener una vista de alto nivel del valor que obtiene de SharePoint en términos del número total de archivos que los usuarios almacenan en sitios de SharePoint, cuántos archivos se usan activamente y el almacenamiento consumido en todos estos sitios. Luego, puede explorar el informe de uso del sitio de SharePoint para analizar las tendencias y los detalles de nivel de cada sitio. 
-  
-> [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial para ver informes.
-Microsoft 365 Los informes en el Centro de administración no se admiten GCC inquilinos de Alto y DoD.
- 
+
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Obtener acceso al informe de uso del sitio de SharePoint
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
@@ -73,7 +69,7 @@ También puede exportar los datos del informe a un archivo Excel .csv selecciona
 |Métrica|Descripción|
 |:-----|:-----|
 |Dirección URL del sitio  |La dirección URL completa del sitio. |
-|Eliminada  |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  |
+|Deleted  |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  |
 |Propietario del sitio  |Nombre de usuario del propietario principal del sitio.   |
 |Nombre principal del propietario del sitio  |La dirección de correo electrónico del propietario del sitio. |
 |Fecha de última actividad (UTC)  | La fecha de la última vez que se detectó la actividad del archivo o una página se visualizó en el sitio.  |

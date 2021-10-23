@@ -2,8 +2,6 @@
 title: Corregir sensores incorrectos en Microsoft Defender para endpoint
 description: Corrige los sensores de dispositivo que se informan como mal configurados o inactivos para que el servicio reciba datos del dispositivo.
 keywords: mal configurado, inactivo, sensor de corrección, estado del sensor, sin datos del sensor, datos del sensor, comunicaciones deficientes, comunicación
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: b9cbdc184dd5759821b738cd4e16e1d27fa2132b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a01fa71e8d52a9e6de522483ee982458f04141af
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205480"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555289"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corregir sensores incorrectos en Microsoft Defender para endpoint
 
@@ -84,14 +82,14 @@ Siga estas acciones para corregir problemas conocidos relacionados con un dispos
   Compruebe que la configuración de proxy se haya completado correctamente, que WinHTTP pueda detectar y comunicarse a través del servidor proxy de su entorno y que el servidor proxy permita el tráfico a las direcciones URL del servicio de Microsoft Defender para puntos de conexión.
 
 - [Asegurarse de que el servicio de datos de diagnóstico está habilitado](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-Si los dispositivos no están informando correctamente, es posible que deba comprobar que el servicio de datos de diagnóstico de Windows 10 está configurado para iniciarse automáticamente y se está ejecutando en el punto de conexión.
+Si los dispositivos no están informando correctamente, es posible que deba comprobar que el servicio de datos de diagnóstico de Windows está configurado para iniciarse automáticamente y se está ejecutando en el punto de conexión.
 
 - [Asegúrese de que Antivirus de Microsoft Defender no está deshabilitada por la directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
 Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de Defender for Endpoint necesita que el controlador antimalware de inicio anticipado (ELAM) de Antivirus de Microsoft Defender esté habilitado.
 
 Si has tomado medidas correctivas y el estado del dispositivo sigue mal configurado, [abre un vale de soporte técnico.](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Comprobar el estado del sensor en Microsoft Defender para endpoint](check-sensor-status.md)
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)

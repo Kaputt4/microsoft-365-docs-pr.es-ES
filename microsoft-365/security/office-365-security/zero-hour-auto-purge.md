@@ -22,12 +22,12 @@ ms.custom:
 description: La purga automática de hora cero (ZAP) mueve retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta o cuarentena de correo no deseado que se encuentran como correo no deseado, suplantación de identidad o que contienen malware después de la entrega.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ebfe8bd2eec176b57cfa55400525c8379f9ef4c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c2b6e8ce6d15ad652b87e6529f9fd3cb2b3878f7
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197862"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556345"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purga automática de hora cero (ZAP) en Exchange Online
 
@@ -54,7 +54,7 @@ La acción ZAP es perfecta para el usuario; no se les notifica si se detecta y s
 
 ### <a name="zero-hour-auto-purge-zap-for-malware"></a>Purga automática de hora cero (ZAP) para malware
 
-Para **los mensajes leídos o no** leídos que contienen malware después de la entrega, ZAP pone en cuarentena el mensaje que contiene los datos adjuntos de malware. De forma predeterminada, solo los administradores pueden ver y administrar mensajes de malware en cuarentena. Sin embargo, los administradores pueden crear y usar directivas de cuarentena para definir lo que los usuarios pueden hacer con los mensajes que se han puesto en cuarentena como malware.  Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+Para **los mensajes leídos o no** leídos que contienen malware después de la entrega, ZAP pone en cuarentena el mensaje que contiene los datos adjuntos de malware. De forma predeterminada, solo los administradores pueden ver y administrar mensajes de malware en cuarentena. Sin embargo, los administradores pueden crear y usar directivas de cuarentena para definir lo que los usuarios pueden hacer con los mensajes que se han puesto en cuarentena como malware.  Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
 ZAP para malware está habilitado de forma predeterminada en directivas antimalware. Para obtener más información, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
@@ -64,7 +64,7 @@ Para **los mensajes** leídos o no leídos que se identifican como suplantación
 
 - **Add X-Header**, **Prepend subject line with text**, Redirect message to email **address**, **Delete message**: ZAP takes no action on the message.
 
-- **Mover el mensaje a correo** no deseado: ZAP mueve el mensaje a la carpeta Correo no deseado, siempre que la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Mover el mensaje a correo no** deseado: ZAP mueve el mensaje a la carpeta Correo no deseado. Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Mensaje en cuarentena:** ZAP pone en cuarentena el mensaje.
 
@@ -84,7 +84,7 @@ Para **los mensajes no** leídos que se identifican como correo no deseado  desp
 
 - **Add X-Header**, **Prepend subject line with text**, Redirect message to email **address**, **Delete message**: ZAP takes no action on the message.
 
-- **Mover el mensaje a correo** no deseado: ZAP mueve el mensaje a la carpeta Correo no deseado, siempre que la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Mover el mensaje a correo no** deseado: ZAP mueve el mensaje a la carpeta Correo no deseado. Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Mensaje en cuarentena:** ZAP pone en cuarentena el mensaje. De forma predeterminada, los usuarios finales pueden ver y administrar mensajes de correo no deseado en cuarentena donde son destinatarios. Sin embargo, los administradores pueden crear y usar directivas de cuarentena para definir lo que los usuarios pueden hacer a los mensajes que se han puesto en cuarentena como correo no deseado.  Para obtener más información, vea [Directivas de cuarentena](quarantine-policies.md)
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos para usuarios y grupos de la organización.
-ms.openlocfilehash: 942cd3b942cc8aa3b51b1eddf40ad238341ea036
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d619438a8fdf2eb0da2a5b2f55b43bb064d3cea4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168199"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552745"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
@@ -54,26 +54,23 @@ Considere la posibilidad de eliminar un complemento si ya nadie lo está usando.
 
 También puede eliminar un complemento que se implementó.
 
-1. En el Centro de administración, vaya a la **página Configuración** servicios  >  **& complementos.**
+1. En el Centro de administración, vaya a la **página Configuración**  >  **aplicaciones integradas.**
 
-    > [!NOTE]
-    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
+2. Seleccione el complemento implementado y, a continuación, seleccione la **pestaña** Configuración.
 
-2. Seleccione el complemento implementado.
+3. En el **panel** Configuración, vaya a **Advanced Configuración**  >  **Add-ins**.
 
-3. Haga clic **en Eliminar complemento**. Quite el botón Complemento de la esquina inferior derecha.
+4. Vuelva a seleccionar el complemento de la lista.
 
-4. Valide su selección y elija **Quitar complemento**.
+5. Elija **Quitar complemento**. Quite el botón del complemento en la esquina inferior derecha.
+
+6. Valide las selecciones y elija **Quitar**.
 
 ## <a name="edit-add-in-access"></a>Editar el acceso del complemento
 
 Después de la implementación, los administradores también pueden administrar el acceso de los usuarios a los complementos.
 
-1. En el Centro de administración, vaya a la **página Configuración** servicios  >  **& complementos.**
-
-    > [!NOTE]
-    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
-
+1. En el Centro de administración, vaya a la **página Configuración**  >  **aplicaciones integradas.**
 
 2. Seleccione el complemento implementado.
 
@@ -90,15 +87,11 @@ Como organización, es posible que quieras impedir la descarga de nuevos Office 
   
 **Para desactivar la adquisición de complementos**
   
-1. En el centro de administración, vaya a la página **Configuración** \>[de servicios &amp;complementos](https://go.microsoft.com/fwlink/p/?linkid=2053743).
+1. En el Centro de administración, vaya a la **Configuración** \> [configuración de la organización.](https://go.microsoft.com/fwlink/p/?linkid=2053743)
 
-    > [!NOTE]
-    > También puede implementar complementos en el Centro de administración a través de [Aplicaciones integradas.](test-and-deploy-microsoft-365-apps.md) Las aplicaciones integradas son visibles para los administradores Exchange global y de usuario. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo a **Configuración**  >  **aplicaciones integradas.** En la parte superior de la página Aplicaciones **integradas,** elija Complementos . 
-
+2. Seleccione **Aplicaciones y servicios que pertenecen al usuario**.
     
-3. Seleccione **Aplicaciones y servicios que pertenecen al usuario**.
-    
-4. Desactive la opción para permitir que los usuarios accedan a la Tienda Office.
+3. Desactive la opción para permitir que los usuarios accedan a la Tienda Office.
 
     Esto impedirá que todos los usuarios adquieran los siguientes complementos de la tienda.
       
@@ -106,7 +99,7 @@ Como organización, es posible que quieras impedir la descarga de nuevos Office 
         
       - Windows
       - Mac
-      - Office
+      - Oficina
         
         
     - Adquisiciones a partir de **AppSource**
@@ -165,8 +158,5 @@ Si el complemento implementado no admite comandos de complemento o si desea ver 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Implementar complementos en el Centro](./manage-deployment-of-add-ins.md) de administración (artículo)\
-Obtenga más información sobre cómo crear [y crear Office complementos](/office/dev/add-ins/overview/office-add-ins) (artículo)\
-[Usar cmdlets de PowerShell de implementación centralizada para administrar complementos](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (artículo)\
-[Solución de problemas: el usuario no ve complementos](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (artículo)\
-[Menores y la adquisición de complementos](./minors-and-acquiring-addins-from-the-store.md) de la Microsoft Store (artículo)
+[Menores y la adquisición de complementos de la Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
+

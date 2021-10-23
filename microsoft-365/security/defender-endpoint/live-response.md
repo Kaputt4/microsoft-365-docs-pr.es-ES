@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fdce3a978d79f3ba87455f67d058185f740972ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7a078fdd618cd3b5070063d4fa7529c9c7f6216
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150055"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553801"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -56,18 +56,27 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   Los dispositivos deben ejecutar una de las siguientes versiones de Windows
 
-  - **Windows 10**
+  - **Windows 10 & 11**
     - [Versión 1909](/windows/whats-new/whats-new-windows-10-version-1909) o posterior
     - [Versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [Versión 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
+  - **macOS:** solo aplicable a public preview, versión mínima requerida: 101.43.84 
+  
+  - **Linux:** solo aplicable a public preview, versión mínima requerida: 101.45.13 
+    
+  - **Windows Server 2012 R2:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  
+  - **Windows Server 2016:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+
+  - **Windows Server 2019**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
+
        
 
 - **Habilitar la respuesta en directo desde la página de configuración avanzada**.
@@ -91,6 +100,9 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   ![Imagen del mensaje de error.](images/live-response-error.png)
 
 - **Habilitar la ejecución de script sin signo de respuesta** en directo (opcional).
+
+  >[!IMPORTANT]
+  >La comprobación de firmas solo se aplica a los scripts de PowerShell. 
 
   > [!WARNING]
   > Permitir el uso de scripts sin signo puede aumentar la exposición a amenazas.
@@ -148,28 +160,26 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 <br>
 
 ****
-
-|Comando|Descripción|
-|---|---|
-|`cd`|Cambia el directorio actual.|
-|`cls`|Borra la pantalla de la consola.|
-|`connect`|Inicia una sesión de respuesta en directo al dispositivo.|
-|`connections`|Muestra todas las conexiones activas.|
-|`dir`|Muestra una lista de archivos y subdirectorios en un directorio.|
-|`drivers`|Muestra todos los controladores instalados en el dispositivo.|
-|`fg <command ID>`|Coloque el trabajo especificado en primer plano en primer plano, lo que lo hace el trabajo actual. <p> **NOTA:** fg toma un "identificador de comando" disponible desde trabajos, no un PID|
-|`fileinfo`|Obtener información acerca de un archivo.|
-|`findfile`|Localiza los archivos por un nombre determinado en el dispositivo.|
-|`getfile <file_path>`|Descarga un archivo.|
-|`help`|Proporciona información de ayuda para comandos de respuesta en directo.|
-|`jobs`|Muestra trabajos en ejecución, su identificador y estado.|
-|`persistence`|Muestra todos los métodos de persistencia conocidos en el dispositivo.|
-|`processes`|Muestra todos los procesos que se ejecutan en el dispositivo.|
-|`registry`|Muestra los valores del Registro.|
-|`scheduledtasks`|Muestra todas las tareas programadas en el dispositivo.|
-|`services`|Muestra todos los servicios del dispositivo.|
-|`trace`|Establece el modo de registro del terminal en depuración.|
-|
+| Comando  | Descripción  | Windows y Windows server  | macOS  | Linux  |
+|---|---|---|---|---|
+| cd  | Cambia el directorio actual.  | v  | v | v |
+| cls  | Borra la pantalla de la consola.  | v  | v  | v  |
+| connect  | Inicia una sesión de respuesta en directo al dispositivo.  | v  | v  | v  |
+| conexiones  | Muestra todas las conexiones activas.  | v  | N | N |
+| dir  | Muestra una lista de archivos y subdirectorios en un directorio.  | v  | v  |v  |
+| controladores  | Muestra todos los controladores instalados en el dispositivo.  | v |  N | N  |
+| fg `<command ID>`  | Coloque el trabajo especificado en primer plano en primer plano, lo que lo hace el trabajo actual.  NOTA: fg toma un "identificador de comando" disponible desde trabajos, no un PID  | v  | v  | v  |
+| fileinfo  | Obtener información acerca de un archivo.  |v  | v  | v  |
+| findfile  | Localiza los archivos por un nombre determinado en el dispositivo.  | v | v  | v  |
+| getfile <file_path>  | Descarga un archivo.  | v  | v  | v  |
+| Ayuda  | Proporciona información de ayuda para comandos de respuesta en directo.  |v  | v | v  |
+| jobs  | Muestra trabajos en ejecución, su identificador y estado.  | v  | v | v |
+| persistencia  | Muestra todos los métodos de persistencia conocidos en el dispositivo.  | v  | N | N |
+| procesos  | Muestra todos los procesos que se ejecutan en el dispositivo.  | v  | v  | v  |
+| registro  | Muestra los valores del Registro.  | v  | N | N |
+| scheduledtasks  | Muestra todas las tareas programadas en el dispositivo.  | v | N | N |
+| servicios  | Muestra todos los servicios del dispositivo.  | v  | N | N |
+| seguimiento  | Establece el modo de registro del terminal en depuración.  | v  | v  |v  |
 
 ### <a name="advanced-commands"></a>Comandos avanzados
 
@@ -179,15 +189,19 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 
 ****
 
-|Comando|Descripción|
-|---|---|
-|`analyze`|Analiza la entidad con varios motores de incriminación para llegar a un veredicto.|
-|`run`|Ejecuta un script de PowerShell desde la biblioteca en el dispositivo.|
-|`library`|Enumera los archivos que se cargaron en la biblioteca de respuestas en directo.|
-|`putfile`|Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada.|
-|`remediate`|Corrige una entidad en el dispositivo. La acción de corrección variará según el tipo de entidad: <ul><li>Archivo: eliminar</li><li>Proceso: detener, eliminar archivo de imagen</li><li>Servicio: detener, eliminar archivo de imagen</li><li>Entrada del Registro: eliminar</li><li>Tarea programada: quitar</li><li>Elemento de carpeta de inicio: eliminar archivo</li></ul> <p> **NOTA**: Este comando tiene un comando de requisito previo. Puede usar el `-auto` comando junto con para ejecutar automáticamente el comando de `remediate` requisitos previos.
-|`undo`|Restaura una entidad que se ha corregido.|
-|
+| Comando  | Descripción  | Windows y Windows server  | macOS  | Linux  |
+|---|---|---|---|---|
+| analizar  | Analiza la entidad con varios motores de incriminación para llegar a un veredicto.  | v  | N  | N  |
+| recopilar  | Recopila el paquete de análisis forense de la máquina  | N  | v  | v  |
+| isolate  | Desconecta el dispositivo de la red mientras conserva la conectividad con el servicio Defender for Endpoint  | N  | v  | N  |
+| release  | Libera un dispositivo del aislamiento de red  | N  | v  | N  |
+| ejecutar  | Ejecuta un script de PowerShell desde la biblioteca en el dispositivo.  | v  | v  | v  |
+| biblioteca  | Enumera los archivos que se cargaron en la biblioteca de respuestas en directo.  | v  | v  | v  |
+| putfile  | Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada.  | v  | v  | v  |
+| remediate  | Corrige una entidad en el dispositivo. La acción de corrección variará según el tipo de entidad: Archivo: eliminar Proceso: detener, eliminar archivo de imagen Servicio: detener, eliminar entrada del Registro del archivo de imagen: eliminar tarea programada: quitar elemento de carpeta inicio: eliminar archivo NOTA: Este comando tiene un comando de requisito previo. Puede usar el comando -auto junto con remediate para ejecutar automáticamente el comando de requisitos previos.  | v  | v  | v  |
+| examen  | Desconecta el dispositivo de la red mientras conserva la conectividad con el servicio Defender for Endpoint  | N  | v  | v  |
+| deshacer  | Restaura una entidad que se ha corregido.  | v  | v  | v  |
+
 
 ## <a name="use-live-response-commands"></a>Usar comandos de respuesta en directo
 
@@ -257,13 +271,13 @@ En cualquier momento durante una sesión, puede cancelar un comando presionando 
 > [!WARNING]
 > El uso de este acceso directo no detendrá el comando en el lado del agente. Solo cancelará el comando en el portal. Por lo tanto, el cambio de operaciones como "remediate" puede continuar, mientras que el comando se cancela.
 
-## <a name="run-a-powershell-script"></a>Ejecutar un script de PowerShell
+## <a name="run-a-script"></a>Ejecutar un script
 
-Para poder ejecutar un script de PowerShell, primero debe cargarlo en la biblioteca.
+Antes de poder ejecutar scripts de PowerShell/Bash, primero debe cargarlo en la biblioteca.
 
 Después de cargar el script en la biblioteca, use el `run` comando para ejecutar el script.
 
-Si planea usar un script sin signo en la sesión, deberá habilitar la configuración en la [página Configuración de características avanzadas.](advanced-features.md)
+Si tiene previsto usar un script de PowerShell sin signo en la sesión, deberá habilitar la configuración en la [página Configuración de características avanzadas.](advanced-features.md)
 
 > [!WARNING]
 > Permitir el uso de scripts sin signo puede aumentar la exposición a amenazas.
@@ -324,7 +338,7 @@ processes > output.txt
 
 Selecciona la **pestaña Registro de** comandos para ver los comandos usados en el dispositivo durante una sesión. Cada comando se realiza un seguimiento con detalles completos como:
 
-- ID
+- Id.
 - Línea de comandos
 - Duración
 - Estado y barra lateral de entrada o salida

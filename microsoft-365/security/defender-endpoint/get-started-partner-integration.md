@@ -3,8 +3,6 @@ title: Convertirse en socio de Microsoft Defender para punto de conexión
 ms.reviewer: ''
 description: Obtenga información sobre los pasos y los requisitos para integrar la solución con Microsoft Defender para endpoint y ser socio
 keywords: partner, integration, solution validation, certification, requirements, member, misa, application portal
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 75698e7ba0d0fd36459701f13a22ebe70762870e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59f59ac097cf2c2be3116f67abb4316d17a9ef97
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150033"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556369"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Convertirse en socio de Microsoft Defender para punto de conexión
 
@@ -59,7 +57,7 @@ Para que su empresa aparezca como partner en la página de partners del producto
 2. Nombre del producto que se va a presentar.
 3. Proporcione una descripción del producto de 15 palabras.
 4. Vínculo a la página de aterrizaje para que el cliente complete la entrada de integración o blog que incluirá información suficiente para los clientes. Los equipos de marketing e ingeniería deben revisar cualquier nota de prensa, incluido el nombre del producto de Microsoft Defender para endpoint. Espere al menos 10 días para que se haga el proceso de revisión.
-5. Si usa un enfoque de Azure AD multiinquilino, necesitará el nombre de la aplicación de Azure AD para realizar un seguimiento del uso de la aplicación.
+5. Si usa un enfoque de Azure AD multiinquilino, necesitará el nombre Azure AD aplicación para realizar un seguimiento del uso de la aplicación.
 6. Incluya el User-Agent en cada llamada api realizada a Microsoft Defender para el conjunto público endpoint de API o Graph API de seguridad. Esto se usará con fines estadísticos, solución de problemas y reconocimiento de partners. Además, este paso es un requisito para pertenecer a Microsoft Intelligent Security Association (MISA).
 
    Siga estos pasos:

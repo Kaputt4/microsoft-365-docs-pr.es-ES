@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para China (PRC)
+title: Información de soporte técnico para China
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,14 +12,14 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 045962ec7d3cb0eb7d8d5382f29ff562e9850dda
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 118e836fbd55f9b69acfc892cf16edb1b19d2eff
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195094"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554437"
 ---
-# <a name="contact-support-for-china-prc"></a>Póngase en contacto con el soporte técnico de China (PRC)
+# <a name="contact-support-for-china"></a>Póngase en contacto con el soporte técnico para China
 
 [Buscar otro país o región](../../business-video/get-help-support.md).
 

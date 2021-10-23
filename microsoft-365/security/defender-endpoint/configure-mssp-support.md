@@ -2,8 +2,6 @@
 title: Configurar la compatibilidad con el proveedor de servicios de seguridad administrado
 description: Siga los pasos necesarios para configurar la integración de MSSP con Microsoft Defender para endpoint
 keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f4b63c2c4d1f0205e3a97eec6273c878d866f0d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 95eaf9d6921fa0e238b1c4c703414a6c8e4f4c3b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213750"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554797"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>Configurar la integración del proveedor de servicios de seguridad administrados
 

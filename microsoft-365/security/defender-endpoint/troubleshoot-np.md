@@ -2,7 +2,6 @@
 title: Solucionar problemas con la protección de red
 description: Recursos y código de ejemplo para solucionar problemas con la protección de red en Microsoft Defender para endpoint.
 keywords: troubleshoot, error, fix, windows defender, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fce2366a155dca3f045497abf2a7a9892180710d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 131021236f5294f10f9abdf6e4ba170e2349b707
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159323"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555757"
 ---
 # <a name="troubleshoot-network-protection"></a>Solucionar problemas de protección de red
 

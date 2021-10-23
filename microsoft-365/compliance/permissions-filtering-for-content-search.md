@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda para permitir que los administradores de exhibición de documentos electrónicos busquen solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 785fd1237cab66a898307724c5142a6baf4d6120
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 190ed836c30dbb08015c662f948d6b3dc9310c94
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200430"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553381"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configurar el filtrado de permisos para eDiscovery
 
@@ -115,9 +115,17 @@ El  _parámetro Filters_ especifica los criterios de búsqueda para el filtro de
 
 - **Filtrado de buzones o OneDrive de correo:** Este tipo de filtro especifica los buzones y las OneDrive que los usuarios asignados (especificados por el parámetro _Users)_ pueden buscar. Este tipo de filtro se denomina filtro *de ubicación de* contenido porque define las ubicaciones de contenido que un usuario puede buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde _MailboxPropertyName_ especifica una propiedad de buzón usada para establecer el ámbito de los buzones y OneDrive cuentas que se pueden buscar. Por ejemplo, el filtro de buzones de correo permitiría al usuario asignado este filtro buscar solo los buzones y las cuentas OneDrive que tienen el valor `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` "OttawaUsers" en la propiedad CustomAttribute10.
 
-  Cualquier propiedad de destinatario filtrable compatible se puede usar para la _propiedad MailboxPropertyName._ Para obtener una lista de propiedades que se pueden buscar, vea [Filterable properties for the -RecipientFilter parameter](/powershell/exchange/recipientfilter-properties).
+  Cualquier propiedad de destinatario filtrable admitida se puede usar para la _propiedad MailboxPropertyName_ en un buzón o OneDrive filtro. En la tabla siguiente se desumo cuatro propiedades de destinatario usadas con frecuencia que se usan para crear un buzón o OneDrive filtro. La tabla también incluye un ejemplo de uso de la propiedad en un filtro.
 
-- **Filtrado de contenido de buzones:** Este tipo de filtro se aplica al contenido que se puede buscar. Este tipo de filtro se denomina filtro *de* contenido porque especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_** _SearchablePropertyName: value_, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro de contenido de buzón de correo permitiría al usuario asignado este filtro buscar solo los mensajes enviados a los destinatarios del  `MailboxContent_recipients:contoso.com` contoso.com correo. Para obtener una lista de propiedades de mensaje que se pueden buscar, vea Consultas de palabras clave y condiciones [de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties). 
+  |Nombre de la propiedad  |Ejemplo  |
+  |---------|---------|
+  |Alias    |`"Mailbox_Alias -like 'v-'"`         |
+  |Company  |`"Mailbox_Company -eq 'Contoso'"`        |
+  |CountryOrRegion |`"Mailbox_CountryOrRegion -eq 'United States'"`         |
+  |Departamento |`"Mailbox_Department -eq 'Finance'"`        |
+  |||
+
+- **Filtrado de contenido de buzones:** Este tipo de filtro se aplica al contenido que se puede buscar. Este tipo de filtro se denomina filtro *de* contenido porque especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_** _SearchablePropertyName: value_, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro de contenido de buzón de correo permitiría al usuario asignado este filtro buscar solo los mensajes enviados a los destinatarios del  `MailboxContent_recipients:contoso.com` contoso.com correo. Para obtener una lista de propiedades de mensaje que se pueden buscar, vea Consultas de palabras clave y condiciones [de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties).
 
   > [!IMPORTANT]
   > Un filtro de búsqueda único no puede contener un filtro de buzón y un filtro de contenido de buzón. Para combinarlos en un solo filtro, debe usar una [lista de filtros](#using-a-filters-list-to-combine-filter-types).  Pero un filtro puede contener una consulta más compleja del mismo tipo. Por ejemplo: `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`
@@ -170,6 +178,12 @@ Tenga en cuenta lo siguiente sobre cómo usar una lista de filtros:
 ## <a name="examples-of-creating-search-permissions-filters"></a>Ejemplos de creación de filtros de permisos de búsqueda
 
 Vea a continuación ejemplos del uso del cmdlet **New-ComplianceSecurityFilter** para crear un filtro de permisos de búsqueda.
+
+En este ejemplo se permite a los miembros del grupo de roles "Administradores de detección de Estados Unidos" buscar solo los buzones y OneDrive cuentas en Estados Unidos.
+  
+```powershell
+New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryOrRegion  -eq 'United States'"
+```
   
 Este ejemplo permite al usuario annb@contoso.com realizar acciones de búsqueda solo para buzones y OneDrive cuentas en Canadá. Este filtro contiene el código de país numérico de tres dígitos correspondiente a Canadá según la ISO 3166-1.
 
@@ -181,12 +195,6 @@ Este ejemplo permite a los usuarios donh y suzanf buscar solo los buzones y las 
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'"
-```
-
-En este ejemplo se permite a los miembros del grupo de roles "Administradores de detección de Estados Unidos" buscar solo los buzones y OneDrive cuentas en Estados Unidos. Este filtro contiene el código de país numérico de tres dígitos para Estados Unidos de iso 3166-1.
-  
-```powershell
-New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'"
 ```
 
 En este ejemplo se permite a los miembros del grupo de roles "Fourth Coffee eDiscovery Managers" buscar solo los buzones y las cuentas OneDrive que tienen el valor "FourthCoffee" para la propiedad de buzón de departamento. El filtro también permite a los miembros del grupo de roles buscar documentos en el sitio SharePoint cuarto café.

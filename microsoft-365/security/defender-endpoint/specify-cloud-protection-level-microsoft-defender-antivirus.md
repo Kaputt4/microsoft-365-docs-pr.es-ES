@@ -2,7 +2,6 @@
 title: Especifique el nivel de protección de nube para Antivirus de Microsoft Defender
 description: Establece el nivel de protección en la nube para Antivirus de Microsoft Defender.
 keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defensa, nube, agresividad, nivel de protección
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -17,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 09eb5f5c183a6a89d89b173557bdc40b9204824b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2c0f342c62409e8bfcf782c22714d9fd707c24a7
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166223"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555541"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Especificar el nivel de protección en la nube
 

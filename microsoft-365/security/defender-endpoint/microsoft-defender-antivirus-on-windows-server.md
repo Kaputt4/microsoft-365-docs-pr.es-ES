@@ -2,7 +2,6 @@
 title: Antivirus de Microsoft Defender en Windows Server
 description: Obtenga información sobre cómo habilitar y configurar Antivirus de Microsoft Defender en Windows Server 2016, Windows Server 2019 y Windows Server 2022.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e92096ab6b1b291094781fed9ee994ca1fd7358
-ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
+ms.openlocfilehash: a6af3ff71cf6f64fbc548ceb3b333cdf135c70dc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462230"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554557"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -39,7 +38,7 @@ Antivirus de Microsoft Defender está disponible en las siguientes ediciones o v
 - Windows Server 2016
 - Windows Server 2012 R2 (requiere Microsoft Defender para endpoint)
 
-En algunos casos, Antivirus de Microsoft Defender se conoce como *Endpoint Protection*; sin embargo, el motor de protección es el mismo. Aunque la funcionalidad, la configuración y la administración son en gran medida las mismas para Antivirus de Microsoft Defender en [Windows 10,](microsoft-defender-antivirus-windows.md)hay algunas diferencias clave en Windows Server:
+En algunos casos, Antivirus de Microsoft Defender se conoce como *Endpoint Protection*; sin embargo, el motor de protección es el mismo. Aunque la funcionalidad, la configuración y la administración son en gran medida las mismas para Antivirus de Microsoft Defender en [Windows 10](microsoft-defender-antivirus-windows.md) y Windows 11, hay algunas diferencias clave en Windows Server:
 
 - En Windows server, [las exclusiones automáticas](configure-server-exclusions-microsoft-defender-antivirus.md) se aplican en función del rol de servidor definido.
 
@@ -238,7 +237,7 @@ Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows S
 | Desinstalar Antivirus de Microsoft Defender con PowerShell | Use el siguiente cmdlet de PowerShell: `Uninstall-WindowsFeature -Name Windows-Defender` |
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender en Windows](microsoft-defender-antivirus-windows.md)
 - [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)

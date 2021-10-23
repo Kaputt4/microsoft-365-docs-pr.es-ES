@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: d67c4a6b3934500e3594b1021ffad7f291af5587
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89229a8c6f4eb5ac04fcb4f956c233e34b40806d
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193332"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554869"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 
@@ -98,9 +98,6 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
 1. Recopilar entre 50 y 500 elementos de contenido de ed. Estos deben ser solo ejemplos que representen fuertemente el tipo de contenido que desea que el clasificador capacitado identifique positivamente como en la categoría de clasificación. Consulte Default [crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
    > [!IMPORTANT]
-   > Los elementos de ejemplo de seed y test no deben cifrarse y deben estar en inglés.
-
-   > [!IMPORTANT]
    > Asegúrese de que los elementos del conjunto de posiciones **son ejemplos** sólidos de la categoría. El clasificador que se puede entrenar crea inicialmente su modelo en función de con qué lo edificó. El clasificador asume que todas las muestras de ed.0 son positivos fuertes y no tiene forma de saber si una muestra es una coincidencia débil o negativa con la categoría.
 
 2. Coloque el contenido de la ed.ed en una carpeta SharePoint Online dedicada a mantener el *contenido de la ed.* Anote la dirección URL del sitio, la biblioteca y la carpeta.
@@ -128,9 +125,6 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
     > ![clasificador entrenable listo para pruebas.](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Recopile al menos 200 elementos de contenido de prueba (10 000 como máximo) para obtener mejores resultados. Estos deben ser una combinación de elementos que son positivos fuertes, negativos fuertes y algunos que son un poco menos obvios en su naturaleza. Consulte Default [crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
-
-    > [!IMPORTANT]
-    > Los elementos de ejemplo no deben cifrarse y deben estar en inglés.
 
 12. Coloque el contenido de prueba en una carpeta SharePoint Online dedicada a mantener *el contenido de prueba solo*. Anote la dirección URL SharePoint sitio, biblioteca y carpeta en línea.
 

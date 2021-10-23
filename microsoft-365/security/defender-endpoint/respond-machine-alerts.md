@@ -2,7 +2,6 @@
 title: Realizar acciones de respuesta en un dispositivo en Microsoft Defender para endpoint
 description: Realiza acciones de respuesta en un dispositivo como aislar dispositivos, recopilar un paquete de investigación, administrar etiquetas, ejecutar análisis antivirus y restringir la ejecución de aplicaciones.
 keywords: responder, aislar, aislar el dispositivo, recopilar paquete de investigación, centro de acción, restringir, administrar etiquetas, av scan, restringir la aplicación
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4175fa0131870c3ae661727b23d4358dd05b722d
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: b21090c28fd240e349ec22b078843cf980f3325c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386235"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555013"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -87,7 +86,7 @@ Como parte del proceso de investigación o respuesta, puedes recopilar un paquet
 
 > [!IMPORTANT]
 >
-> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10 versión 1703 o posterior.
+>Estas acciones no se admiten actualmente para macOS y Linux. Use la respuesta en directo para ejecutar la acción. Para obtener más información sobre la respuesta en directo, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md)
 
 Para descargar el paquete (archivo Zip) e investigar los eventos que se produjeron en un dispositivo
 
@@ -115,7 +114,7 @@ El paquete contiene las siguientes carpetas:
 |---|---|
 |Autoruns|Contiene un conjunto de archivos que cada uno representa el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: el sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, [vea Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
-|Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad a direcciones URL sospechosas, la infraestructura de comando y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La memoria caché ARP puede revelar otros hosts de una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haber sido usados para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la memoria caché de resolución de cliente DNS, que incluye entradas precargadas del archivo hosts locales y registros de recursos obtenidos recientemente para las consultas de nombre resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul>|
+|Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad a direcciones URL sospechosas, la infraestructura de comando y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La memoria caché ARP puede revelar otros hosts de una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haber sido usados para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la memoria caché de resolución de cliente DNS, que incluye entradas precargadas del archivo hosts locales y registros de recursos obtenidos recientemente para las consultas de nombre resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul><p><div class="alert"><b>NOTA:</b> El archivo pfirewall.log debe existir en %windir%\system32\logfiles\firewall\pfirewall.log, por lo que se incluirá en el paquete de investigación. Para obtener más información sobre cómo crear el archivo de registro de firewall, vea [Configure the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |Archivos de prefetch|Windows Los archivos prefetch están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haber sido eliminadas, pero que aún se pueden encontrar en la lista de archivos de prefetch. <ul><li>Carpeta Prefetch: contiene una copia de los archivos de prefetch de `%SystemRoot%\Prefetch` . NOTA: Se recomienda descargar un visor de archivos de prefetch para ver los archivos de prefetch.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento si hubo algún error de copia en la carpeta de captura previa.</li></ul>|
 |Procesos|Contiene un .CSV que enumera los procesos en ejecución y proporciona la capacidad de identificar los procesos actuales que se ejecutan en el dispositivo. Esto puede ser útil al identificar un proceso sospechoso y su estado.|
 |Tareas programadas|Contiene un archivo .CSV que enumera las tareas programadas, que se pueden usar para identificar rutinas realizadas automáticamente en un dispositivo elegido para buscar código sospechoso que se estableció para ejecutarse automáticamente.|
@@ -134,7 +133,7 @@ El paquete contiene las siguientes carpetas:
 Como parte del proceso de investigación o respuesta, puedes iniciar de forma remota un examen antivirus para ayudar a identificar y corregir malware que podría estar presente en un dispositivo en peligro.
 
 >[!IMPORTANT]
->- Esta acción está disponible para dispositivos de Windows 10, versión 1709 o posterior, Windows Server 2019, Windows Server 2016 y Windows Server 2012 R2.
+>- Esta acción no es compatible actualmente con macOS y Linux. Use la respuesta en directo para ejecutar la acción. Para obtener más información sobre la respuesta en directo, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md)
 >- Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 Uno que haya seleccionado **Ejecutar examen antivirus,** seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
@@ -182,6 +181,7 @@ Cuando una aplicación está restringida, se muestra la siguiente notificación 
 Según la gravedad del ataque y la confidencialidad del dispositivo, es posible que quieras aislar el dispositivo de la red. Esta acción puede ayudar a evitar que el atacante controle el dispositivo en peligro y realice otras actividades, como la exfiltración de datos y el movimiento lateral.
 
 >[!IMPORTANT]
+>- Esta acción no es compatible actualmente con macOS y Linux. Use la respuesta en directo para ejecutar la acción. Para obtener más información sobre la respuesta en directo, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md)
 >- El aislamiento total está disponible para dispositivos de Windows 10, versión 1703, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
 >- El aislamiento selectivo está disponible para dispositivos Windows 10 versión 1709 o posterior.
 >- Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
@@ -225,7 +225,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, fecha 
 
 ![Imagen del centro de acción con información.](images/action-center-details.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manuales en Microsoft Defender para endpoint plan 1 (versión preliminar)](defender-endpoint-plan-1.md#manual-response-actions)

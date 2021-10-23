@@ -2,7 +2,6 @@
 title: Activar la protección en la nube en Antivirus de Microsoft Defender
 description: Activa la protección en la nube para beneficiarte de las características de protección rápidas y avanzadas.
 keywords: Antivirus de Microsoft Defender, antimalware, seguridad, nube, bloquear a primera vista
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,18 +9,18 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/31/2021
+ms.date: 10/18/2021
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68a98b3ddcc12d185d8b06827ed68044ab062257
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b523956d031ee96d8d6a23215bf88661b1995d3a
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196950"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555049"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activar la protección en la nube en Antivirus de Microsoft Defender
 
@@ -45,7 +44,7 @@ También puedes activar o desactivar la protección en la nube en puntos de cone
 Para obtener más información acerca de los requisitos específicos de conectividad de red para garantizar que los puntos de conexión se puedan conectar al servicio de protección en la nube, vea [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
-> En Windows 10, no hay ninguna diferencia  entre  las opciones de informes básicas y avanzadas que se describen en este tema. Esta es una distinción heredada y elegir cualquiera de las dos opciones dará como resultado el mismo nivel de protección en la nube. No hay ninguna diferencia en el tipo o la cantidad de información que se comparte. Para obtener más información sobre lo que recopilamos, vea la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
+> En Windows 10 y Windows 11, no hay ninguna  diferencia  entre las opciones de informes básicas y avanzadas que se describen en este tema. Esta es una distinción heredada y elegir cualquiera de las dos opciones dará como resultado el mismo nivel de protección en la nube. No hay ninguna diferencia en el tipo o la cantidad de información que se comparte. Para obtener más información sobre lo que recopilamos, vea la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
 
 ## <a name="use-intune-to-turn-on-cloud-protection"></a>Usar Intune para activar la protección en la nube
 
@@ -147,7 +146,7 @@ Para obtener más información acerca de los parámetros [permitidos, vea Window
    > [!NOTE]
    > Si el envío de ejemplo automático se ha configurado con la directiva de grupo, la configuración será gris y no estará disponible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Usar la protección en la nube de Microsoft en Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 

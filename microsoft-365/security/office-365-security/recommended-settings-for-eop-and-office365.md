@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si quiere ser más estricto? ¿Y qué extras obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ecb8094c73aedc4d737043f2682bbd1a1258acfa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9a7942d07297dedb4c414d186898dda7384521c2
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157583"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556228"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -40,9 +40,6 @@ ms.locfileid: "60157583"
 Aunque habilitamos a los administradores de seguridad para personalizar su configuración de seguridad, hay dos niveles de seguridad en EOP y Microsoft Defender para Office 365 que recomendamos: **Standard** y **Strict**. El entorno y las necesidades de cada cliente son diferentes, pero creemos que estos niveles de filtrado ayudarán a evitar que el correo no deseado llegue a la Bandeja de entrada de los empleados en la mayoría de las situaciones.
 
 Para aplicar automáticamente la configuración Estándar o Estricta a los usuarios, consulte [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
-
-> [!NOTE]
-> La regla de correo no deseado debe habilitarse en los buzones para que el filtrado funcione correctamente. Está habilitado de forma predeterminada, pero debe comprobarlo si el filtrado no parece funcionar. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
 
 En este artículo se describe la configuración predeterminada y también la configuración estándar y estricta recomendada para ayudar a proteger a los usuarios. Las tablas contienen la configuración del portal Microsoft 365 Defender y PowerShell (Exchange Online PowerShell o powershell independiente Exchange Online Protection powershell para organizaciones sin Exchange Online buzones de correo).
 
@@ -61,7 +58,7 @@ Para crear y configurar directivas contra correo no deseado, vea [Configure anti
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Umbral de correo electrónico masivo & de correo no deseado**|||||
 |**Umbral de correo electrónico masivo** <p> _BulkThreshold_|7 |6 |4 |Para obtener más información, [vea Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).|
@@ -71,7 +68,7 @@ Para crear y configurar directivas contra correo no deseado, vea [Configure anti
 |**Contiene idiomas específicos** <p> _EnableLanguageBlockList_ <p> _LanguageBlockList_|**Desactivado** <p> `$false` <p> En blanco|**Desactivado** <p> `$false` <p> En blanco|**Desactivado** <p> `$false` <p> En blanco|No tenemos ninguna recomendación específica para esta configuración. Puede bloquear mensajes en idiomas específicos en función de sus necesidades empresariales.|
 |**Desde estos países** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**Desactivado** <p> `$false` <p> En blanco|**Desactivado** <p> `$false` <p> En blanco|**Desactivado** <p> `$false` <p> En blanco|No tenemos ninguna recomendación específica para esta configuración. Puede bloquear mensajes de países específicos en función de sus necesidades empresariales.|
 |**Modo de prueba** (_TestModeAction_)|**Ninguna**|**Ninguna**|**Ninguna**|Esta configuración forma parte de ASF. Para obtener más información, vea la sección [Configuración de ASF en directivas contra correo](#asf-settings-in-anti-spam-policies) no deseado en este artículo.|
-|**Acciones**||||Donde quiera que seleccione **Mensaje de cuarentena,** hay disponible un cuadro Seleccionar directiva **de** cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer en los mensajes en cuarentena. <p> Al crear una nueva directiva contra correo no deseado, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que se han puesto en cuarentena por ese veredicto en particular (AdminOnlyAccessPolicy para **phishing** de elevada confianza ; DefaultFullAccessPolicy para todo lo demás). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen capacidades más restrictivas o menos restrictivas para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).|
+|**Acciones**||||Donde quiera que seleccione **Mensaje de cuarentena,** hay disponible un cuadro Seleccionar directiva **de** cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer en los mensajes en cuarentena. <p> Al crear una nueva directiva contra correo no deseado, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que se han puesto en cuarentena por ese veredicto en particular (AdminOnlyAccessPolicy para **phishing** de elevada confianza ; DefaultFullAccessPolicy para todo lo demás). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen capacidades más restrictivas o menos restrictivas para los usuarios. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**Acción de detección de correo** no deseado <p> _SpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de detección de correo no deseado** de elevada confianza <p> _HighConfidenceSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de detección** de phishing <p> _PhishSpamAction_|**Colocar el mensaje en cuarentena** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
@@ -152,7 +149,7 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 |**Configuración de protección**|||||
 |**Habilitar el filtro de datos adjuntos común** <p> _EnableFileFilter_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos ejecutables según el tipo de archivo, independientemente del contenido de los datos adjuntos.|
 |**Habilitar la purga automática de hora cero para malware** <p> _ZapEnabled_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
-|**Directiva de cuarentena**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Al crear una nueva directiva antimalware, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que se han puesto en cuarentena como malware (AdminOnlyAccessPolicy). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen más funcionalidades para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).|
+|**Directiva de cuarentena**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Al crear una nueva directiva antimalware, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que se han puesto en cuarentena como malware (AdminOnlyAccessPolicy). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen más funcionalidades para los usuarios. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**Notificaciones de destinatarios**|||||
 |**Notificar a los destinatarios cuando los mensajes se ponen en cuarentena como malware** <p> _Action_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|No seleccionada <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
 |**Notificaciones de remitente**|||||
@@ -166,7 +163,7 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 |**Nombre De** <p> _CustomFromName_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Dirección de origen** <p> _CustomFromAddress_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Personalizar notificaciones para mensajes de remitentes internos**||||Esta configuración solo se usa si se selecciona Notificar a **remitentes** internos cuando los mensajes se ponen en cuarentena como malware o notificar a un administrador sobre los mensajes no entregados de **remitentes** internos.|
-|**Asunto** <p> _CustomInternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
+|**Subject** <p> _CustomInternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Mensaje** <p> _CustomInternalBody_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Personalizar notificaciones para mensajes de remitentes externos**||||Esta configuración solo se usa si se selecciona Notificar a **remitentes externos** cuando los mensajes se ponen en cuarentena como malware o notificar a un administrador sobre los mensajes no entregados de **remitentes externos.**|
 |**Asunto** <p> _CustomExternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
@@ -181,12 +178,12 @@ Para obtener más información acerca de esta configuración, vea [Spoof setting
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Protección contra & phishing**|||||
 |**Habilitar la inteligencia de suplantación** <p> _EnableSpoofIntelligence_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |**Acciones**|||||
-|**Si el mensaje se detecta como suplantación** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a remitentes suplantados que se [](learn-about-spoof-intelligence.md) bloquearon automáticamente, como se muestra en la información de inteligencia de suplantación de identidad o bloqueados manualmente en la lista de inquilinos permitidos [o bloqueados.](tenant-allow-block-list.md) <p> Si selecciona **Poner** en  cuarentena el mensaje, hay disponible un cuadro Aplicar directiva de cuarentena para seleccionar la directiva de cuarentena que define lo que los usuarios pueden hacer a los mensajes que se ponen en cuarentena como suplantación. Al crear una nueva directiva anti phishing, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que se han puesto en cuarentena como suplantación de identidad (DefaultFullAccessPolicy). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen capacidades más restrictivas o menos restrictivas para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).|
+|**Si el mensaje se detecta como suplantación** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a remitentes suplantados que se [](learn-about-spoof-intelligence.md) bloquearon automáticamente, como se muestra en la información de inteligencia de suplantación de identidad o bloqueados manualmente en la lista de inquilinos permitidos [o bloqueados.](tenant-allow-block-list.md) <p> Si selecciona **Poner** en  cuarentena el mensaje, hay disponible un cuadro Aplicar directiva de cuarentena para seleccionar la directiva de cuarentena que define lo que los usuarios pueden hacer a los mensajes que se ponen en cuarentena como suplantación. Al crear una nueva directiva anti phishing, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que se han puesto en cuarentena como suplantación de identidad (DefaultFullAccessPolicy). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen capacidades más restrictivas o menos restrictivas para los usuarios. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**Mostrar el primer contacto consejo de seguridad** <p> _EnableFirstContactSafetyTips_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Para obtener más información, vea [First contact consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**Mostrar (?) para remitentes no autenticados para suplantación de identidad** <p> _EnableUnauthenticatedSender_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, vea [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 |**Mostrar etiqueta "via"** <p> _EnableViaTag_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección De si es diferente del dominio en la firma DKIM o la **dirección MAIL FROM.** <p> Para obtener más información, vea [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
@@ -218,7 +215,7 @@ Para obtener más información acerca de esta configuración, consulte [Advanced
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Umbral de correo electrónico de suplantación de identidad** <p> _PhishThresholdLevel_|**1- Estándar** <p> `1`|**2 : agresivo** <p> `2`|**3: más agresivo** <p> `3`||
 |
@@ -231,7 +228,7 @@ Para obtener más información acerca de esta configuración, vea Configuración
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Protección contra & phishing**|||||
 |**Permitir a los usuarios proteger** (protección de usuario suplantada) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|No seleccionada <p> `$false` <p> ninguno|Seleccionado <p> `$true` <p> \<list of users\>|Seleccionado <p> `$true` <p> \<list of users\>|Se recomienda agregar usuarios (remitentes de mensajes) en roles clave. Internamente, los remitentes protegidos pueden ser su director general, director financiero y otros líderes sénior. Externamente, los remitentes protegidos podrían incluir miembros del consejo o su junta directiva.|
@@ -241,7 +238,7 @@ Para obtener más información acerca de esta configuración, vea Configuración
 |**Agregar dominios y remitentes de confianza** <p> _ExcludedSenders_ <p> _ExcludedDomains_|Ninguno|Ninguno|Ninguno|Según la organización, se recomienda agregar remitentes o dominios que se identifiquen incorrectamente como intentos de suplantación.|
 |**Habilitar la inteligencia de buzones** <p> _EnableMailboxIntelligence_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |**Habilitar la inteligencia para la protección de suplantación** <p> _EnableMailboxIntelligenceProtection_|Desactivado <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Esta configuración permite la acción especificada para las detecciones de suplantación por inteligencia de buzones.|
-|**Acciones**||||Siempre que seleccione **Poner en cuarentena el mensaje,** hay disponible un cuadro Seleccionar directiva **de** cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer en los mensajes en cuarentena. <p> Al crear una nueva directiva anti phishing, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que se han puesto en cuarentena por ese veredicto (DefaultFullAccessPolicy para todos los tipos de detección de suplantación). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen capacidades menos restrictivas o más restrictivas para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).|
+|**Acciones**||||Siempre que seleccione **Poner en cuarentena el mensaje,** hay disponible un cuadro Seleccionar directiva **de** cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer en los mensajes en cuarentena. <p> Al crear una nueva directiva anti phishing, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que se han puesto en cuarentena por ese veredicto (DefaultFullAccessPolicy para todos los tipos de detección de suplantación). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen capacidades menos restrictivas o más restrictivas para los usuarios. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**Si el mensaje se detecta como un usuario suplantado** <p> _TargetedUserProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Poner en cuarentena el mensaje** <p> `Quarantine`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
 |**Si el mensaje se detecta como un dominio suplantado** <p> _TargetedDomainProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Poner en cuarentena el mensaje** <p> `Quarantine`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
 |**Si la inteligencia de buzones detecta y suplanta al usuario** <p> _MailboxIntelligenceProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
@@ -265,7 +262,7 @@ La configuración de suplantación de  dominio está interrelacionado, pero la c
 |**Protección contra & phishing**|||||
 |**Habilitar la inteligencia de suplantación** <p> _EnableSpoofIntelligence_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |**Acciones**|||||
-|**Si el mensaje se detecta como suplantación** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a remitentes suplantados que se [](learn-about-spoof-intelligence.md) bloquearon automáticamente, como se muestra en la información de inteligencia de suplantación de identidad o bloqueados manualmente en la lista de inquilinos permitidos [o bloqueados.](tenant-allow-block-list.md) <p> Si selecciona Poner en  cuarentena **el** mensaje, hay disponible un cuadro Aplicar directiva de cuarentena para seleccionar la directiva de cuarentena que define lo que los usuarios pueden hacer a los mensajes en cuarentena. Al crear una nueva directiva anti phishing, un valor en blanco significa que la directiva de cuarentena predeterminada se usa para definir las capacidades históricas de los mensajes en cuarentena suplantados (DefaultFullAccessPolicy). <p> Los administradores pueden crear y seleccionar una directiva de cuarentena personalizada que defina qué destinatarios pueden hacer con estos mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).|
+|**Si el mensaje se detecta como suplantación** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a remitentes suplantados que se [](learn-about-spoof-intelligence.md) bloquearon automáticamente, como se muestra en la información de inteligencia de suplantación de identidad o bloqueados manualmente en la lista de inquilinos permitidos [o bloqueados.](tenant-allow-block-list.md) <p> Si selecciona Poner en  cuarentena **el** mensaje, hay disponible un cuadro Aplicar directiva de cuarentena para seleccionar la directiva de cuarentena que define lo que los usuarios pueden hacer a los mensajes en cuarentena. Al crear una nueva directiva anti phishing, un valor en blanco significa que la directiva de cuarentena predeterminada se usa para definir las capacidades históricas de los mensajes en cuarentena suplantados (DefaultFullAccessPolicy). <p> Los administradores pueden crear y seleccionar una directiva de cuarentena personalizada que defina qué destinatarios pueden hacer con estos mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**Mostrar el primer contacto consejo de seguridad** <p> _EnableFirstContactSafetyTips_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Para obtener más información, vea [First contact consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**Mostrar (?) para remitentes no autenticados para suplantación de identidad** <p> _EnableUnauthenticatedSender_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, vea [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 |**Mostrar etiqueta "via"** <p> _EnableViaTag_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección De si es diferente del dominio en la firma DKIM o la **dirección MAIL FROM.** <p> Para obtener más información, vea [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
@@ -285,7 +282,7 @@ En PowerShell, use el cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Activar Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
 |**Activar documentos Caja fuerte para Office clientes** <p> _EnableSafeDocs_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Esta característica solo está disponible y significativa con licencias que no se incluyen en Defender para Office 365 (por ejemplo, Microsoft 365 E5 o Seguridad de Microsoft 365 E5). Para obtener más información, [vea Caja fuerte Documents en Microsoft 365 E5](safe-docs.md).|
@@ -308,7 +305,7 @@ En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](/powershell/module/exc
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Caja fuerte Respuesta de malware desconocido de datos adjuntos** <p> _Habilitar_ y _acción_|**Desactivado** <p> `-Enable $false` y `-Action Block`|**Bloquear** <p> `-Enable $true` y `-Action Block`|**Bloquear** <p> `-Enable $true` y `-Action Block`|Cuando el _parámetro Enable_ $false, el valor del _parámetro Action_ no importa.|
-|**Directiva de cuarentena** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Al crear una nueva directiva de datos adjuntos de Caja fuerte, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que Caja fuerte Attachments (AdminOnlyAccessPolicy). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen más funcionalidades para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).|
+|**Directiva de cuarentena** (_QuarantineTag_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Al crear una nueva directiva de datos adjuntos de Caja fuerte, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes que Caja fuerte Attachments (AdminOnlyAccessPolicy). <p> Los administradores pueden crear y seleccionar directivas de cuarentena personalizadas que definen más funcionalidades para los usuarios. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).|
 |**Redirigir datos adjuntos con datos adjuntos** **detectados: habilitar el redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|No seleccionado y no se especifica ninguna dirección de correo electrónico. <p> `-Redirect $false` <p> _RedirectAddress_ está en blanco ( `$null` )|Seleccionada y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Seleccionada y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
 |**Aplicar la respuesta Caja fuerte de detección de datos adjuntos si el examen no se puede completar (tiempo de espera o errores)** <p> _ActionOnError_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |
@@ -327,7 +324,7 @@ En PowerShell, use el cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Bloquear las siguientes direcciones URL** <p> _ExcludedUrls_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`|No tenemos ninguna recomendación específica para esta configuración. <p> Para obtener más información, vea ["Bloquear las siguientes direcciones URL" para obtener Caja fuerte vínculos](safe-links.md#block-the-following-urls-list-for-safe-links).
 |**Usar Caja fuerte vínculos en Office 365 aplicaciones** <p> _EnableSafeLinksForO365Clients_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Usa Caja fuerte links en aplicaciones Office 365 de escritorio y móviles (iOS y Android). Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).|
@@ -348,7 +345,7 @@ En PowerShell, use los [cmdlets New-SafeLinksPolicy](/powershell/module/exchange
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Configuración de protección**|||||
 |**Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes** <p> _IsEnabled_|**Desactivado** <p> `$false`|**On** <p> `$true`|**On** <p> `$true`||

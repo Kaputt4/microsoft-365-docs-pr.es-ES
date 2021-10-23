@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9576470b029ac97660868341c46ecda82662b36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 95f377992c745045667a016fcf7dae1b391f2323
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152029"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554077"
 ---
 # <a name="create-and-manage-device-groups"></a>Crear y administrar grupos de dispositivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
+
 - Azure Active Directory
 - Office 365
 
@@ -36,7 +36,7 @@ En un escenario de empresa, los equipos de operaciones de seguridad suelen tener
 
 En Microsoft Defender para endpoint, puedes crear grupos de dispositivos y usarlos para:
 
-- Limitar el acceso a alertas y datos relacionados a grupos de usuarios específicos de Azure AD con [roles RBAC asignados](rbac.md)
+- Limitar el acceso a alertas y datos relacionados a grupos de Azure AD específicos con [roles RBAC asignados](rbac.md)
 - Configurar diferentes opciones de corrección automática para distintos conjuntos de dispositivos
 - Asignar niveles de corrección específicos para aplicar durante investigaciones automatizadas
 - En una investigación, filtre la lista **Dispositivos** a grupos de dispositivos específicos mediante el **filtro** Grupo.
@@ -50,11 +50,11 @@ Como parte del proceso de creación de un grupo de dispositivos, podrás:
 
 - Establezca el nivel de corrección automatizado para ese grupo. Para obtener más información sobre los niveles de corrección, vea [Use Automated investigation to investigate and remediate threats](automated-investigations.md).
 - Especifica la regla de coincidencia que determina qué grupo de dispositivos pertenece al grupo en función del nombre del dispositivo, el dominio, las etiquetas y la plataforma del sistema operativo. Si un dispositivo también coincide con otros grupos, se agrega solo al grupo de dispositivos clasificado más alto.
-- Seleccione el grupo de usuarios de Azure AD que debe tener acceso al grupo de dispositivos.
+- Selecciona el Azure AD usuario que debería tener acceso al grupo de dispositivos.
 - Clasifice el grupo de dispositivos con respecto a otros grupos después de crearlo.
 
 > [!NOTE]
-> Un grupo de dispositivos es accesible para todos los usuarios si no le asigna ningún grupo de Azure AD.
+> Un grupo de dispositivos es accesible para todos los usuarios si no asigna ningún grupo Azure AD a él.
 
 ## <a name="create-a-device-group"></a>Crear un grupo de dispositivos
 
@@ -72,7 +72,7 @@ Como parte del proceso de creación de un grupo de dispositivos, podrás:
 5. Asigna los grupos de usuarios que pueden tener acceso al grupo de dispositivos que creaste.
 
     > [!NOTE]
-    > Solo puede conceder acceso a grupos de usuarios de Azure AD que se hayan asignado a roles RBAC.
+    > Solo puede conceder acceso a Azure AD grupos de usuarios que se han asignado a roles RBAC.
 
 6. Haga clic en **Cerrar**. Se aplican los cambios de configuración.
 
@@ -83,9 +83,9 @@ Puedes promover o disminuir la clasificación de un grupo de dispositivos para q
 > [!WARNING]
 > Eliminar un grupo de dispositivos puede afectar a las reglas de notificación de correo electrónico. Si un grupo de dispositivos está configurado en una regla de notificación de correo electrónico, se quitará de esa regla. Si el grupo de dispositivos es el único grupo configurado para una notificación de correo electrónico, esa regla de notificación de correo electrónico se eliminará junto con el grupo de dispositivos.
 
-De forma predeterminada, los grupos de dispositivos son accesibles para todos los usuarios con acceso al portal. Puede cambiar el comportamiento predeterminado asignando grupos de usuarios de Azure AD al grupo de dispositivos.
+De forma predeterminada, los grupos de dispositivos son accesibles para todos los usuarios con acceso al portal. Puedes cambiar el comportamiento predeterminado asignando Azure AD grupos de usuarios al grupo de dispositivos.
 
-Los dispositivos que no coinciden con ningún grupo se agregan al grupo Dispositivos desagrupados (predeterminado). No puede cambiar la clasificación de este grupo ni eliminarlo. Sin embargo, puede cambiar el nivel de corrección de este grupo y definir los grupos de usuarios de Azure AD que pueden tener acceso a este grupo.
+Los dispositivos que no coinciden con ningún grupo se agregan al grupo Dispositivos desagrupados (predeterminado). No puede cambiar la clasificación de este grupo ni eliminarlo. Sin embargo, puede cambiar el nivel de corrección de este grupo y definir los grupos Azure AD usuarios que pueden tener acceso a este grupo.
 
 > [!NOTE]
 > La aplicación de cambios en la configuración del grupo de dispositivos puede tardar hasta varios minutos.
@@ -100,7 +100,6 @@ Las definiciones de grupo de dispositivos también pueden incluir varios valores
 
 > [!TIP]
 > Use el operador "OR" entre filas del mismo tipo de condición, que permite varios valores por propiedad.
->
 > Puedes agregar hasta 10 filas (valores) para cada tipo de propiedad: etiqueta, nombre de dispositivo, dominio.
 
 Para obtener más información sobre la vinculación a definiciones de grupos de dispositivos, consulta [Grupos de dispositivos : Microsoft 365 seguridad.](https://sip.security.microsoft.com/homepage)

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: trabajar desde casa, trabajo desde casa, híbrido, trabajador remoto, trabajo híbrido, empleados remotos, conectividad híbrida, acceso remoto, trabajo remoto, teletrabajo, teletrabajar, trabajo móvil, trabajo remoto, empleo remoto, trabajar desde cualquier lugar, lugar de trabajo flexible
 description: Desplazarse por las capas de la infraestructura para que los trabajadores híbridos puedan acceder de forma segura a los recursos locales y de Microsoft 365..
-ms.openlocfilehash: ae6d9ab0017ed4d4a33fc57be74ac0ea4aa955a4
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 296c8ccd3373d7b23b187f60b1a93318538ec8fe
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335955"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554521"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configure su infraestructura para el trabajo híbrido con Microsoft 365
 
@@ -114,7 +114,7 @@ Puede permitir que todos sus trabajadores sean más productivos en cualquier lug
 
 - Un dispositivo moderno, como un portátil Surface con Windows 10, que tiene las características, la seguridad y el rendimiento para utilizar las aplicaciones y servicios en la nube de Microsoft 365 directamente en la web.
 
-- Cualquier dispositivo, incluidos portátiles o equipos de escritorio antiguos que se usan desde casa, que puede acceder a Microsoft 365 servicios y aplicaciones en la nube indirectamente a través de un [escritorio virtual basado en Windows 10](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). Esta opción proporciona un alto rendimiento, una seguridad sólida y una administración de TI simplificada.
+- Cualquier dispositivo, incluidos portátiles o equipos de escritorio antiguos que se usan desde casa, que puede acceder a Microsoft 365 servicios y aplicaciones en la nube indirectamente a través de un [escritorio virtual basado en Windows 10](empower-people-to-work-remotely-remote-access.md#deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). Esta opción proporciona un alto rendimiento, una seguridad sólida y una administración de TI simplificada.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 86332ff7e9a5a9dc08d5bb278ea856990e4cb0c6
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 931edcd890148a828a6d189722e8f29907c15b79
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240325"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553693"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistentes en Microsoft 365 Defender
 
@@ -35,6 +35,9 @@ ms.locfileid: "60240325"
 - Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
+
+ > [!NOTE]
+  > **VDI persistente**  -  [La incorporación de una máquina VDI](configure-endpoints.md) persistente en Microsoft Defender para endpoint se controla de la misma forma que se incorporaría a una máquina física, como un equipo de escritorio o portátil. La directiva de grupo, Microsoft Endpoint Manager y otros métodos se pueden usar para incorporar una máquina persistente. En el Centro de seguridad, ( en incorporación, seleccione el método de incorporación preferido y https://security.microsoft.com) siga las instrucciones para ese tipo. 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual (VDI) no persistentes
 
@@ -170,8 +173,8 @@ Si el mantenimiento sin conexión no es una opción viable para el entorno VDI n
 5. Vuelva a sesar la imagen dorada/maestra como lo haría normalmente.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
-- [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
-- [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)
+- [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)
+- [Incorporar dispositivos Windows mediante Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
+- [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

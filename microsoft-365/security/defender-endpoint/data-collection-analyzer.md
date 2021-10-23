@@ -2,8 +2,6 @@
 title: " Recopilación de datos para solucionar problemas avanzados en Windows"
 description: Obtenga información sobre cómo usar el analizador de cliente para recopilar datos para escenarios complejos de solución de problemas
 keywords: analzyer, recopilar datos, solucionar problemas de mdeclientanalyzer, solución de problemas avanzada
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 469e1cd227e83facb678c85bd123f4ea250cd08c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59191017"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555913"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a> Recopilación de datos para solucionar problemas avanzados en Windows
 

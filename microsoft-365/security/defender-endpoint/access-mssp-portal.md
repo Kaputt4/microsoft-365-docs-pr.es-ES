@@ -2,8 +2,6 @@
 title: Obtener acceso Microsoft 365 Defender portal de clientes de MSSP
 description: Obtener acceso Microsoft 365 Defender portal de clientes de MSSP
 keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5d4bd406ac65ea04814ce9ac2888fea1f8e29e47
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 23d8c03070ec0a89e86adf8afcdafb78dbb844a7
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208642"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556381"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Obtener acceso Microsoft 365 Defender portal de clientes de MSSP
 
@@ -45,7 +43,7 @@ De forma predeterminada, los clientes MSSP tienen acceso Microsoft 365 Defender 
 
 Sin embargo, los MSSP tendrán que usar una dirección URL específica del inquilino en el siguiente formato: para obtener acceso al portal de  `https://securitycenter.windows.com?tid=customer_tenant_id` clientes de MSSP.
 
-En general, los MSSP tendrán que agregarse a cada uno de los Azure AD del cliente de MSSP que pretenden administrar.
+En general, los MSSP tendrán que agregarse a cada una de las Azure AD cliente de MSSP que tienen la intención de administrar.
 
 Siga estos pasos para obtener el identificador de inquilino del cliente MSSP y, a continuación, use el identificador para obtener acceso a la dirección URL específica del inquilino:
 

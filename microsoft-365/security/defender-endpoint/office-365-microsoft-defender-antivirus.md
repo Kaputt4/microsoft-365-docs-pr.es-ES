@@ -2,7 +2,6 @@
 title: 'Mejor juntos: Antivirus de Microsoft Defender y Office 365 (incluidos los OneDrive): mejor protección contra ransomware y ciberamenazas'
 description: Office 365, que incluye OneDrive, se une maravillosamente con Antivirus de Microsoft Defender. Lea este artículo para obtener más información.
 keywords: windows defender, antivirus, office 365, onedrive, restore, ransomware
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2f3fbbe456d67ae60bca22d869258a38f73bce70
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3015dbbc251ec175a648145f202a291ca0c6c1bc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199698"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556130"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mejor juntos: Antivirus de Microsoft Defender y Office 365
 
@@ -36,7 +35,7 @@ ms.locfileid: "60199698"
 
 Es posible que ya sepa que:
 
-- **Antivirus de Microsoft Defender protege el dispositivo Windows 10 de** amenazas de software, como virus, malware y spyware . Antivirus de Microsoft Defender es su protección completa y continua, integrada Windows 10 y lista para usar. [Antivirus de Microsoft Defender es la protección de última generación](./microsoft-defender-antivirus-in-windows-10.md). 
+- **Antivirus de Microsoft Defender protege el dispositivo Windows de** amenazas de software, como virus, malware y spyware . Antivirus de Microsoft Defender es su protección completa y continua, integrada en Windows 10 y Windows 11, y lista para usar. [Antivirus de Microsoft Defender es la protección de última generación](./microsoft-defender-antivirus-in-windows-10.md). 
 
 - **Office 365 incluye protección antiphishing, antispam y antimalware**. Con tu suscripción Office 365, obtienes correo electrónico y calendarios premium, aplicaciones de Office, 1 TB de almacenamiento en la nube (a través de OneDrive) y seguridad avanzada en todos los dispositivos. Esto es así para los usuarios de hogar y empresa. Y si es un usuario empresarial y su organización usa Office 365 E5, obtiene aún más protección a través de Microsoft Defender para Office 365 Proteger contra amenazas con [Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 

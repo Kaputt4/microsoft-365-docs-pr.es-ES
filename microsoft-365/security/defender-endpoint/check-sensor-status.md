@@ -2,8 +2,6 @@
 title: Comprobar el estado de mantenimiento del sensor en Microsoft Defender para endpoint
 description: Compruebe el estado del sensor en los dispositivos para identificar cuáles están mal configurados, inactivos o no están informando datos del sensor.
 keywords: sensor, estado del sensor, mal configurado, inactivo, sin datos de sensor, datos de sensor, comunicaciones deficientes, comunicación
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e7794f99b21939c3cf51f4b5afe2b9da50f9b933
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e980cc5dd2f164acf8c63aab5511423d5a38d46b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207072"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555001"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Comprobar el estado del sensor en Microsoft Defender para endpoint
 
@@ -62,7 +60,7 @@ También puede descargar toda la lista en formato CSV mediante la **característ
 
 Puedes ver los detalles del dispositivo al hacer clic en un dispositivo mal configurado o inactivo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Corregir sensores incorrectos en Defender for Endpoint](fix-unhealthy-sensors.md)
 - [Información general del Analizador de clientes](overview-client-analyzer.md)

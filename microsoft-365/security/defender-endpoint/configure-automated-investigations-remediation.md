@@ -2,8 +2,6 @@
 title: Configurar capacidades automatizadas de investigación y corrección
 description: Configure las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint.
 keywords: configure, setup, automated, investigation, detection, alerts, remediation, response
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -18,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 87e27933d051a0e1ed8b69c9e7e7dbe37a9d11e5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 875e5b929014c4ae442dd4232f73cc45abb9d217
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211283"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555337"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint
 
@@ -60,7 +58,7 @@ Para configurar la investigación y corrección automatizadas:
    - En la **pestaña Acceso de** usuario, selecciona los Azure Active Directory [que](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) deben tener acceso al grupo de dispositivos que estás creando.
 4. Selecciona **Listo** cuando termines de configurar el grupo de dispositivos.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Visite el Centro de acciones para ver las acciones de corrección pendientes y completadas](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
 - [Revisar y aprobar acciones pendientes](/microsoft-365/security/defender-endpoint/manage-auto-investigation)

@@ -3,7 +3,7 @@ title: Fases de migración acciones e impactos para la migración desde Microsof
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 05/12/2021
+ms.date: 10/21/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 93d639b5d917bfa22a08f0c756236158e8334932
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc113b0d81312a199282a5b2f0ec652ffd8cad8d
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212850"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554641"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
 Las migraciones de inquilinos de Microsoft Cloud Deutschland (MCD) a la región "Alemania" de los servicios globales de Office 365 de Microsoft se ejecutan como un conjunto de fases y sus acciones configuradas para cada carga de trabajo. Esta figura muestra las diez fases de migración a los nuevos centros de datos alemanes.
 
-[![Las diez fases de migración a los nuevos centros de datos de Alemania. ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png) ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
+[![Las diez fases de migración a los nuevos centros de datos de Alemania.](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 El proceso de migración se completará durante varias semanas en función del tamaño general y la complejidad de la organización. Mientras la migración está en curso, los usuarios y administradores pueden seguir usando los servicios con cambios notables detallados en esta documentación. El gráfico y la tabla definen fases y pasos durante la migración.
 
@@ -44,7 +44,7 @@ El proceso de migración se completará durante varias semanas en función del t
 |---|---|---|---|
 |Opt-In|Horas|Clientes|Opte por la organización en la migración.|
 |Pre-Work|Días|Clientes|Complete el trabajo necesario para preparar usuarios, estaciones de trabajo y red para la migración.|
-|Azure Active Directory (Azure AD)|De 1 a 2 días|Microsoft|Migre la organización de Azure AD a todo el mundo.|
+|Azure Active Directory (Azure AD)|De 1 a 2 días|Microsoft|Migre Azure AD organización a todo el mundo.|
 |Azure|Semanas|Clientes|Crear nuevas suscripciones mundiales de Azure y [servicios de Azure de transición.](/azure/azure-resource-manager/management/move-resource-group-and-subscription)|
 |Suscripción & de licencias|De 1 a 2 días|Microsoft|Compre suscripciones mundiales, cancele las suscripciones de Microsoft Cloud Deutschland y las licencias de usuario de transición.|
 |SharePoint y OneDrive|Más de 15 días|Microsoft|Migre SharePoint y OneDrive para la Empresa contenido, conservando sharepoint.de direcciones URL.|
@@ -53,8 +53,8 @@ El proceso de migración se completará durante varias semanas en función del t
 |Skype Empresarial|De 1 a 2 días|Microsoft|Transición de Skype Empresarial a Microsoft Teams.|
 |Power BI & Dynamics 365|Más de 15 días|Microsoft|Migre Power BI y contenido de Dynamics 365.|
 |Finalizar Azure AD|De 1 a 2 días|Microsoft|Completar el recorte de inquilinos a todo el mundo.|
-|Clean-Up|De 1 a 2 días|Clientes|Limpie las conexiones heredadas a Microsoft Cloud Deutschland, como la confianza de usuario de confianza de usuario de confianza de servicios de federación de Active Directory (AD FS), azure AD Conectar y Office cliente.|
-|Extremos deshabilitados|30 días|Microsoft|30 días después de finalizar Azure AD, el servicio Microsoft Cloud Deutschland Azure AD detendrá el acceso de puntos de conexión para la organización en transición. Las solicitudes de extremo, como la autenticación, producirán un error a partir de este momento en el servicio Microsoft Cloud Deutschland. Los clientes que ejecutan cargas de trabajo de Azure en la instancia vinculada Office 365 servicios de Microsoft Cloud Deutschland se trasladarán a la fase de migración final más adelante.|
+|Clean-Up|De 1 a 2 días|Clientes|Limpie las conexiones heredadas a Microsoft Cloud Deutschland, como active directory federation services (AD FS) Relying Party Trust, Azure AD Conectar y Office cliente.|
+|Extremos deshabilitados|30 días|Microsoft|30 días después de la Azure AD, el servicio de Azure AD Microsoft Cloud Deutschland detendrá el acceso de puntos de conexión para la organización en transición. Las solicitudes de extremo, como la autenticación, producirán un error a partir de este momento en el servicio Microsoft Cloud Deutschland. Los clientes que ejecutan cargas de trabajo de Azure en la instancia vinculada Office 365 servicios de Microsoft Cloud Deutschland se trasladarán a la fase de migración final más adelante.|
 |
 
 Las fases y sus acciones garantizan que los datos críticos y las experiencias se migren a los servicios Office 365 global. Después de agregar el espacio empresarial a la cola de migración, cada carga de trabajo se completará como un conjunto de pasos que se ejecutan en el servicio back-end. Algunas cargas de trabajo pueden requerir acciones del administrador (o usuario) o la migración puede afectar al uso de las fases que se ejecutan y se analizan en ¿Cómo se organiza la [migración?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
@@ -91,9 +91,9 @@ En caso de que use el inicio de sesión único para Office 365 y Azure en la ins
 
 Si usa Servicios de federación de Active Directory (AD FS), asegúrese de realizar una copia de seguridad de la  configuración de [ADFS](ms-cloud-germany-transition-add-adfs.md) antes y después de agregar la confianza de usuario de confianza para el servicio global de Office 365 antes del comienzo de la fase 2.
 
-## <a name="phase-2-azure-ad-migration"></a>Fase 2: Migración de Azure AD
+## <a name="phase-2-azure-ad-migration"></a>Fase 2: Azure AD migración
 
-En esta fase, Azure Active Directory se migrará a la nueva región del centro de datos y se activará. Los puntos de conexión de Azure AD antiguos seguirán estando disponibles.
+En esta fase, el Azure Active Directory se migrará a la nueva región del centro de datos y se activará. Los puntos Azure AD de conexión antiguos seguirán estando disponibles.
 
 ### <a name="exchange-online-hybrid---modify-authserver-on-premises"></a>Exchange Online Híbrido: modificar AuthServer local
 
@@ -101,9 +101,9 @@ En esta fase, Azure Active Directory se migrará a la nueva región del centro d
 
 **Cuando se aplica:** después de que finalice la fase 2
 
-El AuthServer local debe apuntar al Servicio de tokens de seguridad (STS) global para la autenticación una vez completada la migración de Azure AD.
+El AuthServer local debe apuntar al Servicio de tokens de seguridad (STS) global para la autenticación después de completar Azure AD migración.
 Esto garantiza que las solicitudes de autenticación Exchange solicitudes de disponibilidad de usuarios en estado de migración destinadas al entorno local híbrido se autentican para obtener acceso al servicio local. Del mismo modo, esto garantizará la autenticación de solicitudes desde locales a Office 365 de servicios globales.
-Una vez completada la migración de Azure AD (fase 2), el administrador de la topología de Exchange local (híbrida) debe agregar un nuevo punto de conexión de servicio de autenticación para los servicios Office 365 global.
+Una vez Azure AD migración (fase 2), el administrador de la topología de Exchange local (híbrida) debe agregar un nuevo punto de conexión de servicio de autenticación para los servicios globales de Office 365.
 
 Con este comando de Exchange PowerShell, reemplace por el identificador de inquilino de su organización que se encuentra en `<TenantID>` Azure Portal en Azure Active Directory.
 
@@ -129,7 +129,7 @@ Si no se completa esta tarea, es posible que las solicitudes híbridas de dispon
 |**Tarea de administración**|Revise cualquier proceso de cliente que tenga dependencias en suscripciones de Microsoft Cloud Deutschland o GUID de SKU con la oferta Office 365 servicios de desarrollo|Los procesos de cliente siguen funcionando.|
 |
 
-**Se aplica a**: Partners de Microsoft que usan el Office 365 partner portal
+**Se aplica a**: Partners de Microsoft que usan el portal Office 365 partner
 
 Entre la fase 2 y la 3, es posible que el Portal de partners no sea accesible. Durante este tiempo, es posible que el partner no pueda tener acceso a la información del inquilino en el Portal de partners. Dado que cada migración es diferente, la duración de la accesibilidad podría ser en horas.
 
@@ -246,18 +246,20 @@ Asegúrese de que [el Exchange se](ms-cloud-germany-transition-add-pre-work.md#e
 
 - Entre el inicio de la fase de migración 6 y la finalización de la fase de migración 9 (cuando se publica el aviso del Centro de mensajes), debe ejecutar el HCW de nuevo con la configuración de Office 365 Worldwide para apuntar los sistemas locales a los servicios globales de Office 365. Si no se completa esta tarea antes de la fase 9 [Migración completada], es posible que los NDR para el correo enrutado entre la implementación Exchange local y Office 365.
 - Detenga o elimine los movimientos de buzones de correo de incorporación o de incorporación, es decir, no mueva buzones entre Exchange local y Exchange Online.  Esto garantiza que las solicitudes de movimiento del buzón no fallen con un error. Si no lo hace, puede producirse un error en el servicio o en Office cliente.
-- Los Send-Connectors adicionales que se han creado además del conector creado por el HCW y que están destinados a Exchange Online deben actualizarse en esta fase inmediatamente después de ejecutar la ejecución de HCW, de lo contrario dejarán de funcionar. El dominio TLS debe actualizarse para estos conectores de envío. <br> Para actualizar el dominio TLS, use el siguiente comando de PowerShell en el entorno Exchange Server usuario:
+- Los Send-Connectors adicionales que se han creado además del conector creado por el HCW y que están destinados a Exchange Online deben actualizarse en esta fase inmediatamente después de ejecutar la ejecución de HCW, de lo contrario dejarán de funcionar. El dominio TLS debe actualizarse para estos conectores de envío.
 
-```powershell
-Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
-```
+  Para actualizar el dominio TLS, use el siguiente comando de PowerShell en el entorno Exchange Server usuario:
+
+  ```powershell
+  Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
+  ```
 
 ## <a name="phase-7-skype-for-business-online---transition-to-microsoft-teams"></a>Fase 7: Skype Empresarial Online: transición a Microsoft Teams
 
 **Se aplica a:** Todos los clientes que usan Skype Empresarial Online
 
 Revise los [pasos previos a la migración Skype Empresarial migración](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) en línea y asegúrese de completar todos los pasos.
-En esta fase, Skype Empresarial se migrará a Microsoft Teams. Los Skype Empresarial existentes se migran Office 365 los servicios globales de Office 365 en Europa y, a continuación, se pasa a Microsoft Teams en la región "Alemania" de Office 365 servicios.
+En esta fase, Skype Empresarial se migrará a Microsoft Teams. Los Skype Empresarial existentes se migran a los servicios globales de Office 365 en Europa y, a continuación, se pasa a Microsoft Teams en la región en función del país de registro del [inquilino](o365-data-locations.md).
 
 - Los usuarios no podrán iniciar sesión en la Skype Empresarial la fecha de migración.
 - Se migra la configuración de la directiva.
@@ -267,7 +269,7 @@ En esta fase, Skype Empresarial se migrará a Microsoft Teams. Los Skype Empresa
 - Los usuarios no podrán iniciar sesión para iniciar sesión Skype Empresarial las transiciones de servicio de tiempo a Office 365 servicios y no hasta que se completen las entradas dns del cliente.
 - Los contactos y las reuniones existentes seguirán funcionando como Skype Empresarial reuniones.
 
-Cuando se ha configurado un dominio de vanidad para Skype Empresarial, las entradas DNS deben actualizarse. Consulte Dominios [en el Centro de administración de Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/Domains) y aplique los cambios en la configuración de DNS.
+Cuando se ha configurado un dominio de vanidad para Skype Empresarial, las entradas DNS deben actualizarse. Consulte [Dominios en el Centro de administración de Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/Domains) y aplique los cambios en la configuración de DNS.
 
 Si tiene que conectarse a Skype Empresarial Online con PowerShell una vez completada la fase de migración 9, use el siguiente código de PowerShell para conectarse:
 
@@ -277,8 +279,8 @@ $userCredential = Get-Credential
 Connect-MicrosoftTeams -Credential $userCredential
 ```
 
-### <a name="known-limitations-until-finalizing-azure-ad-migration"></a>Limitaciones conocidas hasta finalizar la migración de Azure AD
-Microsoft Teams está aprovechando las características de Azure AD. Aunque la migración de Azure AD no se ha completado, algunas características Microsoft Teams no están totalmente disponibles. Después de la fase 9, cuando se haya finalizado la migración de Azure AD, las siguientes características estarán totalmente disponibles:
+### <a name="known-limitations-until-finalizing-azure-ad-migration"></a>Limitaciones conocidas hasta que se Azure AD migración
+Microsoft Teams está usando características de Azure AD. Aunque la migración de Azure AD no se completa, algunas características de Microsoft Teams no están totalmente disponibles. Después de la fase 9, cuando se haya finalizado la migración de Azure AD, las siguientes características estarán totalmente disponibles:
 
 - Las aplicaciones no se pueden administrar en el centro Microsoft Teams administración.
 - Solo se pueden crear nuevos equipos en el Microsoft Teams a menos que el administrador de Teams haya limitado los permisos para que los usuarios creen nuevos equipos. No se pueden crear nuevos equipos en el centro Microsoft Teams administración.
@@ -322,9 +324,9 @@ Los clientes con Dynamics 365 requieren una participación adicional para migrar
 
 **Se aplica a:** Todos los clientes que usan Office de escritorio (Word, Excel, PowerPoint, Outlook, OneDrive ...)
 
-En esta fase, todas las aplicaciones cliente y Office Online realizan el recorte de cliente. Azure AD ultima el ámbito del espacio empresarial para que apunte a los servicios Office 365 y los puntos de conexión relacionados.
+En esta fase, todas las aplicaciones cliente y Office Online realizan el recorte de cliente. Azure AD el ámbito del espacio empresarial para que apunte a los servicios Office 365 y los puntos de conexión relacionados.
 
-Office 365 los inquilinos que se encuentran en la región "Alemania" requieren que todos los usuarios cierren, cierren sesión desde Office 365 y vuelvan a iniciar sesión para todas las aplicaciones de escritorio de Office (Word, Excel, PowerPoint, Outlook, etc.) y un cliente OneDrive para la Empresa después de que la migración del espacio empresarial haya alcanzado la fase 9. Al iniciar sesión, permite a los Office obtener nuevos tokens de autenticación del servicio global de Azure AD.
+Office 365 los inquilinos que se encuentran en la región "Alemania" requieren que todos los usuarios cierren, cierren sesión desde Office 365 y vuelvan a iniciar sesión para todas las aplicaciones de escritorio de Office (Word, Excel, PowerPoint, Outlook, etc.) y un cliente OneDrive para la Empresa después de que la migración del espacio empresarial haya alcanzado la fase 9. Al iniciar sesión, permite a los Office obtener nuevos tokens de autenticación del servicio Azure AD global.
 
 En caso de que Office las aplicaciones de escritorio de Office no funcionen después de iniciar sesión e iniciar sesión desde las aplicaciones, se recomienda encarecidamente ejecutar la Herramienta de recorte de cliente [(OCCT)](https://github.com/microsoft/OCCT) de Office en el equipo afectado para solucionar el problema.
 
@@ -348,11 +350,11 @@ Consideraciones adicionales:
 
 En caso de que tenga aplicaciones de línea de negocio, asegúrese de que ha completado el procedimiento de pretrabajo para aplicaciones de línea [de](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) negocio.
 
-## <a name="phase-9--10-azure-ad-finalization"></a>Fase 9 & 10: Azure AD Finalization
+## <a name="phase-9--10-azure-ad-finalization"></a>Fase 9 & 10: Azure AD finalización
 
 **Se aplica a:** Todos los clientes
 
-Cuando el inquilino Office 365 completa el paso final de la migración (Fase 9: Azure AD Finalization), todos los servicios se transiciónn a todo el mundo. Ninguna aplicación o usuario debe tener acceso a los recursos del inquilino en ninguno de los puntos de conexión de Microsoft Cloud Deutschland. Automáticamente, 30 días después de que finalice la finalización, el servicio Microsoft Cloud Deutschland Azure AD detendrá el acceso de puntos de conexión para el inquilino en transición. Las solicitudes de extremo, como la autenticación, producirán un error a partir de este momento en el servicio Microsoft Cloud Deutschland.
+Cuando el inquilino Office 365 completa el paso final de la migración (fase 9: Azure AD finalización), todos los servicios se transiciónn a todo el mundo. Ninguna aplicación o usuario debe tener acceso a los recursos del inquilino en ninguno de los puntos de conexión de Microsoft Cloud Deutschland. Automáticamente, 30 días después de que finalice la finalización, el servicio de Azure AD Microsoft Cloud Deutschland detendrá el acceso de puntos de conexión para el inquilino en transición. Las solicitudes de extremo, como la autenticación, producirán un error a partir de este momento en el servicio Microsoft Cloud Deutschland.
 
 Microsoft Azure clientes deben realizar la transición de sus cargas de trabajo de Azure siguiendo los pasos descritos en el libro de juegos de migración de [Azure](/azure/germany/germany-migration-main) tan pronto como su inquilino complete la migración a todo el mundo (fase 9).
 
@@ -363,18 +365,18 @@ Microsoft Azure clientes deben realizar la transición de sus cargas de trabajo 
 |Pasos|Descripción|Impacto|
 |---|---|---|
 |Actualizar puntos de conexión de usuario|Garantizar que todos los usuarios accedan al servicio con los extremos de Microsoft en todo el mundo adecuados|30 días después de finalizar la migración, los puntos de conexión de Microsoft Cloud Deutschland dejarán de cumplir las solicitudes; se producirá un error en el tráfico de cliente o aplicación.|
-|Actualizar puntos de conexión de aplicaciones de Azure AD|Debe actualizar los puntos de conexión de autenticación, Azure Active Directory (Azure AD) (Azure AD) Graph y MS Graph para las aplicaciones a los del servicio de Microsoft Worldwide.|30 días después de finalizar la migración, los puntos de conexión de Microsoft Cloud Deutschland dejarán de cumplir las solicitudes; se producirá un error en el tráfico de cliente o aplicación.|
+|Actualizar Azure AD de aplicación|Debe actualizar los extremos de autenticación, Azure Active Directory (Azure AD) (Graph) y MS Graph para las aplicaciones a los del servicio Microsoft Worldwide.|30 días después de finalizar la migración, los puntos de conexión de Microsoft Cloud Deutschland dejarán de cumplir las solicitudes; se producirá un error en el tráfico de cliente o aplicación.|
 |Migrar cargas de trabajo de Azure|Los clientes de servicios de Azure deben aprovisionar nuevas suscripciones mundiales para los servicios de Azure y ejecutar la migración según el libro de [reproducción de migración de Azure](/azure/germany/germany-migration-main).|Cuando se haga la transición completa al servicio mundial (fase 10), los clientes ya no podrán acceder a las cargas de trabajo de Azure presentes en Microsoft Cloud Deutschland Azure Portal.|
 |
 
-**Se aplica a:** Clientes con dispositivos registrados o unidos de Azure AD
+**Se aplica a:** Clientes con Azure AD dispositivos registrados o unidos
 
-Una vez completada la fase 9, los dispositivos registrados y unidos de Azure AD deben conectarse a la instancia de Azure AD en transición en la nueva región del centro de datos alemán.
-Es posible que los dispositivos que no se vuelvan a unir a Azure AD ya no funcionen al final de la fase 10. Para obtener instrucciones detalladas y más detalles, consulte [la información adicional acerca de los dispositivos](ms-cloud-germany-transition-add-devices.md).
+Una vez completada la fase 9, Azure AD dispositivos registrados y unidos deben conectarse a la instancia Azure AD en la nueva región del centro de datos alemán.
+Es posible que los dispositivos que no se reincorporen a Azure AD ya no funcionen al final de la fase 10. Para obtener instrucciones detalladas y más detalles, consulte [la información adicional acerca de los dispositivos](ms-cloud-germany-transition-add-devices.md).
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect
 
-**Se aplica a:** Todos los clientes sincronizan identidades con Azure AD connect
+**Se aplica a:** Todos los clientes sincronizan identidades con Azure AD conectarse
 
 <br>
 
@@ -382,7 +384,7 @@ Es posible que los dispositivos que no se vuelvan a unir a Azure AD ya no funcio
 
 |Pasos|Descripción|Impacto|
 |---|---|---|
-|Actualice Azure AD Conectar.|Una vez completado el recorte a Azure AD, la organización usa completamente los servicios Office 365 y ya no está conectada a Microsoft Cloud Deutschland. En este momento, el cliente debe asegurarse de que el proceso de sincronización delta se ha finalizado y, después, cambiar el valor de cadena de `AzureInstance` 3 (Microsoft Cloud Deutschland) a 0 en la ruta de acceso del Registro `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` .|Cambie el valor de `AzureInstance` , la clave del Registro. Si no lo hace, los objetos no se sincronizarán después de que los puntos de conexión de Microsoft Cloud Deutschland ya no estén disponibles.|
+|Actualizar Azure AD Conectar.|Una vez completado el recorte a Azure AD, la organización está usando completamente los servicios Office 365 y ya no está conectada a Microsoft Cloud Deutschland. En este momento, el cliente debe asegurarse de que el proceso de sincronización delta se ha finalizado y, después, cambiar el valor de cadena de `AzureInstance` 3 (Microsoft Cloud Deutschland) a 0 en la ruta de acceso del Registro `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` .|Cambie el valor de `AzureInstance` , la clave del Registro. Si no lo hace, los objetos no se sincronizarán después de que los puntos de conexión de Microsoft Cloud Deutschland ya no estén disponibles.|
 |
 
 ## <a name="post-migration"></a>Después de la migración

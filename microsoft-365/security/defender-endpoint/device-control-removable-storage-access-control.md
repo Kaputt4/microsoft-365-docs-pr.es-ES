@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/05/2021
-ms.openlocfilehash: c42e79317371419367cef5375f7f0aeaeba1fe1f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.date: 10/21/2021
+ms.openlocfilehash: bc73ab308fed1d420815d894c5e8c6fbeb4aaa34
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184742"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553645"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -37,7 +37,7 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 |Privilegio|Permiso|
 |---|---|
-|Acceso|Lectura, Escritura, Ejecución|
+|Access|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditoría, Permitir, Impedir|
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
@@ -84,10 +84,10 @@ Puede usar las siguientes propiedades para crear un grupo de almacenamiento extr
 | **IncludedIdList** | Los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.|El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. <p> En el ejemplo siguiente se muestra el uso de GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | Los grupos a los que no se aplicará la directiva. | El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. |
 | **Id. de entrada** | Un PolicyRule puede tener varias entradas; cada entrada con un GUID único indica al Control de dispositivos una restricción.| |
-| **Type** | Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. <ul><li>Aplicación: Permitir o denegar </li><li>Auditoría: AuditAllowed o AuditDenied</ul></li> | <ul><li>Permitir</li><li>Denegar </li><li>AuditAllowed: define la notificación y el evento cuando se permite el acceso</li><li>AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar.**</li></ul> <p> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto **es Allow** y **Deny**. |
+| **Tipo** | Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. <ul><li>Aplicación: Permitir o denegar </li><li>Auditoría: AuditAllowed o AuditDenied</ul></li> | <ul><li>Permitir</li><li>Denegar </li><li>AuditAllowed: define la notificación y el evento cuando se permite el acceso</li><li>AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar.**</li></ul> <p> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto **es Allow** y **Deny**. |
 | **Sid** | El sid del equipo local o el Sid del objeto AD, define si se va a aplicar esta directiva a un usuario o grupo de usuarios específicos; una entrada puede tener un máximo de un Sid y una entrada sin que ningún Sid signifique aplicar la directiva sobre la máquina. |  |
 | **ComputerSid** | Sid de equipo local o Sid del objeto AD, define si se va a aplicar esta directiva sobre un equipo o grupo de máquinas específicos; una entrada puede tener un máximo de un ComputerSid y una entrada sin que ComputerSid signifique aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada. |  |
-| **Opciones** | Define si se va a mostrar la notificación o no |**0-4:** cuando se selecciona Tipo Permitir o Denegar. <ul><li>0: nada</li><li>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación. </li></ul> <p> Cuando se **selecciona Tipo AuditAllowed** **o AuditDenied:** <ul><li>0: nada</li><li>1: mostrar notificación</li><li>2: evento send</li><li>3: mostrar notificación y enviar evento </li></ul>|
+| **Opciones** | Define si se va a mostrar la notificación o no |**0 o 4:** cuando se selecciona Tipo Permitir o Denegar. <ul><li>0: nada</li><li>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación. </li></ul> <p> Cuando se **selecciona Tipo AuditAllowed:** <ul><li>0: nada</li><li>1: nada</li><li>2: evento send</li><li>3: evento send </li></ul><p> Cuando se **selecciona Tipo AuditDenied:** <ul><li>0: nada</li><li>1: mostrar notificación</li><li>2: evento send</li><li>3: mostrar notificación y enviar evento </li></ul>|
 |AccessMask|Define el acceso. | **1-7**: <ol><li>Lectura</li><li>Escritura</li><li>Lectura y escritura</li><li>Ejecutar</li><li>Lectura y ejecución</li><li>Escritura y ejecución </li><li>Lectura y escritura y ejecución</li></ol> |
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Escenarios comunes Storage control de acceso extraíble

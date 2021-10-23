@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad31350c8936b1a7303050397e43f61408fe1be8
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: fab35b6e40d03239d57329128505a31737904a64
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386228"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555805"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -56,11 +56,13 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
 > [!NOTE]
 > La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Web Protection, abra la aplicación Microsoft Defender para Endpoint en el dispositivo y Habilite La protección web.
 
+## <a name="issues-with-device-health-card"></a>Problemas con la tarjeta de estado del dispositivo
+
+Hay un problema conocido con la tarjeta de mantenimiento del dispositivo que puede provocar una notificación incorrecta para actualizar la versión de iOS aunque el usuario esté en la versión más reciente. Se recomienda a los usuarios que ignoren la notificación de Defender para endpoint. No hay ningún impacto en el cumplimiento del dispositivo debido a esto. Estamos trabajando para resolver este problema y actualizaremos este lugar una vez que disponen de una resolución.
+
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>Coexistencia con varios perfiles vpn
 
 Apple iOS no admite varias VPN de todo **el** dispositivo para estar activas simultáneamente. Aunque pueden existir varios perfiles de VPN en el dispositivo, solo una VPN puede estar activa a la vez. Si necesitas usar otra VPN en el dispositivo, puedes deshabilitar Defender for Endpoint VPN mientras usas la otra VPN.
-
-Microsoft Defender para endpoint VPN puede coexistir con otras VPN configuradas como *por aplicación* o *"Personal".*
 
 ## <a name="battery-consumption"></a>Consumo de batería
 

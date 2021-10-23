@@ -19,19 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe Microsoft Teams actividad del usuario y obtener información sobre la Teams actividad de la organización.
-ms.openlocfilehash: 0055fda46b3c958d57d66a21d33f2589b6985e30
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6c30575cd333ea1ad161fceefcee4e8ba3737762
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157439"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553141"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
 El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de actividad de los usuarios de Microsoft Teams puede obtener estadísticas sobre la actividad de Microsoft Teams en su organización.
-  
-> [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial para ver informes.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Cómo obtener el informe de actividad de los usuarios de Microsoft Teams
 
@@ -46,11 +43,11 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. El formato exportado para **tiempo de audio,** **tiempo de vídeo** y tiempo de uso compartido de pantalla sigue el formato de duración ISO8601. 
 
-Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
 
 Para garantizar la calidad de los datos, llevamos a cabo comprobaciones diarias de validación de datos durante los últimos tres días y se rellenarán los vacíos detectados. Es posible que observe diferencias en los datos históricos durante el proceso.
 
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |
@@ -69,5 +66,5 @@ Para garantizar la calidad de los datos, llevamos a cabo comprobaciones diarias 
 |Reuniones participadas periódicamente programadas  <br/> |Número de reuniones periódicas en las que participó un usuario durante el período de tiempo especificado.  <br/> |
 |Tiene licencia  <br/> |Se selecciona si el usuario tiene licencia para usar Teams. <br/>|
 |Otra actividad  <br/>|El usuario está activo, pero ha realizado otras actividades que no son los tipos de acción expuestos ofrecidos en el informe (enviar o responder a mensajes de canal y mensajes de chat, programar o participar en llamadas y reuniones 1:1). Las acciones de ejemplo son cuando un usuario cambia el Teams o el mensaje de estado Teams o abre una entrada de mensaje de canal, pero no responde.  <br/>|
-|reuniones sin clasificar <br/>|La que no se puede clasificar como programación, periódica o ad hoc. Son números cortos y, en su mayoría, no se pueden identificar debido a la información de telemetría manipulada. |
+|Reuniones sin clasificar <br/>|La que no se puede clasificar como programación, periódica o ad hoc. Son números cortos y, en su mayoría, no se pueden identificar debido a la información de telemetría manipulada. |
 |||

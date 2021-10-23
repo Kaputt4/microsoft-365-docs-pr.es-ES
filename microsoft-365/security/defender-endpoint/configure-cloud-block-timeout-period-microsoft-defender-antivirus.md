@@ -2,7 +2,6 @@
 title: Configurar el período Antivirus de Microsoft Defender de tiempo de espera del bloque de nube
 description: Puede configurar cuánto tiempo Antivirus de Microsoft Defender bloqueará la ejecución de un archivo mientras espera una determinación de nube.
 keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, nube, tiempo de espera, bloqueo, punto, segundos
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/04/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 104f385a48def9a62d668f6ef6c3f79a37fd5335
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b00c631a3eeaddb4fa66fe6d58fd40418b188bec
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207060"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552733"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurar el período de espera de bloqueo en la nube
 

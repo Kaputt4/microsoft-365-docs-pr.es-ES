@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7af22cf31c8ad8cad4640d99737bc359e0ab6d2c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9b1bf2d20bb9f2084abadbc164bb668c3ebf174f
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192912"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555997"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -42,17 +42,20 @@ Encuentre respuestas a las preguntas más frecuentes (preguntas frecuentes) sobr
 ## <a name="what-is-basic-discovery-mode"></a>¿Qué es el modo de detección básico?
 Este modo permite que todos los dispositivos integrados de Microsoft Defender para Endpoint recopile datos de red y detecte dispositivos vecinos. Los puntos de conexión incorporados recopilan eventos de la red de forma pasiva y extraen información del dispositivo de ellos. No se iniciará tráfico de red. Los puntos de conexión incorporados simplemente extraerán datos de cada tráfico de red que ve un dispositivo incorporado. Estos datos se usan para enumerar dispositivos no administrados en la red.
 
+
 ## <a name="can-i-disable-basic-discovery"></a>¿Puedo deshabilitar la detección básica?
 Tienes la opción de desactivar la detección de dispositivos a través de la [página Características avanzadas.](advanced-features.md) Sin embargo, perderás visibilidad en dispositivos no administrados en la red. Ten en cuenta que SenseNDR.exe se seguirá ejecutando en los dispositivos incorporados independientemente de que la detección esté desactivada. 
 
 ## <a name="what-is-standard-discovery-mode"></a>¿Qué es el modo de detección estándar?
- En este modo, los puntos de conexión incorporados a Microsoft Defender para Endpoint pueden sondear activamente los dispositivos observados en la red para enriquecer los datos recopilados (con una cantidad insignificante de tráfico de red). Este modo es muy recomendable para crear un inventario de dispositivos confiable y coherente. Si decide deshabilitar este modo y seleccionar el modo de detección básico, es probable que solo obtenga una visibilidad limitada de los puntos de conexión no administrados en la red.
+ En este modo, los puntos de conexión incorporados a Microsoft Defender para Endpoint pueden sondear activamente los dispositivos observados en la red para enriquecer los datos recopilados (con una cantidad insignificante de tráfico de red). Solo los dispositivos observados por el modo de detección básico se sondearán activamente en modo estándar. Este modo es muy recomendable para crear un inventario de dispositivos confiable y coherente. Si decide deshabilitar este modo y seleccionar el modo de detección básico, es probable que solo obtenga una visibilidad limitada de los puntos de conexión no administrados en la red.
+
+ El modo estándar también aprovecha los protocolos comunes de detección que usan consultas de multidifusión en la red para encontrar aún más dispositivos, además de los que se han ovserved mediante el método pasivo.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>¿Puedo controlar qué dispositivos realizan la detección estándar?
  Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente solo Windows 10 dispositivos) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. En este caso, todos los demás dispositivos se configurarán para ejecutar solo la detección básica. La configuración está disponible en la página configuración de detección de dispositivos.
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>¿Puedo excluir dispositivos no administrados de la lista de inventario de dispositivos?
-Sí, puedes aplicar filtros que excluyan los dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados. 
+Sí, puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados. 
 
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>¿Qué dispositivos incorporados pueden realizar la detección?
@@ -68,7 +71,10 @@ Sí, puedes aplicar filtros que excluyan los dispositivos no administrados de la
  Cuando un dispositivo está configurado para ejecutar la detección estándar, los servicios expuestos se sondean mediante los siguientes protocolos: ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>¿Cómo puedo excluir los destinos de ser sondeados con la detección estándar?
- Si hay dispositivos en la red que no deben ser sondeados activamente, también puedes definir una lista de exclusiones para evitar que se puedan examinar. La configuración está disponible en la página configuración de detección de dispositivos.
+ Si hay dispositivos en la red que no deben ser sondeados activamente, también puedes definir una lista de exclusiones para evitar que se puedan examinar. La configuración está disponible en la página configuración de detección de dispositivos. 
+
+>[!NOTE]
+> Es posible que los dispositivos respondan a los intentos de detección de multidifusión en la red. Esos dispositivos se descubrirán pero no se sondean activamente. 
 
 ## <a name="can-i-exclude-devices-from-being-discovered"></a>¿Puedo excluir los dispositivos para que no se descubran?
  Como la detección de dispositivos usa métodos pasivos para detectar dispositivos en la red, cualquier dispositivo que se comunique con los dispositivos incorporados en la red corporativa se puede detectar y enumerar en el inventario. Solo puedes excluir dispositivos del sondeo activo.

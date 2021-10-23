@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en Exchange Online buzones de correo. Muchas de estas opciones de configuración están disponibles para los usuarios Outlook o Outlook en la Web.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aee1825e5bc69973fb8ed8122881fe0f8dd6878
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d3a55b1f49430d3c2a61b0db44e3ce8f8a060093
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213486"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555493"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar las opciones del correo no deseado en buzones de Exchange Online
 
@@ -37,75 +37,35 @@ En Microsoft 365 organizaciones con buzones en Exchange Online, la configuració
 
 Sin embargo, también hay opciones específicas contra correo no deseado que los administradores pueden configurar en buzones individuales en Exchange Online:
 
-- **Habilitar o deshabilitar la regla** de correo no deseado: la regla de correo no deseado es una regla de bandeja de entrada oculta denominada Regla de correo electrónico no deseado que está habilitada de forma predeterminada en cada buzón. La regla de correo no deseado controla las siguientes características:
+> [!NOTE]
+> EOP ahora usa su propio agente de entrega de flujo de correo para enrutar mensajes a la carpeta correo no deseado en lugar de usar la regla de correo no deseado. El _parámetro Enabled_ del cmdlet **Set-MailboxJunkEmailConfiguration** ya no tiene ningún efecto en el flujo de correo. EOP enruta los mensajes en función de las acciones establecidas en las directivas contra correo no deseado. La lista de remitentes Caja fuerte y la lista de remitentes bloqueados del usuario seguirán funcionando como de costumbre.
 
-  - Mover mensajes a la carpeta correo no deseado según directivas contra correo no  **deseado:** cuando se configura una directiva contra correo no deseado con la acción Mover mensaje a la carpeta correo no deseado para un veredicto de filtrado de correo no deseado, la regla de filtro de correo no deseado mueve el mensaje a la carpeta Correo no deseado después de entregar el mensaje al buzón. Para obtener más información acerca de los veredictos de filtrado de correo no deseado en directivas contra correo no deseado, vea [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). Del mismo modo, si la purga automática de cero horas (ZAP) determina que un mensaje entregado es  correo no deseado o phish, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo no deseado para mover el mensaje a la carpeta de correo no deseado acciones de veredicto de filtrado de correo no deseado. Para obtener más información acerca de ZAP, vea [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
+- Mover mensajes a la carpeta correo no deseado según directivas contra correo no  **deseado:** cuando se configura una directiva contra correo no deseado con la acción Mover mensaje a la carpeta correo no deseado para un veredicto de filtrado de correo no deseado, el mensaje se mueve a la carpeta correo no deseado después de entregar el mensaje al buzón. Para obtener más información acerca de los veredictos de filtrado de correo no deseado en directivas contra correo no deseado, vea [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). Del mismo modo, si la purga automática de cero horas (ZAP) determina que un mensaje  entregado es correo no deseado o phishing, el mensaje se mueve a la carpeta correo no deseado para mover el mensaje a la carpeta de correo no deseado acciones de veredicto de filtrado de correo no deseado. Para obtener más información acerca de ZAP, vea [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
-  - Configuración de correo no deseado que los usuarios configuran por sí mismos en Outlook o **Outlook en la Web:** la colección _de_ listas seguras es la lista de remitentes de Caja fuerte, la lista de destinatarios de Caja fuerte y la lista remitentes bloqueados en cada buzón. Las entradas de estas listas determinan si la regla de correo no deseado mueve el mensaje a la bandeja de entrada o a la carpeta Correo no deseado. Los usuarios pueden configurar la colección de listas seguras para su propio buzón Outlook o Outlook en la Web (anteriormente conocido como Outlook Web App). Los administradores pueden configurar la colección de listas seguras en el buzón de cualquier usuario.
+- Configuración de correo no deseado que los usuarios configuran por sí mismos en Outlook o **Outlook en la Web:** la colección _de_ listas seguras es la lista de remitentes de Caja fuerte, la lista de destinatarios de Caja fuerte y la lista remitentes bloqueados en cada buzón. Las entradas de estas listas determinan si el mensaje se mueve a la Bandeja de entrada o a la carpeta correo no deseado. Los usuarios pueden configurar la colección de listas seguras para su propio buzón Outlook o Outlook en la Web (anteriormente conocido como Outlook Web App). Los administradores pueden configurar la colección de listas seguras en el buzón de cualquier usuario.
 
-Cuando la regla de correo no deseado está habilitada en el buzón, EOP puede mover  mensajes a la carpeta correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado o la lista remitentes bloqueados en el buzón e impedir que los mensajes se entreguen a la carpeta correo no deseado (según la lista remitentes de Caja fuerte del buzón).
+EOP puede mover mensajes a la carpeta correo no deseado  en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta Correo no deseado o la lista Remitentes bloqueados en el buzón e impedir que los mensajes se entreguen a la carpeta correo no deseado (en función de la lista de remitentes de Caja fuerte en el buzón).
 
- Cuando la regla de correo no deseado está deshabilitada en el buzón, EOP no  puede mover mensajes a la carpeta correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado o a la colección de listas seguras del buzón.
-
-Los administradores pueden usar Exchange Online PowerShell para deshabilitar, habilitar y ver el estado de la regla de correo no deseado en los buzones. Los administradores también pueden usar Exchange Online PowerShell para configurar las entradas de la colección de listas seguras en los buzones (la lista de remitentes de Caja fuerte, la lista de destinatarios de Caja fuerte y la lista remitentes bloqueados).
+Los administradores pueden usar Exchange Online PowerShell para configurar las entradas de la colección de listas seguras en los buzones (la lista de remitentes de Caja fuerte, la lista de destinatarios de Caja fuerte y la lista remitentes bloqueados).
 
 > [!NOTE]
-> Los mensajes de remitentes que los usuarios han agregado a sus propias listas de remitentes de Caja fuerte omitirán el filtrado de conexiones como parte de EOP (el SCL es -1). Para evitar que los usuarios agreguen entradas a su lista de remitentes de Caja fuerte en Outlook, use la directiva de grupo como se mencionó en la sección Acerca de la configuración del correo no deseado en [Outlook](#about-junk-email-settings-in-outlook) más adelante en este artículo. El filtrado de directivas, el filtrado de contenido y Defender para Office 365 se seguirán aplicando a los mensajes.
+> Los mensajes de remitentes que los usuarios han agregado a sus propias listas de remitentes de Caja fuerte omitirán el filtrado de contenido como parte de EOP (el SCL es -1). Para evitar que los usuarios agreguen entradas a su lista de remitentes de Caja fuerte en Outlook, use la directiva de grupo como se mencionó en la sección Acerca de la configuración del correo no deseado en [Outlook](#about-junk-email-settings-in-outlook) más adelante en este artículo. El filtrado de directivas, el filtrado de contenido y Defender para Office 365 se seguirán aplicando a los mensajes.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Solo puede usar Exchange Online PowerShell para realizar los procedimientos descritos en este artículo. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Solo puede usar Exchange Online PowerShell para realizar los procedimientos descritos en este artículo. Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener asignados permisos en Exchange Online para poder realizar los procedimientos de este artículo. En concreto, necesita  el rol Destinatarios de correo (que está asignado a los grupos de roles  Administración de la **organización,**  Administración de  destinatarios y Destinatarios de correo **personalizados** de forma predeterminada) o el rol Opciones de usuario (que se asigna de forma predeterminada a los grupos de roles Administración de la organización y Servicio de ayuda).  Para agregar usuarios a grupos de roles en Exchange Online, vea [Modify role groups in Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Tenga en cuenta que los usuarios con permisos predeterminados pueden realizar estos mismos procedimientos en su propio buzón, siempre y cuando tengan acceso [a Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
 
-- En entornos híbridos en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+- En entornos híbridos en los que EOP protege los buzones de correo Exchange locales, debe configurar reglas de flujo de correo (también conocidas como reglas de transporte) en entornos Exchange. Estas reglas de flujo de correo traducen el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado del buzón pueda mover el mensaje a la carpeta Correo no deseado. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
-- Caja fuerte Los remitentes de buzones compartidos no se sincronizan con Azure AD y EOP por diseño.
-
-## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Usar Exchange Online PowerShell para habilitar o deshabilitar la regla de correo no deseado en un buzón
-
-> [!NOTE]
-> El cmdlet **Set-MailboxJunkEmailConfiguration** solo se puede usar para deshabilitar la regla de correo no deseado en un buzón que se ha abierto en Outlook (en modo caché de Exchange) o en Outlook en la web. Si el buzón no se ha abierto, recibirá el error: si desea suprimir este error para operaciones masivas, puede agregar al comando `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` `-ErrorAction SilentlyContinue` **Set-MailboxJunkEmailConfiguration.**
-
-Use esta sintaxis para habilitar o deshabilitar la regla de correo no deseado en un buzón:
-
-```PowerShell
-Set-MailboxJunkEmailConfiguration -Identity <MailboxIdentity> -Enabled <$true | $false>
-```
-
-En este ejemplo se deshabilita la regla de correo no deseado en el buzón de Ori Epstein.
-
-```PowerShell
-Set-MailboxJunkEmailConfiguration -Identity "Ori Epstein" -Enabled $false
-```
-
-Y en este se deshabilita la regla de correo no deseado en todos los buzones de usuario de la organización.
-
-```PowerShell
-$All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -Enabled $false}
-```
-
-Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration).
-
-> [!NOTE]
->
-> - Si el usuario nunca ha abierto su buzón, es posible que reciba un error al ejecutar el comando anterior. Para suprimir este error para operaciones masivas, agregue `-ErrorAction SilentlyContinue` al **comando Set-MailboxJunkEmailConfiguration.**
->
-> - Incluso si deshabilita la regla de correo no deseado, el filtro de correo no deseado de Outlook (según cómo esté configurado) también puede determinar si un mensaje es correo no deseado y puede mover mensajes a la bandeja de entrada o a la carpeta correo no deseado en función de su propio veredicto de correo no deseado y de la colección de listas seguras del buzón. Para obtener más información, vea la sección Acerca de la configuración del correo [no deseado en Outlook](#about-junk-email-settings-in-outlook) sección de este artículo.
-
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
-
-Realice uno de los siguientes procedimientos para confirmar que la regla de correo no deseado se ha habilitado o deshabilitado correctamente en un buzón:
-
-- Reemplace por el nombre, alias o dirección de correo electrónico del buzón y ejecute el _\<MailboxIdentity\>_ siguiente comando para comprobar el valor de la propiedad **Enabled:**
-
-  ```PowerShell
-  Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
-  ```
+- Caja fuerte remitentes de buzones compartidos no se sincronizan con Azure AD y EOP por diseño.
 
 ## <a name="use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox"></a>Usar Exchange Online PowerShell para configurar la colección de listas seguras en un buzón
 
 La colección de listas seguras de un buzón engloba la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados. De forma predeterminada, los usuarios pueden configurar la colección de listas seguras en su propio buzón Outlook o Outlook en la Web. Los administradores pueden usar los parámetros correspondientes del cmdlet **Set-MailboxJunkEmailConfiguration** para configurar la colección de listas seguras del buzón de un usuario. Estos parámetros se describen en la siguiente tabla.
+
+<br>
 
 ****
 
@@ -120,7 +80,6 @@ La colección de listas seguras de un buzón engloba la lista de remitentes segu
 <sup>\*</sup>**Notas:**
 
 - En Exchange Online, las entradas **de** dominio de la lista de remitentes de Caja fuerte o el parámetro _TrustedSendersAndDomains_ no se reconocen, por lo que solo se usan direcciones de correo electrónico. En EOP independiente con sincronización de directorios, las entradas de dominio no se sincronizan de forma predeterminada, pero puede habilitar la sincronización para dominios. Para obtener más información, [vea KB3019657](https://support.microsoft.com/help/3019657).
-
 - No puede modificar directamente la lista de destinatarios de Caja fuerte mediante el cmdlet **Set-MailboxJunkEmailConfiguration** (el parámetro _TrustedRecipientsAndDomains_ no funciona). En su lugar, hay que modificar la lista de remitentes seguros y esos cambios se sincronizan con la lista de destinatarios seguros.
 
 Use la siguiente sintaxis para configurar la colección de listas seguras de un buzón:
@@ -134,9 +93,7 @@ Para escribir varios valores y sobrescribir las entradas existentes para los par
 En este ejemplo se establecen las siguientes configuraciones de la colección de listas seguras en el buzón de Ori Epstein:
 
 - Agregue el valor shopping@fabrikam.com a la lista Remitentes bloqueados.
-
 - Quite el valor chris@fourthcoffee.com de la lista Caja fuerte remitentes y la lista Caja fuerte destinatarios.
-
 - Se configuran contactos en la carpeta Contactos para que se traten como remitentes de confianza.
 
 ```PowerShell
@@ -154,9 +111,6 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [ve
 > [!NOTE]
 >
 > - Si el usuario nunca ha abierto su buzón, es posible que reciba un error al ejecutar los comandos anteriores. Para suprimir este error para operaciones masivas, agregue `-ErrorAction SilentlyContinue` al **comando Set-MailboxJunkEmailConfiguration.**
->
-> - Incluso si la regla de correo no deseado está deshabilitada en el buzón, puede configurar la colección de listas seguras y el filtro de correo no deseado de Outlook puede mover mensajes a la Bandeja de entrada o a la carpeta Correo no deseado. Para obtener más información, vea la sección Acerca de la configuración del correo [no deseado en Outlook](#about-junk-email-settings-in-outlook) sección de este artículo.
->
 > - El Outlook correo no deseado tiene una configuración de colección de listas seguras adicional (por ejemplo, Agregar automáticamente personas que envíe por correo electrónico a la lista Caja fuerte **remitentes).** Para más información, vea [Usar los filtros de correo electrónico no deseado para controlar los mensajes que ve](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
@@ -186,7 +140,7 @@ Cuando el filtro de correo no deseado de Outlook está establecido en **Bajo** o
 > [!NOTE]
 > En noviembre de 2016, Microsoft dejó de producir actualizaciones de definición de correo no deseado para los filtros SmartScreen en Exchange y Outlook. Las definiciones de correo no deseado de SmartScreen existentes se dejaron en su lugar, pero es probable que su eficacia se degrade con el tiempo. Para obtener más información, consulte la [compatibilidad para SmartScreen en Outlook y Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).
 
-Por lo tanto, el filtro de correo no deseado de Outlook puede usar la colección de listas seguras del buzón y su propia clasificación de correo no deseado para mover mensajes a la carpeta correo no deseado, incluso si la regla de correo no deseado está deshabilitada en el buzón.
+Por lo tanto, Outlook filtro de correo no deseado puede usar la colección de listas seguras del buzón y su propia clasificación de correo no deseado para mover mensajes a la carpeta correo no deseado.
 
 Outlook y Outlook en la web admiten la colección de listas seguras. La colección de listas seguras se guarda en el buzón de Exchange Online, por lo que los cambios en la colección de listas seguras en Outlook aparecen en Outlook en la Web y viceversa.
 
@@ -201,7 +155,6 @@ La colección de listas seguras (la lista de remitentes de Caja fuerte, la lista
   Para obtener más información acerca de este límite y cómo cambiarlo, vea [KB2669081](https://support.microsoft.com/help/2669081).
 
 - La colección de listas seguras sincronizadas en EOP tiene los siguientes límites de sincronización:
-
   - 1024 entradas totales en la lista de remitentes de Caja fuerte, la lista de  destinatarios Caja fuerte y los contactos externos si el correo electrónico de confianza de mis contactos está habilitado.
   - 500 entradas totales en la lista Remitentes bloqueados y en la lista Dominios bloqueados.
 
@@ -211,8 +164,7 @@ La colección de listas seguras (la lista de remitentes de Caja fuerte, la lista
 
     Outlook usuarios pueden seguir agregando más de 1024 entradas hasta que alcancen el límite de Outlook de 510 KB. Outlook puede usar estas entradas adicionales, siempre que un filtro EOP no bloquee el mensaje antes de la entrega al buzón (reglas de flujo de correo, anti suplantación, etc.).
 
-- Con la sincronización de directorios, las entradas se sincronizan con Azure AD en el siguiente orden:
-
+- Con la sincronización de directorios, las entradas se sincronizan Azure AD en el orden siguiente:
   1. Mail contacts if **Trust email from my contacts** is enabled.
   2. La Caja fuerte remitente y Caja fuerte de destinatarios se combinan, desduplican y ordenan alfabéticamente siempre que se realiza un cambio para las primeras 1024 entradas.
 

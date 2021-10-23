@@ -2,7 +2,6 @@
 title: Por qué debe usar Antivirus de Microsoft Defender junto con Microsoft Defender para endpoint
 description: Para obtener mejores resultados, usa Antivirus de Microsoft Defender junto con tus otras ofertas de Microsoft.
 keywords: windows defender, antivirus, av de terceros
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4a4fb5a54769522d86b7aa4b25aec4e1b4bf6979
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76e7c0bc2057b44a46ecefca4ffa73ac8a55b33a
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212286"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555229"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión
 
@@ -56,4 +55,4 @@ Aunque puedes usar una solución antivirus que no es de Microsoft con Microsoft 
 
 [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-[Administración de vulnerabilidades y amenazas](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+[Administración & vulnerabilidades de amenazas](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)

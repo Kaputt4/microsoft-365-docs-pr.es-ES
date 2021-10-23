@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 89a6947aa9ada34df0e60ed2d552254edb6719a5
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: f87879eb4d89f330a8e1b3fe30619ca7954f3057
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335315"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554195"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -164,7 +164,7 @@ Para el primer nivel de evento diario, se establece el umbral en *10* o más eve
 Los períodos de tiempo de las directivas permiten definir períodos de revisión pasados y futuros que se activan después de coincidencias de directivas basadas en eventos y actividades para las plantillas de directivas de administración de riesgos internos. Según la plantilla de directiva que elija, están disponibles los siguientes plazos de directiva:
 
 - **Ventana activación:** disponible para todas  las plantillas de directiva, la ventana Activación es el número definido de días que la ventana se activa **después** de un evento desencadenante. La ventana se activa de 1 a 30 días después de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos insider y ha establecido la *ventana* Activación en 30 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la ventana Activación y la directiva está activa para ese usuario durante 30 días después de que se produjo el evento desencadenante.
-- **Detección de** actividad pasada: disponible  para todas las plantillas de directiva, la detección de actividad Pasada es el número definido de días que se activa la ventana antes **de** un evento desencadenante. La ventana se activa de 0 a 180 días antes de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos de insider y ha establecido la detección de actividad *pasada* en 90 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la detección de actividad Past y la directiva recopila actividades históricas para ese usuario durante 90 días antes del evento desencadenante.
+- **Detección de** actividad pasada: disponible  para todas las plantillas de directiva, la detección de actividad Pasada es el número definido de días que se activa la ventana antes **de** un evento desencadenante. La ventana se activa de 0 a 90 días antes de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos de insider y ha establecido la detección de actividad *pasada* en 90 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la detección de actividad Past y la directiva recopila actividades históricas para ese usuario durante 90 días antes del evento desencadenante.
 
 ![Configuración del período de tiempo de administración de riesgos de Insider.](../media/insider-risk-settings-timeframes.png)
 

@@ -2,8 +2,6 @@
 title: Solucionar problemas de estado del sensor con Microsoft Defender para endpoint client Analyzer
 description: Solucionar problemas de estado del sensor en dispositivos para identificar posibles problemas de configuración, entorno, conectividad o telemetría que afecten a los datos o la funcionalidad del sensor.
 keywords: sensor, estado del sensor, mal configurado, inactivo, sin datos de sensor, datos de sensor, comunicaciones deficientes, comunicación
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bf37f1229712ba94539a8f493a5661fab61657c2
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7f816c9762fd884431deb6fd61beeb02657e300b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399183"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554569"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solucionar problemas de estado del sensor con Microsoft Defender para endpoint client Analyzer
 

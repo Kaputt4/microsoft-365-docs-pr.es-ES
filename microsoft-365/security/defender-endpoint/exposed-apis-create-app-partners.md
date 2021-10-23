@@ -3,7 +3,6 @@ title: Crear una aplicación para tener acceso a Microsoft Defender para endpoin
 ms.reviewer: ''
 description: Aprende a diseñar una aplicación web para obtener acceso mediante programación a Microsoft Defender para endpoint sin un usuario.
 keywords: apis, api de gráfico, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, búsqueda avanzada, consulta
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 107bed51ac0558bb0b81e20b6ea7070689dd42e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a63587500952687ea182d5d2162432195f91ea05
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207096"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554209"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Acceso de partners a través de Microsoft Defender para api de punto de conexión
 
@@ -37,18 +36,18 @@ ms.locfileid: "60207096"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-En esta página se describe cómo crear una aplicación Azure Active Directory (Azure AD) para obtener acceso mediante programación a Microsoft Defender para endpoint en nombre de los clientes.
+En esta página se describe cómo crear una aplicación Azure Active Directory (Azure AD) para obtener acceso mediante programación a Microsoft Defender para Endpoint en nombre de sus clientes.
 
 Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le ayudarán a automatizar los flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para puntos de conexión. El acceso a la API requiere autenticación de OAuth2.0. Para obtener más información, vea Código de autorización [de OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En general, deberá seguir los pasos siguientes para usar las API:
 
-- Crear una aplicación de Azure AD **multiinquilino.**
+- Cree una **aplicación multiinquilino** Azure AD inquilino.
 - Obtenga autorización(consentimiento) por parte del administrador del cliente para que la aplicación obtenga acceso a Defender para los recursos de extremo que necesita.
 - Obtener un token de acceso con esta aplicación.
 - Use el token para obtener acceso a Microsoft Defender para la API de punto de conexión.
 
-Los siguientes pasos le guiarán sobre cómo crear una aplicación de Azure AD, obtener un token de acceso a Microsoft Defender para Endpoint y validar el token.
+Los siguientes pasos le guiarán sobre cómo crear una aplicación Azure AD, obtener un token de acceso a Microsoft Defender para Endpoint y validar el token.
 
 ## <a name="create-the-multi-tenant-app"></a>Crear la aplicación multiinquilino
 
@@ -135,7 +134,7 @@ En el siguiente ejemplo, usaremos el permiso **"Leer todas las** alertas":
 
 **Nota:** Para obtener el token de acceso en nombre de su cliente, use el identificador de inquilino del cliente en las siguientes adquisiciones de tokens.
 
-Para obtener más información sobre el token de AAD, vea [tutorial de AAD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Para obtener más información sobre AAD token, vea [AAD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-powershell"></a>Con PowerShell
 
@@ -245,7 +244,7 @@ Comprobación de la cordura para asegurarse de que tiene un token correcto:
     // Do something useful with the response
     ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [API compatibles de Microsoft Defender para punto de conexión](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint en nombre de un usuario](exposed-apis-create-app-nativeapp.md)

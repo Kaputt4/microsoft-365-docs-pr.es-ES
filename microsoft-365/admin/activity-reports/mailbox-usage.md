@@ -19,19 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Obtenga información sobre cómo obtener un informe de uso de buzones de correo para conocer las actividades de los usuarios con un buzón de usuario.
-ms.openlocfilehash: e3c6508148db6d3a28ef8af42c223b1c75858733
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 815220f963800bcac4da1c7bfc8ee70add0b75d0
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157499"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553285"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del buzón
 
 El  informe de uso de buzones de correo proporciona información sobre los usuarios con un buzón de usuario y el nivel de actividad de cada uno en función del envío de correo electrónico, lectura, creación de citas, envío de reunión, aceptación de reuniones, declinación de reuniones y cancelación de la actividad de la reunión. También proporciona información sobre cuánto almacenamiento ha consumido cada buzón de usuario y cuántos de ellos se acercan a las cuotas de almacenamiento. 
-  
-> [!NOTE]
-> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial para ver informes. 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>Cómo obtener el informe de uso del buzón
 
@@ -45,7 +42,7 @@ Para obtener una vista del **Uso del buzón** de la organización, consulte los 
   
 :::image type="content" alt-text="Informe de uso del buzón." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
-|Elemento|Descripción|
+|Item|Descripción|
 |:-----|:-----|
 |1.  |Puede visualizar el informe **Uso del buzón** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe). |
 |2.  |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas. |

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: fa2532539a09f74331f4129ab73cde367ed070b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9f428dc011d98d446f32f009345d5df30337c4f2
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164517"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552757"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -47,7 +47,7 @@ Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-La implementación centralizada de complementos requiere que los usuarios usen SKU de Microsoft 365 Enterprise: E3/E5/F3 o SKU empresariales: Business Basic, Business Standard, Business Premium (y han iniciado sesión en Office con su identificador de organización) y tienen buzones de Exchange Online y Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory.
+La implementación centralizada de complementos requiere que los usuarios usen SKU de Microsoft 365 Enterprise: E3/E5/F3, SKU de Office 365 Enterprise: E3/E5/F3 o SKU empresariales: Business Basic, Business Standard, Business Premium (y han iniciado sesión en Office con su id. de organización) y han iniciado sesión en Office con su id. de organización y han iniciado sesión Exchange Online buzones de correo Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory.
 Puede ver requisitos específicos para Office y Exchange a continuación, o usar el Control de compatibilidad de implementación [centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
@@ -157,7 +157,7 @@ Si usted o sus usuarios tienen problemas para cargar el complemento mientras usa
 
 | Plataforma | Información de depuración |
 |:-----|:-----|
-|Office | Registros Charles/Fiddler  <br/>  Identificador de inquilino ([obtenga información sobre cómo](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|Oficina | Registros Charles/Fiddler  <br/>  Identificador de inquilino ([obtenga información sobre cómo](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
 |Clientes enriquecidos (Windows y Mac) | Registros Charles/Fiddler  <br/>  Generar números de la aplicación cliente (preferiblemente como una captura de pantalla de **Archivo/Cuenta**) |
 
 ## <a name="related-content"></a>Contenido relacionado

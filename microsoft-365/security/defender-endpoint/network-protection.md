@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b06c0cbe5fd9158b6793d3d8b1079c365016914a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c6540847d6861b5d4f07d3b542afe8ceb3fcf413
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209398"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553465"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -80,8 +80,8 @@ Microsoft Defender para endpoint proporciona informes detallados sobre eventos y
 Esta es una consulta de ejemplo para la búsqueda avanzada:
 
 ```kusto
-DeviceEvents
-|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+DeviceNetworkEvents
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos

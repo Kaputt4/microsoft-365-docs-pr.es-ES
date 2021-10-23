@@ -2,7 +2,6 @@
 title: Configurar y validar las conexiones de red del Antivirus de Windows Defender
 description: Configure y pruebe la conexión con el servicio Antivirus de Microsoft Defender de protección en la nube.
 keywords: antivirus, Antivirus de Microsoft Defender, antimalware, seguridad, defender, nube, agresividad, nivel de protección
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,16 +12,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 06/17/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1efc4fbb38e27151eb0269a1926b8ae8277f7cc5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ded08af0dfa0bf904d83eef43a76bed3dd4cc2f
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212599"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552445"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -81,7 +80,7 @@ Use el siguiente argumento con la Antivirus de Microsoft Defender de línea de c
 ```
 
 > [!NOTE]
-> Debe abrir una versión de nivel de administrador del símbolo del sistema. Haga clic con el botón secundario en el elemento de la menú Inicio, haga clic en **Ejecutar como administrador** y haga clic en **Sí** en el símbolo del sistema de permisos. Este comando solo funcionará en Windows 10 versión 1703 o posterior.
+> Debe abrir una versión de nivel de administrador del símbolo del sistema. Haga clic con el botón secundario en el elemento de la menú Inicio, haga clic en **Ejecutar como administrador** y haga clic en **Sí** en el símbolo del sistema de permisos. Este comando solo funcionará en Windows 10, versión 1703 o posterior, o Windows 11.
 
 Para obtener más información, vea [Manage Antivirus de Microsoft Defender with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
@@ -117,7 +116,7 @@ También verás una detección en Amenazas en cuarentena **en** **la** sección 
 
    El Windows de eventos también mostrará Windows Defender [identificador de evento de cliente 1116](troubleshoot-microsoft-defender-antivirus.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
 - [Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)

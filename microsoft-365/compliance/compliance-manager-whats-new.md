@@ -17,16 +17,33 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: 6082f008dd3290ba396796e5d0ae7c3ad940db79
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 4e51063447ba43129b588bfe05650572b7c97e4a
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335555"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554413"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
+
+## <a name="october-2021"></a>Octubre de 2021
+
+### <a name="new-assessment-templates"></a>Nuevas plantillas de evaluación
+
+Publicamos nuevas plantillas de evaluación, incluidas:
+
+- Ley de privacidad de Colorado (CPA)
+- Ley de privacidad de datos de consumidor de Virginia (CDPA)
+- Egipto- Ley de protección de datos
+- Australia - ASD Essential 8 Maturity Level 1
+- Australia - ASD Essential 8 Maturity Level 2
+- Australia - ASD Essential 8 Maturity Level 3
+
+### <a name="integration-with-privacy-management"></a>Integración con la administración de privacidad
+
+El Administrador de cumplimiento ahora puede trabajar de la mano con la administración de privacidad, una solución que puede ayudarle a proteger los datos personales que la organización almacena en Microsoft 365. La administración de privacidad ofrece herramientas que le ayudarán a visualizar y comprender sus datos, implementar directivas para administrar escenarios de riesgo clave y administrar solicitudes de derechos del sujeto. Cuando se toman medidas en la administración de privacidad para proteger los datos personales que almacena, esto puede contribuir a las evaluaciones de privacidad en el Administrador de cumplimiento y puede ayudarle a mejorar su puntuación de cumplimiento. Para ver cómo la administración de privacidad y otras soluciones contribuyen a su  puntuación y obtener información sobre las posibles oportunidades de mejoras adicionales, consulte la pestaña Soluciones en el Administrador de cumplimiento. También puede encontrar más detalles sobre la administración de privacidad en [Learn about privacy management](/privacy/solutions/privacymanagement/privacy-management).
 
 ## <a name="july-2021"></a>Julio de 2021
 

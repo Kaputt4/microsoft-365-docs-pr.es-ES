@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: ea9025edd20289aa404471f6c1d245e7bf5c7d4e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b76b3e647af6f43f1c8ad7364fe24c895dc86b45
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202158"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553981"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
@@ -28,6 +28,9 @@ Aunque Bookings es una característica de Microsoft 365, no todos los miembros d
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
 ## <a name="steps"></a>Pasos
+
+> [!NOTE]
+> Estos pasos aún no están disponibles en la nueva experiencia de Bookings.
 
 1. Vaya a la [página Administrar personal](https://outlook.office.com/bookings/staff) y seleccione Agregar **personal**
 

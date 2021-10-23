@@ -2,8 +2,6 @@
 title: Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de Microsoft Defender para endpoints
 keywords: soporte técnico, contacto, soporte premier, soluciones, problemas, caso
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d67be887a2efa3735665eedc6cdd7522b4f1f1f7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86a0f1fda29fff47e81b77827daca82597cef3bd
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205624"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555145"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 
@@ -81,7 +79,7 @@ En caso de que los artículos sugeridos no sean suficientes, puede abrir una sol
 Para obtener información sobre cómo abrir vales de soporte técnico, póngase en contacto con el soporte técnico de Defender para endpoints.
 
 > [!NOTE]
-> Si tiene un contrato de soporte técnico premier con Microsoft, verá la etiqueta premier en el widget. Si no es así, póngase en contacto con el administrador de cuentas de Microsoft.
+> Si tienes un contrato de soporte técnico premier con Microsoft, verás la etiqueta premier en el widget. Si no es así, póngase en contacto con el administrador de cuentas de Microsoft.
 
 ### <a name="contact-support"></a>Contactar soporte
 
@@ -89,8 +87,8 @@ Para obtener información sobre cómo abrir vales de soporte técnico, póngase 
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="soporte técnico de contacto 2":::
 
-1. Rellene un título y una descripción del problema al que se enfrenta, así como un número de teléfono y una dirección de correo electrónico donde podamos contactar con usted.
-2. (Opcional) Incluya hasta cinco datos adjuntos que sean relevantes para el problema con el fin de proporcionar contexto adicional para el caso de soporte técnico.
+1. Rellene un título y una descripción para el problema al que se enfrenta, el número de teléfono y la dirección de correo electrónico en los que podamos llegar a usted.
+2. (Opcional) Incluya hasta cinco datos adjuntos que sean relevantes para el problema para proporcionar contexto adicional para el caso de soporte técnico.
 3. Seleccione la zona horaria y un idioma alternativo, si procede. La solicitud se enviará al equipo de soporte técnico de Microsoft. El equipo responderá a su solicitud de servicio en breve.
 
 ## <a name="related-topics"></a>Temas relacionados
