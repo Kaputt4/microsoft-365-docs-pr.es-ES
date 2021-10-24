@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 91549fcbc4c528c0aeebe107d2f97b3bb8b52d41
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff568ffb32a6feb3ef8eba46cad1127dcead0465
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176631"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553897"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -104,7 +104,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-   - **Excluir estos usuarios, grupos y dominios**: Para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
+   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -158,9 +158,9 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      |**Ninguna acción**|||||![Marca de verificación](../../media/checkmark.png)|
      |
 
-     > <sup>1</sup> En Exchange Online, el mensaje se mueve a la carpeta de correo no deseado si la regla de correo no deseado está activada en el buzón (está activada por defecto). Para obtener más información, consulte [Configurar las opciones de correo no deseado en los buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
+     > <sup>1</sup> EOP ahora usa su propio agente de entrega de flujo de correo para enrutar mensajes a la carpeta de correo no deseado en lugar de usar la regla de correo no deseado. El parámetro _Enabled_ en el cmdlet **Set-MailboxJunkEmailConfiguration** ya no tiene ningún efecto en el flujo de correo. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
      >
-     > En los entornos híbridos en los que EOP protege los buzones de correo de Exchange local, es necesario configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtrado de spam de EOP de modo que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo no deseado. Para obtener más detalles, consulte [Configuración de EOP para enviar el spam a la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+     > En los entornos híbridos en los que EOP protege los buzones de correo de Exchange local, es necesario configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local. Estas reglas de flujos de correo traducen el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo no deseado. Para más detalles, consulte [Configurar EOP para enviar correo no deseado a la carpeta de Correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> Puede usar este valor como condición en las reglas de flujo de correo (también conocidas como reglas de transporte) para filtrar o redirigir el mensaje.
      >
