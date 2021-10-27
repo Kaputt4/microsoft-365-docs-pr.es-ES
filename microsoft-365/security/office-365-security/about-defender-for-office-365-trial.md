@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 43659c3eb548d31ad3b6d07d7855a5076b843b54
-ms.sourcegitcommit: d38a40db14a0e41e3c1c0f235843968b2746c6c4
+ms.openlocfilehash: cf701be45841f155b825e86b761f5967bc6298f4
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562176"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588282"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 
@@ -72,7 +72,7 @@ Durante la configuración de la versión de prueba, la funcionalidad de respuest
 
 ## <a name="licensing"></a>Licencias
 
-Como parte de la configuración de prueba, defender para Office 365 licencias se aplican automáticamente a la organización. Las licencias son gratuitas durante los primeros 30 días.
+Como parte de la configuración de prueba, defender para Office 365 licencias se aplican automáticamente a la organización. Las licencias son gratuitas durante los primeros 90 días.
 
 La tarjeta de licencia para la prueba muestra la siguiente información:
 
@@ -120,7 +120,7 @@ A: Después de que expire la prueba, tendrás acceso a los datos de prueba (dato
 
 ### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>P: ¿Cuántas veces puedo usar Defender para Office 365 prueba en mi organización?
 
-A: Un máximo de 2 veces. Si la primera versión de prueba expira, debes esperar al menos 30 días después de la fecha de expiración antes de poder inscribirte en defender para volver Office 365 prueba.
+A: Un máximo de 2 veces. Si la primera versión de prueba expira, debes esperar al menos 30 días después de la fecha de expiración antes de poder inscribirte en defender para volver Office 365 prueba. Después de la segunda prueba, no puedes inscribirte en otra prueba.
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Obtenga más información sobre Defender para Office 365
 

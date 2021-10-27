@@ -2,8 +2,6 @@
 title: Administrar alertas de Microsoft Defender para puntos de conexión
 description: Cambie el estado de las alertas, cree reglas de supresión para ocultar alertas, enviar comentarios y revisar el historial de cambios de alertas individuales con el menú Administrar alerta.
 keywords: administrar alertas, administrar, alertas, estado, nuevo, en curso, resuelto, resolver alertas, suprimir, supresión, reglas, contexto, historial, comentarios, cambios
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6ce6d8f081141214c8d10ea21898fb66e3e0c10
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d4df8855e9aea643860d21b07473e82019f2323
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205384"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587166"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Administrar alertas de Microsoft Defender para puntos de conexión
 

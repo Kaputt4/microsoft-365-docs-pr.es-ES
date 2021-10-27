@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (también denominados elementos no indexados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 4b919500c929c4bc92c6ef090442b737ecadf212
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 5160a46e6be825dd858be030fc5cf5941734e65d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364644"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586318"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigar elementos parcialmente indizados en eDiscovery
 
@@ -67,7 +67,7 @@ Al usar los resultados de búsqueda del ejemplo anterior, el 0,62 % de todos los
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(10.27 GB/146.46 MB) x 100 = 7.0%`
+`(10.27 GB/146.46 GB) x 100 = 7.0%`
 
 Por lo tanto, en el ejemplo anterior, el 7 % del tamaño total de los elementos de buzón son de elementos parcialmente indizados. Como se ha indicado anteriormente, la mayoría de los clientes de organizaciones tienen menos del 1 % de contenido por volumen y menos del 12 % del contenido por tamaño que está parcialmente indizado.
 
@@ -183,6 +183,6 @@ Este es un ejemplo de la salida devuelta por el script.
 > 
 > - Etiquetas de error de lista y los tipos de archivo correspondientes para los que se produjo el error.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Elementos parcialmente indizados en eDiscovery](partially-indexed-items-in-content-search.md)

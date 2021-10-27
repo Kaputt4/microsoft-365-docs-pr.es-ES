@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Aprende a configurar Skillsoft como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 23c170deb8030caf835fb66647e4189020990c9d
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1a9b086ea2eed50369607521470ddece381dc884
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557238"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586082"
 ---
 # <a name="configure-skillsoft-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Skillsoft como origen de contenido para Aprendizaje Microsoft Viva
+
+>[!NOTE]
+>Esta característica no se admite en la vista previa.
 
 En este artículo se muestra cómo configurar Skillsoft como origen de contenido de aprendizaje de terceros en Viva Learning.
 

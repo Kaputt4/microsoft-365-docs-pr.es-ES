@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Obtenga información sobre cómo configurar SAP SuccessFactors como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: f7df19cdfa4298c6d5f6b6700c7203205dd1c3de
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 25e5d5df44afcbbf8c3dc11a66cfa8f254290420
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557046"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588058"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>Configurar SAP SuccessFactors como origen de contenido para Aprendizaje Microsoft Viva
+
+>[!NOTE]
+>Esta característica no se admite en la vista previa.
 
 En este artículo se muestra cómo configurar SAP SuccessFactors como un origen de contenido de terceros para Aprendizaje Microsoft Viva. En primer lugar, deberá editar la configuración del sistema en successFactors Portal y, a continuación, deberá completar la configuración en el Centro de administración de Microsoft 365.
 

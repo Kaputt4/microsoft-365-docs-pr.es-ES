@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Con Office 365, el contenido se cifra en reposo y en tránsito con el cifrado, protocolos y tecnologías más fuertes disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: e250970afa709cdd328506ea350ab2d886a985b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a1ee73d7ded7a02cd7851081412d2403e0ca8f1d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204352"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587306"
 ---
 # <a name="encryption"></a>Cifrado
 
@@ -78,12 +78,11 @@ Para obtener más información, consulte los siguientes recursos:
 
 |**Para realizar esta tarea**|**Ver estos recursos**|
 |:-----|:-----|
-|Configurar el cifrado para mi organización  <br/> |[Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md) <br/> |
-|Ver detalles sobre certificados, tecnologías y conjuntos de cifrado TLS <br/> |[Detalles técnicos sobre cifrado](technical-reference-details-about-encryption.md) <br/> |
-|Trabajar con mensajes cifrados en un dispositivo móvil  <br/> |[Ver mensajes cifrados en el dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Ver mensajes cifrados en su iPhone o iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Cifrar un documento con protección con contraseña  <br/><br/>  La protección con contraseña no se admite en un explorador. Usa versiones de escritorio de Word, Excel y PowerPoint para la protección con contraseña. |[Agregar o quitar protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Elija una **sección Agregar protección** y, a continuación, vea Cifrar con **contraseña**.  |
-|Quitar el cifrado de un documento  <br/> |[Agregar o quitar protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Elija una **sección Quitar protección** y, a continuación, vea Quitar cifrado de **contraseña.**  |
-
+|Configurar el cifrado para mi organización|[Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md)|
+|Ver detalles sobre certificados, tecnologías y conjuntos de cifrado TLS|[Detalles técnicos sobre cifrado](technical-reference-details-about-encryption.md)|
+|Trabajar con mensajes cifrados en un dispositivo móvil|[Ver mensajes cifrados en tu dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)Ver mensajes[cifrados en tu iPhone o iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|
+|Cifrar un documento con protección con contraseña. (La protección con contraseña no se admite en un explorador. Usar versiones de escritorio de Word, Excel y PowerPoint para la protección con contraseña). |[Agregar o quitar protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826). Elija una **sección Agregar protección** y, a continuación, vea Cifrar con **contraseña**.|
+|Quitar el cifrado de un documento|[Agregar o quitar protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826). Elija una **sección Quitar protección** y, a continuación, vea Quitar cifrado de **contraseña.**  |
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5e94467557df7cefc5e1adaddc5a1ae515ef508a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b198cbfe979cc8453db289911ab48de601a3edd2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152195"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586006"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para endpoint en macOS
 
@@ -92,27 +92,27 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 1. Navegue hasta el wdav.pkg descargado en Finder y ábralo.
 
-    ![Captura de pantalla de instalación de la aplicación4.](images/big-sur-install-1.png)
+    ![Captura de pantalla de instalación de la aplicación4.](images/monterey-install-1.png)
 
 2. Seleccione **Continuar,** acepte los términos de licencia y escriba la contraseña cuando se le pida.
 
 3. Al final del proceso de instalación, se te promocionará para aprobar las extensiones del sistema usadas por el producto. Seleccione **Abrir preferencias de seguridad**.
 
-    ![Aprobación de extensión del sistema.](images/big-sur-install-2.png)
+    ![Aprobación de extensión del sistema.](images/monterey-install-2.png)
 
 4. En la **ventana Seguridad & privacidad,** seleccione **Permitir**.
 
-    ![Preferencias de seguridad de extensión del sistema1.](images/big-sur-install-3.png)
+    ![Preferencias de seguridad de extensión del sistema1.](images/monterey-install-3.png)
 
 5. Repita los pasos 3 & 4 para todas las extensiones del sistema distribuidas con Microsoft Defender para Endpoint en Mac.
 
 6. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en Mac inspecciona el tráfico de sockets e informa de esta información al portal Microsoft 365 Defender punto de conexión. Cuando se le pida que conceda a Microsoft Defender permisos de extremo para filtrar el tráfico de red, seleccione **Permitir**.
 
-    ![Preferencias de seguridad de extensión del sistema2.](images/big-sur-install-4.png)
+    ![Preferencias de seguridad de extensión del sistema2.](images/monterey-install-4.png)
 
 7. Abra **System Preferences** Security & Privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a Atp de Microsoft Defender y Extensión de seguridad de punto de conexión de ATP de Microsoft \>  **Defender.**   
 
-    ![Acceso en disco completo.](images/big-sur-install-5.png)
+    ![Acceso en disco completo.](images/monterey-install-5.png)
 
 ## <a name="client-configuration"></a>Configuración de clientes
 

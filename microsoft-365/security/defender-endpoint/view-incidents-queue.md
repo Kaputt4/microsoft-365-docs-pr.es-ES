@@ -3,8 +3,6 @@ title: Ver y organizar la cola de incidentes
 ms.reviewer: ''
 description: Consulta la lista de incidentes y aprende a aplicar filtros para limitar la lista y obtener una vista más centrada.
 keywords: ver, organizar, incidentes, agregados, investigaciones, cola, ttp
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e287f9a4713ba0ad96fd4b1b7f51e0fee948ec28
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4db3016236963f77ded08981f0380876f7819653
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207684"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587390"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión
 
@@ -58,7 +56,7 @@ Puede aplicar los siguientes filtros para limitar la lista de incidentes y obten
 Gravedad del incidente | Descripción
 :---|:---
 Alto </br>(Rojo) | Amenazas asociadas a menudo con amenazas persistentes avanzadas (APT). Estos incidentes indican un alto riesgo debido a la gravedad de los daños que pueden causar en los dispositivos.
-Medio </br>(Naranja) | Las amenazas rara vez se observan en la organización, como cambios anómalos en el Registro, ejecución de archivos sospechosos y comportamientos observados típicos de fases de ataque.
+Mediano </br>(Naranja) | Las amenazas rara vez se observan en la organización, como cambios anómalos en el Registro, ejecución de archivos sospechosos y comportamientos observados típicos de fases de ataque.
 Bajo </br>(Amarillo) | Amenazas asociadas con malware y herramientas de piratería que no indican necesariamente una amenaza avanzada dirigida a la organización.
 Informativo </br>(Gris) | Es posible que los incidentes informativos no se consideren perjudiciales para la red, pero podrían ser buenos para realizar un seguimiento.
 

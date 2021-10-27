@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Obtenga información sobre cómo administrar los Office 365 para que funcionen con la arquitectura de red de la organización empresarial.
-ms.openlocfilehash: 01fb9f067bd94e564deb182338fdcde055edb153
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 96aa778316fcaa5994d408c869e8566e465a07d1
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201702"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587330"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
@@ -73,7 +73,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Hay muchos parámetros que puede pasar al script:
 
-| Parámetro | Descripción |
+| Parameter | Descripción |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Esto es necesario y es un GUID pasado al servicio web que representa el equipo cliente que realiza la llamada. <br/> |
 |**Instance** <br/> |La Office 365 de servicio, que es el valor predeterminado de Worldwide. Esto también se pasa al servicio web. <br/> |
@@ -99,7 +99,7 @@ Además de seleccionar la configuración adecuada para el perímetro de la red, 
 
 Los cambios en las direcciones IP y URL de Office 365 suelen publicarse cerca del último día de cada mes. En ocasiones, los cambios se publicarán fuera de la programación debido a requisitos de funcionamiento, soporte o seguridad.
 
-Cuando se publica un cambio sobre el que es necesario que actúe, debido a que se ha agregado una dirección IP o URL, debería recibir un aviso de 30 días a partir del momento en que se publique el cambio hasta que haya un servicio de Office 365 en ese extremo. Aunque nuestro objetivo es este periodo de notificación, puede que no siempre sea posible debido a requisitos de funcionamiento, soporte o seguridad. Los cambios que no requieran una acción inmediata para mantener la conectividad (como direcciones IP o URL quitadas o cambios menos importantes) no incluyen una notificación previa. Independientemente de la notificación que se proporcione, se enumeran las fechas previstas para cada uno de los cambios en el servicio.
+Cuando se publica un cambio sobre el que es necesario que actúe, debido a que se ha agregado una dirección IP o URL, debería recibir un aviso de 30 días a partir del momento en que se publique el cambio hasta que haya un servicio de Office 365 en ese extremo. Esto se refleja como la fecha de vigencia. Aunque nuestro objetivo es este periodo de notificación, puede que no siempre sea posible debido a requisitos de funcionamiento, soporte o seguridad. Los cambios que no requieran una acción inmediata para mantener la conectividad (como direcciones IP o URL quitadas o cambios menos importantes) no incluyen una notificación previa. En estos casos, no se proporciona ninguna fecha efectiva. Independientemente de la notificación que se proporcione, se enumeran las fechas previstas para cada uno de los cambios en el servicio.
 
 ### <a name="change-notification-using-the-web-service"></a>Notificación de cambios con el servicio web
 
@@ -207,9 +207,7 @@ Si está intentando usar Office 365 y está buscando que los servicios de tercer
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>¿Cómo puedo bloquear el acceso a los servicios al consumidor de Microsoft?
 
-Si restringe el acceso a nuestros servicios al consumidor, será bajo su responsabilidad. La única manera confiable de bloquear los servicios al consumidor es restringir el acceso al FQDN *login.live.com*. Este FQDN lo usa un amplio conjunto de servicios, incluidos los que no van dirigidos al consumidor, como MSDN, TechNet, etc. Este FQDN también lo usa el programa de Intercambio de archivos seguro del Soporte técnico de Microsoft y es necesario para transferir archivos con el fin de facilitar la solución de problemas para los productos de Microsoft.  Si se restringe el acceso a este FQDN, es posible que también sea necesario incluir excepciones a la regla para las solicitudes de red asociadas a estos servicios.
-  
-Tenga en cuenta que bloquear el acceso solo a los servicios al consumidor de Microsoft no impide la capacidad de que alguien en su red filtre la información mediante un espacio empresarial de Office 365 u otro servicio.
+La característica de restricciones de inquilino ahora admite el bloqueo del uso de todas las aplicaciones de consumidor de Microsoft (aplicaciones de MSA), como OneDrive, Hotmail y Xbox.com. Esto usa un encabezado independiente para el login.live.com de conexión. Para obtener más información, vea [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications).
 
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>El Firewall requiere direcciones IP y no puede procesar URL. ¿Cómo lo configuro para Office 365?

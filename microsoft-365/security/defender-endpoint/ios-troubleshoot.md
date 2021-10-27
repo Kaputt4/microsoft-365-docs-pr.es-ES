@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fab35b6e40d03239d57329128505a31737904a64
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 608746c406ef308636e0a2ffc6f4bb1d69f6bbf7
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555805"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587354"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -55,10 +55,6 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
 
 > [!NOTE]
 > La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Web Protection, abra la aplicación Microsoft Defender para Endpoint en el dispositivo y Habilite La protección web.
-
-## <a name="issues-with-device-health-card"></a>Problemas con la tarjeta de estado del dispositivo
-
-Hay un problema conocido con la tarjeta de mantenimiento del dispositivo que puede provocar una notificación incorrecta para actualizar la versión de iOS aunque el usuario esté en la versión más reciente. Se recomienda a los usuarios que ignoren la notificación de Defender para endpoint. No hay ningún impacto en el cumplimiento del dispositivo debido a esto. Estamos trabajando para resolver este problema y actualizaremos este lugar una vez que disponen de una resolución.
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>Coexistencia con varios perfiles vpn
 

@@ -2,8 +2,6 @@
 title: Centro de seguridad de Microsoft Defender Panel de operaciones de seguridad
 description: Use el panel para identificar dispositivos en riesgo, realizar un seguimiento del estado del servicio y ver estadísticas e información sobre dispositivos y alertas.
 keywords: panel, alertas, nuevas, en curso, resuelto, riesgo, dispositivos en riesgo, infecciones, informes, estadísticas, gráficos, gráficos, estado, detecciones de malware activo, categoría de amenazas, categorías, robo de contraseñas, ransomware, exploit, amenaza, baja gravedad, malware activo
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4007280a5225fea3c13904163e546f256e7ee217
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e2535de64276048f933fba4d12c654a46ab1991d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166295"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587142"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centro de seguridad de Microsoft Defender Panel de operaciones de seguridad
 

@@ -2,8 +2,6 @@
 title: Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo funcionan las colas de alertas de Microsoft Defender para puntos de conexión y cómo ordenar y filtrar listas de alertas.
 keywords: alertas, colas, cola de alertas, ordenar, ordenar, filtrar, administrar alertas, nuevas, en curso, resueltas, más recientes, tiempo en cola, gravedad, período de tiempo, alertas de expertos en amenazas de Microsoft
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: cf035e6799a70bc0fa81328ce85e97bfed1a08b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 39c456b3f7ad31181d47318570176710840ad8b2
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211326"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587986"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
@@ -59,7 +57,7 @@ Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener 
 Gravedad de alerta|Descripción
 ---|---
 Alto <br> (Rojo)|Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
-Medio <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
+Mediano <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
 Bajo <br> (Amarillo)|Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
 Informativo <br> (Gris)|Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.
 
@@ -90,7 +88,7 @@ En la tabla siguiente se enumeran las categorías actuales y cómo se asignan ge
 |Comando y control|CommandAndControl|Conectarse a una infraestructura de red controlada por el atacante para retransmitir datos o recibir comandos.|
 |Acceso a credenciales|CredentialAccess|Obtener credenciales válidas para extender el control sobre los dispositivos y otros recursos de la red.|
 |Evasión de defensa|DefenseEvasion|Evitando controles de seguridad, por ejemplo, desactivando aplicaciones de seguridad, eliminando implantes y ejecutando rootkits.|
-|Detección|Detección|Recopilación de información sobre dispositivos y recursos importantes, como equipos de administrador, controladores de dominio y servidores de archivos.|
+|Descubrimiento|Descubrimiento|Recopilación de información sobre dispositivos y recursos importantes, como equipos de administrador, controladores de dominio y servidores de archivos.|
 |Ejecución|Ejecución|Iniciar herramientas de atacante y código malintencionado, incluidos LOS RAT y puertas traseras.|
 |Filtración|Filtración|Extraer datos de la red a una ubicación externa controlada por atacantes.|
 |Exploit|Exploit|Código de vulnerabilidad y posible actividad de explotación.|
@@ -135,7 +133,7 @@ Seleccione el origen que desencadenó la detección de alertas. Expertos en amen
 |TI personalizada|CustomerTI|
 |EDR|WindowsDefenderAtp|
 |Microsoft 365 Defender|MTP|
-|Microsoft Defender para Office 365|OfficeATP|
+|Microsoft Defender para Office 365|OfficeATP|
 |Expertos en amenazas de Microsoft|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
 

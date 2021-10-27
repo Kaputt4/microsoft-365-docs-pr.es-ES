@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en OVH para Microsoft.
-ms.openlocfilehash: c7f5516ba9f50ea25f82d4511c542227d6d98453
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 7da9094a5d4cff2f93ab87251b29fc81bedc51ca
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557026"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587010"
 ---
 # <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Conectar los registros DNS de OVH a Microsoft 365
 
@@ -71,7 +71,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |MS=msxxxxxxxx  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
-1. Seleccione **Siguiente**
+1. Seleccione **Siguiente**.
 
 1. Seleccione **Confirmar**. 
     
@@ -81,13 +81,17 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     
 Ahora que ha agregado el registro en el sitio de su registrador de dominios, deberá volver a Microsoft y solicitar el registro. Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
  
-Para comprobar el dominio en Microsoft 365:
- 
+Para comprobar el registro en Microsoft 365:
+  
 1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**.   
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
+
+1. Seleccione **Continuar**.
   
-3. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **verificar dominio**, seleccione **verificar**.
     
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -195,7 +199,7 @@ Para comprobar el dominio en Microsoft 365:
 1. In the boxes for the new record, type or copy and paste the following values. Para asignar un valor TTL, elija **Personalizado** en la lista desplegable y, a continuación, escriba el valor en el cuadro de texto. 
     
     |**Subdominio**|**TTL**|**Valor**|
-    |:-----|:-----|:-----|:-----|
+    |:-----|:-----|:-----|
     |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |v=spf1 include:spf.protection.outlook.com -all <br/**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
     ![OVH Agregar registro TXT para SPF.](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)

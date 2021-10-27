@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en web.com microsoft.
-ms.openlocfilehash: 0a8f3db894ee3171f6b086a1eeefbdaf7a7c841a
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b95fd5412b7ddc4363e8d5e4ea345c1f551feef8
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557019"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586806"
 ---
 # <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Conectar los registros DNS en web.com a Microsoft 365
 
@@ -109,9 +109,13 @@ Para comprobar el registro en Microsoft 365:
   
 1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**.   
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
+
+1. Seleccione **Continuar**.
   
-3. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **verificar dominio**, seleccione **verificar**.
     
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -169,7 +173,7 @@ Para comprobar el registro en Microsoft 365:
 1. Seleccione o copie y pegue los valores de la tabla siguiente. 
     
     |**Hace referencia a** | **Nombre de host** | **Alias para**|**TTL**|
-    |:-----|:-----|:-----|
+    |:-----|:-----|:-----|:-----|
     | Otro host  <br/>| autodescubrir  <br/>| autodiscover.outlook.com  <br/> | 1 hora  <br/>  |
   
 1. Seleccione **AGREGAR**.

@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Obtenga información sobre cómo configurar Saba como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 26af97604b071e621794937d45882c98fdef0d31
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e259c7d7af3a7ff645017b2eccf76ff89c9a0bdf
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557159"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587318"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Saba como origen de contenido para Aprendizaje Microsoft Viva
+
+>[!NOTE]
+>Esta característica no se admite en la vista previa.
 
 En este artículo se muestra cómo configurar Saba como un origen de contenido de aprendizaje de terceros para Aprendizaje Microsoft Viva. Debe ser administrador del sistema Saba o superusuador para realizar estos pasos.
 

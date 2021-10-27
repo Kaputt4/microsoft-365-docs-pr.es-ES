@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: db114ab17f5e60b9f7660adc71bdc7dd441242b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: c0589818e35ef065f41f40f3b101ba0daab060b1
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150179"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588378"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API de Microsoft Defender para endpoints con PowerShell
 
@@ -62,8 +63,8 @@ Para obtener más información, consulte [documentación de PowerShell](/powersh
 Ejecute lo siguiente:
 
 - $tenantId: identificador del inquilino en nombre del cual desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este inquilino)
-- $appId: id. de la aplicación de AAD (la aplicación debe tener permiso "Ejecutar consultas avanzadas" en Defender para endpoint)
-- $appSecret: secreto de la aplicación de Azure AD
+- $appId: identificador de la aplicación AAD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" en Defender para endpoint)
+- $appSecret: secreto de la aplicación Azure AD aplicación
 
 - $suspiciousUrl: la dirección URL
 

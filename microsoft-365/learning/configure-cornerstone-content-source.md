@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Obtenga información sobre cómo configurar Cornerstone OnDemand como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 0d4f344b2c5ea6854337bb78013994ae5da16f70
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6cc77ec25f7297fa2492b5a22d70e60350b8eccc
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557262"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586130"
 ---
 # <a name="configure-cornerstone-ondemand-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Cornerstone OnDemand como origen de contenido para Aprendizaje Microsoft Viva
+
+>[!NOTE]
+>Esta característica no se admite en la vista previa.
 
 En este artículo se muestra cómo configurar Cornerstone OnDemand como origen de contenido de aprendizaje de terceros en Viva Learning. En primer lugar, deberá habilitar Viva Learning y obtener los detalles de su Portal de cornerstone. A continuación, tendrás que completar la configuración en tu Centro de administración de Microsoft 365.
 

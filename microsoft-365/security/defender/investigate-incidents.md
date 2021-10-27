@@ -2,7 +2,6 @@
 title: Investigar incidentes en Microsoft 365 Defender
 description: Investigar incidentes relacionados con dispositivos, usuarios y buzones.
 keywords: incidente, incidentes, análisis, respuesta, máquinas, dispositivos, usuarios, identidades, correo, correo electrónico, buzón, investigación, gráfico, evidencia
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,14 +22,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: 31dbc29d2aca019c2b2553bb7ffa3082e410aab9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9037b8f721a33f6709f3beefdac6d294c7125333
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209206"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588306"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -68,7 +66,7 @@ La **página Resumen le** ofrece una vista instantánea de los aspectos principa
 
 La información se organiza en estas secciones.
 
-| Section | Descripción |
+| Sección | Descripción |
 |:-------|:-----|
 | Alertas y categorías | Una vista visual y numérica de lo avanzado que ha progresado el ataque en la cadena de eliminación. Al igual que con otros productos de seguridad de Microsoft, Microsoft 365 Defender se alinea con el marco de&[CK &trade; de MITRE ATT.](https://attack.mitre.org/) La escala de tiempo de alertas muestra el orden cronológico en el que se produjeron las alertas y, para cada una, su estado y nombre. |
 | Ámbito |  Muestra el número de dispositivos, usuarios y buzones afectados y enumera las entidades en orden de nivel de riesgo y prioridad de investigación. |
@@ -197,7 +195,7 @@ Desde la **Graph,** puede:
  
    :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Ejemplo de un resaltado de alerta en la Graph página":::
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario:
 

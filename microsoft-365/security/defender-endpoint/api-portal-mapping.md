@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4a9539d075c5428374972e8f7398ff2f326a587f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 8913573f534dcb106ad4310171a90e4099a1ac99
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207156"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587378"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Campos de la API de Microsoft Defender para detecciones de puntos de conexión
 
@@ -73,7 +74,7 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 > |18 |AlertId|externalId|636210704265059241_673569822|Valor disponible para cada detección.|
 > |19|LinkToWDATP|flexString1|`https://securitycenter.windows.com/alert/636210704265059241_673569822`|Valor disponible para cada detección.|
 > |20|AlertTime|deviceReceiptTime|2017-05-07T01:56:59.3191352Z|Hora en que se produjo el evento. Valor disponible para cada detección.|
-> | 21|MachineDomain|sourceDnsDomain|contoso.com|Nombre de dominio no relevante para dispositivos unidos a AAD. Valor disponible para cada detección.|
+> | 21|MachineDomain|sourceDnsDomain|contoso.com|El nombre de dominio no es relevante AAD dispositivos unidos. Valor disponible para cada detección.|
 > |22|Actor|deviceCustomString4|BORON|Disponible para alertas relacionadas con un grupo de actores conocido.|
 > |21+5|ComputerDnsName|Sin asignación|liz-bean.contoso.com|Nombre de dominio completo del dispositivo. Valor disponible para cada detección.|
 > ||LogOnUsers|sourceUserId|contoso\liz-bean; contoso\jay-hardee|El dominio y el usuario de los usuarios de inicio de sesión interactivos en el momento del evento. Nota: Para los dispositivos Windows 10 versión 1607, la información del dominio no estará disponible.|

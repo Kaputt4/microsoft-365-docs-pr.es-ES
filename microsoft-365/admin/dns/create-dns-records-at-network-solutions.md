@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Network Solutions for Microsoft.
-ms.openlocfilehash: cc954871488839cbf7879248535362b85bcf2bac
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: f0599ef178e9a3dde097b94e7c3f980f59e88636
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557029"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586367"
 ---
 # <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Conectar los registros DNS en Network Solutions para Microsoft 365
 
@@ -86,9 +86,13 @@ Para comprobar el registro en Microsoft 365:
   
 1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**.   
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
+
+1. Seleccione **Continuar**.
   
-3. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **verificar dominio**, seleccione **verificar**.
     
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -140,7 +144,7 @@ Para comprobar el registro en Microsoft 365:
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Seleccione Administrar en la lista desplegable.":::
   
-1. Seleccione **Herramientas avanzadas** y, junto a Registros DNS **avanzados,** seleccione **ADMINISTRAR**
+1. Seleccione **Herramientas avanzadas** y, junto a Registros DNS **avanzados,** seleccione **ADMINISTRAR**.
     
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Junto a Registros DNS avanzados, seleccione ADMINISTRAR.":::
 

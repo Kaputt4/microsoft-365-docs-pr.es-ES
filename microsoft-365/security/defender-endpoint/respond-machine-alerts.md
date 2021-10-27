@@ -2,7 +2,6 @@
 title: Realizar acciones de respuesta en un dispositivo en Microsoft Defender para endpoint
 description: Realiza acciones de respuesta en un dispositivo como aislar dispositivos, recopilar un paquete de investigación, administrar etiquetas, ejecutar análisis antivirus y restringir la ejecución de aplicaciones.
 keywords: responder, aislar, aislar el dispositivo, recopilar paquete de investigación, centro de acción, restringir, administrar etiquetas, av scan, restringir la aplicación
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b21090c28fd240e349ec22b078843cf980f3325c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a992f457bab54ff53f3b134cfeba44f50b66af6e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555013"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587414"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -56,7 +55,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
 > [!IMPORTANT]
 >
-> - Estas acciones de respuesta solo están disponibles para dispositivos de Windows 10, versión 1703 o posterior, Windows Server 2019 y Windows Server 2022.
+> - Estas acciones de respuesta solo están disponibles para dispositivos de Windows 10, versión 1703 o posterior, Windows 11, Windows Server 2019 y Windows Server 2022.
 > - Para las plataformas Windows, las capacidades de respuesta (como el aislamiento de dispositivos) dependen de las capacidades de terceros.
 > - Para los agentes de microsoft de primera parte, consulte el vínculo "más información" en cada característica para obtener los requisitos mínimos del sistema operativo.
 
@@ -154,7 +153,7 @@ El Centro de acciones mostrará la información del examen y la escala de tiempo
 Además de contener un ataque al detener procesos malintencionados, también puedes bloquear un dispositivo e impedir que se ejecuten los intentos posteriores de programas potencialmente malintencionados.
 
 >[!IMPORTANT]
-> - Esta acción está disponible para dispositivos Windows 10, versión 1709 o posterior y Windows Server 2016. 
+> - Esta acción está disponible para dispositivos Windows 10, versión 1709 o posterior, Windows 11 y Windows Server 2016. 
 > - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender.
 > - Esta acción debe cumplir los requisitos de firma y formatos de directiva de integridad de código Windows Defender control de aplicaciones. Para obtener más información, vea [Code integrity policy formats and signing](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
@@ -182,8 +181,8 @@ Según la gravedad del ataque y la confidencialidad del dispositivo, es posible 
 
 >[!IMPORTANT]
 >- Esta acción no es compatible actualmente con macOS y Linux. Use la respuesta en directo para ejecutar la acción. Para obtener más información sobre la respuesta en directo, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md)
->- El aislamiento total está disponible para dispositivos de Windows 10, versión 1703, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
->- El aislamiento selectivo está disponible para dispositivos Windows 10 versión 1709 o posterior.
+>- El aislamiento total está disponible para dispositivos de Windows 10, versión 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 y Windows Server 2022.
+>- El aislamiento selectivo está disponible para dispositivos Windows 10, versión 1709 o posterior y Windows 11.
 >- Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
 
 Esta característica de aislamiento de dispositivos desconecta el dispositivo en peligro de la red y conserva la conectividad con el servicio Defender for Endpoint, que sigue supervisando el dispositivo.

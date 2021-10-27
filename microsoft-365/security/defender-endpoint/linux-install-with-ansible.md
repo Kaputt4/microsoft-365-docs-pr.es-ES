@@ -2,7 +2,7 @@
 title: Implementar Microsoft Defender para endpoint en Linux con Ansible
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para Endpoint en Linux con Ansible.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, instalación, implementación, desinstalación, títer, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ecc13693a043602885e8f221e6967bd44eb0da8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 796095323cfbe24a49ed4da712ceef55e8a5d941
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205444"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588202"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -141,7 +141,7 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
     En los siguientes comandos, reemplace *[distro]* y *[version]* por la información que haya identificado.
 
     > [!NOTE]
-    > En el caso de Oracle Linux, reemplace *[distro]* por "rhel".
+    > En el caso de Oracle Linux y Amazon Linux 2, reemplace *[distro]* por "rhel".
 
   ```bash
   - name: Add Microsoft APT key
@@ -281,5 +281,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 - [Administrar paquetes aptos](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Investigar problemas de estado del agente](health-status.md)

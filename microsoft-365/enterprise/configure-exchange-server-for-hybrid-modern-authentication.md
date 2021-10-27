@@ -17,22 +17,22 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar una Exchange Server local para usar la autenticación moderna híbrida (HMA), lo que le ofrece una autenticación y autorización de usuario más seguras.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef3e584103906ec649df052897e5facdfabd8086
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ddf30a3409c01e44fd731002cc97ef339ed9819
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190574"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587373"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 La autenticación moderna híbrida (HMA) es un método de administración de identidades que ofrece una autenticación y autorización de usuario más seguras, y está disponible para implementaciones híbridas locales Exchange servidor.
 
-## <a name="fyi"></a>FYI
+## <a name="definitions"></a>Definiciones
 
-Antes de empezar, llama a:
+Antes de empezar, debe estar familiarizado con algunas definiciones:
 
 - Autenticación moderna \> híbrida HMA
 
@@ -49,8 +49,9 @@ Activar HMA significa:
 1. Asegúrese de cumplir con las preguntas previas antes de comenzar.
 
 1. Dado que **muchos requisitos previos** son comunes para Skype Empresarial y Exchange, la introducción a la autenticación moderna híbrida y los [requisitos previos](hybrid-modern-auth-overview.md)para usarlo con servidores Skype Empresarial y Exchange locales. Haga esto antes de comenzar cualquiera de los pasos de este artículo.
+Requisitos sobre los buzones vinculados que se insertarán.
 
-1. Agregar direcciones URL de servicio web locales como nombres de entidad de seguridad de servicio **(SPN)** en Azure AD. En caso de que EXCH esté en híbrido con varios **inquilinos,** estas direcciones URL del servicio web local deben agregarse como SPN en Azure AD de todos los inquilinos que están en híbrido con EXCH.
+1. Agregar direcciones URL de servicio web local como nombres de entidad de seguridad de servicio **(SPN)** en Azure AD. En caso de que EXCH esté en híbrido con varios **inquilinos,** estas direcciones URL del servicio web local deben agregarse como SPN en el Azure AD de todos los inquilinos que están híbridos con EXCH.
 
 1. Garantizar que todos los directorios virtuales estén habilitados para HMA
 
@@ -61,7 +62,6 @@ Activar HMA significa:
 > [!NOTE]
 > ¿La versión de Office admite MA? Consulta [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
-
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>Asegúrese de cumplir todos los requisitos previos
 
 Dado que muchos requisitos previos son comunes para Skype Empresarial y Exchange, revise [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype Empresarial](hybrid-modern-auth-overview.md)and Exchange servers . Haga esto  *antes*  de comenzar cualquiera de los pasos de este artículo.
@@ -71,7 +71,7 @@ Dado que muchos requisitos previos son comunes para Skype Empresarial y Exchange
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Agregar direcciones URL de servicio web local como SPN en Azure AD
 
-Ejecute los comandos que asignan las direcciones URL del servicio web local como SPN de Azure AD. Los SPN los usan los dispositivos y máquinas cliente durante la autenticación y autorización. Todas las direcciones URL que se pueden usar para conectarse desde local a Azure Active Directory (Azure AD) deben estar registradas en Azure AD (esto incluye espacios de nombres internos y externos).
+Ejecute los comandos que asignan las direcciones URL del servicio web local como Azure AD SPN. Los SPN los usan los dispositivos y máquinas cliente durante la autenticación y autorización. Todas las direcciones URL que se pueden usar para conectarse desde local a Azure Active Directory (Azure AD) deben estar registradas en Azure AD (esto incluye espacios de nombres internos y externos).
 
 En primer lugar, recopile todas las direcciones URL que necesita agregar en AAD. Ejecute estos comandos localmente:
 
@@ -81,11 +81,12 @@ Get-WebServicesVirtualDirectory | FL server,*url*
 Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
+Get-OutlookAnywhere | FL server,*hostname*
 ```
 
 Asegúrese de que las direcciones URL a las que pueden conectarse los clientes aparecen como nombres de entidad de seguridad de servicio HTTPS en AAD. En caso de que EXCH esté en híbrido con varios **inquilinos,** estos SPN HTTPS deben agregarse en el AAD de todos los inquilinos híbridos con EXCH.
 
-1. En primer lugar, conéctese a AAD con [estas instrucciones](connect-to-microsoft-365-powershell.md).
+1. En primer lugar, conéctese AAD con [estas instrucciones](connect-to-microsoft-365-powershell.md).
 
     > [!NOTE]
     > Debe usar la opción _Conectar-MsolService_ de esta página para poder usar el siguiente comando.
@@ -133,31 +134,39 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-Si falta OAuth en cualquier servidor y en cualquiera de los cuatro directorios virtuales, debe agregarlo con los comandos pertinentes antes de continuar ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory)y [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)).
+Si falta OAuth en cualquier servidor y en cualquiera de los cuatro directorios virtuales, debe agregarlo mediante los comandos pertinentes antes de continuar ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory)y [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)).
 
 ## <a name="confirm-the-evosts-auth-server-object-is-present"></a>Confirmar que el objeto del servidor de autenticación de EvoSTS está presente
 
 Vuelva al Shell de administración local Exchange para este último comando. Ahora puede validar que su local tiene una entrada para el proveedor de autenticación de evoSTS:
 
 ```powershell
-Get-AuthServer | where {$_.Name -like "*EvoSts*"}
+Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 ```
 
-El resultado debe mostrar un AuthServer del nombre EvoSts y el estado "Habilitado" debe ser True. Si no lo ve, debe descargar y ejecutar la versión más reciente del Asistente para configuración híbrida.
+El resultado debe mostrar un AuthServer del nombre EvoSts con un GUID y el estado "Habilitado" debe ser True. Si no lo ve, debe descargar y ejecutar la versión más reciente del Asistente para configuración híbrida.
 
 > [!NOTE]
 > En caso de que EXCH esté en híbrido con varios **inquilinos,** el resultado debe mostrar un AuthServer del nombre EvoSts - {GUID} para cada inquilino en híbrido con EXCH y el estado "Habilitado" debe ser True para todos estos objetos AuthServer.
 
- **Importante** Si está ejecutando Exchange 2010 en su entorno, no se creará el proveedor de autenticación EvoSTS.
+> [!IMPORTANT]
+> Si está ejecutando Exchange 2010 en su entorno, no se creará el proveedor de autenticación EvoSTS.
 
 ## <a name="enable-hma"></a>Habilitar HMA
 
-Ejecute el siguiente comando en el Shell Exchange administración local:
+Ejecute el siguiente comando en el Shell Exchange administración local, reemplazando en la línea de comandos por la \<GUID\> cadena del entorno:
 
 ```powershell
-Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
+Set-AuthServer -Identity "EvoSTS - <GUID>" -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
+
+> [!NOTE]
+> En versiones anteriores del Asistente para la configuración híbrida, el EvoSts AuthServer se llamaba simplemente EvoSTS sin un GUID adjunto. No hay ninguna acción que tenga que realizar, basta con modificar la línea de comandos anterior para reflejar esto quitando la parte GUID del comando:
+>
+> ```powershell
+> Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
+> ```
 
 Si la versión exch es Exchange 2016 (CU18 o posterior) o Exchange 2019 (CU7 o posterior) y la híbrida se configuró con HCW descargado después de septiembre de 2020, ejecute el siguiente comando en el Shell de administración de Exchange, local:
 
@@ -178,17 +187,16 @@ También debe mantener presionada la tecla CTRL al mismo tiempo que haga clic co
 > [!NOTE]
 > ¿Necesita configurar Skype Empresarial con HMA? Necesitará dos artículos: uno [](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)que enumera las topologías admitidas y otro que muestra cómo [realizar la configuración](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
-
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Uso de híbridos modernos de autenticación con Outlook para iOS y Android
 
-Si es un cliente local que usa un servidor Exchange tcp 443, omita el procesamiento de tráfico para los siguientes intervalos de direcciones IP:
+Si es un cliente local que usa un servidor Exchange tcp 443, permita el tráfico de red de los siguientes intervalos IP:
 
-```text
+```console
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-La aplicación Outlook para iOS y Android está diseñada como la mejor manera de experimentar Microsoft 365 o Office 365 en tu dispositivo móvil mediante el uso de servicios Microsoft para ayudar a encontrar, planear y priorizar tu vida diaria y trabajo. Para obtener más información, consulte [Using hybrid Modern Authentication with Outlook for iOS and Android](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+Estos intervalos de direcciones IP también se documentan en Puntos de conexión adicionales no [incluidos](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls)en el servicio web Office 365 dirección IP y dirección URL .
 
 ## <a name="related-topics"></a>Temas relacionados
 

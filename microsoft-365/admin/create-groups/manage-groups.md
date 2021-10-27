@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a administrar grupos Microsoft 365, incluida la adición de miembros de grupo de eliminación, la edición de la dirección de correo electrónico, el nombre del grupo o la descripción, y la personalización del funcionamiento del grupo.
-ms.openlocfilehash: 979291cfde3c82bb6e16520f13f51c51e9bd47c2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89e4ff11ffbb396038dd28c26b1f06762a2b5b21
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165765"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586462"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el Centro de administración de Microsoft 365
 
@@ -80,6 +80,9 @@ Esta opción es excelente si desea tener una dirección de correo electrónico d
 3. En la lista Grupos del centro de administración, seleccione el nombre del grupo que desea cambiar y, a continuación, en la pestaña **Configuración,** seleccione Permitir que los **remitentes externos** envíen un correo electrónico a este grupo.
     
 4. Seleccione **Guardar**.
+
+> [!NOTE]
+> Puede tardar hasta 30 minutos antes de que los usuarios externos a la organicación puedan enviar un correo electrónico al grupo.
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Eliminar permanentemente un Microsoft 365 grupo
 

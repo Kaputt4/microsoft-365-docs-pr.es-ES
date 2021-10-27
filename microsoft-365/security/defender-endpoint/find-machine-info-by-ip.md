@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88ba90f15731ec5d3c731503dc274c0ad4187754
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: b94ba526b4ada976827f4d74beee2b1b4c814e8a
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150119"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586154"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>Buscar información del dispositivo por API IP interna
 
@@ -58,9 +59,9 @@ GET /api/machines/find(timestamp={time},key={IP})
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 

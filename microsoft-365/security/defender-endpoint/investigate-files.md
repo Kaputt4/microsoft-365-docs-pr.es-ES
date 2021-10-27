@@ -2,8 +2,6 @@
 title: Investigar archivos de Punto de conexión de Microsoft Defender
 description: Use las opciones de investigación para obtener detalles sobre los archivos asociados con alertas, comportamientos o eventos.
 keywords: investigar, investigar, archivo, actividad malintencionada, motivación de ataque, análisis profundo, informe de análisis profundo
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 99bcf3c3d3381ffe226aeb54a72c7a673b06e88e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dc0b5326f4f5a0400ea624a85a57bc0cb12b577a
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166367"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588094"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar un archivo asociado a una alerta de Microsoft Defender para punto de conexión
 

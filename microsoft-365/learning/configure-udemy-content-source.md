@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Aprende a configurar Udemy como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: edd11ba3a1b3edc8b7019de45261fb9b539a2efb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 404f70983f1deadfac111829f026bd3ccdbcb633
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557086"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587950"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Udemy como origen de contenido para Aprendizaje Microsoft Viva
+
+>[!NOTE]
+>Esta característica no se admite en la vista previa.
 
 En este artículo se muestra cómo configurar Udemy como un origen de contenido de aprendizaje de terceros para Aprendizaje Microsoft Viva.
 

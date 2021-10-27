@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Aprenda a comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Wix para Microsoft.
-ms.openlocfilehash: ba5b814278c601c6fd6e9599075d4e297b87db58
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 229751df89e70903c8dd1ee86a15ac83517efe47
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557049"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586842"
 ---
 # <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Conectar los registros DNS en Wix para Microsoft 365
 
@@ -75,9 +75,13 @@ Para comprobar el registro en Microsoft 365:
   
 1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**.   
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
+
+1. Seleccione **Continuar**.
   
-3. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **verificar dominio**, seleccione **verificar**.
     
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).

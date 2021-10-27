@@ -1,6 +1,6 @@
 ---
 title: Obtener API de mapa CVE-KB
-description: Obtenga información sobre cómo usar la API de mapa Get CVE-KB para recuperar un mapa de CVE a KB y cve detalles en Microsoft Defender para endpoint.
+description: Obtenga información sobre cómo usar la API de mapa Get CVE-KB para recuperar un mapa de CVE a KBs y detalles cve en Microsoft Defender para endpoint.
 keywords: apis, graph api, apis admitidas, get, cve, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
-ms.openlocfilehash: 3921f79172bbbcc32b8510809b54bec477e44b85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: d950ce40a97cc024b4ec5776e087e81e4b1eee3d
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192864"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588402"
 ---
 # <a name="get-cve-kb-map-api"></a>Obtener API de mapa CVE-KB
 
@@ -38,7 +39,7 @@ ms.locfileid: "60192864"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Recupera un mapa de CVE a los detalles de KB y CVE.
+Recupera un mapa de CVE a KBs y detalles de CVE.
 
 ## <a name="permissions"></a>Permisos
 
@@ -57,7 +58,7 @@ Encabezado|Valor
 Authorization|Portador {token}. **Necesario**.
 Tipo de contenido|application/json
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
@@ -69,7 +70,7 @@ Si se realiza correctamente y existe la asignación: 200 Aceptar.
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud:
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
@@ -77,7 +78,7 @@ GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 
 ### <a name="response-example"></a>Ejemplo de respuesta
 
-Aquí tiene un ejemplo de la respuesta.
+Este es un ejemplo de la respuesta:
 
 ```json
 {

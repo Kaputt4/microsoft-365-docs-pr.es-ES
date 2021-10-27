@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Aprenda a comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Cloudflare para Microsoft.
-ms.openlocfilehash: 968979be1da5c54a109687df16cb706efb3bdea5
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 80c7a3dded1da9c52f0baf215fcd1c39cd90d4f3
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556946"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586854"
 ---
 # <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Conectar los registros DNS de Cloudflare a Microsoft 365
 
@@ -41,7 +41,7 @@ Tiene dos opciones para configurar registros DNS para su dominio:
 
 - [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de Dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365. 
 
-OR
+    OR
 
 - [**Siga los pasos manuales**](#create-dns-records-with-manual-setup) Compruebe el dominio con los pasos manuales siguientes y elija cuándo y qué registros agregar al registrador de dominio. Esto le permite configurar nuevos registros MX (correo), por ejemplo, a su conveniencia. 
 
@@ -52,6 +52,8 @@ Siga estos pasos para comprobar y configurar automáticamente el dominio de Clou
 1. En el Centro de administración de Microsoft 365, seleccione **Configuración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>y seleccione el dominio que desea configurar.
 
 1. Seleccione los tres puntos (más acciones) > elija **Iniciar configuración**.
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
 1. On the How do you want to connect your domain? página, seleccione **Continuar**.   
 
@@ -129,9 +131,13 @@ Para comprobar el registro en Microsoft 365:
   
 1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**.   
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
+
+1. Seleccione **Continuar**.
   
-3. En la página **verificar dominio**, seleccione **verificar**.
+1. En la página **verificar dominio**, seleccione **verificar**.
     
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 

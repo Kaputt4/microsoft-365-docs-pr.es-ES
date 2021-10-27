@@ -2,7 +2,6 @@
 title: Investigar alertas en Microsoft 365 Defender
 description: Investigar las alertas que se ven en dispositivos, usuarios y buzones.
 keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,14 +19,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid:
 - MOE150
-- MET150
 ms.technology: m365d
-ms.openlocfilehash: cde5f6e00260710416266fd6f4113def9c7baf6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 92542fdeebd5e6bbfebd075b178a0c22b08f186e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206606"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587766"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -59,14 +57,14 @@ Puede filtrar alertas según estos criterios:
 - Categoría
 - Origen de detección
 - Etiquetas
-- Directiva
+- Policy
 - Activos afectados
 
 ## <a name="required-roles-for-defender-for-office-365-alerts"></a>Roles necesarios para Defender para Office 365 alertas
 
 Tendrás que tener cualquiera de los siguientes roles para tener acceso a Microsoft Defender para obtener Office 365 alertas:
 
-- Para Azure Active Directory global (Azure AD):
+- Para Azure Active Directory (Azure AD) roles globales:
 
    - Administrador global
 
@@ -111,7 +109,7 @@ Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defende
 
 Origen de alertas | Carácter anteponer 
 :---|:---
-Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> 
 Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
@@ -174,11 +172,11 @@ Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al 
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

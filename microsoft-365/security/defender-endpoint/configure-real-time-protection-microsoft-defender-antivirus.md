@@ -11,16 +11,16 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1861e15ce72bafdafa796463ff41163c338fc8bf
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b428767dab4a3087c857de389ee8e6b66f3e42ab
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555625"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588197"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo
 
@@ -49,20 +49,11 @@ Para habilitar y configurar la protección siempre activa:
 
 2. En el panel izquierdo del Editor de  directivas de grupo **local,** expanda el árbol a Configuración del equipo Plantillas administrativas \>  \> **Windows componentes** \> **Antivirus de Microsoft Defender**.
 
-3. Configure la Antivirus de Microsoft Defender de la directiva de servicio antimalware, como se muestra a continuación:
+3. Configure la configuración Antivirus de Microsoft Defender directiva de servicio antimalware.
 
-   1. En el **Antivirus de Microsoft Defender** detalles de la derecha, haga doble clic en la configuración de directiva especificada en la tabla siguiente:
+   En el **panel Antivirus de Microsoft Defender** detalles de la derecha, haga doble clic en Permitir que el servicio **antimalware** se inicie con prioridad normal y estabilite en **Habilitado**.
 
-      <br/><br/>
-
-      |Configuración|Configuración predeterminada|
-      |---|---|
-      |Permitir que el servicio antimalware se inicie con prioridad normal <p> Puede reducir la prioridad del motor Antivirus de Microsoft Defender motor. Reducir la prioridad puede ser útil en casos en los que quieras tener un proceso de inicio lo más delgado posible; sin embargo, la toma de esta acción podría afectar a la protección de puntos de conexión. Continúe con precaución.|Habilitado
-      |Permitir que el servicio antimalware siga ejecutándose siempre <p> Si las actualizaciones de protección se han deshabilitado, puede Antivirus de Microsoft Defender para que se ejecuten. Deshabilitar las actualizaciones de protección reduce la protección de puntos de conexión.|Deshabilitado|
-
-   2. Configure la configuración según corresponda y seleccione **Aceptar**.
-
-   3. Repita los pasos anteriores para cada configuración de la tabla.
+   A continuación, seleccione **Aceptar**.
 
 4. Configure la Antivirus de Microsoft Defender directiva de protección en tiempo real, como se muestra a continuación:
 
@@ -78,19 +69,9 @@ Para habilitar y configurar la protección siempre activa:
 
     1. En el **Antivirus de Microsoft Defender** en el panel izquierdo, seleccione **Examinar**.
     
-       ![Antivirus de Microsoft Defender Opciones de examen.](images/gpedit-windows-defender-antivirus-scan.png)
+   2. En el **panel Detección** de detalles de la derecha, haga doble clic en **Activar heurística** y estadóla en **Habilitado**. 
 
-      ![Antivirus de Microsoft Defender Opciones de examen](images/gpedit-windows-defender-antivirus-scan.png)
-
-   2. En el **panel Detección** de detalles de la derecha, haga doble clic en la configuración de directiva especificada en la tabla siguiente:
-      <br/><br/>
-
-      |Configuración|Configuración predeterminada|
-      |---|---|
-      |Activar heurística <p> La protección heurística deshabilitará o bloqueará la actividad sospechosa inmediatamente antes de que se pida al Antivirus de Microsoft Defender que detecte la actividad.|Habilitado|
-
-
-   3. Configure la configuración según corresponda y seleccione **Aceptar**.
+   3. Seleccione **Aceptar**.
 
 6. Cierre **el Editor de directivas de grupo local**.
 
@@ -129,11 +110,7 @@ La principal funcionalidad de protección en tiempo real está habilitada de for
 
 3. En el **panel detalles de protección** en tiempo real a la derecha, haga doble clic en Desactivar la protección en tiempo **real.**
 
-   ![Desactivar la protección en tiempo real.](images/gpedit-turn-off-real-time-protection.png)
-
 4. En la ventana Desactivar la configuración de protección en tiempo **real,** establezca la opción en **Habilitado**.
-
-   ![Desactivar la protección en tiempo real habilitada.](images/gpedit-turn-off-real-time-protection-enabled.png)
    
 5. seleccione **Aceptar**.
 

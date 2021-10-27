@@ -3,8 +3,6 @@ title: Información general sobre detección y respuesta de puntos de conexión 
 ms.reviewer: ''
 description: Obtenga información sobre las detección y respuesta de puntos de conexión de Microsoft Defender para endpoint
 keywords: Microsoft Defender para endpoint, detección y respuesta de puntos de conexión, response, detection, cybersecurity, protection
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f1461cc9871e57cf422c261191723d8d229cc3c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 709f07bcaa803a922e1dade2acf90e73b6dca53e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205216"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586002"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Introducción a la EDR
 

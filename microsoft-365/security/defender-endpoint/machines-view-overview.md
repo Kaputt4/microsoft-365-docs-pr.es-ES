@@ -2,8 +2,6 @@
 title: Ver y organizar la lista de dispositivos de Microsoft Defender para endpoints
 description: Obtenga información sobre las características disponibles que puede usar en la lista dispositivos, como ordenar, filtrar y exportar la lista para mejorar las investigaciones.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd3e8a9a265070f3cda61a2c96eb704ed2dc177a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51b55a92a88dfa5faf89df89bfc3351b97571feb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169832"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588330"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión
 
@@ -82,9 +80,9 @@ Si el nivel de exposición indica "No hay datos disponibles", hay algunas razone
 
 Seleccione solo las plataformas del sistema operativo que le interesa investigar.
 
-### <a name="windows-10-versions"></a>Windows 10 versiones anteriores
+### <a name="windows-versions"></a>Windows versiones anteriores
 
-Seleccione solo las Windows 10 que está interesado en investigar.
+Seleccione solo las Windows que está interesado en investigar.
 
 ### <a name="health-state"></a>Estado
 

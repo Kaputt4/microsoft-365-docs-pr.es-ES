@@ -15,12 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 59f06ebfb75d628bb5e050a8dfd2b93e6714245f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: b8109c71206ee9f689cafb28d7def14ff3122704
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208006"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586142"
 ---
 # <a name="batch-update-alerts"></a>Alertas de actualización por lotes
 
@@ -77,7 +78,7 @@ Nombre|Tipo|Descripción
 Authorization | Cadena | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En el cuerpo de la solicitud, proporcione los IDs de las alertas que se actualizarán y los valores de los campos relevantes que desea actualizar para estas alertas.
 
@@ -88,7 +89,7 @@ Para obtener el mejor rendimiento no debe incluir valores existentes que no haya
 Propiedad | Tipo | Descripción
 :---|:---|:---
 alertIds | Cadena de &lt; lista&gt;| Una lista de los IDs de las alertas que se actualizarán. **Required**
-status | Cadena | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
+status | String | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
 assignedTo | Cadena | Propietario de las alertas especificadas
 classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'. 
 determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'

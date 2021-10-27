@@ -2,7 +2,7 @@
 title: Implementar Microsoft Defender para Endpoint en Linux manualmente
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para Endpoint en Linux manualmente desde la línea de comandos.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, instalación, implementación, desinstalación, títer, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 437669f392f108526670d3eca3aef4071aa8cb02
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: ade60ba21b97a22795740cc57971e9b197eb0322
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478882"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587190"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -39,7 +39,7 @@ En este artículo se describe cómo implementar Microsoft Defender para Endpoint
 - [Implementar Microsoft Defender para Endpoint en Linux manualmente](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Requisitos previos y requisitos del sistema](#prerequisites-and-system-requirements)
   - [Configurar el repositorio de software de Linux](#configure-the-linux-software-repository)
-    - [RHEL y variantes (CentOS y Oracle Linux)](#rhel-and-variants-centos-oracle-linux-and-amazon-linux-2)
+    - [RHEL y variantes (CentOS, Fedora, Oracle Linux y Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
     - [SLES y variantes](#sles-and-variants)
     - [Sistemas Ubuntu y Debian](#ubuntu-and-debian-systems)
   - [Instalación de la aplicación](#application-installation)
@@ -65,7 +65,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 > [!WARNING]
 > Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.
 
-### <a name="rhel-and-variants-centos-oracle-linux-and-amazon-linux-2"></a>RHEL y variantes (CentOS, Oracle Linux y Amazon Linux 2)
+### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>RHEL y variantes (CentOS, Fedora, Oracle Linux y Amazon Linux 2)
 
 - Instale `yum-utils` si aún no está instalado:
 
@@ -85,7 +85,9 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     |---|---|
     |Para RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
     |Para RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    | Para RHEL/Centos/Oracle 6.7-6.10 | <https://packages.microsoft.com/config/rhel/6/[channel].repo>
+    |Para RHEL/Centos/Oracle 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |Para Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
+    |Para Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
     En los siguientes comandos, reemplace *[versión]* y *[canal]* por la información que haya identificado:
 

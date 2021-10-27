@@ -3,7 +3,6 @@ title: Conexión de API de Microsoft Defender para endpoint a Power BI
 ms.reviewer: ''
 description: Cree un informe de Power Business Intelligence (BI) sobre las API de Microsoft Defender para endpoints.
 keywords: apis, api admitidas, Power BI, informes
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3e8c9918856b1b84dd5d0795f69b40e9aaf98226
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 738256199ea784109e74b21efc0029f77d1e85eb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192048"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587746"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Crear informes personalizados mediante Power BI
 

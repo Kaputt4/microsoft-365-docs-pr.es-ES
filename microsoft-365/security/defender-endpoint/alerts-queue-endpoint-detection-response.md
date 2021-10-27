@@ -3,8 +3,6 @@ title: Cola de alertas en Microsoft 365 Defender
 ms.reviewer: ''
 description: Ver y administrar las alertas que se han presentado en Microsoft 365 Defender
 keywords: ''
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: 60e4b251ad14824f22cb7dbe0a27f0dfc48afe58
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5464a6eebb12b6b5351fdadd5fd55f653bb0f05f
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150299"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587974"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Cola de alertas en Microsoft 365 Defender
 

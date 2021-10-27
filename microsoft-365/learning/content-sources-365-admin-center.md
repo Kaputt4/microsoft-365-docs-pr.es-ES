@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: ''
 description: Obtenga información sobre cómo configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 82b26e01928bf62c443545a045c64ae585fddcb3
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: f0c49521012cdadf827682dde9377880b661825f
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478757"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586178"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurar orígenes de contenido de aprendizaje para Aprendizaje Microsoft Viva (versión preliminar) en el Centro de administración de Microsoft 365
 
@@ -93,11 +93,11 @@ Entre todos los orígenes de aprendizaje que existen, algunos se habilitarán de
 
 > [!NOTE]
 > El contenido gratuito de LinkedIn se proporciona a los usuarios en virtud de las directivas de privacidad y el contrato de usuario de LinkedIn. LinkedIn recibirá la dirección IP del usuario, las cookies establecidas anteriormente por LinkedIn y establecerá una nueva cookie para realizar un seguimiento del uso del contenido gratuito. No es necesario que los usuarios inicien sesión con LinkedIn para recibir contenido gratuito.<br><br>
-Para el contenido premium de LinkedIn, su organización necesita una suscripción para que su equipo pueda acceder a ese contenido. Los usuarios tendrán que iniciar sesión en LinkedIn para obtener acceso a ese aprendizaje, que se proporciona en los términos de los términos de usuario y de su organización con LinkedIn.<br><br> Para contenido que no sea de Microsoft (excepto contenido gratuito de LinkedIn), asegúrese de que su organización tiene una suscripción para que los usuarios accedan a ese contenido mediante una cuenta de trabajo antes de conectarlo a Viva Learning (versión preliminar). Las suscripciones personales de los usuarios a proveedores de aprendizaje que no son de Microsoft no se integrarán con Viva Learning (versión preliminar). Los usuarios inician sesión en aprendizajes que no son de Microsoft y LinkedIn Learning Pro en un explorador o un visor incrustado. Si los usuarios navegan a contenido donde no tienen una suscripción organizativa, es posible que vean una página de proveedor en la que podrían registrarse para una suscripción individual. Todo el aprendizaje que no es de Microsoft se proporciona bajo los términos del proveedor que no es de Microsoft y no como parte de Viva Learning. 
+Para el contenido premium de LinkedIn, su organización necesita una suscripción para que su equipo pueda acceder a ese contenido. Los usuarios tendrán que iniciar sesión en LinkedIn para obtener acceso a ese aprendizaje, que se proporciona en los términos de los términos de usuario y de su organización con LinkedIn.<br><br> Para contenido que no sea de Microsoft (excepto contenido gratuito de LinkedIn), asegúrese de que su organización tiene una suscripción para que los usuarios accedan a ese contenido mediante una cuenta de trabajo antes de conectarlo a Viva Learning (versión preliminar). Las suscripciones personales de los usuarios a proveedores de aprendizaje que no son de Microsoft no se integrarán con Viva Learning (versión preliminar). Los usuarios inician sesión en aprendizajes que no son de Microsoft y LinkedIn Learning Pro en un explorador o un visor incrustado. Si los usuarios navegan a contenido donde no tienen una suscripción organizativa, es posible que vean una página de proveedor en la que podrían registrarse para una suscripción individual. Todo el aprendizaje que no es de Microsoft se proporciona bajo los términos del proveedor que no es de Microsoft y no como parte de Viva Learning.
 
 Para habilitar o deshabilitar un origen de contenido de aprendizaje, active la casilla situada junto al origen. Si un origen está habilitado, se mostrará una marca de verificación.
 
-## <a name="third-party-content-providers"></a>Proveedores de contenido de terceros 
+## <a name="third-party-content-providers"></a>Proveedores de contenido de terceros
 
 El conjunto de proveedores de aprendizaje conectados disponibles puede cambiar en cualquier momento. Más proveedores se unirán a medida que el programa crezca. Los proveedores disponibles también pueden optar por interrumpir su conexión con Viva Learning (versión preliminar).
 
@@ -105,13 +105,13 @@ El conjunto de proveedores de aprendizaje conectados disponibles puede cambiar e
 
 Para Viva Learning (versión preliminar), los usuarios que tienen Skillsoft habilitado y deciden ver contenido de Skillsoft llegarán a una página de Percipio que les pedirá que introduzcan el nombre del sitio Percipio de la organización. Después de que los usuarios introduzcan el nombre del sitio de la organización, se les dirigirá a la página para que inicien sesión en el sitio de Percipio de la organización. Los usuarios iniciarán sesión con sus credenciales existentes y verán el contenido que seleccionaron originalmente. Se pedirá a los usuarios que introduzcan el nombre del sitio de Percipio solo una vez, hasta que se borra la memoria caché del explorador. Para simplificar esta experiencia para los usuarios, se recomienda incluir el nombre del sitio de Percipio en las comunicaciones internas que envíe sobre Viva Learning (versión preliminar).
 
-Esto está pensado para ser una experiencia temporal para la versión preliminar y estamos trabajando con Skillsoft para habilitar la integración específica del inquilino para la disponibilidad general, lo que omitirá el paso que requiere que los usuarios proporcionen el nombre del sitio Percipio de su organización. 
+Esto está pensado para ser una experiencia temporal para la versión preliminar y estamos trabajando con Skillsoft para habilitar la integración específica del inquilino para la disponibilidad general, lo que omitirá el paso que requiere que los usuarios proporcionen el nombre del sitio Percipio de su organización.
 
 ### <a name="details-on-microsoft-substrate"></a>Detalles sobre el substrato de Microsoft  
 
 En el caso de los datos que copie en Viva Learning (versión preliminar) de un servicio que no sea de Microsoft (proveedor de aprendizaje o sistema de administración de aprendizaje), no puede extraer, corregir ni eliminar directamente los datos en Viva Learning (versión preliminar). Actualizamos los datos que importa de proveedores que no son de Microsoft con prontitud para reflejar los cambios y eliminaciones en los datos de origen que no son de Microsoft.
 
-Debe trabajar con el proveedor del servicio que no es de Microsoft para obtener acceso, corregir, eliminar o extraer datos según los términos de licencia, servicio o privacidad del servicio que no sea de Microsoft. Los cambios realizados allí se reflejarán en los datos procesados para su uso en Viva Learning (versión preliminar) una vez completados los ciclos de actualización de datos del servicio que no es de Microsoft y Viva Learning (versión preliminar). Si desactiva la conexión entre Viva Learning (versión preliminar) y un servicio que no es de Microsoft, se eliminarán todos los datos que haya importado anteriormente desde ese servicio. 
+Debe trabajar con el proveedor del servicio que no es de Microsoft para obtener acceso, corregir, eliminar o extraer datos según los términos de licencia, servicio o privacidad del servicio que no sea de Microsoft. Los cambios realizados allí se reflejarán en los datos procesados para su uso en Viva Learning (versión preliminar) una vez completados los ciclos de actualización de datos del servicio que no es de Microsoft y Viva Learning (versión preliminar). Si desactiva la conexión entre Viva Learning (versión preliminar) y un servicio que no es de Microsoft, se eliminarán todos los datos que haya importado anteriormente desde ese servicio.
 
 ## <a name="next-step"></a>Paso siguiente
 

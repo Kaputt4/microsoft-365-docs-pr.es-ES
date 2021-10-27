@@ -62,6 +62,8 @@
           href: service-description/servicechanges.md
         - name: Excepciones para el plan de servicios
           href: service-description/customizing.md
+        - name: Dispositivos compartidos
+          href: service-description/shared-devices.md
     - name: Prepararse para la inscripción en el Escritorio administrado de Microsoft
       href: get-ready/index.md
       items:

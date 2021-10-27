@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: Preguntas más frecuentes sobre el Programa para el uso en el hogar de Microsoft.
   ms.date: 05/01/2021
-  ms.openlocfilehash: 1a4ce5ff55d9d5a24e83e439e838d049d29bd185
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 7fae34efdc9989f7a5e7807040c9e9457b8b4688
+  ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60156767"
+  ms.lasthandoff: 10/26/2021
+  ms.locfileid: "60586866"
 title: Programa para el uso en el hogar de Microsoft preguntas más frecuentes (PREGUNTAS FRECUENTES)
 summary: "Los clientes de licencias por volumen usan Programa para el uso en el hogar de Microsoft (HUP) en el [Microsoft Store para Empresas web](https://go.microsoft.com/fwlink/?linkid=2139192).\n\nTodos los demás clientes tienen acceso a HUP mediante este paso:\n\n- En el Centro de administración de Microsoft, vaya a la página **Facturación** de sus productos, seleccione la pestaña Beneficios  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054)y, a continuación, seleccione la **pestaña HUP.** \n"
 sections:
@@ -36,14 +36,14 @@ sections:
       El Programa para el uso en el hogar de Microsoft (HUP) permite a los empleados de las empresas elegibles comprar productos de consumidor de Microsoft con un descuento. Para comprobar los descuentos actuales de cada oferta de productos, visite la página [de productos del Programa de uso principal](https://www.microsoft.com/home-use-program).
   - question: >
       ¿En qué mercados se ofrece el Programa de uso en casa?
-    answer: "Los descuentos en Microsoft 365 Familia suscripciones personales y personales se ofrecen a las empresas elegibles de todo el mundo con estas excepciones:\n\n- Macao, Rusia y Venezuela: esta oferta no está disponible en estos mercados.\n- China y Hong Kong: una suscripción de un año está disponible en estos mercados. Para China, visite [Microsoft 365 en China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Japón: Microsoft 365 Familia no está disponible.\n- Los descuentos en dispositivos y accesorios de Surface seleccionados se ofrecen a empresas elegibles en mercados selectos. \n"
+    answer: "Los descuentos en Microsoft 365 Familia suscripciones personales y personales se ofrecen a las empresas elegibles de todo el mundo con estas excepciones:\n\n- Líbano, Macao, Rusia y Venezuela: esta oferta no está disponible en estos mercados.\n- China y Hong Kong: una suscripción de un año está disponible en estos mercados. Para China, visite [Microsoft 365 en China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Japón: Microsoft 365 Familia no está disponible.\n- Los descuentos en dispositivos y accesorios de Surface seleccionados se ofrecen a empresas elegibles en mercados selectos. \n"
   - question: >
       ¿Cómo califica una organización para los descuentos de HUP?
     answer: "Para que los empleados aprovechen el descuento Programa para el uso en el hogar de Microsoft, necesitan una dirección de correo electrónico corporativa válida y una cuenta de Microsoft activa, y su organización debe cumplir uno de los siguientes criterios:\n\n- Clientes que tienen Software Assurance activo para calificar Office aplicaciones\n- Clientes que han Microsoft 365/Microsoft 365 E3/E5 From Software Assurance\n- Clientes comerciales y gubernamentales que han comprado ≥ 2.000 licencias de una o una combinación de Microsoft 365 E3/E5\n- Clientes educativos y sin ánimo de lucro\n- Clientes comerciales y gubernamentales que han gastado 250 000 USD o más en los 12 meses anteriores en Power BI, Office, dispositivos Surface & accesorios, Windows y movilidad Enterprise \n"
   - question: >
-      ¿Por qué tengo que crear una cuenta Azure Active Directory (AAD) para usar el programa de uso principal o Microsoft Store para Empresas?
+      ¿Por qué tengo que crear una cuenta Azure Active Directory (AAD) para usar el programa de uso principal/ Microsoft Store para Empresas?
     answer: >
-      Para actualizar y modernizar el Programa de uso en casa a una gama más amplia de ventajas de licencia y producto, tuvimos que cambiar la forma en que cumplimos con HUP. Microsoft Store para Empresas se usa para la validación de elegibilidad y para asignar beneficios hup, y para ello se basa en AAD para conectar información de VLSC y validar los dominios de correo electrónico en los que están los empleados de su organización. Para obtener más información, vea [To sign up for Azure AD accounts through Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+      Para actualizar y modernizar el Programa de uso en casa a una gama más amplia de ventajas de licencia y producto, tuvimos que cambiar la forma en que cumplimos con HUP. Microsoft Store para Empresas se usa para la validación de elegibilidad y para asignar ventajas hup, y para ello se basa en AAD para conectar información de VLSC y validar los dominios de correo electrónico en los que están los empleados de su organización. Para obtener más información, vea [To sign up for Azure AD accounts through Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
   - question: >
       ¿Cómo puedo convertirme en el administrador de TI asignado de un inquilino administrado?
     answer: >

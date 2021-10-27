@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 320f2bfd06f7f01c15419f4bd6dc0eb5536079f0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: af3881a5215871b0405f2f6b42b73c248af0c00c
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176816"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586878"
 ---
 # <a name="get-machines-security-states-collection-api"></a>OBTENER API de recopilación de estados de seguridad de Máquinas
 
@@ -54,7 +55,7 @@ Encabezado|Valor
 Authorization|Portador {token}. **Necesario**.
 Tipo de contenido|application/json
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En blanco
 
@@ -66,7 +67,7 @@ Si se realiza correctamente: 200 Aceptar.
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
@@ -75,7 +76,7 @@ Content-type: application/json
 
 ### <a name="response-example"></a>Ejemplo de respuesta
 
-Aquí tiene un ejemplo de la respuesta.
+Este es un ejemplo de la respuesta:
 
 El *identificador de* campo contiene el identificador de dispositivo e igual que el identificador de *campo** en la información de dispositivos.
 

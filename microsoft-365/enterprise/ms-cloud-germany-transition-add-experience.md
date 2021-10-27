@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: actividades posteriores a la migración después de pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 234631b9169b29a557ab3b08f29dd67788575eee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 349b9aa756a67d823e95ec2d999a04b12863d0fb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201618"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586210"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Actividades posteriores a la migración de Microsoft Cloud Deutschland
 
@@ -48,12 +48,12 @@ The following table provides an overview about which endpoints will replace the 
 |||
 -->
 
-### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Autenticación federada de Azure AD con AD FS
+### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Azure AD autenticación federada con AD FS
 **Se aplica a:** Todos los clientes que usan autenticación federada con AD FS
 
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|
-| Quitar confianzas de usuario de confianza de Microsoft Cloud Deutschland AD FS. | Una vez completado el recorte a Azure AD, la organización usa completamente los servicios Office 365 y ya no está conectada a Microsoft Cloud Deutschland. En este punto, el cliente debe quitar la confianza de usuario de confianza a los puntos de conexión de Microsoft Cloud Deutschland. Esto solo se puede hacer cuando ninguna de las aplicaciones del cliente apunta a puntos de conexión de Microsoft Cloud Deutschland cuando Azure AD se aprovecha como proveedor de identidades (IdP). | Organizaciones de autenticación federada | 
+| Quitar confianzas de usuario de confianza de Microsoft Cloud Deutschland AD FS. | Una vez completado el recorte a Azure AD, la organización está usando completamente los servicios Office 365 y ya no está conectada a Microsoft Cloud Deutschland. En este punto, el cliente debe quitar la confianza de usuario de confianza a los puntos de conexión de Microsoft Cloud Deutschland. Esto solo se puede hacer cuando ninguna de las aplicaciones del cliente apunta a puntos de conexión de Microsoft Cloud Deutschland cuando Azure AD se aprovecha como proveedor de identidades (IdP). | Organizaciones de autenticación federada | 
 ||||
 
 <!--
@@ -61,11 +61,11 @@ The following table provides an overview about which endpoints will replace the 
     The following paragraph is not clear
 -->
 ### <a name="group-approvals"></a>Aprobaciones de grupo
-**Se aplica a:** Usuarios finales cuyas solicitudes de aprobación de grupo de Azure AD no se aprobaron en los últimos 30 días antes de la migración 
+**Se aplica a:** Usuarios finales cuyas Azure AD de aprobación de grupo no se aprobaron en los últimos 30 días antes de la migración 
 
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|
-| Las solicitudes para unirse a un grupo de Azure AD en los últimos 30 días antes de la migración tendrán que volver a solicitarse si la solicitud original no se aprobó. | Los clientes del usuario final tendrán que usar el panel de Access para enviar una solicitud para unirse de nuevo a un grupo de Azure AD si dichas solicitudes no se aprobaron en los últimos 30 días antes de la migración. |  Como usuario final: <ol><li>Vaya al [panel De acceso](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Busque un grupo de Azure AD para el que la aprobación de pertenencia estaba pendiente durante los 30 días antes de la migración.</li><li>Solicitar unirse de nuevo al grupo de Azure AD.</li></ol> Las solicitudes para unirse a un grupo que están activos menos de 30 días antes de la migración no se pueden aprobar, a menos que se soliciten de nuevo después de la migración. |
+| Las solicitudes para unirse a Azure AD grupo en los últimos 30 días antes de la migración tendrán que solicitarse de nuevo si la solicitud original no se aprobó. | Los clientes de usuario final tendrán que usar el panel de Access para enviar una solicitud para unirse de nuevo a un grupo de Azure AD si dichas solicitudes no se aprobaron en los últimos 30 días antes de la migración. |  Como usuario final: <ol><li>Vaya al [panel De acceso](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Busque un grupo Azure AD para el que la aprobación de pertenencia estaba pendiente durante los 30 días antes de la migración.</li><li>Solicitar unirse al grupo Azure AD nuevo.</li></ol> Las solicitudes para unirse a un grupo que están activos menos de 30 días antes de la migración no se pueden aprobar, a menos que se soliciten de nuevo después de la migración. |
 ||||
 
 ## <a name="custom-dns-updates"></a>Actualizaciones dns personalizadas
@@ -75,7 +75,9 @@ The following table provides an overview about which endpoints will replace the 
 |:------|:-------|:-------|
 | Actualice los servicios DNS locales para los Office 365 de servicios locales. | Las entradas DNS administradas por el cliente que apuntan a Microsoft Cloud Deutschland deben actualizarse para que apunten a los puntos de conexión Office 365 servicios globales. Consulte Dominios [en el Centro de administración de Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/Domains) y aplique los cambios en la configuración de DNS. | Si no lo hace, puede producirse un error en el servicio o en clientes de software. |
 ||||
-
+   > [!NOTE]
+   > El Centro de administración de Microsoft 365 indicará a los clientes en transición que aprovisionen registros de intercambio de correo (MX) para nuevos dominios en la zona outlook.de correo. Ejemplo: consoto-com.mail.protection.outlook.de. Para los nuevos dominios, el valor esperado/correcto al que apuntar el registro MX personalizado está en la zona outlook.com búsqueda. Con el mismo ejemplo, la entrada correcta es consoto-com.mail.protection.outlook.com. Hay una corrección en curso para corregir este comportamiento para dominios de organizaciones en transición.
+   
 ## <a name="third-party-services"></a>Servicios de terceros
 **Se aplica a:** Clientes que usan servicios de terceros para Office 365 de servicios
 

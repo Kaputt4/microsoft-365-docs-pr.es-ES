@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 50077baad1bb028e9686cf29105ec2c05eb25024
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: b2bf0bd7f1d20e65921a3d5ee503152b3d3940fb
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264785"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60586998"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidor de la solución anterior de Microsoft Defender para endpoint basada en MMA
 
@@ -104,6 +104,14 @@ SUGERENCIA: puede usar el [script del instalador](server-migration.md#installer 
 
 *Estos pasos solo se aplican si desea reemplazar la solución antivirus que no es de Microsoft. Vea [Better together: Antivirus de Microsoft Defender y Microsoft Defender para Endpoint](why-use-microsoft-defender-antivirus.md).
 
+
+Para sacar una máquina del modo pasivo, establezca la siguiente clave en 0: 
+
+Ruta de acceso: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD Value: 0
+
+Para obtener más información, vea [Need to set Antivirus de Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+
+
 ## <a name="other-migration-scenarios"></a>Otros escenarios de migración 
 
 ### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-azure-defender-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>Tiene un servidor que se ha incorporado con Microsoft Defender para endpoint basado en MMA. Tiene SCEP instalado (Windows Server 2012 R2) o Antivirus de Microsoft Defender (Windows Server 2016). Esta máquina no **se administra** a través de Azure Defender, Microsoft Endpoint Manager o Microsoft Endpoint Configuration Manager.
@@ -130,9 +138,16 @@ SUGERENCIA: puede usar el [script del instalador](server-migration.md#installer 
 6. Cree y aplique directivas con la directiva de grupo, PowerShell o una solución de administración de terceros.
 
 > [!TIP]
-> Puede usar el [script del instalador para](server-migration.md#installer-script) ayudar a automatizar los pasos del 1 al 4. Para habilitar el modo pasivo, aplique la marca -Passive. EJEMPLO: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
+> Puede usar el [script del instalador para](server-migration.md#installer-script) ayudar a automatizar los pasos del 1 al 4. Para habilitar el modo pasivo, aplica la marca -Passive que garantizará que Defender entre en modo pasivo antes de la incorporación y no interfiera con una solución antimalware que no sea de Microsoft. A continuación, para asegurarse de que Defender Antivirus permanece en modo pasivo después de la incorporación para admitir EDR funcionalidades como EDR Block, asegúrese de establecer la clave del Registro "ForceDefenderPassiveMode". EJEMPLO: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` Para obtener más información, vea Need to set Antivirus de Microsoft Defender to passive [mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 *Este paso solo se aplica si desea reemplazar la solución antivirus que no es de Microsoft. Se recomienda usar Antivirus de Microsoft Defender, incluido en Microsoft Defender para endpoint, para proporcionar el conjunto completo de funcionalidades. Vea [Better together: Antivirus de Microsoft Defender y Microsoft Defender para Endpoint](why-use-microsoft-defender-antivirus.md). 
+
+
+Para sacar una máquina del modo pasivo, establezca la siguiente clave en 0: 
+
+Ruta de acceso: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD Value: 0
+
+Para obtener más información, vea [Need to set Antivirus de Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 ## <a name="azure-defender-scenarios"></a>Escenarios de Azure Defender
 

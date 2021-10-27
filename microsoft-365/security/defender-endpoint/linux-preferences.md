@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 72f8b5e32f02ccef028e6d1bccb7bec942ce5d48
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c8a51358d18edaf4bab680d2c63268638eca3283
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556333"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60585996"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -66,7 +66,7 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 
 #### <a name="enable--disable-real-time-protection"></a>Habilitar o deshabilitar la protección en tiempo real
 
-Determina si la protección en tiempo real (examinar archivos a medida que se accede a ellos) está habilitada o no.
+Determina si la protección en tiempo real (archivos de examen a medida que se accede a ellos) está habilitada.
 
 <br>
 
@@ -100,6 +100,22 @@ Determina si el motor antivirus se ejecuta en modo pasivo o no. En modo pasivo:
 |**Posibles valores**|false (predeterminado) <p> true|
 |**Comments**|Disponible en Defender para endpoint versión 100.67.60 o posterior.|
 |
+
+
+#### <a name="enabledisable-behavior-monitoring"></a>Habilitar o deshabilitar la supervisión del comportamiento 
+
+Determina si la funcionalidad de bloqueo y supervisión de comportamiento está habilitada en el dispositivo o no.Para mejorar la eficacia de la protección de seguridad, se recomienda mantener activada esta característica.
+
+<br>
+
+****
+
+|Descripción|Valor|
+|---|---|
+|**Clave**|name|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|deshabilitado <p> habilitado (predeterminado)|
+|**Comments**|Disponible en Defender para endpoint versión 101.45.00 o posterior.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecutar un examen después de actualizar las definiciones
 
@@ -480,12 +496,14 @@ El siguiente perfil de configuración será:
 - Habilitar actualizaciones automáticas de inteligencia de seguridad
 - Habilitar la protección proporcionada en la nube
 - Habilitar el envío automático de muestra en `safe` el nivel
+- Habilitar la supervisión del comportamiento
 
 ### <a name="sample-profile"></a>Perfil de ejemplo
 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "threatTypeSettings":[
          {
@@ -516,6 +534,7 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,

@@ -16,14 +16,17 @@ ms.collection:
 localization_priority: medium
 description: Obtenga información sobre cómo configurar otros proveedores como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 006b3e6690df253f80bc8e47d93264b9bf19ea0f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1a638131b9bf8cca41f7ee8575e472885929d3c8
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557274"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588010"
 ---
 # <a name="add-other-content-providers-for-microsoft-viva-learning"></a>Agregar otros proveedores de contenido para Aprendizaje Microsoft Viva
+
+>[!NOTE]
+>Esta característica no se admite en la vista previa.
 
 Un conjunto creciente de proveedores de contenido de aprendizaje y sistemas de administración de aprendizaje están disponibles a través de Viva Learning. Este conjunto puede cambiar en cualquier momento a medida que más proveedores se unan o cambien su estado con el programa.
 

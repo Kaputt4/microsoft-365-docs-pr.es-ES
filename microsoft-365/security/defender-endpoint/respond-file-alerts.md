@@ -2,8 +2,6 @@
 title: Realizar acciones de respuesta en un archivo de Microsoft Defender para endpoint
 description: Lleve a cabo acciones de respuesta en alertas relacionadas con archivos al detener y anular un archivo o bloquear un archivo y comprobar los detalles de la actividad.
 keywords: responder, detener y poner en cuarentena, bloquear archivo, análisis profundo
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 816e08c4c6ba3b2a50c981401163531d2b5d63c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6fad903cc5e5839afea6f87f06a7435cadf0eb66
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198170"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587558"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -72,13 +70,13 @@ Puede contener un ataque en su organización al detener el proceso malintenciona
 > [!IMPORTANT]
 > Solo puede realizar esta acción si:
 >
-> - El dispositivo en el que estás llevando a Windows 10, versión 1703 o posterior
+> - El dispositivo en el que estás llevando a Windows 10, versión 1703 o posterior y Windows 11
 > - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
 > - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 La **acción Detener y poner en** cuarentena archivo incluye la detención de procesos en ejecución, la cuarentena de los archivos y la eliminación de datos persistentes, como las claves del Registro.
 
-Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o posterior, donde se observó el archivo en los últimos 30 días.
+Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o posterior y Windows 11, donde se observó el archivo en los últimos 30 días.
 
 > [!NOTE]
 > Podrás restaurar el archivo desde la cuarentena en cualquier momento.
@@ -175,7 +173,7 @@ Esta característica no funcionará si el envío de ejemplo está desactivado. S
 > - La versión del motor antivirus es 1.1.17300.4 o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - La protección basada en la nube está habilitada. Consulte [Activar la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - El envío de ejemplo está activado
-> - Los dispositivos Windows 10 versión 1703 o posterior, o Windows server 2016 o 2019, o Windows Server 2022
+> - Los dispositivos Windows 10 versión 1703 o posterior, o Windows server 2016 o 2019, o Windows Server 2022 o Windows 11
 
 ### <a name="collect-files"></a>Recopilar archivos
 
@@ -193,7 +191,7 @@ Impedir la propagación posterior de un ataque en la organización mediante la p
 >
 > - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior.
 > - Esta característica está diseñada para evitar que el malware sospechoso (o los archivos potencialmente malintencionados) se descarguen de la web. Actualmente es compatible con archivos ejecutables portátiles (PE), incluidos _.exe_ archivos _.dll_ archivos. La cobertura se extenderá con el tiempo.
-> - Esta acción de respuesta está disponible para dispositivos Windows 10 versión 1703 o posterior.
+> - Esta acción de respuesta está disponible para dispositivos Windows 10, versión 1703 o posterior y Windows 11.
 > - La función permitir o bloquear no se puede realizar en archivos si la clasificación del archivo existe en la memoria caché del dispositivo antes de la acción permitir o bloquear.
 
 > [!NOTE]
@@ -256,9 +254,9 @@ Use la característica de análisis profundo para investigar los detalles de cua
 **Enviar** para análisis profundo está habilitado cuando el archivo está disponible en la colección de muestras back-end de Defender for Endpoint, o si se observó en un dispositivo Windows 10 que admite el envío a un análisis profundo.
 
 > [!NOTE]
-> Solo los archivos Windows 10 pueden recopilarse automáticamente.
+> Solo los archivos Windows 10 y Windows 11 se pueden recopilar automáticamente.
 
-También puedes enviar un ejemplo a través del Portal del Centro de seguridad de [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si  el archivo no se observó en un dispositivo Windows 10 y esperar a que el botón Enviar para análisis profundo esté disponible.
+También puedes enviar un ejemplo a través del Portal del Centro de seguridad de [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si el archivo no se  observó en un dispositivo Windows 10 (o Windows 11) y esperar a que el botón Enviar para análisis profundo esté disponible.
 
 > [!NOTE]
 > Debido a los flujos de procesamiento back-end en el Portal del Centro de seguridad de Microsoft, podría haber hasta 10 minutos de latencia entre el envío de archivos y la disponibilidad de la característica de análisis profundo en Defender para endpoint.
@@ -281,7 +279,7 @@ También puedes enviar un ejemplo a través del Portal del Centro de seguridad d
    Se muestra una barra de progreso y proporciona información sobre las distintas etapas del análisis. A continuación, puede ver el informe cuando se haya realizado el análisis.
 
 > [!NOTE]
-> Según la disponibilidad del dispositivo, el tiempo de recolección de muestras puede variar. Hay un tiempo de espera de 3 horas para la colección de muestras. La colección producirá un error y la operación se anulará si no hay informes de dispositivos Windows 10 en línea en ese momento. Puede volver a enviar archivos para un análisis profundo para obtener datos nuevos en el archivo.
+> Según la disponibilidad del dispositivo, el tiempo de recolección de muestras puede variar. Hay un tiempo de espera de 3 horas para la colección de muestras. La colección producirá un error y la operación se anulará si no hay informes Windows 10 dispositivo en línea (o Windows 11) en ese momento. Puede volver a enviar archivos para un análisis profundo para obtener datos nuevos en el archivo.
 
 ### <a name="view-deep-analysis-reports"></a>Ver informes de análisis profundo
 

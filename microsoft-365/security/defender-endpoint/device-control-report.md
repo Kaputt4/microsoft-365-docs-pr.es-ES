@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 952363dfa689ea20e1ca1fcd97da4a79cfa66062
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 16c899ca895e73f51bc0d72f20e008f367cfe731
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212999"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588357"
 ---
-# <a name="protect-your-organizations-data-with-device-control"></a>Proteger los datos de la organización con el control de dispositivos
+# <a name="device-control-report"></a>Informe de control de dispositivos
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
@@ -41,6 +41,7 @@ Los eventos de auditoría incluyen:
 
 - **Montaje y desmontaje de la unidad USB:** Audite los eventos que se generan cuando se monta o desmonta una unidad USB.
 - **PnP:** Los eventos de auditoría plug and play se generan cuando se conecta un almacenamiento extraíble, una impresora o Bluetooth multimedia.
+- **Control de acceso de almacenamiento extraíble:** Los eventos se generan cuando se desencadena una directiva de control de acceso de almacenamiento extraíble. Puede ser Auditar, Bloquear o Permitir.
 
 ## <a name="monitor-device-control-security"></a>Supervisar la seguridad del control de dispositivos
 
@@ -49,7 +50,7 @@ El control de dispositivos en Microsoft Defender para endpoint habilita a los ad
 La tarjeta de protección de dispositivos del panel **Informes** muestra el número de eventos de auditoría generados por tipo de medio en los últimos 180 días.
 
 > [!div class="mx-imgBorder"]
-> ![DeviceControlReportCard](images/devicecontrolcard.png)
+> ![DeviceControlReportCard](https://user-images.githubusercontent.com/81826151/138504137-e9a7673e-e988-48cd-820d-2625ec6df352.png)
 
 El **botón Ver detalles** muestra más datos de uso multimedia en la página del informe de control **de** dispositivos.
 
@@ -60,9 +61,9 @@ La página proporciona un panel con un número agregado de eventos por tipo y un
 
 Al seleccionar un evento, aparece un flyout que muestra más información:
 
-- **Detalles generales:** Fecha, modo acción y directiva de este evento.
-- **Información multimedia:** La información multimedia incluye Nombre de medios, Nombre de clase, GUID de clase, Id. de dispositivo, Id. de proveedor, Volumen, Número de serie y Tipo de bus.
-- **Detalles de ubicación:** Nombre del dispositivo e id. de dispositivo MDATP.
+- **Detalles generales:** Fecha, modo acción, directiva y Acceso de este evento.
+- **Información multimedia:** La información multimedia incluye nombre multimedia, nombre de clase, GUID de clase, id. de dispositivo, id. de proveedor, número de serie y tipo bus.
+- **Detalles de ubicación:** Nombre del dispositivo, Usuario e Id. de dispositivo MDATP.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

@@ -2,7 +2,6 @@
 title: Visite el Centro de acciones para ver acciones de corrección
 description: Usar el centro de acción para ver detalles y resultados después de una investigación automatizada
 keywords: acción, centro, autoir, automatizado, investigación, respuesta, corrección
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +18,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: ce55054e921d3c97133dc1cdf3660e32f6b73d92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b359ee1905081396f382bf762f2c74e89acf5dd
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163149"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587830"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver acciones de corrección
 

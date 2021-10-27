@@ -2,7 +2,7 @@
 title: Microsoft Defender para endpoint en Mac
 ms.reviewer: ''
 description: Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Mac.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, big sur, catalina, mojave, mde para mac
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, monterey, big sur, catalina, mojave, mde para mac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4fe0d1b073a2efb14b8b771a2786889cbaa8e892
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3943c5c9e477dc114b74d7f3f9a76b5b00119dd6
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149891"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587734"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -75,12 +75,9 @@ Existen varios métodos y herramientas de implementación que puedes usar para i
 Se admiten las tres versiones principales más recientes de macOS.
 
 > [!IMPORTANT]
-> En macOS 11 (Big Sur), Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en Nuevos perfiles de configuración para [macOS Catalina](mac-sysext-policies.md)y versiones más recientes de macOS .
+> En macOS 11 (Big Sur) y posteriores, Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en Nuevos perfiles de configuración para [macOS Catalina](mac-sysext-policies.md)y versiones más recientes de macOS .
 
-> [!IMPORTANT]
-> La compatibilidad con macOS 10.13 (High Sierra) se ha interrumpido a partir del 15 de febrero de 2021.
-
-- 11 (Big Sur), 10,15 (Catalina), 10,14 (Mojave)
+- 12 (Monterrey), 11 (Big Sur), 10,15 (Catalina), 10,14 (Mojave)
 - Espacio en disco: 1 GB
 
 No se admiten versiones beta de macOS.

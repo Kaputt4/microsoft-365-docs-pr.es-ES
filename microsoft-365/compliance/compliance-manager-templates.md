@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: dd9f2b2f673164bce7f05f7e390b13012247c362
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 74b896f6c0fdd625cf50cc04a31fa79d48dc3a4e
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335991"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587686"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Obtenga información sobre las plantillas de evaluación en el Administrador de cumplimiento
 
@@ -89,8 +89,6 @@ Las plantillas mostrarán un estado de activación como activo o inactivo:
 - Una plantilla se considera **inactiva** si su organización no la usa para una evaluación.
 
 Si vinculas cualquier evaluación a una plantilla premium comprada, esa plantilla estará activa durante un año. La compra se renovará automáticamente a menos que canceles.
-
-También puede probar plantillas premium en una versión de prueba. Las licencias de prueba son válidas para un máximo de 25 plantillas durante 30 días. Una vez que comience la prueba, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas. Las pruebas se pueden activar a través <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">del Centro de administración de Microsoft 365</a>.
 
 #### <a name="activated-templates-counter"></a>Contador de plantillas activadas
 
