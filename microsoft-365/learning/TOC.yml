@@ -10,7 +10,11 @@
   items:
     - name: Configuración en el Centro de administración de Teams
       href: set-up-teams-admin-center.md
-    - name: Configuración de orígenes de contenido de aprendizaje
-      href: content-sources-365-admin-center.md
-    - name: Configurar SharePoint como origen de contenido
-      href: configure-sharepoint-content-source.md
+    - name: Administración de orígenes de contenido de aprendizaje
+      items:
+        - name: Información general
+          href: content-sources-365-admin-center.md
+        - name: Configurar SharePoint como origen de contenido
+          href: configure-sharepoint-content-source.md
+        - name: Agregar otros proveedores
+          href: configure-other-content-sources.md

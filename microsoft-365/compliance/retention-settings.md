@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 63437f64fe746b2cd664aab75ec42d2b544f9b9c
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 7b5a6566f9e30d0510dad208ba0dbee503a1e2aa
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60434504"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60587998"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -190,7 +190,7 @@ Para usar la configuración opcional para definir el ámbito de la configuració
 
 ## <a name="locations"></a>Ubicaciones
 
-Las ubicaciones en las directivas de retención identifican servicios Microsoft 365 específicos que admiten la configuración de retención, tales como el correo electrónico de Exchange y sitios de SharePoint.
+Las ubicaciones en las directivas de retención identifican servicios Microsoft 365 específicos que admiten la configuración de retención, tales como el correo electrónico de Exchange y sitios de SharePoint. Use la siguiente sección para las ubicaciones que tienen detalles de configuración y posibles excepciones que debe tener en cuenta al seleccionarlas para la directiva.
 
 ### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Información de configuración para el correo electrónico de Exchange y las carpetas públicas de Exchange
 
@@ -216,7 +216,7 @@ Al configurar una directiva de aplicación automática que usa tipos de informac
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Información de configuración para los sitios de SharePoint y las cuentas de OneDrive
 
-Cuando elige la ubicación de los **sitios de SharePoint**, la directiva de retención puede conservar y eliminar documentos en los sitios de comunicación de SharePoint, en los sitios de equipo no conectados mediante grupos de Microsoft 365 y en los sitios clásicos. Los sitios de equipos conectados por grupos de Microsoft 365 no son compatibles con esta opción. En su lugar, use la ubicación de **Grupos de Microsoft 365** que corresponda con el contenido del buzón, el sitio y los archivos del grupo.
+Cuando elige la ubicación de los **sitios de SharePoint**, la directiva de retención puede conservar y eliminar documentos en los sitios de comunicación de SharePoint, en los sitios de equipo no conectados mediante grupos de Microsoft 365 y en los sitios clásicos. A menos que use [ámbitos de directiva adaptables](#exceptions-for-adaptive-policy-scopes), los sitios de equipo conectados por grupos de Microsoft 365 no son compatibles con esta opción y, en su lugar, use la ubicación **Grupos de Microsoft 365** que se corresponda con el contenido del buzón, el sitio y los archivos del grupo.
 
 Para obtener información detallada sobre lo que se incluye y excluye al configurar las opciones de retención para SharePoint y OneDrive, consulte [¿Qué se incluye para la retención y eliminación?](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion) 
 
@@ -230,6 +230,12 @@ Para especificar cuentas individuales de OneDrive, vea [Obtener una lista de las
 > Además, la URL de OneDrive cambiará [automáticamente](/onedrive/upn-changes) si hay un cambio en el UPN del usuario. Por ejemplo, un evento por el que se cambian los apellidos, como el matrimonio. O un cambio de nombre de dominio para admitir el cambio de nombre o la reestructuración empresarial de una organización. Si el UPN cambia, deberá actualizar las direcciones URL de OneDrive que se especifiquen para la configuración de retención.
 > 
 > Debido al reto que supone especificar de forma confiable direcciones URL para que los usuarios individuales se incluyan o excluyan en ámbitos estáticos, los [ámbitos adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention) con el tipo de ámbito **Usuario** son más adecuados para este propósito.
+
+#### <a name="exceptions-for-adaptive-policy-scopes"></a>Excepciones para ámbitos de directivas adaptables
+
+Al configurar una directiva de retención que use ámbitos de directiva adaptables y seleccione la ubicación de **sitios SharePoint**:
+
+- Se incluyen sitios OneDrive y grupo de Microsoft 365 conectado además de los sitios de comunicación de SharePoint, los sitios de grupo que no están conectados por grupos de Microsoft 365 y sitios clásicos.
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los Grupos de Microsoft 365
 
@@ -254,6 +260,16 @@ Para volver al valor predeterminado del buzón y del sitio de SharePoint para lo
 Al configurar una directiva de aplicación automática que usa tipos de información confidencial y seleccionar la ubicación **Grupos de Microsoft 365**:
 
 - No se incluyen los buzones de grupo de Microsoft 365. Para incluir estos buzones en la directiva, seleccione la ubicación de **Correo electrónico de Exchange**.
+
+#### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Qué sucede si un grupo de Microsoft 365 se elimina después de aplicar una directiva
+
+Después de aplicar una directiva de retención a un grupo de Microsoft 365 y, a continuación, dicho grupo se elimina de Azure Active Directory:
+
+- El sitio de grupo de SharePoint conectado se conserva y continúa siendo administrado por la directiva de retención con la ubicación **Grupos de Microsoft 365**. El sitio sigue siendo accesible para las personas que tenían acceso a él antes de eliminar el grupo y los nuevos permisos ahora deben administrarse a través de SharePoint.
+    
+    En este momento, no puede excluir el sitio de la ubicación Grupos de Microsoft 365, ya que no puede especificar el grupo eliminado. Si necesita liberar la directiva de retención de este sitio, póngase en contacto con el Soporte técnico de Microsoft. Por ejemplo, abra una [solicitud de servicio en el Centro de Administración de Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/support).
+
+- El buzón del grupo eliminado se vuelve inactivo y, al igual que el sitio de SharePoint, permanece sujeto a la configuración de retención. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md).
 
 ### <a name="configuration-information-for-skype-for-business"></a>Información de configuración de Skype Empresarial
 
