@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Investigar las alertas de detección de anomalías.
-ms.openlocfilehash: bc82c0a8145b783ea914dd7eec32f3a5f7c6d05e
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: d3876900e1dfa26e80550e699dd00d6034d8e6d7
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268879"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588118"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Investigar las alertas de detección de anomalías
 
@@ -31,15 +31,15 @@ Para facilitar la relación entre las alertas de gobernanza de aplicaciones y la
 
 Esta guía proporciona información sobre cómo investigar y solucionar las alertas de gobernanza de aplicaciones en las siguientes categorías.
 
-- Acceso inicial
+- [Acceso inicial](#initial-access-alerts)
 - Ejecución
-- Persistencia
+- [Persistencia](#persistence-alerts)
 - Elevación de privilegios
 - Evasión de defensa
 - Acceso a credenciales
-- Descubrimiento
+- [Descubrimiento](#discovery-alerts)
 - Movimiento lateral
-- Colección
+- [Colección](#collection-alerts)
 - Filtración
 - Impacto
 
@@ -344,6 +344,29 @@ Esta detección identifica una aplicación de OAuth detectada por el modelo de a
 1. Revise toda la actividad realizada por esta aplicación.
 1. Revise los alcances otorgados por la aplicación.
 1. Revise la actividad de usuario asociada a esta aplicación.
+
+### <a name="suspicious-enumeration-activities-performed-using-aad-powershell"></a>Actividades de enumeración sospechosas realizadas con AAD de PowerShell
+
+**Gravedad**: media
+
+**ID. DE MITRE**: T1087
+
+Esta detección identifica un gran volumen de actividades de enumeración sospechosas realizadas en un corto período de tiempo a través de una aplicación AAD de PowerShell.
+
+**¿TP o FP?**
+
+- **TP**: si puede confirmar que la aplicación ADD de PowerShell realizó actividades de enumeración sospechosas o inusuales.
+
+  **Acción recomendada**: deshabilitar y quitar la aplicación y restablecer la contraseña.
+
+- **FP**: si se confirma que la aplicación no ha realizado ninguna actividad inusual.
+
+  **Acción recomendada**: descartar la alerta.
+
+**Comprender el alcance de la infracción**
+
+1. Revise toda la actividad realizada por esta aplicación.
+1. Revise la actividad del usuario asociada a esta aplicación.
 
 ## <a name="collection-alerts"></a>Alertas de recopilación
 
