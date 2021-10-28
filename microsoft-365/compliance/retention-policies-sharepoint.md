@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: 9e70ecd26eabad62e93901d0c6a296c068717b73
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ecdb81e5dcb6507a3ef929dce04bfd9aee8d93af
+ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197502"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60588250"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -108,7 +108,7 @@ Cuando los ajustes de retención son sólo de retención o sólo de borrado, las
 
 ## <a name="how-retention-works-for-onenote-content"></a>Cómo funciona la retención para el contenido de OneNote
 
-Cuando aplica una directiva de retención a una ubicación que incluye contenido de OneNote, las distintas secciones de OneNote son a nivel de software archivos individuales. Esto significa que cada sección se retendrá y eliminará de forma individual, según la configuración de retención que especifique.
+Cuando se aplica una directiva de retención a una ubicación que incluye contenido de OneNote, o una etiqueta de retención a una carpeta de OneNote, en segundo plano, las distintas secciones de OneNote son archivos individuales que heredarán la configuración de retención. Esto significa que cada sección se retendrá y eliminará de forma individual, según la configuración de retención que especifique.
 
 ## <a name="how-retention-works-with-document-versions"></a>Funcionamiento de una directiva de retención con versiones de documentos
 
