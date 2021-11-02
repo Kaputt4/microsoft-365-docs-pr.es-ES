@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que se ejecuta en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 09bc5959550a21b27298ea2fb2e0857bcd598381
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: c77c0f13de9d214da4cd6107d1346aa36be1fa25
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364716"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646356"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos parcialmente indizados en eDiscovery
 
@@ -116,9 +116,8 @@ Como solución alternativa a esta limitación, se recomienda el siguiente proced
 3. Cree y ejecute una segunda búsqueda que use la misma consulta de búsqueda (y busque las mismas ubicaciones) que usó en el paso 1. Anexe la siguiente cláusula a la consulta original mediante el **operador AND:**
 
    ```text
-   ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND Date:date1…date2))
+   <original query> AND ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND sent:date1..date2)
    ```
-  
    Al agregar esta cláusula, se devolverán elementos parcialmente indizados que coinciden con la consulta de búsqueda original y que se encuentran dentro de un intervalo de fechas específico. <sup>2</sup>
 
 4. Exporte los resultados de la búsqueda desde el paso 3 y, en esta ocasión, incluya elementos parcialmente indizados en la exportación. Para ello, seleccionaría la opción Exportar todos los **elementos, incluidos** los que tienen formato no reconocido, o que no se indizaron por otros motivos.
@@ -168,6 +167,6 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 
 - Si crea una retención basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos parcialmente indizados se colocan en espera. Esto incluye elementos parcialmente indizados que no coinciden con los criterios de consulta de búsqueda para la retención. Para obtener más información acerca de cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Create an eDiscovery hold](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Investigar elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

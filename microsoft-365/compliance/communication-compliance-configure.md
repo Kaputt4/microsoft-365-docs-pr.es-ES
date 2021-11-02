@@ -20,16 +20,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9b1fd596988498a543778b097b2a8a431a200aba
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: c58df514c136c6df2db5d1392a57db1ee6c34bb3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335759"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647443"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
-Use directivas de cumplimiento de comunicaciones para identificar las comunicaciones de los usuarios para su examen por revisores internos o externos. Para obtener más información acerca de cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a supervisar las comunicaciones en su organización, vea directivas de cumplimiento de comunicaciones [en Microsoft 365](communication-compliance.md). Si desea revisar cómo Contoso configuró rápidamente una directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo en las comunicaciones de Microsoft Teams, Exchange Online y Yammer, consulte este caso práctico [.](communication-compliance-case-study.md)
+Use directivas de cumplimiento de comunicaciones para identificar las comunicaciones de los usuarios para su examen por revisores internos o externos. Para obtener más información acerca de cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a supervisar las comunicaciones en su organización, vea directivas de cumplimiento de comunicaciones [en Microsoft 365](communication-compliance.md). Si desea revisar cómo Contoso configuró rápidamente una directiva de cumplimiento de comunicaciones para supervisar el contenido inadecuado en las comunicaciones de Microsoft Teams, Exchange Online y Yammer, consulte este caso práctico [.](communication-compliance-case-study.md)
 
 ## <a name="subscriptions-and-licensing"></a>Suscripciones y licencias
 
@@ -54,6 +54,16 @@ Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben
 > Cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas o adicionales características de cumplimiento.
 
 Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar el cumplimiento de las comunicaciones, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) [a](https://www.microsoft.com/microsoft-365/enterprise) la suscripción existente o registrarse para una prueba de Office 365 Enterprise E5.
+
+## <a name="recommended-actions-preview"></a>Acciones recomendadas (versión preliminar)
+
+Las acciones recomendadas pueden ayudar a su organización a sacar el máximo partido de las capacidades de cumplimiento de comunicaciones y sus directivas existentes. En la página **Información** general, las acciones recomendadas proporcionan información y resumen tipos de información confidencial y actividades de contenido inapropiadas en las comunicaciones de la organización.
+
+![Acciones recomendadas de cumplimiento de comunicaciones.](../media/communication-compliance-recommended-actions.png)
+
+La actividad en los mensajes que contienen contenido inadecuado se enumera por tipo de clasificador de las directivas existentes que usan la plantilla de contenido inadecuado o directivas personalizadas que usan clasificadores para contenido inadecuado. Investigue las alertas de estos mensajes en el panel de alertas de las directivas.
+
+La actividad relacionada con tipos de información confidencial se detecta en los mensajes que se tratan en las directivas existentes y en los mensajes que no están cubiertos por directivas existentes. Ideas se proporcionan para todos los tipos de información confidencial, incluidos los que su organización no ha definido previamente en una directiva de cumplimiento de comunicaciones existente. Use estas perspectivas para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Paso 1 (obligatorio): Habilitar permisos para el cumplimiento de comunicaciones
 
@@ -118,6 +128,8 @@ Para obtener más información acerca de los grupos de roles y los permisos, vea
 
 El Cumplimiento de comunicaciones requiere registros de auditoría para mostrar alertas y realizar un seguimiento de las acciones de corrección realizadas por los revisores. Los registros de auditoría son un resumen de todas las actividades asociadas con una directiva organizativa definida o en cualquier momento en que se realicen cambios en la directiva de cumplimiento de comunicaciones.
 
+La auditoría está habilitada para Microsoft 365 organizaciones de forma predeterminada. Algunas organizaciones pueden haber deshabilitado la auditoría por motivos específicos. Si la auditoría está deshabilitada para la organización, puede deberse a que otro administrador la ha desactivado. Se recomienda confirmar que está bien volver a activar la auditoría al completar este paso.
+
 Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Paso 3 (opcional): Configurar grupos para el cumplimiento de las comunicaciones
@@ -180,8 +192,11 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Paso 5 (obligatorio): crear una directiva de cumplimiento de comunicaciones
 
-> [!IMPORTANT]
-> No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [Microsoft 365 de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
+>[!IMPORTANT]
+>No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [Microsoft 365 de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
+
+>[!TIP]  
+>¿Desea ver un tutorial detallado sobre cómo configurar una nueva directiva de cumplimiento de comunicaciones y corregir una alerta? Consulte este vídeo de [15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) minutos para ver una demostración de cómo las directivas de cumplimiento de comunicación pueden ayudarle a detectar mensajes inapropiados, investigar posibles infracciones y corregir problemas de cumplimiento.
 
 1. Inicie sesión <https://compliance.microsoft.com> con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
@@ -277,7 +292,7 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta está correctamente resuelta.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de completar estos pasos para crear la primera directiva de cumplimiento de comunicaciones, empezará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 5 de este artículo.
 

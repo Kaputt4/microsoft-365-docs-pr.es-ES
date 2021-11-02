@@ -1,6 +1,6 @@
 ---
-title: 'Caso práctico: Contoso configura rápidamente una directiva de idioma ofensivo para Microsoft Teams, Exchange y Yammer comunicaciones'
-description: Un caso práctico para Contoso y cómo configurar rápidamente una directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo en Microsoft Teams, Exchange Online y Yammer comunicaciones.
+title: 'Caso práctico: Contoso configura rápidamente una directiva de contenido inadecuado para Microsoft Teams, Exchange y Yammer comunicaciones'
+description: Un caso práctico para Contoso y cómo configuran rápidamente una directiva de cumplimiento de comunicaciones para supervisar el contenido inadecuado en Microsoft Teams, Exchange Online y Yammer comunicaciones.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -20,20 +20,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4085804b6d782a177f4a036421afa9460f3c0354
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff326544d2485fa3ca7385f9ad8b924514aec1a5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179408"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647563"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de idioma ofensivo para Microsoft Teams, Exchange y Yammer comunicaciones
+# <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de contenido inadecuado para Microsoft Teams, Exchange y Yammer comunicaciones
 
-El cumplimiento de las Microsoft 365 ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inapropiados en su organización. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar el correo electrónico escaneado, Microsoft Teams, Yammer o comunicaciones de terceros en su organización y realizar las acciones de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de su organización.
+El cumplimiento de las Microsoft 365 ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar en mensajes con contenido inadecuado en su organización. El contenido inadecuado puede incluir palabras profanas, amenazas, hostigamiento e imágenes inapropiadas. Las directivas personalizadas y predefinidas le permiten examinar las comunicaciones internas y externas para ver las coincidencias de directivas y que los revisores designados puedan examinarlas. Los revisores pueden investigar el correo electrónico escaneado, Microsoft Teams, Yammer o comunicaciones de terceros en su organización y realizar las acciones de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de su organización.
 
-Contoso Corporation es una organización ficticia que necesita configurar una directiva rápidamente para supervisar el lenguaje ofensivo. Han estado usando Microsoft 365 principalmente para correo electrónico, Microsoft Teams y Yammer soporte técnico para sus usuarios, pero tienen nuevos requisitos para aplicar la directiva de la empresa en torno al acoso en el lugar de trabajo. Los administradores de TI de Contoso y los especialistas en cumplimiento tienen una comprensión básica de los conceptos básicos de trabajar con Microsoft 365 y están buscando instrucciones de un extremo a otro para empezar rápidamente con el cumplimiento de las comunicaciones.
+Contoso Corporation es una organización ficticia que necesita configurar rápidamente una directiva para supervisar el contenido inadecuado. Han estado usando Microsoft 365 principalmente para correo electrónico, Microsoft Teams y Yammer soporte técnico para sus usuarios, pero tienen nuevos requisitos para aplicar la directiva de la empresa en torno al acoso en el lugar de trabajo. Los administradores de TI de Contoso y los especialistas en cumplimiento tienen una comprensión básica de los conceptos básicos de trabajar con Microsoft 365 y están buscando instrucciones de un extremo a otro para empezar rápidamente con el cumplimiento de las comunicaciones.
 
-Este caso práctico abarcará los conceptos básicos para configurar rápidamente una directiva de cumplimiento de comunicaciones para supervisar las comunicaciones y el lenguaje ofensivo. Esta guía incluye:
+En este caso práctico se tratarán los conceptos básicos para configurar rápidamente una directiva de cumplimiento de comunicaciones para supervisar las comunicaciones en busca de contenido inadecuado. Esta guía incluye:
 
 - Paso 1: planificación del cumplimiento de comunicaciones
 - Paso 2: acceso al cumplimiento de comunicaciones en Microsoft 365
@@ -42,12 +42,12 @@ Este caso práctico abarcará los conceptos básicos para configurar rápidament
 
 ## <a name="step-1-planning-for-communication-compliance"></a>Paso 1: Planeación del cumplimiento de las comunicaciones
 
-Los administradores de TI de Contoso y los especialistas en cumplimiento participaron en seminarios web en línea sobre soluciones de cumplimiento en Microsoft 365 y decidieron que las directivas de cumplimiento de comunicación les ayudarán a cumplir los requisitos de directivas corporativas actualizados para reducir el acoso en el lugar de trabajo. Al trabajar juntos, han desarrollado un plan para crear y habilitar una directiva de cumplimiento de comunicaciones que supervisará el lenguaje ofensivo de los chats enviados en Microsoft Teams, los mensajes privados y las conversaciones de la comunidad en Yammer y en los mensajes de correo electrónico enviados en Exchange Online. Su plan incluye identificar:
+Los administradores de TI de Contoso y los especialistas en cumplimiento participaron en seminarios web en línea sobre soluciones de cumplimiento en Microsoft 365 y decidieron que las directivas de cumplimiento de comunicación les ayudarán a cumplir los requisitos de directivas corporativas actualizados para reducir el acoso en el lugar de trabajo. Al trabajar juntos, han desarrollado un plan para crear y habilitar una directiva de cumplimiento de comunicaciones que supervisará el contenido inadecuado para chats enviados en Microsoft Teams, mensajes privados y conversaciones de la comunidad en Yammer y en mensajes de correo electrónico enviados en Exchange Online. Su plan incluye identificar:
 
 - Los administradores de TI que necesitan acceso a las características de cumplimiento de comunicaciones.
 - Los especialistas en cumplimiento que necesitan crear y administrar directivas de comunicación.
 - Los especialistas en cumplimiento y otros compañeros de otros departamentos (Recursos humanos, Legales, etc.) que necesitan investigar y corregir alertas de cumplimiento de comunicaciones.
-- Los usuarios que estarán en el ámbito de la directiva de lenguaje ofensivo de cumplimiento de comunicaciones.
+- Los usuarios que estarán en el ámbito de la directiva de contenido inadecuado de cumplimiento de comunicaciones.
 
 ### <a name="licensing"></a>Licencias
 
@@ -147,7 +147,7 @@ Después de seleccionar **Mostrar todo,** los administradores de TI de Contoso p
 
 ## <a name="step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy"></a>Paso 3: Configuración de requisitos previos y creación de una directiva de cumplimiento de comunicaciones
 
-Para empezar con una directiva de cumplimiento de comunicaciones, hay varios requisitos previos que los administradores de TI de Contoso necesitan establecer antes de configurar la nueva directiva para supervisar el lenguaje ofensivo. Una vez completados estos requisitos previos, los administradores de TI de Contoso y los especialistas de cumplimiento pueden configurar la nueva directiva y los especialistas de cumplimiento pueden iniciar la investigación y la corrección de las alertas generadas.
+Para empezar con una directiva de cumplimiento de comunicaciones, hay varios requisitos previos que los administradores de TI de Contoso deben configurar antes de configurar la nueva directiva para supervisar el contenido inadecuado. Una vez completados estos requisitos previos, los administradores de TI de Contoso y los especialistas de cumplimiento pueden configurar la nueva directiva y los especialistas de cumplimiento pueden iniciar la investigación y la corrección de las alertas generadas.
 
 ### <a name="enabling-auditing-in-microsoft-365"></a>Habilitar la auditoría en Microsoft 365
 
@@ -157,13 +157,13 @@ Los administradores de TI de Contoso revisan y completan las [instrucciones paso
 
 ### <a name="configuring-yammer-tenant-for-native-mode"></a>Configuración de Yammer inquilino para el modo nativo
 
-El cumplimiento de la comunicación requiere que Yammer inquilino de una organización esté en modo nativo para supervisar el lenguaje ofensivo en mensajes privados y conversaciones de la comunidad pública.
+El cumplimiento de la comunicación requiere que Yammer inquilino de una organización esté en modo nativo para supervisar el contenido inadecuado en mensajes privados y conversaciones de la comunidad pública.
 
 Los administradores de TI de Contoso se asegura de revisar la información del artículo Información general sobre el modo nativo de Yammer en [Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode) y seguir los pasos para ejecutar la herramienta de migración en el artículo Configurar la red [de Yammer](/yammer/configure-your-yammer-network/native-mode) para el modo nativo para Microsoft 365.
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configuración de un grupo para usuarios en el ámbito
 
-Los especialistas en cumplimiento de Contoso desean agregar todos los usuarios a la directiva de comunicación que supervisará el lenguaje ofensivo. Podrían decidir agregar cada cuenta de usuario a la directiva por separado, pero han  decidido que es mucho más fácil y ahorra tiempo para usar un grupo de distribución Todos los usuarios para los usuarios para esta directiva.
+Los especialistas en cumplimiento de Contoso desean agregar todos los usuarios a la directiva de comunicación que supervisará el contenido inadecuado. Podrían decidir agregar cada cuenta de usuario a la directiva por separado, pero han  decidido que es mucho más fácil y ahorra tiempo para usar un grupo de distribución Todos los usuarios para los usuarios para esta directiva.
 
 Deben crear un nuevo grupo para incluir a todos los usuarios de Contoso, por lo que deben seguir los pasos siguientes:
 
@@ -176,21 +176,21 @@ Deben crear un nuevo grupo para incluir a todos los usuarios de Contoso, por lo 
 
     ![Exchange de administración.](../media/communication-compliance-case-eac.png)
 
-### <a name="creating-the-policy-to-monitor-for-offensive-language"></a>Creación de la directiva para supervisar el lenguaje ofensivo
+### <a name="creating-the-policy-to-monitor-for-inappropriate-content"></a>Creación de la directiva para supervisar el contenido inadecuado
 
-Después de completar todos los requisitos previos, los administradores de TI y los especialistas de cumplimiento de Contoso están preparados para configurar la directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo. Con la nueva plantilla de directiva de lenguaje ofensivo, configurar esta directiva es rápido y sencillo.
+Una vez completados todos los requisitos previos, los administradores de TI y los especialistas en cumplimiento de Contoso están listos para configurar la directiva de cumplimiento de comunicaciones para supervisar el contenido inadecuado. Con la nueva plantilla de directiva de contenido inadecuado, la configuración de esta directiva es sencilla y rápida.
 
-1. Los administradores de TI y los especialistas de cumplimiento de Contoso inician sesión en el **Centro de cumplimiento de Microsoft 365** y seleccionan **Cumplimiento de comunicaciones** en el panel de navegación izquierdo. Esta acción abre el panel **Información general** que tiene vínculos rápidos para las plantillas de directiva de cumplimiento de comunicaciones. Eligen la plantilla **Supervisar en busca de lenguaje ofensivo** seleccionando **Introducción**.
+1. Los administradores de TI y los especialistas de cumplimiento de Contoso inician sesión en el **Centro de cumplimiento de Microsoft 365** y seleccionan **Cumplimiento de comunicaciones** en el panel de navegación izquierdo. Esta acción abre el panel **Información general** que tiene vínculos rápidos para las plantillas de directiva de cumplimiento de comunicaciones. Para elegir la **plantilla Supervisar para contenido inadecuado,** seleccione **Introducción** a la plantilla.
 
-    ![Plantilla de lenguaje ofensivo de cumplimiento de comunicación.](../media/communication-compliance-case-template.png)
+    ![Plantilla de contenido inadecuado de cumplimiento de comunicaciones.](../media/communication-compliance-case-template.png)
 
 2. En el asistente para plantillas de directiva, los administradores de TI de Contoso y los especialistas de cumplimiento trabajan conjuntamente para completar los tres campos necesarios: **Nombre de directiva**, **Usuarios o grupos para supervisar** y **Revisores**.
 3. Dado que el asistente para directivas ya ha sugerido un nombre para la directiva, los administradores de TI y especialistas de cumplimiento deciden mantener el nombre sugerido y centrarse en los campos restantes. Seleccionan el *grupo Todos* los usuarios para que los usuarios o grupos supervisen el campo y seleccionan los especialistas en cumplimiento que deben investigar y corregir alertas de directiva para el **campo Revisores.**  El último paso para configurar la directiva y empezar a recopilar información de alerta es seleccionar **Crear directiva**.
 
-    ![Asistente para lenguaje ofensivo de cumplimiento de comunicaciones.](../media/communication-compliance-case-wizard.png)
+    ![Asistente para contenido inadecuado de cumplimiento de comunicaciones.](../media/communication-compliance-case-wizard.png)
 
 ## <a name="step-4-investigate-and-remediate-alerts"></a>Paso 4: Investigar y corregir alertas
 
-Ahora que se ha configurado la directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo, el siguiente paso para los especialistas en cumplimiento de Contoso será investigar y corregir las alertas generadas por la directiva. Pueden ser necesarias hasta 24 horas para que las comunicaciones en todos los canales de origen de la comunicación se procesen por completo y las alertas se muestren en el **Panel de alertas**.
+Ahora que está configurada la directiva de cumplimiento de comunicaciones para supervisar el contenido inadecuado, el siguiente paso para los especialistas en cumplimiento de Contoso será investigar y corregir las alertas generadas por la directiva. Pueden ser necesarias hasta 24 horas para que las comunicaciones en todos los canales de origen de la comunicación se procesen por completo y las alertas se muestren en el **Panel de alertas**.
 
-Una vez generadas las alertas, [](communication-compliance-investigate-remediate.md) los especialistas en cumplimiento de Contoso seguirán las instrucciones del flujo de trabajo para investigar y corregir problemas de lenguaje ofensivo.
+Una vez generadas las alertas, [](communication-compliance-investigate-remediate.md) los especialistas en cumplimiento de Contoso seguirán las instrucciones del flujo de trabajo para investigar y corregir problemas de contenido inadecuados.

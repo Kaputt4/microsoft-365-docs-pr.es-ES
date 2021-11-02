@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0bc0b09bcb834c67cb5da13469139875037440b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06e87fcb0f9f1521e77d254895ef4fc2c57cf1d5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198690"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646948"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -124,9 +124,9 @@ Deberá seguir los pasos siguientes:
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>Paso 3: Configurar Microsoft Defender para la configuración del punto de conexión
 
-Puede usar JAMF Pro GUI para editar configuraciones individuales de la configuración de Microsoft Defender o usar el método heredado mediante la creación de un Plist de configuración en un editor de texto y la carga en JAMF Pro.
+Puede usar JAMF Pro GUI para editar la configuración individual de Microsoft Defender para endpoints o usar el método heredado mediante la creación de una configuración Plist en un editor de texto y la carga en JAMF Pro.
 
-Tenga en cuenta que debe usar exactamente como dominio de preferencia `com.microsoft.wdav` , Microsoft Defender usa solo este nombre y para cargar su configuración  `com.microsoft.wdav.ext` administrada.
+Tenga en cuenta que debe usar exactamente como dominio de preferencia , Microsoft Defender para endpoint `com.microsoft.wdav` usa solo este nombre y para cargar su configuración  `com.microsoft.wdav.ext` administrada.
 
 (La versión puede usarse en raras ocasiones cuando prefiera usar el método GUI, pero también necesita configurar una configuración que aún no se haya agregado al `com.microsoft.wdav.ext` esquema).
 
@@ -156,7 +156,7 @@ Tenga en cuenta que debe usar exactamente como dominio de preferencia `com.micro
 
     ![Upload esquema.](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
-5. Puede ver todas las opciones de configuración admitidas de Microsoft Defender a continuación, en **Propiedades del dominio de preferencia**. Haga **clic en Agregar o quitar propiedades** para seleccionar la configuración que desea administrar y haga clic en **Aceptar** para guardar los cambios. (Configuración izquierda no seleccionada no se incluirá en la configuración administrada, un usuario final podrá configurar dichas opciones en sus máquinas).
+5. A continuación, puede ver todas las opciones de configuración admitidas de Microsoft Defender para endpoint, en **Propiedades de dominio de preferencia**. Haga **clic en Agregar o quitar propiedades** para seleccionar la configuración que desea administrar y haga clic en **Aceptar** para guardar los cambios. (Configuración izquierda no seleccionada no se incluirá en la configuración administrada, un usuario final podrá configurar dichas opciones en sus máquinas).
 
     ![Seleccione configuración administrada.](images/817b3b760d11467abe9bdd519513f54f.png)
 
@@ -180,7 +180,7 @@ Tenga en cuenta que debe usar exactamente como dominio de preferencia `com.micro
 
     ![Opciones de configuración: listo.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
-Microsoft Defender agrega nueva configuración con el tiempo. Esta nueva configuración se agregará al esquema y se publicará una nueva versión en Github.
+Microsoft Defender para endpoint agrega nueva configuración con el tiempo. Esta nueva configuración se agregará al esquema y se publicará una nueva versión en Github.
 Todo lo que necesita hacer para tener actualizaciones es descargar un esquema actualizado, editar el perfil de configuración existente y **editar** el esquema en la pestaña Aplicación & configuración **Configuración** usuario.
 
 ### <a name="legacy-method"></a>Método Legacy

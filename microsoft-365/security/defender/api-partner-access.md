@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b2cb41e4696d964f8a732adb56826de20dcdec6d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3a1925a5d08b13558a312e92270f5703452aa07
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199602"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643236"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Crear una aplicación con acceso de asociado a Microsoft 365 Defender API
 
@@ -33,7 +33,7 @@ ms.locfileid: "60199602"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -46,7 +46,7 @@ Microsoft 365 Defender expone gran parte de sus datos y acciones a través de un
 
 En general, deberá seguir los siguientes pasos para usar estas API:
 
-- Crear una aplicación Azure Active Directory (Azure AD).
+- Cree una Azure Active Directory (Azure AD).
 - Obtener un token de acceso con esta aplicación.
 - Use el token para obtener acceso a Microsoft 365 Defender API.
 
@@ -54,7 +54,7 @@ Dado que esta aplicación es multiinquilino, también necesitarás el consentimi
 
 En este artículo se explica cómo:
 
-- Crear una aplicación de Azure AD **multiinquilino**
+- Crear una **aplicación multiinquilino** Azure AD empresarial
 - Obtenga el consentimiento autorizado del administrador de usuarios para que la aplicación obtenga acceso a la Microsoft 365 Defender recursos que necesita.
 - Obtener un token de acceso para Microsoft 365 Defender
 - Validar el token
@@ -63,12 +63,12 @@ Microsoft 365 Defender expone gran parte de sus datos y acciones a través de un
 
 En general, deberá seguir los pasos siguientes para usar las API:
 
-- Crear una aplicación de Azure AD **multiinquilino.**
+- Cree una **aplicación multiinquilino** Azure AD inquilino.
 - Obtenga autorización (consentimiento) por parte del administrador de usuarios para que la aplicación obtenga acceso Microsoft 365 Defender recursos que necesita.
 - Obtener un token de acceso con esta aplicación.
 - Use el token para obtener acceso a Microsoft 365 Defender API.
 
-Los siguientes pasos le guían sobre cómo crear una aplicación multiinquilino de Azure AD, obtener un token de acceso para Microsoft 365 Defender y validar el token.
+Los siguientes pasos le guían sobre cómo crear una aplicación multiinquilino Azure AD, obtener un token de acceso para Microsoft 365 Defender y validar el token.
 
 ## <a name="create-the-multi-tenant-app"></a>Crear la aplicación multiinquilino
 
@@ -81,7 +81,7 @@ Los siguientes pasos le guían sobre cómo crear una aplicación multiinquilino 
 3. En el formulario de registro:
 
    - Elija un nombre para la aplicación.
-   - En **Tipos de cuentas compatibles,** seleccione Cuentas en cualquier directorio de la organización (cualquier directorio de Azure **AD) - Multitenant**.
+   - En **Tipos de cuentas admitidos,** seleccione Cuentas en cualquier directorio de la organización **(cualquier directorio Azure AD) - Multitenant**.
    - Rellene la sección **URI de** redireccionamiento. Seleccione el **tipo Web** y dé al URI de redireccionamiento como **https://portal.azure.com** .
 
    Una vez que haya terminado de rellenar el formulario, seleccione **Registrar**.
@@ -144,7 +144,7 @@ Los siguientes pasos le guían sobre cómo crear una aplicación multiinquilino 
 
 ## <a name="get-an-access-token"></a>Obtener un token de acceso
 
-Para obtener más información sobre los tokens de Azure AD, consulte el [tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Para obtener más información sobre Azure AD tokens, vea el [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
 > Aunque los ejemplos de esta sección le animan a pegar  valores secretos con fines de prueba, nunca debe codificar los secretos en una aplicación que se ejecute en producción. Un tercero podría usar el secreto para obtener acceso a los recursos. Puedes ayudar a proteger los secretos de la aplicación con [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Para obtener un ejemplo práctico de cómo proteger la aplicación, consulta Administrar secretos en las aplicaciones de servidor [con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
@@ -221,7 +221,7 @@ appSecret = '' # Paste your own app secret here to test, then store it in a safe
 
 url = "https://login.windows.net/%s/oauth2/token" % (tenantId)
 
-resourceAppIdUri = 'https://api.securitycenter.windows.com'
+resourceAppIdUri = 'https://api.security.microsoft.com'
 
 body = {
     'resource' : resourceAppIdUri,

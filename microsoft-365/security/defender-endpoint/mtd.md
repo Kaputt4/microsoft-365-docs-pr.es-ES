@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8de50b9f06f05c012cc2b4c789838612d98abe62
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c575cc6b235f82c02404f29d33712731609322a2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557310"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646934"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender para endpoint- Mobile Threat Defense
 
@@ -47,11 +47,15 @@ Microsoft Defender para Endpoint en Android e iOS proporciona las siguientes fun
 |Protección web|Anti-phishing, bloqueo de conexiones de red no seguras y compatibilidad con indicadores personalizados.|
 |Protección contra malware (solo Android)|Buscar aplicaciones malintencionadas.|
 |Detección de jailbreak (solo iOS)|Detección de dispositivos con jailbreak.|
+|Administración de amenazas y vulnerabilidades (TVM). En la versión preliminar. Vea la nota a continuación*|Evaluación de vulnerabilidad de dispositivos móviles incorporados. Visita esta [página para](next-gen-threat-and-vuln-mgt.md) obtener más información sobre Administración de amenazas y vulnerabilidades en Microsoft Defender para endpoint. *Ten en cuenta que en iOS solo se admiten vulnerabilidades del sistema operativo en esta versión preliminar.*|
 |Alertas unificadas|Alertas de todas las plataformas en la consola de seguridad unificada de M365|
 |Acceso condicional, inicio condicional|Bloquear el acceso de los dispositivos de riesgo a los recursos corporativos. Las señales de riesgo de Defender for Endpoint también se pueden agregar a las directivas de protección de aplicaciones (MAM)|
 |Integración con Microsoft Tunnel|Se puede integrar con Microsoft Tunnel, una solución de puerta de enlace VPN para habilitar la seguridad y la conectividad en una sola aplicación. Disponible solo en Android actualmente|
 
 Todas estas funcionalidades están disponibles para microsoft defender para los titulares de licencias de extremo. Para obtener más información, vea [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
+
+> [!NOTE]
+> La evaluación de vulnerabilidades en Android e iOS está actualmente en versión preliminar y puede modificarse considerablemente antes de su lanzamiento comercial. Si has habilitado las características de vista previa pública, puedes consultar la funcionalidad de TVM en Android e iOS hoy mismo. Si no es así, te recomendamos que [actives](preview.md) las características de vista previa de Microsoft Defender para endpoint para obtener acceso a las funcionalidades más nuevas.
 
 ## <a name="overview-and-deploy"></a>Introducción e implementación
 

@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-mms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d5bcdac9e292e64c0b45412eb93a03d7d760dd53
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67768257dc0a43d04fbc10f3c9d97cdd5fc83fa2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184430"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643187"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -33,7 +31,7 @@ ms.locfileid: "60184430"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 
@@ -50,7 +48,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
 | `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
 | `SenderDisplayName` | cadena | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre determinado, una inicial intermedia y un apellido o apellido |
-| `SenderObjectId` | string | Identificador único de la cuenta del remitente en Azure AD |
+| `SenderObjectId` | cadena | Identificador único de la cuenta del remitente en Azure AD |
 | `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
 | `RecipientObjectId` | cadena | Identificador único para el destinatario de correo electrónico en Azure AD |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
@@ -60,7 +58,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ThreatNames` | string | Nombre de detección de malware u otras amenazas encontradas |
 | `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
-| `FileSize` | string | Tamaño del archivo en bytes |
+| `FileSize` | cadena | Tamaño del archivo en bytes |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el SharePoint de uso de actividad para conocer la actividad de cada usuario SharePoint, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: 2ef2e5f736ec6a178f6cbc107b6884b5dc680986
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b130ad1cca6e25a939b942ed98910ba10150ab40
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553045"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648836"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 Informes en el Centro de administración: SharePoint actividad
 
-Como administrador Microsoft 365, el panel **informes** le muestra la introducción a la actividad en varios productos de su organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Consulte los informes [de actividad en el Centro de administración de Microsoft 365](activity-reports.md).
+Como administrador Microsoft 365, el panel informes le muestra la información general sobre la actividad en varios productos de la organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Consulte los informes [de actividad en el Centro de administración de Microsoft 365](activity-reports.md).
   
 Por ejemplo, podrá comprender la actividad de cada usuario con licencia para usar SharePoint consultando su interacción con los archivos. También le ayuda a entender el nivel de colaboración actual consultando el número de archivos compartidos.
   

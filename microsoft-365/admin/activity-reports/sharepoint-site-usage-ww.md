@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: 1adf1175569b1d798b238d4d55037a6461c34558
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 2c29234df1076fa31ea836b7ead51234e121004e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553033"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648824"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Informes en el Centro de administración: SharePoint de sitio
 
-Como administrador Microsoft 365, el panel **Informes** le muestra la información general sobre la actividad en varios productos de su organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Por ejemplo, puede obtener una vista de alto nivel del valor que obtiene de SharePoint en términos del número total de archivos que los usuarios almacenan en sitios de SharePoint, cuántos archivos se usan activamente y el almacenamiento consumido en todos estos sitios. Luego, puede explorar el informe de uso del sitio de SharePoint para analizar las tendencias y los detalles de nivel de cada sitio. 
+Como administrador Microsoft 365, el panel Informes muestra la introducción a la actividad en varios productos de la organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Por ejemplo, puede obtener una vista de alto nivel del valor que obtiene de SharePoint en términos del número total de archivos que los usuarios almacenan en sitios de SharePoint, cuántos archivos se usan activamente y el almacenamiento consumido en todos estos sitios. Luego, puede explorar el informe de uso del sitio de SharePoint para analizar las tendencias y los detalles de nivel de cada sitio. 
 
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Obtener acceso al informe de uso del sitio de SharePoint
 
@@ -65,6 +65,8 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.
 :::image type="content" alt-text="SharePoint de uso del sitio: elija columnas." source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
 
 También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+
+El **SharePoint de** uso del sitio web se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
 |Métrica|Descripción|
 |:-----|:-----|

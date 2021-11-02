@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
@@ -20,17 +20,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 954c5255ab8d0aee775b51e05e46f951c0f6c2ca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c1bdd43fb4382eaca1a04e27058a8fd1accbb67f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207588"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646404"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Habilitar y piloto Microsoft Defender para Office 365
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 En este artículo se describe el proceso para habilitar y pilotar Microsoft Defender para Office 365. Antes de iniciar este proceso, asegúrese de que [](eval-overview.md) ha revisado el proceso general para evaluar Microsoft 365 Defender y ha creado el entorno [Microsoft 365 Defender evaluación](eval-create-eval-environment.md). 
 <br>

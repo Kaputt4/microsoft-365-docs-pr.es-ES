@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 709cd408d548e8a7c16973c08b0369616f3b91d1
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: d968afeaf484387597d6672bf4db1a01180e52a4
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240541"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643152"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Incorporación Windows de varias sesiones en Azure Virtual Desktop
 
@@ -47,7 +47,7 @@ Microsoft recomienda incorporar Azure Virtual Desktop como una sola entrada por 
 Microsoft recomienda agregar el script de incorporación de Microsoft Defender para endpoint a la imagen dorada de WVD. De esta forma, puede asegurarse de que este script de incorporación se ejecute inmediatamente al primer arranque. Se ejecuta como un script de inicio al inicio en todas las máquinas WVD aprovisionadas desde la imagen dorada de WVD. Sin embargo, si usa una de las imágenes de la galería sin modificaciones, coloque el script en una ubicación compartida y llámelo desde una directiva de grupo local o de dominio.
 
 > [!NOTE]
-> La ubicación y configuración del script de inicio de incorporación de VDI en la imagen dorada de WVD lo configura como un script de inicio que se ejecuta cuando se inicia WVD. NO se recomienda incorporar la imagen dorada de WVD real. Otra consideración es el método usado para ejecutar el script. Debe ejecutarse lo antes posible en el proceso de inicio o aprovisionamiento para reducir el tiempo entre la máquina que está disponible para recibir sesiones y la incorporación del dispositivo al servicio. En los escenarios siguientes, 1 & 2 tienen esto en cuenta.
+> La ubicación y configuración del script de inicio de incorporación de VDI en la imagen dorada de WVD lo configura como un script de inicio que se ejecuta cuando se inicia WVD. No se recomienda **incorporar** la imagen dorada de WVD real. Otra consideración es el método usado para ejecutar el script. Debe ejecutarse lo antes posible en el proceso de inicio o aprovisionamiento para reducir el tiempo entre la máquina que está disponible para recibir sesiones y la incorporación del dispositivo al servicio. Los siguientes escenarios 1 y 2 tienen esto en cuenta.
 
 ### <a name="scenarios"></a>Escenarios
 
@@ -159,4 +159,4 @@ Los requisitos de licencia para Microsoft Defender para el punto de conexión se
 
 #### <a name="related-links"></a>Vínculos relacionados
 
-[Agregar exclusiones para Microsoft Defender mediante PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)
+[Agregar exclusiones para Defender for Endpoint a través de PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-by-using-powershell)

@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9037b8f721a33f6709f3beefdac6d294c7125333
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: f4a29a17bc8c3563779b54b9df594548a02acabd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588306"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646416"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "60588306"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Microsoft 365 Defender agrega todas las alertas, activos, investigaciones y pruebas relacionadas de todos los dispositivos, usuarios y buzones de correo en un incidente para darle una visión completa de toda la amplitud de un ataque.
 
@@ -82,7 +82,7 @@ En la **pestaña** Alertas, puede ver la cola de alertas de alertas relacionadas
 
 - Gravedad.
 - Las entidades que participaron en la alerta.
-- El origen de las alertas (Microsoft Defender para identity, Microsoft Defender para endpoint, Microsoft Defender para Office 365).
+- El origen de las alertas (Microsoft Defender para identidad, Microsoft Defender para endpoint, Microsoft Defender para Office 365, Defender para aplicaciones en la nube y Gobierno de aplicaciones).
 - La razón por la que se vincularon.
 
 Por ejemplo:

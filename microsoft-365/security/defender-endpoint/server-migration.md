@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b2bf0bd7f1d20e65921a3d5ee503152b3d3940fb
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 10932b96b205e3e73ba6e5363ed2acd301d9cef5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586998"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643224"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidor de la solución anterior de Microsoft Defender para endpoint basada en MMA
 
@@ -138,7 +138,7 @@ Para obtener más información, vea [Need to set Antivirus de Microsoft Defender
 6. Cree y aplique directivas con la directiva de grupo, PowerShell o una solución de administración de terceros.
 
 > [!TIP]
-> Puede usar el [script del instalador para](server-migration.md#installer-script) ayudar a automatizar los pasos del 1 al 4. Para habilitar el modo pasivo, aplica la marca -Passive que garantizará que Defender entre en modo pasivo antes de la incorporación y no interfiera con una solución antimalware que no sea de Microsoft. A continuación, para asegurarse de que Defender Antivirus permanece en modo pasivo después de la incorporación para admitir EDR funcionalidades como EDR Block, asegúrese de establecer la clave del Registro "ForceDefenderPassiveMode". EJEMPLO: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` Para obtener más información, vea Need to set Antivirus de Microsoft Defender to passive [mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+> Puede usar el [script del instalador para](server-migration.md#installer-script) ayudar a automatizar los pasos del 1 al 4. Para habilitar el modo pasivo, aplica la marca -Passive que garantizará que Antivirus de Defender entre en modo pasivo antes de la incorporación y no interfiera con una solución antimalware que no sea de Microsoft. A continuación, para asegurarse de que Defender Antivirus permanece en modo pasivo después de la incorporación para admitir EDR funcionalidades como EDR Block, asegúrese de establecer la clave del Registro "ForceDefenderPassiveMode". EJEMPLO: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` Para obtener más información, vea Need to set Antivirus de Microsoft Defender to passive [mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 *Este paso solo se aplica si desea reemplazar la solución antivirus que no es de Microsoft. Se recomienda usar Antivirus de Microsoft Defender, incluido en Microsoft Defender para endpoint, para proporcionar el conjunto completo de funcionalidades. Vea [Better together: Antivirus de Microsoft Defender y Microsoft Defender para Endpoint](why-use-microsoft-defender-antivirus.md). 
 
@@ -155,5 +155,4 @@ Para obtener más información, vea [Need to set Antivirus de Microsoft Defender
 Si usa Azure Defender, puede aprovechar el proceso de actualización automatizada. Vea Proteger los puntos de conexión con la solución de EDR integrada del Centro de [seguridad: Microsoft Defender para endpoint](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration).
 
 ## <a name="group-policy-configuration"></a>Configuración de directiva de grupo
-Para la configuración mediante la directiva de grupo, asegúrese de usar los archivos ADMX más recientes del almacén central para obtener acceso a las opciones de directiva de Microsoft Defender correctas. Consulta [Cómo crear y administrar la](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Tienda central para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**. 
-
+Para la configuración mediante la directiva de grupo, asegúrese de que está usando los archivos ADMX más recientes del almacén central para tener acceso a las opciones de directiva de Defender for Endpoint correctas. Consulta [Cómo crear y administrar la](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Tienda central para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**.

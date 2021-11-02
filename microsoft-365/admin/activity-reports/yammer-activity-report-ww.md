@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el Yammer actividad y obtenga más información sobre el número de usuarios que usan Yammer para publicar, gustar o leer un mensaje.
-ms.openlocfilehash: 3b3d99754a7ace6ffbd8b503e4d70f956425e678
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 42598322c58682e467eba99a7b01a7036fe05581
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553021"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648760"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer actividad
 
-Como Microsoft 365, el panel **informes** muestra los datos sobre el uso de los productos dentro de la organización. Consulte los [informes de actividad en el Centro de administración.](activity-reports.md) Con el **informe de actividad de Yammer**, podrá comprender el nivel de participación de la organización con Yammer consultando el número de usuarios únicos que usan Yammer para publicar, leer o indicar que les gusta un mensaje, y la cantidad de actividad generada en toda la organización. 
+Como Microsoft 365 administrador, el panel informes muestra los datos sobre el uso de los productos dentro de la organización. Consulte los [informes de actividad en el Centro de administración.](activity-reports.md) Con el **informe de actividad de Yammer**, podrá comprender el nivel de participación de la organización con Yammer consultando el número de usuarios únicos que usan Yammer para publicar, leer o indicar que les gusta un mensaje, y la cantidad de actividad generada en toda la organización. 
  
 ## <a name="how-do-i-get-to-the-yammer-activity-report"></a>¿Cómo puedo llegar al informe de Yammer actividad?
 

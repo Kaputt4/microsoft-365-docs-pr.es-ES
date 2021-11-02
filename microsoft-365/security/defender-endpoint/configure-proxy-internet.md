@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42f21f27e30cc4a2bc4af5a2ecefd07c7353d96a
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 4d3dceeea5566b14e9742df77773c3bf07a1bbfc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240229"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60645804"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -91,7 +91,7 @@ El proxy estático también se puede configurar a través de la directiva de gru
 | Directiva de grupo | Clave del Registro | Entrada del Registro | Valor |
 |:---|:---|:---|:---|
 | Configurar el uso de proxy autenticado para la experiencia del usuario conectado y el servicio de telemetría | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
-| Configurar la telemetría y las experiencias de usuario conectados | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```http://servername or ip:port``` <br> <br> Por ejemplo: ```http://10.0.0.6:8080``` (REG_SZ) |
+| Configurar la telemetría y las experiencias de usuario conectados | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Por ejemplo: ```10.0.0.6:8080``` (REG_SZ) |
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Configurar un proxy estático para Antivirus de Microsoft Defender
 

@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2e71699e35339fe6fcf81b9eeaa93e84737e026d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25cf4f098d1dd58e86583be17ccbd371a16b128d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190430"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643186"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -51,16 +49,16 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `PublicIP` | string | Dirección IP pública usada por el equipo incorporado para conectarse al servicio de Microsoft Defender para endpoints. Esta podría ser la dirección IP del propio equipo, un dispositivo NAT o un proxy |
 | `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
-| `OSBuild` | string | Versión de compilación del sistema operativo que se ejecuta en la máquina |
-| `IsAzureADJoined` | boolean | Indicador booleano de si la máquina está unida al Azure Active Directory |
-| `AadObjectId` | string | Identificador único del dispositivo en Azure AD |
-| `LoggedOnUsers` | string | Lista de todos los usuarios que han iniciado sesión en el equipo en el momento del evento en formato de matriz JSON |
-| `RegistryDeviceTag` | string | Etiqueta de máquina agregada a través del Registro |
+| `OSBuild` | cadena | Versión de compilación del sistema operativo que se ejecuta en la máquina |
+| `IsAzureADJoined` | booleano | Indicador booleano de si la máquina está unida al Azure Active Directory |
+| `AadObjectId` | cadena | Identificador único del dispositivo en Azure AD |
+| `LoggedOnUsers` | cadena | Lista de todos los usuarios que han iniciado sesión en el equipo en el momento del evento en formato de matriz JSON |
+| `RegistryDeviceTag` | cadena | Etiqueta de máquina agregada a través del Registro |
 | `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el equipo. |
 | `MachineGroup` | cadena | Grupo de máquinas de la máquina. Este grupo lo usa el control de acceso basado en roles para determinar el acceso a la máquina |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
-| `OnboardingStatus` | string | Indica si el dispositivo está actualmente incorporado o no en Microsoft Defender For Endpoint o si el dispositivo no es compatible |
-|`AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |
+| `OnboardingStatus` | cadena | Indica si el dispositivo está actualmente incorporado o no en Microsoft Defender For Endpoint o si el dispositivo no es compatible |
+|`AdditionalFields` | cadena | Información adicional sobre el evento en formato de matriz JSON |
 |`DeviceCategory` | string | Clasificación más amplia que agrupa determinados tipos de dispositivos en las siguientes categorías: Endpoint, Network device, IoT, Unknown |
 |`DeviceType` | string | Tipo de dispositivo basado en propósito y funcionalidad, como dispositivo de red, estación de trabajo, servidor, móvil, consola de juegos o impresora |
 |`DeviceSubType` | string | Modificador adicional para determinados tipos de dispositivos, por ejemplo, un dispositivo móvil puede ser una tableta o un smartphone |
@@ -69,7 +67,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`OSDistribution` | string | Distribución de la plataforma del sistema operativo, como Ubuntu o RedHat para plataformas Linux |
 |`OSVersionInfo` | string | Información adicional sobre la versión del sistema operativo, como el nombre popular, el nombre de código o el número de versión |
 |`MergedDeviceIds` | string | IDs de dispositivo anteriores que se han asignado al mismo dispositivo |
-|`MergedToDeviceId` | string | El identificador de dispositivo más reciente asignado a un dispositivo |
+|`MergedToDeviceId` | cadena | El identificador de dispositivo más reciente asignado a un dispositivo |
 
 La tabla proporciona información del dispositivo basada en latidos, que son informes `DeviceInfo` periódicos o señales de un dispositivo. Cada quince minutos, el dispositivo envía un latido parcial que contiene atributos que cambian con frecuencia, como `LoggedOnUsers` . Una vez al día, se envía un latido completo que contiene los atributos del dispositivo.
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: Aprenda a comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en 123-reg.co.uk microsoft.
-ms.openlocfilehash: 98bbd9fa4963b24b08c417f608f7a0a3d8d84f31
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 64fdb9df70598aed5113620ea11caf8f70b5926a
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586972"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648712"
 ---
 # <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>Conectar los registros DNS en 123-reg.co.uk a Microsoft 365
 
@@ -48,9 +48,9 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
   
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
-    
-2. Seleccione **Dominios** y, en la página Introducción al nombre de dominio, seleccione el nombre del dominio que desea comprobar. 
-    
+
+2. Seleccione **Dominios** y, en la página Introducción al nombre de dominio, seleccione el nombre del dominio que desea comprobar o vaya al Panel de control.
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el dominio que desea comprobar.":::
 
 3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
@@ -62,26 +62,26 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
   
 5. En el **cuadro** Tipo del nuevo registro, elija **TXT/SPF** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente. 
-    
+
     ||||
     |:-----|:-----|:-----|
     |**Nombre de host** <br/> |**Tipo** <br/> |**Destination TXT/SPF** <br/> |
     |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Seleccione el tipo TXT/SPF de la lista desplegable y rellene los valores.":::
- 
+
 6. Seleccione **Agregar**.
- 
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Seleccione Agregar.":::
-   
+
    Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
-    
+
 Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y solicitará una búsqueda para el registro. Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 Para comprobar el registro en Microsoft 365:
   
 1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
-    
+
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
@@ -89,16 +89,16 @@ Para comprobar el registro en Microsoft 365:
 1. Seleccione **Continuar**.
   
 1. En la página **verificar dominio**, seleccione **verificar**.
-    
+
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
-    
+
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
-    
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
 3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
@@ -108,29 +108,29 @@ Para comprobar el registro en Microsoft 365:
 4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado. 
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
-    
-5. En el **cuadro** Tipo del nuevo registro, elija **MX** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente. 
-    
+
+5. En el **cuadro** Tipo del nuevo registro, elija **MX** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+
     |**Nombre de host**|**Tipo**|**Prioridad**|**MX de destino**|
     |:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtenga la \<domain-key\> desde su cuenta de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
- 
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-MX.png" alt-text="Seleccione el tipo MX de la lista desplegable y rellene los valores.":::
- 
+
 6. Seleccione **Agregar**.
- 
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-Add.png" alt-text="Seleccione Agregar.":::
- 
-7. Si hay otros registros MX, quítelos (para hacerlo, elija el icono **Eliminar [papelera]** de ese registro). 
+
+7. Si hay otros registros MX, quite cada uno seleccionando el icono **Eliminar (papelera)** para ese registro.
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-delete.png" alt-text="Seleccione Eliminar (papelera).":::
   
 ## <a name="add-the-cname-record-required-for-microsoft"></a>Agregar el registro CNAME necesario para Microsoft
 
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
-    
+
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
-    
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
 3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
@@ -140,30 +140,30 @@ Para comprobar el registro en Microsoft 365:
 4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado. 
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
-    
+
 5. Agregue el registro CNAME.
-    
-    En el **cuadro Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente. 
-    
+
+    En el **cuadro Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
+
     |**Nombre de host**|**Tipo**|**CNAME de destino**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |
- 
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME de la lista desplegable y rellene los valores.":::
- 
+
 6. Seleccione **Agregar**.
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Seleccione Agregar.":::
-    
+
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
 > No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro SPF para su dominio, no cree uno nuevo para Microsfot. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
-    
+
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
-    
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
 3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
@@ -173,9 +173,9 @@ Para comprobar el registro en Microsoft 365:
 4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado. 
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
-    
+
 5. En el **cuadro** Tipo del nuevo registro, elija **TXT/SPF** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
-    
+
     |**Nombre de host**|**Tipo**|**Destination TXT/SPF**|
     |:-----|:-----|:-----|
     |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
@@ -191,9 +191,9 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
-    
+
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
-    
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
 3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
@@ -203,11 +203,11 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 4. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado. 
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
-    
+
 5. Agregue el primero de los dos registros SRV:
-    
+
    En el **cuadro** Tipo del nuevo registro, elija **SRV** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
-    
+
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
     |**Nombre de host**|**Tipo**|**Prioridad**|**TTL**|**SRV de destino**|
@@ -221,16 +221,16 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
    :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Seleccione Agregar.":::
 
 7. Agregue el otro registro SRV.
-    
+
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
 
 ### <a name="add-the-two-required-cname-records"></a>Agregar los dos registros CNAME necesarios 
-    
+
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
 
 1. On the Domain name overview page, select the name of the domain that you want to edit. 
-    
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
 1. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
@@ -240,24 +240,24 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 1. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado. 
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
-    
+
 1. Agregue el primer registro CNAME.
-    
+
     En el **cuadro Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
-    
+
     | **Nombre de host** |**Tipo**|**CNAME de destino**|
     |:-----|:-----|:-----|
     |sip  <br/>|CNAME  <br/> |sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |
     |lyncdiscover  <br/>|CNAME  <br/> |webdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |
- 
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME de la lista desplegable y rellene los valores.":::
- 
+
 1. Seleccione **Agregar**.
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Seleccione Agregar.":::
   
 1. Agregue el otro registro CNAME.
-    
+
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -270,7 +270,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
 
 1. On the Domain name overview page, select the name of the domain that you want to edit. 
-    
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
 1. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
@@ -280,11 +280,11 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 1. En la página Administrar su DNS, seleccione la **pestaña DNS** avanzado. 
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Seleccione la pestaña DNS avanzado.":::
-    
+
 1. Agregue el primer registro CNAME.
-    
+
     En el **cuadro Tipo** del nuevo registro, elija **CNAME** en la lista desplegable y, a continuación, escriba o copie y pegue los demás valores de la tabla siguiente.
-    
+
    | **Nombre de host**|**Tipo**|**CNAME de destino**|
    |:-----|:-----|:-----|
    | enterpriseregistration <br/> | CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |
@@ -293,11 +293,10 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Seleccione el tipo CNAME de la lista desplegable y rellene los valores.":::
 
 1. Seleccione **Agregar**.
- 
+
    :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Seleccione Agregar.":::
- 
+
 1. Agregue el otro registro CNAME.
-    
+
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
-  

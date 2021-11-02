@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe Aplicaciones Microsoft 365 de uso mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 21169f47d6066e60c33596aaf21f229dde7dc82e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1f714281196ff27404d593c4c65ecec893bbc209
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553093"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60648891"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365 Informes en el Centro de administración: Aplicaciones Microsoft 365 uso
 
-El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md).
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md).
 
  Por ejemplo, puedes comprender la actividad de cada usuario con licencia para usar aplicaciones Aplicaciones Microsoft 365 mirando su actividad en todas las aplicaciones y cómo se usan en todas las plataformas.
 

@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71dfd68ce690491497e6926eb1046d1c31f41408
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 83614f0c12b58206c8b9d6f779a73c901ebbcecf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335943"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647419"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -80,7 +80,7 @@ El cumplimiento de la comunicación en Microsoft 365 ofrece varias característi
 
 Las plantillas personalizables inteligentes en el cumplimiento de la comunicación le permiten aplicar aprendizaje automático para detectar de forma inteligente infracciones de comunicación en su organización.
 
-- **Plantillas predefinidas personalizables:** las nuevas plantillas de directiva ayudan a solucionar los riesgos de comunicaciones más comunes. La creación inicial de directivas y la actualización de seguimiento ahora son más rápidas con plantillas de cumplimiento normativo y contra el acoso predefinidas y lenguaje ofensivo, información confidencial, conflicto de intereses y cumplimiento normativo.
+- **Plantillas predefinidas personalizables:** las plantillas de directiva ayudan a solucionar los riesgos de comunicaciones más comunes. La creación inicial de directivas y la actualización de seguimiento ahora son más rápidas con contenido inapropiado predefinido, información confidencial, conflictos de interés y plantillas de cumplimiento normativo.
 - Nuevo soporte de aprendizaje **automático:** la discriminación integrada, la [](classifier-get-started-with.md) amenaza, el acoso, la profanidad y los clasificadores de imágenes ayudan a reducir el contenido mal clasificado en los mensajes analizados, lo que ahorra tiempo a los revisores durante el proceso de investigación y corrección.
 - **Generador de condiciones** mejorado: la configuración de las condiciones de directiva ahora se simplifica en una única experiencia integrada en el asistente para directivas, lo que reduce la confusión en la forma en que se aplican las condiciones a las directivas.
 
@@ -89,7 +89,7 @@ Las plantillas personalizables inteligentes en el cumplimiento de la comunicaci�
 Los flujos de trabajo de corrección integrados le permiten identificar y tomar medidas rápidamente en los mensajes con coincidencias de directiva en su organización. Las siguientes nuevas características aumentan la eficacia de las actividades de investigación y corrección:
 
 - **Flujo** de trabajo de corrección flexible: el nuevo flujo de trabajo de corrección le ayuda a tomar medidas rápidamente en las coincidencias de directivas, incluidas las nuevas opciones para escalar mensajes a otros revisores y enviar notificaciones por correo electrónico a los usuarios con coincidencias de directiva.
-- **Coincidencia de directivas de conversación:** los mensajes de las conversaciones se agrupan por coincidencias de directiva para darle más visibilidad sobre cómo se relacionan las conversaciones con las directivas de comunicación. Por ejemplo, la coincidencia  de directivas de conversación en la vista Alertas pendientes mostrará automáticamente todos los mensajes de un canal Teams que tengan coincidencias para la directiva de idioma ofensivo. No se mostrarán otros mensajes de la conversación que no coincidan con la directiva de lenguaje ofensivo.
+- **Coincidencia de directivas de conversación:** los mensajes de las conversaciones se agrupan por coincidencias de directiva para darle más visibilidad sobre cómo se relacionan las conversaciones con las directivas de comunicación. Por ejemplo, la coincidencia  de directivas de conversación en la vista Alertas pendientes mostrará automáticamente todos los mensajes de un canal de Teams que tengan coincidencias para la directiva de contenido inadecuado. No se mostrarán otros mensajes de la conversación que no coincidan con la directiva de contenido inadecuado.
 - **Resaltado de palabras clave**: Los términos que coinciden con las condiciones de la directiva se resaltan en la vista del texto del mensaje para ayudar a los revisores a localizar y corregir rápidamente las alertas de la directiva.
 - **Detección exacta** y casi duplicada: además de buscar términos exactos que coincidan con las directivas de cumplimiento de comunicación, cerca de grupos de detección de duplicados se unen términos y mensajes textualmente similares para ayudar a acelerar el proceso de revisión.
 - Reconocimiento óptico de caracteres **(OCR) (versión preliminar):** examinar, detectar e investigar texto impreso y escrito a mano en imágenes incrustadas o adjuntas al correo electrónico o Microsoft Teams mensajes de chat.
@@ -130,18 +130,21 @@ La identificación y resolución de problemas de cumplimiento con el cumplimient
 
 ### <a name="configure"></a>Configurar
 
-En este paso de flujo de trabajo, identificará los requisitos de cumplimiento y configurará las directivas de cumplimiento de comunicaciones aplicables. Las plantillas de directiva son una excelente manera de no solo configurar rápidamente una nueva directiva de cumplimiento, sino también modificar y actualizar rápidamente las directivas a medida que cambian los requisitos. Por ejemplo, tal vez quiera probar rápidamente una directiva para lenguaje ofensivo y contra el acoso en las comunicaciones de un pequeño grupo de usuarios antes de configurar una directiva para todos los usuarios de la organización.
+En este paso de flujo de trabajo, identificará los requisitos de cumplimiento y configurará las directivas de cumplimiento de comunicaciones aplicables. Las plantillas de directiva son una excelente manera de no solo configurar rápidamente una nueva directiva de cumplimiento, sino también modificar y actualizar rápidamente las directivas a medida que cambian los requisitos. Por ejemplo, es posible que desee probar rápidamente una directiva de contenido inadecuado en las comunicaciones para un pequeño grupo de usuarios antes de configurar una directiva para todos los usuarios de la organización.
 
-> [!IMPORTANT]
-> De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Para habilitar los permisos para las características de cumplimiento de comunicaciones, vea Hacer que [el cumplimiento de la comunicación esté disponible en la organización.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+>[!IMPORTANT]
+>De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Para habilitar los permisos para las características de cumplimiento de comunicaciones, vea Hacer que [el cumplimiento de la comunicación esté disponible en la organización.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
 Puede elegir entre las siguientes plantillas de directiva del Centro de cumplimiento de Microsoft 365:
 
-- **Lenguaje ofensivo o** amenazante: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente contenido que puede considerarse abusivo u ofensivo.
-- **Información confidencial:** use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones que contienen palabras clave o tipos de información confidencial definidos para asegurarse de que los datos importantes no se compartan con personas que no deberían tener acceso.
-- **Cumplimiento normativo:** use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones en busca de referencias a términos financieros estándar asociados con estándares normativos.
-- **Conflicto de interés:** use esta plantilla para crear rápidamente una directiva para supervisar las comunicaciones entre dos grupos o dos usuarios para ayudar a evitar conflictos de interés.
+- **Supervisar el contenido** inadecuado: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente contenido que puede considerarse inapropiado, abusivo u ofensivo.
+- **Supervisar** la información confidencial: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones que contienen palabras clave o tipos de información confidencial definidos para asegurarse de que los datos importantes no se compartan con personas que no deberían tener acceso.
+- **Supervisar el cumplimiento normativo** financiero: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones en busca de referencias a términos financieros estándar asociados con estándares normativos.
+- **Supervisar conflictos de interés:** use esta plantilla para crear rápidamente una directiva para supervisar las comunicaciones entre dos grupos o dos usuarios para ayudar a evitar conflictos de interés.
 - **Directiva personalizada:** use esta plantilla para configurar canales de comunicación específicos, condiciones de detección individuales y la cantidad de contenido que se va a supervisar y revisar en la organización.
+
+>[!TIP]
+>Use [las acciones recomendadas](communication-compliance-configure.md#recommended-actions-preview) para determinar si necesita una directiva de tipo de información confidencial o si necesita actualizar las directivas de contenido inapropiadas existentes.
 
 ### <a name="investigate"></a>Investigación
 
@@ -174,5 +177,5 @@ El seguimiento y la administración de problemas de cumplimiento identificados p
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
 - Para obtener información de planeación, vea [Plan for communication compliance](communication-compliance-plan.md).
-- Consulte el caso práctico de [Contoso](communication-compliance-case-study.md) y vea cómo configuraron rápidamente una directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo en Microsoft Teams, Exchange Online y Yammer comunicaciones.
+- Consulte el caso práctico de [Contoso](communication-compliance-case-study.md) y vea cómo configuraron rápidamente una directiva de cumplimiento de comunicaciones para supervisar el contenido inadecuado en Microsoft Teams, Exchange Online y Yammer comunicaciones.
 - Para configurar el cumplimiento de comunicaciones para Microsoft 365 organización, vea [Configure communication compliance for Microsoft 365](communication-compliance-configure.md).

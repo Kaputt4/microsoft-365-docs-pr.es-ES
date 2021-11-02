@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1fdf430b0cb92115f6ed5b8fab81b69e57422cf4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a6d41489e84935e580a1f749e8dd891affa9c2a6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213594"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646912"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -53,36 +51,36 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `RegistryValueType` | string | Tipo de datos, como binario o cadena, del valor del Registro al que se aplicó la acción grabada |
 | `RegistryValueName` | string | Nombre del valor del Registro al que se aplicó la acción grabada |
 | `RegistryValueData` | string | Datos del valor del Registro al que se aplicó la acción grabada |
-| `PreviousRegistryKey` | string | Clave del Registro original del valor del Registro antes de modificarla |
+| `PreviousRegistryKey` | cadena | Clave del Registro original del valor del Registro antes de modificarla |
 | `PreviousRegistryValueName` | string | Nombre original del valor del Registro antes de modificarlo |
-| `PreviousRegistryValueData` | string | Datos originales del valor del Registro antes de modificarlo |
+| `PreviousRegistryValueData` | cadena | Datos originales del valor del Registro antes de modificarlo |
 | `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountObjectId` | string | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountObjectId` | string | Azure AD de objeto de la cuenta de usuario que ejecutó el proceso responsable del evento |
 | `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `InitiatingProcessSHA256` | cadena | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessMD5` | cadena | Hash MD5 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
+| `InitiatingProcessFileName` | cadena | Nombre del proceso que inició el evento |
 | `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
-| `InitiatingProcessVersionInfoCompanyName` | string | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductName` | string | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-|` InitiatingProcessVersionInfoProductVersion` | string | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-|` InitiatingProcessVersionInfoInternalFileName` | string | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoOriginalFileName` | string | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoFileDescription` | string | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessId` | int | Identificador de proceso (PID) del proceso que inició el evento |
-| `InitiatingProcessCommandLine` | string | Línea de comandos usada para ejecutar el proceso que inició el evento |
+| `InitiatingProcessVersionInfoCompanyName` | cadena | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoProductName` | cadena | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+|` InitiatingProcessVersionInfoProductVersion` | cadena | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+|` InitiatingProcessVersionInfoInternalFileName` | cadena | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoOriginalFileName` | cadena | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoFileDescription` | cadena | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessId` | Entero | Identificador de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessCommandLine` | cadena | Línea de comandos usada para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
-| `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessParentId` | int | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
-| `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessFolderPath` | cadena | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessParentId` | Entero | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentFileName` | cadena | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
-| `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
-| `InitiatingProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
+| `InitiatingProcessIntegrityLevel` | cadena | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
+| `InitiatingProcessTokenElevation` | cadena | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
-| `AppGuardContainerId` | string | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
+| `AppGuardContainerId` | cadena | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

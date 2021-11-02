@@ -1,62 +1,60 @@
 ---
-title: Información general sobre Aprendizaje Microsoft Viva (versión preliminar)
+title: Información general sobre Aprendizaje Microsoft Viva
 ms.author: daisyfeller
-author: daisyfeller
+author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: ''
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
+ms.custom: intro-overview
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
-ms.localizationpriority: ''
-description: Obtenga información Aprendizaje Microsoft Viva (versión preliminar) en el entorno Microsoft 365 usuario.
-ms.openlocfilehash: 563b808a55efcbdba08119d721e52f73873cd9ea
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.localizationpriority: medium
+description: Obtenga información sobre Aprendizaje Microsoft Viva en su Microsoft 365 de datos.
+ms.openlocfilehash: 1747cef7ade83adfc33f369ae5196a0638f918b3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478858"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60645957"
 ---
-# <a name="overview-of-microsoft-viva-learning-preview"></a>Información general sobre Aprendizaje Microsoft Viva (versión preliminar)
+# <a name="overview-of-microsoft-viva-learning"></a>Información general sobre Aprendizaje Microsoft Viva
 
-> [!NOTE]
-> La información de este artículo se refiere a un producto de vista previa que puede modificarse considerablemente antes de su lanzamiento comercial. La vista previa no está abierta actualmente para los nuevos participantes.
+Viva Learning es un centro de aprendizaje centralizado en Microsoft Teams que le permite integrar perfectamente el aprendizaje y la creación de habilidades en su día a día. En Viva Learning, su equipo puede descubrir, compartir, recomendar y aprender de bibliotecas de contenido proporcionadas por su organización y asociados. Pueden hacer todo esto sin salir de Microsoft Teams.
 
-Viva Learning (versión preliminar) es un centro de aprendizaje centralizado en Microsoft Teams que te permite integrar perfectamente el aprendizaje y la creación de habilidades en tu día. En Viva Learning (versión preliminar), el equipo puede descubrir, compartir, asignar y aprender de bibliotecas de contenido proporcionadas por su organización y asociados. Pueden hacer todo esto sin salir de Microsoft Teams.
+   ![Captura de pantalla de la página principal de Viva Learning en Teams.](../media/learning/overview-1.png)
 
-   ![Captura de pantalla de la página principal de Viva Learning (vista previa) en Teams.](../media/learning/learning-home-teams.png)
-
-Es más probable que los empleados informen de que están satisfechos y permanecen en una organización más tiempo cuando se les dan oportunidades de aprender y crecer. Viva Learning (versión preliminar) facilita la creación de estas oportunidades para su organización sin necesidad de alejarse de las herramientas de comunicación que ya usa.
+Viva Learning facilita la creación de oportunidades de aprendizaje y crecimiento para su organización sin necesidad de alejarse de las herramientas de comunicación que ya usa.
 
 ## <a name="learn-while-working"></a>Información durante el trabajo
 
 ### <a name="everyone"></a>Todos
 
-Viva Learning (versión preliminar) facilita la incorporación del aprendizaje a su día. Cuando abra Viva Learning (versión preliminar) en Microsoft Teams, verá una vista personalizada del contenido de aprendizaje de su organización y de socios, como LinkedIn Learning. A medida que sigas buscando y completando más aprendizaje, el contenido recomendado se actualizará para reflejar tus intereses.
+Viva Learning facilita la incorporación del aprendizaje a su día. Cuando abra Viva Learning en Microsoft Teams, verá una vista personalizada del aprendizaje de contenido de su organización y de socios, como LinkedIn Learning. A medida que sigas buscando y completando más aprendizaje, el contenido recomendado se actualizará para reflejar tus intereses.
 
 - Encuentre fácilmente oportunidades de aprendizaje proporcionadas por su organización.
-- Explora cursos de LinkedIn Learning, Microsoft Learn, Microsoft 365 Training, Skillsoft, Coursera, edX, Pluralsight y otros partners de aprendizaje de terceros.
+- Examinar cursos de Microsoft y proveedores de contenido de terceros.
 - Busque contenido de aprendizaje específico que le sea atractivo o que admita los objetivos de su carrera profesional.
 - Comparta contenido de aprendizaje relevante, interesante e importante con los miembros o grupos de su equipo en un Microsoft Teams chat o canal.
 - Organice las selecciones personalizadas de contenido de aprendizaje Microsoft Teams canales y pestañas.
-- Me gusta y guarda los cursos que te interesan.
+- Cursos de marcadores que te interesan.
 - Reproduce los cursos Learning LinkedIn en el reproductor incrustado sin salir de Microsoft Teams.
 
 ### <a name="managers"></a>Managers
 
-Mantenga a su equipo comprometido y actualizado con las habilidades necesarias sin necesidad de coordinar el aprendizaje en todas las plataformas. Puedes asignar contenido de aprendizaje a individuos o grupos, compartir contenido con tu equipo y realizar un seguimiento del estado de finalización del aprendizaje que hayas asignado.
+Mantenga a su equipo comprometido y actualizado con las habilidades necesarias sin necesidad de coordinar el aprendizaje en todas las plataformas. Puede recomendar el aprendizaje de contenido a individuos, compartir contenido con su equipo y realizar un seguimiento del estado de finalización del aprendizaje notificado que ha recomendado.
 
 ## <a name="admin-roles"></a>Roles de administrador
 
-Los administradores establecen permisos y permiten orígenes de contenido de aprendizaje para Viva Learning (versión preliminar). Para configurar Viva Learning (versión preliminar), necesitará permisos como:
+Viva Learning está disponible de forma predeterminada en Microsoft Teams con algo de contenido ya disponible. Para configurar orígenes de contenido de aprendizaje en Viva Learning y administrar licencias individuales, necesitará estos permisos:
 
 - Microsoft Teams administrador
-- Microsoft 365 administrador global o administrador de SharePoint global
+- Microsoft 365 administrador global o administrador SharePoint administrador
 - Administrador de la información
 
 ### <a name="knowledge-admin"></a>Administrador de la información
@@ -65,14 +63,34 @@ El administrador de conocimientos es un nuevo Azure Active Directory (Azure AD) 
 
 El administrador de conocimientos debe ser moderadamente técnico y tener credenciales SharePoint administrador existentes. El administrador de conocimientos debe estar bien informado en la parte de educación, aprendizaje, formación o experiencia de los empleados de la organización.
 
-## <a name="get-started"></a>Introducción
+## <a name="learning-content-sources"></a>Learning de contenido
 
-Cuando esté listo para configurar y configurar Viva Learning (versión preliminar) en el entorno Microsoft 365 usuario:
+El contenido de Microsoft Learn y Microsoft 365 Training está disponible automáticamente en Viva Learning. También tendrás acceso gratuito a un conjunto de 125 cursos de LinkedIn Learning. Además, Viva Learning con proveedores de contenido y sistemas de administración de aprendizaje selectos. Para obtener más información acerca de cómo configurar orígenes de contenido, vea [Manage content sources for Viva Learning](content-sources-365-admin-center.md).
 
-- Use el centro Microsoft Teams administración para [administrar Viva Learning (versión preliminar) en toda la organización](set-up-teams-admin-center.md).
+## <a name="supported-languages"></a>Idiomas admitidos
+
+Viva Learning se adapta a las preferencias de idioma de Microsoft 365 organización. Sin embargo, Viva Learning actualmente no admite idiomas de derecha a izquierda.
+
+## <a name="data-and-privacy"></a>Datos y privacidad
+
+Viva Learning residencia de datos es específica del inquilino y sigue las directrices Microsoft 365 de almacenamiento de datos por la geografía disponible. Para obtener más información, [vea Where is my Microsoft 365 customer data stored](/microsoft-365/enterprise/o365-data-locations).
+
+Actualmente, la SharePoint solo se admite para los sitios hospedados desde la geografía principal del inquilino. Por ejemplo, un inquilino francés solo puede vincular sitios SharePoint hospedados en Francia a Viva Learning.
+
+Los datos almacenados desde Viva Learning incluyen:
+
+- Learning de contenido del objeto, como título, descripción, autor e idioma
+- Datos de usuario, como marcadores, vistos recientemente, cursos recomendados, cursos asignados y registros de finalización
+- Datos de servicio necesarios, como registros de errores
+- Uso de datos de diagnóstico
+
+>[!NOTE]
+>Los administradores pueden activar o desactivar el almacenamiento de datos de diagnóstico.
+
+## <a name="get-started"></a>Comenzar
+
+Cuando esté listo para configurar y configurar Viva Learning en su Microsoft 365 de configuración:
+
+- Use el centro Microsoft Teams administración para [administrar Viva Learning en toda la organización](set-up-viva-learning.md).
 - Use el Centro de administración de Microsoft 365 para [configurar orígenes de aprendizaje disponibles para grupos específicos.](content-sources-365-admin-center.md)
 - Use el centro SharePoint administración para [administrar y almacenar su propio contenido de aprendizaje.](configure-sharepoint-content-source.md)
-
-
-
-

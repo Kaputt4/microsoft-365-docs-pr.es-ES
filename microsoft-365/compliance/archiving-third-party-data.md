@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos Microsoft 365 buzones de correo.
-ms.openlocfilehash: 26b183770599d3c740ad311b759c1bf696e30461
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 92efcffeaf9d85fe0c53cabf477e03cdfa5f5cd6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478786"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647653"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
 
@@ -55,8 +55,10 @@ Haga clic en  el vínculo de la columna de datos de terceros para ir a las instr
 |Datos de terceros  |Retención por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Mensaje de Bloomberg](archive-bloomberg-message-data.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
+|[Atención sanitaria de EHR épico](import-epic-data.md) ||||||![Marca de verificación](../media/checkmark.png)|
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
-|[Recursos humanos (RRHH)](import-hr-data.md) ||||||![Marca de verificación](../media/checkmark.png)
+|[Salud de EHR genérica](import-healthcare-data.md) ||||||![Marca de verificación](../media/checkmark.png)|
+|[Recursos humanos (RRHH)](import-hr-data.md) ||||||![Marca de verificación](../media/checkmark.png)|
 |[Chat ICE](archive-icechat-data.md)     |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Bloomberg instantáneo](archive-instant-bloomberg-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Linkedin](archive-linkedin-data.md)   |![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
@@ -94,7 +96,7 @@ Para poder archivar datos de terceros en Microsoft 365, debe trabajar con Verita
 |[Texto delimitado](archive-text-delimited-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[Teams de Webex](archive-webexteams-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Páginas web](archive-webpagecapture-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
-|[Área de trabajo de Facebook](archive-workplacefromfacebook-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Workplace de Facebook](archive-workplacefromfacebook-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[XIP](archive-xip-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||

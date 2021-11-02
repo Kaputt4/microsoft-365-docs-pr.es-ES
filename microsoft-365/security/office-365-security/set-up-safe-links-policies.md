@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y configuración global de vínculos de Caja fuerte en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85d2ad698ffc1a450afc302586134bdd5e566eb5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 878f29e07c99892fddf322c2435c6eeebc694f07
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207552"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646368"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -38,7 +38,9 @@ ms.locfileid: "60207552"
 
 Caja fuerte Los vínculos de [Microsoft Defender para Office 365](defender-for-office-365.md) proporcionan el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el momento de la comprobación de clics de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, [vea Caja fuerte Links in Microsoft Defender for Office 365](safe-links.md).
 
-No hay ninguna directiva de vínculos integrada o Caja fuerte predeterminada. Para obtener Caja fuerte de vínculos de búsqueda de direcciones URL, debe crear una o más directivas de vínculos de Caja fuerte como se describe en este artículo.
+Aunque no hay ninguna directiva de vínculos  Caja fuerte predeterminada, la directiva de seguridad predefinida de protección integrada proporciona protección de vínculos Caja fuerte a todos los destinatarios (usuarios que no están definidos en directivas de vínculos de Caja fuerte personalizadas). Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+
+También puede usar los procedimientos de este artículo para crear directivas de vínculos Caja fuerte que se aplican a usuarios, grupos o dominios específicos.
 
 > [!NOTE]
 >
@@ -106,11 +108,11 @@ La creación de una directiva Caja fuerte links personalizada en el portal de Mi
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
+   Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
 
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones a los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
+   - **Excluir estos usuarios, grupos y dominios**: para agregar excepciones para los destinatarios internos a los que se aplica la directiva (excepciones de destinatarios), seleccione esta opción y configure las excepciones. La configuración y el comportamiento son exactamente iguales a las condiciones.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -191,7 +193,7 @@ De nuevo en la página principal de la directiva, el valor **Estado** de la dire
 
 De forma predeterminada, Caja fuerte a los vínculos se les da una prioridad que se basa en el orden en que se crearon (las directivas más recientes son de menor prioridad que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad** o en **Reducir la prioridad** en las propiedades de la directiva (no se puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
+Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** o **Reducir prioridad** en las propiedades de la directiva (no puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva sólo tiene sentido si tiene varias directivas.
 
 **Nota**:
 

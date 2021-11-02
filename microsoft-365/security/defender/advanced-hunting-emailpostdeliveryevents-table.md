@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5de874a75763152422fb1cd84e90bc9fed716e6a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f3338639ed0db6b11a2796def8ec4eb209a9824
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199566"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646888"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -33,7 +31,7 @@ ms.locfileid: "60199566"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La tabla del esquema de búsqueda avanzada contiene información sobre las acciones posteriores a la entrega realizadas en los mensajes de correo electrónico procesados `EmailPostDeliveryEvents` por Microsoft 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
@@ -51,13 +49,13 @@ Para obtener más información acerca de los mensajes de correo electrónico ind
 | `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
 | `InternetMessageId` | cadena | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
 | `Action` | cadena | Acción realizada en la entidad |
-| `ActionType` | string | Tipo de actividad que desencadenó el evento: Corrección manual, PHISH ZAP, MALWARE ZAP |
-| `ActionTrigger` | string | Indica si un administrador desencadenó una acción (manualmente o mediante la aprobación de una acción automatizada pendiente) o por algún mecanismo especial, como un ZAP o una entrega dinámica |
-| `ActionResult` | string | Resultado de la acción |
+| `ActionType` | cadena | Tipo de actividad que desencadenó el evento: Corrección manual, PHISH ZAP, MALWARE ZAP |
+| `ActionTrigger` | cadena | Indica si un administrador desencadenó una acción (manualmente o mediante la aprobación de una acción automatizada pendiente) o por algún mecanismo especial, como un ZAP o una entrega dinámica |
+| `ActionResult` | cadena | Resultado de la acción |
 | `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
 | `DeliveryLocation` | cadena | Ubicación en la que se entregó el correo electrónico: bandeja de entrada / carpeta, local / externo, correo no deseado, cuarentena, erróneo, descartado, elementos eliminados. |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
-| `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `ThreatTypes` | cadena | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
 
 ## <a name="supported-event-types"></a>Tipos de eventos admitidos

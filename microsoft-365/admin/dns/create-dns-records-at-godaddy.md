@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Aprenda a comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en GoDaddy para Microsoft.
-ms.openlocfilehash: a4428b092ee1a679fe622d83dbfee7535649e9f0
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: ac71bbe1c57e1471e1ff343df75f034cc15c5901
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586418"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647789"
 ---
 # <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Conectar los registros DNS en GoDaddy para Microsoft 365
 
@@ -40,11 +40,11 @@ Si GoDaddy es su proveedor de hosting DNS, siga los pasos de este artículo para
 
 Tiene dos opciones para configurar registros DNS para su dominio:
 
-- [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de Dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365. 
+- [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de Dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
 
    OR
 
-- [**Siga los pasos manuales**](#create-dns-records-with-manual-setup) Compruebe el dominio con los pasos manuales siguientes y elija cuándo y qué registros agregar al registrador de dominio. Esto le permite configurar nuevos registros MX (correo), por ejemplo, a su conveniencia. 
+- [**Siga los pasos manuales**](#create-dns-records-with-manual-setup) Compruebe el dominio con los pasos manuales siguientes y elija cuándo y qué registros agregar al registrador de dominio. Esto le permite configurar nuevos registros MX (correo), por ejemplo, a su conveniencia.
 
 ## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Usar dominio Conectar para comprobar y configurar el dominio
 
@@ -56,13 +56,13 @@ Siga estos pasos para comprobar y configurar automáticamente el dominio de GoDa
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
-1. On the How do you want to connect your domain? página, seleccione **Continuar**.   
+1. On the How do you want to connect your domain? página, seleccione **Continuar**.
 
 1. En la página Agregar registros DNS, seleccione **Agregar registros DNS**.
 
 1. En la página de inicio de sesión de GoDaddy, inicie sesión en su cuenta y seleccione **Autorizar**.
-    
-    Esto completa la configuración de dominio para Microsoft 365. 
+
+    Esto completa la configuración de dominio para Microsoft 365.
 
 ## <a name="create-dns-records-with-manual-setup"></a>Crear registros DNS con configuración manual
 
@@ -78,7 +78,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea.
 
-1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
    Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
 
@@ -90,7 +90,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Seleccione AGREGAR.":::
 
-1. Elija **TXT** en la lista desplegable. 
+1. Elija **TXT** en la lista desplegable.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Seleccione TXT en la lista desplegable Tipo.":::
 
@@ -113,21 +113,21 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, deb
 Para comprobar el registro en Microsoft 365:
   
 1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
-    
-1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
 1. Seleccione **Continuar**.
   
 1. En la página **verificar dominio**, seleccione **verificar**.
-    
+
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 
-1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
    Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
 
@@ -157,7 +157,7 @@ Para comprobar el registro en Microsoft 365:
 
 ### <a name="add-the-cname-record-required-for-microsoft"></a>Agregar el registro CNAME necesario para Microsoft
 
-1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
    Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
 
@@ -192,7 +192,7 @@ Para comprobar el registro en Microsoft 365:
 > [!IMPORTANT]
 > No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores.
 
-1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
    Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
 
@@ -226,7 +226,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
-1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
    Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
 
@@ -264,7 +264,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
 ### <a name="add-the-two-required-cname-records"></a>Agregar los dos registros CNAME necesarios
   
-1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
    Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
 
@@ -281,7 +281,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Seleccione CNAME en la lista desplegable Tipo.":::
 
 1. En los cuadros vacíos de los nuevos registros, escriba o copie y pegue los valores de la primera fila de la tabla siguiente.
-    
+
     |**Tipo**|**Host**|**Señala a**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |1 hora  <br/> |
@@ -289,12 +289,12 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Rellene los valores de la tabla para el registro CNAME.":::
   
-1. Seleccione **Guardar**. 
+1. Seleccione **Guardar**.
   
 1. Agregue el otro registro CNAME eligiendo los valores de la segunda fila de la tabla.
-    
+
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
   
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y Administración de dispositivos móviles para Microsoft 365
 
@@ -302,7 +302,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
 ### <a name="add-the-two-required-cname-records"></a>Agregar los dos registros CNAME necesarios
 
-1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
    Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
 
@@ -319,7 +319,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Seleccione CNAME en la lista desplegable Tipo.":::
 
 1. En los cuadros vacíos de los nuevos registros, escriba o copie y pegue los valores de la primera fila de la tabla siguiente.
-    
+
     |**Tipo**|**Host**|**Señala a**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |1 hora  <br/> |
@@ -327,9 +327,9 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Rellene los valores de la tabla para el registro CNAME.":::
   
-1. Seleccione **Guardar**. 
+1. Seleccione **Guardar**.
   
 1. Agregue el otro registro CNAME eligiendo los valores de la segunda fila de la tabla.
-    
+
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).

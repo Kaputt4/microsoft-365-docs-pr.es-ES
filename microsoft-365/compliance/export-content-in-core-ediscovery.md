@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo exportar y descargar contenido de un caso de exhibición de documentos electrónicos principal en Microsoft 365.
-ms.openlocfilehash: c6b5ac0d8bb6b555dc4720e90e045672cdb2439d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e7d17c7ddb9060417812cccd45437c30b70e9f3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190910"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60647371"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exportar contenido desde un caso básico de eDiscovery
 
@@ -58,6 +58,9 @@ Después de ejecutar correctamente una búsqueda asociada a un caso de exhibici�
 7. Haga clic en el trabajo de exportación que creó para mostrar información de estado en la página desplegable. Esta información incluye el porcentaje de elementos que se han transferido a la Azure Storage ubicación.
 
 8. Después de transferir todos los elementos, haga clic en **Descargar resultados** para descargar los resultados de búsqueda en el equipo local. Para obtener más información sobre la descarga de resultados de búsqueda, vea el paso 2 en [Exportar resultados de búsqueda de contenido](export-search-results.md#step-2-download-the-search-results)
+
+> [!NOTE]
+> Los resultados de búsqueda exportados deben descargarse en un plazo de 14 días después de crear el trabajo de exportación.
 
 ### <a name="more-information-about-exporting-searches-from-a-case"></a>Más información sobre cómo exportar búsquedas desde un caso
 

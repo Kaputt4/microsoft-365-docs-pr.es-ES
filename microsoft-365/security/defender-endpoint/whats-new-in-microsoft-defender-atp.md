@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ac6aa01877b7b4968b01b5a16c931079e2b4360e
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: d8a3ea4d701c390c7c8505f42fa2440e38965584
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239581"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60643216"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -38,14 +38,12 @@ Las siguientes características están en versión preliminar o generalmente dis
 
 Para obtener más información sobre las características de vista previa, vea [Preview features](preview.md).
 
-
 > [!TIP]
 > Fuente RSS: recibe una notificación cuando se actualiza esta página copiando y pegando la siguiente dirección URL en el lector de fuentes:
 >
 > ```https
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
-
 
 Para obtener más información sobre las novedades de otros productos de seguridad de Microsoft Defender, vea:
 
@@ -55,10 +53,10 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 Para obtener más información sobre Microsoft Defender para Endpoint en otros sistemas operativos:
+
 - [Novedades de Defender para endpoint en macOS](mac-whatsnew.md)
 - [Novedades de Defender para endpoint en iOS](ios-whatsnew.md)
 - [Novedades de Defender para Endpoint en Linux](linux-whatsnew.md)
-
 
 ## <a name="october-2021"></a>Octubre de 2021
 
@@ -88,7 +86,7 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 
 - [Exportar evaluaciones de vulnerabilidades y configuraciones seguras](get-assessment-methods-properties.md) API <br> Agrega una colección de API que Administración de amenazas y vulnerabilidades datos por dispositivo. Hay diferentes llamadas api para obtener diferentes tipos de datos: evaluación de configuración segura, evaluación de inventario de software y evaluación de vulnerabilidades de software. Cada llamada a la API contiene los datos necesarios para los dispositivos de la organización.
 
-- [Actividad de corrección](get-remediation-methods-properties.md) API <br>  Agrega una colección de API con respuestas que contienen Administración de amenazas y vulnerabilidades de corrección que se han creado en el espacio empresarial. Los tipos de información de respuesta incluyen una actividad de corrección por identificador, todas las actividades de corrección y dispositivos expuestos de una actividad de corrección.
+- [Actividad de corrección](get-remediation-methods-properties.md) API <br> Agrega una colección de API con respuestas que contienen Administración de amenazas y vulnerabilidades de corrección que se han creado en el espacio empresarial. Los tipos de información de respuesta incluyen una actividad de corrección por identificador, todas las actividades de corrección y dispositivos expuestos de una actividad de corrección.
 
 - [Detección de dispositivo](device-discovery.md) <br> Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. A continuación, puede incorporar dispositivos detectados para reducir los riesgos asociados con tener puntos de conexión no administrados en la red.
 
