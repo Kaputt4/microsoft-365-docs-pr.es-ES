@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: ea1638b3dd97c97354eff64d0e33d6a4b84a0313
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 88e4081ba23ce38153af7eb5fe8af69a00df73b8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175112"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667711"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 
@@ -103,6 +103,68 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 2. **Si el usuario elimina el mensaje de Yammer** durante el período, el elemento se mueve inmediatamente a la carpeta SubstrateHolds, donde se eliminará de forma permanente e inmediata.
 
+#### <a name="example-flows-and-timings-for-retention-policies"></a>Ejemplos de flujos y tiempos para políticas de retención
+
+Utilice los siguientes ejemplos para ver cómo los procesos y tiempos explicados en las secciones anteriores se aplican a las políticas de retención que tienen las siguientes configuraciones:
+
+- [Ejemplo 1: solo retención durante 7 años](#example-1-retain-only-for-7-years)
+- [Ejemplo 2: conservar durante 30 días y luego eliminar](#example-2-retain-for-30-days-and-then-delete)
+- [Ejemplo 3: solo eliminar después de 1 día](#example-3-delete-only-after-1-day)
+
+Para todos los ejemplos que hacen referencia a la eliminación permanente, debido a los [principios de retención](retention.md#the-principles-of-retention-or-what-takes-precedence), esta acción se suspende si el mensaje está sujeto a otra política de retención para retener el elemento o si está sujeto a una retención de eDiscovery.
+
+##### <a name="example-1-retain-only-for-7-years"></a>Ejemplo 1: solo retención durante 7 años
+
+El día 1, el usuario publica un nuevo mensaje de Yammer.
+
+El día 5, el usuario edita ese mensaje.
+
+El día 30, el usuario elimina el mensaje actual.
+
+Resultados de retención:
+
+- Para el mensaje original:
+    - El día 5, el mensaje se copia en la carpeta SubstrateHolds, donde aún se puede buscar con herramientas de eDiscovery durante un mínimo de 7 años a partir del día 1 (el período de retención).
+
+- Para el mensaje actual (editado):
+    - El día 30, el mensaje se mueve a la carpeta SubstrateHolds donde aún se puede buscar con herramientas de eDiscovery durante un mínimo de 7 años a partir del día 1 (el período de retención).
+
+Si el usuario hubiera eliminado el mensaje actual después del período de retención especificado, en lugar de dentro del período de retención, el mensaje aún se movería a la carpeta SubstrateHolds. Sin embargo, ahora que el período de retención ha expirado, el mensaje se eliminará permanentemente después del mínimo de 1 día y luego, por lo general, dentro de 1 a 7 días.
+
+##### <a name="example-2-retain-for-30-days-and-then-delete"></a>Ejemplo 2: conservar durante 30 días y luego eliminar
+
+El día 1, el usuario publica un nuevo mensaje de Yammer.
+
+El día 10, el usuario edita ese mensaje.
+
+El usuario no realiza más modificaciones y no elimina el mensaje.
+
+Resultados de retención:
+
+- Para el mensaje original:
+    - El día 10, el mensaje se copia en la carpeta SubstrateHolds, donde aún se puede buscar con herramientas de eDiscovery.
+    - Al final del período de retención (30 días a partir del día 1), el mensaje se elimina permanentemente, por lo general, dentro de 1 a 7 días después del mínimo de 1 día, y luego no se devolverá con las búsquedas de eDiscovery.
+
+- Para el mensaje actual (editado):
+    - Al final del período de retención (30 días a partir del día 1), el mensaje se mueve a la carpeta SubstrateHolds normalmente dentro de 1 a 7 días, donde aún se puede buscar con herramientas de eDiscovery.
+    - Luego, el mensaje se elimina permanentemente, por lo general, dentro de 1 a 7 días después del mínimo de 1 día, y luego no se devolverá con las búsquedas de exhibición de documentos electrónicos.
+
+##### <a name="example-3-delete-only-after-1-day"></a>Ejemplo 3: solo eliminar después de 1 día
+
+> [!NOTE]
+> Debido a la corta duración de un día de esta configuración y los procesos de retención que operan dentro de un período de tiempo de 1 a 7 días, esta sección muestra ejemplos de tiempos que están dentro de los rangos de tiempo típicos.
+
+El día 1, el usuario publica un nuevo mensaje de Yammer.
+
+Ejemplo de resultado de retención si el usuario no edita o elimina el mensaje:
+
+- Día 5 (normalmente de 1 a 7 días después del inicio del período de retención el día 2):
+    - El mensaje se mueve a la carpeta SubstrateHolds y permanece allí durante al menos 1 día donde aún se puede buscar con herramientas de eDiscovery.
+
+- Día 9 (normalmente de 1 a 7 días después de un mínimo de 1 día en la carpeta SubstrateHolds):
+    - Cuando un mensaje se elimina de forma permanente, no se mostrará en una búsqueda de eDiscovery.
+
+Como muestra este ejemplo, aunque puede configurar una política de retención para eliminar mensajes después de solo un día, el servicio se somete a varios procesos para garantizar una eliminación compatible. Como resultado, una acción de eliminación después de 1 día podría tardar 16 días antes de que el mensaje se elimine permanentemente para que ya no se devuelva en las búsquedas de exhibición de documentos electrónicos.
 
 ## <a name="messages-and-external-users"></a>Mensajes y usuarios externos
 
