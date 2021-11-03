@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/28/2021
-ms.openlocfilehash: 6ae7805ddc762de081b201b1ebafca21eeaf5632
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.date: 11/02/2021
+ms.openlocfilehash: b7dc38ba6b4c1fcc214dfca5d621269a35eaf323
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701662"
+ms.locfileid: "60725561"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -37,7 +37,7 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 |Privilegio|Permiso|
 |---|---|
-|Access|Lectura, Escritura, Ejecución|
+|Acceso|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditoría, Permitir, Impedir|
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
@@ -88,7 +88,7 @@ Puede usar las siguientes propiedades para crear un grupo de almacenamiento extr
 | **Sid** | El sid de usuario local o el grupo sid de usuario o el Sid del objeto AD, define si se va a aplicar esta directiva sobre un usuario o grupo de usuarios específicos; una entrada puede tener un máximo de un Sid y una entrada sin que ningún Sid signifique aplicar la directiva sobre la máquina. |  |
 | **ComputerSid** | El equipo local Sid o el grupo Sid del equipo o el Sid del objeto AD, define si se va a aplicar esta directiva sobre un equipo o grupo de máquinas específico; una entrada puede tener un máximo de un ComputerSid y una entrada sin que ComputerSid signifique aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada. |  |
 | **Opciones** | Define si se va a mostrar la notificación o no |**0 o 4:** cuando se selecciona Tipo Permitir o Denegar. <p>0: nada<p>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación. <p> Cuando se **selecciona Tipo AuditAllowed:** <p>0: nada <p>1: nada <p>2: evento send<p>3: evento send <p> Cuando se **selecciona Tipo AuditDenied:** <p>0: nada <p>1: mostrar notificación <p>2: evento send<p>3: mostrar notificación y enviar evento |
-|AccessMask|Define el acceso. | **1-7**: <p>Lectura <p>Escritura <p>Lectura y escritura <p>Ejecutar <p>Lectura y ejecución<p>Escritura y ejecución <p>Lectura y escritura y ejecución |
+|AccessMask|Define el acceso. | **1-7**: <p>1: Leer <p>2: Escribir <p>3: Lectura y escritura <p>4: Ejecutar <p>5: Leer y ejecutar<p>6: Escribir y ejecutar <p>7: Lectura y escritura y ejecución |
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Escenarios comunes Storage control de acceso extraíble
 

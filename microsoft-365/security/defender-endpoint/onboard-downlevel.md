@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f17f8fe3ccb659f04ab5acac9108d4151a5d1769
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5c4936906ba830a660c38b76c7aaf5598ba7724c
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240529"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725584"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
@@ -83,15 +83,18 @@ Revise los siguientes detalles para comprobar los requisitos mínimos del sistem
 - Instalar el paquete acumulativo de actualizaciones [mensuales de febrero de 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
   > [!NOTE]
-  > Solo se aplica Windows 7 SP1 Enterprise y Windows 7 SP1 Pro.
+  > Solo se aplica Windows Server 2008 R2, Windows 7 SP1 Enterprise y Windows 7 SP1 Pro.
 
 - Instalar la actualización [para la experiencia del cliente y telemetría de diagnóstico](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
 - Instalar [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (o posterior) o [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
     > [!NOTE]
-    > Solo se aplica Windows 7 SP1 Enterprise y Windows 7 SP1 Pro.
+    > Solo se aplica Windows Server 2008 R2, Windows 7 SP1 Enterprise y Windows 7 SP1 Pro.
+    >
     > No instales .NET Framework 4.0.x, ya que anulará la instalación anterior.
+    >
+    > La instalación de .NET 4.5 puede requerir que reinicie el equipo después de la instalación.
 
 - Cumpla los requisitos mínimos del sistema del agente de Azure Log Analytics. Para obtener más información, vea [Recopilar datos de equipos en su entorno con Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
@@ -325,7 +328,7 @@ Puede usar cualquiera de los siguientes métodos:
 
     ![Imagen de Microsoft Monitoring Agent propiedades](images/atp-mma.png)
 
-#### <a name="run-a-powershell-command-to-remove-the-configuration&quot;></a>Ejecutar un comando de PowerShell para quitar la configuración
+#### <a name="run-a-powershell-command-to-remove-the-configuration"></a>Ejecutar un comando de PowerShell para quitar la configuración
 
 1. Obtener el id. de área de trabajo:
 
@@ -339,7 +342,7 @@ Puede usar cualquiera de los siguientes métodos:
     ```   
     $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
     # Remove OMS Workspace
-    $AgentCfg.RemoveCloudWorkspace(&quot;WorkspaceID")
+    $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
 

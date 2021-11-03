@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: 3e2e0cdfb90a6ba224fc58b328381cb1da66e850
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2498017d7322de547db57a9106cfb58b42664fec
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198810"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725647"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -211,7 +211,7 @@ Cuando se producen varios eventos que coinciden con las condiciones de una direc
 
 La longitud del intervalo de agregación depende de la Office 365 o Microsoft 365 suscripción.
 
-|Suscripción|Intervalo de agregación|
+|Suscripción |Intervalo de agregación|
 |:---------|:---------:|
 |Office 365 o Microsoft 365 E5/G5|1 minuto|
 |Defender para Office 365 Plan 2 |1 minuto|
@@ -259,6 +259,8 @@ Para ver a qué categoría está asignada una directiva de alerta predeterminada
 |Administración de cumplimiento de DLP||![Marca de verificación.](../media/checkmark.png)|||||
 |Export|||||||
 |Hold|||||||
+|Analista de Information Protection||![Marca de verificación.](../media/checkmark.png)|||||
+|Investigador de protección de información||![Marca de verificación.](../media/checkmark.png)|||||
 |Administrar alertas||||||![Marca de verificación.](../media/checkmark.png)|
 |Configuración de la organización||||||![Marca de verificación.](../media/checkmark.png)|
 |Preview|||||||

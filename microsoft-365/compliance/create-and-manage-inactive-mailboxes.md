@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Conserve el contenido de los buzones eliminados mediante la característica de buzones inactivos en Microsoft 365.
-ms.openlocfilehash: bff4f3d1b835b0d79ec38e2dcb470987a3705a1f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bbc110aae12a233357f23f94cf2600b3079a3666
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167347"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725567"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -62,7 +62,7 @@ Para obtener procedimientos paso a paso para colocar un buzón en retención por
 - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 
 > [!NOTE]
-> Para las directivas de retención y retención por juicio, puede crear una retención indefinida o en una retención basada en tiempo. En una retención indefinida, el contenido del buzón inactivo se conservará siempre, hasta que se elimine la retención o hasta que se cambie la duración de la retención. Después de quitar la directiva de retención o retención (suponiendo que el buzón se eliminó hace más de 183 días), el buzón inactivo se marcará para su eliminación permanente y el contenido del buzón ya no se conservará ni se podrá detectar. En una directiva de retención o retención basada en tiempo, especifique la duración de la retención. Esta duración se establece para cada elemento, y se calcula a partir de la fecha en que un elemento de buzón se ha recibido o creado. Una vez que ha expirado la retención para un elemento de buzón, y ese elemento se ha movido a la carpeta Elementos recuperables del buzón inactivo o se encuentra en ella, el elemento se elimina permanentemente (purga) del buzón inactivo. 
+> Para las directivas de retención y retención por juicio, puede crear una retención indefinida o en una retención basada en tiempo. En una retención indefinida, el contenido del buzón inactivo se conservará siempre, hasta que se elimine la retención o hasta que se cambie la duración de la retención. Después de quitar la directiva de retención o retención, el buzón estará en estado eliminado temporalmente durante otros 183 días, después de los cuales el buzón se marcará para su eliminación permanente y el contenido del buzón ya no se conservará ni se podrá detectar. En una directiva de retención o retención basada en tiempo, especifique la duración de la retención. Esta duración se establece para cada elemento, y se calcula a partir de la fecha en que un elemento de buzón se ha recibido o creado. Una vez que ha expirado la retención para un elemento de buzón, y ese elemento se ha movido a la carpeta Elementos recuperables del buzón inactivo o se encuentra en ella, el elemento se elimina permanentemente (purga) del buzón inactivo. 
   
 ### <a name="step-2-delete-the-mailbox"></a>Paso 2: Eliminar el buzón.
 
@@ -134,4 +134,4 @@ Si otro empleado asume las responsabilidades de un antiguo empleado o si otra pe
   
 ## <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
-Si ya no necesita conservar el contenido de un buzón inactivo, puede eliminar permanentemente el buzón inactivo quitando la retención o quitando la directiva de retención aplicada al buzón inactivo. El buzón se conservará durante 183 días después de quitar la directiva de retención o retención. Después de 183 días, el buzón se marcará para su eliminación permanente y el buzón no se podrá recuperar. Si el buzón inactivo se eliminó en los últimos 183 días, aún puede recuperarlo. Para obtener procedimientos paso a paso para quitar una suspensión o una directiva de retención para eliminar permanentemente un buzón inactivo, vea [Delete an inactive mailbox](delete-an-inactive-mailbox.md).
+Si ya no necesita conservar el contenido de un buzón inactivo, puede eliminar permanentemente el buzón inactivo quitando la retención o quitando la directiva de retención aplicada al buzón inactivo. El buzón se conservará durante 183 días después de quitar la directiva de retención o retención y se podrá recuperar durante ese tiempo. Después de 183 días, el buzón se marcará para su eliminación permanente y el buzón no se podrá recuperar. Para obtener procedimientos paso a paso para quitar una suspensión o una directiva de retención para eliminar permanentemente un buzón inactivo, vea [Delete an inactive mailbox](delete-an-inactive-mailbox.md).

@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bbcdbcc8dae41d9de2071e90b0bec877cef63ba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5baff70cb3318b05092e940e8160029bc2be69af
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198726"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725615"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Obtenga información sobre las barreras de información en Microsoft 365
 
@@ -82,8 +82,8 @@ Para obtener más información sobre la experiencia del usuario con las barreras
 
 Las barreras de información se están implementando ahora y se incluyen en las suscripciones, como:
 
-- Microsoft 365 (E5/A5)
-- Office 365 E5/A5
+- Microsoft 365 E5/A5/A3/A1
+- Office 365 E5/A5/A3/A1
 - Cumplimiento avanzado de Office 365
 - Microsoft 365 Cumplimiento E5/A5
 - Administración de riesgos internos de Microsoft 365
@@ -101,7 +101,7 @@ Para [definir o editar directivas de barrera de información,](information-barri
 
 Debe estar familiarizado con los cmdlets de PowerShell para definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el artículo sobre cómo [hacerlo,](information-barriers-policies.md)deberá conocer otros detalles, como parámetros, para su organización.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga más información sobre las barreras de información en Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Obtenga más información sobre las barreras de información en SharePoint Online](/sharepoint/information-barriers)

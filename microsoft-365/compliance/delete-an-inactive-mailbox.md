@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Cuando ya no necesite conservar el contenido de un buzón Microsoft 365 inactivo, puede eliminar permanentemente el buzón inactivo.
-ms.openlocfilehash: f0f60952db4b4a63dd0c72d1cd467e918a1a68c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f3dee1ab2680445f854d963d8c55cdb3192ac56
+ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203176"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60725629"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
@@ -206,9 +206,9 @@ Si la retención local contiene un gran número de buzones de origen, es posible
 
 ## <a name="more-information"></a>Más información
 
-- **Un buzón inactivo es un tipo de buzón eliminado temporalmente.** En Exchange Online, un buzón eliminado temporalmente es un buzón que se ha eliminado, pero se pueden recuperar en un período de retención específico. Un buzón inactivo anteriormente estará disponible como buzón eliminado temporalmente en Exchange Online durante 183 días. Esto significa que el buzón se puede recuperar dentro de los 183 días siguientes a la eliminación temporal. Después de 183 días, un buzón eliminado temporalmente se marca para su eliminación permanente y no se puede recuperar.
+- **Un buzón inactivo es un tipo de buzón eliminado temporalmente.** En Exchange Online, un buzón eliminado temporalmente es un buzón que se ha eliminado, pero se pueden recuperar en un período de retención específico. Para los buzones eliminados temporalmente que no están en espera, el buzón se puede recuperar en un plazo de 30 días. Un buzón inactivo (un buzón en espera antes de su eliminación) permanecerá en estado de retención eliminado temporalmente hasta que se quite la retención. Después de quitar la retención de un buzón inactivo, el buzón ya no estará inactivo. En su lugar, se eliminará temporalmente y permanecerá en Exchange Online durante 183 días desde el día en que se quitó la retención y se podrá recuperar durante ese tiempo. Después de 183 días, un buzón eliminado temporalmente se marca para su eliminación permanente y no se puede recuperar.
 
-- **¿Qué ocurre después de quitar la retención en un buzón inactivo?** El buzón se trata como otros buzones eliminados temporalmente y se marca para su eliminación permanente después de que expire el período de retención de buzones eliminado temporalmente de 183 días. Este período de retención empieza en la fecha en que el buzón se volvió inactivo por primera vez. Esta fecha se conoce como la fecha de eliminación temporal, que es la fecha en que se eliminó la cuenta de usuario correspondiente o cuando se eliminó el buzón de Exchange Online con el cmdlet **Remove-Mailbox.** La fecha de eliminación temporal no es la fecha en que se quita la retención.
+- **¿Qué ocurre después de quitar la retención en un buzón inactivo?** El buzón se trata como otros buzones eliminados temporalmente y se marca para su eliminación permanente después de que expire el período de retención de buzones eliminado temporalmente de 183 días. Este período de retención comienza en la fecha en que se quita la retención del buzón inactivo. La *propiedad InactiveMailboxRetireTime* se establece cuando el buzón pasa de estar inactivo (eliminado temporalmente en espera) a no estar inactivo (eliminado temporalmente sin retenciones). En ese momento, la *propiedad InactiveMailboxRetireTime* se establece en la fecha actual cuando se produjo la transición. Hay un asistente que se ejecuta (denominado asistente *MailboxLifeCycle)* que busca buzones que tienen establecida la propiedad *InactiveMailboxRetireTime.* Si "InactiveMailboxRetireTime + 183 días" es menor que la fecha actual, purgará el buzón.
 
 - **¿Un buzón inactivo se elimina de forma permanente inmediatamente después de quitar la retención?** Un buzón inactivo anteriormente estará disponible en el estado eliminado temporalmente durante 183 días. Después de 183 días, el buzón se marcará para su eliminación permanente.
 
