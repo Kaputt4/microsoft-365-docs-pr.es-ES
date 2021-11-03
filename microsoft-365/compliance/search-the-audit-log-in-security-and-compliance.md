@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 74c23766bc2780cca0e370940e7fefacdba9d050
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2cd42f5443506a51539638d4ddaa7ab2bd19ebcd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587546"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60646960"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -170,7 +170,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
 
     > [!TIP]
-    > Use una sesión de exploración privada (que no sea una sesión regular) para obtener acceso al Centro de cumplimiento de Microsoft 365, ya que esto evita que se puedan usar las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de Exploración de InPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana de incógnito), presione CTRL + MAYÚS + N.
+    > Use una sesión de exploración privada (no una sesión normal) para obtener acceso al Centro de cumplimiento de Microsoft 365, ya que esto evitará que las credenciales con las que inició sesión actualmente sean usadas. Presione **CTRL+MAYÚS+N** para abrir una sesión de Exploración de InPrivate en Microsoft Edge o una sesión de exploración privada en Google Chrome (denominada ventana de incógnito).
 
 2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Auditoría**.
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -18,26 +18,26 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: 9d1577cff0cc06589c833a568af214c99059e829
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
+ms.openlocfilehash: 182a86a92d628ce5c67c1bcf4e4d3976ce7fa697
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364536"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60699322"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
 Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para supervisar las acciones que se realizan en elementos que ha determinado que son confidenciales y para ayudar a evitar el uso compartido accidental de estos elementos. Para más información sobre DLP en punto de conexión de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md).
 
-**La prevención de pérdida de datos en punto de conexión** (Endpoint DLP) amplía la supervisión de la actividad y las capacidades de protección de DLP a elementos confidenciales que estén en dispositivos con Windows 10. Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft 365, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el[explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
+**La Prevención de pérdida de datos en puntos finales** (Endpoint DLP) amplía las capacidades de supervisión y protección de la actividad de DLP a los elementos sensibles almacenados físicamente en dispositivos Windows 10 y macOS (Catalina 10.15 y superior). Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft 365, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el[explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > Si está buscando el control de dispositivos para el almacenamiento extraíble, consulte [Control de dispositivo de Microsoft Defender para punto de conexión extraíble en el control de acceso de almacenamiento](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Actividades en punto de conexión que puede supervisar y sobre las que puede tomar medidas
 
-DLP de punto de conexión de Microsoft le permite auditar y administrar los tipos de actividades que se detallan a continuación y en las que los usuarios se enfrentan a elementos confidenciales que están almacenados en los dispositivos con Windows 10.
+Microsoft Endpoint DLP permite auditar y administrar los siguientes tipos de actividades que los usuarios realizan en elementos confidenciales almacenados físicamente Windows 10 dispositivos o dispositivos macOS.
 
 |Actividad |Descripción  | Auditable/restringible|
 |---------|---------|---------|
@@ -76,7 +76,7 @@ Si solo quiere supervisar los datos de las coincidencias de directivas, puede de
 > Si la configuración **Auditar siempre la actividad de archivos para dispositivos** está instalada, las actividades de cualquier archivo Word, PowerPoint, Excel, PDF y .csv siempre se auditan, incluso si el dispositivo no está dirigido por ninguna directiva.
 
 > [!TIP]
-> Para garantizar que las actividades se auditan para todos los tipos de archivo admitidos, cree una [directiva DLP personalizada](create-test-tune-dlp-policy.md) junto con la directiva predeterminada.
+> Para asegurarse de que las actividades se auditan para todos los tipos de archivo admitidos, cree una [ directiva DLP personalizada](create-test-tune-dlp-policy.md).
 
 
 DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo.

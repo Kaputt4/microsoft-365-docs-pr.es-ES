@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ff568ffb32a6feb3ef8eba46cad1127dcead0465
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: caf6d596f6be8e405a75eab10be9daee1aa0ccf6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553897"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60669752"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -117,11 +117,11 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      - **_MarkAsSpamBulkMail_ está Activado**: una BCL que es superior al umbral se convierte en un SCL 6 que corresponde a un veredicto de filtrado de **Correo no deseado**, y la acción del veredicto de filtrado **en masa** se lleva a cabo en el mensaje.
      - **_MarkAsSpamBulkMail_ está desactivada**: el mensaje está marcado con los BCL, pero no se realiza _ninguna acción_ para un veredicto de filtrado **en masa**. De hecho, el umbral de BCL y el veredicto de filtrado **en masa** no son relevantes.
 
-   - **Aumentar la puntuación del correo no deseado**, **Marcar como correo no deseado**<sup>\*</sup> y **Modo de prueba**: contiene la configuración del Filtro avanzado de correo no deseado (ASF) desactivada de forma predeterminada. Las opciones ASF pronto estarán en desuso y su funcionalidad se incorporará a otras partes de la pila de filtrado. Se recomienda desactivar todas las opciones de ASF en las directivas contra el correo no deseado.
+   - **Aumentar la puntuación del correo no deseado**, **Marcar como correo no deseado**<sup>\*</sup> y **Modo de prueba**: la configuración del Filtro avanzado de correo no deseado (ASF) desactivada de forma predeterminada.
 
      Para más información sobre estas opciones, consulte [Opciones avanzadas de filtro de correo no deseado en EOP](advanced-spam-filtering-asf-options.md).
 
-      <sup>\*</sup> **Contiene idiomas específicos** y **de estos países** no forman parte de la configuración de ASF.
+      <sup>\*</sup> Los **Contenidos de idiomas específicos** y **de estos países** no forman parte de la configuración de ASF.
 
    - **Contiene idiomas específicos**: Haga clic en la casilla y seleccione **Activado** o **Desactivado** en la lista desplegable. Si la activa, aparecerá un cuadro. Empiece a escribir el nombre de un idioma en el cuadro. Aparecerá una lista filtrada de idiomas admitidos. Cuando encuentre el idioma que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
@@ -147,7 +147,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
      ****
 
-     |Acción|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)|Alto<br>confianza<br>suplantación de identidad (phishing)|Masivo|
+     |Action|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)|Alto<br>confianza<br>suplantación de identidad (phishing)|Masivo|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Mover el mensaje a la carpeta Correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|
      |**Agregar encabezado X**: agrega un encabezado X al encabezado del mensaje y entrega el mensaje al buzón. <p> Especifique el nombre de campo del encabezado X (no el valor) más adelante en el cuadro **Agregar este texto de encabezado X**. <p> Para los veredictos **Correo no deseado** y **Correo no deseado de alta confianza**, el mensaje se mueve a la carpeta Correo no deseado.<sup>1,2</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
@@ -166,10 +166,10 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      >
      > <sup>3</sup> Un valor de **Seleccione política** en blanco significa que se usa la política de cuarentena predeterminada para ese veredicto en particular. Cuando más adelante usted edite la política contra correo no deseado o vea la configuración, se muestra el nombre predeterminado de la política sobre cuarentena. Para obtener más información acerca de las políticas de cuarentena predeterminadas que se usan para los veredictos de filtro de correo no deseado, vea [esta tabla](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
-   - **Mantener correo no deseado en cuarentena durante este número de días**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días. Para más información acerca de la cuarentena, consulte los siguientes artículos:
-     - [Mensajes en cuarentena en EOP](quarantine-email-messages.md)
-     - [Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md)
-     - [Búsqueda y liberación de mensajes en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md)
+   - **Mantener correo no deseado en cuarentena durante este número de días**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará y no se podrá recuperar. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días.
+
+     > [!NOTE]
+     > Esta configuración también controla cuánto tiempo se conservan los mensajes que se han puesto en cuarentena mediante directivas contra suplantación de identidad. Para obtener más información, vea [Mensajes en cuarentena en EOP y Defender para Office 365](quarantine-email-messages.md).
 
    - **Agregar este texto de encabezado X**: este cuadro es obligatorio y solo está disponible si se ha seleccionado **Agregar encabezado X** como acción para un veredicto de filtrado de correo no deseado. El valor que especifique es el *nombre* del campo de encabezado que se agrega al encabezado del mensaje. El *valor* del campo de encabezado siempre es `This message appears to be spam`.
 
@@ -193,7 +193,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      - **Habilitar ZAP para los mensajes de correo no deseado**: de forma predeterminada, ZAP está habilitada para la detección de correo no deseado, pero puede deshabilitarla si desactiva la casilla.
 
    > [!NOTE]
-   > Las notificaciones de spam del usuario final han sido sustituidas por _notificaciones de cuarentena_ en las directivas de cuarentena que contienen información sobre los mensajes en cuarentena para todas las funciones de protección admitidas (no sólo los veredictos de las políticas antispam). Para obtener más información, consulte [Directivas de cuarentena](quarantine-policies.md).
+   > Las notificaciones de correo no deseado del usuario final se han reemplazado por _notificaciones de cuarentena_ en directivas de cuarentena. Las notificaciones de cuarentena contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo directivas contra correo no deseado y veredictos de directivas contra suplantación de identidad). Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -271,7 +271,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
    Para la directiva contra correo no deseado predeterminada, la sección **Se aplica a** no está disponible (la directiva se aplica a todos los usuarios) y no se puede cambiar el nombre de la directiva.
 
-Vea las secciones siguientes para habilitar o deshabilitar una directiva, establecer el orden de prioridad de la directiva o configurar las notificaciones en cuarentena para el usuario final.
+Para habilitar o deshabilitar una directiva o establecer el orden de prioridad de la directiva, consulte las secciones siguientes.
 
 ### <a name="enable-or-disable-anti-spam-policies"></a>Habilitar o deshabilitar las directivas contra correo no deseado
 

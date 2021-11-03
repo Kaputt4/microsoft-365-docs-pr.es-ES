@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 6edeea09798781d08b34566c469bead3aea22356
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 345f9ad748ca108cfa3e153239ef8534c1262bfa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432630"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702766"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -41,7 +41,7 @@ Las etiquetas de retención auto aplicadas son poderosas porque:
     
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
     
-Puede aplicar etiquetas de retención al contenido automáticamente cuando ese contenido aún no tiene aplicada una etiqueta de retención y contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores entrenables](classifier-get-started-with.md).
+Puede aplicar etiquetas de retención al contenido automáticamente cuando ese contenido aún no tiene aplicada una etiqueta de retención y contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores entrenables](classifier-get-started-with.md). Ahora en versión preliminar, también puede aplicar automáticamente una etiqueta de retención a los datos adjuntos en la nube que se almacenan en SharePoint o OneDrive.
 
 > [!TIP]
 > Use las propiedades que se pueden buscar para identificar [Grabaciones de reuniones de Teams](#microsoft-teams-meeting-recordings) y [elementos que tienen aplicada una etiqueta de confidencialidad](#identify-files-and-emails-that-have-a-sensitivity-label).
@@ -57,7 +57,7 @@ Utilice las siguientes instrucciones para los dos pasos de administrador.
 >
 > - Puede aplicar fácilmente una etiqueta de retención a un modelo de comprensión mediante documentos en SharePoint Syntex.
 > - Aplicar una etiqueta de retención predeterminada para SharePoint y Outlook
->- Aplicar una etiqueta de retención al correo electrónico mediante el uso de reglas de Outlook
+> - Aplicar una etiqueta de retención al correo electrónico mediante el uso de reglas de Outlook
 >
 > Para estos escenarios, consulte [Crear y aplicar etiquetas de retención en aplicaciones](create-apply-retention-labels.md).
 
@@ -65,7 +65,7 @@ Utilice las siguientes instrucciones para los dos pasos de administrador.
 
 El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no va a iniciar sesión como administrador global, consulte [Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
-Antes de crear la directiva de etiqueta de retención, decida si será **adaptable** o **estática**. Para obtener más información, vea [Ámbitos de directivas adaptables o estáticas para retención.](retention.md#adaptive-or-static-policy-scopes-for-retention) Si decide usar una directiva adaptable, debe crear uno o más ámbitos adaptables antes de crear la directiva de etiqueta de retención. Luego deberá seleccionarlos durante el proceso de creación de directivas de etiqueta de retención. Para obtener instrucciones, vea [Información de configuración para ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
+Antes de crear la directiva de etiqueta de retención, decida si será **adaptable** o **estática**. Para obtener más información, vea [Ámbitos de directivas adaptables o estáticas para retención](retention.md#adaptive-or-static-policy-scopes-for-retention). Si decide usar una directiva adaptable, debe crear uno o más ámbitos adaptables antes de crear la directiva de etiqueta de retención. Luego deberá seleccionarlos durante el proceso de creación de directivas de etiqueta de retención. Para obtener instrucciones, vea [Información de configuración para ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
 
 ## <a name="how-to-auto-apply-a-retention-label"></a>Cómo aplicar automáticamente una etiqueta de retención
 
@@ -87,7 +87,7 @@ Las instrucciones de navegación dependerán de si está usando o no la [adminis
 
 2. Siga las instrucciones del asistente en la configuración.
     
-    Para obtener más información sobre la configuración de retención, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
+    Para obtener más información sobre la configuración de retención, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content). Sin embargo, si la etiqueta se usará para [n datos adjuntos en la nube](#auto-apply-labels-to-cloud-attachments), asegúrate de configurar el inicio del período de retención para que sea **Cuando se etiquetaron los elementos**.
     
     Si utiliza la administración de registros:
     
@@ -96,7 +96,6 @@ Las instrucciones de navegación dependerán de si está usando o no la [adminis
     - Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplique la etiqueta automáticamente o simplemente guárdela: seleccione **Aplicar esta etiqueta automáticamente a un tipo de contenido específico** y seleccione **Finalizado** 
-4.  que le lleva directamente al paso 2 del procedimiento siguiente.
 
 Para editar una etiqueta existente, selecciónela y seleccione la opción **Editar etiqueta** para iniciar la configuración **Editar etiqueta de retención** que le permite cambiar las descripciones de las etiquetas y cualquier [configuración válida](#updating-retention-labels-and-their-policies) del paso 2.
 
@@ -122,7 +121,7 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
 
 5. Según el ámbito seleccionado:
     
-    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) agregados. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **correo de Exchange** pero no **sitios de SharePoint**. 
+    - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **correo de Exchange** pero no **sitios de SharePoint**. 
     
     - Si ha elegido **Estático**: en la página **Elegir ubicaciones**, active o desactive cualquiera de las ubicaciones. Para cada ubicación, puede dejar de forma predeterminada [aplicar la directiva a toda la ubicación](retention-settings.md#a-policy-that-applies-to-entire-locations), o [especificar lo que se incluye y excluye](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
     
@@ -147,7 +146,11 @@ Puede aplicar etiquetas de retención al contenido automáticamente cuando éste
 
 - [Una coincidencia para clasificadores que se pueden entrenar](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Use la tabla siguiente para identificar cuándo se pueden aplicar automáticamente las etiquetas de retención a los elementos de Exchange:
+O bien, puede aplicar automáticamente etiquetas de retención a los [datos adjuntos de nube](#auto-apply-labels-to-cloud-attachments) recién compartidos.
+
+Cuando configure etiquetas de retención para que se apliquen automáticamente en función de información confidencial, palabras clave o propiedades de búsqueda, o clasificadores entrenables, utilice la siguiente tabla para identificar cuándo se pueden aplicar automáticamente las etiquetas de retención.
+
+Exchange:
 
 |Condición|Elementos en tránsito (enviados o recibidos) |Elementos existentes (datos en reposo)|
 |:-----|:-----|:-----|
@@ -156,7 +159,7 @@ Use la tabla siguiente para identificar cuándo se pueden aplicar automáticamen
 |Palabras clave específicas o propiedades que se pueden buscar| Sí |Sí |
 |Clasificadores que se pueden entrenar| Sí | Sí (solo los últimos seis meses) |
 
-Use la tabla siguiente para identificar cuándo se pueden aplicar automáticamente las etiquetas de retención a los elementos de SharePoint y OneDrive:
+SharePoint y OneDrive:
 
 |Condición|Elementos nuevos o modificados |Elementos existentes (datos en reposo)|
 |:-----|:-----|:-----|
@@ -170,9 +173,9 @@ Además, los elementos de SharePoint que están en borrador o que nunca se han p
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Aplicar automáticamente etiquetas a los contenidos con tipos específicos de información sensible
 
 > [!IMPORTANT]
-> En el caso de los correos electrónicos que se aplican automáticamente mediante la identificación de información confidencial, no se admite el ámbito de la directiva para incluir o excluir destinatarios específicos; esta configuración de directiva solo admite la configuración **Todos los destinatarios**. **Todos los destinatarios** incluye buzones de correos de grupos de Microsoft 365, que son específicos de esta configuración de directivas.
+> En el caso de los correos electrónicos que se aplican automáticamente mediante la identificación de información confidencial, se incluyen automáticamente todos los buzones, incluidos los buzones de Microsoft 365 grupos.
 > 
-> También es específico de esta configuración de directiva, si seleccionas la ubicación **Grupos de Microsoft 365**, solo se incluyen los sitios de SharePoint conectados a un grupo de Microsoft 365 y no los buzones de grupos de Microsoft 365.
+> Aunque los buzones de grupo normalmente se incluirían seleccionando la ubicación **Grupos de Microsoft 365**, para esta configuración de directiva específica, la ubicación de grupos solo incluye sitios de SharePoint conectados a un grupo de Microsoft 365.
 
 Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. En el siguiente ejemplo, los tipos de información confidencial son de la categoría **Privacidad**, y **la plantilla de datos de información personal identificable (PII) de Estados Unidos** :
 
@@ -312,9 +315,56 @@ Que debe tener en cuenta al usar clasificadores que se pueden entrenar para apli
 
 - No puede etiquetar automáticamente los elementos de SharePoint y OneDrive que tengan más de seis meses.
 
+#### <a name="auto-apply-labels-to-cloud-attachments"></a>Aplicar etiquetas automáticamente a datos adjuntos en la nube
+
+> [!NOTE]
+> Esta opción se está implementando gradualmente en versión preliminar y está sujeta a cambios.
+
+Es posible que tenga que usar esta opción si tiene que capturar y conservar todas las copias de los archivos del inquilino que se envían a través de comunicaciones. Use esta opción junto con las directivas de retención para los propios servicios de comunicación, Exchange y Teams.
+
+> [!IMPORTANT]
+> Al seleccionar una etiqueta que se usará para aplicar automáticamente etiquetas de retención para datos adjuntos en la nube, asegúrese de que la configuración de retención de etiquetas **Iniciar el período de retención basado en** es **Cuando se etiquetaron los elementos**.
+
+Los datos adjuntos en la nube, a veces también conocidos como datos adjuntos modernos, son un mecanismo de uso compartido que usa vínculos incrustados a archivos almacenados en la nube. Admiten el almacenamiento centralizado para contenido compartido con ventajas colaborativas, como el control de versiones. Los datos adjuntos en la nube no son copias adjuntas de un archivo o un vínculo de texto de dirección URL a un archivo. Es posible que le resulte útil consultar las listas de comprobación visuales de los datos adjuntos en la nube admitidos en [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) y [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
+
+Al elegir la opción de aplicar una etiqueta de retención a los datos adjuntos de la nube, para fines de cumplimiento, se crea una copia de ese archivo en el momento de compartir. A continuación, la etiqueta de retención seleccionada se aplica a la copia que se puede identificar mediante eDiscovery. Los usuarios no conocen la copia almacenada en la biblioteca de conservación de documentos. La etiqueta de retención no se aplica al mensaje en sí ni al archivo original.
+
+Si el archivo se modifica y se comparte de nuevo, se guarda una nueva copia del archivo como una nueva versión en la biblioteca de conservación de documentos. Para obtener más información, incluido el motivo por el que debe usar la configuración de etiqueta **Cuándo se etiquetaron los elementos**, consulte [Cómo funciona la retención con archivos adjuntos en la nube](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+
+Los datos adjuntos en la nube admitidos para esta opción son archivos como documentos, vídeos e imágenes que se almacenan en SharePoint y OneDrive. Para Teams, se admiten datos adjuntos en la nube compartidos en mensajes de chat y canales estándar y privados. No se admiten los datos adjuntos en la nube compartidos en invitaciones a reuniones y aplicaciones distintas de Teams o Outlook.
+
+Aunque no es necesario para esta opción, se recomienda asegurarse de que el control de versiones está habilitado para los sitios de SharePoint y las cuentas de OneDrive para que la versión compartida se pueda capturar con precisión. Si el control de versiones no está habilitado, se conservará la última versión disponible. No se admiten los documentos en borrador o que nunca se han publicado.
+
+Al seleccionar una etiqueta que se usará para aplicar automáticamente etiquetas de retención para datos adjuntos en la nube, asegúrese de que la configuración de retención de etiquetas **Iniciar el período de retención en función de** es **Cuando se etiquetaron los elementos**. 
+
+Al configurar las ubicaciones para esta opción, puede seleccionar:
+
+- **SharePoint** para archivos compartidos almacenados en sitios de comunicación de SharePoint, sitios de grupo que no están conectados por grupos de Microsoft 365 y sitios clásicos. 
+- **Grupos de Microsoft 365** para los archivos compartidos que se almacenan en sitios de grupo conectados por grupos de Microsoft 365.
+- **Cuentas de OneDrive** para los archivos compartidos almacenados en OneDrive de los usuarios.
+
+Tendrá que crear directivas de retención independientes si desea conservar o eliminar los archivos originales, los mensajes de correo electrónico o los mensajes de Teams.
+
+> [!NOTE]
+> Si desea que los datos adjuntos en la nube retenidos expiren al mismo tiempo que los mensajes que los contienen, configure la etiqueta de retención para que tenga la misma retención y, a continuación, elimine las acciones y los intervalos que las directivas de retención para Exchange y Teams.
+
+Para tener en cuenta al aplicar automáticamente etiquetas de retención a datos adjuntos en la nube:
+
+- Solo los datos adjuntos de nube recién compartidos se etiquetarán automáticamente para la retención.
+
+- No se admiten los datos adjuntos en la nube compartidos fuera de Teams y Outlook.
+
+- Los siguientes elementos no se admiten como datos adjuntos en la nube que se pueden conservar:
+    - Sitios, páginas, listas, formularios, carpetas, conjuntos de documentos y páginas de OneNote de SharePoint.
+    - Archivos compartidos por usuarios que no tienen acceso a esos archivos.
+    - Archivos que se eliminan antes de que se envíen los datos adjuntos en la nube. Esto puede ocurrir si un usuario copia y pega datos adjuntos previamente compartidos desde otro mensaje, sin confirmar primero que el archivo sigue estando disponible. O bien, alguien reenvía un mensaje antiguo cuando se elimina el archivo.
+    - Archivos compartidos por invitados o usuarios externos a la organización.
+    - Archivos en borradores de mensajes de correo electrónico y mensajes que no se envían.
+    - Archivos vacíos.
+
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Tiempo que tardan las etiquetas de retención en aplicarse
 
-Si aplica automáticamente las etiquetas de retención, puede tardar hasta siete días en aplicar las etiquetas de retención a todo el contenido existente que coincida con las condiciones.
+Al aplicar automáticamente etiquetas de retención basadas en información confidencial, palabras clave o propiedades que permiten búsquedas, o clasificadores entrenables, las etiquetas de retención pueden tardar hasta siete días en aplicarse:
   
 ![Diagrama de cuándo entran en vigor las etiquetas de aplicación automática.](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
@@ -330,7 +380,9 @@ Si las etiquetas que esperaba no aparecen después de siete días, compruebe el 
 
 ## <a name="updating-retention-labels-and-their-policies"></a>Actualización de las etiquetas de retención y de sus directivas
 
-Si edita una etiqueta de retención o una directiva de aplicación automática y la etiqueta de retención ya se aplica al contenido, la configuración actualizada se aplicará automáticamente a este contenido, además de al contenido recién identificado.
+En el caso de las directivas de etiquetas de retención de aplicación automática configuradas para información confidencial, palabras clave o propiedades que se pueden buscar, o una coincidencia para clasificadores entrenables: cuando ya se aplica una etiqueta de retención de la directiva al contenido, se aplicará automáticamente un cambio en la configuración de la etiqueta seleccionada y la directiva a este contenido además del contenido que se haya identificado recientemente.
+
+En el caso de las directivas de etiquetas de retención de aplicación automática configuradas para datos adjuntos en la nube: dado que esta directiva se aplica a los archivos recién compartidos en lugar de a los archivos existentes, un cambio en la configuración de la etiqueta y directiva seleccionadas se aplicará automáticamente solo al contenido recién compartido.
 
 Después de crear y guardar la etiqueta o la directiva, no se pueden cambiar algunas opciones de configuración, entre las que se incluyen:
 - El nombre de la etiqueta de retención, la directiva de retención, y la configuración de retención, excepto el período de retención. Sin embargo, no se puede cambiar el período de retención cuando el período de retención se basa en la etiqueta de los elementos.

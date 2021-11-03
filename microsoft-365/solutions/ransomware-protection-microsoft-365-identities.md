@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, ransomware operado por humanos, ransomware operado por personas, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología
+keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use inicios de sesión seguros y Acceso condicional para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 5761cb402be3fb0be907be8f3677a8e3ecbfd875
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 23a9833952aca745e869c13139823b4b0a9400bf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444620"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666691"
 ---
 # <a name="step-3-protect-identities"></a>Paso 3. Proteger identidades
 

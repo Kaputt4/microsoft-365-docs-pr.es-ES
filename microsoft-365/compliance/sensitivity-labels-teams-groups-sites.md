@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: fff0326df591ad5cd414be73afe9f365b1bc04b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e32a74dcb682d77367b5c8e3a3bc2b656d0e236
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151007"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703052"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -102,7 +102,7 @@ Una vez habilitadas las etiquetas de confidencialidad para los contenedores como
     
     - **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. Si seleccionó **Configuración de acceso al dispositivo y uso compartido externo del dispositivo**, configure las siguientes opciones:
+4. Si seleccionó **configuración de uso compartido externo y acceso condicional**, ahora configure las siguientes opciones:
     
     - **Controlar el uso compartido externo desde sitios de SharePoint etiquetados**: seleccione esta opción para seleccionar el uso compartido externo para cualquier usuario, invitados nuevos y existentes, invitados existentes o solo para los usuarios de su organización. Para más información sobre esta configuración y opciones, consulte la documentación de SharePoint [Activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site).
     

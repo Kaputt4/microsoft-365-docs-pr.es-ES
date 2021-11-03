@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: deea83a515feeec15097613b297f395f39e1ffa1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6d617024f2a09b73b7b944fb34bd2f34d024d3c1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202542"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661062"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 
@@ -39,7 +39,7 @@ Microsoft 365 Defender combina las funcionalidades de [Microsoft Defender para p
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE: Detección demostrada, respuesta y protección en el mundo real contra ataques avanzados
 
-Una parte fundamental del enfoque de pruebas de MITRE es imitar los ataques del mundo real para comprender si las soluciones ofrecen la detección y respuesta adecuadas. Mientras que la prueba se centra en la detección y respuesta de puntos de conexión, los ataques APT29 simulados de MITRE abarcan varios dominios de ataque, lo que crea oportunidades para ayudar a las defensas, más allá de la protección de puntos de conexión. Microsoft ha expandido la visibilidad de los defensores más allá del punto de conexión con Microsoft 365 Defender.
+Una parte fundamental del enfoque de pruebas de MITRE es imitar los ataques del mundo real para comprender si las soluciones ofrecen la detección y respuesta adecuadas. Mientras que la prueba se centra en la detección y respuesta de puntos de conexión, los ataques APT29 simulados de MITRE abarcan varios dominios de ataque, lo que crea oportunidades para ayudar a las defensas, más allá de la protección de puntos de conexión. Microsoft ha ampliado la visibilidad más allá del punto de conexión con Microsoft 365 Defender.
 
 - Evaluación basada en ATT&CK de Microsoft 365 Defender (mayo de 2020): [Detección inicial en el mundo real](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 

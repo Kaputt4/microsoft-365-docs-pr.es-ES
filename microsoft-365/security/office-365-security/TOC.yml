@@ -136,18 +136,22 @@
           href: preset-security-policies.md
         - name: Analizador de configuración para directivas de protección
           href: configuration-analyzer-for-security-policies.md
-        - name: Simulador de ataques en Microsoft Defender para Office 365
-          href: attack-simulator.md
-        - name: Introducción al uso de aprendizaje de simulación de ataques
-          href: attack-simulation-training-get-started.md
-        - name: Simule un ataque de suplantación de identidad con formación de simulación de ataques
-          href: attack-simulation-training.md
-        - name: Crear una carga personalizada para la simulación de ataques formación
-          href: attack-simulation-training-payloads.md
-        - name: Obtenga información a través de la formación de simulación de ataques
-          href: attack-simulation-training-insights.md
-        - name: 'Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  '
-          href: attack-simulation-training-faq.md
+        - name: Aprendizaje de simulación de ataques en Defender para Office 365
+          items:
+            - name: Introducción al uso de aprendizaje de simulación de ataques
+              href: attack-simulation-training-get-started.md
+            - name: Simule un ataque de suplantación de identidad con formación de simulación de ataques
+              href: attack-simulation-training.md
+            - name: Crear una carga personalizada para el aprendizaje la simulación de ataques
+              href: attack-simulation-training-payloads.md
+            - name: Automatizaciones de la simulación en el aprendizaje de simulación de ataques
+              href: attack-simulation-training-simulation-automations.md
+            - name: Automatizaciones de carga en el aprendizaje de simulación de ataques
+              href: attack-simulation-training-payload-automations.md
+            - name: Conclusiones e informes en el aprendizaje de simulación de ataques
+              href: attack-simulation-training-insights.md
+            - name: 'Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  '
+              href: attack-simulation-training-faq.md
         - name: Configurar la entrega de simulaciones de suplantación de identidad (phishing) de terceros y buzones de SecOps
           href: configure-advanced-delivery.md
         - name: Ajustes recomendados para configurar EOP y Microsoft Defender para Seguridad de Office 365

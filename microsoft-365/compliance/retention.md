@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: c8c5fc71cc7f6757cb40cc5ae649021ba020dcc2
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 6f147de6412db71a17e8bb4a8b79968160d0fe3e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432700"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701942"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -142,7 +142,7 @@ Con las etiquetas de retención, puede:
   
 - **Permitir que los usuarios de la organización apliquen manualmente una etiqueta de retención** a contenido de Outlook, Outlook en la Web, OneDrive, SharePoint y Grupos de Microsoft 365. Con frecuencia, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo y aplicar la configuración de retención adecuada. 
     
-- **Aplicar etiquetas de retención a contenido automáticamente** si coincide con condiciones específicas, como: 
+- **Aplicar etiquetas de retención al contenido automáticamente** si coincide con condiciones específicas, que incluyen datos adjuntos en la nube que se comparten en el correo electrónico o Teams, o cuando el contenido contiene: 
     - Tipos específicos de información confidencial.
     - Palabras clave específicas que coinciden con una consulta que haya creado.
     - Coincidencias de patrón para un clasificador que se puede entrenar.
@@ -185,14 +185,14 @@ También puede crear una o varias **directivas de etiquetas de retención de apl
 
 #### <a name="retention-label-policies-and-locations"></a>Ubicaciones y directivas de etiquetas de retención
 
-En función de la finalidad de las etiquetas de retención, pueden publicarse en distintas ubicaciones.
+Las etiquetas de retención se pueden publicar en diferentes ubicaciones, en función de lo que haga la etiqueta de retención.
   
 | Si la etiqueta de retención... | Entonces, se puede aplicar la directiva de etiqueta a... |
 |:-----|:-----|
 |Se publica para administradores y usuarios finales  <br/> |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
 |Se aplica automáticamente en función de los tipos de información confidencial o clasificadores que se pueden entrenar  <br/> |Exchange, SharePoint, OneDrive  <br/> |
 |Aplicación automática basada en palabras clave o en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
-   
+|Aplicación automática a datos adjuntos en la nube  <br/> |SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
 
 Las carpetas públicas de Exchange y los mensajes de Skype, Teams y Yammer no admiten etiquetas de retención. Para conservar y eliminar contenido de estas ubicaciones, use más bien las directivas de retención.
 
@@ -246,7 +246,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |Configuración de retención que puede conservar y, después, eliminar, solo conservar o solo eliminar. |Sí |Sí |
 |Cargas de trabajo compatibles: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Grupos de Microsoft 365 <br />- Skype Empresarial <br />- Teams<br />- Yammer|<br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí | <br /> Sí, excepto carpetas públicas <br /> Sí <br /> Sí <br /> Sí <br /> No <br /> No <br /> No |
 |Retención aplicada automáticamente | Sí | Sí |
-|La retención aplicada se basa en las condiciones <br /> - tipos de información confidencial, consultas KQL y palabras clave, clasificadores de aprendizaje| No | Sí |
+|La retención aplicada se basa en las condiciones <br /> - tipos de información confidencial, consultas KQL y palabras clave, clasificadores de aprendizaje, archivos adjuntos en la nube| No | Sí |
 |Retención aplicada manualmente | No | Sí |
 |Interacción del usuario final | No | Sí |
 |Se mantiene si el contenido se mueve | No | Sí, dentro de su espacio empresarial de Microsoft 365 |
