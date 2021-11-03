@@ -21,8 +21,8 @@ ms.openlocfilehash: 1dfcbc21b84e0d35504f513d6dc1a46b7581f0e2
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700858"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673565"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 

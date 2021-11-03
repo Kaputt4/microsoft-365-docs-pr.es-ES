@@ -23,8 +23,8 @@ ms.openlocfilehash: 182a86a92d628ce5c67c1bcf4e4d3976ce7fa697
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699322"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673481"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 

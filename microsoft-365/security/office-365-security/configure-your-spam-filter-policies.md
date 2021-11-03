@@ -21,8 +21,8 @@ ms.openlocfilehash: caf6d596f6be8e405a75eab10be9daee1aa0ccf6
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60669752"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701412"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 

@@ -158,6 +158,7 @@
 
 ##### [Microsoft Defender para punto de conexión en Android]()
 ###### [Introducción a Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md)
+###### [Novedades](android-whatsnew.md)
 
 ###### [Implementar]()
 ####### [Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune](android-intune.md)
@@ -188,10 +189,13 @@
 
 ##### [Términos de licencia de la aplicación de Microsoft Defender para punto de conexión](mde-terms-mobile.md) 
 
+### [Administrar las opciones de configuración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Solucionar problemas de incorporación]()
 #### [Solucionar problemas durante la incorporación](troubleshoot-onboarding.md)
 #### [Solucionar problemas de acceso a la suscripción y al portal](troubleshoot-onboarding-error-messages.md)
+#### [Solucionar problemas de incorporación relacionados con la administración de la configuración de seguridad](troubleshoot-security-config-mgt.md)
+
 
 
 

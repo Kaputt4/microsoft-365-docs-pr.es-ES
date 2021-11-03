@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: ba757f55e226d436250efa4da3340253dc017be6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190850"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701954"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
@@ -147,7 +147,7 @@ Adicionalmente, para crear trabajos de importación en el Centro de cumplimiento
 
 #### <a name="where-is-network-upload-available"></a>¿Dónde está disponible la carga en la red?
 
-La carga en la red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Alemania, Suiza, Noruega, Europa, India, Asia Oriental, Sudeste asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos. La carga en la red estará disponible en más regiones próximamente.
+La carga en la red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Alemania, Suiza, Noruega, Europa, India, Asia Oriental, Sudeste asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos. La carga de red estará disponible en más regiones en el futuro.
 
 #### <a name="what-is-the-pricing-for-importing-pst-files-by-using-network-upload"></a>What is the pricing for importing PST files by using network upload?
 
@@ -222,7 +222,7 @@ Adicionalmente, para crear trabajos de importación en el Centro de cumplimiento
 
 #### <a name="where-is-drive-shipping-available"></a>¿Dónde está disponible el envío de unidades?
 
-El envío de unidades está disponible actualmente en Estados Unidos, Canadá, Brasil, Reino Unido, Europa, India, Asia Pacífico, Sudeste de Asia, Japón, República de Corea, Australia y Sudáfrica. Próximamente, el envío de unidades estará disponible en más regiones.
+El envío de unidades está disponible actualmente en Estados Unidos, Canadá, Brasil, Reino Unido, Europa, India, Asia Oriental, Sudeste asiático, Japón, República de Corea y Australia. El envío de unidades estará disponible en más regiones en el futuro.
 
 > [!NOTE]
 > En este momento, el envío de unidades para importar archivos PST no está disponible en Alemania y Suiza. Estas preguntas más frecuentes se actualizarán cuando se disponga de envío de unidades en estos países.

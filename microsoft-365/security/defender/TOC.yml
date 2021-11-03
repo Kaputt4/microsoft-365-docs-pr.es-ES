@@ -4,26 +4,22 @@
   items:
     - name: Información general
       items:
-        - name: ¿Qué es Microsoft 365 Defender?
+        - name: "Microsoft\_365\_Defender"
           href: microsoft-365-defender.md
-        - name: Evaluación de Microsoft 365 Defender
-          href: overview-security-center.md
         - name: Novedades de Microsoft 365 Defender
           href: whats-new.md
-        - name: Microsoft Defender para punto de conexión en Microsoft 365 Defender
-          href: microsoft-365-security-center-mde.md
-        - name: Defender para Office 365 en Microsoft 365 Defender
-          href: microsoft-365-security-center-mdo.md
-        - name: Redirigiendo Defender para punto de conexión a Microsoft 365 Defender
-          href: microsoft-365-security-mde-redirection.md
-        - name: Redirigiendo el Centro de seguridad y cumplimiento de Office 365 a Microsoft 365 Defender
-          href: microsoft-365-security-mdo-redirection.md
+        - name: "Las API de Microsoft\_365 Defender"
+          items:
+            - name: Microsoft Defender para punto de conexión en Microsoft 365 Defender
+              href: microsoft-365-security-center-mde.md
+            - name: Defender para Office 365 en Microsoft 365 Defender
+              href: microsoft-365-security-center-mdo.md
+            - name: Redirigiendo Defender para punto de conexión a Microsoft 365 Defender
+              href: microsoft-365-security-mde-redirection.md
+            - name: Redirigiendo el Centro de seguridad y cumplimiento de Office 365 a Microsoft 365 Defender
+              href: microsoft-365-security-mdo-redirection.md
         - name: Integración de Microsoft 365 Defender con Azure Sentinel.
           href: microsoft-365-defender-integration-with-azure-sentinel.md
-        - name: Versión preliminar de las características
-          href: preview.md
-        - name: Solucionar problemas
-          href: ./troubleshoot.md
         - name: Pruebas del sector
           href: ./top-scoring-industry-tests.md
     - name: Plan
@@ -94,9 +90,9 @@
       items:
         - name: Información general
           href: get-started.md
-        - name: Activar Microsoft 365 Defender
+        - name: 1. Activar Microsoft 365 Defender
           href: m365d-enable.md
-        - name: Implementación de servicios compatibles
+        - name: 2. Implementación de servicios compatibles
           href: deploy-supported-services.md
         - name: Activar las Preguntas y respuestas de Microsoft 365 Defender
           href: m365d-enable-faq.md
@@ -130,6 +126,8 @@
               href: ../defender-identity/notifications.md
     - name: Investigar y responder a amenazas
       items:
+        - name: Información general
+          href: incident-response-overview.md
         - name: Responder a los incidentes
           items:
             - name: Información general
@@ -166,10 +164,6 @@
                   href: investigate-users.md
             - name: Cuadernos de estrategias de respuesta a incidentes
               href: /security/compass/incident-response-playbooks
-            - name: Recibir notificaciones de incidentes por correo electrónico
-              href: get-incident-notifications.md
-            - name: Usar Power Automate para clasificar las amenazas
-              href: use-power-automate.md
         - name: Administrar la investigación y respuesta automatizada
           items:
             - name: Información general
@@ -310,7 +304,7 @@
               href: ../mtp/microsoft-threat-experts.md
             - name: Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
               href: ../mtp/configure-microsoft-threat-experts.md
-    - name: Integración de SecOps
+    - name: Guía de operaciones de seguridad
       items:
         - name: Información general
           href: integrate-microsoft-365-defender-secops.md
@@ -396,6 +390,10 @@
                       href: api-update-incidents.md
                     - name: Obtener el incidente
                       href: api-get-incident.md
+        - name: Versión preliminar de las características
+          href: preview.md
+        - name: Solucionar problemas
+          href: ./troubleshoot.md
     - name: Microsoft Defender para Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender para punto de conexión

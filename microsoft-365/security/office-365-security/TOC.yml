@@ -27,7 +27,7 @@
         - name: 'Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams'
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Información general del portal del Centro de Microsoft 365 Defender
-          href: ../defender/overview-security-center.md
+          href: ../defender/microsoft-365-defender.md
         - name: Página de la entidad de correo electrónico
           href: mdo-email-entity-page.md
         - name: Visión general de AIR
