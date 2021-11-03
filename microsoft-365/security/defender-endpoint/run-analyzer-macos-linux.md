@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9207d4aebf3fa729fdf879a52a31103349fac8f8
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 3d94a08e651aec05869e54cfee2d605680e03426
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554233"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664592"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -35,7 +35,7 @@ ms.locfileid: "60554233"
 1. Descargue la [herramienta analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzer) en la máquina macOS o Linux que necesita investigar.
 
    > [!NOTE]
-   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2".
+   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "ECD2E7518EDC803E2FC2D9919531A22FD61375BED85A73EF64B74A97C7CBD9E3".
 
 2. Extraiga el contenido de XMDEClientAnalyzer.zip en el equipo.
 
@@ -68,7 +68,9 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 > - Para Linux, el analizador requiere 'lxml' para producir el resultado. Si no está instalado, el analizador intentará capturarlo desde el repositorio oficial para los paquetes python siguientes: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
 > 
 > - Además, la herramienta requiere actualmente la instalación de Python versión 3 o posterior.
-> 
+>
+> - Si se ejecuta en una máquina que no puede usar Python 3 o capturar el componente lxml, puede descargar una versión basada en binarios del analizador que no tenga ninguno de los requisitos: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
+>
 > - Si el dispositivo está detrás de un proxy, simplemente puedes pasar el servidor proxy como una variable de entorno al script mde_support_tool.sh. Por ejemplo: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 Ejemplo:

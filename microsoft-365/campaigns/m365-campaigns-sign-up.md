@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registrarse paso a paso para Microsoft 365 para campañas. Proteja su campaña de las amenazas de ciberseguridad al correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: 7ef49e686a152cd4bc56d39e7edff107dfbb2ea7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1af25933491d4c05d11707f290c584145019602b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156887"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662755"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrarse para obtener Microsoft 365 campañas 
 
@@ -54,6 +54,10 @@ Este es el modo de completar el registro para Microsoft 365 campañas.
     1. En **Nombre de** usuario, escriba el nombre o alias que desea para su dirección de correo electrónico. Por ejemplo, es posible que quieras que te conozcan como Alicia o Rob. En una campaña más grande, AliceC o AliceChavez podrían tener más sentido.
     2. En **Su empresa,** escriba el nombre de la campaña para la que trabaja. Por ejemplo, ContosoCampaign. Si ya tienes un dominio, usa ese nombre aquí. 
     3. En **Seleccionar un dominio,** seleccione **.onmicrosoft.com** por ahora. Podemos configurarlo con un dominio más adelante o ayudarle a conectarse Microsoft 365 a un dominio que ya posee.
+
+       > [!IMPORTANT]
+       > El nombre que escriba para el dominio .onmicrosoft.com se usará para todas las direcciones URL de SharePoint y OneDrive y es posible que no pueda cambiarlo. Asegúrese de que ha considerado el nombre desde una perspectiva de personal de marca y deletreado correctamente.
+
     4. Cree una contraseña y seleccione **Crear mi cuenta**.
     > [!NOTE]
     > Si tu campaña o grupo no es propietario de un dominio y has decidido qué dominio quieres, puedes comprar uno ahora seleccionándoselo.

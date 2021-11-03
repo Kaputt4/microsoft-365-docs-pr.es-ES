@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dfaf1e6346a3747b0f8a41d1d9fe806ce307f9f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8c6cae9e8d4d043ced17129b49493a95e13bc8fc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210750"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661088"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -58,7 +56,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SoftwareName` | cadena | Nombre del producto de software |
 | `SoftwareVersion` | cadena | Número de versión del producto de software |
 | `EndOfSupportStatus` | cadena | Indica la fase de ciclo de vida del producto de software en relación con la fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) especificada |
-| `EndOfSupportDate` | string | Fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) del producto de software |
+| `EndOfSupportDate` | cadena | Fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) del producto de software |
 
 
 

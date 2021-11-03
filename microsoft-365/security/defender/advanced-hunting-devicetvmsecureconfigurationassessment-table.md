@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 193bfb6b535ebafa0056c416a55a4c32af53bf84
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0699f5b034787882ac85a73f27fa5b040dbccc68
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202636"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659077"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -45,17 +43,17 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `DeviceId` | string | Identificador único del dispositivo en el servicio |
-| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
 | `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7.|
 | `Timestamp` | datetime | Fecha y hora en que se generó el registro |
 | `ConfigurationId` | cadena | Identificador único para una configuración específica |
-| `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
+| `ConfigurationCategory` | cadena | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
 | `ConfigurationSubcategory` | string | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
-| `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
+| `ConfigurationImpact` | cadena | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `IsCompliant` | booleano | Indica si la configuración o la directiva está configurada correctamente |
-| `IsApplicable` | boolean | Indica si la configuración o directiva se aplica al dispositivo |
-| `Context` | string | Información contextual adicional sobre la configuración o la directiva |
-| `IsExpectedUserImpact` | boolean | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
+| `IsApplicable` | booleano | Indica si la configuración o directiva se aplica al dispositivo |
+| `Context` | cadena | Información contextual adicional sobre la configuración o la directiva |
+| `IsExpectedUserImpact` | booleano | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
 
 ## <a name="related-topics"></a>Temas relacionados
 

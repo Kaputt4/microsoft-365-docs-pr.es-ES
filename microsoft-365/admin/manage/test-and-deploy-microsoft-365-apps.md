@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones asociadas de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal de aplicaciones integradas en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 08660c4f90a27f4294268aa0fb2204347ad06498
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bc633b2a2541a5c1fd813848cd39c7c6e91420ee
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174152"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662791"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 asociados en el portal de aplicaciones integradas
 
@@ -86,8 +86,8 @@ Puedes encontrar, probar e implementar completamente aplicaciones publicadas que
 No podrás implementar una sola aplicación de la tienda ni un solo Aplicaciones Microsoft 365 asociado desde el portal de aplicaciones integradas para los siguientes escenarios.
 
 - El mismo complemento está vinculado a más de una oferta saas.
-- La oferta SaaS está vinculada a complementos, pero no se integra con Microsoft Graph y no se proporciona ningún identificador de aplicación de AAD.
-- La oferta SaaS está vinculada a complementos, pero el id. de aplicación de AAD proporcionado para la integración de Microsoft Graph se comparte entre varias ofertas saas.
+- La oferta SaaS está vinculada a complementos, pero no se integra con Microsoft Graph y no se proporciona AAD id. de aplicación.
+- La oferta SaaS está vinculada a complementos, pero AAD id. de aplicación proporcionado para Microsoft Graph integración se comparte entre varias ofertas saas.
 
 ## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Upload aplicaciones personalizadas de línea de negocio para pruebas e implementación completa
 
@@ -123,7 +123,7 @@ Hoy en Exchange administradores y administradores globales pueden implementar co
 
 ### <a name="before-you-begin"></a>Antes de empezar
 
-La implementación de complementos requiere que los usuarios usen licencias de Microsoft 365 Enterprise (E3/E5/F3) o licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium). Los usuarios también deben haber iniciado sesión en Office con su identificador de organización) y tener Exchange Online buzones de correo Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory. 
+La implementación de complementos requiere que los usuarios usen licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3). Los usuarios también deben haber iniciado sesión en Office con su identificador de organización) y tener Exchange Online buzones de correo Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory. 
 
 La implementación no admite lo siguiente: 
 
@@ -136,11 +136,11 @@ La implementación no admite lo siguiente:
 ### <a name="office-requirements"></a>Office Requisitos 
 
 Para word, Excel y PowerPoint complementos, los usuarios deben usar una de las siguientes opciones: 
-- En un dispositivo Windows, versión 1704 o posterior de licencias de Microsoft 365 Enterprise (E3/E5/F3) o licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium). 
+- En un dispositivo Windows, versión 1704 o posterior de licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3). 
 - En mac, versión 15.34 o posterior. 
 
 Por Outlook, los usuarios deben usar una de las siguientes opciones: 
-- Versión 1701 o posterior de licencias Microsoft 365 Enterprise (E3/E5/F3) o licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium). 
+- Versión 1701 o posterior de licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3). 
 - Versión 1808 o posterior de Office Profesional Plus 2019 o Office Standard 2019. 
 - Versión 16.0.4494.1000 o posterior de Office Profesional Plus 2016 (MSI) o Office Standard 2016 (MSI).
     > [!NOTE]
@@ -289,7 +289,7 @@ Hay dos casos en los que un Exchange no podrá implementar un complemento:
 - Si un complemento está vinculado a dos o más complementos y webapps, y al menos uno de estos complementos lo implementa otro administrador (exchange/global) y la asignación de usuario no es uniforme. Solo se permite la implementación de complementos cuando la asignación de usuario es la misma para todas las aplicaciones ya implementadas.  
 
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>¿Qué rol de administrador necesito para tener acceso a aplicaciones integradas?
 

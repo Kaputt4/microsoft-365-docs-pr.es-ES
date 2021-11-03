@@ -18,24 +18,24 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9eb45699e2224df770752895ca13b17565606c7b
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 9b8446ebd646a55e24a8d59d7fa8ac4e003a3a78
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335519"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665164"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>Cumplimiento de comunicaciones con soluciones de SIEM
 
 [El cumplimiento de](communication-compliance.md) la comunicación es una solución de riesgo interno en Microsoft 365 que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inapropiados en su organización. Las soluciones de administración de eventos y de información de seguridad (SIEM), como [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk,](https://www.splunk.com/) se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
 
-Una necesidad común de las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje se detecta mediante una supervisión de directivas de cumplimiento de comunicación para el lenguaje ofensivo. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos Microsoft 365 auditar (también conocido como "registro de auditoría unificado") y se importan a la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos supervisados en Microsoft 365 auditoría asociadas con alertas de cumplimiento de comunicaciones. Los investigadores son notificados de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
+Una necesidad común de las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje se detecta mediante una supervisión de directivas de cumplimiento de comunicaciones para el contenido inadecuado. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos Microsoft 365 auditar (también conocido como "registro de auditoría unificado") y se importan a la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos supervisados en Microsoft 365 auditoría asociadas con alertas de cumplimiento de comunicaciones. Los investigadores son notificados de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertas de cumplimiento de comunicación en Microsoft 365 Auditoría
 
 Todas las coincidencias de directivas de cumplimiento de comunicaciones se capturan en Microsoft 365 Auditoría. En los ejemplos siguientes se muestran los detalles disponibles para las actividades de coincidencia de directivas de cumplimiento de comunicaciones seleccionadas:
 
-**Ejemplo de entrada de registro de auditoría para una coincidencia de plantilla de directiva de lenguaje ofensivo:**
+**Ejemplo de entrada de registro de auditoría para una coincidencia de plantilla de directiva de contenido inadecuado:**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -98,9 +98,9 @@ Para integrar las alertas de cumplimiento de comunicaciones con Splunk, siga est
 
 Para filtrar los resultados de una directiva de cumplimiento de comunicación específica, puede usar el parámetro *SRPolicyMatchDetails.SRPolicyName.*
 
-Por ejemplo, el siguiente ejemplo de búsqueda devolvería alertas de coincidencias a una directiva de cumplimiento de comunicaciones denominada *Lenguaje ofensivo:*
+Por ejemplo, el siguiente ejemplo de búsqueda devolvería alertas de coincidencias a una directiva de cumplimiento de comunicaciones denominada *Contenido inadecuado:*
 
-  *index= \* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Offensive language\>*
+  *index= \* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Inappropriate content\>*
 
 En la tabla siguiente se muestran resultados de búsqueda de ejemplo para distintos tipos de directiva:
 

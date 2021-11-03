@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eff066610d87dd637a861906b8f6a4a4c73ae2ae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3954ef585ee3a4f51677f3e5e26b6309d3b75889
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162403"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661464"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -33,7 +31,7 @@ ms.locfileid: "60162403"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 
@@ -50,26 +48,32 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `ActionType` | cadena | Tipo de actividad que desencadenó el evento |
 | `Application` | string | Aplicación que realizó la acción grabada |
-| `ApplicationId` | string | Identificador único de la aplicación |
-| `AccountObjectId` | string | Identificador único de la cuenta en Azure Active Directory |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `IsAdminOperation` | string | Indica si la actividad la realizó un administrador |
+| `ApplicationId` | cadena | Identificador único de la aplicación |
+| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure Active Directory |
+| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `IsAdminOperation` | cadena | Indica si la actividad la realizó un administrador |
 | `DeviceType` | string | Tipo de dispositivo basado en propósitos y funciones, como "Dispositivo de red", "Estación de trabajo", "Servidor", "Móvil", "Consola de juegos" o "Impresora" | 
-| `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esta columna indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
-| `IPAddress` | string | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
-| `IsAnonymousProxy` | string | Indica si la dirección IP pertenece a un proxy anónimo conocido |
-| `CountryCode` | string | Código de dos letras que indica el país donde se geolocalización de la dirección IP del cliente |
-| `City` | string | Ciudad donde se geolocalización de la dirección IP del cliente |
-| `Isp` | string | Proveedor de servicios de Internet (ISP) asociado a la dirección IP |
-| `UserAgent` | string | Información del agente de usuario desde el explorador web u otra aplicación cliente |
-| `ActivityType` | string | Tipo de actividad que desencadenó el evento |
-| `ActivityObjects` | string | Lista de objetos, como archivos o carpetas, que participaron en la actividad grabada |
-| `ObjectName` | string | Nombre del objeto al que se aplicó la acción grabada |
+| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esta columna indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
+| `IPAddress` | cadena | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
+| `IsAnonymousProxy` | cadena | Indica si la dirección IP pertenece a un proxy anónimo conocido |
+| `CountryCode` | cadena | Código de dos letras que indica el país donde se geolocalización de la dirección IP del cliente |
+| `City` | cadena | Ciudad donde se geolocalización de la dirección IP del cliente |
+| `Isp` | cadena | Proveedor de servicios de Internet (ISP) asociado a la dirección IP |
+| `UserAgent` | cadena | Información del agente de usuario desde el explorador web u otra aplicación cliente |
+| `ActivityType` | cadena | Tipo de actividad que desencadenó el evento |
+| `ActivityObjects` | dinámico | Lista de objetos, como archivos o carpetas, que participaron en la actividad grabada |
+| `ObjectName` | cadena | Nombre del objeto al que se aplicó la acción grabada |
 | `ObjectType` | string | Tipo de objeto, como un archivo o una carpeta, al que se aplicó la acción grabada |
-| `ObjectId` | string | Identificador único del objeto al que se aplicó la acción grabada |
-| `ReportId` | string | Identificador único del evento |
-| `RawEventData` | string | Información de evento sin procesar de la aplicación o servicio de origen en formato JSON |
-| `AdditionalFields` | string | Información adicional sobre la entidad o el evento |
+| `ObjectId` | cadena | Identificador único del objeto al que se aplicó la acción grabada |
+| `ReportId` | cadena | Identificador único del evento |
+| `RawEventData` | cadena | Información de evento sin procesar de la aplicación o servicio de origen en formato JSON |
+| `AdditionalFields` | dinámico | Información adicional sobre la entidad o el evento |
+| `AccountType` | cadena | Tipo de cuenta de usuario, que indica su rol general y niveles de acceso, como Regular, System, Admin, DcAdmin, System, Application | 
+| `IsExternalUser` | booleano | Indica si un usuario dentro de la red no pertenece al dominio de la organización | 
+| `IsImpersonated` | booleano | Indica si la actividad la realizó un usuario en nombre de otro (suplantado) usuario | 
+| `IPTags` | dinámico | Información definida por el cliente aplicada a direcciones IP específicas e intervalos de direcciones IP | 
+| `IPCategory` | cadena | Información adicional sobre la dirección IP | 
+| `UserAgentTags` | dinámico | Más información proporcionada por Microsoft Cloud App Security una etiqueta en el campo agente de usuario. Puede tener cualquiera de los siguientes valores: cliente nativo, explorador obsoleto, sistema operativo obsoleto, robot | 
 
 ## <a name="apps-and-services-covered"></a>Aplicaciones y servicios cubiertos
 

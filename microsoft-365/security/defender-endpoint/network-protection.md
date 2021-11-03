@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c6540847d6861b5d4f07d3b542afe8ceb3fcf413
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a00fa0c255156f17f579889e8a399c52d126a6f8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553465"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661603"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -141,7 +141,7 @@ Para Windows 10 Enterprise Multi-Session 1909 y versiones 2010, que se usan en W
 
 ## <a name="network-protection-troubleshooting"></a>Solución de problemas de protección de red
 
-Debido al entorno donde se ejecuta la protección de red, Es posible que Microsoft no pueda detectar la configuración de proxy del sistema operativo. En algunos casos, los clientes de protección de red no pueden llegar al servicio en la nube. Para resolver el problema de conectividad, los clientes con licencias E5 deben configurar una de las siguientes claves del Registro de Defender:
+Debido al entorno donde se ejecuta la protección de red, Es posible que Microsoft no pueda detectar la configuración de proxy del sistema operativo. En algunos casos, los clientes de protección de red no pueden llegar al servicio en la nube. Para resolver el problema de conectividad, los clientes con licencias E5 deben configurar una de las siguientes claves del Registro:
 
 ```console
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f

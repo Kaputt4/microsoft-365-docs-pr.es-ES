@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ea7429e4426c6904539da1d7ee056f9f248cbfe
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 60842a3132f159979a0c5f8798301cf4b530d82f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587534"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667345"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -103,6 +103,7 @@ Los siguientes detalles se aplican al nuevo paquete de soluciones unificado para
   Además, en máquinas con un gran volumen de tráfico de red, se recomienda encarecidamente realizar pruebas de rendimiento en el entorno antes de habilitar esta funcionalidad de forma general. Es posible que deba tener en cuenta el consumo de recursos adicional.
  - En Windows Server 2012 R2, es posible que los eventos de red no se rellenen en la escala de tiempo. Este problema requiere una actualización Windows publicada como parte del paquete acumulativo mensual del 12 de octubre de [2021 (KB5006714).](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)
  - No se admiten actualizaciones del sistema operativo. A continuación, desinstale offboard antes de actualizar.
+ - Las exclusiones automáticas para roles de servidor no se admiten Windows Server 2012 R2. Para obtener más información acerca de cómo agregar exclusiones, vea Recomendaciones de detección de virus para Enterprise equipos que ejecutan versiones compatibles [actualmente de Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
 
 ## <a name="integration-with-azure-defender"></a>Integración con Azure Defender
 Microsoft Defender para endpoint se integra perfectamente con Azure Defender. Puede incorporar servidores automáticamente, hacer que los servidores supervisados por Azure Defender aparezcan en Defender for Endpoint y llevar a cabo investigaciones detalladas como cliente de Azure Defender. 
@@ -176,7 +177,7 @@ Debe usar el mismo paquete que usó para la instalación para que el comando ant
 El `/quiet` modificador suprime todas las notificaciones.
 
 > [!NOTE]
-> Antivirus de Microsoft Defender no pasa automáticamente al modo pasivo. Puede optar por establecer Antivirus de Microsoft Defender para que se ejecute en modo pasivo si está ejecutando una solución antivirus o antimalware que no sea de Microsoft. Para las instalaciones de línea de comandos, el opcional establece inmediatamente `FORCEPASSIVEMODE=1` el componente Antivirus de Microsoft Defender en modo pasivo para evitar interferencias. A continuación, para asegurarse de que Defender permanece en modo pasivo después de la incorporación para admitir funcionalidades como EDR Block, establezca la clave del Registro "ForceDefenderPassiveMode".
+> Antivirus de Microsoft Defender no pasa automáticamente al modo pasivo. Puede optar por establecer Antivirus de Microsoft Defender para que se ejecute en modo pasivo si está ejecutando una solución antivirus o antimalware que no sea de Microsoft. Para las instalaciones de línea de comandos, el opcional establece inmediatamente `FORCEPASSIVEMODE=1` el componente Antivirus de Microsoft Defender en modo pasivo para evitar interferencias. A continuación, para asegurarse de que Defender Antivirus permanece en modo pasivo después de la incorporación para admitir funcionalidades como EDR Block, establezca la clave del Registro "ForceDefenderPassiveMode".
 >
 > Para obtener más información, vea [Need to set Antivirus de Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 > - El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Microsoft Endpoint Manager incluye actualmente un script. Para obtener más información sobre cómo implementar scripts en Configuration Manager, vea [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
@@ -218,20 +219,18 @@ El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Mi
 
     2. Ejecute el siguiente comando de PowerShell para comprobar que se configuró el modo pasivo:
     
-    ```PowerShell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
+        ```PowerShell
+        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+        ```
         
-    > [!NOTE]
-    >
-    > - La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha ampliado para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
-    > - La supervisión de extremos de servidor que utiliza esta integración se ha deshabilitado para Office 365 GCC clientes.
-
-      
+        > [!NOTE]
+        >
+        > - La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha ampliado para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+        > - La supervisión de extremos de servidor que utiliza esta integración se ha deshabilitado para Office 365 GCC clientes.
 
     3. Confirme que se encuentra un evento reciente que contiene el evento de modo pasivo:
     
-     ![Imagen del resultado de comprobación del modo pasivo](images/atp-verify-passive-mode.png)
+       ![Imagen del resultado de comprobación del modo pasivo](images/atp-verify-passive-mode.png)
 
 > [!IMPORTANT]
 >

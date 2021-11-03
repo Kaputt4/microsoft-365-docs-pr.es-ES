@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportaría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5bef65905d6a93ab1eba51c7550824baca0e8ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d06cc712e8c81304bbd11a9c93f35e48d279a36e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201186"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668371"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -99,6 +99,9 @@ Consulte la siguiente sección para obtener instrucciones para descargar los inf
 ## <a name="step-2-download-the-report"></a>Paso 2: Descargar el informe
 
 El siguiente paso es descargar el informe del área Azure Storage en el equipo local.
+
+> [!NOTE]
+> El informe de búsqueda exportado debe descargarse en un plazo de 14 días después de generar el informe en el paso 1.
 
 1. En la **página Búsqueda de** contenido de la Centro de cumplimiento de Microsoft 365, seleccione la **pestaña** Exportaciones
   

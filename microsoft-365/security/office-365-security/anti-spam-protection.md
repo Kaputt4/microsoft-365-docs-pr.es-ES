@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la configuración y los filtros contra correo no deseado que ayudarán a evitar el correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d8a004e5eb909399f1340374b80495dcf0b6e9b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1bc5d81b1221b73bcb701345b8db2f160380ba37
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552529"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60657118"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protección contra correo no deseado en EOP
 
@@ -57,7 +57,7 @@ La configuración contra correo no deseado en EOP está hecha de las siguientes 
 
 - **Filtrado de** conexiones: identifica los servidores de origen de correo electrónico buenos y malos al principio de la conexión de correo electrónico entrante a través de la lista de direcciones IP permitidos, la lista de direcciones IP bloqueados y la lista segura *(una* lista dinámica pero no editable de remitentes de confianza mantenidos por Microsoft). Estas opciones se configuran en la directiva de filtro de conexión. Obtenga más información en [Configurar el filtrado de conexiones](configure-the-connection-filter-policy.md).
 
-- Filtrado de correo no deseado (filtrado de **contenido):** EOP usa los veredictos de filtrado de correo no deseado **Correo** no deseado **,** Correo no deseado de alta **confianza,** Correo electrónico masivo, **Correo** electrónico de suplantación de identidad y Correo electrónico de **suplantación** de identidad de elevada confianza para clasificar los mensajes. Puede configurar las acciones que deben realizarse en función de estos veredictos, puede configurar las opciones de notificación del usuario final para los mensajes que se han puesto en cuarentena en lugar de entregados y puede configurar lo que los usuarios pueden hacer a los mensajes en cuarentena mediante directivas de [cuarentena.](quarantine-policies.md) Para obtener más información, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- Filtrado de correo no deseado (filtrado de **contenido):** EOP usa los veredictos de filtrado de correo no deseado **Correo** no deseado **,** Correo no deseado de alta **confianza,** Correo electrónico masivo, **Correo** electrónico de suplantación de identidad y Correo electrónico de **suplantación** de identidad de elevada confianza para clasificar los mensajes. Puede configurar las acciones que deben realizarse en función de estos veredictos y puede configurar lo que los usuarios pueden hacer en los mensajes en cuarentena y si el usuario recibe notificaciones de cuarentena mediante directivas de [cuarentena.](quarantine-policies.md) Para obtener más información, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
   > De forma predeterminada, el filtrado de correo no deseado está configurado para enviar mensajes marcados como correo no deseado a la carpeta de correo no deseado del destinatario. Sin embargo, en entornos híbridos donde EOP protege los buzones de correo de Exchange locales, debe configurar dos reglas de flujo de correo (también conocidas como reglas de transporte) en la organización de Exchange local para reconocer los encabezados de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).

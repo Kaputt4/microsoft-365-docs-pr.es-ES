@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b69e093e49bbfd143604f6f1a44e472b29762109
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 022709bf47a52ae6a8763bf36df4e7e0d49c34cd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211143"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668073"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -55,11 +55,11 @@ Implemente Defender para endpoint en iOS mediante Portal de empresa de Intune.
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager Centro de administración1.](images/ios-deploy-1.png)
 
-1. En la página Agregar aplicación, haga clic en **Buscar en la Tienda de** aplicaciones y escriba Punto de conexión de Microsoft **Defender** en la barra de búsqueda. En la sección resultados de búsqueda, haga clic en *Extremo de Microsoft Defender* y haga clic en **Seleccionar**.
+1. En la **página Agregar aplicación,** haga clic en **Buscar en la Tienda de** aplicaciones y escriba Punto de conexión de Microsoft **Defender** en la barra de búsqueda. En la sección resultados de búsqueda, haga clic en *Extremo de Microsoft Defender* y haga clic en **Seleccionar**.
 
 1. Seleccione **iOS 11.0** como sistema operativo Mínimo. Revisa el resto de información sobre la aplicación y haz clic en **Siguiente**.
 
-1. En la *sección Asignaciones,* vaya a la **sección Obligatorio** y seleccione Agregar **grupo**. A continuación, puedes elegir los grupos de usuarios a los que quieres dirigirte Defender para Endpoint en la aplicación iOS. Haga clic **en Seleccionar** y, a **continuación, en Siguiente**.
+1. En la **sección Asignaciones,** vaya a la **sección Obligatorio** y seleccione Agregar **grupo**. A continuación, puedes elegir los grupos de usuarios a los que quieres dirigirte Defender para Endpoint en la aplicación iOS. Haga clic **en Seleccionar** y, a **continuación, en Siguiente**.
 
     > [!NOTE]
     > El grupo de usuarios seleccionado debe estar formado por usuarios inscritos en Intune.

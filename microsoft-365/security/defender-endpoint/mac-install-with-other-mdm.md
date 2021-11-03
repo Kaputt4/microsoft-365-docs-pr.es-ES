@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d89d98e6e972707266f3b3ed95db3b78b8a5d161
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2e133c9f924b614c8cc34c9a943895736526e6e7
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159443"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668029"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación con un sistema de administración de dispositivos móviles (MDM) diferente para Microsoft Defender para Endpoint en macOS
 
@@ -55,10 +55,10 @@ Microsoft Defender para endpoint en macOS no depende de las características esp
 
 La mayoría de las soluciones MDM modernas incluyen estas características, sin embargo, pueden llamarlas de forma diferente.
 
-Sin embargo, puede implementar Defender sin el último requisito de la lista anterior:
+Sin embargo, puede implementar Defender for Endpoint sin el último requisito de la lista anterior:
 
-- No podrá recopilar el estado de forma centralizada
-- Si decide desinstalar Defender, tendrá que iniciar sesión en el dispositivo cliente localmente como administrador
+- No podrá recopilar el estado de forma centralizada.
+- Si decide desinstalar Defender for Endpoint, tendrá que iniciar sesión en el dispositivo cliente localmente como administrador.
 
 ## <a name="deployment"></a>Implementación
 
@@ -81,7 +81,7 @@ El sistema puede admitir una lista de propiedades arbitrarias en formato XML. Pu
 Como alternativa, es posible que primero necesites convertir la lista de propiedades a otro formato.
 
 Normalmente, el perfil personalizado tiene un identificador, un nombre o un atributo de dominio. Debe usar exactamente "com.microsoft.wdav.atp" para este valor.
-MDM lo usa para implementar el archivo de configuración en **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** en un dispositivo cliente y Defender usa este archivo para cargar la información de incorporación.
+MDM lo usa para implementar el archivo de configuración en **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** en un dispositivo cliente y Defender para endpoint usa este archivo para cargar la información de incorporación.
 
 ### <a name="kernel-extension-policy"></a>Directiva de extensión de kernel
 

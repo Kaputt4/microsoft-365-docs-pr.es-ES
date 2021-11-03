@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 275d664edd7e07909aceced72330fea2b406cf45
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ec44ec38a76cf0371804df25b698d77ba7b5aa22
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203200"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668405"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -49,10 +49,10 @@ El Administrador de cumplimiento usa un modelo de permisos de control de acceso 
 
 ### <a name="where-to-set-permissions"></a>Dónde establecer permisos
 
-La persona que tiene el rol de administrador global de su organización puede establecer permisos de usuario para el Administrador de cumplimiento. Los permisos se pueden establecer en el Centro de cumplimiento de Microsoft 365 y en Azure Active Directory (Azure AD).
+La persona que tiene el rol de administrador global de su organización puede establecer permisos de usuario para el Administrador de cumplimiento. Los permisos se pueden establecer en el Centro de cumplimiento de Microsoft 365, así como en Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Los clientes de entornos Community (GCC) high y department of defense (DoD) de Estados Unidos solo pueden establecer permisos de usuario y roles para el Administrador de cumplimiento en Azure AD. Consulte a continuación las instrucciones de Azure AD y las definiciones de tipo de función.
+> Los clientes de entornos de administración pública Community (GCC) High y Department of Defense (DoD) solo pueden establecer permisos de usuario y roles para el Administrador de cumplimiento en Azure AD. Vea a continuación Azure AD instrucciones y definiciones de tipo de función.
 
 Para establecer permisos y asignar roles en el Centro de cumplimiento de Microsoft 365, siga los pasos siguientes:
 
@@ -74,18 +74,18 @@ Para establecer permisos y asignar roles en el Centro de cumplimiento de Microso
 
 #### <a name="more-about-azure-ad"></a>Más información sobre Azure AD
 
-Para asignar roles y establecer permisos en Azure AD, consulte [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+Para asignar roles y establecer permisos en Azure AD, vea [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-Los usuarios con identidades de Azure AD que no tienen Office 365 o Microsoft 365 suscripciones no podrán acceder al Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365. Para obtener ayuda para obtener acceso al Administrador de cumplimiento, póngase en [contacto cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
+Los usuarios con Azure AD identidades que no tienen Office 365 o Microsoft 365 suscripciones no podrán acceder al Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365. Para obtener ayuda para obtener acceso al Administrador de cumplimiento, póngase en [contacto cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### <a name="role-types"></a>Tipos de función
 
-En la tabla siguiente se muestran las funciones permitidas por cada rol en el Administrador de cumplimiento. En la tabla también se muestra cómo cada rol [de Azure AD](/azure/active-directory/roles/permissions-reference) se asigna a los roles del Administrador de cumplimiento. Los usuarios necesitarán al menos el rol de lector administrador de cumplimiento o el rol de lector global de Azure AD para tener acceso al Administrador de cumplimiento.
+En la tabla siguiente se muestran las funciones permitidas por cada rol en el Administrador de cumplimiento. En la tabla también se muestra [cómo cada Azure AD de roles se](/azure/active-directory/roles/permissions-reference) asigna a roles del Administrador de cumplimiento. Los usuarios necesitarán al menos el rol de lector administrador de cumplimiento, o Azure AD de lector global, para tener acceso al Administrador de cumplimiento.
 
 
-| El usuario puede: | Rol Administrador de cumplimiento | Rol de Azure AD | 
+| El usuario puede: | Rol Administrador de cumplimiento | Azure AD rol | 
 | :------------- | :-------------: | :------------: |
-| **Leer pero no editar datos**| Lector de Administrador de cumplimiento  | Lector global de Azure AD, lector de seguridad | 
+| **Leer pero no editar datos**| Lector de Administrador de cumplimiento  | Azure AD Lector global, lector de seguridad | 
 | **Editar datos**| Contribución del administrador de cumplimiento | Administrador de cumplimiento | 
 | **Editar resultados de pruebas**| Evaluador de Administrador de cumplimiento | Administrador de cumplimiento | 
 | **Administrar evaluaciones y datos de plantilla e inquilino**| Administración del administrador de cumplimiento | Administrador de cumplimiento, administrador de datos de cumplimiento, administrador de seguridad  | 
@@ -324,20 +324,20 @@ La página de evaluaciones resume la información clave sobre cada evaluación:
 
 - **Evaluación:** nombre de la evaluación
 - **Estado**:
-    - **Completado:** todos los controles tienen el estado "pasado", o al menos se pasa uno y el resto está "fuera del ámbito"
-    - **Incompleto:** al menos un control tiene el estado de "error"
-    - **Ninguno:** no se han probado todos los controles
-    - **En curso:** las acciones de mejora tienen cualquier otro estado, incluidos "en curso", "crédito parcial" o "sin detectar"
+  - **Completado:** todos los controles tienen el estado "pasado", o al menos se pasa uno y el resto está "fuera del ámbito"
+  - **Incompleto:** al menos un control tiene el estado de "error"
+  - **Ninguno:** no se han probado todos los controles
+  - **En curso:** las acciones de mejora tienen cualquier otro estado, incluidos "en curso", "crédito parcial" o "sin detectar"
 - **Progreso de la** evaluación: el porcentaje del trabajo realizado hasta la finalización, medido por el número de controles probados correctamente
 - **Acciones de mejora:** el número de acciones completadas para satisfacer la implementación de los controles
 - **Acciones de Microsoft:** el número de acciones completadas para satisfacer la implementación de los controles de Microsoft
 - **Grupo:** nombre del grupo al que pertenece la evaluación
-- **Producto:** servicio Microsoft 365 asociado
+- **Producto:** producto asociado, como Microsoft 365 u otro producto definido para evaluación
 - **Reglamento:** el estándar normativo, la directiva o la ley que se aplica a la evaluación
 
 ### <a name="filtering-your-assessments-view"></a>Filtrar la vista de evaluaciones
 
-Para filtrar la vista de evaluaciones:
+Para filtrar la vista de las evaluaciones:
 
 1. Seleccione **Filtrar** en la esquina superior izquierda de la lista de evaluaciones.
 2. En el **panel** desplegable Filtros, compruebe los criterios que desee.
@@ -360,4 +360,5 @@ Seleccione una plantilla de su fila para mostrar su página de detalles, que con
 **Obtenga más información:** [Lea cómo trabajar con plantillas de evaluación.](compliance-manager-templates.md)
 
 ## <a name="next-step"></a>Paso siguiente
+
 Personalice el Administrador de cumplimiento [configurando evaluaciones](compliance-manager-assessments.md).

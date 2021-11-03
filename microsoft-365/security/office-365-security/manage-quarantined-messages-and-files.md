@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7bf5b4fa2c339e1132efb71c53a5eaf62f9646ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b3192c7531006b16d238899fe6ccbaa5390d815
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174440"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60663672"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -39,7 +39,7 @@ En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o e
 
 Los administradores pueden ver, liberar y eliminar todos los tipos de mensajes en cuarentena para todos los usuarios. Los administradores también pueden notificar falsos positivos a Microsoft.
 
-De forma predeterminada, solo los administradores pueden administrar mensajes que se han puesto en cuarentena como malware, phishing de elevada confianza o como resultado de reglas de flujo de correo (también conocidas como reglas de transporte). Sin embargo,  los administradores pueden usar directivas de cuarentena para definir lo que los usuarios pueden hacer a los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características compatibles). Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+De forma predeterminada, solo los administradores pueden administrar mensajes que se han puesto en cuarentena como malware, phishing de elevada confianza o como resultado de reglas de flujo de correo (también conocidas como reglas de transporte). Sin embargo,  los administradores pueden usar directivas de cuarentena para definir lo que los usuarios pueden hacer a los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características compatibles). Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
 Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos puestos en cuarentena por Caja fuerte [Attachments for SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
@@ -59,16 +59,11 @@ Puede ver y administrar mensajes en cuarentena en el portal de Microsoft 365 Def
 
   **Notas**:
 
-  - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
   - <sup>\*</sup>Los miembros  del grupo de roles Administrador de cuarentena en los roles de colaboración de Correo electrónico **&** en el portal de [Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) también deben ser miembros del grupo de roles **Administración** de higiene en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) para realizar procedimientos de cuarentena en Exchange Online PowerShell.
 
-- Los mensajes en cuarentena se conservan durante un período de tiempo predeterminado antes de que se eliminen automáticamente:
-  - 30 días para los mensajes en cuarentena por directivas contra correo no deseado (correo no deseado, suplantación de identidad y correo electrónico masivo). Este es el valor predeterminado y máximo. Para configurar (inferior) este valor, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md).
-  - 15 días para los mensajes que contienen malware.
-  - 15 días para los archivos en cuarentena por Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams en Defender para Office 365.
-
-  Cuando un mensaje expira de la cuarentena, no se puede recuperar.
+- Los mensajes en cuarentena se conservan durante un período de tiempo predeterminado en función del motivo por el que se han puesto en cuarentena. Una vez expirado el período de retención, los mensajes se eliminan automáticamente y no se pueden recuperar. Para obtener más información, vea [Quarantined email messages in EOP and Defender for Offie 365](quarantine-email-messages.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Usar el portal Microsoft 365 Defender para administrar mensajes de correo electrónico en cuarentena
 

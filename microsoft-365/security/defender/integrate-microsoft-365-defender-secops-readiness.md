@@ -22,31 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f67d276465bc23306446bc80f1c9e77eaa098b4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06b181f3719d9b674098bf5da36938ea181a0dc1
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206582"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60658067"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>Paso 2. Realizar una evaluación de preparación de integración SOC con el marco de confianza cero
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Una vez definidas las funciones principales del equipo del Centro de operaciones de seguridad (SOC), el siguiente paso para su organización es prepararse para la adopción de Microsoft Defender a través de un enfoque de confianza [cero.](/security/zero-trust/) La adopción puede ayudarle a determinar los requisitos necesarios para implementar Microsoft 365 Defender con prácticas modernas líderes del sector, al tiempo que evalúa las capacidades de Defender en su entorno. 
+Una vez definidas las funciones principales del equipo del Centro de operaciones de seguridad (SOC), el siguiente paso para su organización es prepararse para la adopción de Microsoft 365 Defender a través de un enfoque de confianza [cero.](/security/zero-trust/) La adopción puede ayudarle a determinar los requisitos necesarios para implementar Microsoft 365 Defender con prácticas modernas líderes del sector, al tiempo que evalúa las capacidades de Microsoft 365 Defender en su entorno.
 
-Este enfoque se basa en una base sólida de protecciones e incluye áreas clave como identidad, puntos de conexión (dispositivos), datos, aplicaciones, infraestructura y redes. El equipo de evaluación de preparación determinará las áreas en las que aún no se ha cumplido un requisito fundamental para habilitar Microsoft 365 Defender y necesitará corrección. 
+Este enfoque se basa en una base sólida de protecciones e incluye áreas clave como identidad, puntos de conexión (dispositivos), datos, aplicaciones, infraestructura y redes. El equipo de evaluación de preparación determinará las áreas en las que aún no se ha cumplido un requisito fundamental para habilitar Microsoft 365 Defender y necesitará corrección.
 
 Estos son algunos de los elementos que tendrán que corregirse para que el SOC optimice completamente los procesos en el SOC:
 
-- **Identidad:**     Dominios heredados de Servicios de dominio de Active Directory (AD DS), sin plan MFA, sin inventario de cuentas con privilegios y otros.
-- **Extremos (dispositivos):**  Gran número de sistemas operativos heredados, inventario de dispositivos limitado y otros.
-- **Datos y aplicaciones:**    Falta de estándares de gobierno de datos, ningún inventario de aplicaciones personalizadas que no se integrarán.
-- **Infraestructura:**   Gran número de licencias SaaS sin licencia, sin seguridad de contenedor y otras.
-- **Redes:**   Problemas de rendimiento debido a un ancho de banda bajo, red plana, problemas de seguridad inalámbrica y otros.
+- **Identidad:** Dominios heredados de Servicios de dominio de Active Directory (AD DS), sin plan MFA, sin inventario de cuentas con privilegios y otros.
+- **Extremos (dispositivos):** Gran número de sistemas operativos heredados, inventario de dispositivos limitado y otros.
+- **Datos y aplicaciones:**  Falta de estándares de gobierno de datos, ningún inventario de aplicaciones personalizadas que no se integrarán.
+- **Infraestructura:** Gran número de licencias SaaS sin licencia, sin seguridad de contenedor y otras.
+- **Redes:** Problemas de rendimiento debido a un ancho de banda bajo, red plana, problemas de seguridad inalámbrica y otros.
 
 Las organizaciones también deben seguir el [artículo de Microsoft 365 Defender](m365d-enable.md) para capturar el conjunto de requisitos de configuración de línea base. Estos pasos determinarán a su vez las actividades de corrección que los equipos de SOC tendrán que llevar a cabo para desarrollar eficazmente casos de uso. 
 

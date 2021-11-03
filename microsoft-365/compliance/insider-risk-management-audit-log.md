@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3024c0861f0530c59fb5f620959a2b28f3078ea0
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 2bf453e8856f69e9ddb8c7c7a9264267ef77b4f0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334655"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662545"
 ---
 # <a name="insider-risk-management-audit-log"></a>Registro de auditoría de administración de riesgos de Insider
 
@@ -36,7 +36,7 @@ Entre las áreas incluidas en la supervisión de actividades se incluyen:
 - Usuarios
 - Plantillas de aviso
 
-Para ver y exportar datos desde el registro de auditoría, los usuarios deben estar asignados a los grupos de roles *Insider Risk Management* o *Insider Risk Management Auditors.* Para obtener más información acerca de los grupos de roles de administración de riesgos de insider, vea Introducción a la administración de riesgos [insider Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management).
+Para ver y exportar datos desde el registro de auditoría, los usuarios deben estar asignados a los grupos de roles *Insider Risk Management* o *Insider Risk Management Auditors.* Para obtener más información acerca de los grupos de roles de administración de riesgos de insider, vea Introducción a la administración de riesgos [insider Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management).
 
 > [!NOTE]
 > El registro de auditoría de administración de riesgos interno no está asociado con el registro de auditoría de Microsoft 365, son sistemas de auditoría independientes y capturan información sobre actividades independientes. Deshabilitar la Microsoft 365 no afecta a la auditoría de actividad dentro de la administración de riesgos de insider.
@@ -64,7 +64,7 @@ Los usuarios asignados a los grupos de roles *Insider Risk Management* o *Inside
 
 El archivo contiene información de actividad para los campos siguientes:
 
-- **Actividad realizada por:** Nombre de usuario del usuario que modifica un valor de elemento. Los usuarios enumerados aquí se asignaron a uno o varios de los siguientes grupos de roles de administración de riesgos insider [:](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Cada grupo de roles tiene distintos niveles de permisos para administrar características de riesgo interno.
+- **Actividad realizada por:** Nombre de usuario del usuario que modifica un valor de elemento. Los usuarios enumerados aquí se asignaron a uno o varios de los siguientes grupos de roles de administración de riesgos insider [:](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Cada grupo de roles tiene distintos niveles de permisos para administrar características de riesgo interno.
 - **Actividad:** La actividad realizada en un elemento. Los valores *son Viewed, Deleted, Added, Edited policy, Case, User, Alert y* *Configuración.*
 - **Agregado:** objetos que se agregaron durante la actividad, como usuarios, tipos de archivo o dominios.
 - **Volumen de alerta:** el nivel de volumen de alerta definido en la configuración de administración de riesgos de insider.

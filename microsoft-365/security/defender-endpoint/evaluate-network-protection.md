@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2176fd78f5c355dcb734f2a360ba917c6d130c03
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b0a52af9eb9cbc8d1cfc4084d7f137fd5e6975be
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166509"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668105"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
@@ -35,7 +35,7 @@ ms.locfileid: "60166509"
 Este artículo le ayuda a evaluar la protección de red habilitando la característica y guiándolo a un sitio de prueba. Los sitios de este artículo de evaluación no son malintencionados. Son sitios web especialmente creados que pretenden ser malintencionados. El sitio replicará el comportamiento que se produciría si un usuario visitase un sitio o dominio malintencionado.
 
 > [!TIP]
-> También puedes visitar el sitio web del campo de prueba de Microsoft Defender [en demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funcionan otras características de protección.
+> También puede visitar el sitio web escenarios de demostración de Microsoft Defender [en demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funcionan otras características de protección.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Habilitar la protección de red en modo auditoría
 

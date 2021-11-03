@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/23/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 88225337d0c9edbae8185a34bd7d98378007c72a
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 2e280aa04b83aaad56e2d1a424af491ccd2e2301
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240577"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667309"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Administrar Microsoft Defender para puntos de conexión con objetos de directiva de grupo
 
@@ -45,7 +45,7 @@ Puede usar objetos de directiva de grupo en Azure Active Directory Domain Servic
 ## <a name="configure-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Configurar Microsoft Defender para el extremo con objetos de directiva de grupo
 
 > [!NOTE]
-> Si usa la nueva solución unificada de Microsoft Defender para endpoints para Windows Server 2012 R2 y [2016,](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)asegúrese de usar los archivos ADMX más recientes del almacén central para obtener acceso a las opciones de directiva de Microsoft Defender correctas. Consulta [Cómo crear y administrar la](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Tienda central para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**. 
+> Si usa la nueva solución unificada de Microsoft Defender para endpoints para Windows Server 2012 R2 y [2016,](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)asegúrese de que está usando los archivos ADMX más recientes en el almacén central para obtener acceso a las opciones correctas de directiva de Microsoft Defender para puntos de conexión. Consulta [Cómo crear y administrar la](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Tienda central para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**. 
 
 En la tabla siguiente se enumeran varias tareas que puede realizar para configurar Microsoft Defender para endpoint con objetos de directiva de grupo.
 

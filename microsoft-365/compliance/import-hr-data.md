@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: 0c3a6966155483ba374211b7db55675010b0c55f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e7a5bb9a1912aff7d41968bd1c8f6c08333178c0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151091"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659967"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -36,6 +36,8 @@ La configuración de un conector para datos de recursos humanos que las directiv
 - Al usuario que crea el conector de recursos humanos en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 - El script de ejemplo que ejecute en el paso 4 cargará los datos de recursos humanos en la nube de Microsoft para que puedan ser usados por la solución de administración de riesgos insider. Este script de ejemplo no se admite en ningún servicio o programa de soporte técnico estándar de Microsoft. El script de ejemplo aparece "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o rendimiento del script y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
+
+- Este conector está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP. Para obtener instrucciones paso a paso para configurar un conector de recursos humanos en un entorno GCC, vea Configurar un conector para importar datos de RECURSOS humanos [en US Government](import-hr-data-US-government.md).
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Paso 1: Preparar un archivo CSV con los datos de recursos humanos
 
@@ -199,15 +201,15 @@ En función de los sistemas de recursos humanos de la organización y de cómo e
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Paso 2: Crear una aplicación en Azure Active Directory
 
-El siguiente paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación corresponderá al conector de recursos humanos que creas en el paso 3. La creación de esta aplicación permitirá a Azure AD autenticar el conector de RECURSOS humanos cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en los pasos 3 y 4.
+El siguiente paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación corresponderá al conector de recursos humanos que creas en el paso 3. Al crear esta aplicación, Azure AD autenticar el conector de recursos humanos cuando se ejecuta e intenta acceder a la organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en los pasos 3 y 4.
 
-- Id. de aplicación de Azure AD (también denominado *id. de aplicación* o *id. de cliente)*
+- Azure AD de aplicación (también denominado id. *de* aplicación o *id. de cliente)*
 
-- Secreto de aplicación de Azure AD (también denominado *secreto de cliente)*
+- Azure AD secreto de aplicación (también denominado *secreto de cliente)*
 
 - Identificador de inquilino (también denominado *id. de directorio)*
 
-Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, consulte [Register an application with the Plataforma de identidad de Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, consulta Registrar una [aplicación con el Plataforma de identidad de Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3-create-the-hr-connector"></a>Paso 3: Crear el conector de RECURSOS HUMANOS
 
@@ -223,7 +225,7 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
 4. En la **página Configurar la conexión,** haga lo siguiente y, a continuación, haga clic **en Siguiente**:
 
-   1. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que creó en el paso 2.
+   1. Escriba o pegue el Azure AD de aplicación de la aplicación de Azure que creó en el paso 2.
 
    1. Escriba un nombre para el conector de RECURSOS HUMANOS.
 
@@ -291,9 +293,9 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
    | Parámetro | Descripción |
    |:-----|:-----|:-----|
-   |`tenantId`|Este es el identificador de la Microsoft 365 que obtuvo en el paso 2. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del Centro de administración de Azure AD. Esto se usa para identificar la organización.|
-   |`appId` |Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 2. Azure AD lo usa para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización. | 
-   |`appSecret`|Este es el secreto de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 2. También se usa para la autenticación.|
+   |`tenantId`|Este es el identificador de la Microsoft 365 que obtuvo en el paso 2. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del centro Azure AD administración. Esto se usa para identificar la organización.|
+   |`appId` |Este es el identificador Azure AD aplicación para la aplicación que creaste en Azure AD paso 2. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización. | 
+   |`appSecret`|Este es el secreto Azure AD aplicación para la aplicación que creaste en Azure AD paso 2. También se usa para la autenticación.|
    |`jobId`|Este es el identificador de trabajo para el conector de RRHH que creó en el paso 3. Esto se usa para asociar los datos de recursos humanos que se cargan en la nube de Microsoft con el conector de recursos humanos.|
    |`csvFilePath`|Esta es la ruta de acceso de archivo del archivo CSV (almacenado en el mismo sistema que el script) que creó en el paso 1. Intente evitar espacios en la ruta de acceso del archivo; de lo contrario, use comillas simples.|
    |||

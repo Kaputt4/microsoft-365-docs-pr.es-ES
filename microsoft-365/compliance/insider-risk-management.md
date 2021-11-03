@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 30f73f99b60092c854ae7d1ccc2d8eac1e7a49b7
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 455c60e925fe9563fff26699e6f023b0971bb96c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335847"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662521"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos de insider en Microsoft 365
 
@@ -63,7 +63,7 @@ La administración de riesgos de Insider se centra en los siguientes principios:
 
 Los análisis de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Esta evaluación también puede ayudarle a determinar las necesidades de licencias adicionales o la optimización futura de las directivas de riesgos internas existentes.
 
-Para obtener más información sobre el análisis de riesgos de insider, consulte Configuración de administración de riesgos [de Insider: Analytics](insider-risk-management-settings.md#analytics-preview).
+Para obtener más información sobre el análisis de riesgos de insider, consulte Configuración de administración de riesgos [de Insider: Analytics](insider-risk-management-settings.md#analytics).
 
 ## <a name="get-started-with-recommended-actions-preview"></a>Introducción a las acciones recomendadas (versión preliminar)
 
@@ -88,6 +88,7 @@ Puede seleccionar entre las siguientes plantillas de directiva para empezar ráp
 - [Filtración de datos por parte de usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Infracciones generales de la directiva de seguridad (versión preliminar)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [Uso incorrecto de datos del paciente general (versión preliminar)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
@@ -130,14 +131,14 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo registro de [auditoría (versión preliminar)](insider-risk-management-audit-log.md) permite mantenerse informado de las acciones realizadas en las características de administración de riesgos internas. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos insider.
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez que se investigan los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas en riesgos de la organización. Si los usuarios infringen accidentalmente o inadvertidamente las condiciones de la directiva, se puede enviar un aviso simple al usuario desde plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o pueden dirigir al usuario a cursos de actualización o instrucciones para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 
 En las situaciones más graves, es posible que deba compartir la información de casos de administración de riesgos confidenciales con otros revisores o servicios de su organización. La administración de riesgos de Insider está estrechamente integrada con otras Microsoft 365 de cumplimiento normativo para ayudarle con la resolución de riesgos de un extremo a otro.
 
 - **Advanced eDiscovery:** escalar un caso de investigación le permite transferir datos y la administración del caso a Advanced eDiscovery en Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery avanzado, consulte [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
-- Office 365 integración de api de administración de eventos **(versión preliminar):** la administración de riesgos de Insider admite la exportación de información de alertas a los servicios de administración de eventos y de información de seguridad (SIEM) a través de las API de administración de Office 365 administración. Tener acceso a la información de alertas en la plataforma lo mejor que se adapta a los procesos de riesgo de su organización le ofrece más flexibilidad en cómo actuar en las actividades de riesgo. Para obtener más información sobre cómo exportar información de alerta con Office 365 API de administración, vea [Exportar alertas](insider-risk-management-settings.md#export-alerts-preview).
+- Office 365 integración de api de administración de eventos **(versión preliminar):** la administración de riesgos de Insider admite la exportación de información de alertas a los servicios de administración de eventos y de información de seguridad (SIEM) a través de las API de administración de Office 365 administración. Tener acceso a la información de alertas en la plataforma lo mejor que se adapta a los procesos de riesgo de su organización le ofrece más flexibilidad en cómo actuar en las actividades de riesgo. Para obtener más información sobre cómo exportar información de alerta con Office 365 API de administración, vea [Exportar alertas](insider-risk-management-settings.md#export-alerts).
 
 > [!NOTE]
 > Gracias por sus comentarios y soporte técnico durante la vista previa del conector servicenow. El 30 de noviembre de 2020 hemos decidido finalizar la versión preliminar del conector ServiceNow y dejar de admitir la administración de riesgos de insider. Estamos evaluando activamente métodos alternativos para proporcionar a los clientes la integración de ServiceNow en la administración de riesgos de insider.
@@ -174,9 +175,15 @@ Los usuarios de la organización pueden tener diferentes niveles de riesgo segú
 - [Infracciones de la directiva de seguridad por parte de los usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Filtración de datos por parte de usuarios prioritarios (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
+## <a name="healthcare-preview"></a>Salud (versión preliminar)
+
+Para las organizaciones del sector de la salud, estudios recientes han encontrado una tasa muy alta de infracciones de datos relacionadas con insider. La detección de un uso incorrecto de los datos de los pacientes y la información de los registros de salud es un componente fundamental para proteger la privacidad de los pacientes y cumplir con las normativas de cumplimiento, como la Ley de portabilidad y responsabilidad del seguro de salud (HIPAA) y la Ley de tecnología de la información de salud para la salud para la salud y salud clínica (HITECH). El uso incorrecto de los datos de los pacientes puede ir desde el acceso a registros de pacientes privilegiados hasta el acceso a registros de pacientes de familiares o vecinos con intenciones malintencionadas. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directiva de administración de riesgos de información interna usan el conector de recursos humanos de Microsoft 365 y un conector de datos específico para la salud para empezar a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse en los sistemas de registro de salud electrónico (EHR):
+
+- [Uso incorrecto de datos del paciente general (versión preliminar)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+
 ## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Acciones y comportamientos de usuarios inconformes (versión preliminar)
 
-El empleo subraya que los eventos pueden afectar al comportamiento de los usuarios de varias maneras relacionadas con los riesgos de insider. Estos estresores pueden ser una revisión de rendimiento deficiente, una degradación de posición o la colocación del usuario en un plan de revisión de rendimiento. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede provocar que algunos usuarios realicen acciones que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades arriesgadas, las siguientes plantillas de directiva de administración de riesgos de insider usan el conector de recursos humanos de Microsoft 365 y comienzan a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse cerca de eventos de estrés laboral:
+El empleo subraya que los eventos pueden afectar al comportamiento de los usuarios de varias maneras relacionadas con los riesgos de insider. Estos estresores pueden ser una revisión de rendimiento deficiente, una degradación de posición o la colocación del usuario en un plan de revisión de rendimiento. Aunque la mayoría de los usuarios no responden malintencionadamente a estos eventos, el estrés de estas acciones puede provocar que algunos usuarios realicen acciones que normalmente no consideren en circunstancias normales. Para ayudar a identificar estos tipos de actividades de riesgo, las siguientes plantillas de directiva de administración de riesgos de insider usan el conector de recursos humanos de Microsoft 365 y comienzan a puntuar indicadores de riesgo relacionados con comportamientos que pueden producirse cerca de eventos de estrés laboral:
 
 - [Filtraciones de datos por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Infracciones de la directiva de seguridad por parte de usuarios inconformes (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

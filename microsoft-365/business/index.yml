@@ -25,12 +25,12 @@ productDirectory:
       url: 'https://aka.ms/SMBSecurityKit'
     - title: Novedades
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: La administración de antivirus y la impresión universal ya están disponibles en Microsoft 365 Empresa Premium.
-      url: 'https://aka.ms/M365BPQ1Update'
+      summary: 'Próximamente en versión preliminar: Microsoft Defender para empresas, una solución de extremo de nivel empresarial para empresas con menos de 300 empleados.'
+      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701'
     - title: Unirse a la serie de seminarios web de asociados
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Acelere el crecimiento de negocio a través de servicios administrados con Microsoft 365 Empresa Premium.
-      url: 'https://aka.ms/acceleratewithm365bp'
+      summary: 'Obtenga información sobre Microsoft Defender para empresas, una nueva solución de seguridad de puntos de conexión, y su valor y ventajas para asociados.'
+      url: 'https://aka.ms/DefenderforBusinessWebinar'
 conceptualContent:
   items:
     - title: ¿Qué es Microsoft 365 Empresa Premium?

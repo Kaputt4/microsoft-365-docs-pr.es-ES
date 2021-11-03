@@ -17,14 +17,14 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a4dc0b6a9faafe841efbd976b35631a8ac0febf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f32300976136c8a7526d62547515d739a681e51c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193080"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665794"
 ---
-# <a name="collect-microsoft-defender-av-diagnostic-data"></a>Recopilar datos de diagnóstico antivirus de Microsoft Defender
+# <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Recopilar Antivirus de Microsoft Defender de diagnóstico
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "60193080"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de soporte técnico e ingeniería de Microsoft para ayudar a solucionar problemas que puedan surgir al usar el antivirus de Microsoft Defender.
+En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de soporte técnico e ingeniería de Microsoft para ayudar a solucionar problemas que puedan surgir al usar el Antivirus de Microsoft Defender.
 
 > [!NOTE]
 > Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Este es el modo: [Recopilar paquete de investigación de dispositivos](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
@@ -48,10 +48,10 @@ En al menos dos dispositivos que están experimentando el mismo problema, obteng
 
     c. Especifique las credenciales de administrador o apruebe el símbolo del sistema.
 
-2. Vaya al directorio de Microsoft Defender. El valor predeterminado es `C:\Program Files\Windows Defender`
+2. Vaya al directorio de Antivirus de Microsoft Defender. El valor predeterminado es `C:\Program Files\Windows Defender`
 
    > [!NOTE]
-   > Si está ejecutando una versión actualizada [de Microsoft Defender Platform,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)ejecute `MpCmdRun` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` .
+   > Si está ejecutando una versión actualizada de la plataforma antimalware de [Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)ejecute `MpCmdRun` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` .
 
 3. Escriba el siguiente comando y, a continuación, presione **ENTRAR**
 
@@ -62,7 +62,11 @@ En al menos dos dispositivos que están experimentando el mismo problema, obteng
 4. Se generará .cab archivo de diagnóstico que contenga varios registros de diagnóstico. La ubicación del archivo se especificará en la salida del símbolo del sistema. De forma predeterminada, la ubicación es `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
    > [!NOTE]
-   > Para redirigir el archivo cab a una ruta de acceso o recurso compartido UNC diferente, use el siguiente comando: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>Para obtener más información, vea [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
+   > Para redirigir el archivo cab a una ruta de acceso diferente o a un recurso compartido UNC, use el siguiente comando:
+   >
+   > `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`
+   >
+   > Para obtener más información, vea [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
 
 5. Copie estos .cab en una ubicación a la que pueda tener acceso el soporte técnico de Microsoft. Un ejemplo podría ser una carpeta OneDrive contraseña que puede compartir con nosotros.
 
@@ -131,6 +135,6 @@ También puede especificar dónde se creará el .cab de diagnóstico mediante un
      ![Captura de pantalla de configuración personalizada de ruta de acceso de directorio habilitada.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. Seleccione **Aceptar** o **Aplicar**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Solucionar problemas Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

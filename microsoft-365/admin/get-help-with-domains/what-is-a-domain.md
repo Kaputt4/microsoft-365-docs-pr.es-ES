@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef9c82593d75ecebb4d07b5bcaaf39ff59cb350
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d3c38b3c9ff89bed613413405fec54718ebdd42
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164566"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659989"
 ---
 # <a name="what-is-a-domain"></a>¿Qué es un dominio?
 
@@ -51,9 +51,12 @@ Si ya tienes un dominio como *you@yourcompany. <span> com* puedes agregarlo y em
 > [!TIP]
 > ¿No sabe dónde está registrado su dominio? [Obtenga ayuda para encontrar su registrador de dominios](find-your-domain-registrar.md)
   
- **Use un dominio predeterminado por ahora:**
+ **Use un dominio de Microsoft por ahora:**
   
-Puede usar un dominio predeterminado como  *yourcompany.onmicrosoft. <span> com*  para iniciar sesión por ahora y agregar un dominio personalizado más adelante. No se puede modificar ni cambiar el nombre del dominio predeterminado, por lo que es importante que se asegure de que es lo que quiere antes de continuar. 
+Puede usar un dominio de Microsoft como  *yourcompany.onmicrosoft. <span> com*  para iniciar sesión por ahora y agregar un dominio personalizado más adelante. 
+  
+> [!IMPORTANT]
+> Si selecciona esta opción, el nombre que escriba para su dominio .onmicrosoft.com se usará en todas las direcciones URL SharePoint y OneDrive. Es posible que no pueda cambiar este nombre, así que asegúrese de que está escrito correctamente es el nombre que desea usar desde una perspectiva de personal de marca. 
   
 ## <a name="feeling-stuck"></a>¿Está bloqueado?
 

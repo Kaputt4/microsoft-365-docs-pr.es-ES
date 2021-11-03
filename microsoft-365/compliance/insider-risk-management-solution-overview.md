@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: ddec25fdc3c9e4bedeabb65b6efa2859188fbc74
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: bee78aa071ec24fae499a3e144be78aab6e97dcc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335303"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667733"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos insider en Microsoft 365
 
@@ -49,8 +49,8 @@ Siga estos pasos para configurar la administración de riesgos de insider para s
 1. Obtenga información [sobre la administración de riesgos de insider](insider-risk-management.md) en Microsoft 365
 2. Planear la administración [de riesgos de insider y comprobar licencias](insider-risk-management-plan.md)
 3. Configurar [la configuración de administración de riesgos de insider](insider-risk-management-settings.md)
-4. Configurar [permisos y requisitos](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) [previos de directivas & conectores](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)
-5. Crear y configurar directivas [de administración de riesgos internas](insider-risk-management-configure.md#step-6-create-an-insider-risk-management-policy)
+4. Configurar [permisos y requisitos](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management) [previos de directivas & conectores](insider-risk-management-configure.md#step-4-required-configure-prerequisites-for-policies)
+5. Crear y configurar directivas [de administración de riesgos internas](insider-risk-management-configure.md#step-6-required-create-an-insider-risk-management-policy)
 
 ## <a name="more-information-about-insider-risk-management"></a>Más información sobre la administración de riesgos de insider
 

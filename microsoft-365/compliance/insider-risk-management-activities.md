@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5f52b9391940204e53af03aaee3d5776da67b219
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 6d5974f1a6fca1a56438317b58d36193cb08a7fc
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334547"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662630"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigar actividades de administración de riesgos de insider
 
@@ -206,4 +206,4 @@ Los usuarios modernos del lugar de trabajo suelen tener una amplia variedad de r
 
 - En primer lugar, centra los esfuerzos de analistas e **investigadores en las alertas de mayor riesgo.** Dependiendo de las directivas, es posible que esté capturando actividades y generando alertas con distintos grados de impacto potencial en sus esfuerzos de mitigación de riesgos. [Filtra las alertas](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) por gravedad y prioriza *las alertas de gravedad* alta.
 - **Asignar usuarios como analistas e investigadores**. Tener asignado el usuario adecuado a los roles adecuados es una parte importante del proceso de revisión de alertas de riesgo de insider. Asegúrese de que ha asignado los usuarios adecuados a los grupos de roles Analistas de administración de riesgos de *Insider* e Investigadores de administración de riesgos de *Insider.*  
-- **Use características de riesgo insider automatizadas para ayudar a descubrir las actividades de mayor riesgo.** La detección [](insider-risk-management-policies.md#sequence-detection-preview) de secuencias de administración de riesgos insider y las características acumulativas de detección de [exfiltración](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) pueden ayudarle a descubrir rápidamente los riesgos más difíciles de encontrar en su organización. Considera la posibilidad de ajustar los [refuerzos de la puntuación](insider-risk-management-settings.md#indicators)de riesgo, [las exclusiones](insider-risk-management-settings.md#file-type-exclusions)de tipos de [archivo,](insider-risk-management-settings.md#domains-preview)los dominios y la configuración mínima del umbral del indicador [para](insider-risk-management-settings.md#indicator-level-settings-preview) tus directivas.
+- **Use características de riesgo insider automatizadas para ayudar a descubrir las actividades de mayor riesgo.** La detección [](insider-risk-management-policies.md#sequence-detection-preview) de secuencias de administración de riesgos insider y las características acumulativas de detección de [exfiltración](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) pueden ayudarle a descubrir rápidamente los riesgos más difíciles de encontrar en su organización. Considera la posibilidad de ajustar los [refuerzos de la puntuación](insider-risk-management-settings.md#indicators)de riesgo, [las exclusiones](insider-risk-management-settings.md#file-type-exclusions)de tipos de [archivo,](insider-risk-management-settings.md#domains)los dominios y la configuración mínima del umbral del indicador [para](insider-risk-management-settings.md#indicator-level-settings-preview) tus directivas.

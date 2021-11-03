@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28868e619fbfd51919ecfba470827b6b9a43eef6
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e4bee56b3543c4c9286f94d6dc09e264cd092c81
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554101"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659411"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 
@@ -48,7 +48,7 @@ Logotipo |Nombre del partner   | Descripción
 ![Imagen del logotipo de la expel.](images/expel-logo.png)| [Expulsar la detección administrada y la respuesta para el punto de conexión de Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2162430) | Expulsar ayuda a su seguridad a mantenerse al día al detectar riesgos de seguridad en el punto de conexión de Microsoft Defender.
 ![Imagen del logotipo de Mandiant.](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) for Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2164352) | Formen a su Defender for Endpoint con la inteligencia de MDR de línea frontal 24/7 y la experiencia de Mandiant.
 ![Imagen del logotipo de seguridad de NTT.](images/ntt-logo.png)| [Seguridad de NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | El servicio de EDR de NTT proporciona una respuesta de supervisión de seguridad 24/7 & en el punto de conexión y la red
-![Imagen del logotipo de OneVinn.](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| Detección administrada y respuesta 24/7 integradas en Microsoft Defender y Azure Sentinel, enriquecidas con la inteligencia de amenazas de Onevinn.
+![Imagen del logotipo de OneVinn.](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| Detección administrada y respuesta 24/7 integradas en Microsoft 365 Defender y Azure Sentinel, enriquecidas con la inteligencia de amenazas de Onevinn.
 ![Imagen del logotipo de Quorum Cyber.](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| Un servicio de ingeniería de seguridad & de búsqueda de amenazas de última generación.
 ![Imagen del logotipo canario rojo.](images/redcanary-logo.png)| [Canario rojo](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary es un partner de operaciones de seguridad para equipos modernos, MDR implementado en minutos
 ![Imagen del logotipo de SecureWorks Managed Detection and Response Powered by Red Cloak.](images/secureworks-logo.png)| [Detección administrada de SecureWorks y respuesta con tecnología de capa roja](https://go.microsoft.com/fwlink/?linkid=2133634) | Secureworks combina inteligencia de amenazas y más de 20 años de experiencia en SaaS y soluciones de seguridad administrada

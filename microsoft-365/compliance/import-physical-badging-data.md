@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de protección física de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a sus edificios físicos por usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 38e24f85b371a7bf3934c5e4af5b6bfeb0800794
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 042bd5f6089ff05d734ce6d2e159f5d3e3d104bd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190874"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668339"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos de badging físicos (versión preliminar)
 
@@ -45,17 +45,19 @@ La configuración de un conector de error físico consta de las siguientes tarea
 
 - El script de ejemplo que se ejecuta en el paso 4 inserta los datos de mal estado físico del archivo JSON a la API del conector para que la solución de administración de riesgos insider pueda usarla. Este script de ejemplo no se admite en ningún servicio o programa de soporte técnico estándar de Microsoft. El script de ejemplo aparece "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o rendimiento del script y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
 
+- Este conector está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 
-El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de badging físico que creas en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique la solicitud de inserción de la carga JSON que contiene datos de pérdida de datos físicos. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de badging físico que creas en el paso 3. La creación de esta aplicación permitirá Azure AD autenticar la solicitud de inserción para la carga JSON que contiene datos de pérdida de datos físicos. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Id. de aplicación de Azure AD (también denominado *id. de aplicación* o *id. de cliente)*
+- Azure AD de aplicación (también denominado id. *de* aplicación o *id. de cliente)*
 
-- Secreto de aplicación de Azure AD (también denominado *secreto de cliente)*
+- Azure AD secreto de aplicación (también denominado *secreto de cliente)*
 
 - Identificador de inquilino (también denominado *id. de directorio)*
 
-Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, consulte [Register an application with the Plataforma de identidad de Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, consulta Registrar una [aplicación con el Plataforma de identidad de Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>Paso 2: Preparar un archivo JSON con datos de error físicos
 
@@ -65,7 +67,7 @@ El archivo JSON debe cumplir con la definición de esquema requerida por el cone
 
 |Propiedad|Descripción|Tipo de datos|
 |---|---|---|
-|UserId|Un empleado puede tener varias identidades digitales en todos los sistemas. La entrada debe tener el identificador de Azure AD ya resuelto por el sistema de origen.|UPN o dirección de correo electrónico|
+|UserId|Un empleado puede tener varias identidades digitales en todos los sistemas. La entrada debe tener el identificador Azure AD ya resuelto por el sistema de origen.|UPN o dirección de correo electrónico|
 |AssetId|El identificador de referencia del activo físico o punto de acceso físico.|Cadena alfanumérica|
 |AssetName|Nombre descriptivo del activo físico o punto de acceso físico.|Cadena alfanumérica|
 |EventTime|La marca de tiempo de acceso.|Fecha y hora, en formato UTC|
@@ -142,7 +144,7 @@ El siguiente paso es crear un conector de badging físico en el Centro de cumpli
 
 4. En la **página Credenciales de autenticación,** haga lo siguiente y, a continuación, haga clic **en Siguiente**:
 
-   1. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que creó en el paso 1.
+   1. Escriba o pegue el Azure AD de aplicación para la aplicación de Azure que creó en el paso 1.
 
    2. Descargue el esquema de ejemplo de la referencia para crear el archivo JSON.
 
@@ -191,9 +193,9 @@ Después de ejecutar el script, el archivo JSON que contiene los datos de pérdi
 
    |Parámetro|Descripción|
    |---|---|
-   |tenantId|Este es el identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el tenantId para  su organización en la hoja Información general del Centro de administración de Azure AD. Esto se usa para identificar la organización.|
-   |appId|Este es el identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización.|
-   |appSecret|Este es el secreto de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Esto también se usa para la autenticación.|
+   |tenantId|Este es el identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el tenantId para  su organización en la hoja Información general en el centro Azure AD administración. Esto se usa para identificar la organización.|
+   |appId|Este es el identificador Azure AD aplicación para la aplicación que creaste en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización.|
+   |appSecret|Este es el secreto Azure AD aplicación para la aplicación que creaste en Azure AD paso 1. Esto también se usa para la autenticación.|
    |jobId|Este es el identificador de trabajo del conector de badging físico que creó en el paso 3. Esto se usa para asociar los datos de mal estado físico que se insertan en la nube de Microsoft con el conector de malging físico.|
    |JsonFilePath|Esta es la ruta de acceso de archivo en el equipo local (el que está usando para ejecutar el script) para el archivo JSON que creó en el paso 2. Este archivo debe seguir el esquema de ejemplo descrito en el paso 3.|
    |||

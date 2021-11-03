@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: En este artículo se muestra cómo diagnosticar problemas comunes con el sitio SharePoint Online mediante las herramientas de desarrollador de Internet Explorer.
-ms.openlocfilehash: 5910e1164ffdf892ffc7252e0e887a6633598c3c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb12bc6b8b8f95c33ad35aafad760803e927e830
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198522"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664944"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosticar problemas de rendimiento con SharePoint Online
 
@@ -38,12 +38,12 @@ Hay tres formas diferentes de identificar que una página de un sitio de SharePo
 
 - SharePoint Métricas de encabezado de respuesta en línea
 
-En este tema se describe cómo usar cada uno de estos métodos para diagnosticar problemas de rendimiento. Una vez que haya descubierto la causa del problema, puede trabajar en una solución con los artículos sobre cómo mejorar SharePoint rendimiento que puede encontrar en https://aka.ms/tune .
+En este tema se describe cómo usar cada uno de estos métodos para diagnosticar problemas de rendimiento. Una vez que haya descubierto la causa del problema, puede trabajar en una solución con los artículos sobre cómo mejorar SharePoint rendimiento que puede encontrar en https://aka.ms/tune . Como alternativa, si es administrador y desea diagnosticar el problema rápidamente, [ejecute esta herramienta de diagnóstico](https://aka.ms/PillarSiteandPagePerf). 
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Uso de la barra de herramientas F12 para diagnosticar el rendimiento en SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-En este artículo usamos Internet Explorer 11. Las versiones de las herramientas de desarrollo F12 en otros exploradores tienen características similares, aunque pueden tener un aspecto ligeramente diferente. Para obtener información sobre las herramientas para desarrolladores de F12, vea:
+En este artículo, usamos Internet Explorer 11. Las versiones de las herramientas de desarrollo F12 en otros exploradores tienen características similares, aunque pueden tener un aspecto ligeramente diferente. Para obtener información sobre las herramientas para desarrolladores de F12, vea:
   
 - [Novedades de F12 Tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 

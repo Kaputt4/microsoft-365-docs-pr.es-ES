@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 99b17e10cdf3396fc715d83d5ca6de51ae4cb9c9
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 779b5f29c2bbac542ee1a8f079a2baab8537e689
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364175"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665250"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
@@ -108,7 +108,7 @@ Para los usuarios con una coincidencia de cumplimiento de comunicación, puede e
 
 ## <a name="plan-for-policies"></a>Planeación de directivas
 
-La creación de directivas de cumplimiento de comunicaciones es rápida y fácil con las plantillas [predefinidas](communication-compliance-policies.md#policy-templates) para el lenguaje ofensivo, la información confidencial y el cumplimiento normativo. Las directivas de cumplimiento de comunicaciones personalizadas permiten la flexibilidad para detectar e investigar problemas específicos de la organización y los requisitos.
+La creación de directivas de cumplimiento de comunicaciones es rápida y fácil con las plantillas [predefinidas](communication-compliance-policies.md#policy-templates) para contenido inadecuado, información confidencial y cumplimiento normativo. Las directivas de cumplimiento de comunicaciones personalizadas permiten la flexibilidad para detectar e investigar problemas específicos de la organización y los requisitos.
 
 Al planear las directivas de cumplimiento de comunicaciones, tenga en cuenta las siguientes áreas:
 
@@ -118,6 +118,15 @@ Al planear las directivas de cumplimiento de comunicaciones, tenga en cuenta las
 - Las directivas pueden admitir la supervisión de idiomas distintos del inglés en directivas de cumplimiento de comunicaciones personalizadas. Crea un [diccionario de palabras](communication-compliance-policies.md#custom-keyword-dictionaries) clave personalizado de palabras ofensivas en el idioma que prefieras o crea tu propio modelo de aprendizaje automático con clasificadores [capacitados](classifier-get-started-with.md) en Microsoft 365.
 - Todas las organizaciones tienen diferentes estándares de comunicación y necesidades de directiva. Supervisar palabras clave específicas mediante condiciones de directiva de [cumplimiento](communication-compliance-policies.md#conditional-settings) de comunicación o supervisar tipos específicos de información con tipos de información [confidencial personalizados.](create-a-custom-sensitive-information-type.md)
 
+## <a name="creating-a-communication-compliance-policy-walkthrough"></a>Crear un tutorial de directiva de cumplimiento de comunicaciones
+
+¿Desea ver un tutorial detallado sobre cómo configurar una nueva directiva de cumplimiento de comunicaciones y corregir una alerta? Consulte el siguiente vídeo de 15 minutos para ver una demostración de cómo las directivas de cumplimiento de comunicación pueden ayudarle a detectar mensajes inapropiados, investigar posibles infracciones y corregir problemas de cumplimiento.
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWNchy]
+<br>
+
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-Para configurar el cumplimiento de comunicaciones para su organización de [Microsoft 365,](communication-compliance-configure.md) vea Configure communication compliance for Microsoft 365 or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications.
+Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, vea Configure communication compliance for Microsoft 365 or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for inappropriate content in [Microsoft Teams,](communication-compliance-configure.md) Exchange Online, and Yammer communications.

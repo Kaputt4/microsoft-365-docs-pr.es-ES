@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d1f3214efa76759fa9e1a17ed4497c476125a096
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a5c96f8a3dd96219f58ac667e03b50e03498dcae
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552599"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60659108"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para Administración de amenazas y vulnerabilidades
 
@@ -48,9 +48,9 @@ En la tabla siguiente, "Sí" indica que se admite una funcionalidad Administraci
 
 Sistema operativo o plataforma compatibles|Vulnerabilidades del sistema operativo|Vulnerabilidades de productos de software|Evaluación de configuración del sistema operativo|Evaluación de configuración de controles de seguridad|Evaluación de configuración de productos de software
 :---|:---|:---|:---|:---|:---
-Windows 7|Sí|No se admite|No admitido|No admitido|No se admite
+Windows 7|Sí|No compatible|No se admite|No admitido|No se admite
 Windows 8.1|Sí|Sí|Sí|Sí|Sí
-Windows 10, versiones 1607-1703|Sí|No compatible|No se admite|No se admite|No se admite
+Windows 10, versiones 1607-1703|Sí|No se admite|No se admite|No se admite|No se admite
 Windows 10, versión 1709 o posterior|Sí|Sí|Sí|Sí|Sí
 Windows 11|Sí|Sí|Sí|Sí|Sí
 Windows Server 2008 R2|Sí|Sí|Sí|Sí|Sí
@@ -64,6 +64,8 @@ CentOS 7.2 o superior|Sí|Sí|Sí|Sí|Sí
 Ubuntu 16,04 LTS o superior LTS|Sí|Sí|Sí|Sí|Sí
 Oracle Linux 7.2 o posterior|Sí|Sí|Sí|Sí|Sí
 SUSE Linux Enterprise Server 12 o posterior|Sí|Sí|Sí|Sí|Sí
+Android 6.0 o posterior (en versión preliminar)|Sí|Sí|No se admite|No se admite|No se admite
+iOS 12.0 o posterior (en versión preliminar)|Sí|No compatible|No se admite|No admitido|No compatible
 
 > [!NOTE]
 > Algunas características no están disponibles para el sistema operativo de nivel inferior, consulte el portal de Microsoft 365 Defender para obtener más información sobre el sistema operativo compatible.

@@ -22,14 +22,14 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la cuarentena Exchange Online Protection (EOP) que contiene mensajes potencialmente peligrosos o no deseados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 48509dbc6f422a8de2ab0ee2e75fd5456087fc6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 58097b5dba60c1ea085ea6e78c878982abe24021
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199422"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668459"
 ---
-# <a name="quarantined-email-messages-in-eop"></a>Mensajes de correo electrónico en cuarentena en EOP
+# <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Mensajes de correo electrónico en cuarentena en EOP y Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -46,14 +46,32 @@ De forma predeterminada, las policías contra correo no deseado ponen en cuarent
 
 Tanto los usuarios como los administradores pueden trabajar con mensajes en cuarentena:
 
-- _Las directivas de_ cuarentena definen lo que los usuarios pueden hacer o no hacer en los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características admitidas). Las directivas de cuarentena predeterminadas aplican las funcionalidades históricas como se describe a continuación. Los administradores pueden crear y aplicar directivas de cuarentena personalizadas que definen capacidades menos restrictivas o más restrictivas para los usuarios. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+- _Las directivas de_ cuarentena definen lo que los usuarios pueden hacer o no hacer en los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características admitidas). Las directivas de cuarentena predeterminadas aplican las funcionalidades históricas como se describe a continuación. Los administradores pueden crear y aplicar directivas de cuarentena personalizadas que definen capacidades menos restrictivas o más restrictivas para los usuarios, y también activar las notificaciones de cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
 - Los administradores pueden trabajar con todos los tipos de mensajes en cuarentena para todos los usuarios. De forma predeterminada, solo los administradores pueden trabajar con mensajes que se han puesto en cuarentena como malware, phishing de elevada confianza o como resultado de reglas de flujo de correo (también conocidas como reglas de transporte). Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 
 - De forma predeterminada, los usuarios pueden trabajar con mensajes en cuarentena donde son un destinatario y el mensaje se ha puesto en cuarentena como correo no deseado, correo electrónico masivo o suplantación de identidad (no phishing de elevada confianza). Para obtener más información, vea Buscar y liberar mensajes [en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md).
 
-  Para evitar que los usuarios puedan administrar sus propios mensajes de suplantación de identidad en cuarentena, los administradores pueden configurar una acción diferente para el veredicto de filtrado de correo electrónico de suplantación de identidad **(phishing)** en directivas contra correo no deseado. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
+  Para evitar que los usuarios puedan administrar sus propios mensajes de suplantación de identidad en cuarentena, los administradores pueden asignar una directiva de cuarentena que deniegue el acceso a los mensajes en cuarentena del veredicto de filtrado de correo electrónico de suplantación de identidad **(phishing)** en las directivas contra correo no deseado. Para obtener más información, vea [Asignar directivas de cuarentena en directivas contra correo no](quarantine-policies.md#anti-spam-policies)deseado Directivas de[cuarentena.](quarantine-policies.md)
 
 - Los administradores y los usuarios pueden notificar falsos positivos a Microsoft en cuarentena.
 
-Para obtener más información acerca de la cuarentena, consulte [Quarantine FAQ](quarantine-faq.yml).
+- El tiempo durante el que los mensajes en cuarentena se mantienen en cuarentena antes de que expiren varía en función del motivo por el que el mensaje se ha puesto en cuarentena. Las características que ponen en cuarentena los mensajes y sus períodos de retención correspondientes se describen en la tabla siguiente:
+
+  <br>
+
+  ****
+
+  |Motivo de la cuarentena:|Período de retención predeterminado|¿Personalizable?|Comentarios|
+  |---|:---:|:---:|---|
+  |Mensajes en cuarentena por directivas contra correo no deseado: correo no deseado, correo no deseado de elevada confianza, phishing, phishing de elevada confianza o masivo.|30 días|Sí|Puede configurar (inferior) este valor en directivas contra correo no deseado. Para obtener más información, vea la configuración Retener **correo no** deseado en cuarentena durante estos muchos días (_QuarantineRetentionPeriod_) en [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
+  |Mensajes en cuarentena por directivas anti phishing: suplantación de identidad en EOP; suplantación de usuario, suplantación de dominio o inteligencia de buzones en Defender para Office 365.|30 días|Sí|Este período de retención también se controla mediante la configuración Retener **correo no** deseado en cuarentena durante estos muchos días (_QuarantineRetentionPeriod_) en directivas **contra correo** no deseado. El período de retención que se usa es el valor de la primera directiva contra **correo** no deseado que coincida con la que se define el destinatario.|
+  |Mensajes en cuarentena por directivas antimalware (mensajes de malware).|15 días|No||
+  |Mensajes puestos en cuarentena por Caja fuerte de datos adjuntos en Defender para Office 365 (mensajes de malware).|15 días|No||
+  |Mensajes en cuarentena por reglas de flujo de correo: la acción es Entregar el mensaje a **la cuarentena hospedada** (_Cuarentena_).|30 días|No||
+  |Archivos en cuarentena por Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams (archivos de malware).|15 días|No||
+  |
+
+  Cuando un mensaje expira de la cuarentena, no se puede recuperar.
+
+Para obtener más información acerca de la cuarentena, vea [Quarantine Faq](quarantine-faq.yml).

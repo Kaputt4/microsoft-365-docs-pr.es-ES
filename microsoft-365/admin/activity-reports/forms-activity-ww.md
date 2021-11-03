@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Forms mediante el panel Microsoft 365 informes en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: b5f654acddf679f0040f0e15a6146f74044a7e45
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 900ae6c273d47785296b94622060f2fe3b6dc0ca
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553321"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60652877"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 Informes en el Centro de administración: actividad de formularios
 
-El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle más información pormenorizada acerca de las actividades dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle más información pormenorizada acerca de las actividades dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
 Por ejemplo, puede comprender la actividad de cada usuario con licencia para usar Microsoft Forms al ver su interacción con formularios. También le ayuda a comprender el nivel de colaboración que se está creando al ver el número de formularios creados y formularios a los que respondió el usuario.
   

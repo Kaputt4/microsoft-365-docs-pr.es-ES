@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las aplicaciones Microsoft Teams que se usan en su organización obteniendo el Microsoft Teams de uso de aplicaciones de Microsoft 365 Informes.
-ms.openlocfilehash: 64ea581ddcd82b5ed65aa401c594c909fc62d61d
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: cb93481d2b702fd18bd28b5504865316119335a4
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553261"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60649086"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365 Informes en el Centro de administración: Microsoft Teams de dispositivos
 
-El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de Microsoft Teams puede obtener estadísticas sobre las aplicaciones de Microsoft Teams que se usan en su organización.
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de Microsoft Teams puede obtener estadísticas sobre las aplicaciones de Microsoft Teams que se usan en su organización.
   
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Cómo obtener el informe de uso de aplicaciones de Microsoft Teams
 

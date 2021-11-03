@@ -1,5 +1,5 @@
 ---
-title: Datos adjuntos seguros
+title: Archivos adjuntos seguros
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Caja fuerte datos adjuntos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10b3d46d2cd2fd123c790ccb5af556510d911350
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: efe1b985a7df7e8066533bf3789e38120dd97787
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180714"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668427"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Caja fuerte Datos adjuntos de Microsoft Defender para Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "60180714"
 
 Caja fuerte Los datos adjuntos de [Microsoft Defender](defender-for-office-365.md) para Office 365 proporcionan una capa adicional de protección para los datos adjuntos de correo electrónico que ya han sido examinados por la protección antimalware en [Exchange Online Protection (EOP).](anti-malware-protection.md) En concreto, Caja fuerte datos adjuntos usa un entorno virtual para comprobar los datos adjuntos de los mensajes de correo electrónico antes de entregarse a los destinatarios (un proceso conocido como _detonación_).
 
-La protección de datos adjuntos seguros para mensajes de correo electrónico se controla mediante directivas de datos adjuntos seguros. No hay ninguna directiva Caja fuerte de datos adjuntos predeterminada, por lo que para obtener la protección de los datos adjuntos de Caja fuerte, debe crear una o más directivas Caja fuerte **datos adjuntos**. Para obtener instrucciones, vea [Configurar Caja fuerte de datos adjuntos en Defender para Office 365](set-up-safe-attachments-policies.md).
+La protección de datos adjuntos seguros para mensajes de correo electrónico se controla mediante directivas de datos adjuntos seguros. Aunque no hay ninguna directiva predeterminada de  datos adjuntos de Caja fuerte, la directiva de seguridad predefinida de protección integrada proporciona protección de datos adjuntos de Caja fuerte a todos los destinatarios (usuarios que no están definidos en directivas de datos adjuntos de Caja fuerte personalizadas). Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). También puede crear directivas Caja fuerte datos adjuntos que se aplican a usuarios, grupos o dominios específicos. Para obtener instrucciones, vea [Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
 
 En la tabla siguiente se describen escenarios para los datos adjuntos de Caja fuerte en organizaciones de Microsoft 365 y Office 365 que incluyen Microsoft Defender para Office 365 (es decir, la falta de licencias nunca es un problema en los ejemplos).
 
@@ -47,10 +47,10 @@ En la tabla siguiente se describen escenarios para los datos adjuntos de Caja fu
 
 |Escenario|Resultado|
 |---|---|
-|La organización de Microsoft 365 E5 pat no tiene configuradas Caja fuerte de datos adjuntos.|Pat no está protegido por Caja fuerte datos adjuntos. <p> Un administrador debe crear al menos una directiva de Caja fuerte datos adjuntos para que Caja fuerte protección de datos adjuntos esté activa. Además, las condiciones de la directiva deben incluir Pat si Pat va a estar protegido por Caja fuerte datos adjuntos.|
-|La organización de Lee tiene una directiva Caja fuerte datos adjuntos que solo se aplica a los empleados de finanzas. Lee es miembro del departamento de ventas.|Lee no está protegido por Caja fuerte datos adjuntos. <p> Los empleados de finanzas están protegidos Caja fuerte datos adjuntos, pero los empleados de ventas (y otros empleados) no lo están.|
-|Ayer, un administrador de la organización de Juan creó una directiva Caja fuerte datos adjuntos que se aplica a todos los empleados. Anteriormente, Juan recibió un mensaje de correo electrónico que incluía datos adjuntos.|Jean está protegido por Caja fuerte datos adjuntos. <p> Normalmente, una nueva directiva tarda unos 30 minutos en tener efecto.|
-|La organización de Chris tiene directivas de datos adjuntos Caja fuerte para todos los usuarios de la organización. Chris recibe un correo electrónico que tiene datos adjuntos y, a continuación, reenvía el mensaje a destinatarios externos.|Chis está protegido por Caja fuerte datos adjuntos. <p> Si los destinatarios externos también tienen Caja fuerte de datos adjuntos en su organización, los mensajes reenviados están sujetos a dichas directivas.|
+|La organización de Microsoft 365 E5 pat no tiene configuradas Caja fuerte de datos adjuntos.|Pat está protegido por Caja fuerte adjuntos debido a la directiva de seguridad preestablecida de protección integrada que se aplica a todos los destinatarios que no están definidos de otro modo en las directivas Caja fuerte datos adjuntos. |
+|La organización de Lee tiene una directiva Caja fuerte datos adjuntos que solo se aplica a los empleados de finanzas. Lee es miembro del departamento de ventas.|Lee y el resto del departamento de ventas están protegidos  por los datos adjuntos de Caja fuerte debido a la directiva de seguridad preestablecida de protección integrada que se aplica a todos los destinatarios que no están definidos de otro modo en las directivas de datos adjuntos Caja fuerte.|
+|Ayer, un administrador de la organización de Juan creó una directiva Caja fuerte datos adjuntos que se aplica a todos los empleados. Anteriormente, Juan recibió un mensaje de correo electrónico que incluía datos adjuntos.|Jean está protegido por Caja fuerte datos adjuntos debido a esa directiva Caja fuerte datos adjuntos personalizados. <p> Normalmente, una nueva directiva tarda unos 30 minutos en tener efecto.|
+|La organización de Chris tiene directivas de datos adjuntos Caja fuerte para todos los usuarios de la organización. Chris recibe un correo electrónico que tiene datos adjuntos y, a continuación, reenvía el mensaje a destinatarios externos.|Chis está protegido por Caja fuerte datos adjuntos. <p> Si los destinatarios externos de una Microsoft 365, los mensajes reenviados también están protegidos por Caja fuerte datos adjuntos.|
 |
 
 El análisis de datos adjuntos seguros tiene lugar en la misma región donde residen los datos de Microsoft 365. Para obtener más información acerca de la geografía del centro de datos, [vea ¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All)
@@ -80,7 +80,7 @@ En esta sección se describe la configuración de las Caja fuerte de datos adjun
   |**Entrega dinámica**|Entrega mensajes inmediatamente, pero reemplaza los datos adjuntos por marcadores de posición hasta Caja fuerte se completa el examen de datos adjuntos. <p> Los mensajes que contienen datos adjuntos malintencionados se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <p> Para obtener más información, vea la sección [Entrega dinámica en Caja fuerte de datos adjuntos](#dynamic-delivery-in-safe-attachments-policies) más adelante en este artículo.|Evite retrasos en los mensajes mientras protege a los destinatarios de archivos malintencionados.|
   |
 
-  <sup>\*</sup>Los administradores pueden  crear y asignar directivas de cuarentena en Caja fuerte directivas de datos adjuntos que definen lo que los usuarios pueden hacer a los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+  <sup>\*</sup>Los administradores pueden  crear y asignar directivas de cuarentena en Caja fuerte directivas de datos adjuntos que definen lo que los usuarios pueden hacer a los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
 - **Redirigir datos** adjuntos al detectar: habilite redirigir y enviar los datos  adjuntos a la siguiente dirección de correo **electrónico:** para bloquear **,** **supervisar** o reemplazar acciones, envíe mensajes que contengan datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para análisis e investigación.
 

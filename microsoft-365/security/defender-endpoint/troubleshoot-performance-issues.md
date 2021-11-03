@@ -17,12 +17,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6bfd4f42a6fcc43d7eec6c378cb1cdc25b186991
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b36d4d46e6a9ab8b705626ab186e06e577f2c46e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196890"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665544"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -51,7 +51,7 @@ También puede proporcionar registros adicionales al envío a soporte técnico d
 
 Si puede identificar fácilmente el software que afecta al rendimiento del sistema, vaya al centro de soporte o la base de conocimientos del proveedor de software. Busque si tiene recomendaciones sobre las exclusiones antivirus. Si el sitio web del proveedor no los tiene, puede abrir un vale de soporte técnico con ellos y pedirles que publiquen uno.
 
-Se recomienda que los proveedores de software sigan las distintas directrices de Asociación con [el sector para minimizar los falsos positivos.](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/) El proveedor puede enviar su software a través del portal de inteligencia de seguridad [de Microsoft Defender (MDSI).](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper)
+Se recomienda que los proveedores de software sigan las distintas directrices de Asociación con [el sector para minimizar los falsos positivos.](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/) El proveedor puede enviar su software a través [Inteligencia de seguridad de Microsoft portal](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
 ## <a name="analyze-the-microsoft-protection-log"></a>Analizar el registro de Microsoft Protection
 
@@ -67,7 +67,7 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto en 
 |---|---|
 |ProcessImageName|Nombre de imagen de proceso|
 |TotalTime|Duración acumulativa en milisegundos invertidos en exámenes de archivos a los que se accede mediante este proceso|
-|Recuento|Número de archivos escaneados a los que accede este proceso|
+|Count|Número de archivos escaneados a los que accede este proceso|
 |MaxTime|Duración en milisegundos en el examen único más largo de un archivo al que tiene acceso este proceso|
 |MaxTimeFile|Ruta de acceso del archivo al que ha accedido este proceso para el que se registró el examen más largo `MaxTime` de duración|
 |EstimatedImpact|El porcentaje de tiempo invertido en exámenes para los archivos a los que tiene acceso este proceso fuera del período en el que este proceso experimentó actividad de examen|
@@ -167,7 +167,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>Capturar registros de rendimiento con la interfaz de usuario de WPR
 
 > [!TIP]
-> Si tienes varios dispositivos donde se está produciendo el problema, usa el que tenga la mayor cantidad de RAM.
+> Si varios dispositivos están experimentando este problema, usa el que tiene más RAM.
 
 1. Descargue e instale WPR.
 
@@ -243,7 +243,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
     ![Seguimiento de WPR guardado.](images/wpr-14.png)
 
-    Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
+    Incluya el archivo y la carpeta en el envío al Soporte técnico de Microsoft.
 
     ![Archivo y carpeta.](images/wpr-15.png)
 
@@ -281,7 +281,7 @@ La herramienta de línea *de comandoswpr.exe* forma parte del sistema operativo 
 
 8. Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Recopilar Antivirus de Microsoft Defender de diagnóstico](collect-diagnostic-data.md)
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)

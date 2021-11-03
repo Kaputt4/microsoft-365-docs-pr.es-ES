@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ade60ba21b97a22795740cc57971e9b197eb0322
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d510ad9e2fb0609fa6eecf21f3d038a28f9cd0d8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587190"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665696"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -85,7 +85,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     |---|---|
     |Para RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
     |Para RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    |Para RHEL/Centos/Oracle 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |Para RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
     |Para Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Para Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 

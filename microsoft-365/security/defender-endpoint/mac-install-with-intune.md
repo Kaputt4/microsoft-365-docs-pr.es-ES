@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1741eb7226f8ae601b45b73eef5f55ffe9f22ca5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d71bbda27998ed99f6bffbd91ca3b76d9579be78
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204112"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662329"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para endpoint en macOS
 
@@ -231,7 +231,7 @@ Este paso permite implementar Microsoft Defender para Endpoint en equipos inscri
     > [!div class="mx-imgBorder"]
     > ![Lista aplicaciones.](images/mdatp-12-applications.png)
 
-(Puede encontrar información detallada en la página de Intune para la implementación [de Defender](/mem/intune/apps/apps-advanced-threat-protection-macos)).)
+Para obtener más información, vea [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos).)
 
    > [!CAUTION]
    > Debe crear todos los perfiles de configuración necesarios e insertarlos en todas las máquinas, como se explicó anteriormente.

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 73ddc6e4ec4c114a86c88c62287e15e7fa051175
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b05674d7b98d0088b265eda127b6d449e9fba645
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154799"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668051"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Detectar y bloquear aplicaciones potencialmente no deseadas con Microsoft Defender para Endpoint en Linux
 
@@ -39,11 +39,11 @@ Estas aplicaciones no se consideran virus, malware u otros tipos de amenazas, pe
 
 Estas aplicaciones pueden aumentar el riesgo de que la red se infecte con malware, hacer que las infecciones de malware sean más difíciles de identificar y pueden desperdiciar recursos de TI en la limpieza de las aplicaciones.
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Defender para endpoint en Linux puede detectar e informar de archivos PUA. Cuando se configura en modo de bloqueo, los archivos PUA se mueven a la cuarentena.
 
-Cuando se detecta una PUA en un punto de conexión, Defender for Endpoint en Linux mantiene un registro de la infección en el historial de amenazas. El historial se puede visualizar desde el portal Microsoft 365 Defender centro o a través de la herramienta `mdatp` de línea de comandos. El nombre de la amenaza contendrá la palabra "Application".
+Cuando se detecta una PUA en un punto de conexión, Defender for Endpoint en Linux mantiene un registro de la infección en el historial de amenazas. El historial se puede visualizar desde el portal Microsoft 365 Defender Centro de seguridad o a través de la herramienta `mdatp` de línea de comandos. El nombre de la amenaza contendrá la palabra "Application".
 
 ## <a name="configure-pua-protection"></a>Configurar la protección de LA PUA
 

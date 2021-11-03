@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 59208058dce036da06d5378efc2539b8f454dead
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: b741844819d98a394eba969451a59e7b654fcc72
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60585914"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667330"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -156,14 +156,18 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
 
    - En **Nombre**, escriba un nombre para la regla.
    - En **Descripción**, escriba una breve descripción.
-  - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar. Consulte la sección MEM anterior en este tema para el URI de OMA que se va a usar para esta regla de ejemplo. Para GUID de regla ASR, vea [Descripciones](attack-surface-reduction-rules.md#per-rule-descriptions) por regla en el tema: Reglas de reducción de superficie de ataque.
+   - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar. Consulte la sección MEM anterior en este tema para el URI de OMA que se va a usar para esta regla de ejemplo. Para GUID de regla ASR, vea [Descripciones](attack-surface-reduction-rules.md#per-rule-descriptions) por regla en el tema: Reglas de reducción de superficie de ataque.
    - En **Tipo de datos**, seleccione **Cadena**.
-   - En **Value**, escriba o pegue el valor GUID, el signo y el valor State sin espacios \= (_GUID=StateValue_). Dónde: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+   - En **Value**, escriba o pegue el valor GUID, el signo y el valor State sin espacios \= (_GUID=StateValue_). Donde:
+     - 0 : Deshabilitar (deshabilitar la regla ASR)
+     - 1 : Bloquear (habilitar la regla ASR)
+     - 2: Auditoría (Evaluar cómo afectaría la regla ASR a su organización si está habilitada)
+     - 6 : Advertir (habilitar la regla ASR pero permitir que el usuario final omita el bloque)
 
    > [!div class="mx-imgBorder"]
    > ![Configuración de URI de OMA de MEM.](images/mem05-add-row-oma-uri.png)
 
-6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realice una de las siguientes acciones:
 
    - Haga **clic en Seleccionar etiquetas de ámbito,** seleccione la etiqueta de ámbito (opcional) y, a continuación, haga clic en **Siguiente**.
    - O haga clic en **Siguiente**
@@ -218,7 +222,7 @@ Los valores para habilitar (Bloquear), deshabilitar, advertir o habilitar en mod
 - 0 : Deshabilitar (deshabilitar la regla ASR)
 - 1 : Bloquear (habilitar la regla ASR)
 - 2: Auditoría (Evaluar cómo afectaría la regla ASR a su organización si está habilitada)
-- 6 : Advertir (habilitar la regla ASR pero permitir que el usuario final omita el bloque). El modo de advertencia ya está disponible para la mayoría de las reglas ASR.
+- 6 : Advertir (habilitar la regla ASR pero permitir que el usuario final omita el bloque). El modo de advertencia está disponible para la mayoría de las reglas ASR.
 
 Use [el proveedor ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service provider (CSP) para agregar exclusiones.
 
@@ -256,9 +260,7 @@ Ejemplo:
 
 3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** \>  \> **Protección contra vulnerabilidades de seguridad de Microsoft Defender** \> **reducción de superficie de ataque**.
 
-4. Selecciona **Configurar reglas de reducción de superficie de ataque** y selecciona **Habilitado**. A continuación, puede establecer el estado individual de cada regla en la sección de opciones.
-
-   Seleccione **Mostrar...** y escriba el identificador de regla en la columna **Nombre** de valor y el estado elegido en la **columna** Valor de la siguiente manera:
+4. Selecciona **Configurar reglas de reducción de superficie de ataque** y selecciona **Habilitado**. A continuación, puede establecer el estado individual de cada regla en la sección de opciones. Seleccione **Mostrar...** y escriba el identificador de regla en la columna **Nombre** de valor y el estado elegido en la **columna** Valor de la siguiente manera:
 
    - 0 : Deshabilitar (deshabilitar la regla ASR)
    - 1 : Bloquear (habilitar la regla ASR)
@@ -276,6 +278,12 @@ Ejemplo:
 
 > [!WARNING]
 > Si administra los equipos y dispositivos con Intune, Configuration Manager u otra plataforma de administración de nivel empresarial, el software de administración sobrescribirá cualquier configuración de PowerShell en conflicto al iniciarse. Para permitir que los usuarios definan el valor con PowerShell, use la opción "User Defined" para la regla en la plataforma de administración.
+> "Definido por el usuario" permite a un usuario administrador local configurar la regla.
+> La opción Definida por el usuario se muestra en la siguiente figura.
+
+> [!div class="mx-imgBorder"]
+> ![ASR habilita "Definido por el usuario"](images/asr-user-defined.png)
+
 
 1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**.
 

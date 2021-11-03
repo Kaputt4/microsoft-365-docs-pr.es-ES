@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 9f428dc011d98d446f32f009345d5df30337c4f2
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 332a2b14bb74363091df8fc18423c347d1d8c6fb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552757"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60663033"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -47,7 +47,7 @@ Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-La implementación centralizada de complementos requiere que los usuarios usen SKU de Microsoft 365 Enterprise: E3/E5/F3, SKU de Office 365 Enterprise: E3/E5/F3 o SKU empresariales: Business Basic, Business Standard, Business Premium (y han iniciado sesión en Office con su id. de organización) y han iniciado sesión en Office con su id. de organización y han iniciado sesión Exchange Online buzones de correo Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory.
+La implementación centralizada de complementos requiere que los usuarios usen licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3) (y han iniciado sesión en Office con su identificador de organización) y tienen buzones de correo Exchange Online y activos Exchange Online. El directorio de suscripción debe estar en o federado para Azure Active Directory.
 Puede ver requisitos específicos para Office y Exchange a continuación, o usar el Control de compatibilidad de implementación [centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
@@ -63,11 +63,11 @@ La implementación centralizada no es compatible con lo siguiente:
 ### <a name="office-requirements"></a>Office Requisitos
 
 - Para word, Excel y PowerPoint complementos, los usuarios deben usar una de las siguientes opciones:
-  - En un dispositivo Windows, versión 1704 o posterior de Microsoft 365 Enterprise SKU: E3/E5/F3 o SKU empresariales: Business Basic, Business Standard, Business Premium.
+  - En un dispositivo Windows, versión 1704 o posterior de licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3).
   - En mac, versión 15.34 o posterior.
 
 - Por Outlook, los usuarios deben usar una de las siguientes opciones:
-  - Versión 1701 o posterior de Microsoft 365 Enterprise SKU: E3/E5/F3 o SKU empresariales: Business Basic, Business Standard, Business Premium.
+  - Versión 1701 o posterior de licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3).
   - Versión 1808 o posterior de Office Profesional Plus 2019 o Office Standard 2019.
   - Versión 16.0.4494.1000 o posterior de Office Profesional Plus 2016 (MSI) o Office Standard 2016 (MSI)\*
   - Versión 15.0.4937.1000 o posterior de Office Profesional Plus 2013 (MSI) o Office Standard 2013 (MSI)\*

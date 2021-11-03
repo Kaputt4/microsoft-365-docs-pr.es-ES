@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae168a74e4f01ebe9a6e62d3aa7105167064e25e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d8da4e897ee53be88e051f6ec5600a83e9aa420f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205156"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60671567"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -33,7 +31,7 @@ ms.locfileid: "60205156"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 
@@ -44,13 +42,13 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `AlertId` | string | Identificador único de alerta. |
+| `AlertId` | cadena | Identificador único de alerta. |
 | `Title` | cadena | Título de la alerta. |
 | `Category` | cadena | Tipo de indicador de amenazas o actividad de vulneración identificada por la alerta |
 | `Severity` | cadena | El indicador de amenazas indica el posible impacto (alto, medio o bajo) de las actividades de vulneración identificadas por la alerta. |
 | `ServiceSource` | cadena | Producto o servicio que proporcionó la información de alerta |
-| `DetectionSource` | string | Tecnología de detección o sensor que identificó el componente o actividad notables |
-| `AttackTechniques` | string | MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta |
+| `DetectionSource` | cadena | Tecnología de detección o sensor que identificó el componente o actividad notables |
+| `AttackTechniques` | cadena | MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

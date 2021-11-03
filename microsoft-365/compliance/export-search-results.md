@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4a140b933aabbdcf06c9f3c9ab0cbf40d2b05e7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22f66333a5fa2c5b570b564276c626fa0b41f83d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170685"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662699"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -138,6 +138,9 @@ Consulte la siguiente sección para obtener instrucciones para descargar los res
 ## <a name="step-2-download-the-search-results"></a>Paso 2: Descargar los resultados de búsqueda
 
 El siguiente paso es descargar los resultados de la búsqueda desde la Azure Storage en el equipo local.
+
+> [!NOTE]
+> Los resultados de búsqueda exportados deben descargarse en un plazo de 14 días después de crear el trabajo de exportación en el paso 1.
   
 1. En la **página Búsqueda de** contenido de la Centro de cumplimiento de Microsoft 365, seleccione la **pestaña** Exportaciones
   

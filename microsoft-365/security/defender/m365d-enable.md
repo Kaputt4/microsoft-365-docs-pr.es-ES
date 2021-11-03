@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b64990320684f6c022a2fc8a2092141af5728679
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 84cb795ec2ffb8e8a2c2ce0d8d476c841c4438ca
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174404"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60670187"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "60174404"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 [Microsoft 365 Defender](microsoft-365-defender.md) unifica el proceso de respuesta a incidentes integrando funciones clave en Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. Esta experiencia unificada agrega características eficaces a las que puede tener acceso en el portal Microsoft 365 Defender web.
 

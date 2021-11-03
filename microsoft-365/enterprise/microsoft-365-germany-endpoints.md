@@ -3,7 +3,7 @@ title: Office 365 de conexión para Alemania
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/28/2021
+ms.date: 10/29/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: En este artículo encontrará puntos de conexión accesibles para los clientes que usan Office 365 en Alemania.
 hideEdit: true
-ms.openlocfilehash: 9b998595dca1b838de91d9727d2260fe6298c465
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 41ce851c05ab1ad32ce1c8e2b2c0e6cf08358744
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201642"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673339"
 ---
 # <a name="office-365-germany-endpoints"></a>Puntos de conexión de Office 365 de Alemania
 
@@ -39,7 +39,7 @@ Office 365 requiere conectividad a Internet. Los puntos de conexión siguientes 
   
  **Puntos de conexión de Office 365:** [mundial (incluido GCC)](urls-and-ip-address-ranges.md)  | [Office 365 operado por 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany*  |  [Office 365 Administración Pública de Estados Unidos (DoD)](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 Administración Pública de Estados Unidos (GCC High)](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
-**Última actualización:** 28/09/2021 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción de registro de cambios](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**Last updated:** 10/29/2021 - ![ RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Cambiar suscripción al registro](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 

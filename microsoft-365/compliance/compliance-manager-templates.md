@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo Excel formato.
-ms.openlocfilehash: 74b896f6c0fdd625cf50cc04a31fa79d48dc3a4e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 99e243e86c66babd9a983ae6df891f4094cdbb83
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587686"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673649"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Obtenga información sobre las plantillas de evaluación en el Administrador de cumplimiento
 
@@ -36,9 +36,9 @@ ms.locfileid: "60587686"
 
 Una plantilla es un marco de controles para crear una evaluación en el Administrador de cumplimiento. Nuestro conjunto completo de plantillas puede ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
 
-Nos referimos a plantillas con el mismo nombre que su certificación o reglamento subyacentes, como la plantilla RGPD de la UE y la plantilla ISO/IEC 27701:2019. Dado que el pesebre de cumplimiento se puede usar para evaluar diferentes tipos de productos, cada plantilla viene en dos versiones: una que se aplica a Microsoft 365 y una versión universal que se puede personalizar para que se adapte al producto elegido.
+Nos referimos a plantillas con el mismo nombre que su certificación o reglamento subyacentes, como la plantilla RGPD de la UE y la plantilla ISO/IEC 27701:2019. Dado que el pesebre de cumplimiento se puede usar para evaluar diferentes tipos de productos, cada plantilla viene en dos versiones: una que se aplica a un producto predefinido, como Microsoft 365, y una versión universal que puede adaptarse a su producto elegido.
 
-Tenga en cuenta que los clientes de Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD) actualmente pueden usar las versiones de plantilla Microsoft 365, pero no universales.
+Tenga en cuenta que Community (GCC) los clientes moderados, GCC altos y del Departamento de Defensa (DoD) actualmente no pueden usar plantillas universales.
 
 ## <a name="template-availability-and-licensing"></a>Disponibilidad y licencias de plantillas
 
@@ -74,9 +74,10 @@ GCC Las cuentas high y DOD deben comprar licencias de plantilla a través [de li
 
 Para probar las plantillas premium antes de realizar una compra, también puede adquirir versiones de prueba de las licencias. Las licencias de prueba son válidas para un máximo de 25 plantillas durante 90 días. Una vez que obtenga la licencia de prueba, las plantillas deben estar disponibles en el espacio empresarial en un plazo de 48 horas.
 
-Para iniciar una prueba, elija el vínculo adecuado para su organización:
+Si su organización tiene una licencia comercial para el Administrador de cumplimiento, puede obtener información sobre cómo iniciar la prueba en About [the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
 
-- [Comercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/e320704d-b7c9-4012-b6a6-0a2679790360)
+Si su organización está bajo una licencia GCC o DOD, elija el vínculo de prueba adecuado para su organización:
+
 - [GCC Moderado](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
 - [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
@@ -98,7 +99,7 @@ Por ejemplo, si el contador muestra 2/5, esto significa que su organización ha 
 
 Si el contador muestra 5/2, esto indica que su organización supera sus límites y necesita comprar 3 de las plantillas premium en uso.
 
-Microsoft 365 versiones universales y de plantillas tienen licencias conjuntas, de modo que puede usar la misma certificación subyacente en más de un producto. El uso de una o ambas versiones de la misma plantilla solo contará como una plantilla activada.
+Las plantillas de un producto predefinido, como Microsoft 365, tienen licencias conjuntas con las versiones universales de la misma plantilla. Esto le permite usar la misma certificación subyacente en más de un producto. El uso de una o ambas versiones de la misma plantilla solo contará como una plantilla activada.
 
 Para obtener más información, consulte [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 
@@ -118,7 +119,7 @@ Al trabajar con evaluaciones en el Administrador de cumplimiento, es posible que
 
 ## <a name="extend-an-assessment-template"></a>Ampliar una plantilla de evaluación
 
-El Administrador de cumplimiento ofrece la opción de agregar sus propios controles y acciones de mejora a una plantilla existente. Este proceso se denomina extensión de una plantilla. Para ampliar una plantilla, usará instrucciones especiales para agregar a los datos de plantilla, en función de si está ampliando las plantillas de evaluación Microsoft 365 plantillas de evaluación universales. Para obtener más información, vea [Extend an assessment template](compliance-manager-templates-extend.md).
+El Administrador de cumplimiento ofrece la opción de agregar sus propios controles y acciones de mejora a una plantilla existente. Este proceso se denomina extensión de una plantilla. Para ampliar una plantilla, usará instrucciones especiales para agregar datos de plantilla, en función de si está ampliando plantillas de evaluación de Microsoft o plantillas de evaluación universal. Para obtener más información, vea [Extend an assessment template](compliance-manager-templates-extend.md).
 
 ## <a name="format-assessment-template-data-in-excel"></a>Dar formato a los datos de plantilla de evaluación Excel
 

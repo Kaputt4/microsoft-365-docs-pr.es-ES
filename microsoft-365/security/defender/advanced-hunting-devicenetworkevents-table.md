@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 79f30168cf8b556adca57f2020e776f17bbd0866
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 874a8256506cc5d66b16c3c927faf7794f62ffff
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176792"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60664459"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -52,40 +50,40 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
-| `RemotePort` | int | Puerto TCP en el dispositivo remoto al que se estaba conectando |
+| `RemotePort` | Entero | Puerto TCP en el dispositivo remoto al que se estaba conectando |
 | `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
 | `LocalIP` | cadena | Dirección IP asignada al equipo local usado durante la comunicación |
-| `LocalPort` | int | Puerto TCP en el equipo local usado durante la comunicación |
-| `Protocol` | string | Protocolo usado durante la comunicación |
-| `LocalIPType` | string | Tipo de dirección IP, por ejemplo Public, Private, Reserved, Loopback, Teredo, FourToSixMapping y Broadcast |
-| `RemoteIPType` | string | Tipo de dirección IP, por ejemplo Public, Private, Reserved, Loopback, Teredo, FourToSixMapping y Broadcast |
-| `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `LocalPort` | Entero | Puerto TCP en el equipo local usado durante la comunicación |
+| `Protocol` | cadena | Protocolo usado durante la comunicación |
+| `LocalIPType` | cadena | Tipo de dirección IP, por ejemplo Public, Private, Reserved, Loopback, Teredo, FourToSixMapping y Broadcast |
+| `RemoteIPType` | cadena | Tipo de dirección IP, por ejemplo Public, Private, Reserved, Loopback, Teredo, FourToSixMapping y Broadcast |
+| `InitiatingProcessSHA1` | cadena | SHA-1 del proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessSHA256` | cadena | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessMD5` | cadena | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
 | `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
 | `InitiatingProcessVersionInfoCompanyName` | string | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoProductName` | string | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductVersion` | string | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoInternalFileName` | string | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoOriginalFileName` | string | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoFileDescription` | string | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessId` | int | Identificador de proceso (PID) del proceso que inició el evento |
-| `InitiatingProcessCommandLine` | string | Línea de comandos usada para ejecutar el proceso que inició el evento |
+| `InitiatingProcessVersionInfoProductVersion` | cadena | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoInternalFileName` | cadena | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoOriginalFileName` | cadena | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoFileDescription` | cadena | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessId` | Entero | Identificador de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessCommandLine` | cadena | Línea de comandos usada para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
-| `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
-| `InitiatingProcessParentId` | int | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessFolderPath` | cadena | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessParentFileName` | cadena | Nombre del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | Entero | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
-| `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| `InitiatingProcessAccountObjectId` | string | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
-| `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
-| `InitiatingProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
+| `InitiatingProcessAccountDomain` | cadena | Dominio de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountName` | cadena | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountSid` | cadena | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountObjectId` | cadena | Azure AD de objeto de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| `InitiatingProcessIntegrityLevel` | cadena | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
+| `InitiatingProcessTokenElevation` | cadena | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
-| `AppGuardContainerId` | string | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
+| `AppGuardContainerId` | cadena | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
 | `AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |
 
 ## <a name="related-topics"></a>Temas relacionados

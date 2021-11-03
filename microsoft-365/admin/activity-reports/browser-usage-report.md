@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 973129b6b5bccf26e6a37dada5fde13c97e69f18
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ac2eb7af8f89fb3d496d7b2afd8ca66322e20275
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553333"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60654004"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del explorador de Microsoft
 
-El panel Microsoft 365 **informes le** muestra una introducción a la actividad en todos los productos de la organización. Le permite profundizar en informes de nivel de producto individuales para ofrecer información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador de Microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso Microsoft Edge explorador. Los informes de uso se basan Microsoft 365 los servicios en línea a los que se accede mediante un explorador de Microsoft.
+El panel Microsoft 365 informes le muestra una introducción a la actividad en todos los productos de la organización. Le permite profundizar en informes de nivel de producto individuales para ofrecer información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador de Microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso Microsoft Edge explorador. Los informes de uso se basan Microsoft 365 los servicios en línea a los que se accede mediante un explorador de Microsoft.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Cómo obtener acceso al informe de uso del explorador de Microsoft
 

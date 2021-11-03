@@ -19,13 +19,13 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-ms.date: 04/02/2021
-ms.openlocfilehash: 67767a7594d16e9f448e01cad6e58254607968ff
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.date: 10/29/2021
+ms.openlocfilehash: afbdbc333a5242a1a4639bf52162faeee44e52fd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554221"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665318"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Cómo pagar la suscripción con un perfil de facturación
 
@@ -55,167 +55,11 @@ Si tu perfil de facturación está con el respaldo de una factura, recibes un co
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 
-[Consulte la factura](view-your-bill-or-invoice.md) para ver las instrucciones de pago. También puede usar la lista desplegable siguiente para encontrar instrucciones de pago para su país. Si no está seguro de la cantidad que debe, puede comprobar su factura y el historial de facturación en línea en la pestaña **Facturas** de la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
+[Compruebe las instrucciones de](view-your-bill-or-invoice.md) pago de su país o región en la factura. Si no está seguro de la cantidad que debe, puede comprobar su factura y el historial de facturación en línea en la pestaña **Facturas** de la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 
 > [!NOTE]
 > El pago con cheque solo está disponible en algunos países.
 
- **Elija su país o región de facturación del menú desplegable siguiente.**
-
-> [!div class="op_single_selector"]
->
-> - **Elija su país o región**
-> - [Afganistán](../pay/afghanistan.md)
-> - [Albania](../pay/albania.md)
-> - [Argelia](../pay/algeria.md)
-> - [Angola](../pay/angola.md)
-> - [Argentina](../pay/argentina.md)
-> - [Armenia](../pay/armenia.md)
-> - [Australia](../pay/australia.md)
-> - [Austria](../pay/austria.md)
-> - [Azerbaiyán](../pay/azerbaijan.md)
-> - [Bahamas](../pay/bahamas.md)
-> - [Baréin](../pay/bahrain.md)
-> - [Bangladesh](../pay/bangladesh.md)
-> - [Barbados](../pay/barbados.md)
-> - [Belarús](../pay/belarus.md)
-> - [Bélgica](../pay/belgium.md)
-> - [Belice](../pay/belize.md)
-> - [Bermudas](../pay/bermuda.md)
-> - [Bolivia](../pay/bolivia.md)
-> - [Bosnia y Herzegovina](../pay/bosnia-and-herzegovina.md)
-> - [Botsuana](../pay/botswana.md)
-> - [Brasil](../pay/brazil.md)
-> - [Brunéi](../pay/brunei.md)
-> - [Bulgaria](../pay/bulgaria.md)
-> - [Camerún](../pay/cameroon.md)
-> - [Canadá](../pay/canada.md)
-> - [Cabo Verde](../pay/cape-verde.md)
-> - [Islas Caimán](../pay/cayman-islands.md)
-> - [Chile](../pay/chile.md)
-> - [China](../pay/china-prc.md)
-> - [Colombia](../pay/colombia.md)
-> - [Costa Rica](../pay/costa-rica.md)
-> - [Côte d'Ivoire](../pay/cote-divoire.md)
-> - [Croacia](../pay/croatia.md)
-> - [Curazao](../pay/curacao.md)
-> - [Chipre](../pay/cyprus.md)
-> - [República Checa](../pay/czech-republic.md)
-> - [República Democrática del Congo](../pay/democratic-republic-of-congo.md)
-> - [Dinamarca](../pay/denmark.md)
-> - [República Dominicana](../pay/dominican-republic.md)
-> - [Ecuador](../pay/ecuador.md)
-> - [Egipto](../pay/egypt.md)
-> - [El Salvador](../pay/el-salvador.md)
-> - [Estonia](../pay/estonia.md)
-> - [Etiopía](../pay/ethiopia.md)
-> - [Islas Feroe](../pay/faroe-islands.md)
-> - [Fiyi](../pay/fiji.md)
-> - [Finlandia](../pay/finland.md)
-> - [Francia](../pay/france.md)
-> - [Guayana Francesa](../pay/french-guiana.md)
-> - [Georgia](../pay/georgia.md)
-> - [Alemania](../pay/germany.md)
-> - [Ghana](../pay/ghana.md)
-> - [Grecia](../pay/greece.md)
-> - [Granada](../pay/grenada.md)
-> - [Guadalupe](../pay/guadeloupe.md)
-> - [Guam](../pay/guam.md)
-> - [Guatemala](../pay/guatemala.md)
-> - [Guyana](../pay/guyana.md)
-> - [Haití](../pay/haiti.md)
-> - [Honduras](../pay/honduras.md)
-> - [RAE de Hong Kong](../pay/hong-kong.md)
-> - [Hungría](../pay/hungary.md)
-> - [Islandia](../pay/iceland.md)
-> - [India](../pay/india.md)
-> - [Indonesia](../pay/indonesia.md)
-> - [Irak](../pay/iraq.md)
-> - [Irlanda](../pay/ireland.md)
-> - [Israel](../pay/israel.md)
-> - [Italia](../pay/italy.md)
-> - [Jamaica](../pay/jamaica.md)
-> - [Japón](../pay/japan.md)
-> - [Jordania](../pay/jordan.md)
-> - [Kazajistán](../pay/kazakhstan.md)
-> - [Kenia](../pay/kenya.md)
-> - [Corea del Sur](../pay/korea.md)
-> - [Kuwait](../pay/kuwait.md)
-> - [Kirguistán](../pay/kyrgyzstan.md)
-> - [Letonia](../pay/latvia.md)
-> - [Líbano](../pay/lebanon.md)
-> - [Libia](../pay/libya.md)
-> - [Liechtenstein](../pay/liechtenstein.md)
-> - [Lituania](../pay/lithuania.md)
-> - [Luxemburgo](../pay/luxembourg.md)
-> - [Macao](../pay/macao.md)
-> - [Macedonia del Norte](../pay/macedonia.md)
-> - [Malasia](../pay/malaysia.md)
-> - [Malta](../pay/malta.md)
-> - [Mauricio](../pay/mauritius.md)
-> - [México](../pay/mexico.md)
-> - [Moldova](../pay/moldova.md)
-> - [Mónaco](../pay/monaco.md)
-> - [Mongolia](../pay/mongolia.md)
-> - [Montenegro](../pay/montenegro.md)
-> - [Marruecos](../pay/morocco.md)
-> - [Namibia](../pay/namibia.md)
-> - [Nepal](../pay/nepal.md)
-> - [Países Bajos](../pay/netherlands.md)
-> - [Nueva Zelanda](../pay/new-zealand.md)
-> - [Nicaragua](../pay/nicaragua.md)
-> - [Nigeria](../pay/nigeria.md)
-> - [Noruega](../pay/norway.md)
-> - [Omán](../pay/oman.md)
-> - [Pakistán](../pay/pakistan.md)
-> - [Autoridad Palestina](../pay/palestinian-authority.md)
-> - [Panamá](../pay/panama.md)
-> - [Paraguay](../pay/paraguay.md)
-> - [Perú](../pay/peru.md)
-> - [Filipinas](../pay/philippines.md)
-> - [Polonia](../pay/poland.md)
-> - [Portugal](../pay/portugal.md)
-> - [Puerto Rico](../pay/puerto-rico.md)
-> - [Catar](../pay/qatar.md)
-> - [Rumania](../pay/romania.md)
-> - [Rusia](../pay/russia.md)
-> - [Ruanda](../pay/rwanda.md)
-> - [San Cristóbal y Nieves](../pay/saint-kitts-and-nevis.md)
-> - [Santa Lucía](../pay/saint-lucia.md)
-> - [San Vicente y las Granadinas](../pay/saint-vincent-and-the-grenadines.md)
-> - [Arabia Saudí](../pay/saudi-arabia.md)
-> - [Senegal](../pay/senegal.md)
-> - [Serbia](../pay/serbia.md)
-> - [Singapur](../pay/singapore.md)
-> - [Eslovaquia](../pay/slovakia.md)
-> - [Eslovenia](../pay/slovenia.md)
-> - [Sudáfrica](../pay/south-africa.md)
-> - [España](../pay/spain.md)
-> - [Sri Lanka](../pay/sri-lanka.md)
-> - [Surinam](../pay/suriname.md)
-> - [Suecia](../pay/sweden.md)
-> - [Suiza](../pay/switzerland.md)
-> - [Taiwán](../pay/taiwan.md)
-> - [Tayikistán](../pay/tajikistan.md)
-> - [Tanzania](../pay/tanzania.md)
-> - [Tailandia](../pay/thailand.md)
-> - [Trinidad y Tobago](../pay/trinidad-and-tobago.md)
-> - [Turkmenistán](../pay/turkmenistan.md)
-> - [Túnez](../pay/tunisia.md)
-> - [Turquía](../pay/turkey.md)
-> - [Uganda](../pay/uganda.md)
-> - [Ucrania](../pay/ukraine.md)
-> - [Emiratos Árabes Unidos](../pay/united-arab-emirates.md)
-> - [Reino Unido](../pay/united-kingdom.md)
-> - [Estados Unidos](../pay/united-states.md)
-> - [Uruguay](../pay/uruguay.md)
-> - [Uzbekistán](../pay/uzbekistan.md)
-> - [Venezuela](../pay/venezuela.md)
-> - [Vietnam](../pay/vietnam.md)
-> - [Islas Vírgenes (Estados Unidos)](../pay/virgin-islands.md)
-> - [Yemen](../pay/yemen.md)
-> - [Zambia](../pay/zambia.md)
-> - [Zimbabue](../pay/zimbabwe.md)
 
 ## <a name="can-i-pay-my-invoice-online"></a>¿Puedo pagar mi factura en línea?
 

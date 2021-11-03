@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener un informe de actividad de Voz del cliente de Microsoft Dynamics 365 mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 2eedcf65e95d2bf85dbf156b4e1ac2d540acdf46
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: d143728f8170ae9c12a6d007e9e256a23f7ff74d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553429"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60650474"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 Informes en el centro de administración: actividad de Dynamics 365 Customer Voice
 
-El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle más información pormenorizada acerca de las actividades dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle más información pormenorizada acerca de las actividades dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
 Por ejemplo, puede comprender la actividad de todos los usuarios con licencia para usar Microsoft Dynamics 365 Customer Voice al ver sus interacciones con Dynamics 365 Customer Voice. También le ayuda a comprender el nivel de colaboración que se está creando al ver el número de encuestas de Pro creadas y las encuestas Pro a las que respondieron los usuarios. 
   

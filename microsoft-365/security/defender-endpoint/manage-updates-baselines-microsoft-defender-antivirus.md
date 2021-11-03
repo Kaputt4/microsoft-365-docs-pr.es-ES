@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/19/2021
+ms.date: 11/01/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e6b552bb108785f9f727084609f7a8c873ce6e2
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: db11cc6940a26efb03ef906d0ac09e52986969eb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556357"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668017"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -87,6 +87,25 @@ Todas nuestras actualizaciones contienen
 - mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/><br/>
 <details>
+<summary> Octubre-2021 (Plataforma: 4.18.xxxx.x| Motor: 1.1.18700.4)</summary>
+
+&ensp;Versión de actualización de inteligencia de seguridad: **1.353.3.0**<br/>
+&ensp;Publicado: **28 de octubre de 2021**<br/>
+&ensp;Plataforma: **4.18.xxxx.x**<br/>
+&ensp;Motor: **1.1.18700.4**<br/>
+&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
+
+Versión del motor: 1.1.18700.4 Versión de actualización de inteligencia de seguridad: 1.353.3.0
+
+### <a name="whats-new"></a>Novedades
+- Mejoras en la cobertura de tráfico de red FTP
+- Corrección para reducir el uso de CPU de Microsoft Defender en el servidor exchange con Windows Server 2016
+- Mejoras en la resistencia de manipulación del servicio defender
+
+### <a name="known-issues"></a>Problemas conocidos
+Sin problemas conocidos
+<br/>
+</details><details>
 <summary> Septiembre-2021 (Plataforma: 4.18.2109.6 | Motor: 1.1.18600.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.351.7.0**<br/>
@@ -95,7 +114,7 @@ Todas nuestras actualizaciones contienen
 &ensp;Motor: **1.1.18600.4**<br/>
 &ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
 
-Versión del motor: 1.1.18600.4 Versión de actualización de inteligencia de seguridad: actualización
+Versión del motor: 1.1.18600.4 Versión de actualización de inteligencia de seguridad: 1.351.7.0
 
 ### <a name="whats-new"></a>Novedades
 - Nuevo anillo de retraso para Antivirus de Microsoft Defender de motor y plataforma. Los dispositivos que opten por este anillo recibirán actualizaciones con un retraso de 48 horas. El nuevo anillo de retraso solo se sugiere para entornos críticos. Consulte [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -124,14 +143,21 @@ Sin problemas conocidos
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
 <br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
+
+Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.<br/><br/>
+
+<details>
 <summary> Julio-2021 (Plataforma: 4.18.2107.4 | Motor: 1.1.18400.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.345.13.0**<br/>
 &ensp;Publicado: **5 de agosto de 2021**<br/>
 &ensp;Plataforma: **4.18.2107.4**<br/>
 &ensp;Motor: **1.1.18400.4**<br/>
-&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 ### <a name="whats-new"></a>Novedades
 - Compatibilidad con el control de dispositivos agregado para Windows dispositivos portátiles
@@ -141,13 +167,9 @@ Sin problemas conocidos
 
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
+
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
-
-Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.
-<details>
+</details><details>
 <summary> Junio-2021 (Plataforma: 4.18.2106.5 | Motor: 1.1.18300.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.343.17.0**<br/>

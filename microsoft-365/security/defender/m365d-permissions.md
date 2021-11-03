@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee78ead64f58cc90f43d556f5c1717753f672656
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d18e9da81513a27786a0e53bdc296bcb353618b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169616"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666893"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Administrar el acceso a Microsoft 365 Defender con Azure Active Directory roles globales
 
@@ -33,7 +33,7 @@ ms.locfileid: "60169616"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Hay dos maneras de administrar el acceso a Microsoft 365 Defender
 - **Roles Azure Active Directory global (AD)**
@@ -48,7 +48,7 @@ Las cuentas asignadas a **los siguientes roles Azure Active Directory global (AD
 
 Para revisar las cuentas con estos roles, [vea Permisos en el portal de Microsoft 365 Defender.](https://security.microsoft.com/permissions)
 
-**El acceso** a roles personalizado es una nueva funcionalidad en Microsoft 365 Defender y le permite administrar el acceso a datos, tareas y capacidades específicos en Microsoft Defender 365. Los roles personalizados ofrecen más control que los roles globales de Azure AD, lo que proporciona a los usuarios solo el acceso que necesitan con los roles menos permisivos necesarios.  Los roles personalizados se pueden crear además de los roles globales de Azure AD. [Obtenga más información sobre los roles personalizados](custom-roles.md).
+**El acceso** a roles personalizado es una nueva funcionalidad en Microsoft 365 Defender y le permite administrar el acceso a datos, tareas y capacidades específicos en Microsoft Defender 365. Los roles personalizados ofrecen más control que los roles Azure AD globales, lo que proporciona a los usuarios solo el acceso que necesitan con los roles menos permisivos necesarios.  Los roles personalizados se pueden crear además de los Azure AD globales. [Obtenga más información sobre los roles personalizados](custom-roles.md).
 
 > [!NOTE]
 > Este artículo solo se aplica a la administración de roles Azure Active Directory global. Para obtener más información acerca del uso del control de acceso basado en roles personalizado, vea [Roles personalizados para el control de](custom-roles.md) acceso basado en roles
@@ -69,6 +69,6 @@ Durante la vista previa, Microsoft 365 Defender aplica controles de acceso en fu
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Roles personalizados en el control de acceso basado en roles para Microsoft 365 Defender](custom-roles.md)
-- [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)
+- [Azure AD funciones integradas](/azure/active-directory/roles/permissions-reference)
 - [Rbac de Microsoft Defender para extremo](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Roles de Cloud App Security](/cloud-app-security/manage-admins)

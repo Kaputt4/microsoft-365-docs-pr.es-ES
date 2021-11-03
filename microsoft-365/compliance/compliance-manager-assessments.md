@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 5bc96e6b1fdeec4c7da7f18a199f66d64c093c52
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 27c977076774839b708edb835cc3a279c39f105f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554749"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667745"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -79,7 +79,7 @@ Puede crear un grupo al crear una nueva evaluación. Los grupos no se pueden cre
 
 Las plantillas de evaluación contienen los controles y las recomendaciones de acción para las evaluaciones, basadas en certificaciones para diferentes normativas y estándares de privacidad. Las plantillas disponibles de su organización pueden incluir una o más plantillas que se incluyeron como parte del contrato de licencia, junto con cualquier otra plantilla premium que haya adquirido.
 
-Cada plantilla, incluida o premium, existe en dos versiones: una para su uso con Microsoft 365 y una versión universal que se puede personalizar para evaluar otros productos que use. Puede elegir el tipo de plantilla adecuado para el producto que desea evaluar.
+Cada plantilla, incluida o premium, existe en dos versiones: una para su uso con Microsoft 365 (u otros productos de Microsoft según esté disponible) y una versión universal que se puede personalizar para evaluar otros productos que use. Puede elegir el tipo de plantilla adecuado para el producto que desea evaluar.
 
 Para obtener más información acerca de las plantillas, vea [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
 
@@ -102,7 +102,7 @@ Para empezar a crear evaluaciones, siga estos pasos.
 
 4. **Producto, nombre y grupo:** Establezca estas propiedades para identificar la evaluación, elija el producto que va a evaluar y asígnelo a un grupo.
 
-    - **Producto:** seleccione el producto al que desea que se aplique la evaluación. Si usa una plantilla Microsoft 365, este campo se rellenará para que pueda indicar Microsoft 365 y no se puede cambiar. Si usa una plantilla universal, seleccione si está creando esta evaluación para un producto nuevo o un producto personalizado que ya haya definido en el Administrador de cumplimiento. Si elige un producto nuevo, escriba su nombre. Tenga en cuenta que no puede Microsoft 365 como el producto al usar una plantilla universal.
+    - **Producto:** seleccione el producto al que desea que se aplique la evaluación. Si usa una plantilla de Microsoft, como una diseñada para Microsoft 365, este campo se rellenará para indicar el producto adecuado y no se puede cambiar. Si usa una plantilla universal, seleccione si está creando esta evaluación para un producto nuevo o un producto personalizado que ya haya definido en el Administrador de cumplimiento. Si elige un producto nuevo, escriba su nombre. Tenga en cuenta que no puede seleccionar un producto de Microsoft predefinido al usar una plantilla universal.
     - **Nombre:** escriba un nombre para la evaluación en el **campo Nombre de** evaluación. Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
     - **Grupo:** asigne la evaluación a un grupo. Puede:
         - Seleccione **Usar grupo existente** para asignarlo a un grupo que ya ha creado; o
@@ -162,7 +162,7 @@ Seleccione una acción de mejora para ver su página de detalles y seleccione **
 
 ### <a name="microsoft-actions-tab"></a>Pestaña Acciones de Microsoft
 
-La pestaña Acciones de Microsoft aparece para las evaluaciones en función de las Microsoft 365 de las plantillas. Enumera todas las acciones de la evaluación administradas por Microsoft. La lista muestra detalles de acción clave, incluidos: estado de prueba, puntos que contribuyen a la puntuación general de cumplimiento, normativas y estándares asociados, solución aplicable, tipo de acción y familia de controles. Seleccione una acción de mejora para ver su página de detalles.
+La pestaña Acciones de Microsoft aparece para evaluaciones basadas en plantillas compatibles con productos de Microsoft. Enumera todas las acciones de la evaluación administradas por Microsoft. La lista muestra detalles de acción clave, incluidos: estado de prueba, puntos que contribuyen a la puntuación general de cumplimiento, normativas y estándares asociados, solución aplicable, tipo de acción y familia de controles. Seleccione una acción de mejora para ver su página de detalles.
 
 Obtenga más información sobre cómo se realiza un seguimiento y una puntuación de los controles [y las acciones de mejora.](compliance-score-calculation.md)
 

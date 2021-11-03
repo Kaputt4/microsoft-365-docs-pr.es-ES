@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0f2923d03a101d6ec55bfa4090ce22e9d1353e6e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 11590c443c7d466f323075bd2228156492c82ab0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174608"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60661535"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
@@ -89,7 +89,7 @@ Esto generará un informe ubicado en *./gpresult.html*. Abra este archivo y es p
 
 En el informe GPResults, bajo el título *Windows Components/Antivirus de Windows Defender*, puede ver algo como la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
 
-Directiva|Configuración|GPO ganador
+Policy|Setting|GPO ganador
 ---|---|---
 Desactivar Antivirus de Windows Defender|Habilitado|Win10-Workstations
 
@@ -102,7 +102,7 @@ DisableAntiSpyware|-
 GPO ganador|Win10-Workstations
 Resultado: Correcto|
 **General**|
-Acción|Actualizar
+Action|Actualizar
 **Propiedades**|
 Hive|HKEY_LOCAL_MACHINE
 Ruta de acceso clave|SOFTWARE\Policies\Microsoft\Windows Defender
@@ -129,7 +129,7 @@ Antivirus de Microsoft Defender se activará automáticamente si ningún otro an
 > [!WARNING]
 > Las soluciones que sugieren que edite los valores de inicio de Windows Defender para *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc* y *windefend* en HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services no son compatibles y pueden forzarle a volver *a* crear una imagen del sistema.
 
-El modo pasivo está disponible si empiezas a usar Microsoft Defender para Endpoint y un antivirus de terceros junto con Antivirus de Microsoft Defender. El modo pasivo permite a Microsoft Defender examinar archivos y actualizarse, pero no corregirá las amenazas. Además, la supervisión del comportamiento a través de la Protección en tiempo [real](configure-real-time-protection-microsoft-defender-antivirus.md) no está disponible en modo pasivo, a menos que se implemente prevención de pérdida de datos de extremo [(DLP).](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview)
+El modo pasivo está disponible si empiezas a usar Microsoft Defender para Endpoint y un antivirus de terceros junto con Antivirus de Microsoft Defender. El modo pasivo permite Antivirus de Microsoft Defender archivos y actualizarse, pero no corregirá las amenazas. Además, la supervisión del comportamiento a través de la Protección en tiempo [real](configure-real-time-protection-microsoft-defender-antivirus.md) no está disponible en modo pasivo, a menos que se implemente prevención de pérdida de datos de extremo [(DLP).](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview)
 
 Otra característica, conocida como [examen periódico limitado,](limited-periodic-scanning-microsoft-defender-antivirus.md)está disponible para los usuarios finales cuando Antivirus de Microsoft Defender se configura para desactivarse automáticamente. Esta característica permite Antivirus de Microsoft Defender archivos periódicamente junto con un antivirus de terceros, con un número limitado de detecciones.
 

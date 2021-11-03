@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b226d91dd14787ffd9fad45c16b959c3837ef17b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9b56f6ba5cc481de7c295305ab1d5abfbec68cd4
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152075"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662303"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Instalación de dispositivos de control de dispositivos de Microsoft Defender para endpoint 
 
@@ -34,7 +34,7 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 |Privilegio|Permiso|
 |---|---|
-|Acceso|Instalación del dispositivo |
+|Access|Instalación del dispositivo |
 |Modo de acción|Allow, Prevent |
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
@@ -269,7 +269,7 @@ DeviceEvents
 
 :::image type="content" source="../../media/block-removable-storage2.png" alt-text="almacenamiento en bloques":::
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="how-can-i-know-whether-the-target-machine-gets-the-deployed-policy"></a>¿Cómo puedo saber si la máquina de destino obtiene la directiva implementada? 
 Puede usar la siguiente consulta para obtener la versión del cliente antimalware en el portal de seguridad Microsoft 365 web:

@@ -1,5 +1,5 @@
 ---
-title: Información sobre y configurar la detección de señales del explorador de administración de riesgos insider (versión preliminar)
+title: Información y configuración de la detección de señales del explorador de administración de riesgos insider
 description: Obtenga información sobre la detección de señales del explorador de administración de riesgos de insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: a89393a2e420948a126ec5503a16ce981ed9652a
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 5cde3a6f03c1c876878fc5ddda5ac4a8bc698977
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334510"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60662533"
 ---
-# <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>Información sobre y configurar la detección de señales del explorador de administración de riesgos insider (versión preliminar)
+# <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Información y configuración de la detección de señales del explorador de administración de riesgos insider
 
 Los exploradores web suelen ser usados por los usuarios para tener acceso a archivos confidenciales y no confidenciales dentro de una organización. La administración de riesgos de Insider permite a su organización detectar y actuar en las señales de exfiltración del explorador para todos los archivos no ejecutables vistos en [Microsoft Edge](https://www.microsoft.com/edge) y exploradores [de Google Chrome.](https://www.google.com/chrome) Con estas señales, los analistas e investigadores pueden actuar rápidamente cuando los usuarios de directivas en el ámbito realizan alguna de las siguientes actividades al usar estos exploradores:
 

@@ -13,21 +13,21 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: d7d4352283645a80844e0dcc8cd2715a8357b5be
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6598704375aad88efcdbaef700ee0187c4f7e07
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177320"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665083"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]
 
-</br> 
+<br/> 
 
 Antes o después de crear un modelo de clasificación para automatizar la identificación y la clasificación de tipos de documentos específicos, puede optar por agregar extractores a su modelo para extraer información específica de estos documentos. Por ejemplo, es posible que desee que su modelo no sólo identifique todos los documentos de *Renovación de contrato* agregados a su biblioteca de documentos, sino que también muestre la *Fecha inicial del servicio* de cada documento como un valor de columna en la biblioteca de documentos.
 
@@ -39,9 +39,12 @@ Es necesario crear un extractor para cada entidad del documento que se desea ext
 ## <a name="name-your-extractor"></a>Asigne un nombre a su extractor
 
 1. En la página de inicio del modelo, en el ícono **Crear y entrenar extractores**, haga clic en **Entrenar extractor**.
+
 2. En la pantalla del extractor de **Nueva entidad**, escriba el nombre de su extractor en el campo **Nombre del nuevo extractor**. Por ejemplo, llámelo **Fecha de inicio del servicio** si desea extraer la fecha de inicio del servicio de cada documento de renovación de contrato. También puede optar por reutilizar una columna creada previamente (por ejemplo, una columna de metadatos administrados).
-> [!NOTE]
-> Si crea un nuevo extractor, seleccione **Nuevo tipo de columna** y elija **Una línea de texto**, el límite máximo de caracteres es 255. Cualquier carácter que escriba que exceda el límite se trunca. 
+
+    > [!NOTE]
+    > Para extractores con el tipo de columna **Línea única de texto,** el límite máximo de caracteres es 255. Cualquier carácter que escriba que exceda el límite se trunca.
+
 3. Cuando termine, haga clic en **Crear**.
 
 ## <a name="add-a-label"></a>Agregar una etiqueta
@@ -99,11 +102,11 @@ Para la muestra de la *Fecha de inicio del servicio*, es más eficiente usar la 
 
 1. En la sección de **Explicación**, seleccione **Nuevo**, y luego seleccione **Desde la biblioteca de explicaciones**.
 2. En la biblioteca de explicación, seleccione **Fecha**. Puede ver todas las variaciones de fecha que son reconocidas
-3. Seleccione **Agregar**.</br>
+3. Seleccione **Agregar**.
 
     ![Biblioteca de explicación.](../media/content-understanding/explanation-library.png) 
 
-4. En la página **Crear una explicación**, la información de la *Fecha* de la biblioteca de explicaciones rellena automáticamente los campos. Seleccione **Guardar**.</br>
+4. En la página **Crear una explicación**, la información de la *Fecha* de la biblioteca de explicaciones rellena automáticamente los campos. Seleccione **Guardar**.
 
     ![Fecha.](../media/content-understanding/date-explanation-library.png) 
 

@@ -10,21 +10,21 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
-ms.author: v-lsaldanha
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ab8ae8052d2ca68d2fe82dd6ace073a622f8c268
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c54e0fd187adabbba76fd16d4d8f873bc83dc249
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212394"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667975"
 ---
-# <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Informar y solucionar problemas de Microsoft Defender para las reglas ASR de ATP
+# <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>Informar y solucionar problemas de Microsoft Defender para las reglas de ASR de punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -108,7 +108,7 @@ Para acceder a él, abra Windows visor  de eventos y vaya a Registros de aplicac
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="scr del visor de eventos.":::
 
-## <a name="microsoft-defender-malware-protection-logs"></a>Registros de Protección contra malware de Microsoft Defender
+## <a name="microsoft-defender-antimalware-protection-logs"></a>Registros de protección antimalware de Microsoft Defender
 
 También puede ver eventos de regla Antivirus de Microsoft Defender la herramienta de línea de comandos dedicada, denominada , que se puede usar para administrar y configurar y automatizar tareas si `*mpcmdrun.exe*` es necesario.
 

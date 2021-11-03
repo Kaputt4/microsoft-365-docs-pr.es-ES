@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Obtén información sobre cómo obtener el informe de uso de aplicaciones de correo electrónico para saber acerca de las aplicaciones de correo electrónico que se conectan a Exchange Online y la Outlook versión que usan los usuarios.
-ms.openlocfilehash: 9da0900723928fe091e7415482ba2cb50ff4f5f1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 601258d721f817438f0bd6a08d98d73aa22b7afb
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553297"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60653089"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365 Informes en el Centro de administración: uso de aplicaciones de correo electrónico
 
-El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de correo electrónico, puedes ver cuántas aplicaciones de correo electrónico se conectan a Exchange Online. También puedes ver la información de versión de las aplicaciones de Outlook que usan los usuarios, lo que te permitirá realizar un seguimiento de los usuarios que usan versiones no admitidas para instalar versiones compatibles de Outlook.
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de correo electrónico, puedes ver cuántas aplicaciones de correo electrónico se conectan a Exchange Online. También puedes ver la información de versión de las aplicaciones de Outlook que usan los usuarios, lo que te permitirá realizar un seguimiento de los usuarios que usan versiones no admitidas para instalar versiones compatibles de Outlook.
   
 ## <a name="how-to-get-to-the-email-apps-report"></a>Cómo llegar al informe de aplicaciones de correo electrónico
 

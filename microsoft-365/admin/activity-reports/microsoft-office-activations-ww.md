@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Obtenga información sobre cómo obtener un informe Office activación para saber qué usuarios han activado su suscripción Office suscripción e identificar usuarios que podrían necesitar ayuda adicional.
-ms.openlocfilehash: 27026a1d8507e133a84ac4614d2351abd36097a1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e27a097c9071729aea66d3eeb2b47f0d4bc684ca
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553273"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60649208"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365 Informes en el Centro de administración: Microsoft Office activaciones
 
-El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
 El informe de activación de Office le proporciona una vista de los usuarios que han activado su suscripción de Office en al menos un dispositivo. Proporciona un desglose de las Aplicaciones Microsoft 365 para empresas, Project y Visio Pro para Office 365 de suscripción, así como el desglose de las activaciones en dispositivos y escritorio. Este informe puede ser útil para ayudarle a identificar los usuarios que quizás necesiten ayuda y soporte técnico adicional para activar su suscripción de Office.
   

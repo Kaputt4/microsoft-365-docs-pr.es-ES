@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3250e978462e9bf6bf8496e05e879c6689846fe0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd61fa434eaf2130f0fcb0f28df9a20d696e04ec
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149840"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665362"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Ampliar la cobertura de búsqueda avanzada con la configuración correcta
 
@@ -52,7 +50,7 @@ Si ejecuta Active Directory localmente, debe instalar el sensor de Microsoft Def
 
 | Datos | Descripción | Tabla de esquema | Cómo establecer la configuración |
 | --- | --- | --- | --- |
-| Controlador de dominio | Datos de Active Directory local enviados a Microsoft Defender para identidad, enriqueciendo información relacionada con la identidad, como detalles de cuenta, actividad de inicio de sesión y consultas de Active Directory | Varias tablas, incluidas [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Instalar el sensor de Microsoft Defender para identidad](/azure-advanced-threat-protection/install-atp-step4)<br>- [Activar eventos de Windows relevantes](/azure-advanced-threat-protection/configure-event-collection) |
+| Controlador de dominio  | Datos de Active Directory local enviados a Microsoft Defender para identidad, enriqueciendo información relacionada con la identidad, como detalles de cuenta, actividad de inicio de sesión y consultas de Active Directory | Varias tablas, incluidas [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Instalar el sensor de Microsoft Defender para identidad](/azure-advanced-threat-protection/install-atp-step4)<br>- [Activar eventos de Windows relevantes](/azure-advanced-threat-protection/configure-event-collection) |
 
 >[!NOTE]
 >Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).

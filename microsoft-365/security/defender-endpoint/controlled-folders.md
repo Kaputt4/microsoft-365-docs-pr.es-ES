@@ -18,12 +18,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0c2d4fad95371f2529fb2c8ec3e430995d1c6627
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a93fb821c69f390bbc6e19034e1dc025b06cd623
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205582"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665756"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -55,7 +55,7 @@ El acceso controlado a carpetas funciona con una lista de aplicaciones de confia
 
 Las aplicaciones se agregan a la lista en función de su prevalencia y reputación. Las aplicaciones que son muy frecuentes en toda la organización y que nunca han mostrado ningún comportamiento que se considere malintencionado se consideran confiables. Esas aplicaciones se agregan a la lista automáticamente.
 
-Las aplicaciones también se pueden agregar manualmente a la lista de confianza mediante Configuration Manager o Intune. Se pueden realizar acciones adicionales, como agregar un indicador [de archivo](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) para una aplicación, desde la consola del Centro de seguridad.
+Las aplicaciones también se pueden agregar manualmente a la lista de confianza mediante Configuration Manager o Intune. Se pueden realizar acciones adicionales desde la consola del Centro de seguridad. 
 
 ## <a name="why-controlled-folder-access-is-important"></a>Por qué es importante el acceso controlado a carpetas
 

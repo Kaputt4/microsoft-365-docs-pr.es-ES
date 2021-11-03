@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas Caja fuerte dat
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2eefdbdfd9121bdc778425fe63ea35d3f97a4adc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cc31f00045173202d6404a81b64fdaab791e0c5
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196446"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673763"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "60196446"
 
 Caja fuerte Los datos adjuntos son una característica de [Microsoft Defender](whats-new-in-defender-for-office-365.md) para Office 365 que usa un entorno virtual para comprobar los datos adjuntos de los mensajes de correo electrónico entrantes después de haber sido examinados por la protección antimalware en [Exchange Online Protection (EOP),](anti-malware-protection.md)pero antes de la entrega a los destinatarios. Para obtener más información, [vea Caja fuerte datos adjuntos de Microsoft Defender para Office 365](safe-attachments.md).
 
-No hay ninguna directiva de datos adjuntos integrada o predeterminada Caja fuerte datos adjuntos. Para obtener Caja fuerte análisis de datos adjuntos de mensajes de correo electrónico, debe crear una o más directivas de datos adjuntos Caja fuerte como se describe en este artículo.
+Aunque no hay ninguna directiva predeterminada de  datos adjuntos de Caja fuerte, la directiva de seguridad predefinida de protección integrada proporciona protección de datos adjuntos de Caja fuerte a todos los destinatarios (usuarios que no están definidos en directivas de datos adjuntos de Caja fuerte personalizadas). Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). También puede usar los procedimientos de este artículo para crear directivas Caja fuerte datos adjuntos que se aplican a usuarios, grupos o dominios específicos.
 
 Puede configurar directivas de datos adjuntos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 elegibles con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones de correo, pero con Defender para Office 365 suscripciones de complemento).
 
@@ -100,7 +100,7 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
+   Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
 
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
@@ -119,7 +119,7 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
 
      Estos valores se explican en Caja fuerte [de directiva de datos adjuntos](safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Directiva de cuarentena:** seleccione la directiva de cuarentena que se aplica a los mensajes que se ponen en cuarentena mediante Caja fuerte datos adjuntos (**Bloque**, **Reemplazar** o **Entrega dinámica**). Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+   - **Directiva de cuarentena:** seleccione la directiva de cuarentena que se aplica a los mensajes que se ponen en cuarentena mediante Caja fuerte datos adjuntos (**Bloque**, **Reemplazar** o **Entrega dinámica**). Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
      Un valor en blanco significa que se usa la directiva de cuarentena predeterminada (AdminOnlyAccessPolicy para las detecciones de correo electrónico Caja fuerte datos adjuntos). Cuando más adelante edite la directiva Caja fuerte datos adjuntos o vea la configuración, se muestra el nombre de directiva de cuarentena predeterminado.
 
@@ -184,7 +184,7 @@ Caja fuerte Las directivas de datos adjuntos se muestran en el orden en que se p
 
 **Nota:** En el portal Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva de datos adjuntos Caja fuerte después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de datos adjuntos seguros (lo que puede afectar a la prioridad de las reglas existentes).
 
-Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad** o en **Reducir la prioridad** en las propiedades de la directiva (no se puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
+Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** o **Reducir prioridad** en las propiedades de la directiva (no puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva sólo tiene sentido si tiene varias directivas.
 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Caja fuerte datos adjuntos en \>  \>  \>  la **sección** Directivas.
 

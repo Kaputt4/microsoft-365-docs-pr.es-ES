@@ -147,8 +147,6 @@
           href: anti-malware.md
         - name: Crear reglas de correo electrónico para protegerse contra ransomware
           href: prevent-ransom-in-email.md
-        - name: Detener el reenvío automático de mensajes de correo electrónico
-          href: stop-email-auto-forward.md
         - name: Configurar directivas contra suplantación de identidad
           href: setup-anti-phishing.md
         - name: Administrar datos adjuntos seguros

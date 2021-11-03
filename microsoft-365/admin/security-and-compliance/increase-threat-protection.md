@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 proteger los datos confidenciales frente a la suplantación de identidad(phishing), malware y otras amenazas.
-ms.openlocfilehash: 60a84b972618444fcddc4165235eef909f4341c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89405628488d5a8574636025a614a3aac7e20dd9
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178172"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60667787"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -82,7 +82,7 @@ Para crear una regla de transporte de correo:
 
 6. Seleccione **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Cualquier dato adjunto . . . extensión de archivo coincide con . . .|
@@ -90,7 +90,7 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
 |Proporcionar texto del mensaje|No abra estos tipos de archivos de personas que no conoce porque pueden contener macros con código malintencionado.|
 
-Para más información vea:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -100,7 +100,7 @@ Para más información vea:
 
 Los hackers que obtienen acceso al buzón de un usuario pueden robar correo estableciendo el buzón para reenviar automáticamente el correo electrónico. Esto puede ocurrir incluso sin el reconocimiento del usuario. Para evitar que esto suceda, configure una regla de flujo de correo.
 
-Para crear una regla de transporte de correo, vea [este breve vídeo](../../business-video/stop-email-auto-forward.md) o siga estos pasos:
+Para crear una regla de transporte de correo, siga estos pasos:
 
 1. En el Centro de administración de Microsoft 365, seleccione **Centros de administración** \> **Exchange**.
 
@@ -114,7 +114,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](../../busi
 
 6. Seleccione **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|

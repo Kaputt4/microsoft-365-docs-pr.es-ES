@@ -19,16 +19,16 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Obtenga información sobre cómo obtener un informe de actividad de correo electrónico mediante el panel Microsoft 365 informes en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 4ea339f01d926c2f008dbeae572f64b143192ab1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 82d9e7ecd6273f46e378953cf4b6fafffc7abd0f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553309"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60653418"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Microsoft 365 Informes en el Centro de administración: actividad de correo electrónico
 
-El panel Microsoft 365 **informes le** muestra la introducción a la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
 Por ejemplo, puede obtener una vista de alto nivel del tráfico de correo electrónico de su organización desde la página Informes. Luego, puede desplazarse al widget Actividad de correo electrónico para consultar las tendencias y los detalles de nivel de usuario de la actividad de correo electrónico de su organización.
 

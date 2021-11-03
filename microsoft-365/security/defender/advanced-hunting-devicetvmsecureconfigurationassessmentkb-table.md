@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7f2e5c2bb005a8f58d6e1df6db2beedcc03c848
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8372275655c9b4f75feaff8f2f8c8f2aace78d1e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205120"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60658699"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -45,12 +43,12 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | Identificador único para una configuración específica |
-| `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
+| `ConfigurationImpact` | cadena | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `ConfigurationName` | string | Nombre para mostrar de la configuración |
 | `ConfigurationDescription` | string | Descripción de la configuración |
 | `RiskDescription` | string | Descripción del riesgo asociado |
 | `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|
-| `ConfigurationSubcategory` | string |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
+| `ConfigurationSubcategory` | cadena |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
 | `ConfigurationBenchmarks` | string | Lista de bancos de pruebas del sector que recomiendan la misma configuración u otra similar |
 | `Tags` | string | Etiquetas que representan varios atributos usados para identificar o clasificar una configuración de seguridad |
 | `RemediationOptions` | string | Acciones recomendadas para reducir o solucionar los riesgos asociados |
