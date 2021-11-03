@@ -19,8 +19,6 @@
       items:
         - name: Regiones admitidas
           href: service-description/regions-languages.md
-        - name: Ciclo de vida del producto
-          href: service-description/device-lifecycle.md
         - name: Dispositivos
           href: null
           items:

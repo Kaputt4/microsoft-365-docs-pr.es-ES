@@ -1,10 +1,10 @@
 ---
-title: Comprender términos y condiciones
+title: Descripción de los términos y condiciones
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: ''
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,14 +15,14 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: medium
 description: Comprenda qué términos y condiciones se aplican al usar Viva Learning.
-ms.openlocfilehash: dcbf25ca555b51feae8e7f38fb47f07704113c06
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 692afdfaba72fec1ce65c7ea2e90be5e883ec5da
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60566806"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700366"
 ---
-# <a name="understand-terms-and-conditions"></a>Comprender términos y condiciones
+# <a name="understand-terms-and-conditions"></a>Descripción de los términos y condiciones
 
 El contenido accesible a través de Viva Learning está sujeto a términos distintos de los Términos del producto de Microsoft.
 

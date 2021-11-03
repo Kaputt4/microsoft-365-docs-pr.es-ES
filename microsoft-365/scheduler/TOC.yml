@@ -1,10 +1,16 @@
 - name: Planificador para Microsoft 365
-  href: scheduler-overview.md
-- name: Confianza y privacidad
-  href: scheduler-trust-privacy.md
-- name: Configuración del Planificador para Microsoft 365
-  href: scheduler-setup.md
-- name: Cómo usar el Planificador para Microsoft 365
-  href: scheduler-using.md
-- name: Preguntas más frecuentes sobre el Planificador para Microsoft 365
-  href: scheduler-faqs.md
+  href: index.yml
+  expanded: true
+  items:
+    - name: "Le damos la bienvenida a Planificador para Microsoft\_365"
+      href: scheduler-overview.md
+    - name: Confianza y privacidad
+      href: scheduler-trust-privacy.md
+    - name: Configuración del Planificador para Microsoft 365
+      href: scheduler-setup.md
+    - name: Cómo usar el Planificador para Microsoft 365
+      href: scheduler-using.md
+    - name: Programación de reuniones periódicas
+      href: scheduler-recurring-meetings.md
+    - name: "Preguntas más frecuentes sobre el Planificador para Microsoft\_365"
+      href: scheduler-faqs.md

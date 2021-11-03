@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1c93f659d284124a33c12cb08109a609778073c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6b7df942ee117c0f23a97516c75d64131e0770d
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209074"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60698410"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>Redirigir cuentas desde el Centro Office 365 seguridad y cumplimiento a Microsoft 365 Defender
 
@@ -33,13 +33,14 @@ ms.locfileid: "60209074"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 - Defender para Office 365
 
 En este artículo se explica cómo enrutar cuentas a Microsoft 365 Defender habilitando la redirección automática desde el antiguo Centro de seguridad y cumplimiento de Office 365 (protection.office.com), a Microsoft 365 Defender (security.microsoft.com).
 
 ## <a name="what-to-expect"></a>Qué esperar
-Una vez que el redireccionamiento automático está habilitado y activo, los usuarios que tengan acceso a las funciones relacionadas con la seguridad en Office 365 Seguridad y cumplimiento (protection.office.com), se enruta automáticamente a Microsoft 365 Defender ( https://security.microsoft.com) .  
+
+Una vez habilitado y activo el redireccionamiento automático, los usuarios que tengan acceso a las funciones relacionadas con la seguridad en Office 365 Seguridad y cumplimiento (protection.office.com), se enruta automáticamente a Microsoft 365 Defender (security.microsoft.com).
 
 Obtenga más información sobre lo que ha cambiado: [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md).
 
@@ -57,7 +58,7 @@ Desde principios de octubre de 2021, el redireccionamiento del portal se realiza
 
 <!--To start routing accounts to Microsoft 365 Defender at security.microsoft.com:
 
-1. Make sure you’re a global administrator or have security administrator permissions in Azure Active directory.
+1. Make sure you're a global administrator or have security administrator permissions in Azure Active directory.
 2. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender.
 3. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.  
 4. Toggle the Automatic redirection setting to **On**.
@@ -67,6 +68,7 @@ Desde principios de octubre de 2021, el redireccionamiento del portal se realiza
 > After redirection is enabled, accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.-->
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>¿Puedo volver a usar el portal anterior?
+
 Si algo no funciona para usted o si hay algo que no se puede completar a través de Microsoft 365 Defender, queremos escucharlo con la opción de comentarios del portal. Si ha encontrado algún problema con el redireccionamiento, háganoslo saber.
 
 Para volver al portal anterior:
@@ -86,6 +88,6 @@ Esta configuración se puede habilitar de nuevo en cualquier momento.
 - [Microsoft Defender para endpoint en Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft ofrece SIEM y XDR unificados para modernizar las operaciones de seguridad](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR frente a la infografía siem](https://afrait.com/blog/xdr-versus-siem/) 
-- [El nuevo defensor](https://afrait.com/blog/the-new-defender/) 
+- [`The New Defender`](https://afrait.com/blog/the-new-defender/) 
 - [Acerca de Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender) 
 - [Portales de seguridad de Microsoft y centros de administración](portals.md)

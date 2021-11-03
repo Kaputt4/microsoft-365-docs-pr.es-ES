@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Obtenga información sobre cómo los administradores pueden eliminar elementos de la carpeta Elementos recuperables de un usuario para un buzón Exchange Online, incluso si ese buzón está en retención legal.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aedd887caed1ffd4484ea55561aa77562869726a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8ef725e841c46c33c037efbc0109b91864af4737
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189434"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60698422"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
@@ -164,9 +164,9 @@ Realice los pasos siguientes en Exchange Online PowerShell.
     ```
 
     > [!NOTE]
-    > Puede tardar hasta 60 minutos en deshabilitar la recuperación de un solo elemento. No elimine elementos de la carpeta Elementos recuperables hasta que haya transcurrido este período. 
+    > Puede tardar hasta 240 minutos en deshabilitar la recuperación de un solo elemento. No elimine elementos de la carpeta Elementos recuperables hasta que haya transcurrido este período.
   
-4. Ejecute el siguiente comando para evitar que el Asistente para carpetas administradas procese el buzón. Como se explicó anteriormente, solo puede deshabilitar el Asistente para carpetas administradas si no se aplica una directiva de retención con un bloqueo de conservación al buzón. 
+4. Ejecute el siguiente comando para evitar que el Asistente para carpetas administradas procese el buzón. Como se explicó anteriormente, solo puede deshabilitar el Asistente para carpetas administradas si no se aplica una directiva de retención con un bloqueo de conservación al buzón.
 
     ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
@@ -188,7 +188,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
 > [!NOTE]
-> De forma similar a deshabilitar los métodos de acceso de cliente y la recuperación de un solo elemento, puede tardar hasta 60 minutos en quitar la retención por juicio. No elimine elementos de la carpeta Elementos recuperables hasta que haya transcurrido este período. 
+> De forma similar a deshabilitar la recuperación de un solo elemento, puede tardar hasta 240 minutos en quitar la retención por juicio. No elimine elementos de la carpeta Elementos recuperables hasta que haya transcurrido este período.
   
 ### <a name="in-place-hold"></a>Retención en contexto
   
@@ -337,7 +337,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Paso 6: Revertir el buzón a su estado anterior
 
-El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Incluye lo siguiente:
+El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Esto incluye lo siguiente:
   
 - Cambiar el período de retención de elementos eliminados a su valor anterior. Como alternativa, puede dejar este conjunto en 30 días, el valor máximo en Exchange Online.
 

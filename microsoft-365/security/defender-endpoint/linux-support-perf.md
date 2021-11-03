@@ -11,17 +11,17 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-mms.collection:
+ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a37c5e1594567d96d7517b1e1be7e082e620cb9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 973697b835e437a777838d2915b2a9cd88647ed3
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210999"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60699250"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en Linux
 
@@ -151,6 +151,6 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
     Para más información, consulte [Configurar y validar exclusiones de Microsoft Defender para punto de conexión en Linux](linux-exclusions.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigar problemas de estado del agente](health-status.md)

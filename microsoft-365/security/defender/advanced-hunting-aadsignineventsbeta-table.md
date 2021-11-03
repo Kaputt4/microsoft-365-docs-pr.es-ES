@@ -22,8 +22,8 @@ ms.openlocfilehash: 8fa111b636026de49c854eb5ec8c17f1aad5c3eb
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673100"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700342"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -58,22 +58,22 @@ Use esta referencia para crear consultas que devuelvan información de la tabla.
 |`IsGuestUser`|booleano|Indica si el usuario que ha iniciado sesión es un invitado en el inquilino|
 |`AlternateSignInName`|cadena|Nombre principal de usuario local (UPN) del usuario que inicia sesión en Azure AD|
 |`LastPasswordChangeTimestamp`|datetime|Fecha y hora en que el usuario que ha iniciado sesión ha cambiado por última vez su contraseña|
-|`ResourceDisplayName`|string|Nombre para mostrar del recurso al que se ha accedido|
-|`ResourceId`|cadena|Identificador único del recurso al que se ha accedido|
+|`ResourceDisplayName`|cadena|Nombre para mostrar del recurso al que se ha accedido|
+|`ResourceId`|string|Identificador único del recurso al que se ha accedido|
 |`ResourceTenantId`|cadena|Identificador único del inquilino del recurso al que se ha accedido|
 |`DeviceName`|cadena|Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo|
 |`AadDeviceId`|cadena|Identificador único del dispositivo en Azure AD|
 |`OSPlatform`|cadena|Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7.|
-|`DeviceTrustType`|string|Indica el tipo de confianza del dispositivo que ha iniciado sesión. Solo para escenarios de dispositivos administrados. Los valores posibles son Workplace, AzureAd y ServerAd.|
+|`DeviceTrustType`|cadena|Indica el tipo de confianza del dispositivo que ha iniciado sesión. Solo para escenarios de dispositivos administrados. Los valores posibles son Workplace, AzureAd y ServerAd.|
 |`IsManaged`|Entero|Indica si el dispositivo que inició el inicio de sesión es un dispositivo administrado (1) o no un dispositivo administrado (0)|
 |`IsCompliant`|Entero|Indica si el dispositivo que inició el inicio de sesión es compatible (1) o no es compatible (0)|
-|`AuthenticationProcessingDetails`|string|Detalles sobre el procesador de autenticación|
-|`AuthenticationRequirement`|string|Tipo de autenticación necesaria para el inicio de sesión. Valores posibles: multiFactorAuthentication (se requería MFA) y singleFactorAuthentication (no se requería MFA).|
+|`AuthenticationProcessingDetails`|cadena|Detalles sobre el procesador de autenticación|
+|`AuthenticationRequirement`|cadena|Tipo de autenticación necesaria para el inicio de sesión. Valores posibles: multiFactorAuthentication (se requería MFA) y singleFactorAuthentication (no se requería MFA).|
 |`TokenIssuerType`|Entero|Indica si el emisor de tokens Azure Active Directory (0) o servicios de federación de Active Directory (1)|
 |`RiskLevelAggregated`|Entero|Nivel de riesgo agregado durante el inicio de sesión. Valores posibles: 0 (nivel de riesgo agregado no establecido), 1 (ninguno), 10 (bajo), 50 (medio) o 100 (alto).|
 |`RiskDetails`|Entero|Detalles sobre el estado de riesgo del usuario que ha iniciado sesión|
 |`RiskState`|Entero|Indica el estado de usuario arriesgado. Valores posibles: 0 (ninguno), 1 (confirmado seguro), 2 (corregido), 3 (descartado), 4 (en riesgo) o 5 (confirmado en peligro).|
-|`UserAgent`|string|Información del agente de usuario desde el explorador web u otra aplicación cliente|
+|`UserAgent`|cadena|Información del agente de usuario desde el explorador web u otra aplicación cliente|
 |`ClientAppUsed`|cadena|Indica la aplicación cliente usada|
 |`Browser`|cadena|Detalles sobre la versión del explorador que se usa para iniciar sesión|
 |`ConditionalAccessPolicies`|cadena|Detalles de las directivas de acceso condicional aplicadas al evento de inicio de sesión|
