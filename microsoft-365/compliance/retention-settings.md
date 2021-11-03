@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 7b5a6566f9e30d0510dad208ba0dbee503a1e2aa
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: a1ac660e9abb389fb45b29b9934d4aa949bfb69c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587998"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703244"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -299,9 +299,9 @@ Al elegir las configuraciones para conservar y eliminar contenido, la directiva 
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Conservar el contenido durante un período de tiempo determinado
 
-Cuando se configura una directiva de retención, debe elegir si el contenido se conservará durante un número determinado de días, meses o años. Como alternativa, conserve siempre los elementos. El período de retención se calcula desde la antigüedad del contenido, no desde cuando se aplica la directiva de retención.
+Cuando se configura una etiqueta de retención o una directiva de retención, debe elegir si el contenido se conservará durante un número determinado de días, meses o años. Como alternativa, conserve siempre los elementos. El período de retención no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado.
 
-Para iniciar el período de retención, también puede elegir cuándo se creó el contenido o, solo en el caso de los archivos y los grupos de SharePoint, OneDrive y Microsoft 365, cuándo se modificó el contenido por última vez.
+Para iniciar el período de retención, puede elegir cuándo se creó el contenido o, solo en el caso de los archivos y los grupos de SharePoint, OneDrive y Microsoft 365, cuándo se modificó el contenido por última vez. En el caso de las etiquetas de retención, puede iniciar el período de retención desde que se etiquetó el contenido y cuándo se produce un evento.
 
 Ejemplos:
 
@@ -317,7 +317,7 @@ Al final del período de retención, usted elige si desea que el contenido se el
 
 Una directiva de retención puede conservar y luego eliminar elementos o eliminar elementos antiguos sin conservarlos.
 
-En ambos casos, si la directiva elimina elementos, es importante saber que el período de tiempo especificado para una directiva de retención se calcula a partir del momento en que se ha creado o modificado el elemento, y no a partir del momento en que se ha asignado la directiva.
+En ambos casos, si la directiva elimina elementos, es importante saber que el período de tiempo que especifique no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado. Por ejemplo, desde el momento en que se creó, modificó o etiquetó el elemento.
 
 Por lo tanto, primero tenga en cuenta la antigüedad del contenido existente y cuál será el impacto de la directiva. También es recomendable comunicar la nueva directiva a los usuarios antes de asignarla, para que tengan tiempo de evaluar el posible impacto.
 

@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, ransomware operado por humanos, ransomware operado por personas, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología
+keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Paso a paso para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 04ce78802b24ed286ebf34fa404c17f53fef340b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: bdfb793ef5a86a21abf421addfd9d1e84dfdba61
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556153"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703522"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Implementar la protección contra ransomware para el inquilino de Microsoft 365
 
@@ -139,6 +139,13 @@ Estos son los cinco pasos de la solución implementada para el inquilino de Micr
 
 ![Protección contra ransomware para un inquilino de Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture.png)
 
+Esta solución usa los principios de [Confianza cero](/security/zero-trust/): 
+
+- **Comprobar de forma explícita:** autentique y autorice siempre en función de todos los puntos de datos disponibles.
+- **Usar acceso con privilegios mínimos:** limite el acceso del usuario con acceso suficiente y justo a tiempo (JIT/JEA), directivas adaptables basadas en los riesgos y protección de datos.
+- **Asumir la vulneración:** minimice el radio de explosión y el acceso a los segmentos. Compruebe el cifrado de un extremo a otro y use análisis para obtener visibilidad, impulsar la detección de amenazas y mejorar las defensas.
+
+A diferencia del acceso convencional a la intranet, que confía en todo lo que hay detrás del firewall de una organización, Confianza cero trata cada inicio de sesión y acceso como si se originase en una red no controlada, ya sea detrás del firewall de la organización o en Internet. Confianza cero requiere protección para la red, la infraestructura, las identidades, los puntos de conexión, las aplicaciones y los datos.
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Funcionalidades y características de Microsoft 365
 
@@ -232,7 +239,7 @@ Información clave de Microsoft:
 - [Ransomware operado por humanos](/security/compass/human-operated-ransomware)
 - [Protéjase contra ransomware y extorsión de manera rápida](/security/compass/protect-against-ransomware)
 - [Informe de Microsoft Digital Defense 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (vea las páginas 10-19)
-- [Ransomware: Un informe de amenazas generalizado y continuo](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) en el nodo del Análisis de amenazas del portal de Microsoft 365 Defender
+- [Ransomware: informe de análisis de amenazas generalizado y continuo](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) en el portal de Microsoft 365 Defender
 
 Microsoft 365:
 
@@ -242,7 +249,6 @@ Microsoft 365:
 - [Proteger su equipo con Windows 10 de los ataques de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Informes de análisis de amenazas para ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) en el portal de Microsoft 365 Defender
-
 
 Microsoft 365 Defender:
 
@@ -265,6 +271,14 @@ Microsoft Cloud App Security:
 Entradas de blog del equipo de Seguridad de Microsoft:
 
 - [3 pasos para evitar y recuperarse del ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Una guía para combatir el ransomware operado por personas: Parte 1 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Pasos clave sobre cómo el equipo de detección y respuesta de Microsoft (DART) lleva a cabo investigaciones de incidentes de ransomware.
+
+- [Una guía para combatir el ransomware operado por personas: Parte 2 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recomendaciones y procedimientos recomendados.
+
 - [Camino a la resistencia al comprender los riesgos de ciberseguridad: Parte 4 — Navegación por las amenazas actuales (mayo de 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   Consulte la sección **Ransomware**.

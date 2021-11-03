@@ -3,7 +3,7 @@ title: Intervalos de direcciones IP y URL de Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/28/2021
+ms.date: 10/29/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Resumen: Office 365 necesita conectividad a Internet. Los siguientes puntos de conexión deben resultar accesibles para los clientes que usan planes de Office 365, incluida la nube de la comunidad de administración pública (GCC).'
 hideEdit: true
-ms.openlocfilehash: 936c2bd4a981434883f115a932f870a558a7355d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d223ec20be108cdcfa53a2357e95cccdf6474e69
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189014"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700891"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Intervalos de direcciones IP y direcciones URL de Office 365
 
@@ -39,14 +39,14 @@ Office 365 requiere conectividad a Internet. Los siguientes puntos de conexión 
 
 |Notas|Descargar|Utilice|
 |---|---|---|
-|**Última actualización:** 28/09/2021 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción de registro de cambios](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).|**Use:** nuestros [archivos PAC](managing-office-365-endpoints.md#pacfiles) de proxy|
+|**Última actualización:** 29/10/2021 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción del registro de cambios](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).|**Use:** nuestros [archivos PAC](managing-office-365-endpoints.md#pacfiles) de proxy|
 |
 
 Comience por [Administrar los puntos de conexión de Office 365](managing-office-365-endpoints.md) si desea entender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de los puntos de conexión se actualizan al principio de cada mes, según sea necesario, con las nuevas direcciones IP y URL publicadas 30 días antes de su activación. Esto permite que los clientes que todavía no hayan automatizado las actualizaciones completen el proceso antes de que se requiera una nueva conectividad. También podrían actualizarse los puntos de conexión durante el mes, si fuera necesario, para gestionar la canalización del soporte técnico, los incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que aparecen en la página siguiente se generan desde los servicios web basados en REST. Si usa un dispositivo de red o un script para obtener acceso a estos datos, vaya directamente al [Servicio web](microsoft-365-ip-web-service.md).
 
-Los siguientes datos de puntos de conexión enumeran los requisitos para la conectividad del equipo de un usuario a Office 365. No incluye las conexiones de red de Microsoft a una red de clientes, a veces denominadas conexiones de red de entrada o híbridas. Vea [Puntos de conexión adicionales](additional-office365-ip-addresses-and-urls.md) para obtener más información.
+Los datos de puntos de conexión siguientes enumeran los requisitos de conectividad desde el equipo de un usuario a Office 365. Para obtener detalles sobre las direcciones IP usadas para las conexiones de red de Microsoft a una red de cliente, a veces denominadas conexiones de red híbridas o entrantes, consulte [Puntos de conexión adicionales](additional-office365-ip-addresses-and-urls.md) para obtener más información.
 
-Los puntos de conexión se agrupan en cuatro áreas de servicio. Las tres primeras se pueden seleccionar por separado para la conectividad; la cuarta área de servicio es una dependencia común (denominada de Microsoft 365 Common y Office) y debe disponer de conectividad de red en todo momento.
+Los puntos de conexión se agrupan en cuatro áreas de servicio que representan las tres cargas de trabajo principales y un conjunto de recursos comunes. Los grupos pueden usarse para asociar flujos de tráfico con una aplicación determinada, pero dado que las características suelen consumir puntos de conexión en varias cargas de trabajo, estos grupos no se pueden usar eficazmente para restringir el acceso.
 
 Estas son columnas de datos que se muestran:
 
