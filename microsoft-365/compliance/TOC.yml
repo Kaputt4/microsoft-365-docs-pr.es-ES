@@ -3,7 +3,11 @@
 - name: Novedades de Cumplimiento de Microsoft 365
   href: whats-new.md
 - name: Pruebas de cumplimiento
-  href: compliance-easy-trials.md
+  items:
+    - name: "Acerca de la prueba gratuita para el Cumplimiento de Microsoft\_365"
+      href: compliance-easy-trials.md
+    - name: Acerca de la prueba gratuita para las evaluaciones premium del Administrador de cumplimiento de Microsoft
+      href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Introducción
   items:
     - name: Tareas rápidas para empezar a usar el cumplimiento normativo
@@ -46,7 +50,7 @@
           href: communication-compliance-reports-audits.md
         - name: Cumplimiento de comunicaciones con soluciones de SIEM
           href: communication-compliance-siem.md
-        - name: 'Caso práctico: Contoso configura rápidamente una directiva de lenguaje ofensivo'
+        - name: 'Caso práctico: Contoso configura rápidamente una directiva de contenido inapropiado'
           href: communication-compliance-case-study.md
     - name: Administración de riesgos internos
       items:
@@ -112,6 +116,8 @@
   items:
     - name: 'Conocer sus datos, proteger sus datos, evitar la pérdida de datos'
       href: information-protection.md
+    - name: Etiquetas y directivas predeterminadas para Microsoft Information Protection
+      href: mip-easy-trials.md
     - name: Tipos de información confidencial
       items:
         - name: Obtener más información acerca de los tipos de información confidencial
@@ -120,6 +126,8 @@
               href: sensitive-information-type-learn-about.md
             - name: Creación de huella digital de documento
               href: document-fingerprinting.md
+            - name: Más información sobre las entidades con nombre (versión preliminar)
+              href: named-entities-learn.md
         - name: Introducción a los tipos de información confidencial
           items:
             - name: Introducción a los tipos de información confidencial personalizados - Centro de cumplimiento
@@ -146,6 +154,8 @@
               href: create-a-keyword-dictionary.md
             - name: Modificar un diccionario de palabras clave
               href: sit-modify-keyword-dictionary.md
+            - name: Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
+              href: named-entities-use.md
         - name: Referencia de tipo de información confidencial
           items:
             - name: Definiciones de entidad de tipos de información confidencial
@@ -301,7 +311,7 @@
               href: dlp-chrome-get-started.md
             - name: Introducción al panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-get-started.md
-            - name: Herramientas y métodos de incorporación de la prevención de pérdida de datos en punto de conexión para dispositivos Windows 10
+            - name: Métodos y herramientas de incorporación de dispositivos DLP de punto de conexión
               items:
                 - name: Herramientas y métodos de incorporación para dispositivos Windows 10
                   href: dlp-configure-endpoints.md
@@ -315,6 +325,16 @@
                   href: dlp-configure-endpoints-script.md
                 - name: Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
                   href: dlp-configure-endpoints-vdi.md
+            - name: Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)
+              href: device-onboarding-macos-overview.md
+            - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Microsoft Intune (versión preliminar)
+              href: device-onboarding-offboarding-macos-intune.md
+            - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)
+              href: device-onboarding-offboarding-macos-intune-mde.md
+            - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro (versión preliminar)
+              href: device-onboarding-offboarding-macos-jamfpro.md
+            - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
+              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Usar DLP
           items:
             - name: DLP y Microsoft Teams
@@ -411,8 +431,12 @@
           items:
             - name: Mensaje de Bloomberg
               href: archive-bloomberg-message-data.md
+            - name: Datos de atención médica de la HCE de Epic (versión preliminar)
+              href: import-epic-data.md
             - name: Empresa de Facebook
               href: archive-facebook-data-with-sample-connector.md
+            - name: Datos genéricos de atención médica de la HCE (versión preliminar)
+              href: import-healthcare-data.md
             - name: Datos de RR. HH.
               href: import-hr-data.md
             - name: Chat ICE
@@ -591,46 +615,6 @@
           href: record-versioning.md
         - name: Recursos para requerimientos normativos
           href: retention-regulatory-requirements.md
-- name: Administración de la gobernanza de aplicaciones
-  items:
-    - name: Proteja y controle sus aplicaciones
-      href: app-governance-manage-app-governance.md
-    - name: Introducción a la gobernanza de aplicaciones
-      href: app-governance-get-started.md
-    - name: Enviar comentarios sobre la gobernanza de aplicaciones
-      href: app-governance-feedback.md
-    - name: Visibilidad y conclusiones de la aplicación
-      items:
-        - name: Más información sobre la visibilidad y conclusiones
-          href: app-governance-visibility-insights-overview.md
-        - name: Introducción
-          href: app-governance-visibility-insights-get-started.md
-        - name: Ver sus aplicaciones
-          href: app-governance-visibility-insights-view-apps.md
-        - name: Determine la posición de cumplimiento
-          href: app-governance-visibility-insights-compliance-posture.md
-    - name: Implementar directivas de aplicación
-      items:
-        - name: Información sobre las directivas de retención
-          href: app-governance-app-policies-overview.md
-        - name: Introducción
-          href: app-governance-app-policies-get-started.md
-        - name: Crear directivas de aplicación
-          href: app-governance-app-policies-create.md
-        - name: Administrar directivas de aplicación
-          href: app-governance-app-policies-manage.md
-    - name: Detección y corrección de amenazas de aplicaciones
-      items:
-        - name: Más información sobre la detección y corrección
-          href: app-governance-detect-remediate-overview.md
-        - name: Introducción
-          href: app-governance-detect-remediate-get-started.md
-        - name: Supervisión y respuesta a aplicaciones con uso de datos inusual
-          href: app-governance-monitor-apps-unusual-data-usage.md
-        - name: Investigar las alertas de detección de anomalías
-          href: app-governance-anomaly-detection-alerts.md
-        - name: Corrija las amenazas de la aplicación
-          href: app-governance-detect-remediate-detect-threats.md
 - name: Administrar eDiscovery
   items:
     - name: Soluciones de Microsoft 365 eDiscovery
@@ -734,6 +718,10 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: Diferencias entre los resultados de la búsqueda estimados y reales
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Elementos indexados parcialmente
+              href: partially-indexed-items-in-content-search.md
+            - name: Investigación de elementos indexados parcialmente
+              href: investigating-partially-indexed-items-in-ediscovery.md
             - name: Vista previa de los resultados de búsqueda de eDiscovery
               href: preview-ediscovery-search-results.md
             - name: Exportar un informe de búsqueda
@@ -823,6 +811,8 @@
               href: ediscovery-kql-editor.md
             - name: Consultas de palabras clave y condiciones de búsqueda
               href: keyword-queries-and-search-conditions.md
+            - name: Usar archivos adjuntos en la nube
+              href: advanced-ediscovery-cloud-attachments.md
         - name: Administrar conjuntos de revisión
           href: managing-review-sets.md
           items:

@@ -1,0 +1,52 @@
+---
+title: Buscar metadatos en bibliotecas de documentos en Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
+manager: pamgreen
+ms.reviewer: kkameth
+audience: admin
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+search.appverid: ''
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
+localization_priority: Priority
+description: Obtenga información sobre cómo usar la búsqueda avanzada de metadatos para buscar elementos en bibliotecas de documentos de SharePoint con SharePoint Syntex.
+ms.openlocfilehash: 99cf65c5baf57255ff880a859b8fd0b24bab733f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60717694"
+---
+# <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Buscar metadatos en bibliotecas de documentos en Microsoft SharePoint Syntex
+
+La característica de búsqueda avanzada de metadatos de SharePoint Syntex le permite realizar consultas específicas basadas en metadatos en bibliotecas de documentos de SharePoint. Puede realizar consultas más rápidas y precisas basadas en valores de columna de metadatos específicos, en lugar de simplemente buscar palabras clave.
+
+La búsqueda avanzada de metadatos le permite usar los metadatos asociados a un documento para ayudar a localizar el archivo en una biblioteca de documentos de SharePoint. Esto es especialmente útil cuando tiene una parte específica de la información que desea buscar, como cuándo se modificó por última vez un documento, una persona específica asociada a un archivo o un tipo de archivo específico.
+
+> [!NOTE]
+> Esta característica solo está disponible para los usuarios con licencia para SharePoint Syntex. 
+
+## <a name="to-use-advanced-metadata-search"></a>Para usar la búsqueda avanzada de metadatos
+
+1. En una biblioteca de documentos de SharePoint, en el cuadro **Busca esta biblioteca**, haga clic o pulse en el icono de búsqueda de metadatos (![Pantalla del icono de búsqueda de metadatos.](../media/content-understanding/metadata-search-icon.png)).
+
+    ![Captura de pantalla de una página de biblioteca de documentos que muestra el cuadro de búsqueda con el icono de búsqueda de metadatos resaltado.](../media/content-understanding/metadata-search-box.png)
+
+2. En el panel de búsqueda de metadatos, escriba el texto o seleccione el parámetro que desea buscar en uno o varios de los campos de búsqueda.
+
+    ![Captura de pantalla de una página de biblioteca de documentos que muestra el panel de búsqueda de metadatos.](../media/content-understanding/metadata-search-pane.png)
+
+   Actualmente hay disponibles cinco campos de búsqueda de metadatos. En el futuro se agregarán más campos.
+
+   |Field    |Use este campo para  |
+   |---------|---------|
+   |Palabras clave |Busque una coincidencia de cadena en los metadatos o en el texto completo de un documento. |
+   |Nombre     |Busque en la columna **Nombre** en la biblioteca.          |
+   |Contactos   |Busque una coincidencia en las personas de cualquier columna de la biblioteca.   |
+   |Modified |Buscar por intervalo de fechas seleccionado en la columna **Modificado** en la biblioteca.         |
+   |Tipo     |Buscar por tipo de archivo seleccionado.        |
+
+3. Seleccione **Buscar**. Los documentos que coinciden con la búsqueda de metadatos se muestran en la página de resultados. 

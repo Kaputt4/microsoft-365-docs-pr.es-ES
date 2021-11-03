@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 0d7902076885bd79d4a2d57e7be85fffbc5770fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22f7e2eb1476543eb1aed9d772333f3ae7843477
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200526"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703730"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
 La prevención de pérdida de datos de Microsoft Endpoint (Endpoint DLP) es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md). Para más información sobre la DLP de punto de conexión, consulte [Obtener información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP le permite supervisar dispositivos con Windows 10 y detectar cuándo se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
+Microsoft Endpoint DLP permite supervisar Windows 10 dispositivos y dispositivos macOS *(preview)* ejecutar Catalina 10.15 y versiones posteriores. Una vez que se incorpora un dispositivo, DLP detectará cuándo se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -77,18 +77,18 @@ Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-cla
 - Administrador de seguridad
 - Administrador de datos de cumplimiento
 
-### <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
+### <a name="prepare-your-windows-10-endpoints"></a>Preparación de los puntos de conexión de Windows 10
 
 Asegúrese de que los dispositivos con Windows 10 en los que planee implementar Endpoint DLP cumplan los siguientes requisitos.
 
 1. Debe estar ejecutando Windows 10 x64 compilación 1809 o posterior.
 
-2. La versión del cliente antimalware es 4.18.2009.7 o posterior. Para comprobar la versión actual, abra la aplicación de Seguridad de Windows, seleccione el icono Configuración y, a continuación, Acerca de. El número de versión aparece en la versión del cliente antimalware. Instale Windows Update KB4052623 para actualizar a la última versión del cliente antimalware.
+1. La versión del cliente antimalware es 4.18.2009.7 o posterior. Para comprobar la versión actual, abra la aplicación de Seguridad de Windows, seleccione el icono Configuración y, a continuación, Acerca de. El número de versión aparece en la versión del cliente antimalware. Instale Windows Update KB4052623 para actualizar a la última versión del cliente antimalware.
 
    > [!NOTE]
    > No es necesario que ninguno de los componentes de Seguridad de Windows estén activos; puede ejecutar DLP en punto de conexión independiente del estado de Seguridad de Windows, pero la [protección en tiempo real y el comportamiento del monitor ](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) se debe habilitar.
 
-3. Se instalan las siguientes actualizaciones de Windows.
+1. Se instalan las siguientes actualizaciones de Windows.
 
    > [!NOTE]
    > Estas actualizaciones no son un requisito previo para incorporar un dispositivo a DLP en punto de conexión, pero contienen correcciones de problemas importantes y, por lo tanto, deben instalarse antes de usar el producto.
@@ -98,19 +98,23 @@ Asegúrese de que los dispositivos con Windows 10 en los que planee implementar 
    - For Windows 10 2004 - KB4568831, KB4577063
    - Para dispositivos que ejecutan Office 2016 (en lugar de cualquier otra versión de Office): KB4577063
 
-4. Todos los dispositivos deben cumplir una de estas opciones:
+1. Todos los dispositivos deben cumplir una de estas opciones:
 
    - [Unido a Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
    - [Unido a Azure AD híbrido ](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
    - [Registrado en AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+1. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium). Si los dispositivos usan el explorador Chrome, puede instalar el [ Extensiones de cumplimiento de Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) para aplicar acciones de directiva para la carga en la actividad en la nube.
 
-6. Si está en el canal mensual de la empresa de las versiones 2004 a 2008 de Aplicaciones de Microsoft 365, hay un problema conocido con el punto de conexión de DLP que clasifica el contenido de Office y tendrá que actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](/officeupdates/update-history-microsoft365-apps-by-date) las versiones actuales. Para obtener más información sobre este problema, vea la sección Office Suite de [Notas de la versión para obtener las versiones del canal actuales en 2020](/officeupdates/current-channel#version-2010-october-27).
+1. Si está en el canal mensual de la empresa de las versiones 2004 a 2008 de Aplicaciones de Microsoft 365, hay un problema conocido con el punto de conexión de DLP que clasifica el contenido de Office y tendrá que actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](/officeupdates/update-history-microsoft365-apps-by-date) las versiones actuales. Para obtener más información sobre este problema, vea la sección Office Suite de [Notas de la versión para obtener las versiones del canal actuales en 2020](/officeupdates/current-channel#version-2010-october-27).
 
-7. Si tiene puntos de conexión que usan un proxy de dispositivo para conectarse a Internet, siga los procedimientos que se describen en [Configurar proxy de dispositivo y configuración de conexión a Internet para DLP de puntos de conexión](endpoint-dlp-configure-proxy.md).
+1. Si tiene puntos de conexión que usan un proxy de dispositivo para conectarse a Internet, siga los procedimientos que se describen en [Configurar proxy de dispositivo y configuración de conexión a Internet para DLP de puntos de conexión](endpoint-dlp-configure-proxy.md).
 
-## <a name="onboarding-devices-into-device-management"></a>Incorporación de dispositivos a la administración de dispositivos
+## <a name="prepare-your-macos-devices-preview"></a>Preparación de los dispositivos macOS (versión preliminar)
+
+Vea [Abordar dispositivos macOS en Microsoft 365 información general (versión preliminar)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+
+## <a name="onboarding-windows-10-devices-into-device-management"></a>Incorporación de dispositivos Windows 10 en la administración de dispositivos
 
 Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
 
