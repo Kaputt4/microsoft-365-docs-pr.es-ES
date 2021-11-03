@@ -21,18 +21,19 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5980d01dfb15a019aec9dd39cf6ceae7a1682753
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ca0d3e29809b8975f65dc3f12816a6e4f9a19dbe
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555277"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702408"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Se aplica a**
+**Se aplica a:**
+
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -76,8 +77,8 @@ Para obtener más información sobre las novedades de otros productos de segurid
   - Formulario marcado y confirmado como suplantación de identidad
   - [Nuevas directivas de alerta para ZAP](../../compliance/new-defender-alert-policies.md)
 - Las alertas de Microsoft Defender para Office 365 están ahora integradas en Microsoft 365 Defender: Microsoft 365 Defender cola de alertas unificadas y [cola de alertas unificadas](../defender/investigate-alerts.md)
-- [](user-tags.md) Las etiquetas de usuario ahora se integran en Microsoft Defender para obtener experiencias de alerta de Office 365, incluidos: la cola de alertas y los detalles de Office 365 Security & Compliance y el ámbito de las directivas de alerta personalizadas para las etiquetas de usuario para crear directivas de alertas dirigidas. 
-  - Las etiquetas también están disponibles en la cola de alertas unificadas en el centro de Microsoft 365 Defender (Microsoft Defender para Office 365 Plan 2)
+- [](user-tags.md) Las etiquetas de usuario ahora se integran en Microsoft Defender para obtener experiencias de alerta de Office 365, incluidos: la cola de alertas y los detalles de Office 365 Security & Compliance y el ámbito de las directivas de alerta personalizadas para las etiquetas de usuario para crear directivas de alertas dirigidas.
+  - Las etiquetas también están disponibles en la cola de alertas unificadas en el portal de Microsoft 365 Defender (Microsoft Defender para Office 365 Plan 2)
 
 ## <a name="june-2021"></a>Junio de 2021
 
@@ -104,7 +105,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Microsoft 365 guía básica](https://www.microsoft.com/microsoft-365/roadmap)
 

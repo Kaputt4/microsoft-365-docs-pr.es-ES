@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager proporciona plantillas para crear evaluaciones que se alineen con las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: 858442e54277c32c6510d211f225f73feaf7c4d3
-ms.sourcegitcommit: 3260d47a29c35e90ed7b1d14d400b39baa741873
+ms.openlocfilehash: 4201dac3b83c73dd61f39a01f7ba2d98b6207bc4
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462218"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700870"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
@@ -56,6 +56,21 @@ Una o varias de estas plantillas estarán disponibles en función del contrato d
 
 > [!NOTE]
 > Para los clientes de Community de administración pública (GCC) Moderados, GCC Altos y del Departamento de Defensa (DoD): se incluyen las plantillas Certificación de modelos de madurez de ciberseguridad (CMMC) niveles de 1 a 5, además de las plantillas enumeradas anteriormente.
+
+## <a name="preview-templates"></a>Plantillas de vista previa
+
+Estas plantillas están disponibles actualmente para la versión preliminar. La creación de evaluaciones con estas plantillas no contará para el total de plantillas con licencia usadas.
+
+- ISO 27001:2013 para Azure (versión preliminar)
+- ISO 27001:2013 para Dynamics 365 (versión preliminar)
+- FedRAMP Moderado para Dynamics 365 (versión preliminar)
+- FedRAMP Moderado para Azure (versión preliminar)
+- FedRAMP High para Azure (versión preliminar)
+- FedRAMP High para Dynamics 365 (versión preliminar)
+- SOC 2 para Azure (versión preliminar)
+- SOC 2 para Dynamics 365 (versión preliminar)
+- ISO 27018:2019 para Azure (versión preliminar)
+- ISO 27018:2019 para Dynamics 365 (versión preliminar)
 
 ## <a name="premium-templates"></a>Premium plantillas
 

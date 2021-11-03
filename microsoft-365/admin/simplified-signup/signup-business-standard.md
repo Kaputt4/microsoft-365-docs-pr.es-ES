@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
-ms.openlocfilehash: cf19c2f07129eb064368c1efd6eea09af0870b93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e84e88fd478209d13fca889010b023a9c10f450b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164253"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701496"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
@@ -42,10 +42,12 @@ Para registrarse y comprar Microsoft 365 Empresa Estándar (o Aplicaciones Micro
 2. En la página siguiente, descubra el costo mensual y, a continuación, desplácese hacia abajo por la página para obtener más información sobre lo que se incluye en Microsoft 365. En Microsoft 365 Empresa Estándar, seleccione **Comprar ahora**.
 3. En la **página Gracias por elegir Microsoft 365 Empresa Estándar,** escriba su información para empezar. Seleccione **Siguiente**.
 4. Escriba una dirección de correo electrónico que ya use. Puede ser cualquier dirección que quiera que Microsoft use para comunicarse con usted durante la instalación. También es la dirección a la que le enviaremos información sobre su factura y renovaciones. A continuación, **seleccione Configurar cuenta**.
-5. Escriba su nombre, número de teléfono empresarial, tamaño de empresa, nombre de la compañía y ubicación. Su país o región determina los servicios exactos que recibe de Microsoft y no se puede cambiar después de completar este paso. Seleccione **Siguiente**.
+5. Escriba su nombre, número de teléfono empresarial, tamaño de empresa, nombre de la compañía y ubicación. Seleccione **Siguiente**.
 
-    > [!NOTE]
-    > Se muestra el nombre de la empresa en el Centro de administración. Aquí es donde se administran Microsoft 365 usuarios, licencias y otras características y servicios. También lo incluyemos en cualquier url SharePoint sitio interno.
+    > [!IMPORTANT]
+    > Si agrega un dominio personalizado como parte de la sesión, el nombre de la empresa que escriba aquí se usará en todas las direcciones URL SharePoint y OneDrive usuario. Es posible que no pueda cambiarlo, así que asegúrese de que está escrito correctamente y de que es el nombre que desea usar desde una perspectiva de personal de marca. El nombre de la empresa también aparece en el Centro de administración, donde administra los usuarios Microsoft 365, licencias y otras características y servicios.
+    > 
+    > Su país o región determina los servicios exactos que recibe de Microsoft y no se puede cambiar después de completar este paso. 
 
 6. Ayúdenos a asegurarse de que es usted. Escriba un número que podamos usar para llegar a usted y seleccione **Enviar código de verificación**.
 
@@ -94,7 +96,7 @@ Esta opción proporciona acceso inmediato al conjunto completo de característic
 > [!IMPORTANT]
 > Puedes seguir estos pasos para comprar Aplicaciones Microsoft 365 también. Para obtener más información, consulta [Configurar Aplicaciones Microsoft 365 para negocios](../setup/setup-apps-for-business.md) después de comprar Aplicaciones Microsoft 365 para negocios.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>¿Qué es un correo electrónico empresarial y cuáles son las ventajas de configurar uno?
 

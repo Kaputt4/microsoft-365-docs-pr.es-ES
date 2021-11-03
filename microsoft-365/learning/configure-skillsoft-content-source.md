@@ -4,7 +4,7 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,31 +15,30 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Aprende a configurar Skillsoft como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ROBOTS: NOINDEX
-ms.openlocfilehash: 1a9b086ea2eed50369607521470ddece381dc884
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: dd01f6e36ec9c9f0c15b1769f24a13359b2177f7
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586082"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703864"
 ---
 # <a name="configure-skillsoft-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Skillsoft como origen de contenido para Aprendizaje Microsoft Viva
-
->[!NOTE]
->Esta característica no se admite en la vista previa.
 
 En este artículo se muestra cómo configurar Skillsoft como origen de contenido de aprendizaje de terceros en Viva Learning.
 
 >[!NOTE]
 >El contenido accesible a través de Viva Learning está sujeto a términos distintos de los Términos del producto de Microsoft. El contenido de Skillsoft y los servicios asociados están sujetos a los términos de privacidad y servicio de Skillsoft.
 
-## <a name="first-steps"></a>Primeros pasos
+## <a name="configure-in-your-skillsoft-portal"></a>Configurar en el portal de Skillsoft
 
 Tendrás que contactar con el equipo de tu cuenta de Skillsoft para habilitar la integración Learning Viva. El equipo de la cuenta también le proporcionará el id. de la organización y la clave de cuenta de servicio. Las necesitará para el siguiente paso.
 
-Puedes ponerse en contacto [con el soporte técnico de Skillsoft](https://support.skillsoft.com/percipio/) para obtener ayuda para ponerse en contacto con el equipo de tu cuenta.
+Puedes ponerse en contacto [con el soporte técnico de Skillsoft](https://support.skillsoft.com/percipio/) para obtener ayuda para ponerse en contacto con el equipo de tu cuenta. Si aún no es cliente, puede hablar sobre sus opciones ponerse en [contacto directamente con Skillsoft](https://www.skillsoft.com/about/contact-us).
 
-## <a name="microsoft-365-admin-center"></a>Centro de administración de Microsoft 365
+## <a name="configure-in-your-microsoft-365-admin-center"></a>Configurar en el Centro de administración de Microsoft 365
+
+>[!NOTE]
+>Tendrás que tener permisos de administrador en Microsoft 365 para completar estos pasos.
 
 1. Vaya a su [Centro de administración de Microsoft 365](https://admin.microsoft.com) e inicie sesión.
 
@@ -47,6 +46,7 @@ Puedes ponerse en contacto [con el soporte técnico de Skillsoft](https://suppor
 
 3. Rellene los detalles de configuración que obtuvo del equipo de la cuenta de Skillsoft.
 
-    <!--![Image of Organization ID and Service Account Key.](../media/learning/skillsoft-1.png)-->
-
 4. Seleccione **Guardar** para guardar los detalles de configuración y completar el proceso de configuración.
+
+>[!NOTE]
+>Los metadatos del espacio empresarial se almacenan de forma centralizada en nuestros almacenes de datos y no se almacenan en almacenes de datos específicos geográficamente.

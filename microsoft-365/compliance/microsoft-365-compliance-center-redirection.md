@@ -1,5 +1,5 @@
 ---
-title: Redirigir usuarios desde el Office 365 seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365
+title: Redirección de usuarios desde el centro Office 365 seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,16 +9,16 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo redirigir automáticamente Office 365 usuarios del Centro de seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365..
+description: Obtenga información sobre el redireccionamiento automático de usuarios desde el centro Office 365 seguridad y cumplimiento a la Centro de cumplimiento de Microsoft 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d31cb4d86d914c9406996c4e6fdf7bab9c5d02e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dcf589eddc0ede59efd01d7eddbe9ab3685bfa68
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201042"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60700906"
 ---
-# <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Redirigir usuarios desde el Office 365 seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365
+# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Redirección de usuarios desde el centro Office 365 seguridad y cumplimiento al Centro de cumplimiento de Microsoft 365
 
 En este artículo se explica cómo funciona la redirección automática para los usuarios que tienen acceso a soluciones de cumplimiento desde el Centro de seguridad y cumplimiento de Office 365 (protection.office.com) hasta el Centro de cumplimiento de Microsoft 365 (compliance.microsoft.com).
 
@@ -39,22 +39,6 @@ La redirección automática está habilitada de forma predeterminada para todos 
 Los usuarios se enruta automáticamente a las mismas soluciones de cumplimiento en el Centro de cumplimiento de Microsoft 365 (compliance.microsoft.com).
 
 Esta característica y los controles asociados no habilitan la redirección automática de características de seguridad para Microsoft Defender para Office 365. Para habilitar el redireccionamiento de características de seguridad, vea [Redirecting accounts from Microsoft Defender for Office 365 to the Microsoft 365 security center](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) para obtener más información.
-
-## <a name="can-i-go-back-to-using-the-former-portal"></a>¿Puedo volver a usar el portal anterior?
-
-Si algo no funciona para usted o si hay algo que no puede completar a través del portal de Centro de cumplimiento de Microsoft 365, puede deshabilitar temporalmente el redireccionamiento automático para todos los usuarios.
-
-> [!IMPORTANT]
-> El Centro de cumplimiento de Microsoft 365 es el portal de administración de reemplazo para soluciones de cumplimiento actualmente administradas en el centro de seguridad y cumplimiento Office 365 de cumplimiento. Todas Microsoft 365 de cumplimiento normativo se administrarán únicamente en el Centro de cumplimiento de Microsoft 365. Deshabilitar la redirección a la Centro de cumplimiento de Microsoft 365 debe considerarse una solución a corto plazo.
-
-Para volver al Centro Office 365 seguridad y cumplimiento (protection.microsoft.com) para todos los usuarios, siga estos pasos:
-
-1. Inicie sesión en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) como administrador global o mediante cualquier cuenta con permisos de administrador de cumplimiento en Azure Active Directory.
-2. Vaya **a** Configuración  >  **redirección del centro de cumplimiento**.
-3. Alterna la opción Redirección automática a **Desactivado**.
-4. Seleccione **Desactivar y** compartir comentarios cuando se le pida.
-
-Una vez deshabilitado, los usuarios ya no se enrutarán a compliance.microsoft.com y se dirigirán al Centro de seguridad y cumplimiento de Office 365 (protection.microsoft.com). Los administradores globales o de cumplimiento pueden habilitar esta configuración de nuevo en cualquier momento.
 
 ## <a name="related-information"></a>Información relacionada
 

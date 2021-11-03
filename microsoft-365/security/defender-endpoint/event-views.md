@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7fe31fe2e8e982c1ba8b8bff1aa3e08ce4f94fca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ca3058db2f3f2e8ac79c7388d9a68ead1f48d38
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163053"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704852"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
@@ -192,4 +192,8 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 |Reducción de la superficie expuesta a ataques|Windows Defender (operativo)|5007|Evento cuando se cambia la configuración|
 |Reducción de la superficie expuesta a ataques|Windows Defender (operativo)|1122|Evento cuando la regla se dispara en modo auditoría|
 |Reducción de la superficie expuesta a ataques|Windows Defender (operativo)|1121|Evento cuando la regla se dispara en modo bloque|
-|
+
+>[!NOTE]
+> Desde el punto de vista del usuario, las notificaciones del modo de advertencia ASR se realizan como una notificación Windows notificación del sistema para las reglas de reducción de superficie de ataque.
+>
+> En ASR, Network Protection solo proporciona los modos Audit y Block.

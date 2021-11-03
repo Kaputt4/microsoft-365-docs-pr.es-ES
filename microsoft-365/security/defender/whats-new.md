@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 74656a9f79fba0e81afcb9db207c83162b2dfd81
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 930d9fc489e449effcb61c3224f5695ec835a1a1
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176584"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724708"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -46,7 +46,11 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="november-2021"></a>Noviembre de 2021
+- (Versión preliminar) La característica de complemento de gobierno de aplicaciones para Defender para Aplicaciones en la nube ya está disponible en Microsoft 365 Defender. El gobierno de aplicaciones proporciona una funcionalidad de administración de directivas y seguridad diseñada para aplicaciones habilitadas para OAuth que tienen acceso a Microsoft 365 a través de las API Graph Microsoft. La gobernanza de aplicaciones ofrece visibilidad, corrección y gobernanza completas sobre cómo estas aplicaciones y sus usuarios acceden, usan y comparten sus datos confidenciales almacenados en Microsoft 365 a través de información útil, y alertas y acciones de directivas automatizadas. [Obtenga más información sobre el gobierno de aplicaciones](/cloud-app-security/app-governance-manage-app-governance).
 
+## <a name="october-2021"></a>Octubre de 2021
+- (GA) En la búsqueda avanzada, se agregaron más columnas en la [tabla CloudAppEvents.](advanced-hunting-cloudappevents-table.md) Ahora puede agregar `AccountType` , , , , y a las `IsExternalUser` `IsImpersonated` `IPTags` `IPCategory` `UserAgentTags` consultas. 
 
 ## <a name="september-2021"></a>Septiembre de 2021
 - (GA) Microsoft Defender para Office 365 datos de eventos está disponible en la API Microsoft 365 Defender streaming de eventos. Puede ver la disponibilidad y el estado de los tipos de eventos en el archivo Microsoft 365 Defender tipos de eventos [en la API de streaming.](supported-event-types.md)
@@ -78,7 +82,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 
 ## <a name="april-2021"></a>Abril de 2021
-- Microsoft 365 Defender<br> El portal [de Microsoft 365 Defender](https://security.microsoft.com) mejorado ya está disponible. Esta nueva experiencia reúne Defender for Endpoint, Defender for Office 365, Defender for Identity y mucho más en un único portal. Este es el nuevo hogar para administrar los controles de seguridad. [Ver las novedades](./overview-security-center.md).
+- Microsoft 365 Defender<br> El portal [de Microsoft 365 Defender](https://security.microsoft.com) mejorado ya está disponible. Esta nueva experiencia reúne Defender for Endpoint, Defender for Office 365, Defender for Identity y mucho más en un único portal. Este es el nuevo hogar para administrar los controles de seguridad. [Ver las novedades](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 - [Microsoft 365 Defender análisis de amenazas](threat-analytics.md)<br>
  El análisis de amenazas te ayuda a responder y minimizar el impacto de los ataques activos. También puedes obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y realizar acciones preventivas que mitiguen el riesgo de exposición adicional y aumenten la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para Endpoint y Microsoft Defender para los Office de licencias de E5.
@@ -86,5 +90,5 @@ Para obtener más información sobre las novedades de otros productos de segurid
 ## <a name="march-2021"></a>Marzo de 2021
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Encuentre información sobre eventos en varias aplicaciones y servicios en la nube cubiertos por Microsoft Cloud App Security. Esta tabla también incluye información disponible anteriormente en la `AppFileEvents` tabla.
 ## <a name="february-2021"></a>Febrero de 2021
-- (Versión preliminar) El portal [de Microsoft 365 Defender https://security.microsoft.com) mejorado (](https://security.microsoft.com) ahora está disponible en versión preliminar pública. Esta nueva experiencia lleva a Defender for Endpoint and Defender para Office 365 al centro. [Más información sobre los cambios](./overview-security-center.md).
+- (Versión preliminar) El portal [de Microsoft 365 Defender https://security.microsoft.com) mejorado (](https://security.microsoft.com) ahora está disponible en versión preliminar pública. Esta nueva experiencia lleva a Defender for Endpoint and Defender para Office 365 al centro. [Más información sobre los cambios](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 - **[(Versión preliminar) Microsoft 365 Defender](api-overview.md)** API: las API de Microsoft 365 Defender de nivel superior le permitirán automatizar los flujos de trabajo en función de las tablas de búsqueda avanzada y de incidentes compartidos. 

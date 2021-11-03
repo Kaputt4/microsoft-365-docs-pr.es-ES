@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6a915130fe080622d7373e6a0d550606f623dd9b
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 979e1081dd85047286c580907ff9335442ba0b55
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335615"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701052"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -75,7 +75,7 @@ Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la a
 
 - Al usar la **plantilla Robo** de datos por parte de los usuarios, debe configurar un conector de recursos humanos de Microsoft 365 para importar periódicamente la información de fecha de dimisión y finalización para los usuarios de la organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
 - Al usar plantillas de pérdida de datos, debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir información confidencial en su organización y recibir **alertas** de riesgo de información interna para alertas de directivas DLP de alta gravedad. Vea el artículo [Crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso para configurar las directivas DLP para su organización.
-- Al usar **plantillas de infracción** de directivas de seguridad, debe habilitar Microsoft Defender para endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Consulta el [artículo Configurar características avanzadas](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) en Microsoft Defender para obtener instrucciones paso a paso para habilitar la integración de Defender for Endpoint con la administración de riesgos de insider.
+- Al usar **plantillas de infracción** de directivas de seguridad, debe habilitar Microsoft Defender para endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener instrucciones paso a paso para habilitar la integración de Defender for Endpoint con la administración de riesgos de insider, consulte [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
 - Al usar **plantillas de** usuario no congruentes, debe configurar un conector de recursos humanos de Microsoft 365 para importar periódicamente información de estado de rendimiento o degradación para los usuarios de la organización. Vea el artículo [Importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Probar con un pequeño grupo de usuarios en un entorno de producción

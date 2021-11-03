@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bf1c7d2e47ef64e1c44744988f33a69898cfd412
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 690e4bf115ba4565a65b0414a763530627a03bbc
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209086"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724457"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para endpoint en Microsoft 365 Defender
 
@@ -42,9 +42,9 @@ La imagen y la tabla siguiente enumeran los cambios en la navegación entre el C
 > [!div class="mx-imgBorder"]
 > ![Imagen de lo que se movió a dónde.](../../media/mde-m3d-security-center.png)
 
-| Centro de seguridad de Microsoft Defender | Microsoft 365 Defender |
+| Centro de seguridad de Microsoft Defender | Microsoft 365 Defender |
 |---------|---------|
-| Paneles <ul><li>Operaciones de seguridad</li><li>Análisis de amenazas</li></ul>  |Inicio <ul><li>Análisis de amenazas</li></ul>   |
+| Paneles <ul><li>Operaciones de seguridad</li><li>Análisis de amenazas</li></ul>  |Home <ul><li>Análisis de amenazas</li></ul>   |
 | Incidentes | Incidentes & alertas |
 | Inventario de dispositivos | Inventario de dispositivos |
 | Cola de alertas | Incidentes & alertas |
@@ -57,7 +57,7 @@ La imagen y la tabla siguiente enumeran los cambios en la navegación entre el C
 | Administración de la configuración | Administración de la configuración |
 | Configuraciones | Configuraciones | 
 
-La mejora [Microsoft 365 Defender](overview-security-center.md) en combina las capacidades de seguridad que protegen, detectan, investigan y responden a las amenazas de correo electrónico, colaboración, identidad [https://security.microsoft.com](https://security.microsoft.com) y dispositivo. Esto reúne las funciones de los portales de seguridad de Microsoft existentes, incluidos Centro de seguridad de Microsoft Defender y el centro de Office 365 seguridad & cumplimiento.
+La mejora [Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal) en combina las capacidades de seguridad que protegen, detectan, investigan y responden a las amenazas de correo electrónico, colaboración, identidad [https://security.microsoft.com](https://security.microsoft.com) y dispositivo. Esto reúne las funciones de los portales de seguridad de Microsoft existentes, incluidos Centro de seguridad de Microsoft Defender y el centro de Office 365 seguridad & cumplimiento.
 
 Si está familiarizado con el Centro de seguridad de Microsoft Defender, este artículo ayuda a describir algunos de los cambios y mejoras de Microsoft 365 Defender. Sin embargo, hay algunos elementos nuevos y actualizados que debe tener en cuenta.
 
@@ -77,7 +77,7 @@ Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión 
 
 Echa un vistazo a Microsoft 365 Defender: [https://security.microsoft.com](https://security.microsoft.com) .
 
-Obtenga más información sobre las ventajas: [Información general sobre Microsoft 365 Defender](overview-security-center.md)
+Obtenga más información sobre las ventajas: [Información general sobre Microsoft 365 Defender](microsoft-365-defender.md)
 
 ## <a name="whats-changed"></a>Modificaciones
 
@@ -182,6 +182,6 @@ Actualmente, no se admite el inicio de sesión en varios inquilinos simultáneam
 
 ## <a name="related-information"></a>Información relacionada
 
-- [Microsoft 365 Defender](overview-security-center.md)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender para endpoint en Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Redirigir cuentas de Microsoft Defender para endpoint a Microsoft 365 Defender](microsoft-365-security-mde-redirection.md)

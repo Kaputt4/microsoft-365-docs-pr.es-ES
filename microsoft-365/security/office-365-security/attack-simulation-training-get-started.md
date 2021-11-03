@@ -20,14 +20,14 @@ ms.custom:
 description: Los administradores pueden aprender a usar el aprendizaje de simulación de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3a1be88cb1666f689b4482684823ff09fc39fed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f6b8a10432c63a12f4d81e67f580f11b4f8b35ed
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180999"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701208"
 ---
-# <a name="get-started-using-attack-simulation-training"></a>Introducción al uso de aprendizaje de simulación de ataques
+# <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Empezar a usar el entrenamiento de simulación de ataque en Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "60180999"
 Si su organización tiene Microsoft 365 E5 o Microsoft Defender para el Plan 2 de Office 365, que incluye capacidades de investigación y respuesta de [amenazas,](office-365-ti.md)puede usar el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender para ejecutar escenarios de ataque realistas en su organización. Estos ataques simulados pueden ayudarte a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en la línea de fondo. Lea este artículo para obtener más información.
 
 > [!NOTE]
-> El entrenamiento de simulación de ataque reemplaza la experiencia anterior de Attack Simulator v1 que se describe en [Attack Simulator in Microsoft Defender para Office 365](attack-simulator.md).
+> El entrenamiento de simulación de ataque reemplaza la experiencia anterior de Attack Simulator v1 que estaba disponible en el Centro de seguridad & cumplimiento en el simulador **de** ataque de administración de \> **amenazas** o <https://protection.office.com/attacksimulator> .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 

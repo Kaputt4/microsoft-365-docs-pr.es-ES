@@ -1,5 +1,5 @@
 ---
-title: Preguntas más frecuentes Microsoft 365 programador para Microsoft 365 de trabajo
+title: Preguntas más frecuentes sobre el Planificador para Microsoft 365
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
@@ -7,15 +7,15 @@ audience: Admin
 ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
-description: Preguntas más frecuentes Microsoft 365 programador para Microsoft 365 de trabajo
+description: Preguntas más frecuentes sobre el Planificador para Microsoft 365
 ms.openlocfilehash: 2392c48de3d80cf41d179eb053c46967626b5159
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673305"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703330"
 ---
-# <a name="scheduler-for-microsoft-365-faq"></a>Preguntas más frecuentes Microsoft 365 programador para Microsoft 365 de trabajo
+# <a name="scheduler-for-microsoft-365-faq"></a>Preguntas más frecuentes sobre el Planificador para Microsoft 365
 
 **Pregunta:** ¿Cómo se integra Scheduler con otras características Cortana, como Cortana para *Windows,* *Correo* electrónico de información diaria y *Reproducir mis correos electrónicos?*</br>
 Scheduler es un servicio independiente de otras Cortana características. Otras Cortana se pueden deshabilitar en el nivel de inquilino y el Programador aún se puede habilitar mediante el uso de la dirección cortana@yourdomain.com correo electrónico. Actualmente, los usuarios solo pueden interactuar con el Programador por correo electrónico.

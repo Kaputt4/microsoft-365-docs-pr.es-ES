@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2014b28635076c11179284b7d90d09707aafa2c1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 816225e8054b268906c94df01d121455ecd0cdfa
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206654"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705324"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -35,7 +35,7 @@ ms.locfileid: "60206654"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -47,7 +47,7 @@ Una Microsoft 365 E5, una licencia de seguridad E5, A5 o A5 o una combinación v
 | Servicio compatible | Descripción |
 | ------ | ------ |
 | Microsoft Defender para punto de conexión | Conjunto de aplicaciones de protección de puntos de conexión que se basa en sensores de comportamiento eficaces, análisis en la nube e inteligencia de amenazas |
-|Microsoft Defender para Office 365 | Protección avanzada para tus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
+|Microsoft Defender para Office 365 | Protección avanzada para tus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
 | Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades comprometidas e información interna malintencionada mediante señales correlacionadas de Active Directory |
 | Microsoft Cloud App Security | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |
 
@@ -68,7 +68,7 @@ En la tabla siguiente se muestra cómo cada servicio admitido proporciona datos 
 | Servicio | Datos (señales & información correlacionada) | Ámbito de respuesta & corrección |
 | ------ | ------ | ------ |
 | Microsoft Defender para punto de conexión | - Estados de extremo y eventos sin procesar<br />- Detecciones y alertas de puntos de conexión, incluidos antivirus, EDR, reducción de superficie de ataque<br />- Información sobre archivos y otras entidades observadas en puntos de conexión | Puntos de conexión |
-|Microsoft Defender para Office 365 | - Estados de correo y buzón de correo y eventos sin procesar<br />- Detecciones de correo electrónico, datos adjuntos y vínculos | - Buzones<br />- Microsoft 365 cuentas |
+|Microsoft Defender para Office 365 | - Estados de correo y buzón de correo y eventos sin procesar<br />- Detecciones de correo electrónico, datos adjuntos y vínculos | - Buzones<br />- Microsoft 365 cuentas |
 | Microsoft Defender for Identity | - Señales de Active Directory, incluidos los eventos de autenticación<br />- Detecciones de comportamiento relacionadas con la identidad | Identidades |
 | Microsoft Cloud App Security | - Detección de servicios y aplicaciones en la nube no cedida (TECNOLOGÍA de la sombra)<br />- Exposición de datos a aplicaciones en la nube<br />- Actividad de amenazas asociada a aplicaciones en la nube | Aplicaciones en la nube |
 

@@ -12,24 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ''
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el aprendizaje en Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 19b8997a5f2d1f8df40c740fb996432b13a21d3b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 75b85c637382e2fc508b4c48459d1409b02ec922
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196602"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704139"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
-El entrenamiento de simulación de ataques [ya está disponible en general.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) El aprendizaje de simulación de ataques permite a Microsoft 365 E5 o Microsoft Defender para las organizaciones del Plan 2 de Office 365 medir y administrar los riesgos de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) con tecnología de cargas de suplantación de identidad sin armas del mundo real. El aprendizaje hiperespacio, impartido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y cambiar el comportamiento de los empleados.
+El aprendizaje de simulación de ataques permite a Microsoft 365 E5 o Microsoft Defender para las organizaciones del Plan 2 de Office 365 medir y administrar los riesgos de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) con tecnología de cargas de suplantación de identidad sin armas del mundo real. El aprendizaje hiperespacio, impartido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y cambiar el comportamiento de los empleados.
 
 Para obtener más información sobre cómo empezar con el aprendizaje de simulación de ataques, consulta [Introducción al entrenamiento de simulación de ataques.](attack-simulation-training-get-started.md)
 
@@ -41,7 +39,7 @@ Aunque toda la experiencia de creación y programación de simulación se ha dis
 
 Un servicio de reputación de direcciones URL puede identificar una o varias de las direcciones URL que usa el entrenamiento de simulación de ataques como no seguras. Google Caja fuerte Exploración en Google Chrome bloquea algunas de las direcciones URL de suplantación de identidad simuladas con un **mensaje de** sitio engañoso. Aunque trabajamos con muchos proveedores de reputación de direcciones URL para permitir siempre nuestras direcciones URL de simulación, no siempre tenemos cobertura completa.
 
-![Advertencia de sitio engañoso en Google Chrome.](../../media/attack-sim-chrome-deceptive-site-message.png)
+![Advertencia de sitio engañoso en Google Chrome.](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
 
 Tenga en cuenta que este problema no afecta Microsoft Edge.
 
@@ -98,11 +96,11 @@ Cada campaña de simulación tiene un ciclo de vida. Cuando se crea por primera 
 
 Mientras una simulación está en **estado programado,** los informes de simulación estarán en su mayoría vacíos. Durante esta fase, el motor de simulación está resolviendo las direcciones de correo electrónico del usuario de destino, expandiendo grupos de distribución, quitando usuarios invitados de la lista, etc.:
 
-![Informes en estado programado.](../../media/attack-sim-empty-reporting.png)
+![Detalles de simulación que muestran la simulación en el estado Programado.](../../media/attack-sim-training-faq-scheduled-state.png)
 
 Una vez que la simulación entra en la **fase en** curso, observará que la información empieza a engañarse en los informes:
 
-![Informes en el estado En curso.](../../media/attack-sim-in-progress.png)
+![Detalles de simulación que muestran la simulación en el estado En curso.](../../media/attack-sim-training-faq-in-progress-state.png)
 
 Los informes de simulación individuales pueden tardar hasta 30 minutos en actualizarse después de la transición al **estado En** curso. Los datos del informe siguen compilando hasta que la simulación alcanza el **estado Completado.** Las actualizaciones de informes se producen en los siguientes intervalos:
 
@@ -140,9 +138,9 @@ A: Hay varias opciones disponibles para los usuarios de destino:
 - Incluya todos los usuarios (actualmente disponibles para organizaciones con menos de 40 000 usuarios).
 - Elija usuarios específicos.
 - Seleccione usuarios de un archivo CSV (una dirección de correo electrónico por línea).
-- Destino basado en grupos de Azure AD.
+- Azure AD de destino basada en grupos.
 
-Hemos encontrado que las campañas en las que los grupos de Azure AD identifican a los usuarios dirigidos suelen ser más fáciles de administrar.
+Hemos encontrado que las campañas en las que los usuarios de destino están identificados por grupos Azure AD suelen ser más fáciles de administrar.
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>P: ¿Hay límites en la segmentación de usuarios al importar desde un CSV o agregar usuarios?
 
@@ -150,11 +148,11 @@ A: El límite para importar destinatarios desde un archivo CSV o agregar destina
 
 Un destinatario puede ser un usuario individual o un grupo. Un grupo puede contener cientos o miles de destinatarios, por lo que un límite real no se coloca en el número de usuarios individuales.
 
-Administrar un archivo CSV grande o agregar muchos destinatarios individuales puede resultar engorroso. El uso de grupos de Azure AD simplificará la administración general de la simulación.
+Administrar un archivo CSV grande o agregar muchos destinatarios individuales puede resultar engorroso. El Azure AD los grupos simplificará la administración general de la simulación.
 
 ### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>P: ¿Microsoft proporciona cargas en otros idiomas?
 
-A: Actualmente, hay 5 cargas localizadas disponibles. Hemos observado que las traducciones directas o automáticas de cargas existentes a otros idiomas provocarán imprecisiones y una menor relevancia.
+A: Actualmente, hay 5 cargas localizadas disponibles. Hemos observado que cualquier traducción directa o automática de cargas existentes a otros idiomas provocará imprecisiones y disminución de relevancia.
 
 Dicho esto, puede crear su propia carga en el idioma que prefiera con la experiencia de creación de carga personalizada. También se recomienda encarecidamente que recolecte las cargas existentes que se usaron para dirigirse a los usuarios en una geografía específica. En otras palabras, deja que los atacantes localicen el contenido por ti.
 
@@ -168,7 +166,7 @@ Tenga en cuenta que el cambio de configuración puede tardar hasta 30 minutos en
 
 A: ¡Sí se puede! En la última página **Revisar simulación** del asistente para crear una nueva simulación, hay una opción para **Enviar una prueba**. Esta opción enviará un mensaje de simulación de suplantación de identidad (phishing) de ejemplo al usuario que ha iniciado sesión actualmente. Después de validar el mensaje de suplantación de identidad en la Bandeja de entrada, puede enviar la simulación.
 
-![Enviar un botón de prueba en la página Revisar simulación.](../../media/attack-sim-review-simulation-page.png)
+![Enviar un botón de prueba en la página Revisar simulación.](../../media/attack-sim-training-simulations-review-simulation.png)
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>P: ¿Puedo dirigirme a usuarios que pertenecen a un inquilino diferente como parte de la misma campaña de simulación?
 

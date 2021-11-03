@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ae0c68ec8b8c34679c0dbf5bce1570f558831af3
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 96cce3c715cb282db2ce1718440b13e43f5145b6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364728"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702054"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -40,12 +40,12 @@ Las plantillas de directiva son configuraciones de directiva predefinidas que pu
 
 |**Área**|**Plantilla de directiva**|**Detalles**|
 |:-----|:-----|:-----|
-| **Lenguaje ofensivo y contra el acoso** | Supervisar las comunicaciones en busca de lenguaje ofensivo | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 100% <br> - Condiciones: clasificador de idioma ofensivo |
+| **Contenido inadecuado** | Supervisar las comunicaciones en busca de contenido inadecuado | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 100% <br> - Condiciones: amenaza, profanidad, hostigamiento dirigido, imágenes para adultos, imágenes racy y clasificadores de imágenes gory |
 | **Información confidencial** | Supervisar las comunicaciones para obtener información confidencial | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 10% <br> - Condiciones: información confidencial, patrones de contenido y tipos integrados, opción de diccionario personalizado, datos adjuntos de más de 1 MB |
 | **Cumplimiento normativo** | Supervisar las comunicaciones para obtener información relacionada con el cumplimiento normativo financiero | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente <br> - Porcentaje de revisión: 10% <br> - Condiciones: opción de diccionario personalizado, datos adjuntos de más de 1 MB |
 | **Conflicto de intereses** | Supervisar las comunicaciones entre dos grupos o dos usuarios para ayudar a evitar conflictos de interés | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: interna <br> - Porcentaje de revisión: 100% <br> - Condiciones: Ninguna |
 
-Las comunicaciones se examinan cada 24 horas a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de idioma ofensivo a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada 24 horas a las 11:00 a.m. todos los días. La edición de una directiva no cambia esta vez. Para ver la última fecha y hora de examen de una directiva, vaya a la columna Último *examen de* directivas de la **página** Directiva. Después de crear una nueva directiva, puede tardar hasta 24 horas en ver la primera fecha y hora del examen de directivas. La fecha y la hora del último examen se convierten en la zona horaria del sistema local.
+Las comunicaciones se examinan cada 24 horas a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de contenido inadecuado a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada 24 horas a las 11:00 a.m. al día. La edición de una directiva no cambia esta vez. Para ver la última fecha y hora de examen de una directiva, vaya a la columna Último *examen de* directivas de la **página** Directiva. Después de crear una nueva directiva, puede tardar hasta 24 horas en ver la primera fecha y hora del examen de directivas. La fecha y la hora del último examen se convierten en la zona horaria del sistema local.
 
 ## <a name="pause-a-policy-preview"></a>Pausar una directiva (versión preliminar)
 
@@ -223,7 +223,7 @@ Si desea reducir la cantidad de contenido que se va a revisar, puede especificar
 
 ## <a name="alert-policies"></a>Directivas de alerta
 
-Después de configurar una directiva, se crea automáticamente una directiva de alerta correspondiente y se generan alertas para los mensajes que coinciden con las condiciones definidas en la directiva. Puede tardar hasta 24 horas después de crear una directiva de inicio para recibir alertas de indicadores de actividad. De forma predeterminada, todos los desencadenadores de alerta de coincidencias de directiva tienen asignado un nivel de gravedad de medio en la directiva de alerta asociada. Las alertas se generan para una directiva de cumplimiento de comunicaciones una vez que se cumple el nivel de umbral de desencadenador de agregación en la directiva de alerta asociada. Se envía una notificación de correo electrónico una vez cada 24 horas para las alertas, independientemente del número de mensajes individuales que coincidan con las condiciones de la directiva. Por ejemplo, Contoso tiene habilitada una directiva de idioma ofensivo y, para el 1 de enero, hubo 100 coincidencias de directiva que generaron 6 alertas. Una única notificación por correo electrónico para las 6 alertas se envía a finales del 1 de enero.
+Después de configurar una directiva, se crea automáticamente una directiva de alerta correspondiente y se generan alertas para los mensajes que coinciden con las condiciones definidas en la directiva. Puede tardar hasta 24 horas después de crear una directiva de inicio para recibir alertas de indicadores de actividad. De forma predeterminada, todos los desencadenadores de alerta de coincidencias de directiva tienen asignado un nivel de gravedad de medio en la directiva de alerta asociada. Las alertas se generan para una directiva de cumplimiento de comunicaciones una vez que se cumple el nivel de umbral de desencadenador de agregación en la directiva de alerta asociada. Se envía una notificación de correo electrónico una vez cada 24 horas para las alertas, independientemente del número de mensajes individuales que coincidan con las condiciones de la directiva. Por ejemplo, Contoso tiene habilitada una directiva de contenido inadecuado y, para el 1 de enero, hubo 100 coincidencias de directiva que generaron 6 alertas. Una única notificación por correo electrónico para las 6 alertas se envía a finales del 1 de enero.
 
 Para las directivas de cumplimiento de comunicaciones, los siguientes valores de directiva de alerta están configurados de forma predeterminada:
 

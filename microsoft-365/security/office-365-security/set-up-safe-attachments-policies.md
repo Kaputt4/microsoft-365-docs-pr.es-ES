@@ -22,8 +22,8 @@ ms.openlocfilehash: 1cc31f00045173202d6404a81b64fdaab791e0c5
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673763"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702170"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365
 

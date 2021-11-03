@@ -18,21 +18,22 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-ransomware
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f856e13804d777f5405d5368529252f958f25de1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b8941953d1a2d6eeae30458dfd003979c32f2f86
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555505"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704470"
 ---
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. Aunque [Microsoft 365 Defender](microsoft-365-defender.md) proporciona muchas funcionalidades que detectan y bloquean las actividades de intrusión asociadas y ransomware, realizar comprobaciones proactivas de signos de peligro puede ayudar a mantener la red protegida.
 
@@ -261,7 +262,7 @@ Información clave de Microsoft:
 - [Ransomware operado por humanos](/security/compass/human-operated-ransomware)
 - [Protéjase contra ransomware y extorsión de manera rápida](/security/compass/protect-against-ransomware)
 - [Informe de Microsoft Digital Defense 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (vea las páginas 10-19)
-- [Ransomware: un informe de análisis de amenazas](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) generalizada y continua en el portal de Microsoft 365 Defender amenazas
+- [Ransomware: informe de análisis de amenazas generalizado y continuo](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) en el portal de Microsoft 365 Defender
 
 Microsoft 365:
 
@@ -271,7 +272,7 @@ Microsoft 365:
 - [Protección de malware y ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Proteger el equipo Windows de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
-- [Informes de análisis de amenazas para ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) en el portal de Microsoft 365 Defender amenazas
+- [Informes de análisis de amenazas para ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) en el portal de Microsoft 365 Defender
 
 Microsoft Azure:
 
@@ -290,6 +291,14 @@ Microsoft Cloud App Security:
 Entradas de blog del equipo de Seguridad de Microsoft:
 
 - [3 pasos para evitar y recuperarse del ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Una guía para combatir el ransomware operado por humanos: Parte 1 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Pasos clave sobre cómo el equipo de detección y respuesta (DARDO) de Microsoft lleva a cabo investigaciones de incidentes de ransomware.
+
+- [Una guía para combatir ransomware operado por humanos: Parte 2 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recomendaciones y procedimientos recomendados.
+
 - [Camino a la resistencia al comprender los riesgos de ciberseguridad: Parte 4 — Navegación por las amenazas actuales (mayo de 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   Consulte la sección **Ransomware**.

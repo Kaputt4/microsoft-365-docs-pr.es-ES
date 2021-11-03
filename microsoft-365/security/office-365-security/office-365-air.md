@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1097107aac85edc9a757f42d3502f7cbb51c758
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e3329186d7ec0ece2b3d2261b97f784b3eba50d5
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154319"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724744"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -129,7 +129,7 @@ Los permisos se conceden a través de determinados roles, como los que se descri
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Los cambios se van a realizar próximamente en el portal Microsoft 365 Defender web
 
-Si ya estás usando funcionalidades de AIR en Microsoft Defender para Office 365, estás a punto de ver algunos cambios en el portal de Microsoft 365 Defender [mejorado.](../defender/overview-security-center.md)
+Si ya estás usando funcionalidades de AIR en Microsoft Defender para Office 365, estás a punto de ver algunos cambios en el portal de Microsoft 365 Defender [mejorado.](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificadas.":::
 
@@ -151,7 +151,7 @@ En la tabla siguiente se enumeran los cambios y mejoras que se han realizado en 
 
 ****
 
-|Elemento|¿Qué está cambiando?|
+|Item|¿Qué está cambiando?|
 |---|---|
 |**Página Investigaciones**|La página **Investigaciones actualizada es** más coherente con lo que se ve en [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Verá algunos cambios generales de formato y estilo que se alinean con la nueva vista **Investigaciones unificada.** Por ejemplo, el gráfico de investigación tiene un formato más unificado.|
 |**Pestaña Usuarios**|La **pestaña Usuarios** ahora es la pestaña **Buzones.** Los detalles sobre los usuarios se enumeran en la **pestaña Buzón** de correo.|

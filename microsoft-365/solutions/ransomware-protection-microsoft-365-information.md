@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, ransomware operado por humanos, ransomware operado por personas, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología
+keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use el acceso controlado a carpetas, MIP, DLP y Microsoft Cloud App Security para proteger los datos confidenciales de Microsoft 365.
-ms.openlocfilehash: f63a830e8c17eddcbe3efe40408881ec1f1d9736
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: cd2f7526de1b9089c6c2febfb667b4df7d816913
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555661"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60666739"
 ---
 # <a name="step-5-protect-information"></a>Paso 5. Proteger información
 
@@ -151,6 +151,14 @@ Microsoft Cloud App Security:
 Entradas de blog del equipo de Seguridad de Microsoft:
 
 - [3 pasos para evitar y recuperarse del ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Una guía para combatir el ransomware operado por personas: Parte 1 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Pasos clave sobre cómo el equipo de detección y respuesta de Microsoft (DART) lleva a cabo investigaciones de incidentes de ransomware.
+
+- [Una guía para combatir el ransomware operado por personas: Parte 2 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recomendaciones y procedimientos recomendados.
+
 - [Camino a la resistencia al comprender los riesgos de ciberseguridad: Parte 4 — Navegación por las amenazas actuales (mayo de 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   Consulte la sección **Ransomware**.

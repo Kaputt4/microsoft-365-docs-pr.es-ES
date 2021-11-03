@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo ampliar las plantillas de evaluación en Microsoft Compliance Manager para agregar y modificar controles.
-ms.openlocfilehash: 4618c085228c44e3af1aa0b3de9c3b1ebd63424c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: d47488f578436b1ea8bd865855d681d8778d07bd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336064"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703074"
 ---
 # <a name="extend-assessment-templates-in-microsoft-compliance-manager"></a>Ampliar plantillas de evaluación en Microsoft Compliance Manager
 
 El Administrador de cumplimiento ofrece la opción de agregar sus propios controles y acciones de mejora a una plantilla existente. Este proceso se denomina extensión de una plantilla.
 
-Para ampliar una plantilla, usará instrucciones especiales para modificar los datos de plantilla, en función de si está ampliando las plantillas de evaluación Microsoft 365 plantillas de evaluación universales.
+Para ampliar una plantilla, usará instrucciones especiales para modificar los datos de plantilla, en función de si está ampliando plantillas de evaluación de Microsoft o plantillas de evaluación universal.
 
-## <a name="extend-microsoft-365-assessment-templates"></a>Ampliar Microsoft 365 de evaluación
+## <a name="extend-microsoft-assessment-templates"></a>Ampliar plantillas de evaluación de Microsoft
 
-Al ampliar una plantilla de Microsoft 365, microsoft todavía puede recibir actualizaciones [publicadas,](compliance-manager-assessments.md#accept-updates-to-assessments)lo que puede ocurrir cuando hay cambios en la regulación o el producto relacionados (vea Accept updates to assessments ).
+Al extender una plantilla de Microsoft, como una creada para su uso con Microsoft 365, todavía puede recibir actualizaciones publicadas por Microsoft. Las actualizaciones pueden producirse cuando hay cambios en el producto o regulación relacionados (vea [Aceptar actualizaciones para evaluaciones).](compliance-manager-assessments.md#accept-updates-to-assessments)
 
 ### <a name="prepare-template-data-and-create-extension"></a>Preparar datos de plantilla y crear extensión
 

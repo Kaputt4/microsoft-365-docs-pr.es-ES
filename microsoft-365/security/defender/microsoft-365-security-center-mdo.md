@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 77aa51e80cd339878c5d07d38e71cab810ee130f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91f80cb79efe7a301bfcefaf7663e13f391b4b1e
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191532"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724337"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender para Office 365 en Microsoft 365 Defender
 
@@ -58,11 +58,11 @@ En la tabla siguiente se enumeran los cambios en la navegación entre el Centro 
 |eDiscovery||Vea [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage)||
 |||||
 
-[Microsoft 365 Defender](./overview-security-center.md) combina las capacidades de seguridad de los portales de seguridad de Microsoft existentes, incluido el Centro de <https://security.microsoft.com> seguridad & cumplimiento. Este centro mejorado ayuda a los equipos de seguridad a proteger a su organización ante las amenazas de manera más eficaz y eficiente.
+[Microsoft 365 Defender](./microsoft-365-defender.md) combina las capacidades de seguridad de los portales de seguridad de Microsoft existentes, incluido el Centro de <https://security.microsoft.com> seguridad & cumplimiento. Este centro mejorado ayuda a los equipos de seguridad a proteger a su organización ante las amenazas de manera más eficaz y eficiente.
 
 Si está familiarizado con el Centro de seguridad & cumplimiento (protection.office.com), en este artículo se describen algunos de los cambios y mejoras de Microsoft 365 Defender.
 
-Obtenga más información sobre las ventajas: [Información general sobre Microsoft 365 Defender](overview-security-center.md)
+Obtenga más información sobre las ventajas: [Información general sobre Microsoft 365 Defender](microsoft-365-defender.md)
 
 Si está buscando elementos relacionados con el cumplimiento, visite el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/homepage).
 

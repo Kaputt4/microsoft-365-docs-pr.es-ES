@@ -6,20 +6,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06fa097275453e3ae7b64f0e0cb142fe7592c88b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dca768ea376531d7c9a47cf4425ba65e49911b23
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191964"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702194"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Asegurarse de que los dispositivos estén configurados de manera adecuada
 
@@ -66,7 +66,7 @@ Antes de garantizar que los dispositivos estén configurados correctamente, insc
 
 ## <a name="obtain-required-permissions"></a>Obtener los permisos necesarios
 
-De forma predeterminada, solo los usuarios a los que se haya asignado el rol Administrador global o administrador de servicio de Intune en Azure AD pueden administrar y asignar los perfiles de configuración de dispositivos necesarios para incorporar dispositivos e implementar la línea base de seguridad.
+De forma predeterminada, solo los usuarios a los que se haya asignado el rol Administrador global o administrador de servicio de Intune en Azure AD pueden administrar y asignar los perfiles de configuración del dispositivo necesarios para incorporar dispositivos e implementar la línea base de seguridad.
 
 Si se le han asignado otros roles, asegúrese de que tiene los permisos necesarios:
 

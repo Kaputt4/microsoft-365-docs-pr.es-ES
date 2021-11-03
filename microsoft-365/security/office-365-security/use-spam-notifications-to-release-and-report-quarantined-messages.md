@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado del usuario final para mensajes en cuarentena en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31cfebba6d7bde610ac855dc4c7985d2432fabe3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b08a89adb5f2cc8f02cdce4e5150b82838f287cf
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190250"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702862"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Usar notificaciones de cuarentena para liberar e informar de mensajes en cuarentena
 
@@ -39,14 +39,16 @@ ms.locfileid: "60190250"
 
 En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para obtener más información, vea [Mensajes en cuarentena en EOP](quarantine-email-messages.md).
 
-_Las directivas de_ cuarentena definen lo que los usuarios pueden hacer a los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características compatibles). Para más información, consulte [Políticas de cuarentena](quarantine-policies.md). Las policías de cuarentena también controlan si los destinatarios afectados (incluidos los _buzones compartidos)_ reciben notificaciones periódicas de cuarentena sobre sus mensajes en cuarentena. Las notificaciones en cuarentena son el reemplazo de las notificaciones de correo no deseado del usuario final para todas las características de protección admitidas (no solo los veredictos de directivas contra correo no deseado).
+_Las directivas de_ cuarentena definen lo que los usuarios pueden hacer a los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características compatibles). Para más información, vea [Directivas de cuarentena](quarantine-policies.md). Las policías de cuarentena también controlan si los destinatarios afectados (incluidos los _buzones compartidos)_ reciben notificaciones periódicas de cuarentena sobre sus mensajes en cuarentena. Las notificaciones en cuarentena son el reemplazo de las notificaciones de correo no deseado del usuario final para todas las características de protección admitidas (no solo los veredictos de directivas contra correo no deseado).
 
-Los administradores también pueden usar la configuración global de las directivas de cuarentena para personalizar el nombre para mostrar del remitente, el texto de declinación de responsabilidades en diferentes idiomas y el logotipo de la compañía que se usa en las notificaciones. Para obtener instrucciones, vea [Configure global quarantine notification settings in the Microsoft 365 Defender portal](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
+Las notificaciones de cuarentena no están activadas en las notificaciones de cuarentena integradas denominadas AdminOnlyAccessPolicy o DefaultFullAccessPolicy. Las notificaciones de cuarentena están activadas en la directiva de cuarentena integrada denominada NotificationEnabledPolicy [si su organización la tiene](quarantine-policies.md#full-access-permissions-and-quarantine-notifications). De lo contrario, para activar las notificaciones de cuarentena en directivas de cuarentena, debe [crear y configurar una nueva directiva de cuarentena](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+
+Los administradores también pueden usar la configuración global de las directivas de cuarentena para personalizar el nombre para mostrar del remitente, el texto de declinación de responsabilidades en diferentes idiomas y el logotipo de la compañía que se usa en las notificaciones de cuarentena. Para obtener instrucciones, consulte [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 
 En los buzones compartidos, las notificaciones de cuarentena solo se admiten para los usuarios a los que se les concede permiso FullAccess para el buzón compartido. Para obtener más información, [vea Use the EAC to edit shared mailbox delegation](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
 > [!NOTE]
-> De forma predeterminada, los mensajes que se ponen en cuarentena como phishing de elevada confianza, malware, por reglas de flujo de correo (también conocidas como reglas de transporte) o directivas de datos adjuntos de Caja fuerte en Defender para Office 365 solo están disponibles para los administradores. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
+> De forma predeterminada, los mensajes que se ponen en cuarentena como phishing de elevada confianza, malware, por reglas de flujo de correo (también conocidas como reglas de transporte) o directivas de datos adjuntos de Caja fuerte en Defender para Office 365 solo están disponibles para los administradores (de forma predeterminada, se usa la directiva de cuarentena AdminOnlyAccessPolicy). Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 >
 > Las notificaciones en cuarentena no son compatibles con los grupos.
 

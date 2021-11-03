@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e9a915cfb698e80756e0810963e112889bd67a66
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 47e86a19f637278a9e9d82fd0b8fd260a77af6cd
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157691"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702744"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Paso 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Un Centro de operaciones de seguridad (SOC) establecido debe tener un catálogo de servicios que pueda incluir:
 
@@ -55,7 +55,7 @@ Un Centro de operaciones de seguridad (SOC) establecido debe tener un catálogo 
 - Prevención de pérdida de datos
 - Supervisión de marca
 
-Dado que Microsoft 365 Defender tecnologías abarcan varias funciones, el equipo de SOC tendrá que determinar qué roles y responsabilidades son más adecuados para administrar cada componente de Defender y alinearse con la función de servicio.
+Dado que las Microsoft 365 Defender abarcan varias funciones, el equipo de SOC tendrá que determinar qué roles y responsabilidades son más adecuados para administrar cada componente de Microsoft 365 Defender y alinearse con la función de servicio.
 
 Los componentes de Microsoft 365 Defender son:
 

@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 10/29/2021
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 17026088cc10b5ace84cbab31f0a383661e2484b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4881d1ca4d8b6ca12dbb7c6c273328e515a503ac
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204052"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704881"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Información general de Microsoft Defender para el plan 1 de punto de conexión (versión preliminar)
 
@@ -31,7 +31,7 @@ Microsoft Defender para endpoint es una plataforma de seguridad de extremo empre
 - **Defender for Endpoint Plan 1**, actualmente en versión preliminar y descrito en este artículo; y 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**, generalmente disponible y anteriormente conocido como [Defender para Endpoint](microsoft-defender-endpoint.md).
 
-En la siguiente imagen se muestra lo que se incluye en Defender for Endpoint Plan 1 (versión preliminar):
+Los cuadros verdes de la siguiente imagen muestran lo que se incluye en Defender for Endpoint Plan 1 (versión preliminar):
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Diagrama de Defender for Endpoint Plan 1":::
 
@@ -168,7 +168,7 @@ Con el control de acceso basado en roles (RBAC), el administrador de seguridad p
 
 Para obtener más información, vea [Manage portal access using role-based access control](rbac.md).
 
-### <a name="reporting"></a>Generación de informes
+### <a name="reporting"></a>Reporting
 
 El Microsoft 365 Defender web ( ) proporciona un acceso fácil a la información sobre las amenazas detectadas y [https://security.microsoft.com](https://security.microsoft.com) las acciones para hacer frente a dichas amenazas. 
 
@@ -194,7 +194,7 @@ La mayoría de las organizaciones usan varios dispositivos y sistemas operativos
 - iOS
 - Sistema operativo Android
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Comparar Microsoft Defender para endpoint plan 1 (versión preliminar) con plan 2](defender-endpoint-plan-1-2.md)
 - [Configurar y configurar Defender para endpoint plan 1 (versión preliminar)](mde-p1-setup-configuration.md)

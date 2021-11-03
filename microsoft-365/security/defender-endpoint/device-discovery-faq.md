@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b1bf2d20bb9f2084abadbc164bb668c3ebf174f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 185de1d39f6d10f84ab5409772dbf0c1193544e7
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555997"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701086"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -95,7 +95,7 @@ Es posible que observes diferencias entre el número de dispositivos enumerados 
  La recomendación de seguridad y el widget de panel son para dispositivos estables en la red; excluyendo dispositivos efímeros, dispositivos invitados y otros. La idea es recomendar en dispositivos persistentes, lo que también implica en la puntuación de seguridad general de la organización.
 
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>¿Puedo incorporar dispositivos no administrados que se encontraron?
- Sí. Los puntos de conexión no administrados de la red introducen vulnerabilidades y riesgos en la red. Incorporarlos al servicio puede aumentar la visibilidad de seguridad en ellos. 
+ Sí. Puedes incorporar dispositivos no administrados manualmente. Los puntos de conexión no administrados de la red introducen vulnerabilidades y riesgos en la red. Incorporarlos al servicio puede aumentar la visibilidad de seguridad en ellos. 
 
 ## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>He notado que el estado de mantenimiento del dispositivo no administrado siempre es "Activo", ¿por qué es eso?
 Temporalmente, el estado de mantenimiento del dispositivo no administrado será "Activo" durante el período de retención estándar del inventario de dispositivos, independientemente de su estado real.

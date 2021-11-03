@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8e8e81f44ab50ef0f670589551cb529a5c6ab6f
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: c5c9709d0e7c0313035a5f0603a8241cc24b1930
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364861"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703222"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -32,7 +32,7 @@ Las directivas de cuarentena (anteriormente conocidas como etiquetas de _cuarent
 
 Tradicionalmente, los usuarios se han permitido o denegado niveles de interactividad para los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena. Por ejemplo, los usuarios pueden ver y liberar mensajes que fueron puestos en cuarentena por el filtrado contra correo no deseado como correo no deseado o masivo, pero no pueden ver ni liberar mensajes que se han puesto en cuarentena como phishing o malware de elevada confianza.
 
-Para [las características de](#step-2-assign-a-quarantine-policy-to-supported-features)protección admitidas, las directivas de cuarentena especifican lo que los usuarios pueden hacer con sus propios mensajes (mensajes donde son destinatarios) en cuarentena y en notificaciones de _cuarentena._ Las notificaciones en cuarentena son el reemplazo de las notificaciones de correo no deseado del usuario final. Estas notificaciones ahora están controladas por directivas de cuarentena y contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo los veredictos de directivas contra correo no deseado).
+Para [las características de](#step-2-assign-a-quarantine-policy-to-supported-features)protección admitidas, las directivas de cuarentena especifican lo que los usuarios pueden hacer con sus propios mensajes (mensajes donde son destinatarios) en cuarentena y en notificaciones de _cuarentena._ Las notificaciones en cuarentena son el reemplazo de las notificaciones de correo no deseado del usuario final. Estas notificaciones ahora están controladas por directivas de cuarentena y contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo directivas contra correo no deseado y veredictos de directivas contra suplantación de identidad).
 
 Las directivas de cuarentena predeterminadas que aplican las capacidades históricas del usuario se asignan automáticamente a las acciones de las características de protección admitidas que ponen en cuarentena los mensajes. O bien, puede crear directivas de cuarentena personalizadas y asignarlas a las características de protección admitidas para permitir o impedir que los usuarios realicen acciones específicas en esos tipos de mensajes en cuarentena.
 
@@ -57,19 +57,35 @@ Los permisos de directiva de cuarentena individuales contenidos en los grupos de
 |**Permitir que los destinatarios soliciten la puesta en** cuarentena de un mensaje (_PermissionToRequestRelease_)||![Marca de verificación](../../media/checkmark.png)||
 |
 
-Las directivas de cuarentena predeterminadas y sus grupos de permisos asociados se describen en la tabla siguiente:
+Las directivas de cuarentena predeterminadas, sus grupos de permisos asociados y si las notificaciones de cuarentena están habilitadas se describen en la tabla siguiente:
 
 <br>
 
-|Directiva de cuarentena predeterminada|Grupo de permisos usado|
-|---|---|
-|AdminOnlyAccessPolicy|Sin acceso|
-|DefaultFullAccessPolicy|Acceso completo|
-|
+|Directiva de cuarentena predeterminada|Grupo de permisos usado|¿Notificaciones en cuarentena habilitadas?|
+|---|---|---|
+|AdminOnlyAccessPolicy|Sin acceso|No|
+|DefaultFullAccessPolicy|Acceso completo|No|
+|NotificationEnabledPolicy<sup>\*</sup>|Acceso completo|Sí|
 
-Si no le gustan los permisos predeterminados en los grupos de permisos preestablecidos, puede usar permisos personalizados al crear o modificar directivas de cuarentena personalizadas. Para obtener más información acerca de lo que hace cada permiso, vea la sección Detalles de permisos de directiva [de cuarentena](#quarantine-policy-permission-details) más adelante en este artículo.
+Si no le gustan los permisos predeterminados en los grupos de permisos preestablecidos o si desea habilitar las notificaciones de cuarentena, cree y use directivas de cuarentena personalizadas. Para obtener más información acerca de lo que hace cada permiso, vea la sección Detalles de permisos de directiva [de cuarentena](#quarantine-policy-permission-details) más adelante en este artículo.
 
-Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones de correo de Exchange Online; PowerShell de EOP independiente en organizaciones de EOP sin Exchange Online buzones).
+Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones de correo de Exchange Online; PowerShell de EOP independiente en organizaciones EOP sin Exchange Online buzones).
+
+> [!NOTE]
+> El tiempo que los mensajes en cuarentena se mantienen en cuarentena antes de que expiren se controla mediante la conservación del **correo** no deseado en cuarentena durante estos muchos días (_QuarantineRetentionPeriod_) en las directivas contra correo no deseado. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
+
+## <a name="full-access-permissions-and-quarantine-notifications"></a>Permisos de acceso completo y notificaciones de cuarentena
+
+<sup>\*</sup> La directiva de cuarentena denominada NotificationEnabledPolicy no está presente en todos los entornos. Tendrás la directiva de cuarentena NotificationEnabledPolicy si tu organización cumple los dos requisitos siguientes:
+
+- La organización existía antes de que se haya activado la característica de directiva de cuarentena (finales de julio o principios de agosto de 2021).
+- Tenías una o varias directivas contra correo no deseado [(la](configure-your-spam-filter-policies.md) directiva contra correo no deseado predeterminada o directivas **personalizadas** contra correo no deseado) donde la configuración Habilitar notificaciones de correo no deseado del usuario final estaba activada.
+
+Como se describió anteriormente, las notificaciones de cuarentena en directivas de cuarentena reemplazan las notificaciones de correo no deseado del usuario final que usó para activar o desactivar en directivas contra correo no deseado. La directiva de cuarentena integrada denominada DefaultFullAccessPolicy duplica los permisos _históricos_ para los mensajes en cuarentena, pero las notificaciones de cuarentena no están _activadas_ en la directiva de cuarentena. Además, como no puede modificar la directiva integrada, no puede activar las notificaciones en cuarentena en DefaultFullAccessPolicy.
+
+Para proporcionar los permisos de DefaultFullAccessPolicy pero con las notificaciones en cuarentena activadas, creamos la directiva denominada NotificationEnabledPolicy para usarla en lugar de DefaultFullAccessPolicy para aquellas organizaciones que lo necesitaban (organizaciones donde se activaron las notificaciones de correo no deseado del usuario final).
+
+Para las organizaciones nuevas o las organizaciones anteriores que nunca tenían habilitadas las notificaciones de correo no deseado del usuario final en directivas contra correo no deseado, no tendrá la directiva de cuarentena denominada NotificationEnabledPolicy. La forma de activar las notificaciones de cuarentena es crear y usar directivas de cuarentena personalizadas en las que se activen las notificaciones de cuarentena.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -105,6 +121,9 @@ Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Def
 
 5. En la **página Notificación de correo no** deseado del usuario final, seleccione **Habilitar** para habilitar las notificaciones de cuarentena (anteriormente conocidas como notificaciones de correo no deseado del usuario final). Cuando termine, haga clic en **Siguiente**.
 
+   > [!NOTE]
+   > Como se explicó anteriormente, las directivas integradas (AdminOnlyAccessPolicy o DefaultFullAccessPolicy) no tienen notificaciones en cuarentena activadas y no puede modificar las directivas.
+
 6. En la **página Revisar directiva,** revisa la configuración. Puede seleccionar **Editar** en cada sección para modificar la configuración dentro de la sección. También puede hacer clic en **Volver atrás** o seleccionar la página específica del asistente.
 
    Cuando haya terminado, haga clic en **Enviar**.
@@ -122,12 +141,15 @@ Si prefiere usar PowerShell para crear directivas de cuarentena, conéctese a Ex
 
 Estos métodos se describen en las secciones siguientes.
 
+> [!NOTE]
+> El uso del parámetro _ESNEnabled_ y el valor para activar las notificaciones de cuarentena en la directiva es `$true` el mismo para ambos métodos. Si no usa este parámetro, las notificaciones de cuarentena se desactivarán.
+
 #### <a name="use-the-enduserquarantinepermissionsvalue-parameter"></a>Usar el parámetro EndUserQuarantinePermissionsValue
 
 Para crear una directiva de cuarentena mediante el _parámetro EndUserQuarantinePermissionsValue,_ use la siguiente sintaxis:
 
 ```powershell
-New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 to 236>
+New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 to 236> [-EsnEnabled $true]
 ```
 
 El _parámetro EndUserQuarantinePermissionsValue_ usa un valor decimal que se convierte a partir de un valor binario. El valor binario corresponde a los permisos de cuarentena de usuario final disponibles en un orden específico. Para cada permiso, el valor 1 es True y el valor 0 es False.
@@ -155,10 +177,10 @@ El orden y los valores necesarios para cada permiso individual en grupos de perm
 
 <sup>\*\*</sup> No establezca ambos valores en 1. Establezca uno en 1 y el otro en 0, o establezca ambos en 0.
 
-En este ejemplo se crea un nuevo nombre de directiva de cuarentena LimitedAccess que asigna los permisos de acceso limitado como se describe en la tabla anterior.
+En este ejemplo se crea una nueva directiva de cuarentena denominada LimitedAccess con notificaciones de cuarentena activadas que asigna los permisos de acceso limitado, tal como se describe en la tabla anterior.
 
 ```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106
+New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 -EsnEnabled $true
 ```
 
 Para los permisos personalizados, use la tabla anterior para obtener el valor binario que corresponde a los permisos que desea. Convierta el valor binario en un valor decimal y use el valor decimal para el parámetro _EndUserQuarantinePermissionsValue._
@@ -169,7 +191,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ne
 
 Para crear una directiva de cuarentena mediante el _parámetro EndUserQuarantinePermissionsValue,_ siga estos pasos:
 
-R. Almacene un objeto de permisos de cuarentena en una variable mediante el cmdlet **New-QuarantinePermissions.**
+A. Almacene un objeto de permisos de cuarentena en una variable mediante el cmdlet **New-QuarantinePermissions.**
 
 <p>
 
@@ -204,13 +226,13 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ne
 Después de crear y almacenar el objeto permissions en una variable, use la variable para el valor del parámetro _EndUserQuarantinePermission_ en el siguiente comando **New-QuarantinePolicy:**
 
 ```powershell
-New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName>
+New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName> [-EsnEnabled $true]
 ```
 
-En este ejemplo se crea una nueva directiva de cuarentena denominada LimitedAccess mediante el objeto permissions que se describió y `$LimitedAccess` creó en el paso anterior.
+En este ejemplo se crea una nueva directiva de cuarentena con notificaciones de cuarentena activadas con el nombre LimitedAccess mediante el objeto permissions que se describió y creó `$LimitedAccess` en el paso anterior.
 
 ```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess
+New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess -EsnEnabled $true
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
@@ -225,17 +247,19 @@ En _las características de_ protección admitidas que ponen en cuarentena los m
 
 |Característica|¿Se admiten directivas de cuarentena?|Directivas de cuarentena predeterminadas usadas|
 |---|:---:|---|
-|[Directivas contra correo no deseado:](configure-your-spam-filter-policies.md) <ul><li>**Correo no deseado** (_SpamAction_)</li><li>**Correo no deseado de elevada** confianza (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de elevada confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul>|
-|Directivas de protección contra phishing: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>Protección de suplantación:<ul><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li><li>DefaultFullAccessPolicy (acceso completo)</li></ul></li></ul>|
+|[Directivas contra correo no deseado:](configure-your-spam-filter-policies.md) <ul><li>**Correo no deseado** (_SpamAction_)</li><li>**Correo no deseado de elevada** confianza (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de elevada confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li></ul>|
+|Directivas de protección contra phishing: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>Protección de suplantación:<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li></ul></li></ul>|
 |[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
-|[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
+|[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>N/D</li></ul>|
 |[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|N/D|
 |
+
+<sup>\*</sup> Como [se describió anteriormente en este artículo,](#full-access-permissions-and-quarantine-notifications)su organización podría usar NotificationEnabledPolicy en lugar de DefaultFullAccessPolicy. La única diferencia entre estas dos directivas de cuarentena es que las notificaciones de cuarentena se activarán en NotificationEnabledPolicy y se desactivarán en DefaultFullAccessPolicy.
 
 Las directivas de cuarentena predeterminadas, los grupos de permisos preestablecidos y los permisos se describen al [principio de este artículo](#quarantine-policies) y más adelante en este [artículo](#preset-permissions-groups).
 
 > [!NOTE]
-> Si está satisfecho con los permisos predeterminados del usuario final proporcionados por las directivas de cuarentena predeterminadas, no necesita hacer nada. Si desea agregar o quitar funcionalidades de usuario final (los botones disponibles) en notificaciones de cuarentena o en detalles de mensajes en cuarentena, puede asignar una directiva de cuarentena diferente a la acción de cuarentena.
+> Si está satisfecho con los permisos predeterminados del usuario final y las notificaciones de cuarentena que proporcionan (o no se proporcionan) las directivas de cuarentena predeterminadas, no necesita hacer nada. Si desea agregar o quitar funcionalidades de usuario final (los botones disponibles) para los mensajes en cuarentena del usuario, o habilitar las notificaciones de cuarentena y agregar o quitar las mismas capacidades en las notificaciones de cuarentena, puede asignar una directiva de cuarentena diferente a la acción de cuarentena.
 
 ## <a name="assign-quarantine-policies-in-supported-polices-in-the-microsoft-365-defender-portal"></a>Asignar directivas de cuarentena en las directivas admitidas en el portal Microsoft 365 Defender web
 
@@ -511,7 +535,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 ## <a name="configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal"></a>Configurar las opciones de notificación de cuarentena global en el portal de Microsoft 365 Defender web
 
-La configuración global de las directivas de cuarentena le permite personalizar las notificaciones de cuarentena que se envían a los destinatarios de los mensajes en cuarentena. Para obtener más información acerca de estas notificaciones, vea [Quarantine notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+La configuración global de las directivas de cuarentena le permite personalizar las notificaciones de cuarentena que se envían a los destinatarios de mensajes en cuarentena si las notificaciones de cuarentena están activadas en la directiva de cuarentena. Para obtener más información acerca de estas notificaciones, vea [Quarantine notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** sección Directivas de amenazas Sección Directivas de cuarentena y, a continuación, \>  \>  \>  seleccione Directivas **de cuarentena**.
 
@@ -585,6 +609,8 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ## <a name="modify-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Modificar directivas de cuarentena en el portal Microsoft 365 Defender web
 
+No puede modificar las directivas de cuarentena integradas denominadas AdminOnlyAccessPolicy o DefaultFullAccessPolicy. Puede modificar la directiva integrada denominada NotificationEnabledPolicy ([si la tiene](#full-access-permissions-and-quarantine-notifications)) y las directivas de cuarentena personalizadas.
+
 1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** sección Directivas de amenazas Sección Directivas de cuarentena y, a continuación, \>  \>  \>  seleccione Directivas **de cuarentena**.
 
 2. En la **página Directivas de** cuarentena, seleccione la directiva haciendo clic en el nombre.
@@ -613,11 +639,11 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 **Notas**:
 
-- No puede quitar directivas de cuarentena integradas.
-- Antes de quitar una directiva de cuarentena personalizada, compruebe que no se está utilizando. Por ejemplo, ejecute el siguiente comando en PowerShell:
+- No puede quitar las directivas de cuarentena integradas denominadas AdminOnlyAccessPolicy o DefaultFullAccessPolicy. Puede quitar la directiva integrada denominada NotificationEnabledPolicy ([si la tiene](#full-access-permissions-and-quarantine-notifications)) y las directivas de cuarentena personalizadas.
+- Antes de quitar una directiva de cuarentena, compruebe que no se está utilizando. Por ejemplo, ejecute el siguiente comando en PowerShell:
 
   ```powershell
-  Get-HostedContentFilterPolicy | Format-List Name,*QuarantineTag; Get-AntiPhishPolicy | Format-List Name,*QuarantineTag; Get-MalwareFilterPolicy | Format-List Name,QuarantineTag; Get-SafeAttachmentPolicy | Format-List Name,QuarantineTag
+  Write-Output -InputObject "Anti-spam policies","----------------------";Get-HostedContentFilterPolicy | Format-List Name,*QuarantineTag; Write-Output -InputObject "Anti-phishing policies","----------------------";Get-AntiPhishPolicy | Format-List Name,*QuarantineTag; Write-Output -InputObject "Anti-malware policies","----------------------";Get-MalwareFilterPolicy | Format-List Name,QuarantineTag; Write-Output -InputObject "Safe Attachments policies","---------------------------";Get-SafeAttachmentPolicy | Format-List Name,QuarantineTag
   ```
 
   Si se usa la directiva de cuarentena, [reemplace la directiva](#step-2-assign-a-quarantine-policy-to-supported-features) de cuarentena asignada antes de quitarla.

@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 73f477e63d777a2de68a8ee06dcd6edd31024db7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ca8282c70f6fd831ae4859749078701b97014e13
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207564"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724445"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la posición de seguridad con Puntuación segura de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en https://security.microsoft.com/securescore el portal de Microsoft 365 Defender [.](overview-security-center.md)
+La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en https://security.microsoft.com/securescore el portal de Microsoft 365 Defender [.](microsoft-365-defender.md)
 
 Para ayudarle a encontrar la información que necesita más rápidamente, las acciones de mejora de Microsoft se organizan en grupos:
 

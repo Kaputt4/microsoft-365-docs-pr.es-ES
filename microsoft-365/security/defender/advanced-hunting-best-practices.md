@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 44f7ebba62f4c21ab3ad4cb55f0ca70302857d33
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 171364d447b2b160f40888b4b6132a7f1630391b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206702"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705368"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Prácticas recomendadas para la consulta de búsqueda avanzada
 
@@ -33,7 +31,7 @@ ms.locfileid: "60206702"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Aplique estas recomendaciones para obtener resultados más rápido y evitar tiempos de espera mientras ejecuta consultas complejas. Para obtener más información sobre cómo mejorar el rendimiento de las consultas, vea [procedimientos recomendados de consulta de Kusto](/azure/kusto/query/best-practices).
 

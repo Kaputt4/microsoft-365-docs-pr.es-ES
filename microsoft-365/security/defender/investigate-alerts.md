@@ -20,19 +20,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 92542fdeebd5e6bbfebd075b178a0c22b08f186e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 3126523fd68afba29e3401533f7de2313f7df65b
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587766"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724768"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Las alertas son la base de todos los incidentes e indican la aparición de eventos malintencionados o sospechosos en su entorno. Las alertas suelen formar parte de un ataque más amplio y proporcionan pistas sobre un incidente.
 
@@ -100,7 +100,7 @@ Una página de alerta se compone de estas secciones:
 A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver las acciones disponibles, como abrir la página de alerta o vincular la alerta a otro incidente.
 
 ### <a name="alert-sources"></a>Orígenes de alertas
-Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft Cloud App Security. Es posible que observe alertas con caracteres anteponer en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alerta en función del carácter anteponer a la alerta.
+Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y el complemento de gobierno de aplicaciones para Microsoft Cloud App Security. Es posible que observe alertas con caracteres anteponer en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alerta en función del carácter anteponer a la alerta.
 
 > [!NOTE]
 > - Los GUID antediados son específicos solo para experiencias unificadas, como la cola de alertas unificadas, la página de alertas unificadas, la investigación unificada y el incidente unificado.<br>
@@ -109,7 +109,7 @@ Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defende
 
 Origen de alertas | Carácter anteponer 
 :---|:---
-Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> 
 Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
@@ -171,6 +171,32 @@ La lista de acciones adicionales depende del tipo de alerta.
 Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al  panel Administrar alerta de la alerta y marque el estado de la alerta como Resuelto y clasifique como alerta **False** o **Alerta True**. Para las alertas true, especifique el tipo de amenaza de la alerta en el **campo Determinación.**
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
+
+## <a name="use-power-automate-to-triage-alerts"></a>Usar Power Automate para triage alerts
+
+Los equipos de operaciones de seguridad modernas (SecOps) necesitan automatización para funcionar eficazmente. Para centrarse en la búsqueda e investigación de amenazas reales, los equipos de SecOps usan Power Automate para obtener información sobre la lista de alertas y eliminar las que no son amenazas.  
+
+### <a name="criteria-for-resolving-alerts"></a>Criterios para resolver alertas
+
+- El usuario tiene el mensaje de fuera de la oficina activado
+
+- El usuario no está etiquetado como de alto riesgo
+
+Si ambos son true, SecOps marca la alerta como viaje legítimo y la resuelve. Una notificación se publica en Microsoft Teams una vez resuelta la alerta. 
+
+### <a name="connect-power-automate-to-microsoft-cloud-app-security"></a>Conectar Power Automate para Microsoft Cloud App Security
+
+Para crear la automatización, necesitarás un token de API antes de conectarte Power Automate a Microsoft Cloud App Security. 
+
+1. Haga **clic Configuración**, seleccione Extensiones de **seguridad** y, a continuación, haga clic en **Agregar token** en la pestaña Tokens de **API.** 
+
+2. Proporcione un nombre para el token y, a continuación, haga clic **en Generar**. Guarde el token como lo necesitará más adelante.
+
+### <a name="create-an-automated-flow"></a>Crear un flujo automatizado
+
+Para ver el proceso detallado paso a paso, vea el vídeo [aquí](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn). 
+
+En este vídeo también se describe cómo conectar la automatización de energía a Cloud App Security. 
 
 ## <a name="next-steps"></a>Siguientes pasos
 

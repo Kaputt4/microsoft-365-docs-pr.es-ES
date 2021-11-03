@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f472b42a5ce967e67c4b4cbe3511e493ac86d42c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c2482c83eef315c390e2748e371ddf26dcb3c012
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208474"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705356"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -33,7 +31,7 @@ ms.locfileid: "60208474"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
@@ -43,7 +41,7 @@ Usa la función de las consultas de búsqueda avanzadas para obtener rápidament
 
 Esta función devuelve una tabla con las siguientes columnas:
 
-| Column | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `IP` | string | Dirección IP  |
 | `DeviceId` | string | Identificador único del dispositivo en el servicio |
@@ -62,7 +60,7 @@ Esta función se invoca como parte de una consulta.
 - **x**: el primer parámetro suele ser ya una columna de la consulta. En este caso, es la columna denominada , la dirección IP para la que desea ver una lista de dispositivos que se le han `IP` asignado. Debe ser una dirección IP local. No se admiten direcciones IP externas.
 - **y**— Un segundo parámetro opcional es el , que indica a la función que obtenga los `Timestamp` dispositivos asignados más recientes a partir de una hora específica. Si no se especifica, la función devuelve los registros disponibles más recientes.
 
-## <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo:
 
 
 ### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Obtener los dispositivos más recientes a los que se han asignado direcciones IP específicas

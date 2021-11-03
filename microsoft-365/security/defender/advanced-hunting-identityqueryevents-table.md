@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 58809ea13b725a7ee7aa9b4098d221b02fe6d35c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ab77bc9e18c3e1ee2f67b2d891ea408bf0b58421
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159131"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704262"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -33,7 +31,7 @@ ms.locfileid: "60159131"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La tabla del esquema de búsqueda avanzada contiene información sobre las consultas realizadas en objetos de Active Directory, como usuarios, grupos, dispositivos `IdentityQueryEvents` y dominios. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
@@ -47,20 +45,20 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
 | `Application` | string | Aplicación que realizó la acción grabada |
-| `QueryType` | string | Tipo de consulta, como QueryGroup, QueryUser o EnumerateUsers |
-| `QueryTarget` | string | Nombre del usuario, grupo, dispositivo, dominio o cualquier otro tipo de entidad que se está consultando |
-| `Query` | string | Cadena usada para ejecutar la consulta |
-| `Protocol` | string | Protocolo usado durante la comunicación |
+| `QueryType` | cadena | Tipo de consulta, como QueryGroup, QueryUser o EnumerateUsers |
+| `QueryTarget` | cadena | Nombre del usuario, grupo, dispositivo, dominio o cualquier otro tipo de entidad que se está consultando |
+| `Query` | cadena | Cadena usada para ejecutar la consulta |
+| `Protocol` | cadena | Protocolo usado durante la comunicación |
 | `AccountName` | string | Nombre de usuario de la cuenta |
-| `AccountDomain` | string | Dominio de la cuenta |
-| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
-| `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
-| `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `DeviceName` | string | Nombre de dominio completo (FQDN) del extremo |
-| `IPAddress` | string | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
-| `Port` | string | Puerto TCP usado durante la comunicación |
-| `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `AccountDomain` | cadena | Dominio de la cuenta |
+| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
+| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
+| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure AD |
+| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del extremo |
+| `IPAddress` | cadena | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
+| `Port` | cadena | Puerto TCP usado durante la comunicación |
+| `DestinationDeviceName` | cadena | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
 | `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
 | `DestinationPort` | string | Puerto de destino de comunicaciones de red relacionadas |
 | `TargetDeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
@@ -68,7 +66,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `TargetAccountDisplayName` | string | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
 | `Location` | string | Ciudad, país u otra ubicación geográfica asociada al evento |
 | `ReportId` | largo | Identificador único del evento |
-| `AdditionalFields` | string | Información adicional sobre la entidad o el evento |
+| `AdditionalFields` | cadena | Información adicional sobre la entidad o el evento |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

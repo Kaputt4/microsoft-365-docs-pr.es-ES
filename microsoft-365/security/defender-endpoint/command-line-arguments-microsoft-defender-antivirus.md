@@ -16,12 +16,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f377126eb56291f6ea0c43502f42916f8d64adee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98831bfff3d38d111c66d16ba150261f8ed148e8
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213126"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702182"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurar y administrar Antivirus de Microsoft Defender con la mpcmdrun.exe de línea de comandos
 
@@ -32,7 +32,7 @@ ms.locfileid: "60213126"
 Puede realizar varias funciones en Antivirus de Microsoft Defender con la herramienta de línea de comandos dedicada **mpcmdrun.exe**. Esta utilidad es útil cuando se desea automatizar Antivirus de Microsoft Defender tareas. Puede encontrar la utilidad en `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Ejecutarlo desde un símbolo del sistema.
 
 > [!TIP]
-> Es posible que deba abrir una versión de nivel de administrador del símbolo del sistema. Cuando busque el símbolo **del sistema en** el menú Inicio, elija Ejecutar como **administrador**. Si está ejecutando una versión actualizada de Microsoft Defender Platform, ejecute `MpCmdRun` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` . Para obtener más información acerca de la plataforma antimalware, [vea Antivirus de Microsoft Defender actualizaciones y líneas base](manage-updates-baselines-microsoft-defender-antivirus.md).
+> Es posible que deba abrir una versión de nivel de administrador del símbolo del sistema. Cuando busque el símbolo **del sistema en** el menú Inicio, elija Ejecutar como **administrador**. Si está ejecutando una versión actualizada de la plataforma antimalware de Microsoft Defender, ejecute `MpCmdRun` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` . Para obtener más información acerca de la plataforma antimalware, [vea Antivirus de Microsoft Defender actualizaciones y líneas base](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 La utilidad MpCmdRun usa la siguiente sintaxis:
 
@@ -52,7 +52,7 @@ En nuestro ejemplo, la utilidad MpCmdRun inicia un examen antivirus completo en 
 
 |Comando|Descripción|
 |---|---|
-|`-?`**o** `-h`|Muestra todas las opciones disponibles para la herramienta MpCmdRun|
+|`-?` **o** `-h`|Muestra todas las opciones disponibles para la herramienta MpCmdRun|
 |`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Busca software malintencionado. Los valores **de ScanType** son:<p>**0** Valor predeterminado, según la configuración<p>**1** Examen rápido<p>**2** Examen completo<p>**3** Examen personalizado de archivos y directorios.<p>CpuThrottling se ejecuta según las configuraciones de directivas|
 |`-Trace [-Grouping #] [-Level #]`|Inicia el seguimiento de diagnóstico|
 |`-GetFiles [-SupportLogLocation <path>]`|Recopila información de soporte técnico. Vea '[collecting diagnostic data](collect-diagnostic-data.md)'|

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e421f29ec1723ad724c64991e67bd0da31bb35b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 36662f61c27019046780ce1f7b5290d280eba7fe
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202494"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704080"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Cómo funciona la investigación automatizada y la respuesta en Microsoft Defender para Office 365
 
@@ -77,7 +77,7 @@ La corrección es la fase final del libro de juegos. Durante esta fase, se toman
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Ejemplo: un administrador de seguridad desencadena una investigación desde el Explorador de amenazas
 
-Además de las investigaciones automatizadas desencadenadas por una alerta, el equipo de operaciones de seguridad de la organización puede desencadenar una investigación automatizada desde una vista en el Explorador [de amenazas.](threat-explorer.md)  Esta investigación también crea una alerta, para que los incidentes de Microsoft Defender y las herramientas SIEM externas puedan ver que esta investigación se desencadenó.
+Además de las investigaciones automatizadas desencadenadas por una alerta, el equipo de operaciones de seguridad de la organización puede desencadenar una investigación automatizada desde una vista en el Explorador [de amenazas.](threat-explorer.md)  Esta investigación también crea una alerta, de modo que Microsoft 365 Defender incidentes y herramientas SIEM externas puedan ver que esta investigación se desencadenó.
 
 Por ejemplo, supongamos que está usando la **vista Malware** en el Explorador. Con las pestañas debajo del gráfico, seleccione la **pestaña Correo** electrónico. Si selecciona uno o más elementos de la lista, se activa el **botón +** Acciones.
 
@@ -95,7 +95,7 @@ Las funcionalidades de AIR en Microsoft Defender para Office 365 [incluyen infor
 
 Por ejemplo, recientemente, una organización estableció una forma de que su equipo de operaciones de seguridad vea alertas de suplantación de identidad notificadas por el usuario que air ya ha procesado. Su solución integra alertas relevantes con el servidor SIEM de la organización y su sistema de administración de casos. La solución reduce en gran medida el número de falsos positivos para que su equipo de operaciones de seguridad pueda centrar su tiempo y esfuerzo en amenazas reales. Para obtener más información sobre esta solución personalizada, vea el blog tech Community: Mejorar la eficacia de su SOC con Microsoft Defender para Office 365 y la API de administración [de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Introducción al uso de AIR](office-365-air.md)
 - [Ver acciones de corrección pendientes o completadas](air-review-approve-pending-completed-actions.md)

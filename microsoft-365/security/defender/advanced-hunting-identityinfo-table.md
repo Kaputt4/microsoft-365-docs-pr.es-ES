@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3ca15e29d18e910377a797bec4c78109d7509ef4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b961990d7826a7e1d58586fcc5bf2e016fa5d37
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207636"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704306"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -33,7 +31,7 @@ ms.locfileid: "60207636"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La tabla del esquema de búsqueda avanzada contiene información sobre las cuentas de usuario obtenidas de varios `IdentityInfo` servicios, incluidos [](advanced-hunting-overview.md) Azure Active Directory. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
@@ -45,21 +43,21 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
-| `OnPremSid` | string | Identificador de seguridad local (SID) de la cuenta |
+| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
+| `OnPremSid` | cadena | Identificador de seguridad local (SID) de la cuenta |
 | `CloudSid` | string | Identificador de seguridad en la nube de la cuenta |
-| `GivenName` | string | Nombre o nombre del usuario de la cuenta |
-| `Surname` | string | Apellidos, apellidos o apellidos del usuario de la cuenta |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `Department` | string | Nombre del departamento al que pertenece el usuario de la cuenta |
+| `GivenName` | cadena | Nombre o nombre del usuario de la cuenta |
+| `Surname` | cadena | Apellidos, apellidos o apellidos del usuario de la cuenta |
+| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `Department` | cadena | Nombre del departamento al que pertenece el usuario de la cuenta |
 | `JobTitle` | string | Título del trabajo del usuario de la cuenta |
 | `AccountName` | string | Nombre de usuario de la cuenta |
-| `AccountDomain` | string | Dominio de la cuenta |
-| `EmailAddress` | string | Dirección SMTP de la cuenta |
-| `SipProxyAddress` | string | Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
-| `City` | string | Ciudad donde se encuentra el usuario de la cuenta |
-| `Country` | string | País o región donde se encuentra el usuario de la cuenta |
-| `IsAccountEnabled` | boolean | Indica si la cuenta está habilitada o no |
+| `AccountDomain` | cadena | Dominio de la cuenta |
+| `EmailAddress` | cadena | Dirección SMTP de la cuenta |
+| `SipProxyAddress` | cadena | Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
+| `City` | cadena | Ciudad donde se encuentra el usuario de la cuenta |
+| `Country` | cadena | País o región donde se encuentra el usuario de la cuenta |
+| `IsAccountEnabled` | booleano | Indica si la cuenta está habilitada o no |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

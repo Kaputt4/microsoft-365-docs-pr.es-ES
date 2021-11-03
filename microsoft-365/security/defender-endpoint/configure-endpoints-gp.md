@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: d0f97dcbde929c7661fd3bf3a2aba8eb9f69c3c1
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: fd6453c245a5d7320518c2dc500ed4718568857c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239953"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703266"
 ---
-# <a name="onboard-windows-devices-using-group-policy"></a>Incorporación Windows dispositivos con directiva de grupo 
+# <a name="onboard-windows-devices-using-group-policy"></a>Incorporar dispositivos Windows mediante directiva de grupo 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "60239953"
 > Para Windows Server 2019 y Windows Server 2022, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
 
 > [!NOTE]
-> Si usa la nueva solución unificada de Microsoft Defender para endpoints para Windows Server 2012 R2 y 2016, asegúrese de usar los archivos ADMX más recientes del almacén central para obtener acceso a las opciones de directiva correctas de Microsoft Defender. Consulta [Cómo crear y administrar la](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Tienda central para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**. 
+> Si usa la nueva solución unificada de Microsoft Defender para endpoints para Windows Server 2012 R2 y 2016, asegúrese de usar los archivos ADMX más recientes del almacén central para obtener acceso a las opciones correctas de directiva de Microsoft Defender para puntos de conexión. Consulta [Cómo crear y administrar la](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Tienda central para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**. 
 
 Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
@@ -154,7 +154,7 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 Policy|Setting
 ---|---
-Desactivar la protección en tiempo real|Deshabilitada
+Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
 Examinar todos los archivos y datos adjuntos descargados|Habilitado
 Supervisar la actividad de archivos y programas en el equipo|Habilitado
@@ -248,7 +248,7 @@ Con la directiva de grupo no hay una opción para supervisar la implementación 
 
 ## <a name="setup-defender-av-policies"></a>Directivas antivirus de Setup Defender
 
-Crea una nueva directiva de grupo o agrupa esta configuración con las otras directivas. Esto depende del entorno de los clientes y del modo en que les gustaría implantar el servicio al dirigirse a distintas OU (unidades organizativas).
+Crea una nueva directiva de grupo o agrupa esta configuración con las otras directivas. Esto depende del entorno de los clientes y de cómo les gustaría realizar el servicio al dirigirse a diferentes unidades organizativas (UNIDADES organizativas).
 
 1. Después de elegir el GP o crear uno nuevo, edite el GP.
 
@@ -272,7 +272,7 @@ Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** adminis
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurar la supervisión de la actividad de archivos salientes entrantes.":::
 
-### <a name="configure-windows-defender-smart-screen-settings"></a>Configurar Windows Defender de pantalla inteligente
+### <a name="configure-windows-defender-smartscreen-settings"></a>Configurar Windows Defender smartscreen
 
 1. Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \> **Windows Defender** \> **SmartScreen** \> **Explorer**.
 
@@ -320,9 +320,9 @@ Al configurar la directiva de nivel de protección en la nube en Antivirus de Mi
 :::image type="content" source="images/cloud-protection-level.png" alt-text="nivel de protección de la nube config.":::
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
-- [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)
+- [Incorporar dispositivos Windows mediante Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
+- [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
 - [Ejecutar una prueba de detección en un Microsoft Defender recién incorporado para dispositivos de punto de conexión](run-detection-test.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

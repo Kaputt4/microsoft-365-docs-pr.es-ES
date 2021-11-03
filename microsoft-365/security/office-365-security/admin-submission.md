@@ -18,12 +18,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c41f8d06755e5d71143bc94090742079757be4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76eb0f56ca5cc5f4554a03fa3e11bbc6f9f684e0
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154535"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60705062"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft
 
@@ -59,6 +59,11 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 - Los administradores pueden enviar mensajes tan antiguos como 30 días si aún están disponibles en el buzón y no purgados por el usuario u otro administrador.
 
+- Los envíos de administradores se limitan a las siguientes tasas:
+  - Envíos máximos en un período de 15 minutos: 150 envíos
+  - Mismos envíos en un período de 24 horas: 3 envíos
+  - Mismos envíos en un período de 15 minutos: 1 envíos
+  
 - Para obtener más información acerca de cómo los usuarios pueden enviar mensajes y archivos a Microsoft, vea [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Informar de contenido sospechoso a Microsoft
@@ -170,7 +175,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
    - Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los siguientes valores de la lista desplegable:
      - **Ninguna**
-     - **Type**
+     - **Tipo**
      - **Motivo**
      - **Estado**
      - **Volver a examinar el resultado**

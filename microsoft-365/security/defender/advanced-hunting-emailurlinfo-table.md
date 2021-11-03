@@ -15,17 +15,15 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b084ecb42a13c35b10aeb73655c614a7b56754b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51182f87eae4a26153b08c934c3f77e0164f4b8b
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206678"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702066"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -33,7 +31,7 @@ ms.locfileid: "60206678"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La tabla del esquema de búsqueda avanzada contiene información sobre las direcciones URL de los correos electrónicos y los datos adjuntos procesados por `EmailUrlInfo` Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla. 
 
@@ -44,7 +42,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
 | `Url` | cadena | Dirección URL completa en el asunto, el cuerpo o en los datos adjuntos del mensaje de correo electrónico |
-| `UrlDomain` | string | Nombre de dominio o nombre de host de la dirección URL |
+| `UrlDomain` | cadena | Nombre de dominio o nombre de host de la dirección URL |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
 
 ## <a name="related-topics"></a>Temas relacionados

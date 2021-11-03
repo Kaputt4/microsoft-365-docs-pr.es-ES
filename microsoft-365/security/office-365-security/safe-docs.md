@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre Caja fuerte documentos en Microsoft 365 E5 o Seguridad de Microsoft 365 E5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd1bb71bee6a123ae698f1178e62a521409d4103
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 66093240f6ea9137bb9af361bfabc2598676e390
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180715"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703086"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -61,7 +61,7 @@ Los usuarios no necesitan que Defender for Endpoint esté instalado en sus dispo
 
   > [!NOTE]
   >
-  > - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 la cual proporciona a los usuarios los permisos necesarios _y_ para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
@@ -69,7 +69,7 @@ Los usuarios no necesitan que Defender for Endpoint esté instalado en sus dispo
 
 Para mantenerte protegido, Caja fuerte documentos envía archivos a la nube de [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para su análisis. Los detalles sobre cómo Administra Microsoft Defender para Endpoint sus datos se pueden encontrar aquí: Microsoft Defender para el almacenamiento de datos de punto [de conexión y privacidad.](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 
-Los archivos enviados por Caja fuerte documentos no se conservan en Defender más allá del tiempo necesario para el análisis (normalmente, menos de 24 horas).
+Los archivos enviados por Caja fuerte documentos no se conservan en Defender for Endpoint más allá del tiempo necesario para el análisis (normalmente, menos de 24 horas).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>Usar el portal Microsoft 365 Defender para configurar Caja fuerte documentos
 
@@ -109,7 +109,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 Si desea permitir o bloquear selectivamente el acceso a la característica Caja fuerte documentos, siga estos pasos:
 
 1. Active documentos Caja fuerte en el portal de Microsoft 365 Defender o Exchange Online PowerShell como se describe anteriormente en este artículo.
-2. Use Azure AD PowerShell para deshabilitar documentos Caja fuerte para usuarios específicos, como se describe en Deshabilitar servicios de Microsoft 365 específicos para usuarios específicos para [un plan de licencias específico.](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)
+2. Use Azure AD PowerShell para deshabilitar documentos Caja fuerte para usuarios específicos, como se describe en Deshabilitar servicios de Microsoft 365 específicos para usuarios específicos para un [plan de licencias específico.](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)
 
   El nombre del plan de servicio que se va a deshabilitar en PowerShell es **SAFEDOCS**.
 

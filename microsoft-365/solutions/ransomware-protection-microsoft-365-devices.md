@@ -15,14 +15,14 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, ransomware operado por humanos, ransomware operado por personas, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología
+keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use Windows Intune como proveedor de MDA y MAM y características de seguridad de Windows 10 para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 1ca17604bba09e5df83252d3d65c60561f56e2d1
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: adbefb7ac8ec574a69bc59a67cab61cc69d00568
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444630"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60702216"
 ---
 # <a name="step-4-protect-devices"></a>Paso 4. Proteger dispositivos
 

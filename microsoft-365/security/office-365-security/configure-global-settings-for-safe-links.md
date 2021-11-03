@@ -18,12 +18,12 @@ ms.collection:
 description: Los administradores pueden aprender a ver y configurar la configuración global (la lista "Bloquear las siguientes direcciones URL" y la protección para aplicaciones de Office 365) para Caja fuerte Vínculos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc3906f2645c9bdc78caeb5c2535e1b851538982
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4386f0f1b6dee2b877790b3ae715d1fb1e5f535a
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199470"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701518"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurar la configuración global para Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -47,9 +47,9 @@ Sin embargo, Caja fuerte links también usa la siguiente configuración global q
 
 Puede configurar la configuración global de vínculos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 elegibles con buzones en Exchange Online; PowerShell de EOP independiente para sin buzones Exchange Online, pero con Microsoft Defender para Office 365 suscripciones de complementos).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- No hay ninguna directiva de vínculos Caja fuerte integrada o predeterminada, por lo que debe crear al  menos una directiva de vínculos de Caja fuerte para que la lista Bloquear las siguientes direcciones URL esté activa. Para obtener instrucciones, vea [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
+- Aunque no hay ninguna directiva de vínculos  Caja fuerte predeterminada, la directiva de seguridad predefinida de protección integrada proporciona protección de vínculos Caja fuerte a todos los destinatarios (usuarios que no están definidos en directivas de vínculos de Caja fuerte personalizadas). Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). También puede crear directivas de Caja fuerte para aplicar a usuarios, grupos o dominios específicos. Para obtener instrucciones, vea [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Caja fuerte vínculos,** use <https://security.microsoft.com/safelinksv2> .
 
@@ -63,7 +63,7 @@ Puede configurar la configuración global de vínculos de Caja fuerte en el port
 
   **Notas**:
 
-  - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para obtener los valores recomendados para la configuración global de Caja fuerte vínculos, vea [Caja fuerte configuración de vínculos](recommended-settings-for-eop-and-office365.md#safe-links-settings).

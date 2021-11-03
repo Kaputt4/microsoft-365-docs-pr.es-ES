@@ -1,14 +1,14 @@
 ---
 title: Portales de seguridad de Microsoft y centros de administración
 description: Busque el portal o el centro de administración de Microsoft adecuado para administrar varios servicios relacionados con la Microsoft 365 seguridad
-keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, Microsoft 365 Defender, Microsoft Defender for Endpoint, Centro de seguridad de Microsoft Defender, Microsoft Defender for Identity, Microsoft Defender for Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Cloud App Security, Azure AD, security & compliance center
+keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, Microsoft 365 Defender, Microsoft Defender for Endpoint, Centro de seguridad de Microsoft Defender, Microsoft Defender for Identity, Microsoft Defender for Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Cloud App Security , Azure AD, security & compliance center
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,18 +17,18 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 873753f1802fce9480c16d6df33092284156a820
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6543d2b5dee1b30bcd08e37c4d05499977fc7b40
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191446"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724361"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portales de seguridad de Microsoft y centros de administración
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Aunque [Microsoft 365 Defender portal](overview-security-center.md) es el nuevo hogar para supervisar y administrar la seguridad en sus identidades, datos, dispositivos y aplicaciones, tendrá que acceder a varios portales para determinadas tareas especializadas.
+Aunque [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal) es el nuevo hogar para supervisar y administrar la seguridad en sus identidades, datos, dispositivos y aplicaciones, tendrá que acceder a varios portales para determinadas tareas especializadas.
 
 > [!TIP] 
 > Para obtener acceso a varios portales relevantes Microsoft 365 Defender portal, seleccione **Más recursos** en el panel de navegación.
@@ -46,7 +46,7 @@ Los operadores y administradores de seguridad pueden ir a los siguientes portale
 | Portal de Azure Defender | Usar [Azure Defender para](/azure/security-center/security-center-intro) reforzar la posición de seguridad de los centros de datos y las cargas de trabajo híbridas en la nube | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Portal de Microsoft Defender for Identity | Identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas con señales de Active Directory con [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | portal de Cloud App Security | Use [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) para obtener una visibilidad enriquecida, un control sobre el viaje de datos y análisis sofisticados para identificar y combatir las ciberamenazas en los servicios en la nube | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
-| Portal de inteligencia de seguridad de Microsoft Defender | Obtener actualizaciones de inteligencia de seguridad para Microsoft Defender para endpoint, enviar ejemplos y explorar la enciclopedia de amenazas | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
+| Inteligencia de seguridad de Microsoft portal | Obtener actualizaciones de inteligencia de seguridad para Microsoft Defender para endpoint, enviar ejemplos y explorar la enciclopedia de amenazas | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## <a name="portals-for-other-workloads"></a>Portales para otras cargas de trabajo
 

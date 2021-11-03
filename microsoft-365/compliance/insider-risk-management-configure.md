@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c185878749b90ac8a21f146f8d283d97d7bcdab0
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 5e0367bf0cf5e180218237fab04a2011cda0abe9
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364187"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701582"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -77,7 +77,7 @@ Cada acción recomendada incluida en esta experiencia tiene cuatro atributos:
 
 Seleccione una recomendación de la lista para empezar a configurar la administración de riesgos de insider. Cada acción recomendada le guía a través de las actividades necesarias para la recomendación, incluidos los requisitos, qué esperar y el impacto de configurar la característica en su organización.   Cada acción recomendada se marca automáticamente como completa cuando se configura o deberá seleccionar manualmente la acción como completa cuando esté configurada.
 
-## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Paso 1: Habilitar permisos para la administración de riesgos de insider
+## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Paso 1 (obligatorio): habilitar permisos para la administración de riesgos de insider
 
 > [!IMPORTANT]
 > Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
@@ -118,7 +118,7 @@ Siga estos pasos para agregar usuarios a un grupo de roles de administración de
 
 7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **Cerrar** para completar los pasos.
 
-## <a name="step-2-enable-the-microsoft-365-audit-log-optional"></a>Paso 2: Habilitar el registro Microsoft 365 auditoría (opcional)
+## <a name="step-2-required-enable-the-microsoft-365-audit-log"></a>Paso 2 (obligatorio): habilitar el registro Microsoft 365 auditoría
 
 La administración de riesgos de Insider Microsoft 365 registros de auditoría para información del usuario y actividades identificadas en las directivas y las perspectivas de análisis. Los Microsoft 365 de auditoría son un resumen de todas las actividades de la organización y las directivas de administración de riesgos internas pueden usar estas actividades para generar información sobre directivas.
 
@@ -126,9 +126,9 @@ La auditoría está habilitada para Microsoft 365 organizaciones de forma predet
 
 Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del Microsoft 365 de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
 
-## <a name="step-3-enable-and-view-insider-risk-analytics-insights-optional"></a>Paso 3: Habilitar y ver información de análisis de riesgos insider (opcional)
+## <a name="step-3-optional-enable-and-view-insider-risk-analytics-insights"></a>Paso 3 (opcional): Habilitar y ver información de análisis de riesgos de insider
 
-El análisis de administración de riesgos de Insider le permite realizar una evaluación de los posibles riesgos de insider en su organización sin configurar directivas de riesgo de insider. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Esta evaluación también puede ayudarle a determinar las necesidades de licencias adicionales o la optimización futura de las directivas existentes. Los resultados del examen de análisis pueden tardar hasta 48 horas antes de que la información esté disponible como informes para su revisión. Para obtener más información sobre las perspectivas de análisis, consulte Configuración de administración de riesgos de [Insider: Analytics (versión preliminar)](insider-risk-management-settings.md#analytics-preview) y consulte el vídeo Análisis de administración de riesgos de [Insider](https://www.youtube.com/watch?v=5c0P5MCXNXk) para comprender cómo el análisis puede ayudar a acelerar la identificación de posibles riesgos de insider y ayudarle a tomar medidas rápidamente.
+El análisis de administración de riesgos de Insider le permite realizar una evaluación de los posibles riesgos de insider en su organización sin configurar directivas de riesgo de insider. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Esta evaluación también puede ayudarle a determinar las necesidades de licencias adicionales o la optimización futura de las directivas existentes. Los resultados del examen de análisis pueden tardar hasta 48 horas antes de que la información esté disponible como informes para su revisión. Para obtener más información sobre las perspectivas de análisis, consulte Configuración de administración de riesgos de [Insider: Analytics (versión preliminar)](insider-risk-management-settings.md#analytics) y consulte el vídeo Análisis de administración de riesgos de [Insider](https://www.youtube.com/watch?v=5c0P5MCXNXk) para comprender cómo el análisis puede ayudar a acelerar la identificación de posibles riesgos de insider y ayudarle a tomar medidas rápidamente.
 
 Para habilitar análisis de riesgos de *insider,* debe ser miembro del grupo de roles de administración global Insider Risk Management , *Insider Risk Management Admin* o Microsoft 365 Global *admin.*
 
@@ -140,7 +140,7 @@ Siga estos pasos para habilitar el análisis de riesgos de insider:
 
 Después de revisar las perspectivas de análisis, elija las directivas de riesgo de insider y configure los requisitos previos asociados que mejor se adapten a la estrategia de mitigación de riesgos internas de su organización.
 
-## <a name="step-4-configure-prerequisites-for-policies"></a>Paso 4: Configurar requisitos previos para directivas
+## <a name="step-4-required-configure-prerequisites-for-policies"></a>Paso 4 (obligatorio): configurar requisitos previos para directivas
 
 La mayoría de las directivas de administración de riesgos internas tienen requisitos previos que deben configurarse para que los indicadores de directiva generen alertas de actividad relevantes. Configure los requisitos previos adecuados en función de las directivas que planee configurar para su organización.
 
@@ -150,16 +150,28 @@ La administración de riesgos de Insider admite la importación de datos de usua
 
 El Microsoft 365 de recursos humanos es necesario al usar las siguientes plantillas de directiva:
 
+- Filtraciones de datos por parte de usuarios inconformes
 - Robo de datos de usuario de salida
+- Uso incorrecto de datos de pacientes generales
 - Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización
 - Infracciones de la directiva de seguridad por parte de usuarios inconformes
-- Filtraciones de datos por parte de usuarios inconformes
 
 Consulte el [artículo Configurar un](import-hr-data.md) conector para importar datos de RECURSOS humanos para obtener instrucciones paso a paso para configurar el conector de recursos humanos Microsoft 365 para su organización. Después de configurar el conector de recursos humanos, vuelva a estos pasos de configuración.
 
+### <a name="configure--a-healthcare-specific-data-connector"></a>Configurar un conector de datos específico de la salud
+
+La administración de riesgos de Insider admite la importación de datos de usuario y registro importados de terceros en sistemas de registro electrónico de registro médico (EMR) existentes. Los conectores de datos De Microsoft Healthcare y Épico le permiten extraer datos de actividad de su sistema DEA con archivos CSV, incluido el acceso incorrecto a registros de pacientes, actividades de volumen sospechosas y actividades de edición y exportación. Estos datos ayudan a impulsar los indicadores de alerta en las directivas de administración de riesgos internos y es una parte importante de la configuración de cobertura completa de la administración de riesgos en su organización.
+
+Si configura más de un conector Healthcare o Epic para su organización, la administración de riesgos de insider admite automáticamente las señales de eventos y actividades de todos los conectores Healthcare y Epic.
+El Microsoft 365 healthcare o el conector épico es necesario al usar las siguientes plantillas de directiva:
+
+- Uso incorrecto de datos de pacientes generales
+
+Consulte el artículo Configurar un conector para importar datos de atención médica o Configurar un conector para importar datos [de EHR](import-epic-data.md) épico para obtener instrucciones paso [a](import-healthcare-data.md) paso para configurar un conector específico para la salud para su organización. Después de configurar un conector, vuelva a estos pasos de configuración.
+
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurar directivas de prevención de pérdida de datos (DLP)
 
-La administración de riesgos de Insider admite el uso de directivas DLP para ayudar a identificar la exposición intencional o accidental de información confidencial a partes no deseadas para alertas DLP de nivel de gravedad alta. Al configurar una directiva de administración de riesgos de insider con cualquiera de las plantillas de pérdida **de** datos, debe asignar una directiva DLP específica a la directiva.
+La administración de riesgos de Insider admite el uso de directivas DLP para ayudar a identificar la exposición intencional o accidental de información confidencial a partes no deseadas para alertas DLP de nivel de gravedad alta. Al configurar una directiva de administración de riesgos insider con cualquiera de las plantillas de pérdida **de** datos, tiene la opción de asignar una directiva DLP específica a la directiva para este tipo de alertas.
 
 Las directivas DLP ayudan a identificar a los usuarios para activar la puntuación de riesgos en la administración de riesgos internas para alertas DLP de alta gravedad para información confidencial y son una parte importante de la configuración de la cobertura de administración de riesgos completa en su organización. Para obtener más información sobre la administración de riesgos de insider y las consideraciones de planeación y integración de directivas DLP, vea [Insider risk management policies](insider-risk-management-policies.md#general-data-leaks).
 
@@ -169,7 +181,7 @@ Las directivas DLP ayudan a identificar a los usuarios para activar la puntuaci�
 >- Comprenderá y configurará correctamente los usuarios del ámbito en las directivas de administración de riesgos de DLP e insider para producir la cobertura de directivas que espera.
 >- Asegúrese de que la configuración **de informes de** incidentes en la directiva DLP para la administración de riesgos insider usada con estas plantillas esté configurada para *alertas* de nivel de gravedad alta. Las alertas de administración de riesgos de Insider no se generarán a partir de directivas DLP con el campo **Informes** de incidentes establecido en *Bajo* o *Medio*.
 
-Se requiere una directiva DLP al usar las siguientes plantillas de directiva:
+Una directiva DLP es opcional cuando se usan las siguientes plantillas de directiva:
 
 - Filtraciones de datos generales
 - Filtraciones de datos por parte de usuarios prioritarios
@@ -204,7 +216,7 @@ Si crea directivas de infracción de seguridad, tendrá que configurar Microsoft
 
 Consulte el [artículo Configurar características avanzadas](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) en Defender para endpoint para obtener instrucciones paso a paso para configurar Defender for Endpoint para la integración de la administración de riesgos de insider. Después de configurar Microsoft Defender para endpoint, vuelve a estos pasos de configuración.
 
-## <a name="step-5-configure-insider-risk-settings"></a>Paso 5: Configurar las opciones de riesgo de insider
+## <a name="step-5-required-configure-insider-risk-settings"></a>Paso 5 (obligatorio): Configurar las opciones de riesgo de insider
 
 [La configuración de riesgos de Insider](insider-risk-management-settings.md) se aplica a todas las directivas de administración de riesgos de insider, independientemente de la plantilla que elija al crear una directiva. La configuración se ajusta con el control de la **Configuración de riesgos internos** que se encuentra en la parte superior de todas las pestañas de administración de riesgos internos. Estas opciones controlan la privacidad, los indicadores, la supervisión de períodos y las detecciones inteligentes.
 
@@ -223,7 +235,7 @@ Antes de configurar una directiva, defina las siguientes opciones de configuraci
     - [Umbrales de actividad de archivo inusual](insider-risk-management-settings.md#threshold-for-unusual-file-activity)
     - [Nivel de volumen de alerta](insider-risk-management-settings.md#alert-volume)
     - [Estado de alerta de Microsoft Defender para endpoint](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
-    - [Configuración de dominio](insider-risk-management-settings.md#domains-preview)
+    - [Configuración de dominio](insider-risk-management-settings.md#domains)
 6. En la **página Exportar alertas,** habilite la exportación de información de alertas de riesgo de insider mediante las API de administración Office 365 si es necesario.
 7. En la **página Grupos de usuarios prioritarios,** cree un grupo de usuarios de prioridad y agregue usuarios si no se crean en el paso **3**.
 8. En la **página Power Automate flujos,** configure un flujo de plantillas de flujo de riesgo interno o cree un nuevo flujo. Consulte el artículo Introducción a la configuración de administración de riesgos [insider](insider-risk-management-settings.md#power-automate-flows-preview) para obtener instrucciones paso a paso.
@@ -231,7 +243,7 @@ Antes de configurar una directiva, defina las siguientes opciones de configuraci
 10. En la **Microsoft Teams,** habilite la integración Microsoft Teams con la administración de riesgos de insider para crear automáticamente un equipo para la colaboración de casos o usuarios. Consulte el artículo Introducción a la configuración de administración de riesgos [insider](insider-risk-management-settings.md#microsoft-teams-preview) para obtener instrucciones paso a paso.
 11. Seleccione **Guardar para** habilitar esta configuración para las directivas de riesgo de insider.
 
-## <a name="step-6-create-an-insider-risk-management-policy"></a>Paso 6: Crear una directiva de administración de riesgos de insider
+## <a name="step-6-required-create-an-insider-risk-management-policy"></a>Paso 6 (obligatorio): crear una directiva de administración de riesgos de insider
 
 Las directivas de administración de riesgos internos incluyen usuarios asignados y definen los tipos de indicadores de riesgo que se configuran para las alertas. Para que las actividades puedan desencadenar alertas, es necesario configurar una directiva. Use el Asistente para directivas para crear nuevas directivas de administración de riesgos de insider.
 
@@ -257,7 +269,7 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 
 10. Seleccione **Siguiente** para continuar.
 
-11. Si ha seleccionado **Deseo especificar sitios de SharePoint, etiquetas de confidencialidad o tipos de información confidencial como contenido prioritario** en el paso anterior, verá las páginas de detalles de los *sitios de SharePoint*, *Tipos de información confidencial* y *Etiquetas de confidencialidad*. Use estas páginas detalladas para definir el SharePoint, los tipos de información confidencial y las etiquetas de confidencialidad para priorizar en la directiva.
+11. Si ha seleccionado Quiero especificar sitios de **SharePoint,** etiquetas de confidencialidad o tipos de información confidencial como contenido prioritario en el paso anterior, verá las páginas de detalles de sitios *SharePoint,* tipos de información confidencial y etiquetas de confidencialidad *.* Use estas páginas detalladas para definir el SharePoint, los tipos de información confidencial y las etiquetas de confidencialidad para priorizar en la directiva.
 
     - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo de información confidencial**: seleccione **Agregar tipo de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"Número de cuenta bancaria de EE. UU."* y *"Número de tarjeta de crédito"*.
@@ -267,20 +279,29 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
     >Los usuarios que configuran la directiva y seleccionan sitios de Share Point prioritarios pueden seleccionar SharePoint a los que tienen permiso de acceso. Si SharePoint sitios no están disponibles para la selección en la directiva por parte del usuario actual, otro usuario con los permisos necesarios puede seleccionar los sitios de la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
 
 12. Seleccione **Siguiente** para continuar.
-13. En la página **Indicadores y eventos desencadenantes**, verá los [indicadores](insider-risk-management-settings.md#indicators)que ha definido como disponibles en la página **Configuración de riesgos internos** > **Indicadores**. Si ha seleccionado una plantilla de *Filtración de datos* al principio del asistente, deberá seleccionar una directiva DLP de la lista desplegable de **directivas DLP** para activar los indicadores de activación de la directiva o seleccionar el evento desencadenante incorporado.
+13. Si ha seleccionado las plantillas *Pérdidas* generales de datos o Pérdidas de  datos por usuarios *prioritarios,* verá opciones en la página Desencadenadores de esta directiva para eventos de desencadenamiento personalizados e indicadores de directiva. Tiene la opción de seleccionar una directiva DLP o indicadores para desencadenar eventos que llevan a los usuarios asignados a la directiva en el ámbito para la puntuación de actividad. Si selecciona la opción Evento de activación de una directiva de prevención de pérdida de datos **(DLP),** debe seleccionar una directiva DLP en la lista desplegable directiva DLP para habilitar los indicadores desencadenantes de la directiva DLP para esta directiva de administración de riesgos de información interna. Si selecciona la opción Evento desencadenante de una actividad de **exfiltración,** debe seleccionar uno o varios de los indicadores enumerados para el evento de desencadenamiento de directivas.
+    >[!IMPORTANT]
+    >Si no puede seleccionar un indicador enumerado, es porque no están habilitados para su organización. Para que estén disponibles para seleccionar y asignar a la directiva, habilite los indicadores de la administración de riesgos de **Insider**  >  **Configuración**  >  **indicadores de directiva**.
+
+    Si ha seleccionado otras plantillas de directiva, no se admiten eventos de desencadenamiento personalizados. Se aplican los eventos de desencadenamiento de directivas integrados y seguirá pasando este paso al paso XX sin definir atributos de directiva.
+
+14. Seleccione **Siguiente** para continuar.
+15. Si ha seleccionado las plantillas *Pérdidas* de datos generales o *Pérdidas* de datos por usuarios prioritarios y ha seleccionado que el usuario realiza una actividad de exfiltración e indicadores **asociados,** puede elegir umbrales personalizados o predeterminados para los eventos desencadenantes del indicador que haya seleccionado. Elija usar **umbrales predeterminados (recomendados)** o **Usar umbrales personalizados para los eventos desencadenantes.**
+16. Seleccione **Siguiente** para continuar.
+17. Si ha seleccionado Usar umbrales personalizados para los eventos desencadenantes , para cada indicador de evento desencadenante que seleccionó en el paso 13, elija el nivel adecuado para generar el nivel deseado de **alertas** de actividad.
+18. Seleccione **Siguiente** para continuar.
+19. En la **página Indicadores de** directiva, verá los indicadores que ha definido como disponibles en la página Indicadores de configuración de riesgos [](insider-risk-management-settings.md#indicators) de **Insider.**  >   Seleccione los indicadores que desea aplicar a la directiva.
 
     > [!IMPORTANT]
     > Si los indicadores de esta página no se pueden seleccionar, tendrá que seleccionar los indicadores que desea habilitar para todas las directivas. Puede usar el botón **Habilitar indicadores** del asistente o seleccionar los indicadores en la página **Administración de riesgos internos** > **Configuración** > **Indicadores de directiva**.
 
-    Seleccione los indicadores que desea aplicar a la directiva. Si prefiere no usar la configuración del umbral de la directiva predeterminada para estos indicadores, desactive la opción **Usar umbrales predeterminados recomendados por Microsoft** y escriba los valores del umbral para cada indicador seleccionado.
+    Si ha seleccionado al menos un indicador de *Office* o *Dispositivo*, seleccione los **Impulsores de la puntuación de riesgo** según corresponda. Los impulsores de la puntuación de riesgo solo se aplican a los indicadores seleccionados.
+    Si ha seleccionado una plantilla de directiva de *Robo de datos* o *Filtración de datos*, seleccione uno o más métodos de **Detección de Secuencia** y un método de **Detección de filtración acumulada** para aplicar a la directiva.
 
-    - Si ha seleccionado al menos un indicador de *Office* o *Dispositivo*, seleccione los **Impulsores de la puntuación de riesgo** según corresponda. Los impulsores de la puntuación de riesgo solo se aplican a los indicadores seleccionados.
-    - Si ha seleccionado una plantilla de directiva de *Robo de datos* o *Filtración de datos*, seleccione uno o más métodos de **Detección de Secuencia** y un método de **Detección de filtración acumulada** para aplicar a la directiva.
-
-14. Seleccione **Siguiente** para continuar.
-15. En la página **Umbrales de los indicadores**, seleccione la opción de usar los umbrales de los indicadores predeterminados o de especificar umbrales personalizados para los indicadores individuales. Para cada indicador, elija el nivel adecuado para generar el nivel deseado de alertas de actividad.
-16. Seleccione **Siguiente** para continuar.
-17. En la página **Revisión**, revise la configuración que ha elegido para la directiva y cualquier sugerencia o advertencia sobre sus selecciones. Seleccione **Editar** para cambiar cualquiera de los valores de la directiva o seleccione **Enviar** para crear y activar la directiva.
+20. Seleccione **Siguiente** para continuar.
+21. En la página Decidir si se usan umbrales de indicadores predeterminados o **personalizados,** elija umbrales personalizados o predeterminados para los indicadores de directiva que haya seleccionado. Elija usar **umbrales predeterminados para todos los** indicadores o Especificar umbrales **personalizados** para los indicadores de directiva seleccionados. Si ha seleccionado Especificar umbrales personalizados, elija el nivel adecuado para generar el nivel deseado de alertas de actividad para cada indicador de directiva.
+22. Seleccione **Siguiente** para continuar.
+23. En la página **Revisión**, revise la configuración que ha elegido para la directiva y cualquier sugerencia o advertencia sobre sus selecciones. Seleccione **Editar** para cambiar cualquiera de los valores de la directiva o seleccione **Enviar** para crear y activar la directiva.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

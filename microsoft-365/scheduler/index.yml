@@ -27,6 +27,9 @@ additionalContent:
         - title: Use Scheduler para Microsoft 365
           summary: Obtenga información sobre cómo usar Scheduler para Microsoft 365.
           url: scheduler-using.md
-        - title: Preguntas más frecuentes para programador
-          summary: Obtenga información sobre las preguntas más frecuentes en el Programador Microsoft 365 y las respuestas a ellas.
+        - title: Programar reuniones periódicas dinámicas
+          summary: Obtenga más información sobre la programación de reuniones periódicas dinámicas.
+          url: scheduler-recurring-meetings.md
+        - title: Preguntas más frecuentes del programador
+          summary: Preguntas y respuestas más frecuentes en Programador para Microsoft 365.
           url: scheduler-faqs.md

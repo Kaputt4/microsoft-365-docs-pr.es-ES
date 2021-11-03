@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 5333b198413c25aed4b894721803c5fa4772b439
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 68670139062f4589d61d32521568b9bd00e5dc0f
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334695"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704748"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de comunicaciones en Microsoft 365
 
@@ -41,4 +41,4 @@ Siga estos pasos para configurar el cumplimiento de las comunicaciones para su o
 ## <a name="more-information-about-communication-compliance"></a>Más información sobre el cumplimiento de la comunicación
 
 - [Investigar y corregir alertas](communication-compliance-investigate-remediate.md)
-- [Caso práctico: Contoso configura rápidamente una directiva de idioma ofensivo para Microsoft Teams, Exchange y Yammer comunicaciones](communication-compliance-case-study.md)
+- [Caso práctico: Contoso configura rápidamente una directiva de contenido inadecuado para Microsoft Teams, Exchange y Yammer comunicaciones](communication-compliance-case-study.md)

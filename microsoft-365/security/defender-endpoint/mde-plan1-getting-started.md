@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f2fe77b6c1760ac4f25031dc78fbd5e0a259f0f8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9946482f9ce5ac268255acd43f7929710a8a9bbd
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212467"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724672"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)
 
@@ -76,8 +76,8 @@ La barra de navegación de la parte izquierda de la pantalla le permite moverse 
 | **Estado** | Incluye vínculos al **Centro de mensajes y estado** del **servicio.**  |
 | **Estado**  >  **Estado del servicio** | Navega a la página Estado del servicio en el Centro de administración de Microsoft 365. Esta página le permite ver el estado de mantenimiento en todos los servicios disponibles con las suscripciones de su organización.   |
 | **Estado**  >  **Centro de mensajes** | Navega al Centro de mensajes en el Centro de administración de Microsoft 365. El Centro de mensajes proporciona información sobre los cambios planeados. Cada mensaje describe lo que viene, cómo puede afectar a los usuarios y cómo administrar los cambios. |  
-| **Permisos & roles** | Permite conceder permisos para usar el portal Microsoft 365 Defender web. Los permisos se conceden a través de roles en Azure Active Directory (Azure AD). Seleccione un rol y aparecerá un panel desplegable. El menú desplegable contiene un vínculo a Azure AD donde puede agregar o quitar miembros de un grupo de roles. <br/><br/> Para obtener más información, vea [Manage portal access using role-based access control](rbac.md).  |
-| **Configuración** | Navega a la configuración general de su portal de Microsoft 365 Defender (enumerado como Centro de **seguridad)** y Defender para endpoint (enumerado **como Extremos**). <br/><br/> Para obtener más información, [vea Configuración](../defender/overview-security-center.md). |
+| **Permisos & roles** | Permite conceder permisos para usar el portal Microsoft 365 Defender web. Los permisos se conceden a través de roles Azure Active Directory (Azure AD). Seleccione un rol y aparecerá un panel desplegable. El menú desplegable contiene un vínculo a Azure AD donde puede agregar o quitar miembros de un grupo de roles. <br/><br/> Para obtener más información, vea [Manage portal access using role-based access control](rbac.md).  |
+| **Configuración** | Navega a la configuración general de su portal de Microsoft 365 Defender (enumerado como Centro de **seguridad)** y Defender para endpoint (enumerado **como Extremos**). <br/><br/> Para obtener más información, [vea Configuración](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
 | **Más recursos** | Muestra una lista de más portales y centros, como Azure Active Directory y el Centro de cumplimiento de Microsoft 365. <br/><br/> Para obtener más información, vea [Portales de seguridad de Microsoft y centros de administración](../defender/portals.md). |
 
 > [!TIP]
@@ -98,7 +98,7 @@ Usa las **pestañas**  Alertas, **Dispositivos** y Usuarios para ver más inform
 > [!TIP]
 > Para obtener más información sobre el uso de **la vista** Incidentes, vea [Administrar incidentes](manage-incidents.md).
 
-## <a name="manage-devices"></a>Administración de dispositivos
+## <a name="manage-devices"></a>Administrar dispositivos
 
 Para ver y administrar los dispositivos de la organización, en la barra de navegación, en **Extremos**, seleccione **Inventario de dispositivos**. Verás una lista de dispositivos como se muestra en la siguiente imagen:
 
@@ -168,7 +168,7 @@ Desplácese hacia abajo para ver todas las vistas del informe de protección web
 > [!TIP]
 > Para obtener más información, vea [Protección web](web-protection-overview.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Administrar Microsoft Defender para endpoint plan 1 (versión preliminar)](mde-p1-maintenance-operations.md)
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)

@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/01/2021
+ms.date: 11/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: db11cc6940a26efb03ef906d0ac09e52986969eb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3982f25f8c2397d59d90777f70354dca1fc0765f
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668017"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724756"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -82,25 +82,28 @@ Para obtener información sobre cómo actualizar o instalar la actualización de
 
 Todas nuestras actualizaciones contienen
 
-- mejoras en el rendimiento;
-- mejoras en la capacidad de servicio; y
-- mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
+- Mejoras en el rendimiento
+- Mejoras en la facilidad de servicio
+- Mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> Octubre-2021 (Plataforma: 4.18.xxxx.x| Motor: 1.1.18700.4)</summary>
+<summary> Octubre-2021 (Plataforma: 4.18.2110.6| Motor: 1.1.18700.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.353.3.0**<br/>
 &ensp;Publicado: **28 de octubre de 2021**<br/>
-&ensp;Plataforma: **4.18.xxxx.x**<br/>
+&ensp;Plataforma: **4.18.2110.6**<br/>
 &ensp;Motor: **1.1.18700.4**<br/>
 &ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
 
 Versión del motor: 1.1.18700.4 Versión de actualización de inteligencia de seguridad: 1.353.3.0
 
 ### <a name="whats-new"></a>Novedades
-- Mejoras en la cobertura de tráfico de red FTP
-- Corrección para reducir el uso de CPU de Microsoft Defender en el servidor exchange con Windows Server 2016
-- Mejoras en la resistencia de manipulación del servicio defender
+
+- Mejoras en la cobertura de tráfico de red del protocolo de transferencia de archivos (FTP)
+- Corrección para reducir el uso de CPU de Microsoft Defender Exchange Server se ejecuta en Windows Server 2016
+- Corrección de interrupciones del examen
+- Corrección de alertas en intentos de manipulación bloqueados que no aparecen en el Centro de seguridad
+- Mejoras para manipular la resistencia en el servicio de Microsoft Defender
 
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
@@ -624,7 +627,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 - Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguno
+- None
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -635,10 +638,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- Ninguna
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguno
+- Ninguna
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -649,10 +652,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- None
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguno
+- Ninguna
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -663,10 +666,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- None
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguno
+- Ninguna
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -677,10 +680,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.335.232.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- Ninguna
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguno
+- None
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -694,7 +697,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 - Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguno
+- None
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -705,10 +708,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- None
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguno
+- None
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -719,10 +722,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- None
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguno
+- Ninguna
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -733,7 +736,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- None
 
 ### <a name="additional-information"></a>Información adicional
 - Ninguno
@@ -761,7 +764,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- Ninguna
 
 ### <a name="additional-information"></a>Información adicional
 - Ninguno
@@ -775,7 +778,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguno
+- Ninguna
 
 ### <a name="additional-information"></a>Información adicional
 - Se agregó compatibilidad con Windows 10 imágenes de instalación del sistema operativo RS1 o versiones posteriores.

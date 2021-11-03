@@ -1,5 +1,5 @@
 ---
-title: Detectar señales de canal con cumplimiento de comunicaciones
+title: Detección de señales de canal con cumplimiento de comunicaciones
 description: Obtenga más información sobre cómo detectar señales de canal con el cumplimiento de la comunicación.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9bbc79b82933c0e1586acbd08fa4e5792f949863
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 940454e95a89748c0b4cfa985a624abd66fb840c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335730"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703468"
 ---
-# <a name="detect-channel-signals-with-communication-compliance"></a>Detectar señales de canal con cumplimiento de comunicaciones
+# <a name="detect-channel-signals-with-communication-compliance"></a>Detección de señales de canal con cumplimiento de comunicaciones
 
 Con las directivas de cumplimiento de comunicaciones, puede elegir examinar mensajes en una o varias de las siguientes plataformas de comunicación como un grupo o como orígenes independientes. Las comunicaciones capturadas en estas plataformas se conservan durante siete años para cada directiva de forma predeterminada, incluso si los usuarios abandonan su organización y sus buzones se eliminan.
 
@@ -50,7 +50,7 @@ Seleccione el texto de datos adjuntos extraído para ver los detalles en las vis
 Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Teams:
 
 - **Para Teams de chat:** Asignar usuarios individuales o asignar un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
-- **Para Teams de canal:** Asigne cada Microsoft Teams canal o Microsoft 365 grupo que desee examinar que contenga un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones. Si algún miembro del canal es un usuario  supervisado dentro de una directiva y la dirección de entrada está configurada en una directiva, todos los mensajes enviados dentro del canal están sujetos a revisión y posibles coincidencias de directiva (incluso para los usuarios del canal que no están supervisados explícitamente). Por ejemplo, el usuario A es el propietario o miembro de un canal. El usuario B y el usuario C son miembros del mismo canal y usan un idioma que coincide con la directiva de idioma ofensivo que supervisa solo al usuario A. El usuario B y el usuario C crean coincidencias de directiva para las conversaciones dentro del canal aunque no estén supervisadas directamente en la directiva de idioma ofensivo. Teams conversaciones entre el usuario B y el usuario C que están fuera del canal que incluye el usuario A no estarían sujetas a la directiva de idioma ofensivo que incluye el usuario A. Para excluir a los miembros del canal de la supervisión cuando  otros miembros del canal se supervisan explícitamente, desactive la configuración Dirección de comunicación entrante en la directiva de cumplimiento de comunicaciones aplicable.
+- **Para Teams de canal:** Asigne cada Microsoft Teams canal o Microsoft 365 grupo que desee examinar que contenga un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones. Si algún miembro del canal es un usuario  supervisado dentro de una directiva y la dirección de entrada está configurada en una directiva, todos los mensajes enviados dentro del canal están sujetos a revisión y posibles coincidencias de directiva (incluso para los usuarios del canal que no están supervisados explícitamente). Por ejemplo, el usuario A es el propietario o miembro de un canal. Los usuarios B y C son miembros del mismo canal y usan un lenguaje que coincide con la directiva de contenido inadecuado que supervisa solo al usuario A. El usuario B y el usuario C crean coincidencias de directiva para las conversaciones dentro del canal aunque no estén supervisadas directamente en la directiva de contenido inadecuado. Teams conversaciones entre el usuario B y el usuario C que están fuera del canal que incluye el usuario A no estarían sujetas a la directiva de contenido inadecuado que incluye al usuario A. Para excluir a los miembros del canal de la supervisión cuando  otros miembros del canal se supervisan explícitamente, desactive la configuración Dirección de comunicación entrante en la directiva de cumplimiento de comunicaciones aplicable.
 - Para Teams de chat con entornos de correo electrónico **híbridos:** el cumplimiento de las comunicaciones puede supervisar los mensajes de chat de los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de usuarios y grupos supervisados en el asistente para directivas.  Para obtener más información acerca de los requisitos y limitaciones para habilitar el almacenamiento basado en la nube y la compatibilidad Teams para los usuarios locales, vea [Search for Teams chat data for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 ## <a name="exchange-email"></a>Correo electrónico de Exchange

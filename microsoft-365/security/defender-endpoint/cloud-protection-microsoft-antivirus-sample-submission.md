@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e86f4c7f311a356d38d5ecee5498e120190d7b9
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1c7ef9883aacf9af0ee5474795c19adf1694fd9c
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554089"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701734"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 
@@ -102,7 +102,7 @@ Para obtener información acerca de las opciones de configuración con Intune, C
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>Ejemplos de metadatos enviados al servicio de protección en la nube
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="imagen que muestra ejemplos de metadatos enviados a Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="imagen que muestra ejemplos de metadatos enviados a la protección en la nube en Antivirus de Microsoft Defender":::
 
 En la tabla siguiente se enumeran ejemplos de metadatos enviados para su análisis por la protección en la nube:
 
@@ -123,7 +123,7 @@ Además, Defender for Endpoint ha recibido varias certificaciones de cumplimient
 - SOC I, II, III
 - y PCI
 
-Para obtener más información, vea los recursos siguientes:
+Para obtener más información, consulte los recursos siguientes:
 
 - [Ofertas de cumplimiento de Azure](/azure/storage/common/storage-compliance-offerings) 
 - [Portal de confianza del servicio](https://servicetrust.microsoft.com)

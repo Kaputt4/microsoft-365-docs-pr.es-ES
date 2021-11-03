@@ -17,16 +17,33 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: 4e51063447ba43129b588bfe05650572b7c97e4a
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6233cd278e3ca5c445361ae4f50c33d8d00c6b94
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554413"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701604"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
+
+## <a name="november-2021"></a>Noviembre de 2021
+
+### <a name="new-assessment-templates"></a>Nuevas plantillas de evaluación
+
+Las siguientes plantillas de evaluación ya están disponibles en versión preliminar:
+
+- ISO 27001:2013 para Azure (versión preliminar)
+- ISO 27001:2013 para Dynamics 365 (versión preliminar)
+- FedRAMP Moderado para Dynamics 365 (versión preliminar)
+- FedRAMP Moderado para Azure (versión preliminar)
+- FedRAMP High para Azure (versión preliminar)
+- FedRAMP High para Dynamics 365 (versión preliminar)
+- SOC 2 para Azure (versión preliminar)
+- SOC 2 para Dynamics 365 (versión preliminar)
+- ISO 27018:2019 para Azure (versión preliminar)
+- ISO 27018:2019 para Dynamics 365 (versión preliminar)
 
 ## <a name="october-2021"></a>Octubre de 2021
 

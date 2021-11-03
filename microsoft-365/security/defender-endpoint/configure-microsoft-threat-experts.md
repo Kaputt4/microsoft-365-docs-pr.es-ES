@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a1a8c8eeffaa05e34f7a3216b743540b1e6406f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 85ef173543b9696a8aa8a0c7505ed30cefc5f932
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553489"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701746"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 
@@ -144,7 +144,7 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 
 ### <a name="threat-intelligence-details"></a>Detalles de inteligencia de amenazas
 
-- Se detectó un correo electrónico de suplantación de identidad (phishing) que entregaba un documento malintencionado de Word a un usuario. El documento malintencionado de Word provocó una serie de eventos sospechosos, que desencadenaron varias alertas de Microsoft Defender para malware [nombre de malware]. ¿Tiene información sobre este malware? Si es así, ¿puede enviarme un vínculo?
+- Se detectó un correo electrónico de suplantación de identidad (phishing) que entregaba un documento malintencionado de Word a un usuario. El documento malintencionado de Word provocó una serie de eventos sospechosos, que desencadenaron varias alertas de Defender for Endpoint para malware [nombre de malware]. ¿Tiene información sobre este malware? Si es así, ¿puede enviarme un vínculo?
 - Recientemente vi una publicación [referencia a redes sociales, por ejemplo, Twitter o blog] sobre una amenaza dirigida a mi sector. ¿Me puede ayudar a comprender qué protección proporciona Defender for Endpoint contra este actor de amenazas?
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Expertos en amenazas de Microsoft de alertas

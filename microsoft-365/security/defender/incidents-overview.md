@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a67570322cf891c3691e02377d5ff7f9d699cf6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a1ef2dde05bd2244ea982cfa2dabd5927484f46b
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198042"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724385"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Respuesta a incidentes con Microsoft 365 Defender
 
@@ -35,14 +35,14 @@ ms.locfileid: "60198042"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Un incidente en Microsoft 365 Defender es una colección de alertas correlacionadas y datos asociados que son la historia de un ataque. 
 
-Microsoft 365 servicios y aplicaciones crean alertas cuando detectan un evento o actividad sospechosos o malintencionados. Las alertas individuales proporcionan pistas valiosas sobre un ataque completado o en curso. Sin embargo, los ataques suelen emplear varias técnicas en distintos tipos de entidades, como dispositivos, usuarios y buzones. El resultado son varias alertas para varias entidades del espacio empresarial. 
+Los servicios y aplicaciones de Microsoft 365 crean alertas cuando detectan un evento o actividad sospechosos o malintencionados. Las alertas individuales proporcionan pistas valiosas sobre un ataque completado o en curso. Sin embargo, los ataques suelen emplear varias técnicas en distintos tipos de entidades, como dispositivos, usuarios y buzones de entrada. El resultado son varias alertas para varias entidades del espacio empresarial. 
 
 Dado que unir las alertas individuales para obtener información sobre un ataque puede ser un desafío y un consumo de tiempo, Microsoft 365 Defender agrega automáticamente las alertas y su información asociada a un incidente.
 
@@ -56,11 +56,11 @@ Vea esta breve introducción a los incidentes en Microsoft 365 Defender (4 minut
 
 La agrupación de alertas relacionadas en un incidente le ofrece una vista completa de un ataque. Por ejemplo, puede ver:
 
-- Donde se inició el ataque.
+- Dónde se inició el ataque.
 - Qué tácticas se usaron.
-- Cuánto ha llegado el ataque a su inquilino.
-- El ámbito del ataque, como el número de dispositivos, usuarios y buzones de correo afectados. 
-- Todos los datos asociados con el ataque.
+- Hasta dónde ha llegado el ataque a su cuenta empresarial.
+- El ámbito del ataque, como el número de dispositivos, usuarios y buzones de entrada que se vieron afectados. 
+- Todos los datos asociados al ataque.
 
 Si [está habilitado,](m365d-enable.md)Microsoft 365 Defender investigar y resolver [alertas](m365d-autoir.md) automáticamente a través de la automatización y la inteligencia artificial. También puedes realizar pasos de corrección adicionales para resolver el ataque. 
 
@@ -181,6 +181,47 @@ Para obtener más información acerca de SecOps en todos los productos de Micros
 - [Procedimientos recomendados](/security/compass/security-operations)
 - [Vídeos y diapositivas](/security/compass/security-operations-videos-and-decks)
 
+
+## <a name="get-incident-notifications-by-email"></a>Obtener notificaciones de incidentes por correo electrónico
+
+Puede configurar Microsoft 365 Defender para notificar a su personal con un correo electrónico sobre nuevos incidentes o actualizaciones de incidentes existentes. Puede elegir obtener notificaciones en función de:
+
+- Gravedad del incidente.
+- Grupo de dispositivos.
+- Solo en la primera actualización por incidente.
+
+La notificación por correo electrónico contiene detalles importantes sobre el incidente, como el nombre del incidente, la gravedad y las categorías, entre otras. También puede ir directamente al incidente e iniciar el análisis de inmediato. Para obtener más información, vea [Investigar incidentes](investigate-incidents.md).
+
+Puede agregar o quitar destinatarios en las notificaciones de correo electrónico. Los nuevos destinatarios reciben notificaciones sobre incidentes después de agregarse. 
+
+>[!NOTE]
+>Necesita el permiso "Administrar la configuración de seguridad" para configurar las opciones de notificación de correo electrónico. Si ha elegido usar la administración de permisos básicos, los usuarios con roles de administrador de seguridad o administrador global pueden configurar las notificaciones de correo electrónico por usted. <br> <br>
+Del mismo modo, si tu organización usa el control de acceso basado en roles (RBAC), solo puedes crear, editar, eliminar y recibir notificaciones en función de los grupos de dispositivos que puedas administrar.
+
+### <a name="create-a-rule-for-email-notifications"></a>Crear una regla para notificaciones por correo electrónico
+
+Siga estos pasos para crear una nueva regla y personalizar la configuración de notificaciones por correo electrónico.
+
+1. En el panel de navegación, **seleccione Configuración > Microsoft 365 Defender > notificaciones de correo electrónico de incidentes**.
+2. Seleccione **Agregar elemento**.
+3. En la **página Conceptos básicos,** escriba el nombre de la regla y una descripción y, a continuación, **seleccione Siguiente**.
+4. En la **página Configuración de** notificaciones, configure:
+    - **Gravedad de alerta**: elija los niveles de gravedad de alerta que desencadenarán una notificación de incidente. Por ejemplo, si solo desea que se le informe sobre incidentes de alta gravedad, seleccione **Alto**.
+    - **Ámbito del grupo de dispositivos**: puede especificar todos los grupos de dispositivos o seleccionarlos en la lista de grupos de dispositivos del inquilino.
+    - **Notificar solo la primera aparición por incidente**: seleccione si desea una notificación solo en la primera alerta que coincida con las demás selecciones. Las actualizaciones o alertas posteriores relacionadas con el incidente no enviarán notificaciones adicionales.
+    - **Incluir el nombre de la organización en el correo electrónico**: seleccione si desea que el nombre de la organización aparezca en la notificación por correo electrónico.
+    - **Incluir vínculo del portal específico del inquilino**: seleccione si desea agregar un vínculo con el identificador de inquilino en la notificación de correo electrónico para acceder a un inquilino de Microsoft 365 específico.
+
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Configuración de notificaciones para notificaciones de correo electrónico de incidentes.":::
+
+5. Seleccione **Siguiente**. En la **página Destinatarios,** agregue las direcciones de correo electrónico que recibirán las notificaciones de incidentes. Seleccione **Agregar después** de escribir cada nueva dirección de correo electrónico. Para probar las notificaciones y asegurarse de que los destinatarios las reciben en las bandejas de entrada, seleccione **Enviar correo electrónico de prueba.** 
+6. Seleccione **Siguiente**. En la **página Revisar regla,** revise la configuración de la regla y, a continuación, **seleccione Crear regla**. Los destinatarios empezarán a recibir notificaciones de incidentes a través del correo electrónico en función de la configuración.
+
+Para editar una regla existente, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Editar** regla y realice los cambios en las páginas **Conceptos** básicos, Configuración de **notificación** y **Destinatarios.**
+
+Para eliminar una regla, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Eliminar**.
+
+
 ## <a name="training-for-security-analysts"></a>Aprendizaje para analistas de seguridad
 
 Use este módulo de aprendizaje de Microsoft Learn para comprender cómo usar Microsoft 365 Defender para administrar incidentes y alertas.
@@ -192,7 +233,7 @@ Use este módulo de aprendizaje de Microsoft Learn para comprender cómo usar Mi
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/defender-investigate-incidents/)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Use los pasos enumerados en función del nivel de experiencia o el rol del equipo de seguridad.
 

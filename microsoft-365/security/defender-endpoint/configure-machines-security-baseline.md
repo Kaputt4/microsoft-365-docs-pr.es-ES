@@ -20,8 +20,8 @@ ms.openlocfilehash: 3149f453886f72fd300f2961a7ef2ea1defce7a5
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60673248"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704726"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Aumentar el cumplimiento de la línea base de seguridad de Microsoft Defender para endpoints
 

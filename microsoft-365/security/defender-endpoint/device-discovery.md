@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bf0341ec4c77b8f3c803d087ff52ad4bde40decd
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: c1a76bb0a82562a7c2a2f96e87b087f6fd09fcea
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552606"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60701008"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -115,12 +115,12 @@ Encuentre detalles sobre los puntos de conexión detectados en la tabla DeviceIn
 
 La detección de dispositivos aprovecha los dispositivos integrados de Microsoft Defender para endpoint como origen de datos de red para atribuir actividades a dispositivos no incorporados. Esto significa que si un dispositivo integrado de Microsoft Defender para endpoint se comunica con un dispositivo no incorporado, las actividades del dispositivo no incorporado se pueden ver en la escala de tiempo y a través de la tabla DeviceNetworkEvents de búsqueda avanzada.
 
-Los nuevos eventos están basados en conexiones del Protocolo de control de transmisión (TCP) y se ajustarán al esquema DeviceNetworkEvents actual. Entrada tcp al dispositivo habilitado para Microsoft Defender para endpoint desde un dispositivo que no es de Microsoft Defender para endpoint habilitado. 
+Los nuevos eventos están basados en conexiones del Protocolo de control de transmisión (TCP) y se ajustarán al esquema DeviceNetworkEvents actual. Entrada tcp al dispositivo habilitado para Microsoft Defender para endpoint desde un dispositivo que no es de Microsoft Defender para endpoint habilitado.
 
 También se han agregado los siguientes tipos de acción:
 
-- ConnectionAttempt: un intento de establecer una conexión TCP (syn) 
-- ConnectionAcknowledged: confirmación de que se aceptó una conexión TCP (syn\ack) 
+- ConnectionAttempt: un intento de establecer una conexión TCP (syn)
+- ConnectionAcknowledged: confirmación de que se aceptó una conexión TCP (syn\ack)
 
 Puede probar esta consulta de ejemplo:
 
@@ -134,7 +134,7 @@ DeviceNetworkEvents
 
 En la siguiente sección se enumeran los cambios que observará en Microsoft Defender para endpoint y/o Microsoft 365 Security Center cuando esta funcionalidad esté habilitada.
 
-1. Se espera que los dispositivos que no están incorporados a Microsoft Defender a Endpoint aparezcan en el inventario de dispositivos, la búsqueda avanzada y las consultas api. Esto puede aumentar significativamente el tamaño de los resultados de la consulta.
+1. Se espera que los dispositivos que no están incorporados a Microsoft Defender para endpoint aparezcan en el inventario de dispositivos, la búsqueda avanzada y las consultas api. Esto puede aumentar significativamente el tamaño de los resultados de la consulta.
     1. Las tablas "DeviceInfo" y "DeviceNetworkInfo" en la búsqueda avanzada ahora mantendrán el dispositivo detectado. Puedes filtrar esos dispositivos mediante el atributo "OnboardingStatus".
     2. Se espera que los dispositivos detectados aparezcan en los resultados de consulta de la API de streaming. Puede filtrar esos dispositivos mediante el `OnboardingStatus` filtro de la consulta.
 2. Los dispositivos no administrados se asignarán a grupos de dispositivos existentes según los criterios definidos.

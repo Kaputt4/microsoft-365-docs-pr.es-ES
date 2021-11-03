@@ -19,12 +19,12 @@ description: Obtenga información sobre los informes e información inteligentes
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb46c3436c48328b02e2937968321c0adce9ffb8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b81e31781ad4105dc5a0ee270ef605ffe96691e7
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202422"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724792"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 
@@ -56,7 +56,7 @@ Hay una amplia variedad de informes disponibles en el Centro de seguridad & cump
 |Tipo de información|Cómo llegar ahí|Dónde ir para obtener más información|
 |---|---|---|
 |**Informes & centro de cumplimiento de seguridad** (todo hacia arriba) <p> Información y recomendaciones principales, y vínculos a informes de cumplimiento de seguridad &, incluidos los informes de prevención de pérdida de datos, etiquetas, informes de seguridad de correo electrónico, Informes de defender para Office 365 y mucho más|En el Centro de & cumplimiento, vaya al **Panel de** \> **informes**|[Informes del Centro de seguridad y cumplimiento](../../compliance/reports-in-security-and-compliance.md)|
-|**Prevención de pérdida de datos** <p> Las coincidencias de directivas de prevención de pérdida de datos, falsos positivos y reemplazos, y vínculos para crear o editar directivas|En el Centro de seguridad & cumplimiento, vaya a Directiva de prevención **de pérdida de** \> **datos**|[Vea los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md)|
+|**Prevención de pérdida de datos (DLP)** <p> Las coincidencias de directivas de prevención de pérdida de datos, falsos positivos y reemplazos, y vínculos para crear o editar directivas|En el Centro de seguridad & cumplimiento, vaya a Directiva de prevención **de pérdida de** \> **datos**|[Vea los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md)|
 |**Gobierno de datos** <p> Información sobre cómo se aplican las etiquetas, las etiquetas clasificadas como registros, las tendencias de las etiquetas y mucho más|En el Centro de seguridad & cumplimiento, vaya al **Panel de gobierno de** \> **información**|[Vea los informes de gobierno de datos](../../compliance/view-the-data-governance-reports.md)|
 |**Panel de administración de** amenazas (esto también se conoce como panel de seguridad) <p> Detecciones de amenazas, tendencias de malware, principales usuarios dirigidos, detalles sobre mensajes de correo electrónico enviados y recibidos, etc.|En el Centro de & seguridad, vaya al Panel **de administración de** \> **vulnerabilidades**|[Ver informes de Defender para Office 365](view-reports-for-mdo.md)|
 |**Explorador** (también denominado Explorador de amenazas) o **detecciones en tiempo real** <p> Malware sospechoso detectado en correo electrónico y archivos en Microsoft 365|En el Centro de & seguridad, vaya al Explorador **de** administración de vulnerabilidades o \>  **detecciones en tiempo real**<br> |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|
@@ -68,6 +68,6 @@ Hay una amplia variedad de informes disponibles en el Centro de seguridad & cump
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Portal de Microsoft 365 Defender](../defender/overview-security-center.md)
+[Portal de Microsoft 365 Defender](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 
 [Proteger contra amenazas en Office 365](protect-against-threats.md)

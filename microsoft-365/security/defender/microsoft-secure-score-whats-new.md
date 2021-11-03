@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 59ff0e516bb6b0a5f5c89e07fb972184a5a6c837
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 72bd56905392ff89fbcd3209212029d3b33b9a98
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162307"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724356"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "60162307"
 
 Para que Microsoft Secure Score sea un mejor representante de su posición de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-Microsoft Secure Score se puede encontrar en https://security.microsoft.com/securescore el [portal de Microsoft 365 Defender.](overview-security-center.md)
+Microsoft Secure Score se puede encontrar en https://security.microsoft.com/securescore el [portal de Microsoft 365 Defender.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
 
 ## <a name="july-2021"></a>Julio de 2021
 

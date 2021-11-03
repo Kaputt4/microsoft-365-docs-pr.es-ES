@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d1f1c36eeaa010981ffd44ccad75e0d73a7159f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c04d7eed5957fbb5633710ec07af28ca66809356
+ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162367"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60724804"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir objetivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Puntuación segura de Microsoft](microsoft-secure-score.md) es una medida de la posición de seguridad de una organización, con un número más alto que indica más acciones de mejora realizadas. Se puede encontrar en https://security.microsoft.com/securescore el portal de Microsoft 365 Defender [.](overview-security-center.md)
+[Puntuación segura de Microsoft](microsoft-secure-score.md) es una medida de la posición de seguridad de una organización, con un número más alto que indica más acciones de mejora realizadas. Se puede encontrar en https://security.microsoft.com/securescore el portal de Microsoft 365 Defender [.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Obtener información sobre la actividad que ha afectado a la puntuación
 

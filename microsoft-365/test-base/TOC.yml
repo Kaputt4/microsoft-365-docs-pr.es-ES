@@ -32,6 +32,8 @@
       href: memory.md
     - name: Análisis de regresión de CPU
       href: cpu.md
+    - name: SDK & API
+      href: sdkapi.md
 - name: Referencia
   items:
     - name: preguntas más frecuentes

@@ -18,8 +18,8 @@ ms.openlocfilehash: 9e2c52d23c0e0c949059dc37eee4c1a59b35964e
 ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677294"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60704948"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>Administrar el recurso con LAS API & SDK
 La automatización es un aspecto clave del desarrollo DevOps y ágil. ¿Está buscando administrar Test Base para obtener Microsoft 365, obtener resultados de pruebas mediante programación e integrarlos con nuestras herramientas de CI? Probar API base/SDK puede ayudarle a lograr todas estas y más cosas. 

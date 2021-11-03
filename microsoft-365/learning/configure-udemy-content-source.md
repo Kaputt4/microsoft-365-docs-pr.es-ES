@@ -4,64 +4,54 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: medium
 description: Aprende a configurar Udemy como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ROBOTS: NOINDEX
-ms.openlocfilehash: 404f70983f1deadfac111829f026bd3ccdbcb633
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 0f1b87ae2c218679a590cd714e9850b0c09773d2
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587950"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60703782"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Udemy como origen de contenido para Aprendizaje Microsoft Viva
-
->[!NOTE]
->Esta característica no se admite en la vista previa.
 
 En este artículo se muestra cómo configurar Udemy como un origen de contenido de aprendizaje de terceros para Aprendizaje Microsoft Viva.
 
 >[!NOTE]
 >El contenido accesible a través de Viva Learning está sujeto a términos distintos de los Términos del producto de Microsoft. El contenido de Udemy y los servicios asociados están sujetos a los términos de privacidad y servicio de Udemy.
 
+## <a name="configure-in-your-udemy-portal"></a>Configurar en el portal de Udemy
+
+>[!NOTE]
+>Tendrás que tener permisos de administrador en Udemy para completar estos pasos.
+
 Siga estos pasos para habilitar las API en el entorno de Udemy Business y generar credenciales de cliente para que su aplicación LMS/LXP pueda tener acceso a ellas.
 
 1. Vaya a **Administrar**, a **continuación, Configuración** y, a continuación, **API**. Compruebe el estado de las API. Si están deshabilitados, puede ponerse en contacto con el soporte técnico para que estén habilitados o siga los pasos que se indican a continuación para habilitarlos.
 
-    <!--![Image of the API settings.](../media/learning/udemy-1.png)-->
-
 2. Si las API están deshabilitadas, vaya a Integraciones **LMS/LXP**, **inicie La** configuración y, a continuación, **Otros**.
-
-    <!--![Image of the Start Set Up > Other page.](../media/learning/udemy-2.png)-->
 
 3. En la siguiente pantalla, escriba el nombre de la aplicación personalizada de LMS/LXP o de terceros. A continuación, active o desactive la opción de inscripción automática y seleccione **Guardar**. La opción de inscripción automática permite que los usuarios que inician un curso a través de su LMS/LXP se inscriban automáticamente en Udemy.
 
-    <!--![Image of the LMS/LXP integrations page.](../media/learning/udemy-3.png)-->
-
 4. Una vez que hayas guardado, se generarán el id. de cliente y el secreto de cliente y podrás copiarlos desde la pantalla. Ahora puede obtener acceso a las API con las credenciales de cliente proporcionadas.
-
-    <!--![Image of the generated client ID and secret.](../media/learning/udemy-4.png)-->
 
 5. Para obtener acceso a los puntos de conexión de la API, debe tener la dirección ACCOUNT_ID y la dirección URL del punto de conexión. Para obtener acceso a esta información y probar las **API,** vaya a **Administrar**, a continuación, **Configuración** api . Una vez habilitadas las API, debería ver el estado de las API como "Habilitado". Seleccione el vínculo documentación de la API.
 
-    <!--![Image of the API page.](../media/learning/udemy-5.png)-->
-
 6. Obtenga la dirección URL del punto de conexión de la API ACCOUNT_ID de la página de información general. Vaya a los métodos admitidos para probar una llamada a la API. Ahora estás listo para realizar llamadas a las API de Udemy Business.
 
-    <!--![Image of the Supported methods page.](../media/learning/udemy-6.png)-->
+## <a name="configure-in-your-microsoft-365-admin-center"></a>Configurar en el Centro de administración de Microsoft 365
 
-    <!--![Image of the API call page where you can try it out.](../media/learning/udemy-7.png)-->
-
-## <a name="configure-the-microsoft-365-admin-center"></a>Configurar el Centro de administración de Microsoft 365
+>[!NOTE]
+>Tendrás que tener permisos de administrador en Microsoft 365 para completar estos pasos.
 
 Después de recibir los detalles de configuración necesarios del portal udemy mediante los pasos anteriores, el administrador de inquilinos debe configurar Udemy como un origen de aprendizaje en el Centro de administración de Microsoft 365 mediante los pasos siguientes.
 
@@ -76,6 +66,7 @@ Después de recibir los detalles de configuración necesarios del portal udemy m
     - **Id. de** cliente: este es el id. de cliente recopilado del portal Udemy en el paso 4.
     - **Secreto de** cliente: este es el secreto de cliente recopilado del portal Udemy en el paso 4.
 
-      <!--![Image of filled in configuration details.](../media/learning/udemy-8.png)-->
-
 4. Selecciona **Guardar** para activar el contenido de Udemy en Aprendizaje Microsoft Viva. El contenido puede tardar hasta 24 horas en estar disponible en Viva Learning.
+
+>[!NOTE]
+>Los metadatos del espacio empresarial se almacenan de forma centralizada en nuestros almacenes de datos y no se almacenan en almacenes de datos específicos geográficamente.
