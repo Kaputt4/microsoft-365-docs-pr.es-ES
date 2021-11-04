@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: ecdb81e5dcb6507a3ef929dce04bfd9aee8d93af
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 2e9b9b9c708a4379d298b69f1164a9d853c84ad6
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588250"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60665125"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -65,7 +65,8 @@ Para almacenar el contenido que debe conservarse, SharePoint y OneDrive crean un
 
 Los elementos de SharePoint que tienen una etiqueta de retención estándar (no declara el elemento como un registro) no necesitan la biblioteca de suspensión para conservación porque estos elementos permanecen en su ubicación original. SharePoint impide que los usuarios eliminen elementos cuando la etiqueta de retención aplicada está configurada para conservar el contenido, y el control de versiones de SharePoint conserva las versiones anteriores cuando se editan los elementos. Sin embargo, en otros casos, la biblioteca de suspensión para conservación se usa cuando los elementos tienen que conservarse:
 - Elementos de OneDrive que tienen etiquetas de retención estándar
-- Elementos de SharePoint o OneDrive que tienen etiquetas de retención que marcan los elementos como un registro, si el elemento está desbloqueado para su edición
+- Elementos de SharePoint o OneDrive que tienen etiquetas de retención que los declaran como un registro, si el elemento está desbloqueado para su edición
+- Archivos compartidos como datos adjuntos en la nube que tienen una etiqueta de retención aplicada automáticamente
 - Elementos que están sujetos a directivas de retención
 
 Para conservar este contenido cuando un usuario intenta cambiarlo o eliminarlo, se comprueba si el contenido se ha cambiado desde que se aplicó la configuración de retención. Si este es el primer cambio desde que se aplicaron los ajustes de retención, el contenido se copia a la biblioteca de retención de preservación, lo que permite a la persona cambiar o eliminar el contenido original.
@@ -106,7 +107,23 @@ Cuando los ajustes de retención son sólo de retención o sólo de borrado, las
 
 2. **Si el contenido no se elimina** durante el período configurado: al final del período configurado en la directiva de retención, el documento se mueve a la Papelera de reciclaje de primer nivel. Si un usuario elimina el documento de allí o vacía esta papelera de reciclaje (también conocido como purga), el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las Papeleras de reciclaje de primer y segundo nivel. Al final de los 93 días, el documento se elimina permanentemente de cualquier lugar donde resida, ya sea en la Papelera de reciclaje de primer o segundo nivel. La papelera de reciclaje no se indexa y, por lo tanto, no está disponible para la búsqueda. Como resultado, una búsqueda de eDiscovery no puede encontrar ningún contenido en la papelera de reciclaje en el que colocar una suspensión.
 
-## <a name="how-retention-works-for-onenote-content"></a>Cómo funciona la retención para el contenido de OneNote
+## <a name="how-retention-works-with-cloud-attachments"></a>Cómo funciona la retención con datos adjuntos en la nube
+
+Los datos adjuntos en la nube son vínculos incrustados a archivos que los usuarios comparten y que se pueden conservar y eliminar cuando los usuarios los comparten en mensajes de Teams y correo de Outlook. Cuando se [aplica automáticamente una etiqueta de retención a los datos adjuntos de la nube](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments), la etiqueta de retención se aplica a una copia del archivo compartido, que se almacena en la Biblioteca de suspensión para conservación.
+
+Para este escenario, se recomienda establecer la configuración de etiqueta para iniciar el período de retención en función del momento en que se etiqueta el elemento. Si configura el período de retención en función de cuándo se crea o modifica por última vez el elemento, esta fecha se toma del archivo original en el momento del uso compartido. Si configura el inicio de retención para que sea cuando se modifique por última vez, esta configuración no tiene efecto para esta copia en la Biblioteca de suspensión para conservación.
+
+Sin embargo, si el archivo original se modifica y, a continuación, se vuelve a compartir, se guarda una nueva copia del archivo como una nueva versión y se etiqueta en la Biblioteca de suspensión para conservación.
+
+Si el archivo original se vuelve a compartir pero no se modifica, se actualiza la fecha etiquetada de la copia en la Biblioteca de suspensión para conservación. Esta acción restablece el inicio del período de retención y por eso se recomienda configurar el inicio del período de retención para que se base en el momento en que se etiqueta el elemento.
+
+Dado que la etiqueta de retención no se aplica al archivo original, un usuario nunca modifica ni elimina el archivo etiquetado. El archivo etiquetado permanece en la Biblioteca de suspensión para conservación hasta que el trabajo del temporizador identifique que su período de retención ha expirado. Si la configuración de retención está configurada para eliminar elementos, el archivo se mueve a la Papelera de reciclaje de segundo nivel, donde se elimina permanentemente al final de 93 días:
+
+![Cómo funciona la retención para los datos adjuntos de la nube almacenados en SharePoint y OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
+
+La copia almacenada en la Biblioteca de suspensión para conservación normalmente se crea en una hora a partir del momento en que los datos adjuntos de la nube se comparten.
+
+## <a name="how-retention-works-with-onenote-content"></a>Cómo funciona la retención con el contenido de OneNote
 
 Cuando se aplica una directiva de retención a una ubicación que incluye contenido de OneNote, o una etiqueta de retención a una carpeta de OneNote, en segundo plano, las distintas secciones de OneNote son archivos individuales que heredarán la configuración de retención. Esto significa que cada sección se retendrá y eliminará de forma individual, según la configuración de retención que especifique.
 

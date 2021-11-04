@@ -312,17 +312,17 @@
               href: usage-analytics/usage-analytics-errors.md
         - name: Guía de configuración de compatibilidad de Microsoft 365 con ServiceNow
           items:
-            - name: Información general de configuración de compatibilidad de Microsoft 365 con ServiceNow
+            - name: Descripción general de la configuración
               href: manage/servicenow-overview.md
-            - name: Configuración de la integración de compatibilidad con la autenticación básica de ServiceNow
+            - name: Configurar la autenticación básica
               href: manage/servicenow-basic-authentication.md
-            - name: Configuración de la integración de compatibilidad de Microsoft 365 con el token de OAuth de AAD
+            - name: Configuración con el token de OAuth de AAD
               href: manage/servicenow-aad-oauth-token.md
-            - name: SOLO compatibilidad con la integración de incidentes de estado del servicio de Microsoft 365 y soluciones recomendadas
+            - name: Solo incidentes de estado y soluciones recomendadas
               href: manage/servicenow-service-health-incidents-solutions-only.md
-            - name: Prueba de la configuración de ServiceNow
+            - name: Probando la configuración
               href: manage/servicenow-testing-the-configuration.md
-            - name: Solución de problemas con la integración de soporte técnico con ServiceNow de Microsoft 365
+            - name: Solución de problemas
               href: manage/servicenow-troubleshooting.md
     - name: Administrar suscripciones y facturación
       href: ../commerce/index.yml
