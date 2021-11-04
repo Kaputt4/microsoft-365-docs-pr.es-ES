@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: GEA150
 description: Regístrate para una prueba gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: cb9d811f014fa0460e5030b794caf687df4ca4ae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10ad9f24d7e34da30cfe5b62207e90275a0649c0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195766"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754402"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción Microsoft 365 para empresas
 
@@ -86,7 +86,7 @@ Cuando estés listo para comprar, consulta [Comprar la versión de prueba](#buy-
 
 ## <a name="cancel-your-free-trial-subscription"></a>Cancelar la suscripción de prueba gratuita
 
-Si decide cancelar la suscripción de prueba antes de que finalice el período de prueba gratuito, vaya al Centro de administración de Microsoft 365 y [desactive Facturación periódica](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). La versión de prueba expirará automáticamente cuando finalice el mes y no se cargará \' la tarjeta de crédito.
+Si decide cancelar la suscripción de prueba antes de que finalice el período de prueba gratuito, vaya al Centro de administración de Microsoft 365 y [desactive Facturación periódica](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). La prueba expirará automáticamente cuando finalice el mes y no se cargará la tarjeta de crédito.
 
 ## <a name="try-a-different-subscription"></a>Probar una suscripción diferente
 
@@ -133,7 +133,7 @@ El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solic
 > No se aceptan tarjetas de crédito internacionales.
 ::: moniker-end
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si tiene una cuenta nueva y está configurando su primera suscripción, puede usar los artículos de configuración guiados para ayudarle a empezar.
 

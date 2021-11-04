@@ -13,14 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar páginas de Facebook Business en Microsoft 365. Después de importar estos datos a Microsoft 365, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar el gobierno de los datos de Facebook de su organización.
-ms.openlocfilehash: 1707236a889d03f272c5cce527245cf2a83f8949
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0bbe7f65ef6226386911817b40bbaaa418cdabec
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170840"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757232"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Implementar un conector para archivar datos de páginas de Facebook Empresa
 
@@ -30,7 +31,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
 1. Vaya a <https://portal.azure.com> e inicie sesión con las credenciales de una cuenta de administrador global.
 
-    ![Crear aplicación en AAD.](../media/FBCimage1.png)
+    ![Crea una aplicación en AAD.](../media/FBCimage1.png)
 
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**
 
@@ -60,7 +61,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
     ![Escriba el secreto y, a continuación, elija un período de expiración.](../media/FBCimage8.png)
 
-9. Copie el valor del secreto y guárdelo en un archivo de texto u otra ubicación de almacenamiento. Este es el secreto de aplicación de AAD que se usa en los pasos posteriores.
+9. Copie el valor del secreto y guárdelo en un archivo de texto u otra ubicación de almacenamiento. Este es el secreto AAD aplicación que se usa en pasos posteriores.
 
    ![Copie el valor del secreto y guárdelo.](../media/FBCimage9.png)
 
@@ -180,15 +181,15 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    - **Los webhooks de Facebook comprueban el token:** El token de comprobación que creó en el paso 3.
 
-   - **Id. de aplicación de AAD:** El identificador de aplicación para la Azure Active Directory que creaste en el paso 1.
+   - **AAD de aplicación:** El identificador de aplicación para la Azure Active Directory que creaste en el paso 1.
 
-   - **Secreto de aplicación de AAD:** Valor del secreto APISecretKey que creó en el paso 1.
+   - **AAD secreto de aplicación:** Valor del secreto APISecretKey que creó en el paso 1.
 
 5. Haga **clic en** Guardar para guardar la configuración del conector.
 
 ## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>Paso 5: Configurar un conector de Facebook en el Centro de cumplimiento de Microsoft 365
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic **en Conectores de datos** en la navegación izquierda.
+1. Vaya a la Centro de cumplimiento de Microsoft 365 y, a continuación, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank"> **Conectores** de datos</a.
 
 2. En la página **Conectores de datos** de las páginas **de Facebook Empresa,** haga clic en **Ver**.
 
@@ -206,7 +207,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    - En el **cuadro Contraseña,** escriba o pegue el valor de APISecretKey que agregó en el paso 2.
 
-   - En el **cuadro Id. de** aplicación de Azure, escriba o pegue el valor del identificador de aplicación (cliente) llamado también como id. de aplicación de AAD que creó en el paso 1.
+   - En el **cuadro Id. de** aplicación de Azure, escriba o pegue el valor del identificador de aplicación (cliente) también llamado como identificador de aplicación AAD que creó en el paso 1.
 
 6. Después de validar correctamente la conexión, haga clic en **Siguiente**.
 

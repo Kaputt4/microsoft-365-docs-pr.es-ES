@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 09e7cb8f05796994e1b68d59ceea312b8735a3cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b7c2b79892874fad37be382ba7eecea1b761fe7
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201450"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753570"
 ---
 # <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 

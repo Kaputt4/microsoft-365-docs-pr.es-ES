@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e6e8d03002675ce3c4b9c1e79f0a340f64633036
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5136da918480d2ae9b9543b410e8ae45ade9dc7d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239665"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755608"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -85,9 +85,13 @@ Los archivos bloqueados automáticamente por un indicador no aparecerán en el C
 > [!IMPORTANT]
 > La información de esta sección (**Public Preview for Automated investigation and remediation engine**) se relaciona con el producto de versión preliminar que podría modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-Las acciones actuales admitidas para el IOC de archivos son permitir, auditar y bloquear y corregir.
-Después de elegir bloquear un archivo, puede elegir si es necesario activar una alerta. De este modo, podrá controlar el número de alertas que se van a recibir en los equipos de operaciones de seguridad y asegurarse de que solo se generarán las alertas necesarias.
-En Microsoft 365 Defender, vaya a Configuración > Endpoints > Indicators > add new File hash Choose to Block and remediate the file Choose if to Generate an alert on the file block event and define the alerts settings:
+Las acciones actuales admitidas para el IOC de archivos son permitir, auditar y bloquear y corregir. Después de elegir bloquear un archivo, puede elegir si es necesario activar una alerta. De este modo, podrá controlar el número de alertas que se van a recibir en los equipos de operaciones de seguridad y asegurarse de que solo se generarán las alertas necesarias.
+
+En Microsoft 365 Defender, vaya **a Configuración**  >  **Indicadores** de extremos  >  **agregar** nuevo hash  >  **de archivo**.
+
+Elija Bloquear y corregir el archivo.
+
+Elija si desea generar una alerta en el evento de bloqueo de archivos y definir la configuración de alertas:
 
 - El título de alerta
 - Gravedad de la alerta

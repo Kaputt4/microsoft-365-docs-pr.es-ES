@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 302bfdd5daa336564649e6e122f70e6f2a43ecbd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1e3629c1d5dfdf32da25a7b89452df0009ad6df7
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155099"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747403"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 
@@ -79,7 +79,7 @@ Seguirá estos pasos generales para configurar DKE. Una vez completados estos pa
 
 1. Implemente el servicio DKE tal como se describe en este artículo.
 
-2. Cree una etiqueta con cifrado de clave doble. Vaya a Protección de la información en [la Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) y cree una nueva etiqueta con cifrado de clave doble. Consulte [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar cifrado.](./encryption-sensitivity-labels.md)
+2. Cree una etiqueta con cifrado de clave doble. Vaya a Protección de la información en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">la Centro de cumplimiento de Microsoft 365</a> y cree una nueva etiqueta con cifrado de clave doble. Consulte [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar cifrado.](./encryption-sensitivity-labels.md)
 
 3. Use etiquetas de cifrado de clave doble. Proteja los datos seleccionando la etiqueta Double Key Encrypted de la cinta de opciones De confidencialidad en Microsoft Office.
 

@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 36de4b9703c0200d8e2eddba8e3ec0f9b6fe47f9
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 655886ad0d55c91a9dc961b3c9cdaf983eb472a2
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364764"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756132"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Cambiar a Microsoft Defender para endpoint - Fase 2: Configuración
 
@@ -102,8 +102,9 @@ La clave del Registro [DisableAntiSpyware](/windows-hardware/customize/desktop/u
    # For Windows Server 2019 and Windows Server 2022
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
-   A continuación, reinicie el dispositivo. 
-   
+
+   A continuación, reinicie el dispositivo.
+
    Cuando se usa el comando DISM dentro de una secuencia de tareas que ejecuta PowerShell, se requiere la siguiente ruta de cmd.exe.
    Ejemplo:
 

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chats y canales admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: f4e4c7b0d25d411fe8aa3d69b1768ed7508b9b6b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a7db6b951a0522698b2f6b3879fc444825ed2ca1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168715"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753970"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -116,7 +116,7 @@ Espere aproximadamente una hora para que los cambios funcionen en su centro de d
 
 Para llevar a cabo esta tarea, debe tener asignado un rol de administración que tenga permisos para editar directivas DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
-1. Vaya al Centro de cumplimiento ( [https://compliance.microsoft.com](https://compliance.microsoft.com) ) e inicie sesión.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión.
 
 2. Haga clic en **Prevención de pérdida de datos** > **Directiva**.
 
@@ -147,7 +147,7 @@ Espere aproximadamente una hora para que los cambios funcionen en su centro de d
 
 Para llevar a cabo esta tarea, debe tener asignado un rol de administración que tenga permisos para editar directivas DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
-1. Vaya al Centro de cumplimiento ( [https://compliance.microsoft.com](https://compliance.microsoft.com) ) e inicie sesión.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión.
 
 2. Elija **Prevención de pérdida de datos** > **Directiva** > **+ Crear una directiva**.
 

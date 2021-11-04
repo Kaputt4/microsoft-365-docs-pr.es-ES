@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Obtenga información sobre cómo configurar SAP SuccessFactors como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ms.openlocfilehash: 8e5c8c920934883dec9cd020fbb97a87e546c38c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fafa0d8b610c3964617015ba3d4d1b9771c9e850
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703040"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747274"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>Configurar SAP SuccessFactors como origen de contenido para Aprendizaje Microsoft Viva
 
@@ -56,7 +56,7 @@ En este artículo se muestra cómo configurar SAP SuccessFactors como un origen 
     - enabled puede ser "false" o "true". Esta opción se establece en "true" para habilitar el extracto de partner.
         - partners1.enabled=
     
-    <!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
+    [![Imagen de la configuración PARTNER_EXTRACT configuración. ](../media/learning/sf-focus.png) ](../media/learning/sf-2.png#lightbox)
 
 Una vez que haya completado estos pasos en el portal successFactors, deberá completar la configuración en el Centro de administración de Microsoft 365.
 
@@ -90,6 +90,10 @@ Una vez que haya completado estos pasos en el portal successFactors, deberá com
     Frase de contraseña de clave privada **PGP:** deberá obtener este valor del administrador de TI o del equipo que proporciona la clave PGP.
 
     **Id. de** empresa: inicie sesión en el portal de SuccessFactors. Seleccione el icono de perfil y, a continuación, **seleccione Mostrar versión Configuración**. Puede ver su identificador de empresa aquí.
+
+    ![Imagen del icono de perfil con Mostrar versión Configuración seleccionado.](../media/learning/sf-3.png)
+        
+    ![Imagen del panel de configuración de versión.](../media/learning/sf-1.png)
 
 4. Seleccione **Guardar** para activar el contenido de SuccessFactors en Aprendizaje Microsoft Viva. Puede haber un retraso antes de que el contenido esté disponible en Viva Learning.
 

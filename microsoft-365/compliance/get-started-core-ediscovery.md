@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Describe cómo empezar a usar eDiscovery principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede agregar miembros, crear retenciones de exhibición de documentos electrónicos y, a continuación, buscar y exportar contenido relevante para la investigación.
-ms.openlocfilehash: 4245cd391adbaca4284d7861a44f3c41ed3104e4
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 80b59f1dc2115ebd6c49d7b3bc3ff53f800adfe5
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60363959"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755692"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Introducción a la exhibición de documentos electrónicos principal en Microsoft 365
 
@@ -56,7 +56,7 @@ Las licencias para la exhibición de documentos electrónicos principales requie
 
 Para obtener información sobre las licencias:
 
-- Descargue y vea la sección "eDiscovery and auditing" en la [Microsoft 365 de comparación](https://go.microsoft.com/fwlink/?linkid=2139145).
+- Descargue y vea la sección eDiscovery and auditing en la [Microsoft 365 comparison](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 - Vea la [descripción del servicio & centro de seguridad y cumplimiento](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
@@ -66,9 +66,9 @@ Para obtener acceso a eDiscovery principal o agregarse como miembro de un caso d
 
 Siga estos pasos para agregar usuarios al grupo de roles administrador de exhibición de documentos electrónicos:
 
-1. Vaya a e inicie sesión con las credenciales de una cuenta de administrador en su <https://compliance.microsoft.com/permissions> Microsoft 365 o Office 365 organización.
+1. Vaya a la Centro de cumplimiento de Microsoft 365 e inicie sesión con las credenciales de una cuenta de administrador en su Microsoft 365 o Office 365 organización.
 
-2. En la **página Permisos,** seleccione el grupo de **roles** Administrador de exhibición de documentos electrónicos.
+2. En la <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**página Permisos,**</a> seleccione el grupo de **roles** Administrador de exhibición de documentos electrónicos.
 
 3. En la página desplegable administrador de exhibición de documentos electrónicos, haga clic **en Editar** junto a la sección Administrador de **exhibición de documentos** electrónicos.
 
@@ -104,9 +104,9 @@ Para obtener más información acerca de los permisos de exhibición de document
 
 El siguiente paso es crear un caso y empezar a usar eDiscovery principal. Complete los pasos siguientes para crear un caso y agregar miembros. El usuario que crea el caso se agrega automáticamente como miembro.
 
-1. Vaya a e inicie sesión con las credenciales de una cuenta de usuario a la que se han asignado [https://compliance.microsoft.com](https://compliance.microsoft.com) los permisos de exhibición de documentos electrónicos adecuados. Los miembros del grupo de roles Administración de la organización también pueden crear casos principales de exhibición de documentos electrónicos.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión con las credenciales de una cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados. Los miembros del grupo de roles Administración de la organización también pueden crear casos principales de exhibición de documentos electrónicos.
 
-2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **Exhibición de documentos electrónicos > Core**.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, a continuación, haga clic en **eDiscovery**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. En la **página EDiscovery principal,** haga clic **en Crear un caso**.
 

@@ -16,12 +16,12 @@ description: Obtenga información sobre cómo colocar un buzón en retención po
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 0bd436106f4bb5dedecd1008aeeb768887dbe599
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b2ae9db50c171bcafd8352dba250202e07ea0d25
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175352"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753134"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
@@ -66,9 +66,9 @@ Estos son los pasos para colocar un buzón en retención por juicio mediante el 
 
     3. **Página web con más información para el** usuario: Use este cuadro para dirigir al usuario a un sitio web para obtener más información acerca de la retención por juicio. Esta dirección URL aparece en la página Información de la cuenta en el buzón del usuario si usa Outlook 2010 o posterior. Para obtener acceso a esta página, los usuarios pueden hacer clic **en Archivo** en Outlook.
 
-6. Haga **clic en Guardar cambios** en la **página** desplegable Retención por juicio para crear la suspensión. 
+6. Haga **clic en Guardar cambios** en la **página** desplegable Retención por juicio para crear la suspensión.
 
-   El sistema muestra un banner que indica que el cambio puede tardar hasta 60 minutos en tener efecto.
+   El sistema muestra un banner que indica que el cambio puede tardar hasta 240 minutos en tener efecto.
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>Crear una retención por juicio con PowerShell
 

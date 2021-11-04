@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: La forma más sencilla de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, la pestaña Actualizar no siempre es compatible.
 ms.date: 04/21/2021
-ms.openlocfilehash: 8d481ec0b5eb64fcc86ca331d9bde3cac746f177
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7e4190fed287033f723be2cd89e800cb2e31e11a
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167551"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747325"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 
@@ -120,7 +120,7 @@ Es posible que no vea ningún plan en la **pestaña** Actualizar porque el servi
 
 Al actualizar los planes, los planes que están disponibles para actualizar a se muestran en función de los servicios del plan actual. Solo puede actualizar a un plan que tenga los mismos servicios relacionados con datos, como Exchange Online o SharePoint Online, o a una versión superior de ellos. Esto garantiza que los usuarios \' no pierdan datos relacionados con esos servicios durante la actualización.
 
-Si tu plan no es apto para actualizar los planes automáticamente, es posible que puedas cambiar los [planes manualmente,](change-plans-manually.md)en su lugar. También puede llamar [al soporte técnico](../../business-video/get-help-support.md) para obtener ayuda.
+Si tu plan no es apto para actualizar los planes automáticamente, es posible que puedas cambiar los [planes manualmente](change-plans-manually.md) en su lugar. También puede llamar [al soporte técnico](../../business-video/get-help-support.md) para obtener ayuda.
 
 #### <a name="your-subscription-has-an-add-on"></a>La suscripción tiene un complemento
 
@@ -143,11 +143,10 @@ Los **usuarios** no experimentarán ninguna interrupción del servicio. Seguirá
 ### <a name="users-and-licenses"></a>Usuarios y licencias
 
 Los usuarios de la suscripción antigua se transferirán automáticamente a la nueva suscripción.
-  
+
 Si la suscripción antigua incluye varios servicios y ha cambiado a qué servicios están asignados los usuarios, es posible que desee tomar nota de esto antes de actualizar los planes para poder volver a crear estos cambios más adelante. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si compró anteriormente Microsoft 365 Empresa Premium para los 100 usuarios, pero no asignó el servicio de SharePoint Online a 50 de ellos, este cambio no se conservaría después de actualizar los planes.
-  
+
 Si tiene más de una suscripción antes de actualizar los planes y tiene usuarios asignados licencias a más de una suscripción, este patrón de asignación se mantendrá tanto como sea posible en la nueva suscripción.
-  
 Todos los datos de usuario se conservarán durante la actualización, incluidos Exchange buzones de correo y SharePoint documentos en línea, listas y otra información.
   
 ### <a name="billing"></a>Facturación

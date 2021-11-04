@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Use la directiva de grupo para implementar el paquete de configuración Windows 10 dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 00befc6d33de8c93b2412d8a9f31a8aabe45f09c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3329d21b4e0ba55c4b91a56a26af890b1199fb56
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155039"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755739"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
 
@@ -59,8 +60,8 @@ ms.locfileid: "60155039"
 
 12. Haga **clic en Aceptar** y cierre las ventanas GPMC abiertas.
 
-
 ## <a name="offboard-devices-using-group-policy"></a>Dispositivos offboard con directiva de grupo
+
 Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
 > [!NOTE]
@@ -98,7 +99,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 Con la directiva de grupo no hay una opción para supervisar la implementación de directivas en los dispositivos. La supervisión se puede realizar directamente en el portal o mediante las distintas herramientas de implementación.
 
 ## <a name="monitor-devices-using-the-portal"></a>Supervisar dispositivos con el portal
-1. Vaya al [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com/).
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 2. Haga clic **en Lista dispositivos.**
 3. Compruebe que aparecen dispositivos.
 

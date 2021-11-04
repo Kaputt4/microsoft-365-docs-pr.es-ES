@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0d3e29809b8975f65dc3f12816a6e4f9a19dbe
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1618d77a81888fe9076d00124cef770e81810836
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702408"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756976"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -50,6 +50,12 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+
+## <a name="october-2021"></a>Octubre de 2021
+
+- [Mejora de DKIM de entrega avanzada:](configure-advanced-delivery.md)se agregó compatibilidad con la entrada de dominio DKIM como parte de la configuración de simulación de suplantación de identidad de terceros.
+- [Secure de forma predeterminada:](secure-by-default.md)Extended Secure de forma predeterminada para Exchange de flujo de correo (también conocidas como reglas de transporte).
 
 ## <a name="september-2021"></a>Septiembre de 2021
 

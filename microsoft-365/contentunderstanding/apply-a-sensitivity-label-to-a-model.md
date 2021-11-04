@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar una etiqueta de confidencialidad a un modelo en SharePoint Syntex.
-ms.openlocfilehash: 2b0ef2afda8f0a3d5431b8a14bc76dfcc3c3b663
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e03c1f2558c85866994ca2a13095158adb113207
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200202"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756144"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Aplicar una etiqueta de confidencialidad a un modelo en Microsoft SharePoint Syntex
 
 Puede aplicar fácilmente una [etiqueta de confidencialidad](../compliance/sensitivity-labels.md) a un modelo de comprensión mediante documentos en Microsoft SharePoint Syntex. Esta característica no está disponible todavía para los modelos de procesamiento de formularios.
 
-Las etiquetas de confidencialidad le permiten aplicar directivas de cifrado, de uso compartido y de acceso condicional a los documentos que sus modelos identifiquen. Ejemplo de uso: desea que el modelo no solo identifique los documentos financieros que contienen números de cuenta bancaria o de tarjeta de crédito que se cargan en la biblioteca de documentos, sino también que aplique una etiqueta de confidencialidad de *Cifrado* para restringir quién puede tener acceso a ese contenido y cómo se puede usar. Los modelos SharePoint Syntex respetan las reglas del [orden de las etiquetas](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) y tampoco sobrescriben una etiqueta existente aplicada manualmente por un usuario al archivo. 
+Las etiquetas de confidencialidad le permiten aplicar directivas de cifrado, de uso compartido y de acceso condicional a los documentos que sus modelos identifiquen. Por ejemplo, desea que el modelo no solo identifique los documentos financieros que contengan números de cuenta bancaria o números de tarjeta de crédito que se carguen en la biblioteca de documentos, sino que también aplique una etiqueta de confidencialidad que esté configurada con opciones de cifrado para restringir quién puede acceder a ese contenido y cómo se puede usar. Los modelos SharePoint Syntex respetan las reglas del [orden de las etiquetas](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) y tampoco sobrescriben una etiqueta existente aplicada manualmente por un usuario al archivo. 
 
 Puede aplicar una etiqueta de confidencialidad preexistente al modelo en la página principal del modelo. Para que esté disponible en la selección desde la configuración del modelo, la etiqueta ya debe haberse publicado.
 

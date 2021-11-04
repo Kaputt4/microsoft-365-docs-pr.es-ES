@@ -19,16 +19,22 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay 200 tipos de información confidencial que están listos para su uso en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 9d018833f6dd6d63ff32e8a3d77209177d7709f6
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 92b6d6720da67274e820a57fec8d2ade338574f2
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245686"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754170"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
 En este artículo se enumeran todas las definiciones de entidad de tipo de información confidencial. Cada definición muestra lo que busca una directiva DLP para detectar cada tipo. Para obtener más información acerca de los tipos de información confidencial, vea [Tipos de información confidencial](sensitive-information-type-learn-about.md)
+
+> [!NOTE]
+> Asignación del nivel de confianza (alto/medio/bajo) con número de precisión (valor numérico de 1 a 100)
+> - Confianza baja: 65 o inferior
+> - Confianza media: 75
+> - Elevada confianza: 85
 
 ## <a name="aba-routing-number"></a>Número de enrutamiento de ABA
 
@@ -5355,13 +5361,13 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver de s_license_number
 
--- permis de conduire
+- permis de conduire
 - yhilubade numbrid
 - número de juhiloa
 - juhiluba
 
-
 ## <a name="estonia-personal-identification-code"></a>Código de identificación personal de Estonia
+
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -10329,6 +10335,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 
 ## <a name="japan-my-number---corporate"></a>Japan My Number - Corporate
+
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -10390,6 +10397,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 
 ## <a name="japan-my-number---personal"></a>Japón Mi número: personal
+
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -15202,6 +15210,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Número único de ciudadano principal de Eslovenia
+
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -15473,7 +15482,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- Id.
+- ID
 - Identificación
 
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -15722,6 +15731,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - licencia manejo
 
 ## <a name="spain-dni"></a>DNI de España
+
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -17300,6 +17310,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 
 ## <a name="uk-unique-taxpayer-reference-number"></a>Reino Unido Número de referencia de contribuyente único
+
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -17475,7 +17486,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 - DLS
 - CDL
 - CDLS
-- Id.
+- ID
 - IDs
 - DL #
 - DLS #
@@ -17675,20 +17686,16 @@ No
 ### <a name="definition"></a>Definición
 
 Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_ssn encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de Keyword_ssn.
+- La función `Func_ssn` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_ssn` clave de.
 
 Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_unformatted_ssn busca contenido que coincida con el patrón.
-- Se encuentra una palabra clave de Keyword_ssn.
+- La función Func_unformatted_ssn' busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_ssn` clave de.
 
 Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_randomized_formatted_ssn encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de Keyword_ssn.
-
-Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_randomized_unformatted_ssn encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de Keyword_ssn.
+- La función `Func_randomized_formatted_ssn` o busca contenido que coincida con el `Func_randomized_unformatted_ssn` patrón.
+- Se encuentra una palabra `Keyword_ssn` clave de.
 
 
 ```xml

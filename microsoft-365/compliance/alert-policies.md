@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: 2498017d7322de547db57a9106cfb58b42664fec
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: afb186d0b0f1eb1073822261dafdb28ef839509d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725647"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753948"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -61,7 +62,7 @@ Para ver y crear directivas de alerta:
 
 ### <a name="microsoft-365-compliance-center"></a>Centro de cumplimiento de Microsoft 365
 
-Vaya a <https://compliance.microsoft.com> y, a continuación, **seleccione Directivas**  >  **directivas de alerta** de  >  **alerta.** Como alternativa, puede ir directamente a <https://compliance.microsoft.com/alertpolicies> .
+Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>y, a continuación, seleccione **Directivas directivas**  >  **alerta** de  >  **alerta directivas**.
 
 ![En el Centro de cumplimiento, seleccione Directivas y, en Alerta, seleccione Directivas de alerta para ver y crear directivas de alerta.](../media/LaunchAlertPoliciesMCC.png)
 

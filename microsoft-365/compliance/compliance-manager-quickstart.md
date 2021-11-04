@@ -13,16 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del Administrador de cumplimiento para ayudarle a lo largo de su recorrido de comprensión, configuración y uso del Administrador de cumplimiento.
-ms.openlocfilehash: 40453034c169c5969694425bea25f6f6b3ec4f84
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: e614c8abb46b9562db45afb0c3e67d990f627ce6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335747"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747219"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 
@@ -34,7 +35,7 @@ Tanto si va a ir al Administrador de cumplimiento por primera vez, como si está
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Primera visita: conocer al Administrador de cumplimiento
 
-El Administrador de cumplimiento se encuentra en el Centro de cumplimiento de Microsoft 365 en https://compliance.microsoft.com . El administrador global de la organización tendrá que configurar los permisos de usuario y asignar [roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) antes de empezar a usar el Administrador de cumplimiento.
+El Administrador de cumplimiento se encuentra en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a>. El administrador global de la organización tendrá que configurar los permisos de usuario y asignar [roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) antes de empezar a usar el Administrador de cumplimiento.
 
 La primera vez que visite el Administrador de cumplimiento, verá una puntuación de cumplimiento para su organización. El Administrador de cumplimiento ya está evaluando el entorno Microsoft 365 actual con respecto a la línea base de protección de datos. La mejor manera de empezar a familiarizarse con el Administrador de cumplimiento es comprender lo que le muestra, sus elementos clave y cómo personalizar el panel.
 

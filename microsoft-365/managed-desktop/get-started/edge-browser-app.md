@@ -10,26 +10,26 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 40ee9f21f94d480ec0cd76a6d145b6d242921614
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2534319ad890fbac20fa106216740f49eb5a3572
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170048"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756680"
 ---
 # <a name="new-microsoft-edge-app"></a>Nueva Microsoft Edge aplicación
 
-El nuevo [Microsoft Edge ofrece](https://www.microsoft.com/edge) un rendimiento de clase mundial con más privacidad, más productividad y más valor mientras explora. Escritorio administrado de Microsoft ofrece una vista previa pública de la implementación del nuevo explorador perimetral en su entorno.
+El nuevo [Microsoft Edge ofrece](https://www.microsoft.com/edge) un rendimiento de clase mundial con más privacidad, más productividad y más valor mientras explora. Microsoft Managed Desktop ofrece una vista previa pública de la implementación del nuevo explorador perimetral en su entorno.
 
 ## <a name="initial-deployment"></a>Implementación inicial
 
-Para migrar los dispositivos Escritorio administrado de Microsoft al nuevo explorador de Microsoft Edge, file an IT Support Ticket through the Escritorio administrado de Microsoft Portal. Implementaremos el canal estable perimetral en el grupo de prueba al presentar el vale y, a continuación, lo implementaremos en cada grupo de implementación posterior cada 24 horas. Para pausar la implementación, file another ticket asking Operations to hold.
+Para migrar los dispositivos de Escritorio administrado de Microsoft al nuevo explorador de Microsoft Edge, file an IT Support Ticket through the Microsoft Managed Desktop Portal. Implementaremos el canal estable perimetral en el grupo de prueba al presentar el vale y, a continuación, lo implementaremos en cada grupo de implementación posterior cada 24 horas. Para pausar la implementación, file another ticket asking Operations to hold.
 
-El [canal beta](/deployedge/microsoft-edge-channels#beta-channel) también está disponible a petición de validación representativa en su organización. Escritorio administrado de Microsoft implementará la aplicación según sea necesario en los grupos Test y First para que todos esos usuarios tengan el Canal Beta además del canal estable. Para cualquier otro usuario que necesite acceso al canal beta, agrégrelos al grupo **Modern Workplace - Edge Beta Users** y haga que lo instalen desde el Portal de empresa
+El [canal beta](/deployedge/microsoft-edge-channels#beta-channel) también está disponible a petición de validación representativa en su organización. Microsoft Managed Desktop implementará la aplicación según sea necesario en los grupos Test y First para que todos esos usuarios tengan el Canal Beta además del canal estable. Para cualquier otro usuario que necesite acceso al canal beta, agrégrelos al grupo **Modern Workplace - Edge Beta Users** y haga que lo instalen desde el Portal de empresa
 
 ## <a name="updates-to-microsoft-edge"></a>Actualizaciones de Microsoft Edge
 
-Escritorio administrado de Microsoft implementa el [canal](/deployedge/microsoft-edge-channels#stable-channel) estable de Microsoft Edge, que se actualiza automáticamente cada seis semanas. Las actualizaciones en el [](/deployedge/microsoft-edge-update-progressive-rollout) canal estable se revierte progresivamente por el grupo de productos Microsoft Edge para garantizar la mejor experiencia para los clientes. 
+Microsoft Managed Desktop implementa el [canal estable](/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge, que se actualiza automáticamente cada seis semanas. Las actualizaciones en el [](/deployedge/microsoft-edge-update-progressive-rollout) canal estable se revierte progresivamente por el grupo de productos Microsoft Edge para garantizar la mejor experiencia para los clientes. 
 
 El [canal beta](/deployedge/microsoft-edge-channels#beta-channel) se implementa en dispositivos de los grupos Test y First para la validación representativa dentro de la organización. Este canal es totalmente compatible y se actualiza automáticamente con nuevas características aproximadamente cada seis semanas.
 
@@ -37,18 +37,18 @@ Para asegurarse de que Microsoft Edge actualizaciones correctamente, no modifiqu
 
 
 
-## <a name="settings-managed-by-microsoft-managed-desktop"></a>Configuración administrado por Escritorio administrado de Microsoft
+## <a name="settings-managed-by-microsoft-managed-desktop"></a>Configuración administrado por Microsoft Managed Desktop
 
-Escritorio administrado de Microsoft ha creado un conjunto predeterminado de directivas para Microsoft Edge proteger el explorador. La configuración predeterminada del explorador es la siguiente:
+Microsoft Managed Desktop ha creado un conjunto predeterminado de directivas para Microsoft Edge proteger el explorador. La configuración predeterminada del explorador es la siguiente:
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge de Microsoft Edge de datos
 
-La línea base de seguridad Microsoft Edge dispositivos Escritorio administrado de Microsoft establece dos directivas para deshabilitar todas las extensiones de Chrome y proteger a los usuarios. Para habilitar e implementar extensiones en el entorno, consulte Configuración puede administrar. 
+La línea base de seguridad Microsoft Edge dispositivos de Escritorio administrado de Microsoft establece dos directivas para deshabilitar todas las extensiones de Chrome y proteger a los usuarios. Para habilitar e implementar extensiones en el entorno, consulte Configuración puede administrar. 
 
 #### <a name="extension-installation-blocklist"></a>Lista de bloqueo de instalación de extensión
 **Valor predeterminado:** Todos
 
-Escritorio administrado de Microsoft esta directiva para evitar que las extensiones de Chrome se instalen en puntos de conexión administrados. Existen riesgos conocidos asociados con el modelo de extensión Chromium de datos, incluida la protección contra pérdida de datos, la privacidad y otros riesgos que pueden poner en peligro los dispositivos. 
+Microsoft Managed Desktop establece esta directiva para evitar que las extensiones de Chrome se instalen en puntos de conexión administrados. Existen riesgos conocidos asociados con el modelo de extensión Chromium de datos, incluida la protección contra pérdida de datos, la privacidad y otros riesgos que pueden poner en peligro los dispositivos. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Permitir hosts de mensajería nativa de nivel de usuario (instalados sin permisos de administrador)
 
@@ -104,19 +104,22 @@ No se recomienda usar Flash debido a los riesgos de seguridad asociados. Si toda
 
 **Valor predeterminado:** Deshabilitado
 
-El administrador de contraseñas está deshabilitado de forma predeterminada. Si te gusta esta característica habilitada, presenta una solicitud de soporte técnico y nuestros ingenieros de servicio pueden habilitar la configuración en tu entorno. 
+El administrador de contraseñas está deshabilitado de forma predeterminada. Si desea habilitar esta característica, presente una solicitud de soporte técnico y nuestros ingenieros de servicio pueden habilitar la configuración en su entorno.
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Modo internet Explorer en Microsoft Edge
-El modo IE en Microsoft Edge facilita el uso de todos los sitios que su organización necesita en un solo explorador. Usa el motor Chromium integrado para sitios compatibles con el motor de representación de Chromium y usa el motor MSHTML trident de Internet Explorer 11 (IE11) para sitios que no son o tienen dependencias de la funcionalidad de IE. [Más información](/DeployEdge/edge-ie-mode) 
 
-Escritorio administrado de Microsoft habilita el modo de Internet Explorer para los dispositivos de forma predeterminada 
+El modo IE en Microsoft Edge facilita el uso de todos los sitios que su organización necesita en un solo explorador. Usa el motor Chromium integrado para sitios compatibles con el motor de representación de Chromium y usa el motor MSHTML trident de Internet Explorer 11 (IE11) para sitios que no son o tienen dependencias de la funcionalidad de IE. [Más información](/DeployEdge/edge-ie-mode)
+
+Microsoft Managed Desktop habilita el modo Internet Explorer para los dispositivos de forma predeterminada.
 
 #### <a name="internet-explorer-mode-integration"></a>Integración del modo de Internet Explorer
+
 **Valor predeterminado:** Modo de Internet Explorer
 
 De forma predeterminada, los dispositivos están configurados para usar el modo Internet Explorer, pero puedes establecerlos para que abran sitios en una ventana independiente de Internet Explorer 11. Para cambiar este comportamiento, presente una solicitud de soporte técnico.
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Agregar sitios a la lista Enterprise sitio de modo de acceso
+
 Para que los sitios se abran en modo Internet Explorer, debe incluirlos en la [lista Enterprise sitio](/DeployEdge/edge-ie-mode-sitelist). Mantener e implementar la lista Enterprise sitio es su responsabilidad. Para obtener más información, vea [Configure using the Configure Enterprise Mode Site List policy](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>Otras opciones de configuración
@@ -131,7 +134,7 @@ Cuando esta directiva está habilitada, los usuarios no pueden optar por el comp
 
 **Valor predeterminado:** NTLM, Negociar
 
-Escritorio administrado de Microsoft no admite esquemas de autenticación básica o implícita.
+Microsoft Managed Desktop no admite esquemas de autenticación básica o implícita.
 
 #### <a name="automatically-import-another-browsers-data-and-settings-at-first-run"></a>Importar automáticamente los datos y la configuración de otro explorador en la primera ejecución
 

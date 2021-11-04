@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b33db7e4fa0b3cc2fa61c0c7a45d1a9d2f9d3b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b60aca935af326680165a0ccc8669082b14f299d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156335"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753790"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
@@ -120,7 +120,7 @@ En esta sección se le guía en la configuración de las siguientes funcionalida
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 y Windows 11
 
-Desde el portal de Microsoft 365 Defender es posible descargar la directiva ".onboarding" que se puede usar para crear la directiva en System Center Configuration Manager e implementarla en Windows 10 y Windows 11 dispositivos.
+Desde el portal de Microsoft 365 Defender es posible descargar la directiva que se puede usar para crear la directiva en System Center Configuration Manager e implementarla en Windows 10 y Windows `.onboarding` 11 dispositivos.
 
 1. En un portal Microsoft 365 Defender, [seleccione Configuración y,](https://security.microsoft.com/preferences2/onboarding)a continuación, Incorporación .
 
@@ -330,7 +330,6 @@ Consulte [Optimizar la implementación y detecciones](/microsoft-365/security/de
 
     ![Una captura de pantalla de Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-
 7. Seleccione la directiva para la colección de archivos Windows y elija **Aceptar**.
 
     ![Una captura de pantalla de Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
@@ -339,7 +338,7 @@ Después de completar esta tarea, ahora ha configurado correctamente Protección
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>Para establecer reglas de acceso controlado a carpetas en modo auditoría
 
-1. En la Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance Overview Endpoint Protection Windows Defender Exploit \> \> \> Guard** y elija **Create Exploit Guard Policy**.
+1. En la Microsoft Endpoint Configuration Manager, vaya a **Assets and Compliance**  >  **Overview**  >  **Endpoint Protection** Windows Defender  >  **Exploit Guard** y, a continuación, elija Create Exploit Guard Policy .
 
     ![Captura de pantalla de Microsoft Endpoint Configuration Manager3.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 

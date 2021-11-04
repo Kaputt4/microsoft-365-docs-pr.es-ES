@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo definir y administrar alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 1692467ac882b563cedd51ad3770312ba883ccd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a2969da8fa782a07063614763da015e74d4826f9
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194506"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753534"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurar y ver alertas para las directivas de prevención de pérdida de datos
 
-Las directivas de prevención de pérdida de datos (DLP) pueden tomar medidas de protección para evitar el uso compartido involuntario de elementos confidenciales. Cuando se hace una acción en un elemento confidencial, se le puede notificar configurando alertas para DLP. En este artículo se muestra cómo definir directivas de alerta enriquecciones vinculadas a las directivas de prevención de pérdida de datos (DLP). Verá cómo usar el nuevo panel de administración de alertas DLP en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) para ver alertas, eventos y metadatos asociados para infracciones de directivas DLP.
+Las directivas de prevención de pérdida de datos (DLP) pueden realizar acciones de protección para evitar el uso compartido involuntario de elementos confidenciales. Cuando se hace una acción en un elemento confidencial, se le puede notificar configurando alertas para DLP. En este artículo se muestra cómo definir directivas de alerta enriquecciones vinculadas a las directivas de prevención de pérdida de datos (DLP). Verá cómo usar el nuevo panel de administración de alertas DLP en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> para ver alertas, eventos y metadatos asociados para infracciones de directivas DLP.
 
 <!-- LEFT OFF HERE-->
 
@@ -37,7 +37,7 @@ Las directivas de prevención de pérdida de datos (DLP) pueden tomar medidas de
 
 Las siguientes características forman parte de esto:
 
--   **Panel de administración de alertas DLP:** en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), este panel muestra alertas de directivas DLP que se aplican en las siguientes cargas de trabajo:
+-   **Panel de administración de alertas DLP:** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, este panel muestra alertas de directivas DLP que se aplican en las siguientes cargas de trabajo:
 
     -   Exchange
     -   SharePoint
@@ -62,13 +62,13 @@ Los clientes que usan [DLP](endpoint-dlp-learn-about.md) de extremo que son eleg
 
 ### <a name="licensing-for-alert-configuration-options"></a>Licencias para opciones de configuración de alertas
 
--   Configuración de alerta de evento **único:** las organizaciones que tienen una suscripción A1, F1 o G1 o una suscripción A3 o G3 solo pueden crear directivas de alerta cuando se desencadena una alerta cada vez que se produce una actividad.
--   **Configuración de alerta agregada:** para configurar directivas de alerta agregadas basadas en un umbral, debe tener una de las siguientes configuraciones:
-    -   Una suscripción A5 o G5
-    -   Una suscripción E1, F1 o G1 o una suscripción A3 o G3 que incluye una de las siguientes características:
-        -   Protección contra amenazas avanzada de Office 365 (plan 2)
-        -   Cumplimiento de Microsoft 365 E5
-        -   Microsoft 365 de complementos de eDiscovery y Audit
+- Configuración de alerta de evento **único:** las organizaciones que tienen una suscripción A1, F1 o G1 o una suscripción A3 o G3 solo pueden crear directivas de alerta cuando se desencadena una alerta cada vez que se produce una actividad.
+- **Configuración de alerta agregada:** para configurar directivas de alerta agregadas basadas en un umbral, debe tener una de las siguientes configuraciones:
+  - Una suscripción A5 o G5
+  - Una suscripción E1, F1 o G1 o una suscripción A3 o G3 que incluye una de las siguientes características:
+    - Protección contra amenazas avanzada de Office 365 (plan 2)
+    - Cumplimiento de Microsoft 365 E5
+    - Microsoft 365 de complementos de eDiscovery y Audit
 
 ### <a name="roles"></a>Funciones
 
@@ -101,7 +101,7 @@ Si es elegible para las [opciones](#licensing-for-alert-configuration-options)de
 
 Para trabajar con el panel de administración de alertas DLP:
 
-1.  En el [Centro de cumplimiento de Microsoft 365](https://www.compliance.microsoft.com), vaya a **Prevención de pérdida de datos**.
+1.  En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a **Prevención de pérdida de datos**.
 
 2.  Seleccione la **pestaña Alertas** para ver el panel de alertas dlp.
 
@@ -110,8 +110,7 @@ Para trabajar con el panel de administración de alertas DLP:
 
         :::image type="content" source="../media/alert-details.png" alt-text="Captura de pantalla que muestra detalles de alertas en el panel de administración de alertas DLP." border="false":::
 
-1.  Seleccione la **pestaña Eventos** para ver todos los eventos asociados con la alerta. Puede elegir un evento en particular para ver sus detalles.
-    En la tabla siguiente se muestran algunos de los detalles del evento.
+1.  Seleccione la **pestaña Eventos** para ver todos los eventos asociados con la alerta. Puede elegir un evento en particular para ver sus detalles. En la tabla siguiente se muestran algunos de los detalles del evento.
     
     | Categoría          | Nombre de propiedad                 | Descripción                                                                | Tipos de eventos aplicables                   |
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|

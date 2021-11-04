@@ -13,14 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter en Microsoft 365. Después de importar estos datos a Microsoft 365, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar el gobierno de los datos de Twitter de su organización.
-ms.openlocfilehash: 478731bc2855b199888311377c21f09aac17fcf1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd0885c0b9893b79d36981d52f596d1e5d6b8396
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193452"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757074"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Implementar un conector para archivar datos de Twitter
 
@@ -56,7 +57,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    ![Escriba el secreto y elija el período de expiración.](../media/TCimage08.png)
 
-8. Copie el valor del secreto y guárdelo en un archivo de texto u otra ubicación de almacenamiento. Este es el secreto de aplicación de AAD que se usa en los pasos posteriores.
+8. Copie el valor del secreto y guárdelo en un archivo de texto u otra ubicación de almacenamiento. Este es el secreto AAD aplicación que se usa en pasos posteriores.
 
    ![Copie y guarde el secreto.](../media/TCimage09.png)
 
@@ -152,15 +153,15 @@ La aplicación para desarrolladores de Twitter ya está lista para usarse.
 
    - **Secreto de token de acceso de Twitter:** El secreto de token de acceso que creó en el paso 3.
 
-   - **Id. de aplicación de AAD:** El identificador de la aplicación Azure Active Directory que creaste en el paso 1
+   - **AAD de aplicación:** El identificador de la aplicación Azure Active Directory que creaste en el paso 1
 
-   - **Secreto de aplicación de AAD:** Valor del secreto APISecretKey que creó en el paso 1.
+   - **AAD secreto de aplicación:** Valor del secreto APISecretKey que creó en el paso 1.
 
 5. Haga **clic en** Guardar para guardar la configuración del conector.
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Paso 5: Configurar un conector de Twitter en el Centro de cumplimiento de Microsoft 365
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic **en Conectores de datos** en la navegación izquierda.
+1. Vaya a la Centro de cumplimiento de Microsoft 365 y seleccione Conectores de datos <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">  página</a.
 
 2. En la página **Conectores de datos** de **Twitter,** haga clic en **Ver**.
 

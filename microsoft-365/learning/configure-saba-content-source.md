@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Obtenga información sobre cómo configurar Saba como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ms.openlocfilehash: 07c0148d7e1fefcd920a03426efba77ac91f374b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1f8c9610d9c1e747af6e0804bbd7c133de4351cf
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60664905"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755800"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Saba como origen de contenido para Aprendizaje Microsoft Viva
 
@@ -42,11 +42,15 @@ En este artículo se muestra cómo configurar Saba como un origen de contenido d
 1. Identifique la dirección URL principal de Saba Cloud (por ejemplo, "org".sabacloud.com). Si la dirección URL del panel de api org-api.sabacloud.com, la dirección URL de host se mostrará org.sabacloud.com.
 2. Identifique la dirección URL del panel de api yendo a **Saba Cloud**  >  **Admin**  >  **System Admin Manage**  >  **Integrations** API  >  **Dashboard**. Busque la dirección URL del panel de api y, a continuación, quite "https://" y "-api" para obtener la dirección URL del host.
 
+    ![Imagen del panel de api.](../media/learning/saba-a.png)
+
 ### <a name="client-id-and-client-secret"></a>Id. de cliente y secreto de cliente
 
 1. En la misma pantalla donde obtuvo la dirección URL del host, copie el id. de cliente y el secreto de cliente si ya se han generado.
 
 2. Si el secreto de cliente aún no está, seleccione el **botón GENERAR** para generarlo.
+
+    ![Imagen del panel de api con el cursor sobre el botón Generar.](../media/learning/saba-b.png)
 
 ## <a name="configure-in-your-microsoft-365-admin-center"></a>Configurar en el Centro de administración de Microsoft 365
 

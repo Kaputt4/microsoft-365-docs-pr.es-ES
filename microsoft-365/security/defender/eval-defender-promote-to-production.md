@@ -20,27 +20,30 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 81faa49992b49882ab162376608a03b2433741e9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eb59cc540d2c77f2d4715aa1c6c12f4e36aec8b0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198066"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753052"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promover el entorno Microsoft 365 Defender evaluación a la producción
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Para promover el entorno Microsoft 365 Defender evaluación a la producción, primero compre la licencia necesaria. Siga los pasos de [Crear el entorno de eval](eval-create-eval-environment.md) y compre la Office 365 E5 licencia (en lugar de seleccionar Iniciar prueba gratuita).
 
-A continuación, complete cualquier configuración adicional y expanda los grupos piloto hasta que estos lleguen a la producción completa. 
+A continuación, complete cualquier configuración adicional y expanda los grupos piloto hasta que estos lleguen a la producción completa.
 
 ## <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
-Defender for Identity no requiere ninguna configuración adicional. Solo asegúrate de haber comprado las licencias necesarias e instalado el sensor en todos los controladores de dominio de Active Directory y servidores de Servicios de federación de Active Directory (AD FS). 
 
-## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
+Defender for Identity no requiere ninguna configuración adicional. Solo asegúrate de haber comprado las licencias necesarias e instalado el sensor en todos los controladores de dominio de Active Directory y servidores de Servicios de federación de Active Directory (AD FS).
+
+## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
+
 Después de evaluar o pilotar MDO correctamente, se puede promover a todo el entorno de producción.
+
 1. Compre y aprovisione las licencias necesarias y asígnelas a los usuarios de producción.
 2. Vuelva a ejecutar las configuraciones de directiva de línea base recomendadas (estándar o estricta) en el dominio de correo electrónico de producción o grupos específicos de usuarios.
 3. Si lo desea, cree y configure cualquier directiva MDO personalizada en su dominio de correo electrónico de producción o grupos de usuarios.  Sin embargo, recuerde que las directivas de línea base asignadas siempre tendrán prioridad sobre las directivas personalizadas.
@@ -48,15 +51,16 @@ Después de evaluar o pilotar MDO correctamente, se puede promover a todo el ent
 5. Retirar las puertas de enlace SMTP de terceros y deshabilitar o eliminar los conectores EXO asociados con esta retransmisión.
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
+
 Para promover el entorno de evaluación de Microsoft Defender para endpoints de un entorno piloto a la producción, simplemente incorpore más puntos de conexión al servicio con cualquiera de las herramientas y métodos [admitidos.](../defender-endpoint/onboard-configure.md)
 
-Usa las siguientes directrices generales para incorporar más dispositivos a Microsoft Defender para endpoint. 
+Usa las siguientes directrices generales para incorporar más dispositivos a Microsoft Defender para endpoint.
 
 1. Compruebe que el dispositivo cumple los [requisitos mínimos](../defender-endpoint/minimum-requirements.md).
 2. Según el dispositivo, siga los pasos de configuración proporcionados en la sección incorporación del portal defender para endpoints.
 3. Usa la herramienta de administración y el método de implementación adecuados para tus dispositivos.
-4.  Ejecute una prueba de detección para comprobar que los dispositivos están correctamente incorporados e informando al servicio.
+4. Ejecute una prueba de detección para comprobar que los dispositivos están correctamente incorporados e informando al servicio.
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
-Microsoft Cloud App Security no requiere ninguna configuración adicional. Solo asegúrate de haber comprado las licencias necesarias. Si ha definido el ámbito de la implementación en determinados grupos de usuarios, aumente el ámbito de estos grupos hasta que alcance la escala de producción. 
 
+Microsoft Cloud App Security no requiere ninguna configuración adicional. Solo asegúrate de haber comprado las licencias necesarias. Si ha definido el ámbito de la implementación en determinados grupos de usuarios, aumente el ámbito de estos grupos hasta que alcance la escala de producción.

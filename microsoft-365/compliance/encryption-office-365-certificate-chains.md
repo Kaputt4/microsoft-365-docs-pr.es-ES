@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Ver una lista completa de certificados raíz y autoridades de certificación (CA) en Microsoft 365.
-ms.openlocfilehash: 65e71ad941c052fecca9d3c3817bbbb0a3a278d5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 34084fd3046a4e26c2ff99a0d8982e00b5c70829
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194458"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755232"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 cadenas de cifrado
 
@@ -146,19 +146,19 @@ Expanda las secciones raíz e intermedia siguientes para ver detalles adicionale
 | **Pin (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk= |
 | **DIRECCIONES URL de CRL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 
-### <a name="dst-root-ca-x3"></a>**CA raíz de DST X3**
+### <a name="isrg-root-x1"></a>**Raíz DE ISRG X1**
 
-| **Asunto** | CN=DST Root CA X3<br>O=Digital Signature Trust Co. |
+| **Asunto** | C = US, O = Internet Security Research Group, CN = ISRG Root X1 |
 | --- | --- |
-| **Número de serie** | 44:AF:B0:80:D6:A3:27:BA:89:30:39:86:2E:F8:40:6B |
-| **Longitud de clave pública** | RSA 2048 bits (e 65537) |
-| **Algoritmo de firma** | sha1RSA |
-| **Validity Not Before** | 30 de septiembre de 21:12:19 2000 UTC |
-| **Validity Not After** | 30 de septiembre de 14:01:15 2021 UTC |
-| **Identificador de clave de asunto** | c4:a7:b1:a4:7b:2c:71:fa:db:e1:4b:90:75:ff:c4:15:60:85:89:10 |
-| **Huella digital (SHA-1)** | DAC9024F54D8F6DF94935FB1732638CA6AD77C13 |
-| **Huella digital (SHA-256)** | 0687260331A72403D909F105E69BCF0D32E1BD2493FFC6D9206D11BCD6770739 |
-| **Pin (SHA-256)** | Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys= |
+| **Número de serie** | 82:10:cf:b0:d2:40:e3:59:44:63:e0:bb:63:82:8b:00 |
+| **Longitud de clave pública** | RSA 4096 bit |
+| **Algoritmo de firma** | sha256WithRSAEncryption |
+| **Validity Not Before** | 4 de junio de 11:04:38 2015 UTC |
+| **Validity Not After** | 4 de junio de 11:04:38 2035 UTC |
+| **Identificador de clave de asunto** | 79:B4:59:E6:7B:B6:E5:E4:01:73:80:08:88:C8:1A:58:F6:E9:9B:6E |
+| **Huella digital (SHA-1)** | CABD2A79A1076A31F21D253635CB039D4329A5E8 |
+| **Huella digital (SHA-256)** | 96BCEC06264976F37460779ACF28C5A7CFE8A3C0AAAE11A8FFCEE05C0BDDF08C6 |
+| **Pin (SHA-256)** | 0b9fa5a59eed715c26c1020c711b4f6ec42d58b0015e14337a39dad301c5afc3 |
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entrust Root Certification Authority - G2**
 

@@ -15,24 +15,25 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c110682e6090c013ffc3d13cd5fa78b1483c8d2d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3b2094be06dd9d5f2543738082f9f76bb292609d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703456"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754970"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Aprende a implementar Defender for Endpoint en Android en Portal de empresa de Intune dispositivos inscritos. Para obtener más información acerca de la inscripción de dispositivos de Intune, consulta  [Inscribir el dispositivo](/mem/intune/user-help/enroll-device-android-company-portal).
+Aprende a implementar Defender for Endpoint en Android en Portal de empresa de Intune dispositivos inscritos. Para obtener más información acerca de la inscripción de dispositivos de Intune, consulta [Inscribir el dispositivo](/mem/intune/user-help/enroll-device-android-company-portal).
 
 > [!NOTE]
 > **Defender para endpoint en Android ya está disponible en [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)**
@@ -124,7 +125,7 @@ Sigue los pasos siguientes para agregar la aplicación Microsoft Defender para e
 
 5. Se le mostrará la página Configuración de aprobación. La página confirma tu preferencia para controlar los nuevos permisos de la aplicación que Defender for Endpoint en Android podría pedir. Revisa las opciones y selecciona la opción preferida. Seleccione **Listo**.
 
-    De forma predeterminada, Google Play administrado selecciona Mantener aprobado cuando *la aplicación solicita nuevos permisos*
+    De forma predeterminada, Google Play administrado selecciona **Mantener aprobado cuando la aplicación solicita nuevos permisos**.
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de la pestaña notificaciones.](images/ffecfdda1c4df14148f1526c22cc0236.png)

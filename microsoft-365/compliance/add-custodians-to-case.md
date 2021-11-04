@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la herramienta de administración de custodia integrada en Advanced eDiscovery coordinar los flujos de trabajo e identificar orígenes de datos relevantes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12a1a6d40706e71043dffdc899847b7d8062430b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d195690493e320407f7c9b1ca0d45da7c78955a7
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171044"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753555"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un Advanced eDiscovery caso
 
@@ -48,11 +48,11 @@ Para agregar custodios a un caso, debe ser miembro del grupo de roles administra
 
 1. Vaya a e inicie sesión con una cuenta de usuario a la que se han [https://compliance.microsoft.com](https://compliance.microsoft.com) asignado los permisos de exhibición de documentos electrónicos adecuados.
 
-2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, luego, seleccione **eDiscovery > Avanzado**.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, seleccione **Mostrar** todos los archivos  >    >  **de exhibición de documentos electrónicos Advanced eDiscovery** y seleccione la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank"> **Casos**</a>.
 
-3. En la **Advanced eDiscovery,** haga clic en la pestaña **Casos** y, a continuación, seleccione el caso al que desea agregar custodios.
+3. Seleccione el caso al que desea agregar custodios.
 
-4. Haga clic en **la pestaña Orígenes de** datos y, a continuación, haga clic en **Agregar** origen de datos Agregar  >  **nuevos custodios.**
+4. Seleccione la **pestaña Orígenes de** datos y, a continuación, seleccione Agregar origen de **datos** Agregar  >  **nuevos custodios**.
 
 5. Agregue uno o varios usuarios de la organización como custodios al caso escribiendo la primera parte del nombre o alias de una persona. Después de encontrar a la persona correcta, seleccione su nombre para agregarlo a la lista.
 

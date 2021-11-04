@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo obtener acceso y usar el Portal de confianza de servicio de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: bbfc84b2ada1e75407ca8c1c42855bdbf336bbf2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c74cd1e12d7ca2d6ac7adeb3ace921f54fe4b5a1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207324"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757196"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al Portal de confianza de servicio de Microsoft
 
@@ -69,7 +69,7 @@ El **vínculo Portal de confianza** de servicio muestra la página principal. Pr
 ### <a name="compliance-manager"></a>Administrador de cumplimiento
 
 > [!IMPORTANT]
-> El Administrador de cumplimiento se ha movido del Portal de confianza de servicio a su nueva ubicación en [el Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Todos los datos de clientes se han movido a la nueva ubicación, de modo que pueda seguir usando el Administrador de cumplimiento sin interrupciones. Consulte la documentación [del Administrador de cumplimiento para](compliance-manager.md) obtener información sobre la configuración y para obtener información sobre las nuevas características. Aunque la versión clásica del Administrador de cumplimiento permanece en el Portal de confianza de servicio, se recomienda a todos los usuarios que usen el Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365.
+> El Administrador de cumplimiento se ha movido del Portal de confianza de servicio a su nueva ubicación en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a>. Todos los datos de clientes se han movido a la nueva ubicación, de modo que pueda seguir usando el Administrador de cumplimiento sin interrupciones. Consulte la documentación [del Administrador de cumplimiento para](compliance-manager.md) obtener información sobre la configuración y para obtener información sobre las nuevas características. Aunque la versión clásica del Administrador de cumplimiento permanece en el Portal de confianza de servicio, se recomienda a todos los usuarios que usen el Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365.
 
 ### <a name="trust-documents"></a>Documentos de confianza
 

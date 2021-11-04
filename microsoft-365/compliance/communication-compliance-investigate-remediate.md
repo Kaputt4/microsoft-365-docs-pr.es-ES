@@ -15,15 +15,16 @@ ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d8b3dedd4dca6842dcd45c2c2973511bfe716cf5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3770d42f72ff9b1dea33554ba11722ba3ba3f843
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665298"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757439"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -33,7 +34,7 @@ Después de configurar las directivas de cumplimiento de comunicaciones, empezar
 
 El primer paso para investigar los problemas detectados por las directivas es revisar las alertas de cumplimiento de comunicaciones en el Centro de cumplimiento de Microsoft 365. Hay varias áreas en el área de solución de cumplimiento de comunicaciones que le ayudarán a investigar rápidamente las alertas, en función de cómo prefiera ver la agrupación de alertas:
 
-- **Página directiva de cumplimiento de** comunicaciones: cuando inicie sesión en el uso de credenciales para una cuenta de administrador en su organización de Microsoft 365, seleccione Cumplimiento de comunicaciones para mostrar la página Directiva de cumplimiento [https://compliance.microsoft.com](https://compliance.microsoft.com) **de**  comunicaciones. En esta página se muestran las directivas de cumplimiento de comunicaciones configuradas para Microsoft 365 organización y vínculos a plantillas de directiva recomendadas. Cada directiva enumerada incluye el recuento de alertas que necesitan revisión, el número de elementos escalados y resueltos, el estado de la directiva y la fecha y hora del último examen de directiva. Al seleccionar una directiva, se muestran todas las alertas pendientes para las coincidencias con la directiva, se selecciona una alerta específica para iniciar la página de detalles de la directiva e iniciar acciones de corrección.
+- **Página directiva de** cumplimiento de comunicaciones: cuando inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> con credenciales  para una cuenta de administrador de su organización de Microsoft 365, seleccione Cumplimiento de comunicaciones para mostrar la página Directiva de cumplimiento **de** comunicaciones. En esta página se muestran las directivas de cumplimiento de comunicaciones configuradas para Microsoft 365 organización y vínculos a plantillas de directiva recomendadas. Cada directiva enumerada incluye el recuento de alertas que necesitan revisión, el número de elementos escalados y resueltos, el estado de la directiva y la fecha y hora del último examen de directiva. Al seleccionar una directiva, se muestran todas las alertas pendientes para las coincidencias con la directiva, se selecciona una alerta específica para iniciar la página de detalles de la directiva e iniciar acciones de corrección.
 - **Alertas:** vaya **a Alertas de cumplimiento** de comunicación para mostrar los últimos 30 días de  >   alertas agrupadas por coincidencias de directiva. Esta vista le permite ver rápidamente qué directivas de cumplimiento de comunicaciones generan la mayoría de las alertas ordenadas por gravedad. Para iniciar acciones de corrección, seleccione la directiva asociada a la alerta para iniciar la **página Detalles de la** directiva. Desde la **página** Detalles de la directiva, puede revisar un resumen de las actividades  de la página Información general,  revisar y actuar en los mensajes de alerta de la página Pendiente o revisar el historial de alertas cerradas en la página Resuelto. 
 - **Informes:** vaya a Informes **de cumplimiento de**  >  **comunicación** para mostrar widgets de informe de cumplimiento de comunicaciones. Cada widget proporciona una introducción a las actividades y estados de cumplimiento de comunicación, incluido el acceso a información más detallada sobre las coincidencias de directivas y las acciones de corrección.
 
@@ -68,7 +69,7 @@ En la tabla siguiente se describen los detalles del filtro:
 
 #### <a name="to-configure-a-filter"></a>Para configurar un filtro
 
-1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a> con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
 
@@ -92,7 +93,7 @@ Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticam
 
 #### <a name="to-remediate-duplicates"></a>Para corregir duplicados
 
-1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a> con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
 
@@ -176,7 +177,7 @@ Para crear un flujo Power Automate de una plantilla predeterminada recomendada, 
 
 Siga estos pasos para crear un flujo Power Automate de una plantilla predeterminada:
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a **Directivas** de cumplimiento de comunicación y seleccione la directiva con  >   la alerta que desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **Power Automate,** seleccione una plantilla predeterminada de la sección Plantillas de cumplimiento de comunicación que le pueden **gustar** en la página.
@@ -193,7 +194,7 @@ De forma predeterminada, Power Automate flujos creados por un usuario solo está
 Para compartir un flujo Power Automate, debe ser miembro de al menos un grupo de roles de cumplimiento de comunicaciones.
 Siga estos pasos para compartir un flujo Power Automate datos:
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a **Directivas** de cumplimiento de comunicación y seleccione la directiva con  >   la alerta que desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **página Power Automate flujos,** seleccione la **pestaña Mis flujos** o Flujos **de** equipo.
@@ -207,7 +208,7 @@ Si necesita editar un flujo, usará el **control** Power Automate cuando trabaje
 
 Siga estos pasos para editar un flujo Power Automate datos:
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a **Directivas** de cumplimiento de comunicación y seleccione la directiva con  >   la alerta que desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **página Power Automate flujos,** seleccione flujo para editar. Seleccione **Editar** en el menú control de flujo.
@@ -220,7 +221,7 @@ Si necesita eliminar un flujo, usará el **control** Power Automate cuando traba
 
 Siga estos pasos para eliminar un flujo Power Automate datos:
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a Directivas de **cumplimiento** de comunicación y seleccione la directiva con la alerta que  >   desea revisar.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a **Directivas** de cumplimiento de comunicación y seleccione la directiva con  >   la alerta que desea revisar.
 2. En la directiva, seleccione la **pestaña** Pendiente y seleccione una alerta pendiente.
 3. Seleccione **Power Automate** en el menú de acción de alerta.
 4. En la **página Power Automate flujos,** seleccione flujo que desea eliminar. Seleccione **Eliminar** en el menú control de flujo.
@@ -266,7 +267,7 @@ Cuando se resuelven los mensajes, se quitan de la **vista** de pestaña Pendient
 
 Para deshacer la resolve de los mensajes, siga estos pasos:
 
-1. Inicie sesión en [el Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con las credenciales  de un  usuario asignado al analista de cumplimiento de comunicaciones o a los grupos de roles del investigador de cumplimiento de comunicaciones de Microsoft 365 organización.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a> con las credenciales  de un  usuario asignado al analista de cumplimiento de comunicaciones o a los grupos de roles del investigador de cumplimiento de comunicaciones de Microsoft 365 organización.
 2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
 3. Seleccione la **pestaña Directivas** y, a continuación, seleccione una directiva que contenga el mensaje de alerta resuelto, haga doble clic para abrir la **página** Directiva.
 4. En la **página Directiva,** seleccione la **pestaña Resuelto.**

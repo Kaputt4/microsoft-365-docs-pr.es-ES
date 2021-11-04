@@ -13,16 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: ec44ec38a76cf0371804df25b698d77ba7b5aa22
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5f8bdec9dd7a6a784ff9eb6e91ab44ffd97fcda0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702022"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754894"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -38,7 +39,7 @@ El Microsoft 365 global de la organización probablemente será el primer usuari
 
 ## <a name="sign-in"></a>Iniciar sesión
 
-1. Vaya a la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) e **inicie sesión** con su Microsoft 365 de administrador global.
+1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e **inicie sesión** con su Microsoft 365 de administrador global.
 2. Seleccione **Administrador de cumplimiento** en el panel de navegación izquierdo. Llegarás al panel del Administrador [de cumplimiento](#understand-the-compliance-manager-dashboard).
 
 El vínculo directo para acceder al Administrador de cumplimiento es [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) .
@@ -56,7 +57,7 @@ La persona que tiene el rol de administrador global de su organización puede es
 
 Para establecer permisos y asignar roles en el Centro de cumplimiento de Microsoft 365, siga los pasos siguientes:
 
-1. Vaya a la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/compliancemanager) y seleccione **Permisos** en la navegación izquierda.
+1. Vaya a la Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permisos**</a>.
 
 2. En la lista **desplegable Centro de** cumplimiento, seleccione **Roles**.
 
@@ -108,7 +109,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 #### <a name="to-manage-your-automated-testing-settings"></a>Para administrar la configuración de pruebas automatizadas:
 
-1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
+1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -130,7 +131,7 @@ La configuración del historial de usuarios también le permite reasignar todas 
 
 **Para buscar la configuración del historial de usuarios:**
 
-1. Seleccione Configuración en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
+1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -148,7 +149,7 @@ El informe refleja el estado de la acción de mejora a partir de su fecha de cre
 
 **Siga los pasos siguientes para exportar un informe por usuario:**
 
-1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
+1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -166,7 +167,7 @@ Puede reasignar acciones de mejora de un usuario a otro. Al reasignar una acció
 
 **Siga los pasos siguientes para reasignar acciones de mejora a otro usuario:**
 
-1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
+1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 
@@ -193,7 +194,7 @@ Al eliminar el historial de un usuario, se eliminarán como propietarios de las 
 
 Para eliminar el historial de un usuario, siga estos pasos:
 
-1. Seleccione **Configuración** en la navegación izquierda desde cualquier lugar del [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
+1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
 2. En la página configuración, seleccione **Administrador de cumplimiento**.
 

@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c369f070d7dd166ede57bd51d6df4c5dcbba1d51
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6b022551db4b3ca759ffb6d1f9eae184b64e0683
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588533"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756208"
 ---
 # <a name="shared-devices"></a>Dispositivos compartidos
 
@@ -47,18 +47,17 @@ El modo de dispositivo compartido no es una buena opción en estas situaciones:
 
 Tanto si tú como un partner administras la inscripción, puedes elegir usar el modo de dispositivo compartido.
 
-Si estás inscribiendo dispositivos tú mismo, sigue los pasos de [Registrar](../get-started/register-devices-self.md)nuevos dispositivos tú mismo y, a continuación, agréguelos al grupo Dispositivos modernos del lugar de **trabajo:Modo de dispositivo** compartido. 
+Si estás inscribiendo dispositivos tú mismo, sigue los pasos de [Registrar](../get-started/register-devices-self.md)nuevos dispositivos tú mismo y, a continuación, agréguelos al grupo Dispositivos modernos del lugar de **trabajo:Modo de dispositivo** compartido.
 
 > [!WARNING]
 > No intente convertir ningún dispositivo de Escritorio administrado de Microsoft existente en modo de dispositivo compartido simplemente agregándolos a este grupo. Las directivas que se aplican pueden provocar que OneDrive archivos se pierdan permanentemente.
 
 Si tienes un socio inscribir dispositivos, sigue los pasos descritos en [Pasos](../get-started/register-devices-partner.md)para que los partners registren dispositivos, pero anexa **-Shared** a la etiqueta de grupo, como se muestra en la tabla siguiente:
 
-
 |Perfil de dispositivo  |Etiqueta de grupo (modo estándar)  |Etiqueta de grupo (modo de dispositivo compartido)  |
 |---------|---------|---------|
 |Fecha confidencial | Microsoft365Managed_SensitiveData        |  Microsoft365Managed_SensitiveData-Shared       |
-| Power user         | Microsoft365Managed_PowerUser        | No compatible        |
+| Power user         | Microsoft365Managed_PowerUser        | No se admite        |
 |Estándar     | Microsoft365Managed_Standard        | Microsoft365Managed_Standard-Shared  |
 
 ## <a name="consequences-of-shared-device-mode"></a>Consecuencias del modo de dispositivo compartido
@@ -112,6 +111,7 @@ Cada Microsoft Intune dispositivo tiene un usuario principal, que se asigna cuan
 > Mientras el modo de dispositivo compartido está en versión preliminar pública, asegúrese de quitar el usuario principal siguiendo estos pasos: inicie sesión en el Centro de administración de Microsoft Endpoint Manager, seleccione Dispositivos Todos los dispositivos, seleccione un dispositivo, después seleccione Propiedades Quitar usuario principal y elimine el usuario que aparece >   > allí.
 
 ### <a name="deploying-apps-with-company-portal"></a>Implementación de aplicaciones con Portal de empresa
+
 Es probable que algunas aplicaciones no necesiten estar presentes en todos los dispositivos, por lo que es posible que prefieras que los usuarios solo instalen esas aplicaciones cuando las [necesiten](/mem/intune/user-help/install-apps-cpapp-windows)desde Portal de empresa . Microsoft Managed Desktop deshabilita los Portal de empresa de forma predeterminada para dispositivos en modo de dispositivo compartido. Si desea habilitar Portal de empresa, puede presentar una solicitud de [cambio,](../working-with-managed-desktop/admin-support.md)pero debe tener en cuenta algunas limitaciones de esta característica en esta versión preliminar pública:
 
 - Para que una aplicación esté disponible para los usuarios de Portal de empresa, asigne un grupo de usuarios a esa aplicación en Intune y, a continuación, agregue cada usuario [a](/mem/intune/apps/apps-deploy) ese grupo de usuarios.
@@ -119,13 +119,12 @@ Es probable que algunas aplicaciones no necesiten estar presentes en todos los d
 - Para desinstalar una aplicación que un usuario instaló a través de Portal de empresa, debes desinstalar la aplicación de todos los usuarios de ese dispositivo.
 
 > [!CAUTION]
-> Portal de empresa no admite aplicaciones asignadas a grupos de dispositivos como disponibles. 
+> Portal de empresa no admite aplicaciones asignadas a grupos de dispositivos como disponibles.
 
 ### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>Reimplementación de Aplicaciones Microsoft 365 para empresas
+
 Durante la versión preliminar pública, si Aplicaciones Microsoft 365 debe volver a implementarse, los usuarios tendrán que ponerse en contacto con su personal de soporte técnico local para solicitar que un agente eleve y vuelva a instalar Aplicaciones Microsoft 365 para empresas en ese dispositivo.
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
+
 Cuando un usuario Teams por primera vez, se le pedirá que actualice la aplicación antes de poder usarla. Una vez que permiten la actualización, Teams se mantendrá actualizado en segundo plano.
-
-
-

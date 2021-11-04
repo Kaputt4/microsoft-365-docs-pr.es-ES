@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 la integración con la configuración de ServiceNow
+title: Información general de configuración de compatibilidad de Microsoft 365 con ServiceNow
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,18 +17,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: c5d0bf57eb037bd19b9666f9b3684249986d8f2e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 28b156cc9f9062863868550f2aac216b8d92a403
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662153"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754204"
 ---
-# <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 la integración con la configuración de ServiceNow
+# <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Información general de configuración de compatibilidad de Microsoft 365 con ServiceNow
 
 **Microsoft 365 la integración** de soporte técnico le permite integrar Microsoft 365 ayuda, soporte técnico y estado del servicio con las instancias de ServiceNow. Puede investigar problemas conocidos y notificados de Microsoft, resolver incidentes, completar tareas mediante soluciones recomendadas de Microsoft y, si es necesario, escalar a soporte técnico con ayuda humana de Microsoft.
 
-Para obtener **Microsoft 365 la aplicación de integración** de soporte técnico de la tienda ServiceNow, vaya a la Tienda [servicenow](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+Para obtener **Microsoft 365 la aplicación de integración** de soporte técnico de la tienda ServiceNow, vaya a la Tienda [ServiceNow](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
 ## <a name="key-features"></a>Características principales
 

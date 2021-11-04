@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Use un archivo CSV de una búsqueda de contenido existente para crear una búsqueda de lista de identificadores que devuelva elementos de correo electrónico específicos.
-ms.openlocfilehash: 574c130f7ec7c4f47569179ca6fc0712d76c395c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e06a5ba45b7c9b90875ed099e11263c28146998
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156491"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755716"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Preparar un archivo CSV para una búsqueda de contenido de lista de identificadores
 
@@ -35,7 +36,7 @@ Este es un resumen rápido del proceso para crear una búsqueda de lista de iden
 
 1. Cree y ejecute una nueva búsqueda en el Centro de cumplimiento de Microsoft 365.
 
-2. Exporte los resultados de búsqueda de contenido o el informe de búsqueda de contenido. Para más información vea:
+2. Exporte los resultados de búsqueda de contenido o el informe de búsqueda de contenido. Para más información, vea:
 
     - [Exportar resultados de la búsqueda de contenido](export-search-results.md)
 
@@ -80,7 +81,7 @@ El siguiente paso es crear una nueva búsqueda de lista de identificadores y env
 > [!IMPORTANT]
 > Debe crear una búsqueda de lista de identificadores no más de 2 días después de exportar los resultados o el informe de búsqueda. Si los resultados de búsqueda o el informe donde se exportaron hace más de 2 días, debe volver a exportar los resultados de búsqueda o el informe para generar archivos CSV actualizados. A continuación, puede preparar uno de los archivos CSV actualizados y usarlo para crear una búsqueda de lista de identificadores.
 
-1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión.
 
 2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, luego, seleccione **Búsqueda de contenido**.
 

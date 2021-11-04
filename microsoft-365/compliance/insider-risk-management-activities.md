@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6d5974f1a6fca1a56438317b58d36193cb08a7fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 47840e7de14f48a4ae6fee5c134d432accb27e4c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662630"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754488"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigar actividades de administración de riesgos de insider
 
@@ -103,7 +103,7 @@ Puede ayudar a ahorrar tiempo de triaje para que los analistas e investigadores 
 
 Para descartar una alerta de riesgo de insider, siga estos pasos:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas,** seleccione la alerta (o alertas) con el estado Necesita *revisión* que desea descartar.
 3. En la barra de comandos Alertas, seleccione **Descartar alertas**.
 4. En el **panel de detalles** Descartar alertas, puede revisar los detalles de usuario y directiva asociados con las alertas seleccionadas.
@@ -113,7 +113,7 @@ Para descartar una alerta de riesgo de insider, siga estos pasos:
 
 Para realizar una evaluación de una alerta de riesgo insider, siga estos pasos:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas,** seleccione la alerta que desea triage.
 3. En la página Detalles **de** alerta, puede revisar la información sobre la alerta y puede confirmar la alerta y crear un nuevo caso, confirmar la alerta y agregarla a un caso existente, o descartar la alerta. Esta página también incluye el estado actual de la alerta y el nivel de gravedad del riesgo de alerta, enumerado como Alto, Medio o Bajo. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no está triaged.
 
@@ -153,7 +153,7 @@ Use los filtros Ámbito de actividad y Perspectiva de riesgos para mostrar y ord
 
 Para usar el **explorador de actividades,** siga estos pasos:
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Alertas.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas,** seleccione la alerta que desea triage.
 3. En el **panel de detalles Alertas,** **seleccione Abrir vista expandida**.
 4. En la página de la alerta seleccionada, seleccione la **pestaña Explorador de** actividades.
@@ -171,7 +171,7 @@ Al seleccionar los eventos de una actividad de la escala de tiempo de actividad,
 
 A medida que se revisa y se revisa la alerta, puede crear un nuevo caso para investigar aún más la actividad de riesgo. Para crear un caso para una alerta, siga estos pasos:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas,** seleccione la alerta para la que desea confirmar y crear un nuevo caso.
 3. En el **panel Detalles de alertas,** seleccione **Acciones**  >  **Confirmar alertas & crear caso**.
 4. En el **cuadro de diálogo** Confirmar alerta y crear caso de riesgo interno, escriba un nombre para el caso, seleccione usuarios para agregar como colaboradores y agregue comentarios según corresponda. Los comentarios se agregan automáticamente al caso como nota de caso.

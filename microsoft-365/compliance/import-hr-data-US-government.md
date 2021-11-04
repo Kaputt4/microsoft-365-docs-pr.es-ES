@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: bd253ca06b365aab99822aa6245f80e43119a8d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 540a652d314aa94a191dccfe672ee7429b3d7f35
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188210"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755200"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurar un conector para importar datos de recursos humanos en US Government
 
@@ -36,15 +36,15 @@ Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 
-El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación corresponderá al conector de recursos humanos que creas en el paso 3. La creación de esta aplicación permitirá a Azure AD autenticar el conector de RECURSOS humanos cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación corresponderá al conector de recursos humanos que creas en el paso 3. Al crear esta aplicación, Azure AD autenticar el conector de recursos humanos cuando se ejecuta e intenta acceder a la organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Id. de aplicación de Azure AD (también denominado *id. de aplicación* o *id. de cliente)*
+- Azure AD de aplicación (también denominado id. *de* aplicación o *id. de cliente)*
 
-- Secreto de aplicación de Azure AD (también denominado *secreto de cliente)*
+- Azure AD secreto de aplicación (también denominado *secreto de cliente)*
 
 - Identificador de inquilino (también denominado *id. de directorio)*
 
-Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, consulte [Register an application with the Plataforma de identidad de Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, consulta Registrar una [aplicación con el Plataforma de identidad de Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Paso 2: Preparar un archivo CSV con los datos de recursos humanos
 
@@ -73,7 +73,7 @@ Después de crear el archivo CSV con los datos de RECURSOS humanos necesarios, g
 
 El siguiente paso es crear un conector de recursos humanos en el Centro de cumplimiento de Microsoft 365. Después de ejecutar el script en el paso 4, el conector de RECURSOS humanos que cree ingerirá los datos de RECURSOS humanos del archivo CSV a su Microsoft 365 organización. En este paso, asegúrese de copiar el identificador de trabajo que se genera al crear el conector. Usará el identificador de trabajo al ejecutar el script.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic **en Conectores de datos** en la navegación izquierda.
+1. Vaya a la Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank"> **Conectores de** datos página</a>.
 
 2. En la **página Conectores de datos** en **HR,** haga clic **en Ver**.
 
@@ -81,7 +81,7 @@ El siguiente paso es crear un conector de recursos humanos en el Centro de cumpl
 
 4. En la **página Credenciales de autenticación,** haga lo siguiente y, a continuación, haga clic **en Siguiente**:
 
-   1. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que creó en el paso 1.
+   1. Escriba o pegue el Azure AD de aplicación para la aplicación de Azure que creó en el paso 1.
 
    1. Escriba un nombre para el conector de RECURSOS HUMANOS.
 
@@ -137,9 +137,9 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
    | Parámetro | Descripción |
    |:-----|:-----|:-----|
-   |`tenantId`|El identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del Centro de administración de Azure AD. Esto se usa para identificar la organización.|
-   |`appId` |Identificador de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. Azure AD lo usa para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización. |
-   |`appSecret`|El secreto de aplicación de Azure AD para la aplicación que creó en Azure AD en el paso 1. También se usa para la autenticación.|
+   |`tenantId`|El identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del centro Azure AD administración. Esto se usa para identificar la organización.|
+   |`appId` |El Azure AD de aplicación para la aplicación que creaste en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización. |
+   |`appSecret`|El Azure AD de aplicación de la aplicación que creaste en Azure AD en el paso 1. También se usa para la autenticación.|
    |`jobId`|Identificador de trabajo para el conector de recursos humanos que creó en el paso 3. Esto se usa para asociar los datos de recursos humanos que se cargan en la nube de Microsoft con el conector de recursos humanos.|
    |`csvFilePath`|Ruta de acceso del archivo CSV (almacenado en el mismo sistema que el script) que creó en el paso 2. Intente evitar espacios en la ruta de acceso del archivo; de lo contrario, use comillas simples.|
    |||
@@ -159,7 +159,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
 Después de crear el conector de recursos humanos y ejecutar el script para cargar los datos de recursos humanos, puede ver el conector y el estado de carga en el Centro de cumplimiento de Microsoft 365. Si programa el script para que se ejecute automáticamente de forma regular, también puede ver el estado actual después de la última vez que se ejecutó el script.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores de datos** en la navegación izquierda.
+1. Vaya a la Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Conectores de datos**</a>.
 
 2. Haga clic **en la pestaña Conectores** y, a continuación, seleccione el conector de RECURSOS para mostrar la página desplegable. Esta página contiene las propiedades y la información sobre el conector.
 

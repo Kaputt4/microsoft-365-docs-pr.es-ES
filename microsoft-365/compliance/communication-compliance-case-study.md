@@ -8,7 +8,9 @@ author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkCOMPLIANCE
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
@@ -20,12 +22,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ff326544d2485fa3ca7385f9ad8b924514aec1a5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3d0a905137ae1f2a55bddb0ae3d9691e68d69bac
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647563"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756258"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de contenido inadecuado para Microsoft Teams, Exchange y Yammer comunicaciones
 
@@ -93,7 +95,7 @@ Contoso decide usar el grupo de roles *Cumplimiento* de comunicaciones para asig
 | **Visor de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que administrarán informes de comunicación. Los usuarios asignados a este grupo de roles pueden tener acceso a todos los widgets de informes de la página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
 
 1. Los administradores de TI de Contoso inician sesión en la [página Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/permissions) permisos con credenciales para una cuenta de administrador global y seleccionan el vínculo para ver y administrar roles en Microsoft 365.
-2. En el **Centro de cumplimiento de Microsoft 365**, van a **Permisos** y seleccionan el vínculo para ver y administrar roles en Office 365.
+2. En el Centro de cumplimiento de Microsoft 365, van a <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permisos**</a> y seleccionan el vínculo para ver y administrar roles en Office 365.
 3. Los administradores seleccionan el grupo de roles *Cumplimiento* de comunicaciones y, a continuación, **selecciona Editar grupo de funciones**.
 4. Los administradores **seleccionan Elegir miembros** en el panel de navegación izquierdo y, a continuación, selecciona **Editar**.
 5. Seleccionan **Agregar y,** a continuación, seleccionan la casilla para todos los usuarios de Contoso que administrarán el cumplimiento de la comunicación, investigarán y revisarán las alertas.

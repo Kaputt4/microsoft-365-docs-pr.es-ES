@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7da419a779cb3a58488ca27ea7185262f4001d44
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: baa4294209ddb32a0a531e07b5bf87b0bb10aa9b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159492"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756388"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
@@ -81,7 +81,7 @@ En esta sección, crearemos un grupo de prueba para asignar las configuraciones.
 > [!NOTE]
 > Intune usa Azure Active Directory (Azure AD) para administrar dispositivos y usuarios. Como administrador de Intune, puede configurar grupos que se adapten a sus necesidades organizativas.
 >
-> Para obtener más información, consulta [Agregar grupos para organizar usuarios y dispositivos.](/mem/intune/fundamentals/groups-add)
+> Para más información, vea [Agregar grupos para organizar usuarios y dispositivos](/mem/intune/fundamentals/groups-add).
 
 ### <a name="create-a-group"></a>Crear un grupo
 
@@ -180,7 +180,7 @@ A continuación, seguirá creando varios tipos diferentes de directivas de segur
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager portal12.](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. Seleccione **Plataforma - Windows 10 y posterior - Windows y perfil - Antivirus de Microsoft Defender > Crear**.
+3. Seleccione **Plataforma - Windows 10 y posterior - Windows y Perfil - Antivirus de Microsoft Defender > Crear**.
 
 4. Escriba el nombre y la descripción y, a continuación,  **seleccione Siguiente**.
 
@@ -353,12 +353,12 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
     > [!div class="mx-imgBorder"]
     > [![Imagen del panel Servicios1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. Una vez aplicada la configuración, debe iniciarse el servicio defender para Endpoint Protection.
+2. Una vez aplicada la configuración, debe iniciarse el servicio defender para Endpoint Protection usuario.
 
     > [!div class="mx-imgBorder"]
     > [![Imagen del panel Servicios2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. Una vez que los servicios se ejecutan en el dispositivo, el dispositivo aparece en el Centro de seguridad de Microsoft Defender.
+3. Una vez que los servicios se ejecutan en el dispositivo, el dispositivo aparece en Centro de seguridad de Microsoft Defender.
 
     > [!div class="mx-imgBorder"]
     > [![Imagen de Centro de seguridad de Microsoft Defender.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)

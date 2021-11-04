@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: d87d24bce7e0ad24e5b9914fe98379fd9f40f1bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1877330ee502404d28b10cfe04dba96a37211c8
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167251"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756952"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -49,7 +49,7 @@ Para ver las opciones para que los usuarios puedan beneficiarse de las caracter�
 
 ## <a name="permissions-required-for-records-management"></a>Permisos necesarios para la administración de registros
 
-Los miembros del equipo de cumplimiento que son responsables de la administración de registros necesitan permisos para el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador de inquilinos (administrador global) tiene acceso a esta ubicación y puede conceder acceso a los responsables de cumplimiento y a otras personas sin concederles todos los permisos de un administrador de inquilinos. Para conceder permisos para esta administración limitada, recomendamos agregar usuarios al grupo de roles de administrador de **Administración de registros**, que concede permisos para todas las características relacionadas con la administración de registros, incluida [revisión de eliminación y comprobación](disposition.md).
+Los miembros del equipo de cumplimiento que son responsables de la administración de registros necesitan permisos para el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>. De forma predeterminada, el administrador de inquilinos (administrador global) tiene acceso a esta ubicación y puede conceder acceso a los responsables de cumplimiento y a otras personas sin concederles todos los permisos de un administrador de inquilinos. Para conceder permisos para esta administración limitada, recomendamos agregar usuarios al grupo de roles de administrador de **Administración de registros**, que concede permisos para todas las características relacionadas con la administración de registros, incluida [revisión de eliminación y comprobación](disposition.md).
 
 En el caso de los roles de solo lectura, puede crear un nuevo grupo de roles y agregar el rol de **Administración de registros de solo vista** a este grupo.
 

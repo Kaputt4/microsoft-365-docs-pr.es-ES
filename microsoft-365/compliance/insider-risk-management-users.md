@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dcddcebcdf70f02f84c2dbbceb61ef97488369aa
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: b7dd1df95c3cedc9a2f187f1599003e179024927
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335291"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747673"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Panel de usuarios de administración de riesgos de Insider
 
@@ -98,7 +98,7 @@ Puede haber escenarios en los que tenga que dejar de asignar puntuaciones de rie
 
 Para quitar manualmente los usuarios del estado del ámbito en todas las directivas de administración de riesgos internas, siga estos pasos:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Usuarios.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Usuarios.
 2. En el **panel Usuarios,** seleccione el usuario o los usuarios que desea quitar de estar en el ámbito en las directivas de administración de riesgos internas.
 3. Seleccione **Quitar usuarios**.
 4. En el **panel Quitar usuario,** **seleccione** Quitar o **Cancelar** para descartar los cambios y cerrar el cuadro de diálogo.

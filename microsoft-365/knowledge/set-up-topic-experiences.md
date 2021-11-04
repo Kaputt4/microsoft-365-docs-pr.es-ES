@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo configurar Temas Microsoft Viva.
-ms.openlocfilehash: 2a662640c765cc970483e73ed42971e73067e614
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7b5411ceea134be56a7d878510729f2d7150dd7d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197262"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755670"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurar Temas Microsoft Viva
 
@@ -23,12 +23,12 @@ Puede usar el Centro de administración de Microsoft 365 para configurar y confi
 
 Es importante planear la mejor forma de configurar y configurar temas en el entorno. Asegúrese de leer [Plan for Temas Microsoft Viva](plan-topic-experiences.md) before you begin the procedures in this article.
 
-Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso a la Centro de administración de Microsoft 365 y configurar temas.
+Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser un administrador global, o bien administrador de SharePoint y grupos para tener acceso a la Centro de administración de Microsoft 365 y configurar temas.
 
 > [!IMPORTANT]
 > Si has configurado SharePoint para [requerir dispositivos administrados,](/sharepoint/control-access-from-unmanaged-devices)debes configurar Temas desde un dispositivo administrado.
 
-## <a name="video-demonstration"></a>Demostración de vídeo
+## <a name="video-demonstration"></a>Vídeo de demostración
 
 En este vídeo se muestra el proceso de configuración de temas en Microsoft 365.
 

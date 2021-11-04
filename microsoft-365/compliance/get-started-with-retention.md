@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 3154388eaf1c677cec00782642de6f83819d0665
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d1566cc5840b93a4d3a994004ea0e1d52e01bb6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195598"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757363"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -51,7 +51,7 @@ Para ver las opciones para que los usuarios puedan beneficiarse de las caracter�
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención
 
-Los miembros del equipo de cumplimiento que crearán y administrarán directivas de retención y etiquetas de retención necesitan permisos para el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador de inquilinos (administrador global) tiene acceso a esta ubicación y puede conceder acceso a los responsables de cumplimiento y a otras personas sin concederles todos los permisos de un administrador de inquilinos. Para conceder permisos para esta administración limitada, se recomienda agregar usuarios al grupo de roles de **Administrador de compatibilidad**.
+Los miembros del equipo de cumplimiento que crearán y administrarán directivas de retención y etiquetas de retención necesitan permisos para el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>. De forma predeterminada, el administrador de inquilinos (administrador global) tiene acceso a esta ubicación y puede conceder acceso a los responsables de cumplimiento y a otras personas sin concederles todos los permisos de un administrador de inquilinos. Para conceder permisos para esta administración limitada, se recomienda agregar usuarios al grupo de roles de **Administrador de compatibilidad**.
 
 Como alternativa al uso de este rol predeterminado, puede crear un nuevo grupo de roles y agregar el rol **Administración de Retención** a este grupo. Para un rol de solo lectura, use **Administración de retención de solo vista**. 
 

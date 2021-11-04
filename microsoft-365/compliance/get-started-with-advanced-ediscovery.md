@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar Advanced eDiscovery para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la Advanced eDiscovery está lista para usarse.
-ms.openlocfilehash: eb37c11f8773189a8090178bf65c909b09fa941f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ab8f387853be4ee7651cf54772bf59e4b33021b8
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153011"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756964"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Configurar Microsoft 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Para obtener Advanced eDiscovery o agregar como miembro de un Advanced eDiscover
 
 Siga estos pasos para agregar usuarios al grupo de roles administrador de exhibición de documentos electrónicos:
 
-1. Vaya a <https://compliance.microsoft.com/permissions> e inicie sesión con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centro de cumplimiento de Microsoft 365</a>e inicie sesión con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En la **página Permisos,** seleccione el grupo de **roles** Administrador de exhibición de documentos electrónicos.
 

@@ -18,22 +18,20 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 67768257dc0a43d04fbc10f3c9d97cdd5fc83fa2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f810929d254056ee261defa0a7f2a1458145f8f0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643187"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753064"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
+
 - Microsoft 365 Defender
-
-
 
 La tabla del esquema de búsqueda avanzada contiene información acerca de los datos adjuntos de los correos electrónicos procesados por `EmailAttachmentInfo` Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
@@ -48,19 +46,20 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
 | `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
 | `SenderDisplayName` | cadena | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre determinado, una inicial intermedia y un apellido o apellido |
-| `SenderObjectId` | cadena | Identificador único de la cuenta del remitente en Azure AD |
+| `SenderObjectId` | cadenas | Identificador único de la cuenta del remitente en Azure AD |
 | `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
 | `RecipientObjectId` | cadena | Identificador único para el destinatario de correo electrónico en Azure AD |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FileType` | cadena | Tipo de extensión de archivo |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `ThreatTypes` | cadena | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
-| `ThreatNames` | string | Nombre de detección de malware u otras amenazas encontradas |
-| `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
+| `ThreatNames` | cadenas | Nombre de detección de malware u otras amenazas encontradas |
+| `DetectionMethods` | cadenas | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
-| `FileSize` | cadena | Tamaño del archivo en bytes |
+| `FileSize` | cadenas | Tamaño del archivo en bytes |
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)

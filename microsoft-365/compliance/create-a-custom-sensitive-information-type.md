@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d1856d0019a95f200b6be33f3f29ae3e471685e
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: e9b080d2837fc14c15987c774770b8bc5e9777eb
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264929"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754806"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -119,6 +119,18 @@ Use este procedimiento para crear un nuevo tipo de información confidencial que
 12. Elija **Siguiente**.
 13. Elija el **nivel de confianza recomendado** de este tipo de información confidencial.
 14. Revise la configuración y elija **Enviar**.
+
+> [!NOTE]
+> Estos SIT no se pueden copiar:
+> - Número de licencia de conducir de Canadá
+> - Número de licencia de conducir de la UE
+> - Número de identificación nacional de la UE
+> - Número de pasaporte de la UE
+> - Número de seguridad social de la UE o identificación equivalente
+> - Número de identificación fiscal de la UE
+> - Clasificación internacional de las enfermedades (ICD-10-CM)
+> - Clasificación internacional de las enfermedades (ICD-9-CM)
+> - Número de licencia de conducir de EE. UU.
 
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](create-a-custom-sensitive-information-type-in-scc-powershell.md)

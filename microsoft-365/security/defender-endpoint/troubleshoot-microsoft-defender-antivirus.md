@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 590842462f4c757ba16c90ef641382801d79bcab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59392ebb51bb483393cf657ced400c238852d72c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212370"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753558"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -1205,7 +1205,7 @@ Acción del usuario:
 El Antivirus de Microsoft Defender encontró este error debido a problemas críticos. Es posible que el extremo no esté protegido. Revise la descripción del error y, a continuación, siga los <b>pasos de acción de usuario</b> pertinentes a continuación.
 <table>
 <tr>
-<th>Acción</th>
+<th>Action</th>
 <th>Acción del usuario</th>
 </tr>
 <tr>
@@ -2610,7 +2610,7 @@ Use la información de estas tablas para ayudar a solucionar Antivirus de Micros
 <th colspan="2">Código de error: 0x80508007</th>
 </tr>
 <tr>
-<td>Mensaje</td>
+<td>Message</td>
 <td>
 <b>ERR_MP_NO_MEMORY </b>
 </td>
@@ -2636,7 +2636,7 @@ Este error indica que es posible que se haya quedo sin memoria.
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x8050800C</th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_BAD_INPUT_DATA</b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2660,7 +2660,7 @@ Nota: El tamaño del archivo de definiciones descargado del sitio puede superar 
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x80508020</th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2670,7 +2670,7 @@ Este error indica que puede haber un error de configuración del motor; normalme
 <tr>
 <th colspan="2">Código de error: 0x805080211
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2680,7 +2680,7 @@ Este error indica que Antivirus de Microsoft Defender no pudo poner en cuarenten
 <tr>
 <th colspan="2">Código de error: 0x80508022
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2691,7 +2691,7 @@ Este error indica que se requiere un reinicio para completar la eliminación de 
 <th colspan="2">
 0x80508023
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2705,7 +2705,7 @@ Ejecute el <a href="https://www.microsoft.com/security/scanner/default.aspx">Exa
 <tr>
 <th colspan="2">Código de error: 0x80508024 </th></tr>
 <tr>
-<td>Mensaje</td>
+<td>Message</td>
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2719,7 +2719,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508025
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2730,7 +2730,7 @@ Siga los pasos de corrección manuales descritos en la Enciclopedia de Protecci�
 <tr>
 <th colspan="2">Código de error: 0x80508026
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2742,7 +2742,7 @@ Antivirus de Microsoft Defender no es capaz de corregir las amenazas detectadas 
 <tr>
 <th colspan="2">Código de error: 0x80508027
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2754,7 +2754,7 @@ Compruebe las amenazas detectadas y resuelvalas según sea necesario.
 <tr>
 <th colspan="2">Código de error: 0x80508029
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2766,7 +2766,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508030
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2778,7 +2778,7 @@ Ejecute sin conexión Antivirus de Microsoft Defender. Puede leer sobre cómo ha
 <tr>
 <th colspan="2">Código de error: 0x80508031
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Posible motivo</td>
 <td>

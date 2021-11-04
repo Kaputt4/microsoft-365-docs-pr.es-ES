@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Las aplicaciones y servicios que reciba dependen del producto Microsoft 365 que haya comprado, como Aplicaciones Microsoft 365 para negocios.
 ms.date: 07/01/2020
-ms.openlocfilehash: 11cda35cdb4326e620d5bedbc49762e868e93efa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 29a56ecfc1cb2f3cbe3afebec552fff29905675b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153659"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756569"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprender las suscripciones y licencias en Microsoft 365 para empresas
 
@@ -59,7 +59,7 @@ En la tabla siguiente, se muestra una lista con lo que sucede automáticamente a
 |Exchange Online  <br/> |Se crea un buzón para el usuario. <br/> Para obtener información sobre el SLA para que esta tarea se complete, vea ["Setting up..." mensajes de la Centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.  <br/> |
 |Skype Empresarial Online  <br/> |La persona tiene acceso a las características asociadas con la licencia.  <br/> |
-|Aplicaciones de Microsoft 365 para empresas  <br/> |La persona puede descargar Office aplicaciones en hasta cinco Mac o PC, cinco tabletas y cinco smartphones.  <br/> |
+|Microsoft 365 Apps para empresas  <br/> |La persona puede descargar Office aplicaciones en hasta cinco Mac o PC, cinco tabletas y cinco smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Información sobre las licencias para los buzones que no son de usuario
 

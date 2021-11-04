@@ -3,19 +3,19 @@ title: Planeación de Temas Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.reviewer: nkokoye
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo planear Temas Microsoft Viva.
-ms.openlocfilehash: 61729eeaa4a30a3f7e0faf50ab40320d88f3d78a
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: b6dd9373a8bca8b5e3ff310abfe308f7599a4dd4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364584"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754344"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planeación de Temas Microsoft Viva
 
@@ -41,6 +41,9 @@ Tenga en cuenta que Viva Topics necesita acceso a los sitios y archivos que los 
 Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso a la Centro de administración de Microsoft 365 y configurar temas.
 
 Todos los usuarios que van a usar Temas requieren una **licencia de Experiencias de** tema. La asignación de licencias se trata [en Configurar Temas Microsoft Viva](set-up-topic-experiences.md).
+
+> [!Important] 
+> Los temas solo rastrearán el contenido en inglés.
 
 ## <a name="topic-discovery"></a>Detección de temas
 
@@ -146,7 +149,7 @@ Cuando configures experiencias de tema, necesitarás los siguientes elementos a 
 > * Lista de temas confidenciales que se excluirán de la detección de temas
 > * Un nombre para el sitio del centro de temas
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 [Configurar las experiencias temáticas](set-up-topic-experiences.md)
 

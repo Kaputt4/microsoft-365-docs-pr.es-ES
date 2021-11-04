@@ -17,15 +17,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c58df514c136c6df2db5d1392a57db1ee6c34bb3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 2a63f13885311ba4a794ca1c25c5e90d320472f5
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647443"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753522"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -104,9 +105,9 @@ Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la
 
 Use esta opción para asignar usuarios a grupos de roles específicos para segmentar el acceso y las responsabilidades de cumplimiento de comunicaciones entre diferentes usuarios de la organización.
 
-1. Inicie sesión [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión en el Centro de cumplimiento de Microsoft 365 con las credenciales de una cuenta de administrador de su Microsoft 365 y, a continuación, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permisos**</a>.
 
-2. En el Centro &amp; de cumplimiento de seguridad, vaya a **Permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
+2. Seleccione el vínculo para ver y administrar roles en Office 365.
 
 3. Seleccione uno de los grupos de roles de cumplimiento de comunicación y, a continuación, **seleccione Editar grupo de funciones**.
 
@@ -198,7 +199,7 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 >[!TIP]  
 >¿Desea ver un tutorial detallado sobre cómo configurar una nueva directiva de cumplimiento de comunicaciones y corregir una alerta? Consulte este vídeo de [15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) minutos para ver una demostración de cómo las directivas de cumplimiento de comunicación pueden ayudarle a detectar mensajes inapropiados, investigar posibles infracciones y corregir problemas de cumplimiento.
 
-1. Inicie sesión <https://compliance.microsoft.com> con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a> con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En el Centro de cumplimiento de Microsoft 365, seleccione **Cumplimiento de comunicaciones**.
 
@@ -253,7 +254,7 @@ Si desea tener la opción de responder a una alerta de directiva mediante el env
 
 También puede habilitar la anonimización para los nombres de usuario mostrados al investigar coincidencias de directivas y realizar acciones en los mensajes.
 
-1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a> con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
 

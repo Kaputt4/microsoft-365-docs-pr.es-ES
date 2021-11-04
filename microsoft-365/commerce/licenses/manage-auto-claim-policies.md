@@ -19,12 +19,12 @@ ms.custom:
 description: Aprende a crear y administrar directivas de notificación automática que asignan automáticamente licencias a los usuarios para determinadas aplicaciones.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 41d11c6c67d35766e61106bd2beefd69462a42ff
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 28d05e0e3b1d1e8692672bf741a612ebee02e39f
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179684"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753498"
 ---
 # <a name="manage-auto-claim-policies"></a>Administrar directivas de reclamación automática
 
@@ -131,8 +131,7 @@ Al quitar un producto de copia de seguridad, ya no se usa para asignar licencias
 
 ## <a name="change-the-assigning-apps-and-services"></a>Cambiar las aplicaciones y servicios de asignación
 
-Cada producto tiene asociada una colección de aplicaciones y servicios.
-Para cada producto de la directiva de notificación automática, puedes especificar qué aplicaciones y servicios incluir cuando se asigna automáticamente una licencia a un usuario a ese producto.
+Cada producto tiene asociada una colección de aplicaciones y servicios. Para cada producto de la directiva de notificación automática, puedes especificar qué aplicaciones y servicios incluir cuando se asigna automáticamente una licencia a un usuario a ese producto.
 
 1. En el Centro de administración, vaya a la página **Licencias** \> **de facturación** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">pestaña Directiva de notificación</a> automática.
 2. Seleccione la directiva que desea editar.
@@ -157,7 +156,7 @@ Si tienes productos de copia de seguridad asignados a la directiva, puedes cambi
 2. Seleccione **Ver informe**. La **página Informe de directiva de notificación** automática enumera todas las licencias asignadas de cada directiva en los últimos 90 días. De forma predeterminada, la página muestra los últimos 90 días.
 3. Para cambiar el período de tiempo que se muestra, seleccione la **lista desplegable Pasados 30** días. Puede ver informes de los últimos 1, 7, 30 y 90 días.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Puede volver periódicamente a la pestaña **Directiva** de notificación automática para ver una lista de usuarios que han reclamado licencias en las directivas que creó.
 

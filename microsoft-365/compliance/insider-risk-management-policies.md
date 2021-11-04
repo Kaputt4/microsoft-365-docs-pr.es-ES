@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9cb9297fdfbe30c79f984e89cfc46e0fa436c7b7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a20604bd36f286546a321c438cb5d534ee9cf8ab
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704960"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755302"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -268,7 +268,7 @@ Para crear una nueva directiva de administración de riesgos internos, usará el
 
 Siga los siguientes pasos para crear una nueva directiva:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
 2. Seleccione **Crear directiva** para abrir el asistente de directivas.
 3. En la página **Plantilla de directiva**, elija una categoría de directiva y luego seleccione la plantilla para la nueva directiva. Estas plantillas están compuestas por condiciones y señales que definen las actividades de riesgo que desea detectar e investigar. Revise los requisitos previos de la plantilla, los eventos desencadenantes y las actividades detectadas para confirmar que esta plantilla de directiva se ajusta a sus necesidades.
 
@@ -330,7 +330,7 @@ Para actualizar una directiva de administración de riesgos internos existente, 
 
 Siga los siguientes pasos para administrar una directiva existente:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
 2. En el panel de directivas, seleccione la directiva que desea administrar.
 3. En la página de detalles de la directiva, seleccione **Editar directiva**
 4. En el asistente de directivas, no se puede editar lo siguiente:
@@ -387,7 +387,7 @@ Es posible que tenga que crear una nueva directiva que sea similar a una directi
 
 Siga los siguientes pasos para copiar una directiva existente:
 
-1. En Centro de cumplimiento de Microsoft 365, vaya Administración de riesgos internos y seleccione la pestaña Directivas.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de riesgos de Insider y seleccione la pestaña Directivas.
 2. En el panel de directivas, seleccione la directiva que desea copiar.
 3. En la página de detalles de la directiva, seleccione Copiar.
 4. En el asistente de directivas, asigne un nombre a la nueva directiva y actualice la configuración de la misma según sea necesario.
@@ -407,7 +407,7 @@ Algunos escenarios en los que puede querer empezar inmediatamente a puntuar las 
 
 Para iniciar manualmente la actividad de puntuación de los usuarios en una o más directivas de administración de riesgos internos, siga los siguientes pasos:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
 2. En el panel de directivas, seleccione la directiva o directivas a las que desea agregar usuarios.
 3. Seleccione **Iniciar la actividad de puntuación para los usuarios**.
 4. En el campo **Razón del panel** y luego en el panel **Agregar usuarios a múltiples directivas**, agregue una razón para agregar los usuarios.
@@ -434,7 +434,7 @@ Para dejar de puntuar a los usuarios en una directiva, vea el artículo [Usuario
 
 Para eliminar una directiva de administración de riesgos internos existente, siga estos pasos:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
 2. En el panel de directivas, seleccione la directiva que desea eliminar.
 3. Seleccione **Eliminar** la barra de herramientas del panel.
 4. En el cuadro de dialogo **Eliminar**, seleccione **Sí** para eliminar la directiva o **Cancelar** para cerrarlo.

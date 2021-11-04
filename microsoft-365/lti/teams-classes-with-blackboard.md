@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Usar Microsoft Teams clases con Blackboard Learn Ultra
-ms.openlocfilehash: b74aaca3df01b2e6f222605f3700066c980cd9bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2cf6c3f3e7c9c8b0004ea08fccdec981c032a491
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170120"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757375"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Usar Microsoft Teams clases con Blackboard Learn Ultra
 
@@ -29,13 +29,13 @@ Las clases pueden incluir conversaciones en tiempo real, reuniones de vídeo o i
 > [!IMPORTANT]
 > Asegúrese de que ha configurado correctamente el campo Correo electrónico de la institución en el [Sistema de información de estudiantes (SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning)
 >
->La integración Microsoft Teams clases de Microsoft Teams se basa en el campo de correo electrónico de la institución del SIS para asignarlo al nombre de principio de usuario [(UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)de Microsoft Azure Active Directory (AAD) correcto . Si no se ha aprovisionado ningún correo electrónico de la institución, este valor predeterminado será el correo electrónico existente. Se recomienda establecer este campo para que todos los usuarios se aseguren de que sus datos se sincronizan correctamente y que no haya conflictos de datos de correo electrónico entre AAD y Blackboard Learn Ultra.
+>La integración Microsoft Teams clases de AAD se basa en el campo de correo electrónico de la institución del SIS para asignarlo al nombre de principio de usuario [(UPN)](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)de Microsoft Azure Active Directory AAD (AAD) correcto. Si no se ha aprovisionado ningún correo electrónico de la institución, este valor predeterminado será el correo electrónico existente. Se recomienda establecer este campo para que todos los usuarios se aseguren de que sus datos se sincronizan correctamente y que no haya ningún conflicto de datos de correo electrónico entre AAD y Blackboard Learn Ultra.
 >
 > Si no ha establecido este campo correctamente en la asignación de SIS, la integración seguirá funcionando, pero es posible que los usuarios no aparezcan en las clases Teams creadas y que se produzcan errores.
 
 ## <a name="supporting-institutional-data-mapping--institution-email-sis-field"></a>Compatibilidad con la asignación de datos institucionales: campo SIS de correo electrónico de la institución
 
-Como parte de la evolución con las integraciones de  proveedores de nube, Blackboard Learn Ultra ha creado un nuevo campo de correo electrónico de la institución, tanto en la integración de Student Information System Framework como en las API públicas de REST, lo que permite a las instituciones administrar el proceso de sincronización de datos de forma eficaz entre Blackboard Learn Ultra y AAD.
+Como parte de la evolución con las integraciones de  proveedores en la nube, Blackboard Learn Ultra ha creado un nuevo campo de correo electrónico de la institución, tanto en la integración de Student Information System Framework como en las API públicas de REST, lo que permite a las instituciones administrar el proceso de sincronización de datos de forma eficaz entre Blackboard Learn Ultra y AAD.
 
 ### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>¿Qué significa el correo electrónico de la institución y qué admite?
 
@@ -46,7 +46,7 @@ Para asegurarse de que los datos son precisos y de que las inscripciones o perte
  Cuando dos direcciones de correo electrónico son diferentes:
 
 - Se debe tomar una decisión sobre qué origen tiene prioridad y se tomarán como correos electrónicos de persona e institución.
-  O bien
+  O bien:
 - Una institución puede establecer una asignación de campo personalizada en su correo electrónico de la institución, que puede resolver un posible conflicto.
 
 La **asignación de campo** De correo electrónico de la institución ya está disponible para todos los tipos de integración de SIS existentes en Configuración avanzada **Configuración**  >  **usuarios aprendan asignación de** campo de tipo de  >  **objeto**.

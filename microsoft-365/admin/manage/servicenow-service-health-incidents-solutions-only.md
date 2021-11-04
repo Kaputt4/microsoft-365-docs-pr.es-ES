@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 la integración de soporte técnico para incidentes de mantenimiento del servicio y soluciones recomendadas SOLO
+title: Microsoft 365 la integración de soporte técnico para incidentes de mantenimiento del servicio y soluciones recomendadas solamente
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: 427b4b20b33d83676e2cbebbfb6dcd627bcd51fe
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7b1ebccb60500d0f1b2c6513be55d8f04628b6ac
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662148"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754226"
 ---
-# <a name="microsoft-365-support-integration-for-service-health-incidents-and-recommended-solutions-only"></a>Microsoft 365 la integración de soporte técnico para incidentes de mantenimiento del servicio y soluciones recomendadas SOLO
+# <a name="microsoft-365-support-integration-for-service-health-incidents-and-recommended-solutions-only"></a>Microsoft 365 la integración de soporte técnico para incidentes de mantenimiento del servicio y soluciones recomendadas solamente
 
 Esta configuración no permite crear un caso con soporte técnico de Microsoft a través de la instancia de ServiceNow. Esta opción solo proporciona la información sobre incidentes de mantenimiento del servicio y las soluciones de recomendación disponibles a través de la instancia de ServiceNow.
 

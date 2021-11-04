@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 690791369f40c4c73e837ce872428978632881f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 79029444f19db9754d4ebddf83e370b5cdac7da1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197646"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747695"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -121,7 +121,10 @@ Mientras esté en modo de prueba, supervise los resultados de la directiva y afi
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>Habilitar el control y ajustar las directivas
 
-Una vez que la directiva cumpla todos los objetivos, encándala. Siga supervisando los resultados de la aplicación de directiva y ajuste según sea necesario. En general, las directivas tienen efecto aproximadamente una hora después de estar activadas.
+Una vez que la directiva cumpla todos los objetivos, encándala. Siga supervisando los resultados de la aplicación de directiva y ajuste según sea necesario. 
+
+> [!NOTE]
+> En general, las directivas tienen efecto aproximadamente una hora después de estar activadas.
 
 <!--See, LINK TO topic for SLAs for location specific  details-->
 

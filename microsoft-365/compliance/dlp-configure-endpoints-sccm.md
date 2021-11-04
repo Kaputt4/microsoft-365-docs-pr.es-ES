@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Use Configuration Manager para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 15561e21dd93f8742dea48cf8c2eac2eef7e13fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1d551f0411910f1a8db99ee76a61204c8c475348
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194518"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754760"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Incorporar dispositivos Windows 10 con Configuration Manager
 
@@ -30,9 +30,9 @@ ms.locfileid: "60194518"
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Incorporar dispositivos con System Center Configuration Manager
 
-1. Abra el paquete de configuración de Configuration Manager .zip archivo (*DeviceComplianceOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com/).
+1. Abra el paquete de configuración de Configuration Manager .zip archivo (*DeviceComplianceOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
-2. En el panel de navegación, **seleccione Configuración**  >  **Incorporación de**  >  **dispositivos**.
+2. En el panel de navegación, <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**seleccione Configuración**</a>  >  **Incorporación de**  >  **dispositivos**.
 
 3. En el **campo Método de** implementación, seleccione Microsoft Endpoint Configuration Manager **2012/2012 R2/1511/1602**.
 
@@ -140,9 +140,9 @@ Si usa Microsoft Endpoint Configuration Manager rama actual, vea [Create an offb
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos offboard con System Center Configuration Manager de 2012 R2
 
-1. Obtener el paquete de offboarding del [Centro de cumplimiento de Microsoft:](https://compliance.microsoft.com/)
+1. Obtener el paquete de offboarding desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>:
 
-2. En el panel de navegación, **seleccione Configuración** Incorporación  >   **de** >  **dispositivos offboarding**.
+2. En el panel de navegación, <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**seleccione Configuración**</a>Incorporación  >   **de** >  **dispositivos offboarding**.
 
 3. Seleccione Windows 10 como sistema operativo.
 

@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 159c56240d62cd3e1abce58f4fa6d82320e76017
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0a067049f278daee3c6e55aba00a81dcb2746c3c
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179480"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754782"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprender el flujo de trabajo de propuestas
 
@@ -41,11 +41,9 @@ Para poder comprar elementos para una propuesta, debes tener una cuenta de factu
 
 ### <a name="billing-account"></a>Cuenta de facturación
 
-Usa una cuenta de facturación para administrar la configuración de la cuenta, las facturas, los perfiles de facturación y los productos y servicios. Si aún no tiene una cuenta de facturación, su representante de Microsoft crea una para usted.
-De lo contrario, usan una cuenta de facturación existente para su organización, siempre que tenga permiso para usar esa cuenta de facturación.
+Usa una cuenta de facturación para administrar la configuración de la cuenta, las facturas, los perfiles de facturación y los productos y servicios. Si aún no tiene una cuenta de facturación, su representante de Microsoft crea una para usted. De lo contrario, usan una cuenta de facturación existente para su organización, siempre que tenga permiso para usar esa cuenta de facturación.
 
-Los permisos de cuenta de facturación los administra el propietario de la cuenta de facturación.
-Los administradores globales pueden asignarse al rol de propietario de la cuenta de facturación y, a continuación, hacer que otras personas se hagan propietarias de cuentas de facturación.
+Los permisos de cuenta de facturación los administra el propietario de la cuenta de facturación. Los administradores globales pueden asignarse al rol de propietario de la cuenta de facturación y, a continuación, hacer que otras personas se hagan propietarias de cuentas de facturación.
 
 Para obtener más información acerca de las cuentas de facturación, vea [Administrar cuentas de facturación.](manage-billing-accounts.md)
 
@@ -61,8 +59,7 @@ Para obtener más información acerca de los roles de cuenta de facturación, ve
 
 Si se trata de una nueva cuenta de facturación y nadie ha aceptado un contrato, se convierte automáticamente en el propietario de la cuenta de facturación, siempre que:
 
-- ¿La persona que se nombra en la propuesta\
-    OR
+- ¿La persona que se nombra en la **propuesta o**
 - Ya son un [Azure Active Directory global de](/azure/active-directory/roles/permissions-reference#global-administrator) la organización
 
 ## <a name="what-is-the-overall-workflow"></a>¿Cuál es el flujo de trabajo general?
@@ -73,8 +70,8 @@ El flujo de trabajo de propuestas general tiene este aspecto:
 - Use el vínculo para ir a la página de inicio de sesión de propuesta.
 - Revise la información de su organización.
 - Revisa la propuesta, acepta el MCA si es necesario y finaliza el proceso de desprotección.
-    > [!IMPORTANT]
-    > Debe tener la autoridad para firmar un MCA en nombre de su organización. Si no tiene esa autoridad, alguien que lo haga debe realizar este paso.
+  > [!IMPORTANT]
+  > Debe tener la autoridad para firmar un MCA en nombre de su organización. Si no tiene esa autoridad, alguien que lo haga debe realizar este paso.
 - Una vez finalizada la desprotección, se le darán vínculos adicionales para configurar sus productos y servicios.
 
 ## <a name="proposal-terms"></a>Términos de propuesta
@@ -100,7 +97,7 @@ Después de iniciar sesión, lo primero que hace es revisar la información de s
 
 La **sección Su organización** muestra la cuenta de facturación asociada a ella. La información de la cuenta de facturación se extrae de una cuenta de facturación existente o la crea el representante de Microsoft. Si su organización es una filial de  otra organización, también verá una sección Organización para clientes potenciales con el nombre y la dirección de esa organización.
 
-Si es la primera vez que su organización establece una relación comercial con Microsoft y aún  no  ha firmado un MCA, si la información de Su organización o organización de clientes potenciales es incorrecta, póngase en contacto con el representante para realizar cambios por usted. Después de aceptar un MCA, puede revisar y cambiar la dirección y la información de contacto de su organización en la página [Cuentas](https://go.microsoft.com/fwlink/p/?linkid=2084771) de facturación en el Centro de administración de Microsoft 365. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio](../business-video/get-help-support.md)
+Si es la primera vez que su organización establece una relación comercial con Microsoft y aún  no  ha firmado un MCA, si la información de Su organización o organización de clientes potenciales es incorrecta, póngase en contacto con el representante para realizar cambios por usted. Después de aceptar un MCA, puede revisar y cambiar la dirección y la información de contacto de su organización en la página [Cuentas](https://go.microsoft.com/fwlink/p/?linkid=2084771) de facturación en el Centro de administración de Microsoft 365. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio.](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>Su información
 
@@ -118,7 +115,7 @@ Si desea realizar cualquier cambio en la propuesta después de la revisión, pó
 
 La propuesta contiene la siguiente información:
 
-| Section | Descripción |
+| Sección | Descripción |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para comunicarles que aún está interesado en la propuesta. |

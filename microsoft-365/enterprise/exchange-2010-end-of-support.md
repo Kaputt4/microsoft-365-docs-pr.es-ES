@@ -12,16 +12,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 ha llegado al final del soporte técnico. Use esta guía básica de planeación para prepararse para actualizar a Exchange Online o una versión más reciente de Exchange Server local.
-ms.openlocfilehash: b1b4c1244d195f62261f0abc9cfaa4093beeb22f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e49bf68ce2fb9b441ecd40ae4bb89ad88ea568c8
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150839"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757407"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Exchange 2010
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Exchange Server 2010 llegó a su fin de soporte el 13 de octubre de **2020**. Si aún no ha iniciado la migración de Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar a planear.
 
@@ -46,7 +46,7 @@ Es un buen momento para explorar sus opciones y preparar un plan de migración. 
 - Migre Exchange servidores de 2010 a Exchange 2016 en los servidores locales.
 
 > [!IMPORTANT]
-> Si su organización decide migrar buzones a Microsoft 365 pero tiene previsto mantener DirSync o Azure AD Conectar en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor de Microsoft Exchange local. Si quita todos los servidores Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online porque el origen de la autoridad permanece en su Active Directory local. Los cambios deben realizarse allí. En este escenario, tiene las siguientes opciones:
+> Si su organización decide migrar buzones a Microsoft 365 pero planea mantener DirSync o Azure AD Conectar en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor de Microsoft Exchange local. Si quita todos los servidores Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online porque el origen de la autoridad permanece en su Active Directory local. Los cambios deben realizarse allí. En este escenario, tiene las siguientes opciones:
 >
 >- *Se recomienda:* Si migró los buzones a Microsoft 365 y actualizó los servidores antes del 13 de octubre de 2020, use Exchange 2010 para conectarse a Microsoft 365 y migrar buzones. A continuación, Exchange 2010 a Exchange 2016 y retirar los servidores Exchange 2010.
 >- Si no ha completado la migración de buzones y la actualización del servidor local antes del 13 de octubre de 2020, actualice primero los servidores de Exchange de Exchange 2010 a Exchange 2016. A continuación, Exchange 2016 para conectarse a Microsoft 365 y migrar buzones.
@@ -156,12 +156,12 @@ Aspectos a tener en cuenta sobre la migración híbrida completa:
 
 - No son adecuados para todas las organizaciones. Debido a la complejidad de las migraciones híbridas completa, las organizaciones con menos de unos pocos cientos de buzones no suelen ver ventajas que justifiquen el esfuerzo y el costo implicados. En estos casos, se recomienda considerar la migración híbrida mínima o de recorte.
 - Debe configurar la sincronización de directorios mediante Azure Active Directory (Azure AD) Conectar entre los servidores locales de Active Directory y Microsoft 365.
-- Los usuarios podrán iniciar sesión en su buzón de Microsoft 365 con el mismo nombre de usuario y contraseña que usan al iniciar sesión en la red local. (Esta funcionalidad requiere que Azure AD Conectar sincronización de contraseñas o servicios de federación de Active Directory).
+- Los usuarios podrán iniciar sesión en su buzón de Microsoft 365 con el mismo nombre de usuario y contraseña que usan al iniciar sesión en la red local. (Esta funcionalidad requiere Azure AD Conectar sincronización de contraseñas o servicios de federación de Active Directory).
 - Necesita una licencia Microsoft 365 que incluya Exchange Online para cada buzón de usuario que migre.
 - Los usuarios no necesitan configurar un nuevo perfil de Outlook en la mayoría de sus dispositivos, aunque es posible que algunos teléfonos Android más antiguos necesiten un perfil nuevo. Los usuarios no necesitarán volver a descargar su correo electrónico.
 
 > [!IMPORTANT]
-> Si su organización decide migrar buzones a Microsoft 365 pero planea mantener DirSync o Azure AD Conectar en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor Exchange local. Si se quitan Exchange servidores, no podrá realizar cambios en los Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en su Active Directory local y es necesario realizar los cambios allí.
+> Si su organización decide migrar buzones a Microsoft 365 pero tiene previsto mantener DirSync o Azure AD Conectar en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor Exchange local. Si se quitan Exchange servidores, no podrá realizar cambios en los Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en su Active Directory local y es necesario realizar los cambios allí.
 
 Si una migración híbrida completa suena adecuada para usted, vea los siguientes recursos útiles:
 

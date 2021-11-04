@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 75fb613aa1e0256c6c819336f9bcdd340acdff7d
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 2e0327a11067a4e474831d95b2c74c4c289086ce
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335495"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747231"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -42,22 +42,23 @@ Un recurso adicional para comprender MCCA es visitar las instrucciones [readme e
 
 Puede instalar la herramienta MCCA mediante Windows PowerShell. Una vez que descargue e instale la herramienta, no es necesario repetir esos pasos para ejecutar informes. Cada vez que abra MCCA, le pedirá sus credenciales de inicio de sesión y generará un informe nuevo y actualizado.
 
-#### <a name="step-1-install-windows-powershell"></a>Paso 1: Instalar Windows PowerShell
+### <a name="step-1-install-windows-powershell"></a>Paso 1: Instalar Windows PowerShell
+
 Para empezar, necesitará el módulo Exchange Online PowerShell (v2.0.3 o posterior) que esté disponible en la galería de PowerShell. [Obtener instrucciones de instalación](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3).
 
-#### <a name="step-2-install-mcca"></a>Paso 2: Instalar MCCA
+### <a name="step-2-install-mcca"></a>Paso 2: Instalar MCCA
 
 Para instalar MCCA, empiece con PowerShell en modo de administrador. Siga los pasos siguientes:
 
 1. Seleccione el Windows **Inicio.**
-2. Escriba **PowerShell**, haga clic con el botón secundario **en Windows PowerShell** y, a continuación, seleccione Ejecutar como **administrador**.
+1. Escriba **PowerShell**, haga clic con el botón secundario **en Windows PowerShell** y, a continuación, seleccione Ejecutar como **administrador**.
 1. En el símbolo del sistema, escriba lo siguiente:
 
     ```powershell
     Install-Module -Name MCCAPreview
     ```
 
-#### <a name="step-3-run-a-report"></a>Paso 3: Ejecutar un informe
+### <a name="step-3-run-a-report"></a>Paso 3: Ejecutar un informe
 
 Después de instalar MCCA, puede ejecutar MCCA y generar un informe. Para ejecutar un informe:
 
@@ -68,7 +69,7 @@ Después de instalar MCCA, puede ejecutar MCCA y generar un informe. Para ejecut
     Get-MCCAReport
     ```
 
-   Si es un cliente GCC High, deberá proporcionar un parámetro de entrada adicional para ejecutar el informe:
+    Si es un cliente GCC High, deberá proporcionar un parámetro de entrada adicional para ejecutar el informe:
 
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
@@ -107,7 +108,7 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | 1 | Asia-Pacífico |
   | 2 | Australia |
   | 3 | Canadá |
-  | 4  | Europa (excluyendo Francia) / Oriente Medio / África |
+  | 4 | Europa (excluyendo Francia) / Oriente Medio / África |
   | 5 | Francia |
   | 6  | India |
   | 7  | Japón |

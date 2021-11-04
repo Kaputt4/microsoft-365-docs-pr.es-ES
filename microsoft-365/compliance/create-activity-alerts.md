@@ -10,6 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MED150
@@ -18,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Agregar y administrar alertas de actividad en el Centro de cumplimiento de Microsoft 365 para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas
-ms.openlocfilehash: 84f2835d9b409b29042981ff0e1254c686aaf798
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 593c51a9d85ebb6f687a5e8573df32d4de515e6b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172532"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747805"
 ---
 # <a name="create-activity-alerts"></a>Crear alertas de actividad
 
@@ -42,11 +43,11 @@ Puede crear una alerta de actividad que le enviará una notificación por correo
 
 - Puede crear alertas para las mismas actividades que puede buscar en el registro de auditoría. Consulta la [sección Más información](#more-information) para obtener una lista de escenarios comunes (y la actividad específica que se va a supervisar) para la que puedes crear alertas.
 
-- Puede usar la página **Alertas de** actividad de la Centro de cumplimiento de Microsoft 365 para crear alertas solo para la actividad realizada por los usuarios que aparecen en la libreta de direcciones de su organización. No puede usar esta página para crear alertas para actividades realizadas por usuarios externos que no aparecen en la libreta de direcciones.
+- Puede usar la página **Alertas de** actividad en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> para crear alertas solo para la actividad realizada por los usuarios que aparecen en la libreta de direcciones de su organización. No puede usar esta página para crear alertas para actividades realizadas por usuarios externos que no aparecen en la libreta de direcciones.
 
 ## <a name="create-an-activity-alert"></a>Crear una alerta de actividad
 
-1. Vaya a <https://compliance.microsoft.com/managealerts>.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
 2. Inicie sesión con su cuenta profesional o educativa.
 
@@ -85,7 +86,7 @@ Puede crear una alerta de actividad que le enviará una notificación por correo
 
 Puedes desactivar una alerta de actividad para que no se envíe una notificación por correo electrónico. Después de desactivar la alerta de actividad, aún se muestra en la lista de alertas de actividad de la organización y aún puede ver sus propiedades.
 
-1. Vaya a <https://compliance.microsoft.com/managealerts>.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
 2. Inicie sesión con su cuenta profesional o educativa.
 

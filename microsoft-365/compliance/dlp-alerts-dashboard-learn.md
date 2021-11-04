@@ -19,23 +19,24 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Obtenga información sobre las alertas de prevención de pérdida de datos y el panel de alertas.
-ms.openlocfilehash: ea5d01e580b88445ba64e4ed26fc01fb51c97d5d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 375b16a3072f40ef8f366f7c1c4e8f714f195d63
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175220"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754378"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>Obtenga información sobre el panel de alertas de prevención de pérdida de datos
 
-Cuando los criterios de una directiva de prevención de pérdida de datos (DLP) coinciden con las acciones que un usuario está llevando a cabo en un elemento confidencial, la directiva puede generar una alerta. Esto puede provocar un gran volumen de alertas. Las alertas DLP se recopilan en el panel de alertas. El panel de alertas le ofrece un único lugar donde ir para realizar una investigación exhaustiva de todos los detalles relacionados con la coincidencia de directiva.  
+Cuando los criterios de una directiva de prevención de pérdida de datos (DLP) coinciden con las acciones que un usuario está llevando a cabo en un elemento confidencial, la directiva puede generar una alerta. Esta situación puede provocar un gran volumen de alertas. Las alertas DLP se recopilan en el panel de alertas. El panel de alertas le ofrece un único lugar para realizar una investigación exhaustiva de todos los detalles sobre la coincidencia de directivas.  
 
 <!-- [Microsoft 365 compliance center](https://compliance.microsoft.com/)-->
 
 ## <a name="workloads"></a>Cargas de trabajo
 
-El [panel de administración de alertas DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), muestra alertas para directivas DLP en estas cargas de trabajo:
+El [panel de administración de alertas DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, muestra alertas para directivas DLP en estas cargas de trabajo:
 
 - Exchange
 - SharePoint
@@ -66,7 +67,7 @@ Estos son algunos de los eventos asociados con una alerta. En la interfaz de usu
 |Ubicación |carga de trabajo donde se detectó el evento|todos los eventos |
 |tiempo de actividad     |tiempo de la actividad del usuario que coincide con los criterios de la directiva DLP |
 
-### <a name="impacted-entities"></a>Entidades afectadas
+### <a name="affected-entities"></a>Entidades afectadas
 
 |Nombre de propiedad |Descripción| Tipos de eventos|
 |---------|---------|---------|

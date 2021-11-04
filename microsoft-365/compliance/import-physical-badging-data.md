@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de protección física de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a sus edificios físicos por usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 042bd5f6089ff05d734ce6d2e159f5d3e3d104bd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: cb568836c0f763682cbad5524b41d19b034d02dc
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668339"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756168"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos de badging físicos (versión preliminar)
 
@@ -136,7 +136,7 @@ También puede descargar la siguiente definición de esquema para el archivo JSO
 
 El siguiente paso es crear un conector de badging físico en el Centro de cumplimiento de Microsoft 365. Después de ejecutar el script en el paso 4, el archivo JSON que creó en el paso 3 se procesará y se insertará en el punto de conexión de la API que configuró en el paso 1. En este paso, asegúrese de copiar el JobId que se genera al crear el conector. Usará el JobId al ejecutar el script.
 
-1. Vaya a <https://compliance.microsoft.com> y, a continuación, haga clic **en Conectores de datos** en la navegación izquierda.
+1. Vaya a la Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Conectores de datos**</a>.
 
 2. En la **página Conectores de datos** en Configuración **física,** haga clic en **Ver**.
 
@@ -217,7 +217,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos de pérdi
 
 Después de crear el conector de descarga física e insertar los datos de pérdida de datos físicos, puede ver el conector y el estado de carga en el Centro de cumplimiento de Microsoft 365. Si programa el script para que se ejecute automáticamente de forma regular, también puede ver el estado actual después de la última vez que se ejecutó el script.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en la navegación izquierda.
+1. Vaya a la Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Conectores de datos**</a>.
 
 2. Haga clic **en la pestaña Conectores** y, a continuación, seleccione el conector de bloqueo físico para mostrar la página desplegable. Esta página contiene las propiedades y la información sobre el conector.
 
