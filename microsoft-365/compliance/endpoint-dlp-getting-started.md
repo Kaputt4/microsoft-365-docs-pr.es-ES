@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 22f7e2eb1476543eb1aed9d772333f3ae7843477
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f6790e3c9af833c6e9e9103f68b91730c475cfb8
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703730"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754862"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -126,7 +126,7 @@ Si ya tiene dispositivos incorporados en [ Microsoft Defender para punto de cone
 
 En este escenario de implementación, incorporará dispositivos que aún no hayan sido incorporados y, además, solo quiere supervisar y proteger elementos confidenciales frente al uso compartido no intencionado en dispositivos con Windows 10.
 
-1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
 2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**.
 
@@ -162,7 +162,7 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 
 En este escenario, Microsoft Defender para punto de conexión ya está implementada y existen puntos de conexión de los que se informa. Todos estos puntos de conexión aparecerán en la lista de dispositivos administrados. Puede seguir incorporando nuevos dispositivos a Endpoint DLP para ampliar la cobertura siguiendo el [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
 
-1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
 2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos**.
 
@@ -189,7 +189,7 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 
 ### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Visualizar alertas de DLP del punto de conexión en el panel de administración de alertas de DLP
 
-1. Abra la página sobre la prevención de pérdida de datos en el Centro de cumplimiento de Microsoft 365 y elija Alertas.
+1. Abra la página Prevención de pérdida de datos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> y elija Alertas.
 
 2. Consulte los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 83672c1d723103c3b6b72db7b9c67374a2223593
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd35fb91fbc0fb43f19f95cb417a3e78bd9d2975
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206402"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756910"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -107,20 +107,19 @@ Para configurar un equipo de aislamiento de seguridad, usaremos una etiqueta de 
 
 Si tiene un partner interno o un grupo de accionistas que debería poder ver los documentos codificados, pero no editarlos, puede agregarlos a la etiqueta con permisos de solo vista. Después, puede agregar estos usuarios al sitio de SharePoint del equipo con permisos de lector y tendrán acceso de solo lectura al sitio en el que se almacenan los documentos, pero no al equipo.
 
-
 Crear una etiqueta de confidencialidad
-1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
-2. En **Soluciones**, haga clic en **Protección de la información**.
-3. Haga clic en **Crear una etiqueta**.
-4. Asigne un nombre a la etiqueta. Para ello, le recomendamos que use el nombre del equipo con la que lo vaya a emplear.
-5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
-6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
-7. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.
-8. En la página **Cifrado**, elija **Configurar opciones de cifrado**.
-9. Haga clic en **Agregar usuarios o grupos**, seleccione el equipo que ha creado y haga clic en **Agregar**.
-10. Haga clic en **Elegir permisos**.
-11. Elija **coautoría** de la lista desplegable y, después, haga clic en **Guardar**.
-12. Si desea incluir usuarios o grupos con acceso de solo lectura a los archivos con la etiqueta:
+
+1. Abra el Centro de cumplimiento de Microsoft 365 y, en **Soluciones**, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
+1. Haga clic en **Crear una etiqueta**.
+1. Asigne un nombre a la etiqueta. Para ello, le recomendamos que use el nombre del equipo con la que lo vaya a emplear.
+1. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
+1. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
+1. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.
+1. En la página **Cifrado**, elija **Configurar opciones de cifrado**.
+1. Haga clic en **Agregar usuarios o grupos**, seleccione el equipo que ha creado y haga clic en **Agregar**.
+1. Haga clic en **Elegir permisos**.
+1. Elija **coautoría** de la lista desplegable y, después, haga clic en **Guardar**.
+1. Si desea incluir usuarios o grupos con acceso de solo lectura a los archivos con la etiqueta:
     1. Haga clic en **Asignar permisos**
     1. Haga clic en **Agregar usuarios o grupos**, seleccione los usuarios o grupos que desea agregar, y después haga clic en **Agregar**.
     1. Haga clic en **Elegir permisos**.
@@ -140,8 +139,9 @@ Crear una etiqueta de confidencialidad
 
 Una vez que haya creado la etiqueta, debe comunicarla a los usuarios que la van a usar. En este caso, haremos que la etiqueta esté disponible solo para las personas del equipo.
 
-Publicación de una etiqueta de confidencialidad
-1. En el Centro de cumplimiento de Microsoft 365, en la página **Protección de la información**, escoja la pestaña **Directivas de etiqueta**.
+Para publicar una etiqueta de confidencialidad:
+
+1. En la Centro de cumplimiento de Microsoft 365, en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**,</a> elija la pestaña **Directivas de etiqueta**.
 2. Haga clic en **Publicar etiquetas**.
 3. En la página **Elegir etiquetas de confidencialidad para publicar**, haga clic en **Elija las etiquetas de confidencialidad para publicar**.
 4. Seleccione la etiqueta que ha creado y haga clic en **Agregar**.

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 30e3d3ffbe2bf95def8c2c62906b82abb1356213
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cd4423ab63019b554157de3a05da3c6c7e7d3d4c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159107"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787061"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados avanzados de la consulta de búsqueda
 
@@ -44,7 +44,7 @@ Puede contener rápidamente amenazas o solucionar activos en peligro que encuent
 - Archivos en cuarentena
 
 ## <a name="required-permissions"></a>Permisos necesarios
-Para poder tomar medidas a través de la búsqueda avanzada, necesita un rol en Microsoft Defender para Endpoint con permisos para enviar acciones de corrección [en dispositivos](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si no puede tomar medidas, póngase en contacto con un administrador global para obtener el siguiente permiso:
+Para realizar acciones a través de la búsqueda avanzada, necesita un rol en Microsoft Defender para endpoint con permisos para enviar acciones de corrección [en dispositivos](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si no puede tomar medidas, póngase en contacto con un administrador global para obtener el siguiente permiso:
 
 *Acciones de corrección activas > amenazas y administración de vulnerabilidades: control de corrección*
 
@@ -75,7 +75,7 @@ Para obtener más información sobre cómo se toman las acciones de cuarentena y
 ## <a name="take-action"></a>Tomar medidas
 Para realizar cualquiera de las acciones descritas, seleccione uno o más registros en los resultados de la consulta y, a continuación, **seleccione Realizar acciones**. Un asistente le guiará a través del proceso de selección y envío de las acciones preferidas.
 
-![Imagen del registro seleccionado con panel para inspeccionar el registro.](../../media/mtp-ah/ah-take-actions.png)
+![Imagen del registro seleccionado con panel para inspeccionar el registro.](../../media/take-action-multiple.png)
 
 ## <a name="review-actions-taken"></a>Revisar acciones realizadas
 Cada acción se registra individualmente en el centro [de acciones](m365d-action-center.md) en Historial **del centro** de acciones (  >   [security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.

@@ -14,20 +14,20 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: ''
+ms.custom: admindeeplinkCOMPLIANCE
 description: Configure la infraestructura y seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: 29b97c570972527ef30f3333797a213bf2722932
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b7c96cac2820f5ace71f18287e1d4b3e74e4444f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176324"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786403"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
 
 Este artículo proporciona instrucciones paso a paso para crear un [equipo con de aislamiento de seguridad](secure-teams-security-isolation.md) en un entorno de desarrollo y prueba.
 
-![Configuración del equipo aislado de Estrategia de empresa.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+[Configuración del equipo aislado de Estrategia de empresa.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 Use este entorno de desarrollo y pruebas para experimentar y adaptar la configuración a sus necesidades específicas antes de implementar este tipo de equipo en producción.
 
@@ -139,25 +139,24 @@ Después, debe configurar una etiqueta de confidencialidad aparte con la siguien
 
 Siga estos pasos:
 
-1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
-2. En **Soluciones**, haga clic en **Protección de la información**.
-3. Haga clic en **Crear una etiqueta**.
-4. Escriba **Estrategia de la empresa** en el nombre de la etiqueta.
-5. Escriba **Documentos de estrategia empresarial de la directiva** como información y, después, haga clic en **Siguiente**.
-6. En la página **Cifrado**, en el menú desplegable **Cifrado**, elija **Aplicar**.
-7. Para agregar los permisos de equipo:<br> a. Haga clic en **Asignar permisos**.<br> b. Haga clic en **Agregar usuarios o grupos**, seleccione **Estrategia de empresa** y, a continuación, haga clic en **Agregar**.<br> c. Haga clic en **Elegir permisos**.<br> d. Elija **coautor** en la lista desplegable y, a continuación, haga clic en **Guardar**.<br>
-8. Haga clic en **Siguiente**.
-9. En **Distintivo de contenido**, haga clic en **Siguiente**.
-10. En la página **Configuración de sitio y grupo**, establezca **Configuración de sitio y grupo** como **Activado**.
-11. En el menú desplegable **Privacidad de los sitios de equipo conectados a grupos de Office 365**, elija **Privado: solo los miembros pueden acceder al sitio**.
-12. En **Equipos no administrados**, elija **Bloquear el acceso**.
-13. Haga clic en **Siguiente**.
-14. En la página **Etiquetado automático para las aplicaciones de Office**, haga clic en **Siguiente**.
-15. Haga clic en **Enviar** y después en **Listo**.
+1. Abra el Centro de cumplimiento de Microsoft 365 y, en **Soluciones**, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
+1. Haga clic en **Crear una etiqueta**.
+1. Escriba **Estrategia de la empresa** en el nombre de la etiqueta.
+1. Escriba **Documentos de estrategia empresarial de la directiva** como información y, después, haga clic en **Siguiente**.
+1. En la página **Cifrado**, en el menú desplegable **Cifrado**, elija **Aplicar**.
+1. Para agregar los permisos de equipo:<br> a. Haga clic en **Asignar permisos**.<br> b. Haga clic en **Agregar usuarios o grupos**, seleccione **Estrategia de empresa** y, a continuación, haga clic en **Agregar**.<br> c. Haga clic en **Elegir permisos**.<br> d. Elija **coautor** en la lista desplegable y, a continuación, haga clic en **Guardar**.<br>
+1. Haga clic en **Siguiente**.
+1. En **Distintivo de contenido**, haga clic en **Siguiente**.
+1. En la página **Configuración de sitio y grupo**, establezca **Configuración de sitio y grupo** como **Activado**.
+1. En el menú desplegable **Privacidad de los sitios de equipo conectados a grupos de Office 365**, elija **Privado: solo los miembros pueden acceder al sitio**.
+1. En **Equipos no administrados**, elija **Bloquear el acceso**.
+1. Haga clic en **Siguiente**.
+1. En la página **Etiquetado automático para las aplicaciones de Office**, haga clic en **Siguiente**.
+1. Haga clic en **Enviar** y después en **Listo**.
 
 Después, publique la nueva etiqueta con estos pasos:
 
-1. En el Centro de cumplimiento de Microsoft 365, en la página **Protección de la información**, escoja la pestaña **Directivas de etiqueta**.
+1. En la Centro de cumplimiento de Microsoft 365, en <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>, elija la pestaña **Directivas de etiqueta**.
 2. Haga clic en **Publicar etiquetas**.
 3. En la página **Elegir etiquetas de confidencialidad para publicar**, haga clic en **Elija las etiquetas de confidencialidad para publicar**.
 4. Seleccione **Estrategia de la empresa** y, después, haga clic en **Agregar**.
@@ -175,14 +174,14 @@ La etiqueta **Estrategia empresarial** puede tardar algún tiempo en estar dispo
 Después, aplique la nueva etiqueta al equipo **Estrategia empresarial** y actualice el tipo de vínculo para compartir predeterminado con el fin de reducir el riesgo de compartir por error archivos y carpetas a un público más amplio del previsto.
 
 1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En **Sitios**, haga clic en **Sitios activos**.
-3. Haga clic en el sitio **Estrategia empresarial**.
-4. En **Uso compartido externo** de la pestaña **Confidencialidad**, haga clic en **Editar**.
-5. Seleccione la etiqueta **Estrategia empresarial** y, después, haga clic en **Guardar**.
-6. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
-5. Elija **Solo personas de la organización**.
-6. En **Tipo de vínculo de uso compartido predeterminado**, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
-7. Haga clic en **Guardar**.
+1. En **Sitios**, haga clic en **Sitios activos**.
+1. Haga clic en el sitio **Estrategia empresarial**.
+1. En **Uso compartido externo** de la pestaña **Confidencialidad**, haga clic en **Editar**.
+1. Seleccione la etiqueta **Estrategia empresarial** y, después, haga clic en **Guardar**.
+1. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
+1. Elija **Solo personas de la organización**.
+1. En **Tipo de vínculo de uso compartido predeterminado**, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
+1. Haga clic en **Guardar**.
 
 Después, configure el uso compartido de los propietarios solo para el equipo de **Estrategia empresarial**.
 

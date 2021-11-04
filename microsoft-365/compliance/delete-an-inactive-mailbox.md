@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Cuando ya no necesite conservar el contenido de un buzón Microsoft 365 inactivo, puede eliminar permanentemente el buzón inactivo.
-ms.openlocfilehash: 1f3dee1ab2680445f854d963d8c55cdb3192ac56
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: 69cbe206e040ca1b1f76e846c3b3efbf45c1539e
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725629"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786895"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 

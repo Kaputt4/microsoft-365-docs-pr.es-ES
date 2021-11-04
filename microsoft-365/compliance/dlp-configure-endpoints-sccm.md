@@ -11,15 +11,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Use Configuration Manager para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 1d551f0411910f1a8db99ee76a61204c8c475348
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1c4c21a1375bf2c95f25ebae285a049de89ba10f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754760"
+ms.locfileid: "60786391"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Incorporar dispositivos Windows 10 con Configuration Manager
 

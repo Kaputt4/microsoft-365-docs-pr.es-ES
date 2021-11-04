@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: Describe cómo exportar y descargar contenido de un caso de exhibición de documentos electrónicos principal en Microsoft 365.
-ms.openlocfilehash: 6fa9c82d2ef764f292dae3848e10ef53dd06c182
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1d998a4b1eb540a1d96afc3acd3518d0c604a7e9
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755820"
+ms.locfileid: "60787015"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exportar contenido desde un caso básico de eDiscovery
 

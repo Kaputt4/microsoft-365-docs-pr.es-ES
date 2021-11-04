@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6a7e03dfaf76e7af5dc256d0fdbf904e785346a9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1a2fd580a98fc7ac9db9d6592191eb4667ae757f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659249"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786703"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtener formación de expertos sobre la búsqueda avanzada
 
@@ -50,6 +50,7 @@ Obtenga más formación de expertos con *L33TSP3AK:* Búsqueda avanzada en Micro
 |--|--|--|--|
 | Episodio 1  | En este episodio, aprenderás diferentes procedimientos recomendados para ejecutar consultas avanzadas de búsqueda. Entre los temas tratados se encuentran: cómo optimizar las consultas, usar la búsqueda avanzada para ransomware, controlar JSON como un tipo dinámico y trabajar con operadores de datos externos. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | Episodio 2 | En este episodio, aprenderás a investigar y responder a ubicaciones de inicio de sesión sospechosas o inusuales y a la filtración de datos a través de reglas de reenvío de bandeja de entrada. Sebastien Molendijk, jefe de programa sénior de Seguridad en la nube CxE, comparte cómo usar la búsqueda avanzada para investigar incidentes de varias fases con Microsoft Cloud App Security datos. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
+| Episodio 3 | En este episodio, se tratarán las mejoras más recientes en la búsqueda avanzada, cómo importar un origen de datos externo en la consulta y cómo usar la partición para segmentar los resultados de consultas grandes en conjuntos de resultados más pequeños para evitar alcanzar los límites de la API. | [YouTube](https://www.youtube.com/watch?v=vd5lgIJKmYs) (40:59) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/l33tspeak%2011%20Oct%202021%20-%20externaldata%20and%20query%20partitioning.csl)
 
 
 ## <a name="how-to-use-the-csl-file"></a>Cómo usar el archivo CSL

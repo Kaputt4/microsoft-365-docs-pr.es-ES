@@ -13,14 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: 540a652d314aa94a191dccfe672ee7429b3d7f35
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1797b8b30f47a94673e5c7383fd60a2d6b8e462c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755200"
+ms.locfileid: "60786919"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurar un conector para importar datos de recursos humanos en US Government
 

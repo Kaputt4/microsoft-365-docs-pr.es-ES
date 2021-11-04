@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-overview
-ms.custom: ''
+ms.custom: admindeeplinkCOMPLIANCE
 description: Configure la protección de la información en Microsoft 365 para las regulaciones de privacidad de datos como RGPD y la Ley de privacidad del consumidor de California (CCPA), incluidos Microsoft Teams, SharePoint y correo electrónico.
-ms.openlocfilehash: 7517faa02ea74d5a9934e22595d61a34e99067a5
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 92314529cf6ca3ec318b181eb367bab81b9b81a0
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756592"
+ms.locfileid: "60786679"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Implementar la protección de la información para las normativas de privacidad de datos con Microsoft 365
 

@@ -13,16 +13,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: f1877330ee502404d28b10cfe04dba96a37211c8
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5ed6d75e8a7365e0dcb2aeba700bce225899f307
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756952"
+ms.locfileid: "60785851"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 

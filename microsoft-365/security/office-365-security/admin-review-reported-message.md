@@ -13,12 +13,12 @@ ms.collection:
 description: Aprende a revisar los mensajes que se notifican y a enviar comentarios a los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24954f97169283f9dff5a9e2e70e8ed0a8688a21
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d70e26786e6028e1acf8072c40f15505fb232431
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197970"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786691"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisión del administrador para los mensajes de los que se informe
 
@@ -48,7 +48,7 @@ Solo podrá marcar y notificar a los usuarios los resultados de la revisión si 
 
 ## <a name="notify-users-from-within-the-portal"></a>Notificar a los usuarios desde el portal
 
-1. En el Microsoft 365 Defender, vaya directamente a la **página Envíos:** [ https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission) .
+1. En el portal Microsoft 365 Defender, vaya directamente a la **página Envíos:** [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission) .
 
 2. Haga **clic en Mensajes notificados por** el usuario y, a continuación, seleccione el mensaje que desea marcar y notificar.
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f78234da247835da0ad9c1ecbdaa9702a206f942
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e127f757b2aaa2865e8cb109699d76ed79f41cb6
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206690"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785518"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Trabajar con resultados avanzados de consulta de búsqueda
 
@@ -71,24 +71,9 @@ AlertInfo
 ```
 Al representar los resultados, un gráfico de columnas muestra cada valor de gravedad como una columna independiente:
 
-![Imagen de los resultados avanzados de la consulta de búsqueda que se muestran como un gráfico de columnas. ](../../media/advanced-hunting-column-chart.jpg)
+![Imagen de los resultados avanzados de la consulta de búsqueda que se muestran como un gráfico de columnas. ](../../media/advanced-hunting-column-chart-new.png)
  *Resultados de consultas para alertas por gravedad mostradas como gráfico de columnas*
 
-#### <a name="alert-severity-by-operating-system"></a>Gravedad de alerta por sistema operativo
-También puede usar el operador para `summarize` preparar los resultados de los valores de gráfico de varios campos. Por ejemplo, es posible que desee comprender cómo se distribuyen las gravedades de alerta entre sistemas operativos (SO). 
-
-La consulta siguiente usa un operador para extraer información del sistema operativo de la tabla y, a continuación, usa para contar los valores `join` `DeviceInfo` de las columnas `summarize` `OSPlatform` `Severity` y:
-
-```kusto
-AlertInfo
-| join AlertEvidence on AlertId
-| join DeviceInfo on DeviceId
-| summarize Count = count() by OSPlatform, Severity 
-```
-Estos resultados se visualizan mejor con un gráfico de columnas apiladas:
-
-![Imagen de resultados avanzados de consulta de búsqueda que se muestran como un gráfico apilado. ](../../media/advanced-hunting-stacked-chart.jpg)
- *Resultados de consulta de alertas por sistema operativo y gravedad mostradas como un gráfico apilado*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Correos electrónicos de suplantación de identidad (phishing) en los diez dominios de remitente principales
 Si está trabajando con una lista de valores que no es finita, puede usar el operador para mostrar solo los valores con más `Top` instancias. Por ejemplo, para obtener los diez dominios de remitente con más correos electrónicos de suplantación de identidad, use la consulta siguiente:
@@ -101,7 +86,7 @@ EmailEvents
 ```
 Use la vista gráfico circular para mostrar de forma eficaz la distribución en los dominios superiores:
 
-![Imagen de resultados avanzados de consulta de búsqueda que se muestran como un gráfico circular. ](../../media/advanced-hunting-pie-chart.jpg)
+![Imagen de resultados avanzados de consulta de búsqueda que se muestran como un gráfico circular. ](../../media/advanced-hunting-pie-chart-new.png)
  *Gráfico circular que muestra la distribución de correos electrónicos de suplantación de identidad (phishing) en los dominios principales del remitente*
 
 #### <a name="file-activities-over-time"></a>Actividades de archivo con el tiempo
@@ -115,7 +100,7 @@ CloudAppEvents
 ```
 El siguiente gráfico de líneas resalta claramente los períodos de tiempo con más actividad que implica `invoice.doc` : 
 
-![Imagen de resultados avanzados de consulta de búsqueda que se muestran como un gráfico de líneas. ](../../media/advanced-hunting-line-chart.jpg)
+![Imagen de resultados avanzados de consulta de búsqueda que se muestran como un gráfico de líneas. ](../../media/line-chart-a.png)
  *Gráfico de líneas que muestra el número de eventos que implican un archivo con el tiempo*
 
 
@@ -129,30 +114,22 @@ Después de ejecutar una consulta, **seleccione Exportar** para guardar los resu
 Para inspeccionar rápidamente un registro en los resultados de la consulta, seleccione la fila correspondiente para abrir el panel **Inspeccionar registro.** El panel proporciona la siguiente información basada en el registro seleccionado:
 
 - **Activos:** vista resumida de los principales activos (buzones, dispositivos y usuarios) que se encuentran en el registro, enriquecidos con información disponible, como los niveles de riesgo y exposición
-- **Árbol de procesos:** generado para registros con información del proceso y enriquecido mediante información contextual disponible; en general, las consultas que devuelven más columnas pueden dar como resultado árboles de proceso más enriquecidos.
 - **Todos los detalles:** todos los valores de las columnas del registro  
 
-![Imagen del registro seleccionado con panel para inspeccionar el registro.](../../media/mtp-ah/inspect-record.png)
+![Imagen del registro seleccionado con panel para inspeccionar el registro.](../../media/results-inspect-record.png)
 
 Para ver más información sobre una entidad específica en los resultados de la consulta, como una máquina, un archivo, un usuario, una dirección IP o una dirección URL, seleccione el identificador de entidad para abrir una página de perfil detallada para esa entidad.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Modificar las consultas de los resultados
-Haga clic con el botón derecho en un valor en el conjunto de resultados para mejorar la búsqueda rápidamente. Puede usar las opciones para:
+Seleccione los tres puntos a la derecha de cualquier columna en el panel **Inspeccionar registro.** Puede usar las opciones para:
 
 - Buscar explícitamente el valor seleccionado (`==`)
 - Excluir el valor seleccionado de la consulta (`!=`)
 - Obtenga más operadores avanzados para agregar el valor a la consulta, como `contains`, `starts with` y `ends with` 
 
-![Imagen del conjunto de resultados de búsqueda avanzada.](../../media/advanced-hunting-results-filter.png)
+![Imagen del conjunto de resultados de búsqueda avanzada.](../../media/work-with-query-tweak-query.png)
 
-## <a name="filter-the-query-results"></a>Filtrar los resultados de la consulta
-Los filtros que aparecen a la derecha proporcionan un resumen del conjunto de resultados. Cada columna tiene una sección en la que se muestra una lista de los valores de la columna y el número de instancias.
 
-Para refinar la consulta, seleccione los botones o de los valores que desea incluir o excluir y, a `+` `-` continuación, seleccione Ejecutar **consulta**.
-
-![Imagen del filtro de búsqueda avanzado.](../../media/advanced-hunting-filter.png)
-
-Cuando aplica el filtro para modificar la consulta y, a continuación, ejecuta la consulta, los resultados se actualizan en consecuencia.
 
 >[!NOTE]
 >Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).

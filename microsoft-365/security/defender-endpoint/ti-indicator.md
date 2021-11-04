@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d7805ad7a2c1aae750b6588a6dd2c4141c9b93c3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b4ba3db32004eb9ce80e386d918e470d1361e404
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191640"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785635"
 ---
 # <a name="indicator-resource-type"></a>Tipo de recurso Indicator
 
@@ -58,7 +58,7 @@ aplicación|Cadena|La aplicación asociada al indicador.
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Warn", "Block", "Audit", "Alert", "AlertAndBlock", "BlockAndRemediate" y "Allowed".
 |externalID|Cadena|Id que el cliente puede enviar en la solicitud de correlación personalizada.|
 sourceType|Enum|"Usuario" en caso de que el indicador creado por un usuario (por ejemplo, desde el portal), "AadApp" en caso de que se haya enviado mediante una aplicación automatizada a través de la API.
-createdBySource|string|Nombre del usuario o aplicación que envió el indicador.
+createdBySource|cadenas|Nombre del usuario o aplicación que envió el indicador.
 createdBy|String|Identidad única del usuario/aplicación que envió el indicador.
 lastUpdatedBy|Cadena|Identidad del usuario/aplicación que actualizó por última vez el indicador.
 creationTimeDateTimeUtc|DateTimeOffset|La fecha y hora en que se creó el indicador.
@@ -70,31 +70,23 @@ description|Cadena|Descripción del indicador.
 recommendedActions|Cadena|Acciones recomendadas para el indicador.
 rbacGroupNames|Lista de cadenas|Nombres de grupo de dispositivo RBAC donde se expone y activa el indicador. Lista vacía en caso de que se exponga a todos los dispositivos.
 rbacGroupIds|Lista de cadenas|Id. de grupo de dispositivo RBAC donde se expone y activa el indicador. Lista vacía en caso de que se exponga a todos los dispositivos.
-## <a name="public-preview-indicator-types"></a>Vista previa pública: tipos de indicador
+generateAlert|Enum|**True** si se requiere la generación de alertas, **False** si este indicador no debe generar una alerta.
 
-> [!IMPORTANT]
-> La información de esta sección (**Public Preview for Automated investigation and remediation engine**) se relaciona con el producto preinstalado que podría modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+## <a name="indicator-types"></a>Tipos de indicador
 
 Los tipos de acción de indicador admitidos por la API son:
 
 - Permitido
-- Alerta
-- AlertAndBlock
 - Auditoría
 - Bloquear
 - BlockAndRemediate
-- Advertir
+- Advertir (solo MCAS)
 
-La lista de tipos de acción de la API contiene las nuevas acciones de respuesta junto con las acciones de respuesta anteriores (AlertAndBlock y Alert). Para obtener más información sobre la descripción de los tipos de acción de respuesta, vea [Create indicators](manage-indicators.md).
-
-Las acciones de respuesta allowed, Warn, Block y BlockAndRemediate IoC se encuentran en versión preliminar pública. Para obtener más información sobre la vista previa pública, [vea Public Preview: Custom file IoC enhancements and API schema update - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997).
-
-
-
+Para obtener más información sobre la descripción de los tipos de acción de respuesta, vea [Create indicators](manage-indicators.md).
 
 > [!Note]
 >
-> Las acciones de respuesta anteriores (AlertAndBlock y Alert) se quitarán cuando la característica haya llegado a GAed. La fecha estimada de ga con período de gracia finaliza en octubre de 2021.  Se recomienda actualizar las plantillas o scripts existentes tan pronto como sea posible.
+> Las acciones de respuesta anteriores (AlertAndBlock y Alert) se admiten hasta enero de 2022. Después de esta fecha, todos los clientes deben usar uno de los tipos de acción enumerados anteriormente.
 
 ## <a name="json-representation"></a>Representación json
 

@@ -16,15 +16,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: 28453a3791677b1923a6d72dbf8d59d2620ea139
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fabe83372822f401fdf8ddd1330bc974dc710fd2
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158182"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787135"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local
 

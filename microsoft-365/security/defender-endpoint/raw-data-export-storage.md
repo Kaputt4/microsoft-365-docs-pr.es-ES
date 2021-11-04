@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 02250d5eb75983ad0341f43addc097a26d03d6f1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49d14074af42437caaca9684cbfa3fc46362d32d
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174668"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786305"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a su Storage cuenta
 
@@ -91,7 +91,7 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
 
 2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:
 
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType
@@ -99,7 +99,7 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
 
 - Este es un ejemplo para el evento Device Info:
 
-  ![Imagen del recurso del centro de eventos ID3.](images/machine-info-datatype-example.png)
+  ![Imagen del recurso del centro de eventos ID3.](images/data-types-mapping-query.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

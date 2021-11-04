@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Pasos de requisitos previos para migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c079fbe808b59ef95663ae8a5af6b3913db49eb9
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: f6785e96829256ffe0763eb0f3e84059973d6379
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779129"
+ms.locfileid: "60785803"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>Migrar a Microsoft Defender para Office 365: Fase 1: Preparar
 
@@ -118,7 +118,7 @@ Si tienes simulaciones de suplantación de identidad de terceros activas, debes 
 
   Hoy en Microsoft 365 considera que algunos correos masivos (por ejemplo, boletines) son seguros en función del origen del mensaje. El correo de estos orígenes "seguros" actualmente no está marcado como masivo (el nivel de queja masiva o BCL es 0 o 1), por lo que es difícil bloquear globalmente el correo de estos orígenes. Para la mayoría de los usuarios, la solución es pedirles que cancelen la suscripción individual de estos mensajes masivos o que usen Outlook para bloquear al remitente. Sin embargo, a algunos usuarios no les gustará bloquear o cancelar la suscripción de mensajes masivos.
 
-  Las reglas de flujo de correo que filtran correo electrónico masivo pueden ser útiles cuando los usuarios VIP no desean administrar esto por sí mismos. Para obtener más información, vea [Usar reglas de flujo de correo para filtrar correo masivo.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md)
+  Las reglas de flujo de correo que filtran correo electrónico masivo pueden ser útiles cuando los usuarios VIP no desean administrar esto por sí mismos. Para obtener más información, vea [Usar reglas de flujo de correo para filtrar correo masivo.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail)
 
 ## <a name="identify-and-designate-priority-accounts"></a>Identificar y designar cuentas de prioridad
 

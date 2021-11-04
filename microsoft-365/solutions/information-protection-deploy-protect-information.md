@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Implemente Microsoft 365 seguridad y cumplimiento normativo y proteja su información personal.
-ms.openlocfilehash: f8111f1662a7669dde978d6d41f04fd4b6c50ea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d605147b24c4f6ef3a12eedab2243bcaa4c6745b
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176348"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785935"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 
@@ -134,7 +134,7 @@ Complete estas actividades antes de implementar cualquiera de las funciones basa
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Crear e implementar etiquetas de confidencialidad para sitios, grupos y equipos
 
-Al crear [etiquetas de](../compliance/sensitivity-labels-teams-groups-sites.md) confidencialidad en el Centro de cumplimiento de Microsoft 365, ahora puede aplicarlas a estos contenedores:
+Al crear [etiquetas de](../compliance/sensitivity-labels-teams-groups-sites.md) confidencialidad en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a>, ahora puede aplicarlas a estos contenedores:
 
 - Microsoft Teams web
 - Microsoft 365 (anteriormente Office 365 grupos)
@@ -158,7 +158,7 @@ Cuando esté listo para empezar a proteger los datos de su organización con eti
 2. **Defina la función de cada etiqueta.** Configure los ajustes de protección que desea asociar a cada etiqueta. Por ejemplo, es posible que desee que el contenido de menor confidencialidad (como una etiqueta "General") tenga solo un encabezado o pie de página aplicado, mientras que el contenido de mayor confidencialidad (como una etiqueta "Confidencial") debe tener una marca de agua y tener cifrado habilitado.
 3. **Publique las etiquetas.** Una vez configuradas las etiquetas de sensibilidad, publíquelas mediante una directiva de etiqueta. Decida qué usuarios y grupos deben tener las etiquetas y qué configuración de directiva usar. Una sola etiqueta es reutilizable. Se define una vez y, a continuación, se puede incluir en varias directivas de etiquetas asignadas a diferentes usuarios.
 
-Una vez que publiques etiquetas de confidencialidad desde el Centro de cumplimiento de Microsoft 365, [empezarán a](../compliance/sensitivity-labels-office-apps.md) aparecer en aplicaciones de Office para que los usuarios clasifiquen y protejan el contenido a medida que se crea o edita.
+Una vez que publiques etiquetas de confidencialidad desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365,</a> [empezarán Office](../compliance/sensitivity-labels-office-apps.md) aparecer en aplicaciones de Office para que los usuarios clasifiquen y protejan el contenido a medida que se crea o edita.
 
 ![Flujo de implementación de etiquetas de confidencialidad Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
@@ -208,7 +208,7 @@ DLP le permite:
 
 ### <a name="supported-workloads-for-dlp"></a>Cargas de trabajo admitidas para DLP
 
-Con una directiva DLP en el Centro de cumplimiento de Microsoft 365, puede identificar, supervisar y proteger automáticamente elementos confidenciales en muchas ubicaciones de Microsoft 365, como Exchange Online, SharePoint, OneDrive y Microsoft Teams.
+Con una directiva DLP en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365,</a>puede identificar, supervisar y proteger automáticamente elementos confidenciales en muchas ubicaciones de Microsoft 365, como Exchange Online, SharePoint, OneDrive y Microsoft Teams.
 
 Por ejemplo, puede identificar cualquier documento que contenga un número de tarjeta de crédito almacenado en cualquier sitio de OneDrive o puede supervisar solo los sitios OneDrive de personas específicas.
 

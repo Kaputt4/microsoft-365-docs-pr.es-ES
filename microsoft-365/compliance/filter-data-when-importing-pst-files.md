@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo filtrar datos mediante la característica de importación inteligente en el Microsoft 365 importar archivos PST al Microsoft 365.
-ms.openlocfilehash: da5b22d79339ad4a4a94bd0db803970c1d66537f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 593ce847803fdc3529fbe9276721e6bb8cf79069
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755254"
+ms.locfileid: "60786139"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrar datos al importar archivos PST
 

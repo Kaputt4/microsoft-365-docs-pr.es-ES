@@ -22,17 +22,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a075b653e3eeae9287f4fdbf83ed9e5e2133df99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e412852e7184a4f9b520ed777938836a44b62b5c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208462"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786186"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 2 de 2](eval-defender-investigate-respond.md) en el proceso de realizar una investigación y respuesta de un incidente en Microsoft 365 Defender un entorno piloto. Para obtener más información acerca de este proceso, vea el [artículo de introducción.](eval-defender-investigate-respond.md)
 
@@ -186,7 +186,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
       > [!NOTE]
       > Consulta el siguiente paso para filtrar opciones para limitar la devolución de datos.
 
-      ![Ejemplo de los resultados avanzados de la consulta de búsqueda.](../../media/mtp/fig19.png)
+      ![Ejemplo de los resultados avanzados de la consulta de búsqueda.](../../media/advanced-hunting-incident-response-try-1.png)
 
         > [!NOTE]
         > La búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede optar por ver los datos en otros tipos de formato, como gráficos.
@@ -200,7 +200,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
    1. Haga clic en las filas resultantes de la consulta para poder inspeccionar el registro.
 
-      ![Ejemplo del panel lateral inspeccionar registro que se abre cuando se selecciona un resultado de búsqueda avanzado.](../../media/mtp/fig21.png)
+      ![Ejemplo del panel lateral inspeccionar registro que se abre cuando se selecciona un resultado de búsqueda avanzado.](../../media/advanced-hunting-incident-response-try-2.png)
 
 4. Ahora que ha comprobado que puede ver el correo electrónico, agregue un filtro para los datos adjuntos. Céntrate en todos los correos electrónicos con datos adjuntos en el entorno. Para esta simulación, céntrate en los correos electrónicos entrantes, no en los que se envían desde el entorno. Quite los filtros que haya agregado para buscar el mensaje y agregar "| donde **AttachmentCount > 0** y **EmailDirection**  ==  **"Inbound""**
 
@@ -258,7 +258,7 @@ Las detecciones personalizadas ejecutarán la consulta según la frecuencia que 
 
 1. En la página de consulta, quite las líneas 7 y 8 que se agregaron en el paso 7 de las instrucciones Ir a buscar y haga clic en **Crear regla de detección.**
 
-   ![Ejemplo de dónde puede hacer clic en Crear regla de detección en la página de búsqueda avanzada.](../../media/mtp/fig22.png)
+   ![Ejemplo de dónde puede hacer clic en Crear regla de detección en la página de búsqueda avanzada.](../../media/advanced-hunting-incident-response-try-3.png)
 
    > [!NOTE]
    > Si hace clic en **Crear regla de detección** y tiene errores de sintaxis en la consulta, la regla de detección no se guardará. Compruebe doblemente la consulta para asegurarse de que no hay errores.

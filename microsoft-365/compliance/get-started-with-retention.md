@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 5d1566cc5840b93a4d3a994004ea0e1d52e01bb6
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 6d07c487625d610f54e82d3e26b450b079d33e2b
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757363"
+ms.locfileid: "60785779"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 

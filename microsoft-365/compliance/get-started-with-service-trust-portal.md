@@ -14,14 +14,15 @@ mscollection: M365-security-compliance
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo obtener acceso y usar el Portal de confianza de servicio de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: c74cd1e12d7ca2d6ac7adeb3ace921f54fe4b5a1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 2efa7389da9d53d14b833dc31bd84b446ee48f63
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757196"
+ms.locfileid: "60785923"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al Portal de confianza de servicio de Microsoft
 

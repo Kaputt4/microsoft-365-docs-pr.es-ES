@@ -13,16 +13,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: f86692d07f7636f35ba700b9750510219a6ef380
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: 8c8fac9d8cfa5ff0a8b2ad8d5c3e42f614a3932b
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432642"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753110"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -59,7 +60,7 @@ El lugar donde se crean y configuran las etiquetas de retención depende de si s
 
 ### <a name="step-1-create-retention-labels"></a>Paso 1: Cree etiquetas de retención
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes locaciones:
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a una de las siguientes ubicaciones:
     
     - Si utiliza la administración de registros:
         - **Soluciones** > **Administración de registros** > pestaña **Plan de archivos** tab > **+ Crear una etiqueta** > **Etiqueta de retención**
@@ -89,7 +90,7 @@ Para editar una etiqueta existente, selecciónela y después seleccione la opci�
 
 Publique etiquetas de retención para que los usuarios puedan usarlas en aplicaciones como SharePoint y Outlook.
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes locaciones:
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a una de las siguientes ubicaciones:
     
     - Si utiliza la administración de registros:
         - **Soluciones** > **Administración de registros** > > pestaña **Directivas de etiquetas** > **Etiquetas publicadas**

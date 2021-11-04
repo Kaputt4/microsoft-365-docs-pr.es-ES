@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 843d81664ce3f9b88d5de6fe742aab123df75a4f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e2ba6decb92f81ff1f834ba4cb94b9520b62d62c
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643200"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785615"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utilice las consultas compartidas en la búsqueda avanzada
 
@@ -38,7 +38,7 @@ ms.locfileid: "60643200"
 
 Las consultas en la [búsqueda avanzada](advanced-hunting-overview.md) pueden ser compartidas entre usuarios de la misma organización. También puede buscar las consultas compartidas de forma pública en GitHub. Estas consultas le permitirán seguir rápidamente los escenarios específicos de búsqueda contra amenazas sin tener que escribir las consultas desde cero.
 
-![Imagen de consultas compartidas.](../../media/advanced-hunting-shared-queries.png)
+![Imagen de consultas compartidas.](../../media/shared-query-1.png)
 
 ## <a name="save-modify-and-share-a-query"></a>Guardar, modificar y compartir la consulta
 Puede guardar una consulta nueva o existente para que sólo sea accesible para usted o compartida con otros usuarios en su organización. 
@@ -49,7 +49,7 @@ Puede guardar una consulta nueva o existente para que sólo sea accesible para u
     
 3. Escriba un nombre para la consulta. 
 
-   ![Imagen de guardar una consulta.](../../media/advanced-hunting-save-query.png)
+   ![Imagen de guardar una consulta.](../../media/shared-query-2.png)
 
 4. Seleccione la carpeta en la que desea guardar la consulta.
     - **Consultas compartidas** — compartidas con todos los usuarios de su organización
@@ -58,9 +58,9 @@ Puede guardar una consulta nueva o existente para que sólo sea accesible para u
 5. Seleccione **Guardar**. 
 
 ## <a name="delete-or-rename-a-query"></a>Eliminar o cambiar el nombre de la consulta
-1. Haga clic con el botón derecho en la consulta que desee cambiar o eliminar el nombre.
+1. Seleccione los tres puntos a la derecha de una consulta que desea cambiar o eliminar.
 
-    ![Imagen de la consulta de eliminación.](../../media/advanced_hunting_delete_rename.png)
+    ![Imagen de la consulta de eliminación.](../../media/shared-query-3.png)
 
 2. Seleccione **Eliminar** y confirme su eliminación. O seleccione **Cambiar el nombre** y proporcione un nombre nuevo para la consulta.
 
@@ -73,8 +73,6 @@ Los investigadores de la seguridad de Microsoft comparten regularmente las consu
 >[!tip]
 >Los investigadores de la seguridad de Microsoft también proporcionan búsquedas avanzadas que puede ser utilizadas para buscar actividades e indicadores asociados a las amenazas emergentes. Estas consultas son proporcionadas en los informes del [análisis de amenazas](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) del Centro de seguridad de Microsoft Defender.
 
->[!NOTE]
->Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

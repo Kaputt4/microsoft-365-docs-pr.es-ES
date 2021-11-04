@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d8a3ea4d701c390c7c8505f42fa2440e38965584
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f4e8cf234cf3fbf84567ecb47e7efc720ae4f873
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643216"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787123"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -58,9 +58,14 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 - [Novedades de Defender para endpoint en iOS](ios-whatsnew.md)
 - [Novedades de Defender para Endpoint en Linux](linux-whatsnew.md)
 
+## <a name="november-2021"></a>Noviembre de 2021
+- [Administración de configuración de seguridad](security-config-management.md) <br/> Una funcionalidad para dispositivos que no están administrados por un Microsoft Endpoint Manager, ya sea Microsoft Intune o Microsoft Endpoint Configuration Manager, para recibir configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
+
+- Mejoras en la compatibilidad entre plataformas.
+
 ## <a name="october-2021"></a>Octubre de 2021
 
-- [Incorporación actualizada y paridad de características para Windows Server 2012 R2 y Windows Server 2016 (versión preliminar)](configure-server-endpoints.md)<br> El nuevo paquete de solución unificada facilita la incorporación de servidores mediante la eliminación de dependencias y pasos de instalación. Además, este paquete de solución unificada incluye muchas mejoras de características nuevas.
+- [Incorporación actualizada y paridad de características para Windows Server 2012 R2 y Windows Server 2016 (versión preliminar)](configure-server-endpoints.md)<br/> El nuevo paquete de solución unificada facilita la incorporación de servidores mediante la eliminación de dependencias y pasos de instalación. Además, este paquete de solución unificada incluye muchas mejoras de características nuevas.
 
 - Windows 11 compatibilidad agregada a Microsoft Defender para endpoint y Microsoft 365 Defender.
 
@@ -102,7 +107,7 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 - [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para endpoint en iOS ya está disponible en general. Esto se suma a la protección de suplantación de identidad que ya existe.  Para obtener más información, consulte [Setup Conditional Access Policy based on device risk signals](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
 
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 - [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *tenant attach*.
 
 

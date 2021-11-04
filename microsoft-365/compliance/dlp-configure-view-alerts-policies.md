@@ -19,13 +19,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo definir y administrar alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: a2969da8fa782a07063614763da015e74d4826f9
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 629f0e84b1118313d6968a07a24d4e27b12f0bce
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753534"
+ms.locfileid: "60785455"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurar y ver alertas para las directivas de prevención de pérdida de datos
 

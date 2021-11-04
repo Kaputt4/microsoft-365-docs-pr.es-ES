@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chats y canales admiten directivas de prevención de pérdida de datos (DLP).
-ms.openlocfilehash: a7db6b951a0522698b2f6b3879fc444825ed2ca1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 66d451e55d5ee41abb0d43927e56295261bd4c8f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753970"
+ms.locfileid: "60786067"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams.
 
@@ -49,23 +49,23 @@ La compatibilidad con la protección DLP en Teams chat requiere E5.
 Para obtener más información sobre los requisitos de licencias, consulte [Instrucciones de licencias de Microsoft 365 del nivel de espacio empresarial](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 > [!IMPORTANT]
-> DLP solo se aplica a los mensajes reales en el subproceso de chat o canal. Las notificaciones de actividad , que incluyen una vista previa de  mensaje breve y aparecen según la configuración de notificación de un usuario, no se incluyen en Teams DLP. Cualquier información confidencial presente en la parte del mensaje que aparece en la vista previa permanecerá visible en la notificación incluso después de que se haya aplicado la directiva DLP y se haya quitado la información confidencial del mensaje en sí.
+> DLP solo se aplica a los mensajes reales en el subproceso de chat o canal. Las notificaciones de actividad, que incluyen una vista previa de mensaje  breve y aparecen según la configuración de notificación de un usuario, no se incluyen en Teams DLP. Cualquier información confidencial presente en la parte del mensaje que aparece en la vista previa permanecerá visible en la notificación incluso después de que se haya aplicado la directiva DLP y se haya quitado la información confidencial del mensaje en sí.
 
 ## <a name="scope-of-dlp-protection"></a>Ámbito de la protección DLP
 
 La protección DLP se aplica de forma diferente a Teams entidades.
 
-|Cuando la directiva está en el ámbito |estas Teams entidades |tendrá protección DLP disponible|
+|Cuando la directiva está en el ámbito |Estas Teams entidades |Tendrá protección DLP disponible|
 |---------|---------|---------|
-|cuentas de usuario individuales     |Chats de 1:1/n         |sí         |
-|     |chats generales         |no         |
-|     |canales privados         |sí         |
-|grupos de seguridad/listas de distribución  | Chats de 1:1/n         |sí         |
-|     |chats generales         |no         |
-|     |canales privados         |sí        |
-|Microsoft 365 grupo    |Chats de 1:1/n          |no         |
-|     |chats generales          |sí        |
-|     |canales privados|no| 
+|Cuentas de usuario individuales     |Chats de 1:1/n         |Sí         |
+|     |Chats generales         |No         |
+|     |canales privados         |Sí         |
+|Grupos de seguridad/listas de distribución  | Chats de 1:1/n         |Sí         |
+|     |Chats generales         |No         |
+|     |canales privados         |Sí        |
+|Microsoft 365 grupo    |Chats de 1:1/n          |No         |
+|     |Chats generales          |Sí        |
+|     |canales privados|No| 
 
 
 ## <a name="policy-tips-help-educate-users"></a>Las sugerencias de directiva ayudan a educar a los usuarios
@@ -116,7 +116,7 @@ Espere aproximadamente una hora para que los cambios funcionen en su centro de d
 
 Para llevar a cabo esta tarea, debe tener asignado un rol de administración que tenga permisos para editar directivas DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión.
+1. Vaya al Centro de cumplimiento ( [https://compliance.microsoft.com](https://compliance.microsoft.com) ) e inicie sesión.
 
 2. Haga clic en **Prevención de pérdida de datos** > **Directiva**.
 
@@ -132,8 +132,8 @@ Para llevar a cabo esta tarea, debe tener asignado un rol de administración que
 
 5. En la **pestaña Elegir ubicaciones,** mantenga la configuración predeterminada de todas las cuentas o seleccione **Permitirme elegir ubicaciones específicas.** Puede especificar lo siguiente:
 
-    1. hasta 1000 cuentas individuales para incluir o excluir
-    1. listas de distribución y grupos de seguridad para incluir o excluir. 
+    1. Hasta 1000 cuentas individuales para incluir o excluir
+    1. Listas de distribución y grupos de seguridad para incluir o excluir. 
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. A continuación, elija **Siguiente**.
@@ -147,7 +147,7 @@ Espere aproximadamente una hora para que los cambios funcionen en su centro de d
 
 Para llevar a cabo esta tarea, debe tener asignado un rol de administración que tenga permisos para editar directivas DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión.
+1. Vaya al Centro de cumplimiento ( [https://compliance.microsoft.com](https://compliance.microsoft.com) ) e inicie sesión.
 
 2. Elija **Prevención de pérdida de datos** > **Directiva** > **+ Crear una directiva**.
 
@@ -162,8 +162,8 @@ Para llevar a cabo esta tarea, debe tener asignado un rol de administración que
 
 5. En la **pestaña Elegir ubicaciones,** mantenga la configuración predeterminada de todas las cuentas o seleccione **Permitirme elegir ubicaciones específicas.** Puede especificar lo siguiente:
 
-    1. hasta 1000 cuentas individuales para incluir o excluir
-    1. listas de distribución y grupos de seguridad para incluir o excluir. **Se trata de una característica de vista previa pública.**
+    1. Hasta 1000 cuentas individuales para incluir o excluir
+    1. Listas de distribución y grupos de seguridad para incluir o excluir. **Se trata de una característica de vista previa pública.**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
     ![Ubicaciones de directivas DLP.](../media/dlp-teams-selectlocationsnewpolicy.png)

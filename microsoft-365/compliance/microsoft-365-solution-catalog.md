@@ -11,12 +11,13 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Obtenga información sobre el Microsoft 365 de soluciones, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a0b6d6ac32f9dfcc81a93deddc081dcb77acd973
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 8a2daf2bf3dd8c3260be24a6b09761e5a6ea3e92
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158207"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786055"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -70,7 +71,7 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 - [Auditoría:](search-the-audit-log-in-security-and-compliance.md)registra la actividad de usuario y administrador de su organización para que pueda buscar en el registro de auditoría e investigar una lista completa de actividades en todas las ubicaciones y servicios.
 - [Solicitudes del interesado:](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)busca y exporta los datos personales de un usuario para ayudarle a responder a las solicitudes del interesado para rgpd.
-- [Exhibición de documentos electrónicos (eDiscovery)](manage-legal-investigations.md)
+- [eDiscovery](manage-legal-investigations.md)
     - [EDiscovery principal:](./get-started-core-ediscovery.md)busca en todas las ubicaciones de contenido para identificar, conservar y exportar datos en respuesta a solicitudes de detección legal y casos de exhibición de documentos electrónicos.
     - [Advanced eDiscovery:](overview-ediscovery-20.md)se basa en las capacidades de exhibición de documentos electrónicos proporcionando análisis inteligentes y aprendizaje automático para ayudarle a analizar aún más los datos que son relevantes para las solicitudes de detección.
 
@@ -78,7 +79,7 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 Para visitar el catálogo Microsoft 365 soluciones, vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos [https://compliance.microsoft.com](https://compliance.microsoft.com) de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la página principal del catálogo.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Por qué no veo el catálogo Microsoft 365 soluciones?**
 

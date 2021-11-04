@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c0f1a476963a3eed3e1759743f87b1bce2233ffc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: cd087ef92a261904ce43951f2a29bb64639405ac
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667053"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786041"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Descripción del esquema de búsqueda avanzada
 
@@ -48,7 +48,7 @@ Al crear consultas, use la referencia de esquema integrado para obtener rápidam
 ### <a name="access-the-schema-reference"></a>Obtener acceso a la referencia de esquema
 Para obtener acceso rápidamente a la referencia de esquema, seleccione la acción **Ver** referencia junto al nombre de tabla en la representación del esquema. También puede seleccionar Referencia **de esquema para** buscar una tabla.
 
-![Imagen que muestra cómo obtener acceso a la referencia de esquema en el portal.](../../media/mtp-ah/ah-reference.png)
+![Imagen que muestra cómo obtener acceso a la referencia de esquema en el portal.](../../media/understand-schema-1.png)
 
 ## <a name="learn-the-schema-tables"></a>Obtenga información sobre las tablas de esquema
 A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla está vinculado a una página donde se describen los nombres de las columnas de esa tabla. Los nombres de tabla y columna también se enumeran en el centro de seguridad como parte de la representación del esquema en la pantalla de búsqueda avanzada.

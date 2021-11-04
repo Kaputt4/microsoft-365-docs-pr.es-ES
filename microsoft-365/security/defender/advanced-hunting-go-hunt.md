@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32bd63e5b7a0546c6222fab72684ebd990541366
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a573b68d03e7446fc63f4fbc34bee3d46da9c49
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176768"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786654"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Búsqueda rápida de información de entidad o evento con go hunt
 
@@ -42,16 +42,16 @@ La *acción ir a la* búsqueda está disponible en varias secciones del centro d
 
 - En la [página de incidentes,](investigate-incidents.md#summary)puede revisar detalles sobre usuarios, dispositivos y muchas otras entidades asociadas con un incidente. A medida que selecciona una entidad, obtiene información adicional, así como diversas acciones que podría realizar en esa entidad. En el ejemplo siguiente, se selecciona un buzón, que muestra detalles sobre el buzón, así como la opción de buscar más información sobre el buzón.
 
-    ![Imagen que muestra los detalles del buzón con la opción ir a la búsqueda.](../../media/mtp-ah/go-hunt-email.png)
+    ![Imagen que muestra los detalles del buzón con la opción ir a la búsqueda.](../../media/go-hunt-1-incident.png)
 
 - En la página de incidentes, también puede obtener acceso a una lista de entidades en la pestaña evidencia. Seleccionar una de estas entidades proporciona una opción para buscar rápidamente información sobre esa entidad.
 
-    ![Imagen que muestra el archivo seleccionado con la opción ir a buscar en la pestaña Evidencia.](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![Imagen que muestra el archivo seleccionado con la opción ir a buscar en la pestaña Evidencia.](../../media/go-hunt-2-entity.png)
 
 
 - Al ver la escala de tiempo de un dispositivo, puedes seleccionar un evento en la escala de tiempo para ver información adicional sobre ese evento. Una vez seleccionado un evento, se obtiene la opción de buscar otros eventos relevantes en la búsqueda avanzada.
 
-    ![Imagen que muestra los detalles del evento con la opción ir a la búsqueda.](../../media/mtp-ah/go-hunt-event.png)
+    ![Imagen que muestra los detalles del evento con la opción ir a la búsqueda.](../../media/go-hunt-3-event.png)
 
 Al seleccionar **Ir a la búsqueda** o a **La** búsqueda de eventos relacionados, se pasan distintas consultas, según si ha seleccionado una entidad o un evento.
 

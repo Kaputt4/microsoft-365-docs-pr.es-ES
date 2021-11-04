@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0226be17f475250d5d50d363596bd115f27ce6cd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0e5a44811138604abeec4eb6f9b83668a6988ca
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191544"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60787097"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Ejemplo de búsqueda avanzada para Microsoft Defender para Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "60191544"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 ¿Quiere empezar a buscar amenazas para correos electrónicos mediante la búsqueda avanzada de amenazas? Pruebe esto:
 
@@ -73,7 +73,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="La página Búsqueda avanzada (en Búsqueda) con Consulta seleccionada en la parte superior del panel de consulta y ejecutando una consulta kusto para capturar acciones de ZAP en los últimos 7 días.":::
+:::image type="content" source="../../media/ah-query-example-new.png" alt-text="La página Búsqueda avanzada (en Búsqueda) con Consulta seleccionada en la parte superior del panel de consulta y ejecutando una consulta kusto para capturar acciones de ZAP en los últimos 7 días.":::
 
 Los datos de esta consulta aparecerán en el panel de resultados bajo la propia consulta. Los resultados incluyen información como "DeviceName", "AccountDisplayName" y "ZapTime" en un conjunto de resultados que se puede personalizar. Los resultados también se pueden exportar para sus registros. Si se trata de una consulta que volverá a necesitar, seleccione **Guardar** > **Guardar como** y agregue la consulta a su lista de consultadas, compartidas o consultas de comunidad.
 

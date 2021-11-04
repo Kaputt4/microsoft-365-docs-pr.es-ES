@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 74a0a04b932d0d116616e0d72322e817b11b7b9c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.custom: admindeeplinkCOMPLIANCE
+ms.openlocfilehash: f56ca8e534a9e925cb117d614002c611282ceb44
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757030"
+ms.locfileid: "60786979"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -262,7 +263,7 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 | Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal del usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
 | Nombre | Nombre de la directiva para la directiva de administración de riesgos insider que generó la alerta. |
 | PolicyId | GUID de la directiva de administración de riesgos insider que desencadenó la alerta. |
-| Severity | Gravedad de la alerta. Los valores *son High,* *Medium* o *Low*. |
+| Gravedad | Gravedad de la alerta. Los valores *son High,* *Medium* o *Low*. |
 | Origen | El origen de la alerta. El valor es *Office 365 seguridad & cumplimiento*. |
 | Estado | El estado de la alerta. Los valores *son Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), Resolved ( *Resolved* in insider risk), Dismissed (  *Dismissed* in insider risk). |
 | Versión | La versión del esquema de alerta de seguridad y cumplimiento. |

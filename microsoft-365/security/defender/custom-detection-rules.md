@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a267921468bfc72513a54b11d9ca58b539848ac8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 48bc7302f8f5e96f35eec70039ec437f602ada2d
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157715"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60786426"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -192,7 +192,7 @@ Puede ver la lista de reglas de detección personalizadas existentes, comprobar 
 
 ### <a name="view-existing-rules"></a>Ver reglas existentes
 
-Para ver todas las reglas de detección personalizadas existentes, vaya a **Buscar**  >  **detecciones personalizadas**. La página enumera todas las reglas con la siguiente información de la ejecución:
+Para ver todas las reglas de detección personalizadas existentes, vaya a **Buscar**  >  **reglas de detección personalizadas.** La página enumera todas las reglas con la siguiente información de la ejecución:
 
 - **Última ejecución:** cuando se ejecuta por última vez una regla para comprobar si hay coincidencias de consulta y generar alertas
 - **Estado de la última ejecución:** si una regla se ejecutó correctamente
@@ -201,9 +201,9 @@ Para ver todas las reglas de detección personalizadas existentes, vaya a **Busc
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>Ver detalles, modificar y ejecutar la regla
 
-Para ver información completa acerca de una regla de detección personalizada, vaya a **Buscar** detecciones personalizadas y, a continuación,  >   seleccione el nombre de la regla. A continuación, puede ver información general sobre la regla, incluida la información sobre su estado de ejecución y ámbito. La página también proporciona la lista de alertas y acciones desencadenadas.
+Para ver información completa acerca de una regla de detección personalizada, vaya a **Buscar** reglas de detección personalizadas y, a continuación,  >   seleccione el nombre de la regla. A continuación, puede ver información general sobre la regla, incluida la información sobre su estado de ejecución y ámbito. La página también proporciona la lista de alertas y acciones desencadenadas.
 
-![Página de detalles de regla de detección personalizada.](../../media/custom-detection-details.png)<br>
+![Página de detalles de regla de detección personalizada.](../../media/custom-detect-rules-view.png)<br>
 *Detalles de la regla de detección personalizada*
 
 También puede realizar las siguientes acciones en la regla desde esta página:
@@ -231,7 +231,7 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >[!NOTE]
 >Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

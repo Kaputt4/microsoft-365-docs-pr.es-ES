@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: fe21093b8849effaf50771f2260d8588a6e68e5d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a5d64106d801dfe554fe01290011e2d3e2b7767e
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756604"
+ms.locfileid: "60786090"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Prácticas recomendadas para la consulta de búsqueda avanzada
 
@@ -36,7 +36,11 @@ ms.locfileid: "60756604"
 Aplique estas recomendaciones para obtener resultados más rápido y evitar tiempos de espera mientras ejecuta consultas complejas. Para obtener más información sobre cómo mejorar el rendimiento de las consultas, vea [procedimientos recomendados de consulta de Kusto](/azure/kusto/query/best-practices).
 
 ## <a name="understand-cpu-resource-quotas"></a>Comprender las cuotas de recursos de CPU
-Según su tamaño, cada inquilino tiene acceso a una cantidad establecida de recursos de CPU asignados para ejecutar consultas de búsqueda avanzada. Para obtener información detallada acerca de los distintos límites de servicio, lea acerca de las cuotas de búsqueda [avanzadas y los parámetros de uso](advanced-hunting-limits.md).
+Según su tamaño, cada inquilino tiene acceso a una cantidad establecida de recursos de CPU asignados para ejecutar consultas de búsqueda avanzada. Para obtener información detallada acerca de los distintos parámetros de uso, lea acerca de las cuotas avanzadas de búsqueda [y los parámetros de uso](advanced-hunting-limits.md).
+
+Después de ejecutar la consulta, puede ver el tiempo de ejecución y su uso de recursos (Low, Medium, High). High indica que la consulta tardó más recursos en ejecutarse y podría mejorarse para devolver resultados de forma más eficiente.
+
+![Imagen que muestra un indicador de recursos bajo](../../media/resource-usage.png)
 
 Los clientes que ejecutan varias consultas con regularidad deben realizar un seguimiento del consumo y aplicar las instrucciones de optimización de este artículo para minimizar las interrupciones resultantes de la superación de cuotas o parámetros de uso.
 

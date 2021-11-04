@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2a63f13885311ba4a794ca1c25c5e90d320472f5
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: da06544eaf6f994605189948d771c602dda2c66f
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753522"
+ms.locfileid: "60787159"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -62,7 +62,7 @@ Las acciones recomendadas pueden ayudar a su organización a sacar el máximo pa
 
 ![Acciones recomendadas de cumplimiento de comunicaciones.](../media/communication-compliance-recommended-actions.png)
 
-La actividad en los mensajes que contienen contenido inadecuado se enumera por tipo de clasificador de las directivas existentes que usan la plantilla de contenido inadecuado o directivas personalizadas que usan clasificadores para contenido inadecuado. Investigue las alertas de estos mensajes en el panel de alertas de las directivas.
+La actividad en los mensajes que contienen contenido inadecuado se enumera por tipo de clasificador de directivas existentes que usan la plantilla de contenido inadecuado o directivas personalizadas que usan clasificadores para contenido inadecuado. Investigue las alertas de estos mensajes en el panel de alertas de las directivas.
 
 La actividad relacionada con tipos de información confidencial se detecta en los mensajes que se tratan en las directivas existentes y en los mensajes que no están cubiertos por directivas existentes. Ideas se proporcionan para todos los tipos de información confidencial, incluidos los que su organización no ha definido previamente en una directiva de cumplimiento de comunicaciones existente. Use estas perspectivas para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes.
 
