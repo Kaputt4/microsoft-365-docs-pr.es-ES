@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cc83349a1c4fda3b95665ce13cb3e82bbf8610b3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b43ec6b8d529fe0f5c2ed89ed58c8fc122ada66e
+ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192132"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668327"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -237,11 +237,13 @@ Si no ve la etiqueta o el comportamiento del valor de la directiva de etiquetas 
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Etiquetas de confidencialidad y Azure Information Protection
 
-Cuando use etiquetas de confidencialidad en las Aplicaciones de Microsoft 365 en equipos Windows, puede decidir si usar el etiquetado de las aplicaciones de Office o el cliente de Azure Information Protection.
+Al usar etiquetas de confidencialidad en Aplicaciones de Microsoft 365 en equipos Windows, tiene la opción de usar el etiquetado integrado en las aplicaciones de Office o el [cliente de Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2).
 
-De forma predeterminada, la etiqueta integrada está desactivada en estas aplicaciones cuando el cliente de Azure Information Protection está instalado. Para obtener más información, incluido cómo cambiar este comportamiento predeterminado, consulte [cliente de etiquetas integrado de Office y cliente de Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
+Dado que las etiquetas integradas no usan un complemento de Office, tal y como las usa el cliente de Azure Information Protection, tienen la ventaja de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes, como clasificadores avanzados.
 
-Incluso si usa etiquetas integradas en las aplicaciones de Office, también puede usar el cliente de etiquetas Unificado de Azure Information Protection con etiquetas de confidencialidad para lo siguiente:
+De forma predeterminada, la etiqueta integrada está desactivada en estas aplicaciones cuando el cliente de Azure Information Protection está instalado. Para cambiar este comportamiento predeterminado y usar etiquetas integradas para las aplicaciones de Office, vea [cliente de etiquetado integrado de Office y el cliente de Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
+
+Al mantener el cliente de Azure Information Protection instalado pero deshabilitado en las aplicaciones de Office, obtiene la ventaja de usar el cliente de Azure Information Protection con etiquetas de confidencialidad para lo siguiente:
 
 - Un escáner para detectar información confidencial almacenada localmente y, si quiere, etiquete el contenido
 
@@ -251,7 +253,7 @@ Incluso si usa etiquetas integradas en las aplicaciones de Office, también pued
 
 - Un módulo de PowerShell para detectar información confidencial en los archivos locales y aplicar o quitar las etiquetas y el cifrado de estos archivos.
 
-Si no está familiarizado con Azure Information Protection, o si es un cliente de Azure Information Protection que acaba de migrar sus etiquetas, consulte [Elegir la solución de etiquetado de Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) en la documentación de Azure Information Protection.
+Si no está familiarizado con Azure Information Protection, consulte [Elija la solución de etiquetado de Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) en la documentación de Azure Information Protection.
 
 ### <a name="azure-information-protection-labels"></a>Etiquetas de Azure Information Protection
 

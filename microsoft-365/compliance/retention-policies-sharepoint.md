@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: 2e9b9b9c708a4379d298b69f1164a9d853c84ad6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1194ba1aa2367980207d33e2ca4020b8e0ba57d1
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665125"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753076"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -151,7 +151,9 @@ Cuando un usuario deja la organización, no se verá afectado el contenido cread
 
 **OneDrive**:
 
-Si un usuario abandona su organización, cualquier archivo que esté sujeto a una directiva de retención o que tenga una etiqueta de retención permanecerá durante la duración de la directiva o la etiqueta. Durante ese período de tiempo, todo el acceso para compartir sigue funcionando. Cuando expire el período de retención, el contenido se mueve a la papelera de reciclaje de la colección de sitios y no es accesible para nadie excepto el administrador. Si un documento está marcado con una etiqueta de retención como registro, el documento no se eliminará hasta que finalice el período de retención, tras lo cual el contenido se eliminará de forma permanente.
+Si un usuario abandona la organización, los archivos que estén sujetos a una directiva de retención o que tengan una etiqueta de retención permanecerán sujetos a la configuración de retención durante el período de retención especificado en la directiva o etiqueta. Durante ese tiempo, todo el acceso compartido sigue funcionando y el contenido sigue siendo detectable mediante la búsqueda de contenido y eDiscovery. 
+
+Cuando expira el período de retención y la configuración de retención incluye una acción de eliminación, el contenido se mueve a la papelera de reciclaje de colección de sitios y solo el administrador puede acceder a él.
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 

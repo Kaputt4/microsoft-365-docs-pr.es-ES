@@ -12,16 +12,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
-ms.openlocfilehash: fe24f13609752dd5a5e73f4631644bd1cf4d4e6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151355"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753672"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
@@ -215,7 +216,7 @@ Ahora, en el cuadro de búsqueda, escriba **RefinableString00:"Especificaciones 
 
 Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una directiva de etiqueta aplicable automáticamente que usa una consulta de KQL para aplicar de manera automática la etiqueta de retención Especificaciones del producto en los documentos correspondientes.
 
-1. En el [Centro de cumplimiento](https://compliance.microsoft.com/homepage), vaya a **Administración de registros** > **Directivas de etiqueta** > **Aplicar automáticamente una etiqueta**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a **Administración de registros** > **Directivas de etiqueta** > **Aplicar automáticamente una etiqueta**.
 
    [ ![Seleccione "Aplicar automáticamente una etiqueta" en la página Etiquetas](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
