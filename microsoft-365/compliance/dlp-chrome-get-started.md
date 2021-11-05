@@ -16,15 +16,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: e89edb32e3af5fc661a8f22870e8b7097faf82e2
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 1ac08dc558806d47c382db7c3b4a58f43ff3c4f4
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264917"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754356"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
@@ -243,13 +244,13 @@ Ahora que ha quitado Chrome de la lista de aplicaciones/exploradores no permitid
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>Usar el panel de administración de alertas para ver las alertas de DLP de Chrome
 
-1. Abra la página sobre la **Prevención de pérdida de datos** en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) y seleccione **Alertas**.
+1. Abra la página sobre la **prevención de pérdida de datos** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> y seleccione **Alertas**.
 
 2. Vea los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Visualizar datos de Endpoint DLP en el explorador de actividad
 
-1. Abra la [Página clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el Centro de cumplimiento de Microsoft 365 y elija **Explorador de actividad**.
+1. Abra la [página Clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> y elija **Explorador de actividad**.
 
 2. Consulte los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para tener acceso a todos los datos de los dispositivos con Endpoint y filtrarlos.
 

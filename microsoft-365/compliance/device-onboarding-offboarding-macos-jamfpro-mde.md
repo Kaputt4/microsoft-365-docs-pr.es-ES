@@ -1,5 +1,5 @@
 ---
-title: Incorporación y offboard de dispositivos macOS en soluciones de cumplimiento con JAMF Pro para clientes de Microsoft Defender para endpoints (versión preliminar)
+title: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro para clientes de Microsoft Defender para endpoints (versión preliminar)
-ms.openlocfilehash: dd5bedb473de6fa608d1e28ad7a81c3a6d7d5b30
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 31ff2803a1180d7a43b462f3a78cc52c894f23a6
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648215"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792321"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Incorporación y offboard de dispositivos macOS en soluciones de cumplimiento con JAMF Pro para clientes de Microsoft Defender para endpoints (versión preliminar)
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
 
 Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumplimiento.
 
@@ -30,7 +30,7 @@ Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumpl
 
 ## <a name="get-registered"></a>Registrarse
 
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/Ignite2021DLP).
+Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 **Se aplica a:**
 

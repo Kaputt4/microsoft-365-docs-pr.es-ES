@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: eb42d43db8edf0bad02e66a5ee4e2853b8d42878
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 898acf4e74f6aadb79bf5dfb7e3fc751d6286ecb
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756030"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792393"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -60,7 +60,7 @@ Si el uso del ancho de banda no es un problema, no puede establecer un límite y
 
 ### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Configuración de Windows 10 DLP de punto de conexión y macOS
 
-Para obtener acceso al soporte técnico de macOS, debe registrar el espacio empresarial con Microsoft. Vea, [obtener registrado](https://aka.ms/Ignite2021DLP).
+Para obtener acceso al soporte técnico de macOS, debe registrar el espacio empresarial con Microsoft. Vea, [obtener registrado](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 y versiones posteriores  |macOS Catalina 10.15 o posterior (versión preliminar)  |Notas  |
 |---------|---------|---------|---------|

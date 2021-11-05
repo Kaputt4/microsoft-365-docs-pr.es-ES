@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
-ms.openlocfilehash: c62d1d1478b62ac3ba66ccc0fc7fb9d5fc6101b3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a409dd83d33e1b18ccbb11613b0a5162e0ff4d0
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207336"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756156"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
@@ -40,7 +40,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
 
 ## <a name="enable-an-archive-mailbox"></a>Habilitación de un buzón de archivo
 
-1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión.
 
 2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Control de la información** y luego en la pestaña **Archivo**.
 
@@ -72,7 +72,7 @@ La directiva de archivo predeterminada asignada a los buzones de usuarios mueve 
 
 Para deshabilitar un buzón de archivo:
 
-1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión.
 
 2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Control de la información** y luego en la pestaña **Archivo**.
 

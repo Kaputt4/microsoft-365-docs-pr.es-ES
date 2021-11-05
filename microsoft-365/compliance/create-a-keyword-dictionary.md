@@ -17,13 +17,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: f585009ee54c03b0417f5aa74fd0b7d2fa0d5e7e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b1749b51367bda90945e0d8e61e9674acc5077b6
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167335"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747727"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -73,7 +74,7 @@ Remove-Item $rawFile
 
 Las palabras clave del diccionario pueden provenir de varios orígenes, normalmente de un archivo (como una lista en un archivo .csv o .txt) importado en el servicio o del cmdlet de PowerShell, de una lista que escriba directamente en el cmdlet de PowerShell o de un diccionario existente. Al crear un diccionario de palabras clave, siga los mismos pasos principales:
   
-1. Use el **Centro de cumplimiento** ([https://compliance.microsoft.com](https://compliance.microsoft.com)) o conéctese al **Centro de seguridad &amp; cumplimiento de PowerShell**.
+1. Use el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> o conéctese al **PowerShell del Centro de seguridad &amp; cumplimiento**.
     
 2. **Definir o cargar las palabras clave delde origen previsto**. Tanto el asistente como el cmdlet aceptan una lista separada por comas de palabras clave para crear un diccionario de palabras clave personalizado, por lo que este paso variará ligeramente en función de dónde procedan las palabras clave. Una vez cargados, se codifican y convierten en una matriz de bytes antes de importarlos.
     
@@ -83,7 +84,7 @@ Las palabras clave del diccionario pueden provenir de varios orígenes, normalme
 
 Siga estos pasos para crear e importar palabras clave para un diccionario personalizado:
 
-1. Conéctese al Centro de seguridad y cumplimiento ([https://compliance.microsoft.com](https://compliance.microsoft.com)).
+1. Conéctese al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
 2. Vaya a **Clasificaciones > Tipos de información confidencial**.
 

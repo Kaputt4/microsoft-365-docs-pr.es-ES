@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f7f27d772f5b0d68c22bfa57a771cf2d13ca58c6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fce766313b7757712faaa2a2b122730601f137aa
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667019"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792525"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Preguntas más frecuentes al activar Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "60667019"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Lea las respuestas a las preguntas más frecuentes sobre cómo activar [Microsoft 365 Defender,](microsoft-365-defender.md)incluidas las licencias y permisos necesarios, la implementación de servicios de soporte técnico y la configuración inicial.
 
@@ -78,6 +78,11 @@ Las cuentas asignadas Azure Active Directory (Azure AD) pueden tener acceso a Mi
 - Operador de seguridad
 - Lector global
 - Lector de seguridad
+- Administrador de cumplimiento
+- Administrador de datos de cumplimiento
+- Administrador de la aplicación
+- Administrador de aplicaciones en la nube
+
 
 > [!NOTE]
 > La configuración del control de acceso basado en el rol en Microsoft Defender para punto de conexión influye en el acceso a los datos. Para obtener más información, lea sobre [administrar el acceso a Microsoft 365 Defender](m365d-permissions.md).

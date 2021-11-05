@@ -1,5 +1,5 @@
 ---
-title: Incorporación de dispositivos macOS Microsoft 365 información general (versión preliminar)
+title: Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,20 +14,20 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar dispositivos macOS en soluciones de cumplimiento
-ms.openlocfilehash: b9e04b95a0daa123a7e5a8c7863d6477ab2ccf15
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b24fd172224e0d1f8080ddd22cb3532dce0afe2b
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662144"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792297"
 ---
-# <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Incorporación de dispositivos macOS Microsoft 365 información general (versión preliminar)
+# <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)
 
 Los dispositivos MacOS se pueden incorporar a Microsoft 365 de cumplimiento mediante Intune o JAMF Pro. Los procedimientos de incorporación varían en función de la solución de administración que se use. Si los dispositivos macOS ya se han incorporado a Microsoft Defender para endpoint (MDE), hay menos pasos. Consulte [Pasos siguientes para](#next-steps) obtener vínculos a los procedimientos adecuados.
 
 ## <a name="get-registered"></a>Registrarse
 
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/Ignite2021DLP).
+Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 **Se aplica a:**
 

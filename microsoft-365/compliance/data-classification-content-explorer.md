@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: ed0eb21f5c97c4028395b6d85a01e6855a46e028
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0332584988ab9a88ef7440f6e5fc71ef3c9cbd5d
+ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168691"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747781"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -67,7 +68,7 @@ El acceso al explorador de contenidos está altamente restringido porque permite
 > [!IMPORTANT]
 > Estos permisos reemplazan los permisos que se asignan a los elementos de forma local, lo que permite ver el contenido. 
 
-Hay dos roles que conceden acceso al explorador de contenido y se conceden en el [Centro de cumplimiento](https://compliance.microsoft.com/permissions):
+Hay dos roles que conceden acceso al explorador de contenido y se conceden mediante el <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centro de cumplimiento de Microsoft 365</a>:
 
 - **Visor de listas del explorador de contenido**: la pertenencia a este grupo de roles permite ver cada elemento y su ubicación en la vista de lista. El rol `data classification list viewer` se ha asignado previamente a este grupo de roles.
 

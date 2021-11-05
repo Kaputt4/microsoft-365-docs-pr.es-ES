@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 84cb795ec2ffb8e8a2c2ce0d8d476c841c4438ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c55a91987ffc4823bda61b8b13f38af710181edd
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705262"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792381"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "60705262"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 [Microsoft 365 Defender](microsoft-365-defender.md) unifica el proceso de respuesta a incidentes integrando funciones clave en Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. Esta experiencia unificada agrega características eficaces a las que puede tener acceso en el portal Microsoft 365 Defender web.
 
@@ -47,7 +47,19 @@ Para obtener información detallada sobre las licencias, [lee los requisitos de 
 
 ### <a name="check-your-role"></a>Comprobar el rol
 
-Debe ser un administrador **global o** **un** administrador de seguridad en Azure Active Directory para activar Microsoft 365 Defender. [Ver los roles en Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+Debe ser uno de los siguientes roles para activar Microsoft 365 Defender:
+    
+- Administrador global
+- Administrador de seguridad
+- Operador de seguridad
+- Lector global
+- Lector de seguridad
+- Administrador de cumplimiento
+- Administrador de datos de cumplimiento
+- Administrador de la aplicación
+- Administrador de aplicaciones en la nube
+
+[Ver los roles en Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="supported-services"></a>Servicios compatibles
 

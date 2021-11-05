@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprende a usar directivas de dlp para aplicaciones en la nube que no son de Microsoft.
-ms.openlocfilehash: 314520ce48b53d4629d0ebd2fa2bed0cdb798c8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 503f112a598641733593cfbb37b231b1418b4b36
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177584"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792561"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft
 
@@ -45,9 +45,10 @@ Antes de empezar a usar directivas DLP en aplicaciones en la nube que no son de 
 
 ### <a name="permissions"></a>Permisos
 El usuario que crea la directiva DLP debe ser:
+
 - Administrador global
-- Administrador de cumplimiento
-- Administrador de datos de cumplimiento
+- Administrador de cumplimiento: asignar en Azure AD
+- Administrador de datos de cumplimiento: asignar en Azure AD
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Preparar el entorno Cloud App Security web
 

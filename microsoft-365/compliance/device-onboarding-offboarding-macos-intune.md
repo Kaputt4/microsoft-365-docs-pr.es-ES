@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en Microsoft 365 de cumplimiento con Microsoft Intune (versión preliminar)
-ms.openlocfilehash: fb3e89b303c8c17de3eb6826c25d2b54be364b7e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7e5692197a05f16326d3fd8b43e37a19186b9926
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717652"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792285"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con Intune (versión preliminar)
 
@@ -30,7 +30,7 @@ Puedes usar Intune para incorporar dispositivos macOS en Microsoft 365 de cumpli
 
 ## <a name="get-registered"></a>Registrarse
 
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/Ignite2021DLP).
+Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 **Se aplica a:**
 

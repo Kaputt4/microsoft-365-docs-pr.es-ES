@@ -19,19 +19,21 @@ ms.custom: ''
 description: Obtenga información sobre la forma correcta de migrar desde dispositivos o servicios de protección de terceros como Google Postini, el Firewall de virus y correo no deseado de Barracuda o Cisco IronPort a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80823f77fb76c44d5031d7d856151fa84491ee2d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 6c48de77ff62e21263f4475f0ce5e0bd5f36d221
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779163"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792501"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Migre desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-Esta guía proporciona pasos específicos y de acción para migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365. En esta guía se presuponen los siguientes hechos:
+Si ya tienes un dispositivo o servicio de protección de terceros existente frente a Microsoft 365, puedes usar esta guía para migrar la protección a Microsoft Defender para Office 365 para obtener las ventajas de una experiencia de administración consolidada, un costo potencialmente reducido (con productos que ya pagas) y un producto maduro con protección de seguridad integrada. Para obtener más información, vea [Microsoft Defender for Office](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
+
+En esta guía se proporcionan pasos específicos y que pueden realizarse para la migración y se asumen los siguientes hechos:
 
 - Ya tienes Microsoft 365 buzones de correo, pero actualmente estás usando un dispositivo o servicio de terceros para la protección de correo electrónico. El correo de Internet fluye por el servicio de protección antes de la entrega a la organización de Microsoft 365 y la protección de Microsoft 365 es lo más baja posible (nunca está completamente desactivada; por ejemplo, siempre se aplica la protección contra malware).
 
