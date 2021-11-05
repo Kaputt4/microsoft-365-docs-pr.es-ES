@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 6f147de6412db71a17e8bb4a8b79968160d0fe3e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a66ef59df6f05ec0e03fa5b9388f2fd3e0fd9a58
+ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701942"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60792573"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -189,10 +189,10 @@ Las etiquetas de retención se pueden publicar en diferentes ubicaciones, en fun
   
 | Si la etiqueta de retención... | Entonces, se puede aplicar la directiva de etiqueta a... |
 |:-----|:-----|
-|Se publica para administradores y usuarios finales  <br/> |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
-|Se aplica automáticamente en función de los tipos de información confidencial o clasificadores que se pueden entrenar  <br/> |Exchange, SharePoint, OneDrive  <br/> |
-|Aplicación automática basada en palabras clave o en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
-|Aplicación automática a datos adjuntos en la nube  <br/> |SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
+|Se publica para administradores y usuarios finales  |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  |
+|Se aplica automáticamente en función de los tipos de información confidencial o clasificadores que se pueden entrenar  |Exchange, SharePoint, OneDrive  |
+|Aplicación automática basada en palabras clave o en una consulta  |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  |
+|Aplicación automática a datos adjuntos en la nube  |SharePoint, OneDrive, Grupos de Microsoft 365  |
 
 Las carpetas públicas de Exchange y los mensajes de Skype, Teams y Yammer no admiten etiquetas de retención. Para conservar y eliminar contenido de estas ubicaciones, use más bien las directivas de retención.
 
@@ -417,7 +417,7 @@ Los ejemplos siguientes son más complejos para ilustrar los principios de reten
     
     **Resultado**: el elemento se conserva durante siete años porque la retención tiene prioridad sobre la eliminación y siete años es el período de retención más largo. Al final del período de retención, el elemento se elimina permanentemente por la acción de eliminación de las directivas de retención que se difirió mientras el elemento se conservó.
     
-    Aunque las dos directivas de retención tienen fechas distintas para las acciones de eliminación, lo más pronto que se puede eliminar permanentemente el elemento es al final del período de retención más largo, que es más largo que ambas fechas de eliminación. 
+    Aunque las dos directivas de retención tienen fechas diferentes para las acciones de eliminación, lo más pronto que se puede eliminar permanentemente el elemento es al final del período de retención más largo, que es más largo que las dos fechas de eliminación. 
 
 2.  Se aplicó la siguiente configuración de retención a un elemento:
     
@@ -437,15 +437,35 @@ Usted aplica el Bloqueo de conservación después de crear la directiva o etique
 
 ## <a name="releasing-a-policy-for-retention"></a>Lanzamiento de una directiva de retención
 
-Siempre que sus directivas de retención no tengan ningún Bloqueo de conservación, podrá eliminar las directivas en cualquier momento, lo cual desactiva de forma eficaz la configuración de retención aplicada previamente. También puede mantener la directiva pero cambiar el estado de la ubicación a desactivado, o deshabilitar la directiva. Si la directiva está configurada para incluir sitios específicos para SharePoint o cuentas de OneDrive, también puede editar la directiva para quitar una o varias de estas entradas para liberar la directiva para esos sitios o cuentas.
- 
-Al realizar cualquiera de estas acciones, cualquier contenido de SharePoint o OneDrive sujeto a la retención de la directiva se conservará durante 30 días para evitar la pérdida involuntaria de datos. Durante este período de gracia de 30 días, aún se conservarán los archivos eliminados (se seguirán agregando a la Biblioteca de suspensión para conservación), pero el trabajo de temporizador que limpia periódicamente la Biblioteca de suspensión para conservación se suspende para estos archivos para que pueda restaurarlos si es necesario.
+Siempre que sus directivas de retención no tengan un bloqueo de conservación, puede eliminar sus directivas en cualquier momento, lo que desactiva efectivamente la configuración de retención para una directiva de retención, y las etiquetas de retención ya no se pueden aplicar desde las directivas de etiquetas de retención. Las etiquetas de retención aplicadas anteriormente permanecen con sus opciones de retención configuradas y, para estas etiquetas, puede actualizar el período de retención cuando no se basa en cuándo se etiquetaron los elementos.
 
-Una excepción a este período de gracia de 30 días es cuando actualiza la directiva para excluir uno o varios sitios para SharePoint o cuentas de OneDrive; en este caso, el trabajo de temporizador elimina los archivos de estas ubicaciones en la biblioteca de suspensión para conservación sin el retraso de 30 días.
+También puede mantener una directiva, pero cambiar el estado de ubicación a desactivado o deshabilitar la directiva. Otra opción es volver a configurar la directiva para que ya no incluya usuarios, sitios, grupos específicos, entre otros. 
 
-Para obtener más información sobre la Biblioteca de suspensión para conservación, consulte [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+Información adicional para ubicaciones específicas:
 
-Debido al comportamiento durante el período de gracia, si vuelve a habilitar la directiva o vuelve a activar el estado de ubicación en un plazo de 30 días, la directiva se reanudará sin pérdida permanente de datos durante este tiempo.
+- **Sitios de SharePoint y cuentas de OneDrive:**
+    
+    Al publicar una directiva de retención para sitios de SharePoint y cuentas de OneDrive, cualquier contenido sujeto a retención de la directiva se conserva durante 30 días para evitar la pérdida accidental de datos. Durante este período de gracia de 30 días, aún se conservarán los archivos eliminados (se seguirán agregando a la Biblioteca de suspensión para conservación), pero el trabajo de temporizador que limpia periódicamente la Biblioteca de suspensión para conservación se suspende para estos archivos para que pueda restaurarlos si es necesario.
+    
+    Una excepción a este período de gracia de 30 días es cuando actualiza la directiva para excluir uno o varios sitios para SharePoint o cuentas de OneDrive; en este caso, el trabajo de temporizador elimina los archivos de estas ubicaciones en la biblioteca de suspensión para conservación sin el retraso de 30 días.
+    
+    Para obtener más información sobre la Biblioteca de suspensión para conservación, consulte [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+    
+    Debido al comportamiento durante el período de gracia, si vuelve a habilitar la directiva o vuelve a activar el estado de ubicación en un plazo de 30 días, la directiva se reanudará sin pérdida permanente de datos durante este tiempo.
+
+- **Correo electrónico de Exchange y grupos de Microsoft 365**
+    
+    Al liberar una directiva de retención para buzones que están [inactivos](inactive-mailboxes-in-office-365.md) en el momento en que se publica la directiva:
+    
+    - Si la directiva de retención se aplica explícitamente a un buzón, la configuración de retención ya no se aplica. Sin la configuración de retención aplicada, un buzón inactivo se convierte en apto para la eliminación automática de la forma habitual.
+        
+        Una directiva de retención explícita requiere un ámbito de directiva adaptable o un ámbito de directiva estática con una configuración de inclusión que especifique un buzón activo en el momento en que se aplicó la directiva y más tarde quedó inactiva.
+    
+    - Si la directiva de retención se aplica implícitamente a un buzón de correo y la acción de retención configurada es retenerla, la directiva de retención continúa aplicándose y un buzón inactivo nunca podrá eliminarse automáticamente. Cuando la acción de retención ya no se aplica porque ha expirado el período de retención, el administrador de Exchange ahora puede [eliminar manualmente el buzón inactivo](delete-an-inactive-mailbox.md)
+        
+        Una directiva de retención implícita requiere un ámbito de directiva estático con la configuración de **Todos los destinatarios** (para correo electrónico de Exchange) o **Todos los grupos** (para Grupos de Microsoft 365).
+    
+    Para obtener más información sobre los buzones inactivos que tienen directivas de retención aplicadas, vea [buzones inactivos y directivas de retención de Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention-policies).
 
 ## <a name="auditing-retention-configuration-and-actions"></a>Auditoría de las acciones y la configuración de retención
 
@@ -473,7 +493,7 @@ Las acciones de retención que se registran como eventos de auditoría solo est�
 - Cuando un elemento etiquetado en SharePoint, OneDrive o Exchange se marca como un registro o registro normativo, y se elimina de manera permanente:
     - En **Actividades de archivos y páginas**, seleccione **Archivo eliminado marcado como un registro.**
 
-- Cuando un revisor para eliminación realiza una acción para un elemento que ha alcanzado el final de su período de retención:
+- Cuando un revisor de eliminación realiza una acción para un elemento que ha llegado al final de su período de retención:
     -  Desde **Actividades de revisión para eliminación**, seleccione **Eliminación aprobada**, **Período de retención extendido**, **Elemento vuelto a etiquetar** o **Revisores agregados**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención

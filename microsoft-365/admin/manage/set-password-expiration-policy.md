@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Obtenga información sobre cómo un administrador puede establecer una directiva de expiración de contraseñas para su empresa, escuela u ONG en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 53c4e1ac80606e4f2a895a4f008206070cafe3c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9a9c01b292fcc4162e79b899b23f082e4f6413e2
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171788"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785791"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
@@ -51,7 +51,7 @@ Si es un usuario, no tiene los permisos necesarios para configurar que la contra
 Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuarios para que expiren después que haya transcurrido cierto tiempo.
 
 1. En el Centro de administración de Microsoft 365, vaya a la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Seguridad y privacidad**</a>.
- 
+
     Si no es administrador global, no verá la opción de seguridad y privacidad.
   
 1. Establecer la **directiva de expiración de contraseña**
@@ -62,8 +62,8 @@ Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuar
   
 6. Escriba en la segunda casilla cuándo se debe informar a los usuarios sobre la expiración de su contraseña y luego seleccione **guardar**. Elija una cantidad de días entre 1 y 30.
 
-> [!NOTE]
-> Las notificaciones de expiración de contraseña ya no se admiten en el portal de Office 365 ni en ninguna aplicación de Office excepto en Outlook cuando se usa la autenticación básica. Outlook con autenticación moderna no admite notificaciones de expiración de contraseña.
+> [!IMPORTANT]
+> Las notificaciones de expiración de contraseña ya no se admiten en el Centro de administración de Microsoft 365 ni en ninguna aplicación de Office.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Aspectos importantes que debe conocer sobre la función de expiración de contraseña
   
