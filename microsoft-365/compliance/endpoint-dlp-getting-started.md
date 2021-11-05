@@ -18,13 +18,14 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: f6790e3c9af833c6e9e9103f68b91730c475cfb8
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9a706350be231fa5af794cb2774e3d88fb89dc1b
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754862"
+ms.locfileid: "60786727"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
