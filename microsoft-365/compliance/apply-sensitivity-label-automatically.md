@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 1ad7ba8af90a099ccc7d1072397c77ed2de387c0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f04044d1c0b951dc62e3d515f951faf8625e1b44
+ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647742"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785647"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -418,6 +418,8 @@ Cuando su espacio empresarial tenga las nuevas mejoras, verá la siguiente notif
 ## <a name="tips-to-increase-labeling-reach"></a>Sugerencias para aumentar el alcance del etiquetado
 
 Aunque el etiquetado automático es una de las formas más eficaces de clasificar, etiquetar y proteger los archivos de Office que posee su organización, es posible que pueda complementarlo con cualquiera de estos métodos adicionales para aumentar el alcance del etiquetado:
+
+- Con SharePoint Syntex, puede [aplicar una etiqueta de confidencialidad a un modelo de comprensión de documentos](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), para que los documentos identificados en una biblioteca de SharePoint se etiqueten automáticamente.
 
 - Cuando use el cliente de etiquetado unificado [Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2):
 
