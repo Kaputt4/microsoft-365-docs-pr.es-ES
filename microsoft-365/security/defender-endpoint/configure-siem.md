@@ -1,8 +1,7 @@
 ---
-title: Extraer detecciones a las herramientas SIEM desde Microsoft Defender para endpoint
-description: Obtenga información sobre cómo usar la API de REST y configurar las herramientas de administración de eventos y información de seguridad admitidas para recibir y extraer detecciones.
+title: Integrar las herramientas SIEM con Microsoft Defender para endpoint
+description: Obtenga información sobre cómo ingerir incidentes y alertas e integrar herramientas SIEM.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,45 +15,80 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 80a56ac33b11962028e6735a28d8a4692226d306
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a08aca1749e9d5dc613b97347cbb040fe9f6e40c
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209962"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804777"
 ---
-# <a name="pull-detections-to-your-siem-tools"></a>Extraer detecciones a las herramientas SIEM
+# <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integrar las herramientas SIEM con Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="pull-detections-using-security-information-and-events-management-siem-tools"></a>Extraer detecciones mediante herramientas de administración de eventos y información de seguridad (SIEM)
+## <a name="ingest-alerts-using-security-information-and-events-management-siem-tools"></a>Ingerir alertas con herramientas de administración de eventos y información de seguridad (SIEM)
 
 > [!NOTE]
 >
-> - [Microsoft Defender para alerta de](alerts.md) extremo se compone de una o más detecciones.
-> - [Microsoft Defender para la detección de](api-portal-mapping.md) puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de alerta relacionados.
-> -La API de alertas de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
+> [Microsoft Defender para alerta de](alerts.md) extremo se compone de uno o varios eventos sospechosos o malintencionados que se produjeron en el dispositivo y sus detalles relacionados. La API de alerta de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
 
-Defender for Endpoint admite las herramientas de administración de eventos y de información de seguridad (SIEM) para extraer detecciones. Defender for Endpoint expone alertas a través de un extremo HTTPS hospedado en Azure. El extremo se puede configurar para extraer detecciones del inquilino de la empresa en Azure Active Directory (AAD) mediante el protocolo de autenticación de OAuth 2.0 para una aplicación de AAD que representa el conector SIEM específico instalado en el entorno.
+Microsoft Defender para endpoint admite la información de seguridad y las herramientas de administración de eventos (SIEM) que ingieren información del inquilino empresarial en Azure Active Directory (AAD) mediante el protocolo de autenticación OAuth 2.0 para una aplicación AAD registrada que represente la solución o conector SIEM específico instalado en el entorno. 
 
-Defender para endpoint actualmente admite las siguientes herramientas de solución SIEM específicas a través de un modelo de integración SIEM dedicado:
+Para más información, vea:
 
-- IBM QRadar
-- Micro Focus ArcSight
+- [Licencia de Microsoft Defender para API de extremo y términos de uso](api-terms-of-use.md) 
+- [Acceder a las API de Microsoft Defender para punto de conexión](apis-intro.md)
+- [Ejemplo de Hello World (describe cómo registrar una aplicación en Azure Active Directory)](api-hello-world.md)
+- [Obtener acceso con el contexto de la aplicación](exposed-apis-create-app-webapp.md)
 
-Otras soluciones SIEM (como Splunk, RSA NetWitness) se admiten a través de un modelo de integración diferente basado en la nueva API de alertas. Para obtener más información, vea la [página Aplicación de partners](https://securitycenter.microsoft.com/interoperability/partners) y seleccione la sección Información de seguridad y análisis para obtener información completa.
 
-Para usar cualquiera de estas herramientas SIEM compatibles, deberá:
+Microsoft Defender para endpoint admite actualmente las siguientes integraciones de soluciones SIEM: 
 
-- [Habilitar la integración de SIEM en Defender for Endpoint](enable-siem-integration.md)
-- Configurar la herramienta SIEM compatible:
-  - [Configurar Micro Focus ArcSight para extraer Defender para detecciones de puntos de conexión](configure-arcsight.md)
-  - Configurar IBM QRadar para extraer Defender para detecciones de puntos de conexión Para obtener más información, vea [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
+- [Ingerir incidentes y alertas de las API de REST de Microsoft 365 Defender y Microsoft Defender para incidentes de punto de conexión y alertas](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
+- [Ingesta de eventos de Microsoft Defender para endpoint desde la API Microsoft 365 Defender streaming de eventos](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
 
-Para obtener más información sobre la lista de campos expuestos en la API de detección, vea [Defender for Endpoint Detection fields](api-portal-mapping.md).
+## <a name="ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis"></a>Ingerir incidentes y alertas de las API de REST de Microsoft 365 Defender y Microsoft Defender para incidentes de punto de conexión y alertas
+
+### <a name="ingesting-incidents-from-the-microsoft-365-defender-incidents-rest-api"></a>Ingerir incidentes desde la API de REST Microsoft 365 Defender incidentes
+
+Para obtener más información sobre la API Microsoft 365 Defender incidentes, vea [incidents methods and properties](../defender/api-incident.md).
+
+### <a name="ingesting-alerts-from-the-microsoft-defender-for-endpoint-alerts-rest-api"></a>Ingerir alertas desde la API de REST de Alertas de Microsoft Defender para extremo
+
+Para obtener más información sobre la API de alertas de Microsoft Defender para puntos de conexión, vea [alerts methods and properties](alerts.md).
+
+## <a name="siem-tool-integration-with-microsoft-defender-for-endpoint"></a>Integración de la herramienta SIEM con Microsoft Defender para endpoint
+
+### <a name="splunk"></a>Splunk
+
+Usar el Microsoft 365 Defender complemento para Splunk que admite: 
+
+- Ingesta de alertas de Microsoft Defender para puntos de conexión 
+- Actualización de alertas en Microsoft Defender para endpoint desde Splunk 
+
+Para obtener más información sobre Microsoft 365 Defender complemento para Splunk, vea [splunkbase](https://splunkbase.splunk.com/app/4959/).
+
+### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
+
+El nuevo SmartConnector para Microsoft 365 Defender ingiere incidentes que contienen alertas de todos los productos de Microsoft 365 Defender (incluidos los de Microsoft Defender para endpoint) en ArcSight y los asigna a su Marco de eventos comunes (CEF). 
+
+Para obtener más información sobre el nuevo ArcSight SmartConnector para Microsoft 365 Defender, consulte [La documentación del producto de ArcSight](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
+
+SmartConnector reemplaza el FlexConnector anterior para Microsoft 365 Defender.
+  
+### <a name="ibm-qradar"></a>IBM QRadar
+
+>[!NOTE]
+>
+>La integración de IBM QRadar con Microsoft Defender para endpoint ahora es compatible con el nuevo módulo de soporte de dispositivos (DSM) de Microsoft 365 Defender que llama a la API de streaming de [Microsoft 365 Defender](../defender/streaming-api.md) que permite ingerir datos de eventos de streaming de productos de Microsoft 365 Defender, incluido Microsoft Defender para Endpoint. Para obtener más información sobre los tipos de eventos admitidos, vea [Supported event types](../defender/supported-event-types.md).
+Los nuevos clientes ya no se incorporarán con el anterior módulo de soporte de dispositivos de ATP (DSM) de Microsoft Defender de QRadar y se anima a los clientes existentes a adoptar el nuevo DSM de Microsoft 365 Defender como su único punto de integración con todos los productos Microsoft 365 Defender.
+
+## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Ingesta de eventos de Microsoft Defender para endpoint desde la API Microsoft 365 Defender streaming de eventos
+
+Microsoft 365 Defender datos de eventos de streaming incluyen alertas y otros eventos de Microsoft Defender para Endpoint y otros productos de Microsoft Defender. Estos eventos pueden transmitirse a una cuenta Azure Storage o a Azure Event Hubs. Splunk e IBM QRadar admiten actualmente el modelo de integración a través de centros de eventos.
+
+Para obtener más información, [vea Microsoft 365 Defender integración siem](../defender/configure-siem-defender.md).

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9162c0c6fa3afd74a00b9e0ee75b3d0a3fbd2a6d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 527bd73d11a40672839d29a5007298a0807d95b6
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174800"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804790"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -33,11 +33,11 @@ ms.locfileid: "60174800"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[El acceso controlado a](controlled-folders.md) carpetas te ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas se incluye Windows 10 y Windows Server 2019.
+[El acceso controlado a](controlled-folders.md) carpetas te ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas se incluye Windows 10 y Windows Server 2019.  El acceso controlado a carpetas también se incluye como parte de la solución moderna y unificada [para Windows Server 2012R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
 Puede habilitar el acceso controlado a carpetas mediante cualquiera de estos métodos:
 
-- [Seguridad de Windows app](#windows-security-app)
+- [Seguridad de Windows aplicación *](#windows-security-app)
 - [Microsoft Endpoint Manager](#endpoint-manager)
 - [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -62,6 +62,8 @@ Para obtener más información sobre cómo deshabilitar la combinación de lista
 3. Establezca el modificador para **Acceso controlado a carpetas** en **On**.
 
 > [!NOTE]
+> *Este método no está disponible en Windows Server 2012R2 o 2016.
+> 
 > Si el acceso controlado a carpetas está configurado con directivas de grupo, PowerShell o CSP mdm, el estado cambiará en la aplicación Seguridad de Windows después de reiniciar el dispositivo.
 > Si la característica está establecida en **modo auditoría** con cualquiera de estas herramientas, la Seguridad de Windows aplicación mostrará el estado como **Desactivado**.
 > Si protege los datos de perfil de usuario, se recomienda que el perfil de usuario esté en la unidad de instalación Windows usuario predeterminada.
@@ -106,7 +108,7 @@ Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Con
 4. Elige si bloquea o audita los cambios, permite otras aplicaciones o agrega otras carpetas y selecciona **Siguiente**.
 
    > [!NOTE]
-   > Wilcard es compatible con aplicaciones, pero no para carpetas. Las subcarpetas no están protegidas. Las aplicaciones permitidas seguirán desencadenando eventos hasta que se reinicien.
+   > El comodín es compatible con las aplicaciones, pero no para las carpetas. Las subcarpetas no están protegidas. Las aplicaciones permitidas seguirán desencadenando eventos hasta que se reinicien.
 
 5. Revise la configuración y seleccione **Siguiente** para crear la directiva.
 

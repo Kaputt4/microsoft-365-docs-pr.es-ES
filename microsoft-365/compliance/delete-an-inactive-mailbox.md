@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Cuando ya no necesite conservar el contenido de un buzón Microsoft 365 inactivo, puede eliminar permanentemente el buzón inactivo.
-ms.openlocfilehash: 69cbe206e040ca1b1f76e846c3b3efbf45c1539e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 929b3d8a01dd9c88bc12e6e13bf4477a07496b34
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786895"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804634"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
@@ -126,7 +126,7 @@ Para obtener más información acerca de cómo identificar directivas de retenci
 
 ### <a name="remove-in-place-holds"></a>Quitar retenciones locales
 
- Hay dos maneras de quitar una retención local de un buzón inactivo: 
+ Hay dos maneras de quitar una retención local de un buzón inactivo:
   
 - **Elimine el In-Place hold**. Si el buzón inactivo que desea eliminar permanentemente es el único buzón de origen para una retención de In-Place, solo puede eliminar el In-Place hold. 
 

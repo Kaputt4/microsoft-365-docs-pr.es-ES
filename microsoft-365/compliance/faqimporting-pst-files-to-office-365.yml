@@ -18,12 +18,12 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: Este artículo contiene respuestas a algunas preguntas más frecuentes para los administradores acerca de la importación de archivos PST a Microsoft 365 el servicio de Office 365 importación.
-  ms.openlocfilehash: 0b8ba1414768ade4c192023797eeec55934be817
-  ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+  ms.openlocfilehash: e6baaf6125817956bdc09048e852e1eca2e66d88
+  ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/03/2021
-  ms.locfileid: "60701976"
+  ms.lasthandoff: 11/06/2021
+  ms.locfileid: "60804622"
 title: Preguntas frecuentes sobre la importación de archivos PST
 summary: >
   **Este artículo está para administradores. ¿Desea importar archivos PST a su propio buzón? Consulta [Importar correo electrónico, contactos y calendario desde un Outlook archivo .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
@@ -61,7 +61,7 @@ sections:
   - question: >
       ¿Dónde está disponible la carga en la red?
     answer: >
-      La carga de red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Alemania, Suiza, Noruega, Europa, India, Asia Oriental, Sudeste Asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos (EMI). La carga de red estará disponible en más regiones en el futuro.
+      La carga en la red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Alemania, Suiza, Noruega, Europa, India, Asia Oriental, Sudeste asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos. La carga de red estará disponible en más regiones en el futuro.
   - question: >
       What is the pricing for importing PST files by using network upload?
     answer: >
@@ -86,7 +86,7 @@ sections:
   - question: >
       How long does it take to import a PST file to a mailbox?
     answer: >
-      Depende de la capacidad de su red, pero normalmente se necesitan varias horas para que cada terabyte (TB) de datos se cargue en el área de Azure Storage para su organización. Después de copiar los archivos PST en el área Azure Storage, se importa un archivo PST a un buzón de Microsoft 365 a una velocidad de aproximadamente 24 GB al día <sup>\*</sup> . Si esta tasa no satisface sus necesidades, puede considerar otros métodos para migrar datos de correo electrónico a Office 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Office 365](/Exchange/mailbox-migration/mailbox-migration).
+      Depende de la capacidad de su red, pero normalmente se necesitan varias horas para que cada terabyte (TB) de datos se cargue en el área de Azure Storage para su organización. Una vez que los archivos PST se copian en el área de Azure Storage, se importa un archivo PST a un buzón de correo de Microsoft 365 a una velocidad de aproximadamente 24 GB por día<sup>\*</sup>. Si esta tasa no satisface sus necesidades, puede considerar otros métodos para migrar datos de correo electrónico a Office 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Office 365](/Exchange/mailbox-migration/mailbox-migration).
 
 
       <sup>\*</sup> Esta tasa no está garantizada. La carga de trabajo del servidor y los problemas de rendimiento transitorios pueden reducir esta tasa.
@@ -191,7 +191,10 @@ sections:
   - question: >
       How long does it take to import a PST file to a mailbox?
     answer: >
-      Una vez que los archivos PST se han cargado al área de Azure Storage, Microsoft 365 analiza los datos de los archivos PST (de forma segura) para identificar la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Cuando se haya completado este análisis, podrá importar todos los datos de los archivos PST o establecer filtros para determinar qué datos importa. Durante el trabajo de importación, un archivo PST se importa a un buzón de correo de Microsoft 365 a una velocidad de 24 GB al día como mínimo. Si esta tasa no satisface sus necesidades, puede considerar otros métodos para importar datos de correo electrónico a Office 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Office 365](/Exchange/mailbox-migration/mailbox-migration).
+      Una vez que los archivos PST se han cargado al área de Azure Storage, Microsoft 365 analiza los datos de los archivos PST (de forma segura) para identificar la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Cuando se haya completado este análisis, podrá importar todos los datos de los archivos PST o establecer filtros para determinar qué datos importa. Después de iniciar el trabajo de importación, se importa un archivo PST a un buzón Microsoft 365 a una velocidad de aproximadamente 24 GB al día. <sup>\*</sup> Si esta tasa no satisface sus necesidades, puede considerar otros métodos para importar datos de correo electrónico a Office 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Office 365](/Exchange/mailbox-migration/mailbox-migration).
+
+
+      <sup>\*</sup> Esta tasa no está garantizada. La carga de trabajo del servidor y los problemas de rendimiento transitorios pueden reducir esta tasa.
 
 
       Si se importan distintos archivos PST a diferentes buzones de destino, el proceso de importación se producirá en paralelo; en otras palabras, cada par de PST y buzón se importará de forma simultánea. Si se importan varios archivos PST al mismo buzón, se importarán secuencialmente (de uno en uno), no simultáneamente.

@@ -1,6 +1,6 @@
 ---
-title: Capturar alertas desde el inquilino del cliente de MSSP
-description: Obtenga información sobre cómo capturar alertas de un inquilino de cliente
+title: Capturar Microsoft 365 Defender incidentes
+description: Obtenga información sobre cómo capturar Microsoft 365 Defender incidentes de un inquilino de cliente
 keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,16 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 5d5f0e7ec66deabcc037d529676fadabd9999729
+ms.openlocfilehash: 1ea39bfce5303360165a56d6361908d1014d370f
 ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804946"
+ms.locfileid: "60805050"
 ---
-# <a name="fetch-alerts-from-mssp-customer-tenant"></a>Capturar alertas desde el inquilino del cliente de MSSP
+# <a name="fetch-microsoft-365-defender-incidents"></a>Capturar Microsoft 365 Defender incidentes 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ Hay dos formas de capturar alertas:
 - Uso del método SIEM
 - Uso de API
 
-## <a name="fetch-alerts-into-your-siem"></a>Capturar alertas en siem
+## <a name="fetch-incidents-into-your-siem"></a>Capturar incidentes en siem
 
-Para capturar alertas en el sistema SIEM, deberá seguir los siguientes pasos:
+Para capturar incidentes en el sistema SIEM, deberá seguir los pasos siguientes:
 
 - Paso 1: Crear una aplicación de terceros
 - Paso 2: Obtener tokens de acceso y actualización desde el inquilino del cliente
@@ -172,17 +172,11 @@ Deberá tener permiso Administrar configuración **del sistema del portal** para
 
 5. Haga clic **en Autorizar aplicación**.
 
-Ahora puede descargar el archivo de configuración correspondiente para siem y conectarse a la API Microsoft 365 Defender usuario. Para obtener más información, vea [Pull alerts to your SIEM tools](configure-siem.md).
+Ahora puede descargar el archivo de configuración correspondiente para siem y conectarse a la API Microsoft 365 Defender usuario. Para obtener más información, vea [Pull alerts to your SIEM tools](../defender-endpoint/configure-siem.md).
 
 - En el archivo de configuración de ArcSight / Archivo de propiedades de autenticación splunk, escriba la clave de la aplicación manualmente estableciendo el valor secreto.
 - En lugar de adquirir un token de actualización en el portal, use el script del paso anterior para adquirir un token de actualización (o adquirirlo por otros medios).
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>Capturar alertas desde el inquilino del cliente de MSSP mediante API
 
-Para obtener información sobre cómo capturar alertas mediante la API de REST, vea [Extraer alertas mediante la API de REST](pull-alerts-using-rest-api.md).
-
-## <a name="see-also"></a>Consulte también
-
-- [Conceder acceso a MSSP al portal](grant-mssp-access.md)
-- [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
-- [Configurar notificaciones de alerta](configure-mssp-notifications.md)
+Para obtener información sobre cómo capturar alertas mediante la API de REST, vea [Extraer alertas mediante la API de REST](../defender-endpoint/pull-alerts-using-rest-api.md).

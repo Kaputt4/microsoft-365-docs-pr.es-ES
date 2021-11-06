@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5c9709d0e7c0313035a5f0603a8241cc24b1930
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1849e131573b0c7a09bec0be665bad43acdf911a
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703222"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804958"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -250,8 +250,8 @@ En _las características de_ protección admitidas que ponen en cuarentena los m
 |[Directivas contra correo no deseado:](configure-your-spam-filter-policies.md) <ul><li>**Correo no deseado** (_SpamAction_)</li><li>**Correo no deseado de elevada** confianza (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de elevada confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li></ul>|
 |Directivas de protección contra phishing: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>Protección de suplantación:<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li></ul></li></ul>|
 |[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
-|[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>N/D</li></ul>|
-|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|N/D|
+|[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
+|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|No aplicable|
 |
 
 <sup>\*</sup> Como [se describió anteriormente en este artículo,](#full-access-permissions-and-quarantine-notifications)su organización podría usar NotificationEnabledPolicy en lugar de DefaultFullAccessPolicy. La única diferencia entre estas dos directivas de cuarentena es que las notificaciones de cuarentena se activarán en NotificationEnabledPolicy y se desactivarán en DefaultFullAccessPolicy.
@@ -261,7 +261,7 @@ Las directivas de cuarentena predeterminadas, los grupos de permisos preestablec
 > [!NOTE]
 > Si está satisfecho con los permisos predeterminados del usuario final y las notificaciones de cuarentena que proporcionan (o no se proporcionan) las directivas de cuarentena predeterminadas, no necesita hacer nada. Si desea agregar o quitar funcionalidades de usuario final (los botones disponibles) para los mensajes en cuarentena del usuario, o habilitar las notificaciones de cuarentena y agregar o quitar las mismas capacidades en las notificaciones de cuarentena, puede asignar una directiva de cuarentena diferente a la acción de cuarentena.
 
-## <a name="assign-quarantine-policies-in-supported-polices-in-the-microsoft-365-defender-portal"></a>Asignar directivas de cuarentena en las directivas admitidas en el portal Microsoft 365 Defender web
+## <a name="assign-quarantine-policies-in-supported-policies-in-the-microsoft-365-defender-portal"></a>Asignar directivas de cuarentena en directivas admitidas en el portal Microsoft 365 Defender web
 
 ### <a name="anti-spam-policies"></a>Directivas contra correo electrónico no deseado
 
@@ -295,7 +295,7 @@ Si prefiere usar PowerShell para asignar directivas de cuarentena en directivas 
 
 **Notas**:
 
-- El valor predeterminado de los parámetros _PhishSpamAction_ y _HighConfidencePhishAction_ es Quarantine, por lo que no es necesario usar esos parámetros al crear nuevas policías de filtro de correo no deseado en PowerShell. Para los parámetros _SpamAction,_ _HighConfidenceSpamAction_ y _BulkSpamAction_ en directivas contra correo no deseado nuevas o existentes, la directiva de cuarentena solo es eficaz si el valor es Quarantine.
+- El valor predeterminado de los parámetros _PhishSpamAction_ y _HighConfidencePhishAction_ es Quarantine, por lo que no es necesario usar esos parámetros al crear nuevas directivas de filtro de correo no deseado en PowerShell. Para los parámetros _SpamAction,_ _HighConfidenceSpamAction_ y _BulkSpamAction_ en directivas contra correo no deseado nuevas o existentes, la directiva de cuarentena solo es eficaz si el valor es Quarantine.
 
   Para ver los valores de parámetros importantes en las directivas contra correo no deseado existentes, ejecute el siguiente comando:
 
@@ -363,7 +363,7 @@ La inteligencia de suplantación está disponible en EOP y Defender para Office 
 
    ![Selecciones de directivas de cuarentena en una directiva contra suplantación de identidad.](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
-Las instrucciones completas para crear y modificar las policías contra suplantación de identidad están disponibles en los siguientes temas:
+Las instrucciones completas para crear y modificar directivas contra suplantación de identidad están disponibles en los siguientes temas:
 
 - [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)
 - [Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md)
@@ -674,7 +674,7 @@ De forma predeterminada, la  directiva de alerta predeterminada denominada Usuar
 - Administrador de seguridad
 - Administración de la organización (administrador global)
 
-Los administradores pueden personalizar los destinatarios de notificaciones por correo electrónico o crear una directiva de alerta personalizada para opciones adicionales.
+Los administradores pueden personalizar los destinatarios de notificaciones por correo electrónico o crear una directiva de alerta personalizada para obtener más opciones.
 
 Para obtener más información sobre las directivas de alerta, consulte [Directivas de alerta en Microsoft 365](../../compliance/alert-policies.md).
 

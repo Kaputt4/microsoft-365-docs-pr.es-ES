@@ -1,8 +1,7 @@
 ---
-title: Campos de la API de Microsoft Defender para detecciones de puntos de conexión
-description: Comprender cómo se asignan los campos de la API de detecciones a los valores de Microsoft 365 Defender
+title: Campos de alerta de Microsoft Defender para extremo
+description: Comprender cómo se asignan los campos de alerta a los valores de Microsoft Defender para endpoint
 keywords: detecciones, campos de detecciones, campos, api, campos, detecciones de extracción, api de reposo, solicitud, respuesta
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8913573f534dcb106ad4310171a90e4099a1ac99
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 08a280130f7bd7566c0ef3998034998b5eff5ef6
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587378"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804784"
 ---
-# <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Campos de la API de Microsoft Defender para detecciones de puntos de conexión
+# <a name="microsoft-defender-for-endpoint-alert-fields"></a>Campos de alerta de Microsoft Defender para extremo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -57,7 +56,7 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 > |1|AlertTitle|name|Antivirus de Microsoft Defender detectado malware de alta gravedad de "Mikatz"|Valor disponible para cada detección.|
 > |2|Severity|deviceSeverity|Alto|Valor disponible para cada detección.|
 > |3|Categoría|deviceEventCategory|Malware|Valor disponible para cada detección.|
-> |4 |Origen de detección|sourceServiceName|Antivirus|Antivirus de Microsoft Defender o Defender para endpoint. Valor disponible para cada detección.|
+> |4|Origen de detección|sourceServiceName|Antivirus|Antivirus de Microsoft Defender o Defender para endpoint. Valor disponible para cada detección.|
 > |5|MachineName|sourceHostName|desktop-4a5ngd6|Valor disponible para cada detección.|
 > |6 |FileName|fileName|Robocopy.exe|Disponible para detecciones asociadas a un archivo o proceso.|
 > |7 |FilePath|filePath|C:\Windows\System32\Robocopy.exe|Disponible para detecciones asociadas a un archivo o proceso.|

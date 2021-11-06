@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: Obtenga información sobre las plantillas de directiva de prevención de pérdida de datos (DLP) del Centro de Office 365 seguridad & cumplimiento.
-ms.openlocfilehash: ddeebc3cfeb2668cfb0d376a4ca8c9f92bfe36f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9de05cd38f6089c3bc7671b2f41a7bf1c0cee8ce
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172232"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804849"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Qué incluyen las plantillas de directiva DLP
 
@@ -135,7 +135,7 @@ La prevención de pérdida de datos (DLP) en el Centro de cumplimiento de seguri
 |**Nombre de la regla**|**Condiciones  <br/> (incluidos los tipos de información confidencial)**|**Acciones**|
 |:-----|:-----|:-----|
 |Contenido confidencial de la UE de bajo volumen encontrado  <br/> | El contenido contiene información confidencial:  <br/>  Número de tarjeta de débito de la UE: recuento mínimo 1, recuento máximo 9  <br/>  Número de licencia de conducir de la UE: recuento mínimo 1, recuento máximo 9  <br/>  Número de identificación nacional de la UE: recuento mínimo 1, recuento máximo 9  <br/>  Número de pasaporte de la UE: recuento mínimo 1, recuento máximo 9  <br/>  Número de seguridad social de la UE (SSN) o identificador equivalente: recuento mínimo 1, recuento máximo 9  <br/>  Número de identificación fiscal de la UE (TIN): recuento mínimo 1, recuento máximo 9  <br/>  El contenido se comparte con:  <br/>  Personas ajenas a mi organización  <br/> |Enviar informes de incidentes al administrador  <br/> |
-|Alto volumen de contenido confidencial de la UE encontrado  <br/> | El contenido contiene información confidencial:  <br/>  Número de tarjeta de débito de la UE: recuento mínimo 1, recuento máximo 9  <br/>  Número de licencia de conducir de la UE: recuento mínimo 1, recuento máximo 9  <br/>  Número de identificación nacional de la UE: recuento mínimo 1, recuento máximo 9  <br/>  Número de pasaporte de la UE: recuento mínimo 1, recuento máximo 9  <br/>  Número de seguridad social de la UE (SSN) o identificador equivalente: recuento mínimo 1, recuento máximo 9  <br/>  Número de identificación fiscal de la UE (TIN): recuento mínimo 1, recuento máximo 9  <br/>  El contenido se comparte con:  <br/>  Personas ajenas a mi organización  <br/> | Restringir el acceso de usuarios externos al contenido  <br/>  Notificar a los usuarios con sugerencias de directiva y correo electrónico  <br/>  Permitir invalidación  <br/>  Requerir justificación del negocio  <br/>  Enviar informes de incidentes al administrador  <br/> |
+|Alto volumen de contenido confidencial de la UE encontrado  <br/> | El contenido contiene información confidencial:  <br/>  Número de tarjeta de débito de la UE: recuento mínimo 10, recuento máximo 500  <br/>  Número de licencia de conducir de la UE: recuento mínimo 10, recuento máximo 500  <br/>  Número de identificación nacional de la UE: recuento mínimo 10, recuento máximo 500  <br/>  Número de pasaporte de la UE: recuento mínimo 10, recuento máximo 500  <br/>  Número de seguridad social de la UE (SSN) o identificador equivalente: recuento mínimo 10, recuento máximo 500  <br/>  Número de identificación fiscal de la UE (TIN): recuento mínimo 10, recuento máximo 500  <br/>  El contenido se comparte con:  <br/>  Personas ajenas a mi organización  <br/> | Restringir el acceso de usuarios externos al contenido  <br/>  Notificar a los usuarios con sugerencias de directiva y correo electrónico  <br/>  Permitir invalidación  <br/>  Requerir justificación del negocio  <br/>  Enviar informes de incidentes al administrador  <br/> |
    
 ## <a name="germany-financial-data"></a>Datos financieros de Alemania
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: c0e7efb9770c870210265b951a74012fb21e1b2e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d626e805c0e680dc64236066c962ce40229fd3bd
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203248"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804982"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -514,7 +514,7 @@ Al cargar un archivo XML de paquete de reglas, el sistema valida el código XML 
 
 - Cada tipo de información confidencial personalizado puede tener un máximo de 2048 palabras clave total.
 
-- El tamaño máximo de diccionarios de palabras clave en un único espacio empresarial es de 1 MB comprimidos. Haga referencia al mismo diccionario tantas veces como sea necesario al crear tipos de información confidencial personalizados. Comience con la creación de listas de palabras clave personalizadas en el tipo de información confidencial y use diccionarios de palabras clave si tiene más de 2048 palabras clave en una lista de palabras clave o una palabra clave tiene más de 50 caracteres de longitud.
+- El tamaño máximo de diccionarios de palabras clave en un único inquilino es de 480 KB comprimidos para cumplir con los límites del esquema de AD. Haga referencia al mismo diccionario tantas veces como sea necesario al crear tipos de información confidencial personalizados. Comience con la creación de listas de palabras clave personalizadas en el tipo de información confidencial y use diccionarios de palabras clave si tiene más de 2048 palabras clave en una lista de palabras clave o una palabra clave tiene más de 50 caracteres de longitud.
 
 - En un espacio empresarial se permite un máximo de 50 tipos de información confidencial basada en diccionario de palabras clave.
 

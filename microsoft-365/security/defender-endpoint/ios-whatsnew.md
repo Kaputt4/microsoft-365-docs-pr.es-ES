@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: e6352992d0aeed9df7e64f331a4936ae4b29c223
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d29ad4a6d4031200bfb9f58db4ac9bcec7bab31
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162619"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804881"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para endpoint en iOS
 
@@ -32,6 +32,15 @@ ms.locfileid: "60162619"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
+
+El 2 de noviembre de 2021, anunciamos la versión preliminar pública de la administración de amenazas y vulnerabilidades en Android e iOS. Para obtener más información, [vea la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
+
+## <a name="1123010101"></a>1.1.23010101
+
+- Correcciones de errores y mejoras de rendimiento 
+  - En esta versión se han realizado optimizaciones de rendimiento. Pruebe el rendimiento de la batería con esta versión y háganos saber sus comentarios.
 
 ## <a name="1120240103"></a>1.1.20240103
 - Tarjeta de estado del dispositivo: la tarjeta de mantenimiento del dispositivo notifica a los usuarios finales sobre las actualizaciones de software pendientes.

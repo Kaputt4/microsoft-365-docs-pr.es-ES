@@ -20,12 +20,12 @@ description: Asigne los permisos necesarios para realizar tareas relacionadas co
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: d6515dc213fe6b89a9a638c9df8dcad63785967c
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: f2328c7ea45b842d17260976248fafc28b503998
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364560"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804970"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365
 
@@ -199,7 +199,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange no se admiten Microsoft 365 de distribución y grupos de distribución. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell ejecutando `New-DistributionGroup -Type Security` . También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Puede tardar hasta 60 minutos después de crearla para que una nueva seguridad habilitada para correo esté disponible para agregarla al grupo de roles Administradores de exhibición de documentos electrónicos. 
+    Exchange no se admiten Microsoft 365 de distribución y grupos de distribución. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell ejecutando `New-DistributionGroup -Type Security` . También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Puede tardar hasta 60 minutos después de crearlo para que un nuevo grupo de seguridad habilitado para correo esté disponible para agregarlo al grupo de roles Administradores de exhibición de documentos electrónicos.
 
     También como se ha indicado anteriormente, no puede convertir un grupo de seguridad habilitado para correo como administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-eDiscoveryCaseAdmin** en PowerShell del Centro de seguridad & cumplimiento. Solo puede agregar usuarios individuales como administradores de exhibición de documentos electrónicos.
 
