@@ -392,10 +392,16 @@
                       href: api-update-incidents.md
                     - name: Obtener el incidente
                       href: api-get-incident.md
-        - name: Versión preliminar de las características
-          href: preview.md
-        - name: Solucionar problemas
-          href: ./troubleshoot.md
+            - name: Capturar incidentes relacionados con Microsoft 365 Defender
+              href: fetch-incidents.md
+            - name: Integración de SIEM
+              items:
+                - name: Integración de las herramientas SIEM con Microsoft 365 Defender
+                  href: configure-siem-defender.md
+                - name: Solución de problemas con la integración de herramientas SIEM
+                  href: ../defender-endpoint/troubleshoot-siem.md
+            - name: Comprender conceptos de inteligencia sobre amenazas
+              href: ../defender-endpoint/threat-indicator-concepts.md
     - name: Microsoft Defender para Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender para punto de conexión

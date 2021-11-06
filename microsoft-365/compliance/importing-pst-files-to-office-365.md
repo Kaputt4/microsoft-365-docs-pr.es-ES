@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: 7f632288b339cbccb99bd07330ebe705471340aa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 721129905d6d0818304972572b1515ff167bffc8
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701954"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804934"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
@@ -171,9 +171,10 @@ Esto también significa que después de que los archivos PST se eliminen del ár
 
 Depende de la capacidad de su red, pero normalmente se necesitan varias horas para que cada terabyte (TB) de datos se cargue en el área de Azure Storage para su organización. Una vez que los archivos PST se copian en el área de Azure Storage, se importa un archivo PST a un buzón de correo de Microsoft 365 a una velocidad de aproximadamente 24 GB por día<sup>\*</sup>. Si esta velocidad no satisface sus necesidades, puede considerar otros métodos para migrar datos de correo electrónico a Office 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Office 365](/Exchange/mailbox-migration/mailbox-migration).
 
-<sup>\*</sup> Esta tasa no está garantizada. La carga de trabajo del servidor y los problemas de rendimiento transitorios pueden reducir esta tasa.
-
 Si se importan distintos archivos PST a diferentes buzones de destino, el proceso de importación se producirá en paralelo; en otras palabras, cada par de PST y buzón se importará de forma simultánea. Si se importan varios archivos PST al mismo buzón, se importarán secuencialmente (de uno en uno), no simultáneamente.
+
+> [!NOTE]
+> <sup>\*</sup> Esta tasa no está garantizada. La carga de trabajo del servidor y los problemas de rendimiento transitorios pueden reducir esta tasa.
 
 #### <a name="how-does-the-pst-import-process-handle-duplicate-email-items"></a>¿Cómo el proceso de importación de PST controla los elementos duplicados del correo electrónico?
 
@@ -256,9 +257,12 @@ Una vez que su disco duro se reciba en el centro de datos de Microsoft, tardará
 
 #### <a name="how-long-does-it-take-to-import-a-pst-file-to-a-mailbox-using-drive-shipping"></a>¿Cuánto tiempo se tarda en importar un archivo PST a un buzón mediante el envío de unidades?
 
-Una vez que los archivos PST se han cargado al área de Azure Storage, Microsoft 365 analiza los datos de los archivos PST (de forma segura) para identificar la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Cuando se haya completado este análisis, podrá importar todos los datos de los archivos PST o establecer filtros para determinar qué datos importa. Durante el trabajo de importación, un archivo PST se importa a un buzón de correo de Microsoft 365 a una velocidad de 24 GB al día como mínimo. Si esta velocidad no satisface sus necesidades, puede considerar otros métodos para migrar datos de correo electrónico a Microsoft 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Microsoft 365](/Exchange/mailbox-migration/mailbox-migration).
+Una vez que los archivos PST se han cargado al área de Azure Storage, Microsoft 365 analiza los datos de los archivos PST (de forma segura) para identificar la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Cuando se haya completado este análisis, podrá importar todos los datos de los archivos PST o establecer filtros para determinar qué datos importa. Después de iniciar el trabajo de importación, se importa un archivo PST a un buzón de Microsoft 365 a una velocidad de aproximadamente 24 GB al día.<sup>\*</sup>Si esta velocidad no satisface sus necesidades, puede considerar otros métodos para obtener datos de correo electrónico en Microsoft 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Microsoft 365](/Exchange/mailbox-migration/mailbox-migration).
 
 Si se importan distintos archivos PST a diferentes buzones de destino, el proceso de importación se producirá en paralelo; en otras palabras, cada par de PST y buzón se importará de forma simultánea. Si se importan varios archivos PST al mismo buzón, se importarán secuencialmente (de uno en uno), no simultáneamente.
+
+> [!NOTE]
+> <sup>\*</sup> Esta tasa no está garantizada. La carga de trabajo del servidor y los problemas de rendimiento transitorios pueden reducir esta tasa.
 
 #### <a name="after-microsoft-uploads-my-pst-files-to-azure-how-long-are-they-kept-in-azure-before-theyre-deleted"></a>Después de que Microsoft cargue mis archivos PST a Azure, ¿cuánto tiempo se conservarán en Azure antes de su eliminación?
 

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 5b1ad39feeebdbf44a83e09e1daa25794ebc98fa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 64d4239eeda905d9b0d924804bed6795b7ca5673
+ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698434"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60804898"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -59,7 +59,7 @@ Debido a estos cambios, no habilite este valor si tiene aplicaciones, servicios,
 
 - Un documento muestra una etiqueta no actualizada a los usuarios
 
-- La coautoría y el autoguardado no funcionarán en un documento etiquetado y cifrado si otro usuario lo tiene abierto en una aplicación de escritorio de Office que no es compatible con los nuevos metadatos de etiquetación
+- La coautoría y el autoguardado no funcionarán en un documento etiquetado y cifrado si otro usuario lo tiene abierto en una aplicación de escritorio de Office que no es compatible con los nuevos metadatos de etiquetación Tenga en cuenta que este escenario también puede producirse para los usuarios ajenos a la organización si los usuarios externos y los invitados tienen el archivo abierto.
 
 - Una regla de flujo de correo de Exchange Online que [identifica etiquetas como propiedades personalizadas en datos adjuntos de Office](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) no puede cifrar el correo electrónico y los datos adjuntos o las cifra incorrectamente
 

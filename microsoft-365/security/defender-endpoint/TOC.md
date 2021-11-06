@@ -483,6 +483,7 @@
 
 
 ## Referencia
+### [Comprender conceptos de inteligencia sobre amenazas](threat-indicator-concepts.md)
 ### [Configurar la integración con otras soluciones de Microsoft]()
 #### [Configurar el acceso condicional](configure-conditional-access.md)
 #### [Configurar la integración con Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
@@ -496,7 +497,7 @@
 ###### [Hola mundo](api-hello-world.md)
 ###### [Obtener acceso con el contexto de la aplicación](exposed-apis-create-app-webapp.md)
 ###### [Obtener acceso con el contexto de usuario](exposed-apis-create-app-nativeapp.md)
-###### [Obtener acceso a aplicaciones de asociados](exposed-apis-create-app-partners.md)
+
 
 
 ##### [Esquema de API de Microsoft Defender para punto de conexión]()
@@ -645,13 +646,9 @@
 
 
 #### [Integración de SIEM]()
-##### [Comprender conceptos de inteligencia sobre amenazas](threat-indicator-concepts.md)
-##### [Obtener más información sobre las diferentes formas de extraer detecciones](configure-siem.md)
-##### [Habilitar la integración de SIEM](enable-siem-integration.md)
-##### [Configurar Micro Focus ArcSight para extraer detecciones](configure-arcsight.md)
+##### [Integrar herramientas SIEM con Microsoft Defender para punto de conexión](configure-siem.md)
 ##### [Motores de protección de Microsoft Defender para punto de conexión](api-portal-mapping.md)
 ##### [Detecciones de extracción con la API de REST de SIEM](pull-alerts-using-rest-api.md)
-##### [Capturar alertas del espacio empresarial del cliente](fetch-alerts-mssp.md)
 ##### [Solucionar problemas de integración de la herramienta SIEM](troubleshoot-siem.md)
 
 #### [Socios y API]()
@@ -666,19 +663,24 @@
 ###### [Utilizar grupos de dispositivos](machine-groups.md)
 ###### [Crear y administrar etiquetas de dispositivos](machine-tags.md)
 
-#### [Integración del proveedor de servicios de seguridad administrados (MSSP)]()
-##### [Configurar la integración del proveedor de servicios de seguridad administrados](configure-mssp-support.md)
-##### [Proveedores de servicios de seguridad administrados compatibles](mssp-list.md)
-##### [Conceder acceso a MSSP al portal](grant-mssp-access.md)
-##### [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
-##### [Configurar notificaciones de alerta](configure-mssp-notifications.md)
-##### [Obtener acceso a aplicaciones de asociados](exposed-apis-create-app-partners.md)
 
+
+
+
+
+
+### [Integración del proveedor de servicios de seguridad administrados (MSSP)]()
+#### [Configurar la integración del proveedor de servicios de seguridad administrados](configure-mssp-support.md)
+#### [Proveedores de servicios de seguridad administrados compatibles](mssp-list.md)
+#### [Conceder acceso a MSSP al portal](grant-mssp-access.md)
+#### [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
+#### [Configurar notificaciones de alerta](configure-mssp-notifications.md)
+#### [Obtener acceso a aplicaciones de asociados](exposed-apis-create-app-partners.md)
+#### [Capturar alertas del espacio empresarial del cliente](fetch-alerts-mssp.md)
+#### [Oportunidad del proveedor de servicios de seguridad administrados](mssp-support.md)
 ### [Escenarios de integración de asociados]()
 #### [Oportunidades para asociados técnicos](partner-integration.md)
-#### [Oportunidad del proveedor de servicios de seguridad administrados](mssp-support.md)
 #### [Convertirse en socio de Microsoft Defender para punto de conexión](get-started-partner-integration.md)
-
 ### [Integraciones]()
 #### [Integraciones de Microsoft Defender para punto de conexión](threat-protection-integration.md)
 #### [Proteger a los usuarios, los datos y los dispositivos con acceso condicional](conditional-access.md)

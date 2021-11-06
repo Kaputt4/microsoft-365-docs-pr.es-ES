@@ -300,6 +300,8 @@
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Cambiar de una protección de puntos de conexión distinta de Microsoft a Microsoft Defender para punto de conexión
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+        - name: Cambiar de una herramienta de protección que no es de Microsoft a Microsoft Defender para Office 365
+          href: ../security/office-365-security/migrate-to-defender-for-office-365.md
         - name: Recomendaciones de seguridad para cuentas prioritarias en Microsoft 365
           href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
         - name: Quitar un antiguo empleado y proteger los datos
@@ -324,7 +326,7 @@
           href: team-security-isolation-dev-test.md
 - name: Pautas específicas por sectores
   items:
-    - name: Finanzas
+    - name: Servicios financieros
       items:
         - name: Seguridad y cumplimiento normativo para servicios financieros
           href: financial-services-secure-collaboration.md
