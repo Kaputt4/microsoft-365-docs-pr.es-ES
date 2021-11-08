@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: c29570668f6fcf542ef3336c8053b395331fcce2
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 416bea849ac493afd96f9c3969f9f9642135d8a1
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792549"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825604"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Novedades de Microsoft Defender para Endpoint en Android
 
@@ -34,13 +34,11 @@ ms.locfileid: "60792549"
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Próximos cambios de permisos para Microsoft Defender para endpoint que ejecute Android 11 o posterior (noviembre de 2021)
-Versión de compilación: 1.0.3501.0301 Mes de lanzamiento: noviembre de 2021
+Compilación de la versión: 1.0.3501.0301 Mes de la versión: Noviembre de 2021 Microsoft Defender para endpoint ha publicado esta actualización requerida por [Google](https://developer.android.com/distribute/play-policies#APILevel30) para actualizar a la API de Android 30. Este cambio pedirá a los usuarios que busquen acceso a un nuevo permiso [de almacenamiento,](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)para dispositivos que ejecuten Android 11 o posterior. Los usuarios tendrán que aceptar este nuevo permiso de almacenamiento una vez que actualicen la aplicación defender con la compilación de la versión 1.0.3501.0301 o posterior. Esto garantizará que la característica "Seguridad de la aplicación" de Defender funcione sin interrupciones. Para obtener más información, vea los detalles en las secciones siguientes.
 
-Microsoft Defender para Endpoint tiene el mandato de [Google](https://developer.android.com/distribute/play-policies#APILevel30) para actualizar a la API de Android 30. Este cambio pedirá un nuevo permiso [de almacenamiento](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) para dispositivos que ejecutan Android 11 o posterior. Los usuarios tendrán que aceptar este nuevo permiso de almacenamiento una vez que actualicen la aplicación defender con la compilación de la versión 1.0.3501.0301 o posterior. Esto garantizará que la característica "Seguridad de la aplicación" de Defender funcione sin interrupciones. Para obtener más información, vea los detalles en las secciones siguientes.
-
-**Cómo afectará esto a su organización:**
-
-Estos cambios afectarán, si usa Microsoft Defender para Endpoint en dispositivos que ejecutan Android 11 o posterior y actualizado Defender para publicar la compilación 1.0.3501.0301 o posterior. Esta configuración no es configurable por el administrador a través de Microsoft Endpoint Manager; los usuarios tendrán que tomar medidas debido a los cambios mencionados anteriormente en la API de Google.
+**Cómo afectará esto a su organización:** Estos cambios afectarán, si usa Microsoft Defender para Endpoint en dispositivos que ejecutan Android 11 o posterior y actualizado Defender para publicar la compilación 1.0.3501.0301 o posterior.
+>[!NOTE]
+> El administrador no puede configurar los nuevos permisos de almacenamiento en "Auto Approve" a través de Microsoft Endpoint Manager. El usuario tendrá que tomar medidas para proporcionar acceso a este permiso.
 
 - **Experiencia del usuario:** Los usuarios recibirán una notificación que indica que falta un permiso para la seguridad de la aplicación. Si el usuario niega este permiso, la funcionalidad "Seguridad de la aplicación" se desactivará en el dispositivo. Si el usuario no acepta o deniega el permiso, seguirá recibiendo el mensaje al desbloquear su dispositivo o abrir la aplicación, hasta que se haya aprobado.
 

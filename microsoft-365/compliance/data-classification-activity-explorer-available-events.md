@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: descripción de las actividades de etiquetado que están disponibles en el explorador de actividades.
-ms.openlocfilehash: ed1b207f4d0879185d757e2481cc3e8879293710
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Una lista de actividades de etiquetado que están disponibles en el Explorador de actividades.
+ms.openlocfilehash: f93fe7f6301e079cdfbbed080d8073d562c6ac8f
+ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173480"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60825568"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Actividades de etiquetado que están disponibles en el Explorador de actividades
 
@@ -36,17 +36,18 @@ Este evento se genera cada vez que se etiqueta un documento sin etiquetar o se e
 - Las acciones de actualización y degradación de etiquetas también se pueden supervisar a través del campo y filtro *tipo de evento Label.*   
 
 
-|Origen  |Notificado en el explorador de actividades | Nota:  |
+|Origen  |Notificado en el Explorador de actividades | Nota:  |
 |---------|---------|---------|
-| Word, Excel, PowerPoint|sí |
-|Outlook| sí | |
-|SharePoint en línea, OneDrive|sí | |
-|Exchange        |sí         | |
-|Cliente unificado de Azure Information Protection (AIP) y escáner unificado AIP |sí |la nueva acción de *etiqueta AIP* se asigna a *la etiqueta aplicada en* el explorador de actividades   |
-|PROTECCIÓN DE LA INFORMACIÓN DE MICROSOFT (MIP) SDK         |sí|la nueva acción de *etiqueta AIP* se asigna a *la etiqueta aplicada en* el explorador de actividades|
-|Servicio de administración de derechos (RMS)         |no aplicable         | |
-|Power BI escritorio y web        | no| accesible en los registros Microsoft 365 auditoría         |
-|Microsoft Cloud App Security (MCAS)         |no|         |
+| Word, Excel, PowerPoint|Sí |
+|Outlook| Sí | |
+|SharePoint en línea, OneDrive|Sí | |
+|Exchange        |Sí         | |
+|Cliente unificado de Azure Information Protection (AIP) y escáner unificado AIP |Sí |La nueva *acción* de etiqueta AIP se asigna a la etiqueta *aplicada en* el Explorador de actividades   |
+|PROTECCIÓN DE LA INFORMACIÓN DE MICROSOFT (MIP) SDK         |Sí|La nueva *acción* de etiqueta AIP se asigna a la etiqueta *aplicada en* el Explorador de actividades|
+|Servicio de administración de derechos (RMS)         |No aplicable         | |
+|Power BI escritorio y web        | No| Accesible en los registros Microsoft 365 auditoría         |
+|Microsoft Cloud App Security (MCAS)         |No|         |
+
 
 ## <a name="sensitivity-label-changed"></a>Etiqueta de confidencialidad modificada
 
@@ -57,21 +58,22 @@ Este evento se genera cada vez que se actualiza una etiqueta de confidencialidad
 - Se captura en el punto de guardar en Office aplicaciones nativas y aplicaciones web. 
 - Se captura en el momento de la aparición en complementos de cliente unificados y aplicaciones de escáner de Azure Information Protection
 - Las acciones de actualización y degradación de etiquetas también se pueden supervisar a través del campo y filtro *tipo de evento Label.* El *texto* de justificación también se captura excepto SharePoint Online y OneDrive.
-- El etiquetado de confidencialidad Office aplicaciones nativas en Outlook recopila la última acción que se generó antes de las acciones de envío de correo electrónico o guardar archivos. Por ejemplo, si el usuario cambia de etiqueta en un correo electrónico varias veces antes de enviarlo, la última etiqueta que se encuentra en el correo electrónico cuando se envía se captura en el registro de auditoría y, a continuación, se notifica en el explorador de actividades. 
+- El etiquetado de confidencialidad Office aplicaciones nativas en Outlook recopila la última acción que se generó antes de las acciones de envío de correo electrónico o guardar archivos. Por ejemplo, si el usuario cambia de etiqueta en un correo electrónico varias veces antes de enviarlo, la última etiqueta que se encuentra en el correo electrónico cuando se envía se captura en el registro de auditoría y, a continuación, se notifica en el Explorador de actividades. 
 
 
-|Origen  |Notificado en el explorador de actividades|Nota:  |
+|Origen  |Notificado en el Explorador de actividades|Nota:  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |sí         |
-|Outlook         |sí         |
-|SharePoint En línea, OneDrive         |sí         |
-|Exchange         |sí         |
-|Cliente unificado AIP         |sí         |
-|Escáner unificado AIP         |sí         |
-|MIP SDK         |sí         |
-|Servicio RMS         |no aplicable         |
-|Power BI escritorio y web         |no         |accesible en los registros Microsoft 365 auditoría |
-|MCAS     |no         |         |
+|Word, Excel, PowerPoint         |Sí         |
+|Outlook         |Sí         |
+|SharePoint En línea, OneDrive         |Sí         |
+|Exchange         |Sí         |
+|Cliente unificado AIP         |Sí         |
+|Escáner unificado AIP         |Sí         |
+|MIP SDK         |Sí         |
+|Servicio RMS         |No aplicable         |
+|Power BI escritorio y web         |No         |Accesible en los registros Microsoft 365 auditoría |
+|MCAS     |No         |         |
+
 
 ## <a name="sensitivity-label-removed"></a>Etiqueta de confidencialidad eliminada
 
@@ -81,168 +83,170 @@ Este evento se genera cada vez que se quita una etiqueta de confidencialidad de 
 - Se captura en el momento de la aparición en complementos de Azure Information Protection. 
 - El etiquetado de confidencialidad, Office etiqueta MIP nativa, en Outlook recopila el último evento de etiquetado que se generó antes de las acciones de envío de correo electrónico/guardado de archivos.
 
-|Origen  |Notificado en el explorador de actividades | Nota:  |
+|Origen  |Notificado en el Explorador de actividades | Nota:  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |sí         |
-|Outlook         |sí         ||
-|SharePoint En línea, OneDrive         |sí         |
-|Exchange         |sí         |
-|Cliente unificado AIP         |sí         |la acción quitar *etiqueta de* AIP se asigna a la acción de *etiqueta eliminada* en el explorador de actividades|
-|Escáner unificado AIP         |sí         |la acción quitar *etiqueta de* AIP se asigna a la acción de *etiqueta eliminada* en el explorador de actividades |
-|MIP SDK         |sí         |la acción quitar *etiqueta de* AIP se asigna a la acción de *etiqueta eliminada* en el explorador de actividades |
-|Servicio RMS         |no aplicable         |
-|Power BI escritorio y web         |no         |accesible en los registros Microsoft 365 auditoría |
-|MCAS     |no         |         |
+|Word, Excel, PowerPoint         |Sí         |
+|Outlook         |Sí         ||
+|SharePoint En línea, OneDrive         |Sí         |
+|Exchange         |Sí         |
+|Cliente unificado AIP         |Sí         |La acción quitar *etiqueta de* AIP se asigna a la acción de *etiqueta eliminada* en el Explorador de actividades|
+|Escáner unificado AIP         |Sí         |La acción quitar *etiqueta de* AIP se asigna a la acción de *etiqueta eliminada* en el Explorador de actividades |
+|MIP SDK         |Sí         |La acción quitar *etiqueta de* AIP se asigna a la acción de *etiqueta eliminada* en el Explorador de actividades |
+|Servicio RMS         |No aplicable         |
+|Power BI escritorio y web         |No         |Accesible en los registros Microsoft 365 auditoría |
+|MCAS     |No         |         |
+
  
 
 ## <a name="sensitivity-label-file-read"></a>Lectura del archivo de etiqueta de confidencialidad
 
 Este evento se genera cada vez que se abre un documento de confidencialidad etiquetado o protegido.
 
-|Origen  |Notificado en el explorador de actividades | Nota:  |
+|Origen  |Notificado en el Explorador de actividades | Nota:  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |sí         |
-|Outlook         |no         |
-|SharePoint En línea, OneDrive         |no         |
-|Exchange         |no         |
-|Cliente unificado AIP         |sí         |la acción de acceso *AIP* se asigna a la *acción de lectura de* archivo en el explorador de actividades|
-|Escáner unificado AIP         |sí         |la acción de acceso *AIP* se asigna a la *acción de lectura de* archivo en el explorador de actividades|
-|MIP SDK         |sí         |la acción de acceso *AIP* se asigna a la *acción de lectura de* archivo en el explorador de actividades|
-|Servicio RMS         |sí         |la *acción de* acceso se asigna a la acción de lectura *de* archivo en el explorador de actividades |
-|Power BI escritorio y web         |no         |accesible en los registros Microsoft 365 auditoría |
-|MCAS     |no         |         |
+|Word, Excel, PowerPoint         |Sí         |
+|Outlook         |No         |
+|SharePoint En línea, OneDrive         |No         |
+|Exchange         |No         |
+|Cliente unificado AIP         |Sí         |La acción de acceso *AIP* se asigna a la acción *de lectura de* archivos en el Explorador de actividades|
+|Escáner unificado AIP         |Sí         |La acción de acceso *AIP* se asigna a la acción *de lectura de* archivos en el Explorador de actividades|
+|MIP SDK         |Sí         |La acción de acceso *AIP* se asigna a la acción *de lectura de* archivos en el Explorador de actividades|
+|Servicio RMS         |Sí         |La *acción de* acceso se asigna a la acción de lectura *de* archivos en el Explorador de actividades |
+|Power BI escritorio y web         |No         |Accesible en los registros Microsoft 365 auditoría |
+|MCAS     |No         |         |
+
 
 
 ## <a name="files-discovered"></a>Archivos detectados
 
 Este evento se genera cada vez que se detectan archivos cuando se usa AIP Scanner para examinar datos confidenciales en varias ubicaciones y busca archivos.
 
-|Origen  |Notificado en el explorador de actividades | Nota:  |
+|Origen  |Notificado en el Explorador de actividades | Nota:  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |no aplicable         |
-|Outlook         |no aplicable         |
-|SharePoint En línea, OneDrive         |no aplicable         |
-|Exchange         |no aplicable         |
-|Cliente unificado AIP         |no aplicable       |
-|Escáner unificado AIP         |sí         |la acción detectar *AIP* se asigna a la *acción de archivos detectados* en el explorador de actividades|
-|MIP SDK         |sí         |la acción *detectar* AIP se asigna a la *acción detectada en el* explorador de actividades|
-|Servicio RMS         |no aplicable         |
-|Power BI escritorio y web         |no aplicable         |
-|MCAS     |no aplicable         |         |
+|Word, Excel, PowerPoint         |No aplicable         |
+|Outlook         |No aplicable         |
+|SharePoint En línea, OneDrive         |No aplicable         |
+|Exchange         |No aplicable         |
+|Cliente unificado AIP         |No aplicable       |
+|Escáner unificado AIP         |Sí         |La acción detectar *AIP* se asigna a la *acción de archivos detectados* en el Explorador de actividades|
+|MIP SDK         |Sí         |La acción *detectar* AIP se asigna a la *acción detectada en* el explorador de actividades|
+|Servicio RMS         |No aplicable         |
+|Power BI escritorio y web         |No aplicable         |
+|MCAS     |No aplicable         |         |
 
 
 ## <a name="sensitivity-label-file-renamed"></a>Se cambió el nombre del archivo de etiqueta de confidencialidad
 
 Este evento se genera cada vez que se cambia el nombre de un documento con una etiqueta de confidencialidad. 
 
-|Origen  | Notificado en el explorador de actividades | Nota:  |
+|Origen  | Notificado en el Explorador de actividades | Nota:  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |sí         |
-|Outlook         |no aplicable         |
-|SharePoint En línea, OneDrive         |no        |
-|Exchange         |no aplicable         |
-|Cliente unificado AIP         |no         |
-|Escáner unificado AIP         |no         |
-|MIP SDK         |no         |
-|Servicio RMS         |no      |
-|Power BI escritorio y web         |no         |
-|MCAS     |no         |         |
+|Word, Excel, PowerPoint         |Sí         |
+|Outlook         |No aplicable         |
+|SharePoint En línea, OneDrive         |No        |
+|Exchange         |No aplicable         |
+|Cliente unificado AIP         |No         |
+|Escáner unificado AIP         |No         |
+|MIP SDK         |No         |
+|Servicio RMS         |No      |
+|Power BI escritorio y web         |No         |
+|MCAS     |No         |         |
 
 
 ## <a name="file-removed"></a>Archivo quitado
 
 Este evento se genera cada vez que el escáner AIP detecta que se ha quitado un archivo examinado previamente.
 
-|Origen  |Notificado en el explorador de actividades | Nota:  |
+|Origen  |Notificado en el Explorador de actividades | Nota:  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |no aplicable         |
-|Outlook         |no aplicable         |
-|SharePoint En línea, OneDrive         |no aplicable           |
-|Exchange         |no aplicable         |
-|Cliente unificado AIP         |no aplicable            |
-|Escáner unificado AIP         |sí         |
-|MIP SDK         |no aplicable            |
-|Servicio RMS         |no aplicable         |
-|Power BI escritorio y web         |no aplicable  |
-|MCAS     |no aplicable        |         |
+|Word, Excel, PowerPoint         |No aplicable         |
+|Outlook         |No aplicable         |
+|SharePoint En línea, OneDrive         |No aplicable           |
+|Exchange         |No aplicable         |
+|Cliente unificado AIP         |No aplicable            |
+|Escáner unificado AIP         |Sí         |
+|MIP SDK         |No aplicable            |
+|Servicio RMS         |No aplicable         |
+|Power BI escritorio y web         |No aplicable  |
+|MCAS     |No aplicable        |         |
 
 ### <a name="protection-applied"></a>Protección aplicada
 
 Este evento se genera la protección por primera vez que se agrega manualmente a un elemento que no tiene una etiqueta.
 
-|Origen  |Notificado en el explorador de actividades | Nota:  |
+|Origen  |Notificado en el Explorador de actividades | Nota:  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |no         |
-|Outlook         |no         |
-|SharePoint En línea, OneDrive         |no aplicable           |
-|Exchange         |no       |
-|Cliente unificado AIP         |sí            |
-|Escáner unificado AIP         |no aplicable         |
-|MIP SDK         |sí            |
-|Servicio RMS         |no aplicable         |
-|Power BI escritorio y web         |no aplicable            |
-|MCAS     |no aplicable        |         |
+|Word, Excel, PowerPoint         |No         |
+|Outlook         |No         |
+|SharePoint En línea, OneDrive         |No aplicable           |
+|Exchange         |No       |
+|Cliente unificado AIP         |Sí            |
+|Escáner unificado AIP         |No aplicable         |
+|MIP SDK         |Sí            |
+|Servicio RMS         |No aplicable         |
+|Power BI escritorio y web         |No aplicable            |
+|MCAS     |No aplicable        |         |
 
 ## <a name="protection-changed"></a>Protección modificada
 
 Este evento se genera cada vez que se cambia manualmente la protección de un documento sin etiquetar.
 
-|Origen  |Notificado en el explorador de actividades |
+|Origen  |Notificado en el Explorador de actividades |
 |---------|---------| 
-|Word, Excel, PowerPoint         |no         |
-|Outlook         |no         |
-|SharePoint En línea, OneDrive         |no aplicable           |
-|Exchange         |no       |
-|Cliente unificado AIP         |sí            |
-|Escáner unificado AIP         |no aplicable         |
-|MIP SDK         |sí            |
-|Servicio RMS         |no aplicable         |
-|Power BI escritorio y web         |no aplicable            |
-|MCAS     |no aplicable        |
+|Word, Excel, PowerPoint         |No         |
+|Outlook         |No         |
+|SharePoint En línea, OneDrive         |No aplicable           |
+|Exchange         |No       |
+|Cliente unificado AIP         |Sí            |
+|Escáner unificado AIP         |No aplicable         |
+|MIP SDK         |Sí            |
+|Servicio RMS         |No aplicable         |
+|Power BI escritorio y web         |No aplicable            |
+|MCAS     |No aplicable        |
 
 ## <a name="protection-removed"></a>Protección eliminada
 
 Este evento se genera cada vez que se cambia manualmente la protección de un documento sin etiquetar.
 
-|Origen  |Notificado en el explorador de actividades |
+|Origen  |Notificado en el Explorador de actividades |
 |---------|---------| 
-|Word, Excel, PowerPoint         |no         |
-|Outlook         |no         |
-|SharePoint En línea, OneDrive         |no aplicable           |
-|Exchange         |no       |
-|Cliente unificado AIP         |sí            |
-|Escáner unificado AIP         |no aplicable         |
-|MIP SDK         |sí            |
-|Servicio RMS         |no aplicable         |
-|Power BI escritorio y web         |no aplicable            |
-|MCAS     |no aplicable        |
+|Word, Excel, PowerPoint         |No         |
+|Outlook         |No         |
+|SharePoint En línea, OneDrive         |No aplicable           |
+|Exchange         |No       |
+|Cliente unificado AIP         |Sí            |
+|Escáner unificado AIP         |No aplicable         |
+|MIP SDK         |Sí            |
+|Servicio RMS         |No aplicable         |
+|Power BI escritorio y web         |No aplicable            |
+|MCAS     |No aplicable        |
 
 ## <a name="dlp-policy-matched"></a>Directiva DLP coincidente
 
 Este evento se genera cada vez que una directiva DLP coincide en un documento o un correo electrónico.
 
-|Origen  |Notificado en el explorador de actividades |
+|Origen  |Notificado en el Explorador de actividades |
 |---------|---------| 
-|Exchange         |sí       |
-|SharePoint Online|sí          |
-|OneDrive |sí|
-|Teams |sí   |
-|Dispositivos con Windows 10         |sí |
-|MAC         |no     |
-|local         |no|
-|MCAS     |no        | 
+|Exchange         |Sí       |
+|SharePoint Online|Sí          |
+|OneDrive |Sí|
+|Teams |Sí   |
+|Dispositivos con Windows 10         |Sí |
+|MAC         |No     |
+|Local         |No|
+|MCAS     |No        | 
 
 Los eventos para Windows 10 dispositivos (DLP de punto de conexión) son:
 
-- archivo eliminado
-- archivo creado
-- archivo copiado en el portapapeles
-- archivo modificado
-- archivo leído
-- archivo impreso
-- se cambió el nombre del archivo
-- archivo copiado en el recurso compartido de red
-- archivo al que se accede mediante una aplicación sin alambrar
+- Archivo eliminado
+- Archivo creado
+- Archivo copiado en el portapapeles
+- Archivo modificado
+- Archivo leído
+- Archivo impreso
+- Archivo con el nombre cambiado
+- Archivo copiado al recurso compartido de red
+- Archivo al que se ha accedido mediante una aplicación no permitida
 
 
 ## <a name="retention-label-applied"></a>Etiqueta de retención aplicada 
@@ -251,11 +255,11 @@ Este evento se genera cada vez que se etiqueta un documento sin etiquetar o se e
 
 - Se captura en el momento de guardar para un documento y en el momento del envío de un correo electrónico.
 
-|Origen  |Notificado en el explorador de actividades |
+|Origen  |Notificado en el Explorador de actividades |
 |---------|---------| 
-|Exchange         |no       |
-|SharePoint Online|sí          |
-|OneDrive |sí|
+|Exchange         |No       |
+|SharePoint Online|Sí          |
+|OneDrive |Sí|
 
 ## <a name="retention-label-changed"></a>Etiqueta de retención modificada
 
@@ -263,11 +267,11 @@ Este evento se genera cada vez que se actualiza una etiqueta en un documento o c
 
 - Se captura en el momento de guardar para un documento y en el momento del envío de un correo electrónico.
 
-|Origen  |Notificado en el explorador de actividades |
+|Origen  |Notificado en el Explorador de actividades |
 |---------|---------| 
-|Exchange         |no       |
-|SharePoint Online|sí          |
-|OneDrive |sí|
+|Exchange         |No       |
+|SharePoint Online|Sí          |
+|OneDrive |Sí|
  
 ## <a name="retention-label-removed"></a>Etiqueta de retención eliminada
 
@@ -275,11 +279,11 @@ Este evento se genera cada vez que se quita una etiqueta de un archivo o documen
 
 - Se captura en el momento de guardar para un documento y en el momento del envío de un correo electrónico.
 
-|Origen  |Notificado en el explorador de actividades |
+|Origen  |Notificado en el Explorador de actividades |
 |---------|---------| 
-|Exchange         |no       |
-|SharePoint Online|sí          |
-|OneDrive |sí|
+|Exchange         |No       |
+|SharePoint Online|Sí          |
+|OneDrive |Sí|
 
 
 ## <a name="known-issues"></a>Problemas conocidos
