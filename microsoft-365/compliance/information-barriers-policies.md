@@ -15,12 +15,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74a16519a6b7e6640c72eb500b1c72d5df494fd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ec745f46790ee6d230266f010a9311e1cebb12cc
+ms.sourcegitcommit: 6d470e37b2a1c40c7f31c2365ae654a3c35d7674
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204340"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834107"
 ---
 # <a name="get-started-with-information-barriers"></a>Introducción a las barreras de información
 
@@ -282,9 +282,6 @@ Para habilitar las barreras de información SharePoint y OneDrive, siga las inst
 ## <a name="step-6-information-barriers-modes-preview"></a>Paso 6: Modos de barreras de información (versión preliminar)
 
 Los modos pueden ayudar a reforzar el acceso, el uso compartido y la pertenencia de un Microsoft 365 basado en el modo DEI del recurso. Los modos se admiten en Microsoft 365 grupos, Microsoft Teams, OneDrive y SharePoint y se habilitan automáticamente en la configuración del IB nueva o existente.
-
->[!IMPORTANT]
->Si ha habilitado las barreras de información en su inquilino antes del 15 de octubre de 2021, no se necesitan pasos adicionales. Si va a incorporar barreras de información en su inquilino después del 15 de octubre de 2021, deberá establecer los modos de IB en todos los grupos de Microsoft 365 existentes conectados a Microsoft Teams para que los grupos cumplan las barreras de información.
 
 Los siguientes modos de IB se admiten en Microsoft 365 recursos:
 
