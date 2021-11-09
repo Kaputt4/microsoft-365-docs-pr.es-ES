@@ -2,7 +2,6 @@
 title: Antivirus de Microsoft Defender Infraestructura de escritorio virtual de implementación
 description: Obtenga información sobre cómo implementar Antivirus de Microsoft Defender en un entorno de escritorio virtual para obtener el mejor equilibrio entre la protección y el rendimiento.
 keywords: vdi, hyper-v, vm, máquina virtual, Windows Defender, antivirus, av, escritorio virtual, rds, escritorio remoto
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/31/2021
+ms.date: 10/18/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 86f2ecdbf263f922d5e271028d28c50b91af31b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 23ac32508338771b46ccd30b520da53a471be81a
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213726"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882086"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -179,7 +178,7 @@ A veces, Antivirus de Microsoft Defender notificaciones se pueden enviar o conse
 La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en [Microsoft 365 Defender portal](microsoft-defender-security-center.md).
 
 > [!TIP]
-> Para abrir el Centro de acciones en Windows 10, siga uno de los pasos siguientes:
+> Para abrir el Centro de acciones Windows 10 o Windows 11, siga uno de los pasos siguientes:
 >
 > - En el extremo derecho de la barra de tareas, seleccione el icono centro de acciones.
 > - Presione el Windows tecla de logotipo + A.

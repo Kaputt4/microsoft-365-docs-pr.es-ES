@@ -2,8 +2,6 @@
 title: Información general de la detección de dispositivo
 description: Obtenga información sobre cómo aprovechar la detección de puntos de conexión Microsoft 365 Defender buscar dispositivos no administrados en la red
 keywords: detección de dispositivos, detección, pasiva, proactiva, red, visibilidad, servidor, estación de trabajo, incorporación, dispositivos no administrados
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c1a76bb0a82562a7c2a2f96e87b087f6fd09fcea
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 09492c81135c9859b683e2d042e8e4a99cc94c83
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701008"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882182"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 

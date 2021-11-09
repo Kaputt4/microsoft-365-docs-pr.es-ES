@@ -2,7 +2,6 @@
 title: Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 description: Las reglas de reducción de superficie de ataque pueden ayudar a evitar que las vulnerabilidades utilicen aplicaciones y scripts para infectar dispositivos con malware.
 keywords: Reglas de reducción de superficie de ataque, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 77f3472d809a64c78426534c8773658a1a6c736b
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5392cf40a0d37e332d7b3bec260ab34e9a3a083e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240313"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882446"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 
@@ -70,6 +69,7 @@ El modo de advertencia ayuda a la organización a tener reglas de reducción de 
 El modo de advertencia se admite en dispositivos que ejecutan las siguientes versiones de Windows:
 
 - [Windows 10, versión 1809](/windows/whats-new/whats-new-windows-10-version-1809) o posterior
+- Windows 11
 - [Windows server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809) o posterior
 
 Antivirus de Microsoft Defender debe ejecutarse con protección en tiempo real en [modo activo](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
@@ -164,7 +164,7 @@ Puede crear una vista personalizada que filtra los eventos para mostrar solo los
 |1121|Evento cuando la regla se dispara en modo bloque|
 |1122|Evento cuando la regla se dispara en modo auditoría|
 
-La "versión del motor" que aparece para los eventos de reducción de superficie de ataque en el registro de eventos, la genera Defender for Endpoint, no el sistema operativo. Defender para endpoint está integrado con Windows 10, por lo que esta característica funciona en todos los dispositivos Windows 10 instalados.
+La "versión del motor" que aparece para los eventos de reducción de superficie de ataque en el registro de eventos, la genera Defender for Endpoint, no el sistema operativo. Defender para endpoint está integrado con Windows 10 y Windows 11, por lo que esta característica funciona en todos los dispositivos con Windows 10 o Windows 11 instalados.
 
 ## <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
@@ -174,23 +174,23 @@ Si está configurando reglas de reducción de superficie de ataque mediante la d
 
 |Nombre de regla|GUID|Exclusiones & carpetas de archivos|Sistema operativo mínimo compatible|
 |---|:---:|---|---|
-|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior) |
-|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
-|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br> Windows Server 2016|
-|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br><br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)|
-|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br> Windows Server 2016 <br> Windows Server 2012 R2|
-|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
-|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br> Windows Server 2016|
-|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br> Windows Server 2016 <br> Windows Server 2012 R2 |
-|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|No admitido|[Windows 10 versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) (compilación 18362) o posterior|
-|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|
+|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
+|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br> Windows Server 2016|
+|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br><br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)|
+|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2|
+|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|
+|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
+|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br> Windows Server 2016|
+|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2 |
+|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|
+|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|
+|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|No se admite|[Windows 10, versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) (compilación 18362) o posterior, o Windows 11|
+|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 |
-|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
-|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Admitido|[Windows 10 versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
+|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|
+|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|
+|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) |
 |
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquear el uso indebido de controladores firmados vulnerables explotados

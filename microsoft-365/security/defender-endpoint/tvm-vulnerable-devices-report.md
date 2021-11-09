@@ -2,8 +2,6 @@
 title: 'Informe de dispositivos vulnerables: Administración de amenazas y vulnerabilidades'
 description: Un informe que muestra tendencias de dispositivos vulnerables y estadísticas actuales. El objetivo es que comprendas la respiración y el alcance de la exposición del dispositivo.
 keywords: Microsoft Defender para dispositivos vulnerables de Endpoint-tvm, Microsoft Defender para endpoint, tvm, reducir la exposición a la vulnerabilidad & amenazas, reducir la amenaza y la vulnerabilidad, supervisar la configuración de seguridad
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 23e0ab99f2272759e7e1c75f9eb3d36e7da4d925
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65a218a78641856cb247d7bcf2d1d69de09d8609
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206750"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882950"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Informe de dispositivos vulnerables: Administración de amenazas y vulnerabilidades
 
@@ -46,7 +44,7 @@ Hay dos columnas:
 - Tendencias (con el tiempo). Puede mostrar los últimos 30 días, 3 meses, 6 meses o un intervalo de fechas personalizado.
 - Estado (información actual)
 
-**Filtro:** puedes filtrar los datos por niveles de gravedad de vulnerabilidad, disponibilidad de vulnerabilidad, antigüedad de vulnerabilidad, plataforma del sistema operativo, Windows 10 versión o grupo de dispositivos.
+**Filtro:** puedes filtrar los datos por niveles de gravedad de vulnerabilidad, disponibilidad de vulnerabilidad, antigüedad de vulnerabilidad, plataforma del sistema operativo, Windows 10 o Windows versión 11 o grupo de dispositivos.
 
 **Explorar en profundidad:** si hay una información que desea explorar más adelante, seleccione el gráfico de barras relevante para ver una lista filtrada de dispositivos en la página Inventario de dispositivos. Desde allí, puede exportar la lista.
 
@@ -74,9 +72,9 @@ El número de dispositivos en cada sistema operativo que se exponen debido a vul
 
 :::image type="content" alt-text="Un gráfico de dispositivos vulnerables actuales por plataforma del sistema operativo y un gráfico que muestra los dispositivos vulnerables de las plataformas del sistema operativo a lo largo del tiempo." source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
 
-## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Dispositivos vulnerables Windows 10 gráficos de versión
+## <a name="vulnerable-devices-by-windows-version-graphs"></a>Dispositivos vulnerables Windows gráficos de versión
 
-El número de dispositivos en cada Windows 10 que se exponen debido a aplicaciones vulnerables u sistema operativo.
+Número de dispositivos en cada Windows 10 o Windows 11 que se exponen debido a aplicaciones vulnerables u sistema operativo.
 
 ![Un gráfico de dispositivos vulnerables actuales por Windows 10 versión y un gráfico que muestra los dispositivos vulnerables Windows 10 versión con el tiempo.](images/tvm-report-version.png)lightbox="images/tvm-report-version.png":::
 

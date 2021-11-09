@@ -2,8 +2,6 @@
 title: 'Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades'
 description: Enumera el identificador de vulnerabilidades y exposiciones (CVE) común de las debilidades encontradas en el software que se ejecuta en la organización. Detectada por la funcionalidad de Microsoft Defender para Administración de amenazas y vulnerabilidades punto de conexión.
 keywords: Microsoft Defender para endpoint threat & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5395ae9452dae6ffc170ee294c59fce4942000a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 801eabd49beae39c4d926b4c370229f5308fb35b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193942"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882218"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades
 
@@ -53,7 +51,7 @@ Acceder a la página Puntos débiles de varias maneras diferentes:
 - Selección de **puntos débiles** en el menú de navegación **Administración** de vulnerabilidades en el [Microsoft 365 Defender portal] (portal-overview.md)
 - Búsqueda global
 
-### <a name="navigation-menu"></a>Menú navegación
+### <a name="navigation-menu"></a>Menú de navegación
 
 Vaya al menú **de navegación Administración** de vulnerabilidades y seleccione Puntos **débiles** para abrir la lista de CVEs.
 

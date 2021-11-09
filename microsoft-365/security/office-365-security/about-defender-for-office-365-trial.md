@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: cf701be45841f155b825e86b761f5967bc6298f4
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 5dc374a8fbb305c7e5d9bf63660953cc20b644e3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588282"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882194"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 
@@ -65,6 +65,9 @@ Una prueba de Microsoft Defender para Office 365 es una forma sencilla de probar
 Una prueba permite a las organizaciones configurar y configurar fácilmente defender para Office 365 funcionalidades. Durante la instalación, las directivas que son exclusivas de Defender para Office 365 (específicamente, datos adjuntos de [Caja fuerte](safe-attachments.md)para mensajes de correo electrónico, vínculos [de Caja fuerte](safe-links.md)para [](preset-security-policies.md) mensajes de correo electrónico y Microsoft Teams y protección de suplantación en directivas contra correo no [deseado)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)se aplican con la plantilla Estándar para directivas de seguridad preestablecidas .
 
 De forma predeterminada, estas directivas están en el ámbito de todos los usuarios de la organización, pero durante o después de la configuración de la prueba, puede cambiar la asignación de directiva a usuarios específicos.
+
+> [!NOTE]
+> Es probable que las directivas contra  correo no deseado existentes estén configuradas con la acción Mover mensaje a la carpeta correo no deseado para el veredicto de correo no deseado de elevada confianza en las directivas contra correo no deseado. La plantilla Estándar para directivas  de seguridad preestablecidas usa el mensaje de cuarentena de acción para correo no deseado de elevada confianza y las directivas de seguridad predefinidas siempre se aplican antes de las directivas contra correo no deseado personalizadas o la directiva contra correo no deseado predeterminada. Para obtener más información acerca de la configuración predeterminada, estándar y estricta, vea Configuración recomendada para EOP y [Microsoft Defender para Office 365 seguridad.](recommended-settings-for-eop-and-office365.md)
 
 Otras cargas de trabajo también están disponibles para la protección (por ejemplo, datos adjuntos de Caja fuerte para [SharePoint, OneDrive y](mdo-for-spo-odb-and-teams.md) vínculos Microsoft Teams y [Caja fuerte para](safe-links.md#safe-links-settings-for-office-365-apps)aplicaciones Office 365 compatibles.
 
@@ -108,7 +111,7 @@ La versión de prueba de Defender para Office 365 se está implementando gradual
 
 Para obtener más información, vea [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="q-how-do-i-extend-the-trial"></a>P: ¿Cómo se amplía la versión de prueba?
 

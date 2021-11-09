@@ -2,7 +2,6 @@
 title: Definir cómo se actualizan los dispositivos móviles Antivirus de Microsoft Defender
 description: Administrar cómo los dispositivos móviles, como los portátiles, deben actualizarse con Antivirus de Microsoft Defender de protección.
 keywords: actualizaciones, protección, actualizaciones de programación, batería, dispositivo móvil, portátil, bloc de notas, opt-in, microsoft update, wsus, override
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5e95167e5493e55e375dc5827531a6f22b139023
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3d39f2de9d1dcfed8b81e2c4aba2350796005daa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178340"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883646"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Administrar las actualizaciones de dispositivos móviles y máquinas virtuales
 

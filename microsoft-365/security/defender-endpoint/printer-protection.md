@@ -14,12 +14,12 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 48a813765693c69cff726c6973959ee63200a357
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: bb2c66c8ebb04b32fb409a749b7f1872361dd4a4
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753926"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882242"
 ---
 # <a name="device-control-printer-protection"></a>Protección de la impresora de control de dispositivo
 
@@ -48,7 +48,7 @@ Para ver los informes de configuración del dispositivo, la cuenta debe tener pe
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
-Asegúrese de que los dispositivos Windows 10 que planee implementar Printer Protection cumplan estos requisitos.
+Asegúrese de que los Windows 10 o Windows 11 dispositivos que planee implementar Printer Protection para cumplir estos requisitos.
 
 1. Se instalan las siguientes actualizaciones de Windows.
     - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)

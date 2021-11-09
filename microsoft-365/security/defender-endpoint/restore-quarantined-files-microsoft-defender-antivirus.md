@@ -2,7 +2,6 @@
 title: Restaurar archivos en cuarentena en el Antivirus de Windows Defender
 description: Puede restaurar archivos y carpetas que fueron puestos en cuarentena por Antivirus de Microsoft Defender.
 keywords: ''
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2021
+ms.date: 10/19/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0eed4f8b615ce759cd81385546158232d51c6158
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a1e5926233d5e1e86101d2f22dfe3e149746a120
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168211"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884030"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Restaurar archivos en cuarentena en el Antivirus de Windows Defender
 

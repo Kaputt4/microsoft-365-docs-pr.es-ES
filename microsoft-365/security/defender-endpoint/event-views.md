@@ -2,7 +2,6 @@
 title: Ver eventos de la reducción de la superficie expuesta a ataques
 description: Importar vistas personalizadas para ver eventos de reducción de superficie de ataque.
 keywords: vista de eventos, protección contra vulnerabilidades, auditoría, revisión, eventos
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4ca3058db2f3f2e8ac79c7388d9a68ead1f48d38
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7dccc8992d808b5f9cea2b190a9b40cdf75f3392
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704852"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883178"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
@@ -158,7 +157,7 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|1|Auditoría de ACG|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|2|Aplicación de ACG|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|3|No permitir procesos secundarios de auditoría|
-|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|4 |No permitir procesos secundarios de bloqueo|
+|Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|4|No permitir procesos secundarios de bloqueo|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|5|Bloquear auditoría de imágenes de integridad baja|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|6 |Bloquear bloqueo de imágenes de integridad baja|
 |Protección contra vulnerabilidades de seguridad|Security-Mitigations (modo kernel/modo de usuario)|7 |Bloquear auditoría de imágenes remota|

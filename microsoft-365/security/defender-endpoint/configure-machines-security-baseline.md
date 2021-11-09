@@ -2,8 +2,6 @@
 title: Aumentar el cumplimiento de la línea base de seguridad de Microsoft Defender para endpoints
 description: La línea base de seguridad de Microsoft Defender para puntos de conexión establece controles de seguridad para proporcionar una protección óptima.
 keywords: Administración de Intune, Microsoft Defender para endpoint, Microsoft Defender, Microsoft Defender para ENDPOINT ASR, línea base de seguridad
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3149f453886f72fd300f2961a7ef2ea1defce7a5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 052ba7710d7c3561a93d8a67cf933a20a8cf7b99
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704726"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882614"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Aumentar el cumplimiento de la línea base de seguridad de Microsoft Defender para endpoints
 
@@ -44,7 +42,7 @@ Antes de implementar y realizar un seguimiento del cumplimiento de las líneas b
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Comparar las líneas base de seguridad de Microsoft Defender para endpoint y Windows de seguridad de Intune
 
-La línea base de seguridad de Windows Intune proporciona un conjunto completo de opciones recomendadas necesarias para configurar de forma segura dispositivos que ejecutan Windows, incluidas las opciones del explorador, las opciones de PowerShell, así como la configuración de algunas características de seguridad como Antivirus de Microsoft Defender. En cambio, la línea base de Defender para punto de conexión proporciona opciones que optimizan todos los controles de seguridad de la pila Defender para endpoint, incluida la configuración de detección y respuesta de puntos de conexión (EDR), así como la configuración que también se encuentra en la línea base de seguridad de Windows Intune. Para obtener más información acerca de cada línea base, vea:
+La línea base de seguridad de Windows Intune proporciona un conjunto completo de opciones recomendadas necesarias para configurar de forma segura los dispositivos que ejecutan Windows, incluidas las opciones del explorador, las opciones de PowerShell y la configuración de algunas características de seguridad como Antivirus de Microsoft Defender. En cambio, la línea base de Defender para punto de conexión proporciona opciones que optimizan todos los controles de seguridad de la pila Defender para endpoint, incluida la configuración de detección y respuesta de puntos de conexión (EDR), así como la configuración que también se encuentra en la línea base de seguridad de Windows Intune. Para obtener más información acerca de cada línea base, vea:
 
 - [Windows de línea base de seguridad para Intune](/intune/security-baseline-settings-windows)
 - [Configuración de línea base de Microsoft Defender para Endpoint para Intune](/intune/security-baseline-settings-defender-atp)
@@ -52,11 +50,11 @@ La línea base de seguridad de Windows Intune proporciona un conjunto completo d
 Lo ideal es que los dispositivos incorporados a Defender for Endpoint se implementen en ambas líneas base: la línea base de seguridad de Windows Intune para proteger inicialmente Windows y, a continuación, la línea base de seguridad de Defender para endpoints en capas superiores para configurar de forma óptima los controles de seguridad de Defender for Endpoint. Para beneficiarse de los últimos datos sobre riesgos y amenazas y para minimizar los conflictos a medida que evolucionan las líneas base, aplique siempre las versiones más recientes de las líneas base en todos los productos tan pronto como se liberan.
 
 > [!NOTE]
-> La línea base de seguridad de Defender for Endpoint se ha optimizado para dispositivos físicos y actualmente no se recomienda su uso en máquinas virtuales (VM) o puntos de conexión VDI. Ciertas opciones de configuración de línea base pueden afectar a sesiones interactivas remotas en entornos virtualizados.
+> La línea base de seguridad de Defender for Endpoint se ha optimizado para dispositivos físicos y actualmente no se recomienda su uso en máquinas virtuales (VM) o puntos de conexión VDI. Ciertas configuraciones de base de referencia pueden afectar a las sesiones interactivas remotas en entornos virtualizados.
 
 ## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>Supervisar el cumplimiento de la línea base de seguridad de Defender for Endpoint
 
-La tarjeta de [](configure-machines.md) línea **base** de seguridad en la administración de configuración de dispositivos proporciona una introducción al cumplimiento entre Windows 10 dispositivos a los que se asignó la línea base de seguridad defender para puntos de conexión.
+La tarjeta de [](configure-machines.md) **línea** base de seguridad en la administración de configuración de dispositivos proporciona información general sobre el cumplimiento entre Windows 10 y Windows 11 dispositivos a los que se ha asignado la línea base de seguridad defender para puntos de conexión.
 
 ![Tarjeta de línea base de seguridad.](images/secconmgmt_baseline_card.png)
 
@@ -76,7 +74,7 @@ Para revisar dispositivos específicos, seleccione **Configurar la línea base d
 
 ## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>Revisar y asignar la línea base de seguridad de Microsoft Defender para endpoint
 
-La administración de configuración de dispositivos supervisa el cumplimiento de línea base solo Windows 10 dispositivos a los que se ha asignado específicamente la línea base de seguridad de Microsoft Defender para endpoints. Puedes revisar cómodamente la línea base y asignarla a dispositivos en la administración de dispositivos de Intune.
+La administración de configuración de dispositivos supervisa el cumplimiento de línea base solo Windows 10 y Windows 11 dispositivos a los que se asignó específicamente la línea base de seguridad de Microsoft Defender para endpoints. Puedes revisar cómodamente la línea base y asignarla a dispositivos en la administración de dispositivos de Intune.
 
 1. Selecciona **Configurar la línea base de** seguridad en la tarjeta de **línea** base de seguridad para ir a Administración de dispositivos de Intune. Se muestra una descripción general similar del cumplimiento de la línea base.
 

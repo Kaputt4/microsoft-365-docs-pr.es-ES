@@ -2,7 +2,6 @@
 title: Proteger las carpetas importantes contra ransomware de cifrar los archivos con acceso controlado a carpetas
 description: Los archivos de las carpetas predeterminadas se pueden proteger para que no los cambien las aplicaciones malintencionadas. Impedir que el ransomware cifre los archivos.
 keywords: acceso controlado a carpetas, windows 10, Windows Defender, ransomware, protect, files, folders
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a93fb821c69f390bbc6e19034e1dc025b06cd623
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 19a54dca079c8b43110d3140a9ad3543634086e3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665756"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883214"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -37,7 +36,7 @@ ms.locfileid: "60665756"
 
 ## <a name="what-is-controlled-folder-access"></a>¿Qué es el acceso controlado a carpetas?
 
-El acceso controlado a carpetas ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas protege los datos comprobando las aplicaciones en una lista de aplicaciones conocidas y de confianza. Compatible con los clientes de Windows Server 2019, Windows Server 2022 y Windows 10, el acceso controlado a carpetas se puede desactivar con la aplicación Seguridad de Windows, Microsoft Endpoint Configuration Manager o Intune (para dispositivos administrados).
+El acceso controlado a carpetas ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas protege los datos comprobando las aplicaciones en una lista de aplicaciones conocidas y de confianza. Compatible con Windows Server 2019, Windows Server 2022, Windows 10 y Windows 11 clientes, el acceso controlado a carpetas se puede desactivar con la aplicación Seguridad de Windows, Microsoft Endpoint Configuration Manager o Intune (para dispositivos administrados).
 
 > [!NOTE]
 > Los motores de scripting no son de confianza y no se les puede permitir el acceso a carpetas protegidas controladas. Por ejemplo, PowerShell no es de confianza mediante el acceso controlado a carpetas, incluso si permite con indicadores de certificado [e archivo](/microsoft-365/security/defender-endpoint/indicator-certificates).
@@ -68,6 +67,7 @@ Puede usar el [modo de auditoría para](audit-windows-defender.md) evaluar cómo
 El acceso controlado a carpetas se admite en las siguientes versiones de Windows:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) y versiones posteriores
+- Windows 11
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
@@ -129,7 +129,7 @@ En la tabla siguiente se muestran los eventos relacionados con el acceso control
 
 Puedes usar la aplicación Seguridad de Windows para ver la lista de carpetas protegidas por el acceso controlado a carpetas.
 
-1. En el Windows 10, abre la aplicación Seguridad de Windows usuario.
+1. En tu Windows 10 o Windows 11 dispositivo, abre la Seguridad de Windows aplicación.
 2. Seleccione **Protección antivirus y contra amenazas**.
 3. En **Protección contra ransomware,** seleccione **Administrar protección contra ransomware**.
 4. Si el acceso controlado a carpetas está desactivado, tendrás que activarlo. Seleccione **carpetas protegidas**.

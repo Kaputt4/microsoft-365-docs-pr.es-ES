@@ -2,7 +2,6 @@
 title: Habilitar reglas de reducción de superficie expuesta a ataques
 description: Habilita las reglas de reducción de superficie de ataque (ASR) para proteger los dispositivos de ataques que usan macros, scripts y técnicas de inserción comunes.
 keywords: Reducción de superficie de ataque, caderas, sistema de prevención de intrusiones de host, reglas de protección, antiexploit, vulnerabilidad, prevención de infecciones, habilitar, activar
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 08/17/2021
+ms.date: 10/14/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b741844819d98a394eba969451a59e7b654fcc72
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 92adcad0a7cbb12853e2caca217b87f448efcb65
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667330"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881954"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -156,7 +155,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
 
    - En **Nombre**, escriba un nombre para la regla.
    - En **Descripción**, escriba una breve descripción.
-   - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar. Consulte la sección MEM anterior en este tema para el URI de OMA que se va a usar para esta regla de ejemplo. Para GUID de regla ASR, vea [Descripciones](attack-surface-reduction-rules.md#per-rule-descriptions) por regla en el tema: Reglas de reducción de superficie de ataque.
+   - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar. Consulte la sección MEM anterior de este artículo para que OMA-URI se use para esta regla de ejemplo. Para guides de regla de Recuperación de sitios de Azure, consulte [Por descripciones de reglas](attack-surface-reduction-rules.md#per-rule-descriptions) en el tema: Reglas de reducción de superficie de ataque.
    - En **Tipo de datos**, seleccione **Cadena**.
    - En **Value**, escriba o pegue el valor GUID, el signo y el valor State sin espacios \= (_GUID=StateValue_). Donde:
      - 0 : Deshabilitar (deshabilitar la regla ASR)

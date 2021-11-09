@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4c44b62cba02f772f606d13abce7b26270b9613
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 05b714c21a1fdb095457f60a715a6daee677886e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587154"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883622"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender para punto de conexión en iOS
 
@@ -73,7 +73,7 @@ ms.locfileid: "60587154"
 
 **Requisitos del sistema**
 
-- Dispositivo iOS que ejecuta iOS 11.0 y posteriores. También se admiten iPads. *La compatibilidad con iOS 11.0 estará en desuso. La versión mínima compatible será iOS 12.0 a partir del 25 de octubre de 2021*
+- Dispositivo iOS que ejecuta iOS 12.0 y posteriores. También se admiten iPads.
 
 - El dispositivo se inscribe con la [aplicación Portal de empresa de Intune o](https://apps.apple.com/us/app/intune-company-portal/id719171358) se registra con Azure Active Directory a través de [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
@@ -96,4 +96,4 @@ La implementación de Microsoft Defender para endpoint en iOS se puede realizar 
 - [Configurar la directiva de protección de aplicaciones para incluir las señales de riesgo de Defender for Endpoint (MAM)](ios-install-unmanaged.md)
 - [Configurar Microsoft Defender para endpoint en características de iOS](ios-configure-features.md)
 - [Configurar la directiva de acceso condicional en función de la puntuación de riesgo del dispositivo de Microsoft Defender para el extremo](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
-- [Conceptos básicos de administración de aplicaciones móviles (MAM)](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
+- [Aspectos básicos de la administración de aplicaciones móviles (MAM)](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

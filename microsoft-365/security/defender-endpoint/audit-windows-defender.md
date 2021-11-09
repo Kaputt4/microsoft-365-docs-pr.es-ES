@@ -2,7 +2,6 @@
 title: Probar cómo funcionan las características de Microsoft Defender para endpoint en modo auditoría
 description: El modo auditoría le ayuda a ver cómo Microsoft Defender para Endpoint protegería sus dispositivos si estaba habilitado.
 keywords: protección contra vulnerabilidades de seguridad, auditoría, auditoría, modo, habilitado, deshabilitado, prueba, demostración, evaluación, laboratorio
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.topic: article
 ms.technology: mde
-ms.date: 09/22/2021
+ms.date: 10/14/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b261625215fa5f4f84daac7850f50569d8826cb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fd5966380b23b13ab43b3e0e0c6583db03971541
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174872"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882938"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Probar la reducción de superficie de ataque en Microsoft Defender para endpoint
 

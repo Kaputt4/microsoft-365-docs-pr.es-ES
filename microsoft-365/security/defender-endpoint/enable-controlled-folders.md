@@ -1,8 +1,7 @@
 ---
 title: Habilitar el acceso controlado a carpetas
-keywords: Acceso controlado a carpetas, windows 10, Windows Defender, ransomware, protect, files, folders, enable, turn on, use
+keywords: Acceso controlado a carpetas, windows 10, windows 11, Windows Defender, ransomware, protect, files, folders, enable, turn on, use
 description: Obtenga información sobre cómo proteger los archivos importantes habilitando acceso controlado a carpetas
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.topic: article
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 527bd73d11a40672839d29a5007298a0807d95b6
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 6f18bfdc4e8dd4701831ed169684db110a54e154
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804790"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882146"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -33,7 +32,7 @@ ms.locfileid: "60804790"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[El acceso controlado a](controlled-folders.md) carpetas te ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas se incluye Windows 10 y Windows Server 2019.  El acceso controlado a carpetas también se incluye como parte de la solución moderna y unificada [para Windows Server 2012R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+[El acceso controlado a](controlled-folders.md) carpetas te ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas se incluye Windows 10, Windows 11 y Windows Server 2019. El acceso controlado a carpetas también se incluye como parte de la solución moderna y unificada [para Windows Server 2012R2 y 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
 Puede habilitar el acceso controlado a carpetas mediante cualquiera de estos métodos:
 
@@ -148,7 +147,7 @@ Puede habilitar la característica en modo auditoría especificando en `AuditMod
 
 Se `Disabled` usa para desactivar la característica.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)

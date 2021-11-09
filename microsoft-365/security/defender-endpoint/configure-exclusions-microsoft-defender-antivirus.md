@@ -2,7 +2,6 @@
 title: Configurar exclusiones para Antivirus de Microsoft Defender exámenes
 description: Puede excluir los archivos (incluidos los archivos modificados por procesos especificados) y las carpetas de que Antivirus de Microsoft Defender. Valide las exclusiones con PowerShell.
 keywords: ''
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e97f720a5004a61687cea6d62afe6fc32481f94f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78ee4e8beba06c61ee15f76f5e3bdf669c809884
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213842"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883334"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes
 
@@ -56,7 +55,7 @@ Tenga en cuenta los siguientes puntos al definir exclusiones:
 
 - Revise y audite los cambios en la lista de exclusiones. El equipo de seguridad debe conservar el contexto en torno a por qué se agregó una exclusión determinada para evitar confusiones más adelante. El equipo de seguridad debe poder proporcionar respuestas específicas a preguntas sobre por qué existen exclusiones.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender exclusiones en Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)

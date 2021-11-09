@@ -2,7 +2,6 @@
 title: Configurar y validar exclusiones en función de la extensión, el nombre o la ubicación
 description: Excluir archivos de Antivirus de Microsoft Defender en función de su extensión de archivo, nombre de archivo o ubicación.
 keywords: exclusiones, archivos, extensión, tipo de archivo, nombre de carpeta, nombre de archivo, exámenes
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 11/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: df4bfe29f9881ea6dcd1cf4ae8e21c9a3e673532
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: 7c939b43edf206d31cf62678fa0984aa26707fab
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725547"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882410"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -136,7 +135,7 @@ El formato de los cmdlets es el siguiente:
 
 En la tabla siguiente se enumeran los cmdlets que puede usar en la `<cmdlet>` parte del cmdlet de PowerShell:
 
-<br/><br/>
+<br/>
 
 |Acción de configuración|Cmdlet de PowerShell|
 |:---|:---|
@@ -146,7 +145,7 @@ En la tabla siguiente se enumeran los cmdlets que puede usar en la `<cmdlet>` pa
 
 En la tabla siguiente se enumeran los valores que puede usar en la `<exclusion list>` parte del cmdlet de PowerShell:
 
-<br/><br/>
+<br/>
 
 |Tipo de exclusión|Parámetro de PowerShell|
 |---|---|
@@ -201,7 +200,7 @@ Puede usar el asterisco, el signo de interrogación o las variables de entorno (
     
 En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y se proporcionan algunos ejemplos.
 
-<br/><br/>
+<br/>
 
 |Carácter comodín|Ejemplos|
 |---|---|
@@ -221,8 +220,9 @@ En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y
 ### <a name="system-environment-variables"></a>Variables de entorno del sistema
 
 En la tabla siguiente se enumeran y describen las variables de entorno de cuentas del sistema.
-    <br/><br/>
-    
+
+<br/>
+
 |Esta variable de entorno del sistema...|Redirige a esto|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -310,7 +310,7 @@ Si usa PowerShell, puede recuperar la lista de dos maneras:
 
 Para comprobar las exclusiones con la herramienta de línea de [comandos ](./command-line-arguments-microsoft-defender-antivirus.md)mpcmdrun.exe, use el siguiente comando:
 
-```DOS
+```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
 cd 4.18.2110-5.0 (Where 4.18.2110-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)

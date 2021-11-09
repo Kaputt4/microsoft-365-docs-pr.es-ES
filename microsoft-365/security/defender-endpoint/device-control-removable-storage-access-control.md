@@ -1,8 +1,6 @@
 ---
 title: Microsoft Defender para Endpoint Device Control Extraíble Storage control de acceso, medios de almacenamiento extraíbles
 description: Una información general sobre Microsoft Defender para endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 11/02/2021
-ms.openlocfilehash: b7dc38ba6b4c1fcc214dfca5d621269a35eaf323
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: e62f40b7d7b0d1f194c1549173edcb3ec3ec3634
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725561"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882722"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -37,7 +35,7 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 |Privilegio|Permiso|
 |---|---|
-|Acceso|Lectura, Escritura, Ejecución|
+|Access|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditoría, Permitir, Impedir|
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
@@ -46,7 +44,7 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
-Implemente el control Storage de acceso extraíble en Windows 10 dispositivos con cliente antimalware versión **4.18.2103.3** o posterior .
+Implementar control de acceso Storage extraíble en Windows 10 y Windows 11 dispositivos con cliente antimalware versión **4.18.2103.3** o posterior .
 
 - **4.18.2104 o** posterior: Agregar SerialNumberId, VID_PID, compatibilidad con GPO basada en ruta de archivo, ComputerSid
 - **4.18.2105** o posterior: Agregar compatibilidad con caracteres comodín para HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinación de usuario específico en una máquina específica, SSD extraíble (un SSD extremo de SanDisk)/compatibilidad con SCSI conectada a USB (UAS)
@@ -235,7 +233,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>¿Cuál es la limitación de medios de almacenamiento extraíbles para el número máximo de USB?
 

@@ -2,7 +2,6 @@
 title: Configurar invalidaciones locales para Antivirus de Microsoft Defender configuración
 description: Habilite o deshabilite a los usuarios para que no cambien la configuración localmente en El antivirus de Microsoft Defender.
 keywords: invalidación local, directiva local, directiva de grupo, gpo, bloqueo, combinación, listas
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,16 +12,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 09/14/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c206d998d1900ef39a0edbfd21c24b2e0cdc0514
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aec2283b1d55e395f0080d412a3ea0a836cc8b39
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192948"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882338"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Impedir o permitir que los usuarios modifiquen localmente Antivirus de Microsoft Defender configuración de directiva
 
@@ -62,7 +61,7 @@ Para configurar estas opciones:
 | Ubicación | Configuración | Artículo |
 |---|---|---|---|
 | MAPAS |Configurar la invalidación de configuración local para los informes en Microsoft MAPS|[Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| Cuarentena|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md) |
+| Quarantine|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para exámenes](configure-remediation-microsoft-defender-antivirus.md) |
 | Protección en tiempo real|Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Protección en tiempo real|Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes | [Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Protección en tiempo real|Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md) |

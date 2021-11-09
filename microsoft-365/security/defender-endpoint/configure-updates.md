@@ -2,8 +2,6 @@
 title: Crear un proceso de implementación gradual personalizado para actualizaciones de Microsoft Defender
 description: Obtenga información sobre cómo usar herramientas compatibles para crear un proceso de implementación gradual personalizado para actualizaciones
 keywords: herramientas de actualización, gpo, intune, mdm, microsoft endpoint manager, policy, powershell
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9023a6fe8f95f086ad90f2a6276733bd4a4213a2
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 198b5d0392b5984f6bbb434bcf524660371b7437
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747197"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881882"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Crear un proceso de implementación gradual personalizado para actualizaciones de Microsoft Defender
 

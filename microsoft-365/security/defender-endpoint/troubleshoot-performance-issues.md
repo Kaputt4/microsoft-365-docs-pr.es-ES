@@ -2,7 +2,6 @@
 title: Solucionar problemas de rendimiento
 description: Solucionar problemas de uso elevado de CPU relacionados con el servicio de protección en tiempo real en Microsoft Defender para endpoint.
 keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Antivirus de Microsoft Defender
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -12,17 +11,17 @@ ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
-ms.date: 04/14/2021
+ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b36d4d46e6a9ab8b705626ab186e06e577f2c46e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: cf0ca72bb29c47708c497740b9bd3b64a7347136
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665544"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884078"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -232,7 +231,7 @@ Como alternativa, también puede usar la herramienta de línea de comandos *wpr.
 
     ![Rellene los detalles.](images/wpr-12.png)
 
-    1. Seleccione **Nombre de archivo:** para determinar dónde se guardará el archivo de seguimiento. De forma predeterminada, 1.is guardado en `%user%\Documents\WPR Files\` .
+    1. Seleccione **Nombre de archivo:** para determinar dónde se guardará el archivo de seguimiento. De forma predeterminada, se guarda en `%user%\Documents\WPR Files\` .
     1. Seleccione **Guardar**.
 
 14. Espere mientras se combina el seguimiento.

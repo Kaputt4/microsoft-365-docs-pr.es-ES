@@ -3,8 +3,6 @@ title: Introducción a la reducción de la superficie expuesta a ataques
 ms.reviewer: ''
 description: Obtenga información sobre las capacidades de reducción de superficie de ataque de Microsoft Defender para endpoint.
 keywords: asr, reducción de superficie de ataque, Microsoft Defender para endpoint, microsoft defender, antivirus, av, windows defender
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,13 +16,13 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/02/2021
-ms.openlocfilehash: 5950dba146260f69256f5b64a2a44f666060a18b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.date: 10/14/2021
+ms.openlocfilehash: 5da8e3bf024745ed38142779e982e17b59c26439
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204016"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884066"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>Información general sobre las capacidades de reducción de superficie de ataque
 

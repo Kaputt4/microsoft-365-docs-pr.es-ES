@@ -2,7 +2,6 @@
 title: Configurar exclusiones para archivos abiertos por procesos específicos
 description: Puede excluir archivos de los exámenes si se han abierto mediante un proceso específico.
 keywords: Antivirus de Microsoft Defender, proceso, exclusión, archivos, exámenes
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eb1b28b49bbf684f0f1845eafb1332c7fb00be12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 44107228cf0e05f43484bfb88a757335fe6c2b86
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205636"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882734"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurar exclusiones para archivos abiertos por procesos
 

@@ -2,7 +2,6 @@
 title: Solucionar problemas con herramientas de informes para Antivirus de Microsoft Defender
 description: Identificar y resolver problemas comunes al intentar informar sobre el estado Antivirus de Microsoft Defender protección en Update Compliance
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Antivirus de Microsoft Defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dc9ad48614e386c0e61bc6395ad3126247802046
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1d749eba67696fd2074283cd3c02ffe43330172
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196794"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883454"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Solucionar problemas de informes del Antivirus de Windows Defender en la comprobación de actualizaciones
 
@@ -74,6 +73,7 @@ Si se han cumplido todos los requisitos previos anteriores, es posible que deba 
 
 > [!div class="nextstepaction"]
 > [Recopilar datos de diagnóstico para la solución de problemas de cumplimiento de actualizaciones](collect-diagnostic-data.md)
+
 
 ## <a name="related-topics"></a>Temas relacionados
 

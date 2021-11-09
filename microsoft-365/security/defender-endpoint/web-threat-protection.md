@@ -2,7 +2,6 @@
 title: Proteja su organización contra las amenazas web
 description: Obtenga información sobre la protección web en Microsoft Defender para endpoint y cómo puede proteger su organización.
 keywords: protección web, protección contra amenazas web, navegación web, seguridad, phishing, malware, vulnerabilidad, sitios web, protección de red, Edge, Internet Explorer, Chrome, Firefox, explorador web
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 90775af14d78092159d2b92736abce56a961416e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a0c80ca78503cef9d7acce25cf2f18255c0c9f6b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159179"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883394"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Proteja su organización contra las amenazas web
 

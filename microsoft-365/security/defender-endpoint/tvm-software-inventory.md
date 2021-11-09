@@ -2,8 +2,6 @@
 title: Inventario de software en Administración de amenazas y vulnerabilidades
 description: La página de inventario de software de Microsoft Defender para el Administración de amenazas y vulnerabilidades muestra cuántas debilidades y vulnerabilidades se han detectado en el software.
 keywords: Administración de amenazas y vulnerabilidades, Microsoft Defender para Endpoint, Inventario de software de Microsoft Defender para Endpoint, Microsoft Defender para endpoint threat & administración de vulnerabilidades, Microsoft Defender for Endpoint threat & administración de vulnerabilidades software inventory, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 10e5c062af839142db0b12f562739fd2fb603d42
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 63af06a3d7565ede3fb703ccb5aeaacc77d3612d
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157847"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883838"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventario de software: Administración de amenazas y vulnerabilidades
 
@@ -38,7 +36,7 @@ ms.locfileid: "60157847"
 
 El inventario de software en Administración de amenazas y vulnerabilidades es una lista de software conocido en su organización con enumeraciones de plataforma [común (CPE) oficiales.](https://nvd.nist.gov/products/cpe) Los productos de software sin un CPE oficial no tienen vulnerabilidades publicadas. También incluye detalles como el nombre del proveedor, el número de debilidades, las amenazas y el número de dispositivos expuestos.
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 En el campo de la detección, estamos aprovechando el mismo conjunto de señales responsables de la detección y evaluación de vulnerabilidades en Microsoft Defender para la detección de puntos de conexión y las capacidades [de respuesta.](overview-endpoint-detection-response.md)
 
@@ -51,7 +49,7 @@ Para obtener acceso a la página Inventario de software, seleccione **Inventario
 Ver software en dispositivos específicos en las páginas de dispositivos individuales de la [lista de dispositivos](machines-view-overview.md).
 
 > [!NOTE]
-> Si busca software con la búsqueda global de Microsoft Defender para endpoint, asegúrese de colocar un carácter de subrayado en lugar de un espacio. Por ejemplo, para obtener los mejores resultados de búsqueda, escribirías "windows_10" en lugar de "Windows 10".
+> Si busca software con la búsqueda global de Microsoft Defender para endpoint, asegúrese de colocar un carácter de subrayado en lugar de un espacio. Por ejemplo, para obtener los mejores resultados de búsqueda, escribiría "windows_10" o "windows_11" en lugar de "Windows 10" o "Windows 11".
 
 ## <a name="software-inventory-overview"></a>Introducción al inventario de software
 

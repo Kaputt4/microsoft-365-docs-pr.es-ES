@@ -2,8 +2,6 @@
 title: Recomendaciones de seguridad de Administración de amenazas y vulnerabilidades
 description: Obtenga recomendaciones de seguridad de acción priorizadas por amenaza, probabilidad de vulneración y valor en Administración de amenazas y vulnerabilidades.
 keywords: Administración de amenazas y vulnerabilidades, recomendación de seguridad de Microsoft Defender para endpoint tvm, recomendación de ciberseguridad, recomendación de seguridad que se puede tomar
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42552d9b39a50ad924e0514a1f1184fba9f5f865
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22b5d6382a46eb45bc2365d8c31bb7a00eb5da17
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190514"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882974"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -44,7 +42,7 @@ Cada recomendación de seguridad incluye pasos de corrección que se pueden toma
 > [!TIP]
 > Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Cada dispositivo de la organización se puntua en función de tres factores importantes para ayudar a los clientes a centrarse en las cosas correctas en el momento adecuado.
 
@@ -64,7 +62,7 @@ Vea las recomendaciones de seguridad relacionadas en los siguientes lugares:
 - Página de software
 - Página del dispositivo
 
-### <a name="navigation-menu"></a>Menú navegación
+### <a name="navigation-menu"></a>Menú de navegación
 
 Vaya al menú **de navegación Administración de** vulnerabilidades y seleccione **Recomendaciones**. La página contiene una lista de recomendaciones de seguridad para las amenazas y vulnerabilidades encontradas en su organización.
 

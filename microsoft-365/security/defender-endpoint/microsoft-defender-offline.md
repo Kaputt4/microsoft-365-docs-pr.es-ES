@@ -1,8 +1,7 @@
 ---
-title: Microsoft Defender sin Conexión en Windows 10
+title: Microsoft Defender sin Conexión en Windows
 description: Puedes usar Microsoft Defender sin Conexión directamente desde la Antivirus de Windows Defender aplicación. También puede administrar cómo se implementa en la red.
 keywords: examinar, defender, sin conexión
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 829f908d4b7cde6713cd6443100a15284d305eca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12023c7655a8978e5e0ae54b8a2831edda9b9d9e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209434"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883586"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Ejecutar y revisar los resultados de un análisis de Microsoft Defender sin Conexión
 
@@ -36,13 +35,13 @@ Microsoft Defender sin Conexión es una herramienta de análisis de antimalware 
 
 Puede usar Microsoft Defender sin Conexión si sospecha que hay una infección de malware o si desea confirmar una limpieza exhaustiva del extremo después de un brote de malware.
 
-En Windows 10, Microsoft Defender sin Conexión se puede ejecutar con un solo clic directamente desde la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md). En versiones anteriores de Windows, un usuario tenía que instalar Microsoft Defender sin Conexión en medios de arranque, reiniciar el extremo y cargar los medios de arranque.
+En Windows 10 y Windows 11, Microsoft Defender sin Conexión puede ejecutarse con un solo clic directamente desde la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md). En versiones anteriores de Windows, un usuario tenía que instalar Microsoft Defender sin Conexión en medios de arranque, reiniciar el extremo y cargar los medios de arranque.
 
 ## <a name="prerequisites-and-requirements"></a>requisitos previos y requisitos
 
-Microsoft Defender sin Conexión en Windows 10 tiene los mismos requisitos de hardware que Windows 10.
+Microsoft Defender sin Conexión en Windows 10 y Windows 11 tiene los mismos requisitos de hardware que Windows 10.
 
-Para obtener más información acerca Windows 10 requisitos, consulte los siguientes temas:
+Para obtener más información sobre Windows 10 y Windows 11 requisitos, consulte los siguientes temas:
 
 - [Requisitos mínimos de hardware](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 

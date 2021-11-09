@@ -2,8 +2,6 @@
 title: Configuración de la detección de dispositivo
 description: Obtenga información sobre cómo configurar la detección de dispositivos Microsoft 365 Defender con la detección básica o estándar
 keywords: básico, estándar, configurar la detección de puntos de conexión, la detección de dispositivos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c1dfbc1fb953a83c3854e7059bba30a069a37c83
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 914e246fe4c276a624989b189a3358c1821194fd
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555217"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882926"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 

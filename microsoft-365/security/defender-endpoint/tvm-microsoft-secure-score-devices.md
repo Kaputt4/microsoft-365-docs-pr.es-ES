@@ -2,8 +2,6 @@
 title: Puntuación de seguridad de Microsoft para dispositivos
 description: La puntuación de los dispositivos muestra el estado de configuración de seguridad colectiva de los dispositivos en todos los controles de aplicación, sistema operativo, red, cuentas y seguridad.
 keywords: Puntuación segura de Microsoft para dispositivos, Puntuación segura de Microsoft Defender para dispositivos, puntuación segura, puntuación de configuración, Administración de amenazas y vulnerabilidades, controles de seguridad, oportunidades de mejora, puntuación de configuración de seguridad con el tiempo, posición de seguridad, línea base
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ec39f07ff653b3c28c645978c0a708da37d348dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0cd0dc7a68fc399d46b0a028753c7132df53a468
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206762"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882962"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Puntuación de seguridad de Microsoft para dispositivos
 
@@ -62,7 +60,7 @@ Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
 
 3. Seleccione **Guardar preferencias**.
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 > [!NOTE]
 > La puntuación segura de Microsoft para dispositivos actualmente admite configuraciones establecidas a través de la directiva de grupo. Debido a la compatibilidad parcial actual de Intune, las configuraciones que podrían haber sido configuradas a través de Intune podrían aparecer como mal configuradas. Póngase en contacto con el administrador de TI para comprobar el estado de configuración real en caso de que su organización use Intune para la administración de configuración segura.

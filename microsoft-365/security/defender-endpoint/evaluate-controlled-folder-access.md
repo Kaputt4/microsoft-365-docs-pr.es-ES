@@ -1,8 +1,7 @@
 ---
 title: Evaluar acceso controlado a carpetas
 description: Vea cómo el acceso controlado a carpetas puede ayudar a proteger los archivos de que las aplicaciones malintencionadas cambien.
-keywords: Protección contra vulnerabilidades, windows 10, Windows Defender, ransomware, proteger, evaluar, probar, probar, probar
-search.product: eADQiWindows 10XVcnh
+keywords: Protección contra vulnerabilidades, windows 10, windows 11, Windows Defender, ransomware, proteger, evaluar, probar, probar, probar
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d4c029ee825299202b3d1a128c9fbee5986bf5cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4209c48fbf718a14ccdc8faf7f4e859485679bcd
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166533"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882842"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Evaluar acceso controlado a carpetas
 
@@ -33,7 +32,7 @@ ms.locfileid: "60166533"
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[El acceso controlado](controlled-folders.md) a carpetas es una característica que ayuda a proteger los documentos y archivos contra modificaciones de aplicaciones sospechosas o malintencionadas. El acceso controlado a carpetas se admite Windows Server 2019, Windows Server 2022 y Windows 10 cliente.
+[El acceso controlado](controlled-folders.md) a carpetas es una característica que ayuda a proteger los documentos y archivos contra modificaciones de aplicaciones sospechosas o malintencionadas. El acceso controlado a carpetas se admite en Windows Server 2019, Windows Server 2022, Windows 10 y clientes de Windows 11.
 
 Es especialmente útil para ayudar a proteger contra [ransomware](https://www.microsoft.com/wdsi/threats/ransomware) que intenta cifrar los archivos y retenerlos como rehenes.
 

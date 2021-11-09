@@ -2,8 +2,6 @@
 title: Microsoft Defender para Endpoint Device Control Removable Storage Protection
 description: Comprender las "funcionalidades que ayudan a impedir que el usuario o la máquina o ambos utilicen medios de almacenamiento extraíbles no autorizados
 keywords: medios de almacenamiento extraíbles
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 655ed51ae6ca6110bf86657a32be95a4084f5c9a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9e3e658af5118d7a2d6ff565d52154e7be3f95fa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184730"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882698"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender para Endpoint Device Control Removable Storage Protection
 
@@ -38,14 +36,14 @@ La protección de almacenamiento extraíble del control de dispositivos en Micro
 - *Auditoría* Acceso de lectura o escritura o ejecución al almacenamiento extraíble basado en varias propiedades del dispositivo, con o sin exclusión.
 - *Impedir* Acceso de lectura o escritura o ejecución con o sin exclusión: permitir un dispositivo específico basado en varias propiedades del dispositivo.
 
-**Windows 10 de soporte técnico:**
+**Windows 10 y Windows 11 detalles de soporte técnico:**
 
 - Se aplica en el nivel de dispositivo, en el nivel de usuario. o ambos. Solo permitir que determinadas personas que realizan lectura/escritura/ejecución accedan al almacenamiento extraíble específico en un equipo específico.
 - Admite MEM OMA-URI y GPO.
 - Compatible con '[Propiedades de dispositivo](#device-properties)' como se muestra.
 - Para obtener información sobre la Windows, [consulte Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md).
 
-**Plataforma compatible:** Windows 10
+**Plataforma compatible:** Windows 10, Windows 11
 
 **Detalles de soporte técnico de macOS:**
 
@@ -59,14 +57,14 @@ La protección de almacenamiento extraíble del control de dispositivos en Micro
 
 **Funcionalidades:** impedir la instalación con o sin exclusión basada en varias propiedades del dispositivo.
 
-**Windows 10 de soporte técnico:**
+**Windows 10 y Windows 11 detalles de soporte técnico:**
 
 - Se aplica en el nivel de dispositivo: se aplica la misma directiva para cualquier usuario que haya iniciado sesión.
 - Admite Microsoft Endpoint Manager y objetos de directiva de grupo.
 - Compatible con '[Propiedades de dispositivo](#device-properties)' como se muestra.
 - Para obtener más información Windows, vea [How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
-**Plataforma compatible:** Windows 10
+**Plataforma compatible:** Windows 10, Windows 11
 
 **Detalles de soporte técnico de macOS:**
 
@@ -81,7 +79,7 @@ La protección de almacenamiento extraíble del control de dispositivos en Micro
 
 **Descripción:** para obtener más información sobre Windows, vea [Learn about Microsoft 365 Endpoint data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
 
-**Plataforma compatible:** Windows 10
+**Plataforma compatible:** Windows 10, Windows 11
 
 ### <a name="bitlocker"></a>BitLocker
 
@@ -92,7 +90,7 @@ La protección de almacenamiento extraíble del control de dispositivos en Micro
 
 **Descripción:** para obtener más información sobre Windows, vea [BitLocker - Removable Drive Configuración](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
-**Plataforma compatible:** Windows 10
+**Plataforma compatible:** Windows 10, Windows 11
 
 ## <a name="device-properties"></a>Propiedades de dispositivo
 

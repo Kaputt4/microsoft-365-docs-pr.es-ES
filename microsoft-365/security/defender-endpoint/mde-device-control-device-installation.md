@@ -1,8 +1,6 @@
 ---
 title: Instalación de dispositivos de control de dispositivos de Microsoft Defender para endpoint
 description: En este tema se proporciona un recorrido por la instalación de dispositivos de control de dispositivos de punto de conexión de Microsoft Defender
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +13,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b56f6ba5cc481de7c295305ab1d5abfbec68cd4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 07ee57728d93458ca3242fafea1e7514a9e853b3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662303"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881990"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Instalación de dispositivos de control de dispositivos de Microsoft Defender para endpoint 
 
@@ -43,7 +41,7 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
-Implemente la instalación de dispositivos Windows 10 dispositivos, Windows Server 2022.
+Implemente la instalación de dispositivos Windows 10, Windows 11 dispositivos, Windows Server 2022.
 
 ## <a name="device-properties"></a>Propiedades de dispositivo
 
@@ -69,7 +67,7 @@ Cuando esta configuración de directiva  está habilitada junto con la opción A
 Si  la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos no está habilitada con esta configuración de directiva, tendrá prioridad cualquier otra configuración de directiva que impida específicamente la instalación. 
 
 > [!NOTE]
-> La  configuración de directiva Impedir la instalación de dispositivos  no descrita por otras configuraciones de directiva se ha reemplazado por la opción Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos para las versiones de destino Windows 10 compatibles. Se recomienda usar la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia **de** dispositivos cuando sea posible.
+> La  configuración de directiva Impedir la instalación de dispositivos  no descrita por otras configuraciones de directiva se ha reemplazado por el orden de evaluación Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos para las versiones de Windows 10 de destino admitidas y Windows 11. Se recomienda usar la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia **de** dispositivos cuando sea posible.
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Permitir la instalación de dispositivos que coincidan con cualquiera de estos IDs de instancia de dispositivo 
 
@@ -269,7 +267,7 @@ DeviceEvents
 
 :::image type="content" source="../../media/block-removable-storage2.png" alt-text="almacenamiento en bloques":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="how-can-i-know-whether-the-target-machine-gets-the-deployed-policy"></a>¿Cómo puedo saber si la máquina de destino obtiene la directiva implementada? 
 Puede usar la siguiente consulta para obtener la versión del cliente antimalware en el portal de seguridad Microsoft 365 web:

@@ -2,8 +2,6 @@
 title: 'Asignar valor de dispositivo: Administración de amenazas y vulnerabilidades'
 description: Aprende a asignar un valor bajo, normal o alto a un dispositivo para ayudarte a diferenciar las prioridades de los activos.
 keywords: Valor de dispositivo de Microsoft Defender para endpoint, Administración de amenazas y vulnerabilidades de dispositivo, dispositivos de alto valor, puntuación de exposición al valor del dispositivo
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a1cc240c1c013468b482533ab00ef498543431fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 383001a8beac1f14ab6c1436fa42b28e48dbdc25
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193930"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884054"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Asignar valor de dispositivo: Administración de amenazas y vulnerabilidades
 

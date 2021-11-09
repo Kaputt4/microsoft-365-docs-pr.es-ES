@@ -2,8 +2,6 @@
 title: 'Información del panel: Administración de amenazas y vulnerabilidades'
 description: El Administración de amenazas y vulnerabilidades puede ayudar a SecOps y a los administradores de seguridad a abordar las amenazas de ciberseguridad y a crear la resistencia de seguridad de su organización.
 keywords: Microsoft Defender para Endpoint-tvm, panel de Microsoft Defender para Endpoint-tvm, & administración de vulnerabilidades de amenazas, Administración de amenazas y vulnerabilidades, & administración de vulnerabilidades de amenazas basadas en riesgos, configuración de seguridad, Puntuación segura de Microsoft para dispositivos, puntuación de exposición
-search.appverid: met150
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79bae1cdf4ce21ef00f622bfd438238e69f6ff8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c5bdc74a214ed76aa791a9ee8331ac2f0a5492a
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193918"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882986"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Información del panel: Administración de amenazas y vulnerabilidades
 

@@ -1,8 +1,7 @@
 ---
 title: Personalizar el acceso controlado a carpetas
 description: Agregue otras carpetas que deben estar protegidas por el acceso controlado a carpetas o permitir aplicaciones que bloqueen incorrectamente los cambios en archivos importantes.
-keywords: Acceso controlado a carpetas, windows 10, Windows Defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
-search.product: eADQiWindows 10XVcnh
+keywords: Acceso controlado a carpetas, windows 10, windows 11, Windows Defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,16 +11,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 05/10/2021
+ms.date: 10/19/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 88ecdbdc5055a954a2bd163697eac144edf0b2bc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff4b1f7b5fc271c01ef1d9eee079b4e4b4397ba2
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178472"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883226"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -32,7 +31,7 @@ ms.locfileid: "60178472"
 > [!TIP]
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-El acceso controlado a carpetas te ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas se admite Windows Server 2019, Windows Server 2022 y Windows 10 cliente. En este artículo se describe cómo personalizar las capacidades de acceso controlado a carpetas e incluye las siguientes secciones:
+El acceso controlado a carpetas te ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas se admite en Windows Server 2019, Windows Server 2022, Windows 10 y clientes de Windows 11. En este artículo se describe cómo personalizar las capacidades de acceso controlado a carpetas e incluye las siguientes secciones:
 
 - [Proteger carpetas adicionales](#protect-additional-folders)
 - [Agregar aplicaciones que deben tener acceso a carpetas protegidas](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -170,7 +169,7 @@ Los indicadores de archivo y certificado de Microsoft Defender para endpoint pue
 
 Para obtener más información acerca de cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o archivo, consulte [Configure alert notifications in Microsoft Defender for Endpoint](configure-email-notifications.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)

@@ -2,7 +2,6 @@
 title: Aplicar Antivirus de Microsoft Defender actualizaciones después de determinados eventos
 description: Administrar cómo Antivirus de Microsoft Defender actualizaciones de inteligencia de seguridad después del inicio o de recibir informes de detección entregados en la nube.
 keywords: actualizaciones, protección, forzar actualizaciones, eventos, inicio, buscar más recientes, notificaciones
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ca814b93b3d36695e980fb560d1267ca9ded762e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f47787a137f9397ab8526ed202e60f44a7d52a55
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159407"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883634"
 ---
 # <a name="manage-event-based-forced-updates"></a>Administrar las actualizaciones forzadas basadas en eventos
 

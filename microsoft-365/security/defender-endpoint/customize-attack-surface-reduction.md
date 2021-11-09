@@ -2,7 +2,6 @@
 title: Personalizar las reglas de la reducción de superficie expuesta a ataques
 description: Establecer reglas individualmente en los modos de auditoría, bloquear o deshabilitados, y agregar archivos y carpetas que deben excluirse de las reglas de reducción de superficie de ataque
 keywords: Reducción de superficie de ataque, hips, sistema de prevención de intrusiones de host, reglas de protección, antiexploit, exploit, prevención de infecciones, personalizar, configurar, excluir
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 393dbcf19232a0a27197a781c1c7b71b4aa2683e
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: e1837a460589e0e1e83a4944628644bd6241bee3
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240181"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882902"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizar las reglas de la reducción de superficie expuesta a ataques
 
@@ -113,17 +112,18 @@ Consulta el tema [de reducción de](attack-surface-reduction.md) superficie de a
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>Usar PowerShell para excluir archivos y carpetas
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**.
+
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
     ```
 
-Siga usando para `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` agregar más carpetas a la lista.
-
-> [!IMPORTANT]
-> Se `Add-MpPreference` usa para anexar o agregar aplicaciones a la lista. El `Set-MpPreference` uso del cmdlet sobrescribirá la lista existente.
+    Siga usando para `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` agregar más carpetas a la lista.
+    
+    > [!IMPORTANT]
+    > Se `Add-MpPreference` usa para anexar o agregar aplicaciones a la lista. El `Set-MpPreference` uso del cmdlet sobrescribirá la lista existente.
 
 ### <a name="use-mdm-csps-to-exclude-files-and-folders"></a>Usar CSP mdm para excluir archivos y carpetas
 

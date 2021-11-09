@@ -2,7 +2,6 @@
 title: Configurar Antivirus de Microsoft Defender con directiva de grupo
 description: Obtenga información sobre cómo usar una directiva de grupo para configurar y administrar Antivirus de Microsoft Defender en los puntos de conexión en Microsoft Defender para endpoint.
 keywords: directiva de grupo, GPO, configuración, configuración, configuración
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/08/2021
+ms.date: 10/18/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c00ed9b12212cb24cb3ac6e4c7a8ab1577832453
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a8eb8db33a79ccb7d4cc9cd010a689e524746fad
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176804"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883682"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
 
@@ -81,8 +80,8 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 |Sistema de inspección de red|Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red|[Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red](specify-additional-definitions-network-traffic-inspection-mdav.md)|
 |Sistema de inspección de red|Activar la retirada de definiciones|[Configurar la retirada de definiciones](turn-on-definition-retirement.md)|
 |Sistema de inspección de red|Activar el reconocimiento de protocolos|[Activar el reconocimiento de protocolos](turn-on-protocol-recognition.md)|
-|Cuarentena|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Cuarentena|Configurar la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
+|Quarantine|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Quarantine|Configurar la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
 |Protección en tiempo real|Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Protección en tiempo real|Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Protección en tiempo real|Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|

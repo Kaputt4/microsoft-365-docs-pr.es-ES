@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 608746c406ef308636e0a2ffc6f4bb1d69f6bbf7
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9245062a0906186ce779383725cecc8209655c6f
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587354"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882758"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -62,13 +62,11 @@ Apple iOS no admite varias VPN de todo **el** dispositivo para estar activas sim
 
 ## <a name="battery-consumption"></a>Consumo de batería
 
-Para proporcionar protección continua contra amenazas basadas en web, Microsoft Defender for Endpoint debe ejecutarse en segundo plano en todo momento. Esto puede provocar un aumento menor en el consumo de batería general del dispositivo.
+Para proporcionar protección continua contra amenazas basadas en web, Microsoft Defender for Endpoint debe ejecutarse en segundo plano en todo momento. Esto puede provocar un aumento menor en el consumo de batería general del dispositivo. En caso de que vea un gran consumo de batería, envíenos [sus comentarios](ios-troubleshoot.md#send-in-app-feedback) e investigaremos.
 
 Además, en la Configuración, iOS solo muestra el uso de batería de aplicaciones que son visibles para el usuario durante un período de tiempo específico. El uso de la batería por parte de las aplicaciones mostradas en la pantalla solo es durante ese tiempo y lo calcula iOS en función de una gran variedad de factores, incluido el uso de la CPU y la red. Microsoft Defender para endpoint usa una VPN local/loop-back en segundo plano para comprobar el tráfico web en busca de sitios web o conexiones malintencionadas. Los paquetes de red de cualquier aplicación pasan por esta comprobación y eso hace que el uso de la batería de Microsoft Defender para Endpoint se calcule incorrectamente. El consumo real de batería de Microsoft Defender para Endpoint es menor que lo que se muestra en la página De Configuración batería en el dispositivo.
 
-En promedio, el uso de batería por día por parte de Microsoft Defender para endpoint que se ejecuta en segundo plano es aproximadamente el **8,81 %** de la batería total consumida en ese día. Apple informa de esta métrica en función del uso real de Microsoft Defender para Endpoint en dispositivos de usuario final y debido a los motivos mencionados anteriormente también se pueden tener en cuenta en otras aplicaciones que tienen actividad de red.
-
-Además, la VPN usada es una VPN local y, a diferencia de una VPN tradicional, el tráfico de red no se envía fuera del dispositivo.
+Tenga en cuenta que la VPN usada es una VPN local y, a diferencia de una VPN tradicional, el tráfico de red no se envía fuera del dispositivo.
 
 ## <a name="data-usage"></a>Uso de datos
 
@@ -76,7 +74,7 @@ Microsoft Defender para endpoint usa una VPN local/loopback para comprobar el tr
 
 También tenemos observaciones similares con otros servicios VPN y hemos notificado esto a Apple.
 
-Además, es fundamental que Microsoft Defender para Endpoint esté al día con nuestros servicios back-end para proporcionar una mejor protección. Sin embargo, estamos trabajando en optimizar el uso de datos por parte de Microsoft Defender para endpoint.
+Además, es fundamental que Microsoft Defender para Endpoint esté al día con nuestros servicios back-end para proporcionar una mejor protección.
 
 ## <a name="report-unsafe-site"></a>Informe de sitio no seguro
 

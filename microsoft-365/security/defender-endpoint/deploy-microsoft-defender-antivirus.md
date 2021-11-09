@@ -2,7 +2,6 @@
 title: Implementación y habilitación en el Antivirus de Windows Defender
 description: Implemente Antivirus de Microsoft Defender protección de los puntos de conexión con Microsoft Intune, Microsoft Endpoint Configuration Manager, directiva de grupo, cmdlets de PowerShell o WMI.
 keywords: implementar, habilitar, Antivirus de Microsoft Defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 10d68a0da554b8c9e2a107581b5cdbc78a3958d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 466254b9c59e1a005b588c1b61de236c37f3aa9f
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190550"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882350"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Implementación y habilitación en el Antivirus de Windows Defender
 

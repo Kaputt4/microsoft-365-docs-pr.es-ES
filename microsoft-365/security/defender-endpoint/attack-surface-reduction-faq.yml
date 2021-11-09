@@ -3,7 +3,6 @@ metadata:
   title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
   description: Encuentre respuestas a las preguntas más frecuentes sobre las reglas de reducción de superficie de ataque de Microsoft Defender para endpoint.
   keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
-  search.product: eADQiWindows 10XVcnh
   ms.pagetype: security
   ms.prod: m365-security
   ms.mktglfcycl: manage
@@ -18,12 +17,12 @@ metadata:
   ms.topic: article
   ms.technology: mde
   ms.collection: M365-security-compliance
-  ms.openlocfilehash: 9f76502b13186c90f1866f5762d88eabea3b249d
-  ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+  ms.openlocfilehash: 29719b023a669463ff7ad0bddca9fc9a569d8ab5
+  ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/03/2021
-  ms.locfileid: "60701020"
+  ms.lasthandoff: 11/09/2021
+  ms.locfileid: "60882470"
 title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -44,7 +43,7 @@ sections:
   - question: >
       ¿Necesito tener una licencia de empresa para ejecutar reglas ASR?
     answer: >
-      El conjunto completo de reglas y características de ASR solo se admite si tiene una licencia de empresa para Windows 10. Un número limitado de reglas puede funcionar sin una licencia de empresa. Si ha establecido Microsoft 365 empresa, establezca Antivirus de Microsoft Defender como la solución de seguridad principal y habilite las reglas a través de PowerShell. El uso de ASR sin una licencia de empresa no se admite oficialmente y no podrá usar todas las funcionalidades de ASR.
+      El conjunto completo de reglas y características de ASR solo se admite si tiene una licencia de empresa para Windows 10 o Windows 11. Un número limitado de reglas puede funcionar sin una licencia de empresa. Si ha establecido Microsoft 365 empresa, establezca Antivirus de Microsoft Defender como la solución de seguridad principal y habilite las reglas a través de PowerShell. El uso de ASR sin una licencia de empresa no se admite oficialmente y no podrá usar todas las funcionalidades de ASR.
 
 
       Para obtener más información sobre Windows licencias, consulte [Windows 10 Licensing y](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) obtenga la Guía de licencias por volumen para [Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -193,7 +192,7 @@ sections:
   - question: >
       He aplicado una regla con GPO. Ahora, cuando intento comprobar las opciones de indización de la regla en Microsoft Outlook, aparece un mensaje que indica "Acceso denegado".
     answer: >
-      Intente abrir las opciones de indización directamente desde Windows 10.
+      Intente abrir las opciones de indización directamente desde Windows 10 o Windows 11.
 
 
       1. Seleccione el **icono Buscar** en la Windows de tareas.

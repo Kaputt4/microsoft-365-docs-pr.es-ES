@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac0d6cf4ff2dab75809525e5c49fc5c12eec670b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 376ea1a5c598adce28fb65ee2b2d1fbceceecd34
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157667"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882206"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -57,10 +57,12 @@ Las reglas de flujo de correo permiten la mayor flexibilidad para garantizar que
 > - EOP y Outlook inspeccionar distintas propiedades del mensaje para determinar el remitente del mensaje. Para obtener más información, vea la sección [Consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este artículo.
 >
 
-
 En cambio, también tiene varias opciones para bloquear el correo electrónico de orígenes específicos mediante _listas de remitentes bloqueados._ Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Recomendado) Usar reglas de flujo de correo
+
+> [!NOTE]
+> No puede usar encabezados de mensaje y reglas de flujo de correo para designar un remitente interno como remitente seguro. Los procedimientos de esta sección solo funcionan para remitentes externos.
 
 Las reglas de flujo de correo Exchange Online e independiente de EOP usan condiciones y excepciones para identificar mensajes y acciones para especificar qué se debe hacer con esos mensajes. Para obtener más información, vea Reglas de flujo de correo (reglas de [transporte) en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 

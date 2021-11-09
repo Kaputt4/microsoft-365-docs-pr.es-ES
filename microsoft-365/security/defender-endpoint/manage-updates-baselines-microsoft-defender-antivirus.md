@@ -2,7 +2,6 @@
 title: Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 description: Administrar cómo Antivirus de Microsoft Defender la protección y las actualizaciones de productos.
 keywords: actualizaciones, líneas base de seguridad, protección, actualizaciones de programación, actualizaciones de fuerza, actualizaciones móviles, wsus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3982f25f8c2397d59d90777f70354dca1fc0765f
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 6ef4b2097710c3e6094ef8190d0de7e94ddf4b3c
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724756"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882098"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -588,6 +587,20 @@ Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Wind
 Para obtener más información, vea [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2111.02</summary>
+
+&ensp;Versión del paquete: **1.1.2111.02**<br/>
+&ensp;Versión de la **plataforma: 4.18.2110.6**<br/>
+&ensp;Versión del motor: **1.1.18700.4**<br/>
+&ensp;Versión de firma: **1.353.613.0**<br/>
+
+### <a name="fixes"></a>Correcciones
+- Se ha corregido un problema relacionado con los archivos de localización
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+<br/>
+</details><details>
 <summary>1.1.2110.01</summary>
 
 &ensp;Versión del paquete: **1.1.2110.01**<br/>
@@ -627,7 +640,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 - Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -638,10 +651,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguna
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguna
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -652,10 +665,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguna
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -666,10 +679,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguna
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -680,10 +693,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.335.232.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguna
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -697,7 +710,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 - Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -708,10 +721,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -722,10 +735,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- Ninguna
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -736,7 +749,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
 - Ninguno
@@ -764,7 +777,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguna
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
 - Ninguno
@@ -778,7 +791,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- Ninguna
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
 - Se agregó compatibilidad con Windows 10 imágenes de instalación del sistema operativo RS1 o versiones posteriores.

@@ -2,7 +2,6 @@
 title: Configurar Antivirus de Microsoft Defender notificaciones
 description: Obtenga información sobre cómo configurar y personalizar tanto las notificaciones estándar como otras Antivirus de Microsoft Defender en los puntos de conexión.
 keywords: notificaciones, defender, antivirus, punto de conexión, administración, administrador
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,16 +12,16 @@ author: denisebmsft
 ms.topic: article
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/16/2021
+ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c5b651dba1cf6b4e1af2e02e21f18f5663c21d1e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b2b23a52312b3f384122f34b054b65bd6aa486a2
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201413"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881918"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configurar Antivirus de Microsoft Defender notificaciones que aparecen en los puntos de conexión
 
@@ -30,7 +29,7 @@ ms.locfileid: "60201413"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-En Windows 10, las notificaciones de aplicaciones sobre detección y corrección de malware son más sólidas, coherentes y concisos. Antivirus de Microsoft Defender notificaciones aparecen en los puntos de conexión cuando se completan los exámenes y se detectan amenazas. Las notificaciones siguen exámenes programados y activados manualmente. Estas notificaciones también aparecen en el **Centro** de notificaciones y aparecen un resumen de exámenes y detecciones de amenazas en intervalos de tiempo regulares.
+En Windows 10 y Windows 11, las notificaciones de aplicaciones sobre detección y corrección de malware son más sólidas, coherentes y concisos. Antivirus de Microsoft Defender notificaciones aparecen en los puntos de conexión cuando se completan los exámenes y se detectan amenazas. Las notificaciones siguen exámenes programados y activados manualmente. Estas notificaciones también aparecen en el **Centro** de notificaciones y aparecen un resumen de exámenes y detecciones de amenazas en intervalos de tiempo regulares.
 
 Si forma parte del equipo de seguridad de su organización, puede configurar cómo aparecen las notificaciones en los puntos de conexión, como las notificaciones que solicitan un reinicio del sistema o que indican que se ha detectado y corregido una amenaza.
 
@@ -39,7 +38,7 @@ Si forma parte del equipo de seguridad de su organización, puede configurar có
 Puedes configurar la presentación de notificaciones adicionales, como resúmenes recientes de detección de amenazas, en la [aplicación](microsoft-defender-security-center-antivirus.md) Seguridad de Windows y con la directiva de grupo.
 
 > [!NOTE]
-> En Windows 10 versión 1607, la característica se denomina **notificaciones mejoradas** y se configuró en Windows Configuración  \> **Actualización & seguridad** \> **Windows Defender**. En Configuración de directiva de grupo para todas las versiones Windows 10, la característica de notificación se denomina **Notificaciones mejoradas.**
+> En Windows 10 versión 1607, la característica se denomina **notificaciones mejoradas** y se configuró en Windows Configuración  \> **Actualización & seguridad** \> **Windows Defender**. En Configuración de directiva de grupo para todas las versiones de Windows 10 y Windows 11, la característica de notificación se denomina **Notificaciones mejoradas.**
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>Usar la directiva de grupo para deshabilitar notificaciones adicionales
 

@@ -2,7 +2,6 @@
 title: Ejecutar y personalizar exámenes a petición en Antivirus de Microsoft Defender
 description: Ejecutar y configurar exámenes a petición con PowerShell, Windows Management Instrumentation o individualmente en puntos de conexión con la Seguridad de Windows aplicación
 keywords: análisis, a petición, dos, intune, examen instantáneo
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,17 +11,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/10/2021
+ms.date: 10/22/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a9e8860129df9f5b91cad8737a595a11296d91c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f2f5625eff5b19c47aebf896d6a0398437426aa
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162547"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881666"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender
 
@@ -43,7 +42,7 @@ Combinado con la protección siempre activa y en tiempo real, que revisa los arc
 
 2. Elija **Endpoint security** \> **Antivirus**.
 
-3. En la lista de pestañas, **seleccione Windows 10 extremos en mal estado.**
+3. En la lista de pestañas, **seleccione Windows 10** extremos en mal estado o **Windows 11** extremos en mal estado.
 
 4. En la lista de acciones proporcionadas, seleccione **Examen rápido** (recomendado) o **Examen completo**.
 

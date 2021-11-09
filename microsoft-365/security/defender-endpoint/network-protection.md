@@ -2,7 +2,6 @@
 title: Usar la protección de red para ayudar a evitar conexiones a sitios con problemas
 description: Proteger la red evitando que los usuarios accedan a direcciones de red malintencionadas y sospechosas conocidas
 keywords: Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a00fa0c255156f17f579889e8a399c52d126a6f8
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 13c8591d03bd0c4c6649f6afbdb383ad54089499
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661603"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883562"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -53,7 +52,7 @@ La protección de red Windows 10 Pro o Enterprise y Antivirus de Microsoft Defen
 
 |Versión de Windows|Antivirus de Microsoft Defender|
 |---|---|
-|Windows 10 versión 1709 o posterior <p> Windows Servidor 1803 o posterior|[Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas|
+|Windows 10 versión 1709 o posterior <p> Windows 11 <p> Windows Servidor 1803 o posterior|[Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas|
 |
 
 Después de habilitar los servicios, es posible que deba configurar la red o firewall para permitir las conexiones entre los servicios y los dispositivos (también denominados puntos de conexión).

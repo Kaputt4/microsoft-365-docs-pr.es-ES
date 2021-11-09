@@ -2,7 +2,6 @@
 title: Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 description: Solucionar errores comunes al migrar a Antivirus de Microsoft Defender
 keywords: evento, código de error, registro, solución de problemas, antivirus de Microsoft Defender, antivirus de Windows Defender, migración
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 10/19/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 11590c443c7d466f323075bd2228156492c82ab0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3a4fe04d563cd531e1f17916fcb54164e5010b62
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661535"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882482"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
@@ -36,13 +35,13 @@ Puede encontrar ayuda aquí si encuentra problemas al migrar desde una solución
 
 ## <a name="review-event-logs"></a>Revisar registros de eventos
 
-Abra la aplicación Visor de eventos seleccionando el icono **Buscar** en la barra de tareas y buscando el *visor de eventos.*
+1. Abra la aplicación Visor de eventos seleccionando el icono **Buscar** en la barra de tareas y buscando el *visor de eventos.*
 
-Encontrará información Antivirus de Microsoft Defender en **Registros** de aplicaciones y servicios \> **Microsoft** \> **Windows** \> **Windows Defender**.
+    Encontrará información Antivirus de Microsoft Defender en **Registros** de aplicaciones y servicios \> **Microsoft** \> **Windows** \> **Windows Defender**.
 
-Desde allí, seleccione **Abrir debajo** de **Operativo**.
+1. Desde allí, seleccione **Abrir debajo** de **Operativo**.
 
-Al seleccionar un evento en el panel de detalles, se mostrará más información sobre un evento en el panel inferior, en las pestañas **General** **y** Detalles.
+    Al seleccionar un evento en el panel de detalles, se mostrará más información sobre un evento en el panel inferior, en las pestañas **General** **y** Detalles.
 
 ## <a name="microsoft-defender-antivirus-wont-start"></a>Antivirus de Microsoft Defender no se iniciará
 
@@ -58,10 +57,10 @@ Id. de evento|Nombre de registro|Descripción|Origen
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>Cómo saber si Antivirus de Microsoft Defender no se iniciará porque está instalado un antivirus de terceros
 
-En un dispositivo Windows 10, si no usa Microsoft Defender para Endpoint y tiene instalado un antivirus de terceros, Antivirus de Microsoft Defender se desactivará automáticamente. Si usa Microsoft Defender para Endpoint con un antivirus de terceros instalado, Antivirus de Microsoft Defender se iniciará en modo pasivo, con funcionalidad reducida.
+En un dispositivo Windows 10 o Windows 11, si no usa Microsoft Defender para endpoint y tiene instalado un antivirus de terceros, Antivirus de Microsoft Defender se desactivará automáticamente. Si usa Microsoft Defender para Endpoint con un antivirus de terceros instalado, Antivirus de Microsoft Defender se iniciará en modo pasivo, con funcionalidad reducida.
 
 > [!TIP]
-> El escenario descrito solo se aplica a Windows 10. Otras versiones de Windows [tienen diferentes respuestas](microsoft-defender-antivirus-compatibility.md) a Antivirus de Microsoft Defender se ejecutan junto con software de seguridad de terceros.
+> El escenario descrito solo se aplica a Windows 10 y Windows 11. Otras versiones de Windows [tienen diferentes respuestas](microsoft-defender-antivirus-compatibility.md) a Antivirus de Microsoft Defender se ejecutan junto con software de seguridad de terceros.
 
 #### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>Usar la aplicación Servicios para comprobar si Antivirus de Microsoft Defender está desactivado
 
@@ -77,7 +76,7 @@ Esto indica que Antivirus de Microsoft Defender se ha desactivado automáticamen
 
 Puede generar un informe detallado sobre las directivas de  grupo activas actualmente abriendo un símbolo del sistema en modo Ejecutar como administrador y, a continuación, escriba el siguiente comando:
 
-```powershell
+```console
 GPresult.exe /h gpresult.html
 ```
 
@@ -89,7 +88,7 @@ Esto generará un informe ubicado en *./gpresult.html*. Abra este archivo y es p
 
 En el informe GPResults, bajo el título *Windows Components/Antivirus de Windows Defender*, puede ver algo como la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
 
-Policy|Setting|GPO ganador
+Policy|Configuración|GPO ganador
 ---|---|---
 Desactivar Antivirus de Windows Defender|Habilitado|Win10-Workstations
 
@@ -102,7 +101,7 @@ DisableAntiSpyware|-
 GPO ganador|Win10-Workstations
 Resultado: Correcto|
 **General**|
-Action|Actualizar
+Acción|Actualizar
 **Propiedades**|
 Hive|HKEY_LOCAL_MACHINE
 Ruta de acceso clave|SOFTWARE\Policies\Microsoft\Windows Defender

@@ -2,7 +2,6 @@
 title: Antivirus de Microsoft Defender de eventos y códigos de error
 description: Buscar las causas y soluciones de los Antivirus de Microsoft Defender de eventos y errores
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 10/19/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 59392ebb51bb483393cf657ced400c238852d72c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0bf6b5ed0d59e445eba4f8146d8321cf5bff1bf9
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753558"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881723"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -36,7 +35,7 @@ Si encuentra un problema con Antivirus de Microsoft Defender, puede buscar en la
 
 La lista de tablas:
 
-- [Antivirus de Microsoft Defender de eventos](#windows-defender-av-ids) (estos se aplican a Windows 10 y Windows Server 2016)
+- [Antivirus de Microsoft Defender de eventos](#windows-defender-av-ids) (se aplican a Windows 10, Windows 11 y Windows Server 2016)
 - [Antivirus de Microsoft Defender de error de cliente](#error-codes)
 - [Códigos Antivirus de Microsoft Defender de error de cliente internos (usados por Microsoft durante el desarrollo y las pruebas)](#internal-error-codes)
 
@@ -93,7 +92,7 @@ Descripción:
 <dt>Id. de examen: &lt; Número de identificador del &gt; examen correspondiente.</dt> 
 <dt> Tipo de examen: &lt; Tipo de examen , por &gt; ejemplo:<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 </ul>
 </dt>
@@ -135,7 +134,7 @@ Descripción:
 <dt>Id. de examen: &lt; Número de identificador del &gt; examen correspondiente.</dt> 
 <dt> Tipo de examen: &lt; Tipo de examen , por &gt; ejemplo:<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 </ul>
 </dt>
@@ -177,7 +176,7 @@ Descripción:
 <dt>Id. de examen: &lt; Número de identificador del &gt; examen correspondiente.</dt> 
 <dt> Tipo de examen: &lt; Tipo de examen , por &gt; ejemplo:<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 </ul>
 </dt>
@@ -219,7 +218,7 @@ Descripción:
 <dt>Id. de examen: &lt; Número de identificador del &gt; examen correspondiente.</dt> 
 <dt> Tipo de examen: &lt; Tipo de examen , por &gt; ejemplo:<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 </ul>
 </dt>
@@ -260,7 +259,7 @@ Descripción:
 <dt>Id. de examen: &lt; Número de identificador del &gt; examen correspondiente.</dt> 
 <dt> Tipo de examen: &lt; Tipo de examen , por &gt; ejemplo:<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 </ul>
 </dt>
@@ -301,7 +300,7 @@ Descripción:
 <dt>Id. de examen: &lt; Número de identificador del &gt; examen correspondiente.</dt> 
 <dt> Tipo de examen: &lt; Tipo de examen , por &gt; ejemplo:<ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 </ul>
 </dt>
@@ -393,7 +392,7 @@ Para obtener más información, vea los artículos siguientes:
 <li>IEPROTECT: IE - IExtensionValidation; esto protege contra controles de páginas web malintencionadas</li>
 <li>Antimalware de inicio anticipado (ELAM). Esto incluye malware detectado por la secuencia de arranque</li>
 <li>Atestación remota</li>
-</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PS, VBS), aunque también pueden invocarse por terceros.
+</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PowerShell, VBS), aunque también pueden ser invocados por terceros.
 Estado de </dt> 
 <dt>UAC: Usuario &lt; &gt; de</dt>
 <dt>estado: Dominio &lt; &gt; \& lt; Nombre &gt; </dt>del proceso de usuario: proceso en la versión de firma
@@ -807,7 +806,7 @@ Antivirus de Microsoft Defender ha detectado un comportamiento sospechoso.<br/>P
 <li>IEPROTECT: IE - IExtensionValidation; esto protege contra controles de páginas web malintencionadas</li>
 <li>Antimalware de inicio anticipado (ELAM). Esto incluye malware detectado por la secuencia de arranque</li>
 <li>Atestación remota</li>
-</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PS, VBS), aunque también pueden invocarse por terceros.
+</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PowerShell, VBS), aunque también pueden ser invocados por terceros.
 Estado de </dt> 
 <dt>UAC: Usuario &lt; &gt; de</dt>
 <dt>estado: Dominio &lt; &gt; \& lt; Nombre &gt; </dt>del proceso de usuario: proceso en el identificador de firma
@@ -882,7 +881,7 @@ Antivirus de Microsoft Defender ha detectado malware u otro software potencialme
 <li>IEPROTECT: IE - IExtensionValidation; esto protege contra controles de páginas web malintencionadas</li>
 <li>Antimalware de inicio anticipado (ELAM). Esto incluye malware detectado por la secuencia de arranque</li>
 <li>Atestación remota</li>
-</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PS, VBS), aunque también pueden invocarse por terceros.
+</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PowerShell, VBS), aunque también pueden ser invocados por terceros.
 Usuario de </dt> 
 <dt>UAC: Dominio &lt; &gt; \& lt; Nombre &gt; </dt>del proceso de usuario: proceso en la versión de firma
 <dt> &lt; &gt; PID:</dt>versión de
@@ -961,7 +960,7 @@ Antivirus de Microsoft Defender ha tomado medidas para proteger esta máquina de
 <li>IEPROTECT: IE - IExtensionValidation; esto protege contra controles de páginas web malintencionadas</li>
 <li>Antimalware de inicio anticipado (ELAM). Esto incluye malware detectado por la secuencia de arranque</li>
 <li>Atestación remota</li>
-</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PS, VBS), aunque también pueden invocarse por terceros.
+</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PowerShell, VBS), aunque también pueden ser invocados por terceros.
 Usuario de </dt> 
 <dt>UAC: Dominio &lt; &gt; \& lt; Nombre &gt; </dt>
 <dt>del proceso de usuario: Proceso en la &lt; acción &gt; pid:</dt>Acción , por 
@@ -1083,7 +1082,7 @@ Antivirus de Microsoft Defender ha encontrado un error no crítico al tomar medi
 <li>IEPROTECT: IE - IExtensionValidation; esto protege contra controles de páginas web malintencionadas</li>
 <li>Antimalware de inicio anticipado (ELAM). Esto incluye malware detectado por la secuencia de arranque</li>
 <li>Atestación remota</li>
-</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PS, VBS), aunque también pueden invocarse por terceros.
+</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PowerShell, VBS), aunque también pueden ser invocados por terceros.
 Usuario de </dt> 
 <dt>UAC: Dominio &lt; &gt; \& lt; Nombre &gt; </dt>
 <dt>del proceso de usuario: Proceso en la &lt; acción &gt; pid:</dt>Acción , por 
@@ -1175,7 +1174,7 @@ Antivirus de Microsoft Defender ha encontrado un error crítico al tomar medidas
 <li>IEPROTECT: IE - IExtensionValidation; esto protege contra controles de páginas web malintencionadas</li>
 <li>Antimalware de inicio anticipado (ELAM). Esto incluye malware detectado por la secuencia de arranque</li>
 <li>Atestación remota</li>
-</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PS, VBS), aunque también pueden invocarse por terceros.
+</ul>Interfaz de examen antimalware (AMSI). Se usa principalmente para proteger scripts (PowerShell, VBS), aunque también pueden ser invocados por terceros.
 Usuario de </dt> 
 <dt>UAC: Dominio &lt; &gt; \& lt; Nombre &gt; </dt>
 <dt>del proceso de usuario: Proceso en la &lt; acción &gt; pid:</dt>Acción , por 
@@ -1205,7 +1204,7 @@ Acción del usuario:
 El Antivirus de Microsoft Defender encontró este error debido a problemas críticos. Es posible que el extremo no esté protegido. Revise la descripción del error y, a continuación, siga los <b>pasos de acción de usuario</b> pertinentes a continuación.
 <table>
 <tr>
-<th>Action</th>
+<th>Acción</th>
 <th>Acción del usuario</th>
 </tr>
 <tr>
@@ -1409,7 +1408,7 @@ Se ha actualizado la versión de firma del antivirus.
 <dt>Versión de firma anterior: Versión de firma &lt; anterior &gt; </dt>Tipo de 
 <dt> firma: Tipo de firma , por &lt; &gt; ejemplo: <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 <li>Sistema de inspección de red</li>
 </ul>
@@ -1475,7 +1474,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar fi
 <dt>para Windows Server Update Services (WSUS)/Microsoft Update/ADL.</dt> 
 <dt> Tipo de firma: &lt; Tipo de firma , por &gt; ejemplo: <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 <li>Sistema de inspección de red</li>
 </ul>
@@ -1759,7 +1758,7 @@ Antivirus de Microsoft Defender <i>servicio de firma dinámica</i> para recupera
 <dt>Versión de firma actual: &lt; Versión de &gt; firma actual</dt> 
 <dt> Tipo de firma: Tipo de firma , &lt; por &gt; ejemplo: <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 <li>Sistema de inspección de red</li>
 </ul>
@@ -1815,7 +1814,7 @@ Antivirus de Microsoft Defender <i>servicio de firma dinámica para</i> descarta
 <dt>Versión de firma actual: &lt; Versión de &gt; firma actual</dt> 
 <dt> Tipo de firma: Tipo de firma , &lt; por &gt; ejemplo: <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 <li>Sistema de inspección de red</li>
 </ul>
@@ -1880,7 +1879,7 @@ Antivirus de Microsoft Defender ha encontrado un error al intentar usar <i>el se
 <dt>Versión de firma actual: &lt; Versión de &gt; firma actual</dt> 
 <dt> Tipo de firma: Tipo de firma , &lt; por &gt; ejemplo: <ul>
 <li>Antivirus</li>
-<li>Antispyware</li>
+<li>Antiespía</li>
 <li>Antimalware</li>
 <li>Sistema de inspección de red</li>
 </ul>
@@ -2784,7 +2783,7 @@ Ejecute sin conexión Antivirus de Microsoft Defender. Puede leer sobre cómo ha
 <td>
 Este error indica que Antivirus de Microsoft Defender no admite la versión actual de la plataforma y requiere una nueva versión de la plataforma.
 </td></tr><tr><td>Solución</td><td>
-Solo puede usar Antivirus de Microsoft Defender en Windows 10. Para Windows 8, Windows 7 y Windows Vista, puede usar <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
+Solo puede usar Antivirus de Microsoft Defender en Windows 10 y Windows 11. Para Windows 8, Windows 7 y Windows Vista, puede usar <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 

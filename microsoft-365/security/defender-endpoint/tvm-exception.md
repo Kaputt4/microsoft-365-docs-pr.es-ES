@@ -2,8 +2,6 @@
 title: 'Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades'
 description: Cree y supervise excepciones para las recomendaciones de seguridad en Administración de amenazas y vulnerabilidades.
 keywords: Corrección de Tvm de Microsoft Defender para Endpoint, Microsoft Defender para Endpoint tvm, Administración de amenazas y vulnerabilidades, & administración de vulnerabilidades amenazas, amenazas & administración de vulnerabilidades remediation, tvm remediation intune, tvm remediation sccm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79bf9503b94b6d3c1f1a8bcd9203c381aad9e90f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b837199972f225a44406c7e18a57ae417363d15d
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206858"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883478"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -90,7 +88,7 @@ Si tiene permisos de administrador global, podrá crear y cancelar una excepció
 Algunas cosas a tener en cuenta:
 
 - Si una recomendación está en excepción global, las excepciones recién creadas para grupos de dispositivos se suspenderán hasta que la excepción global haya expirado o se haya cancelado. Después de ese punto, las nuevas excepciones de grupo de dispositivos se harán efectivas hasta que expiren.
-- Si una recomendación ya tiene excepciones para grupos de dispositivos específicos y se crea una excepción global, la excepción de grupo de dispositivos se suspenderá hasta que expire o la excepción global se cancele antes de que expire.
+- Si una recomendación ya tiene excepciones para grupos de dispositivos específicos y se crea una excepción global, la excepción de grupo de dispositivos se suspenderá hasta que expire o se cancele la excepción global antes de que expire.
 
 ### <a name="justification"></a>Justificación
 

@@ -2,8 +2,6 @@
 title: Filtrado de contenido web
 description: Use el filtrado de contenido web en Microsoft Defender para endpoint para realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido.
 keywords: protección web, protección contra amenazas web, exploración web, supervisión, informes, tarjetas, lista de dominios, seguridad, phishing, malware, exploit, sitios web, protección de red, Edge, Internet Explorer, Chrome, Firefox, explorador web
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3afc71b226bb7858caed439f13c55aee44d81a63
-ms.sourcegitcommit: 11855e904e7f4e57aff302852546a93526cad4dc
+ms.openlocfilehash: 65010f13ca5b1605d9bcec672c4e51270913d407
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60275693"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883442"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -56,7 +54,7 @@ Antes de probar esta característica, asegúrese de cumplir los siguientes requi
 
 - Tiene acceso a Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-- Los dispositivos de la organización están Windows 10 actualización de aniversario (versión 1607) o posterior con las últimas actualizaciones [antivirus/antimalware](manage-updates-baselines-microsoft-defender-antivirus.md).
+- Los dispositivos de su organización están ejecutando Windows 10 Anniversary Update (versión 1607) o posterior, o Windows 11 con las actualizaciones [antivirus/antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)más recientes.
 
 - Windows Defender SmartScreen y Network Protection están habilitados en los dispositivos de la organización.
 

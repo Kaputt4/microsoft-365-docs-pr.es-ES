@@ -4,7 +4,6 @@ ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows El servidor incluye exclusiones automáticas, según el rol de servidor. También puede agregar exclusiones personalizadas.
 keywords: exclusiones, servidor, exclusiones automáticas, automáticas, personalizadas, exámenes, Antivirus de Microsoft Defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -15,14 +14,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 09/17/2021
+ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2432677f1e4bb5faa8de7255e766124660fb7bbb
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: c82b97f1c5799442ca5c857b65f24b9ef8b2e928
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240458"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883202"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 
@@ -59,7 +58,7 @@ En este artículo se incluyen las siguientes secciones:
 
 <br/><br/>
 
-|Section|Descripción|
+|Sección|Descripción|
 |---|---|
 |[Exclusiones automáticas en Windows Server 2016 o posterior](#automatic-exclusions-on-windows-server-2016-or-later)|Describe los dos tipos principales de exclusiones automáticas e incluye una lista detallada de exclusiones automáticas|
 |[No participar en exclusiones automáticas](#opting-out-of-automatic-exclusions)|Incluye consideraciones y procedimientos importantes que describen cómo excluirse de las exclusiones automáticas|
@@ -390,7 +389,7 @@ Si es necesario, puede agregar o quitar exclusiones personalizadas. Para ello, c
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

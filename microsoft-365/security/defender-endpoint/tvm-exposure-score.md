@@ -2,8 +2,6 @@
 title: Puntuación de exposición en Administración de amenazas y vulnerabilidades
 description: La Administración de amenazas y vulnerabilidades de exposición refleja lo vulnerable que es su organización a las amenazas de ciberseguridad.
 keywords: puntuación de exposición, puntuación de exposición de Microsoft Defender para endpoint, puntuación de exposición de Microsoft Defender para endpoint tvm, puntuación de exposición de la organización, puntuación de exposición de la organización tvm, Administración de amenazas y vulnerabilidades, Microsoft Defender para endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8295fee4d0c27b85cc3daf95224b770f3c0fec0c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 56b994513d28c2714aecba05453af5c0a62a3912
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149879"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881706"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Puntuación de exposición: Administración de amenazas y vulnerabilidades
 
@@ -47,7 +45,7 @@ La tarjeta te ofrece una vista de alto nivel de la tendencia de puntuación de e
 
 ![Tarjeta de puntuación de exposición.](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 La puntuación de exposición se divide en los siguientes niveles:
 

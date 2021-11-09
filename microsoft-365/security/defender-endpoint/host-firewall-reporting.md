@@ -2,7 +2,6 @@
 title: Informes de firewalls de host en Microsoft Defender para punto de conexión
 description: Host and view firewall reporting in Microsoft 365 security center.
 keywords: Windows Defender, firewall
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.author: dansimp
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6dc04eb51346b078218117d35f1b7a5b2d1c9268
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4896ffe6b01d87d4e54d6d06867aea3435a1513a
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174740"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883142"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
@@ -30,11 +29,11 @@ ms.locfileid: "60174740"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Si es administrador, ahora puede hospedar informes de firewall en Microsoft 365 [de seguridad](https://security.microsoft.com). Esta característica le permite ver Windows 10, Windows Server 2019 y Windows firewall de Server 2022 desde una ubicación centralizada.
+Si es administrador, ahora puede hospedar informes de firewall en Microsoft 365 [de seguridad](https://security.microsoft.com). Esta característica le permite ver Windows 10, Windows 11, Windows Server 2019 y Windows Server 2022 desde una ubicación centralizada.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Debe ejecutar Windows 10 o Windows Server 2019 o Windows Server 2022.
+- Debe ejecutar Windows 10 o Windows 11 o Windows Server 2019 o Windows Server 2022.
 - Para incorporar dispositivos al servicio Microsoft Defender para endpoints, vea [aquí](onboard-configure.md).
 - Para que Microsoft 365 centro de seguridad comience a  recibir los datos, debe habilitar los eventos de auditoría para Windows Defender firewall con seguridad avanzada:
   - [Gota de paquetes de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)

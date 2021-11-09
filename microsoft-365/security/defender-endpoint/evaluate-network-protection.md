@@ -2,7 +2,6 @@
 title: Evaluar protección de red
 description: Vea cómo funciona la protección de red probando escenarios comunes contra los que protege.
 keywords: Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, evaluación, prueba, demostración
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b0a52af9eb9cbc8d1cfc4084d7f137fd5e6975be
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 0f26b92d9475daf0c151d18f9ab024e3ad3bb34f
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668105"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60883166"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
@@ -54,9 +53,9 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
 
 2. Vaya a [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
 
-Se permitirá la conexión de red y se mostrará un mensaje de prueba.
-
-![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](images/np-notif.png)
+    Se permitirá la conexión de red y se mostrará un mensaje de prueba.
+    
+    ![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](images/np-notif.png)
 
 > [!NOTE]
 > Las conexiones de red pueden ser correctas aunque la protección de red bloquee un sitio. Para obtener más información, vea [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).

@@ -2,7 +2,6 @@
 title: Contención y bloqueo de comportamiento del cliente
 description: El bloqueo de comportamiento del cliente forma parte de las capacidades de contención y bloqueo de comportamiento en Microsoft Defender para endpoint
 keywords: bloqueo de comportamiento, protección rápida, comportamiento del cliente, Microsoft Defender para endpoint
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 80b8ae1eebb0aac941d8c337e73eab97cdafb2a5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e8b117370f5684fa8ccbf23f18a681000e5e5b84
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174848"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882110"
 ---
 # <a name="client-behavioral-blocking"></a>Contención y bloqueo de comportamiento del cliente
 
@@ -62,7 +61,7 @@ Las detecciones basadas en comportamiento se denominan según la [matriz de CK&M
 |Elevación de privilegios|`Behavior:Win32/PrivilegeEscalation.*!ml`|
 |Evasión de defensa|`Behavior:Win32/DefenseEvasion.*!ml`|
 |Acceso a credenciales|`Behavior:Win32/CredentialAccess.*!ml`|
-|Detección|`Behavior:Win32/Discovery.*!ml`|
+|Descubrimiento|`Behavior:Win32/Discovery.*!ml`|
 |Movimiento lateral|`Behavior:Win32/LateralMovement.*!ml`|
 |Colección|`Behavior:Win32/Collection.*!ml`|
 |Comando y control|`Behavior:Win32/CommandAndControl.*!ml`|

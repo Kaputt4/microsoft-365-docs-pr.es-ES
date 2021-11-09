@@ -2,7 +2,6 @@
 title: Use la línea de comandos para administrar Antivirus de Microsoft Defender
 description: Ejecute Antivirus de Microsoft Defender y configure la protección de próxima generación con una utilidad de línea de comandos dedicada.
 keywords: ejecutar el examen de Windows Defender, ejecutar el examen antivirus desde la línea de comandos, ejecutar el examen de Windows Defender desde la línea de comandos, mpcmdrun, defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 98831bfff3d38d111c66d16ba150261f8ed148e8
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 00420a0f6bb809d50f77013dc953386c0e426967
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702182"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881930"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurar y administrar Antivirus de Microsoft Defender con la mpcmdrun.exe de línea de comandos
 
@@ -52,7 +51,7 @@ En nuestro ejemplo, la utilidad MpCmdRun inicia un examen antivirus completo en 
 
 |Comando|Descripción|
 |---|---|
-|`-?` **o** `-h`|Muestra todas las opciones disponibles para la herramienta MpCmdRun|
+|`-?`**o** `-h`|Muestra todas las opciones disponibles para la herramienta MpCmdRun|
 |`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Busca software malintencionado. Los valores **de ScanType** son:<p>**0** Valor predeterminado, según la configuración<p>**1** Examen rápido<p>**2** Examen completo<p>**3** Examen personalizado de archivos y directorios.<p>CpuThrottling se ejecuta según las configuraciones de directivas|
 |`-Trace [-Grouping #] [-Level #]`|Inicia el seguimiento de diagnóstico|
 |`-GetFiles [-SupportLogLocation <path>]`|Recopila información de soporte técnico. Vea '[collecting diagnostic data](collect-diagnostic-data.md)'|
@@ -84,7 +83,7 @@ En la tabla siguiente se enumeran los errores comunes que pueden producirse al u
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=800722F0D**|El firewall bloquea la conexión o realiza una inspección SSL.|
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=80072EE7 httpcode=451)**|El firewall bloquea la conexión o realiza una inspección SSL.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar las funciones del Antivirus de Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
 - [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)

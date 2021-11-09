@@ -2,8 +2,6 @@
 title: Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo controlar falsos positivos o falsos negativos en Microsoft Defender para endpoint.
 keywords: antivirus, excepción, exclusión, Microsoft Defender para endpoint, falso positivo, falso negativo, archivo bloqueado, url bloqueada
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -20,15 +18,15 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 10/19/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: eadfdd0245c7a31aa71405a9cf63dfc3eaf90bb1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8023bcea4eb12689706790af41ead359e302898d
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704662"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882866"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -269,7 +267,7 @@ Antes de crear indicadores para archivos, asegúrese de que se cumplen los sigui
 
 - Antivirus de Microsoft Defender se configura con la protección basada en la nube habilitada (consulte [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - La versión del cliente antimalware es 4.18.1901.x o posterior
-- Los dispositivos se Windows 10, versión 1703 o posterior; Windows Server 2016 o Windows Server 2019 o Windows Server 2022
+- Los dispositivos Windows 10, versión 1703 o posterior, o Windows 11; Windows Server 2016 o Windows Server 2019 o Windows Server 2022
 - La [característica Bloquear o permitir está activada](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>Indicadores de direcciones IP, direcciones URL o dominios
@@ -280,7 +278,7 @@ Antes de crear indicadores para direcciones IP, direcciones URL o dominios, aseg
 
 - La protección de red en Defender para endpoint está habilitada en modo de bloqueo (vea [Habilitar la protección de red)](/microsoft-365/security/defender-endpoint/enable-network-protection)
 - La versión del cliente antimalware es 4.18.1906.x o posterior
-- Los dispositivos se Windows 10, versión 1709 o posterior
+- Los dispositivos se Windows 10, versión 1709 o posterior, o Windows 11
 
 Los indicadores de red personalizados están activados en el [Microsoft 365 Defender](microsoft-defender-security-center.md). Para obtener más información, vea [Características avanzadas](/microsoft-365/security/defender-endpoint/advanced-features).
 
@@ -292,7 +290,7 @@ Antes de crear indicadores para certificados de aplicación, asegúrese de que s
 
 - Antivirus de Microsoft Defender se configura con la protección basada en la nube habilitada (consulte [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md))
 - La versión del cliente antimalware es 4.18.1901.x o posterior
-- Los dispositivos se Windows 10, versión 1703 o posterior; Windows Server 2016 o Windows Server 2019 o Windows Server 2022
+- Los dispositivos Windows 10, versión 1703 o posterior, o Windows 11; Windows Server 2016 o Windows Server 2019 o Windows Server 2022
 - Las definiciones de protección contra virus y amenazas están actualizadas
 
 > [!TIP]
@@ -312,7 +310,7 @@ Si tiene un archivo que se detectó incorrectamente como malintencionado o que s
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>Enviar una detección sin archivos para su análisis
 
-Si se detectó algo como malware en función del comportamiento y no tiene un archivo, puede enviar el `Mpsupport.cab` archivo para su análisis. Puede obtener el archivo *.cab* mediante la herramienta Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) en Windows 10.
+Si se detectó algo como malware en función del comportamiento y no tiene un archivo, puede enviar el `Mpsupport.cab` archivo para su análisis. Puede obtener el archivo *.cab* mediante la herramienta Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) en Windows 10 o Windows 11.
 
 1. Vaya a ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` y, a continuación, ejecute `MpCmdRun.exe` como administrador.
 

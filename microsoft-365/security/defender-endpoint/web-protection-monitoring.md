@@ -2,7 +2,6 @@
 title: Supervisión de la seguridad de exploración web en Microsoft Defender para endpoint
 description: Usar la protección web en Microsoft Defender para endpoint para supervisar la seguridad de exploración web
 keywords: protección web, protección contra amenazas web, exploración web, supervisión, informes, tarjetas, lista de dominios, seguridad, phishing, malware, exploit, sitios web, protección de red, Edge, Internet Explorer, Chrome, Firefox, explorador web
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5bf6cc1f64cfbc7c4238e01ad7d623e3164639c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4bbe7fa9bb9db540451c2878806f04b0d31b1165
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191556"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881846"
 ---
 # <a name="monitor-web-browsing-security"></a>Supervisar la seguridad de exploración web
 

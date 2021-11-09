@@ -2,8 +2,6 @@
 title: Administración de amenazas y vulnerabilidades
 description: Esta nueva funcionalidad usa un enfoque basado en riesgos que cambia el juego para la detección, priorización y corrección de vulnerabilidades y configuraciones erróneas de puntos de conexión.
 keywords: threat & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, administración de vulnerabilidades, vulnerability evaluación, análisis de amenazas y vulnerabilidades, evaluación de configuración segura, Microsoft Defender para endpoint, vulnerabilidades de punto de conexión, próxima generación
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 44690f586d606ecceebecca65f13b5e337a021c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54c198470d7fd3ee0a05ff40c7597018735b4e3b
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212510"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60881704"
 ---
 # <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
@@ -110,7 +108,7 @@ Vea los siguientes artículos para obtener las API relacionadas:
 - [API de vulnerabilidad](vulnerability.md)
 - [Enumerar vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Plataformas y sistemas operativos compatibles](tvm-supported-os.md)
 - [Panel de administración de vulnerabilidades amenazas](tvm-dashboard-insights.md)

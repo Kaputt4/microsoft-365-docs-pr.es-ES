@@ -2,7 +2,6 @@
 title: Bloqueo y contención de comportamientos
 description: Obtenga información sobre las capacidades de contención y bloqueo de comportamiento en Microsoft Defender para endpoint
 keywords: Microsoft Defender para endpoint, EDR en modo de bloqueo, bloqueo de modo pasivo
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: af80bd0c8c6bcfab823d3391d99c33f35d3e5557
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6a7ac6e546ab7578ccf914c29304c1a88139094e
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197034"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60882134"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -117,7 +116,7 @@ Unos minutos después de bloquear el artefacto, se bloquearon varias instancias 
 
 En este ejemplo se muestra que, con las capacidades de contención y bloqueo de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Más información sobre Defender for Endpoint](overview-endpoint-detection-response.md)
 
