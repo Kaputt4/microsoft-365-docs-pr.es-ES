@@ -83,7 +83,11 @@
         - name: Configurar directivas antimalware
           href: configure-anti-malware-policies.md
         - name: Configurar directivas contra correo electrónico no deseado
-          href: configure-your-spam-filter-policies.md
+          items:
+            - name: Configurar directivas contra correo electrónico no deseado
+              href: configure-your-spam-filter-policies.md
+            - name: Configuración del filtro de Spam avanzado (ASF)
+              href: advanced-spam-filtering-asf-options.md
         - name: Configurar EOP para entregar correo no deseado a las carpetas de Correo no deseado en la implementación híbrida
           href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
         - name: Configurar las opciones del correo no deseado en buzones de Exchange Online
@@ -166,8 +170,6 @@
           href: recommended-settings-for-eop-and-office365.md
         - name: Integrar AIR con una solución personalizada o una solución de terceros
           href: air-custom-reporting.md
-        - name: Configuración del filtro de Spam avanzado (ASF)
-          href: advanced-spam-filtering-asf-options.md
         - name: Lista de bloqueados y permitidos del espacio empresarial
           items:
             - name: Administrar la lista de bloqueados y permitidos del espacio empresarial

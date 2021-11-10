@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, conversaciones de Microsoft Teams y Skype Empresarial. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: 61a4f02d122a83b3279ebe7701b0a26d27b287de
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: 61b5345b26684c4cc5161c4b2372460428c6496e
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400246"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889812"
 ---
-# <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de exhibición de documentos electrónicos en Microsoft 365
+# <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de eDiscovery en Microsoft 365
 
 La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Puede usar las herramientas de exhibición de documentos electrónicos en Microsoft 365 para buscar contenido en Exchange Online, OneDrive para la Empresa, SharePoint Online, Microsoft Teams, Microsoft 365 Groups y Yammer teams. Puede buscar buzones y sitios en la misma búsqueda de exhibición de documentos electrónicos y, a continuación, exportar los resultados de la búsqueda. Puede usar los casos principales de exhibición de documentos electrónicos para identificar, retener y exportar el contenido que se encuentra en buzones y sitios. Si su organización tiene una suscripción Office 365 E5 o Microsoft 365 E5 (o suscripciones de complemento E5 relacionadas), puede administrar aún más a los custodios y analizar el contenido mediante la solución de Advanced eDiscovery enriquección de características en Microsoft 365.
 
@@ -131,13 +131,16 @@ En las secciones siguientes se muestran los requisitos mínimos de suscripción 
 - Microsoft 365 Suscripción a E1
 - Microsoft 365 Suscripción a G1
 - Microsoft 365 F1 de F3 o de F5 Security
+- Microsoft 365 Empresa Premium suscripción
 - Suscripción a Office 365 Educación A1
 - Office 365 E1 suscripción
+
 
 ### <a name="core-ediscovery"></a>Core eDiscovery
 
 - Microsoft 365 E3 suscripción
 - Microsoft 365 G3 suscripción
+- Microsoft 365 Empresa Premium suscripción
 - Microsoft 365 Complemento de cumplimiento F5 o complemento de seguridad F5 & cumplimiento
 - Microsoft 365 Educación Suscripción A3 o Office 365 Educación A3
 - Office 365 E3 suscripción

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: medium
 description: Obtenga información sobre Aprendizaje Microsoft Viva en su Microsoft 365 de datos.
-ms.openlocfilehash: 1747cef7ade83adfc33f369ae5196a0638f918b3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c92fc51d11b2d57c7fd051cbd060276d093be019
+ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60645957"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60889764"
 ---
 # <a name="overview-of-microsoft-viva-learning"></a>Información general sobre Aprendizaje Microsoft Viva
 
@@ -59,7 +59,7 @@ Viva Learning está disponible de forma predeterminada en Microsoft Teams con al
 
 ### <a name="knowledge-admin"></a>Administrador de la información
 
-El administrador de conocimientos es un nuevo Azure Active Directory (Azure AD) en el Centro de administración de Microsoft 365 que se puede asignar a cualquier persona de la organización. Este rol administra los orígenes de contenido de aprendizaje de la organización a través del Centro de administración de Microsoft 365. Para obtener más información, [vea Azure AD roles integrados](/azure/active-directory/roles/permissions-reference#knowledge-administrator).
+El administrador de conocimientos es un nuevo Azure Active Directory (Azure AD) en el Centro de administración de Microsoft 365 que se puede asignar a cualquier persona de la organización. Este rol administra los orígenes de contenido de aprendizaje de la organización a través del Centro de administración de Microsoft 365. Para obtener más información, vea [roles integrados de Azure AD ](/azure/active-directory/roles/permissions-reference#knowledge-administrator).
 
 El administrador de conocimientos debe ser moderadamente técnico y tener credenciales SharePoint administrador existentes. El administrador de conocimientos debe estar bien informado en la parte de educación, aprendizaje, formación o experiencia de los empleados de la organización.
 
@@ -69,7 +69,75 @@ El contenido de Microsoft Learn y Microsoft 365 Training está disponible autom�
 
 ## <a name="supported-languages"></a>Idiomas admitidos
 
-Viva Learning se adapta a las preferencias de idioma de Microsoft 365 organización. Sin embargo, Viva Learning actualmente no admite idiomas de derecha a izquierda.
+Viva Learning se adapta a las preferencias de idioma de Microsoft 365 organización. Sin embargo, Viva Learning actualmente no admite idiomas de derecha a izquierda. Actualmente, Viva Learning se admite en las siguientes configuraciones regionales:
+
+:::row:::
+   :::column span="":::
+      - az-Latn-AZ
+      - bg-BG
+      - bn-IN
+      - ca-ES
+      - ca-Es-VALENCIA
+      - cs-CZ
+      - cy-GB
+      - da-DK
+      - de-DE
+      - el-GR
+      - en-GB
+      - en-US
+      - es-ES
+      - es-MX
+   :::column-end:::
+   :::column span="":::
+      - et-EE
+      - eu-ES
+      - fi-FI
+      - fil-PH
+      - fr-CA
+      - fr-FR
+      - gl-ES
+      - gu-IN
+      - hi-IN
+      - hr-HR
+      - hu-HU
+      - id-ID
+      - is-IS
+      - it-IT
+   :::column-end:::
+   :::column span="":::
+      - ja-JP
+      - ka-GE
+      - kk-KZ
+      - kn-IN
+      - ko-KR
+      - lt-LT
+      - lv-LV
+      - mk-MK
+      - ml-IN
+      - mr-IN
+      - nb-NO
+      - nl-NL
+      - nn-NO
+      - pl-PL
+   :::column-end:::
+   :::column span="":::
+      - pt-BR
+      - pt-PT
+      - ro-RO
+      - ru-RU
+      - sk-SK
+      - sl-SI
+      - sq-AL
+      - sr-Latn-RS
+      - sv-SE,ta-IN
+      - te-IN,th-TH
+      - tr-TR
+      - uk-UA
+      - vi-VN
+      - zh-CN
+      - zh-TW
+   :::column-end:::
+:::row-end:::
 
 ## <a name="data-and-privacy"></a>Datos y privacidad
 
@@ -87,7 +155,7 @@ Los datos almacenados desde Viva Learning incluyen:
 >[!NOTE]
 >Los administradores pueden activar o desactivar el almacenamiento de datos de diagnóstico.
 
-## <a name="get-started"></a>Comenzar
+## <a name="get-started"></a>Introducción
 
 Cuando esté listo para configurar y configurar Viva Learning en su Microsoft 365 de configuración:
 
