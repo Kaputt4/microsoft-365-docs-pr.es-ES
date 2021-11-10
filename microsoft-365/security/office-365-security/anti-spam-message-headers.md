@@ -18,12 +18,12 @@ description: Los administradores pueden obtener información sobre los campos de
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b82826cf650caffa08c0c7435ea4cabf5a19742
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8eaf567e4cbceae66a5acd1fa1a45565f15a4804
+ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208990"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "60884006"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
 
@@ -85,7 +85,7 @@ Los campos y valores individuales se describen en la siguiente tabla.
 |`SFV:SKQ`|El mensaje fue publicado desde la cuarentena y se ha enviado a los destinatarios.|
 |`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser procesado por el filtro de correo no deseado (por ejemplo, el mensaje se marcó como SCL de 5 a 9 por una regla de flujo de correo).|
 |`SFV:SPM`|El mensaje se marcó como correo no deseado por el filtro de correo no deseado.|
-|`SRV:BULK`|El mensaje se identificó como correo electrónico masivo por el filtrado de correo no deseado y el umbral de nivel de queja de correo masivo (BCL). Cuando el parámetro _MarkAsSpamBulkMail_ está `On` (está activado de forma predeterminada), un mensaje de correo masivo se marca como correo no deseado de alta confianza (SCL 9). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).|
+|`SRV:BULK`|El mensaje se identificó como correo electrónico masivo por el filtrado de correo no deseado y el umbral de nivel de queja de correo masivo (BCL). Cuando el parámetro _MarkAsSpamBulkMail_ está `On` (está activado de forma predeterminada), un mensaje de correo masivo se marca como correo no deseado (SCL 6). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).|
 |`X-CustomSpam: [ASFOption]`|El mensaje coincide con una opción de Filtro de correo no deseado avanzado (ASF). Para ver el valor del encabezado X para cada opción de ASF, consulte [Configuración del Filtro de correo no deseado avanzado (ASF)](advanced-spam-filtering-asf-options.md).|
 |
 
