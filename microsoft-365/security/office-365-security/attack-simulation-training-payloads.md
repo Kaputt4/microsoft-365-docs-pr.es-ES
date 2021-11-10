@@ -1,5 +1,5 @@
 ---
-title: Crear cargas personalizadas para el entrenamiento de simulación de ataques
+title: Crear una carga personalizada para el aprendizaje la simulación de ataques
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear cargas personalizadas para el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: bf132e44c458fbe228b6b6e8d2bf7b1a6474e9e9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 420642bfa8318f44548494b275b0dc617787f46a
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666820"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899755"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Crear cargas personalizadas para el entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -158,7 +158,7 @@ En la **página Configurar carga** útil, es el momento de compilar la carga. Mu
 
   - En la **pestaña** Código, puede ver y modificar el código HTML directamente. El formato y otros controles como **etiqueta dinámica** y vínculo **de suplantación** de identidad o vínculo de datos **adjuntos de malware** no están disponibles.
 
-  - La **alternancia** Reemplazar todos los vínculos del mensaje de correo electrónico con el vínculo de suplantación de identidad puede ahorrar tiempo reemplazando todos los vínculos del mensaje por el vínculo **Phishing** seleccionado anteriormente o **Vínculo** para la dirección URL de datos adjuntos. Para ello, alterna la configuración en el ![ icono Activar. ](../../media/scc-toggle-on.png) .
+  - La opción Reemplazar todos los vínculos del mensaje de correo electrónico con el vínculo de suplantación de identidad **(phishing)** solo está disponible si seleccionó **Credential harvest**, **Link to malware** o **Drive-by URL** en la página **Seleccionar** técnica. Esta alternancia puede ahorrar tiempo reemplazando todos los vínculos del mensaje por el vínculo **phishing** previamente seleccionado o Vínculo para la dirección URL **de datos adjuntos.** Para ello, alterna la configuración en el ![ icono Activar. ](../../media/scc-toggle-on.png) .
 
 Cuando termine, haga clic en **Siguiente**.
 

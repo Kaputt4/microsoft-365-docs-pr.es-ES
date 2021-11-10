@@ -18,12 +18,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los Microsoft 365 de configuración necesarios para configurar un sitio SharePoint para la colaboración con invitados.
-ms.openlocfilehash: aac548381b8b56ef753f762e9ef7bf0c07cf9163
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 64c325873514171c858ffa24637e57d2b94a93e9
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190214"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899707"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -51,7 +51,7 @@ Para establecer la configuración de colaboración externa
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**
 3. Haga clic en **Identidades externas**.
 4. En la pantalla **introducción**, en el panel de navegación izquierdo, haga clic en **Configuración de colaboración externa**.
-5. Asegúrese de que **Los administradores y usuarios con el rol de invitador pueden invitar** y **Los miembros pueden invitar** están establecidos en **Sí**.
+5. Asegúrese de que los usuarios miembros y los usuarios asignados a roles de administrador específicos pueden invitar a usuarios **invitados, incluidos** los invitados con permisos de miembro, o que cualquiera de la organización puede invitar a usuarios **invitados, incluidos invitados** y no administradores.
 6. Si ha realizado cambios, haga clic en **Guardar**.
 
 Fíjese en la configuración en la sección **Restricciones de colaboración**. Asegúrese de que los dominios de los invitados con los que quiere colaborar no están bloqueados.

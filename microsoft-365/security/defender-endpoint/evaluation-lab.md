@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: df517e07242bfd15ec0feccbd0de9d682c74d381
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f746f07f20c4a8eddba51bb37d86acf2aafdaa6b
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184706"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899743"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
 
@@ -189,8 +189,6 @@ Puedes simular escenarios de ataque con:
 También puede usar búsqueda avanzada [para consultar](advanced-hunting-overview.md) datos y [análisis de](threat-analytics.md) amenazas para ver informes sobre amenazas emergentes.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Escenarios de ataque do-it-yourself
-
-Si está buscando una simulación pre-made, puede usar nuestros escenarios de ataque ["Do It Yourself".](https://security.microsoft.com/tutorials/all) Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las capacidades de Defender for Endpoint y le ayudarán a través de la experiencia de investigación.
 
 Si está buscando una simulación pre-made, puede usar nuestros escenarios de ataque ["Do It Yourself".](https://security.microsoft.com/tutorials/all) Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las capacidades de Defender for Endpoint y le ayudarán a través de la experiencia de investigación.
 

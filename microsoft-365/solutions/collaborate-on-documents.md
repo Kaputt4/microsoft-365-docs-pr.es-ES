@@ -18,12 +18,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, aprenderá a colaborar con invitados en un documento en SharePoint y OneDrive.
-ms.openlocfilehash: e51ec7e9695c564b2994089f0a827ca7ea4b67c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c58b9ef4fdc759c5afa1920083dd1875fad17f1
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158963"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899635"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
@@ -49,7 +49,7 @@ Para establecer la configuración de colaboración externa
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**
 3. Haga clic en **Identidades externas**.
 4. En la pantalla **introducción**, en el panel de navegación izquierdo, haga clic en **Configuración de colaboración externa**.
-5. Asegúrese de que **Los administradores y usuarios con el rol de invitador pueden invitar** y **Los miembros pueden invitar** están establecidos en **Sí**.
+5. Asegúrese de que los usuarios miembros y los usuarios asignados a roles de administrador específicos pueden invitar a usuarios **invitados, incluidos** los invitados con permisos de miembro, o que cualquiera de la organización puede invitar a usuarios **invitados, incluidos invitados** y no administradores.
 6. Si ha realizado cambios, haga clic en **Guardar**.
 
 Fíjese en la configuración en la sección **Restricciones de colaboración**. Asegúrese de que los dominios de los invitados con los que quiere colaborar no están bloqueados.

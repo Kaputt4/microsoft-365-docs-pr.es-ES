@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 11/02/2021
+ms.date: 11/10/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7c939b43edf206d31cf62678fa0984aa26707fab
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 11d8df5d56999cb4da41c57b8fdd09ebb8847c3e
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882410"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899590"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -110,14 +110,16 @@ Vea [How to create and deploy antimalware policies: Exclusion settings](/configm
     1. Establezca la opción en **Habilitado**.
     2. En la **sección Opciones,** seleccione **Mostrar**.
     3. Especifique cada carpeta en su propia línea en la **columna Nombre de** valor.
-    4. Si va a especificar un archivo, asegúrese de escribir una ruta de acceso completa al archivo, incluida la letra de unidad, la ruta de acceso de carpeta, el nombre del archivo y la extensión. Escriba **0** en la **columna** Valor.
+    4. Si va a especificar un archivo, asegúrese de escribir una ruta de acceso completa al archivo, incluida la letra de unidad, la ruta de acceso de carpeta, el nombre del archivo y la extensión. 
+    5. Escriba **0** en la **columna** Valor.
 
 5. Elija **Aceptar**.
 
 6. Abra la **configuración Exclusiones de extensión** para editar y agregue las exclusiones.
     1. Establezca la opción en **Habilitado**.
     2. En la **sección Opciones,** seleccione **Mostrar**.
-    3. Escriba cada extensión de archivo en su propia línea en la columna **Nombre** de valorEnter **0** en la **columna** Valor.
+    3. Escriba cada extensión de archivo en su propia línea en la **columna Nombre de** valor.
+    4. Escriba **0** en la **columna** Valor.
 
 7. Elija **Aceptar**.
 
@@ -379,7 +381,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

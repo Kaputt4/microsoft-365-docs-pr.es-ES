@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6dff7d5fc0acbb80500608a887ad00705bd1d2eb
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 66be1b35e98176c8282f52248899aef52b032845
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883190"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899736"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -60,7 +60,7 @@ Habilite la protección de red mediante cualquiera de estos métodos:
 
 - [PowerShell](#powershell)
 - [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [Directiva de grupo](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
@@ -86,13 +86,15 @@ Habilite la protección de red mediante cualquiera de estos métodos:
 
 Use [el proveedor ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) para habilitar o deshabilitar la protección de red o habilitar el modo de auditoría.
 
-### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (anteriormente Intune)
+### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
 1. Inicie sesión en el Microsoft Endpoint Manager de administración ( https://endpoint.microsoft.com) .
 
 2. Vaya a  >  **Perfiles de configuración de dispositivos**  >  **Crear perfil**.
 
-3. En el control desplegable **Crear un perfil,** seleccione **Protección de** extremo en la lista de plantillas y, a continuación, seleccione **Crear**.
+3. En el **control desplegable Crear un perfil,** seleccione **Plataforma** y elija el Tipo **de perfil** como **Plantillas**.
+
+4. En el **nombre de plantilla**, elija Protección de **extremo** de la lista de plantillas y, a continuación, **seleccione Crear**.
 
 4. Vaya a **Endpoint protection**  >  **Basics**, proporcione un nombre para su perfil y, a continuación, seleccione **Siguiente**.
 
@@ -177,7 +179,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
 > $exploitGuardObject.Put()
 >```  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Protección de red](network-protection.md)
 

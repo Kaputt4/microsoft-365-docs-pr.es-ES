@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 091ba63ac23342c9423d8989cc2e56f4a1423f76
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8135ce430773eae051f1214e685638073ef07809
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883382"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899729"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para Administración de amenazas y vulnerabilidades
 
@@ -62,8 +62,9 @@ CentOS 7.2 o superior|Sí|Sí|Sí|Sí|Sí
 Ubuntu 16,04 LTS o superior LTS|Sí|Sí|Sí|Sí|Sí
 Oracle Linux 7.2 o posterior|Sí|Sí|Sí|Sí|Sí
 SUSE Linux Enterprise Server 12 o posterior|Sí|Sí|Sí|Sí|Sí
+Linux Debian 9 o posterior (en versión preliminar)|Sí|Sí|Sí|Sí|Sí
 Android 6.0 o posterior (en versión preliminar)|Sí|Sí|No se admite|No se admite|No se admite
-iOS 12.0 o posterior (en versión preliminar)|Sí|No compatible|No se admite|No se admite|No se admite
+iOS 12.0 o posterior (en versión preliminar)|Sí|No se admite|No se admite|No se admite|No se admite
 
 > [!NOTE]
 > Algunas características no están disponibles para el sistema operativo de nivel inferior, consulte el portal de Microsoft 365 Defender para obtener más información sobre el sistema operativo compatible.
