@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 29b414ac9dcab9a9c32b5ba09d45d5d9b9ce67de
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 172c883ae5572be65903c0b19459c514a39882d0
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554689"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914135"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
 
@@ -57,6 +57,24 @@ Además de lo anterior, también hay una opción para recopilar los registros de
 > En Windows 10, Windows Server 2019 o versiones posteriores del sistema operativo, o Windows 11, el script del analizador de cliente llama a un archivo ejecutable llamado para ejecutar las pruebas de conectividad a las direcciones URL del servicio en la `MDEClientAnalyzer.exe` nube.
 >
 > En Windows 8.1, Windows Server 2016 o ediciones anteriores del sistema operativo, el script del analizador de cliente llama a un archivo ejecutable llamado para ejecutar pruebas de conectividad para las direcciones URL de comando y control (CnC), al tiempo que llama Microsoft Monitoring Agent una herramienta de conectividad Microsoft Monitoring Agent las direcciones URL del canal de datos `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe` cibernéticos.
+
+
+Todos los scripts y módulos de PowerShell incluidos en el analizador están firmados por Microsoft.
+Si los archivos se han modificado de alguna manera, se espera que el analizador salga con el siguiente error:
+
+![Imagen del error del analizador de cliente](images/sigerror.png)
+
+
+Si se muestra este error, el issuerInfo.txt de datos contendrá información detallada sobre por qué ocurrió y qué archivo se afectó:
+
+![Imagen de la información del emisor](images/issuerinfo.png)
+
+
+Contenido de ejemplo después MDEClientAnalyzer.ps1 se modifica:
+
+![Imagen del archivo ps1 modificado](images/modified-ps1.png)
+
+
 
 ## <a name="result-package-contents-on-windows"></a>Contenido del paquete de resultados Windows
 
@@ -141,7 +159,10 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip descomprimido co
 
     Descripción: exportación del registro Microsoft Monitoring Agent de eventos
 
-## <a name="see-also"></a>Vea también
+
+
+
+## <a name="see-also"></a>Consulte también
 
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7eaf3c7f1b712bc6b3f0c1d17869ccf434a74d89
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3bfdca63325516394c78626899c6b83e3f3f0e20
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199494"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914373"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -35,11 +35,9 @@ ms.locfileid: "60199494"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Con Microsoft 365 Defender, cuando [se](m365d-autoir.md) ejecuta una investigación automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los [permisos necesarios](m365d-action-center.md#required-permissions-for-action-center-tasks), puede ver esos detalles en la vista de detalles de la investigación. Esta vista le proporciona el estado actualizado y la capacidad de aprobar cualquier acción pendiente. 
+Con Microsoft 365 Defender, cuando [se](m365d-autoir.md) ejecuta una investigación automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los [permisos](m365d-action-center.md#required-permissions-for-action-center-tasks)necesarios, puede ver esos detalles en una vista de detalles de investigación que le proporciona el estado actualizado y la capacidad de aprobar cualquier acción pendiente. 
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Detalles de la investigación.":::
-
-## <a name="new-unified-investigation-page"></a>(¡NUEVO!) Página de investigación unificada
+## <a name="new-unified-investigation-page"></a>(NUEVO) Página de investigación unificada
 
 La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para endpoint y Microsoft Defender [para Office 365](../office-365-security/defender-for-office-365.md). Para acceder a la página de investigación unificada, seleccione el vínculo en el banner amarillo que verá en:
 
@@ -89,13 +87,13 @@ Use una página de detalles de un incidente para ver información detallada sobr
 
 Por ejemplo:
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Detalles del incidente.":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Un ejemplo de una página de investigación." lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## <a name="investigation-details"></a>Detalles de la investigación
 
 Use la vista detalles de la investigación para ver la actividad pasada, actual y pendiente relacionada con una investigación. Por ejemplo:
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Detalles de la investigación.":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Un ejemplo de detalles de investigación." lightbox="../../media/mtp-air-investdetails.png":::
 
 En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación**, **alertas**, **dispositivos**, **identidades**, **resultados clave**, **entidades**, **registro**, y **acciones pendientes**, que se describen en la siguiente tabla.
 
@@ -114,7 +112,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |**Log** | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Historial de acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver y aprobar acciones de corrección](m365d-autoir-actions.md)
 - [Más información sobre las acciones de corrección](m365d-remediation-actions.md)

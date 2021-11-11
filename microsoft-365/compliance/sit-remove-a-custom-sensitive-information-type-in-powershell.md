@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo quitar un tipo de información confidencial personalizada con PowerShell
-ms.openlocfilehash: 4bb42bdc80cba64bc8970753b77160afc6720523
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb3bf67a1493ec232a66b2bdc0c784ea52de32f5
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189266"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914409"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>Quitar un tipo de información confidencial personalizada con PowerShell
-
-
 
 En PowerShell del Centro de cumplimiento, hay dos métodos para quitar los tipos personalizados de información confidencial:
 

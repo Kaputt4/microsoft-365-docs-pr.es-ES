@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 95fa7c4821f28775c78175aa18a413b8cd1928e5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a5ce8d049402fc0f1acdd1f47885c29bb4eba0cb
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174416"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914265"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Roles personalizados en el control de acceso basado en roles para Microsoft 365 Defender
 
@@ -100,5 +100,6 @@ Del mismo modo, para ver los datos de búsqueda de Microsoft Defender para Offic
 - Destinatarios de solo vista
 
 ## <a name="related-topics"></a>Temas relacionados
+- [Roles RBAC](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Administrar el acceso a Microsoft 365 Defender](m365d-permissions.md)
 - [Administrar el acceso de administrador para MCAS](/cloud-app-security/manage-admins)

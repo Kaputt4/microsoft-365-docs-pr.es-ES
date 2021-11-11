@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 694a066efa35743206aaff8a1169014a266164b8
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: febd40a6312b794c62339e6b19f5425c2acf9542
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907794"
+ms.locfileid: "60914637"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -40,6 +40,65 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de Microsoft 365 para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se cancelaron o se publicaron anteriormente.
+
+## <a name="october-2021"></a>Octubre de 2021
+
+### <a name="app-governance"></a>Gobierno de aplicaciones
+
+- [El complemento de gobierno de aplicaciones para Defender para Aplicaciones en la nube se ha lanzado a la disponibilidad general.](/cloud-app-security/app-governance-manage-app-governance) La documentación de gobierno de aplicaciones se ha movido para unirse a la documentación de Defender for Cloud Apps.
+
+### <a name="compliance--service-assurance"></a>Garantía de & cumplimiento
+
+- [Garantía de servicio:](/compliance) revisión trimestral de actualizaciones de contenido para certificaciones e instrucciones de aplicabilidad) Administración de activos del centro de datos
+  - Arquitectura e infraestructura del centro de datos
+  - Continuidad empresarial del centro de datos y recuperación ante desastres
+  - Protecciones del entorno del centro de datos
+  - Seguridad de acceso físico del centro de datos
+  - Microsoft 365 Programa de cumplimiento de SDL
+  - Control de acceso de los ingenieros de servicio de Microsoft 365
+  - Guía de evaluación de riesgos para MS Cloud
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- [Obtenga información sobre la prevención de pérdida de](endpoint-dlp-learn-about.md) datos se actualizó para la compatibilidad con macOS y la clasificación avanzada; actualizada para crear una directiva DLP personalizada para auditar la actividad de todos los tipos de archivo admitidos.
+- [Introducción a la Microsoft 365 prevención](endpoint-dlp-getting-started.md) de pérdida de datos de punto de conexión se actualizó para la compatibilidad con macOS y la clasificación avanzada.
+- [El uso de la prevención de pérdida de](endpoint-dlp-using.md) datos de endpoint se actualizó para la compatibilidad con macOS y la clasificación avanzada.
+- [La referencia de sugerencias de directiva de prevención de](dlp-policy-tips-reference.md) pérdida de datos se actualizó para la compatibilidad con macOS y la clasificación avanzada.
+- [La incorporación de dispositivos macOS Microsoft 365 (versión preliminar)](device-onboarding-macos-overview.md) se actualizó para la compatibilidad con macOS y la clasificación avanzada.
+- Se agregaron las siguientes páginas nuevas para dispositivos de incorporación:
+  - [Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con Intune (versión preliminar)](device-onboarding-offboarding-macos-intune.md)
+  - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-intune-mde.md)
+  - [Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con JAMF Pro (versión preliminar)](device-onboarding-offboarding-macos-jamfpro.md)
+  - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-jamfpro-mde.md)
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Recopilar](advanced-ediscovery-cloud-attachments.md) datos adjuntos en la nube en Advanced eDiscovery además de recopilar la versión más reciente de los datos adjuntos de la nube, puede recopilar la versión que se compartió en un mensaje de correo electrónico o en una Teams conversación de chat; La nueva funcionalidad de aplicar automáticamente una etiqueta de retención a los datos adjuntos de la nube permite recopilar la versión compartida.
+- [Configurar versiones históricas en Advanced eDiscovery](advanced-ediscovery-historical-versions.md) nueva funcionalidad que indiza todas las versiones de documentos almacenados en un sitio SharePoint búsqueda; esto significa que las versiones de documento que contienen contenido que coinciden con una consulta de colección se devuelven en los resultados de la búsqueda.
+
+### <a name="encryption"></a>Cifrado
+
+- Usar el cifrado de un extremo a otro para llamadas de Microsoft Teams [(versión preliminar pública)](/microsoftteams/teams-end-to-end-encryption) Nuevo contenido para la versión preliminar pública.
+
+### <a name="information-governance"></a>Gobierno de información
+
+- Configurar un conector para importar datos de auditoría [de EHR](import-epic-data.md) épicos le permite importar datos del sistema de registros electrónicos de atención médica de Epic para admitir un nuevo escenario general de uso incorrecto de datos de pacientes para la administración de riesgos de información interna.
+- Configurar un conector para importar datos de auditoría [ehr](import-healthcare-data.md) de atención sanitaria nuevo conector le permite importar datos de un sistema de registros de salud electrónicos para admitir un nuevo escenario general de uso incorrecto de datos de pacientes para la administración de riesgos internas.
+
+### <a name="retention-and-records-management"></a>Administración de registros y retención
+- [Los ámbitos de directivas adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention) se liberan en versión preliminar para directivas de retención y directivas de etiquetas de retención.
+- Ahora puede aplicar [automáticamente una etiqueta de retención basada en una etiqueta de confidencialidad.](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label)
+- Plan de archivos tiene un nuevo [proceso de importación.](file-plan-manager.md#import-retention-labels-into-your-file-plan)
+- [Configuración común para directivas](retention-settings.md)de retención y directivas de etiquetas de retención: nuevo artículo para obtener información detallada sobre la configuración de ámbitos adaptables y otras opciones de configuración tanto en directivas de retención como en directivas de etiquetas de retención.
+
+### <a name="sensitive-information-types"></a>Tipos de información confidencial
+
+- Obtenga información sobre el nuevo contenido de entidades con nombre [(versión preliminar)](named-entities-learn.md) para entidades con nombre.
+- Use entidades con nombre en el nuevo contenido de las directivas de prevención de pérdida de datos [(versión preliminar)](named-entities-use.md) para usar entidades con nombre.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- [Las etiquetas predeterminadas y las directivas](mip-easy-trials.md) predeterminadas se están implementando para los clientes elegibles.
 
 ## <a name="september-2021"></a>Septiembre de 2021
 
@@ -259,38 +318,3 @@ Se agregaron las páginas siguientes:
 - En versión preliminar, ahora hay disponible una nueva configuración para el contexto **de** autenticación al configurar una etiqueta de confidencialidad [para grupos y sitios](sensitivity-labels-teams-groups-sites.md). Esta opción funciona junto con Azure AD de acceso condicional para aplicar condiciones más estrictas cuando los usuarios acceden SharePoint sitios que tienen aplicada la etiqueta. Asegúrese de leer las [dependencias y limitaciones antes](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) de configurar esta configuración.
 - [Las directivas de etiquetado](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) automático configuradas solo para Exchange ahora admiten **etiquetas** de confidencialidad que aplican cifrado con Permitir a los usuarios asignar permisos para las opciones No reenviar o Encrypt-Only.
 - [El etiquetado obligatorio](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) ahora está disponible por lo general para todas Office aplicaciones, en todas las plataformas.
-
-## <a name="april-2021"></a>Abril de 2021
-
-### <a name="advanced-ediscovery"></a>eDiscovery avanzado
-
-- [Límites en Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Las organizaciones ahora pueden exportar hasta 5 millones de elementos o 500 MB, lo que sea menor, en una sola exportación de elementos de un conjunto de revisión.
-
-### <a name="data-classification"></a>Clasificación de datos
-
-- [Actividades de etiquetado que están disponibles en el Explorador de actividades](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
-
-### <a name="data-connectors"></a>Conectores de datos
-
-- [Configurar un conector para archivar datos de Cisco Jabber en Oracle](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
-- [Configurar un conector para archivar datos de Cisco Jabber en PostgreSQL](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
-
-### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
-
-- Nuevo tema para [referencia de sugerencias de directiva de prevención de](/microsoft-365/compliance/dlp-policy-tips-reference)pérdida de datos .
-- Nuevo tema para [Obtener información sobre la prevención de pérdida de datos](/microsoft-365/compliance/dlp-learn-about-dlp).
-- Nuevo tema para [Introducción al panel de alertas de](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)prevención de pérdida de datos .
-
-### <a name="retention-policies-and-retention-label-policies"></a>Directivas de retención y directivas de etiquetas de retención
-
-- La ubicación Microsoft 365 Groups ahora admite la aplicación de la configuración de retención Microsoft 365 solo Microsoft 365 buzones o simplemente los sitios SharePoint conectados mediante el cmdlet [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) con el parámetro *Applications.*
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-Outlook versiones y actualizaciones:
-
-- [Ahora se admiten](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) diferentes opciones de configuración para la etiqueta predeterminada y el etiquetado obligatorio para el etiquetado integrado. Anteriormente, esta configuración solo era compatible con el cliente de etiquetado unificado AIP.
-- [Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions) ahora es compatible con macOS, iOS y Android.
-- [El etiquetado obligatorio se](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) está implementando en las plataformas restantes.
-- [Los marcados dinámicos con todas las variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) se admiten en todos los Outlook cliente.
-

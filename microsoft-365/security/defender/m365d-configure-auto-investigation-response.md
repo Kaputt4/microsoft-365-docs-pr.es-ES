@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 3a2a06b48da1f83e82fd9f1a1293e9484517bd0e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 03cf5cbf209f0884304d541601de58ad748d9e4c
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162379"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914198"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurar las funcionalidades automatizadas de investigación y respuesta en Microsoft 365 Defender
 
@@ -90,7 +90,7 @@ La configuración de seguridad Office 365 ayuda a proteger el correo electrónic
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Asegúrese de Microsoft 365 Defender está activado
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on.":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="Cómo asegurarse de que Microsoft 365 Defender está habilitado." lightbox="../../media/mtp-enable/mtp-on.png":::
 
 1. Inicie sesión en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
