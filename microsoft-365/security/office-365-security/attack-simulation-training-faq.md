@@ -18,12 +18,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el aprendizaje en Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 75b85c637382e2fc508b4c48459d1409b02ec922
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704139"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907998"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
@@ -152,7 +152,7 @@ Administrar un archivo CSV grande o agregar muchos destinatarios individuales pu
 
 ### <a name="q-does-microsoft-provide-payloads-in-other-languages"></a>P: ¿Microsoft proporciona cargas en otros idiomas?
 
-A: Actualmente, hay 5 cargas localizadas disponibles. Hemos observado que cualquier traducción directa o automática de cargas existentes a otros idiomas provocará imprecisiones y disminución de relevancia.
+A: Actualmente, hay más de 40 cargas localizadas disponibles en más de 10 idiomas: chino (simplificado), chino (tradicional), inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso, español y neerlandés. Hemos observado que cualquier traducción directa o automática de cargas existentes a otros idiomas provocará imprecisiones y disminución de relevancia.
 
 Dicho esto, puede crear su propia carga en el idioma que prefiera con la experiencia de creación de carga personalizada. También se recomienda encarecidamente que recolecte las cargas existentes que se usaron para dirigirse a los usuarios en una geografía específica. En otras palabras, deja que los atacantes localicen el contenido por ti.
 

@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en organizaciones de Exchange Online Protection (EOP) con o sin buzones Exchange Online correo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6dde8366ab37ca6550e717ec97c17701570dc0e7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d594fb9941eacada17e5e42bbf0b8d32b5a48022
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196590"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907950"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -74,7 +74,7 @@ Para aumentar la eficacia de la protección contra phishing, puede crear directi
 
   **Notas**:
 
-  - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El **grupo de roles Administración** de la organización de solo vista [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica <sup>\*</sup> .
 
 - Para obtener nuestra configuración recomendada para las directivas contra suplantación de identidad, vea Configuración de directivas [de EOP contra suplantación de identidad](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
@@ -104,7 +104,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
-   Para los usuarios o grupos, puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, escriba un asterisco (\*) para ver todos los valores disponibles.
+   Para los usuarios o grupos, puede utilizar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de la cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados. Para los usuarios, introduzca un asterisco (\*) por sí mismo para ver todos los valores disponibles.
 
    Varios valores en la misma condición usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Hay diferentes condiciones que usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
@@ -124,7 +124,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 6. En la página **Acciones** que aparece, configure las opciones siguientes:
    - **Si el mensaje se detecta como** suplantación: esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación en la página anterior.  Seleccione una de las siguientes acciones en la lista desplegable para los mensajes de remitentes suplantados bloqueados:
      - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-     - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+     - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
        Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de inteligencia suplantación). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena. Para obtener más información acerca de las directivas de cuarentena predeterminadas que se usan para veredictos de filtrado de protección admitidos, vea [esta tabla](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
@@ -192,7 +192,7 @@ De nuevo en la página principal de la directiva, el valor **Estado** de la dire
 
 De forma predeterminada, las directivas contra suplantación de identidad tienen una prioridad que se basa en el orden en que se crearon (las directivas más recientes son de menor prioridad que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para cambiar la prioridad de una directiva, haga clic en **Aumentar la prioridad** o en **Reducir la prioridad** en las propiedades de la directiva (no se puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
+Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** o **Reducir prioridad** en las propiedades de la directiva (no puede modificar directamente el número de **Prioridad** en el portal de Microsoft 365 Defender). Cambiar la prioridad de una directiva sólo tiene sentido si tiene varias directivas.
 
  **Notas**:
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los comentarios que los usuarios pueden enviar a Microsoft sobre los productos de Microsoft.
-ms.openlocfilehash: 85eb9d9360026aaa7eb19c626c90f985a12af582
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b276c82687481267a9c1de3a1261786bf2027254
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161539"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907837"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Información sobre los comentarios de Microsoft para su organización
 
@@ -31,6 +31,9 @@ Los comentarios de los usuarios son una señal crítica para que Microsoft compr
 En este tema, encontrará información sobre qué tipos de comentarios existen, cómo los recopilamos, qué recopilamos y cómo manejamos los datos.
 
 Como administrador, puede administrar la señal de comentarios de su organización. Estamos presentando un nuevo conjunto de configuraciones de directiva para ayudarle a administrar la recopilación de comentarios de los usuarios dentro de las Microsoft 365 de la organización. Esta configuración de directiva le ayudará a dirigirse Azure Active Directory grupos y configurar la experiencia de recopilación de comentarios para su organización. Los comentarios de los usuarios van directamente a nuestros ingenieros y nos ayudan a definir el futuro de los productos y servicios de Microsoft para todos nuestros usuarios. Puede obtener más información sobre esta configuración de directiva, a qué aplicaciones se aplican y procedimientos recomendados en Administrar comentarios de [Microsoft para su organización.](../manage/manage-feedback-ms-org.md)
+
+<!--> [!IMPORTANT]
+> Te recomendamos que confirmes que los comentarios se envían desde un origen en el que confías. Asegúrese de que los nombres de usuario o los id. de usuario coincidan con los usuarios reales de la organización.-->
 
 ## <a name="feedback-types"></a>Tipos de comentarios
 
@@ -46,11 +49,17 @@ Si los usuarios usan una de las aplicaciones de Microsoft y desean proporcionar 
 
 ### <a name="in-product-surveys"></a>Encuestas desde el producto
 
-Los usuarios también pueden calificar su experiencia y proporcionar información adicional sobre su experiencia a través de solicitudes de encuesta iniciadas por el sistema. Estos avisos se producen en el Microsoft 365 de vez en cuando. Cuando se le pida, los usuarios pueden elegir si desean proporcionar comentarios. Los mensajes de la encuesta normalmente aparecen en la parte inferior derecha de la aplicación. Si el usuario decide proporcionar comentarios, descarta el mensaje o deja que el mensaje desaparezca por sí mismo, ese usuario no volverá a ver la encuesta durante algún tiempo. Microsoft también aprovecha un proceso de gobierno para limitar el número de estas encuestas iniciadas por el sistema.  El objetivo del gobierno es garantizar que los usuarios no se sientan abrumados por el número de solicitudes de encuesta.
+Los usuarios pueden calificar su experiencia y proporcionar información adicional sobre su experiencia a través de solicitudes de encuesta iniciadas por el sistema. Estos avisos se producen en el Microsoft 365 de vez en cuando. Cuando se le pida, los usuarios pueden elegir si desean proporcionar comentarios. Los mensajes de la encuesta normalmente aparecen en la parte inferior derecha de la aplicación. Si el usuario decide proporcionar comentarios, descarta el mensaje o deja que el mensaje desaparezca por sí mismo, ese usuario no volverá a ver la encuesta durante algún tiempo. Microsoft también aprovecha un proceso de gobierno para limitar el número de estas encuestas iniciadas por el sistema.  El objetivo del gobierno es garantizar que los usuarios no se sientan abrumados por el número de solicitudes de encuesta.
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
 
-:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Example of in-product feedback request":::
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Example of in-product Excel feedback request":::
+
+### <a name="community-feedback"></a>Community comentarios
+
+Los usuarios pueden aprovechar el nuevo portal de [comentarios de Microsoft](https://feedbackportal.microsoft.com/feedback/) para participar en foros de la comunidad pública para todos los Microsoft 365 productos. El nuevo portal de comentarios permitirá a los usuarios examinar y enviar comentarios enviados públicamente, así como enviar nuevos comentarios de la comunidad pública para cualquiera de los productos admitidos. Los elementos de comentarios más conocidos siguen estando disponibles en el nuevo portal. Este portal también es un nuevo lienzo de respuesta para que los usuarios realicen un seguimiento de las respuestas oficiales de Microsoft e interactúen con Microsoft en los comentarios que envíen.
+
+:::image type="content" source="../../media/community-feedback1.png" alt-text="Captura de pantalla: Microsoft Teams del portal de comentarios":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>¿Qué tipo de comentarios es mejor?
 

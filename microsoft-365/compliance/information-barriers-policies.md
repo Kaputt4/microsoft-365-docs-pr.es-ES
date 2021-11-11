@@ -15,12 +15,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec745f46790ee6d230266f010a9311e1cebb12cc
-ms.sourcegitcommit: 6d470e37b2a1c40c7f31c2365ae654a3c35d7674
+ms.openlocfilehash: 1a9b6a4000b6d96fa8fe60b3abc60ff01676073e
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834107"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907818"
 ---
 # <a name="get-started-with-information-barriers"></a>Introducción a las barreras de información
 
@@ -51,7 +51,7 @@ Al definir directivas para barreras de información, trabajará con atributos de
 | **Paso 3:** Definir [directivas de barrera de información](#step-3-define-information-barrier-policies) | - Definir las directivas (aún no se aplican)<br/>- Elegir entre dos tipos (bloquear o permitir) |
 | **Paso 4:** Aplicar [directivas de barrera de información](#step-4-apply-information-barrier-policies) | - Establecer directivas en estado activo<br/>- Ejecutar la aplicación de directiva<br/>- Ver el estado de la directiva |
 | **Paso 5:** Configuración de las barreras de [información en SharePoint y OneDrive (opcional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configurar barreras de información para SharePoint y OneDrive |
-| **Paso 6:** [Modos de barreras de información (opcional)](#step-6-information-barriers-modes-preview) | - Actualizar modos de barrera de información si procede |
+| **Paso 6:** [Modos de barreras de información (opcional)](#step-6-information-barriers-modes) | - Actualizar modos de barrera de información si procede |
 
 ## <a name="step-1-make-sure-prerequisites-are-met"></a>Paso 1: Asegurarse de que se cumplen los requisitos previos
 
@@ -279,7 +279,7 @@ Si está configurando barreras de información para SharePoint y OneDrive, deber
 
 Para habilitar las barreras de información SharePoint y OneDrive, siga las instrucciones y los pasos del artículo Usar [barreras](/sharepoint/information-barriers) de información SharePoint información.
 
-## <a name="step-6-information-barriers-modes-preview"></a>Paso 6: Modos de barreras de información (versión preliminar)
+## <a name="step-6-information-barriers-modes"></a>Paso 6: Modos de barreras de información
 
 Los modos pueden ayudar a reforzar el acceso, el uso compartido y la pertenencia de un Microsoft 365 basado en el modo DEI del recurso. Los modos se admiten en Microsoft 365 grupos, Microsoft Teams, OneDrive y SharePoint y se habilitan automáticamente en la configuración del IB nueva o existente.
 
@@ -288,7 +288,7 @@ Los siguientes modos de IB se admiten en Microsoft 365 recursos:
 | **Mode** | **Descripción** | **Ejemplo** |
 |:-----|:------------|:--------|
 | **Abrir** | No hay ninguna directivas o segmentos del IB asociados con el recurso Microsoft 365 usuario. Cualquier persona puede ser invitada a ser miembro del recurso. | Un sitio de grupo creado para un evento de pícnic para su organización. |
-| **Propietario moderado** | La directiva ib del recurso Microsoft 365 se determina a partir de la directiva de IB del propietario del recurso. Los propietarios de recursos pueden invitar a cualquier usuario al recurso en función de sus directivas de IB. Este modo es útil cuando la empresa quiere permitir la colaboración entre usuarios de segmentos incompatibles moderados por el propietario. Solo el propietario del recurso puede agregar nuevos miembros por su directiva de IB. | El vicepresidente de recursos humanos quiere colaborar con los VP de Ventas e Investigación. Un nuevo SharePoint que se establece con  el propietario del modo IB moderado para agregar usuarios del segmento ventas e investigación al mismo sitio. Es responsabilidad del propietario asegurarse de que se agregan miembros adecuados al recurso. |
+| **Propietario moderado (versión preliminar)** | La directiva ib del recurso Microsoft 365 se determina a partir de la directiva de IB del propietario del recurso. Los propietarios de recursos pueden invitar a cualquier usuario al recurso en función de sus directivas de IB. Este modo es útil cuando la empresa quiere permitir la colaboración entre usuarios de segmentos incompatibles moderados por el propietario. Solo el propietario del recurso puede agregar nuevos miembros por su directiva de IB. | El vicepresidente de recursos humanos quiere colaborar con los VP de Ventas e Investigación. Un nuevo SharePoint que se establece con  el propietario del modo IB moderado para agregar usuarios del segmento ventas e investigación al mismo sitio. Es responsabilidad del propietario asegurarse de que se agregan miembros adecuados al recurso. |
 | **Implícita** | La directiva de IB o segmentos del recurso Microsoft 365 se hereda de la directiva IB de miembros del recurso. El propietario puede agregar miembros siempre que sean compatibles con los miembros existentes del recurso. Este es el modo de IB predeterminado para Microsoft Teams. | El usuario del segmento de ventas crea Microsoft Teams equipo para colaborar con otros segmentos compatibles de la organización. |
 | **Explicit** | La directiva de IB del Microsoft 365 es por los segmentos asociados con el recurso. El propietario del recurso o SharePoint administrador tiene la capacidad de administrar los segmentos del recurso.  | Un sitio creado solo para que los miembros del segmento ventas colaboren asociando el segmento ventas con el sitio.   |
 

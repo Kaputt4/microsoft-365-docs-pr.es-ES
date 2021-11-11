@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas Caja fuerte dat
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cc31f00045173202d6404a81b64fdaab791e0c5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3ae702417d34351c99ccbd8432c2fc29f11a433f
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702170"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907943"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365
 
@@ -119,7 +119,7 @@ La creación de una directiva Caja fuerte datos adjuntos personalizada en el por
 
      Estos valores se explican en Caja fuerte [de directiva de datos adjuntos](safe-attachments.md#safe-attachments-policy-settings).
 
-   - **Directiva de cuarentena:** seleccione la directiva de cuarentena que se aplica a los mensajes que se ponen en cuarentena mediante Caja fuerte datos adjuntos (**Bloque**, **Reemplazar** o **Entrega dinámica**). Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
+   - **Directiva de cuarentena:** seleccione la directiva de cuarentena que se aplica a los mensajes que se ponen en cuarentena mediante Caja fuerte datos adjuntos (**Bloque**, **Reemplazar** o **Entrega dinámica**). Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
      Un valor en blanco significa que se usa la directiva de cuarentena predeterminada (AdminOnlyAccessPolicy para las detecciones de correo electrónico Caja fuerte datos adjuntos). Cuando más adelante edite la directiva Caja fuerte datos adjuntos o vea la configuración, se muestra el nombre de directiva de cuarentena predeterminado.
 

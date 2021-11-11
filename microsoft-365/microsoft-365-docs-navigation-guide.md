@@ -11,12 +11,12 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: 4e1b03d0424a7d1007e972c6d571fb12560da81f
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c2c7c73b4f49ab5d8b76b8a7574f900f414d1d1f
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934028"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907914"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navegación de documentos
 
@@ -29,14 +29,6 @@ La Microsoft 365 de concentradores se puede encontrar en y es el punto de entrad
 Siempre puede volver a esta página  seleccionando Microsoft 365 del encabezado en la parte superior de cada página dentro del conjunto de documentación Microsoft 365 documentación técnica:
 
 ![Microsoft 365 en el encabezado.](media/m365-header-cursor.png)
-
-## <a name="offline-documentation"></a>Documentación sin conexión
-
-Si desea ver la documentación Microsoft 365 en un sistema sin conexión, puede crear un PDF donde quiera que esté en la Microsoft 365 documentación técnica.
-
-Si desea crear un PDF, seleccione el vínculo **Descargar PDF** que se encuentra en la parte inferior de cada tabla de contenido.
-
-![Descargar PDF.](media/m365-download-pdf-cursor.png)
 
 ## <a name="toc-search"></a>Búsqueda de TOC 
 On docs.microsoft.com, you can search the content in the table of contents by using the filter search box at the top:
@@ -74,6 +66,6 @@ Si encuentra algo incorrecto en un artículo, puede enviar comentarios al equipo
 
 - [Guía de colaboradores de Microsoft Docs](/contribute/)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - Introducción a la documentación [Microsoft 365 técnica](index.yml).

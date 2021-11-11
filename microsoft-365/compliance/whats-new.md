@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2beb65d3f5d73265df72b1d052dec0d1a9c6e512
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 694a066efa35743206aaff8a1169014a266164b8
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478570"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907794"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -80,7 +80,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 ### <a name="information-barriers"></a>Barreras de información
 
-- [Introducción a las barreras de información](information-barriers-policies.md#step-6-information-barriers-modes-preview) nueva característica de vista previa para los modos de barreras de información
+- [Introducción a las barreras de información](information-barriers-policies.md#step-6-information-barriers-modes) nueva característica de vista previa para los modos de barreras de información
 - [Barreras de información con Microsoft Teams](/microsoftteams/information-barriers-in-teams) nueva característica de vista previa para los modos de barreras de información
 - [Barreras de información con OneDrive](/onedrive/information-barriers) nueva característica de vista previa para los modos de barreras de información
 - [Barreras de información con SharePoint nueva](/sharepoint/information-barriers) característica de vista previa en línea para los modos de barreras de información
@@ -115,7 +115,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
   - Arquitectura
   - Registro de auditoría
   - Cifrado y administración de claves
-  - Administración de acceso e identidad  
+  - Administración de identidad y acceso
   - Microsoft 365 de acceso
   - Seguridad de red
   - Privacidad

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 09492c81135c9859b683e2d042e8e4a99cc94c83
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 95f20e1e5ac3c623decb131929d3c27164f3a96b
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882182"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908010"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -47,6 +47,12 @@ La funcionalidad de detección de dispositivos te permite:
 - **Extremos detectados incorporados**
 
   Los puntos de conexión no administrados de la red introducen vulnerabilidades y riesgos en la red. Incorporarlos al servicio puede aumentar la visibilidad de seguridad en ellos.
+
+
+Vea este vídeo para obtener una introducción rápida de cómo se detección de dispositivos:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+
 
 Junto con esta funcionalidad, una nueva recomendación de seguridad para incorporar dispositivos a Microsoft Defender para endpoint estará disponible como parte de la experiencia existente de administración de amenazas y vulnerabilidades.
 
