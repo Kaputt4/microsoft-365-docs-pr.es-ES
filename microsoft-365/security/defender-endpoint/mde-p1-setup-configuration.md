@@ -9,17 +9,17 @@ audience: ITPro
 ms.topic: overview
 ms.date: 10/01/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ceda29b0e4ad17cfd9a6d9ad43a42f0ee31323ea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 26dbdfa70e05e3c8bb055fa1d18b056ee798c132
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205332"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940578"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Configurar y configurar Microsoft Defender para endpoint plan 1 (versión preliminar)
 
@@ -40,7 +40,7 @@ El proceso general de configuración y configuración de Defender for Endpoint P
 | 1 | [Revisar los requisitos](#review-the-requirements)  | Enumera los requisitos de licencias, explorador, sistema operativo y centro de datos   |
 | 2 | [Planear la implementación](#plan-your-deployment) | Enumera varios métodos de implementación a tener en cuenta e incluye vínculos a más recursos para ayudarle a decidir qué método usar  |
 | 3 | [Configurar el entorno de inquilino](#set-up-your-tenant-environment) | Enumera las tareas para configurar el entorno de inquilino |
-| 4  | [Asignar roles y permisos](#assign-roles-and-permissions) | Enumera los roles y permisos que se deben tener en cuenta para el equipo de seguridad <br/><br/>**SUGERENCIA:** Tan pronto como se asignan roles y permisos, el equipo de seguridad puede empezar a usar el portal Microsoft 365 Defender seguridad. Para obtener más información, vea [Introducción.](mde-plan1-getting-started.md) |
+| 4 | [Asignar roles y permisos](#assign-roles-and-permissions) | Enumera los roles y permisos que se deben tener en cuenta para el equipo de seguridad <br/><br/>**SUGERENCIA:** Tan pronto como se asignan roles y permisos, el equipo de seguridad puede empezar a usar el portal Microsoft 365 Defender seguridad. Para obtener más información, vea [Introducción.](mde-plan1-getting-started.md) |
 | 5 | [Incorporación a Defender para endpoint](#onboard-to-defender-for-endpoint) | Enumera varios métodos por sistema operativo para incorporar a Defender for Endpoint Plan 1 e incluye vínculos a información más detallada para cada método  |
 | 6  | [Configurar protección de última generación](#configure-next-generation-protection) | Describe cómo configurar las opciones de protección de próxima generación en Microsoft Endpoint Manager  |
 | 7  | [Configurar las capacidades de reducción de superficie de ataque](#configure-your-attack-surface-reduction-capabilities)        | Enumera los tipos de capacidades de reducción de superficie de ataque que puedes configurar e incluye procedimientos con vínculos a más recursos  |
@@ -170,7 +170,7 @@ Las reglas de reducción de superficie de ataque están disponibles en dispositi
 
 2. Elija **Endpoint security** Attack surface  >  **reduction**+ Create  >  **policy**.
 
-3. Para **Plataforma,** **seleccione Windows 10 y versiones posteriores**.
+3. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
 
 4. En **Perfil**, seleccione **Reglas de reducción de** superficie de ataque y, a continuación, elija **Crear**.
 
@@ -236,7 +236,7 @@ Puede configurar Defender for Endpoint para bloquear o permitir dispositivos y a
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión. 
 
-2. Seleccionar   >  **perfiles de configuración de dispositivos**  >  **Crear perfil**.
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
 3. Para **Plataforma**, seleccione **Windows 10 y posteriores,** y para Tipo de **perfil**, seleccione **Plantillas**. 
 
@@ -269,7 +269,7 @@ Con la protección de red, puede ayudar a proteger su organización contra domin
 
 1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión. 
 
-2. Seleccionar   >  **perfiles de configuración de dispositivos**  >  **Crear perfil**.
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
 3. Para **Plataforma**, seleccione **Windows 10 y posteriores,** y para Tipo de **perfil**, seleccione **Plantillas**. 
 
@@ -312,7 +312,7 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 
 5. En la **pestaña Configuración,** expanda **Protección web**, especifique la configuración de la tabla siguiente y, a continuación, **elija Siguiente**. <br/><br/>
 
-   | Configuración | Recomendación |
+   | Setting | Recomendación |
    |:---|:---|
    | **Habilitar la protección de red** | Se establece en **Habilitado**. Impide que los usuarios visiten sitios o dominios malintencionados. <br/><br/>Como alternativa, puede establecer la protección de red en **modo auditoría** para ver cómo funcionará en su entorno. En el modo de auditoría, la protección de red no impide que los usuarios visiten sitios o dominios, pero sí realiza un seguimiento de las detecciones como eventos. |
    | **Requerir SmartScreen para Microsoft Edge (versión anterior)** | Se establece en **Sí**. Ayuda a proteger a los usuarios de posibles estafas de suplantación de identidad (phishing) y software malintencionado. |
@@ -393,17 +393,17 @@ Para configurar la configuración básica del firewall, siga estos pasos:
 
 ### <a name="application-control"></a>Control de la aplicación
 
-Windows Defender El control de aplicaciones (WDAC) ayuda a proteger los puntos de conexión Windows, ya que solo permite que se ejecuten aplicaciones y procesos de confianza. La mayoría de las organizaciones usaban una implementación por fases de WDAC. Es decir, la mayoría de las organizaciones no lanzan WDAC en todos los Windows en un primer momento. De hecho, en función de si los puntos de conexión Windows de la organización están totalmente administrados, administrados ligeramente o "Traer su propio dispositivo", es posible que implemente WDAC en todos o algunos puntos de conexión.
+Windows Defender control de aplicaciones (WDAC) ayuda a proteger los puntos de conexión Windows, ya que solo permite que se ejecuten aplicaciones y procesos de confianza. La mayoría de las organizaciones usaban una implementación por fases de WDAC. Es decir, la mayoría de las organizaciones no lanzan WDAC en todos los Windows en un primer momento. De hecho, en función de si los puntos de conexión Windows de la organización están totalmente administrados, administrados ligeramente o "Traer su propio dispositivo", es posible que implemente WDAC en todos o algunos puntos de conexión.
 
 Para ayudarle con la planeación de la implementación de WDAC, consulte los siguientes recursos:
 
 - [Control de aplicaciones para Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 
-- [Windows Defender Decisiones de diseño de directivas de control de aplicaciones](/windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions)
+- [Windows Defender de diseño de directivas de control de aplicaciones](/windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions)
 
-- [Windows Defender Implementación de Control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
+- [Windows Defender de control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para endpoint. 
 

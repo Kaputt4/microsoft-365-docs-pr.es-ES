@@ -9,17 +9,17 @@ audience: ITPro
 ms.topic: overview
 ms.date: 10/01/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9946482f9ce5ac268255acd43f7929710a8a9bbd
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 27dcbdde1d52a8a6b072cb1f15cfe2a62d558278
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724672"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940596"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)
 
@@ -64,7 +64,7 @@ La barra de navegación de la parte izquierda de la pantalla le permite moverse 
 | **Alertas de & incidentes** | Se expande para mostrar **incidentes** y **alertas**. |
 | **Alertas de & incidentes**  >  **Incidentes** | Navega a la **lista Incidentes.** Los incidentes se crean cuando se desencadenan alertas o se detectan amenazas. De forma predeterminada, la lista Incidentes muestra los datos de los **últimos** 30 días, con el incidente más reciente enumerado primero. <br/><br/> Para obtener más información, vea [Incidents](view-incidents-queue.md). |
 | **Alertas de & incidentes**  >  **Alertas** | Navega a la lista **alertas** (también denominada cola **de alertas**). Las alertas se desencadenan cuando se detecta un archivo, proceso o comportamiento sospechoso o malintencionado. De forma predeterminada, la **lista de** alertas muestra los datos de los últimos 30 días, con la alerta más reciente en primer lugar. <br/><br/> Para obtener más información, vea [Alerts](alerts-queue.md). |
-| **Centro de actividades** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como estas: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender for Endpoint detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, vea [Centro de acciones](auto-investigation-action-center.md). |
+| **Centro de acciones** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como estas: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender for Endpoint detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, vea [Centro de acciones](auto-investigation-action-center.md). |
 | **Puntuación de seguridad** | Muestra una representación de la posición de seguridad de la organización junto con una lista de acciones de mejora y métricas. <br/><br/> Para obtener más información, consulte [Puntuación segura de Microsoft](../defender/microsoft-secure-score.md). |
 | **Learning central** | Navega a una lista de rutas de aprendizaje a las que puede acceder para obtener más información sobre Microsoft 365 de seguridad.  |
 | **Puntos de conexión**  >  **Búsqueda** | Navega a una página donde puedes buscar dispositivos específicos por nombre de dispositivo. En la lista de resultados, puede ver detalles, como el nivel de riesgo y el estado de mantenimiento, de un vistazo. |
@@ -98,7 +98,7 @@ Usa las **pestañas**  Alertas, **Dispositivos** y Usuarios para ver más inform
 > [!TIP]
 > Para obtener más información sobre el uso de **la vista** Incidentes, vea [Administrar incidentes](manage-incidents.md).
 
-## <a name="manage-devices"></a>Administrar dispositivos
+## <a name="manage-devices"></a>Administración de dispositivos
 
 Para ver y administrar los dispositivos de la organización, en la barra de navegación, en **Extremos**, seleccione **Inventario de dispositivos**. Verás una lista de dispositivos como se muestra en la siguiente imagen:
 

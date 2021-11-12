@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo ampliar Microsoft 365 de cumplimiento normativo mediante conectores de datos de terceros y API Graph Microsoft.
-ms.openlocfilehash: 04bffeb43a001ab94ffb96504b64ffbf4bf566c5
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0957cb0f874964740697516a1cd8a37a2f8dca27
+ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555373"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940739"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 extensibilidad de cumplimiento normativo
 
@@ -49,7 +49,7 @@ Muchos de los conectores de datos disponibles en el Centro de cumplimiento de Mi
 
 Para los conectores de datos en el Centro de cumplimiento de Microsoft 365 proporcionado por uno de los partners de Microsoft, su organización necesitará una relación comercial con el partner antes de poder implementar un conector.
 
-Puede encontrar requisitos de licencias para conectores de datos de terceros en [el Microsoft 365 comparación](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx) de licencias de cumplimiento.
+Para obtener información sobre los requisitos de licencia para conectores de datos de [terceros,](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-connectors)consulte la sección "Conectores de datos" en Microsoft 365 de licencias para la seguridad y & cumplimiento .
 
 ## <a name="apis"></a>API
 
@@ -83,7 +83,7 @@ Para obtener información sobre los requisitos de Teams DLP, consulte Microsoft 
 
 Con [Advanced eDiscovery,](overview-ediscovery-20.md)las organizaciones pueden descubrir los datos donde viven y administrar más flujos de trabajo de exhibición de documentos electrónicos completos con capacidades inteligentes de aprendizaje automático y análisis para reducir los datos al conjunto pertinente, todo ello mientras los datos permanecen dentro del límite de seguridad y cumplimiento de Microsoft 365.
 
-Graph Las API para Advanced eDiscovery pueden usarse para crear y administrar casos, conjuntos de revisión y consultas de conjunto de revisión de forma escalable y repetible. Esto permite a los clientes y partners crear aplicaciones y flujos de trabajo para automatizar procesos comunes y repetitivos, como crear casos y administrar custodias y retenciones legales.
+Graph API de Advanced eDiscovery pueden usarse para crear y administrar casos, conjuntos de revisión y consultas de conjunto de revisión de forma escalable y repetible. Esto permite a los clientes y partners crear aplicaciones y flujos de trabajo para automatizar procesos comunes y repetitivos, como crear casos y administrar custodias y retenciones legales.
 
 El primer conjunto de API Graph para eDiscovery están disponibles en versión preliminar pública. Planeamos agregar más funcionalidades al final del año calendario. Para obtener más información sobre estas API y otras actualizaciones para Advanced eDiscovery, vea este [blog](https://aka.ms/Ignite2020AeDAA).
 
@@ -91,11 +91,10 @@ Para obtener información sobre los requisitos de licencia para Advanced eDiscov
 
 ### <a name="microsoft-graph-api-for-teams-export"></a>API Graph Microsoft para Teams Export
 
-Enterprise El archivado de información (EIA) para Microsoft Teams es un escenario clave para nuestros clientes, ya que les permite resolver los requisitos normativos. Además de nuestras capacidades integradas para archivar contenido en Microsoft Teams, los clientes y asociados ahora pueden usar las API de exportación de Teams para resolver escenarios de integración y aplicaciones personalizados. Las API Teams Export admiten la exportación masiva (hasta 200 solicitudes por segundo/por aplicación/por inquilino) de mensajes Teams y datos adjuntos de mensajes. La API también puede acceder a los mensajes eliminados hasta 30 días después de eliminarse. Para obtener más información acerca de Teams Exportar API y cómo usarlas en las aplicaciones, vea [Export content with the Microsoft Teams Export API](/microsoftteams/export-teams-content).
+Enterprise information archiving (EIA) para Microsoft Teams es un escenario clave para nuestros clientes, ya que les permite resolver los requisitos normativos. Además de nuestras capacidades integradas para archivar contenido en Microsoft Teams, los clientes y asociados ahora pueden usar las API de exportación de Teams para resolver escenarios de integración y aplicaciones personalizados. Las API Teams Export admiten la exportación masiva (hasta 200 solicitudes por segundo/por aplicación/por inquilino) de mensajes Teams y datos adjuntos de mensajes. La API también puede acceder a los mensajes eliminados hasta 30 días después de eliminarse. Para obtener más información acerca de Teams Exportar API y cómo usarlas en las aplicaciones, vea [Export content with the Microsoft Teams Export API](/microsoftteams/export-teams-content).
 
 Para obtener información sobre los requisitos de licencia para el uso de las API de exportación de Teams, consulte Microsoft 365 guía de licencias para seguridad [y & cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ### <a name="microsoft-graph-connector-apis-preview"></a>API de Microsoft Graph Connector (versión preliminar)
 
 Con [los conectores Graph Microsoft,](/microsoftsearch/connectors-overview)las organizaciones pueden indizar datos de terceros para que aparezcan en Búsqueda de Microsoft resultados. Esta característica expande los tipos de orígenes de contenido que se pueden buscar en las aplicaciones de productividad de Microsoft 365 y del ecosistema más amplio de Microsoft. Los datos de terceros se pueden hospedar localmente o en nubes públicas o privadas. A partir Advanced eDiscovery, estamos habilitando la vista previa del desarrollador del valor de cumplimiento integrado de Microsoft 365 aplicaciones conectadas. Esto permite el cumplimiento de aplicaciones que se integran en el Microsoft 365 para habilitar a los usuarios con experiencias de cumplimiento sin problemas. Para obtener más información sobre cómo incorporar las API de Microsoft Graph Connector en la vista aplicaciones, vea [Crear,](/graph/search-index-manage-connections)actualizar y eliminar conexiones en microsoft Graph .
-
