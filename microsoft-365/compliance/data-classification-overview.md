@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 2e9d9a2581a5a2dd94dbfa32e3105486999f4b6b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67ceb75fd5062e422121588f7830fcd389202cb5
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153131"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914541"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -39,7 +39,7 @@ También puede administrar estas características en la página de clasificació
 
 - [clasificadores que se pueden entrenar](classifier-learn-about.md)
 - [tipos de información confidencial](sensitive-information-type-learn-about.md)
-- [coincidencias exactas de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [explorador de contenido](data-classification-content-explorer.md)
 - [explorador de actividad](data-classification-activity-explorer.md)
 

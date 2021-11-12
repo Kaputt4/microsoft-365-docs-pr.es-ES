@@ -20,12 +20,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: 3c5d5689f676e6fecc6c0251df6ee90f54398238
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4128f6cd5293972dd7383eed0802f7969f488d8a
+ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169388"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60899647"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -53,7 +53,7 @@ Para establecer la configuración de colaboración externa
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**
 3. Haga clic en **Identidades externas**.
 4. En la pantalla **introducción**, en el panel de navegación izquierdo, haga clic en **Configuración de colaboración externa**.
-5. Asegúrese de que **usuarios miembros y usuarios asignados a roles de administrador específicos pueden invitar a usuarios invitados, incluidos los invitados con permisos de miembro** está seleccionado.
+5. Asegúrese de que **Los usuarios miembros y usuarios asignados a roles de administrador específicos pueden invitar a usuarios invitados, incluidos los invitados con permisos de miembro** o **Cualquier usuario de la organización puede invitar a usuarios invitados, incluidos invitados y no administradores** está seleccionado.
 6. Si ha realizado cambios, haga clic en **Guardar**.
 
 Fíjese en la configuración en la sección **Restricciones de colaboración**. Asegúrese de que los dominios de los invitados con los que quiere colaborar no están bloqueados.

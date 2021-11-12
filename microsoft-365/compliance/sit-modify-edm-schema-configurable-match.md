@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo modificar un esquema de EDM para usar la coincidencia configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40f7ef0f538fd79c0e8ff44de32a4bdd72254f7a
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: f41dee9b1ca13f319e5dc05fc5f7512bd98a5186
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825556"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914469"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificar el esquema de coincidencia de datos exactos para usar la coincidencia configurable
 
@@ -130,7 +130,7 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Crear un tipo de información confidencial personalizado con una clasificación basada en la coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Tipos de información confidencial personalizados](./sensitive-information-type-learn-about.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

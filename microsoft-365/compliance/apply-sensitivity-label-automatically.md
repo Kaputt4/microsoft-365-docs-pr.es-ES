@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 2574ad8c9a42c5646bda770a0c5a310548ddc88e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8d45308bc9bb4562cc82417ddb8ed762d8ac65b1
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883767"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914289"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -151,7 +151,7 @@ De forma similar a la configuración de la directiva DLP, también puede elegir 
 
 #### <a name="custom-sensitive-information-types-with-exact-data-match"></a>Tipo de información confidencial personalizado con coincidencia exacta de datos
 
-Puede configurar una etiqueta de confidencialidad para usar la [Clasificación basada en la coincidencia exacta de datos (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) para los tipos de información confidencial personalizada. Sin embargo, actualmente, también debe especificar al menos un tipo de información confidencial que no use la EDM. Por ejemplo, uno de los tipos de información confidencial incorporados, como el **Número de tarjeta de crédito**.
+Puede configurar una etiqueta de confidencialidad para que use [tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) para tipos de información confidencial personalizados. Sin embargo, actualmente, también debe especificar al menos un tipo de información confidencial que no use la EDM. Por ejemplo, uno de los tipos de información confidencial incorporados, como el **Número de tarjeta de crédito**.
 
 Si configura una etiqueta de confidencialidad solo con la EDM para sus condiciones de tipo de información confidencial, el ajuste de etiquetado automático se desactiva automáticamente para la etiqueta.
 

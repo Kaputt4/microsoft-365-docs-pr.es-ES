@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 72037127bf0b89c51a1ba73193e43646d84d4b08
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c84add5ddc1b96d2a5ab3dfd713722522211bfa2
+ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883707"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60914589"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -181,7 +181,7 @@ Al crear directivas de etiquetas de retención de aplicación automática para i
 
 ![Plantillas de directiva con tipos de información confidencial.](../media/sensitive-info-configuration.png)
 
-Para obtener más información sobre los tipos de información confidencial, consulte [Definiciones de entidad del tipo de información confidencial](sensitive-information-type-entity-definitions.md). Actualmente, las [coincidencias exactas de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) y la [creación de huella digital de documento](document-fingerprinting.md) no son compatibles con este escenario.
+Para obtener más información sobre los tipos de información de confidencialidad, consulte [Obtener información sobre los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Actualmente, los [tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) y la [toma de huellas digitales de documentos](document-fingerprinting.md) no son compatibles con este escenario.
 
 Después de seleccionar una plantilla de política, puede añadir o eliminar cualquier tipo de información sensible, y puede cambiar el nivel de confianza y el recuento de instancias. En la captura de pantalla del ejemplo anterior, estas opciones se han cambiado para que se aplique automáticamente una etiqueta de retención sólo cuando:
   

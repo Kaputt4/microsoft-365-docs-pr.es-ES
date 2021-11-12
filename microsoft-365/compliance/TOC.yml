@@ -124,6 +124,8 @@
           items:
             - name: Obtener más información acerca de los tipos de información confidencial
               href: sensitive-information-type-learn-about.md
+            - name: Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos
+              href: sit-learn-about-exact-data-match-based-sits.md
             - name: Creación de huella digital de documento
               href: document-fingerprinting.md
             - name: Más información sobre las entidades con nombre (versión preliminar)
@@ -132,14 +134,22 @@
           items:
             - name: Introducción a los tipos de información confidencial personalizados - Centro de cumplimiento
               href: create-a-custom-sensitive-information-type.md
+            - name: Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos
+              href: sit-get-started-exact-data-match-export-data.md
+            - name: Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
+              href: sit-get-started-exact-data-match-create-schema.md
+            - name: Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial
+              href: sit-get-started-exact-data-match-hash-upload.md
+            - name: Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
+              href: sit-get-started-exact-data-match-create-rule-package.md
+            - name: Probar un tipo de información confidencial de coincidencia exacta de datos
+              href: sit-get-started-exact-data-match-test.md
         - name: Usar tipos de información confidencial
           items:
             - name: Personalizar un tipo de información confidencial integrado
               href: customize-a-built-in-sensitive-information-type.md
-            - name: Crear tipos de información confidencial personalizados con coincidencia exacta de datos
-              href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-            - name: Utilice el esquema de coincidencia de datos exactos y el asistente para tipos de información confidencial
-              href: sit-edm-wizard.md
             - name: Modificar el esquema de coincidencia de datos exacto para usar una coincidencia configurable
               href: sit-modify-edm-schema-configurable-match.md
             - name: Crear notificaciones para actividades de coincidencia exacta de datos (vista previa)
@@ -154,6 +164,10 @@
               href: create-a-keyword-dictionary.md
             - name: Modificar un diccionario de palabras clave
               href: sit-modify-keyword-dictionary.md
+            - name: Administrar el esquema exacto de coincidencia de datos
+              href: sit-use-exact-data-manage-schema.md
+            - name: Actualizar el archivo de tabla de origen de información confidencial
+              href: sit-use-exact-data-refresh-data.md
             - name: Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
               href: named-entities-use.md
         - name: Referencia de tipo de información confidencial

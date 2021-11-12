@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 898acf4e74f6aadb79bf5dfb7e3fc751d6286ecb
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: b354e578c40845a89b7bb837854f6dd7fa5bb4d3
+ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792393"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60907806"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -54,6 +54,12 @@ Cuando está habilitada, **la protección y el examen de clasificación avanzada
 En la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso del ancho de banda es una preocupación, puede establecer un límite en esta configuración global que se aplica por dispositivo en cuanto se puede usar en un período de 24 horas. Si estableces un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube y la clasificación de datos continuará localmente en el dispositivo. Cuando el uso del ancho de banda acumulado se encuentra por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
 
 Si el uso del ancho de banda no es un problema, no puede establecer un límite y permitir el uso ilimitado.
+
+Estas versiones de Windows admiten la protección y el escaneo de clasificación avanzada:
+
+- Windows 10 versiones 20H1/20H2/21H1 (KB 5006738)
+- Windows 10 versiones 19H1/19H2 (KB 5007189)
+- Windows 10 RS5 (KB 5006744)
 
 > [!NOTE]
 > La evaluación de directivas DLP siempre se produce en la nube, incluso si el contenido del usuario no se envía.
