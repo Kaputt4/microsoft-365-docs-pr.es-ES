@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Obtenga información sobre cómo configurar Saba como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ms.openlocfilehash: 1f8c9610d9c1e747af6e0804bbd7c133de4351cf
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: cb13822e2f4a0a2eccf31e2c03f2ac5e109dd843
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755800"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950502"
 ---
 # <a name="configure-saba-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Saba como origen de contenido para Aprendizaje Microsoft Viva
 
@@ -68,9 +68,6 @@ Tendrás que completar la configuración en tu Centro de administración de Micr
 
 > [!Note]
 > Para la integración de Saba Cloud, debe tener un dominio sabacloud.com en la dirección URL de host. Si tienes un nombre de dominio diferente, tendrás que generar un vale de soporte técnico para permitir tu nombre de dominio.
-
->[!NOTE]
->Los metadatos del espacio empresarial se almacenan de forma centralizada en nuestros almacenes de datos y no se almacenan en almacenes de datos específicos geográficamente.
 
 >[!NOTE]
 >Actualmente, todos los usuarios de una organización pueden descubrir todos los cursos específicos del inquilino, pero solo podrán consumir los cursos a los que tienen acceso. La detección de contenido específica del usuario basada en roles y permisos está planeada para futuras versiones.

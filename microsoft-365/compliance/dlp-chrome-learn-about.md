@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: La extensión de cumplimiento de Microsoft extiende la supervisión y el control de las actividades de archivo y acciones protectoras al explorador Google Chrome
-ms.openlocfilehash: ff0df602e68338315becabd0c5b65f981fe4dd43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e41343f14e799f354906361fe88f6a99dba12908
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179192"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950670"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>Obtenga información sobre el Centro de cumplimiento de Microsoft
 
@@ -46,7 +46,7 @@ actividad |description  | acciones compatibles de directiva|
 
 ## <a name="deployment-process"></a>Proceso de implementación
 1. [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
-2. [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
+2. [Herramientas y métodos de incorporación para dispositivos Windows 10](device-onboarding-overview.md)
 3. [Instalar la extensión en los dispositivos de Windows 10](dlp-chrome-get-started.md)
 4. [Cree o edite directivas de DLP](create-test-tune-dlp-policy.md) que limiten la carga a servicios en la nube, o el acceso por parte de acciones de exploradores no permitidos y aplíquelas a sus dispositivos de Windows 10
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Aprende a configurar Udemy como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ms.openlocfilehash: f5cbb140d2bf76fdf03eba5de0e09ad70fbf4afb
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ea015d6ee0ec1890d56b6f40f928fe96ea44ccbc
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883903"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950586"
 ---
 # <a name="configure-udemy-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Udemy como origen de contenido para Aprendizaje Microsoft Viva
 
@@ -80,6 +80,3 @@ Después de recibir los detalles de configuración necesarios del portal udemy m
     - **Secreto de** cliente: este es el secreto de cliente recopilado del portal Udemy en el paso 4.
 
 4. Selecciona **Guardar** para activar el contenido de Udemy en Aprendizaje Microsoft Viva. El contenido puede tardar hasta 24 horas en estar disponible en Viva Learning.
-
->[!NOTE]
->Los metadatos del espacio empresarial se almacenan de forma centralizada en nuestros almacenes de datos y no se almacenan en almacenes de datos específicos geográficamente.

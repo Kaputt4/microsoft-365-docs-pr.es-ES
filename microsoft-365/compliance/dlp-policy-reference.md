@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: ebf088126b89a94dbae2def79ec9dcc380627b75
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fbd6ffa3f0e9167c98d6e950a971254e7c21a988
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702778"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950718"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -109,7 +109,7 @@ Una directiva DLP puede buscar y proteger elementos que contienen información c
 |Cuentas de OneDrive para la Empresa| cuenta o grupo de distribución |data-at-rest </br> datos en uso|No|
 |Mensajes de canales y chats de Teams     | cuenta o grupo de distribución |datos en movimiento </br> datos en uso |  No       |
 |Microsoft Cloud App Security (MCAS)   | Instancia de aplicación en la nube       |data-at-rest         | - [Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Dispositivos  |usuario o grupo         |data-at-rest </br>  datos en uso </br>  datos en movimiento         |- [Obtenga información sobre Microsoft 365 prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Introducción a la prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurar el proxy de dispositivo y la configuración de conexión a Internet para DLP de punto de conexión](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
+|Dispositivos  |usuario o grupo         |data-at-rest </br>  datos en uso </br>  datos en movimiento         |- [Obtenga información sobre Microsoft 365 prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Introducción a la prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurar la configuración de proxy de dispositivo y conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |Repositorios locales (recursos compartidos de archivos y SharePoint)    |repositorio         | data-at-rest         | - [Obtenga información sobre el Microsoft 365 de prevención de pérdida de datos local](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Introducción al escáner local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 
 Si elige incluir grupos de distribución que son específicos en Exchange, la directiva de DLP se aplicará solo a los miembros de ese grupo. Igualmente, la exclusión de un grupo de distribución excluirá a todos los miembros de dicho grupo de distribución de la evaluación de la directiva. Puede escoger entre definir una directiva para los miembros de las listas de distribución, los grupos de distribución dinámicos y los grupos de seguridad. Una directiva DLP no puede contener más de 50 de estas inclusiones y exclusiones.
@@ -130,7 +130,7 @@ Las directivas DLP detectan elementos confidenciales si los coinciden con un tip
 |Exchange correo electrónico en línea|Sí| Sí|    No|
 |SharePoint en línea|   Sí|    Sí|    Sí|
 |Cuentas de OneDrive para la Empresa|    Sí|    Sí|    Sí|
-|Teams Mensajes de chat y canal |  Sí|    No| No|
+|Teams chat y canal |  Sí|    No| No|
 |Dispositivos    |Sí |  Sí|    No|
 |Microsoft Cloud App Security|  Sí|    Sí|    Sí|
 |Repositorios locales|  Sí|    Sí|    No|
@@ -363,7 +363,7 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 
-#### <a name="teams-chat-and-channel-messages"></a>Teams Chat y mensajes de canal
+#### <a name="teams-chat-and-channel-messages"></a>Teams chat y mensajes de canal
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 
@@ -451,7 +451,7 @@ Las opciones de configuración de notificaciones de usuario y sugerencias de dir
 - Exchange
 - SharePoint
 - OneDrive
-- Teams Chat y canal
+- Teams chat y canal
 - MCAS
 
 
@@ -471,7 +471,7 @@ Si seleccionaste Solo dispositivos, recibirás todas las mismas opciones que est
 
 Puede personalizar el título y el cuerpo del texto con estos parámetros. El texto del cuerpo admite lo siguiente:
 
-|Nombre común  |Parámetro  |Ejemplo:
+|Nombre común  |Parameter  |Ejemplo
 |---------|---------|---------|
 |nombre de archivo     |%%FileName%% | Contoso doc 1 |
 |nombre del proceso     |%%ProcessName%% | Word |
@@ -580,7 +580,7 @@ DLP examina el correo electrónico de forma diferente que SharePoint online o On
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

@@ -1,0 +1,119 @@
+---
+title: Incorporación Windows 10 y Windows 11 dispositivos con un script local
+f1.keywords: NOCSH
+ms.author: chrfox
+author: chrfox
+manager: laurawi
+ms.date: ''
+audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
+search.appverid:
+- MET150
+description: Use un script local para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
+ms.openlocfilehash: 14412e782cffd597786a4d2c322fe2b8fc20e5ca
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950943"
+---
+# <a name="onboard-windows-10-and-windows-11-devices-using-a-local-script"></a>Incorporación Windows 10 y Windows 11 dispositivos con un script local
+
+**Se aplica a:**
+
+- [Microsoft 365 prevención de pérdida de datos de punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
+- [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+
+También puedes incorporar manualmente dispositivos individuales a Microsoft 365. Es posible que quieras hacerlo primero al probar el servicio antes de comprometerte a incorporar todos los dispositivos de la red.
+
+> [!IMPORTANT]
+> Este script se ha optimizado para su uso en hasta 10 dispositivos.
+>
+> Para implementar a escala, use [otras opciones de implementación.](device-onboarding-overview.md) Por ejemplo, puede implementar un script de incorporación en más de 10 dispositivos en producción con el script disponible en [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md).
+
+## <a name="onboard-devices"></a>Incorporar dispositivos
+ 
+1. Obtener el paquete de configuración .zip archivo (*DeviceComplianceOnboardingPackage.zip*) del [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com)
+
+2. En el panel de navegación, <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**seleccione Configuración**</a>Incorporación  >  **de dispositivos**.
+
+3. En el **campo Método de** implementación, seleccione Script **local**.
+
+4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
+  
+5. Extrae el contenido del paquete de configuración en una ubicación en el dispositivo que quieras incorporar (por ejemplo, el escritorio). Debe tener un archivo denominado *DeviceOnboardingScript.cmd*.
+
+6. Abra un símbolo del sistema con privilegios elevados en el dispositivo y ejecute el script:
+
+7. Vaya a **Inicio** y escriba **cmd**.
+
+8. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
+
+    ![Window menú Inicio que apunta a Ejecutar como administrador.](../media/dlp-run-as-admin.png)
+
+9. Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+
+10. Presione la **tecla Entrar** o haga clic en **Aceptar**.
+
+Para obtener información sobre cómo validar manualmente que el dispositivo es compatible e informa correctamente de los datos del sensor, consulte Solucionar problemas de incorporación de Protección contra amenazas avanzada de [Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+
+## <a name="offboard-devices-using-a-local-script"></a>Dispositivos offboard con un script local
+
+Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
+
+> [!NOTE]
+> Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
+
+1. Obtenga el paquete de offboarding de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
+
+2. En el panel de navegación, <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**seleccione Configuración**</a>  >  **Desaborde dispositivo**.
+
+3. En el **campo Método de** implementación, seleccione Script **local**.
+
+4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
+
+5. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los dispositivos. Debe tener un archivo denominado *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+
+6. Abra un símbolo del sistema con privilegios elevados en el dispositivo y ejecute el script:
+
+7. Vaya a **Inicio** y escriba **cmd**.
+
+8. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
+
+    ![Window menú Inicio que apunta a Ejecutar como administrador.](../media/dlp-run-as-admin.png)
+
+9. Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
+
+10. Presione la **tecla Entrar** o haga clic en **Aceptar**.
+
+> [!IMPORTANT]
+> El offboarding hace que el dispositivo deje de enviar datos del sensor al portal.
+
+## <a name="monitor-device-configuration"></a>Supervisar la configuración del dispositivo
+
+Puede seguir los distintos pasos de comprobación de [Solucionar problemas de incorporación](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) para comprobar que el script se completó correctamente y que el agente se está ejecutando.
+
+La supervisión también se puede realizar directamente en el portal o mediante las distintas herramientas de implementación.
+
+### <a name="monitor-devices-using-the-portal"></a>Supervisar dispositivos con el portal
+
+1. Vaya a [Microsoft 365 Centro de cumplimiento](https://compliance.microsoft.com).
+
+2. Elija **Configuración**  >  **Dispositivos de incorporación de**  >  **dispositivos**.
+
+1. Vaya a Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a>  >  **Dispositivos de incorporación de**  >  **dispositivos**.
+
+1. Compruebe que aparecen dispositivos.
+
+## <a name="related-topics"></a>Temas relacionados
+- [Incorporación Windows 10 y Windows 11 dispositivos con directiva de grupo](device-onboarding-gp.md)
+- [Incorporación Windows 10 y Windows 11 dispositivos con Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Incorporación Windows 10 y Windows 11 dispositivos con herramientas de administración de dispositivos móviles](device-onboarding-mdm.md)
+- [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](device-onboarding-vdi.md)
+- [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Solucionar problemas de incorporación de Protección contra amenazas avanzada de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

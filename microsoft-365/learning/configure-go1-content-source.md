@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Obtenga información sobre cómo configurar Go1 como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ms.openlocfilehash: f327d17e1ca1095a0cceadefc5a649d2acab2f03
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1adef6275be2a8656eaad9a7f47805d13299e3c7
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702158"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950538"
 ---
 # <a name="configure-go1-as-a-content-source-for-microsoft-viva-learning"></a>Configurar Go1 como origen de contenido para Aprendizaje Microsoft Viva
 
@@ -65,6 +65,3 @@ Obtenga más información [sobre cómo crear una aplicación de desarrollador pr
 2. Vaya a **Configuración** y, a continuación, **configuración de la organización**. Seleccione Viva Learning y habilite Go1 en el panel.
 3. Rellene los detalles de configuración que ha recuperado del portal de Go1.
 4. Seleccione **Guardar** para activar el contenido de Go1 en Viva Learning. El contenido puede tardar hasta 24 horas en mostrarse en la aplicación Viva Learning web.
-
->[!NOTE]
->Los metadatos del espacio empresarial se almacenan de forma centralizada en nuestros almacenes de datos y no se almacenan en almacenes de datos específicos geográficamente.

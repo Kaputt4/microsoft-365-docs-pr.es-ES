@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 79029444f19db9754d4ebddf83e370b5cdac7da1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 2552fe2482ba06fd34403fe2ff690bdf11c7bd20
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747695"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950562"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -38,11 +38,11 @@ Microsoft 365 detecta elementos confidenciales mediante el análisis de contenid
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP es parte de la oferta de cumplimiento Microsoft 365 mayor
 
-Microsoft 365 DLP es solo una de las Microsoft 365 de cumplimiento que usará para ayudar a proteger los elementos confidenciales dondequiera que vivan o viajen. Debe comprender las otras herramientas del conjunto Microsoft 365 herramientas de cumplimiento, cómo se interrelacionan y funcionan mejor juntos.  Vea, [Microsoft 365 de cumplimiento normativo para](protect-information.md) obtener más información sobre el proceso de protección de la información.
+Microsoft 365 DLP es solo una de las herramientas de cumplimiento Microsoft 365 que usará para ayudar a proteger los elementos confidenciales dondequiera que vivan o viajen. Debe comprender las otras herramientas del conjunto Microsoft 365 herramientas de cumplimiento, cómo se interrelacionan y funcionan mejor juntos.  Vea, [Microsoft 365 de cumplimiento normativo para](protect-information.md) obtener más información sobre el proceso de protección de la información.
 
 ## <a name="protective-actions-of-dlp-policies"></a>Acciones de protección de directivas DLP
 
-Microsoft 365 Las directivas DLP son cómo supervisar las actividades que los usuarios llevan a cabo en los elementos confidenciales en reposo, los elementos confidenciales en tránsito o los elementos confidenciales en uso y realizar acciones de protección. Por ejemplo, cuando un usuario intenta realizar una acción prohibida, como copiar un elemento confidencial en una ubicación no aprobada o compartir información médica en un correo electrónico u otras condiciones establecidas en una directiva, DLP puede:
+Microsoft 365 directivas DLP son cómo supervisar las actividades que los usuarios llevan a cabo en los elementos confidenciales en reposo, los elementos confidenciales en tránsito o los elementos confidenciales en uso y realizar acciones de protección. Por ejemplo, cuando un usuario intenta realizar una acción prohibida, como copiar un elemento confidencial en una ubicación no aprobada o compartir información médica en un correo electrónico u otras condiciones establecidas en una directiva, DLP puede:
 
 - mostrar una sugerencia de directiva emergente al usuario que le advierte de que puede que esté intentando compartir un elemento confidencial de forma inadecuada
 - bloquear el uso compartido y, a través de una sugerencia de directiva, permitir al usuario invalidar el bloque y capturar la justificación de los usuarios
@@ -65,7 +65,7 @@ Normalmente, una implementación dlp sigue estas fases principales.
 
 ### <a name="plan-for-dlp"></a>Plan para DLP
 
-Microsoft 365 La supervisión y protección dlp son nativas de las aplicaciones que los usuarios usan todos los días. Esto ayuda a proteger los elementos confidenciales de las organizaciones de actividades arriesgadas, incluso si los usuarios no están acostumbrados a las prácticas y el pensamiento de prevención de pérdida de datos. Si su organización y sus usuarios son nuevos en las prácticas de prevención de pérdida de datos, la adopción de DLP puede requerir un cambio en los procesos empresariales y habrá un cambio de cultura para los usuarios. Sin embargo, con una planeación, prueba y ajuste adecuados, las directivas DLP protegerán los elementos confidenciales al tiempo que minimizarán las posibles interrupciones de los procesos empresariales.
+Microsoft 365 y protección dlp son nativas de las aplicaciones que los usuarios usan todos los días. Esto ayuda a proteger los elementos confidenciales de las organizaciones de actividades arriesgadas, incluso si los usuarios no están acostumbrados a las prácticas y el pensamiento de prevención de pérdida de datos. Si su organización y sus usuarios son nuevos en las prácticas de prevención de pérdida de datos, la adopción de DLP puede requerir un cambio en los procesos empresariales y habrá un cambio de cultura para los usuarios. Sin embargo, con una planeación, prueba y ajuste adecuados, las directivas DLP protegerán los elementos confidenciales al tiempo que minimizarán las posibles interrupciones de los procesos empresariales.
 
 **Planeación de tecnología para DLP**
 
@@ -156,9 +156,9 @@ ubicación | incluir/excluir por|
 4. **Elija la acción que se debe realizar cuando se cumplen** las condiciones de la directiva: las acciones dependen de la ubicación donde se esté produciendo la actividad.  Por ejemplo:
 
 - SharePoint/Exchange/OneDrive: bloquear a las personas que están fuera del formulario de la organización acceder al contenido. Muestre al usuario una sugerencia y envíele una notificación por correo electrónico en la que se le envíe una notificación de que está tomando una acción que está prohibida por la directiva DLP.
-- Teams Chat y canal: impedir que se comparta información confidencial en el chat o canal
-- Windows 10 Dispositivos: auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
-- Office Aplicaciones: muestra un elemento emergente que notifica al usuario que está participando en un comportamiento arriesgado y bloquea o bloquea, pero permite la invalidación.
+- Teams chat y canal: impedir que se comparta información confidencial en el chat o canal
+- Windows 10 dispositivos: auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
+- Office aplicaciones: muestra un elemento emergente que notifica al usuario que está participando en un comportamiento arriesgado y bloquea o bloquea, pero permite la invalidación.
 - Recursos compartidos de archivos locales: mueva el archivo desde donde se almacena a una carpeta de cuarentena
 
 > [!NOTE]
@@ -219,3 +219,7 @@ Para obtener más información sobre Microsoft 365 DLP, vea:
 - [Obtenga información sobre el panel de alertas de prevención de pérdida de datos](dlp-alerts-dashboard-learn.md)
 
 Para obtener información sobre cómo usar la prevención de pérdida de datos para cumplir con las normativas de privacidad de datos, vea [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+
+## <a name="licensing-and-subscriptions"></a>Licencias y suscripciones
+
+Consulta los [requisitos de licencia de Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) para obtener más información sobre las suscripciones compatibles con DLP.

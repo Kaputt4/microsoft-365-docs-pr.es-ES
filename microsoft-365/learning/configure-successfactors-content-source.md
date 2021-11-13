@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Obtenga información sobre cómo configurar SAP SuccessFactors como un origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ms.openlocfilehash: fafa0d8b610c3964617015ba3d4d1b9771c9e850
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9ea98339d1a73a6bc8c7a8e2d1588329c99bb2ca
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747274"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950766"
 ---
 # <a name="configure-sap-successfactors-as-a-content-source-for-microsoft-viva-learning"></a>Configurar SAP SuccessFactors como origen de contenido para Aprendizaje Microsoft Viva
 
@@ -92,7 +92,7 @@ Una vez que haya completado estos pasos en el portal successFactors, deberá com
     **Id. de** empresa: inicie sesión en el portal de SuccessFactors. Seleccione el icono de perfil y, a continuación, **seleccione Mostrar versión Configuración**. Puede ver su identificador de empresa aquí.
 
     ![Imagen del icono de perfil con Mostrar versión Configuración seleccionado.](../media/learning/sf-3.png)
-        
+
     ![Imagen del panel de configuración de versión.](../media/learning/sf-1.png)
 
 4. Seleccione **Guardar** para activar el contenido de SuccessFactors en Aprendizaje Microsoft Viva. Puede haber un retraso antes de que el contenido esté disponible en Viva Learning.
@@ -102,9 +102,6 @@ Una vez que haya completado estos pasos en el portal successFactors, deberá com
 
 >[!Note]
 > Todos los usuarios de una organización podrán descubrir todos los cursos específicos del espacio empresarial, pero solo podrán acceder a los cursos a los que tienen acceso y consumir. La detección de contenido específico del usuario está planeada para futuras versiones.
-
->[!NOTE]
->Los metadatos del espacio empresarial se almacenan de forma centralizada en nuestros almacenes de datos y no se almacenan en almacenes de datos específicos geográficamente.
 
 >[!NOTE]
 >Actualmente, todos los usuarios de una organización pueden descubrir todos los cursos específicos del inquilino, pero solo podrán consumir los cursos a los que tienen acceso. La detección de contenido específica del usuario basada en roles y permisos está planeada para futuras versiones.
