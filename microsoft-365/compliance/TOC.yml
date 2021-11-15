@@ -26,6 +26,34 @@
       href: plan-for-security-and-compliance.md
     - name: Extensibilidad de cumplimiento
       href: compliance-extensibility.md
+- name: Características entre soluciones
+  items:
+    - name: "Incorporar dispositivos Windows\_10 y Windows\_11"
+      items:
+        - name: "Introducción a la incorporación de dispositivos Windows\_10 y Windows\_11 a Microsoft\_365"
+          href: device-onboarding-overview.md
+        - name: "Incorporar dispositivos Windows\_10 y Windows\_11 mediante la directiva de grupo"
+          href: device-onboarding-gp.md
+        - name: "Incorporar dispositivos Windows\_10 y Windows\_11 con herramientas de Administración de dispositivos móviles"
+          href: device-onboarding-mdm.md
+        - name: "Incorporar dispositivos Windows\_10 y Windows\_11 con Configuration\_Manager"
+          href: device-onboarding-sccm.md
+        - name: "Incorporar dispositivos Windows 10 y Windows\_11 mediante un script local"
+          href: device-onboarding-script.md
+        - name: Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
+          href: device-onboarding-vdi.md
+    - name: Incorporar dispositivos macOS (versión preliminar)
+      items:
+        - name: Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)
+          href: device-onboarding-macos-overview.md
+        - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Microsoft Intune (versión preliminar)
+          href: device-onboarding-offboarding-macos-intune.md
+        - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)
+          href: device-onboarding-offboarding-macos-intune-mde.md
+        - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro (versión preliminar)
+          href: device-onboarding-offboarding-macos-jamfpro.md
+        - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
+          href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Administrar riesgos internos
   items:
     - name: Soluciones de riesgos internos de Microsoft 365
@@ -319,36 +347,12 @@
               href: dlp-on-premises-scanner-get-started.md
             - name: Introducción a la prevención de pérdida de datos en punto de conexión
               href: endpoint-dlp-getting-started.md
-            - name: Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
-              href: endpoint-dlp-configure-proxy.md
+            - name: "Configurar el proxy del dispositivo y la conexión a Internet para Information\_Protection"
+              href: device-onboarding-configure-proxy.md
             - name: Introducción a la extensión de cumplimiento de Microsoft
               href: dlp-chrome-get-started.md
             - name: Introducción al panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-get-started.md
-            - name: Métodos y herramientas de incorporación de dispositivos DLP de punto de conexión
-              items:
-                - name: Herramientas y métodos de incorporación para dispositivos Windows 10
-                  href: dlp-configure-endpoints.md
-                - name: Incorporar dispositivos Windows 10 mediante la directiva de grupo
-                  href: dlp-configure-endpoints-gp.md
-                - name: Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles
-                  href: dlp-configure-endpoints-mdm.md
-                - name: Incorporar dispositivos Windows 10 con Configuration Manager
-                  href: dlp-configure-endpoints-sccm.md
-                - name: Incorporar dispositivos Windows 10 mediante un script local
-                  href: dlp-configure-endpoints-script.md
-                - name: Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
-                  href: dlp-configure-endpoints-vdi.md
-            - name: Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)
-              href: device-onboarding-macos-overview.md
-            - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Microsoft Intune (versión preliminar)
-              href: device-onboarding-offboarding-macos-intune.md
-            - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)
-              href: device-onboarding-offboarding-macos-intune-mde.md
-            - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro (versión preliminar)
-              href: device-onboarding-offboarding-macos-jamfpro.md
-            - name: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
-              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Usar DLP
           items:
             - name: DLP y Microsoft Teams

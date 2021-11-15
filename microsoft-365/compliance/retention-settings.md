@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: a1ac660e9abb389fb45b29b9934d4aa949bfb69c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 911b80b13d9d091d0161ddce0fff4d1dbd7dbc0b
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703244"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950514"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -58,7 +58,7 @@ Cuando haya decidido si va a usar un ámbito adaptable o estático, use la sigui
 
 Si elige usar ámbitos adaptables, se le pedirá que seleccione qué tipo de ámbito adaptable desea. Hay tres tipos diferentes de ámbitos adaptables y cada uno admite diferentes atributos o propiedades:
 
-| Tipo de ámbito adaptable | Atributos o propiedades compatibles |
+| Tipo de ámbito adaptable | Entre los atributos o propiedades admitidos se incluyen |
 |:-----|:-----|
 |**Usuarios**. Se aplica a:  <br/> - Correo electrónico de Exchange <br/> - Cuentas de OneDrive <br/> - Chats de Teams <br/> - Mensajes de canales privados de Teams <br/> - Mensajes de usuarios de Yammer| Nombre <br/> Apellidos <br/>Nombre para mostrar <br/> Puesto en la organización <br/> Departamento <br/> Oficina <br/>Dirección <br/> Ciudad <br/>Estado o provincia <br/>Código postal <br/> País o región <br/> Direcciones de correo <br/> Alias <br/> Atributos personalizados de Exchange: CustomAttribute1 - CustomAttribute15|
 |**Sitios de SharePoint**. Se aplica a:  <br/> - Sitios de SharePoint <br/> - Cuentas de OneDrive |Dirección URL del sitio <br/>Nombre del sitio <br/> Propiedades personalizadas de SharePoint: RefinableString00 - RefinableString99 |
@@ -68,6 +68,11 @@ Los nombres de propiedad de los sitios se basan en propiedades administradas de 
 
 - **Alias** se asigna al nombre LDAP **mailNickname**, que se muestra como **Correo electrónico** en el centro de administración de Azure AD.
 - Las **direcciones de correo electrónico** se asignan al nombre LDAP **proxyAddresses**, que se muestra como **otras direcciones de correo electrónico** en el centro de administración de Azure AD.
+
+Los atributos y propiedades enumerados en la tabla se pueden especificar fácilmente al configurar un ámbito adaptable mediante el generador de consultas simple. Los atributos y propiedades adicionales se admiten con el generador de consultas avanzado, como se describe en la sección siguiente.
+
+> [!TIP]
+> Para obtener información adicional acerca del uso del generador de consultas avanzado, consulte el siguiente seminario web: [Creación de consultas avanzadas para usuarios y grupos con ámbitos de directiva adaptables](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 
 Una única directiva de retención puede tener uno o varios ámbitos adaptables.
 
@@ -120,6 +125,12 @@ Antes de configurar el ámbito adaptable, use la sección anterior para identifi
     - **notlike** (comparación de cadenas)
     
     Puede [validar estas consultas avanzadas](#validating-advanced-queries) independientemente de la configuración del ámbito.
+    
+    > [!TIP]
+    > Debe usar el generador de consultas avanzado si desea excluir buzones de correo inactivos. O, por el contrario, dirigirse solo a buzones de correo inactivos. Para esta configuración, use la propiedad OPATH *IsInactiveMailbox*:
+    > 
+    > - Para excluir buzones de correo inactivos, asegúrese de que la consulta incluye: `(IsInactiveMailbox -eq "False")`
+    > - Para dirigirse solo a buzones inactivos, especifique: `(IsInactiveMailbox -eq "True")`
 
 3. Cree tantos ámbitos adaptables como necesite. Puede seleccionar uno o más ámbitos adaptables al crear la directiva de retención.
 
@@ -198,9 +209,17 @@ La ubicación del **correo electrónico de Exchange** admite la retención para 
 
 Los buzones de recursos, los contactos y los grupos de Microsoft 365 no son compatibles con el correo electrónico de Exchange. Para los buzones de grupo de Microsoft 365, seleccione en su lugar la ubicación de **Microsoft 365 Groups**.
 
-Cuando se usa un ámbito de directiva estático y se aplica la configuración de retención a **Todos los destinatarios**, se incluyen [todos los buzones inactivos](create-and-manage-inactive-mailboxes.md). Sin embargo, si cambia este valor predeterminado y configura [inclusiones o exclusiones específicas](#a-policy-with-specific-inclusions-or-exclusions), los buzones inactivos no son compatibles y la configuración de retención no se aplicará ni se excluirá para esos buzones.
+Según la configuración de directivas, los [buzones de correo inactivos](create-and-manage-inactive-mailboxes.md) pueden incluirse o no:
 
-Si finalmente elige incluir o excluir destinatarios con un ámbito de directiva estático, puede seleccionar grupos de distribución y grupos de seguridad habilitados para correo electrónico como una forma eficaz de seleccionar varios destinatarios en lugar de seleccionarlos uno por uno. Cuando se usa esta opción, estos grupos se expanden automáticamente en segundo plano en el momento de la configuración para seleccionar los buzones de los usuarios del grupo. Si posteriormente cambia la pertenencia a esos grupos, la directiva de retención existente no se actualizará automáticamente.
+- Los ámbitos de directiva estática incluyen buzones inactivos cuando se usa la configuración predeterminada **Todos los destinatarios**, pero no se admiten para [inclusiones o exclusiones específicas](#a-policy-with-specific-inclusions-or-exclusions). Sin embargo, si incluye o excluye un destinatario que tiene un buzón de correo activo en el momento en que se aplica la directiva y el buzón más adelante pasa a estar inactivo, la configuración de retención se seguirá aplicando o excluyendo.
+
+- Los ámbitos de directiva adaptables incluyen buzones de correo inactivos de forma predeterminada. Puede controlar este comportamiento mediante el generador de consultas avanzado y la propiedad OPATH *IsInactiveMailbox*:
+    
+    ```console
+    (IsInactiveMailbox -eq "False")
+    ```
+
+Si usa un ámbito de directiva estática y elige destinatarios para incluir o excluir, puede seleccionar grupos de distribución y grupos de seguridad habilitados para correo electrónico como una forma eficaz de seleccionar varios destinatarios en lugar de seleccionarlos uno a uno. Cuando se usa esta opción, estos grupos se expanden automáticamente en segundo plano en el momento de la configuración para seleccionar los buzones de los usuarios del grupo. Si la pertenencia a esos grupos cambia más adelante, la directiva de retención existente no se actualiza automáticamente, a diferencia de los ámbitos de directiva adaptables.
 
 Para obtener información detallada sobre los elementos del buzón de correo que se incluyen y excluyen cuando se configuran las opciones de retención para Exchange, consulte [Qué se incluye en la retención y la eliminación](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 

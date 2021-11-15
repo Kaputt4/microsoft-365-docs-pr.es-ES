@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: 1ac08dc558806d47c382db7c3b4a58f43ff3c4f4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 295e811e6437bb931e1b735725f3c69016cfae8a
+ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754356"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60950682"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
@@ -41,8 +41,8 @@ Para usar la extensión de cumplimiento de Microsoft, el dispositivo debe haber 
 - [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
-- [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
-- [Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión](endpoint-dlp-configure-proxy.md)
+- [Herramientas y métodos de incorporación para dispositivos Windows 10](device-onboarding-overview.md)
+- [Configurar la configuración de proxy de dispositivo y conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
 
 ### <a name="skusubscriptions-licensing"></a>Licencias de SKU y suscripciones
@@ -95,8 +95,8 @@ Si va a implementar la extensión de cumplimiento de Microsoft en todos sus disp
 
 1. Use los procedimientos de estos temas para incorporar sus dispositivos:
     1. [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
-    1. [Herramientas y métodos de incorporación para dispositivos Windows 10](dlp-configure-endpoints.md)
-    1. [Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión](endpoint-dlp-configure-proxy.md)
+    1. [Incorporación de dispositivos Windows 10 y Windows 11](device-onboarding-overview.md)
+    1. [Configurar la configuración de proxy de dispositivo y conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Autohospedaje de máquina única de instalación básica
 
