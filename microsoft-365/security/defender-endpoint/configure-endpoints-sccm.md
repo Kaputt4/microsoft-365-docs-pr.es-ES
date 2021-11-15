@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 0faeb2039f0a66c014d0bb63e6bbc657206e3e16
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: bbaf1dbee85ac02c1ad44cff78a7434b611e3c20
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240205"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962596"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Incorporación Windows dispositivos con Configuration Manager
 
@@ -143,7 +144,7 @@ Si usa una Microsoft Endpoint Manager actual, vea [Create an offboarding configu
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Dispositivos offboard con System Center Configuration Manager de 2012 R2
 
-1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
+1. Obtener el paquete de offboarding desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
     1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.  
     1. Seleccione Windows 10 o Windows 11 como sistema operativo.
     1. En el **campo Método de** implementación, seleccione System Center Configuration Manager **2012/2012 R2/1511/1602**.
@@ -199,9 +200,9 @@ Value: "1"
 Para obtener más información, vea Introducción a [la configuración de cumplimiento en System Center Configuration Manager de 2012 R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
-- [Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
-- [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)
+- [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)
+- [Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
+- [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
 - [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

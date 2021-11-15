@@ -14,14 +14,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5573f9da541b62242ad5686672bedc86c7f9e6ac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 159b4a41d423c2a7af3d367185e29af35a378b6b
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210526"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963112"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Storage cuenta
 
@@ -41,11 +42,11 @@ ms.locfileid: "60210526"
 
 ## <a name="enable-raw-data-streaming"></a>Habilitar la transmisión de datos sin procesar
 
-1. Inicie sesión en el portal de Microsoft 365 Defender ( <https://security.microsoft.com> ) como * Administrador **global** _ o _* Administrador _de seguridad_**.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> como administrador **global** _ o administrador de seguridad __*_**.
 
 2. Vaya a **Configuración** \> **Microsoft 365 Defender** \> **API de streaming**. Para ir directamente a la página **de la API de streaming,** use <https://security.microsoft.com/settings/mtp_settings/raw_data_export> .
 
-3. Seleccione **Agregar**.
+3. Haga clic en **Agregar**.
 
 4. En el **menú desplegable Agregar nueva configuración de la API** de streaming que aparece, configure las siguientes opciones:
    1. **Nombre:** elija un nombre para la nueva configuración.
@@ -85,7 +86,7 @@ ms.locfileid: "60210526"
 
 Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo siguiente:
 
-1. Inicie sesión en el portal de Microsoft 365 Defender ( <https://security.microsoft.com> ) y vaya a **Búsqueda** avanzada \> **de búsqueda**. Para ir directamente a la **página Búsqueda avanzada,** use <security.microsoft.com/advanced-hunting>.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> y vaya a **Caza** \> **avanzada de búsqueda.** Para ir directamente a la **página Búsqueda avanzada,** use <security.microsoft.com/advanced-hunting>.
 
 2. En la **pestaña Consulta,** ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:
 
@@ -102,6 +103,6 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Información general sobre la búsqueda avanzada](../defender/advanced-hunting-overview.md)
-- [Microsoft 365 Defender Streaming API](streaming-api.md)
+- [Microsoft 365 Defender API de streaming](streaming-api.md)
 - [Transmitir Microsoft 365 Defender eventos a su cuenta de Azure Storage](streaming-api-storage.md)
-- [Azure Storage Documentación de la cuenta](/azure/storage/common/storage-account-overview)
+- [Azure Storage documentación de la cuenta](/azure/storage/common/storage-account-overview)

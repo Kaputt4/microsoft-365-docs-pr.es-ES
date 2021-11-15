@@ -14,15 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 371b698dc25a1875c71e7ca942d7e6b7563f40fb
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d2f4eda359b64b1fe4f7be300980c15485fb2bf5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587717"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963400"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar acciones de corrección tras una investigación automatizada
 
@@ -60,7 +61,7 @@ Independientemente de si se realiza automáticamente o tras la aprobación, una 
 
 ## <a name="review-pending-actions"></a>Revisar acciones pendientes
 
-1. Vaya al centro Microsoft 365 seguridad ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 seguridad e</a> inicie sesión.
 2. En el panel de navegación, elija **Centro de actividades**.
 3. Revise los elementos de la **pestaña** Pendiente.
 4. Seleccione una acción para abrir su panel desplegable.
@@ -72,7 +73,7 @@ Independientemente de si se realiza automáticamente o tras la aprobación, una 
 
 ## <a name="review-completed-actions"></a>Revisar acciones completadas
 
-1. Vaya al centro Microsoft 365 seguridad ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 seguridad e</a> inicie sesión.
 2. En el panel de navegación, elija **Centro de actividades**.
 3. Revise los elementos de la **pestaña** Historial.
 4. Seleccione un elemento para ver más detalles sobre esa acción de corrección.
@@ -125,12 +126,12 @@ Los niveles de automatización afectan a si determinadas acciones de corrección
 
 En Microsoft Defender para endpoint, se realiza un seguimiento de todos los veredictos en el [Centro de acciones](auto-investigation-action-center.md#new-a-unified-action-center).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga información sobre las capacidades de respuesta en directo](live-response.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a las investigaciones automatizadas](automated-investigations.md)

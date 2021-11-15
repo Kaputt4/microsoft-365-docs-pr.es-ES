@@ -14,27 +14,23 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en Microsoft 365 de cumplimiento con Microsoft Intune (versión preliminar)
-ms.openlocfilehash: 7e5692197a05f16326d3fd8b43e37a19186b9926
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 82aa3909ac7829f07a797673300cc0061bb4feef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792285"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962716"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con Intune (versión preliminar)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante Intune (versión preliminar)
 
 Puedes usar Intune para incorporar dispositivos macOS en Microsoft 365 de cumplimiento normativo.
 
 > [!IMPORTANT]
 > Use este procedimiento si ***no tiene*** Microsoft Defender para endpoint (MDE) implementado en sus dispositivos macOS
 
-## <a name="get-registered"></a>Registrarse
-
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
-
 **Se aplica a:**
 
-- [Microsoft 365 Prevención de pérdida de datos de extremo (DLP)](./endpoint-dlp-learn-about.md)
+- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 - [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Antes de empezar

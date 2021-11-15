@@ -14,24 +14,20 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar dispositivos macOS en soluciones de cumplimiento
-ms.openlocfilehash: f7ff900fdbeca59a63c0acd2c2f542c6e96f367b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: fbf29e0d66bf31d058cede69aba9fe0c7814a3a7
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950694"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963256"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)
 
 Los dispositivos MacOS se pueden incorporar a Microsoft 365 de cumplimiento mediante Intune o JAMF Pro. Los procedimientos de incorporación varían en función de la solución de administración que se use. Si los dispositivos macOS ya se han incorporado a Microsoft Defender para endpoint (MDE), hay menos pasos. Consulte [Pasos siguientes para](#next-steps) obtener vínculos a los procedimientos adecuados.
 
-## <a name="get-registered"></a>Registrarse
-
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
-
 **Se aplica a:**
 
-- [Microsoft 365 prevención de pérdida de datos de punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
+- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 - [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -96,16 +92,16 @@ Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, d
    > [!div class="mx-imgBorder"]
    > ![habilitar la administración de dispositivos.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Es necesario incorporar dispositivos Microsoft 365 soluciones de cumplimiento normativo para recibir telemetría del sensor DLP y aplicar directivas de prevención de pérdida de datos. 
 
 Tema | Descripción
 :---|:---
-|[Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con Intune (versión preliminar)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Para dispositivos macOS administrados a través de Intune
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Para dispositivos macOS que se administran a través de Intune y que tienen Microsoft Defender para endpoint (MDE) implementados en ellos
-|[Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con JAMF Pro (versión preliminar)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | Para dispositivos macOS que se administran a través de jamf Pro
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|Para dispositivos macOS que se administran a través de jamf Pro y que tienen Microsoft Defender para endpoint (MDE) implementados en ellos
+|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante Intune (versión preliminar)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Para dispositivos macOS administrados a través de Intune
+|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | Para dispositivos macOS que se administran a través de JAMF Pro
+|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
 
 
 ## <a name="related-topics"></a>Temas relacionados

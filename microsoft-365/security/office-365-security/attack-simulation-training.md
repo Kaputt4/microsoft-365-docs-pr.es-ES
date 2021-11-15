@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 10a4391cc901eaa51f7ff272b5b014fdb9e17dcd
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 394a37baffb9961511b5a944a774b2083a384a58
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907854"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962463"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simular un ataque de suplantación de identidad en Defender para Office 365
 
@@ -29,7 +30,7 @@ Para obtener información de introducción sobre el aprendizaje de simulación d
 
 Para iniciar un ataque de suplantación de identidad simulada, siga estos pasos:
 
-1. En el portal Microsoft 365 Defender, vaya a La pestaña Simulaciones de aprendizaje de simulación de & de colaboración de <https://security.microsoft.com/>  \>  \>  correo electrónico.
+1. En el portal Microsoft 365 Defender, vaya a La pestaña Simulaciones de aprendizaje de simulación de & de colaboración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \>  \>  correo electrónico.
 
    Para ir directamente a la **pestaña Simulaciones,** use <https://security.microsoft.com/attacksimulator?viewid=simulations> .
 

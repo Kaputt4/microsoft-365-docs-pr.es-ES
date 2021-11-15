@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-pilotmtpproject
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 25a36b74e612c5f09d9794c09d14301e6c32f4ba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fa9f41675c68f4d832c14b2cf1c33dcf1a9d9d6d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162415"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963292"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 
@@ -37,7 +38,7 @@ Después de preparar el entorno [piloto,](eval-defender-investigate-respond.md)e
 
 Un incidente en Microsoft 365 Defender es una colección de alertas correlacionadas y datos asociados que son la historia de un ataque.
 
-Microsoft 365 servicios y aplicaciones crean alertas cuando detectan un evento o actividad sospechosos o malintencionados. Las alertas individuales proporcionan pistas valiosas sobre un ataque completado o en curso. Sin embargo, los ataques suelen emplear varias técnicas en distintos tipos de entidades, como dispositivos, usuarios y buzones. El resultado son varias alertas para varias entidades del espacio empresarial.
+Los servicios y aplicaciones de Microsoft 365 crean alertas cuando detectan un evento o actividad sospechosos o malintencionados. Las alertas individuales proporcionan pistas valiosas sobre un ataque completado o en curso. Sin embargo, los ataques suelen emplear varias técnicas en distintos tipos de entidades, como dispositivos, usuarios y buzones de entrada. El resultado son varias alertas para varias entidades del espacio empresarial.
 
 >[!Note]
 >Si es completamente nuevo en el análisis [](first-incident-overview.md) de seguridad y la respuesta a incidentes, consulte el tutorial Responder a su primer incidente para obtener una visita guiada a un proceso típico de análisis, corrección y revisión posterior al incidente.
@@ -53,7 +54,7 @@ El portal Microsoft 365 Defender cuenta con capacidades integradas para crear at
 
 - Tutoriales de ataques & simulaciones para Microsoft 365 Defender para extremos en [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations) .
 
-  En el portal Microsoft 365 Defender, seleccione **Endpoints > Tutoriales & simulaciones**.
+  En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>seleccione **Endpoints > Tutoriales & simulaciones**.
 
 ### <a name="defender-for-office-365-attack-simulation-training"></a>Defender para el Office 365 de simulación de ataques
 
@@ -186,7 +187,7 @@ Para ver la característica De incidentes y respuesta automatizados en acción, 
 
 Al cambiar al punto de vista del analista de SOC, ahora puede empezar a investigar el ataque en el portal de Microsoft 365 Defender datos.
 
-1. Abra el [portal Microsoft 365 Defender](https://security.microsoft.com/).
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>.
 
 2. En el panel de navegación, seleccione **Incidentes & alertas > incidentes**.
 
@@ -202,7 +203,7 @@ Las alertas generadas durante esta simulación están asociadas con la misma ame
 
 Para ver el incidente:
 
-1. Abra el [portal Microsoft 365 Defender](https://security.microsoft.com/).
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>.
 
 2. En el panel de navegación, seleccione **Incidentes & alertas > incidentes**.
 

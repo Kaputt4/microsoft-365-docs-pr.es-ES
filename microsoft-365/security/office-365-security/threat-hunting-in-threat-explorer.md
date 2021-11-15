@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Use el Explorador de amenazas o detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28da09d799b035a79a661eaf28912de29ad2f43f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a12d83e3345936e0eb02e3d5f687dbda67715d00
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196362"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963208"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 
@@ -42,7 +44,7 @@ En este artículo:
 
 Si su organización tiene [Microsoft Defender](defender-for-office-365.md)para Office 365 y tiene los [permisos,](#required-licenses-and-permissions)puede usar detecciones en tiempo **real** o **explorador** para detectar y corregir amenazas.
 
-En el portal Microsoft 365 Defender ( ), vaya a Correo electrónico & colaboración y, a continuación, elija Explorador o <https://security.microsoft.com> **Detecciones en tiempo real**.   Para hacerlo directamente en la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>
+En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya a Correo **& colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para hacerlo directamente en la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>
 
 Con estas herramientas, puede:
 
@@ -212,17 +214,17 @@ Aparecen nombres y GUID de las reglas de transporte aplicadas al mensaje. Los an
 > [!IMPORTANT]
 > Exchange búsqueda de reglas de transporte y disponibilidad de nombres dependen del rol específico que se le asigne. Debe tener uno de los siguientes roles o permisos para ver los nombres de regla de transporte y la búsqueda. Sin embargo, incluso sin los roles o permisos siguientes, un analista puede ver la etiqueta de regla de transporte y la información GUID en los detalles del correo electrónico. No se ven afectadas otras experiencias de visualización de registros en cuadrículas de correo electrónico, control de envío de correo electrónico, filtros y exportación.
 >
-> - Exchange Online Solo - Prevención de pérdida de datos: Todo
-> - Exchange Online Only - O365SupportViewConfig: All
+> - Exchange Online solo : prevención de pérdida de datos: todo
+> - Exchange Online solo - O365SupportViewConfig: Todos
 > - Microsoft Azure Active Directory o Exchange Online: Administrador de seguridad: Todo
 > - Azure Active Directory o Exchange Online: Lector de seguridad: Todos
-> - Exchange Online Solo- Reglas de transporte: Todas
-> - Exchange Online Solo - configuración View-Only: todo
+> - Exchange Online solo : reglas de transporte: todas
+> - Exchange Online solo - View-Only configuración: todo
 >
 > Dentro de la cuadrícula de correo electrónico, el control desplegable Detalles y csv exportado, los ETR se presentan con un Nombre/GUID como se muestra a continuación.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange Reglas de transporte.](../../media/ETR_Details.png)
+> > ![Exchange de transporte.](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Conectores de entrada
 
@@ -243,7 +245,7 @@ Debe tener [Microsoft Defender para Office 365](defender-for-office-365.md) usar
 
 Para ver y usar detecciones en tiempo real o explorador, debe tener los siguientes permisos:
 
-- Para el portal Microsoft 365 Defender:
+- Para el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender:</a>
   - Administración de la organización
   - Administrador de seguridad (se puede asignar en el centro Azure Active Directory de administración ( <https://aad.portal.azure.com> )
   - Lector de seguridad

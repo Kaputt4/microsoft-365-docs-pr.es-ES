@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 9d57272626c6f6c5d0e44052522cb73b9b675fd8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 936b14ceaa5f80e9371e776727bbb5304c60590d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218190"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963184"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Estado y configuración del sensor de Identidad de Microsoft Defender en Microsoft 365 Defender
 
@@ -28,7 +29,7 @@ En este artículo se explica cómo configurar y supervisar [sensores](/defender-
 
 ## <a name="view-defender-for-identity-sensor-settings-and-status"></a>Ver configuración y estado del sensor de Defender para identidad
 
-1. En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 

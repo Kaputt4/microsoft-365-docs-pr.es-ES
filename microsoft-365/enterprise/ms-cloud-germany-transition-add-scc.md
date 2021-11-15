@@ -17,13 +17,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkDEFENDER
 description: 'Resumen: pasos de migración de exhibición de documentos electrónicos para la migración desde Microsoft Cloud Deutschland.'
-ms.openlocfilehash: afea899e06a732ff0ab13bf416410aa94bc3c191
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 08c44374b834796bce5f624008dd2f7493e7c3f7
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168451"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963076"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Información sobre la experiencia de exhibición de documentos electrónicos durante la migración desde Microsoft Cloud Deutschland
 Las secciones siguientes proporcionan información adicional sobre la experiencia de exhibición de documentos electrónicos al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.
@@ -50,7 +51,7 @@ En caso de que una búsqueda devuelva cero resultados o un error durante la migr
 **Se aplica a:** Todos los clientes que usan eDiscovery
 
 En la fase 9, se completarán los pasos finales para pasar a la nueva región del centro de datos alemán. En esta fase, se migrarán todos los componentes de servicio restantes.
-Después de la fase 9, ya no se admite el uso del Centro de seguridad y cumplimiento en Microsoft Cloud Germany (protection.office.de). En su lugar, use el nuevo [Centro de seguridad](https://security.microsoft.com/) o centro de [cumplimiento.](https://compliance.microsoft.com/) Todos los datos se han migrado a los nuevos portales de administración.
+Después de la fase 9, ya no se admite el uso del Centro de seguridad y cumplimiento en Microsoft Cloud Germany (protection.office.de). Use el nuevo <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centro Microsoft 365 seguridad</a> o el Centro de cumplimiento de Microsoft 365 en su <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">lugar.</a> Todos los datos se han migrado a los nuevos portales de administración.
 
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|

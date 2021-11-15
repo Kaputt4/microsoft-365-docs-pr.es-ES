@@ -11,14 +11,15 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: medium
 description: Obtenga información sobre las tareas que le ayudarán a empezar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 422459bb9831fff265e67c3887fab4288f468f0f
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 640569aef5ed1b632d11523af1d73321579f276e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335447"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963016"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -47,7 +48,7 @@ Para obtener instrucciones paso a paso para empezar a trabajar con el Administra
 > [!IMPORTANT]
 > La seguridad y el cumplimiento están estrechamente integrados para la mayoría de las organizaciones. Es importante que su organización aborde la seguridad básica, la protección contra amenazas y las áreas de administración de identidad y acceso para ayudar a proporcionar un enfoque de defensa en profundidad tanto para la seguridad como para el cumplimiento.
 >
-> Compruebe su [Microsoft 365 puntuación segura en](../security/defender/microsoft-secure-score.md) el centro Microsoft 365 seguridad y completar las tareas descritas en los siguientes artículos:
+> Compruebe su [Microsoft 365 puntuación segura en](../security/defender/microsoft-secure-score.md) el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a> seguridad y completar las tareas descritas en los siguientes artículos:
 >
 > - [Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá](../security/office-365-security/security-roadmap.md)
 > - [Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa](../security/top-security-tasks-for-remote-work.md)
@@ -84,7 +85,7 @@ Cuando el contenido está sujeto a una directiva de retención, las personas pue
 
 Puede establecer rápidamente una directiva de retención para varias ubicaciones del entorno de Microsoft 365, como correo Exchange, sitios de SharePoint, cuentas de OneDrive y grupos Microsoft 365. No hay límites en el número de buzones o sitios que esta directiva puede incluir automáticamente. Pero si necesita ser más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluir o excluir sitios o usuarios.
 
-Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 7: Configurar la información confidencial y las directivas de lenguaje ofensivo
 
@@ -156,6 +157,6 @@ Para obtener instrucciones paso a paso para configurar directivas DLP, [cree, pr
 
 Cada vez más, los empleados tienen cada vez más acceso a crear, administrar y compartir datos en un amplio espectro de plataformas y servicios. En la mayoría de los casos, las organizaciones tienen recursos y herramientas limitados para identificar y mitigar los riesgos de toda la organización, al tiempo que cumplen los requisitos de cumplimiento y los estándares de privacidad de los empleados. Estos riesgos pueden incluir el robo de datos al salir de los empleados y las pérdidas de datos de información fuera de la organización por sobresharing accidental o intenciones malintencionadas.
 
-La administración de riesgos de [Insider](insider-risk-management-policies.md) en Microsoft 365 usa toda la amplitud de los indicadores de servicio e 3rd-party para ayudarle a identificar, recortar y actuar rápidamente en la actividad de usuario de riesgo. Al usar registros de Microsoft 365 y Microsoft Graph, la administración de riesgos de insider le permite definir directivas específicas para identificar indicadores de riesgo y tomar medidas para mitigar estos riesgos.
+La administración de riesgos de [Insider](insider-risk-management-policies.md) en Microsoft 365 usa toda la amplitud de los indicadores de servicio e 3rd-party para ayudarle a identificar, recortar y actuar rápidamente en la actividad de usuario de riesgo. Al usar registros de Microsoft 365 y Microsoft Graph, la administración de riesgos internos le permite definir directivas específicas para identificar indicadores de riesgo y tomar medidas para mitigar estos riesgos.
 
 Para obtener instrucciones paso a paso para planear y configurar directivas de administración de riesgos internas, vea [Plan for insider risk management](insider-risk-management-plan.md) y Get started with [insider risk management](insider-risk-management-configure.md). Para obtener información sobre licencias de administración de riesgos de insider, vea Microsoft 365 guía de licencias para [seguridad y & cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).

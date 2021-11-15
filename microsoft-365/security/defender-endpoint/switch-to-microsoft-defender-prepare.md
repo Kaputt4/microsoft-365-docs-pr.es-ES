@@ -18,15 +18,17 @@ ms.collection:
 - m365solution-mcafeemigrate
 - m365solution-symantecmigrate
 ms.topic: article
-ms.custom: migrationguides
+ms.custom:
+- migrationguides
+- admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 0b5fb7ee6a10ef6aa0fc1448f805ff14d51c3582
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 44b347248d5f9e42bba72a0aea7c315bf10a4245
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245722"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960795"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -63,7 +65,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 <br/><br/>
 
-|SO|Resource|
+|SO|Recurso|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|
@@ -83,14 +85,14 @@ Ahora que ha actualizado los dispositivos de su organización, el siguiente paso
 
 4. Si los puntos de conexión (como dispositivos) de su organización usan un proxy para tener acceso a Internet, vea Configuración de defender para puntos de [conexión: Configuración de red](production-deployment.md#network-configuration).
 
-En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
+En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender seguridad.</a>
 
 > [!NOTE]
-> El Microsoft 365 Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en [https://security.microsoft.com](https://security.microsoft.com) . The former Centro de seguridad de Microsoft Defender ( https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. Para obtener más información, [vea Microsoft 365 Defender información general del portal](portal-overview.md).
+> El Microsoft 365 Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . The former Centro de seguridad de Microsoft Defender ( https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. Para obtener más información, [vea Microsoft 365 Defender información general del portal](portal-overview.md).
 
 ## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>Conceder acceso al portal de Microsoft 365 Defender web
 
-El Microsoft 365 Defender web ( ) es donde se accede y se configuran las características y capacidades [https://security.microsoft.com](https://security.microsoft.com) de Defender para endpoint. Para obtener más información, vea [Overview of the Microsoft 365 Defender portal](use.md).
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender es</a> donde tiene acceso y configura las características y capacidades de Defender para endpoint. Para obtener más información, vea [Overview of the Microsoft 365 Defender portal](use.md).
 
 Los permisos del portal Microsoft 365 Defender pueden concederse mediante permisos básicos o control de acceso basado en roles (RBAC). Se recomienda usar RBAC para que tenga un control más detallado sobre los permisos.
 
@@ -102,7 +104,7 @@ Los permisos del portal Microsoft 365 Defender pueden concederse mediante permis
 
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
     - [Administración de directivas de grupo avanzadas](/microsoft-desktop-optimization-pack/agpm)
-    - [Windows Centro de administración](/windows-server/manage/windows-admin-center/overview)
+    - [Windows de administración](/windows-server/manage/windows-admin-center/overview)
 
 3. Conceda acceso al portal de Microsoft 365 Defender web. (¿Necesita ayuda? Consulte [Manage portal access using RBAC](rbac.md)).
 
@@ -115,7 +117,7 @@ Para habilitar la comunicación entre los dispositivos y Defender para endpoint,
 |Capacidades|Sistema operativo|Recursos|
 |---|---|---|
 |[Detección y respuesta de extremos](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configurar el proxy de máquina y la configuración de conectividad a Internet](configure-proxy-internet.md)|
-|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
 |EDR|macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|[Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)|
 |Antivirus|macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|[Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|

@@ -14,17 +14,18 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
+- admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 2c463da937222939586029a970439b05134315a3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 82addf4b41ae41c67353a4045c8fdacce7bb8afa
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554581"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963052"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -72,7 +73,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 3. Desplácese hacia abajo y, a continuación, active **Habilitar EDR en modo de bloque**.
 
 > [!NOTE]
-> EDR en modo de bloque solo se puede desactivar en el portal de Microsoft 365 Defender ( ) o en el [https://security.microsoft.com](https://security.microsoft.com) antiguo Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). No puede usar claves del Registro, Microsoft Intune o directiva de grupo para habilitar o deshabilitar EDR en modo de bloque.
+> EDR en modo de bloque solo se puede desactivar en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a> de Microsoft 365 Defender o en el antiguo Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). No puede usar claves del Registro, Microsoft Intune o directiva de grupo para habilitar o deshabilitar EDR en modo de bloque.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Requisitos para EDR en modo de bloque
 
@@ -89,7 +90,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 > [!IMPORTANT]
 > Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales y de que las [exclusiones están configuradas.](configure-exclusions-microsoft-defender-antivirus.md) EDR en modo de bloque respeta las exclusiones que se definen para Antivirus de Microsoft Defender, pero no los indicadores [definidos](manage-indicators.md) para Microsoft Defender para endpoint.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo si tengo Antivirus de Microsoft Defender en dispositivos?
 
@@ -148,7 +149,7 @@ Puede usar PowerShell para confirmar que el EDR en modo de bloque está activado
 Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en modo de bloque se admite de las siguientes versiones de Windows:
 
 - Windows 10 (todas las versiones)
-- Windows Servidor, versión 1803 o posterior 
+- Windows server, versión 1803 o posterior 
 - Windows Server 2022
 - Windows Server 2019 
 - Windows Server 2016
@@ -162,7 +163,7 @@ Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en mo
 
 Si decide deshabilitar EDR en modo de bloqueo, el sistema puede tardar hasta 30 minutos en deshabilitar esta funcionalidad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Blog Community tech: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)

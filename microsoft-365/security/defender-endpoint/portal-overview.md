@@ -14,14 +14,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c53cce4cb12d08d59b09b041883531b4dee11ce9
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 01914a99c627237568cadbc5b5a3f6205ac3ce55
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554941"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963412"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Información general del portal del Centro de Microsoft 365 Defender
 
@@ -37,7 +38,7 @@ ms.locfileid: "60554941"
 
 Enterprise de seguridad pueden usar Microsoft 365 Defender para supervisar y ayudar a responder a las alertas de posibles infracciones de datos o actividad de amenazas persistentes avanzadas.
 
-Puede usar [Microsoft 365 Defender](https://security.microsoft.com) para:
+Puede usar <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> para:
 
 - Ver, ordenar y clasificar alertas desde los puntos de conexión
 - Buscar más información sobre indicadores observados, como archivos y direcciones IP
@@ -96,9 +97,9 @@ Icono|Descripción
 ![Icono de eventos AV de Microsoft Defender.](images/atp-windows-defender-av-events-icon.png)|Antivirus de Microsoft Defender eventos
 ![Icono de eventos de Protección de aplicaciones.](images/atp-Application-Guard-events-icon.png)|Protección de aplicaciones de Windows Defender eventos
 ![Icono de eventos de Device Guard.](images/atp-Device-Guard-events-icon.png)|Device Guard de Windows Defender eventos
-![Icono de eventos de Protección contra vulnerabilidades de seguridad.](images/atp-Exploit-Guard-events-icon.png)|Windows Defender Eventos de Protección contra vulnerabilidades de seguridad
-![Icono de eventos de SmartScreen.](images/atp-Smart-Screen-events-icon.png)|Windows Defender Eventos de SmartScreen
-![Icono de eventos de firewall.](images/atp-Firewall-events-icon.png)|Windows Eventos de firewall
+![Icono de eventos de Protección contra vulnerabilidades de seguridad.](images/atp-Exploit-Guard-events-icon.png)|Windows Defender exploit Guard
+![Icono de eventos de SmartScreen.](images/atp-Smart-Screen-events-icon.png)|Windows Defender smartscreen
+![Icono de eventos de firewall.](images/atp-Firewall-events-icon.png)|Windows firewall
 ![Icono de acción de respuesta.](images/atp-respond-action-icon.png)|Acción de respuesta
 ![Icono procesar eventos.](images/atp-process-event-icon.png)|Eventos de proceso
 ![Icono de eventos de comunicación de red.](images/atp-network-communications-icon.png)|Eventos de red

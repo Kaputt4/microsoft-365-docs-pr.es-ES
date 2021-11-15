@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 98df694002d31e330fff1b5d53618044bc6c5dae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 072654e8047989552d86f4030e420078e4ae1cc2
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59218230"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962511"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Alertas de seguridad de Defender for Identity en Microsoft 365 Defender
 
@@ -23,7 +24,7 @@ ms.locfileid: "59218230"
 
 En este artículo se explican los conceptos básicos de cómo trabajar con [alertas](/defender-for-identity) de seguridad de Microsoft Defender para identidad en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Las alertas de Defender for Identity se integran de forma nativa [en Microsoft 365 Defender](https://security.microsoft.com) con un formato de página de alerta de identidad dedicado. Esto marca el primer paso en el viaje para introducir la experiencia completa de [Microsoft Defender for Identity en Microsoft 365 Defender](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
+Las alertas de Defender for Identity se integran de forma nativa <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender</a> con un formato de página de alerta de identidad dedicado. Esto marca el primer paso en el viaje para introducir la experiencia completa de [Microsoft Defender for Identity en Microsoft 365 Defender](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
 
 La nueva página alerta de identidad proporciona a los clientes de Microsoft Defender para identidad mejores enriquecimiento de señales entre dominios y nuevas capacidades automatizadas de respuesta de identidad. Garantiza la seguridad y ayuda a mejorar la eficacia de las operaciones de seguridad.
 
@@ -38,7 +39,7 @@ Las alertas que se originan en Defender for Identity ahora pueden desencadenar l
 
 Se puede acceder a las alertas desde varias ubicaciones, incluida la página **Alertas,** la página Incidentes, las páginas de dispositivos **individuales** y desde la **página Búsqueda** avanzada.  En este ejemplo, revisaremos la página **Alertas**.
 
-En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Incidentes & y,** a continuación, a **Alertas**.
+En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Incidentes & y,** a continuación, a **Alertas**.
 
 ![Vaya a Incidentes y alertas y, a continuación, Alertas.](../../media/defender-identity/incidents-alerts.png)
 

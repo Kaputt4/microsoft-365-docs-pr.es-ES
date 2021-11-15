@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 95f20e1e5ac3c623decb131929d3c27164f3a96b
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 156ddfc6a44074db23369ca20e8d7c3d4471459e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60908010"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963124"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -136,7 +137,7 @@ DeviceNetworkEvents
 
 ## <a name="changed-behavior"></a>Comportamiento cambiado
 
-En la siguiente sección se enumeran los cambios que observará en Microsoft Defender para endpoint y/o Microsoft 365 Security Center cuando esta funcionalidad esté habilitada.
+En la siguiente sección se enumeran los cambios que observará en Microsoft Defender para endpoint y/o <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de</a> seguridad cuando esta funcionalidad esté habilitada.
 
 1. Se espera que los dispositivos que no están incorporados a Microsoft Defender para endpoint aparezcan en el inventario de dispositivos, la búsqueda avanzada y las consultas api. Esto puede aumentar significativamente el tamaño de los resultados de la consulta.
     1. Las tablas "DeviceInfo" y "DeviceNetworkInfo" en la búsqueda avanzada ahora mantendrán el dispositivo detectado. Puedes filtrar esos dispositivos mediante el atributo "OnboardingStatus".
@@ -144,7 +145,7 @@ En la siguiente sección se enumeran los cambios que observará en Microsoft Def
 2. Los dispositivos no administrados se asignarán a grupos de dispositivos existentes según los criterios definidos.
 3. En raras ocasiones, la detección estándar puede desencadenar alertas en monitores de red o herramientas de seguridad. Proporcione comentarios, si experimenta este tipo de eventos, para evitar que estos problemas se repitan. Puede excluir explícitamente destinos específicos o subredes enteras de ser sondeados activamente por la detección estándar.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configuración de la detección de dispositivo](configure-device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

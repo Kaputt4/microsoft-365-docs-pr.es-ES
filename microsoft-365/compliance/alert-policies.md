@@ -18,13 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+- admindeeplinkDEFENDER
 description: Cree directivas de alerta en el Centro de cumplimiento de Microsoft 365 o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: afb186d0b0f1eb1073822261dafdb28ef839509d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: f942420a18a9f0bef947e215754eb1c1164eb08a
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753948"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963040"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -68,7 +69,7 @@ Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_b
 
 ### <a name="microsoft-365-defender-portal"></a>Portal de Microsoft 365 Defender
 
-Vaya a <https://security.microsoft.com> y, en **Correo & colaboración,** seleccione **Directivas & reglas de alerta** directiva de  >  **alerta**. Como alternativa, puede ir directamente a <https://security.microsoft.com/alertpolicies> .
+Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 centro de seguridad y,</a> en Correo & **de** colaboración, seleccione Directivas & reglas **directiva de**  >  **alerta**. Como alternativa, puede ir directamente a <https://security.microsoft.com/alertpolicies> .
 
 ![En el portal de Defender, seleccione Directivas & reglas en Correo & colaboración y, a continuación, seleccione Directiva de alerta para ver y crear directivas de alerta.](../media/LaunchAlertPoliciesDefenderPortal.png)
 
@@ -99,7 +100,7 @@ También puede definir etiquetas de usuario como condición de una directiva de 
 
   - Prevención de pérdida de datos
 
-  - Información de gobierno
+  - Gobierno de información
 
   - Flujo del correo
 
@@ -155,9 +156,9 @@ En la tabla también se indica Office 365 Enterprise y Office 365 plan del Gobie
 |**Actividad de reenvío de correo electrónico sospechoso**|Genera una alerta cuando alguien de la organización ha enviado automáticamente correo electrónico a una cuenta externa sospechosa. Se trata de una advertencia anticipada para el comportamiento que puede indicar que la cuenta está en peligro, pero no lo suficientemente grave como para restringir al usuario. Esta directiva tiene una **configuración de** gravedad alta. Aunque es poco común, una alerta generada por esta directiva puede ser una anomalía. Es una buena idea comprobar si la cuenta [de usuario está en peligro.](../security/office-365-security/responding-to-a-compromised-email-account.md)|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Patrones de envío de correo electrónico sospechosos detectados**|Genera una alerta cuando alguien de la organización ha enviado correo electrónico sospechoso y corre el riesgo de que se le restringa el envío de correo electrónico. Se trata de una advertencia anticipada para el comportamiento que puede indicar que la cuenta está en peligro, pero no lo suficientemente grave como para restringir al usuario. Esta directiva tiene una **configuración de** gravedad media. Aunque es poco común, una alerta generada por esta directiva puede ser una anomalía. Sin embargo, es una buena idea comprobar si la cuenta de usuario [está en peligro.](../security/office-365-security/responding-to-a-compromised-email-account.md)|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5  |
 |**Inquilino restringido para enviar correo electrónico**|Genera una alerta cuando la mayor parte del tráfico de correo electrónico de su organización se ha detectado como sospechoso y Microsoft ha restringido a su organización el envío de correo electrónico. Investigue las cuentas de usuario y administrador potencialmente comprometidas, los nuevos conectores o las retransmisiones abiertas y, a continuación, póngase en contacto con el Soporte técnico de Microsoft para desbloquear su organización. Esta directiva tiene una **configuración de** gravedad alta. Para obtener más información sobre por qué se bloquean las organizaciones, vea Corregir problemas de entrega de correo electrónico para el código de [error 5.7.7xx en Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
-|**Actividad de archivo de usuario externo inusual**|Genera una alerta cuando se realiza un número inusualmente grande de actividades en archivos de SharePoint o OneDrive usuarios externos a la organización. Esto incluye actividades como el acceso a archivos, la descarga de archivos y la eliminación de archivos. Esta directiva tiene una **configuración de** gravedad alta.|Información de gobierno|E5/G5, Microsoft Defender para Office 365 P2 o Microsoft 365 E5 de complemento|
-|**Volumen inusual de uso compartido de archivos externos**|Genera una alerta cuando un número inusualmente grande de archivos SharePoint o OneDrive se comparten con usuarios externos a la organización. Esta directiva tiene una **configuración de** gravedad media.|Información de gobierno|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 de complemento|
-|**Volumen inusual de eliminación de archivos**|Genera una alerta cuando se elimina un número inusualmente grande de archivos SharePoint o OneDrive en un período de tiempo corto. Esta directiva tiene una **configuración de** gravedad media.|Información de gobierno|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 de complemento|
+|**Actividad de archivo de usuario externo inusual**|Genera una alerta cuando se realiza un número inusualmente grande de actividades en archivos de SharePoint o OneDrive usuarios externos a la organización. Esto incluye actividades como el acceso a archivos, la descarga de archivos y la eliminación de archivos. Esta directiva tiene una **configuración de** gravedad alta.|Gobierno de información|E5/G5, Microsoft Defender para Office 365 P2 o Microsoft 365 E5 de complemento|
+|**Volumen inusual de uso compartido de archivos externos**|Genera una alerta cuando un número inusualmente grande de archivos SharePoint o OneDrive se comparten con usuarios externos a la organización. Esta directiva tiene una **configuración de** gravedad media.|Gobierno de información|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 de complemento|
+|**Volumen inusual de eliminación de archivos**|Genera una alerta cuando se elimina un número inusualmente grande de archivos SharePoint o OneDrive en un período de tiempo corto. Esta directiva tiene una **configuración de** gravedad media.|Gobierno de información|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 de complemento|
 |**Aumento inusual en el correo electrónico notificado como cebo**|Genera una alerta cuando hay un aumento significativo en el número de personas de la organización que usan el complemento Mensaje de informe Outlook para notificar mensajes como correo de suplantación de identidad. Esta directiva tiene una **configuración de** gravedad media. Para obtener más información acerca de este complemento, vea [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**Suplantación de identidad de usuario entregada a la bandeja de entrada/carpeta**<sup>1,</sup><sup>2</sup>|Genera una alerta cuando Microsoft detecta que un administrador o un reemplazo de usuario ha permitido la entrega de un mensaje de suplantación de identidad de usuario en la bandeja de entrada (u otra carpeta accesible para el usuario) de un buzón. Algunos ejemplos de invalidaciones incluyen una regla de flujo de correo o bandeja de entrada que permite mensajes de un remitente o dominio específico, o una directiva contra correo no deseado que permite mensajes de remitentes o dominios específicos. Esta directiva tiene una **configuración de** gravedad media.|Administración de amenazas|E5/G5 o Defender para una Office 365 de complemento P2|
 |**El usuario no puede enviar correo electrónico**|Genera una alerta cuando alguien de la organización está restringido a enviar correo saliente. Esto suele ocurrir cuando una cuenta está en peligro  y el usuario aparece en la página Usuarios restringidos de la Centro de cumplimiento de Microsoft 365. (Para obtener acceso a esta página, vaya a **Administración de amenazas > Revisar > usuarios restringidos**). Esta directiva tiene una **configuración de** gravedad alta. Para obtener más información acerca de los usuarios restringidos, vea [Removing a user, domain, or IP address from a block list after sending spam email](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Administración de amenazas|E1/F1/G1, E3/F3/G3 o E5/G5|
@@ -182,7 +183,7 @@ Para ver alertas:
 
 ### <a name="microsoft-365-defender-portal"></a>Portal de Microsoft 365 Defender
 
-Vaya a <https://security.microsoft.com> y, a continuación, seleccione **Incidentes &**  >  **alertas .** Como alternativa, puede ir directamente a <https://security.microsoft.com/alerts> .
+Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 centro de seguridad y,</a> a continuación, seleccione Incidentes &   >  **alertas .** Como alternativa, puede ir directamente a <https://security.microsoft.com/alerts> .
 
 ![En el portal Microsoft 365 Defender, seleccione Incidentes & alertas y, a continuación, seleccione Alertas.](../media/ViewAlertsDefenderPortal.png)
 
@@ -249,7 +250,7 @@ En la tabla siguiente se enumeran los roles necesarios para ver alertas de las s
 
 Para ver a qué categoría está asignada una directiva de alerta predeterminada, vea la tabla [en Directivas de alerta predeterminadas](#default-alert-policies).
 
-|Rol|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros|
+|Role|Gobierno de información|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
@@ -327,7 +328,7 @@ Estas son algunas tareas que puede realizar para administrar alertas.
 
 Las alertas que se desencadenan Office 365 Cloud App Security directivas se muestran ahora en la página **Alertas** del Centro de cumplimiento. Esto incluye alertas desencadenadas por directivas de actividad y alertas desencadenadas por directivas de detección de anomalías en Office 365 Cloud App Security. Esto significa que puede ver todas las alertas en el centro de cumplimiento. Office 365 Cloud App Security solo está disponible para organizaciones con una suscripción Office 365 Enterprise E5 o Office 365 us Government G5. Para obtener más información, vea [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
-Las organizaciones que Microsoft Cloud App Security como parte de una suscripción Enterprise Mobility + Security E5 o como un servicio independiente también pueden ver alertas de Cloud App Security relacionadas con Microsoft 365 aplicaciones y servicios en el Centro de cumplimiento de Microsoft 365 o el Microsoft 365 Defender web.
+Las organizaciones que Microsoft Cloud App Security como parte de una suscripción Enterprise Mobility + Security E5 o como un servicio independiente también pueden ver alertas de Cloud App Security relacionadas con Microsoft 365 aplicaciones y servicios en el Centro de cumplimiento de Microsoft 365 o en el Microsoft 365 Defender portal.
 
 Para mostrar solo Cloud App Security alertas en el centro de  cumplimiento o en el portal de Defender, use el filtro Origen y **seleccione Cloud App Security**.
 

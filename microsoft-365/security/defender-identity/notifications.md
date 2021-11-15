@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: dfb3c5e1edbbf77a95a1e1d5888b070a12bfd7a7
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: b33ee0f59ca02d305ec703ab47aa1d0f2f95b8da
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353627"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963340"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notificaciones de Defender for Identity en Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ En este artículo se explica cómo trabajar con [Microsoft Defender para notific
 
 En Microsoft 365 Defender, puedes agregar destinatarios para notificaciones por correo electrónico de problemas de estado en Defender for Identity.
 
-1. En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -51,7 +52,7 @@ En Microsoft 365 Defender, puedes agregar destinatarios para notificaciones por 
 
 En Microsoft 365 Defender, puede agregar destinatarios para notificaciones por correo electrónico de alertas detectadas.
 
-1. En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -65,7 +66,7 @@ En Microsoft 365 Defender, puede agregar destinatarios para notificaciones por c
 
 Defender for Identity puede notificarte cuando detecta actividades sospechosas enviando alertas de seguridad y estado a tu servidor de Syslog a través de un sensor designado.
 
-1. En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -94,6 +95,6 @@ Defender for Identity puede notificarte cuando detecta actividades sospechosas e
 
     ![Servicio de Syslog configurado.](../../media/defender-identity/syslog-configured.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

@@ -1,5 +1,5 @@
 ---
-title: Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles
+title: Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles
 description: Usa las herramientas de administración de dispositivos móviles para implementar el paquete de configuración en dispositivos de modo que se incorpore al servicio Defender for Endpoint.
 keywords: incorporar dispositivos con mdm, administración de dispositivos, incorporación de Microsoft Defender para dispositivos de punto de conexión, mdm
 ms.prod: m365-security
@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a92b663eeddfcfb8ccf17bad204074764711685d
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 1d0bfb7070f06b94aeaea69f0563e4f5e5d1ca67
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239886"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963088"
 ---
-# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Incorporar Windows dispositivos con herramientas de administración de dispositivos móviles
+# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -69,7 +70,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 > [!NOTE]
 > Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
 
-1. Obtener el paquete de offboarding desde [Microsoft 365 Defender portal](https://security.microsoft.com/):
+1. Obtener el paquete de offboarding desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.
 
@@ -95,9 +96,9 @@ Para obtener más información sobre Microsoft Intune de directiva, [vea Windows
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación Windows dispositivos con directiva de grupo](configure-endpoints-gp.md)
-- [Incorporar Windows dispositivos con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Incorporación Windows dispositivos con un script local](configure-endpoints-script.md)
+- [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)
+- [Incorporar dispositivos Windows mediante Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
 - [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

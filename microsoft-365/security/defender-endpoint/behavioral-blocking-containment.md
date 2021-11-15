@@ -14,16 +14,17 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
+- admindeeplinkDEFENDER
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 6a7ac6e546ab7578ccf914c29304c1a88139094e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 99f9756170345941f38918c5f31336c1e6bc5ad7
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882134"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962788"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -57,13 +58,13 @@ En la siguiente imagen se muestra un ejemplo de una alerta que se desencadenó m
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Componentes del bloqueo y la contención del comportamiento
 
-- Reglas de reducción de superficie de **[ataques](attack-surface-reduction.md)** controladas por directivas en el cliente Los comportamientos de ataque comunes predefinidos no se pueden ejecutar, de acuerdo con las reglas de reducción de superficie de ataque. Cuando estos comportamientos intentan ejecutarse, se pueden ver en el portal de Microsoft 365 Defender( ) como [https://security.microsoft.com](https://security.microsoft.com) alertas informativos. Las reglas de reducción de superficie de ataque no están habilitadas de forma predeterminada; configure las directivas en el [portal de Microsoft 365 Defender](microsoft-defender-security-center.md).
+- Reglas de reducción de superficie de **[ataques](attack-surface-reduction.md)** controladas por directivas en el cliente Los comportamientos de ataque comunes predefinidos no se pueden ejecutar, de acuerdo con las reglas de reducción de superficie de ataque. Cuando estos comportamientos intentan ejecutarse, se pueden ver <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender</a> como alertas informativos. Las reglas de reducción de superficie de ataque no están habilitadas de forma predeterminada; configure las directivas en el [portal de Microsoft 365 Defender](microsoft-defender-security-center.md).
 
 - **[Bloqueo de comportamiento del cliente](client-behavioral-blocking.md)** Las amenazas en los puntos de conexión se detectan a través del aprendizaje automático y, a continuación, se bloquean y corrigen automáticamente. (El bloqueo de comportamiento del cliente está habilitado de forma predeterminada).
 
 - **[Bloqueo de bucle de comentarios](feedback-loop-blocking.md)** (también denominado protección rápida) Las detecciones de amenazas se observan a través de la inteligencia de comportamiento. Las amenazas se detienen e impiden que se ejecuten en otros puntos de conexión. (El bloqueo de bucle de comentarios está habilitado de forma predeterminada).
 
-- **[Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo](edr-in-block-mode.md)** Los artefactos o comportamientos malintencionados que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloqueo funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloque no está habilitado de forma predeterminada; se activa en Microsoft 365 Defender).
+- **[Detección y respuesta](edr-in-block-mode.md)** de puntos de conexión (EDR) en modo de bloqueo Los artefactos o comportamientos malintencionados que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloqueo funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloque no está habilitado de forma predeterminada; se activa en Microsoft 365 Defender).
 
 Espere más en el área del bloqueo y la contención del comportamiento, ya que Microsoft sigue mejorando las características y capacidades de protección contra amenazas. Para ver lo que se planea y se está implementando ahora, visite el mapa [Microsoft 365 ruta de trabajo](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -116,7 +117,7 @@ Unos minutos después de bloquear el artefacto, se bloquearon varias instancias 
 
 En este ejemplo se muestra que, con las capacidades de contención y bloqueo de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre Defender for Endpoint](overview-endpoint-detection-response.md)
 

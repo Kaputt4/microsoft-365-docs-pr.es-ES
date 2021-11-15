@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f68bd40afd0094f8a319f10c6e71d0cee94cef28
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 1cee88d872ca7d83b9fbaf391a25cdb21cd10bd6
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754436"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963388"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -80,7 +81,7 @@ Para obtener acceso a las licencias que se aprovisionan a su empresa y comprobar
 
 La incorporación a Microsoft Defender para Endpoint es fácil. En el menú de navegación, seleccione cualquier elemento en la sección Puntos de conexión o cualquier característica de Microsoft 365 Defender como Incidentes, Búsqueda, Centro de acción o Análisis de amenazas para iniciar el proceso de incorporación.
 
-Desde un explorador web, vaya al Centro [Microsoft 365 seguridad](https://security.microsoft.com).
+Desde un explorador web, vaya al centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 seguridad</a>.
 
 ## <a name="network-configuration"></a>Configuración de red
 
@@ -157,7 +158,7 @@ Use netsh para configurar un proxy estático en todo el sistema.
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>Configuración de proxy para dispositivos de nivel inferior
 
-Down-Level incluyen Windows estaciones de trabajo 7 SP1 y Windows 8.1, así como Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 y versiones de Windows Server 2016 anteriores a Windows Server CB 1803. Estos sistemas operativos tendrán el proxy configurado como parte del Agente de administración de Microsoft para controlar la comunicación desde el punto de conexión a Azure. Consulte la Guía de implementación rápida de Microsoft Management Agent para obtener información sobre cómo se configura un proxy en estos dispositivos.
+Down-Level incluyen Windows estaciones de trabajo de Windows 8.1 y 7 SP1, así como Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 y versiones de Windows Server 2016 anteriores a Windows  Servidor CB 1803. Estos sistemas operativos tendrán el proxy configurado como parte del Agente de administración de Microsoft para controlar la comunicación desde el punto de conexión a Azure. Consulte la Guía de implementación rápida de Microsoft Management Agent para obtener información sobre cómo se configura un proxy en estos dispositivos.
 
 ### <a name="proxy-service-urls"></a>Direcciones URL del servicio proxy
 

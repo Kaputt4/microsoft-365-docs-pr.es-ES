@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b198cbfe979cc8453db289911ab48de601a3edd2
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: de4ec2f03119245e104bc2e5f53eedd9d578fe01
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586006"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962704"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para endpoint en macOS
 
@@ -48,7 +49,7 @@ Antes de empezar, consulta la página principal de Microsoft Defender para Endpo
 
 Descargue los paquetes de instalación e incorporación de Microsoft 365 Defender portal:
 
-1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > Incorporación**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>vaya **a Configuración > Endpoints > Administración de dispositivos > incorporación**.
 2. En la sección 1 de la página, establezca el sistema operativo en **macOS** y el método Deployment en **Script local**.
 3. En la sección 2 de la página, seleccione **Descargar paquete de instalación**. Guárdelo como wdav.pkg en un directorio local.
 4. En la sección 2 de la página, seleccione **Descargar paquete de incorporación**. Guárdelo WindowsDefenderATPOnboardingPackage.zip en el mismo directorio.

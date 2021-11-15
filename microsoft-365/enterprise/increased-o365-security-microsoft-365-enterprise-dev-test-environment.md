@@ -14,14 +14,15 @@ ms.collection: M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para habilitar la configuración Microsoft 365 seguridad adicional de su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 2042148c0738ab1304ec721cdb00ce22b427dc72
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3976ad11b6cac7ae74e0fd2d94ad35b610273052
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200166"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960867"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Mayor Microsoft 365 seguridad para su Microsoft 365 entorno de prueba empresarial
 
@@ -66,7 +67,7 @@ Las aplicaciones que no admiten la autenticación moderna no pueden tener config
 
 Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
-1. Vaya al [Centro de seguridad & cumplimiento e](https://protection.office.com) inicie sesión con su cuenta de administrador global.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de seguridad & cumplimiento e</a> inicie sesión con su cuenta de administrador global.
 
 2. En el panel de navegación izquierdo, en **Administración de** amenazas, haga **clic** en Directiva y, a continuación, haga clic Caja fuerte **datos adjuntos**. 
 
@@ -96,7 +97,7 @@ La administración de amenazas en Microsoft 365 puede ayudarle a controlar y adm
 
 Para ver el panel de seguridad:
 
-1. Si es necesario, vaya al Centro de [seguridad & cumplimiento e](https://protection.office.com) inicie sesión con su cuenta de administrador global.
+1. Si es necesario, vaya al Centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">seguridad & cumplimiento e</a> inicie sesión con su cuenta de administrador global.
 
 2. En el panel de navegación izquierdo, en **Administración de amenazas,** haga clic en **Panel**.
 
@@ -123,6 +124,6 @@ Explore características [y capacidades adicionales](m365-enterprise-test-lab-gu
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

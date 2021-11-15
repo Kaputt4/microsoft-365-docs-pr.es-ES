@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 11/10/2021
+ms.date: 11/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 11d8df5d56999cb4da41c57b8fdd09ebb8847c3e
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 47693b243279b7126b6d9731565c9cd091c85176
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899590"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962656"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -315,12 +315,12 @@ Para comprobar las exclusiones con la herramienta de línea de [comandos ](./com
 ```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.2110-5.0 (Where 4.18.2110-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
+cd 4.18.2110-6.0 (Where 4.18.2110-6.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La comprobación de exclusiones con MpCmdRun requiere Antivirus de Microsoft Defender versión 4.18.2110-5.0 de CAMP (publicada en octubre de 2021) o posterior.
+> La comprobación de exclusiones con MpCmdRun requiere Antivirus de Microsoft Defender versión 4.18.2110-6.0 de CAMP (publicada en noviembre de 2021) o posterior.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Revise la lista de exclusiones junto con el resto de Antivirus de Microsoft Defender preferencias mediante PowerShell
 

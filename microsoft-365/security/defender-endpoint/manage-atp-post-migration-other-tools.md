@@ -15,15 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/23/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 2fe421e79efa7da204209e2df35d3be51bdbf6d1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4109a7754cb277f615ba7dc337606d32fb191d1e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154785"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962752"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Administrar Microsoft Defender para endpoint con PowerShell, WMI y MPCmdRun.exe
 
@@ -68,7 +69,7 @@ WMI es una interfaz de scripting que permite recuperar, modificar y actualizar l
 |Tarea|Recursos para obtener más información|
 |---|---|
 |**Habilitar la protección de entrega en la nube** en un dispositivo|[Use Windows Management Instruction (WMI) para habilitar la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)|
-|**Recuperar, modificar y actualizar la configuración** de Antivirus de Microsoft Defender|[Usar WMI para configurar y administrar Antivirus de Microsoft Defender] (/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [Revisar la lista de clases WMI disponibles y scripts de ejemplo](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> Vea también la información de referencia [Windows Defender de proveedor WMIv2 archivada](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)|
+|**Recuperar, modificar y actualizar la configuración** de Antivirus de Microsoft Defender|[Use WMI para configurar y administrar Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [Revisar la lista de clases WMI disponibles y scripts de ejemplo](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> Vea también la información de referencia [Windows Defender de proveedor WMIv2 archivada](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe"></a>Configurar Microsoft Defender para endpoint con Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
 
@@ -78,7 +79,7 @@ Para obtener más información, vea [Configure and manage Antivirus de Microsoft
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurar el portal Microsoft 365 Defender web
 
-Si aún no lo ha hecho, configure el portal de [Microsoft 365 Defender](https://security.microsoft.com/) para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su organización.
+Si aún no lo ha hecho, configure su portal de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su organización.
 
 También puede configurar si los usuarios finales pueden ver y qué características pueden ver en el Centro de seguridad de Microsoft Defender.
 
@@ -86,7 +87,7 @@ También puede configurar si los usuarios finales pueden ver y qué característ
 
 - [Protección de extremo: Centro de seguridad de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 

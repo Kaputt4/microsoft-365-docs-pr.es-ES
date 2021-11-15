@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 description: Siga la ruta de un mensaje entrante a través de la pila de filtrado de amenazas en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d920ed0bfcbe5f341395740b01ad17c7eed4ff77
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e883d4d6aea6af739a8156027ffa6968638ef4d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169460"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962608"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
@@ -117,7 +117,7 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 3. **ZAP para malware** detecta y neutraliza de forma retroactiva los mensajes malintencionados malware que ya se han entregado a buzones de Exchange Online.
 
-4. **ZAP para la suplantación** de identidad (phishing) detecta y neutraliza de forma retroactiva los mensajes de correo no deseado malintencionados que ya se han entregado a Exchange Online buzones de correo.
+4. **ZAP para correo no deseado** detecta y neutraliza de forma retroactiva los mensajes malintencionados correo no deseado que ya se han entregado a los buzones de Exchange Online.
 
 5. **Las vistas de** campaña permiten a los administradores ver la imagen general de un ataque, más rápido y completamente, de lo que cualquier equipo podría sin automatización. Microsoft aprovecha las grandes cantidades de datos contra suplantación de identidad (phishing), antispam y antimalware en todo el servicio para ayudar a identificar las campañas y, a continuación, permite a los administradores investigarlas de principio a fin, incluidos los destinos, los impactos y los flujos, que también están disponibles en una escritura de campaña descargable.
 

@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: 89229a8c6f4eb5ac04fcb4f956c233e34b40806d
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 42a96a746317b85cd0634e5f4cb7964a6caeaa40
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554869"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963268"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 
@@ -105,7 +106,7 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
    > [!TIP]
    > Si crea un nuevo sitio y una carpeta para los datos de edificadores, permita al menos una hora para que esa ubicación se indexe antes de crear el clasificador que se puede entrenar que usará los datos de ed.
 
-3. Inicie sesión para iniciar sesión Centro de cumplimiento de Microsoft 365 el acceso de roles de administrador de seguridad o administrador de cumplimiento y Centro de cumplimiento de Microsoft 365 **o** Microsoft 365 clasificación de datos del **centro**  >  **de seguridad**.
+3. Inicie sesión para iniciar sesión Centro de cumplimiento de Microsoft 365 el acceso de roles de administrador de seguridad o administrador de cumplimiento y Centro de cumplimiento de Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">o</a> Microsoft 365 clasificación de datos del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centro</a>  >  **de seguridad**.
 
 4. Elija la **pestaña Clasificadores que se pueden entrenar.**
 

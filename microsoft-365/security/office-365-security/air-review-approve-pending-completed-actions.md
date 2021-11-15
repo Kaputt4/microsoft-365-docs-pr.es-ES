@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Obtenga información sobre las acciones de corrección en las capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 4d81fe5e2baa4146136d7e55461290a31ef2462b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5321f1cbe35727649c80dc17778dc843630f695e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196626"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962740"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar acciones de corrección en Office 365
 
@@ -42,13 +43,13 @@ Estas acciones de corrección no se toman a menos que el equipo de operaciones d
 Hay cuatro formas diferentes de buscar y realizar acciones de investigación automática:
 
 - [Cola de incidentes](https://security.microsoft.com/incidents)
-- [Centro de actividades](https://security.microsoft.com/action-center/pending)
+- [Centro de acciones](https://security.microsoft.com/action-center/pending)
 - Investigación en sí (a la que se accede a través de un incidente o desde una alerta)
 - [Cola de investigaciones de investigación y corrección](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>Cola de incidentes
 
-1. Abra el portal Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
 2. En el panel de navegación, seleccione **Incidentes & alertas > incidentes**.
 3. Seleccione un nombre de incidente para abrir su página de resumen.
 4. Seleccione la **pestaña Evidencia y** respuesta.
@@ -57,7 +58,7 @@ Hay cuatro formas diferentes de buscar y realizar acciones de investigación aut
 
 ## <a name="investigation-queue"></a>Cola de investigación
 
-1. Abra el portal Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
 2. Navegue desde la página alertas/incidentes.
 3. En la página Investigación, vaya a la **pestaña Acciones pendientes.**
 4. Seleccione un elemento de la lista. Se abre su panel lateral.
@@ -65,7 +66,7 @@ Hay cuatro formas diferentes de buscar y realizar acciones de investigación aut
 
 ## <a name="action-center"></a>Centro de actividades
 
-1. Abra el portal Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
 2. En el panel de navegación, seleccione **Centro de acciones**.
 3. En la **pestaña** Pendiente, revise la lista de acciones que están a la espera de su aprobación.
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
@@ -74,7 +75,7 @@ Hay cuatro formas diferentes de buscar y realizar acciones de investigación aut
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>Cola de investigaciones de investigación y corrección
 
-1. Abra el portal Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
 2. Abrir investigaciones pendientes.
 3. En la página Investigación, vaya a la **pestaña Acciones pendientes.**
 4. Seleccione un elemento de la lista. Se abre su panel lateral.

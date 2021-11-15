@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1591862a759b4d1df17d100e80185479c38d868c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 02e2d3249bbec9c4c0c4211a53cae0cee1789c1f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554509"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960855"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Crear y administrar roles para el control de acceso basado en roles
 
@@ -38,7 +39,7 @@ ms.locfileid: "60554509"
 
 Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender. Se supone que ya ha creado Azure Active Directory grupos de usuarios.
 
-1. Inicie sesión en [Microsoft 365 Defender](https://security.microsoft.com/) cuenta con un administrador de seguridad o un rol de administrador global asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> cuenta con un administrador de seguridad o un rol de administrador global asignado.
 
 2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
 
@@ -92,7 +93,7 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
 
 ## <a name="edit-roles"></a>Editar roles
 
-1. Inicie sesión [en](https://security.microsoft.com/) Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
+1. Inicie sesión <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en</a> Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
 2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
 
@@ -106,7 +107,7 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
 
 ## <a name="delete-roles"></a>Eliminar roles
 
-1. Inicie sesión [en](https://security.microsoft.com/) Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
+1. Inicie sesión <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en</a> Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
 2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
 

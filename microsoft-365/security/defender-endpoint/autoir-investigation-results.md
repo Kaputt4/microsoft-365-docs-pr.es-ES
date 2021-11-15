@@ -19,14 +19,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: e089a38d0a9abc6a6713b82a77d3678d781ed456
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd5a8d4db47eb0f26f7bdf7ef992fba18a6c3aa5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197082"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963196"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 
@@ -53,7 +55,7 @@ Puede abrir un informe en la vista previa de impresión utilizando uno de los m�
 
 El Centro [de acción mejorado](auto-investigation-action-center.md) reúne acciones de [corrección](manage-auto-investigation.md#remediation-actions) en todos los dispositivos, correo & contenido de colaboración e identidades. Las acciones enumeradas incluyen acciones de corrección que se realizaron de forma automática o manual. En el Centro de actividades, puede ver las acciones que están esperando la aprobación y las acciones que ya se aprobaron o completaron. También puede navegar a más detalles, como una página de investigación.
 
-1. Vaya a <https://security.microsoft.com> e inicie sesión.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> e inicie sesión.
 2. En el panel de navegación, elija **Centro de actividades**.
 3. En la pestaña **pendiente** o **historial**, seleccione un elemento. Se abre el panel desplegable.
 4. Revise la información del panel desplegable y, a continuación, siga uno de los pasos siguientes:
@@ -66,7 +68,7 @@ El Centro [de acción mejorado](auto-investigation-action-center.md) reúne acci
 
 Use una página de detalles de un incidente para ver información detallada sobre un incidente, incluidas las alertas que contenían información acerca de cualquier dispositivo, cuenta de usuario o buzón que les afecten.
 
-1. Vaya a <https://security.microsoft.com> e inicie sesión.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> e inicie sesión.
 2. En el panel de navegación, elija **Incidentes &** \> **alertas incidentes**.
 3. Seleccione un elemento de la lista y, a continuación, elija **Abrir página de incidentes**.
 4. Seleccione la **pestaña Investigaciones** y, a continuación, seleccione una investigación en la lista. Se abre el panel desplegable.

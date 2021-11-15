@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender cómo el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender afecta a los usuarios y pueden obtener información sobre los resultados de simulación y aprendizaje.
 ms.technology: mdo
-ms.openlocfilehash: f101abfb8d7ebd771ab2d02847f9371d35441ae6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 362f094d340b4f80a7b6fd54b1325540b812fa3e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702685"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962920"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Ideas e informes para el entrenamiento de simulación de ataques en Defender para Office 365
 
@@ -36,7 +37,7 @@ Para obtener información de introducción sobre el aprendizaje de simulación d
 
 ## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>Ideas informes en la pestaña Información general del entrenamiento de simulación de ataques
 
-Para ir  a la pestaña Información general, abra el portal de Microsoft 365 Defender en , vaya a Aprendizaje de simulación de ataques de colaboración de correo electrónico & y compruebe que la pestaña Información general está seleccionada (es el valor <https://security.microsoft.com/>  \> predeterminado).  Para ir directamente a la pestaña **Información general** de la página De aprendizaje **de simulación de** ataques, use <https://security.microsoft.com/attacksimulator?viewid=overview> .
+Para ir  a la pestaña Información general, abra el portal de Microsoft 365 Defender en , vaya a Aprendizaje de simulación de ataques de colaboración de correo electrónico & y compruebe que la pestaña Información general está seleccionada (es el valor <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \> predeterminado).  Para ir directamente a la pestaña **Información general** de la página De aprendizaje **de simulación de** ataques, use <https://security.microsoft.com/attacksimulator?viewid=overview> .
 
 El resto de esta sección describe la información  disponible en la pestaña Información general del entrenamiento de simulación de ataques.
 
@@ -248,7 +249,7 @@ Si hace clic en el ![ icono Exportar.](../../media/m365-cc-sc-download-icon.png)
 
 ## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>Ideas e informes en los detalles de simulación del entrenamiento de simulación de ataques
 
-Para ir a la pestaña **Simulaciones,** abra el portal de Microsoft 365 Defender en , vaya a Aprendizaje de simulación de ataque de colaboración de correo electrónico & y, a continuación, haga clic en la <https://security.microsoft.com/>  \>  **pestaña Simulaciones.** Para ir directamente a la pestaña **Simulaciones** de la página de aprendizaje **de simulación de** ataques, use <https://security.microsoft.com/attacksimulator?viewid=simulations> .
+Para ir a la pestaña **Simulaciones,** abra el portal de Microsoft 365 Defender en , vaya a Aprendizaje de simulación de ataque de colaboración de correo electrónico & y, a continuación, haga clic en la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>  \>  **pestaña Simulaciones.** Para ir directamente a la pestaña **Simulaciones** de la página de aprendizaje **de simulación de** ataques, use <https://security.microsoft.com/attacksimulator?viewid=simulations> .
 
 Al seleccionar una simulación de la lista, se abre una página de detalles. Esta página contiene las opciones de configuración de la simulación que esperaría ver (estado, fecha de inicio, carga usada, etc.).
 

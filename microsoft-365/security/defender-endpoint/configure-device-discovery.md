@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 914e246fe4c276a624989b189a3358c1821194fd
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c481f846b91ee2072f453d4ad8e9df13b4dd534f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882926"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960819"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -42,11 +43,11 @@ Puedes personalizar la lista de dispositivos que se usan para realizar la detecc
 
 > [!IMPORTANT]
 > Para obtener una vista previa, primero tendrás que activar las características de vista previa en Microsoft 365 Defender.
-> A continuación, puedes acceder a la configuración de detección de dispositivos Microsoft 365 centro de seguridad. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible en el centro de seguridad de Microsoft 365 Defender y Microsoft 365, mientras que los iconos del panel solo estarán disponibles en Microsoft 365 centro de seguridad.
+> A continuación, puedes acceder a la configuración de detección de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dispositivos Microsoft 365 centro de seguridad</a>. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible en el centro de seguridad de Microsoft 365 Defender y Microsoft 365, mientras que los iconos del panel solo estarán disponibles en Microsoft 365 de seguridad.
 
-Siga los siguientes pasos de configuración en Microsoft 365 de seguridad:
+Siga los siguientes pasos de configuración <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 de seguridad:</a>
 
-1. Vaya a **Configuración > detección de dispositivos**.
+1. Vaya a **Configuración**  >  **detección de dispositivos**.
 2. Selecciona el modo de detección que quieres usar en los dispositivos integrados.
 3. Si has seleccionado usar la detección estándar, selecciona qué dispositivos usar para el sondeo activo: todos los dispositivos o en un subconjunto especificando sus etiquetas de dispositivo.
 4. Haga clic en **Guardar**.
@@ -119,7 +120,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

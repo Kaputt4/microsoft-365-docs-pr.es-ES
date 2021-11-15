@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: e6b8015cc8b6ac073c689bde3b15a411c859cada
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f542d2b5a25a8274d74e0ee3dbfc40fdc119926
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59185702"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963328"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender para la integración de VPN de identidad en Microsoft 365 Defender
 
@@ -24,7 +25,7 @@ ms.locfileid: "59185702"
 En este artículo se explica cómo integrar una VPN con [Microsoft Defender for Identity](/defender-for-identity) en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
->Como parte de la convergencia con Microsoft 365 Defender, algunas opciones y detalles han cambiado desde su ubicación en el portal de Defender for Identity. Lea los detalles siguientes para descubrir dónde encontrar las características conocidas y las nuevas.
+>Como parte de la convergencia con <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender,</a>algunas opciones y detalles han cambiado desde su ubicación en el portal de Defender for Identity. Lea los detalles siguientes para descubrir dónde encontrar las características conocidas y las nuevas.
 
 [!INCLUDE [Product long](includes/product-long.md)] puede recopilar información de contabilidad de soluciones VPN. Cuando se configura, en la página de perfil del usuario se incluye información de las conexiones VPN, como las direcciones IP y las ubicaciones donde se originaron las conexiones. Esto complementa el proceso de investigación proporcionando información adicional sobre la actividad de los usuarios, así como una nueva detección de conexiones VPN anormales. La llamada para resolver una dirección IP externa en una ubicación es anónima. No se envía ningún identificador personal en esta llamada.
 
@@ -70,7 +71,7 @@ Realice los pasos siguientes en el servidor RRAS.
 
 Para configurar los datos de VPN [!INCLUDE [Product short](includes/product-short.md)] en Microsoft 365 Defender:
 
-1. En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -83,6 +84,6 @@ Una vez habilitado, todos los sensores de Defender for Identity escucharán en e
 
 Después de que el sensor Defender for Identity reciba los eventos VPN y los envíe al servicio en la nube de Defender for Identity para su procesamiento, el perfil de entidad indicará las distintas ubicaciones y actividades de VPN a las que se accede en el perfil indicará las ubicaciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigar alertas en Microsoft 365 Defender](../defender/investigate-alerts.md)

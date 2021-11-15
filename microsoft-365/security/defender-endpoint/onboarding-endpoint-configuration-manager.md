@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b60aca935af326680165a0ccc8669082b14f299d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 0a2923f9e80a5ea5ee92110181af69a874d7fd25
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753790"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963424"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
@@ -116,13 +117,13 @@ En esta sección se le guía en la configuración de las siguientes funcionalida
 - [**Protección de última generación**](#next-generation-protection)
 - [**Reducción de la superficie expuesta a ataques**](#attack-surface-reduction)
 
-### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión
+### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 y Windows 11
 
 Desde el portal de Microsoft 365 Defender es posible descargar la directiva que se puede usar para crear la directiva en System Center Configuration Manager e implementarla en Windows 10 y Windows `.onboarding` 11 dispositivos.
 
-1. En un portal Microsoft 365 Defender, [seleccione Configuración y,](https://security.microsoft.com/preferences2/onboarding)a continuación, Incorporación .
+1. En un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a> [seleccione Configuración y,](https://security.microsoft.com/preferences2/onboarding)a continuación, Incorporación .
 
 2. En Método de implementación, seleccione la versión compatible **de Microsoft Endpoint Configuration Manager**.
 
@@ -174,7 +175,7 @@ Desde el portal de Microsoft 365 Defender es posible descargar la directiva que 
 
 Siga los pasos que se indican a continuación para identificar el identificador del área de trabajo de endpoint y la clave de área de trabajo de Defender for Endpoint, que serán necesarios para la incorporación de versiones anteriores de Windows.
 
-1. En un portal Microsoft 365 Defender, seleccione **Configuración** incorporación de puntos de conexión \>  \>  (en **Administración de dispositivos).**
+1. En un <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a> **seleccione Configuración** incorporación de puntos de conexión \>  \>  (en Administración **de dispositivos).**
 
 2. En sistema operativo, **elija Windows 7 SP1 y 8.1**.
 
@@ -288,7 +289,7 @@ Después de completar esta tarea, ahora ha configurado correctamente las reglas 
 
 A continuación se indican pasos adicionales para comprobar si las reglas ASR se aplican correctamente a los puntos de conexión. (Esto puede tardar unos minutos)
 
-1. Desde un explorador web, vaya a <https://security.microsoft.com> .
+1. Desde un explorador web, vaya <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">a Microsoft 365 Defender</a>.
 
 2. Seleccione **Administración de configuración** en el menú del lado izquierdo.
 

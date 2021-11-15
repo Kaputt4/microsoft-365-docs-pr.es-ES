@@ -14,12 +14,13 @@ ms.author: dansimp
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4896ffe6b01d87d4e54d6d06867aea3435a1513a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom: admindeeplinkDEFENDER
+ms.openlocfilehash: 4d06c974f5ccc01326bd574ac1ad1c3fbde00990
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883142"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962547"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
@@ -35,7 +36,7 @@ Si es administrador, ahora puede hospedar informes de firewall en Microsoft 365 
 
 - Debe ejecutar Windows 10 o Windows 11 o Windows Server 2019 o Windows Server 2022.
 - Para incorporar dispositivos al servicio Microsoft Defender para endpoints, vea [aquí](onboard-configure.md).
-- Para que Microsoft 365 centro de seguridad comience a  recibir los datos, debe habilitar los eventos de auditoría para Windows Defender firewall con seguridad avanzada:
+- Para <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de seguridad</a> para empezar a recibir  los datos, debe habilitar los eventos de auditoría para Windows Defender Firewall con seguridad avanzada:
   - [Gota de paquetes de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Conexión de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Habilite estos eventos mediante el Editor de objetos de directiva de grupo, la directiva de seguridad local o auditpol.exe comandos. Para obtener más información, [vea aquí](/windows/win32/fwp/auditing-and-logging).

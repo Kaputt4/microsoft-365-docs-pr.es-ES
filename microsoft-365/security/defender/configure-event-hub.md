@@ -18,14 +18,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: bb45a15dd8931c5a7d9866b7b57ea84be0e0581a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 71149412285d7d9540c80ef3ad89dc3b0a6a6208
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755378"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963064"
 ---
 # <a name="configure-your-event-hub"></a>Configurar el centro de eventos
 
@@ -38,9 +39,9 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurar el proveedor de recursos necesario en la suscripción al Centro de eventos
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
 1. Select **Subscriptions**  >  **{ Select the subscription the event hub will be deployed to }** Resource  >  **providers**.
-1. Compruebe que el **proveedor de microsoft.Ideas** está registrado. De lo contrario, regístrelo.
+1. Compruebe que **microsoft.Ideas** El proveedor está registrado. De lo contrario, regístrelo.
 
 ![Imagen de proveedores de recursos en Microsoft Azure.](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
@@ -119,7 +120,7 @@ Para este Centro de eventos (no espacio de nombres) deberá configurar una direc
 
 ### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hub"></a>Configurar Microsoft 365 Defender enviar tablas de correo electrónico a Splunk a través del Centro de eventos
 
-1. Inicie sesión en Microsoft 365 Defender con una cuenta que cumpla todos los <https://security.microsoft.com> siguientes requisitos de función:
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> con una cuenta que cumpla todos los siguientes requisitos de función:
 
     - Rol colaborador en el nivel de recurso *de espacio de* nombres del centro de eventos o superior para el centro de eventos al que exportará. Sin este permiso, se producirá un error de exportación al intentar guardar la configuración.
 

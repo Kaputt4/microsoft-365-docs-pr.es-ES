@@ -11,15 +11,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 11/02/2021
-ms.openlocfilehash: e62f40b7d7b0d1f194c1549173edcb3ec3ec3634
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: b9634b616214d62a540ffba59fabd4996de3c3b6
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882722"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962487"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -37,10 +38,10 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 |---|---|
 |Access|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditoría, Permitir, Impedir|
-|Compatibilidad con CSP|Sí|
-|Compatibilidad con GPO|Sí|
-|Soporte técnico basado en usuarios|Sí|
-|Compatibilidad basada en máquina|Sí|
+|Compatibilidad con CSP|Yes|
+|Compatibilidad con GPO|Yes|
+|Soporte técnico basado en usuarios|Yes|
+|Compatibilidad basada en máquina|Yes|
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
@@ -48,7 +49,7 @@ Implementar control de acceso Storage extraíble en Windows 10 y Windows 11 disp
 
 - **4.18.2104 o** posterior: Agregar SerialNumberId, VID_PID, compatibilidad con GPO basada en ruta de archivo, ComputerSid
 - **4.18.2105** o posterior: Agregar compatibilidad con caracteres comodín para HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinación de usuario específico en una máquina específica, SSD extraíble (un SSD extremo de SanDisk)/compatibilidad con SCSI conectada a USB (UAS)
-- **4.18.2107** o posterior: Agregar compatibilidad Windows dispositivo portátil (WPD) (para dispositivos móviles, como tabletas); agregar AccountName a la [búsqueda avanzada](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+- **4.18.2107** o posterior: Agregar compatibilidad con dispositivos portátiles (WPD) Windows (para dispositivos móviles, como tabletas); agregar AccountName a la búsqueda [avanzada](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
 :::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell.":::
 
@@ -146,7 +147,7 @@ Antes de empezar con Removable Storage Access Control, debe confirmar su [Micr
 
     :::image type="content" source="images/usage-sid-property.png" alt-text="Pantalla que muestra un código que indica el uso del atributo de la propiedad SID.":::
 
-3. Guarde los archivos XML de regla y grupo en la carpeta de recurso compartido de red y coloque la ruta de acceso de la carpeta de recurso compartido de red en la configuración de directiva de **grupo:** Configuración del equipo Plantillas administrativas Windows Componentes Antivirus de Microsoft Defender Control de \>  \>  \>  \> dispositivos: 'Definir  grupos de directivas de control de dispositivos' y **'Definir dispositivo' reglas de directiva de control'**.
+3. Guarde los archivos XML de regla y grupo en la carpeta de recurso compartido de red y coloque la ruta de acceso de la carpeta de recurso compartido de red en la configuración de directiva de **grupo:** Configuración del equipo Plantillas administrativas Windows Componentes Antivirus de Microsoft Defender Control de \>  \>  \>  \> dispositivos: 'Definir  **grupos de directivas de control de dispositivos' y 'Definir reglas de directiva de control de dispositivos'**.
 
    Si no encuentra la experiencia de usuario de configuración de directiva en la directiva de grupo,  puede descargar los archivos [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) y [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) seleccionando Raw y, a continuación, **Guardar como**.
 

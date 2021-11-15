@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f8a9d27566ea3f6fcf43ad2b8f183c6800bb8aa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 42dc7d0c3ce7662cee61754ccced0666f907114f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883718"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963376"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -150,7 +150,7 @@ DeviceEvents 
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomPolicy"
+| where Experience == "CustomBlockList"
 ```
 
 Del mismo modo, puede usar la siguiente consulta para enumerar todos los bloques WCF que se originen en Network Protection (por ejemplo, un bloque WCF en un explorador de terceros). Tenga en cuenta que ActionType se ha actualizado y "Experiencia" se ha cambiado a "ResponseCategory".

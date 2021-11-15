@@ -12,16 +12,18 @@ author: jweston-1
 ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
-ms.custom: asr
+ms.custom:
+- asr
+- admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5392cf40a0d37e332d7b3bec260ab34e9a3a083e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 6e42cdaa8ecd464581a786d47a4b2044b2907ca9
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882446"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962499"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 
@@ -97,7 +99,7 @@ Cada vez que se desencadena una regla de reducción de superficie de ataque, se 
 
 Además, cuando se desencadenan ciertas reglas de reducción de superficie de ataque, se generan alertas.
 
-Las notificaciones y las alertas que se generan se pueden ver en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) (anteriormente denominado [Microsoft 365 Defender](microsoft-defender-security-center.md)).
+Las notificaciones y las alertas que se generan se pueden ver en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender web</a>.
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Eventos avanzados de reducción de superficie de búsqueda y ataque
 
@@ -113,7 +115,7 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
 
 - Windows 10 Pro versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows 10 Enterprise, versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
-- Windows Servidor, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
+- Windows server, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -227,7 +229,7 @@ A través de la ingeniería social o vulnerabilidades, el malware puede descarga
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -247,7 +249,7 @@ Crear procesos secundarios malintencionados es una estrategia de malware común.
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -269,7 +271,7 @@ LSASS autentica a los usuarios que inician sesión en un Windows equipo. Credent
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -291,7 +293,7 @@ Esta regla impide que los siguientes tipos de archivo se inicien desde el correo
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -330,7 +332,7 @@ El inicio de archivos ejecutables desconocidos o no de confianza puede ser arrie
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -349,7 +351,7 @@ La ofuscación de scripts es una técnica común que usan tanto los autores de m
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -370,7 +372,7 @@ Aunque no son comunes, las aplicaciones de línea de negocio a veces usan script
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -390,7 +392,7 @@ El malware que abusa Office como vector puede intentar salir de Office y guardar
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [System Center Configuration Manager](/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM ya está Microsoft Endpoint Configuration Manager)
 
@@ -413,7 +415,7 @@ Esta regla se aplica a Word, Excel y PowerPoint.
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -435,7 +437,7 @@ Esta regla protege contra los ataques de ingeniería social e impide que el cód
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nombre de Intune: `Process creation from Office communication products (beta)`
@@ -446,17 +448,17 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquear la persistencia a través de la suscripción de eventos WMI
 
-Esta regla evita que el malware abuse de WMI para lograr la persistencia en un dispositivo.
+Esta regla impide que el malware abuse de WMI para lograr persistencia en un dispositivo.
 
 > [!IMPORTANT]
 > Las exclusiones de archivos y carpetas no se aplican a esta regla de reducción de superficie de ataque.
 
-Las amenazas sin archivos emplean varias tácticas para mantenerse ocultas, para evitar que se vean en el sistema de archivos y para obtener un control de ejecución periódico. Algunas amenazas pueden abusar del repositorio WMI y el modelo de eventos para mantenerse oculto.
+Las amenazas sin archivo emplean varias tácticas para permanecer ocultas, evitar ser detectadas en el sistema de archivos y obtener el control de la ejecución periódica. Algunas amenazas pueden abusar del repositorio WMI y el modelo de eventos para permanecer ocultas.
 
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1903](/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows Servidor 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Nombre de Intune: no disponible
 
@@ -474,7 +476,7 @@ Esta regla bloquea la ejecución de los procesos [creados a través](/sysinterna
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
@@ -492,7 +494,7 @@ Con esta regla, los administradores pueden impedir que los archivos ejecutables 
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -511,7 +513,7 @@ Office VBA habilita las llamadas a la API de Win32. El malware puede abusar de e
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -537,7 +539,7 @@ La regla tiende a errar en el lado de la precaución para evitar ransomware.
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)

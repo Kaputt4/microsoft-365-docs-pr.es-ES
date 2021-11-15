@@ -17,16 +17,18 @@ ms.collection:
 - m365solution-migratetomdatp
 - m365solution-mcafeemigrate
 - m365solution-symantecmigrate
-ms.custom: migrationguides
+ms.custom:
+- migrationguides
+- admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 3ce62eb9019b233bf2c52f9ce990813650ac4bbe
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: ee864bb33b03f51f2529bca0026290fa675c1c4e
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245710"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962523"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -49,7 +51,7 @@ ms.locfileid: "60245710"
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos a Microsoft Defender para punto de conexión
 
-1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
 
 2. Elija **Configuración** \> **incorporación de puntos de** \> **conexión** (en **Administración de dispositivos**).
 
@@ -66,7 +68,7 @@ Los métodos de implementación varían según el sistema operativo y los métod
 
 |Sistemas operativos  |Métodos  |
 |---------|---------|
-|Windows 10 o posterior<br/><br/>Windows Server 2019 o posterior<br/><br/>Windows Servidor, versión 1803 o posterior<br/><br/>Windows Server 2012 R2 y 2016 <sup> [[1](#fn1)]<sup>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br><br/>   [Directiva de grupo](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.
+|Windows 10 o posterior<br/><br/>Windows Server 2019 o posterior<br/><br/>Windows server, versión 1803 o posterior<br/><br/>Windows Server 2012 R2 y 2016 <sup> [[1](#fn1)]<sup>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br><br/>   [Directiva de grupo](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) o](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Azure Defender](/azure/security-center/security-center-wdatp) <br><br> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
 | macOS:<br/>11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave) | [Script local](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[Jamf Pro](mac-install-with-jamf.md)<br/><br/>[Administración de dispositivos móviles](mac-install-with-other-mdm.md)   |
@@ -88,7 +90,7 @@ Para comprobar que los dispositivos incorporados están correctamente conectados
 
 |Sistema operativo|Instrucciones|
 |---|---|
-|Windows 10 o posterior<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Servidor, versión 1803 o posterior<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consulte [Ejecutar una prueba de detección.](run-detection-test.md)<br/><br/>Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y <https://demo.wd.microsoft.com> pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.|
+|Windows 10 o posterior<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows server, versión 1803 o posterior<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consulte [Ejecutar una prueba de detección.](run-detection-test.md)<br/><br/>Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y <https://demo.wd.microsoft.com> pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.|
 |macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|Descargue y use la aplicación DE BRICOLAJE en <https://aka.ms/mdatpmacosdiy> . <br/><br/> Para obtener más información, [vea Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
 |Linux:<br/> RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS o LTS superior<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2|1. Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled` .<br/><br/>2. Abra una ventana terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` .<br/><br/>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list` .<br/><br/>Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 

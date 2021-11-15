@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 7b09c12c1d4c519a47fc60057ab26741a7145469
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e53c14405d3d190715b49e58061aee8ba771180a
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212007"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962848"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Etiquetas de entidad Defender for Identity en Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ En este artículo se explica cómo aplicar [etiquetas de](/defender-for-identity
 
 En Microsoft 365 Defender, puede establecer tres tipos de etiquetas de entidad defender para **identidad:** etiquetas confidenciales, etiquetas Desalono y **etiquetas de servidor** Exchange servidor . 
 
-Para establecer estas etiquetas, [en Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
+Para establecer estas etiquetas, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
 
 ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 

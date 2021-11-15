@@ -1,5 +1,5 @@
 ---
-title: Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con JAMF Pro (versión preliminar)
+title: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,27 +14,23 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro (versión preliminar)
-ms.openlocfilehash: 5335ceb47475a633e8f7ba000f8690ca3b9b8b6c
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 705882af6ebbc7309fb704e215443f807533c6f1
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792513"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962668"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con JAMF Pro (versión preliminar)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
 
 Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumplimiento como la prevención de pérdida de datos de punto de conexión.
 
 > [!IMPORTANT]
 > Use este procedimiento si ***no tiene*** Microsoft Defender para endpoint (MDE) implementado en sus dispositivos macOS
 
-## <a name="get-registered"></a>Registrarse
-
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
-
 **Se aplica a:**
 
-- [Microsoft 365 Prevención de pérdida de datos de extremo (DLP)](./endpoint-dlp-learn-about.md)
+- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 - [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -47,9 +43,9 @@ Para obtener acceso a esta característica, debe registrar el espacio empresaria
 
 1. Necesitará estos archivos para este procedimiento.
 
-|archivo necesario para |source |
+|Archivo necesario para |Origen |
 |---------|---------|
-|Paquete de incorporación    |descargado del paquete de incorporación **del** portal de cumplimiento , nombre de archivo *DeviceComplianceOnboarding.plist* |
+|Paquete de incorporación    |Descargado del paquete de incorporación **del** portal de cumplimiento , nombre de archivo *DeviceComplianceOnboarding.plist* |
 |accesibilidad |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Filtro de red| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
@@ -67,7 +63,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 >
 >Si alguno de estos archivos individuales se actualiza, deberá descargar el archivo combinado de nuevo o el archivo actualizado individualmente.
 
-La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un proceso de varias fases.
+La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un proceso multifase.
 
 ### <a name="get-the-device-onboarding-package"></a>Obtener el paquete de incorporación de dispositivos
 
@@ -79,7 +75,7 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
  
 1. Elija **Descargar paquete de incorporación**
  
-1. Extrae el contenido del paquete de incorporación de dispositivos. En la **carpeta JAMF** debería ver el archivo *DeviceComplainceOnboarding.plist.*
+1. Extrae el contenido del paquete de incorporación de dispositivos. En la carpeta JAMF, debería ver el archivo *DeviceComplainceOnboarding.plist.*
 
 ### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>Crear un perfil de configuración Pro JAMF para el paquete de incorporación
 

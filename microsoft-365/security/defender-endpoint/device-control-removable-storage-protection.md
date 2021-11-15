@@ -14,16 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e3e658af5118d7a2d6ff565d52154e7be3f95fa
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: cf57eb6e08278625ac8887985a39d355266f47d5
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882698"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962932"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender para Endpoint Device Control Removable Storage Protection
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 La protección de almacenamiento extraíble del control de dispositivos en Microsoft Defender para extremo impide que los usuarios, los puntos de conexión o ambos utilicen medios de almacenamiento extraíbles no autorizados.
 

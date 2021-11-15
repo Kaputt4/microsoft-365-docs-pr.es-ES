@@ -1,7 +1,7 @@
 ---
 title: 'Información del panel: Administración de amenazas y vulnerabilidades'
 description: El Administración de amenazas y vulnerabilidades puede ayudar a SecOps y a los administradores de seguridad a abordar las amenazas de ciberseguridad y a crear la resistencia de seguridad de su organización.
-keywords: Microsoft Defender para Endpoint-tvm, panel de Microsoft Defender para Endpoint-tvm, & administración de vulnerabilidades de amenazas, Administración de amenazas y vulnerabilidades, & administración de vulnerabilidades de amenazas basadas en riesgos, configuración de seguridad, Puntuación segura de Microsoft para dispositivos, puntuación de exposición
+keywords: Microsoft Defender para Endpoint-tvm, Panel de Microsoft Defender para Endpoint-tvm, panel de amenazas & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, amenazas basadas en riesgos & administración de vulnerabilidades , configuración de seguridad, Puntuación segura de Microsoft para dispositivos, puntuación de exposición
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c5bdc74a214ed76aa791a9ee8331ac2f0a5492a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 63d994ce521f3915daea6a585f64c407fd241eee
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882986"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963220"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Información del panel: Administración de amenazas y vulnerabilidades
 
@@ -41,7 +42,7 @@ Threat and administración de vulnerabilidades es un componente de Defender for 
 - Contexto de vulnerabilidad de dispositivos inestimable durante las investigaciones de incidentes
 - Procesos de corrección integrados a Microsoft Intune y Microsoft Endpoint Configuration Manager
 
-Puede usar la funcionalidad Administración de amenazas y vulnerabilidades en [Microsoft 365 Defender portal para:](https://security.microsoft.com/)
+Puede usar la funcionalidad Administración de amenazas y vulnerabilidades en el portal de Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">para:</a>
 
 - Ver la puntuación de exposición y puntuación segura de Microsoft para dispositivos, junto con las recomendaciones de seguridad más importantes, vulnerabilidad de software, actividades de corrección y dispositivos expuestos
 - Correlacionar EDR información con vulnerabilidades de punto de conexión y procesarlas

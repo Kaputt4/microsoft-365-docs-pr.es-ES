@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72385d19e6c734c06a8ac14c2de01a023db28d53
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 7a22d07919aaebc1373c5b330c51d720c25b4f8c
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883346"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963136"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimizar la implementación y las detecciones de reglas de ASR
 
@@ -38,7 +39,7 @@ Las reglas de reducción de superficie de ataque [(ASR)](./attack-surface-reduct
 <br>
 *Tarjeta de administración de superficie de ataque*
 
-La *tarjeta de administración de superficie de* ataque es un punto de entrada a las herramientas Microsoft 365 centro de seguridad que puedes usar para:
+La *tarjeta de administración de superficie de* ataque es un punto de entrada a las herramientas Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centro</a> de seguridad que puedes usar para:
 
 * Comprenda cómo se implementan actualmente las reglas de ASR en su organización.
 * Revise las detecciones de ASR e identifique posibles detecciones incorrectas.
@@ -52,7 +53,7 @@ La ***pestaña Agregar exclusiones** de la página Reglas de reducción de super
 > [!NOTE]
 > Para acceder Microsoft 365 de seguridad, necesita una licencia Microsoft 365 E3 o E5 y una cuenta que tenga ciertos roles en Azure Active Directory. [Lea acerca de las licencias y permisos necesarios.](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)
 
-Para obtener más información acerca de la implementación de reglas ASR en Microsoft 365 de seguridad, vea [Monitor and manage ASR rule deployment and detections](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
+Para obtener más información acerca de la implementación de reglas ASR <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 de</a>seguridad, vea Monitor and manage [ASR rule deployment and detections](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
 
 **Temas relacionados**
 

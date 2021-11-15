@@ -16,12 +16,13 @@ ms.technology: mde
 ms.topic: how-to
 ms.date: 10/14/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 92adcad0a7cbb12853e2caca217b87f448efcb65
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom: admindeeplinkDEFENDER
+ms.openlocfilehash: 544d16919f039f7ac4ae7a7234b2b90c925a7329
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881954"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962559"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -43,7 +44,7 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
 
 - Windows 10 Pro versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows 10 Enterprise, versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
-- Windows Servidor, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
+- Windows server, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
@@ -53,9 +54,9 @@ Para usar todo el conjunto de características de las reglas de reducción de su
 
 - Antivirus de Windows Defender como AV principal (protección en tiempo real)
 - [Protección de entrega en la](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) nube (algunas reglas requieren eso)
-- Windows 10 Enterprise Licencia E5 o E3
+- Windows 10 Enterprise de E5 o E3
 
-Aunque las reglas de reducción de superficie de ataque no requieren una licencia [de E5](/windows/deployment/deploy-enterprise-licenses)de Windows , con una licencia de E5 de Windows, obtienes capacidades de administración avanzadas, como supervisión, análisis y flujos de trabajo disponibles en Defender for Endpoint, así como funciones de informes y configuración en el centro de seguridad de Microsoft 365. Estas funcionalidades avanzadas no están disponibles con una licencia E3, pero aún puedes usar el Visor de eventos para revisar los eventos de regla de reducción de superficie de ataque.
+Aunque las reglas de reducción de superficie de ataque no requieren una licencia [de E5](/windows/deployment/deploy-enterprise-licenses)de Windows , con una licencia de E5 de Windows, obtienes capacidades de administración avanzadas, como supervisión, análisis y flujos de trabajo disponibles en Defender para endpoint, así como capacidades de informes y configuración en el centro de seguridad de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365.</a> Estas funcionalidades avanzadas no están disponibles con una licencia E3, pero aún puedes usar el Visor de eventos para revisar los eventos de regla de reducción de superficie de ataque.
 
 Cada regla ASR contiene una de cuatro opciones:
 

@@ -14,14 +14,15 @@ ms.collection: M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para crear y usar etiquetas de retención en documentos Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 6f6e57ec31d889fac031caf6cb6be94f483a93e9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 517183ca8e61415ec2817683c4a1ce88c251301b
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198510"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962572"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Clasificación de datos para su Microsoft 365 entorno de prueba empresarial
 
@@ -80,7 +81,7 @@ En esta fase, detectará el comportamiento predeterminado de la etiqueta de rete
 
 En primer lugar, cree un sitio de grupo SharePoint nivel confidencial:
   
-1. Con una instancia privada del explorador, inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con su cuenta de administrador global.
+1. Con una instancia privada del explorador, inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> con su cuenta de administrador global.
 1. En la lista de iconos, seleccione **SharePoint**.
 1. En la nueva **SharePoint** en el explorador, seleccione **Crear sitio**.
 1. En la página **Crear un sitio**, seleccione **Sitio de grupo**.
@@ -114,6 +115,6 @@ Explore características [y capacidades adicionales](m365-enterprise-test-lab-gu
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

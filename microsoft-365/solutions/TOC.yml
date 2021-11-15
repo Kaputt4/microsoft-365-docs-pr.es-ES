@@ -33,7 +33,7 @@
       items:
         - name: Información general
           href: setup-secure-collaboration-with-teams.md
-        - name: Paso 1. Configurar tres niveles de protección con Microsoft Teams
+        - name: Configurar tres niveles de protección con Microsoft Teams
           items:
             - name: Vista general de los tres niveles de protección
               href: configure-teams-three-tiers-protection.md
@@ -45,7 +45,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: Configurar un equipo con aislamiento de seguridad
               href: secure-teams-security-isolation.md
-        - name: Paso 2. Configurar el uso compartido externo
+        - name: Configurar el uso compartido externo
           items:
             - name: Información general sobre el uso compartido externo
               href: collaborate-with-people-outside-your-organization.md

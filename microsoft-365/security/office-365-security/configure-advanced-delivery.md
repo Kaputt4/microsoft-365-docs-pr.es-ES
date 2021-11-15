@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.custom: ''
+ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d131b150a030ade32e8d8d7f25692c0883c5d4d
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: bc507bfbfdcb090e61f688def0ee6a7a3922652d
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804910"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963364"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -60,7 +60,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Entrega avanzada,** abra <https://security.microsoft.com/advanceddelivery> .
+- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . Para ir directamente a la **página Entrega avanzada,** abra <https://security.microsoft.com/advanceddelivery> .
 
 - Para conectarse a PowerShell del Centro de seguridad y cumplimiento, vea [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
@@ -75,7 +75,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el portal Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas avanzada en \>  \>  \>  la **sección** Reglas.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **& directivas** de colaboración & Directivas de amenazas de reglas Avanzada en la \>  \>  \>  **sección** Reglas.
 
 2. En la **página Entrega avanzada,** compruebe que la pestaña buzón **de SecOps** está seleccionada y, a continuación, siga uno de los pasos siguientes:
    - Haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
@@ -95,7 +95,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Use el portal Microsoft 365 Defender para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas avanzada en \>  \>  \>  la **sección** Reglas.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **& directivas** de colaboración & Directivas de amenazas de reglas Avanzada en la \>  \>  \>  **sección** Reglas.
 
 2. En la **página Entrega avanzada,** seleccione la pestaña **Simulación de suplantación** de identidad y, a continuación, realice uno de los siguientes pasos:
    - Haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**.

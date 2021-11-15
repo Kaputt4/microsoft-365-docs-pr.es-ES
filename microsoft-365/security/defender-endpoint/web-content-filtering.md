@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65010f13ca5b1605d9bcec672c4e51270913d407
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4c316c09ced5e38b51395faea7a84adccc2c2645
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883442"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962632"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -50,9 +51,9 @@ El filtrado de contenido web está disponible en los principales exploradores we
 
 Antes de probar esta característica, asegúrese de cumplir los siguientes requisitos:
 
-- La suscripción incluye una de las siguientes opciones: Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la licencia independiente de Microsoft Defender para Endpoint. 
+- La suscripción incluye una de las siguientes opciones: Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5  complemento o la licencia independiente de Microsoft Defender para Endpoint. 
 
-- Tiene acceso a Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ).
+- Tiene acceso a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 - Los dispositivos de su organización están ejecutando Windows 10 Anniversary Update (versión 1607) o posterior, o Windows 11 con las actualizaciones [antivirus/antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)más recientes.
 
@@ -64,7 +65,7 @@ Los datos se almacenan en la región seleccionada como parte de la configuració
 
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
-En el menú de navegación de la izquierda, **seleccione Configuración** \> **Endpoints** \> **General** \> **Advanced Features**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
+En la navegación a la izquierda en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>seleccione **Configuración** \> **Extremos generales** \>  \> **avanzadas**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurar directivas de filtrado de contenido web
 
@@ -159,7 +160,7 @@ Odio **&** la intolerancia: sitios que promueven opiniones agresivas, degradante
 
 Para agregar una nueva directiva, siga estos pasos:
 
-1. En el portal Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ), elija Configuración filtrado de contenido   >  **web**  >  **+ Agregar directiva**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, elija **Configuración** filtrado de  >  **contenido web**+ Agregar  >  **directiva**.
 
 2. Especifique un nombre.
 
@@ -185,7 +186,7 @@ Es posible invalidar la categoría bloqueada en el filtrado de contenido web par
 
 Para definir un indicador personalizado, siga estos pasos:
 
-1. En el portal Microsoft 365 Defender ( ), vaya a Configuración Dirección URL de indicadores de puntos de <https://security.microsoft.com>  \>  \>  \> **conexión/Agregar** \> **elemento de dominio**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>vaya **a Configuración** Dirección URL de indicadores de puntos de \>  \>  \> **conexión/Elemento de** \> **adición de dominio**.
 
 2. Escriba el dominio del sitio.
 
@@ -249,7 +250,7 @@ Solo Microsoft Edge se admite si la configuración del sistema operativo del dis
 
 La protección de red actualmente no admite la inspección SSL, lo que puede provocar que algunos sitios puedan ser permitidos por el filtrado de contenido web que normalmente se bloquearía. Los sitios se permitirían debido a la falta de visibilidad del tráfico cifrado después de que se haya realizado el protocolo de enlace TLS y a la imposibilidad de analizar determinados redireccionamientos.  Esto incluye redirecciones desde algunas páginas de inicio de sesión de correo basadas en web a la página del buzón. Como solución alternativa aceptada, puede crear un indicador de bloqueo personalizado para la página de inicio de sesión para garantizar que ningún usuario pueda acceder al sitio. Tenga en cuenta que esto puede bloquear su acceso a otros servicios asociados con el mismo sitio web. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)

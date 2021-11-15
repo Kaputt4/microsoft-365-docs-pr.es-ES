@@ -6,13 +6,14 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 7da746ade0e4ec684b97a61524abd5ab1e83c114
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8928441e27215e75dc4456116c9a0e7890073852
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59212017"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962620"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Cuenta de Microsoft Defender para Servicios de directorio de identidad en Microsoft 365 Defender
 
@@ -30,7 +31,7 @@ En este artículo se explica cómo configurar la cuenta de Servicios de director
 
 Para conectar el [sensor con](sensor-health.md#add-a-sensor) los dominios de Active Directory, deberá configurar cuentas de Servicios de directorio.
 
-1. En [Microsoft 365 Defender](https://security.microsoft.com/), vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 

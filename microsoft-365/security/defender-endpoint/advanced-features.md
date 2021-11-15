@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 432819930a1472d6241c62b275a940cb35c3cb37
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba613d2368bbb7cbefdaaaea30595bdc235a41ef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211434"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963232"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -156,7 +156,7 @@ La integración con Microsoft Defender for Identity te permite pivotar directame
 > [!NOTE]
 > Tendrás que tener la licencia adecuada para habilitar esta característica.
 
-## <a name="office-365-threat-intelligence-connection"></a>Office 365 Conexión de inteligencia de amenazas
+## <a name="office-365-threat-intelligence-connection"></a>Office 365 de inteligencia de amenazas
 
 Esta característica solo está disponible si tienes un Office 365 E5 activo o el complemento inteligencia de amenazas. Para obtener más información, vea la Office 365 Enterprise de producto de E5.
 
@@ -179,7 +179,7 @@ De los dos componentes de Microsoft Threat Expert, la notificación de ataques d
 Al habilitar esta configuración, Defender para las señales de punto de conexión Microsoft Cloud App Security para proporcionar una mayor visibilidad del uso de aplicaciones en la nube. Los datos reenviados se almacenan y procesan en la misma ubicación que los Cloud App Security datos.
 
 > [!NOTE]
-> Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809 (compilación del sistema operativo 17763.379 con [KB4489899),](https://support.microsoft.com/help/4489899)versiones Windows 10 posteriores o Windows 11.
+> Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809  (Compilación del sistema operativo 17763.379 con [KB4489899),](https://support.microsoft.com/help/4489899)versiones Windows 10 versiones posteriores o Windows 11.
 
 ## <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -201,7 +201,6 @@ Después de completar los pasos de integración en ambos portales, podrás ver a
 
 Bloquear el acceso a sitios web que contengan contenido no deseado y realizar un seguimiento de la actividad web en todos los dominios. Para especificar las categorías de contenido web que desea bloquear, cree una [directiva de filtrado de contenido web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Asegúrese de que tiene protección de red en modo de bloqueo al implementar la línea base de seguridad de [Microsoft Defender para](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)endpoints .
 
-
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Compartir alertas de extremo con el Centro de cumplimiento de Microsoft
 
 Reenvía las alertas de seguridad de puntos de conexión y su estado de evaluación al Centro de cumplimiento de Microsoft, lo que le permite mejorar las directivas de administración de riesgos internos con alertas y corregir los riesgos internos antes de que causen daños. Los datos reenviados se procesan y almacenan en la misma ubicación que los Office 365 datos.
@@ -218,7 +217,7 @@ Defender for Endpoint se puede integrar con [Microsoft Intune](/intune/what-is-i
 Esta característica solo está disponible si tiene lo siguiente:
 
 - Un inquilino con licencia para Enterprise Mobility + Security E3 y Windows E5 (o Microsoft 365 Enterprise E5)
-- Un entorno Microsoft Intune activo, con dispositivos administrados por Intune Windows [unidos a Azure AD.](/azure/active-directory/devices/concept-azure-ad-join/)
+- Un entorno Microsoft Intune activo, con dispositivos Windows administrados por Intune [Azure AD unidos a](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### <a name="conditional-access-policy"></a>Directiva de acceso condicional
 

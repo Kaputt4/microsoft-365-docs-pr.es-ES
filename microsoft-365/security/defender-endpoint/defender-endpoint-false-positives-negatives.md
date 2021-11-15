@@ -20,13 +20,15 @@ ms.collection:
 ms.topic: how-to
 ms.date: 10/19/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
-ms.custom: FPFN
-ms.openlocfilehash: 8023bcea4eb12689706790af41ead359e302898d
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.custom:
+- FPFN
+- admindeeplinkDEFENDER
+ms.openlocfilehash: 8dae7d3ce3c9473f99d8060dd35c3c6c4af1ea39
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882866"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962475"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -65,7 +67,7 @@ Administrar las alertas y clasificar falsos positivos ayuda a entrenar la soluci
 
 Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un falso positivo o benigno.
 
-1. Vaya al portal de Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
 
 2. En el panel de navegación, elija **Cola de alertas**.
 
@@ -85,7 +87,7 @@ Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un
 
 Las alertas se pueden clasificar como falsos positivos o como verdaderos positivos en Microsoft 365 Defender. Clasificar alertas ayuda a entrenar a Microsoft Defender para endpoint para que, con el tiempo, veas más alertas verdaderas y menos alertas falsas.
 
-1. Vaya al portal de Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
 
 2. Seleccione **Cola de alertas** y, a continuación, seleccione una alerta.
 
@@ -100,7 +102,7 @@ Las alertas se pueden clasificar como falsos positivos o como verdaderos positiv
 
 Si tiene alertas que son falsos positivos o que son verdaderos positivos, pero para eventos sin importancia, puede suprimir esas alertas en Microsoft 365 Defender. Suprimir alertas ayuda a reducir el ruido en el panel de operaciones de seguridad.
 
-1. Vaya al portal de Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
 
 2. En el panel de navegación, seleccione **Cola de alertas**.
 
@@ -137,7 +139,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 
 ### <a name="review-completed-actions"></a>Revisar acciones completadas
 
-1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, haga clic en **Centro de acciones**.
+1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>haga clic en **Centro de acciones**.
 
 2. Seleccione la **pestaña** Historial para ver una lista de acciones realizadas.
 
@@ -153,7 +155,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Deshacer varias acciones a la vez
 
-1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, haga clic en **Centro de acciones**.
+1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>haga clic en **Centro de acciones**.
 
 2. En la **pestaña** Historial, seleccione las acciones que desea deshacer.
 
@@ -164,7 +166,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 > [!div class="mx-imgBorder"]
 > ![Archivo en cuarentena.](images/autoir-quarantine-file-1.png)
 
-1. En el panel de navegación izquierdo del portal de Microsoft 365 Defender, haga clic en **Centro de acciones**.
+1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>haga clic en **Centro de acciones**.
 
 2. En la **pestaña** Historial, seleccione un archivo que tenga el tipo de acción **Archivo de cuarentena**.
 
@@ -208,7 +210,7 @@ Los procedimientos de esta sección describen cómo definir exclusiones e indica
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Exclusiones para Antivirus de Microsoft Defender
 
-En general, no es necesario definir exclusiones para Antivirus de Microsoft Defender. Asegúrese de definir las exclusiones con moderación y de que solo incluya los archivos, carpetas, procesos y archivos abiertos por procesos que resulten en falsos positivos. Además, asegúrate de revisar las exclusiones definidas con regularidad. Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para definir o editar las exclusiones antivirus; sin embargo, puede usar otros métodos, como la [directiva de grupo](/azure/active-directory-domain-services/manage-group-policy) (vea Manage Microsoft Defender for [Endpoint](manage-atp-post-migration.md)).
+En general, no es necesario definir exclusiones para Antivirus de Microsoft Defender. Asegúrese de definir las exclusiones con moderación y de que solo incluya los archivos, carpetas, procesos y archivos abiertos por procesos que resulten en falsos positivos. Además, asegúrate de revisar las exclusiones definidas con regularidad. Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para definir o editar las exclusiones de antivirus; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-atp-post-migration.md)).
 
 > [!TIP]
 > ¿Necesita ayuda con las exclusiones de antivirus? Consulte [Configure and validate exclusions for Antivirus de Microsoft Defender scans](configure-exclusions-microsoft-defender-antivirus.md).
@@ -352,7 +354,7 @@ Compruebe si el nivel de protección entregado en la nube Antivirus de Microsoft
 > [!TIP]
 > Para obtener más información sobre cómo configurar la protección entregada en la nube, consulte Especificar el nivel de [protección entregado en la nube.](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 
-Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección entregada en la nube; sin embargo, puede usar otros métodos, como la [directiva de grupo](/azure/active-directory-domain-services/manage-group-policy) (vea Manage Microsoft Defender for [Endpoint](manage-atp-post-migration.md)).
+Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección entregada en la nube; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-atp-post-migration.md)).
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Use Microsoft Endpoint Manager para revisar y editar la configuración de protección entregada en la nube (para directivas existentes)
 
@@ -396,7 +398,7 @@ Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software
 
 Dependiendo de las aplicaciones que la organización esté usando, es posible que esté obteniendo falsos positivos como resultado de la configuración de la protección de PUA. Si es necesario, considere la posibilidad de ejecutar la protección de PUA en el modo de auditoría durante un tiempo o aplicar la protección pua a un subconjunto de dispositivos de la organización. La protección pua se puede configurar para el Microsoft Edge y para Antivirus de Microsoft Defender.
 
-Se recomienda [usar](/mem/endpoint-manager-overview) Microsoft Endpoint Manager para editar o establecer la configuración de protección de PUA; sin embargo, puede usar otros métodos, como la [directiva de grupo](/azure/active-directory-domain-services/manage-group-policy) (vea Manage Microsoft Defender for [Endpoint](manage-atp-post-migration.md)).
+Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección de PUA; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-atp-post-migration.md)).
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Usar Microsoft Endpoint Manager para editar la protección de PUA (para perfiles de configuración existentes)
 
@@ -448,13 +450,13 @@ Según el nivel [de](/microsoft-365/security/defender-endpoint/automation-levels
 
 Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, póngase en contacto con el soporte técnico.
 
-1. Vaya a Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> e inicie sesión.
 
 2. En la esquina superior derecha, seleccione el signo de interrogación (**?**) y, a continuación, seleccione **Soporte técnico de Microsoft**.
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-atp-post-migration.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Informes en el Centro de administración: uso del explorador de Microsoft'
+title: 'Microsoft 365 informes en el Centro de administración: uso del explorador de Microsoft'
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel Microsoft 365 informes en la Centro de administración de Microsoft 365.
-ms.openlocfilehash: ac2eb7af8f89fb3d496d7b2afd8ca66322e20275
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d653bf1132f461b14644b1ddc04bab2fdceee358
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60654004"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960963"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Informes en el Centro de administración: uso del explorador de Microsoft
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 informes en el Centro de administración: uso del explorador de Microsoft
 
 El panel Microsoft 365 informes le muestra una introducción a la actividad en todos los productos de la organización. Le permite profundizar en informes de nivel de producto individuales para ofrecer información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador de Microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso Microsoft Edge explorador. Los informes de uso se basan Microsoft 365 los servicios en línea a los que se accede mediante un explorador de Microsoft.
 
@@ -39,9 +39,11 @@ El panel Microsoft 365 informes le muestra una introducción a la actividad en t
 
 :::image type="content" alt-text="Flujo de acción del informe de uso del explorador de Microsoft." source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
 
-Los administradores globales pueden participar en el envío de mensajes a los usuarios, que usan servicios Microsoft 365 en Edge Legacy (no compatible) e Internet Explorer (pronto no se admite). Este mensaje dirigido notifica a los usuarios que la compatibilidad con estos exploradores enviará pronto y vínculos a un artículo de soporte técnico con información sobre Microsoft Edge y pasos sencillos a seguir para cambiar de explorador. 
+Los administradores globales pueden participar en el envío de mensajes a usuarios que tienen acceso a servicios de Microsoft 365 desde Internet Explorer (como aviso, la aplicación de escritorio de Internet Explorer se retirará el 15 de junio de 2022). Este mensaje dirigido notifica a los usuarios que la compatibilidad con estos exploradores enviará pronto y vínculos a un artículo de soporte técnico con información sobre Microsoft Edge y pasos sencillos a seguir para cambiar de explorador. 
 
-Puede encontrar esta característica en la página de informe. Una vez creado el mensaje, se notificará a los usuarios con la frecuencia especificada hasta el 17 de agosto de 2021. Puedes desactivar esta característica en cualquier momento para dejar de enviar notificaciones a los usuarios. Para empezar a enviar notificaciones de nuevo, vuelve a activar la característica.
+Puede encontrar esta característica en la página informe de uso del explorador microsoft si su organización tiene el uso de Internet Explorer que se muestra en el informe (se necesitan permisos de administrador global). Una vez creado el mensaje, se notificará a los usuarios con la frecuencia especificada hasta el 15 de junio de 2022. Puedes activar o desactivar esta característica en cualquier momento.
+
+Esta es una característica de tiempo limitado que actualmente solo está disponible para los administradores globales en los Estados Unidos y permite notificaciones de usuario en Excel en línea.
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpretar el informe de uso del explorador de Microsoft
 

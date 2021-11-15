@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d27a3cfb2d3c068a1d2b26ffba6b0061b143503f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b3c01215db133f5e39c56596c051e071388b5b80
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699298"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963280"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de alertas o eventos que faltan para Microsoft Defender para Endpoint en Linux
 
@@ -31,7 +32,7 @@ ms.locfileid: "60699298"
 
 - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 
-En este artículo se proporcionan algunos pasos generales para mitigar los eventos o alertas que faltan en [Microsoft 365 Defender portal](https://security.microsoft.com/).
+En este artículo se proporcionan algunos pasos generales para mitigar los eventos o alertas que faltan en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 Una **vez que Microsoft Defender para endpoint** se  haya instalado correctamente en un dispositivo, se generará una página de dispositivo en el portal. Puedes revisar todos los eventos registrados en la pestaña escala de tiempo de la página del dispositivo o en la página de búsqueda avanzada. En esta sección se soluciona el caso de que faltan algunos o todos los eventos esperados.
 Por ejemplo, si faltan todos los eventos _CreatedFile._

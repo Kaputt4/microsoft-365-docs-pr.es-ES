@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro para clientes de Microsoft Defender para endpoints (versión preliminar)
-ms.openlocfilehash: 31ff2803a1180d7a43b462f3a78cc52c894f23a6
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: cfe008e7d1334be58e9aabf45d441b2553cb0fe2
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792321"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963316"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
 
@@ -28,14 +28,10 @@ Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumpl
 > [!IMPORTANT]
 > Use este procedimiento ***si ha implementado*** Microsoft Defender para endpoint (MDE) en los dispositivos macOS
 
-## <a name="get-registered"></a>Registrarse
-
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
-
 **Se aplica a:**
 
 - Clientes que tienen MDE implementado en sus dispositivos macOS.
-- [Microsoft 365 Prevención de pérdida de datos de extremo (DLP)](./endpoint-dlp-learn-about.md)
+- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 - [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
