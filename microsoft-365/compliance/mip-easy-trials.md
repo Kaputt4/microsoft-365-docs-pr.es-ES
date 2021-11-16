@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: Obtenga información sobre las etiquetas y directivas predeterminadas para Microsoft Information Protection (MIP) para clasificar y proteger el contenido confidencial.
-ms.openlocfilehash: 55657221c86aef13c9a6a5192a89ffe4f78ef2a3
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ffa0be4d64218fde0e88da4646d93a57f7a3a0b1
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677278"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962836"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Etiquetas y directivas predeterminadas para Microsoft Information Protection
 
@@ -31,7 +31,7 @@ Los clientes elegibles pueden activar las etiquetas y directivas predeterminadas
 
 Estas configuraciones predeterminadas le ayudarán a comenzar a trabajar rápidamente con Microsoft Information Protection del Centro de cumplimiento de Microsoft 365. Puede usarlos tal y como están, realizar solo algunos cambios o personalizarlos completamente para que se adapten mejor a sus requisitos empresariales. 
 
-La elegibilidad incluye a aquellos clientes que tengan una [prueba gratuita del Centro de cumplimiento de Microsoft 365](compliance-easy-trials.md) y a aquellos clientes que ya tengan un plan Microsoft 365 E5 requisitos:
+La elegibilidad incluye a aquellos clientes que tengan una [prueba gratuita del Centro de cumplimiento de Microsoft 365](compliance-easy-trials.md) y a algunos clientes que ya tengan un plan de Microsoft 365 E5:
 
 - **Nuevos clientes**: si ha tenido el Centro de cumplimiento de Microsoft 365 durante menos de 30 días, el inquilino puede activar todas las configuraciones predeterminadas listadas. Siempre puede deshabilitarlas, quitarlas o editarlas.
 
@@ -55,7 +55,9 @@ Para obtener estas directivas y etiquetas preconfiguradas:
     
 2. Si es elegible para las etiquetas y directivas predeterminadas de Microsoft Information Protection, verá la siguiente información, donde puede activar las etiquetas y directivas predeterminadas. Por ejemplo:
     
-    :::image type="content" alt-text="Prueba gratuita de Microsoft Information Protection con directivas preconfiguradas" source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::.
+    :::image type="content" alt-text="Activación de Microsoft Information Protection para etiquetas y directivas preconfiguradas." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    
+    Si no ve esta información mostrada con la opción de activación, actualmente no es apto para la creación automática de etiquetas y directivas de confidencialidad. Puede intentar volver a comprobarlo más tarde para ver si este estado ha cambiado o puede usar la información de configuración siguiente para crear manualmente las mismas etiquetas y directivas.
 
 ## <a name="default-sensitivity-labels"></a>Etiquetas de confidencialidad predeterminadas
 

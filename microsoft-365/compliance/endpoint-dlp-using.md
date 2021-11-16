@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: b354e578c40845a89b7bb837854f6dd7fa5bb4d3
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 03f16c9a914ce0a5cd1193919a962307b97435b2
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907806"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962992"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -45,10 +45,6 @@ O bien
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Escaneo y protección de clasificación avanzada
 
-#### <a name="get-registered"></a>Registrarse
-
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [obtener registrado](https://aka.ms/Ignite2021DLP).
-
 Cuando está habilitada, **la protección y el examen de clasificación avanzada** permiten al servicio de clasificación de datos basado en la nube más avanzado de Microsoft 365 examinar elementos, clasificarlos y devolver los resultados a la máquina local. Esto significa que puede aprovechar la clasificación [exacta de coincidencia de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), técnicas de clasificación de entidades [con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) en las directivas DLP.
 
 En la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso del ancho de banda es una preocupación, puede establecer un límite en esta configuración global que se aplica por dispositivo en cuanto se puede usar en un período de 24 horas. Si estableces un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube y la clasificación de datos continuará localmente en el dispositivo. Cuando el uso del ancho de banda acumulado se encuentra por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
@@ -65,8 +61,6 @@ Estas versiones de Windows admiten la protección y el escaneo de clasificación
 > La evaluación de directivas DLP siempre se produce en la nube, incluso si el contenido del usuario no se envía.
 
 ### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Configuración de Windows 10 DLP de punto de conexión y macOS
-
-Para obtener acceso al soporte técnico de macOS, debe registrar el espacio empresarial con Microsoft. Vea, [obtener registrado](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 y versiones posteriores  |macOS Catalina 10.15 o posterior (versión preliminar)  |Notas  |
 |---------|---------|---------|---------|
@@ -89,19 +83,19 @@ Es posible que quiera excluir determinadas rutas de supervisión DLP, alertas DL
 
 Puede usar esta lógica para crear sus rutas de exclusión para dispositivos Windows 10:
 
-- Una ruta de archivo es válida cuando termina en "\". Esto incluye solo a los archivos que se encuentran directamente dentro de la carpeta. <br/>Por ejemplo: C:\Temp\
+- Ruta de acceso de archivo válida que termina con `\`, lo que significa solo archivos que están directamente en la carpeta. <br/>Por ejemplo: `C:\Temp\`
 
-- Una ruta de archivo es válida cuando termina en "\*", que incluye solo a los archivos que se encuentran dentro de las subcarpetas, además de los archivos ubicados directamente dentro de la carpeta. <br/>Por ejemplo: C:\Temp\*
+- Ruta de acceso de archivo válida que termina con `\*`, lo que significa solo archivos en subcarpetas, además de los archivos directamente debajo de la carpeta. <br/>Por ejemplo: `C:\Temp\*`
 
-- Una ruta de archivo es válida cuando termina sin "\" o "\*". Esto incluye a todos los archivos que se encuentran directamente dentro de la carpeta o subcarpetas. <br/>Por ejemplo: C:\Temp
+- Ruta de acceso de archivo válida que termina sin `\` o `\*`, lo que significa todos los archivos que se encuentran directamente en la carpeta y en todas las subcarpetas. <br/>Por ejemplo: `C:\Temp`
 
-- Una ruta con comodín con "\" en cada lado. <br/>Por ejemplo: C:\Usuarios\*\Escritorio\
+- Ruta de acceso con comodín entre `\` de cada lado. <br/>Por ejemplo: `C:\Users\*\Desktop\`
 
-- Una ruta con comodín con "\" en cada lado y con "(número)" para dar un número exacto de subcarpetas. <br/>Por ejemplo: C:\Usuarios\*(1)\Descargas\
+- Ruta de acceso con comodín entre `\` de cada lado y con `(number)` para proporcionar el número exacto de subcarpetas. <br/>Por ejemplo: `C:\Users\*(1)\Downloads\`
 
-- Una ruta con variables de entorno del SISTEMA. <br/>Por ejemplo: %SystemDrive%\Test\*
+- Una ruta con variables de entorno del SISTEMA. <br/>Por ejemplo: `%SystemDrive%\Test\*`
 
-- Una combinación de todas las anteriores. <br/>Por ejemplo: %SystemDrive%\Users\*\Documents\*(2)\Sub\
+- Una combinación de todas las anteriores. <br/>Por ejemplo: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
 #### <a name="macos-devices-preview"></a>macOS devices (preview)
 
@@ -158,7 +152,7 @@ Para evitar que las aplicaciones con sincronización en la nube sincronicen elem
 
 Cuando está habilitada, la cuarentena automática se inicia en el momento en el que una aplicación no permitida intenta acceder a un elemento confidencial protegido por una DLP. La cuarentena automática mueve el elemento confidencial a una carpeta configurada por el administrador y puede dejar un archivo **.txt** como marcador de posición en el lugar del original. Puede configurar el texto del archivo del marcador de posición para indicar a los usuarios a dónde se movió el elemento y cualquier otra información pertinente.  
 
-Puede usar la cuarentena automática para evitar una cadena infinita de notificaciones de la DLP dirigida al usuario y los administradores. Vea [Escenario 4: evitar el bucle de notificaciones de la DLP en las aplicaciones con sincronización en la nube con cuarentena automática (vista previa)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
+Puede usar la cuarentena automática para evitar una cadena infinita de notificaciones DLP para el usuario y los administradores, vea [Escenario 4: evitar el bucle de notificaciones de la DLP en las aplicaciones con sincronización en la nube con cuarentena automática (vista previa)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
 
 ### <a name="unallowed-bluetooth-apps"></a>Aplicaciones de Bluetooth no permitidas
 
@@ -173,6 +167,9 @@ Restrinja el uso compartido de los archivos confidenciales que coincidan con las
 Agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
 
 #### <a name="service-domains"></a>Dominios de servicio
+
+> [!NOTE]
+> La configuración **Dominios de servicio** solo se aplica a los archivos cargados mediante Microsoft Edge o Google Chrome con la [Extensión de cumplimiento de Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) instalada.
 
 Puede controlar si los archivos confidenciales protegidos por sus directivas se pueden cargar en dominios de servicio específicos de Microsoft Edge.
 
@@ -206,7 +203,7 @@ Puede crear hasta cinco opciones personalizadas que aparecerán cuando los usuar
 |Mostrar opción de falsos positivos     |**La información de estos archivos no es confidencial** o puede escribir texto personalizado          |
 |opción 5    |**Otro** o puede escribir texto personalizado         |
 
-<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
+<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### <a name="always-audit-file-activity-for-devices"></a>Auditar siempre la actividad de archivos para dispositivos
 
@@ -238,7 +235,7 @@ Para ayudarle a familiarizarse con las características de DLP de los puntos de 
 
 > [!IMPORTANT]
 > Estos escenarios DLP de los puntos de conexión no son los procedimientos oficiales para crear y optimizar directivas DLP. Consulte los temas siguientes cuando necesite trabajar con directivas DLP en situaciones generales:
-
+>
 >- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 >- [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)
 >- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
@@ -268,7 +265,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 10. La nueva directiva DLP se mostrará en la lista de directivas.
 
-11. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
+11. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario.
 
 12. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
 
@@ -337,7 +334,7 @@ En este escenario, se bloquea la sincronización de archivos con la etiqueta de 
 
 - Una cuenta de usuario de AAD de destino y un equipo Windows 10 incorporado que ya esté sincronizando una carpeta local de OneDrive con el almacenamiento en la nube de OneDrive.
 - Microsoft Word instalado en el equipo Windows 10 de destino
-- Etiquetas de confidencialidad configuradas y publicadas. Vea [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) y [Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+- Etiquetas de confidencialidad configuradas y publicadas. Vea [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) y [Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 Hay tres pasos:
 
@@ -361,20 +358,22 @@ Hay tres pasos:
 
 7. Escriba la ruta de acceso a la carpeta de los equipos locales a las que quiere mover los archivos confidenciales originales. Por ejemplo:
    
-**'%homedrive%%homepath%\Microsoft DLP\Cuarentena'** para el nombre de usuario *Isaiah Langer* colocará los elementos movidos en una 
+    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** para el nombre de usuario *Isaiah Langer* colocará los elementos movidos en una carpeta llmada:  
 
-carpeta *C:\Usuarios\IsaiahLanger\Microsoft DLP\Cuarentena\OneDrive* y se anexará una marca de fecha y hora al nombre de archivo original.
+    *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
 
-> [!NOTE]
-> La cuarentena automática de la DLP creará subcarpetas para los archivos de cada aplicación no permitida. Por lo tanto, si tiene tanto el *Bloc de notas* como *OneDrive* en la lista de aplicaciones no permitidas, se creará una subcarpeta para **\OneDrive** y otra subcarpeta para **\Bloc de notas**.
+    y anexará una marca de fecha y hora al nombre de archivo original.
+    
+    > [!NOTE]
+    > La cuarentena automática de la DLP creará subcarpetas para los archivos de cada aplicación no permitida. Por lo tanto, si tiene tanto el *Bloc de notas* como *OneDrive* en la lista de aplicaciones no permitidas, se creará una subcarpeta para **\OneDrive** y otra subcarpeta para **\Bloc de notas**.
 
 8. Elija **Reemplazar los archivos por un archivo .txt que contenga el siguiente de texto** y escriba el texto que desee en el archivo de marcador de posición. Por ejemplo, para un archivo denominado *cuarentena automática 1.docx*:
     
-**%%FileName%% contiene información confidencial que su empresa está protegiendo con la directiva de prevención de pérdida de datos (DLP) %%PolicyName%% y se ha movido a la carpeta en cuarentena: %%QuarantinePath%%.** 
-
-dejará un archivo .txt que contiene este mensaje
-
-*cuar auto 1.docx contiene información confidencial que su empresa está protegiendo con la directiva de prevención de pérdida de datos (DLP) y se ha movido a la carpeta en cuarentena: C:\Usuarios\IsaiahLanger\Microsoft DLP\Cuarentena\OneDrive\cuar auto 1_20210728_151541.docx.*
+    > %%FileName%% contiene información confidencial que su empresa está protegiendo con la directiva de prevención de pérdida de datos (DLP) %%PolicyName%% y se ha movido a la carpeta en cuarentena: %%QuarantinePath%%.
+    
+    dejará un archivo de texto que contiene este mensaje:
+    
+    > cuar auto 1.docx contiene información confidencial que su empresa está protegiendo con la directiva de prevención de pérdida de datos (DLP) y se ha movido a la carpeta en cuarentena: C:\Usuarios\IsaiahLanger\Microsoft DLP\Cuarentena\OneDrive\cuar auto 1_20210728_151541.docx.
 
 9. Elija **Guardar**
 
@@ -393,8 +392,8 @@ dejará un archivo .txt que contiene este mensaje
 6. Acepte la selección **Crear o personalizar reglas DLP avanzadas** que viene predeterminada y elija **Siguiente**.
 
 7. Cree una regla con estos valores:
-    1. **Nombre** > *Escenario 4 de la cuarentena automática*
-    1. **Condiciones** > **Contenido contiene** > **Etiquetas de confidencialidad** > **Extremadamente confidencial**
+    1. **Nombre** > *Escenario 4 de cuarentena automática*
+    1. **Condiciones** > **El contenido contiene** > **Etiquetas de confidencialidad** > **Extremadamente confidencial**
     1.  **Acciones** > **Auditar o restringir actividades en dispositivos Windows** > **Acceso de aplicaciones no permitidas** > **Bloquear**. Para los fines de este escenario, borre todas las demás actividades.
     1. **Notificaciones del usuario** > **Activadas**
     1. **Dispositivos de punto de conexión** > Elegir **Mostrar a los usuarios una notificación de sugerencia de directiva cuando una actividad** siempre que no esté ya activada.
@@ -405,8 +404,8 @@ dejará un archivo .txt que contiene este mensaje
 
 10. Revise la configuración y elija **Enviar**.
 
-> [!NOTE]
-> Espere al menos una hora para que la nueva directiva se replique y se aplique al equipo de Windows 10 de destino.
+    > [!NOTE]
+    > Espere al menos una hora para que la nueva directiva se replique y se aplique al equipo de Windows 10 de destino.
 
 11. La nueva directiva DLP se mostrará en la lista de directivas.
 
@@ -418,23 +417,23 @@ dejará un archivo .txt que contiene este mensaje
 
     *carpeta de origen C:\auto-cuarentena*
 
-3. Abra Microsoft Word y cree un archivo en la carpeta de origen de cuarentena automática. Aplique la etiqueta de confidencialidad **Extremadamente confidencial**. Consulte [Aplicar etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+3. Abra Microsoft Word y cree un archivo en la carpeta de origen de cuarentena automática. Aplique la etiqueta de confidencialidad **Extremadamente confidencial**; vea [Aplicar etiquetas de confidencialidad a los archivos y el correo electrónico en Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 4. Copie el archivo que acaba de crear en la carpeta de sincronización de OneDrive. Debe aparecer una notificación del sistema para el usuario que indica que la acción no está permitida y que el archivo se pondrá en cuarentena. Por ejemplo, para el nombre de usuario *Isaiah Langer* y un documento titulado *doc auto-cuarentena 1.docx* vería este mensaje:
 
-![Ventana emergente de notificación de prevención de pérdida de datos para el usuario que indica que la acción de sincronización de OneDrive no está permitida para el archivo especificado y que el archivo se pondrá en cuarentena.](../media/auto-quarantine-user-notification-toast.png)
+    ![Ventana emergente de notificación de prevención de pérdida de datos para el usuario que indica que la acción de sincronización de OneDrive no está permitida para el archivo especificado y que el archivo se pondrá en cuarentena.](../media/auto-quarantine-user-notification-toast.png)
+    
+    El mensaje indica:
+    
+    > No se permite abrir el documento 1.docx con esta aplicación. El archivo se pondrá en cuarentena en "C:\Users\IsaiahLanger\Microsoft DLP\OneDrive".
 
-El mensaje indica:
+5. Elija **Descartar**.
 
-«No se permite abrir doc auto-cuarentena 1.docx con esta aplicación. El archivo se pondrá en cuarentena en 'C:\Usuarios\IsaiahLanger\Microsoft DLP\OneDrive'».
-
-5. Elija **Descartar**
-
-6. Abra el archivo .txt del marcador de posición. Se denominará **doc auto-cuarentena 1.docx_ *fecha_hora*.txt**. 
+6. Abra el archivo de texto del marcador de posición. Se denominará **doc auto-cuarentena 1.docx_ *fecha_hora*.txt**. 
 
 7. Abra la carpeta de cuarentena y confirme que el archivo original está allí.
  
-8. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
+8. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario.
 
 9. Compruebe que el evento se encuentre en el Explorador de actividades.
 

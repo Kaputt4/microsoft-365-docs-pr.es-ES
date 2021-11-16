@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 865f5c014e25b0a2abee0ed3ce9d6eb1748c6a6b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e1a8f2986c31cdf710d65532eb64394bc34d7a0b
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194566"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60971984"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en Advanced eDiscovery
 
@@ -34,41 +34,68 @@ Cuando el número de documentos recopilados es grande, puede ser difícil revisa
 
 - [Temas](themes-in-advanced-ediscovery.md)
 
+## <a name="run-analytics-for-a-review-set"></a>Ejecutar análisis para un conjunto de revisión
+
 Para analizar los datos de un conjunto de revisión:
 
 1. Configure las opciones de análisis para su caso. Para obtener más información, vea [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
 
 2. Abra el conjunto de revisión que desea analizar.
 
-3. Haga clic **en Administrar conjunto de revisión**.
+3. Haga clic **en Analytics** Ejecutar documento & análisis de  >  **correo electrónico**.
 
-4. Haga **clic en Ejecutar análisis para el conjunto de revisión**.
+   ![Seleccione Ejecutar análisis de & de correo electrónico en la lista desplegable Análisis](..\media\RunAnalytics1.png)
 
 Puede comprobar el progreso del análisis en la **pestaña Trabajos** del caso.
 
  Una vez completado el análisis, puede ver el informe de análisis, ejecutar consultas dentro del conjunto de revisión en los resultados del análisis (vea [Consulta](review-set-search.md)dentro del conjunto de revisión) y ver documentos relacionados de un documento determinado (vea [Revisión](reviewing-data-in-review-set.md)de datos en el conjunto de revisión).
 
+## <a name="using-the-for-review-filter-query"></a>Uso de la consulta de filtro Para revisión
+
+Después de ejecutar análisis para el conjunto de opiniones, puede usar una consulta de filtro generada automáticamente (denominada *Para* revisión) que filtra la revisión para excluir elementos inmateriales, duplicados o no incluidos. Esto le deja solo con los elementos que son representativos, únicos e inclusivos en el conjunto de revisión.
+
+Para aplicar la **consulta de** filtro Para revisión a un conjunto de revisión, seleccione la lista desplegable Consultas **de** filtro guardadas y, a continuación, **\[ seleccione AutoGen] Para Revisar**.
+
+![Select For Review from the Saved filter queries dropdown list](..\media\ForReviewFilterQuery1.png)
+
+Esta es la sintaxis de la consulta de filtro **Para** revisión:
+
+`(((FileClass="Email") AND (InclusiveType="InclusiveMinus" OR InclusiveType="Inclusive")) OR ((FileClass="Attachment") AND (UniqueInEmailSet="true")) OR ((FileClass="Document") AND (MarkAsRepresentative="Unique")) OR (FileClass="Conversations"))`
+
+En la siguiente lista se describe el resultado de la consulta de filtro en términos del contenido que se muestra después de aplicarlo al conjunto de revisión.
+
+- **Correo electrónico**. Muestra los elementos marcados como **Inclusive** o **InclusiveMinus**. Un elemento inclusivo es el mensaje final de un subproceso de correo electrónico. Contiene todo el contenido anterior en el subproceso de correo electrónico. Un menos inclusivo contiene uno o más datos adjuntos asociados con el mensaje específico en el subproceso de correo electrónico. Un revisor puede usar el valor menos inclusivo para determinar qué mensajes específicos del subproceso de correo electrónico tienen datos adjuntos asociados.
+
+- **Datos adjuntos**. Filtra los datos adjuntos duplicados en el mismo conjunto de correo electrónico. Solo se muestran los datos adjuntos que son únicos en un subproceso de correo electrónico.
+
+- **Documentos y otros**. Filtra documentos duplicados. Solo se muestran los documentos que son únicos en el conjunto de revisión.
+
+- **Teams conversaciones**. Se muestran Teams (y Yammer) del conjunto de opiniones.
+
+Para obtener más información acerca de los tipos inclusivos y la singularidad de los documentos, vea [Subprocesos de correo](email-threading-in-advanced-ediscovery.md)electrónico en Advanced eDiscovery .
+
+> [!NOTE]
+> Durante la vista previa pública del formato de  caso grande en [Advanced eDiscovery](advanced-ediscovery-large-cases.md), la consulta de filtro Para revisión no ha devuelto conversaciones Teams para conjuntos de revisión creados antes del 4 de noviembre de 2021. Este problema se ha resuelto. Esto significa que si vuelve a aplicar la consulta **Para** revisión a un conjunto de revisión, es posible que se muestren más elementos que coincidan con la consulta de filtro porque se incluyen todas las Teams conversaciones.
+
 ## <a name="analytics-report"></a>Informe de análisis
 
-Para ver un informe de análisis para un conjunto de revisión:
+Para ver el informe de análisis de un conjunto de revisión:
 
 1. Abra el conjunto de revisión.
 
-2. Haga clic **en Administrar conjunto de revisión**.
+2. Haga clic **en Analytics**  >  **Show reports**.
 
-3. Haga clic **en Ver informe**.
-
-El informe tiene siete componentes del análisis:
+El **informe de Analytics** tiene siete componentes del análisis:
 
 - **Población objetivo:** Número de mensajes de correo electrónico, datos adjuntos y documentos sueltos que se encuentran en el conjunto de revisión.
 
 - **Documentos (excluyendo datos adjuntos):** El número de documentos sueltos que son pivotes, únicos casi duplicados de un elemento dinámico o un duplicado exacto de otro documento.
 
-- **Correos electrónicos:** El número de mensajes de correo electrónico que son inclusivos, copias inclusivas, menos incluidos o ninguno de los anteriores.
+- **Correos electrónicos:** El número de mensajes de correo electrónico marcados como una copia inclusiva, inclusiva menos o ninguna de las anteriores.
 
 - **Datos adjuntos:** Número de datos adjuntos de correo electrónico que son únicos o duplicados de otros datos adjuntos de correo electrónico en el conjunto de revisión.
 
-- **Número de archivos por tipo:** El número de archivos, identificados por extensión de archivo.
+- **Número de documentos por tipo de archivo:** El número de archivos, identificados por extensión de archivo.
 
 - **Documentos por origen:** Un resumen del contenido por su origen de datos original.
 

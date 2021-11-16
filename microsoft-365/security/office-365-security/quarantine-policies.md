@@ -17,17 +17,14 @@ ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bfb89d73649c3607909c6a66d4344b6d63b6470
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 77e24e4c1f4040ee97fbbdfd3b7c0208955c17d9
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963028"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972053"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
-
-> [!NOTE]
-> Las características que se describen en este artículo están en proceso de implantarse y es posible que aún no esté disponible. La fecha de destino del lanzamiento mundial es el 31 de octubre de 2021.
 
 Las directivas de cuarentena (anteriormente conocidas como etiquetas de _cuarentena)_ en Exchange Online Protection (EOP) y Microsoft Defender para Office 365 permiten a los administradores controlar lo que los usuarios pueden hacer con los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena.
 
@@ -74,6 +71,8 @@ Puede crear y asignar directivas de cuarentena en el portal de Microsoft 365 Def
 
 > [!NOTE]
 > El tiempo que los mensajes en cuarentena se mantienen en cuarentena antes de que expiren se controla mediante la conservación del **correo** no deseado en cuarentena durante estos muchos días (_QuarantineRetentionPeriod_) en las directivas contra correo no deseado. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
+>
+> Si cambia la directiva de cuarentena asignada a una característica de protección compatible, el cambio afecta a los mensajes que se ponen en cuarentena después de realizar el cambio.  La configuración de la nueva asignación de directivas de cuarentena no afecta a los mensajes que anteriormente estaban en cuarentena por esa característica de protección.
 
 ## <a name="full-access-permissions-and-quarantine-notifications"></a>Permisos de acceso completo y notificaciones de cuarentena
 

@@ -16,14 +16,15 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Estamos publicando nuevas directivas de alerta para Microsoft Defender para Office 365. También estamos retirando dos directivas de alerta existentes que se han reemplazado por las nuevas.
-ms.openlocfilehash: 2983ab2affe3c938062442e53a8f14c5bb0caa57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6ff33c64319e5fe9f9b3af655dcfc3bde7dd158f
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190730"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60963304"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nuevas directivas de alerta en Microsoft Defender para Office 365
 
@@ -99,7 +100,7 @@ Las nuevas alertas empezarán a activarse y desencadenarán investigaciones de A
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Lo que tiene que hacer para prepararse para estos cambios
 
-La forma en que su organización utiliza estas alertas determinará lo que debe hacer para prepararse. Si ha puesto en funcionamiento las alertas y las utiliza o las consume a través de una API, una notificación de alerta por correo electrónico o en el Centro de cumplimiento de Microsoft 365 (`https://compliance.mmicrosoft.com/viewalerts`) o el centro de seguridad de Microsoft (`https://security.microsoft.com/viewalerts`), tendrá que modificar sus flujos de trabajo.
+La manera en que su organización utiliza estas alertas determina lo que necesita hacer para prepararse. Si ha puesto en funcionamiento las alertas y las usa o consume mediante una API, una notificación de correo electrónico de alerta, o mediante el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> o el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Centro de seguridad de Microsoft 365</a>, deberá modificar sus flujos de trabajo.
 
 **Si no ha puesto en funcionamiento estas alertas, puede seguir uno de estos procedimientos:**
 

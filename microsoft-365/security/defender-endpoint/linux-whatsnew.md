@@ -16,17 +16,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: ab59d5511037d9b1c1a4b0aa7a6404ab27b8fb56
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 379fc203c16c319b293f29d396f121dc81148bd9
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586106"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972041"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
+
+- Se agregó un nuevo modificador a la herramienta de línea de comandos para controlar si los archivos se examinan durante los exámenes a petición. Esto se puede configurar a través `mdatp config scan-archives --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
+- Correcciones de errores
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
@@ -42,7 +46,6 @@ ms.locfileid: "60586106"
 - Se agregaron nuevos modificadores a la herramienta de línea de comandos:
   - Controlar el grado de paralelismo de los exámenes a petición. Esto se puede configurar a través `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` de . De forma predeterminada, se usa un grado de paralelismo `2` de.
   - Controlar si los exámenes después de las actualizaciones de inteligencia de seguridad están habilitados o deshabilitados. Esto se puede configurar a través `mdatp config scan-after-definition-update --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
-  - Controlar si los archivos se examinan durante los exámenes a petición. Esto se puede configurar a través `mdatp config scan-archives --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
 - Cambiar el nivel de registro de producto ahora requiere elevación
 - Correcciones de errores
 

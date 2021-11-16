@@ -2,7 +2,7 @@
 title: Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 ms.reviewer: pahuijbr
 manager: dansimp
-description: Windows El servidor incluye exclusiones automáticas, según el rol de servidor. También puede agregar exclusiones personalizadas.
+description: Windows Server incluye exclusiones automáticas, basadas en el rol de servidor. También puede agregar exclusiones personalizadas.
 keywords: exclusiones, servidor, exclusiones automáticas, automáticas, personalizadas, exámenes, Antivirus de Microsoft Defender
 ms.prod: m365-security
 ms.technology: mde
@@ -14,14 +14,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 11/10/2021
+ms.date: 11/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fad476d132e00dd7e01ab7876ec9bee0224f4e72
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 616c2376e8180a74380f1d6569c4e4612269f562
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899580"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60972029"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 
@@ -33,9 +33,6 @@ ms.locfileid: "60899580"
 
 Antivirus de Microsoft Defender en Windows Server 2016 y Windows Server 2019 lo inscribe automáticamente en determinadas exclusiones, tal como lo define el rol de servidor especificado. Estas exclusiones no aparecen en las listas de exclusión estándar que se muestran en la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 
-> [!NOTE]
-> Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo/rápido o a petición.
-
 Además de las exclusiones automáticas definidas por roles de servidor, puede agregar o quitar exclusiones personalizadas. Para ello, consulte estos artículos:
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
@@ -45,10 +42,10 @@ Además de las exclusiones automáticas definidas por roles de servidor, puede a
 Tenga en cuenta los siguientes puntos importantes:
 
 - Las exclusiones personalizadas tienen prioridad sobre las exclusiones automáticas.
-- Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo/rápido o a petición.
+- Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo, rápido o a petición.
 - Las exclusiones personalizadas y duplicadas no están en conflicto con las exclusiones automáticas.
 - Antivirus de Microsoft Defender usa las herramientas de administración y mantenimiento de imágenes de implementación (DISM) para determinar qué roles están instalados en el equipo.
-- Las exclusiones automáticas de roles de servidor no funcionan en Windows Server 2012 R2.
+- Las exclusiones automáticas para roles de servidor no funcionan en Windows Server 2012 R2 a menos que dichos servidores estén incorporados a Defender para endpoint. (Consulte [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).)
 
 En este artículo se proporciona información general sobre las exclusiones Antivirus de Microsoft Defender en Windows Server 2016 o posterior.
 
@@ -64,18 +61,7 @@ En este artículo se incluyen las siguientes secciones:
 |[No participar en exclusiones automáticas](#opting-out-of-automatic-exclusions)|Incluye consideraciones y procedimientos importantes que describen cómo excluirse de las exclusiones automáticas|
 |[Definición de exclusiones personalizadas](#defining-custom-exclusions)|Proporciona vínculos a información sobre cómo definir exclusiones personalizadas|
 
-> [!IMPORTANT]
-> Tenga en cuenta los siguientes puntos:
->
-> - Las exclusiones personalizadas tienen prioridad sobre las exclusiones automáticas.
-> - Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo, un examen rápido o un examen a petición.
-> - Las exclusiones personalizadas y duplicadas no están en conflicto con las exclusiones automáticas.
-> - Antivirus de Microsoft Defender usa las herramientas de administración y mantenimiento de imágenes de implementación (DISM) para determinar qué roles están instalados en el equipo.
-
 ## <a name="automatic-exclusions-on-windows-server-2016-or-later"></a>Exclusiones automáticas en Windows Server 2016 o posterior
-
-> [!NOTE]
-> Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo, un examen rápido o un examen a petición.
 
 En Windows Server 2016 o posterior, no debe definir las siguientes exclusiones:
 
@@ -86,7 +72,9 @@ Dado Antivirus de Microsoft Defender está integrado, no requiere exclusiones pa
 
 Las exclusiones del sistema operativo y las exclusiones de roles [de](microsoft-defender-security-center-antivirus.md)servidor no aparecen en las listas de exclusión estándar que se muestran en Seguridad de Windows aplicación .
 
-Las exclusiones automáticas de roles de servidor y archivos del sistema operativo no se aplican a Windows Server 2012 o Windows Server 2012 R2.
+> [!NOTE]
+> Las exclusiones automáticas de roles de servidor y archivos del sistema operativo no se aplican a Windows Server 2012. Las exclusiones automáticas pueden aplicarse si los servidores que ejecutan Windows Server 2012 R2 están incorporados a Defender for Endpoint. (Consulte [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).)
+
 
 ### <a name="the-list-of-automatic-exclusions"></a>La lista de exclusiones automáticas
 
@@ -99,12 +87,12 @@ En esta sección se enumeran las exclusiones predeterminadas para todos los role
 > [!NOTE]
 > Las ubicaciones predeterminadas pueden ser diferentes de las que se enumeran en este artículo.
 
-##### <a name="windows-tempedb-files"></a>Windows Archivos "temp.edb"
+##### <a name="windows-tempedb-files"></a>Windows archivos "temp.edb"
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
 
-##### <a name="windows-update-files-or-automatic-update-files"></a>Windows Actualizar archivos o archivos de actualización automática
+##### <a name="windows-update-files-or-automatic-update-files"></a>Windows actualizar archivos o archivos de actualización automática
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`

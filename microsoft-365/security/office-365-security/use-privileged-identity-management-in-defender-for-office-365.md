@@ -17,15 +17,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Aprenda a integrar Azure PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir así el riesgo para los datos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ea618a24c14aa49973ae05287a65cbb756f5467
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a5088b72cd7739c5f203293a8ac569af093bf4b
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196290"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960999"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) y por qué usarlo con Microsoft Defender para Office 365
@@ -68,7 +69,7 @@ Con los [Grupos de acceso con privilegios](/azure/active-directory/privileged-id
 
 En el Portal de seguridad, cree un grupo de roles personalizado que contenga los permisos que desee.
 
-1. Vaya al portal de Microsoft 365 Defender (https://security.microsoft.com) > **Permisos y roles** > seleccione **Roles** en Correo electrónico y colaboración > **Crear**.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"> Portal de Microsoft 365 Defender</a> > **Permisos y roles** > seleccione **Roles** en Correo electrónico y colaboración > **Crear**.
 2. Asigne un nombre al grupo para que refleje su propósito, como "Buscar y purgar PIM".
 3. No agregue miembros, simplemente guarde el grupo y pase a la siguiente parte.
 

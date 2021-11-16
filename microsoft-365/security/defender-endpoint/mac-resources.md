@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1df9efd022f58ef68ed06c8271e140b33dcb0f67
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3e37ac8876b28e55faca4282245a633a16cb06fa
+ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646936"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60971933"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
@@ -95,7 +95,7 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 Las tareas importantes, como controlar la configuración del producto y desencadenar exámenes a petición, se pueden realizar desde la línea de comandos:
 
-|Group|Escenario|Comando|
+|Grupo|Escenario|Comando|
 |---|---|---|
 |Configuración|Activar/desactivar la protección en tiempo real|`mdatp config real-time-protection --value [enabled/disabled]`|
 |Configuración|Activar/desactivar la protección en la nube|`mdatp config cloud --value [enabled/disabled]`|
@@ -110,16 +110,15 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Configuración|Activar/desactivar el modo pasivo antivirus|`mdatp config passive-mode --value [enabled/disabled]`|
 |Configuración|Configurar el grado de paralelismo para los exámenes a petición|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |Configuración|Activar y desactivar exámenes después de las actualizaciones de inteligencia de seguridad|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|Configuración|Activar/desactivar el examen del archivo (solo exámenes a petición)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnóstico|Cambiar el nivel de registro|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnóstico|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
 |Mantenimiento|Comprobar el estado del producto|`mdatp health`|
 |Mantenimiento|Buscar un atributo de producto spefic|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
-|Protection|Examinar una ruta de acceso|`mdatp scan custom --path [path] [--ignore-exclusions]`|
-|Protection|Realizar un examen rápido|`mdatp scan quick`|
-|Protection|Realizar un examen completo|`mdatp scan full`|
-|Protection|Cancelar un examen a petición en curso|`mdatp scan cancel`|
-|Protection|Solicitar una actualización de inteligencia de seguridad|`mdatp definitions update`|
+|Protección|Examinar una ruta de acceso|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|Protección|Realizar un examen rápido|`mdatp scan quick`|
+|Protección|Realizar un examen completo|`mdatp scan full`|
+|Protección|Cancelar un examen a petición en curso|`mdatp scan cancel`|
+|Protección|Solicitar una actualización de inteligencia de seguridad|`mdatp definitions update`|
 |EDR|Set/Remove tag, only GROUP supported|`mdatp edr tag set --name GROUP --value [name]`|
 |EDR|Quitar etiqueta de grupo del dispositivo|`mdatp edr tag remove --tag-name [name]`|
 |EDR|Agregar id. de grupo|`mdatp edr group-ids --group-id [group]`|

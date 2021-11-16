@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 911b80b13d9d091d0161ddce0fff4d1dbd7dbc0b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 20167d9c1559403f1acbbfee5766ab09a4a1e3ef
+ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950514"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60962980"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -213,7 +213,7 @@ Según la configuración de directivas, los [buzones de correo inactivos](create
 
 - Los ámbitos de directiva estática incluyen buzones inactivos cuando se usa la configuración predeterminada **Todos los destinatarios**, pero no se admiten para [inclusiones o exclusiones específicas](#a-policy-with-specific-inclusions-or-exclusions). Sin embargo, si incluye o excluye un destinatario que tiene un buzón de correo activo en el momento en que se aplica la directiva y el buzón más adelante pasa a estar inactivo, la configuración de retención se seguirá aplicando o excluyendo.
 
-- Los ámbitos de directiva adaptables incluyen buzones de correo inactivos de forma predeterminada. Puede controlar este comportamiento mediante el generador de consultas avanzado y la propiedad OPATH *IsInactiveMailbox*:
+- De forma predeterminada, los ámbitos de directiva adaptables incluyen buzones inactivos cuando cumplen la consulta del ámbito. Puede excluirlos mediante el generador de consultas avanzado y la propiedad OPATH *IsInactiveMailbox*:
     
     ```console
     (IsInactiveMailbox -eq "False")
