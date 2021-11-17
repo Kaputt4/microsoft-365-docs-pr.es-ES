@@ -303,9 +303,9 @@
         - name: Colaborar con los Expertos en amenazas de Microsoft
           items:
             - name: Información general
-              href: ../mtp/microsoft-threat-experts.md
+              href: microsoft-threat-experts.md
             - name: Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
-              href: ../mtp/configure-microsoft-threat-experts.md
+              href: configure-microsoft-threat-experts.md
     - name: Guía de operaciones de seguridad
       items:
         - name: Información general

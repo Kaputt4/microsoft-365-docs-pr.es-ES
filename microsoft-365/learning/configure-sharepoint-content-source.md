@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: medium
 description: Obtenga información sobre cómo agregar SharePoint como origen de contenido de aprendizaje para Aprendizaje Microsoft Viva.
-ms.openlocfilehash: 64a78979814a4708a6c1471a83d3468c9edb1b72
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 11cf1375d077acdb72e4a032236a0888d6c98101
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701872"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61041906"
 ---
 # <a name="add-sharepoint-as-a-content-source-for-microsoft-viva-learning"></a>Agregar SharePoint como origen de contenido para Aprendizaje Microsoft Viva
 
@@ -47,7 +47,7 @@ Si usas [Microsoft 365 Multi-geo](/microsoft-365/enterprise/microsoft-365-multi-
 
 [Microsoft 365 Multi-geo](/microsoft-365/enterprise/microsoft-365-multi-geo) está diseñado para cumplir los requisitos de residencia de datos. Para obtener más información, [vea Multi-geo capabilities in SharePoint Online](/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365).
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 Las direcciones URL de carpetas de biblioteca de documentos se pueden recopilar SharePoint sitio de la organización. Viva Learning todos los permisos de contenido existentes. Por lo tanto, solo se puede buscar y ver el contenido para el que un usuario tiene permiso de acceso en Viva Learning. Cualquier contenido dentro de estas carpetas se puede buscar, pero solo se puede usar el contenido al que el empleado individual tenga permisos.
 
@@ -63,7 +63,7 @@ Para quitar contenido que no se ha presentado de forma involuntarla, siga estos 
 
 Para obtener más información, vea [Sharing and permissions in the SharePoint modern experience](/sharepoint/modern-experience-sharing-permissions).
 
-## <a name="learning-service"></a>Learning Servicio
+## <a name="learning-service"></a>Learning de Learning
 
 El Learning usa las direcciones URL de carpeta proporcionadas para obtener metadatos de todo el contenido almacenado en esas carpetas. Dentro de las 24 horas siguientes a la entrega de la dirección URL de carpeta en el repositorio centralizado, los empleados pueden buscar y usar el contenido de la organización en Viva Learning. Todos los cambios en el contenido, incluidos los metadatos y permisos actualizados, también se aplicarán en el servicio de Learning dentro de las 24 horas.
 
@@ -79,7 +79,7 @@ Para configurar SharePoint como orígenes de contenido de aprendizaje en para Vi
 
      ![Configuración página de la Centro de administración de Microsoft 365 que muestra Viva Learning lista.](../media/learning/clcs-services.png)
 
-3. En el panel **Learning Viva,** en SharePoint, proporcione la dirección URL del sitio al sitio de SharePoint donde desea que Viva Learning cree un repositorio centralizado. Si su SharePoint es nuevo, tendrá que esperar 1 hora después de la creación del sitio para agregarlo aquí.
+3. En el panel **Learning Viva,** en SharePoint, proporcione la dirección URL del sitio al sitio de SharePoint donde desea que Viva Learning cree un repositorio centralizado. Si su SharePoint es nuevo, tendrá que esperar 1 hora después de la creación del sitio para agregarlo aquí. También debe ser el propietario del sitio SharePoint web.
 
      ![Learning panel de la Centro de administración de Microsoft 365 muestra SharePoint seleccionado.](../media/learning/sharepoint-1.png)
 
@@ -97,7 +97,7 @@ Para configurar SharePoint como orígenes de contenido de aprendizaje en para Vi
 
    1. Seleccione **Nuevo** para ver el **panel Nuevo** elemento.
 
-       ![Learning Página Repositorio de contenido en SharePoint muestra la opción Nuevo.](../media/learning/learning-sharepoint-configure5.png)
+       ![Learning de repositorio de contenido en SharePoint muestra la opción Nuevo.](../media/learning/learning-sharepoint-configure5.png)
 
    2. En el **panel Nuevo elemento,** en el **campo Título,** agregue un nombre de directorio de su elección. En el **campo Dirección URL de** carpeta, agregue la dirección URL a la carpeta de contenido de aprendizaje. Seleccione **Guardar**. [Obtenga información sobre cómo crear la dirección URL de la carpeta](#folder-url-document-library-curation).
 
@@ -105,7 +105,7 @@ Para configurar SharePoint como orígenes de contenido de aprendizaje en para Vi
 
    3. La Learning repositorio de **contenido de la aplicación** se actualiza con el nuevo contenido de aprendizaje.
 
-       ![Learning Página repositorio de contenido en SharePoint muestra la información actualizada.](../media/learning/learning-sharepoint-configure7.png)
+       ![Learning de repositorio de contenido en SharePoint muestra la información actualizada.](../media/learning/learning-sharepoint-configure7.png)
 
    4. Si su organización usa [Microsoft 365 Multi-geo](/microsoft-365/enterprise/microsoft-365-multi-geo) e intenta agregar un vínculo a una carpeta que no pertenece a la ubicación central, verá un mensaje de error. Todas las carpetas deben pertenecer a la ubicación central.
        ![Mensaje de error en el panel Nuevo elemento que indica que todas las carpetas cargadas deben estar en la ubicación central.](../media/learning/learning-sharepoint-configure-geo2.png)

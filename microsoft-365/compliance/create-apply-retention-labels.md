@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 8c8fac9d8cfa5ff0a8b2ad8d5c3e42f614a3932b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3e0a516155d0b318e8f5d3b022b1546d9fe8e11b
+ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753110"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61041977"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -120,16 +120,13 @@ Para editar una directiva de la etiqueta de retención existente (el tipo de dir
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Cuando las etiquetas de retención estén disponibles para aplicarlas
 
-Si publica etiquetas de retención en SharePoint o OneDrive, aparecerán normalmente en un día para que los usuarios finales puedan seleccionarlas. Sin embargo, tenga en cuenta que pueden tardar en aparecer hasta siete días. 
+Para las ubicaciones de OneDrive y SharePoint, las etiquetas publicadas suelen aparecer en uno o dos días para que los usuarios puedan seleccionarlas. Aún así, deje un margen de hasta ocho días.
 
-Si publica etiquetas de retención en Exchange, las etiquetas pueden tardar hasta siete días en aparecer para los usuarios finales. Asimismo, el buzón de correo debe contener al menos 10 MB de datos.
+Para las ubicaciones de Exchange y Grupos de Microsoft 365, las etiquetas de retención publicadas pueden tardar hasta ocho días en aparecer para los usuarios de Outlook y el buzón debe contener al menos 10 MB de datos.
 
-Por ejemplo:
-  
-![Diagrama de cuándo entran en vigor las etiquetas manuales.](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
-  
+![Diagrama de cuándo las etiquetas publicadas surten efecto.](../media/retention-labels-published-timings.png)
 
-Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de la directiva de etiqueta seleccionándola en la página **Directivas de etiqueta** en el centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de la directiva:
+Si las etiquetas no aparecen después de ocho días, compruebe el **Estado** de la directiva de etiquetas seleccionándola en la página **Directivas de etiquetas** del centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de la directiva:
 
 1. [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
@@ -205,7 +202,7 @@ After the retention label is applied, you can view that retention label and what
 
 You can apply retention labels to Outlook folders as a default label that can be inherited by messages in that folder. Right-click the folder, select **Properties**, the **Policy** tab, and select the retention label you want to use as that folder's default retention label.
 
-When you use a a standard retention label as your default label for an Outlook folder:
+When you use a standard retention label as your default label for an Outlook folder:
   
 - All unlabeled items in the folder have this retention label applied.
 
