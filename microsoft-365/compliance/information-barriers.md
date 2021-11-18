@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5baff70cb3318b05092e940e8160029bc2be69af
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: 515983182bb5f44c08e7d8531656a7a4fb49d5c6
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725615"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064105"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Obtenga información sobre las barreras de información en Microsoft 365
 
@@ -51,7 +51,7 @@ Para obtener más información sobre la experiencia del usuario con las barreras
 
 ## <a name="what-happens-with-information-barriers"></a>Qué sucede con las barreras de información
 
-Cuando haya directivas de barrera de información, las personas que no deben comunicarse o compartir archivos con otros usuarios específicos no podrán encontrar, seleccionar, chatear o llamar a esos usuarios. Con las barreras de información, se realizan comprobaciones para evitar la comunicación y colaboración no autorizadas. 
+Cuando haya directivas de barrera de información, las personas que no deben comunicarse o compartir archivos con otros usuarios específicos no podrán encontrar, seleccionar, chatear o llamar a esos usuarios. Con las barreras de información, se realizan comprobaciones para evitar la comunicación y colaboración no autorizadas.
 
 Las barreras de información se aplican a Microsoft Teams (chats y canales), SharePoint Online y OneDrive. En Microsoft Teams, las directivas de barrera de información determinan y evitan los siguientes tipos de comunicaciones no autorizadas:
 
@@ -80,13 +80,14 @@ Para obtener más información sobre la experiencia del usuario con las barreras
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
-Las barreras de información se están implementando ahora y se incluyen en las suscripciones, como:
+Antes de empezar con la administración de riesgos de insider, debes confirmar la [Microsoft 365 suscripción y](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) los complementos. Para acceder y usar barreras de información, la organización debe tener una de las siguientes suscripciones o complementos:
 
-- Microsoft 365 E5/A5/A3/A1
-- Office 365 E5/A5/A3/A1
-- Cumplimiento avanzado de Office 365
-- Microsoft 365 Cumplimiento E5/A5
-- Administración de riesgos internos de Microsoft 365
+- Microsoft 365 E5/A5 (versión de pago o de prueba)
+- Office 365 Enterprise de E5 (versión de pago o de prueba)
+- Office 365 A5 suscripción (versión de pago o de prueba)
+- Cumplimiento avanzado de Office 365 complemento (ya no está disponible para las nuevas suscripciones)
+- Microsoft 365 E3/A3 + el complemento de cumplimiento Microsoft 365 E5/A5
+- Microsoft 365 E3/A3 + el complemento Microsoft 365 E5/A5 Insider Risk Management
 
 Para obtener más información, [vea Microsoft 365 de licencias para seguridad y & cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 

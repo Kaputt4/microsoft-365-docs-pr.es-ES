@@ -1,5 +1,5 @@
 ---
-title: Configurar la colaboración moderna con Microsoft 365
+title: Configurar el uso compartido seguro de archivos y documentos y la colaboración con Teams en Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -16,33 +16,33 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 recommendations: false
-description: Obtenga información sobre cómo configurar la colaboración de contenido seguro en Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: f8475cd2f832bf2b634a8e60c819927fb8f2769c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre procedimientos recomendados para configurar la colaboración y el uso compartido de archivos Teams proteger los datos en función de su confidencialidad.
+ms.openlocfilehash: 4bf18635b0c345e18c1ed5db8c7072ca6225e33c
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158999"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064288"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Configurar la colaboración segura con Microsoft 365 y Microsoft Teams
+# <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Configurar el uso compartido seguro de archivos y la colaboración con Microsoft Teams
 
-Poder compartir fácilmente información con las personas correctas a la vez que se evita el exceso de compartición es clave para el éxito de una organización. Esto incluye poder compartir datos confidenciales de forma segura solo con aquellos que deberían tener acceso a ellos. Según el proyecto, esto puede incluir el uso compartido de datos confidenciales con personas ajenas a la organización.
+Poder compartir fácilmente archivos y documentos con las personas correctas al mismo tiempo que se evita la compartición en exceso es clave para el éxito de una organización. Esto incluye poder compartir datos confidenciales u otros datos confidenciales de forma segura con solo aquellos que deben tener acceso a ellos. Según el proyecto, esto puede incluir el uso compartido de datos confidenciales con personas ajenas a la organización.
 
 Esta guía de solución de colaboración incluye dos componentes que le ayudarán:
 
-- Implementar Microsoft Teams con el nivel adecuado de protección para cada proyecto
+- Implementar Teams con el nivel adecuado de protección para cada proyecto
 - Configurar el uso compartido externo con las opciones de seguridad adecuadas para cada proyecto
 
 ![Implemente Teams con la protección adecuada y configure el uso compartido externo con la configuración de seguridad adecuada.](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Si las herramientas de colaboración de contenido versátiles y fáciles de usar no están disponibles, los usuarios a menudo colaborarán mediante el envío de documentos por correo electrónico. Se trata de un método de colaboración tedioso y propenso a errores y puede aumentar el riesgo de compartir información de forma inadecuada. Si a las personas les resulta demasiado difícil compartir información, podrían volver a usar productos de consumo que no están regido por TI. Esto puede suponer un riesgo aún mayor.
+Si las herramientas de colaboración de archivos versátiles y fáciles de usar no están disponibles, los usuarios a menudo colaborarán por correo electrónico con documentos. Se trata de un método de colaboración tedioso y propenso a errores y puede aumentar el riesgo de compartir información de forma inadecuada. Si a los usuarios les resulta demasiado difícil compartir archivos, podrían volver a usar productos de consumo que no están regido por TI. Esto puede suponer un riesgo aún mayor.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Con Microsoft 365, puede implementar Teams con una variedad de configuraciones que ayudan a:
 
 - Proteger la propiedad intelectual
-- Habilitar la colaboración fácil
+- Habilitar la colaboración sencilla con documentos y otros archivos
 - Crear un equilibrio entre la seguridad y la facilidad de uso que aumente la satisfacción del usuario y reduzca el riesgo de que se cree UNA SOMBRA
 
 La mayoría de las organizaciones tienen una variedad de información, con distintos grados de confidencialidad y distintos grados de impacto empresarial si la información se comparte de forma inadecuada. Dependiendo de la confidencialidad de una determinada información, es posible que desee permitir el uso compartido con:
@@ -68,16 +68,16 @@ Para configurar la colaboración segura, use estas Microsoft 365 y característi
 
 |Producto o componente|Funcionalidad o característica|Licencias|
 |---|---|---|
-|Microsoft Defender para Office 365|Caja fuerte Datos adjuntos para SPO, OneDrive y Teams; Caja fuerte Documentos; Caja fuerte Vínculos para Teams|Microsoft 365 E1, E3 y E5|
+|Microsoft Defender para Office 365|Caja fuerte datos adjuntos para SPO, OneDrive y Teams; Caja fuerte documentos; Caja fuerte vínculos de Teams|Microsoft 365 E1, E3 y E5|
 |SharePoint|Directivas de uso compartido de sitios y archivos, permisos de uso compartido de sitios, vínculos de uso compartido, solicitudes de Access, configuración de uso compartido de invitados del sitio|Microsoft 365 E1, E3 y E5|
 |Microsoft Teams|Acceso de invitado, equipos privados, canales privados|Microsoft 365 E1, E3 y E5|
 |Cumplimiento de Microsoft 365|Etiquetas de confidencialidad|Microsoft 365 E3 y E5|
 
-## <a name="collaboration-governance"></a>Gobierno de colaboración
+## <a name="collaboration-governance-framework-for-teams-and-microsoft-365"></a>Marco de gobierno de colaboración para Teams y Microsoft 365
 
 Microsoft 365 ofrece muchas opciones para gobernar la solución de colaboración. Se recomienda usar este contenido de implementación junto con el contenido de gobierno de [colaboración](collaboration-governance-overview.md) para crear la mejor solución de colaboración para su organización.
 
-### <a name="using-teams-for-all-kinds-of-data"></a>Uso Teams para todos los tipos de datos
+### <a name="securing-teams-for-sensitive-and-highly-sensitive-data"></a>Protección de Teams datos confidenciales y altamente confidenciales
 
 Para administrar el acceso a la información con diferentes sensibilidades, hemos desarrollado tres niveles de protección diferentes para [Teams](configure-teams-three-tiers-protection.md). Puede personalizar cualquiera de estos niveles para satisfacer mejor las necesidades o su empresa.
 
@@ -205,7 +205,7 @@ Cuando esté listo para implementar esta solución, siga estos pasos:
 1. Configure los [tres niveles de protección diferentes para Teams](configure-teams-three-tiers-protection.md).
 2. Configurar las opciones [para compartir información de cualquier confidencialidad con personas fuera de la organización.](collaborate-with-people-outside-your-organization.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Documentación de Seguridad de Microsoft 365](../security/index.yml)
 

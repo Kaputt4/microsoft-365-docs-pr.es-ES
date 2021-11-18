@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9245062a0906186ce779383725cecc8209655c6f
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 144cc0159fbd717015a16251f21ac32d0601fcf4
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882758"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064133"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -99,6 +99,12 @@ Después de la incorporación, el dispositivo tarda unas horas en aparecer en el
 ## <a name="data-and-privacy"></a>Datos y privacidad
 
 Para obtener más información acerca de los datos recopilados y la privacidad, consulte [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
+
+## <a name="connectivity-issue-on-cellular-network"></a>Problema de conectividad en la red móvil
+
+Si tiene problemas de conectividad a Internet en la red de telefonía móvil, compruebe si Microsoft Defender para Endpoint tiene los datos móviles habilitados: abra la aplicación Configuración > MS Defender > asegúrese de que "Datos móviles" está habilitado para MS Defender.
+
+Compruebe si activar o desactivar el modo avión ayuda a resolver el problema. Si el problema persiste, envíenos [los registros](ios-troubleshoot.md#send-in-app-feedback).
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problemas en dispositivos supervisados con el perfil de filtro de contenido instalado
 

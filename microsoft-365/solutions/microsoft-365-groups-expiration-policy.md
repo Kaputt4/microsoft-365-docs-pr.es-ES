@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Obtenga información sobre Microsoft 365 de expiración de grupos.
-ms.openlocfilehash: abfcc6947adc33610dee02b6b92447ce4c0d5412
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1c0ac1aa7e38fddb85bb9b434c46665cacd1ca69
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208870"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064140"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 de expiración de grupo
 
@@ -34,7 +34,7 @@ Cuando un grupo expira es "eliminado temporalmente", lo que significa que todav�
 
 Los administradores pueden especificar un período de expiración y se eliminará cualquier grupo inactivo que llegue al final de ese período y no se renueve. (Esto incluye equipos archivados). El período de expiración comienza cuando se crea el grupo o en la fecha en que se renovó por última vez. Los propietarios del grupo se enviarán automáticamente un correo electrónico antes de la expiración que les permita renovar el grupo para otro intervalo de expiración. Teams usuarios verán notificaciones persistentes en Teams.
 
-Los grupos que se usan activamente se renuevan automáticamente. Cualquiera de las siguientes acciones renovará automáticamente un grupo:
+Los grupos que se usan activamente se renuevan automáticamente. Cualquiera de las siguientes acciones hará que se autorenuevo un grupo:
 - SharePoint: ver, editar, descargar, mover, compartir o cargar archivos. (Ver una página SharePoint no cuenta como una acción para la renovación automática).
 - Outlook: unirse al grupo, leer o escribir un mensaje de grupo desde el grupo y, como un mensaje (Outlook en la Web).
 - Teams: visitar un canal de teams.
@@ -47,11 +47,11 @@ Tenga en cuenta que la única Yammer que desencadenará una renovación automát
 Es importante saber que la expiración está desactivada de forma predeterminada. Los administradores tienen que habilitarlo para su organización si quieren usarlo.
 
 > [!NOTE]
-> La configuración y el uso de la directiva de expiración para grupos de Microsoft 365 requiere que posea, pero no necesariamente, asigne licencias Azure AD Premium los miembros de todos los grupos a los que se aplica la directiva de expiración. Para obtener más información, [vea Introducción a Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
+> La configuración y el uso de la directiva de expiración para grupos de Microsoft 365 requiere que posea, pero no necesariamente, asigne licencias Azure AD Premium los miembros de todos los grupos a los que se aplica la directiva de expiración. Para obtener más información, vea [Getting started with Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Quién puede configurar y usar la directiva de expiración Microsoft 365 grupos de servidores?
 
-|Rol|Qué pueden hacer|
+|Función|Qué pueden hacer|
 |---------|---------|
 |Office 365 global (en Azure, el administrador de la compañía), el administrador de usuarios|Cree, lea, actualice o elimine la configuración de la directiva Microsoft 365 de expiración de grupos.|
 |Usuario|Renovar o [restaurar](/azure/active-directory/users-groups-roles/groups-restore-deleted) un Microsoft 365 grupo que poseen|
@@ -76,7 +76,7 @@ Si ha configurado una directiva de retención para grupos en el Centro de seguri
 
 Los propietarios del grupo solo recibirán una notificación por correo electrónico. Si el grupo se creó a través de Planner, SharePoint o cualquier otra aplicación, las notificaciones de expiración siempre se enviarán por correo electrónico. Si el grupo se creó Teams, el propietario del grupo recibirá una notificación para renovarlo a través de la sección de actividad. No se recomienda habilitar la expiración en un grupo si el propietario del grupo no tiene una dirección de correo electrónico válida.
 
-Treinta días antes de que expire el grupo, los propietarios del grupo (o las direcciones de correo electrónico especificadas para grupos que no tienen un propietario) recibirán un correo electrónico que les permitirá renovar fácilmente el grupo. Si no lo renuevan, recibirán otro correo electrónico de renovación 15 días antes de la expiración. Si aún no lo han renovado, recibirán una notificación de correo electrónico más el día antes de la expiración.
+30 días antes de que expire el grupo, los propietarios del grupo (o las direcciones de correo electrónico especificadas para grupos que no tienen un propietario) recibirán un correo electrónico que les permitirá renovar fácilmente el grupo. Si no lo renuevan, recibirán otro correo electrónico de renovación 15 días antes de la expiración. Si aún no lo han renovado, recibirán una notificación de correo electrónico más el día antes de la expiración.
 
 Si por alguna razón ninguno de los propietarios o administradores renueva el grupo antes de que expire, el administrador puede restaurar el grupo hasta 30 días después de la expiración. Para obtener más información, vea: [Restaurar un grupo Microsoft 365 eliminado.](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)
 
@@ -86,7 +86,7 @@ Si tiene un grupo que ya no tiene previsto usar, pero desea conservar su conteni
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 

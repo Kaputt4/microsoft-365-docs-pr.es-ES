@@ -1,5 +1,5 @@
 ---
-title: ¿Qué es la gobernanza de la colaboración?
+title: Un marco de gobierno de colaboración para Microsoft 365
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -16,13 +16,13 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Obtenga información sobre cómo regular las características relacionadas en Microsoft 365 grupos, Teams, SharePoint y Yammer.
-ms.openlocfilehash: 31b97403b955cb92a7e4cf4b79bb2cd31927b73b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre los procedimientos recomendados de gobierno Microsoft 365 herramientas de colaboración, incluidos Microsoft 365 grupos, Teams, SharePoint y Yammer.
+ms.openlocfilehash: 62030dcb9b89105f87a0cf50f1b950b816727015
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190238"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064384"
 ---
 # <a name="what-is-collaboration-governance"></a>¿Qué es la gobernanza de la colaboración?
 
@@ -36,17 +36,17 @@ Los servicios, como Microsoft 365, Teams y Yammer permiten a los usuarios y redu
 
 ![Gráfico que muestra las opciones de gobierno de colaboración en Microsoft 365.](../media/collaboration-governance-overview.png)
 
-Esta serie de artículos le ayudará a comprender cómo interactúan los grupos, los equipos y la configuración de SharePoint, qué capacidades de gobierno están disponibles y cómo crear e implementar un plan de gobierno para las características de colaboración en Microsoft 365.
+Esta serie de artículos le ayudará a comprender cómo interactúan los grupos, los equipos y la configuración de SharePoint, qué capacidades de gobierno están disponibles y cómo crear e implementar un marco de gobierno para las características de colaboración de Microsoft 365.
 
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Configurar la colaboración segura con Microsoft 365
 
-Hay muchas opciones para implementar grupos de Microsoft 365 y Teams para la colaboración segura en su organización. Se recomienda usar este contenido de gobierno junto con Configurar la colaboración segura con [Microsoft 365](setup-secure-collaboration-with-teams.md) y sus artículos asociados para crear la mejor solución de colaboración para su organización.
+Hay muchas opciones para implementar grupos de Microsoft 365 y Teams para la colaboración segura en su organización. Se recomienda usar este contenido de gobierno junto con Configurar el uso compartido seguro de archivos y la colaboración con [Microsoft Teams](setup-secure-collaboration-with-teams.md) y sus artículos asociados para crear la mejor solución de colaboración para su organización.
 
-### <a name="data-residency"></a>Residencia de datos
+### <a name="data-residency-governance"></a>Gobierno de residencia de datos
 
 Si su organización es multinacional y tiene requisitos de residencia de datos para distintas geografías, incluya Microsoft 365 [Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) como parte de su plan de gobierno de colaboración.
 
-## <a name="why-microsoft-365-groups-are-important"></a>Por qué Microsoft 365 grupos son importantes
+## <a name="why-microsoft-365-groups-are-important-in-collaboration-governance"></a>Por qué Microsoft 365 grupos de colaboración son importantes en el gobierno de colaboración
 
 Microsoft 365 grupos le permiten elegir un conjunto de personas con las que desea colaborar y configurar fácilmente una colección de recursos para que esas personas compartan. Agregar miembros al grupo concede automáticamente los permisos necesarios a todos los activos proporcionados por el grupo. Tanto Teams como Yammer usar Microsoft 365 para administrar su pertenencia.
 
@@ -60,16 +60,16 @@ Microsoft 365 incluyen un conjunto de recursos vinculados que los usuarios puede
 |[Bandeja de entrada](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|Para conversaciones de correo electrónico entre miembros del grupo. Esta bandeja de entrada tiene una dirección de correo electrónico y se puede configurar para aceptar mensajes de personas fuera del grupo e incluso fuera de la organización, como una lista de distribución tradicional.|
 |[Bloc de notas de OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Para recopilar ideas, investigación e información|
 |[Planificador](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Para asignar y administrar tareas de proyecto entre los miembros del grupo|
-|[Power BI Área de trabajo](/power-bi/collaborate-share/service-new-workspaces)|Un espacio de colaboración de datos con paneles e informes|
+|[Power BI workspace](/power-bi/collaborate-share/service-new-workspaces)|Un espacio de colaboración de datos con paneles e informes|
 |[Project y guía básica](https://support.microsoft.com/project)|Herramientas de administración de proyectos basadas en web|
 |[Sitio de grupo de SharePoint](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Un repositorio central para información, vínculos y contenido relacionado con el grupo|
 |[Stream](https://support.microsoft.com/microsoft-stream)|Un servicio de streaming de vídeo|
 |[Teams](https://support.microsoft.com/teams)|Un área de trabajo basada en chat en Microsoft 365|
 |[Yammer grupo](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|Un lugar común para tener conversaciones y compartir información|
 
-Microsoft 365 Los grupos incluyen una variedad de controles de gobierno, incluida una directiva de expiración, convenciones de nomenclatura y una directiva de palabras bloqueadas, para ayudarle a administrar grupos de su organización. Dado que los grupos controlan la pertenencia y el acceso a este conjunto de recursos, la administración de grupos es una parte clave de la administración de la colaboración en Microsoft 365.
+Microsoft 365 incluye una variedad de controles de gobierno, incluida una directiva de expiración, convenciones de nomenclatura y una directiva de palabras bloqueadas, para ayudarle a administrar grupos de su organización. Dado que los grupos controlan la pertenencia y el acceso a este conjunto de recursos, la administración de grupos es una parte clave de la administración de la colaboración en Microsoft 365.
 
-## <a name="define-a-collaboration-strategy-for-your-organization"></a>Definir una estrategia de colaboración para su organización
+## <a name="define-collaboration-governance-best-practices-for-your-organization"></a>Definir procedimientos recomendados de gobierno de colaboración para su organización
 
 Hay varios lugares para colaborar y mantener conversaciones en Microsoft 365. Comprender dónde los usuarios pueden iniciar conversaciones puede ayudarle a definir una estrategia de comunicación.
 
@@ -100,8 +100,7 @@ A medida que determine cómo desea usar las características de colaboración en
 > [!NOTE]
 > Cuando se crea un nuevo grupo de Office 365 a través de Yammer o Teams, el grupo no es visible en Outlook ni en la libreta de direcciones porque la comunicación principal entre esos usuarios se produce en sus respectivos clientes. Yammer los grupos no se pueden conectar a Teams.
 
-
-## <a name="best-practices"></a>Procedimientos recomendados
+## <a name="collaboration-governance-best-practices-checklist"></a>Lista de comprobación de procedimientos recomendados de gobierno de colaboración
 
 Al iniciar el proceso de planeación de gobierno, tenga en cuenta estos procedimientos recomendados:
 
@@ -138,7 +137,7 @@ Dado que los grupos y los equipos se pueden crear de varias maneras, se recomien
 
 Esto ayuda a evitar confusiones si los usuarios no están familiarizados con la forma en que los grupos se relacionan con sus servicios relacionados. Para obtener más información acerca de cómo hablar con los usuarios acerca de los grupos, [vea Explaining Microsoft 365 Groups to your users](../admin/create-groups/explain-groups-knowledge-worker.md).
 
-## <a name="key-governance-capabilities-and-licensing-requirements"></a>Capacidades de gobierno clave y requisitos de licencias
+## <a name="key-collaboration-governance-capabilities-and-licensing-requirements"></a>Capacidades clave de gobierno de colaboración y requisitos de licencias
 
 Las capacidades de gobierno para la colaboración en Microsoft 365 incluyen características de Microsoft 365, Teams, SharePoint y Azure Active Directory.
 
@@ -148,12 +147,12 @@ Las capacidades de gobierno para la colaboración en Microsoft 365 incluyen cara
 |Domain allow/block|Restringir el uso compartido con personas fuera de la organización a personas de dominios específicos.|Microsoft 365 E5 o E3|
 |Creación de sitios sin intervención del administrador|Permitir o impedir que los usuarios creen sus propios SharePoint web.|Microsoft 365 E5 o E3|
 |Uso compartido restringido de sitios y archivos|Restringir el uso compartido de sitios, archivos y carpetas a los miembros de un grupo de seguridad específico.|Microsoft 365 E5 o E3|
-|Creación de grupos restringidos|Restringir la creación de grupos y equipos a los miembros de un grupo de seguridad específico.|Microsoft 365 E5 o E3 con Azure AD Premium o licencias educaciones básicas de Azure AD|
-|Directiva de nomenclatura de grupo|Exigir prefijos o sufijos en los nombres de grupo y grupo.|Microsoft 365 E5 o E3 con Azure AD Premium o licencias educaciones básicas de Azure AD|
+|Creación de grupos restringidos|Restringir la creación de grupos y equipos a los miembros de un grupo de seguridad específico.|Microsoft 365 E5 o E3 con Azure AD Premium o Azure AD licencias EDU básicas|
+|Directiva de nomenclatura de grupo|Exigir prefijos o sufijos en los nombres de grupo y grupo.|Microsoft 365 E5 o E3 con Azure AD Premium o Azure AD licencias EDU básicas|
 |Directiva de expiración de grupo|Establezca grupos inactivos y equipos para que expiren y se eliminen después de un período de tiempo especificado.|Microsoft 365 E5 o E3 con Azure AD Premium licencias|
 |Acceso de invitado por grupo|Permitir o impedir el uso compartido de equipos y grupos con personas ajenas a la organización por grupo.|Microsoft 365 E5 o E3|
 
-## <a name="collaboration-governance-planning-step-by-step"></a>Planeación paso a paso de gobierno de colaboración
+## <a name="collaboration-governance-planning-recommendations"></a>Recomendaciones de planeación de gobierno de colaboración
 
 Siga estos pasos básicos para crear su plan de gobierno:
 

@@ -3,7 +3,7 @@ title: Microsoft 365 de red informado
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/10/2021
+ms.date: 11/12/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,19 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red informado
-ms.openlocfilehash: 4781acd78e314592ca33cdad77e1f270e86e002c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 84b16d696c5c99a7f917e8d1dacc6f1f27626f37
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199914"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064408"
 ---
-# <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365 enrutamiento de red informado (versión preliminar)
+# <a name="microsoft-365-informed-network-routing"></a>Microsoft 365 de red informado
 
 El enrutamiento de red informado es una característica que integra varias aplicaciones de Microsoft 365 con soluciones de red definidas por software (SD-WAN) de terceros con el fin de optimizar y mejorar la conectividad de red con los puntos de conexión de servicio de Microsoft. La conectividad SD-WAN optimizada puede dar como resultado una mejor experiencia y rendimiento del usuario.
-
->[!IMPORTANT]
->Microsoft 365 enrutamiento de red informado se encuentra actualmente en estado de vista previa. Para obtener más información sobre esta vista previa, incluidas las instrucciones para recibir asistencia, vea Microsoft 365 public preview de [enrutamiento de red informado.](https://go.microsoft.com/fwlink/?linkid=2151565)
 
 ## <a name="overview"></a>Información general
 
@@ -75,11 +72,11 @@ Una vez que esté listo para habilitar el enrutamiento de red informado en el Ce
 
 En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/), seleccione **Estado > conectividad de red** en el panel de navegación izquierdo.
 
-En esta sección del Centro de administración se proporcionan métricas de conectividad de red agregadas para su organización y instrucciones sobre cómo mejorar la conectividad. Consulta [Conectividad de red en el Centro de Administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md) para obtener información adicional sobre estas características disponibles en el Centro de administración.
+En esta sección del Centro de administración se proporcionan métricas de conectividad de red agregadas para su organización y instrucciones sobre cómo mejorar la conectividad. Consulta [Conectividad de red en el Centro de Administración de Microsoft 365 para](office-365-network-mac-perf-overview.md) obtener información adicional sobre estas características disponibles en el Centro de administración.
 
 Seleccione **Configuración > solución SD-WAN** para abrir el panel de configuración de enrutamiento de red informado. Las otras opciones que aparecen en **Configuración** se aplican a la guía general de conectividad de red en el Centro de administración y no son necesarias para habilitar el enrutamiento de red informado.
 
-En el panel de configuración, seleccione **Agregar la solución SD-WAN (versión preliminar).**
+En el panel de configuración, seleccione **Agregar la solución SD-WAN**.
 
 ### <a name="step-2-select-your-sd-wan-solution-and-data-storage-location"></a>Paso 2: Seleccionar la solución SD-WAN y la ubicación de almacenamiento de datos
 
@@ -95,9 +92,9 @@ Seleccione **Siguiente**.
 
 ### <a name="step-4-grant-permissions-to-the-sd-wan-solution"></a>Paso 4: Conceder permisos a la solución SD-WAN
 
-Este paso iniciará una solicitud de concesión de permisos con Azure Active Directory (Azure AD). Se le solicita que conceda permisos de nivel de inquilino que permitan a la solución SD-WAN seleccionada acceder al almacenamiento de datos de enrutamiento de red informado y a la información de estado del servicio asociada con su inquilino. Esta acción requiere **permisos de administrador de Azure AD DC** o rol de **administrador** global.
+Este paso iniciará una solicitud de concesión de permisos con Azure Active Directory (Azure AD). Se le solicita que conceda permisos de nivel de inquilino que permitan a la solución SD-WAN seleccionada acceder al almacenamiento de datos de enrutamiento de red informado y a la información de estado del servicio asociada con su inquilino. Esta acción requiere **Azure AD administrador de DC** o permisos de roles de **administración** global.
 
-Seleccione el **vínculo Conceder permiso a esta aplicación** y siga las solicitudes de Azure AD.
+Seleccione el **vínculo Conceder permiso a esta aplicación** y siga las Azure AD solicitudes.
 
 Una vez que haya completado la concesión de permisos, seleccione **Siguiente**.
 
@@ -162,15 +159,12 @@ La configuración se ha restablecido y se ha deshabilitado el enrutamiento de re
 
 Los datos intercambiados entre Microsoft y el proveedor de soluciones SD-WAN se almacenan en la ubicación de almacenamiento de datos seleccionada durante la habilitación inicial del enrutamiento de red informado. Las opciones de ubicación de almacenamiento de datos representan áreas geográficas que Microsoft Azure regiones donde se almacenan los datos.
 
->[!NOTE]
->Durante la fase de vista previa, la única ubicación de almacenamiento de datos disponible es **Norteamérica.** Las ubicaciones de almacenamiento de datos adicionales estarán disponibles antes de la disponibilidad general del enrutamiento de red informado.
-
 Los datos se conservan en esta ubicación durante un máximo de 30 días. Cuando se deshabilita, todos los datos restantes se quitan dentro de esta ventana de retención de 30 días.
 
 Los datos de esta ubicación se intercambian con la solución SD-WAN seleccionada y es posible que la ubicación de la solución SD-WAN configurada no esté dentro de la misma región. Los clientes deben trabajar con su proveedor de soluciones SD-WAN para evaluar los requisitos de ubicación de almacenamiento de datos antes de la implementación de producción.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md)
+[Conectividad de red en el Centro de administración de Microsoft 365](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 Servicios de ubicación de conectividad de red (versión preliminar)](office-365-network-mac-location-services.md)
+[Microsoft 365 de ubicación de conectividad de red](office-365-network-mac-location-services.md)

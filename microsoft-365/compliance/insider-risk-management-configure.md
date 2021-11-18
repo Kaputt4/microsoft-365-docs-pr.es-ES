@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 2ab8d01ab8169e9da11d25f8f118d81ceffcfdd4
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 4764243e89fe5c8cc6f699a3ee917fa9ba20a610
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787147"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064456"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -36,15 +36,9 @@ Para obtener más información acerca de cómo las directivas de riesgo de insid
 
 Antes de empezar con la administración de riesgos de insider, debes confirmar la [Microsoft 365 suscripción y](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) los complementos. Para obtener acceso y usar la administración de riesgos de insider, la organización debe tener una de las siguientes suscripciones o complementos:
 
-- Microsoft 365 E5 suscripción (versión de pago o de prueba)
-- Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
-- Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 A5 suscripción (versión de pago o de prueba)
-- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
-- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
-- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
-- Suscripción a Microsoft 365 G3 + complemento de Cumplimiento de Microsoft 365 G5
-- Subscripción a Microsoft 365 G3 + complemento de Administración de riesgos internos de Microsoft 365 G5
+- Microsoft 365 E5/A5/G5 (versión de pago o de prueba)
+- Microsoft 365 E3/A3/G3 + el complemento de cumplimiento Microsoft 365 E5/A5/G5
+- Microsoft 365 E3/A3/G3 + el complemento Microsoft 365 E5/A5/G5 Insider Risk Management
 - Suscripción a Office 365 E3 + Enterprise Mobility + Security E3 + el complemento Cumplimiento de Microsoft 365 E5
 
 Los usuarios incluidos en las directivas de administración de riesgos de insider deben tener asignada una de las licencias anteriores.

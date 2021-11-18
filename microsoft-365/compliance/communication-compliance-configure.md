@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2b72f61433f9686d8413a560e4c061078a5d7e5c
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 2c9ecbc07a5523d16d8e3e328f787a11b0c7679b
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792537"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063398"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -36,18 +36,12 @@ Use directivas de cumplimiento de comunicaciones para identificar las comunicaci
 
 Antes de empezar con el cumplimiento de las comunicaciones, debe confirmar su [Microsoft 365 suscripción y](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) cualquier complemento. Para obtener acceso y usar el cumplimiento de la comunicación, la organización debe tener una de las siguientes suscripciones o complementos:
 
-- Microsoft 365 E5 suscripción (versión de pago o de prueba)
-- Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
-- Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 A5 suscripción (versión de pago o de prueba)
-- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
-- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
-- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
-- Microsoft 365 Suscripción de G5 + el Microsoft 365 de cumplimiento de G5
-- Microsoft 365 Suscripción de G5 + el complemento Microsoft 365 G5 Insider Risk Management
-- Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
+- Microsoft 365 E5/A5/G5 (versión de pago o de prueba)
+- Microsoft 365 E3/A3/G5 + el complemento de cumplimiento Microsoft 365 E5/A5/G5
+- Microsoft 365 E3/A3/G5 + el complemento Microsoft 365 E5/A5/G5 Insider Risk Management
+- Office 365 Enterprise de E5 (versión de pago o de prueba)
 - Office 365 A5 suscripción (versión de pago o de prueba)
-- Office 365 Enterprise Suscripción E3 + Cumplimiento avanzado de Office 365 complemento (ya no está disponible para las nuevas suscripciones, vea la nota)
+- Office 365 Enterprise suscripción a E3 + Cumplimiento avanzado de Office 365 complemento (ya no está disponible para nuevas suscripciones, vea la nota)
 
 Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener asignada una de las licencias anteriores.
 
@@ -58,13 +52,13 @@ Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar el cump
 
 ## <a name="recommended-actions-preview"></a>Acciones recomendadas (versión preliminar)
 
-Las acciones recomendadas pueden ayudar a su organización a sacar el máximo partido de las capacidades de cumplimiento de comunicaciones y sus directivas existentes. En la página **Información** general, las acciones recomendadas proporcionan información y resumen tipos de información confidencial y actividades de contenido inapropiadas en las comunicaciones de la organización.
+Las acciones recomendadas pueden ayudar a su organización a empezar con las capacidades de cumplimiento de comunicaciones y sacar el máximo partido de las directivas existentes. Incluidas en la **página Directivas,** las acciones recomendadas proporcionan información y resumen tipos de información confidencial y actividades de contenido inadecuadas en las comunicaciones de la organización. Estos conocimientos no incluyen ninguna información de identificación personal (PII) para los usuarios de su organización.
 
 ![Acciones recomendadas de cumplimiento de comunicaciones.](../media/communication-compliance-recommended-actions.png)
 
-La actividad en los mensajes que contienen contenido inadecuado se enumera por tipo de clasificador de directivas existentes que usan la plantilla de contenido inadecuado o directivas personalizadas que usan clasificadores para contenido inadecuado. Investigue las alertas de estos mensajes en el panel de alertas de las directivas.
+La actividad en los mensajes que [](/microsoft-365/compliance/communication-compliance-policies#classifiers) contienen contenido inadecuado se agrega mediante el tipo de clasificador de directivas existentes que usan la plantilla de contenido inadecuado o directivas personalizadas que usan clasificadores para contenido inadecuado. Investigue las alertas de estos mensajes en el panel de alertas de las directivas.
 
-La actividad relacionada con tipos de información confidencial se detecta en los mensajes que se tratan en las directivas existentes y en los mensajes que no están cubiertos por directivas existentes. Ideas se proporcionan para todos los tipos de información confidencial, incluidos los que su organización no ha definido previamente en una directiva de cumplimiento de comunicaciones existente. Use estas perspectivas para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes.
+La actividad relacionada [con tipos de información](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) confidencial se detecta en los mensajes que se tratan en las directivas existentes y en los mensajes que no están cubiertos por directivas existentes. Ideas se agregan para todos los tipos de información confidencial, incluidos los que su organización no ha definido anteriormente en una directiva de cumplimiento de comunicaciones existente. Use estas perspectivas para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Paso 1 (obligatorio): Habilitar permisos para el cumplimiento de comunicaciones
 

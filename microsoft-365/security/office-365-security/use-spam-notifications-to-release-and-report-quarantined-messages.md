@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado del usuario final para mensajes en cuarentena en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a996b3c6f65ed978dda3c5038b522e09b09dbfa
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 1d3c7296cff3f3f4f2d10a2c4358a889ac428880
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035999"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064080"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Usar notificaciones de cuarentena para liberar e informar de mensajes en cuarentena
 
@@ -42,6 +42,8 @@ En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o e
 _Las directivas de_ cuarentena definen lo que los usuarios pueden hacer a los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena (para las características compatibles). Para más información, consulte [Políticas de cuarentena](quarantine-policies.md). Las policías de cuarentena también controlan si los destinatarios afectados (incluidos los _buzones compartidos)_ reciben notificaciones periódicas de cuarentena sobre sus mensajes en cuarentena. Las notificaciones en cuarentena son el reemplazo de las notificaciones de correo no deseado del usuario final para todas las características de protección admitidas (no solo los veredictos de directivas contra correo no deseado).
 
 Las notificaciones de cuarentena no están activadas en las notificaciones de cuarentena integradas denominadas AdminOnlyAccessPolicy o DefaultFullAccessPolicy. Las notificaciones de cuarentena están activadas en la directiva de cuarentena integrada denominada NotificationEnabledPolicy [si su organización la tiene](quarantine-policies.md#full-access-permissions-and-quarantine-notifications). De lo contrario, para activar las notificaciones de cuarentena en directivas de cuarentena, debe [crear y configurar una nueva directiva de cuarentena](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+
+Además, para bloquear los remitentes de notificaciones en cuarentena directamente, los usuarios deben estar habilitados para Powershell remoto. Para obtener instrucciones, [vea Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 Los administradores también pueden usar la configuración global de las directivas de cuarentena para personalizar el nombre para mostrar del remitente, el texto de declinación de responsabilidades en diferentes idiomas y el logotipo de la compañía que se usa en las notificaciones de cuarentena. Para obtener instrucciones, consulte [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 

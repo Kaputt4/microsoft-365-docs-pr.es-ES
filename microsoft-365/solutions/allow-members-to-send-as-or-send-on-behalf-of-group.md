@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Obtenga información sobre cómo permitir que los miembros del grupo envíen correo electrónico como Microsoft 365 grupo o envíen correo electrónico en nombre de un Microsoft 365 grupo.
-ms.openlocfilehash: c06f8aa82f0c112e448e607d7fbc75f13e7d3b6c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54fe4691f4523934e1850ebbf0711efaa3eb6034
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174200"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064068"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Permitir que los miembros envíen como o envíen en nombre de un grupo
 
@@ -79,7 +79,7 @@ En esta sección se explica cómo permitir a los usuarios enviar correo electró
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 

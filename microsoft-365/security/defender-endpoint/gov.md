@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 856fc5b076189e68669c75d740c7320f418597f9
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 158eb05c5c96712175dba6ba0b3a1b6011a26348
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555265"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063350"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -48,7 +48,7 @@ Microsoft Defender para el punto de conexión para clientes del gobierno de ESTA
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 para GCC High|Microsoft 365 G5 para DOD|
-|Microsoft 365 G5 Security GCC|Microsoft 365 Seguridad G5 para GCC High|Microsoft 365 Seguridad G5 para DOD|
+|Microsoft 365 G5 Security GCC|Microsoft 365 G5 Security for GCC High|Microsoft 365 G5 Security for DOD|
 |Microsoft Defender para endpoint: GCC|Microsoft Defender para endpoint for GCC High|Microsoft Defender para endpoint para DOD|
 |Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 para GCC High|Windows 10 Enterprise E5 para DOD|
 |
@@ -75,10 +75,12 @@ Las siguientes son las direcciones URL del portal de Microsoft Defender para pun
 
 |Tipo de cliente|Portal URL|
 |---|---|
-|GCC|<https://gcc.securitycenter.microsoft.us>|
+|GCC|<https://security.microsoft.com>|
 |GCC High|<https://securitycenter.microsoft.us>|
 |DoD|<https://securitycenter.microsoft.us>|
 |
+> [!NOTE]
+> Si es un cliente GCC y en el proceso de pasar de Microsoft Defender para endpoint comercial a GCC, use para obtener acceso a los datos comerciales de https://transition.security.microsoft.com Microsoft Defender para endpoint.
 
 ## <a name="endpoint-versions"></a>Versiones de extremo
 
@@ -103,16 +105,16 @@ Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/45
 Windows 10, versión 1709|![No.](images/svg/check-no.svg) <br /> Nota: No se admite|![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Nota: [En desuso,](/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice|![No](images/svg/check-no.svg) <br /> Nota: No se admite
 Windows 10, versión 1703 y versiones anteriores|![No.](images/svg/check-no.svg) <br /> Nota: No se admite|![No](images/svg/check-no.svg) <br /> Nota: No se admite|![No](images/svg/check-no.svg) <br /> Nota: No se admite
 Windows Server 2022|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Servidor 2019 (con [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016 (moderno) <sup>2</sup>|![Sí.](images/svg/check-yes.svg) <br /> Versión preliminar pública|![Sí](images/svg/check-yes.svg) <br /> Versión preliminar pública|![Sí](images/svg/check-yes.svg) <br /> Versión preliminar pública
 Windows Server 2012 R2 (moderno) <sup>2</sup>|![Sí.](images/svg/check-yes.svg) <br /> Versión preliminar pública|![Sí](images/svg/check-yes.svg) <br /> Versión preliminar pública|![Sí](images/svg/check-yes.svg) <br /> Versión preliminar pública
 Windows Server 2016 (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2012 R2 (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 8.1 Enterprise|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 8 Pro|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 7 SP1 Enterprise|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 7 SP1 Pro|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 8.1 Enterprise (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 8 Pro (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 7 SP1 Enterprise (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows 7 SP1 Pro (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Linux|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 macOS|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Android|![No.](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo
@@ -124,11 +126,11 @@ iOS|![No.](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg)
 >
 > <sup>2</sup> Obtenga información sobre la [solución moderna unificada para Windows 2016 y 2012 R2](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview). Si ya ha incorporado los servidores con MMA, siga las instrucciones que se proporcionan en [Migración](server-migration.md) de servidores para migrar a la nueva solución.
 >
-> <sup>3</sup> Cuando use [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1.
+> <sup>3</sup> Cuando use [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
 
-### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versiones del sistema operativo al usar Azure Defender para servidores
+### <a name="os-versions-when-using-microsoft-defender-for-cloud"></a>Versiones del sistema operativo al usar Microsoft Defender para la nube
 
-Las siguientes versiones del sistema operativo se admiten al [usar Azure Defender para servidores:](/azure/security-center/security-center-wdatp)
+Las siguientes versiones del sistema operativo se admiten al [usar Microsoft Defender para la nube:](/azure/security-center/security-center-wdatp)
 
 <br />
 
@@ -187,6 +189,7 @@ Estas son las diferencias conocidas:
 
 |Nombre de la característica|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
+|Evaluaciones de red|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Detección de redes|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Filtrado de contenido web|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Integraciones: Azure Sentinel|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Alertas <br /> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar privada|![Sí](images/svg/check-yes.svg) Alertas <br /> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar privada|

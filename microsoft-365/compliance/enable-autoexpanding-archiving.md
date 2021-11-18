@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: obtenga información sobre cómo habilitar el archivado de expansión automática, lo que proporciona a los usuarios almacenamiento adicional para sus Exchange Online buzones de correo. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 18123fb53cd13cf742c7b2a19574a540dded1f9b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65c03e11a047e26363fc00f0e208b542543a9e9e
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158195"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064252"
 ---
 # <a name="enable-auto-expanding-archiving---admin-help"></a>Habilitar el archivado de expansión automática: Ayuda para administradores
 
@@ -32,13 +32,17 @@ Puede usar la característica de Exchange Online de archivado de expansión auto
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>Antes de habilitar el archivado de expansión automática
 
-- Debe ser administrador global de la organización o miembro del grupo de roles Administración de la organización en su organización de Exchange Online para habilitar el archivado de expansión automática para toda la organización o para usuarios específicos. Como alternativa, debe ser miembro de un grupo de roles que tenga asignado el rol Destinatarios de correo para habilitar el archivado de expansión automática para usuarios específicos.
+- Después de activar el archivado de expansión automática para la organización o para un usuario específico, no se puede desactivar. Además, los administradores no pueden ajustar la cuota de almacenamiento para el archivado de expansión automática.
+
+- Debe ser un administrador global de su organización o un miembro del grupo de roles Administración de la organización en su organización Exchange Online para habilitar el archivado de expansión automática. Como alternativa, debe ser miembro de un grupo de roles que tenga asignado el rol Destinatarios de correo para habilitar el archivado de expansión automática para usuarios específicos.
 
 - El buzón de archivo de un usuario debe estar habilitado para poder habilitar el archivado de expansión automática. A un usuario se le debe asignar una Exchange Online del Plan 2 para habilitar el buzón de archivo. Si se asigna una licencia Exchange Online plan 1 a un usuario, tendrá que asignarle una licencia de Archivado de Exchange Online para habilitar su buzón de archivo. Vea [Habilitar buzones de archivo](enable-archive-mailboxes.md).
 
+- Después de activar el archivado de expansión automática, un buzón de archivo se convierte en un archivo de expansión automática cuando el buzón de archivo (incluida la carpeta Elementos recuperables) alcanza los 90 GB. El espacio de almacenamiento adicional puede tardar hasta 30 días en aprovisionarse.
+
 - También puede usar PowerShell para habilitar buzones de archivo. Vea la [sección Más información](#more-information) para ver un ejemplo del comando de PowerShell que puede usar para habilitar buzones de archivo para todos los usuarios de la organización.
 
-- El archivado de expansión automática también es compatible con los buzones compartidos. Para habilitar el archivo para un buzón compartido, se requiere una licencia Exchange Online plan 2 o una licencia Exchange Online plan 1 con una Archivado de Exchange Online de correo.
+- El archivado de expansión automática también es compatible con los buzones compartidos. Para habilitar el archivo para un buzón compartido, se requiere una licencia de ExchangeOnline (plan 2) o de ExchangeOnline (plan 1) con una licencia de Archivado de ExchangeOnline.
 
 - El archivado de expansión automática le impide recuperar o restaurar un buzón [inactivo.](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes) Eso significa que si habilita el archivado de expansión automática para un buzón y el buzón se hace inactivo en una fecha posterior, no podrá recuperar el buzón inactivo [(al](recover-an-inactive-mailbox.md) convertirlo en un buzón activo) ni restaurarlo [(combinando](restore-an-inactive-mailbox.md) el contenido con un buzón existente). Si el archivado de expansión automática está habilitado en un buzón inactivo, la única forma de recuperar datos es mediante la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para exportar los datos del buzón e importarlos a otro buzón. Para obtener más información, vea la sección "Buzones inactivos y archivos de expansión automática" en [Overview of inactive mailboxes](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
@@ -120,10 +124,6 @@ Tenga en cuenta lo siguiente después de habilitar el archivado de expansión au
     ```powershell
     Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
     ```
-
-- Después de activar el archivado de expansión automática para su organización o para un usuario específico, un buzón de archivo se convierte en un archivo de expansión automática cuando el buzón de archivo (incluida la carpeta Elementos recuperables) alcanza los 90 GB. El espacio de almacenamiento adicional puede tardar hasta 30 días en aprovisionarse.
-
-- Después de activar el archivado de expansión automática, no se puede desactivar. Además, los administradores no pueden ajustar la cuota de almacenamiento para el archivado de expansión automática.
 
 - El archivado de expansión automática es compatible con buzones de archivo basados en la nube en una implementación híbrida Exchange para los usuarios que tienen un buzón principal local. Sin embargo, después de habilitar el archivado de expansión automática para un buzón de archivo basado en la nube, no podrá volver a agregar ese buzón de archivo a la organización Exchange local. El archivado de expansión automática no es compatible con buzones locales en ninguna versión de Exchange Server.
 

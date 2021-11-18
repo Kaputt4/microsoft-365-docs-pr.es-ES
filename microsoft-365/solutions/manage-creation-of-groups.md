@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Obtenga información sobre cómo controlar qué usuarios pueden crear Microsoft 365 grupos.
-ms.openlocfilehash: b78ff54c8ff475f96f10592a95a3f83255665727
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: cea1529071cce92e2b6fad74d4946d1e4c7f3594
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217167"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064324"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Administrar quién puede crear grupos de Microsoft 365
 
 De forma predeterminada, todos los usuarios pueden crear Microsoft 365 grupos. Este es el enfoque recomendado porque permite a los usuarios empezar a colaborar sin necesidad de asistencia de TI.
 
-Si su empresa requiere restringir quién puede crear grupos, puede restringir la creación de grupos Microsoft 365 a los miembros de un grupo de Microsoft 365 grupo o grupo de seguridad determinados.
+Si su empresa requiere restringir quién puede crear grupos, puede restringir la creación de grupos de Microsoft 365 a los miembros de un grupo de Microsoft 365 grupo o grupo de seguridad determinados.
 
 Si le preocupa que los usuarios creen equipos o grupos que no cumplan con los estándares empresariales, considere la posibilidad de requerir a los usuarios que completen un curso de formación y, a continuación, agregarlos al grupo de usuarios permitidos.
 
@@ -44,21 +44,21 @@ Cuando se limita quién puede crear un grupo, afecta a todos los servicios que d
 - Power BI (clásico)
 - Project web /Roadmap
 
-Los pasos de este artículo no impedirán que los miembros de determinados roles creen grupos. Office 365 Los administradores globales pueden crear grupos mediante Centro de administración de Microsoft 365, Planner, Exchange y SharePoint Online. Otros roles pueden crear grupos a través de medios limitados, que se enumeran a continuación.
+Los pasos de este artículo no impedirán que los miembros de determinados roles creen grupos. Office 365 los administradores globales pueden crear grupos a través de Centro de administración de Microsoft 365, Planner, Exchange y SharePoint Online. Otros roles pueden crear grupos a través de medios limitados, que se enumeran a continuación.
 
-- Exchange Administrador: Exchange de administración, Azure AD
-- Soporte técnico de nivel 1 de partner: centro Administración de Microsoft 365, centro Exchange administración, Azure AD
-- Soporte técnico de nivel 2 de partners: centro de Administración de Microsoft 365, centro Exchange administración, Azure AD
+- Exchange administrador: Exchange de administración, Azure AD
+- Soporte técnico de nivel 1 de partner: Administración de Microsoft 365 centro de administración, Exchange de administración, Azure AD
+- Soporte técnico de nivel 2 de partners: Administración de Microsoft 365 centro de administración, centro Exchange administración, Azure AD
 - Escritores de directorios: Azure AD
-- SharePoint Administrador: SharePoint de administración, Azure AD
-- Teams Administrador de servicios: Teams de administración, Azure AD
-- Administrador de usuarios: Administración de Microsoft 365, Azure AD
+- SharePoint administrador: SharePoint de administración, Azure AD
+- Teams de servicio: Teams centro de administración, Azure AD
+- Administrador de usuarios: Administración de Microsoft 365 centro, Azure AD
 
 Si es miembro de uno de estos roles, puede crear grupos de Microsoft 365 para usuarios restringidos y, a continuación, asignar al usuario como propietario del grupo.
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Para administrar quién crea grupos, las siguientes personas necesitan Azure AD Premium o licencias EDU básicas de Azure AD asignadas a ellos:
+Para administrar quién crea grupos, las siguientes personas necesitan Azure AD Premium licencias o Azure AD licencias EDU básicas asignadas a ellos:
 
 - El administrador que configura estas opciones de creación de grupos
 - Los miembros del grupo a los que se les permite crear grupos
@@ -66,7 +66,7 @@ Para administrar quién crea grupos, las siguientes personas necesitan Azure AD 
 > [!NOTE]
 > Consulte [Asignar o quitar licencias en el portal de Azure Active Directory para](/azure/active-directory/fundamentals/license-users-groups) obtener más información sobre cómo asignar licencias de Azure.
 
-Las siguientes personas no necesitan Azure AD Premium o licencias educaciones básicas de Azure AD asignadas:
+Las siguientes personas no necesitan Azure AD Premium o Azure AD licencias EDU básicas asignadas:
 
 - Personas que son miembros de Microsoft 365 y que no tienen la capacidad de crear otros grupos.
 
@@ -168,7 +168,7 @@ Vuelva a intentar el mismo procedimiento con un miembro del grupo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 

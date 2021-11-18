@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las interacciones de configuración entre Microsoft 365 grupos y SharePoint
-ms.openlocfilehash: 2978e2f0a450c72d7b4abf71edb208a5d9f364c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76f3772685dbf67e61d68a47373f514ab2dabfbc
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208894"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064360"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Configuración interacciones entre Microsoft 365 grupos y SharePoint
 
@@ -34,7 +34,7 @@ Algunas opciones de configuración Microsoft 365 grupos y SharePoint en Microsof
 |SharePoint configuración|Descripción|Efecto en Microsoft 365 grupos|Recomendación|
 |:-----------------|:----------|:-----------------------------|:-------------|
 |Uso compartido externo para la organización y el sitio|Determina si los sitios, archivos y carpetas se pueden compartir con personas ajenas a la organización.|Si SharePoint y grupos no coinciden, es posible que los invitados del grupo no puedan acceder al sitio o que el acceso externo esté disponible en el sitio, pero no en el grupo.|Al cambiar la configuración de uso compartido, compruebe tanto la configuración de grupos como SharePoint configuración del sitio para los sitios de grupo conectados a grupos.<br><br>Consulte [Colaborar con invitados en un sitio](./collaborate-in-site.md).|
-|Domain allow/block|Permite o impide que el contenido se comparta con dominios especificados.|Los grupos no reconocen SharePoint permitir o bloquear listas. Los usuarios de dominios no permitidos en SharePoint podrían tener acceso a SharePoint a través de un grupo.|Administrar listas de dominios permitidos o bloqueados para Azure AD y SharePoint juntos. Cree un proceso de gobierno en toda la organización para permitir y bloquear dominios.<br><br>Consulta [SharePoint configuración de dominio y](/sharepoint/restricted-domains-sharing) configuración de dominio de Azure [AD](/azure/active-directory/b2b/allow-deny-list)|
+|Domain allow/block|Permite o impide que el contenido se comparta con dominios especificados.|Los grupos no reconocen SharePoint las listas de permitidos o las listas de bloqueo. Los usuarios de dominios no permitidos en SharePoint podrían tener acceso a SharePoint a través de un grupo.|Administrar listas de permitidores de dominio o listas de bloqueo para Azure AD y SharePoint juntos. Cree un proceso de gobierno en toda la organización para permitir y bloquear dominios.<br><br>Consulta [SharePoint configuración de dominio y](/sharepoint/restricted-domains-sharing) Azure AD de [dominio](/azure/active-directory/b2b/allow-deny-list)|
 |Permitir que solo los usuarios en grupos de seguridad específicos compartan externamente|Especifica grupos de seguridad que pueden compartir sitios, carpetas y archivos externamente.|Esta configuración no afecta a los propietarios de grupos que comparten grupos externamente. Los invitados de grupo tienen acceso al sitio SharePoint asociado.||
 |SharePoint de uso compartido de sitios|Determina quién puede compartir el sitio directamente fuera de la pertenencia a grupos. El propietario del sitio o grupo lo configura.|Esta configuración no afecta directamente al grupo, pero puede permitir a los usuarios agregarse a un sitio y no tener acceso a otros recursos de grupo|Considere la posibilidad de usar esta configuración para limitar el uso compartido del sitio directamente y administrar el acceso al sitio a través del grupo.|
 |Permitir a los usuarios crear sitios desde SharePoint página de inicio y OneDrive|Especifica si los usuarios pueden crear nuevos SharePoint web.|Si esta configuración está desactivada, los usuarios aún pueden crear sitios de grupo conectados a grupos mediante la creación de un grupo.||
@@ -50,7 +50,7 @@ Algunas opciones de configuración Microsoft 365 grupos y SharePoint en Microsof
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 

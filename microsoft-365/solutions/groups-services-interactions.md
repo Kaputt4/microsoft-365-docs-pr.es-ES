@@ -16,16 +16,16 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interacciones de servicios de grupos
-ms.openlocfilehash: f20f8199811b8b34b4cb74ac18a989a79dde7759
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 226c1588c0275c3349d0fd996dd68f5748f11cd6
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207468"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064372"
 ---
 # <a name="groups-services-interactions"></a>Interacciones de servicios de grupos
 
-Microsoft 365 Los grupos proporcionan un tejido común para una serie de servicios y cargas de trabajo dentro de la plataforma Microsoft 365 para ofrecer una experiencia conectada para los usuarios finales. En su núcleo, existe Microsoft 365 grupo para proporcionar:
+Microsoft 365 groups proporciona un tejido común para varios servicios y cargas de trabajo dentro de la plataforma Microsoft 365 para ofrecer una experiencia conectada para los usuarios finales. En su núcleo, existe Microsoft 365 grupo para proporcionar:
 
 - Una forma de administrar la pertenencia (Azure AD)
 - Un lugar para que se lleve a cabo la mensajería y las conversaciones (Exchange buzón, Microsoft Teams, Yammer)
@@ -51,7 +51,7 @@ Algunos ejemplos de esto son:
 
 ## <a name="user-interactions-with-groups"></a>Interacciones del usuario con grupos
 
-Microsoft 365 Los grupos se pueden crear y administrar desde una variedad de interfaces, tanto por administradores como por usuarios finales. 
+Microsoft 365 los grupos pueden crearse y administrarse desde varias interfaces, tanto por los administradores como por los usuarios finales. 
 
 ### <a name="administrative-experiences"></a>Experiencias administrativas
 
@@ -67,13 +67,13 @@ En el Centro de administración de Microsoft 365, el acceso de invitado a grupos
 
 **Centro de administración de Azure AD**
 
-El Centro de administración de Azure AD ofrece controles sobre si los usuarios pueden crear grupos o asignar propietarios en Azure Portals, así como la configuración de la directiva de expiración y nomenclatura.
+El Centro Azure AD administración ofrece controles sobre si los usuarios pueden crear grupos o asignar propietarios en Azure Portals, así como la configuración de la directiva de expiración y nomenclatura.
 
-El Centro de administración también proporciona una serie de medidas de control de invitaciones de invitado que van más allá de la del Centro de administración de Microsoft 365, como la capacidad de limitar si los no propietarios también pueden invitar invitados
+El Centro de administración también proporciona varias medidas de control de invitación de invitado que van más allá de la del Centro de administración de Microsoft 365, como la capacidad de limitar si los no propietarios también pueden invitar invitados
 
 **SharePoint**
 
-SharePoint sitios se crean con grupos de seguridad Propietario, Miembro y Visitante, y los dos primeros coinciden con sus equivalentes Microsoft 365 grupo. Aunque la pertenencia SharePoint los sitios en línea generalmente se administra mediante el grupo Microsoft 365 asociado, no es una relación bidireccional. Cualquier cambio en la pertenencia en el nivel de grupo de Microsoft 365 se refleja en SharePoint, pero si se cambia la pertenencia en el grupo SharePoint, esto no se refleja en el grupo Microsoft 365.
+SharePoint los sitios se crean con los grupos de seguridad Propietario, Miembro y Visitante, y los dos primeros coinciden con sus equivalentes Microsoft 365 grupo. Aunque la pertenencia SharePoint los sitios en línea generalmente se administra mediante el grupo Microsoft 365 asociado, no es una relación bidireccional. Cualquier cambio en la pertenencia en el nivel de grupo de Microsoft 365 se refleja en SharePoint, pero si se cambia la pertenencia en el grupo SharePoint, esto no se refleja en el grupo Microsoft 365.
 
 ### <a name="user-experiences"></a>Experiencias de usuario
 
@@ -91,7 +91,7 @@ Los siguientes servicios permiten la creación de grupos por usuarios finales:
 
 #### <a name="restriction-of-group-creation"></a>Restricción de creación de grupos
 
-Un enfoque común para controlar la expansión de los equipos es limitar los usuarios que pueden crearlos. Esto solo se puede hacer limitando la creación de grupos. Esto afecta a la capacidad de crear grupos desde otros servicios cuando esto puede ser necesario para el usuario final. Microsoft 365 Los grupos no admiten la capacidad de restringir la creación de grupos desde algunas aplicaciones o servicios mientras se permiten desde otras.
+Un enfoque común para controlar la expansión de los equipos es limitar los usuarios que pueden crearlos. Esto solo se puede hacer limitando la creación de grupos. Esto afecta a la capacidad de crear grupos desde otros servicios cuando esto puede ser necesario para el usuario final. Microsoft 365 groups no admite la capacidad de restringir la creación de grupos desde algunas aplicaciones o servicios mientras se permite desde otras.
 
 La experiencia de restricción de creación de grupos varía entre aplicaciones y servicios:
 
@@ -115,11 +115,11 @@ Vea el póster Grupos en Microsoft 365 para obtener información sobre los disti
 
 En la tabla siguiente se proporciona información general sobre Microsoft 365 de grupos con diversos servicios:
 
-|Producto|Características|¿El servicio<br>existen sin un grupo.|¿Puede el servicio?<br>crear un grupo|Elimina la<br>instancia eliminar el grupo?|
+|Producto|Características|¿Existe el servicio sin un grupo?|¿Puede el servicio crear un grupo?|¿Elimina la instancia el grupo?|
 |---|---|---|---|---|
 |Azure AD|Pertenencia, Controles de grupo, Invitados|Sí|Sí|Sí|
 |Exchange|Calendario, buzón|Sí|Sí|Sí|
-|Forms|Form|Sí|No|No|
+|Formularios|Form|Sí|No|No|
 |OneNote|Bloc de notas|Sí|No|No|
 |Planner|Panel de tareas|No|Sí|Sí|
 |Power Apps app|Aplicación|Sí|No|No|
@@ -128,12 +128,12 @@ En la tabla siguiente se proporciona información general sobre Microsoft 365 de
 |Power BI (nuevo)|Área de trabajo|Sí|No|Sí|
 |Project para la web|Project plan|Sí|Sí|No|
 |Guía básica|Guía básica|Sí|Sí|No|
-|SharePoint|Sitio|Sí|Sí|Sí|
+|SharePoint|Site|Sí|Sí|Sí|
 |Stream|Canal, vídeo|Sí|Sí|Sí|
 |Teams|Equipo|No|Sí|Sí|
 |Yammer|Group|Sí|Sí|Sí|
 
-Aunque la tabla anterior proporciona una introducción general de alto nivel de las interacciones de grupo con los servicios Microsoft 365, hay una serie de matices e complejidades que debe comprender. En las secciones siguientes se hace un análisis más detallado de las cargas de trabajo específicas y sus interacciones con los grupos.
+Aunque la tabla anterior proporciona una introducción general de alto nivel de las interacciones de grupo con los servicios Microsoft 365, hay varios matices e complejidades que debe comprender. En las secciones siguientes se hace un análisis más detallado de las cargas de trabajo específicas y sus interacciones con los grupos.
 
 ## <a name="azure-ad"></a>Azure AD
 
@@ -147,33 +147,33 @@ Azure AD proporciona las capacidades de administración de identidades subyacent
 - Invitados
 - Restricción de creación de grupos
 
-**¿Puede Azure AD crear un grupo?**
+**¿Azure AD crear un grupo?**
 
 Sí, Microsoft 365 pueden crearse desde Azure AD a través del portal web de administración, a través de PowerShell o Graph API.
 
 **¿Azure AD existe sin un grupo?**
 
-Sí, Azure AD realiza un gran número de servicios que no tienen relación con Microsoft 365 grupos. Cada Microsoft 365 grupo se representa como un objeto en Azure AD.
+Sí, Azure AD un gran número de servicios que no tienen relación con Microsoft 365 grupos. Cada Microsoft 365 grupo se representa como un objeto en Azure AD.
 
 **¿Puede haber varias instancias de Azure AD por grupo?**
 
 No, solo hay una instancia de Azure AD.
 
-**¿Azure AD se puede asociar a varios grupos?**
+**¿Azure AD asociarse con varios grupos?**
 
 Sí, porque Azure AD es la plataforma subyacente que proporciona el servicio de pertenencia a grupos.
 
-**¿Puede cambiar la asociación de Azure AD con un grupo?**
+**¿Azure AD asociación con un grupo?**
 
 No, Azure AD es la plataforma subyacente donde existen grupos.
 
 **¿Elimina la instancia el grupo?**
 
-Al eliminar el grupo en Azure AD, se eliminará el contenido y los servicios asociados al grupo correspondientes.
+Al eliminar el grupo en Azure AD se eliminará el contenido y los servicios asociados al grupo correspondientes.
 
 ## <a name="teams"></a>Teams
 
-Teams es un área de trabajo centrada en chat destinada a mejorar la colaboración proporcionando una interfaz singular para interactuar con una variedad de servicios de Microsoft y de terceros.
+Teams es un área de trabajo centrada en chat destinada a mejorar la colaboración proporcionando una interfaz singular para interactuar con varios servicios de Microsoft y de terceros.
 
 De forma predeterminada, cuando se crea un equipo, el buzón y el calendario asociados con el grupo Microsoft 365 se ocultan de la lista global de direcciones de Exchange, así como Outlook. Un administrador puede invalidar esto manualmente si el usuario desea usar tanto Outlook como Teams en el mismo Microsoft 365 grupo.
 
@@ -223,7 +223,7 @@ Sí, es posible crear un grupo desde el Exchange Online de administración, así
 
 **¿Exchange existe sin un grupo?**
 
-Sí, Exchange Online proporciona una serie de servicios, incluidos los buzones y calendarios compartidos, sin ninguna asociación de grupo.
+Sí, Exchange Online proporciona varios servicios, incluidos los buzones y calendarios compartidos, sin ninguna asociación de grupo.
 
 **¿Puede haber varias instancias de buzones Exchange o calendarios por grupo?**
 
@@ -241,7 +241,7 @@ No, el buzón y el calendario no se pueden cambiar a un grupo diferente. Sin emb
 
 Sí, al eliminar el buzón de Exchange se eliminará el grupo, así como los servicios y el contenido asociados al grupo.
 
-## <a name="forms"></a>Forms
+## <a name="forms"></a>Formularios
 
 Forms proporciona encuestas y cuestionarios basados en web.
 
@@ -387,7 +387,7 @@ Power Automate (anteriormente conocido como Microsoft Flow) proporciona flujos d
 
 No, Power Automate puede crear un grupo Microsoft 365 en el contexto de asociarse a uno.
 
-Sin embargo, es posible crear un flujo que realice varias operaciones, como crear un grupo de seguridad de Azure AD o actualizar la pertenencia a un grupo Microsoft 365 usuario.
+Sin embargo, es posible crear un flujo que realice varias operaciones, como crear un grupo de seguridad Azure AD o actualizar la pertenencia a un grupo Microsoft 365 grupo.
 
 **¿Existen flujos sin un grupo?**
 
@@ -540,7 +540,7 @@ No, la eliminación del mapa de ruta no eliminará el grupo.
 
 ## <a name="sharepoint"></a>SharePoint
 
-SharePoint es una plataforma de administración de contenido basada en web que proporciona, entre otras cosas, servicios de almacenamiento para una serie de Microsoft 365 web.
+SharePoint es una plataforma de administración de contenido basada en web que proporciona, entre otras cosas, servicios de almacenamiento para varios Microsoft 365 web.
 
 **Características clave proporcionadas a grupos**
 
@@ -554,7 +554,7 @@ Sí, la creación de un sitio de grupo en SharePoint creará un grupo Microsoft 
 
 **¿SharePoint sitios existen sin un grupo?**
 
-Sí, SharePoint ofrece una serie de sitios y servicios no asociados a grupos, como sitios de comunicaciones y concentradores. 
+Sí, SharePoint ofrece varios sitios y servicios no asociados a grupos, como sitios de comunicaciones y concentradores. 
 
 **¿Puede haber varios sitios por grupo?**
 
@@ -648,6 +648,6 @@ Sí, si se elimina el grupo en Yammer se eliminará el contenido y los servicios
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)

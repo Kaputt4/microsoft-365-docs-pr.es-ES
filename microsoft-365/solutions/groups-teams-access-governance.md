@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo regular el acceso en Microsoft 365 grupos, Teams y SharePoint.
-ms.openlocfilehash: 2a0da02385e3fc325bb4f25b4ac8a538f950d820
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e01326093476f341c6c4c75448efbdf8c745779f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207456"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064336"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Administración del acceso en Microsoft 365 grupos, Teams y SharePoint
 
@@ -36,7 +36,7 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Pertenencia a grupos dinámicos basada en reglas|[Crear o actualizar un grupo dinámico en Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Controle quién puede compartir archivos, carpetas y sitios.|[Configurar y administrar solicitudes de acceso](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Acceso condicional|||
-||Autenticación multifactor|[Autenticación multifactor de Azure AD](/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Autenticación multifactor|[Azure AD multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Controle el acceso a dispositivos según la confidencialidad de grupo, equipo o sitio.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Limitar el acceso al sitio para dispositivos no administrados.|[Controlar SharePoint acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices)|
 ||Controlar el acceso al sitio en función de la ubicación|[Controlar el acceso a los datos de SharePoint y OneDrive en función de la ubicación de red](/sharepoint/control-access-based-on-network-location)|
@@ -51,8 +51,8 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Controle el acceso de invitado a un grupo, equipo o sitio en función de la confidencialidad de la información.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Desactivar las opciones de uso compartido.|[Limitar el uso compartido en Microsoft 365](./microsoft-365-limit-sharing.md)|
 |Administración de usuarios|||
-||Revise la pertenencia a grupos y equipos de forma periódica.|[¿Qué son las revisiones de acceso de Azure AD?](/azure/active-directory/governance/access-reviews-overview)|
-||Automatice la administración de acceso a grupos y equipos.|[¿Qué es la administración de derechos de Azure AD?](/azure/active-directory/governance/entitlement-management-overview)|
+||Revise la pertenencia a grupos y equipos de forma periódica.|[¿Qué Azure AD de acceso?](/azure/active-directory/governance/access-reviews-overview)|
+||Automatice la administración de acceso a grupos y equipos.|[¿Qué es Azure AD de derechos?](/azure/active-directory/governance/entitlement-management-overview)|
 ||Permitir o bloquear la creación de canales privados en Teams.|[Administrar el ciclo de vida de los canales privados en Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>Pertenencia
@@ -72,9 +72,9 @@ SharePoint sitios proporcionan la capacidad de agregar propietarios, miembros y 
 
 ## <a name="conditional-access"></a>Acceso condicional
 
-Con Microsoft 365, puede requerir autenticación multifactor para personas dentro y fuera de la organización. Hay muchas opciones para las circunstancias en las que se solicita a las personas un segundo factor de autenticación. Le recomendamos encarecidamente que implemente la autenticación multifactor para su organización:
+Con Microsoft 365, puede requerir autenticación multifactor tanto para personas dentro como fuera de la organización. Hay muchas opciones para las circunstancias en las que se solicita a las personas un segundo factor de autenticación. Le recomendamos encarecidamente que implemente la autenticación multifactor para su organización:
 
-- [Autenticación multifactor de Azure AD](/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
 
 Si tienes información confidencial en algunos de tus grupos y equipos, puedes aplicar directivas de administración de dispositivos basadas en la etiqueta de confidencialidad de un grupo o equipo. Puede bloquear el acceso por completo desde dispositivos no administrados o permitir el acceso limitado y solo web:
 
@@ -96,7 +96,7 @@ Recursos adicionales:
 
 ## <a name="guest-access"></a>Acceso de invitado
 
-Puede restringir a los invitados en función del dominio de su dirección de correo electrónico. SharePoint ofrece una configuración de restricción de dominio específica de toda la organización y del sitio. Los grupos Teams usar las listas de dominios permitir y denegar en Azure AD. Asegúrese de configurar ambas opciones para evitar el uso compartido no deseado y garantizar una experiencia de usuario coherente:
+Puede restringir a los invitados en función del dominio de su dirección de correo electrónico. SharePoint ofrece una configuración de restricción de dominio específica de toda la organización y del sitio. Los grupos Teams usar las listas de permitidos de dominio o las listas de bloqueo en Azure AD. Asegúrese de configurar ambas opciones para evitar el uso compartido no deseado y garantizar una experiencia de usuario coherente:
 
 - [Restringir el uso compartido de contenido de SharePoint y OneDrive por dominio](/sharepoint/restricted-domains-sharing)
 
@@ -146,11 +146,11 @@ Recursos adicionales:
 
 A medida que los grupos y los equipos evolucionan en su organización, una buena práctica es revisar la pertenencia a equipos y grupos de forma regular. Esto puede ser especialmente útil para equipos y grupos con una pertenencia cambiante, aquellos que contienen información confidencial o aquellos que incluyen invitados. Considere la posibilidad de configurar revisiones de acceso para estos equipos y grupos:
 
-- [¿Qué son las revisiones de acceso de Azure AD?](/azure/active-directory/governance/access-reviews-overview)
+- [¿Qué Azure AD de acceso?](/azure/active-directory/governance/access-reviews-overview)
 
 Muchas organizaciones tienen asociaciones empresariales con otras organizaciones o proveedores clave con los que colaboran en profundidad. La administración de usuarios y el acceso a los recursos pueden ser difíciles de administrar en estos escenarios. Considere la posibilidad de automatizar algunas de las tareas de administración de usuarios e incluso realizar la transición de algunas de ellas a su organización asociada:
 
-- [¿Qué es la administración de derechos de Azure AD?](/azure/active-directory/governance/entitlement-management-overview)
+- [¿Qué es Azure AD de derechos?](/azure/active-directory/governance/entitlement-management-overview)
 
 Los canales privados Teams permiten conversaciones con ámbito y uso compartido de archivos entre un subconjunto de miembros del equipo. Según sus necesidades empresariales específicas, es posible que desee permitir o bloquear esta funcionalidad.
 
@@ -160,11 +160,11 @@ Los canales privados Teams permiten conversaciones con ámbito y uso compartido 
 
 Recursos adicionales:
 
-- [Azure Active Directory Gobierno de identidades](/azure/active-directory/governance)
+- [Azure Active Directory de identidades](/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 

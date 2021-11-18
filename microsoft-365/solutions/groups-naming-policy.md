@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: Obtenga información sobre cómo crear una directiva de nomenclatura para Microsoft 365 grupos.
-ms.openlocfilehash: 9fb75feb255ee6d58313f4cfaf3486c4a8cd63b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: acc521dd5be1dcf630b4801eeb914c45e765e00f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213414"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064516"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 de nomenclatura de grupos
 
@@ -42,7 +42,7 @@ La directiva de nomenclatura de grupo consta de las siguientes características:
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-El uso de la directiva de nomenclatura de Azure AD para grupos de Microsoft 365 requiere que posea una licencia de Azure Active Directory Premium P1 o una licencia EDU básica de Azure AD para cada usuario único (incluidos los invitados) que sea miembro de uno o más grupos de Microsoft 365.
+El uso de una directiva de nomenclatura Azure AD para grupos de Microsoft 365 requiere que posea pero no asigne necesariamente una licencia de Azure Active Directory Premium P1 o una licencia EDU básica Azure AD para cada usuario único (incluidos los invitados) que sea miembro de uno o más Microsoft 365 grupos.
 
 Esto también es necesario para el administrador que crea la directiva de nomenclatura de grupos.
 
@@ -64,7 +64,7 @@ Ejemplos:
 - Departamento del usuario = Ingeniería
 - Nombre de grupo creado = "GRP Mi ingeniería de grupo"
 
-Los atributos Azure Active Directory (Azure AD) son [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] y [Title].
+Los Azure Active Directory de Azure Active Directory (Azure AD) son [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] y [Title].
 
 - Los atributos de usuario no admitidos se consideran cadenas fijas, por ejemplo [postalCode].
 
@@ -132,7 +132,7 @@ Para configurar una directiva de nomenclatura:
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 

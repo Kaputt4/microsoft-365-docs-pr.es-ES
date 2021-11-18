@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98ae7b53ce793809ae93cf32d574d979e5b7c6e5
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: c8bf6f37d837d46bfdcca98296c8ca09747276cc
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335567"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064216"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -32,10 +32,9 @@ ms.locfileid: "60335567"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Los administradores no pueden agregar permisos directamente a la lista de inquilinos permitidos o bloqueados. En su lugar, use el proceso de envío de administrador para enviar el mensaje que se bloqueó para que la dirección URL, el archivo y los remitentes correspondientes se agregarán a la lista de inquilinos permitidos o bloqueados. En la mayoría de los casos en los que se determinó que el mensaje era un falso positivo que se bloqueó incorrectamente, los permisos se mantienen durante el tiempo necesario para dar al sistema tiempo para permitirlo de forma natural.
+Los administradores no pueden agregar permisos directamente a la lista de inquilinos permitidos o bloqueados. En su lugar, use el proceso de envío de administrador para enviar el mensaje que se bloqueó para que la dirección URL, el archivo y los remitentes correspondientes se agregarán a la lista de inquilinos permitidos o bloqueados. Si no se ha producido un bloqueo del archivo, la dirección URL o el remitente, no se creará la opción permitir. En la mayoría de los casos en los que se determinó que el mensaje era un falso positivo que se bloqueó incorrectamente, los permisos se mantienen durante el tiempo necesario para dar al sistema tiempo para permitirlo de forma natural.
 
 > [!IMPORTANT]
->
 > Dado que Microsoft administra las permite, se quitará el remitente, la dirección URL o el archivo que no sean necesarios o que se consideren como no deseados. Esto es para proteger el entorno y evitar una configuración incorrecta de las permite. En los casos en los que no esté de acuerdo, es posible que se necesite un caso de soporte técnico para ayudar a determinar por qué un mensaje aún se considera como malo.
 
 ## <a name="add-allows-using-the-submissions-portal"></a>Agregar permite usar el portal de envíos 

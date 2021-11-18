@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo evitar que los invitados se agregó a un grupo específico
-ms.openlocfilehash: 68f404cf86d6e8fe797b22fdf2a64f5d86162b56
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8a8a62b2a320fe000580651a2577f625a9ce1b90
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196230"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064492"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo
 
@@ -85,7 +85,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Permitir o bloquear el acceso de invitado en función de su dominio
 
-Puede permitir o bloquear invitados que usan un dominio específico. Por ejemplo, si su empresa (Contoso) tiene una asociación con otra empresa (Fabrikam), puede agregar Fabrikam a la lista Permitir para que los usuarios puedan agregar a esos invitados a sus grupos.
+Puede permitir o bloquear invitados que usan un dominio específico. Por ejemplo, si su empresa (Contoso) tiene una asociación con otra empresa (Fabrikam), puede agregar Fabrikam a la lista de permitidos para que los usuarios puedan agregar esos invitados a sus grupos.
 
 Para obtener más información, vea [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list).
 
@@ -107,7 +107,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 

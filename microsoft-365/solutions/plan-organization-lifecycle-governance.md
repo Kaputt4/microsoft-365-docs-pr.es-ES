@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Lea las opciones de gobierno del ciclo de vida para herramientas de colaboración en Microsoft 365
-ms.openlocfilehash: c1389b7dd787df6b4aab4cd5bb00377e05b99ff6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a0f4622afd1a22b8cd6574865012b7f636fc06c5
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199278"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063325"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planear la organización y el gobierno del ciclo de vida Microsoft 365 grupos y Microsoft Teams
 
@@ -57,7 +57,7 @@ Si desea eliminar un grupo pero conservar el contenido de uno o varios de los se
 
 Una directiva de nomenclatura de grupos puede ayudarle a gobernar grupos de dos maneras:
 
-- Se puede usar una directiva de nomenclatura de prefijos o sufijos para aplicar cadenas fijas o atributos de Azure AD al principio o al final de un nombre de grupo y su dirección de correo electrónico asociada. Al hacerlo, puede garantizar la inclusión de, por ejemplo, nombres de departamento o regiones en nombres de grupo.
+- Se puede usar una directiva de nomenclatura de prefijo o sufijo para aplicar cadenas fijas o Azure AD atributos al principio o al final de un nombre de grupo y su dirección de correo electrónico asociada. Al hacerlo, puede garantizar la inclusión de, por ejemplo, nombres de departamento o regiones en nombres de grupo.
 - Una directiva de palabras bloqueadas puede garantizar que determinadas palabras, como los nombres de los ejecutivos, no se usan en los nombres de grupo.
 
 Las directivas de nomenclatura se aplican cuando se crean grupos desde cualquiera de los servicios conectados a grupos.
@@ -74,12 +74,12 @@ Una vez establecidos los grupos para que expiren:
 - Se elimina cualquier grupo que no se renueve.
 - Los propietarios del grupo o el administrador pueden restaurar cualquier grupo que se elimine en un plazo de 30 días.
 
-Las directivas de expiración son una buena forma de limitar la expansión de grupos al garantizar que se eliminen los grupos que ya no están en uso. Si desea crear una directiva de expiración de grupo, [vea Microsoft 365 de expiración de grupo](microsoft-365-groups-expiration-policy.md).
+Las directivas de expiración son una buena forma de limitar la expansión de grupos al garantizar que se eliminen los grupos que ya no están en uso. Si desea crear una directiva de expiración de grupo, [vea Microsoft 365 de expiración de grupos](microsoft-365-groups-expiration-policy.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
-[Quitar un antiguo empleado y proteger datos](/microsoft-365/admin/add-users/remove-former-employee)
+[Quitar un antiguo empleado y proteger los datos](/microsoft-365/admin/add-users/remove-former-employee)

@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los escenarios de colaboración de gobierno de comunicaciones.
-ms.openlocfilehash: cc90130a9cb841291872898ca0ca53a4b515b4fb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ace313ce20445aafc06b184a72cc45c2ce0118ef
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207432"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064504"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gobierno de comunicaciones para escenarios de colaboración
 
@@ -35,7 +35,7 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Administrar lo que los usuarios pueden hacer mientras la mensajería se Teams.|[Administrar directivas de mensajería de Teams](/microsoftteams/messaging-policies-in-teams)|
 ||Controle quién puede iniciar y responder a las publicaciones de un canal.|[Configurar y administrar la moderación de canales en Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
 |Reuniones|||
-||Administrar lo que pueden hacer los participantes de la reunión.|[Administración de directivas de reunión en Teams](/microsoftteams/meeting-policies-in-teams)|
+||Administrar lo que pueden hacer los participantes de la reunión.|[Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams) (Administración de directivas de reunión en Teams)|
 ||Permitir o impedir que los usuarios anónimos se unan a reuniones.|[Permitir que los usuarios anónimos se unan a reuniones](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Cumplimiento de comunicaciones|||
 ||Surface y responder a comunicaciones negligentes y negligentes|[Cumplimiento de comunicaciones en Microsoft 365](../compliance/communication-compliance.md)|
@@ -54,7 +54,7 @@ Puede controlar quién puede iniciar nuevas publicaciones y responder a las publ
 
 Puedes controlar las características que están disponibles para los Teams de la reunión, incluida la programación, el uso compartido de contenido, los participantes y las directivas de audio y vídeo.
 
-[Administración de directivas de reunión en Teams](/microsoftteams/meeting-policies-in-teams)
+[Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams) (Administración de directivas de reunión en Teams)
 
 Puede controlar la unión anónima para Teams reuniones, lo que permite que cualquier persona con un vínculo a la reunión se una.
 
@@ -69,7 +69,7 @@ El cumplimiento de las Microsoft 365 permite examinar las comunicaciones en busc
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 

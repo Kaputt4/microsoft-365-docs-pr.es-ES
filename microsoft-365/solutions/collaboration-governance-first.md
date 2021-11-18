@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo crear su plan de gobierno de colaboración
-ms.openlocfilehash: cce044aecfdc8c905ecd7aa9d87236db5c8f07ea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ac7656bc50ad89ffad7bcaa716ce60bcbc4f00be
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206426"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064396"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Crear el plan de gobierno de colaboración
 
@@ -135,7 +135,7 @@ En última instancia, el éxito de los esfuerzos de planeación de gobierno depe
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Gobierno en Microsoft Cloud Adoption Framework para Azure](/azure/cloud-adoption-framework/govern)
 

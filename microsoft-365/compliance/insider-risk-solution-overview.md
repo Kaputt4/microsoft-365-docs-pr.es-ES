@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 5028b2f577d5eb67a3e1316048878d1020a7e53c
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: d9608db071f347b16b36ca3e749012d8a9955ac0
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334679"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063477"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Soluciones de riesgos internos en Microsoft 365
 
@@ -54,16 +54,10 @@ Para ayudar a proteger su organización contra riesgos de insider, use estas Mic
 
 El cumplimiento de la comunicación ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar en mensajes inapropiados en su organización. El cumplimiento de la comunicación está disponible en las siguientes suscripciones:
 
-- Microsoft 365 E5 suscripción (versión de pago o de prueba)
-- Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
-- Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 A5 suscripción (versión de pago o de prueba)
-- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
-- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
-- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
-- Microsoft 365 Suscripción de G5 + el Microsoft 365 de cumplimiento de G5
-- Microsoft 365 Suscripción de G5 + el complemento Microsoft 365 G5 Insider Risk Management
-- Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
+- Microsoft 365 E5/A5/G5 (versión de pago o de prueba)
+- Microsoft 365 E3/A3/G5 + el complemento de cumplimiento Microsoft 365 E5/A5/G5
+- Microsoft 365 E3/A3/G5 + el complemento Microsoft 365 E5/A5/G5 Insider Risk Management
+- Office 365 Enterprise de E5 (versión de pago o de prueba)
 - Office 365 A5 suscripción (versión de pago o de prueba)
 - Suscripción a Office 365 Enterprise E3 y complemento de Cumplimiento avanzado de Office 365 (ya no está disponible para las suscripciones nuevas)
 
@@ -73,15 +67,9 @@ La administración de riesgos de Insider ayuda a minimizar los riesgos internos 
 
 La administración de riesgos de Insider está disponible en las siguientes suscripciones:
 
-- Microsoft 365 E5 suscripción (versión de pago o de prueba)
-- Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
-- Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 A5 suscripción (versión de pago o de prueba)
-- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
-- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
-- Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
-- Suscripción a Microsoft 365 G3 + complemento de Cumplimiento de Microsoft 365 G5
-- Subscripción a Microsoft 365 G3 + complemento de Administración de riesgos internos de Microsoft 365 G5
+- Microsoft 365 E5/A5/G5 (versión de pago o de prueba)
+- Microsoft 365 E3/A3/G3 + el complemento de cumplimiento Microsoft 365 E5/A5/G5
+- Microsoft 365 E3/A3/G3 + el complemento Microsoft 365 E5/A5/G5 Insider Risk Management
 - Suscripción a Office 365 E3 + Enterprise Mobility + Security E3 + el complemento Cumplimiento de Microsoft 365 E5
 
 ### <a name="information-barriers"></a>Barreras de información
@@ -90,15 +78,12 @@ Las barreras de información permiten restringir la comunicación y la colaborac
 
 Las barreras de información están disponibles en las siguientes suscripciones:
 
-- Microsoft 365 E5 suscripción (versión de pago o de prueba)
-- Microsoft 365 A5 suscripción (versión de pago o de prueba)
-- Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
+- Microsoft 365 E5/A5 (versión de pago o de prueba)
+- Office 365 Enterprise de E5 (versión de pago o de prueba)
 - Office 365 A5 suscripción (versión de pago o de prueba)
 - Cumplimiento avanzado de Office 365 complemento (ya no está disponible para las nuevas suscripciones)
-- Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
-- Microsoft 365 E3 suscripción + el Microsoft 365 E5 de Administración de riesgos de Insider
-- Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
-- Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
+- Microsoft 365 E3/A3 + el complemento de cumplimiento Microsoft 365 E5/A5
+- Microsoft 365 E3/A3 + el complemento Microsoft 365 E5/A5 Insider Risk Management
 
 ### <a name="privileged-access-management"></a>Administración del acceso con privilegios
 
@@ -108,7 +93,7 @@ La administración de acceso con privilegios está disponible en las siguientes 
 
 - Microsoft 365 E5 suscripción (versión de pago o de prueba)
 - Microsoft 365 A5 suscripción (versión de pago o de prueba)
-- Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
+- Office 365 Enterprise de E5 (versión de pago o de prueba)
 - Office 365 A5 suscripción (versión de pago o de prueba)
 - Microsoft 365 E3 suscripción + el Cumplimiento de Microsoft 365 E5 complemento
 - Microsoft 365 E3 suscripción y el complemento Microsoft 365 E5 protección de la información y gobierno

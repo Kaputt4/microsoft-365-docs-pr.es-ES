@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Obtenga información sobre las distintas formas en que puede proporcionar comentarios a Microsoft sobre los productos y servicios de Microsoft.
-ms.openlocfilehash: 6e28c41edeffa636b10b4366ee3a98a96ddcd2ef
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 0aba87571f4b4fddb38f9cd5cae526d62d2e2c64
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588580"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064276"
 ---
 # <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>Obtenga información sobre cómo proporcionar comentarios a Microsoft
 
@@ -48,7 +48,6 @@ Si usa [comentarios,](https://feedbackportal.microsoft.com/)puede proporcionar c
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Screenshot: Selection of Microsoft products you can send feedback on":::
 
 Seleccionar un foro te permite ver todos los comentarios relacionados con ese producto y puedes enviar o comentar comentarios que coincidan con los tuyos.  Si no ve comentarios similares a los suyos, puede enviar nuevos comentarios a través del propio portal.
-agregar captura de pantalla.
 
 ### <a name="sending-feedback-from-windows-feedback-hub"></a>Enviar comentarios desde Centro de opiniones sobre Windows
 

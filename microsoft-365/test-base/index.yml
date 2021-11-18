@@ -11,12 +11,12 @@ metadata:
   author: v-zhifufeng
   ms.author: v-zhifufeng
   ms.date: 03/29/2021
-  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 372143027462a20cecf4c7edc7e0eee31a480ba0
+  ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59211727"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064480"
 landingContent:
 - title: Acerca de Test Base
   linkLists:
@@ -32,13 +32,13 @@ landingContent:
     links:
     - text: recursos adicionales
       url: faq.md
-- title: Comenzar
+- title: Introducción
   linkLists:
   - linkListType: quickstart
     links:
     - text: Crear cuenta base de prueba
       url: createAccount.md
-    - text: Upload aplicación
+    - text: Subir un paquete
       url: uploadApplication.md
     - text: Upload archivos binarios
       url: binaries.md
@@ -58,5 +58,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Preguntas más frecuentes
+    - text: preguntas más frecuentes
       url: faq.md

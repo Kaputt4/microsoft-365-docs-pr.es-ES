@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e1a8f2986c31cdf710d65532eb64394bc34d7a0b
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: dc1bd7b8a717d5f53514209fe50499844644f27b
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60971984"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064468"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en Advanced eDiscovery
 
@@ -75,7 +75,7 @@ En la siguiente lista se describe el resultado de la consulta de filtro en térm
 Para obtener más información acerca de los tipos inclusivos y la singularidad de los documentos, vea [Subprocesos de correo](email-threading-in-advanced-ediscovery.md)electrónico en Advanced eDiscovery .
 
 > [!NOTE]
-> Durante la vista previa pública del formato de  caso grande en [Advanced eDiscovery](advanced-ediscovery-large-cases.md), la consulta de filtro Para revisión no ha devuelto conversaciones Teams para conjuntos de revisión creados antes del 4 de noviembre de 2021. Este problema se ha resuelto. Esto significa que si vuelve a aplicar la consulta **Para** revisión a un conjunto de revisión, es posible que se muestren más elementos que coincidan con la consulta de filtro porque se incluyen todas las Teams conversaciones.
+> Durante la vista previa pública del formato de  caso grande en [Advanced eDiscovery](advanced-ediscovery-large-cases.md), la consulta de filtro Para revisión no ha devuelto conversaciones de Teams o Yammer para conjuntos de revisión (en casos que usan el formato de caso grande) creados antes del 4 de noviembre de 2021. Este problema se ha resuelto. Esto significa que si  vuelve a aplicar la consulta Para revisión a un conjunto de revisión en un caso que usa el formato de mayúsculas y minúsculas, se pueden mostrar más elementos que coincidan con la consulta de filtro porque se incluyen todas las conversaciones Teams o Yammer.
 
 ## <a name="analytics-report"></a>Informe de análisis
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Aprenda a elegir el dominio que se va a usar al crear Microsoft 365 mediante la configuración de directivas de direcciones de correo electrónico mediante PowerShell.
-ms.openlocfilehash: f909decd81c94ea04adb3a714dd1dfd282e7f40e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31b84304643190f343ae9ee74a947ecf6741f135
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149567"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063318"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Elegir el dominio que se usará al crear Microsoft 365 grupos
 
@@ -121,7 +121,7 @@ Hay que saber algunas cosas más:
     
 ## <a name="related-content"></a>Contenido relacionado
 
-[Planeación de gobierno de colaboración paso a paso](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) (artículo)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations) (artículo)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md) (artículo)
 

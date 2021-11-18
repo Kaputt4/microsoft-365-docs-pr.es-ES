@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Obtenga información sobre cómo los administradores pueden eliminar elementos de la carpeta Elementos recuperables de un usuario para un buzón Exchange Online, incluso si ese buzón está en retención legal.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e23c8628fc5985863c206bc3c7589e9cc4d2024
-ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
+ms.openlocfilehash: c1be368bb57e16f657d70b701d29265a6dbc1316
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889740"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063338"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
@@ -44,18 +44,20 @@ En este artículo se explica cómo los administradores pueden eliminar elementos
 [Paso 6: Revertir el buzón a su estado anterior](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
-> Los procedimientos descritos en este artículo darán como resultado la eliminación permanente (purgación) de datos de un buzón Exchange Online correo. Esto significa que los mensajes que elimina de la carpeta Elementos recuperables no se pueden recuperar y no estarán disponibles para la detección legal u otros fines de cumplimiento. Si desea eliminar mensajes de un buzón de correo que está en espera como parte de una retención por juicio, una retención In-Place, una retención de exhibición de documentos electrónicos o una directiva de retención creada en el centro de seguridad y cumplimiento, consulte con los departamentos legales o de administración de registros antes de quitar la retención. Es posible que la organización tenga una directiva que defina si un buzón de correo en espera o un incidente de derrame de datos tiene prioridad.
+> Los procedimientos descritos en este artículo darán como resultado la eliminación permanente (purgación) de datos de un buzón Exchange Online correo. Esto significa que los mensajes que elimina de la carpeta Elementos recuperables no se pueden recuperar y no estarán disponibles para la detección legal u otros fines de cumplimiento. Si desea eliminar mensajes de un buzón de correo que está en espera como parte de una retención por juicio, una retención In-Place, una retención de exhibición de documentos electrónicos o una directiva de retención creada en el Centro de cumplimiento de Microsoft 365, consulte con los departamentos legales o de administración de registros antes de quitar la suspensión. Es posible que la organización tenga una directiva que defina si un buzón de correo en espera o un incidente de derrame de datos tiene prioridad.
   
 ## <a name="before-you-delete-items"></a>Antes de eliminar elementos
 
 - Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](./assign-ediscovery-permissions.md).
 
+- Si un buzón está asignado a una directiva de retención de toda la organización, debe excluir el buzón de la directiva antes de poder eliminar elementos de la carpeta Elementos recuperables. Puede tardar hasta 24 horas en sincronizar el cambio de directiva y quitar el buzón de la directiva. Para obtener más información, vea "Directivas de retención de toda la organización" en la sección Quitar todas las retenciones del [buzón](#organization-wide-retention-policies) en este artículo.
+
+- No puede realizar este procedimiento para un buzón al que se haya asignado la configuración de retención con una directiva de retención bloqueada mediante el bloqueo de conservación. Esto se debe a que este bloqueo le impide quitar o excluir el buzón de correo de la directiva y deshabilitar el Asistente para carpetas administradas en el buzón. Para obtener más información acerca del bloqueo de directivas de retención, vea [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
+
 - El procedimiento descrito en este artículo no es compatible con buzones inactivos. Esto se debe a que no puede volver a aplicar una retención (o directiva de retención) a un buzón inactivo después de quitarla. Al quitar una retención de un buzón inactivo, se cambia a un buzón de correo normal eliminado temporalmente y se eliminará permanentemente de la organización después de que el Asistente para carpetas administradas lo procese.
 
-- No puede realizar este procedimiento para un buzón al que se haya asignado la configuración de retención con una directiva bloqueada mediante el bloqueo de conservación. Esto se debe a que este bloqueo le impide quitar o excluir el buzón de correo de la directiva y deshabilitar el Asistente para carpetas administradas en el buzón. Para obtener más información acerca del bloqueo de directivas de retención, vea [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
-
 - Si un buzón no está en espera (o no tiene habilitada la recuperación de un solo elemento), puede eliminar los elementos de la carpeta Elementos recuperables. Para obtener más información acerca de cómo hacerlo, vea Buscar y eliminar mensajes de correo electrónico [en la organización.](./search-for-and-delete-messages-in-your-organization.md)
-  
+
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Paso 1: Recopilar información sobre el buzón
 
 Este primer paso consiste en recopilar las propiedades seleccionadas del buzón de destino que afectarán a este procedimiento. Asegúrese de escribir esta configuración o guardarla en un archivo de texto porque cambiará algunas de estas propiedades y, a continuación, volverá a los valores originales del paso 6, después de eliminar elementos de la carpeta Elementos recuperables. Esta es una lista de las propiedades de buzón que necesita recopilar.
@@ -177,7 +179,7 @@ Realice los pasos siguientes en Exchange Online PowerShell.
 El último paso antes de poder eliminar elementos de la carpeta Elementos recuperables es quitar todas las retenciones (que identificó en el paso 1) colocadas en el buzón. Todas las retenciones deben quitarse para que los elementos no se conserven después de eliminarlos de la carpeta Elementos recuperables. Las secciones siguientes contienen información sobre cómo quitar diferentes tipos de retenciones en un buzón. Vea la [sección Más información](#more-information) para obtener sugerencias sobre cómo identificar la retención de tipos que se puede colocar en un buzón. Para obtener más información, [vea How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
   
 > [!CAUTION]
-> Como se ha indicado anteriormente, consulte con los departamentos legales o de administración de registros antes de quitar una retención de un buzón. 
+> Como se ha indicado anteriormente, consulte con los departamentos legales o de administración de registros antes de quitar una retención de un buzón.
   
 ### <a name="litigation-hold"></a>Retención por litigio
   
@@ -218,7 +220,10 @@ Las directivas de retención Exchange toda la organización, Teams de toda la or
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Después de identificar las directivas de retención de toda la organización, vaya a la página Retención de gobierno de información del Centro de cumplimiento de Microsoft 365, edite cada directiva de retención de toda la organización que identificó en el paso anterior y agregue el buzón a la lista de destinatarios  >   excluidos. Al hacerlo, se quitará el buzón del usuario de la directiva de retención. El cambio puede tardar hasta 24 horas.
+Después de identificar las directivas de retención de toda la organización, vaya a la página Retención de gobierno de información del Centro de cumplimiento de Microsoft 365, edite cada directiva de retención de toda la organización que identificó en el paso anterior y agregue el buzón a la lista de destinatarios  >   excluidos. Al hacerlo, se quitará el buzón del usuario de la directiva de retención.
+
+> [!IMPORTANT]
+> Después de excluir un buzón de una directiva de retención de toda la organización, puede tardar hasta 24 horas en sincronizar este cambio y quitar el buzón de la directiva.
 
 ### <a name="retention-labels"></a>Etiquetas de retención
 
@@ -230,7 +235,11 @@ Para ver el valor de la *propiedad ComplianceTagHoldApplied,* ejecute el siguien
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Después de identificar que un buzón está en espera porque se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar elementos etiquetados mediante la condición de búsqueda ComplianceTag. Para obtener más información, vea la sección "Condiciones de búsqueda" en Consultas de palabras clave y [condiciones de búsqueda para búsqueda de contenido.](keyword-queries-and-search-conditions.md#conditions-for-common-properties)
+Después de identificar que un buzón está en espera porque se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar elementos etiquetados mediante la condición **Etiqueta** de retención. Para más información, vea:
+
+- La sección "Uso de búsqueda de contenido para buscar todo el contenido con una etiqueta de retención específica" en Información sobre directivas de [retención y etiquetas de retención](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+
+- La sección "Condiciones de búsqueda" en [Consultas de palabras clave y condiciones de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
 
 Para obtener más información acerca de las etiquetas, vea [Learn about retention policies and retention labels](retention.md).
 
@@ -262,7 +271,7 @@ Si el valor de *la propiedad DelayHoldApplied* o *DelayReleaseHoldApplied* está
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -337,7 +346,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Paso 6: Revertir el buzón a su estado anterior
 
-El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Incluye lo siguiente:
+El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Esto incluye:
   
 - Cambiar el período de retención de elementos eliminados a su valor anterior. Como alternativa, puede dejar este conjunto en 30 días, el valor máximo en Exchange Online.
 
