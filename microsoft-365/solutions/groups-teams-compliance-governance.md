@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre las opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración.
-ms.openlocfilehash: acc32d6cff18e9535a29eeec773a5034480a3595
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ab840ea5652a13087ecc8d505391bac152ca1052
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207420"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063374"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración
 
@@ -126,7 +126,7 @@ Con Microsoft 365 Multi-Geo, puede aprovisionar y almacenar datos en reposo en l
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
