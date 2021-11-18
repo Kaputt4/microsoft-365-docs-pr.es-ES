@@ -17,18 +17,31 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: 6233cd278e3ca5c445361ae4f50c33d8d00c6b94
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c8e17caca15386199725627042c9d382641bfca2
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701604"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072265"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
 
 ## <a name="november-2021"></a>Noviembre de 2021
+
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Integración de confianza cero para la plantilla Base de protección de datos
+
+Zero Trust es un enfoque proactivo e integrado de la seguridad en todas las capas del estado digital que comprueba de forma explícita y continua todas las transacciones, establece privilegios mínimos y se basa en la inteligencia, la detección avanzada y la respuesta en tiempo real a las amenazas. La plantilla Línea base de protección de datos del Administrador de cumplimiento, incluida para todos los usuarios, ahora integra 57 nuevos controles y 36 nuevas acciones para la confianza cero alineadas en las siguientes familias de controles:
+
+- Aplicación de confianza cero
+- Guía de desarrollo de aplicaciones de confianza cero
+- Extremo de confianza cero
+- Datos de confianza cero
+- Identidad de confianza cero
+- Infraestructura de confianza cero
+- Red de confianza cero
+- Visibilidad de confianza cero, automatización y orquestación
 
 ### <a name="new-assessment-templates"></a>Nuevas plantillas de evaluación
 
@@ -85,7 +98,7 @@ Consulte la lista completa de plantillas [de evaluación](compliance-manager-tem
 
 El Administrador de cumplimiento ya está disponible para los clientes del DoD del gobierno de Estados Unidos, además de los clientes Community (GCC) moderados y GCC high.
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 
 ### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: d9608db071f347b16b36ca3e749012d8a9955ac0
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: de4fb39219674c23b35672d6d12a8b124e748866
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063477"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072812"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Soluciones de riesgos internos en Microsoft 365
 
@@ -79,11 +79,10 @@ Las barreras de información permiten restringir la comunicación y la colaborac
 Las barreras de información están disponibles en las siguientes suscripciones:
 
 - Microsoft 365 E5/A5 (versión de pago o de prueba)
-- Office 365 Enterprise de E5 (versión de pago o de prueba)
-- Office 365 A5 suscripción (versión de pago o de prueba)
+- Office 365 E5/A5/A3/A1 (versión de pago o de prueba)
 - Cumplimiento avanzado de Office 365 complemento (ya no está disponible para las nuevas suscripciones)
-- Microsoft 365 E3/A3 + el complemento de cumplimiento Microsoft 365 E5/A5
-- Microsoft 365 E3/A3 + el complemento Microsoft 365 E5/A5 Insider Risk Management
+- Microsoft 365 E3/A3/A1 + el complemento de cumplimiento Microsoft 365 E5/A5
+- Microsoft 365 E3/A3/A1 + el complemento Microsoft 365 E5/A5 Insider Risk Management
 
 ### <a name="privileged-access-management"></a>Administración del acceso con privilegios
 

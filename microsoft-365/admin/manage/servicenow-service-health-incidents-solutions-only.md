@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: 7b1ebccb60500d0f1b2c6513be55d8f04628b6ac
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: b2676c05a4ee7767b40356852d32398f2d2c04a3
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754226"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071431"
 ---
 # <a name="microsoft-365-support-integration-for-service-health-incidents-and-recommended-solutions-only"></a>Microsoft 365 la integración de soporte técnico para incidentes de mantenimiento del servicio y soluciones recomendadas solamente
 
@@ -32,7 +32,7 @@ Esta configuración no permite crear un caso con soporte técnico de Microsoft a
 
 Estos requisitos previos son necesarios para configurar la **Microsoft 365 integración de compatibilidad**.
 
-1. \[AAD Administrador \] Cree AAD aplicación de salida en el espacio empresarial Microsoft 365 cliente.
+1. \[AAD administrador \] Cree AAD de salida en el espacio empresarial Microsoft 365 cliente.
 
     1. Inicie sesión en Azure Portal con las Microsoft 365 de inquilino y cree una nueva aplicación en la [página Registros de aplicaciones.](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
 
@@ -123,7 +123,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
-1. \[Microsoft 365 Administrador de \] inquilinos Complete la integración.
+1. \[Microsoft 365 de inquilinos \] Complete la integración.
 
     Compruebe que la información siguiente es correcta. NO seleccione **Siguiente** en este momento.
 
@@ -137,7 +137,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-1. En la **pestaña Repositorios,** seleccione **Agregar un** repositorio para crear un nuevo repositorio con la siguiente configuración:
+1. En la **pestaña Repositorios,** **seleccione Nuevo repositorio y** actualícelo con la siguiente configuración:
 
     - Repositorio: el valor **de id. de** repositorio del paso 6: completar la integración.
 

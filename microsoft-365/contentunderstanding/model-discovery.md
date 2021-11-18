@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo poner el modelo entrenado a disposición de otros usuarios y cómo aplicar otros modelos entrenados en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 528071efaf06c68d42b34f6d7e509a1839f6ca08
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo hacer que los modelos formados estén disponibles para otros usuarios y cómo aplicar otros modelos formados en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 9645b669c6fd419e8866d415cb5d2b0da56ab0e2
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201006"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072442"
 ---
 # <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Publicación y detección de modelos en Microsoft SharePoint Syntex
 
@@ -39,7 +39,7 @@ Para que el modelo entrenado esté disponible para que otros usuarios lo usen:
 
 3. En este punto, el panel **Seleccionar los sitios donde está disponible este modelo** será diferente en función de si es administrador o no. 
 
-    Si es administrador, verá esta vista.
+    Si es un administrador SharePoint, verá esta vista.
 
     ![Captura de pantalla del panel Seleccionar los sitios donde está disponible este modelo que muestra las opciones de dónde desea que el modelo esté disponible para otros usuarios.](../media/content-understanding/select-sites.png)
 
@@ -47,7 +47,7 @@ Para que el modelo entrenado esté disponible para que otros usuarios lo usen:
     - **Todos los sitios**: el modelo estará disponible en la galería de tipo de contenido para que lo usen otros usuarios.
     - **Solo sitios seleccionados**: puede elegir el sitio o los sitios en los que el modelo estará disponible. Haga clic en el cuadro de texto para buscar y elegir los sitios a los que desea aplicar el modelo. Solo verá los sitios a los que tiene acceso.
 
-    Si *no* es un administrador, verá esta vista.
+    Si no *es un* administrador SharePoint, verá esta vista.
 
     ![Captura de pantalla del panel Seleccionar los sitios donde está disponible este modelo que muestra las opciones para los usuarios finales con solo algunos sitios disponibles.](../media/content-understanding/select-site-user.png)
 

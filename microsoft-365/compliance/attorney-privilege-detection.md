@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el modelo de detección de privilegios abogado-cliente para usar la detección basada en aprendizaje automático del contenido con privilegios al revisar el contenido en un Advanced eDiscovery caso.
-ms.openlocfilehash: 4e15f0366da8d860a0e907b82ed4668d7e4d7af4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31520faef70f58fb2ac623645a50f2fa30336077
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179468"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071487"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurar la detección de privilegios de abogado-cliente en Advanced eDiscovery
 
@@ -57,31 +57,31 @@ Para habilitar el modelo de detección de privilegios abogado-cliente, la organi
 
 Una persona que sea administrador de exhibición de documentos electrónicos en su organización (miembro del subgrupo administrador de exhibición de documentos electrónicos en el grupo de roles administrador de exhibición de documentos electrónicos) debe hacer que el modelo esté disponible en los Advanced eDiscovery casos.
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a **eDiscovery > Advanced**.
+1. En el Centro de cumplimiento de Microsoft 365, vaya [a Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764)y, a continuación, haga clic **en Advanced eDiscovery configuración**.
 
-2. En la **Advanced eDiscovery** principal, en el icono **Configuración,** haga clic **en Configurar la configuración de análisis global.**
+   ![Seleccionar Advanced eDiscovery configuración](..\media\HistoricalVersions1.png)
 
-   ![Seleccione "Configurar características experimentales".](../media/AeDExperimentalFeatures.png)
+2. En la **Configuración,** seleccione la pestaña **Análisis** y, a continuación, active la opción Detección de privilegios **abogado-cliente.**
 
-3. En la **pestaña Configuración de Analytics,** seleccione **Administrar la configuración de privilegios abogado-cliente**.
+   ![Haga clic en alternar para activar la detección de privilegios abogado-cliente](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
-4. En la página de control flotante **Secreto profesional entre abogado y cliente**, use el botón de alternancia para habilitar la característica y, después, seleccione **Guardar**.
+3. Haga clic en **Guardar** para guardar el cambio.
 
 ### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Paso 2: Upload una lista de abogados (opcional)
 
-Para aprovechar al máximo el modelo de detección de privilegios abogado-cliente y usar los resultados de la detección de Has **Attorney** o **Potentially Privileged** que se describió anteriormente, se recomienda cargar una lista de direcciones de correo electrónico para los abogados y el personal legal que trabajan para su organización. 
+Para aprovechar al máximo el modelo de detección de privilegios abogado-cliente y usar los resultados de la detección de Has **Attorney** o **Potentially Privileged** que se describió anteriormente, se recomienda cargar una lista de direcciones de correo electrónico para los abogados y el personal legal que trabajan para su organización.
 
 Para cargar una lista de abogados para su uso por el modelo de detección de privilegios abogado-cliente:
 
 1. Cree un archivo .csv (sin una fila de encabezado) y agregue la dirección de correo electrónico de cada usuario adecuado en una línea independiente. Guarde este archivo en su equipo local.
 
-2. En la **Advanced eDiscovery** principal, en el icono **Configuración,** seleccione Configurar características **experimentales** y, a continuación, seleccione Administrar la configuración de privilegios de **abogado-cliente**.
+2. En la Advanced eDiscovery **Configuración,** seleccione la **pestaña** Análisis.
 
    Se **muestra la página** Privilegios de abogado-cliente y se activa la alternancia de detección de privilegios **abogado-cliente.**
 
    ![Página desplegable de privilegios abogado-cliente.](../media/AeDUploadAttorneyList.png)
 
-3. Seleccione **Examinar** y, a continuación, busque y seleccione .csv archivo que creó en el paso 1.
+3. Seleccione **Elegir archivo y,** a continuación, busque y seleccione .csv archivo que creó en el paso 1.
 
 4. Seleccione **Guardar para** cargar la lista de abogados.
 
@@ -94,7 +94,7 @@ Siga los pasos de esta sección para usar la detección de privilegios de abogad
 Una de las formas principales de ver los resultados de la detección de secreto profesional entre abogado y cliente en el proceso de revisión es mediante un grupo de etiquetas inteligentes. Un grupo de etiquetas inteligentes indica los resultados de la detección de secreto profesional entre abogado y cliente y muestra los resultados en línea junto a las etiquetas de un grupo de etiquetas inteligentes. Esto le permite identificar rápidamente documentos con privilegios potenciales durante la revisión de documentos. Además, también puede usar las etiquetas del grupo de etiquetas inteligentes para etiquetar documentos como secretos o no secretos. Para obtener más información acerca de las etiquetas inteligentes, vea [Configurar etiquetas inteligentes en Advanced eDiscovery](smart-tags.md).
 
 1. En el conjunto de revisión que contiene los documentos analizados en el paso 1, seleccione Administrar conjunto de **revisión** y, a continuación, **seleccione Administrar etiquetas**.
- 
+
 2. En **Etiquetas**, seleccione la lista desplegable situada junto **a Agregar grupo** y, a continuación, seleccione Agregar grupo de **etiquetas inteligentes.**
 
    ![Seleccione "Agregar grupo de etiquetas inteligentes".](../media/AeDCreateSmartTag.png)
@@ -109,7 +109,7 @@ Una de las formas principales de ver los resultados de la detección de secreto 
 
 ### <a name="step-2-analyze-a-review-set"></a>Paso 2: Analizar un conjunto de revisión
 
-Al analizar los documentos de un conjunto de revisión, también se ejecutará el modelo de detección de privilegios abogado-cliente y se agregarán las propiedades correspondientes (descritas en ¿Cómo funciona? a todos los documentos del conjunto de [revisión.](#how-does-it-work) Para obtener más información acerca del análisis de datos en el conjunto de revisión, vea Analizar datos en un conjunto de [revisión en Advanced eDiscovery](analyzing-data-in-review-set.md).
+Al analizar los documentos de un conjunto de revisión, también se ejecutará el modelo de detección de privilegios de abogado-cliente y se agregarán las propiedades correspondientes (descritas en [¿Cómo funciona?](#how-does-it-work)) a todos los documentos del conjunto de revisión. Para obtener más información acerca del análisis de datos en el conjunto de revisión, vea Analizar datos en un conjunto de [revisión en Advanced eDiscovery](analyzing-data-in-review-set.md).
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Paso 3: Usar el grupo de etiquetas inteligentes para revisar el contenido con privilegios
 

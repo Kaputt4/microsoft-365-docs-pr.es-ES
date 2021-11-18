@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc507bfbfdcb090e61f688def0ee6a7a3922652d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 3de4e7a468280914854c7cc0b7f68a9cb7965632
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963364"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072664"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -44,7 +44,7 @@ Use la directiva _de entrega avanzada_ en Microsoft 365 para evitar que se filtr
 - [AIR y la agrupación en clústeres en Defender para Office 365](office-365-air.md) omite estos mensajes.
 - Específicamente para simulaciones de suplantación de identidad de terceros:
   - [Los envíos de](admin-submission.md) administrador generan una respuesta automática que indica que el mensaje forma parte de una campaña de simulación de suplantación de identidad (phishing) y no es una amenaza real. Las alertas y AIR no se desencadenarán. La experiencia de envíos de administrador mostrará estos mensajes como una amenaza simulada.
-  - Cuando un usuario informa de un mensaje de simulación de suplantación de identidad [(phishing)](enable-the-report-message-add-in.md)mediante el complemento Report Phishing para Outlook , el sistema no generará una alerta, investigación o incidente. El mensaje también se mostrará en la pestaña Mensajes notificados por el usuario de la página envíos.
+  - Cuando un usuario informa de un mensaje de simulación de suplantación de identidad (phishing) mediante los complementos Report Message o [Report Phishing](enable-the-report-message-add-in.md), el sistema no generará una alerta, investigación o incidente. Los vínculos o archivos no se detonarán, pero  el mensaje también aparecerá en la pestaña Mensajes notificados por el usuario de la **página Envíos.**
   - [Caja fuerte vínculos](safe-links.md) en Defender para Office 365 no bloquea ni detona las direcciones URL identificadas específicamente en estos mensajes en el momento de hacer clic. Las direcciones URL aún están ajustadas, pero no están bloqueadas.
   - [Caja fuerte datos adjuntos en Defender para Office 365](safe-attachments.md) no detonan datos adjuntos en estos mensajes.
 

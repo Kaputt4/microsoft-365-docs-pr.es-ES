@@ -1,5 +1,5 @@
 ---
-title: Configurar Microsoft 365 la integración de compatibilidad con AAD token de OAuth
+title: Configuración de la integración de compatibilidad de Microsoft 365 con el token de OAuth de AAD
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,20 +17,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: b32f2e4edea590a6002e1568b5a65a2d8c71f703
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: da241452f989ba5f682fd3219e3f3baabf623138
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662169"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071455"
 ---
-# <a name="configure-microsoft-365-support-integration-with-aad-oauth-token"></a>Configurar Microsoft 365 la integración de compatibilidad con AAD token de OAuth
+# <a name="configure-microsoft-365-support-integration-with-aad-oauth-token"></a>Configuración de la integración de compatibilidad de Microsoft 365 con el token de OAuth de AAD
 
 ## <a name="prerequisites-aad-oauth-token"></a>Requisitos previos (AAD token de OAuth)
 
 Estos requisitos previos son necesarios para configurar la Microsoft 365 la integración de soporte técnico.
 
-1. \[AAD Administrador \] Cree AAD aplicación de salida en el espacio empresarial Microsoft 365 cliente.
+1. \[AAD administrador \] Cree AAD de salida en el espacio empresarial Microsoft 365 cliente.
 
     1. Inicie sesión en Azure Portal con las Microsoft 365 de inquilino y vaya a la página Registros [de](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) aplicaciones para crear una nueva aplicación.
 
@@ -44,7 +44,7 @@ Estos requisitos previos son necesarios para configurar la Microsoft 365 la inte
 
 1. Obtenga el identificador de cliente de aplicación y cree un secreto de cliente y obtenga ese valor.
 
-1. \[AAD Administrador \] Cree una aplicación AAD para la API de Rest en su Microsoft 365 inquilino.
+1. \[AAD administrador \] Cree una aplicación AAD para la API de Rest en su Microsoft 365 inquilino.
 
     1. Inicie sesión en [Azure Portal con](https://portal.azure.com/) sus Microsoft 365 de inquilino y vaya a la página Registros de aplicaciones para crear una nueva aplicación.
 
@@ -54,7 +54,7 @@ Estos requisitos previos son necesarios para configurar la Microsoft 365 la inte
 
 1. Obtenga el identificador de cliente de aplicación y cree un secreto de cliente y obtenga ese valor.
 
-1. \[AAD Administrador \] Cree una aplicación AAD para el usuario de reposo en su Microsoft 365 inquilino.
+1. \[AAD administrador \] Cree una aplicación AAD para el usuario de reposo en su Microsoft 365 inquilino.
 
     1. Inicie sesión en [Azure Portal con](https://portal.azure.com/) sus Microsoft 365 de inquilino y vaya a la página Registros de aplicaciones para crear una nueva aplicación.
 
@@ -212,7 +212,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
-1. \[Microsoft 365 Administrador de \] inquilinos Complete la integración.
+1. \[Microsoft 365 de inquilinos \] Complete la integración.
 
     Compruebe que la información siguiente es correcta. NO seleccione **Siguiente** en este momento.
 
@@ -226,7 +226,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-1. En la **pestaña Repositorios,** seleccione **Agregar un** repositorio para crear un nuevo repositorio con esta configuración:
+1. En la **pestaña Repositorios,** **seleccione Nuevo repositorio y** actualícelo con la siguiente configuración:
 
     - Repositorio: el valor **del id. de** repositorio del "Paso 6: completar la integración".
 

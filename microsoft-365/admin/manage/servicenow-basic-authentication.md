@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: bd19e5fd72e2b21c7ec08e00497444475701817c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3e33deb09628d6b09da79ecf92c9837d7bdad32c
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754258"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071467"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>Configurar la integración de soporte técnico con ServiceNow: autenticación básica
 
@@ -30,7 +30,7 @@ ms.locfileid: "60754258"
 
 Estos requisitos previos son necesarios para configurar la **Microsoft 365 integración de compatibilidad**.
 
-1. \[AAD Admin \] Create AAD Application under your Microsoft 365 tenant.
+1. \[AAD administrador \] Cree AAD aplicación en el espacio empresarial Microsoft 365 usuario.
 
     1. Inicie sesión en Azure Portal con las Microsoft 365 de inquilino y vaya a la página Registros [de](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) aplicaciones para crear una nueva aplicación.
 
@@ -168,7 +168,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
-1. \[Microsoft 365 Administrador de \] inquilinos Complete la integración.
+1. \[Microsoft 365 de inquilinos \] Complete la integración.
 
     Compruebe que la información siguiente es correcta. NO seleccione **Siguiente** en este momento.
 
@@ -182,7 +182,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
-1. En la **pestaña Repositorios,** seleccione **Agregar un** repositorio para crear un nuevo repositorio con esta configuración:
+1. En la **pestaña Repositorios,** **seleccione Nuevo repositorio y** actualícelo con la siguiente configuración:
 
     - Repositorio: el valor **de id. de** repositorio del paso 6: completar la integración.
 

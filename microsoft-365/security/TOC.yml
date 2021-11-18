@@ -8,8 +8,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security para BDM
           href: Microsoft-365-security-for-bdm.md
-        - name: Recomendaciones de seguridad para cuentas de prioridad
-          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Configuraciones de acceso a dispositivos e identidades
       items:
         - name: Información general

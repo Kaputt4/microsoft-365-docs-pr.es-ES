@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2c9ecbc07a5523d16d8e3e328f787a11b0c7679b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: ee9ddb26736ba52b5ddade576d7587f5883931ab
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063398"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072706"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -52,7 +52,7 @@ Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar el cump
 
 ## <a name="recommended-actions-preview"></a>Acciones recomendadas (versión preliminar)
 
-Las acciones recomendadas pueden ayudar a su organización a empezar con las capacidades de cumplimiento de comunicaciones y sacar el máximo partido de las directivas existentes. Incluidas en la **página Directivas,** las acciones recomendadas proporcionan información y resumen tipos de información confidencial y actividades de contenido inadecuadas en las comunicaciones de la organización. Estos conocimientos no incluyen ninguna información de identificación personal (PII) para los usuarios de su organización.
+Las acciones recomendadas pueden ayudar a su organización a empezar con las capacidades de cumplimiento de comunicaciones y sacar el máximo partido de las directivas existentes. Incluidas en la **página Directivas,** las acciones recomendadas proporcionan información y resumen tipos de información confidencial y actividades de contenido inadecuadas en las comunicaciones de la organización. Ideas la clasificación de [](data-classification-overview.md) datos y la aplicación de etiquetas de confidencialidad, etiquetas de retención y clasificación de tipos de información confidencial. Estos conocimientos no incluyen ninguna información de identificación personal (PII) para los usuarios de su organización.
 
 ![Acciones recomendadas de cumplimiento de comunicaciones.](../media/communication-compliance-recommended-actions.png)
 
@@ -287,7 +287,7 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta está correctamente resuelta.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de completar estos pasos para crear la primera directiva de cumplimiento de comunicaciones, empezará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 5 de este artículo.
 
