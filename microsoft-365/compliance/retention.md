@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: a284ec91151028e30af414b85c4fff66658c23e9
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 387dc9074808c6ee463b2402e98358d77cf1d24b
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950598"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064056"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -582,6 +582,10 @@ Si actualmente usa esas características más antiguas, estas seguirán funciona
     - Una directiva de archivo para [buzones de archivo](enable-archive-mailboxes.md) para mover automáticamente los correos electrónicos del buzón principal de un usuario a su buzón de archivo después de un período de tiempo especificado. Una directiva de archivo (con cualquier configuración) se puede usar junto con una directiva de retención de Microsoft 365 que se aplica al buzón principal y de archivo de un usuario.
     
     - Directivas de retención aplicadas por un administrador a carpetas específicas dentro de un buzón. Una directiva de retención de Microsoft 365 se aplica a todas las carpetas del buzón. Sin embargo, un administrador puede configurar diferentes opciones de retención mediante etiquetas de retención que un usuario puede aplicar a las carpetas de Outlook como una [etiqueta de retención predeterminada](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+- [Retención por juicio](create-a-litigation-hold.md) (solo retención)
+    
+   Aunque aún se admiten retenciones por juicio, se recomienda usar retención de Microsoft 365 o retención de eDiscovery, [según corresponda](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds). 
 
 **Características anteriores de SharePoint y OneDrive:**
 

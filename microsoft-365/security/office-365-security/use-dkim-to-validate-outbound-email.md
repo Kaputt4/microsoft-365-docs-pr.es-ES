@@ -17,15 +17,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1906d9bbb7e36c95ed74c7eea2b66d3afb70e5a3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9e2ae9e71764895cd87deefad1e01aacf965dcf7
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555529"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064528"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -235,7 +236,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Para habilitar la firma DKIM para el dominio personalizado en el portal de Microsoft 365 Defender
 
-1. Abra el portal de Microsoft 365 Defender [con su cuenta profesional o educativa](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender </a>con su cuenta profesional o educativa.
 
 2. Vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **DKIM** en la sección **Reglas**. O bien, para ir directamente a la página de DKIM, use <https://security.microsoft.com/dkimv2>.
 
@@ -335,7 +336,7 @@ Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después 
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>Comportamiento predeterminado para DKIM y Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Si no habilita DKIM, Microsoft 365 crea automáticamente una clave pública DKIM de 1024 bits para su dirección de enrutamiento de correo electrónico en línea de Microsoft (MOERA) / dominio inicial y la clave privada asociada que almacenamos internamente en nuestro centro de datos. De forma predeterminada, Microsoft 365 usa una configuración de firma predeterminada para los dominios que no tienen una política establecida. Esto significa que si no configura DKIM usted mismo, Microsoft 365 usará su política predeterminada y las claves que crea para habilitar DKIM para su dominio.
+Si no habilita DKIM, Microsoft 365 crea automáticamente una clave pública DKIM de 2048 bits para el dominio de dirección de enrutamiento de correo en Microsoft Online (MOERA)/inicial y la clave privada asociada que se almacena internamente en nuestro centro de datos. De forma predeterminada, Microsoft 365 usa una configuración de firmas predeterminada para los dominios que no tienen una directiva local. Esto significa que si no configura DKIM, Microsoft 365 usará su política predeterminada y se creará la clave para habilitar DKIM para el dominio.
 
 Además, si deshabilita la firma DKIM en el dominio personalizado después de habilitarlo, después de un período de tiempo, Microsoft 365 aplicará automáticamente la directiva de dominio inicial o MOERA para el dominio personalizado.
 
@@ -402,11 +403,11 @@ A continuación, consulte [**Usar DMARC para validar el correo electrónico**](u
 **Esta prueba validará** que la configuración de firma DKIM se ha configurado correctamente y que se han publicado las entradas DNS adecuadas.
 
 <div class="nextstepaction">
-<p><a href="https://aka.ms/diagdkim" data-linktype="external">Ejecutar pruebas: DKIM</a></p>
+<p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Ejecutar pruebas: DKIM</a></p>
 </div>
 
 ## <a name="more-information"></a>Más información
 
 Rotación de clave mediante PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Usar DMARC para validar el correo electrónico](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Usar DMARC para validar el correo electrónico](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)

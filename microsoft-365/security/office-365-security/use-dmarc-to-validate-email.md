@@ -18,12 +18,12 @@ ms.collection:
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 242c0e7573c9f5c61ba23b8a99ed27793ea58019
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f80d4521f8d5faf3b126db93b9ad9d3397a12d73
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208954"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064300"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -87,10 +87,10 @@ Al igual que los registros DNS para SPF, el registro para DMARC es un registro d
 El registro TXT de DMARC de Microsoft es algo así:
 
 ```console
-_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
+_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.contoso.com; fo=1"
 ```
 
-Microsoft envía sus informes DMARC a [Agari](https://agari.com), un tercero. Agari recoge y analiza los informes de la DMARC. Visite el [catálogo de MISA](https://www.microsoft.com/misapartnercatalog) para ver más proveedores que ofrecen informes DMARC para Microsoft 365.
+Para ver más proveedores que ofrecen informes DMARC para Microsoft 365, visite el [catálogo de MISA](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365).
 
 ## <a name="set-up-dmarc-for-inbound-mail"></a>Configurar DMARC para el correo entrante
 
@@ -181,13 +181,14 @@ Ejemplos:
 Una vez que formule el registro, debe actualizarlo en el registrador del dominio.
 
 ## <a name="dmarc-mail-public-preview-feature"></a>Correo electrónico de DMARC (característica en vista previa pública)
-> [!CAUTION]
-> Es posible que los correos no se envíen a diario y que el informe en sí cambie durante la versión preliminar pública.  Pueden esperarse correos electrónicos del informe agregado DMARC de las cuentas de consumidores (como hotmail.com, outlook.com o live.com).
 
-En este ejemplo de registro TXT de DMARC **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** puede ver la dirección *rua*, en este caso procesada por una empresa tercera (Agari). Esta dirección se usa para enviar "comentarios agregados" para su análisis y para generar un informe.
+> [!CAUTION]
+> Es posible que los correos no se envíen a diario y que el informe en sí cambie durante la versión preliminar pública. Pueden esperarse correos electrónicos del informe agregado DMARC de las cuentas de consumidores (como hotmail.com, outlook.com o live.com).
+
+En este ejemplo de registro TXT de DMARC: `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"`, puede ver la dirección *rua*, en este caso, procesada por la empresa Agrari de terceros. Esta dirección se usa para enviar "comentarios agregados" para su análisis y para generar un informe.
 
 > [!TIP]
-> Visite el [catálogo de MISA](https://www.microsoft.com/misapartnercatalog) para ver más proveedores que ofrecen informes DMARC para Microsoft 365. Vea [Domain-based Message Authentication, Reporting, and Conformance (DMARC) de IETF.org](https://datatracker.ietf.org/doc/html/rfc7489) para obtener más información sobre las direcciones "rua" de DMARC.
+> Para ver más proveedores que ofrecen informes DMARC para Microsoft 365, visite el [catálogo de MISA](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365). Para obtener más información acerca de las direcciones 'rua' DMARC, vea [RFC 74890](https://datatracker.ietf.org/doc/html/rfc7489).
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Procedimientos recomendados para la implementación de DMARC en Microsoft 365
 
