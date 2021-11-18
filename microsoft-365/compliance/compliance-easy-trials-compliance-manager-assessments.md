@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Acerca de las pruebas de evaluación premium del Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 3ef0cbf795c434018d049998744fe76aa222fbe2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ec7dec74e8f90b13bd68eb8a6e13917d9fe18b0d
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677174"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61063302"
 ---
 # <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>Acerca de la prueba gratuita para las evaluaciones premium del Administrador de cumplimiento de Microsoft
 
@@ -38,6 +38,9 @@ Para obtener una prueba, puede registrarse en el Centro de cumplimiento de Micro
 Esta prueba de evaluación premium está disponible para las organizaciones que usan el Administrador de cumplimiento con una licencia comercial. Para obtener información de GCC y DOD y opciones de prueba, vea [Trabajar con plantillas del Administrador de cumplimiento](compliance-manager-templates.md).
 
 El acceso total a las características del Administrador de cumplimiento puede depender de su contrato de licencia para el Administrador de cumplimiento. Para obtener más información sobre la prueba de cumplimiento gratuita que incluye el Administrador de cumplimiento, consulte [Acerca de la prueba gratuita para el Cumplimiento de Microsoft 365](compliance-easy-trials.md).
+
+> [!NOTE]
+> Compruebe la configuración del Centro de administración de Microsoft 365 para facilitar la inscripción en la prueba. En el Centro de administración de Microsoft 365, vaya a la página **Configuración > Configuración de organización > Servicios** y seleccione **Aplicaciones y servicios de propiedad del usuario**. A continuación, active la casilla para permitir que los usuarios inicien pruebas en nombre de su organización. Cuando la instalación finalice en unos dos minutos, puede volver atrás y desactivar la casilla para deshabilitar esta configuración. También puede iniciar la prueba sin ajustar la configuración de la organización yendo a la página **Facturación > Servicios de compra** y buscando la prueba de evaluación premium del Administrador de cumplimiento.
 
 ## <a name="template-licensing"></a>Licencias de plantilla
 
