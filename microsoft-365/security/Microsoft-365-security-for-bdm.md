@@ -1,5 +1,6 @@
 ---
-title: Microsoft 365 Seguridad para los responsables de la toma de decisiones empresariales (BDMs)
+title: Microsoft 365 Security for Business Decision Makers (BDMs)
+description: Los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos Microsoft 365 y las acciones recomendadas para mitigar estos riesgos.
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -14,15 +15,14 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos Microsoft 365 y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: cf98b2ca568c03bd81c81309ee6752465a9059c8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 065250c9e3d926251b8c3d543b66f6bf51e99f58
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178532"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111020"
 ---
-# <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Seguridad para los responsables de la toma de decisiones empresariales (BDMs)
+# <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
 En este artículo se analizan algunos de los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos de Microsoft 365 y las acciones recomendadas para mitigar estos riesgos. Aunque Microsoft 365 viene con una amplia variedad de características de seguridad preconfiguradas, también requiere que usted como cliente aseste la responsabilidad de proteger sus propias identidades, datos y dispositivos usados para acceder a los servicios en la nube. Esta guía fue desarrollada por Kozeta Beam (Microsoft Cloud Security Architect) y Thiagaraj Sundararajan (Consultor sénior de Microsoft).
 
@@ -43,7 +43,7 @@ Como primer paso, se recomienda garantizar que las cuentas críticas del entorno
 |Recomendación  |E3 |E5  |
 |---------|---------|---------|
 |Exigir la autenticación multifactor (MFA) para todas las cuentas administrativas.|![marca de verificación verde.](../media/green-check-mark.png)|![marca de verificación verde.](../media/green-check-mark.png)| 
-|Implemente Azure Active Directory (Azure AD) Privileged Identity Management (PIM) para aplicar acceso con privilegios justo a tiempo a los recursos de Azure AD y Azure. También puede descubrir quién tiene acceso y revisar el acceso con privilegios.|         | ![marca de verificación verde.](../media/green-check-mark.png)|
+|Implemente Azure Active Directory (Azure AD) Privileged Identity Management (PIM) para aplicar acceso con privilegios justo a tiempo a Azure AD y recursos de Azure. También puede descubrir quién tiene acceso y revisar el acceso con privilegios.|         | ![marca de verificación verde.](../media/green-check-mark.png)|
 |Implemente la administración de acceso con privilegios para administrar el control de acceso granular sobre las tareas de administración con privilegios en Office 365. |         | ![marca de verificación verde.](../media/green-check-mark.png)|
 |Configurar y usar estaciones de trabajo de acceso con privilegios (PAW) para administrar servicios. No use las mismas estaciones de trabajo para navegar por Internet y comprobar el correo electrónico no relacionado con su cuenta administrativa.|  ![marca de verificación verde.](../media/green-check-mark.png)|![marca de verificación verde.](../media/green-check-mark.png) | 
 
@@ -76,7 +76,7 @@ Entre las amenazas conocidas se incluyen malware, cuentas comprometidas y suplan
 |**Aumentar el nivel de protección contra malware en el correo**. El Office 365 o Microsoft 365 incluye protección contra malware, pero puede aumentar esta protección bloqueando los datos adjuntos con tipos de archivo que se usan habitualmente para malware.|![marca de verificación verde.](../media/green-check-mark.png)|![marca de verificación verde.](../media/green-check-mark.png)|
 |**Proteger el correo electrónico de ataques de suplantación de identidad dirigidos**. Si ha configurado uno o varios dominios personalizados para su entorno Office 365 o Microsoft 365, puede configurar la protección contra suplantación de identidad dirigida. La protección contra phishing, que forma parte de Defender para Office 365, puede ayudar a proteger su organización de ataques de suplantación de identidad malintencionados y otros ataques de suplantación de identidad. Si no ha configurado un dominio personalizado, no es necesario hacerlo.| |![marca de verificación verde.](../media/green-check-mark.png)|
 |**Proteger contra ataques de ransomware en el correo electrónico**. Ransomware quita el acceso a los datos mediante el cifrado de archivos o el bloqueo de pantallas del equipo. A continuación, intenta extorsionar dinero a las víctimas pidiéndoles "rescate", normalmente en forma de criptodivisas como Bitcoin, a cambio de devolver el acceso a sus datos. Puede ayudar a defenderse contra ransomware creando una o más reglas de flujo de correo para bloquear las extensiones de archivo que se usan habitualmente para ransomware, o para advertir a los usuarios que reciben estos datos adjuntos en el correo electrónico.|![marca de verificación verde.](../media/green-check-mark.png)|![marca de verificación verde.](../media/green-check-mark.png)|
-|**Bloquear conexiones de países con los que no haga negocios.** Cree una directiva de acceso condicional de Azure AD para bloquear las conexiones procedentes de estos países, creando de forma eficaz un firewall geográfico alrededor del inquilino.| |![marca de verificación verde.](../media/green-check-mark.png)|
+|**Bloquear conexiones de países con los que no haga negocios.** Cree una Azure AD de acceso condicional para bloquear las conexiones procedentes de estos países, creando de forma eficaz un firewall geográfico alrededor del inquilino.| |![marca de verificación verde.](../media/green-check-mark.png)|
 
 En el siguiente diagrama se ilustran estas funcionalidades.
 ![Funcionalidades recomendadas para proteger contra amenazas conocidas.](../media/m365-security-bdm-illustrations-known-threats.png)
@@ -90,7 +90,7 @@ Después de agregar protecciones adicionales a sus cuentas con privilegios y pro
 |---------|---------|---------|
 |**Configurar Microsoft Defender para Office 365**:<br>* Caja fuerte adjuntos<br>* Caja fuerte links<br>* Microsoft Defender para endpoint para SharePoint, OneDrive y Microsoft Teams<br>* Anti-phishing in Defender for Office 365 protection|         |![marca de verificación verde.](../media/green-check-mark.png) |
 |**Configurar Microsoft Defender para las capacidades de punto de conexión:**<br>* Antivirus de Windows Defender <br>* Protección contra vulnerabilidades <br> * Reducción de superficie de ataque <br> * Aislamiento basado en hardware <br>* Acceso controlado a carpetas     |         |![marca de verificación verde.](../media/green-check-mark.png) |
-|**Usa Microsoft Cloud App Security** para detectar aplicaciones SaaS y empezar a usar análisis de comportamiento y detección de anomalías. |         |![marca de verificación verde.](../media/green-check-mark.png) |
+|**Usa Microsoft Defender para aplicaciones en** la nube para descubrir aplicaciones SaaS y empezar a usar análisis de comportamiento y detección de anomalías. |         |![marca de verificación verde.](../media/green-check-mark.png) |
 
 En el siguiente diagrama se ilustran estas funcionalidades.
 ![Funcionalidades recomendadas para proteger contra amenazas desconocidas.](../media/m365-security-bdm-illustrations-unknown-threats.png)
@@ -122,7 +122,7 @@ Microsoft 365 de protección de la información pueden ayudarle a descubrir qué
 |**Deshabilitar el uso compartido de calendario externo anónimo.** De forma predeterminada, se permite el uso compartido de calendario anónimo externo. [Deshabilitar el uso compartido de](/exchange/sharing/sharing-policies/modify-a-sharing-policy) calendarios para reducir posibles pérdidas de información confidencial.|![marca de verificación verde.](../media/green-check-mark.png) |![marca de verificación verde.](../media/green-check-mark.png)|
 |**Configurar directivas de prevención de pérdida de datos para datos confidenciales**. Cree una directiva de prevención de pérdida de datos en el Centro de cumplimiento de seguridad para detectar y proteger datos confidenciales, como números de tarjeta de crédito, números de seguridad social y &amp; números de cuenta bancaria. Microsoft 365 incluye muchos tipos de información confidencial predefinidos que puede usar en las directivas de prevención de pérdida de datos. También puede crear sus propios tipos de información confidencial para datos confidenciales personalizados para su entorno. |![marca de verificación verde.](../media/green-check-mark.png)|![marca de verificación verde.](../media/green-check-mark.png)|
 |**Implementar directivas de clasificación de datos y protección de la información**. Implemente etiquetas de confidencialidad y úselas para clasificar y aplicar protección a datos confidenciales. También puede usar estas etiquetas en directivas de prevención de pérdida de datos. Si usa etiquetas de Azure Information Protection, le recomendamos que evite crear nuevas etiquetas en otros centros de administración.|         |![marca de verificación verde.](../media/green-check-mark.png)|
-|**Proteja los datos de servicios y aplicaciones de** terceros mediante Cloud App Security . Configure Cloud App Security directivas para proteger la información confidencial en aplicaciones en la nube de terceros, como Salesforce, Box o Dropbox. Puedes usar tipos de información confidencial y las etiquetas de confidencialidad que creaste en Cloud App Security directivas y aplicarlos en tus aplicaciones SaaS. <br><br>Microsoft Cloud App Security permite aplicar una amplia gama de procesos automatizados. Las directivas se pueden establecer para proporcionar exámenes de cumplimiento continuo, tareas legales de exhibición de documentos electrónicos, DLP para contenido confidencial compartido públicamente y mucho más. Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 20 filtros de metadatos (por ejemplo, nivel de acceso, tipo de archivo). |         |![marca de verificación verde.](../media/green-check-mark.png)|
+|**Proteger los datos de servicios y aplicaciones de terceros mediante Defender para aplicaciones en la nube.** Configure las directivas de Defender for Cloud Apps para proteger la información confidencial en aplicaciones en la nube de terceros, como Salesforce, Box o Dropbox. Puedes usar tipos de información confidencial y las etiquetas de confidencialidad que creaste en las directivas de Defender para Aplicaciones en la nube y aplicarlos en tus aplicaciones SaaS. <br><br>Microsoft Defender para aplicaciones en la nube te permite aplicar una amplia variedad de procesos automatizados. Las directivas se pueden establecer para proporcionar exámenes de cumplimiento continuo, tareas legales de exhibición de documentos electrónicos, DLP para contenido confidencial compartido públicamente y mucho más. Defender para aplicaciones en la nube puede supervisar cualquier tipo de archivo en función de más de 20 filtros de metadatos (por ejemplo, nivel de acceso, tipo de archivo). |         |![marca de verificación verde.](../media/green-check-mark.png)|
 |**Use [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview) para identificar si los usuarios almacenan** información confidencial en sus Windows dispositivos . |         |![marca de verificación verde.](../media/green-check-mark.png)|
 |**Use [AIP Scanner para](/azure/information-protection/deploy-aip-scanner) identificar y clasificar información entre servidores y recursos compartidos de archivos.** Use la herramienta de informes AIP para ver los resultados y realizar las acciones adecuadas.|         |![marca de verificación verde.](../media/green-check-mark.png)|
 
@@ -131,8 +131,7 @@ En el siguiente diagrama se ilustran estas funcionalidades.
 
 ## <a name="continuous-monitoring-and-auditing"></a>Supervisión y auditoría continuas
 
-Por último, pero no menos importante, la supervisión continua y la auditoría del entorno de Microsoft 365 junto con el Windows y los dispositivos es fundamental para asegurarse de que es capaz de detectar y corregir rápidamente cualquier intrusión. Herramientas como Puntuación segura, Centro de seguridad y análisis avanzado de Microsoft Intelligent Graph proporcionan información valiosa en su inquilino y vinculan grandes cantidades de datos de seguridad y inteligencia de amenazas para proporcionarle una protección y detección de amenazas sin igual.
-
+Por último, pero no menos importante, la supervisión continua y la auditoría del entorno de Microsoft 365 junto con el Windows y los dispositivos es fundamental para asegurarse de que es capaz de detectar y corregir rápidamente cualquier intrusión. Herramientas como puntuación segura, portal de Microsoft 365 Defender y análisis avanzados de Microsoft Intelligent Graph proporcionan información valiosa en su inquilino y vinculan grandes cantidades de datos de seguridad y inteligencia de amenazas para proporcionarle una protección y detección de amenazas sin igual.
 
 |Recomendación |E3 |E5 |
 |---------|---------|---------|
@@ -140,15 +139,16 @@ Por último, pero no menos importante, la supervisión continua y la auditoría 
 |**Revisar Puntuación segura semanalmente:** puntuación segura es una ubicación central para obtener acceso al estado de seguridad de su empresa y realizar acciones en función de las recomendaciones de puntuación segura. Se recomienda realizar esta comprobación semanalmente.|![marca de verificación verde.](../media/green-check-mark.png)|![marca de verificación verde.](../media/green-check-mark.png)|
 |Use **Microsoft Defender para Office 365** herramientas:<br>* Capacidades de investigación y respuesta de amenazas<br> * Investigación y respuesta automatizadas |         |![marca de verificación verde.](../media/green-check-mark.png)|
 |Usar **Microsoft Defender para endpoint**:<br> *    [Detección y respuesta de puntos de conexión](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> * Investigación automatizada y corrección Puntuación segura <br>*    [Búsqueda avanzada](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![marca de verificación verde.](../media/green-check-mark.png)|
-|Use **Microsoft Cloud App Security** para detectar comportamientos inusuales en aplicaciones en la nube para identificar ransomware, usuarios comprometidos o aplicaciones no fiables, analizar el uso de alto riesgo y corregir automáticamente para limitar el riesgo para su organización.|         |![marca de verificación verde.](../media/green-check-mark.png)|
-|Usa **Microsoft Azure Sentinel** o la herramienta SIEM actual para supervisar las amenazas en todo el entorno. |         |![marca de verificación verde](../media/green-check-mark.png)|
+|Usa **Microsoft Defender** para aplicaciones en la nube para detectar comportamientos inusuales en aplicaciones en la nube para identificar ransomware, usuarios comprometidos o aplicaciones no fiables, analizar el uso de alto riesgo y corregir automáticamente para limitar el riesgo para la organización.|         |![marca de verificación verde.](../media/green-check-mark.png)|
+|Usa **Microsoft Sentinel o** la herramienta SIEM actual para supervisar las amenazas en todo el entorno. |         |![marca de verificación verde](../media/green-check-mark.png)|
 |**Implemente [Microsoft Defender for Identity para](/azure-advanced-threat-protection/what-is-atp)** supervisar y proteger contra amenazas dirigidas a su entorno local de Active Directory.   |         |![marca de verificación verde](../media/green-check-mark.png) |
-|Use **Azure Defender** _ para supervisar las amenazas en cargas de trabajo híbridas y en la nube. Azure Defender_ incluye un nivel gratuito de funcionalidades y un nivel estándar de funcionalidades que se pagan en función de las horas de recursos o las transacciones.|         |         |
+|Use **Microsoft Defender para la nube para** supervisar las amenazas en cargas de trabajo híbridas y en la nube. Microsoft Defender para la nube incluye un nivel gratuito de capacidades y un nivel estándar de funcionalidades que se pagan en función de las horas de recursos o las transacciones.|         |         |
 
 En el siguiente diagrama se ilustran estas funcionalidades.
 ![Funcionalidades recomendadas para supervisión y auditoría continua.](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
 
 Principales acciones de supervisión recomendadas:
-- **Revisar Puntuación segura de Microsoft** semanalmente: la puntuación segura es una ubicación central para obtener acceso al estado de seguridad de su inquilino y realizar acciones en función de las recomendaciones principales. Se recomienda realizar esta comprobación semanalmente. Puntuación segura incluye recomendaciones de Azure AD, Intune, Cloud App Security y Microsoft Defender para endpoint, así como Office 365. 
-- **Revisar inicios de sesión arriesgados semanalmente:** use el Centro de administración de Azure AD para revisar los inicios de sesión arriesgados semanalmente. El conjunto de reglas de acceso a dispositivos y identidades recomendados incluye una directiva para aplicar el cambio de contraseña en los inicios de sesión arriesgados.  
+
+- **Revisar Puntuación segura de Microsoft** semanalmente: la puntuación segura es una ubicación central para obtener acceso al estado de seguridad de su inquilino y realizar acciones en función de las recomendaciones principales. Se recomienda realizar esta comprobación semanalmente. Puntuación segura incluye recomendaciones de Azure AD, Intune, Defender para aplicaciones en la nube y Microsoft Defender para endpoint, así como Office 365.
+- **Revisar inicios de sesión arriesgados** semanalmente: use el centro Azure AD administración para revisar los inicios de sesión arriesgados semanalmente. El conjunto de reglas de acceso a dispositivos y identidades recomendados incluye una directiva para aplicar el cambio de contraseña en los inicios de sesión arriesgados.  
 - Revisar los principales usuarios de malware y phished semanalmente: use Microsoft Defender para el Explorador de amenazas de Office 365 para revisar los principales usuarios dirigidos con malware y **phishing** y para averiguar la causa raíz de por qué estos usuarios se ven afectados.

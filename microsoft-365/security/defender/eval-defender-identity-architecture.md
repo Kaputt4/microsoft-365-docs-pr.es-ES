@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2a3e2949cd05a72c949bad4a55c10fcb84b1f4f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc85703d5dd8db92f3f3e58b618907e34b3616af
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198090"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111716"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Revisar los requisitos de arquitectura y los conceptos clave para Microsoft Defender for Identity
 
@@ -40,7 +40,7 @@ Antes de habilitar Microsoft Defender for Identity, asegúrese de comprender la 
 
 Microsoft Defender for Identity usa aprendizaje automático y análisis de comportamiento para identificar ataques en toda la red local, junto con la detección y prevención proactiva de riesgos de inicio de sesión de usuario asociados con identidades de nube. Para obtener más información, consulta [¿Qué es Microsoft Defender para Identity?](/defender-for-identity/what-is)
 
-Defender for Identity protege los usuarios locales de Active Directory o los usuarios sincronizados con su Azure Active Directory (Azure AD). Para proteger un entorno integrado solo por usuarios de Azure AD, consulte [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+Defender for Identity protege los usuarios locales de Active Directory o los usuarios sincronizados con su Azure Active Directory (Azure AD). Para proteger un entorno integrado solo por Azure AD usuarios, consulte [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ## <a name="understand-the-architecture"></a>Información sobre la arquitectura
 
@@ -59,7 +59,7 @@ Los sensores de Defender for Identity se pueden instalar directamente en los sig
 - Controladores de dominio: el sensor supervisa directamente el tráfico del controlador de dominio, sin la necesidad de un servidor dedicado o la configuración de la creación de reflejos de puertos.
 - AD FS: el sensor supervisa directamente el tráfico de red y los eventos de autenticación.
 
-Para obtener una visión más profunda de la arquitectura de Defender for Identity, incluida la integración con Cloud App Security, vea [Microsoft Defender for Identity architecture](/defender-for-identity/architecture).
+Para obtener una visión más profunda de la arquitectura de Defender for Identity, incluida la integración con Defender para aplicaciones en la [nube,](/defender-for-identity/architecture)consulta Arquitectura de Microsoft Defender para identidades.
 
 
 ## <a name="understand-key-concepts"></a>Comprender conceptos clave
@@ -77,7 +77,7 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 | Informes    | Los informes de Defender for Identity le permiten programar o generar y descargar inmediatamente informes que proporcionan información de estado del sistema y de la entidad.  Puede crear informes sobre el estado del sistema, las alertas de seguridad y las posibles rutas de movimiento lateral detectadas en el entorno.   | [Microsoft Defender para informes de identidad ](/defender-for-identity/reports)       |
 | Grupos de funciones    | Defender for Identity ofrece grupos basados en roles y acceso delegado para proteger los datos según las necesidades específicas de seguridad y cumplimiento de su organización, que incluye administradores, usuarios y visores.        |  [Grupos de roles de Microsoft Defender for Identity](/defender-for-identity/role-groups)       |
 | Portal administrativo    |  Además del portal de Microsoft 365 Defender, la cabina del portal Defender for Identity se usa para supervisar y responder a actividades sospechosas.      | [Trabajo con el portal de Microsoft Defender for Identity](/defender-for-identity/workspace-portal)        |
-| Microsoft Cloud App Security integración   | Microsoft Cloud App Security se integra con Microsoft Defender for Identity para proporcionar análisis de comportamiento de entidades de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como local.   | Integración de Microsoft Defender para identidades  |
+| Integración de Microsoft Defender para Aplicaciones en la nube   | Microsoft Defender para aplicaciones en la nube se integra con Microsoft Defender for Identity para proporcionar análisis de comportamiento de entidades de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como local.   | Integración de Microsoft Defender para identidades  |
 | | | |
 
 
@@ -86,7 +86,7 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 Defender for Identity requiere algunos requisitos previos para garantizar que la identidad local y los componentes de red cumplan los requisitos mínimos. Use este artículo como una lista de comprobación para asegurarse de que el entorno está listo: [requisitos previos](/defender-for-identity/prerequisites)de Microsoft Defender para la identidad .
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Paso 2 de 3: [Habilitar el entorno de evaluación Defender for Identity](eval-defender-identity-enable-eval.md)
 

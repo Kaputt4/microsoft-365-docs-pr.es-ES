@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a6af3ff71cf6f64fbc548ceb3b333cdf135c70dc
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b98145834eebee80a69846474b3395f90eac7fa6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554557"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111275"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -34,11 +34,11 @@ Antivirus de Microsoft Defender está disponible en las siguientes ediciones o v
 
 - Windows Server 2022
 - Windows Server 2019
-- Windows Servidor, versión 1803 o posterior
+- Windows server, versión 1803 o posterior
 - Windows Server 2016
 - Windows Server 2012 R2 (requiere Microsoft Defender para endpoint)
 
-En algunos casos, Antivirus de Microsoft Defender se conoce como *Endpoint Protection*; sin embargo, el motor de protección es el mismo. Aunque la funcionalidad, la configuración y la administración son en gran medida las mismas para Antivirus de Microsoft Defender en [Windows 10](microsoft-defender-antivirus-windows.md) y Windows 11, hay algunas diferencias clave en Windows Server:
+En algunos casos, Antivirus de Microsoft Defender se conoce *como Endpoint Protection*; sin embargo, el motor de protección es el mismo. Aunque la funcionalidad, la configuración y la administración son en gran medida las mismas para Antivirus de Microsoft Defender en [Windows 10](microsoft-defender-antivirus-windows.md) y Windows 11, hay algunas diferencias clave en Windows Server:
 
 - En Windows server, [las exclusiones automáticas](configure-server-exclusions-microsoft-defender-antivirus.md) se aplican en función del rol de servidor definido.
 
@@ -81,7 +81,7 @@ Si la GUI no está instalada en el servidor y desea instalarla, el Asistente par
 
 El siguiente cmdlet de PowerShell habilitará la interfaz:
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
@@ -144,7 +144,7 @@ De forma predeterminada, Windows Update no descarga e instala actualizaciones au
 Para garantizar que se mantiene la protección contra malware, se recomienda habilitar los siguientes servicios:
 
 - Informe de errores de Windows servicio
-- Windows Actualizar servicio
+- Windows update service
 
 En la tabla siguiente se enumeran los servicios Antivirus de Microsoft Defender y los servicios dependientes.
 
@@ -153,10 +153,10 @@ En la tabla siguiente se enumeran los servicios Antivirus de Microsoft Defender 
 
 | Nombre del servicio | Ubicación del archivo | Descripción |
 |---|---|---|
-| Windows Defender Servicio (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Este es el servicio Antivirus de Microsoft Defender principal que debe ejecutarse en todo momento.|
-| Informe de errores de Windows Servicio (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | Este servicio devuelve informes de error a Microsoft. |
-| Windows Defender Firewall (MpsSvc) | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Se recomienda dejar el servicio Windows Defender firewall habilitado. |
-| Windows Actualización (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows La actualización es necesaria para obtener actualizaciones de inteligencia de seguridad y actualizaciones del motor antimalware |
+| Windows Defender (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Este es el servicio Antivirus de Microsoft Defender principal que debe ejecutarse en todo momento.|
+| Informe de errores de Windows (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | Este servicio devuelve informes de error a Microsoft. |
+| Windows Defender firewall (MpsSvc) | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Se recomienda dejar el servicio Windows Defender firewall habilitado. |
+| Windows (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows update es necesario para obtener actualizaciones de inteligencia de seguridad y actualizaciones del motor antimalware |
 
 ## <a name="submit-samples"></a>Enviar ejemplos
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 53eed34cfff6d2318b87e781b32a9963c372b279
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 575df186af15628ec4d7d4162d100ea0d1974146
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667391"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111404"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para las características de Endpoint en Android
 
@@ -91,15 +91,14 @@ Usa los siguientes pasos para habilitar **la evaluación de** vulnerabilidades d
 Defender for Endpoint admite la evaluación de vulnerabilidad de las aplicaciones en el perfil de trabajo. Sin embargo, en caso de que desee desactivar esta característica para usuarios dirigidos, puede seguir los siguientes pasos:
 
 1. En [Microsoft Endpoint Manager centro de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración de **aplicaciones**  >  **Agregar**  >    >  **dispositivos administrados.**
-2. Asigne un nombre a la directiva; **Plataforma > Android Enterprise**; seleccione el tipo de perfil.
+2. Asigne un nombre a la directiva; **Plataforma > Android Enterprise;** seleccione el tipo de perfil.
 3. Selecciona **Microsoft Defender para Endpoint** como la aplicación de destino.
 4. En Configuración, seleccione **Usar** diseñador de configuraciones y agregue **DefenderTVMPrivacyMode** como clave y tipo de valor como **Integer**
-   - Para deshabilitar la vulnerabilidad de las aplicaciones en el perfil de trabajo, escriba el valor como 1 y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en 0.
-   - Para los usuarios con clave establecida como "0", Defender enviará la lista de aplicaciones desde el perfil de trabajo al servicio back-end para la evaluación de vulnerabilidades.
+   - Para deshabilitar la vulnerabilidad de las aplicaciones en el perfil de trabajo, escriba el valor como `1` y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en `0` .
+   - Para los usuarios con el conjunto de claves como , Defender para endpoint enviará la lista de aplicaciones desde el perfil de trabajo al servicio `0` back-end para la evaluación de vulnerabilidades.
 5. Haz **clic en Siguiente** y asigna este perfil a dispositivos o usuarios dirigidos.
 
 Activar o desactivar los controles de privacidad anteriores no afectará a la comprobación de cumplimiento del dispositivo ni al acceso condicional.
-
 
 ## <a name="configure-privacy-for-malware-threat-report"></a>Configurar la privacidad para el informe de amenazas de malware
 

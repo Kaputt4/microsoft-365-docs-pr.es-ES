@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fcfce563a177dd90e312da2da3bc578ec39b15b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a81a83e3e915c4294bd0947bbd989b321fea11ed
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152051"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111584"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -61,7 +61,7 @@ Microsoft Defender para endpoint requiere una de las siguientes ofertas de licen
 
 Microsoft Defender para endpoint para servidores requiere una de las siguientes opciones de licencia:
 
-- [Centro de seguridad de Azure con Azure Defender habilitado](/azure/security-center/security-center-pricing)
+- [Microsoft Defender para la nube con características de seguridad mejoradas habilitadas](/azure/security-center/enable-enhanced-security)
 - Microsoft Defender para endpoint for Server (uno por servidor cubierto)
 
 > [!NOTE]
@@ -107,7 +107,7 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
-  - Windows Servidor, versión 1803 o posterior
+  - Windows server, versión 1803 o posterior
   - Windows Server 2019
   - Windows Server 2022
 - Windows Virtual Desktop
@@ -211,7 +211,7 @@ Si está incorporando servidores y Antivirus de Microsoft Defender no es el anti
 > [!NOTE]
 > La directiva de grupo normal no se aplica a la Protección contra alteraciones y los cambios en la configuración Antivirus de Microsoft Defender se omitirán cuando esté la protección contra alteraciones.
 
-## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Antivirus de Microsoft Defender El controlador antimalware de inicio anticipado (ELAM) está habilitado
+## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Antivirus de Microsoft Defender controlador antimalware de inicio anticipado (ELAM) está habilitado
 
 Si está ejecutando el Antivirus de Microsoft Defender como el producto antimalware principal en sus dispositivos, el agente de Defender for Endpoint se incorporará correctamente.
 

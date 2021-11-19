@@ -1,5 +1,5 @@
 ---
-title: Usar entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
+title: Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos
-ms.openlocfilehash: c1ee219594cc5406fc559ab9e9a489b1d6285af6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: eec82365e6fb4af4b6ca23896addd491637ec022
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662140"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110816"
 ---
-# <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Usar entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
+# <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
 
 > [!IMPORTANT]
 > La característica de entidades con nombre se está implementando y aparecerá en el espacio empresarial cuando esté disponible. Compruebe si están en el explorador de contenido y en el flujo de creación de directivas de prevención de pérdida de datos (DLP). 
@@ -69,7 +69,7 @@ Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar 
 
 
 - La exhibición de documentos electrónicos de **Microsoft 3655** admite el uso de entidades con nombre en los servicios de substrate.
-- **Microsoft Cloud App Security (MCAS)** admite el uso de entidades con nombre en directivas MCAS.
+- **Microsoft Defender para Aplicaciones en la** nube admite el uso de entidades con nombre en las directivas de Defender para Aplicaciones en la nube.
 - **Insider Risk Management** admite el uso de entidades con nombre en los servicios de Substrate.
 - **El cumplimiento** de la comunicación no admite el uso de entidades con nombre en Exchange de transporte y datos en reposo.
 - **Microsoft Information Governance** (MIG) no admite el uso de entidades con nombre en Exchange de transporte y datos en reposo.
@@ -78,30 +78,30 @@ Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar 
 
 |Carga de trabajo/servicios  |Compatibilidad con vista previa pública para entidades con nombre  |
 |---------|---------|
-|Office Sugerencia de directiva de clientes de Win32    |no compatible  |
-|Office Sugerencia de directiva de clientes WAC    |compatible         |
+|Office de directiva de clientes de Win32    |no compatible  |
+|Office directiva de clientes WAC    |compatible         |
 |Sugerencia de directiva de OWA     |no compatible         |
 |Outlook de directiva     |no compatible |
 |Puntos de conexión (Windows 10 dispositivos)     |no compatible  |
-|Exchange Reglas de transporte     |no compatible |
+|Exchange de transporte     |no compatible |
 |OneDrive para la Empresa datos en reposo     |compatible         |
-|SharePoint Datos en línea en reposo     |compatible         |
+|SharePoint Online data-at-rest     |compatible         |
 |Teams datos en reposo     |compatible         |
 |Mensajes de correo electrónico datos en reposo     |no compatible         |
-|Microsoft Cloud App Security (MCAS)     |compatible         |
+|Microsoft Defender for Cloud Apps     |compatible         |
 
 ### <a name="autolabeling"></a>Autolabeling
 
 |Carga de trabajo/servicios |Compatibilidad con vista previa pública para entidades con nombre  |
 |---------|---------|
-|Office Clientes de Win32 sin conexión   |compatible, el usuario debe seleccionar etiqueta y aplicar manualmente |
+|Office clientes de Win32 sin conexión   |compatible, el usuario debe seleccionar etiqueta y aplicar manualmente |
 |Online Office clientes de Win32 en línea|compatible con un esquema de confianza antiguo |
 |Outlook en línea   |compatible con un esquema de confianza antiguo  |
-|Office Cliente WAC     |compatible |
+|Office cliente WAC     |compatible |
 |OWA     |compatible |
 |Exchange transporte     |no compatible |
 |OneDrive para la Empresa datos en reposo     |compatible |
-|SharePoint Datos en línea en reposo|compatible|
+|SharePoint Online data-at-rest|compatible|
 |Escáner de Azure Information Protection (AIP)|no compatible|
 
 ## <a name="known-issues"></a>Problemas conocidos

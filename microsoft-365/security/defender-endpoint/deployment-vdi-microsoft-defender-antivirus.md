@@ -15,12 +15,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 23ac32508338771b46ccd30b520da53a471be81a
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 30328a651c5473f4a3d2bcee6244eb39087cb4a6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882086"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110216"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -32,7 +32,7 @@ Además de las configuraciones de hardware o locales estándar, también puede u
 
 Consulte [Documentación de Azure Virtual Desktop](/azure/virtual-desktop) para obtener más información sobre Escritorio remoto de Microsoft servicios y compatibilidad con VDI.
 
-Para las máquinas virtuales basadas en Azure, [consulte Install Endpoint Protection in Azure Defender](/azure/security-center/security-center-install-endpoint-protection).
+Para las máquinas virtuales basadas en Azure, [vea Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
 
 Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDI, hemos acortado esta guía para centrarse en cómo puede obtener actualizaciones en sus máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
 

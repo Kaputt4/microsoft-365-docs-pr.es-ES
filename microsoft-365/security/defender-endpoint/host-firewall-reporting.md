@@ -1,6 +1,6 @@
 ---
 title: Informes de firewalls de host en Microsoft Defender para punto de conexión
-description: Host and view firewall reporting in Microsoft 365 security center.
+description: Hospedar y ver informes de firewall en Microsoft 365 Defender portal.
 keywords: Windows Defender, firewall
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,28 +15,29 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 4d06c974f5ccc01326bd574ac1ad1c3fbde00990
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 843a359459eef01d6c7aae35e924a462e537d34e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962547"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110192"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Si es administrador, ahora puede hospedar informes de firewall en Microsoft 365 [de seguridad](https://security.microsoft.com). Esta característica le permite ver Windows 10, Windows 11, Windows Server 2019 y Windows Server 2022 desde una ubicación centralizada.
+Si es administrador, ahora puede hospedar informes de firewall en el [portal Microsoft 365 Defender .](https://security.microsoft.com) Esta característica le permite ver Windows 10, Windows 11, Windows Server 2019 y Windows Server 2022 desde una ubicación centralizada.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Debe ejecutar Windows 10 o Windows 11 o Windows Server 2019 o Windows Server 2022.
 - Para incorporar dispositivos al servicio Microsoft Defender para endpoints, vea [aquí](onboard-configure.md).
-- Para <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de seguridad</a> para empezar a recibir  los datos, debe habilitar los eventos de auditoría para Windows Defender Firewall con seguridad avanzada:
+- Para <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">que Microsoft 365 Defender portal</a> comience a recibir los  datos, debe habilitar los eventos de auditoría para Windows Defender firewall con seguridad avanzada:
   - [Gota de paquetes de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Conexión de la plataforma de filtrado de auditoría](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Habilite estos eventos mediante el Editor de objetos de directiva de grupo, la directiva de seguridad local o auditpol.exe comandos. Para obtener más información, [vea aquí](/windows/win32/fwp/auditing-and-logging).
@@ -49,7 +50,7 @@ Si es administrador, ahora puede hospedar informes de firewall en Microsoft 365 
 > [!NOTE]
 > Asegúrate de seguir las instrucciones de la sección anterior y de configurar correctamente los dispositivos para la participación en la vista previa anticipada.
 
-- Después de habilitar los eventos, Microsoft 365 de seguridad empezará a supervisar los datos.
+- Después de habilitar los eventos, Microsoft 365 Defender empezará a supervisar los datos.
   - IP remota, puerto remoto, puerto local, IP local, nombre del equipo, proceso entre conexiones entrantes y salientes.
 - Los administradores ahora pueden ver Windows de firewall de host [aquí](https://security.microsoft.com/firewall).
   - Los informes adicionales se pueden facilitar descargando el [script de](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) informes personalizados para supervisar las Windows Defender de firewall mediante Power BI.
@@ -59,18 +60,18 @@ Si es administrador, ahora puede hospedar informes de firewall en Microsoft 365 
 
 Los siguientes escenarios se admiten durante Ring0 Preview.
 
-### <a name="firewall-reporting-in-security-center"></a>Informes de firewall en el centro de seguridad
+### <a name="firewall-reporting"></a>Informes de firewall
 
-Este es un par de ejemplos de las páginas de informe de firewall. Aquí encontrará un resumen de la actividad de entrada, salida y aplicación. Puede acceder a esta página directamente yendo a https://security.microsoft.com/firewall .
+Este es un par de ejemplos de las páginas de informe de firewall. Aquí encontrará un resumen de la actividad de entrada, salida y aplicación. Puede acceder a esta página directamente yendo a <https://security.microsoft.com/firewall> .
 
 > [!div class="mx-imgBorder"]
 > ![Página de informes de firewall de host.](\images\host-firewall-reporting-page.png)
 
-También se puede obtener acceso a estos informes yendo a **Informes** de dispositivos de informes de seguridad (sección) ubicados en la parte inferior de la tarjeta Conexiones entrantes \>  \>  **bloqueadas del firewall.**
+También se puede obtener acceso a estos informes yendo a **Informes** de dispositivos de informes de seguridad (sección) ubicados en la parte inferior de la tarjeta Conexiones entrantes  >    >   **bloqueadas del firewall.**
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>De "Equipos con una conexión bloqueada" al dispositivo
 
-Las tarjetas admiten objetos interactivos. Puedes profundizar en la actividad de un dispositivo haciendo clic en el nombre del dispositivo, que se iniciará en una nueva pestaña, y te llevará directamente a la pestaña Escala https://securitycenter.microsoft.com **de tiempo del** dispositivo.
+Las tarjetas admiten objetos interactivos. Puedes profundizar en la actividad de un dispositivo haciendo clic en el nombre del dispositivo, que se iniciará en una nueva pestaña, y te llevará directamente a la pestaña Escala <https://securitycenter.microsoft.com> **de tiempo del** dispositivo.
 
 > [!div class="mx-imgBorder"]
 > ![Equipos con una conexión bloqueada.](\images\firewall-reporting-blocked-connection.png)

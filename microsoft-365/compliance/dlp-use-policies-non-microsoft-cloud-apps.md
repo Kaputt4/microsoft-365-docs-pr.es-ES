@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprende a usar directivas de dlp para aplicaciones en la nube que no son de Microsoft.
-ms.openlocfilehash: 503f112a598641733593cfbb37b231b1418b4b36
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: b374f9b85d41b6dd6a5281e17347dffd414361da
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792561"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109784"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft
 
-Las directivas de prevención de pérdida de datos (DLP) para aplicaciones en la nube que no son de Microsoft forman parte del conjunto Microsoft 365 de características dlp. con estas características, puede detectar y proteger elementos confidenciales en Microsoft 365 servicios. Para obtener más información acerca de todas las ofertas de DLP de Microsoft, vea [Learn about data loss prevention](dlp-learn-about-dlp.md).
+Las directivas de prevención de pérdida de datos (DLP) para aplicaciones en la nube que no son de Microsoft forman parte del conjunto de características dlp de Microsoft 365; con estas características, puede detectar y proteger elementos confidenciales en Microsoft 365 servicios. Para obtener más información acerca de todas las ofertas de DLP de Microsoft, vea [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
 Puedes usar directivas DLP en aplicaciones en la nube que no son de Microsoft para supervisar y detectar cuándo se usan y comparten elementos confidenciales a través de aplicaciones en la nube que no son de Microsoft. El uso de estas directivas le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, y ayuda a evitar comportamientos de riesgo que puedan ponerlas en peligro.
 
@@ -50,31 +50,31 @@ El usuario que crea la directiva DLP debe ser:
 - Administrador de cumplimiento: asignar en Azure AD
 - Administrador de datos de cumplimiento: asignar en Azure AD
 
-### <a name="prepare-your-cloud-app-security-environment"></a>Preparar el entorno Cloud App Security web
+### <a name="prepare-your-defender-for-cloud-apps-environment"></a>Preparar el entorno de Defender para Aplicaciones en la nube
 
-Las directivas DLP para aplicaciones en la nube que no son de Microsoft usan Cloud App Security dlp. Para usarlo, debe preparar el entorno Cloud App Security web. Para obtener instrucciones, consulta [Establecer acciones de visibilidad instantánea, protección](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)y gobierno para tus aplicaciones.
+Las directivas DLP para aplicaciones en la nube que no son de Microsoft usan las funcionalidades dlp de Defender para aplicaciones en la nube. Para usarlo, debes preparar el entorno de Defender para Aplicaciones en la nube. Para obtener instrucciones, consulta [Establecer acciones de visibilidad instantánea, protección](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)y gobierno para tus aplicaciones.
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>Conectar una aplicación en la nube que no es microsoft
 
-Para usar la directiva DLP en una aplicación en la nube específica que no sea Microsoft, la aplicación debe estar conectada a Cloud App Security. Para obtener información, consulte:
+Para usar la directiva DLP en una aplicación en la nube específica que no sea de Microsoft, la aplicación debe conectarse a Defender para aplicaciones en la nube. Para obtener información, consulte:
 
-- [Conectar Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
+- [Conectar box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [Conectar Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
 - [Conectar G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
 - [Conectar Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [Conectar Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
-Después de conectar las aplicaciones en la nube a Cloud App Security, puedes crear Microsoft 365 dlp para ellas.
+Después de conectar las aplicaciones en la nube a Defender para aplicaciones en la nube, puedes crear Microsoft 365 dlp para ellas.
 
 > [!NOTE]
-> También es posible usar Microsoft Cloud App Security para crear directivas DLP en aplicaciones en la nube de Microsoft. Sin embargo, se recomienda usar Microsoft 365 para crear y administrar directivas DLP en aplicaciones en la nube de Microsoft.
+> También es posible usar Microsoft Defender para aplicaciones en la nube para crear directivas DLP en aplicaciones en la nube de Microsoft. Sin embargo, se recomienda usar Microsoft 365 para crear y administrar directivas DLP en aplicaciones en la nube de Microsoft.
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Crear una directiva DLP en una aplicación en la nube que no es de Microsoft
 
-Cuando seleccione una ubicación para la directiva DLP, active la **Microsoft Cloud App Security** ubicación.
+Cuando seleccione una ubicación para la directiva DLP, active la ubicación de **Microsoft Defender para Aplicaciones en** la nube.
 
 - Para seleccionar una aplicación o instancia específica, seleccione **Elegir instancia**.
-- Si no selecciona una instancia, la directiva usa todas las aplicaciones conectadas en su Microsoft Cloud App Security inquilino.
+- Si no selecciona una instancia, la directiva usa todas las aplicaciones conectadas en el inquilino de Microsoft Defender para Aplicaciones en la nube.
 
    ![Ubicaciones para aplicar la directiva.](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 
@@ -89,7 +89,7 @@ Al crear una regla en la directiva DLP, puedes seleccionar una acción para apli
 ![Restringir aplicaciones de terceros.](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
-> Las directivas DLP aplicadas a aplicaciones que no son de Microsoft usan Microsoft Cloud App Security. Cuando se crea la directiva DLP para una aplicación que no es de Microsoft, la misma directiva se creará automáticamente en Microsoft Cloud App Security.
+> Las directivas DLP aplicadas a aplicaciones que no son de Microsoft usan Microsoft Defender para aplicaciones en la nube. Cuando se crea la directiva DLP para una aplicación que no es de Microsoft, la misma directiva se creará automáticamente en Microsoft Defender para aplicaciones en la nube.
 
 Para obtener información sobre cómo crear y configurar directivas DLP, vea [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md).
 

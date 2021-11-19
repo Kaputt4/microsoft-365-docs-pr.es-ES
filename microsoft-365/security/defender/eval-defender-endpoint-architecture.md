@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e2cb2f915726289474826a3b4aa41da847152212
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9330a312bb00ca72e7a3fbc5e2e80f1521927b3f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154547"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111068"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Revisar los requisitos y conceptos clave de la arquitectura de puntos de conexión de Microsoft Defender
 
@@ -51,7 +51,7 @@ Llamada | Descripción
 1 | Los dispositivos se abordo a través de una de las herramientas de administración admitidas. 
 2 | Los dispositivos abordo proporcionan y responden a Microsoft Defender para los datos de señal de punto de conexión.
 3 | Los dispositivos administrados se unen o se inscriben en Azure Active Directory.
-4  | Los dispositivos Windows unidos al dominio se sincronizan con Azure Active Directory mediante Azure Active Directory Conectar.
+4 | Los dispositivos Windows unidos al dominio se sincronizan con Azure Active Directory mediante Azure Active Directory Conectar.
 5 | Las alertas, investigaciones y respuestas de Microsoft Defender para puntos de conexión se administran en Microsoft 365 Defender.
 
 ## <a name="understand-key-concepts"></a>Comprender conceptos clave
@@ -73,7 +73,7 @@ Para obtener información más detallada acerca de las funcionalidades incluidas
 
 ## <a name="siem-integration"></a>Integración de SIEM
 
-Puede integrar Microsoft Defender para Endpoint con Azure Sentinel para analizar más exhaustivamente los eventos de seguridad en toda la organización y crear libros de juegos para obtener una respuesta eficaz e inmediata. 
+Puedes integrar Microsoft Defender para Endpoint con Microsoft Sentinel para analizar más exhaustivamente los eventos de seguridad en toda la organización y crear libros de juegos para obtener una respuesta eficaz e inmediata. 
 
 Microsoft Defender para endpoint también se puede integrar en otras soluciones de administración de eventos y de información de seguridad (SIEM). Para obtener más información, vea [Enable SIEM integration in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/enable-siem-integration).
 

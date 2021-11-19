@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 022709bf47a52ae6a8763bf36df4e7e0d49c34cd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 64c8b486041bd73c7cd32f19facd4121e6e76a45
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668073"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111320"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -55,7 +55,7 @@ Implemente Defender para endpoint en iOS mediante Portal de empresa de Intune.
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager Centro de administración1.](images/ios-deploy-1.png)
 
-1. En la **página Agregar aplicación,** haga clic en **Buscar en la Tienda de** aplicaciones y escriba Punto de conexión de Microsoft **Defender** en la barra de búsqueda. En la sección resultados de búsqueda, haga clic en *Extremo de Microsoft Defender* y haga clic en **Seleccionar**.
+1. En la **página Agregar aplicación,** haga clic en Buscar en **la Tienda de** aplicaciones y escriba Microsoft Defender para **Endpoint** en la barra de búsqueda. En la sección resultados de búsqueda, haga clic en *Microsoft Defender para endpoint* y haga clic en **Seleccionar**.
 
 1. Seleccione **iOS 11.0** como sistema operativo Mínimo. Revisa el resto de información sobre la aplicación y haz clic en **Siguiente**.
 
@@ -128,7 +128,7 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
 1. En la *página Crear directiva de configuración de aplicaciones,* proporcione la siguiente información:
     - Nombre de directiva
     - Plataforma: seleccione iOS/iPadOS
-    - Aplicación dirigida: seleccione Punto de **conexión de Microsoft Defender** en la lista
+    - Aplicación dirigida: seleccione **Microsoft Defender para endpoint** en la lista
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager Admin Center5.](images/ios-deploy-5.png)
@@ -143,13 +143,13 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
 
 1. Haga **clic en** Siguiente para abrir la página **Etiquetas de ámbito.** Las etiquetas de ámbito son opcionales. Haga clic en **Siguiente** para continuar.
 
-1. En la **página Asignaciones,** seleccione los grupos que recibirán este perfil. Para este escenario, es mejor usar todos los dispositivos como **destino.** Para obtener más información sobre la asignación de perfiles, vea [Asignar perfiles de usuario y dispositivo.](/mem/intune/configuration/device-profile-assign)
+1. En la página **Asignaciones**, seleccione los grupos que recibirán este perfil. Para este escenario, es mejor usar todos los dispositivos como **destino.** Para obtener más información sobre la asignación de perfiles, vea [Asignación de perfiles de usuario y dispositivo](/mem/intune/configuration/device-profile-assign).
 
    Al implementar en grupos de usuarios, un usuario debe iniciar sesión en un dispositivo antes de que se aplique la directiva.
 
    Haga clic en **Siguiente**.
 
-1. En la **página Revisar y crear,** cuando haya terminado, elija **Crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
+1. Cuando haya terminado, en la página **Revisar y crear** elija **Crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

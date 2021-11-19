@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b00c631a3eeaddb4fa66fe6d58fd40418b188bec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e3f267218155b7aa503237aaa4e52e2e8637019d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552733"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110804"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurar el período de espera de bloqueo en la nube
 
@@ -47,7 +47,7 @@ Puede especificar el período de tiempo de espera de bloqueo de nube con una [di
 
 3. Seleccione (o cree) una directiva antivirus.
 
-4. En la **sección Configuración,** expanda **Protección de nube**. A continuación, en el cuadro Tiempo de espera extendido de la nube de **Defender en** segundos, especifique más tiempo, en segundos, de 1 segundo a 50 segundos. Lo que especifique se agrega al valor predeterminado de 10 segundos.
+4. En la **sección Configuración,** expanda **Protección de nube**. A continuación, **en el Antivirus de Microsoft Defender Tiempo** de espera extendido en segundos, especifique el tiempo más, en segundos, de 1 segundo a 50 segundos. Lo que especifique se agrega al valor predeterminado de 10 segundos.
 
 5. (Este paso es opcional) Realice cualquier otro cambio en la directiva de antivirus. (¿Necesita ayuda? Vea [Configuración para obtener Antivirus de Microsoft Defender directiva en Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 

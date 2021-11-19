@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 19a54dca079c8b43110d3140a9ad3543634086e3
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 971c8999f36dc2cdb282371a41c89f46b85ff278
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883214"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111356"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -36,7 +36,7 @@ ms.locfileid: "60883214"
 
 ## <a name="what-is-controlled-folder-access"></a>¿Qué es el acceso controlado a carpetas?
 
-El acceso controlado a carpetas ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas protege los datos comprobando las aplicaciones en una lista de aplicaciones conocidas y de confianza. Compatible con Windows Server 2019, Windows Server 2022, Windows 10 y Windows 11 clientes, el acceso controlado a carpetas se puede desactivar con la aplicación Seguridad de Windows, Microsoft Endpoint Configuration Manager o Intune (para dispositivos administrados).
+El acceso controlado a carpetas ayuda a proteger los datos valiosos de las amenazas y aplicaciones malintencionadas, como el ransomware. El acceso controlado a carpetas protege los datos comprobando las aplicaciones en una lista de aplicaciones conocidas y de confianza. Compatible con Windows Server 2019, Windows Server 2022, Windows 10 y Windows 11 clientes, el acceso controlado a carpetas se puede desactivar mediante la aplicación Seguridad de Windows, Microsoft Endpoint Configuration Manager o Intune (para dispositivos administrados).
 
 > [!NOTE]
 > Los motores de scripting no son de confianza y no se les puede permitir el acceso a carpetas protegidas controladas. Por ejemplo, PowerShell no es de confianza mediante el acceso controlado a carpetas, incluso si permite con indicadores de certificado [e archivo](/microsoft-365/security/defender-endpoint/indicator-certificates).
@@ -54,7 +54,7 @@ El acceso controlado a carpetas funciona con una lista de aplicaciones de confia
 
 Las aplicaciones se agregan a la lista en función de su prevalencia y reputación. Las aplicaciones que son muy frecuentes en toda la organización y que nunca han mostrado ningún comportamiento que se considere malintencionado se consideran confiables. Esas aplicaciones se agregan a la lista automáticamente.
 
-Las aplicaciones también se pueden agregar manualmente a la lista de confianza mediante Configuration Manager o Intune. Se pueden realizar acciones adicionales desde la consola del Centro de seguridad. 
+Las aplicaciones también se pueden agregar manualmente a la lista de confianza mediante Configuration Manager o Intune. Se pueden realizar acciones adicionales desde Microsoft 365 Defender portal. 
 
 ## <a name="why-controlled-folder-access-is-important"></a>Por qué es importante el acceso controlado a carpetas
 

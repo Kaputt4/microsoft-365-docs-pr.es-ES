@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b74a5e4861e068bca7c31465c4ba7c8f4169a983
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fb60dcf41a0190b92525cfaac2b5f7d5e39e128f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212921"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111176"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Enumerar vulnerabilidades por recomendación
 
@@ -45,7 +45,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
-Aplicación|Vulnerability.Read.All  |'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
+Aplicación|Vulnerability.Read.All|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
 Delegado (cuenta profesional o educativa)|Vulnerability.Read|'Leer información de recomendación de seguridad de administración de amenazas y vulnerabilidades'
 
 ## <a name="http-request"></a>Solicitud HTTP

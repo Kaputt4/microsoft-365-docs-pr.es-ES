@@ -19,19 +19,19 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 4b6bcadfa7f6bb51f48790460aeb0d034b1fbf65
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 41ab2a6a03c95e7e14ce1c66e5c85c113d2f6357
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156239"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110108"
 ---
 # <a name="microsoft-defender-for-endpoint-application-license-terms"></a>Términos de licencia de la aplicación de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-TÉRMINOS DE LICENCIA DE SOFTWARE DE MICROSOFT: MICROSOFT DEFENDER PARA ENDPOINT
+TÉRMINOS DE LICENCIA DE SOFTWARE DE MICROSOFT: Microsoft Defender para endpoint
 
 SI VIVE EN (O ES UNA EMPRESA CON UN LUGAR PRINCIPAL DE NEGOCIOS EN) LOS ESTADOS UNIDOS, LEA LA SECCIÓN "ARBITRAJE VINCULANTE Y RENUNCIA A LA ACCIÓN DE CLASE" A CONTINUACIÓN. AFECTA A LA FORMA EN QUE SE RESUELVEN LAS DISPUTAS.
 
@@ -73,7 +73,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     f) compartir, publicar, distribuir o arrendar el software, proporcionar el software como una oferta independiente para que otras personas usen o transferir el software o este contrato a terceros.
 
-1. **SUSCRIPCIÓN COMERCIAL DE MICROSOFT 365.**  El uso del software requiere una Microsoft 365 comercial. El acceso a los servicios proporcionados a través del software debe cumplir con los términos existentes para Microsoft 365 que se aplican a usted a través de su suscripción o la suscripción de su organización. Puede perder el acceso a esos servicios: i) si la suscripción de su organización o de Microsoft 365 expira; o ii) la organización decide finalizar la licencia para acceder a los servicios.
+1. **SUSCRIPCIÓN COMERCIAL DE MICROSOFT 365.**  El uso del software requiere una Microsoft 365 comercial. El acceso a los servicios proporcionados a través del software debe cumplir con los términos existentes para Microsoft 365 que se aplican a usted a través de su suscripción o la suscripción de su organización. Puede perder el acceso a esos servicios: i) si la suscripción Microsoft 365 de su organización expira; o ii) su organización decide finalizar la licencia para acceder a los servicios.
 
 1. **TRANSFER TO ANOTHER DEVICE.** Para los usuarios de Apple, puedes desinstalar el software e instalarlo en otro dispositivo para tu uso. You may not share this license on multiple devices.
 
@@ -124,4 +124,3 @@ Cette limitation concerne:
 
 Elle s’applique également, même si Microsoft connaissait ou devrait connaître l’éventualité d’un tel dommage. Si votre pays n’autorise pas l’exclusion ou la limitation de responsabilité pour les dommages indirects, accessoires ou de quelque nature que ce soit, il se peut que la limitation ou l’exclusion ci-dessus ne s’appliquera pas à votre égard.
 EFFET JURIDIQUE. Le présent contrat décrit certains droits juridiques. Vous pourriez avoir d’autres droits prévus par les lois de votre pays. Le présent contrat ne modifie pas les droits que vous confèrent les lois de votre pays si celles-ci ne le permettent pas.
-

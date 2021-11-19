@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: dd5a8d4db47eb0f26f7bdf7ef992fba18a6c3aa5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: b704a64e4428ede9af8992d22485a9d859ca4c98
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963196"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110120"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 
@@ -86,7 +86,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |Pestaña|Descripción|
 |---|---|
 |**Gráfico de investigación**|Proporciona una representación visual de la investigación. Muestra una lista de las entidades y enumera las amenazas encontradas, junto con las alertas y si hay acciones pendientes de aprobación. <p> Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos.|
-|**Alertas**|Muestra las alertas relacionadas con la investigación. Las alertas pueden proceder de características de protección frente a amenazas en el dispositivo de un usuario, en aplicaciones de Office, Cloud App Security y otras características de Microsoft 365 Defender.|
+|**Alertas**|Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Defender para aplicaciones en la nube y otras características Microsoft 365 Defender usuario.|
 |**Devices**|Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden al [nivel de automatización de los grupos de dispositivos](automation-levels.md)).)|
 |**Buzones**|Enumera los buzones que se verán afectados por las amenazas detectadas.|
 |**Users**|Enumera las cuentas de usuario afectadas por las amenazas detectadas.|
@@ -95,7 +95,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |**Log**|Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 |**Acciones pendientes**|Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( <https://security.microsoft.com/action-center> ) para aprobar acciones pendientes.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Revisar acciones de corrección tras una investigación automatizada](manage-auto-investigation.md)
 - [Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión](view-incidents-queue.md)

@@ -14,23 +14,24 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5c4936906ba830a660c38b76c7aaf5598ba7724c
-ms.sourcegitcommit: 7791c519bd8b68fc23433e13e1ecbdbeaddbebfa
+ms.openlocfilehash: 2f1c0c784703cc5458dad5e176db9c35818d1abe
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60725584"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111596"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plataformas**
+
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
 - Windows 8.1 Pro
@@ -41,22 +42,15 @@ ms.locfileid: "60725584"
 
 Defender for Endpoint amplía la compatibilidad para incluir sistemas operativos de nivel inferior, lo que proporciona capacidades avanzadas de detección de ataques e investigación en versiones Windows compatibles.
 
-
-
 Para incorporar puntos de conexión Windows cliente a Defender for Endpoint, deberás:
-
 
 - [Configurar y actualizar System Center Endpoint Protection clientes](#configure-and-update-system-center-endpoint-protection-clients)
 - [Instalar y configurar Microsoft Monitoring Agent (MMA) para informar de los datos del sensor](#install-and-configure-microsoft-monitoring-agent-mma)
 
-
-Para Windows Server 2008 R2 SP1, tiene la opción de incorporarse [a través de Azure Defender](#onboard-windows-servers-through-azure-defender).
-
+Para Windows Server 2008 R2 SP1, tiene la opción de incorporarse a través de [Microsoft Defender para la nube.](#onboard-windows-servers-through-microsoft-defender-for-cloud)
 
 > [!NOTE]
-> La licencia de servidor independiente de Defender for Endpoint es necesaria, por nodo, para incorporar un servidor Windows a través de Microsoft Monitoring Agent (opción 1). Como alternativa, se requiere una licencia de Azure Defender para servidores, por nodo, para incorporar un servidor de Windows a través de Azure Defender (opción 2), consulte Características compatibles disponibles en [Azure Defender.](/azure/security-center/security-center-services)
-
-
+> La licencia de servidor independiente de Defender for Endpoint es necesaria, por nodo, para incorporar un servidor Windows a través de Microsoft Monitoring Agent (opción 1). Como alternativa, se requiere una licencia de Microsoft Defender para servidores, por nodo, para incorporar un servidor de Windows a través de Microsoft Defender para la nube (opción 2), consulte Características admitidas disponibles en [Microsoft Defender para](/azure/security-center/security-center-services)la nube.
 
 > [!TIP]
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que está correctamente incorporado al servicio. Para obtener más información, vea [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
@@ -74,7 +68,7 @@ Se requieren los siguientes pasos para habilitar esta integración:
 - Configurar la pertenencia del servicio de protección en la nube del cliente SCEP a la **configuración** Avanzada
 - Configure la red para permitir conexiones a la Antivirus de Microsoft Defender nube. Para obtener más información, vea [Configure and validate Antivirus de Microsoft Defender network connections](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
-## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Instalar y configurar Microsoft Monitoring Agent (MMA) 
+## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Instalar y configurar Microsoft Monitoring Agent (MMA)
 
 ### <a name="before-you-begin"></a>Antes de empezar
 
@@ -97,7 +91,6 @@ Revise los siguientes detalles para comprobar los requisitos mínimos del sistem
     > La instalación de .NET 4.5 puede requerir que reinicie el equipo después de la instalación.
 
 - Cumpla los requisitos mínimos del sistema del agente de Azure Log Analytics. Para obtener más información, vea [Recopilar datos de equipos en su entorno con Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
-
 
 ### <a name="installation-steps"></a>Pasos de la instalación
 
@@ -134,22 +127,21 @@ Si hay un proxy o firewall en uso, asegúrese de que los servidores puedan tener
 
 Una vez completado, debería ver los servidores Windows incorporados en el portal en una hora.
 
-
-## <a name="onboard-windows-servers-through-azure-defender"></a>Incorporación de Windows a través de Azure Defender
+## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Incorporación de Windows a través de Microsoft Defender para la nube
 
 1. En el panel Centro de seguridad de Microsoft Defender navegación, **seleccione Configuración** Incorporación de administración  >  **de**  >  **dispositivos**.
 
 2. Seleccione **Windows Server 2008 R2 SP1** como sistema operativo.
 
-3. Haga **clic en Servidores integrados en El Centro de seguridad de Azure**.
+3. Haga **clic en Incorporar servidores en Microsoft Defender para la nube.**
 
-4. Siga las instrucciones de incorporación de Microsoft Defender para endpoint [con Azure Defender](/azure/security-center/security-center-wdatp) y, si usa Azure ARC, siga las instrucciones de incorporación en Enabling the Microsoft Defender for Endpoint [integration](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. Siga las instrucciones de incorporación en Microsoft Defender para endpoint con [Microsoft Defender para](/azure/security-center/security-center-wdatp) la nube y si usa Azure ARC, siga las instrucciones de incorporación en Habilitar la integración de Microsoft Defender para [endpoints](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 Después de completar los pasos de incorporación, deberá configurar y actualizar los [System Center Endpoint Protection cliente.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
 >
-> - Para que la incorporación a través de Azure Defender para servidores funcione según lo esperado, el servidor debe tener una clave y un área de trabajo adecuadas configuradas dentro de la configuración de Microsoft Monitoring Agent (MMA).
+> - Para que la incorporación a través de Microsoft Defender para que los servidores funcionen según lo esperado, el servidor debe tener una clave y un área de trabajo adecuadas configuradas dentro de la configuración de Microsoft Monitoring Agent (MMA).
 > - Una vez configurado, el módulo de administración de nube adecuado se implementa en el equipo y el proceso de sensor (MsSenseS.exe) se implementará e iniciará.
 > - Esto también es necesario si el servidor está configurado para usar un servidor de puerta de enlace OMS como proxy.
 

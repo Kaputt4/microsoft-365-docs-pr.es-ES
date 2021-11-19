@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para crear y usar etiquetas de retención en documentos Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 517183ca8e61415ec2817683c4a1ce88c251301b
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 3cb3a07b4f636fcf8770432a825356269ff6d94c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962572"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111164"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Clasificación de datos para su Microsoft 365 entorno de prueba empresarial
 
@@ -53,7 +53,7 @@ Si desea configurar etiquetas de retención en una empresa simulada, siga las in
 
 En esta fase, cree las etiquetas de retención para los diferentes niveles de retención para SharePoint carpetas de documentos en línea:
 
-1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centro Microsoft 365 seguridad con</a> su cuenta de administrador global.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender con</a> su cuenta de administrador global.
 1. En la **pestaña Inicio- Microsoft 365 seguridad** del explorador, seleccione **Etiquetas de** retención de  >  **clasificación.**
 1. Seleccione **Crear una etiqueta**.
 1. En el **panel Nombre de la etiqueta,** escriba Public **interno** en Nombre de la **etiqueta** y, a continuación, **seleccione Siguiente**.
@@ -111,7 +111,7 @@ A continuación, cree un nuevo documento en el sitio SensitiveFiles y cambie su 
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 

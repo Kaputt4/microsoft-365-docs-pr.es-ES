@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 - admindeeplinkDEFENDER
 description: 'Resumen: pasos de migración de exhibición de documentos electrónicos para la migración desde Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 08c44374b834796bce5f624008dd2f7493e7c3f7
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 64b026a1349a5945509251eb62d7ccb26ed6f46f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963076"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111080"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Información sobre la experiencia de exhibición de documentos electrónicos durante la migración desde Microsoft Cloud Deutschland
 Las secciones siguientes proporcionan información adicional sobre la experiencia de exhibición de documentos electrónicos al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a Office 365 servicios en la nueva región del centro de datos alemán.
@@ -32,7 +32,7 @@ Las secciones siguientes proporcionan información adicional sobre la experienci
 ## <a name="ediscovery-administration-until-phase-4"></a>Administración de eDiscovery hasta la fase 4
 Hasta la fase 4, el Centro de seguridad y cumplimiento estará totalmente disponible. Todo el contenido sigue estando en Microsoft Cloud Germany y es manejable por el Centro de seguridad y cumplimiento de Microsoft Cloud Germany ( https://protection.office.de/) .
 
-## <a name="ediscovery-experience-between-phase-4-until-the-the-end-of-phase-9"></a>Experiencia de exhibición de documentos electrónicos entre la fase 4 y el final de la fase 9
+## <a name="ediscovery-experience-between-phase-4-until-the-end-of-phase-9"></a>Experiencia de exhibición de documentos electrónicos entre la fase 4 y el final de la fase 9
 Desde el principio de la fase 4 hasta que se complete la fase 9, las búsquedas de exhibición de documentos electrónicos producirán un error o devolverán 0 resultados para las ubicaciones de SharePoint Online, OneDrive para la Empresa y Exchange Online que se han migrado.
 
 > [!NOTE]
@@ -51,7 +51,7 @@ En caso de que una búsqueda devuelva cero resultados o un error durante la migr
 **Se aplica a:** Todos los clientes que usan eDiscovery
 
 En la fase 9, se completarán los pasos finales para pasar a la nueva región del centro de datos alemán. En esta fase, se migrarán todos los componentes de servicio restantes.
-Después de la fase 9, ya no se admite el uso del Centro de seguridad y cumplimiento en Microsoft Cloud Germany (protection.office.de). Use el nuevo <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centro Microsoft 365 seguridad</a> o el Centro de cumplimiento de Microsoft 365 en su <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">lugar.</a> Todos los datos se han migrado a los nuevos portales de administración.
+Después de la fase 9, ya no se admite el uso del Centro de seguridad y cumplimiento en Microsoft Cloud Germany (protection.office.de). Use el nuevo <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender o</a> el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> en su lugar. Todos los datos se han migrado a los nuevos portales de administración.
 
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|

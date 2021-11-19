@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fcbf4ea9d3f43d0ce005265c4c40572ea3f846a4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c580b6529a3467a08befdb07c1b0b8d516208183
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162067"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106208"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Obstáculos de seguridad por los que puede navegar: el punto de vista de un arquitecto
 
@@ -67,7 +67,7 @@ El enfoque "simple es mejor" también funciona para la seguridad. En lugar de bu
 
 A medida que procede de un largo historial y experiencia de ciberseguridad, suelo preferir empezar con la configuración más segura y permitir que las organizaciones relajen las configuraciones de seguridad en función de sus necesidades operativas y de seguridad. Sin embargo, esto puede llegar a un precio elevado de funcionalidad perdida y mala experiencia del usuario. Como muchas organizaciones han aprendido, si la seguridad es demasiado difícil para los usuarios, encontrarán una forma de trabajar alrededor de usted, incluido el uso de servicios en la nube no administrados. Tan difícil como para mí aceptar, he llegado a darme cuenta de que el equilibrio entre funcionalidad y seguridad delicado debe lograrse.
 
-Las organizaciones que se dan cuenta de que los usuarios harán lo que sea necesario para realizar sus trabajos reconocen que la "batalla de TI de sombra" no vale la pena luchar. Reconocen que los empleados de TI son los mayores infractores cuando se trata de ti de instantánea y el uso de aplicaciones SaaS no aprobadas para su trabajo. Han cambiado su estrategia para fomentar su uso (en lugar de suprimir) y centrarse en mitigar los riesgos de exposición que podría crear. Los equipos de seguridad de esta organización no insisten en que todo se bloquee, se registra y se envíe a través de un proxy inverso o una VPN. En su lugar, estos equipos de seguridad duplican sus esfuerzos para proteger datos valiosos y confidenciales para que no se exponán a terceros incorrectos o aplicaciones malintencionadas. Trabajan para proteger la integridad de los datos. Están haciendo un uso completo de las capacidades más avanzadas de protección de la información en la nube, incluido el cifrado, la autenticación multifactor segura, el riesgo y el cumplimiento automatizados, y las capacidades de agente de Cloud App Security (CASB), al tiempo que permiten e incluso fomentan el uso compartido protegido en varias plataformas. Están convirtiendo la TECNOLOGÍA de la sombra en una creatividad, productividad y colaboración que les permite a su empresa mantenerse en el borde de la competencia.
+Las organizaciones que se dan cuenta de que los usuarios harán lo que sea necesario para realizar sus trabajos reconocen que la "batalla de TI de sombra" no vale la pena luchar. Reconocen que los empleados de TI son los mayores infractores cuando se trata de ti de instantánea y el uso de aplicaciones SaaS no aprobadas para su trabajo. Han cambiado su estrategia para fomentar su uso (en lugar de suprimir) y centrarse en mitigar los riesgos de exposición que podría crear. Los equipos de seguridad de esta organización no insisten en que todo se bloquee, se registra y se envíe a través de un proxy inverso o una VPN. En su lugar, estos equipos de seguridad duplican sus esfuerzos para proteger datos valiosos y confidenciales para que no se exponán a terceros incorrectos o aplicaciones malintencionadas. Trabajan para proteger la integridad de los datos. Están haciendo un uso completo de las capacidades más avanzadas de protección de la información en la nube, incluido el cifrado, la autenticación multifactor segura, el riesgo y el cumplimiento automatizados, y las capacidades del agente de seguridad de acceso a la nube (CASB), al tiempo que permiten e incluso fomentan el uso compartido protegido en varias plataformas. Están convirtiendo la TECNOLOGÍA de la sombra en una creatividad, productividad y colaboración que les permite a su empresa mantenerse en el borde de la competencia.
 
 ## <a name="adopt-a-methodical-approach"></a>Adoptar un enfoque metódico
 
@@ -75,10 +75,10 @@ La mayoría de los desafíos que he experimentado con la implementación de la s
 
 Para ayudarle a eliminar estos obstáculos, Microsoft ha seleccionado varios recursos diseñados para ayudarle a tomar un enfoque metódico de la estrategia de seguridad y la implementación.
 
-|Resource   |Más información  |
+|Recurso   |Más información  |
 |---------|---------|
 |[Las tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa](../security/top-security-tasks-for-remote-work.md)      | Si de repente se encuentra con un equipo de trabajo en casa, este artículo le ayuda a aumentar la seguridad rápidamente. Incluye las tareas recomendadas más importantes en función del plan de licencias.    |
-|[Microsoft 365 Responsables de la seguridad de las decisiones empresariales](../security/Microsoft-365-security-for-bdm.md)    | Cuando tienes tiempo para un plan más completo, este artículo incluye recomendaciones que abarcan Microsoft 365, priorizado por superficie de ataque. Incluso viene con una hoja de cálculo que puedes usar para ordenar las licencias y el área (como identidad, protección contra amenazas y supervisión).  |
+|[Microsoft 365 security for Business Decisions Makers](../security/Microsoft-365-security-for-bdm.md)    | Cuando tienes tiempo para un plan más completo, este artículo incluye recomendaciones que abarcan Microsoft 365, priorizado por superficie de ataque. Incluso viene con una hoja de cálculo que puedes usar para ordenar las licencias y el área (como identidad, protección contra amenazas y supervisión).  |
 |[Recomendaciones de arquitectura de seguridad de Microsoft](/security/compass/compass)    | Si es arquitecto de seguridad, asegúrese de ver las recomendaciones de seguridad organizadas por disciplina, incluidas las operaciones de identidad, redes y seguridad.   |
 |[Recomendaciones de Operaciones de seguridad de Microsoft](/security/compass/security-operations-videos-and-decks)|Obtenga información sobre las recomendaciones de Microsoft para configurar y ejecutar un Centro de operaciones de seguridad (SOC) |
 |[Formación del jefe de seguridad de la información (CISO)](/security/ciso-workshop/ciso-workshop)   | Si eres nuevo en la seguridad en la nube, no te pierdas esta serie de vídeos.        |

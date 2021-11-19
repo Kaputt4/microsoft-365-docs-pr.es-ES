@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d3dceeea5566b14e9742df77773c3bf07a1bbfc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ddcd1c18f3e6e0cd8e929f076a08704a3d116789
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60645804"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111200"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -105,9 +105,9 @@ Configure el proxy estático mediante la directiva de grupo que se encuentra aqu
 
    :::image type="content" source="images/proxy-server-mdav.png" alt-text="Servidor proxy para Antivirus de Microsoft Defender.":::
 
-3. En la clave del  `HKLM\Software\Policies\Microsoft\Windows Defender` Registro, la directiva establece el valor del  `ProxyServer`   Registro como REG_SZ. 
+3. En la clave del `HKLM\Software\Policies\Microsoft\Windows Defender` Registro, la directiva establece el valor del `ProxyServer` Registro como REG_SZ. 
 
-   El valor del  `ProxyServer`   Registro tiene el siguiente formato de cadena:
+   El valor del `ProxyServer` Registro tiene el siguiente formato de cadena:
 
     ```text
     <server name or ip>:<port>
@@ -121,7 +121,7 @@ Configure el proxy estático mediante la directiva de grupo que se encuentra aqu
 >
 > Antivirus de Microsoft Defender usar el proxy estático para conectarse a Windows Update o Microsoft Update para descargar actualizaciones. En su lugar, usará un proxy para todo el sistema si está configurado para usar Windows Update o el origen de actualización interno configurado según el orden de reserva [configurado.](manage-protection-updates-microsoft-defender-antivirus.md) 
 >
-> Si es necesario, puede usar Plantillas administrativas > Windows Componentes > Antivirus de Microsoft Defender > Definir configuración automática **de proxy (.pac)** para conectarse a la red si necesita configurar configuraciones avanzadas con varios servidores proxy, Use Plantillas administrativas > Windows Componentes **> Antivirus de Microsoft Defender >** Definir direcciones para omitir el servidor proxy para evitar que Antivirus de Microsoft Defender use un servidor proxy para esos destinos. 
+> Si es necesario, puede usar Plantillas administrativas > Windows Componentes > Antivirus de Microsoft Defender > Definir configuración automática **de proxy (.pac)** para conectarse a la red si necesita configurar configuraciones avanzadas con varios servidores proxy, Use **Administrative Templates > Windows Components > Antivirus de Microsoft Defender > definir direcciones para** omitir el servidor proxy para evitar Antivirus de Microsoft Defender usar un servidor proxy para esos destinos. 
 >
 > También puede usar PowerShell con el `Set-MpPreference` cmdlet para configurar estas opciones: 
 >
@@ -199,8 +199,8 @@ La siguiente información enumera la información de configuración de proxy y f
 |*.blob.core.windows.net|Puerto 443|Salida|Yes|
 |*.azure-automation.net|Puerto 443|Salida|Yes|
 
->[!NOTE]
->*Estos requisitos de conectividad también se aplican al anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para incorporar estos sistemas operativos con la nueva solución unificada se encuentran en Onboard [Windows servers](configure-server-endpoints.md), o para migrar a la nueva solución no fiada en [escenarios](/microsoft-365/security/defender-endpoint/server-migration)de migración de servidor en Microsoft Defender para endpoint .
+> [!NOTE]
+> *Estos requisitos de conectividad también se aplican al anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para incorporar estos sistemas operativos con la nueva solución unificada se encuentran en [Onboard Windows servers](configure-server-endpoints.md), o para migrar a la nueva solución unificada en escenarios de migración de servidor en Microsoft Defender para [endpoint.](/microsoft-365/security/defender-endpoint/server-migration)
 
 > [!NOTE]
 > Como solución basada en la nube, el intervalo IP puede cambiar. Se recomienda pasar a la configuración de resolución de DNS.
@@ -209,7 +209,7 @@ La siguiente información enumera la información de configuración de proxy y f
 
  Consulte las siguientes instrucciones para eliminar el requisito de comodín (*) para su entorno específico al usar el Microsoft Monitoring Agent (MMA) para versiones anteriores de Windows.
 
-1.  Incorporar un sistema operativo anterior con el Microsoft Monitoring Agent (MMA) en Defender para endpoint (para obtener más información, vea [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and Onboard Windows [servers](configure-server-endpoints.md).
+1. Incorporar un sistema operativo anterior con el Microsoft Monitoring Agent (MMA) en Defender para endpoint (para obtener más información, vea [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and Onboard Windows [servers](configure-server-endpoints.md).
 
 2. Asegúrese de que la máquina se está informando correctamente en el portal Microsoft 365 Defender usuario.
 
@@ -224,7 +224,7 @@ Los caracteres comodín ( ) usados en los extremos de dirección \* \* URL \* .o
 El extremo de dirección URL .blob.core.windows.net se puede reemplazar por las direcciones URL mostradas en la sección "Regla de \* firewall: \* .blob.core.windows.net" de los resultados de la prueba.
 
 > [!NOTE]
-> En el caso de la incorporación a través de Azure Defender, se pueden usar varias áreas de trabajo. Deberá realizar el procedimiento de TestCloudConnection.exe anterior en una máquina integrada de cada área de trabajo (para determinar si hay cambios en las direcciones URL *.blob.core.windows.net entre las áreas de trabajo).
+> En el caso de la incorporación a través de Microsoft Defender para la nube, se pueden usar varias áreas de trabajo. Deberá realizar el procedimiento de TestCloudConnection.exe anterior en una máquina integrada de cada área de trabajo (para determinar si hay cambios en las direcciones URL *.blob.core.windows.net entre las áreas de trabajo).
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Comprobar la conectividad del cliente a Microsoft Defender para las direcciones URL del servicio endpoint
 

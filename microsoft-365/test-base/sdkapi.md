@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9e2c52d23c0e0c949059dc37eee4c1a59b35964e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f7e5edeeac79b417bcb41f8607c46fc8894ea4fc
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704948"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110384"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>Administrar el recurso con LAS API & SDK
 La automatización es un aspecto clave del desarrollo DevOps y ágil. ¿Está buscando administrar Test Base para obtener Microsoft 365, obtener resultados de pruebas mediante programación e integrarlos con nuestras herramientas de CI? Probar API base/SDK puede ayudarle a lograr todas estas y más cosas. 
@@ -46,7 +46,7 @@ Consulte el esquema paso a paso siguiente para averiguar cómo obtener acceso a 
 
 ```
 pip install azure-identity 
-pip install azure-mgmt-testbase  
+pip install azure-mgmt-testbase
 ```
 
 - Autenticación en entorno de desarrollo 
@@ -104,13 +104,13 @@ Consulte los vínculos siguientes para obtener más información acerca de la AP
 
 **Suscripción a Azure** 
 
-- [Cuenta de Azure con una suscripción activa](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) 
+- [Cuenta de Azure con una suscripción activa](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
 
 **SDK de Python** 
 
-- [Documentación del SDK de Python base de prueba](/python/api/overview/azure/mgmt-testbase-readme?view=azure-python-preview)
-- [Ejemplo de SDK de Python base de prueba](https://aka.ms/testbase-sample-py) 
-- [Patrón de uso general de Azure del SDK de Python](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries) 
+- [Documentación del SDK de Python base de prueba](/python/api/overview/azure/mgmt-testbase-readme)
+- [Ejemplo de SDK de Python base de prueba](https://aka.ms/testbase-sample-py)
+- [Patrón de uso general de Azure del SDK de Python](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
 
 **API de REST**  
 

@@ -15,12 +15,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: En este artículo, encontrará detalles sobre Microsoft 365 de aplicaciones de cliente y servicios.
-ms.openlocfilehash: 4ae294865bb506ae9e8a25e8f5ab28fff967171e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db69da1203138435b22383de145ddde71f763c14
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173335"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110336"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 de aplicaciones de cliente y servicios
 
@@ -63,7 +63,7 @@ Las directivas de acceso condicional son instrucciones if-then para conceder acc
 - Información del dispositivo
 - Información de la aplicación
 - Detección de riesgos calculados y en tiempo real
-- Microsoft Cloud App Security (MCAS)
+- Microsoft Defender for Cloud Apps
 
 Al tomar estas decisiones de acceso, las directivas pueden realizar diferentes acciones:
 
@@ -72,13 +72,13 @@ Al tomar estas decisiones de acceso, las directivas pueden realizar diferentes a
 
     - Autenticación multifactor
     - El dispositivo que se marcará como compatible
-    - El dispositivo está unido a Azure AD híbrido
+    - El dispositivo es híbrido Azure AD unido
     - Una aplicación cliente aprobada
     - Directiva de protección de aplicaciones configurada (versión preliminar)
 
 Para obtener más información sobre el acceso condicional para la compatibilidad con aplicaciones de cliente y servicios, vea:
 
-- [Microsoft 365 Compatibilidad con aplicaciones cliente: acceso condicional basado en dispositivos](microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 de aplicaciones cliente: acceso condicional basado en dispositivos](microsoft-365-client-support-conditional-access.md)
 
 ### <a name="mobile-application-management"></a>Administración de aplicaciones móviles
 
@@ -133,13 +133,13 @@ Para obtener más información sobre la compatibilidad con los servicios de aute
 
 ### <a name="azure-active-directory-conditional-access"></a>Acceso condicional de Azure Active Directory
 
-Azure Active Directory (Azure AD) Las reglas de acceso condicional permiten a los clientes controlar el acceso a los servicios en línea, en función de atributos como el cumplimiento del dispositivo o la ubicación de red. Se pueden usar las siguientes soluciones:
+Azure Active Directory (Azure AD) las reglas de acceso condicional permiten a los clientes controlar el acceso a los servicios en línea, en función de atributos como el cumplimiento del dispositivo o la ubicación de red. Se pueden usar las siguientes soluciones:
 
-- Acceso condicional basado en autenticación multifactor de Azure AD
-- Acceso condicional basado en ubicación de Azure AD
-- Acceso condicional basado en dispositivos de Azure AD
+- Azure AD multifactor authentication-based Conditional Access
+- Azure AD acceso condicional basado en ubicación
+- Azure AD acceso condicional basado en dispositivos
 
-Las reglas de acceso condicional de Azure AD se aplican por aplicación y están disponibles para que los clientes puedan controlar el acceso en función de diferentes condiciones. Con la Administración de dispositivos móviles [(MDM)](/mem/intune/fundamentals/what-is-device-management)o Intune, los clientes deben poder restringir el acceso a Microsoft 365 solo a aquellos usuarios que usan un dispositivo de la organización o que han inscrito su dispositivo personal para su administración. Por ejemplo, los clientes pueden configurar reglas de acceso condicional para aplicar controles como:
+Azure AD las reglas de acceso condicional se aplican por aplicación y están disponibles para que los clientes puedan controlar el acceso en función de diferentes condiciones. Con la Administración de dispositivos móviles [(MDM)](/mem/intune/fundamentals/what-is-device-management)o Intune, los clientes deben poder restringir el acceso a Microsoft 365 solo a aquellos usuarios que usan un dispositivo de la organización o que han inscrito su dispositivo personal para su administración. Por ejemplo, los clientes pueden configurar reglas de acceso condicional para aplicar controles como:
 
 - Solo permitir el acceso desde dispositivos unidos a un dominio o compatibles con el dominio
 - Exigir la autenticación multifactor para todo el acceso a Exchange Online servicios

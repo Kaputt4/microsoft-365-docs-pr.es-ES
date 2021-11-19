@@ -1,5 +1,5 @@
 ---
-title: Piloto Microsoft Cloud App Security con Microsoft 365 Defender
+title: Piloto de Microsoft Defender para aplicaciones en la nube con Microsoft 365 Defender
 description: Configure su laboratorio Microsoft 365 Defender prueba o entorno piloto para probar y experimentar la solución de seguridad diseñada para proteger dispositivos, identidades, datos y aplicaciones.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,25 +21,25 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b48d5ec4ee8586af05a514f8e5531dd0ac31085
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4b8293be5123ac57aefa3f8c5a5212e9fc8f1e95
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210704"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111056"
 ---
-# <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Piloto Microsoft Cloud App Security con Microsoft 365 Defender
+# <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>Piloto de Microsoft Defender para aplicaciones en la nube con Microsoft 365 Defender
 
 
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Este artículo es [el paso 3 de 3](eval-defender-mcas-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Cloud App Security. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-mcas-overview.md).
+Este artículo es [el paso 3 de 3](eval-defender-mcas-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender para aplicaciones en la nube. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-mcas-overview.md).
 
-Siga estos pasos para configurar y configurar el piloto para Microsoft Cloud App Security.
+Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para aplicaciones en la nube.
 
 
-![Pasos para la Microsoft Cloud App Security.](../../media/defender/m365-defender-mcas-pilot-steps.png)
+![Pasos para pilotar Microsoft Defender para aplicaciones en la nube.](../../media/defender/m365-defender-mcas-pilot-steps.png)
 
 - Paso 1. [Crear el grupo piloto: ámbito de la implementación piloto en determinados grupos de usuarios](#step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups)
 - [Paso 2. Configurar protección: control de aplicaciones de acceso condicional](#step-2-configure-protection--conditional-access-app-control)
@@ -48,29 +48,29 @@ Siga estos pasos para configurar y configurar el piloto para Microsoft Cloud App
 
 ## <a name="step-1-create-the-pilot-group--scope-your-pilot-deployment-to-certain-user-groups"></a>Paso 1. Crear el grupo piloto: ámbito de la implementación piloto en determinados grupos de usuarios
 
-Microsoft Cloud App Security permite el ámbito de la implementación. El ámbito permite seleccionar determinados grupos de usuarios que se supervisarán para las aplicaciones o se excluirán de la supervisión. Puede incluir o excluir grupos de usuarios. Para ámbito de la implementación piloto, vea [Scoped Deployment](/cloud-app-security/scoped-deployment).
+Microsoft Defender para aplicaciones en la nube le permite tener en cuenta su implementación. El ámbito permite seleccionar determinados grupos de usuarios que se supervisarán para las aplicaciones o se excluirán de la supervisión. Puede incluir o excluir grupos de usuarios. Para ámbito de la implementación piloto, vea [Scoped Deployment](/cloud-app-security/scoped-deployment).
 
 
 ## <a name="step-2-configure-protection--conditional-access-app-control"></a>Paso 2. Configurar protección: control de aplicaciones de acceso condicional
 
 Una de las protecciones más eficaces que puede configurar es el control de aplicaciones de acceso condicional. Esto requiere integración con Azure Active Directory (Azure AD). Te permite aplicar directivas de acceso condicional, incluidas las directivas relacionadas (como requerir dispositivos en buen estado) a las aplicaciones en la nube que hayas sancionado. 
 
-El primer paso para usar Microsoft Cloud App Security para administrar aplicaciones SaaS es detectarlas y luego agregarlas al inquilino de Azure AD. Si necesitas ayuda con la detección, consulta [Descubrir y administrar aplicaciones SaaS en la red.](/cloud-app-security/tutorial-shadow-it) Después de descubrir aplicaciones, [agrégrelos a su inquilino de Azure AD](/azure/active-directory/manage-apps/add-application-portal).
+El primer paso para usar Microsoft Defender para aplicaciones en la nube para administrar aplicaciones SaaS consiste en detectarlas y, a continuación, agregarlas a Azure AD inquilino. Si necesitas ayuda con la detección, consulta [Descubrir y administrar aplicaciones SaaS en la red.](/cloud-app-security/tutorial-shadow-it) Después de descubrir aplicaciones, [agrégrelos a su Azure AD inquilino.](/azure/active-directory/manage-apps/add-application-portal)
 
 Puede empezar a administrarlos haciendo lo siguiente:
 
-- En primer lugar, en Azure AD, cree una nueva directiva de acceso condicional y configúrela para "Usar control de aplicaciones de acceso condicional". Esto redirige la solicitud a Cloud App Security. Puedes crear una directiva y agregar todas las aplicaciones SaaS a esta directiva.
-- Después, en Cloud App Security, cree directivas de sesión. Cree una directiva para cada control que desee aplicar.
+- Primero, en Azure AD, cree una nueva directiva de acceso condicional y configúrela para "Usar control de aplicaciones de acceso condicional". Esto redirige la solicitud a Defender para aplicaciones en la nube. Puedes crear una directiva y agregar todas las aplicaciones SaaS a esta directiva.
+- A continuación, en Defender para aplicaciones en la nube, cree directivas de sesión. Cree una directiva para cada control que desee aplicar.
 
-Para obtener más información, incluidas las aplicaciones y clientes compatibles, consulta Proteger aplicaciones con Microsoft Cloud App Security control de aplicaciones [de acceso condicional.](/cloud-app-security/proxy-intro-aad) 
+Para obtener más información, incluidas las aplicaciones y clientes compatibles, consulta Proteger aplicaciones con Microsoft Defender para el control de aplicaciones de acceso condicional de aplicaciones [en la nube.](/cloud-app-security/proxy-intro-aad) 
 
-Por ejemplo, directivas, consulta [Recomendaciones Microsoft Cloud App Security para aplicaciones SaaS](../office-365-security/mcas-saas-access-policies.md). Estas directivas se basa en un conjunto [de](../office-365-security/microsoft-365-policies-configurations.md) directivas comunes de acceso a dispositivos y identidades que se recomiendan como punto de partida para todos los clientes. 
+Por ejemplo, vea Directivas recomendadas de [Microsoft Defender para aplicaciones en la nube para aplicaciones SaaS.](../office-365-security/mcas-saas-access-policies.md) Estas directivas se basa en un conjunto [de](../office-365-security/microsoft-365-policies-configurations.md) directivas comunes de acceso a dispositivos y identidades que se recomiendan como punto de partida para todos los clientes. 
 
 ## <a name="step-3-try-out-capabilities--walk-through-tutorials-for-protecting-your-environment"></a>Paso 3. Probar funcionalidades: tutoriales para proteger el entorno 
 
-La Microsoft Cloud App Security incluye una serie de tutoriales para ayudarle a detectar riesgos y proteger su entorno. 
+La documentación de Microsoft Defender para Aplicaciones en la nube incluye una serie de tutoriales para ayudarle a detectar riesgos y proteger su entorno. 
 
-Pruebe Cloud App Security tutoriales:
+Pruebe los tutoriales de Defender for Cloud Apps:
 
 - [Detectar actividad de usuario sospechosa](/cloud-app-security/tutorial-suspicious-activity)
 - [Investigar usuarios riesgosos](/cloud-app-security/tutorial-ueba)
@@ -81,12 +81,12 @@ Pruebe Cloud App Security tutoriales:
 - [Proteger los archivos con cuarentena de administrador](/cloud-app-security/use-case-admin-quarantine)
 - [Requerir autenticación de paso a paso tras una acción arriesgada](/cloud-app-security/tutorial-step-up-authentication)
 
-Para obtener más información sobre la búsqueda avanzada en Microsoft Cloud App Security datos, vea el [vídeo](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa).
+Para obtener más información sobre la búsqueda avanzada en Datos de Microsoft Defender para aplicaciones en la nube, vea el [vídeo](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Investigar y responder con Microsoft 365 Defender en un entorno piloto](eval-defender-investigate-respond.md)
 
-Vuelva a la introducción a [Evaluate Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+Vuelva a la introducción a [Evaluar Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-overview.md)
 
 Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)

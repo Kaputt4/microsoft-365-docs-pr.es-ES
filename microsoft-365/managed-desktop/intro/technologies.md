@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7cc8faf8e37d1e700a8eb4e06be90259dc54a007
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 167c518231b62251637e3deb89fd6a753664af85
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667463"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110348"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías del Escritorio administrado de Microsoft
 
@@ -32,7 +32,7 @@ En este artículo se resumen los componentes incluidos en las licencias Enterpri
 | Producto |Información |
 --- |--- 
 Aplicaciones Microsoft 365 para empresas (64 bits) | Estas Office se enviarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Empresarial, OneNote.<br><br>Las versiones completas de 64 bits de Microsoft Project y Microsoft Visio no se incluyen. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Aplicaciones Microsoft 365 para empresas, Microsoft Managed Desktop ha creado implementaciones de Microsoft Intune predeterminadas y grupos de seguridad que puede usar para implementar estas aplicaciones en usuarios con licencia. Para obtener más información, vea [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
-OneDrive |Azure Active Directory El inicio de sesión único está habilitado para los usuarios cuando inician sesión por primera vez en OneDrive.<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "Escritorio", "Documento" e "Imágenes"; habilitado y configurado por Microsoft Managed Desktop.
+OneDrive |Azure Active Directory inicio de sesión único está habilitado para los usuarios cuando inician sesión por primera vez en OneDrive.<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "Escritorio", "Documento" e "Imágenes"; habilitado y configurado por Microsoft Managed Desktop.
 Aplicaciones de la Tienda | Microsoft Sway y Power BI se envían con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
 Aplicaciones de Win32 | Teams no se incluye con el dispositivo, sino que se empaqueta y proporciona Microsoft para dispositivos de Escritorio administrado de Microsoft. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetar para su implementación.
 Aplicaciones web | Yammer, Office en un explorador, Delve, Flow, StaffHub, Power Apps y Planner no se envían con el dispositivo. Los usuarios pueden acceder a la versión web de estas aplicaciones con un explorador.
@@ -60,12 +60,12 @@ Microsoft Defender para endpoint: administración de amenazas y vulnerabilidades
 Microsoft Defender para endpoint: reducción de superficie de ataque | La reducción de superficie de ataque se dirige a comportamientos de software arriesgados que suelen ser abusados por los atacantes. Para obtener más información, consulta [Microsoft Defender for Endpoint - Attack Surface Reduction](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction).
 Microsoft Defender para endpoint: Protección contra vulnerabilidades de seguridad | Protege contra malware que usa exploits para infectar dispositivos y propagarse aplicando automáticamente técnicas de mitigación de vulnerabilidades a procesos y aplicaciones del sistema operativo. Para obtener más información, vea [Microsoft Defender for Endpoint - Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).
 Microsoft Defender para endpoint: Protección de red | La protección de red expande el ámbito de SmartScreen de Microsoft Defender para bloquear todo el tráfico HTTP y HTTPS saliente que intente conectarse a orígenes de baja reputación. Para obtener más información, vea [Microsoft Defender for Endpoint - Network Protection](/windows/security/threat-protection/microsoft-defender-atp/network-protection).
-Protección contra manipulaciones de Microsoft Defender | Windows La protección contra alteraciones se usa para evitar que se cambie la configuración de seguridad, como la protección antivirus. Para obtener más información, vea [Protección contra manipulaciones de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection).
-Antivirus de Microsoft Defender Protección antivirus basada en comportamiento, heurística y en tiempo real | Siempre en busca de amenazas de archivos y procesos que pueden no detectarse como malware. Para obtener más información, vea Antivirus de Microsoft Defender protección antivirus basada en [comportamiento, heurística y en tiempo real.](../../security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md)
-Antivirus de Microsoft Defender Protección entregada en la nube | Proporciona protección dinámica casi instantánea y automatizada contra amenazas nuevas y emergentes. Para obtener más información, [vea Antivirus de Microsoft Defender Cloud-delivered Protection](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
+Protección contra manipulaciones de Microsoft Defender | Windows la protección contra alteraciones se usa para evitar que se cambie la configuración de seguridad, como la protección antivirus. Para obtener más información, vea [Protección contra manipulaciones de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection).
+Antivirus de Microsoft Defender antivirus basado en comportamiento, heurístico y en tiempo real | Siempre en busca de amenazas de archivos y procesos que pueden no detectarse como malware. Para obtener más información, vea Antivirus de Microsoft Defender protección antivirus basada en [comportamiento, heurística y en tiempo real.](../../security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md)
+Antivirus de Microsoft Defender protección entregada en la nube | Proporciona protección dinámica casi instantánea y automatizada contra amenazas nuevas y emergentes. Para obtener más información, [vea Antivirus de Microsoft Defender Cloud-delivered Protection](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 Microsoft Defender para endpoint: "Bloquear a primera vista" | Proporciona detección y bloqueo de malware nuevo Windows detecta un archivo sospechoso o desconocido. Para obtener más información, vea [Microsoft Defender for Endpoint - Block at first sight](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
-Antivirus de Microsoft Defender Aplicaciones potencialmente no deseadas | Las aplicaciones potencialmente no deseadas se usan para bloquear aplicaciones que pueden hacer que el equipo se ejecute lentamente, mostrar anuncios inesperados o, en el peor de los casos, instalar otro software que pueda ser inesperado o no deseado. Para obtener más información, [vea Antivirus de Microsoft Defender Aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
-Windows Defender Firewall con seguridad avanzada | El filtrado de tráfico de red de dos direcciones basado en host para un dispositivo, Windows Defender firewall bloquea el tráfico de red no autorizado que entra o sale del dispositivo local. Para obtener más información, [vea Windows Defender Firewall with Advanced Security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Antivirus de Microsoft Defender aplicaciones potencialmente no deseadas | Las aplicaciones potencialmente no deseadas se usan para bloquear aplicaciones que pueden hacer que el equipo se ejecute lentamente, mostrar anuncios inesperados o, en el peor de los casos, instalar otro software que pueda ser inesperado o no deseado. Para obtener más información, [vea Antivirus de Microsoft Defender Aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+Windows Defender firewall con seguridad avanzada | El filtrado de tráfico de red de dos direcciones basado en host para un dispositivo, Windows Defender firewall bloquea el tráfico de red no autorizado que entra o sale del dispositivo local. Para obtener más información, [vea Windows Defender Firewall with Advanced Security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 Control de cuentas de usuario | El control de cuentas de usuario cambia al Escritorio seguro cuando una tarea o una acción requiere el acceso de tipo de cuenta de administrador. A los usuarios de Escritorio administrado de Microsoft se les asigna acceso de usuario estándar en la inscripción. Para obtener más información, vea [User Account Control](/windows/security/identity-protection/user-account-control/how-user-account-control-works).
 
 
@@ -74,5 +74,5 @@ Control de cuentas de usuario | El control de cuentas de usuario cambia al Escri
 Producto |Información
  --- | ---
 Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 | Puedes usar todas las características de Enterprise Mobility + Security E3 para administrar dispositivos MDM. Puede usar el Azure Active Directory Premium P2 como una característica opcional con Microsoft Managed Desktop.
-Microsoft Cloud App Security | Puedes usar esta característica opcional con Microsoft Managed Desktop.
+Microsoft Defender for Cloud Apps | Puedes usar esta característica opcional con Microsoft Managed Desktop.
 Azure Information Protection P2  | Puedes usar esta característica opcional con Microsoft Managed Desktop.

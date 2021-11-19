@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3fc0d1e927603a28cd622207cc1690e0ba5e413e
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: f7ba446eb074bc04ae4432595022d26f7f84b6e8
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882361"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111788"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Implementar, administrar e informar sobre Antivirus de Microsoft Defender
 
@@ -36,7 +36,7 @@ Puede implementar, administrar e informar sobre Antivirus de Microsoft Defender 
 
 Dado que Antivirus de Microsoft Defender cliente de Antivirus de Microsoft Defender se instala como una parte principal de Windows 10 y Windows 11, no se aplica la implementación tradicional de un cliente en los puntos de conexión.
 
-Sin embargo, en la mayoría de los casos, deberá habilitar el servicio de protección en los puntos de conexión con Microsoft Intune, Microsoft Endpoint Configuration Manager, Azure Defender o objetos de directiva de grupo, que se describe en la tabla siguiente.
+Sin embargo, en la mayoría de los casos, deberá habilitar el servicio de protección en los puntos de conexión con Microsoft Intune, Microsoft Endpoint Configuration Manager, Microsoft Defender para la nube o objetos de directiva de grupo, que se describe en la tabla siguiente.
 
 También verá vínculos adicionales para:
 
@@ -52,8 +52,8 @@ Microsoft Intune|[Agregar configuración de protección de puntos de conexión e
 Microsoft Endpoint Manager ([1](#fn1))|Use el [Endpoint Protection de sistema de sitio de puntos][] y [habilitar Endpoint Protection con la configuración de cliente personalizada][]|Con [directivas antimalware predeterminadas y personalizadas][] y [administración de cliente][]|Con el valor predeterminado [área de trabajo supervisión de Configuration Manager][] y [alertas de correo electrónico][]
 Directiva de grupo y Active Directory (unido a dominio)|Use un objeto de directiva de grupo para implementar los cambios de configuración y asegurarse de Antivirus de Microsoft Defender está habilitado.|Usar objetos de directiva de grupo (GPO) para [Configurar opciones de actualización para Antivirus de Microsoft Defender][] y [Configurar Windows Defender características][]|Los informes de extremo no están disponibles con la directiva de grupo. Puede generar una lista de [Directivas de grupo para determinar si no se aplica ninguna configuración o directiva][]
 PowerShell|Implemente con directiva de grupo, Microsoft Endpoint Configuration Manager o manualmente en puntos de conexión individuales.|Use los cmdlets [Set-MpPreference] y [Update-MpSignature] disponibles en el módulo Defender.|Usar los cmdlets [Get- adecuados disponibles en el módulo Defender][]
-Windows Instrumental de administración|Implemente con directiva de grupo, Microsoft Endpoint Configuration Manager o manualmente en puntos de conexión individuales.|Utilice el método [Set de la MSFT_MpPreference clase][] y el método [Update de la MSFT_MpSignature clase][]|Use la clase [MSFT_MpComputerStatus][] y el método get de las clases asociadas en el [Windows Defender WMIv2 Provider][]
-Microsoft Azure|Implemente Microsoft Antimalware para Azure en Azure Portal, mediante Visual Studio configuración de máquina [virtual o mediante cmdlets Azure PowerShell](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). También puede instalar [la protección de extremo en Azure Defender*](/azure/security-center/security-center-install-endpoint-protection)|Configurar Microsoft Antimalware para máquinas virtuales y servicios en la nube [con cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) Azure PowerShell o [usar ejemplos de código](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Use Microsoft Antimalware para máquinas virtuales y servicios en la nube [con cmdlets Azure PowerShell para](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) habilitar la supervisión. También puedes revisar los informes de uso en Azure Active Directory para determinar la actividad sospechosa, incluido el informe [Posiblemente dispositivos infectados][] y configurar una herramienta SIEM para informar sobre [eventos de Antivirus de Microsoft Defender][] y agregar esa herramienta como una aplicación en AAD.
+Windows instrumental de administración|Implemente con directiva de grupo, Microsoft Endpoint Configuration Manager o manualmente en puntos de conexión individuales.|Utilice el método [Set de la MSFT_MpPreference clase][] y el método [Update de la MSFT_MpSignature clase][]|Use la clase [MSFT_MpComputerStatus][] y el método get de las clases asociadas en el [Windows Defender WMIv2 Provider][]
+Microsoft Azure|Implemente Microsoft Antimalware para Azure en Azure Portal, mediante Visual Studio configuración de máquina [virtual o mediante cmdlets Azure PowerShell](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). También puede instalar [la protección de extremo en Microsoft Defender para la nube*](/azure/security-center/security-center-install-endpoint-protection)|Configurar Microsoft Antimalware para máquinas virtuales y servicios en la nube [con cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) Azure PowerShell o [usar ejemplos de código](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Use Microsoft Antimalware para máquinas virtuales y servicios en la nube [con cmdlets Azure PowerShell para](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) habilitar la supervisión. También puedes revisar los informes de uso en Azure Active Directory para determinar la actividad sospechosa, incluido el informe [Posiblemente dispositivos infectados][] y configurar una herramienta SIEM para informar sobre [eventos de Antivirus de Microsoft Defender][] y agregar esa herramienta como una aplicación en AAD.
 
 1. <span id="fn1" />La disponibilidad de algunas funciones y características, especialmente relacionadas con la protección entregada en la nube, difiere entre Microsoft Endpoint Manager (rama actual) y System Center Configuration Manager de 2012. En esta biblioteca, nos hemos centrado en Windows 10, Windows 11, Windows Server 2016 y Microsoft Endpoint Manager (rama actual). Consulte [Use Microsoft cloud-provided protection in Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) para obtener una tabla que describe las principales diferencias. [(Volver a la tabla)](#ref2)
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b05674d7b98d0088b265eda127b6d449e9fba645
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a75820c1c0a905807781f90e416ccd51f978901b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668051"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111656"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Detectar y bloquear aplicaciones potencialmente no deseadas con Microsoft Defender para Endpoint en Linux
 
@@ -43,7 +43,7 @@ Estas aplicaciones pueden aumentar el riesgo de que la red se infecte con malwar
 
 Defender para endpoint en Linux puede detectar e informar de archivos PUA. Cuando se configura en modo de bloqueo, los archivos PUA se mueven a la cuarentena.
 
-Cuando se detecta una PUA en un punto de conexión, Defender for Endpoint en Linux mantiene un registro de la infección en el historial de amenazas. El historial se puede visualizar desde el portal Microsoft 365 Defender Centro de seguridad o a través de la herramienta `mdatp` de línea de comandos. El nombre de la amenaza contendrá la palabra "Application".
+Cuando se detecta una PUA en un punto de conexión, Defender for Endpoint en Linux mantiene un registro de la infección en el historial de amenazas. El historial se puede visualizar desde el portal Microsoft 365 Defender portal o a través de la herramienta `mdatp` de línea de comandos. El nombre de la amenaza contendrá la palabra "Application".
 
 ## <a name="configure-pua-protection"></a>Configurar la protección de LA PUA
 

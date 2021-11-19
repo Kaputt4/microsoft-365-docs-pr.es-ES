@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 16c899ca895e73f51bc0d72f20e008f367cfe731
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 88d7750519690717070e090ddc42042866412d33
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588357"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109844"
 ---
 # <a name="device-control-report"></a>Informe de control de dispositivos
 
@@ -45,7 +45,7 @@ Los eventos de auditoría incluyen:
 
 ## <a name="monitor-device-control-security"></a>Supervisar la seguridad del control de dispositivos
 
-El control de dispositivos en Microsoft Defender para endpoint habilita a los administradores de seguridad con herramientas que les permiten realizar un seguimiento de la seguridad del control de dispositivos de su organización a través de informes. Puedes encontrar el informe de control de dispositivos en el centro de Microsoft 365 de seguridad yendo a **Informes > Protección de dispositivos**.
+El control de dispositivos en Microsoft Defender para endpoint habilita a los administradores de seguridad con herramientas que les permiten realizar un seguimiento de la seguridad del control de dispositivos de su organización a través de informes. Para encontrar el informe de control de dispositivos en el portal de Microsoft 365 Defender, vaya a **Informes > Protección de dispositivos**.
 
 La tarjeta de protección de dispositivos del panel **Informes** muestra el número de eventos de auditoría generados por tipo de medio en los últimos 180 días.
 

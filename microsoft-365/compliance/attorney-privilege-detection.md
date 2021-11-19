@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el modelo de detección de privilegios abogado-cliente para usar la detección basada en aprendizaje automático del contenido con privilegios al revisar el contenido en un Advanced eDiscovery caso.
-ms.openlocfilehash: 31520faef70f58fb2ac623645a50f2fa30336077
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 10a3f78537b17d8b74299e7960234c27fa3089ed
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071487"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111095"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurar la detección de privilegios de abogado-cliente en Advanced eDiscovery
 
@@ -79,7 +79,7 @@ Para cargar una lista de abogados para su uso por el modelo de detección de pri
 
    Se **muestra la página** Privilegios de abogado-cliente y se activa la alternancia de detección de privilegios **abogado-cliente.**
 
-   ![Página desplegable de privilegios abogado-cliente.](../media/AeDUploadAttorneyList.png)
+   ![Página desplegable de privilegios abogado-cliente](..\media\AeDUploadAttorneyList1.png)
 
 3. Seleccione **Elegir archivo y,** a continuación, busque y seleccione .csv archivo que creó en el paso 1.
 

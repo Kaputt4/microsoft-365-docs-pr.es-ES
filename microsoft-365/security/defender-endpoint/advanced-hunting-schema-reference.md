@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 20f6a92f414de9b6cb451a2bd5bb19ac2d15baec
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 562a62f04b673d29269c291a336f3ce72ce36f51
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556189"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110132"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprender el esquema de búsqueda avanzada en Microsoft Defender para endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "60556189"
 
 El [esquema de búsqueda](advanced-hunting-overview.md) avanzada está hecho de varias tablas que proporcionan información de eventos o información sobre dispositivos y otras entidades. Para crear consultas eficaces que abarquen varias tablas, debe comprender las tablas y las columnas del esquema de búsqueda avanzada.
 
-## <a name="get-schema-information-in-the-security-center"></a>Obtener información de esquema en el centro de seguridad
+## <a name="get-schema-information-in-the-defender-for-cloud"></a>Obtener información de esquema en defender para la nube
 
 Al crear consultas, use la referencia de esquema integrado para obtener rápidamente la siguiente información sobre cada tabla del esquema:
 
@@ -81,7 +81,7 @@ Los nombres de tabla y columna también se enumeran en el Centro de seguridad de
 |
 
 > [!TIP]
-> Usa la búsqueda [avanzada en Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas mediante datos de Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identity. [Active la Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Usa la búsqueda avanzada [en Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas con datos de Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para aplicaciones en la nube y Microsoft Defender para Identity. [Active la Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
 Obtenga más información sobre cómo mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda de [Microsoft Defender para endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 

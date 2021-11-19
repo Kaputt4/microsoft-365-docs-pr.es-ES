@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 144cc0159fbd717015a16251f21ac32d0601fcf4
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: ae1b168418b3a4a7814195f42297ac57622e6c6f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064133"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111308"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -82,7 +82,7 @@ Los sitios web de suplantación de identidad suplantan sitios web de confianza p
 
 ## <a name="malicious-site-detected"></a>Sitio malintencionado detectado
 
-Microsoft Defender para endpoint le protege contra la suplantación de identidad (phishing) u otros ataques basados en web. Si se detecta un sitio malintencionado, la conexión se bloquea y se envía una alerta al portal del Centro de seguridad de la organización. La alerta incluye el nombre de dominio de la conexión, la dirección IP remota y los detalles del dispositivo.
+Microsoft Defender para endpoint le protege contra la suplantación de identidad (phishing) u otros ataques basados en web. Si se detecta un sitio malintencionado, la conexión se bloquea y se envía una alerta al portal de Microsoft 365 Defender organización. La alerta incluye el nombre de dominio de la conexión, la dirección IP remota y los detalles del dispositivo.
 
 Además, se muestra una notificación en el dispositivo iOS. Al pulsar en la notificación se abre la siguiente pantalla para que el usuario revise los detalles.
 
@@ -124,6 +124,3 @@ Si un usuario se enfrenta a un problema que aún no se ha tratado en las seccion
   - Elija entre las opciones dadas. Para informar de un problema, seleccione **No me gusta nada**.
   - Proporcione detalles del problema al que se enfrenta y compruebe **Enviar datos de diagnóstico**. Le recomendamos que incluya su dirección de correo electrónico para que el equipo pueda ponerse en contacto con usted para obtener una solución o un seguimiento.
   - Pulsa **Enviar** para enviar correctamente los comentarios.
-
-
-

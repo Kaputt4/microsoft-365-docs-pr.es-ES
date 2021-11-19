@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9b8446ebd646a55e24a8d59d7fa8ac4e003a3a78
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d957b5fec4341cd7335f5c5a49b6654ffaf51f68
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665164"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111440"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>Cumplimiento de comunicaciones con soluciones de SIEM
 
-[El cumplimiento de](communication-compliance.md) la comunicación es una solución de riesgo interno en Microsoft 365 que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inapropiados en su organización. Las soluciones de administración de eventos y de información de seguridad (SIEM), como [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk,](https://www.splunk.com/) se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
+[El cumplimiento de](communication-compliance.md) la comunicación es una solución de riesgo interno en Microsoft 365 que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inapropiados en su organización. La información de seguridad y las soluciones de administración de eventos (SIEM), como [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk,](https://www.splunk.com/) se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
 
 Una necesidad común de las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje se detecta mediante una supervisión de directivas de cumplimiento de comunicaciones para el contenido inadecuado. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos Microsoft 365 auditar (también conocido como "registro de auditoría unificado") y se importan a la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos supervisados en Microsoft 365 auditoría asociadas con alertas de cumplimiento de comunicaciones. Los investigadores son notificados de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
 
@@ -70,12 +70,12 @@ ObjectState: Unchanged
 > [!NOTE]
 > Actualmente, puede haber un retraso de hasta 24 horas entre el momento en que se registra una coincidencia de directiva en la auditoría de Microsoft 365 y la hora en que puede investigar coincidencias de directivas en el cumplimiento de la comunicación.
 
-## <a name="configure-communication-compliance-and-azure-sentinel-integration"></a>Configurar el cumplimiento de las comunicaciones y la integración de Azure Sentinel
+## <a name="configure-communication-compliance-and-microsoft-sentinel-integration"></a>Configurar el cumplimiento de las comunicaciones y la integración de Microsoft Sentinel
 
-Cuando usa Azure Sentinel para agregar coincidencias de directivas de cumplimiento de comunicaciones, Sentinel usa Microsoft 365 Audit como origen de datos. Para integrar las alertas de cumplimiento de comunicaciones con Sentinel, siga estos pasos:
+Cuando usa Microsoft Sentinel para agregar coincidencias de directiva de cumplimiento de comunicaciones, Sentinel usa Microsoft 365 Audit como origen de datos. Para integrar las alertas de cumplimiento de comunicaciones con Sentinel, siga estos pasos:
 
-1. [Incorporación a Azure Sentinel](/azure/sentinel/quickstart-onboard). Como parte del proceso de incorporación, configurará los orígenes de datos.
-2. Configure el conector de [Microsoft Office 365 de datos de](/azure/sentinel/data-connectors-reference#microsoft-office-365) Azure Sentinel y, en configuración del conector, seleccione *Exchange*.
+1. [Incorporación a Microsoft Sentinel](/azure/sentinel/quickstart-onboard). Como parte del proceso de incorporación, configurará los orígenes de datos.
+2. Configure el conector de datos Microsoft Office 365 Microsoft Sentinel [y,](/azure/sentinel/data-connectors-reference#microsoft-office-365) en configuración del conector, *seleccione Exchange*.
 3. Configurar la consulta de búsqueda para recuperar alertas de cumplimiento de comunicaciones. Por ejemplo:
 
     *| OfficeActivity | donde OfficeWorkload == "Exchange" y Operation == "SupervisionRuleMatch" | ordenar por TimeGenerated*
@@ -84,7 +84,7 @@ Cuando usa Azure Sentinel para agregar coincidencias de directivas de cumplimien
 
     *| OfficeActivity | donde OfficeWorkload == "Exchange" y Operation == "SupervisionRuleMatch" y UserId == "User1@Contoso.com" | ordenar por TimeGenerated*
 
-Para obtener más información acerca de Microsoft 365 registros de auditoría de Office 365 recopilados por Azure Sentinel, consulte [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
+Para obtener más información acerca de los Microsoft 365 de auditoría de Office 365 recopilados por Microsoft Sentinel, consulte [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
 
 ## <a name="configure-communication-compliance-and-splunk-integration"></a>Configurar el cumplimiento de la comunicación y la integración de Splunk
 
@@ -106,7 +106,7 @@ En la tabla siguiente se muestran resultados de búsqueda de ejemplo para distin
 
 | Tipos de directivas | Resultados de búsqueda de ejemplo |
 | :------------------ | :--------------------------------------- |
-| Directiva que detecta una lista de palabras clave de tipo de información confidencial personalizada | { <br> CreationTime: 2021-09-17T16:29:57 <br> ID: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> ObjectId: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Operación: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM. Nota","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso. OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> Carga de trabajo: Exchange <br> } |
+| Directiva que detecta una lista de palabras clave de tipo de información confidencial personalizada | { <br> CreationTime: 2021-09-17T16:29:57 <br> ID: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> ObjectId: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Operación: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM. Nota","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> Carga de trabajo: Exchange <br> } |
 | Directiva que detecta un idioma inadecuado | { <br> CreationTime: 2021-09-17T23:44:35 <br> Id.: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> ObjectId: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operación: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer. Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> }  |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Configurar el cumplimiento de la comunicación con otras soluciones SIEM

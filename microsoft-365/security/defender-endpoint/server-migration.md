@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 48639d4d30a0cc95275fd0268381b53e60ee0708
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 6512dd38fbcdd0a257635431406f837f713456a6
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747379"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111572"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidor de la solución anterior de Microsoft Defender para endpoint basada en MMA
 
@@ -43,11 +43,11 @@ Estas instrucciones se aplican a la nueva solución unificada y al paquete de in
 > No se admiten las actualizaciones del sistema operativo con Microsoft Defender para endpoint instalado. Por favor, desinstale antes de continuar con una actualización.
 
 > [!NOTE]
-> Durante la versión preliminar, Microsoft Endpoint Configuration Manager completa de automatización e integración para realizar una actualización automatizada estará disponible en la versión 2111 de MECM. Desde la versión 2107, puede usar el nodo Endpoint Protection para la configuración, así como la directiva de grupo, PowerShell, Microsoft Endpoint Manager de inquilino o la configuración local. Además, puede aprovechar la funcionalidad existente en Microsoft Endpoint Configuration Manager para automatizar los pasos de actualización manuales; para los que se describen a continuación.
+> Durante la versión preliminar, Microsoft Endpoint Configuration Manager completa de automatización e integración para realizar una actualización automatizada estará disponible en la versión 2111 de MECM. Desde la versión 2107, puede usar el nodo Endpoint Protection para la configuración, así como la directiva de grupo, PowerShell, Microsoft Endpoint Manager de inquilino o la configuración local. Además, puede aprovechar la funcionalidad existente en Microsoft Endpoint Configuration Manager para automatizar los pasos de actualización manuales; métodos para los que se describen a continuación.
 
 ## <a name="installer-script"></a>Script del instalador
 
-Para facilitar las actualizaciones cuando Microsoft Endpoint Configuration Manager o Azure Defender no están en uso o aún no están disponibles para realizar la actualización, puede usar este [script de actualización](https://github.com/microsoft/mdefordownlevelserver). Puede ayudar a automatizar los siguientes pasos necesarios:
+Para facilitar las actualizaciones cuando Microsoft Endpoint Configuration Manager o Microsoft Defender para la nube no están en uso o aún no están disponibles para realizar la actualización, puede usar este [script de actualización](https://github.com/microsoft/mdefordownlevelserver). Puede ayudar a automatizar los siguientes pasos necesarios:
 
 1. Quite el área de trabajo oms para Microsoft Defender para endpoint (OPTIONAL).
 2. Quite System Center Endpoint Protection cliente si está instalado.
@@ -112,7 +112,7 @@ Para obtener más información, vea [Need to set Antivirus de Microsoft Defender
 
 ## <a name="other-migration-scenarios"></a>Otros escenarios de migración
 
-### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-azure-defender-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>Tiene un servidor que se ha incorporado con Microsoft Defender para endpoint basado en MMA. Tiene SCEP instalado (Windows Server 2012 R2) o Antivirus de Microsoft Defender (Windows Server 2016). Esta máquina no **se administra** a través de Azure Defender, Microsoft Endpoint Manager o Microsoft Endpoint Configuration Manager.
+### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-microsoft-defender-for-cloud-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>Tiene un servidor que se ha incorporado con Microsoft Defender para endpoint basado en MMA. Tiene SCEP instalado (Windows Server 2012 R2) o Antivirus de Microsoft Defender (Windows Server 2016). Esta máquina no **se administra** a través de Microsoft Defender para la nube, Microsoft Endpoint Manager o Microsoft Endpoint Configuration Manager.
 
 1. Actualice completamente el equipo, incluido Antivirus de Microsoft Defender (Windows Server 2016).
 2. Quite la configuración del área de trabajo de MMA para Microsoft Defender para endpoint. Consulte [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage).
@@ -126,7 +126,7 @@ Para obtener más información, vea [Need to set Antivirus de Microsoft Defender
 > [!TIP]
 > Puede usar el script del instalador para automatizar los pasos anteriores.
 
-### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-azure-defender-you-use-your-own-deployment-mechanism"></a>Tiene un servidor en el que desea instalar Microsoft Defender para endpoint. Tiene instalada una solución de protección de extremo que no sea de Microsoft detección y respuesta de puntos de conexión de conexión. No tiene la intención de usar Microsoft Endpoint Configuration Manager o Azure Defender. Use su propio mecanismo de implementación. 
+### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-microsoft-defender-for-cloud-you-use-your-own-deployment-mechanism"></a>Tiene un servidor en el que desea instalar Microsoft Defender para endpoint. Tiene instalada una solución de protección de extremo que no sea de Microsoft detección y respuesta de puntos de conexión de conexión. No tiene la intención de usar Microsoft Endpoint Configuration Manager o Microsoft Defender para la nube. Use su propio mecanismo de implementación. 
 
 1. Actualice completamente el equipo, incluido Antivirus de Microsoft Defender (Windows Server 2016).
 2. Instale el paquete de Microsoft Defender para endpoint para Windows Server 2012 R2 & 2016 y **habilite el modo pasivo**. Consulte [Install Antivirus de Microsoft Defender using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
@@ -146,10 +146,10 @@ Ruta de acceso: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protect
 
 Para obtener más información, vea [Need to set Antivirus de Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
-## <a name="azure-defender-scenarios"></a>Escenarios de Azure Defender
+## <a name="microsoft-defender-for-cloud-scenarios"></a>Escenarios de Microsoft Defender para la nube
 
-### <a name="youre-using-azure-defender-the-microsoft-monitoring-agent-mma-andor-microsoft-antimalware-for-azure-scep-are-installed-and-you-want-to-upgrade"></a>Estás usando Azure Defender. El Microsoft Monitoring Agent (MMA) y/o Microsoft Antimalware para Azure (SCEP) están instalados y desea actualizar.
-Si usa Azure Defender, puede aprovechar el proceso de actualización automatizada. Vea Proteger los puntos de conexión con la solución de EDR integrada del Centro de [seguridad: Microsoft Defender para endpoint](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration).
+### <a name="youre-using-microsoft-defender-for-cloud-the-microsoft-monitoring-agent-mma-andor-microsoft-antimalware-for-azure-scep-are-installed-and-you-want-to-upgrade"></a>Estás usando Microsoft Defender para la nube. El Microsoft Monitoring Agent (MMA) y/o Microsoft Antimalware para Azure (SCEP) están instalados y desea actualizar.
+Si usa Microsoft Defender para la nube, puede aprovechar el proceso de actualización automatizada. Consulte [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration).
 
 ## <a name="group-policy-configuration"></a>Configuración de directiva de grupo
 Para la configuración mediante la directiva de grupo, asegúrese de que está usando los archivos ADMX más recientes del almacén central para tener acceso a las opciones de directiva de Defender for Endpoint correctas. Consulta [Cómo crear y administrar la](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Tienda central para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**.

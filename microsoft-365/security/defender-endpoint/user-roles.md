@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 02e2d3249bbec9c4c0c4211a53cae0cee1789c1f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 06b5ecb4b07259392bc0d90465dbc1fa2459bd85
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960855"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110540"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Crear y administrar roles para el control de acceso basado en roles
 
@@ -76,7 +76,7 @@ Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender
     > [!NOTE]
     > Esta configuración solo está disponible en el rol Administrador de Microsoft Defender para puntos de conexión (predeterminado).
 
-- **Administrar la configuración** de seguridad en el Centro de seguridad: configure la configuración de supresión de alertas, administre las exclusiones de carpetas para la automatización, los dispositivos integrados y externos, y administre las notificaciones de correo electrónico, administre el laboratorio de evaluación
+- **Administrar la configuración** de seguridad en Defender para la nube: configure las opciones de supresión de alertas, administre las exclusiones de carpetas para la automatización, los dispositivos integrados y externos, y administre las notificaciones de correo electrónico, administre el laboratorio de evaluación
 
 - **Capacidades de respuesta en directo**
   - **Comandos** básicos:

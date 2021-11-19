@@ -1,5 +1,5 @@
 ---
-title: Incorporar dispositivos y configurar las capacidades de Microsoft Defender para puntos de conexión
+title: Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión
 description: Incorpore Windows 10 dispositivos, servidores, dispositivos que no Windows y aprenda a ejecutar una prueba de detección.
 keywords: incorporación, incorporación de Microsoft Defender para endpoint, sccm, directiva de grupo, mdm, script local, prueba de detección
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d029e2b896a194adce743a678e10c366ce71341
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 5ee4039e2cddc6b071ac8f158d3754899f5d3f7e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239616"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110588"
 ---
-# <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Incorporar dispositivos y configurar las capacidades de Microsoft Defender para puntos de conexión
+# <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -60,8 +60,8 @@ En la tabla siguiente se enumeran las herramientas disponibles en función del e
 
 | Punto de conexión     | Opciones de herramientas                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)  |
-| **macOS**    | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
+| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender para la nube](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
 | **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
@@ -85,11 +85,11 @@ Después de incorporar los dispositivos, tendrás que configurar las otras funci
 
 ## <a name="supported-capabilities-for-windows-devices"></a>Funcionalidades admitidas para Windows dispositivos
 
-|Sistema operativo  |Windows 10 & 11  |Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016 [[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
+|Sistema operativo  |Windows 10 & 11  |Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup>  |Windows Server 2016 [ <sup> [1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
 |**Prevención**    |         |         |         |         |         |
 |Reglas de reducción de superficie de ataque     |    v     |   v      |    v     |    v     |    v     |
-|Control de dispositivo     |     v    |    N     |    N     |    N     |    N     |  
+|Control de dispositivos     |     v    |    N     |    N     |    N     |    N     |  
 |Firewall     |      v   |    v     |     v    |    v    |    v   |
 |Protección de red     |      v   |    v     |     v    |    v    |    v   |
 |Protección de última generación     |      v   |    v     |     v    |    v    |    v   |
@@ -100,7 +100,7 @@ Después de incorporar los dispositivos, tendrás que configurar las otras funci
 |Búsqueda avanzada     |      v   |    v     |     v    |    v    |    v   |
 |Indicadores de archivo personalizados     |      v   |    v     |     v    |    v    |    v   |
 |Indicadores de red personalizados     |      v   |    v     |     v    |    v    |    v   |
-|EDR Bloquear & modo pasivo     |      v   |    v     |     v    |    v    |    v   |
+|EDR bloquear & modo pasivo     |      v   |    v     |     v    |    v    |    v   |
 |Sensor de detección de sensores     |      v   |    v     |     v    |    v    |    v   |
 |Detección & de dispositivos de red de endpoint     |      v   |    N     |     N    |    N    |    N   |
 |||||||

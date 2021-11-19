@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias de su inquilino. Busca una guía para configurar un servicio o una aplicación que necesites ejecutar.
-ms.openlocfilehash: b95437a3aed5409900d5006859b7099b1ff2443e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f55631cf1687cc18e1e890d72b557ad288021fa
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170204"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111344"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
 Microsoft 365 y Office 365 de configuración le proporcionan instrucciones y recursos personalizados para planear e implementar el espacio empresarial, las aplicaciones y los servicios. Estas guías se crean con [](https://www.microsoft.com/fasttrack/microsoft-365) los mismos procedimientos recomendados que comparten Microsoft 365 FastTrack especialistas de incorporación en interacciones individuales, y están disponibles para todos los administradores dentro del Centro de administración de Microsoft 365. Proporcionan información sobre la configuración del producto, habilitan características de seguridad, implementan herramientas de colaboración y proporcionan scripts para acelerar las implementaciones avanzadas.
 
 > [!NOTE]
-> Debe tener asignado un rol de administrador como Lector global para tener acceso a las Microsoft 365 de configuración. Solo los administradores con el rol Administrador global pueden usar las guías para cambiar la configuración del espacio empresarial. 
+> Debe tener asignado un rol de administrador como Lector global para tener acceso a las Microsoft 365 de configuración. Solo los administradores con el rol Administrador global pueden usar las guías para cambiar la configuración del espacio empresarial.
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Cómo obtener acceso a las guías de configuración en el Centro de administración de Microsoft 365
 
@@ -75,7 +75,7 @@ La [guía de configuración de](https://aka.ms/remoteworksetup) trabajo remoto p
 
 Recibirás instrucciones para optimizar el tráfico de dispositivos de los trabajadores remotos a los recursos de Microsoft 365 en la nube y la red de la organización, lo que reducirá la tensión en la infraestructura vpn de acceso remoto.
 
-### <a name="windows-virtual-desktop-setup-guide"></a>Windows Guía de configuración de Escritorio virtual
+### <a name="windows-virtual-desktop-setup-guide"></a>Windows de configuración de Escritorio virtual
 
 Windows Virtual Desktop es un servicio completo de virtualización de aplicaciones y escritorio que se ejecuta en la nube. Es la única infraestructura de escritorio virtual (VDI) que ofrece administración simplificada, Windows 10 de varias sesiones, optimizaciones para Aplicaciones Microsoft 365 y compatibilidad con entornos de Servicios de escritorio remoto (RDS). Implemente y escale sus Windows escritorios y aplicaciones en Azure en minutos y obtenga características integradas de seguridad y cumplimiento.
 
@@ -103,9 +103,9 @@ Use la guía de configuración de administración co-administración de [Intune]
 
 ## <a name="guides-for-authentication-and-access"></a>Guías para la autenticación y el acceso
 
-### <a name="azure-ad-setup-guide"></a>Guía de configuración de Azure AD
+### <a name="azure-ad-setup-guide"></a>Azure AD de configuración
 
-La [guía de configuración de Azure AD](https://aka.ms/aadpguidance) proporciona información para garantizar que su organización tenga una base de seguridad sólida. En esta guía, configurarás características iniciales, como el control de acceso basado en roles de Azure (RBAC de Azure) para administradores, Azure AD Conectar para el directorio local y Azure AD Conectar Health, para que puedas supervisar el estado de tu identidad híbrida durante las sincronizaciones automatizadas.
+La [Azure AD de configuración proporciona](https://aka.ms/aadpguidance) información para garantizar que su organización tenga una base de seguridad sólida. En esta guía, configurará las características iniciales, como el control de acceso basado en roles de Azure (RBAC de Azure) para administradores, Azure AD Conectar para el directorio local y Azure AD Conectar Health, para que pueda supervisar el estado de su identidad híbrida durante las sincronizaciones automatizadas.
 
 También incluye información esencial sobre cómo habilitar los restablecimientos de contraseñas sin intervención del administrador, el acceso condicional y el inicio de sesión integrado de terceros, incluida la protección de identidad avanzada opcional y la automatización del aprovisionamiento de usuarios.
 
@@ -145,8 +145,8 @@ Con la [Microsoft Intune de](https://aka.ms/intunesetupguide)configuración, con
 
 La [guía de configuración de Microsoft Defender para](https://aka.ms/mdatpsetup) endpoints proporciona instrucciones que ayudarán a la red empresarial a prevenir, detectar, investigar y responder a amenazas avanzadas. Realice una evaluación fundamentada de la vulnerabilidad de su organización y decida qué métodos de configuración y paquete de implementación son los mejores.
 
->[!NOTE]
->Se requiere una licencia por volumen de Microsoft para Microsoft Defender para endpoint.
+> [!NOTE]
+> Se requiere una licencia por volumen de Microsoft para Microsoft Defender para endpoint.
 
 ### <a name="exchange-online-protection-setup-guide"></a>Exchange Online Protection de configuración
 
@@ -160,7 +160,7 @@ La guía de configuración de [Microsoft Defender para Office 365](https://aka.m
 
 ### <a name="microsoft-defender-for-identity-setup-guide"></a>Guía de configuración de Microsoft Defender para identidades
 
-La [guía de configuración de Microsoft Defender para](https://aka.ms/DefenderforIdentitysetup) la identidad proporciona instrucciones de configuración de soluciones de seguridad para identificar, detectar e investigar amenazas avanzadas que pueden poner en peligro las identidades de los usuarios. Entre ellas se incluyen la detección de actividades de usuario sospechosas y acciones malintencionadas dirigidas a su organización. Creará una instancia de Defender for Identity, se conectará a Active Directory de su organización y, a continuación, configurará sensores, alertas, notificaciones y configurará las preferencias del portal único. 
+La [guía de configuración de Microsoft Defender para](https://aka.ms/DefenderforIdentitysetup) la identidad proporciona instrucciones de configuración de soluciones de seguridad para identificar, detectar e investigar amenazas avanzadas que pueden poner en peligro las identidades de los usuarios. Entre ellas se incluyen la detección de actividades de usuario sospechosas y acciones malintencionadas dirigidas a su organización. Creará una instancia de Defender for Identity, se conectará a Active Directory de su organización y, a continuación, configurará sensores, alertas, notificaciones y configurará las preferencias del portal único.
 
 ### <a name="microsoft-information-protection-setup-guide"></a>protección de la información de Microsoft de configuración
 
@@ -170,9 +170,9 @@ Obtenga información general sobre las capacidades que puede aplicar a su estrat
 
 La guía de configuración de gobierno de [Microsoft Information](https://aka.ms/migsetupguide) le proporciona la información que necesitará para configurar y administrar la estrategia de gobierno de su organización, para asegurarse de que los datos se clasifican y administran de acuerdo con las directrices de ciclo de vida específicas que establezca. Con esta guía, aprenderá a crear, aplicar automáticamente o publicar etiquetas, directivas de etiquetas y directivas de retención que se aplican a los registros de cumplimiento y contenido reutilizables de la organización. También encontrará información sobre la importación de archivos CSV con un plan de archivos para escenarios masivos o para aplicarlos manualmente a documentos individuales.
 
-### <a name="microsoft-cloud-app-security-setup-guide"></a>Microsoft Cloud App Security de configuración
+### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>Guía de configuración de Microsoft Defender para Aplicaciones en la nube
 
-La [Microsoft Cloud App Security de configuración proporciona](https://aka.ms/cloudappsecuritysetup) instrucciones de implementación y administración fáciles de seguir para configurar la solución de detección en la nube. Con Cloud Discovery, integrarás las aplicaciones de seguridad compatibles y, a continuación, usarás registros de tráfico para detectar y analizar dinámicamente las aplicaciones en la nube que usa tu organización. También configurará las características disponibles a través de la solución Cloud App Security, incluidas las directivas de detección de amenazas para identificar el uso de alto riesgo, las directivas de protección de la información para definir el acceso y los controles de sesión en tiempo real para supervisar la actividad. Con estas características, el entorno obtiene mayor visibilidad, control sobre el movimiento de datos y análisis para identificar y combatir ciberamenazas en todos los servicios en la nube de Microsoft y de terceros.
+La [guía de configuración de Microsoft Defender para Aplicaciones](https://aka.ms/cloudappsecuritysetup) en la nube proporciona instrucciones de implementación y administración fáciles de seguir para configurar la solución de detección en la nube. Con Cloud Discovery, integrarás las aplicaciones de seguridad compatibles y, a continuación, usarás registros de tráfico para detectar y analizar dinámicamente las aplicaciones en la nube que usa tu organización. También configurará las características disponibles a través de la solución defender para aplicaciones en la nube, incluidas las directivas de detección de amenazas para identificar el uso de alto riesgo, las directivas de protección de la información para definir el acceso y los controles de sesión en tiempo real para supervisar la actividad. Con estas características, el entorno obtiene mayor visibilidad, control sobre el movimiento de datos y análisis para identificar y combatir ciberamenazas en todos los servicios en la nube de Microsoft y de terceros.
 
 ## <a name="guides-for-collaboration"></a>Guías de colaboración
 

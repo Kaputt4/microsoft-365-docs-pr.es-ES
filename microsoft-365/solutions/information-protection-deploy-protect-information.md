@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Implemente Microsoft 365 seguridad y cumplimiento normativo y proteja su información personal.
-ms.openlocfilehash: d605147b24c4f6ef3a12eedab2243bcaa4c6745b
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 856df69d60df7ea255118bd559377e3d54267991
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785935"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110300"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 
@@ -72,14 +72,14 @@ Las soluciones de Protección [de la](../compliance/information-protection.md) i
   - Cliente/nivel de contenido
   - Automatizado para datos en reposo en SharePoint y OneDrive
 - Prevención de pérdida de datos (DLP)
-- [Microsoft 365 Prevención de pérdida de datos de puntos de conexión](../compliance/endpoint-dlp-learn-about.md)
+- [Microsoft 365 prevención de pérdida de datos del punto de conexión](../compliance/endpoint-dlp-learn-about.md)
 - [Cifrado de mensajes de Office 365 nuevas funcionalidades (OME) y](../compliance/ome.md) cifrado de [mensajes](../compliance/ome-advanced-message-encryption.md) avanzado de OME
 
 Además, la protección del nivel de sitio y biblioteca son mecanismos importantes que deben incluirse en cualquier esquema de protección.
 
 Para obtener información sobre otras capacidades de protección de información fuera de Microsoft 365, vea:
 
-- [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
+- [Seguridad de aplicaciones en la nube de Microsoft (Defender para aplicaciones en la nube)](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
@@ -114,7 +114,7 @@ Complete estas actividades antes de implementar cualquiera de las funciones basa
 
       Si está planeando usar el etiquetado de confidencialidad moderno para la protección de correo electrónico y los métodos de cifrado de correo electrónico existentes, como OME, pueden coexistir, pero debe comprender los escenarios en los que se debe aplicar cualquiera de los dos. Consulte [Cifrado de mensajes de Office 365 nuevas funcionalidades (OME),](#office-365-message-encryption-ome-new-capabilities)que incluye una tabla que compara la protección de tipo de etiqueta de confidencialidad moderna con la protección basada en OME.
 
-3. Planear la integración en un esquema de protección de la información más amplio. Además de la coexistencia con OME, las etiquetas de confidencialidad se pueden usar en paralelo, como Microsoft 365 prevención de pérdida de datos (DLP) y Microsoft Cloud App Security. Vea [Microsoft Information Protection en Microsoft 365](../compliance/information-protection.md) para lograr sus objetivos de protección de la información relacionados con la privacidad de datos.
+3. Planear la integración en un esquema de protección de la información más amplio. Además de la coexistencia con OME, las etiquetas de confidencialidad se pueden usar en paralelo, como Microsoft 365 prevención de pérdida de datos (DLP) y Microsoft Defender para aplicaciones en la nube. Vea [Microsoft Information Protection en Microsoft 365](../compliance/information-protection.md) para lograr sus objetivos de protección de la información relacionados con la privacidad de datos.
 
 4. Desarrollar un esquema de clasificación y control de etiquetas de confidencialidad. Vea [Clasificación de datos y Taxonomía de etiquetas de confidencialidad.](https://aka.ms/dataclassificationwhitepaper)
 

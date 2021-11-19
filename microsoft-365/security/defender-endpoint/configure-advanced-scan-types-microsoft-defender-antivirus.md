@@ -16,12 +16,12 @@ ms.technology: mde
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 61092c0656f31bb04dd0f63ff61a55571781c160
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: dc6f8e49cbf23809b7980d15f40b5081af469c44
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882434"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111836"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 
@@ -75,7 +75,7 @@ Para obtener más información sobre cómo Microsoft Endpoint Manager (rama actu
 Para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender, vea
 
 - [Administrar Antivirus de Microsoft Defender con cmdlets de PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Cmdlets de Defender](/powershell/module/defender/)
+- [Antivirus de Microsoft Defender cmdlets](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Usar WMI para configurar opciones de examen
 

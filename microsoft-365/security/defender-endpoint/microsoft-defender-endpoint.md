@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 860f43fe8bf82a9aed7983085b2b5d774229e2d0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4da096240b1c2d547eca1b2415dca0dbc056c9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159431"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110468"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -137,10 +137,10 @@ Integre Microsoft Defender para punto de conexión en los flujos de trabajo exis
 
 Defender para punto de conexión se integra directamente con varias soluciones de Microsoft, entre las que se incluyen:
 
-- Azure Defender
-- Azure Sentinel
+- Microsoft Defender for Cloud
+- Microsoft Sentinel
 - Intune
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 - Microsoft Defender para Office
 - Skype Empresarial
@@ -160,4 +160,3 @@ Con esta ruta de aprendizaje de Microsoft Learn, podrá comprender Defender para
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/paths/defender-endpoint-fundamentals/)
-

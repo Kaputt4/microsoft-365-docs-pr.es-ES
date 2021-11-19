@@ -1,5 +1,5 @@
 ---
-title: Introducción a tipos exactos de información confidencial basada en coincidencias de datos
+title: Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Introducción a la creación de tipos exactos de información confidencial basada en coincidencias de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3621ccdedb5966ae7c70e549c5f0538143df0248
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 469cc7262ff1eef92d9a03e04070dc353e12b445
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914872"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110504"
 ---
-# <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>Introducción a tipos exactos de información confidencial basada en coincidencias de datos
+# <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos
 
 Crear y hacer disponible un tipo de información confidencial basado en EDM (EDM) exacto es un proceso de varias fases. Se pueden usar en directivas de prevención de pérdida de datos, exhibición de documentos electrónicos y determinadas tareas de gobierno de contenido En este artículo se describen el flujo de trabajo y los vínculos a los procedimientos para cada una de las fases
 
@@ -46,7 +46,7 @@ Vea la [descripción del servicio de prevención de pérdida](/office365/service
 |Portal|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
 |Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
-|Centro de seguridad de Microsoft 365|security.microsoft.com|security.microsoft.us|security.apps.mil|
+|Portal de Microsoft 365 Defender|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Centro de cumplimiento de Microsoft 365|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
 ## <a name="the-work-flow-at-a-glance"></a>El flujo de trabajo de un vistazo
@@ -62,7 +62,7 @@ Vea la [descripción del servicio de prevención de pérdida](/office365/service
 |[Fase 4: Crear un paquete de regla o tipo de información confidencial de coincidencia de datos exactos](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- Acceso al Centro de Microsoft 365 cumplimiento |
 |[Probar un tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - Acceso al Centro de Microsoft 365 cumplimiento
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
-- [Exportar datos de origen para el tipo exacto de información confidencial basada en coincidencias de datos](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
+- [Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)

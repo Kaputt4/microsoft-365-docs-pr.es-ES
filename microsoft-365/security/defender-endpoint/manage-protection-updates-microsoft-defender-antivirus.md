@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 082b93be0a540e2d51cb81315180876c308b3fad
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 0a789c87a6e0988c5b5b7ca57233ede1ad1a8408
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883154"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111152"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -41,7 +41,7 @@ Mantener la protección antivirus actualizada es fundamental. Hay dos componente
 En este artículo se describe cómo especificar desde dónde deben descargarse las actualizaciones (esto también se conoce como orden de reserva). Consulte [Manage Antivirus de Microsoft Defender updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md) topic para obtener información general sobre cómo funcionan las actualizaciones y cómo configurar otros aspectos de las actualizaciones (como las actualizaciones de programación).
 
 > [!IMPORTANT]
-> Antivirus de Microsoft Defender Las actualizaciones de inteligencia de seguridad se entregan a través de Windows Update y, a partir del lunes 21 de octubre de 2019, todas las actualizaciones de inteligencia de seguridad se firmarán exclusivamente con SHA-2. Los dispositivos deben actualizarse para admitir SHA-2 con el fin de actualizar la inteligencia de seguridad. Para obtener más información, vea [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
+> Antivirus de Microsoft Defender actualizaciones de inteligencia de seguridad se entregan a través de Windows Update y, a partir del lunes 21 de octubre de 2019, todas las actualizaciones de inteligencia de seguridad se firmarán exclusivamente con SHA-2. Los dispositivos deben actualizarse para admitir SHA-2 con el fin de actualizar la inteligencia de seguridad. Para obtener más información, vea [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 <a id="fallback-order"></a>
 
@@ -59,10 +59,10 @@ Cuanto más antiguas sean las actualizaciones de un punto de conexión, mayor se
 Hay cinco ubicaciones donde puede especificar dónde debe obtener actualizaciones un punto de conexión:
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows de actualización de servidor](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup> [[1](#fn1)]<sup></sup>  
+- [Windows de actualización de servidor](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) [ <sup> [1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Recurso compartido de archivos de red](#unc-share)
-- [Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup> de Microsoft [[2](#fn1)]<sup></sup>
+- [Actualizaciones de inteligencia de seguridad Antivirus de Microsoft Defender y otros antimalware](https://www.microsoft.com/wdsi/defenderupdates) de Microsoft <sup> [[2](#fn1)]<sup></sup>
 
 (<a id="fn1">1</a>) Servidor de actualización interna de definiciones de Intune: si usa SCCM/SUP para obtener actualizaciones de definiciones para Antivirus de Microsoft Defender y necesita tener acceso Windows Update en dispositivos cliente bloqueados, puede realizar la transición a la administración y descargar la carga de trabajo de protección de puntos de conexión en Intune. En la directiva de AntiMalware configurada en Intune hay una opción para el "servidor de actualización de definiciones internas" que se puede configurar para usar WSUS local como origen de actualización. Esto le ayuda a controlar qué actualizaciones del servidor WU oficial están aprobadas para la empresa y también ayuda a proxy y a guardar tráfico de red en la red Windows UPdates oficial.
 
@@ -81,11 +81,11 @@ Cada origen tiene escenarios típicos que dependen de la configuración de la re
 
 |Ubicación|Ejemplo ficticio|
 |---|---|
-|Windows Servicio de actualización de servidor|Está usando el Windows de actualización de servidor para administrar las actualizaciones de la red.|
+|Windows de actualización de servidor|Está usando el Windows de actualización de servidor para administrar las actualizaciones de la red.|
 |Microsoft Update|Desea que los puntos de conexión se conecten directamente a Microsoft Update. Esto puede ser útil para los puntos de conexión que se conectan de forma irregular a la red empresarial, o si no usa Windows servicio de actualización de servidor para administrar las actualizaciones.|
 |Compartir archivos|Tiene dispositivos no conectados a Internet (como máquinas virtuales). Puede usar el host de vm conectado a Internet para descargar las actualizaciones en un recurso compartido de red, desde el que las máquinas virtuales pueden obtener las actualizaciones. Consulte la [guía de implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md) para obtener información sobre cómo se pueden usar recursos compartidos de archivos en entornos de infraestructura de escritorio virtual (VDI).|
 |Microsoft Endpoint Manager|Está usando Microsoft Endpoint Manager para actualizar los puntos de conexión.|
-|Actualizaciones de inteligencia de seguridad Antivirus de Microsoft Defender y otros antimalware de Microsoft (anteriormente denominadas MMPC)|[Asegúrese de que los dispositivos estén actualizados para admitir SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus de Microsoft Defender Las actualizaciones de inteligencia de seguridad se entregan a través de Windows Update y, a partir del lunes 21 de octubre de 2019, las actualizaciones de inteligencia de seguridad se firmarán exclusivamente con SHA-2. <br/>Descargue las actualizaciones de protección más recientes debido a una infección reciente o para ayudar a aprovisionar una imagen base sólida para la [implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md). Por lo general, esta opción solo se debe usar como origen final de reserva y no como origen principal. Solo se usará si las actualizaciones no se pueden descargar desde Windows Server Update Service o Microsoft Update durante un número especificado [de días](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
+|Actualizaciones de inteligencia de seguridad Antivirus de Microsoft Defender y otros antimalware de Microsoft (anteriormente denominadas MMPC)|[Asegúrese de que los dispositivos estén actualizados para admitir SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus de Microsoft Defender las actualizaciones de inteligencia de seguridad se entregan a través de Windows Update y, a partir del lunes 21 de octubre de 2019, las actualizaciones de inteligencia de seguridad se firmarán exclusivamente con SHA-2. <br/>Descargue las actualizaciones de protección más recientes debido a una infección reciente o para ayudar a aprovisionar una imagen base sólida para la [implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md). Por lo general, esta opción solo se debe usar como origen final de reserva y no como origen principal. Solo se usará si las actualizaciones no se pueden descargar desde Windows Server Update Service o Microsoft Update durante un número especificado [de días](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 Puede administrar el orden en que se usan los orígenes de actualización con la directiva de grupo, los Microsoft Endpoint Configuration Manager, los cmdlets de PowerShell y WMI.
 
@@ -139,7 +139,7 @@ Vea los siguientes artículos para obtener más información:
 - [Set-MpPreference -SignatureFallbackOrder](/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](/powershell/module/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Cmdlets de Defender](/powershell/module/defender/index)
+- [Cmdlets de Defender para la nube](/powershell/module/defender/index)
 
 ## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>Use Windows Management Instruction (WMI) para administrar la ubicación de actualización
 

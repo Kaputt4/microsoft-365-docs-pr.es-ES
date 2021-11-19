@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8933c96d96e59f4b1a3c0b5956bf3248f2eb73d2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1c15b0fe82e2d6dbadce7fe7a5efaa73c6b45940
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785629"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110924"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -59,7 +59,7 @@ Al crear un nuevo indicador (IoC), hay disponibles una o varias de las siguiente
 
 - Permitir: se permitirá que el IoC se ejecute en los dispositivos.
 - Auditoría: se activará una alerta cuando se ejecute ioC.
-- Warn: IoC le pedirá una advertencia de que el usuario puede omitir (solo MCAS) 
+- Advertencia: IoC le pedirá una advertencia de que el usuario puede omitir (solo Defender para aplicaciones en la nube)
 - Bloquear la ejecución: no se permitirá la ejecución de IoC.
 - Bloquear y corregir: el IoC no podrá ejecutarse y se aplicará una acción de corrección al IoC.
 

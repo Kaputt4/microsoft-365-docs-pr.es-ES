@@ -21,12 +21,12 @@ description: Obtenga información sobre cómo colocar retenciones en los custodi
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 4d7e582125455d693459dfd3cef343614415b97e
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: cc149c65391642aebb124a96d0681ab1d99c04d1
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756496"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111032"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar retenciones en Advanced eDiscovery
 
@@ -124,7 +124,7 @@ Microsoft Teams se basa en Office 365 grupos. Por lo tanto, colocarlos en espera
 
   - Para poner contenido ubicado en grupos Microsoft 365 y Microsoft Teams en espera, debe especificar el buzón y el sitio SharePoint asociado con un grupo o equipo.
   
-  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo Microsoft 365 o microsoft team. Esta es una buena forma de obtener la dirección URL del sitio asociado con un grupo de Microsoft 365 o un equipo de Microsoft. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Microsoft 365 denominado Senior Leadership Team:
+  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo Microsoft 365 o microsoft team. Esta es una buena forma de obtener la dirección URL del sitio asociado con un grupo de Microsoft 365 o un equipo de Microsoft. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Microsoft 365 denominado Senior Leadership Team:
 
     ```console
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -137,7 +137,7 @@ Microsoft Teams se basa en Office 365 grupos. Por lo tanto, colocarlos en espera
     > [!NOTE]
     > Para ejecutar el cmdlet Get-UnifiedGroup debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista.
 
-  - Cuando se busca el buzón de un usuario, no se buscará ningún grupo de Microsoft 365 o equipo de Microsoft del que el usuario sea miembro. Del mismo modo, cuando se coloca una retención Microsoft 365 grupo o Microsoft Team, solo se ponen en espera el buzón de grupo y el sitio de grupo; los buzones y OneDrive para la Empresa de los miembros del grupo no se ponen en espera a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Microsoft 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing Custodians in Advanced eDiscovery). Si el grupo Microsoft 365 o Microsoft Team no es atribuible a un único custodio, considere la posibilidad de agregar el origen a una retención que no sea de custodia.
+  - Cuando se busca el buzón de un usuario, no se buscará ningún grupo de Microsoft 365 o equipo de Microsoft del que el usuario sea miembro. Del mismo modo, cuando se coloca una retención de grupo de Microsoft 365 o microsoft team, solo el buzón de grupo y el sitio de grupo se colocan en espera; los buzones y los sitios OneDrive para la Empresa de los miembros del grupo no se colocan en espera a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Microsoft 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing Custodians in Advanced eDiscovery). Si el grupo Microsoft 365 o Microsoft Team no es atribuible a un único custodio, considere la posibilidad de agregar el origen a una retención que no sea de custodia.
   - Para obtener una lista de los miembros de un grupo de Microsoft 365 o de Microsoft Team, puede ver las propiedades en la página Grupos principales en  >  [](https://go.microsoft.com/fwlink/p/?linkid=2052855) el Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
     ```powershell

@@ -19,12 +19,12 @@ ms.custom:
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fd23f0cdf35a9b7e236a957fed0922192091beb3
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 8103aad218f4e439c5eb3ebf6c76f369715afd84
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963160"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111248"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>Informar y solucionar problemas de Microsoft Defender para las reglas de ASR de punto de conexión
 
@@ -35,10 +35,10 @@ ms.locfileid: "60963160"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de</a> seguridad es la nueva interfaz para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de Microsoft. Aquí podrá ver fácilmente el estado de seguridad de su organización; configurar dispositivos, usuarios y aplicaciones, así como recibir alertas sobre actividad sospechosa. El Centro de seguridad de Microsoft 365 tiene como fin que los equipos de administración de seguridad y operaciones de seguridad administren y protejan mejor su organización. Visite el centro Microsoft 365 seguridad en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> .
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender es</a> la nueva interfaz para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de Microsoft. Aquí podrá ver fácilmente el estado de seguridad de su organización; configurar dispositivos, usuarios y aplicaciones, así como recibir alertas sobre actividad sospechosa. El Microsoft 365 Defender está pensado para que los administradores de seguridad y los equipos de operaciones de seguridad administren y protejan mejor su organización. Visite el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> .
 
-En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de seguridad,</a>le ofrecemos una vista completa de la configuración y los eventos de reglas ASR actuales en su estado. Tenga en cuenta que los dispositivos deben incorporarse al servicio Microsoft Defender para endpoints para que estos informes se rellenen.
-Esta es una captura de pantalla del centro Microsoft 365 de seguridad (en **Reports** \> **Devices** \> **Attack surface reduction**). En el nivel de dispositivo, selecciona **Configuración en** el panel Reglas de reducción de **superficie de** ataque. Se muestra la siguiente pantalla, donde puedes seleccionar un dispositivo específico y comprobar su configuración de regla ASR individual.
+En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>le ofrecemos una vista completa de la configuración y los eventos de reglas asr actuales en su estado. Tenga en cuenta que los dispositivos deben incorporarse al servicio Microsoft Defender para endpoints para que estos informes se rellenen.
+Esta es una captura de pantalla del portal de Microsoft 365 Defender (en **Reports** \> **Devices** \> **Attack surface reduction**). En el nivel de dispositivo, selecciona **Configuración en** el panel Reglas de reducción de **superficie de** ataque. Se muestra la siguiente pantalla, donde puedes seleccionar un dispositivo específico y comprobar su configuración de regla ASR individual.
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="Pantalla reglas ASR.":::
 

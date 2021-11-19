@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 description: Obtenga información sobre el Microsoft 365 de soluciones, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 8a2daf2bf3dd8c3260be24a6b09761e5a6ea3e92
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: d2a21c81ac0753daef94dbcbd169d9bfe6b62bae
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786055"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110864"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -94,7 +94,7 @@ En primer lugar, asegúrese de que tiene las licencias y permisos adecuados. A c
 - **Obtenga información sobre y cree directivas de cumplimiento de comunicaciones** para identificar y corregir rápidamente infracciones de directivas de código de conducta corporativas. Consulte [Cumplimiento de comunicaciones.](communication-compliance.md)
 
 - **Microsoft Information Protection**, aprenda cómo Microsoft 365 soluciones le ayudan a descubrir, clasificar y proteger información confidencial dondequiera que viva o viaje.
-    - **Familiarizarse con y configurar Microsoft Cloud App Security**. Consulte [Inicio rápido: Introducción a Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
+    - **Familiarizarse con y configurar Microsoft Defender para aplicaciones en la nube.** Consulta [Inicio rápido: Introducción a Microsoft Defender para aplicaciones en la nube.](/cloud-app-security/getting-started-with-cloud-app-security)
     - **Introducción a los clasificadores**. Clasificar el contenido y, a continuación, etiquetar para que pueda protegerse y controlarse correctamente es el punto de partida de la disciplina de protección de la información. Consulte [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
 - **Visite el catálogo de Microsoft 365** de soluciones a menudo y asegúrese de revisar nuevas soluciones para ayudarle con sus necesidades de cumplimiento. Inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, **seleccione Catálogo** en el panel de navegación izquierdo.

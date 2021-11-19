@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 09e4b386d61835f4e15e208aaa64c69ddf85e112
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b1b9c6e2dbb414aea8f40ccafacb338e66266bae
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162993"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109064"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones de partners en Microsoft Defender para endpoint
 
@@ -54,7 +54,7 @@ Microsoft Defender para endpoint se integra perfectamente con las soluciones de 
 Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de AttackIQ.](images/attackiq-logo.png)|[Plataforma AttackIQ](https://go.microsoft.com/fwlink/?linkid=2103502)|La plataforma AttackIQ valida que Defender for Endpoint se configura correctamente iniciando ataques continuos de forma segura en activos de producción
-![Imagen del logotipo de Azure Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Transmitir alertas de Microsoft Defender para endpoint en Azure Sentinel
+![Imagen del logotipo de Microsoft Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Transmitir alertas de Microsoft Defender para endpoint en Microsoft Sentinel
 ![Imagen del logotipo de Cymulate.](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Correlacionar los resultados de Defender para puntos de conexión con ataques simulados para validar acciones de detección precisas y respuestas eficaces
 ![Imagen del logotipo de seguridad elástico.](images/elastic-security-logo.png)|[Seguridad elástica](https://go.microsoft.com/fwlink/?linkid=2139303)|Elastic Security es una solución libre y abierta para prevenir, detectar y responder a amenazas
 ![Imagen del logotipo de IBM QRadar.](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configurar IBM QRadar para recopilar detecciones de Defender for Endpoint
@@ -111,7 +111,7 @@ Logotipo|Nombre del partner|Descripción
 Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de Cyren Web Filter.](images/cyren-logo.png)|[Filtro web de Cyren](https://go.microsoft.com/fwlink/?linkid=2108221)|Mejorar defender para el punto de conexión con filtrado web avanzado
-![Imagen del logotipo de Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Proporciona prevención avanzada de amenazas con tecnología de defensa de destino móvil. Integra los datos forenses directamente en los paneles del Centro de seguridad WD para ayudar a priorizar las alertas, determinar la puntuación de riesgo del dispositivo y visualizar la escala de tiempo completa de ataques, incluida la información de memoria interna
+![Imagen del logotipo de Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Proporciona prevención avanzada de amenazas con tecnología de defensa de destino móvil. Integra los datos forenses directamente en los paneles de WD Defender para la nube para ayudar a priorizar las alertas, determinar la puntuación de riesgo del dispositivo y visualizar la escala de tiempo completa de ataques, incluida la información de memoria interna
 ![Imagen del logotipo de THOR Cloud.](images/nextron-thor-logo.png)|[NUBE DE THOR](https://go.microsoft.com/fwlink/?linkid=862988)|Proporciona exámenes forenses en directo a petición con una base de firmas centrada en las amenazas persistentes
 
 ## <a name="siem-integration"></a>Integración de SIEM

@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 7475a9efa6cd8059b03e97786b2689fbfec4f5d5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 36938380f46400b04e642d9cd8dfc4076e679a32
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962764"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111188"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistentes en Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "60962764"
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **VDI persistente**  -  [La incorporación de una máquina VDI](configure-endpoints.md) persistente en Microsoft Defender para endpoint se controla de la misma forma que se incorporaría a una máquina física, como un equipo de escritorio o portátil. La directiva de grupo, Microsoft Endpoint Manager y otros métodos se pueden usar para incorporar una máquina persistente. En el Centro de seguridad, ( en incorporación, seleccione el método de incorporación preferido y https://security.microsoft.com) siga las instrucciones para ese tipo. 
+  > **VDI persistente**  -  [La incorporación de una máquina VDI](configure-endpoints.md) persistente en Microsoft Defender para endpoint se controla de la misma forma que se incorporaría a una máquina física, como un equipo de escritorio o portátil. La directiva de grupo, Microsoft Endpoint Manager y otros métodos se pueden usar para incorporar una máquina persistente. En el portal Microsoft 365 Defender, ( en incorporación, seleccione el método de incorporación preferido y siga las https://security.microsoft.com) instrucciones para ese tipo. 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual (VDI) no persistentes
 

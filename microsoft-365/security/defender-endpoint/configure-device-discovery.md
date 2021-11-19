@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c481f846b91ee2072f453d4ad8e9df13b4dd534f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 00717c828935acf417957ef25401056fe0036e10
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960819"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110792"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -43,9 +43,9 @@ Puedes personalizar la lista de dispositivos que se usan para realizar la detecc
 
 > [!IMPORTANT]
 > Para obtener una vista previa, primero tendrás que activar las características de vista previa en Microsoft 365 Defender.
-> A continuación, puedes acceder a la configuración de detección de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dispositivos Microsoft 365 centro de seguridad</a>. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible en el centro de seguridad de Microsoft 365 Defender y Microsoft 365, mientras que los iconos del panel solo estarán disponibles en Microsoft 365 de seguridad.
+> A continuación, puede obtener acceso a la configuración de detección <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">de dispositivos Microsoft 365 Defender portal</a>. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible en el portal de Microsoft 365 Defender y Microsoft 365 Defender, mientras que los iconos del panel solo estarán disponibles en Microsoft 365 Defender portal.
 
-Siga los siguientes pasos de configuración <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 de seguridad:</a>
+Siga los siguientes pasos de configuración <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender portal:</a>
 
 1. Vaya a **Configuración**  >  **detección de dispositivos**.
 2. Selecciona el modo de detección que quieres usar en los dispositivos integrados.
@@ -120,7 +120,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

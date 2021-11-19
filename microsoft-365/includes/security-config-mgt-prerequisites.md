@@ -1,15 +1,15 @@
 ---
-title: incluir archivo
-description: incluir archivo
+title: archivo include
+description: archivo include
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: e8d19f8ab5423ccc0441d29efab2ecdb3eb27a04
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 47de6c330e3b6d5ba4cbe460920603e78e126600
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60677198"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61112052"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -84,11 +84,11 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 
 1. Inicie sesión en [Microsoft 365 Defender portal](https://security.microsoft.com/) y vaya **a Configuración** Endpoints Configuration Management Enforcement Scope y habilite las plataformas para la  >    >    >   administración de la configuración de seguridad:
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Habilita Microsoft Defender para la administración de la configuración de puntos de conexión en la consola de Defender.":::
+   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Habilite Microsoft Defender para la administración de la configuración del punto de conexión en el portal Microsoft 365 Defender usuario.":::
 
-2. Asegúrese de que los usuarios relevantes tienen permisos para administrar la configuración de seguridad de puntos de conexión en Microsoft Endpoint Manager o conceder dichos permisos mediante la configuración de un rol en el portal de Defender. Vaya a **Configuración**  >  **Roles Agregar**  >  **elemento**:
+2. Asegúrese de que los usuarios relevantes tienen permisos para administrar la configuración de seguridad de puntos de conexión en Microsoft Endpoint Manager o conceder dichos permisos mediante la configuración de un rol en el portal de Microsoft 365 Defender extremo. Vaya a **Configuración**  >  **Roles Agregar**  >  **elemento**:
 
-   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Cree un nuevo rol en el portal de Defender.":::
+   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Cree un nuevo rol en el portal Microsoft 365 Defender usuario.":::
 
    > [!TIP]
    > Puede modificar roles existentes y agregar los permisos necesarios frente a la creación de roles adicionales en Microsoft Defender para endpoint
@@ -97,7 +97,7 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 
    :::image type="content" source="../media/add-role.png" alt-text="Conceder permisos a los usuarios para administrar la configuración.":::
 
-4. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+4. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 5. Seleccione **Endpoint security** Microsoft Defender for  >  **Endpoint** y establezca Allow Microsoft Defender for Endpoint to enforce Endpoint Security **Configurations (Preview)** en **On**.
 
@@ -139,7 +139,7 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
 >
 > Microsoft Endpoint Manager permite implementar varias instancias de cada tipo de directiva de seguridad de extremo en el mismo dispositivo, con cada instancia de directiva que recibe el dispositivo por separado. Por lo tanto, un dispositivo puede recibir configuraciones independientes para la misma configuración de diferentes directivas, lo que da como resultado un conflicto. Algunas opciones de configuración (como exclusiones de antivirus) se combinarán en el cliente y se aplicarán correctamente.
 
-1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Vaya a **Seguridad de extremo** y, a continuación, seleccione el tipo de directiva que desea configurar, ya sea Antivirus o Firewall y, a continuación, seleccione Crear **directiva**.
 
@@ -167,9 +167,9 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
 
 6. En la **página Configuración,** seleccione la configuración que desea administrar con este perfil. Para obtener más información sobre una configuración,  expanda su cuadro de diálogo de información y seleccione el vínculo Más información para ver la información de CSP para la configuración en la documentación en línea.
 
-   Cuando haya terminado de configurar la configuración, seleccione **Siguiente**.
+   Cuando haya finalizado la configuración, seleccione **Siguiente**.
 
-7. En la **página Asignaciones,** seleccione los Azure AD que recibirán este perfil. Para obtener más información sobre la asignación de perfiles, vea [Asignar perfiles de usuario y dispositivo.](/mem/intune/configuration/device-profile-assign)
+7. En la **página Asignaciones,** seleccione los Azure AD que recibirán este perfil. Para obtener más información sobre la asignación de perfiles, vea [Asignación de perfiles de usuario y dispositivo](/mem/intune/configuration/device-profile-assign).
 
    Seleccione **Siguiente** para continuar.
 
@@ -179,9 +179,8 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
    > - Solo *los objetos device* son aplicables a Microsoft Defender para la administración de puntos de conexión. No se admite la segmentación de usuarios.
    > - Las directivas configuradas se aplicarán tanto a Microsoft Intune como a Microsoft Defender para clientes de punto de conexión
 
-8. Complete el proceso de creación de directivas y, a continuación, en la **página Revisar +** **crear,** seleccione Crear . El nuevo perfil se muestra en la lista al seleccionar el tipo de directiva para el perfil que creó.
+8. Complete el proceso de creación de directivas y, a continuación, en la **página Revisar +** **crear,** seleccione Crear . El nuevo perfil se muestra en la lista cuando se selecciona el tipo de directiva del perfil creado.
 
 9. Espere a que se asigne la directiva y vea una indicación correcta de que se aplicó la directiva.
 
 10. Puede validar que la configuración se aplica localmente en el cliente mediante la utilidad de comandos [Get-MpPreference.](/powershell/module/defender/get-mppreference#examples)
-

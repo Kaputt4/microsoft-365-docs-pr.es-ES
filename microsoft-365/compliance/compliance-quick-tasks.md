@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: medium
 description: Obtenga información sobre las tareas que le ayudarán a empezar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 640569aef5ed1b632d11523af1d73321579f276e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 621bcbdbbe38be4cbda79e5cf6afcc9846f87e0d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963016"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111044"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -48,7 +48,7 @@ Para obtener instrucciones paso a paso para empezar a trabajar con el Administra
 > [!IMPORTANT]
 > La seguridad y el cumplimiento están estrechamente integrados para la mayoría de las organizaciones. Es importante que su organización aborde la seguridad básica, la protección contra amenazas y las áreas de administración de identidad y acceso para ayudar a proporcionar un enfoque de defensa en profundidad tanto para la seguridad como para el cumplimiento.
 >
-> Compruebe su [Microsoft 365 puntuación segura en](../security/defender/microsoft-secure-score.md) el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365</a> seguridad y completar las tareas descritas en los siguientes artículos:
+> Compruebe su [Microsoft 365 puntuación segura en](../security/defender/microsoft-secure-score.md) el portal de Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">y</a> completar las tareas descritas en los siguientes artículos:
 >
 > - [Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá](../security/office-365-security/security-roadmap.md)
 > - [Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa](../security/top-security-tasks-for-remote-work.md)
@@ -125,7 +125,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener instrucciones paso a paso sobre cómo usar el explorador de actividades, vea [Introducción al explorador de actividades](data-classification-activity-explorer.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento de su organización, tenga en cuenta las siguientes soluciones de cumplimiento en Microsoft 365 para ayudarle a proteger la información confidencial y detectar y actuar en riesgos adicionales de insider.
 

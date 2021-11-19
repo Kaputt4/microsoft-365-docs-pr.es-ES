@@ -1,6 +1,6 @@
 ---
-title: Recopilar registros de soporte técnico en Microsoft Defender para puntos de conexión mediante respuesta en directo
-description: Obtenga información sobre cómo recopilar registros mediante la respuesta en directo para solucionar problemas de Microsoft Defender para puntos de conexión
+title: Recopilar registros de soporte técnico en Microsoft Defender para endpoint mediante respuesta en directo
+description: Obtenga información sobre cómo recopilar registros mediante la respuesta en directo para solucionar problemas de Puntos de conexión de Microsoft Defender
 keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: ad1a7b20aef4ae6073f589738fa0c591b0102463
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ae2a0b538fffc1644d3eb3e26c5b7cd4b512de1c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556021"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110708"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Recopilar registros de soporte técnico en Microsoft Defender para endpoint mediante respuesta en directo
 
@@ -93,4 +93,3 @@ En este tema se proporcionan instrucciones sobre cómo ejecutar la herramienta m
 - [Ejecutar el Analizador de clientes en macOS o Linux](run-analyzer-macos-linux.md)
 - [ Recopilación de datos para solucionar problemas avanzados en Windows](data-collection-analyzer.md)
 - [Comprender el informe HTML del analizador](analyzer-report.md)
-

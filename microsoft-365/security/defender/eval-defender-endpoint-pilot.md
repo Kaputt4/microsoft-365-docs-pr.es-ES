@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cd86f7c958e4e6912c18ddb3c345bfbcc6b6242e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 75abd493e0ec2b80e4ff454ddec39f78169d01d9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149807"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110420"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Piloto de Microsoft Defender para punto de conexión
 
@@ -84,7 +84,7 @@ Para ejecutar cualquiera de las simulaciones proporcionadas, necesita al menos [
 > Los archivos de simulación o scripts imitan la actividad de ataque, pero en realidad son benignos y no dañan ni comprometen el dispositivo de prueba.
 
 ## <a name="next-steps"></a>Siguientes pasos
-[Evaluar Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+[Evaluar Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-overview.md)
 
 Vuelva a la introducción a [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 

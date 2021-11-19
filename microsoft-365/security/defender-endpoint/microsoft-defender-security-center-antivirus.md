@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 234e79a599e24a3b3a0905e1cbba9848aec261fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f0495adddb5617e61b3a044d97b478d54f17f2e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195216"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111632"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -34,9 +34,9 @@ En Windows 10 versión 1703 y posteriores, la aplicación Windows Defender forma
 Configuración que anteriormente formaban parte del cliente de Windows Defender y del Windows Configuración principal se han combinado y movido a la nueva aplicación, que se instala de forma predeterminada como parte de Windows 10, versión 1703.
 
 > [!IMPORTANT]
-> Deshabilitar el servicio Seguridad de Windows centro de seguridad no deshabilita Antivirus de Microsoft Defender o [Windows Defender firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Estos se deshabilitan automáticamente cuando se instala un antivirus de terceros o un producto de firewall y se mantienen actualizados.
+> Deshabilitar el servicio Seguridad de Windows de aplicaciones no deshabilita Antivirus de Microsoft Defender o [Windows Defender firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Estos se deshabilitan automáticamente cuando se instala un antivirus de terceros o un producto de firewall y se mantienen actualizados.
 >
-> Si deshabilita el servicio del Centro de Seguridad de Windows o configura sus opciones de directiva de grupo asociadas para evitar que se inicie o ejecute, la aplicación Seguridad de Windows puede mostrar información obsoleta o inexacta acerca de los productos antivirus o firewall que haya instalado en el dispositivo.
+> Si deshabilita el servicio de aplicaciones de Seguridad de Windows o configura su configuración de directiva de grupo asociada para evitar que se inicie o ejecute, la aplicación Seguridad de Windows puede mostrar información obsoleta o inexacta sobre los productos antivirus o firewall que haya instalado en el dispositivo.
 > También puede impedir Antivirus de Microsoft Defender habilitarse si tiene un antivirus de terceros antiguo o obsoleto, o si desinstala productos antivirus de terceros que haya instalado anteriormente.
 > Esto disminuirá significativamente la protección del dispositivo y podría provocar una infección de malware.
 
@@ -48,7 +48,7 @@ La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Configuración de protección contra virus y amenazas en Seguridad de Windows aplicación.":::
 
-1. Abra la Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio de **Defender**.
+1. Abra la aplicación Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio **de Defender for Cloud**.
 
 2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
@@ -121,7 +121,7 @@ Para obtener más información, consulte los siguientes recursos:
 - [Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar exclusiones para archivos abiertos por procesos](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="review-threat-detection-history-in-the-windows-defender-security-center-app"></a>Revisar el historial de detección de amenazas en la Windows Defender centro de seguridad
+## <a name="review-threat-detection-history-in-the-windows-defender-for-cloud-app"></a>Revisar el historial de detección de amenazas en la aplicación Windows Defender para la nube
 
 1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
 
@@ -141,6 +141,6 @@ Para obtener más información, consulte los siguientes recursos:
 
 5. Para configurar las opciones  de recuperación de ransomware, selecciona Configurar en Recuperación de datos ransomware y sigue las instrucciones para vincular o configurar tu cuenta de OneDrive para que puedas recuperarte fácilmente de un ataque de ransomware. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

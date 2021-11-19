@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1babfd14883520968af283ed050945950bf3f6e0
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 44492fb0f763f81a743baf5cce72e9f19f86da48
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962584"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111368"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Asegurarse de que los dispositivos estén configurados de manera adecuada
 
@@ -44,7 +44,7 @@ Haga **clic en Administración de** configuración en el menú de navegación pa
 
 *Página de administración de configuración de dispositivos*
 
-Puedes realizar un seguimiento del estado de configuración en un nivel organizativo y tomar medidas rápidamente en respuesta a una cobertura de incorporación deficiente, problemas de cumplimiento y mitigaciones de superficie de ataques mal optimizadas a través de vínculos directos y profundos a páginas de administración de dispositivos en Microsoft Intune y <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>.
+Puedes realizar un seguimiento del estado de configuración en un nivel organizativo y tomar medidas rápidamente en respuesta a una cobertura de incorporación deficiente, problemas de cumplimiento y mitigaciones de superficie de ataque mal optimizadas a través de vínculos directos y profundos a páginas de administración de dispositivos en Microsoft Intune y <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 Al hacerlo, se beneficia de:
 
@@ -89,6 +89,6 @@ Tema|Descripción
 :---|:---
 [Obtener dispositivos incorporados a Defender for Endpoint](configure-machines-onboarding.md)|Realice un seguimiento del estado de incorporación de dispositivos administrados por Intune e incorpore más dispositivos a través de Intune. 
 [Aumentar el cumplimiento de la línea base de seguridad de Defender for Endpoint](configure-machines-security-baseline.md)|Realizar un seguimiento del cumplimiento de línea base y el incumplimiento. Implemente la línea base de seguridad en más dispositivos administrados por Intune.
-[Optimizar la implementación y las detecciones de reglas de ASR](configure-machines-asr.md)|Revise la implementación de reglas y ajuste las detecciones con herramientas de análisis de impacto <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 de seguridad</a>.
+[Optimizar la implementación y las detecciones de reglas de ASR](configure-machines-asr.md)|Revisar la implementación de reglas y ajustar las detecciones mediante herramientas de análisis de impacto <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender portal</a>.
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

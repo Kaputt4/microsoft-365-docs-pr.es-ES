@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo se cumplen las necesidades empresariales de la empresa Microsoft 365 empresa.
-ms.openlocfilehash: 9f7a25a9a3bd23c5725be06af39dbd65a1d3a4e5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 94118a66f7bb1468a8f27816151a3b4d087b5703
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170360"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111668"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infraestructura de TI contoso y necesidades empresariales
 
@@ -121,10 +121,10 @@ El departamento de TI de Contoso determinó la siguiente asignación de las nece
 |  | Mejorar la productividad de los trabajadores remotos y móviles | Cargas de trabajo de Microsoft 365 y datos basados en la nube |
 |  | Aumentar la creatividad y la innovación | Windows Ink, Cortana en el trabajo, PowerPoint |
 | Seguridad |  |  |
-|  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con Azure AD Multi-Factor Authentication (MFA) y Azure AD Privileged Identity Management (PIM) <BR> MFA para todas las cuentas de usuario <BR> Acceso condicional <BR> Lector de seguridad <BR> Windows Hello <BR> Credential Guard de Windows Defender |
-|  | Protección contra amenazas | Advanced Threat Analytics <BR> Windows Defender <BR> Defender para Office 365 <BR> Microsoft Defender para Office 365 <BR> Microsoft 365 investigación y respuesta de amenazas <BR> |
-|  | Protección de la información | Azure Information Protection <BR> Prevención de pérdida de datos (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Administración de seguridad | Azure Defender  <BR> Centro de seguridad de Windows Defender |
+|  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con Azure AD multifactor authentication (MFA) y Azure AD Privileged Identity Management (PIM) <br> MFA para todas las cuentas de usuario <br> Acceso condicional <br> Lector de seguridad <br> Windows Hello <br> Credential Guard de Windows Defender |
+|  | Protección contra amenazas | Advanced Threat Analytics <br> Windows Defender <br> Defender para Office 365 <br> Microsoft Defender para Office 365 <br> Microsoft 365 investigación y respuesta de amenazas <br> |
+|  | Protección de la información | Azure Information Protection <br> Prevención de pérdida de datos (DLP) <br> Windows Information Protection (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
+|  | Administración de seguridad | Microsoft Defender para la nube  <br> Centro de seguridad de Windows Defender |
 | Acceso móvil y remoto, y socios comerciales |  |  |
 |  | Mejorar la seguridad de los trabajadores remotos y móviles | Microsoft Intune |
 |  | Reducir la infraestructura de acceso remoto para los empleados | Cargas de trabajo de Microsoft 365 y datos basados en la nube |
@@ -132,15 +132,15 @@ El departamento de TI de Contoso determinó la siguiente asignación de las nece
 | Cumplimiento |  |  |
 |  | Cumplir los requisitos normativos regionales | Características del RGPD en Microsoft 365 |
 | Administración |  |  |
-|  | Reducir la sobrecarga de TI para instalar actualizaciones de cliente | Actualizaciones de Windows 10 Enterprise <BR> Actualizaciones para las aplicaciones de Microsoft 365 para empresas |
+|  | Reducir la sobrecarga de TI para instalar actualizaciones de cliente | Actualizaciones de Windows 10 Enterprise <br> Actualizaciones para las aplicaciones de Microsoft 365 para empresas |
 ||||
 
 ## <a name="next-step"></a>Paso siguiente
 
 Obtenga información sobre la red [local](contoso-networking.md) de Contoso Corporation y cómo se ha optimizado para obtener acceso y latencia a Microsoft 365 recursos basados en la nube.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

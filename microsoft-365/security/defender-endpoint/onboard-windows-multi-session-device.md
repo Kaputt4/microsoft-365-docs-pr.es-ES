@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d968afeaf484387597d6672bf4db1a01180e52a4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 0681144d09a430d0f4e4a2349f24ba442382cd14
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643152"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110576"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Incorporación Windows de varias sesiones en Azure Virtual Desktop
 
@@ -42,7 +42,7 @@ Familiarícese con las [consideraciones para VDI no persistente.](/microsoft-365
 > - Entrada única para cada escritorio virtual
 > - Varias entradas para cada escritorio virtual
 
-Microsoft recomienda incorporar Azure Virtual Desktop como una sola entrada por escritorio virtual. Esto garantiza que la experiencia de investigación en el portal de puntos de conexión de Microsoft Defender se encuentra en el contexto de un dispositivo basado en el nombre del equipo. Las organizaciones que suelen eliminar y volver a implementar hosts WVD deben considerar encarecidamente el uso de este método, ya que impide que se cree varios objetos para la misma máquina en el portal de Microsoft Defender para endpoint. Esto puede provocar confusión al investigar incidentes. Para entornos de prueba o no volátiles, puede optar por elegir de forma diferente.
+Microsoft recomienda incorporar Azure Virtual Desktop como una sola entrada por escritorio virtual. Esto garantiza que la experiencia de investigación en el portal de Microsoft Defender para endpoints se encuentra en el contexto de un dispositivo basado en el nombre del equipo. Las organizaciones que suelen eliminar y volver a implementar hosts WVD deben considerar encarecidamente el uso de este método, ya que impide que se cree varios objetos para la misma máquina en el portal de Microsoft Defender para endpoint. Esto puede provocar confusión al investigar incidentes. Para entornos de prueba o no volátiles, puede optar por elegir de forma diferente.
 
 Microsoft recomienda agregar el script de incorporación de Microsoft Defender para endpoint a la imagen dorada de WVD. De esta forma, puede asegurarse de que este script de incorporación se ejecute inmediatamente al primer arranque. Se ejecuta como un script de inicio al inicio en todas las máquinas WVD aprovisionadas desde la imagen dorada de WVD. Sin embargo, si usa una de las imágenes de la galería sin modificaciones, coloque el script en una ubicación compartida y llámelo desde una directiva de grupo local o de dominio.
 
@@ -55,7 +55,7 @@ Hay varias formas de incorporar un equipo host WVD:
 
 - Ejecute el script en la imagen dorada (o desde una ubicación compartida) durante el inicio.
 - Use una herramienta de administración para ejecutar el script.
-- A [través de la integración con Azure Defender](azure-server-integration.md)
+- A [través de la integración con Microsoft Defender para la nube](azure-server-integration.md)
 
 #### <a name="scenario-1-using-local-group-policy"></a>*Escenario 1: Uso de la directiva de grupo local*
 
@@ -154,8 +154,8 @@ Además, si usa perfiles de usuario FSlogix, se recomienda excluir los siguiente
 
 #### <a name="licensing-requirements"></a>Requisitos de licencias
 
-Nota sobre las licencias Windows Enterprise: al usar una sesión múltiple, según sus requisitos, puede elegir que todos los usuarios tengan licencia a través de Microsoft Defender para Endpoint (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o que la máquina virtual tenga licencia a través de Azure Defender.
-Los requisitos de licencia para Microsoft Defender para el punto de conexión se pueden encontrar en: [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
+Nota sobre las licencias Windows Enterprise: al usar una sesión múltiple, según sus requisitos, puede elegir que todos los usuarios tengan licencia a través de Microsoft Defender para Endpoint (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5 , o tener la vm con licencia a través de Microsoft Defender para la nube.
+Los requisitos de licencias para Microsoft Defender para endpoint se pueden encontrar en: [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
 
 #### <a name="related-links"></a>Vínculos relacionados
 

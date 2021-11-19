@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro (versión preliminar)
-ms.openlocfilehash: 94200142a05eeed9e27f53c571afb5ba68d30c82
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 1c21251b390209d92696a36962705b9f2517a53c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064093"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111224"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
 
@@ -65,7 +65,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 > - netfilter.mobileconfig
 > - sysext.mobileconfig
 >
->Si alguno de estos archivos individuales se actualiza, deberá descargar el archivo combinado de nuevo o el archivo actualizado individualmente.
+>Si alguno de estos archivos individuales se actualiza, deberá volver a descargar el archivo combinado o el archivo actualizado individualmente.
 
 La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un proceso multifase.
 
@@ -106,7 +106,7 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 ### <a name="configure-preference-domain-using-the-jamf-pro-console"></a>Configurar el dominio de preferencia mediante la consola JAMF PRO
 
 > [!IMPORTANT]
-> Debe usar ***com.microsoft.wdav** _ como el valor dominio de preferencia. Microsoft Defender usa este nombre y _ *_com.microsoft.wdav.ext_** para cargar su configuración administrada.
+> Debe usar ***com.microsoft.wdav** _ como el valor dominio de preferencia. Microsoft Defender para endpoint usa este nombre y _ *_com.microsoft.wdav.ext_** para cargar su configuración administrada.
 
 1. Cree un nuevo perfil de configuración en JAMF Pro. Consulte la guía [de administradores Pro jamf](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
     - Nombre: `MDATP MDAV configuration settings`
@@ -286,4 +286,3 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 > [!IMPORTANT]
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
-

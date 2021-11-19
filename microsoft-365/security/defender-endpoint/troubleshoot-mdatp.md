@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d46fb5d456377a3089e5d6cfa45918eb42849227
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: e79fbc82faada816d3499d6f05f285c544002b20
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553864"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111236"
 ---
 # <a name="troubleshoot-service-issues"></a>Solucionar problemas de servicio
 
@@ -83,7 +83,7 @@ No se admite el uso de comas como separador en números. Las regiones donde un n
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>El inquilino de Microsoft Defender para endpoint se creó automáticamente en Europa
 
-Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Microsoft Defender para endpoint. Los datos de Microsoft Defender para endpoint se almacenan en Europa de forma predeterminada.
+Cuando usa Microsoft Defender para la nube para supervisar los servidores, se crea automáticamente un inquilino de Microsoft Defender para endpoint. Los datos de Microsoft Defender para endpoint se almacenan en Europa de forma predeterminada.
 
 ## <a name="related-topics"></a>Temas relacionados
 

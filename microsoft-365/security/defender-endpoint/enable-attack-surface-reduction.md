@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.date: 10/14/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 544d16919f039f7ac4ae7a7234b2b90c925a7329
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 1c5ee1fea543a18208d583b4acc5cc2f52acce7a
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962559"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111812"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -56,7 +56,7 @@ Para usar todo el conjunto de características de las reglas de reducción de su
 - [Protección de entrega en la](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) nube (algunas reglas requieren eso)
 - Windows 10 Enterprise de E5 o E3
 
-Aunque las reglas de reducción de superficie de ataque no requieren una licencia [de E5](/windows/deployment/deploy-enterprise-licenses)de Windows , con una licencia de E5 de Windows, obtienes capacidades de administración avanzadas, como supervisión, análisis y flujos de trabajo disponibles en Defender para endpoint, así como capacidades de informes y configuración en el centro de seguridad de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365.</a> Estas funcionalidades avanzadas no están disponibles con una licencia E3, pero aún puedes usar el Visor de eventos para revisar los eventos de regla de reducción de superficie de ataque.
+Aunque las reglas de reducción de superficie de ataque no requieren una licencia [de E5](/windows/deployment/deploy-enterprise-licenses)de Windows , con una licencia de E5 de Windows, obtienes capacidades de administración avanzadas, como supervisión, análisis y flujos de trabajo disponibles en Defender for Endpoint, así como funciones de informes y configuración en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>. Estas funcionalidades avanzadas no están disponibles con una licencia E3, pero aún puedes usar el Visor de eventos para revisar los eventos de regla de reducción de superficie de ataque.
 
 Cada regla ASR contiene una de cuatro opciones:
 

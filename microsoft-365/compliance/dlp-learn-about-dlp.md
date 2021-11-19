@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 2552fe2482ba06fd34403fe2ff690bdf11c7bd20
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 56107d1e7e2b303e6517a2b7f762e2fcf49beac0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950562"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106532"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -89,7 +89,7 @@ Puede aplicar directivas DLP a datos en reposo, datos en uso y datos en movimien
 - Sitios de SharePoint Online
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Dispositivos con Windows 10
 - Repositorios locales
 
@@ -144,7 +144,7 @@ ubicación | incluir/excluir por|
 |Cuentas de OneDrive |cuentas o grupos de distribución |
 |Mensajes de canales y chats de Teams |cuentas |
 |Dispositivos Windows 10 |usuario o grupo |
-|Microsoft Cloud App Security |instancia |
+|Microsoft Defender for Cloud Apps |instancia |
 |Repositorios locales| Ruta de acceso de archivo de repositorio|
 
 3. **Elija las condiciones que deben coincidir para** que una directiva se aplique a un elemento: puede aceptar condiciones preconfiguradas o definir condiciones personalizadas. Por ejemplo:

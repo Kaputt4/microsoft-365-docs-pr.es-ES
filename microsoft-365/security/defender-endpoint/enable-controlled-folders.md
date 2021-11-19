@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6f18bfdc4e8dd4701831ed169684db110a54e154
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 9c12f1c1aaf6c05110170a6c985d642e9b8b42dc
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882146"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109832"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -54,7 +54,7 @@ Para obtener más información sobre cómo deshabilitar la combinación de lista
 
 ## <a name="windows-security-app"></a>Seguridad de Windows app
 
-1. Abra la aplicación Seguridad de Windows mediante la selección del icono de escudo en la barra de tareas. También puede buscar en el menú inicio de **Defender**.
+1. Abra la aplicación Seguridad de Windows mediante la selección del icono de escudo en la barra de tareas. También puede buscar en el menú inicio **Seguridad de Windows**.
 
 2. Seleccione el **icono Protección contra &** virus (o el icono escudo de la barra de menús izquierda) y, a continuación, seleccione Protección contra **ransomware**.
 

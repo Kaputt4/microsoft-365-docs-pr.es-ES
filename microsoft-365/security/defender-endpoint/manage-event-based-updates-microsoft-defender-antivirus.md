@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f47787a137f9397ab8526ed202e60f44a7d52a55
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 8e3237eefdf9f8a9a5419e9d01e32d73eb949360
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883634"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110936"
 ---
 # <a name="manage-event-based-forced-updates"></a>Administrar las actualizaciones forzadas basadas en eventos
 
@@ -70,7 +70,7 @@ Use los cmdlets siguientes:
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-Para más información, consulte [Usar cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [cmdlets de Defender](/powershell/module/defender/index).
+Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/index).
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Use Windows Management Instruction (WMI) para buscar actualizaciones de protección antes de ejecutar un examen
 
@@ -122,7 +122,7 @@ Use los cmdlets siguientes:
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-Para obtener más información, vea [Use PowerShell cmdlets to manage Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/index) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
+Para obtener más información, vea [Use PowerShell cmdlets to manage Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/index) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Use Windows Management Instruction (WMI) para descargar actualizaciones Antivirus de Microsoft Defender no está presente
 

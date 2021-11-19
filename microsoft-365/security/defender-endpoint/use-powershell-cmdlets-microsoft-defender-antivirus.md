@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: be306fdde4e3b83de323fd769bdc069e2f2958ba
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: bfcf100d4935895b66e781c7be0fa2e3c9cb829a
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882458"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110696"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Use cmdlets de PowerShell para configurar y administrar Antivirus de Microsoft Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "60882458"
 
 Puede usar PowerShell para realizar varias funciones en Windows Defender. Al igual que el símbolo del sistema o la línea de comandos, PowerShell es un shell de línea de comandos basado en tareas y un lenguaje de scripting diseñado especialmente para la administración del sistema. Puede leer más sobre él en el centro [de PowerShell en MSDN](/previous-versions/msdn10/mt173057(v=msdn.10)).
 
-Para obtener una lista de los cmdlets y sus funciones y parámetros disponibles, consulte el [tema Cmdlets de](/powershell/module/defender) Defender.
+Para obtener una lista de los cmdlets y sus funciones y parámetros disponibles, consulte el tema [Defender for Cloud cmdlets.](/powershell/module/defender)
 
 Los cmdlets de PowerShell son más útiles Windows entornos de servidor que no dependen de una interfaz gráfica de usuario (GUI) para configurar software.
 
@@ -69,4 +69,4 @@ Omita el `-online` parámetro para obtener ayuda almacenada localmente en caché
 
 - [Temas de referencia para herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Antivirus de Microsoft Defender Cmdlets](/powershell/module/defender)
+- [Antivirus de Microsoft Defender cmdlets](/powershell/module/defender)

@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para habilitar la configuración Microsoft 365 seguridad adicional de su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 3976ad11b6cac7ae74e0fd2d94ad35b610273052
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 5d431bba21c02daf2ec5af384e2d4fde53ab6edb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960867"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111704"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Mayor Microsoft 365 seguridad para su Microsoft 365 entorno de prueba empresarial
 
@@ -110,17 +110,17 @@ Para obtener más información, vea [Panel de seguridad](../security/office-365-
 
 Puntuación segura de Microsoft muestra su posición de seguridad como un número, que indica el nivel actual con respecto a las características que están disponibles en su suscripción. También te ofrece una lista de acciones de mejora que puedes realizar para mejorar tu puntuación.
 
-1. Cree una nueva pestaña en el explorador, vaya al centro de seguridad Microsoft 365 y, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">a</a>continuación, haga clic en **Puntuación segura**.
+1. Cree una nueva pestaña en el explorador, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de</a>Microsoft 365 Defender y, a continuación, haga clic en **Puntuación segura**.
 2. En la **pestaña Información**  general, anote su puntuación segura actual y cómo se compara con el promedio global y las suscripciones con un número similar de licencias.
 3. En la **pestaña Acciones de** mejora, lee la lista de acciones que puedes realizar para aumentar la puntuación.
 
 Para obtener más información, vea [Puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 

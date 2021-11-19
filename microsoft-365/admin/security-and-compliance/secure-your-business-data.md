@@ -24,23 +24,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: Cómo proteger el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 1923f4a13e2971cf58c83ccfb1444b7446133566
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+description: Cómo proteger el correo electrónico y los datos de su empresa de ciberamenazas, incluidos ransomware, phishing y datos adjuntos malintencionados.
+ms.openlocfilehash: 4ae0f773f196d00855f426d52526e7a96938832d
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962728"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110036"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
-Si es una organización pequeña o mediana que usa uno de los planes de negocio de Microsoft y su tipo de organización está dirigida por ciberdelincuentes y hackers, use las instrucciones de este artículo para aumentar la seguridad de su organización. Esta guía ayuda a su organización a lograr los objetivos descritos en el Manual de la campaña de ciberseguridad de la Escuela Kennedy [de](https://go.microsoft.com/fwlink/p/?linkid=2015598)Harvard.
+Si es una organización pequeña o mediana que usa uno de los planes de negocio de Microsoft y su tipo de organización está dirigida por cibercriminales y hackers, use las instrucciones de este artículo para aumentar la seguridad de su organización. Esta guía ayuda a su organización a lograr los objetivos descritos en el Manual de la campaña de ciberseguridad de la Escuela Kennedy [de](https://go.microsoft.com/fwlink/p/?linkid=2015598)Harvard.
 
 Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que se aplican al plan de servicio.
 
 |*Number*|Tarea|Microsoft 365 Empresa Estándar|Microsoft 365 Empresa Premium|
 |---|---|---|---|
-|1|[Configurar la autenticación multifactor](secure-your-business-data.md#setup)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Configurar la autenticación de varios factores](secure-your-business-data.md#setup)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Proporcionar formación a los usuarios](secure-your-business-data.md#train)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Aumentar el nivel de protección contra malware en el correo](secure-your-business-data.md#malware)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -51,16 +51,17 @@ Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que s
 |9 |[Proteger contra archivos adjuntos y archivos malintencionados con Caja fuerte adjuntos](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Proteger contra ataques de suplantación de identidad con Caja fuerte links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../../campaigns/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados.
+Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../../campaigns/index.md). Esta guía se desarrolló en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de pequeñas empresas contra ciberamenazas lanzadas por sofisticados hackers.
 
-Antes de comenzar, compruebe el Microsoft 365 [puntuación segura](../../security/defender/microsoft-secure-score.md) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 de seguridad</a>. Desde un panel centralizado, puede supervisar y mejorar la seguridad de su Microsoft 365 identidades, datos, aplicaciones, dispositivos e infraestructura. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Con información adicional y más visibilidad de un conjunto más amplio de productos y servicios de Microsoft, puede tener confianza en los informes sobre el estado de seguridad de su organización.
+Antes de empezar, compruebe el Microsoft 365 [puntuación segura](../../security/defender/microsoft-secure-score.md) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>. Desde un panel centralizado, puede supervisar y mejorar la seguridad de su Microsoft 365 identidades, datos, aplicaciones, dispositivos e infraestructura. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Con información adicional y más visibilidad de un conjunto más amplio de productos y servicios de Microsoft, puede tener confianza en los informes sobre el estado de seguridad de su organización.
 
 ![Captura de pantalla de Puntuación segura de Microsoft.](../../media/secure-score.png)
 
-## <a name="1-set-up-multi-factor-authentication"></a>1: Configurar la autenticación multifactor
 <a name="setup"> </a>
 
-El uso de la autenticación multifactor es una de las formas más sencillas y eficaces de aumentar la seguridad de la organización. Es más fácil de lo que parece: al iniciar sesión, la autenticación multifactor significa que escribirás un código desde el teléfono para obtener acceso a Microsoft 365. Esto puede impedir que los piratas informáticos se alopen si conocen tu contraseña. La autenticación multifactor también se denomina verificación en 2 pasos. Los individuos pueden agregar la comprobación de 2 pasos a la mayoría de las cuentas fácilmente, por ejemplo, a sus cuentas de Google o Microsoft. Este es el procedimiento para [agregar la comprobación en dos pasos a su cuenta personal de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+## <a name="1-set-up-multifactor-authentication"></a>1: Configurar la autenticación multifactor
+
+El uso de la autenticación multifactor es una de las formas más sencillas y eficaces de aumentar la seguridad de la organización. Es más fácil de lo que parece: al iniciar sesión, la autenticación multifactor significa que escribirás un código desde el teléfono para obtener acceso a Microsoft 365. Esto puede impedir que los piratas informáticos se alopen si conocen tu contraseña. La autenticación multifactor también se denomina verificación de 2 pasos. Los individuos pueden agregar la comprobación de 2 pasos a la mayoría de las cuentas fácilmente, por ejemplo, a sus cuentas de Google o Microsoft. Este es el procedimiento para [agregar la comprobación en dos pasos a su cuenta personal de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
 Para las empresas que usan Microsoft 365, agregue una configuración que requiera que los usuarios inicien sesión con la autenticación multifactor. Al realizar este cambio, se pedirá a los usuarios que configuren su teléfono para la autenticación en dos fases la próxima vez que inicien sesión.
 Para ver un vídeo de aprendizaje sobre cómo configurar MFA y cómo los usuarios completan la configuración, consulte [Configurar MFA](../../business-video/turn-on-mfa.md) y configurar [el usuario](../../business-video/set-up-mfa.md).
@@ -79,7 +80,7 @@ Puede habilitar o deshabilitar los valores predeterminados de seguridad en el pa
 4. En la parte inferior de la página, elija **Administrar los valores predeterminados de seguridad**.
 5. Elija **Sí** para habilitar los valores predeterminados de seguridad y **No** para deshabilitar los valores predeterminados de seguridad; a continuación, elija **Guardar**.
 
-Después de configurar la autenticación multifactor para su organización, sus usuarios deberán configurar una verificación de dos pasos en sus dispositivos. Para obtener más información, vea [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
+Después de configurar la autenticación multifactor para la organización, los usuarios tendrán que configurar la comprobación en dos pasos en sus dispositivos. Para obtener más información, vea [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 Para obtener información completa y recomendaciones completas, consulte [Configurar la autenticación multifactor para los usuarios.](set-up-multi-factor-authentication.md)
 
@@ -105,7 +106,7 @@ Microsoft también recomienda a los usuarios proteger sus cuentas de correo elec
 ## <a name="3-use-dedicated-admin-accounts"></a>3: Usar cuentas de administrador dedicadas
 <a name="admin"> </a>
 
-Las cuentas administrativas que usa para administrar el entorno Microsoft 365 incluyen privilegios elevados. Estos son objetivos valiosos para los hackers y los ciberdelincuentes. Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para un uso normal y no administrativo y usar solo su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo. Recomendaciones adicionales:
+Las cuentas administrativas que usa para administrar el entorno Microsoft 365 incluyen privilegios elevados. Estos son objetivos valiosos para los hackers y los cibercriminales. Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para un uso normal y no administrativo y usar solo su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo. Recomendaciones adicionales:
 
 - Asegúrese de que las cuentas de administración también están configuradas para la autenticación multifactor.
 
@@ -168,7 +169,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 > [!TIP]
 > También puede agregar los archivos que desea bloquear a la lista Antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para obtener más información, consulte:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -275,7 +276,7 @@ Para obtener más información, vea [Set up anti-phishing policies in Defender f
 
 Las personas envían, reciben y comparten datos adjuntos con regularidad, como documentos, presentaciones, hojas de cálculo y mucho más. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados con solo mirar un mensaje de correo electrónico. Microsoft Defender para Office 365 incluye Caja fuerte de datos adjuntos, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
 
-Para crear una directiva Caja fuerte datos adjuntos, vea un [breve vídeo de aprendizaje](../../business-video/safe-attachments.md)o siga estos pasos:
+Para crear una directiva Caja fuerte datos adjuntos, vea un [breve vídeo de](../../business-video/safe-attachments.md)aprendizaje o siga estos pasos:
 
 1. Ve a <https://protection.office.com> e inicia sesión con tu cuenta de administrador.
 

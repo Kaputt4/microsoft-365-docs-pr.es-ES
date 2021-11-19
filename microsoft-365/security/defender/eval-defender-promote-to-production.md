@@ -1,6 +1,6 @@
 ---
 title: Promover el entorno Microsoft 365 Defender evaluación a Producción
-description: Use este artículo para promover las evales de MDI, MDO, MDE y MCAS a su entorno vivo en Microsoft 365 Defender o M365D.
+description: Use este artículo para promover las evales de MDI, MDO, MDE y Defender for Cloud Apps a su entorno vivo en Microsoft 365 Defender o M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,17 +20,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: eb59cc540d2c77f2d4715aa1c6c12f4e36aec8b0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e43edc826594d5a9b373139707aaaf6b486591ed
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753052"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111512"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promover el entorno Microsoft 365 Defender evaluación a la producción
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Para promover el entorno Microsoft 365 Defender evaluación a la producción, primero compre la licencia necesaria. Siga los pasos de [Crear el entorno de eval](eval-create-eval-environment.md) y compre la Office 365 E5 licencia (en lugar de seleccionar Iniciar prueba gratuita).
 
@@ -40,7 +40,7 @@ A continuación, complete cualquier configuración adicional y expanda los grupo
 
 Defender for Identity no requiere ninguna configuración adicional. Solo asegúrate de haber comprado las licencias necesarias e instalado el sensor en todos los controladores de dominio de Active Directory y servidores de Servicios de federación de Active Directory (AD FS).
 
-## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
+## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
 Después de evaluar o pilotar MDO correctamente, se puede promover a todo el entorno de producción.
 
@@ -61,6 +61,6 @@ Usa las siguientes directrices generales para incorporar más dispositivos a Mic
 3. Usa la herramienta de administración y el método de implementación adecuados para tus dispositivos.
 4. Ejecute una prueba de detección para comprobar que los dispositivos están correctamente incorporados e informando al servicio.
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security no requiere ninguna configuración adicional. Solo asegúrate de haber comprado las licencias necesarias. Si ha definido el ámbito de la implementación en determinados grupos de usuarios, aumente el ámbito de estos grupos hasta que alcance la escala de producción.
+Microsoft Defender para Aplicaciones en la nube no requiere ninguna configuración adicional. Solo asegúrate de haber comprado las licencias necesarias. Si ha definido el ámbito de la implementación en determinados grupos de usuarios, aumente el ámbito de estos grupos hasta que alcance la escala de producción.

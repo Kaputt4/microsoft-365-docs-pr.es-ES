@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión para la compatibilidad con juegos de caracteres de doble byte.
-ms.openlocfilehash: 3731e32594461df29a9cc5ec3f21bf3eb17ee79c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e87e88b63bf44c7ea4154fa24c05c0e8e252a446
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190682"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111500"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>Notas de la versión para la compatibilidad con juegos de caracteres de doble byte
 
@@ -30,7 +30,7 @@ ms.locfileid: "60190682"
 - Coreano
 - Japonés
 
-Esta compatibilidad está disponible para los tipos de información confidencial y los diccionarios de palabras clave y se reflejará en la prevención de la pérdida de datos (para Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams), el cumplimiento de las comunicaciones, el etiquetado automático en las aplicaciones de oficina y Microsoft Cloud App Security.
+Esta compatibilidad está disponible para tipos de información confidencial y diccionarios de palabras clave y se reflejará en la prevención de pérdida de datos (para Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams), cumplimiento de comunicaciones, etiquetado automático en aplicaciones de office y Microsoft Defender for Cloud Apps.
 
 ## <a name="known-issues"></a>Problemas conocidos
 
@@ -47,5 +47,3 @@ Esta compatibilidad está disponible para los tipos de información confidencial
   - "Los datos adjuntos contienen cualquiera de estas palabras"
 
 En su lugar, recomendamos crear un Tipo de información confidencial personalizado (SIT) con el diccionario de palabras clave que detectará los patrones en mensajes y datos adjuntos, utilizando este SIT personalizado como condición de la directiva de Cumplimiento de las comunicaciones.
-
-

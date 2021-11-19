@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Información general sobre el proceso de planeación para la prevención de pérdida de datos
-ms.openlocfilehash: 144f07a75bc7ab2ae5cd06b04328f91f06c9a91f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c695a6a2a4bd21a147e5e81bc73fb65ab1378960
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201906"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109880"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planear la prevención de pérdida de datos (DLP)
 
@@ -138,14 +138,14 @@ Una vez que su organización sepa dónde se encuentra en términos de las necesi
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>¿Dónde están los elementos confidenciales y en qué procesos empresariales participan?
 
-Los elementos que contienen información confidencial de las organizaciones se usan todos los días durante la actividad empresarial. Debe saber dónde pueden producirse instancias de esa información confidencial y en qué procesos empresariales se usan. Esto le ayudará a elegir las ubicaciones adecuadas a las que aplicar las directivas DLP. Microsoft 365 Las directivas DLP se aplican a las ubicaciones:
+Los elementos que contienen información confidencial de las organizaciones se usan todos los días durante la actividad empresarial. Debe saber dónde pueden producirse instancias de esa información confidencial y en qué procesos empresariales se usan. Esto le ayudará a elegir las ubicaciones adecuadas a las que aplicar las directivas DLP. Microsoft 365 directivas DLP se aplican a las ubicaciones:
 
 - Correo electrónico de Exchange
 - Sitios de SharePoint
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
-- Windows 10 Dispositivos
-- Microsoft Cloud App Security
+- Windows 10 dispositivos
+- Microsoft Defender for Cloud Apps
 - Repositorios locales
 
 **Ejemplo** Los auditores internos de su organización están rastreando un conjunto de números de tarjeta de crédito. Mantienen una hoja de cálculo de ellos en un sitio SharePoint seguro. Varios de los empleados hacen copias y las guardan en su sitio de OneDrive para la Empresa trabajo, que se sincroniza con su Windows 10 dispositivo. Uno de ellos pega una lista de 14 de ellos en un correo electrónico e intenta enviarlo a los auditores externos para su revisión. Desea aplicar la directiva al sitio de SharePoint seguro, todos los auditores internos OneDrive para la Empresa cuentas, sus dispositivos Windows 10 y Exchange correo electrónico.
@@ -222,5 +222,5 @@ Las normativas, las leyes y los estándares del sector a los que está sujeta su
 ### On-premises Scanner
 -->
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)

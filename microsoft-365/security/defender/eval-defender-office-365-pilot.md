@@ -21,17 +21,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 9077e71d26820d23f9a9bfbc049924612d5265dc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5d0a864a70603e3d38c903a6799d0a9a5bddd4a0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659218"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110660"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloto de Microsoft Defender para Office 365
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 3 de 3](eval-defender-office-365-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender para Office 365. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-office-365-overview.md).
 
@@ -156,7 +156,7 @@ Ahora que el piloto está configurado y configurado, resulta útil familiarizars
 |Funcionalidad|Descripción|Más información|
 |---|---|---|
 |Explorador de amenazas|El Explorador de amenazas es una eficaz herramienta casi en tiempo real que ayuda a los equipos de operaciones de seguridad a investigar y responder a las amenazas y muestra información sobre el malware sospechoso y la suplantación de identidad (phish) en el correo electrónico y los archivos de Office 365, así como otras amenazas y riesgos de seguridad para su organización.|[Vistas en el Explorador de amenazas y detecciones en tiempo real](../office-365-security/threat-explorer-views.md)|
-|Simulador de ataque|Puedes usar el Aprendizaje de simulación de ataques en el portal de Microsoft Defender 365 para ejecutar escenarios de ataque realistas en tu organización que te ayuden a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en tu entorno.|[Introducción al uso de aprendizaje de simulación de ataques](../office-365-security/attack-simulation-training-get-started.md)|
+|Simulador de ataque|Puedes usar el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender para ejecutar escenarios de ataque realistas en tu organización que te ayuden a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en tu entorno.|[Introducción al uso de aprendizaje de simulación de ataques](../office-365-security/attack-simulation-training-get-started.md)|
 |Panel de informes|En el menú de navegación izquierdo, haga clic en Informes y expanda el encabezado De & colaboración. Los informes de colaboración de Email & se trata de detectar tendencias de seguridad, algunas de las cuales le permitirán tomar medidas (a través de botones como "Ir a envíos"), y otras que mostrarán tendencias, como el resumen de estado de flujo de correo, top malware, detecciones de suplantación de correo, usuarios comprometidos, latencia de correo, vínculos de Caja fuerte e informes de datos adjuntos de Caja fuerte. Estas métricas se generan automáticamente.|[Ver informes](../office-365-security/view-email-security-reports.md)|
 |
 

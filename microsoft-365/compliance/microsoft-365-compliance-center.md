@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 description: Obtenga información sobre el Centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9ca790f596a8baf7741a2b5213e738610026e99f
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 42c00004c0bf6e6f41a082d5ca6fdddb8fb446d7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785585"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110396"
 ---
 # <a name="microsoft-365-compliance-center"></a>Centro de cumplimiento de Microsoft 365
 
@@ -53,7 +53,7 @@ Desde ahí, puede hacer lo siguiente:
 
     ![Tarjeta de alertas activas Centro de cumplimiento de Microsoft 365.](../media/m365-compliance-center-active-alerts-card.png)
 
-También puede usar  la característica Agregar tarjetas para agregar tarjetas adicionales, como una que muestra el cumplimiento de la aplicación en la nube de su organización y otra que muestra datos sobre usuarios con archivos compartidos, con vínculos [a Cloud App Security](/cloud-app-security/) u otras herramientas donde puede explorar datos.
+También puede usar  la característica Agregar tarjetas para agregar tarjetas adicionales, como una que muestra el cumplimiento de la aplicación en la nube de su organización y otra que muestra datos sobre usuarios con archivos compartidos, con vínculos a [Defender para](/cloud-app-security/) Aplicaciones en la nube u otras herramientas donde puede explorar datos.
 
 ![Detalles adicionales de la tarjeta del centro de cumplimiento.](../media/m365-compliance-center-additional-cards.png)
 
@@ -91,7 +91,7 @@ En primer lugar, asegúrese de que tiene las licencias y permisos adecuados. A c
 
 - **Revise las directivas de prevención de pérdida de** datos de su organización y realice los cambios necesarios según sea necesario. Para obtener más información, vea [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
-- **Familiarizarse con y configurar Microsoft Cloud App Security**. Consulte [Inicio rápido: Introducción a Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
+- **Familiarizarse con y configurar Microsoft Defender para aplicaciones en la nube.** Consulta [Inicio rápido: Introducción a Microsoft Defender para aplicaciones en la nube.](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - **Obtenga información sobre y cree directivas de cumplimiento de comunicaciones** para identificar y corregir rápidamente las infracciones de directivas de código de conducta corporativas. Consulte [Cumplimiento de comunicaciones en Microsoft 365](communication-compliance.md).
 

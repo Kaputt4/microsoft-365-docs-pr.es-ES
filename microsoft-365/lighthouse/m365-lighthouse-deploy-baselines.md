@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar Microsoft 365 Lighthouse líneas base.
-ms.openlocfilehash: d449a7677e478111590a2fbeedfbd211e07d7027
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c241dae7839c6c0724a397912decc5da74ec556f
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173204"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111452"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementar Microsoft 365 Lighthouse base 
 
@@ -33,8 +33,8 @@ Microsoft 365 Lighthouse línea base le permiten implementar configuraciones de 
 - Requerir MFA para administradores
 - Requerir MFA para usuarios finales
 - Bloquear autenticación heredada
-- Configurar la inscripción de dispositivos en Microsoft Endpoint Manager: unión a Azure AD
-- Configurar la directiva antivirus de Defender para Windows dispositivos
+- Configurar la inscripción de dispositivos en Microsoft Endpoint Manager– Azure AD unirse
+- Configurar la directiva de Antivirus de Defender para Windows dispositivos
 - Configurar la directiva de cumplimiento para Windows dispositivos
 
 ## <a name="before-you-begin"></a>Antes de empezar

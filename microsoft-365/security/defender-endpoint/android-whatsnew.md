@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 416bea849ac493afd96f9c3969f9f9642135d8a1
-ms.sourcegitcommit: 854f20e8b7d3ef8f4c14cf189560f76056552334
+ms.openlocfilehash: 94f679599ada05ea7c012a34d5b189fd7b3b3fb9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60825604"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111392"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Novedades de Microsoft Defender para Endpoint en Android
 
@@ -34,35 +34,30 @@ ms.locfileid: "60825604"
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Próximos cambios de permisos para Microsoft Defender para endpoint que ejecute Android 11 o posterior (noviembre de 2021)
-Compilación de la versión: 1.0.3501.0301 Mes de la versión: Noviembre de 2021 Microsoft Defender para endpoint ha publicado esta actualización requerida por [Google](https://developer.android.com/distribute/play-policies#APILevel30) para actualizar a la API de Android 30. Este cambio pedirá a los usuarios que busquen acceso a un nuevo permiso [de almacenamiento,](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)para dispositivos que ejecuten Android 11 o posterior. Los usuarios tendrán que aceptar este nuevo permiso de almacenamiento una vez que actualicen la aplicación defender con la compilación de la versión 1.0.3501.0301 o posterior. Esto garantizará que la característica "Seguridad de la aplicación" de Defender funcione sin interrupciones. Para obtener más información, vea los detalles en las secciones siguientes.
 
-**Cómo afectará esto a su organización:** Estos cambios afectarán, si usa Microsoft Defender para Endpoint en dispositivos que ejecutan Android 11 o posterior y actualizado Defender para publicar la compilación 1.0.3501.0301 o posterior.
->[!NOTE]
+Compilación de la versión: 1.0.3501.0301 Mes de la versión: Noviembre de 2021 Microsoft Defender para endpoint ha publicado esta actualización requerida por [Google](https://developer.android.com/distribute/play-policies#APILevel30) para actualizar a la API de Android 30. Este cambio pedirá a los usuarios que busquen acceso a un nuevo permiso [de almacenamiento,](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)para dispositivos que ejecuten Android 11 o posterior. Los usuarios tendrán que aceptar este nuevo permiso de almacenamiento una vez que actualicen la aplicación defender con la compilación de la versión 1.0.3501.0301 o posterior. Esto garantizará que la característica de seguridad de aplicaciones de Defender for Endpoint funcione sin interrupciones. Para obtener más información, revise las secciones siguientes.
+
+**Cómo afectará esto a su organización:** Estos cambios afectarán, si usas Microsoft Defender para Endpoint en dispositivos que ejecutan Android 11 o versiones posteriores y actualizaste Defender para endpoint para publicar la compilación 1.0.3501.0301 o posterior.
+
+> [!NOTE]
 > El administrador no puede configurar los nuevos permisos de almacenamiento en "Auto Approve" a través de Microsoft Endpoint Manager. El usuario tendrá que tomar medidas para proporcionar acceso a este permiso.
 
 - **Experiencia del usuario:** Los usuarios recibirán una notificación que indica que falta un permiso para la seguridad de la aplicación. Si el usuario niega este permiso, la funcionalidad "Seguridad de la aplicación" se desactivará en el dispositivo. Si el usuario no acepta o deniega el permiso, seguirá recibiendo el mensaje al desbloquear su dispositivo o abrir la aplicación, hasta que se haya aprobado.
 
->[!NOTE] 
+> [!NOTE]
 > Si su organización está previsualizando la característica "Protección contra alteraciones" y si el usuario no concede los nuevos permisos de almacenamiento en un plazo de 7 días a partir de la actualización a la versión más reciente, es posible que el usuario pierda el acceso a los recursos corporativos.
 
 **Cómo prepararse:**
 
-Notifique a los usuarios y al departamento de soporte técnico (según corresponda) que los usuarios tendrán que aceptar los nuevos permisos cuando se le pida después de actualizar Defender para crear la versión 1.0.3501.0301 o posterior. Para aceptar los permisos, los usuarios deben:
+Notifique a los usuarios y al departamento de soporte técnico (según corresponda) que los usuarios tendrán que aceptar los nuevos permisos cuando se le pida después de haber actualizado Defender for Endpoint para crear la versión 1.0.3501.0301 o posterior. Para aceptar los permisos, los usuarios deben:
 
-1. Pulsa en la notificación desde la aplicación defender o abre la aplicación Microsoft Defender para endpoint. Los usuarios verán una pantalla que enumera los permisos necesarios. Faltará una marca de verificación verde junto al Storage permiso.
+1. Pulsa en la notificación Defender para endpoint desde la aplicación o abre la aplicación Defender para endpoint. Los usuarios verán una pantalla que enumera los permisos necesarios. Faltará una marca de verificación verde junto al Storage permiso.
 
 2. Pulsa **Comenzar**.
 
-3. Pulsa el botón de alternancia **de Permitir acceso para administrar todos los archivos.** 
+3. Pulsa el botón de alternancia **de Permitir acceso para administrar todos los archivos.**
 
 4. El dispositivo ya está protegido.
 
-  >[!NOTE] 
-  >Este permiso permite a Microsoft Defender for Endpoint acceder al almacenamiento en el dispositivo del usuario, lo que ayuda a detectar y quitar aplicaciones malintencionadas y no deseadas. Microsoft Defender for Endpoint accesses/scans Android app package file (.apk) only. En dispositivos con un perfil de trabajo, Denender solo examina archivos relacionados con el trabajo.
-
-
-
-
-
-
-
+  > [!NOTE]
+  > Este permiso permite a Microsoft Defender for Endpoint acceder al almacenamiento en el dispositivo del usuario, lo que ayuda a detectar y quitar aplicaciones malintencionadas y no deseadas. Microsoft Defender for Endpoint accesses/scans Android app package file (.apk) only. En dispositivos con un perfil de trabajo, Defender para endpoint solo examina archivos relacionados con el trabajo.

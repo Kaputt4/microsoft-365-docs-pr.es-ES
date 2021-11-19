@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d9c212cf1c566050b21760ea9434eaba772f7fac
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: abb8bbce480312a799e6360f2f91cca8e31500a0
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556093"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109868"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -80,7 +80,7 @@ Según el nivel [de](automation-levels.md) automatización establecido para su o
 Todas las acciones de corrección, ya sean pendientes o completadas, se realiza un seguimiento en el [Centro de acciones.](auto-investigation-action-center.md) Si es necesario, el equipo de operaciones de seguridad puede deshacer una acción de corrección. Para obtener más información, vea [Review and approve remediation actions following an automated investigation](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Consulte la nueva página de investigación unificada en el centro Microsoft 365 seguridad. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Consulte la nueva página de investigación unificada en el Microsoft 365 Defender web. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## <a name="requirements-for-air"></a>Requisitos para AIR
 

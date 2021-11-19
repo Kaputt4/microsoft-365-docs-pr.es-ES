@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 40b683a04527eb4a528f2aeaa25071e94fdd62e0
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 00e03927696d32eb72991a5eaa82643325b59925
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884018"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110444"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Antivirus de Microsoft Defender
 
@@ -53,7 +53,7 @@ Para iniciar la grabación de eventos del sistema, abra PowerShell en modo admin
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    donde parámetro especifica la ubicación de ruta de acceso completa en la que se guarda `-RecordTo` el archivo de seguimiento. Para obtener más información sobre el cmdlet, [vea Defender](/powershell/module/defender).
+    donde parámetro especifica la ubicación de ruta de acceso completa en la que se guarda `-RecordTo` el archivo de seguimiento. Para obtener más información sobre los [cmdlets, vea Antivirus de Microsoft Defender cmdlets](/powershell/module/defender).
 
 2. Si se cree que hay procesos o servicios que afectan al rendimiento, reproduzca la situación llevando a cabo las tareas pertinentes.
 
@@ -123,7 +123,7 @@ Para obtener más información sobre el analizador de rendimiento, consulte [Doc
 
 **Versiones del sistema operativo compatibles**
 
-Windows Versión 10 y posterior.
+Windows versión 10 y posterior.
 
 > [!NOTE]
 > Esta característica está disponible a partir de la versión 4.18.2108.X de la plataforma y versiones posteriores.
@@ -197,7 +197,7 @@ Para obtener más información sobre el analizador de rendimiento, consulte [Doc
 
 **Versiones del sistema operativo compatibles**
 
-Windows Versión 10 y posterior.
+Windows versión 10 y posterior.
 
 > [!NOTE]
 > Esta característica está disponible a partir de la versión 4.18.2108.X de la plataforma y versiones posteriores.
@@ -457,4 +457,3 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-

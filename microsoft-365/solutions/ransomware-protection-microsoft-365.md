@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Paso a paso para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: bdfb793ef5a86a21abf421addfd9d1e84dfdba61
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 81f97ba6327f5f1803d972ad9e62f2333e65bc2b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703522"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110276"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Implementar la protección contra ransomware para el inquilino de Microsoft 365
 
@@ -115,11 +115,11 @@ Puede evitar que un atacante de ransomware copie archivos fuera de su inquilino 
 
     - Información confidencial de la organización basada en etiquetas de confidencialidad.
 
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
     Bloquee descargas de información confidencial, como archivos. 
 
-    También puede usar directivas de sesión para el [control de aplicaciones de acceso condicional de Microsoft Cloud App Security](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) para supervisar el flujo de información entre un usuario y una aplicación en tiempo real.
+    También puede usar directivas de sesión para [Control de aplicaciones de acceso condicional de Microsoft Cloud App Security](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) para supervisar el flujo de información entre el usuario y la aplicación en tiempo real.
 
 ## <a name="whats-in-this-solution"></a>Acerca de esta solución
 
@@ -170,7 +170,7 @@ Para proteger a su inquilino de Microsoft 365 de un ataque de ransomware, use e
 | Microsoft Defender para Office 365 | Protege la organización frente a las amenazas dañinas que se presentan en mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. <br><br> Protege contra malware, phishing, suplantación de identidad y otros tipos de ataques. | Ataques de suplantación de identidad (phishing). | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
 | Microsoft Defender para punto de conexión | Habilita la detección y respuesta a amenazas avanzadas en los puntos de conexión (dispositivos) | La instalación de malware y el dispositivo están en peligro. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
 | Azure Active Directory (Azure AD) Identity Protection | Automatiza la detección y corrección de riesgos basados en identidades y la investigación de esos riesgos. | Vulneración de credenciales en cuentas de Azure AD y elevación de privilegios. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
-| Microsoft Cloud App Security | Agente de seguridad de acceso a la nube para la detección, investigación y gobernanza en todos los servicios en la nube de Microsoft y de terceros | Movimiento lateral y filtración de datos. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Microsoft Defender for Cloud Apps | Agente de seguridad de acceso a la nube para la detección, investigación y gobernanza en todos los servicios en la nube de Microsoft y de terceros | Movimiento lateral y filtración de datos. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
 |
 
 ### <a name="3-identities"></a>3. Identidades
@@ -208,7 +208,7 @@ Para dispositivos con Windows 10:
 | Acceso controlado a carpetas | Protege los datos al comprobar las aplicaciones con una lista de aplicaciones conocidas y de confianza | Impedir que los archivos se modifiquen o se cifren mediante ransomware. | Microsoft 365 E3 o Microsoft 365 E5 |
 | Microsoft Information Protection | Permite que las etiquetas de confidencialidad se apliquen a la información que es rescatable. | Impedir el uso de información filtrada. | Microsoft 365 E3 o Microsoft 365 E5 |
 | Prevención de pérdida de datos (DLP) | Protege los datos confidenciales y reduce el riesgo al impedir que los usuarios los compartan de forma inapropiada | Evitar la filtración de datos. | Microsoft 365 E3 o Microsoft 365 E5 |
-| Microsoft Cloud App Security | Agente de seguridad de acceso a la nube para detección, investigación y gobernanza | Detecte el movimiento lateral y evite la filtración de datos. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Microsoft Defender for Cloud Apps | Agente de seguridad de acceso a la nube para detección, investigación y gobernanza | Detecte el movimiento lateral y evite la filtración de datos. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
 |
 
 ## <a name="impact-on-users-and-change-management"></a>Impacto en los usuarios y administración de cambios
@@ -261,12 +261,12 @@ Microsoft Azure:
 - [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Ayuda para la protección contra ransomware con Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
 - [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Detección de ataques de varias fases en Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Detección de fusión para ransomware en Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Detección avanzada de ataques de varias fases en Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
+- [Detección de difusión para ransomware en Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps:
 
--  [Crear directivas de detección de anomalías en Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Crear directivas de detección de anomalías en Defender para aplicaciones en la nube](/cloud-app-security/anomaly-detection-policy)
 
 Entradas de blog del equipo de Seguridad de Microsoft:
 
@@ -289,4 +289,3 @@ Entradas de blog del equipo de Seguridad de Microsoft:
 
 - [Respuesta frente a ransomware: ¿pagar o no pagar? (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responde ante ataques de ransomware con transparencia (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-

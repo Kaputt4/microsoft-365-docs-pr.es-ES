@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: f4d35ef3c5b862b42bf0a995f25b29c26eedd408
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15fd559b6dade63d56647c8f5f3437a57d27a56b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152747"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109916"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 seguridad empresarial para Contoso Corporation
 
@@ -58,7 +58,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
   En lugar de asignar el rol de administrador global a cuentas de usuario cotidianas, Contoso creó tres cuentas de administrador global dedicadas con contraseñas seguras. Las cuentas están protegidas por Azure AD Multi-Factor Authentication (MFA) y Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM solo está disponible con Microsoft 365 E5.*
 
-  Iniciar sesión con un administrador de **Azure AD DC** o una cuenta de administrador **global** solo se realiza para tareas administrativas específicas. Las contraseñas solo se conocen para el personal designado y solo se pueden usar en un período de tiempo configurado en PIM de Azure AD.
+  Iniciar sesión con un **administrador Azure AD DC o** una cuenta de **administrador** global solo se realiza para tareas administrativas específicas. Las contraseñas solo son conocidas por el personal designado y solo se pueden usar en un período de tiempo configurado en Azure AD PIM.
 
   Los administradores de seguridad de Contoso asignaron roles de administrador menores a cuentas que son adecuadas para la función de trabajo del trabajador de TI.
 
@@ -66,9 +66,9 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - MFA para todas las cuentas de usuario
 
-  MFA agrega una capa adicional de protección al proceso de inicio de sesión. Requiere que los usuarios confirmen una llamada telefónica, un mensaje de texto o una notificación de aplicación en su teléfono inteligente después de escribir correctamente su contraseña. Con MFA, las cuentas de usuario de Azure AD están protegidas contra el inicio de sesión no autorizado, incluso si se pone en peligro una contraseña de cuenta.
+  MFA agrega una capa adicional de protección al proceso de inicio de sesión. Requiere que los usuarios confirmen una llamada telefónica, un mensaje de texto o una notificación de aplicación en su teléfono inteligente después de escribir correctamente su contraseña. Con MFA, Azure AD cuentas de usuario están protegidas contra el inicio de sesión no autorizado, incluso si se pone en peligro una contraseña de cuenta.
 
-   - Para protegerse contra el riesgo de la suscripción Microsoft 365, Contoso requiere MFA en todas las cuentas de administrador de **Azure AD DC** o **administrador** global.
+   - Para protegerse contra el riesgo de la suscripción Microsoft 365, Contoso requiere MFA en todas las Azure AD administrador de **DC** o **cuentas de administrador global.**
    - Para protegerse contra los ataques de suplantación de identidad (phishing), en los que un atacante pone en peligro las credenciales de una persona de confianza de la organización y envía mensajes de correo electrónico malintencionados, Contoso habilitó MFA en todas las cuentas de usuario, incluidos los administradores y ejecutivos.
 
 - Acceso de dispositivos y aplicaciones más seguro con las directivas de Acceso Condicional
@@ -117,9 +117,9 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
   Contoso usa [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) para proteger contra la filtración de datos a través de servicios y aplicaciones basadas en Internet y aplicaciones empresariales y datos en dispositivos de propiedad empresarial y dispositivos personales que los empleados llevan al trabajo.
 
-- Supervisión en la nube con Microsoft Cloud App Security
+- Supervisión en la nube con Microsoft Defender para aplicaciones en la nube
 
-  Contoso usa [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) para asignar su entorno de nube, supervisar el uso y detectar los incidentes y eventos de seguridad. *Microsoft Cloud App Security solo está disponible con Microsoft 365 E5.*
+  Contoso usa [Microsoft Defender para aplicaciones en](/cloud-app-security/what-is-cloud-app-security) la nube para asignar su entorno en la nube, supervisar su uso y detectar eventos e incidentes de seguridad. *Microsoft Defender para aplicaciones en la nube solo está disponible Microsoft 365 E5.*
 
 - Administración de dispositivos con Microsoft Intune
 
@@ -127,9 +127,9 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 ## <a name="security-management"></a>Administración de seguridad
 
-- Panel de seguridad central para TI con Azure Defender
+- Panel de seguridad central para TI con Microsoft Defender para la nube
 
-  Contoso usa [Azure Defender](https://azure.microsoft.com/services/security-center/) para presentar una vista unificada de la protección contra amenazas y seguridad, para administrar las directivas de seguridad en sus cargas de trabajo y para responder a los ciberataques.
+  Contoso usa [Microsoft Defender para](https://azure.microsoft.com/services/security-center/) la nube para presentar una vista unificada de la protección contra amenazas y seguridad, para administrar las directivas de seguridad en sus cargas de trabajo y para responder a los ciberataques.
 
 - Panel de seguridad central para los usuarios con Seguridad de Windows
 

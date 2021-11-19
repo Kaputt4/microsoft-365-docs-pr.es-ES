@@ -1,7 +1,7 @@
 ---
-title: Introducción a integración de Microsoft Cloud App Security
+title: Introducción a la integración de Microsoft Defender para Cloud Apps
 ms.reviewer: ''
-description: Microsoft Defender para endpoint se integra con Cloud App Security reenviando todas las actividades de red de aplicaciones en la nube.
+description: Microsoft Defender para endpoint se integra con Defender for Cloud Apps reenviando todas las actividades de red de aplicaciones en la nube.
 keywords: nube, aplicación, redes, visibilidad, uso
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 40eda96b350a5801c732842c0e9a64f29badcc27
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a107cd297c7ca80ff7cd740a8195d57badbc4df4
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555589"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111116"
 ---
-# <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security información general de Defender for Endpoint
+# <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>Introducción a Microsoft Defender para aplicaciones en la nube en Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,22 +36,22 @@ ms.locfileid: "60555589"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (Cloud App Security) es una solución completa que da visibilidad a los servicios y aplicaciones en la nube, ya que permite controlar y limitar el acceso a las aplicaciones en la nube, al tiempo que se cumplen los requisitos de cumplimiento en los datos almacenados en la nube. Para obtener más información, [vea Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+Microsoft Defender para aplicaciones en la nube es una solución completa que da visibilidad a los servicios y aplicaciones en la nube, ya que permite controlar y limitar el acceso a las aplicaciones en la nube, al tiempo que se cumplen los requisitos de cumplimiento en los datos almacenados en la nube. Para obtener más información, [vea Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
 
 > [!NOTE]
 > Esta característica está disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) dispositivos que ejecutan Windows 10 versión 1809 o posterior, o Windows 11.
 
-## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Microsoft Defender para la integración de puntos Cloud App Security de conexión
+## <a name="microsoft-defender-for-endpoint-and-defender-for-cloud-apps-integration"></a>Integración de Microsoft Defender para Endpoint y Defender para Cloud Apps
 
-Cloud App Security de detección se basa en los registros de tráfico en la nube que se reenvían desde servidores proxy y firewall de empresa. Microsoft Defender para endpoint se integra con Cloud App Security recopilando y reenviando todas las actividades de red de aplicaciones en la nube, lo que proporciona una visibilidad sin precedentes del uso de aplicaciones en la nube. La funcionalidad de supervisión está integrada en el dispositivo, lo que proporciona una cobertura completa de la actividad de red.
+La detección de Defender for Cloud Apps se basa en los registros de tráfico en la nube que se reenvían desde servidores proxy y firewall de empresa. Microsoft Defender para endpoint se integra con Defender para aplicaciones en la nube mediante la recopilación y reenvío de todas las actividades de red de aplicaciones en la nube, lo que proporciona una visibilidad sin precedentes del uso de aplicaciones en la nube. La funcionalidad de supervisión está integrada en el dispositivo, lo que proporciona una cobertura completa de la actividad de red.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r4yQ]
 
-La integración proporciona las siguientes mejoras importantes en la detección de Cloud App Security existente:
+La integración proporciona las siguientes mejoras importantes en la detección existente de Defender para Aplicaciones en la nube:
 
 - Disponible en todas partes: dado que la actividad de red se recopila directamente desde el punto de conexión, está disponible siempre que el dispositivo esté, dentro o fuera de la red corporativa, ya que ya no depende del tráfico enrutado a través del firewall de empresa o los servidores proxy.
 
-- Funciona sin necesidad de configuración: reenviar registros de tráfico en la nube a Cloud App Security configuración del servidor proxy y firewall. Con Defender for Endpoint y Cloud App Security integración, no se requiere ninguna configuración. Solo tienes que activarla en Centro de seguridad de Microsoft Defender configuración y puedes ir.\
+- Funciona sin necesidad de configuración: reenviar registros de tráfico en la nube a Defender para aplicaciones en la nube requiere configuración de firewall y servidor proxy. Con la integración de Defender for Endpoint y Defender for Cloud Apps, no se requiere ninguna configuración. Solo tienes que activarla en Centro de seguridad de Microsoft Defender configuración y puedes ir.\
 
 - Contexto del dispositivo: los registros de tráfico en la nube carecen de contexto del dispositivo. La actividad de la red defender para puntos de conexión se notifica con el contexto del dispositivo (a qué dispositivo se ha accedido a la aplicación en la nube), por lo que puedes comprender exactamente dónde (dispositivo) se realizó la actividad de red, además de quién (usuario) la realizó.
 
@@ -59,4 +59,4 @@ Para obtener más información acerca de la detección en la nube, consulta [Tra
 
 ## <a name="related-topic"></a>Tema relacionado
 
-- [Configurar la integración con Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
+- [Configurar la integración de Microsoft Defender para Aplicaciones en la nube](microsoft-cloud-app-security-config.md)

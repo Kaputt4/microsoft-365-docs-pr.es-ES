@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b4ba3db32004eb9ce80e386d918e470d1361e404
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 4d31bce9aa3cc6c64771e0931c22849aa1d92eec
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785635"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110084"
 ---
 # <a name="indicator-resource-type"></a>Tipo de recurso Indicator
 
@@ -58,7 +58,7 @@ aplicación|Cadena|La aplicación asociada al indicador.
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Warn", "Block", "Audit", "Alert", "AlertAndBlock", "BlockAndRemediate" y "Allowed".
 |externalID|Cadena|Id que el cliente puede enviar en la solicitud de correlación personalizada.|
 sourceType|Enum|"Usuario" en caso de que el indicador creado por un usuario (por ejemplo, desde el portal), "AadApp" en caso de que se haya enviado mediante una aplicación automatizada a través de la API.
-createdBySource|cadenas|Nombre del usuario o aplicación que envió el indicador.
+createdBySource|string|Nombre del usuario o aplicación que envió el indicador.
 createdBy|String|Identidad única del usuario/aplicación que envió el indicador.
 lastUpdatedBy|Cadena|Identidad del usuario/aplicación que actualizó por última vez el indicador.
 creationTimeDateTimeUtc|DateTimeOffset|La fecha y hora en que se creó el indicador.
@@ -80,7 +80,7 @@ Los tipos de acción de indicador admitidos por la API son:
 - Auditoría
 - Bloquear
 - BlockAndRemediate
-- Advertir (solo MCAS)
+- Advertencia (solo Defender para aplicaciones en la nube)
 
 Para obtener más información sobre la descripción de los tipos de acción de respuesta, vea [Create indicators](manage-indicators.md).
 

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: fbd6ffa3f0e9167c98d6e950a971254e7c21a988
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 3c1b98c3825d783685976d2e56583eccb7ba96b4
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950718"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111008"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -46,7 +46,7 @@ actualizado: 23/06/2021
 |Categoría| Plantilla | SIT |
 |---------|---------|---------|
 |Financiera| Datos financieros de Australia| - [Código SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Número de archivo fiscal de Australia](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Número de cuenta bancaria de Australia](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [Número de tarjeta de crédito](sensitive-information-type-entity-definitions.md#credit-card-number)|
-|Financiera| Datos financieros de Canadá |- [Número de tarjeta de crédito](sensitive-information-type-entity-definitions.md#credit-card-number) </br> -  [Número de cuenta bancaria de Canadá](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
+|Financiera| Datos financieros de Canadá |- [Número de tarjeta de crédito](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Número de cuenta bancaria de Canadá](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
 |Financiera| Datos financieros de Francia |- [Número de tarjeta de crédito](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Número de tarjeta de débito de la UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
 |Financiera| Datos financieros de Alemania |- [Número de tarjeta de crédito](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Número de tarjeta de débito de la UE](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
 |Financiera| Datos financieros de Israel |- [Número de cuenta bancaria de Israel](sensitive-information-type-entity-definitions.md#israel-bank-account-number) </br> - [Código SWIFT](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Número de tarjeta de crédito](sensitive-information-type-entity-definitions.md#credit-card-number)|
@@ -101,14 +101,13 @@ actualizado: 23/06/2021
 
 Una directiva DLP puede buscar y proteger elementos que contienen información confidencial en varias ubicaciones.
 
-
 |Ubicación  |Ámbito incluir/excluir  |Estado de datos  |Requisitos previos adicionales |
 |---------|---------|---------|---------|
 |Exchange correo electrónico en línea |grupo de distribución | datos en movimiento| No |
 |SharePoint en línea   |sites       | data-at-rest </br> datos en uso | No|
 |Cuentas de OneDrive para la Empresa| cuenta o grupo de distribución |data-at-rest </br> datos en uso|No|
 |Mensajes de canales y chats de Teams     | cuenta o grupo de distribución |datos en movimiento </br> datos en uso |  No       |
-|Microsoft Cloud App Security (MCAS)   | Instancia de aplicación en la nube       |data-at-rest         | - [Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Microsoft Defender for Cloud Apps   | Instancia de aplicación en la nube       |data-at-rest         | - [Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Dispositivos  |usuario o grupo         |data-at-rest </br>  datos en uso </br>  datos en movimiento         |- [Obtenga información sobre Microsoft 365 prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Introducción a la prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurar la configuración de proxy de dispositivo y conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |Repositorios locales (recursos compartidos de archivos y SharePoint)    |repositorio         | data-at-rest         | - [Obtenga información sobre el Microsoft 365 de prevención de pérdida de datos local](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Introducción al escáner local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 
@@ -123,17 +122,17 @@ Si decide incluir o excluir grupos o cuentas de OneDrive específicas, una direc
 Las directivas DLP detectan elementos confidenciales si los coinciden con un tipo de información confidencial (SIT), una etiqueta de confidencialidad o una etiqueta de retención. Cada ubicación admite diferentes métodos para definir contenido confidencial. Al combinar ubicaciones en una directiva, la forma en que se puede definir el contenido puede cambiar de la forma en que se puede definir mediante una sola ubicación. 
 
 > [!IMPORTANT]
-> Al seleccionar varias ubicaciones para una directiva, un valor "no" para una categoría de definición de contenido tiene prioridad sobre el valor "sí". Por ejemplo, cuando selecciona solo SharePoint sitios, la directiva admitirá la detección de elementos confidenciales por uno o más de SIT, por etiqueta de confidencialidad o por etiqueta de retención. Sin embargo, al seleccionar SharePoint ***sitios*** y Teams de mensajes de chat y canal, la directiva solo admitirá la detección de elementos confidenciales por SIT. 
+> Al seleccionar varias ubicaciones para una directiva, un valor "no" para una categoría de definición de contenido tiene prioridad sobre el valor "sí". Por ejemplo, cuando selecciona solo SharePoint sitios, la directiva admitirá la detección de elementos confidenciales por uno o más de SIT, por etiqueta de confidencialidad o por etiqueta de retención. Sin embargo, al seleccionar SharePoint ***sitios*** y Teams de mensajes de chat y canal, la directiva solo admitirá la detección de elementos confidenciales por SIT.
 
-|Ubicación|  Sit puede definir el contenido|  El contenido se puede definir etiqueta de confidencialidad|   El contenido se puede definir mediante la etiqueta de retención|
+|Ubicación| Sit puede definir el contenido| El contenido se puede definir etiqueta de confidencialidad| El contenido se puede definir mediante la etiqueta de retención|
 |---------|---------|---------|---------|
-|Exchange correo electrónico en línea|Sí| Sí|    No|
-|SharePoint en línea|   Sí|    Sí|    Sí|
-|Cuentas de OneDrive para la Empresa|    Sí|    Sí|    Sí|
-|Teams chat y canal |  Sí|    No| No|
-|Dispositivos    |Sí |  Sí|    No|
-|Microsoft Cloud App Security|  Sí|    Sí|    Sí|
-|Repositorios locales|  Sí|    Sí|    No|
+|Exchange correo electrónico en línea|Sí| Sí| No|
+|SharePoint en línea| Sí| Sí| Sí|
+|Cuentas de OneDrive para la Empresa| Sí| Sí| Sí|
+|Teams chat y canal | Sí| No| No|
+|Dispositivos |Sí | Sí|  No|
+|Microsoft Defender for Cloud Apps | Sí| Sí| Sí|
+|Repositorios locales| Sí| Sí| No|
 
 > [!NOTE]
 > DLP admite la detección de etiquetas de confidencialidad en correos electrónicos y attachemnets Vea, Usar etiquetas de confidencialidad [como condiciones en directivas DLP](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -276,7 +275,7 @@ Las opciones de contexto disponibles cambian según la ubicación que elija. Si 
 - El contenido contiene
 - Vea, [Actividades de extremo en las que puede supervisar y realizar acciones](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-cloud-app-security-support"></a>Condiciones Microsoft Cloud App Security compatibilidad
+##### <a name="conditions-microsoft-defender-for-cloud-apps-support"></a>Condiciones de compatibilidad de Microsoft Defender para Aplicaciones en la nube
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
@@ -376,7 +375,7 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 
 La ubicación de los dispositivos proporciona muchas subactividades (condiciones) y acciones. Para obtener más información, vea Actividades de extremo en las [que puede supervisar y realizar acciones en](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
-#### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security:
+#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender para aplicaciones en la nube:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Restringir aplicaciones de terceros
@@ -412,7 +411,7 @@ Por ejemplo, si seleccionas Exchange dispositivos como ubicaciones, estas accion
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Auditar o restringir actividades en Windows dispositivos
 
-Si selecciona Dispositivos y Microsoft Cloud App Security, estas acciones estarán disponibles:
+Si selecciona Dispositivos y Microsoft Defender para aplicaciones en la nube, estas acciones estarán disponibles:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Auditar o restringir actividades en Windows dispositivos
@@ -435,9 +434,9 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-Cuando un usuario intenta realizar una acción en un elemento confidencial en un contexto que cumple las condiciones y excepciones de una regla, puede hacerlo a través de mensajes de correo electrónico de notificación de usuario y en elementos emergentes de sugerencias de directiva de contexto. Estas notificaciones son útiles porque aumentan el conocimiento y ayudan a educar a los usuarios sobre las directivas DLP de su organización. 
+Cuando un usuario intenta realizar una acción en un elemento confidencial en un contexto que cumple las condiciones y excepciones de una regla, puede hacerlo a través de mensajes de correo electrónico de notificación de usuario y en elementos emergentes de sugerencias de directiva de contexto. Estas notificaciones son útiles porque aumentan el conocimiento y ayudan a educar a los usuarios sobre las directivas DLP de su organización.
 
-Por ejemplo, el contenido como un libro Excel en un sitio de OneDrive para la Empresa que contiene información de identificación personal (PII) y se comparte con un invitado.
+Por ejemplo, el contenido como un libro de Excel en un sitio de OneDrive para la Empresa que contiene información de identificación personal (PII) y se comparte con un invitado.
 
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -452,7 +451,7 @@ Las opciones de configuración de notificaciones de usuario y sugerencias de dir
 - SharePoint
 - OneDrive
 - Teams chat y canal
-- MCAS
+- Defender for Cloud Apps
 
 
 Puedes habilitar o deshabilitar las notificaciones de usuario para varias aplicaciones de Microsoft, consulta Referencia de [sugerencias](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference) de directiva de prevención de pérdida de datos
@@ -463,9 +462,9 @@ Puedes habilitar o deshabilitar las notificaciones de usuario para varias aplica
 
 y personalizar el texto del correo electrónico, el asunto y el texto de la sugerencia de directiva.
 
-![Opciones de configuración de notificaciones de usuario y sugerencias de directiva que están disponibles para Exchange, SharePoint, OneDrive, Teams chat y canal y MCAS](../media/dlp-user-notification-non-devices.png)
+![Opciones de configuración de notificaciones de usuario y sugerencias de directiva que están disponibles para Exchange, SharePoint, OneDrive, Teams Chat y Canal, y Defender para aplicaciones en la nube](../media/dlp-user-notification-non-devices.png)
 
-Si seleccionaste Solo dispositivos, recibirás todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, chat de Teams y Canal y MCAS, además de la opción para personalizar el título de notificación y el contenido que aparece en el dispositivo Windows 10.
+Si seleccionaste Solo dispositivos, recibirás todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, chat de Teams y Canal y Defender para aplicaciones en la nube, además de la opción de personalizar el título de notificación y el contenido que aparece en el dispositivo Windows 10.
 
 ![Opciones de configuración de notificación de usuario y sugerencia de directiva que están disponibles para dispositivos](../media/dlp-user-notification-devices.png)  
 
@@ -580,7 +579,7 @@ DLP examina el correo electrónico de forma diferente que SharePoint online o On
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

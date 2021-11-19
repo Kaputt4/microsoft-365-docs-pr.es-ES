@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 85ef173543b9696a8aa8a0c7505ed30cefc5f932
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 95e37a1a32d9ec23f9d372b8ae3fac73335d1446
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701746"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110480"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 
@@ -99,7 +99,7 @@ Puede asociarse con Expertos en amenazas de Microsoft que pueden participar dire
 > [!NOTE]
 >
 > - Actualmente, no se admiten las consultas de alerta relacionadas con los datos de inteligencia de amenazas personalizados de la organización. Consulte a su equipo de operaciones de seguridad o respuesta a incidentes para obtener más información.
-> - Debe tener el permiso Administrar la configuración **de** seguridad en el portal del Centro de seguridad para poder enviar una consulta "Consulte a un experto en amenazas".
+> - Debe tener el  permiso Administrar la configuración de seguridad en el portal de Microsoft 365 Defender para poder enviar una consulta "Consultar a un experto en amenazas".
 
 1. Vaya a la página del portal con la información relevante que le gustaría investigar, por ejemplo, la página **Incidentes.** Asegúrate de que la página de la alerta o dispositivo relevante esté en vista antes de enviar una solicitud de investigación.
 

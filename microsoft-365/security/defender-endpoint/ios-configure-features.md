@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3d08b41f1e88a3088aa4ba0bd4d1ede2016b3801
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 2e53eca402b549fcf5ac2ff250ee33e8dac0be48
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747391"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110744"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -43,7 +43,7 @@ Para obtener más información acerca de cómo configurar el acceso condicional 
 
 ### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Detección de jailbreak por Microsoft Defender para endpoint
 
-Microsoft Defender para endpoint tiene la capacidad de detectar dispositivos administrados y no administrados que están liberados. Si se detecta que un dispositivo está liberado, se notifica una alerta de alto riesgo al Centro de seguridad y si el acceso condicional se configura en función de la puntuación de riesgo del dispositivo, se bloqueará el acceso al dispositivo a los datos corporativos.
+Microsoft Defender para endpoint tiene la capacidad de detectar dispositivos administrados y no administrados que están liberados. Si se detecta que un dispositivo está liberado, se notifica una alerta de alto riesgo al portal de Microsoft 365 Defender y si el acceso condicional se configura en función de la puntuación de riesgo del dispositivo, se bloqueará el acceso a los datos corporativos.
 
 ## <a name="web-protection-and-vpn"></a>Protección web y VPN
 

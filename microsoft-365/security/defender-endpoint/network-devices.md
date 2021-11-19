@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e9c58df0c79479d8dabe8d3a31edd6bfecc5aacd
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 52c99b4c43f17a551929cb657fb4eb9ea3420d51
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960817"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111290"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
@@ -39,7 +39,7 @@ ms.locfileid: "60960817"
 > [!NOTE]
 > El Blog sobre detección de [dispositivos](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) de red y evaluaciones de vulnerabilidad publicado \( el 04-13-2021 proporciona información sobre las nuevas capacidades de detección de dispositivos de red en \) Defender para endpoint.  En este artículo se proporciona  información general sobre el desafío que la detección de dispositivos de red está diseñada para abordar e información detallada sobre cómo empezar a usar estas nuevas funcionalidades.
 
-Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del centro Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">seguridad</a> y Microsoft 365 Defender consolas.
+Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de</a> Microsoft 365 Defender y Microsoft 365 Defender consolas.
 
 Se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de Defender for Endpoint Administración de amenazas y vulnerabilidades proporcionan flujos de trabajo integrados para proteger conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.
 
@@ -99,7 +99,7 @@ El primer paso es seleccionar un dispositivo que realizará los exámenes de red
 
 ## <a name="permissions"></a>Permisos
 
-Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Configuración** \> **Roles**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
+Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en Defender**. Para encontrar el permiso, vaya a **Configuración** \> **Roles**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Instalar el escáner de red
 
@@ -122,7 +122,7 @@ Para completar el proceso de registro del escáner de red:
     > [!NOTE]
     > Es posible que deba cambiar la configuración del símbolo del sistema para poder copiar la dirección URL.
 
-2. Escriba el código e inicie sesión con una cuenta de Microsoft que tenga el permiso Defender for Endpoint denominado "Administrar la configuración de seguridad en el Centro de seguridad".
+2. Escriba el código e inicie sesión con una cuenta de Microsoft que tenga el permiso Defender for Endpoint denominado "Administrar la configuración de seguridad en Defender".
 
 3. Cuando haya terminado, debería ver un mensaje que confirme que ha iniciado sesión.
 
@@ -189,7 +189,7 @@ Valide que el escáner se está ejecutando correctamente. A continuación, vaya 
 
 ### <a name="required-threat-and-vulnerability-management-user-permission"></a>Permiso Administración de amenazas y vulnerabilidades usuario requerido
 
-El registro finalizó con un error: "Parece que no tiene permisos suficientes para agregar un nuevo agente. El permiso requerido es "Administrar la configuración de seguridad en el Centro de seguridad".
+El registro finalizó con un error: "Parece que no tiene permisos suficientes para agregar un nuevo agente. El permiso requerido es "Administrar la configuración de seguridad en Defender".
 
 Presione cualquier tecla para salir.
 

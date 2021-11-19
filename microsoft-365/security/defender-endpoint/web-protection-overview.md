@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42dc7d0c3ce7662cee61754ccced0666f907114f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 004c3c3617f97fe9b37037a5af7d55ed27bc664c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963376"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61106651"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -81,7 +81,7 @@ Para obtener más información, vea [Filtrado de contenido web](web-content-filt
 
 La protección web está hecha de los siguientes componentes, enumerados en orden de prioridad. Cada uno de estos componentes es aplicado por el cliente smartscreen en Microsoft Edge y por el cliente de protección de red en todos los demás exploradores y procesos.
 
-- Indicadores personalizados (IP/URL, directivas Microsoft Cloud App Security (MCAS)
+- Indicadores personalizados (IP/URL, directivas de Microsoft Defender para Aplicaciones en la nube)
   - Permitir
   - Advertir
   - Bloquear
@@ -93,7 +93,7 @@ La protección web está hecha de los siguientes componentes, enumerados en orde
 - Filtrado de contenido web (WCF)
 
 > [!NOTE]
-> Microsoft Cloud App Security (MCAS) genera actualmente indicadores solo para direcciones URL bloqueadas.
+> Microsoft Defender para Aplicaciones en la nube actualmente genera indicadores solo para direcciones URL bloqueadas.
 
 El orden de prioridad se relaciona con el orden de operaciones mediante el cual se evalúa una dirección URL o IP. Por ejemplo, si tiene una directiva de filtrado de contenido web, puede crear exclusiones a través de indicadores de IP/URL personalizados. Los indicadores personalizados de compromiso (IoC) son más altos en el orden de prioridad que los bloques WCF.
 
@@ -105,7 +105,7 @@ En la tabla siguiente se resumen algunas configuraciones comunes que presentarí
 
 ****
 
-|Directiva de indicador personalizado|Directiva de amenazas web|Directiva wcf|Directiva MCAS|Resultado|
+|Directiva de indicador personalizado|Directiva de amenazas web|Directiva wcf|Directiva de Defender para Aplicaciones en la nube|Resultado|
 |---|---|---|---|---|
 |Permitir|Bloquear|Bloquear|Bloquear|Allow (invalidación de protección web)|
 |Permitir|Permitir|Bloquear|Bloquear|Allow (excepción WCF)|
@@ -136,7 +136,7 @@ En la tabla siguiente se muestran las respuestas y sus características correlac
 |---|---|
 |CustomPolicy|WCF|
 |CustomBlockList|Indicadores personalizados|
-|CasbPolicy|MCAS|
+|CasbPolicy|Defender for Cloud Apps|
 |Malintencionado|Amenazas web|
 |Suplantación de identidad (phishing)|Amenazas web|
 |||
@@ -146,21 +146,21 @@ En la tabla siguiente se muestran las respuestas y sus características correlac
 Las consultas kusto en búsqueda avanzada se pueden usar para resumir los bloques de protección web de la organización durante un máximo de 30 días. Estas consultas usan la información mencionada anteriormente para distinguir entre los distintos orígenes de bloques y resumirlas de una manera fácil de usar. Por ejemplo, en la consulta siguiente se enumeran todos los bloques WCF que se originaron Microsoft Edge.
 
 ```kusto
-DeviceEvents 
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+DeviceEvents
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where Experience == "CustomBlockList"
 ```
 
 Del mismo modo, puede usar la siguiente consulta para enumerar todos los bloques WCF que se originen en Network Protection (por ejemplo, un bloque WCF en un explorador de terceros). Tenga en cuenta que ActionType se ha actualizado y "Experiencia" se ha cambiado a "ResponseCategory".
 
 ```kusto
-DeviceEvents 
-| where ActionType == "ExploitGuardNetworkProtectionBlocked"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
-| where ResponseCategory == "CustomPolicy"
+DeviceEvents 
+| where ActionType == "ExploitGuardNetworkProtectionBlocked"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
+| where ResponseCategory == "CustomPolicy"
 ```
 
 Para enumerar los bloques que se deben a otras características (como indicadores personalizados), consulte la tabla anterior en la que se delinea cada característica y su categoría de respuesta respectiva. Estas consultas también pueden modificarse para buscar telemetría relacionada con equipos específicos de la organización. Tenga en cuenta que ActionType que se muestra en cada consulta anterior mostrará solo las conexiones bloqueadas por una característica de Protección web y no todo el tráfico de red.

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba613d2368bbb7cbefdaaaea30595bdc235a41ef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: f0b66558e74a0a71ab158621d5b8e9aa703f6d16
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963232"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110144"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -174,16 +174,16 @@ De los dos componentes de Microsoft Threat Expert, la notificación de ataques d
 > [!NOTE]
 > La Expertos en amenazas de Microsoft de Defender for Endpoint está disponible con una licencia de E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Al habilitar esta configuración, Defender para las señales de punto de conexión Microsoft Cloud App Security para proporcionar una mayor visibilidad del uso de aplicaciones en la nube. Los datos reenviados se almacenan y procesan en la misma ubicación que los Cloud App Security datos.
+Al habilitar esta configuración, Defender para las señales de punto de conexión se remite a Microsoft Defender para aplicaciones en la nube para proporcionar una mayor visibilidad del uso de aplicaciones en la nube. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de Defender for Cloud Apps.
 
 > [!NOTE]
 > Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809  (Compilación del sistema operativo 17763.379 con [KB4489899),](https://support.microsoft.com/help/4489899)versiones Windows 10 versiones posteriores o Windows 11.
 
 ## <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
-Reenvía las señales de Punto de conexión de Microsoft Defender a Puntuación segura de Microsoft en el centro Microsoft 365 seguridad. Al activar esta característica, Microsoft Secure Score ofrece visibilidad sobre la posición de seguridad del dispositivo. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de puntuación segura de Microsoft.
+Reenvía las señales de Microsoft Defender para puntos de conexión a Puntuación segura de Microsoft en el portal Microsoft 365 Defender usuario. Al activar esta característica, Microsoft Secure Score ofrece visibilidad sobre la posición de seguridad del dispositivo. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de puntuación segura de Microsoft.
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Habilitar la integración de Microsoft Defender para endpoints desde el portal de Microsoft Defender para identidades
 

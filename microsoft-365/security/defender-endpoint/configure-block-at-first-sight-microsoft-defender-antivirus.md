@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 53ef056a61da1dca83c1c6bdf611e37a50dc9008
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 1fcd154c3cd769cc7c721cf49f2d16b90a213e25
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552841"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110840"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -105,7 +105,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
 
    - **Activar la protección proporcionada en la nube**: Sí
    - **Nivel de protección proporcionada en la nube**: Alto
-   - **Tiempo de espera extendido de la nube de Defender**: 50
+   - **Tiempo de espera extendido del Antivirus de Microsoft Defender en segundos**: 50
 
    :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Configuración de bloqueo a primera vista en Endpoint Manager.":::
 
@@ -173,7 +173,7 @@ Puede optar por deshabilitar el bloqueo a primera vista si quiere conservar la c
 
    - Establezca **Activar la protección proporcionada en la nube** en **No** o **Sin configurar**.
    - Establezca **Nivel de protección proporcionada en la nube** en **Sin configurar**.
-   - Desactive la casilla de **Tiempo de espera extendido en segundos en la nube de Defender**.
+   - Desactive la casilla de verificación **tiempo de espera extendido del Antivirus de Microsoft Defender en segundos**.
 
 6. Revise y guarde la configuración.
 

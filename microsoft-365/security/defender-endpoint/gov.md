@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 158eb05c5c96712175dba6ba0b3a1b6011a26348
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 92e35fb75b26df6768860b4cb98b825086fa80d5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063350"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109808"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -62,7 +62,7 @@ Microsoft Defender para el punto de conexión para clientes del gobierno de ESTA
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft Defender para endpoint server GCC|Microsoft Defender para Endpoint Server para GCC High|Microsoft Defender para Endpoint Server para DOD|
-|Azure Defender para servidores|Azure Defender para servidores- Gobierno|Azure Defender para servidores- Gobierno|
+|Microsoft Defender para servidores|Microsoft Defender para servidores- Gobierno|Microsoft Defender para servidores- Gobierno|
 |
 
 ## <a name="portal-urls"></a>Direcciones URL del portal
@@ -128,9 +128,9 @@ iOS|![No.](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg)
 >
 > <sup>3</sup> Cuando use [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
 
-### <a name="os-versions-when-using-microsoft-defender-for-cloud"></a>Versiones del sistema operativo al usar Microsoft Defender para la nube
+### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versiones del sistema operativo al usar Microsoft Defender para servidores
 
-Las siguientes versiones del sistema operativo se admiten al [usar Microsoft Defender para la nube:](/azure/security-center/security-center-wdatp)
+Las siguientes versiones del sistema operativo se admiten al [usar Microsoft Defender para servidores:](/azure/security-center/security-center-wdatp)
 
 <br />
 
@@ -192,6 +192,6 @@ Estas son las diferencias conocidas:
 |Evaluaciones de red|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Detección de redes|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Filtrado de contenido web|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Integraciones: Azure Sentinel|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Alertas <br /> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar privada|![Sí](images/svg/check-yes.svg) Alertas <br /> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar privada|
+|Integraciones: Microsoft Sentinel|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg) Alertas <br /> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar privada|![Sí](images/svg/check-yes.svg) Alertas <br /> ![Sí](images/svg/check-yes.svg) Incidentes & datos sin procesar: en versión preliminar privada|
 |Integraciones: Microsoft Power Automate & Azure Logic Apps|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
 |Expertos en amenazas de Microsoft|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería|![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería|

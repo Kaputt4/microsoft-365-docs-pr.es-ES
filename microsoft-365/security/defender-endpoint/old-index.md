@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6ada32650a01f3303a9c3c9011f5465dab5f5184
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c19189ab33fca3c537347c0d20d14d602fe99da3
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206882"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109040"
 ---
 # <a name="threat-protection"></a>Protección contra amenazas
 
@@ -134,9 +134,9 @@ Integre Microsoft Defender para punto de conexión en los flujos de trabajo exis
 - Intune
 - Microsoft Defender para Office 365
 - Microsoft Defender for Identity
-- Azure Defender
+- Microsoft Defender para la nube
 - Skype Empresarial
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 <a name="mtp"></a>
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>

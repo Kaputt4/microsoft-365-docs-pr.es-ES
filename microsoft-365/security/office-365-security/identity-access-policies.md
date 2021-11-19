@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1af399c8175a6e67bbf7e5e9e0a7f0900c4abd66
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: f0d0c372865f15c05e232f1af60a37d98cea582e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963172"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111752"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -125,7 +125,7 @@ En la **sección Asignaciones:**
 
 Aplica la configuración del nivel de riesgo en función del nivel de protección al que estás destinado.
 
-|Nivel de protección|Valores de nivel de riesgo necesarios|Acción|
+|Nivel de protección|Valores de nivel de riesgo necesarios|Action|
 |---|---|---|
 |Línea base|Alto, medio|Compruebe ambos.|
 |Confidencial|Alto, medio, bajo|Compruebe los tres.|
@@ -134,7 +134,7 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Setting|Propiedades|Valores|Acción|
+|Setting|Propiedades|Valores|Action|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Seleccionar|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -165,7 +165,7 @@ En la **sección Asignaciones:**
 
 En la **sección Controles de** Access:
 
-|Setting|Propiedades|Valores|Acción|
+|Setting|Propiedades|Valores|Action|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Seleccionar|
 ||**Exigir todos los controles seleccionados**||Seleccionar|
@@ -187,7 +187,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 En la **sección Asignaciones:**
 
-|Tipo|Propiedades|Valores|Acción|
+|Tipo|Propiedades|Valores|Action|
 |---|---|---|---|
 |Usuarios|Incluir|**Todos los usuarios**|Seleccionar|
 |Riesgo de usuario|**Alto**||Seleccionar|
@@ -195,7 +195,7 @@ En la **sección Asignaciones:**
 
 En la segunda **sección Asignaciones:**
 
-|Tipo|Propiedades|Valores|Acción|
+|Tipo|Propiedades|Valores|Action|
 |---|---|---|---|
 |Acceso|**Permitir acceso**||Seleccionar|
 |||**Exigir cambio de contraseña**|Cheque|
@@ -359,7 +359,7 @@ Se recomiendan las siguientes opciones de configuración para equipos que ejecut
 
 Para ver las reglas de evaluación > Windows servicio de **atestación** de estado del dispositivo, consulte esta tabla.
 
-|Propiedades|Valor|Acción|
+|Propiedades|Valor|Action|
 |---|---|---|
 |Requerir BitLocker|Obligatoria|Seleccionar|
 |Requerir que el arranque seguro esté habilitado en el dispositivo|Obligatoria|Seleccionar|
@@ -372,7 +372,7 @@ Para **El cumplimiento de Configuration Manager,** seleccione **Requerir**.
 
 Para **Seguridad del sistema,** consulte esta tabla.
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |---|---|---|---|
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Seleccionar|
 ||Contraseñas sencillas|Bloquear|Seleccionar|
@@ -385,8 +385,8 @@ Para **Seguridad del sistema,** consulte esta tabla.
 |Cifrado|Cifrado del almacenamiento de datos en el dispositivo|Obligatoria|Seleccionar|
 |Seguridad de dispositivos|Firewall|Obligatoria|Seleccionar|
 ||Antivirus|Obligatoria|Seleccionar|
-||Antiespía|Obligatoria|Seleccionar <p> Esta configuración requiere una solución anti spyware registrada con Seguridad de Windows centro.|
-|Defender|Antimalware de Microsoft Defender|Obligatoria|Seleccionar|
+||Antiespía|Obligatoria|Seleccionar <p> Esta configuración requiere una solución anti spyware registrada con la Seguridad de Windows aplicación.|
+|Defender para la nube|Antimalware de Microsoft Defender|Obligatoria|Seleccionar|
 ||Versión mínima de Antimalware de Microsoft Defender||Tipo <p> Solo se admite para Windows 10 escritorio. Microsoft recomienda versiones no más de cinco detrás de la versión más reciente.|
 ||Firma antimalware de Microsoft Defender actualizada|Obligatoria|Seleccionar|
 ||Protección en tiempo real|Obligatoria|Seleccionar <p> Solo se admite para Windows 10 escritorio|
@@ -394,9 +394,9 @@ Para **Seguridad del sistema,** consulte esta tabla.
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |---|---|---|---|
-|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Seleccionar|
+|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Seleccionar|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)

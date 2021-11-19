@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7a22d07919aaebc1373c5b330c51d720c25b4f8c
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 75e17dbeff38fd7e40c9a8f22217407773981c96
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963136"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111824"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimizar la implementación y las detecciones de reglas de ASR
 
@@ -39,21 +39,21 @@ Las reglas de reducción de superficie de ataque [(ASR)](./attack-surface-reduct
 <br>
 *Tarjeta de administración de superficie de ataque*
 
-La *tarjeta de administración de superficie de* ataque es un punto de entrada a las herramientas Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centro</a> de seguridad que puedes usar para:
+La *tarjeta de administración de superficie de ataque* es un punto de entrada a las herramientas de Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a> que puedes usar para:
 
 * Comprenda cómo se implementan actualmente las reglas de ASR en su organización.
 * Revise las detecciones de ASR e identifique posibles detecciones incorrectas.
 * Analice el impacto de las exclusiones y genere la lista de rutas de archivo que se excluirán.
 
-Selecciona **Ir a administración de superficie de ataque** Informes Reglas de reducción de superficie de \>  \> **ataque** Agregar \> **exclusiones.** Desde allí, puede navegar a otras secciones del centro Microsoft 365 seguridad.
+Selecciona **Ir a administración de superficie de ataque** Informes Reglas de reducción de superficie de \>  \> **ataque** Agregar \> **exclusiones.** Desde allí, puede navegar a otras secciones de Microsoft 365 Defender portal.
 
-![Agregue la pestaña exclusiones en la página Reglas de reducción de superficie de ataque en Microsoft 365 de seguridad.](images/secconmgmt_asr_m365exlusions.png)<br>
-La ***pestaña Agregar exclusiones** de la página Reglas de reducción de superficie de ataque en Microsoft 365 centro de seguridad*
+![Agregue la pestaña exclusiones en la página Reglas de reducción de superficie de ataque en Microsoft 365 Defender portal.](images/secconmgmt_asr_m365exlusions.png)<br>
+La ***pestaña Agregar exclusiones** de la página Reglas de reducción de superficie de ataque en Microsoft 365 Defender portal*
 
 > [!NOTE]
-> Para acceder Microsoft 365 de seguridad, necesita una licencia Microsoft 365 E3 o E5 y una cuenta que tenga ciertos roles en Azure Active Directory. [Lea acerca de las licencias y permisos necesarios.](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)
+> Para acceder Microsoft 365 Defender portal, necesita una licencia Microsoft 365 E3 O E5 y una cuenta que tenga ciertos roles en Azure Active Directory. [Lea acerca de las licencias y permisos necesarios.](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)
 
-Para obtener más información acerca de la implementación de reglas ASR <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 de</a>seguridad, vea Monitor and manage [ASR rule deployment and detections](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
+Para obtener más información acerca de la implementación de reglas ASR <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender portal,</a>vea [Monitor and manage ASR rule deployment and detections](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
 
 **Temas relacionados**
 

@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre las entidades con nombre (versión preliminar)
+title: Más información sobre las entidades con nombre (versión preliminar)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las entidades con nombre le ayudan a detectar elementos confidenciales que contienen nombres de personas, direcciones físicas y términos médicos a través de directivas de prevención de pérdida de datos
-ms.openlocfilehash: 22019e3f3a270c6205b788a48544e2a462d9dfa7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 002905264d789e7ebe0b163a80fe033c028a6b4b
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662141"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110852"
 ---
-# <a name="learn-about-named-entities-preview"></a>Obtenga información sobre las entidades con nombre (versión preliminar)
+# <a name="learn-about-named-entities-preview"></a>Más información sobre las entidades con nombre (versión preliminar)
 
 > [!IMPORTANT]
 > La característica de entidades con nombre se está implementando y aparecerá en el espacio empresarial cuando esté disponible. Compruebe si están en el explorador de contenido y en el flujo de creación de directivas de prevención de pérdida de datos (DLP). 
@@ -33,7 +33,7 @@ ms.locfileid: "60662141"
 - [Directivas de prevención de pérdida de datos (DLP)](dlp-learn-about-dlp.md) 
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Administración de riesgos internos](insider-risk-management-solution-overview.md)
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
 DLP hace un uso especial de las entidades con nombre en plantillas de directiva mejoradas, que son directivas DLP preconfiguradas que puede personalizar para las necesidades de las organizaciones. También puede crear [sus propias directivas DLP](create-test-tune-dlp-policy.md) a partir de una plantilla en blanco y usar una entidad con nombre SIT como condición. [](create-a-dlp-policy-from-a-template.md)
 
@@ -73,7 +73,7 @@ Estos son algunos ejemplos de directivas DLP mejoradas que usan SITs de entidad 
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Usar entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)](named-entities-use.md)
+- [Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)](named-entities-use.md)
 
 
 ## <a name="for-further-information"></a>Para obtener más información

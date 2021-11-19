@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: baa4294209ddb32a0a531e07b5bf87b0bb10aa9b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9e631bc8f35a49ab87237ddfb952af00c68645e9
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756388"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109904"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
@@ -44,7 +44,9 @@ En el [tema Planeación,](deployment-strategy.md) se proporcionaron varios méto
 
 Aunque Defender para endpoint admite la incorporación de varios puntos de conexión y herramientas, este artículo no los cubre. Para obtener información sobre la incorporación general con otras herramientas y métodos de implementación compatibles, vea [Onboarding overview](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) es una plataforma de solución que unifica varios servicios. Incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) para la administración de dispositivos basados en la nube.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) es una plataforma de solución que unifica varios servicios. Incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 
+
+-based device management.
 
 En este tema se guía a los usuarios en:
 
@@ -63,7 +65,7 @@ Esta guía de incorporación le ayudará a seguir los siguientes pasos básicos 
 Estos son los vínculos que necesitará para el resto del proceso:
 
 - [Portal MEM](https://aka.ms/memac)
-- [Centro de seguridad](https://securitycenter.windows.com/)
+- [Microsoft Defender para punto de conexión](https://securitycenter.windows.com/)
 - [Líneas base de seguridad de Intune](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 Para obtener más información Microsoft Endpoint Manager, consulte estos recursos:

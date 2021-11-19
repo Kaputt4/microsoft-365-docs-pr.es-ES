@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3c769f0ddf3e986f96ff80c0dbf54b23f9b9eafc
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 556a76e2305de6137fa16303f9dcbf888384bee5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753188"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111872"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para punto de conexión en Android
 
@@ -110,7 +110,7 @@ Defender App pide permiso de optimización de batería/protección permanente en
 
 **Causa:**
 
-Xiaomi cambió los permisos de optimización de batería en Android 11. Defender no puede configurar esta configuración para omitir las optimizaciones de batería.
+Xiaomi cambió los permisos de optimización de batería en Android 11. Defender for Endpoint no puede configurar esta configuración para omitir las optimizaciones de batería.
 
 **Solución:**
 
@@ -133,11 +133,11 @@ Los usuarios pueden seguir estos pasos para habilitar los mismos permisos desde 
 
    ![Paso dos para cambiar el desplegable para mostrar "Todas las aplicaciones".](images/show-all-apps-1.png)
 
-5. Busque "Punto de conexión de Microsoft Defender" y seleccione **No optimizar**.
+5. Busque "Microsoft Defender para endpoint" y seleccione **No optimizar**.
 
-   ![Busque "Punto de conexión de Microsoft Defender" y seleccione "No optimizar".](images/select-dont-optimise.png)
+   ![Busque "Microsoft Defender para endpoint" y seleccione "No optimizar".](images/select-dont-optimise.png)
 
-Vuelva a la pantalla de incorporación de Puntos de conexión de Microsoft Defender, seleccione **Permitir** y se le redirigirá a la pantalla del panel.
+Vuelva a la pantalla de incorporación de Microsoft Defender para puntos de conexión, seleccione **Permitir** y se le redirigirá a la pantalla del panel.
 
 ## <a name="send-in-app-feedback"></a>Enviar comentarios desde la aplicación
 

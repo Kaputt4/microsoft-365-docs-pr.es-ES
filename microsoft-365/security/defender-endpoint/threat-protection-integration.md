@@ -1,6 +1,6 @@
 ---
 title: Integrar Microsoft Defender para endpoint con otras soluciones de Microsoft
-description: Obtenga información sobre cómo Microsoft Defender para Endpoint se integra con otras soluciones de Microsoft, como Microsoft Defender para Identity y Azure Defender.
+description: Obtenga información sobre cómo Microsoft Defender para endpoint se integra con otras soluciones de Microsoft, como Microsoft Defender para Identity y Microsoft Defender para la nube.
 author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61b4167b5a801d31e348188aef366487bb23bd11
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8da23203a7ab2f8faf86603f6a68700b65cc83e5
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555241"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111560"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para endpoint y otras soluciones de Microsoft
 
@@ -36,13 +36,13 @@ ms.locfileid: "60555241"
 
 Microsoft Defender para endpoint se integra directamente con varias soluciones de Microsoft.
 
-### <a name="azure-defender"></a>Azure Defender
+### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender para la nube
 
 Microsoft Defender para endpoint proporciona una solución completa de protección de servidores, que incluye detección y respuesta de puntos de conexión (EDR) en Windows servidores.
 
-### <a name="azure-sentinel"></a>Azure Sentinel
+### <a name="microsoft-sentinel"></a>Microsoft Sentinel
 
-El conector de Microsoft Defender para puntos de conexión te permite transmitir alertas de Microsoft Defender para endpoint en Azure Sentinel. Esto te permitirá analizar más exhaustivamente los eventos de seguridad en toda la organización y crear libros de juegos para obtener una respuesta eficaz e inmediata.
+El conector de Microsoft Defender para puntos de conexión te permite transmitir alertas de Microsoft Defender para endpoint a Microsoft Sentinel. Esto te permitirá analizar más exhaustivamente los eventos de seguridad en toda la organización y crear libros de juegos para obtener una respuesta eficaz e inmediata.
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
 
@@ -52,9 +52,9 @@ Recientemente hemos dejado de usar la integración de Azure Information Protecti
 
 La puntuación de riesgo de dispositivo dinámico de Microsoft Defender para endpoint está integrada en la evaluación de acceso condicional, lo que garantiza que solo los dispositivos seguros tengan acceso a los recursos.
 
-### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security aprovecha las señales de Microsoft Defender para endpoints para permitir la visibilidad directa del uso de aplicaciones en la nube, incluido el uso de servicios en la nube no compatibles (TI de instantánea) de todos los dispositivos supervisados por Microsoft Defender para puntos de conexión.
+Microsoft Defender para Aplicaciones en la nube aprovecha las señales de Microsoft Defender para puntos de conexión para permitir la visibilidad directa del uso de aplicaciones en la nube, incluido el uso de servicios en la nube no compatibles (TI de instantánea) de todos los dispositivos supervisados por Microsoft Defender para endpoints.
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
 
@@ -71,7 +71,7 @@ Las actividades sospechosas son procesos que se ejecutan en un contexto de usuar
 
 La Skype Empresarial permite a los analistas comunicarse con un usuario o propietario de dispositivo potencialmente comprometido a través de un botón sencillo del portal.
 
-## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
+## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
 Con Microsoft 365 Defender, Microsoft Defender para endpoint y varias soluciones de seguridad de Microsoft forman un conjunto de aplicaciones de defensa empresarial unificado previo y posterior a la infracción que se integra de forma nativa en puntos de conexión, identidad, correo electrónico y aplicaciones para detectar, prevenir, investigar y responder automáticamente a ataques sofisticados.
 

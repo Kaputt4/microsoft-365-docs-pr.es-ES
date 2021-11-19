@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Obtenga información sobre cómo usar el Office 365 Content Delivery Network (CDN) para acelerar la entrega de los activos SharePoint Online.
-ms.openlocfilehash: 21ef8fd29e53e2c832a518613a3ed44d8f7687cf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ad4eb1df63e201e49ba0b4c56c9123a04e37c184
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154871"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110168"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -950,7 +950,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 ### <a name="using-assets-in-private-origins"></a>Uso de activos en orígenes privados
 
-No se requiere ninguna configuración adicional para usar activos en orígenes privados. SharePoint Online reescribe automáticamente las direcciones URL de los activos en orígenes privados para que las solicitudes de esos activos siempre se atenúe desde el CDN. No puede crear manualmente direcciones URL para CDN activos en orígenes privados porque estas direcciones URL contienen tokens que SharePoint Online debe generar automáticamente en el momento en que se solicita el activo.
+No se requiere ninguna configuración adicional para usar activos en orígenes privados. SharePoint Online reescritura automáticamente las direcciones URL de los activos en orígenes privados para que las solicitudes de esos activos siempre se atenúe desde el CDN. No puede crear manualmente direcciones URL para CDN activos en orígenes privados porque estas direcciones URL contienen tokens que SharePoint Online debe generar automáticamente en el momento en que se solicita el activo.
 
 El acceso a activos en orígenes privados está protegido por tokens generados dinámicamente en función de los permisos de usuario al origen, con las advertencias descritas en las secciones siguientes. Los usuarios deben tener al menos **acceso de** lectura a los orígenes de la CDN para representar contenido.
 
@@ -982,10 +982,12 @@ Es importante tener en cuenta que SharePoint Online no admite permisos de nivel 
 |Usuario 3     |No tiene acceso a folder1, pero se le concede permiso explícito para acceder a image1.jpg en SharePoint Online         |Puede obtener acceso al recurso image1.jpg directamente desde SharePoint Online, pero no desde el CDN         |
 |Usuario 4     |Tiene acceso a folder1, pero se ha denegado explícitamente el acceso a image1.jpg en SharePoint Online         |No se puede obtener acceso al activo desde SharePoint Online, pero puede acceder al activo desde el CDN a pesar de que se le deniegue el acceso al archivo en SharePoint Online         |
 
-<a name="CDNTroubleshooting"> </a>
+<a name="CDNTroubleshooting"></a>
+
 ## <a name="troubleshooting-the-office-365-cdn"></a>Solución de problemas de Office 365 CDN
 
-<a name="CDNConfirm"> </a>
+<a name="CDNConfirm"></a>
+
 ### <a name="how-do-i-confirm-that-assets-are-being-served-by-the-cdn"></a>¿Cómo confirmo que los activos están siendo atendidos por el CDN?
 
 Una vez que haya agregado vínculos CDN activos CDN una página, puede confirmar que el activo se sirve desde el CDN explorando la página, haciendo clic con el botón secundario en la imagen una vez que se ha representado y revisando la dirección URL de la imagen.
@@ -1051,4 +1053,4 @@ Puede elegir trabajar con el Office 365 CDN mediante el módulo de **PowerShell*
 
 [Planeamiento de red y ajuste del rendimiento para Office 365](./network-planning-and-performance.md)
 
-[SharePoint Serie de rendimiento: Office 365 CDN de vídeo](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)
+[SharePoint Performance Series: Office 365 CDN de vídeo](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

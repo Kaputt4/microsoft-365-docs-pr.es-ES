@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: obtenga información sobre cómo habilitar el archivado de expansión automática, lo que proporciona a los usuarios almacenamiento adicional para sus Exchange Online buzones de correo. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 65c03e11a047e26363fc00f0e208b542543a9e9e
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 865a21e27034490b7b9da476d359ce135962d604
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064252"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110888"
 ---
 # <a name="enable-auto-expanding-archiving---admin-help"></a>Habilitar el archivado de expansión automática: Ayuda para administradores
 
@@ -44,7 +44,7 @@ Puede usar la característica de Exchange Online de archivado de expansión auto
 
 - El archivado de expansión automática también es compatible con los buzones compartidos. Para habilitar el archivo para un buzón compartido, se requiere una licencia de ExchangeOnline (plan 2) o de ExchangeOnline (plan 1) con una licencia de Archivado de ExchangeOnline.
 
-- El archivado de expansión automática le impide recuperar o restaurar un buzón [inactivo.](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes) Eso significa que si habilita el archivado de expansión automática para un buzón y el buzón se hace inactivo en una fecha posterior, no podrá recuperar el buzón inactivo [(al](recover-an-inactive-mailbox.md) convertirlo en un buzón activo) ni restaurarlo [(combinando](restore-an-inactive-mailbox.md) el contenido con un buzón existente). Si el archivado de expansión automática está habilitado en un buzón inactivo, la única forma de recuperar datos es mediante la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para exportar los datos del buzón e importarlos a otro buzón. Para obtener más información, vea la sección "Buzones inactivos y archivos de expansión automática" en [Overview of inactive mailboxes](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
+- El archivado de expansión automática le impide recuperar o restaurar un buzón [inactivo.](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes) Eso significa que si habilita el archivado de expansión automática para un buzón y el buzón se hace inactivo en una fecha posterior, no podrá recuperar el buzón inactivo [(al](recover-an-inactive-mailbox.md) convertirlo en un buzón activo) ni restaurarlo [(combinando](restore-an-inactive-mailbox.md) el contenido con un buzón existente). Si el archivado de expansión automática está habilitado en un buzón inactivo, la única forma de recuperar datos es mediante la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para exportar los datos del buzón e importarlos a otro buzón. Para obtener más información, vea la sección "Buzones inactivos y archivos de expansión automática" en [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
 - No puede usar el centro de administración Exchange ni la Centro de cumplimiento de Microsoft 365 para habilitar el archivado de expansión automática. Debe usar Exchange Online PowerShell. Para conectarse a su Exchange Online con PowerShell remoto, vea [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 

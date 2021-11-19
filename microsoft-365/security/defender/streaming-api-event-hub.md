@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4965936f4619f7fad76df203c97e4674ef408a39
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 5658d2cbb0fd3f8307ceb6cb46057237436271eb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963107"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111776"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurar Microsoft 365 Defender para transmitir eventos de búsqueda avanzada a su Centro de eventos de Azure
 
@@ -54,7 +54,7 @@ Una vez creado el espacio de nombres de Event Hub, tendrá que:
 
 ## <a name="enable-raw-data-streaming"></a>Habilitar la transmisión de datos sin procesar
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> como administrador **global** _ o administrador de seguridad __*_**.
+1. Inicie sesión <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender portal</a> como * Administrador **global** _ o _* Administrador _de seguridad_**.
 
 2. Vaya a la página [Configuración de la API de streaming.](https://security.microsoft.com/settings/mtp_settings/raw_data_export)
 
