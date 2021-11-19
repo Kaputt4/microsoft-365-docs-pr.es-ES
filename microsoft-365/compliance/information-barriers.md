@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 515983182bb5f44c08e7d8531656a7a4fb49d5c6
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: fc3d961b8707ba07febd95022580091618086d7f
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064105"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071353"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Obtenga información sobre las barreras de información en Microsoft 365
 
@@ -83,11 +83,10 @@ Para obtener más información sobre la experiencia del usuario con las barreras
 Antes de empezar con la administración de riesgos de insider, debes confirmar la [Microsoft 365 suscripción y](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) los complementos. Para acceder y usar barreras de información, la organización debe tener una de las siguientes suscripciones o complementos:
 
 - Microsoft 365 E5/A5 (versión de pago o de prueba)
-- Office 365 Enterprise de E5 (versión de pago o de prueba)
-- Office 365 A5 suscripción (versión de pago o de prueba)
+- Office 365 E5/A5/A3/A1 (versión de pago o de prueba)
 - Cumplimiento avanzado de Office 365 complemento (ya no está disponible para las nuevas suscripciones)
-- Microsoft 365 E3/A3 + el complemento de cumplimiento Microsoft 365 E5/A5
-- Microsoft 365 E3/A3 + el complemento Microsoft 365 E5/A5 Insider Risk Management
+- Microsoft 365 E3/A3/A1 + el complemento de cumplimiento Microsoft 365 E5/A5
+- Microsoft 365 E3/A3/A1 + el complemento Microsoft 365 E5/A5 Insider Risk Management
 
 Para obtener más información, [vea Microsoft 365 de licencias para seguridad y & cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
@@ -102,7 +101,7 @@ Para [definir o editar directivas de barrera de información,](information-barri
 
 Debe estar familiarizado con los cmdlets de PowerShell para definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el artículo sobre cómo [hacerlo,](information-barriers-policies.md)deberá conocer otros detalles, como parámetros, para su organización.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga más información sobre las barreras de información en Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Obtenga más información sobre las barreras de información en SharePoint Online](/sharepoint/information-barriers)
