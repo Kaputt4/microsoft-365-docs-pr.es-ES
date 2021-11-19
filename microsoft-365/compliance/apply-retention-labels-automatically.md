@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 740c1c2a86b089f911fdbed7b8fce667de5e6f5c
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 670dc6c4b095ca8d124b80bb0bade0ee3db22a7f
+ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61041941"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61064264"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -320,7 +320,7 @@ Que debe tener en cuenta al usar clasificadores que se pueden entrenar para apli
 > [!NOTE]
 > Esta opción se está implementando gradualmente en versión preliminar y está sujeta a cambios.
 
-Es posible que tenga que usar esta opción si tiene que capturar y conservar todas las copias de los archivos del inquilino que se envían a través de comunicaciones. Use esta opción junto con las directivas de retención para los propios servicios de comunicación, Exchange y Teams.
+Es posible que tenga que usar esta opción si tiene que capturar y conservar todas las copias de los archivos del inquilino que los usuarios envían a través de comunicaciones. Use esta opción junto con las directivas de retención para los propios servicios de comunicación, Exchange y Teams.
 
 > [!IMPORTANT]
 > Al seleccionar una etiqueta que se usará para aplicar automáticamente etiquetas de retención para datos adjuntos en la nube, asegúrese de que la configuración de retención de etiquetas **Iniciar el período de retención basado en** es **Cuando se etiquetaron los elementos**.
@@ -331,7 +331,7 @@ Al elegir la opción de aplicar una etiqueta de retención a los datos adjuntos 
 
 Si el archivo se modifica y se comparte de nuevo, se guarda una nueva copia del archivo como una nueva versión en la biblioteca de conservación de documentos. Para obtener más información, incluido el motivo por el que debe usar la configuración de etiqueta **Cuándo se etiquetaron los elementos**, consulte [Cómo funciona la retención con archivos adjuntos en la nube](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-Los datos adjuntos en la nube admitidos para esta opción son archivos como documentos, vídeos e imágenes que se almacenan en SharePoint y OneDrive. Para Teams, se admiten datos adjuntos en la nube compartidos en mensajes de chat y canales estándar y privados. No se admiten los datos adjuntos en la nube compartidos en invitaciones a reuniones y aplicaciones distintas de Teams o Outlook.
+Los datos adjuntos en la nube admitidos para esta opción son archivos como documentos, vídeos e imágenes que se almacenan en SharePoint y OneDrive. Para Teams, se admiten datos adjuntos en la nube compartidos en mensajes de chat y canales estándar y privados. No se admiten los datos adjuntos en la nube compartidos en invitaciones a reuniones y aplicaciones distintas de Teams o Outlook. Los usuarios deben compartir los datos adjuntos de la nube. No se admiten los datos adjuntos en la nube enviados a través de bots.
 
 Aunque no es necesario para esta opción, se recomienda asegurarse de que el control de versiones está habilitado para los sitios de SharePoint y las cuentas de OneDrive para que la versión compartida se pueda capturar con precisión. Si el control de versiones no está habilitado, se conservará la última versión disponible. No se admiten los documentos en borrador o que nunca se han publicado.
 

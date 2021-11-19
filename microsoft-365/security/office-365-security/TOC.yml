@@ -148,6 +148,8 @@
           href: preset-security-policies.md
         - name: Analizador de configuración para directivas de protección
           href: configuration-analyzer-for-security-policies.md
+        - name: Recomendaciones de seguridad para cuentas de prioridad
+          href: security-recommendations-for-priority-accounts.md
         - name: Aprendizaje de simulación de ataques en Defender para Office 365
           items:
             - name: Introducción al uso de aprendizaje de simulación de ataques
@@ -374,9 +376,13 @@
           href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
         - name: Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
           href: create-team-sites-in-a-political-campaign-dev-test-environment.md
-    - name: Microsoft 365 Defender
-      href: ../defender/index.yml
-    - name: Microsoft Defender para punto de conexión
-      href: ../defender-endpoint/index.yml
-    - name: Microsoft Defender for Identity
-      href: /defender-for-identity/
+    - name: Documentos de Microsoft 365 Defender
+      items:
+        - name: Microsoft 365 Defender
+          href: ../defender/index.yml
+        - name: Defender para punto de conexión
+          href: ../defender-endpoint/index.yml
+        - name: Defender for Identity
+          href: /defender-for-identity
+        - name: Defender for Cloud Apps
+          href: /cloud-app-security
