@@ -18,12 +18,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 569a36a595a53c45dd3d1a24857932523344d7e5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: d674e5d2724dc25652ddb8d9c0aa8c528665df39
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962644"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61129545"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mejor juntos: Antivirus de Microsoft Defender y Office 365
 
@@ -77,7 +77,7 @@ Microsoft Defender para Office 365 integrado con Microsoft Defender para endpoin
 
 - Una vez habilitada la integración, el equipo de operaciones de seguridad puede ver una lista de dispositivos que usan los destinatarios de las direcciones URL o mensajes de correo electrónico detectados, junto con las alertas recientes para esos dispositivos, en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>.
 
-Si aún no lo ha hecho, [integre Microsoft Defender para Office 365 con Microsoft Defender para endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
+Si aún no lo ha hecho, [integre Microsoft Defender para Office 365 con Microsoft Defender para endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde).
 
 ## <a name="more-good-reasons-to-use-onedrive"></a>Más buenas razones para usar OneDrive
 

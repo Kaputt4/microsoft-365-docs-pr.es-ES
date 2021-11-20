@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Obtenga información sobre los requisitos y consideraciones para realizar el cambio a Microsoft 365 para empresas.
-ms.openlocfilehash: 7e7d3a56d58c19e36372a4e3d8f32788bf19771d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 070d3d57d998edabb0711ca11c082f8e41a3406f
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193834"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128669"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planear la configuración de Microsoft 365 para empresas
 
@@ -35,8 +35,12 @@ Este artículo está pensado para personas que se han suscrito a un plan Microso
   
 Antes de mover la organización a Microsoft 365, hay requisitos que debes cumplir, información que necesitas tener a mano y decisiones que debes tomar.
 
+## <a name="overview-of-microsoft-365-business-premium-setup"></a>Información general sobre Microsoft 365 Empresa Premium configuración
 
-  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
+
+Enhorabuena por su decisión de mover su empresa a la nube con Microsoft 365! Tanto si tiene una persona en su negocio como si tiene 20 años, hacer un poco de planeación le ayudará a sacar el máximo partido de Microsoft 365 Empresa Premium.
+
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Información que debe tener a mano antes de ejecutar el asistente de configuración
 
 Cuando estés listo para ejecutar el asistente de configuración y mover tu dominio a Microsoft 365, esta es la información que tendrás que tener a mano:
@@ -70,7 +74,7 @@ Hay un par de escenarios que incluyen la migración de datos o usuarios desde en
 
 ## <a name="move-to-microsoft-365-all-at-once-or-in-stages"></a>Pasar a Microsoft 365 a la vez o en fases
 
-- **¿Desea mover su organización a Microsoft 365 a la vez?** Si es así, planea mover el dominio a Microsoft 365 inmediato. Comience ejecutando el asistente para Microsoft 365 instalación; le pedirá que configure su dominio.
+- **¿Desea mover su organización a Microsoft 365 a la vez?** Si es así, planea mover el dominio a Microsoft 365 inmediato. Comience ejecutando el asistente Microsoft 365 de instalación; le pedirá que configure su dominio.
 
 - **¿Desea pasar a Microsoft 365 gradualmente?** Si desea pasar a Microsoft 365 fases, omita la ejecución del asistente para la instalación de Microsoft 365 y considere la posibilidad de adoptar Microsoft 365 características en el siguiente orden:
 

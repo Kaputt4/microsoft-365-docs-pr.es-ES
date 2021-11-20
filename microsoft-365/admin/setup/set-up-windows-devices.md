@@ -24,29 +24,30 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configure los dispositivos Windows que ejecutan Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que habilita controles de seguridad y administración centralizados.
-ms.openlocfilehash: 46357074752e1715fdcdcd8be841e53f85475ddf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 250c701a41e9243c81641df2bcc0fd6d6158ec47
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191294"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128657"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de configurar Windows dispositivos para Microsoft 365 Empresa Premium usuarios, asegúrese de que todos los dispositivos Windows están ejecutando Windows 10 Pro, versión 1703 (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y habilitan la administración centralizada y los controles de seguridad de Microsoft 365 Empresa Premium.
+Antes de configurar Windows dispositivos para Microsoft 365 Empresa Premium usuarios, asegúrese de que todos los dispositivos Windows están ejecutando Windows 10 Pro, versión 1703 (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y habilitan la administración centralizada y los controles de seguridad de Microsoft 365 Empresa Premium .
   
 Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción Microsoft 365 Empresa Premium te da derecho a una actualización Windows 10.
   
 Para obtener más información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro Creators Update, siga los pasos indicados en este tema: [Actualizar dispositivos Windows a Windows Pro Creators Update](../../business-video/upgrade.md)
   
-Consulta [Comprobar que el dispositivo está conectado a Azure AD](#verify-the-device-is-connected-to-azure-ad) para comprobar que tienes la actualización o para asegurarte de que la actualización ha funcionado.
+Consulta [Comprobar que el dispositivo está conectado](#verify-the-device-is-connected-to-azure-ad) Azure AD para comprobar que tienes la actualización o para asegurarte de que la actualización ha funcionado.
 
 ## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>Ver: Conectar equipo a Microsoft 365 Empresa
 
@@ -100,7 +101,7 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
   
 6. En la **página Asegúrese de que esta es su organización,** compruebe que la información es correcta y elija **Unirse.**
   
-   En el **conjunto You're all!** page, chosse **Done**.
+   En el **conjunto You're all!** página, elija **Listo**.
   
    ![On the Make sure this is your organization screen, choose Join.](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
@@ -118,7 +119,7 @@ Para empezar a usar la cuenta Microsoft 365 Empresa Premium, vaya  al botón Ini
   
 ## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Comprobar que el equipo se actualiza a Windows 10 Business
 
-Compruebe que los dispositivos unidos Windows 10 Azure AD se actualicen a Windows 10 Business como parte de su Microsoft 365 Empresa Premium suscripción.
+Compruebe que los dispositivos Azure AD unidos Windows 10 se actualicen a Windows 10 Business como parte de su Microsoft 365 Empresa Premium suscripción.
   
 1. Vaya a **Configuración** \> **Sistema** \> **Acerca de**.
     

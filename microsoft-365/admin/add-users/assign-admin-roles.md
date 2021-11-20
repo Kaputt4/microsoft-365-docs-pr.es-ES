@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o varios usuarios de su empresa para que puedan realizar tareas específicas en el Centro de administración.
-ms.openlocfilehash: e06533b70ddd7101f2ba160aa6796ee77e250c17
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4a112f17f253289383353720db8bb3365095d645
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161911"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128417"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
@@ -43,9 +44,13 @@ Para obtener más información, vea [Sobre los roles de administrador](about-adm
 
 Cuando agregas nuevos usuarios, si no les asignas un  rol de administrador, entonces están en el rol de usuario y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero si necesitas ayuda para hacer las cosas, puedes asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer las contraseñas, no debe asignarles el rol de administrador global, debe asignarles el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a sus datos y empresa en línea, es un riesgo de seguridad.
 
-## <a name="watch-add-an-adminbrbr"></a>Watch: Add an admin<br><br>
+## <a name="watch-add-an-admin"></a>Watch: Add an admin
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
+
+1. Cuando te registras en Microsoft 365 Empresa, automáticamente te conviertes en un administrador global. Para ayudar a administrar la empresa, también puedes hacer administradores de otras personas. 
+1. En el Centro de administración de Microsoft 365, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
+1. Elija el usuario que desea crear un administrador y, a continuación, seleccione **Administrar roles**.
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
@@ -107,6 +112,6 @@ Puede comprobar los permisos de roles de administración de dos maneras diferent
 ## <a name="related-content"></a>Contenido relacionado
 
 [Acerca de los roles de administrador en Microsoft 365](about-admin-roles.md) (artículo)\
-[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference) (artículo)\
+[Azure AD roles integrados](/azure/active-directory/roles/permissions-reference) (artículo)\
 [Asignar roles a cuentas de usuario con PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (artículo)\
 [Autorizar o quitar relaciones de partner](../misc/add-partner.md) (artículo)

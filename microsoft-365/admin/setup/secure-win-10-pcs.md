@@ -20,22 +20,35 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo proteger Windows 10 equipos después de configurar Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 11b91796d5c838cdcba656de430b875327be3db4
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: bc970928c9e82bfefcc5a8f87007f14ef431c122
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554365"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128813"
 ---
 # <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
 
 Una vez que haya configurado [Microsoft 365 Empresa Premium,](business-set-up.md) es el momento de proteger los equipos Windows 10 de su organización contra robos y amenazas malintencionadas como virus y malware.
+
+## <a name="watch-secure-your-windows-10-pcs"></a>Watch: Secure your Windows 10 PC
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
+
+Después de configurar la protección de dispositivos en Microsoft 365 Empresa, siga estos pasos para proteger los Windows 10 dispositivos.
+
+1. En el Centro de administración de Microsoft 365, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configurar**</a>.
+1. En **Proteger los equipos Windows,** seleccione **Ver**.
+1. Seleccione  **Introducción**.
+1. En Quién debe aplicarse la **directiva?**, elija si las selecciones se aplicarán a todos los usuarios de la organización o a grupos de seguridad específicos.
+1. Seleccione  **Guardar cambios**.
 
 ## <a name="to-secure-your-windows-10-computers"></a>Para proteger los Windows 10 equipos
 

@@ -19,17 +19,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración disponible en Microsoft 365 para empresas para proteger Windows 10 dispositivos.
-ms.openlocfilehash: 1217c6ad8be6b74c4b1fa05294f5bc51f275bea2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4019fb5d76824dc33bb5947d1bd3b25072b39bbd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165477"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128033"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Editar o crear la configuración de protección de dispositivos Windows 10 equipos
 
@@ -37,7 +38,7 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
 
 Después de configurar la configuración predeterminada de la protección Windows en la página Configuración, puede agregar otras nuevas que se apliquen a todos los usuarios o a un conjunto de usuarios. También puede editar cualquiera de las que haya creado.
 
-## <a name="create-protection-settings-for-windows-10-devices"></a>Crear configuraciones de protección para Windows 10 dispositivos
+## <a name="watch-create-protection-settings-for-windows-10-devices"></a>Watch: Create protection settings for Windows 10 devices
 
 Vea un vídeo sobre cómo proteger Windows 10 dispositivos con Microsoft 365 Empresa Premium:
   

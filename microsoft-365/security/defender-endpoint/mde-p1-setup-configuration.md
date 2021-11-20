@@ -1,5 +1,5 @@
 ---
-title: Configurar y configurar Microsoft Defender para endpoint plan 1 (versión preliminar)
+title: Configurar y configurar Microsoft Defender para el plan de extremo 1
 description: Obtenga información sobre cómo configurar y configurar Defender for Endpoint Plan 1. Revise los requisitos, planee su implementación y configure el entorno.
 search.appverid: MET150
 author: denisebmsft
@@ -7,32 +7,32 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 11/19/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 26dbdfa70e05e3c8bb055fa1d18b056ee798c132
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: 03f9a8268ac3d1652840a9d99d3493358cf71ee4
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940578"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128021"
 ---
-# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Configurar y configurar Microsoft Defender para endpoint plan 1 (versión preliminar)
+# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurar y configurar Microsoft Defender para el plan de extremo 1
 
 > [!TIP]
 > Si tiene Microsoft 365 E3 O A3 pero no Microsoft 365 E5 o A5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
 
-En este artículo se describe cómo configurar y configurar Defender for Endpoint Plan 1 (versión preliminar). Tanto si tiene asistencia como si lo está haciendo usted mismo, puede usar este artículo como guía durante toda la implementación.  
+En este artículo se describe cómo configurar y configurar Defender for Endpoint Plan 1. Tanto si tiene asistencia como si lo está haciendo usted mismo, puede usar este artículo como guía durante toda la implementación.  
 
 ## <a name="the-setup-and-configuration-process"></a>Proceso de configuración y configuración
 
 :::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Flujo de instalación e implementación de Microsoft Defender para endpoint plan 1":::
 
-El proceso general de configuración y configuración de Defender for Endpoint Plan 1 (versión preliminar) es el siguiente: <br/><br/>
+El proceso general de configuración y configuración de Defender for Endpoint Plan 1 es el siguiente: <br/><br/>
 
 
 | Número  | Paso  | Descripción  |
@@ -44,17 +44,14 @@ El proceso general de configuración y configuración de Defender for Endpoint P
 | 5 | [Incorporación a Defender para endpoint](#onboard-to-defender-for-endpoint) | Enumera varios métodos por sistema operativo para incorporar a Defender for Endpoint Plan 1 e incluye vínculos a información más detallada para cada método  |
 | 6  | [Configurar protección de última generación](#configure-next-generation-protection) | Describe cómo configurar las opciones de protección de próxima generación en Microsoft Endpoint Manager  |
 | 7  | [Configurar las capacidades de reducción de superficie de ataque](#configure-your-attack-surface-reduction-capabilities)        | Enumera los tipos de capacidades de reducción de superficie de ataque que puedes configurar e incluye procedimientos con vínculos a más recursos  |
-
-> [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Defender for Endpoint Plan 1 (versión preliminar).
  
 ## <a name="review-the-requirements"></a>Revisar los requisitos
 
-En la tabla siguiente se enumeran los requisitos básicos de Defender para el plan de extremo 1 (versión preliminar):<br/><br/>
+En la tabla siguiente se enumeran los requisitos básicos para Defender para el plan de extremo 1:<br/><br/>
 
 | Requisito | Descripción |
 |:---|:---|
-| Requisitos de licencias | Plan 1 de Defender para punto de conexión (versión preliminar) <br/><br/>*Si tiene una Microsoft 365 E3 O A3, puede unirse al programa de vista previa.* |
+| Requisitos de licencias | Defender for Endpoint Plan 1 <br/><br/>*Si tiene una Microsoft 365 E3 O A3, puede unirse al programa de vista previa.* |
 | Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
 | Sistemas operativos | Windows 10, versión 1709 o posterior <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave) <br/>iOS <br/>Sistema operativo Android  |
 | Datacenter | Una de las siguientes ubicaciones de centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
@@ -103,7 +100,7 @@ Microsoft recomienda asignar a los usuarios solo el nivel de permiso que necesit
 
 En la tabla siguiente se describen los roles clave que se deben tener en cuenta para Defender for Endpoint en su organización: <br/><br/>
 
-| Role | Descripción |
+| Función | Descripción |
 |:---|:---|
 | Administradores globales (también denominados administradores globales) <br/><br/> *Como práctica recomendada, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que se ha registrado en su empresa para Microsoft 365 o para Microsoft Defender para el plan de extremo 1 es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos Microsoft 365 portales, como: <br/>- El Centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) <br/>- Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>- Microsoft Endpoint Manager centro de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  |
 | Administradores de seguridad (también denominados administradores de seguridad) | Los administradores de seguridad pueden realizar tareas de operador de seguridad más las siguientes tareas: <br/>- Supervisar directivas relacionadas con la seguridad <br/>- Administrar alertas y amenazas de seguridad <br/>- Ver informes |
@@ -121,7 +118,7 @@ Cuando esté listo para incorporar los puntos de conexión de su organización, 
 |Sistema operativo Endpoint | Métodos de incorporación|
 |---|---|
 | Windows 10 | [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)  |
-| macOS | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
+| macOS | [Scripts locales](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
 | iOS |[Basado en aplicaciones](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
 
@@ -148,7 +145,7 @@ Para configurar la protección de próxima generación en Microsoft Endpoint Man
 
 ## <a name="configure-your-attack-surface-reduction-capabilities"></a>Configurar las capacidades de reducción de superficie de ataque
 
-La reducción de superficie de ataque se trata de reducir los lugares y formas en que la organización está abierta al ataque. Defender for Endpoint Plan 1 (versión preliminar) incluye varias características y funcionalidades que te ayudarán a reducir las superficies de ataque en todos los puntos de conexión. Estas características y funcionalidades se enumeran en la tabla siguiente: <br/><br/>
+La reducción de superficie de ataque se trata de reducir los lugares y formas en que la organización está abierta al ataque. Defender for Endpoint Plan 1 incluye varias características y funcionalidades que te ayudarán a reducir las superficies de ataque en todos los puntos de conexión. Estas características y funcionalidades se enumeran en la tabla siguiente: <br/><br/>
 
 | Característica/funcionalidad | Descripción |
 |:---|:---|
@@ -403,8 +400,8 @@ Para ayudarle con la planeación de la implementación de WDAC, consulte los sig
 
 - [Windows Defender de control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para endpoint. 
 
-- [Introducción a Defender for Endpoint Plan 1 (versión preliminar)](mde-plan1-getting-started.md)
+- [Introducción a Defender for Endpoint Plan 1](mde-plan1-getting-started.md)

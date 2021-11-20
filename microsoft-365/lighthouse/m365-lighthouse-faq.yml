@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre Microsoft 365 Lighthouse.
-  ms.openlocfilehash: f7e2798305587f8e8d30b566dfdf5eca5b412f4f
-  ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+  ms.openlocfilehash: 834bab4a146b72fc4e4b6598ee54758ad5a55095
+  ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/23/2021
-  ms.locfileid: "60552649"
+  ms.lasthandoff: 11/20/2021
+  ms.locfileid: "61127937"
 title: Microsoft 365 Lighthouse preguntas más frecuentes (preguntas frecuentes)
 summary: >
   > [!NOTE]
@@ -77,7 +77,7 @@ sections:
           > [!NOTE]
           > Una vez inactivado un inquilino, no podrá realizar ninguna acción en el espacio empresarial hasta que se complete la inactivación. La inactivación puede tardar hasta 48 horas en completarse.
 
-      Para obtener más información sobre los inquilinos, Microsoft 365 Lighthouse información general [sobre la lista de inquilinos.](m365-lighthouse-tenant-list-overview.md)
+      Para obtener más información acerca de los inquilinos, [vea Microsoft 365 Lighthouse de la página de inquilinos.](m365-lighthouse-tenants-page-overview.md)
   - question: ¿Microsoft 365 Lighthouse si los inquilinos de mis clientes tienen otras suscripciones además de Microsoft 365 Empresa Premium o Microsoft 365 E3?
     answer: >
       Lighthouse le ayuda a administrar los inquilinos de clientes que tienen Microsoft 365 Empresa Premium o Microsoft 365 E3 licencias para sus usuarios. Para los usuarios de inquilinos de clientes que no tienen licencias de Premium o E3, la funcionalidad de Lighthouse será limitada. Por ejemplo, si un usuario no tiene una licencia que incluya Intune, los dispositivos de ese usuario, el estado de cumplimiento del dispositivo y el estado de amenazas no estarán disponibles; y si un usuario no tiene una licencia que incluya Azure AD P1, la contraseña y la administración de inicio de sesión de ese usuario no estarán disponibles. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).

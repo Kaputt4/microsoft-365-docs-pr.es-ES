@@ -1,11 +1,11 @@
 ---
-title: Kit del laboratorio de implementación de Office 365 y Windows 10
+title: Windows y Office 365 de laboratorio de implementación
 f1.keywords:
 - NOCSH
 ms.author: greglin
 author: greg-lindsay
-manager: laurawi
-ms.date: 04/26/2021
+manager: dougeby
+ms.date: 11/18/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,35 +14,37 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 2801840e0329233ad79abdae607b81094db5e282
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre dónde obtener acceso al kit Windows y Office deployment lab.
+ms.openlocfilehash: cda0cf9df86e6a02139af7e0baa133afd19f1c13
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173312"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128177"
 ---
-# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit del laboratorio de implementación de Office 365 y Windows 10
+# <a name="windows-and-office-365-deployment-lab-kit"></a>Windows y Office 365 de laboratorio de implementación
 
-El kit Windows 10 y Office 365 de laboratorio de implementación de Office 365 está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise y Aplicaciones Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, Análisis de escritorio, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
+El kit de laboratorio de implementación Windows y Office 365 está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise o Windows 11 Enterprise y Aplicaciones Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, Análisis de escritorio, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
 Este kit es muy recomendable para las organizaciones que se Windows 8.1 actualizaciones a Windows 10. También se aplica si actualmente usa Windows 10, Aplicaciones Microsoft 365 para empresas (anteriormente Office 365 ProPlus) o Office 2019. Como entorno aislado, el laboratorio resultante es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
 
-[Descargue el Windows 10 y Office 365 de laboratorio de implementación](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+## <a name="windows-10-and-windows-11-versions-of-the-lab-kit-are-now-available-for-free-download-in-the-microsoft-evaluation-center"></a>Windows 10 y Windows 11 versiones del kit de laboratorio ahora están disponibles para su descarga gratuita en el Centro de evaluación de Microsoft. 
+
+[Descargar el kit Windows 10 y Office 365 de](https://www.microsoft.com/evalcenter/evaluate-lab-kit)laboratorio de implementación Descargar el kit de laboratorio de implementación Windows 
+ [11](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit) y Office 365 de implementación
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 
-El kit le proporciona un entorno de laboratorio virtual aprovisionado automáticamente, incluidos los clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El kit contiene las versiones de evaluación más recientes de los siguientes productos:
+El laboratorio le proporciona un entorno de laboratorio virtual aprovisionado automáticamente, incluidos los clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. Los laboratorios ejecutan versiones de evaluación de los siguientes productos:
 
-- ¡NUEVO! Windows 10 Enterprise, versión 21H1
+- Windows 10 Enterprise, versión 21H1 o Windows 11 Enterprise
 - Windows 7 Enterprise
 - ¡NUEVO! Microsoft Endpoint Configuration Manager, versión 2103
 - Windows Assessment and Deployment Kit para Windows 10
 - Microsoft Deployment Toolkit
 - Microsoft Application Virtualization (App-V)
 - Supervisión y administración de Microsoft BitLocker
-- Windows Server
-- Microsoft SQL Server
+- Windows Server 2019 o Windows Server 2022
 
 El laboratorio resultante está diseñado para conectarse a pruebas para:
 
@@ -53,6 +55,8 @@ El laboratorio resultante está diseñado para conectarse a pruebas para:
 ## <a name="step-by-step-labs"></a>Prácticas paso a paso
 
 Las guías de laboratorio detalladas le llevarán a través de varios escenarios de implementación y administración. Se han actualizado las prácticas para las versiones más recientes de Intune y Configuration Manager
+
+Nota: La Windows versión 11 del laboratorio incluye la guía de laboratorio Windows 10, versión 21H1. Una Windows versión 11 de la guía de laboratorio estará disponible próximamente. 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planeación y preparación de infraestructura
 
@@ -88,7 +92,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 - Implementación administrada en la nube
 - Implementación administrada localmente
-- Aplicaciones Microsoft 365 para empresas Implementación en dispositivos no unidos a AD
+- Aplicaciones Microsoft 365 para empresas implementación en dispositivos no unidos a AD
 - Enterprise implementación administrada con Configuration Manager
 - Enterprise implementación administrada mediante Microsoft Intune
 - Implementación y administración de LOB con Microsoft Intune
@@ -99,12 +103,11 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 - Preparar, implementar, optimizar
 
-## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>Dónde encontrar el kit de Windows 10 y Office 365 de implementación
-
-[Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+[Descargar el kit Windows 10 y Office 365 de](https://www.microsoft.com/evalcenter/evaluate-lab-kit)laboratorio de implementación Descargar el kit de laboratorio de implementación Windows 
+ [11](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit) y Office 365 de implementación
 
 > [!NOTE]
-> Use una conexión a Internet de banda ancha para descargar este contenido y permitir de 30 a 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El laboratorio expira el 6 de noviembre de 2021. Antes de la expiración, se publicará una nueva versión.
+> Use una conexión a Internet de banda ancha para descargar este contenido y permitir de 30 a 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El Windows 10 expira el 16 de febrero de 2022. El Windows 11 expira el 10 de febrero de 2022. Las nuevas versiones se publicarán antes de la expiración.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 
@@ -119,5 +122,5 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 - [Presentación de Microsoft Office 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Office 365 para empresas](https://products.office.com/business/office)
 - [Presentación de Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows 10 para la empresa](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-- [Windows 10 para pequeñas y medianas empresas](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+- [Windows para empresas](https://www.microsoft.com/windows/business)
+

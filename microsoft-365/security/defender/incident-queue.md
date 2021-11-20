@@ -17,30 +17,31 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d3dea119e73da7d0b0e8745ea1f96969f4818ac8
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 0705424080f58d58f8c45b4a403fae01beb53373
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914325"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128837"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Microsoft 365 Defender aplica análisis de correlación y agrega alertas relacionadas e investigaciones automatizadas de diferentes productos en un incidente. Microsoft 365 Defender activa alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de un extremo a otro que Microsoft 365 Defender en todo el conjunto de productos. Esta vista ofrece a los analistas de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
 
 La **cola Incidentes muestra** una colección de incidentes que se crearon en dispositivos, usuarios y buzones. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada. Esto también se conoce como triaje de incidentes.
 
-You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -65,22 +66,26 @@ En la cola de incidentes  predeterminada, puede seleccionar Filtros para ver un 
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
+El filtro predeterminado es mostrar todas las alertas e incidentes con un **estado nuevo** **y en** curso.
+
 En esta tabla se enumeran los nombres de filtro disponibles.
 
 | Nombre del filtro | Descripción |
 |:-------|:-----|
-| Asignado a | Puede elegir mostrar las alertas que se le han asignado o las que controla la automatización. |
+| Estado | Seleccione **Nuevo**, **En curso** o **Resuelto**. |
+| Severity | La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requiere la atención más inmediata. Seleccione **High**, **Medium,** **Low** o **Informational**. |
+| Asignación de incidentes | Seleccione Asignado a cualquier persona, Asignado a mí o Sin asignar. |
+| Múltiples orígenes del servicio  | Especifique si el filtro es para más de un origen de servicio. |
+| Orígenes del servicio  | Filtra para ver solo incidentes que contienen alertas de: Gobierno de aplicaciones, Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, Microsoft Defender para identidad, Microsoft Defender para aplicaciones en la nube. |
+| Etiquetas | Seleccione uno o varios nombres de etiqueta de la lista. |
+| Varias categorías  | Especifique si el filtro es para más de una categoría. |
 | Categorías | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
-| Clasificación | Filtrar incidentes en función de las clasificaciones establecidas de las alertas relacionadas. Los valores incluyen alertas verdaderas, alertas falsas o no establecidas. |
-| Confidencialidad de datos | Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para ver si hay datos confidenciales implicados en el incidente, puede determinar rápidamente si la información confidencial se ha visto comprometida y así dar prioridad a estos incidentes. <br><br> Solo se aplica si se ha activado Microsoft Information Protection. |
-| Grupo de dispositivos | Filtrar por grupos de dispositivos definidos. |
-| Estado de investigación | Filtrar incidentes por el estado de la investigación automatizada.  |
-| Varias categorías | Puede elegir ver solo incidentes que se han asignado a varias categorías y, por lo tanto, puede causar más daños. |
-| Múltiples orígenes del servicio  | Filtra para ver solo incidentes que contienen alertas de diferentes orígenes (Microsoft Defender para endpoint, Microsoft Cloud App Security, Microsoft Defender para Identity, Microsoft Defender para Office 365). |
 | Plataforma del sistema operativo | Limitar la vista de cola de incidentes por sistema operativo. |
-| Orígenes del servicio | Al elegir un origen específico, puede concentrarse en los incidentes que contienen al menos una alerta del origen seleccionado. |
-| Severity | La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requiere la atención más inmediata. |
-| Estado | Puede limitar la lista de incidentes que se muestra en función de su estado para ver cuáles están activos o resueltos. |
+| Clasificación | Filtrar incidentes en función de las clasificaciones establecidas de las alertas relacionadas. Seleccione **Alerta true**, **Alertas falsas** o **No establecer**. |
+| Estado de investigación | Filtrar incidentes por el estado de la investigación automatizada.  |
+| Amenaza asociada | Filtrar incidentes por una amenaza con nombre.  |
+| Actors | Filtrar incidentes por un actor de amenazas con nombre.  |
+| Confidencialidad de datos | Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para ver si hay datos confidenciales implicados en el incidente, puede determinar rápidamente si la información confidencial se ha visto comprometida y así dar prioridad a estos incidentes. <br><br>Este filtro solo está disponible si Microsoft Information Protection está activado.|
 |||
 
 ## <a name="save-defined-filters-as-urls"></a>Guardar filtros definidos como direcciones URL
@@ -100,7 +105,7 @@ Una vez que haya configurado un filtro útil en la cola de incidentes, puede mar
 
 Una vez que haya compilado y almacenado la lista de vistas de filtro útiles como direcciones URL, puede usarla para procesar y priorizar rápidamente los incidentes de la cola y administrarlos para su posterior asignación y análisis. [](manage-incidents.md)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo y:
 

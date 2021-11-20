@@ -18,6 +18,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Cambie su dirección de correo electrónico a una dirección de correo electrónico descriptivo como tom@fourthcoffee.com comprando un nombre de dominio y adición a Microsoft 365.
-ms.openlocfilehash: 71269513bce69ec81cf6e4a3030fb3327c32c88d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf6de4115b37e6f83da7b924cc41f4d2c13ac427
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165141"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127985"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Cambiar la dirección de correo electrónico para usar el dominio personalizado
 
@@ -57,6 +58,26 @@ La dirección de correo electrónico inicial en Office 365 operado por 21Vianet 
 
 Cuando cambie el correo electrónico de su dominio para que llegue a Microsoft 365, al actualizar el registro MX del dominio durante la instalación, todo el correo electrónico enviado a ese dominio empezará a llegar a Microsoft 365. Asegúrese de que ha agregado usuarios y creado buzones en Microsoft 365 para todos los usuarios que tienen correo electrónico en su dominio ANTES de cambiar el registro MX. ¿No quiere mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? En su lugar, puede tomar [medidas para Microsoft 365 con solo unas cuantas](../misc/pilot-microsoft-365-from-my-custom-domain.md)direcciones de correo electrónico.
   
+## <a name="set-up-business-email-with-a-new-domain"></a>Configurar el correo electrónico empresarial con un nuevo dominio
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
+
+Compre un nuevo nombre de dominio para su dirección de correo electrónico y configure las direcciones de correo electrónico con Microsoft 365.
+
+1. Compre un nuevo nombre de dominio para su dirección de correo electrónico proporcionando su información de contacto para el nuevo nombre de dominio, eligiendo el método de pago y, a continuación, realizando el pedido.
+1. Cambie la primera parte de la dirección (antes del signo @) o déjela tal como está. 
+1. Cerrar sesión Microsoft 365 y, a continuación, volver a iniciar sesión con la nueva dirección de correo electrónico. Las direcciones de correo electrónico de los empleados se actualizan con el nuevo dominio. 
+
+## <a name="set-up-business-email-with-an-existing-domain"></a>Configurar el correo electrónico empresarial con un dominio existente
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxApu?autoplay=false]
+
+Use un nombre de dominio que ya posee si lo está usando para una dirección de sitio web o una dirección de correo electrónico en otro proveedor.
+
+1. Inicie sesión en el sitio web que hospeda el dominio. Haga clic en un botón para comprobar automáticamente o actualizar el dominio manualmente. 
+1. Personalice la dirección de correo electrónico o déjela tal como está.
+1. Cerrar sesión Microsoft 365 y, a continuación, volver a iniciar sesión con la nueva dirección de correo electrónico. Las direcciones de correo electrónico de los empleados se actualizan con el nuevo dominio.
+
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Cambie su dirección de correo electrónico para usar su dominio personalizado mediante el Centro de administración de Microsoft 365
 
 Para poder realizar estos pasos, debe ser Administrador global.

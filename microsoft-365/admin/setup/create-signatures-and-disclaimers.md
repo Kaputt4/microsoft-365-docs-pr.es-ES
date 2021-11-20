@@ -20,18 +20,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administrar firmas de correo electrónico, incluidas declinaciones de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: 566cf595365a578f0e92d7e41e8ed7c7764c0cf4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e2dc52c881bd2dbe87552ab71a369662ade60e5
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197805"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128237"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 
@@ -40,6 +41,11 @@ ms.locfileid: "60197805"
 ## <a name="watch-create-a-company-wide-email-signature"></a>Watch: Create a company-wide email signature
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, seleccione **Exchange**.
+1. Seleccione **Flujo de correo**.
+1. Seleccione **Agregar +** y, a continuación, seleccione Aplicar **declinaciones de responsabilidades**.
+1. En la **página Nueva regla,** complete los pasos. 
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 

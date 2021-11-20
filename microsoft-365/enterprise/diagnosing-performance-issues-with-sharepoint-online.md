@@ -3,7 +3,7 @@ title: Diagnosticar problemas de rendimiento con SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 7/9/2019
+ms.date: 11/19/2021
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -19,26 +19,35 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: En este artículo se muestra cómo diagnosticar problemas comunes con el sitio SharePoint Online mediante las herramientas de desarrollador de Internet Explorer.
-ms.openlocfilehash: bb12bc6b8b8f95c33ad35aafad760803e927e830
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: acd5fc05f933e5d47b5bb14c2d3317ea3a6e0186
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60664944"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128741"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosticar problemas de rendimiento con SharePoint Online
 
 En este artículo se muestra cómo diagnosticar problemas comunes con el sitio SharePoint Online mediante las herramientas de desarrollador de Internet Explorer.
   
-Hay tres formas diferentes de identificar que una página de un sitio de SharePoint Online tiene un problema de rendimiento con las personalizaciones.
+Hay cuatro formas diferentes de identificar que una página de un sitio de SharePoint Online tiene un problema de rendimiento con las personalizaciones.
+
+- Diagnóstico de rendimiento de sitio y página
   
 - Monitor de red de la barra de herramientas F12
 
 - Comparación con una línea base no personalizada
 
-- SharePoint Métricas de encabezado de respuesta en línea
+- SharePoint de encabezado de respuesta en línea
 
-En este tema se describe cómo usar cada uno de estos métodos para diagnosticar problemas de rendimiento. Una vez que haya descubierto la causa del problema, puede trabajar en una solución con los artículos sobre cómo mejorar SharePoint rendimiento que puede encontrar en https://aka.ms/tune . Como alternativa, si es administrador y desea diagnosticar el problema rápidamente, [ejecute esta herramienta de diagnóstico](https://aka.ms/PillarSiteandPagePerf). 
+En este tema se describe cómo usar cada uno de estos métodos para diagnosticar problemas de rendimiento. Una vez que haya descubierto la causa del problema, puede trabajar en una solución con los artículos sobre cómo mejorar SharePoint rendimiento que puede encontrar en https://aka.ms/tune .  
+
+## <a name="use-the-site-and-page-performance-diagnostic-from-the-microsoft-365-admin-center"></a>Usar el diagnóstico de rendimiento de sitio y página desde el Centro de Administración de Microsoft 365 web
+
+> [!NOTE]
+> Si es administrador y tiene problemas con el rendimiento en SharePoint,  seleccione Ejecutar pruebas a continuación, que rellenará el diagnóstico de rendimiento de sitio y página en el Centro de Administración de Microsoft 365. Estas pruebas comprobarán la configuración y recomendarán rápidamente los siguientes pasos para ayudar a mejorar SharePoint rendimiento para el inquilino.
+>> [!div class="nextstepaction"]
+>> [Ejecutar pruebas: comprobar SharePoint rendimiento](https://aka.ms/PillarSiteandPagePerf)
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Uso de la barra de herramientas F12 para diagnosticar el rendimiento en SharePoint Online
 <a name="F12ToolInfo"> </a>

@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Cuando ya no necesite conservar el contenido de un buzón Microsoft 365 inactivo, puede eliminar permanentemente el buzón inactivo.
-ms.openlocfilehash: 929b3d8a01dd9c88bc12e6e13bf4477a07496b34
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 386e03bd9518f0db9c37a306c71d0cd9c4230e3a
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804634"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127973"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
@@ -40,9 +40,9 @@ Consulte la sección [Más información](#more-information) para ver una descrip
 
 - Puede copiar el contenido de un buzón inactivo a otro buzón antes de quitar la retención y eliminar un buzón inactivo. Para obtener más información, [vea Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md).
 
-- Si quita la directiva de retención o retención de un buzón inactivo y el período de retención del buzón eliminado temporalmente para el buzón ha expirado, el buzón se eliminará permanentemente. Una vez eliminado, no se puede recuperar. Antes de quitar la retención, asegúrese de que ya no necesita el contenido del buzón. Si desea reactivar un buzón inactivo, puede recuperarlo. Para obtener más información, [vea Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
+- Si quita la directiva de retención o retención de un buzón inactivo y el período de retención de buzones eliminado temporalmente para el buzón ha expirado, el buzón se eliminará permanentemente después de que expire el período de retención de buzones eliminado temporalmente de 183 días. Para obtener más información sobre el período de retención de buzones eliminados temporalmente, vea la [sección Más información](#more-information) de este artículo. Después de eliminar permanentemente el buzón inactivo, no se puede recuperar. Antes de quitar la retención, asegúrese de que ya no necesita el contenido del buzón. Si desea reactivar un buzón inactivo, puede recuperarlo. Para obtener más información, [vea Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
 
-- Para obtener más información acerca de los buzones inactivos, vea [Buzones](inactive-mailboxes-in-office-365.md)inactivos en Office 365 .
+- Para obtener más información acerca de los buzones inactivos, vea [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Paso 1: identificar las retenciones en un buzón inactivo
 
@@ -228,4 +228,3 @@ Si la retención local contiene un gran número de buzones de origen, es posible
   ```
 
   En el ejemplo anterior, la propiedad *WhenSoftDeleted* identifica la fecha de eliminación temporal, que en este ejemplo es el 16 de junio de 2020. La *propiedad Was ElMailbox* aparece como porque anteriormente era un `True` buzón inactivo. El buzón se eliminará permanentemente 183 días después del 30 de septiembre de 2020.
-

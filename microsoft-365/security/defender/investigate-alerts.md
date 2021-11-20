@@ -16,16 +16,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3126523fd68afba29e3401533f7de2313f7df65b
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: cdc853ff4d22708143a9f23fd9399917e7fe91f6
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724768"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128010"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -38,7 +39,7 @@ Las alertas son la base de todos los incidentes e indican la aparición de event
 
 En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para formar [incidentes](incidents-overview.md). Los incidentes siempre proporcionarán el contexto más amplio de un ataque, sin embargo, el análisis de alertas puede ser útil cuando se requiere un análisis más profundo. 
 
-La **cola De alertas** muestra el conjunto actual de alertas. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)).
+La **cola De alertas** muestra el conjunto actual de alertas. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a>.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas en Microsoft 365 Defender portal.":::
 
@@ -54,11 +55,9 @@ Puede filtrar alertas según estos criterios:
 
 - Severity
 - Estado
-- Categoría
-- Origen de detección
-- Etiquetas
-- Policy
+- Orígenes del servicio
 - Activos afectados
+- Estado de investigación automatizada
 
 ## <a name="required-roles-for-defender-for-office-365-alerts"></a>Roles necesarios para Defender para Office 365 alertas
 
@@ -76,7 +75,7 @@ Tendrás que tener cualquiera de los siguientes roles para tener acceso a Micros
 
    - Lector de seguridad
 
-- Office 365 Grupos de & de seguridad
+- Office 365 de roles de & seguridad
 
    - Administrador de cumplimiento
 
@@ -100,19 +99,19 @@ Una página de alerta se compone de estas secciones:
 A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver las acciones disponibles, como abrir la página de alerta o vincular la alerta a otro incidente.
 
 ### <a name="alert-sources"></a>Orígenes de alertas
-Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y el complemento de gobierno de aplicaciones para Microsoft Cloud App Security. Es posible que observe alertas con caracteres anteponer en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alerta en función del carácter anteponer a la alerta.
+
+Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para aplicaciones en la nube y el complemento de gobierno de aplicaciones para Microsoft Defender para aplicaciones en la nube. Es posible que observe alertas con caracteres anteponer en la alerta. En la tabla siguiente se proporcionan instrucciones que le ayudarán a comprender la asignación de orígenes de alerta en función del carácter anteponer a la alerta.
 
 > [!NOTE]
-> - Los GUID antediados son específicos solo para experiencias unificadas, como la cola de alertas unificadas, la página de alertas unificadas, la investigación unificada y el incidente unificado.<br>
-> - El carácter anteponer no cambia el GUID de la alerta. El único cambio en el GUID es el componente anteponer.<br>
+> - Los GUID antediados son específicos solo para experiencias unificadas, como la cola de alertas unificadas, la página de alertas unificadas, la investigación unificada y el incidente unificado.
+> - El carácter anteponer no cambia el GUID de la alerta. El único cambio en el GUID es el componente anteponer.
 
-
-Origen de alertas | Carácter anteponer 
-:---|:---
-Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> 
-Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
+| Origen de alertas | Carácter anteponer |
+| :---|:--- |
+| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> |
+| Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>Analizar activos afectados
 
@@ -182,27 +181,27 @@ Los equipos de operaciones de seguridad modernas (SecOps) necesitan automatizaci
 
 - El usuario no está etiquetado como de alto riesgo
 
-Si ambos son true, SecOps marca la alerta como viaje legítimo y la resuelve. Una notificación se publica en Microsoft Teams una vez resuelta la alerta. 
+Si ambos son true, SecOps marca la alerta como viaje legítimo y la resuelve. Una notificación se publica en Microsoft Teams una vez resuelta la alerta.
 
-### <a name="connect-power-automate-to-microsoft-cloud-app-security"></a>Conectar Power Automate para Microsoft Cloud App Security
+### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Conectar Power Automate a Microsoft Defender para aplicaciones en la nube
 
-Para crear la automatización, necesitarás un token de API antes de conectarte Power Automate a Microsoft Cloud App Security. 
+Para crear la automatización, necesitarás un token de API antes de conectarte Power Automate a Microsoft Defender para aplicaciones en la nube.
 
-1. Haga **clic Configuración**, seleccione Extensiones de **seguridad** y, a continuación, haga clic en **Agregar token** en la pestaña Tokens de **API.** 
+1. Haga **clic Configuración**, seleccione Extensiones de **seguridad** y, a continuación, haga clic en **Agregar token** en la pestaña Tokens de **API.**
 
 2. Proporcione un nombre para el token y, a continuación, haga clic **en Generar**. Guarde el token como lo necesitará más adelante.
 
 ### <a name="create-an-automated-flow"></a>Crear un flujo automatizado
 
-Para ver el proceso detallado paso a paso, vea el vídeo [aquí](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn). 
+Para ver el proceso detallado paso a paso, vea el vídeo [aquí](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
 
-En este vídeo también se describe cómo conectar la automatización de energía a Cloud App Security. 
+En este vídeo también se describe cómo conectar power automate a Defender for Cloud Apps.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

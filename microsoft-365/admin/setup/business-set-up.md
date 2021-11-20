@@ -26,17 +26,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Descubra los pasos de configuración para Microsoft 365 Empresa Premium, como agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: 9c2c9da3e9427f77f067001c5f244e7c6d4e247f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9fd4189754f11983770a01f8a9eb3e4858f55dec
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196206"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128045"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurar Microsoft 365 Empresa Premium en el Asistente para configuración
 
@@ -45,6 +46,13 @@ ms.locfileid: "60196206"
 Vea este vídeo para obtener información general sobre Microsoft 365 Empresa Premium configuración.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Configure up Microsoft 365 Empresa Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>y seleccione **Ir al programa de instalación**. Se iniciará el asistente para la instalación.
+1. Una vez completada la instalación, vuelva al Centro de administración de Microsoft. En el Centro de administración puede seguir configurando características como directivas de Windows 10, DLP, etc. en la página **De** instalación.
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Agregar el dominio, los usuarios y configurar directivas
 
@@ -86,7 +94,7 @@ A los usuarios que agregues en el asistente se les asignará automáticamente un
 
 ![Captura de pantalla de la página Agregar nuevos usuarios en el asistente.](../../media/addnewuserspage.png)
 
-1. Si la Microsoft 365 Empresa Premium cuenta con usuarios existentes (por ejemplo, si usó Azure AD Conectar), ahora obtiene una opción para asignarles licencias. Proceda y agrégueles licencias también.
+1. Si la Microsoft 365 Empresa Premium cuenta con usuarios existentes (por ejemplo, si usó Azure AD Conectar), ahora tiene la opción de asignarles licencias. Proceda y agrégueles licencias también.
 
 2. Después de agregar a los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios agregados. Puede escoger entre imprimirlas, enviarlas por correo electrónico o descargarlas.
 
@@ -128,7 +136,7 @@ En el panel de navegación izquierdo, seleccione **Configurar** y, a continuaci�
 
 ## <a name="deploy-office-365-client-apps"></a>Implementar Office 365 cliente
 
-Si optó por instalar automáticamente aplicaciones Office durante la instalación, las aplicaciones se instalarán en los dispositivos de Windows 10 una vez que los usuarios han iniciado sesión en Azure AD desde sus dispositivos Windows, con sus credenciales de trabajo.
+Si decide instalar automáticamente aplicaciones Office durante la instalación, las aplicaciones se instalarán en los dispositivos de Windows 10 una vez que los usuarios han iniciado sesión en Azure AD desde sus dispositivos Windows, con sus credenciales de trabajo.
 
 Para instalar Office dispositivos móviles iOS o Android, consulta Configurar dispositivos móviles [para Microsoft 365 Empresa Premium usuarios.](set-up-mobile-devices.md)
 

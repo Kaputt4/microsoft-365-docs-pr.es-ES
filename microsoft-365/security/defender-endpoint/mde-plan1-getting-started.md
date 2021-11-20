@@ -1,5 +1,5 @@
 ---
-title: Introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)
+title: Introducción al Plan 1 de Microsoft Defender para endpoints
 description: Introducción al uso de Defender para el plan de extremo 1. Aprende a usar Defender para la nube, administrar alertas y dispositivos y ver informes.
 search.appverid: MET150
 author: denisebmsft
@@ -7,26 +7,26 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 11/19/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e361c8a93d35a9e0cc589b8d47adadfe54ef141b
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f22f2c17e87b676d6522173e8540bf4833d0215d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111140"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128273"
 ---
-# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Introducción al Plan 1 de Microsoft Defender para endpoints (versión preliminar)
+# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Introducción al Plan 1 de Microsoft Defender para endpoints
 
 > [!TIP]
 > Si tiene Microsoft 365 E3 O A3 pero no Microsoft 365 E5 o A5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
 
-El portal de Microsoft 365 Defender ( ) le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, tomar las medidas necesarias en las amenazas detectadas y administrar [https://security.microsoft.com](https://security.microsoft.com) dispositivos. El Microsoft 365 Defender es donde puede empezar a interactuar con las capacidades de protección contra amenazas que obtiene con Defender for Endpoint Plan 1 (versión preliminar). En las secciones siguientes se describe cómo empezar:
+El portal de Microsoft 365 Defender ( ) le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, tomar las medidas necesarias en las amenazas detectadas y administrar [https://security.microsoft.com](https://security.microsoft.com) dispositivos. El Microsoft 365 Defender es donde puede empezar a interactuar con las capacidades de protección contra amenazas que obtiene con Defender for Endpoint Plan 1. En las secciones siguientes se describe cómo empezar:
 
 - [El portal de Microsoft 365 Defender](#the-microsoft-365-defender-portal)
 - [Visualización y administración de incidentes & alertas](#view-and-manage-incidents--alerts)
@@ -168,7 +168,7 @@ Desplácese hacia abajo para ver todas las vistas del informe de protección web
 > [!TIP]
 > Para obtener más información, vea [Protección web](web-protection-overview.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- [Administrar Microsoft Defender para endpoint plan 1 (versión preliminar)](mde-p1-maintenance-operations.md)
+- [Administrar Microsoft Defender para el plan de extremo 1](mde-p1-maintenance-operations.md)
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)

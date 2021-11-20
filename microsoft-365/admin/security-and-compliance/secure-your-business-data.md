@@ -19,22 +19,31 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Cómo proteger el correo electrónico y los datos de su empresa de ciberamenazas, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 4ae0f773f196d00855f426d52526e7a96938832d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e15240f70b99e649ae6451bfe81924fa5a0a140c
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110036"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128357"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
 Si es una organización pequeña o mediana que usa uno de los planes de negocio de Microsoft y su tipo de organización está dirigida por cibercriminales y hackers, use las instrucciones de este artículo para aumentar la seguridad de su organización. Esta guía ayuda a su organización a lograr los objetivos descritos en el Manual de la campaña de ciberseguridad de la Escuela Kennedy [de](https://go.microsoft.com/fwlink/p/?linkid=2015598)Harvard.
+
+## <a name="watch-overview-of-security"></a>Watch: Overview of security
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
+
+Microsoft 365 Empresa Premium proporciona características de protección contra amenazas, protección de datos y administración de dispositivos para ayudarle a proteger su empresa de las amenazas en línea y el acceso no autorizado, así como proteger y administrar los datos de la empresa en sus teléfonos, tabletas y equipos.
+
+## <a name="complete-top-security-tasks"></a>Completar tareas de seguridad principales
 
 Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que se aplican al plan de servicio.
 

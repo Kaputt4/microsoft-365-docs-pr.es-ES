@@ -22,14 +22,15 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 07/31/2020
-ms.openlocfilehash: d0b0f75615b7d1110d1a0366b96f32807a033fd7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0124f9c2f1375da162975f808138f24a8dead4fd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189674"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128201"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -43,6 +44,14 @@ Si necesita ayuda para interpretar los cargos que aparecen en su factura, vea [E
 
 Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo.
   
+## <a name="watch-view-download-or-print-your-bill"></a>Ver: Ver, descargar o imprimir su factura
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
+
+1. En el Centro de administración de Microsoft 365, seleccione **Facturación** en el panel de navegación izquierdo y, a continuación, seleccione la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">**Facturas**</a>.
+1. Seleccione una factura para verla. Si no ve ninguna factura, seleccione **Filtrar por: Últimos 6 meses** de la lista desplegable.
+1. Para ver los detalles de la factura, seleccione **Descargar PDF** en la esquina superior derecha de la misma.
+
 ## <a name="view-a-bill-or-invoice"></a>Ver una factura
 
 ::: moniker range="o365-worldwide"

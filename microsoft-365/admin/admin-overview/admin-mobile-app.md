@@ -19,17 +19,18 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtén la Administración de Microsoft 365 y aprende a administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: 404b722861de6885491c95843a7e5058752503cc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f3d42b899705988efd0beb320e73894a91494010
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154103"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128441"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la Microsoft 365 móvil de administrador
 
@@ -52,6 +53,13 @@ Si es administrador y es responsable de más de una organización Microsoft 365,
 > [!IMPORTANT]
 > Si tienes problemas al usar la aplicación móvil administrador en iOS o Android, [envíanos](mailto:feedback365@microsoft.com) un correo electrónico feedback365@microsoft.com para que nos lo hagas saber.
 
+## <a name="watch-install-the-admin-mobile-app"></a>Watch: Install the admin mobile app
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
+
+1. Para obtener la Administración de Microsoft 365 móvil, busca  Administración de Microsoft 365 en la tienda de aplicaciones para tu dispositivo e instálla.
+2. Inicie sesión con su dirección de correo electrónico de administrador global y vea el panel para ver el estado del servicio, supervisar las licencias de usuario y ver mensajes y solicitudes de servicio.
+
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Debes ser administrador de una organización Microsoft 365 para usar la aplicación móvil de administrador.
@@ -61,12 +69,8 @@ Debes ser administrador de una organización Microsoft 365 para usar la aplicaci
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
-  
-## <a name="watch-install-the-admin-mobile-app"></a>Watch: Install the admin mobile app
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
-
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
   
@@ -121,7 +125,7 @@ En el menú de navegación izquierdo, ve **a Configuración**  >  **Notificacion
 
 Envía [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para informar de un problema con la aplicación. O puede enviar comentarios en la parte inferior de este artículo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que hayas descargado el dispositivo móvil de administrador, puedes agregar usuarios para empezar.
   

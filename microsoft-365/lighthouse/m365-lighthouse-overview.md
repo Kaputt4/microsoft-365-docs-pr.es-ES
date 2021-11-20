@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de clientes en una ubicación.
-ms.openlocfilehash: a97ee53ab106eac3db9455d80c02e1411562e090
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 41b5938e2cdacb8db8c0eb6f26220e9d22f38e89
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60645888"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61127817"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Información general sobre Microsoft 365 Lighthouse
 
@@ -63,6 +63,6 @@ Lighthouse ayuda a los MSP a proteger y administrar Microsoft 365 servicios y pu
 ## <a name="related-content"></a>Contenido relacionado
 
 [Registrarse para Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artículo)\
-[Microsoft 365 Lighthouse de lista de inquilinos](m365-lighthouse-tenant-list-overview.md) (artículo)\
+[Microsoft 365 Lighthouse de la página Inquilinos](m365-lighthouse-tenants-page-overview.md) (artículo)\
 [Microsoft 365 Lighthouse de la página de cumplimiento de dispositivos](m365-lighthouse-device-compliance-page-overview.md) (artículo)\
 [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)

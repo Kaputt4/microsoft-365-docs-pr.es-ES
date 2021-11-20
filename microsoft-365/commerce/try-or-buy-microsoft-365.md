@@ -19,15 +19,16 @@ ms.custom:
 - commerce_purchase
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid: GEA150
 description: Regístrate para una prueba gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: 10ad9f24d7e34da30cfe5b62207e90275a0649c0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e3ec002ceb47c7e4378ba28d833c2a3032472103
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754402"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128873"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción Microsoft 365 para empresas
 
@@ -39,7 +40,7 @@ Microsoft 365 para empresas es un servicio de suscripción que le permite ejecut
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> **Opciones de pago para Office 365 operado por 21Vianet en China** No se aceptan tarjetas de crédito internacionales. Puede pagar la suscripción mediante:
+> No se aceptan las Office 365 de pago operados por **21Vianet** en China Tarjetas de crédito internacionales. Puede pagar la suscripción mediante:
 >
 > - Factura
 > - El pago en línea con Alipay o China UnionPay El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solicitud de Fapiao a nuestro sistema [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) unos tres (3) días después de haber pagado. Para obtener más información, vea [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
@@ -106,6 +107,15 @@ Al agregar una suscripción a través <a href="https://go.microsoft.com/fwlink/p
 
 Si ya tiene una suscripción Microsoft 365 para empresas, puede pasar por el Centro de administración de Microsoft 365 para comprar una suscripción diferente para su organización.
 
+### <a name="watch-move-users-to-a-different-subscription"></a>Watch: Move users to a different subscription
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+
+A medida que los usuarios cambian de roles, es posible que necesiten características que no estén disponibles en su suscripción Microsoft 365 Empresa Premium actual. Cuando esto sucede, puedes agregar una nueva suscripción que incluya esas características y asignar licencias a las personas que las necesiten.
+
+> [!NOTE]
+> Para algunas suscripciones, solo podrá cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
+
 Al comprar otra suscripción a través del <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365,</a>la nueva suscripción se asocia a la misma organización (espacio de nombres de dominio) que la suscripción existente. Esto facilita el traslado de usuarios de la organización entre suscripciones o la asignación de una licencia para la suscripción adicional que necesiten.
 
 1. En el Centro de administración, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
@@ -133,7 +143,7 @@ El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solic
 > No se aceptan tarjetas de crédito internacionales.
 ::: moniker-end
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si tiene una cuenta nueva y está configurando su primera suscripción, puede usar los artículos de configuración guiados para ayudarle a empezar.
 

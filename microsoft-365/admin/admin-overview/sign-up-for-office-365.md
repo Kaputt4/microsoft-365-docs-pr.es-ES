@@ -22,17 +22,18 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_signup
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Comprenda lo que necesita saber antes de pasar por el proceso de registro para Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 946482d5aceca7d5b92829649988072fbcf54d36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6fc322c895797b7e5419d5c10bb5ddf76efd43d8
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154079"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128369"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda para administradores
 

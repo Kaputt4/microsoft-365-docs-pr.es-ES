@@ -19,28 +19,37 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 proteger los datos confidenciales frente a la suplantación de identidad(phishing), malware y otras amenazas.
-ms.openlocfilehash: 89405628488d5a8574636025a614a3aac7e20dd9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3aa65b31c3995e39164b6bd5d7aa3aa07e7f6009
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667787"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128681"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
 Este artículo le ayuda a aumentar la protección en su suscripción Microsoft 365 para proteger contra suplantación de identidad (phishing), malware y otras amenazas. Estas recomendaciones son apropiadas para organizaciones con una mayor necesidad de seguridad, como las oficinas de abogados y las clínicas de atención médica.
 
-Antes de empezar, compruebe su Office 365 puntuación segura. Office 365 Puntuación segura analiza la seguridad de la organización en función de las actividades regulares y la configuración de seguridad, y asigna una puntuación. Comience tomando nota de la puntuación actual. Para aumentar la puntuación, complete las acciones recomendadas en este artículo. El objetivo no es lograr la puntuación máxima, sino tener en cuenta las oportunidades para proteger el entorno que no afectan negativamente a la productividad de los usuarios.
+Antes de empezar, compruebe su Office 365 puntuación segura. Office 365 puntuación segura analiza la seguridad de la organización en función de las actividades regulares y la configuración de seguridad, y asigna una puntuación. Comience tomando nota de la puntuación actual. Para aumentar la puntuación, complete las acciones recomendadas en este artículo. El objetivo no es lograr la puntuación máxima, sino tener en cuenta las oportunidades para proteger el entorno que no afectan negativamente a la productividad de los usuarios.
 
 Para obtener más información, vea [Puntuación segura de Microsoft](../../security/defender/microsoft-secure-score.md).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Aumentar el nivel de protección contra malware en el correo
 
-El Office 365 o Microsoft 365 incluye protección contra malware. Puede aumentar esta protección bloqueando los datos adjuntos con tipos de archivo que se usan habitualmente para malware. Para aumentar la protección contra malware en el correo electrónico:
+El Office 365 o Microsoft 365 incluye protección contra malware. Puede aumentar esta protección bloqueando los datos adjuntos con tipos de archivo que se usan habitualmente para malware. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OA7Z?autoplay=false]
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Mostrar más**, Centros de **administración** y, a continuación, Seguridad **& cumplimiento**.
+1. Elija **Administración de** amenazas y, a continuación, **Directiva**.
+1. En las directivas disponibles, elija **Anti-malware**.
+
+Para aumentar la protección contra malware en el correo electrónico:
 
 1. Ve a [https://protection.office.com](https://protection.office.com) e inicia sesión con las credenciales de tu cuenta de administrador.
 
@@ -67,6 +76,13 @@ Ransomware restringe el acceso a los datos mediante el cifrado de archivos o el 
 Para protegerse contra ransomware, cree una o más reglas de flujo de correo para bloquear las extensiones de archivo que se usan habitualmente para ransomware. (Ha agregado estas reglas en el aumento del nivel [de protección contra malware en el paso de](#raise-the-level-of-protection-against-malware-in-mail) correo). También puede advertir a los usuarios que reciben estos datos adjuntos en el correo electrónico.
 
 Además de los archivos bloqueados en el paso anterior, es una buena práctica crear una regla para advertir a los usuarios antes de abrir Office archivos adjuntos que incluyen macros. El ransomware se puede ocultar dentro de macros, por lo que advierte a los usuarios de que no abran estos archivos de personas que no conocen.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
+
+1. En el Centro de administración de [https://admin.microsoft.com](https://admin.microsoft.com) , elija **Exchange** en Centros **de administración**.
+1. En el menú de la izquierda, elija **flujo de correo**.
+1. En la pestaña reglas, elija la flecha situada junto al símbolo más (+) y, a continuación, **elija Crear una nueva regla**.
+1. En la **página nueva regla,** escriba un nombre para la regla, desplácese hasta la parte inferior y, a continuación, elija **Más opciones**.
 
 Para crear una regla de transporte de correo:
 
@@ -122,14 +138,13 @@ Para crear una regla de transporte de correo, siga estos pasos:
 |Haga lo siguiente...|Bloquear el mensaje . . . rechazar el mensaje e incluir una explicación.|
 |Proporcionar texto del mensaje|El reenvío automático de correo electrónico fuera de esta organización se impide por motivos de seguridad.|
 
-
 ## <a name="protect-your-email-from-phishing-attacks"></a>Proteger el correo electrónico de ataques de suplantación de identidad
 
 Si ha configurado uno o varios dominios personalizados para su entorno Office 365 o Microsoft 365, puede configurar la protección contra suplantación de identidad dirigida. La protección contra el phishing, que forma parte de Microsoft Defender para Office 365, puede ayudar a proteger su organización de ataques de suplantación de identidad malintencionados y otros ataques de suplantación de identidad. Si no ha configurado un dominio personalizado, no es necesario hacerlo.
 
 Se recomienda empezar a usar esta protección mediante la creación de una directiva para proteger a los usuarios más importantes y al dominio personalizado.
 
-Para crear una directiva contra la suplantación de identidad en Microsoft Defender para Office 365, vea este breve [vídeo](../../business-video/setup-anti-phishing.md)de aprendizaje o siga estos pasos:
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
 
@@ -186,7 +201,15 @@ Para obtener más información, vea [Set up anti-phishing policies in Microsoft 
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>Proteger contra ataques de suplantación de identidad con Caja fuerte links
 
-Los hackers a veces ocultan sitios web malintencionados en vínculos de correo electrónico u otros archivos. Caja fuerte Los vínculos, que forman parte de Microsoft Defender para Office 365, pueden ayudar a proteger su organización proporcionando la comprobación con tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos Office usuario. La protección se define a través de Caja fuerte de vínculos.
+Los hackers a veces ocultan sitios web malintencionados en vínculos de correo electrónico u otros archivos. Caja fuerte Links, parte de Microsoft Defender para Office 365, puede ayudar a proteger su organización proporcionando la comprobación con tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos Office. La protección se define a través de Caja fuerte de vínculos.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
+
+Microsoft Defender para Office 365 , anteriormente denominado ATP Microsoft 365, o Protección contra amenazas avanzada, ayuda a proteger su empresa contra sitios malintencionados cuando las personas hacen clic en vínculos en Office aplicaciones.
+
+1. Vaya al Centro [de administración](https://admin.microsoft.com)y seleccione **Configurar**.
+2. Desplácese hacia abajo **hasta Aumentar la protección contra amenazas avanzadas.** Seleccione **Administrar** y, **a continuación, Caja fuerte Vínculos**.
+3. Seleccione **Global Configuración** y, en Bloquear las siguientes direcciones **URL,** escriba la dirección URL que desea bloquear.
 
 Se recomienda hacer lo siguiente:
 

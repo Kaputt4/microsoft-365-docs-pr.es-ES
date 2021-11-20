@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar el restablecimiento de contraseñas de autoservicio.
-ms.openlocfilehash: 0444fac94ee4a3037b4387e3ad344b374e6a3f1d
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: b8367d2ed2c088d56425b08c6da5dfd55fcd84b8
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60557243"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128609"
 ---
 # <a name="manage-self-service-password-reset"></a>Administrar el restablecimiento de contraseñas de autoservicio
 
@@ -36,7 +36,7 @@ Se deben cumplir las siguientes condiciones antes de que un inquilino aparezca e
 
 - El inquilino del cliente debe tener una Azure AD Premium licencia para cada usuario. Para obtener más información sobre las licencias compatibles con SSPR, vea [Licensing requirements for Azure Active Directory self-service password reset](/azure/active-directory/authentication/concept-sspr-licensing).
 
-- El inquilino del cliente debe estar activo en Lighthouse. Para obtener información sobre cómo determinar si un inquilino está activo, [consulte Microsoft 365 Lighthouse de lista de inquilinos](m365-lighthouse-tenant-list-overview.md).
+- El inquilino del cliente debe estar activo en Lighthouse. Para obtener información sobre cómo determinar si un inquilino está activo, [vea Microsoft 365 Lighthouse de la página Inquilinos](m365-lighthouse-tenants-page-overview.md).
 
 ## <a name="view-sspr-tenant-status"></a>Ver estado del inquilino de SSPR
 

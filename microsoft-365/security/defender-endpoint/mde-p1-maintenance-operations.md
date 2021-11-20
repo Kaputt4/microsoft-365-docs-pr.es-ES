@@ -1,5 +1,5 @@
 ---
-title: Administrar Microsoft Defender para endpoint plan 1 (versión preliminar)
+title: Administrar Microsoft Defender para el plan de extremo 1
 description: Mantener y actualizar Defender para el plan de extremo 1. Administrar la configuración, obtener actualizaciones y solucionar falsos positivos/negativos.
 search.appverid: MET150
 author: denisebmsft
@@ -7,33 +7,30 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 11/19/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 792b5c6f3fa077a4856631d95a68a8fa538778e1
-ms.sourcegitcommit: 6dbf879f769a825ed7039363f3a91d676e355ee0
+ms.openlocfilehash: c95a674c59e52c7bfe699b670a69fec468361d54
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940400"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128537"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>Administrar Microsoft Defender para endpoint plan 1 (versión preliminar)
+# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Administrar Microsoft Defender para el plan de extremo 1
 
 > [!TIP]
 > Si tiene Microsoft 365 E3 O A3 pero no Microsoft 365 E5 o A5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
 
-A medida que usa Defender para endpoint plan 1 (versión preliminar) en su organización, el equipo de seguridad puede tomar ciertos pasos para mantener la solución de seguridad. A medida que el equipo de seguridad reúne el plan de mantenimiento y operaciones, asegúrese de incluir al menos las siguientes actividades:
+A medida que usa Defender para el plan de extremo 1 en su organización, el equipo de seguridad puede tomar determinados pasos para mantener la solución de seguridad. A medida que el equipo de seguridad reúne el plan de mantenimiento y operaciones, asegúrese de incluir al menos las siguientes actividades:
 
 - [Administrar la inteligencia de seguridad y las actualizaciones de productos](#manage-security-intelligence-and-product-updates)
 - [Ajustar y ajustar Defender para endpoint](#fine-tune-and-adjust-defender-for-endpoint)
 - [Dirección de falsos positivos/negativos](#address-false-positivesnegatives)
-
-> [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Defender for Endpoint Plan 1 (versión preliminar).
 
 ## <a name="manage-security-intelligence-and-product-updates"></a>Administrar la inteligencia de seguridad y las actualizaciones de productos
 
@@ -58,6 +55,6 @@ Un falso positivo es un artefacto, como un archivo o un proceso, que se detectó
 
 Si está viendo falsos positivos/negativos en Defender para endpoint, consulte [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Vea las novedades de Microsoft Defender para endpoint](whats-new-in-microsoft-defender-atp.md)

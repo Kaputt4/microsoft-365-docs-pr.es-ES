@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta Microsoft 365 administrador para restablecer las contraseñas de los usuarios en Microsoft 365 suscripción para empresas.
-ms.openlocfilehash: 84bb282f7b86036e2743d4af7998a4ce887e5b11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1444513f336cad5423881420d299528a347927c
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157223"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128404"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -53,6 +54,11 @@ Debe ser administrador global o administrador [de contraseñas](about-admin-role
 Vea un breve vídeo sobre el restablecimiento de contraseñas de usuario.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+
+1. Cuando un usuario solicite una nueva contraseña, recibirá una solicitud de restablecimiento de contraseña por correo electrónico. Para restablecer la contraseña, abra el iniciador de aplicaciones y seleccione **Administrador**.
+1. En el Centro de administración de Microsoft 365, seleccione **Usuarios**, <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios**</a>activos y, a continuación, seleccione el icono de clave junto al usuario que solicitó el restablecimiento.
+1. Seleccione **Generar automáticamente la contraseña para** que se cree automáticamente una contraseña aleatoria.
+1. Seleccione **Restablecer**.
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
   

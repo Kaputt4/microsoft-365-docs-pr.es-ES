@@ -17,16 +17,17 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - MET150
 description: Cada miembro del equipo necesita una cuenta de usuario para poder iniciar sesión y acceder a Microsoft 365 para empresas. Obtenga información sobre cómo agregar usuarios y asignar licencias.
 ms.date: 07/01/2020
-ms.openlocfilehash: eee8b2bb9484dfba34a278f7ee2b9b0077dda7e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dffe719c5dbd1478cdf23bae2551daa26289d1e4
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161935"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128513"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 
@@ -35,35 +36,6 @@ Todos los usuarios de su equipo necesitan una cuenta de usuario para poder inici
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Debe ser un administrador global, de licencia o de usuario para agregar usuarios y asignar licencias. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
-
-## <a name="add-a-user-in-the-admin-simplified-view"></a>Agregar un usuario en la vista simplificada de administración
-
-Si ve esta página en el Centro de administración, se encuentra en la **vista simplificada de administrador**. Siga los pasos siguientes para agregar un usuario.
-
-:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Captura de pantalla: Vista simplificada del Centro de administración":::
-
-::: moniker range="o365-worldwide"
-
-1. Vaya al Centro de administración en <https://admin.microsoft.com>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
-
-::: moniker-end 
-
-2. Seleccione **Crear una cuenta para otra persona**.
-3. En la página **Agregar una cuenta de usuario**, rellene el nombre y los apellidos, el nombre para mostrar y el nombre de usuario que usarán para iniciar sesión.
-4. Agregue la dirección de correo electrónico del usuario en el cuadro de texto **Hasta 5 direcciones de correo...**. Esto garantizará que el nuevo usuario obtiene la información que necesita para iniciar sesión en los servicios de Microsoft 365.
-5. Seleccione **Agregar usuario** y **Descargar información de inicio de sesión** si quiere guardar esta información.
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>Ver: Agregar usuarios en la vista del panel
 
@@ -104,6 +76,35 @@ Si ve esta página en el Centro de administración, se encuentra en la **vista s
 4. En el panel **Asignar licencias de productos**, seleccione la ubicación y la licencia correspondiente para el usuario. Si no cuenta con ninguna licencia disponible, todavía puede agregar un usuario y comprar licencias adicionales. Expanda **Aplicaciones**, y active o desactive la selección de aplicaciones para limitar las aplicaciones para las que el usuario tiene licencia. Seleccione **Siguiente**.
 5. En el panel **Configuración opcional**, expanda **Roles** para convertir a este usuario en administrador. Expanda **Información del perfil** agregar información adicional sobre el usuario.
 6. Seleccione **Siguiente**, revise la configuración del nuevo usuario, realice los cambios que desee y a continuación seleccione **Terminar de agregar** y después **Cerrar**.
+
+## <a name="add-a-user-in-the-admin-simplified-view"></a>Agregar un usuario en la vista simplificada de administración
+
+Si ve esta página en el Centro de administración, se encuentra en la **vista simplificada de administrador**. Siga los pasos siguientes para agregar un usuario.
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Captura de pantalla: Vista simplificada del Centro de administración":::
+
+::: moniker range="o365-worldwide"
+
+1. Vaya al Centro de administración en <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
+2. Seleccione **Crear una cuenta para otra persona**.
+3. En la página **Agregar una cuenta de usuario**, rellene el nombre y los apellidos, el nombre para mostrar y el nombre de usuario que usarán para iniciar sesión.
+4. Agregue la dirección de correo electrónico del usuario en el cuadro de texto **Hasta 5 direcciones de correo...**. Esto garantizará que el nuevo usuario obtiene la información que necesita para iniciar sesión en los servicios de Microsoft 365.
+5. Seleccione **Agregar usuario** y **Descargar información de inicio de sesión** si quiere guardar esta información.
 
 ## <a name="add-multiple-users-at-the-same-time"></a>Agregar varios usuarios al mismo tiempo
 
