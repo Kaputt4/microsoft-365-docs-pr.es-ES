@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: ef03bd502b0951416ad9e8be27e6da7281f63811
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 7287b45a37a5da286a66ffdb2797c3e84746f326
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962680"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072173"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -97,7 +97,7 @@ Todos los escenarios requieren que [Crear y configurar etiquetas de confidencial
 |Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se guarden fuera del servicio.|[Etiquetas de confidencialidad en Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Supervisar y comprender cómo se usan las etiquetas de confidencialidad en la organización|[Obtenga información sobre la clasificación de datos](data-classification-overview.md)|
 |Amplíe las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.|[SDK de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Amplíe las etiquetas de confidencialidad en todo el contenido de Azure Blob Storage, archivos de Azure, Azure Data Lake Storage Gen1 y Azure Data Lake Storage Gen12|[Etiquete automáticamente su contenido en Azure Purview](/azure/purview/create-sensitivity-label) |
+|Extender las etiquetas de confidencialidad a través del contenido de mis recursos de Azure Purview, como Azure Blob Storage, Azure Files, Azure Data Lake Storage y orígenes de datos de varias nubes|[Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label) |
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentación de usuario final para las etiquetas de confidencialidad
