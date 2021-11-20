@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Proteja el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, como ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: bc45df84ed1f8daa3faf5f042b7f3ca5c64c5625
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cca53040dac60664955770f4be0bfc585cfb3405
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110648"
+ms.locfileid: "61122314"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -96,7 +96,7 @@ Microsoft Defender para Office 365, incluido con Microsoft 365 E5 y Office 365 E
 
 Microsoft Defender para Office 365:
 
-- Protege su organización de amenazas de correo electrónico desconocidas en tiempo real mediante sistemas inteligentes que inspeccionan datos adjuntos y vínculos para buscar contenido malintencionado. Estos sistemas automatizados incluyen una plataforma de detonación sólida, heurística y modelos de aprendizaje automático.
+- Protege su organización de amenazas de correo electrónico desconocidas en tiempo real mediante sistemas inteligentes que inspeccionan datos adjuntos y vínculos en busca de contenido malintencionado. Estos sistemas automatizados incluyen una plataforma de detonación sólida, heurística y modelos de aprendizaje automático.
 - Protege su organización cuando los usuarios colaboran y comparten archivos, al identificar y bloquear archivos malintencionados en sitios de grupo y bibliotecas de documentos.
 - Aplica modelos de aprendizaje automático y algoritmos avanzados de detección de suplantación para evitar ataques de suplantación de identidad.
 
@@ -178,13 +178,13 @@ También puede aprovechar estos tutoriales:
 Después de inscribir dispositivos, usa las instrucciones de [Identidad común](./office-365-security/identity-access-policies.md) y directivas de acceso a dispositivos para crear estas directivas:
 
 - [Definir directivas de cumplimiento de dispositivos:](./office-365-security/identity-access-policies.md#define-device-compliance-policies) la configuración recomendada para Windows 10 incluir la protección antivirus. Si tienes Microsoft 365 E5, usa Microsoft Defender para Endpoint para supervisar el estado de los dispositivos de los empleados. Asegúrese de que las directivas de cumplimiento para otros sistemas operativos incluyen protección antivirus y software de protección de punto final.
-- [Requerir equipos compatibles:](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) esta es la regla de acceso condicional Azure AD que aplica las directivas de cumplimiento del dispositivo.
+- [Requerir equipos compatibles:](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices) esta es la regla de acceso condicional Azure AD que aplica las directivas de cumplimiento del dispositivo.
 
 Solo una organización puede administrar un dispositivo, por lo que asegúrese de excluir cuentas de invitado de la regla de acceso condicional en Azure AD. Si no excluyes a los usuarios invitados y externos de las directivas que requieren el cumplimiento de dispositivos, estas directivas bloquearán a estos usuarios. Para obtener más información, vea [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md).
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9: Optimizar la red para la conectividad en la nube
 
-Si está permitiendo rápidamente que la mayor parte de los empleados trabajen desde casa, este cambio repentino de patrones de conectividad puede tener un impacto significativo en la infraestructura de red corporativa. Muchas redes se escalaron y diseñaron antes de que se adoptaran los servicios en la nube. En muchos casos, las redes son tolerantes con los trabajadores remotos, pero no se diseñaron para que todos los usuarios los usaron de forma remota al mismo tiempo.
+Si está permitiendo rápidamente que la mayor parte de sus empleados trabajen desde casa, este cambio repentino de patrones de conectividad puede tener un impacto significativo en la infraestructura de red corporativa. Muchas redes se escalaron y diseñaron antes de que se adoptaran los servicios en la nube. En muchos casos, las redes son tolerantes con los trabajadores remotos, pero no se diseñaron para que todos los usuarios los usaron de forma remota al mismo tiempo.
 
 Los elementos de red como concentradores VPN, equipos de salida de red central (como servidores proxy y dispositivos de prevención de pérdida de datos), ancho de banda de Internet central, circuitos MPLS backhaul, funcionalidad NAT, entre otros, se ponen de repente bajo una enorme presión debido a la carga de toda la empresa que los usa. El resultado final es un bajo rendimiento y productividad junto con una mala experiencia de usuario para los usuarios que se están adaptando al trabajo desde casa.
 
@@ -248,7 +248,7 @@ Microsoft 365 incluye varias formas de supervisar el estado y realizar las accio
 - [Introducción al portal de Microsoft 365 Defender web](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [Vea los portales de seguridad en Microsoft 365](./defender/portals.md)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 ¡Enhorabuena! Ha implementado rápidamente algunas de las protecciones de seguridad más importantes y su organización es mucho más segura. Ahora estás listo para ir aún más lejos con las capacidades de protección contra amenazas (incluido Microsoft Defender para Endpoint), las capacidades de clasificación y protección de datos y la protección de cuentas administrativas. Para obtener un conjunto más profundo y metódico de recomendaciones de seguridad para Microsoft 365, vea [Microsoft 365 Security for Business Decision Makers (BDMs).](Microsoft-365-security-for-bdm.md)
 

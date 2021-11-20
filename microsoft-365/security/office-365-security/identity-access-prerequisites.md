@@ -1,9 +1,9 @@
 ---
 title: 'Trabajo previo para implementar directivas de acceso a dispositivos y identidades: Microsoft 365 para empresas | Microsoft Docs'
-description: En este artículo se describen los requisitos previos que debe cumplir para usar directivas y configuraciones de acceso a dispositivos y identidades.
+description: En este artículo se describen los requisitos previos que debe cumplir para usar configuraciones y directivas de acceso a dispositivos y identidad de confianza cero.
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: Laurawi
+manager: dansimp
 ms.prod: m365-security
 ms.topic: article
 audience: Admin
@@ -19,25 +19,25 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ba6a12036d6d6e0b53b930e2b1683781a474d186
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 564915b6f27f0d4038f4b6c738c377c700b09ab1
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666727"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121750"
 ---
-# <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo previo para implementar directivas de acceso a dispositivos y identidades
+# <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Trabajo previo para implementar directivas de identidad de confianza cero y acceso a dispositivos
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - Azure
 
-En este artículo se describen los requisitos previos que los administradores deben cumplir para usar directivas de acceso de dispositivo y identidad recomendadas y para usar el acceso condicional. También analiza los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
+En este artículo se describen los requisitos previos que los administradores deben cumplir para usar las directivas recomendadas de acceso a dispositivos y identidades de confianza cero y para usar el acceso condicional. También analiza los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Antes de usar las directivas de identidad y acceso a dispositivos que se recomiendan, la organización debe cumplir los requisitos previos. Los requisitos son diferentes para los distintos modelos de identidad y autenticación enumerados:
+Antes de usar las directivas de identidad de confianza cero y acceso a dispositivos que se recomiendan, la organización debe cumplir los requisitos previos. Los requisitos son diferentes para los distintos modelos de identidad y autenticación enumerados:
 
 - Solo de nube
 - Híbrido con autenticación de sincronización de hash de contraseña (PHS)
@@ -51,7 +51,7 @@ En la tabla siguiente se detallan las características de requisitos previos y s
 |[Configurar PHS](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Esto debe habilitarse para detectar credenciales filtradas y actuar sobre ellas para el acceso condicional basado en riesgos. **Nota:** Esto es necesario independientemente de si su organización usa la autenticación federada.|Solo de nube|Microsoft 365 E3 o E5|
 |[Habilite el inicio de sesión único sin](/azure/active-directory/connect/active-directory-aadconnect-sso) problemas para iniciar sesión automáticamente a los usuarios cuando estén en sus dispositivos de la organización conectados a la red de la organización.|Solo en la nube y federada|Microsoft 365 E3 o E5|
 |[Configurar ubicaciones con nombre](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations). Azure AD Identity Protection recopila y analiza todos los datos de sesión disponibles para generar una puntuación de riesgo. Se recomienda especificar los intervalos IP públicos de la organización para la red en la Azure AD de ubicaciones con nombre. El tráfico procedente de estos intervalos tiene una puntuación de riesgo reducida y el tráfico de fuera del entorno de la organización tiene una mayor puntuación de riesgo.||Microsoft 365 E3 o E5|
-|[Registrar todos los usuarios para el restablecimiento de contraseñas sin servicio (SSPR) y la autenticación multifactor (MFA).](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Se recomienda registrar usuarios para la Azure AD multifactor con antelación. Azure AD Identity Protection usa la autenticación Azure AD multifactor para realizar una comprobación de seguridad adicional. Además, para obtener la mejor experiencia de inicio de sesión, se recomienda que los usuarios instalen la [aplicación](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) Microsoft Authenticator y la aplicación Portal de empresa Microsoft en sus dispositivos. Se pueden instalar desde la tienda de aplicaciones para cada plataforma.||Microsoft 365 E3 o E5|
+|[Registrar todos los usuarios para el restablecimiento de contraseñas sin servicio (SSPR) y la autenticación multifactor (MFA).](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Se recomienda registrar usuarios para la Azure AD multifactor con antelación. Azure AD Identity Protection usa la Azure AD multifactor para realizar una comprobación de seguridad adicional. Además, para obtener la mejor experiencia de inicio de sesión, se recomienda que los usuarios instalen la [aplicación](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) Microsoft Authenticator y la aplicación Portal de empresa Microsoft en sus dispositivos. Se pueden instalar desde la tienda de aplicaciones para cada plataforma.||Microsoft 365 E3 o E5|
 |[Habilitar el registro automático de dispositivos de equipos unidos Windows dominio.](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup) El acceso condicional garantizará que los dispositivos que se conecten a aplicaciones estén unidos a un dominio o sean compatibles. Para permitir esto en equipos Windows, el dispositivo debe estar registrado con Azure AD.  En este artículo se explica cómo configurar el registro automático de dispositivos.|Solo de nube|Microsoft 365 E3 o E5|
 |**Preparar el equipo de soporte técnico**. Tenga preparado un plan para los usuarios que no puedan completar MFA. Esto podría ser agregarlos a un grupo de exclusión de directivas o registrar nueva información de MFA para ellos. Antes de realizar cualquiera de estos cambios confidenciales de seguridad, debe asegurarse de que el usuario real realiza la solicitud. Un paso eficaz es exigir a los administradores de los usuarios que ayuden con la aprobación.||Microsoft 365 E3 o E5|
 |[Configurar la escritura diferida de contraseñas en AD local](/azure/active-directory/active-directory-passwords-getting-started). La reescribición de contraseñas Azure AD requerir que los usuarios cambien sus contraseñas locales cuando se detecte un riesgo de cuenta de alto riesgo. Esta característica se puede habilitar Azure AD Conectar de dos maneras: habilitar la escritura de contraseña en la pantalla de características opcionales de la configuración de Azure AD Conectar o habilitarla a través de Windows PowerShell. |Solo de nube|Microsoft 365 E3 o E5|
@@ -67,9 +67,9 @@ En esta sección se describen las configuraciones de cliente de plataforma prede
 
 ### <a name="windows-devices"></a>Dispositivos Windows
 
-Se recomienda el Windows 10 (versión 2004 o posterior), ya que Azure está diseñado para proporcionar la experiencia de SSO más fluida posible tanto para el entorno local como para Azure AD. Los dispositivos de trabajo o emitidos por la escuela deben configurarse para unirse Azure AD directamente o si la organización usa una combinación de dominio de AD local, estos dispositivos deben configurarse para registrarse automáticamente y silenciosamente con [Azure AD](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup).
+Se recomienda Windows 11 o Windows 10 (versión 2004 o posterior), ya que Azure está diseñado para proporcionar la experiencia de SSO más fluida posible tanto para entornos locales como Azure AD. Los dispositivos de trabajo o emitidos por la escuela deben configurarse para unirse Azure AD directamente o si la organización usa una combinación de dominio de AD local, estos dispositivos deben configurarse para registrarse automáticamente y silenciosamente con [Azure AD](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup).
 
-Para dispositivos Windows BYOD, los usuarios pueden usar Agregar cuenta de **trabajo o escuela.** Tenga en cuenta que los usuarios del explorador [](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) de Google Chrome en Windows 10 dispositivos necesitan instalar una extensión para obtener la misma experiencia de inicio de sesión sin problemas que Microsoft Edge usuarios. Además, si su organización tiene dispositivos unidos a un dominio Windows 8 o 8.1, puede instalar Microsoft Workplace Join para equipos que no Windows 10 usuario. [Descargue el paquete para registrar los](https://www.microsoft.com/download/details.aspx?id=53554) dispositivos con Azure AD.
+Para dispositivos Windows BYOD, los usuarios pueden usar Agregar cuenta de **trabajo o escuela.** Tenga en cuenta que los usuarios del explorador de Google Chrome en [](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) dispositivos Windows 11 o Windows 10 necesitan instalar una extensión para obtener la misma experiencia de inicio de sesión sin problemas que Microsoft Edge usuarios. Además, si su organización tiene dispositivos unidos a un dominio Windows 8 o 8.1, puede instalar Microsoft Workplace Join para equipos que no Windows 10 usuario. [Descargue el paquete para registrar los](https://www.microsoft.com/download/details.aspx?id=53554) dispositivos con Azure AD.
 
 ### <a name="ios-devices"></a>Dispositivos iOS
 
@@ -100,20 +100,20 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 
 |Plataforma|Word/Excel/PowerPoint|OneNote|Aplicación OneDrive|Aplicación SharePoint|[Cliente de sincronización de OneDrive](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
+|Windows 11 o Windows 10|Compatible|Compatible|N/D|N/D|Compatible|
 |Windows 8.1|Compatible|Compatible|N/D|N/D|Compatible|
-|Windows 10|Compatible|Compatible|N/D|N/D|Compatible|
 |Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |macOS|Compatible|Compatible|N/D|N/D|No compatible|
-|Linux|No compatible|No se admite|No se admite|No se admite|No se admite|
+|Linux|No se admite|No se admite|No se admite|No se admite|No se admite|
 |
 
 ### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365
 
 Para obtener más información acerca de la compatibilidad de Microsoft 365, vea los siguientes artículos:
 
-- [Microsoft 365 Compatibilidad con aplicaciones cliente: acceso condicional](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 Compatibilidad con aplicaciones cliente: autenticación multifactor](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
+- [Microsoft 365 de aplicaciones cliente: acceso condicional](../../enterprise/microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 de aplicaciones cliente: autenticación multifactor](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>Protección de cuentas de administrador
 
@@ -130,6 +130,6 @@ Estas son algunas recomendaciones adicionales:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 2: Configurar la identidad común y acceder a las directivas de acceso condicional.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![Paso 2: Configurar la identidad de confianza cero común y acceder a directivas de acceso condicional.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
-[Configurar las directivas comunes de acceso a dispositivos y identidades](identity-access-policies.md)
+[Configurar las directivas comunes de acceso a dispositivos y identidad de confianza cero](identity-access-policies.md)

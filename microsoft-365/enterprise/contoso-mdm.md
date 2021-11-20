@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso usa Microsoft Intune en Microsoft 365 empresa para administrar sus dispositivos y las aplicaciones que se ejecutan en ellos.
-ms.openlocfilehash: 0dca8da328a3048413727410ebab7798d1068ac8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dedda98083dd5a27c4c7721b5ae8e5dc1fed4bad
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178856"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121679"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Administración de dispositivos móviles para Contoso
 
@@ -45,9 +45,9 @@ Contoso no usa Intune para:
 Contoso configuró la infraestructura de administración de sus dispositivos móviles de la siguiente manera:
 
 - Establece Intune como entidad de administración de dispositivos móviles (MDM) y usa Intune en Azure para administrar contenido y administrar los dispositivos
-- Grupos Azure Active Directory (Azure AD) para dispositivos para la inscripción y la configuración de Intune y directivas de acceso condicional basadas en dispositivos
+- Creados Azure Active Directory (Azure AD) para dispositivos para la inscripción y la configuración de Intune y directivas de acceso condicional basadas en dispositivos
 
-  Para obtener más información, vea [Contoso Conditional Access policies](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
+  Para obtener más información, vea [Contoso Conditional Access policies](contoso-identity.md#conditional-access-policies-for-zero-trust-identity-and-device-access).
 
 - Se ha habilitado la plataforma de dispositivos Apple para admitir a los empleados con iPads, iMacs y iPhones y iPhones de propiedad corporativa
 - Creó directivas de términos y condiciones específicas para Contoso, que se muestran durante la instalación del Portal de empresa de Contoso en dispositivos móviles.
@@ -62,7 +62,7 @@ Contoso configuró la infraestructura de administración de sus dispositivos mó
   - Insertar certificados en dispositivos administrados.
   - Una separación clara entre los datos personales y empresariales. Los usuarios o administradores pueden borrar datos corporativos desde el dispositivo, dejando intactos los datos personales, como, por ejemplo, imágenes, cuentas de correo electrónico personales y archivos personales.
 
-Contoso inscribió equipos implementados y smartphones y tabletas de propiedad de la empresa agregándolos a los grupos de dispositivos de Intune adecuados. También establecieron un programa BYOD para que los empleados inscriban sus dispositivos personales. Los dispositivos inscritos reciben directivas de Intune, lo que da como resultado dispositivos administrados y protegidos y sus aplicaciones. Los dispositivos que no están inscritos tienen directivas de administración de aplicaciones móviles (MAM) que especifican aplicaciones permitidas.
+Contoso inscribió equipos implementados y smartphones y tabletas de propiedad de la empresa agregándolos a los grupos de dispositivos de Intune adecuados. También establecieron un programa BYOD para que los empleados inscriban sus dispositivos personales. Los dispositivos inscritos reciben directivas de Intune, que resultan en dispositivos administrados y protegidos y sus aplicaciones. Los dispositivos que no están inscritos tienen directivas de administración de aplicaciones móviles (MAM) que especifican aplicaciones permitidas.
 
 Esta es la arquitectura de implementación de administración de dispositivos móviles contoso.
 
@@ -72,11 +72,11 @@ Esta es la arquitectura de implementación de administración de dispositivos m�
 
 Obtenga información sobre cómo Contoso usa las [capacidades](contoso-info-protect.md) de protección de la información de Microsoft 365 empresa para clasificar, identificar y proteger activos digitales cruciales en toda su organización.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administración de dispositivos para Microsoft 365](device-management-roadmap-microsoft-365.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)
 

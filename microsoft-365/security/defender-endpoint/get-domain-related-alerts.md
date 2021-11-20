@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 176daff75e39f8ed4dda2854d3448cb9fbaa5dad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aef9c876d9c2dc4ca8d68538d0742141525e2cfd
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211162"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122230"
 ---
 # <a name="get-domain-related-alerts-api"></a>Obtener api de alertas relacionadas con el dominio
 
@@ -43,8 +43,8 @@ Recupera una colección de [alertas relacionadas](alerts.md) con una dirección 
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
-2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+- Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
+- Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
@@ -87,7 +87,7 @@ Si se realiza correctamente y el dominio existe: 200 Aceptar con la lista [de](a
 
 ### <a name="request"></a>Solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/client.wns.windows.com/alerts

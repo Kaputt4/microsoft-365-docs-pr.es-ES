@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db2b82f1f966946f66a1c23dbe8b1c708549dc8e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9efd1b6785c711855e32f80580d567a2d0befa93
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556165"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121200"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 
@@ -30,13 +30,14 @@ ms.locfileid: "60556165"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 El informe de estado de dispositivos proporciona información de alto nivel sobre los dispositivos de la organización. El informe incluye información de tendencias que muestra el estado del sensor, el estado del antivirus, las plataformas del sistema operativo y las Windows 10 (y Windows 11).
 
 El panel está estructurado en dos secciones:
 
-![Imagen del informe del dispositivo.](images/device-reports.png)
+:::image type="content" alt-text="Imagen del informe del dispositivo." source="images/device-reports.png" lightbox="images/device-reports.png":::
+
 
 <br>
 
@@ -53,8 +54,8 @@ El panel está estructurado en dos secciones:
 De forma predeterminada, las tendencias del dispositivo muestran información del dispositivo del período de 30 días que termina en el último día completo. Para obtener una mejor perspectiva de las tendencias que se producen en su organización, puede ajustar el período de informes ajustando el período de tiempo que se muestra. Para ajustar el período de tiempo, seleccione un intervalo de tiempo en las opciones desplegables:
 
 - 30 días
-- 3 meses
-- 6 meses
+- Tres meses
+- Seis meses
 - Personalizado
 
 > [!NOTE]
@@ -62,7 +63,7 @@ De forma predeterminada, las tendencias del dispositivo muestran información de
 
 ## <a name="device-summary"></a>Resumen del dispositivo
 
-Aunque las tendencias de dispositivos muestran información de dispositivos de tendencia, el resumen del dispositivo muestra información del dispositivo en el ámbito del día actual.
+Aunque las tendencias de dispositivos muestran información de dispositivos de tendencia, el resumen del dispositivo muestra información del dispositivo con el ámbito del día actual.
 
 > [!NOTE]
 > Los datos reflejados en la sección de resumen están en el ámbito de 180 días antes de la fecha actual. Por ejemplo, si la fecha de hoy es el 27 de marzo de 2019, los datos de la sección de resumen reflejarán números a partir del 28 de septiembre de 2018 al 27 de marzo de 2019.

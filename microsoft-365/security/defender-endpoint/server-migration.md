@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6512dd38fbcdd0a257635431406f837f713456a6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9e4381063d872a097423fed4a3cb47b05b42bf38
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111572"
+ms.locfileid: "61122362"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidor de la solución anterior de Microsoft Defender para endpoint basada en MMA
 
@@ -100,7 +100,8 @@ Pasos de migración:
 6. Aplicar actualizaciones.
 7. Quite el software antivirus que no sea de Microsoft mediante la consola antivirus que no es de Microsoft o mediante Microsoft Endpoint Configuration Manager según corresponda. Asegúrese de quitar la configuración del modo pasivo.*
 
-SUGERENCIA: puede usar el [script del instalador](server-migration.md#installer script) como parte de la aplicación para automatizar los pasos anteriores. Para habilitar el modo pasivo, aplique la marca -Passive. EJEMPLO: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
+> [!TIP]
+> Puede usar el script [del instalador](server-migration.md#installer script) como parte de la aplicación para automatizar los pasos anteriores. Para habilitar el modo pasivo, aplique la marca -Passive. Por ejemplo, .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
 
 *Estos pasos solo se aplican si desea reemplazar la solución antivirus que no es de Microsoft. Vea [Better together: Antivirus de Microsoft Defender y Microsoft Defender para Endpoint](why-use-microsoft-defender-antivirus.md).
 
@@ -108,7 +109,6 @@ Para sacar una máquina del modo pasivo, establezca la siguiente clave en 0:
 
 Ruta de acceso: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD Value: 0
 
-Para obtener más información, vea [Need to set Antivirus de Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 ## <a name="other-migration-scenarios"></a>Otros escenarios de migración
 
@@ -136,7 +136,8 @@ Para obtener más información, vea [Need to set Antivirus de Microsoft Defender
 6. Cree y aplique directivas con la directiva de grupo, PowerShell o una solución de administración de terceros.
 
 > [!TIP]
-> Puede usar el [script del instalador para](server-migration.md#installer-script) ayudar a automatizar los pasos del 1 al 4. Para habilitar el modo pasivo, aplica la marca -Passive que garantizará que Antivirus de Defender entre en modo pasivo antes de la incorporación y no interfiera con una solución antimalware que no sea de Microsoft. A continuación, para asegurarse de que Defender Antivirus permanece en modo pasivo después de la incorporación para admitir EDR funcionalidades como EDR Block, asegúrese de establecer la clave del Registro "ForceDefenderPassiveMode". EJEMPLO: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive` Para obtener más información, vea Need to set Antivirus de Microsoft Defender to passive [mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+> Puede usar el [script del instalador para](server-migration.md#installer-script) ayudar a automatizar los pasos del 1 al 4. Para habilitar el modo pasivo, aplica la marca -Passive que garantizará que Antivirus de Defender entre en modo pasivo antes de la incorporación y no interfiera con una solución antimalware que no sea de Microsoft. A continuación, para asegurarse de que Defender Antivirus permanece en modo pasivo después de la incorporación para admitir EDR funcionalidades como EDR Block, asegúrese de establecer la clave del Registro "ForceDefenderPassiveMode". EJEMPLO: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
+
 
 *Este paso solo se aplica si desea reemplazar la solución antivirus que no es de Microsoft. Se recomienda usar Antivirus de Microsoft Defender, incluido en Microsoft Defender para endpoint, para proporcionar el conjunto completo de funcionalidades. Vea [Better together: Antivirus de Microsoft Defender y Microsoft Defender para Endpoint](why-use-microsoft-defender-antivirus.md).
 
@@ -144,7 +145,6 @@ Para sacar una máquina del modo pasivo, establezca la siguiente clave en 0:
 
 Ruta de acceso: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: REG_DWORD Value: 0
 
-Para obtener más información, vea [Need to set Antivirus de Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 ## <a name="microsoft-defender-for-cloud-scenarios"></a>Escenarios de Microsoft Defender para la nube
 

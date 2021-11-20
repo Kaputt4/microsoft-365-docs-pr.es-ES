@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: efe24585981451ef91181ecc4caabb82d45d8ea4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 94ef0959c7e4de78080c54487ba017e1f75329ff
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753166"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61072378"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -45,7 +45,7 @@ El administrador global de su organización tiene permisos totales para crear y 
     
     Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**.
 
-2. En la página **Etiquetas**, seleccione **+Crear una etiqueta** para iniciar el asistente de Nueva etiqueta de confidencialidad. 
+2. En la página **Etiquetas**, seleccione **+Crear una etiqueta** para iniciar la Nueva etiqueta de confidencialidad. 
 
     Por ejemplo, desde el centro de cumplimiento de Microsoft 365:
 
@@ -58,15 +58,15 @@ El administrador global de su organización tiene permisos totales para crear y 
 
     ![Ámbitos para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
-    - Si está seleccionada la opción **Archivos y mensajes de correo electrónico**, puede configurar en este asistente las opciones que correspondan a aplicaciones que admiten etiquetas de confidencialidad, como Office Word y Outlook. Si esta opción no está seleccionada, el asistente mostrará la primera página de estas opciones de configuración, pero no podrá configurarlas, y las etiquetas no estarán disponibles para que los usuarios puedan seleccionarlas en estas aplicaciones.
+    - Si está seleccionada la opción **Archivos y mensajes de correo electrónico**, puede configurar las opciones que correspondan a aplicaciones que admiten etiquetas de confidencialidad, como Office Word y Outlook. Si esta opción no está seleccionada, podrá ver la primera página de estas opciones de configuración, pero no podrá configurarlas, y las etiquetas no estarán disponibles para que los usuarios puedan seleccionarlas en estas aplicaciones.
 
-    - Si está seleccionada la opción **Grupos y sitios**, puede configurar en este asistente las opciones que se apliquen a los Grupos de Microsoft 365 y a los sitios de Teams y SharePoint. Si esta opción no está seleccionada, el asistente mostrará la primera página de estas opciones de configuración, pero no podrá configurarlas, y las etiquetas no estarán disponibles para que los usuarios puedan seleccionarlas en estos grupos y sitios.
+    - Si está seleccionada la opción **Grupos y sitios**, puede configurar las opciones que se apliquen a los Grupos de Microsoft 365 y a los sitios de Teams y SharePoint. Si esta opción no está seleccionada, verá la primera página de esta configuración, pero no podrá configurarla y las etiquetas no estarán disponibles para que los usuarios las seleccionen para grupos y sitios.
 
-    Para información sobre el ámbito de **activos de Azure Purview (versión preliminar)**, consulte [Etiquetar automáticamente su contenido en Azure Purview](/azure/purview/create-sensitivity-label).
+    Para obtener información sobre el ámbito de los **Recursos de datos esquematizados**, consulte [Etiquete automáticamente el contenido en Azure Purview](/azure/purview/create-sensitivity-label).
 
-4. Siga los mensajes del asistente para la configuración de etiquetas.
+4. Siga las indicaciones de configuración para la configuración de la etiqueta.
 
-    Para obtener más información acerca de la configuración de las etiquetas, consulte [Qué pueden hacer las etiquetas de confidencialidad](sensitivity-labels.md#what-sensitivity-labels-can-do) en la parte de información general. Use la ayuda en el asistente para la configuración individual.
+    Para obtener más información acerca de la configuración de las etiquetas, consulte [Qué pueden hacer las etiquetas de confidencialidad](sensitivity-labels.md#what-sensitivity-labels-can-do) en la parte de información general. Use la ayuda en la interfaz de usuario para la configuración individual.
 
 5. Repita estos pasos para crear más etiquetas. Sin embargo, si desea crear una subetiqueta, primero seleccione la etiqueta principal y seleccione **...** para **Más acciones** y, a continuación, seleccione **Agregar subetiqueta**.
 
@@ -76,12 +76,12 @@ Para editar una etiqueta existente, selecciónela, y luego seleccione el botón 
 
 ![Botón Editar etiqueta para editar una etiqueta de confidencialidad.](../media/edit-sensitivity-label-full.png)
 
-Este botón inicia el asistente para **Editar etiquetas de confidencialidad**, lo que le permite cambiar todas las configuraciones de la etiqueta en el paso 4.
+Este botón inicia la configuración para **Editar etiquetas de confidencialidad**, lo que le permite cambiar todas las configuraciones de la etiqueta en el paso 4.
 
 No elimine una etiqueta a menos que comprenda el impacto para los usuarios. Para obtener más información, consulte la sección [Quitar y eliminar etiquetas](#removing-and-deleting-labels). 
 
 > [!NOTE]
-> Si edita una etiqueta ya publicada con una directiva de etiqueta, no necesita realizar pasos adicionales cuando finalice el asistente. Por ejemplo, no es necesario agregarla a una nueva directiva de etiquetas para que los cambios estén disponibles para los mismos usuarios. Sin embargo, sí debe dar un margen de 24 horas para que los cambios realizados se apliquen a todas las aplicaciones y servicios.
+> Si edita una etiqueta ya publicada con una directiva de etiqueta, no necesita realizar pasos adicionales cuando finalice la configuración. Por ejemplo, no es necesario agregarla a una nueva directiva de etiquetas para que los cambios estén disponibles para los mismos usuarios. Sin embargo, sí debe dar un margen de 24 horas para que los cambios realizados se apliquen a todas las aplicaciones y servicios.
 
 Hasta que publique las etiquetas, no estarán disponibles para seleccionarlas en aplicaciones o en servicios. Para publicar las etiquetas, deben [ agregarse a una directiva de etiqueta ](#publish-sensitivity-labels-by-creating-a-label-policy).
 
@@ -132,7 +132,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     
     Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**.
 
-2. Seleccione la pestaña **Directivas de etiqueta** y, después, **Publicar etiquetas** para iniciar el asistente de creación de directivas:
+2. Seleccione la pestaña **Directivas de etiqueta** y, después, **Publicar etiquetas** para iniciar la configuración de **Creación de directivas**:
 
     Por ejemplo, desde el centro de cumplimiento de Microsoft 365:
 
@@ -141,7 +141,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     > [!NOTE]
     > De forma predeterminada, los inquilinos no tienen directivas de etiquetas, por lo que deben crearse. 
 
-3. En el asistente, seleccione **Elegir etiquetas de confidencialidad para publicar**. Seleccione las etiquetas que quiera que estén disponibles en aplicaciones y para servicios, a continuación, seleccione **Agregar**.
+3. En la página **Elegir etiquetas de confidencialidad para publicar**, seleccione el vínculo **Elija las etiquetas de confidencialidad para publicar**. Seleccione las etiquetas que quiera que estén disponibles en aplicaciones y para servicios, a continuación, seleccione **Agregar**.
 
     > [!IMPORTANT]
     > Si selecciona una etiqueta, asegúrese de seleccionar también su etiqueta principal.
@@ -152,7 +152,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     Las opciones de configuración de directiva que se muestran coinciden con el ámbito de las etiquetas que seleccionó. Por ejemplo, si seleccionó etiquetas que solo contienen el ámbito **Archivos y mensajes de correo electrónico**, no verá las opciones de configuración de directiva **Aplicar esta etiqueta de forma predeterminada a los grupos y sitios** y **Requerir que los usuarios apliquen una etiqueta a sus grupos y sitios**.
 
-    Para obtener más información acerca de esta configuración, consulte [Qué pueden hacer las directivas de etiqueta](sensitivity-labels.md#what-label-policies-can-do) en la parte de información general. Use la ayuda en el asistente para la configuración individual.
+    Para obtener más información acerca de esta configuración, consulte [Qué pueden hacer las directivas de etiqueta](sensitivity-labels.md#what-label-policies-can-do) en la parte de información general. Use la ayuda en la interfaz de usuario para la configuración individual.
 
     Para etiquetas configuradas para **activos de Azure Purview (versión preliminar)**: estas etiquetas no tienen ninguna configuración de directiva asociada.
 
@@ -160,13 +160,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 7. Si crea más de una directiva de etiqueta que pueda resultar en conflicto para un usuario, revise el orden de las directivas y, si es necesario, muévalas hacia arriba o hacia abajo. Para cambiar el orden de una directiva de etiquetas, seleccione **...** para **Más acciones** y, a continuación, seleccione **Subir** o **Bajar**. Para obtener más información, consulte [Prioridad de las directivas de etiquetas (el orden importa)](sensitivity-labels.md#label-policy-priority-order-matters) en la parte de información general.
 
-Al completar el asistente, se publica automáticamente la directiva de etiqueta. Para realizar cambios en una directiva publicada, solo tiene que editarla. No es necesario que seleccione una acción específica para publicar o volver a publicar.
+Al completar la configuración **Crear directiva** se publica automáticamente la directiva de etiqueta. Para realizar cambios en una directiva publicada, solo tiene que editarla. No es necesario que seleccione una acción específica para publicar o volver a publicar.
 
 Para editar una directiva de etiquetas existente, selecciónela y, a continuación, seleccione el botón **Editar directiva**: 
 
 ![Edite una etiqueta de confidencialidad.](../media/edit-sensitivity-label-policy-full.png)
 
-Este botón inicia el asistente para **Crear directivas**, que le permite editar las etiquetas que se incluirán y su configuración. Cuando finalice el asistente, todos los cambios se aplicarán automáticamente a los usuarios y servicios seleccionados.
+Este botón inicia la configuración para **Crear directivas**, que le permite editar las etiquetas que se incluirán y su configuración. Cuando finalice la configuración todos los cambios se aplicarán automáticamente a los usuarios y servicios seleccionados.
 
 Al usar etiquetas integradas para aplicaciones de Office en Windows, macOS, iOS y Android, los usuarios verán las nuevas etiquetas en un plazo de cuatro horas, y en una hora para Word, Excel y PowerPoint en la Web al actualizar el explorador. Sin embargo, permita hasta 24 horas para que los cambios se repliquen en todas las aplicaciones y servicios.
 

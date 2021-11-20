@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 610b2959794bfa10faa5eeafb355c9ecb6e4676f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 090f5a81c624b22298c257fae890691c8e5151ee
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110408"
+ms.locfileid: "61121192"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Directivas para permitir el acceso de invitado y el acceso de usuarios externos B2B
 
-En este artículo se describe cómo ajustar las directivas recomendadas de acceso a identidades y dispositivos para permitir el acceso a invitados y usuarios externos que tienen una cuenta de Azure Active Directory (Azure AD) empresa a empresa (B2B). Esta guía se basa en las directivas [comunes de acceso a dispositivos y identidades.](identity-access-policies.md)
+En este artículo se describe cómo ajustar las directivas recomendadas de acceso a dispositivos y identidad de confianza cero para permitir el acceso a invitados y usuarios externos que tienen una cuenta de Azure Active Directory (Azure AD) empresa a empresa (B2B). Esta guía se basa en las directivas [comunes de acceso a dispositivos y identidades.](identity-access-policies.md)
 
-Estas recomendaciones están diseñadas para aplicarse al nivel **de protección** de línea base. Pero también puede ajustar las recomendaciones en función de sus necesidades específicas de protección **confidencial** **y altamente** regulada.
+Estas recomendaciones están diseñadas para aplicarse al nivel **de punto inicial** de protección. Pero también puede ajustar las recomendaciones en  función de sus necesidades específicas de protección de seguridad especializada **y** empresarial.
 
 Proporcionar una ruta de acceso para que las cuentas B2B se autentiquen con su Azure AD inquilino no proporciona a estas cuentas acceso a todo el entorno. Los usuarios B2B y sus cuentas tienen acceso a servicios y recursos, como archivos, compartidos con ellos mediante la directiva de acceso condicional.
 
@@ -38,15 +38,14 @@ Proporcionar una ruta de acceso para que las cuentas B2B se autentiquen con su A
 
 En este diagrama se muestran las directivas que se agregarán o actualizarán entre las directivas comunes de acceso a dispositivos y identidades, para el acceso de invitado b2B y de usuario externo.
 
-[![Resumen de las actualizaciones de directivas para proteger el acceso de invitados.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="Resumen de las actualizaciones de directivas para proteger el acceso de invitados." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
 En la tabla siguiente se enumeran las directivas que debe crear y actualizar. Las directivas comunes se vinculan a las instrucciones de configuración asociadas en [el artículo Identidad común y directivas de acceso a dispositivos.](identity-access-policies.md)
 
 |Nivel de protección|Directivas|Más información|
 |---|---|---|
-|**Baseline**|[Requerir MFA siempre para invitados y usuarios externos](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Cree esta nueva directiva y configure: <ul><li>Para **Asignaciones > Usuarios** y grupos > Incluir , elija **Seleccionar** usuarios y grupos y, a continuación, seleccione Todos los usuarios **invitados y externos.**</li><li>Para **las asignaciones > condiciones > inicio** de sesión, deje todas las opciones desactivadas para aplicar siempre la autenticación multifactor (MFA).</li></ul>|
+|**Punto de inicio**|[Requerir MFA siempre para invitados y usuarios externos](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Cree esta nueva directiva y configure: <ul><li>Para **Asignaciones > Usuarios** y grupos > Incluir , elija **Seleccionar** usuarios y grupos y, a continuación, seleccione Todos los usuarios **invitados y externos.**</li><li>Para **las asignaciones > condiciones > inicio** de sesión, deje todas las opciones desactivadas para aplicar siempre la autenticación multifactor (MFA).</li></ul>|
 ||[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifique esta directiva para excluir invitados y usuarios externos.|
-||[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifique esta directiva para excluir invitados y usuarios externos.|
 
 Para incluir o excluir **invitados** y usuarios externos en directivas de acceso condicional, para Asignaciones > Usuarios y grupos > Incluir o **Excluir**, compruebe Todos los usuarios invitados **y externos**.
 

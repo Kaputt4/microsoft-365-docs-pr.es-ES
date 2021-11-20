@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aeb78768db5426c249ab71f01a4e4d5d1fc154e0
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 56308de5f4bfacec7558f72e4fc1cb9e007f5d94
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552613"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121368"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
@@ -157,7 +157,7 @@ Especifica el grado de paralelismo de los exámenes a petición. Esto correspond
 
 #### <a name="exclusion-merge-policy"></a>Directiva de combinación de exclusión
 
-Especifique la directiva de combinación para exclusiones. Puede ser una combinación de exclusiones definidas por el administrador y definidas por el usuario ( ) o solo `merge` exclusiones definidas por el administrador ( `admin_only` ). Esta configuración se puede usar para restringir que los usuarios locales definan sus propias exclusiones.
+Especifique la directiva de combinación para exclusiones. Puede ser una combinación de exclusiones definidas por el administrador y definidas por el usuario ( ), o solo `merge` exclusiones definidas por el administrador ( `admin_only` ). Esta configuración se puede usar para restringir que los usuarios locales definan sus propias exclusiones.
 
 <br>
 
@@ -172,7 +172,7 @@ Especifique la directiva de combinación para exclusiones. Puede ser una combina
 |**Comments**|Disponible en Microsoft Defender para endpoint versión 100.83.73 o posterior.|
 |||
 
-#### <a name="scan-exclusions"></a>Exclusiones de examen
+#### <a name="scan-exclusions"></a>Exclusiones de análisis
 
 Especifique las entidades que no se han analizado. Las exclusiones se pueden especificar por rutas de acceso completas, extensiones o nombres de archivo.
 (Las exclusiones se especifican como una matriz de elementos, el administrador puede especificar tantos elementos como sea necesario, en cualquier orden).
@@ -247,7 +247,7 @@ Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracter
 
 ****
 
-|Carácter comodín|Descripción|Ejemplo|Coincidencias|No coincide|
+|Carácter comodín|Description|Ejemplo|Coincidencias|No coincide|
 |---|---|---|---|---|
 |\*|Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
 |?|Coincide con cualquier carácter|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
@@ -319,7 +319,7 @@ Especifica las amenazas por nombre que no estén bloqueadas por Defender para En
 |**Tipo de datos**|Matriz de cadenas|
 |||
 
-#### <a name="disallowed-threat-actions"></a>Acciones de amenazas no permitidos
+#### <a name="disallowed-threat-actions"></a>Acciones de amenazas no permitidas
 
 Restringe las acciones que el usuario local de un dispositivo puede realizar cuando se detectan amenazas. Las acciones incluidas en esta lista no se muestran en la interfaz de usuario.
 
@@ -471,7 +471,7 @@ Especifica si se va a habilitar la protección entregada en la nube del disposit
 |**Posibles valores**|true (valor predeterminado) <p> false|
 |||
 
-#### <a name="diagnostic-collection-level"></a>Nivel de colección de diagnóstico
+#### <a name="diagnostic-collection-level"></a>Nivel de recopilación de diagnóstico
 
 Los datos de diagnóstico se usan para mantener Microsoft Defender for Endpoint seguro y actualizado, detectar, diagnosticar y corregir problemas y también realizar mejoras en el producto. Esta configuración determina el nivel de diagnóstico enviado por Microsoft Defender para Endpoint a Microsoft.
 

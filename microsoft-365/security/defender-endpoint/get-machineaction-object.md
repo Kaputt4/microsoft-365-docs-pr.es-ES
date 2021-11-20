@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3773e124aa63b5975bf1dc8156e32edb0f3f3c8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e1072029313915421ce1fe38aa3421701569d455
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194194"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122482"
 ---
 # <a name="get-machineaction-api"></a>Obtener api machineAction
 
@@ -41,11 +41,11 @@ Recupera una acción [de máquina específica](machineaction.md) por su identifi
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+- Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Use Defender for Endpoint API](apis-intro.md).
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
@@ -69,7 +69,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -77,7 +77,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200, código de respuesta Ok con una [entidad Machine Action.](machineaction.md) Si no se encontró la entidad de acción de la máquina con el identificador especificado: 404 No encontrado.
+Si se realiza correctamente, este método devuelve 200, código de respuesta Ok con una [entidad Machine Action.](machineaction.md) Si no se encontró la entidad de acción del equipo con el identificador especificado: 404 No se encontró.
 
 ## <a name="example"></a>Ejemplo
 
@@ -91,7 +91,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-42
 
 ### <a name="response-example"></a>Ejemplo de respuesta
 
-Aquí tiene un ejemplo de la respuesta.
+Este es un ejemplo de la respuesta:
 
 ```json
 HTTP/1.1 200 Ok

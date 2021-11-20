@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f7ba446eb074bc04ae4432595022d26f7f84b6e8
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f1ecba248046755a9258ffd94da66859a26a0c6d
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111788"
+ms.locfileid: "61122242"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Implementar, administrar e informar sobre Antivirus de Microsoft Defender
 
@@ -57,7 +57,7 @@ Microsoft Azure|Implemente Microsoft Antimalware para Azure en Azure Portal, med
 
 1. <span id="fn1" />La disponibilidad de algunas funciones y características, especialmente relacionadas con la protección entregada en la nube, difiere entre Microsoft Endpoint Manager (rama actual) y System Center Configuration Manager de 2012. En esta biblioteca, nos hemos centrado en Windows 10, Windows 11, Windows Server 2016 y Microsoft Endpoint Manager (rama actual). Consulte [Use Microsoft cloud-provided protection in Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) para obtener una tabla que describe las principales diferencias. [(Volver a la tabla)](#ref2)
 
-2. <span id="fn2" />En Windows 10 y Windows 11, Antivirus de Microsoft Defender es un componente disponible sin la instalación o implementación de un cliente o servicio adicional. Se habilitará automáticamente cuando se desinstale o desinstale productos antivirus de terceros ( excepto[en Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)). Por lo tanto, la implementación tradicional no es necesaria. La implementación aquí se refiere a garantizar que el Antivirus de Microsoft Defender está disponible y habilitado en los puntos de conexión o servidores. [(Volver a la tabla)](#ref2)
+2. <span id="fn2" />En Windows 10 y Windows 11, Antivirus de Microsoft Defender es un componente disponible sin la instalación o implementación de un cliente o servicio adicional. Se habilitará automáticamente cuando los productos antivirus de terceros se desinstale o no estén actualizados (excepto en Windows Server 2016). Por lo tanto, la implementación tradicional no es necesaria. La implementación aquí se refiere a garantizar que el Antivirus de Microsoft Defender está disponible y habilitado en los puntos de conexión o servidores. [(Volver a la tabla)](#ref2)
 
 3. <span id="fn3" />La configuración de características y protección, incluida la configuración de actualizaciones de productos y protección, se describe más adelante en la sección [Configurar Antivirus de Microsoft Defender características de](configure-notifications-microsoft-defender-antivirus.md) esta biblioteca. [(Volver a la tabla)](#ref2)
 

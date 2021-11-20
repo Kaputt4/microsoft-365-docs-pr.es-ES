@@ -1,6 +1,6 @@
 ---
 title: Ejemplos de comandos de respuesta en vivo
-description: Aprenda a ejecutar comandos de respuesta en directo básicos o avanzados para Microsoft Defender para endpoint y vea ejemplos sobre cómo se usa.
+description: Aprenda a ejecutar comandos de respuesta en directo básicos o avanzados para Microsoft Defender para Endpoint y vea ejemplos sobre cómo se usan.
 keywords: ejemplo, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6b234a27ccf011cdc20b7c1c5ab34e4322bfc5fd
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 39afd823c0d51494e5ad6e16f15f6cfc1eac131b
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587722"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121942"
 ---
 # <a name="live-response-command-examples"></a>Ejemplos de comandos de respuesta en vivo
 
@@ -34,9 +34,9 @@ ms.locfileid: "60587722"
 
 Obtenga información sobre los comandos comunes usados en la respuesta en directo y vea ejemplos sobre cómo se usan normalmente.
 
-Según el rol que se le haya concedido, puede ejecutar comandos de respuesta en directo básicos o avanzados. Para obtener más información sobre los comandos básicos y avanzados, vea Investigar entidades en [dispositivos con respuesta en directo.](live-response.md)
+Según el rol que tenga, puede ejecutar comandos de respuesta en directo básicos o avanzados. Para obtener más información sobre los comandos básicos y avanzados, vea Investigar entidades en [dispositivos con respuesta en directo.](live-response.md)
 
-## <a name="analyze"></a>analizar
+## `analyze`
 
 ```console
 # Analyze the file malware.txt
@@ -48,7 +48,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## <a name="connections"></a>conexiones
+## `connections`
 
 ```console
 # List active connections in json format using parameter name
@@ -60,7 +60,7 @@ connections -output json
 connections json
 ```
 
-## <a name="dir"></a>dir
+## `dir`
 
 ```console
 # List files and sub-folders in the current folder
@@ -77,21 +77,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## <a name="fileinfo"></a>fileinfo
+## `fileinfo`
 
 ```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## <a name="findfile"></a>findfile
+## `findfile`
 
 ```console
 # Find file by name
 findfile test.txt
 ```
 
-## <a name="getfile"></a>getfile
+## `getfile`
 
 ```console
 # Download a file from a machine
@@ -105,18 +105,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> Los siguientes tipos de **archivo no se** pueden descargar con este comando desde Live Response:
+> Los siguientes tipos de *archivo no se* pueden descargar con este comando desde Live Response:
 >
 > - [Archivos de punto de repetición](/windows/desktop/fileio/reparse-points/)
 > - [Archivos dispersos](/windows/desktop/fileio/sparse-files/)
 > - Archivos vacíos
 > - Archivos virtuales o archivos que no están totalmente presentes localmente
 >
-> PowerShell **admite** estos tipos [de archivo.](/powershell/scripting/overview)
+> PowerShell *admite* estos tipos [de archivo.](/powershell/scripting/overview)
 >
 > Use PowerShell como alternativa, si tiene problemas al usar este comando desde Live Response.
 
-## <a name="library"></a>biblioteca
+## `library`
 
 ```console
 # List files in the library
@@ -128,7 +128,7 @@ library
 library delete script.ps1
 ```
 
-## <a name="processes"></a>procesos
+## `processes`
 
 ```console
 # Show all processes
@@ -150,7 +150,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## <a name="putfile"></a>putfile
+## `putfile`
 
 ```console
 # Upload file from library
@@ -167,7 +167,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## <a name="registry"></a>registro
+## `registry`
 
 ```console
 # Show information about the values in a registry key
@@ -180,7 +180,7 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## <a name="remediate"></a>remediate
+## `remediate`
 
 ```console
 # Remediate file in specific path
@@ -197,7 +197,7 @@ remediate process 7960
 remediate list
 ```
 
-## <a name="run"></a>ejecutar
+## `run`
 
 ```console
 # Run PowerShell script from the library without arguments
@@ -214,7 +214,7 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 > Para los comandos de larga ejecución como '**run**' o '**getfile**', es posible que desee usar el símbolo ' ' al final del comando para realizar esa acción en **&** segundo plano.
 > Esto le permitirá seguir investigando la máquina y volver al comando en segundo plano cuando termine con '**fg**' [comando básico](live-response.md#basic-commands).
 
-## <a name="scheduledtask"></a>scheduledtask
+## `scheduledtask`
 
 ```console
 # Get all scheduled tasks
@@ -231,7 +231,7 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-## <a name="undo"></a>deshacer
+## `undo`
 
 ```console
 # Restore remediated registry

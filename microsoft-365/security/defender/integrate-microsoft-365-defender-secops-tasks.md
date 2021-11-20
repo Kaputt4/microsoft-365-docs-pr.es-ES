@@ -17,24 +17,25 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 96f7c95f645f0544b0bcd80a0cd0e3f9b595733e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a79738119eecc08666e498a3057753fd6532e4f1
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197982"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122494"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>Paso 6. Identificar tareas de mantenimiento soc
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Estas son las tareas periódicas o según sea necesario para mantener el SOC para Microsoft 365 Defender.
 

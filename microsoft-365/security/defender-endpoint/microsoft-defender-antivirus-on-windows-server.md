@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b98145834eebee80a69846474b3395f90eac7fa6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: d06793cbc0742e3f24ac09d1f9dd64680013eecd
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111275"
+ms.locfileid: "61121667"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -99,7 +99,7 @@ Si necesita instalar o reinstalar Antivirus de Microsoft Defender en Windows Ser
 
 Para usar PowerShell para instalar Antivirus de Microsoft Defender, ejecute el siguiente cmdlet:
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender
 ```
 
@@ -109,13 +109,13 @@ Los mensajes de evento para el motor de antimalware incluidos Antivirus de Micro
 
 Una Antivirus de Microsoft Defender está instalada, el siguiente paso es comprobar que se está ejecutando. En el Windows de servidor, ejecute el siguiente cmdlet de PowerShell:
 
-```PowerShell
+```powershell
 Get-Service -Name windefend
 ```
 
 Para comprobar que la protección del firewall está activada, ejecute el siguiente cmdlet de PowerShell:
 
-```PowerShell
+```powershell
 Get-Service -Name mpssvc
 ```
 
@@ -151,7 +151,7 @@ En la tabla siguiente se enumeran los servicios Antivirus de Microsoft Defender 
 <br/><br/>
 
 
-| Nombre del servicio | Ubicación del archivo | Descripción |
+| Nombre del servicio | Ubicación del archivo | Description |
 |---|---|---|
 | Windows Defender (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Este es el servicio Antivirus de Microsoft Defender principal que debe ejecutarse en todo momento.|
 | Informe de errores de Windows (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | Este servicio devuelve informes de error a Microsoft. |
@@ -219,7 +219,7 @@ Puede establecer el Antivirus de Microsoft Defender en modo pasivo estableciendo
 
 Para desactivar la GUI Antivirus de Microsoft Defender, use el siguiente cmdlet de PowerShell:
 
-```PowerShell
+```powershell
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
@@ -229,7 +229,7 @@ Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows S
 
 <br/><br/>
 
-| Procedure | Descripción |
+| Procedure | Description |
 |---|---|
 | Deshabilitar Antivirus de Microsoft Defender con la directiva de grupo | En el Editor de directivas de grupo local, vaya a **Plantilla** administrativa Windows componente Endpoint Protection  >    >    >  **Deshabilitar Endpoint Protection** y,   >  a continuación, seleccione Habilitado aceptar . |
 | Deshabilitar Antivirus de Microsoft Defender con una clave del Registro | Para usar la clave del Registro [DisableAntiSpyware,](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) vaya `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` a y establezca o cree una entrada DWORD denominada `DisableAntiSpyware` . Establezca su valor en (que establece el valor de la `1` clave del Registro en *true*). |

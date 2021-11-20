@@ -16,16 +16,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3535e258cb5825a5be4ff97e4bd03a700c80589c
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 3976ff16d303db93d2ae7929afe1244f8ab1dda5
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914221"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121822"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -33,11 +34,12 @@ ms.locfileid: "60914221"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La administración de incidentes es fundamental para garantizar que las amenazas se contengan y se aborde.
 
-Puede administrar incidentes de incidentes **& alertas** > incidentes en el inicio rápido del portal de Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
+Ratulac-acrolinx-updates Puede administrar incidentes de incidentes **& alertas** > incidentes en el inicio rápido del portal de Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
+
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -104,7 +106,7 @@ Si se trataba de una alerta verdadera, también debe especificar qué tipo de am
 
 Puede agregar varios comentarios a un incidente con el **campo Comentario.** Cada comentario se agrega a los eventos históricos del incidente. Puede ver los comentarios y el historial de un incidente desde el vínculo **Comentarios e** historial en la **página Resumen.**
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para nuevos incidentes, inicie la [investigación](investigate-incidents.md).
 
@@ -112,7 +114,7 @@ Para incidentes en el proceso, continúe con la [investigación](investigate-inc
 
 Para los incidentes resueltos, realice una [revisión posterior al incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

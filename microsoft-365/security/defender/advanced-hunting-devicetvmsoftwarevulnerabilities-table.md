@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c217c060c3d0b570c6da5bfbd47c72cb8cdfca2b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e8febbf47e8aa7c6d4e78bd783c5274f2b20c9af
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700330"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121703"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -35,12 +35,12 @@ ms.locfileid: "60700330"
 - Microsoft Defender para punto de conexión
 
 >[!IMPORTANT]
-> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+> Parte de la información se relaciona con el producto publicado previamente, que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
 La tabla del esquema de búsqueda avanzada contiene la lista de & de vulnerabilidades de los productos `DeviceTvmSoftwareVulnerabilities` de software [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) instalados. Esta tabla también incluye información sobre el sistema operativo, IDs de CVE e información sobre la gravedad de la vulnerabilidad. Puedes usar esta tabla, por ejemplo, para buscar eventos que impliquen dispositivos con vulnerabilidades graves en su software. Use esta referencia para crear consultas que devuelvan información de la tabla.
 
 >[!NOTE]
-> Las `DeviceTvmSoftwareInventory` tablas y han reemplazado a la `DeviceTvmSoftwareVulnerabilities` `DeviceTvmSoftwareInventoryVulnerabilities` tabla. Juntos, las dos primeras tablas incluyen más columnas que puedes usar para ayudar a informar a tus actividades de administración de vulnerablidad o buscar dispositivos vulnerables.
+> Las `DeviceTvmSoftwareInventory` tablas y han reemplazado a la `DeviceTvmSoftwareVulnerabilities` `DeviceTvmSoftwareInventoryVulnerabilities` tabla. Juntos, las dos primeras tablas incluyen más columnas que puedes usar para ayudar a informar a tus administración de vulnerabilidades actividades o buscar dispositivos vulnerables.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea [la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
@@ -48,15 +48,15 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |-------------|-----------|-------------|
 | `DeviceId` | string | Identificador único para el equipo en servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
+| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
 | `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el equipo. |
 | `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
-| `SoftwareVendor` | cadena | Nombre del proveedor de software |
+| `SoftwareVendor` | cadena | Nombre del editor de software |
 | `SoftwareName` | cadena | Nombre del producto de software |
 | `SoftwareVersion` | cadena | Número de versión del producto de software |
 | `CveId` | cadena | Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE) |
 | `VulnerabilitySeverityLevel` | cadena | Nivel de gravedad asignado a la vulnerabilidad de seguridad basada en la puntuación CVSS y los factores dinámicos influidos por el panorama de amenazas |
-| `RecommendedSecurityUpdate` | cadena | Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad |
+| `RecommendedSecurityUpdate` | cadena | Nombre o descripción de la actualización de seguridad proporcionada por el editor de software para solucionar la vulnerabilidad |
 | `RecommendedSecurityUpdateId` | cadena | Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes |
 
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo configurar la seguridad del portal.
-ms.openlocfilehash: fadff316b98b57960179214d3d895ecad6467a69
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c68f2441db5bdac2f2da693ee6c99baa7a9ff213
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152483"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122518"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurar Microsoft 365 Lighthouse seguridad del portal
 
@@ -42,7 +42,7 @@ Cuando los usuarios tengan acceso a Lighthouse por primera vez, se les pedirá q
 
 El acceso a los datos y la configuración del inquilino del cliente en Lighthouse está restringido a los roles agente de administración y agente de soporte técnico desde el programa proveedor de soluciones en la nube (CSP).
 
-Puede comprobar qué usuarios del espacio empresarial asociado tienen los roles Agente de administración y Agente de soporte técnico revisando las pertenencias a grupos de seguridad en la página [Azure AD – Todos los](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) grupos. Para obtener información sobre cómo asignar roles de programa CSP y otros permisos a los usuarios, vea [Asignar roles y permisos a los usuarios](/partner-center/permissions-overview). Como MSP, si aún no tiene privilegios de acceso delegados a los inquilinos del cliente, obtenga información sobre cómo obtenerlos en el artículo Obtener permisos para administrar el servicio o la suscripción de un [cliente.](/partner-center/customers-revoke-admin-privileges)
+Puede comprobar qué usuarios del espacio empresarial asociado tienen los roles Agente de administración y Agente de soporte técnico revisando las pertenencias a grupos de seguridad en la [página Azure AD Todos](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) los grupos. Para obtener información sobre cómo asignar roles de programa CSP y otros permisos a los usuarios, vea [Asignar roles y permisos a los usuarios](/partner-center/permissions-overview). Como MSP, si aún no tiene privilegios de acceso delegados a los inquilinos del cliente, obtenga información sobre cómo obtenerlos en el artículo Obtener permisos para administrar el servicio o la suscripción de un [cliente.](/partner-center/customers-revoke-admin-privileges)
 
 En la tabla siguiente se enumeran las distintas páginas de Lighthouse y los permisos necesarios para ver y actuar sobre los datos del inquilino del cliente y la configuración de los roles Agente de administración y Agente de soporte técnico.<br><br>
 
@@ -57,7 +57,7 @@ En la tabla siguiente se enumeran las distintas páginas de Lighthouse y los per
 | Estado del servicio | <ul><li>Ver todos*</li></ul> | <ul><li>Ver todos*</li></ul> |
 
 > [!NOTE]
-> Actualmente, para realizar las acciones marcadas con * en la tabla, los usuarios también tendrán que tener el rol de Azure AD en el inquilino asociado con la siguiente propiedad establecida: **microsoft.office365.serviceHealth/allEntities/allTasks**. Para obtener una lista de los roles de Azure AD, vea [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).
+> Actualmente, para realizar las acciones marcadas con * en la tabla, los usuarios también tendrán que tener el rol Azure AD en el inquilino asociado con el siguiente conjunto de propiedades: **microsoft.office365.serviceHealth/allEntities/allTasks**. Para obtener una lista de Azure AD funciones, [vea Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
 
 Dados los amplios permisos asociados con el rol agente [](/azure/active-directory/develop/secure-least-privileged-access) de administración, se recomienda respetar el principio de acceso con privilegios mínimos al designar un usuario de inquilino asociado como agente de administración frente a agente de soporte técnico. Una forma de hacerlo es asignar el rol agente del departamento de soporte técnico a los usuarios de inquilinos asociados necesarios. Esto les permite ver los datos y la configuración del cliente, pero no realizar cambios generales. A continuación, cuando sea necesario, use las funciones de aprobación de acceso just-in-time de Azure AD Privileged Identity Management (PIM) para proporcionar a los usuarios un rol de agente de administración con ámbito de tiempo.
 
@@ -66,9 +66,9 @@ Dados los amplios permisos asociados con el rol agente [](/azure/active-director
 Los MSP pueden minimizar el número de personas que tienen acceso a información o recursos seguros mediante Azure AD Privileged Identity Management (PIM). PIM reduce la posibilidad de que una persona malintencionada obtenga acceso a recursos o usuarios autorizados que inadvertidamente impacten en un recurso confidencial. Los MSP también pueden conceder a los usuarios acceso con privilegios justo a tiempo a los recursos y supervisar lo que los usuarios designados hacen con su acceso con privilegios.
 
 > [!NOTE]
-> El uso de PIM de Azure AD requiere Azure AD Premium P2 licencia en el inquilino asociado.
+> El Azure AD PIM requiere una Azure AD Premium P2 en el inquilino asociado.
 
-Los siguientes pasos elevan a los usuarios de inquilinos asociados a roles de agente de administración con ámbito de tiempo mediante PIM de Azure AD:
+Los siguientes pasos elevan a los usuarios de inquilinos asociados a roles de agente de administración con ámbito de tiempo mediante Azure AD PIM:
 
 1. Cree un grupo asignable de roles como se describe en el artículo Crear un grupo para asignar [roles en Azure Active Directory](/azure/active-directory/roles/groups-create-eligible).
 
@@ -84,11 +84,9 @@ En la tabla siguiente se enumeran los roles de inquilino de asociados y sus perm
 
 | Roles de inquilino de partners | Permisos dentro del espacio empresarial asociado |
 |--|--|
-| Administrador global del inquilino asociado | <ul><li>Regístrate en Lighthouse en el Centro de administración de Microsoft 365.</li><li>Aceptar modificaciones de contrato de partner durante la experiencia de primera ejecución.</li><li>Ver inquilinos de clientes en la página Inquilinos.\*</li><li>Activar e desactivar un espacio empresarial.\*</li><li>Actualizar los contactos del cliente y el sitio web.\*</li><li>Crear, actualizar y eliminar etiquetas.\*</li><li>Asignar y quitar etiquetas de un inquilino de cliente.\*</li></ul> |
-| Administrador del inquilino asociado con al menos uno<br> Rol de Azure AD asignado con el siguiente conjunto de propiedades:<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Para obtener una lista de los roles de Azure AD, consulte [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference).) | <ul><li>Crear solicitudes de servicio de Lighthouse.</li></ul> |
+| Administrador global del inquilino asociado | <ul><li>Regístrate en Lighthouse en el Centro de administración de Microsoft 365.</li><li>Aceptar modificaciones de contrato de partner durante la experiencia de primera ejecución.</li><li>Ver inquilinos de clientes en la página Inquilinos.</li><li>Activar e desactivar un espacio empresarial.</li><li>Actualizar los contactos del cliente y el sitio web.</li><li>Crear, actualizar y eliminar etiquetas.</li><li>Asignar y quitar etiquetas de un inquilino de cliente.</li></ul> |
+| Administrador del inquilino asociado con al menos uno<br> Azure AD rol asignado con el siguiente conjunto de propiedades:<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Para obtener una lista de Azure AD funciones, [vea Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).) | <ul><li>Crear solicitudes de servicio de Lighthouse.</li></ul> |
 
-> [!NOTE]
-> Actualmente, para realizar las acciones marcadas con * en la tabla, el administrador global debe asumir el rol Agente de administración.
 
 ## <a name="related-content"></a>Contenido relacionado
 

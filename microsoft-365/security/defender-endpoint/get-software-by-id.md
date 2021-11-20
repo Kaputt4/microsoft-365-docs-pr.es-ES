@@ -1,5 +1,5 @@
 ---
-title: Obtener software por identificador
+title: Obtener software por identificación
 description: Recupera una lista de detalles de software por identificador.
 keywords: apis, api de gráficos, api admitidas, get, software, Api de Microsoft Defender para Endpoint tvm
 search.product: eADQiWindows 10XVcnh
@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 098edd5b0857e7bd771be7d28fee965934b9bc67
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d980bca8584bbd99cdc695e24a5a1d7a476ff8c9
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205456"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122099"
 ---
-# <a name="get-software-by-id"></a>Obtener software por identificador
+# <a name="get-software-by-id"></a>Obtener software por identificación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -72,7 +72,7 @@ Si se realiza correctamente, este método devuelve 200 Aceptar con los datos de 
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
@@ -80,7 +80,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 
 ### <a name="response-example"></a>Ejemplo de respuesta
 
-Aquí tiene un ejemplo de la respuesta.
+Este es un ejemplo de la respuesta:
 
 ```json
 {

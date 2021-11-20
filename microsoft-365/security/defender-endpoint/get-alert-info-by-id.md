@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a7d2574cf97d6eb2c38348d2e291fee82d0adb43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78e729fb5db90f78febdb970792b959a85df533f
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213691"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122542"
 ---
 # <a name="get-alert-information-by-id-api"></a>Obtener información de alerta por API de id.
 
@@ -42,12 +42,12 @@ Recupera alerta [específica por](alerts.md) su identificador.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Puede obtener las alertas por última vez actualizadas según el período de retención configurado.
-2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+- Puede obtener las alertas por última vez actualizadas según el período de retención configurado.
+- Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Use Microsoft Defender for Endpoint API](apis-intro.md).
 
 Tipo de permiso|Permiso|Nombre para mostrar de permisos
 :---|:---|:---
@@ -80,4 +80,4 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente, este método devuelve 200 Ok y la entidad [alert](alerts.md) en el cuerpo de la respuesta. Si no se encontró la alerta con el identificador especificado: 404 No encontrado.
+Si se realiza correctamente, este método devuelve 200 Ok y la entidad [alert](alerts.md) en el cuerpo de la respuesta. Si no se encontró la alerta con el identificador especificado: 404 No se encontró.

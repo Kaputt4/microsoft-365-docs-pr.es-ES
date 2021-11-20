@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 17fda6ff5deb8c5f16513a5b3a823bcf584f2373
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: fef221ce23ac04d156084ebad7b837840004f066
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064540"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111860"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -47,7 +47,7 @@ O bien
 
 ## <a name="get-registered"></a>Registrarse
 
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para el soporte técnico de Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
+Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea [registrarse para la compatibilidad de Microsoft 365 en macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 Cuando está habilitada, **la protección y el examen de clasificación avanzada** permiten al servicio de clasificación de datos basado en la nube más avanzado de Microsoft 365 examinar elementos, clasificarlos y devolver los resultados a la máquina local. Esto significa que puede aprovechar la clasificación [exacta de coincidencia de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), técnicas de clasificación de entidades [con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) en las directivas DLP.
 
@@ -60,6 +60,9 @@ Estas versiones de Windows admiten la protección y el escaneo de clasificación
 - Windows 10 versiones 20H1/20H2/21H1 (KB 5006738)
 - Windows 10 versiones 19H1/19H2 (KB 5007189)
 - Windows 10 RS5 (KB 5006744)
+
+> [!NOTE]
+> La compatibilidad con la clasificación avanzada está disponible para archivos de Office (Word, Excel, PowerPoint) y de PDF.
 
 > [!NOTE]
 > La evaluación de directivas DLP siempre se produce en la nube, incluso si el contenido del usuario no se envía.
@@ -352,7 +355,7 @@ Hay tres pasos:
 
 2. Expanda las **Aplicaciones no permitidas**.
 
-3. Elija **Agregar o editar aplicaciones no permitidas** y agregue *OneDrive* como nombre para mostrar y *onedrive.exe* como nombre del ejecutable para impedir que onedrive.exe acceda a los elementos con la etiqueta **Extremadamente confidencial**.
+3. Elija **Agregar o editar aplicaciones no permitidas** y agregue *OneDrive* como nombre para mostrar y el nombre ejecutable *onedrive.exe*  para impedir que onedrive.exe acceda a los elementos con la etiqueta **Extremadamente confidencial**.
 
 4. Seleccione **cuarentena automática** y **Guardar**.
 

@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre Caja fuerte protección de vínculos en Defender for Office 365 para proteger una organización contra la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte y vea los gráficos de los Caja fuerte links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f2f1695c10c7b5b9d03db38ab000410c20eb467
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: e0e8bc1dae8ff1d04c32b67ad3cd0e689a7dd264
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064228"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121260"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -80,7 +80,7 @@ En este artículo se incluyen descripciones detalladas de los siguientes tipos d
   - [Caja fuerte configuración de vínculos para Office 365 aplicaciones](#safe-links-settings-for-office-365-apps)
   - [Lista "Bloquear las siguientes direcciones URL" para Caja fuerte vínculos](#block-the-following-urls-list-for-safe-links)
 
-En la tabla siguiente se describen escenarios para vínculos de Caja fuerte en organizaciones de Microsoft 365 y Office 365 que incluyen Defender para Office 365 (es decir, la falta de licencias nunca es un problema en los ejemplos).
+En la tabla siguiente se describen escenarios para vínculos de Caja fuerte en organizaciones de Microsoft 365 y Office 365 que incluyen Defender para Office 365 (tenga en cuenta que la falta de licencias nunca es un problema en los ejemplos).
 
 <br>
 
@@ -284,7 +284,7 @@ En la tabla siguiente se describen ejemplos de los valores que puede especificar
 
 |Valor|Resultado|
 |---|---|
-|`contoso.com` <p> Otra posibilidad: <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com` , `https://sub.contoso.com` y se `https://contoso.com/abc` bloquean.|
+|`contoso.com` <p> o <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com` , `https://sub.contoso.com` y se `https://contoso.com/abc` bloquean.|
 |`https://contoso.com/a`|Bloques `https://contoso.com/a` pero no subpaths adicionales como `https://contoso.com/a/b` .|
 |`https://contoso.com/a*`|Bloques `https://contoso.com/a` y subpaths adicionales como `https://contoso.com/a/b` .|
 |`https://toys.contoso.com*`|Bloquea un subdominio ( en este ejemplo), pero permite hacer clic en otras direcciones URL de `toys` dominio (como o `https://contoso.com` `https://home.contoso.com` ).|

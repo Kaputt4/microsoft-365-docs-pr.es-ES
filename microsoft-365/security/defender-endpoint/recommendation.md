@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e938eb9a743b6e63a2836d71c96692e1e7d43f66
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e1364b19ac29f7d753c6d5b479303b8c0ef355b
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152063"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122458"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
@@ -30,7 +30,7 @@ ms.locfileid: "60152063"
 
 **Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,10 +44,10 @@ ms.locfileid: "60152063"
 
 ****
 
-|Método|Tipo de valor devuelto|Descripción|
+|Método|Tipo de valor devuelto|Description|
 |---|---|---|
 |[Enumerar todas las recomendaciones](get-all-recommendations.md)|Colección de recomendaciones|Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización|
-|[Obtener recomendación por identificador](get-recommendation-by-id.md)|Recomendación|Recupera una recomendación de seguridad por su identificador|
+|[Obtener recomendación por identificación](get-recommendation-by-id.md)|Recomendación|Recupera una recomendación de seguridad por su identificador|
 |[Obtener software de recomendación](list-recommendation-software.md)|[Software](software.md)|Recupera una recomendación de seguridad relacionada con un software específico|
 |[Obtener dispositivos de recomendación](get-recommendation-machines.md)|Colección MachineRef|Recupera una lista de dispositivos asociados con la recomendación de seguridad|
 |[Obtener vulnerabilidades de recomendación](get-recommendation-vulnerabilities.md)|[Colección Vulnerability](vulnerability.md)|Recupera una lista de vulnerabilidades asociadas con la recomendación de seguridad|
@@ -67,14 +67,14 @@ ms.locfileid: "60152063"
 |Debilidades|Long|Número de vulnerabilidades detectadas|
 |Proveedor|Cadena|Nombre de proveedor relacionado|
 |recommendedVersion|Cadena|Versión recomendada|
-|recommendedProgram|Cadena|Programa recomendado|
+|recommendedProgram|String|Programa recomendado|
 |recommendedVendor|Cadena|Proveedor recomendado|
-|recommendationCategory|Cadena|Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityControls"|
+|recommendationCategory|String|Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityControls"|
 |subCategory|Cadena|Subcategoría recomendación|
 |severityScore|Doble|Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)|
 |publicExploit|Booleano|La vulnerabilidad pública está disponible|
 |activeAlert|Booleano|La alerta activa está asociada con esta recomendación|
-|associatedThreats|Colección string|El informe de análisis de amenazas está asociado a esta recomendación|
+|associatedThreats|Colección de cadenas|El informe de análisis de amenazas está asociado a esta recomendación|
 |remediationType|Cadena|Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"|
 |Estado|Enum|Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"|
 |configScoreImpact|Doble|Impacto de puntuación segura de Microsoft para dispositivos|

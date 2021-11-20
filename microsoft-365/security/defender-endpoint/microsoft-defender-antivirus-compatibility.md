@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/26/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6a2faec5ec3dca1fcd346aecc73edbbcd2cfa583
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1624d30eb7e8112e2e8739c6d7cbfdb208f8816e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110096"
+ms.locfileid: "61122590"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus de Microsoft Defender compatibilidad con otros productos de seguridad
 
@@ -67,7 +67,7 @@ En esta sección se describe lo que sucede con Antivirus de Microsoft Defender a
 (<a id="fn1">1</a>) En Windows Server, si está ejecutando un producto antivirus que no es de Microsoft, puede deshabilitar Antivirus de Microsoft Defender mediante la directiva de grupo para desactivar Antivirus de Microsoft Defender o mediante la clave del Registro [DisableAntiSpyware.](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) Para usar la clave del Registro, vaya `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` a y establezca o cree una entrada DWORD denominada `DisableAntiSpyware` . Establezca su valor en (que establece el valor de la clave del Registro `1` en *true)* y seleccione **Hexadecimal** para su base.
 
 > [!TIP]
-> Consulte [Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md) para obtener información sobre las principales diferencias y opciones de administración para Windows server. En Windows Server 2016, es posible que *vea* Antivirus de Windows Defender en lugar de *Antivirus de Microsoft Defender*.
+> En Windows Server 2016, es posible que *vea* Antivirus de Windows Defender en lugar de *Antivirus de Microsoft Defender*.
 
 ## <a name="microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions"></a>Antivirus de Microsoft Defender antivirus y soluciones antimalware que no son de Microsoft
 
@@ -88,7 +88,7 @@ En la tabla siguiente se resume lo que sucede con Antivirus de Microsoft Defende
 | Windows Server 2016 <br><br> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | Sí | Antivirus de Microsoft Defender debe establecerse en modo pasivo (manualmente) <sup> [[2](#fn2)]<sup> |
 |Windows Server 2016 <br><br> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | No | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup> [[3](#fn3)]<sup> |
 
-(<a id="fn2">2</a>) En Windows Server 2019, Windows Server, versión 1803 o posterior, Windows Server 2016 o Windows Server 2012 R2, Antivirus de Microsoft Defender no entra en modo pasivo automáticamente al instalar un producto antivirus que no es de Microsoft. En esos casos, [establezca Antivirus de Microsoft Defender en modo pasivo](microsoft-defender-antivirus-on-windows-server.md) para evitar problemas causados por tener varios productos antivirus instalados en un servidor. Puede establecer el Antivirus de Microsoft Defender en modo pasivo mediante PowerShell, directiva de grupo o una clave del Registro. 
+(<a id="fn2">2</a>) En Windows Server 2019, Windows Server, versión 1803 o posterior, Windows Server 2016 o Windows Server 2012 R2, Antivirus de Microsoft Defender no entra en modo pasivo automáticamente al instalar un producto antivirus que no es de Microsoft. En esos casos, establezca Antivirus de Microsoft Defender en modo pasivo para evitar problemas causados por tener varios productos antivirus instalados en un servidor. Puede establecer el Antivirus de Microsoft Defender en modo pasivo mediante PowerShell, directiva de grupo o una clave del Registro. 
 
   Puede establecer el Antivirus de Microsoft Defender en modo pasivo estableciendo la siguiente clave del Registro:
 - Ruta de acceso: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -99,10 +99,10 @@ En la tabla siguiente se resume lo que sucede con Antivirus de Microsoft Defende
  > [!NOTE]
  > Para que el modo pasivo funcione en puntos de conexión que ejecutan Windows Server 2016 y Windows Server 2012 R2, estos extremos deben incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
 
-(<a id="fn3">3</a>) En Windows Server 2016 o Windows Server 2012 R2, si usa un producto antivirus que no es de Microsoft y ese extremo no está incorporado a Microsoft Defender para endpoint, deshabilite o desinstale [Antivirus de Microsoft Defender manualmente](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2012-r2-or-windows-server-2016)  para evitar problemas causados por tener varios productos antivirus instalados en un servidor.
+(<a id="fn3">3</a>) En Windows Server 2016 o Windows Server 2012 R2, si usa un producto antivirus que no es de Microsoft y ese extremo no está incorporado a Microsoft Defender para endpoint, deshabilite o desinstale Antivirus de Microsoft Defender  manualmente para evitar problemas causados por tener varios productos antivirus instalados en un servidor.
 
 > [!TIP]
-> Consulte [Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md) para obtener información sobre las principales diferencias y opciones de administración para Windows server. En Windows Server 2016, es posible que *vea* Antivirus de Windows Defender en lugar de *Antivirus de Microsoft Defender*.
+> En Windows Server 2016, es posible que *vea* Antivirus de Windows Defender en lugar de *Antivirus de Microsoft Defender*.
 
 > [!IMPORTANT]
 > Antivirus de Microsoft Defender solo está disponible en dispositivos que ejecutan Windows 10 y 11, Windows Server 2022, Windows Server 2019, Windows Server, versión 1803 o posterior, Windows Server 2016 y Windows Server 2012 R2.
@@ -165,7 +165,7 @@ Puede usar uno de varios métodos para confirmar el estado de Antivirus de Micro
 
 <br/><br/>
 
- | Method | Procedure | 
+ | Método | Procedure | 
  |---|---| 
  | Seguridad de Windows app |  1. En un Windows, abra la aplicación Seguridad de Windows usuario.<br/>2. Seleccione **Virus & protección contra amenazas**.<br/>3. **¿Quién está protegiendo?** seleccione **Administrar proveedores**.<br/>4. En la página **Proveedores de** seguridad, en **Antivirus,** debería ver Antivirus de Microsoft Defender **está activado**. | 
  | Administrador de tareas |  1. En un dispositivo Windows, abra la aplicación Administrador de tareas.<br/>2. Seleccione la **pestaña** Detalles.<br/>3. Busque **MsMpEng.exe** en la lista. | 
@@ -189,6 +189,5 @@ En la tabla de esta sección se describen varios estados que puede ver con Antiv
 ## <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [EDR en modo bloqueo](edr-in-block-mode.md)
 - [Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión](/microsoft-365/compliance/endpoint-dlp-learn-about)

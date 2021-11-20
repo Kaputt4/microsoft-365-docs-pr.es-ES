@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f5f5a506cb2c9a2cfd3d81fb0f3fca6bcf3710de
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a3d576b5b507ea7a3468a472c3690495114d2410
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756636"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122566"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -27,7 +27,7 @@ La Microsoft 365 de soluciones empresariales proporciona instrucciones para impl
 ## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams y servicios de productividad relacionados de Microsoft 365 para arquitectos de TI
 La arquitectura lógica de los servicios de productividad en Microsoft 365, una de las más destacadas gracias a Microsoft Teams.
 
-| Item | Descripción |
+| Item | Description |
 |:-----|:-----|
 |[![Teams póster de arquitectura lógica.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Actualizado en enero de 2021   |Microsoft proporciona un conjunto de servicios de productividad que funcionan en conjunto para proporcionar experiencias de colaboración con funcionalidades de gobierno, seguridad y cumplimiento. <br/> <br/>Esta serie de ilustraciones proporciona una vista de la arquitectura lógica de los servicios de productividad para arquitectos empresariales, que es una de las más destacadas gracias a Microsoft Teams.|
 
@@ -35,7 +35,7 @@ La arquitectura lógica de los servicios de productividad en Microsoft 365, una 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Grupos en Microsoft 365 para arquitectos de TI
 En esta ilustración se incluye información para los arquitectos de TI sobre Microsoft 365 grupos. Para obtener información sobre cómo configurar y administrar Microsoft 365 grupos y equipos de colaboración en su organización, vea Configurar la colaboración segura con [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) y ¿Qué es el gobierno de [colaboración?](/microsoft-365/solutions/collaboration-governance-overview).
 
-| Item | Descripción |
+| Item | Description |
 |:-----|:-----|
 |[![Imagen digital para la infografía de grupos.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Actualizado en mayo de 2020|Estas ilustraciones detallan los diferentes tipos de grupos, cómo se crean y administran, y algunas recomendaciones para el gobierno de estos.|
 
@@ -43,7 +43,7 @@ En esta ilustración se incluye información para los arquitectos de TI sobre Mi
 
 Microsoft proporciona herramientas para migrar los recursos compartidos de archivos de red local y los sitios de servidor de SharePoint a Microsoft 365 con énfasis en proteger y garantizar la seguridad del contenido durante la migración. Este conjunto de ilustraciones muestra los distintos métodos disponibles para mover el contenido a SharePoint, Teams y OneDrive y cómo fluyen los datos a través del proceso.
 
-| Item | Descripción |
+| Item | Description |
 |:-----|:-----|
 |[![Póster del modelo: Migrar a Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Actualizado en marzo de 2021 |Incluye: <ul><li> Migración de recurso compartido de archivos</li><li>Migración de SharePoint Server</li></ul> <p> Para obtener más información, vea [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
@@ -62,7 +62,7 @@ Este conjunto de ilustraciones usa uno de los sectores más regulados, los servi
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>Seguridad y protección de la información para organizaciones de varias regiones
 Seguridad y protección de la información para organizaciones multir regiones con un único Microsoft 365 empresarial
 
-| Item | Descripción |
+| Item | Description |
 |:-----|:-----|
 |[![Infografía de varias regiones.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Actualizado en marzo de 2020 |Usar un único espacio empresarial de Microsoft 365 para su organización global es la mejor opción y experiencia por muchas razones. Sin embargo, en muchos arquitectos luchan por cómo cumplir los objetivos de protección de la información y seguridad en distintas regiones. Este conjunto de temas contiene recomendaciones. |
 
@@ -71,26 +71,31 @@ Seguridad y protección de la información para organizaciones multir regiones c
 Dependiendo de su entorno, algunas herramientas son más adecuadas para determinadas arquitecturas.
 
 
-| Item | Descripción |
+| Item | Description |
 |:-----|:-----|
 |[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Actualizado en septiembre de 2021| El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
 
 
+<!--
+
 <a name="BKMK_O365IDP"></a>
-## <a name="identity-and-device-protection-for-microsoft-365"></a>Protección de identidades y dispositivos para Microsoft 365
+## Zero Trust identity and device protection for Microsoft 365
 
-Funcionalidades recomendadas para proteger identidades y dispositivos que tienen acceso a Microsoft 365, otros servicios SaaS y aplicaciones locales publicadas con Azure AD proxy de aplicación.
+Recommended Zero Trust capabilities for protecting identities and devices that access Microsoft 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
-| Item | Descripción |
+| Item | Description |
 |:-----|:-----|
-|[![Póster del modelo: Identidad y protección de dispositivos para Microsoft 365.](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Ver como un PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Actualizado en septiembre de 2020|Es importante usar niveles coherentes de protección en los datos, identidades y dispositivos. Este modelo muestra qué capacidades son comparables con más información sobre las capacidades para proteger identidades y dispositivos.  <br/> |
+|[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
+
+--> 
+
 
 <a name="BKMK_ediscovery"></a>
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery arquitectura en Microsoft 365
+##Advanced eDiscovery arquitectura en Microsoft 365
 
 Advanced eDiscovery flujo de trabajo y flujo de datos de un extremo a otro, incluidos Microsoft 365 entornos Multi-Geo.
 
-| Item | Descripción |
+| Item | Description |
 |:-----|:-----|
 |[![Póster del modelo: Advanced eDiscovery arquitectura en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Ver como una imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Descargar como pdf](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Descargar como un Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Flujo de trabajo completo en un único entorno</li><li>Flujo de trabajo completo en un entorno Microsoft 365 Multi-Geo </li><li>Flujo de datos completo compatible con el flujo de trabajo de EDRM</li> |
 
@@ -100,7 +105,7 @@ Advanced eDiscovery flujo de trabajo y flujo de datos de un extremo a otro, incl
 
 Microsoft es compatible con varias opciones cuando empieza a utilizar Teams en la nube de Microsoft. Este póster le ayudará a decidir qué solución de telefonía de Microsoft (sistema telefónico en la nube o Enterprise Voice para ubicaciones locales) es adecuada para los usuarios de su organización y cómo su organización puede conectarse a la red telefónica pública conmutada (RTC).
 
-| Item | Descripción |
+| Item | Description |
 |:-----|:-----|
 |[![Póster de Soluciones de telefonía de Microsoft.](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Actualizado en marzo de 2021 | Para obtener más información, vea [Plan your Teams voice solution](/microsoftteams/cloud-voice-landing-page).|
 

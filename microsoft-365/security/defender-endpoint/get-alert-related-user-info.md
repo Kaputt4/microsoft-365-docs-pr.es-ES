@@ -1,6 +1,6 @@
 ---
 title: Obtener información de usuario relacionada con alertas
-description: Obtenga información sobre cómo usar la API Obtener información de usuario relacionada con alertas para recuperar el usuario relacionado con una alerta específica en Microsoft Defender para endpoint.
+description: Obtenga información sobre cómo usar la API Obtener información del usuario relacionada con alertas para recuperar el usuario relacionado con una alerta específica en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api compatibles, get, alert, information, related, user
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 56630e211d5d445e675e4f9af655c062db4ad4b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ee59bb41e4c126d13db03fc570de9635c0fe7cf
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211314"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122479"
 ---
 # <a name="get-alert-related-user-information-api"></a>Obtener api de información de usuario relacionada con alertas
 
@@ -44,8 +44,8 @@ Recupera el usuario relacionado con una alerta específica.
 
 ## <a name="limitations"></a>Limitaciones
 
-1. Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
-2. Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
+- Puede consultar las alertas actualizadas por última vez de acuerdo con el período de retención configurado.
+- Las limitaciones de velocidad para esta API son 100 llamadas por minuto y 1500 llamadas por hora.
 
 ## <a name="permissions"></a>Permisos
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}/user
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -86,7 +86,7 @@ Si se realiza correctamente y alerta y existe un usuario: 200 Aceptar con el usu
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user

@@ -22,6 +22,8 @@
   items:
     - name: Introducción a la lista de inquilinos
       href: m365-lighthouse-tenant-list-overview.md
+    - name: Administrar la lista de inquilinos
+      href: m365-lighthouse-manage-tenant-list.md
 - name: Administrar usuarios dentro de los inquilinos
   items:
     - name: Introducción a la página de usuarios

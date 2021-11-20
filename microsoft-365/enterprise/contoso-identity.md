@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: 73b58f21ef24465332b902a36bba3d100d06d5b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aada3df25fefc99ddf080818ed5930dfb45ecf66
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202924"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122264"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
-Microsoft proporciona Identity as a Service (IDaaS) en sus ofertas en la nube a través Azure Active Directory (Azure AD). Para adoptar Microsoft 365 empresa, la solución IDaaS de Contoso tenía que usar su proveedor de identidades local e incluir la autenticación federada con sus proveedores de identidades de terceros de confianza existentes.
+Microsoft proporciona Identity as a Service (IDaaS) a través de sus ofertas en la nube mediante Azure Active Directory (Azure AD). Para adoptar Microsoft 365 empresa, la solución IDaaS de Contoso tenía que usar su proveedor de identidades local e incluir la autenticación federada con sus proveedores de identidades de terceros de confianza existentes.
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>El bosque de Servicios de dominio de Active Directory de Contoso
 
@@ -31,7 +31,7 @@ Contoso usa un único bosque de Servicios de dominio de Active Directory (AD DS)
 
 Este es el bosque contoso con dominios regionales para las diferentes partes del mundo que contienen concentradores regionales.
 
-![Bosque y dominios de Contoso en todo el mundo.](../media/contoso-identity/contoso-identity-fig1.png)
+:::image type="content" alt-text="Bosque y dominios de Contoso en todo el mundo." source="../media/contoso-identity/contoso-identity-fig1.png" lightbox="../media/contoso-identity/contoso-identity-fig1.png":::
  
 Contoso decidió usar las cuentas y grupos del bosque com contoso para la autenticación y autorización para sus \. Microsoft 365 cargas de trabajo y servicios.
 
@@ -54,34 +54,34 @@ Contoso decidió mantener esta infraestructura y dedicarse a la autenticación d
 
 Contoso quería usar su bosque de AD DS local para la autenticación para Microsoft 365 en la nube. Decidió usar la sincronización de hash de contraseña (PHS).
 
-PHS sincroniza el bosque de AD DS local con el inquilino de Azure AD de su suscripción de Microsoft 365 para empresas, copiando cuentas de usuario y grupo y una versión hash de contraseñas de cuentas de usuario.
+PHS sincroniza el bosque de AD DS local con el inquilino Azure AD de su suscripción de Microsoft 365 para empresas, copiando cuentas de usuario y grupo y una versión hash de contraseñas de cuentas de usuario.
 
-Para realizar la sincronización de directorios, Contoso implementó la herramienta Conectar Azure AD en un servidor de su centro de datos de París.
+Para realizar la sincronización de directorios, Contoso implementó la Azure AD Conectar en un servidor en su centro de datos de París.
 
-Este es el servidor que ejecuta Azure AD Conectar el bosque de Contoso AD DS en busca de cambios y, a continuación, sincroniza esos cambios con el inquilino de Azure AD.
+Este es el servidor que ejecuta Azure AD Conectar el bosque de Contoso AD DS en busca de cambios y, a continuación, sincroniza esos cambios con el Azure AD inquilino.
 
 ![La infraestructura de sincronización de directorios de PHS de Contoso.](../media/contoso-identity/contoso-identity-fig4.png)
  
-## <a name="conditional-access-policies-for-identity-and-device-access"></a>Directivas de Acceso Condicional a identidades y dispositivos
+## <a name="conditional-access-policies-for-zero-trust-identity-and-device-access"></a>Directivas de acceso condicional para la identidad de confianza cero y el acceso a dispositivos
 
 Contoso creó un conjunto de [directivas de Acceso Condicional](../security/office-365-security/identity-access-policies.md) de Azure AD e Intune de tres niveles de protección:
 
-- *Las* protecciones de línea base se aplican a todas las cuentas de usuario.
-- *Las* protecciones confidenciales se aplican al personal directivo y ejecutivo.
-- *Las protecciones altamente* reguladas se aplican a usuarios específicos de los departamentos de finanzas, legales e investigación que tienen acceso a datos altamente regulados.
+- *Las protecciones* de punto de inicio se aplican a todas las cuentas de usuario.
+- *Enterprise* protecciones se aplican al personal directivo y ejecutivo.
+- *Las protecciones* de seguridad especializadas se aplican a usuarios específicos de los departamentos de finanzas, legales e investigación que tienen acceso a datos altamente regulados.
 
 Este es el conjunto resultante de directivas de identidad y dispositivo de acceso condicional de Contoso.
 
-![Directivas de identidad y dispositivo de acceso condicional de Contoso.](../media/contoso-identity/contoso-identity-fig5.png)
+:::image type="content" alt-text="Directivas de identidad y dispositivo de acceso condicional de Contoso." source="../media/contoso-identity/contoso-identity-fig5.png" lightbox="../media/contoso-identity/contoso-identity-fig5.png":::
  
 ## <a name="next-step"></a>Paso siguiente
 
 Obtenga información sobre cómo Contoso usa su Microsoft Endpoint Configuration Manager para [implementar y](contoso-win10.md) mantener las Windows 10 Enterprise en toda su organización.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Plan de identidad para Microsoft 365](identity-roadmap-microsoft-365.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 637c56e5c02283e4efee5a456c21f4a74fcda40d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f0f15f8a3cf7f40bd1fd2e64d4d37466cc12d67e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178292"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122095"
 ---
 # <a name="software-resource-type"></a>Tipo de recurso software
 
@@ -47,13 +47,13 @@ ms.locfileid: "60178292"
 
 ****
 
-|Método|Tipo de valor devuelto|Descripción|
+|Método|Tipo de valor devuelto|Description|
 |---|---|---|
-|[Enumerar software](get-software.md)|Colección de software|Enumerar el inventario de software de la organización.|
-|[Obtener software por identificación](get-software-by-id.md)|Software|Obtener un software específico por su identificador de software.|
-|[Enumerar distribución de versión de software](get-software-ver-distribution.md)|Colección de distribución|Enumerar la distribución de la versión de software por identificador de software.|
-|[Enumerar máquinas por software](get-machines-by-software.md)|Colección MachineRef|Recupera una lista de dispositivos asociados con el identificador de software.|
-|[Enumerar vulnerabilidades por software](get-vuln-by-software.md)|[Colección Vulnerability](vulnerability.md)|Recupera una lista de vulnerabilidades asociadas con el identificador de software.|
+|[Enumerar software](get-software.md)|Colección de software|Enumerar el inventario de software de la organización|
+|[Obtener software por identificación](get-software-by-id.md)|Software|Obtener un software específico por su identificador de software|
+|[Enumerar distribución de versión de software](get-software-ver-distribution.md)|Colección de distribución|Enumerar la distribución de versiones de software por identificador de software|
+|[Enumerar máquinas por software](get-machines-by-software.md)|Colección MachineRef|Recuperar una lista de dispositivos asociados con el identificador de software|
+|[Enumerar vulnerabilidades por software](get-vuln-by-software.md)|[Colección Vulnerability](vulnerability.md)|Recuperar una lista de vulnerabilidades asociadas con el identificador de software|
 |[Obtener los kB que faltan](get-missing-kbs-software.md)|Colección KB|Obtener una lista de KBs que faltan asociados con el identificador de software|
 |
 
@@ -67,7 +67,7 @@ ms.locfileid: "60178292"
 |---|---|---|
 |id|Cadena|Id. de software|
 |Nombre|Cadena|Nombre del software|
-|Proveedor|Cadena|Nombre del proveedor de software|
+|Proveedor|String|Nombre del editor de software|
 |Debilidades|Long|Número de vulnerabilidades detectadas|
 |publicExploit|Booleano|Existe vulnerabilidad pública para algunas de las vulnerabilidades|
 |activeAlert|Booleano|La alerta activa está asociada con este software|

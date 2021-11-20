@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e801cf81dff4b05995d5c9a47508fc16dcf8b524
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2348197f42e12e5fca64bee8beb881a9fdba909e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110768"
+ms.locfileid: "61122554"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -155,11 +155,12 @@ Para recibir mejoras y correcciones periódicas del producto para el componente 
 3. Seleccione **Descargar paquete de instalación** y guarde el .msi archivo. Puede ejecutar el paquete msi a través del asistente de instalación o seguir los pasos de la línea de comandos de Instalar Microsoft Defender para endpoint [mediante la línea de comandos](#install-microsoft-defender-for-endpoint-using-command-line).
 
    > [!NOTE]
-   > Antivirus de Microsoft Defender se instalará y estará activo a menos que se establezca en modo pasivo. Para obtener más información, vea [Need to set Antivirus de Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+   > Antivirus de Microsoft Defender se instalará y estará activo a menos que se establezca en modo pasivo. 
+ 
 
 4. Seleccione **Descargar paquete de incorporación** y guarde el .zip archivo.
 
-5. Instale el paquete de instalación con cualquiera de las opciones para instalar Antivirus de Microsoft Defender. (Vea [Antivirus de Microsoft Defender en Windows server](microsoft-defender-antivirus-on-windows-server.md).)
+5. Instale el paquete de instalación con cualquiera de las opciones para instalar Antivirus de Microsoft Defender. 
 
 6. Siga los pasos proporcionados en la [sección pasos de incorporación.](#onboarding-steps)
 
@@ -173,13 +174,17 @@ Use el paquete de instalación del paso anterior para instalar Microsoft Defende
 
 Ejecute el siguiente comando para instalar Microsoft Defender para endpoint:
 
-`msiexec /i md4ws.msi /quiet`
+```console
+Msiexec /i md4ws.msi /quiet
+```
 
 Para desinstalar, asegúrese de que la máquina está fuera deborde primero con el script de offboarding adecuado. A continuación, use Programas y características del Panel de control \> \> para realizar la desinstalación.
 
 Como alternativa, ejecute el siguiente comando de desinstalación para desinstalar Microsoft Defender para endpoint:
 
-`msiexec /x md4ws.msi /quiet`
+```console
+Msiexec /x md4ws.msi /quiet
+```
 
 Debe usar el mismo paquete que usó para la instalación para que el comando anterior se realizara correctamente.
 
@@ -187,8 +192,6 @@ El `/quiet` modificador suprime todas las notificaciones.
 
 > [!NOTE]
 > Antivirus de Microsoft Defender no pasa automáticamente al modo pasivo. Puede optar por establecer Antivirus de Microsoft Defender para que se ejecute en modo pasivo si está ejecutando una solución antivirus o antimalware que no sea de Microsoft. Para las instalaciones de línea de comandos, el opcional establece inmediatamente `FORCEPASSIVEMODE=1` el componente Antivirus de Microsoft Defender en modo pasivo para evitar interferencias. A continuación, para asegurarse de que Defender Antivirus permanece en modo pasivo después de la incorporación para admitir funcionalidades como EDR Block, establezca la clave del Registro "ForceDefenderPassiveMode".
->
-> Para obtener más información, vea [Need to set Antivirus de Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 >
 > - El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Microsoft Endpoint Manager incluye actualmente un script. Para obtener más información sobre cómo implementar scripts en Configuration Manager, vea [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 > - Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo o Microsoft Endpoint Configuration Manager.
@@ -232,7 +235,7 @@ El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Mi
         ```
 
         > [!NOTE]
-        >
+
         > - La integración entre Microsoft Defender para servidores y Microsoft Defender para endpoint se ha ampliado para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
         > - La supervisión de extremos de servidor que utiliza esta integración se ha deshabilitado para Office 365 GCC clientes.
 
@@ -265,7 +268,9 @@ Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de dete
 
     `sc.exe query Windefend`
 
-    Si el resultado es , tendrás que instalar `The specified service doesn't exist as an installed service` Antivirus de Microsoft Defender. Para obtener más información, [vea Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+    Si el resultado es "El servicio especificado no existe como servicio instalado", deberá instalar Antivirus de Microsoft Defender. 
+
 
     Para obtener información sobre cómo usar la directiva de grupo para configurar y administrar Antivirus de Microsoft Defender en los servidores de Windows, vea [Use Group Policy settings to configure and manage Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 
@@ -279,7 +284,7 @@ Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de dete
 
 Siga los pasos descritos en Ejecutar una prueba de detección en un dispositivo recién incorporado para comprobar que el servidor está informando [a](run-detection-test.md) Defender para el servicio de extremo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de incorporar dispositivos correctamente al servicio, deberá configurar los componentes individuales de Microsoft Defender para endpoint. Siga el [orden de adopción](prepare-deployment.md#adoption-order) para guiarse en la habilitación de los distintos componentes.
 

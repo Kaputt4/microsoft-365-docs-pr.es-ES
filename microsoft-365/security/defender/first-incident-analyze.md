@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d539f34f72b5fe6c26325646452a15b5df76a5a7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8e3d80cf1446541687ee2da1795b37ecf5d71865
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199554"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121655"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 A medida que pasa algún tiempo estableciendo, implementando y manteniendo medidas de seguridad de acuerdo con los estándares de la organización, puede configurar soluciones de seguridad para ayudarle a identificar rápidamente los riesgos y amenazas de seguridad. Microsoft 365 Defender permite detectar, realizar una triaje e investigar incidentes a través de su experiencia de un solo panel de cristal, donde puede encontrar la información que necesita para tomar decisiones a tiempo.
 
@@ -44,11 +44,12 @@ Una vez que se detecte un incidente de seguridad, Microsoft 365 Defender los det
 
 Microsoft 365 Defender recibe alertas y eventos de varias plataformas de seguridad de Microsoft como orígenes de detección para crear una imagen holística y un contexto de actividad malintencionada. Estos son los posibles orígenes de detección:
 
-- [Microsoft Defender para endpoint](../defender-endpoint/microsoft-defender-endpoint.md) es una solución detección y respuesta de puntos de conexión (EDR) que usa antivirus de Microsoft Defender, así como protección contra amenazas avanzada habilitada en la nube con Microsoft Security Graph. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta. Protege los puntos de conexión de ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza los incidentes de seguridad y mejora la posición de seguridad.
+- [Microsoft Defender para endpoint](../defender-endpoint/microsoft-defender-endpoint.md) es una solución detección y respuesta de puntos de conexión (EDR) que usa el antivirus de Microsoft Defender y la protección contra amenazas avanzada habilitada en la nube con Microsoft Security Graph. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta. Protege los puntos de conexión de ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza los incidentes de seguridad y mejora la posición de seguridad.
 - [Microsoft Defender for Identity](/defender-for-identity/what-is) es una solución de seguridad basada en la nube que usa las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización.
-- [Microsoft Cloud App Security](/cloud-app-security/) actúa como un guardián para el acceso de agente en tiempo real entre los usuarios de la empresa y los recursos en la nube que usan, independientemente del dispositivo que estén usando.
+- [Microsoft Defender para Aplicaciones](/cloud-app-security/) en la nube actúa como un guardián para el acceso de agente en tiempo real entre los usuarios de la empresa y los recursos en la nube que usan, independientemente del dispositivo que usen.
 - [Microsoft Defender para Office 365](../office-365-security/overview.md) protege su organización contra amenazas malintencionadas en mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración.
-- [Azure Security Center](/azure/security-center/security-center-introduction) es un sistema de administración de seguridad de infraestructura unificado que refuerza la posición de seguridad de los centros de datos y proporciona protección contra amenazas avanzada en las cargas de trabajo híbridas en la nube, así como en las instalaciones.
+- [Azure Security Center](/azure/security-center/security-center-introduction) es un sistema de administración de seguridad de infraestructura unificada que refuerza la posición de seguridad de los centros de datos y proporciona protección contra amenazas avanzada en las cargas de trabajo híbridas en la nube y en las instalaciones.
+
 
 En Microsoft 365 Defender, los incidentes se identifican mediante la correlación de [alertas](incidents-overview.md) de estos diferentes orígenes de detección. En lugar de gastar recursos en cadenas o distinguir varias alertas en sus respectivos incidentes, puede empezar con la cola de incidentes en Microsoft 365 Defender inmediato. Esto le permite realizar triajes de incidentes de manera eficaz en puntos de conexión, identidades, correo electrónico y aplicaciones, y reducir los daños causados por un ataque.
 
@@ -71,7 +72,7 @@ A continuación se muestra un solo enfoque para el triage:
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="Ejemplo de la cola de incidentes.":::
 
-    Un ejemplo de cómo puede realizar una triaje para este conjunto de incidentes es priorizar los incidentes que afectaron a más usuarios y dispositivos. En este ejemplo, puede priorizar el identificador de incidente 6769 porque afecta al mayor número de entidades: 7 dispositivos, 6 usuarios y 2 buzones. Además, el incidente parece contener alertas de Microsoft Defender for Identity que indican una alerta basada en identidad y un posible robo de credenciales.
+    Un ejemplo de cómo puede realizar una triaje para este conjunto de incidentes es priorizar los incidentes que afectaron a más usuarios y dispositivos. En este ejemplo, puede priorizar el identificador de incidente 6769 porque afecta al mayor número de entidades: 7 dispositivos, 6 usuarios y 2 buzones. Además, el incidente parece contener alertas de Microsoft Defender for Identity, que indican una alerta basada en identidad y un posible robo de credenciales.
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Ejemplo de un incidente de alto impacto.":::
 
@@ -101,17 +102,17 @@ Hay varias maneras de leer y analizar datos mediante Microsoft 365 Defender pero
 
 Aquí le mostramos un ejemplo:
 
-1. Una vez determinada la prioridad del triage, un analista comienza un análisis en profundidad seleccionando el nombre del incidente. En esta página se muestra el **resumen de incidentes** donde se muestran los datos en las pestañas para ayudar con el análisis. En la **pestaña** Alertas se muestra el tipo de alertas. Los analistas pueden hacer clic en cada alerta para profundizar en el origen de detección correspondiente.
+1. Una vez determinada la prioridad del triage, un analista comienza un análisis en profundidad seleccionando el nombre del incidente. En esta página se muestra el **resumen de incidentes** donde se muestran los datos en las pestañas para ayudar con el análisis. En la **pestaña** Alertas, se muestra el tipo de alertas. Los analistas pueden hacer clic en cada alerta para profundizar en el origen de detección correspondiente.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Ejemplo de la pestaña Resumen de un incidente.":::
 
     Para obtener una guía rápida sobre qué dominio cubre cada origen de detección, revise la [sección Detectar](#detection-by-microsoft-365-defender) de este artículo.
 
-2. Desde la **pestaña Alertas,** un analista puede pivotar al origen de detección para llevar a cabo una investigación y un análisis más exhaustivos. Por ejemplo, al seleccionar Detección de malware Microsoft Cloud App Security como origen de detección, el analista se lleva a la página de alerta correspondiente.
+2. Desde la **pestaña Alertas,** un analista puede pivotar al origen de detección para llevar a cabo una investigación y un análisis más exhaustivos. Por ejemplo, al seleccionar Detección de malware con Microsoft Defender para aplicaciones en la nube como origen de detección, el analista se lleva a la página de alerta correspondiente.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Ejemplo de selección de una alerta de un incidente.":::
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Ejemplo de una página correspondiente en Microsoft Cloud App Security.":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Ejemplo de una página correspondiente en Microsoft Defender para aplicaciones en la nube.":::
 
 3. Para investigar nuestro ejemplo más adelante, desplácese hasta la parte inferior de la página para ver los **usuarios afectados**. Para ver la actividad y el contexto que rodea la detección de malware, seleccione La página de usuario de Annette Hill .
 
@@ -123,7 +124,7 @@ Aquí le mostramos un ejemplo:
 
 5. Cada alerta se puede seleccionar para obtener más información sobre la actividad. Por ejemplo, al seleccionar Actividad desde una alerta de **dirección IP de Tor,** se llega a la propia página de esa alerta. Annette es administradora de Office 365, lo que significa que tiene privilegios elevados y el incidente de origen podría haber llevado al acceso a información confidencial.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Ejemplo de detalles de alertas para Microsoft Cloud App Security .":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Ejemplo de detalles de alertas para Microsoft Defender para aplicaciones en la nube.":::
 
 6. Al seleccionar otras alertas, un analista puede obtener una imagen completa del ataque.
 
@@ -133,7 +134,7 @@ Aquí le mostramos un ejemplo:
 
 Obtenga información sobre [cómo corregir incidentes](first-incident-remediate.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96f5f043ba49e01bd03f23c8eb430e56f88a5856
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0d7649c4e39651cec8cdf293177abf66709964e
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197154"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121380"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 
@@ -30,7 +30,7 @@ ms.locfileid: "60197154"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "60197154"
 |---|---|---|
 |[Obtener alerta](get-alert-info-by-id.md)|[Alerta](alerts.md)|Obtener un único [objeto de](alerts.md) alerta.|
 |[Listar alertas](get-alerts.md)|[Colección Alert](alerts.md)|Enumerar [la colección de](alerts.md) alertas.|
-|[Actualizar alerta](update-alert.md)|[Alerta](alerts.md)|Actualizar alerta [específica](alerts.md).|
+|[Update alert](update-alert.md)|[Alerta](alerts.md)|Actualizar alerta [específica](alerts.md).|
 |[Alertas de actualización por lotes](batch-update-alerts.md)||Actualizar un lote de [alertas](alerts.md).|
 |[Crear alerta](create-alert-by-reference.md)|[Alerta](alerts.md)|Crear una alerta basada en los datos de eventos obtenidos de [la búsqueda avanzada](run-advanced-query-api.md).|
 |[Enumerar dominios relacionados](get-alert-related-domain-info.md)|Colección domain|Enumerar las direcciones URL asociadas con la alerta.|
@@ -64,7 +64,7 @@ ms.locfileid: "60197154"
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
-|id|Cadena|Id. de alerta.|
+|id|String|Id. de alerta.|
 |title|String|Título de la alerta.|
 |description|String|Descripción de la alerta.|
 |alertCreationTime|DateTimeOffset que admite valores NULL|La fecha y hora (en UTC) se creó la alerta.|
@@ -84,11 +84,11 @@ ms.locfileid: "60197154"
 |classification|Enumeración que admite valores null|Especificación de la alerta. Los valores posibles son: 'Unknown', 'FalsePositive', 'TruePositive'.|
 |determinación|Enumeración que admite valores null|Especifica la determinación de la alerta. Los valores posibles son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
 |categoría|Cadena|Categoría de la alerta.|
-|detectionSource|Cadena|Origen de detección.|
+|detectionSource|String|Origen de detección.|
 |threatFamilyName|Cadena|Familia de amenazas.|
 |threatName|Cadena|Nombre de la amenaza.|
-|machineId|Cadena|Id. de una [entidad de](machine.md) máquina asociada a la alerta.|
-|computerDnsName|Cadena|[nombre](machine.md) completo de la máquina.|
+|machineId|String|Id. de una [entidad de](machine.md) máquina asociada a la alerta.|
+|computerDnsName|String|[nombre](machine.md) completo de la máquina.|
 |aadTenantId|Cadena|El Azure Active Directory de usuario.|
 |detectorId|Cadena|El identificador del detector que desencadenó la alerta.|
 |comments|Lista de comentarios de alerta|El objeto Alert Comment contiene: cadena de comentario, createdBy string y createTime date time.|

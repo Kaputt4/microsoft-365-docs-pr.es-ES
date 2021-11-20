@@ -17,24 +17,25 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6003488c0244a33a9fa632d081922ebf85dc85c9
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 52579cbe5ff3a40e402a116368b607f2381062ce
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914397"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61122122"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Paso 5. Desarrollar y probar casos de uso
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Los métodos recomendados para implementar Microsoft 365 Defender en el Centro de operaciones de seguridad (SOC) dependerán del conjunto actual de herramientas, procesos y conjuntos de aptitudes del equipo soc. Mantener la higiene cibernética en todas las plataformas puede ser difícil debido a la gran cantidad de datos procedentes de decenas de orígenes de seguridad, si no cientos. 
 
@@ -46,7 +47,7 @@ El SOC debe definir un estándar de alto nivel y un proceso para desarrollar cas
 
 Las actividades de supervisión de SOC relacionadas con el desarrollo de casos de uso incluyen: 
 
-- Requirements
+- Requisitos
 - Necesidades de personal o formación
 - Licencias de software
 - Contratación de proveedores
@@ -97,14 +98,14 @@ Por ejemplo, en el ejemplo de escenario anti phishing, los equipos soc podrían 
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
 | Equipo de inteligencia y análisis de amenazas | Los orígenes de datos están alimentando correctamente los motores de inteligencia de amenazas. | Analista/ingeniero de inteligencia de amenazas | Requisitos de fuente de datos establecidos, desencadenadores de inteligencia de amenazas de orígenes aprobados | Microsoft Defender para identity, Microsoft Defender para endpoint | El equipo de inteligencia de amenazas no usaba script de automatización para vincular Microsoft 365 Defender API con motores intel de amenazas | Agregar Microsoft 365 Defender como orígenes de datos a motores de amenazas <BR> <BR> Actualizar la libreta de casos de uso | N |
 | Equipo de supervisión | Los orígenes de datos están alimentando correctamente los paneles de supervisión | Alertas de supervisión y supervisión de SO & C de nivel 1,2 | Flujo de trabajo para informar sobre la puntuación & seguridad del Centro de cumplimiento | [Alertas en el Centro de & seguridad](/microsoft-365/security/office-365-security/alerts)  <br><br> Supervisión de puntuación segura  | Ningún mecanismo para que los analistas de SOC informen sobre la detección correcta de nuevas variantes de suplantación de identidad (phishing) para mejorar la puntuación segura <br><br> [Informes en el Centro de & seguridad](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Agregar un proceso para realizar un seguimiento de la mejora de puntuación segura en los flujos de trabajo de informes | N | 
-| Equipo de Ingeniería y SecOps | Las actualizaciones de control de cambios se realizan en los runbooks de equipo soc | Ingeniero soc de nivel 2 | Procedimiento de notificación de control de cambios para runbooks de equipo SOC | Cambios aprobados en dispositivos de seguridad | Los cambios en Microsoft 365 Defender conectividad a la tecnología de seguridad SOC requieren aprobación | Agregar Microsoft Cloud App Security, Defender for Identity, Defender for Endpoint, Security & Compliance Center a runbooks soc | Y |
+| Equipo de Ingeniería y SecOps | Las actualizaciones de control de cambios se realizan en los runbooks de equipo soc | Ingeniero soc de nivel 2 | Procedimiento de notificación de control de cambios para runbooks de equipo SOC | Cambios aprobados en dispositivos de seguridad | Los cambios en Microsoft 365 Defender conectividad a la tecnología de seguridad SOC requieren aprobación | Agregar Microsoft Defender para aplicaciones en la nube, Defender for Identity, Defender para endpoint, Security & Compliance Center a runbooks soc | v |
 |||||||||
 
 Además, los equipos SOC podrían haber realizado los descubrimientos descritos en la tabla siguiente con respecto al escenario Administración de amenazas y vulnerabilidades descrito anteriormente:
 
 | Equipo de SOC | Requisito | Personas para cumplir requisitos | Proceso para cumplir requisitos | Tecnología relevante | Gap identified | Usar registro de cambio de casos | Exempt (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| Supervisión de SOC | Todos los activos conectados a redes aprobadas se identifican y clasifican | Supervisión de SOC, propietarios de BU, propietarios de aplicaciones, propietarios de activos de IT, etc. | Sistema de administración de activos centralizado para detectar y enumerar la categoría de activos y los atributos en función del riesgo. | ServiceNow u otros activos. <br><br>[Microsoft 365 Inventario de dispositivos](/security/defender-endpoint/device-discovery) | Solo se ha detectado el 70 % de los activos. Microsoft 365 Defender de corrección solo efectivo para activos conocidos | Servicios de administración del ciclo de vida de activos maduros para Microsoft 365 Defender una cobertura del 100 % | N |
+| Supervisión de SOC | Todos los activos conectados a redes aprobadas se identifican y clasifican | Supervisión de SOC, propietarios de BU, propietarios de aplicaciones, propietarios de activos de IT, etc. | Sistema de administración de activos centralizado para detectar y enumerar la categoría de activos y los atributos en función del riesgo. | ServiceNow u otros activos. <br><br>[Microsoft 365 inventario de dispositivos](/security/defender-endpoint/device-discovery) | Solo se ha detectado el 70 % de los activos. Microsoft 365 Defender de corrección solo efectivo para activos conocidos | Servicios de administración del ciclo de vida de activos maduros para Microsoft 365 Defender una cobertura del 100 % | N |
 | Ingeniería & SecOps Teams | El alto impacto y las vulnerabilidades críticas en los activos se corrigen según la directiva | Ingenieros de SecOps, analistas de SOC: Vulnerabilidad & cumplimiento, Ingeniería de seguridad | Proceso definido para categorizar vulnerabilidades críticas y de alto riesgo | [Paneles de administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender for Endpoint ha identificado dispositivos de alto impacto y alerta alta sin plan de corrección ni implementación de la actividad recomendada por Microsoft | Agregar un flujo de trabajo para notificar a los propietarios de activos cuando se requiera una actividad de corrección en un plazo de 30 días por directiva; Implementar un sistema de vales para notificar a los propietarios de activos los pasos de corrección. | N |
 | Supervisión Teams | El estado de amenaza y vulnerabilidad se notifica a través del portal de intranet de la empresa | Analista de SOC de nivel 2 | Informes generados automáticamente desde Microsoft 365 Defender que muestran el progreso de corrección de los activos | [Alertas en el Centro de & seguridad](/microsoft-365/security/office-365-security/alerts) <br><br> Supervisión de puntuación segura | No se comunican vistas ni informes de panel a los propietarios de activos sobre la amenaza y el estado de vulnerabilidad de los activos. | Cree un script de automatización para rellenar el estado de corrección de vulnerabilidad de activos críticos y de alto riesgo para la organización. | N |
 |||||||||
@@ -150,4 +151,3 @@ Después de ejecutar la fase de preparación, las organizaciones deben invocar l
 ## <a name="next-step"></a>Paso siguiente
 
 [Paso 6. Identificar tareas de mantenimiento soc](integrate-microsoft-365-defender-secops-tasks.md)
-

@@ -17,17 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 47e86a19f637278a9e9d82fd0b8fd260a77af6cd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7053616ebee7a0c8a63394e2db98704910d1ff10
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702744"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121452"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Paso 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
 
@@ -65,7 +66,7 @@ Los componentes de Microsoft 365 Defender son:
 
  - **Microsoft Defender para Office 365** es un servicio de filtrado de correo electrónico basado en la nube que ayuda a proteger a las organizaciones contra malware y virus desconocidos al proporcionar una protección sólida de día cero e incluye características para proteger a las organizaciones de vínculos dañinos en tiempo real. También ofrece una lista completa de investigación y búsqueda, respuesta y corrección, sensibilización y formación, y características de postura segura.
 
-- **Microsoft Cloud App Security** es un agente de seguridad de Acceso a la nube (CASB) que admite varios modos de implementación, como la recopilación de registros, los conectores de API y el proxy inverso. Proporciona una amplia visibilidad, control sobre los viajes de datos y análisis sofisticados para identificar y combatir ciberamenazas en todos los servicios en la nube de Microsoft y de terceros.
+- **Microsoft Defender para Aplicaciones en** la nube es un agente de seguridad de acceso a la nube (CASB) que admite varios modos de implementación, como la recopilación de registros, los conectores de API y el proxy inverso. Proporciona una amplia visibilidad, control sobre los viajes de datos y análisis sofisticados para identificar y combatir ciberamenazas en todos los servicios en la nube de Microsoft y de terceros.
 
 Dado que Microsoft 365 Defender componentes y tecnologías abarcan varias funciones, el equipo de SOC tendrá que determinar qué roles y responsabilidades son más adecuados para administrar cada componente de Microsoft 365 Defender y alinearse con la función de servicio.
 
@@ -74,9 +75,8 @@ Para integrar las capacidades de Microsoft 365 Defender, deberá refinar los ser
 - [¿Qué es Microsoft Defender para punto de conexión?](/defender-endpoint/microsoft-defender-endpoint)
 - [¿Qué es Microsoft Defender for Identity?](/defender-for-identity/what-is)
 - [¿Qué es Defender para Office 365?](/office-365-security/defender-for-office-365)
-- [¿Qué es Microsoft Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
+- [¿Qué es Microsoft Defender para aplicaciones en la nube?](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="next-step"></a>Paso siguiente
 
 [Paso 4. Definir Microsoft 365 Defender funciones, responsabilidades y supervisión](integrate-microsoft-365-defender-secops-roles.md)
-

@@ -19,12 +19,12 @@ ms.custom:
 description: Obtenga información sobre Microsoft 365 usa el registro TXT del Marco de directivas de remitente (SPF) en DNS para garantizar que los sistemas de correo electrónico de destino confíen en los mensajes enviados desde el dominio personalizado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad620c1c1c08cbe92e6ad6b98c6554c4c5cd93b1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 76bc783dc624487b438ca41dcd9fc38bd9bce911
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190334"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121834"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
@@ -251,7 +251,7 @@ Al incluir dominios de terceros en el registro TXT SPF, debe confirmar con el te
 ## <a name="how-to-view-your-current-spf-txt-record-and-determine-the-number-of-lookups-that-it-requires"></a>Cómo ver el registro TXT SPF actual y determinar el número de búsquedas que requiere
 <a name="SPFTroubleshoot"> </a>
 
-Puede usar nslookup para ver los registros DNS, incluido el registro TXT SPF. O bien, si lo prefiere, hay varias herramientas disponibles, gratuitas y en línea que puede usar para ver el contenido del registro TXT SPF. Puede determinar cuántas búsquedas DNS requiere el registro al observar el registro TXT SPF y seguir la cadena de instrucciones Include y redireccionamientos. Algunas herramientas en línea incluso harán un recuento y le mostrarán estas búsquedas. Realizar un seguimiento de este número le ayudará a evitar que los mensajes enviados desde su organización desencadenen un error permanente, denominado un permerror, desde el servidor de recepción.
+Puede usar nslookup para ver los registros DNS, incluido el registro TXT SPF. Hay varias herramientas en línea gratuitas disponibles que puede usar para ver el contenido del registro TXT de SPF. Puede determinar cuántas búsquedas DNS requiere el registro al observar el registro TXT SPF y seguir la cadena de instrucciones Include y redireccionamientos. Algunas herramientas en línea incluso harán un recuento y le mostrarán estas búsquedas. Realizar un seguimiento de este número ayudará a evitar que los mensajes enviados desde su organización desencadene un error permanente, denominado error permanente, desde el servidor de recepción.
 
 ## <a name="for-more-information"></a>Más información
 <a name="SPFTroubleshoot"> </a>

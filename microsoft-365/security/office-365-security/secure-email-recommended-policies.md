@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: de1a66fcf2b057e2f1254d64286b521928d2c560
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aebb528dcbd438387cdfff59011711bf8ae40401
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59211587"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121162"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -33,9 +33,9 @@ ms.locfileid: "59211587"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-En este artículo se describe cómo implementar las directivas de identidad y acceso a dispositivos recomendadas para proteger los clientes de correo electrónico y correo electrónico de la organización que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las directivas comunes de identidad y acceso a [dispositivos](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
+En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos y identidades de confianza cero para proteger los clientes de correo electrónico y correo electrónico de la organización que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las directivas comunes de identidad y acceso a [dispositivos](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
 
-Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección que se pueden aplicar en función de la granularidad de sus necesidades: **línea** **base,** confidencial y **altamente regulado.** Puede aprender más sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que hacen referencia estas recomendaciones, en la [introducción a las directivas y configuraciones de seguridad recomendadas](microsoft-365-policies-configurations.md).
+Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección que se pueden aplicar en función de la granularidad de sus **necesidades:** punto de **partida,** empresa y **seguridad especializada.** Puede aprender más sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que hacen referencia estas recomendaciones, en la [introducción a las directivas y configuraciones de seguridad recomendadas](microsoft-365-policies-configurations.md).
 
 Estas recomendaciones requieren que los usuarios usen clientes de correo electrónico modernos, incluidos Outlook para iOS y Android en dispositivos móviles. Outlook para iOS y Android proporcionan compatibilidad con las mejores características de Office 365. Estas aplicaciones Outlook móviles también están diseñadas con capacidades de seguridad que admiten el uso móvil y funcionan junto con otras capacidades de seguridad en la nube de Microsoft. Para obtener más información, consulta Outlook preguntas más frecuentes [sobre iOS y Android.](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)
 
@@ -43,7 +43,7 @@ Estas recomendaciones requieren que los usuarios usen clientes de correo electr�
 
 Para proteger el correo electrónico, en el siguiente diagrama se muestran las directivas que se actualizarán a partir de las directivas comunes de acceso a dispositivos y identidades.
 
-[![Resumen de las actualizaciones de directivas para proteger el acceso a Teams y sus servicios dependientes.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Resumen de las actualizaciones de directivas para proteger el acceso a Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
 Tenga en cuenta la adición de una nueva directiva para Exchange Online bloquear los clientes de ActiveSync. Esto fuerza el uso de Outlook móvil.
 
@@ -51,28 +51,27 @@ Si ha incluido Exchange Online y Outlook en el ámbito de las directivas al conf
 
 |Nivel de protección|Directivas|Más información|
 |---|---|---|
-|**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
+|**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
 ||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
 ||[Aplicar directivas de protección de datos de APP](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrate de Outlook está incluido en la lista de aplicaciones. Asegúrese de actualizar la directiva para cada plataforma (iOS, Android, Windows)|
 ||[Requerir aplicaciones aprobadas y protección de APLICACIONES](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir Exchange Online en la lista de aplicaciones en la nube|
-||[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir Exchange Online en la lista de aplicaciones en la nube|
 ||[Bloquear clientes de ActiveSync](#block-activesync-clients)|Agregar esta nueva directiva|
-|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo,* *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
+|**Empresarial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo,* *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
 ||[Requerir equipos y *dispositivos* móviles compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluir Exchange Online en la lista de aplicaciones en la nube|
-|**Extremadamente regulado**|[*Requerir* siempre MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
+|**Seguridad especializada**|[*Requerir* siempre MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
 |
 
 ## <a name="block-activesync-clients"></a>Bloquear clientes de ActiveSync
 
 Esta directiva impide que los clientes de ActiveSync omitan otras directivas de acceso condicional. La configuración de directiva solo se aplica a los clientes de ActiveSync. Al seleccionar Requerir **[directiva de protección de aplicaciones,](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** esta directiva bloquea los clientes de ActiveSync. Los detalles sobre cómo crear esta directiva se pueden encontrar en Requerir directiva de protección de aplicaciones para el acceso a aplicaciones en la nube [con acceso condicional.](/azure/active-directory/conditional-access/app-protection-based-conditional-access)
 
-- Siga el "Paso 2: Configurar una directiva de acceso condicional de Azure AD para Exchange Online con ActiveSync (EAS)" en el escenario [1:](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)las aplicaciones de Office 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones, lo que impide que los clientes que aprovechan la autenticación básica se conecten Exchange ActiveSync Exchange Online.
+- Siga el "Paso 2: Configurar una directiva de acceso condicional de Azure AD para Exchange Online con ActiveSync (EAS)" en el escenario [1:](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)las aplicaciones de Office 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones Exchange ActiveSync, lo que impide que los clientes que aprovechan la autenticación básica se conecten a Exchange Online.
 
 También puede usar directivas de autenticación para [deshabilitar la autenticación básica,](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)lo que fuerza a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
 
 ## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limitar el acceso a Exchange Online desde Outlook en la Web
 
-Puede restringir la capacidad de los usuarios para descargar datos adjuntos Outlook en la Web dispositivos umnanaged. Los usuarios de estos dispositivos pueden ver y editar estos archivos mediante Office Online sin tener que filtrar y almacenar los archivos en el dispositivo. También puedes impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
+Puede restringir la capacidad para que los usuarios descarguen datos adjuntos Outlook en la Web dispositivos no administrados. Los usuarios de estos dispositivos pueden ver y editar estos archivos mediante Office Online sin tener que filtrar y almacenar los archivos en el dispositivo. También puedes impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
 
 Estos son los pasos:
 
@@ -110,7 +109,7 @@ Con las nuevas funcionalidades Cifrado de mensajes de Office 365 (OME), que apro
 
 Para obtener más información, vea [Set up new Cifrado de mensajes de Office 365 capabilities](../../compliance/set-up-new-message-encryption-capabilities.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 ![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

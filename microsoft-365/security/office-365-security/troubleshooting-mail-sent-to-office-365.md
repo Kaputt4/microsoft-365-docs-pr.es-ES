@@ -19,12 +19,12 @@ ms.custom:
 description: En este artículo se proporciona información para solucionar problemas relacionados con el envío de correo electrónico a bandejas de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a Microsoft 365 clientes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e51173e589bac06fb4ca1ba92657137e77ade92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5fe128989b66f110899e6af08180e830319b739
+ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203812"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61121404"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
@@ -38,7 +38,7 @@ En este artículo se proporciona información de solución de problemas para los
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>¿Está administrando la reputación de envío de dominios e IP?
 
-Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365 y otros productos de Microsoft como Exchange Server. También aprovechamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de la suplantación de identidad y phishing al comprobar que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP se ve influenciado por una serie de factores relacionados con la IP de envío, dominio, autenticación, precisión de lista, tasas de denuncia, contenido, etc. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
+Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365 y otros productos de Microsoft como Exchange Server. También usamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de suplantación de identidad y suplantación de identidad comprobando que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP está influenciado por muchos factores relacionados con el envío de IP, dominio, autenticación, precisión de lista, tasas de quejas, contenido y mucho más. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>¿Está enviando correo electrónico desde direcciones IP nuevas?
 
@@ -120,7 +120,7 @@ Se aconseja optar por esta práctica recomendada si su empresa requiere o anima 
 
 Durante el proceso de registro, si la casilla de verificación "Sí, por favor, envíame el boletín" o "Sí, envíenme ofertas especiales" está seleccionada por defecto, los usuarios que no presten atención pueden suscribirse involuntariamente a correo electrónico de marketing o boletines de noticias que no quieren recibir.
 
- Se recomienda en su lugar la opción de doble verificación, lo que significa que la casilla de verificación no está seleccionada de forma predeterminada para correos electrónicos de marketing o boletines. Además, una vez que se ha enviado el formulario de registro, se envía al usuario un correo electrónico de verificación con una dirección URL que le permite confirmar su decisión de recibir correos electrónicos de marketing.
+ Microsoft recomienda la opción de doble suscripción en su lugar, lo que significa que la casilla de correo electrónico de marketing o boletines está desactivada de forma predeterminada. Además, una vez que se ha enviado el formulario de registro, se envía al usuario un correo electrónico de verificación con una dirección URL que le permite confirmar su decisión de recibir correos electrónicos de marketing.
 
  Esto ayuda a garantizar que solo aquellos usuarios que quieren recibir correo electrónico de marketing se registraron para mensajes de correo electrónico, lo que libera a la empresa de envío de ser acusada de hacer uso de cualquier práctica de marketing de correo electrónico cuestionable.
 
