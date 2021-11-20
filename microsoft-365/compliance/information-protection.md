@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
-ms.openlocfilehash: d011877bf31e996144b73978337ad63cb3a22c6a
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: d82ca36b99c2a19ce2a2a66b56f29f9ddf58bdf4
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071395"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109748"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
@@ -46,7 +46,7 @@ Para tener una visión general de sus datos e identificar aquellos más importan
 |[Tipos de información confidencial](sensitive-information-type-learn-about.md)| Identifica datos confidenciales mediante expresiones regulares integradas o personalizadas, o con una función. Las pruebas confirmatorias incluyen palabras clave, niveles de confianza y proximidad.| [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)|
 |[Clasificadores que se pueden entrenar](classifier-learn-about.md)| Identifica datos confidenciales mediante ejemplos de los datos que le interesan, en lugar de identificar elementos dentro del elemento (coincidencia de patrones). Puede usar clasificadores predefinidos o entrenar un clasificador con su propio contenido.| [Introducción a los clasificadores que se pueden entrenar](classifier-get-started-with.md) |
 |[Clasificación de datos](data-classification-overview.md) | Una identificación gráfica de los elementos de la organización que tienen una etiqueta de confidencialidad, una etiqueta de retención o que se han clasificado. También puede usar esta información para obtener información sobre las acciones que los usuarios están llevando a cabo en estos elementos. | [Introducción al explorador de contenido](data-classification-content-explorer.md) <p> [Introducción al explorador de actividad](data-classification-activity-explorer.md) |
-|[Azure Purview](/azure/purview/overview) |Identifica los datos confidenciales y aplica el etiquetado automático a cualquier contenido de los recursos de Azure Purview, como Azure Blob Storage, Azure Files, Azure Data Lake Storage y orígenes de datos de varias nubes. |[Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label) |
+|[Azure Purview](/azure/purview/overview) |Identifica datos confidenciales y aplica el etiquetado automático a cualquier contenido de los recursos de Azure Purview tales como Azure Blob Storage, Azure Files, Azure Data Lake Storage y orígenes de datos de varias nubes. |[Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label) |
 
 ## <a name="protect-your-data"></a>Proteger los datos
 
@@ -62,7 +62,7 @@ Para aplicar acciones de protección flexibles entre las que se incluyen el cifr
 |[Information Rights Management (IRM) de SharePoint](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protege las listas y bibliotecas de SharePoint para que, cuando un usuario desproteja un documento, el archivo descargado esté protegido, de modo que solo los usuarios autorizados puedan ver y usar el archivo en función de las directivas que usted especifique. | [Configurar Information Rights Management (IRM) en el Centro de administración de SharePoint](set-up-irm-in-sp-admin-center.md)|
 [Conector de administración de derechos](/azure/information-protection/deploy-rms-connector) |Modo de solo protección para implementaciones locales existentes que usan Exchange o SharePoint Server, o servidores de archivos que ejecutan Windows Server y la Infraestructura de Clasificación de Archivos (FCI). | [Pasos para implementar el conector RMS](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Escáner de etiquetas unificadas de Azure Information Protection](/azure/information-protection/deploy-aip-scanner)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos locales. | [Configuración e instalación del escáner de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)|
-|[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos en la nube. | [Descubrir, clasificar, etiquetar y proteger la información regulada y confidencial almacenada en la nube](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos en la nube. | [Descubrir, clasificar, etiquetar y proteger la información regulada y confidencial almacenada en la nube](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[SDK de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|Amplía las etiquetas de confidencialidad a los servicios y aplicaciones de terceros. <p> Escenario de ejemplo: [Establecer y obtener una etiqueta de confidencialidad (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Instalación y configuración del SDK de Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip)|
 
 

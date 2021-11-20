@@ -18,18 +18,19 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre. '
-ms.openlocfilehash: f3400947130d84ebe7831676ec3c1d31e9ab1bd3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52ec631859411eef1d64fe44c85c27e2466d86c2
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161875"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128403"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
@@ -39,7 +40,14 @@ Es posible que deba cambiar la dirección de correo electrónico y el nombre par
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
 
+1. En el Centro de administración de Microsoft 365, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios activos.**</a>.
+1. Seleccione el usuario de la lista de usuarios activos.
+1. Seleccione **Administrar información de contacto**.
+1. Cambie el nombre para mostrar y seleccione **Guardar cambios**.
+
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
+
+## <a name="before-you-begin"></a>Antes de empezar
 
 Debe ser [administrador global](about-admin-roles.md) para completar estos pasos.
 

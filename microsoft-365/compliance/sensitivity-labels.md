@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 3f9f0a3975081cfd136420ed6ac95d86b2f4861e
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 2614512499c9ded8952ab5a071e7d1cf56d1d9ec
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071417"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109952"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -59,13 +59,13 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Proteger el contenido de las aplicaciones de Office en distintos dispositivos y plataformas.** Compatible con Word, Excel, PowerPoint y Outlook en las aplicaciones de escritorio de Office y Office en la Web. Compatible con Windows, Mac OS, iOS y Android.
 
-- **Proteger el contenido en los servicios y aplicaciones de terceros** con Microsoft Cloud App Security Con Cloud App Security, puede detectar, clasificar, etiquetar y proteger el contenido en los servicios y aplicaciones de terceros, como SalesForce, Box o Dropbox, incluso si la aplicación o servicio de terceros no puede leer o no tiene compatibilidad con etiquetas de confidencialidad.
+- **Proteger el contenido de aplicaciones y servicios de terceros** con Microsoft Defender for Cloud Apps. Con Defender for Cloud Apps se puede detectar, clasificar, etiquetar y proteger el contenido de servicios y aplicaciones de terceros tales como SalesForce, Box o DropBox, incluso si la aplicación o el servicio de terceros no lee ni admite etiquetas de confidencialidad.
 
 - **Proteger contenedores** que incluyan Teams, Grupos de Microsoft 365 y sitios de SharePoint. Por ejemplo, configurar las opciones de privacidad, el acceso de usuarios externos, el uso compartido externo y el acceso desde dispositivos no administrados.
 
 - **Extender las etiquetas de confidencialidad a Power BI**: al activar esta función, puede aplicar y ver etiquetas en Power BI y proteger los datos cuando se guarden fuera del servicio.
 
-- **Extender las etiquetas de confidencialidad a los activos de Azure Purview**: al activar esta funcionalidad, puede aplicar las etiquetas de confidencialidad a archivos y recursos de datos esquematizados en Azure Purview. Los recursos de datos esquematizados incluyen SQL, Azure SQL, Azure Synapse, Azure Cosoms y AWS RDS.
+- Extender las etiquetas de confidencialidad a recursos de **Azure Purview**: al activar esta funcionalidad, actualmente en versión preliminar, se pueden aplicar las etiquetas de confidencialidad a archivos y recursos de datos esquematizados en Azure Purview. Los recursos de datos esquematizados incluyen SQL, Azure SQL, Azure Synapse, Azure Cosoms y AWS RDS.
 
 - **Extienda las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.** Con el SDK de Microsoft Information Protection, las aplicaciones de terceros pueden leer las etiquetas de confidencialidad y aplicar la configuración de protección.
 
@@ -118,7 +118,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     ![Aviso para asignar una etiqueta necesaria.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Para obtener más información sobre la configuración del **etiquetado automático de archivos y correos electrónicos** cuando se crea o edita una etiqueta de confidencialidad, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md) para las aplicaciones de Office, y [Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label).
+    Para más información sobre la configuración del **Etiquetado automático de archivos y correos electrónicos** cuando se crea o edita una etiqueta de confidencialidad, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md) para las aplicaciones de Office y [Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Ámbitos de etiqueta
 
@@ -126,7 +126,7 @@ Cuando cree una etiqueta de confidencialidad, se le pedirá que configure el ám
 - Las opciones de etiqueta que puede configurar para esa etiqueta
 - El lugar en el que los usuarios verán la etiqueta
 
-Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. También puede seleccionar el ámbito de los recursos de Azure Purview:
+Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. También puede seleccionar el ámbito de recursos de Azure Purview:
 
 ![Opciones de ámbito para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 

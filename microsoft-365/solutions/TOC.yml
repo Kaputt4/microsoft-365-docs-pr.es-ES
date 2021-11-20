@@ -29,6 +29,24 @@
           href: empower-people-to-work-remotely-teams-productivity-apps.md
         - name: Paso 6. Formar a los trabajadores
           href: empower-people-to-work-remotely-train-monitor-usage.md
+    - name: Administración de puntos de conexión con Intune y Microsoft 365
+      items:
+        - name: Información general
+          href: manage-devices-with-intune-overview.md
+        - name: Paso 1. Implementar directivas de protección de aplicaciones de nivel 2
+          href: manage-devices-with-intune-app-protection.md
+        - name: Paso 2. Inscripción de dispositivos en la administración
+          href: manage-devices-with-intune-enroll.md
+        - name: Paso 3. Configurar directivas de cumplimiento
+          href: manage-devices-with-intune-compliance-policies.md
+        - name: Paso 4. Requerir dispositivos correctos y compatibles
+          href: manage-devices-with-intune-require-compliance.md
+        - name: Paso 5. Ver perfiles de dispositivo
+          href: manage-devices-with-intune-configuration-profiles.md
+        - name: Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
+          href: manage-devices-with-intune-monitor-risk.md
+        - name: Paso 7. Implementación de la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
+          href: manage-devices-with-intune-dlp-mip.md
     - name: Configurar la colaboración moderna con Microsoft 365
       items:
         - name: Información general

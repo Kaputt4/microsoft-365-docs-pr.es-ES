@@ -8,7 +8,9 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security para BDM
           href: Microsoft-365-security-for-bdm.md
-    - name: Configuraciones de acceso a dispositivos e identidades
+        - name: Recomendaciones de seguridad para cuentas de prioridad
+          href: ./office-365-security/security-recommendations-for-priority-accounts.md
+    - name: Configuraciones de identidad y acceso a dispositivos de Confianza cero
       items:
         - name: Información general
           href: ./office-365-security/microsoft-365-policies-configurations.md
@@ -20,11 +22,11 @@
           href: ./office-365-security/identity-access-policies-guest-access.md
         - name: Directivas de acceso de Teams recomendadas
           href: ./office-365-security/teams-access-policies.md
-        - name: Directivas de acceso de Exchange Online recomendadas
+        - name: Directivas de acceso de Exchange recomendadas
           href: ./office-365-security/secure-email-recommended-policies.md
-        - name: Directivas de acceso de SharePoint Online recomendadas
+        - name: Directivas de acceso de SharePoint recomendadas
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: Directivas recomendadas de Microsoft Defender for Cloud Apps para aplicaciones SaaS
+        - name: Directivas recomendadas de Defender for Cloud Apps para aplicaciones SaaS
           href: ./office-365-security/mcas-saas-access-policies.md
         - name: Evaluación continua del acceso
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md

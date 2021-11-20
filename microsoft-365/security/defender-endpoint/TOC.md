@@ -9,7 +9,7 @@
 ### [Almacenamiento de datos y privacidad](data-storage-privacy.md)
 ### [Introducción al Centro de seguridad de Microsoft Defender](use.md)
 ### [Introducción al portal](portal-overview.md)
-### [Plan 1 de Defender para punto de conexión (versión preliminar)]()
+### [Plan 1 de Defender para punto de conexión]()
 #### [Información general](defender-endpoint-plan-1.md)
 #### [Instalación y configuración](mde-p1-setup-configuration.md)
 #### [Introducción](mde-plan1-getting-started.md)
@@ -282,7 +282,6 @@
 ### Protección de última generación
 #### [Información sobre los servicios de protección de última generación](next-generation-protection.md)
 ##### [Introducción al Antivirus de Microsoft Defender](microsoft-defender-antivirus-windows.md)
-##### [Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](why-use-microsoft-defender-antivirus.md)
 ##### [Mejor juntos: Antivirus de Microsoft Defender y Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluar Antivirus de Microsoft Defender](evaluate-microsoft-defender-antivirus.md)
@@ -684,7 +683,7 @@
 ### [Integraciones]()
 #### [Integraciones de Microsoft Defender para punto de conexión](threat-protection-integration.md)
 #### [Proteger a los usuarios, los datos y los dispositivos con acceso condicional](conditional-access.md)
-#### [Información general de la integración de Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-integration.md)
+#### [Introducción a la integración de Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-integration.md)
 
 ### [Information Protection en Introducción de Windows]()
 #### [Integración de Windows](information-protection-in-windows-overview.md)

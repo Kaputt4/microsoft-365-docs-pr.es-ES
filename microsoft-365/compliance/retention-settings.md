@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: d80ae2a6f3fac26acfc5d9f8a324e578677cb962
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 475ed6226c5482a1b9256d38798b9cbbdd8be31e
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063530"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110552"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -248,7 +248,7 @@ Al configurar una directiva de aplicación automática que usa tipos de informac
 
 Cuando elige la ubicación de los **sitios de SharePoint**, la directiva de retención puede conservar y eliminar documentos en los sitios de comunicación de SharePoint, en los sitios de equipo no conectados mediante grupos de Microsoft 365 y en los sitios clásicos. A menos que use [ámbitos de directiva adaptables](#exceptions-for-adaptive-policy-scopes), los sitios de equipo conectados por grupos de Microsoft 365 no son compatibles con esta opción y, en su lugar, use la ubicación **Grupos de Microsoft 365** que se corresponda con el contenido del buzón, el sitio y los archivos del grupo.
 
-Para obtener información detallada sobre lo que se incluye y excluye al configurar las opciones de retención para SharePoint y OneDrive, consulte [¿Qué se incluye para la retención y eliminación?](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion) 
+Para obtener información detallada sobre lo que se incluye y excluye al configurar las opciones de retención para SharePoint y OneDrive, consulte [¿Qué se incluye para la retención y eliminación?](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)
 
 Al especificar ubicaciones para sitios de SharePoint o cuentas de OneDrive, no necesita permisos para acceder a los sitios. En el caso de los ámbitos estáticos, no se realiza ninguna validación al especificar la dirección URL en la página **Editar ubicaciones**. Sin embargo, se comprueba que los sitios de SharePoint que especifique existan en la página final de la configuración. Si se produce un error en esta comprobación, verá un mensaje que indica que no se pudo realizar la validación de la dirección URL que ha indicado y la directiva de retención no se podrá crear hasta que se realice la comprobación de validación.  Si ve este mensaje, vuelva atrás en el proceso de configuración para cambiar la dirección URL o bien para quitar el sitio de la directiva de retención.
 
@@ -256,9 +256,9 @@ Para especificar cuentas individuales de OneDrive, vea [Obtener una lista de las
 
 > [!NOTE]
 > Cuando especifique cuentas de OneDrive individuales, tenga en cuenta que, a menos que las cuentas de OneDrive estén [aprovisionadas previamente](/onedrive/pre-provision-accounts), la dirección URL no se creará hasta que un usuario tenga acceso a sus cuentas de OneDrive por primera vez.
-> 
-> Además, la URL de OneDrive cambiará [automáticamente](/onedrive/upn-changes) si hay un cambio en el UPN del usuario. Por ejemplo, un evento por el que se cambian los apellidos, como el matrimonio. O un cambio de nombre de dominio para admitir el cambio de nombre o la reestructuración empresarial de una organización. Si el UPN cambia, deberá actualizar las direcciones URL de OneDrive que se especifiquen para la configuración de retención.
-> 
+>
+> Además, la URL de OneDrive cambiará [automáticamente](/onedrive/upn-changes) si hay un cambio en el UPN del usuario. Por ejemplo, un evento por el que se cambie de nombre, como el matrimonio, o un cambio de nombre de dominio para admitir el cambio de nombre o la reestructuración empresarial de una organización. Si el UPN cambia, deberá actualizar las direcciones URL de OneDrive que se especifiquen para la configuración de retención.
+>
 > Debido al reto que supone especificar de forma confiable direcciones URL para que los usuarios individuales se incluyan o excluyan en ámbitos estáticos, los [ámbitos adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention) con el tipo de ámbito **Usuario** son más adecuados para este propósito.
 
 #### <a name="exceptions-for-adaptive-policy-scopes"></a>Excepciones para ámbitos de directivas adaptables
