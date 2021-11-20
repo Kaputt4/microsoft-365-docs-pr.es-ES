@@ -16,15 +16,15 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
-description: Use el acceso controlado a carpetas, MIP, DLP y Microsoft Cloud App Security para proteger los datos confidenciales de Microsoft 365.
-ms.openlocfilehash: cd2f7526de1b9089c6c2febfb667b4df7d816913
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Use el acceso controlado a carpetas, MIP, DLP y Microsoft Defender for Cloud Apps para proteger sus datos confidenciales de Microsoft 365.
+ms.openlocfilehash: 4d6218ef32b10f99fcd1836444add49a7c4cb40c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666739"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110048"
 ---
-# <a name="step-5-protect-information"></a>Paso 5. Proteger información
+# <a name="step-5-protect-information"></a>Paso 5. Proteger información
 
 Dado que los atacantes de ransomware también examinarán los datos locales ubicados en archivos, bases de datos y otros tipos de servidores, una de las mejores formas de proteger esos datos es migrarlos a su espacio empresarial de Microsoft 365. Una vez allí, se pueden proteger mediante características integradas de mitigación y recuperación, como [control de versiones, papelera de reciclaje y la restauración de archivos](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
@@ -92,7 +92,7 @@ Para proteger la información confidencial en caso de que un atacante de ransomw
 
 - Use la [prevención de pérdida de datos (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) de Microsoft 365 para detectar, advertir y bloquear el uso compartido riesgoso, involuntario o inapropiado de los datos que contienen información personal o confidencial en función de las etiquetas de confidencialidad, tanto interna como externamente.
 
-- Use [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) para bloquear las descargas de información confidencial, como archivos. También puede usar [directivas de detección de anomalías de Cloud App Security](/cloud-app-security/anomaly-detection-policy#ransomware-activity) para detectar una alta tasa de cargas de archivos o actividades de eliminación de archivos.
+- Use [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) para bloquear descargas de información confidencial, como archivos. También puede usar las [directivas de detección de anomalías de Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy#ransomware-activity) para detectar una alta tasa de cargas de archivos o actividades de eliminación de archivos.
 
 ## <a name="impact-on-users-and-change-management"></a>Impacto en los usuarios y administración de cambios
 
@@ -141,12 +141,12 @@ Microsoft Azure:
 - [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Ayuda para la protección contra ransomware con Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
 - [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Detección de ataques de varias fases en Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Detección de fusión para ransomware en Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Detección avanzada de ataques de varias fases en Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
+- [Detección de difusión para ransomware en Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps:
 
--  [Crear directivas de detección de anomalías en Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Crear directivas de detección de anomalías en Defender para aplicaciones en la nube](/cloud-app-security/anomaly-detection-policy)
 
 Entradas de blog del equipo de Seguridad de Microsoft:
 
@@ -169,4 +169,3 @@ Entradas de blog del equipo de Seguridad de Microsoft:
 
 - [Respuesta frente a ransomware: ¿pagar o no pagar? (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responde ante ataques de ransomware con transparencia (diciembre de 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-

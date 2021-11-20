@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo proporciona las instrucciones más recientes para optimizar de forma segura la conectividad de red de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad7607fb03aee49fa86adaaf1e8970c864ea310
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cea07745295f945f472dfeaa7042d3b027eea85
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212886"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111680"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principios de conectividad de red de Microsoft 365
 
@@ -206,7 +206,7 @@ Microsoft ofrece una amplia gama de características de seguridad de Microsoft 3
   
 - **Usar la autenticación multifactor (MFA)** MFA agrega una capa adicional de protección a una estrategia de contraseña segura al obligar a los usuarios a confirmar una llamada telefónica, un mensaje de texto o una notificación de aplicación en el smartphone después de escribir la contraseña correcta.
 
-- **Use Microsoft Cloud App Security** Configure directivas para realizar un seguimiento de la actividad anómala y actuar en ella. Configure alertas con Microsoft Cloud App Security para que los administradores puedan revisar la actividad inusual o arriesgada de los usuarios, como descargar grandes cantidades de datos, varios intentos de inicio de sesión erróneos o conexiones desde direcciones IP desconocidas o peligrosas.
+- **Usar Microsoft Defender for Cloud Apps** Configurar directivas para realizar un seguimiento de la actividad anómala y tomar medidas. Configure alertas con Microsoft Defender for Cloud Apps para que los administradores puedan revisar actividades de usuario inusuales o de riesgo, como descargar grandes cantidades de datos, varios intentos de inicio de sesión fallidos o conexiones desde direcciones IP desconocidas o peligrosas.
 
 - **Configurar la prevención de la pérdida de datos (DLP)** DLP le permite identificar datos confidenciales y crear directivas que contribuyen a evitar que los usuarios compartan los datos por error o de forma deliberada. DLP funciona en Microsoft 365, incluido en Exchange Online, SharePoint Online y OneDrive, de modo que los usuarios puedan cumplir las normativas sin interrumpir el flujo de trabajo.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: f6446fb61d0c38855a040da75a57ae85faafbb9f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: e3f621b3ab6ec6d095e5ba8687cf06734cfa0170
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962860"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110012"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -44,7 +44,7 @@ También puede administrar estas características en la página de clasificació
 - [explorador de contenido](data-classification-content-explorer.md)
 - [explorador de actividad](data-classification-activity-explorer.md)
 
-Puede encontrar la clasificación de los datos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> o en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Centro de seguridad de Microsoft 365</a> > **Clasificación** > **Clasificación de datos**.
+Puede encontrar la clasificación de datos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> o en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> > **Clasificación** > **Clasificación de datos**.
 
 Participe en un recorrido en vídeo de nuestras características de clasificación de datos.
 

@@ -70,7 +70,7 @@
 
 
 
-#### [Integración con Azure Defender](azure-server-integration.md)
+#### [Integración con Microsoft Defender for Cloud](azure-server-integration.md)
 
 #### [Incorporar dispositivos sin acceso a Internet](onboard-offline-machines.md)
 #### [Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)
@@ -487,7 +487,7 @@
 ### [Comprender conceptos de inteligencia sobre amenazas](threat-indicator-concepts.md)
 ### [Configurar la integración con otras soluciones de Microsoft]()
 #### [Configurar el acceso condicional](configure-conditional-access.md)
-#### [Configurar la integración con Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
+#### [Configurar la integración de Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-config.md)
 ### [Administración y API]()
 #### [Introducción a la administración y las API](management-apis.md)
 #### [Notas de la versión de la API](api-release-notes.md)
@@ -645,7 +645,6 @@
 ##### [Transmitir eventos de búsqueda avanzada de amenazas al hub de Azure Events](raw-data-export-event-hub.md)
 ##### [Transmitir eventos de búsqueda avanzada de amenazas a su cuenta de almacenamiento](raw-data-export-storage.md)
 
-
 #### [Integración de SIEM]()
 ##### [Integrar herramientas SIEM con Microsoft Defender para punto de conexión](configure-siem.md)
 ##### [Motores de protección de Microsoft Defender para punto de conexión](api-portal-mapping.md)
@@ -685,7 +684,7 @@
 ### [Integraciones]()
 #### [Integraciones de Microsoft Defender para punto de conexión](threat-protection-integration.md)
 #### [Proteger a los usuarios, los datos y los dispositivos con acceso condicional](conditional-access.md)
-#### [Introducción a integración de Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)
+#### [Información general de la integración de Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-integration.md)
 
 ### [Information Protection en Introducción de Windows]()
 #### [Integración de Windows](information-protection-in-windows-overview.md)
@@ -727,7 +726,7 @@
 #### [Reglas de la reducción de la superficie expuesta a ataques](troubleshoot-asr.md)
 #### [Migrar las reglas de la reducción de la superficie expuesta a ataques](migrating-asr-rules.md)
 
-# [Documentos de Microsoft 365 Defender]()
+# [Documentos de Microsoft 365 Defender]()
 ## [Microsoft 365 Defender](../defender/index.yml)
 ## [Defender para Office 365](../office-365-security/index.yml)
 ## [Defender for Identity](/defender-for-identity/)

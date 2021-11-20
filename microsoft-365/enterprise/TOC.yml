@@ -619,7 +619,7 @@
           href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Administrar complementos con la Implementación centralizada de PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
-- name: Kit del laboratorio de implementación de Office 365 y Windows 10
+- name: Kit de laboratorio de implementación de Windows y Office 365
   href: modern-desktop-deployment-and-management-lab.md
 - name: Guías del entorno de pruebas
   href: m365-enterprise-test-lab-guides.md

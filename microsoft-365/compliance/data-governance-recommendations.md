@@ -17,17 +17,17 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: El Centro de seguridad y cumplimiento de Microsoft 365 ofrece recomendaciones para el gobierno de datos según la configuración actual de su organización y le permite realizar configuraciones con un par de clics. Algunas de estas recomendaciones detectan el contenido específico de su organización y, luego, proporcionan pasos recomendados para administrarlo. Por ejemplo, una recomendación puede detectar los elementos que contienen contenido crítico para la empresa (como privilegios abogado-cliente o información NDA) y hacer que pueda aplicar automáticamente una etiqueta de retención a dichos elementos para asegurarse de que están clasificados y se conservan según sea necesario. En este tema se enumeran las recomendaciones de gobierno de datos que puede ver y se describe el contenido que se detecta para desencadenar cada uno.
-ms.openlocfilehash: f6343ab8856393f1928edfdb917e26fe9d72cc97
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+description: El portal Microsoft 365 Defender y el Centro de cumplimiento de Microsoft 365 proporcionan recomendaciones para el gobierno de datos en función de la configuración actual de la organización y permiten configurarlo todo en unos pocos clics. Algunas de estas recomendaciones detectan contenido específico de la organización y proporcionan pasos recomendados para administrar dicho contenido. Por ejemplo, una recomendación podría detectar elementos con contenido vital para la empresa (como secreto profesional entre abogado y cliente o información de acuerdos de confidencialidad) y le permitiría aplicar automáticamente una etiqueta de retención a esos elementos para asegurarse de que se clasifican y conservan según corresponda. En este tema se enumeran las recomendaciones de gobierno de datos que es posible que vea y se describe el contenido que se detecte para desencadenar cada uno.
+ms.openlocfilehash: cddd73fdd0c21605549450968db182883ab7e6ad
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963352"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110972"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Cómo se identifica el contenido para las recomendaciones de gobierno de datos
 
-El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Centro de seguridad de Microsoft 365</a> y el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> proporcionan recomendaciones para el gobierno de datos en función de la configuración actual de su organización y le permiten configurar todo en unos pocos clics. Algunas de estas recomendaciones detectan contenido específico de la organización y proporcionan pasos recomendados para administrar dicho contenido. Por ejemplo, una recomendación podría detectar elementos con contenido vital para la empresa (como secreto profesional entre abogado y cliente o información de acuerdos de confidencialidad) y le permitiría aplicar automáticamente una etiqueta de retención a esos elementos para asegurarse de que se clasifican y conservan según corresponda.
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender y</a> el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> proporcionan recomendaciones para el gobierno de datos en función de la configuración actual de la organización y permiten configurarlo todo en unos pocos clics. Algunas de estas recomendaciones detectan contenido específico de la organización y proporcionan pasos recomendados para administrar dicho contenido. Por ejemplo, una recomendación podría detectar elementos con contenido vital para la empresa (como secreto profesional entre abogado y cliente o información de acuerdos de confidencialidad) y le permitiría aplicar automáticamente una etiqueta de retención a esos elementos para asegurarse de que se clasifican y conservan según corresponda.
 
 En este tema se enumeran las recomendaciones de gobierno de datos que es posible que vea y se describe el contenido que se detecte para desencadenar cada uno.
 
@@ -45,7 +45,7 @@ Esta recomendación aparece cuando se cumple uno de los siguientes criterios.
   - Privilegio de abogado-cliente
   - Confidencialidad abogado-cliente
 
-- Cualquier combinación de estas palabras clave se detectan en archivos de SharePoint o OneDrive:
+- Cualquier combinación de estas palabras clave se detecta en archivos de SharePoint o OneDrive:
   - ACP
   - Privilegio de abogado cliente*
   - Privilegio AC
@@ -136,7 +136,7 @@ Esta recomendación aparece cuando se cumple uno de los siguientes criterios.
   - “Acuerdo de confidencialidad”
   - “Acuerdo de confidencialidad”
 
-- Cualquier combinación de estas palabras clave se detectan en archivos .PDF o .DOC en SharePoint o OneDrive:
+- Cualquier combinación de estas palabras clave se detecta en archivos .PDF o .DOC en SharePoint o OneDrive:
   - NDA
   - Acuerdo de confidencialidad
 

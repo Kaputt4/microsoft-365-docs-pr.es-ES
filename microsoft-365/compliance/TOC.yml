@@ -609,7 +609,7 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Administrar buzones inactivos
       items:
-        - name: Información general sobre buzones inactivos
+        - name: Más información sobre los buzones inactivos
           href: inactive-mailboxes-in-office-365.md
         - name: Crear y administrar buzones inactivos
           href: create-and-manage-inactive-mailboxes.md

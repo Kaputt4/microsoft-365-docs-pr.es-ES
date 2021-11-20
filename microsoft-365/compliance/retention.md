@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 387dc9074808c6ee463b2402e98358d77cf1d24b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 605858e433287e7d967d7d1908bc62c9255573c7
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064056"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61110528"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -467,7 +467,7 @@ Información adicional para ubicaciones específicas:
         
         Una directiva de retención implícita requiere un ámbito de directiva estático con la configuración de **Todos los destinatarios** (para correo electrónico de Exchange) o **Todos los grupos** (para Grupos de Microsoft 365).
     
-    Para obtener más información sobre los buzones inactivos que tienen directivas de retención aplicadas, vea [buzones inactivos y directivas de retención de Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention-policies).
+    Para obtener más información sobre los buzones inactivos que tienen directivas de retención aplicadas, consulte [Buzones inactivos y directivas de retención de Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
 ## <a name="auditing-retention-configuration-and-actions"></a>Auditoría de las acciones y la configuración de retención
 

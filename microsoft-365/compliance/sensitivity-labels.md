@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b43ec6b8d529fe0f5c2ed89ed58c8fc122ada66e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3f9f0a3975081cfd136420ed6ac95d86b2f4861e
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668327"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071417"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -65,7 +65,7 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Extender las etiquetas de confidencialidad a Power BI**: al activar esta función, puede aplicar y ver etiquetas en Power BI y proteger los datos cuando se guarden fuera del servicio.
 
-- **Extienda las etiquetas de confidencialidad a los activos en Azure Purview**: al activar esta opción, actualmente en versión preliminar, puede aplicar las etiquetas de confidencialidad a activos como columnas SQL, archivos en Azure Blob Storage y mucho más. 
+- **Extender las etiquetas de confidencialidad a los activos de Azure Purview**: al activar esta funcionalidad, puede aplicar las etiquetas de confidencialidad a archivos y recursos de datos esquematizados en Azure Purview. Los recursos de datos esquematizados incluyen SQL, Azure SQL, Azure Synapse, Azure Cosoms y AWS RDS.
 
 - **Extienda las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.** Con el SDK de Microsoft Information Protection, las aplicaciones de terceros pueden leer las etiquetas de confidencialidad y aplicar la configuración de protección.
 
@@ -118,7 +118,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     ![Aviso para asignar una etiqueta necesaria.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Para obtener más información sobre la configuración para **Etiquetar automáticamente archivos y mensajes de correo electrónico** al crear o editar una etiqueta de confidencialidad, vea [Aplicar una etiqueta de confidencialidad al contenido automáticamente](apply-sensitivity-label-automatically.md) para las aplicaciones de Office y [Etiquetar automáticamente los datos en Azure Purview](/azure/purview/create-sensitivity-label).
+    Para obtener más información sobre la configuración del **etiquetado automático de archivos y correos electrónicos** cuando se crea o edita una etiqueta de confidencialidad, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md) para las aplicaciones de Office, y [Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Ámbitos de etiqueta
 
@@ -126,7 +126,7 @@ Cuando cree una etiqueta de confidencialidad, se le pedirá que configure el ám
 - Las opciones de etiqueta que puede configurar para esa etiqueta
 - El lugar en el que los usuarios verán la etiqueta
 
-Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. Como novedad, y actualmente en versión preliminar, también puede seleccionar el ámbito de activos de Azure Purview:
+Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. También puede seleccionar el ámbito de los recursos de Azure Purview:
 
 ![Opciones de ámbito para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
@@ -134,7 +134,7 @@ De forma predeterminada, el ámbito de **Archivos y correo electrónico** siempr
 
 - **Grupos y sitios**: [habilitar etiquetas de confidencialidad para contenedores y sincronizarlas](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Activos de Azure Purview (versión preliminar)**: [etiquetar automáticamente el contenido en Azure Purview](/azure/purview/create-sensitivity-label)
+- **Recursos de datos esquematizados**: [etiquetar automáticamente el contenido en Azure Purview](/azure/purview/create-sensitivity-label)
 
 Si cambia los valores predeterminados, de modo que no se seleccionen todos los ámbitos, verá la primera página de la configuración de los ámbitos que no ha seleccionado, pero no podrá establecer la configuración. Por ejemplo, si el ámbito para archivos y mensajes de correo electrónico no está seleccionado, no podrá seleccionar las opciones en la página siguiente:
 

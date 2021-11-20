@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: adab62809b8533c255ce390cd40818b8373b3a6b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 2779290e2f338be9128e0fad8ab8a1b4aa8c51bd
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552625"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128861"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -139,6 +139,7 @@ Para los centros de datos específicos de su país o región, a continuación se
 | Corea del Sur | Busan, Seúl |
 | Noruega | Oslo, Stavanger |
 | Sudáfrica | Ciudad del Cabo, Johannesburgo |
+| Suecia | Gävle, Sandviken, Staffanstorp |
 | Suiza | Ginebra, Zúrich |
 | Emiratos Árabes Unidos | Dubái, Abu Dabi |
 | Reino Unido | Durham, Londres, Cardiff |
@@ -5239,19 +5240,19 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange Online | Unión Europea |
-| OneDrive para la Empresa | Unión Europea |
-| SharePoint Online | Unión Europea |
+| Exchange Online | Suecia |
+| OneDrive para la Empresa | Suecia |
+| SharePoint Online | Suecia |
 | Skype Empresarial | Unión Europea |
-| Microsoft Teams | Unión Europea |
-| Office Online y Office Mobile | Unión Europea |
-| EOP | Unión Europea |
+| Microsoft Teams | Suecia |
+| Office Online y Office Mobile | Suecia |
+| EOP | Suecia |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
+| MyAnalytics | Suecia |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
-| Servicios de OneNote | Unión Europea |
+| Servicios de OneNote | Suecia |
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |

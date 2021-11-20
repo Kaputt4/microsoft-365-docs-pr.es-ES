@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
-ms.openlocfilehash: d5a9cbf4aab78c91e9ffbe3897f84b24d46e4f84
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d011877bf31e996144b73978337ad63cb3a22c6a
+ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177512"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61071395"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
@@ -39,9 +39,6 @@ Para obtener información sobre la gobernanza de los datos, consulte [Gobernanza
 
 ## <a name="know-your-data"></a>Conocer los datos
 
-> [!NOTE]
-> Para información sobre cómo clasificar y etiquetar datos en Azure Purview, actualmente en versión preliminar, consulte [Etiquetar automáticamente su contenido en Azure Purview](/azure/purview/create-sensitivity-label)
-
 Para tener una visión general de sus datos e identificar aquellos más importantes en todo su entorno híbrido, utilice las funciones siguientes:
 
 |Funcionalidad|¿Qué problemas se solucionan?|Introducción|
@@ -49,6 +46,7 @@ Para tener una visión general de sus datos e identificar aquellos más importan
 |[Tipos de información confidencial](sensitive-information-type-learn-about.md)| Identifica datos confidenciales mediante expresiones regulares integradas o personalizadas, o con una función. Las pruebas confirmatorias incluyen palabras clave, niveles de confianza y proximidad.| [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)|
 |[Clasificadores que se pueden entrenar](classifier-learn-about.md)| Identifica datos confidenciales mediante ejemplos de los datos que le interesan, en lugar de identificar elementos dentro del elemento (coincidencia de patrones). Puede usar clasificadores predefinidos o entrenar un clasificador con su propio contenido.| [Introducción a los clasificadores que se pueden entrenar](classifier-get-started-with.md) |
 |[Clasificación de datos](data-classification-overview.md) | Una identificación gráfica de los elementos de la organización que tienen una etiqueta de confidencialidad, una etiqueta de retención o que se han clasificado. También puede usar esta información para obtener información sobre las acciones que los usuarios están llevando a cabo en estos elementos. | [Introducción al explorador de contenido](data-classification-content-explorer.md) <p> [Introducción al explorador de actividad](data-classification-activity-explorer.md) |
+|[Azure Purview](/azure/purview/overview) |Identifica los datos confidenciales y aplica el etiquetado automático a cualquier contenido de los recursos de Azure Purview, como Azure Blob Storage, Azure Files, Azure Data Lake Storage y orígenes de datos de varias nubes. |[Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label) |
 
 ## <a name="protect-your-data"></a>Proteger los datos
 

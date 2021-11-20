@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: 721129905d6d0818304972572b1515ff167bffc8
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 7424aeb482339da92c82afc3e50ac1f4471e741c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804934"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61109760"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
@@ -149,9 +149,9 @@ Adicionalmente, para crear trabajos de importación en el Centro de cumplimiento
 
 La carga en la red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Alemania, Suiza, Noruega, Europa, India, Asia Oriental, Sudeste asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos. La carga de red estará disponible en más regiones en el futuro.
 
-#### <a name="what-is-the-pricing-for-importing-pst-files-by-using-network-upload"></a>What is the pricing for importing PST files by using network upload?
+#### <a name="what-is-the-pricing-for-importing-pst-files-by-using-network-upload"></a>¿Cuál es el precio de la importación de archivos PST mediante carga de red?
 
-Using network upload to import PST files is free.
+Usar carga de red para importar archivos PST es gratuito.
 
 Esto también significa que después de que los archivos PST se eliminen del área de Azure Storage, ya no se mostrarán en la lista de archivos para un trabajo de importación completado en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Aunque todavía puede aparecer un trabajo de importación en la página **Importar datos a Office 365**, la lista de archivos PST puede estar vacía cuando vea los detalles de los trabajos de importación más antiguos.
 
@@ -238,10 +238,10 @@ El costo de usar el envío de unidades para importar archivos PST en buzones de 
 
 #### <a name="what-kind-of-hard-drives-are-supported-for-drive-shipping"></a>¿Qué tipo de unidades de disco duro se admiten para el envío de unidades?
 
-Solo se admiten unidades de estado sólido (SSD) de 2,5 pulgadas o discos duros internos SATA II / III de 2,5 o 3,5 pulgadas para su uso con el servicio de importación de Office 365. Puede utilizar discos duros de hasta 10 TB. Para los trabajos de importación, solo se procesará el primer volumen de datos del disco duro. El volumen de datos debe estar formateado con NTFS. Al copiar datos a un disco duro, puede conectarlo directamente utilizando un SSD de 2,5 pulgadas o un conector SATA II/III de 2,5 o 3,5 pulgadas o puede conectarlo externamente utilizando un SSD externo de 2,5 pulgadas o un adaptador USB SATA II/III de 2,5 o 3,5 pulgadas.
+El servicio de importación de Office 365 solo se puede usar con unidades de estado sólido de 2,5 pulgadas (SSD) o discos duros internos SATA II/III de 2,5 o 3,5 pulgadas. Puede usar discos duros de hasta 10 TB. Para los trabajos de importación, se procesará solo el primer volumen de datos del disco duro. El volumen de datos debe tener el formato NTFS. Al copiar datos en un disco duro, puede adjuntarlos directamente con un SSD de 2,5 pulgadas o un conector SATA II/III de 2,5 o 3,5 pulgadas. O bien, puede adjuntarlos externamente con un SSD externo de 2,5 pulgadas o un adaptador USB SATA II/III de 2,5 o 3,5 pulgadas.
 
 > [!IMPORTANT]
-> Los discos duros externos que vienen con un adaptador USB integrado no son compatibles con el servicio de importación de Office 365. Además, no se puede utilizar el disco dentro de la carcasa de un disco duro externo. No envíe discos duros externos.
+> Las unidades de disco duro externas que vienen con un adaptador USB integrado no son compatibles con el servicio de importación de Office 365. Además, no se puede usar un disco que esté dentro de la carcasa de un disco duro externo. Please don't ship external hard drives.
 
 #### <a name="how-many-hard-drives-can-i-ship-for-a-single-import-job"></a>How many hard drives can I ship for a single import job?
 
