@@ -4,12 +4,10 @@
   items:
     - name: Introducción
       items:
+        - name: "Pila de implementación de confianza cero de Microsoft\_365"
+          href: microsoft-365-zero-trust.md
         - name: Tareas principales para apoyar el trabajo desde casa
           href: top-security-tasks-for-remote-work.md
-        - name: Microsoft 365 Security para BDM
-          href: Microsoft-365-security-for-bdm.md
-        - name: Recomendaciones de seguridad para cuentas de prioridad
-          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Configuraciones de identidad y acceso a dispositivos de Confianza cero
       items:
         - name: Información general

@@ -18,24 +18,34 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador, como los administradores de servicios, se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 644e03fcfd5cfdc2997793097b26a3ca6a494d50
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ff4c4053760ad8f4810ea1c92a0d7ba4ecbaa61d
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158831"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128129"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
 Microsoft Office 365 o la subscripción a Office 365 incluye un conjunto de roles de administrador que puede asignar a usuarios de su organización que usen el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Cada rol de administrador corresponde a una función común de la empresa y concede permisos a los usuarios de su organización para realizar tareas específicas en los Centros de administración.
 
 El <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> le permite administrar roles de Azure AD y de Microsoft Intune. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure AD y en el centro de administración de Intune.
+
+## <a name="watch-what-is-an-admin"></a>Ver: ¿Qué es un administrador?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
+
+1. Una vez iniciada la sesión en Microsoft 365, seleccione el iniciador de aplicaciones. Si puede ver el botón Administrador, significa que usted es administrador.
+1. Seleccione **Administrador** para ir al Centro de administración de Microsoft 365.
+1. En el panel de navegación izquierdo, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios activos.**</a>
+1. Seleccione la persona a la que desea convertir en administrador. Los detalles del usuario aparecen en el cuadro de diálogo derecho.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -44,10 +54,6 @@ El <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">C
 ¿Busca una lista completa de descripciones detalladas de los roles para Intune que puede administrar en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>?  Consulte [Control de acceso basado en roles (RBAC) con Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 Para más información acerca de la asignación de roles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, consulte [Asignar roles de administrador](assign-admin-roles.md).
-
-## <a name="watch-what-is-an-admin"></a>Ver: ¿Qué es un administrador?
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## <a name="security-guidelines-for-assigning-roles"></a>Directrices de seguridad para asignar roles
 

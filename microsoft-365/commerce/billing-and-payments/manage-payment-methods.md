@@ -19,15 +19,16 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 search.appverid: MET150
 description: Compre productos o servicios empresariales de Microsoft con un método de pago existente o agregue uno nuevo en el Centro de administración de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: 1008beb9caf42b68e741406bef3be9efbe2fa2de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e155b483082ceee938bf5861e84beeb0a245d55
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190969"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128633"
 ---
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
 
@@ -44,6 +45,12 @@ Si su cuenta empresarial no tiene un perfil de facturación, cualquier administr
 > La opción de pagar con una cuenta bancaria no está disponible en algunos países o regiones.
 >
 > Debe usar un método de pago que haya sido emitido en el mismo país que su espacio empresarial.
+
+## <a name="watch-update-your-payment-method"></a>Ver: actualizar el método de pago
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
+
+Puede actualizar fácilmente el método de pago de la suscripción de Microsoft 365 Empresa. Puede modificar datos como la tarjeta de crédito que usa, el nombre o la dirección.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
