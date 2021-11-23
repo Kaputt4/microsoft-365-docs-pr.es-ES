@@ -1,15 +1,15 @@
 ---
 title: archivo include
-description: archivo include
+description: incluir archivo
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 47de6c330e3b6d5ba4cbe460920603e78e126600
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e4ac49ce9e10e8a6e9c1a7536c310e003ab67ba4
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61112052"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61149589"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -97,7 +97,7 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 
    :::image type="content" source="../media/add-role.png" alt-text="Conceder permisos a los usuarios para administrar la configuración.":::
 
-4. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+4. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 5. Seleccione **Endpoint security** Microsoft Defender for  >  **Endpoint** y establezca Allow Microsoft Defender for Endpoint to enforce Endpoint Security **Configurations (Preview)** en **On**.
 
@@ -108,6 +108,9 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos a Microsoft Defender para punto de conexión
 
 Microsoft Defender para endpoint admite varias opciones para incorporar dispositivos. Para obtener instrucciones actuales, consulta Herramientas de incorporación y métodos [para Windows dispositivos en](/microsoft-365/security/defender-endpoint/security-config-management) la documentación de Defender para endpoints.
+
+> [!IMPORTANT]
+> Después de que un dispositivo se incorpore con Microsoft Defender para Endpoint, debe y etiquetarse con **MDE-Management** para poder inscribirse en Administración de seguridad para Microsoft Defender para Endpoint. Para obtener más información sobre el etiquetado de dispositivos en MDE, consulta [*Crear y administrar etiquetas de dispositivo.*](/microsoft-365/security/defender-endpoint/machine-tag)
 
 Los dispositivos que administras con Intune o Configuration Manager no son compatibles con este escenario.
 
@@ -139,7 +142,7 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
 >
 > Microsoft Endpoint Manager permite implementar varias instancias de cada tipo de directiva de seguridad de extremo en el mismo dispositivo, con cada instancia de directiva que recibe el dispositivo por separado. Por lo tanto, un dispositivo puede recibir configuraciones independientes para la misma configuración de diferentes directivas, lo que da como resultado un conflicto. Algunas opciones de configuración (como exclusiones de antivirus) se combinarán en el cliente y se aplicarán correctamente.
 
-1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Vaya a **Seguridad de extremo** y, a continuación, seleccione el tipo de directiva que desea configurar, ya sea Antivirus o Firewall y, a continuación, seleccione Crear **directiva**.
 
@@ -163,7 +166,7 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
 
 4. Seleccione **Crear**.
 
-5. En la **página Conceptos básicos,** escriba un nombre y una descripción para el perfil y, a continuación, elija **Siguiente**.
+5. En la página **Datos básicos**, escriba un nombre y una descripción para el perfil y, después, elija **Siguiente**.
 
 6. En la **página Configuración,** seleccione la configuración que desea administrar con este perfil. Para obtener más información sobre una configuración,  expanda su cuadro de diálogo de información y seleccione el vínculo Más información para ver la información de CSP para la configuración en la documentación en línea.
 

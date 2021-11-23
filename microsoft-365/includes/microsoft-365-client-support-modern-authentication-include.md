@@ -34,7 +34,7 @@
 |SWAY|N/D|N/D|N/D|N/D|✔|
 |TEAMS|✔|✔|✔|✔|N/D|
 |TO-DO|✔|✔|✔|N/D|✔|
-|VISIO|N/D|✔|N/D|✔|N/D|
+|VISIO|N/D|✔|N/D|N/D|N/D|
 |PIZARRA|✔|✔|N/D|N/D|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/D|N/D|N/D|N/D|N/D|

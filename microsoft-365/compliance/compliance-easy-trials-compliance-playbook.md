@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365.
-ms.openlocfilehash: 1a4d7c69114821e10f301fda0ee408eef7389f9f
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: ca791a4be3c199527bae3b75c0b529198cef9f4a
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129515"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137152"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Cumplimiento de Microsoft 365
 
@@ -235,7 +235,7 @@ Para acceder a eDiscovery avanzado o ser agregado como miembro de un caso de eDi
 Más organizaciones usan la solución eDiscovery avanzado en Microsoft 365 para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios.
 
 1. Administrar eDiscovery avanzado: [aprender a configurar eDiscovery avanzado, administrar casos mediante el Centro de seguridad y cumplimiento, administrar un flujo de trabajo en eDiscovery avanzado y analizar los resultados de búsqueda de eDiscovery avanzado](/learn/modules/manage-advanced-ediscovery).
-1. [Crear un caso de eDiscovery con las capacidades de casos grandes de eDiscovery avanzado](advanced-ediscovery-large-cases.md)
+1. [Crear un caso de eDiscovery con el nuevo formato de caso de eDiscovery avanzado](advanced-ediscovery-new-case-format.md)
 1. [Cerrar o eliminar un caso](close-or-delete-case.md): cuando se complete el caso legal o la investigación, puede cerrarlos o eliminarlos. También puede volver a abrir un caso cerrado.
 
 ### <a name="step-3-optional-settings"></a>Paso 3 (opcional): configuración

@@ -27,7 +27,7 @@
 |SWAY|N/D|N/D|N/D|N/D|✔|
 |TEAMS|✔|✔|✔|✔|N/D|
 |TO-DO|✔|✔|N/D|N/D|✔|
-|VISIO|N/D|✔|N/D|✔|N/D|
+|VISIO|N/D|✔|N/D|N/D|N/D|
 |PIZARRA|✔|✔|N/D|N/D|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|N/D|Planeado|N/D|
