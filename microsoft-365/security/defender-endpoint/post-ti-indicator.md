@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 299a6fff547c921dfdc02d4c23bfd8947b878875
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 186fd6eb13198d15ba6e99815592ee07d2b9f606
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157883"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145028"
 ---
 # <a name="submit-or-update-indicator-api"></a>Enviar o actualizar API de indicadores
 
@@ -80,7 +80,7 @@ Parámetro|Tipo|Descripción
 :---|:---|:---
 indicatorValue|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileMd5", "CertificateThumbprint", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
-acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock" y "Allowed". **Required**
+acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock" y "Allowed". **Necesario**. El parámetro "GenerateAlert" debe establecerse en "TRUE" al crear una acción con "Audit".
 aplicación|Cadena|La aplicación asociada al indicador. Este campo solo funciona para nuevos indicadores. No actualizará el valor de un indicador existente. **Optional**
 title|Cadena|Título de alerta del indicador. **Required**
 description|Cadena|Descripción del indicador. **Required**

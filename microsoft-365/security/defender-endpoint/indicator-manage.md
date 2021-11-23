@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c35f6c399e7668883b5b276fffd56f162984669
-ms.sourcegitcommit: f6cb10b1dc4b679b7890d059f7242870fc40b9f5
+ms.openlocfilehash: baedfaf23ed8012a04eb25407ac614efd51fd882
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60225025"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145003"
 ---
 # <a name="manage-indicators"></a>Administrar indicadores
 
@@ -56,6 +56,9 @@ Descargue el CSV de ejemplo para conocer los atributos de columna admitidos.
 
 5. Seleccione **Listo**.
 
+> [!NOTE]
+> Solo se pueden cargar 500 indicadores para cada lote.
+
 En la tabla siguiente se muestran los parámetros admitidos.
 
 Parámetro|Tipo|Descripción
@@ -79,7 +82,7 @@ GenerateAlert|Cadena|Si la alerta debe generarse o no. Los valores posibles son:
 > No se admite Inter-Domain de enrutamiento sin clases (CIDR) para direcciones IP.
 Para obtener más información, vea Microsoft Defender para las categorías de alertas de punto de conexión ahora están alineadas con [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para los archivos](indicator-file.md)

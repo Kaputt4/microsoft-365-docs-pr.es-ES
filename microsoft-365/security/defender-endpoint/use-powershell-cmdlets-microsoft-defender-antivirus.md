@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bfcf100d4935895b66e781c7be0fa2e3c9cb829a
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c7a61e8806f6a937de241a2d546d34eadfa04df6
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110696"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148765"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Use cmdlets de PowerShell para configurar y administrar Antivirus de Microsoft Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "61110696"
 
 Puede usar PowerShell para realizar varias funciones en Windows Defender. Al igual que el símbolo del sistema o la línea de comandos, PowerShell es un shell de línea de comandos basado en tareas y un lenguaje de scripting diseñado especialmente para la administración del sistema. Puede leer más sobre él en el centro [de PowerShell en MSDN](/previous-versions/msdn10/mt173057(v=msdn.10)).
 
-Para obtener una lista de los cmdlets y sus funciones y parámetros disponibles, consulte el tema [Defender for Cloud cmdlets.](/powershell/module/defender)
+Para obtener una lista de los cmdlets y sus funciones y parámetros disponibles, consulte el tema [Cmdlets de Defender Antivirus.](/powershell/module/defender)
 
 Los cmdlets de PowerShell son más útiles Windows entornos de servidor que no dependen de una interfaz gráfica de usuario (GUI) para configurar software.
 

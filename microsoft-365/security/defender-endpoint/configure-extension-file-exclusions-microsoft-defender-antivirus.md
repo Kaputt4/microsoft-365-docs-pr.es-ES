@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 11/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d50e770ac126789d0e48d36e25199a280df9e623
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 307896b583fe3c0e9999afaa789646dc7fafa550
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110780"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148676"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -164,7 +164,7 @@ Add-MpPreference -ExclusionExtension ".test"
 ```
 
 > [!TIP]
-> Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/).
+> Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Windows de administración de archivos (WMI) para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
@@ -334,7 +334,7 @@ En el siguiente ejemplo, se resaltan los elementos contenidos en `ExclusionExten
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Salida de PowerShell para Get-MpPreference.":::
 
-Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/).
+Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/).
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Recuperar una lista de exclusiones específica mediante PowerShell
 
@@ -350,7 +350,7 @@ En el siguiente ejemplo, la lista se divide en nuevas líneas para cada uso del 
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Salida de PowerShell que muestra solo las entradas de la lista de exclusión.":::
 
-Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/).
+Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/).
 
 <a id="validate"></a>
 

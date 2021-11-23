@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ae1b168418b3a4a7814195f42297ac57622e6c6f
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: fe787895690fa066ab21ec6bad6d4c240217bc3e
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111308"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144381"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -104,7 +104,7 @@ Para obtener más información acerca de los datos recopilados y la privacidad, 
 
 Si tiene problemas de conectividad a Internet en la red de telefonía móvil, compruebe si Microsoft Defender para Endpoint tiene los datos móviles habilitados: abra la aplicación Configuración > MS Defender > asegúrese de que "Datos móviles" está habilitado para MS Defender.
 
-Compruebe si activar o desactivar el modo avión ayuda a resolver el problema. Si el problema persiste, envíenos [los registros](ios-troubleshoot.md#send-in-app-feedback).
+Si aún tiene problemas de conectividad, compruebe si activar o desactivar el modo avión ayuda a resolver el problema. Si el problema persiste, envíenos [los registros](ios-troubleshoot.md#send-in-app-feedback).
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problemas en dispositivos supervisados con el perfil de filtro de contenido instalado
 

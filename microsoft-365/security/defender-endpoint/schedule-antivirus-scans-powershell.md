@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 03978feb5a9d0ca98d432fbec91e0fd5ce83724e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 251c220ab8ede37f69e820e48af08495507504a6
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111260"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148835"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>Programar los exámenes de antivirus con PowerShell
 
@@ -43,7 +43,7 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
+Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
 
 ## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Cmdlets de PowerShell para programar exámenes cuando un extremo no está en uso
 
@@ -53,7 +53,7 @@ Use los cmdlets siguientes:
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/).
+Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/).
 
 > [!NOTE]
 > Al programar exámenes para las horas en las que los puntos de conexión no están en uso, los exámenes no respetan la configuración de limitación de CPU y aprovechan al máximo los recursos disponibles para completar el examen lo más rápido posible.
@@ -67,7 +67,7 @@ Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
+Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
 
 ## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>Cmdlets de PowerShell para programar exámenes diarios
 
@@ -77,4 +77,4 @@ Use los cmdlets siguientes:
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-Para obtener más información acerca de cómo usar PowerShell con Antivirus de Microsoft Defender, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/).
+Para obtener más información acerca de cómo usar PowerShell con Antivirus de Microsoft Defender, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/).

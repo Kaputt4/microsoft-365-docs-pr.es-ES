@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba63747b93bab97a987f2ab8b400bea9583d332d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10c6522a2c6ca612636a91e8a730c903912e49c7
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157751"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144925"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Introducción al Centro de seguridad de Microsoft Defender
 
@@ -37,8 +37,6 @@ ms.locfileid: "60157751"
 
 Centro de seguridad de Microsoft Defender es el portal donde puede obtener acceso a las funcionalidades de Microsoft Defender para endpoints.
 
-Use el **panel de operaciones de** seguridad para obtener información sobre las distintas alertas en dispositivos y usuarios de la red.
-
 Use el **panel De & de administración** de vulnerabilidades para ampliar la visibilidad de la posición de seguridad general de su organización. Verás dispositivos que requieren atención y recomendaciones que pueden ayudarte a reducir la superficie de ataque en tu organización.
 
 Use el panel **análisis de** amenazas para evaluar y controlar continuamente la exposición a riesgos a Spectre y Meltdown.
@@ -53,6 +51,5 @@ En esta guía interactiva, aprenderá a investigar las amenazas a su organizaci�
 Tema | Descripción
 :---|:---
 [Introducción al portal](portal-overview.md) | Comprender el diseño del portal y las descripciones de área.
-[Ver el panel de operaciones de seguridad](security-operations-dashboard.md) | El panel de operaciones de Microsoft Defender para Endpoint  **Security** proporciona una instantánea de la red. Puede ver agregados de alertas, el estado general del servicio de los dispositivos de la red, investigar dispositivos, archivos y direcciones URL y ver instantáneas de amenazas vistas en dispositivos.
 [Ver el panel de administración & vulnerabilidades](tvm-dashboard-insights.md) | El panel de administración de **vulnerabilidades** de threat & permite ver la exposición y puntuación segura de Microsoft para dispositivos en paralelo con las recomendaciones de seguridad más importantes, la vulnerabilidad del software, las actividades de corrección y los dispositivos expuestos.
 [Ver el panel análisis de amenazas y realizar acciones de mitigación recomendadas](threat-analytics.md) | El **panel de análisis de** amenazas le ayuda a evaluar y controlar continuamente la exposición a riesgos a las amenazas. Usa los gráficos para identificar rápidamente los dispositivos para la presencia o ausencia de mitigaciones.

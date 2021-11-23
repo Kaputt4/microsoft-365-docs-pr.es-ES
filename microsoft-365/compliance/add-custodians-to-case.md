@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la herramienta de administración de custodia integrada en Advanced eDiscovery coordinar los flujos de trabajo e identificar orígenes de datos relevantes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d195690493e320407f7c9b1ca0d45da7c78955a7
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: b0a15610c84c9e1142cd1afa6ebf121f387ce807
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753555"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148849"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un Advanced eDiscovery caso
 
@@ -38,8 +38,6 @@ Puede agregar y administrar custodios en Advanced eDiscovery casos en cuatro pas
 
 4. Revise a los custodios y complete el proceso.
 
-   [![Ficha Orígenes en Advanced eDiscovery caso. ](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
-
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Asegúrese de que tiene los permisos necesarios
 
 Para agregar custodios a un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos. Esto le proporciona los permisos necesarios para agregar custodios a un caso y colocar una retención en los orígenes de datos de custodia. Para más información, consulte [Asignar permisos de eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions).
@@ -48,7 +46,7 @@ Para agregar custodios a un caso, debe ser miembro del grupo de roles administra
 
 1. Vaya a e inicie sesión con una cuenta de usuario a la que se han [https://compliance.microsoft.com](https://compliance.microsoft.com) asignado los permisos de exhibición de documentos electrónicos adecuados.
 
-2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, seleccione **Mostrar** todos los archivos  >    >  **de exhibición de documentos electrónicos Advanced eDiscovery** y seleccione la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank"> **Casos**</a>.
+2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, seleccione **eDiscovery**  >  **Advanced eDiscovery** y seleccione la [**pestaña Casos.**](https://go.microsoft.com/fwlink/p/?linkid=2173764)
 
 3. Seleccione el caso al que desea agregar custodios.
 
@@ -83,7 +81,7 @@ Para asociar otros buzones, sitios, Teams o grupos Yammer a un administrador esp
    - **Yammer:** se usa para asignar los grupos Yammer de los que el custodio es miembro actualmente. Seleccione los grupos que desea asignar al custodio y, a continuación, haga clic **en Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio SharePoint y el buzón de grupo asociados a ese grupo y los asigna al custodio.
 
    > [!NOTE]
-   > Puede usar  los selectores de Exchange y **SharePoint** para asociar otros equipos o grupos de Yammer (de los que un custodio no es miembro) a un custodio. Para ello, debe agregar el buzón y el sitio asociados con cada grupo o Yammer grupo.
+   > Puede usar los selectores **Exchange** y **SharePoint** ubicación para asociar cualquier buzón o sitio de la organización a un administrador. , Esto incluye asociar el buzón y el sitio para un equipo de Microsoft o un grupo Yammer del que un custodio no es miembro. Para ello, debe agregar el buzón y el sitio asociados con cada grupo o Yammer grupo.
 
 2. Puede ver el número total de buzones, sitios, Teams y grupos de Yammer asignados a cada custodio expandiendo cada uno de los custodios de la tabla. Cuando haya finalizado las ubicaciones de datos asignadas para cada custodio, estas asociaciones se mantendrán y usarán durante las fases de recopilación, procesamiento y revisión del flujo de trabajo Advanced eDiscovery usuario.
 

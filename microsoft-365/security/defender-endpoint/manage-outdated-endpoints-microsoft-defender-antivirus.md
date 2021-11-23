@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 144003528b322aa86ae0fa22aa40fa7aa934a0c7
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1cddc1fd238c31f8e3f8f2646875fd1539b8723a
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110912"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148859"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Administrar las actualizaciones y análisis del Antivirus de Windows Defender para puntos de conexión que están obsoletos
 
@@ -77,7 +77,7 @@ Use los cmdlets siguientes:
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
+Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Usar Windows de administración de datos (WMI) para configurar actualizaciones de protección de ponerse al día
 
@@ -155,7 +155,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-Consulte [Use PowerShell cmdlets to manage Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender for Cloud [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
+Consulte [Use PowerShell cmdlets to manage Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Usar Windows de administración de datos (WMI) para configurar exámenes de ponerse al día
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a81a83e3e915c4294bd0947bbd989b321fea11ed
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 62cc53910cb5f2c618a45f3ea755c6be7a49c853
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111584"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145015"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -49,7 +49,9 @@ Microsoft Defender para endpoint requiere una de las siguientes ofertas de licen
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) que incluye Windows 10 Enterprise E5 o Windows 11 Enterprise E5
-- Microsoft 365 A5 (M365 A5)
+- Microsoft 365 A5 (M365 A5) 
+- Microsoft 365 E3 (M365 E3) con Enterprise Mobility + Security E5 Add-on
+- Microsoft 365 Empresa Premium cuando se compra desde un [Proveedor de soluciones en la nube de Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
 - Seguridad de Microsoft 365 E5
 - Microsoft 365 A5 Security
 - Microsoft Defender para punto de conexión
@@ -101,7 +103,7 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (o posterior)](/windows/whats-new/ltsc/)
 - Windows 10 Education
-- Windows 10 Pro
+- Windows 10 Pro
 - Windows 10 Pro Education
 - Windows servidor
   - Windows Server 2008 R2 SP1

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3109b4665142dd5825a088d66c63673459aec9f9
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: e1dd5958893669012b78e57c57bd6b32c0e94d0c
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129557"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145061"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -113,7 +113,7 @@ Los siguientes detalles se aplican al nuevo paquete de soluciones unificado para
 
 <a name="integration-with-azure-defender"></a>
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender para la nube
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
 
 Microsoft Defender para endpoint se integra perfectamente con Microsoft Defender para la nube. Puede incorporar servidores automáticamente, hacer que los servidores supervisados por Azure Defender aparezcan en Defender for Endpoint y llevar a cabo investigaciones detalladas como cliente de Microsoft Defender para la nube.
 
@@ -132,6 +132,7 @@ Para obtener más información, vea [Integration with Microsoft Defender for Clo
 **Requisitos previos para Windows Server 2012 R2**
 
 Si ha actualizado completamente sus [](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) máquinas con el último paquete acumulativo mensual, **no hay requisitos** previos adicionales.
+
 
 El paquete del instalador comprobará si los siguientes componentes ya se han instalado mediante una actualización:
 

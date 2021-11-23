@@ -774,9 +774,9 @@
           items:
             - name: Crear y administrar un caso
               href: create-and-manage-advanced-ediscoveryv2-case.md
-            - name: Uso de casos grandes (vista previa)
-              href: advanced-ediscovery-large-cases.md
-        - name: Flujo de trabajo de eDiscovery avanzado para contenido de Teams (vista previa)
+            - name: Usar el nuevo formato de caso
+              href: advanced-ediscovery-new-case-format.md
+        - name: Flujo de trabajo de eDiscovery avanzado para contenido de Teams
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Administrar orígenes de datos custodios y no custodios
           href: managing-custodians.md

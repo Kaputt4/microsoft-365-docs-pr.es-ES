@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la herramienta de importación dto agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en Advanced eDiscovery.
-ms.openlocfilehash: f0d9290d6014b820008408ea6ab9249c0c5a28f4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5e2ce53a227462a1fddd7785faf83355ca70611c
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757461"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148736"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importar custodios a un Advanced eDiscovery caso
 
@@ -51,21 +51,21 @@ Después de descargar la plantilla de custodia CSV, puede agregar custodios y su
 | Nombre de columna|Descripción|
 |:------- |:------------------------------------------------------------|
 |**Contacto de custodiaEmail**     |Dirección de correo electrónico UPN del custodio. Por ejemplo, sarad@contoso.onmicrosoft.com.           |
-|**Exchange Habilitado** | Valor TRUE/FALSE para incluir o no incluir el buzón del custodio.      |
-|**OneDrive Habilitado** | Valor TRUE/FALSE para incluir o no incluir la cuenta OneDrive para la Empresa custodia. |
+|**Exchange habilitado** | Valor TRUE/FALSE para incluir o no incluir el buzón del custodio.      |
+|**OneDrive habilitado** | Valor TRUE/FALSE para incluir o no incluir la cuenta OneDrive para la Empresa custodia. |
 |**Is OnHold**        | Valor TRUE/FALSE para indicar si se deben poner en espera los orígenes de datos de custodia. <sup>1</sup>     |
 |**Tipo Workload1**         |Valor de cadena que indica el tipo de origen de datos que se asociará con el custodio. Los valores posibles son: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<sup>2</sup><br/>- YammerMailbox<sup>2</sup>| 
 |**Ubicación workload1**     | Según el tipo de carga de trabajo, esta sería la ubicación del origen de datos. Por ejemplo, la dirección de correo electrónico de un buzón Exchange o la dirección URL de un SharePoint sitio. |
 |||
 
 > [!NOTE]
-> <sup>1</sup> Puede poner un máximo de 1.000 buzones y 100 sitios en espera mediante el proceso de importación de custodia y el archivo CSV. Puede usar este proceso para agregar más de 1.000 custodios a un caso, pero aún se aplican los límites de retención. Para obtener más información acerca de los límites de retención, vea [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
+> <sup>1</sup> Cuando ponga más de 1.000 buzones o 100 sitios en espera, el sistema escalará automáticamente la retención de exhibición de documentos electrónicos según sea necesario. Esto significa que el sistema agregará automáticamente ubicaciones de datos a varias retenciones, en lugar de agregarlas a una sola retención. Sin embargo, todavía se aplica el límite de 10 000 retenciones de casos por organización. Para obtener más información acerca de los límites de retención, vea [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
 <br>
 > <sup>2</sup> Cuando se incluyen las cargas de trabajo de TeamsMailbox y YammerMailbox en el archivo CSV, el sitio de grupo (TeamSite y YammerSite) se agregan automáticamente de forma predeterminada. No es necesario especificar TeamsSite y YammerSite por separado en el archivo CSV.
 
 Este es un ejemplo de un archivo CSV con información de custodia:<br/><br/>
 
-|Contacto de custodiaEmail      | Exchange Habilitado | OneDrive Habilitado | Is OnHold | Tipo Workload1 | Ubicación workload1             |
+|Contacto de custodiaEmail      | Exchange habilitado | OneDrive habilitado | Is OnHold | Tipo Workload1 | Ubicación workload1             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |robinc@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | |  |
@@ -94,7 +94,7 @@ La herramienta de importación de custodia busca y valida a los custodios median
 
 Después de que los custodios se validan y se agregan al caso, se agregan cada buzón principal y OneDrive cuenta asociada a un custodio.
 
-Sin embargo, si no se encuentra ninguno de los otros orígenes de datos (como sitios de SharePoint, Microsoft Teams, grupos de Microsoft 365 o grupos de Yammer) asociados con  un custodio, ninguno de ellos se  asigna al custodio y el valor No validado se muestra en la columna Estado junto al custodio en los orígenes de datos  tab.
+Sin embargo, si no se encuentra ninguno de los otros orígenes de datos (como sitios de SharePoint, Microsoft Teams, grupos de Microsoft 365 o grupos de Yammer) asociados con  un custodio, ninguno de ellos se  asigna al custodio y el valor No validado se muestra en la columna Estado junto al custodio en los orígenes de datos   tab.
 
 Para agregar orígenes de datos validados para un custodio:
 

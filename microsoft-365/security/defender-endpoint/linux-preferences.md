@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8a51358d18edaf4bab680d2c63268638eca3283
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9620fd5209bb72617cf41b6b9aff48f39d607b61
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60585996"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61144996"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -112,7 +112,7 @@ Determina si la funcionalidad de bloqueo y supervisión de comportamiento está 
 
 |Descripción|Valor|
 |---|---|
-|**Clave**|name|
+|**Clave**|behaviorMonitoring|
 |**Tipo de datos**|Cadena|
 |**Posibles valores**|deshabilitado <p> habilitado (predeterminado)|
 |**Comments**|Disponible en Defender para endpoint versión 101.45.00 o posterior.|
@@ -182,7 +182,7 @@ Especifica la directiva de combinación para exclusiones. Puede ser una combinac
 |**Comments**|Disponible en Defender para endpoint versión 100.83.73 o posterior.|
 |
 
-#### <a name="scan-exclusions"></a>Exclusiones de examen
+#### <a name="scan-exclusions"></a>Exclusiones de análisis
 
 Entidades que se han excluido del examen. Las exclusiones se pueden especificar por rutas de acceso completas, extensiones o nombres de archivo.
 (Las exclusiones se especifican como una matriz de elementos, el administrador puede especificar tantos elementos como sea necesario, en cualquier orden).
@@ -291,7 +291,7 @@ Lista de amenazas (identificadas por su nombre) que no están bloqueadas por el 
 |**Tipo de datos**|Matriz de cadenas|
 |
 
-#### <a name="disallowed-threat-actions"></a>Acciones de amenazas no permitidos
+#### <a name="disallowed-threat-actions"></a>Acciones de amenazas no permitidas
 
 Restringe las acciones que el usuario local de un dispositivo puede realizar cuando se detectan amenazas. Las acciones incluidas en esta lista no se muestran en la interfaz de usuario.
 
@@ -434,7 +434,7 @@ Determina si la protección entregada en la nube está habilitada en el disposit
 |**Posibles valores**|true (valor predeterminado) <p> false|
 |
 
-#### <a name="diagnostic-collection-level"></a>Nivel de colección de diagnóstico
+#### <a name="diagnostic-collection-level"></a>Nivel de recopilación de diagnóstico
 
 Los datos de diagnóstico se usan para mantener Defender for Endpoint seguro y actualizado, detectar, diagnosticar y corregir problemas y también realizar mejoras en el producto. Esta configuración determina el nivel de diagnóstico enviado por el producto a Microsoft.
 

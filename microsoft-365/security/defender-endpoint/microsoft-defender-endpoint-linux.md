@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1b8fceed1e749a21323ade7ee87ab54a7fcffde8
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 045f3ed99f119ff744d7c8e3cbed8a5cdab88fee
+ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478990"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61145039"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -68,6 +68,9 @@ En general, debe seguir los siguientes pasos:
     - [Implementar con la herramienta de administración de configuración de Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 Si experimenta algún error de instalación, consulte [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
+
+> [!NOTE]
+> No se admite la instalación de Microsoft Defender para Endpoint en otra ubicación que no sea la ruta de instalación predeterminada. 
 
 ### <a name="system-requirements"></a>Requisitos del sistema
 

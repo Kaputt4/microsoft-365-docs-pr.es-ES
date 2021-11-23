@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a789c87a6e0988c5b5b7ca57233ede1ad1a8408
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: db3bdb7fc7c4dec7697fc8881687f70ad21e0642
+ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111152"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61148883"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -139,7 +139,7 @@ Vea los siguientes artículos para obtener más información:
 - [Set-MpPreference -SignatureFallbackOrder](/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](/powershell/module/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use cmdlets de PowerShell para configurar y ejecutar Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Cmdlets de Defender para la nube](/powershell/module/defender/index)
+- [Cmdlets de Antivirus de Defender](/powershell/module/defender/index)
 
 ## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>Use Windows Management Instruction (WMI) para administrar la ubicación de actualización
 
