@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Obtenga información sobre Office 365 Alemania.
-ms.openlocfilehash: 0496eae485f3be8298f0ab77d066a23fa87f9389
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 065cd97397bbc68adb281fca734c5398158be691
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154091"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152387"
 ---
 # <a name="learn-about-office-365-germany"></a>Obtenga información sobre Office 365 Alemania
 
@@ -40,7 +40,7 @@ Las necesidades de los clientes han cambiado y el aislamiento de Office 365 Alem
   
 ## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>¿Qué servicios en línea de Microsoft están disponibles en Office 365 Alemania?
 
-Office 365 Las ofertas de planes de Alemania se alinean con las ofertas globales tanto como sea posible en este entorno aislado. Sin embargo, se excluyen los planes relacionados con Yammer, los que finalizarán su ciclo de vida en breve y los planes disponibles a través de programas sin ánimo de lucro. Office 365 E5, SPE y otros servicios estarán disponibles después de la disponibilidad general de Office 365 Alemania. 
+Office 365 ofertas de planes de Alemania se alinean con las ofertas globales tanto como sea posible en este entorno aislado. Sin embargo, se excluyen los planes relacionados con Yammer, los que finalizarán su ciclo de vida en breve y los planes disponibles a través de programas sin ánimo de lucro. Office 365 E5, SPE y otros servicios estarán disponibles después de la disponibilidad general de Office 365 Alemania. 
   
 Los siguientes servicios y características están disponibles en algunos [planes de suscripción de Office 365 Germany](https://go.microsoft.com/fwlink/p/?linkid=839016). Vea también los [términos de servicios en línea](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
@@ -58,7 +58,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Office aplicaciones para la web
     
-- Microsoft 365 Vídeo
+- Microsoft 365 vídeo
     
 - Project para la web
     
@@ -90,8 +90,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
 
 |Elemento|Información|
 |-----|-----|
-|Portal de inicio de sesión  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
-|Suscripciones, facturación y soporte técnico  <br/> |Soporte técnico basado en Alemania disponible en alemán e inglés Para obtener más información, vea [Contact support for business products - Admin Help](../../business-video/get-help-support.md).  <br/> |
+|Suscripciones, facturación y soporte técnico  <br/> |Soporte técnico basado en Alemania disponible en alemán e inglés. Para obtener más información, consulte [Póngase en contacto con el soporte técnico para productos empresariales: Ayuda para administradores.](../../business-video/get-help-support.md)  <br/> |
 |Direcciones IP y URL  <br/> |Consulte [Puntos de conexión de Office 365 Germany](../../enterprise/microsoft-365-germany-endpoints.md).  <br/> |
 |Yammer  <br/> |No disponible.  <br/> |
 |Versiones de Office versiones anteriores Office 2013 o Aplicaciones Microsoft 365 para empresas<sup>1</sup> <br/> |No compatible.  <br/> |

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo ver detalles, editar y editar en masa la lista de custodios en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43181a7e2e40da6209025d06baaa404952afe66d
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 794677c8675f044bafb1c9a441e6c2bbee3e1c86
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148724"
+ms.locfileid: "61152423"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Administrar custodios en un Advanced eDiscovery caso
 
@@ -58,7 +58,7 @@ Para ver los detalles sobre un custodio, haga clic en el custodio de la lista de
 
   - **Ubicaciones de custodia**. Muestra el recuento y el tipo de orígenes de datos (buzones, sitios y Teams) que están asociados con el custodio y forman parte del caso.
 
-    - Cada ubicación de datos muestra su estado de retención. Valores posibles para las **estadísticas de** retención: En espera , **No en espera** y En **curso**.
+    - Cada ubicación de datos muestra su estado de retención. Valores posibles para el estado de retención: **En espera**, No **en espera** y En **curso**.
 
     - Si no ve un estado de retención para un origen de datos, compruebe el  estado de la retención de custodia que aparece en la pestaña Retención del caso. La retención de custodia identifica los orígenes de datos específicos en espera.
 

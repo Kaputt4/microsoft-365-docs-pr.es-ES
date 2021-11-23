@@ -1,5 +1,5 @@
 ---
-title: Windows y Office 365 de laboratorio de implementación
+title: Kit de laboratorio de implementación de Windows y Office 365
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre dónde obtener acceso al kit Windows y Office deployment lab.
-ms.openlocfilehash: cda0cf9df86e6a02139af7e0baa133afd19f1c13
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9a388a1f9095994e45b07d403e347a5fbfb413a7
+ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128177"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "61152411"
 ---
-# <a name="windows-and-office-365-deployment-lab-kit"></a>Windows y Office 365 de laboratorio de implementación
+# <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office 365
 
 El kit de laboratorio de implementación Windows y Office 365 está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise o Windows 11 Enterprise y Aplicaciones Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, Análisis de escritorio, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
 Este kit es muy recomendable para las organizaciones que se Windows 8.1 actualizaciones a Windows 10. También se aplica si actualmente usa Windows 10, Aplicaciones Microsoft 365 para empresas (anteriormente Office 365 ProPlus) o Office 2019. Como entorno aislado, el laboratorio resultante es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
 
-## <a name="windows-10-and-windows-11-versions-of-the-lab-kit-are-now-available-for-free-download-in-the-microsoft-evaluation-center"></a>Windows 10 y Windows 11 versiones del kit de laboratorio ahora están disponibles para su descarga gratuita en el Centro de evaluación de Microsoft. 
+**Windows 10 y Windows 11 versiones del kit de laboratorio ahora están disponibles para su descarga gratuita en el Centro de evaluación de Microsoft.**
 
-[Descargar el kit Windows 10 y Office 365 de](https://www.microsoft.com/evalcenter/evaluate-lab-kit)laboratorio de implementación Descargar el kit de laboratorio de implementación Windows 
- [11](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit) y Office 365 de implementación
+[Descargar el kit Windows 10 y Office 365 de implementación](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
+[Descargar el Windows de laboratorio de implementación Office 365 11 y 11](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 
@@ -39,7 +39,7 @@ El laboratorio le proporciona un entorno de laboratorio virtual aprovisionado au
 
 - Windows 10 Enterprise, versión 21H1 o Windows 11 Enterprise
 - Windows 7 Enterprise
-- ¡NUEVO! Microsoft Endpoint Configuration Manager, versión 2103
+- Microsoft Endpoint Configuration Manager, versión 2103
 - Windows Assessment and Deployment Kit para Windows 10
 - Microsoft Deployment Toolkit
 - Microsoft Application Virtualization (App-V)
@@ -103,8 +103,9 @@ Nota: La Windows versión 11 del laboratorio incluye la guía de laboratorio Win
 
 - Preparar, implementar, optimizar
 
-[Descargar el kit Windows 10 y Office 365 de](https://www.microsoft.com/evalcenter/evaluate-lab-kit)laboratorio de implementación Descargar el kit de laboratorio de implementación Windows 
- [11](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit) y Office 365 de implementación
+## <a name="download-the-lab"></a>Descargar el laboratorio
+[Descargar el kit Windows 10 y Office 365 de implementación](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
+[Descargar el Windows de laboratorio de implementación Office 365 11 y 11](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
 > Use una conexión a Internet de banda ancha para descargar este contenido y permitir de 30 a 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El Windows 10 expira el 16 de febrero de 2022. El Windows 11 expira el 10 de febrero de 2022. Las nuevas versiones se publicarán antes de la expiración.
