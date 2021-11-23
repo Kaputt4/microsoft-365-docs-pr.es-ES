@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: febd40a6312b794c62339e6b19f5425c2acf9542
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 047cc8e50e502d30cdeb13bbde5ebc2ff6621922
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914637"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137032"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -54,7 +54,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
   - Continuidad empresarial del centro de datos y recuperación ante desastres
   - Protecciones del entorno del centro de datos
   - Seguridad de acceso físico del centro de datos
-  - Microsoft 365 Programa de cumplimiento de SDL
+  - Microsoft 365 de cumplimiento de SDL
   - Control de acceso de los ingenieros de servicio de Microsoft 365
   - Guía de evaluación de riesgos para MS Cloud
 
@@ -66,19 +66,19 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 - [La referencia de sugerencias de directiva de prevención de](dlp-policy-tips-reference.md) pérdida de datos se actualizó para la compatibilidad con macOS y la clasificación avanzada.
 - [La incorporación de dispositivos macOS Microsoft 365 (versión preliminar)](device-onboarding-macos-overview.md) se actualizó para la compatibilidad con macOS y la clasificación avanzada.
 - Se agregaron las siguientes páginas nuevas para dispositivos de incorporación:
-  - [Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con Intune (versión preliminar)](device-onboarding-offboarding-macos-intune.md)
+  - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante Intune (versión preliminar)](device-onboarding-offboarding-macos-intune.md)
   - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-intune-mde.md)
-  - [Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con JAMF Pro (versión preliminar)](device-onboarding-offboarding-macos-jamfpro.md)
+  - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)](device-onboarding-offboarding-macos-jamfpro.md)
   - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-jamfpro-mde.md)
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Recopilar](advanced-ediscovery-cloud-attachments.md) datos adjuntos en la nube en Advanced eDiscovery además de recopilar la versión más reciente de los datos adjuntos de la nube, puede recopilar la versión que se compartió en un mensaje de correo electrónico o en una Teams conversación de chat; La nueva funcionalidad de aplicar automáticamente una etiqueta de retención a los datos adjuntos de la nube permite recopilar la versión compartida.
-- [Configurar versiones históricas en Advanced eDiscovery](advanced-ediscovery-historical-versions.md) nueva funcionalidad que indiza todas las versiones de documentos almacenados en un sitio SharePoint búsqueda; esto significa que las versiones de documento que contienen contenido que coinciden con una consulta de colección se devuelven en los resultados de la búsqueda.
+- Recopilar datos adjuntos en la nube en [Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md) además de recopilar la versión más reciente de los datos adjuntos de la nube, puede recopilar la versión que se compartió en un mensaje de correo electrónico o una conversación de chat de Teams; la nueva capacidad de aplicar automáticamente una etiqueta de retención a los datos adjuntos de la nube permite recopilar la versión compartida.
+- [Configurar](advanced-ediscovery-historical-versions.md) versiones históricas en Advanced eDiscovery nueva funcionalidad que indiza todas las versiones de documentos almacenados en un sitio de SharePoint para la búsqueda; esto significa que las versiones de documentos que contienen contenido que coincide con una consulta de colección se devuelven en los resultados de la búsqueda.
 
 ### <a name="encryption"></a>Cifrado
 
-- Usar el cifrado de un extremo a otro para llamadas de Microsoft Teams [(versión preliminar pública)](/microsoftteams/teams-end-to-end-encryption) Nuevo contenido para la versión preliminar pública.
+- [Usar el cifrado de un](/microsoftteams/teams-end-to-end-encryption) extremo a otro para las llamadas Microsoft Teams (versión preliminar pública) Nuevo contenido para la versión preliminar pública.
 
 ### <a name="information-governance"></a>Gobierno de información
 
@@ -135,7 +135,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Use el editor KQL](ediscovery-kql-editor.md) para crear consultas de búsqueda de vista previa pública de una nueva forma de crear consultas de búsqueda en búsqueda de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery; el editor de KQL proporciona autocompletion para las propiedades y condiciones compatibles con búsquedas y muestra listas de valores admitidos para las propiedades y condiciones estándar; el editor de KQL también proporciona detección de errores y sugerencias para corregir posibles errores en consultas de búsqueda
+- Use el [editor de KQL](ediscovery-kql-editor.md) para crear consultas de búsqueda vista previa pública de una nueva forma de crear consultas de búsqueda en búsqueda de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery; el editor de KQL proporciona autocompleción para las propiedades y condiciones compatibles con búsquedas y muestra listas de valores admitidos para las propiedades y condiciones estándar; el editor KQL también proporciona detección de errores y sugerencias para corregir posibles errores en consultas de búsqueda
 
 ### <a name="information-barriers"></a>Barreras de información
 
@@ -206,8 +206,8 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 ### <a name="advanced-ediscovery"></a>eDiscovery avanzado
 
-- [Advanced eDiscovery flujo](teams-workflow-in-advanced-ediscovery.md) de trabajo de contenido en Microsoft Teams casos grandes se agregó un flujo de trabajo completo de administración de Teams contenido en Advanced eDiscovery; incluye detalles sobre la vista previa de la nueva funcionalidad de transcripción de conversación.
-- [Use casos](advanced-ediscovery-large-cases.md) grandes en Advanced eDiscovery se agregó una vista previa del nuevo formato de caso grande que amplía los límites de casos y conjunto de revisión y admite transcripciones de conversación para conversaciones Teams y Yammer conversaciones de chat.
+- [Advanced eDiscovery](teams-workflow-in-advanced-ediscovery.md) flujo de trabajo de contenido de Microsoft Teams agregó un flujo de trabajo completo de administración de contenido de Teams en Advanced eDiscovery; incluye detalles sobre la vista previa de la nueva funcionalidad de transcripción de conversación.
+- [Use el](advanced-ediscovery-new-case-format.md) nuevo formato de caso en Advanced eDiscovery se agregó una vista previa del nuevo formato de caso que amplía los límites de casos y conjunto de revisión y admite transcripciones de conversación para conversaciones de Teams y Yammer de chat.
 
 ### <a name="app-governance"></a>Gobierno de aplicaciones
 
@@ -292,7 +292,7 @@ Se agregaron las páginas siguientes:
 
 - El Asistente para directivas de etiquetas de confidencialidad ahora admite Outlook [opciones](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) específicas para la etiqueta predeterminada y el etiquetado obligatorio como una configuración más sencilla que la configuración avanzada de PowerShell (aún compatible).
 - Ahora se [está implementando](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) la compatibilidad con marcas dinámicas con variables para Word, Excel y PowerPoint en la Web
-- Para [las directivas de etiquetado](apply-sensitivity-label-automatically.md) automático para Exchange, si la etiqueta está configurada para el cifrado, ese cifrado no se aplica. Además, Exchange directivas de etiquetado automático, ahora puede configurar excepciones y las siguientes condiciones nuevas: asunto, dirección de destinatario o dirección del remitente coinciden con patrones; la dirección del destinatario contiene palabras; el dominio del remitente es, el destinatario es un miembro de; sender is.
+- Para [las directivas de etiquetado](apply-sensitivity-label-automatically.md) automático para Exchange, si la etiqueta está configurada para el cifrado, ese cifrado no se aplica. Además, para Exchange directivas de etiquetado automático, ahora puede configurar excepciones y las siguientes condiciones nuevas: asunto, dirección de destinatario o dirección del remitente coinciden con patrones; la dirección del destinatario contiene palabras; el dominio del remitente es, el destinatario es miembro; el remitente es.
 - Al usar etiquetas de confidencialidad con equipos, grupos y sitios, puede usar Set-SPOTenant con el parámetro BlockSendLabelMismatchEmail para evitar que el correo electrónico generado automáticamente cuando se registra el evento de auditoría Desajuste de confidencialidad del documento detectado.   Para obtener más información, vea [Auditing sensitivity label activities](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities).
 - La [configuración del contexto de autenticación](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) ahora se ha implantado completamente en la vista previa de las etiquetas de confidencialidad. Además, esta configuración ahora es compatible con Microsoft Teams.
 - Los archivos etiquetados y cifrados por un nombre de principio de servicio (como Microsoft Cloud App Security) y luego cargados en SharePoint y OneDrive ahora se pueden abrir en Office para la Web cuando haya habilitado etiquetas de confidencialidad para archivos Office en [ SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).

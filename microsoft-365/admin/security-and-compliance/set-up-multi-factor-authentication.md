@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -26,19 +27,28 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 824eefed4dbda14edab7608324a317b0f504b7ef
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ba8e0794c1918095d029e862cbd8c860066ed51e
+ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554161"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61128249"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 
-En función de su comprensión de [autenticación multifactor (MFA) y su compatibilidad con Microsoft 365](multi-factor-authentication-microsoft-365.md), es el momento de configurarla e implementarla en su organización.
+La autenticación multifactor significa que usted y sus empleados deben proporcionar más de una manera de iniciar sesión en Microsoft 365 es una de las formas más fáciles de proteger su negocio. En función de su comprensión de [autenticación multifactor (MFA) y su compatibilidad con Microsoft 365](multi-factor-authentication-microsoft-365.md), es el momento de configurarla e implementarla en su organización. 
 
 > [!IMPORTANT]
 > Si ha comprado la suscripción o la versión de evaluación después del 21 de octubre de 2019, y se le solicita la MFA al iniciar sesión, los [valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) se han habilitado automáticamente para la suscripción.
+
+## <a name="watch-turn-on-multifactor-authentication"></a>Vea: Activar la autenticación multifactor
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
+
+1. Vaya a la Centro de administración de Microsoft 365 en <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>.
+1. Seleccione **Mostrar todos** y, a continuación, elija el **Centro de administración de Azure Active Directory**.
+1. Seleccione **Azure Active Directory**, **Propiedades**, **Administrar valores predeterminados de seguridad**.
+1. En **Habilitar valores predeterminados de seguridad**, seleccione **Sí** y, a continuación, **Guardar**.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
-ms.openlocfilehash: 1c52a3ea0c803af89f9529d6529bd7610ff05d80
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1197d54206abaa42b59f7c3b81365065191904cf
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200298"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137114"
 ---
-# <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams casos grandes (versión preliminar)
+# <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams
 
 En este artículo se proporciona un conjunto completo de procedimientos, directrices y procedimientos recomendados para usar Advanced eDiscovery conservar, recopilar, revisar y exportar contenido de Microsoft Teams. El objetivo de este artículo es ayudarle a optimizar el flujo de trabajo de exhibición de documentos electrónicos para Teams contenido.
 
@@ -49,7 +49,7 @@ Un requisito previo para administrar el contenido Teams en Advanced eDiscovery e
 
 ## <a name="create-a-case-for-teams-content"></a>Crear un caso para el Teams contenido
 
-El primer paso para administrar Teams contenido en Advanced eDiscovery es crear un caso con el formato de caso grande que está optimizado para administrar Teams contenido. Estas son las ventajas de usar el formato de mayúsculas y minúsculas para Teams contenido:
+El primer paso para administrar Teams contenido en Advanced eDiscovery es crear un caso con el nuevo formato de caso optimizado para administrar Teams contenido. Estas son las ventajas de usar el nuevo formato de caso para Teams contenido:
 
 - Compatibilidad con el subproceso de conversación, en el que los mensajes adicionales de la misma conversación que incluyen elementos dinámicos se recopilan y agregan automáticamente a conjuntos de revisión.
 
@@ -57,9 +57,9 @@ El primer paso para administrar Teams contenido en Advanced eDiscovery es crear 
 
 - Las colecciones de hasta 1 TB se pueden agregar a conjuntos de revisión, lo que le permite recopilar y cantidades grandes de Teams contenido en un caso.
 
-Para obtener más información acerca del aumento de los límites de casos para casos grandes, vea [Usar casos grandes en Advanced eDiscovery](advanced-ediscovery-large-cases.md).
+Para obtener más información acerca de los límites de casos aumentados, vea [Use the new case format in Advanced eDiscovery](advanced-ediscovery-new-case-format.md).
 
-Para crear un caso grande:
+Para crear un caso:
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
 
@@ -67,11 +67,11 @@ Para crear un caso grande:
 
 3. En la **Advanced eDiscovery,** haga clic en la **pestaña Casos** y, a continuación, haga **clic en Crear un caso**.
 
-   Se **muestra la página desplegable Nuevo** caso de exhibición de documentos electrónicos. La **sección Formato de** caso proporciona la opción de crear un caso grande.
+   Se **muestra la página desplegable Nuevo** caso de exhibición de documentos electrónicos. La **sección Formato de** caso proporciona la opción de crear un caso con el nuevo formato de caso.
 
-   ![Opción de caso grande en la página Nuevo caso de exhibición de documentos electrónicos.](..\media\AeDLargeCases1.png)
+   ![Opción de caso grande en la página Nuevo caso de exhibición de documentos electrónicos.](..\media\AeDNewCaseFormat1.png)
 
-4. Después de asignar un nombre al caso, seleccione la **opción Caso grande** y, a continuación, haga clic en **Guardar** para crear el caso grande.
+4. Después de asignar un nombre al caso, seleccione la **opción** Nuevo y, a continuación, haga clic **en Guardar** para crear el caso.
 
 ## <a name="add-teams-custodial-data-sources-and-preserve-teams-content"></a>Agregar Teams de datos con custodia y conservar Teams contenido  
 
@@ -164,7 +164,7 @@ Para crear una colección de Teams contenido:
 
    1. **Guardar colección como borrador**. Elija esta opción para crear una colección borrador. Como se explicó anteriormente, un borrador de colección no agrega los resultados de la colección a un conjunto de revisión. Devuelve una estimación de los resultados de búsqueda que coinciden con la consulta de búsqueda de los orígenes de datos en el ámbito de la colección. Esto le ofrece la oportunidad de ver [estadísticas e informes de colecciones[(collection-statistics-reports.md)] y editar y volver a ejecutar la colección borrador. Cuando esté satisfecho con el resultado de una colección borrador, puede confirmarlo en un conjunto de revisión. Para obtener más información, vea [Create a draft collection](create-draft-collection.md).
 
-   2. **Recopilar elementos y agregarlos a un conjunto de revisión**. Elija esta opción para ejecutar la colección y, a continuación, agregue los resultados a un conjunto de revisión. Puede agregar la colección a un conjunto de revisión nuevo o existente. Las opciones para recopilar mensajes de Teams contextuales (también denominados subprocesos de *conversación)* y recopilar datos adjuntos en la nube se seleccionan de forma predeterminada y no se pueden no seleccionar. Estas opciones se aplican automáticamente debido al formato de mayúsculas y minúsculas que usó al crear inicialmente el nuevo caso para Teams contenido. Para obtener más información acerca de cómo confirmar colecciones en un conjunto de revisión, vea [Commit a draft collection to a review set](commit-draft-collection.md).
+   2. **Recopilar elementos y agregarlos a un conjunto de revisión**. Elija esta opción para ejecutar la colección y, a continuación, agregue los resultados a un conjunto de revisión. Puede agregar la colección a un conjunto de revisión nuevo o existente. Las opciones para recopilar mensajes de Teams contextuales (también denominados subprocesos de *conversación)* y recopilar datos adjuntos en la nube se seleccionan de forma predeterminada y no se pueden no seleccionar. Estas opciones se aplican automáticamente debido al nuevo formato de caso que usó al crear inicialmente el caso para Teams contenido. Para obtener más información acerca de cómo confirmar colecciones en un conjunto de revisión, vea [Commit a draft collection to a review set](commit-draft-collection.md).
 
 10. Cuando haya terminado de configurar la colección, envíe la colección para crear un borrador de colección o recopilar elementos y agregarlos a un conjunto de revisión.
 
@@ -223,7 +223,7 @@ Las capturas de pantalla siguientes muestran un ejemplo de conversación en el T
 
 ### <a name="transcript-conversation-threading"></a>Subprocesos de conversación de transcripción
 
-La funcionalidad de subprocesos de conversación en formato de caso grande en Advanced eDiscovery ayuda a identificar contenido contextual relacionado con elementos que pueden ser relevantes para la investigación. Esta característica produce vistas de conversación distintas que incluyen mensajes de chat que preceden y siguen los elementos que coinciden con la consulta de búsqueda durante la colección. Esta funcionalidad le permite revisar de forma eficaz y rápida conversaciones de chat completas (llamadas conversaciones enhebradas) en Microsoft Teams. Como se explicó anteriormente, las conversaciones de chat se reconstruyen en archivos de transcripción HTML cuando Advanced eDiscovery agrega Teams contenido a un conjunto de revisión.
+La funcionalidad de subprocesos de conversación en el nuevo formato de caso Advanced eDiscovery ayuda a identificar contenido contextual relacionado con elementos que pueden ser relevantes para la investigación. Esta característica produce vistas de conversación distintas que incluyen mensajes de chat que preceden y siguen los elementos que coinciden con la consulta de búsqueda durante la colección. Esta funcionalidad le permite revisar de forma eficaz y rápida conversaciones de chat completas (llamadas conversaciones enhebradas) en Microsoft Teams. Como se explicó anteriormente, las conversaciones de chat se reconstruyen en archivos de transcripción HTML cuando Advanced eDiscovery agrega Teams contenido a un conjunto de revisión.
 
 Esta es la lógica usada por Advanced eDiscovery para incluir mensajes adicionales y archivos de transcripción de respuestas que proporcionan contexto alrededor de los elementos que coinciden con la consulta de colección (denominada elementos dinámicos) que usó al recopilar Teams contenido. Los distintos comportamientos de subprocesos se basan en los tipos de chats y la consulta de búsqueda usada para recopilar los elementos dinámicos. Hay dos escenarios de colección comunes:
 

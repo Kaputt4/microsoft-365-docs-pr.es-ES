@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo crear y administrar Advanced eDiscovery casos. El primer paso es crear un caso y empezar a usar Advanced eDiscovery características y funcionalidades.
-ms.openlocfilehash: 48e6f255361591f270ac95e525c4a1e33b6b7212
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 9969f0afa63094f2a7bf49df921f61dd0d3da2a3
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747793"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137140"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Crear y administrar un Advanced eDiscovery caso
 
@@ -41,7 +41,7 @@ Complete los pasos siguientes para crear un caso y agregar miembros. El usuario 
 
 2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo **y,** a continuación, seleccione **Exhibición** de documentos electrónicos avanzada y, a continuación,  >  seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank"> **pestaña Casos**</a>.
 
-1. Seleccione **Crear un caso**.
+3. Seleccione **Crear un caso**.
 
 4. En la **página desplegable** Nuevo caso de exhibición de documentos electrónicos, asigne al caso un nombre (obligatorio) y, a continuación, escriba un número de caso y una descripción opcionales. El nombre del caso debe ser único en la organización.
 

@@ -15,12 +15,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 533b48aecec033c8e16e02cbf3db4f8f75a53ef7
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 1948a426e7f7088af92f734385d3b47565537151
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881906"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137176"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -72,7 +72,7 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
 5. Seleccione Crear su propia aplicación
 
-   ![AAD Galería](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
+   ![AAD galería](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
 
 6. Escriba un nombre para la aplicación (puede ser específico de las convenciones de nomenclatura de su organización) y seleccione registrar una aplicación para integrarla con Azure AD y, a continuación, crear.
 
@@ -362,7 +362,7 @@ El envío por lotes de migración también se admite desde el nuevo Centro Excha
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto en el origen como en el destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 
@@ -420,7 +420,7 @@ Get-MoveRequest -Flags "CrossTenant"
    ```powershell
    # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
    # This action should create the target mail enabled users (MEUs) in the Target tenant
-   Start-ADSyncSyncCycle
+   Start-ADSyncCycle
    ```
 
 **¿Cómo accedemos a Outlook día 1 después de mover el buzón de uso?**
@@ -641,7 +641,7 @@ No, después de una migración de buzones entre inquilinos, la exhibición de do
       | Exchange Online (plan 2)                         |
       | Archivado de Exchange Online para Exchange Online    |
       | Archivado de Exchange Online para Exchange Server    |
-      | Exchange Online Complemento de usuario inactivo             |
+      | Exchange Online complemento de usuario inactivo             |
       | Quiosco de Exchange Online                            |
       | Exchange Online Multi-Geo                        |
       | Plan 1 de Exchange Online                           |
@@ -651,7 +651,7 @@ No, después de una migración de buzones entre inquilinos, la exhibición de do
       | Information Protection para Office 365 - Premium  |
       | Information Protection para Office 365 - Estándar |
       | Ideas de MyAnalytics                          |
-      | Microsoft 365 Auditoría avanzada                  |
+      | Microsoft 365 auditoría avanzada                  |
       | Microsoft Bookings                               |
       | Centro de negocios de Microsoft                        |
       | Microsoft MyAnalytics (Completo)                     |
@@ -659,5 +659,5 @@ No, después de una migración de buzones entre inquilinos, la exhibición de do
       | Microsoft Defender para Office 365 (Plan 1)       |
       | Microsoft Defender para Office 365 (Plan 2)       |
       | Office 365 Privileged Access Management          |
-      | Premium Cifrado en Office 365                 |
+      | Premium cifrado en Office 365                 |
       |                                                  |

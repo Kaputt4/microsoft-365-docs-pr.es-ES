@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use colecciones en Advanced eDiscovery recopilar datos adjuntos en la nube para su revisión en una investigación o caso.
-ms.openlocfilehash: 22986c8f844f035f4da57ccdfa3ee523e39118ec
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bdf30fea0e168d4b36175296f524ade13539970b
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717660"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137164"
 ---
 # <a name="collect-cloud-attachments-in-advanced-ediscovery-preview"></a>Recopilar datos adjuntos en la nube Advanced eDiscovery (versión preliminar)
 
@@ -40,7 +40,7 @@ En la siguiente captura de pantalla se muestra la opción de incluir los destino
 ![La opción de incluir datos adjuntos en la nube al confirmar una colección en un conjunto de revisión](../media/CollectCloudAttachments1.png)
 
 > [!NOTE]
->- Si usa el [formato](advanced-ediscovery-large-cases.md) de caso grande en Advanced eDiscovery, la opción para incluir datos adjuntos en la nube en el conjunto de revisión está seleccionada de forma predeterminada y no puede ser no seleccionada.<br/>
+>- Si usa el nuevo formato [de](advanced-ediscovery-new-case-format.md) caso en Advanced eDiscovery, la opción para incluir datos adjuntos en la nube en el conjunto de revisión está seleccionada de forma predeterminada y no puede ser no seleccionada.<br/>
 >- También tiene la opción de incluir todas las versiones (además de la versión que se compartió) de datos adjuntos en la nube en el conjunto de opiniones.  
 Para obtener instrucciones sobre cómo confirmar una colección en un conjunto de revisión, vea [Commit a draft collection to a review set](commit-draft-collection.md).
 

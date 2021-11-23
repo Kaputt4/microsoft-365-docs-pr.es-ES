@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc1bd7b8a717d5f53514209fe50499844644f27b
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 0beee7a458d7cf1e6094ccf856399882c55addf1
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064468"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61137080"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en Advanced eDiscovery
 
@@ -75,7 +75,7 @@ En la siguiente lista se describe el resultado de la consulta de filtro en térm
 Para obtener más información acerca de los tipos inclusivos y la singularidad de los documentos, vea [Subprocesos de correo](email-threading-in-advanced-ediscovery.md)electrónico en Advanced eDiscovery .
 
 > [!NOTE]
-> Durante la vista previa pública del formato de  caso grande en [Advanced eDiscovery](advanced-ediscovery-large-cases.md), la consulta de filtro Para revisión no ha devuelto conversaciones de Teams o Yammer para conjuntos de revisión (en casos que usan el formato de caso grande) creados antes del 4 de noviembre de 2021. Este problema se ha resuelto. Esto significa que si  vuelve a aplicar la consulta Para revisión a un conjunto de revisión en un caso que usa el formato de mayúsculas y minúsculas, se pueden mostrar más elementos que coincidan con la consulta de filtro porque se incluyen todas las conversaciones Teams o Yammer.
+> Durante la vista [](advanced-ediscovery-new-case-format.md) previa pública del nuevo formato  de caso en Advanced eDiscovery, la consulta de filtro Para revisión no devuelve conversaciones de Teams o Yammer para conjuntos de revisión (en casos que usan el formato de caso grande) creados antes del 4 de noviembre de 2021. Este problema se ha resuelto. Esto significa que si  vuelve a aplicar la consulta Para revisión a un conjunto de revisión en un caso que usa el formato de mayúsculas y minúsculas, se pueden mostrar más elementos que coincidan con la consulta de filtro porque se incluyen todas las conversaciones Teams o Yammer.
 
 ## <a name="analytics-report"></a>Informe de análisis
 

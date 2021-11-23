@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta Microsoft 365 administrador para restablecer las contraseñas de los usuarios en Microsoft 365 suscripción para empresas.
-ms.openlocfilehash: f1444513f336cad5423881420d299528a347927c
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9a74eaf1524058d5a5c92e057290a37f2d812fee
+ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128404"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61136960"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -107,7 +107,7 @@ Estos pasos son aplicables a una empresa con decenas de usuarios. Si tiene cient
 
 2. Seleccione la opción situada junto a **Nombre para mostrar** para seleccionar todos los usuarios de su empresa. A continuación, desmarque su usuario. No puede restablecer su propia contraseña y las contraseñas de todas las personas de su organización al mismo tiempo.
 
-3. Seleccione **Restablecer contraseña**. 
+3. Seleccione **Restablecer contraseña**.
 
 4. Siga las instrucciones de la **página Restablecer contraseña** y seleccione **Restablecer**.  Si optó por generar automáticamente las contraseñas, se mostrarán las nuevas contraseñas temporales.
 
