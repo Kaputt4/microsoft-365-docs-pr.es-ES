@@ -16,6 +16,8 @@
       items:
         - name: Información general
           href: content-sources-365-admin-center.md
+        - name: Administrar cómo se muestra el contenido en Aprendizaje Viva
+          href: use-tabs.md
         - name: Agregar SharePoint
           href: configure-sharepoint-content-source.md
         - name: Agregar sistemas de administración del aprendizaje
