@@ -6,6 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
+ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre la comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: dab209fc47db18875f0bc48d3b2816cd9d1927b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe09298e32ce76cab3c8ea16e3d1075a0925f60f
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172214"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153705"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
 
@@ -39,11 +40,11 @@ Los modelos de comprensión mediante documentos se crean y se administran en un 
 > [!NOTE]
 > Los tipos de contenido de solo lectura o sellado no pueden ser actualizados, de manera que no pueden ser usados en un modelo.
 
-Agregue *clasificadores* y *extractores* a los modelos de comprensión del documento para hacer lo siguiente: 
+Agregue *clasificadores y extractores* *a* los modelos de comprensión de documentos para realizar las siguientes acciones: 
 
 - Los clasificadores se usan para identificar y clasificar documentos cargados en la biblioteca de documentos. Por ejemplo, un clasificador puede ser "entrenado" para identificar todos los documentos de *renovación de contrato* que se carguen en la biblioteca. El tipo de contenido de renovación de contrato lo define el usuario al crear el clasificador.
 
-- Los extractores extraen información de estos documentos. Por ejemplo, para todos los documentos de renovación de contratos identificados en la biblioteca de documentos, las columnas se muestran en la vista que también muestra la *Fecha de inicio del servicio* y el *Cliente* por cada documento de renovación de contrato. 
+- Los extractores extraen información de estos documentos. Por ejemplo, para cada documento de renovación de contrato identificado en la biblioteca de documentos, se mostrarán las columnas que muestran la fecha *de* inicio del servicio y *el cliente* para cada documento. 
 
 Puede usar archivos de ejemplo para entrenarlos y probarlos en el modelo. Los archivos de ejemplo proporcionan ejemplos al modelo de lo que debe buscar al intentar identificar y extraer datos de archivos. Por ejemplo, entrenaría los clasificadores y extracciones de renovación de contrato con ejemplos de documentos de renovación de contratos con los que trabaja su empresa. También puede usar archivos de ejemplo para probar la efectividad del modelo.
 
@@ -51,9 +52,9 @@ Después de publicar el modelo, utilice el centro de contenido para aplicarlo a 
 
 ## <a name="file-limitations"></a>Limitaciones de archivos
 
-En los modelos de comprensión mediante documentos se usa la tecnología de reconocimiento óptico de caracteres (OCR) para digitalizar archivos PDF, imágenes y archivos TIFF, tanto al entrenar un modelo con archivos de ejemplo como al ejecutar el modelo en archivos de una biblioteca de documentos.
+Los modelos de comprensión de documentos usan la tecnología de reconocimiento óptico de caracteres (OCR) para examinar archivos PDF, imágenes y TIFF. Los archivos se examinan cuando se entrena un modelo con archivos de ejemplo y cuando se ejecuta el modelo en archivos de una biblioteca de documentos.
 
-Tenga en cuenta las siguientes diferencias en relación con los archivos de texto basados en Microsoft Office y los archivos digitalizados con OCR (PDF, imagen o TIFF):
+Tenga en cuenta las siguientes diferencias Microsoft Office archivos basados en texto y archivos escaneados por OCR (PDF, imagen o TIFF):
 
 - Archivos de Office: truncados a 64 000 caracteres (durante el entrenamiento y cuando se ejecuta en archivos de una biblioteca de documentos).
 

@@ -1,21 +1,25 @@
 ---
 title: Prepare el entorno para Temas Microsoft Viva
-description: Prepare el entorno para que pueda proporcionar tanto contenido como sea posible a los usuarios con Temas Microsoft Viva.
-ms.author: samanro
-author: samanro
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-ms.custom: Adopt
+ms.custom: intro-get-started
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
+ms.collection:
+- enabler-strategic
+- m365initiative-viva-topics
 ms.localizationpriority: medium
-ms.openlocfilehash: a2e6ffc768f52d3738b9389d460ddba2a156152e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Prepare el entorno para que pueda proporcionar tanto contenido como sea posible a los usuarios con Temas Microsoft Viva.
+ms.openlocfilehash: 73395e0e4e12daeb68618fba4d694aa9f1b23ae4
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214074"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153717"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Prepare el entorno para Temas Microsoft Viva
 
@@ -117,13 +121,13 @@ La administración de temas implica tres roles clave, incluidos dos nuevos roles
 
 - El administrador de conocimientos (KA) es un rol técnico, normalmente en TI. Este rol permite configurar los Temas de Viva en el Centro de administración de M365, así como la configuración de la detección y visibilidad de los temas.
 - El Administrador de conocimientos (KM) trabaja con los propios temas y supervisa su calidad y integridad.
-- Los colaboradores de temas (TCs) no se basan en un rol de AAD, sino en permisos en el Centro de administración. Son expertos en la materia capaces de curar el contenido de los temas, agregando recursos y personas.
+- Los colaboradores de temas (TCs) no se basan en un AAD, sino en permisos en el Centro de administración. Son expertos en la materia capaces de curar el contenido de los temas, agregando recursos y personas.
 
 Dependiendo de la organización, es posible que haya pocas o muchas personas que actúen en estos roles. Para algunas organizaciones, pueden ser las mismas personas.
 
 | Administrador de la información | Responsable de la información | Colaborador de tema |
 |:-------|:-------|:-------|:-------|
-| Rol AAD | Rol AAD | SME |
+| AAD rol | AAD rol | SME |
 | Tiene acceso al Centro de administración | Tiene acceso al Centro de administración | Sin acceso al Centro de administración |
 | Configurar temas de Viva | Posee la administración y la calidad de los temas | Contribuye a temas basados en su experiencia. |
 | Garantiza que se cumplan los estándares de seguridad y cumplimiento y comprende el contrato de licencia.| Realiza tareas de administración de temas como crear, editar, eliminar y rechazar temas. Admite colaboradores de temas con sus tareas. | Cura la información y el contenido de las páginas de temas, incluidas las personas y los recursos anclados a ese tema. |

@@ -6,20 +6,21 @@ manager: pamgreen
 ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
-ms.service: ''
-ms.prod: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo usar Viva Topics en su organización.
-ms.openlocfilehash: 9b719c77a54271078bf2ee80f657352a84d9713b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2e5aab7edd5b84ad9e1ee987bd90f2d4e9aec5a5
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173216"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153633"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de los temas de Microsoft Viva 
 
@@ -160,6 +161,6 @@ Al enviar comentarios, le pedimos que no incluya información confidencial, como
 
 Gracias por tomarse el tiempo para compartir sus ideas con nosotros. Su perspectiva nos ayuda a mejorar nuestras características existentes y desarrollar otras nuevas.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 [Use Búsqueda de Microsoft para buscar temas en Temas de Viva](./search.md)

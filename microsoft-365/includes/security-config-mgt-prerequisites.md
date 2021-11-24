@@ -1,15 +1,15 @@
 ---
 title: archivo include
-description: incluir archivo
+description: archivo include
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: e4ac49ce9e10e8a6e9c1a7536c310e003ab67ba4
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 3a71ae9b77e49ff88c12383b00faf17d5a52b10d
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61149589"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61155429"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -33,6 +33,7 @@ Cuando un dispositivo unido a un dominio crea una confianza con Azure Active Dir
 - La Azure Active Directory híbrida debe configurarse en el entorno (ya sea a través de federación o AAD Conectar sincronización)
 - AAD Conectar Sync debe incluir los objetos de *dispositivo* en el ámbito de sincronización con Azure Active Directory (cuando sea necesario para la unión)
 - AAD Conectar las reglas de sincronización deben modificarse para Server 2012 R2 (cuando se necesite compatibilidad con Server 2012 R2)
+- Todos los dispositivos deben registrarse en la Azure Active Directory del inquilino que hospeda Microsoft Defender para endpoint. No se admiten escenarios entre inquilinos. 
 
 ### <a name="connectivity-requirements"></a>Requisitos de conectividad
 
@@ -97,7 +98,7 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 
    :::image type="content" source="../media/add-role.png" alt-text="Conceder permisos a los usuarios para administrar la configuración.":::
 
-4. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+4. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 5. Seleccione **Endpoint security** Microsoft Defender for  >  **Endpoint** y establezca Allow Microsoft Defender for Endpoint to enforce Endpoint Security **Configurations (Preview)** en **On**.
 
@@ -142,7 +143,7 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
 >
 > Microsoft Endpoint Manager permite implementar varias instancias de cada tipo de directiva de seguridad de extremo en el mismo dispositivo, con cada instancia de directiva que recibe el dispositivo por separado. Por lo tanto, un dispositivo puede recibir configuraciones independientes para la misma configuración de diferentes directivas, lo que da como resultado un conflicto. Algunas opciones de configuración (como exclusiones de antivirus) se combinarán en el cliente y se aplicarán correctamente.
 
-1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Vaya a **Seguridad de extremo** y, a continuación, seleccione el tipo de directiva que desea configurar, ya sea Antivirus o Firewall y, a continuación, seleccione Crear **directiva**.
 

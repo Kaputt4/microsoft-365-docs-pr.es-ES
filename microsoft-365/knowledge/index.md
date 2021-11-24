@@ -4,23 +4,23 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-ms.date: 10/10/2021
 audience: enabler, admin
 ms.topic: landing-page
 ms.custom: intro-hub-or-landing
-ms.prod: microsoft-365-enterprise
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.localizationpriority: medium
 description: Aprenda cómo encontrar recursos para Temas Microsoft Viva
-ms.openlocfilehash: a5e5d688a3838da95dde92e0adf27c1d1c833430
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ea158b266154cee1f911a40983c352d1f7b4cc43
+ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668281"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153681"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introducción a Temas Microsoft Viva
 
@@ -56,6 +56,7 @@ Obtenga más información sobre cómo usar e implementar Temas de Viva en su org
 |:-----|:-----|
 |Obtenga información sobre cómo empezar a planear el uso de Temas de Viva |[Introducción](topics-adoption-getstarted.md)|  
 |Configurar y ejecutar un programa piloto de prueba para Temas de Viva |[Ejecutar una prueba ](trial-topics.md)|
+|Buscar recursos para ayudar a su organización a través de su viaje de adopción con Temas de Viva |[Recursos de adopción](adoption-resources.md)|
 
 ## <a name="set-up-and-administration"></a>Configuración y administración
 
