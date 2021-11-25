@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 2779290e2f338be9128e0fad8ab8a1b4aa8c51bd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 374e8c92a4694b81b6b6eb4cff52e6f2024afe93
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128861"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167039"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -108,6 +108,20 @@ Microsoft no almacenará los datos en reposo de los clientes de Intune que se en
 
 En cualquier caso, Microsoft no controla ni limita la ubicación desde la cual los clientes o usuarios finales pueden tener acceso a los datos del cliente. Del mismo modo, cuando los datos de clientes de otros servicios se integren posteriormente en Intune, los datos de cliente de origen seguirán almacenados según los compromisos geográficos del otro servicio (si los hubiera); solo la copia de los datos de cliente integrada en Intune se almacenará en la configuración geográfica de Intune indicada.  
 
+### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>¿Cuáles son las consideraciones para las ubicaciones de datos de Microsoft Viva?
+
+- Viva Connections
+
+  - Los datos del panel, los recursos y la aplicación de escritorio se almacenan en SharePoint Online. 
+  
+  - La fuente incluye contenido de SharePoint Online (noticias), Stream (almacenado en reposo en SharePoint Online) y Yammer (almacenado en reposo en Yammer).  
+  
+- Ideas Viva
+
+  - La residencia de datos de la aplicación personal se basa en la ubicación del buzón del usuario.
+  
+  - La región de datos de administrador/líder está determinada por la región principal del inquilino, no de usuarios individuales.
+
 ## <a name="data-center-locations"></a>Ubicaciones de los centros de datos
 
 En la tabla siguiente se define la ubicación de los datos para varios servicios. Para determinar las ubicaciones del servicio, consulte estas tablas.
@@ -155,12 +169,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -168,7 +180,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="aland-islands"></a>Islas Aland
@@ -179,12 +197,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -192,7 +208,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="albania"></a>Albania
@@ -203,12 +225,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -216,7 +236,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="algeria"></a>Argelia
@@ -227,20 +253,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="american-samoa"></a>Samoa Americana
@@ -251,12 +281,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -264,7 +292,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="andorra"></a>Andorra
@@ -275,12 +309,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -288,7 +320,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="angola"></a>Angola
@@ -299,20 +337,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="anguilla"></a>Anguila
@@ -323,12 +365,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -336,7 +376,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="antarctica"></a>Antártida
@@ -347,12 +393,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -360,7 +404,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="antigua-and-barbuda"></a>Antigua y Barbuda
@@ -371,12 +421,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -384,7 +432,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="argentina"></a>Argentina
@@ -395,12 +449,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -408,7 +460,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="armenia"></a>Armenia
@@ -419,12 +477,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -432,7 +488,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="aruba"></a>Aruba
@@ -443,12 +505,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -456,7 +516,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="australia"></a>Australia
@@ -467,12 +533,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Australia |
 | OneDrive para la Empresa | Australia |
 | SharePoint Online | Australia |
-| Skype Empresarial | Australia |
 | Microsoft Teams | Australia |
 | Office Online y Office Mobile | Australia |
 | EOP | Australia |
 | Intune | Australia |
-| MyAnalytics | Australia |
 | Planner | Australia |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -480,7 +544,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Australia |
 | Whiteboard | Australia |
 | Forms | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Australia |
+| Temas Viva | Australia |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Australia |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="austria"></a>Austria
@@ -491,12 +561,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -504,7 +572,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="azerbaijan"></a>Azerbaiyán
@@ -515,20 +589,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner |  Geografía global 1: EMEA |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bahamas"></a>Bahamas
@@ -539,12 +617,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -552,7 +628,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bahrain"></a>Baréin
@@ -563,12 +645,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -576,7 +656,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bangladesh"></a>Bangladesh
@@ -587,12 +673,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -600,7 +684,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="barbados"></a>Barbados
@@ -611,12 +701,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -624,8 +712,15 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="belarus"></a>Belarús
 <details><summary>Haga clic para expandir</summary><p>
@@ -635,12 +730,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -648,7 +741,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="belgium"></a>Bélgica
@@ -659,12 +758,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -672,7 +769,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="belize"></a>Belice
@@ -683,12 +786,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -696,7 +797,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="benin"></a>Benín
@@ -707,20 +814,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bermuda"></a>Bermudas
@@ -731,12 +842,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -744,7 +853,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bhutan"></a>Bután
@@ -755,12 +870,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -768,7 +881,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bolivia"></a>Bolivia
@@ -779,12 +898,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -792,7 +909,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bonaire"></a>Bonaire
@@ -803,12 +926,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -816,7 +937,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bosnia-and-herzegovina"></a>Bosnia y Herzegovina
@@ -827,20 +954,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner |  Geografía global 1: EMEA |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="botswana"></a>Botsuana
@@ -851,20 +982,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bouvet-island"></a>Isla Bouvet
@@ -875,12 +1010,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -888,7 +1021,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="brazil"></a>Brasil
@@ -899,20 +1038,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Brasil |
 | OneDrive para la Empresa | Brasil |
 | SharePoint Online | Brasil |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Brasil |
 | Office Online &amp; Mobile | Brasil |
 | EOP | Brasil |
 | Intune | Estados Unidos |
-| MyAnalytics | Brasil |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
 | Servicios de OneNote | Brasil |
-| Stream | Estados Unidos |
+| Stream | Brasil |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Brasil |
+| Temas Viva | Brasil |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Brasil |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="british-indian-ocean-territory"></a>Territorio Británico del Océano Índico
@@ -923,12 +1066,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
-| Microsoft Teams | Geografía global 1: EMEA |
+| Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -936,7 +1077,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="british-virgin-islands"></a>Islas Vírgenes Británicas
@@ -947,12 +1094,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -960,7 +1105,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="brunei"></a>Brunéi
@@ -971,12 +1122,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -984,7 +1133,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="bulgaria"></a>Bulgaria
@@ -995,12 +1150,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -1008,7 +1161,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="burkina-faso"></a>Burkina Faso
@@ -1019,20 +1178,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="burundi"></a>Burundi
@@ -1043,20 +1206,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="cambodia"></a>Camboya
@@ -1067,12 +1234,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1080,7 +1245,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="cameroon"></a>Camerún
@@ -1091,20 +1262,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="canada"></a>Canada
@@ -1115,12 +1290,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Canadá |
 | OneDrive para la Empresa | Canadá |
 | SharePoint Online | Canadá |
-| Skype Empresarial | Canadá |
 | Microsoft Teams | Canadá |
 | Office Online y Office Mobile | Canadá |
 | EOP | Canadá |
 | Intune | Estados Unidos |
-| MyAnalytics | Canadá |
 | Planner | Canadá |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1128,7 +1301,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Canadá |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Canadá |
+| Temas Viva | Canadá |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Canadá |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="cape-verde"></a>Cabo Verde
@@ -1139,20 +1318,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="cayman-islands"></a>Islas Caimán
@@ -1163,12 +1346,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1176,7 +1357,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="central-african-republic"></a>República Centroafricana
@@ -1187,20 +1374,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="chad"></a>Chad
@@ -1211,20 +1402,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="chile"></a>Chile
@@ -1235,12 +1430,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1248,7 +1441,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="china"></a>China
@@ -1259,12 +1458,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1272,7 +1469,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="christmas-island"></a>Isla de Navidad
@@ -1283,12 +1486,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1296,7 +1497,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="cocos-keeling-islands"></a>Islas Cocos
@@ -1307,12 +1514,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1320,7 +1525,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="colombia"></a>Colombia
@@ -1331,12 +1542,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1344,7 +1553,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="comoros"></a>Comoras
@@ -1355,21 +1570,26 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="congo-brazzaville"></a>Congo (Brazzaville)
 <details><summary>Haga clic para expandir</summary><p>
@@ -1379,21 +1599,26 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="congo-kinshasa"></a>Congo (Kinshasa)
 <details><summary>Haga clic para expandir</summary><p>
@@ -1403,21 +1628,26 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="cook-islands"></a>Islas Cook
 <details><summary>Haga clic para expandir</summary><p>
@@ -1427,12 +1657,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1440,7 +1668,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="costa-rica"></a>Costa Rica
@@ -1451,12 +1685,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1464,7 +1696,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="cote-divoire"></a>Costa de Marfil
@@ -1475,20 +1713,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="croatia"></a>Croacia
@@ -1499,12 +1741,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -1512,7 +1752,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="curacao"></a>Curazao
@@ -1523,12 +1769,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1536,7 +1780,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="cyprus"></a>Chipre
@@ -1547,12 +1797,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -1560,7 +1808,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="czech-republic"></a>Chequia
@@ -1571,12 +1825,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -1584,7 +1836,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="denmark"></a>Dinamarca
@@ -1595,12 +1853,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -1608,7 +1864,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="djibouti"></a>Yibuti
@@ -1619,20 +1881,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="dominica"></a>Dominica
@@ -1643,12 +1909,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1656,7 +1920,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="dominican-republic"></a>República Dominicana
@@ -1667,12 +1937,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1680,7 +1948,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="ecuador"></a>Ecuador
@@ -1691,12 +1965,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1704,7 +1976,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="egypt"></a>Egipto
@@ -1715,20 +1993,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="el-salvador"></a>El Salvador
@@ -1739,12 +2021,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1752,7 +2032,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="equatorial-guinea"></a>Guinea Ecuatorial
@@ -1763,20 +2049,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="eritrea"></a>Eritrea
@@ -1787,20 +2077,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="estonia"></a>Estonia
@@ -1811,12 +2105,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -1824,7 +2116,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="ethiopia"></a>Etiopía
@@ -1835,20 +2133,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner |  Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="falkland-islands-malvinas"></a>Islas Malvinas (Malvinas)
@@ -1859,12 +2161,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
-| Microsoft Teams | Geografía global 1: EMEA |
+| Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1872,7 +2172,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="faroe-islands"></a>Islas Feroe
@@ -1883,12 +2189,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -1896,7 +2200,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="federated-states-of-micronesia"></a>Estados federados de Micronesia
@@ -1907,12 +2217,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -1920,7 +2228,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="fiji"></a>Fiyi
@@ -1931,20 +2245,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Australia |
 | OneDrive para la Empresa | Australia |
 | SharePoint Online | Australia |
-| Skype Empresarial | Australia |
 | Microsoft Teams | Australia |
 | Office Online y Office Mobile | Australia |
 | EOP | Australia |
-| Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Australia |
-| Planner | Geografía global 2: Asia Pacífico |
+| Intune | Australia |
+| Planner | Australia |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
 | Servicios de OneNote | Australia |
 | Stream | Australia |
-| Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Whiteboard | Australia |
+| Forms | Estados Unidos |
+| Viva Connections | Australia |
+| Temas Viva | Australia |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Australia |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="finland"></a>Finlandia
@@ -1955,12 +2273,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -1968,7 +2284,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="france"></a>Francia
@@ -1979,12 +2301,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Francia |
 | OneDrive para la Empresa | Francia |
 | SharePoint Online | Francia |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Francia |
 | Office Online y Office Mobile | Francia |
 | EOP | Francia |
 | Intune | Unión Europea |
-| MyAnalytics | Francia |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea |
@@ -1992,7 +2312,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Francia |
+| Temas Viva | Francia |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Francia |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="french-guiana"></a>Guayana Francesa
@@ -2003,12 +2329,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2016,7 +2340,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="french-polynesia"></a>Polinesia Francesa
@@ -2027,12 +2357,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2040,7 +2368,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="french-southern-territories"></a>Territorios Australes Franceses
@@ -2051,12 +2385,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2064,7 +2396,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="gabon"></a>Gabón
@@ -2075,20 +2413,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="gambia"></a>Gambia
@@ -2099,20 +2441,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="georgia"></a>Georgia
@@ -2123,12 +2469,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2136,7 +2480,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="germany"></a>Alemania
@@ -2147,12 +2497,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Alemania |
 | OneDrive para la Empresa | Alemania |
 | SharePoint Online | Alemania |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Alemania |
 | Office Online y Office Mobile | Alemania |
 | EOP | Alemania |
 | Intune | Unión Europea |
-| MyAnalytics | Alemania |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea |
@@ -2160,7 +2508,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Alemania |
+| Temas Viva | Alemania |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Alemania |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="ghana"></a>Ghana
@@ -2171,20 +2525,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="gibraltar"></a>Gibraltar
@@ -2195,12 +2553,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2208,7 +2564,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="greece"></a>Grecia
@@ -2219,12 +2581,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -2232,8 +2592,15 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="greenland"></a>Groenlandia
 <details><summary>Haga clic para expandir</summary><p>
@@ -2243,12 +2610,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
-| Microsoft Teams | Geografía global 1: EMEA |
+| Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2256,7 +2621,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="grenada"></a>Granada
@@ -2267,12 +2638,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2280,7 +2649,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="guadeloupe"></a>Guadalupe
@@ -2291,12 +2666,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2304,7 +2677,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="guam"></a>Guam
@@ -2315,12 +2694,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2328,7 +2705,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="guatemala"></a>Guatemala
@@ -2339,12 +2722,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2352,7 +2733,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="guernsey"></a>Guernsey
@@ -2363,12 +2750,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2376,7 +2761,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="guinea"></a>Guinea
@@ -2387,20 +2778,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="guinea-bissau"></a>Guinea-Bisáu
@@ -2411,20 +2806,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="guyana"></a>Guyana
@@ -2435,12 +2834,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2448,7 +2845,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="haiti"></a>Haití
@@ -2459,12 +2862,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2472,7 +2873,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="heard-and-mcdonald-islands"></a>Islas Heard y McDonald
@@ -2483,12 +2890,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2496,7 +2901,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="herzegovina"></a>Herzegovina
@@ -2507,12 +2918,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2520,7 +2929,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="holy-see-vatican-city-state"></a>Santa Sede (Estado de la Ciudad del Vaticano)
@@ -2531,12 +2946,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2544,7 +2957,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="honduras"></a>Honduras
@@ -2555,12 +2974,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2568,7 +2985,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="hong-kong-sar"></a>RAE de Hong Kong
@@ -2579,12 +3002,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2592,7 +3013,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="hungary"></a>Hungría
@@ -2603,12 +3030,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -2616,7 +3041,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="iceland"></a>Islandia
@@ -2627,12 +3058,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2640,8 +3069,15 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="india"></a>India
 <details><summary>Haga clic para expandir</summary><p>
@@ -2651,12 +3087,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | India |
 | OneDrive para la Empresa | India |
 | SharePoint Online | India |
-| Skype Empresarial | India |
 | Microsoft Teams | India |
 | Office Online y Office Mobile | India |
 | EOP | India |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | India |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2664,7 +3098,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | India |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | India |
+| Temas Viva | India |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | India |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="indonesia"></a>Indonesia
@@ -2675,12 +3115,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2688,7 +3126,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="iraq"></a>Irak
@@ -2699,12 +3143,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2712,7 +3154,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="ireland"></a>Irlanda
@@ -2723,12 +3171,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -2736,7 +3182,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="isle-of-man"></a>Isla de Man
@@ -2747,12 +3199,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2760,7 +3210,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="israel"></a>Israel
@@ -2771,12 +3227,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2784,7 +3238,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="italy"></a>Italia
@@ -2795,12 +3255,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -2808,7 +3266,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="jamaica"></a>Jamaica
@@ -2819,12 +3283,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2832,7 +3294,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="japan"></a>Japón
@@ -2843,12 +3311,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Japón |
 | OneDrive para la Empresa | Japón |
 | SharePoint Online | Japón |
-| Skype Empresarial | Japón |
 | Microsoft Teams | Japón |
 | Office Online y Office Mobile | Japón |
 | EOP | Japón |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Japón |
 | Planner | Japón |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2856,7 +3322,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Japón |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Japón |
+| Temas Viva | Japón |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Japón |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="jersey"></a>Jersey
@@ -2867,20 +3339,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
-| Yammer |  Geografía global 1: EMEA |
+| Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="jordan"></a>Jordania
@@ -2891,12 +3367,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2904,7 +3378,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="kazakhstan"></a>Kazajistán
@@ -2915,12 +3395,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -2928,7 +3406,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="kenya"></a>Kenia
@@ -2939,20 +3423,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="kiribati"></a>Kiribati
@@ -2963,12 +3451,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -2976,7 +3462,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="south-korea"></a>Corea del Sur
@@ -2987,12 +3479,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Corea del Sur |
 | OneDrive para la Empresa | Corea del Sur |
 | SharePoint Online | Corea del Sur |
-| Skype Empresarial | Corea del Sur |
 | Microsoft Teams | Corea del Sur |
 | Office Online &amp; Office Mobile | Corea del Sur |
 | EOP | Corea del Sur |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Corea del Sur |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3000,7 +3490,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Corea del Sur |
+| Temas Viva | Corea del Sur |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Corea del Sur |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="kosovo"></a>Kosovo
@@ -3011,12 +3507,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -3024,7 +3518,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="kuwait"></a>Kuwait
@@ -3035,12 +3535,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -3048,7 +3546,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="kyrgyzstan"></a>Kirguistán
@@ -3059,12 +3563,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -3072,7 +3574,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="laos"></a>Laos
@@ -3083,12 +3591,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3096,7 +3602,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="latvia"></a>Letonia
@@ -3107,12 +3619,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -3120,7 +3630,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="lebanon"></a>Líbano
@@ -3131,21 +3647,26 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
-| Yammer |  Geografía global 1: EMEA |
+| Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="lesotho"></a>Lesoto
 <details><summary>Haga clic para expandir</summary><p>
@@ -3155,21 +3676,26 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="liberia"></a>Liberia
 <details><summary>Haga clic para expandir</summary><p>
@@ -3179,20 +3705,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="libya"></a>Libia
@@ -3203,21 +3733,26 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="liechtenstein"></a>Liechtenstein
 <details><summary>Haga clic para expandir</summary><p>
@@ -3227,20 +3762,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Suiza |
 | OneDrive para la Empresa | Suiza |
 | SharePoint Online | Suiza |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Suiza |
 | Office Online y Office Mobile | Suiza |
 | EOP | Suiza |
-| Intune | Geografía global 1: EMEA |
-| MyAnalytics | Suiza |
-| Planner | Geografía global 1: EMEA |
+| Intune | Unión Europea |
+| Planner | Unión Europea |
 | Sway | Estados Unidos |
-| Yammer | Geografía global 1: EMEA |
+| Yammer | Unión Europea |
 | Servicios de OneNote | Suiza |
-| Stream | Geografía global 1: EMEA |
-| Whiteboard | Estados Unidos |
-| Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Stream | Unión Europea |
+| Whiteboard | Unión Europea |
+| Formularios | Unión Europea |
+| Viva Connections | Suiza |
+| Temas Viva | Suiza |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Suiza |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="lithuania"></a>Lituania
@@ -3251,12 +3790,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -3264,7 +3801,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="luxembourg"></a>Luxemburgo
@@ -3275,12 +3818,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -3288,7 +3829,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="madagascar"></a>Madagascar
@@ -3299,20 +3846,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="malawi"></a>Malaui
@@ -3323,20 +3874,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="malaysia"></a>Malasia
@@ -3347,12 +3902,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3360,7 +3913,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="maldives"></a>Maldivas
@@ -3371,12 +3930,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3384,7 +3941,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="mali"></a>Mali
@@ -3395,20 +3958,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="malta"></a>Malta
@@ -3419,12 +3986,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -3432,7 +3997,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="marshall-islands"></a>Islas Marshall
@@ -3443,12 +4014,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3456,7 +4025,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="martinique"></a>Martinica
@@ -3467,12 +4042,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3480,7 +4053,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="mauritania"></a>Mauritania
@@ -3491,20 +4070,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="mauritius"></a>Mauricio
@@ -3515,20 +4098,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="mayotte"></a>Mayotte
@@ -3539,20 +4126,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="mexico"></a>México
@@ -3563,12 +4154,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3576,7 +4165,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="moldova"></a>Moldova
@@ -3587,12 +4182,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -3600,7 +4193,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="monaco"></a>Mónaco
@@ -3611,12 +4210,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -3624,7 +4221,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="mongolia"></a>Mongolia
@@ -3635,12 +4238,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3648,7 +4249,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="montenegro"></a>Montenegro
@@ -3659,12 +4266,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -3672,7 +4277,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="montserrat"></a>Montserrat
@@ -3683,12 +4294,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3696,7 +4305,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="morocco"></a>Marruecos
@@ -3707,20 +4322,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="mozambique"></a>Mozambique
@@ -3731,20 +4350,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="myanmar"></a>Myanmar
@@ -3755,12 +4378,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3768,7 +4389,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="namibia"></a>Namibia
@@ -3779,20 +4406,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="nauru"></a>Nauru
@@ -3803,12 +4434,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3816,8 +4445,15 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="nepal"></a>Nepal
 <details><summary>Haga clic para expandir</summary><p>
@@ -3827,12 +4463,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3840,8 +4474,15 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="netherlands"></a>Países Bajos
 <details><summary>Haga clic para expandir</summary><p>
@@ -3851,12 +4492,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -3864,7 +4503,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="netherlands-antilles"></a>Antillas Neerlandesas
@@ -3875,12 +4520,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3888,8 +4531,15 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="new-caledonia"></a>Nueva Caledonia
 <details><summary>Haga clic para expandir</summary><p>
@@ -3899,12 +4549,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3912,7 +4560,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="new-zealand"></a>Nueva Zelanda
@@ -3923,20 +4577,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Australia |
 | OneDrive para la Empresa | Australia |
 | SharePoint Online | Australia |
-| Skype Empresarial | Australia |
 | Microsoft Teams | Australia |
 | Office Online y Office Mobile | Australia |
 | EOP | Australia |
-| Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Australia |
-| Planner | Geografía global 2: Asia Pacífico |
+| Intune | Australia |
+| Planner | Australia |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
 | Servicios de OneNote | Australia |
 | Stream | Australia |
-| Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Whiteboard | Australia |
+| Forms | Estados Unidos |
+| Viva Connections | Australia |
+| Temas Viva | Australia |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Australia |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="nicaragua"></a>Nicaragua
@@ -3947,12 +4605,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -3960,7 +4616,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="niger"></a>Níger
@@ -3971,20 +4633,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="nigeria"></a>Nigeria
@@ -3995,20 +4661,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="niue"></a>Niue
@@ -4019,12 +4689,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4032,7 +4700,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="norfolk-island"></a>Isla Norfolk
@@ -4043,12 +4717,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4056,7 +4728,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="northern-mariana-islands"></a>Islas Marianas del Norte
@@ -4067,12 +4745,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4080,7 +4756,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="norway"></a>Noruega
@@ -4091,12 +4773,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Noruega |
 | OneDrive para la Empresa | Noruega |
 | SharePoint Online | Noruega |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Noruega |
 | Office Online y Office Mobile | Noruega |
 | EOP | Noruega |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Noruega |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -4104,7 +4784,14 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Geografía global 1: EMEA |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Noruega |
+| Temas Viva | Noruega |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Noruega |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
+
 </p></details>
 
 ## <a name="oman"></a>Omán
@@ -4115,12 +4802,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -4128,7 +4813,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="pakistan"></a>Pakistán
@@ -4139,12 +4830,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
-| Microsoft Teams | Geografía global 2: Asia Pacífico |
+| Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -4152,7 +4841,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="palau"></a>Palaos
@@ -4163,12 +4858,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4176,7 +4869,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="palestinian-authority"></a>Autoridad Nacional Palestina
@@ -4187,12 +4886,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
-| Microsoft Teams | Geografía global 1: EMEA |
+| Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4200,7 +4897,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="panama"></a>Panamá
@@ -4211,12 +4914,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4224,7 +4925,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="papua-new-guinea"></a>Papúa-Nueva Guinea
@@ -4235,12 +4942,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4248,7 +4953,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="paraguay"></a>Paraguay
@@ -4259,12 +4970,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4272,7 +4981,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="peru"></a>Perú
@@ -4283,12 +4998,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4296,7 +5009,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="philippines"></a>Filipinas
@@ -4307,12 +5026,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4320,7 +5037,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="pitcairn"></a>Islas Pitcairn
@@ -4331,12 +5054,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4344,7 +5065,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="poland"></a>Polonia
@@ -4355,12 +5082,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -4368,7 +5093,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="portugal"></a>Portugal
@@ -4379,12 +5110,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -4392,7 +5121,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="puerto-rico"></a>Puerto Rico
@@ -4403,12 +5138,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4416,7 +5149,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="qatar"></a>Catar
@@ -4427,12 +5166,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -4440,7 +5177,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="republic-of-macedonia"></a>República de Macedonia
@@ -4451,12 +5194,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -4464,7 +5205,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="runion"></a>Reunión
@@ -4475,20 +5222,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="romania"></a>Rumania
@@ -4499,12 +5250,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -4512,23 +5261,28 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="russian-federation"></a>Federación Rusa
 <details><summary>Haga clic para expandir</summary><p>
+
 
 | Servicio | Ubicación |
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -4536,55 +5290,71 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="rwanda"></a>Ruanda
 <details><summary>Haga clic para expandir</summary><p>
 
+
 | Servicio | Ubicación |
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="saint-helena"></a>Santa Elena
 <details><summary>Haga clic para expandir</summary><p>
 
+
 | Servicio | Ubicación |
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="saint-kitts-and-nevis"></a>San Cristóbal y Nieves
@@ -4595,12 +5365,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4608,7 +5376,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="saint-lucia"></a>Santa Lucía
@@ -4619,12 +5393,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4632,7 +5404,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="saint-martin"></a>San Martín
@@ -4643,12 +5421,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4656,7 +5432,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="saint-pierre-and-miquelon"></a>San Pedro y Miquelón
@@ -4667,12 +5449,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4680,7 +5460,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="saint-vincent-and-the-grenadines"></a>San Vicente y las Granadinas
@@ -4691,12 +5477,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4704,7 +5488,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="saint-barthlemy"></a>San Bartolomé
@@ -4715,12 +5505,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4728,7 +5516,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="samoa"></a>Samoa
@@ -4739,12 +5533,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4752,7 +5544,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="san-marino"></a>San Marino
@@ -4763,12 +5561,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -4776,7 +5572,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="sao-tome-and-principe"></a>Santo Tomé y Príncipe
@@ -4787,20 +5589,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="saudi-arabia"></a>Arabia Saudí
@@ -4811,20 +5617,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
-| Whiteboard | Geografía global 1: EMEA |
+| Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="senegal"></a>Senegal
@@ -4835,20 +5645,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="serbia"></a>Serbia
@@ -4859,12 +5673,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -4872,7 +5684,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="seychelles"></a>Seychelles
@@ -4883,20 +5701,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="sierra-leone"></a>Sierra Leona
@@ -4907,20 +5729,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="singapore"></a>Singapur
@@ -4931,12 +5757,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4944,7 +5768,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="sint-maarten"></a>Sint Maarten
@@ -4955,12 +5785,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -4968,7 +5796,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="slovakia"></a>Eslovaquia
@@ -4979,12 +5813,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -4992,7 +5824,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="slovenia"></a>Eslovenia
@@ -5003,12 +5841,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -5016,7 +5852,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="solomon-islands"></a>Islas Salomón
@@ -5027,12 +5869,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5040,31 +5880,42 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="somalia"></a>Somalia
 <details><summary>Haga clic para expandir</summary><p>
+
 
 | Servicio | Ubicación |
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="south-africa"></a>Sudáfrica
@@ -5075,12 +5926,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Sudáfrica |
 | OneDrive para la Empresa | Sudáfrica |
 | SharePoint Online | Sudáfrica |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Sudáfrica |
 | Office Online y Office Mobile | Sudáfrica |
 | EOP | Sudáfrica |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Sudáfrica |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5088,8 +5937,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
-</p></details>
+| Viva Connections | Sudáfrica |
+| Temas Viva | Sudáfrica |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Sudáfrica |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>Islas Georgia del Sur y Sandwich del Sur
 <details><summary>Haga clic para expandir</summary><p>
@@ -5099,12 +5953,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
-| Microsoft Teams | Geografía global 1: EMEA |
+| Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5112,7 +5964,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="spain"></a>España
@@ -5123,12 +5981,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Unión Europea |
 | Office Online y Office Mobile | Unión Europea |
 | EOP | Unión Europea |
 | Intune | Unión Europea |
-| MyAnalytics | Unión Europea |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea  |
@@ -5136,7 +5992,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Unión Europea |
+| Temas Viva | Unión Europea |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="sri-lanka"></a>Sri Lanka
@@ -5147,12 +6009,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5160,7 +6020,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="suriname"></a>Surinam
@@ -5171,12 +6037,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5184,7 +6048,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="svalbard-and-jan-mayen-islands"></a>Islas Svalbard y Jan Mayen
@@ -5195,12 +6065,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5208,7 +6076,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="swaziland"></a>Suazilandia
@@ -5219,20 +6093,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="sweden"></a>Suecia
@@ -5243,20 +6121,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Suecia |
 | OneDrive para la Empresa | Suecia |
 | SharePoint Online | Suecia |
-| Skype Empresarial | Unión Europea |
 | Microsoft Teams | Suecia |
 | Office Online y Office Mobile | Suecia |
 | EOP | Suecia |
 | Intune | Unión Europea |
-| MyAnalytics | Suecia |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
-| Yammer | Unión Europea  |
+| Yammer | Unión Europea |
 | Servicios de OneNote | Suecia |
 | Stream | Unión Europea |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Suecia |
+| Temas Viva | Suecia |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Suecia |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="switzerland"></a>Suiza
@@ -5267,20 +6149,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Suiza |
 | OneDrive para la Empresa | Suiza |
 | SharePoint Online | Suiza |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Suiza |
 | Office Online y Office Mobile | Suiza |
 | EOP | Suiza |
-| Intune | Geografía global 1: EMEA |
-| MyAnalytics | Suiza |
-| Planner | Geografía global 1: EMEA |
+| Intune | Unión Europea |
+| Planner | Unión Europea |
 | Sway | Estados Unidos |
-| Yammer | Geografía global 1: EMEA |
+| Yammer | Unión Europea |
 | Servicios de OneNote | Suiza |
-| Stream | Geografía global 1: EMEA |
-| Whiteboard | Geografía global 1: EMEA |
-| Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Stream | Unión Europea |
+| Whiteboard | Unión Europea |
+| Formularios | Unión Europea |
+| Viva Connections | Suiza |
+| Temas Viva | Suiza |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Suiza |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="taiwan"></a>Taiwán
@@ -5291,12 +6177,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5304,7 +6188,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="tajikistan"></a>Tayikistán
@@ -5315,12 +6205,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5328,7 +6216,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="united-republic-of-tanzania"></a>República Unida de Tanzania
@@ -5339,20 +6233,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="thailand"></a>Tailandia
@@ -5363,12 +6261,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5376,7 +6272,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="timor-leste"></a>Timor-Leste
@@ -5387,12 +6289,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5400,7 +6300,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="togo"></a>Togo
@@ -5411,20 +6317,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="tokelau"></a>Tokelau
@@ -5435,12 +6345,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5448,7 +6356,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="tonga"></a>Tonga
@@ -5459,12 +6373,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5472,7 +6384,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="trinidad-and-tobago"></a>Trinidad y Tobago
@@ -5483,12 +6401,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5496,7 +6412,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="tunisia"></a>Túnez
@@ -5507,20 +6429,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="turkey"></a>Turquía
@@ -5531,12 +6457,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5544,7 +6468,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="turkmenistan"></a>Turkmenistán
@@ -5555,12 +6485,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5568,7 +6496,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="turks-and-caicos-islands"></a>Islas Turcas y Caicos
@@ -5579,12 +6513,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5592,7 +6524,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="tuvalu"></a>Tuvalu
@@ -5603,12 +6541,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5616,7 +6552,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="us-virgin-islands"></a>Islas Vírgenes de EE. UU.
@@ -5627,12 +6569,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5640,7 +6580,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="uganda"></a>Uganda
@@ -5651,20 +6597,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="ukraine"></a>Ucrania
@@ -5675,12 +6625,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5688,7 +6636,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="united-arab-emirates"></a>Emiratos Árabes Unidos
@@ -5699,12 +6653,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Emiratos Árabes Unidos |
 | OneDrive para la Empresa | Emiratos Árabes Unidos |
 | SharePoint Online | Emiratos Árabes Unidos |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Emiratos Árabes Unidos |
 | Office Online y Office Mobile | Emiratos Árabes Unidos |
 | EOP | Emiratos Árabes Unidos |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Emiratos Árabes Unidos |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5712,8 +6664,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
-</p></details>
+| Viva Connections | Emiratos Árabes Unidos |
+| Temas Viva | Emiratos Árabes Unidos |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Emiratos Árabes Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 
 ## <a name="united-kingdom"></a>Reino Unido
 <details><summary>Haga clic para expandir</summary><p>
@@ -5723,12 +6680,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Reino Unido |
 | OneDrive para la Empresa | Reino Unido |
 | SharePoint Online | Reino Unido |
-| Skype Empresarial | Reino Unido |
 | Microsoft Teams | Reino Unido |
 | Office Online y Office Mobile | Reino Unido |
 | EOP | Reino Unido |
 | Intune | Unión Europea |
-| MyAnalytics | Reino Unido |
 | Planner | Unión Europea |
 | Sway | Estados Unidos |
 | Yammer | Unión Europea |
@@ -5736,7 +6691,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Reino Unido |
 | Whiteboard | Unión Europea |
 | Formularios | Unión Europea |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Reino Unido |
+| Temas Viva | Reino Unido |
+| Viva Learning | Unión Europea |
+| Ideas Microsoft Viva: Personal | Reino Unido |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Unión Europea |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="united-states"></a>Estados Unidos
@@ -5747,12 +6708,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5760,7 +6719,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="uruguay"></a>Uruguay
@@ -5771,12 +6736,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 3: América |
 | OneDrive para la Empresa | Geografía global 3: América |
 | SharePoint Online | Geografía global 3: América |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Geografía global 3: América |
 | EOP | Geografía global 3: América |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5784,7 +6747,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 3: América |
+| Temas Viva | Geografía global 3: América |
+| Viva Learning | Geografía global 3: América |
+| Ideas Microsoft Viva: Personal | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 3: América |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="us-minor-outlying-islands"></a>Islas Ultramarinas Menores de los Estados Unidos
@@ -5795,12 +6764,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5808,7 +6775,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="uzbekistan"></a>Uzbekistán
@@ -5819,12 +6792,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5832,7 +6803,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="vanuatu"></a>Vanuatu
@@ -5843,12 +6820,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5856,23 +6831,26 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="venezuela"></a>Venezuela
 <details><summary>Haga clic para expandir</summary><p>
-
 | Servicio | Ubicación |
 | --- | --- |
 | Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
-| Skype Empresarial | Estados Unidos |
 | Microsoft Teams | Estados Unidos |
 | Office Online y Office Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | Intune | Estados Unidos |
-| MyAnalytics | Estados Unidos |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5880,8 +6858,15 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Estados Unidos |
+| Temas Viva | Estados Unidos |
+| Viva Learning | Estados Unidos |
+| Ideas Microsoft Viva: Personal | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Estados Unidos |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
+
 
 ## <a name="vietnam"></a>Vietnam
 <details><summary>Haga clic para expandir</summary><p>
@@ -5891,12 +6876,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5904,7 +6887,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="wallis-and-futuna-islands"></a>Wallis y Futuna
@@ -5915,12 +6904,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 2: Asia Pacífico |
 | OneDrive para la Empresa | Geografía global 2: Asia Pacífico |
 | SharePoint Online | Geografía global 2: Asia Pacífico |
-| Skype Empresarial | Geografía global 2: Asia Pacífico |
 | Microsoft Teams | Geografía global 2: Asia Pacífico |
 | Office Online y Office Mobile | Geografía global 2: Asia Pacífico |
 | EOP | Geografía global 2: Asia Pacífico |
 | Intune | Geografía global 2: Asia Pacífico |
-| MyAnalytics | Geografía global 2: Asia Pacífico |
 | Planner | Geografía global 2: Asia Pacífico |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
@@ -5928,7 +6915,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 2: Asia Pacífico |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 2: Asia Pacífico |
+| Temas Viva | Geografía global 2: Asia Pacífico |
+| Viva Learning | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: Personal | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 2: Asia Pacífico |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="western-sahara"></a>Sáhara Occidental
@@ -5939,20 +6932,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="yemen"></a>Yemen
@@ -5963,12 +6960,10 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
 | Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
@@ -5976,7 +6971,13 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
 | Formularios | Geografía global 1: EMEA |
-| Workplace Analytics | Estados Unidos |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="zambia"></a>Zambia
@@ -5987,20 +6988,24 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
 
 ## <a name="zimbabwe"></a>Zimbabue
@@ -6011,18 +7016,22 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
 | SharePoint Online | Geografía global 1: EMEA |
-| Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
-| MyAnalytics | Geografía global 1: EMEA |
-| Planner | Estados Unidos |
+| Planner | Geografía global 1: EMEA |
 | Sway | Estados Unidos |
 | Yammer | Geografía global 1: EMEA |
 | Servicios de OneNote | Geografía global 1: EMEA |
 | Stream | Geografía global 1: EMEA |
 | Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
+| Formularios | Geografía global 1: EMEA |
+| Viva Connections | Geografía global 1: EMEA |
+| Temas Viva | Geografía global 1: EMEA |
+| Viva Learning | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: Personal | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
+| Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
+| Ideas Microsoft Viva: Avanzado | Estados Unidos |
 </p></details>
