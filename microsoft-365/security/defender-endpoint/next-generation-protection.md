@@ -15,16 +15,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 17b1a57a16c829bbeced091c9a8678e00e5b9735
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 2427e2e9e162beb551d37da4280fa27bdf068069
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121954"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166751"
 ---
 # <a name="next-generation-protection-overview"></a>Información sobre los servicios de protección de última generación
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+**Se aplica a**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender para punto de conexión incluye servicios de protección de última generación para reforzar el perímetro de seguridad de la red. Los servicios de protección de última generación se diseñaron para detectar todos los tipos de amenazas emergentes. Además de Antivirus de Windows Defender, los servicios de protección de última generación incluyen las siguientes funcionalidades:
 

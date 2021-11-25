@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: 410fa890e159d18e3aacedbf08be44ee047ee189
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3be5e7f0710155cb8e5e8e60e19577cf423190eb
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158172"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165203"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -91,7 +91,7 @@ Una etiqueta de retención estándar tiene opciones de retención y acciones, pe
 
 Notas al pie:
 
-<sup>1</sup> Compatible con OneDrive y Exchange reteniendo una copia en una ubicación segura, pero bloqueado por SharePoint.
+<sup>1</sup> Para SharePoint y OneDrive, se puede bloquear como una configuración de espacio empresarial en el Centro de cumplimiento de Microsoft 365 > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Eliminación de elementos**
 
 Cuando se aplica una etiqueta de retención a un elemento de lista que tiene datos adjuntos de documento, ese documento no hereda la configuración de retención y se puede eliminar del elemento de lista. En cambio, si se declara un registro con una etiqueta de retención, los datos adjuntos del documento heredarán la configuración de retención y no se podrán eliminar.
 

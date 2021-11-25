@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: 1194ba1aa2367980207d33e2ca4020b8e0ba57d1
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 26dbe5729081c501f5a80e1ecfdde4a184938328
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753076"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167579"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -61,21 +61,27 @@ Para directivas de retención y directivas de etiqueta de aplicación automátic
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Obtenga información acerca de cómo funciona la retención para SharePoint y OneDrive
 
-Para almacenar el contenido que debe conservarse, SharePoint y OneDrive crean una biblioteca de suspensión para conservación si no existe una para el sitio. La biblioteca de suspensión para conservación no está diseñada para usarse de forma interactiva, sino que almacena automáticamente los archivos cuando esto sea necesario por motivos de cumplimiento.
+Para almacenar el contenido que debe conservarse, SharePoint y OneDrive crean una biblioteca de suspensión para conservación si no existe una para el sitio. La biblioteca de suspensión para conservación no está diseñada para usarse de forma interactiva, sino que almacena automáticamente los archivos cuando esto sea necesario por motivos de cumplimiento. Funciona de la siguiente manera:
 
-Los elementos de SharePoint que tienen una etiqueta de retención estándar (no declara el elemento como un registro) no necesitan la biblioteca de suspensión para conservación porque estos elementos permanecen en su ubicación original. SharePoint impide que los usuarios eliminen elementos cuando la etiqueta de retención aplicada está configurada para conservar el contenido, y el control de versiones de SharePoint conserva las versiones anteriores cuando se editan los elementos. Sin embargo, en otros casos, la biblioteca de suspensión para conservación se usa cuando los elementos tienen que conservarse:
-- Elementos de OneDrive que tienen etiquetas de retención estándar
-- Elementos de SharePoint o OneDrive que tienen etiquetas de retención que los declaran como un registro, si el elemento está desbloqueado para su edición
-- Archivos compartidos como datos adjuntos en la nube que tienen una etiqueta de retención aplicada automáticamente
-- Elementos que están sujetos a directivas de retención
+Cuando un usuario cambia o elimina un elemento sujeto a retención, se comprueba si el contenido ha cambiado desde que se aplicó la configuración de retención. Si este es el primer cambio desde que se aplicaron los ajustes de retención, el contenido se copia a la biblioteca de retención de preservación, lo que permite al usuario cambiar o eliminar el contenido original.
 
-Para conservar este contenido cuando un usuario intenta cambiarlo o eliminarlo, se comprueba si el contenido se ha cambiado desde que se aplicó la configuración de retención. Si este es el primer cambio desde que se aplicaron los ajustes de retención, el contenido se copia a la biblioteca de retención de preservación, lo que permite a la persona cambiar o eliminar el contenido original.
-  
-Un trabajo de temporizador limpia periódicamente la biblioteca de suspensión para conservación. Para el contenido que ha estado en la biblioteca de suspensión para conservación durante más de 30 días, este trabajo compara el contenido con todas las consultas utilizadas por la configuración de retención para ese contenido. El contenido que es más antiguo que su período de retención configurado se elimina de la biblioteca de suspensión para conservación, así como de la ubicación original si todavía está allí. Este trabajo de temporizador se ejecuta cada siete días, lo que significa que, con el mínimo de 30 días, el contenido puede tardar hasta 37 días en eliminarse de la biblioteca de suspensión para conservación.
+Un trabajo de temporizador se ejecuta periódicamente en la biblioteca de suspensión para conservación. Para el contenido que ha estado en la biblioteca de suspensión para conservación durante más de 30 días, este trabajo compara el contenido con todas las consultas utilizadas por la configuración de retención para ese contenido. El contenido que es más antiguo que su período de retención configurado se elimina de la biblioteca de suspensión para conservación, así como de la ubicación original si todavía está allí. Este trabajo de temporizador se ejecuta cada siete días, lo que significa que, con el mínimo de 30 días, el contenido puede tardar hasta 37 días en eliminarse de la biblioteca de suspensión para conservación.
 
-Este comportamiento para copiar archivos en la biblioteca de suspensión para conservación se aplica al contenido que existe cuando se aplicó la configuración de retención. Además, para las directivas de retención, cualquier contenido nuevo que se cree o agregue al sitio después de incluirlo en la directiva se conservará en la biblioteca de suspensión para conservación. Sin embargo, el nuevo contenido no se copia en la biblioteca de suspensión para conservación la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, debe activar el [control de versiones](#how-retention-works-with-document-versions).
+Este comportamiento para copiar archivos en la Biblioteca de suspensión para conservación se aplica al contenido que existe cuando se aplica la configuración de retención. Además, en el caso de las directivas de retención, el contenido nuevo que se cree o agregue a la colección de sitios después de que se incluya en la directiva se conservará en la Biblioteca de suspensión para conservación. Sin embargo, el contenido nuevo no se copia en la biblioteca de suspensión para conservación la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, [control de versiones](#how-retention-works-with-document-versions) debe estar activado para el sitio original.
   
 Los usuarios ven un mensaje de error si intentan eliminar una biblioteca, lista, carpeta o sitio sujeto a retención. Pueden eliminar una carpeta si primero se mueven o eliminan los archivos en la carpeta que están sujetos a retención.
+
+Los usuarios también ven un mensaje de error si intentan eliminar un elemento etiquetado en cualquiera de las siguientes circunstancias. El elemento no se copia en la biblioteca de suspensión para conservación, pero permanece en la ubicación original:
+
+- La configuración de administración de registros que permite a los usuarios eliminar elementos etiquetados está desactivada.
+    
+    Para comprobar o cambiar esta configuración, vaya al nodo de **Administración de registros** en el Centro de cumplimiento de Microsoft 365 > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Eliminación de elementos**. Hay configuraciones independientes para SharePoint y OneDrive.
+
+- La etiqueta de retención marca los elementos como un registro y está [bloqueada](record-versioning.md).
+    
+    Solo cuando se desbloquea el registro, se almacena una copia de la última versión en la biblioteca de conservación de documentos.
+
+- La etiqueta de retención marca los elementos como [registro normativo](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked), que siempre impide que el elemento se edite o elimine.
 
 Cuando se asigna el contenido de una cuenta de OneDrive o un sitio de SharePoint a la configuración de retención, dependen de si la configuración de retención debe retener, eliminar, solo retener o eliminar.
 

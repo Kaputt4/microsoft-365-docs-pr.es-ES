@@ -16,18 +16,18 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e6bebd01ba3740efcf99677f83006e2d26c2157
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 6610fbc770e8a4d9e6119c417f4419919362515f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148871"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166439"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
 Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software que puede hacer que su equipo funcione lentamente, muestre anuncios inesperados o, en el peor de los casos, instale otro software que pueda ser inesperado o no deseado. PUA no se considera un virus, malware u otro tipo de amenaza, pero puede realizar acciones en los puntos de conexión que afecten negativamente al rendimiento o al uso de los puntos de conexión. El término *PUA* también puede hacer referencia a una aplicación que tenga mala reputación, según la evaluación de Microsoft Defender para punto de conexión, debido a determinados tipos de comportamiento no deseado.
