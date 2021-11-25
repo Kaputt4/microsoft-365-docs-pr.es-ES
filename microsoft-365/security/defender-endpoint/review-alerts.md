@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: d6265ec92e8827fd6b581dabba38c0d1e0275b24
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5ea3ffa3f326c8a38c6f8fe52a20ebf872474d56
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60699202"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166715"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Revisar alertas en Microsoft Defender para endpoint
 
@@ -30,7 +30,7 @@ ms.locfileid: "60699202"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 

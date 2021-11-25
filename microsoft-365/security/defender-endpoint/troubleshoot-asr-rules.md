@@ -19,12 +19,12 @@ ms.custom:
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8103aad218f4e439c5eb3ebf6c76f369715afd84
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 63c23b0ab0188abe0fb33d27789a437e1e445a2b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111248"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166691"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>Informar y solucionar problemas de Microsoft Defender para las reglas de ASR de punto de conexión
 
@@ -32,7 +32,7 @@ ms.locfileid: "61111248"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender es</a> la nueva interfaz para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de Microsoft. Aquí podrá ver fácilmente el estado de seguridad de su organización; configurar dispositivos, usuarios y aplicaciones, así como recibir alertas sobre actividad sospechosa. El Microsoft 365 Defender está pensado para que los administradores de seguridad y los equipos de operaciones de seguridad administren y protejan mejor su organización. Visite el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> .

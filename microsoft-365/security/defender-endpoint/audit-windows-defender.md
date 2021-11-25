@@ -16,12 +16,12 @@ ms.topic: article
 ms.technology: mde
 ms.date: 10/14/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fd5966380b23b13ab43b3e0e0c6583db03971541
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4c96f7a0f2788f1ed43d06e35c13896600a98b74
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882938"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170612"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Probar la reducción de superficie de ataque en Microsoft Defender para endpoint
 
@@ -29,7 +29,8 @@ ms.locfileid: "60882938"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Como parte del equipo de seguridad de la organización, puedes configurar las capacidades de reducción de superficie de ataque para que se ejecuten en modo auditoría para ver cómo funcionarán. En el modo de auditoría, puede habilitar:
@@ -41,13 +42,13 @@ Como parte del equipo de seguridad de la organización, puedes configurar las ca
 
 El modo auditoría te permite ver un registro de lo *que hubiera* ocurrido si hubieras habilitado la característica.
 
-Puedes habilitar el modo de auditoría al probar cómo funcionarán las características. Esto te ayudará a asegurarte de que tus aplicaciones de línea de negocio no se ven afectadas. También puede obtener una idea de cuántos intentos de modificación de archivos sospechosos se producen durante un período de tiempo determinado.
+Puedes habilitar el modo de auditoría al probar cómo funcionarán las características. Habilitar el modo de auditoría solo para pruebas ayuda a evitar que el modo de auditoría afecte a las aplicaciones de línea de negocio. También puede obtener una idea de cuántos intentos de modificación de archivos sospechosos se producen durante un período de tiempo determinado.
 
 Las características no bloquearán ni impedirán que se modifiquen aplicaciones, scripts o archivos. Sin embargo, el Windows de eventos registrará eventos como si las características estuvieran totalmente habilitadas. Con el modo de auditoría, puedes revisar el registro de eventos para ver qué efecto habría tenido la característica si se hubiera habilitado.
 
 Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** de \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operativo**.
 
-Usa Defender para Endpoint para obtener más detalles para cada evento, especialmente para investigar reglas de reducción de superficie de ataque. El uso de la consola defender para endpoint te permite investigar problemas como parte de la escala de tiempo de alerta y [los escenarios de investigación.](investigate-alerts.md)
+Usa Defender para endpoint para obtener más detalles para cada evento. Estos detalles son especialmente útiles para investigar reglas de reducción de superficie de ataque. El uso de la consola defender para endpoint te permite investigar problemas como parte de la escala de tiempo de alerta y [los escenarios de investigación.](investigate-alerts.md)
 
 Puede habilitar el modo de auditoría mediante la directiva de grupo, PowerShell y los proveedores de servicios de configuración (CSP).
 

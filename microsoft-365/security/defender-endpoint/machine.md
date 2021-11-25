@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e2b3cc41d5baddaa5314a493dfeee07e20a8f72
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f500c43aad99d36e2e40e0968f6093943c7f199
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205396"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171190"
 ---
 # <a name="machine-resource-type"></a>Tipo de recurso Máquina
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -39,13 +40,13 @@ ms.locfileid: "60205396"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 <br>
 
 ****
 
-|Método|Tipo de valor devuelto|Descripción|
+|Método|Tipo de valor devuelto|Description|
 |---|---|---|
 |[Enumerar máquinas](get-machines.md)|[colección machine](machine.md)|Enumerar el conjunto [de entidades](machine.md) de máquina de la organización.|
 |[Obtener máquina](get-machine-by-id.md)|[máquina](machine.md)|Obtener una [máquina por](machine.md) su identidad.|
@@ -85,7 +86,7 @@ ms.locfileid: "60205396"
 |rbacGroupName|Cadena|Nombre del grupo de máquinas.|
 |rbacGroupId|Cadena|Id. de grupo de máquinas.|
 |riskScore|Enumeración que admite valores null|Puntuación de riesgo evaluada por Microsoft Defender para Endpoint. Los valores posibles son: 'None', 'Informational', 'Low', 'Medium' y 'High'.|
-|aadDeviceId|Guid de representación que admite valores NULL|Id. de dispositivo de AAD (cuando [la máquina](machine.md) está unida a AAD).|
+|aadDeviceId|Guid de representación que admite valores NULL|AAD id. de dispositivo (cuando [el](machine.md) equipo AAD unido).|
 |machineTags|Colección string|Conjunto de [etiquetas de](machine.md) máquina.|
 |exposureLevel|Enumeración que admite valores null|Nivel de exposición evaluado por Microsoft Defender para Endpoint. Los valores posibles son: 'None', 'Low', 'Medium' y 'High'.|
 |deviceValue|Enumeración que admite valores null|El [valor del dispositivo](tvm-assign-device-value.md). Los valores posibles son: 'Normal', 'Low' y 'High'.|

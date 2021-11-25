@@ -17,19 +17,20 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b8a0c196373cf0d6ef03b2eccb171d125917a993
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9e368f2cb3cecf9359c4aed5e727aef2ee21c02b
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665806"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171682"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Recopilar datos de diagnóstico de cumplimiento de actualizaciones para Antivirus de Microsoft Defender evaluación
 
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de soporte técnico e ingeniería de Microsoft para ayudar a solucionar problemas que se pueden encontrar al usar la sección evaluación de Antivirus de Microsoft Defender del complemento Actualizar cumplimiento.
 
@@ -69,6 +70,6 @@ En al menos dos dispositivos que no se informen o se muestren en Update Complian
     Please contact me at:
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Solucionar problemas Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

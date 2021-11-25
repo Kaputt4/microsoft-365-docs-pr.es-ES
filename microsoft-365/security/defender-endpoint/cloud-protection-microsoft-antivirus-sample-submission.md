@@ -15,19 +15,18 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1c7ef9883aacf9af0ee5474795c19adf1694fd9c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3ffd18a0b2a0e81f2f3a425434f5e786d8dc598d
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701734"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171553"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
-- [Antivirus de Microsoft Defender](microsoft-defender-antivirus-windows.md)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
 Antivirus de Microsoft Defender muchos mecanismos inteligentes para detectar malware. Una de las capacidades más eficaces es la capacidad de aplicar la potencia de la nube para detectar malware y realizar análisis rápidos. La protección en la nube y el envío automático de muestras funcionan Antivirus de Microsoft Defender para ayudar a proteger contra amenazas nuevas y emergentes. 
 
@@ -133,11 +132,11 @@ Para obtener más información, consulte los recursos siguientes:
 
 Hay dos escenarios más en los que Defender for Endpoint puede solicitar un ejemplo de archivo que no esté relacionado con la protección de la nube en Antivirus de Microsoft Defender. Estos escenarios se describen en la tabla siguiente:
 
-| Escenario | Descripción |
+| Escenario | Description |
 |:---|:---|
 |Colección de ejemplos de archivos manual en el portal Microsoft 365 Defender archivo | Al incorporar dispositivos a Defender for Endpoint, puede configurar las opciones [para detección y respuesta de puntos de conexión (EDR).](overview-endpoint-detection-response.md) Por ejemplo, hay una configuración para habilitar colecciones de muestras desde el dispositivo, que puede confundirse fácilmente con la configuración de envío de ejemplo descrita en este artículo. <br/><br/>La EDR controla la colección de muestras de archivos de dispositivos cuando se solicita a través del portal de Microsoft 365 Defender y está sujeta a los roles y permisos ya establecidos. Esta configuración puede permitir o bloquear la recopilación de archivos desde el punto de conexión para características como el análisis profundo en el portal Microsoft 365 Defender web. Si esta configuración no está configurada, el valor predeterminado es habilitar la colección de muestras. <br/><br/>Obtenga información sobre las opciones de configuración de Defender for Endpoint, vea: Herramientas y métodos de incorporación [para Windows 10 dispositivos en Defender para endpoint](configure-endpoints.md) |
 | Análisis automatizado de contenido de investigación y respuesta | Cuando se ejecutan investigaciones automatizadas en dispositivos (cuando se configura para ejecutarse automáticamente en respuesta a una alerta o ejecutarse manualmente), los archivos identificados como [sospechosos](automated-investigations.md) se pueden recopilar desde los puntos de conexión para una inspección posterior. Si es necesario, la característica de análisis de contenido de archivos para investigaciones automatizadas se puede deshabilitar en el portal Microsoft 365 Defender datos. <br/><br/> Los nombres de extensión de archivo también se pueden modificar para agregar o quitar extensiones para otros tipos de archivo que se envían automáticamente durante una investigación automatizada. <br/><br/> Para obtener más información, vea [Manage automation file uploads](manage-automation-file-uploads.md). |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Información sobre los servicios de protección de última generación](next-generation-protection.md)

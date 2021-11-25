@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 62cc53910cb5f2c618a45f3ea755c6be7a49c853
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: 82e9a72752b61856d74c5c82b1557e82b6f0e416
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61145015"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166787"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -102,7 +102,7 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (o posterior)](/windows/whats-new/ltsc/)
-- Windows 10 Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows servidor
@@ -117,6 +117,8 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 Los dispositivos de la red deben ejecutar una de estas ediciones.
 
 Los requisitos de hardware de Defender para Endpoint en dispositivos son los mismos para las ediciones admitidas.
+
+Para obtener más información sobre las versiones compatibles de Windows 10, vea (/windows/release-health/release-information).
 
 > [!NOTE]
 > Las máquinas que ejecutan versiones móviles de Windows (como Windows CE y Windows 10 Mobile) no son compatibles.

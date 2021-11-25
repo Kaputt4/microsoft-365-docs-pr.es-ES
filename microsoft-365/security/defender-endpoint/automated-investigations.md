@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-ms.date: 02/02/2021
+ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: abb8bbce480312a799e6360f2f91cca8e31500a0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 738cdd4d312de4bb7c7f74404a6905cd02c1d3f4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109868"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167399"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -101,8 +101,8 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)
-- [Investigación y respuesta automatizadas en Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)
+- [Investigación y respuesta automatizadas en Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

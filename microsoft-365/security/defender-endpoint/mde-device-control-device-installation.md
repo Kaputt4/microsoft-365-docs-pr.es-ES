@@ -13,14 +13,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07ee57728d93458ca3242fafea1e7514a9e853b3
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 5f0828d24ddb4c02d533d0fced2389ca3cb61ce4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881990"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167075"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Instalación de dispositivos de control de dispositivos de Microsoft Defender para endpoint 
+
+**Se aplica a**
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender para endpoint device control removable Storage Access Control permite realizar la siguiente tarea:
 
@@ -267,7 +271,7 @@ DeviceEvents
 
 :::image type="content" source="../../media/block-removable-storage2.png" alt-text="almacenamiento en bloques":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="how-can-i-know-whether-the-target-machine-gets-the-deployed-policy"></a>¿Cómo puedo saber si la máquina de destino obtiene la directiva implementada? 
 Puede usar la siguiente consulta para obtener la versión del cliente antimalware en el portal de seguridad Microsoft 365 web:

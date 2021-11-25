@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 92a9a1f01ad8747719ecf41f16e1fb1f1c4f8625
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: a09f034ac35aa3380ea834eafc149eaad9a7cb3d
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552697"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169055"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores con el Visor de eventos
 
@@ -29,7 +29,8 @@ ms.locfileid: "60552697"
 
 **Se aplica a:**
 - Visor de eventos
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -55,12 +56,12 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 
    ****
 
-   |Identificador de evento|Mensaje|Descripción|Acción|
+   |Identificador de evento|Mensaje|Description|Action|
    |---|---|---|---|
    |1|Se inició el servicio de Microsoft Defender para puntos de conexión `variable` (versión).|Se produce durante el inicio, apagado y durante la incorporación del sistema.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |2|Cierre del servicio de Microsoft Defender para puntos de conexión.|Se produce cuando el dispositivo se apaga o se apaga.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |3|Microsoft Defender para el servicio de extremo no se pudo iniciar. Código de error: `variable` .|El servicio no se ha empezado.|Revise otros mensajes para determinar posibles causas y pasos de solución de problemas.|
-   |4 |Microsoft Defender para el servicio de extremo se puso en contacto con el servidor en `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> Esta dirección URL coincidirá con la que se ve en el Firewall o la actividad de red.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
+   |4|Microsoft Defender para el servicio de extremo se puso en contacto con el servidor en `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> Esta dirección URL coincidirá con la que se ve en el Firewall o la actividad de red.|Notificación de funcionamiento normal; no se requiere ninguna acción.|
    |5|Microsoft Defender para el servicio de extremo no se pudo conectar al servidor en `variable` .|Variable = dirección URL de los servidores de procesamiento de Defender for Endpoint. <p> El servicio no pudo ponerse en contacto con los servidores de procesamiento externos en esa dirección URL.|Compruebe la conexión a la dirección URL. Consulte [Configure proxy and Internet connectivity](configure-proxy-internet.md).|
    |6 |El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación.|El dispositivo no se incorporó correctamente y no se va a informar al portal.|La incorporación debe ejecutarse antes de iniciar el servicio. <p> Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
    |7 |Microsoft Defender para el servicio de extremo no pudo leer los parámetros de incorporación. Error: `variable` .|Variable = descripción detallada del error. El dispositivo no se incorporó correctamente y no se va a informar al portal.|Compruebe que la configuración de incorporación y los scripts se implementaron correctamente. Intente volver a implementar los paquetes de configuración. <p> Consulta [Incorporación Windows 10 dispositivos](configure-endpoints.md).|
@@ -147,7 +148,7 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 - [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md)
 - [Solucionar problemas de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

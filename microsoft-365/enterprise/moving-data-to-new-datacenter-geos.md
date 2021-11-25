@@ -3,7 +3,7 @@ title: Mover datos principales a nuevas Microsoft 365 del centro de datos
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 11/16/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre las nuevas Office 365 del centro de datos y cómo usar la opción de residencia de datos para solicitar un movimiento de los datos principales a una nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 724021bc3fb5fd8a0946bcf5f460e4848c44bf9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 590d1b7e72f79e0e6cfd4e29a0a78560f6c13433
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209650"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168851"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Mover datos principales a nuevas Microsoft 365 del centro de datos
 
@@ -28,13 +28,13 @@ Seguimos abierto nuevas geos de centro de datos para Microsoft 365 servicios. Es
 
 Los datos principales del cliente son un término que hace referencia a un subconjunto de datos de clientes, incluidos: 
 - Exchange Online buzón de correo electrónico (cuerpo del correo electrónico, entradas de calendario y el contenido de los datos adjuntos de correo electrónico)
-- SharePoint Contenido del sitio en línea y los archivos almacenados en ese sitio
+- SharePoint contenido del sitio en línea y los archivos almacenados en ese sitio
 - Archivos cargados en OneDrive para la Empresa
 - Teams chat, incluidos mensajes privados, mensajes de canal e imágenes usadas en chats
   
 Los clientes existentes que tienen sus datos principales de clientes almacenados en una ubicación geográfica de centro de datos ya existente no se verán afectados por el inicio de una nueva ubicación geográfica del centro de datos. No presentamos ninguna funcionalidad, características o certificaciones de cumplimiento únicas con la nueva ubicación geográfica del centro de datos. Como cliente en cualquiera de estas dos geos, experimentará la misma calidad de servicio, rendimiento y controles de seguridad que antes. Ofrecemos a los clientes existentes que aparecen en la tabla siguiente una opción para solicitar la migración anticipada de los datos principales de clientes de su organización en reposo a su nueva ubicación geográfica del centro de datos.
   
-|**Clientes con país de registro de inquilinos en**|**Geo de centro de datos anterior**|**Nuevo centro de datos geográfico**|**Geo disponible desde**|
+| Clientes con país de registro de inquilinos en | Geo de centro de datos anterior | Nuevo centro de datos geográfico | Geo disponible desde |
 |:-----|:-----|:-----|:-----|
 |**Japón**| Asia/Pacífico | Japón | Diciembre de 2014 |
 |**Australia, Nueva Zelanda, Fiyi**| Asia/Pacífico | Australia | Marzo de 2015 |
@@ -49,6 +49,7 @@ Los clientes existentes que tienen sus datos principales de clientes almacenados
 |**Alemania**| Unión Europea | Alemania | Diciembre de 2019 |
 |**Noruega**| Unión Europea | Noruega | Abril de 2020 |
 |**Brasil**| América | Brasil | Noviembre de 2020 |
+|**Suecia**| Unión Europea | Suecia | Noviembre de 2021 |
 
 A partir del 1 de octubre de 2020, los clientes con una Office 365 Educación suscripción incluida en el inquilino no son aptos para la migración.
 

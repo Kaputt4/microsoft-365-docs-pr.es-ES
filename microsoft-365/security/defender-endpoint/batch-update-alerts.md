@@ -16,21 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b8109c71206ee9f689cafb28d7def14ff3122704
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 007dd161ac221a51ce2d2a424974db51177db615
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586142"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171010"
 ---
 # <a name="batch-update-alerts"></a>Alertas de actualización por lotes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Se aplica a:** 
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -78,7 +80,7 @@ Nombre|Tipo|Descripción
 Authorization | Cadena | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione los IDs de las alertas que se actualizarán y los valores de los campos relevantes que desea actualizar para estas alertas.
 
@@ -86,10 +88,10 @@ Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mante
 
 Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad | Tipo | Descripción
+Propiedad | Tipo | Description
 :---|:---|:---
 alertIds | Cadena de &lt; lista&gt;| Una lista de los IDs de las alertas que se actualizarán. **Required**
-status | String | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
+status | Cadena | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
 assignedTo | Cadena | Propietario de las alertas especificadas
 classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'. 
 determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'

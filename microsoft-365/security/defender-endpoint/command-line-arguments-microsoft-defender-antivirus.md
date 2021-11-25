@@ -15,18 +15,18 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 00420a0f6bb809d50f77013dc953386c0e426967
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 0d9a2d84febb15dd626fb603faecc2bb0ba74af1
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881930"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171041"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurar y administrar Antivirus de Microsoft Defender con la mpcmdrun.exe de línea de comandos
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Puede realizar varias funciones en Antivirus de Microsoft Defender con la herramienta de línea de comandos dedicada **mpcmdrun.exe**. Esta utilidad es útil cuando se desea automatizar Antivirus de Microsoft Defender tareas. Puede encontrar la utilidad en `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Ejecutarlo desde un símbolo del sistema.
 
@@ -83,7 +83,7 @@ En la tabla siguiente se enumeran los errores comunes que pueden producirse al u
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=800722F0D**|El firewall bloquea la conexión o realiza una inspección SSL.|
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=80072EE7 httpcode=451)**|El firewall bloquea la conexión o realiza una inspección SSL.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Configurar las funciones del Antivirus de Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
 - [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)

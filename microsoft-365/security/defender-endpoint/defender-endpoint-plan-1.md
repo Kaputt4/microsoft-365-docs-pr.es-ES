@@ -14,14 +14,18 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b21c72c44f19e4f9aede5a72c4860cbd6fac1c5c
-ms.sourcegitcommit: b19e54b3888a0b07d08dbd23172daec303c7c95b
+ms.openlocfilehash: 48d0884c84f6c609b2924875bfea579dcac3fcc4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61152399"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167519"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Información general sobre Microsoft Defender para el plan 1 de punto de conexión
+
+**Se aplica a**
+
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
 > Si tiene Microsoft 365 E3 O A3 pero no Microsoft 365 E5 o A5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
@@ -74,8 +78,8 @@ Las acciones de respuesta manual son acciones que el equipo de seguridad puede r
 
 | Archivo/dispositivo | Acción | Descripción |
 |:---|:---|:---|
-| Dispositivo | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
-| Dispositivo | Aislar el dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
+| Device | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
+| Device | Aislar el dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
 | Archivo | Detener y poner en cuarentena un archivo |Impide que los procesos se ejecuten y ponga en cuarentena los archivos asociados. |
 | Archivo | Agregar un indicador para bloquear o permitir un archivo | Los indicadores de bloqueo impiden que los archivos ejecutables portátiles se lean, escriban o ejecuten en dispositivos. <p>Los indicadores allow impiden que los archivos se bloqueen o corrijan. |
 

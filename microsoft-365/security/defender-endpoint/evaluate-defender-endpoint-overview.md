@@ -1,7 +1,7 @@
 ---
 title: Evaluar Microsoft 365 Defender información general del extremo
 description: Configure un entorno Microsoft 365 Defender prueba o un entorno piloto. Pruebe y experimente cómo la solución de seguridad está diseñada para proteger dispositivos, identidades, datos y aplicaciones de su organización.
-keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, Microsoft 365 Defender de evaluación, Microsoft 365 Defender piloto, ciber seguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, dispositivo, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
+keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, Microsoft 365 Defender de evaluación, Microsoft 365 Defender  pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,17 +21,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 948ebe7de82b4c187e5674bf5ed7042dedf7beb9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5101f17bef65f20cf537ad9526c6acbb4d567c2b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157991"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168712"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>Evaluar Microsoft 365 Defender información general del extremo
 
 **Se aplica a:**
-
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft 365 Defender
 
 ![Microsoft 365 Defender evaluación y prueba piloto.](../../media/defender/m365-defender-eval-process.png)

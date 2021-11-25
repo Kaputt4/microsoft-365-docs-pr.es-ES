@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77d0bfb569837a508221d78d811c985153533ed7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7feb83c867d008e027f21c3247c80ec2a7fc638
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152231"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168995"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportar evaluación de inventario de software por dispositivo
 
@@ -29,12 +29,13 @@ ms.locfileid: "60152231"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
+
+Las diferentes llamadas API obtienen distintos tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
 
 - [Exportar respuesta JSON de evaluación de **inventario de software**](#1-export-software-inventory-assessment-json-response) La API extrae todos los datos de la organización como respuestas Json. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
@@ -42,7 +43,7 @@ Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la 
   - Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.
   - Descargue todos los archivos con las direcciones URL de descarga y procese los datos como quiera.
 
-Los datos recopilados (mediante la respuesta _Json_ o a través de _archivos)_ son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
+Los datos recopilados (mediante la respuesta _Json_ o _a_ través de archivos) son la instantánea actual del estado actual. No contiene datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
 
 > [!NOTE]
 > A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
@@ -90,7 +91,7 @@ GET /api/machines/SoftwareInventoryByMachine
 
 ****
 
-Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 DeviceId|string|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
@@ -98,8 +99,8 @@ DiskPaths|Array[string]|Prueba en disco de que el producto está instalado en el
 EndOfSupportDate|string|La fecha en la que la compatibilidad con este software tiene o finalizará.|2020-12-30
 EndOfSupportStatus|string|Estado de finalización de la compatibilidad. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Próximos EOS
 Id|string|Identificador único del registro.|123ABG55_573AG&mnp!
-NumberOfWeaknesses|int|Número de debilidades de este software en este dispositivo|3
-OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
+NumberOfWeaknesses|Entero|Número de debilidades de este software en este dispositivo|3
+OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Se trata de sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
 RbacGroupName|string|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
 RegistryPaths|Array[string]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
 SoftwareFirstSeenTimestamp|string|La primera vez que se vio este software en el dispositivo.|2019-04-07 02:06:47
@@ -251,7 +252,7 @@ GET /api/machines/SoftwareInventoryExport
 
 ****
 
-Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
 GeneratedTime|string|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
@@ -279,7 +280,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 - [Exportar evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)

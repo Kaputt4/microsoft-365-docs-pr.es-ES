@@ -15,19 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9ad9b3bfe8aec36a3fdf7db456ed6383c586176
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ca6e57fdbb8e2e197d3f57d07ec70694748a48
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168331"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170986"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacidad de Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -84,7 +85,7 @@ Hay cierta información acerca de los eventos que es común a todos, independien
 
 Los siguientes campos se consideran comunes para todos los eventos:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |plataforma|La clasificación general de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas se puede producir un problema para que se pueda priorizar correctamente.|
 |machine_guid|Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados.|
@@ -107,9 +108,9 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 **Instalación y desinstalación de Microsoft Defender** para endpoint:
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Campo|Description|
 |---|---|
 |correlation_id|Identificador único asociado a la instalación.|
 |version|Versión del paquete.|
@@ -119,9 +120,9 @@ Se recopilan los campos siguientes:
 
 **Configuración de Microsoft Defender para puntos de conexión:**
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Campo|Description|
 |---|---|
 |antivirus_engine.enable_real_time_protection|Si la protección en tiempo real está habilitada en el dispositivo o no.|
 |antivirus_engine.passive_mode|Si el modo pasivo está habilitado en el dispositivo o no.|
@@ -141,9 +142,9 @@ Se recopilan los campos siguientes:
 
 **Informe de actualización de inteligencia de seguridad**:
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |from_version|Versión original de inteligencia de seguridad.|
 |to_version|Nueva versión de inteligencia de seguridad.|
@@ -158,9 +159,9 @@ Se recopilan los campos siguientes:
 
 Recopila información del sistema y el estado de una aplicación cuando una aplicación se cierra inesperadamente.
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |v1_crash_count|Número de veces que el proceso del motor V1 se bloquea cada hora en el equipo cliente|
 |v2_crash_count|Número de veces que el proceso del motor V2 se bloquea cada hora en el equipo cliente|
@@ -168,9 +169,9 @@ Se recopilan los campos siguientes:
 
 **Estadísticas de extensión de kernel**:
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |version|Versión de Microsoft Defender para endpoint en macOS.|
 |instance_id|Identificador único generado en el inicio de extensión de kernel.|
@@ -204,9 +205,9 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 **Configuración de Microsoft Defender para puntos de conexión:**
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |connection_retry_timeout|Tiempo de espera de reintento de conexión cuando se comunica con la nube.|
 |file_hash_cache_maximum|Tamaño de la memoria caché del producto.|
@@ -226,9 +227,9 @@ Se recopilan los campos siguientes:
 
 **Configuración de Actualización automática de Microsoft:**
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |how_to_check|Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales).|
 |channel_name|Actualizar canal asociado al dispositivo.|
@@ -239,9 +240,9 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Informe de carga iniciada del registro de diagnóstico
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
 |size|Tamaño del registro de soporte técnico.|
@@ -250,9 +251,9 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |request_id|Identificador de correlación para la solicitud de carga del registro de soporte técnico.|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
@@ -266,9 +267,9 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 **Estadísticas de extensión de kernel**:
 
-Se recopilan los campos siguientes: 
+Se recopilan los campos siguientes:
 
-|Campo|Descripción|
+|Field|Description|
 |---|---|
 |pkt_ack_timeout|Las siguientes propiedades son valores numéricos agregados, que representan el recuento de eventos que se han producido desde el inicio de la extensión del kernel.|
 |pkt_ack_conn_timeout||

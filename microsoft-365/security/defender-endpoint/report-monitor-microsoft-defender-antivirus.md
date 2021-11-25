@@ -16,18 +16,18 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e2efd5f5354b84f7a10f1a9284ca812014240a1
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 8d801daed1ae9884d10d6a4eec7059096333ec6f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121966"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167699"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Informe en el Antivirus de Windows Defender
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Antivirus de Microsoft Defender está integrado en Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 y Windows Server 2016. Antivirus de Microsoft Defender es de la protección de próxima generación en Microsoft Defender para endpoint. La protección de última generación ayuda a proteger los dispositivos de amenazas de software como virus, malware y spyware en el correo electrónico, las aplicaciones, la nube y la web.
 

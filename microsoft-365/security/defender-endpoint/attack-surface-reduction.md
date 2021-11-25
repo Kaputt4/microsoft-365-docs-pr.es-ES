@@ -18,18 +18,19 @@ ms.custom:
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e42cdaa8ecd464581a786d47a4b2044b2907ca9
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 956a20030e61b47a1dfa66872fc2e4ecc5eca967
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962499"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171478"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Por qué las reglas de reducción de superficie de ataque son importantes
@@ -187,7 +188,7 @@ Si está configurando reglas de reducción de superficie de ataque mediante la d
 |[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br> Windows Server 2016 <br> Windows Server 2012 R2 |
 |[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|
 |[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|
-|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|No se admite|[Windows 10, versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) (compilación 18362) o posterior, o Windows 11|
+|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|No compatible|[Windows 10, versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) (compilación 18362) o posterior, o Windows 11|
 |[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11 <br> <br>  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) <br> [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 |
 |[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Compatible|[Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior, o Windows 11|

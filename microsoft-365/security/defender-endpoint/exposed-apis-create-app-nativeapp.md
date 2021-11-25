@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bcd09c1a2f828545243d1f4d56c9e2cab49356ab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 747397d8baee103a311a6aec842af189403ef0fc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190562"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168743"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Usar Microsoft Defender para las API de punto de conexión
 
@@ -30,7 +30,7 @@ ms.locfileid: "60190562"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -48,11 +48,11 @@ Microsoft Defender para endpoint expone gran parte de sus datos y acciones a tra
 
 En general, deberá seguir los pasos siguientes para usar las API:
 
-- Crear una aplicación de AAD
+- Crear una AAD aplicación
 - Obtener un token de acceso con esta aplicación
 - Usar el token para obtener acceso a la API de Defender for Endpoint
 
-En esta página se explica cómo crear una aplicación de AAD, obtener un token de acceso a Microsoft Defender para Endpoint y validar el token.
+En esta página se explica cómo crear una aplicación AAD, obtener un token de acceso a Microsoft Defender para Endpoint y validar el token.
 
 > [!NOTE]
 > Al obtener acceso a la API de Microsoft Defender para endpoint en nombre de un usuario, necesitará el permiso de aplicación y el permiso de usuario correctos.
@@ -125,7 +125,7 @@ En esta página se explica cómo crear una aplicación de AAD, obtener un token 
 
 ## <a name="get-an-access-token"></a>Obtener un token de acceso
 
-Para obtener más información sobre los tokens de AAD, consulte [Tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Para obtener más información sobre AAD tokens, [vea Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>Uso de C\#
 
@@ -200,7 +200,7 @@ Compruebe para asegurarse de que tiene un token correcto:
     // Do something useful with the response
     ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Microsoft Defender para api de punto de conexión](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)

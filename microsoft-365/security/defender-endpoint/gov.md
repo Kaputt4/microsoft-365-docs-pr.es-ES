@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 92e35fb75b26df6768860b4cb98b825086fa80d5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: fc3865ff4170fcce245f0971ab2cf1c6772bb346
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109808"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166895"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender para endpoint para clientes del gobierno de Estados Unidos, integrado en el entorno de Azure US Government, usa las mismas tecnologías subyacentes que Defender para endpoint en Azure Commercial.
 
@@ -151,7 +151,7 @@ Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Compruebe que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL o cree una regla de permitir específicamente para ellas.
 
-Hoja de cálculo de la lista de dominios|Descripción
+Hoja de cálculo de la lista de dominios|Description
 :-----|:-----
 ![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

@@ -15,18 +15,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 11/15/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 307896b583fe3c0e9999afaa789646dc7fafa550
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 803434179a616ddea718c543da4308f6af77b39e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148676"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167387"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican [](run-scan-microsoft-defender-antivirus.md)a exámenes programados, [](schedule-antivirus-scans.md)exámenes a petición y protección y supervisión siempre activas en tiempo [real.](configure-real-time-protection-microsoft-defender-antivirus.md) **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre varios tipos diferentes:
@@ -88,7 +89,7 @@ Puede elegir entre varios métodos para definir exclusiones para Antivirus de Mi
 
 Consulte los siguientes artículos:
 
-- [Configurar las opciones de restricción de dispositivo en Microsoft Intune](/intune/device-restrictions-configure)
+- [Configurar restricciones de dispositivos en Microsoft Intune](/intune/device-restrictions-configure)
 - [Antivirus de Microsoft Defender de restricción de dispositivos para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Configuration Manager para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
@@ -164,7 +165,7 @@ Add-MpPreference -ExclusionExtension ".test"
 ```
 
 > [!TIP]
-> Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/).
+> Para obtener más información, vea [Usar cmdlets de PowerShell para configurar y ejecutar el Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Cmdlets de Antivirus de Microsoft Defender](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Windows de administración de archivos (WMI) para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
@@ -334,7 +335,7 @@ En el siguiente ejemplo, se resaltan los elementos contenidos en `ExclusionExten
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Salida de PowerShell para Get-MpPreference.":::
 
-Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/).
+Para obtener más información, vea [Usar cmdlets de PowerShell para configurar y ejecutar el Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Cmdlets de Antivirus de Microsoft Defender](/powershell/module/defender/).
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Recuperar una lista de exclusiones específica mediante PowerShell
 
@@ -350,7 +351,7 @@ En el siguiente ejemplo, la lista se divide en nuevas líneas para cada uso del 
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Salida de PowerShell que muestra solo las entradas de la lista de exclusión.":::
 
-Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/).
+Para obtener más información, vea [Usar cmdlets de PowerShell para configurar y ejecutar el Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Cmdlets de Antivirus de Microsoft Defender](/powershell/module/defender/).
 
 <a id="validate"></a>
 
@@ -381,7 +382,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

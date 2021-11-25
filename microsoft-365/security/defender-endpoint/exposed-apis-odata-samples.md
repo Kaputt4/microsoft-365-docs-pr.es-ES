@@ -17,21 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 18da838cf57b330d5015f535fefcbd2db42b73ef
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d134cfb7d8c0aff1e7a50b1e0ce9cc2daa9a8b1
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209902"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167147"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Consultas de OData con Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,10 +44,10 @@ No todas las propiedades se pueden filtrar.
 
 ## <a name="properties-that-support-filter"></a>Propiedades que admiten $filter
 
-- [Alerta](alerts.md): `alertCreationTime` , , , y `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
-- [Máquina](machine.md): `ComputerDnsName` , , , , y `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
-- [MachineAction](machineaction.md): `Status` , , y `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
-- [Indicador](ti-indicator.md): `indicatorValue` , , , y `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
+- [Alerta](alerts.md): `alertCreationTime` , , , , , y `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
+- [Máquina](machine.md): `ComputerDnsName` , , , , , y `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
+- [MachineAction](machineaction.md): `Status` , , , y `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
+- [Indicador](ti-indicator.md): `indicatorValue` , , , , y `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
 
 ### <a name="example-1"></a>Ejemplo 1
 
@@ -513,6 +514,6 @@ json{
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Microsoft Defender para api de punto de conexión](apis-intro.md)

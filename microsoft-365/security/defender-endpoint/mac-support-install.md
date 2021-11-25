@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8371129ff1b64681aee018802205a5f5a359fd86
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52fdf612ac86c1a0cc99220793461507f86a6fe3
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209482"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170588"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de instalación de Microsoft Defender para Endpoint en macOS
 
@@ -31,14 +31,15 @@ ms.locfileid: "60209482"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="installation-failed"></a>Error en la instalación
 
-Para la instalación manual, la página Resumen del asistente de instalación dice: "Se produjo un error durante la instalación. El instalador encontró un error que provocó un error en la instalación. Póngase en contacto con el fabricante del software para obtener ayuda." Para las implementaciones de MDM, también se muestra como un error de instalación genérica.
+Para la instalación manual, la página Resumen del asistente de instalación dice: "Se produjo un error durante la instalación. El instalador encontró un error que provocó un error en la instalación. Póngase en contacto con el editor de software para obtener ayuda". Para las implementaciones de MDM, también se muestra como un error de instalación genérica.
 
 Aunque no se muestra un error exacto al usuario final, se mantiene un archivo de registro con el progreso de la instalación en `/Library/Logs/Microsoft/mdatp/install.log` . Cada sesión de instalación se anexa a este archivo de registro. Solo puede usar `sed` para generar la última sesión de instalación:
 
@@ -59,7 +60,7 @@ Error en la instalación porque no se admite una degradación entre estas versio
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Falta o no se actualiza el registro de instalación de MDATP
 
 En raras ocasiones, la instalación no deja ningún seguimiento en el archivo /Library/Logs/Microsoft/mdatp/install.log de MDATP.
-Puedes comprobar que se ha producido una instalación y analizar posibles errores consultando registros de macOS (útil en la implementación de MDM, cuando no hay interfaz de usuario de cliente). Se recomienda usar una ventana de tiempo limitada para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.
+En primer lugar, compruebe que se ha producido una instalación. A continuación, analice los posibles errores consultando los registros de macOS. Es útil hacerlo en implementaciones MDM, cuando no hay ninguna interfaz de usuario de cliente. Se recomienda usar una ventana de tiempo limitada para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

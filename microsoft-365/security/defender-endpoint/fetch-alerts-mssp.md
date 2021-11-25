@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d5f0e7ec66deabcc037d529676fadabd9999729
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 02b4d16e6ef99f6f3827d2879cd6d26aeb887112
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804946"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169031"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Capturar alertas desde el inquilino del cliente de MSSP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > [!NOTE]
 > El MSSP toma esta acción.
@@ -181,7 +181,7 @@ Ahora puede descargar el archivo de configuración correspondiente para siem y c
 
 Para obtener información sobre cómo capturar alertas mediante la API de REST, vea [Extraer alertas mediante la API de REST](pull-alerts-using-rest-api.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Conceder acceso a MSSP al portal](grant-mssp-access.md)
 - [Acceder al portal de clientes de MSSP](access-mssp-portal.md)

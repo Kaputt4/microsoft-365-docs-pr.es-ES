@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 95f377992c745045667a016fcf7dae1b391f2323
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: ad66a651406706d0e2730f9913839540418bb02b
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554077"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170650"
 ---
 # <a name="create-and-manage-device-groups"></a>Crear y administrar grupos de dispositivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-
 - Azure Active Directory
 - Office 365
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -56,7 +56,7 @@ Como parte del proceso de creación de un grupo de dispositivos, podrás:
 > [!NOTE]
 > Un grupo de dispositivos es accesible para todos los usuarios si no asigna ningún grupo Azure AD a él.
 
-## <a name="create-a-device-group"></a>Crear un grupo de dispositivos
+## <a name="create-a-device-group"></a>Cree un grupo de dispositivos
 
 1. En el panel de navegación, **seleccione Configuración** permisos de extremos Grupos de \>  \>  \> **dispositivos**.
 

@@ -16,21 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5875568c21fb9128e6d3edc8db31721f20d19b4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 231cbafc595713a66590cbddbbdee1bb7136b028
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176900"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166955"
 ---
 # <a name="find-devices-by-tag-api"></a>Buscar dispositivos por API de etiqueta
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Se aplica a:** 
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -78,10 +80,10 @@ Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
-Nombre|Tipo|Descripción
+Nombre|Tipo|Description
 :---|:---|:---
 tag|Cadena|El nombre de la etiqueta. **Necesario**.
-useStartsWithFilter|Booleano|Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comiencen por la etiqueta dada en la consulta. Valores predeterminados de falso. **Opcional**.
+useStartsWithFilter|Boolean|Cuando se establece en true, la búsqueda buscará todos los dispositivos con el nombre de etiqueta que comiencen por la etiqueta dada en la consulta. Valores predeterminados de falso. **Opcional**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

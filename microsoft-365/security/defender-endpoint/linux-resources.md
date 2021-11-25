@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7de5d6b897d93b0112745ed566879a451e5448
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268559"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168887"
 ---
 # <a name="resources"></a>Recursos
 
@@ -30,7 +30,7 @@ ms.locfileid: "60268559"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -106,7 +106,7 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 
 ****
 
-|Grupo|Escenario|Comando|
+|Group|Escenario|Comando|
 |---|---|---|
 |Configuración|Activar/desactivar la protección en tiempo real|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |Configuración|Activar/desactivar la supervisión del comportamiento|`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -128,14 +128,14 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Configuración|Configurar el grado de paralelismo para los exámenes a petición|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |Configuración|Activar y desactivar exámenes después de las actualizaciones de inteligencia de seguridad|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |Configuración|Activar/desactivar el examen del archivo (solo exámenes a petición)|`mdatp config scan-archives --value [enabled/disabled]`|
-|Diagnostics|Cambiar el nivel de registro|`mdatp log level set --level verbose [error|warning|info|verbose]`|
-|Diagnostics|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
+|Diagnóstico|Cambiar el nivel de registro|`mdatp log level set --level verbose [error|warning|info|verbose]`|
+|Diagnóstico|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
 |Mantenimiento|Comprobar el estado del producto|`mdatp health`|
-|Protection|Examinar una ruta de acceso|`mdatp scan custom --path [path] [--ignore-exclusions]`|
-|Protection|Realizar un examen rápido|`mdatp scan quick`|
-|Protection|Realizar un examen completo|`mdatp scan full`|
-|Protection|Cancelar un examen a petición en curso|`mdatp scan cancel`|
-|Protection|Solicitar una actualización de inteligencia de seguridad|`mdatp definitions update`|
+|Protección|Examinar una ruta de acceso|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|Protección|Realizar un examen rápido|`mdatp scan quick`|
+|Protección|Realizar un examen completo|`mdatp scan full`|
+|Protección|Cancelar un examen a petición en curso|`mdatp scan cancel`|
+|Protección|Solicitar una actualización de inteligencia de seguridad|`mdatp definitions update`|
 |Historial de protección|Imprimir el historial de protección completo|`mdatp threat list`|
 |Historial de protección|Obtener detalles de amenazas|`mdatp threat get --id [threat-id]`|
 |Administración de cuarentena|Enumerar todos los archivos en cuarentena|`mdatp threat quarantine list`|

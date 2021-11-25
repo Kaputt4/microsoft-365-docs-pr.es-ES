@@ -23,17 +23,17 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b704a64e4428ede9af8992d22485a9d859ca4c98
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: bed61ca559ff6fe387d76e9f56842ae765e186fe
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110120"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170313"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Ver los detalles y los resultados de una investigación automatizada
 
 **Se aplica a:**
-- Microsoft Defender para punto de conexión
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Con Microsoft Defender para [](automated-investigations.md) endpoint, cuando se ejecuta una investigación automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes.
 
@@ -95,7 +95,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |**Log**|Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 |**Acciones pendientes**|Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( <https://security.microsoft.com/action-center> ) para aprobar acciones pendientes.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Revisar acciones de corrección tras una investigación automatizada](manage-auto-investigation.md)
 - [Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión](view-incidents-queue.md)

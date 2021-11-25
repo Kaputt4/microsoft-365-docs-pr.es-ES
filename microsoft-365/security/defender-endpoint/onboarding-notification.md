@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 654de92a89c85bb696aea8cc5ea88797d79b0726
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199746"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166775"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Crear una regla de notificación cuando se usa un script local de incorporación o offboarding
 
@@ -28,7 +28,8 @@ ms.locfileid: "60199746"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -62,7 +63,7 @@ Tendrás que tener acceso a:
 
     ![Imagen del flujo de notificación.](images/build-flow.png)
 
-4. Seleccione el botón + para agregar una nueva acción. La nueva acción será una solicitud HTTP a la API del Centro de seguridad de Defender para puntos de conexión. También puede reemplazarlo por el "Conector WDATP&quot; (acción: &quot;Máquinas- Obtener lista de máquinas").
+4. Seleccione el botón + para agregar una nueva acción. La nueva acción será una solicitud HTTP a la API del Centro de seguridad de Defender para puntos de conexión. También puede reemplazarlo por el "Conector WDATP" (acción: "Máquinas- Obtener lista de máquinas").
 
     ![Imagen de periodicidad y acción de agregar.](images/recurrence-add.png)
 

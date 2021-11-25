@@ -17,21 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ms.custom: api
-ms.openlocfilehash: 0a9180c1705f7a583244d93ff9aa323aed1feb9c
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 699a7e2738f1e0c89977bd152832f45935a06387
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586474"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167483"
 ---
 # <a name="get-kb-collection-api"></a>Obtener API de colección KB
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Se aplica a:** 
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,7 +41,7 @@ ms.locfileid: "60586474"
 
 Recupera una colección de grupos de dispositivos RBAC.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 El usuario necesita permisos de lectura.
 
@@ -56,7 +58,7 @@ Encabezado|Valor
 Authorization | Portador {token}. **Necesario**.
 Tipo de contenido | application/json
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En blanco
 

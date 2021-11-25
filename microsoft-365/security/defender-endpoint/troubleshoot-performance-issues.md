@@ -16,12 +16,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cf0ca72bb29c47708c497740b9bd3b64a7347136
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: fd8b4e021ce99bc5b048a2379cf5be2ac9f82e06
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884078"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167735"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -30,8 +30,7 @@ ms.locfileid: "60884078"
 
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Si el sistema tiene problemas de alto uso de CPU o rendimiento relacionados con el servicio de protección en tiempo real en Microsoft Defender para endpoint, puede enviar un vale al soporte técnico de Microsoft. Siga los pasos descritos [en Recopilar Antivirus de Microsoft Defender datos de diagnóstico](collect-diagnostic-data.md).
 
@@ -62,7 +61,7 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto en 
 
 ****
 
-|Nombre del campo|Descripción|
+|Nombre del campo|Description|
 |---|---|
 |ProcessImageName|Nombre de imagen de proceso|
 |TotalTime|Duración acumulativa en milisegundos invertidos en exámenes de archivos a los que se accede mediante este proceso|
@@ -280,7 +279,7 @@ La herramienta de línea *de comandoswpr.exe* forma parte del sistema operativo 
 
 8. Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Recopilar Antivirus de Microsoft Defender de diagnóstico](collect-diagnostic-data.md)
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)

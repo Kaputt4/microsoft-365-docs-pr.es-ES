@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ceeae633c85912d4c344ed8a74fe66def168efd5
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: bc9e6814dc599b6a3474a00cd51676bbe708716a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882590"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166823"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Administrar el proceso de implementación gradual para actualizaciones de Microsoft Defender
 
@@ -31,8 +31,7 @@ ms.locfileid: "60882590"
 
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Es importante asegurarse de que los componentes del cliente estén actualizados para ofrecer capacidades de protección críticas y evitar ataques.
 
@@ -80,7 +79,7 @@ Los siguientes canales de actualización están disponibles:
 
 ****
 
-|Nombre de canal|Descripción|Aplicación|
+|Nombre de canal|Description|Aplicación|
 |---|---|---|
 |Canal beta: versión preliminar|Probar actualizaciones antes que otras|Los dispositivos establecidos en este canal serán los primeros en recibir nuevas actualizaciones mensuales. Seleccione Canal beta para participar en la identificación y la presentación de informes de problemas a Microsoft. Los dispositivos del Windows Insider Program se suscriben a este canal de forma predeterminada. Solo para su uso en entornos de prueba.|
 |Canal actual (vista previa)|Obtener actualizaciones del canal actual **antes** durante la versión gradual|Los dispositivos establecidos en este canal recibirán actualizaciones lo antes posible durante el ciclo de lanzamiento gradual. Sugerido para entornos de preproducción/validación.|
@@ -98,7 +97,7 @@ También puedes asignar una máquina a un canal para definir la cadencia en la q
 
 ****
 
-|Nombre de canal|Descripción|Aplicación|
+|Nombre de canal|Description|Aplicación|
 |---|---|---|
 |Canal actual (por fases)|Obtener actualizaciones del canal actual más adelante durante la versión gradual|Los dispositivos se ofrecerán actualizaciones más adelante durante el ciclo de lanzamiento gradual. Se sugiere aplicar a una parte pequeña y representativa de la población de dispositivos (~10%).|
 |Canal actual (ancho)|Obtener actualizaciones al final de la versión gradual|Los dispositivos se ofrecerán actualizaciones después del ciclo de lanzamiento gradual. Ideal para máquinas de centros de datos que solo reciben actualizaciones limitadas. Nota: esta configuración se aplica a todas las actualizaciones de Defender.|

@@ -17,18 +17,18 @@ ms.topic: how-to
 ms.date: 10/14/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 1c5ee1fea543a18208d583b4acc5cc2f52acce7a
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1632a0e04ce232c7daed42b86cde0f9053d6aadf
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111812"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167183"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -36,7 +36,7 @@ ms.locfileid: "61111812"
 
 [Las reglas de reducción de superficie de](attack-surface-reduction.md) ataque (reglas ASR) ayudan a evitar acciones que el malware suele abusar de dispositivos y redes.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Características de reducción de superficie de ataque en Windows versiones
 
@@ -167,7 +167,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > ![Configuración de URI de OMA de MEM.](images/mem05-add-row-oma-uri.png)
 
-6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realice una de las siguientes acciones:
+6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realice una de las acciones siguientes:
 
    - Haga **clic en Seleccionar etiquetas de ámbito,** seleccione la etiqueta de ámbito (opcional) y, a continuación, haga clic en **Siguiente**.
    - O haga clic en **Siguiente**

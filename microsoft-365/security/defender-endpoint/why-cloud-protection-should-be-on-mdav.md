@@ -16,18 +16,19 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/22/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 50e9639ed861bee3a661da7ad1374c06b72b071e
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 83c1165cee576898b3f32242aebcbb3436691b8e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555457"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167207"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>¿Por qué se debe habilitar la protección en la nube para Antivirus de Microsoft Defender
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 Antivirus de Microsoft Defender protección en la nube ayuda a proteger contra malware en los puntos de conexión y en toda la red. Se recomienda mantener activada la protección en la nube, ya que determinadas funciones y características de seguridad de Microsoft Defender para endpoint solo funcionan cuando la protección en la nube está habilitada. 
@@ -36,7 +37,7 @@ Antivirus de Microsoft Defender protección en la nube ayuda a proteger contra m
 
 En la tabla siguiente se resumen las características y capacidades que dependen de la protección en la nube: <br/><br/>
 
-| Característica/funcionalidad  | Requisitos de suscripción |  Descripción  |
+| Característica/funcionalidad  | Requisitos de suscripción |  Description  |
 |---------|---------|--------|
 | Comprobación de metadatos en la nube  | Plan 1 o Plan 2 de Microsoft Defender para Endpoint (independiente o incluido en un plan como Microsoft 365 E3 o E5) | El Antivirus de Microsoft Defender cloud usa modelos de aprendizaje automático como una capa adicional de defensa. Estos modelos de aprendizaje automático incluyen metadatos, por lo que cuando se detecta un archivo sospechoso o malintencionado, se comprueban sus metadatos. <br/><br/>Para obtener más información, vea Blog: Conozca las tecnologías avanzadas en el núcleo de Microsoft Defender para la protección de última [generación de endpoints](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
 | Protección en la nube y envío de muestra | Plan 1 o Plan 2 de Microsoft Defender para Endpoint (independiente o incluido en un plan como Microsoft 365 E3 o E5) | Los archivos y archivos ejecutables se pueden enviar al servicio Antivirus de Microsoft Defender nube para su detonación y análisis. <br/><br/>Para obtener más información, consulte [Cloud protection and sample submission in Antivirus de Microsoft Defender](cloud-protection-microsoft-antivirus-sample-submission.md).<br/><br/>**NOTA:** El envío automático de ejemplo se basa en la protección en la nube, aunque también se puede configurar como una configuración independiente.         |

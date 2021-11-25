@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f1d749eba67696fd2074283cd3c02ffe43330172
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: e17f50eb02fa6fbc3c34526ca064543b7afbdea2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883454"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167675"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Solucionar problemas de informes del Antivirus de Windows Defender en la comprobación de actualizaciones
 
@@ -28,8 +28,8 @@ ms.locfileid: "60883454"
 
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!IMPORTANT]
 > El 31 de marzo de 2020, se quitará Antivirus de Microsoft Defender de informes de actualización. Puede seguir definiendo y revisando directivas de cumplimiento de seguridad [con Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), lo que permite un control más preciso sobre las características y actualizaciones de seguridad.

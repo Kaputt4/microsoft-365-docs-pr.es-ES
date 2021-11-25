@@ -17,20 +17,20 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9baaedad2895c9d5a3b26cab0289f7bb86af17cf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cbb9b50714d252d86fcbaed9b43684351f903251
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193966"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167627"
 ---
 # <a name="turn-on-protocol-recognition"></a>Activar el reconocimiento de protocolos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Esta configuración de directiva le permite configurar el reconocimiento de protocolos para la protección de red frente a vulnerabilidades conocidas. Si habilita o no configura esta configuración, se habilitará el reconocimiento de protocolos. Si deshabilita esta configuración, se deshabilitará el reconocimiento de protocolo.
 

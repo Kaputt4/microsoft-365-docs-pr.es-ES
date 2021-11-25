@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e5f76505191b552450440917bf616f7678464524
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: db219fe7ce39ae59668cedff10f03e931ddba416
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110456"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166763"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos sin acceso a Internet a Microsoft Defender para endpoint
 
@@ -28,7 +28,7 @@ ms.locfileid: "61110456"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -71,7 +71,7 @@ Para obtener más información acerca de los métodos de incorporación, vea los
 - Máquinas virtuales de Azure sin conexión en la misma red de OMS Gateway
     - Configurar la IP de Azure Log Analytics como proxy
     - Identificador de clave de área de trabajo de Azure Log Analytics & de trabajo
-- Microsoft Defender para la nube
+- Microsoft Defender for Cloud
     - [Área de trabajo de análisis \> de registro de directivas de seguridad](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
     - [Detección de \> amenazas Permitir que Defender for Endpoint acceda a mis datos](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

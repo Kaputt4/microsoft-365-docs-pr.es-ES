@@ -18,17 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8cb7e42af129185b2c9c8d7f9c864388661547f3
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 6b345eb898b84de9f15772e11fdc92e1af5dde6a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755832"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167015"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprender el informe HTML del analizador de cliente
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 El analizador de cliente genera un informe en formato HTML. Obtenga información sobre cómo revisar el informe para identificar posibles problemas del sensor para que pueda solucionarlos.
 
@@ -46,7 +47,7 @@ Use el siguiente ejemplo para comprender el informe.
 
 -   Los **detalles de seguridad de** puntos de conexión proporcionan información general sobre Microsoft Defender para los procesos relacionados con endpoints, incluidos Antivirus de Microsoft Defender y el proceso del sensor. Si los procesos importantes no están en línea como se esperaba, el color cambiará a rojo.
 
-![Imagen del resultado detallado del analizador de cliente.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
+  ![Imagen del resultado detallado del analizador de cliente.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
 -   En **Comprobar resumen de** resultados, tendrá un recuento agregado de eventos de error, advertencia o informativos detectados por el analizador.
 

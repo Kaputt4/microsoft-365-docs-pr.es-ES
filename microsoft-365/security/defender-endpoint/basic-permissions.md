@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 05e9eadb9047fd4a2c8a4d01ecefc3ec2f73f9db
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 27c480a0d4c95e79619e10f8fa42efb2c268b18c
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207995"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171718"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Uso de permisos básicos para acceder al portal
 
@@ -27,7 +27,8 @@ ms.locfileid: "60207995"
 
 **Se aplica a:**
 - Azure Active Directory
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-basicaccess-abovefoldlink)
@@ -57,12 +58,12 @@ Puede asignar usuarios con uno de los siguientes niveles de permisos:
 
 - Conectar a su Azure Active Directory. Para obtener más información, [vea Conectar-MsolService](/powershell/module/msonline/connect-msolservice).
 
-  - **Acceso completo:** los usuarios con acceso completo pueden iniciar sesión, ver toda la información del sistema y resolver alertas, enviar archivos para un análisis profundo y descargar el paquete de incorporación. La asignación de derechos de acceso completo requiere agregar los usuarios a los roles integrados "Administrador de seguridad" o "Administrador global" de AAD.
+  - **Acceso completo:** los usuarios con acceso completo pueden iniciar sesión, ver toda la información del sistema y resolver alertas, enviar archivos para un análisis profundo y descargar el paquete de incorporación. La asignación de derechos de acceso completos requiere agregar los usuarios al "Administrador de seguridad" o "Administrador global" AAD roles integrados.
   - **Acceso de solo lectura:** los usuarios con acceso de solo lectura pueden iniciar sesión, ver todas las alertas e información relacionada.
 
     No podrán cambiar los estados de alerta, enviar archivos para un análisis profundo o realizar operaciones de cambio de estado.
 
-    La asignación de derechos de acceso de solo lectura requiere agregar los usuarios al rol integrado de Azure AD "Lector de seguridad".
+    La asignación de derechos de acceso de solo lectura requiere agregar los usuarios al rol integrado "Lector de seguridad" Azure AD función integrada.
 
 Siga estos pasos para asignar roles de seguridad:
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: da2f7b17725c7acb54b50a6280492e8f45fa6215
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 81e96d8846d507a7b763d79f419695b835ea6cbc
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208666"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167603"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender para la API de punto de conexión: Hello World
 
@@ -30,10 +30,11 @@ ms.locfileid: "60208666"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -51,7 +52,7 @@ Solo se tardan 5 minutos en dos pasos:
 
 ### <a name="do-i-need-a-permission-to-connect"></a>¿Necesito un permiso para conectarme?
 
-Para la fase de registro de aplicaciones, debe tener un rol de administrador **global** en el espacio empresarial Azure Active Directory (Azure AD).
+Para la fase de registro  de aplicaciones, debe tener un rol de administrador global en el espacio empresarial Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 

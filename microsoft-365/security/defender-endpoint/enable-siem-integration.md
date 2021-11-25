@@ -16,19 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c102583b2e3d8abc7995821870252946e48ccac6
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: f94bbd6da16d7c0cdffe2b5f49085ab4b774e03c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217143"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166979"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Habilitar la integración de SIEM en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -60,7 +61,7 @@ Habilite la integración de la información de seguridad y la administración de
    > [!TIP]
    > Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador. Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad.
 
-2. Seleccione **Habilitar integración SIEM**. De este modo, se activa la sección de detalles de acceso al conector **SIEM** con valores rellenados previamente y se crea una aplicación en el espacio empresarial de Azure Active Directory (Azure AD).
+2. Seleccione **Habilitar integración SIEM**. Esto activa la sección detalles de acceso al conector **SIEM** con valores rellenados previamente y se crea una aplicación en el espacio empresarial Azure Active Directory (Azure AD).
 
     > [!WARNING]
     > El secreto de cliente solo se muestra una vez. Asegúrese de conservar una copia de ella en un lugar seguro.
@@ -84,7 +85,7 @@ Habilite la integración de la información de seguridad y la administración de
    > [!NOTE]
    > Tendrás que generar un nuevo token de actualización cada 90 días.
 
-6. Siga las instrucciones para crear un registro de aplicaciones de Azure AD para [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) y asígnele los permisos correctos para leer alertas.
+6. Siga las instrucciones para [crear un registro Azure AD aplicación](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) para Microsoft Defender para Endpoint y asígnele los permisos correctos para leer alertas.
 
 Ahora puede continuar con la configuración de la solución SIEM o la conexión a la API de REST de detecciones a través del acceso mediante programación. Tendrás que usar los tokens al configurar la solución SIEM para permitir que reciba detecciones de Microsoft 365 Defender.
 
@@ -92,7 +93,7 @@ Ahora puede continuar con la configuración de la solución SIEM o la conexión 
 
 Puede configurar IBM QRadar para recopilar detecciones de Microsoft Defender para endpoint. Para obtener más información, vea [IBM Knowledge Center](https://www.ibm.com/docs/en/qsip/7.3.2?topic=quick-start-guide).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Configurar HP ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md)

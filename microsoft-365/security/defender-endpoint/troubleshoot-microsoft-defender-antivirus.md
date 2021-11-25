@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0bf6b5ed0d59e445eba4f8146d8321cf5bff1bf9
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 3a6f6d9d88abec09fceb88fe2523df6a89750fb7
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881723"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166655"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -28,8 +28,7 @@ ms.locfileid: "60881723"
 
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Si encuentra un problema con Antivirus de Microsoft Defender, puede buscar en las tablas de este tema un problema de coincidencia y una posible solución.
 
@@ -977,15 +976,15 @@ Usuario de </dt>
 <dt>Estado de la acción: &lt; Descripción de &gt; acciones adicionales</dt>
 <dt>Código de error: &lt; Código de error Código de resultado asociado con el estado de &gt; amenaza. Valores HRESULT estándar.</dt> 
 <dt>Descripción del error: &lt; Descripción del error &gt; Descripción del error.</dt> 
-<dt>Versión de firma: &lt; &gt;</dt>Versión de definición Versión del
-<dt>motor: &lt; Antimalware Engine &gt; </dt> versión NOTA: siempre que Antivirus de Microsoft Defender, Microsoft Security Essentials, Herramienta de eliminación de software malintencionado o System Center Endpoint Protection detecte un malware, restaurará la siguiente configuración del sistema y los servicios que el malware podría haber cambiado:<ul>
+<dt>Versión de firma: &lt; Versión &gt; de</dt>definición Versión del
+<dt>motor: &lt; Antimalware Engine versión &gt; </dt> NOTA: siempre Antivirus de Microsoft Defender, Microsoft Security Essentials, Herramienta de eliminación de software malintencionado o System Center Endpoint Protection detecta un malware, restaurará la siguiente configuración del sistema y los servicios que el malware podría haber cambiado:<ul>
 <li>Configuración predeterminada de Internet Explorer o Microsoft Edge configuración</li>
 <li>Configuración del control de acceso de usuario</li>
 <li>Configuración de Chrome</li>
 <li>Datos de control de arranque</li>
 <li>Configuración del Registro regedit y administrador de tareas</li>
-<li>Windows Actualización, servicio de transferencia inteligente en segundo plano y servicio de llamadas de procedimiento remoto</li>
-<li>Windows Archivos del sistema operativo</li></ul>
+<li>Windows, servicio de transferencia inteligente en segundo plano y servicio de llamadas de procedimiento remoto</li>
+<li>Windows del sistema operativo</li></ul>
 El contexto anterior se aplica a las siguientes versiones de cliente y servidor:
 <table>
 <tr>
@@ -1204,7 +1203,7 @@ Acción del usuario:
 El Antivirus de Microsoft Defender encontró este error debido a problemas críticos. Es posible que el extremo no esté protegido. Revise la descripción del error y, a continuación, siga los <b>pasos de acción de usuario</b> pertinentes a continuación.
 <table>
 <tr>
-<th>Acción</th>
+<th>Action</th>
 <th>Acción del usuario</th>
 </tr>
 <tr>
@@ -1352,20 +1351,20 @@ Descripción:
 <td >
 Informe de estado del cliente antivirus.
 <dl>
-<dt>Versión de la plataforma: &lt; Versión &gt; </dt>actual del motor de la
-<dt>plataforma: &lt; Antimalware Engine &gt; </dt>versión del motor de inspección en tiempo real de
-<dt>red: &lt; &gt; </dt>Versión de firma del motor de inspección en tiempo real de red Versión de firma
-<dt>antivirus: &lt; &gt; </dt>Versión de firma antivirus Antispyware versión de firma: Versión de firma
-<dt> &lt; &gt; antispyware</dt>Versión de firma de inspección en tiempo real de
-<dt>red: Red &lt; &gt;</dt>Estado RTP de la versión de firma de inspección en tiempo real: Estado de OA de protección en tiempo real (habilitado o
-<dt> &lt; &gt; deshabilitado):</dt>Estado de IOAV de estado de acceso
-<dt> &lt; &gt; (habilitado</dt>o deshabilitado): Descargas de
-<dt>I Outlook E y estado de datos adjuntos rápidos (habilitados o &lt; deshabilitados) &gt; </dt>estado BM: Estado de supervisión del comportamiento (habilitado o
+<dt>Versión de la plataforma: &lt; Versión &gt; </dt>actual de la plataforma Versión del
+<dt>motor: &lt; &gt; Antimalware Engine</dt>versión del motor de inspección en tiempo real de red: Versión de firma del motor de inspección en tiempo real de red
+<dt>Versión &lt; &gt; </dt>de firma antivirus Versión de firma
+<dt> &lt; antispyware: &gt; </dt>Versión de firma antispyware Versión de firma Network
+<dt> &lt; &gt; Realtime</dt>
+<dt>Inspection: &lt; &gt;</dt>Estado RTP de la versión de firma de inspección en tiempo real de red: Estado de la OA de protección en tiempo real
+<dt> &lt; &gt; (habilitado</dt>o deshabilitado): Estado de IOAV de estado de acceso
+<dt> &lt; &gt; (habilitado</dt>o deshabilitado): Estado de E/S de descarga de
+<dt>I Outlook E y estado de datos adjuntos rápidos (habilitado o &lt; &gt; deshabilitado)</dt>Estado de la MARCA: Estado de supervisión del comportamiento (habilitado o
 <dt> &lt; &gt; deshabilitado)</dt>Antigüedad de firma del antivirus: antigüedad de firma del
-<dt>antivirus &lt; &gt; (en días )</dt>Antigüedad de firma antispyware: antigüedad de firma
-<dt> &lt; antispyware &gt; (en días)</dt>Última antigüedad del examen rápido: Última antigüedad del examen rápido
+<dt> &lt; antivirus &gt;  (en días)</dt> 
+<dt>Antigüedad de firma antispyware: &lt; Antigüedad de firma antispyware &gt; (en días)</dt>Última antigüedad del examen rápido: última antigüedad del examen rápido
 <dt> &lt; &gt; (en días)</dt>Última antigüedad completa del examen: Última antigüedad completa del examen
-<dt> &lt; &gt; (en días)</dt>Tiempo de creación de firmas
+<dt> &lt; &gt; (en días)</dt>Tiempo de creación de firmas del
 <dt>antivirus: ? &lt; Hora de &gt; creación de firmas antivirus</dt>Tiempo de
 <dt>creación de firmas antispyware: ? &lt; Hora de creación &gt; de firmas antispyware</dt>
 <dt>Última hora de inicio del examen rápido: ? &lt; Última hora de &gt; inicio del examen rápido</dt>Última hora de finalización del examen
@@ -2609,7 +2608,7 @@ Use la información de estas tablas para ayudar a solucionar Antivirus de Micros
 <th colspan="2">Código de error: 0x80508007</th>
 </tr>
 <tr>
-<td>Message</td>
+<td>Mensaje</td>
 <td>
 <b>ERR_MP_NO_MEMORY </b>
 </td>
@@ -2635,7 +2634,7 @@ Este error indica que es posible que se haya quedo sin memoria.
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x8050800C</th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_BAD_INPUT_DATA</b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2659,7 +2658,7 @@ Nota: El tamaño del archivo de definiciones descargado del sitio puede superar 
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x80508020</th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2669,7 +2668,7 @@ Este error indica que puede haber un error de configuración del motor; normalme
 <tr>
 <th colspan="2">Código de error: 0x805080211
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2679,7 +2678,7 @@ Este error indica que Antivirus de Microsoft Defender no pudo poner en cuarenten
 <tr>
 <th colspan="2">Código de error: 0x80508022
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2690,7 +2689,7 @@ Este error indica que se requiere un reinicio para completar la eliminación de 
 <th colspan="2">
 0x80508023
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2704,7 +2703,7 @@ Ejecute el <a href="https://www.microsoft.com/security/scanner/default.aspx">Exa
 <tr>
 <th colspan="2">Código de error: 0x80508024 </th></tr>
 <tr>
-<td>Message</td>
+<td>Mensaje</td>
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2718,7 +2717,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508025
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2729,7 +2728,7 @@ Siga los pasos de corrección manuales descritos en la Enciclopedia de Protecci�
 <tr>
 <th colspan="2">Código de error: 0x80508026
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2741,7 +2740,7 @@ Antivirus de Microsoft Defender no es capaz de corregir las amenazas detectadas 
 <tr>
 <th colspan="2">Código de error: 0x80508027
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2753,7 +2752,7 @@ Compruebe las amenazas detectadas y resuelvalas según sea necesario.
 <tr>
 <th colspan="2">Código de error: 0x80508029
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2765,7 +2764,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508030
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2777,7 +2776,7 @@ Ejecute sin conexión Antivirus de Microsoft Defender. Puede leer sobre cómo ha
 <tr>
 <th colspan="2">Código de error: 0x80508031
 </th>
-</tr><tr><td>Message</td>
+</tr><tr><td>Mensaje</td>
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Posible motivo</td>
 <td>

@@ -15,18 +15,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0a84fb78ef46c63016de936b035611b8fcabdebe
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c44435fe61acacce760b7920313e432e889a4f14
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109340"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168755"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activar la protección en la nube en Antivirus de Microsoft Defender
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 [La protección en la nube Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) proporciona una protección precisa, en tiempo real e inteligente. La protección en la nube debe estar habilitada de forma predeterminada; sin embargo, puede configurar la protección en la nube para que se adapte a las necesidades de su organización.
@@ -146,7 +146,7 @@ Para obtener más información acerca de los parámetros [permitidos, vea Window
    > [!NOTE]
    > Si el envío de ejemplo automático se ha configurado con la directiva de grupo, la configuración será gris y no estará disponible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Usar la protección en la nube de Microsoft en Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 

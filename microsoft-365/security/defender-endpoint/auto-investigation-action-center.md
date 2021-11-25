@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 08a81e94098f01cb91bc2f096a5e1946ff7a2e73
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2432b01e574e72b7163b1571d1e476bb9a807d30
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111332"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170337"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver acciones de corrección
 
@@ -32,7 +32,7 @@ Durante y después de una investigación automatizada, se identifican las accion
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="new-a-unified-action-center"></a>(¡NUEVO!) Un centro de acción unificado
@@ -91,6 +91,6 @@ Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
 - [Ver y aprobar acciones de corrección](manage-auto-investigation.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)

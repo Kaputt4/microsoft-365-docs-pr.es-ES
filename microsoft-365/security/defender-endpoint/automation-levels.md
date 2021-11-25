@@ -19,17 +19,17 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 01b57b0ad376758363e3ce515c53f503d7c409ae
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 61c09938d0fece07d313898a7256bee8ed8c6e16
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555433"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171466"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en las funcionalidades automatizadas de investigación y corrección
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Las capacidades de investigación y corrección automatizadas (AIR) en Microsoft Defender para endpoint se pueden configurar en uno de los varios niveles de automatización. El nivel de automatización afecta a si las acciones de corrección siguientes a las investigaciones de AIR se toman automáticamente o solo después de su aprobación.
@@ -49,7 +49,7 @@ En la tabla siguiente se describe cada nivel de automatización y cómo funciona
 
 ****
 
-|Nivel de automatización|Descripción|
+|Nivel de automatización|Description|
 |---|---|
 |**Completa: corregir las amenazas automáticamente** <br> (también denominada automatización *completa*)|Con la automatización completa, las acciones de corrección se realizan automáticamente. Todas las acciones de corrección que se toman se pueden ver en el [Centro de acciones](auto-investigation-action-center.md) de la **pestaña** Historial. Si es necesario, se puede deshacer una acción de corrección. <p> **_Se recomienda_* la automatización completa y se selecciona de forma predeterminada para los inquilinos que se crearon el 16 de agosto de 2020 o después de él con Microsoft Defender para endpoint, sin que aún se haya definido ningún grupo de dispositivos.*|
 |**Semi: requerir aprobación para cualquier corrección** <br> (también denominada *semiauto* automatización )|Con este nivel de semi automatización, se requiere la aprobación para *cualquier* acción de corrección. Estas acciones pendientes se pueden ver y aprobar en el [Centro de acciones](auto-investigation-action-center.md), en la **pestaña** Pendiente. <p> *Este nivel de semi automatización está seleccionado de forma predeterminada para los inquilinos que se crearon antes del 16 de agosto de 2020 con Microsoft Defender para endpoint, sin que se haya definido ningún grupo de dispositivos.*|

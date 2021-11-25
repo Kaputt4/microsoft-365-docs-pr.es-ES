@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06e87fcb0f9f1521e77d254895ef4fc2c57cf1d5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fbd57bb648c2d1d4c1ed08ae4abaa12e834cea04
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646948"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171562"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -29,8 +29,9 @@ ms.locfileid: "60646948"
 
 
 **Se aplica a:**
-
 - [Defender para endpoint en Mac](microsoft-defender-endpoint-mac.md)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Esta página le guiará a través de los pasos que debe seguir para configurar directivas de macOS en Jamf Pro.
 

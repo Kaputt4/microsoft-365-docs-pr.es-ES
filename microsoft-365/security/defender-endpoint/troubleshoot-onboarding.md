@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 8f6a4278918dc364f160aea1665c56878a05a41a
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 8ae4bc7235bd0a794569f1658b58095a3eda134c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240049"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166739"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -28,7 +28,7 @@ ms.locfileid: "60240049"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -189,7 +189,7 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 
    ****
 
-   |Identificador de evento|Message|Pasos de resolución|
+   |Identificador de evento|Mensaje|Pasos de resolución|
    |:---:|---|---|
    |`5`|Error al conectarse al servidor en la variable Microsoft Defender para el servicio de _punto de conexión_|[Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)|
    |`6`|El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación. Código de error: _variable_|[Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md).|

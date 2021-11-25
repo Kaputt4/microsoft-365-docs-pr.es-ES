@@ -1,5 +1,5 @@
 ---
-title: Integración con Microsoft Defender para la nube
+title: Integración con Microsoft Defender for Cloud
 description: Obtenga información sobre la integración de Microsoft Defender para endpoints con Microsoft Defender para la nube
 keywords: integración, servidor, azure, 2012r2, 2016, 2019, incorporación de servidores, administración de dispositivos, configuración de Microsoft Defender para servidores de extremo, incorporación de Servidores de Microsoft Defender para endpoints, incorporación de Microsoft Defender para servidores de extremo
 search.product: eADQiWindows 10XVcnh
@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248b9aaf8affb3fc575b6624bef8cce18f14358d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4364855120524f7b6e993a3827a03a3bd5f79d96
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109856"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170579"
 ---
-# <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender para la nube
+# <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft Defender para punto de conexión
-- Microsoft Defender para la nube
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender for Cloud
 
 Microsoft Defender para endpoint se puede integrar con Microsoft Defender para la nube para proporcionar una solución completa Windows protección del servidor. Con esta integración, Microsoft Defender para la nube puede usar la potencia de Defender para Endpoint para proporcionar una mejor detección de amenazas para Windows Servidores.
 

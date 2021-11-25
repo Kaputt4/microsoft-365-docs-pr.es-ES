@@ -15,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 39c456b3f7ad31181d47318570176710840ad8b2
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: b4606eb25f2cea9c18db8c13beba0e107d0e7950
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587986"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167027"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)
 
@@ -54,10 +54,10 @@ Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener 
 
 ### <a name="severity"></a>Severity
 
-Gravedad de alerta|Descripción
+Gravedad de alerta|Description
 ---|---
 Alto <br> (Rojo)|Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
-Mediano <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
+Medio <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
 Bajo <br> (Amarillo)|Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
 Informativo <br> (Gris)|Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.
 
@@ -133,7 +133,7 @@ Seleccione el origen que desencadenó la detección de alertas. Expertos en amen
 |TI personalizada|CustomerTI|
 |EDR|WindowsDefenderAtp|
 |Microsoft 365 Defender|MTP|
-|Microsoft Defender para Office 365|OfficeATP|
+|Microsoft Defender para Office 365|OfficeATP|
 |Expertos en amenazas de Microsoft|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
 

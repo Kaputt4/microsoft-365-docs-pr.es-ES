@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9620fd5209bb72617cf41b6b9aff48f39d607b61
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: d6ead5c1c23facbab1e80c29cac664ef50a6e8a0
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144996"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168911"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -29,7 +29,7 @@ ms.locfileid: "61144996"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)

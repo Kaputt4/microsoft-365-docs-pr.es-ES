@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 96b1ca9e6a54675418e556d495635d3f689c8fed
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: aa158c38661ff3f3277594e222ef6648a1731fce
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586031"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167255"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Investigar una cuenta de usuario en Microsoft Defender para endpoint
 
@@ -64,6 +64,11 @@ El  panel De detalles del usuario a la izquierda proporciona información sobre 
 > Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas.](advanced-features.md)
 
 Overview, Alerts y Observed in organization son pestañas diferentes que muestran varios atributos sobre la cuenta de usuario.
+
+
+>[!NOTE]
+>Para dispositivos Linux, no se muestra información sobre los usuarios que han iniciado sesión.
+
 
 ### <a name="overview"></a>Información general
 

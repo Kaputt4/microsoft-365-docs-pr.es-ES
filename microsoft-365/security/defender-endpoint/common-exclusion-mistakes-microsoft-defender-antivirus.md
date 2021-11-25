@@ -16,14 +16,17 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 625b5dc2743f42d35a652582827454b3178e1786
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 73234fd929406da475455baf21fbbf463216c660
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881942"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170301"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Errores comunes para evitarlos cuando se definen exclusiones
+
+**Se aplica a:**
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Puede definir una lista de exclusión para los elementos que no desea que Antivirus de Microsoft Defender examinar. Estos elementos excluidos pueden contener amenazas que hacen que el dispositivo sea vulnerable. En este artículo se describe un error común que debe evitar al definir exclusiones.
 
@@ -289,6 +292,6 @@ No use una sola lista de exclusión para definir exclusiones para varias cargas 
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Usar variables de entorno incorrectas como caracteres comodín en las listas de exclusión de extensión o ruta de acceso de carpeta y nombre de archivo
 
-Antivirus de Microsoft Defender El servicio se ejecuta en el contexto del sistema mediante la cuenta LocalSystem, lo que significa que obtiene información de la variable de entorno del sistema y no de la variable de entorno del usuario. El uso de variables de entorno como comodín en listas de exclusión se limita a las variables del sistema y a las aplicables a los procesos que se ejecutan como una cuenta NT AUTHORITY\SYSTEM. Por lo tanto, no use variables de entorno de usuario como caracteres comodín al agregar Antivirus de Microsoft Defender y exclusiones de procesos. Consulte la tabla de [variables de entorno del sistema](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) para obtener una lista completa de variables de entorno del sistema.
+Antivirus de Microsoft Defender service se ejecuta en el contexto del sistema mediante la cuenta LocalSystem, lo que significa que obtiene información de la variable de entorno del sistema y no de la variable de entorno de usuario. El uso de variables de entorno como comodín en listas de exclusión se limita a las variables del sistema y a las aplicables a los procesos que se ejecutan como una cuenta NT AUTHORITY\SYSTEM. Por lo tanto, no use variables de entorno de usuario como caracteres comodín al agregar Antivirus de Microsoft Defender y exclusiones de procesos. Consulte la tabla de [variables de entorno del sistema](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) para obtener una lista completa de variables de entorno del sistema.
 
 Vea [Usar caracteres comodín en las listas](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) de exclusión de extensión o nombre de archivo para obtener información sobre cómo usar caracteres comodín en listas de exclusión.

@@ -18,23 +18,23 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 8bde033068af23e3e3187a79114d9c8fabbbcdab
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fb5392a69e00d4acdf1e0c41f281611642c4be92
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205348"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167411"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Administrar Microsoft Defender para endpoint con Configuration Manager
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Se recomienda usar Microsoft Endpoint Manager [,](/mem)que incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) y [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) para administrar las características de protección contra amenazas de la organización dispositivos (también denominados puntos de conexión).
+Se recomienda usar [Microsoft Endpoint Manager](/mem), que incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) y [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) para administrar las características de protección contra amenazas de la organización para dispositivos ( también denominados puntos de conexión).
 
 - [Obtenga más información sobre Endpoint Manager](/mem/endpoint-manager-overview)
 - [Administrar Microsoft Defender para endpoint en Windows 10 y Windows 11 dispositivos con Configuration Manager e Intune](manage-atp-post-migration-intune.md)
@@ -59,7 +59,7 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 - [Información general sobre Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Protección de extremo: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel Microsoft 365 Defender operaciones de seguridad del portal](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

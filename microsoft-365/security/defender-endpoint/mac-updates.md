@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2abd270aeee07e84cf31711494d68ca15885515
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ee8ea26c53bf5ae56c558f7aaa956974474dd101
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174681"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171442"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
@@ -31,7 +31,8 @@ ms.locfileid: "60174681"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -78,7 +79,7 @@ El `Current` canal contiene la versión más estable del producto.
 
 ****
 
-|Section|Valor|
+|Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|ChannelName|
@@ -101,7 +102,7 @@ Cambiar la frecuencia con la que MAU busca actualizaciones.
 
 ****
 
-|Section|Valor|
+|Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|UpdateCheckFrequency|
@@ -118,7 +119,7 @@ Cambiar la forma en que MAU busca actualizaciones.
 
 ****
 
-|Section|Valor|
+|Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|HowToCheck|
@@ -135,12 +136,12 @@ Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualiz
 
 ****
 
-|Section|Valor|
+|Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|EnableCheckForUpdatesButton|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|True (predeterminado) <p> False|
+|**Posibles valores**|True (predeterminado) <p> Falso|
 |||
 
 ### <a name="disable-insider-checkbox"></a>Casilla Deshabilitar Insider
@@ -151,12 +152,12 @@ Se establece en true para que el "Join the Office Insider Program..." casilla no
 
 ****
 
-|Section|Valor|
+|Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|DisableInsiderCheckbox|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|False (predeterminado) <p> True|
+|**Posibles valores**|False (predeterminado) <p> Verdadero|
 |||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Limitar la telemetría que se envía desde MAU
@@ -167,12 +168,12 @@ Se establece en false para enviar datos de latido mínimos, sin uso de aplicacio
 
 ****
 
-|Section|Valor|
+|Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|SendAllTelemetryEnabled|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|True (predeterminado) <p> False|
+|**Posibles valores**|True (predeterminado) <p> Falso|
 |||
 
 ## <a name="example-configuration-profile"></a>Perfil de configuración de ejemplo

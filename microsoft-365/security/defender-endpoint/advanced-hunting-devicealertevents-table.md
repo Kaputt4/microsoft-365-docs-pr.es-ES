@@ -15,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 692fc5a0f3bee738f9d8a14ad9b51446aed623a7
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: e0058e5673b4a77942ff887ddb2b07dedd508172
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122218"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167567"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
@@ -40,7 +40,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`AlertId`|string|Identificador único de alerta.|
 |`Timestamp`|datetime|Fecha y hora en que se registró el evento.|
 |`DeviceId`|cadena|Identificador único del dispositivo en el servicio|
-|`DeviceName`|cadena|Nombre de dominio completo (FQDN) del dispositivo|
+|`DeviceName`|string|Nombre de dominio completo (FQDN) del dispositivo|
 |`Severity`|cadena|El indicador de amenazas indica el posible impacto (alto, medio o bajo) de las actividades de vulneración identificadas por la alerta.|
 |`Category`|cadena|Tipo de indicador de amenazas o actividad de vulneración identificada por la alerta|
 |`Title`|cadena|Título de la alerta.|
@@ -48,7 +48,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |`SHA1`|cadena|SHA-1 del archivo donde fue aplicada la acción registrada|
 |`RemoteUrl`|cadena|La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado.|
 |`RemoteIP`|cadena|Dirección IP a la que se ha conectado|
-|`AttackTechniques`|cadena|MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta|
+|`AttackTechniques`|string|MITRE ATT&técnicas de CK asociadas con la actividad que desencadenó la alerta|
 |`ReportId`|largo|Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse con las `DeviceName` columnas y `Timestamp`|
 |`Table`|cadena|Tabla con el contenido detallado del evento|
 

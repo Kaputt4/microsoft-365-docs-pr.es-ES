@@ -15,18 +15,17 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 330bde1a038e659783b3e03b9e6b4cc75f337ec3
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 013b189dca95fc63dc8d189d020fcf3f7727cf82
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553681"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171694"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Antivirus de Microsoft Defender y protección en la nube
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 Las tecnologías de última Antivirus de Microsoft Defender proporcionan protección automatizada casi instantánea contra amenazas nuevas y emergentes. Para identificar las nuevas amenazas de forma dinámica, las tecnologías de próxima generación funcionan con grandes conjuntos de datos interconectados en los sistemas de inteligencia artificial (IA) de Microsoft Intelligent Security Graph y potentes basados en modelos avanzados de aprendizaje automático. La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer una protección precisa, en tiempo real e inteligente. 

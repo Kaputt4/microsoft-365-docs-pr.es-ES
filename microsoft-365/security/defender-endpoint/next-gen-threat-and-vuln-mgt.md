@@ -1,7 +1,7 @@
 ---
 title: Administración de amenazas y vulnerabilidades
 description: Esta nueva funcionalidad usa un enfoque basado en riesgos que cambia el juego para la detección, priorización y corrección de vulnerabilidades y configuraciones erróneas de puntos de conexión.
-keywords: threat & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, administración de vulnerabilidades, vulnerability evaluación, análisis de amenazas y vulnerabilidades, evaluación de configuración segura, Microsoft Defender para endpoint, vulnerabilidades de punto de conexión, próxima generación
+keywords: threat & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, Microsoft Defender para Endpoint TVM, Microsoft Defender para Endpoint-TVM, administración de vulnerabilidades , evaluación de vulnerabilidades, análisis de amenazas y vulnerabilidades, evaluación de configuración segura, Microsoft Defender para endpoint, vulnerabilidades de punto de conexión, próxima generación
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 54c198470d7fd3ee0a05ff40c7597018735b4e3b
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 1e37c20bf6bd9b31bd255d2ec47ea87cb219f66a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881704"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167063"
 ---
 # <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -108,7 +108,7 @@ Vea los siguientes artículos para obtener las API relacionadas:
 - [API de vulnerabilidad](vulnerability.md)
 - [Enumerar vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Plataformas y sistemas operativos compatibles](tvm-supported-os.md)
 - [Panel de administración de vulnerabilidades amenazas](tvm-dashboard-insights.md)

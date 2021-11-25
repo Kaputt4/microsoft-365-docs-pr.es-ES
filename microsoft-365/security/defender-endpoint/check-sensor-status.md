@@ -15,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e980cc5dd2f164acf8c63aab5511423d5a38d46b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 926e23da7e439aa6035574a13bab2752004dd189
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555001"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171670"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Comprobar el estado del sensor en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
@@ -60,7 +61,7 @@ También puede descargar toda la lista en formato CSV mediante la **característ
 
 Puedes ver los detalles del dispositivo al hacer clic en un dispositivo mal configurado o inactivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Corregir sensores incorrectos en Defender for Endpoint](fix-unhealthy-sensors.md)
 - [Información general del Analizador de clientes](overview-client-analyzer.md)

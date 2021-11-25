@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f32300976136c8a7526d62547515d739a681e51c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 73f07a7346edbaebe7e53cd4e17e29a5e6764073
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665794"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170593"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Recopilar Antivirus de Microsoft Defender de diagnóstico
 
@@ -31,7 +31,8 @@ ms.locfileid: "60665794"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de soporte técnico e ingeniería de Microsoft para ayudar a solucionar problemas que puedan surgir al usar el Antivirus de Microsoft Defender.
 
@@ -103,7 +104,7 @@ Cuando se usa el parámetro SupportLogLocation, se creará una estructura de car
 
 ****
 
-|campo|Descripción|
+|campo|Description|
 |---|---|
 |path|Ruta de acceso especificada en la línea de comandos o recuperada de la configuración|
 |MMDD|Mes y día en que se recopilaron los datos de diagnóstico (por ejemplo, 0530)|
@@ -135,6 +136,6 @@ También puede especificar dónde se creará el .cab de diagnóstico mediante un
      ![Captura de pantalla de configuración personalizada de ruta de acceso de directorio habilitada.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. Seleccione **Aceptar** o **Aplicar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Solucionar problemas Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

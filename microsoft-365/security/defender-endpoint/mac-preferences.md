@@ -16,20 +16,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56308de5f4bfacec7558f72e4fc1cb9e007f5d94
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 8506534f1645659d051b240b77dcf96b4f9e4078
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121368"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171706"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!IMPORTANT]
 > Este artículo contiene instrucciones sobre cómo establecer las preferencias de Microsoft Defender para Endpoint en macOS en organizaciones empresariales. Para configurar Microsoft Defender para endpoint en macOS mediante la interfaz de línea de comandos, vea [Resources](mac-resources.md#configuring-from-the-command-line).

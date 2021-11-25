@@ -1,5 +1,5 @@
 ---
-title: Obtener una actividad de corrección por id.
+title: Obtener una actividad de corrección de acuerdo con su id
 description: Devuelve información sobre la actividad de corrección especificada.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation by ID,
 search.product: eADQiWindows 10XVcnh
@@ -16,29 +16,29 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5e6dbf619854d3c6e2c14e49bac7227a7bd31116
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25040682cad424531aa4b0a6d51978639d71ef83
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150095"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167279"
 ---
-# <a name="get-one-remediation-activity-by-id"></a>Obtener una actividad de corrección por id.
+# <a name="get-one-remediation-activity-by-id"></a>Obtener una actividad de corrección de acuerdo con su id
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+[!Include[Prerelease information](../../includes/prerelease.md)]
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Descripción de la API
 
@@ -46,7 +46,7 @@ Devuelve información sobre la actividad de corrección especificada. Presenta l
 
 [Obtenga más información sobre las actividades de corrección](tvm-remediation.md).
 
-## <a name="list-a-specified-remediation-activity-for-id"></a>Enumerar una actividad de corrección especificada para (id)
+## <a name="list-a-specified-remediation-activity-for-id"></a>Enumerar una actividad de corrección especificada para (ID)
 
 **DIRECCIÓN URL:** GET: /api/remediationTasks/ \{ id\}
 
@@ -61,35 +61,35 @@ Delegado (cuenta profesional o educativa)|RemediationTask.Read.Read|\'Leer infor
 
 ## <a name="properties"></a>Propiedades
 
-Propiedad (id)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
 :---|:---|:---|:---
-categoría|Cadena|Categoría de la actividad de corrección (configuración software/seguridad)|Software
-completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico|nulo
-completerId|Cadena|Si alguien completó la actividad de corrección manualmente, esta columna contiene su identificador de objeto|nulo
+Categoría|Cadena|Categoría de la actividad de corrección (configuración software/seguridad)|Software
+completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico|Null
+completerId|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su identificador de objeto.|Null
 completionMethod|Cadena|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada"|Automático
 createdOn|DateTime|Hora en que se creó esta actividad de corrección|2021-01-12T18:54:11.5499478Z
-description|Cadena|Descripción de esta actividad de corrección|Actualiza Microsoft Silverlight a una versión posterior para mitigar las vulnerabilidades conocidas que afectan a los dispositivos.
+Descripción|Cadena|Descripción de esta actividad de corrección|Actualiza Microsoft Silverlight a una versión posterior para mitigar las vulnerabilidades conocidas que afectan a los dispositivos.
 dueOn|DateTime|Fecha de vencimiento que el creador estableció para esta actividad de corrección|2021-01-13T00:00:00Z
 fixedDevices||Número de dispositivos que se han corregido|2
-id|Cadena|Identificador de esta actividad de corrección|097d9735-5479-4899-b1b7-77398899df92
+Id.|Cadena|Identificador de esta actividad de corrección|097d9735-5479-4899-b1b7-77398899df92
 nameId|Cadena|Nombre del producto relacionado|Microsoft Silverlight
-priority|Cadena|Prioridad del conjunto de creadores para esta actividad de corrección (High\Medium\Low)|Alto
+Prioridad|Cadena|Prioridad del conjunto de creadores para esta actividad de corrección (High\Medium\Low)|Alto
 productId|Cadena|Id. de producto relacionado|microsoft-_-silverlight
-productivityImpactRemediationType|Cadena|Solo se podrían solicitar algunos cambios de configuración para dispositivos sin impacto del usuario. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo dispositivos sin impacto del usuario".|AllExposedAssets
+productivityImpactRemediationType|Cadena|Solo se podrían solicitar algunos cambios de configuración para dispositivos que no afecten a los usuarios. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo dispositivos sin impacto del usuario".|AllExposedAssets
 rbacGroupNames|Cadena|Nombres de grupo de dispositivos relacionados|[ "Windows servidores", "Windows 10" ]
-recommendedProgram|Cadena|Programa recomendado para actualizar a|nulo
-recommendedVendor|Cadena|Proveedor recomendado para actualizar a|nulo
-recommendedVersion|Cadena|Versión recomendada para actualizar o actualizar a|nulo
-relatedComponent|Cadena|Componente relacionado de esta actividad de corrección (similar al componente relacionado para una recomendación de seguridad)|Microsoft Microsoft Silverlight
+recommendedProgram|Cadena|Programa recomendado para actualizar a|Null
+recommendedVendor|Cadena|Proveedor recomendado para actualizar a|Null
+recommendedVersion|Cadena|Versión recomendada para actualizar o actualizar a|Null
+relatedComponent|Cadena|Componente relacionado de esta actividad de corrección (similar al componente relacionado para una recomendación de seguridad)|Microsoft Silverlight
 requesterEmail|Cadena|Dirección de correo electrónico del creador|globaladmin@UserName.contoso.com
 requesterId|Cadena|Id. de objeto Creator|r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección|nulo
-scid|Cadena|SCID de la recomendación de seguridad relacionada|nulo
-status|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activa
+requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección|Null
+Scid|Cadena|SCID de la recomendación de seguridad relacionada|Null
+Estado|Cadena|Estado de la actividad de corrección (Activo/Completado)|Activo
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección|43
-title|Cadena|Título de esta actividad de corrección|Microsoft Silverlight
-type|Cadena|Tipo de corrección|Actualizar
+Título|Cadena|Título de esta actividad de corrección|Microsoft Silverlight
+Tipo|Cadena|Tipo de corrección|Actualizar
 vendorId|Cadena|Nombre de proveedor relacionado|Microsoft
 
 ## <a name="example"></a>Ejemplo
@@ -139,7 +139,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Propiedades y métodos de corrección](get-remediation-methods-properties.md)
 - [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)

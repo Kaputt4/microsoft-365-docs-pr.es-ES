@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 961f7b5635a5af1eb7dff0bae790bbf9660a0f57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b07ad9252b414dd84d2c73afa38c124851faef4
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168271"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167051"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera de la máquina
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -84,7 +85,7 @@ Content-Type|string|application/json. **Necesario**.
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Descripción
+Parámetro|Tipo|Description
 ---|---|---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 

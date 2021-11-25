@@ -13,24 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/06/2020
+ms.date: 11/23/2020
 ms.technology: mde
-ms.openlocfilehash: a01fa71e8d52a9e6de522483ee982458f04141af
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 71b0ca22a7a040aaa49fc160038a89292c20019c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555289"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167351"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corregir sensores incorrectos en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 Los dispositivos que se clasifican como mal configurados o inactivos se pueden marcar debido a distintas causas. En esta sección se proporcionan algunas explicaciones sobre lo que podría haber provocado que un dispositivo se clasificara como inactivo o mal configurado.
 
@@ -43,13 +44,13 @@ Un dispositivo inactivo no está marcado necesariamente debido a un problema. La
 Si el dispositivo no se ha utilizado durante más de siete días por cualquier motivo, permanecerá en estado "Inactivo" en el portal.
 
 ### <a name="device-was-reinstalled-or-renamed"></a>El dispositivo se reinstaló o cambió el nombre
-Un dispositivo reinstalado o cambiado de nombre generará una nueva entidad de dispositivo en Centro de seguridad de Microsoft Defender. La entidad de dispositivo anterior permanecerá con el estado "Inactivo" en el portal. Si reinstalaste un dispositivo e implementaste el paquete Defender for Endpoint, busca el nuevo nombre del dispositivo para comprobar que el dispositivo está informando normalmente.
+Un dispositivo reinstalado o cambiado de nombre generará una nueva entidad de dispositivo en el Centro de seguridad de Microsoft Defender. La entidad de dispositivo anterior permanecerá con el estado "Inactivo" en el portal. Si reinstalaste un dispositivo e implementaste el paquete Defender for Endpoint, busca el nuevo nombre del dispositivo para comprobar que el dispositivo está informando normalmente.
 
 ### <a name="device-was-offboarded"></a>El dispositivo se ha desactivado
 Si el dispositivo se ha desactivado, seguirá apareciendo en la lista de dispositivos. Después de siete días, el estado de mantenimiento del dispositivo debe cambiar a inactivo.
 
 ### <a name="device-is-not-sending-signals"></a>El dispositivo no envía señales
-Si el dispositivo no envía señales durante más de siete días a ninguno de los canales de Microsoft Defender para Endpoint por cualquier motivo, incluidas las condiciones que se incluyen en la clasificación de dispositivos mal configurados, un dispositivo puede considerarse inactivo. 
+Si el dispositivo no envía ninguna señal durante más de siete días a cualquiera de los canales de Microsoft Defender para endpoint por cualquier motivo, incluidas las condiciones que se incluyen en la clasificación de dispositivos mal configurados, un dispositivo puede considerarse inactivo. 
 
 ¿Esperas que un dispositivo esté en estado "Activo"? [Abra un vale de soporte](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561)técnico .
 
@@ -73,6 +74,7 @@ Si has tomado medidas correctivas y el estado del dispositivo sigue mal configur
 
 ### <a name="no-sensor-data"></a>Sin datos del sensor
 Un dispositivo mal configurado con el estado "Sin datos de sensor" tiene comunicación con el servicio, pero solo puede informar de datos parciales del sensor.
+
 Siga estas acciones para corregir problemas conocidos relacionados con un dispositivo mal configurado con el estado "Sin datos de sensor":
 
 - [Asegurarse de que el dispositivo tiene conexión a Internet](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
@@ -89,7 +91,7 @@ Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de De
 
 Si has tomado medidas correctivas y el estado del dispositivo sigue mal configurado, [abre un vale de soporte técnico.](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 - [Comprobar el estado del sensor en Microsoft Defender para endpoint](check-sensor-status.md)
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)

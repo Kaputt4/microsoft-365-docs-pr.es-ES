@@ -1,6 +1,6 @@
 ---
 title: Evaluación de vulnerabilidades de software de exportación por dispositivo
-description: La respuesta de la API es por dispositivo y contiene software vulnerable instalado en los dispositivos expuestos, así como cualquier vulnerabilidad conocida en estos productos de software. Esta tabla también incluye información sobre el sistema operativo, IDs de CVE e información sobre la gravedad de la vulnerabilidad.
+description: La respuesta de la API es por dispositivo y contiene software vulnerable instalado en los dispositivos expuestos y cualquier vulnerabilidad conocida en estos productos de software. Esta tabla también incluye información sobre el sistema operativo, IDs de CVE e información sobre la gravedad de la vulnerabilidad.
 keywords: api, apis, evaluación de exportación, evaluación por dispositivo, informe de evaluación de vulnerabilidad, evaluación de vulnerabilidad de dispositivo, informe de vulnerabilidad de dispositivo, evaluación de configuración segura, informe de configuración segura, evaluación de vulnerabilidades de software, informe de vulnerabilidades de software, informe de vulnerabilidad por máquina,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b47f87a1892f7e50b7202871b06a328d5597a88
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 738d8a90dc6cbfdfa73c7c62eb076c934bbcb336
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192842"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167339"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Evaluación de vulnerabilidades de software de exportación por dispositivo
 
@@ -29,16 +29,16 @@ ms.locfileid: "60192842"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Devuelve todas las vulnerabilidades de software conocidas y sus detalles para todos los dispositivos, por dispositivo.
 
-Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la cantidad de datos puede ser muy grande, hay dos formas de recuperarlos:
+Las diferentes llamadas API obtienen distintos tipos de datos. Dado que la cantidad de datos puede ser grande, hay dos formas de recuperarlos:
 
-1. [Exportar respuesta JSON de evaluación de vulnerabilidades **de software**](#1-export-software-vulnerabilities-assessment-json-response)  La API extrae todos los datos de la organización como respuestas Json. Este método es el mejor para _organizaciones pequeñas con dispositivos de menos de 100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
+1. [Exportar respuesta JSON de evaluación de vulnerabilidades **de software**](#1-export-software-vulnerabilities-assessment-json-response)  La API extrae todos los datos de la organización como respuestas Json. Este método es el mejor para organizaciones pequeñas con dispositivos de menos de _100 K._ La respuesta se pagina, por lo que puede usar el campo odata.nextLink de la respuesta \@ para obtener los siguientes resultados.
 
 2. [Evaluación de vulnerabilidades de software de exportación **a través de archivos**](#2-export-software-vulnerabilities-assessment-via-files) Esta solución de API permite extraer grandes cantidades de datos de forma más rápida y confiable. Via-files se recomienda para organizaciones grandes, con más de 100 K dispositivos. Esta API extrae todos los datos de la organización como archivos de descarga. La respuesta contiene direcciones URL para descargar todos los datos de Azure Storage. Esta API le permite descargar todos los datos de Azure Storage de la siguiente manera:
    - Llama a la API para obtener una lista de direcciones URL de descarga con todos los datos de la organización.
@@ -47,11 +47,11 @@ Hay diferentes llamadas API para obtener diferentes tipos de datos. Dado que la 
 3. [Respuesta JSON de evaluación de vulnerabilidades de software de **exportación delta**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Devuelve una tabla con una entrada para cada combinación única de: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId y EventTimestamp.
 La API extrae datos de la organización como respuestas Json. La respuesta está paginada, por lo que puede usar el campo @odata.nextLink de la respuesta para capturar los siguientes resultados.
 
-   A diferencia de la "evaluación completa de vulnerabilidades de software (respuesta JSON)", que se usa para obtener una instantánea completa de la evaluación de vulnerabilidades de software de su organización por dispositivo, la llamada a la API de exportación delta se usa para capturar solo los cambios que se han producido entre una fecha seleccionada y la fecha actual (la llamada a la API "delta"). En lugar de obtener una exportación completa con una gran cantidad de datos cada vez, solo se obtiene información específica sobre vulnerabilidades nuevas, fijas y actualizadas. La llamada a la API de respuesta JSON de exportación delta también se puede usar para calcular diferentes KPI, como "¿cuántas vulnerabilidades se han corregido?". o "¿cuántas vulnerabilidades nuevas se agregaron a mi organización?"
+   La "evaluación completa de vulnerabilidades de software (respuesta JSON)" se usa para obtener una instantánea completa de la evaluación de vulnerabilidades de software de su organización por dispositivo. Sin embargo, la llamada a la API de exportación delta se usa para capturar solo los cambios que se han producido entre una fecha seleccionada y la fecha actual (la llamada API "delta"). En lugar de obtener una exportación completa con una gran cantidad de datos cada vez, solo se obtiene información específica sobre vulnerabilidades nuevas, fijas y actualizadas. La llamada a la API de respuesta JSON de exportación delta también se puede usar para calcular diferentes KPI, como "¿cuántas vulnerabilidades se han corregido?". o "¿cuántas vulnerabilidades nuevas se agregaron a mi organización?"
 
    Dado que la llamada a la API de respuesta JSON de exportación de Delta para vulnerabilidades de software devuelve datos solo para un intervalo de fechas de destino, no se considera una _exportación completa._
 
-Los datos recopilados (mediante la respuesta _Json_ o a través de _archivos)_ son la instantánea actual del estado actual y no contienen datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
+Los datos recopilados (mediante la respuesta _Json_ o _a_ través de archivos) son la instantánea actual del estado actual. No contiene datos históricos. Para recopilar datos históricos, los clientes deben guardar los datos en sus propios almacenamientos de datos.
 
 > [!NOTE]
 > A menos que se indique lo **** contrario, todos los métodos de evaluación de exportación enumerados son exportación completa y por **_dispositivo_** (también **_denominados por dispositivo_**).
@@ -99,27 +99,27 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 ****
 
-Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
 :---|:---|:---|:---
-CveId|string|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
-CvssScore|string|La puntuación CVSS de CVE.|6.2
-DeviceId|string|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
+CveId|Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
+CvssScore|Cadena|La puntuación CVSS de CVE.|6.2
+DeviceId|Cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
 DiskPaths|Cadena de \[ matriz\]|Prueba en disco de que el producto está instalado en el dispositivo.|[ "C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|string|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
-FirstSeenTimestamp|string|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880
-Id|string|Identificador único del registro.|123ABG55_573AG&mnp!
-LastSeenTimestamp|string|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880
-OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esta propiedad indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
-RbacGroupName|string|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
-RecommendationReference|string|Una referencia al identificador de recomendación relacionado con este software.|va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (opcional)|string|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020
-RecommendedSecurityUpdateId (opcional)|string|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
+ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
+FirstSeenTimestamp|Cadena|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880
+Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!
+LastSeenTimestamp|Cadena|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880
+OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esta propiedad indica sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
+RbacGroupName|Cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
+RecommendationReference|Cadena|Una referencia al identificador de recomendación relacionado con este software.|va-_-microsoft-_-silverlight
+RecommendedSecurityUpdate (opcional)|Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020
+RecommendedSecurityUpdateId (opcional)|Cadena|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
 RegistryPaths|Cadena de \[ matriz\]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
-SoftwareName|string|Nombre del producto de software.|chrome
-SoftwareVendor|string|Nombre del proveedor de software.|google
-SoftwareVersion|string|Número de versión del producto de software.|81.0.4044.138
-VulnerabilitySeverityLevel|string|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Medio
+SoftwareName|Cadena|Nombre del producto de software.|Chrome
+SoftwareVendor|Cadena|Nombre del proveedor de software.|Google
+SoftwareVersion|Cadena|Número de versión del producto de software.|81.0.4044.138
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
 |
 
 ### <a name="16-examples"></a>1.6 Ejemplos
@@ -306,10 +306,10 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 
 ****
 
-Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización.|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
+GeneratedTime|Cadena|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Ejemplos
@@ -372,7 +372,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### <a name="35-properties"></a>3.5 Propiedades
 
-Cada registro devuelto contiene todos los datos de la evaluación completa de vulnerabilidades de software de exportación por API de dispositivo, además de dos campos adicionales:  _**EventTimestamp**_ y _**Status**_.
+Cada registro devuelto contiene todos los datos de la evaluación completa de vulnerabilidades de software de exportación por API de dispositivo, además de dos campos más:  _**EventTimestamp**_ y _**Status**_.
 
 > [!NOTE]
 >
@@ -383,34 +383,34 @@ Cada registro devuelto contiene todos los datos de la evaluación completa de vu
 
 ****
 
-Propiedad (ID)|Tipo de datos|Descripción|Ejemplo del valor devuelto
+Propiedad (ID)|Tipo de datos|Description|Ejemplo del valor devuelto
 :---|:---|:---|:---
-CveId |string|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992  
-CvssScore|string|La puntuación CVSS de CVE.|6.2  
-DeviceId|string|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName|string|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com  
+CveId |Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992  
+CvssScore|Cadena|La puntuación CVSS de CVE.|6.2  
+DeviceId|Cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com  
 DiskPaths|Array[string]|Prueba en disco de que el producto está instalado en el dispositivo.|["C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
 EventTimestamp|Cadena|Hora en que se encontró este evento delta.|2021-01-11T11:06:08.291Z
-ExploitabilityLevel|string|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
-FirstSeenTimestamp|string|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880  
-Id|string|Identificador único del registro.|123ABG55_573AG&mnp!  
-LastSeenTimestamp|string|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880  
-OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10  
-RbacGroupName|string|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores  
+ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
+FirstSeenTimestamp|Cadena|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880  
+Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!  
+LastSeenTimestamp|Cadena|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880  
+OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10  
+RbacGroupName|Cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores  
 RecommendationReference|string|Una referencia al identificador de recomendación relacionado con este software.|va--microsoft--silverlight  
-RecommendedSecurityUpdate |string|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020  
-RecommendedSecurityUpdateId |string|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961  
+RecommendedSecurityUpdate |Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020  
+RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961  
 RegistryPaths |Array[string]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
-SoftwareName|string|Nombre del producto de software.|chrome  
-SoftwareVendor|string|Nombre del proveedor de software.|google  
-SoftwareVersion|string|Número de versión del producto de software.|81.0.4044.138  
+SoftwareName|Cadena|Nombre del producto de software.|Chrome  
+SoftwareVendor|Cadena|Nombre del proveedor de software.|Google  
+SoftwareVersion|Cadena|Número de versión del producto de software.|81.0.4044.138  
 Estado|Cadena|**Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo)  (1) **Corregido**(si esta vulnerabilidad ya no existe en el dispositivo, lo que   significa que se corrigió). (2)  **Actualizado**   (si ha cambiado una vulnerabilidad en un dispositivo. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Decimal
-VulnerabilitySeverityLevel|string|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Medio
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad. Se basa en la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
 |
 
 #### <a name="clarifications"></a>Aclaraciones
 
-- Si el software se actualizó de la versión 1.0 a la versión 2.0 y ambas versiones se exponen a CVE-A, recibirás 2 eventos independientes:
+- Si el software se actualizó de la versión 1.0 a la versión 2.0 y ambas versiones se exponen a CVE-A, recibirás dos eventos independientes:
    1. Se corrigió: CVE-A en la versión 1.0 se ha corregido.
    1. Nuevo: CVE-A en la versión 2.0 se agregó.
 
@@ -578,7 +578,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 - [Exportar evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)

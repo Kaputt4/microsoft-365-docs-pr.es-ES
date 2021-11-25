@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b3c01215db133f5e39c56596c051e071388b5b80
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 82c1418d58679fef1b59e51b41052e4dfe584635
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963280"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168549"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de alertas o eventos que faltan para Microsoft Defender para Endpoint en Linux
 
@@ -31,6 +31,7 @@ ms.locfileid: "60963280"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 En este artículo se proporcionan algunos pasos generales para mitigar los eventos o alertas que faltan en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 

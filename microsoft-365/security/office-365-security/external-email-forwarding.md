@@ -1,26 +1,26 @@
 ---
-title: Configurar y controlar el reenvío de correo electrónico externo, reenvío automático, acceso denegado 5.7.520, deshabilitar el reenvío externo, El administrador ha deshabilitado el reenvío externo, la directiva de correo no deseado saliente
+title: Configurar y controlar el reenvío de correo electrónico externo en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: ''
+ms.date: 11/17/2021
 audience: ITPro
 ms.topic: overview
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: .
+description: En este artículo se tratan temas como reenvío de correo electrónico externo, reenvío automático, 5.7.520 Acceso denegado, deshabilitación del reenvío externo, mensajes "El administrador ha deshabilitado el reenvío externo", así como la directiva de correo no deseado saliente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e68526f4a7e83295d8d0748651b07e35cfdaf5c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db9c790c91e1335853b6647de63edb7ca6ee9a25
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176552"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168971"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío automático de correo electrónico externo en Microsoft 365
 

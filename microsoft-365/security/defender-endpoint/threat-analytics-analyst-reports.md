@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9f1744735008c201795a43344e7fb81c65cf2431
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8523439bbcc8958c1fcb01a6db181c05263ef411
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554293"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167711"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>El informe de analistas en análisis de amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,7 +46,7 @@ Cada sección del informe de analista está diseñada para proporcionar informac
 
 ****
 
-|Sección Informe|Descripción|
+|Sección Informe|Description|
 |---|---|
 |Resumen ejecutivo|Información general sobre la amenaza, incluso cuando se vio por primera vez, sus motivaciones, eventos notables, objetivos principales y distintas herramientas y técnicas. Puede usar esta información para evaluar aún más cómo priorizar la amenaza en el contexto de su industria, ubicación geográfica y red.|
 |Análisis|Información técnica sobre las amenazas, incluidos los detalles de un ataque y cómo los atacantes pueden usar una nueva técnica o superficie de ataque|

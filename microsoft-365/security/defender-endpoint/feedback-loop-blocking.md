@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30e1fdb8baede9506af52ae844f456baed1097a9
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 82d5fb32a9535a5b341bca8e5bee989d88ad8232
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882686"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167363"
 ---
 # <a name="feedback-loop-blocking"></a>Bloqueo de bucles de distribución de comentarios
 
@@ -29,7 +29,7 @@ ms.locfileid: "60882686"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 ## <a name="overview"></a>Información general
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3e37ac8876b28e55faca4282245a633a16cb06fa
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: 56b740bc5bd62f6329b53878c1a12c1486f7480f
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60971933"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171298"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
@@ -29,7 +29,8 @@ ms.locfileid: "60971933"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -95,7 +96,7 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 Las tareas importantes, como controlar la configuración del producto y desencadenar exámenes a petición, se pueden realizar desde la línea de comandos:
 
-|Grupo|Escenario|Comando|
+|Group|Escenario|Comando|
 |---|---|---|
 |Configuración|Activar/desactivar la protección en tiempo real|`mdatp config real-time-protection --value [enabled/disabled]`|
 |Configuración|Activar/desactivar la protección en la nube|`mdatp config cloud --value [enabled/disabled]`|

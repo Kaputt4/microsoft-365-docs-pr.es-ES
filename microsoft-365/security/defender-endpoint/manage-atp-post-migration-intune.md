@@ -18,19 +18,19 @@ ms.collection:
 ms.topic: article
 ms.date: 10/07/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 255f63d500272694f196e3ea08fe6e09cc06ae09
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: bb3ef2957c0d1d01d24809702bba5208b65e1999
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245755"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167099"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Administrar Microsoft Defender para endpoint con Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -64,7 +64,7 @@ En la tabla siguiente se enumeran varias tareas que puede realizar para configur
 |Tarea|Recursos para obtener más información|
 |---|---|
 |**Administrar los dispositivos de la** organización con Intune para proteger esos dispositivos y datos almacenados en ellos|[Proteger los dispositivos con Microsoft Intune](/mem/intune/protect/device-protect)|
-|**Integrar Microsoft Defender para endpoint con Intune** como una solución de Mobile Threat Defense <br/>*(para dispositivos Android y dispositivos que Windows 10 o Windows 11)*|[Exigir el cumplimiento de Microsoft Defender para endpoint con acceso condicional en Intune](/mem/intune/protect/advanced-threat-protection)|
+|**Integrar Microsoft Defender para endpoint con Intune** como una solución de Mobile Threat Defense <br/>*(para dispositivos Android y dispositivos que Windows 10 o Windows 11)*|[Exigir el cumplimiento mediante Microsoft Defender para punto de conexión con acceso condicional en Intune](/mem/intune/protect/advanced-threat-protection)|
 |**Usar el acceso condicional** para controlar los dispositivos y aplicaciones que se pueden conectar a los recursos de correo electrónico y empresa|[Configurar el acceso condicional en Microsoft Defender para el extremo](/microsoft-365/security/defender-endpoint/configure-conditional-access)|
 |**Configurar Antivirus de Microsoft Defender configuración mediante** el proveedor de servicios de configuración de directivas ([CSP de directivas](/windows/client-management/mdm/policy-configuration-service-provider))|[Restricciones de dispositivos: Antivirus de Microsoft Defender](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) <br/><br/> [CSP de directiva: Microsoft Defender para el punto de conexión](/windows/client-management/mdm/policy-csp-defender)|
 |**Si es necesario, especifique exclusiones para Antivirus de Microsoft Defender** <br/><br/> *Por lo general, no es necesario aplicar exclusiones. Antivirus de Microsoft Defender incluye una serie de exclusiones automáticas basadas en comportamientos conocidos del sistema operativo y archivos de administración típicos, como los que se usan en la administración empresarial, la administración de bases de datos y otros escenarios empresariales.*|[Recomendaciones de detección de virus Enterprise equipos que ejecutan versiones compatibles actualmente de Windows](https://support.microsoft.com/help/822158/virus-scanning-recommendations-for-enterprise-computers) <br/><br/> [Restricciones de dispositivos: Antivirus de Microsoft Defender exclusiones para Windows 10 y Windows 11 dispositivos](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions) <br/><br/> [Configurar Antivirus de Microsoft Defender exclusiones en Windows Server 2016 2019 o 2022](/windows/security/threat-protection/microsoft-defender-antivirus/configure-server-exclusions-microsoft-defender-antivirus)|
@@ -76,7 +76,7 @@ En la tabla siguiente se enumeran varias tareas que puede realizar para configur
 |**Configurar Firewall de Microsoft Defender para** bloquear el tráfico de red no autorizado que entra o sale de los dispositivos de la organización|[Protección de puntos de conexión: Firewall de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Firewall de Microsoft Defender con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
 |**Configurar el cifrado y BitLocker** para proteger la información en los dispositivos de la organización que se ejecutan Windows|[Protección de extremo: Windows cifrado](/mem/intune/protect/endpoint-protection-windows-10#windows-encryption) <br/><br/> [BitLocker para Windows 10 y Windows 11 dispositivos](/windows/security/information-protection/bitlocker/bitlocker-overview)|
 |**Configurar Credential Guard de Microsoft Defender** para protegerse contra ataques de robo de credenciales|Para Windows 10, Windows 11, Windows Server 2016 y Windows Server 2019 y Windows Server 2022, vea Endpoint [protection: Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <br/><br/> Para Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 y Windows Server 2012 R2, vea [Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft, Versions 1 and 2](https://www.microsoft.com/download/details.aspx?id=36036)|
-|**Configurar el control de aplicaciones de Microsoft Defender** para elegir si auditar o confiar en aplicaciones en los dispositivos de la organización <br/><br/> *El control de aplicaciones de Microsoft Defender también se conoce como [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Implementar directivas de control de aplicaciones de Microsoft Defender mediante Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <br/><br/> [Protección de extremo: Control de aplicaciones de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <br/><br/> [AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
+|**Configurar el control de aplicaciones de Microsoft Defender** para elegir si auditar o confiar en aplicaciones en los dispositivos de la organización <br/><br/> *El control de aplicaciones de Microsoft Defender también se conoce como [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Implementar directivas de control de aplicaciones de Microsoft Defender mediante Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <br/><br/> [Protección de extremo: Control de aplicaciones de Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <br/><br/> [CSP de AppLocker](/windows/client-management/mdm/applocker-csp)|
 |**Configurar el control de dispositivos y** el acceso a periféricos USB para ayudar a evitar que las amenazas en periféricos no autorizados puedan poner en peligro los dispositivos|[Controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para Endpoint e Intune](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurar el portal Microsoft 365 Defender web
@@ -86,7 +86,7 @@ Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver a
 - [Información general sobre Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Protección de extremo: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Introducción a la administración de amenazas y vulnerabilidades](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visite el panel Microsoft 365 Defender operaciones de seguridad del portal](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

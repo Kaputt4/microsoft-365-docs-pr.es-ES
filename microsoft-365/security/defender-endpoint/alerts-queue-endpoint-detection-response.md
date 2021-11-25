@@ -16,19 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: 5464a6eebb12b6b5351fdadd5fd55f653bb0f05f
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 61b6e9d412a7f91614a0b63955d3bd08aea1c3ef
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587974"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168815"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>Cola de alertas en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9d403005c66a636e5e485fb396d055b5d94b4106
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 4d4b83457fb8f8dc16891882cd8ca5c131659d35
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239857"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167555"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -29,7 +29,7 @@ ms.locfileid: "60239857"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plataformas**
@@ -40,7 +40,7 @@ ms.locfileid: "60239857"
 
 Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows y plataformas Windows de seguridad. Podrás ver alertas de varios sistemas operativos compatibles (SO) en Microsoft 365 Defender y proteger mejor la red de la organización.
 
-Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para obtener más información, vea:
+Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para más información, vea:
 
 - [Requisitos del sistema de Microsoft Defender para endpoint en Linux](microsoft-defender-endpoint-linux.md#system-requirements)
 - [Requisitos del sistema de Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md#system-requirements).

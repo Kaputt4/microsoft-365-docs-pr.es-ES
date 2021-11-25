@@ -15,14 +15,17 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 11/02/2021
-ms.openlocfilehash: b9634b616214d62a540ffba59fabd4996de3c3b6
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: c65c9584626c85a7c91a6d410af3a7ab5fc01aa6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962487"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61169079"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
+
+**Se aplica a:**
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
 > La administración de directivas de grupo de este producto ahora es generalmente disponible (4.18.2106): vea el blog tech [Community: Proteger](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) el almacenamiento extraíble y la impresora con Microsoft Defender para endpoint 
@@ -38,10 +41,10 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 |---|---|
 |Access|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditoría, Permitir, Impedir|
-|Compatibilidad con CSP|Yes|
-|Compatibilidad con GPO|Yes|
-|Soporte técnico basado en usuarios|Yes|
-|Compatibilidad basada en máquina|Yes|
+|Compatibilidad con CSP|Sí|
+|Compatibilidad con GPO|Sí|
+|Soporte técnico basado en usuarios|Sí|
+|Compatibilidad basada en máquina|Sí|
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
@@ -234,7 +237,7 @@ DeviceEvents
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>¿Cuál es la limitación de medios de almacenamiento extraíbles para el número máximo de USB?
 

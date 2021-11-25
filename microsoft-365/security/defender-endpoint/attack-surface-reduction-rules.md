@@ -16,14 +16,19 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9db0543a8d6c68c74b2ae6eba98a14bffb3411f7
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 4941f2aa207cfedffdb7dc9687023c3bdaa47ab2
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882674"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171658"
 ---
 # <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
+
+**Se aplica a:**
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 En este artículo se proporciona información sobre las reglas de reducción de ataques:
 
@@ -46,7 +51,7 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 > - A menos que se indique lo contrario, la compilación mínima Windows 10 es la &nbsp; versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es &nbsp; la versión 1809 o posterior.
 >
 
-| Nombre de regla | &nbsp;Windows Servidor 2016 <sup> [[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+| Nombre de regla | Windows Server &nbsp; 2016 <sup> [[1](#fn1)]<sup></sup> | Windows &nbsp; Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
 |[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v | v |
@@ -64,13 +69,13 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 |[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v |
 |[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | v | v |
-| **Nombre de la regla** | **Windows &nbsp; Servidor 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp; Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+| **Nombre de la regla** | **Windows Server &nbsp; 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp; Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
 
 (<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, vea [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 _End Public Preview: Sistemas operativos compatibles_
 
-## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
+## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 
 En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas que actualmente se liberan a disponibilidad general. Las reglas se enumeran en orden alfabético.
 
@@ -79,7 +84,7 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 > - A menos que se indique lo contrario, la compilación mínima Windows 10 es la &nbsp; versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es &nbsp; la versión 1809 o posterior.
 >
 
-|Nombre de regla|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Servidor|&nbsp;Windows Server 2016|&nbsp;Windows Server 2012 R2|
+|Nombre de regla|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; server|Windows Server &nbsp; 2016|Windows Server &nbsp; 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Versión Y 1803 (canal semianual) o posterior |  |  |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v  <br><br> |  |  |
@@ -97,7 +102,7 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 |[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v <br><br> | v <br><br> |  |  |
 |[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |  |  |
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |  |  |
-| **Nombre de la regla** |  **&nbsp;Windows 10** | **&nbsp;Windows Server 2019** | **&nbsp;Windows Servidor** | **&nbsp;Windows Server 2016** | **&nbsp;Windows Server 2012 R2** |
+| **Nombre de la regla** |  **Windows &nbsp; 10** | **Windows &nbsp; Server 2019** | **Windows &nbsp; server** | **Windows Server &nbsp; 2016** | **Windows Server &nbsp; 2012 R2** |
 
 ## <a name="supported-configuration-management-systems"></a>Sistemas de administración de configuración compatibles
 
@@ -105,7 +110,7 @@ Los vínculos a información sobre las versiones del sistema de administración 
 
 |Nombre de regla | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Directiva de <sup> grupo [[1](#fn1)]<sup></sup> | PowerShell <sup> [[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  [compatible](images/checkmark.png) <br><br> |
+|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  [compatible](images/checkmark.png) <br><br> |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
 |[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
 |[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
@@ -380,12 +385,12 @@ Dependencias: MDAV
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquear la persistencia a través de la suscripción de eventos WMI
 
-Esta regla evita que el malware abuse de WMI para lograr la persistencia en un dispositivo.
+Esta regla impide que el malware abuse de WMI para lograr persistencia en un dispositivo.
 
 > [!IMPORTANT]
 > Las exclusiones de archivos y carpetas no se aplican a esta regla de reducción de superficie de ataque.
 
-Las amenazas sin archivos emplean varias tácticas para mantenerse ocultas, para evitar que se vean en el sistema de archivos y para obtener un control de ejecución periódico. Algunas amenazas pueden abusar del repositorio WMI y el modelo de eventos para mantenerse oculto.
+Las amenazas sin archivo emplean varias tácticas para permanecer ocultas, evitar ser detectadas en el sistema de archivos y obtener el control de la ejecución periódica. Algunas amenazas pueden abusar del repositorio WMI y el modelo de eventos para permanecer ocultas.
 
 Nombre de Intune: no disponible
 
@@ -446,7 +451,7 @@ Office VBA habilita las llamadas a la API de Win32. El malware puede abusar de e
 Sistemas operativos compatibles:
 
 - [Windows 10, versión 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Servidor, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server, versión 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 

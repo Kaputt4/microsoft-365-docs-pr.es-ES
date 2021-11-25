@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 59c00d1e34cf97ce2012c3052283453dc23e38a1
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 63453b772123e9fe8440da3372d166503cee21e1
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110600"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61171106"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para endpoint en macOS
 
@@ -30,6 +30,8 @@ ms.locfileid: "61110600"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 En este tema se describe cómo implementar Microsoft Defender para Endpoint en macOS a través de Intune. Una implementación correcta requiere la finalización de todos los pasos siguientes:
 
@@ -55,7 +57,7 @@ En la tabla siguiente se resumen los pasos que debe seguir para implementar y ad
 |---|---|---|
 |[Descargar el paquete de incorporación](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
 |[Aprobar extensión del sistema para Microsoft Defender para endpoint](#approve-system-extensions)|MDATP_SysExt.xml|N/D|
-|[Aprobar extensión de kernel para Microsoft Defender para endpoint](#download-the-onboarding-package)|MDATP_KExt.xml|N/D|
+|[Aprobar extensión de kernel para Microsoft Defender para endpoint](#download-the-onboarding-package)|MDATP_KExt.xml|No aplicable|
 |[Conceder acceso en disco completo a Microsoft Defender para endpoint](#full-disk-access)|MDATP_tcc_Catalina_or_newer.xml|com.microsoft.wdav.tcc|
 |[Directiva de extensión de red](#network-filter)|MDATP_NetExt.xml|N/D|
 |[Configurar Microsoft AutoUpdate (MAU)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|

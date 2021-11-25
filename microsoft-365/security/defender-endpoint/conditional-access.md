@@ -16,19 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93b547718bca2fb157c3b4e0a4b08d383ec92e4f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8ee1b1542eb2e737da509ce12ad9c2a605a4ffa5
+ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196998"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61170583"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Habilitar el acceso condicional para proteger mejor a los usuarios, dispositivos y datos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-abovefoldlink)
@@ -41,7 +42,7 @@ Con el acceso condicional, puedes controlar el acceso a la información empresar
 
 Puedes definir las condiciones de seguridad en las que los dispositivos y las aplicaciones pueden ejecutarse y acceder a la información desde la red aplicando directivas para impedir que las aplicaciones se ejecuten hasta que un dispositivo vuelva a un estado compatible.
 
-La implementación del acceso condicional en Defender para endpoint se basa en directivas de cumplimiento de dispositivos de Microsoft Intune (Intune) y directivas de acceso condicional Azure Active Directory (Azure AD).
+La implementación del acceso condicional en Defender for Endpoint se basa en directivas de cumplimiento de dispositivos de Microsoft Intune (Intune) y directivas de Azure Active Directory (Azure AD) de acceso condicional.
 
 La directiva de cumplimiento se usa con acceso condicional para permitir que solo los dispositivos que cumplan una o más reglas de directiva de cumplimiento de dispositivos puedan acceder a las aplicaciones.
 
@@ -55,7 +56,7 @@ Según cómo configure las directivas en Intune, se puede configurar el acceso c
 
 Por ejemplo, puede configurar Intune para aplicar el acceso condicional a dispositivos con un alto riesgo.
 
-En Intune, se usa una directiva de cumplimiento de dispositivos junto con el acceso condicional de Azure AD para bloquear el acceso a las aplicaciones. En paralelo, se inicia un proceso automatizado de investigación y corrección.
+En Intune, se usa una directiva de cumplimiento de dispositivos Azure AD acceso condicional para bloquear el acceso a las aplicaciones. En paralelo, se inicia un proceso automatizado de investigación y corrección.
 
  Un usuario todavía puede usar el dispositivo mientras se lleva a cabo la investigación automatizada y la corrección, pero el acceso a los datos de la empresa se bloquea hasta que la amenaza se corrija por completo.
 
@@ -75,7 +76,7 @@ La siguiente secuencia de eventos de ejemplo explica el acceso condicional en ac
 
 1. Un usuario abre un archivo malintencionado y Defender para endpoint marca el dispositivo como de alto riesgo.
 2. La evaluación de alto riesgo se pasa a Intune. En paralelo, se inicia una investigación automatizada para corregir la amenaza identificada. También se puede realizar una corrección manual para corregir la amenaza identificada.
-3. Según la directiva creada en Intune, el dispositivo se marca como no compatible. A continuación, la directiva de acceso condicional de Intune comunica la evaluación a Azure AD. En Azure AD, la directiva correspondiente se aplica para bloquear el acceso a las aplicaciones.
+3. Según la directiva creada en Intune, el dispositivo se marca como no compatible. A continuación, la directiva de acceso condicional de Intune comunica Azure AD la evaluación. En Azure AD, la directiva correspondiente se aplica para bloquear el acceso a las aplicaciones.
 4. La investigación y corrección manual o automatizada se completa y se elimina la amenaza. Defender for Endpoint ve que no hay ningún riesgo en el dispositivo e Intune evalúa que el dispositivo está en un estado de cumplimiento. Azure AD aplica la directiva que permite el acceso a las aplicaciones.
 5. Los usuarios ahora pueden acceder a las aplicaciones.
 
