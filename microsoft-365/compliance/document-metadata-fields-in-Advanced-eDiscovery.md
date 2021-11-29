@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 0dd0c11360a1e815c950e6e01448d95a79a8e266
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aa4cda3d005d0433c56b77d30d24c789cdd70f2e
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177548"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218363"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -54,13 +54,16 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Contenido*|Contenido||Texto extraído del elemento.|
 |Cuerpo de la conversación|ConversationBody||Cuerpo de conversación del elemento.|
 |Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y chats de grupo, todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, vea [Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Id. de familia de conversación|ConversationFamilyID|ConversationFamilyID|Identificador que identifica los elementos individuales de una conversación, así como los elementos relacionados de la conversación.|
 |Índice de conversación||Conversation_index|Índice de conversación del mensaje.|
-|Nombre de conversación||ConversationName|Nombre del canal en Teams. El formato del nombre depende del tipo de canal: <br>Teams chats de canal privado y chats de canal privado:\<Name of team, name of channel\> <br>Teams 1:1 y chats de grupo: Nombre para mostrar y dirección de correo electrónico de todos los participantes de chat<br>Yammer: Community nombre + primeros 120 caracteres de una publicación<br>Yammer privado: nombre del remitente y dirección de correo electrónico + primeros 120 caracteres de un mensaje|
+|Nombre de conversación||ConversationName|Este campo depende del tipo de contenido.<br>**Teams chat 1:1:** primeros 40 caracteres del primer mensaje.<br>**Teams chat 1:N:** Nombre del chat de grupo; si no está disponible, los primeros 40 caracteres del primer mensaje.<br>**Teams channel post:** Subpartida publicar título o anuncio; si no está disponible, los primeros 40 caracteres del primer mensaje.|
 |Hora de pdf de conversación|ConversationPdfTime||Fecha en la que se creó la versión PDF de la conversación.|
 |Tiempo de grabación de redacción de conversación|ConversationRedactionBurnTime||Fecha en la que se creó la versión PDF de la conversación para Chat.|
 |Tema de conversación|ConversationTopic||Tema de conversación del elemento.|
-|Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br> Teams 1:1 y chats de grupo y todas las conversaciones Yammer: **Agrupar** para<br>Teams canales y canales privados: **Canal**|
-|Contiene mensaje editado|ContainsEditedMessage|ContainsEditedMessage|Indica si la transcripción Teams de chat incluye un mensaje editado
+|Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br>**Teams 1:1 y chats** de grupo y todas las conversaciones Yammer: Grupo<br>**Teams canales y canales privados:** Canal|
+|Contiene mensaje eliminado|ContainsDeletedMessage|ContainsDeletedMessage|Indica si la transcripción del chat incluye un mensaje eliminado|
+|Contiene mensaje editado|ContainsEditedMessage|ContainsEditedMessage|Indica si la transcripción del chat incluye un mensaje editado|
+|Teams de anuncio|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Título de un [anuncio de teams](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Ruta de acceso del archivo de exportación convertido. Solo para uso interno de Microsoft.|
 |Custodio|Custodio|Custodio|Nombre del custodio al que se asoció el elemento.|
 |Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<p>Correo electrónico: fecha de envío<br>Datos adjuntos de correo electrónico: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br>Documentos incrustados: fecha de última modificación del documento; si no está disponible, la última fecha de modificación del elemento primario<br>Documentos SPO (incluye datos adjuntos modernos): SharePoint fecha de última modificación; si no está disponible, la fecha de última modificación de los documentos<br>Documentos no Office 365: Fecha de última modificación<br>Reuniones: fecha de inicio de la reunión<br>VoiceMail: fecha de envío<br>MI: Fecha de envío<br>Teams: Fecha de envío|
@@ -170,7 +173,8 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Subject|Subject|Email_subject|Asunto del mensaje.|
 |Asunto/Título|SubjectTitle||Campo calculado formado por el asunto o el título del elemento.|
 |Etiquetas|Etiquetas|Etiquetas|Etiquetas aplicadas en un conjunto de revisión.|
-|Teams Nombre del canal|TeamsChannel|Channel_Name|Nombre del canal en Microsoft Teams.|
+|Nombre del canal|Canal|ChannelName|Este es el nombre Teams canal. Solo se aplica a Microsoft Teams contenido.|
+|Nombre del equipo|TeamName|TeamName|**Teams: Nombre** del equipo<br>**Yammer: Community** nombre|
 |Lista de temas|ThemesList|Themes_list|Lista de temas calculada para análisis.|
 |Título|Título|Doc_title|Título de los metadatos del documento. Título de los metadatos del documento. Para Teams y Yammer, este es el valor de la propiedad ConversationName.|
 |To|To|Email_to|Para el campo para los tipos de mensaje. Format es **DisplayName \<SmtpAddress>**|
