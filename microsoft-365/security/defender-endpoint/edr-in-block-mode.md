@@ -15,22 +15,22 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 10/07/2021
+ms.date: 11/29/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 82addf4b41ae41c67353a4045c8fdacce7bb8afa
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 19b482bd15ffc9c702d004f52b9aa9e60b2a5109
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963052"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218207"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -72,8 +72,8 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 2. Elija **Configuración** \> **endpoints** \> **General** \> **Advanced .**
 3. Desplácese hacia abajo y, a continuación, active **Habilitar EDR en modo de bloque**.
 
-> [!NOTE]
-> EDR en modo de bloque solo se puede desactivar en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a> de Microsoft 365 Defender o en el antiguo Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). No puede usar claves del Registro, Microsoft Intune o directiva de grupo para habilitar o deshabilitar EDR en modo de bloque.
+> [!IMPORTANT]
+> EDR en modo de bloque solo se puede desactivar en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a> de Microsoft 365 Defender o en el antiguo Centro de seguridad de Microsoft Defender ( ), y se aplica en [https://securitycenter.windows.com](https://securitycenter.windows.com) todo el espacio empresarial. No puedes establecer EDR en modo de bloqueo para que se den como destino usuarios o grupos de dispositivos específicos. No puede usar claves del Registro, Microsoft Intune o directiva de grupo para habilitar o deshabilitar EDR en modo de bloque.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Requisitos para EDR en modo de bloque
 
@@ -90,7 +90,7 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 > [!IMPORTANT]
 > Para obtener el mejor valor de protección, asegúrese de que la solución antivirus está configurada para recibir actualizaciones periódicas y características esenciales y de que las [exclusiones están configuradas.](configure-exclusions-microsoft-defender-antivirus.md) EDR en modo de bloque respeta las exclusiones que se definen para Antivirus de Microsoft Defender, pero no los indicadores [definidos](manage-indicators.md) para Microsoft Defender para endpoint.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo si tengo Antivirus de Microsoft Defender en dispositivos?
 
@@ -126,7 +126,7 @@ Para confirmar si Antivirus de Microsoft Defender se está ejecutando en modo ac
 
 <br/><br/>
 
-|Método|Procedure|
+|Method|Procedure|
 |---|---|
 |PowerShell|1. Seleccione el menú Inicio, empiece a escribir y, a continuación, `PowerShell` abra Windows PowerShell en los resultados.<br/><br/>2. Escriba `Get-MpComputerStatus` .<br/><br/>3. En la lista de resultados, en la fila **AMRunningMode,** busque uno de los siguientes valores:<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>Para obtener más información, [vea Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
 |Símbolo del sistema|1. Seleccione el menú Inicio, empiece a escribir y, a continuación, abra Windows símbolo del `Command Prompt` sistema en los resultados.<br/><br/>2. Escriba `sc query windefend` .<br/><br/>3. En la lista de resultados, en la fila **STATE,** confirme que el servicio se está ejecutando. |
@@ -153,7 +153,7 @@ Si Antivirus de Microsoft Defender se ejecuta en modo activo o pasivo, EDR en mo
 - Windows Server 2022
 - Windows Server 2019 
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 - Windows 11
 
 >[!NOTE]

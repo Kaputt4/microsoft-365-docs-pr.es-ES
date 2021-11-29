@@ -16,18 +16,19 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b2b23a52312b3f384122f34b054b65bd6aa486a2
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 287e49a92032e725153065ef3d996e2b5c14baf9
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881918"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218051"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Configurar Antivirus de Microsoft Defender notificaciones que aparecen en los puntos de conexión
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 En Windows 10 y Windows 11, las notificaciones de aplicaciones sobre detección y corrección de malware son más sólidas, coherentes y concisos. Antivirus de Microsoft Defender notificaciones aparecen en los puntos de conexión cuando se completan los exámenes y se detectan amenazas. Las notificaciones siguen exámenes programados y activados manualmente. Estas notificaciones también aparecen en el **Centro** de notificaciones y aparecen un resumen de exámenes y detecciones de amenazas en intervalos de tiempo regulares.
 
@@ -50,7 +51,7 @@ Puedes configurar la presentación de notificaciones adicionales, como resúmene
 
 4. Seleccione **Plantillas administrativas**.
 
-5. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** > reporting**.
+5. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender**  >  **Reporting**.
 
 6. Haga doble clic **en Desactivar notificaciones mejoradas** y establezca la opción en **Habilitado**. A continuación, seleccione **Aceptar**. Esto impedirá que aparezcan notificaciones adicionales.
 

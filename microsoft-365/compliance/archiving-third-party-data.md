@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos Microsoft 365 buzones de correo.
-ms.openlocfilehash: 92efcffeaf9d85fe0c53cabf477e03cdfa5f5cd6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3b9868d112e6f4add560da31346df786dff1e96e
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647653"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217739"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
 
@@ -96,7 +96,7 @@ Para poder archivar datos de terceros en Microsoft 365, debe trabajar con Verita
 |[Texto delimitado](archive-text-delimited-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[Teams de Webex](archive-webexteams-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Páginas web](archive-webpagecapture-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
-|[Workplace de Facebook](archive-workplacefromfacebook-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Área de trabajo de Facebook](archive-workplacefromfacebook-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[XIP](archive-xip-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
@@ -207,6 +207,39 @@ Puede usar el [cumplimiento de la comunicación](communication-compliance.md) pa
 
 Las señales de datos de terceros, como los datos de recursos humanos selectivos, pueden ser usadas por la solución de administración de riesgos [insider](insider-risk-management.md) para minimizar los riesgos internos, ya que le permite detectar, investigar y actuar en actividades de riesgo en su organización. Por ejemplo, los datos importados por el conector de datos de RECURSOS humanos se usan como indicadores de riesgo para ayudar a detectar el robo de datos de empleados que salen.
 
+## <a name="role-group-membership-required-to-create-data-connectors"></a>Pertenencia a grupos de roles necesaria para crear conectores de datos
+
+Para crear conectores de datos de terceros, los usuarios de la organización deben ser miembros de uno de los siguientes grupos de roles de la Centro de cumplimiento de Microsoft 365:
+
+- Cumplimiento de la comunicación
+
+- Administradores de cumplimiento de comunicaciones
+
+- Administrador de cumplimiento
+
+- Administrador de datos de cumplimiento
+
+- Supervisores del Administrador de cumplimiento
+
+- Evaluadores del Administrador de cumplimiento
+
+- Colaboradores del Administrador de cumplimiento
+
+- Administración de riesgos de Insider
+
+- Administradores de administración de riesgos de Insider
+
+- Administración de la organización
+
+> [!NOTE]
+> A partir del 30 de noviembre de 2021, no tiene que tener asignado el rol Exportación de importación de buzones en Exchange Online para crear conectores de datos. Después de esta fecha, solo debe ser miembro de uno de los grupos de roles anteriores de la Centro de cumplimiento de Microsoft 365 para crear un conector de datos.
+
+Para obtener más información sobre Centro de cumplimiento de Microsoft 365 de roles y cómo agregar usuarios a un grupo de roles de cumplimiento, vea:
+
+- [Permisos en el Centro de seguridad y cumplimiento ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+
+- La sección "Agregar usuarios a un grupo de roles de cumplimiento" [en Permissions in the Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group)
+
 ## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>Uso de herramientas de exhibición de documentos electrónicos para buscar datos de terceros
 
 Después de usar conectores de datos para importar y archivar datos de terceros en buzones de usuario, puede usar Microsoft 365 herramientas de exhibición de documentos electrónicos para buscar datos de terceros. También puede usar herramientas de exhibición de documentos electrónicos para crear retenciones basadas en consultas asociadas con la exhibición de documentos electrónicos principales y los Advanced eDiscovery para conservar datos de terceros. Para obtener más información acerca de las herramientas de exhibición de documentos electrónicos, vea [soluciones de exhibición](ediscovery.md)de documentos electrónicos en Microsoft 365 .
@@ -315,3 +348,4 @@ Algunos conectores de datos están disponibles en la nube de Us Government. Las 
 Otra opción para importar y archivar datos de terceros es que su organización trabaje con un partner de Microsoft. Si un tipo de datos de terceros no es compatible con los conectores de datos disponibles en el Centro de cumplimiento de Microsoft, puede trabajar con un partner que pueda proporcionar un conector personalizado que se configurará para extraer elementos del origen de datos de terceros de forma regular y, a continuación, conectarse a la nube de Microsoft mediante una API de terceros e importar esos elementos a Microsoft 365. El conector de asociado también convierte el contenido de un elemento del origen de datos de terceros en un mensaje de correo electrónico y, a continuación, lo importa a un buzón en Microsoft 365.
 
 Para obtener una lista de socios con los que puede trabajar y el proceso paso a paso para este método, vea Trabajar con un partner para archivar datos de terceros en [Microsoft 365](work-with-partner-to-archive-third-party-data.md).
+

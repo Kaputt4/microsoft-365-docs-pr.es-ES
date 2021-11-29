@@ -1,5 +1,5 @@
 ---
-title: 'Fase 4 de implementación de reglas de reducción de superficie de ataque: operativa'
+title: 'Fase 4 de implementación de reglas ASR: operationalize'
 description: Proporciona instrucciones para implementar las reglas de reducción de superficie de ataque.
 keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 176c1a28c38d20ee9d56079362cc6514f59d0a7e
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 7c06be427df2425a2160201324a6ed267d88d0fd
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171809"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218339"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-4-operationalize"></a>Fase 4 de implementación de reglas de reducción de superficie de ataque: operationalize
 
@@ -76,10 +76,10 @@ Para obtener más información acerca de las opciones de búsqueda, vea: [Desmit
 
 ## <a name="topics-in-this-deployment-collection"></a>Temas de esta colección de implementación
 
-[Guía de implementación de reglas de reducción de superficie de ataque: información general](attack-surface-reduction-rules-deployment.md)
+[Guía de implementación de reglas ASR: información general](attack-surface-reduction-rules-deployment.md)
 
-[Fase 1 de implementación de reglas de reducción de superficie de ataque: plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Fase 1 de implementación de reglas ASR: plan](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Fase 2 de implementación de reglas de reducción de superficie de ataque: prueba](attack-surface-reduction-rules-deployment-phase-2.md)
+[Fase 2 de implementación de reglas ASR: prueba](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Fase 3 de implementación de reglas de reducción de superficie de ataque: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
+[Fase 3 de implementación de reglas ASR: implementar](attack-surface-reduction-rules-deployment-phase-3.md)

@@ -15,32 +15,32 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b3cfbfc2e0330ce7b09bc34d379d45fc75dde8ca
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: e27439a23d21dd95bb717104b5d87291b7e4592f
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586118"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218447"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Defender for Endpoint admite la supervisión de conexiones de red desde diferentes niveles de la pila de red. Un caso difícil es cuando la red usa un proxy de reenvío como puerta de enlace a Internet.
 
-El proxy actúa como si fuera el extremo de destino. En estos casos, los monitores de conexión de red simples auditarán las conexiones con el proxy, que es correcto pero que tiene un valor de investigación inferior.
+El proxy actúa como si fuera el extremo de destino. En estos casos, los monitores de conexión de red simples auditarán las conexiones con el proxy correcto pero con un valor de investigación inferior.
 
 Defender for Endpoint admite la supervisión avanzada del nivel HTTP a través de la protección de red. Cuando está activado, se muestra un nuevo tipo de evento que expone los nombres de dominio de destino reales.
 
 ## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>Usar la protección de red para supervisar la conexión de red detrás de un firewall
 
-La supervisión de la conexión de red detrás de un proxy de reenvío es posible debido a eventos de red adicionales que se originan a partir de la protección de red. Para verlos en una escala de tiempo del dispositivo, activa la protección de red (como mínimo en modo auditoría).
+La supervisión de la conexión de red detrás de un proxy de reenvío es posible debido a otros eventos de red que se originan a partir de la protección de red. Para verlos en una escala de tiempo del dispositivo, activa la protección de red (como mínimo en modo auditoría).
 
 La protección de red se puede controlar con los siguientes modos:
 
@@ -48,7 +48,7 @@ La protección de red se puede controlar con los siguientes modos:
 - **Auditoría:** los usuarios o aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. Sin embargo, seguirás teniendo esta actividad en Centro de seguridad de Microsoft Defender.
 
 
-Si desactivas la protección de red, no se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. No verá ninguna actividad de red en Centro de seguridad de Microsoft Defender.
+Si desactivas la protección de red, los usuarios o las aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. No verá ninguna actividad de red en Centro de seguridad de Microsoft Defender.
 
 Si no lo configura, el bloqueo de red se desactivará de forma predeterminada.
 
@@ -60,7 +60,7 @@ Cuando la protección de red esté activada, verás que en la escala de tiempo d
 
 ![Imagen de eventos de red en la escala de tiempo del dispositivo.](images/atp-proxy-investigation.png)
 
-Los eventos adicionales desencadenados por la capa de protección de red ahora están disponibles para superficier los nombres de dominio reales incluso detrás de un proxy.
+Otros eventos desencadenados por la capa de protección de red ahora están disponibles para que los nombres de dominio reales se desencadene incluso detrás de un proxy.
 
 Información del evento:
 

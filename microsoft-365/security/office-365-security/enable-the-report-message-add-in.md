@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informes para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b87367ed46f51d3569c900ba2661aaf34209de4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7f2316cc787ede02644a48636a01b30458d7e349
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705198"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61217799"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 
@@ -71,9 +71,17 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
 
 - Las organizaciones que tienen una solución de seguridad o filtrado de direcciones URL (como un proxy o firewall) en su lugar, deben tener puntos de conexión ipagave.azurewebsites.net y outlook.office.com que se puedan alcanzar en el protocolo HTTPS.
 
+### <a name="turn-off-the-built-in-reporting-experience"></a>Desactivar la experiencia de informes integrada
 
-> [!IMPORTANT]
-> No recomendamos la experiencia de informes integrada en Outlook porque no puede usar la directiva [de envío de usuario](./user-submission.md). Se recomienda usar el complemento Report Message o el complemento Report Phishing en su lugar.
+No recomendamos la experiencia de informes integrada en Outlook porque no puede usar la directiva [de envío de usuario](./user-submission.md). Se recomienda usar el complemento Report Message o el complemento Report Phishing en su lugar.
+
+Deberá tener asignados permisos antes de poder ejecutar este cmdlet. Para obtener los permisos necesarios para ejecutar cualquier cmdlet o parámetro en su organización, consulte [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
+
+Ejecute el siguiente comando de PowerShell para deshabilitar la experiencia de informes integrada:
+
+```powershell
+Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
+```
 
 ## <a name="get-the-report-message-add-in"></a>Obtener el complemento Mensaje de informe
 
@@ -99,7 +107,7 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 - En Outlook en la Web, el icono tiene este aspecto:
 
     > [!div class="mx-imgBorder"]
-    > ![Outlook en la Web Icono del complemento Mensaje de informe.](../../media/owa-report-message-icon.png)
+    > ![Outlook en la Web de complemento Mensaje de informe.](../../media/owa-report-message-icon.png)
 
 ### <a name="get-the-report-message-add-in-for-your-organization"></a>Obtener el complemento Mensaje de informe para su organización
 
@@ -109,7 +117,7 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 1. En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), vaya a **Configuración** \> **Aplicaciones integradas**. Haga clic **en Obtener aplicaciones**.
 
     > [!div class="mx-imgBorder"]
-    > ![Centro de administración de Microsoft 365 Aplicaciones integradas](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > ![Centro de administración de Microsoft 365 aplicaciones integradas](../../media/microsoft-365-admin-center-integrated-apps.png)
 
 2. En la **Aplicaciones Microsoft 365** que aparece, haga  clic en el cuadro Buscar, escriba **Mensaje** de informe y, a continuación, haga clic en **Icono Buscar** ![ búsqueda. ](../../media/search-icon.png) . En la lista de resultados, busque y seleccione **Mensaje de informe**. 
 
@@ -174,7 +182,7 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 - En Outlook en la Web, el icono tiene este aspecto:
 
     > [!div class="mx-imgBorder"]
-    > ![Outlook en la Web Report Phishing add-in icon.](../../media/OWA-ReportPhishing.png)
+    > ![Outlook en la Web de complemento de phishing de informe.](../../media/OWA-ReportPhishing.png)
 
 ### <a name="get-the-report-phishing-add-in-for-your-organization"></a>Obtener el complemento de suplantación de identidad de informes para su organización
 
@@ -184,7 +192,7 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 1. En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), vaya a **Configuración** \> **Aplicaciones integradas**. Haga clic **en Obtener aplicaciones**.
 
     > [!div class="mx-imgBorder"]
-    > ![Centro de administración de Microsoft 365 Aplicaciones integradas](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > ![Centro de administración de Microsoft 365 aplicaciones integradas](../../media/microsoft-365-admin-center-integrated-apps.png)
 
 2. En la **Aplicaciones Microsoft 365** que aparece, haga  clic en el cuadro Buscar, escriba Informe de **suplantación** de identidad y, a continuación, haga clic en **Buscar** ![ en el icono Buscar. ](../../media/search-icon.png) . En la lista de resultados, busque y seleccione **Report Phishing**. 
  

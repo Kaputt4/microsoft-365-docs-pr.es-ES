@@ -18,32 +18,33 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 069e74b8ad0aef33caab411b92c24c4d0b72f022
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ecea6cdac4c254126c6f4bad1400a090505c9eb
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194158"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218651"
 ---
 # <a name="investigation-resource-type"></a>Tipo de recurso Investigación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 Representa una entidad de investigación automatizada en Defender para endpoint.
 
-Vea [Overview of automated investigations](automated-investigations.md) para obtener más información.
+Para obtener más información, vea [Overview of automated investigations](automated-investigations.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Método|Tipo de valor devuelto|Descripción
 :---|:---|:---
@@ -55,11 +56,11 @@ Método|Tipo de valor devuelto|Descripción
 
 Propiedad|Tipo|Descripción
 :---|:---|:---
-id|Cadena|Identidad de la entidad de investigación. 
+Id.|Cadena|Identidad de la entidad de investigación. 
 startTime|DateTime Nullable|La fecha y hora en que se creó la investigación.
 endTime|DateTime Nullable|La fecha y la hora en que se completó la investigación.
 cancelledBy|Cadena|El identificador del usuario o aplicación que canceló esa investigación.
-state|Enum|El estado actual de la investigación. Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+Estado|Enum|El estado actual de la investigación. Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 statusDetails|Cadena|Información adicional sobre el estado de la investigación.
 machineId|Cadena|El identificador del dispositivo en el que se ejecuta la investigación.
 computerDnsName|Cadena|Nombre del dispositivo en el que se ejecuta la investigación.

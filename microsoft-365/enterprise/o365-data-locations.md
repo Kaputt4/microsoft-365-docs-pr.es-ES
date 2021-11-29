@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 374e8c92a4694b81b6b6eb4cff52e6f2024afe93
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8647bb2ff9fdb273e1c33293446a04e57da741f0
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167039"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218711"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -5944,6 +5944,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
+ </p></details>
 
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>Islas Georgia del Sur y Sandwich del Sur
 <details><summary>Haga clic para expandir</summary><p>
@@ -6671,6 +6672,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Ideas Microsoft Viva: solo administrador/líder de datos de AAD de la organización | Geografía global 1: EMEA |
 | Ideas Microsoft Viva: solo administrador/líder con datos de recursos humanos de terceros | Estados Unidos |
 | Ideas Microsoft Viva: Avanzado | Estados Unidos |
+ </p></details>
 
 ## <a name="united-kingdom"></a>Reino Unido
 <details><summary>Haga clic para expandir</summary><p>

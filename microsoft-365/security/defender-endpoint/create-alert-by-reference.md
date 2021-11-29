@@ -16,22 +16,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fb30a5dbc2d5a6859343a1b382cdbd0106819cd2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4d513c29dc57dd169eb9a7760cb433d764ad78f6
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191952"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218471"
 ---
 # <a name="create-alert-api"></a>Crear API de alertas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,7 +44,7 @@ ms.locfileid: "60191952"
 Crea una [nueva alerta](alerts.md) en la parte superior del **evento**.
 
 - **Se requiere Microsoft Defender para el evento endpoint** para la creación de alertas.
-- Deberá proporcionar 3 parámetros del evento en la solicitud: **Hora del** evento , **Id. de** máquina e **Id. de informe.** Vea el ejemplo abajo.
+- Debe proporcionar tres parámetros del evento en la solicitud: **Hora del** evento, **Id.** de máquina e **Id. de informe.** Vea el ejemplo abajo.
 - Puedes usar un evento que se encuentra en la API de búsqueda avanzada o portal.
 - Si existe una alerta abierta en el mismo dispositivo con el mismo título, la nueva alerta creada se combinará con ella.
 - Una investigación automática se inicia automáticamente en alertas creadas a través de la API.
@@ -64,8 +65,8 @@ Delegado (cuenta profesional o educativa) | Alert.ReadWrite | 'Leer y escribir a
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (Para obtener más información, vea [Crear y administrar roles](user-roles.md) )
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md))
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -86,13 +87,13 @@ En el cuerpo de la solicitud, proporcione los siguientes valores (todos son nece
 
 Propiedad | Tipo | Descripción
 :---|:---|:---
-eventTime | DateTime(UTC) | La hora precisa del evento como cadena, como se obtiene de la búsqueda avanzada. Por ejemplo, Obligatorio ```2018-08-03T16:45:21.7115183Z``` .
+eventTime | DateTime(UTC) | La hora precisa del evento como cadena, como se obtiene de la búsqueda avanzada. Por ejemplo,  ```2018-08-03T16:45:21.7115183Z``` **Obligatorio**.
 reportId | Cadena | El reportId del evento, como se obtiene de la búsqueda avanzada. **Necesario**.
 machineId | Cadena | Id. del dispositivo en el que se identificó el evento. **Necesario**.
 severity | Cadena | Gravedad de la alerta. Los valores de propiedad son: 'Low', 'Medium' y 'High'. **Necesario**.
 title | Cadena | Título de la alerta. **Necesario**.
 description | Cadena | Descripción de la alerta. **Necesario**.
-recommendedAction| Cadena | Acción recomendada por el responsable de seguridad al analizar la alerta. **Necesario**.
+recommendedAction| Cadena | El responsable de seguridad debe tomar esta acción al analizar la alerta. **Necesario**.
 categoría| Cadena | Categoría de la alerta. Los valores de propiedad son: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
 
 ## <a name="response"></a>Respuesta
@@ -103,7 +104,7 @@ Si se realiza correctamente, este método devuelve 200 Ok y un nuevo [objeto ale
 
 ### <a name="request"></a>Solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference

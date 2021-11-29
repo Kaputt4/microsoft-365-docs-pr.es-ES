@@ -18,17 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 469e1cd227e83facb678c85bd123f4ea250cd08c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 07660b2d15adae7eb2534b8b9a7bcfbb6b311571
+ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555913"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61218219"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a> Recopilación de datos para solucionar problemas avanzados en Windows
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Al colaborar con profesionales de soporte técnico de Microsoft, es posible que se le pida que use el analizador de cliente para recopilar datos para solucionar problemas de escenarios más complejos. El script del analizador admite otros parámetros para ese fin y puede recopilar un conjunto de registros específico en función de los síntomas observados que deben investigarse.
 
