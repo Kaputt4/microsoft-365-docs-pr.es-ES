@@ -33,7 +33,7 @@
       items:
         - name: Información general
           href: manage-devices-with-intune-overview.md
-        - name: Paso 1. Implementar directivas de protección de aplicaciones de nivel 2
+        - name: Paso 1. Implementar directivas de protección de aplicaciones
           href: manage-devices-with-intune-app-protection.md
         - name: Paso 2. Inscripción de dispositivos en la administración
           href: manage-devices-with-intune-enroll.md
@@ -317,7 +317,7 @@
         - name: Implementar Microsoft Defender para punto de conexión
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Cambiar de una protección de puntos de conexión distinta de Microsoft a Microsoft Defender para punto de conexión
-          href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+          href: ../security/defender-endpoint/switch-to-mde-overview.md
         - name: Cambiar de una herramienta de protección que no es de Microsoft a Microsoft Defender para Office 365
           href: ../security/office-365-security/migrate-to-defender-for-office-365.md
         - name: Recomendaciones de seguridad para cuentas prioritarias en Microsoft 365
