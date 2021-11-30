@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2cd42f5443506a51539638d4ddaa7ab2bd19ebcd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e49cae704e9ee62801af7423ba10b45e0b13574d
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646960"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220973"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -970,6 +970,13 @@ Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que 
 |Colaboración de personas en mi organización habilitada<sup>*</sup>|EnableSameOrgCollaboration|El propietario del formulario activa la configuración que permite a los usuarios de la organización actual ver y editar el formulario.|
 |Colaboración con personas específicas habilitada<sup>*</sup>|EnableSpecificCollaboaration|El propietario del formulario activa la configuración para permitir que solo personas específicas o grupos específicos de la organización actual vean y editen el formulario.|
 |Conectado al libro de Excel<sup>*</sup>|ConnectToExcelWorkbook|Conectado el formulario a un libro de Excel. <br><br>La propiedad ExcelWorkbookLink:string indica el Id. de libro de Excel asociado del formulario actual.|
+|Se ha creado una colección|CollectionCreated|El propietario del formulario ha creado una colección.|
+|Se ha actualizado una colección|CollectionUpdated|El propietario del formulario ha actualizado una propiedad de la colección.|
+|Se ha eliminado la colección de la papelera de reciclaje|CollectionHardDeleted|El propietario del formulario ha eliminado de forma permanente una colección de la papelera de reciclaje.|
+|Se ha movido la colección a la papelera de reciclaje|CollectionSoftDeleted|El propietario del formulario ha movido una colección a la papelera de reciclaje.|
+|Se ha cambiado el nombre de una colección|CollectionRenamed|El propietario del formulario ha cambiado el nombre de una colección.|
+|Se ha movido un formulario a la colección|MovedFormIntoCollection|El propietario del formulario ha movido un formulario a una colección.|
+|Se ha movido un formulario fuera de la colección|MovedFormOutofCollection|El propietario del formulario ha movido un formulario fuera de una colección.|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Actividades de Forms que realizan los coautores y respondedores anónimos
