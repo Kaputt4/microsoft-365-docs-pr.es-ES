@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 8dae7d3ce3c9473f99d8060dd35c3c6c4af1ea39
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 2464b8443db2f12e524a33ee56ce90909fea1fc2
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962475"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221153"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -36,7 +36,7 @@ ms.locfileid: "60962475"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146806)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 En las soluciones de protección de puntos de conexión, un falso positivo es una entidad, como un archivo o un proceso, que se detectó e identificó como malintencionada, aunque la entidad no sea realmente una amenaza. Un falso negativo es una entidad que no se detectó como una amenaza, aunque en realidad sea malintencionada. Los falsos positivos/negativos pueden producirse con cualquier solución de protección contra amenazas, incluido [Microsoft Defender para endpoint](microsoft-defender-endpoint.md).
 
@@ -210,7 +210,7 @@ Los procedimientos de esta sección describen cómo definir exclusiones e indica
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Exclusiones para Antivirus de Microsoft Defender
 
-En general, no es necesario definir exclusiones para Antivirus de Microsoft Defender. Asegúrese de definir las exclusiones con moderación y de que solo incluya los archivos, carpetas, procesos y archivos abiertos por procesos que resulten en falsos positivos. Además, asegúrate de revisar las exclusiones definidas con regularidad. Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para definir o editar las exclusiones de antivirus; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-atp-post-migration.md)).
+En general, no es necesario definir exclusiones para Antivirus de Microsoft Defender. Asegúrese de definir las exclusiones con moderación y de que solo incluya los archivos, carpetas, procesos y archivos abiertos por procesos que resulten en falsos positivos. Además, asegúrate de revisar las exclusiones definidas con regularidad. Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para definir o editar las exclusiones de antivirus; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-mde-post-migration.md)).
 
 > [!TIP]
 > ¿Necesita ayuda con las exclusiones de antivirus? Consulte [Configure and validate exclusions for Antivirus de Microsoft Defender scans](configure-exclusions-microsoft-defender-antivirus.md).
@@ -354,7 +354,7 @@ Compruebe si el nivel de protección entregado en la nube Antivirus de Microsoft
 > [!TIP]
 > Para obtener más información sobre cómo configurar la protección entregada en la nube, consulte Especificar el nivel de [protección entregado en la nube.](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 
-Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección entregada en la nube; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-atp-post-migration.md)).
+Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección entregada en la nube; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-mde-post-migration.md)).
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Use Microsoft Endpoint Manager para revisar y editar la configuración de protección entregada en la nube (para directivas existentes)
 
@@ -398,7 +398,7 @@ Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software
 
 Dependiendo de las aplicaciones que la organización esté usando, es posible que esté obteniendo falsos positivos como resultado de la configuración de la protección de PUA. Si es necesario, considere la posibilidad de ejecutar la protección de PUA en el modo de auditoría durante un tiempo o aplicar la protección pua a un subconjunto de dispositivos de la organización. La protección pua se puede configurar para el Microsoft Edge y para Antivirus de Microsoft Defender.
 
-Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección de PUA; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-atp-post-migration.md)).
+Se recomienda usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para editar o establecer la configuración de protección de PUA; sin embargo, puede usar otros métodos, como la directiva de grupo [(vea](/azure/active-directory-domain-services/manage-group-policy) Manage Microsoft Defender [for Endpoint](manage-mde-post-migration.md)).
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Usar Microsoft Endpoint Manager para editar la protección de PUA (para perfiles de configuración existentes)
 
@@ -458,6 +458,6 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 ## <a name="see-also"></a>Consulte también
 
-[Administrar Microsoft Defender para el punto de conexión](manage-atp-post-migration.md)
+[Administrar Microsoft Defender para el punto de conexión](manage-mde-post-migration.md)
 
 [Información general sobre Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)

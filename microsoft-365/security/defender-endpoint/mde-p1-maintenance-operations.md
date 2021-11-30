@@ -14,14 +14,17 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c95a674c59e52c7bfe699b670a69fec468361d54
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 1ae0636f103c830866c0b7bcd1af488f2fc4e070
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128537"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220877"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Administrar Microsoft Defender para el plan de extremo 1
+
+**Se aplica a**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
 > Si tiene Microsoft 365 E3 O A3 pero no Microsoft 365 E5 o A5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
@@ -45,7 +48,7 @@ Para administrar la inteligencia de seguridad y las actualizaciones de productos
 
 Defender for Endpoint ofrece mucha flexibilidad y opciones de configuración. Puede ajustar y ajustar la configuración para que se adapte a las necesidades de su organización. Por ejemplo, puede usar Microsoft Endpoint Manager, directiva de grupo y otros métodos para administrar la configuración de seguridad del extremo. 
 
-Para obtener más información, vea [Manage Defender for Endpoint](manage-atp-post-migration.md).
+Para obtener más información, vea [Manage Defender for Endpoint](manage-mde-post-migration.md).
 
 ## <a name="address-false-positivesnegatives"></a>Dirección de falsos positivos/negativos
 
@@ -55,6 +58,6 @@ Un falso positivo es un artefacto, como un archivo o un proceso, que se detectó
 
 Si está viendo falsos positivos/negativos en Defender para endpoint, consulte [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Vea las novedades de Microsoft Defender para endpoint](whats-new-in-microsoft-defender-atp.md)

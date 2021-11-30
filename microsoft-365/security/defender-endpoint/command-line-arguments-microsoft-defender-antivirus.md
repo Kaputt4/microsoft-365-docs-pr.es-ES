@@ -15,18 +15,18 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0d9a2d84febb15dd626fb603faecc2bb0ba74af1
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: f7ae9c9d0986463b6d6368edd0dac050600e3373
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171041"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220889"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurar y administrar Antivirus de Microsoft Defender con la mpcmdrun.exe de línea de comandos
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Puede realizar varias funciones en Antivirus de Microsoft Defender con la herramienta de línea de comandos dedicada **mpcmdrun.exe**. Esta utilidad es útil cuando se desea automatizar Antivirus de Microsoft Defender tareas. Puede encontrar la utilidad en `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Ejecutarlo desde un símbolo del sistema.
 
@@ -73,7 +73,7 @@ En la tabla siguiente se enumeran los errores comunes que pueden producirse al u
 
 |Mensaje de error|Posible motivo|
 |---|---|
-|**Error en ValidateMapsConnection (800106BA)** **o 0x800106BA**|El Antivirus de Microsoft Defender está deshabilitado. Habilite el servicio e inténtelo de nuevo. Si necesita ayuda para volver a habilitar Antivirus de Microsoft Defender, vea [Reinstall/enable Antivirus de Microsoft Defender on your endpoints](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **SUGERENCIA:** En Windows 10 1909 o versiones anteriores y Windows Server 2019 o versiones anteriores, el servicio se llamaba anteriormente *Antivirus de Windows Defender*.|
+|**Error en ValidateMapsConnection (800106BA)** **o 0x800106BA**|El Antivirus de Microsoft Defender está deshabilitado. Habilite el servicio e inténtelo de nuevo. Si necesita ayuda para volver a habilitar Antivirus de Microsoft Defender, vea [Reinstall/enable Antivirus de Microsoft Defender on your endpoints](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **SUGERENCIA:** En Windows 10 1909 o versiones anteriores y Windows Server 2019 o versiones anteriores, el servicio se llamaba anteriormente *Antivirus de Windows Defender*.|
 |**0x80070667**|Está ejecutando el comando desde un equipo que Windows 10 versión 1607 o anterior, o Windows Server 2016 `-ValidateMapsConnection` o posterior. Ejecute el comando desde un equipo que Windows 10 versión 1703 o posterior, o Windows Server 2019 o posterior.|
 |**MpCmdRun no se reconoce como un comando interno o externo, un programa operable o un archivo por lotes.**|La herramienta debe ejecutarse desde cualquiera o (donde podría diferir ya que las actualizaciones de la plataforma `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` son `2012.4-0` mensuales excepto marzo)|
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=80070005 httpcode=450)**|El comando se intentó con privilegios insuficientes. Use el símbolo del sistema (cmd.exe) como administrador.|
@@ -83,7 +83,7 @@ En la tabla siguiente se enumeran los errores comunes que pueden producirse al u
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=800722F0D**|El firewall bloquea la conexión o realiza una inspección SSL.|
 |**ValidateMapsConnection no pudo establecer una conexión a MAPS (hr=80072EE7 httpcode=451)**|El firewall bloquea la conexión o realiza una inspección SSL.|
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Configurar las funciones del Antivirus de Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
 - [Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)

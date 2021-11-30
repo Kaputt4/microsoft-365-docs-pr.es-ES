@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-ransomware
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b8941953d1a2d6eeae30458dfd003979c32f2f86
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 79dee9b6750e21d9b2482d4a0482d87d7fc7434b
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704470"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220937"
 ---
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. Aunque [Microsoft 365 Defender](microsoft-365-defender.md) proporciona muchas funcionalidades que detectan y bloquean las actividades de intrusión asociadas y ransomware, realizar comprobaciones proactivas de signos de peligro puede ayudar a mantener la red protegida.
 
@@ -236,7 +236,7 @@ La consulta consolidada devuelve los siguientes resultados:
 - **TotalEvidenceCount:** número de signos observados
 - **UniqueEvidenceCount:** número de tipos de signos observados
 
-![Imagen de los resultados de la consulta para la actividad ransomware.](../../media/advanced-hunting-ransomware-query.png)
+:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="Un ejemplo de una consulta consolidada para una actividad ransomware en el portal Microsoft 365 Defender web":::
 
 *Resultados de consulta que muestran dispositivos afectados y recuentos de diversos signos de actividad ransomware*
 
@@ -281,21 +281,21 @@ Microsoft Azure:
 - [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Ayudar a proteger contra ransomware con Microsoft Azure copia de seguridad](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
 - [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Detección de ataques de varias fases en Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Detección de fusión para ransomware en Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Detección avanzada de ataques de varias fases en Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
+- [Detección de difusión para ransomware en Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps:
 
--  [Crear directivas de detección de anomalías en Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Crear directivas de detección de anomalías en Defender para aplicaciones en la nube](/cloud-app-security/anomaly-detection-policy)
 
 Entradas de blog del equipo de Seguridad de Microsoft:
 
 - [3 pasos para evitar y recuperarse del ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [Una guía para combatir el ransomware operado por humanos: Parte 1 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+- [Una guía para combatir el ransomware operado por personas: Parte 1 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
-  Pasos clave sobre cómo el equipo de detección y respuesta (DARDO) de Microsoft lleva a cabo investigaciones de incidentes de ransomware.
+  Pasos clave sobre cómo el equipo de detección y respuesta de Microsoft (DART) lleva a cabo investigaciones de incidentes de ransomware.
 
-- [Una guía para combatir ransomware operado por humanos: Parte 2 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+- [Una guía para combatir el ransomware operado por personas: Parte 2 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
   Recomendaciones y procedimientos recomendados.
 

@@ -16,19 +16,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0728c633b87b18d1bc4cec04d1ea6aeacab764d5
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: a411de512d5e07eb58f5a93163882836af823906
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144957"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221261"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -105,7 +105,7 @@ Una vez completado el proceso de configuración del laboratorio, puede agregar d
 
 ## <a name="add-devices"></a>Agregar dispositivos
 
-Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puede agregar Windows 10, Windows 11, Windows Server 2019 o Windows server 2022.
+Cuando agregas un dispositivo a tu entorno, Defender para endpoint configura un dispositivo bien configurado con detalles de conexión. Puede agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu).
 
 El dispositivo se configurará con la versión más actualizada del sistema operativo y Office 2019 Standard, así como con otras aplicaciones como Java, Python y SysIntenals.
 
@@ -134,7 +134,7 @@ La configuración de investigación automatizada dependerá de la configuración
 
 1. En el panel, selecciona **Agregar dispositivo**.
 
-2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10, Windows 11, Windows Server 2019 o Windows Server 2022.
+2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu).
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="configuración del laboratorio con opciones de dispositivo.":::
 

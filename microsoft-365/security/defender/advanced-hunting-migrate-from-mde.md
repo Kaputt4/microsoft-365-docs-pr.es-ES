@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 93696fb5ca883a849a8f7bcb534cb57469f20815
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3cb59c3c4a98a492dcda11e34e01a18afc8c5555
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174452"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221201"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint
 
@@ -39,7 +39,7 @@ Mueva los flujos de trabajo de búsqueda avanzados de Microsoft Defender para en
 
 - Microsoft Defender para punto de conexión
 - Microsoft Defender para Office 365
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
 >[!NOTE]
@@ -53,7 +53,7 @@ El [Microsoft 365 Defender de búsqueda avanzada proporciona](advanced-hunting-s
 | Nombre de tabla | Descripción |
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | Archivos, direcciones IP, direcciones URL, usuarios o dispositivos asociados con alertas |
-| [AlertInfo](advanced-hunting-alertinfo-table.md) | Alertas de Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identidad, incluida la información de gravedad y las categorías de amenazas  |
+| [AlertInfo](advanced-hunting-alertinfo-table.md) | Alertas de Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para aplicaciones en la nube y Microsoft Defender para Identidad, incluida información de gravedad y categorías de amenazas  |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | Información sobre los archivos adjuntos a los correos electrónicos |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | Eventos de correo electrónico de Microsoft 365, incluidos los eventos de bloqueo y entrega de correo electrónico |
 | [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Eventos de seguridad que se producen después de la entrega, una vez que Microsoft 365 ha entregado ya los correos electrónicos al buzón del destinatario |
@@ -132,7 +132,7 @@ Alertas generadas por la regla migrada:
 
 Si edita una regla de esta manera, se le pedirá confirmación antes de aplicar dichos cambios.
 
-Las nuevas alertas generadas por reglas de detección personalizadas en Microsoft 365 Defender portal se muestran en una página de alerta que proporciona la siguiente información:
+Las nuevas alertas generadas por reglas de detección personalizadas Microsoft 365 Defender se muestran en una página de alerta que proporciona la siguiente información:
 
 - Título y descripción de la alerta 
 - Activos afectados
@@ -141,7 +141,7 @@ Las nuevas alertas generadas por reglas de detección personalizadas en Microsof
 - Información sobre la regla de detección personalizada 
  
 > [!div class="mx-imgBorder"]
-> ![Imagen de la nueva página de alerta.](../../media/new-alert-page.png)
+> :::image type="content" source="../../media/new-alert-page.png" alt-text="Un ejemplo de una página de alerta que muestra nuevas alertas generadas por reglas de detección personalizadas en Microsoft 365 Defender portal" lightbox="../../media/new-alert-page.png":::
 
 ## <a name="write-queries-without-devicealertevents"></a>Escribir consultas sin DeviceAlertEvents
 

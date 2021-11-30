@@ -4,12 +4,12 @@ description: archivo include
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 3a71ae9b77e49ff88c12383b00faf17d5a52b10d
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
+ms.openlocfilehash: 2ae8fa9e8cb3c28cf20ab9c57183b43d067b16b6
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61155429"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61222286"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -19,7 +19,6 @@ Revise las siguientes secciones para ver los requisitos de security management f
 
 Cuando un dispositivo se incorpora a Microsoft Defender para endpoint:
 
-- El dispositivo se busca una presencia de Endpoint Manager existente, Ya sea Configuration Manager o Intune
 - Los dispositivos sin Endpoint Manager presencia habilitan la característica administración de seguridad
 - Se crea una confianza con Azure Active Directory si aún no existe una
 - Azure Active Directory confianza se usa para comunicarse con Endpoint Manager (Intune) y recuperar directivas
@@ -113,7 +112,10 @@ Microsoft Defender para endpoint admite varias opciones para incorporar disposit
 > [!IMPORTANT]
 > Después de que un dispositivo se incorpore con Microsoft Defender para Endpoint, debe y etiquetarse con **MDE-Management** para poder inscribirse en Administración de seguridad para Microsoft Defender para Endpoint. Para obtener más información sobre el etiquetado de dispositivos en MDE, consulta [*Crear y administrar etiquetas de dispositivo.*](/microsoft-365/security/defender-endpoint/machine-tag)
 
-Los dispositivos que administras con Intune o Configuration Manager no son compatibles con este escenario.
+
+## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Coexistencia con Microsoft Endpoint Configuration Manager
+Al usar Configuration Manager, la mejor ruta de acceso para la administración de la directiva de seguridad es usar el inquilino [de Configuration Manager adjunta](/mem/configmgr/tenant-attach/endpoint-security-get-started). En algunos entornos, es posible que desee usar administración de seguridad para Microsoft Defender. Al usar Administración de seguridad para Microsoft Defender con Configuration Manager, la directiva de seguridad de puntos de conexión debe aislarse en un solo plano de control. Controlar la directiva a través de ambos canales creará la oportunidad de conflictos y resultados no deseados.
+
 
 ## <a name="create-azure-ad-groups"></a>Crear Azure AD grupos
 

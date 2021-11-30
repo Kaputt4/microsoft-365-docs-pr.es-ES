@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a5d64106d801dfe554fe01290011e2d3e2b7767e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: d797fb8843bdf5d29e9af43cac152461eb379e5f
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786090"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221405"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Prácticas recomendadas para la consulta de búsqueda avanzada
 
@@ -31,7 +31,7 @@ ms.locfileid: "60786090"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Aplique estas recomendaciones para obtener resultados más rápido y evitar tiempos de espera mientras ejecuta consultas complejas. Para obtener más información sobre cómo mejorar el rendimiento de las consultas, vea [procedimientos recomendados de consulta de Kusto](/azure/kusto/query/best-practices).
 
@@ -40,7 +40,7 @@ Según su tamaño, cada inquilino tiene acceso a una cantidad establecida de rec
 
 Después de ejecutar la consulta, puede ver el tiempo de ejecución y su uso de recursos (Low, Medium, High). High indica que la consulta tardó más recursos en ejecutarse y podría mejorarse para devolver resultados de forma más eficiente.
 
-![Imagen que muestra un indicador de recursos bajo](../../media/resource-usage.png)
+:::image type="content" source="../../media/resource-usage.png" alt-text="Los detalles de la consulta en la pestaña **Resultados** del portal Microsoft 365 Defender búsqueda" lightbox="../../media/resource-usage.png":::
 
 Los clientes que ejecutan varias consultas con regularidad deben realizar un seguimiento del consumo y aplicar las instrucciones de optimización de este artículo para minimizar las interrupciones resultantes de la superación de cuotas o parámetros de uso.
 

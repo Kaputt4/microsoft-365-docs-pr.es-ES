@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6a573b68d03e7446fc63f4fbc34bee3d46da9c49
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: e14f2d5e35585cf5b0edfe433084fa7c8a1d5280
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786654"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221069"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Búsqueda rápida de información de entidad o evento con go hunt
 
@@ -38,20 +38,20 @@ ms.locfileid: "60786654"
 
 Con la *acción ir a la* búsqueda, puede investigar rápidamente eventos y varios tipos de entidad mediante potentes capacidades de búsqueda avanzada basadas en consultas. [](advanced-hunting-overview.md) Esta acción ejecuta automáticamente una consulta de búsqueda avanzada para buscar información relevante sobre el evento o entidad seleccionado.
 
-La *acción ir a la* búsqueda está disponible en varias secciones del centro de seguridad siempre que se muestren los detalles de evento o entidad. Por ejemplo, puede usar *ir a buscar* desde las secciones siguientes:
+La *acción ir a la* búsqueda está disponible en varias secciones de Defender para la nube siempre que se muestren los detalles de evento o entidad. Por ejemplo, puede usar *ir a buscar* desde las secciones siguientes:
 
 - En la [página de incidentes,](investigate-incidents.md#summary)puede revisar detalles sobre usuarios, dispositivos y muchas otras entidades asociadas con un incidente. A medida que selecciona una entidad, obtiene información adicional, así como diversas acciones que podría realizar en esa entidad. En el ejemplo siguiente, se selecciona un buzón, que muestra detalles sobre el buzón, así como la opción de buscar más información sobre el buzón.
 
-    ![Imagen que muestra los detalles del buzón con la opción ir a la búsqueda.](../../media/go-hunt-1-incident.png)
+    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="La página **Buzones** con la opción **Ir a buscar** en el portal Microsoft 365 Defender búsqueda" lightbox="../../media/go-hunt-1-incident.png":::
 
-- En la página de incidentes, también puede obtener acceso a una lista de entidades en la pestaña evidencia. Seleccionar una de estas entidades proporciona una opción para buscar rápidamente información sobre esa entidad.
+- En la página de incidentes, también puede obtener acceso a una lista de entidades en la **pestaña** Evidencia. Seleccionar una de estas entidades proporciona una opción para buscar rápidamente información sobre esa entidad.
 
-    ![Imagen que muestra el archivo seleccionado con la opción ir a buscar en la pestaña Evidencia.](../../media/go-hunt-2-entity.png)
+    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="La opción Ir a buscar para un elemento de evidencia en la página **Incidente** en Microsoft 365 Defender portal" lightbox="../../media/go-hunt-2-entity.png":::
 
 
 - Al ver la escala de tiempo de un dispositivo, puedes seleccionar un evento en la escala de tiempo para ver información adicional sobre ese evento. Una vez seleccionado un evento, se obtiene la opción de buscar otros eventos relevantes en la búsqueda avanzada.
 
-    ![Imagen que muestra los detalles del evento con la opción ir a la búsqueda.](../../media/go-hunt-3-event.png)
+    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="La opción **Buscar eventos relacionados** en la página de un evento en la pestaña **Escalas de tiempo** en Microsoft 365 Defender portal" lightbox="../../media/go-hunt-3-event.png":::
 
 Al seleccionar **Ir a la búsqueda** o a **La** búsqueda de eventos relacionados, se pasan distintas consultas, según si ha seleccionado una entidad o un evento.
 

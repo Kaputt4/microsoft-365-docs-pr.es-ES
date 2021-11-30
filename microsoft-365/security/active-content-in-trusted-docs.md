@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Los administradores pueden aprender a crear directivas para bloquear el contenido activo en Office documentos
-ms.openlocfilehash: 6781cc5c36749f91fdfc9dc4c421d97feace9f9d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4bf71e6032efc398e48c7679dee3fb42760d52cc
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178484"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221237"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Administrar contenido activo en Office documentos
 
@@ -35,7 +35,7 @@ Anteriormente, cuando los usuarios identificaban documentos como documentos de c
 
 La lógica actualizada del Centro de confianza se describe en el siguiente diagrama:
 
-![Gráfico de flujo que muestra el comportamiento del Centro de confianza para el contenido activo en Office documentos.](../media/office-trust-center-flow.png)
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="Ejemplo de un diagrama de flujo que describe la lógica del centro de confianza en Microsoft 365 Defender portal" lightbox="../media/office-trust-center-flow.png":::
 
 1. Un usuario abre un Office que contiene contenido activo.
 
@@ -70,7 +70,7 @@ Debido a este comportamiento, los usuarios deben confiar claramente en los docum
 
 Si un administrador bloquea el contenido activo mediante una directiva o si los usuarios establecen una configuración del Centro de confianza que bloquea el contenido activo, el contenido activo permanecerá bloqueado.
 
-Para más información, consulte los siguientes artículos:
+Para obtener más información, consulte los siguientes artículos:
 
 - [Documentos confiables](https://support.microsoft.com/topic/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53)
 - [Agregar, quitar o cambiar una ubicación de confianza](https://support.microsoft.com/topic/add-remove-or-change-a-trusted-location-7ee1cdc2-483e-4cbb-bcb3-4e7c67147fb4)
@@ -80,7 +80,7 @@ Para más información, consulte los siguientes artículos:
 
 Los administradores tienen muchas formas de configurar Office en una organización. Por ejemplo:
 
-- **Office de** directivas en la nube: configure una directiva basada en usuario que se aplique a un usuario en cualquier dispositivo que acceda a archivos de Office aplicaciones con su cuenta de Azure AD. Vea los pasos para [crear una configuración Office directiva de nube en](/DeployOffice/overview-office-cloud-policy-service) el Office Cloud Policy [Service](https://config.office.com/officeSettings/officePolicies).
+- **Office de** directivas en la nube: configure una directiva basada en usuario que se aplique a un usuario en cualquier dispositivo que acceda a archivos de Office aplicaciones con su cuenta Azure AD usuario. Vea los pasos para [crear una configuración Office directiva de nube en](/DeployOffice/overview-office-cloud-policy-service) el Office Cloud Policy [Service](https://config.office.com/officeSettings/officePolicies).
 - Office directivas en **Intune:** use el catálogo de Intune Configuración o las plantillas administrativas para implementar directivas HKCU en equipos Windows 10: en el Centro de administración de [MEM](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) en **Perfiles** de configuración de \> **dispositivos**.
   - ***Plantillas administrativas:*** vea las instrucciones para usar Windows 10 plantillas administrativas para configurar [plantillas administrativas](/mem/intune/configuration/administrative-templates-windows).
   - ***Configuración (versión preliminar):*** vea las instrucciones para usar el [Configuración (versión preliminar).](/mem/intune/configuration/settings-catalog)
@@ -107,7 +107,7 @@ Las tablas de las secciones siguientes describen la configuración que controla 
 ****
 |Categoría|Aplicación|Nombre de la directiva|Línea base de seguridad<br>configuración (recomendado)|Configuración con solicitud de usuario<br>y reemplazar disponible?|
 |---|---|---|---|---|
-|ActiveX|Office|ActiveX Inicialización de control|**6**|**Sí** para los siguientes valores: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
+|ActiveX|Office|ActiveX control de inicialización|**6**|**Sí** para los siguientes valores: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
 |ActiveX|Office|Permitir formularios activos x uno desactivados|**Cargar sólo controles de Outlook**|No|
 |ActiveX|Office|Comprobar objetos ActiveX|No es una configuración de línea base de seguridad.|No|
 |ActiveX|Office|Deshabilitar todo ActiveX|No es una configuración de línea base de seguridad.|**Sí** para los siguientes valores: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
@@ -141,10 +141,10 @@ Las tablas de las secciones siguientes describen la configuración que controla 
 |Macros|Office|Deshabilitar comprobaciones de seguridad adicionales en las referencias de biblioteca VBA que pueden hacer referencia a ubicaciones no seguras en el equipo local|**Disabled**|No|
 |Macros|Office|Ámbito de examen de tiempo de ejecución de macros|**Habilitar para todos los documentos**|No|
 |Macros|Office|Solo confía en macros de VBA que usan firmas V3|No es una configuración de línea base de seguridad.|No|
-|Macros|Outlook|Outlook Modo de seguridad|**Usar Outlook de grupo de seguridad**|Necesario para habilitar todas las Outlook GPO. <p> Se menciona como dependencia (esta directiva no bloquea el contenido activo en sí).|
+|Macros|Outlook|Outlook de seguridad|**Usar Outlook de grupo de seguridad**|Necesario para habilitar todas las Outlook GPO. <p> Se menciona como dependencia (esta directiva no bloquea el contenido activo en sí).|
 |Macros|Outlook|Configuración de seguridad para macros|**Advertir para firmar, deshabilitar sin firmar**|**Sí** para los siguientes valores: <ul><li>**Advertir siempre**</li><li>**Advertir para firmar, deshabilitar sin firmar**</li><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Macros|PowerPoint|Examinar macros cifradas en PowerPoint presentaciones de Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
-|Macros|Publisher|Publisher Nivel de seguridad de automatización|**Mediante interfaz de usuario (preguntado)**|No|
+|Macros|Publisher|Publisher de seguridad de automatización|**Mediante interfaz de usuario (preguntado)**|No|
 |Macros|Word|Examinar macros cifradas en documentos de Word Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
 |
 

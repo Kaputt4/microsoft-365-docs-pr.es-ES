@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cb72c7affc98ed1ac5e74ecddabf7edd13c6a01c
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 0912e496fdca1f716fa7476a4a74e46bbb26023f
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786123"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221345"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -165,13 +165,13 @@ Puede usar el editor de consultas para experimentar con varias consultas. Para u
 - Separe cada consulta con una línea vacía.
 - Coloque el cursor en cualquier parte de una consulta para seleccionar esa consulta antes de ejecutarla. Solo se ejecutará la consulta seleccionada. Para ejecutar otra consulta, mueva el cursor en consecuencia y seleccione **Ejecutar consulta**.
 
-![Imagen del editor de consultas con varias consultas.](../../media/learn-work-with-multiple.png)
+:::image type="content" source="../../media/learn-work-with-multiple.png" alt-text="Un ejemplo de ejecución de varias consultas en la página **Nueva consulta** en el portal Microsoft 365 Defender consultas" lightbox="../../media/learn-work-with-multiple.png":::
 
 ## <a name="use-sample-queries"></a>Usar las consultas de ejemplo
 
 La sección **Comenzar** ofrece algunas consultas sencillas con operadores de uso habitual. Pruebe a ejecutar estas consultas y realizar pequeñas modificaciones en ellas.
 
-![Imagen de la ventana de búsqueda avanzada.](../../media/get-started-section.png)
+:::image type="content" source="../../media/get-started-section.png" alt-text="La sección **Introducción** de la página **Búsqueda avanzada** en el portal Microsoft 365 Defender búsqueda avanzada" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
 >Además de los ejemplos de consultas básicas, también puede acceder a [consultas compartidas](advanced-hunting-shared-queries.md) done encontrará escenarios específicos de búsqueda de amenazas. Explore las consultas compartidas en el lado izquierdo de la página o el [GitHub de consultas](https://aka.ms/hunting-queries).

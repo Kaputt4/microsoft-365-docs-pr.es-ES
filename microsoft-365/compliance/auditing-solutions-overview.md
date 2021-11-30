@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 726aa84157b82b3f4a5ea6ddfe1fed9734b3991b
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: ff7a456317827fc629d4e704037ad7586bad9f0d
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60363983"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221369"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
 
@@ -123,7 +123,6 @@ En las secciones siguientes se identifican los requisitos de licencia para audit
 - Microsoft 365 Frontline F5 Compliance o el complemento F5 Security & Compliance
 - Suscripción a Office 365 Enterprise E5
 - Suscripción a Office 365 Educación A5
-- Suscripción a Office 365 Enterprise E3 y complemento de Cumplimiento avanzado de Office 365 (ya no está disponible para las suscripciones nuevas)
 
 ## <a name="set-up-microsoft-365-auditing-solutions"></a>Configurar soluciones de auditoría en Microsoft 365
 

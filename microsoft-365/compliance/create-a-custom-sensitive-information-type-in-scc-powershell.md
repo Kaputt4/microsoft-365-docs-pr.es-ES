@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: d626e805c0e680dc64236066c962ce40229fd3bd
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 7ac39c068060fec945d04137688e6d9bb4b81655
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804982"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61220997"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -485,6 +485,10 @@ Para cargar un paquete de reglas, siga este procedimiento:
 ## <a name="potential-validation-issues-to-be-aware-of"></a>Posibles problemas de validación
 
 Al cargar un archivo XML de paquete de reglas, el sistema valida el código XML y comprueba si hay patrones incorrectos conocidos y problemas de rendimiento obvios. Estos son algunos de los problemas conocidos (la validación comprueba las expresiones regulares):
+  
+- Las aserciones lookbehind o lookahead en la expresión regular deben ser de longitud fija solamente. Las aserciones de longitud variable producirán errores.
+    
+  Por ejemplo, "(?<=^|\s| )" no pasará la validación porque la primera opción de esta es '^' que es de longitud cero mientras que las opciones de _tow ('\s'_ y ' ') son de longitud uno. Una forma alternativa de tener esta expresión regular es "(?:^| (?<=\s|_)"
   
 - No puede empezar ni terminar con el alternador "|", que coincide con todo, ya que se considera una coincidencia vacía.
     

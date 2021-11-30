@@ -21,19 +21,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a81fa60b1b66c8eb735da72e1e2108df804b2ef1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1a986bf129361954953e3b29e5906c71a0f482ed
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206810"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163127"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -79,7 +79,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
     - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
+  - **Windows Server 2019: solo se aplica a la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
@@ -109,7 +109,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-|Parámetro|Tipo|Descripción|
+|Parámetro|Tipo|Description|
 |---|---|---|
 |Comentario|Cadena|Comentario para asociarlo a la acción.|
 |Comandos|Matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|

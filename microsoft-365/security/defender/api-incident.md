@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c316bd7c429165869b235871b2366861a22c6056
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc2e7f92a48cf94c0092dbcf7da051642949180c
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198102"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221393"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender API de incidentes y el tipo de recurso incidents
 
@@ -50,7 +50,7 @@ Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por núme
 
 La API de incidentes requiere distintos tipos de permisos para cada uno de sus métodos. Para obtener más información acerca de los permisos necesarios, consulte el artículo del método respectivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Método | Tipo de valor devuelto | Descripción
 -|-|-
@@ -73,7 +73,7 @@ createdTime | DateTimeOffset | La fecha y hora (en UTC) que se creó el incident
 lastUpdateTime | DateTimeOffset | La fecha y hora (en UTC) se actualizó por última vez el incidente.
 assignedTo | string | Propietario del incidente.
 severity | Enum | Gravedad del incidente. Los valores posibles son: ```UnSpecified``` , , , y ```Informational``` ```Low``` ```Medium``` ```High``` .
-status | Enum | Especifica el estado actual del incidente. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
+status | Enum | Especifica el estado actual del incidente. Los valores posibles son ```Active```, ```InProgress```, ```Resolved``` y ```Redirected```
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
 determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | lista de cadenas | Lista de etiquetas de incidentes.
@@ -82,7 +82,7 @@ alertas | Lista de alertas | Lista de alertas relacionadas. Vea ejemplos en [Enu
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Microsoft 365 Defender Introducción a las API](api-overview.md)
+- [Microsoft 365 Defender introducción a las API](api-overview.md)
 - [Información general sobre incidentes](incidents-overview.md)
 - [ENUMERAR LA API de incidentes](api-list-incidents.md)
 - [ACTUALIZAR API de incidentes](api-update-incidents.md)

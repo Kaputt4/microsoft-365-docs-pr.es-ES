@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4bc9e21a586797d300b23126fc404c47ff11f08e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 07eb8847b21d9c6444cbd55d2e84e17282fb4c52
+ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218351"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61221429"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -34,14 +34,12 @@ ms.locfileid: "61218351"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-El sensor Defender for Endpoint requiere que Microsoft Windows HTTP (WinHTTP) informe de los datos del sensor y se comunique con el servicio Defender for Endpoint.
-
-El sensor de Defender for Endpoint incrustado se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa Microsoft Windows HTTP Services (WinHTTP) para habilitar la comunicación con el servicio en la nube de Defender for Endpoint.
+El sensor Defender for Endpoint requiere que Microsoft Windows HTTP (WinHTTP) informe de los datos del sensor y se comunique con el servicio Defender for Endpoint. El sensor de Defender for Endpoint incrustado se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa Microsoft Windows HTTP Services (WinHTTP) para habilitar la comunicación con el servicio en la nube de Defender for Endpoint.
 
 > [!TIP]
 > Para las organizaciones que usan servidores proxy de reenvío como puerta de enlace a Internet, puede usar la protección de red para investigar los eventos de conexión que se producen detrás [de servidores proxy de reenvío.](investigate-behind-proxy.md)
 
-La configuración de WinHTTP es independiente de la configuración de proxy de exploración de Windows Internet (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
+La configuración de WinHTTP es independiente de la configuración de proxy de exploración de Windows Internet (WinINet) (vea [WinINet frente a WinHTTP)](/windows/win32/wininet/wininet-vs-winhttp)y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
 
 - Métodos de detección automática:
 
@@ -58,6 +56,9 @@ La configuración de WinHTTP es independiente de la configuración de proxy de e
   
   - WinHTTP configurado mediante el comando netsh: adecuado solo para escritorios en una topología estable (por ejemplo: un escritorio en una red corporativa detrás del mismo proxy)
 
+> [!NOTE]
+> Los servidores proxy EDR y antivirus de Defender se pueden establecer de forma independiente.  En las secciones siguientes, tenga en cuenta estas distinciones.
+
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurar manualmente el servidor proxy mediante un proxy estático basado en el registro
 
 Configure un proxy estático basado en el Registro para el sensor Defender for Endpoint detection and response (EDR) para informar de datos de diagnóstico y comunicarse con Defender for Endpoint services si un equipo no tiene permiso para conectarse a Internet.
@@ -73,7 +74,7 @@ Configure un proxy estático basado en el Registro para el sensor Defender for E
 >
 > Estas actualizaciones mejoran la conectividad y la confiabilidad del canal CnC (comando y control).
 
-El proxy estático también se puede configurar a través de la directiva de grupo (GP). La directiva de grupo se puede encontrar aquí:
+El proxy estático también se puede configurar a través de la directiva de grupo (GP), tanto la configuración de los valores de directiva de grupo deben establecerse para configurar el servidor proxy que se usará para EDR. La directiva de grupo se puede encontrar aquí:
 
 - **Plantillas administrativas > Windows componentes >** recopilación de datos y versiones preliminares > Configurar el uso de proxy autenticado para el servicio de telemetría y experiencia del usuario conectado.
 
@@ -129,6 +130,12 @@ Configure el proxy estático mediante la directiva de grupo que se encuentra aqu
 > - ProxyPacUrl 
 > - ProxyServer 
 
+> [!NOTE]
+> Para usar el proxy correctamente, configure estas tres opciones de proxy diferentes:
+>  - Microsoft Defender para endpoint (MDE)
+>  - AV (Antivirus)
+>  - Detección y respuesta de puntos de conexión (EDR)
+
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Configurar el servidor proxy manualmente mediante el comando netsh
 
 Use netsh para configurar un proxy estático en todo el sistema.
@@ -180,9 +187,12 @@ En el firewall, abra todas las direcciones URL donde la columna de geografía es
 >
 > Las direcciones URL que incluyen v20 en ellas solo son necesarias si Windows dispositivos que ejecutan la versión 1803 o posterior. Por ejemplo, es necesario para un dispositivo Windows que ejecute la versión 1803 o posterior y se incorpore a la región de datos `us-v20.events.data.microsoft.com` Storage ESTADOS UNIDOS.
 >
-> Si está usando Antivirus de Microsoft Defender en su entorno, vea [Configure network connections to the Antivirus de Microsoft Defender cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+> La hoja de cálculo anterior se relaciona con MDE EDR, si usa Antivirus de Microsoft Defender en su entorno, consulte [Configure network connections to the Antivirus de Microsoft Defender cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 Si un proxy o firewall bloquea el tráfico anónimo, ya que el sensor Defender for Endpoint se conecta desde el contexto del sistema, asegúrese de que el tráfico anónimo está permitido en las direcciones URL enumeradas anteriormente.
+
+> [!NOTE]
+> Microsoft no proporciona un servidor proxy. Estas direcciones URL son accesibles a través del servidor proxy que configure.
 
 ### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA): requisitos de proxy y firewall para versiones anteriores de Windows cliente o Windows server
 
