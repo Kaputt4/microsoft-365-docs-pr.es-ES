@@ -33,18 +33,16 @@
 #### [Incorporación con Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Guías de migración](migration-guides.md)
-### [Cambiar de una protección de puntos de conexión distinta de Microsoft a Defender para punto de conexión](switch-to-microsoft-defender-migration.md)
-#### [Fase 1: Preparación](switch-to-microsoft-defender-prepare.md)
-#### [Fase 2: Configuración](switch-to-microsoft-defender-setup.md)
-#### [Fase 3: Incorporación](switch-to-microsoft-defender-onboard.md)
-
-
-
-### [Administrar Defender para punto de conexión después de la migración](manage-atp-post-migration.md)
-#### [Usar Intune (recomendado)](manage-atp-post-migration-intune.md)
-#### [Usar el Administrador de configuración](manage-atp-post-migration-configuration-manager.md)
-#### [Usar la directiva de grupo](manage-atp-post-migration-group-policy-objects.md)
-#### [Usar PowerShell, WMI o MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+### [Información general sobre migración](switch-to-mde-overview.md)
+#### [Fase 1: Preparación](switch-to-mde-phase-1.md)
+#### [Fase 2: Configuración](switch-to-mde-phase-2.md)
+#### [Fase 3: Incorporación](switch-to-mde-phase-3.md)
+#### [Solución de problemas](switch-to-mde-troubleshooting.md)
+### [Administrar Defender para punto de conexión después de la migración](manage-mde-post-migration.md)
+#### [Usar Intune (recomendado)](manage-mde-post-migration-intune.md)
+#### [Usar el Administrador de configuración](manage-mde-post-migration-configuration-manager.md)
+#### [Usar la directiva de grupo](manage-mde-post-migration-group-policy-objects.md)
+#### [Usar PowerShell, WMI o MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Escenarios de migración de Server](server-migration.md)
 
 ## [Configurar e incorporar dispositivos]()
