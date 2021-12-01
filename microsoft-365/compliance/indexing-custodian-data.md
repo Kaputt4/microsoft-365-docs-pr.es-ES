@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cuando se agrega un custodio a un caso Advanced eDiscovery, cualquier contenido que se consideró parcialmente indizado se vuelve a procesar para que sea totalmente posible realizar búsquedas.
-ms.openlocfilehash: 9209732925c87277755c89381791154bf9dbe953
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: 1c43f55f399f69d58e05c073e688170d53480b42
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148907"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241169"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
 
-Cuando se agrega un custodio a un caso de Advanced eDiscovery, cualquier contenido que se consideró parcialmente indizado o que tenía errores de indización se vuelve a indizar para que sea totalmente posible realizar búsquedas.  Este proceso de reindexación se denomina *Indexación avanzada*. Hay muchas razones por las que el contenido está parcialmente indizado o tiene errores de indización. Esto incluye archivos de imagen o la presencia de imágenes en un archivo, tipos de archivo no admitidos o límites de indización de tamaño de archivo. Para SharePoint, la indización avanzada solo se ejecuta en elementos que se marcan como parcialmente indizados o que tienen errores de indización. En Exchange, los mensajes de correo electrónico que tienen datos adjuntos de imagen no se marcan como parcialmente indizados o con errores de indización. Esto significa que el proceso de indización avanzada no volverá a indizar esos archivos.
+Cuando se agrega un custodio a un caso Advanced eDiscovery, se vuelve a indizar cualquier contenido que se consideró parcialmente indizado o que tenía errores de indización. Este proceso de reindexación se denomina *Indexación avanzada*. Hay muchas razones por las que el contenido está parcialmente indizado o tiene errores de indización. Esto incluye archivos de imagen o la presencia de imágenes en un archivo, tipos de archivo no admitidos o límites de indización de tamaño de archivo. Para SharePoint, la indización avanzada solo se ejecuta en elementos que se marcan como parcialmente indizados o que tienen errores de indización. En Exchange, los mensajes de correo electrónico que tienen datos adjuntos de imagen no se marcan como parcialmente indizados o con errores de indización. Esto significa que el proceso de indización avanzada no volverá a indizar esos archivos.
 
 Para obtener más información sobre el procesamiento de soporte técnico y elementos parcialmente indizados, vea:
 

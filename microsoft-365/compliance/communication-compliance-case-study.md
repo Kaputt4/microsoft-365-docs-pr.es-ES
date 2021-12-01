@@ -22,12 +22,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3d0a905137ae1f2a55bddb0ae3d9691e68d69bac
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5d2fee0e8714e2cff51a2c763caa659bf226adff
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756258"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240989"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de contenido inadecuado para Microsoft Teams, Exchange y Yammer comunicaciones
 
@@ -62,10 +62,10 @@ El primer paso es confirmar que las licencias de Microsoft 365 contoso incluyen 
 - Microsoft 365 A3 suscripción + el complemento Microsoft 365 A5 cumplimiento
 - Microsoft 365 A3 suscripción + el Microsoft 365 A5 de administración de riesgos de Insider
 - Suscripción a Microsoft 365 G5 (versión de pago o de prueba)
-- Microsoft 365 Suscripción de G5 + el Microsoft 365 de cumplimiento de G5
-- Microsoft 365 Suscripción de G5 + el complemento Microsoft 365 G5 Insider Risk Management
-- Office 365 Enterprise Suscripción E5 (versión de pago o de prueba)
-- Office 365 Enterprise Suscripción E3 + Cumplimiento avanzado de Office 365 complemento (ya no está disponible para las nuevas suscripciones, vea la nota)
+- Microsoft 365 de G5 + el Microsoft 365 de cumplimiento de G5
+- Microsoft 365 de G5 + el complemento Microsoft 365 G5 Insider Risk Management
+- Office 365 Enterprise de E5 (versión de pago o de prueba)
+- Office 365 Enterprise suscripción a E3 + Cumplimiento avanzado de Office 365 complemento (ya no está disponible para nuevas suscripciones, vea la nota)
 
 También deben confirmar que los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener asignada una de las licencias anteriores.
 
@@ -119,7 +119,7 @@ La forma más rápida de obtener acceso a la solución es iniciar sesión direct
 
 ### <a name="starting-from-the-microsoft-365-compliance-center"></a>A partir del Centro de cumplimiento de Microsoft 365
 
-Otra forma fácil de que los administradores de TI de Contoso y los especialistas en cumplimiento accedan a la solución de cumplimiento de comunicaciones es iniciar sesión directamente en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>. Después de iniciar sesión, los usuarios simplemente necesitan seleccionar el control **Mostrar todo** para que se muestren todas las soluciones de cumplimiento y, después, seleccionar la solución **Cumplimiento de comunicaciones** para empezar.
+Otra forma fácil de que los administradores de TI de Contoso y los especialistas en cumplimiento accedan a la solución de cumplimiento de comunicaciones es iniciar sesión directamente en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). Después de iniciar sesión, los usuarios simplemente necesitan seleccionar el control **Mostrar todo** para que se muestren todas las soluciones de cumplimiento y, después, seleccionar la solución **Cumplimiento de comunicaciones** para empezar.
 
 ![Centro de cumplimiento.](../media/communication-compliance-case-center.png)
 
@@ -131,7 +131,7 @@ Los administradores de TI de Contoso y los especialistas en cumplimiento tambié
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>A partir del Centro de administración de Microsoft 365
 
-Para obtener acceso al cumplimiento de comunicaciones al comenzar desde el Centro de administración de Microsoft 365, los administradores de TI de Contoso y los especialistas en cumplimiento inician sesión en el Centro de administración de Microsoft 365 [ https://admin.microsoft.com) (](https://admin.microsoft.com) y vaya <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">a Centro de cumplimiento de Microsoft 365</a>.
+Para obtener acceso al cumplimiento de comunicaciones al comenzar desde la Centro de administración de Microsoft 365, los administradores de TI de Contoso y los especialistas en cumplimiento inician sesión en el Centro de administración de Microsoft 365 [( https://admin.microsoft.com) ](https://admin.microsoft.com) y van a [ Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com)
 
 ![Vínculo de cumplimiento de comunicaciones.](../media/communication-compliance-case-compliance-link.png)
 

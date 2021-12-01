@@ -28,10 +28,16 @@
   items:
     - name: Introducción a la página de usuarios
       href: m365-lighthouse-users-page-overview.md
+    - name: Bloquear el inicio de sesión de usuario
+      href: m365-lighthouse-block-user-signin.md
     - name: Administrar la autenticación multifactor
       href: m365-lighthouse-manage-mfa.md
     - name: Administrar el restablecimiento de contraseñas de autoservicio
       href: m365-lighthouse-manage-sspr.md
+    - name: Restablecer contraseña de usuario
+      href: m365-lighthouse-reset-user-password.md
+    - name: Buscar usuarios
+      href: m365-lighthouse-search-for-users.md
 - name: Administrar dispositivos
   items:
     - name: Introducción a la página de cumplimiento de dispositivos

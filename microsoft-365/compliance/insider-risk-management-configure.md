@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cf386bc306bf5ab3b509a6d34a020fae5ddfb2c9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9e07c12ec434935b2e91e7248f1f1d16ea4074c8
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110000"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241181"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -49,7 +49,7 @@ Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la a
 
 Las acciones recomendadas pueden ayudar a su organización a empezar rápidamente y a sacar el máximo partido de las capacidades de administración de riesgos de insider. Incluidas en **la** página Información general, las acciones recomendadas ayudan a guiarle a través de los pasos para configurar e implementar directivas y para realizar acciones de investigación para acciones de usuario que generen alertas a partir de coincidencias de directivas.
 
-![Acciones recomendadas de administración de riesgos de Insider.](../media/insider-risk-recommended-actions.png)
+![Acciones recomendadas para la administración de riesgos internos.](../media/insider-risk-recommended-actions.png)
 
 Las siguientes recomendaciones están disponibles para ayudarle a empezar a usar o maximizar la configuración de administración de riesgos de insider:
 
@@ -70,9 +70,9 @@ Cada acción recomendada incluida en esta experiencia tiene cuatro atributos:
 - **Obligatorio u opcional:** si la acción recomendada es necesaria u opcional para que las características de administración de riesgos insider funcionen según lo esperado.
 - **Tiempo estimado para completar:** tiempo estimado para completar la acción recomendada en minutos.
 
-Seleccione una recomendación de la lista para empezar a configurar la administración de riesgos de insider. Cada acción recomendada le guía a través de las actividades necesarias para la recomendación, incluidos los requisitos, qué esperar y el impacto de configurar la característica en su organización.   Cada acción recomendada se marca automáticamente como completa cuando se configura o deberá seleccionar manualmente la acción como completa cuando esté configurada.
+Seleccione una recomendación de la lista para empezar a configurar la administración de riesgos internos. Cada acción recomendada le guía por las actividades necesarias para la recomendación, incluidos los requisitos, qué esperar y el impacto de configurar la característica en su organización.   Cada acción recomendada se marca automáticamente como completa cuando se configura o deberá seleccionar manualmente la acción como completa cuando esté configurada.
 
-## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Paso 1 (obligatorio): habilitar permisos para la administración de riesgos de insider
+## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Paso 1 (obligatorio): Habilitar permisos para la administración de riesgos internos
 
 > [!IMPORTANT]
 > Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
@@ -99,7 +99,7 @@ Dependiendo de la estructura de su equipo de administración de cumplimiento, ti
 
 Siga estos pasos para agregar usuarios a un grupo de roles de administración de riesgos interno:
 
-1. Inicie sesión <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En el Centro &amp; de cumplimiento de seguridad, vaya a **Permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
 
@@ -117,19 +117,19 @@ Siga estos pasos para agregar usuarios a un grupo de roles de administración de
 
 La administración de riesgos de Insider Microsoft 365 registros de auditoría para información del usuario y actividades identificadas en las directivas y las perspectivas de análisis. Los Microsoft 365 de auditoría son un resumen de todas las actividades de la organización y las directivas de administración de riesgos internas pueden usar estas actividades para generar información sobre directivas.
 
-La auditoría está habilitada para Microsoft 365 organizaciones de forma predeterminada. Algunas organizaciones pueden haber deshabilitado la auditoría por motivos específicos. Si la auditoría está deshabilitada para la organización, puede deberse a que otro administrador la ha desactivado. Se recomienda confirmar que está bien volver a activar la auditoría al completar este paso.
+La auditoría está habilitada para organizaciones de Microsoft 365 de forma predeterminada. Algunas organizaciones pueden haber deshabilitado la auditoría por motivos específicos. Si la auditoría está deshabilitada para su organización, puede deberse a que otro administrador la ha desactivado. Se recomienda confirmar que es correcto volver a activar la auditoría al completar este paso.
 
-Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del Microsoft 365 de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
+Para obtener instrucciones paso a paso para activar la auditoría, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md). Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información sobre el uso del registro de auditoría de Microsoft 365, consulte [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-enable-and-view-insider-risk-analytics-insights"></a>Paso 3 (opcional): Habilitar y ver información de análisis de riesgos de insider
 
-El análisis de administración de riesgos de Insider le permite realizar una evaluación de los posibles riesgos de insider en su organización sin configurar directivas de riesgo de insider. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Esta evaluación también puede ayudarle a determinar las necesidades de licencias adicionales o la optimización futura de las directivas existentes. Los resultados del examen de análisis pueden tardar hasta 48 horas antes de que la información esté disponible como informes para su revisión. Para obtener más información sobre las perspectivas de análisis, consulte Configuración de administración de riesgos de [Insider: Analytics (versión preliminar)](insider-risk-management-settings.md#analytics) y consulte el vídeo Análisis de administración de riesgos de [Insider](https://www.youtube.com/watch?v=5c0P5MCXNXk) para comprender cómo el análisis puede ayudar a acelerar la identificación de posibles riesgos de insider y ayudarle a tomar medidas rápidamente.
+El análisis de administración de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Esta evaluación también puede ayudarle a determinar las necesidades de licencias adicionales o la optimización futura de las directivas existentes. Los resultados del análisis pueden tardar hasta 48 horas antes de que la información esté disponible como informes para su revisión. Para obtener más información sobre las perspectivas de análisis, consulte Configuración de administración de riesgos de [Insider: Analytics (versión preliminar)](insider-risk-management-settings.md#analytics) y consulte el vídeo Análisis de administración de riesgos de [Insider](https://www.youtube.com/watch?v=5c0P5MCXNXk) para comprender cómo el análisis puede ayudar a acelerar la identificación de posibles riesgos de insider y ayudarle a tomar medidas rápidamente.
 
 Para habilitar análisis de riesgos de *insider,* debe ser miembro del grupo de roles de administración global Insider Risk Management , *Insider Risk Management Admin* o Microsoft 365 Global *admin.*
 
 Siga estos pasos para habilitar el análisis de riesgos de insider:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a **Administración de riesgos de Insider**.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider**.
 2. Seleccione **Ejecutar examen en** la pestaña Examinar los riesgos de **insider en** la tarjeta de la organización en la pestaña Información general sobre la administración de riesgos de insider.  Esta acción activa el análisis de análisis de la organización. También puede activar el examen en su organización navegando a Configuración de riesgos de **Insider**  >  **Analytics (versión preliminar)** y habilitando Examinar la actividad del usuario del inquilino para identificar posibles riesgos de **insider**.
 3. En el **panel de detalles de Analytics,** seleccione Ejecutar examen para iniciar el examen de su **organización.** Los resultados del examen de análisis pueden tardar hasta 24 horas antes de que la información esté disponible como informes para su revisión.
 
@@ -217,7 +217,7 @@ Consulte el [artículo Configurar características avanzadas](/windows/security/
 
 Antes de configurar una directiva, defina las siguientes opciones de configuración de riesgos de insider:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de riesgos de **Insider** y seleccione Configuración de riesgos de **Insider** en la esquina superior derecha de cualquier página.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione Configuración de riesgos de **Insider** en la esquina superior derecha de cualquier página.
 2. En la **página Privacidad,** seleccione una configuración de privacidad para mostrar nombres de usuario para alertas de directiva.
 3. En la **página Indicadores,** seleccione los indicadores de alerta que desea aplicar a todas las directivas de riesgo de insider.
 
@@ -242,7 +242,7 @@ Antes de configurar una directiva, defina las siguientes opciones de configuraci
 
 Las directivas de administración de riesgos internos incluyen usuarios asignados y definen los tipos de indicadores de riesgo que se configuran para las alertas. Para que las actividades puedan desencadenar alertas, es necesario configurar una directiva. Use el Asistente para directivas para crear nuevas directivas de administración de riesgos de insider.
 
-1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
 2. Seleccione **Crear directiva** para abrir el asistente de directivas.
 3. En la página **Plantilla de directiva**, elija una categoría de directiva y luego seleccione la plantilla para la nueva directiva. Estas plantillas están compuestas por condiciones y señales que definen las actividades de riesgo que desea detectar e investigar. Revise los requisitos previos de la plantilla, los eventos desencadenantes y las actividades detectadas para confirmar que esta plantilla de directiva se ajusta a sus necesidades.
 
@@ -278,7 +278,7 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
     >[!IMPORTANT]
     >Si no puede seleccionar un indicador enumerado, es porque no están habilitados para su organización. Para que estén disponibles para seleccionar y asignar a la directiva, habilite los indicadores de la administración de riesgos de **Insider**  >  **Configuración**  >  **indicadores de directiva**.
 
-    Si ha seleccionado otras plantillas de directiva, no se admiten eventos de desencadenamiento personalizados. Se aplican los eventos de desencadenamiento de directivas integrados y seguirá pasando este paso al paso XX sin definir atributos de directiva.
+    Si ha seleccionado otras plantillas de directiva, no se admiten eventos de desencadenamiento personalizados. Se aplican los eventos de desencadenamiento de directivas integrados y continuará con el paso 23 sin definir atributos de directiva.
 
 14. Seleccione **Siguiente** para continuar.
 15. Si ha seleccionado las plantillas *Pérdidas* de datos generales o *Pérdidas* de datos por usuarios prioritarios y ha seleccionado que el usuario realiza una actividad de exfiltración e indicadores **asociados,** puede elegir umbrales personalizados o predeterminados para los eventos desencadenantes del indicador que haya seleccionado. Elija usar **umbrales predeterminados (recomendados)** o **Usar umbrales personalizados para los eventos desencadenantes.**
@@ -298,7 +298,7 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 22. Seleccione **Siguiente** para continuar.
 23. En la página **Revisión**, revise la configuración que ha elegido para la directiva y cualquier sugerencia o advertencia sobre sus selecciones. Seleccione **Editar** para cambiar cualquiera de los valores de la directiva o seleccione **Enviar** para crear y activar la directiva.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de completar estos pasos para crear la primera directiva de administración de riesgos de insider, empezará a recibir alertas de indicadores de actividad después de unas 24 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 4 de este artículo o los pasos descritos en [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
 

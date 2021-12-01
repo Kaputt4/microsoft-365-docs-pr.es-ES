@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 1c459b85ed7d6a25de0b8fcdef24a6857531cee3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a113f5d5f1906cf483e6f8b6cd0f3c7b6aa1deb0
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176156"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241013"
 ---
 # <a name="step-4-the-tasks-tab"></a>Paso 4: pestaña Tareas
 

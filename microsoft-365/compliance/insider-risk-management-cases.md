@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 3a7a8f8e7f839c47f369e32507acc7b70edc0d63
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: d37a47a3cb46214d098623edbf5f0b9bea4b242a
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785827"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241229"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -99,7 +99,7 @@ La **pestaña Información general** del caso también incluye una sección **Al
 La **pestaña** Alertas resume las alertas actuales incluidas en el caso. Se pueden agregar nuevas alertas a un caso existente y se agregarán a la cola de **alertas** a medida que estén asignadas. Los siguientes atributos de alerta se enumeran en la cola:
 
 - Estado
-- Gravedad
+- Severity
 - Tiempo detectado
 
 Seleccione una alerta de la cola para mostrar la **página Detalles de** alerta.
@@ -107,7 +107,7 @@ Seleccione una alerta de la cola para mostrar la **página Detalles de** alerta.
 Use el control de búsqueda para buscar nombres de alerta para texto específico y usar el filtro de alertas para ordenar los casos por los atributos siguientes:
 
 - Estado
-- Gravedad
+- Severity
 - Hora detectada, fecha de inicio y fecha de finalización
 
 Use el control de filtro para filtrar alertas por varios atributos, incluidos:
@@ -158,7 +158,7 @@ El explorador de contenido es una herramienta eficaz con características básic
 
 ![Explorador de contenido de casos de administración de riesgos de Insider.](../media/insider-risk-content-explorer.png)
 
-### <a name="case-notes"></a>Notas del caso
+### <a name="case-notes"></a>Notas de casos
 
 La **pestaña Notas del** caso en el caso es donde los analistas de riesgos e investigadores comparten comentarios, comentarios e información sobre su trabajo para el caso. Las notas son adiciones permanentes a un caso y no se pueden modificar ni eliminar después de guardar la nota. Cuando se crea un caso a partir de una alerta, los comentarios escritos en el cuadro de diálogo **Confirmar alerta y crear casos de riesgo internas** se agregan automáticamente como nota de caso.
 
@@ -166,7 +166,7 @@ El panel de notas del caso muestra las notas del usuario que creó la nota y el 
 
 Para agregar una nota a un caso:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione la **pestaña Notas del caso.**
 3. Seleccione **Agregar nota de caso**.
 4. En el cuadro de diálogo Agregar **nota de caso,** escriba la nota para el caso. Seleccione **Guardar** para agregar la nota al caso o **seleccione Cancelar** cerrar sin guardar la nota en el caso.
@@ -183,7 +183,7 @@ El acceso temporal a un caso se puede conceder agregando un usuario como colabor
 
 Para agregar un colaborador a un caso:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione la **pestaña Colaboradores.**
 3. Seleccione **Agregar colaborador**.
 4. En el **cuadro de diálogo** Agregar colaborador, empiece a escribir el nombre del usuario que desea agregar y, a continuación, seleccione el usuario de la lista de usuarios sugerida. Esta lista se genera a partir del Azure Active Directory de la suscripción de inquilino.
@@ -201,19 +201,19 @@ Es importante recordar que enviar un aviso de correo electrónico a un usuario *
 
 Para enviar un aviso al usuario asignado a un caso:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione el **botón Enviar aviso de correo** electrónico en la barra de herramientas de acción caso.
 3. En el **cuadro de diálogo** Enviar  aviso de correo electrónico, seleccione el control desplegable Elegir una plantilla de aviso para seleccionar la plantilla de aviso para el aviso. Esta selección rellena previamente los demás campos del aviso.
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
 5. Seleccione **Enviar** para enviar el aviso al usuario o **seleccione Cancelar** cerrar el cuadro de diálogo sin enviar el aviso al usuario. Todos los avisos enviados se agregan a la cola de notas de caso en el panel **notas del** caso.
 
-### <a name="escalate-for-investigation"></a>Remitir para investigación
+### <a name="escalate-for-investigation"></a>Escalar para investigación
 
-Escala el caso para la investigación del usuario en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del usuario. Esta extensión abre un nuevo caso de eDiscovery avanzado en su organización de Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos de exhibición avanzada de documentos electrónicos, [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
+Escala el caso para la investigación del usuario en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del usuario. Esta extensión abre un nuevo caso de exhibición avanzada de documentos electrónicos en su organización de Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite que su equipo legal administre todo el flujo de trabajo de notificaciones de retención legal para comunicarse con los administradores implicados en un caso. Asignar un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos internos ayuda a su equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos de eDiscovery avanzado, consulte [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
 
 Para escalar un caso a una investigación de usuario:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione el botón **Escalar** para la investigación en la barra de herramientas de acción caso.
 3. En el **cuadro de diálogo Escalar para** la investigación, escriba un nombre para la nueva investigación de usuario. Si es necesario, escriba notas sobre el caso y seleccione **Escalar**.
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
@@ -257,7 +257,7 @@ Una vez que los analistas e investigadores de riesgos hayan completado su revisi
 
 Para resolver un caso:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de **riesgos de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione el **botón Resolver caso** en la barra de herramientas de acción caso.
 3. En el cuadro de diálogo Resolver **caso,** seleccione el control desplegable **Resolver como** para seleccionar la clasificación de resolución del caso. Las opciones son **Infracción de** directiva benigna **o Confirmada.**
 4. En el cuadro de diálogo Resolver **caso,** escriba los motivos de la clasificación de resolución en el **campo de texto** Acción realizada.

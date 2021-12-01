@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d380fcccb43f78d55f67678c0d1e6c5ea6abdbca
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 848d1ea09cf64d107750e3a09580f2aaafff4887
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786739"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241205"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -49,7 +49,7 @@ Si tiene requisitos para que determinadas partes interesadas participen en inves
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>Planear el flujo de trabajo de revisión e investigación
 
-Seleccione las partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>. Asegúrese de comprender cómo asignará diferentes partes interesadas a los diferentes grupos de roles disponibles en la administración de riesgos de insider.
+Seleccione las partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). Asegúrese de comprender cómo asignará diferentes partes interesadas a los diferentes grupos de roles disponibles en la administración de riesgos de insider.
 
 >[!IMPORTANT]
 >Asegúrese de que siempre tiene al menos un usuario en los grupos de roles Administración de riesgos de Insider o Administración de riesgos de **Insider** (según la opción que elija) para que la configuración de administración de riesgos de **insider** no llegue a un escenario de "administrador cero" si determinados usuarios abandonan la organización.

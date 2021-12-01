@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ee9ddb26736ba52b5ddade576d7587f5883931ab
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 423fe7b0c608aae668706cc72e578271f19d2386
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072706"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240845"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -99,7 +99,7 @@ Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la
 
 Use esta opción para asignar usuarios a grupos de roles específicos para segmentar el acceso y las responsabilidades de cumplimiento de comunicaciones entre diferentes usuarios de la organización.
 
-1. Inicie sesión en el Centro de cumplimiento de Microsoft 365 con las credenciales de una cuenta de administrador de su Microsoft 365 y, a continuación, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permisos**</a>.
+1. Inicie sesión en [el Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su Microsoft 365 y, a continuación, vaya a **Permisos** </a> .
 
 2. Seleccione el vínculo para ver y administrar roles en Office 365.
 
@@ -123,9 +123,9 @@ Para obtener más información acerca de los grupos de roles y los permisos, vea
 
 El Cumplimiento de comunicaciones requiere registros de auditoría para mostrar alertas y realizar un seguimiento de las acciones de corrección realizadas por los revisores. Los registros de auditoría son un resumen de todas las actividades asociadas con una directiva organizativa definida o en cualquier momento en que se realicen cambios en la directiva de cumplimiento de comunicaciones.
 
-La auditoría está habilitada para Microsoft 365 organizaciones de forma predeterminada. Algunas organizaciones pueden haber deshabilitado la auditoría por motivos específicos. Si la auditoría está deshabilitada para la organización, puede deberse a que otro administrador la ha desactivado. Se recomienda confirmar que está bien volver a activar la auditoría al completar este paso.
+La auditoría está habilitada para organizaciones de Microsoft 365 de forma predeterminada. Algunas organizaciones pueden haber deshabilitado la auditoría por motivos específicos. Si la auditoría está deshabilitada para su organización, puede deberse a que otro administrador la ha desactivado. Se recomienda confirmar que es correcto volver a activar la auditoría al completar este paso.
 
-Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
+Para obtener instrucciones paso a paso para activar la auditoría, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md). Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Paso 3 (opcional): Configurar grupos para el cumplimiento de las comunicaciones
 
@@ -193,7 +193,7 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 >[!TIP]  
 >¿Desea ver un tutorial detallado sobre cómo configurar una nueva directiva de cumplimiento de comunicaciones y corregir una alerta? Consulte este vídeo de [15](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) minutos para ver una demostración de cómo las directivas de cumplimiento de comunicación pueden ayudarle a detectar mensajes inapropiados, investigar posibles infracciones y corregir problemas de cumplimiento.
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a> con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión en [el Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En el Centro de cumplimiento de Microsoft 365, seleccione **Cumplimiento de comunicaciones**.
 
@@ -248,7 +248,7 @@ Si desea tener la opción de responder a una alerta de directiva mediante el env
 
 También puede habilitar la anonimización para los nombres de usuario mostrados al investigar coincidencias de directivas y realizar acciones en los mensajes.
 
-1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a> con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Inicie sesión en [el Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
 
 2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
 
