@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 11/29/2021
+ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 70e4508e312935116e707364d0164c4ee7ca716c
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: b370fe304dad0a32055a7bb2a29cdcd49373c000
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221638"
+ms.locfileid: "61234576"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Cambiar a Microsoft Defender para endpoint - Fase 2: Configuración
 
@@ -57,7 +57,7 @@ Al cambiar a Defender for Endpoint, es posible que deba realizar ciertos pasos p
 |Tipo de extremo|Qué hacer|
 |---|---|
 |Windows clientes (como puntos de conexión que ejecutan Windows 10 y Windows 11)|En general, no es necesario realizar ninguna acción para los Windows (a menos que Antivirus de Microsoft Defender se haya desinstalado). Este es el motivo: <br/><br/> Antivirus de Microsoft Defender debe instalarse, pero lo más probable es que esté deshabilitado en este punto del proceso de migración. <br/><br/> Cuando se instala una solución antivirus o antimalware que no es de Microsoft y los clientes aún no están incorporados a Defender for Endpoint, Antivirus de Microsoft Defender se deshabilita automáticamente. <br/><br/> Más adelante, cuando los puntos de conexión de cliente se incorporen a Defender for Endpoint, si esos puntos de conexión ejecutan una solución antivirus que no es de Microsoft, Antivirus de Microsoft Defender pasa al modo pasivo. <br/><br/> Si se desinstala la solución antivirus que no es de Microsoft, Antivirus de Microsoft Defender pasa al modo activo automáticamente.|
-|Windows servidores|En Windows server, deberá volver a instalar el Antivirus de Microsoft Defender y establecerlo en modo pasivo manualmente. En Windows, cuando se instala un antivirus o antimalware que no es de Microsoft, Antivirus de Microsoft Defender puede ejecutarse junto con la solución antivirus que no es de Microsoft. En esos casos, Antivirus de Microsoft Defender se deshabilita o desinstala manualmente. <br/><br/> Para reinstalar o habilitar Antivirus de Microsoft Defender en Windows server, realice las siguientes tareas: <br/>- [Establecer DisableAntiSpyware en false en Windows Server](#set-disableantispyware-to-false-on-windows-server) (solo si es necesario)<br/>- [Reinstalar Antivirus de Microsoft Defender en Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [Establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Si tiene problemas para reinstalar o volver a habilitar Antivirus de Microsoft Defender en Windows Server, vea [Troubleshooting: Antivirus de Microsoft Defender is getting uninstalled on Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
+|Windows servidores|En Windows server, deberá volver a instalar el Antivirus de Microsoft Defender y establecerlo en modo pasivo manualmente. En Windows, cuando se instala un antivirus o antimalware que no es de Microsoft, Antivirus de Microsoft Defender puede ejecutarse junto con la solución antivirus que no es de Microsoft. En esos casos, Antivirus de Microsoft Defender se deshabilita o desinstala manualmente. <br/><br/> Para reinstalar o habilitar Antivirus de Microsoft Defender en Windows server, realice las siguientes tareas: <br/>- [Establecer DisableAntiSpyware en false en Windows Server](#set-disableantispyware-to-false-on-windows-server) (solo si es necesario)<br/>- [Reinstale Antivirus de Microsoft Defender en Windows Server 2016](#reinstall-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Reinstalar Antivirus de Microsoft Defender en Windows Server, versión 1803 o posterior](#reinstall-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Si tiene problemas para reinstalar o volver a habilitar Antivirus de Microsoft Defender en Windows Server, vea [Troubleshooting: Antivirus de Microsoft Defender is getting uninstalled on Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > Para obtener más información sobre Antivirus de Microsoft Defender con protección antivirus que no es de Microsoft, [vea Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md).
@@ -81,17 +81,26 @@ La clave del Registro [DisableAntiSpyware](/windows-hardware/customize/desktop/u
 > [!TIP]
 > Para obtener más información acerca de esta clave del Registro, [vea DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
-### <a name="reinstall-microsoft-defender-antivirus-on-windows-server"></a>Reinstalar Antivirus de Microsoft Defender en Windows Server
+### <a name="reinstall-microsoft-defender-antivirus-on-windows-server-2016"></a>Reinstale Antivirus de Microsoft Defender en Windows Server 2016
+
+Puede usar la Utilidad de [protección contra Command-Line malware](command-line-arguments-microsoft-defender-antivirus.md) para volver a habilitar Antivirus de Microsoft Defender en Windows Server 2016.
+
+1. Como administrador local en el servidor, abra el símbolo del sistema.
+
+2. Ejecute el siguiente comando: `MpCmdRun.exe -wdenable`
+
+3. Reinicie el dispositivo.
+
+
+### <a name="reinstall-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>Reinstalar Antivirus de Microsoft Defender en Windows Server, versión 1803 o posterior
 
 > [!IMPORTANT]
 > El siguiente procedimiento solo se aplica a los puntos de conexión o dispositivos que ejecutan las siguientes versiones de Windows:
->
 > - Windows Server 2019
 > - Windows Server 2022
 > - Windows server, versión 1803 (modo de solo núcleo)
-> - Windows Server 2016 (consulte la siguiente sección, [¿Está usando Windows Server 2016?](#are-you-using-windows-server-2012-r2-or-windows-server-2016)
 
-1. Como administrador local en el punto de conexión o dispositivo, abra Windows PowerShell.
+1. Como administrador local en el servidor, abra Windows PowerShell.
 
 2. Ejecute los siguientes cmdlets de PowerShell:
 
@@ -104,8 +113,6 @@ La clave del Registro [DisableAntiSpyware](/windows-hardware/customize/desktop/u
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
 
-   A continuación, reinicie el dispositivo.
-
    Cuando se usa el comando DISM dentro de una secuencia de tareas que ejecuta PowerShell, se requiere la siguiente ruta de cmd.exe.
    Ejemplo:
 
@@ -114,7 +121,12 @@ La clave del Registro [DisableAntiSpyware](/windows-hardware/customize/desktop/u
    c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
 
+3. Reinicie el dispositivo.
+
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server
+
+> [!TIP]
+> Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows Server 2012 R2 y 2016. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
 
 1. Abra el Editor del Registro y, a continuación, vaya a
 
@@ -130,10 +142,6 @@ La clave del Registro [DisableAntiSpyware](/windows-hardware/customize/desktop/u
 > [!NOTE]
 > Después de incorporarse a Defender for Endpoint, es posible que deba establecer Antivirus de Microsoft Defender modo pasivo en Windows Server. Para validar que el modo pasivo se estableció como se esperaba, busque el evento *5007* en el registro operativo de **Microsoft-Windows-Windows Defender** (ubicado en ), y confirme que las claves del Registro `C:\Windows\System32\winevt\Logs` **ForceDefenderPassiveMode** o **PassiveMode** se han establecido en **0x1**.
 
-### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>¿Está usando Windows Server 2012 R2 o Windows Server 2016?
-
-Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows Server 2012 R2 y 2016 mediante el método anterior. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
-
 ## <a name="configure-defender-for-endpoint"></a>Configuración de Defender para punto de conexión
 
 Este paso del proceso de migración implica la configuración de Antivirus de Microsoft Defender para los puntos de conexión. Se recomienda usar Intune; sin embargo, puede cualquiera de los métodos que se enumeran en la tabla siguiente:
@@ -144,7 +152,7 @@ Este paso del proceso de migración implica la configuración de Antivirus de Mi
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/><br/> **NOTA:** Intune ahora forma parte de Microsoft Endpoint Manager.|1. Vaya al Centro [Microsoft Endpoint Manager administración e](https://go.microsoft.com/fwlink/?linkid=2109431) inicie sesión.<br/><br/>2. Seleccione **Perfiles** \> **de configuración de dispositivos** y, a continuación, seleccione el tipo de perfil que desea configurar. Si aún no has creado un tipo de perfil de **restricciones** de dispositivo o quieres crear uno nuevo, consulta Configurar la configuración de restricción de dispositivo en [Microsoft Intune](/intune/device-restrictions-configure).<br/><br/>3. Seleccione **Propiedades** y, a continuación, **seleccione Configuración: Editar**<br/><br/>4. Expanda **Antivirus de Microsoft Defender**.<br/><br/>5. Habilitar la **protección entregada en la nube.**<br/><br/>6. En la lista desplegable Preguntar a **los usuarios antes del** envío de ejemplo, seleccione Enviar todos los ejemplos **automáticamente.**<br/><br/>7. En el desplegable **Detectar aplicaciones potencialmente no deseadas,** seleccione **Habilitar** o **Auditar**.<br/><br/>8. Seleccione **Revisar + guardar** y, a continuación, elija **Guardar**. <br/><br/> **SUGERENCIA:** Para obtener más información acerca de los perfiles de dispositivo de Intune, incluido cómo crear y configurar sus opciones, consulte ¿Qué Microsoft Intune [perfiles de dispositivo?](/intune/device-profiles).|
 |Microsoft Endpoint Configuration Manager|Vea [Create and deploy antimalware policies for Endpoint Protection in Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies). <br/><br/> Al crear y configurar las directivas de antimalware, asegúrese de revisar la configuración de protección en tiempo [real](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) y [habilitar el bloqueo a primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md).
 |Panel de control en Windows|Siga las instrucciones aquí: [Activar Antivirus de Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows). (Es posible que *vea Antivirus de Windows Defender* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows).|
-|[Administración de directivas de grupo avanzadas](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> o <br/><br/> [Consola de administración de directivas de grupo](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. Vaya a **Configuración del** equipo Plantillas administrativas Windows \>  \> **componentes** \> **Antivirus de Microsoft Defender**.<br/><br/>2. Busque una directiva denominada **Desactivar Antivirus de Microsoft Defender**.<br/><br/>3. Elija **Editar configuración de directiva** y asegúrese de que la directiva está deshabilitada. Esta acción permite Antivirus de Microsoft Defender. <br/>(Es posible que *vea Antivirus de Windows Defender* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows).|
+|[Administración de directivas de grupo avanzadas](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> Otra posibilidad: <br/><br/> [Consola de administración de directivas de grupo](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. Vaya a **Configuración del** equipo Plantillas administrativas Windows \>  \> **componentes** \> **Antivirus de Microsoft Defender**.<br/><br/>2. Busque una directiva denominada **Desactivar Antivirus de Microsoft Defender**.<br/><br/>3. Elija **Editar configuración de directiva** y asegúrese de que la directiva está deshabilitada. Esta acción permite Antivirus de Microsoft Defender. <br/>(Es posible que *vea Antivirus de Windows Defender* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows).|
 
 > [!TIP]
 > Puede implementar las directivas antes de que los dispositivos de la organización se incorpore.
@@ -159,11 +167,10 @@ Este paso del proceso de configuración implica agregar Defender for Endpoint a 
 Las exclusiones específicas que se van a configurar dependerán de la versión de Windows los puntos de conexión o dispositivos que se estén ejecutando y se enumeran en la tabla siguiente.
 <br/><br/>
 
-|SO |Exclusiones |
-|--|--|
-|Windows 11 <br/><br/>Windows 10, [versión 1803](/windows/release-health/status-windows-10-1803) o posterior (vea [Windows 10 de la versión )](/windows/release-health/release-information)<br/><br/>Windows 10, versión 1703 o 1709 con [KB4493441](https://support.microsoft.com/help/4493441) instalado <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows server, versión 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/>
-<br/>Además, en Windows Server 2012 R2 y 2016 que ejecutan la solución moderna y unificada, se requieren las siguientes exclusiones después de actualizar el componente sense EDR con [KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac):<br/> |<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`<br/>
-|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**NOTA:** La supervisión de archivos temporales de host 6\45 puede ser subcarpetas numeradas diferentes. <br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
+| SO |Exclusiones |
+|:--|:--|
+|Windows 11 <br/><br/>Windows 10, [versión 1803](/windows/release-health/status-windows-10-1803) o posterior (vea [Windows 10 de la versión )](/windows/release-health/release-information)<br/><br/>Windows 10, versión 1703 o 1709 con [KB4493441](https://support.microsoft.com/help/4493441) instalado <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows server, versión 1803](/windows-server/get-started/whats-new-in-windows-server-1803) | `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/><br/>Además, en Windows Server 2012 R2 y 2016 que ejecutan la solución moderna y unificada, se requieren las siguientes exclusiones después de actualizar el componente sense EDR con [KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac):<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe` |
+|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**NOTA:** La supervisión de archivos temporales de host 6\45 puede ser subcarpetas numeradas diferentes.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>Agregue la solución existente a la lista de exclusión para Antivirus de Microsoft Defender
 

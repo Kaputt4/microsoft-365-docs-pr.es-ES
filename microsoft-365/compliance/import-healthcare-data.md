@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros de salud electrónicos (EHR) desde su sistema de salud a Microsoft 365. Esto le permite usar datos EHR en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
-ms.openlocfilehash: f7f87b229528bd9f4a43592e9e6a9cf656359094
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e6c2387154108d54b429ec436c959925758a897b
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717651"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61234560"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurar un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
 
@@ -61,9 +61,12 @@ Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, c
 
 El siguiente paso es crear un archivo de texto que contenga información sobre el acceso de los empleados a los registros de salud del paciente en el sistema ehr de salud de la organización. Como se explicó anteriormente, debe determinar cómo generar este archivo de texto desde el sistema EHR de atención médica. El flujo de trabajo del conector de atención médica requiere un archivo de texto con valores separados por tabulaciones para asignar esos datos en el archivo de texto con el esquema de conector necesario. El formato de archivo admitido es un archivo de texto separado por comas (.csv), pipe (.psv) o tab (.tsv).
 
+> [!NOTE]
+> El tamaño máximo del archivo de texto que contiene los datos de auditoría es de 3 GB. El número máximo de filas es de 5 millones. Además, asegúrese de incluir solo los datos de auditoría relevantes de su sistema ehr de salud.
+
 En la tabla siguiente se enumeran los campos necesarios para habilitar escenarios de administración de riesgos de insider. Un subconjunto de estos campos es obligatorio. Estos campos se resaltan con un asterisco (*). Si falta alguno de los campos obligatorios en el archivo de texto, el archivo no se validará y los datos del archivo no se importarán.
 
-|Field|Categoría|
+|Campo|Categoría|
 |:----|:----------|
 | Nombre del evento *<br/> de hora de creación*<br/>Id. de estación de trabajo<br/>Sección de eventos<br/>Categoría del evento |Estos campos se usan para identificar eventos de actividad de acceso en el sistema EHR de salud.|
 | Id. de reg del paciente<br/>Nombre del paciente *<br/> Apellido del paciente Segundo nombre <br/> del paciente* <br/>Línea de dirección del paciente 1* <br/>Línea de dirección del paciente 2<br/>Ciudad del paciente* <br/>Código postal del paciente*  <br/>Estado del paciente <br/>País del paciente <br/>Departamento del paciente              | Estos campos se usan para identificar la información del perfil del paciente.|
@@ -71,8 +74,8 @@ En la tabla siguiente se enumeran los campos necesarios para habilitar escenario
 | Dirección de correo electrónico (UPN) o SamAccountName*<br/>Nombre de usuario de empleado <br/> Id. de empleado <br/> Apellidos de empleado <sup>1</sup> <br/> Nombre de empleado <sup>1</sup> | Estos campos se usan para identificar la información de perfil de los empleados para la coincidencia de direcciones y nombres necesarias para determinar el acceso a los registros familia/vecino/empleado. |
 |||
 
-> [!NOTE]
-> <sup>1</sup> Es posible que este campo no esté disponible de forma predeterminada en el sistema de salud. Debe configurar la exportación para asegurarse de que el archivo de texto contiene este campo.
+> [!NOTE] 
+> <sup>1</sup> Es posible que este campo no esté disponible de forma predeterminada en el sistema ehr de salud. Debe configurar la exportación para asegurarse de que el archivo de texto contiene este campo.
 
 ## <a name="step-3-create-the-healthcare-connector"></a>Paso 3: Crear el conector de atención médica
 
@@ -96,7 +99,7 @@ El siguiente paso es crear un conector de atención médica en el Centro de cump
 
    - **Upload un archivo de ejemplo**. Si selecciona esta opción, haga clic Upload **archivo de ejemplo** para cargar el archivo que preparó en el paso 2. Esta opción permite seleccionar rápidamente nombres de columna en el archivo de texto de una lista desplegable para asignar las columnas al esquema necesario para el conector de atención médica. 
 
-    O bien
+    O bien:
 
    - **Proporcione manualmente los detalles de asignación**. Si selecciona esta opción, debe escribir el nombre de las columnas del archivo de texto para asignar las columnas al esquema necesario para el conector de atención médica.
 
@@ -104,7 +107,7 @@ El siguiente paso es crear un conector de atención médica en el Centro de cump
 
    - Use las listas desplegables para asignar las columnas del archivo de ejemplo a cada campo necesario para el conector de atención médica.
 
-    O bien
+    O bien:
 
    - Para cada campo, escriba el nombre de columna del archivo que preparó en el paso 2 que corresponde al campo del conector de atención médica.
 
@@ -129,6 +132,9 @@ También puede hacer clic en **Editar** para cambiar el identificador de aplicac
 ## <a name="step-4-run-the-sample-script-to-upload-your-healthcare-ehr-auditing-data"></a>Paso 4: Ejecutar el script de ejemplo para cargar los datos de auditoría de EHR de atención sanitaria
 
 El último paso para configurar un conector de atención médica es ejecutar un script de ejemplo que cargará los datos de auditoría de EHR de atención sanitaria en el archivo de texto (que creó en el paso 1) en la nube de Microsoft. En concreto, el script carga los datos en el conector de atención médica. Después de ejecutar el script, el conector de cuidado de la salud que creó en el paso 3 importa los datos de auditoría de EHR de atención sanitaria a su organización de Microsoft 365 donde pueden tener acceso otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Vea [(Opcional) Paso 6: Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
+
+> [!NOTE]
+> Como se ha indicado anteriormente, el tamaño máximo del archivo de texto que contiene los datos de auditoría es de 3 GB. El número máximo de filas es de 5 millones. El script que ejecute en este paso llevará entre 30 y 40 minutos importar los datos de auditoría de archivos de texto grandes. Además, el script dividirá archivos de texto grandes en bloques más pequeños de filas de 100K y, a continuación, importará esos bloques secuencialmente.
 
 1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió.
 
@@ -186,7 +192,7 @@ Si no ha ejecutado el script en el paso 4, se muestra un vínculo para descargar
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>(Opcional) Paso 6: Programar el script para que se ejecute automáticamente
 
-Para asegurarse de que los últimos datos de auditoría de su sistema ehr de salud estén disponibles para herramientas como la solución de administración de riesgos insider, se recomienda programar el script para que se ejecute automáticamente diariamente. Esto también requiere que actualice los datos de auditoría ehr en el archivo de texto con una programación similar (si no es la misma) para que contenga la información más reciente sobre las actividades de acceso de registros de pacientes por parte de los empleados. El objetivo es cargar los datos de auditoría más actuales para que el conector de atención sanitaria pueda estar disponible para la solución de administración de riesgos de insider.
+Para asegurarse de que los últimos datos de auditoría de su sistema ehr de salud estén disponibles para herramientas como la solución de administración de riesgos insider, se recomienda programar el script para que se ejecute automáticamente diariamente. Esto también requiere que actualice los datos de auditoría ehr en el mismo archivo de texto en una programación similar (si no es la misma) para que contenga la información más reciente sobre las actividades de acceso a registros de pacientes por parte de los empleados. El objetivo es cargar los datos de auditoría más actuales para que el conector de atención sanitaria pueda estar disponible para la solución de administración de riesgos de insider.
 
 Puedes usar la aplicación Programador de tareas en Windows para ejecutar automáticamente el script todos los días.
 
@@ -214,11 +220,13 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 7. Seleccione la **pestaña Acciones,** haga clic **en Nuevo** y, a continuación, haga lo siguiente:
 
+   ![Configuración de la acción para crear una nueva tarea programada para el script del conector de atención médica.](../media/GenericHealthCareConnectorScheduleTask1.png)
+
     1. En la **lista** desplegable Acción, asegúrese de que está seleccionado **Iniciar un** programa.
 
     2. En el **cuadro Programa/script,** haga clic en Examinar **y** vaya a la siguiente ubicación y selecciónelo para que la ruta de acceso se muestre en el cuadro: C:.0.exe.
 
-    3. En el **cuadro Agregar argumentos (opcional),** pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
+    3. En el **cuadro Agregar argumentos (opcional),** pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HealthcareConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
 
     4. En el **cuadro Inicio en (opcional),** pegue la ubicación de carpeta del script que ejecutó en el paso 4. Por ejemplo, C:\Healthcare\audit.
 
@@ -226,6 +234,10 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 8. En la **ventana Crear tarea,** haga clic en **Aceptar** para guardar la tarea programada. Es posible que se te pida que escribas las credenciales de tu cuenta de usuario.
 
-Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
+   La nueva tarea se muestra en la Biblioteca del programador de tareas.
 
-También puede comprobar la última vez que se ejecutó el script en la página desplegable del conector de atención sanitaria correspondiente en el centro de cumplimiento.
+   ![La nueva tarea para el script del conector de atención médica se muestra en la Biblioteca del programador de tareas.](../media/HealthcareConnectorTaskSchedulerLibrary.png)
+
+   Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
+
+   También puede comprobar la última vez que se ejecutó el script en la página desplegable del conector de atención sanitaria correspondiente en el centro de cumplimiento.

@@ -19,15 +19,15 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 11/29/2021
+ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: fa8dab5e72f2e3833508bce92b5a9f0b9d699f6b
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: bbde6e79f35bf69b29d589186054bc072124d1ea
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221583"
+ms.locfileid: "61234536"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Solución de problemas al cambiar a Microsoft Defender para endpoint
 
@@ -99,6 +99,16 @@ Valor: `1`
 > Para que el modo pasivo funcione en puntos de conexión que ejecutan Windows Server 2016 y Windows Server 2012 R2, estos extremos deben incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 Para obtener más información, [vea Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+## <a name="i-am-having-trouble-reinstalling-microsoft-defender-antivirus-on-windows-server-2016"></a>Tengo problemas para volver a instalar Antivirus de Microsoft Defender en Windows Server 2016
+
+Si usa una solución antivirus o antimalware que no sea de Microsoft en Windows Server 2016, es posible que la solución existente Antivirus de Microsoft Defender se deshabilite o desinstale. Puede usar la Utilidad de[ protección contra Command-Line malware](command-line-arguments-microsoft-defender-antivirus.md) para volver a habilitar Antivirus de Microsoft Defender en Windows Server 2016.
+
+1. Como administrador local en el servidor, abra el símbolo del sistema.
+
+2. Ejecute el siguiente comando: `MpCmdRun.exe -wdenable`
+
+3. Reinicie el dispositivo.
 
 ## <a name="see-also"></a>Consulte también
 

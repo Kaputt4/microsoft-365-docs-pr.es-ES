@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros electrónicos de salud (EHR) desde el sistema épico de su organización para Microsoft 365. Esto le permite usar datos de EHR épicos en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
-ms.openlocfilehash: bd24974bdbc0d264cda4c3a7cfc814ce20b67cd5
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 147519db433396376a406c5ce558fe4ad0f8428c
+ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648223"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61234548"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurar un conector para importar datos de auditoría de Épico EHR (versión preliminar)
 
@@ -61,6 +61,9 @@ Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, c
 
 El siguiente paso es crear un archivo de texto que contenga información sobre el acceso de los empleados a los registros de salud del paciente en el sistema Épico EHR de su organización. Como se explicó anteriormente, debes determinar cómo generar este archivo de texto desde el sistema de EHR épico. El flujo de trabajo del conector épico requiere un archivo de texto con valores separados por tabulaciones para asignar esos datos en el archivo de texto con el esquema de conector requerido. El formato de archivo admitido es un archivo separado por .txt tabulación.
 
+> [!NOTE]
+> El tamaño máximo del archivo de texto que contiene los datos de auditoría es de 3 GB. El número máximo de filas es de 5 millones. Además, asegúrese de incluir solo los datos de auditoría relevantes de su sistema ehr de salud.
+
 En la tabla siguiente se enumeran los campos necesarios para habilitar escenarios de administración de riesgos de insider. Un subconjunto de estos campos es obligatorio. Estos campos se resaltan con un asterisco (*). Si falta alguno de los campos obligatorios en el archivo de texto, el archivo no se validará y los datos del archivo no se importarán.
 
 |Field|Categoría|
@@ -72,6 +75,7 @@ En la tabla siguiente se enumeran los campos necesarios para habilitar escenario
 |||
 
 > [!NOTE]
+> Asegúrate de exportar solo las métricas de registro relevantes de Epic. 
 > <sup>1</sup> Este campo no está disponible de forma predeterminada en Epic. Debe configurar la exportación para asegurarse de que el archivo de texto contiene este campo.
 
 ## <a name="step-3-create-the-epic-connector"></a>Paso 3: Crear el conector épico
@@ -115,6 +119,9 @@ También puede hacer clic en **Editar** para cambiar el identificador de aplicac
 ## <a name="step-4-run-the-sample-script-to-upload-your-epic-ehr-audit-records"></a>Paso 4: Ejecutar el script de ejemplo para cargar los registros de auditoría de Ehr épico
 
 El último paso para configurar un conector de Epic es ejecutar un script de ejemplo que cargará los datos de registros de auditoría de EHR épicos en el archivo de texto (que creó en el paso 1) en la nube de Microsoft. En concreto, el script carga los datos en el conector épico. Después de ejecutar el script, el conector épico que creó en el paso 3 importa los datos de los registros de auditoría de Ehr épico a su organización de Microsoft 365, a la que pueden acceder otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Vea [(Opcional) Paso 6: Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
+
+> [!NOTE]
+> Como se ha indicado anteriormente, el tamaño máximo del archivo de texto que contiene los datos de auditoría es de 3 GB. El número máximo de filas es de 5 millones. El script que ejecute en este paso llevará entre 30 y 40 minutos importar los datos de auditoría de archivos de texto grandes. Además, el script dividirá archivos de texto grandes en bloques más pequeños de filas de 100K y, a continuación, importará esos bloques secuencialmente.
 
 1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió.
 
@@ -174,7 +181,7 @@ Si no ha ejecutado el script en el paso 4, se muestra un vínculo para descargar
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>(Opcional) Paso 6: Programar el script para que se ejecute automáticamente
 
-Para asegurarse de que los registros de auditoría más recientes de su sistema de EHR épico estén disponibles para herramientas como la solución de administración de riesgos insider, se recomienda programar el script para que se ejecute automáticamente diariamente. Esto también requiere que actualice los datos del registro de auditoría de Epic en el archivo de texto con una programación similar (si no es la misma) para que contenga la información más reciente sobre las actividades de acceso a registros de pacientes por parte de los empleados. El objetivo es cargar los registros de auditoría más actuales para que el conector de Epic pueda estar disponible para la solución de administración de riesgos insider.
+Para asegurarse de que los registros de auditoría más recientes de su sistema de EHR épico estén disponibles para herramientas como la solución de administración de riesgos insider, se recomienda programar el script para que se ejecute automáticamente diariamente. Esto también requiere que actualice los datos de registro de auditoría de Epic en el mismo archivo de texto con una programación similar (si no es la misma) para que contenga la información más reciente sobre las actividades de acceso a registros de pacientes por parte de los empleados. El objetivo es cargar los registros de auditoría más actuales para que el conector de Epic pueda estar disponible para la solución de administración de riesgos insider. 
 
 Puedes usar la aplicación Programador de tareas en Windows para ejecutar automáticamente el script todos los días.
 
@@ -184,7 +191,7 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 3. En la **sección Acciones,** haga clic **en Crear tarea**.
 
-4. En la **ficha General,** escriba un nombre descriptivo para la tarea programada; por ejemplo, **Script de conector épico**. También puede agregar una descripción opcional.
+4. En la **ficha General,** escriba un nombre descriptivo para la tarea programada; por ejemplo, **script de conector épico**. También puede agregar una descripción opcional.
 
 5. En **Opciones de seguridad,** haga lo siguiente:
 
@@ -202,15 +209,13 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 7. Seleccione la **pestaña Acciones,** haga clic **en Nuevo** y, a continuación, haga lo siguiente:
 
-   Configuración de la acción para crear una nueva tarea programada para el script de conector épico
-
-    Configuración de la acción para crear una nueva tarea programada para el script de conector épico
+   ![Configuración de acción para crear una nueva tarea programada para el script de conector épico.](../media/EpicConnectorScheduleTask1.png)
 
     1. En la **lista** desplegable Acción, asegúrese de que está seleccionado **Iniciar un** programa.
 
     2. En el **cuadro Programa/script,** haga clic en Examinar **y** vaya a la siguiente ubicación y selecciónelo para que la ruta de acceso se muestre en el cuadro: C:.0.exe.
 
-    3. En el **cuadro Agregar argumentos (opcional),** pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Epic\audit\records.txt"`
+    3. En el **cuadro Agregar argumentos (opcional),** pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\EpicConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Epic\audit\records.txt"`
 
     4. En el **cuadro Inicio en (opcional),** pegue la ubicación de carpeta del script que ejecutó en el paso 4. Por ejemplo, C:\Epic\audit.
 
@@ -218,6 +223,10 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 8. En la **ventana Crear tarea,** haga clic en **Aceptar** para guardar la tarea programada. Es posible que se te pida que escribas las credenciales de tu cuenta de usuario.
 
-Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
+   La nueva tarea se muestra en la Biblioteca del programador de tareas.
 
-También puede comprobar la última vez que se ejecutó el script en la página desplegable del conector épico correspondiente en el centro de cumplimiento.
+   ![La nueva tarea para el script del conector de atención médica se muestra en la Biblioteca del programador de tareas.](../media/EpicConnectorTaskSchedulerLibrary.png)
+
+   Se muestra la última vez que se ejecutó el script y la próxima vez que está programado para ejecutarse. Puede hacer doble clic en la tarea para editarla.
+
+   También puede comprobar la última vez que se ejecutó el script en la página desplegable del conector épico correspondiente en el centro de cumplimiento.
