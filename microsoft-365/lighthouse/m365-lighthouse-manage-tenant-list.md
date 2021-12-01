@@ -16,14 +16,17 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
-ms.openlocfilehash: 458a0fadfa883cd9f57a12c330af731c91c5aa01
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: c2a1bfe65f2002f6b8c6548eabea5dc450366c32
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123291"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254407"
 ---
 # <a name="manage-your-tenant-list"></a>Administrar la lista de inquilinos
+
+> [!NOTE]
+> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Para ayudarle a administrar la lista de inquilinos en Microsoft 365 Lighthouse, puede aplicar etiquetas personalizadas a los inquilinos. Estas etiquetas se pueden usar para organizar los inquilinos y también pueden ayudarle a filtrar las vistas y los conocimientos existentes disponibles para conjuntos relevantes de inquilinos. Puede administrar las etiquetas desde la página Inquilinos. Una vez creado y asignado, puede filtrar los datos dentro de los inquilinos, usuarios, dispositivos, administración de amenazas y Windows 365 páginas en función de una etiqueta.
 
@@ -99,7 +102,7 @@ Las etiquetas que ya están asignadas al inquilino tendrán una marca de verific
 
 Las etiquetas que están asignadas actualmente tienen una marca de verificación a la derecha del nombre. También puede quitar una etiqueta de varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando Asignar etiquetas y, a continuación, seleccionando una etiqueta activada de la lista.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de crear y asignar etiquetas, puede usarlas para filtrar los inquilinos. Vaya a cualquiera de las otras páginas (Usuarios, Dispositivos, Administración de amenazas o Windows 365) y seleccione una o más etiquetas en el filtro Inquilino. Puede crear nuevas etiquetas para admitir vistas específicas basadas en cada página.
 

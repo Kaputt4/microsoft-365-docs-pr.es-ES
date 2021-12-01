@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: 26dbe5729081c501f5a80e1ecfdde4a184938328
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c86c8afc219074506e7e58bb63fb0792e5116317
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167579"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241193"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -49,7 +49,9 @@ Se pueden eliminar los siguientes archivos:
 > [!TIP]
 > Al usar una [consulta con una directiva de aplicación automática para una etiqueta de retención](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), puede excluir las bibliotecas de documentos específicas mediante la siguiente entrada: `NOT(DocumentLink:"<URL to document library>")`
 
-Los elementos de la lista no son compatibles con las directivas de retención, pero sí con las etiquetas de retención, a excepción de los elementos en las listas de sistema. Se trata de listas ocultas utilizadas por SharePoint para administrar el sistema e incluir el catálogo de la página principal, el catálogo de soluciones y los orígenes de datos. Cuando aplica una etiqueta de retención a un elemento de lista admitido que tiene un documento adjunto:
+Los elementos de la lista no son compatibles con las directivas de retención, pero sí con las etiquetas de retención, a excepción de los elementos en las listas de sistema. Se trata de listas ocultas utilizadas por SharePoint para administrar el sistema e incluir el catálogo de la página principal, el catálogo de soluciones y los orígenes de datos. Cuando las etiquetas de retención se aplican a los elementos de lista admitidos, siempre se conservarán según la configuración de retención, pero no se eliminarán si están ocultos en la búsqueda.
+
+Cuando aplica una etiqueta de retención a un elemento de lista admitido que tiene un documento adjunto:
 - Para una etiqueta de retención estándar (no declara el elemento como registro):
     - El documento adjunto no hereda automáticamente la configuración de retención de la etiqueta, pero se puede etiquetar de manera independiente.
 - Para una etiqueta de retención que declare el elemento como registro: 
@@ -58,6 +60,7 @@ Los elementos de la lista no son compatibles con las directivas de retención, p
 La configuración de retención de las directivas de retención y de las etiquetas de retención no se aplica a las estructuras de organización que contienen bibliotecas, listas y carpetas.
 
 Para directivas de retención y directivas de etiqueta de aplicación automática: los sitios de SharePoint deben estar indexados para que se aplique la configuración de retención. Sin embargo, si los elementos de la biblioteca de documentos de SharePoint se configuran para que no aparezcan en los resultados de búsqueda, esta configuración no excluirá los archivos de la configuración de retención.
+
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Obtenga información acerca de cómo funciona la retención para SharePoint y OneDrive
 

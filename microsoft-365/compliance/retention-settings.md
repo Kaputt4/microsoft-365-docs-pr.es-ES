@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 475ed6226c5482a1b9256d38798b9cbbdd8be31e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ade850732a637356e4bb0d3b4de3ea8a8ac6c683
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110552"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61240821"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -218,7 +218,7 @@ Las ubicaciones en las directivas de retención identifican servicios Microsoft�
 
 La ubicación del **correo electrónico de Exchange** admite la retención para el correo electrónico, el calendario y otros elementos del buzón de correo del usuario al aplicar la configuración de retención en el nivel de buzón. Los buzones compartidos también son compatibles.
 
-Los buzones de recursos, los contactos y los grupos de Microsoft 365 no son compatibles con el correo electrónico de Exchange. Para los buzones de grupo de Microsoft 365, seleccione en su lugar la ubicación de **Microsoft 365 Groups**.
+Los buzones de recursos, los contactos y los grupos de Microsoft 365 no son compatibles con el correo electrónico de Exchange. Para los buzones de grupo de Microsoft 365, seleccione en su lugar la ubicación de **Microsoft 365 Groups**. Aunque la ubicación de Exchange inicialmente permite seleccionar un buzón de correo de grupo para un ámbito estático, cuando intenta guardar la directiva de retención, recibe un error que indica que "RemoteGroupMailbox" no es una selección válida para esta ubicación.
 
 Según la configuración de directivas, los [buzones de correo inactivos](create-and-manage-inactive-mailboxes.md) pueden incluirse o no:
 
@@ -269,10 +269,10 @@ Al configurar una directiva de retención que use ámbitos de directiva adaptabl
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los Grupos de Microsoft 365
 
-Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente llamado "grupo de Office 365"), utilice la ubicación de los **Grupos de Microsoft 365**. Esta ubicación incluye el buzón de grupo y el sitio de equipos de SharePoint.
+Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente llamado "grupo de Office 365"), utilice la ubicación de los **Grupos de Microsoft 365**. Para las directivas de retención, esta ubicación incluye el buzón de grupo y el sitio de equipos de SharePoint. Para las etiquetas de retención, esta ubicación solo incluye el sitio de equipos de SharePoint.
 
 > [!NOTE]
-> Aunque un grupo de Microsoft 365 tiene un buzón de Exchange, una directiva de retención para la ubicación del **Correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo de Microsoft 365. 
+> Aunque un grupo de Microsoft 365 tiene un buzón de Exchange, una directiva de retención para la ubicación del **Correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo de Microsoft 365.
 
 Si usa ámbitos estáticos: aunque la ubicación del **Correo electrónico de Exchange** para un ámbito estático le permite inicialmente especificar un buzón de grupo para incluirlo o excluirlo, cuando intente guardar la directiva de retención, verá un error que indica que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
 
@@ -293,7 +293,7 @@ Al configurar una directiva de aplicación automática que usa tipos de informac
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Qué sucede si un grupo de Microsoft 365 se elimina después de aplicar una directiva
 
-Después de aplicar una directiva de retención a un grupo de Microsoft 365 y, a continuación, dicho grupo se elimina de Azure Active Directory:
+Cuando se aplica una directiva de retención (ámbito de directiva estática o adaptable) a un grupo de Microsoft 365 y ese grupo se elimina de Azure Active Directory:
 
 - El sitio de grupo de SharePoint conectado se conserva y continúa siendo administrado por la directiva de retención con la ubicación **Grupos de Microsoft 365**. El sitio sigue siendo accesible para las personas que tenían acceso a él antes de eliminar el grupo y los nuevos permisos ahora deben administrarse a través de SharePoint.
     

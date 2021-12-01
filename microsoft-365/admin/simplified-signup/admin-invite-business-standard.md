@@ -14,14 +14,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Invitar a los usuarios a unirse Microsoft 365 Empresa Estándar organización
-ms.openlocfilehash: f4170cee2e389665d59bd516b100143e62674281
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 263eb41ec12b527c4f70e6694206a480e28bebae
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151799"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254422"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Invitar a los usuarios a Microsoft 365 Empresa Estándar (administrador)
+
+> [!IMPORTANT]
+> Estos pasos se aplican a Microsoft 365 Empresa Estándar y Aplicaciones Microsoft 365 para negocios.
 
 Como administrador de una suscripción Microsoft 365 Empresa Estándar, puede invitar a sus compañeros y compañeros de trabajo a compartir y usar su suscripción Microsoft 365 para empresas. Al invitar a sus compañeros y compañeros de trabajo a su suscripción, comparte todas las siguientes características y servicios:
 
@@ -31,12 +34,12 @@ Como administrador de una suscripción Microsoft 365 Empresa Estándar, puede in
 - Usa una licencia para cubrir aplicaciones Office completamente instaladas en cinco dispositivos móviles, cinco tabletas y cinco equipos PC o Mac por usuario.
 - Obtén ayuda en cualquier momento con soporte telefónico y web las 24 horas de Microsoft.
 
-> [!IMPORTANT]
+> [!Note]
 > La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulte [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Asegúrese de que ya se ha registrado [en Microsoft 365 Empresa Estándar](signup-business-standard.md) y de haber configurado la organización de [Business Standard](../setup/setup-business-standard.md). Una vez que haya completado estos pasos, puede compartir una invitación a los usuarios.
+Asegúrese de que ya se ha [registrado para Microsoft 365 Empresa Estándar](signup-business-standard.md) o Aplicaciones Microsoft 365 para negocios. Y asegúrese de que ya ha configurado [su organización de Business Standard](../setup/setup-business-standard.md) o Configurar [Aplicaciones Microsoft 365 para negocios](../setup/setup-apps-for-business.md). Una vez que haya completado estos pasos, puede compartir una invitación a los usuarios.
 
 ## <a name="share-an-invitation-to-a-microsoft-365-business-standard-subscription"></a>Compartir una invitación a una Microsoft 365 Empresa Estándar suscripción
 
@@ -48,7 +51,7 @@ Asegúrese de que ya se ha registrado [en Microsoft 365 Empresa Estándar](signu
 
 Haga un seguimiento con los usuarios y asegúrese de que recibió la invitación de correo electrónico que envió sobre cómo compartir Microsoft 365 Empresa Estándar suscripción.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>¿He compartido una invitación de correo electrónico pero el usuario no ha recibido el correo electrónico?
 

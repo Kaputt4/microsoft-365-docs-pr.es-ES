@@ -42,3 +42,5 @@
       href: ./index.yml
     - name: Cumplimiento de Microsoft 365
       href: ../compliance/index.yml
+    - name: Administrar contenido activo en documentos de Office
+      href: active-content-in-trusted-docs.md

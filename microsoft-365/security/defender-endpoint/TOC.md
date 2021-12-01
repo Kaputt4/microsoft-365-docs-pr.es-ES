@@ -33,7 +33,7 @@
 #### [Incorporación con Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Guías de migración](migration-guides.md)
-### [Información general sobre migración](switch-to-mde-overview.md)
+### [Mudar a Microsoft Defender para punto de conexión](switch-to-mde-overview.md)
 #### [Fase 1: Preparación](switch-to-mde-phase-1.md)
 #### [Fase 2: Configuración](switch-to-mde-phase-2.md)
 #### [Fase 3: Incorporación](switch-to-mde-phase-3.md)
