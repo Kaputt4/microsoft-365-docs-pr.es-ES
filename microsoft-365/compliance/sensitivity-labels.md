@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2614512499c9ded8952ab5a071e7d1cf56d1d9ec
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e3c92ad9f9fc0dd1f69e11ebcede83c4d8224055
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109952"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254482"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -183,7 +183,7 @@ Cuando configura una directiva de etiqueta, puede:
 - **Especifique una etiqueta predeterminada** para los documentos y correos electrónicos sin etiqueta y para los contenedores nuevos (cuando haya [habilitado las etiquetas de confidencialidad para Microsoft Teams, Grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)) y, ahora, una etiqueta predeterminada para el [contenido Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Puede especificar la misma etiqueta para los cuatro tipos de elementos o especificar etiquetas diferentes. Los usuarios pueden cambiar la etiqueta de confidencialidad predeterminada aplicada para que coincida mejor con el nivel de confidencialidad de su contenido o contenedor.
     
     > [!NOTE]
-    > Implementación para aplicaciones de Office que usan etiquetas integradas: esta configuración ahora admite documentos existentes cuando los abren los usuarios, así como documentos nuevos. Este cambio de comportamiento proporciona paridad con el cliente de unificación de etiquetado de Azure Information Protection. Para obtener más información sobre el lanzamiento por aplicación y las versiones mínimas, vea la [tabla de funciones](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) para Word, Excel y PowerPoint.
+    > En la versión preliminar para las aplicaciones de Office que usan etiquetas integradas: esta configuración ahora admite documentos existentes cuando los abren los usuarios, así como documentos nuevos. Este cambio de comportamiento proporciona paridad con el cliente de unificación de etiquetado de Azure Information Protection. Para obtener más información sobre el lanzamiento por aplicación y las versiones mínimas, vea la [tabla de funciones](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) para Word, Excel y PowerPoint.
     
     Considere utilizar una etiqueta predeterminada para establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. Sin embargo, sin el aprendizaje del usuario y otros controles, esta configuración también puede dar como resultado una etiqueta incorrecta. Por lo general, no es una buena idea seleccionar una etiqueta que aplique el cifrado como etiqueta predeterminada a los documentos. Por ejemplo, muchas organizaciones necesitan enviar y compartir documentos con usuarios externos que pueden no tener aplicaciones compatibles con el cifrado o que no usen una cuenta que pueda ser autorizada. Para obtener más información sobre este escenario, consulte [Uso compartido de documentos cifrados con usuarios externos](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
     

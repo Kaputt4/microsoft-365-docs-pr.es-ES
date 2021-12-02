@@ -304,10 +304,10 @@
               href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Seguridad
       items:
+        - name: "Plan de implementación de Confianza cero de Microsoft\_365"
+          href: ../security/microsoft-365-zero-trust.md
         - name: Las tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa
           href: ../security/top-security-tasks-for-remote-work.md
-        - name: Seguridad de Microsoft 365 para los responsables de la toma de decisiones de la empresa (los BDM)
-          href: ../security/microsoft-365-security-for-bdm.md
         - name: Configuraciones de acceso a dispositivos e identidades
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
         - name: Evaluar Microsoft 365 Defender y realizar una prueba piloto
@@ -315,7 +315,7 @@
         - name: Responder al primer incidente
           href: ../security/defender/first-incident-overview.md
         - name: Implementar Microsoft Defender para punto de conexión
-          href: /microsoft-365/security/defender-endpoint/deployment-phases.md
+          href: ../security/defender-endpoint/deployment-phases.md
         - name: Cambiar de una protección de puntos de conexión distinta de Microsoft a Microsoft Defender para punto de conexión
           href: ../security/defender-endpoint/switch-to-mde-overview.md
         - name: Cambiar de una herramienta de protección que no es de Microsoft a Microsoft Defender para Office 365

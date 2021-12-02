@@ -29,16 +29,16 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Configurar Microsoft 365 para la organización de empresas
+        - name: Registrar Microsoft Apps para empresas
+          items:
+            - name: Registrarse en Microsoft 365 Apps para empresas
+              href: setup/signup--apps-business.md
+            - name: Configurar Microsoft 365 Apps para empresas
+              href: setup/setup-apps-for-business.md
+        - name: Configurar Microsoft 365 Empresa Básico
           items:
             - name: Microsoft 365 Empresa Básico
               href: setup/setup-business-basic.md
-            - name: Microsoft 365 Empresa Estándar
-              href: setup/setup-business-standard.md
-            - name: Microsoft 365 Empresa Premium
-              href: setup/business-set-up.md
-            - name: Aplicaciones de Microsoft 365 para negocios
-              href: setup/setup-apps-for-business.md
         - name: Explorar la página y el Asistente de configuración
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Proteger equipos con Windows 10
