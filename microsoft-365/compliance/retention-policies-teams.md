@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: f14e729858f3285f9cefc4d3db7da99d6c6f9e7d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0fadd66b3d1519dee0d96a24eaa74b05fef89133
+ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189326"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241085"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -185,7 +185,7 @@ Los mensajes de reuniones improvisadas y programadas se almacenan de la misma ma
 
 Cuando se incluyen usuarios externos en una reunión que su organización organiza:
 
-- Si un usuario externo se une utilizando una cuenta de invitado en su inquilino, este usuario tiene un buzón de correo en la sombra que puede estar sujeto a la directiva de retención de su organización para Teams. Los mensajes de la reunión se almacenan tanto en el correo de sus usuarios como en el correo paralelo. 
+- Si un usuario externo se une mediante una cuenta de invitado en su espacio empresarial, los mensajes de la reunión se almacenan tanto en el buzón de correo de los usuarios como en un buzón de correo de instantáneas que se concede a la cuenta de invitado. Sin embargo, las directivas de retención no se admiten para los buzones de correo de sombras paralelas, aunque se puedan notificar como incluidas en una directiva de retención para toda la ubicación (a veces conocida como "directiva de toda la organización").
 
 - Si un usuario externo se une usando una cuenta de otra organización de Microsoft 365, sus políticas de retención no pueden eliminar los mensajes de este usuario porque están almacenados en el buzón de ese usuario en otro inquilino. Sin embargo, para la misma reunión, sus políticas de retención pueden eliminar mensajes para sus usuarios.
 

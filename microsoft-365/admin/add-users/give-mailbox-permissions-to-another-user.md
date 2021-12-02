@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Dé a un usuario el derecho de acceder al buzón de otro, lo que le permite leer y enviar correos electrónicos desde el buzón del otro usuario.
-ms.openlocfilehash: 95075fca2fa39cfda497b71a1a320bc54fd2175d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cd6f54ac578f1d1a65b20d3093b0efdeb1110567
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161791"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262777"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Conceder permisos de buzón a otro usuario: Ayuda para administradores
 
@@ -75,7 +75,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 5. Seleccione **Agregar permisos** y elija el nombre de la persona en cuyo nombre desea que este usuario pueda enviar mensajes. 
     
-6. Seleccione **Guardar**.
+6. Seleccione **Agregar**.
  
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 4. Seleccione **Agregar permisos** y elija el nombre de la persona en cuyo nombre desea que este usuario pueda enviar mensajes. 
     
-5. Seleccione **Guardar**.
+5. Seleccione **Agregar**.
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 4. Seleccione **Agregar permisos** y elija el nombre de la persona en cuyo nombre desea que este usuario pueda enviar mensajes. 
     
-5. Seleccione **Guardar**.
+5. Seleccione **Agregar**.
 
 ::: moniker-end
   
@@ -121,11 +121,11 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
     
 5. Seleccione **Agregar permisos** y elija el nombre del usuario o los usuarios a los que quiere permitir leer el correo electrónico de este buzón.
 
-6. Seleccione **Guardar**.
+6. Seleccione **Agregar**.
 
 
 > [!NOTE]
-> Los permisos de **Lectura** y **Administración** se llaman de **Acceso completo** cuando se otorgan en el Centro de administración de Exchange. El permiso de Acceso completo no concede permisos de **Enviar como** ni **Enviar en nombre de**.
+> Los permisos de **Lectura** y **Administración** se llaman de **Acceso completo** cuando se otorgan en el Centro de administración de Exchange. Este permiso permite al buzón del usuario asignado leer y administrar correos electrónicos en el buzón del usuario al que se asigna el permiso. El permiso de acceso total no concede los permisos de **Enviar como** o **Enviar en nombre de**.
 
 ::: moniker-end
 
@@ -139,7 +139,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
     
 4. Seleccione **Agregar permisos** y elija el nombre del usuario o los usuarios a los que quiere permitir leer el correo electrónico de este buzón.
 
-5. Seleccione **Guardar**.
+5. Seleccione **Agregar**.
 
 ::: moniker-end
 
@@ -153,7 +153,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
     
 4. Seleccione **Agregar permisos** y elija el nombre del usuario o los usuarios a los que quiere permitir leer el correo electrónico de este buzón.
 
-5. Seleccione **Guardar**.
+5. Seleccione **Agregar**.
 
 ::: moniker-end
 
@@ -172,7 +172,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 5. Seleccione **Agregar permisos** y elija el nombre del usuario o los usuarios a los que quiere permitir enviar el correo electrónico en nombre de este buzón.
 
-6. Seleccione **Guardar**.
+6. Seleccione **Agregar**.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
     
 4. Seleccione **Agregar permisos** y elija el nombre del usuario o los usuarios a los que quiere permitir enviar el correo electrónico en nombre de este buzón.
 
-5. Seleccione **Guardar**.
+5. Seleccione **Agregar**.
 
 ::: moniker-end
 
@@ -200,7 +200,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
     
 4. Seleccione **Agregar permisos** y elija el nombre del usuario o los usuarios a los que quiere permitir enviar el correo electrónico en nombre de este buzón.
 
-5. Seleccione **Guardar**.
+5. Seleccione **Agregar**.
 
 ::: moniker-end
 
