@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b740bc5bd62f6329b53878c1a12c1486f7480f
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: e3656d864b5fe240bea7375999ad9501adf3b2a1
+ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171298"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61265207"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
@@ -29,8 +29,8 @@ ms.locfileid: "61171298"
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -96,7 +96,7 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 Las tareas importantes, como controlar la configuración del producto y desencadenar exámenes a petición, se pueden realizar desde la línea de comandos:
 
-|Group|Escenario|Comando|
+|Grupo|Escenario|Comando|
 |---|---|---|
 |Configuración|Activar/desactivar la protección en tiempo real|`mdatp config real-time-protection --value [enabled/disabled]`|
 |Configuración|Activar/desactivar la protección en la nube|`mdatp config cloud --value [enabled/disabled]`|
@@ -111,6 +111,7 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Configuración|Activar/desactivar el modo pasivo antivirus|`mdatp config passive-mode --value [enabled/disabled]`|
 |Configuración|Configurar el grado de paralelismo para los exámenes a petición|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |Configuración|Activar y desactivar exámenes después de las actualizaciones de inteligencia de seguridad|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuración|Activar/desactivar el examen del archivo (solo exámenes a petición)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnóstico|Cambiar el nivel de registro|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnóstico|Generar registros de diagnóstico|`mdatp diagnostic create --path [directory]`|
 |Mantenimiento|Comprobar el estado del producto|`mdatp health`|
