@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 332a2b14bb74363091df8fc18423c347d1d8c6fb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 992c54d84a5cc69579c74b2b7e1a5aa60e9633ab
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60663033"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262796"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -35,7 +35,10 @@ La implementación centralizada es la forma recomendada y más enriquecte de car
 
 Implementación centralizada proporciona las siguientes ventajas:
 
-- Un administrador global puede asignar un complemento directamente a un usuario, a varios usuarios a través de un grupo o a todos los usuarios de la organización.
+- Un administrador global o un administrador de Exchange pueden asignar un complemento directamente a un usuario, a varios usuarios a través de un grupo o a todos los usuarios de la organización.
+- Exchange administrador puede implementar addin solo si la propiedad Registro de aplicaciones está establecida en true en Azure Active Directory centro de administración, como se muestra en la imagen siguiente.
+
+  ![imagen](../../media/AAD.png)
 
 - Cuando se inicia Office aplicación, el complemento se descarga automáticamente. Si el complemento admite comandos de complemento, el complemento aparecerá automáticamente en la cinta de opciones dentro de la Office aplicación.
 
@@ -47,7 +50,7 @@ Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-La implementación centralizada de complementos requiere que los usuarios usen licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3) (y han iniciado sesión en Office con su identificador de organización) y tienen buzones de correo Exchange Online y activos Exchange Online. El directorio de suscripción debe estar en o federado para Azure Active Directory.
+La implementación centralizada de complementos requiere que los usuarios usen licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3) (y se han iniciado sesión en Office su identificador de organización) y tener Exchange Online buzones de correo Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory.
 Puede ver requisitos específicos para Office y Exchange a continuación, o usar el Control de compatibilidad de implementación [centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
@@ -60,7 +63,7 @@ La implementación centralizada no es compatible con lo siguiente:
 - Implementación de complementos de modelo de objetos componentes (COM) o Visual Studio Tools para Office (VSTO).
 - Implementaciones de Microsoft 365 que no incluyen Exchange Online como SKU: Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para Enterprise.
 
-### <a name="office-requirements"></a>Office Requisitos
+### <a name="office-requirements"></a>Office requisitos
 
 - Para word, Excel y PowerPoint complementos, los usuarios deben usar una de las siguientes opciones:
   - En un dispositivo Windows, versión 1704 o posterior de licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3).

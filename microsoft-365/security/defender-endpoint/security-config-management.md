@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a890bf27cb24418faef52a56a29c902ad79fd374
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: a8a57b14480c45ddbc154d71bc4f2ded315c83ae
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786151"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262864"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Administrar las opciones de configuración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager
 
@@ -66,7 +66,7 @@ Siga estos pasos para validar que los puntos de conexión han completado correct
 
 1.  Compruebe que el dispositivo aparece en la sección Inventario de dispositivos de [Microsoft 365 Defender](https://security.microsoft.com/).
 
-2.  En el [Azure Active Directory,](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers)compruebe que el dispositivo se ha inscrito correctamente.
+2.  En el [Azure Active Directory,](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/)compruebe que el dispositivo se ha inscrito correctamente.
 
 3.  En el [Centro Microsoft Endpoint Manager administración,](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)compruebe que el dispositivo se ha inscrito correctamente si lo busca en la sección Dispositivos **> Todos los** dispositivos.
 

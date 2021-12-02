@@ -1,5 +1,5 @@
 ---
-title: Agregar espacio de almacenamiento para la suscripción
+title: Agregar más SharePoint almacenamiento a la suscripción
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,21 @@ ms.custom:
 - commerce_purchase
 - AdminTemplateSet
 search.appverid: MET150
-description: Agregue almacenamiento de archivos en su Microsoft 365 suscripción. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint Online y OneDrive.
+description: Agregue almacenamiento de archivos en su Microsoft 365 suscripción. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint.
 ms.date: 04/02/2021
-ms.openlocfilehash: 8a9fa6660164f827a0cafbe128d993adac7e983c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7046d8a78ebbf79fa25018c80b3c4ad0c5e1f166
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160553"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262756"
 ---
-# <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
-
-Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios de SharePoint Online, puede aumentar el almacenamiento de su suscripción si su plan cumple con los requisitos. Si no ve el Office 365 Extra File Storage **en** la lista de complementos disponibles, significa que su plan no es apto. Para obtener más información, vea [¿Mi plan es apto?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+# <a name="add-more-sharepoint-storage-to-your-subscription"></a>Agregar más SharePoint almacenamiento a la suscripción
+Si empiezas a que te quedos sin almacenamiento para los sitios SharePoint, puedes agregar almacenamiento a tu suscripción si tu plan es apto. Si no ve el Office 365 Extra File Storage **en** la lista de complementos disponibles, significa que su plan no es apto. Para obtener más información, vea [¿Mi plan es apto?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
 > Si compró la suscripción a través de licencias  por volumen o un CSP, no puede comprar Office 365 Extra File Storage para su organización directamente a Microsoft. Póngase en contacto con su representante o partner para obtener ayuda.
+> Para obtener información sobre OneDrive almacenamiento, vea [Set the default storage space for OneDrive users](/onedrive/set-default-storage-space).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -56,7 +56,7 @@ Después de determinar cuánto almacenamiento está usando, puede agregar o quit
   
 Para obtener información sobre cómo establecer límites de almacenamiento de colecciones de [sitios,](/sharepoint/manage-site-collection-storage-limits)vea Manage site collection storage limits .
   
-## <a name="add-storage-to-your-subscription"></a>Agregar almacenamiento a la suscripción
+## <a name="buy-the-extra-storage-add-on"></a>Comprar el complemento de almacenamiento adicional
 
 Si aún no has comprado almacenamiento adicional para la suscripción, puedes hacerlo.
 
@@ -68,7 +68,7 @@ Si aún no has comprado almacenamiento adicional para la suscripción, puedes ha
 6. En la **página ¿Cómo se ve esto?,** compruebe el número de gigabytes de almacenamiento que seleccionó, revise la información de precios y, a continuación, **seleccione Siguiente**.
 7. En la **página Completar pedido,** compruebe el total. Si necesita realizar cambios, seleccione **Editar orden**. Si el pedido requiere una comprobación de crédito, active la casilla. Cuando haya terminado, seleccione **Realizar pedido** Vaya a Inicio \> **de administración.**
 
-## <a name="increase-or-decrease-storage"></a>Aumentar o disminuir el almacenamiento
+## <a name="increase-or-decrease-your-extra-storage"></a>Aumentar o disminuir el almacenamiento adicional
 
 Si ya compró almacenamiento de archivos adicional a través del complemento **Office 365 Extra File Storage,** puede usar estos pasos para aumentar o disminuir el espacio de almacenamiento adicional para su suscripción. Puede reducir el almacenamiento hasta 1 gigabyte. Para quitar todo el espacio de almacenamiento adicional, póngase [en contacto con el soporte técnico](../business-video/get-help-support.md).
 
@@ -107,4 +107,4 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 ## <a name="related-content"></a>Contenido relacionado
 
 [Administrar límites de almacenamiento de sitios](/sharepoint/manage-site-collection-storage-limits) (artículo)\
-[Establecer el espacio de almacenamiento predeterminado para OneDrive usuarios](/onedrive/set-default-storage-space) (artículo)
+

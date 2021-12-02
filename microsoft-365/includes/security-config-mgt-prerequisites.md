@@ -4,12 +4,12 @@ description: archivo include
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 2ae8fa9e8cb3c28cf20ab9c57183b43d067b16b6
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 55b0bc3800ba31c325d9c27906e72d6dd7e9bbea
+ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61222286"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61262861"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -19,7 +19,9 @@ Revise las siguientes secciones para ver los requisitos de security management f
 
 Cuando un dispositivo se incorpora a Microsoft Defender para endpoint:
 
-- Los dispositivos sin Endpoint Manager presencia habilitan la característica administración de seguridad
+
+- El dispositivo se busca una presencia de Endpoint Manager existente, que es una inscripción de administración de dispositivos móviles (MDM) en Intune
+- Los dispositivos sin una Endpoint Manager de seguridad habilitarán la característica administración de seguridad
 - Se crea una confianza con Azure Active Directory si aún no existe una
 - Azure Active Directory confianza se usa para comunicarse con Endpoint Manager (Intune) y recuperar directivas
 - La recuperación de directivas Endpoint Manager se aplica en el dispositivo mediante Microsoft Defender para endpoint
@@ -50,14 +52,13 @@ Las directivas de Microsoft Defender para la administración de seguridad de pun
 - Windows Server 2012 R2 con [Microsoft Defender para Down-Level dispositivos](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2016 con [Microsoft Defender para Down-Level dispositivos](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2019 (con [KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0))
-- Windows Server 2022
-
+- Windows Server 2022 (con [KB5006745](https://support.microsoft.com/topic/october-26-2021-kb5006745-os-build-20348-320-preview-8ff9319a-19e7-40c7-bbd1-cd70fcca066c))
 
 ### <a name="licensing-and-subscriptions"></a>Licencias y suscripciones
 
 Para usar la administración de seguridad para Microsoft Defender para Endpoint, necesita:
 
-- Una suscripción que concede licencias para Microsoft Defender para Endpoint, como Microsoft 365, o una licencia independiente solo para Microsoft Defender para Endpoint. Para obtener información actual acerca de las opciones, vea [Requisitos mínimos de Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements).
+- Una suscripción que concede licencias para Microsoft Defender para Endpoint, como Microsoft 365, o una licencia independiente solo para Microsoft Defender para Endpoint. Para obtener información actual acerca de las opciones, vea [Requisitos mínimos de Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
 
   *Cualquier suscripción* que conceda licencias de Punto de conexión de Microsoft Defender también concede a su inquilino acceso al nodo de seguridad endpoint del centro de administración de Microsoft Endpoint Manager cliente. El nodo de seguridad de extremo es donde configurarás e implementarás directivas para administrar Microsoft Defender para Endpoint para tus dispositivos y supervisar el estado del dispositivo.
 
@@ -65,18 +66,44 @@ Para usar la administración de seguridad para Microsoft Defender para Endpoint,
 
 El siguiente diagrama es una representación conceptual de la solución de administración de configuración de seguridad de Microsoft Defender para endpoints.
 
-
 :::image type="content" alt-text="Representación conceptual de la solución de administración de configuración de seguridad de Microsoft Defender para endpoints" source="../security/defender-endpoint/images/mde-architecture.png":::
-
 
 1. Dispositivos incorporados a Microsoft Defender para endpoint.
 
 2. Se establece una confianza entre cada dispositivo y Azure AD. Cuando un dispositivo tiene una confianza existente, se usa. Cuando los dispositivos no se han registrado, se crea una nueva confianza.
 
-
 3. Los dispositivos usan su Azure AD identity para comunicarse con Endpoint Manager. Esta identidad permite Microsoft Endpoint Manager distribuir directivas dirigidas a los dispositivos cuando se desensa.
 
 4. Defender for Endpoint notifica el estado de la directiva de nuevo a Endpoint Manager.
+
+## <a name="which-solution-should-i-use"></a>¿Qué solución debo usar?
+
+Microsoft Endpoint Manager incluye varios métodos y tipos de directiva para administrar la configuración de Defender para Endpoint en dispositivos.
+
+Cuando las necesidades de protección de dispositivos se extienden más allá de la administración de Defender for Endpoint, consulta Información general sobre protección de  dispositivos para obtener información sobre las funcionalidades adicionales proporcionadas por Microsoft Endpoint Manager para ayudar a proteger los dispositivos, como el cumplimiento de dispositivos, las aplicaciones administradas, las directivas de protección de aplicaciones y la integración con partners de cumplimiento de terceros y defensa contra amenazas móviles. [](/mem/intune/protect/device-protect)  
+
+La tabla siguiente puede ayudarle a comprender qué directivas que pueden configurar la configuración de MDE son compatibles con dispositivos administrados por los distintos escenarios. Al implementar una directiva compatible con la configuración de seguridad de *MDE* y *Microsoft Endpoint Manager,* los dispositivos que ejecutan MDE solo pueden procesar una instancia de dicha directiva y los dispositivos administrados por Intune o Configuration Manager.
+
+| Microsoft Endpoint Manager  | Carga de trabajo | Configuración de seguridad de MDE  |  Microsoft Endpoint Manager |
+|----------------|----------------|-------------------|------------|
+| Seguridad de punto de conexión    | Antivirus                   | ![Compatible](../media/green-check.png)  | ![Compatible](../media/green-check.png)  |
+|                      | Cifrado de disco   |           | ![Compatible](../media/green-check.png)  |
+|                      | Firewall (perfil y reglas)                | ![Compatible](../media/green-check.png) | ![Compatible](../media/green-check.png)  |
+|                      | Detección y respuesta de puntos de conexión        | ![Compatible](../media/green-check.png) | ![Compatible](../media/green-check.png)  |
+|                      | Reducción de la superficie expuesta a ataques    |           | ![Compatible](../media/green-check.png)  |
+|                      | Protección de cuentas       |       | ![Compatible](../media/green-check.png)  |
+|                      | Cumplimiento de dispositivos     |   | ![Compatible](../media/green-check.png)  |
+|                      | Acceso condicional    |   | ![Compatible](../media/green-check.png)  |
+|                      | Líneas base de seguridad      |   | ![Compatible](../media/green-check.png)  |
+
+**Las directivas de seguridad de puntos** de conexión son grupos discretos de configuraciones diseñadas para su uso por los administradores de seguridad que se centran en proteger los dispositivos de la organización.
+
+- **Las** directivas de antivirus administran las configuraciones de seguridad que se encuentran en Microsoft Defender para endpoint. Consulte  [directiva de antivirus](/mem/intune/protect/endpoint-security-antivirus-policy) para la seguridad de puntos de conexión.
+- **Las directivas de reducción** de superficie de ataques se centran en minimizar los lugares donde su organización es vulnerable a ciberamenazas y ataques. Para obtener más información, consulta [Información](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) general sobre la reducción [](/mem/intune/protect/endpoint-security-asr-policy) de superficie de ataque en la documentación Windows protección contra amenazas y la directiva de reducción de superficie de ataque para la seguridad de los puntos de conexión.
+- **Las directivas de** detección y respuesta de puntos de conexión (EDR) administran las capacidades de Defender for Endpoint que proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. Según las EDR de seguridad, los analistas de seguridad pueden priorizar las alertas de forma eficaz, obtener visibilidad en el ámbito completo de una infracción y tomar medidas de respuesta para corregir las amenazas. Consulte [detección y respuesta de puntos de conexión](/mem/intune/protect/endpoint-security-edr-policy) directiva de seguridad de puntos de conexión.
+- **Las directivas** de firewall se centran en el firewall de Defender en sus dispositivos. Consulte [directiva de firewall](/mem/intune/protect/endpoint-security-firewall-policy) para la seguridad de puntos de conexión.
+- **Las reglas de** firewall configuran reglas granulares para firewalls, incluidos puertos, protocolos, aplicaciones y redes específicos. Consulte [directiva de firewall](/mem/intune/protect/endpoint-security-firewall-policy) para la seguridad de puntos de conexión.
+- **Las líneas base de** seguridad incluyen configuraciones de seguridad preconfiguradas que definen la postura de seguridad recomendada por Microsoft para diferentes productos como Defender, Edge o Windows. Las recomendaciones predeterminadas son de los equipos de productos relevantes y permiten implementar rápidamente la configuración segura recomendada en dispositivos. Aunque la configuración está preconfigurada en cada línea base, puede crear instancias personalizadas de ellas para establecer las expectativas de seguridad de la organización. Consulta [líneas base de seguridad](/mem/intune/protect/security-baselines) para Intune.
 
 ## <a name="configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management"></a>Configurar el espacio empresarial para admitir Microsoft Defender para la administración de configuración de endpoint security
 
@@ -84,11 +111,11 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 
 1. Inicie sesión en [Microsoft 365 Defender portal](https://security.microsoft.com/) y vaya **a Configuración** Endpoints Configuration Management Enforcement Scope y habilite las plataformas para la  >    >    >   administración de la configuración de seguridad:
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Habilite Microsoft Defender para la administración de la configuración del punto de conexión en el portal Microsoft 365 Defender usuario.":::
+   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Habilita Microsoft Defender para la administración de la configuración de puntos de conexión en la consola de Defender.":::
 
-2. Asegúrese de que los usuarios relevantes tienen permisos para administrar la configuración de seguridad de puntos de conexión en Microsoft Endpoint Manager o conceder dichos permisos mediante la configuración de un rol en el portal de Microsoft 365 Defender extremo. Vaya a **Configuración**  >  **Roles Agregar**  >  **elemento**:
+2. Asegúrese de que los usuarios relevantes tienen permisos para administrar la configuración de seguridad de puntos de conexión en Microsoft Endpoint Manager o conceder dichos permisos mediante la configuración de un rol en el portal de Defender. Vaya a **Configuración**  >  **Roles Agregar**  >  **elemento**:
 
-   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Cree un nuevo rol en el portal Microsoft 365 Defender usuario.":::
+   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Cree un nuevo rol en el portal de Defender.":::
 
    > [!TIP]
    > Puede modificar roles existentes y agregar los permisos necesarios frente a la creación de roles adicionales en Microsoft Defender para endpoint
@@ -97,7 +124,7 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 
    :::image type="content" source="../media/add-role.png" alt-text="Conceder permisos a los usuarios para administrar la configuración.":::
 
-4. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+4. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 5. Seleccione **Endpoint security** Microsoft Defender for  >  **Endpoint** y establezca Allow Microsoft Defender for Endpoint to enforce Endpoint Security **Configurations (Preview)** en **On**.
 
@@ -109,8 +136,9 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 
 Microsoft Defender para endpoint admite varias opciones para incorporar dispositivos. Para obtener instrucciones actuales, consulta Herramientas de incorporación y métodos [para Windows dispositivos en](/microsoft-365/security/defender-endpoint/security-config-management) la documentación de Defender para endpoints.
 
+
 > [!IMPORTANT]
-> Después de que un dispositivo se incorpore con Microsoft Defender para Endpoint, debe y etiquetarse con **MDE-Management** para poder inscribirse en Administración de seguridad para Microsoft Defender para Endpoint. Para obtener más información sobre el etiquetado de dispositivos en MDE, consulta [*Crear y administrar etiquetas de dispositivo.*](/microsoft-365/security/defender-endpoint/machine-tag)
+> Después de que un dispositivo se incorpore con Microsoft Defender para Endpoint, debe y etiquetarse con **MDE-Management** para poder inscribirse en Administración de seguridad para Microsoft Defender para Endpoint. Para obtener más información sobre el etiquetado de dispositivos en MDE, consulta [*Crear y administrar etiquetas de dispositivo.*](/microsoft-365/security/defender-endpoint/machine-tags)
 
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Coexistencia con Microsoft Endpoint Configuration Manager
@@ -127,7 +155,12 @@ Para identificar los dispositivos que se han inscrito en Microsoft Defender para
 
 2. Vaya a  >  **Dispositivos Todos los** dispositivos y, a continuación, seleccione la columna Administrado **por** para ordenar la vista de dispositivos.
 
-   Los dispositivos que se incorpore a Microsoft Defender para Endpoint y que se han registrado pero no están administrados por Intune o Configuration Manager muestran **Microsoft Defender** para endpoint en la columna *Administrado por.* Estos son los dispositivos que pueden recibir directivas de administración de seguridad para Microsoft Defender para endpoint.
+   Los dispositivos que se incorpore a Microsoft Defender para Endpoint y se han registrado pero no están administrados por Intune muestran **Microsoft Defender para** Endpoint en la columna Administrado *por.* Estos son los dispositivos que pueden recibir directivas de administración de seguridad para Microsoft Defender para endpoint.
+
+   También encontrarás dos etiquetas para dispositivos que usan la administración de seguridad para Microsoft Defender para endpoint:
+
+   - **MDEJoined:** se ha agregado a los dispositivos unidos al directorio como parte de este escenario.
+   - **MDEManaged:** se ha agregado a dispositivos que usan activamente el escenario de administración de seguridad. Esta etiqueta se quita del dispositivo si Defender para endpoint deja de administrar la configuración de seguridad.
 
 Puede crear grupos para estos dispositivos [en Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) o desde el centro de [administración Microsoft Endpoint Manager.](/mem/intune/fundamentals/groups-add)
 
@@ -145,7 +178,7 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
 >
 > Microsoft Endpoint Manager permite implementar varias instancias de cada tipo de directiva de seguridad de extremo en el mismo dispositivo, con cada instancia de directiva que recibe el dispositivo por separado. Por lo tanto, un dispositivo puede recibir configuraciones independientes para la misma configuración de diferentes directivas, lo que da como resultado un conflicto. Algunas opciones de configuración (como exclusiones de antivirus) se combinarán en el cliente y se aplicarán correctamente.
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Vaya a **Seguridad de extremo** y, a continuación, seleccione el tipo de directiva que desea configurar, ya sea Antivirus o Firewall y, a continuación, seleccione Crear **directiva**.
 
@@ -166,6 +199,11 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
    - Para la directiva de detección y respuesta de puntos de conexión, seleccione:
      - Plataforma: **Windows 10, Windows 11 y Windows server (versión preliminar)**
      - Perfil: **detección y respuesta de extremos (versión preliminar)**
+
+   >[!Note]
+   > Estos perfiles se aplican tanto a dispositivos que se comunican a través de administración de dispositivos móviles (MDM) con Microsoft Intune como a dispositivos que se comunican con el cliente de Microsoft Defender para endpoint.
+   >
+   > Asegúrese de revisar la segmentación y los grupos según sea necesario.
 
 4. Seleccione **Crear**.
 
@@ -189,4 +227,4 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
 
 9. Espere a que se asigne la directiva y vea una indicación correcta de que se aplicó la directiva.
 
-10. Puede validar que la configuración se aplica localmente en el cliente mediante la utilidad de comandos [Get-MpPreference.](/powershell/module/defender/get-mppreference#examples)
+10. Puede validar que la configuración se haya aplicado localmente en el cliente mediante la utilidad de comandos [Get-MpPreference.](/powershell/module/defender/get-mppreference#examples)
