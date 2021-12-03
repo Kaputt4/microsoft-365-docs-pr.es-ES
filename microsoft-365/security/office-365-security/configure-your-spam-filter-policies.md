@@ -14,15 +14,16 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: caf6d596f6be8e405a75eab10be9daee1aa0ccf6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 03ed0e111e86a4283e5f54fd4cb61566e88979fb
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701412"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284474"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -62,7 +63,7 @@ Para aumentar la eficacia del filtrado de correo no deseado, puede crear directi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
+- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -83,7 +84,7 @@ Para aumentar la eficacia del filtrado de correo no deseado, puede crear directi
 
 La creación de una directiva contra correo no deseado en el portal de Microsoft 365 Defender crea una regla de filtro de correo no deseado y la directiva de filtro de correo no deseado asociada al mismo tiempo con el mismo nombre para ambas.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la página de **directivas antispam**, haga clic en el ![icono Crear.](../../media/m365-cc-sc-create-icon.png) **Crear directiva**, y luego, seleccione **Entrada** en la lista desplegable.
 
@@ -147,7 +148,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
      ****
 
-     |Action|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)|Alto<br>confianza<br>suplantación de identidad (phishing)|Masivo|
+     |Acción|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)|Alto<br>confianza<br>suplantación de identidad (phishing)|Masivo|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Mover el mensaje a la carpeta Correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|
      |**Agregar encabezado X**: agrega un encabezado X al encabezado del mensaje y entrega el mensaje al buzón. <p> Especifique el nombre de campo del encabezado X (no el valor) más adelante en el cuadro **Agregar este texto de encabezado X**. <p> Para los veredictos **Correo no deseado** y **Correo no deseado de alta confianza**, el mensaje se mueve a la carpeta Correo no deseado.<sup>1,2</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
@@ -166,10 +167,12 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      >
      > <sup>3</sup> Un valor de **Seleccione política** en blanco significa que se usa la política de cuarentena predeterminada para ese veredicto en particular. Cuando más adelante usted edite la política contra correo no deseado o vea la configuración, se muestra el nombre predeterminado de la política sobre cuarentena. Para obtener más información acerca de las políticas de cuarentena predeterminadas que se usan para los veredictos de filtro de correo no deseado, vea [esta tabla](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
-   - **Mantener correo no deseado en cuarentena durante este número de días**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará y no se podrá recuperar. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días.
+   - **Mantener correo no deseado en cuarentena durante este número de días**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará y no se podrá recuperar. Los valores válidos están comprendidos entre 1 y 30 días.
 
      > [!NOTE]
-     > Esta configuración también controla cuánto tiempo se conservan los mensajes que se han puesto en cuarentena mediante directivas contra suplantación de identidad. Para obtener más información, vea [Mensajes en cuarentena en EOP y Defender para Office 365](quarantine-email-messages.md).
+     > El valor predeterminado es 15 días en la directiva contra correo no deseado predeterminada y en las nuevas directivas contra correo no deseado que cree en PowerShell. El valor predeterminado es 30 días en las nuevas directivas contra correo no deseado que cree en el portal de Microsoft 365 Defender.
+     >
+     > Esta configuración también controla cuánto tiempo se conservan los mensajes que se han puesto en cuarentena mediante directivas contra **suplantación de identidad**. Para obtener más información, vea [Mensajes en cuarentena en EOP y Defender para Office 365](quarantine-email-messages.md).
 
    - **Agregar este texto de encabezado X**: este cuadro es obligatorio y solo está disponible si se ha seleccionado **Agregar encabezado X** como acción para un veredicto de filtrado de correo no deseado. El valor que especifique es el *nombre* del campo de encabezado que se agrega al encabezado del mensaje. El *valor* del campo de encabezado siempre es `This message appears to be spam`.
 
@@ -244,7 +247,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Usar el portal de Microsoft 365 Defender para ver directivas contra correo no deseado
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la página de directivas **antispam**, busque uno de los siguientes valores:
    - El valor **Tipo** es **Directiva contra el correo no deseado personalizada**
@@ -261,7 +264,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Usar el portal de Microsoft 365 Defender para modificar directivas contra correo no deseado
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la página **Directivas contra el correo no deseado**, seleccione una directiva contra el correo no deseado en la lista. Para ello, haga clic en el nombre:
    - Una directiva personalizada que creó, cuyo valor de la columna **Tipo** es **Directiva contra correo no deseado personalizada**.
@@ -277,7 +280,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 No se puede deshabilitar la directiva contra correo no deseado predeterminada.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre.
 
@@ -302,7 +305,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 - En el portal de Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva contra el correo no deseado después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de filtrado de correo no deseado (lo cual puede afectar a la prioridad de las reglas existentes).
 - Las directivas contra correo no deseado se procesan en el orden en el que se muestran (la primera directiva tiene el valor de **Prioridad** 0). La directiva predeterminada contra correo no deseado tiene el valor de prioridad **Más bajo** y no puede cambiarlo.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre.
 
@@ -319,7 +322,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 
 Cuando se utiliza el portal de Microsoft 365 Defender para eliminar una directiva antispam personalizada, se eliminan tanto la regla del filtro antispam como la directiva del filtro antispam correspondiente. No se puede eliminar la directiva antispam predeterminada.
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
 
 2. En la página **Directivas contra correo no deseado**, seleccione una directiva con el **Valor de tipo** de **Directiva personalizada contra el correo no deseado** de la lista. Para ello, haga clic en el nombre. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en ![icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png)**Eliminar directiva**.
 

@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 8647bb2ff9fdb273e1c33293446a04e57da741f0
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: c12e492b3a36f8da98fd0021bd3354c0e340d538
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218711"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283406"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -120,7 +120,7 @@ En cualquier caso, Microsoft no controla ni limita la ubicación desde la cual l
 
   - La residencia de datos de la aplicación personal se basa en la ubicación del buzón del usuario.
   
-  - La región de datos de administrador/líder está determinada por la región principal del inquilino, no de usuarios individuales.
+  - La región de datos de administrador/líder y avanzado está determinada por la región principal del inquilino, no de usuarios individuales.
 
 ## <a name="data-center-locations"></a>Ubicaciones de los centros de datos
 
