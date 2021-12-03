@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opción de usar un dominio de su propiedad o comprar uno durante el registro.
-ms.openlocfilehash: 3144c61b0aa6f329fa4f0159cedbad21c2038169
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9893084ad351bd6d1195df9f066f3a540af5ded2
+ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169352"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61254446"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurar Microsoft 365 Empresa Estándar con un dominio nuevo o existente
 
@@ -166,10 +166,18 @@ Microsoft 365 no incluye un sitio web público para su empresa. Si desea configu
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-## <a name="related-content"></a>Contenido relacionado
+## <a name="invite-users-to-join-your-subscription-and-organization"></a>Invitar a usuarios a unirse a su suscripción y organización
+
+Una vez que haya configurado su organización, puede invitar a otros usuarios a unirse a su suscripción de Microsoft 365 Empresa. Obtendrán acceso a todas las características de la suscripción.
+
+[Invitar a usuarios a mi suscripción](../simplified-signup/admin-invite-business-standard.md)
+
+Informe a los usuarios de que pueden seguir los pasos de los artículos siguientes para unirse a su organización y suscripción.
+
+- [Aceptar una invitación por correo electrónico](../simplified-signup/user-invite-business-standard.md)
+
+- [Aceptar una invitación por correo electrónico utilizando una cuenta de Outlook, Yahoo, Gmail u otra (usuario)](../simplified-signup/user-invite-msa-nodomain-join.md)
+
+## <a name="related-topics"></a>Temas relacionados
 
 [Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar](../simplified-signup/migrate-data-business-standard.md)
-
-[Registrarse para una suscripción a Microsoft 365 Empresa Estándar](../simplified-signup/signup-business-standard.md)
-
-[Aceptar una invitación a una suscripción de Microsoft 365 Empresa Estándar (usuario)](../simplified-signup/user-invite-business-standard.md)
