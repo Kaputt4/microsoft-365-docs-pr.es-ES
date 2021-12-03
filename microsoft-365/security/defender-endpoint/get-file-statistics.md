@@ -2,7 +2,6 @@
 title: OBTENER API de estadísticas de archivos
 description: Obtenga información sobre cómo usar la API Obtener estadísticas de archivos para recuperar las estadísticas del archivo especificado en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, get, file, statistics
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c30422d7fe24fc50f378c65212357f954d05c601
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 83901799d6dc5e8f6aa81ad57580e64167bfa134
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168635"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284210"
 ---
 # <a name="get-file-statistics-api"></a>OBTENER API de estadísticas de archivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -75,7 +74,7 @@ Authorization|Cadena|Portador {token}. **Necesario**.
 
 ## <a name="request-uri-parameters"></a>Parámetros uri de solicitud
 
-Nombre|Tipo|Description
+Nombre|Tipo|Descripción
 :---|:---|:---
 lookBackHours|Int32|Define las horas que buscamos para obtener las estadísticas. El valor predeterminado es 30 días. **Opcional**.
 

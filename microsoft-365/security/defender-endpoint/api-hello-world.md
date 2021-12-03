@@ -3,7 +3,6 @@ title: Hello World para Microsoft Defender para la API de punto de conexión
 ms.reviewer: ''
 description: Crea una llamada API de estilo "Hello world" a la API de Microsoft Defender para Endpoint.
 keywords: apis, api admitidas, búsqueda avanzada, consulta, atp de Microsoft Defender, Microsoft Defender para punto de conexión
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 81e96d8846d507a7b763d79f419695b835ea6cbc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 55d01dfe6d0b6fd69bf32016b1b5dd585827e168
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167603"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282998"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender para la API de punto de conexión: Hello World
 
@@ -30,8 +29,8 @@ ms.locfileid: "61167603"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 >¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -60,7 +59,7 @@ Para la fase de registro  de aplicaciones, debe tener un rol de administrador gl
 
 2. Vaya a **Azure Active Directory** \> **registros de aplicaciones** Nuevo \> **registro**.
 
-   ![Imagen de Microsoft Azure navegación al registro de aplicaciones.](images/atp-azure-new-app2.png)
+   :::image type="content" alt-text="Imagen de Microsoft Azure navegación al registro de aplicaciones." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, haga clic **en Registrar**.
 
@@ -68,39 +67,43 @@ Para la fase de registro  de aplicaciones, debe tener un rol de administrador gl
 
    - En la página de la aplicación, haga clic en Permisos de **API** Agregar API de permisos que mi organización usa > tipo \>  \>  **WindowsDefenderATP** y haga clic en **WindowsDefenderATP**.
 
-   - **Nota:** WindowsDefenderATP no aparece en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
+     > [!NOTE]
+     > WindowsDefenderATP no aparece en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
 
-   ![Imagen de acceso a la API y selección de API1.](images/add-permission.png)
+     :::image type="content" alt-text="Imagen de acceso a la API y selección de API1." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - Elija **Permisos de aplicación** \> **Alert.Read.All** > Haga clic en Agregar **permisos**
+   - Elija **Permisos de aplicación** \> **Alert.Read.All** > Haga clic en Agregar **permisos**.
 
-   ![Imagen de acceso a la API y selección de API2.](images/application-permissions.png)
+     :::image type="content" alt-text="Imagen de acceso a la API y selección de API2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
-   **Nota importante:** Debe seleccionar los permisos pertinentes. "Leer todas las alertas" es solo un ejemplo.
+     > [!IMPORTANT]
+     > Debe seleccionar los permisos pertinentes. "Leer todas las alertas" es solo un ejemplo.
 
-     Por ejemplo,
+     Por ejemplo:
 
-     - Para [ejecutar consultas avanzadas,](run-advanced-query-api.md)seleccione el permiso "Ejecutar consultas avanzadas"
-     - Para [aislar una máquina,](isolate-machine.md)seleccione el permiso "Aislar máquina"
+     - Para [ejecutar consultas avanzadas,](run-advanced-query-api.md)seleccione el permiso "Ejecutar consultas avanzadas".
+     - Para [aislar una máquina,](isolate-machine.md)seleccione el permiso "Aislar máquina".
      - Para determinar qué permiso necesita, consulte la sección **Permisos** de la API a la que está interesado llamar.
 
-5. Haga clic **en Conceder consentimiento**
+5. Haga clic **en Conceder consentimiento**.
 
-   - **Nota:** Cada vez que agregue permiso, debe hacer clic en **Conceder consentimiento** para que el nuevo permiso suba a efecto.
+   > [!NOTE]
+   > Cada vez que agregue permisos, debe hacer clic en **Conceder consentimiento** para que el nuevo permiso suba a efecto.
 
    ![Imagen de Conceder permisos.](images/grant-consent.png)
 
 6. Agregue un secreto a la aplicación.
 
-   - Haga **clic en Certificados & secretos,** agregue una descripción al secreto y haga clic en **Agregar**.
+    Haga **clic en Certificados & secretos,** agregue una descripción al secreto y haga clic en **Agregar**.
 
-    **Importante:** Después de hacer clic en Agregar, **copie el valor secreto generado**. No podrás recuperarlo después de salir.
+    > [!IMPORTANT]
+    > Después de hacer clic en Agregar, **copie el valor secreto generado**. No podrás recuperarlo después de salir.
 
     ![Imagen de crear clave de aplicación.](images/webapp-create-key2.png)
 
-7. Anote el identificador de la aplicación y el identificador de inquilino:
+7. Anote el identificador de aplicación y el identificador de inquilino.
 
-   - En la página de la aplicación, vaya a **Información general** y copie lo siguiente:
+   En la página de la aplicación, vaya a **Información general** y copie lo siguiente:
 
    ![Imagen del identificador de aplicación creado.](images/app-and-tenant-ids.png)
 
@@ -108,8 +111,8 @@ Para la fase de registro  de aplicaciones, debe tener un rol de administrador gl
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>Paso 2: obtener un token con la aplicación y usar este token para obtener acceso a la API.
 
-- Copie el script siguiente en PowerShell ISE o en un editor de texto y guárdelo como "**Get-Token.ps1**"
-- Si se ejecuta este script, se generará un token y se guardará en la carpeta de trabajo con el nombre "**Latest-token.txt**".
+- Copie el script siguiente en PowerShell ISE o en un editor de texto y guárdelo como **Get-Token.ps1**.
+- Si se ejecuta este script, se generará un token y se guardará en la carpeta de trabajo con el nombre **Latest-token.txt**.
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -135,12 +138,12 @@ Para la fase de registro  de aplicaciones, debe tener un rol de administrador gl
 
 - Comprobación de la cordura:
   - Ejecute el script.
-  - En el explorador, vaya a: <https://jwt.ms/>
+  - En el explorador, vaya a: <https://jwt.ms/> .
   - Copie el token (el contenido del Latest-token.txt archivo).
   - Pegue en el cuadro superior.
-  - Busque la sección "roles". Busque el rol Alert.Read.All.
+  - Busque la sección "roles". Busque el _rol Alert.Read.All._
 
-  ![Imagen jwt.ms.](images/api-jwt-ms.png)
+  :::image type="content" alt-text="Imagen jwt.ms." source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
 
 ### <a name="lets-get-the-alerts"></a>Vamos a obtener las alertas.
 

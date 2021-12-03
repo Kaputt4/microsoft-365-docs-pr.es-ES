@@ -2,7 +2,6 @@
 title: Exportar evaluación de inventario de software por dispositivo
 description: Devuelve una tabla con una entrada para cada combinación única de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 keywords: api, apis, evaluación de exportación, evaluación por dispositivo, informe de evaluación de vulnerabilidad, evaluación de vulnerabilidad de dispositivo, informe de vulnerabilidad de dispositivo, evaluación de configuración segura, informe de configuración segura, evaluación de vulnerabilidades de software, informe de vulnerabilidades de software, informe de vulnerabilidad por máquina,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f7feb83c867d008e027f21c3247c80ec2a7fc638
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 950892e39d91c1aeaa2179eac56d58bfa2ef9030
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168995"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283457"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportar evaluación de inventario de software por dispositivo
 
@@ -29,7 +28,7 @@ ms.locfileid: "61168995"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -91,22 +90,22 @@ GET /api/machines/SoftwareInventoryByMachine
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
-DeviceId|string|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
+DeviceId|cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
 DiskPaths|Array[string]|Prueba en disco de que el producto está instalado en el dispositivo.|[ "C: \\ Archivos de programa (x86) \\ Microsoft \\ Silverlight \\ Application \\silverlight.exe" ]
-EndOfSupportDate|string|La fecha en la que la compatibilidad con este software tiene o finalizará.|2020-12-30
-EndOfSupportStatus|string|Estado de finalización de la compatibilidad. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Próximos EOS
+EndOfSupportDate|cadena|La fecha en la que la compatibilidad con este software tiene o finalizará.|2020-12-30
+EndOfSupportStatus|cadena|Estado de finalización de la compatibilidad. Puede contener estos valores posibles: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Próximos EOS
 Id|string|Identificador único del registro.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|Entero|Número de debilidades de este software en este dispositivo|3
-OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Se trata de sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
-RbacGroupName|string|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
+OSPlatform|cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Se trata de sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10 y Windows 11
+RbacGroupName|cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
 RegistryPaths|Array[string]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
-SoftwareFirstSeenTimestamp|string|La primera vez que se vio este software en el dispositivo.|2019-04-07 02:06:47
-SoftwareName|string|Nombre del producto de software.|Silverlight
-SoftwareVendor|string|Nombre del proveedor de software.|microsoft
-SoftwareVersion|string|Número de versión del producto de software.|81.0.4044.138
+SoftwareFirstSeenTimestamp|cadena|La primera vez que se vio este software en el dispositivo.|2019-04-07 02:06:47
+SoftwareName|cadena|Nombre del producto de software.|Silverlight
+SoftwareVendor|cadena|Nombre del proveedor de software.|microsoft
+SoftwareVersion|cadena|Número de versión del producto de software.|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 Ejemplos
@@ -127,9 +126,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
-            "softwareName": "windows_10",
+            "softwareName": "windows_10" "Windows_11",
             "softwareVersion": "10.0.17763.1637",
             "numberOfWeaknesses": 58,
             "diskPaths": [],
@@ -142,7 +141,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": ".net_framework",
             "softwareVersion": "4.0.0.0",
@@ -159,7 +158,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "system_center_2012_endpoint_protection",
             "softwareVersion": "4.7.214.0",
@@ -176,7 +175,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "configuration_manager",
             "softwareVersion": "5.0.8634.1000",
@@ -193,7 +192,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "system_center_2012_endpoint_protection",
             "softwareVersion": "4.10.209.0",
@@ -252,10 +251,10 @@ GET /api/machines/SoftwareInventoryExport
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
+GeneratedTime|cadena|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Ejemplos
@@ -280,7 +279,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 }
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 - [Exportar evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)

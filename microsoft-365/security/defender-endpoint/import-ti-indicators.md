@@ -2,7 +2,6 @@
 title: API importar indicadores
 description: Obtenga información sobre cómo usar el lote Importar lote de API de indicadores en Microsoft Defender para endpoint.
 keywords: apis, api admitidas, submit, ti, indicator, update
-search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 60d587637f282b36c9d13280fc3f488ad86a80b5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 7306489e537e583055e037ce9d8ce04add248844
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167111"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283706"
 ---
 # <a name="import-indicators-api"></a>API importar indicadores
 
@@ -28,8 +27,8 @@ ms.locfileid: "61167111"
 
 
 **Se aplica a:** 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 >¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -69,14 +68,14 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Description
+Parámetro|Tipo|Descripción
 :---|:---|:---
 Indicadores|Indicador<[lista](ti-indicator.md)>|Lista de [indicadores](ti-indicator.md). **Required**
 

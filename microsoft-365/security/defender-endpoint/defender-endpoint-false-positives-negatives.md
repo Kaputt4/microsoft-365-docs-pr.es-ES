@@ -18,17 +18,17 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 2464b8443db2f12e524a33ee56ce90909fea1fc2
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 6aa6dbe986f7893049892f45934350ea250c7b3a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221153"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284282"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -67,7 +67,7 @@ Administrar las alertas y clasificar falsos positivos ayuda a entrenar la soluci
 
 Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un falso positivo o benigno.
 
-1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
 2. En el panel de navegación, elija **Cola de alertas**.
 
@@ -87,7 +87,7 @@ Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un
 
 Las alertas se pueden clasificar como falsos positivos o como verdaderos positivos en Microsoft 365 Defender. Clasificar alertas ayuda a entrenar a Microsoft Defender para endpoint para que, con el tiempo, veas más alertas verdaderas y menos alertas falsas.
 
-1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
 2. Seleccione **Cola de alertas** y, a continuación, seleccione una alerta.
 
@@ -102,7 +102,7 @@ Las alertas se pueden clasificar como falsos positivos o como verdaderos positiv
 
 Si tiene alertas que son falsos positivos o que son verdaderos positivos, pero para eventos sin importancia, puede suprimir esas alertas en Microsoft 365 Defender. Suprimir alertas ayuda a reducir el ruido en el panel de operaciones de seguridad.
 
-1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
 2. En el panel de navegación, seleccione **Cola de alertas**.
 
@@ -456,7 +456,7 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-mde-post-migration.md)
 

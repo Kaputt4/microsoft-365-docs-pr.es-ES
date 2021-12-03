@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97b6941d848cfc493097ef7f1e70c81bdff53b17
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e22ee784609ab04973d88de7539b567027cc98d6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109115"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283130"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 

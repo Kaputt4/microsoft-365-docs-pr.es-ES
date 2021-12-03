@@ -17,20 +17,19 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 10/18/2021
+ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 34f46ea019dfeb86667635a1d1252447168a4f81
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 21a7d111d27042d8085ca196ef679b06c2c9f1a3
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960783"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282770"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 La protección contra alteraciones está disponible para dispositivos que ejecutan una de las siguientes versiones de Windows:
 
@@ -40,10 +39,10 @@ La protección contra alteraciones está disponible para dispositivos que ejecut
 - Windows Server 2022
 - Windows server, versión 1803 o posterior
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 
 > [!NOTE]
-> La protección contra alteraciones Windows Server 2012 R2 está disponible para dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, vea [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> La protección contra alteraciones Windows Server 2012 R2 está disponible para dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, vea [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
 ## <a name="overview"></a>Información general
 
@@ -97,7 +96,7 @@ En la tabla siguiente se proporcionan detalles sobre los métodos, herramientas 
 |---|---|
 |Microsoft Intune|No|
 |Microsoft Endpoint Configuration Manager + agregado de inquilino|No|
-|Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) )|Yes|
+|Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) )|Sí|
 |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Administrar la protección contra alteraciones de la organización mediante el portal de Microsoft 365 Defender datos
@@ -138,7 +137,7 @@ Para obtener más información acerca de las [versiones, vea Windows 10 informac
 
 :::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Active la protección contra alteraciones en el Microsoft 365 Defender de seguridad.":::
 
-1. Vaya al portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
 2. Elija **Configuración** \> **endpoints**.
 
@@ -253,7 +252,7 @@ La protección contra alteraciones se integra [con las & de administración de v
 
 Para obtener más información sobre la administración & vulnerabilidad de amenazas, consulte [Threat & Vulnerability Management en Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 
@@ -322,7 +321,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 

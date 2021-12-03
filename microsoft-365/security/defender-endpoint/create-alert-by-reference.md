@@ -2,7 +2,6 @@
 title: Crear alerta desde la API de eventos
 description: Obtén información sobre cómo usar la API crear alertas para crear una nueva alerta encima del evento en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, get, alert, information, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d513c29dc57dd169eb9a7760cb433d764ad78f6
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: d1d6f141f1453ce92d08045d20ff49753c99dfd7
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218471"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284510"
 ---
 # <a name="create-alert-api"></a>Crear API de alertas
 
@@ -88,13 +87,13 @@ En el cuerpo de la solicitud, proporcione los siguientes valores (todos son nece
 Propiedad | Tipo | Descripción
 :---|:---|:---
 eventTime | DateTime(UTC) | La hora precisa del evento como cadena, como se obtiene de la búsqueda avanzada. Por ejemplo,  ```2018-08-03T16:45:21.7115183Z``` **Obligatorio**.
-reportId | Cadena | El reportId del evento, como se obtiene de la búsqueda avanzada. **Necesario**.
-machineId | Cadena | Id. del dispositivo en el que se identificó el evento. **Necesario**.
+reportId | String | El reportId del evento, como se obtiene de la búsqueda avanzada. **Necesario**.
+machineId | String | Id. del dispositivo en el que se identificó el evento. **Necesario**.
 severity | Cadena | Gravedad de la alerta. Los valores de propiedad son: 'Low', 'Medium' y 'High'. **Necesario**.
-title | Cadena | Título de la alerta. **Necesario**.
+title | String | Título de la alerta. **Necesario**.
 description | Cadena | Descripción de la alerta. **Necesario**.
 recommendedAction| Cadena | El responsable de seguridad debe tomar esta acción al analizar la alerta. **Necesario**.
-categoría| Cadena | Categoría de la alerta. Los valores de propiedad son: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
+categoría| String | Categoría de la alerta. Los valores de propiedad son: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
 
 ## <a name="response"></a>Respuesta
 

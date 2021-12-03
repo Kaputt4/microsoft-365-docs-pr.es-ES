@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-ms.openlocfilehash: 065250c9e3d926251b8c3d543b66f6bf51e99f58
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 41b38a3e51644859a1ef10c514b3b6f31d44e76e
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111020"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284702"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 

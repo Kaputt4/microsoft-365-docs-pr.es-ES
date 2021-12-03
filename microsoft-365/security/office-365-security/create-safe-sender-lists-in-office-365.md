@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 376ea1a5c598adce28fb65ee2b2d1fbceceecd34
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 6c1aa754790ccf0787a7ee79b0add0d7f5e17ca7
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882206"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284438"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -89,16 +89,12 @@ En el siguiente ejemplo se supone que necesita correo electrónico contoso.com o
    > - Si permite una dirección IP que está detrás de una puerta de enlace de traducción de direcciones de red (NAT), debe conocer los servidores que participan en el grupo NAT para conocer el ámbito de la lista de direcciones IP permitidos. Las direcciones IP y los participantes NAT pueden cambiar. Debe comprobar periódicamente las entradas de la lista de direcciones IP permitidos como parte de los procedimientos de mantenimiento estándar.
 
 3. **Condiciones opcionales:**
-
    - **El remitente** \> **es interno/externo** \> **Fuera de la organización:** esta condición está implícita, pero está bien usarla para tener en cuenta los servidores de correo electrónico locales que podrían no estar configurados correctamente.
-
    - **El asunto o el cuerpo** \> **asunto o cuerpo incluye cualquiera de estas palabras** \> : Si puede restringir aún más los mensajes por palabras clave o frases en la línea de asunto o el cuerpo del mensaje, puede usar esas palabras \<keywords\> como condición.
 
 4. **Acción:** configure ambas acciones en la regla:
-
-   a. **Modificar las propiedades del mensaje** \> **establecer el nivel de confianza de correo no deseado (SCL)** \> **Omitir el filtrado de correo no deseado**.
-
-   b. **Modificar las propiedades del mensaje** \> **establecer un encabezado de mensaje:** **Establezca el encabezado del mensaje** en el \<CustomHeaderName\> **valor** \<CustomHeaderValue\> .
+   1. **Modificar las propiedades del mensaje** \> **establecer el nivel de confianza de correo no deseado (SCL)** \> **Omitir el filtrado de correo no deseado**.
+   2. **Modificar las propiedades del mensaje** \> **establecer un encabezado de mensaje:** **Establezca el encabezado del mensaje** en el \<CustomHeaderName\> **valor** \<CustomHeaderValue\> .
 
       Por ejemplo, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si tiene más de un dominio en la regla, puede personalizar el texto del encabezado según corresponda.
 
@@ -122,9 +118,7 @@ Si no puede usar reglas de flujo de correo como se describió anteriormente, la 
 **Notas**:
 
 - Es importante que mantenga el número de direcciones IP permitidas al mínimo, así que evite usar intervalos de direcciones IP completos siempre que sea posible.
-
 - No use intervalos de direcciones IP que pertenezcan a servicios de consumidor (por ejemplo, outlook.com) o infraestructuras compartidas.
-
 - Revise periódicamente las entradas de la lista de direcciones IP permitidos y quite las entradas que ya no necesite.
 
 > [!CAUTION]
@@ -147,7 +141,6 @@ El límite máximo para estas listas es de aproximadamente 1000 entradas; aunque
 Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre del mensaje* y el contenido del mensaje. El sobre del mensaje contiene información necesaria para transmitir y entregar el mensaje entre servidores SMTP. El contenido del mensaje contiene el cuerpo del mensaje y campos de encabezado de mensaje, que se denominan de forma colectiva *encabezado del mensaje*. El sobre del mensaje se describe en RFC 5321 y el encabezado del mensaje se describe en RFC 5322. Los destinatarios nunca ven el sobre de mensaje real porque lo genera el proceso de transmisión de mensajes y no forma parte del mensaje.
 
 - La dirección (también conocida como dirección `5321.MailFrom` **MAIL FROM,** remitente P1 o remitente de sobre) es la dirección de correo electrónico que se usa en la transmisión SMTP del mensaje. Esta dirección de correo electrónico normalmente se registra en el campo de encabezado **Return-Path** en el encabezado del mensaje (aunque es posible que el remitente designe una dirección de correo electrónico **return-path** diferente). Si el mensaje no se puede entregar, es el destinatario del informe de no entrega (también conocido como NDR o mensaje de desaprobado).
-
 - El (también conocido como la dirección De o el remitente P2) es la dirección de correo electrónico en el campo De encabezado y es la dirección de correo electrónico del remitente que se muestra en los clientes `5322.From` de correo electrónico.  
 
 Con frecuencia, las direcciones y son las mismas (comunicación de persona `5321.MailFrom` a `5322.From` persona). Sin embargo, cuando el correo electrónico se envía en nombre de otra persona, las direcciones pueden ser diferentes. Esto sucede con mayor frecuencia en los mensajes de correo electrónico masivos.
@@ -155,7 +148,6 @@ Con frecuencia, las direcciones y son las mismas (comunicación de persona `5321
 Por ejemplo, supongamos que Blue Yonder Airlines ha contratado Margie's Travel para enviar su publicidad por correo electrónico. El mensaje que recibe en la Bandeja de entrada tiene las siguientes propiedades:
 
 - La `5321.MailFrom` dirección es blueyonder.airlines@margiestravel.com.
-
 - La dirección es blueyonder@news.blueyonderairlines.com, que es lo que verá `5322.From` en Outlook.
 
 Caja fuerte listas de remitentes y listas de dominios seguros en directivas contra correo no deseado en EOP inspeccionan solo las direcciones, esto es similar a Outlook Caja fuerte remitentes que usan `5322.From` la `5322.From` dirección.
@@ -163,7 +155,4 @@ Caja fuerte listas de remitentes y listas de dominios seguros en directivas cont
 Para evitar que este mensaje se filtre, puede seguir los siguientes pasos:
 
 - Agregue blueyonder@news.blueyonderairlines.com (la `5322.From` dirección) como remitente Outlook Caja fuerte usuario.
-
 - [Use una regla de flujo](#recommended-use-mail-flow-rules) de correo con una condición que busca mensajes de blueyonder@news.blueyonderairlines.com (la `5322.From` dirección, blueyonder.airlines@margiestravel.com `5321.MailFrom` (la ), o ambas.
-
-Para obtener más información, vea [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).

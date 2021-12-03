@@ -1,8 +1,7 @@
 ---
-title: Obtener información de IP relacionada con alertas
+title: Obtener información de ip relacionadas con alertas
 description: Recupera todas las IP relacionadas con una alerta específica mediante Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api compatibles, obtener información de alerta, información de alertas, ip relacionada
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,27 +15,28 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: abe2e0f2252918afdec88b77cf266d9b5d5e7a09
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 58b7ef4b180824d09fd0539530107771b74ea709
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212550"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283898"
 ---
-# <a name="get-alert-related-ips-information-api"></a>Obtener API de información de IP relacionadas con alertas
+# <a name="get-alert-related-ips-information-api"></a>Obtener la API de información de ip relacionadas con alertas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Descripción de la API
 
@@ -59,8 +59,8 @@ Delegado (cuenta profesional o educativa)|Ip.Read.All|'Leer perfiles de direcci�
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (consulta [Crear](machine-groups.md) y administrar grupos de dispositivos para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (Para obtener más información, vea [Crear y administrar roles](user-roles.md))
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md))
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -72,7 +72,7 @@ GET /api/alerts/{id}/ips
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -86,7 +86,7 @@ Si se realiza correctamente y se alerta y existe una IP: 200 Aceptar. Si no se e
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
 ```http
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/ips
@@ -94,7 +94,7 @@ GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_213628044
 
 ### <a name="response-example"></a>Ejemplo de respuesta
 
-Aquí tiene un ejemplo de la respuesta.
+Este es un ejemplo de la respuesta:
 
 ```json
 {

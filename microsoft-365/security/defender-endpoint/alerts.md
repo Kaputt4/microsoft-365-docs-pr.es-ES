@@ -2,7 +2,6 @@
 title: OBTENER API de alertas
 description: Obtenga información sobre los métodos y propiedades del tipo de recurso Alert en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9171fe01cfe03769cac29110352cf4d0d9fe0061
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3344bb13d785739f7957c3b0d000b04ae7fea95b
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168827"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284390"
 ---
 # <a name="alert-resource-type"></a>Tipo de recurso Alert
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -36,7 +35,7 @@ ms.locfileid: "61168827"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 <br>
 
@@ -64,7 +63,7 @@ ms.locfileid: "61168827"
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
-|id|Cadena|Id. de alerta.|
+|id|String|Id. de alerta.|
 |title|String|Título de la alerta.|
 |description|String|Descripción de la alerta.|
 |alertCreationTime|DateTimeOffset que admite valores NULL|La fecha y hora (en UTC) se creó la alerta.|
@@ -75,22 +74,22 @@ ms.locfileid: "61168827"
 |incidentId|Long que admite valores NULL|El [identificador de](view-incidents-queue.md) incidente de la alerta.|
 |investigationId|Long que admite valores NULL|El [identificador de](automated-investigations.md) investigación relacionado con la alerta.|
 |investigationState|Enumeración que admite valores null|El estado actual de la [investigación](automated-investigations.md). Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
-|assignedTo|Cadena|Propietario de la alerta.|
-|rbacGroupName|Cadena|Nombre del grupo de dispositivos RBAC.|
-|mitreTechniques|Cadena|Mitre Enterprise id. de técnica.|
-|relatedUser|Cadena|Detalles del usuario relacionados con una alerta específica.|
+|assignedTo|String|Propietario de la alerta.|
+|rbacGroupName|String|Nombre del grupo de dispositivos RBAC.|
+|mitreTechniques|String|Mitre Enterprise id. de técnica.|
+|relatedUser|String|Detalles del usuario relacionados con una alerta específica.|
 |severity|Enum|Gravedad de la alerta. Los valores posibles son: 'UnSpecified', 'Informational', 'Low', 'Medium' y 'High'.|
 |status|Enum|Especifica el estado actual de la alerta. Los valores posibles son: "Desconocido", "Nuevo", "InProgress" y "Resuelto".|
 |classification|Enumeración que admite valores null|Especificación de la alerta. Los valores posibles son: 'Unknown', 'FalsePositive', 'TruePositive'.|
 |determinación|Enumeración que admite valores null|Especifica la determinación de la alerta. Los valores posibles son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
 |categoría|Cadena|Categoría de la alerta.|
-|detectionSource|Cadena|Origen de detección.|
-|threatFamilyName|Cadena|Familia de amenazas.|
-|threatName|Cadena|Nombre de la amenaza.|
-|machineId|Cadena|Id. de una [entidad de](machine.md) máquina asociada a la alerta.|
-|computerDnsName|Cadena|[nombre](machine.md) completo de la máquina.|
-|aadTenantId|Cadena|El Azure Active Directory de usuario.|
-|detectorId|Cadena|El identificador del detector que desencadenó la alerta.|
+|detectionSource|String|Origen de detección.|
+|threatFamilyName|String|Familia de amenazas.|
+|threatName|String|Nombre de la amenaza.|
+|machineId|String|Id. de una [entidad de](machine.md) máquina asociada a la alerta.|
+|computerDnsName|String|[nombre](machine.md) completo de la máquina.|
+|aadTenantId|String|El Azure Active Directory de usuario.|
+|detectorId|String|El identificador del detector que desencadenó la alerta.|
 |comments|Lista de comentarios de alerta|El objeto Alert Comment contiene: cadena de comentario, createdBy string y createTime date time.|
 |Evidencia|Lista de pruebas de alerta|Evidencia relacionada con la alerta. Vea el ejemplo abajo.|
 |

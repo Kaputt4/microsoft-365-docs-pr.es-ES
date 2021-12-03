@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9e07c12ec434935b2e91e7248f1f1d16ea4074c8
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 0b26cd34cf38f8f2fbd7a0de96f8e34502054ecf
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241181"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283214"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -77,12 +77,28 @@ Seleccione una recomendación de la lista para empezar a configurar la administr
 > [!IMPORTANT]
 > Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
 
-Hay cuatro grupos de roles que se usan para configurar permisos para administrar características de administración de riesgos de insider. Para continuar con estos pasos de configuración, los administradores de inquilinos deben asignarle primero al grupo de roles Administración de riesgos de **Insider** o Administración de riesgos de **Insider.** Para obtener acceso y administrar las características de administración de riesgos de insider después de la configuración inicial, los usuarios deben ser miembros de al menos un grupo de roles de administración de riesgos insider.
+Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de administración de riesgos de insider. Para que la administración de riesgos de **Insider** esté disponible como una opción de menú en Centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
 
->[!IMPORTANT]
->Asegúrese de que siempre tiene al menos un usuario en los grupos de roles Administración de riesgos de Insider o Administración de riesgos de **Insider** (según la opción que elija) para que la configuración de administración de riesgos de **insider** no llegue a un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+- Azure Active Directory de [*administrador global*](/azure/active-directory/roles/permissions-reference#global-administrator)
+- Azure Active Directory de [*administrador de cumplimiento normativo*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
+- Centro de cumplimiento de Microsoft 365 de [*roles administración de*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) la organización
+- Centro de cumplimiento de Microsoft 365 [*de roles administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- *Grupo de roles De administración de riesgos* de Insider
+- *Grupo de roles Administración de riesgos* de Insider
 
-Dependiendo de la estructura de su equipo de administración de cumplimiento, tiene opciones para asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de administración de riesgos internos. Para ver la **pestaña Permisos** en el Centro de cumplimiento de Microsoft 365 y administrar grupos de  roles, debe estar asignado al grupo de roles Administración de la organización o debe tener asignado el rol Administración *de* roles. Elija entre estas opciones de grupo de roles al configurar la administración de riesgos de insider:
+Los miembros de los siguientes roles tienen los mismos permisos de solución incluidos en el grupo de roles Administrador de administración de riesgos de *Insider:*
+
+- Azure Active Directory *global*
+- Azure Active Directory *de cumplimiento*
+- Centro de cumplimiento de Microsoft 365 *administración de la organización*
+- Centro de cumplimiento de Microsoft 365 de *cumplimiento*
+
+> [!IMPORTANT]
+> Asegúrese de que siempre tiene al menos un usuario en los grupos de roles Administración de riesgos de Insider o Administración de riesgos de *Insider* (según la opción que elija) para que la configuración de administración de riesgos de *insider* no llegue a un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+
+Dependiendo de cómo desee administrar las alertas y directivas de administración de riesgos internas, deberá asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de administración de riesgos internas. Tiene la opción de asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de administración de riesgos de insider. También puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles De administración de riesgos de *Insider.* Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
+
+Elija entre estas opciones de grupo de roles de solución al configurar y administrar la administración de riesgos de insider:
 
 | **Grupo de funciones** | **Permisos de funciones** |
 | :------------- | :------------------- |
@@ -274,7 +290,7 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
     >Los usuarios que configuran la directiva y seleccionan sitios de Share Point prioritarios pueden seleccionar SharePoint a los que tienen permiso de acceso. Si SharePoint sitios no están disponibles para la selección en la directiva por parte del usuario actual, otro usuario con los permisos necesarios puede seleccionar los sitios de la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
 
 12. Seleccione **Siguiente** para continuar.
-13. Si ha seleccionado las plantillas *Pérdidas* generales de datos o Pérdidas de  datos por usuarios *prioritarios,* verá opciones en la página Desencadenadores de esta directiva para eventos de desencadenamiento personalizados e indicadores de directiva. Tiene la opción de seleccionar una directiva DLP o indicadores para desencadenar eventos que llevan a los usuarios asignados a la directiva en el ámbito para la puntuación de actividad. Si selecciona la opción Evento de activación de una directiva de prevención de pérdida de datos **(DLP),** debe seleccionar una directiva DLP en la lista desplegable directiva DLP para habilitar los indicadores desencadenantes de la directiva DLP para esta directiva de administración de riesgos de información interna. Si selecciona la opción Evento desencadenante de una actividad de **exfiltración,** debe seleccionar uno o varios de los indicadores enumerados para el evento de desencadenamiento de directivas.
+13. Si ha seleccionado las plantillas Pérdidas generales de datos o Pérdidas de  datos por usuarios *prioritarios,* verá opciones en la página Desencadenadores de esta directiva para eventos de activación personalizada e indicadores de directiva.  Tiene la opción de seleccionar una directiva DLP o indicadores para desencadenar eventos que llevan a los usuarios asignados a la directiva en el ámbito para la puntuación de actividad. Si selecciona la opción Evento de activación de una directiva de prevención de pérdida de datos **(DLP),** debe seleccionar una directiva DLP en la lista desplegable directiva DLP para habilitar los indicadores desencadenantes de la directiva DLP para esta directiva de administración de riesgos de información interna. Si selecciona la opción Evento desencadenante de una actividad de **exfiltración,** debe seleccionar uno o varios de los indicadores enumerados para el evento de desencadenamiento de directivas.
     >[!IMPORTANT]
     >Si no puede seleccionar un indicador enumerado, es porque no están habilitados para su organización. Para que estén disponibles para seleccionar y asignar a la directiva, habilite los indicadores de la administración de riesgos de **Insider**  >  **Configuración**  >  **indicadores de directiva**.
 

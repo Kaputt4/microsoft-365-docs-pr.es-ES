@@ -2,7 +2,6 @@
 title: Enviar o actualizar API de indicadores
 description: Obtenga información sobre cómo usar la API Enviar o Actualizar indicador para enviar o actualizar una nueva entidad Indicator en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, submit, ti, indicator, update
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 186fd6eb13198d15ba6e99815592ee07d2b9f606
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: 0adf9b74398cafb7bd326dbc9183588feb30ee13
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61145028"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283670"
 ---
 # <a name="submit-or-update-indicator-api"></a>Enviar o actualizar API de indicadores
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -69,8 +69,8 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -82,12 +82,12 @@ indicatorValue|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md) **Re
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileMd5", "CertificateThumbprint", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock" y "Allowed". **Necesario**. El parámetro "GenerateAlert" debe establecerse en "TRUE" al crear una acción con "Audit".
 aplicación|Cadena|La aplicación asociada al indicador. Este campo solo funciona para nuevos indicadores. No actualizará el valor de un indicador existente. **Optional**
-title|Cadena|Título de alerta del indicador. **Required**
+title|String|Título de alerta del indicador. **Required**
 description|Cadena|Descripción del indicador. **Required**
 expirationTime|DateTimeOffset|La hora de expiración del indicador. **Optional**
 severity|Enum|Gravedad del indicador. los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
 recommendedActions|Cadena|Acciones recomendadas de alerta del indicador TI. **Optional**
-rbacGroupNames|Cadena|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
+rbacGroupNames|String|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
 
 ## <a name="response"></a>Respuesta
 

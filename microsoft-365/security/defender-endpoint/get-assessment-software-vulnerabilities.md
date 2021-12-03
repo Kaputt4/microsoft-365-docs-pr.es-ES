@@ -2,7 +2,6 @@
 title: Evaluación de vulnerabilidades de software de exportación por dispositivo
 description: La respuesta de la API es por dispositivo y contiene software vulnerable instalado en los dispositivos expuestos y cualquier vulnerabilidad conocida en estos productos de software. Esta tabla también incluye información sobre el sistema operativo, IDs de CVE e información sobre la gravedad de la vulnerabilidad.
 keywords: api, apis, evaluación de exportación, evaluación por dispositivo, informe de evaluación de vulnerabilidad, evaluación de vulnerabilidad de dispositivo, informe de vulnerabilidad de dispositivo, evaluación de configuración segura, informe de configuración segura, evaluación de vulnerabilidades de software, informe de vulnerabilidades de software, informe de vulnerabilidad por máquina,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 738d8a90dc6cbfdfa73c7c62eb076c934bbcb336
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 062765ce75317b604b4017610360c8d181bf9e88
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167339"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282830"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Evaluación de vulnerabilidades de software de exportación por dispositivo
 
@@ -29,7 +28,7 @@ ms.locfileid: "61167339"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -99,27 +98,27 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
-CveId|Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
+CveId|String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
 CvssScore|Cadena|La puntuación CVSS de CVE.|6.2
-DeviceId|Cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
+DeviceId|String|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
 DiskPaths|Cadena de \[ matriz\]|Prueba en disco de que el producto está instalado en el dispositivo.|[ "C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
+ExploitabilityLevel|String|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
 FirstSeenTimestamp|Cadena|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880
 Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!
 LastSeenTimestamp|Cadena|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880
-OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esta propiedad indica sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
+OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esta propiedad indica sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10 y Windows 11
 RbacGroupName|Cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
-RecommendationReference|Cadena|Una referencia al identificador de recomendación relacionado con este software.|va-_-microsoft-_-silverlight
+RecommendationReference|String|Una referencia al identificador de recomendación relacionado con este software.|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (opcional)|Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020
 RecommendedSecurityUpdateId (opcional)|Cadena|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
 RegistryPaths|Cadena de \[ matriz\]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
 SoftwareName|Cadena|Nombre del producto de software.|Chrome
-SoftwareVendor|Cadena|Nombre del proveedor de software.|Google
+SoftwareVendor|String|Nombre del proveedor de software.|Google
 SoftwareVersion|Cadena|Número de versión del producto de software.|81.0.4044.138
-VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
+VulnerabilitySeverityLevel|String|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
 |
 
 ### <a name="16-examples"></a>1.6 Ejemplos
@@ -141,7 +140,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f612345daf756462bde6bd733b9a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d089e79bdfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -164,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462bde6db733b6a9c59ad4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e79bdfa178eabfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -189,7 +188,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462bde6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eed80b089e79bdfa178eadfa25e8be6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -214,7 +213,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f91234daf759492dbe6bd733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_189663d45612eed224b2be2f5ea3142729e63f16a.DomainPII_21eed80b086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -239,11 +238,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462dbe6db733d6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eeb224d2be2f5ea3142729e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
-            "softwareName": "windows_10",
+            "softwareName": "windows_10" "Windows_11",
             "softwareVersion": "10.0.17763.1637",
             "cveId": null,
             "vulnerabilitySeverityLevel": null,
@@ -255,7 +254,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-windows_10"
+            "recommendationReference": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11"
         }
     ],
     "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
@@ -306,10 +305,10 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización.|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|Cadena|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
+GeneratedTime|String|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Ejemplos
@@ -383,28 +382,28 @@ Cada registro devuelto contiene todos los datos de la evaluación completa de vu
 
 ****
 
-Propiedad (ID)|Tipo de datos|Description|Ejemplo del valor devuelto
+Propiedad (ID)|Tipo de datos|Descripción|Ejemplo del valor devuelto
 :---|:---|:---|:---
-CveId |Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992  
+CveId |String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992  
 CvssScore|Cadena|La puntuación CVSS de CVE.|6.2  
-DeviceId|Cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com  
+DeviceId|String|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com  
 DiskPaths|Array[string]|Prueba en disco de que el producto está instalado en el dispositivo.|["C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
-EventTimestamp|Cadena|Hora en que se encontró este evento delta.|2021-01-11T11:06:08.291Z
+EventTimestamp|String|Hora en que se encontró este evento delta.|2021-01-11T11:06:08.291Z
 ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
 FirstSeenTimestamp|Cadena|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880  
 Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!  
 LastSeenTimestamp|Cadena|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880  
-OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10  
+OSPlatform|String|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10 y Windows 11 
 RbacGroupName|Cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores  
-RecommendationReference|string|Una referencia al identificador de recomendación relacionado con este software.|va--microsoft--silverlight  
+RecommendationReference|cadena|Una referencia al identificador de recomendación relacionado con este software.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020  
 RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961  
 RegistryPaths |Array[string]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
 SoftwareName|Cadena|Nombre del producto de software.|Chrome  
-SoftwareVendor|Cadena|Nombre del proveedor de software.|Google  
-SoftwareVersion|Cadena|Número de versión del producto de software.|81.0.4044.138  
-Estado|Cadena|**Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo)  (1) **Corregido**(si esta vulnerabilidad ya no existe en el dispositivo, lo que   significa que se corrigió). (2)  **Actualizado**   (si ha cambiado una vulnerabilidad en un dispositivo. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Decimal
+SoftwareVendor|String|Nombre del proveedor de software.|Google  
+SoftwareVersion|String|Número de versión del producto de software.|81.0.4044.138  
+Estado|String|**Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo)  (1) **Corregido**(si esta vulnerabilidad ya no existe en el dispositivo, lo que   significa que se corrigió). (2)  **Actualizado**   (si ha cambiado una vulnerabilidad en un dispositivo. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Decimal
 VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad. Se basa en la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
 |
 
@@ -437,7 +436,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "008198251234544f7dfa715e278b4cec0c19c171",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_1c8fee370690ca24b6a0d3f34d193b0424943a8b8.DomainPII_0dc1aee0fa366d175e514bd91a9e7a5b2b07ee8e.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "google",
@@ -466,7 +465,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "00e56c91234533860738ecf488eec8abf296e41e",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_82c13a8ad8cf3dbaf7bf34fada9fa3aebc124116.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -493,7 +492,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "01aa8c73065bb12345918693f3f94ce322107d24",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_42684eb981bea2d670027e7ad2caafd3f2b381a3.DomainPII_21eed80b086e76dbfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "mozilla",
@@ -522,7 +521,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "029f0fcb13245fbd2decd1a336702131422d392e",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_a5706750acba75f15d69cd17f4a7fcd268d6422c.DomainPII_f290e982685f7e8eee168b4332e0ae5d2a069cd6.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -549,7 +548,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "038df381234510d357ac19b0113ef922e4e212b3",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596a43a2ef2bbfa00f6a16c0cb1d108bc63e32.DomainPII_3c5fefd2e6fda2f36257359404f6c1092aa6d4b8.net",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
             "softwareVendor": "google",
@@ -578,7 +577,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 }
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 - [Exportar evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)

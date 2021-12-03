@@ -2,7 +2,6 @@
 title: API de entidades de alerta de actualización por lotes
 description: Obtenga información sobre cómo actualizar alertas de Microsoft Defender para endpoints en un lote mediante esta API. Puede actualizar las propiedades status, determination, classification y assignedTo.
 keywords: apis, api de gráficos, api admitidas, get, alert, information, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 007dd161ac221a51ce2d2a424974db51177db615
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: a2d695a2b406d4850f0e9896af3ec3b2aede8870
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171010"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283646"
 ---
 # <a name="batch-update-alerts"></a>Alertas de actualización por lotes
 
@@ -29,8 +28,8 @@ ms.locfileid: "61171010"
 
 
 **Se aplica a:** 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 >¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -77,7 +76,7 @@ POST /api/alerts/batchUpdate
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -88,10 +87,10 @@ Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mante
 
 Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad | Tipo | Description
+Propiedad | Tipo | Descripción
 :---|:---|:---
 alertIds | Cadena de &lt; lista&gt;| Una lista de los IDs de las alertas que se actualizarán. **Required**
-status | Cadena | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
+status | String | Especifica el estado actualizado de las alertas especificadas. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
 assignedTo | Cadena | Propietario de las alertas especificadas
 classification | String | Especifica la especificación de las alertas especificadas. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'. 
 determinación | Cadena | Especifica la determinación de las alertas especificadas. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'

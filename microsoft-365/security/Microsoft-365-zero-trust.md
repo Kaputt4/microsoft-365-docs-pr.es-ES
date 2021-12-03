@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 plan de implementación de confianza cero
+title: Plan de implementación de Confianza cero de Microsoft 365
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -15,15 +15,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - remotework
-description: Implemente principios de confianza cero, arquitectura y capacidades para Microsoft 365.
-ms.openlocfilehash: ef4f3795f5acb9e9c6011d800e930d16207a43b8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: Implemente los principios de confianza cero, la arquitectura y las capacidades para Microsoft 365.
+ms.openlocfilehash: 0328c6db55a6cd277df0fdbdb5741d55ee79663e
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129503"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284618"
 ---
-# <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 plan de implementación de confianza cero
+# <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
 En este artículo se proporciona un plan de implementación para crear la seguridad **de** confianza cero con Microsoft 365. Confianza cero es un nuevo modelo de seguridad que supone una infracción y comprueba cada solicitud como si se originase desde una red sin control. Independientemente de dónde se origine la solicitud o a qué recurso tiene acceso, el modelo de confianza cero nos enseña a "nunca confiar, comprobar siempre".
 
@@ -60,7 +60,7 @@ Microsoft 365 se crea de forma intencionada con muchas capacidades de seguridad 
 Esta ilustración representa el trabajo de implementación de capacidades de confianza cero. Este trabajo se divide en unidades de trabajo que se pueden configurar juntas, empezando desde la parte inferior y trabajando hasta la parte superior para garantizar que el trabajo previo se haya completado.
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Microsoft 365 de implementación de confianza cero" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Pila de implementación de Confianza cero de Microsoft 365" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
 
 En esta ilustración:
 - La confianza cero comienza con una base de identidad y protección de dispositivos. 

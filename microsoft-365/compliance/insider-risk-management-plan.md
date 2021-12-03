@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 848d1ea09cf64d107750e3a09580f2aaafff4887
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 9ea95245d983f14d57b15884fa8d1edbc54d5cb6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241205"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283202"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -51,10 +51,31 @@ Si tiene requisitos para que determinadas partes interesadas participen en inves
 
 Seleccione las partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). Asegúrese de comprender cómo asignará diferentes partes interesadas a los diferentes grupos de roles disponibles en la administración de riesgos de insider.
 
->[!IMPORTANT]
->Asegúrese de que siempre tiene al menos un usuario en los grupos de roles Administración de riesgos de Insider o Administración de riesgos de **Insider** (según la opción que elija) para que la configuración de administración de riesgos de **insider** no llegue a un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+> [!IMPORTANT]
+> Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
 
-Dependiendo de la estructura de su equipo de administración de cumplimiento, tiene opciones para asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de administración de riesgos internos. Para ver la **pestaña Permisos** en el Centro de cumplimiento de Microsoft 365 y administrar grupos de  roles, debe estar asignado al grupo de roles Administración de la organización o debe tener asignado el rol Administración *de* roles. Elija entre estas opciones de grupo de roles al configurar la administración de riesgos de insider:
+Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de administración de riesgos de insider. Para que la administración de riesgos de **Insider** esté disponible como una opción de menú en Centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
+
+- Azure Active Directory de [*administrador global*](/azure/active-directory/roles/permissions-reference#global-administrator)
+- Azure Active Directory de [*administrador de cumplimiento normativo*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
+- Centro de cumplimiento de Microsoft 365 de [*roles administración de*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) la organización
+- Centro de cumplimiento de Microsoft 365 [*de roles administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- *Grupo de roles De administración de riesgos* de Insider
+- *Grupo de roles Administración de riesgos* de Insider
+
+Los miembros de los siguientes roles tienen los mismos permisos de solución incluidos en el grupo de roles Administrador de administración de riesgos de *Insider:*
+
+- Azure Active Directory *global*
+- Azure Active Directory *de cumplimiento*
+- Centro de cumplimiento de Microsoft 365 *administración de la organización*
+- Centro de cumplimiento de Microsoft 365 de *cumplimiento*
+
+> [!IMPORTANT]
+> Asegúrese de que siempre tiene al menos un usuario en los grupos de roles Administración de riesgos de Insider o Administración de riesgos de *Insider* (según la opción que elija) para que la configuración de administración de riesgos de *insider* no llegue a un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+
+Dependiendo de cómo desee administrar las alertas y directivas de administración de riesgos internas, deberá asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de administración de riesgos internas. Tiene la opción de asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de administración de riesgos de insider. También puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles De administración de riesgos de *Insider.* Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
+
+Elija entre estas opciones de grupo de roles de solución al configurar y administrar la administración de riesgos de insider:
 
 | **Grupo de funciones** | **Permisos de funciones** |
 | :------------- | :------------------- |

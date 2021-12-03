@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
-ms.openlocfilehash: 3a5fb932ac922f5555a0bbfaf18a3c1790cb2e8b
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: c7a217fa21b619de89e2f5f6a5605f3f301dfe12
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254374"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283034"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
@@ -105,7 +105,7 @@ Si desea agregar un dominio y crear una cuenta de correo electrónico empresaria
 - [Agregar un dominio a Microsoft 365](../setup/add-domain.md)
 - [Finalizar la configuración](../setup/setup-business-standard.md#finish-setting-up)
 
-## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>Actualización de términos de servicio para el modo Sign-Up simplificado
+## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>Actualización de términos de servicio para el modo de registro simplificado
 
 **Se aplica a: Suscriptores existentes de Microsoft 365 Empresa Estándar que** compraron previamente mediante el modo de registro simplificado .
 

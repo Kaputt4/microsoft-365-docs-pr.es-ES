@@ -1,10 +1,8 @@
 ---
-title: Configurar la integración de Microsoft Defender para Aplicaciones en la nube
+title: Configurar la integración de Microsoft Defender for Cloud Apps
 ms.reviewer: ''
 description: Obtén información sobre cómo activar la configuración para habilitar la integración de Microsoft Defender para endpoints con Microsoft Defender para Aplicaciones en la nube.
 keywords: nube, aplicación, seguridad, configuración, integración, detección, informe
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 88952a3f2c8173b20b8ee81322a0312144197ad5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 666a0fd4a6f81db343082dd0c9c6209b6409fd53
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111608"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283682"
 ---
 # <a name="configure-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Configurar Microsoft Defender para aplicaciones en la nube en Microsoft Defender para endpoint
 
@@ -37,8 +35,9 @@ ms.locfileid: "61111608"
 Para beneficiarse de las señales de detección de aplicaciones en la nube de Microsoft Defender para Endpoint, activa la integración de Microsoft Defender para Cloud Apps.
 
 > [!NOTE]
-> Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809  (Compilación del sistema operativo 17763.379 con [KB4489899](https://support.microsoft.com/help/4489899)) o versiones Windows 10 posteriores.
+> Esta característica estará disponible con una licencia E5 para Enterprise Mobility + Security [dispositivos](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) que ejecutan Windows 10 y Windows 11.
 
+> [!TIP]
 > Consulta Integración de Microsoft Defender para [endpoints con Microsoft Defender para aplicaciones](/cloud-app-security/mde-integration) en la nube para obtener información detallada sobre la integración de Microsoft Defender para Endpoint con Microsoft Defender para aplicaciones en la nube.
 
 ## <a name="enable-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Habilitar Microsoft Defender para aplicaciones en la nube en Microsoft Defender para endpoint

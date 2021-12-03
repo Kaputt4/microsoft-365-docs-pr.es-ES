@@ -2,7 +2,6 @@
 title: Errores comunes de La API de Microsoft Defender para puntos de conexión
 description: Lista de errores comunes de La API de Microsoft Defender para puntos de conexión con descripciones.
 keywords: API, API de Microsoft Defender para endpoints, errores, solución de problemas
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 406706f5ceba4268cfad99dec07d76e15f447b2b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: d960091409a71fd23e52a098ae3d8164c7df5aef
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171262"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284606"
 ---
 # <a name="common-rest-api-error-codes"></a>Códigos de error comunes de API de REST
 
@@ -36,8 +35,8 @@ ms.locfileid: "61171262"
 * En la parte inferior de la página, puede encontrar ejemplos de respuesta.
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)

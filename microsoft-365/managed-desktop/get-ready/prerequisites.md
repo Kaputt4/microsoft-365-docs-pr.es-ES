@@ -1,6 +1,6 @@
 ---
 title: Requisitos previos del Escritorio administrado de Microsoft
-description: Licencias, cuentas de Azure, configuración de autenticación y Microsoft 365 configuración para configurar antes de inscribirse en Escritorio administrado de Microsoft
+description: Licencias, cuentas de Azure, configuración de autenticación y Microsoft 365 configuración para configurar antes de inscribirse en Microsoft Managed Desktop
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -10,36 +10,36 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 71b5491ac619fd48a68cb2ee4f3b5d82512e2262
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b8bba3832572b6834c46806eca048b568cc3d761
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152459"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284402"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos del Escritorio administrado de Microsoft
 
-<!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
+<!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure). DO NOT DELETE.-->
 <!--from Prerequisites -->
 
-En este tema se describen los requisitos de infraestructura que debe cumplir para garantizar el éxito con Escritorio administrado de Microsoft.
+En este tema se describen los requisitos de infraestructura que debe cumplir para garantizar el éxito con Microsoft Managed Desktop.
 
 
 Área | Detalles de requisitos previos
 --- | ---
-Licencias |Escritorio administrado de Microsoft requiere la Microsoft 365 E3 con Microsoft Defender para puntos de conexión (o equivalentes) asignados a los usuarios.<br>Para obtener más información sobre los planes de servicio [específicos,](#more-about-licenses) vea Más información sobre las licencias en este tema.<br>Para obtener más información sobre las licencias disponibles, [vea Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
-Conectividad | Todos Escritorio administrado de Microsoft dispositivos requieren conectividad a numerosos puntos de conexión de servicio de Microsoft desde la red corporativa.<br><br>Para obtener la lista completa de direcciones IP y direcciones URL necesarias, vea [Configuración de red](../get-ready/network.md). 
-Azure Active Directory | Azure Active Directory (Azure AD) debe ser el origen de la autoridad para todas las cuentas de usuario o las cuentas de usuario deben sincronizarse desde Active Directory local con la versión compatible más reciente de Azure AD Conectar.<br><br>Para obtener más información, [vea Azure AD Conectar](/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Para obtener más información sobre las versiones Conectar de Azure AD admitidas, [consulte Azure AD Conectar:Version release history](/azure/active-directory/hybrid/reference-connect-version-history).
-Autenticación | Si Azure AD no es el origen de la autenticación principal para cuentas de usuario, debe configurar una de estas en Azure AD Conectar:<br>- Sincronización de hash de contraseña<br>- Autenticación de paso a través<br>- Un proveedor de identidades externo (incluido Windows ADFS de servidor y identificadores que no son de Microsoft) configurado para cumplir los requisitos de integración de Azure AD. Vea las [directrices](https://www.microsoft.com/download/details.aspx?id=56843) para obtener más información. <br><br>Al establecer opciones de autenticación con Azure AD Conectar, también se recomienda la escritura por escritura de contraseña. Para obtener más información, vea [Password writeback](/azure/active-directory/authentication/howto-sspr-writeback). <br><br>Si se implementa un proveedor de identidades externo, debe validar la solución:<br>- Cumple los requisitos de integración de Azure AD<br>- Admite el acceso condicional de Azure AD, que permite configurar la Escritorio administrado de Microsoft de cumplimiento de dispositivos<br>- Habilita la inscripción y el uso de dispositivos Microsoft 365 servicios o características necesarios como parte de Escritorio administrado de Microsoft <br><br>Para obtener más información sobre las opciones de autenticación con Azure AD, [consulte Azure AD Conectar opciones de inicio de sesión del usuario.](/azure/active-directory/connect/active-directory-aadconnect-user-signin)
-Microsoft 365 | OneDrive para la Empresa debe estar habilitada para Escritorio administrado de Microsoft usuarios.<br><br>Aunque no es necesario inscribirse con Escritorio administrado de Microsoft, se recomienda encarecidamente migrar los siguientes servicios a la nube:<br>- Correo electrónico: migrar a buzones basados en la nube, Exchange en línea o configurar con Exchange Online Hybrid con Exchange 2013 o posterior, localmente.<br>- Archivos y carpetas: migrar a OneDrive para la Empresa o SharePoint Online.<br>- Herramientas de colaboración en línea: migrar a Teams.
-Administración de dispositivos | Escritorio administrado de Microsoft dispositivos requieren administración mediante Microsoft Intune. Intune debe establecerse como la entidad de administración de dispositivos móviles.<br><br>Para obtener más información, [vea Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
-Copia de seguridad y recuperación de datos | Escritorio administrado de Microsoft requiere que los archivos se sincronicen con OneDrive para la Empresa para la protección. Los archivos no sincronizados con OneDrive para la Empresa no están garantizados por Escritorio administrado de Microsoft y pueden perderse durante los intercambios de dispositivos o las llamadas de soporte técnico que requieren un restablecimiento del dispositivo.<br><br>Aunque no es necesario, Escritorio administrado de Microsoft recomienda encarecidamente la migración desde unidades de red asignadas a la solución en la nube adecuada. Para obtener más información, vea [Prepare mapped drives for Escritorio administrado de Microsoft](mapped-drives.md)
+Licencias |Microsoft Managed Desktop requiere la Microsoft 365 E3 con Microsoft Defender para puntos de conexión (o equivalentes) asignados a los usuarios.<br>Para obtener más información sobre los planes de servicio [específicos,](#more-about-licenses) vea Más información sobre las licencias en este tema.<br>Para obtener más información sobre las licencias disponibles, [vea Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
+Conectividad | Todos los dispositivos de Escritorio administrado de Microsoft requieren conectividad a numerosos puntos de conexión de servicio de Microsoft desde la red corporativa.<br><br>Para obtener la lista completa de direcciones IP y direcciones URL necesarias, vea [Configuración de red](../get-ready/network.md). 
+Azure Active Directory | Azure Active Directory (Azure AD) debe ser el origen de la autoridad para todas las cuentas de usuario, o bien las cuentas de usuario deben sincronizarse desde Active Directory local con la última versión compatible de Azure AD Conectar.<br><br>Para obtener más información, [vea Azure AD Conectar](/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Para obtener más información sobre las Azure AD Conectar compatibles, vea [Azure AD Conectar:Version release history](/azure/active-directory/hybrid/reference-connect-version-history).
+Autenticación | Si Azure AD no es el origen de la autenticación principal para las cuentas de usuario, debe configurar una de estas en Azure AD Conectar:<br>- Sincronización de hash de contraseña<br>- Autenticación de paso a través<br>- Un proveedor de identidades externo (incluidos Windows ADFS de servidor y identificadores que no son de Microsoft) configurados para cumplir Azure AD de integración. Vea las [directrices](https://www.microsoft.com/download/details.aspx?id=56843) para obtener más información. <br><br>Al establecer opciones de autenticación con Azure AD Conectar, también se recomienda la reescribición de contraseña. Para obtener más información, vea [Password writeback](/azure/active-directory/authentication/howto-sspr-writeback). <br><br>Si se implementa un proveedor de identidades externo, debe validar la solución:<br>- Cumple los Azure AD de integración<br>- Admite Azure AD condicional, que permite configurar la directiva de cumplimiento de dispositivos de Escritorio administrado de Microsoft<br>- Habilita la inscripción y el uso de dispositivos Microsoft 365 servicios o características necesarios como parte del escritorio administrado de Microsoft <br><br>Para obtener más información sobre las opciones de autenticación Azure AD, vea [Azure AD Conectar opciones de inicio de sesión del usuario.](/azure/active-directory/connect/active-directory-aadconnect-user-signin)
+Microsoft 365 | OneDrive para la Empresa se debe habilitar para los usuarios de Escritorio administrado de Microsoft.<br><br>Aunque no es necesario inscribirse en Microsoft Managed Desktop, se recomienda encarecidamente migrar los siguientes servicios a la nube:<br>- Correo electrónico: migrar a buzones basados en la nube, Exchange en línea o configurar con Exchange Online Hybrid con Exchange 2013 o posterior, localmente.<br>- Archivos y carpetas: migrar a OneDrive para la Empresa o SharePoint Online.<br>- Herramientas de colaboración en línea: migrar a Teams.
+Administración de dispositivos | Los dispositivos de Escritorio administrado de Microsoft requieren administración mediante Microsoft Intune. Intune debe establecerse como la entidad de administración de dispositivos móviles.<br><br>Para obtener más información, [vea Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+Copia de seguridad y recuperación de datos | Microsoft Managed Desktop requiere que los archivos se sincronicen con OneDrive para la Empresa para la protección. Microsoft Managed Desktop no garantiza los archivos que no estén sincronizados con OneDrive para la Empresa que se pierdan durante los intercambios de dispositivos o las llamadas de soporte técnico que requieran un restablecimiento del dispositivo.<br><br>Aunque no es necesario, Microsoft Managed Desktop recomienda encarecidamente la migración desde unidades de red asignadas a la solución en la nube adecuada. Para obtener más información, vea [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
 
-Cuando estés listo para empezar a trabajar con Escritorio administrado de Microsoft, ponte en contacto con el Administrador de cuentas de Microsoft. 
+Cuando estés listo para empezar a usar Microsoft Managed Desktop, ponte en contacto con el Administrador de cuentas de Microsoft. 
 
 ## <a name="more-about-licenses"></a>Más información sobre las licencias
 
-Escritorio administrado de Microsoft requiere ciertas opciones de licencia para funcionar. Consulte [Escritorio administrado de Microsoft para obtener](../intro/technologies.md) información sobre cómo se usan estas licencias.
+Microsoft Managed Desktop requiere determinadas opciones de licencia para funcionar. Consulte [Tecnologías de Escritorio administrado de Microsoft](../intro/technologies.md) para obtener información sobre cómo se usan estas licencias.
 
 > [!TIP]
 > Para asignar estas opciones de licencia a usuarios específicos, se recomienda aprovechar la característica de licencias basadas en grupos [de](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Azure Active Directory.
@@ -56,7 +56,7 @@ Escritorio administrado de Microsoft requiere ciertas opciones de licencia para 
 > [!TIP]
 > El Administrador de cuentas de Microsoft le ayudará a revisar sus licencias y planes de servicio actuales y a encontrar la ruta de acceso más eficaz para obtener las licencias o planes de servicio adicionales que pueda necesitar, a la vez que evitará la duplicación.
 
-## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para El escritorio administrado de Microsoft
 
 1. Revisar los requisitos previos (en este artículo).
 2. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).

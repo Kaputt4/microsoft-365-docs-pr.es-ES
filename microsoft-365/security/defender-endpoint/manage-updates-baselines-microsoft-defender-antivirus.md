@@ -15,20 +15,20 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/08/2021
+ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6ef4b2097710c3e6094ef8190d0de7e94ddf4b3c
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: ac436d54db999bf5dd1c05305e430f6a957f8ed8
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882098"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284162"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 Mantener Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de ataque y malware. Asegúrese de actualizar la protección antivirus, incluso si Antivirus de Microsoft Defender se está ejecutando en [modo pasivo](microsoft-defender-antivirus-compatibility.md). Hay dos tipos de actualizaciones relacionadas con mantener Antivirus de Microsoft Defender actualizado:
@@ -61,7 +61,7 @@ Antivirus de Microsoft Defender requiere [actualizaciones mensuales (KB4052623)]
 
 Puede administrar la distribución de actualizaciones a través de uno de los siguientes métodos:
 
-- [Windows Servicio de actualización de servidores (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
 - El método habitual que usa para implementar Microsoft y Windows actualizaciones en los puntos de conexión de la red.
 
@@ -139,7 +139,6 @@ Sin problemas conocidos
 - Nuevo analizador [de rendimiento para Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md)
 - Antivirus de Microsoft Defender contra la carga de DLL malintencionadas
 - Antivirus de Microsoft Defender se endurece con la omisión de TrustedInstaller
-- Se agregó compatibilidad para configurar exclusiones de reglas de reducción de superficie de ataque [por regla](customize-attack-surface-reduction.md)
 - Extensión de notificaciones de cambio de archivo para incluir más datos para Human-Operated ransomware (HumOR)
 
 ### <a name="known-issues"></a>Problemas conocidos
@@ -561,7 +560,7 @@ Las actualizaciones de plataforma y motor se proporcionan en una cadencia mensua
 Durante la fase de soporte técnico (solo), los incidentes de soporte comercialmente razonables se proporcionan a través del servicio de soporte técnico de Microsoft & y las ofertas de soporte administrado de Microsoft (como soporte premier). Si un incidente de soporte requiere una escalación al desarrollo para obtener más instrucciones, requiere una actualización que no sea de seguridad o requiere una actualización de seguridad, se pedirá a los clientes que actualicen a la versión más reciente de la plataforma o a una actualización intermedia (*).
 
 > [!NOTE]
-> Si está implementando manualmente una actualización de plataforma de Antivirus de Microsoft Defender, o si está usando un script o un producto de administración que no es de Microsoft para implementar una actualización de plataforma de Antivirus de Microsoft Defender, asegúrese de que la versión esté instalada desde el Catálogo de Microsoft Update antes de que la versión más reciente de `4.18.2001.10` Platform Update [](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) (N-2) esté inst alled.
+> Si va a implementar manualmente Antivirus de Microsoft Defender Platform Update o si usa un script o un producto de administración que no sea de Microsoft para implementar una actualización de plataforma Antivirus de Microsoft Defender, asegúrese de que la versión esté instalada desde el Catálogo de `4.18.2001.10` [Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10)  antes de instalar la versión más reciente de Platform Update (N-2).
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Versión de plataforma incluida con Windows 10 versiones
 
@@ -802,7 +801,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 
 | Artículo | Descripción  |
 |:---|:---|
-|[Actualización de Microsoft Defender para Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Revisar los paquetes de actualización de antimalware para las imágenes de instalación del sistema operativo (archivos WIM y VHD). Obtenga Antivirus de Microsoft Defender actualizaciones de Windows 10 (ediciones Enterprise, Pro y Home), Windows Server 2019, Windows Server 2022 y Windows Server 2016 de instalación.  |
+|[Actualización de Microsoft Defender para Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Revisar los paquetes de actualización de antimalware para las imágenes de instalación del sistema operativo (archivos WIM y VHD). Obtenga Antivirus de Microsoft Defender actualizaciones de Windows 10 (ediciones Enterprise, Pro y Home), Windows Server 2019, Windows Server 2022 y Windows Server 2016 instalación imágenes.  |
 |[Administrar cómo se descargan y aplican las actualizaciones de protección](manage-protection-updates-microsoft-defender-antivirus.md) | Las actualizaciones de protección se pueden entregar a través de muchos orígenes. |
 |[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Puede programar cuándo deben descargarse las actualizaciones de protección. |
 |[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Si un extremo pierde una actualización o un examen programado, puede forzar una actualización o examinar la próxima vez que un usuario inicia sesión. |

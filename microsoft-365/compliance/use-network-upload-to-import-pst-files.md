@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d6465d1428ec66f1d80cc1b821fa816b794040a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b72b408ef08c125f016a356a2ceda21e86cf8cfd
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200274"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283574"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
@@ -326,7 +326,7 @@ Después de crear e iniciar el trabajo de importación en el paso 5, Microsoft 3
 
   - Buscar en el [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) eventos relacionados con el buzón que afectan a los datos importados.
 
-  - Importar datos a [buzones de correo inactivos](create-and-manage-inactive-mailboxes.md) para archivar datos por motivos de cumplimiento. 
+  - Importar datos a [buzones de correo inactivos](inactive-mailboxes-in-office-365.md) para archivar datos por motivos de cumplimiento. 
 
   - Usar [directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) para evitar la pérdida de datos confidenciales fuera de su organización.
   

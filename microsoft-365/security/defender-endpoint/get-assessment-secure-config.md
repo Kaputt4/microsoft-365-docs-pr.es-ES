@@ -2,7 +2,6 @@
 title: Exportar evaluación de configuración segura por dispositivo
 description: Devuelve una entrada para cada combinación única de DeviceId, ConfigurationId.
 keywords: api, apis, evaluación de exportación, evaluación por dispositivo, informe de evaluación de vulnerabilidad, evaluación de vulnerabilidad de dispositivo, informe de vulnerabilidad de dispositivo, evaluación de configuración segura, informe de configuración segura, evaluación de vulnerabilidades de software, informe de vulnerabilidades de software, informe de vulnerabilidad por máquina,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 01e2e312af0158aa2d55ae9d8589712eef618f51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 04e2ac7a29dddb9fe02e558e6ba545c51048bd51
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150081"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284246"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportar evaluación de configuración segura por dispositivo
 
@@ -29,7 +28,7 @@ ms.locfileid: "60150081"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -94,22 +93,22 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 ****
 
-Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
 ---|---|---|---
-ConfigurationCategory|string|Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|Controles de seguridad
-ConfigurationId|string|Identificador único para una configuración específica|scid-10000
-ConfigurationImpact|string|Impacto valorado de la configuración en el resultado general de la configuración (1-10)|9 
+ConfigurationCategory|cadena|Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|Controles de seguridad
+ConfigurationId|cadena|Identificador único para una configuración específica|scid-10000
+ConfigurationImpact|cadena|Impacto valorado de la configuración en el resultado general de la configuración (1-10)|9 
 ConfigurationName|string|Nombre para mostrar de la configuración|Incorporar dispositivos a Microsoft Defender para punto de conexión
-ConfigurationSubcategory|string|Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas.|Dispositivos integrados
-DeviceId|string|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
+ConfigurationSubcategory|cadena|Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas.|Dispositivos integrados
+DeviceId|cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
 IsApplicable|bool|Indica si la configuración o directiva es aplicable|true
 IsCompliant|bool|Indica si la configuración o la directiva está configurada correctamente|false
 IsExpectedUserImpact|bool|Indica si habrá impacto del usuario si se aplicará la configuración|true
-OSPlatform|string|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10
-RbacGroupName|string|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
-RecommendationReference|string|Una referencia al identificador de recomendación relacionado con este software.|sca-_-scid-20000
-Timestamp|string|La última vez que se vio la configuración en el dispositivo|2020-11-03 10:13:34.8476880
+OSPlatform|cadena|Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10 y Windows 11
+RbacGroupName|cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
+RecommendationReference|cadena|Una referencia al identificador de recomendación relacionado con este software.|sca-_-scid-20000
+Timestamp|cadena|La última vez que se vio la configuración en el dispositivo|2020-11-03 10:13:34.8476880
 |
 
 ### <a name="16-examples"></a>1.6 Ejemplos
@@ -130,7 +129,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "NT kernel 6.x",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -147,7 +146,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-20000",
@@ -164,7 +163,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -181,7 +180,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-39",
@@ -198,7 +197,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-6093",
@@ -257,10 +256,10 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ****
 
-Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
+Propiedad (ID)|Tipo de datos|Description|Ejemplo de un valor devuelto
 ---|---|---|---
 Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
+GeneratedTime|cadena|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Ejemplos

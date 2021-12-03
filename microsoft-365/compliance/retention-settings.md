@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: ade850732a637356e4bb0d3b4de3ea8a8ac6c683
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 049181657dd74639fb4c4a22e371015830baf19a
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240821"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61282986"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -220,7 +220,7 @@ La ubicación del **correo electrónico de Exchange** admite la retención para 
 
 Los buzones de recursos, los contactos y los grupos de Microsoft 365 no son compatibles con el correo electrónico de Exchange. Para los buzones de grupo de Microsoft 365, seleccione en su lugar la ubicación de **Microsoft 365 Groups**. Aunque la ubicación de Exchange inicialmente permite seleccionar un buzón de correo de grupo para un ámbito estático, cuando intenta guardar la directiva de retención, recibe un error que indica que "RemoteGroupMailbox" no es una selección válida para esta ubicación.
 
-Según la configuración de directivas, los [buzones de correo inactivos](create-and-manage-inactive-mailboxes.md) pueden incluirse o no:
+Según la configuración de directivas, los [buzones de correo inactivos](inactive-mailboxes-in-office-365.md) pueden incluirse o no:
 
 - Los ámbitos de directiva estática incluyen buzones inactivos cuando se usa la configuración predeterminada **Todos los destinatarios**, pero no se admiten para [inclusiones o exclusiones específicas](#a-policy-with-specific-inclusions-or-exclusions). Sin embargo, si incluye o excluye un destinatario que tiene un buzón de correo activo en el momento en que se aplica la directiva y el buzón más adelante pasa a estar inactivo, la configuración de retención se seguirá aplicando o excluyendo.
 

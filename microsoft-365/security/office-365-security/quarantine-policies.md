@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e31d0a75e8b891e4ab0e0293d7c0be98e625134
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 81bb257d809eeb16988118faaced2035b527c491
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064312"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283728"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -149,33 +149,54 @@ New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 
 
 El _parámetro EndUserQuarantinePermissionsValue_ usa un valor decimal que se convierte a partir de un valor binario. El valor binario corresponde a los permisos de cuarentena de usuario final disponibles en un orden específico. Para cada permiso, el valor 1 es True y el valor 0 es False.
 
-El orden y los valores necesarios para cada permiso individual en grupos de permisos preestablecidos se describen en la tabla siguiente:
+El orden y los valores necesarios para cada permiso individual se describen en la tabla siguiente:
+
+<br>
+
+****
+
+|Permiso|Valor decimal|Valor binario|
+|---|:---:|:---:|
+|PermissionToViewHeader<sup>\*</sup>|128|10000000|
+|PermissionToDownload<sup>\*\*</sup>|64|01000000|
+|PermissionToAllowSender<sup>\*\*</sup>|32|00100000|
+|PermissionToBlockSender|16|00010000|
+|PermissionToRequestRelease<sup>\*\*\*</sup>|8 |00001000|
+|PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
+|PermissionToPreview|2|00000010|
+|PermissionToDelete|1|00000001|
+|
+
+<sup>\*</sup>El valor 0 no  oculta el botón Ver encabezado del mensaje en los detalles del mensaje en cuarentena (el botón siempre está disponible).
+
+<sup>\*\*</sup> Esta configuración no se usa (el valor 0 o 1 no hace nada).
+
+<sup>\*\*\*</sup> No establezca ambos valores en 1. Establezca uno en 1 y el otro en 0, o establezca ambos en 0.
+
+Para los permisos de acceso limitado, los valores requeridos son:
 
 <br>
 
 ****
 
 |Permiso|Acceso limitado|
-|---|:---:|
+|---|:--:|
+|PermissionToViewHeader|0|
+|PermissionToDownload|0|
+|PermissionToAllowSender|0|
 |PermissionToBlockSender|1|
-|PermissionToDelete|1|
-|PermissionToDownload<sup>\*</sup>|0|
+|PermissionToRequestRelease|1|
+|PermissionToRelease|0|
 |PermissionToPreview|1|
-|PermissionToRelease<sup>\*\*</sup>|0|
-|PermissionToRequestRelease<sup>\*\*</sup>|1|
-|PermissionToViewHeader<sup>\*</sup>|0|
-|Valor binario|01101010|
-|Valor decimal que se usará|106|
+|PermissionToDelete|1|
+|Valor binario|00011011|
+|Valor decimal que se usará|27|
 |
-
-<sup>\*</sup> Actualmente, este valor es siempre 0. Para PermissionToViewHeader, el valor 0  no oculta el botón Ver encabezado del mensaje en los detalles del mensaje en cuarentena (el botón siempre está disponible).
-
-<sup>\*\*</sup> No establezca ambos valores en 1. Establezca uno en 1 y el otro en 0, o establezca ambos en 0.
 
 En este ejemplo se crea una nueva directiva de cuarentena denominada LimitedAccess con notificaciones de cuarentena activadas que asigna los permisos de acceso limitado, tal como se describe en la tabla anterior.
 
 ```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 -EsnEnabled $true
+New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -EsnEnabled $true
 ```
 
 Para los permisos personalizados, use la tabla anterior para obtener el valor binario que corresponde a los permisos que desea. Convierta el valor binario en un valor decimal y use el valor decimal para el parámetro _EndUserQuarantinePermissionsValue._
@@ -195,8 +216,8 @@ En _las características de_ protección admitidas que ponen en cuarentena los m
 |[Directivas contra correo no deseado:](configure-your-spam-filter-policies.md) <ul><li>**Correo no deseado** (_SpamAction_)</li><li>**Correo no deseado de elevada** confianza (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de elevada confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li></ul>|
 |Directivas de protección contra phishing: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación en Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Si se detecta message como un usuario suplantado** (_TargetedUserProtectionAction_)</li><li>**Si el mensaje se detecta como un dominio suplantado** (_TargetedDomainProtectionAction_)</li><li>**Si la inteligencia de buzones detecta y suplanta al usuario** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Sí|<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>Protección de suplantación:<ul><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy <sup>\*</sup> (acceso completo)</li></ul></li></ul>|
 |[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
-|[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>n/a</li></ul>|
-|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|n/a|
+|[Caja fuerte de datos adjuntos:](safe-attachments.md) <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware por [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>No aplicable</li></ul>|
+|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|No aplicable|
 |
 
 <sup>\*</sup> Como [se describió anteriormente en este artículo,](#full-access-permissions-and-quarantine-notifications)su organización podría usar NotificationEnabledPolicy en lugar de DefaultFullAccessPolicy. La única diferencia entre estas dos directivas de cuarentena es que las notificaciones de cuarentena se activarán en NotificationEnabledPolicy y se desactivarán en DefaultFullAccessPolicy.
@@ -673,7 +694,7 @@ Si la directiva de cuarentena asigna los **permisos de** acceso completo (todos 
 
 - **Notificaciones en cuarentena:** los botones siguientes están disponibles:
   - **Bloquear remitente**
-  - **Release**
+  - **Versión**
   - **Revisar**
 
   ![Botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total.](../../media/quarantine-tags-esn-full-access.png)

@@ -4,7 +4,7 @@
   items:
     - name: Introducción
       items:
-        - name: "Pila de implementación de confianza cero de Microsoft\_365"
+        - name: "Plan de implementación de Confianza cero de Microsoft\_365"
           href: microsoft-365-zero-trust.md
         - name: Tareas principales para apoyar el trabajo desde casa
           href: top-security-tasks-for-remote-work.md

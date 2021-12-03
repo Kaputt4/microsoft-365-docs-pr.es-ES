@@ -2,7 +2,6 @@
 title: Tipo de recurso File
 description: Recupera alertas recientes de Microsoft Defender para puntos de conexión relacionadas con archivos.
 keywords: apis, api de gráficos, api admitidas, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4e7cbc65971c2f916d362e6a997d73e5581c9022
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7fef64136e27b8b9a85163fe9e25fdf59ab6d2aa
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205504"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283490"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Se aplica a:** 
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,22 +53,22 @@ Método|Tipo de valor devuelto |Descripción
 
 |Propiedad | Tipo | Descripción |
 |:---|:---|:---|
-|sha1 | Cadena | Hash Sha1 del contenido del archivo |
-|sha256 | Cadena | Hash Sha256 del contenido del archivo |
+|sha1 | String | Hash Sha1 del contenido del archivo |
+|sha256 | String | Hash Sha256 del contenido del archivo |
 |globalPrevalence | Long que admite valores NULL | Prevalencia de archivos en toda la organización |
 |globalFirstObserved | DateTimeOffset | Primera vez que se observó el archivo |
 |globalLastObserved | DateTimeOffset | Última vez que se observó el archivo |
 |size | Long que admite valores NULL | Tamaño del archivo |
-|fileType | Cadena | Tipo del archivo |
+|fileType | String | Tipo del archivo |
 |isPeFile | Booleano | true si el archivo es ejecutable portátil (por ejemplo, "DLL", "EXE", etc.) |
-|filePublisher | Cadena | Editor de archivos |
-|fileProductName | Cadena | Nombre del producto |
+|filePublisher | String | Editor de archivos |
+|fileProductName | String | Nombre del producto |
 |firmante | Cadena | Firmante de archivos |
-|emisor | Cadena | Emisor de archivos |
-|signerHash | Cadena | Hash del certificado de firma |
+|emisor | String | Emisor de archivos |
+|signerHash | String | Hash del certificado de firma |
 |isValidCertificate | Booleano | Se ha comprobado correctamente la firma del certificado por Microsoft Defender para el agente de extremo |
 |determinationType | Cadena | El tipo de determinación del archivo |
-|determinationValue | Cadena | Valor de determinación |
+|determinationValue | String | Valor de determinación |
 
 ## <a name="json-representation"></a>Representación json
 

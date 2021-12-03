@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e5bb82d82d0b96334e716c4c0efd5cb700942f4e
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 1e584a252f93acfa6429c4f67c89c814c27ce4c8
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792309"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283010"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
@@ -56,14 +56,31 @@ Identifique a las partes interesadas apropiadas de su organización para colabor
 
 Seleccione las partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
 
-Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento** de la comunicación esté disponible como una opción de menú  en Centro de cumplimiento de Microsoft 365 y continuar con estos pasos de configuración, debe asignarse a los grupos de roles Cumplimiento de comunicaciones o Administración de cumplimiento *de* comunicaciones. Para obtener acceso y administrar las características de cumplimiento de comunicaciones después de la configuración inicial, los usuarios deben ser miembros de al menos un grupo de roles de cumplimiento de comunicaciones.
+> [!IMPORTANT]
+> Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
+
+Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento** de la comunicación esté disponible como una opción de menú en Centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
+
+- Azure Active Directory de [*administrador global*](/azure/active-directory/roles/permissions-reference#global-administrator)
+- Azure Active Directory de [*administrador de cumplimiento normativo*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
+- Centro de cumplimiento de Microsoft 365 de [*roles administración de*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) la organización
+- Centro de cumplimiento de Microsoft 365 [*de roles administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- *Grupo de roles de cumplimiento* de comunicaciones
+- *Grupo de roles De administración de* cumplimiento de comunicaciones
+
+Los miembros de los siguientes roles tienen los mismos permisos de solución incluidos en el grupo de roles *Administración de cumplimiento* de comunicaciones:
+
+- Azure Active Directory *global*
+- Azure Active Directory *de cumplimiento*
+- Centro de cumplimiento de Microsoft 365 *administración de la organización*
+- Centro de cumplimiento de Microsoft 365 de *cumplimiento*
 
 > [!IMPORTANT]
-> De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Los roles asignados en este paso son necesarios antes de que se pueda acceder a las características de cumplimiento de comunicaciones.
+> Asegúrese de que siempre tiene al  menos  un usuario en los grupos de roles Cumplimiento de comunicaciones o Administración de cumplimiento de comunicaciones (según la opción que elija) para que la configuración de cumplimiento de comunicación no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
 
-Dependiendo de cómo desee administrar las directivas de comunicación y las alertas, deberá asignar usuarios a grupos de roles específicos. Puede elegir asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicación. O puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles *Cumplimiento* de comunicaciones. Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
+En función de cómo desee administrar las alertas y directivas de cumplimiento de comunicaciones, deberá asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de cumplimiento de comunicación. Tiene la opción de asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicación. O puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles *Cumplimiento* de comunicaciones. Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
 
-Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la comunicación:
+Elija entre estas opciones de grupo de roles de solución al configurar y administrar el cumplimiento de las comunicaciones:
 
 |**Rol**|**Permisos de funciones**|
 |:-----|:-----|
@@ -129,4 +146,4 @@ Al planear las directivas de cumplimiento de comunicaciones, tenga en cuenta las
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, vea Configure communication compliance for Microsoft 365 or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for inappropriate content in [Microsoft Teams,](communication-compliance-configure.md) Exchange Online, and Yammer communications.
+Para configurar el cumplimiento de comunicaciones para su organización de [Microsoft 365,](communication-compliance-configure.md) vea Configure communication compliance for Microsoft 365 or check out the [case study for Contoso](communication-compliance-case-study.md) y how they quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online y Yammer comunicaciones.
