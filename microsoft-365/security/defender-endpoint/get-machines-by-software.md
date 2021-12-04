@@ -2,8 +2,7 @@
 title: Enumerar dispositivos por software
 description: Recupera una lista de dispositivos que tienen instalado este software.
 keywords: apis, api de gráficos, api admitidas, get, dispositivos de lista, lista de dispositivos, lista de dispositivos por software, Api de Microsoft Defender para Endpoint tvm
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 96f9ee111bc638339c4f4a001062cbeca1b20783
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 32dd0531d0919613621d656f7f3b9aef3e4bec0d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167495"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301587"
 ---
 # <a name="list-devices-by-software"></a>Enumerar dispositivos por software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -59,7 +58,7 @@ GET /api/Software/{Id}/machineReferences
 
 |Nombre|Tipo|Descripción
 |---|---|---|
-|Authorization|Cadena|Portador {token}. **Obligatorio**.
+|Authorization|String|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -91,13 +90,13 @@ Aquí tiene un ejemplo de la respuesta.
         {
             "id": "7c7e1896fa39efb0a32a2cf421d837af1b9bf762",
             "computerDnsName": "dave_desktop",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         },
         {
             "id": "7d5cc2e7c305e4a0a290392abf6707f9888fda0d",
             "computerDnsName": "jane_PC",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         }
         ...

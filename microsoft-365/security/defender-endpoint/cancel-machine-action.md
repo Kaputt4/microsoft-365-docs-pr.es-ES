@@ -2,7 +2,6 @@
 title: Cancelar API de acción de máquina
 description: Obtenga información sobre cómo cancelar una acción de máquina iniciada ya
 keywords: apis, api de gráficos,
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,20 +20,20 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8ae30dbf371afa6668de4846cebe85ae45fe09be
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 86adc16c5e275daf371c98c7a9709df4977025e8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171634"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302163"
 ---
 # <a name="cancel-machine-action-api"></a>Cancelar API de acción de máquina
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -71,7 +70,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|Cadena|{token} de portador. Obligatorio.|
+|Authorization|String|{token} de portador. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

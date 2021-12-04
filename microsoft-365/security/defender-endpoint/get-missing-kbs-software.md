@@ -2,8 +2,7 @@
 title: Obtener KBs ausentes por id. de software
 description: Recupera las actualizaciones de seguridad que faltan por id. de software
 keywords: apis, api de gráficos, api admitidas, get, list, file, information, software id, threat & administración de vulnerabilidades api, Api de Microsoft Defender para Endpoint tvm
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e5e94d29cb8779ba38ce0200ec2dd981dda22b57
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 692d0ca44a46ef11bd7ab3e9bb32a0c98dd7e01a
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167315"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301443"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtener KBs ausentes por id. de software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -57,7 +56,7 @@ GET /api/Software/{Id}/getmissingkbs
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

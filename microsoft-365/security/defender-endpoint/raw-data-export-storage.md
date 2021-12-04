@@ -2,8 +2,6 @@
 title: Transmitir eventos de Microsoft Defender para endpoint a Storage cuenta
 description: Obtén información sobre cómo configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a tu Storage usuario.
 keywords: Exportación de datos sin procesar, API de streaming, API, Centros de eventos, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 49d14074af42437caaca9684cbfa3fc46362d32d
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: f853917497a34ff4cd82f10cc83d23f530572e45
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786305"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301407"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a su Storage cuenta
 
@@ -30,7 +28,7 @@ ms.locfileid: "60786305"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -54,7 +52,7 @@ ms.locfileid: "60786305"
 
 6. Escriba su **Storage de recurso de cuenta**. Para obtener el identificador de **recurso Storage** cuenta, vaya a la página de la cuenta de Storage en la pestaña propiedades de [Azure Portal](https://ms.portal.azure.com/) copie el texto en Storage id. de recurso \> de \> **cuenta:**
 
-   ![Imagen del id. de recurso del centro de eventos1.](images/storage-account-resource-id.png)
+   :::image type="content" alt-text="Imagen del id. de recurso del centro de eventos1." source="images/storage-account-resource-id.png" lightbox="images/storage-account-resource-id.png":::
 
 7. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
@@ -62,16 +60,16 @@ ms.locfileid: "60786305"
 
 - Se creará un contenedor de blobs para cada tipo de evento:
 
-  ![Imagen del id. de recurso del centro de eventos2.](images/storage-account-event-schema.png)
+  :::image type="content" alt-text="Imagen del id. de recurso del centro de eventos2." source="images/storage-account-event-schema.png" lightbox="images/storage-account-event-schema.png":::
 
 - El esquema de cada fila de un blob es el siguiente JSON:
 
   ```json
   {
-          "time": "<The time WDATP received the event>"
-          "tenantId": "<Your tenant ID>"
-          "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <WDATP Advanced Hunting event as Json> }
+      "time": "<The time WDATP received the event>"
+      "tenantId": "<Your tenant ID>"
+      "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+      "properties": { <WDATP Advanced Hunting event as Json> }
   }
   ```
 
@@ -106,4 +104,4 @@ Para obtener los tipos de datos de nuestras propiedades de eventos, haga lo sigu
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [API de Streaming de Microsoft Defender para endpoints](raw-data-export.md)
 - [Transmitir eventos de Microsoft Defender para endpoint a su cuenta de Azure Storage](raw-data-export-storage.md)
-- [Azure Storage Documentación de la cuenta](/azure/storage/common/storage-account-overview)
+- [Azure Storage documentación de la cuenta](/azure/storage/common/storage-account-overview)

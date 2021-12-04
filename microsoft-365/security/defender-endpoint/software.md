@@ -2,7 +2,6 @@
 title: Propiedades y métodos de software
 description: Recupera las alertas más recientes.
 keywords: apis, api de gráficos, api admitidas, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,24 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f0f15f8a3cf7f40bd1fd2e64d4d37466cc12d67e
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6b08b7c4ebb0a818dec5bdf799c3114d91764259
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122095"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301791"
 ---
 # <a name="software-resource-type"></a>Tipo de recurso software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,7 +39,7 @@ ms.locfileid: "61122095"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 <br>
 
@@ -65,9 +63,9 @@ ms.locfileid: "61122095"
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
-|id|Cadena|Id. de software|
-|Nombre|Cadena|Nombre del software|
-|Proveedor|String|Nombre del editor de software|
+|id|String|Id. de software|
+|Nombre|String|Nombre del software|
+|Proveedor|Cadena|Nombre del editor de software|
 |Debilidades|Long|Número de vulnerabilidades detectadas|
 |publicExploit|Booleano|Existe vulnerabilidad pública para algunas de las vulnerabilidades|
 |activeAlert|Booleano|La alerta activa está asociada con este software|

@@ -2,7 +2,6 @@
 title: Ejecutar comandos de respuesta en directo en un dispositivo
 description: Aprende a ejecutar una secuencia de comandos de respuesta en directo en un dispositivo.
 keywords: apis, api de gráficos, api admitidas, carga en biblioteca
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,19 +20,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a986bf129361954953e3b29e5906c71a0f482ed
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6e8146a5e73cb056f6e22ec975f909c281d0890a
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163127"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300963"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -72,6 +71,8 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   Los dispositivos deben ejecutar una de las siguientes versiones de Windows
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [Versión 1909](/windows/whats-new/whats-new-windows-10-version-1909) o posterior
     - [Versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
@@ -104,7 +105,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|Cadena|Portador\<token>\. Obligatorio.|
+|Authorization|String|Portador\<token>\. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

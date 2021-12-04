@@ -2,8 +2,6 @@
 title: Capturar alertas desde el inquilino del cliente de MSSP
 description: Obtenga información sobre cómo capturar alertas de un inquilino de cliente
 keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 02b4d16e6ef99f6f3827d2879cd6d26aeb887112
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: dce95b2053d95ebb03502d38cf35619c596253e1
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61169031"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300423"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Capturar alertas desde el inquilino del cliente de MSSP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
@@ -181,7 +179,7 @@ Ahora puede descargar el archivo de configuración correspondiente para siem y c
 
 Para obtener información sobre cómo capturar alertas mediante la API de REST, vea [Extraer alertas mediante la API de REST](pull-alerts-using-rest-api.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Conceder acceso a MSSP al portal](grant-mssp-access.md)
 - [Acceder al portal de clientes de MSSP](access-mssp-portal.md)

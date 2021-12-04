@@ -2,7 +2,6 @@
 title: Buscar dispositivos por API IP interna
 description: Buscar dispositivos vistos con la IP interna solicitada en el intervalo de tiempo de 15 minutos antes y después de una marca de tiempo determinada
 keywords: apis, api de gráfico, api admitidas, get, device, IP, find, find device, by ip, ip
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6f8040ce207faef8ec802ddb637b97917c822801
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 702626d3e147bdd02c4988ffabbd158a44f911c7
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168695"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302271"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Buscar dispositivos por API IP interna
 
@@ -29,8 +28,8 @@ ms.locfileid: "61168695"
 
 
 **Se aplica a:** 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -75,7 +74,7 @@ GET /api/machines/findbyip(ip='{IP}',timestamp={TimeStamp})
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

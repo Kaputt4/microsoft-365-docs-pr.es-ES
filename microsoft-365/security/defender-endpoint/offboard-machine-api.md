@@ -2,7 +2,6 @@
 title: API de máquina fuera de la máquina
 description: Obtén información sobre cómo usar una API para salir de un dispositivo de Microsoft Defender para endpoint.
 keywords: api, api de gráfico, api admitidas, paquete de investigación de recopilación
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1b07ad9252b414dd84d2c73afa38c124851faef4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4d1170b03d510bb0c79376d55c771311e10251c8
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167051"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302391"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera de la máquina
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +48,7 @@ Dispositivo offboard de Defender para endpoint.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> Esta API se admite en Windows 10, versión 1703 y posteriores, o Windows Server 2019 y versiones posteriores.
+> Esta API se admite en Windows 11, Windows 10, versión 1703 y versiones posteriores, o Windows Server 2019 y versiones posteriores.
 >
 > Esta API no se admite en dispositivos MacOS o Linux.
 
@@ -78,8 +77,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

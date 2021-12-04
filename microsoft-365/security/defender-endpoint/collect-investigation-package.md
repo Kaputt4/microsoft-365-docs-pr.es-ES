@@ -2,7 +2,6 @@
 title: RECOPILAR API de paquetes de investigación
 description: Usa esta API para crear llamadas relacionadas con la recopilación de un paquete de investigación desde un dispositivo.
 keywords: api, api de gráfico, api admitidas, paquete de investigación de recopilación
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4359d2f135b965a06003d060def12b4ed053ca27
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: e6a310c167a0f77f0022b9ba35ed9aa94e437eb9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171502"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302223"
 ---
 # <a name="collect-investigation-package-api"></a>RECOPILAR API de paquetes de investigación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -49,7 +48,7 @@ Recopilar el paquete de investigación de un dispositivo.
 
 > [!IMPORTANT]
 >
-> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10 versión 1703 o posterior.
+> - Estas acciones de respuesta solo están disponibles para dispositivos Windows 10, versión 1703 o posterior y en Windows 11.
 
 ## <a name="permissions"></a>Permisos
 
@@ -76,8 +75,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

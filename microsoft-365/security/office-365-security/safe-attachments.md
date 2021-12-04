@@ -20,14 +20,14 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Caja fuerte datos adjuntos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efe1b985a7df7e8066533bf3789e38120dd97787
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b65813dedcf421e8335dc2433b5befee69cc60e6
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702882"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300399"
 ---
-# <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Caja fuerte Datos adjuntos de Microsoft Defender para Office 365
+# <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Caja fuerte datos adjuntos de Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "60702882"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Caja fuerte Los datos adjuntos de [Microsoft Defender](defender-for-office-365.md) para Office 365 proporcionan una capa adicional de protección para los datos adjuntos de correo electrónico que ya han sido examinados por la protección antimalware en [Exchange Online Protection (EOP).](anti-malware-protection.md) En concreto, Caja fuerte datos adjuntos usa un entorno virtual para comprobar los datos adjuntos de los mensajes de correo electrónico antes de entregarse a los destinatarios (un proceso conocido como _detonación_).
+Caja fuerte datos adjuntos de [Microsoft Defender](defender-for-office-365.md) para Office 365 proporciona una capa adicional de protección para los datos adjuntos de correo electrónico que ya han sido examinados por la protección antimalware en [Exchange Online Protection (EOP).](anti-malware-protection.md) En concreto, Caja fuerte datos adjuntos usa un entorno virtual para comprobar los datos adjuntos de los mensajes de correo electrónico antes de entregarse a los destinatarios (un proceso conocido como _detonación_).
 
 La protección de datos adjuntos seguros para mensajes de correo electrónico se controla mediante directivas de datos adjuntos seguros. Aunque no hay ninguna directiva predeterminada de  datos adjuntos de Caja fuerte, la directiva de seguridad predefinida de protección integrada proporciona protección de datos adjuntos de Caja fuerte a todos los destinatarios (usuarios que no están definidos en directivas de datos adjuntos de Caja fuerte personalizadas). Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). También puede crear directivas Caja fuerte datos adjuntos que se aplican a usuarios, grupos o dominios específicos. Para obtener instrucciones, vea [Configurar directivas Caja fuerte datos adjuntos en Microsoft Defender para Office 365](set-up-safe-attachments-policies.md).
 
@@ -61,7 +61,7 @@ El análisis de datos adjuntos seguros tiene lugar en la misma región donde res
 > - [Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 > - [Documentos seguros en Microsoft 365 E5](safe-docs.md)
 
-## <a name="safe-attachments-policy-settings"></a>Caja fuerte Configuración de directiva de datos adjuntos
+## <a name="safe-attachments-policy-settings"></a>Caja fuerte de directiva de datos adjuntos
 
 En esta sección se describe la configuración de las Caja fuerte de datos adjuntos:
 
@@ -73,14 +73,14 @@ En esta sección se describe la configuración de las Caja fuerte de datos adjun
 
   |Opción|Efecto|Úselo cuando desee:|
   |---|---|---|
-  |**Desactivado**|Los datos adjuntos no se examinan en busca de malware Caja fuerte datos adjuntos. Los mensajes aún se examinan en busca de malware mediante la [protección antimalware en EOP](anti-malware-protection.md).|Desactiva el examen de los destinatarios seleccionados. <p> Evite retrasos innecesarios en el enrutamiento del correo interno. <p> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos Caja fuerte de destinatarios que solo reciben mensajes de remitentes de confianza.**|
+  |**Desactivado**|Los datos adjuntos no se examinan en busca de malware Caja fuerte datos adjuntos. Los mensajes aún se examinan en busca de malware mediante la [protección antimalware en EOP](anti-malware-protection.md).|Desactiva el examen de los destinatarios seleccionados. <p> Evite retrasos innecesarios en el enrutamiento del correo interno. <p> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos Caja fuerte de destinatarios que solo reciben mensajes de remitentes de confianza. ZAP no pondrá en cuarentena los mensajes si Caja fuerte datos adjuntos está desactivado y no se recibe una señal de malware. Para obtener más información, consulte [Zero-hour auto purge](zero-hour-auto-purge.md)**|
   |**Supervisar**|Entrega mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que sucede con el malware detectado. <p> La entrega de mensajes seguros puede retrasarse debido a Caja fuerte análisis de datos adjuntos.|Vea dónde va el malware detectado en su organización.|
   |**Bloquear**|Impide que se entreguen los mensajes con datos adjuntos de malware detectados. <p> Los mensajes se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <p> Bloquea automáticamente las instancias futuras de los mensajes y datos adjuntos. <p> La entrega de mensajes seguros puede retrasarse debido a Caja fuerte análisis de datos adjuntos.|Protege su organización de ataques repetidos con los mismos datos adjuntos de malware. <p> Este es el valor predeterminado y el valor recomendado en Directivas de seguridad [preestablecidas](preset-security-policies.md)estándar y estricta.|
   |**Replace**|Quita los datos adjuntos de malware detectados. <p> Notifica a los destinatarios que se han quitado los datos adjuntos. <p>  Los mensajes que contienen datos adjuntos malintencionados se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <p> La entrega de mensajes seguros puede retrasarse debido a Caja fuerte análisis de datos adjuntos.|Aumentar la visibilidad de los destinatarios que se quitaron los datos adjuntos debido al malware detectado.|
   |**Entrega dinámica**|Entrega mensajes inmediatamente, pero reemplaza los datos adjuntos por marcadores de posición hasta Caja fuerte se completa el examen de datos adjuntos. <p> Los mensajes que contienen datos adjuntos malintencionados se ponen en cuarentena. De forma predeterminada, solo los administradores (no los usuarios) pueden revisar, liberar o eliminar los mensajes.<sup>\*</sup> <p> Para obtener más información, vea la sección [Entrega dinámica en Caja fuerte de datos adjuntos](#dynamic-delivery-in-safe-attachments-policies) más adelante en este artículo.|Evite retrasos en los mensajes mientras protege a los destinatarios de archivos malintencionados.|
   |
 
-  <sup>\*</sup>Los administradores pueden  crear y asignar directivas de cuarentena en Caja fuerte directivas de datos adjuntos que definen lo que los usuarios pueden hacer a los mensajes en cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
+  <sup>\*</sup>Los administradores pueden  crear y asignar directivas de cuarentena en Caja fuerte directivas de datos adjuntos que definen lo que los usuarios pueden hacer a los mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
 - **Redirigir datos** adjuntos al detectar: habilite redirigir y enviar los datos  adjuntos a la siguiente dirección de correo **electrónico:** para bloquear **,** **supervisar** o reemplazar acciones, envíe mensajes que contengan datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para análisis e investigación.
 

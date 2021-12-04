@@ -2,7 +2,6 @@
 title: tipo de recurso machineAction
 description: Obtenga información sobre los métodos y propiedades del tipo de recurso MachineAction en Microsoft Defender para endpoint.
 keywords: apis, api admitidas, get, machineaction, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 79503f4089f1ff19bc9f47c6032b6ebc33b244d8
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 625170f0e589ece6f6277dc8445f3af7bef11837
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171166"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301863"
 ---
 # <a name="machineaction-resource-type"></a>Tipo de recurso MachineAction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -67,16 +66,16 @@ ms.locfileid: "61171166"
 |Id.|Guid|Identidad de la [entidad Acción de](machineaction.md) máquina.|
 |type|Enum|Tipo de la acción. Los valores posibles son: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" y "UnrestrictCodeExecution".|
 |scope|cadena|Ámbito de la acción. "Completo" o "Selectivo" para aislamiento, "Rápido" o "Completo" para el examen antivirus.|
-|solicitante|Cadena|Identidad de la persona que ejecutó la acción.|
+|solicitante|String|Identidad de la persona que ejecutó la acción.|
 |externalID|Cadena|Id que el cliente puede enviar en la solicitud de correlación personalizada.|
-|requestSource|string|Nombre del usuario o aplicación que envió la acción.|
+|requestSource|cadena|Nombre del usuario o aplicación que envió la acción.|
 |comandos|matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|
 |cancellationRequestor|Cadena|Identidad de la persona que canceló la acción.|
-|requestorComment|Cadena|Comentario que se escribió al emitir la acción.|
-|cancellationComment|Cadena|Comentario que se escribió al cancelar la acción.|
+|requestorComment|String|Comentario que se escribió al emitir la acción.|
+|cancellationComment|String|Comentario que se escribió al cancelar la acción.|
 |status|Enum|Estado actual del comando. Los valores posibles son: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" y "Cancelled".|
 |machineId|Cadena|Id. de [la máquina](machine.md) en la que se ejecutó la acción.|
-|computerDnsName|Cadena|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
+|computerDnsName|String|Nombre de la [máquina](machine.md) en la que se ejecutó la acción.|
 |creationDateTimeUtc|DateTimeOffset|Fecha y hora en que se creó la acción.|
 |cancellationDateTimeUtc|DateTimeOffset|Fecha y hora en que se canceló la acción.|
 |lastUpdateDateTimeUtc|DateTimeOffset|La última fecha y hora en que se actualizó el estado de la acción.|

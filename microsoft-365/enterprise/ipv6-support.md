@@ -3,7 +3,7 @@ title: Compatibilidad con IPv6 en los servicios de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/01/2021
+ms.date: 12/03/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumen: describe la compatibilidad con IPv6 en Microsoft 365 componentes y en Microsoft 365 ofertas gubernamentales.'
-ms.openlocfilehash: 5d798f741caa1a9a2df69e1c4df1d45067d15ce3
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: a6a2e11ff2e312c02f10d152fe580bdead5fa7c9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262780"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301959"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Compatibilidad con IPv6 en los servicios de Microsoft 365
 

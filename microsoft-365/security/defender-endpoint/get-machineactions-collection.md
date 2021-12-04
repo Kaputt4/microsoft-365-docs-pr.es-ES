@@ -2,8 +2,7 @@
 title: Enumerar api machineActions
 description: Obtenga información sobre cómo usar la API List MachineActions para recuperar una colección de acciones de máquina en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, colección machineaction
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 885186ee528233a0f4fecc71dcfab6c1a639da01
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0c7f5b1097e7fe59f9ccaa28800da27d943f1176
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167327"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301599"
 ---
 # <a name="list-machineactions-api"></a>Enumerar API MachineActions
 
@@ -29,8 +28,8 @@ ms.locfileid: "61167327"
 
 
 **Se aplica a:** 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 

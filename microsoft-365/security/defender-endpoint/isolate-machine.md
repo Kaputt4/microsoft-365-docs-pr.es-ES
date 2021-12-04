@@ -2,7 +2,6 @@
 title: AISLAR API de máquina
 description: Obtenga información sobre cómo usar la API de la máquina de aislar para aislar un dispositivo del acceso a la red externa en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, dispositivo aislado
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f01a63dd5a2fa5d5aa56f171617041044a267fbb
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 52063135280d9e91ca531546b4ae03cf5b42ccbf
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218135"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300795"
 ---
 # <a name="isolate-machine-api"></a>AISLAR API de máquina
 
@@ -52,8 +51,8 @@ Aísla un dispositivo del acceso a la red externa.
 
 > [!IMPORTANT]
 >
-> - El aislamiento total está disponible para dispositivos Windows 10, versión 1703.
-> - El aislamiento selectivo está disponible para dispositivos Windows 10 versión 1709 o posterior.
+> - El aislamiento total está disponible para dispositivos Windows 10, versión 1703 y en Windows 11.
+> - El aislamiento selectivo está disponible para dispositivos Windows 10, versión 1709 o posterior, y en Windows 11.
 > - Al aislar un dispositivo, solo se permiten determinados procesos y destinos. Por lo tanto, los dispositivos que están detrás de un túnel VPN completo no podrán llegar al servicio en la nube de Microsoft Defender para Endpoint después de aislar el dispositivo. Se recomienda usar una VPN de túnel dividido para Microsoft Defender para endpoint y Antivirus de Microsoft Defender tráfico relacionado con la protección basada en la nube.
 
 ## <a name="permissions"></a>Permisos
@@ -82,13 +81,13 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Descripción
+Parámetro|Tipo|Description
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 IsolationType|Cadena|Tipo de aislamiento. Los valores permitidos son: "Completo" o "Selectivo".

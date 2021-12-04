@@ -2,7 +2,6 @@
 title: Enumerar vulnerabilidades por software
 description: Recupera una lista de vulnerabilidades en el software instalado.
 keywords: apis, graph api, apis compatibles, get, vulnerabilities list, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6201d50bc37900c9a8003c09f24a68447983efcb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2ac182b9d8e2cc79dfa7d42328ea4fbcacb7f6f9
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192768"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300891"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Enumerar vulnerabilidades por software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -60,7 +59,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 |Nombre|Tipo|Descripción
 |---|---|---|
-|Authorization|Cadena|Portador {token}. **Obligatorio**.
+|Authorization|String|Portador {token}. **Obligatorio**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

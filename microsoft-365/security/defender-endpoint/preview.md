@@ -18,19 +18,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4713621ab19f54d77c79fcd86aaebedf5a5be6a4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d29da74833bfd9b99f811bcc14de602b8e01d2c6
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199662"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300435"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -42,17 +43,17 @@ Obtén información sobre las nuevas características en la versión preliminar 
 > [!TIP]
 > Reciba una notificación cuando se actualice esta página copiando y pegando la siguiente dirección URL en el lector de fuentes: `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).
+Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md).
 
-## <a name="what-you-need-to-know"></a>Lo que necesita saber
+## <a name="what-you-need-to-know"></a>Aspectos que debe saber
 
 Al trabajar con características en versión preliminar pública, estas características:
 
-- Puede que tenga funciones restringidas o limitadas. Por ejemplo, la característica solo puede aplicarse a una plataforma.
-- Normalmente, pasan por los cambios de características antes de que estén generalmente disponibles (GA).
+- Pueden tener una funcionalidad restringida o limitada. Por ejemplo, es posible que la característica solo se aplique a una plataforma.
+- Las características suelen pasar por varios cambios antes de estar en disponibilidad general (GA).
 - Son totalmente compatibles con Microsoft.
-- Solo puede estar disponible en regiones geográficas seleccionadas o entornos en la nube. Por ejemplo, es posible que la característica no exista en la nube del gobierno.
-- Las características individuales de la versión preliminar pueden tener más restricciones de uso y compatibilidad. Si es así, esta información se indica normalmente en la documentación de características.
+- Es posible que solo estén disponibles en determinadas regiones geográficas o entornos de nube. Por ejemplo, puede que la característica no exista en la nube de la administración pública.
+- Las características individuales de la versión preliminar pueden tener más restricciones de uso y soporte técnico. Si es así, esta información se indica normalmente en la documentación de la característica.
 - Las versiones preliminares se proporcionan con un nivel de soporte estándar y se pueden usar para entornos de producción.
 
 ## <a name="turn-on-preview-features"></a>Activar la versión preliminar de las características

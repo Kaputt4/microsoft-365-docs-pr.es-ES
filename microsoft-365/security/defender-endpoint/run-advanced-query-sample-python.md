@@ -3,7 +3,6 @@ title: Guía avanzada de la API de Python
 ms.reviewer: ''
 description: Obtenga información sobre cómo consultar con la API de Microsoft Defender para endpoint mediante Python, con ejemplos.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,20 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 260e191a2948544ee98223c8b7f1563719693c9c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 73be2b3c2aa40bb88ac6ccff60eec5cb7f55338c
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154739"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300782"
 ---
 # <a name="advanced-hunting-using-python"></a>Búsqueda avanzada de amenazas con Python
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Se aplica a:** 
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -77,8 +77,8 @@ aadToken = jsonResponse["access_token"]
 donde
 
 - tenantId: identificador del espacio empresarial en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este espacio empresarial)
-- appId: id. de la aplicación de Azure AD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" en Microsoft Defender para endpoint)
-- appSecret: secreto de la aplicación de Azure AD
+- appId: id. de la aplicación Azure AD (la aplicación debe tener permiso "Ejecutar consultas avanzadas" en Microsoft Defender para endpoint)
+- appSecret: secreto de la aplicación Azure AD aplicación
 
 ## <a name="run-query"></a>Ejecutar consulta
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: Crea vínculos rápidos a tu correo electrónico, documentos, aplicaciones, sitios SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones.
-ms.openlocfilehash: 1f0123eefb421c22108f61bd45a27b1bc50d7309
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: a43f9c712bf661b4bcabba6da9df01ef0071d639
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335339"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300735"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
@@ -72,7 +72,7 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
 
 1. En el Centro de administración, vaya a la **pestaña Configuración**  >  **Organización Configuración** perfil de  >  **la** organización.
     
-2. En la **página Perfil de** la organización, junto a Agregar iconos   **personalizados para su organización,** seleccione **Editar**.
+2. En la página **Perfil de** la organización, vaya a **Iconos** del  iniciador de aplicaciones personalizadas , Si selecciona los tres puntos junto al icono personalizado y Seleccione **Editar icono personalizado**.
 
 3. Actualice el valor de los campos **Nombre del icono**, **Dirección URL**, **Descripción** o **Dirección URL de la imagen** para el icono personalizado (consulte la [Agregar un icono personalizado en el iniciador de aplicaciones](#add-a-custom-tile-to-the-app-launcher)).
     

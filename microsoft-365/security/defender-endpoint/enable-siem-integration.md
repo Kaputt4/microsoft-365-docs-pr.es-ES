@@ -2,8 +2,6 @@
 title: Habilitar la integración de SIEM en Microsoft Defender para endpoint
 description: Habilite la integración siem para recibir detecciones en la solución de administración de eventos y información de seguridad (SIEM).
 keywords: habilitar siem connector, siem, connector, security information and events
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f94bbd6da16d7c0cdffe2b5f49085ab4b774e03c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 881f6d3691add12af8c8f4e808417bf4cef6e5ea
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166979"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300184"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Habilitar la integración de SIEM en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -56,7 +54,7 @@ Habilite la integración de la información de seguridad y la administración de
 
 1. En el panel de navegación, **seleccione Configuración** API de puntos de \> **conexión** \>  \> **SIEM**.
 
-   :::image type="content" source="../../media/enable-siemnew.png" alt-text="Imagen de la integración siem desde Configuración menu1.":::
+   :::image type="content" source="../../media/enable-siemnew.png" lightbox="../../media/enable-siemnew.png" alt-text="Imagen de la integración siem desde Configuración menu1.":::
 
    > [!TIP]
    > Si se produce un error al intentar habilitar la aplicación de conector SIEM, compruebe la configuración del bloqueador de elementos emergentes del explorador. Puede que esté bloqueando la nueva ventana que se abre al habilitar la funcionalidad.
@@ -66,7 +64,7 @@ Habilite la integración de la información de seguridad y la administración de
     > [!WARNING]
     > El secreto de cliente solo se muestra una vez. Asegúrese de conservar una copia de ella en un lugar seguro.
 
-    ![Imagen de la integración siem desde Configuración menu2.](images/siem_details.png)
+    :::image type="content" alt-text="Imagen de la integración siem desde Configuración menu2." source="images/siem_details.png" lightbox="images/siem_details.png":::
 
 3. Elija el tipo SIEM que use en su organización.
 
@@ -93,7 +91,7 @@ Ahora puede continuar con la configuración de la solución SIEM o la conexión 
 
 Puede configurar IBM QRadar para recopilar detecciones de Microsoft Defender para endpoint. Para obtener más información, vea [IBM Knowledge Center](https://www.ibm.com/docs/en/qsip/7.3.2?topic=quick-start-guide).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Configurar HP ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md)

@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 07/27/2021
+ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1618d77a81888fe9076d00124cef770e81810836
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 30ee5d69db08dc4471bf6aa59558a934734e2f54
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756976"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302439"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -47,9 +47,14 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=Tdz6
 Para obtener más información sobre las novedades de otros productos de seguridad de Microsoft Defender, vea:
 
 - [Novedades de Microsoft 365 Defender](../defender/whats-new.md)
-- [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+
+## <a name="decemberjanuary-2021"></a>Diciembre/enero de 2021
+
+- [Experiencias](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015)de búsqueda e investigación actualizadas para Microsoft Defender para Office 365: Introducción al panel de resumen de correo electrónico para experiencias en Defender para Office 365, junto con actualizaciones de experiencia para el Explorador de amenazas y detecciones en tiempo real.
 
 
 ## <a name="october-2021"></a>Octubre de 2021
@@ -75,12 +80,12 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 - [Mejoras en el análisis de correo electrónico en investigaciones automatizadas](email-analysis-investigations.md)
 - [Entrega avanzada:](configure-advanced-delivery.md)introducción a una nueva funcionalidad para configurar la entrega de simulaciones de suplantación de identidad de terceros a los usuarios y mensajes sin filtrar en buzones de operaciones de seguridad.
-- [Caja fuerte Vínculos para Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [Caja fuerte vínculos para Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
 - Nuevas directivas de alerta para los siguientes escenarios: buzones en peligro, phishing de formularios, correos malintencionados entregados debido a invalidaciones y redondeo de ZAP
   - Actividad de reenvío de correo electrónico sospechoso
-  - El usuario no puede compartir formularios y recopilar respuestas
-  - Formulario bloqueado debido a un posible intento de suplantación de identidad
-  - Formulario marcado y confirmado como suplantación de identidad
+  - El usuario no puede compartir formularios ni recopilar respuestas
+  - Formulario bloqueado debido a un posible intento de suplantación de identidad (phishing)
+  - Formulario marcado y confirmado como suplantación de identidad (phishing)
   - [Nuevas directivas de alerta para ZAP](../../compliance/new-defender-alert-policies.md)
 - Las alertas de Microsoft Defender para Office 365 están ahora integradas en Microsoft 365 Defender: Microsoft 365 Defender cola de alertas unificadas y [cola de alertas unificadas](../defender/investigate-alerts.md)
 - [](user-tags.md) Las etiquetas de usuario ahora se integran en Microsoft Defender para obtener experiencias de alerta de Office 365, incluidos: la cola de alertas y los detalles de Office 365 Security & Compliance y el ámbito de las directivas de alerta personalizadas para las etiquetas de usuario para crear directivas de alertas dirigidas.
@@ -111,7 +116,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Microsoft 365 guía básica](https://www.microsoft.com/microsoft-365/roadmap)
 

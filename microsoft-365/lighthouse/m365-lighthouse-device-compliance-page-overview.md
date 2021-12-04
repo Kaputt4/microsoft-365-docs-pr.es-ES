@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouse Introducción a la página de cumplimiento de dispositivos
+title: Microsoft 365 Lighthouse de la página de cumplimiento de dispositivos
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Cumplimiento de dispositivos.
-ms.openlocfilehash: b3672c155f55d314f3e11a945e3a81d9a100142c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d1c4cb8fde2d3f653e77020e4ad29f70da266a06
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152519"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302355"
 ---
-# <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de cumplimiento de dispositivos
+# <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse de la página de cumplimiento de dispositivos
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
@@ -32,13 +32,13 @@ Microsoft 365 Lighthouse permite ver información e información relacionada con
 
 ## <a name="overview-tab"></a>Ficha Información general  
   
-En la pestaña Información general, puedes ver el estado de cumplimiento del dispositivo en todos los inquilinos, ver las tendencias de cumplimiento de dispositivos mensuales y realizar un seguimiento de si los dispositivos tienen directivas de cumplimiento asignadas. También puedes ver información sobre las acciones y requisitos de cumplimiento del dispositivo de inquilino en función de las directivas de acceso condicional. 
+En la pestaña Información general, puedes ver el estado de cumplimiento del dispositivo en todos los inquilinos, ver las tendencias de cumplimiento de dispositivos mensuales y realizar un seguimiento de si los dispositivos tienen directivas de cumplimiento asignadas. También puedes ver cuántos inquilinos no tienen ningún requisito de cumplimiento de dispositivos aplicado mediante directivas de acceso condicional. Puede seleccionar **Ver más para** ver más detalles.
 
 Para obtener información detallada sobre el cumplimiento de dispositivos para un inquilino de cliente determinado, seleccione un valor en cualquiera de las columnas de estado de ese inquilino. Se abrirá la pestaña Dispositivos para que puedas ver los detalles de cumplimiento del dispositivo para el inquilino seleccionado.
 
 Para exportar datos de cumplimiento de dispositivos a un Excel de valores separados por comas (.csv), seleccione **Exportar**.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Captura de pantalla de la pestaña Información general.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Captura de pantalla de la pestaña Información general." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png":::
 
 ## <a name="devices-tab"></a>Pestaña Dispositivos
 
@@ -55,11 +55,11 @@ La pestaña Dispositivos también incluye las siguientes opciones:
 
 - **Exportar:** Seleccione esta opción para exportar datos de cumplimiento de dispositivos a Excel de valores separados por comas (.csv).
 - **Actualizar:** Selecciona para recuperar los datos de cumplimiento del dispositivo más actuales.
-- **Sincronización:** Seleccione uno o varios dispositivos de la lista que tengan el estado No conforme, En período de gracia o No evaluados y, a continuación, seleccione esta opción para forzar a esos dispositivos a que se desenladen con Intune y reciban inmediatamente las directivas que se les hayan asignado.
+- **Sincronizar:** Seleccione uno o varios dispositivos de la lista que tengan el estado No conforme, En período de gracia o No evaluados y, a continuación, seleccione esta opción para forzar a esos dispositivos a que se desenladen con Intune y reciban inmediatamente las directivas que se les hayan asignado.
 - **Reiniciar:** Seleccione uno o varios dispositivos de la lista que tengan el estado No conforme, En período de gracia o No evaluados y, a continuación, seleccione esta opción para reiniciar esos dispositivos.
 - **Buscar:** Escribe palabras clave para localizar rápidamente un dispositivo específico en la lista.
  
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Captura de pantalla de la pestaña Dispositivos.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Captura de pantalla de la pestaña Dispositivos." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
 
 ## <a name="policies-tab"></a>Pestaña Directivas
 
@@ -75,7 +75,7 @@ La pestaña Directivas también incluye las siguientes opciones:
 - **Actualizar:** Seleccione esta opción para recuperar los datos de directiva de cumplimiento de dispositivos más actuales.
 - **Buscar:** Escribe palabras clave para localizar rápidamente una directiva de cumplimiento de dispositivos específica en la lista.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Captura de pantalla de la pestaña Directivas.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Captura de pantalla de la pestaña Directivas." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png":::
 
 ## <a name="settings-tab"></a>Configuración pestaña
 
@@ -91,7 +91,7 @@ La Configuración también incluye las siguientes opciones:
 - **Actualizar:** Seleccione esta opción para recuperar los datos de configuración no compatibles más actuales.
 - **Buscar:** Escriba palabras clave para buscar rápidamente una configuración específica no compatible en la lista.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Captura de pantalla de la Configuración pestaña.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Captura de pantalla de la Configuración pestaña." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png":::
 
 ## <a name="related-content"></a>Contenido relacionado
 

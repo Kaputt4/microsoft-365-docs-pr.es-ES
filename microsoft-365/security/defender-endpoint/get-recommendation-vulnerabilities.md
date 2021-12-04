@@ -2,8 +2,7 @@
 title: Enumerar vulnerabilidades por recomendación
 description: Recupera una lista de vulnerabilidades asociadas con la recomendación de seguridad.
 keywords: apis, api de gráficos, api admitidas, obtener, lista de vulnerabilidades, recomendación de seguridad, recomendación de seguridad para vulnerabilidades, Administración de amenazas y vulnerabilidades, Administración de amenazas y vulnerabilidades api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ee1b99ceae87cdb6542e06ea7ee22c52db23ee96
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 05e4719e69601024af25b2b797477506f195d328
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168623"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300235"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Enumerar vulnerabilidades por recomendación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -59,7 +58,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

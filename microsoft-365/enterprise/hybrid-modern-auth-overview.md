@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/15/2020
+ms.date: 12/03/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá acerca de la autenticación moderna híbrida y los requisitos previos para su uso con servidores Skype Empresarial y Exchange locales.
-ms.openlocfilehash: c6e12638ca0568bcf2ca692b53008971d897290e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9cb8db650a52b8789c66243d5d47bab1c9857230
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209758"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301707"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para el uso en Skype Empresarial y los servidores de Exchange locales
 
 *Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-La _autenticación moderna_ es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras. Está disponible para implementaciones híbridas de Office 365 de servidores de Skype Empresarial y Exchange, así como para entornos híbridos de dominio dividido de Skype Empresarial. Este artículo contiene vínculos a los documentos relacionados sobre los requisitos previos, la configuración o desactivación de la autenticación moderna e información para algunos de los clientes relacionados (como  los clientes de Skype y Outlook).
+La _autenticación moderna_ es un método de administración de identidades que ofrece autenticación y autorización de usuarios más seguras. Está disponible para implementaciones híbridas Office 365 de servidores Skype Empresarial locales y Exchange servidores locales y híbridos de dominio dividido Skype Empresarial servidores. Este artículo contiene vínculos a los documentos relacionados sobre los requisitos previos, la configuración o desactivación de la autenticación moderna e información para algunos de los clientes relacionados (como  los clientes de Skype y Outlook).
 
 - [¿Qué es la autenticación moderna?](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
 - [¿Qué cambia cuando uso la autenticación moderna?](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
@@ -40,13 +40,13 @@ La _autenticación moderna_ es un método de administración de identidades que 
 
 La autenticación moderna es un término genérico para una combinación d métodos de autenticación y autorización entre un cliente (por ejemplo, el equipo portátil o el teléfono) y un servidor, así como algunas medidas de seguridad que dependen de las directivas de acceso que puede que ya conozca. Incluye:
 
-- **Métodos de autenticación**: autenticación multifactor (MFA), autenticación por tarjeta inteligente, autenticación basada en certificado del cliente
+- **Métodos de autenticación:** autenticación multifactor (MFA); autenticación de tarjeta inteligente; autenticación basada en certificados de cliente
 - **Métodos de autorización**: la implementación de Microsoft de Open Authorization (OAuth).
 - **Directivas de acceso condicional**: acceso condicional de Azure Active Directory (Azure AD) y administración de aplicaciones móviles (MAM)
 
 La administración de identidades de usuario con la autenticación moderna ofrece a los administradores distintas herramientas para la protección de los recursos y ofrece métodos más seguros de administración de identidades para escenarios locales (Exchange y Skype Empresarial), implementaciones híbridas de Exchange y dominios divididos o híbridos de Skype Empresarial.
 
-Tenga en cuenta que, como Skype Empresarial trabaja estrechamente con Exchange, el comportamiento de inicio de sesión que verán los usuarios de los clientes de Skype Empresarial se verán afectados por el estado de la autenticación moderna de Exchange. Esto también se aplicará si tiene una arquitectura híbrida de _dominio dividido_ de Skype Empresarial, en la que tiene tanto Skype Empresarial online como Skype Empresarial local, con usuarios alojados en ambas ubicaciones.
+Dado que Skype Empresarial funciona estrechamente con Exchange, el comportamiento de inicio de sesión Skype Empresarial los usuarios cliente se verán afectados por el estado de autenticación moderno de Exchange. Esto también se aplicará si tiene una arquitectura híbrida de _dominio dividido_ de Skype Empresarial, en la que tiene tanto Skype Empresarial online como Skype Empresarial local, con usuarios alojados en ambas ubicaciones.
 
 Para obtener más información acerca de la autenticación moderna en Office 365, [vea Office 365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
@@ -60,7 +60,7 @@ Cuando se usa la autenticación moderna con un servidor de Exchange o Skype Empr
 
 El cambio a evoSTS permite que los servidores locales usen OAuth (emisión de tokens) para autorizar a los clientes, y también el uso de métodos de seguridad comunes en la nube (igual que la autenticación multifactor). Además, el evoSTS emite tokens que permiten que los usuarios soliciten el acceso a los recursos sin proporcionar su contraseña como parte de la solicitud. Independientemente de la ubicación de los usuarios (en línea o en el entorno local) y de la ubicación donde se encuentre el recurso necesario, EvoSTS se convertirá en el centro de autorización de usuarios y clientes cuando se configure la autenticación moderna.
 
-Por ejemplo, si un cliente de Skype Empresarial necesita tener acceso al servidor de Exchange para obtener la información de calendario en nombre de un usuario, usará la Biblioteca de autenticación de Active Directory (ADAL) para hacerlo. ADAL es una biblioteca de código diseñada para que los recursos protegidos en el directorio estén disponibles para las aplicaciones de cliente que utilicen tokens de seguridad de OAuth. ADAL funciona con OAuth para comprobar las notificaciones y el intercambio de tokens (en lugar de contraseñas) para conceder a un usuario acceso a un recurso. En el pasado, la autoridad en una transacción como esta (el servidor que sabe cómo validar las notificaciones de usuario y emitir los tokens necesarios) podría haber sido un servicio de token de seguridad local o incluso de Servicios de federación de Active Directory (AD FS). Sin embargo, la autenticación moderna centraliza dicha autoridad al usar Azure AD.
+Por ejemplo, si un cliente de Skype Empresarial necesita tener acceso Exchange un servidor para obtener información de calendario en nombre de un usuario, usa la Biblioteca de autenticación de Microsoft (MSAL) para hacerlo. MSAL es una biblioteca de código diseñada para que los recursos protegidos del directorio estén disponibles para las aplicaciones cliente mediante tokens de seguridad de OAuth. MSAL funciona con OAuth para comprobar notificaciones y para intercambiar tokens (en lugar de contraseñas), para conceder a un usuario acceso a un recurso. En el pasado, la autoridad de una transacción como esta (el servidor que sabe cómo validar notificaciones de usuario y emitir los tokens necesarios) podría haber sido un servicio de token de seguridad local o incluso servicios de federación de Active Directory. Sin embargo, la autenticación moderna centraliza dicha autoridad al usar Azure AD.
 
 Esto también significa que, aunque el servidor de Exchange y los entornos de Skype Empresarial puedan ser totalmente locales, el servidor de autorización estará en línea, y el entorno local debe tener la capacidad de crear y mantener una conexión con la suscripción de Office 365 en la nube (y la instancia de Azure AD que la suscripción usa como directorio).
 

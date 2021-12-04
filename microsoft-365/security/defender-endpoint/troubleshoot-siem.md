@@ -2,8 +2,6 @@
 title: Solucionar problemas de integración de herramientas SIEM en Microsoft Defender para endpoint
 description: Solucionar problemas que pueden surgir al usar herramientas SIEM con Microsoft Defender para endpoint.
 keywords: troubleshoot, siem, client secret, secret
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 9218ba1c104f2792362f566850c584f0cf5dc795
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5c0f02834fe70c086ca5db7def6d9f2fed2c7543
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196792"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301743"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Solucionar problemas de integración de la herramienta SIEM
 
@@ -29,7 +27,8 @@ ms.locfileid: "60196792"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

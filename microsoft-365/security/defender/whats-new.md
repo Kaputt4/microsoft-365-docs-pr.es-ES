@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a1937fd24c8025aa3e3d7afb16fbf050b1155fb3
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: e22a237a5e8369093a83063f784fdba3ed75401c
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786619"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300819"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "60786619"
 
 Las siguientes características están en versión preliminar o generalmente disponibles (GA) en la última versión de Microsoft 365 Defender.
 
-Fuente RSS: recibe una notificación cuando se actualiza esta página copiando y pegando la siguiente dirección URL en el lector de fuentes:
+Fuente RSS: para recibir notificaciones cuando esta página se actualice, copie y pegue la dirección URL siguiente en el lector de fuentes: 
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
@@ -42,7 +42,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 Para obtener más información sobre las novedades de otros productos de seguridad de Microsoft Defender, vea:
 
 - [Novedades de Microsoft Defender para Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
-- [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
@@ -84,7 +84,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 
 ## <a name="april-2021"></a>Abril de 2021
-- Microsoft 365 Defender<br> El portal [de Microsoft 365 Defender](https://security.microsoft.com) mejorado ya está disponible. Esta nueva experiencia reúne Defender for Endpoint, Defender for Office 365, Defender for Identity y mucho más en un único portal. Este es el nuevo hogar para administrar los controles de seguridad. [Ver las novedades](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
+- Microsoft 365 Defender<br> El portal [de Microsoft 365 Defender](https://security.microsoft.com) mejorado ya está disponible. Esta nueva experiencia reúne Defender for Endpoint, Defender for Office 365, Defender for Identity y mucho más en un único portal. Este es el nuevo hogar para administrar los controles de seguridad. [Ver las novedades](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 - [Microsoft 365 Defender análisis de amenazas](threat-analytics.md)<br>
  El análisis de amenazas te ayuda a responder y minimizar el impacto de los ataques activos. También puedes obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y realizar acciones preventivas que mitiguen el riesgo de exposición adicional y aumenten la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para Endpoint y Microsoft Defender para los Office de licencias de E5.

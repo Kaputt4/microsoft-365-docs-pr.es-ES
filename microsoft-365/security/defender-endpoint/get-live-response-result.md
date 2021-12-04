@@ -2,7 +2,6 @@
 title: Obtener resultados de respuesta en directo
 description: Obtenga información sobre cómo recuperar un resultado de comando de respuesta en directo específico por su índice.
 keywords: apis, api de gráficos, api admitidas, carga en biblioteca
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,19 +20,19 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4b7c2b79892874fad37be382ba7eecea1b761fe7
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ce0fd83e95be6fd1f26b40a5992303162a265c3e
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753570"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300460"
 ---
 # <a name="get-live-response-results"></a>Obtener resultados de respuesta en directo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -59,6 +58,8 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   Los dispositivos deben ejecutar una de las siguientes versiones de Windows
 
+  - **Windows 11**
+  
   - **Windows 10**
     - [Versión 1909](/windows/whats-new/whats-new-windows-10-version-1909) o posterior
     - [Versión 1903](/windows/whats-new/whats-new-windows-10-version-1903) con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
@@ -66,7 +67,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
     - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
+  - **Windows Server 2019: solo se aplica a la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
@@ -105,7 +106,7 @@ Si se realiza correctamente, este método devuelve 200, Ok código de respuesta 
 
 *Propiedades de transcripción de Runscript:*
 
-|Propiedad|Descripción|
+|Propiedad|Description|
 |---|---|
 |script_name|Nombre de script ejecutado|
 |exit_code|Código de salida de script ejecutado|

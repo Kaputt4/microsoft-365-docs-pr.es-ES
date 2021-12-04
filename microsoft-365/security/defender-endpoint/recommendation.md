@@ -2,7 +2,6 @@
 title: Propiedades y métodos estáticos
 description: Recupera las alertas más recientes.
 keywords: apis, api de gráficos, api admitidas, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5e1364b19ac29f7d753c6d5b479303b8c0ef355b
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: f6e8295d83d5ab6fb86726903800d2779f394836
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122458"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301491"
 ---
 # <a name="recommendation-resource-type"></a>Tipo de recurso Recomendación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Se aplica a:**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -38,7 +39,7 @@ ms.locfileid: "61122458"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 <br>
 
@@ -61,26 +62,26 @@ ms.locfileid: "61122458"
 
 |Propiedad|Tipo|Descripción|
 |---|---|---|
-|id|Cadena|Id. de recomendación|
+|id|String|Id. de recomendación|
 |productName|cadena|Nombre de software relacionado|
-|recommendationName|Cadena|Nombre de recomendación|
+|recommendationName|String|Nombre de recomendación|
 |Debilidades|Long|Número de vulnerabilidades detectadas|
 |Proveedor|Cadena|Nombre de proveedor relacionado|
-|recommendedVersion|Cadena|Versión recomendada|
+|recommendedVersion|String|Versión recomendada|
 |recommendedProgram|String|Programa recomendado|
-|recommendedVendor|Cadena|Proveedor recomendado|
+|recommendedVendor|String|Proveedor recomendado|
 |recommendationCategory|String|Categoría de recomendación. Los valores posibles son: "Accounts", "Application", "Network", "OS", "SecurityControls"|
 |subCategory|Cadena|Subcategoría recomendación|
 |severityScore|Doble|Posible impacto de la configuración en la puntuación segura de Microsoft para dispositivos de la organización (1-10)|
 |publicExploit|Booleano|La vulnerabilidad pública está disponible|
 |activeAlert|Booleano|La alerta activa está asociada con esta recomendación|
-|associatedThreats|Colección de cadenas|El informe de análisis de amenazas está asociado a esta recomendación|
-|remediationType|Cadena|Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"|
+|associatedThreats|Colección string|El informe de análisis de amenazas está asociado a esta recomendación|
+|remediationType|String|Tipo de corrección. Los valores posibles son: "ConfigurationChange", "Update", "Upgrade","Uninstall"|
 |Estado|Enum|Estado de excepción de recomendación. Los valores posibles son: "Active" y "Exception"|
 |configScoreImpact|Doble|Impacto de puntuación segura de Microsoft para dispositivos|
 |exposureImpact|Doble|Impacto de la puntuación de exposición|
 |totalMachineCount|Long|Número de dispositivos instalados|
 |exposedMachinesCount|Long|Número de dispositivos instalados expuestos a vulnerabilidades|
 |nonProductivityImpactedAssets|Long|Número de dispositivos que no se ven afectados|
-|relatedComponent|Cadena|Componente de software relacionado|
+|relatedComponent|String|Componente de software relacionado|
 |

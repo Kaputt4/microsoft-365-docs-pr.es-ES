@@ -3,8 +3,6 @@ title: Aplicaciones de partners en Microsoft Defender para endpoint
 ms.reviewer: ''
 description: Ver aplicaciones de partners compatibles para mejorar las capacidades de detección, investigación e inteligencia de amenazas de la plataforma
 keywords: partners, aplicaciones, terceros, conexiones, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1b9c6e2dbb414aea8f40ccafacb338e66266bae
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0b98ffd747861d6aab757e3941d1a2ef4d6aeac2
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109064"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301239"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones de partners en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -51,7 +49,7 @@ Microsoft Defender para endpoint se integra perfectamente con las soluciones de 
 
 ### <a name="security-information-and-analytics"></a>Información de seguridad y análisis
 
-Logotipo|Nombre del partner|Descripción
+Logotipo|Nombre del partner|Description
 :---|:---|:---
 ![Imagen del logotipo de AttackIQ.](images/attackiq-logo.png)|[Plataforma AttackIQ](https://go.microsoft.com/fwlink/?linkid=2103502)|La plataforma AttackIQ valida que Defender for Endpoint se configura correctamente iniciando ataques continuos de forma segura en activos de producción
 ![Imagen del logotipo de Microsoft Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Transmitir alertas de Microsoft Defender para endpoint en Microsoft Sentinel
@@ -67,7 +65,7 @@ Logotipo|Nombre del partner|Descripción
 
 ### <a name="orchestration-and-automation"></a>Orquestación y automatización
 
-Logotipo|Nombre del partner|Descripción
+Logotipo|Nombre del partner|Description
 :---|:---|:---
 ![Imagen del logotipo de CyberSponse CyOps.](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps se integra con Defender for Endpoint para automatizar los libros de reproducción de respuesta a incidentes de alta velocidad de los clientes
 ![Imagen del logotipo de Delta Risk ActiveEye.](images/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk, un proveedor líder de servicios de seguridad y SOC-as-a-Service, integra Defender for Endpoint con su plataforma SOAR nativa de la nube, ActiveEye.
@@ -79,7 +77,7 @@ Logotipo|Nombre del partner|Descripción
 
 ### <a name="threat-intelligence"></a>Inteligencia de amenazas
 
-Logotipo|Nombre del partner|Descripción
+Logotipo|Nombre del partner|Description
 :---|:---|:---
 ![Imagen del logotipo de misp Malware Information Sharing Platform)..](images/misp-logo.png)|[MISP (Plataforma de uso compartido de información de malware)](https://go.microsoft.com/fwlink/?linkid=2127543)|Integrar indicadores de amenazas desde la plataforma de uso compartido de inteligencia de amenazas de código abierto en el entorno de Defender para endpoints
 ![Imagen del logotipo de Palo Alto Networks.](images/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enriquezca la protección de puntos de conexión extendiendo El autoenfoque y otras fuentes de amenazas a Defender for Endpoint con MineMeld
@@ -87,7 +85,7 @@ Logotipo|Nombre del partner|Descripción
 
 ### <a name="network-security"></a>Seguridad de red
 
-Logotipo|Nombre del partner|Descripción
+Logotipo|Nombre del partner|Description
 :---|:---|:---
 ![Imagen del logotipo de Aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Administrador de directivas de ClearPass de Aruba](https://go.microsoft.com/fwlink/?linkid=2127544)|Asegúrese de que Defender for Endpoint está instalado y actualizado en cada extremo antes de permitir el acceso a la red
 ![Imagen del logotipo de Hexágono azul para red.](images/bluehexagon-logo.png)|[Hexágono azul para red](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon ha creado la primera plataforma de aprendizaje profundo en tiempo real de la industria para la protección contra amenazas de red
@@ -97,18 +95,18 @@ Logotipo|Nombre del partner|Descripción
 
 ### <a name="cross-platform"></a>Multiplataforma
 
-Logotipo|Nombre del partner|Descripción
+Logotipo|Nombre del partner|Description
 :---|:---|:---
 ![Imagen del logotipo de Bitdefender.](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone es una plataforma de protección de puntos de conexión de próxima generación en capas que ofrece una protección completa contra todo el espectro de amenazas cibernéticas sofisticadas
 ![Imagen del logotipo de Better Mobile.](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|Solución MTD basada en IA para detener las amenazas móviles & phishing. Exploración privada de Internet para proteger la privacidad del usuario
 ![Imagen del logotipo de Corrata.](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Solución móvil: proteja sus dispositivos móviles con visibilidad granular y control de Corrata
 ![Imagen del logotipo de Lookout.](images/lookout-logo.png)|[Lookout](https://go.microsoft.com/fwlink/?linkid=866935)|Obtener telemetría de Protección contra amenazas móviles de Lookout para dispositivos móviles Android e iOS
 ![Imagen del logotipo de Symantec Endpoint Protection Mobile.](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile ayuda a las empresas a predecir, detectar y evitar amenazas y vulnerabilidades de seguridad en dispositivos móviles
-![Imagen del logotipo de Zimperio.](images/zimperium-logo.png)|[Zimperio](https://go.microsoft.com/fwlink/?linkid=2118044)|Extender defender para endpoint a iOS y Android con una defensa contra amenazas Machine Learning móvil
+![Imagen del logotipo de Zimperio.](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Extender defender para endpoint a iOS y Android con una defensa contra amenazas Machine Learning móvil
 
 ## <a name="other-integrations"></a>Otras integraciones
 
-Logotipo|Nombre del partner|Descripción
+Logotipo|Nombre del partner|Description
 :---|:---|:---
 ![Imagen del logotipo de Cyren Web Filter.](images/cyren-logo.png)|[Filtro web de Cyren](https://go.microsoft.com/fwlink/?linkid=2108221)|Mejorar defender para el punto de conexión con filtrado web avanzado
 ![Imagen del logotipo de Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Proporciona prevención avanzada de amenazas con tecnología de defensa de destino móvil. Integra los datos forenses directamente en los paneles de WD Defender para la nube para ayudar a priorizar las alertas, determinar la puntuación de riesgo del dispositivo y visualizar la escala de tiempo completa de ataques, incluida la información de memoria interna

@@ -4,7 +4,7 @@
 ### [¿Qué es Microsoft Defender para punto de conexión?](microsoft-defender-endpoint.md)
 ### [Comparar los planes 1 y 2 de Defender para punto de conexión](defender-endpoint-plan-1-2.md)
 ### [Requisitos mínimos](minimum-requirements.md)
-### [¿Cuáles son las novedades de Microsoft Defender para punto de conexión?](whats-new-in-microsoft-defender-atp.md)
+### [¿Cuáles son las novedades de Microsoft Defender para punto de conexión?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Versión preliminar de las características](preview.md)
 ### [Almacenamiento de datos y privacidad](data-storage-privacy.md)
 ### [Introducción al Centro de seguridad de Microsoft Defender](use.md)
@@ -136,7 +136,7 @@
 ###### [Configuración del proxy estático](linux-static-proxy-configuration.md)
 ###### [Definir las preferencias](linux-preferences.md)
 ###### [Detectar y bloquear aplicaciones potencialmente no deseadas](linux-pua.md)
-###### [Programar análisis con Microsoft Defender para punto de conexión en Linux](linux-schedule-scan-atp.md)
+###### [Programar análisis con Microsoft Defender para punto de conexión en Linux](linux-schedule-scan-mde.md)
 ###### [Programar una actualización de Microsoft Defender para punto de conexión (Linux)](linux-update-MDE-Linux.md)
 
 

@@ -3,7 +3,6 @@ title: Consultas de OData con Microsoft Defender para endpoint
 ms.reviewer: ''
 description: Use estos ejemplos de consultas de Open Data Protocol (OData) para ayudar con los protocolos de acceso a datos en Microsoft Defender para endpoint.
 keywords: apis, api admitidas, odata, consulta
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7d134cfb7d8c0aff1e7a50b1e0ce9cc2daa9a8b1
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6ee47a1c624020ffa40848910866738072044d27
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167147"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301479"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Consultas de OData con Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -275,7 +274,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
             "lastSeen": "2021-01-25T07:27:36.052313Z",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osProcessor": "x64",
             "version": "1901",
             "lastIpAddress": "10.166.113.46",
@@ -514,6 +513,6 @@ json{
 }
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Microsoft Defender para api de punto de conexión](apis-intro.md)

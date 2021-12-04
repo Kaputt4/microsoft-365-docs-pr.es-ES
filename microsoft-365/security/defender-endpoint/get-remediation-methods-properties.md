@@ -2,7 +2,6 @@
 title: Propiedades y métodos de la actividad de corrección
 description: La respuesta de la API contiene amenazas & administración de vulnerabilidades de corrección creadas en el espacio empresarial. Puede solicitar todas las actividades de corrección, solo una actividad de corrección o información sobre los dispositivos expuestos para una tarea de corrección seleccionada.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cbd37d48477cdd9b0a0dc7c6c5703b96ffb4b89e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8a6656f6a75c24a475e5b8788caf1e9b9ef5d743
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168587"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300975"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de la actividad de corrección
 
@@ -29,7 +28,7 @@ ms.locfileid: "61168587"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -58,34 +57,34 @@ Id. de propiedad|Tipo de datos|Description
 :---|:---|:---
 Categoría|Cadena|Categoría de la actividad de corrección (configuración software/seguridad)
 completerEmail|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico
-completerId|Cadena|Si alguien completó manualmente la actividad de corrección, esta columna contiene su identificador de objeto.
-completionMethod|Cadena|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada".
+completerId|String|Si alguien completó manualmente la actividad de corrección, esta columna contiene su identificador de objeto.
+completionMethod|String|Una actividad de corrección se puede completar "automáticamente" (si todos los dispositivos están parcheados) o "manualmente" por una persona que selecciona "marcar como completada".
 createdOn|DateTime|Hora en que se creó esta actividad de corrección
-Descripción|Cadena|Descripción de esta actividad de corrección
+Descripción|String|Descripción de esta actividad de corrección
 dueOn|DateTime|Fecha de vencimiento que el creador estableció para esta actividad de corrección
 fixedDevices||Número de dispositivos que se han corregido
-Id.|Cadena|Identificador de esta actividad de corrección
+ID|String|Identificador de esta actividad de corrección
 nameId|Cadena|Nombre del producto relacionado
 Prioridad|Cadena|Prioridad del conjunto de creadores para esta actividad de corrección (High\Medium\Low)
-productId|Cadena|Id. de producto relacionado
-productivityImpactRemediationType|Cadena|Solo se podrían solicitar algunos cambios de configuración para dispositivos que no afecten a los usuarios. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo dispositivos sin impacto del usuario".
+productId|String|Id. de producto relacionado
+productivityImpactRemediationType|String|Solo se podrían solicitar algunos cambios de configuración para dispositivos que no afecten a los usuarios. Este valor indica la selección entre "todos los dispositivos expuestos" o "solo dispositivos sin impacto del usuario".
 rbacGroupNames|Cadena|Nombres de grupo de dispositivos relacionados
 recommendedProgram|Cadena|Programa recomendado para actualizar a
-recommendedVendor|Cadena|Proveedor recomendado para actualizar a
-recommendedVersion|Cadena|Versión recomendada para actualizar o actualizar a
+recommendedVendor|String|Proveedor recomendado para actualizar a
+recommendedVersion|String|Versión recomendada para actualizar o actualizar a
 relatedComponent|Cadena|Componente relacionado de esta actividad de corrección (similar al componente relacionado para una recomendación de seguridad)
-requesterEmail|Cadena|Dirección de correo electrónico del creador
+requesterEmail|String|Dirección de correo electrónico del creador
 requesterId|Cadena|Id. de objeto Creator
-requesterNotes|Cadena|Las notas (texto libre) que el creador agregó para esta actividad de corrección
+requesterNotes|String|Las notas (texto libre) que el creador agregó para esta actividad de corrección
 Scid|Cadena|SCID de la recomendación de seguridad relacionada
 Estado|Cadena|Estado de la actividad de corrección (Activo/Completado)
 statusLastModifiedOn|DateTime|Fecha en la que se actualizó el campo de estado
 targetDevices|Long|Número de dispositivos expuestos a los que se aplica esta corrección
 Título|Cadena|Título de esta actividad de corrección
 Tipo|Cadena|Tipo de corrección
-vendorId|Cadena|Nombre de proveedor relacionado
+vendorId|String|Nombre de proveedor relacionado
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Obtener una actividad de corrección de acuerdo con su id](get-remediation-one-activity.md)
 

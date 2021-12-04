@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: bcarter
 author: brendacarter
-manager: johmar
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- remotework
+- m365solution-zerotrust
+- m365solution-overview
 description: Implemente los principios de confianza cero, la arquitectura y las capacidades para Microsoft 365.
-ms.openlocfilehash: 0328c6db55a6cd277df0fdbdb5741d55ee79663e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: ef916e576c6e7b837c46dda47cdc975fa02883f0
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284618"
+ms.locfileid: "61301691"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
@@ -82,7 +83,7 @@ Ve a Identidad de confianza cero y protección de acceso [a dispositivos](office
 
 |Incluye  |Requisitos previos  |No incluye  |
 |---------|---------|---------|
-|Directivas de identidad y acceso a dispositivos recomendadas para tres niveles de protección:<br>- Punto de partida<br>- Enterprise (recomendado)<br>- Specialized<br><br>Recomendaciones adicionales para:<br>- Usuarios externos (invitados)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Cloud App Security | Microsoft E3 o E5<br><br>Azure Active Directory en cualquiera de estos modos:<br>- Solo nube<br>- Híbrido con autenticación de sincronización de hash de contraseña (PHS)<br>- Híbrido con autenticación de paso a través (PTA)<br>- Federado     |Inscripción de dispositivos para directivas que requieren dispositivos administrados. Consulta "Administrar puntos de conexión con Intune" para inscribir dispositivos |
+|Directivas de identidad y acceso a dispositivos recomendadas para tres niveles de protección:<br>- Punto de partida<br>- Enterprise (recomendado)<br>- Specialized<br><br>Recomendaciones adicionales para:<br>- Usuarios externos (invitados)<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Defender para aplicaciones en la nube| Microsoft E3 o E5<br><br>Azure Active Directory en cualquiera de estos modos:<br>- Solo nube<br>- Híbrido con autenticación de sincronización de hash de contraseña (PHS)<br>- Híbrido con autenticación de paso a través (PTA)<br>- Federado     |Inscripción de dispositivos para directivas que requieren dispositivos administrados. Consulta "Administrar puntos de conexión con Intune" para inscribir dispositivos |
 | | | |
 
 Comience implementando el nivel de punto inicial. Estas directivas no requieren la inscripción de dispositivos en la administración. 
@@ -126,7 +127,7 @@ Vaya a [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) pa
 
 |Incluye  |Requisitos previos  |No incluye  |
 |---------|---------|---------|
-| Configurar el entorno piloto y de evaluación para todos los componentes:<br>- Defender for Identity<br>- Defender para Office 365<br>- Defender for Endpoint<br>- Microsoft Cloud App Security<br><br>Protección contra amenazas<br><br> Investigar y responder a amenazas   | Vea las instrucciones para leer acerca de los requisitos de arquitectura para cada componente de Microsoft 365 Defender.        | Azure AD identity protection no se incluye en esta guía de soluciones. Se incluye en step 1: Configure Zero Trust identity and device access protection.        |
+| Configurar el entorno piloto y de evaluación para todos los componentes:<br>- Defender for Identity<br>- Defender para Office 365<br>- Defender for Endpoint<br>- Microsoft Defender para aplicaciones en la nube<br><br>Protección contra amenazas<br><br> Investigar y responder a amenazas   | Vea las instrucciones para leer acerca de los requisitos de arquitectura para cada componente de Microsoft 365 Defender.        | Azure AD identity protection no se incluye en esta guía de soluciones. Se incluye en step 1: Configure Zero Trust identity and device access protection.        |
 |    |         |         |
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>Paso 5. Proteger y gobernar datos confidenciales

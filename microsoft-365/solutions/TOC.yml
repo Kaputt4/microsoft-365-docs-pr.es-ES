@@ -231,7 +231,13 @@
             - name: Qué pensar acerca de la intranet inteligente
               href: /sharepoint/trad-vs-modern-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Plan de desarrollo de la intranet
-              href: /sharepoint/intranet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              items:
+                - name: Plan de desarrollo de la intranet
+                  href: /sharepoint/intranet-team-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Roles y tareas de la intranet
+                  href: /sharepoint/intranet-roles-tasks?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: Resumen del plan de desarrollo de la intranet
+                  href: /sharepoint/intranet-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Planifique su intranet
               href: /sharepoint/plan-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Consideraciones al planificar una intranet global

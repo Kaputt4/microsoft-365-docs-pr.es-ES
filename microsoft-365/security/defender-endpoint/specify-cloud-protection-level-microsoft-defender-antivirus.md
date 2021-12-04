@@ -16,18 +16,19 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2c0f342c62409e8bfcf782c22714d9fd707c24a7
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 4723b84e285e508e33ca4b54a1897bbed036a897
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555541"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300711"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Especificar el nivel de protección en la nube
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer protección a los puntos de conexión mucho más rápido que a través de las actualizaciones de inteligencia de seguridad tradicionales. Puede configurar el nivel de protección en la nube mediante Microsoft Endpoint Manager (recomendado) o la directiva de grupo.
@@ -47,6 +48,7 @@ La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer 
 
 5. Expanda **Protección en la** nube y, a continuación, en la lista Nivel de protección entregado en **la** nube, seleccione una de las siguientes opciones:
 
+    - **No configurado:** Estado predeterminado.
     - **High:** aplica un nivel de detección fuerte.
     - **High plus:** usa el **nivel alto** y aplica medidas de protección adicionales (puede afectar al rendimiento del cliente).
     - **Tolerancia cero:** bloquea todos los ejecutables desconocidos.
@@ -70,6 +72,8 @@ La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer 
 4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **MpEngine**.
 
 5. Haga doble clic en la **configuración Seleccionar nivel de** protección en la nube y estabóla en **Habilitado**. Seleccione el nivel de protección:
+
+    - **No configurado:** Estado predeterminado.
     - **El nivel de bloqueo predeterminado** proporciona una detección segura sin aumentar el riesgo de detectar archivos legítimos.
     - **El nivel de bloqueo moderado** proporciona moderación solo para detecciones de elevada confianza
     - **El nivel alto de bloqueo** aplica un alto nivel de detección a la vez que optimiza el rendimiento del cliente (pero también puede ofrecer una mayor probabilidad de falsos positivos).
@@ -81,7 +85,7 @@ La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer 
 7. Implemente el objeto de directiva de grupo actualizado. Consulta [Consola de administración de directivas de grupo](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> ¿Usa objetos de directiva de grupo local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis](/mem/intune/configuration/group-policy-analytics)de directivas de grupo en Microsoft Endpoint Manager - Vista previa . 
+> ¿Usa objetos de directiva de grupo local? Vea cómo se traducen en la nube. [Analice los objetos de directiva de grupo locales mediante el análisis](/mem/intune/configuration/group-policy-analytics)de directivas de grupo en Microsoft Endpoint Manager - Vista previa .
   
 ## <a name="see-also"></a>Vea también
 

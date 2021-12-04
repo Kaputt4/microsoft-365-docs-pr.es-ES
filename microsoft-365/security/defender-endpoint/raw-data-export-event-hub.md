@@ -2,8 +2,6 @@
 title: Transmitir eventos de Microsoft Defender para endpoint a Azure Event Hubs
 description: Obtén información sobre cómo configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a tu centro de eventos.
 keywords: Exportación de datos sin procesar, API de streaming, API, Azure Event Hubs, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ac97d7a4210d1f498fa82453eb66e01398718c37
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0dddebc27f776e317090ac3424c27f01f26126ed
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209266"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61300194"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a los centros de eventos de Azure
 
@@ -30,8 +28,7 @@ ms.locfileid: "60209266"
 
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -57,13 +54,13 @@ ms.locfileid: "60209266"
 
    Para obtener el identificador de recurso **de Event Hubs,** vaya a la página de espacio de nombres de Azure Event Hubs en la pestaña propiedades de [Azure](https://ms.portal.azure.com/) > copie el texto en \> **Id. de recurso:**
 
-   ![Imagen del recurso del centro de eventos Id1.](images/event-hub-resource-id.png)
+   :::image type="content" alt-text="Imagen del recurso del centro de eventos Id1." source="images/event-hub-resource-id.png" lightbox="images/event-hub-resource-id.png":::
 
 7. Elija los eventos que desea transmitir y haga clic en **Guardar**.
 
 ## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Esquema de los eventos de Azure Event Hubs
 
-```text
+```json
 {
     "records": [
                     {
@@ -93,7 +90,7 @@ Para obtener los tipos de datos de las propiedades de evento, haga lo siguiente:
 
 2. Ejecute la siguiente consulta para obtener la asignación de tipos de datos para cada evento:
 
-   ```text
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 

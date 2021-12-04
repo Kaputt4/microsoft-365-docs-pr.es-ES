@@ -2,8 +2,6 @@
 title: Comprender los conceptos de inteligencia de amenazas en Microsoft Defender para endpoint
 description: Crear alertas de amenazas personalizadas para su organización y aprender los conceptos en torno a la inteligencia de amenazas en Microsoft Defender para endpoint
 keywords: inteligencia de amenazas, definiciones de alertas, indicadores de peligro, ioc
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0451d875f149a875872f5d5a32d3580015dbfb0e
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 440f788c4adb757013611bb05621b4eb4f4e9715
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804886"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302451"
 ---
 # <a name="understand-threat-intelligence-concepts"></a>Comprender conceptos de inteligencia sobre amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

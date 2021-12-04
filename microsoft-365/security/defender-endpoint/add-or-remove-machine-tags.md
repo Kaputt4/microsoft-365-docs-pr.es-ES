@@ -2,7 +2,6 @@
 title: Agregar o quitar API de etiquetas de máquina
 description: Obtenga información sobre cómo usar la API Agregar o quitar etiquetas de máquina para agregar o quitar una etiqueta para una máquina en Microsoft Defender para endpoint.
 keywords: apis, api de gráficos, api admitidas, etiquetas, etiquetas de máquina
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 15eef9097687e794c8aa88d8625fd481adb117af
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2ec34011d00e77c5e32f58567a0b705cf7c0dc1c
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208618"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301130"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>Agregar o quitar API de etiquetas de máquina
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint ](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint ](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -72,8 +72,8 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization|Cadena|Portador {token}. **Necesario**.
-Content-Type|string|application/json. **Necesario**.
+Authorization|String|Portador {token}. **Necesario**.
+Content-Type|cadena|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -82,7 +82,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 Parámetro|Tipo|Descripción
 :---|:---|:---
 Valor|Cadena|El nombre de la etiqueta. **Necesario**.
-Acción|Enum|Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
+Action|Enum|Agregar o quitar. Los valores permitidos son: "Agregar" o "Quitar". **Necesario**.
 
 ## <a name="response"></a>Respuesta
 

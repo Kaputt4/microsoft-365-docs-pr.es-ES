@@ -14,18 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad4da096240b1c2d547eca1b2415dca0dbc056c9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 87e57c8744ebca36008e0c7767fc27309fa87617
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110468"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301467"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -75,7 +76,7 @@ Microsoft Defender para punto de conexión usa la siguiente combinación de tecn
 
 > [!TIP]
 >
-> - Obtenga información sobre las mejoras más recientes de Defender para punto de conexión: [novedades de Microsoft Defender para punto de conexión](whats-new-in-microsoft-defender-atp.md).
+> - Obtenga información sobre las mejoras más recientes de Defender para punto de conexión: [novedades de Microsoft Defender para punto de conexión](whats-new-in-microsoft-defender-endpoint.md).
 > - Microsoft Defender para punto de conexión mostró funcionalidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lea: [Conclusiones de la evaluación basada en ATT&CK de MITRE](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>

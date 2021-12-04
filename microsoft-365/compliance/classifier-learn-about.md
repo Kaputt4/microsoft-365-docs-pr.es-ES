@@ -18,13 +18,13 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Un clasificador Microsoft 365 es una herramienta que se puede entrenar para reconocer varios tipos de contenido para la aplicación de directivas o de la formación, ya que le proporciona ejemplos positivos y negativos que buscar.
-ms.openlocfilehash: b57c8438a7b51fd175286d79a71ea746b72704f0
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido para el etiquetado o la aplicación de directivas, ya que le proporciona ejemplos positivos y negativos que buscar.
+ms.openlocfilehash: 69074baf8ce39352341a484c1d0aa6ce99bf94cd
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914349"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61302187"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -39,7 +39,7 @@ Este método requiere juicio y acción humanas. Un administrador puede usar las 
 Esta categoría de mecanismos de clasificación incluye la búsqueda de contenido mediante:
 
 - Palabras clave o valores de metadatos (lenguaje de consulta de palabras clave).
-- Usar patrones de información confidencial identificados anteriormente como números de cuenta bancaria, de tarjeta de crédito o de seguridad social [(definiciones](sensitive-information-type-entity-definitions.md)de entidad de tipo de información confidencial).
+- Usar patrones identificados anteriormente de información confidencial como números de cuenta bancaria, de tarjeta de crédito o de seguridad social [(definiciones](sensitive-information-type-entity-definitions.md)de entidad de tipo de información confidencial).
 - Reconocer un elemento porque es una variación en una plantilla [(impresión de dedo del documento).](document-fingerprinting.md)
 - Uso de la presencia de cadenas exactas [exactas coincidencia de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
@@ -47,7 +47,7 @@ Las etiquetas de confidencialidad y retención se pueden aplicar automáticament
 
 ## <a name="classifiers"></a>Clasificadores
 
-Este método de clasificación es especialmente adecuado para el contenido que no se identifica fácilmente con los métodos de coincidencia de patrones manuales o automatizados. Este método de clasificación consiste más en entrenar un clasificador para que identifique un elemento basándose en qué es el elemento y no en cuál es su contenido (coincidencia de patrones). Un clasificador aprende a identificar un tipo de contenido al ver cientos de ejemplos del contenido que le interesa clasificar. Empieza por darle ejemplos que definitivamente están en la categoría. Una vez que los procesa, se prueba con una combinación de ejemplos que coinciden y no coinciden. A continuación, el clasificador realiza previsiones sobre si algún elemento determinado entra en la categoría que está creando. A continuación, confirme sus resultados, ordenando los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus previsiones. 
+Este método de clasificación es especialmente adecuado para el contenido que no se identifica fácilmente con los métodos de coincidencia de patrones manuales o automatizados. Este método de clasificación consiste más en entrenar un clasificador para que identifique un elemento basándose en qué es el elemento y no en cuál es su contenido (coincidencia de patrones). Un clasificador aprende a identificar un tipo de contenido al ver cientos de ejemplos del contenido que le interesa clasificar. Empieza por darle ejemplos que definitivamente están en la categoría. Una vez que procesa esos ejemplos, se prueba al darle una combinación de ejemplos que coincidan y que no coincidan. A continuación, el clasificador realiza previsiones sobre si algún elemento determinado entra en la categoría que está creando. A continuación, confirme sus resultados, ordenando los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus previsiones. 
 
 Al publicar el clasificador, ordena los elementos en ubicaciones como SharePoint Online, Exchange y OneDrive, y clasifica el contenido. Después de publicar el clasificador, puede seguir entrenando con un proceso de comentarios similar al proceso de aprendizaje inicial.
 
@@ -61,15 +61,15 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones, v
 
 ## <a name="types-of-classifiers"></a>Tipos de clasificadores
 
-- **clasificadores previamente formados:** Microsoft ha creado y formado previamente una serie de clasificadores que puede empezar a usar sin entrenarlos. Estos clasificadores aparecerán con el estado de `Ready to use` .
+- **clasificadores previamente formados:** Microsoft ha creado y formado previamente varios clasificadores que puede empezar a usar sin entrenarlos. Estos clasificadores aparecerán con el estado de `Ready to use` .
 - **clasificadores personalizados:** si tiene necesidades de clasificación que se extienden más allá de lo que cubren los clasificadores previamente formados, puede crear y entrenar a sus propios clasificadores.
 
 ### <a name="pre-trained-classifiers"></a>Clasificadores previamente formados
 
-Microsoft 365 viene con cinco clasificadores previamente formados:
+Microsoft 365 viene con varios clasificadores previamente formados:
 
 > [!CAUTION]
-> Estamos desaprobando el clasificador **de lenguaje ofensivo** entrenado previamente porque ha estado produciendo un gran número de falsos positivos. No lo use y, si lo está usando actualmente, debe quitar los procesos empresariales de él. Se recomienda usar los **clasificadores de** amenazas, **profanidad** y acoso **previamente** formados en su lugar.
+> Estamos desaprobando el clasificador preentrenado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si lo está usando actualmente, debe quitar los procesos empresariales de él. Se recomienda usar los **clasificadores de** amenazas, **profanidad** y acoso **previamente** formados en su lugar.
 
 - **Resumes:** detecta elementos que son cuentas textuales de las cualificaciones personales, educativas, profesionales, experiencia laboral y otra información de identificación personal de un solicitante
 - **Código fuente:** detecta elementos que contienen un conjunto de instrucciones y instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub
@@ -94,16 +94,25 @@ Microsoft 365 viene con cinco clasificadores previamente formados:
     - Scala
     - Consola
     - Swift
-    - Tex
+    - TeX
     - Vim Script
 
 > [!NOTE]
 > El código fuente está formado para detectar cuándo la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
 
-- **Acoso:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con conductas ofensivas dirigidas a una o varias personas en función de los siguientes rasgos: raza, origen étnico, religión, origen nacional, género, orientación sexual, edad, discapacidad
-- **Profanidad:** detecta una categoría específica de elementos de texto de lenguaje ofensivo que contienen expresiones que ensoñan a la mayoría de las personas
-- **Amenaza:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad
+- **Acuerdos:** detecta contenido relacionado con acuerdos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de trabajo y no competencia
 - **Discriminación:** detecta un lenguaje discriminatorio explícito y es especialmente sensible al lenguaje discriminatorio frente a las comunidades afroestadounides/negras en comparación con otras comunidades.
+- **Finanzas:** detecta contenido en las categorías de finanzas corporativas, contabilidad, economía, banca e inversión
+- **Acoso:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con conductas ofensivas dirigidas a una o varias personas en función de los siguientes rasgos: raza, origen étnico, religión, origen nacional, género, orientación sexual, edad, discapacidad
+- **Salud:** detecta contenido en aspectos de administración médica y sanitaria, como servicios médicos, diagnósticos, tratamiento, notificaciones, etc.
+- **HR:** detecta contenido en categorías relacionadas con recursos humanos de contratación, entrevista, contratación, formación, evaluación, advertencia y terminación
+- **IP:** detecta contenido en categorías relacionadas con la propiedad intelectual, como secretos comerciales e información confidencial similar
+- **IT:** detecta contenido en categorías de tecnología de la información y ciberseguridad, como la configuración de red, la seguridad de la información, el hardware y el software
+- **Asuntos legales:** detecta contenido en categorías relacionadas con asuntos legales como litigio, proceso legal, obligación legal, terminología legal, ley y legislación
+- **Adquisiciones:** detecta contenido en categorías de ofertas, cotización, compra y pago de suministro de bienes y servicios
+- **Profanidad:** detecta una categoría específica de elementos de texto de lenguaje ofensivo que contienen expresiones que ensoñan a la mayoría de las personas
+- **Impuestos:** detecta contenido de relación fiscal como planeación fiscal, formularios fiscales, declaración de impuestos, reglamentos fiscales
+- **Amenaza:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad
 
 Aparecen en la vista **clasificadores Centro de cumplimiento de Microsoft 365** clasificación de datos  >    >  **trainable con** el estado de `Ready to use` .
 
@@ -118,14 +127,14 @@ Los clasificadores previamente formados pueden examinar el contenido en estos id
 
 ### <a name="custom-classifiers"></a>Clasificadores personalizados
 
-Cuando los clasificadores previamente formados no satisfacen sus necesidades, puede crear y entrenar a sus propios clasificadores. Hay mucho más trabajo implicado en la creación de los suyos, pero estarán mucho mejor adaptados a las necesidades de las organizaciones. 
+Cuando los clasificadores previamente formados no satisfacen sus necesidades, puede crear y entrenar a sus propios clasificadores. Hay mucho más trabajo implicado en la creación de los suyos, pero estarán mucho mejor adaptados a las necesidades de las organizaciones.
 
 Por ejemplo, podría crear clasificadores que se puedan entrenar para:
- 
+
 - Documentos legales, como privilegios de cliente de abogado, conjuntos de cierre, declaración de trabajo
 - Documentos de negocio estratégicos: como comunicados de prensa, fusiones y adquisiciones, acuerdos, planes de negocio o marketing, propiedad intelectual, patentes, documentos de diseño
-- Información de precios: como facturas, cotizaciones de precios, pedidos de trabajo, documentos de ofertas 
-- Información financiera, como inversiones organizativas, resultados trimestrales o anuales    
+- Información de precios: como facturas, cotizaciones de precios, pedidos de trabajo, documentos de ofertas
+- Información financiera, como inversiones organizativas, resultados trimestrales o anuales
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>Flujo de proceso para crear clasificadores personalizados
 
@@ -135,15 +144,15 @@ La creación y publicación de un clasificador para su uso en soluciones de cump
 
 ### <a name="retraining-classifiers"></a>Reentrenamiento de clasificadores
 
-Puede ayudar a mejorar la precisión de todos los clasificadores personalizados y algunos clasificadores previamente formados al proporcionarles comentarios sobre la precisión de la clasificación que realizan. Esto se denomina reciclaje y seguir este flujo de trabajo.
+Puede ayudar a mejorar la precisión de todos los clasificadores personalizados y algunos clasificadores previamente formados al proporcionarles comentarios sobre la precisión de la clasificación que realizan. Esto se denomina reentrenamiento y se sigue a este flujo de trabajo.
 
 ![flujo de trabajo de reciclaje de clasificadores.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Impresión de dedo de documento](document-fingerprinting.md)
-- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
