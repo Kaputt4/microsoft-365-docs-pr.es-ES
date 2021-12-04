@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: c6cee338f4f2f02d3d74da184be15c13d3230c00
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: d508d90fcab58ae6106b1640d993a9c738fbf046
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221093"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301371"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>Paso 1. Implementar directivas de protección de aplicaciones
 
@@ -38,7 +40,7 @@ Si tiene aplicaciones personalizadas de línea de negocio que necesitan protecci
 
 ## <a name="configuring-mobile-app-protection"></a>Configurando la protección de aplicaciones móviles
 
-Esta guía está estrechamente coordinada con las [directivas de acceso de dispositivos e identidad de Confianza cero](../security/office-365-security/microsoft-365-policies-configurations.md). Después de crear las directivas de protección de aplicaciones móviles en Intune, trabaje con el equipo de identidades para configurar las directivas de acceso condicional en Azure AD que aplica la protección de aplicaciones móviles. 
+Esta guía está estrechamente coordinada con las [directivas de acceso de dispositivos e identidad de Confianza cero](../security/office-365-security/microsoft-365-policies-configurations.md). Después de crear las directivas de protección de aplicaciones móviles en Intune, trabaje con su equipo de identidad para configurar la directiva de acceso condicional en Azure AD que aplica la protección de aplicaciones móviles. 
 
 En esta ilustración se resaltan las dos directivas (también descritas en la tabla debajo de la ilustración).
 

@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: c12e492b3a36f8da98fd0021bd3354c0e340d538
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c346cd561306781e25c883c5c71a312b30ae3f23
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283406"
+ms.locfileid: "61300699"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -34,7 +34,7 @@ Los clientes deben ver la información específica de ubicación de datos del us
 
 Los nuevos espacios empresariales de Microsoft 365 se asocian, de forma predeterminada, en función de la geoárea de la transacción asociada a la primera suscripción de ese espacio empresarial.
 
-Obtenga información acerca de los compromisos contractuales para la ubicación de almacenamiento de los datos de clientes en reposo en los [términos de servicios en línea de Microsoft (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
+Obtenga información sobre los compromisos contractuales para la ubicación de almacenamiento de los datos de los clientes en reposo en los [Términos de privacidad y seguridad de servicios en línea](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
 Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
