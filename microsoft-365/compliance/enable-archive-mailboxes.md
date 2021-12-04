@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
-ms.openlocfilehash: 0519853f526254173c086ff353c6e5f5cf0208a2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 938410a8f12e62549bf3ec8e8778036440df5aea
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786379"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284016"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
@@ -51,15 +51,15 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
    > [!NOTE]
    > La página **Archivo** muestra un máximo de 500 usuarios.
 
-4. En la lista de buzones de correo, seleccione el usuario para el que desea habilitar el buzón de correo.
+3. En la lista de buzones de correo, seleccione el usuario para el que desea habilitar el buzón de correo.
 
    ![Haga clic en Activar en el panel de detalles del usuario seleccionado para habilitar el buzón de archivo.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
-5. En el panel de detalles para el usuario seleccionado, haga clic en **Habilitar**.
+4. En el panel de detalles para el usuario seleccionado, haga clic en **Habilitar**.
 
    Se muestra una advertencia que indica que, si habilita el buzón de archivo, los elementos en el buzón del usuario que sean más antiguos que la directiva de archivado asignada al buzón se moverán al nuevo buzón de archivo. Como se explicó anteriormente, la directiva de archivo predeterminada que forma parte de la directiva de retención asignada a buzones de ExchangeOnline mueve elementos al buzón de archivo dos años después de la fecha en que el elemento se entregó al buzón o fue creado por el usuario. Para más información consulte la sección: **Más información** de este artículo
 
-6. Haga clic en **Sí** para habilitar el buzón de archivo.
+5. Haga clic en **Sí** para habilitar el buzón de archivo.
 
    El buzón de archivo puede tardar un poco en crearse. Una vez creado, aparece **Buzón de archivo: habilitado** en el panel de detalles del usuario seleccionado. Es posible que tenga que hacer clic en **Actualizar** ![Icono de actualizar.](../media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información del panel de detalles.
 
@@ -131,6 +131,16 @@ Ejecute el comando siguiente para deshabilitar el buzón de archivo para todos l
 ```powershell
 Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
+
+## <a name="run-diagnostics-on-archive-mailboxes"></a>Ejecutar diagnósticos en buzones de correo de archivo
+
+Puede ejecutar una comprobación de diagnóstico automatizada en el buzón de archivo de un usuario para identificar los problemas y las soluciones sugeridas.
+
+Para ejecutar la comprobación de diagnóstico, vaya a [Ejecutar pruebas: buzón de archivo](https://aka.ms/PillarArchiveMailbox).
+
+![Ejecutar diagnósticos en un buzón de archivo.](../media/ArchiveMailboxDiagnostics.png)
+
+Se abre una página de control flotante en el Centro de administración de Microsoft 365. Escriba la dirección de correo electrónico del buzón que desea comprobar y haga clic en **Ejecutar las pruebas**.
 
 ## <a name="more-information"></a>Más información
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implemente las funciones de Gobierno de la información de Microsoft para regir los datos de acuerdo a los requisitos normativos o de cumplimiento.
-ms.openlocfilehash: 66b8bde34cefbb783e4de7c4c12f99b373bbe9b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0637913acf42a89fc82c7c8a6caacc029b5a0d6
+ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200478"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61283431"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gobierno de la información de Microsoft en Microsoft 365
 
@@ -43,7 +43,7 @@ Para retener lo que necesita y eliminar lo que no:
 |[Directivas de retención y etiquetas de retención](retention.md)| Retener o eliminar contenido con administración de directivas y un flujo de trabajo de eliminación para correo electrónico, documentos, mensajes instantáneos y mucho más. <br /><br />Escenario de ejemplo: [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md) | [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md)|
 |[Servicio de importación](importing-pst-files-to-office-365.md)| Importación en masa de archivos PST a buzones de Exchange Online para conservar y buscar mensajes de correo electrónico de requisitos de cumplimiento o normativos | [Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365](use-network-upload-to-import-pst-files.md)|
 |[Archivar datos de terceros](archiving-third-party-data.md)| Importe, archive y aplique soluciones de cumplimiento a datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración en documentos| [Conectores de terceros](archiving-third-party-data.md#third-party-data-connectors)|
-|[Buzones de correo inactivos](inactive-mailboxes-in-office-365.md)| Retener el contenido del buzón después de que los empleados abandonen la organización | [Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)|
+|[Buzones de correo inactivos](inactive-mailboxes-in-office-365.md)| Conservar el contenido del buzón después de que los empleados abandonen la organización para que este contenido siga siendo accesible para los administradores, los responsables de cumplimiento y los administradores de registros | [Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)|
 
 ## <a name="records-management"></a>Administración de registros
 
