@@ -11,15 +11,17 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-jun2020
+- m365solution-managedevices
+- m365solution-scenario
+ms.custom: ''
 keywords: ''
 description: ''
-ms.openlocfilehash: 466bb739085625a8992595a2d518e6f1cbdeb4a4
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 5091aa197727602a550030bb462cc2e85d21c88d
+ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129531"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61301335"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>Paso 2. Inscripción de dispositivos para la administración con Intune
 
@@ -36,42 +38,42 @@ En este artículo, se recomiendan métodos para inscribir dispositivos en la adm
 ## <a name="windows-enrollment"></a>Inscripción de Windows
 Existen varias opciones para inscribir dispositivos Windows 10 y Windows 11. Los métodos más comunes incluyen estos dos:
 
-- Azure Active Directory (Azure AD): une el dispositivo con Azure Active Directory y permite que los usuarios inicien sesión en Windows con sus credenciales de Azure AD. Si la inscripción automática está habilitada, el dispositivo se inscribe automáticamente en Intune. La ventaja de la inscripción automática es un proceso de un solo paso para el usuario. De lo contrario, tendrán que inscribirse por separado a través de la inscripción solo de MDM y volver a escribir sus credenciales. Los usuarios se inscriben de esta manera durante la configuración rápida inicial de Windows o desde Configuración. El dispositivo se marca como un dispositivo de propiedad corporativa en Intune.
+- Azure Active Directory (Azure AD): une el dispositivo con Azure Active Directory y permite que los usuarios inicien sesión en Windows con sus credenciales de Azure AD. Si la inscripción automática está habilitada, el dispositivo se inscribe automáticamente en Intune. La ventaja de la inscripción automática es que consiste en un proceso de un solo paso para el usuario. En caso contrario, tendrán que inscribirse por separado a través de la inscripción solo MDM y volver a escribir sus credenciales. Los usuarios se inscriben de esta manera durante la configuración rápida de Windows o desde Configuración. El dispositivo se marca como un dispositivo de propiedad corporativa en Intune.
 - Autopilot: automatiza la unión a Azure AD e inscribe nuevos dispositivos corporativos en Intune. Este método simplifica la experiencia lista para usar y elimina la necesidad de aplicar imágenes de sistema operativo personalizadas a los dispositivos. Cuando los administradores usan Intune para administrar dispositivos Autopilot, pueden administrar directivas, perfiles, aplicaciones y mucho más una vez inscritos. Existen cuatro tipos de implementación de Autopilot: modo de implementación automática (para quioscos, señalización digital o un dispositivo compartido); modo controlado por el usuario (para usuarios tradicionales); Windows Autopilot, para la implementación aprovisionada previamente, permite a los partners o al personal de TI aprovisionar previamente un equipo que ejecuta Windows 10 o Windows 11 para que esté completamente configurado y listo para la empresa; y Autopilot, para dispositivos existentes le permite implementar, de manera sencilla, la versión más reciente de Windows en los dispositivos existentes.
 
-Para ver opciones adicionales, incluida la inscripción de dispositivos Windows BYOD, consulte [Todos los métodos de inscripción para dispositivos Windows](/mem/intune/enrollment/windows-enrollment-methods).
+Para obtener más opciones, incluida la inscripción de dispositivos Windows BYOD, consulte [Inscribir dispositivos Windows en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
 
 ## <a name="iosipados-and-ipados-enrollment"></a>Inscripción de iOS/iPadOS e iPadOS
 
 En el caso de los dispositivos de propiedad del usuario (BYOD), puede permitir que los usuarios inscriban sus dispositivos personales para la administración de Intune mediante uno de los métodos siguientes.
-- La inscripción de dispositivos es lo que se puede considerar una inscripción BYOD típica. Proporciona a los administradores una amplia gama de opciones de administración.
+- La inscripción de dispositivos es lo que puede considerar como una inscripción BYOD típica. Proporciona a los administradores una amplia gama de opciones de administración.
 - La inscripción de usuarios es un proceso de inscripción más simplificado que proporciona a los administradores un subconjunto de opciones de administración de dispositivos. Esta característica está actualmente en versión preliminar.
 
 Para las organizaciones que compran dispositivos para sus usuarios, Intune admite los siguientes métodos de inscripción de dispositivos propiedad de la empresa de iOS/iPadOS:
-- Inscripción automática de dispositivos (ADE) de Apple
+- Inscripción de dispositivo automatizada (ADE) de Apple
 - Apple School Manager
-- Inscripción del Asistente de configuración de Apple Configurator
-- Inscripción directa de Apple Configurator
+- Inscripción de Apple Configurator mediante el Asistente de configuración
+- Inscripción directa de Apple Configurator
 
-Para obtener más información, consulte [Inscripción de dispositivos iOS/iPadOS en Intune](/mem/intune/enrollment/ios-enroll).
+Para obtener más información, consulte [Inscribir dispositivos iOS y iPadOS en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados).
 
 ## <a name="android-enrollment"></a>Inscripción de Android 
 
 Existen varias opciones para la inscripción de Android en función del tipo de dispositivo, el tipo de inscripción que le gustaría admitir, así como aspectos como la versión de Android que usa o incluso el fabricante (en particular, Samsung). La mayoría de las organizaciones usan perfiles de Android Work para sus usuarios finales, en particular, en escenarios BYOD. 
 
-Con un perfil de trabajo de Android, la información del usuario final se separa de forma distinta de contenedores de datos, así como lo hacen las aplicaciones independientes para uso personal y profesional. Esta es una manera ideal para que los usuarios inscriban su dispositivo a la vez que mantienen la privacidad de sus propios datos y la seguridad de los datos corporativos. 
+Con un perfil de trabajo Android, la información del usuario final se separa de forma distinta con contenedores de datos y aplicaciones independientes para uso personal y profesional. Esta es una manera ideal para que los usuarios inscriban su dispositivo a la vez que mantienen la privacidad de sus propios datos y la seguridad de los datos corporativos. 
 
-Sin embargo, si su organización se encuentra probando dispositivos Android, puede optar por usar lo que se denomina dispositivo totalmente administrado (afinidad de usuario) o dedicado (sin afinidad de usuario).
+Sin embargo, si su organización proporciona dispositivos Android, puede optar por usar lo que se denomina dispositivo totalmente administrado (afinidad de usuario) o dedicado (sin afinidad de usuario).
 
-Para obtener más información sobre la inscripción de Android, así como la inscripción automatizada de Android, consulte [Inscripción de dispositivos Android](/mem/intune/enrollment/android-enroll).
+Para obtener más información sobre la inscripción de Android, consulte [Inscribir dispositivos Android en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android).
 
 ## <a name="macos-enrollment"></a>Inscripción de macOS
 
 La inscripción para macOS puede ser un tema complicado para muchas organizaciones de TI. A menos que la mayoría de los usuarios sean usuarios de Mac, es posible que no administre estos tipos de dispositivos en gran medida. Si tiene un pequeño número de usuarios de macOS, se recomienda la inscripción solo de Intune. Si tiene un gran número de usuarios de macOS, se recomienda la inscripción de Intune + Jamf.  
 - Inscripción solo de Intune: esto es para la administración básica de dispositivos macOS. Requerirá un proceso manual muy similar a la mayoría de las demás opciones de inscripción basadas en el usuario. Sin embargo, si tiene un pequeño número de dispositivos Mac, este proceso puede ser más fácil que configurar una infraestructura automatizada completa solo para esos pocos usuarios. Con la inscripción solo de Intune, tiene la capacidad de implementar elementos como certificados, configuraciones de contraseña y aplicaciones. También puede configurar directivas de cumplimiento y habilitar el acceso condicional, así como la capacidad de aplicar el cifrado y el borrado del dispositivo. 
-- Inscripción de Intune y Jamf: para aquellos que buscan la compatibilidad más profunda con la administración de Mac, con Jamf + Intune para el acceso condicional, tenemos una excelente solución que combina las amplias funcionalidades de administración de Mac de Jamf con el cumplimiento de Intune para habilitar el acceso condicional. En este escenario, usted sigue administrando completamente el dispositivo con Jamf, a la vez que puede tomar esas señales de Jamf para aumentar la seguridad.
+- Inscripción a Intune y Jamf: para aquellos que buscan un soporte completo para la administración de Mac, con Jamf + Intune para acceso condicional, tenemos una gran solución que combina las numerosas capacidades de administración de Mac de Jamf con el cumplimiento de Intune para habilitar el acceso condicional. En este escenario, usted sigue administrando completamente el dispositivo con Jamf, a la vez que puede tomar esas señales de Jamf para aumentar la seguridad.
 
-Para obtener más información sobre la inscripción de macOS, consulte [Configurar la inscripción para dispositivos macOS en Intune](/mem/intune/enrollment/macOS-enroll).
+Para obtener más información sobre la inscripción de macOS, consulte [Inscribir dispositivos macOS en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-macos).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
