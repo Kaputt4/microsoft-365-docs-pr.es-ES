@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Ayude a los empleados a aprender a configurar Office aplicaciones que obtienen con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 2a1c3c082cfb676b33e7b033c6516f2f4c37980e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 396af5d94b7bf68aef6998e86388306303ea1f26
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156959"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311787"
 ---
 # <a name="employee-quick-setup"></a>Configuración rápida para empleados
 
-¿Es nuevo en Microsoft 365 para empresas? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Vea este vídeo](what-is-microsoft-365.md) para obtener información sobre él. Después, siga estos pasos.
+¿Es nuevo en Microsoft 365 para empresas? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Vea este vídeo](../admin/admin-overview/what-is-microsoft-365.md) para obtener información sobre él. Después, siga estos pasos.
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Imagen que muestra los pasos rápidos de configuración de los empleados.":::
 

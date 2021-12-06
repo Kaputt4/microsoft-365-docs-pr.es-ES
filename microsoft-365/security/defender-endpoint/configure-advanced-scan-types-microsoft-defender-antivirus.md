@@ -13,21 +13,21 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.date: 10/19/2021
+ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: dc6f8e49cbf23809b7980d15f40b5081af469c44
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2527a558d474fecaab813963dc38a9e76aa89d5c
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111836"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311751"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Usar Microsoft Intune para configurar opciones de examen
 
@@ -38,6 +38,11 @@ Para obtener más información, vea [Configure device restriction settings in Mi
 Para obtener más información sobre cómo Microsoft Endpoint Manager (rama actual), vea [How to create and deploy antimalware policies: Scan settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Usar la directiva de grupo para configurar opciones de examen
+
+> [!TIP]
+> Descargue la hoja de cálculo de referencia de directiva de grupo, que enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativas entregados para Windows. Puede configurar hacer referencia a la hoja de cálculo al editar objetos de directiva de grupo. <br/><br/> Estas son las versiones más recientes:
+> - [Hoja de cálculo Configuración referencia de directiva de grupo para Windows 10 de mayo de 2020 (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [Hoja de cálculo Configuración referencia de directiva de grupo para Windows 11 de octubre de 2021 (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
@@ -56,6 +61,7 @@ Para obtener más información sobre cómo Microsoft Endpoint Manager (rama actu
 |Ubicación y elemento de directiva|Configuración predeterminada (si no está configurada)|Parámetro de PowerShell `Set-MpPreference` o propiedad WMI para `MSFT_MpPreference` clase|
 |---|---|---|
 |Análisis de correo electrónico <p> **Examen** \> **Activar el examen de correo electrónico**<p>Vea [Limitaciones del examen de correo](#email-scanning-limitations) electrónico (en este artículo)|Deshabilitado|`-DisableEmailScanning`|
+| Análisis de scripts | Habilitado  | Esta configuración de directiva le permite configurar el examen de scripts. Si habilita o no configura esta opción, se habilitará el examen de scripts. <p>Vea [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender)  | 
 |Examinar [puntos de repetición](/windows/win32/fileio/reparse-points) <p> **Examen** \> **Activar el examen de puntos de repetición**|Deshabilitado|No disponible <p>Ver [Puntos de reanco](/windows/win32/fileio/reparse-points)|
 |Examinar unidades de red asignadas <p> **Examen** \> **Ejecutar examen completo en unidades de red asignadas**|Deshabilitado|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |Examinar archivos de archivo (como .zip o .rar archivos). <p> **Examen** \> **Examinar archivos de archivo**|Habilitado|`-DisableArchiveScanning` <p>La [lista de exclusiones de extensiones](configure-extension-file-exclusions-microsoft-defender-antivirus.md) tendrá prioridad sobre esta configuración.|
@@ -100,7 +106,7 @@ Si Antivirus de Microsoft Defender detecta una amenaza dentro de un mensaje de c
 
 En cualquier sistema operativo, solo se examinan las unidades de red asignadas a nivel del sistema. Las unidades de red asignadas a nivel de usuario no se examinan. Las unidades de red asignadas a nivel de usuario son aquellas que un usuario asigna en su sesión manualmente y usan sus propias credenciales.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender](run-scan-microsoft-defender-antivirus.md)

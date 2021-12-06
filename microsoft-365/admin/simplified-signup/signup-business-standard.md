@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
-ms.openlocfilehash: c7a217fa21b619de89e2f5f6a5605f3f301dfe12
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 37543ff91f9c3d46c73a07b9bb9110294b250ae2
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283034"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311729"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
@@ -147,7 +147,7 @@ Cuando la facturación periódica está activada, la suscripción seguirá siend
 
 ### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>¿Qué puedo hacer si deseo cambiar el nombre de mi empresa?
 
-Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a cambiar el nombre de su empresa. Obtenga más información en [Obtener soporte](../../business-video/get-help-support.md)técnico .
+Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a cambiar el nombre de su empresa. Obtenga más información en [Obtener soporte](../get-help-support.md)técnico .
 
 ## <a name="related-articles"></a>Artículos relacionados
 

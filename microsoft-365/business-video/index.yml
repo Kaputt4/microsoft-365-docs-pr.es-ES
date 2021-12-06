@@ -14,10 +14,10 @@ metadata:
   ms.localizationpriority: high
 productDirectory:
   items:
-    - title: Introducción
+    - title: Comenzar
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: Planee su traslado a Microsoft 365 para empresas.
-      url: what-is-microsoft-365.md
+      url: ../admin/admin-overview/what-is-microsoft-365.md
     - title: Configurar Microsoft 365 para empresas
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
       summary: 'Agregar un dominio, agregar usuarios, configurar directivas de seguridad...'
@@ -50,7 +50,7 @@ productDirectory:
       imageSrc: 'https://docs.microsoft.com/office/media/icons/settings.svg'
       summary: 'Administrar usuarios, restablecer contraseñas, ver la factura...'
       url: what-is-admin.md
-    - title: Administrar dispositivos
+    - title: Administrar los dispositivos
       imageSrc: 'https://docs.microsoft.com/office/media/icons/devices-2-blue.svg'
       summary: Configurar directivas para dispositivos personales y de trabajo.
       url: secure-win-10-pro-devices.md

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 047cc8e50e502d30cdeb13bbde5ebc2ff6621922
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 738f1ca79f0cbfa304b77198217d31e7bf1a44bb
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137032"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311621"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -40,6 +40,46 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de Microsoft 365 para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se cancelaron o se publicaron anteriormente.
+
+## <a name="november-2021"></a>Noviembre de 2021
+
+### <a name="compliance-manager"></a>Administrador de cumplimiento
+
+Las nuevas actualizaciones de contenido se pueden ver en [Novedades de Microsoft Compliance Manager](compliance-manager-whats-new.md).
+
+### <a name="device-onboarding"></a>Incorporación de dispositivos
+
+Se agregaron los siguientes artículos para la incorporación de dispositivos:
+
+- [Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)](device-onboarding-macos-overview.md)
+- [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante Intune (versión preliminar)](device-onboarding-offboarding-macos-intune.md)
+- [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-intune-mde.md)
+- [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)](device-onboarding-offboarding-macos-jamfpro.md)
+- [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-jamfpro-mde.md)
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Use el nuevo formato de caso en Advanced eDiscovery](advanced-ediscovery-new-case-format.md) nuevo formato de caso se publicó a disponibilidad general y cambió el nombre de "formato de caso grande"
+
+### <a name="retention-and-records-management"></a>Administración de registros y retención
+- Nueva configuración de administración de registros que controla si los SharePoint y OneDrive pueden ser eliminados por los usuarios
+
+### <a name="sensitive-information-types"></a>Tipos de información confidencial
+
+Se agregaron los siguientes artículos nuevos:
+
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md)
+- [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md)
+- [Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos](sit-get-started-exact-data-match-export-data.md)
+- [Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-create-schema.md)
+- [Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial](sit-get-started-exact-data-match-hash-upload.md)
+- [Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-create-rule-package.md)
+- [Probar un tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-test.md)
+- [Administrar el esquema exacto de coincidencia de datos](sit-use-exact-data-manage-schema.md)
+- [Actualizar el archivo de tabla de origen de información confidencial](sit-use-exact-data-refresh-data.md)
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+- El nombre de ámbito de las [etiquetas de Azure Purview](/azure/purview/create-sensitivity-label) ahora es "Activos de datos esquematizados".
 
 ## <a name="october-2021"></a>Octubre de 2021
 
@@ -80,7 +120,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 
 - [Usar el cifrado de un](/microsoftteams/teams-end-to-end-encryption) extremo a otro para las llamadas Microsoft Teams (versión preliminar pública) Nuevo contenido para la versión preliminar pública.
 
-### <a name="information-governance"></a>Gobierno de información
+### <a name="information-governance"></a>Información de gobierno
 
 - Configurar un conector para importar datos de auditoría [de EHR](import-epic-data.md) épicos le permite importar datos del sistema de registros electrónicos de atención médica de Epic para admitir un nuevo escenario general de uso incorrecto de datos de pacientes para la administración de riesgos de información interna.
 - Configurar un conector para importar datos de auditoría [ehr](import-healthcare-data.md) de atención sanitaria nuevo conector le permite importar datos de un sistema de registros de salud electrónicos para admitir un nuevo escenario general de uso incorrecto de datos de pacientes para la administración de riesgos internas.
@@ -297,24 +337,3 @@ Se agregaron las páginas siguientes:
 - La [configuración del contexto de autenticación](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) ahora se ha implantado completamente en la vista previa de las etiquetas de confidencialidad. Además, esta configuración ahora es compatible con Microsoft Teams.
 - Los archivos etiquetados y cifrados por un nombre de principio de servicio (como Microsoft Cloud App Security) y luego cargados en SharePoint y OneDrive ahora se pueden abrir en Office para la Web cuando haya habilitado etiquetas de confidencialidad para archivos Office en [ SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - La [co-autoría](sensitivity-labels-coauthoring.md) y autoguardado ya no se restringen a los inquilinos de prueba y ahora se admiten en producción cuando se usa la versión 2105: 18 de junio para Windows y versión 16.50+ para macOS. Ten en cuenta que esta característica aún no es compatible con iOS y Android y permanece en versión preliminar.
-
-## <a name="may-2021"></a>Mayo de 2021
-
-### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
-
-- Nueva guía para [planear la estrategia de prevención de pérdida de](dlp-overview-plan-for-dlp.md) datos.
-
-### <a name="retention-and-records-management"></a>Administración de registros y retención
-
-- Si libera una directiva de retención de un sitio SharePoint o una cuenta de OneDrive, ya no tendrá que esperar el período de gracia de 30 días antes de poder eliminar el sitio o la cuenta. A popular request by customers, this change is now complete for all tenants.
-- En versión **preliminar,** revisión de disposición de varias fases: un administrador ahora puede agregar hasta cinco fases consecutivas de revisión de disposición para una etiqueta de retención y los revisores pueden agregar otros usuarios a su fase de revisión de disposición. [](disposition.md) También puede personalizar las notificaciones por correo electrónico y los avisos.
-
-### <a name="sensitive-information-types"></a>Tipos de información confidencial
-
-- Nueva información agregada para ayudarle [a modificar un diccionario de palabras clave](sit-modify-keyword-dictionary.md).
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- En versión preliminar, ahora hay disponible una nueva configuración para el contexto **de** autenticación al configurar una etiqueta de confidencialidad [para grupos y sitios](sensitivity-labels-teams-groups-sites.md). Esta opción funciona junto con Azure AD de acceso condicional para aplicar condiciones más estrictas cuando los usuarios acceden SharePoint sitios que tienen aplicada la etiqueta. Asegúrese de leer las [dependencias y limitaciones antes](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) de configurar esta configuración.
-- [Las directivas de etiquetado](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) automático configuradas solo para Exchange ahora admiten **etiquetas** de confidencialidad que aplican cifrado con Permitir a los usuarios asignar permisos para las opciones No reenviar o Encrypt-Only.
-- [El etiquetado obligatorio](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) ahora está disponible por lo general para todas Office aplicaciones, en todas las plataformas.

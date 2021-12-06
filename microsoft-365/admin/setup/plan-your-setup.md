@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Obtenga información sobre los requisitos y consideraciones para realizar el cambio a Microsoft 365 para empresas.
-ms.openlocfilehash: 070d3d57d998edabb0711ca11c082f8e41a3406f
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fd91da48fe7b6ef1bde9340c5fbb4a926055514b
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128669"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311705"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planear la configuración de Microsoft 365 para empresas
 
@@ -60,7 +60,7 @@ El asistente de configuración le guiará a través de la instalación de las ap
   
 Si no completa el asistente para la instalación, puede completar las tareas de configuración en cualquier momento desde el Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **Configuración**. Desde aquí puede migrar el correo electrónico y los contactos desde otro servicio de correo electrónico, cambiar el dominio de su cuenta de administrador, administrar la información de facturación, agregar o quitar usuarios, restablecer contraseñas y realizar otras funciones empresariales. Para obtener más información acerca de  las diferencias entre el asistente para la instalación y la página De instalación, vea [Diferencias](o365-setup-wizard-and-setup-page.md)entre el asistente para Microsoft 365 instalación y la página Configuración .
 
-Si tiene problemas con algún paso, comuníquese con nosotros. [Estamos aquí para ayudarle.](../../business-video/get-help-support.md)
+Si tiene problemas con algún paso, comuníquese con nosotros. [Estamos aquí para ayudar!](../../business-video/get-help-support.md).
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>Cuándo no debería usar el asistente de configuración: Sincronización de Active Directory y entornos híbridos
 

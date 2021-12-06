@@ -19,42 +19,44 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 00717c828935acf417957ef25401056fe0036e10
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: dc8d03140d19c773e01f6571d69f7593e6e406e8
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110792"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311847"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 La detección se puede configurar para que esté en modo estándar o básico. Usa la opción estándar para buscar activamente dispositivos en tu red, lo que garantizará mejor la detección de puntos de conexión y proporcionará una clasificación de dispositivos más enriquecte.
 
+Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente, solo dispositivos Windows 10 y Windows 2019) o seleccionar un subconjunto o subconjunto de los dispositivos especificando sus etiquetas de dispositivo.
 
-Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente, solo dispositivos Windows 10) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo.
+## <a name="set-up-device-discovery"></a>Configurar la detección de dispositivos
 
-> [!IMPORTANT]
-> Para obtener una vista previa, primero tendrás que activar las características de vista previa en Microsoft 365 Defender.
-> A continuación, puede obtener acceso a la configuración de detección <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">de dispositivos Microsoft 365 Defender portal</a>. La lista de dispositivos no administrados y recomendaciones de seguridad estará disponible en el portal de Microsoft 365 Defender y Microsoft 365 Defender, mientras que los iconos del panel solo estarán disponibles en Microsoft 365 Defender portal.
+Para configurar la detección de dispositivos, siga los siguientes pasos de configuración <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender portal:</a>
 
-Siga los siguientes pasos de configuración <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender portal:</a>
+Navegue a **Configuración**  >  **detección de dispositivos**
 
-1. Vaya a **Configuración**  >  **detección de dispositivos**.
-2. Selecciona el modo de detección que quieres usar en los dispositivos integrados.
-3. Si has seleccionado usar la detección estándar, selecciona qué dispositivos usar para el sondeo activo: todos los dispositivos o en un subconjunto especificando sus etiquetas de dispositivo.
-4. Haga clic en **Guardar**.
+1. Si quieres configurar Basic como modo de detección para usarlo en los dispositivos integrados, selecciona **Básico** y, a continuación, **selecciona Guardar**
+2. Si has seleccionado usar la detección estándar, selecciona qué dispositivos usar para el sondeo activo: todos los dispositivos o en un subconjunto especificando sus etiquetas de dispositivo y, a continuación, selecciona **Guardar**
+
+> [!NOTE]
+>La detección estándar usa varios scripts de PowerShell para sondear activamente los dispositivos de la red. Esos scripts de PowerShell están firmados por Microsoft y se ejecutan desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` . Por ejemplo, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Excluir dispositivos de ser sondeados activamente en la detección estándar
 
-Si hay dispositivos en la red que no deben examinarse activamente (por ejemplo, dispositivos usados como almacenes de miel para otra herramienta de seguridad), también puede definir una lista de exclusiones para evitar que se puedan examinar. Ten en cuenta que los dispositivos aún se pueden detectar mediante el modo de detección básico y también se pueden detectar a través de intentos de detección de multidifusión. Esos dispositivos se detectarán pasivamente, pero no se sondean activamente.   
+Si hay dispositivos en la red que no deben examinarse activamente (por ejemplo, dispositivos que se usan como almacenes de miel para otra herramienta de seguridad), también puede definir una lista de exclusiones para evitar que se puedan examinar. Ten en cuenta que los dispositivos aún se pueden detectar mediante el modo de detección básico y también se pueden detectar a través de intentos de detección de multidifusión. Esos dispositivos se detectarán pasivamente, pero no se sondean activamente.
+
+Puedes configurar los dispositivos que se excluirán en la **página Exclusiones.**
 
 ## <a name="select-networks-to-monitor"></a>Seleccionar redes para supervisar
 
@@ -65,7 +67,7 @@ Puedes configurar dónde se puede realizar la detección de dispositivos especif
 En la página Redes supervisadas se muestra una lista de redes en las que se puede realizar la detección **de** dispositivos.
 
 > [!NOTE]
-> La lista muestra las redes que se identificaron como redes corporativas. Si se identifican menos de 50 redes como redes corporativas, la lista mostrará hasta 50 redes con la mayoría de los dispositivos incorporados. 
+> La lista muestra las redes que se identificaron como redes corporativas. Si se identifican menos de 50 redes como redes corporativas, la lista mostrará hasta 50 redes con la mayoría de los dispositivos incorporados.
 
 La lista de redes supervisadas se ordena en función del número total de dispositivos vistos en la red en los últimos 7 días.
 
@@ -77,7 +79,7 @@ Puede aplicar un filtro para ver cualquiera de los siguientes estados de detecci
 
 ### <a name="configure-the-network-monitor-state"></a>Configurar el estado del monitor de red
 
-Controlas dónde se realiza la detección de dispositivos. Las redes supervisadas es donde se realizará la detección de dispositivos y normalmente son redes corporativas. También puede elegir omitir las redes o seleccionar la clasificación de detección inicial después de modificar un estado.
+Controlas dónde se realiza la detección de dispositivos. Las redes supervisadas son donde se realizará la detección de dispositivos y normalmente son redes corporativas. También puede elegir omitir las redes o seleccionar la clasificación de detección inicial después de modificar un estado.
 
 Elegir la clasificación de detección inicial significa aplicar el estado predeterminado del monitor de red hecho por el sistema. Seleccionar el estado predeterminado del monitor de red hecho por el sistema significa que las redes que se identificaron como corporativas, se supervisarán y las identificadas como no corporativas se omitirán automáticamente.
 
@@ -120,7 +122,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

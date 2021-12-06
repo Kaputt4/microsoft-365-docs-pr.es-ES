@@ -19,80 +19,63 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2718522668d4c5bc6586c0e7d867efa4e3d021ef
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: a827330541dba24dff54b59cf8c14b1f58162daa
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109700"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311895"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 Proteger el entorno requiere realizar un inventario de los dispositivos que están en la red. Sin embargo, la asignación de dispositivos en una red a menudo puede ser costosa, desafiante y consume mucho tiempo.
 
-Microsoft Defender para endpoint proporciona una funcionalidad de detección de dispositivos que te ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios engorrosos en el proceso.
+Microsoft Defender para endpoint proporciona una funcionalidad de detección de dispositivos que te ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios engorrosos en el proceso. La detección de dispositivos usa puntos de conexión integrados en la red para recopilar, examinar o examinar la red para detectar dispositivos no administrados. La funcionalidad de detección de dispositivos te permite descubrir:
 
-La funcionalidad de detección de dispositivos te permite:
+- Enterprise de conexión (estaciones de trabajo, servidores y dispositivos móviles) que aún no están incorporados a Microsoft Defender para endpoint
+- Dispositivos de red como enrutadores y conmutadores
+- Dispositivos ioT como impresoras y cámaras
 
-- **Detectar puntos de conexión empresariales conectados a la red corporativa**
+Los dispositivos desconocidos y no administrados presentan riesgos significativos para la red, ya sea una impresora sin abrir, dispositivos de red con configuraciones de seguridad débiles o un servidor sin controles de seguridad. Una vez detectados los dispositivos, puede:
 
-  Con las opciones de detección básicas o estándar, puede detectar estaciones de trabajo, servidores y puntos de conexión móviles que aún no están incorporados a Microsoft Defender para endpoint.
-
-- **Extremos detectados incorporados**
-
-  Los puntos de conexión no administrados de la red introducen vulnerabilidades y riesgos en la red. Incorporarlos al servicio puede aumentar la visibilidad de seguridad en ellos.
-
+- Incorporar puntos de conexión no administrados al servicio, lo que aumenta la visibilidad de seguridad en ellos.
+- Reduzca la superficie de ataque mediante la identificación y evaluación de vulnerabilidades y la detección de vacíos de configuración.
 
 Vea este vídeo para obtener una introducción rápida de cómo se detección de dispositivos:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
 
-
-Junto con esta funcionalidad, una nueva recomendación de seguridad para incorporar dispositivos a Microsoft Defender para endpoint estará disponible como parte de la experiencia existente de administración de amenazas y vulnerabilidades.
+Junto con esta funcionalidad, una recomendación de seguridad para incorporar dispositivos a Microsoft Defender para Endpoint está disponible como parte de la experiencia existente de administración de amenazas y vulnerabilidades.
 
 ## <a name="discovery-methods"></a>Métodos de detección
 
-Hay dos modos de detección:
+Puedes elegir el modo de detección que usarán los dispositivos integrados. El modo controla el nivel de visibilidad que puede obtener para dispositivos no administrados en la red corporativa.
 
-- Detección básica
-- Detección estándar (recomendado)
+Hay dos modos de detección disponibles:
 
-> [!IMPORTANT]
-> La detección se establece en modo básico. Puede elegir conservar esta configuración a través de la página de configuración. La detección estándar será el modo predeterminado para todos los clientes a partir del 19 de julio de 2021, a menos que se modifique a través de la página de configuración antes de esta fecha.
+- **Detección básica:** en este modo, los puntos de conexión recopilarán pasivamente eventos en la red y extraerán información del dispositivo de ellos. La detección básica usa el SenseNDR.exe binario para la recopilación de datos de red pasiva y no se iniciará tráfico de red. Los puntos de conexión simplemente extraerán datos de cada tráfico de red que ve un dispositivo incorporado. Con la detección básica, solo obtendrá una visibilidad limitada de los puntos de conexión no administrados en la red.
 
-
-Solo los dispositivos observados por el modo de detección básico se sondearán activamente en modo estándar.
-
-
-### <a name="basic-discovery"></a>Detección básica
-
-En este modo, los puntos de conexión recopilarán pasivamente eventos en la red y extraerán información del dispositivo de ellos. La detección básica usa el SenseNDR.exe binario para la recopilación de datos de red pasiva y no se iniciará tráfico de red. Los puntos de conexión simplemente extraerán datos de cada tráfico de red que ve un dispositivo incorporado.
-
-### <a name="standard-discovery"></a>Detección estándar
-
-Este modo permite a los puntos de conexión sondear activamente los dispositivos observados en la red para enriquecer los datos recopilados y descubrir más dispositivos, lo que te ayuda a crear un inventario de dispositivos confiable y coherente. El modo estándar usa sondeos inteligentes y activos para descubrir aún más información sobre los dispositivos observados para enriquecer la información del dispositivo existente. El modo estándar también aprovecha los protocolos comunes de detección que usan consultas de multidifusión en la red para encontrar aún más dispositivos, además de los que se han ovserved mediante el método pasivo.
-
-Cuando el modo estándar está habilitado, las herramientas de supervisión de red de la organización pueden observar una actividad de red mínima y insignificante generada por el sensor de detección.
-
- Si decide no habilitar este modo, solo obtendrá una visibilidad limitada de los puntos de conexión no administrados en la red.
-
-La detección estándar usa varios scripts de PowerShell para sondear activamente los dispositivos de la red. Esos scripts de PowerShell están firmados por Microsoft y se ejecutan desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` . Por ejemplo, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+- **Detección estándar** (recomendada): este modo permite a los puntos de conexión encontrar activamente dispositivos en la red para enriquecer los datos recopilados y descubrir más dispositivos, lo que te ayuda a crear un inventario de dispositivos confiable y coherente. Además de los dispositivos que se observaron mediante el método pasivo, el modo estándar también aprovecha los protocolos de detección comunes que usan consultas de multidifusión en la red para encontrar aún más dispositivos. El modo estándar usa sondeos inteligentes y activos para descubrir información adicional acerca de los dispositivos observados para enriquecer la información del dispositivo existente. Cuando el modo estándar está habilitado, las herramientas de supervisión de red de la organización pueden observar la actividad de red mínima y insignificante generada por el sensor de detección.
 
 Puedes cambiar y personalizar la configuración de detección, para obtener más información, consulta [Configurar la detección de dispositivos.](configure-device-discovery.md)
+
+> [!IMPORTANT]
+> La detección estándar es el modo predeterminado para todos los clientes a partir del 19 de julio de 2021. Puede cambiar esta configuración a básica a través de la página de configuración. Si elige el modo básico, solo obtendrá una visibilidad limitada de los puntos de conexión no administrados en la red.
 
 > [!NOTE]
 > El motor de detección distingue entre los eventos de red que se reciben en la red corporativa frente a fuera de la red corporativa. Los dispositivos que no están conectados a redes corporativas no se detectarán ni se mostrarán en el inventario de dispositivos.
 
 ## <a name="device-inventory"></a>Inventario de dispositivos
 
-Los dispositivos que se han detectado pero aún no se han incorporado y protegidos por Microsoft Defender para endpoint aparecerán en el Inventario de dispositivos en la pestaña Puntos de conexión. Ahora puedes usar un nuevo filtro en la lista de inventario de dispositivos denominada Estado de incorporación que puede tener cualquiera de los siguientes valores:
+Los dispositivos que se han detectado pero aún no se han incorporado y protegidos por Microsoft Defender para endpoint aparecerán en el Inventario de dispositivos en la pestaña Puntos de conexión.
+
+Puedes usar un filtro en la lista de inventario de dispositivos denominada Estado de incorporación, que puede tener cualquiera de los siguientes valores:
 
 - Incorporado: el punto de conexión se incorpora a Microsoft Defender para endpoint.
 - Se puede incorporar: el punto de conexión se descubrió en la red y el sistema operativo se identificó como uno compatible con Microsoft Defender para endpoint, pero no está incorporado actualmente. Recomendamos encarecidamente la incorporación de estos dispositivos.
@@ -103,6 +86,22 @@ Los dispositivos que se han detectado pero aún no se han incorporado y protegid
 
 > [!TIP]
 > Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados.
+
+## <a name="network-device-discovery"></a>Detección de dispositivos de red
+
+El gran número de dispositivos de red no administrados implementados en una organización crea una gran superficie de ataque y representa un riesgo importante para toda la empresa. Las capacidades de detección de red de Microsoft Defender para endpoints le ayudan a garantizar que los dispositivos de red se detectan, clasifican con precisión y se agregan al inventario de activos.
+
+Los dispositivos de red no se administran como extremos estándar, ya que Defender for Endpoint no tiene un sensor integrado en los propios dispositivos de red. Estos tipos de dispositivos requieren un enfoque sin agente donde un examen remoto obtendrá la información necesaria de los dispositivos. Para ello, se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de Defender for Endpoint Administración de amenazas y vulnerabilidades proporcionan flujos de trabajo integrados para proteger conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.
+
+Para obtener más información, consulte [Dispositivos de red](network-devices.md).
+
+## <a name="device-discovery-integrations"></a>Integraciones de detección de dispositivos
+
+Para abordar el desafío de obtener la visibilidad suficiente para localizar, identificar y proteger el inventario completo de activos de OT/IOT, Microsoft Defender para endpoint ahora admite las siguientes integraciones:
+
+- **Corelight:** Microsoft se ha asociado con Corelight para recibir datos de los dispositivos de red de Corelight. Esto proporciona Microsoft 365 Defender mayor visibilidad de las actividades de red de dispositivos no administrados, incluida la comunicación con otros dispositivos no administrados o redes externas. Para obtener más información, vea [Enable Corelight integration](corelight-integration.md).
+
+- **Microsoft Defender para IoT:** esta integración combina las capacidades de detección de dispositivos de Microsoft Defender para Endpoint, con las capacidades de supervisión sin agente de Microsoft Defender para IoT, para proteger los dispositivos IoT empresariales conectados a una red de TI (por ejemplo, Protocolo de voz sobre Internet (VoIP), impresoras y televisores inteligentes). Para obtener más información, vea [Enable Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md).
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Evaluación de vulnerabilidad en dispositivos detectados
 

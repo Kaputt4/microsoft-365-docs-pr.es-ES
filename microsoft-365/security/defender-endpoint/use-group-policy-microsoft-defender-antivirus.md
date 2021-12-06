@@ -9,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/03/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8eb8db33a79ccb7d4cc9cd010a689e524746fad
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: c0bb0753c3566cf4a954c2393dd9d7533f2051ed
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883682"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311829"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
 
@@ -30,7 +30,8 @@ ms.locfileid: "60883682"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Puede usar la [directiva de grupo](/windows/win32/srvnodes/group-policy) para configurar y administrar Antivirus de Microsoft Defender en los puntos de conexión.
 
@@ -52,14 +53,14 @@ En general, puede usar el siguiente procedimiento para configurar o cambiar la c
 
 ## <a name="group-policy-settings-and-resources"></a>Configuración y recursos de directiva de grupo
 
-En la tabla siguiente de este tema se enumeran las opciones de configuración de directiva de grupo disponibles en Windows 10, versión 1703, y se proporcionan vínculos al tema correspondiente en esta biblioteca de documentación (cuando corresponda).
+En la tabla siguiente se enumeran las opciones de configuración de directiva de grupo que están disponibles en Windows 10.
 
 > [!TIP]
-> Descargue la hoja de cálculo de referencia Configuración directiva de grupo [para Windows 10 de mayo de 2020 (2004).](https://www.microsoft.com/download/101451) Esta hoja de cálculo enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativa entregados para la actualización de mayo de 2020 (2004) para Windows 10 mayo de 2020. Puede configurar hacer referencia a la hoja de cálculo al editar objetos de directiva de grupo.<br/><br/>
+> Descargue la hoja de cálculo de referencia de directiva de grupo, que enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativas entregados para Windows. Puede configurar hacer referencia a la hoja de cálculo al editar objetos de directiva de grupo. <br/><br/> Estas son las versiones más recientes:
+> - [Hoja de cálculo Configuración referencia de directiva de grupo para Windows 10 de mayo de 2020 (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [Hoja de cálculo Configuración referencia de directiva de grupo para Windows 11 de octubre de 2021 (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
 
-<br>
-
-****
+<br/><br/>
 
 |Ubicación|Configuración|Artículo|
 |---|---|---|
@@ -80,8 +81,8 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 |Sistema de inspección de red|Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red|[Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red](specify-additional-definitions-network-traffic-inspection-mdav.md)|
 |Sistema de inspección de red|Activar la retirada de definiciones|[Configurar la retirada de definiciones](turn-on-definition-retirement.md)|
 |Sistema de inspección de red|Activar el reconocimiento de protocolos|[Activar el reconocimiento de protocolos](turn-on-protocol-recognition.md)|
-|Quarantine|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Quarantine|Configurar la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
+|Cuarentena|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Cuarentena|Configurar la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
 |Protección en tiempo real|Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Protección en tiempo real|Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Protección en tiempo real|Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -127,6 +128,7 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 |Examinar|Examinar archivos de archivo|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Examinar|Examinar archivos de red|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Examinar|Examinar archivos ejecutables empaquetados|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+| Examinar | Examinar scripts | [Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md) <p>Vea también [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender).|
 |Examinar|Examinar unidades extraíbles|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Examinar|Especificar la profundidad máxima para examinar archivos de archivo|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Examinar|Especificar el porcentaje máximo de uso de CPU durante un examen|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
@@ -154,9 +156,9 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 |Actualizaciones de inteligencia de seguridad|Activar el examen después de la actualización de inteligencia de seguridad|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Amenazas|Especificar niveles de alerta de amenazas en los que no se debe realizar ninguna acción predeterminada cuando se detecte|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
 |Amenazas|Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
-|
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 - [Temas de referencia para herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

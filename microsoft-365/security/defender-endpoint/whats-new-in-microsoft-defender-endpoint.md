@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 38742e9dbb66d2aaf0d63a5c62d02af04c3db137
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5ff5eeb85409bdcf79fa448804c86d961a2ac446
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302542"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311835"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -60,7 +60,14 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 - [Novedades de Defender para endpoint en iOS](ios-whatsnew.md)
 - [Novedades de Defender para Endpoint en Linux](linux-whatsnew.md)
 
+## <a name="december-2021"></a>Diciembre de 2021
+
+- Detectar dispositivos IoT (versión preliminar): [la](device-discovery.md) detección de dispositivos ahora tiene la capacidad de ayudarle a encontrar dispositivos ioT no administrados conectados a la red corporativa. Esto le ofrece una única vista unificada del inventario de IoT junto con el resto de los dispositivos de TI (estaciones de trabajo, servidores y dispositivos móviles).
+
+- [Integración de Microsoft Defender para IoT (versión preliminar):](enable-microsoft-defender-for-iot-integration.md)esta integración mejora las capacidades de detección de dispositivos con las capacidades de supervisión sin agente proporcionadas por Microsoft Defender para IoT. Esto proporciona una mayor visibilidad para ayudar a localizar, identificar y proteger los dispositivos IoT de la red.
+
 ## <a name="november-2021"></a>Noviembre de 2021
+
 - [Administración de configuración de seguridad](security-config-management.md) <br/> Una funcionalidad para dispositivos que no están administrados por un Microsoft Endpoint Manager, ya sea Microsoft Intune o Microsoft Endpoint Configuration Manager, para recibir configuraciones de seguridad para Microsoft Defender directamente desde Endpoint Manager.
 
 - Mejoras en la compatibilidad entre plataformas.

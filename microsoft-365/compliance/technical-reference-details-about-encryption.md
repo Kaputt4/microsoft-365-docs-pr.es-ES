@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Obtenga información sobre los distintos certificados, tecnologías y conjuntos de cifrado de seguridad de la capa de transporte (TLS) usados para el cifrado en Office 365 y Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e5fb8bc724e25fb6dfd948d20fd5ea77cdbbcf4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6b5df1f9e983ab2e8add09b50c2dfbd30dc1243e
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167203"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "61311805"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Información de referencia técnica sobre el cifrado
 
@@ -51,7 +51,7 @@ Todos los conjuntos de cifrado admitidos Office 365 algoritmos aceptables en FIP
 
 TLS y SSL anteriores a TLS son protocolos criptográficos que protegen la comunicación a través de una red mediante certificados de seguridad para cifrar una conexión entre equipos. Office 365 tls versión 1.2 (TLS 1.2).
 
-Actualmente no se admite TLS versión 1.3 (TLS 1.3).
+Tls versión 1.3 (TLS 1.3) es compatible con algunos de los servicios.
 
 > [!IMPORTANT]
 > Tenga en cuenta que las versiones TLS están en desuso y que las versiones en desuso no deben *usarse* cuando hay disponibles versiones más recientes. Si los servicios heredados no requieren TLS 1.0 o 1.1, debe deshabilitarlos.
