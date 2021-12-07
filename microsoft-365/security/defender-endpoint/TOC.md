@@ -258,6 +258,8 @@
 ### [Detección de dispositivo]()
 #### [Información general de la detección de dispositivo](device-discovery.md)
 #### [Configuración de la detección de dispositivo](configure-device-discovery.md)
+#### [Integración de Microsoft Defender para IoT](enable-microsoft-defender-for-iot-integration.md)
+#### [Habilitar la integración de datos de Corelight](corelight-integration.md)
 #### [Preguntas más frecuentes sobre la detección de dispositivo](device-discovery-faq.md)
 
 ### [Dispositivos de red](network-devices.md)
