@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimice el acceso de red a Microsoft 365 inquilinos.
-ms.openlocfilehash: dc31a1e400de0d428076406b100eb0a52c705546
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 963ffb40bbcdcaa4607f594389f84e2cee00cbcc
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203704"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327621"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 2. Redes óptimas para su Microsoft 365 para inquilinos empresariales
 
@@ -100,8 +100,8 @@ Los conocimientos de red son métricas de rendimiento recopiladas Microsoft 365 
 
 Hay dos perspectivas de red de nivel de inquilino que se pueden mostrar para el inquilino:
 
-- [Exchange conexiones muestreadas afectadas por problemas de conectividad](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-impacted-by-connectivity-issues)
-- [SharePoint conexiones muestreadas afectadas por problemas de conectividad](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-impacted-by-connectivity-issues)
+- [Exchange conexiones muestreadas afectadas por problemas de conectividad](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-affected-by-connectivity-issues)
+- [SharePoint conexiones muestreadas afectadas por problemas de conectividad](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-affected-by-connectivity-issues)
 
 Estos son los conocimientos de red específicos para cada ubicación de oficina:
 

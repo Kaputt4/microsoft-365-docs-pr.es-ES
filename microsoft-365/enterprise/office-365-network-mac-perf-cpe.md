@@ -2,8 +2,8 @@
 title: Microsoft 365 de red informado
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 11/12/2021
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red informado
-ms.openlocfilehash: 84b16d696c5c99a7f917e8d1dacc6f1f27626f37
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: f35257520385f8d4287c9a0839cd1e4e0e6b0aa3
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064408"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327681"
 ---
 # <a name="microsoft-365-informed-network-routing"></a>Microsoft 365 de red informado
 

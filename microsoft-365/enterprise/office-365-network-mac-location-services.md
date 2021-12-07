@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 Servicios de ubicación de conectividad de red
+title: Microsoft 365 de ubicación de conectividad de red
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,15 +14,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
-description: Microsoft 365 Servicios de ubicación de conectividad de red
-ms.openlocfilehash: 71908e5c0f697aac3068af205adc998f88a00c85
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365 de ubicación de conectividad de red
+ms.openlocfilehash: 6150102471b03fbc83be09b503a6969ca6615a87
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199926"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327674"
 ---
-# <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365 Servicios de ubicación de conectividad de red
+# <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365 de ubicación de conectividad de red
 
 El <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> muestra recomendaciones de rendimiento y **Ideas** de red, que son métricas de rendimiento en directo que se recopilan desde el Microsoft 365 inquilino. Estas métricas solo las pueden ver los usuarios administrativos del espacio empresarial. La conectividad de red organizativa se diseña por ubicación de oficina a través de una ubicación de salida de red a Internet. Microsoft 365 la conectividad de cliente usa esa ruta y, a continuación, a través de Internet a los servidores de puerta principal del servicio de Microsoft. La identificación de ubicaciones de oficina es clave para poder mostrar estos conocimientos de red.
 
@@ -42,10 +42,10 @@ Esta característica, que se proporciona mapas de Bing, también es compatible c
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red en el Centro de Administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md)
+[Conectividad de red en el Centro Administración de Microsoft 365 red](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 de rendimiento de red (versión preliminar)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 de rendimiento de red](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 de red (versión preliminar)](office-365-network-mac-perf-score.md)
+[Microsoft 365 de red](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 de conectividad en el Centro de administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 prueba de conectividad en el Centro de administración de Microsoft 365](office-365-network-mac-perf-onboarding-tool.md)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d0b8b819f01c0fa41b15d037743dc6ed2395ef71
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 6b4e915a41c6c9dd04452fa968df2e23401b39d3
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320688"
+ms.locfileid: "61327525"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -62,7 +62,7 @@ Se agregaron los siguientes artículos para la incorporación de dispositivos:
 - [Use el nuevo formato de caso en Advanced eDiscovery](advanced-ediscovery-new-case-format.md) nuevo formato de caso se publicó a disponibilidad general y cambió el nombre de "formato de caso grande"
 
 ### <a name="retention-and-records-management"></a>Administración de registros y retención
-- Nueva configuración de administración de registros que controla si los SharePoint y OneDrive pueden ser eliminados por los usuarios. Anteriormente, las etiquetas de retención configuradas para retener contenido y que no marcaban elementos como registros impedía a los usuarios eliminar contenido etiquetado en SharePoint cuando esta acción se permitía en OneDrive. Para obtener más información, vea [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+- Implementar: nueva configuración de administración de registros que controla si los usuarios pueden eliminar SharePoint y OneDrive elementos etiquetados. Anteriormente, las etiquetas de retención configuradas para retener contenido y que no marcaban elementos como registros impedía a los usuarios eliminar contenido etiquetado en SharePoint cuando esta acción se permitía en OneDrive. Para obtener más información, vea [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 

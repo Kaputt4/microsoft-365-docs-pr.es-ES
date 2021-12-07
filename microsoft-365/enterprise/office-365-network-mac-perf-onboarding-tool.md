@@ -2,8 +2,8 @@
 title: Microsoft 365 de prueba de conectividad de red
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
-ms.openlocfilehash: 4671db1e09713ff6b25ef163a30fb524576d6932
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 98104be3eb41b910882b4ee1c1ade8fbfc24c39f
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554305"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327597"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 
-La Microsoft 365 de prueba de conectividad de red se encuentra en <https://connectivity.office.com> . Se trata de una herramienta adjunta a la información de evaluación de red e información de red disponible en el Centro de administración de Microsoft 365 en el **servicio de | Menú** Conectividad.
+La Microsoft 365 de prueba de conectividad de red se encuentra en <https://connectivity.office.com> . Es una herramienta adjunta a la evaluación de red y a las perspectivas de red disponibles en el Centro de administración de Microsoft 365 en el **servicio de mantenimiento | Menú** Conectividad.
 
 > [!IMPORTANT]
 > Es importante iniciar sesión en el inquilino de Microsoft 365 ya que todos los informes de prueba se comparten con el administrador y se cargan en el inquilino mientras se inicia sesión.
@@ -32,24 +32,23 @@ La Microsoft 365 de prueba de conectividad de red se encuentra en <https://conne
 > ![Herramienta de prueba de conectividad.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
->La herramienta de prueba de conectividad de red admite inquilinos en WW Commercial y Alemania, pero no GCC moderados, GCC High, DoD o China.
+>La herramienta de prueba de conectividad de red admite inquilinos en WW Commercial, pero no GCC moderados, GCC High, DoD o China.
 
-Los conocimientos de red del Centro de Administración de Microsoft 365 se basan en medidas regulares del producto para el inquilino Microsoft 365, que se agregan cada día. En comparación, los conocimientos de red de la Microsoft 365 de conectividad de red se ejecutan localmente y una vez en la herramienta. Las pruebas que se pueden realizar en el producto son limitadas y al ejecutar pruebas locales para el usuario se pueden recopilar más datos, lo que da como resultado información más detallada. Tenga en cuenta que las perspectivas de red del Centro de Administración de Microsoft 365 mostrarán que hay un problema de red para el uso de Microsoft 365 en una ubicación de oficina específica. La Microsoft 365 de conectividad puede ayudar a identificar la causa raíz de ese problema que lleva a una acción recomendada de mejora del rendimiento de la red.
+Los conocimientos de red del Centro de Administración de Microsoft 365 se basan en medidas regulares dentro del producto para el inquilino Microsoft 365, agregados cada día. En comparación, los conocimientos de red de la Microsoft 365 de conectividad de red se ejecutan localmente en la herramienta.
+
+Las pruebas en el producto son limitadas y la ejecución de pruebas locales para el usuario recopila más datos, lo que da como resultado información más detallada. Las perspectivas de red del Centro de Administración de Microsoft 365 mostrarán que hay un problema de red en una ubicación de oficina específica. La Microsoft 365 de conectividad puede ayudar a identificar la causa raíz de ese problema y proporcionar una acción de mejora del rendimiento dirigida.
 
 Se recomienda usar estos conocimientos juntos donde se puede evaluar el estado de la calidad de las redes para cada ubicación de oficina en el Centro de Administración de Microsoft 365 y se pueden encontrar más detalles después de la implementación de pruebas basadas en la prueba de conectividad Microsoft 365.
-
->[!IMPORTANT]
->Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de Administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="what-happens-at-each-test-step"></a>Qué sucede en cada paso de prueba
 
 ### <a name="office-location-identification"></a>Office identificación de ubicación
 
-Al hacer clic en el botón ejecutar prueba, se muestra la página de prueba en ejecución e identificamos la ubicación de la oficina. Puede escribir su ubicación por ciudad, estado y país o puede detectarla desde el explorador web. Si lo detecta, solicitamos la latitud y longitud del explorador web y limitamos la precisión a 300 metros por 300 metros antes de su uso. Lo hacemos porque no es necesario identificar la ubicación con más precisión que el edificio para el rendimiento de la red. 
+Al hacer clic en el *botón Ejecutar prueba,* se muestra la página de prueba en ejecución e identificamos la ubicación de la oficina. Puede escribir su ubicación por ciudad, estado y país o elegir que se detecte por usted. Si detecta la ubicación de la oficina, la herramienta solicita la latitud y longitud del explorador web y limita la precisión a 300 metros por 300 metros antes de su uso. No es necesario identificar la ubicación con más precisión que el edificio para medir el rendimiento de la red.
 
 ### <a name="javascript-tests"></a>Pruebas de JavaScript
 
-Después de la identificación de ubicación de la oficina, ejecutamos una prueba de latencia TCP en JavaScript y solicitamos datos del servicio sobre los servidores de puerta Office 365 servicio en uso y recomendados. Cuando se completan estas pruebas, se muestran en el mapa y en la pestaña detalles donde se pueden ver antes del paso siguiente.
+Después de la identificación de ubicación de la oficina, ejecutamos una prueba de latencia TCP en JavaScript y solicitamos datos del servicio sobre los servidores de puerta Microsoft 365 servicio en uso y recomendados. Una vez completadas estas pruebas, se muestran en el mapa y en la pestaña detalles donde se pueden ver antes del paso siguiente.
 
 ### <a name="download-the-advanced-tests-client-application"></a>Descargar la aplicación cliente de pruebas avanzadas
 
@@ -72,17 +71,17 @@ Cuando se completen las pruebas, la página web y el cliente de pruebas avanzada
 
 ## <a name="sharing-your-test-report"></a>Compartir el informe de prueba
 
-El informe de prueba requiere el inicio de sesión en Office 365 cuenta. El administrador selecciona cómo puede compartir el informe de prueba.
+El informe de prueba requiere autenticación en Microsoft 365 cuenta. El administrador selecciona cómo puede compartir el informe de prueba.
 
 ### <a name="sharing-your-report-with-your-administrator"></a>Compartir el informe con el administrador
 
-Si ha iniciado sesión cuando se produce un informe de prueba, estos informes se comparten con el administrador.
+Si ha iniciado sesión cuando se produce un informe de prueba, el informe se comparte con el administrador.
 
 ### <a name="sharing-with-your-microsoft-account-team-support-or-other-personnel"></a>Uso compartido con el equipo de cuenta de Microsoft, soporte técnico u otro personal
 
 Los informes de prueba (excepto cualquier identificación personal) se comparten con los empleados de Microsoft. Este uso compartido está habilitado de forma predeterminada y el administrador puede deshabilitarlo en el servicio **de | Página Conectividad de** red en el Centro Administración de Microsoft 365 red.
 
-### <a name="sharing-with-other-users-who-sign-in-to-the-same-office-365-tenant"></a>Uso compartido con otros usuarios que inician sesión en el mismo Office 365 inquilino
+### <a name="sharing-with-other-users-who-sign-in-to-the-same-microsoft-365-tenant"></a>Uso compartido con otros usuarios que inician sesión en el mismo Microsoft 365 inquilino
 
 Puede elegir los usuarios con los que compartir el informe. La posibilidad de elegir está habilitada de forma predeterminada, pero el administrador puede deshabilitarla.
 
@@ -98,12 +97,12 @@ Puede compartir el informe de prueba con cualquier persona proporcionando acceso
 
 ## <a name="network-connectivity-test-results"></a>Resultados de la prueba de conectividad de red
 
-Los resultados se muestran en **las** pestañas Resumen **y** Detalles. La pestaña resumen muestra un mapa del perímetro de red detectado y una comparación de la evaluación de red con otros Office 365 clientes cercanos. También permite compartir el informe de prueba. Este es el aspecto de la vista de resultados de resumen:
+Los resultados se muestran en **las** pestañas Resumen **y** Detalles. La pestaña resumen muestra un mapa del perímetro de red detectado y una comparación de la evaluación de red con otros clientes Microsoft 365 cercanos. También permite compartir el informe de prueba. Este es el aspecto de la vista de resultados de resumen:
 
 > [!div class="mx-imgBorder"]
 > ![Resultados de resumen de la herramienta de prueba de conectividad de red.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
-Este es un ejemplo de la salida de pestaña de detalles que muestra la herramienta. En la pestaña detalles se muestra una marca de verificación de círculo verde si el resultado se comparó de forma favorable con un umbral. Se muestra un signo de exclamación de triángulo rojo si el resultado superó un umbral que indica una información de red. En las secciones siguientes se describen cada una de las filas de resultados de pestañas de detalles y se explican los umbrales usados para la información de red.
+Este es un ejemplo del resultado de la pestaña detalles. En la pestaña detalles se muestra una marca de verificación de círculo verde si el resultado se comparó de manera favorable. Se muestra un signo de exclamación de triángulo rojo si el resultado superó un umbral que indica una información de red. En las secciones siguientes se describen cada una de las filas de resultados de pestañas de detalles y se explican los umbrales usados para la información de red.
 
 > [!div class="mx-imgBorder"]
 > ![Resultados de prueba de la herramienta de prueba de conectividad de red.](../media/m365-mac-perf/m365-mac-perf-all-details.png)
@@ -120,31 +119,33 @@ La ubicación de la oficina de usuario se muestra en la vista de mapa.
 
 #### <a name="network-egress-location-the-location-where-your-network-connects-to-your-isp"></a>Ubicación de salida de red (la ubicación donde se conecta la red al ISP)
 
-Identificamos la dirección IP de salida de red en el lado del servidor. Las bases de datos de ubicación se usan para buscar la ubicación aproximada de la salida de red. Estas bases de datos suelen tener una precisión de aproximadamente el 90 % de las direcciones IP. Si la ubicación buscada desde la dirección IP de salida de red no es precisa, esto daría lugar a un resultado falso de esta prueba. Para validar si se produce este error para una dirección IP específica, puede usar sitios web de ubicación de direcciones IP de red accesibles públicamente para comparar con su ubicación real.
+Identificamos la dirección IP de salida de red en el lado del servidor. Las bases de datos de ubicación se usan para buscar la ubicación aproximada de la salida de red. Estas bases de datos suelen tener una precisión de aproximadamente el 90 % de las direcciones IP. Si la ubicación buscada desde la dirección IP de salida de red no es precisa, esto daría lugar a un resultado falso. Para validar si se produce este error para una dirección IP específica, puede usar sitios web de ubicación de direcciones IP de red accesibles públicamente para comparar con la ubicación real.
 
 #### <a name="your-distance-from-the-network-egress-location"></a>La distancia desde la ubicación de salida de red
 
 Determinamos la distancia desde esa ubicación a la ubicación de la oficina. Esto se muestra como una información de red si la distancia es mayor que **500 millas** (800 kilómetros), ya que es probable que aumente la latencia TCP en más de 25 ms y puede afectar a la experiencia del usuario.
 
-La ubicación de salida de red se muestra en la vista de mapa y se conecta a la ubicación de la oficina del usuario que indica el backhaul de red dentro de la WAN de empresa.
+El mapa muestra la ubicación de salida de red en relación con la ubicación de la oficina del usuario que indica el backhaul de red dentro de la WAN de empresa.
 
-Se recomienda implementar la salida de red local y directa de las ubicaciones de la oficina de usuario a Internet para la Microsoft 365 de red. Las mejoras en la salida local y directa son la mejor manera de abordar esta información de red.
+Implemente la salida de red local y directa de las ubicaciones de la oficina de usuario a Internet para una conectividad Microsoft 365 red óptima. Las mejoras en la salida local y directa son la mejor manera de abordar esta información de red.
 
 #### <a name="proxy-server-information"></a>Información del servidor proxy
 
-Identificamos los servidores proxy configurados en el equipo local. Identificamos si alguno de ellos está configurado en la ruta de acceso de red para optimizar la categoría Microsoft 365 tráfico de red. Identificamos la distancia desde la ubicación de la oficina de usuario hasta los servidores proxy. La distancia se prueba primero mediante el ping ICMP y, si esto falla, se prueba con ping TCP y, por último, si se produce un error, buscamos la dirección IP del servidor proxy en una base de datos de ubicación de direcciones IP. Mostramos una información de red si el servidor proxy está a más de **500 millas** (800 kilómetros) de distancia de la ubicación de la oficina del usuario.
+Identificamos si los servidores proxy están configurados en el equipo local para pasar Microsoft 365 de red en la **categoría Optimizar.** Identificamos la distancia desde la ubicación de la oficina de usuario hasta los servidores proxy.
+
+La distancia se prueba primero mediante ping ICMP. Si se produce un error, se prueba con ping TCP y, por último, se busca la dirección IP del servidor proxy en una base de datos de ubicación de direcciones IP. Mostramos una información de red si el servidor proxy está a más de **500 millas** (800 kilómetros) de distancia de la ubicación de la oficina del usuario.
 
 #### <a name="virtual-private-network-vpn-you-use-to-connect-to-your-organization"></a>Red privada virtual (VPN) que usa para conectarse a su organización
 
-Esto detecta si usa una VPN para conectarse a Office 365. Un resultado de paso mostrará si no tienes VPN o si tienes una VPN con la configuración de túnel dividido recomendada para Office 365.
+Esta prueba detecta si usa una VPN para conectarse a Microsoft 365. Un resultado de paso mostrará si no tiene VPN o si tiene una VPN con la configuración de túnel dividido recomendada para Microsoft 365.
 
 #### <a name="vpn-split-tunnel"></a>Vpn Split Tunnel
 
-Cada ruta de categoría optimizada para Exchange Online, SharePoint Online y Microsoft Teams se prueba para ver si está tunelada en la VPN o no. Una carga de trabajo dividida evita la VPN por completo. Una carga de trabajo tunelada se envía a través de la VPN. Una carga de trabajo de túnel selectiva tiene algunas rutas enviadas a través de la VPN y otras divididas. Un resultado de paso mostrará si todas las cargas de trabajo se dividen o se tunelización selectiva.
+Cada **ruta** de categoría Optimizar para Exchange Online, SharePoint Online y Microsoft Teams prueba para ver si está tunelada en la VPN. Una carga de trabajo dividida evita la VPN por completo. Se envía una carga de trabajo tunelada a través de la VPN. Una carga de trabajo de túnel selectiva tiene algunas rutas enviadas a través de la VPN y otras divididas. Un resultado de paso mostrará si todas las cargas de trabajo se dividen o se tunelización selectiva.
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Clientes de su área metropolitana con un mejor rendimiento
 
-La latencia TCP de red de la ubicación de la oficina del usuario en la puerta principal del servicio Exchange Online se compara con otros clientes de Microsoft 365 en la misma área metropolitana. Se muestra una información de red si el 10 % o más de los clientes de la misma área metropolitana tienen un mejor rendimiento. Esto significa que sus usuarios tendrán un mejor rendimiento en Microsoft 365 interfaz de usuario.
+La latencia de red entre la ubicación de la oficina del usuario y el servicio Exchange Online se compara con otros Microsoft 365 clientes de la misma área metropolitana. Se muestra una información de red si el 10 % o más de los clientes de la misma área metropolitana tienen un mejor rendimiento. Esto significa que sus usuarios tendrán un mejor rendimiento en Microsoft 365 interfaz de usuario.
 
 Esta información de red se genera sobre la base de que todos los usuarios de una ciudad tienen acceso a la misma infraestructura de telecomunicaciones y la misma proximidad a los circuitos de Internet y a la red de Microsoft.
 
@@ -258,7 +259,7 @@ Estas son las respuestas a algunas de nuestras preguntas más frecuentes.
 
 El cliente de prueba avanzada requiere .NET Core 3.1 Desktop Runtime. Si ejecuta el cliente de prueba avanzada sin que esté instalado, se le dirigirá a la página del instalador [de .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Asegúrese de instalar Desktop Runtime y no el SDK, ni el ASP.NET Core Runtime, que están más arriba en la página. Los permisos de administrador en el equipo son necesarios para instalar .NET Core.
 
-El cliente de prueba avanzada usa SignalR para comunicarse con la página web. Para ello, debe asegurarse de que la conectividad del puerto TCP 443 connectivity.service.signalr.net está abierta. Esta dirección URL no se publica en el porque esa conectividad no es necesaria para un usuario Office 365 https://aka.ms/o365ip aplicación cliente.
+El cliente de prueba avanzada usa SignalR para comunicarse con la página web. Para ello, debe asegurarse de que la conectividad del puerto TCP 443 connectivity.service.signalr.net está abierta. Esta dirección URL no se publica en el porque no es necesaria la conectividad para un https://aka.ms/o365ip Microsoft 365 de la aplicación cliente.
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>¿Qué Microsoft 365 la puerta principal del servicio?
 
@@ -277,10 +278,10 @@ La ubicación de salida de Internet es la ubicación donde el tráfico de red sa
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Conectividad de red en el Centro de Administración de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-overview.md)
+[Conectividad de red en el Centro Administración de Microsoft 365 red](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 de rendimiento de red (versión preliminar)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 de rendimiento de red](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 de red (versión preliminar)](office-365-network-mac-perf-score.md)
+[Microsoft 365 de red](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 Servicios de ubicación de conectividad de red (versión preliminar)](office-365-network-mac-location-services.md)
+[Microsoft 365 de ubicación de conectividad de red](office-365-network-mac-location-services.md)

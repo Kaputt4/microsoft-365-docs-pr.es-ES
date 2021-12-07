@@ -2,8 +2,8 @@
 title: Conectividad de red en el Centro Administración de Microsoft 365 red
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro Administración de Microsoft 365 red
-ms.openlocfilehash: 579166cef377810dfe38993bf3736e65d46f8c0c
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 63a0975b1391c2734d7933fe64094be868a34526
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552853"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327657"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro Administración de Microsoft 365 red
 
@@ -51,7 +51,7 @@ Para empezar, active la configuración de participación en la ubicación para r
 
 Para esta opción, debe tener al menos dos equipos en ejecución en cada ubicación de la oficina que admitan los requisitos previos. OneDrive para Windows versión debe estar actualizada e instalada en cada equipo. Para obtener más información sobre OneDrive versiones anteriores, vea [el OneDrive notas de la versión](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Las medidas de red están planeadas para agregarse a otras Office 365 cliente en un futuro próximo.
 
-Windows El servicio de ubicación debe estar consentido en las máquinas. Para probar esto, ejecute la **Mapas** y localíctese. Se puede habilitar en una sola máquina con **Configuración | Privacidad | Ubicación** en la que debe _habilitarse la opción Permitir que las_ aplicaciones accedan a su ubicación. Windows El consentimiento de los Servicios de ubicación se puede implementar en equipos con MDM o directiva de grupo con la configuración _LetAppsAccessLocation_.
+Windows servicio de ubicación debe estar consentido en las máquinas. Para probar esto, ejecute la **Mapas** y localíctese. Se puede habilitar en una sola máquina con **Configuración | Privacidad | Ubicación** en la que debe _habilitarse la opción Permitir que las_ aplicaciones accedan a su ubicación. Windows el consentimiento de los Servicios de ubicación local se puede implementar en equipos con MDM o directiva de grupo con la configuración _LetAppsAccessLocation_.
 
 No es necesario agregar ubicaciones en el Centro de administración con este método, ya que se identifican automáticamente en la resolución de la ciudad. No se mostrarán varias ubicaciones de oficina dentro de la misma ciudad al usar Windows Location Services. La información de ubicación se redondea a los 300 metros más cercanos por 300 metros para que no se obtenga acceso a la información de ubicación más precisa.
 
@@ -82,7 +82,7 @@ Los informes de prueba se vinculan a una ubicación si se agregaron con informac
 Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer entre 2 y 3 minutos después de que se complete un informe de prueba. Para obtener más información, [vea Microsoft 365 prueba de conectividad de red](office-365-network-mac-perf-onboarding-tool.md).
 
 > [!NOTE]
-> Actualmente, wCuando agregas las ubicaciones de oficina Microsoft 365 conectividad de red en el Centro de administración de Microsoft 365, solo puedes proporcionar direcciones IPv4 para las subredes laN. Egress Las direcciones IP deben usar IPv4.
+> Actualmente, wCuando agregas las ubicaciones de oficina Microsoft 365 conectividad de red en el Centro de administración de Microsoft 365, solo puedes proporcionar direcciones IPv4 para las subredes laN. Egress direcciones IP deben usar IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>¿Cómo se usa esta información?
 
@@ -192,7 +192,7 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
    1. **Dirección** (obligatorio): la dirección física de la oficina
    1. **Latitud** (opcional): se rellena a partir Bing búsqueda de mapas de la dirección si está en blanco
    1. **Longitud** (opcional): se rellena a partir de Bing búsqueda de mapas de la dirección si está en blanco
-   1. Egress intervalos de direcciones **IP 1-5** (opcional): para cada intervalo, escriba el nombre del circuito seguido de una lista separada por espacios de direcciones CIDR IPv4 válidas. Estos valores se usan para diferenciar varias ubicaciones de oficina donde se usan las mismas direcciones IP de subred LAN. Egress Todos los intervalos de direcciones IP deben tener un tamaño de red /24 y /24 no se incluye en la entrada.
+   1. Egress intervalos de direcciones **IP 1-5** (opcional): para cada intervalo, escriba el nombre del circuito seguido de una lista separada por espacios de direcciones CIDR IPv4 válidas. Estos valores se usan para diferenciar varias ubicaciones de oficina donde se usan las mismas direcciones IP de subred LAN. Egress intervalos de direcciones IP todos deben tener un tamaño de red /24 y /24 no se incluye en la entrada.
    1. **LanIps** (obligatorio): enumera los intervalos de subred de LAN que se usan en esta ubicación de oficina. Los id. de subred LAN deben tener un tamaño de red CIDR incluido donde el tamaño de red puede estar entre /8 y /29. Varios intervalos de subred de LAN se pueden separar por comas o punto y coma.
 
 1. Cuando haya agregado las ubicaciones de la oficina  y guardado  el archivo, haga clic en el botón Examinar situado junto al Upload campo completado y seleccione el archivo CSV guardado.
@@ -230,10 +230,10 @@ Necesita una licencia que proporciona acceso a la Centro de administración de M
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Microsoft 365 de red (versión preliminar)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 de red](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 de red (versión preliminar)](office-365-network-mac-perf-score.md)
+[Microsoft 365 de red](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 de prueba de conectividad (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 de prueba de conectividad](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Servicios de ubicación de conectividad de red (versión preliminar)](office-365-network-mac-location-services.md)
+[Microsoft 365 de ubicación de conectividad de red](office-365-network-mac-location-services.md)
