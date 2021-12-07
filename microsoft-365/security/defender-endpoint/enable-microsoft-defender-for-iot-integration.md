@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5e62e982603ef62d4b2d0c8d0edf21223e3b98c
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 540273109d0168e14b2f87b328b57f65d53b4c22
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61312046"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320760"
 ---
 # <a name="enable-microsoft-defender-for-iot-integration"></a>Habilitar Microsoft Defender para la integración de IoT
 
@@ -36,7 +36,7 @@ ms.locfileid: "61312046"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft Defender para endpoint ahora se puede integrar con Microsoft Defender para IoT. Esta integración amplía las capacidades de detección de dispositivos con las funciones de supervisión sin agente proporcionadas por Microsoft Defender para IoT. Esto ayudará a proteger los dispositivos ioT empresariales conectados a redes de IT, como dispositivos de voz sobre protocolo de Internet (VoIP), impresoras y cámaras. Permite a las organizaciones aprovechar una única solución integrada que protege toda su infraestructura de IoT y tecnología operativa (OT). Para obtener más información, vea [Microsoft Defender para IoT](/azure/defender-for-iot/organizations/overview).
+Microsoft Defender para endpoint ahora se puede integrar con Microsoft Defender para IoT. Esta integración amplía las capacidades de detección de dispositivos con las funciones de supervisión sin agente proporcionadas por Microsoft Defender para IoT. Esto ayudará a proteger los dispositivos ioT empresariales conectados a redes de IT, como dispositivos de voz sobre protocolo de Internet (VoIP), impresoras y cámaras. Permite a las organizaciones aprovechar una única solución integrada que protege toda su infraestructura de IoT y tecnología operativa (OT). Para obtener más información, [vea Enterprise protección de red de IoT](/azure/defender-for-iot/organizations/overview-eiot.md).
 
 Con esta integración habilitada, Microsoft Defender para endpoint obtiene mayor visibilidad para ayudar a localizar, identificar y proteger los dispositivos IoT en la red. Los dispositivos IoT detectados por Microsoft Defender para IoT o Microsoft Defender para Endpoint se sincronizarán automáticamente en ambos portales. Esto le dará una única vista unificada de su inventario completo de OT/IoT junto con el resto de sus dispositivos de TI (estaciones de trabajo, servidores y dispositivos móviles).
 

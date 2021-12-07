@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 738f1ca79f0cbfa304b77198217d31e7bf1a44bb
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: d0b8b819f01c0fa41b15d037743dc6ed2395ef71
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311621"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320688"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -62,7 +62,7 @@ Se agregaron los siguientes artículos para la incorporación de dispositivos:
 - [Use el nuevo formato de caso en Advanced eDiscovery](advanced-ediscovery-new-case-format.md) nuevo formato de caso se publicó a disponibilidad general y cambió el nombre de "formato de caso grande"
 
 ### <a name="retention-and-records-management"></a>Administración de registros y retención
-- Nueva configuración de administración de registros que controla si los SharePoint y OneDrive pueden ser eliminados por los usuarios
+- Nueva configuración de administración de registros que controla si los SharePoint y OneDrive pueden ser eliminados por los usuarios. Anteriormente, las etiquetas de retención configuradas para retener contenido y que no marcaban elementos como registros impedía a los usuarios eliminar contenido etiquetado en SharePoint cuando esta acción se permitía en OneDrive. Para obtener más información, vea [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 

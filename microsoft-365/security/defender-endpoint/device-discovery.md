@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a827330541dba24dff54b59cf8c14b1f58162daa
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: e32880b46b04ce9ee755c09b6cbff2e3e484f4ff
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311895"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320856"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -99,7 +99,7 @@ Para obtener más información, consulte [Dispositivos de red](network-devices.m
 
 Para abordar el desafío de obtener la visibilidad suficiente para localizar, identificar y proteger el inventario completo de activos de OT/IOT, Microsoft Defender para endpoint ahora admite las siguientes integraciones:
 
-- **Corelight:** Microsoft se ha asociado con Corelight para recibir datos de los dispositivos de red de Corelight. Esto proporciona Microsoft 365 Defender mayor visibilidad de las actividades de red de dispositivos no administrados, incluida la comunicación con otros dispositivos no administrados o redes externas. Para obtener más información, vea [Enable Corelight integration](corelight-integration.md).
+- **Corelight:** Microsoft se ha asociado con Corelight para recibir datos de los dispositivos de red de Corelight. Esto proporciona Microsoft 365 Defender mayor visibilidad de las actividades de red de dispositivos no administrados, incluida la comunicación con otros dispositivos no administrados o redes externas. Para obtener más información, vea [Enable Corelight data integration](corelight-integration.md).
 
 - **Microsoft Defender para IoT:** esta integración combina las capacidades de detección de dispositivos de Microsoft Defender para Endpoint, con las capacidades de supervisión sin agente de Microsoft Defender para IoT, para proteger los dispositivos IoT empresariales conectados a una red de TI (por ejemplo, Protocolo de voz sobre Internet (VoIP), impresoras y televisores inteligentes). Para obtener más información, vea [Enable Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md).
 
@@ -144,7 +144,7 @@ En la siguiente sección se enumeran los cambios que observará en Microsoft Def
 2. Los dispositivos no administrados se asignarán a grupos de dispositivos existentes según los criterios definidos.
 3. En raras ocasiones, la detección estándar puede desencadenar alertas en monitores de red o herramientas de seguridad. Proporcione comentarios, si experimenta este tipo de eventos, para evitar que estos problemas se repitan. Puede excluir explícitamente destinos específicos o subredes enteras de ser sondeados activamente por la detección estándar.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configuración de la detección de dispositivo](configure-device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

@@ -14,21 +14,21 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 10/14/2021
+ms.date: 12/06/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 1632a0e04ce232c7daed42b86cde0f9053d6aadf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 676cdfd959c39baef6baf10e383288aeb4c58629
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167183"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320784"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -36,7 +36,7 @@ ms.locfileid: "61167183"
 
 [Las reglas de reducción de superficie de](attack-surface-reduction.md) ataque (reglas ASR) ayudan a evitar acciones que el malware suele abusar de dispositivos y redes.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Características de reducción de superficie de ataque en Windows versiones
 
@@ -68,7 +68,7 @@ Cada regla ASR contiene una de cuatro opciones:
 > [!IMPORTANT]
 > Actualmente, el modo de advertencia no es compatible con tres reglas ASR al configurar reglas ASR en Microsoft Endpoint Manager (MEM). Para obtener más información, vea [Casos en los que no se admite el modo de advertencia](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
 
-Es muy recomendable usar reglas ASR con una licencia E5 de Windows (o SKU de licencia similar) para aprovechar las capacidades avanzadas de supervisión e informes disponibles en [Microsoft Defender para](microsoft-defender-endpoint.md) endpoint (Defender para endpoint). Sin embargo, si tiene otra licencia, como Windows Professional o Windows E3 que no incluyen funciones avanzadas de supervisión e informes, puede desarrollar sus propias herramientas de supervisión e informes encima de los eventos que se generan en cada punto de conexión cuando se desencadenan reglas ASR (por ejemplo, reenvío de eventos).
+Se recomienda usar reglas ASR con una licencia de E5 de Windows (o SKU de licencia similar) para aprovechar las capacidades avanzadas de supervisión e informes disponibles en [Microsoft Defender para](microsoft-defender-endpoint.md) endpoint (Defender para endpoint). Sin embargo, si tiene otra licencia, como Windows Professional o Windows E3 que no incluyen funciones avanzadas de supervisión e informes, puede desarrollar sus propias herramientas de supervisión e informes encima de los eventos que se generan en cada punto de conexión cuando se desencadenan reglas ASR (por ejemplo, reenvío de eventos).
 
 > [!TIP]
 > Para obtener más información sobre Windows licencias, consulte [Windows 10 Licensing y](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) obtenga la Guía de licencias por volumen para [Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -102,6 +102,7 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 ## <a name="intune"></a>Intune
 
 **Perfiles de configuración de dispositivos**
+
 1. Seleccione **Perfiles de configuración** de \> **dispositivos**. Elija un perfil de protección de extremo existente o cree uno nuevo. Para crear uno nuevo, seleccione **Crear perfil** e introduzca información para este perfil. En **Tipo de perfil,** seleccione **Protección de extremo**. Si ha elegido un perfil existente, seleccione **Propiedades** y, a continuación, **seleccione Configuración**.
 
 2. En el **panel Protección de** puntos de conexión, Windows Defender Protección contra **vulnerabilidades** de seguridad y, a continuación, **seleccione Reducción de superficie de ataque.** Seleccione la configuración deseada para cada regla ASR.
@@ -113,6 +114,7 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 4. Seleccione **Aceptar en** los tres paneles de configuración. A **continuación,** seleccione Crear si está creando un nuevo archivo de protección de puntos de conexión o **Guardar** si está editando uno existente.
 
 **Directiva de seguridad de extremo**
+
 1. Seleccione **Reducción de superficie de ataque** de seguridad de \> **extremo**. Elija una regla ASR existente o cree una nueva. Para crear una nueva, seleccione **Crear directiva** y escriba información para este perfil. En **Tipo de perfil,** seleccione **Reglas de reducción de superficie de ataque**. Si ha elegido un perfil existente, seleccione **Propiedades** y, a continuación, **seleccione Configuración**.
 
 2. En el **panel Configuración,** selecciona **Reducción de superficie** de ataque y, a continuación, selecciona la configuración deseada para cada regla ASR.
@@ -127,7 +129,7 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 
 Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR personalizadas. El siguiente procedimiento usa la regla Bloquear el uso indebido de controladores [firmados vulnerables](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) explotados para el ejemplo.
 
-1. Abra el centro Microsoft Endpoint Manager administración de Microsoft Endpoint Manager (MEM). En el **menú Inicio,** haga clic en **Dispositivos**, seleccione **Perfil de configuración** y, a continuación, haga clic en Crear **perfil.**
+1. Abra el centro Microsoft Endpoint Manager administración de Microsoft Endpoint Manager (MEM). En el **menú Inicio,** haga clic **en Dispositivos**, seleccione **Perfiles de configuración** y, a continuación, haga clic en Crear **perfil.**
 
    > [!div class="mx-imgBorder"]
    > ![MEM Crear perfil.](images/mem01-create-profile.png)
@@ -137,7 +139,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    - En **Plataforma,** **seleccione Windows 10 y versiones posteriores**
    - En **Tipo de perfil**, seleccione **Plantillas**
 
-   Seleccione **Personalizado** y, a continuación, haga clic **en Crear**.
+   Seleccione **Personalizado** y, a continuación, **seleccione Crear**.
 
    > [!div class="mx-imgBorder"]
    > ![Atributos de perfil de regla de MEM.](images/mem02-profile-attributes.png)
@@ -159,6 +161,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar. Consulte la sección MEM anterior de este artículo para que OMA-URI se use para esta regla de ejemplo. Para guides de regla de Recuperación de sitios de Azure, consulte [Por descripciones de reglas](attack-surface-reduction-rules.md#per-rule-descriptions) en el tema: Reglas de reducción de superficie de ataque.
    - En **Tipo de datos**, seleccione **Cadena**.
    - En **Value**, escriba o pegue el valor GUID, el signo y el valor State sin espacios \= (_GUID=StateValue_). Donde:
+     
      - 0 : Deshabilitar (deshabilitar la regla ASR)
      - 1 : Bloquear (habilitar la regla ASR)
      - 2: Auditoría (Evaluar cómo afectaría la regla ASR a su organización si está habilitada)
@@ -167,12 +170,12 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > ![Configuración de URI de OMA de MEM.](images/mem05-add-row-oma-uri.png)
 
-6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realice una de las acciones siguientes:
+6. Seleccione **Guardar**. **Agregar cierres** de fila. En **Personalizado**, seleccione **Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realice una de las acciones siguientes:
 
-   - Haga **clic en Seleccionar etiquetas de ámbito,** seleccione la etiqueta de ámbito (opcional) y, a continuación, haga clic en **Siguiente**.
-   - O haga clic en **Siguiente**
+   - Seleccione **Seleccionar etiquetas de ámbito,** seleccione la etiqueta de ámbito (opcional) y, a continuación, **seleccione Siguiente**.
+   - O seleccione **Siguiente**
 
-7. En el **paso 4 Asignaciones**, en **Grupos** incluidos - para los grupos que desea que se aplique esta regla - seleccione una de las siguientes opciones:
+7. En el **paso 4 Asignaciones**, en **Grupos** incluidos , para los grupos a los que desea aplicar esta regla, seleccione una de las siguientes opciones:
 
    - **Agregar grupos**
    - **Agregar todos los usuarios**
@@ -181,7 +184,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > ![Asignaciones de MEM.](images/mem06-4-assignments.png)
 
-8. En **Grupos excluidos,** seleccione los grupos que desee excluir de esta regla y, a continuación, haga clic **en Siguiente**.
+8. En **Grupos excluidos**, seleccione los grupos que desee excluir de esta regla y, a continuación, **seleccione Siguiente**.
 
 9. En el **paso 5 Reglas de aplicabilidad** para la siguiente configuración, haga lo siguiente:
 
@@ -192,7 +195,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > ![Reglas de aplicabilidad de MEM.](images/mem07-5-applicability-rules.png)
 
-10. Haga clic en **Siguiente**. En el paso **6 Revisar + crear**, revise la configuración y la información que ha seleccionado y especificado y, a continuación, haga clic en **Crear**.
+10. Seleccione **Siguiente**. En el paso **6 Revisar + crear**, revise la configuración y la información que ha seleccionado y especificado y, a continuación, **seleccione Crear**.
 
     > [!div class="mx-imgBorder"]
     > ![MEM Revisar y crear.](images/mem08-6-review-create.png)
@@ -247,7 +250,7 @@ Ejemplo:
 
 5. Revise la configuración y seleccione **Siguiente** para crear la directiva.
 
-6. Después de crear la directiva, **Cierre**.
+6. Después de crear la directiva, seleccione **Cerrar**.
 
 ## <a name="group-policy"></a>Directiva de grupo
 

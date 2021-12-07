@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Obtenga más información sobre Azure Information Protection (AIP) para Office 365 operado por 21Vianet y cómo configurarlo para clientes en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3235bf77ec8cd7be96910614bdde41fb60f9f556
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5bf93be6c802dffac9a9f6c2f039364de99539ad
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199242"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320808"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Compatibilidad con Azure Information Protection para Office 365 operado por 21Vianet
 
@@ -84,9 +84,17 @@ Para que el cifrado funcione correctamente, RMS debe estar habilitado para el in
 
 ### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>Paso 2: Agregar la entidad de servicio Microsoft Information Protection de servicio de sincronización
 
-La **Microsoft Information Protection de** servicio de sincronización automática no está disponible en los inquilinos de Azure China de forma predeterminada y es necesaria para Azure Information Protection.
+La **Microsoft Information Protection de** servicio de sincronización automática no está disponible en los inquilinos de Azure China de forma predeterminada y es necesaria para Azure Information Protection. Cree esta entidad de servicio manualmente a través del módulo Azure Az PowerShell.
 
-1. Cree esta entidad de servicio manualmente con el cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) y el identificador de la aplicación para `870c4f2e-85b6-4d43-bdda-6ed9a579b725` el Microsoft Information Protection sync service. 
+1. Si no tiene instalado el módulo Azure Az, instáleslo o use un recurso en el que el módulo Azure Az esté preinstalado, como [Azure Cloud Shell](/azure/cloud-shell/overview). Para obtener más información, vea [Install the Azure Az PowerShell module](/powershell/azure/install-az-ps).
+
+1.  Conectar al servicio mediante el cmdlet [Conectar-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) y el `azurechinacloud` nombre del entorno:
+
+    ```powershell
+    Connect-azacount -environmentname azurechinacloud
+    ```
+
+1. Cree la **entidad Microsoft Information Protection** de servicio de sincronización manual mediante el cmdlet [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) y el identificador de aplicación para el servicio de sincronización Microsoft Information Protection `870c4f2e-85b6-4d43-bdda-6ed9a579b725` sincronización:
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -137,7 +145,7 @@ Inicie sesión en el proveedor dns, vaya a la configuración dns del dominio y, 
 
 Descargue e instale el cliente de etiquetado unificado AIP desde el [Centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
-Para más información vea:
+Para más información, vea:
 
 - [Documentación de AIP](/azure/information-protection/)
 - [Historial de versiones de AIP y directiva de soporte técnico](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
@@ -189,19 +197,19 @@ Para obtener más información, vea ¿Qué es el escáner de etiquetado unificad
 
     El servicio instalado se denomina **Azure Information Protection Scanner** y está configurado para ejecutarse mediante la cuenta de servicio de escáner que creó.
 
-1. Obtenga un token de Azure para usarlo con el escáner. Un token de Azure AD permite que el escáner se autentique en el servicio de Azure Information Protection, lo que permite que el escáner se ejecute de forma no interactiva. 
+1. Obtenga un token de Azure para usarlo con el escáner. Un token Azure AD permite que el escáner se autentique en el servicio de Azure Information Protection, lo que permite que el escáner se ejecute de forma no interactiva. 
 
-    1. Abra Azure Portal y cree una aplicación de Azure AD para especificar un token de acceso para la autenticación. Para obtener más información, [vea How to label files non-interactively for Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
+    1. Abra Azure Portal y cree una aplicación Azure AD para especificar un token de acceso para la autenticación. Para obtener más información, [vea How to label files non-interactively for Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
     
         > [!TIP]
-        > Al crear y configurar aplicaciones de Azure AD para el comando [Set-AIPAuthentication,](/powershell/module/azureinformationprotection/set-aipauthentication) el panel Solicitar permisos **de api** muestra las API que mi organización usa en lugar de la pestaña API de **Microsoft.**  Seleccione las **API que usa mi organización** para, a continuación, seleccionar Azure Rights Management **Servicios**. 
+        > Al crear y configurar aplicaciones Azure AD para el comando [Set-AIPAuthentication,](/powershell/module/azureinformationprotection/set-aipauthentication) el  panel Solicitar permisos **de api** muestra las API que mi organización usa en lugar de la pestaña API de **Microsoft.** Seleccione las **API** que usa mi organización para seleccionar **Azure Rights Management Services**. 
         >
 
     1. Desde el equipo Windows Server, si se ha concedido a su cuenta de servicio de escáner el derecho Iniciar sesión **localmente** para la instalación, inicie sesión con esta cuenta e inicie una sesión de PowerShell. 
     
         Si no se puede conceder a su cuenta de servicio de escáner el derecho De iniciar sesión **localmente** para la instalación, use el parámetro *OnBehalfOf* con [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), tal como se describe en [How to label files non-interactively for Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
 
-    1. Ejecute [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), especificando los valores copiados desde la aplicación de Azure AD:
+    1. Ejecute [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), especificando los valores copiados desde la Azure AD aplicación:
 
       ```PowerShell
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
@@ -215,7 +223,7 @@ Para obtener más información, vea ¿Qué es el escáner de etiquetado unificad
       Acquired application access token on behalf of CONTOSO\scanner.
       ```
 
-    El escáner ahora tiene un token para autenticarse en Azure AD. Este token es válido durante un año, dos años o nunca, según la configuración del secreto de cliente de la aplicación **web /API** en Azure AD. Cuando expire el token, debe repetir este procedimiento.
+    El escáner ahora tiene un token para autenticarse en Azure AD. Este token es válido durante un año, dos años o nunca, según la configuración del secreto de cliente de la **aplicación web /API** en Azure AD. Cuando expire el token, debe repetir este procedimiento.
 
 1. Ejecute el cmdlet [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) para establecer el escáner para que funcione en modo sin conexión. Ejecute: 
 
@@ -281,7 +289,7 @@ En la tabla siguiente se enumeran los cmdlets de PowerShell que son relevantes p
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Define la configuración de un repositorio existente en el trabajo de examen de contenido. |
 | | |
 
-Para más información vea:
+Para más información, vea:
 
 - [¿Qué es el escáner de etiquetado unificado de Azure Information Protection?](/azure/information-protection/deploy-aip-scanner)
 - [Configuración e instalación del escáner de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)

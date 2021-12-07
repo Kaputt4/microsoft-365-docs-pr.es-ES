@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3de7b4fafd70c3c11a18f59fb7b4c68e4dfb4eca
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 62bddf15a041ef47df13bbbd036d10727c15d3d6
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61312040"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320844"
 ---
 # <a name="enable-corelight-data-integration"></a>Habilitar la integración de datos de Corelight
 
@@ -61,7 +61,7 @@ Para habilitar la integración de Corelight, deberá seguir los siguientes pasos
 > [!NOTE]
 > Debe ser un administrador global para conceder permiso a Corelight para obtener acceso a los recursos de su organización.
 
-1. Como administrador global de inquilinos, vaya a: <https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> para conceder permiso.
+1. Como administrador global de inquilinos, vaya a este [vínculo para](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) conceder permiso.
 2. Vaya al [https://security.microsoft.com](https://security.microsoft.com/) portal, **seleccione Configuración** \> **Microsoft 365 Defender** y tome nota del identificador **de inquilino**. Necesitará esta información al configurar el dispositivo Corelight.
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>Paso 3: Configurar el dispositivo Corelight para enviar datos a Microsoft 365 Defender
@@ -72,7 +72,7 @@ Para habilitar la integración de Corelight, deberá seguir los siguientes pasos
 > Para habilitar una versión anterior que admita el envío de datos, primero debe ejecutar: `corelight-client configuration update --enable.adfiot 1` .
 
 > [!NOTE]
->Ten en cuenta que necesitarás conectividad a Internet para que el sensor llegue a los servicios en la nube de Defender y Corelight para que la solución funcione.
+> Necesitarás conectividad a Internet para que el sensor llegue a los servicios en la nube de Defender y Corelight para que la solución funcione.
 
 #### <a name="enabling-in-the-corelight-sensor-gui"></a>Habilitar en la GUI del sensor corelight
 

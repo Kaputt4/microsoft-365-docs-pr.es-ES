@@ -14,20 +14,21 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0f26b92d9475daf0c151d18f9ab024e3ad3bb34f
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 2db9df56a858bd069141c2c9389cf232b7feee7c
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883166"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320748"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
-- - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [La protección de](network-protection.md) red ayuda a evitar que los empleados utilicen cualquier aplicación para tener acceso a dominios peligrosos que pueden hospedar estafas de suplantación de identidad(phishing), vulnerabilidades de seguridad y otro contenido malintencionado en Internet.
 
@@ -62,7 +63,7 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
 
-Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de eventos y filtre el identificador de evento 1125 en el registro de Microsoft-Windows-Windows-Defender/Operational. En la tabla siguiente se enumeran todos los eventos de protección de red.
+Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de eventos y filtre el identificador de evento 1125 en el registro de Microsoft-Windows-Windows Defender/Operativo. En la tabla siguiente se enumeran todos los eventos de protección de red.
 
 | Id. de evento | Provide/Source | Descripción |
 |---|---|---|
@@ -70,7 +71,7 @@ Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de evento
 | 1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 | 1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Protección de red](network-protection.md)
 

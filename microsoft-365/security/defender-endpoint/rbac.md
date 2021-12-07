@@ -14,18 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 59b7f7f9aad9406fc5575f4ada5f45a68dd81b22
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8c1ff743aa6c9c215c3894185a4096c9a35a16e0
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914445"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320832"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Administrar el acceso al portal mediante el control de acceso basado en roles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Azure Active Directory
 - Office 365
 
@@ -64,7 +66,7 @@ Antes de usar RBAC, es importante que comprenda los roles que pueden conceder pe
 
 Cuando inicie sesión por primera vez en el portal de Microsoft 365 Defender, se le concede acceso completo o acceso de solo lectura. Los derechos de acceso completos se conceden a los usuarios con roles de administrador de seguridad o administrador global en Azure AD. El acceso de solo lectura se concede a los usuarios con un rol lector de seguridad en Azure AD. 
 
-Alguien con un rol de administrador global de Defender for Endpoint tiene acceso sin restricciones a todos los dispositivos, independientemente de su asociación de grupo de dispositivos y las Azure AD grupos de usuarios
+Alguien con un rol de administrador global de Defender for Endpoint tiene acceso sin restricciones a todos los dispositivos, independientemente de su asociación de grupo de dispositivos y las Azure AD grupos de usuarios.
 
 > [!WARNING]
 > Inicialmente, solo aquellos con derechos de administrador global o administrador de seguridad de Azure AD podrán crear y asignar roles en el portal de Microsoft 365 Defender, por lo tanto, es importante tener los grupos adecuados listos en Azure AD.

@@ -13,21 +13,21 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 11/15/2021
+ms.date: 12/06/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 803434179a616ddea718c543da4308f6af77b39e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ab6f9d617e2d1ac91aa084286673af49eaeb7e2f
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167387"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320736"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican [](run-scan-microsoft-defender-antivirus.md)a exámenes programados, [](schedule-antivirus-scans.md)exámenes a petición y protección y supervisión siempre activas en tiempo [real.](configure-real-time-protection-microsoft-defender-antivirus.md) **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre varios tipos diferentes:
@@ -167,7 +167,7 @@ Add-MpPreference -ExclusionExtension ".test"
 > [!TIP]
 > Para obtener más información, vea [Usar cmdlets de PowerShell para configurar y ejecutar el Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) y [Cmdlets de Antivirus de Microsoft Defender](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Windows de administración de archivos (WMI) para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
+### <a name="use-windows-management-instrumentation-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Windows Instrumental de administración de archivos (WMI) para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
 Use los [métodos Set, Add y Remove](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) de la clase MSFT_MpPreference para las siguientes propiedades:
 
@@ -382,7 +382,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

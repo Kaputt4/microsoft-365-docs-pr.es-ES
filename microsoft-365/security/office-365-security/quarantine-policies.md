@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81bb257d809eeb16988118faaced2035b527c491
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 2463e22de4e0d39c7c09b7234d24b33de3a4cae9
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283728"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320724"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -30,7 +30,7 @@ Las directivas de cuarentena (anteriormente conocidas como etiquetas de _cuarent
 
 Tradicionalmente, los usuarios se han permitido o denegado niveles de interactividad para los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena. Por ejemplo, los usuarios pueden ver y liberar mensajes que fueron puestos en cuarentena por el filtrado contra correo no deseado como correo no deseado o masivo, pero no pueden ver ni liberar mensajes que se han puesto en cuarentena como phishing o malware de elevada confianza.
 
-Para [las características de](#step-2-assign-a-quarantine-policy-to-supported-features)protección admitidas, las directivas de cuarentena especifican lo que los usuarios pueden hacer con sus propios mensajes (mensajes donde son destinatarios) en cuarentena y en notificaciones de _cuarentena._ Las notificaciones en cuarentena son el reemplazo de las notificaciones de correo no deseado del usuario final. Estas notificaciones ahora están controladas por directivas de cuarentena y contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo directivas contra correo no deseado y veredictos de directivas contra suplantación de identidad).
+Para [las características de](#step-2-assign-a-quarantine-policy-to-supported-features)protección admitidas, las directivas de cuarentena especifican lo que los usuarios pueden hacer con sus propios mensajes (mensajes donde son destinatarios) en cuarentena y en notificaciones de _cuarentena._ [Las notificaciones en cuarentena](use-spam-notifications-to-release-and-report-quarantined-messages.md) son el reemplazo de las notificaciones de correo no deseado del usuario final. Estas notificaciones ahora están controladas por directivas de cuarentena y contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo directivas contra correo no deseado y veredictos de directivas contra suplantación de identidad).
 
 Las directivas de cuarentena predeterminadas que aplican las capacidades históricas del usuario se asignan automáticamente a las acciones de las características de protección admitidas que ponen en cuarentena los mensajes. O bien, puede crear directivas de cuarentena personalizadas y asignarlas a las características de protección admitidas para permitir o impedir que los usuarios realicen acciones específicas en esos tipos de mensajes en cuarentena.
 
@@ -89,7 +89,7 @@ Para las organizaciones nuevas o las organizaciones anteriores que nunca tenían
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . O bien, para ir directamente a la página **Directivas de** cuarentena, abra <https://security.microsoft.com/quarantinePolicies> .
+- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. O bien, para ir directamente a la página **Directivas de** cuarentena, abra <https://security.microsoft.com/quarantinePolicies> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 

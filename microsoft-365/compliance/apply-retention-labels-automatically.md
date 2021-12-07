@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 670dc6c4b095ca8d124b80bb0bade0ee3db22a7f
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 2bfeb19404972d56765871d46b3ae533f9e2759f
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064264"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320625"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -364,11 +364,11 @@ Para tener en cuenta al aplicar automáticamente etiquetas de retención a datos
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Tiempo que tardan las etiquetas de retención en aplicarse
 
-Al aplicar automáticamente etiquetas de retención basadas en información confidencial, palabras clave o propiedades que permiten búsquedas, o clasificadores entrenables, las etiquetas de retención pueden tardar hasta ocho días en aplicarse:
+Al aplicar automáticamente etiquetas de retención basadas en información confidencial, palabras clave o propiedades que permiten búsquedas, o clasificadores entrenables, las etiquetas de retención pueden tardar hasta siete días en aplicarse:
   
 ![Diagrama de cuándo entran en vigor las etiquetas de aplicación automática.](../media/retention-labels-autoapply-timings.png)
 
-Si las etiquetas que esperaba no aparecen después de ocho días, compruebe el **Estado** de la directiva de aplicación automática seleccionándola en la página **Directivas de etiqueta** en el Centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
+Si las etiquetas que esperaba no aparecen después de siete días, compruebe el **Estado** de la directiva de aplicación automática seleccionándola en la página **Directivas de etiqueta** en el Centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
 
 1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
