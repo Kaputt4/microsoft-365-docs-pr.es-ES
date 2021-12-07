@@ -15,6 +15,8 @@
               href: ../business/sign-up.md
             - name: Configurar Microsoft 365 Empresa Premium con el asistente para configuración
               href: ../business/set-up.md
+            - name: Microsoft 365 Empresa Premium (vídeo)
+              href: admin-overview/what-is-microsoft-365.md
         - name: Registrarse en Microsoft 365 Empresa Estándar
           items:
             - name: Registrarse en Microsoft 365 Empresa Estándar
@@ -441,6 +443,6 @@
     - name: Solucionar problemas
       href: /office/troubleshoot/
     - name: Contactar soporte
-      href: ../business-video/get-help-support.md
+      href: get-help-support.md
     - name: Guía de navegación
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
