@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 961390fab02344d38ddeb6889f8aec2c8a779d46
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: d3b8ab3fac4156b638a0508bbac0bebfc2dfdee6
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757018"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327547"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -210,3 +210,25 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
     Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content) en esta página.
 
 6. Complete la configuración y guarde los ajustes.
+
+## <a name="how-long-it-takes-for-retention-policies-to-take-effect"></a>Tiempo que tardan en aplicarse las directivas de retención
+
+Cuando se crea y envía una directiva de retención, ésta puede tardar hasta siete días en aplicarse:
+  
+![Diagrama de cuándo surte efecto la directiva de retención.](../media/retention-policy-timings.png)
+
+En primer lugar, la directiva de retención debe distribuirse a las ubicaciones seleccionadas y luego aplicarse al contenido. Se puede comprobar el estado de distribución de la directiva de retención seleccionándola en la página **Directivas de retención** del centro de cumplimiento. En el panel flotante, si el estado es **Desactivado (Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en intentar volver a implementarla (para OneDrive), intente ejecutar el comando de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
+
+1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
+
+2. Ejecute el siguiente comando:
+    
+    ```PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+    ```
+
+## <a name="updating-retention-policies"></a>Actualización de las directivas de retención
+
+Cuando la configuración de la directiva de retención ya se haya aplicado al contenido, se aplicará automáticamente un cambio en la configuración de la directiva a este contenido y al contenido nuevo.
+
+Algunas opciones de configuración no se pueden cambiar después de crear y guardar la directiva, entre las que se incluyen el nombre de la directiva de retención, el tipo de ámbito (adaptable o estático) y la configuración de retención, excepto el período de retención.
