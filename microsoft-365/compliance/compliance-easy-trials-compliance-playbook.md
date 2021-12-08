@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365.
-ms.openlocfilehash: ca791a4be3c199527bae3b75c0b529198cef9f4a
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 83e78759bb98ddf623d5a39866e2c812964225d5
+ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137152"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61320796"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Cumplimiento de Microsoft 365
 
@@ -425,6 +425,8 @@ Ayude a su organización a evaluar los riesgos y a responder eficazmente a los r
 Identifique y proteja de forma proactiva los riesgos para la privacidad, como el acaparamiento de datos, las transferencias de datos y el uso compartido excesivo de datos, y ayude a su organización a automatizar y administrar las solicitudes de los sujetos a gran escala.
 
 [ Más información sobre la administración de privacidad para Microsoft 365](/privacy/solutions/privacymanagement/privacy-management).
+
+[Cuaderno de estrategias de prueba: Administración de privacidad para Microsoft 365](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
