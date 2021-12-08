@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 3fe6e976d5b71bc7534eaadf2e45ac076dc5d978
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 039a7cd1a67893c2daea5f329015c3d77e26f0b8
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240869"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327645"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -120,13 +120,13 @@ Para editar una directiva de la etiqueta de retención existente (el tipo de dir
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Cuando las etiquetas de retención estén disponibles para aplicarlas
 
-Para las ubicaciones de OneDrive y SharePoint, las etiquetas publicadas suelen aparecer en uno o dos días para que los usuarios puedan seleccionarlas. Aún así, deje un margen de hasta ocho días.
+Para las ubicaciones de OneDrive y SharePoint, las etiquetas publicadas suelen aparecer en uno o dos días para que los usuarios puedan seleccionarlas. Sin embargo, tenga en cuenta que pueden tardar en aparecer hasta siete días.
 
-Para las ubicaciones de Exchange y Grupos de Microsoft 365, las etiquetas de retención publicadas pueden tardar hasta ocho días en aparecer para los usuarios de Outlook y el buzón debe contener al menos 10 MB de datos.
+Para las ubicaciones de Exchange y Grupos de Microsoft 365, las etiquetas de retención publicadas pueden tardar hasta siete días en aparecer para usuarios de Outlook y el buzón debe contener al menos 10 MB de datos.
 
 ![Diagrama de cuándo las etiquetas publicadas surten efecto.](../media/retention-labels-published-timings.png)
 
-Si las etiquetas no aparecen después de ocho días, compruebe el **Estado** de la directiva de etiquetas seleccionándola en la página **Directivas de etiquetas** del centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de la directiva:
+Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de la directiva de etiqueta seleccionándola en la página **Directivas de etiqueta** en el centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de la directiva:
 
 1. [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
 
@@ -296,7 +296,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
+- Names for retention labels and their policies, the scope type (adaptive or static), and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ### Deleting retention labels

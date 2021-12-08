@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 2bfeb19404972d56765871d46b3ae533f9e2759f
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 755050de00bdffdd9169325c3a0e56b3eec7cede
+ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320625"
+ms.locfileid: "61327585"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -385,7 +385,7 @@ En el caso de las directivas de etiquetas de retención de aplicación automáti
 En el caso de las directivas de etiquetas de retención de aplicación automática configuradas para datos adjuntos en la nube: dado que esta directiva se aplica a los archivos recién compartidos en lugar de a los archivos existentes, un cambio en la configuración de la etiqueta y directiva seleccionadas se aplicará automáticamente solo al contenido recién compartido.
 
 Después de crear y guardar la etiqueta o la directiva, no se pueden cambiar algunas opciones de configuración, entre las que se incluyen:
-- El nombre de la etiqueta de retención, la directiva de retención, y la configuración de retención, excepto el período de retención. Sin embargo, no se puede cambiar el período de retención cuando el período de retención se basa en la etiqueta de los elementos.
+- Los nombres de las etiquetas de retención y sus directivas, el tipo de ámbito (adaptable o estático) y la configuración de retención, excepto el período de retención. Sin embargo, no se puede cambiar el período de retención cuando el período de retención se basa en cuándo se etiquetaron los elementos.
 - La opción de marcar los elementos como un registro.
 
 ### <a name="deleting-retention-labels"></a>Eliminar etiquetas de retención
