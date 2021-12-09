@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6610fbc770e8a4d9e6119c417f4419919362515f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5b0be9c044b48788e5abb04f469b9f6ab0038cd5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166439"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374537"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
@@ -75,7 +75,7 @@ La característica de protección contra aplicaciones potencialmente no deseadas
 > [!NOTE]
 > Esta característica está disponible en Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 y Windows Server 2016.
 
-Antivirus de Microsoft Defender bloquea los archivos PUA que se detecten y cualquier intento de descargarlos, moverlos, ejecutarlos o instalarlos. A continuación, los archivos PUA bloqueados se ponen en cuarentena. Cuando se detecta un archivo PUA en un punto de conexión, Antivirus de Microsoft Defender envía una notificación al usuario ([a menos que se hayan deshabilitado las notificaciones](configure-notifications-microsoft-defender-antivirus.md)) en el mismo formato de otras detecciones de amenazas. A la notificación se antepone `PUA:` para indicar su contenido.
+Antivirus de Microsoft Defender bloquea los archivos PUA que se detecten y cualquier intento de descargarlos, moverlos, ejecutarlos o instalarlos. A continuación, los archivos PUA bloqueados se ponen en cuarentena. Cuando se detecta un archivo PUA en un punto de conexión, el Antivirus de Microsoft Defender envía una notificación al usuario ([a menos que se hayan deshabilitado las notificaciones](configure-notifications-microsoft-defender-antivirus.md)) en el mismo formato de otras detecciones de amenazas. A la notificación se antepone `PUA:` para indicar su contenido.
 
 La notificación aparece en la [lista habitual de cuarentena dentro de la aplicación de Seguridad de Windows](microsoft-defender-security-center-antivirus.md).
 

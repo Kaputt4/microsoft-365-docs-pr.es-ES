@@ -15,17 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fce766313b7757712faaa2a2b122730601f137aa
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: e5ed41f400c24a2522ea49f2524d0fe629bdbb9f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792525"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374759"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Preguntas más frecuentes al activar Microsoft 365 Defender
 
@@ -45,7 +46,7 @@ Los clientes con las siguientes licencias que no son de E5 pueden usar Microsoft
 
 - Microsoft Defender para punto de conexión
 - Microsoft Defender for Identity
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Defender para Office 365 (Plan 2)
 
 Para obtener una lista completa de licencias admitidas, [lea los requisitos de licencias](prerequisites.md#licensing-requirements).
@@ -61,13 +62,13 @@ Para optimizar las experiencias Microsoft 365 Defender, recomendamos implementar
 Microsoft 365 Defender selecciona automáticamente una ubicación óptima para el centro de datos donde se procesan y almacenan los datos consolidados. Si tienes Microsoft Defender para Endpoint, selecciona la misma ubicación usada por Defender para Endpoint.
 
 >[!NOTE]
->Microsoft Defender para endpoint aprovisiona automáticamente en centros de datos de la Unión Europea (UE) cuando se activa a través de Azure Defender. Microsoft 365 Defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que han aprovisionado Microsoft Defender para Endpoint de esta manera.
+>Microsoft Defender para endpoint aprovisiona automáticamente en centros de datos de la Unión Europea (UE) cuando se activa a través de Microsoft Defender para la nube. Microsoft 365 Defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que han aprovisionado Microsoft Defender para Endpoint de esta manera.
 
 La ubicación del centro de datos se muestra antes y después de aprovisionar el servicio en la página de configuración de Microsoft 365 Defender (**Configuración > Microsoft 365 Defender**). Si prefiere usar otra ubicación del centro de datos, seleccione ¿Necesita **ayuda?** en el portal de Microsoft 365 Defender para ponerse en contacto con el soporte técnico de Microsoft.
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>¿Dónde puedo acceder a Microsoft 365 Defender?
 
-Microsoft 365 Defender está disponible en: <https://security.microsoft.com> .
+Microsoft 365 Defender está disponible en: <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> .
 
 ## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>¿Qué permisos necesito para obtener acceso a Microsoft 365 Defender?
 
@@ -99,10 +100,6 @@ Microsoft proporciona información periódicamente a través de los distintos ca
 - Blogposts en la comunidad de [Microsoft 365 seguridad & de cumplimiento normativo](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
 Obtenga las últimas experiencias disponibles públicamente al activar las [características de vista previa.](preview.md)
-
-## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>¿Microsoft 365 Defender está disponible para estados unidos Government Community Cloud (GCC) o GCC High?
-
-No está disponible por el momento.
 
 ## <a name="related-topics"></a>Temas relacionados
 

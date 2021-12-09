@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 51e0c757dc73f66ac4d2b1de151c84dd3decddb4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed0cf7a715952a66f13b9cb6b40ebc9761ebc01c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175892"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374705"
 ---
 # <a name="contact-support-for-brazil"></a>Póngase en contacto con el soporte técnico de Brasil
 
-[Buscar otro país o región](../../business-video/get-help-support.md).
+[Buscar otro país o región](../get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0800 762 1146

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Enterprise de diseño de arquitectura
-description: Obtenga información sobre la arquitectura Enterprise microsoft de expertos en identidad, ciberseguridad y redes.
+description: Obtenga información sobre Microsoft 365 Enterprise de diseño de arquitectura de expertos en identidad, ciberseguridad y redes.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 0bc90daa7ba58c9ae7bc430224af031e4699a77f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c5988dcd445892bce7726b976b82595bd1924add
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203680"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374549"
 ---
 # <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 Enterprise de diseño de arquitectura
 
@@ -30,3 +30,9 @@ Conozca los principios clave que necesita para comprender las arquitecturas de r
 | ![KozettaRetret sobre los principios de diseño de seguridad.](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [Seguridad](security-design-principles.md)    |  Kozeta Garrett, Cybersecurity Architect en Microsoft, describe los principales desafíos de seguridad que encuentra en organizaciones empresariales y recomienda los enfoques que puede tomar en [obstáculos](security-design-principles.md)de seguridad que puede navegar por .  |
 | ![Ed Fisher en los principios de diseño de redes.](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [Redes](networking-design-principles.md)  |   Ed Fisher, Security & Compliance Architect en Microsoft, describe cómo optimizar la red para la conectividad en la nube evitando los problemas más comunes en redes arriba (a la [nube).](networking-design-principles.md)       |
 |    |         |         |
+
+## <a name="related-resources"></a>Recursos relacionados
+
+Obtener recursos para diagramas de diseño de arquitectura: [Microsoft 365 de arquitectura y plantillas](architecture-icons-templates.md).
+
+Buscar diagramas de arquitectura para Microsoft 365: ilustraciones de la nube [de Microsoft para arquitectos de TI](cloud-architecture-models.md)

@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centro de administración de Microsoft 365- learn about the features that were added this month.
-ms.openlocfilehash: 397efac0067aa46ffc29e9ac3e5dc61bff4d10e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31ae9f1b1c4bf8255ef1105089ffe2637dc36e0b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199122"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374393"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "60199122"
 
 ::: moniker-end
 
-Estamos agregando continuamente nuevas características a la [Centro de administración de Microsoft 365,](../business-video/admin-center-overview.md)solucionando problemas que aprendemos y realizando cambios en función de sus comentarios. Echa un vistazo a continuación para ver lo que está disponible para ti hoy. Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, intente agregarse a [la versión dirigida](manage/release-options-in-office-365.md).
+Estamos agregando continuamente nuevas características a [el Centro de administración de Microsoft 365]( Información general sobre la[Centro de administración de Microsoft 365,](admin-overview/admin-center-overview.md)solucionar problemas que aprendemos y realizar cambios en función de sus comentarios. Echa un vistazo a continuación para ver lo que está disponible para ti hoy. Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, intente agregarse a [la versión dirigida](manage/release-options-in-office-365.md).
 
 Y si quiere saber las novedades de otros servicios en la nube de Microsoft:
 
@@ -195,7 +195,7 @@ We've started rolling out a new Search experience for the admin center, and we c
   - **Usuarios:** seleccione el nombre del usuario y puede editarlo allí mismo. Si selecciona el menú tres puntos (más acciones) junto a su nombre, puede restablecer su contraseña. Puede buscar por nombre para mostrar, apellido, nombre, nombre de usuario o dirección de correo electrónico principal y alias de correo electrónico. Pero para obtener una coincidencia exacta, busque por dirección de correo electrónico principal o nombre de usuario.
   - **Grupos:** edite el grupo desde cualquier página, agregue miembros y asigne propietarios.
   - **Acciones:** de forma similar a cómo puede buscar un usuario y, a continuación, restablecer su contraseña, también puede buscar "restablecer contraseña" desde cualquier página y, a continuación, restablecer una o más contraseñas para los usuarios.
-  - **Navegación:** los resultados en Navegación pueden ayudarle a llegar rápidamente a una página en el Centro de administración. Por ejemplo, la búsqueda de "roles" le llevará a la página Roles para los roles de Azure AD.
+  - **Navegación:** los resultados en Navegación pueden ayudarle a llegar rápidamente a una página en el Centro de administración. Por ejemplo, la búsqueda de "roles" le llevará a la página Roles para Azure AD roles.
   - **Configuración:** busque cualquier configuración relacionada con su organización, los servicios a los que se suscriba y la configuración de seguridad y privacidad. 
   - **Dominios:** puede encontrar vínculos rápidos a los dominios y, a continuación, el vínculo le llevará a la página Información general y estado de ese dominio.
   - **Documentación:** si no podemos encontrar un resultado para usted, trataremos de encontrar documentación que le ayude. La lista de artículos seleccionados tarda un poco más en encontrar una coincidencia, así que espere un segundo para que la búsqueda encuentre los resultados. 
@@ -247,7 +247,7 @@ Para obtener más información, consulte este artículo y vídeo para ver cómo 
 ### <a name="documentation-training-and-videos"></a>Documentación, aprendizaje y vídeos
 
 - Nuevo y justo a tiempo para Microsoft Ignite:[El concentrador virtual](https://adoption.microsoft.com/virtual-hub/). Profundizar en el aprendizaje técnico para profesionales y desarrolladores de TI. Encuentre rápidamente alrededor de 20 vídeos nuevos como parte de #SIDETRACKED, el nombre de la pista de administración de Ignite este año.
-- Novedades de la serie de vídeos de Microsoft 365: este mes, tratamos las nuevas características disponibles en whiteboard para Teams y en la web, cómo automatizar [el aprovisionamiento](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) de usuarios en Azure AD, nuevos desencadenadores de Power Automate y acciones en Teams y mucho más. Y permanece atento para el mes que viene, donde tendremos un resumen de todas las cosas geniales que suceden en Ignite.
+- Novedades de la serie de vídeos de Microsoft 365: este mes, tratamos las nuevas características disponibles en whiteboard para Teams y en la web, cómo automatizar el [aprovisionamiento](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) de usuarios a Azure AD, nuevos desencadenadores y acciones de Power Automate en Teams y mucho más. Y permanece atento para el mes que viene, donde tendremos un resumen de todas las cosas geniales que suceden en Ignite.
 - Hicimos un rediseño de la [página Microsoft 365 documentación](/microsoft-365) que se centra en las soluciones en primer lugar. Destacaremos las nuevas soluciones a medida que estén disponibles en esta página, así que no te des cuenta.
 
 ![Nueva página de aterrizaje para obtener Microsoft 365 soluciones con soluciones como "Facultar a los trabajadores remotos".](../media/MAC-WN-M365Docspage.png)
@@ -288,7 +288,7 @@ Hace unos meses, agregamos una configuración que te permite administrar los men
 
 ### <a name="docs-training-and-videos-june"></a>Documentos, aprendizaje y vídeos (junio)
 
-- [Introducción a Teams](../business-video/get-started-teams-small-business.md)
+- [Introducción a Teams](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)
 
 ## <a name="may-2020"></a>Mayo de 2020
 
@@ -337,7 +337,7 @@ Justo este mes, lanzamos un nuevo sitio en docs.microsoft.com denominado centro 
 
 [Abril de 2020](#april-2020)
 
-Bueno, lo hicimos. Hemos dado el segundo paso hacia una experiencia de roles unificados y ahora puede administrar roles de Intune en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. También puede aprovechar características como la capacidad de buscar roles y ver permisos de roles. Esto significa que no necesita dos herramientas independientes para administrar roles para Microsoft 365 Intune. Cuando inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">el Centro de administración de Microsoft 365</a>, verá que hay dos ejes dinámicos en la página Roles, uno para Azure AD y otro para Intune.
+Bueno, lo hicimos. Hemos dado el segundo paso hacia una experiencia de roles unificados y ahora puede administrar roles de Intune en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. También puede aprovechar características como la capacidad de buscar roles y ver permisos de roles. Esto significa que no necesita dos herramientas independientes para administrar roles para Microsoft 365 Intune. Cuando inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, verá que hay dos dinámicas en la página Roles, una para Azure AD y otra para Intune.
 
 ![Página Roles con el elemento dinámico de Intune seleccionado.](../media/MAC-WN-IntuneRoles.png)
 
@@ -390,12 +390,12 @@ Novedades de la serie de vídeos de **Microsoft 365:** este mes, tratamos sugere
 
 #### <a name="for-your-users"></a>Para los usuarios
 
-- [Programar una reunión](../business-video/schedule-guest-meeting.md)
+- [Programar una reunión](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5)
 - [Unirse a una Teams reunión](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Crear un equipo de toda la organización](../business-video/org-wide-team.md)
-- [Crear un equipo con invitados](../business-video/team-with-guests.md)
-- [Unirse a un equipo como invitado](../business-video/join-team-guest.md)
-- [Crear una dirección de correo electrónico del grupo](../business-video/group-email.md)
+- [Crear un equipo de toda la organización](/microsoftteams/create-an-org-wide-team)
+- [Crear un equipo con invitados](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
+- [Unirse a un equipo como invitado](/microsoftteams/guest-experience)
+- [Crear una dirección de correo electrónico del grupo](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
 
 #### <a name="for-admins-and-business-owners"></a>Para administradores y propietarios de empresas
 
@@ -404,7 +404,7 @@ Novedades de la serie de vídeos de **Microsoft 365:** este mes, tratamos sugere
 - [Registrarse en Microsoft Business Basic](../business-video/sign-up.md)
 - [Configuración del inicio de sesión en dos factores](../business-video/sign-up.md)
 
-## <a name="march-2020"></a>Marzo de 2020
+## <a name="march-2020"></a>Marzo 2020
 
 ### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Corrección de comentarios destacados: mejorar la confiabilidad de "agregar usuario" para licencias
 

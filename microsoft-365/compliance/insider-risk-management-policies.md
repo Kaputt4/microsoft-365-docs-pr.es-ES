@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 3a25466b26145691d579403a4ccb00410298d4e4
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 0bb25be1633ddb3f653d640a0812bf0a14344309
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241025"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374621"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -104,7 +104,7 @@ Deberá tener configurado ATP de Microsoft Defender en su organización y habili
 
 Proteger los datos de los registros de salud y evitar el uso incorrecto de los datos personales de los pacientes es una preocupación importante para las organizaciones del sector de la salud. Este uso incorrecto puede incluir filtraciones de datos confidenciales a personas no autorizadas, modificación fraudulenta de registros de pacientes o robo de registros de atención médica de pacientes. La prevención de este uso incorrecto de los datos de los pacientes, ya sea por falta de conciencia, negligencia o fraude por parte de los usuarios, también es un componente clave para cumplir los requisitos normativos de la Ley de portabilidad y responsabilidad del seguro de salud (HIPAA) y la Ley de tecnología de la información de salud para la salud económica y clínica (HITECH). Ambos actos establecen los requisitos para proteger la información de salud protegida por el paciente (PHI).
 
-Esta plantilla de directiva permite la puntuación de riesgos para usuarios internos que detectan actividades sospechosas asociadas con registros hospedados en sistemas de registro electrónico de historiales médicos (EMR) existentes. La detección se centra en el acceso no autorizado, la visualización, la modificación y la exportación de datos del paciente. Deberá configurar un conector (el conector de [Microsoft Healthcare](import-healthcare-data.md) o el conector [de Epic)](import-epic-data.md)para admitir la detección de actividades de acceso, exfiltración u ofuscación en el sistema DEA.
+Esta plantilla de directiva permite la puntuación de riesgos para usuarios internos que detectan actividades sospechosas asociadas con registros hospedados en sistemas de registro electrónico de historiales médicos (EMR) existentes. La detección se centra en el acceso no autorizado, la visualización, la modificación y la exportación de datos del paciente. Deberá configurar un conector (el conector de [Microsoft Healthcare](import-healthcare-data.md) o el conector [de Epic](import-epic-data.md) para admitir la detección de actividades de acceso, exfiltración o ofuscación en su sistema DEA.
 
 Al usar esta plantilla, también debe configurar un Microsoft 365 de recursos humanos para importar periódicamente datos de perfiles de organización para los usuarios de la organización. Vea el artículo Importar datos con el conector de recursos humanos para obtener una guía paso a paso para configurar el conector de recursos humanos de Microsoft 365 para su organización.
 

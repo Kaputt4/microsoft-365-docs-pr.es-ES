@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
-ms.openlocfilehash: 938410a8f12e62549bf3ec8e8778036440df5aea
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1e92c3c8a4c19aa33124b930574f9646ac5bfabe
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284016"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374309"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
@@ -136,11 +136,17 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 Puede ejecutar una comprobación de diagnóstico automatizada en el buzón de archivo de un usuario para identificar los problemas y las soluciones sugeridas.
 
-Para ejecutar la comprobación de diagnóstico, vaya a [Ejecutar pruebas: buzón de archivo](https://aka.ms/PillarArchiveMailbox).
+Para ejecutar la comprobación de diagnóstico, haga clic en el siguiente botón. 
+
+> [!div class="nextstepaction"]
+> [Ejecutar pruebas: Buzón de archivo](https://aka.ms/PillarArchiveMailbox)
 
 ![Ejecutar diagnósticos en un buzón de archivo.](../media/ArchiveMailboxDiagnostics.png)
 
 Se abre una página de control flotante en el Centro de administración de Microsoft 365. Escriba la dirección de correo electrónico del buzón que desea comprobar y haga clic en **Ejecutar las pruebas**.
+
+> [!NOTE]
+> Debe ser un administrador global de Microsoft 365 para usar la comprobación de diagnóstico del buzón de archivo. Además, esta característica no está disponible en las nubes de Microsoft 365 Government, Microsoft 365 operado por 21Vianet o Microsoft 365 Alemania.
 
 ## <a name="more-information"></a>Más información
 

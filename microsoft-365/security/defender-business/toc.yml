@@ -1,0 +1,73 @@
+- name: Microsoft Defender para empresas
+  href: index.yml
+  items:
+    - name: Información general
+      items:
+        - name: ¿Qué es Microsoft Defender para empresas?
+          href: mdb-overview.md
+        - name: Proceso de configuración simplificado
+          href: mdb-simplified-configuration.md
+        - name: Cómo obtener Defender para empresas
+          href: get-defender-business.md
+        - name: Comparar planes para pequeñas y medianas empresas
+          href: compare-mdb-m365-plans.md
+        - name: Integración con Microsoft 365 Lighthouse
+          href: mdb-lighthouse-integration.md
+    - name: Instalación y configuración
+      items:
+        - name: Información general sobre la configuración
+          href: mdb-setup-configuration.md
+        - name: 'Paso 1: Revisar los requisitos'
+          href: mdb-requirements.md
+        - name: 'Paso 2: Asignar roles y permisos'
+          href: mdb-roles-permissions.md
+        - name: 'Paso 3: Configurar notificaciones por correo electrónico'
+          href: mdb-email-notifications.md
+        - name: 'Paso 4: Incorporar dispositivos'
+          href: mdb-onboard-devices.md
+        - name: 'Paso 5: Configurar la configuración de seguridad'
+          href: mdb-configure-security-settings.md
+    - name: Introducción
+      items:
+        - name: Introducción al portal
+          href: mdb-get-started.md
+        - name: Probar tutoriales y simulaciones
+          href: mdb-tutorials.md
+    - name: Usar Microsoft Defender para empresas
+      items:
+        - name: Ver y administrar dispositivos
+          href: mdb-manage-devices.md
+        - name: Ver y administrar incidentes
+          href: mdb-view-manage-incidents.md
+        - name: Responder y mitigar amenazas
+          href: mdb-respond-mitigate-threats.md
+        - name: Revisar las acciones de corrección
+          href: mdb-review-remediation-actions.md
+        - name: Visualización y uso de los informes
+          href: mdb-reports.md
+    - name: Administrar la configuración y las directivas
+      items:
+        - name: Ver y editar directivas
+          href: mdb-view-edit-policies.md
+        - name: Crear una nueva directiva
+          href: mdb-create-new-policy.md
+        - name: Orden de directiva
+          href: mdb-policy-order.md
+        - name: Crear grupos de dispositivos
+          href: mdb-create-edit-device-groups.md
+        - name: Configuración de protección de última generación
+          href: mdb-next-gen-configuration-settings.md
+        - name: Configuración del firewall
+          href: mdb-firewall.md
+        - name: Administrar reglas para directivas de firewall
+          href: mdb-custom-rules-firewall.md
+    - name: Información de referencia
+      items:
+        - name: Cómo obtener ayuda o ponerse en contacto con el soporte técnico
+          href: mdb-get-help.md
+        - name: Preguntas más frecuentes
+          href: mdb-faq.yml
+        - name: Solución de problemas
+          href: mdb-troubleshooting.yml
+        - name: Microsoft 365 Lighthouse
+          href: /microsoft-365/lighthouse/m365-lighthouse-overview

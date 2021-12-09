@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: acdd6899a8f555e4deb9f6f2c262c45ca299abff
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: dce31c0787ab85898dc48cc94cefb54ac19b1304
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552673"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374333"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 
@@ -62,13 +62,13 @@ El Microsoft 365 de información general contiene los siguientes informes. Puede
 
 - **Colaboración** &ndash; Vea cómo los usuarios de su organización usan OneDrive y SharePoint para almacenar documentos y colaborar entre sí, y cómo estas tendencias evolucionan mes a mes. También puede ver cuántos usuarios compartieron documentos interna o externamente y cuántos usuarios usaron sitios SharePoint o cuentas OneDrive, desglosados por propietarios y otros colaboradores.
 
-- **Storage** &ndash; Use este informe para realizar un seguimiento del almacenamiento en la nube de buzones, OneDrive y SharePoint web.
+- **Storage** este informe para realizar un seguimiento del almacenamiento en la nube de buzones de correo, OneDrive &ndash; y SharePoint web.
 
 - **Movilidad** &ndash; Realice un seguimiento de los clientes y dispositivos que las personas usan para conectarse al correo electrónico, Teams, Skype o Yammer.
 
 ## <a name="activation-and-licensing"></a>Activación y licencias
 
-La página de activación y licencia ofrece informes sobre Microsoft 365 activación; es decir, cuántos usuarios han descargado y activado Office aplicaciones y cuántas licencias han sido asignadas por su organización. El valor de mes hacia la parte superior hace referencia al mes actual y las métricas reflejan los valores agregados desde el principio del mes hasta la fecha actual.
+La página de activación y licencia ofrece informes sobre la activación Microsoft 365; es decir, cuántos usuarios han descargado y activado aplicaciones Office y cuántas licencias han sido asignadas por su organización. El valor de mes hacia la parte superior hace referencia al mes actual y las métricas reflejan los valores agregados desde el principio del mes hasta la fecha actual.
 
 - **Activación** &ndash; Realice un seguimiento de las activaciones del plan de servicio (por ejemplo, Aplicaciones Microsoft 365 para empresas, Project y Visio) en la organización. Todos los usuarios con una licencia de Office pueden instalar los productos en un máximo de cinco dispositivos. También puedes usar informes en esta sección para ver los dispositivos en los que las personas han instalado Office aplicaciones. Ten en cuenta que para activar un plan, un usuario debe instalar la aplicación e iniciar sesión con su cuenta.
 
@@ -203,7 +203,7 @@ Esto no se encuentra actualmente en la hoja de ruta.
 
 ### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>Tengo una pregunta concreta acerca de los datos que se muestran sobre mi organización. ¿Con quién puedo ponerme en contacto?
 
-Puedes usar el botón comentarios en la página de información general sobre la actividad del Centro de administración o puedes abrir un caso de soporte técnico [para](../../business-video/get-help-support.md) obtener ayuda con la aplicación de plantilla. 
+Puedes usar el botón comentarios en la página de información general sobre la actividad del Centro de administración o puedes abrir un caso de soporte[técnico(](../get-help-support.md) Obtener soporte técnico para obtener ayuda con la aplicación de plantilla. 
 
 ### <a name="how-can-partners-access-the-data"></a>¿Cómo pueden los partners acceder a los datos?
 

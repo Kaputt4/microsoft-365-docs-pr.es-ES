@@ -1,0 +1,106 @@
+### YamlMime:Landing
+title: Microsoft Defender para empresas
+summary: Documentación de Microsoft Defender para empresas
+metadata:
+  title: Documentación de Microsoft Defender para empresas
+  description: Obtener información general y de configuración para Microsoft Defender para empresas
+  ms.prod: 365-security
+  ms.technology: mdb
+  ms.topic: landing-page
+  ms.collection:
+  - SMB
+  - M365-security-compliance
+  author: denisebmsft
+  ms.author: deniseb
+  ms.date: 12/08/2021
+  ms.openlocfilehash: 882536032df80721881c27f87d99c606063c35f0
+  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 12/09/2021
+  ms.locfileid: "61375611"
+landingContent:
+- title: Información general
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ¿Qué es Defender para empresas?
+      url: mdb-overview.md
+    - text: Proceso de configuración simplificado
+      url: mdb-simplified-configuration.md
+    - text: Cómo obtener Defender para empresas
+      url: get-defender-business.md
+    - text: Comparar planes para pequeñas y medianas empresas
+      url: compare-mdb-m365-plans.md
+    - text: Integración con Microsoft 365 Lighthouse
+      url: mdb-lighthouse-integration.md
+- title: Configurar
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Información general sobre la configuración
+      url: mdb-setup-configuration.md
+    - text: 'Paso 1: Revisar los requisitos'
+      url: mdb-requirements.md
+    - text: 'Paso 2: Asignar roles y permisos'
+      url: mdb-roles-permissions.md
+    - text: 'Paso 3: Configurar notificaciones por correo electrónico'
+      url: mdb-email-notifications.md
+    - text: 'Paso 4: Incorporar dispositivos'
+      url: mdb-onboard-devices.md
+    - text: 'Paso 5: Configuración de la seguridad'
+      url: mdb-view-edit-policies.md
+- title: Introducción
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Navegar por el portal
+      url: mdb-get-started.md
+    - text: Probar tutoriales y simulaciones
+      url: mdb-tutorials.md
+- title: Utilice
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ver y administrar dispositivos
+      url: mdb-manage-devices.md
+    - text: Ver y administrar incidentes
+      url: mdb-view-manage-incidents.md
+    - text: Responder y mitigar amenazas
+      url: mdb-respond-mitigate-threats.md
+    - text: Revisar las acciones de corrección
+      url: mdb-review-remediation-actions.md
+    - text: Visualización y uso de los informes
+      url: mdb-reports.md
+- title: Administrar
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ver y editar las directivas
+      url: mdb-view-edit-policies.md
+    - text: Crear una nueva directiva
+      url: mdb-create-new-policy.md
+    - text: Crear grupos de dispositivos
+      url: mdb-create-edit-device-groups.md
+    - text: Administrar reglas para directivas de firewall
+      url: mdb-custom-rules-firewall.md
+  - linkListType: reference
+    links:
+    - text: Orden de directiva
+      url: mdb-policy-order.md
+    - text: Configuración de protección de última generación
+      url: mdb-next-gen-configuration-settings.md
+    - text: Configuración del firewall
+      url: mdb-firewall.md
+- title: Ayuda y soporte técnico
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Cómo obtener ayuda o ponerse en contacto con el soporte técnico
+      url: mdb-get-help.md
+    - text: Preguntas más frecuentes
+      url: mdb-faq.yml
+    - text: Solución de problemas
+      url: mdb-troubleshooting.yml
+    - text: Microsoft 365 Lighthouse
+      url: /microsoft-365/lighthouse/m365-lighthouse-overview

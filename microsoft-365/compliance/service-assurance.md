@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft protege los datos de los clientes y sepa cómo puede cumplir con ISO, HIPAA, FINRA y FedRAMP cuando use Office 365.
-ms.openlocfilehash: df0cf99a3cfba0c6f5358fb48c45cfd3da62799e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b836df70de9905c0bd55edce4a2d9f5beeccbda5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150995"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374573"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el Centro de seguridad y cumplimiento
 
@@ -95,9 +95,9 @@ Según la configuración específica, las opciones incluidas en la vista pueden 
 ## <a name="get-help-with-service-assurance"></a>Obtener ayuda con la garantía de servicio
 <a name="addother"> </a>
 
-[Contactar con el soporte técnico para productos empresariales: ayuda para administradores](../business-video/get-help-support.md)
+[Contactar con el soporte técnico para productos empresariales: ayuda para administradores](../admin/get-help-support.md)
   
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>preguntas más frecuentes
 <a name="addother"> </a>
 
  **¿Por qué se produce un error que dice que los documentos de la garantía de servicio están dañados?**

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general sobre cómo compartir los archivos de negocio.
-ms.openlocfilehash: 7c4dde8f3ce19a2f7c443efffbbc780a746ba174
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3548177ad97453949b622ba50149fad81e5459cb
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155687"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374777"
 ---
 # <a name="overview-of-sharing-business-files"></a>Información general sobre cómo compartir archivos empresariales
 
@@ -43,7 +43,7 @@ Descargue una infografía para obtener una introducción rápida a las formas de
 - Comparta un archivo con alguien que no sea de su empresa (como un cliente o un cliente) por correo electrónico si solo necesita que vaya un solo camino.
 - Si necesita una respuesta o desea que rellenen información y la envíen de vuelta, puede usar SharePoint o Microsoft Teams para compartirla con un vínculo de edición.
 
-Obtenga más información sobre cómo [compartir archivos fuera de la](securely-share-files-externally.md) organización con vínculos seguros y cómo compartir archivos con un vínculo de [cualquiera.](share-files-externally.md)
+Obtenga más información sobre cómo [compartir archivos fuera de la](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07) organización con vínculos seguros y cómo compartir archivos con un vínculo de [cualquiera.](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07)
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Compartir y colaborar con un cliente o socio comercial
 
@@ -53,7 +53,7 @@ Obtenga más información sobre cómo [compartir archivos fuera de la](securely-
 1. Cargue sus archivos.
 1. Invite a sus socios o proveedores al equipo como usuarios "invitados" para darles acceso.
 
-Obtenga más información sobre cómo [compartir archivos fuera de la organización con un vínculo seguro.](securely-share-files-externally.md)
+Obtenga más información sobre cómo [compartir archivos fuera de la organización con un vínculo seguro.](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07)
 
 ## <a name="share-inside-your-business"></a>Compartir dentro de su empresa
 
@@ -62,7 +62,7 @@ Si está trabajando con archivos que comparte dentro de su empresa, también es 
 1. Crea el equipo e invita a tu equipo a él.
 1. Cargue sus archivos.
 
-Obtenga más información sobre [el almacenamiento de archivos de la empresa](files-to-sharepoint.md) y el almacenamiento de archivos de [empleados.](files-to-onedrive.md)
+Obtenga más información [sobre Move files to SharePoint](../admin/setup/files-to-sharepoint.md) y Move files to [OneDrive](../admin/setup/files-to-onedrive.md).
 
 ## <a name="how-to-get-it-done"></a>Cómo hacerlo
 
@@ -70,5 +70,5 @@ Obtenga más información sobre [el almacenamiento de archivos de la empresa](fi
 
 - [Enviar y recibir datos adjuntos](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
 - [Compartir archivos y carpetas con OneDrive](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
-- [Crear un equipo de toda la empresa](org-wide-team.md)
+- [Crear un equipo de toda la empresa](/microsoftteams/create-an-org-wide-team)
 - [Agregar invitados a un equipo](https://support.microsoft.com/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)

@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Interpretar los cargos, la facturación y la información de pago en su factura de Microsoft 365 para empresas, y cómo cambiar un número de pedido de compra.
 ms.date: 05/04/2021
-ms.openlocfilehash: 7b6f82570416b84d1b0b8c5b65cf13ce94522063
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 946f403d05150a4995aeacf8adc99f02ffb6c761
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151463"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374633"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 
@@ -93,7 +93,7 @@ La tabla siguiente describe los campos que es posible que vea en su factura. Alg
 |Dirección de uso del servicio|La dirección donde se usa el servicio, normalmente es la misma que la dirección del solicitante. Para actualizar su Dirección de uso del servicio, consulte [Cambiar las direcciones de facturación](change-your-billing-addresses.md).|
 |Vendido a|El nombre de la empresa y la dirección. Para actualizar esta información, consulte [Cambiar la dirección de la empresa, el correo electrónico de contacto técnico y otra información](../../admin/manage/change-address-contact-and-more.md).  |
 |Subtotal|Cada suscripción que aparece en la factura tiene una fila subtotal independiente de todas las columnas de cargos, descuentos, créditos, subtotal, impuestos y total para esa suscripción.|
-|Impuestos|La página 1 de la factura muestra el total de impuestos. La pagina 2 muestra la tasa impositiva aplicada y el importe total de impuestos para cada elemento de línea. Si su factura contiene impuestos y su empresa está exenta de impuestos, [póngase en contacto con el soporte técnico](../../business-video/get-help-support.md).  |
+|Impuestos|La página 1 de la factura muestra el total de impuestos. La pagina 2 muestra la tasa impositiva aplicada y el importe total de impuestos para cada elemento de línea. Si su factura contiene impuestos y su empresa está exenta de impuestos, [póngase en contacto con el soporte técnico](../../admin/get-help-support.md).  |
 |Total|La cantidad vencida para el período de facturación de la factura.|
 
 ## <a name="change-your-purchase-order-number"></a>Cambiar el número de pedido de compra
@@ -106,12 +106,6 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 

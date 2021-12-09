@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones estén enumeradas y activas.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 7239cda6c00785626471b35be19c1d550acf91e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ff6bdec77e6407d1b854dc7a5fd78f0401c253
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173684"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374597"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -72,7 +72,7 @@ Incluye una licencia para cada usuario que quieras mover.
 
 - **Si compraste dos suscripciones** y no aparecen en la lista aquí, es posible que se hayan comprado para distintas organizaciones (para dominios diferentes). Las suscripciones no pueden cruzar los límites de la organización.
 
-- **Si sabe que tiene una suscripción adicional** y no aparece aquí, o no está activa, llame al soporte técnico de [Microsoft](../../business-video/get-help-support.md).
+- **Si sabe que tiene una suscripción adicional** y no aparece aquí, o no está activa, llame al soporte técnico de [Microsoft](../../admin/get-help-support.md).
 
 ### <a name="what-about-the-old-licenses"></a>¿Qué pasa con las licencias antiguas?
 
@@ -115,4 +115,5 @@ If you moved all users from one subscription to another, and you no longer need 
 Si movió solo algunos usuarios a una suscripción diferente, quite las [licencias](../licenses/buy-licenses.md) que ya no necesite.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Llamar al soporte técnico para ayudarle a cambiar los planes
-[Llamar al soporte técnico de Microsoft](../../business-video/get-help-support.md)
+
+[Llamar al soporte técnico de Microsoft](../../admin/get-help-support.md).
