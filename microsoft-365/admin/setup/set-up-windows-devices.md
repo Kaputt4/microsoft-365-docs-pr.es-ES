@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configure los dispositivos Windows que ejecutan Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que habilita controles de seguridad y administración centralizados.
-ms.openlocfilehash: 250c701a41e9243c81641df2bcc0fd6d6158ec47
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 40577f2130c185f8a98a3c8f873da80233e56cf0
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128657"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373061"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
 
@@ -77,7 +77,7 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
 
  **Conectar usuarios a Azure AD:**
   
-1. En el equipo Windows del usuario, que está ejecutando Windows 10 Pro, versión 1703 (Creators Update) (vea [Requisitos previos](../security-and-compliance/pre-requisites-for-data-protection.md)), haga clic en el logotipo de Windows y, después, en el icono Configuración.
+1. En el equipo Windows del usuario, que ejecuta Windows 10 Pro, versión 1703 (Creators Update) (consulte [requisitos previos,](../security-and-compliance/pre-requisites-for-data-protection.md)haga clic en el logotipo de Windows y, a continuación, en el icono Configuración.
   
    ![En el menú Inicio, haga clic Windows Configuración icono.](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
@@ -127,7 +127,7 @@ Compruebe que los dispositivos Azure AD unidos Windows 10 se actualicen a Window
     
     ![Verify that Windows edition is Windows 10 Business.](../../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para configurar los dispositivos móviles, consulta Configurar dispositivos móviles para usuarios de [Microsoft 365 Empresa Premium](set-up-mobile-devices.md), Para establecer directivas de protección de dispositivos o protección de aplicaciones, consulta Administrar [Microsoft 365 para empresas.](/admin/index.yml)
   

@@ -1,6 +1,6 @@
 ---
 title: Regístrate para Microsoft 365 Lighthouse
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 9a69b8a261d3a5faebd7ad7aa72336d0c9f5977c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 58721d83529fb70552d151cd0a0b19ce5ba85c28
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214002"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374057"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrate para Microsoft 365 Lighthouse
 
@@ -60,11 +60,12 @@ ms.locfileid: "60214002"
     > [!NOTE]
     > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Lighthouse.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Configurar Microsoft 365 Lighthouse seguridad del portal](m365-lighthouse-configure-portal-security.md) 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Introducción a Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artículo)\
-[Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)
+[Introducción a Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artículo)   
+[Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)   
+[Microsoft 365 Lighthouse y Microsoft Defender para empresas](../security/defender-business/mdb-lighthouse-integration.md) (artículo)

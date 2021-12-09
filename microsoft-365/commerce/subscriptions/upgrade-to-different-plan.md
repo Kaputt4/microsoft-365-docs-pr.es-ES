@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: La forma más sencilla de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, la pestaña Actualizar no siempre es compatible.
 ms.date: 04/21/2021
-ms.openlocfilehash: 7e4190fed287033f723be2cd89e800cb2e31e11a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 82bd20b70a5f199f7daead8084f70d985efe52ad
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747325"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370349"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 
@@ -56,7 +56,7 @@ Si la **pestaña** Actualización está vacía, verá una explicación de por qu
 
 Al usar la **pestaña Actualizar,** los planes a los que puede actualizar se muestran en función de los servicios del plan actual. Solo puede usar la pestaña **Actualizar** para pasar a un plan que tenga los mismos servicios relacionados con datos o a una versión superior. Esto garantiza que los usuarios no pierdan datos relacionados con esos servicios durante el cambio.
 
-Si desea pasar a un plan con menos servicios, puede cambiar los planes [manualmente](change-plans-manually.md)o llamar al soporte [técnico](../../business-video/get-help-support.md) para obtener ayuda.
+Si desea pasar a un plan con menos servicios, puede cambiar los planes [manualmente](change-plans-manually.md)o llamar al soporte [técnico](../../admin/get-help-support.md) para obtener ayuda.
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Solo quiero actualizar algunos de mis usuarios. ¿Cómo puedo hacerlo?
 
@@ -76,13 +76,13 @@ Si no ve ningún plan  en la pestaña Actualizar, significa que el plan no se pu
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Ahora no puede actualizar suscripciones porque tiene más usuarios que licencias
 
-Para actualizar los planes automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../commerce/licenses/buy-licenses.md). Una vez resueltos los conflictos de licencias, debería ver los planes enumerados en la **pestaña** Actualizar. Si no es así, puede [cambiar los planes manualmente](change-plans-manually.md)o llamar al soporte [técnico](../../business-video/get-help-support.md).
+Para actualizar los planes automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../commerce/licenses/buy-licenses.md). Una vez resueltos los conflictos de licencias, debería ver los planes enumerados en la **pestaña** Actualizar. Si no es así, puede [cambiar los planes manualmente](change-plans-manually.md)o llamar al soporte [técnico](../../admin/get-help-support.md).
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>No puede actualizar las suscripciones en este momento porque esta suscripción no está totalmente configurada o el servicio no está disponible.
 
 Por ejemplo, si uno de los servicios tiene un incidente, no podrá actualizar hasta que todos los servicios estén en buen estado. Para ver si hay problemas de estado de servicio o de aprovisionamiento, en el Centro de administración, vaya a la página **Estado** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">del servicio de</a> mantenimiento.
 
-Si encuentra que un servicio no está completamente preparado o un problema de estado del servicio, espere unas pocas horas para que el servicio se encuentre disponible y vuelva a intentarlo. Si todavía tiene un problema, llame [al soporte técnico](../../business-video/get-help-support.md).
+Si encuentra que un servicio no está completamente preparado o un problema de estado del servicio, espere unas pocas horas para que el servicio se encuentre disponible y vuelva a intentarlo. Si todavía tiene un problema, llame [al soporte técnico](../../admin/get-help-support.md).
 
 #### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>No puede actualizar los planes porque otro plan está en proceso de actualización o está pendiente de una comprobación de crédito
 
@@ -90,11 +90,11 @@ Espere hasta que se haya completado la comprobación de crédito antes de actual
 
 #### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>Actualmente, esta suscripción no es apta para la actualización
 
-Puede cambiar [los planes manualmente o](change-plans-manually.md) llamar al soporte [técnico](../../business-video/get-help-support.md).
+Puede cambiar [los planes manualmente o](change-plans-manually.md) llamar al soporte [técnico](../../admin/get-help-support.md).
 
 #### <a name="i-see-a-different-message-than-whats-listed-here"></a>Veo un mensaje diferente de lo que se muestra aquí
 
-Puede cambiar [los planes manualmente o](change-plans-manually.md) llamar al soporte [técnico](../../business-video/get-help-support.md).
+Puede cambiar [los planes manualmente o](change-plans-manually.md) llamar al soporte [técnico](../../admin/get-help-support.md).
 
 ### <a name="additional-reasons-you-cant-upgrade"></a>Motivos adicionales por los que no puede actualizar
 
@@ -106,11 +106,11 @@ Solo puede usar la pestaña **Actualizar** si todos los usuarios se suscriben al
 
 Si ha pagado la suscripción por adelantado, es posible que pueda cambiar [los planes manualmente.](change-plans-manually.md) Sin embargo, no recibirás un crédito por el tiempo sin usar restante en la suscripción actual si actualizas los planes antes de que expire el plan actual.
 
-También puede llamar [al soporte técnico](../../business-video/get-help-support.md) para obtener ayuda.
+También puede llamar [al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>Tiene un plan para la administración pública o para una institución sin ánimo de lucro
 
-Si tiene un plan gubernamental o sin ánimo de lucro, puede cambiar los [planes manualmente](change-plans-manually.md) o llamar al [soporte técnico](../../business-video/get-help-support.md) para obtener ayuda.
+Si tiene un plan gubernamental o sin ánimo de lucro, puede cambiar los [planes manualmente](change-plans-manually.md) o llamar al [soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
 
 #### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>La suscripción desde la que desea actualizar tiene un problema temporal
 
@@ -120,7 +120,7 @@ Es posible que no vea ningún plan en la **pestaña** Actualizar porque el servi
 
 Al actualizar los planes, los planes que están disponibles para actualizar a se muestran en función de los servicios del plan actual. Solo puede actualizar a un plan que tenga los mismos servicios relacionados con datos, como Exchange Online o SharePoint Online, o a una versión superior de ellos. Esto garantiza que los usuarios \' no pierdan datos relacionados con esos servicios durante la actualización.
 
-Si tu plan no es apto para actualizar los planes automáticamente, es posible que puedas cambiar los [planes manualmente](change-plans-manually.md) en su lugar. También puede llamar [al soporte técnico](../../business-video/get-help-support.md) para obtener ayuda.
+Si tu plan no es apto para actualizar los planes automáticamente, es posible que puedas cambiar los [planes manualmente](change-plans-manually.md) en su lugar. También puede llamar [al soporte técnico](../../admin/get-help-support.md) para obtener ayuda.
 
 #### <a name="your-subscription-has-an-add-on"></a>La suscripción tiene un complemento
 
@@ -160,7 +160,7 @@ El día que se complete la actualización del plan, se desactivará la facturaci
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Llamar al soporte técnico para ayudarle a actualizar planes
 
-[Llamar al soporte técnico de Microsoft](../../business-video/get-help-support.md)
+[Llamar al soporte técnico de Microsoft](../../admin/get-help-support.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

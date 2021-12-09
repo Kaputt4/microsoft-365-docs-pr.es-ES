@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e7b5fe8eadd5fc42ea4d74160ffaf54ae6fd5621
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 96f3fececcf1494d73922a95d055e8ce742b9e0d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172832"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373121"
 ---
 # <a name="contact-support-for-united-states"></a>Póngase en contacto con el soporte técnico de Estados Unidos
 
-[Buscar otro país o región](../../business-video/get-help-support.md).
+[Buscar otro país o región](../get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 1 800 865 9408

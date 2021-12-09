@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 155e35bea6dbf62b489cb58237cb586a2739d48a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 68b06e8451fa254b03673181e3e6a1c6ec126d1a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164169"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372557"
 ---
 # <a name="contact-support-for-france"></a>Póngase en contacto con el soporte técnico de Francia
 
-[Buscar otro país o región](../../business-video/get-help-support.md).
+[Buscar otro país o región](../get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0805 540 594

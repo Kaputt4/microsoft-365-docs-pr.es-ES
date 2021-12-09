@@ -19,19 +19,19 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 83a0f7828b5a0ef9e598b416a9f3b105cdf391d7
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 125c90a6c9839e2899e97b197c951c0e26d6fc37
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171538"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371489"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ¿Quiere ver cómo funciona? Vea el siguiente vídeo:
@@ -84,7 +84,7 @@ Todas las acciones de corrección, ya sean pendientes o completadas, se realiza 
 
 ## <a name="requirements-for-air"></a>Requisitos para AIR
 
-Su organización debe tener Defender para endpoint (consulte [Requisitos mínimos de Microsoft Defender para endpoint](minimum-requirements.md)).
+Su organización debe tener Defender for Endpoint (consulte [Requisitos mínimos de Microsoft Defender para Endpoint](minimum-requirements.md).
 
 Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 
@@ -101,7 +101,7 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)

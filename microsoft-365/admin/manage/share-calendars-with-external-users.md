@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Habilite el uso compartido de calendarios en el Centro de administración de Microsoft 365 para que los usuarios puedan compartir sus calendarios con cualquier persona dentro o fuera de la organización.
-ms.openlocfilehash: b3ad3735c8cf5b33ddc501310e8f34dcc3c6f786
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7b7e13dd0472cdd8d61bb7a28c067eadb1b00cc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171776"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370541"
 ---
 # <a name="share-calendars-with-external-users"></a>Compartir calendarios con usuarios externos
 
@@ -54,5 +54,5 @@ Una vez habilitado el uso compartido, los propietarios del calendario pueden ext
 ## <a name="related-content"></a>Contenido relacionado
 
 [Activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site) (artículo)\
-[Información general sobre Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)\
+[Overview of the Centro de administración de Microsoft 365]([Overview of the Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) (video)\
 [Administrar el correo electrónico y los calendarios](/admin) (página de vínculos)

@@ -7,24 +7,24 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 03f9a8268ac3d1652840a9d99d3493358cf71ee4
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 8955c3d28b8d29a23af1def673fc3bdcfbcc8c71
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128021"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370385"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurar y configurar Microsoft Defender para el plan de extremo 1
 
-> [!TIP]
-> Si tiene Microsoft 365 E3 O A3 pero no Microsoft 365 E5 o A5, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) para registrarse en el programa de vista previa.
+**Se aplica a:**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 En este artículo se describe cómo configurar y configurar Defender for Endpoint Plan 1. Tanto si tiene asistencia como si lo está haciendo usted mismo, puede usar este artículo como guía durante toda la implementación.  
 
@@ -51,7 +51,7 @@ En la tabla siguiente se enumeran los requisitos básicos para Defender para el 
 
 | Requisito | Descripción |
 |:---|:---|
-| Requisitos de licencias | Defender for Endpoint Plan 1 <br/><br/>*Si tiene una Microsoft 365 E3 O A3, puede unirse al programa de vista previa.* |
+| Requisitos de licencias | Plan 1 de Defender para punto de conexión |
 | Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
 | Sistemas operativos | Windows 10, versión 1709 o posterior <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave) <br/>iOS <br/>Sistema operativo Android  |
 | Datacenter | Una de las siguientes ubicaciones de centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
@@ -295,7 +295,7 @@ Con la protección de red, puede ayudar a proteger su organización contra domin
 
 ### <a name="web-protection"></a>Protección web
 
-Con la protección web, puede proteger los dispositivos de su organización frente a amenazas web y contenido no deseado. La protección web incluye [protección contra amenazas web](#configure-web-threat-protection) y filtrado de contenido [web](#configure-web-content-filtering) (versión preliminar). Configure ambos conjuntos de funcionalidades. Se recomienda usar Microsoft Endpoint Manager para configurar la configuración de la protección web.
+Con la protección web, puede proteger los dispositivos de su organización frente a amenazas web y contenido no deseado. La protección web incluye [protección contra amenazas web y](#configure-web-threat-protection) filtrado de contenido [web.](#configure-web-content-filtering) Configure ambos conjuntos de funcionalidades. Se recomienda usar Microsoft Endpoint Manager para configurar la configuración de la protección web.
 
 #### <a name="configure-web-threat-protection"></a>Configurar la protección contra amenazas web
 
@@ -309,7 +309,7 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 
 5. En la **pestaña Configuración,** expanda **Protección web**, especifique la configuración de la tabla siguiente y, a continuación, **elija Siguiente**. <br/><br/>
 
-   | Setting | Recomendación |
+   | Configuración | Recomendación |
    |:---|:---|
    | **Habilitar la protección de red** | Se establece en **Habilitado**. Impide que los usuarios visiten sitios o dominios malintencionados. <br/><br/>Como alternativa, puede establecer la protección de red en **modo auditoría** para ver cómo funcionará en su entorno. En el modo de auditoría, la protección de red no impide que los usuarios visiten sitios o dominios, pero sí realiza un seguimiento de las detecciones como eventos. |
    | **Requerir SmartScreen para Microsoft Edge (versión anterior)** | Se establece en **Sí**. Ayuda a proteger a los usuarios de posibles estafas de suplantación de identidad (phishing) y software malintencionado. |
@@ -328,9 +328,6 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 > Para obtener más información sobre la protección contra amenazas web, vea [Proteger su organización contra amenazas web.](web-threat-protection.md)
 
 #### <a name="configure-web-content-filtering"></a>Configurar el filtrado de contenido web
-
-> [!NOTE]
-> El filtrado de contenido web está actualmente en versión preliminar.
 
 1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com/](https://security.microsoft.com/) ) e inicie sesión.
 
@@ -400,7 +397,7 @@ Para ayudarle con la planeación de la implementación de WDAC, consulte los sig
 
 - [Windows Defender de control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para endpoint. 
 

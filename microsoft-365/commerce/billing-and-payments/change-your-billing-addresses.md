@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtén información sobre cómo actualizar las direcciones de facturación o la dirección de correo electrónico usada para recibir notificaciones de facturación Microsoft 365 para empresas.
 ms.date: 04/07/2021
-ms.openlocfilehash: abc86bdaad0f28bf0590e19d8a7d37fbc21239b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 839dab1c63394f76c41abb7dd784253bb636ba38
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202062"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371285"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
@@ -50,12 +50,6 @@ Para obtener más información sobre su factura o factura, vea [Ver la factura](
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Cuentas de** > **facturación de** facturación.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Cuentas de** > **facturación de** facturación.
@@ -71,12 +65,6 @@ Para obtener más información sobre su factura o factura, vea [Ver la factura](
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a la página **Métodos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">de pago de</a> facturación.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Métodos de pago** > **de** facturación.
 
 ::: moniker-end
 
@@ -100,12 +88,6 @@ Para obtener más información sobre su factura o factura, vea [Ver la factura](
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
@@ -124,7 +106,7 @@ Para obtener más información sobre su factura o factura, vea [Ver la factura](
 
 De forma predeterminada, las notificaciones de facturación de su organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de su organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
   
-1. Inicie sesión en Microsoft 365 con su cuenta de trabajo o escuela como administrador global. [Obtenga información sobre](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)cómo iniciar sesión .
+1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa como administrador global. [Descubra cómo iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Seleccione el **icono Usuario y,** a continuación, **seleccione Mi cuenta**.
   
@@ -141,12 +123,6 @@ También puede cambiar la dirección de correo electrónico alternativa de otros
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notificaciones de facturación</a>.
 
 ::: moniker-end
 

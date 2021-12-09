@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo hospedar reuniones en línea para su empresa.
-ms.openlocfilehash: 9988caf32fe36d74b90da217ffb6114f2986f7f8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb5e777860c2c8a87f2353f7759a8039e582494f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194758"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371513"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Hospedar reuniones en línea para su empresa
 
@@ -33,7 +33,7 @@ ms.locfileid: "60194758"
 
 Necesitarán descargar la versión [gratuita](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) o unirse en línea [en un](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) explorador para obtener el uso compartido de vídeo y pantalla.
 
-Si con frecuencia colabora estrechamente en proyectos con un cliente, cliente o partner, considere la posibilidad de crear un equipo para sus clientes, puede invitarlos fácilmente [a](team-with-guests.md) reuniones y también tener conversaciones, compartir archivos y realizar un seguimiento de proyectos en Microsoft Teams.
+Si con frecuencia colabora estrechamente en proyectos con un cliente, cliente o partner, considere la posibilidad de crear un equipo para sus clientes, puede invitarlos fácilmente [a](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) reuniones y también tener conversaciones, compartir archivos y realizar un seguimiento de proyectos en Microsoft Teams.
 
 Descargue una infografía para obtener una introducción rápida sobre cómo unirse o hospedar una reunión en línea con Microsoft Teams:
 

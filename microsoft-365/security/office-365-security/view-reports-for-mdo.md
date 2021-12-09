@@ -2,8 +2,8 @@
 title: Ver informes de Defender para Office 365
 f1.keywords:
 - CSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -17,15 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a buscar y usar defender para Office 365 informes que están disponibles en el portal Microsoft 365 Defender web.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 522abcdc22a17555eab6f0c2e46a424529a15b99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 26d883984dedae52285a343d573e0aa2cad0c005
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203858"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372353"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -47,7 +49,7 @@ Microsoft Defender para organizaciones Office 365 (por ejemplo, suscripciones Mi
 
 ### <a name="download-reports"></a>Descargar informes
 
-1. En el portal Microsoft 365 Defender, vaya a **Informes**  >  **de correo electrónico & colaboración**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>vaya a **Informes**  >  **de correo electrónico & colaboración**.
 
 2. Seleccione **Informes para descargar**.
 
@@ -59,12 +61,12 @@ Microsoft Defender para organizaciones Office 365 (por ejemplo, suscripciones Mi
 >
 > Los informes relacionados con el flujo de correo se encuentran ahora en el Centro Exchange administración (EAC). Para obtener más información acerca de estos informes, vea Informes de flujo de correo [en el nuevo centro Exchange administración.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
-## <a name="safe-attachments-file-types-report"></a>Caja fuerte Informe de tipos de archivo de datos adjuntos
+## <a name="safe-attachments-file-types-report"></a>Caja fuerte de tipos de archivo adjuntos
 
 > [!NOTE]
 > Este informe ha quedado en desuso. La misma información está disponible en el informe [de estado de protección contra amenazas](#threat-protection-status-report).
 
-## <a name="safe-attachments-message-disposition-report"></a>Caja fuerte Informe de eliminación de mensajes de datos adjuntos
+## <a name="safe-attachments-message-disposition-report"></a>Caja fuerte de eliminación de mensajes adjuntos
 
 > [!NOTE]
 > Este informe ha quedado en desuso. La misma información está disponible en el informe [de estado de protección contra amenazas](#threat-protection-status-report).
@@ -75,7 +77,7 @@ El **informe de latencia de** correo muestra una vista agregada de la latencia d
 
 La latencia de red y del lado cliente no se incluyen.
 
-Para ver el informe, abra el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque Informe de latencia **de** correo y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/mailLatencyReport> .
+Para ver el informe, abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración.** En la página **Informes de colaboración &** correo electrónico, busque Informe de latencia **de** correo y, a continuación, haga clic en **Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/mailLatencyReport> .
 
 ![Widget de informe de latencia de correo en la página Informes de colaboración & correo electrónico.](../../media/mail-latency-report-widget.png)
 
@@ -229,6 +231,7 @@ Cmdlets de informes de PowerShell:
 |Vínculos seguros|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
 |Usuarios comprometidos|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Estado del flujo de correo|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
+|Usuarios suplantados|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver el Defender para Office 365 informes?
@@ -242,7 +245,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características en Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
@@ -252,4 +255,4 @@ Si no ve datos en defender para los informes Office 365, compruebe que las direc
 
 [Informes e información inteligentes en el portal Microsoft 365 Defender web](reports-and-insights-in-security-and-compliance.md)
 
-[Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)
+[Azure AD funciones integradas](/azure/active-directory/roles/permissions-reference)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 992c54d84a5cc69579c74b2b7e1a5aa60e9633ab
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: c560ceab5fa33af19eb40196dc643f356d1cbe87
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262796"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371117"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -35,10 +35,7 @@ La implementación centralizada es la forma recomendada y más enriquecte de car
 
 Implementación centralizada proporciona las siguientes ventajas:
 
-- Un administrador global o un administrador de Exchange pueden asignar un complemento directamente a un usuario, a varios usuarios a través de un grupo o a todos los usuarios de la organización.
-- Exchange administrador puede implementar addin solo si la propiedad Registro de aplicaciones está establecida en true en Azure Active Directory centro de administración, como se muestra en la imagen siguiente.
-
-  ![imagen](../../media/AAD.png)
+- Un administrador puede implementar y asignar un complemento directamente a un usuario, a varios usuarios a través de un grupo o a todos los usuarios de la organización (vea la sección Requisitos de administración para obtener información).
 
 - Cuando se inicia Office aplicación, el complemento se descarga automáticamente. Si el complemento admite comandos de complemento, el complemento aparecerá automáticamente en la cinta de opciones dentro de la Office aplicación.
 
@@ -55,7 +52,7 @@ Puede ver requisitos específicos para Office y Exchange a continuación, o usar
 
 La implementación centralizada no es compatible con lo siguiente:
 
-- Complementos que tengan como objetivo Word, Excel o PowerPoint en Office 2013
+- Complementos destinados a la Office MSI (excepto Outlook 2016)
 - Un servicio de directorio local
 - Implementación de complementos en un buzón Exchange local
 - Implementación de complemento a SharePoint
@@ -85,6 +82,15 @@ La implementación centralizada no es compatible con lo siguiente:
 Microsoft Exchange los manifiestos del complemento en el inquilino de la organización. El administrador que implementa complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange Online que admita la autenticación de OAuth.
 
 Póngase en contacto con el administrador de Exchange de su organización para averiguar qué configuración está en uso. La conectividad de OAuth por usuario puede comprobarse usando el cmdlet de PowerShell [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity).
+
+### <a name="admin-requirements"></a>Requisitos de administrador
+
+Para implementar un complemento mediante la implementación centralizada, debe ser un administrador global o un administrador Exchange de la organización.
+
+> [!NOTE]
+> Un Exchange puede implementar un complemento solo si la propiedad **Registros** de aplicaciones está establecida en true en el centro de administración de Azure Active Directory como se muestra en la imagen siguiente:
+>
+> ![imagen](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Comprobación de compatibilidad de implementación centralizada
@@ -139,7 +145,7 @@ La implementación centralizada admite asignaciones a usuarios individuales, gru
 
 Eche un vistazo al siguiente ejemplo, en el que Sandra, Sheila y el grupo del departamento de ventas están asignados a un complemento. Como el departamento de ventas de la Costa Occidental es un grupo anidado, Bert y Fred no están asignados a un complemento.
 
-![Diagrama del departamento de ventas.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Averiguar si un grupo contiene grupos anidados
@@ -156,11 +162,11 @@ De forma alternativa, puede usar la API de Graph Azure Active Directory para eje
 
 ### <a name="contacting-microsoft-for-support"></a>Ponerse en contacto con Microsoft para obtener soporte técnico
 
-Si usted o sus usuarios tienen problemas para cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que deba ponerse en contacto con el soporte técnico de Microsoft[(](../../business-video/get-help-support.md)obtenga información sobre cómo ). Proporcione la siguiente información sobre su entorno Microsoft 365 en el vale de soporte técnico.
+Si usted o sus usuarios tienen problemas para cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que deba ponerse en contacto con el soporte técnico de Microsoft[(](../../business-video/get-help-support.md)obtenga información sobre cómo . Proporcione la siguiente información sobre su entorno Microsoft 365 en el vale de soporte técnico.
 
 | Plataforma | Información de depuración |
 |:-----|:-----|
-|Oficina | Registros Charles/Fiddler  <br/>  Identificador de inquilino ([obtenga información sobre cómo](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|Office | Registros Charles/Fiddler  <br/>  Identificador de inquilino ([obtenga información sobre cómo](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
 |Clientes enriquecidos (Windows y Mac) | Registros Charles/Fiddler  <br/>  Generar números de la aplicación cliente (preferiblemente como una captura de pantalla de **Archivo/Cuenta**) |
 
 ## <a name="related-content"></a>Contenido relacionado

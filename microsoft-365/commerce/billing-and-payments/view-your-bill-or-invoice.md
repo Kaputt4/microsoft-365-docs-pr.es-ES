@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 07/31/2020
-ms.openlocfilehash: 0124f9c2f1375da162975f808138f24a8dead4fd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: bbede67dd093ad726933f25b7774b63e587dd24a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128201"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371261"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -38,7 +38,7 @@ Este artículo está dirigido a las personas que tienen una suscripción a Micro
   
 Si necesita ayuda para interpretar los cargos que aparecen en su factura, vea [Entender la factura](understand-your-invoice2.md) para obtener una guía detallada.
   
-**Tiene algún problema con la factura?**[Póngase en contacto con el soporte técnico para productos empresariales](../../business-video/get-help-support.md).
+**Tiene algún problema con la factura?**[Póngase en contacto con el soporte técnico para productos empresariales](../../admin/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -57,12 +57,6 @@ Debe ser un administrador global o de facturación para realizar los pasos descr
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a la página **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Facturas y pagos</a>.
 
 ::: moniker-end
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Obtén información sobre cómo solucionar problemas con la Microsoft 365 de plantilla análisis de uso.
-ms.openlocfilehash: 5d1c6234f07f7d524ba2698720db8596474ce94d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e9bb73eea33e882fb5c9b138610cdc0f8fe9a7c5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200826"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373757"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Solución de problemas Microsoft 365 análisis de uso
 
@@ -48,7 +48,7 @@ Explore la siguiente lista de mensajes de error para obtener ayuda con los probl
   
  **Causa:** Cuando [optas por ver](enable-usage-analytics.md) datos en la aplicación de plantilla desde el Centro de administración de Microsoft 365, el sistema Microsoft 365 empieza a generar datos de uso histórico para tu organización. Según el tamaño del espacio empresarial, puede que este paso tarde en completarse de 2 a 48 horas. 
   
- **Para corregir esto:** Solo tenga paciencia, pero si el mensaje no cambia a **Sus** datos está listo después de 3 días, póngase en contacto Microsoft 365 soporte técnico [para empresas](../../business-video/get-help-support.md).
+ **Para corregir esto:** Solo tenga paciencia, pero si  el mensaje no cambia a Sus datos están listos después de 3 días, [póngase en contacto Microsoft 365 soporte técnico para empresas]([Obtenga soporte](../get-help-support.md)técnico .
   
 ## <a name="we-are-unable-to-process-your-request-at-this-time-we-are-still-preparing-the-data-for-your-organization"></a>No podemos procesar su solicitud en este momento. Aún estamos preparando los datos para su organización
 

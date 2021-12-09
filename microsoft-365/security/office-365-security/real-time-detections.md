@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0a2d76904c7f04974315c92425ca30700b10497
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cf2bd90fb4719e1e742ae8f57ae7cfd6462e5c4a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962956"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373673"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>Conceptos básicos de explorador y detecciones en tiempo real
 
@@ -57,7 +57,7 @@ Para obtener más información, vea [Email security with Explorer](email-securit
 ## <a name="differences-between-explorer-and-real-time-detections"></a>Diferencias entre detecciones en tiempo real y explorador
 
 - *Las detecciones en* tiempo real son una herramienta de informes disponible en Defender para Office 365 Plan 1. *El Explorador de* amenazas es una herramienta de búsqueda y corrección de amenazas disponible en Defender para Office 365 Plan 2.
-- El informe de detecciones en tiempo real permite ver las detecciones en tiempo real. El Explorador de amenazas también lo hace, pero proporciona detalles adicionales para un ataque determinado, como resaltar las campañas de ataque, y ofrece a los equipos de operaciones de seguridad la capacidad de corregir amenazas (incluida la activación de una investigación automatizada de investigación y [respuesta).](automated-investigation-response-office.md)
+- El informe de detecciones en tiempo real permite ver las detecciones en tiempo real. El Explorador de amenazas también lo hace, pero proporciona detalles adicionales para un ataque determinado, como resaltar las campañas de ataque, y ofrece a los equipos de operaciones de seguridad la capacidad de corregir amenazas (incluida la activación de una investigación automatizada de investigación y [respuesta.](automated-investigation-response-office.md)
 - Una *vista De todo* el correo electrónico está disponible en el Explorador de amenazas, pero no se incluye en el informe de detecciones en tiempo real.
 - Las funciones de filtrado enriquecido y las acciones de corrección se incluyen en el Explorador de amenazas. Para obtener más información, vea [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 

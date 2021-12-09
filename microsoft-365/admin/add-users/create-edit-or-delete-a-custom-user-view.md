@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Aprenda a usar filtros para crear, editar o eliminar la vista de usuario personalizada en Microsoft 365.
-ms.openlocfilehash: e0d809e4f21f8fac798029a403242504b394fb68
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 74c5e15e8d7735edcba145ea9b10a6bec7e7def7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161839"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370289"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Crear, editar o eliminar una vista de usuario personalizada
 
@@ -65,7 +65,7 @@ También puede filtrar por detalles de perfil de usuario adicionales usados en s
     
 - **Usuarios sin licencia** Seleccione este cuadro para buscar todos los usuarios a los que no se les ha asignado una licencia. Los resultados de esta vista también pueden incluir usuarios que tienen un buzón Exchange pero no tienen una licencia. Para realizar un seguimiento específico de esos usuarios, use el filtro Usuarios sin licencia con Exchange **buzones o archivos**. Los resultados de esta vista también pueden incluir usuarios que tienen un archivo Exchange, pero que no tienen una licencia.
     
-- **Usuarios sin licencia con Exchange buzones o archivos** Seleccione este cuadro para mostrar las cuentas de usuario que se crearon en Exchange Online y tienen un buzón Exchange, pero no se les asignó una licencia Microsoft 365 usuario. Los resultados de este filtro incluyen usuarios que tienen o a los que se les asignó un Exchange archivo. 
+- Usuarios sin licencia con **buzones** o archivos Exchange Seleccione este cuadro para mostrar cuentas de usuario que se crearon en Exchange Online y tienen un buzón de Exchange, pero no se les asignó una licencia Microsoft 365. Los resultados de este filtro incluyen usuarios que tienen o a los que se les asignó un Exchange archivo. 
 
 > [!NOTE]
 > Los **usuarios sin licencia con Exchange de buzones** de correo funciona cuando:
@@ -83,12 +83,6 @@ También puede filtrar por detalles de perfil de usuario adicionales usados en s
 
 1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">usuarios activos.</a>
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">usuarios activos.</a> 
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -109,12 +103,6 @@ También puede filtrar por detalles de perfil de usuario adicionales usados en s
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">usuarios activos.</a> 
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">usuarios activos.</a> 
@@ -130,9 +118,9 @@ También puede filtrar por detalles de perfil de usuario adicionales usados en s
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Información general sobre Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)\
+[Overview of the Centro de administración de Microsoft 365]([Overview of the Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) (video)\
 [Acerca de los roles de administrador](../add-users/about-admin-roles.md) (vídeo)\
-[Personalizar el Microsoft 365 de la organización](../setup/customize-your-organization-theme.md) (artículo)
+[Personalizar el tema Microsoft 365 para la sua organización (artículo)](../setup/customize-your-organization-theme.md)
 
 
      

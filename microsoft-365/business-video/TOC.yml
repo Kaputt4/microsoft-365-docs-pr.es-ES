@@ -25,22 +25,16 @@
           href: connect.md
         - name: Instalar las aplicaciones de Microsoft Office
           href: install-office.md
-        - name: Configurar Outlook para el correo electrónico
-          href: setup-outlook.md
         - name: Importar y redirigir correo electrónico
           href: import-email.md
-        - name: Mover los archivos a OneDrive
-          href: files-to-onedrive.md
-        - name: Mover los archivos de la empresa a SharePoint
-          href: files-to-sharepoint.md
     - name: Móvil
       items:
         - name: Trabajar desde cualquier lugar
           href: work-from-anywhere.md
         - name: Instalar las aplicaciones de Office en Android
-          href: install-apps-android.md
+          href: 'https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f'
         - name: Instalar las aplicaciones de Office en iOS
-          href: install-apps-ios.md
+          href: 'https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f'
         - name: Obtener la aplicación móvil de administración
           href: admin-mobile.md
     - name: Colaborar
@@ -48,35 +42,35 @@
         - name: Usar Outlook y Teams
           href: collab-outlook-teams.md
         - name: Introducción a Teams
-          href: get-started-teams-small-business.md
+          href: 'https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937'
         - name: Crear una dirección de correo electrónico del grupo
-          href: group-email.md
+          href: 'https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c'
         - name: Crear un calendario compartido
-          href: shared-calendar.md
+          href: 'https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88'
         - name: Crear un equipo de toda la organización
-          href: org-wide-team.md
+          href: /microsoftteams/create-an-org-wide-team
         - name: Crear un equipo con invitados
-          href: team-with-guests.md
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
         - name: Unirse a un equipo como invitado
-          href: join-team-guest.md
+          href: /microsoftteams/guest-experience
         - name: Chatear con empleados y clientes
-          href: start-and-pin-chats.md
+          href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
         - name: Información general sobre las reuniones en línea
           href: overview-online-meetings.md
         - name: Programar una reunión con invitados
-          href: schedule-guest-meeting.md
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: Unirse a una reunión con invitados
-          href: join-guest-meeting.md
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: Almacenamiento en nube
       items:
         - name: Información general del uso compartido
           href: overview-file-sharing.md
         - name: Dónde almacenar los archivos
-          href: store-files.md
+          href: 'https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e'
         - name: Compartir archivos de forma externa y segura
-          href: securely-share-files-externally.md
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
         - name: Compartir archivos de forma externa y sencilla
-          href: share-files-externally.md
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
     - name: Business Voice
       items:
         - name: Información general de Business Voice
@@ -86,7 +80,7 @@
     - name: Aplicaciones de productividad
       items:
         - name: Información general sobre Bookings
-          href: overview-bookings.md
+          href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
         - name: Realizar un seguimiento de la información de la empresa con Microsoft Lists
           href: track-info-lists.md
         - name: Planear un evento
@@ -95,8 +89,6 @@
       items:
         - name: ¿Qué es un administrador?
           href: what-is-admin.md
-        - name: Introducción al centro de administración
-          href: admin-center-overview.md
         - name: 'Ver, descargar o imprimir la factura'
           href: view-bill.md
         - name: Comprar nuevas licencias
@@ -111,8 +103,6 @@
           href: set-up-self-serve-password-reset.md
         - name: Agregar un usuario
           href: add-user.md
-        - name: Eliminar un usuario
-          href: delete-user.md
         - name: Agregar a otro administrador
           href: add-admin.md
         - name: Cambiar un nombre de usuario o una dirección de correo electrónico
@@ -123,8 +113,6 @@
           href: company-wide-signature.md
         - name: Tomar medidas basándose en los informes de uso
           href: act-on-report.md
-        - name: Agregar otro dominio
-          href: add-domain.md
         - name: Configurar una nueva dirección de correo electrónico de empresa
           href: set-up-a-new-business-email-address.md
     - name: Administrar dispositivos
@@ -140,7 +128,7 @@
         - name: Proteger las cuentas de los empleados con autenticación multifactor
           href: turn-on-mfa.md
         - name: Configurar el inicio de sesión en dos fases en el teléfono
-          href: set-up-mfa.md
+          href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
         - name: Activar la detección de malware
           href: anti-malware.md
         - name: Crear reglas de correo electrónico para protegerse contra ransomware
@@ -157,8 +145,6 @@
           href: create-sensitivity-labels.md
     - name: Soporte técnico
       items:
-        - name: Obtener ayuda o soporte técnico
-          href: get-help-support.md
         - name: Buscar documentos y entrenamiento
           href: find-help-answers.md
         - name: Configuración rápida para empleados

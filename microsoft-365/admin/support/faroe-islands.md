@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e4cb04115a312282d05de8016b6a340c30a1020d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 919d6244d6f88f6f4dca5940e80f112ef3387aea
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180158"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372305"
 ---
 # <a name="contact-support-for-faroe-islands"></a>Póngase en contacto con el soporte técnico de Islas Feroe
 
-[Buscar otro país o región](../../business-video/get-help-support.md).
+[Buscar otro país o región](../get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 +45 38 48 70 67

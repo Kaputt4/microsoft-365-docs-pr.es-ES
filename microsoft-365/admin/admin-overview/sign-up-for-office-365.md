@@ -28,12 +28,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenda lo que necesita saber antes de pasar por el proceso de registro para Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 6fc322c895797b7e5419d5c10bb5ddf76efd43d8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: c7748eb6a7c7bae68b72416cfb599c0ab5e85794
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128369"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370205"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda para administradores
 
@@ -67,15 +67,6 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
   
 ::: moniker-end
 
-::: moniker range="o365-germany"
-## <a name="choose-a-plan"></a>Elija un plan
-
-Antes de comprar, piensa en el plan en el que te registras. Esto le ayudará a evitar problemas más adelante.
-  
-¿Necesita ayuda para elegir un plan? Los consultores de ventas están disponibles para responder a sus preguntas. Solo tienes que [ir a Comparar todos los productos](https://products.office.com/compare-all-microsoft-office-products?tab=2) y elegir una de las opciones de soporte técnico de contacto que aparecen a la izquierda de la página. 
-  
-::: moniker-end
-
 ::: moniker range="o365-worldwide"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>¿Listo para suscribirse a una versión de prueba gratuita o comprar una suscripción?
 
@@ -89,17 +80,6 @@ No es necesario cancelar la prueba. Si no compra la suscripción de prueba, expi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>¿Listo para suscribirse a una versión de prueba gratuita o comprar una suscripción?
-
-Ve [a Comparar todos los productos](https://products.office.com/compare-all-microsoft-office-products?tab=2) para elegir el plan que quieres comprar y para iniciar el asistente de registro. 
-  
-Si empieza con una versión de prueba gratuita, puede [comprarla más adelante.](../../commerce/try-or-buy-microsoft-365.md) Se conservarán todos los usuarios y datos de la prueba.
-  
-No es necesario cancelar la prueba. Si no compra la suscripción de prueba, expira automáticamente al final del período de prueba y toda la información se elimina permanentemente.
-  
 ::: moniker-end
 
 ## <a name="youll-be-asked-for-the-following-information-when-you-sign-up"></a>Se le pedirá la siguiente información al registrarse

@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Los administradores pueden reactivar una suscripción cuando expire, se deshabilite o cancele, o si se canceló en medio de un término de suscripción.
 ms.date: 04/07/2021
-ms.openlocfilehash: 85365d9d78bde8297ae483c645d6df0453a34e39
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 913069e83654e77948650fc85efbdc1daed4985c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167623"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370097"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -47,12 +47,6 @@ Debe ser un administrador global o de facturación para reactivar una suscripci�
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
@@ -60,7 +54,7 @@ Debe ser un administrador global o de facturación para reactivar una suscripci�
 ::: moniker-end
 
 2. En la pestaña **Productos**, busque la suscripción que quiere reactivar. Seleccione los tres puntos (más acciones) y, a continuación, **seleccione Reactivar esta suscripción**.\
-    Si no ve **Reactivar** esta suscripción, póngase [en contacto con el soporte técnico.](../../business-video/get-help-support.md)
+    Si no ve **Reactivar** esta suscripción, póngase [en contacto con el soporte técnico.](../../admin/get-help-support.md)
 3. En el panel **Reactivar esta suscripción**, seleccione un método de pago de la lista desplegable o seleccione **Agregar método de pago**.
 4. Seleccione **Guardar**.
 

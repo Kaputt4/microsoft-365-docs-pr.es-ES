@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 27c977076774839b708edb835cc3a279c39f105f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7f08ec6c7e5dc34733aa3ea148c96f09916b0627
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667745"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370745"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -110,7 +110,7 @@ Para empezar a crear evaluaciones, siga estos pasos.
             - Determina un nombre para el grupo y escribelo en el campo debajo del botón de radio.
             - Puede copiar **datos de un grupo existente,** como detalles y documentos de implementación y pruebas, seleccionando los cuadros correspondientes.
 
-    Cuando haya terminado, seleccione **Siguiente**.
+    Cuando termine, seleccione **Siguiente**.
 
 5. **Revisar y finalizar:** La última pantalla del asistente muestra la plantilla, el nombre y el grupo elegidos para la evaluación. Puede editar cualquiera de estas opciones desde los vínculos de la pantalla, que le llevan de nuevo a los pasos relevantes del asistente. Cuando esté listo, seleccione **Crear evaluación**.
 
@@ -172,7 +172,7 @@ Cuando una actualización esté disponible para una evaluación, verá una notif
 
 ### <a name="what-causes-an-update"></a>Qué causa una actualización
 
-Una actualización de evaluación se produce cuando hay cambios de plantilla subyacentes que afectan a la puntuación. Los cambios pueden implicar ajustar la asignación de control u otras instrucciones basadas en cambios normativos o cambios en el producto. Las actualizaciones de evaluación pueden originarse desde su organización (por ejemplo, cuando se modifica una [plantilla personalizada)](compliance-manager-templates-modify.md)así como desde Microsoft.
+Una actualización de evaluación se produce cuando hay cambios de plantilla subyacentes que afectan a la puntuación. Los cambios pueden implicar ajustar la asignación de control u otras instrucciones basadas en cambios normativos o cambios en el producto. Las actualizaciones de evaluación pueden originarse en su organización (por ejemplo, cuando se modifica una [plantilla personalizada,](compliance-manager-templates-modify.md) así como desde Microsoft.
 
 Si Microsoft actualiza una plantilla del Administrador de cumplimiento que extendió, la evaluación heredará dichas actualizaciones una vez que las acepte. La evaluación conservará los atributos adicionales que aplicó a la evaluación cuando la extendió.
 

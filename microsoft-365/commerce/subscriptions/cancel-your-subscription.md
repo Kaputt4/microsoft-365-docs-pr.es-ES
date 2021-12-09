@@ -20,19 +20,19 @@ ms.custom:
 search.appverid: MET150
 description: Si tiene menos de 25 licencias de usuario, puede cancelar la suscripción de prueba o de pago de Microsoft 365 para empresas en el Centro de administración.
 ms.date: 09/16/2021
-ms.openlocfilehash: 942953f586a65659609660363593c0f6e86c8ca6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e24c2bc4067f046c86af2f72e3105bc20a69b732
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204580"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373313"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
 > [!IMPORTANT]
 > Este artículo solo se aplica a las suscripciones a Microsoft 365 para empresas. Si tiene Microsoft 365 Familia o Personal, consulte [Cancelar una suscripción de Microsoft 365](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
-*Idoneidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas en línea en el Centro de administración de Microsoft 365 en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, puede reducirlas a menos de 25 o [llamar al soporte técnico para cancelar su suscripción](../../business-video/get-help-support.md).
+*Idoneidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas en línea en el Centro de administración de Microsoft 365 en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, puede reducirlas a menos de 25 o [llamar al soporte técnico para cancelar su suscripción](../../admin/get-help-support.md).
 
 *Reembolso:* cualquier crédito prorrateado se le devolverá en el próximo ciclo de facturación.
 
@@ -52,12 +52,6 @@ Si ha agregado su propio nombre de dominio para utilizarlo con su suscripción, 
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 

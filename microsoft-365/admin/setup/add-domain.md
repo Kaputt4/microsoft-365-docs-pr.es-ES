@@ -27,31 +27,41 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Use el Asistente para la instalación para agregar el dominio Microsoft 365 en el Centro de administración de Microsoft 365 agregando un registro DNS en el host DNS.
-ms.openlocfilehash: 29d8471726649a96c2015d3d1ae492ae9f93c392
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7bb853e777ee0377ac0fb6ec6f7de453d4c4d4c7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195118"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373241"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](domains-faq.yml)** si no encuentra lo que busca. 
   
- *Para agregar, modificar o quitar dominios, **debe ser** administrador **global** de un plan empresarial [o empresarial.](https://products.office.com/business/office) Estos cambios afectan a todo el inquilino, los administradores *personalizados* o los usuarios *normales* no podrán realizar estos cambios.*  
+## <a name="before-you-begin"></a>Antes de empezar
 
- ## <a name="add-a-domain"></a>Agregar un dominio
+Para agregar, modificar o quitar dominios, **debe ser** administrador **global** de un plan empresarial [o empresarial.](https://products.office.com/business/office) Estos cambios afectan a todo el espacio empresarial; *Los administradores personalizados* *o* los usuarios normales no podrán realizar estos cambios.
+
+## <a name="watch-add-a-domain"></a>Watch: Add a domain
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
+
+Es posible que su empresa necesite varios nombres de dominio para fines diferentes. Por ejemplo, es posible que desee agregar una ortografía diferente del nombre de la compañía porque los clientes ya lo están usando y sus comunicaciones no le han llegado.
+
+1. En el Centro de administración de Microsoft 365, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configurar**</a>.
+1. En **Get your custom domain set up**, select **View**  >  **Manage**  >  **Add domain**.
+1. Escriba el nuevo nombre de dominio que desea agregar y, a continuación, seleccione **Siguiente**.
+1. Inicie sesión en el registrador de dominio y, a continuación, **seleccione Siguiente**.
+1. Elija los servicios para el nuevo dominio.
+1. Seleccione **Siguiente**  >  **autorizar**  >  **siguiente** y, a continuación, **Finalizar**. Se ha agregado el nuevo dominio.
+
+## <a name="add-a-domain"></a>Agregar un dominio
 
 Siga estos pasos para agregar, configurar o seguir configurando un dominio. 
 
 ::: moniker range="o365-worldwide"
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-::: moniker range="o365-germany"
-
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
 ::: moniker-end
 
@@ -102,7 +112,7 @@ Siga los pasos siguientes para agregar un registro personalizado para un sitio w
 
 5. Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 ## <a name="registrars-with-domain-connect"></a>Registradores con dominio Conectar
 
@@ -135,6 +145,5 @@ Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ah
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Preguntas más frecuentes sobre dominios](domains-faq.yml) (artículo)\
-[¿Qué es un dominio?](../get-help-with-domains/what-is-a-domain.md) (artículo)\
-[Comprar un nombre de dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artículo)\
+[Preguntas más frecuentes](domains-faq.yml) sobre dominios (artículo) [¿Qué es un dominio?](../get-help-with-domains/what-is-a-domain.md) (artículo) [Comprar un nombre de dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artículo)\
+[Agregar registros DNS para conectar el dominio](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (artículo) Cambiar servidores de nombres para configurar Microsoft 365 con cualquier registrador de [dominio](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (artículo)

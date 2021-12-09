@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0beee7a458d7cf1e6094ccf856399882c55addf1
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 829e6e6441403cf5a934e81a1a437f65d2de3db3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137080"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369701"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en Advanced eDiscovery
 
@@ -48,7 +48,7 @@ Para analizar los datos de un conjunto de revisión:
 
 Puede comprobar el progreso del análisis en la **pestaña Trabajos** del caso.
 
- Una vez completado el análisis, puede ver el informe de análisis, ejecutar consultas dentro del conjunto de revisión en los resultados del análisis (vea [Consulta](review-set-search.md)dentro del conjunto de revisión) y ver documentos relacionados de un documento determinado (vea [Revisión](reviewing-data-in-review-set.md)de datos en el conjunto de revisión).
+ Una vez completado el análisis, puede ver el informe de análisis, ejecutar consultas dentro del conjunto de revisión en los resultados del análisis (vea [Consulta](review-set-search.md)dentro del conjunto de revisión y ver documentos relacionados de un documento determinado (vea [Revisión](reviewing-data-in-review-set.md)de datos en el conjunto de revisión .
 
 ## <a name="using-the-for-review-filter-query"></a>Uso de la consulta de filtro Para revisión
 

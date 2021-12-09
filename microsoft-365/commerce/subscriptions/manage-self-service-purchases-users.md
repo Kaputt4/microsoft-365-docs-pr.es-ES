@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus compras de autoservicio.
 ms.date: 03/17/2021
-ms.openlocfilehash: e4d8fe771340efa1e5084e77a1870e4db20bfe67
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86b147ebd81842dee4aa15795650dee9c0f3fe5c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203356"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372905"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
@@ -41,12 +41,6 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
@@ -58,12 +52,6 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 
@@ -82,12 +70,6 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 :: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
@@ -111,12 +93,6 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
  1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
@@ -135,19 +111,13 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
 2. En la pestaña **Productos**, busque la suscripción que quiere cancelar. Seleccione los tres puntos (más acciones) y después elija **Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione los comentarios que tenga.
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 ## <a name="manage-your-payment-details"></a>Administrar los detalles de pago
 
@@ -180,4 +150,4 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 Para obtener preguntas comunes acerca de las compras de autoservicio, consulta Preguntas más frecuentes sobre compras [de autoservicio.](self-service-purchase-faq.yml)
 
-Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
+Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../admin/get-help-support.md).

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e18874eabbd2f1ddf31a9a303718eb9430f8d34e
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4efe1460374350d054bbe6d19543c75454d7b5ce
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282794"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370325"
 ---
 # <a name="update-alert"></a>Actualizar alerta
 
@@ -62,7 +62,7 @@ Delegado (cuenta profesional o educativa)|Alert.ReadWrite|'Leer y escribir alert
 > Al obtener un token con credenciales de usuario:
 >
 > - El usuario debe tener al menos el siguiente permiso de función: "Investigación de alertas" (Para obtener más información, vea [Crear y administrar roles](user-roles.md) )
-> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md))
+> - El usuario debe tener acceso al dispositivo asociado a la alerta, según la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -88,8 +88,8 @@ Para obtener el mejor rendimiento, no debe incluir valores existentes que no hay
 Propiedad|Tipo|Descripción
 :---|:---|:---
 Estado|Cadena|Especifica el estado actual de la alerta. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
-assignedTo|String|Propietario de la alerta
-Clasificación|String|Especifica la especificación de la alerta. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'.
+assignedTo|Cadena|Propietario de la alerta
+Clasificación|Cadena|Especifica la especificación de la alerta. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'.
 Determinación|Cadena|Especifica la determinación de la alerta. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 Comentario|Cadena|Comentario que se agregará a la alerta.
 

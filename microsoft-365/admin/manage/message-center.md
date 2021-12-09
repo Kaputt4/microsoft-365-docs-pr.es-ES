@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: d107231aa2ac0319f3fc871a3b2398caa9db9ee4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d17f3c472fabbc6b157bad4c2a0151d07723777
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169376"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369977"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -38,12 +38,6 @@ Para abrir el Centro de mensajes:
 ::: moniker range="o365-worldwide"
 
 - En el Centro de administración, vaya al **Centro de** mensajes > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">de mantenimiento</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-- En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya al **Centro de** mensajes de > **mantenimiento**.
 
 ::: moniker-end
 
@@ -90,16 +84,6 @@ Use los menús desplegables **Servicio**, **Etiqueta** y **Estado del mensaje** 
 Puede seleccionar cualquier encabezado de columna, salvo **Servicio** y **Etiqueta** para ordenar los mensajes en orden ascendente o descendente.
 
 :::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Vista del centro de mensajes ordenada por impacto de administrador.":::
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Utilice el menú desplegable **Vista** para seleccionar una vista filtrada de los mensajes.
-
-Puede seleccionar cualquier encabezado de columna para ordenar los mensajes en orden ascendente o descendente. Por ejemplo, en esta ilustración los mensajes se ordenan por fecha en **Acción hecha el**.
-
-![Vista del centro de mensajes ordenada por etiqueta de impacto de administrador.](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -150,24 +134,6 @@ Si la administración se distribuye en toda la organización, es posible que no 
 
 4. Seleccione **Guardar** para conservar los cambios.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Seleccione **Editar preferencias del centro de** mensajes en la parte superior del Centro de mensajes.
-
-2. Asegúrese de que la alternancia esté establecida en **On** para cada servicio que desee supervisar. Use la alternancia para cambiar la configuración a **Desactivado** para los servicios que desea filtrar fuera de la vista Centro de mensajes.
-
-3. Los correos electrónicos de resumen están activados de forma predeterminada y se envían a su dirección de correo electrónico principal. Para dejar de recibir el resumen semanal, cambie la opción **Enviar una síntesis semanal de mis** mensajes a **Desactivado**.
-
-   La notificación por correo electrónico para actualizaciones principales es un control independiente. Si desea recibir notificaciones por correo electrónico acerca de las actualizaciones principales, compruebe que **Enviarme mensajes** de correo electrónico para actualizaciones principales está **en .** Cambia la configuración a **Desactivado para** dejar de recibir correo electrónico sobre las actualizaciones principales. 
-
-   Para recibir avisos de correo electrónico sobre mensajes de privacidad de datos, compruebe que **Enviarme mensajes de correo electrónico** para mensajes de privacidad de datos está **en**. Para dejar de recibir estos avisos, cambie la configuración a **Desactivado**. (Los mensajes de privacidad de datos no se incluyen en el resumen semanal).
-
-   Puede seleccionar o borrar la dirección de correo electrónico principal, pero no puede cambiarla. Para especificar otras direcciones de correo electrónico a las que se envía el resumen de correo electrónico semanal, compruebe que Enviar una síntesis **semanal de mis** mensajes es **On**. Escriba la dirección de correo electrónico de un grupo Microsoft 365 o una lista de distribución si más de dos personas deben obtener el correo electrónico de resumen.
-
-4. Seleccione **Guardar** para conservar los cambios.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

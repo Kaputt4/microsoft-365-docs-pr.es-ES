@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Aceptar invitación para unirse a una Microsoft 365 Empresa Estándar organización
-ms.openlocfilehash: c9855a02cbc494ad5e0b3b9defbfc9d91c1ca4e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e73d46686e59bb34c1e33565f8c8784788f54431
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176048"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372449"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Aceptar una invitación de correo electrónico a Microsoft 365 Empresa Estándar suscripción (usuario)
 
@@ -68,7 +68,7 @@ Compruebe la carpeta de correo no deseado. Si no está allí, póngase en contac
 
 ### <a name="i-have-a-question-about-upgrading-my-account-who-can-i-talk-to"></a>Tengo una pregunta sobre cómo actualizar mi cuenta, ¿con quién puedo hablar?
 
-Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a actualizar su Microsoft 365 suscripción. Obtenga más información en [Obtener soporte](../../business-video/get-help-support.md)técnico .
+Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a actualizar su Microsoft 365 suscripción. Obtenga más información en [Obtener soporte](../get-help-support.md)técnico .
 
 ### <a name="what-happens-to-my-data-and-account-when-i-upgrade"></a>¿Qué sucede con mis datos y mi cuenta al actualizar?
 
@@ -95,7 +95,7 @@ No, aún puede iniciar sesión de la misma manera que antes.
 
 Cuando inicie Microsoft Outlook con su nueva cuenta de negocio, el nuevo buzón se configurará automáticamente.
 
-1. En primer lugar: [Configurar Outlook correo electrónico empresarial](../../business-video/setup-outlook.md).
+1. En primer lugar: [Configurar Outlook correo electrónico empresarial]( Configurar Outlook para Microsoft 365 correo electrónico[empresarial](../setup/setup-outlook.md).
 2. A continuación, siga: [Cree y envíe correo electrónico en Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 ### <a name="how-can-i-leave-this-business-and-stop-using-this-license"></a>¿Cómo puedo dejar esta empresa (y dejar de usar esta licencia)?

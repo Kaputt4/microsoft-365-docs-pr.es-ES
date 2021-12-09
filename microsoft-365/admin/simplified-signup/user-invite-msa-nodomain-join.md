@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Acepte una invitación por correo electrónico para unirse a una Microsoft 365 Empresa Estándar organización mediante una Outlook, Yahoo, Gmail u otra cuenta.
-ms.openlocfilehash: 2faea6a0d9089eb1a9f42d3d52bc877636ead50a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 810fa60a5f59d1e4ebede25b23a841769779cdaf
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196126"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370829"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Aceptar una invitación de correo electrónico a una Microsoft 365 Empresa Estándar de suscripción con una Outlook, Yahoo, Gmail u otra cuenta (usuario)
 
@@ -46,7 +46,7 @@ El correo electrónico tiene este aspecto para configurar la cuenta de usuario. 
 
 6. En la página Bienvenido a Microsoft 365, puedes descargar Office aplicaciones de escritorio y móviles y configurar OneDrive.
 
-### <a name="next-steps"></a>Pasos siguientes
+### <a name="next-steps"></a>Siguientes pasos
 
 Descargar y empezar a usar [Office aplicaciones para empresas](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
@@ -83,7 +83,7 @@ Primero deberá dejar la suscripción Microsoft 365 business anterior. Hable con
 
 ### <a name="i-have-a-question-about-using-this-account-who-can-i-talk-to"></a>Tengo una pregunta sobre cómo usar esta cuenta. Quién Puedo hablar?
 
-Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a actualizar su Microsoft 365 suscripción. Obtenga más información en [Obtener soporte](../../business-video/get-help-support.md)técnico .
+Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a actualizar su Microsoft 365 suscripción. Obtenga más información en [Obtener soporte](../get-help-support.md)técnico .
 
 ### <a name="the-gmail-outlook-yahoo-or-other-email-account-that-im-using-as-a-microsoft-account-already-has-some-personal-files-in-it-can-the-technical-administrator-or-business-owner-see-these"></a>Gmail, Outlook, Yahoo u otra cuenta de correo electrónico que estoy usando como una cuenta de Microsoft ya tiene algunos archivos personales en ella. ¿El administrador técnico o el propietario de la empresa pueden verlos?
 

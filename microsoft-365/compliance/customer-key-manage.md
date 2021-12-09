@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, aprenda a administrarla restaurando claves AKV y administrando permisos y creando y asignando directivas de cifrado de datos.
-ms.openlocfilehash: 2329df5a7bb7fac7a6013e1236024ba0a4a31567
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9dd333064c9fa121f8f1c99ffcd048f6b977dbf2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172460"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372485"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 
@@ -140,13 +140,13 @@ Para crear un DEP, debe conectarse de forma remota a SharePoint Online mediante 
 2. En el Shell Microsoft Office SharePoint Online administración, ejecute el cmdlet Register-SPODataEncryptionPolicy de la siguiente manera:
 
    ```powershell
-   Register-SPODataEncryptionPolicy <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
+   Register-SPODataEncryptionPolicy -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
 
    Ejemplo:
   
    ```powershell
-   Register-SPODataEncryptionPolicy  https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
+   Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
    ```
 
    Al registrar el DEP, el cifrado comienza en los datos de la geo. El cifrado puede tardar algo de tiempo. Para obtener más información sobre el uso de este parámetro, [vea Register-SPODataEncryptionPolicy](/powershell/module/sharepoint-online/register-spodataencryptionpolicy?preserve-view=true&view=sharepoint-ps).
@@ -233,7 +233,7 @@ El resultado de este cmdlet incluye:
 
 - Uri de la clave secundaria.
 
-- El estado de cifrado de la geo. Los estados posibles incluyen:
+- El estado de cifrado de la geo. Los posibles estados incluyen:
 
   - **Sin registrar:** El cifrado de clave de cliente aún no se ha aplicado.
 

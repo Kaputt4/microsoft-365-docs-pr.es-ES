@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Encuentre la información de instrucciones más reciente, sugerencias, recursos y instrucciones sobre el trabajo remoto para empresas que usan Microsoft 365.
-ms.openlocfilehash: bff6e8b54262ab4bc71f219ccfe401877269d0ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fb23bc74034bc3f8f27bc6aa06bf42311ee8bb8
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158735"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370853"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Potencie su pequeña empresa con el trabajo a distancia
 
@@ -37,7 +37,7 @@ A medida que las empresas se adaptan a la creciente necesidad de que las persona
 
 A la luz del brote de COVID-19 (Coronavirus novel), muchos propietarios de empresas se encuentran con un personal de trabajo completamente remoto. Esto es lo que puede hacer para hacer una transición al trabajo remoto seguro y productivo.
 
-Para obtener más información, vea [Introducción a Microsoft Teams en su pequeña empresa.](../../business-video/get-started-teams-small-business.md)
+Para obtener más información, vea [Introducción a Microsoft Teams en su pequeña empresa.](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)
 
 ¿Ya tienes una suscripción pero necesitas configurarla? Vea [Microsoft 365 aprendizaje para pequeñas empresas](../../business-video/index.yml).
 
@@ -49,7 +49,7 @@ Todavía puede conectarse con empleados, clientes, clientes y partners, incluso 
 
 Hospedar reuniones de audio, vídeo y web con empleados, clientes o partners a través de Microsoft Teams.
 
-Para obtener más información, vea [Host online meetings](../../business-video/start-and-pin-chats.md) y [Chat with employees and customers](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92).
+Para obtener más información, vea [Host online meetings](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92) y [Chat with employees and customers](https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92).
 
 ### <a name="store-and-share-files"></a>Almacenar y compartir archivos
 
@@ -61,7 +61,7 @@ Para obtener más información, vea esta [introducción al](../../business-video
 
 Invite a empleados y clientes a un equipo para que pueda trabajar directamente con ellos para coordinar y colaborar todo en un solo lugar.
 
-Para obtener más información, vea [Create a team y](../../business-video/team-with-guests.md) Enable guest [access](/MicrosoftTeams/guest-access).
+Para obtener más información, vea [Create a team y](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) Enable guest [access](/MicrosoftTeams/guest-access).
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>Administrar y proteger su empresa para que se ejecute de forma remota
 

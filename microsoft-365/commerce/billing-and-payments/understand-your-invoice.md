@@ -23,12 +23,12 @@ search.appverid: MET150
 description: Obtenga información acerca de cómo leer y comprender su factura o recibo de productos empresariales de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
 ms.date: 05/04/2021
-ms.openlocfilehash: f7f61baea5e965da2a6edf3d66075f2eaa12a95f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756211"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371273"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
 
@@ -149,7 +149,7 @@ El prepago de Azure solo está disponible como método de pago para productos y 
 
 Si tiene preguntas o necesita ayuda con los créditos de Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">cree una solicitud de soporte con el servicio de asistencia de Azure</a>.
 
-Si tiene preguntas o necesita ayuda con su factura en el Centro de administración de Microsoft 365, [póngase en contacto con el servicio de asistencia para productos empresariales](../../business-video/get-help-support.md).
+Si tiene preguntas o necesita ayuda con su factura en el Centro de administración de Microsoft 365, [póngase en contacto con el servicio de asistencia para productos empresariales](../../admin/get-help-support.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

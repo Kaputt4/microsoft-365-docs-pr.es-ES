@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
 ms.date: 03/26/2021
-ms.openlocfilehash: edfacf8ebd1cd6815ec715e975b8bebc273dafc6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 854a013779f9d1b3d141b1770860740f633e8130
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158470"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371921"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 
@@ -39,12 +39,6 @@ También puede controlar si los usuarios de su organización pueden realizar com
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 
@@ -64,12 +58,6 @@ También puede controlar si los usuarios de su organización pueden realizar com
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página de **Facturación** ><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
@@ -108,12 +96,6 @@ Puede asignar licencias existentes o comprar suscripciones adicionales a través
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Servicios de compra** de > **facturación.**
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Servicios de compra** de > **facturación.**
@@ -146,12 +128,6 @@ Al mover usuarios a una suscripción diferente, la suscripción antigua se cance
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
@@ -177,12 +153,6 @@ Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
@@ -202,4 +172,4 @@ Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios 
 
 Para obtener preguntas comunes acerca de las compras de autoservicio, consulta Preguntas más frecuentes sobre compras [de autoservicio.](self-service-purchase-faq.yml)
 
-Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
+Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../admin/get-help-support.md).

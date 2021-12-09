@@ -13,19 +13,20 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0ee4269c61c4c9e2a9341c3b700db9f65e003114
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 813658fa7b67a45643531febb5a7591f688a8e3a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786463"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372929"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 
 > *Se aplica a: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), Azure [Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instrucciones para: Cliente de etiquetado [unificado de Azure Information Protection para Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
->
+
+
 > *Descripción del servicio para: [Microsoft 365 cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Double Key Encryption (DKE) usa dos claves juntas para obtener acceso al contenido protegido. Microsoft almacena una clave en Microsoft Azure y mantiene la otra clave. Se mantiene el control total de una de las claves mediante el servicio de cifrado de clave doble. Puede aplicar protección mediante el cliente de etiquetado unificado de Azure Information Protection a su contenido altamente confidencial.
@@ -42,11 +43,11 @@ El cifrado de clave doble está pensado para los datos más confidenciales que e
 - Microsoft Delve
 - eDiscovery
 - Búsqueda de contenido e indización
-- Office Aplicaciones web, incluida la funcionalidad de coautoría
+- Office Web Apps, incluida la funcionalidad de coautoría
 
 Las aplicaciones o servicios externos que no estén integrados con DKE a través del SDK de MIP no podrán realizar acciones en los datos cifrados.
 
-El Microsoft Information Protection SDK 1.7+ admite el cifrado de clave doble; las aplicaciones que se integran con nuestro SDK podrán razonar estos datos con suficientes permisos e integraciones en su lugar.
+El SDK de Microsoft Information Protection 1.7+ admite el cifrado de clave doble; las aplicaciones que se integran con nuestro SDK podrán razonar estos datos con permisos e integraciones suficientes.
 
 Se recomienda que las organizaciones usen las capacidades de Protección de información de Microsoft (clasificación y etiquetado) para proteger la mayoría de sus datos confidenciales y solo usan DKE para sus datos de misión crítica. El cifrado de doble clave es relevante para los datos confidenciales en sectores altamente regulados como los servicios financieros y la atención sanitaria.
 
@@ -62,7 +63,7 @@ Si sus organizaciones tienen cualquiera de los siguientes requisitos, puede usar
 
 **Azure Information Protection**. DKE funciona con etiquetas de confidencialidad y requiere Azure Information Protection.
 
-Las etiquetas de confidencialidad DKE están disponibles para los usuarios finales a través de la cinta de confidencialidad Office aplicaciones de escritorio. Instale estos requisitos previos en cada equipo cliente donde desee proteger y consumir documentos protegidos.
+Las etiquetas de confidencialidad DKE están disponibles para los usuarios finales a través del botón de confidencialidad en el cliente de etiquetado unificado AIP en Office aplicaciones de escritorio. Instale estos requisitos previos en cada equipo cliente donde desee proteger y consumir documentos protegidos.
 
 **Microsoft Office aplicaciones para empresas** versión 2009 o posterior (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
 
@@ -124,7 +125,7 @@ Instale estos requisitos previos en el equipo donde desea instalar el servicio D
 
 - [Git](https://git-scm.com/downloads)
 
-- [GitHub Escritorio](https://desktop.github.com/)
+- [GitHub escritorio](https://desktop.github.com/)
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
@@ -148,7 +149,7 @@ Las siguientes instrucciones están destinadas a usuarios de git o usuarios Visu
 3. En Visual Studio Code, seleccione **Ver paleta** \> **de comandos** y seleccione **Git: Clonar**. Para ir a la opción de la lista, empiece a escribir para filtrar las entradas y, a continuación, `git: clone` selecciónelo en la lista desplegable. Por ejemplo:
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Code Opción GIT:Clone.](../media/dke-vscode-clone.png)
+   > ![Visual Studio Code opción GIT:Clone.](../media/dke-vscode-clone.png)
 
 4. En el cuadro de texto, pegue la dirección URL que copió de Git y seleccione **Clonar de GitHub**.
 
@@ -277,9 +278,16 @@ Para generar claves:
 
 4. Genere la clave privada.
 
-   ```console
-   openssl rsa -in key.pem -out privkeynopass.pem
-   ```
+   Si instaló OpenSSL versión 3 o posterior, ejecute el siguiente comando:
+  
+  ```console
+  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM -traditional
+  ```
+  
+>  De lo contrario, ejecute el siguiente comando:
+>  ```console
+>  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM
+>  ```
 
 5. Generar la clave pública.
 
@@ -538,9 +546,10 @@ El servicio DKE ya está registrado. Continúe creando [etiquetas con DKE](#crea
 
 ## <a name="create-sensitivity-labels-using-dke"></a>Crear etiquetas de confidencialidad con DKE
 
-En el Centro de cumplimiento de Microsoft 365, crea una nueva etiqueta de confidencialidad y aplica el cifrado como lo harías en caso contrario. Seleccione **Usar cifrado de clave doble** e introduzca la dirección URL del extremo de la clave.
+En el Centro de cumplimiento de Microsoft 365, crea una nueva etiqueta de confidencialidad y aplica el cifrado como lo harías en caso contrario. Seleccione **Usar cifrado de clave doble** e introduzca la dirección URL del extremo de la clave. Debe incluir el nombre de clave que ha proporcionado en la sección "TestKeys" del archivo appsettings.json en la dirección URL. 
 
-Por ejemplo:
+Por ejemplo: https://testingdke1.azurewebsites.net/ **KEYNAME**
+
 
 > [!div class="mx-imgBorder"]
 > ![Seleccione Usar cifrado de clave doble en el Centro de cumplimiento de Microsoft 365.](../media/dke-use-dke.png)
@@ -567,3 +576,15 @@ Si eres un Office Insider, DKE está habilitado para ti. De lo contrario, habili
 Si lo desea, una vez que haya terminado de configurar DKE, puede migrar el contenido que ha protegido con etiquetas HYOK a etiquetas DKE. Para migrar, usará el escáner AIP. Para empezar a usar el escáner, vea ¿Qué es el escáner de etiquetado unificado de [Azure Information Protection?](/azure/information-protection/deploy-aip-scanner).
 
 Si no migra contenido, el contenido protegido por HYOK no se verá afectado.
+
+## <a name="other-deployment-options"></a>Otras opciones de implementación
+
+Nos damos cuenta de que para algunos clientes de sectores altamente regulados, esta implementación de referencia estándar con claves basadas en software puede que no sea suficiente para satisfacer sus obligaciones y necesidades de cumplimiento mejoradas.
+Nos hemos asociado con varios proveedores de módulos de seguridad de hardware (HSM) de terceros para admitir opciones de administración de claves mejoradas para el servicio DKE, como:
+
+ - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.) 
+
+- [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption) 
+
+Para obtener más información y orientación sobre sus soluciones de HSM de DKE en el mercado, consulte directamente a estos proveedores. 
+

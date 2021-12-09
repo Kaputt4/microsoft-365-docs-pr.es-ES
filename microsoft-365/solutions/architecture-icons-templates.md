@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 y plantillas de arquitectura
-description: Iconos para su uso en la creación de diagramas de arquitectura para Microsoft 365.
+title: Microsoft 365 plantillas e iconos de diagrama de arquitectura
+description: Cree Microsoft 365 de arquitectura en Visio con estos iconos, galerías de símbolos y plantillas.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -10,14 +10,14 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b4fedde7404f8ef274cab90fa87fdd21c093d8eb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 8fd6815b94e44094ec01d405c22f33232f101503
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556273"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372461"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 y plantillas de arquitectura
+# <a name="microsoft-365-architecture-templates-and-icons"></a>Microsoft 365 plantillas e iconos de arquitectura
 
 Es importante ayudar a nuestros socios y clientes a diseñar y diseñar nuevas soluciones. Diagramas de arquitectura como los incluidos en nuestra guía pueden ayudar a comunicar las decisiones de diseño y las relaciones entre los componentes de un entorno. Usamos un conjunto de símbolos e iconos junto con plantillas de Visio para crear los diagramas de arquitectura que ofrecemos y proporcionamos estas herramientas aquí para ayudarle a crear un diagrama de arquitectura personalizado para su próxima solución.
 

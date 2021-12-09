@@ -1,6 +1,6 @@
 ---
 title: 'Modelos de arquitectura en la nube de Microsoft: planeación de recursos empresariales'
-description: Estos pósteres de arquitectura en la nube de Microsoft le ofrecen información sobre los servicios en la nube de Microsoft, como Azure y Office 365.
+description: Obtenga información sobre los servicios en la nube de Microsoft, como Azure y Office 365 con estos diagramas e ilustraciones de arquitectura.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 9bd77ed5667a704ee7fd7fa883d7823e7da1892f
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: b036c6ca93310e6f88dee78171749c09056de84b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283551"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373697"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos de TI
 
@@ -74,9 +74,13 @@ Lo que los arquitectos de TI necesitan saber sobre la nube híbrida para las pla
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Métodos de arquitectura para migraciones de inquilino a inquilino de la nube de Microsoft 
 En esta serie de temas se muestran varios métodos de arquitectura para las fusiones, las adquisiciones, las ventas y otros casos que podrían llevarle a migrar a un nuevo inquilino en la nube. Estos temas proporcionan instrucciones de punto de partida para la planeación de recursos empresariales. 
 
-| Elemento | Descripción |
+| Item | Descripción |
 |:-----|:-----|
 |[![Imagen digital de las migraciones de inquilino a inquilino en la nube de Microsoft.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> Actualizado en febrero de 2021    |Este modelo contiene lo siguiente: <ul><li>Una asignación de escenarios empresariales a métodos arquitectónicos</li><li>Consideraciones sobre diseño</li><li>Ejemplo de flujo de migración de eventos únicos</li><li>Ejemplo de flujo de migración por fases</li><li>Ejemplo de movimiento de inquilino o flujo dividido</li></ul>|
 
 
+## <a name="related-resources"></a>Recursos relacionados
 
+Obtenga recursos para crear sus propios diagramas de diseño de arquitectura: [Microsoft 365 de arquitectura y plantillas](architecture-icons-templates.md).
+
+Vaya al [Centro de arquitectura de Azure](/azure/architecture/).

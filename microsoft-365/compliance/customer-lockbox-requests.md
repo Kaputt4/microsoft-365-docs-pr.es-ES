@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a sus datos cuando se encuentra con un problema.
-ms.openlocfilehash: 127d9acf602bd6449abd6b324d7b844814d53419
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 304e3266319da9c8102deff2465dc146caf4fcaa
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179276"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373301"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de seguridad del cliente en Office 365
 
@@ -79,9 +79,9 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 2. Elija **Configuración**  >  **org Configuración** Security &  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Privacy**</a>.
 
-3. Seleccione **Edición del cuadro de** bloqueo del cliente y, a continuación, mueva el botón de alternancia a  >   **Activar** o Desactivar para activar o desactivar  la característica.
+3. Seleccione **Seguridad & privacidad** y, a continuación, seleccione Caja de seguridad del **cliente** en la columna izquierda. Active la **casilla Requerir aprobación para todas** las solicitudes de acceso a datos y guarde los cambios para activar la característica.
 
-    ![Requerir la aprobación de la caja de seguridad del cliente.](../media/CustomerLockbox4.png)
+    ![Require approval for Customer Lockbox](../media/CustomerLockbox4-new.png)
 
 ## <a name="approve-or-deny-a-customer-lockbox-request"></a>Aprobar o denegar una solicitud de Caja de seguridad del cliente
 
@@ -158,7 +158,7 @@ Cuando una persona de la organización aprueba o deniega una solicitud de caja d
 | Dirección IP | La dirección IP del equipo en el que el aprobador ha aprobado o denegado una solicitud. |
 | Usuario       | La cuenta de servicio BOXServiceAccount@ \[ customerforest \] .prod.outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; esta es la actividad de auditoría que se registra cuando usted aprueba o deniega una solicitud de Caja de seguridad del cliente.                                |
-| Elemento       | Guid de la solicitud de caja de seguridad del cliente                             |
+| Item       | Guid de la solicitud de caja de seguridad del cliente                             |
 
 La siguiente captura de pantalla muestra un ejemplo de un registro de registro de auditoría que corresponde a una solicitud de caja de seguridad de cliente aprobada. Si se denegó una solicitud de caja de seguridad del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
 
@@ -260,6 +260,10 @@ Las solicitudes de caja de seguridad del cliente tienen una duración predetermi
 #### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>¿Qué hace Microsoft cuando un cliente rechaza una solicitud de caja de seguridad del cliente?
 
 Si un cliente rechaza una solicitud de caja de seguridad del cliente, no se produce acceso al contenido del cliente. Si un usuario de la organización sigue experimentando un problema de servicio que requiere que Microsoft tenga acceso al contenido del cliente para resolver el problema, el problema de servicio puede persistir y Microsoft informará al usuario sobre esto.
+
+#### <a name="how-do-i-set-up-alerts-whenever-a-request-has-been-approved"></a>¿Cómo puedo configurar alertas cada vez que se ha aprobado una solicitud?
+
+No hay ninguna opción integrada para alertar a los administradores. Sin embargo, los administradores pueden configurar alertas mediante [microsoft cloud App security](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>¿Protege la caja de seguridad del cliente contra las solicitudes de datos de los organismos de aplicación de la ley u otros terceros?
 

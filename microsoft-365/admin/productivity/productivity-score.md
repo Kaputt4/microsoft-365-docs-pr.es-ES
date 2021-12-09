@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo la Puntuación de productividad de Microsoft refleja los resultados en cuanto a las experiencias de los usuarios y la tecnología. Estos resultados se comparan con los de otras organizaciones de tamaño similar.
-ms.openlocfilehash: a8d5ae03b624fd451e86d7b993479359fce2603c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fabfc66a6624cac16675d1276758b4ef16d35392
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197838"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372869"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -163,4 +163,4 @@ Comparta su opinión sobre la Puntuación de productividad y sus ideas sobre có
 
 [Supervisar la actividad de Microsoft 365 mediante informes](../../admin/activity-reports/activity-reports.md) (artículo)\
 [Habilitar análisis de uso de Microsoft 365](../../admin/usage-analytics/enable-usage-analytics.md) (artículo)\
-[Información general del Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)
+[Información general sobre el Centro de administración de Microsoft 365]([Información general sobre el Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) (vídeo)

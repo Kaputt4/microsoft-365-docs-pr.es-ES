@@ -25,28 +25,18 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: El sistema de nombres de dominio asigna los nombres de host del equipo a las direcciones IP, comprender los conceptos básicos de DNS y registrador de dominios puede ayudarle a administrar los dominios.
-ms.openlocfilehash: 3195e6ba1e8483a5444eb0f8046add1e3e7725f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9bbd099a7c44aecdd37772cd97333a905585e33f
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164781"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370025"
 ---
 # <a name="dns-basics"></a>Conceptos básicos sobre DNS
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 ::: moniker range="o365-worldwide"
-
-Los nombres de dominio, como contoso.com, se administran con un sistema mundial de bases de datos y registradores de dominios. El Sistema de nombres de dominio (DNS) proporciona una asignación entre nombres de hosts de equipos legibles y las direcciones IP que usan los dispositivos de red. Comprender los conceptos básicos de DNS y de registrador de dominios le ayudará a administrar los dominios.
-
-## <a name="watch-domains--dns-an-overview"></a>Ver: Dominios y DNS: Información general
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
 
 Los nombres de dominio, como contoso.com, se administran con un sistema mundial de bases de datos y registradores de dominios. El Sistema de nombres de dominio (DNS) proporciona una asignación entre nombres de hosts de equipos legibles y las direcciones IP que usan los dispositivos de red. Comprender los conceptos básicos de DNS y de registrador de dominios le ayudará a administrar los dominios.
 
@@ -119,12 +109,6 @@ Supongamos que el registro NS para contoso.com pone "godaddy.com". Ahora Interne
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-Supongamos que el registro NS para contoso.com pone "godaddy.com". Ahora Internet sabe que GoDaddy.com es donde debe buscar el archivo de zona que contiene todos los demás registros DNS para contoso.com. Estos registros DNS incluyen el registro MX que pone dónde deben enviarse los correos electrónicos de contoso.com y otros registros. Si el registro MX tiene un valor que indica (en términos técnicos) "enviar correo electrónico a Microsoft 365", aquí es donde se enviarán todos los mensajes de correo electrónico enviado a una dirección de correo electrónico contoso.com (como joe@contoso.com). Entonces, siempre que haya un buzón llamado "joe" en esa ubicación, el correo electrónico se entregará.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 Supongamos que el registro NS para contoso.com pone "hichina.com". Ahora Internet sabe que hichina.com es donde debe buscar el archivo de zona que contiene todos los demás registros DNS para contoso.com. Estos registros DNS incluyen el registro MX que pone dónde deben enviarse los correos electrónicos de contoso.com y otros registros. Si el registro MX tiene un valor que indica (en términos técnicos) "enviar correo electrónico a Microsoft 365", aquí es donde se enviarán todos los mensajes de correo electrónico enviado a una dirección de correo electrónico contoso.com (como joe@contoso.com). Entonces, siempre que haya un buzón llamado "joe" en esa ubicación, el correo electrónico se entregará.
@@ -134,12 +118,6 @@ Supongamos que el registro NS para contoso.com pone "hichina.com". Ahora Interne
 Los valores reales que debe introducir para que todo esto funcione con Microsoft 365 se muestran en los pasos de configuración del dominio. Si está realizando la configuración de forma manual, deberá copiar y pegar los valores en los registros DNS correctos (registro MX, registros CNAME, etc.) en el host de DNS, que podría ser el registrador de dominios, aunque no tiene por qué serlo.
   
 ::: moniker range="o365-worldwide"
-
-¿Por qué es posible que el archivo de zona de su dominio esté en otro lugar aparte del registrador de dominios? Bueno, es posible que registre su nombre de dominio en un registrador de dominios como GoDaddy, pero que los registros DNS se administren en otra ubicación, en una empresa de hospedaje DNS independiente o una compañía de hospedaje de sitios web. Los registros NS de su dominio almacenan esta información para que todos los servidores DNS sepan dónde buscar.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
 
 ¿Por qué es posible que el archivo de zona de su dominio esté en otro lugar aparte del registrador de dominios? Bueno, es posible que registre su nombre de dominio en un registrador de dominios como GoDaddy, pero que los registros DNS se administren en otra ubicación, en una empresa de hospedaje DNS independiente o una compañía de hospedaje de sitios web. Los registros NS de su dominio almacenan esta información para que todos los servidores DNS sepan dónde buscar.
 
@@ -165,25 +143,6 @@ Puede usar su nombre de dominio en Microsoft 365 con su correo electrónico, sit
 - **Correo electrónico:** su nombre de dominio le permite personalizar el correo electrónico, por lo que puede usar una dirección más corta y fácil de recordar que no sea [la dirección de correo electrónico onmicrosoft.com inicial](../setup/domains-faq.yml) que viene con su cuenta. Así, en vez de joe@contoso.onmicrosoft.com, la dirección de correo electrónico (que también es el cuenta profesional que usa para iniciar sesión en Microsoft 365) podría ser joe@contoso.com. 
     
 - **Sitio web**: si dispone de una suscripción a Microsoft 365 que incluye un sitio web público de SharePoint Online (ya no está disponible para la compra), la dirección inicial de dicho sitio web es de este tipo: contoso-public.sharepoint.com. Si configura un sitio web para su empresa, puede usar un nombre de dominio personalizado para cambiar el nombre de la dirección del sitio web por algo como, por ejemplo, www.contoso.com. 
-    
-- **Mensajería instantánea:** la dirección de Skype Empresarial Online también puede personalizarse para usar el nombre del dominio, de modo que las personas de la organización puedan conectarse entre ellas en Skype Empresarial Online usando una dirección más corta y fácil de recordar (por ejemplo, joe@contoso.com). 
-    
-::: moniker-end
-
-::: moniker range="o365-germany"
-## <a name="why-add-a-domain-in-microsoft-365"></a>¿Por qué agregar un dominio a Microsoft 365?
-
-
-Agregar a Microsoft 365 un dominio personalizado, como fourthcoffee.com, le permite usar para el servicio direcciones de correo electrónico e Id. de usuario más breves y familiares. Al registrarse en una cuenta de Microsoft 365, [recibe un dominio](../setup/domains-faq.yml), pero su dirección incluye "onmicrosoft.com". Mucha gente prefiere agregar un dominio propio para su organización y empresa si se va a usar el correo electrónico de Microsoft 365. 
-  
-> [!NOTE]
-> Si solo quiere descargar y usar aplicaciones de Microsoft 365, como Outlook o Word, no deberá agregar un dominio: [Instalar Office en su PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
-  
-Puede usar su nombre de dominio en Microsoft 365 con su correo electrónico, sitio web público y dirección de mensajería instantánea.
-  
-- **Correo electrónico:** su nombre de dominio le permite personalizar el correo electrónico, por lo que puede usar una dirección más corta y fácil de recordar que no sea [la dirección de correo electrónico onmicrosoft.com inicial](../setup/domains-faq.yml) que viene con su cuenta. Así, en vez de joe@contoso.onmicrosoft.com, la dirección de correo electrónico (que también es el cuenta profesional que usa para iniciar sesión en Microsoft 365) podría ser joe@contoso.com. 
-    
-- **Sitio web**: si dispone de una suscripción que incluye un sitio web público de SharePoint Online (ya no está disponible para la compra), la dirección inicial de dicho sitio web es de este tipo: contoso-public.sharepoint.com. Si configura un sitio web para su empresa, puede usar un nombre de dominio personalizado para cambiar el nombre de la dirección del sitio web por algo como, por ejemplo, www.contoso.com. 
     
 - **Mensajería instantánea:** la dirección de Skype Empresarial Online también puede personalizarse para usar el nombre del dominio, de modo que las personas de la organización puedan conectarse entre ellas en Skype Empresarial Online usando una dirección más corta y fácil de recordar (por ejemplo, joe@contoso.com). 
     

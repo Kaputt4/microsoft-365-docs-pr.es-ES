@@ -22,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: Si ha comprado Microsoft 365 Empresa Estándar desde una tienda de comercio al por menor, obtenga información sobre cómo canjear la clave de producto y activar la suscripción.
 ms.date: 11/13/2020
-ms.openlocfilehash: d872a61de9f2d704f6cee92234d3358ca0d1c26f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 149fd15529937d3d8301b90ccfeefcd3e76664e0
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195874"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370109"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba la clave de producto para Microsoft 365 Empresa Estándar
 
@@ -63,7 +63,7 @@ Si no es cliente nuevo en Microsoft 365 para empresas, obtenga información sob
 
 Consulte esta lista de errores y soluciones comunes: [¿Problemas con su clave de producto Microsoft 365 para empresas?](product-key-errors-and-solutions.md)
   
-O bien, [llame al soporte técnico de Microsoft](../business-video/get-help-support.md).
+O bien, [llame al soporte técnico de Microsoft](../admin/get-help-support.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

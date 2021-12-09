@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b45ce1de5b2149251b691d81c29aea717d5dffc9
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: b5c016d3368231b146be61da086e77ece1fa3dd9
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282782"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369881"
 ---
 # <a name="get-machine-logon-users-api"></a>Obtener API de usuarios de inicio de sesión de máquina
 
@@ -57,7 +57,7 @@ Delegado (cuenta profesional o educativa) | User.Read.All | 'Leer perfiles de us
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos". Para obtener más información, vea [Create and manage roles](user-roles.md)).
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos". Para obtener más información, vea [Create and manage roles](user-roles.md).
 > - La respuesta incluirá usuarios solo si el dispositivo es visible para el usuario, en función de la configuración del grupo de dispositivos. Para obtener más información, consulta [Crear y administrar grupos de dispositivos.](machine-groups.md)
 
 ## <a name="http-request"></a>Solicitud HTTP
@@ -70,7 +70,7 @@ GET /api/machines/{id}/logonusers
 
 Nombre|Tipo|Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82e9a72752b61856d74c5c82b1557e82b6f0e416
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a2a22d579adb10f82f24a1246d89d6ef0e3e6a74
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166787"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370337"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -102,11 +102,11 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (o posterior)](/windows/whats-new/ltsc/)
-- Windows 10 Education
-- Windows 10 Pro
+- Windows 10 Education
+- Windows 10 Pro
 - Windows 10 Pro Education
 - Windows servidor
-  - Windows Server 2008 R2 SP1
+  - Windows Server 2008 R2 SP1 ([Requiere ESU para ser compatible](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows server, versión 1803 o posterior

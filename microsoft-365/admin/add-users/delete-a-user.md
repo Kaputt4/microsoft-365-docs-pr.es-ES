@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario y qué hacer con el correo electrónico del usuario y OneDrive contenido y si desea conservar la licencia del producto.
-ms.openlocfilehash: 852ebe9a99718be9bf025fbc8347bc2ca7854cc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 462e9bcec4dac7e9d708618777ea58fb5d182473
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161827"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370613"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -47,7 +47,7 @@ Si es un administrador global, al eliminar un usuario también puede dar a otro 
 
 Antes de empezar, piense en lo que desea hacer con el correo electrónico del usuario y el contenido OneDrive, y si desea mantener la licencia o dejar de pagar por ella.
   
-|Elemento | Descripción |
+|Item | Descripción |
 |:-----|:-----|
 |Licencias de productos  <br/> |Puede quitar la licencia del usuario y quitarla de sus suscripciones para dejar de pagar por esa licencia. Si selecciona esta opción, la licencia se quitará automáticamente de las suscripciones.  <br/><br/> **No puede quitar la licencia si** la compró a través de un partner o una licencia por volumen. Si estás pagando un plan anual o si estás en medio de un ciclo de facturación, no podrás quitar la licencia de la suscripción hasta que se complete el compromiso.  <br/> |
 |OneDrive contenido  <br/> |Si el usuario guardó sus archivos en OneDrive, puede proporcionar a otro usuario acceso a estos archivos.  <br/><br/> Tendrás que mover los archivos que quieras conservar dentro del período de retención que se establece para los OneDrive archivos. **De forma predeterminada, el período de retención es de 30 días.** Si no mueve los archivos dentro del período de retención después de eliminar el usuario, el OneDrive del usuario eliminado se mueve a la papelera de reciclaje de la colección de sitios, donde se conserva durante 93 días. Durante este tiempo, los usuarios ya no podrán acceder a ningún contenido compartido en el OneDrive. Para restaurar el OneDrive, debe usar PowerShell. Para obtener información, [consulta Restaurar un archivo OneDrive](/onedrive/restore-deleted-onedrive).<br/><br/> Para aumentar el número de días que conserva los archivos OneDrive para cuentas eliminadas, vea [Set the OneDrive retention for deleted users](/onedrive/set-retention).  <br/><br/> **¡Importante!** Si el usuario eliminado usó un equipo personal para descargar archivos de SharePoint y OneDrive, no hay forma de borrar los archivos que almacenaban en su equipo. Seguirán teniendo acceso a los archivos que se sincronizaron desde OneDrive.           |
@@ -61,12 +61,6 @@ Dado que la experiencia guiada recorre los pasos para eliminar un usuario, aquí
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
@@ -89,12 +83,6 @@ Dado que la experiencia guiada recorre los pasos para eliminar un usuario, aquí
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
@@ -114,12 +102,6 @@ Reducir el número de licencias es un paso independiente que solo puede realizar
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
@@ -131,7 +113,7 @@ Reducir el número de licencias es un paso independiente que solo puede realizar
 
 4. En el **panel Quitar licencias,** en Nueva cantidad **,** en el cuadro **Licencias** totales, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 100 licencias y desea quitar cinco de ellas, escriba 95.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 Más adelante, cuando sigas los pasos para agregar otra persona a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
 
@@ -157,4 +139,4 @@ Estos son los problemas más comunes que los usuarios encuentran al eliminar un 
 [Eliminar permanentemente un buzón](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artículo)\
 [Quitar un antiguo empleado de Office 365](remove-former-employee.md) (artículo)\
 [Agregar un nuevo empleado a Office 365](add-new-employee.md) (artículo)\
-[Eliminar una cuenta de usuario:](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))use estas instrucciones si su empresa usa **Active Directory** que se sincroniza con Azure AD. No podrá hacerlo a través de Office 365. (artículo)
+[Eliminar una cuenta de usuario:](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))use estas instrucciones si su empresa usa **Active Directory** que está sincronizando con Azure AD. No podrá hacerlo a través de Office 365. (artículo)

@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Realice los pasos necesarios para empezar a migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 70ccdf6fe80a802bafec6617c19488af88040478
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a89924fbd30631c42c9a39be7384e642c2755746
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779186"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370661"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrar a Microsoft Defender para Office 365- Fase 2: Configuración
 
@@ -121,7 +121,7 @@ Para obtener más información, vea [Use mail flow rules to set the spam confide
 
 Lo primero que debe hacer es configurar el filtrado mejorado para conectores [(también](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) conocido como listado de *omitir)* en el conector que se usa para el flujo de correo desde el servicio de protección existente a Microsoft 365. Puede usar el informe [Mensajes entrantes para](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) ayudar a identificar el conector.
 
-Defender requiere el filtrado mejorado para conectores para Office 365 para ver de dónde provenían realmente los mensajes de Internet. El filtrado mejorado para conectores mejora en gran medida la precisión de la pila de [](threat-explorer.md) filtrado de Microsoft (especialmente la inteligencia de suplantación), [](anti-spoofing-protection.md)así como las capacidades posteriores a la infracción en el Explorador de amenazas y la investigación automatizada & response [(AIR).](automated-investigation-response-office.md)
+Defender requiere el filtrado mejorado para conectores para Office 365 para ver de dónde provenían realmente los mensajes de Internet. El filtrado mejorado para conectores mejora en gran medida la precisión de la pila de [](threat-explorer.md) filtrado de Microsoft (especialmente la inteligencia de suplantación, [](anti-spoofing-protection.md)así como las capacidades posteriores a la infracción en el Explorador de amenazas y la investigación automatizada & Response [(AIR).](automated-investigation-response-office.md)
 
 Para habilitar correctamente el filtrado mejorado para conectores, debe agregar las direcciones **IP** \* \* **\* \*** públicas de todos los servicios de terceros o hosts del sistema de correo electrónico local que enrute el correo entrante a Microsoft 365.
 
@@ -139,7 +139,7 @@ Al crear directivas de producción, incluso si no se aplican a todos [](threat-e
 
 ### <a name="create-pilot-safe-attachments-policies"></a>Crear directivas piloto Caja fuerte datos adjuntos
 
-[Caja fuerte datos adjuntos](safe-attachments.md) es la característica defender para Office 365 más fácil de habilitar y probar antes de cambiar el registro MX. Caja fuerte Los datos adjuntos tienen las siguientes ventajas:
+[Caja fuerte datos adjuntos](safe-attachments.md) es la característica defender para Office 365 más fácil de habilitar y probar antes de cambiar el registro MX. Caja fuerte datos adjuntos tiene las siguientes ventajas:
 
 - Configuración mínima.
 - Probabilidad extremadamente baja de falsos positivos.
@@ -157,7 +157,7 @@ Para obtener la configuración recomendada, vea [Recommended Caja fuerte Attachm
 > [!NOTE]
 > No se admite el ajuste o reescritura de vínculos ya ajustados o reescritos. Si el servicio de protección actual ya encapsula o reescribe vínculos en mensajes de correo electrónico, debe desactivar esta característica para los usuarios piloto. Una forma de asegurarse de que esto no sucede es excluir el dominio de dirección URL del otro servicio en la directiva Caja fuerte vínculos.
 >
-> Caja fuerte La protección de vínculos Office aplicaciones compatibles es una configuración global que se aplica a todos los usuarios con licencia. Puede activarlo o desactivarlo globalmente, no para usuarios específicos. Para obtener más información, [vea Configure Caja fuerte Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
+> Caja fuerte protección de vínculos para aplicaciones Office compatibles es una configuración global que se aplica a todos los usuarios con licencia. Puede activarlo o desactivarlo globalmente, no para usuarios específicos. Para obtener más información, [vea Configure Caja fuerte Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
 Cree una directiva Caja fuerte links para los usuarios piloto. Las posibilidades de falsos positivos en Caja fuerte Links también son bastante bajas, pero deberías considerar la posibilidad de probar la característica en un número menor de usuarios piloto que Caja fuerte datos adjuntos. Dado que la característica afecta a la experiencia del usuario, debe considerar un plan para educar a los usuarios.
 

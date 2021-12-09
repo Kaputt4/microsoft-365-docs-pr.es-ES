@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga los pasos de esta solución para quitar un antiguo empleado Microsoft 365 proteger los datos de su organización.
-ms.openlocfilehash: 63a53ba8ae982fd49b033da62c27d4da3d72737d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15ef426892bcabe0af71c52f1664255cb82b6637
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161611"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370253"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Quitar un antiguo empleado y datos seguros
 
@@ -50,6 +50,23 @@ Para completar los pasos de esta serie, use estas Microsoft 365 y característic
 |OneDrive y SharePoint |Dar acceso a otros usuarios |
 |Outlook|Importar archivos pst, agregar buzón |
 |Active Directory|Quitar usuarios en entornos híbridos |
+
+## <a name="watch-delete-a-user"></a>Watch: Delete a user
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
+
+Cuando un empleado deja la empresa, deberá quitarlos de Microsoft 365 para empresas. Antes de hacerlo, debe impedir que tengan acceso a los archivos de la empresa, conservar los documentos que crearon y realizar otras tareas de administrador asociadas con la eliminación de un usuario.
+
+1. En el Centro de administración, seleccione **Usuarios** y elija **Usuarios activos.**
+1. Seleccione el usuario que desea quitar y, a continuación, **seleccione Eliminar usuario**.
+1. Active la casilla para quitar su licencia y active la casilla para quitar sus alias de correo electrónico.
+1. Active la casilla para dar a otro usuario acceso al correo electrónico del antiguo empleado y elija Seleccionar un usuario **y establecer opciones de correo electrónico.**
+1. Para quitar los alias de correo electrónico asociados, seleccione **X** junto a sus alias.
+1. Revise la información del buzón compartido y seleccione **Finalizar**.
+1. Confirme que las opciones se han establecido correctamente y elija **Asignar y convertir**.
+1. Revise los resultados y seleccione **Cerrar**.
+
+Después de quitar un usuario, tiene hasta 30 días para restaurar su cuenta.
 
 ## <a name="solution-remove-a-former-employee"></a>Solución: quitar un antiguo empleado
 

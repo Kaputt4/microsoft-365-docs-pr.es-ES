@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de análisis empresarial.
-ms.openlocfilehash: 4b9a8df06cbb486afa878054c24d820bcb2af2e1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f89f03470561cd9c8dcddf4e0bbde60d4d9d4fa2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190118"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370529"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 
@@ -84,12 +84,6 @@ Si un inquilino ha sido creado por Microsoft, puede reclamar y administrar dicho
 ::: moniker range="o365-worldwide"
 
 3. Vaya a <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-3. Vete a <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
@@ -171,12 +165,6 @@ Si un usuario se ha registrado en Power BI, pero ya no desea que tengan acceso a
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 

@@ -20,18 +20,18 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo activar, renovar o agregar licencias a una suscripción Microsoft 365 para empresas.
 ms.date: 10/21/2020
-ms.openlocfilehash: 7e93638bfc8a5f88ff3575a2f0bccc2ab75171fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f5192454ad202fb5ca79c018fb7e90271d06e32c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177632"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370397"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Escriba la clave de producto comprada en Microsoft Open
 
 Si ha comprado Microsoft 365 para empresas de un Programa [de licencias abiertas](https://go.microsoft.com/fwlink/p/?LinkID=613298)de Microsoft, este artículo es para usted. Los clientes de licencias por volumen que compraron una clave de producto pueden seguir este tema para activar, renovar o agregar licencias a una suscripción.
   
- **¿Necesita ayuda inmediatamente?** [Llamar al soporte técnico de Microsoft](..//business-video/get-help-support.md) . 
+ **¿Necesita ayuda inmediatamente?** [Llamar al soporte técnico de Microsoft](../admin/get-help-support.md). 
   
  **¿Necesita algo más?**
  
@@ -65,4 +65,4 @@ Los partners deben consultar [Partners: usar una clave de producto para configur
   
 Los clientes de licencias por volumen pueden obtener más información visitando [Recursos y aprendizaje del Centro de servicios de licencias por volumen de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-O bien, si desea hablar con una persona, llame al [soporte técnico de Microsoft](../business-video/get-help-support.md).
+O bien, si desea hablar con una persona, llame al [soporte técnico de Microsoft](../admin/get-help-support.md).

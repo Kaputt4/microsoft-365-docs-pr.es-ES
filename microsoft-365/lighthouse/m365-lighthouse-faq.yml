@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 834bab4a146b72fc4e4b6598ee54758ad5a55095
-  ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+  ms.openlocfilehash: 948b4584f2f10cdfd3f709cfe007d1367ba110a9
+  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/20/2021
-  ms.locfileid: "61127937"
+  ms.lasthandoff: 12/09/2021
+  ms.locfileid: "61373733"
 title: Microsoft 365 Lighthouse preguntas más frecuentes (preguntas frecuentes)
 summary: >
   > [!NOTE]
@@ -63,7 +63,7 @@ sections:
       Los datos del inquilino del cliente pueden tardar hasta 48 horas en cargarse en Lighthouse. Si han pasado más de 48 horas desde que completó la incorporación, póngase en contacto con nuestro equipo de soporte técnico para obtener ayuda. Deberás proporcionarles información cuando completes la incorporación y proporciones capturas de pantalla y registros relevantes. Para obtener más información, vea [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: ¿Por qué veo datos para algunos inquilinos de clientes, pero no para otros?
     answer: >
-      Para que los datos del inquilino del cliente se muestren en Lighthouse, los partners deben establecer privilegios de administrador delegados (DAP) con los clientes a través del Centro de partners. Para obtener más información, vea [Solicitar una relación de revendedor con un cliente en el Centro de partners.](/partner-center/request-a-relationship-with-a-customer) Los inquilinos también deben tener al menos Microsoft 365 Empresa Premium o Microsoft 365 E3 suscripción y menos de 500 usuarios con licencia en su inquilino. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+      Para que los datos del inquilino del cliente se muestren en Lighthouse, los partners deben establecer privilegios de administrador delegados (DAP) con los clientes a través del Centro de partners. Para obtener más información, vea [Solicitar una relación de revendedor con un cliente en el Centro de partners.](/partner-center/request-a-relationship-with-a-customer) Los inquilinos también deben tener al menos Microsoft 365 Empresa Premium o Microsoft 365 E3 suscripción y menos de 500 usuarios con licencia en su inquilino. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and Microsoft 365 Lighthouse [Tenants page overview](m365-lighthouse-tenants-page-overview.md).
   - question: ¿Qué sucede si no deseo ver ciertos inquilinos en Microsoft 365 Lighthouse?
     answer: >
       Si no desea ver determinados inquilinos y sus datos en Lighthouse, puede desactivar esos inquilinos. Para desactivar un inquilino, siga estos pasos:
@@ -91,4 +91,12 @@ sections:
     answer: >
       En Faro, seleccione **el ?** en la parte superior del portal para abrir el **panel de** ayuda. Desde aquí puede acceder a artículos de auto help o ponerse en contacto con el soporte técnico. Para obtener más información acerca de las opciones de ayuda y soporte técnico, vea [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: ¿Dónde puedo enviar comentarios e ideas?
-    answer: "Sus comentarios son importantes para nosotros. Hay un par de formas diferentes de enviar comentarios:\n\n- Seleccione el icono Comentarios en la esquina superior derecha de Faro. \n- Responde a la ventana emergente ocasional (no más de una vez al mes) en Lighthouse que te pide que proporciones comentarios."
+    answer: >-
+      Sus comentarios son importantes para nosotros. Hay varias maneras diferentes de enviar comentarios:
+
+
+      - Vaya a la [página Microsoft 365 Lighthouse comentarios](https://aka.ms/m365lighthouseuservoice). Puede iniciar conversaciones sobre las características de Lighthouse y Windows 365, publicar preguntas para otros socios o empleados de Microsoft, proporcionar comentarios e ideas de características, etc.
+
+      - Seleccione el icono Comentarios en la esquina superior derecha de Faro.
+
+      - Responde a la ventana emergente ocasional (no más de una vez al mes) en Lighthouse que te pide que proporciones comentarios.

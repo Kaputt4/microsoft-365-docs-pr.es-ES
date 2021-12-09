@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Agregue un partner de registro en el momento de Microsoft 365 compra, cambie el partner o elimine un partner de una suscripción.
-ms.openlocfilehash: 2347fc6f90032e07c5c09021194f725e82d27249
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: abd82531e503e37370b12f881ea2744d7da0ff32
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157187"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371081"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Agregar, cambiar o eliminar un partner asesor de suscripción
 
@@ -45,23 +45,11 @@ Un partner autorizado de Microsoft que actúa como asesor de suscripción le pro
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-Un partner autorizado de Microsoft que actúa como asesor de suscripción le proporciona los conocimientos técnicos, sobre ventas y soporte técnico que necesita para que configurar y mantener la suscripción sea más fácil. Puede agregar un partner asesor de suscripción como partner de registro al comprar Office 365 o en cualquier otro momento. Si actualmente no está trabajando con un partner, también puede encontrar uno en el sitio web [de Microsoft Pinpoint.](https://pinpoint.microsoft.com)
-
-::: moniker-end
-
 ## <a name="before-you-begin"></a>Antes de empezar
 
 ::: moniker range="o365-worldwide"
 
 El partner que elija depende de la servicios Microsoft que use y del país o región donde usará esos servicios. Si va a agregar un partner o cambiar el partner de la suscripción, primero debe obtener el identificador de socio de Microsoft del partner pidiéndole al partner.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-El partner que elija dependerá de los servicios de Office 365 que use y del país o la región donde los vaya a usar. Si quiere agregar un partner o cambiar el que está asociado a la suscripción, primero debe pedirle al partner el id. de partner de Microsoft.
 
 ::: moniker-end
 
@@ -85,20 +73,6 @@ Siga los pasos de la página proveedores para buscar o para obtener coincidencia
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-## <a name="add-a-partner-at-the-time-of-purchase"></a>Agregar un partner en el momento de la compra
-
-1. En el [Centro de administración,](https://go.microsoft.com/fwlink/p/?linkid=848041)vaya a la página **Servicios de compra** de \> **facturación.**
-2. Seleccione el producto que desea comprar y, a continuación, **seleccione Comprar**.
-3. Para agregar un nuevo partner, expanda **¿Necesita ayuda con su pedido?** y seleccione **Obtener asistencia de un partner de Microsoft**.<br>
-Siga los pasos de la página proveedores para buscar o para obtener coincidencias con un partner.
-4. Si ya tiene un partner, en el segundo paso del asistente para desprotección, en el panel derecho, en Información del partner, seleccione **Agregar**.
-5. Escriba el id. de partner de Microsoft del partner que va a agregar. El id. de partner de Microsoft se lo puede pedir al partner.
-6. Complete el resto de los pasos del asistente para terminar de comprar las suscripciones.
-
-::: moniker-end
-
 ## <a name="add-a-partner-to-an-existing-subscription"></a>Agregar un partner a una suscripción existente
 
 ::: moniker range="o365-worldwide"
@@ -107,16 +81,6 @@ Siga los pasos de la página proveedores para buscar o para obtener coincidencia
 2. En la **pestaña Productos,** seleccione la suscripción que desea editar.
 3. En la página detalles de la suscripción, en **Información del partner,** escriba el **id. de red de partners**. Puedes obtener el id. de red de partners de Microsoft del partner si lo solicitas.
 4. Seleccione **Agregar**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-2. Si tienes más de una suscripción, selecciona la suscripción que quieras editar.
-3. A la derecha, en el costo de suscripción, seleccione los tres puntos (más acciones) > **Agregar partner de registro**.
-4. Escriba el identificador de partner de Microsoft del partner que va a agregar, seleccione **Comprobar id.** y haga clic en **Enviar**. El identificador de partner de Microsoft se lo puede pedir al partner.
-5. El identificador de partner aparece en la página **Suscripciones**.
 
 ::: moniker-end
 
@@ -140,12 +104,6 @@ Para aceptar esta oferta
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
@@ -167,12 +125,6 @@ Para aceptar esta oferta
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
@@ -188,12 +140,6 @@ No puede quitar una relación de distribuidor usted mismo.
   
 Si quita una relación de  revendedor, la opción Eliminar está atenuada y tendrá que pedir a su partner revendedor que siga estas instrucciones: Quitar una relación de revendedor [con el partner](/partner-center/remove-a-relationship).
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-Si quita una relación de  revendedor, la opción Eliminar está atenuada y tendrá que pedir a su partner revendedor que siga estas instrucciones: Quitar una relación de revendedor [con el partner](/partner-center/remove-a-relationship).
-  
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

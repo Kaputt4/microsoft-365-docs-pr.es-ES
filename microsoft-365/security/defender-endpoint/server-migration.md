@@ -16,21 +16,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e4381063d872a097423fed4a3cb47b05b42bf38
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 551f1f73626fe3820e347917b1d06ab0df3a6117
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122362"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373265"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidor de la solución anterior de Microsoft Defender para endpoint basada en MMA
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-
 - Windows Server 2012 R2
 - Windows Server 2016
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -55,7 +55,7 @@ Para facilitar las actualizaciones cuando Microsoft Endpoint Configuration Manag
 4. Instalar Microsoft Defender para endpoint.
 5. Aplicar el script de incorporación **para su uso con la directiva de** grupo descargada desde [Centro de seguridad de Microsoft Defender](https://securitycenter.microsoft.com).
 
-Para usar el script, descárbalo en un directorio de instalación donde también haya colocado los paquetes de instalación e incorporación (vea [Configure server endpoints](configure-server-endpoints.md)).
+Para usar el script, descárbalo en un directorio de instalación en el que también haya colocado los paquetes de instalación e incorporación (vea [Configure server endpoints](configure-server-endpoints.md).
 
 EJEMPLO: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
@@ -75,7 +75,7 @@ Pasos de migración:
    1. Quite la configuración del área de trabajo de MMA para Microsoft Defender para endpoint. Consulte [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage). Este paso es opcional; el sensor EDR anterior dejará de ejecutarse después de que el nuevo se active (tenga en cuenta que esto puede tardar varias horas).
    2. Desinstalar SCEP.
    3. Instale los [requisitos previos](configure-server-endpoints.md#prerequisites) cuando corresponda.
-   4. Instalar Microsoft Defender para endpoint (vea [Configure server endpoints](configure-server-endpoints.md)).
+   4. Instalar Microsoft Defender para endpoint (consulte [Configure server endpoints](configure-server-endpoints.md).
    5. Aplicar el script de incorporación **para su uso con la directiva de** grupo descargada desde [Centro de seguridad de Microsoft Defender](https://securitycenter.microsoft.com). 
 
    > [!TIP]

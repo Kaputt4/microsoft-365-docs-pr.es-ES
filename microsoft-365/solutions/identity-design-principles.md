@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 111e8d20f6d01f124b87cf29fac39ac55ffd4e35
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8e24242639362bddca7540cd8dfb390b0edb5e8c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111740"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370907"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Para identidad y más allá: un punto de vista de un arquitecto
 
@@ -231,7 +231,7 @@ A veces, los escenarios llaman para agregar un usuario externo a un rol (vea la 
 
 En cierto sentido, se trata de una evolución del modelo Exchange de grupos de roles. Sin embargo, Exchange Online tiene su propia [interfaz de administración de grupos de](/exchange/permissions-exo) roles. Algunos grupos de roles de Exchange Online se bloquean y administran desde Azure AD o el Centro de cumplimiento de & de seguridad, pero otros pueden tener los mismos nombres o similares y se administran en Exchange Online (lo que se agrega a la confusión). Te recomiendo que evites usar la interfaz Exchange Online usuario a menos que necesites ámbitos para Exchange administración.
 
-No puede crear roles personalizados. Los roles se definen mediante los servicios creados por Microsoft y crecerán a medida que se introduzcan nuevos servicios. Esto es similar en concepto a [los roles definidos por las aplicaciones](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) en Azure AD. Cuando se habilitan nuevos servicios, a menudo es necesario crear nuevos grupos de roles para conceder o delegar el acceso a estos (por ejemplo, la administración de [riesgos de insider](../compliance/insider-risk-management-configure.md)).
+No puede crear roles personalizados. Los roles se definen mediante los servicios creados por Microsoft y crecerán a medida que se introduzcan nuevos servicios. Esto es similar en concepto a [los roles definidos por las aplicaciones](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) en Azure AD. Cuando se habilitan nuevos servicios, a menudo es necesario crear nuevos grupos de roles para conceder o delegar el acceso a estos (por ejemplo, la administración de [riesgos insider](../compliance/insider-risk-management-configure.md).
 
 Estos grupos de roles también requieren pertenencia directa y no pueden contener Azure AD grupos. Desafortunadamente, actualmente estos grupos de roles no son compatibles con Azure AD PIM. Al igual Azure AD roles, suelo recomendar la administración de estos a través de API o un producto de gobierno de partners como Saviynt u otros.
 

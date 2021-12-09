@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: Cada miembro del equipo necesita una cuenta de usuario para poder iniciar sesión y acceder a Microsoft 365 para empresas. Obtenga información sobre cómo agregar usuarios y asignar licencias.
 ms.date: 07/01/2020
-ms.openlocfilehash: dffe719c5dbd1478cdf23bae2551daa26289d1e4
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: dad5c6693489fd62eb77df46de6d538da93da515
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128513"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370649"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 
@@ -51,12 +51,6 @@ Debe ser un administrador global, de licencia o de usuario para agregar usuarios
 ::: moniker range="o365-worldwide"
 
 1. Vaya al Centro de administración en <https://admin.microsoft.com>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
@@ -86,12 +80,6 @@ Si ve esta página en el Centro de administración, se encuentra en la **vista s
 ::: moniker range="o365-worldwide"
 
 1. Vaya al Centro de administración en <https://admin.microsoft.com>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 

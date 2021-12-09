@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Realice cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
 ms.date: 03/30/2021
-ms.openlocfilehash: 3488991d6db386f7dcbd6f57271347da41a6489a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2cd590478ada0777a37e551d247bfa1aeed99a0d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164469"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369989"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
   
@@ -55,7 +55,7 @@ A continuación se proporciona una explicación de cada campo.
 |**Field**  |**Descripción**  |
 |---------|---------|
 |Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Yammer navegación: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red Yammer principal.  <br/> Sincronización de OneDrive cliente: el nombre de la organización se muestra en explorador de archivos en Windows y Finder en Mac, las rutas de acceso de archivo, el centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: Conmutador de organización en Teams muestra el nombre de la organización <br/>  |
-|Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección especificada aquí es lo que verá en la factura, en Sold To: The Sold To address on your bill is the same as your organization address on your profile page (see [Understand your bill or invoice for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
+|Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección especificada aquí es lo que verá en su factura, en Sold To: The Sold To address on your bill is the same as your organization address on your profile page (see [Understand your bill or invoice for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md).  <br/>        |
 |País o región  <br/>    | Esto es el país o la región donde la compañía tiene su sede central. El país o la región que se seleccione determina los servicios disponibles, los impuestos y la moneda de facturación del país o la región, y la ubicación del centro de datos más cercano (vea las [restricciones de licencia de Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>NOTA: Una vez seleccionado, no se puede cambiar el país o la región. Si desea cambiar la selección, deberá cancelar la suscripción y registrarse de nuevo. Para obtener ayuda con este proceso, [póngase en contacto con el soporte técnico](../../business-video/get-help-support.md).        |
 |Teléfono  <br/>     | Este es el número principal de la compañía. Por lo general, el número de la sede central de su empresa.  <br/>        |
 |Contacto técnico  <br/> |Esta es la dirección de correo electrónico de la persona técnica principal que administra su Microsoft 365 suscripción. Esta es la persona que recibirá comunicaciones sobre Microsoft 365 estado del servicio.  <br/> |

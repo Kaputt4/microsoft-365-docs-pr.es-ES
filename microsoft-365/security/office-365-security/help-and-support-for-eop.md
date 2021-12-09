@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4ee0affc301500d3ebebd8d17ff13f569356c123
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f4db5851edcbb4daa2a0be1fa36770b7bb2d4b94
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149610"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371177"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
@@ -37,7 +37,7 @@ Al iniciar sesión, el Centro de administración de Microsoft 365 proporciona in
 
 [Información del producto de Protección en línea de Exchange](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contactar al soporte técnico para productos empresariales: ayuda para administradores](../../business-video/get-help-support.md)
+[Contactar al soporte técnico para productos empresariales: ayuda para administradores](../../admin/get-help-support.md)
 
 [Microsoft 365 comunidad](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 

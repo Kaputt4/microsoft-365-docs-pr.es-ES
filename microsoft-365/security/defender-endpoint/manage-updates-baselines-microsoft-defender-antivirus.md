@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 12/02/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ac436d54db999bf5dd1c05305e430f6a957f8ed8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 0e6cb244bf4beeab1d282e46196262ea681a13c2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284162"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372617"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -808,4 +808,3 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 |[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md) | Puede configurar las actualizaciones de protección para que se descarguen al inicio o después de determinados eventos de protección entregados en la nube. |
 |[Administrar las actualizaciones de dispositivos móviles y máquinas virtuales](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Puede especificar la configuración, como si las actualizaciones deben producirse en la batería, que son especialmente útiles para dispositivos móviles y máquinas virtuales. |
 | [Actualización de Microsoft Defender para endpoint para EDR sensor](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Puede actualizar el sensor EDR (MsSense.exe) que se incluye en el nuevo paquete de solución unificada de Microsoft Defender para endpoint publicado en 2021.   |
-

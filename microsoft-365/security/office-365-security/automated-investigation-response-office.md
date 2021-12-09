@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 36662f61c27019046780ce1f7b5290d280eba7fe
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: f515567eca50f99e654df15ddc0b69eb186ba89a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704080"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373721"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Cómo funciona la investigación automatizada y la respuesta en Microsoft Defender para Office 365
 
@@ -68,8 +68,8 @@ A continuación, se ejecutan varios pasos de investigación y búsqueda de amena
 - Los mensajes de correo electrónico similares se identifican mediante búsquedas en clústeres de correo electrónico.
 - La señal se comparte con otras plataformas, como [Microsoft Defender para endpoint.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - Se determina si los usuarios han hecho clic a través de vínculos malintencionados en mensajes de correo electrónico sospechosos.
-- Se realiza una comprobación en Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) y ([Microsoft Defender para Office 365](defender-for-office-365.md)) para ver si hay otros mensajes similares notificados por los usuarios.
-- Se realiza una comprobación para ver si un usuario se ha visto comprometido. Esta comprobación aprovecha las señales de Office 365, [Microsoft Cloud App Security](/cloud-app-security)y Azure Active Directory [,](/azure/active-directory)correlacionando las anomalías relacionadas con la actividad del usuario.
+- Se realiza una comprobación en Exchange Online Protection ([EOP](exchange-online-protection-overview.md) y ([Microsoft Defender para Office 365](defender-for-office-365.md) para ver si hay otros mensajes similares notificados por los usuarios.
+- Se realiza una comprobación para ver si un usuario se ha visto comprometido. Esta comprobación aprovecha las señales de Office 365, [Microsoft Defender para](/cloud-app-security)aplicaciones en la nube y [Azure Active Directory](/azure/active-directory), correlacionando las anomalías relacionadas con la actividad del usuario.
 
 Durante la fase de búsqueda, los riesgos y las amenazas se asignan a varios pasos de búsqueda.
 

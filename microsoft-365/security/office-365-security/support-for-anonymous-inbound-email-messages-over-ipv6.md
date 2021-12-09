@@ -18,12 +18,12 @@ ms.custom:
 description: El administrador puede aprender a configurar la compatibilidad con el correo electrónico entrante anónimo de orígenes IPv6 en Exchange Online y Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ba52efb6ad18bc0515084b3aee4a8bbdd6c7312
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78b2e653aa284e34af2315ac696d7390dce71884
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203872"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373661"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Agregar compatibilidad para correo electrónico entrante anónimo a través de IPv6 en Microsoft 365
 
@@ -40,7 +40,7 @@ Microsoft 365 con Exchange Online buzones de correo y organizaciones de Exchange
 
 - El remitente debe pasar la verificación SPF (definida en la norma [RFC 7208](https://tools.ietf.org/html/rfc7208)) o la [verificación de DKIM](http://dkim.org/) (definida en la norma [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
 
-Para que su organización pueda recibir correo electrónico entrante anónimo a través de IPv6, un administrador debe ponerse en contacto con el soporte técnico de Microsoft y solicitarlo. Para obtener instrucciones sobre cómo abrir una solicitud de soporte técnico, consulte Póngase en contacto con el soporte técnico para [productos empresariales : Ayuda para administradores.](../../business-video/get-help-support.md)
+Para que su organización pueda recibir correo electrónico entrante anónimo a través de IPv6, un administrador debe ponerse en contacto con el soporte técnico de Microsoft y solicitarlo. Para obtener instrucciones sobre cómo abrir una solicitud de soporte técnico, consulte Póngase en contacto con el soporte técnico para [productos empresariales : Ayuda para administradores.](../../admin/get-help-support.md)
 
 Después de habilitar la compatibilidad con mensajes IPv6 entrantes anónimos en la organización, el mensaje pasará por el filtrado normal de mensajes proporcionado por el servicio.
 

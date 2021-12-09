@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo se usan para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras.
 ms.date: 03/17/2021
-ms.openlocfilehash: 07997e8001ee753de2693b62d693e3dc2e2261c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5107ca7bd545eb202999d96266e6ab7688db767c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151331"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370937"
 ---
 # <a name="understand-billing-accounts"></a>Comprender las cuentas de facturación
 
@@ -52,11 +52,11 @@ En la tabla siguiente se enumeran los términos importantes que se ven en la pá
 | Segmento | Un campo de solo lectura que identifica el segmento de negocio de su organización (Comercial, Educativo, Gubernamental o Sin ánimo de lucro). |
 | Estado de la cuenta | Campo de solo lectura que especifica el estado de su cuenta comercial con Microsoft. |
 | Id. de impuestos | Si está fuera de los Estados Unidos, debe proporcionar un IVA o equivalente local. Para obtener más información, consulte [Información sobre impuestos](billing-and-payments/tax-information.md). |
-| Acuerdo | Cuando se crea una cuenta de facturación, ya sea mediante una compra directa o un acuerdo de licencias por volumen, un firmante de la organización acepta o firma un acuerdo que describe los términos & condiciones de la cuenta. Si procede, esta vista enumera un historial de acuerdos. Si tienes que aceptar términos actualizados, se muestra un vínculo para **Aprobar** acuerdo. |
+| Contrato | Cuando se crea una cuenta de facturación, ya sea mediante una compra directa o un acuerdo de licencias por volumen, un firmante de la organización acepta o firma un acuerdo que describe los términos & condiciones de la cuenta. Si procede, esta vista enumera un historial de acuerdos. Si tienes que aceptar términos actualizados, se muestra un vínculo para **Aprobar** acuerdo. |
 | Perfiles de facturación | Un perfil de facturación define las propiedades de la factura, como quién recibe la factura, cómo se entrega la factura, los términos de pago y un número de pedido. Para distribuir la facturación en toda la organización, puede crear varios perfiles de facturación e identificar el perfil de facturación adecuado en el momento de la compra. Para obtener más información sobre los perfiles de facturación y cómo usarlos para crear opciones de facturación más flexibles para su organización, comprenda los perfiles [de facturación](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Si necesita cambiar el **nombre** o la dirección vendidos, pero no ve un vínculo **Editar,** debe ponerse en contacto con el soporte técnico [para](../business-video/get-help-support.md) cambiarlo. Las solicitudes para un cambio **de nombre** vendido requerirán una comprobación de crédito. Complete [este formulario](https://www.microsoft.com/download/details.aspx?id=102732)y esté listo para compartir uno de los siguientes documentos con Microsoft al ponerse en contacto con el soporte técnico:
+> Si necesita cambiar el **nombre** o la dirección vendidos, pero no ve un vínculo **Editar,** debe ponerse en contacto con el soporte técnico [para](../admin/get-help-support.md) cambiarlo. Las solicitudes para un cambio **de nombre** vendido requerirán una comprobación de crédito. Complete [este formulario](https://www.microsoft.com/download/details.aspx?id=102732)y esté listo para compartir uno de los siguientes documentos con Microsoft al ponerse en contacto con el soporte técnico:
 >
 > - Documento emitido por el gobierno o carta de registro
 > - Imprimir del registro de la empresa local

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 56107d1e7e2b303e6517a2b7f762e2fcf49beac0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: d8a2af9ff38a4dec7a4708106bc0289c03bb449e
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106532"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371237"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -30,7 +30,7 @@ En Microsoft 365, implemente la prevención de pérdida de datos definiendo y ap
 
 - Microsoft 365 servicios como Teams, Exchange, SharePoint y OneDrive
 - Office aplicaciones como Word, Excel y PowerPoint
-- Windows 10 de conexión
+- Windows 10, Windows 11 y macOS (Catalina 10,15 y posteriores) extremos
 - aplicaciones en la nube que no son de Microsoft
 - recursos compartidos de archivos locales y recursos SharePoint.
 
@@ -69,7 +69,7 @@ Microsoft 365 y protección dlp son nativas de las aplicaciones que los usuarios
 
 **Planeación de tecnología para DLP**
 
-Tenga en cuenta que DLP como tecnología puede supervisar y proteger los datos en reposo, los datos en uso y los datos en movimiento en los servicios de Microsoft 365, dispositivos Windows 10, recursos compartidos de archivos locales y SharePoint. Hay implicaciones de planeación para las distintas ubicaciones, el tipo de datos que desea supervisar y proteger, y las acciones que se deben realizar cuando se produce una coincidencia de directiva.
+Tenga en cuenta que DLP como tecnología puede supervisar y proteger los datos en reposo, los datos en uso y los datos en movimiento en todos los servicios de Microsoft 365, dispositivos Windows 10, Windows 11 y macOS (Catalina 10.15 y posteriores), recursos compartidos de archivos locales y SharePoint local. Hay implicaciones de planeación para las distintas ubicaciones, el tipo de datos que desea supervisar y proteger, y las acciones que se deben realizar cuando se produce una coincidencia de directiva.
 
 **Planeación de procesos empresariales para DLP**
 
@@ -89,8 +89,8 @@ Puede aplicar directivas DLP a datos en reposo, datos en uso y datos en movimien
 - Sitios de SharePoint Online
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
-- Microsoft Defender for Cloud Apps
-- Dispositivos con Windows 10
+- Microsoft Cloud App Security
+- Windows 10, Windows 11 y dispositivos macOS (Catalina 10.15 y posteriores)
 - Repositorios locales
 
 Cada uno tiene requisitos previos diferentes. Los elementos confidenciales de algunas ubicaciones, como Exchange en línea, se pueden traer bajo el paraguas DLP simplemente configurando una directiva que se aplique a ellos. Otros, como los repositorios de archivos locales, requieren una implementación del escáner de Azure Information Protection (AIP). Deberá preparar el entorno, redactar directivas de código y probarlas exhaustivamente antes de activar cualquier acción de bloqueo.
@@ -143,8 +143,8 @@ ubicación | incluir/excluir por|
 |Sitios de SharePoint |sitios |
 |Cuentas de OneDrive |cuentas o grupos de distribución |
 |Mensajes de canales y chats de Teams |cuentas |
-|Dispositivos Windows 10 |usuario o grupo |
-|Microsoft Defender for Cloud Apps |instancia |
+|Windows 10, Windows 11 y dispositivos macOS (Catalina 10.15 y posteriores) |usuario o grupo |
+|Microsoft Cloud App Security |instancia |
 |Repositorios locales| Ruta de acceso de archivo de repositorio|
 
 3. **Elija las condiciones que deben coincidir para** que una directiva se aplique a un elemento: puede aceptar condiciones preconfiguradas o definir condiciones personalizadas. Por ejemplo:
@@ -157,7 +157,7 @@ ubicación | incluir/excluir por|
 
 - SharePoint/Exchange/OneDrive: bloquear a las personas que están fuera del formulario de la organización acceder al contenido. Muestre al usuario una sugerencia y envíele una notificación por correo electrónico en la que se le envíe una notificación de que está tomando una acción que está prohibida por la directiva DLP.
 - Teams chat y canal: impedir que se comparta información confidencial en el chat o canal
-- Windows 10 dispositivos: auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
+- Windows 10, Windows 11 y dispositivos macOS (Catalina 10.15 y posteriores): auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
 - Office aplicaciones: muestra un elemento emergente que notifica al usuario que está participando en un comportamiento arriesgado y bloquea o bloquea, pero permite la invalidación.
 - Recursos compartidos de archivos locales: mueva el archivo desde donde se almacena a una carpeta de cuarentena
 

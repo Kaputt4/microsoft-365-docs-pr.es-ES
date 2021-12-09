@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtén información sobre cómo mover usuarios entre suscripciones.
 ms.date: 07/01/2020
-ms.openlocfilehash: 5cbbdb79d291b89c2f62e44e44239ea5e2791f57
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ae6aa20c684c2745ef280c51a1203ae87f8da40
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206162"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370361"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -43,12 +43,6 @@ Debe ser administrador global, de licencia o de usuario para asignar licencias. 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
  1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
@@ -63,7 +57,7 @@ Debe ser administrador global, de licencia o de usuario para asignar licencias. 
 
 5. En la parte inferior, seleccione **Guardar cambios** \> **cerrar**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md)a otros usuarios, considere la posibilidad de quitar las licencias de la suscripción para que no pague más licencias de las que necesita. [](../../commerce/licenses/buy-licenses.md)
 

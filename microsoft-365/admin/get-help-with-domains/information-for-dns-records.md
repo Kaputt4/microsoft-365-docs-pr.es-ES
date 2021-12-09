@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Recopila los valores/información que necesita para crear registros DNS para conectar su dominio a su Microsoft 365 suscripción.
-ms.openlocfilehash: 52d3dfdf0e964c750a0aecd67d2fb6064eb0625e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 81a1bd650e507e7f2c15a16cd5a048181ca6c816
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164685"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371129"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Recopilar la información que necesita para crear registros DNS
 
@@ -40,12 +40,6 @@ ms.locfileid: "60164685"
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración de Microsoft 365, vaya a la **página Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios.</a>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, diríjase a la página **configuración** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a>.
 
 ::: moniker-end
 
@@ -72,12 +66,6 @@ ms.locfileid: "60164685"
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración de Microsoft 365, vaya a la **página Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios.</a>
-
-::: moniker-end
-    
-::: moniker range="o365-germany"
-
-1. En el centro de administración, diríjase a la página **configuración** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a>.
 
 ::: moniker-end
 

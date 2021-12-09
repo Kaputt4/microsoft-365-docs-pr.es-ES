@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: fef221ce23ac04d156084ebad7b837840004f066
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 892f151234aee8daee0cac12622d08cd39f27769
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111860"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372917"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -43,9 +43,20 @@ O bien
   > [!div class="mx-imgBorder"]
   > ![Configuración DLP](../media/endpoint-dlp-1-using-dlp-settings.png).
 
+### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Configuración de Windows 10 DLP de punto de conexión y macOS
+
+|Setting |Windows 10, 1809 y versiones posteriores  |macOS Catalina 10.15 o posterior (versión preliminar)  |Notas  |
+|---------|---------|---------|---------|
+|Exclusiones de ruta de archivo     |Compatible         |Compatible         |macOS incluye una lista recomendada de exclusiones que está predeterminada          |
+|Aplicaciones no permitidas     |Compatible         |Compatible         |         |
+|Aplicaciones de Bluetooth no permitidas    |Compatible         |No se admite         |         |
+|Restricciones de explorador y dominio a los elementos confidenciales      |Compatible         |Compatible         |         |
+|Configuración adicional para DLP de punto de conexión     |Compatible         |Compatible         |Solo se admiten las justificaciones empresariales predeterminadas para dispositivos macOS         |
+|Auditar siempre la actividad de archivos para dispositivos     |Compatible         |Compatible         |         |
+
 ### <a name="advanced-classification-scanning-and-protection"></a>Escaneo y protección de clasificación avanzada
 
-## <a name="get-registered"></a>Registrarse
+#### <a name="get-registered"></a>Registrarse
 
 Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea [registrarse para la compatibilidad de Microsoft 365 en macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
 
@@ -66,19 +77,6 @@ Estas versiones de Windows admiten la protección y el escaneo de clasificación
 
 > [!NOTE]
 > La evaluación de directivas DLP siempre se produce en la nube, incluso si el contenido del usuario no se envía.
-
-### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Configuración de Windows 10 DLP de punto de conexión y macOS
-
-|Setting |Windows 10, 1809 y versiones posteriores  |macOS Catalina 10.15 o posterior (versión preliminar)  |Notas  |
-|---------|---------|---------|---------|
-|Exclusiones de ruta de archivo     |Compatible         |Compatible         |macOS incluye una lista recomendada de exclusiones que está predeterminada          |
-|Aplicaciones no permitidas     |Compatible         |Compatible         |         |
-|Aplicaciones de Bluetooth no permitidas    |Compatible         |no compatible         |         |
-|Restricciones de explorador y dominio a los elementos confidenciales      |Compatible         |Compatible         |         |
-|Configuración adicional para DLP de punto de conexión     |Compatible         |Compatible         |Solo se admiten las justificaciones empresariales predeterminadas para dispositivos macOS         |
-|Auditar siempre la actividad de archivos para dispositivos     |Compatible         |Compatible         |         |
-
-
 
 ### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
 

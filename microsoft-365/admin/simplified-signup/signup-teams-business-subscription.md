@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Siga los pasos descritos en este artículo para registrarse Microsoft Teams como parte de una suscripción empresarial.
-ms.openlocfilehash: 61243f2b165a0c6172014eb8205c6eca3c1004b3
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: c011419f499d832ea383bc9b5f8f61a7cea5c430
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254576"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372605"
 ---
 # <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>Registrarse para obtener Microsoft Teams como parte de una suscripción empresarial
 
@@ -43,7 +43,7 @@ Consulta la tabla siguiente para ver las opciones de registro y los servicios qu
 |Conocimientos necesarios  <br/> |Vamos a empezar sin conocimientos técnicos necesarios para ejecutar un dominio.  <br/> |Requiere comprar un dominio o ser propietario de un dominio. Si desea usar un dominio existente, necesitará credenciales de acceso para el dominio y es posible que necesite conocimientos técnicos para demostrar la propiedad. <br/> |
 |Acuerdo de gobierno y tratamiento de datos  <br/> |Disponible en el complemento del Contrato de servicios de [Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) y es mejor para las empresas que desean algunas herramientas de trabajo remoto y colaboración y se sienten cómodas con **Microsoft** actuando como controlador de sus datos en la Declaración de privacidad [de Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Los suscriptores ("usted") a los servicios que usan esta opción no tendrán acceso al contenido o a los datos de otro usuario invitado ("usuarios invitados). <br/> Por ejemplo, si está trabajando en colaboración con otros usuarios invitados en un documento almacenado en su cuenta, puede que elijan hacer que esos documentos no sean accesibles para usted. <br/> Por separado, los usuarios invitados pueden elegir no transferir documentos en su cuenta de Sign-Up simplificada a la suscripción a la cuenta de dominio, incluso después de invitarlos a hacerlo. Esto significa que sus documentos también pueden no ser accesibles para usted incluso si agrega una cuenta de dominio más adelante. Por lo tanto, debe evaluar las consideraciones de propiedad de datos y derechos de propiedad intelectual en consecuencia. <br/> |Disponible en virtud del Contrato de suscripción de [Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) y es mejor para las empresas que necesitan que **Microsoft** actúe como procesador de sus datos en nuestro [Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) de protección de datos y necesite nuestro conjunto completo de herramientas de colaboración y trabajo remoto. Los suscriptores que se encuentran en sectores regulados o buscan más control, tanto sobre el uso de los servicios por parte de sus empleados como sobre el procesamiento de datos relacionados por Parte de **Microsoft,** deben elegir La cuenta de dominio registrarse en Microsoft Business Business Basic y registrarse en el contrato de nivel empresarial cuenta de dominio. <br/> |
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>¿Qué es un correo electrónico empresarial y cuáles son las ventajas de configurar uno?
 
@@ -67,4 +67,6 @@ Cuando se activa la facturación periódica, la suscripción se seguirá factura
 
 ### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>¿Qué puedo hacer si deseo cambiar el nombre de mi empresa?
 
-Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a cambiar el nombre de su empresa. Obtenga más información en [Obtener soporte](../../business-video/get-help-support.md)técnico .
+
+Póngase en contacto con nuestros expertos en soporte técnico para pequeñas empresas que pueden ayudarle a cambiar el nombre de su empresa. Obtenga más información en [Obtener soporte](../get-help-support.md)técnico .
+

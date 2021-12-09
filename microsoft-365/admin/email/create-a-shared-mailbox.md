@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 64ee2649127445e8438d915734dad9f2aa965933
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a2c4480d443874c99cf014570e01845708d18d88
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165045"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371153"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -51,12 +51,6 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
 ::: moniker range="o365-worldwide"
 
 2. En el Centro de administración, vaya a la página **Teams y Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-2. En el [Centro de administración](https://go.microsoft.com/fwlink/p/?linkid=848041), vaya a la página **Teams y Grupos** \> **Buzones compartidos**.
 
 ::: moniker-end
 
@@ -117,12 +111,6 @@ Pero, ¿qué sucede si un administrador simplemente restablece la contraseña de
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 

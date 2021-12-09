@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Encuentre cómo transferir datos manualmente entre dos cuentas Microsoft 365 cuando cambie el plan o el nombre de la compañía, o combine varias suscripciones en una.
-ms.openlocfilehash: 36156a83f1d6a3d52561689cc4a82ac5098ceae9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aea01982d9cb6a42f382a23a50baf2e1bfa041cc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164589"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370001"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transferir datos manualmente entre dos cuentas
 
@@ -61,9 +61,9 @@ Para Microsoft 365 Enterprise y Microsoft 365 mediana empresa:
   
 |**Location**|**Finalidad**|
 |:-----|:-----|
-|**Administrador** \> **Microsoft 365** \> **Configuración del servicio** <br/> |Seleccione cada pestaña para la configuración de correo, sitios, Lync, software de usuario, contraseñas, comunidad, administración de derechos y móvil.  <br/> |
+|**Administrador** \> **Microsoft 365** \> **configuración del servicio** <br/> |Seleccione cada pestaña para la configuración de correo, sitios, Lync, software de usuario, contraseñas, comunidad, administración de derechos y móvil.  <br/> |
 |**Administrador** \> **Exchange** <br/> | Exchange Online configuración  <br/> |
-|**Administrador** \> **SharePoint** <br/> | SharePoint Configuración en línea  <br/> |
+|**Administrador** \> **SharePoint** <br/> | SharePoint online  <br/> |
 |**Administrador** \> **Skype Empresarial** <br/> |Configuración Skype Empresarial adicionales  <br/> |
 
 Para Microsoft 365 pequeña empresa
@@ -90,7 +90,7 @@ Hay varias maneras de guardar o transferir datos del sitio de grupo:
   
 - Puede guardar el sitio antiguo como una plantilla e importar la plantilla en el nuevo sitio.
 
-- Para transferir documentos, primero vuelva a crear manualmente la jerarquía en el nuevo sitio. A continuación, puede abrir ambos SharePoint de grupo al mismo tiempo, abrir ambas bibliotecas de documentos con Windows Explorer y copiar y pegar los documentos. Vea [Vídeo: Copiar o mover archivos de biblioteca mediante Abrir con el Explorador](../../business-video/store-files.md).
+- Para transferir documentos, primero vuelva a crear manualmente la jerarquía en el nuevo sitio. A continuación, puede abrir ambos SharePoint de grupo al mismo tiempo, abrir ambas bibliotecas de documentos con Windows Explorer y copiar y pegar los documentos. Vea [Vídeo: Copiar o mover archivos de biblioteca mediante Abrir con el Explorador](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
 
 - Para transferir datos de lista, guarde una plantilla [de](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)lista y use la plantilla guardada para volver a crear la lista en el nuevo sitio.
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá cómo funciona el cifrado de servicio con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: 0fd94e5d293f05f0ad80c0d6aadaa60284e394c0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 009907ea9ef7be532618846484a40c6fd10ffc5d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172376"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370373"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 
@@ -42,7 +42,7 @@ Clave de cliente solo cifra los datos en reposo en la nube. La clave de cliente 
 
 Una directiva de cifrado de datos (DEP) define la jerarquía de cifrado. El servicio usa esta jerarquía para cifrar los datos con cada una de las claves que administra y la clave de disponibilidad protegida por Microsoft. Puede crear DEP con cmdlets de PowerShell y, a continuación, asignar esos DEP para cifrar los datos de la aplicación. Hay tres tipos de DEP admitidos por Microsoft 365 customer key, cada tipo de directiva usa cmdlets diferentes y proporciona cobertura para un tipo diferente de datos. Los DEP que puede definir incluyen:
 
-**DEP para varias cargas Microsoft 365 de trabajo** Estos DEP cifran los datos en varias cargas de trabajo M365 para todos los usuarios del espacio empresarial. Estas cargas de trabajo incluyen:
+**DEP para varias cargas Microsoft 365 de** trabajo Estos DEP cifran los datos en varias cargas de trabajo M365 para todos los usuarios del espacio empresarial. Estas cargas de trabajo incluyen:
 
 - Teams de chat (chats de 1:1, chats de grupo, chats de reunión y conversaciones de canal)
 - Teams multimedia (imágenes, fragmentos de código, mensajes de vídeo, mensajes de audio, imágenes wiki)
@@ -52,6 +52,7 @@ Una directiva de cifrado de datos (DEP) define la jerarquía de cifrado. El serv
 - Teams de estado
 - Información de usuario y señal para Exchange Online
 - Exchange Online buzones de correo que no están cifrados por los DEP de buzones
+- Almacenamiento unificado de registros de auditoría
 - Microsoft Information Protection:
 
   - Datos exactos de coincidencia de datos (EDM), incluidos los esquemas de archivo de datos, los paquetes de reglas y las sales usadas para hash de los datos confidenciales. Para EDM y Microsoft Teams, el DEP de varias cargas de trabajo cifra los nuevos datos desde el momento en que asigna el DEP al inquilino. Por Exchange Online, clave de cliente cifra todos los datos existentes y nuevos.
@@ -63,11 +64,11 @@ Los DEP de varias cargas de trabajo no cifran los siguientes tipos de datos. En 
 - SharePoint y OneDrive para la Empresa datos.
 - Microsoft Teams archivos y algunas Teams de llamadas y reuniones guardadas en OneDrive para la Empresa y SharePoint Online se cifran mediante SharePoint Online DEP.
 - Otras Microsoft 365 de trabajo como Yammer y Planner que actualmente no son compatibles con la clave de cliente.
-- Teams Datos de eventos en directo.
+- Teams datos del evento en directo.
 
 Puede crear varios DEP por inquilino, pero solo asignar un DEP a la vez. Al asignar el DEP, el cifrado comienza automáticamente pero tarda algún tiempo en completarse en función del tamaño del espacio empresarial.
 
-**DEP para Exchange Online buzones de correo** Los DEP de buzones proporcionan un control más preciso sobre los buzones individuales dentro de Exchange Online. Use DEP de buzones de correo para cifrar los datos almacenados en buzones EXO de distintos tipos, como UserMailbox, MailUser, Group, PublicFolder y Buzones compartidos. Puede tener hasta 50 DEP activos por inquilino y asignar esos DEP a buzones individuales. Puede asignar un DEP a varios buzones.
+**Los DEP para Exchange Online buzones de correo Los** DEP de buzones de correo proporcionan un control más preciso sobre los buzones individuales dentro de Exchange Online. Use DEP de buzones de correo para cifrar los datos almacenados en buzones EXO de distintos tipos, como UserMailbox, MailUser, Group, PublicFolder y Buzones compartidos. Puede tener hasta 50 DEP activos por inquilino y asignar esos DEP a buzones individuales. Puede asignar un DEP a varios buzones.
 
 De forma predeterminada, los buzones se cifran con claves administradas por Microsoft. Al asignar un DEP de clave de cliente a un buzón:
 
@@ -85,7 +86,7 @@ Para los DEP de clave de cliente que asigne a buzones individuales, puede solici
 
 Al revocar el acceso a las claves como parte de la salida del servicio, se elimina la clave de disponibilidad, lo que da como resultado la eliminación criptográfica de los datos. La eliminación criptográfica mitiga el riesgo de remanencia de datos, lo que es importante para cumplir con las obligaciones de seguridad y cumplimiento.
 
-**DEP para SharePoint Online y OneDrive para la Empresa** Este DEP se usa para cifrar el contenido almacenado en SPO y OneDrive para la Empresa, incluidos los Microsoft Teams almacenados en SPO. Si usa la característica multige geográfica, puede crear un DEP por geo para su organización. Si no usa la característica multigeós, solo puede crear un DEP por inquilino. Consulte los detalles de [Configurar clave de cliente](customer-key-set-up.md).
+**DEP para SharePoint Online y OneDrive para la Empresa** Este DEP se usa para cifrar el contenido almacenado en SPO y OneDrive para la Empresa, incluidos Microsoft Teams archivos almacenados en SPO. Si usa la característica multige geográfica, puede crear un DEP por geo para su organización. Si no usa la característica multigeós, solo puede crear un DEP por inquilino. Consulte los detalles de [Configurar clave de cliente](customer-key-set-up.md).
 
 ### <a name="encryption-ciphers-used-by-customer-key"></a>Cifrados usados por clave de cliente
 

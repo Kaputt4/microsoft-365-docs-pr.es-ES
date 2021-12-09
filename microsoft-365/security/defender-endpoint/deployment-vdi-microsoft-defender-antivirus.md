@@ -10,27 +10,27 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/08/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30328a651c5473f4a3d2bcee6244eb39087cb4a6
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 46eab67f459e763a212178d768f9a411aaf7adb7
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110216"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372629"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Además de las configuraciones de hardware o locales estándar, también puede usar Antivirus de Microsoft Defender en un entorno de escritorio remoto (RDS) o de infraestructura de escritorio virtual (VDI).
 
-Consulte [Documentación de Azure Virtual Desktop](/azure/virtual-desktop) para obtener más información sobre Escritorio remoto de Microsoft servicios y compatibilidad con VDI.
+Para obtener más información sobre Escritorio remoto de Microsoft servicios y compatibilidad con VDI, consulte [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
 
 Para las máquinas virtuales basadas en Azure, [vea Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
 
@@ -107,6 +107,29 @@ Se recomienda empezar por una vez al día, pero debe experimentar con aumentar o
 
 Los paquetes de inteligencia de seguridad suelen publicarse una vez cada tres o cuatro horas. No se recomienda establecer una frecuencia inferior a cuatro horas porque aumentará la sobrecarga de red en el equipo de administración sin ningún beneficio.
 
+También puede configurar su único servidor o máquina para capturar las actualizaciones en nombre de las máquinas virtuales en un intervalo y colocarlas en el recurso compartido de archivos para su consumo.
+Esto es posible cuando los dispositivos tienen el recurso compartido y los permisos NTFS para el acceso de lectura al recurso compartido para que puedan obtener las actualizaciones.
+
+Para hacerlo:
+ 1. Crear un recurso compartido de archivos SMB/CIFS. 
+ 
+ 2. Use el siguiente ejemplo para crear un recurso compartido de archivos con los siguientes permisos de recurso compartido.
+
+    ```PowerShell
+    PS c:\> Get-SmbShareAccess -Name mdatp$
+
+    Name   ScopeName AccountName AccessControlType AccessRight
+    ----   --------- ----------- ----------------- -----------
+    mdatp$ *         Everyone    Allow             Change
+    ```
+   
+    > [!NOTE]
+    > Se agrega un permiso NTFS para **usuarios autenticados:Lectura:**. 
+
+    En este ejemplo, el recurso compartido de archivos es:
+
+    \\fileserver.fqdn\mdatp$\wdav-update
+
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Establecer una tarea programada para ejecutar el script de PowerShell
 
 1. En el equipo de administración, abra el menú Inicio y escriba **Programador de tareas**. Ábrala y **seleccione Crear tarea...** en el panel lateral.
@@ -145,7 +168,7 @@ Si prefiere hacer todo manualmente, esto es lo que debe hacer para replicar el c
 
 Los exámenes programados se ejecutan además de la protección y [el examen en tiempo real.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
-La hora de inicio del examen en sí se sigue basando en la directiva de examen programada (**ScheduleDay**, **ScheduleTime** y **ScheduleQuickScanTime**). La aleatorización hará Antivirus de Microsoft Defender iniciar un examen en cada equipo dentro de una ventana de 4 horas desde el tiempo establecido para el examen programado.
+La hora de inicio del examen en sí se sigue basando en la directiva de examen programada (**ScheduleDay**, **ScheduleTime** y **ScheduleQuickScanTime**). La aleatorización hará Antivirus de Microsoft Defender iniciar un examen en cada equipo dentro de una ventana de cuatro horas desde el tiempo establecido para el examen programado.
 
 Consulte [Programar exámenes para](scheduled-catch-up-scans-microsoft-defender-antivirus.md) obtener otras opciones de configuración disponibles para exámenes programados.
 
@@ -205,7 +228,7 @@ Esta directiva impide que un examen se ejecute inmediatamente después de una ac
 
 ## <a name="scan-vms-that-have-been-offline"></a>Examinar máquinas virtuales sin conexión
 
-1. En el Editor de directivas de grupo, vaya a Windows **componentes Antivirus de Microsoft Defender** \>  \> **Scan**.
+1. En el Editor de directivas de grupo, vaya **a Windows componentes** \> **Antivirus de Microsoft Defender** \> **Scan**.
 
 2. Seleccione **Activar el examen rápido de puesta al día** y, a continuación, edite la configuración de directiva.
 

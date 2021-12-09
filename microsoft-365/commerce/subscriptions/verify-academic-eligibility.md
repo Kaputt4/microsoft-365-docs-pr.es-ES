@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela Microsoft 365 Educación precios académicos.
 ms.date: 07/21/2020
-ms.openlocfilehash: 8fc3be02de01e2d37159162581276e7c9d3451f1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0f25842aa6dd8cce30031b876ec0614960cfec57
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168907"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371909"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobar la elegibilidad académica para Microsoft 365 Educación suscripciones
 
@@ -93,7 +93,7 @@ Puede encontrar la fecha de expiración de su suscripción de prueba gratuita en
 
 Si su escuela no califica como una institución académica calificada de Microsoft, puede comprar ofertas comerciales en el centro de administración en la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a> Si su organización es un grupo sin ánimo de lucro, es posible que su grupo sea apto para suscripciones sin ánimo de lucro. Para obtener más información, consulta [Descuentos y donaciones para organizaciones sin ánimo de lucro.](https://www.microsoft.com/nonprofits/eligibility)
 
-Si tiene preguntas sobre la decisión de elegibilidad académica de su escuela, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
+Si tiene preguntas sobre la decisión de elegibilidad académica de su escuela, [póngase en contacto con soporte técnico](.. /.. /admin/get-help-support.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
 

@@ -1,5 +1,5 @@
 ---
-title: Crear equipos para colaboración
+title: Cree un equipo en Microsoft Teams para que su pequeña empresa o campaña pueda colaborar
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -22,15 +22,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Cree un espacio de colaboración para su equipo con Microsoft Teams.
-ms.openlocfilehash: ad0c9c938d7c5766bffc6fc960197b0568eb9cb5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre por qué y cómo crear un equipo en Microsoft Teams para que su pequeña empresa o campaña pueda colaborar.
+ms.openlocfilehash: a8aae7eb1492a45cf80cd5e56b9df7393f08eb7d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189710"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371297"
 ---
-# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Crear equipos para la colaboración en Microsoft Teams
+# <a name="create-a-team-in-microsoft-teams-so-your-small-business-or-campaign-can-collaborate"></a>Cree un equipo en Microsoft Teams para que su pequeña empresa o campaña pueda colaborar
 
 Microsoft Teams es una aplicación de colaboración que ayuda a tu personal a organizarse y mantener conversaciones desde cualquier dispositivo. Puede usar Microsoft Teams para mantener conversaciones instantáneas con miembros de su personal o invitados fuera de su organización. También puede realizar llamadas telefónicas, hospedar reuniones y compartir archivos.
 
@@ -67,7 +67,7 @@ Al crear un equipo, esto es lo que se crea:
 
 Dentro Microsoft Teams, puede encontrar:
 
-1. **Teams:** Busca canales a los que pertenecer o crea los tuyos propios. Dentro de los canales puede mantener reuniones en el lugar, tener conversaciones y compartir archivos.
+1. **Teams: buscar** canales a los que pertenecer o crear los tuyos propios. Dentro de los canales puede mantener reuniones en el lugar, tener conversaciones y compartir archivos.
 2. **Reuniones:** Vea todo lo que tiene preparado para el día o la semana. O bien, programe una reunión. Este calendario se sincroniza con el Outlook calendario.
 3. **Llamadas:** En algunos casos, si su organización la tiene configurada, puede llamar a cualquier persona desde Microsoft Teams, incluso si no usa Microsoft Teams.
 4. **Actividad:** Ponerse al día con todos los mensajes no leídos, @mentions, respuestas y mucho más.

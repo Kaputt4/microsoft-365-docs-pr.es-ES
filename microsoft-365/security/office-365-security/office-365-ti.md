@@ -18,15 +18,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d6f6f2e849355db3dd8dfd44fe53b3ddbf2971d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9056f1e63910ace9dfe525c45e3e549d225b2d85
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207540"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371165"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -47,7 +48,7 @@ Las capacidades de investigación y respuesta de amenazas proporcionan informaci
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Familiarizarse con las herramientas de investigación y respuesta de amenazas
 
-Las capacidades de investigación y respuesta de amenazas se incluyen en el portal de Microsoft 365 Defender, como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos los siguientes:
+Las capacidades de investigación y respuesta de amenazas se incluyen en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">el portal Microsoft 365 Defender ,</a>como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos los siguientes:
 
 - [Explorador](#explorer)
 - [Incidentes](#incidents)
@@ -100,7 +101,7 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 > Aunque algunos roles, como el administrador de seguridad, se pueden asignar en el portal de Microsoft 365 Defender, considere la posibilidad de usar el Centro de administración de Microsoft 365 o Azure Active Directory en su lugar. Para obtener información sobre roles, grupos de roles y permisos, vea los siguientes recursos:
 >
 > - [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
-> - [Roles integrados de Azure AD](/azure/active-directory/roles/permissions-reference)
+> - [Azure AD funciones integradas](/azure/active-directory/roles/permissions-reference)
 
 <br>
 
@@ -108,14 +109,14 @@ Microsoft Defender para Office 365 usa control de acceso basado en roles. Los pe
 
 |Actividad|Roles y permisos|
 |---|---|
-|Use el panel De & de administración de vulnerabilidades (o el nuevo panel [de seguridad)](security-dashboard.md) <p> Ver información sobre amenazas recientes o actuales|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( <https://portal.azure.com> ) o en el Centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ).|
+|Usar el panel de & de administración de vulnerabilidades (o el nuevo panel [de seguridad)](security-dashboard.md) <p> Ver información sobre amenazas recientes o actuales|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( <https://portal.azure.com> ) o en el Centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ).|
 |Usar [el Explorador (y detecciones en tiempo real)](threat-explorer.md) para analizar amenazas|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( <https://portal.azure.com> ) o en el Centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ).|
 |Ver incidentes (también denominados Investigaciones) <p> Agregar mensajes de correo electrónico a un incidente|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( <https://portal.azure.com> ) o en el Centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ).|
 |Desencadenar acciones de correo electrónico en un incidente <p> Buscar y eliminar mensajes de correo electrónico sospechosos|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad** más el **rol Buscar y** purgar</li></ul> <p> Los **roles Administrador global** y Administrador **de** seguridad se pueden asignar en Azure Active Directory ( ) o en el Centro de administración de Microsoft 365 <https://portal.azure.com> ( <https://admin.microsoft.com> ). <p> El **rol Buscar y purgar** debe asignarse en los roles de colaboración de correo **&** en el portal de Microsoft 36 Defender ( <https://security.microsoft.com> ).|
 |Integrar Microsoft Defender para Office 365 Plan 2 con Microsoft Defender para endpoint <p> Integrar Microsoft Defender para Office 365 Plan 2 con un servidor SIEM|El rol **Administrador global o** administrador de seguridad asignado Azure Active Directory ( ) o el Centro de administración de Microsoft 365 (  <https://portal.azure.com> <https://admin.microsoft.com> ). <p> --- **más** --- <p> Un rol adecuado asignado en aplicaciones adicionales [(como Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor SIEM).|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Más información sobre los rastreadores de amenazas: nuevos y notables](threat-trackers.md)
 - [Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 de amenazas y respuesta)](investigate-malicious-email-that-was-delivered.md)

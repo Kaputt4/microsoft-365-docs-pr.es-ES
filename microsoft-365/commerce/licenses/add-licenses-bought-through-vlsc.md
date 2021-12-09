@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Obtén información sobre cómo agregar licencias a tu suscripción Microsoft 365 comprada a través del partner de terceros, reconocido por Microsoft.
 ms.date: 08/27/2021
-ms.openlocfilehash: d5c8c689db74c1e12588ab1ad1bcefc102f9476d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ebba7e0a27efdd0a49ba9719c93e04f5c2760b4
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203464"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369749"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Agregar licencias a una suscripción comprada en el Centro de servicios de licencias por volumen
 
@@ -34,12 +34,6 @@ Si compró su plan Microsoft 365 para empresas o Office 365 Enterprise a través
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

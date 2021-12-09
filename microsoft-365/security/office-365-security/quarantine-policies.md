@@ -17,12 +17,12 @@ ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2463e22de4e0d39c7c09b7234d24b33de3a4cae9
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: f5265c224f55c280dad0d1807338620b4b944a7b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320724"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373745"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -634,7 +634,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Re
 
 ## <a name="system-alerts-for-quarantine-release-requests"></a>Alertas del sistema para solicitudes de lanzamiento de cuarentena
 
-De forma predeterminada, la  directiva de alerta predeterminada denominada Usuario solicitado para liberar un mensaje en cuarentena genera automáticamente una alerta de gravedad media y envía mensajes de notificación a los miembros de los siguientes grupos de roles siempre que un usuario solicite la publicación de un mensaje en cuarentena:
+De forma predeterminada, la directiva de alerta predeterminada denominada Usuario solicitado para liberar un mensaje en cuarentena genera automáticamente una alerta informativo y envía mensajes de notificación **a** los miembros de los siguientes grupos de roles siempre que un usuario solicite la publicación de un mensaje en cuarentena:
 
 - Administrador de cuarentena
 - Administrador de seguridad

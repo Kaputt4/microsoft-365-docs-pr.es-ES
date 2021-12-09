@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio o cancelar la suscripción.
-ms.openlocfilehash: 1077f7c2cec8b99581c28b177e73f9c7b32f50c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3b6bd67c8678d4be2b483865ee76574fd727cda5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164637"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370013"
 ---
 # <a name="remove-a-domain"></a>Quitar un dominio
 
@@ -44,12 +44,6 @@ ms.locfileid: "60164637"
 ::: moniker range="o365-worldwide"
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración</a>.
 
 ::: moniker-end
 
@@ -77,12 +71,6 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración</a>.
@@ -106,11 +94,6 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 1. En el Centro de administración, vaya a la **página Grupos.** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
 
 ::: moniker-end
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la **página** > **Grupos.**
-
-::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
@@ -129,12 +112,6 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el Centro de administración, vaya a la página **Dominios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">de</a> instalación.
 
 ::: moniker-end
 
@@ -164,15 +141,6 @@ Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los us
 > No puede quitar el dominio [". onmicrosoft.com"](../setup/domains-faq.yml) de su cuenta. Al quitar un dominio, las cuentas de usuario volverán a la dirección ".onmicrosoft.com" como SMTP principal/UserprincipalName.
 
 ¿Todavía no funciona? Puede que su dominio necesite quitarse manualmente. [Llámenos](../../business-video/get-help-support.md) y le ayudaremos.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!NOTE]
-> No puede quitar el dominio [".onmicrosoft.de"](../setup/domains-faq.yml) de su cuenta. Al quitar un dominio, las cuentas de usuario volverán a la dirección ".onmicrosoft.de" como SMTP principal/UserprincipalName.
-
-¿Todavía no funciona? Puede que su dominio necesite quitarse manualmente. [Llámenos](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true) y le ayudaremos.
 
 ::: moniker-end
 

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Al cerrar su cuenta con Microsoft, se elimina toda la información relacionada con su cuenta, incluidas las licencias, los usuarios y los datos de usuario.
 ms.date: 04/02/2021
-ms.openlocfilehash: b19328ffaf785479b81d6253c602c8f80fca99ae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bfa5243eab6826626410ee54659a351f8ca7711a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202026"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371249"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -36,7 +36,7 @@ Al cerrar la cuenta de Microsoft, se elimina toda la información relacionada co
 
 Antes de iniciar este proceso, asegúrese de realizar una copia de seguridad de los datos que desea conservar.
 
-Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para realizar las tareas de este artículo. Para obtener más información, consulte [Acerca de los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="step-1-delete-users"></a>Paso 1: Eliminar usuarios
 
@@ -68,7 +68,7 @@ Si su organización usa Active Directory que se sincroniza con Microsoft Azure A
 6. Para cada suscripción deshabilitada, repita los pasos del 3 al 5 hasta que se eliminen todas las suscripciones.
 
 > [!NOTE]
-> Si no puede eliminar inmediatamente una suscripción deshabilitada, póngase [en contacto con el soporte técnico](../business-video/get-help-support.md).
+> Si no puede eliminar inmediatamente una suscripción deshabilitada, póngase [en contacto con el soporte técnico](../admin/get-help-support.md).
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Paso 4: Deshabilitar la autenticación multifactor
 
@@ -82,7 +82,7 @@ También puede usar [PowerShell para deshabilitar la autenticación multifactor 
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Paso 5: Eliminar el directorio en Azure Active Directory
 
-1. Inicie sesión en el <a href="https://aad.portal.azure.com/" target="_blank">Centro de administración de Azure AD</a> con una cuenta de administrador global.
+1. Inicie sesión en el <a href="https://aad.portal.azure.com/" target="_blank">centro Azure AD administración con</a> una cuenta de administrador global.
 2. Seleccione **Azure Active Directory**.
 3. Cambie a la organización que desea eliminar.
 4. Seleccione **Eliminar inquilino**.

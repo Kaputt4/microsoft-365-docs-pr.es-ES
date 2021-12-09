@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo planear y migrar las directivas de prevención Exchange de pérdida de datos en línea a Microsoft 365 DLP.
-ms.openlocfilehash: c1929af423259de770d561421945d471c9022ab4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 744ba3edbee1c6b84df9b8b5316c7df7e734cd6d
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201882"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61374069"
 ---
 # <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>Migrar directivas de prevención de pérdida de datos de Exchange Online al Centro de cumplimiento
 
@@ -84,7 +84,7 @@ La cuenta que use para ejecutar el asistente para migración debe tener acceso a
 1. Evalúe las directivas Exchange DLP y el Centro de cumplimiento haciendo estas preguntas:
 
 
-|Pregunta  |Acción  | Procedimiento de migración|
+|Pregunta  |Action  | Procedimiento de migración|
 |---------|---------|---------|
 |¿Sigue siendo necesaria la directiva?    |Si no es así, elimínelo o desactíelo |no migrar|
 |¿Se superpone con otras directivas DLP Exchange centro de cumplimiento?     |Si es así, ¿puede consolidar las directivas superpuestas?         |- Si se superpone con otra directiva de Exchange, cree manualmente la directiva DLP consolidada en el Centro de administración de Exchange y, a continuación, use el asistente para migración. </br> - Si se superpone con una directiva existente del Centro de cumplimiento, puede modificar la directiva existente del Centro de cumplimiento para que coincida, no migrar la versión Exchange cumplimiento|
@@ -116,6 +116,17 @@ Después de evaluar todas las directivas dlp Exchange y del Centro de cumplimien
 9. Revise el informe de migración. Preste atención a cualquier error que implique Exchange de flujo de correo. Puede corregirlas y volver a migrar las directivas asociadas.
 
 Las directivas migradas aparecerán ahora en la lista de directivas DLP en la consola DLP del Centro de cumplimiento. 
+
+## <a name="common-errors-and-mitigation"></a>Errores y mitigación comunes
+|Mensaje de error  |Reason  | Pasos recomendados/mitigación|
+|---------|---------|---------|
+|Ya existe una directiva de cumplimiento con `<Name of the policy>` nombre en escenarios `Dlp` .    |Es probable que esta migración de directiva se haya realizado antes y, a continuación, vuelva a tentarse en la misma sesión |Actualice la sesión para actualizar la lista de directivas disponibles para la migración. Todas las directivas migradas anteriormente deben estar en el `Already migrated` estado.|
+|Ya existe una directiva de cumplimiento con `<Name of the policy>` nombre en escenarios `Hold` .     |Existe una directiva de retención con el mismo nombre en el mismo espacio empresarial.       |- Cambie el nombre de la directiva DLP en EAC a otro nombre. </br> - Reintentar la migración de la directiva afectada. |
+|`DLP-group@contoso.com` no se puede usar como valor para la condición Shared By porque es un grupo de distribución o un grupo de seguridad habilitado para correo. Use Shared by Member of predicate para detectar actividades de miembros de determinados grupos.     |Las reglas de transporte permiten que los grupos se utilicen en la condición, pero DLP unificado `sender is` no lo permite.         | Actualice la regla de transporte para quitar todas las direcciones de correo electrónico de grupo de la condición y agregar el grupo `sender is` a la condición si es `sender is a member of` necesario. Reintentar la migración de la directiva afectada|
+|No se pudo encontrar el destinatario `DLP-group@contoso.com` . Si se acaba de crear, vuelva a intentar la operación después de algún momento. Si se elimina o expira, restablezca con valores válidos e inténtelo de nuevo.     |Es probable que la dirección de grupo usada en `sender is a member of` o `recipient is a member of` condición haya expirado o no sea válida.         | - Quitar o reemplazar todas las direcciones de correo electrónico de grupo no válidas en la regla de transporte en Exchange centro de administración. </br> - Reintentar la migración de la directiva afectada.|
+|El valor especificado en predicado debe ser el grupo de seguridad `FromMemberOf` habilitado para correo.     |Las reglas de transporte permiten que los usuarios individuales se utilicen en la condición, pero DLP unificado `sender is a member of` no lo permite.         | - Actualizar la regla de transporte para quitar todas las direcciones de correo electrónico de usuario individuales de la condición y agregar los `sender is a member of` usuarios a la condición si es `sender is` necesario. </br> - Reintentar la migración de la directiva afectada.|
+|El valor especificado en predicado debe ser el grupo de seguridad `SentToMemberOf` habilitado para correo.    |Las reglas de transporte permiten que los usuarios individuales se utilicen con la condición, pero DLP unificada `recipient is a member of` no lo permite.         | - Actualizar la regla de transporte para quitar todas las direcciones de correo electrónico de usuario individuales de la condición y agregar los `recipient is a member of` usuarios a la condición si es `recipient is` necesario. </br> - Reintentar la migración de la directiva afectada.|
+|El uso `<Name of condition>` del parámetro solo se admite Exchange. Quite este parámetro o active solo la Exchange ubicación.         | Es probable que exista otra directiva con el mismo nombre en el Centro de cumplimiento con otras ubicaciones como SPO/ODB/Teams para las que no se admite la condición mencionada. | Cambie el nombre de la directiva DLP Exchange centro de administración y vuelva a intentar la migración.|
 
 ## <a name="testing-and-validation---prateek-and-aakash-to-provide-a-list-of-supported-predicates-and-known-issues-before-publishing--"></a>Pruebas y validación <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING-->
 

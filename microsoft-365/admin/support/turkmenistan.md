@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7a455c1b7642f83cf81874807dce510cbbc8432
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c3cd4d3c23fa500ff3d6f205a2ceb1def0b8aa2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189829"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61371981"
 ---
 # <a name="contact-support-for-turkmenistan"></a>Póngase en contacto con el soporte técnico de Turkmenistán
 
-[Buscar otro país o región](../../business-video/get-help-support.md).
+[Buscar otro país o región](../get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 +7 499 922 86 23

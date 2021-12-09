@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 6ea5027daad00e6c141bfb53137307113321aa7a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a881f6829d99ef8e7a47340140609cbc75d7e5c3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60655449"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370313"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -44,12 +44,6 @@ Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los dat
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso**.
 
 ::: moniker-end
 

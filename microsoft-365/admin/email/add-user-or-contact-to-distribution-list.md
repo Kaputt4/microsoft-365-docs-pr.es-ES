@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Obtenga información sobre cómo agregar un Microsoft 365 o contacto como un empleado, un socio o un proveedor a un grupo de distribución de correo electrónico.
-ms.openlocfilehash: b66f599ec2fd59aeb5749e98473c8fba4a8ecb0d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f70f56b26b35bae3509a9189ceb8b5fc222dfa5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165177"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370049"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Agregar un usuario o contacto a un grupo de distribución
 
-Como administrador de una organización, es posible que deba agregar uno de sus usuarios o contactos a un grupo de distribución (vea Crear grupos de distribución [en Microsoft 365](../setup/create-distribution-lists.md)). Por ejemplo, puede agregar empleados o socios externos o proveedores a un grupo de distribución de correo electrónico.
+Como administrador de una organización, es posible que deba agregar uno de sus usuarios o contactos a un grupo de distribución (vea Crear grupos de distribución [en Microsoft 365](../setup/create-distribution-lists.md). Por ejemplo, puede agregar empleados o socios externos o proveedores a un grupo de distribución de correo electrónico.
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Agregar un usuario o contacto a un grupo de distribución
 

@@ -14,7 +14,7 @@ metadata:
   ms.localizationpriority: high
 productDirectory:
   items:
-    - title: Comenzar
+    - title: Introducción
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: Planee su traslado a Microsoft 365 para empresas.
       url: ../admin/admin-overview/what-is-microsoft-365.md
@@ -45,7 +45,7 @@ productDirectory:
     - title: Configurar aplicaciones empresariales
       imageSrc: 'https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg'
       summary: 'Configurar y aprender sobre Bookings, Lists, Tasks...'
-      url: overview-bookings.md
+      url: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
     - title: Administrar la suscripción
       imageSrc: 'https://docs.microsoft.com/office/media/icons/settings.svg'
       summary: 'Administrar usuarios, restablecer contraseñas, ver la factura...'
@@ -61,7 +61,7 @@ productDirectory:
     - title: Obtener soporte técnico
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
       summary: Obtenga ayuda con Microsoft 365 para empresas.
-      url: get-help-support.md
+      url: ../admin/get-help-support.md
 additionalContent:
   sections:
     - title: Más información

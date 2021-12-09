@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 1d0c8c007a9e1e06980f06c7db0add1830c28ae0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 391a3f3d59b5583a89db4e0b2a3d54b3e488f729
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198942"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372413"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -134,7 +134,7 @@ Si se le factura desde una de las siguientes ubicaciones, se aplica el impuesto 
 
 En Estados Unidos, Canadá, México, Chile y Colombia, se aplican diversas tasas fiscales según la naturaleza del producto y su ubicación.
   
-Si la facturación la realiza Microsoft Corporation[(](view-your-bill-or-invoice.md)consulta la factura ) y te has registrado para Microsoft 365 fuera de los Estados Unidos, Canadá, Puerto Rico, Chile y Colombia, los impuestos generalmente no se cobran.
+Si Microsoft Corporation realiza la facturación[(](view-your-bill-or-invoice.md)consulta la factura y te has registrado para Microsoft 365 fuera de los Estados Unidos, Canadá, Puerto Rico, Chile y Colombia, los impuestos generalmente no se cobran.
 
 ## <a name="add-your-vat-id"></a>Agregar el identificador de IVA
 
@@ -142,7 +142,7 @@ Si la facturación la realiza Microsoft Corporation[(](view-your-bill-or-invoice
 2. En la pestaña **Productos**, seleccione la suscripción que quiera actualizar.
 3. En la página detalles de la suscripción, en la **sección Dirección de uso del** servicio, seleccione Editar dirección de uso del **servicio**.
 4. En el panel Editar dirección  de uso **del** servicio, en el cuadro Número de IVA, escriba el identificador de IVA, incluido el prefijo, y sin espacios.
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ## <a name="how-taxes-are-calculated"></a>Cómo se calculan los impuestos
 
@@ -158,7 +158,7 @@ o:
 
 ## <a name="apply-for-tax-exempt-status"></a>Solicitar el estado de exención de impuestos
 
-Si reúne los requisitos para el estado de exención de impuestos en el mercado, inicie una solicitud de [servicio](../../business-video/get-help-support.md) para establecer el estado de exención de impuestos para su organización.
+Si reúne los requisitos para el estado de exención de impuestos en el mercado, inicie una solicitud de [servicio](../../admin/get-help-support.md) para establecer el estado de exención de impuestos para su organización.
 
 |País o configuración regional | Documentación |
 |------------------|----------------|

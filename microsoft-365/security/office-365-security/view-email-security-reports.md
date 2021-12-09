@@ -16,15 +16,17 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a buscar y usar los informes de seguridad de correo electrónico que están disponibles en el portal Microsoft 365 Defender correo electrónico.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 33bc93dba189a571779f2cd36fe3b295ed3acc2a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f9be6475143f887fb0a4ec3a5f441962bb7eac31
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211950"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372365"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -54,7 +56,7 @@ El **informe Usuarios comprometidos** muestra el número de  cuentas  de usuario
 
 La vista de agregado muestra los datos de los últimos 90 días y la vista de detalles muestra los datos de los últimos 30 días.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Usuarios** en peligro y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/CompromisedUsers> .
+Para ver el informe en el portal de Microsoft 365 Defender en , vaya a Informes de correo electrónico & <https://security.microsoft.com>  \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Usuarios** en peligro y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/CompromisedUsers> .
 
 En la **página Usuarios en peligro,** el gráfico muestra la siguiente información para el intervalo de fechas especificado:
 
@@ -99,14 +101,14 @@ Si selecciona Desglose **de gráficos por dirección,** los siguientes gráficos
 
 La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
-- **Date**
+- **Fecha**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
 - **Asunto**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
-- **Direction**
+- **Dirección**
 
 Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
 
@@ -137,7 +139,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
-- **Direction**
+- **Dirección**
 
 Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
 
@@ -158,7 +160,7 @@ En la página de informe principal, el ![ icono Crear programación.](../../medi
 
 El **informe de** estado de flujo de correo es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, las detecciones de correo no deseado, el malware, el correo electrónico identificado como "bueno" y la información sobre el correo electrónico permitido o bloqueado en el perímetro. Este es el único informe que contiene información de protección perimetral y muestra cuánto correo electrónico se bloquea antes de que se le permita entrar en el servicio para su evaluación por parte de Exchange Online Protection (EOP). Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Resumen de estado de **flujo** de correo y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/mailflowStatusReport> .
+Para ver el informe en el portal de Microsoft 365 Defender en , vaya a Informes de correo electrónico & <https://security.microsoft.com>  \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Resumen de estado de **flujo** de correo y, a continuación, haga clic en **Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/mailflowStatusReport> .
 
 ![Widget de resumen de estado de flujo de correo en la página Informes de colaboración & correo electrónico.](../../media/mail-flow-status-report-widget.png)
 
@@ -178,8 +180,8 @@ En la **página Informe de estado de flujo de** correo, la **pestaña** Tipo est
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
-- **Direction**
-- **Type**
+- **Dirección**
+- **Tipo**
 - **24 horas**
 - **3 días**
 - **7 días**
@@ -352,7 +354,7 @@ Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filt
 
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Usuario suplantado**
 - **Infraestructura de envío**
 - **Tipo de suplantación**
@@ -371,13 +373,13 @@ En la página de informe principal, el ![ icono Crear programación.](../../medi
 
 El **informe Envíos** muestra información sobre los elementos que los administradores han notificado a Microsoft para su análisis. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Envíos** y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/adminSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**. Los administradores podrán ver el informe durante los últimos 30 días.
+Para ver el informe en el portal de Microsoft 365 Defender en , vaya a Informes de correo electrónico & <https://security.microsoft.com>  \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Envíos** y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/adminSubmissionReport> . Para ir a [envíos de administrador en el portal de Microsoft 365 Defender,](admin-submission.md)haga clic **en Ir a Envíos**. Los administradores podrán ver el informe durante los últimos 30 días.
 
 ![Widget Envíos en la página Informes de colaboración & correo electrónico.](../../media/submissions-report-widget.png)
 
 El gráfico muestra la siguiente información:
 
-- **Pendiente**
+- **Pending**
 - **Completed**
 
 Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
@@ -390,7 +392,7 @@ Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filt
 - **Identificador de envío**
 - **Id. de mensaje de red**
 - **Sender**
-- **Name**
+- **Nombre**
 - **Enviado por**
 - **Motivo para enviar**:
   - **No es correo no deseado**
@@ -398,7 +400,7 @@ Puede filtrar tanto el gráfico como  la tabla de detalles haciendo clic en Filt
   - **Malware**
   - **Correo no deseado**
 - **Estado de volver a examinar:**
-  - **Pendiente**
+  - **Pending**
   - **Completed**
 
 La tabla de detalles debajo del gráfico  muestra la misma información  y tiene las mismas opciones de grupo o personalizar columnas que en la pestaña Enviado para el análisis en Correo electrónico **& envíos** de  \> **colaboración.** Para obtener más información, vea [Ver envíos de administrador a Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
@@ -598,7 +600,7 @@ En la vista Ver  **datos por malware de \> correo** electrónico y desglose de g
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -640,7 +642,7 @@ En la página de informe principal, el ![ icono Crear programación.](../../medi
 En las vistas  Ver datos por **\> suplantación** de identidad de correo electrónico **, \>** Ver datos por correo no deseado o Ver datos por correo electrónico Malintencionado, al seleccionar Desglose del gráfico por tipo de directiva se muestra la siguiente información en el gráfico: **\>**
 
 - **Antimalware**
-- **Caja fuerte Datos adjuntos**<sup>\*</sup>
+- **Caja fuerte adjuntos**<sup>\*</sup>
 - **Anti-phish**
 - **Contra correo no deseado**
 - **Regla de flujo de** correo (también conocida como regla de transporte)
@@ -648,7 +650,7 @@ En las vistas  Ver datos por **\> suplantación** de identidad de correo electr�
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -820,7 +822,7 @@ En la **vista Ver datos por invalidación del** sistema y Desglose de gráficos 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -890,7 +892,7 @@ Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 - **Tipo de directiva**:
   - **Todo**
   - **Antimalware**
-  - **Caja fuerte Datos adjuntos**<sup>\*</sup>
+  - **Caja fuerte adjuntos**<sup>\*</sup>
   - **Anti-phish**
   - **Contra correo no deseado**
   - **Regla de flujo de correo** (regla de transporte)
@@ -998,7 +1000,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el _portal_ de Microsoft 365 Defender y permisos para otras características en Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
@@ -1029,7 +1031,7 @@ Si no ve datos en los informes, compruebe los filtros que está usando y comprue
 
 Para administrar los informes programados que ya ha creado, siga estos pasos:
 
-1. En el portal Microsoft 365 Defender, vaya a **Informes** \> expanda Correo electrónico & la **colaboración** \> seleccione Administrar **programaciones**.
+1. En el portal Microsoft 365 Defender en , vaya a Informes expanda Correo electrónico & la colaboración <https://security.microsoft.com>  \> seleccione Administrar  \> **programaciones**.
 
    Para ir directamente a la **página Administrar programaciones,** use <https://security.microsoft.com/ManageSubscription> .
 
@@ -1080,16 +1082,16 @@ Para administrar los informes programados que ya ha creado, siga estos pasos:
 
 ### <a name="download-reports"></a>Descargar informes
 
-1. En el portal Microsoft 365 Defender, vaya a **Informes** expanda Correo electrónico & la colaboración \> seleccione Informes para  \> **descargar**.
+1. En el portal Microsoft 365 Defender en , vaya a <https://security.microsoft.com> **Informes** expanda Correo electrónico \> & **colaboración** \> seleccione Informes para **descargar**.
 
    Para ir directamente a la **página Informes para descarga,** use <https://security.microsoft.com/ReportsForDownload> .
 
 2. En la **página Informes para descarga,** se muestra la siguiente información para cada informe disponible:
    - **Fecha de comienzo**
-   - **Name**
+   - **Nombre**
    - **Tipo de informe**
    - **Last sent**
-   - **Direction**
+   - **Dirección**
 
    Busque y seleccione el informe que desea descargar.
 

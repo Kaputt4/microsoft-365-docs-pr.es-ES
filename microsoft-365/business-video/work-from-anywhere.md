@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general sobre cómo Microsoft 365 ayuda a trabajar desde cualquier lugar.
-ms.openlocfilehash: 7312f74bb27ba166650356ed6fa835c079ce0b76
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 56fff54805db76f7022747bdd911317aac0dd97c
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188570"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61369797"
 ---
 # <a name="work-from-anywhere---overview"></a>Trabajar desde cualquier lugar: información general
 
 ¿Lejos de su escritorio? ¿Ya no hay batería de portátil? No hay ningún problema. Controla tu trabajo desde cualquier lugar Office en tu teléfono o tableta.
 
-**Pro sugerencia:** Mantenga el equilibrio entre la vida laboral y la seguridad desactivando las notificaciones de las aplicaciones de trabajo en sus dispositivos personales.
+**Pro: mantenga** el equilibrio entre la vida laboral y la seguridad desactivando las notificaciones de las aplicaciones de trabajo en sus dispositivos personales.
 
 Usa las cuatro sugerencias siguientes para trabajar donde quiera que estés.
 
@@ -47,7 +47,7 @@ Use esta plantilla para analizar sus hábitos y la forma en que le gusta trabaja
 
 Puedes estar al tanto de los correos electrónicos y las citas con Outlook en el teléfono. Descarga la aplicación, luego inicia, inicia sesión y configura tu cuenta.
 
-Obtenga más detalles sobre cómo [instalar Outlook en un teléfono](install-apps-android.md).
+Obtenga más detalles sobre cómo [instalar Outlook en un teléfono](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f).
 
 ## <a name="save-your-files-to-the-cloud"></a>Guardar los archivos en la nube
 
@@ -65,7 +65,7 @@ Puedes almacenar los archivos personales en OneDrive y sincronizarlos desde el t
 1. Abra OneDrive e inicie sesión.
 1. Siga las instrucciones para finalizar la configuración y empezar a sincronizar.
 
-¿Necesita ayuda? Obtenga consejos sobre [dónde almacenar archivos,](store-files.md)cómo usar la aplicación OneDrive [móvil](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) y cómo sincronizar archivos [y carpetas](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97).
+¿Necesita ayuda? Obtenga consejos sobre [dónde almacenar archivos,](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e)cómo usar la aplicación OneDrive [móvil](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) y cómo sincronizar archivos [y carpetas](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97).
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>Abrir y editar los archivos desde cualquier dispositivo
 
@@ -73,7 +73,7 @@ Puedes almacenar los archivos personales en OneDrive y sincronizarlos desde el t
 
 Instala las Office en un teléfono o tableta y trabaja donde quiera que estés. Descarga las aplicaciones y, a continuación, inicia, inicia sesión y configura tu cuenta.
 
-Obtenga más información sobre cómo instalar el Aplicación de Office: [Android](install-apps-android.md)  |  [iOS](install-apps-ios.md).
+Obtenga más información sobre cómo instalar el Aplicación de Office: [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)  |  [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f).
 
 ¿No está seguro de lo que puede hacer en su teléfono o tableta? Obtenga más información sobre cómo usar Office aplicaciones:
 
@@ -81,8 +81,8 @@ Obtenga más información sobre cómo instalar el Aplicación de Office: [Androi
 | :------------------- | :------------------- |
 | [Aplicación de Office para iOS](https://support.microsoft.com/office/microsoft-office-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0)  | [Aplicación de Office para Android](https://support.microsoft.com/en-us/office/microsoft-office-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b)| 
 | [Usar Word en un dispositivo móvil](https://support.microsoft.com/office/93446a8c-3809-4227-902c-11f11ebe8c2a)|[Usar Word en un dispositivo móvil](https://support.microsoft.com/office/93446a8c-3809-4227-902c-11f11ebe8c2a)| 
-| [PowerPoint para obtener iPhone ayuda](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b)|[PowerPoint para Android Ayuda de tabletas](https://support.microsoft.com/office/2ada1d22-3784-4943-bc47-9d1ede42875c)| 
-| [PowerPoint para iPad Ayuda](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)|[PowerPoint para Android Ayuda de teléfonos](https://support.microsoft.com/office/f6714e00-0ee2-48d1-bd3d-e1997565861f)| 
+| [PowerPoint para obtener iPhone ayuda](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b)|[ayuda PowerPoint para Android tabletas](https://support.microsoft.com/office/2ada1d22-3784-4943-bc47-9d1ede42875c)| 
+| [PowerPoint para iPad ayuda](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)|[PowerPoint para Android teléfonos](https://support.microsoft.com/office/f6714e00-0ee2-48d1-bd3d-e1997565861f)| 
 
 ### <a name="work-in-a-browser"></a>Trabajar en un explorador
 

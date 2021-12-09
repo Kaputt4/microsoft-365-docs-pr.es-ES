@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo deshacer las claves raíz del cliente almacenadas en Azure Key Vault que se usan con la clave de cliente. Los servicios incluyen Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Teams.
-ms.openlocfilehash: 22cf7d1ee9635a92684d377d05a4c53a909eb4bb
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5f2de108d493e4b6d4233f4a932a24f524e468bb
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553969"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373277"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Rotar o alternar una Clave de cliente o una clave de disponibilidad
 
@@ -85,7 +85,7 @@ Para indicar a clave de cliente que use la nueva clave para cifrar buzones, ejec
   
 ## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Actualizar las claves de SharePoint Online, OneDrive para la Empresa y Teams archivos
 
-SharePoint Online solo te permite rodar una tecla a la vez. Si desea rodar ambas claves en un almacén de claves, espere a que se complete la primera operación. Microsoft recomienda escalonar las operaciones para evitar este problema. Al implementar cualquiera de las claves de Azure Key Vault asociadas con un DEP usado con SharePoint Online y OneDrive para la Empresa, debe actualizar el DEP para que apunte a la nueva clave. Esto no gira la clave de disponibilidad.
+SharePoint Online solo le permite rodar una tecla a la vez. Si desea rodar ambas claves en un almacén de claves, espere a que se complete la primera operación. Microsoft recomienda escalonar las operaciones para evitar este problema. Al implementar cualquiera de las claves de Azure Key Vault asociadas con un DEP usado con SharePoint Online y OneDrive para la Empresa, debe actualizar el DEP para que apunte a la nueva clave. Esto no gira la clave de disponibilidad.
 
 1. Ejecute el cmdlet Update-SPODataEncryptionPolicy de la siguiente manera:
   
@@ -98,7 +98,7 @@ SharePoint Online solo te permite rodar una tecla a la vez. Si desea rodar ambas
 2. Para ver el progreso de la operación de lanzamiento de claves, ejecute el cmdlet Get-SPODataEncryptionPolicy de la siguiente manera:
 
    ```powershell
-   Get-SPODataEncryptionPolicy  <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
    ```
 
 ## <a name="related-articles"></a>Artículos relacionados

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido para el etiquetado o la aplicación de directivas, ya que le proporciona ejemplos positivos y negativos que buscar.
-ms.openlocfilehash: 69074baf8ce39352341a484c1d0aa6ce99bf94cd
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13e16394e9be1a2dd6b3d9cdcf4e18a736de158b
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302187"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373781"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -43,7 +43,7 @@ Esta categoría de mecanismos de clasificación incluye la búsqueda de contenid
 - Reconocer un elemento porque es una variación en una plantilla [(impresión de dedo del documento).](document-fingerprinting.md)
 - Uso de la presencia de cadenas exactas [exactas coincidencia de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en [Learn about data loss prevention](dlp-learn-about-dlp.md)) y aplicar automáticamente directivas para [etiquetas de retención.](apply-retention-labels-automatically.md)
+Las [etiquetas](dlp-learn-about-dlp.md) de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en Obtenga información sobre la prevención de pérdida de datos y aplique automáticamente directivas para [etiquetas de retención.](apply-retention-labels-automatically.md)
 
 ## <a name="classifiers"></a>Clasificadores
 
@@ -69,7 +69,7 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones, v
 Microsoft 365 viene con varios clasificadores previamente formados:
 
 > [!CAUTION]
-> Estamos desaprobando el clasificador preentrenado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si lo está usando actualmente, debe quitar los procesos empresariales de él. Se recomienda usar los **clasificadores de** amenazas, **profanidad** y acoso **previamente** formados en su lugar.
+> Estamos desaprobando el clasificador **de lenguaje ofensivo** entrenado previamente porque ha estado produciendo un gran número de falsos positivos. No lo use y, si lo está usando actualmente, debe quitar los procesos empresariales de él. Se recomienda usar los **clasificadores de** amenazas, **profanidad** y acoso **previamente** formados en su lugar.
 
 - **Resumes:** detecta elementos que son cuentas textuales de las cualificaciones personales, educativas, profesionales, experiencia laboral y otra información de identificación personal de un solicitante
 - **Código fuente:** detecta elementos que contienen un conjunto de instrucciones y instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub
@@ -148,7 +148,7 @@ Puede ayudar a mejorar la precisión de todos los clasificadores personalizados 
 
 ![flujo de trabajo de reciclaje de clasificadores.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Cambie su dirección de correo electrónico a una dirección de correo electrónico descriptivo como tom@fourthcoffee.com comprando un nombre de dominio y adición a Microsoft 365.
-ms.openlocfilehash: bf6de4115b37e6f83da7b924cc41f4d2c13ac427
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: f388bfcea3131df6a66733c940ed2f566827d2e5
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61127985"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370577"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Cambiar la dirección de correo electrónico para usar el dominio personalizado
 
@@ -41,12 +41,6 @@ ms.locfileid: "61127985"
 ::: moniker range="o365-worldwide"
 
 La dirección de correo electrónico inicial en Microsoft 365 incluye .onmicrosoft.com, como tom@fourthcoffee.onmicrosoft.com. Puede cambiarla por una más sencilla como tomas@fourthcoffee.com. Antes, necesitará su propio nombre de dominio, como fourthcoffee.com. Si ya tiene uno, ¡genial! Si no es así, puede obtener información sobre cómo [comprar uno en un registrador de dominios](../get-help-with-domains/buy-a-domain-name.md).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-La dirección de correo electrónico inicial en Office 365 Alemania incluye .onmicrosoft.de, como tom@fourthcoffee.onmicrosoft.de. Puedes cambiarla a una dirección más sencilla como tom@fourthcoffee.de. Necesitará su propio nombre de dominio, como fourthcoffee.de primero. Si ya tiene uno, ¡genial! Si no es así, puede obtener información sobre cómo [comprar uno en un registrador de dominios](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
@@ -85,12 +79,6 @@ Para poder realizar estos pasos, debe ser Administrador global.
 ::: moniker range="o365-worldwide"
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
 ::: moniker-end
 

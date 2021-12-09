@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información acerca de cómo renovar la mayoría de la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
 ms.date: 05/04/2021
-ms.openlocfilehash: a2f43433c883a5380f4f4f92921bc99e5bf9effb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188438"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370085"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
@@ -49,12 +49,6 @@ Si ha pagado por adelantado su suscripción con una clave de producto, la suscri
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 

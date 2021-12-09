@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9f1a00173228cf973ed0149d88c81b3d3f2c6fa
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 179b3bf9ecd1ff7f7045f386d740eff4e83a12c9
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283070"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373097"
 ---
 # <a name="get-domain-related-machines-api"></a>Obtener API de máquinas relacionadas con el dominio
 
@@ -60,8 +60,8 @@ Delegado (cuenta profesional o educativa)|Machine.ReadWrite|'Leer y escribir inf
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (Para obtener más información, vea [Crear y administrar roles](user-roles.md))
-> - La respuesta incluirá solo los dispositivos a los que el usuario puede tener acceso, en función de la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md))
+> - El usuario debe tener al menos el siguiente permiso de función: "Ver datos" (Para obtener más información, vea [Crear y administrar roles](user-roles.md)
+> - La respuesta incluirá solo los dispositivos a los que el usuario puede tener acceso, en función de la configuración del grupo de dispositivos (Para obtener más información, vea [Crear y administrar grupos de dispositivos](machine-groups.md)
 
 ## <a name="http-request"></a>Solicitud HTTP
 

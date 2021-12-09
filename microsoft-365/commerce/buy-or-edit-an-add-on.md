@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: Obtenga información sobre cómo comprar y administrar complementos para su suscripción Microsoft 365 para empresas.
 ms.date: 04/02/2021
-ms.openlocfilehash: 316692bb514285dc177397d7b8f61c4dcd0dcf7c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b7bedc12cd8e8a0813689e42723f981561eb2c1
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190962"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370973"
 ---
 # <a name="buy-or-manage-add-ons"></a>Comprar o administrar complementos
 
@@ -70,7 +70,7 @@ Para administrar un complemento tradicional, vaya a la suscripción que lo conti
 
 Para quitar una suscripción de complemento independiente, [cancela la suscripción,](subscriptions/cancel-your-subscription.md)al igual que cualquier otra suscripción. O puede desactivar [la facturación periódica](subscriptions/renew-your-subscription.md).
 
-No puede quitar un complemento tradicional. Si desea quitar un complemento tradicional, póngase en contacto con el [soporte técnico para obtener ayuda](../business-video/get-help-support.md).
+No puede quitar un complemento tradicional. Si desea quitar un complemento tradicional, póngase en contacto con el soporte técnico para obtener ayuda ([Obtener soporte técnico](../admin/get-help-support.md).
   
 ## <a name="related-content"></a>Contenido relacionado
 

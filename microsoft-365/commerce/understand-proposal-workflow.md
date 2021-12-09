@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 0a067049f278daee3c6e55aba00a81dcb2746c3c
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: c358022648bb81c5ca90d348a9d3c3b812c36ff2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754782"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372893"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprender el flujo de trabajo de propuestas
 
@@ -97,7 +97,7 @@ Después de iniciar sesión, lo primero que hace es revisar la información de s
 
 La **sección Su organización** muestra la cuenta de facturación asociada a ella. La información de la cuenta de facturación se extrae de una cuenta de facturación existente o la crea el representante de Microsoft. Si su organización es una filial de  otra organización, también verá una sección Organización para clientes potenciales con el nombre y la dirección de esa organización.
 
-Si es la primera vez que su organización establece una relación comercial con Microsoft y aún  no  ha firmado un MCA, si la información de Su organización o organización de clientes potenciales es incorrecta, póngase en contacto con el representante para realizar cambios por usted. Después de aceptar un MCA, puede revisar y cambiar la dirección y la información de contacto de su organización en la página [Cuentas](https://go.microsoft.com/fwlink/p/?linkid=2084771) de facturación en el Centro de administración de Microsoft 365. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio.](../business-video/get-help-support.md)
+Si es la primera vez que su organización establece una relación comercial con Microsoft y aún  no  ha firmado un MCA, si la información de Su organización o organización de clientes potenciales es incorrecta, póngase en contacto con el representante para realizar cambios por usted. Después de aceptar un MCA, puede revisar y cambiar la dirección y la información de contacto de su organización en la página [Cuentas](https://go.microsoft.com/fwlink/p/?linkid=2084771) de facturación en el Centro de administración de Microsoft 365. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio](../admin/get-help-support.md).
 
 ### <a name="your-information"></a>Su información
 
@@ -119,7 +119,7 @@ La propuesta contiene la siguiente información:
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para comunicarles que aún está interesado en la propuesta. |
-| Moneda | Moneda usada para calcular el costo de los elementos de la propuesta. |
+| Divisa | Moneda usada para calcular el costo de los elementos de la propuesta. |
 | Preparado para | Nombre de cuenta de facturación, dirección, dirección de correo electrónico de contacto y número de teléfono de la persona que solicitó la propuesta. |
 | Preparado por | La dirección de correo electrónico del representante de Microsoft que preparó la propuesta. |
 | Resumen | Muestra el subtotal asociado a la propuesta. Si es necesario, también mostrará la tasa de divisas (FX) que se usa para calcular los costos. |

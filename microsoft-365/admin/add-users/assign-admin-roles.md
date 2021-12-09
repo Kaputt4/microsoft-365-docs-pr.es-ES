@@ -29,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o varios usuarios de su empresa para que puedan realizar tareas específicas en el Centro de administración.
-ms.openlocfilehash: 4a112f17f253289383353720db8bb3365095d645
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fd38bb9ed378e6b3ffc20a79ca71eb2943599dcc
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128417"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370625"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
@@ -49,7 +49,7 @@ Cuando agregas nuevos usuarios, si no les asignas un  rol de administrador, ento
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 1. Cuando te registras en Microsoft 365 Empresa, automáticamente te conviertes en un administrador global. Para ayudar a administrar la empresa, también puedes hacer administradores de otras personas. 
-1. En el Centro de administración de Microsoft 365, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
+1. En el Centro de administración de Microsoft 365, seleccione **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Usuarios activos.**</a>.
 1. Elija el usuario que desea crear un administrador y, a continuación, seleccione **Administrar roles**.
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
@@ -75,12 +75,6 @@ Puede asignar usuarios a un rol de dos maneras diferentes:
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a **La página Usuarios** usuarios > [activos.](https://go.microsoft.com/fwlink/p/?linkid=834822)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 

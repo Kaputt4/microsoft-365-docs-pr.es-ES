@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d136ae298abdf876a9be6f58634940ec71c07e47
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 3b56d407381633853ea683b50ac969f88f15ff45
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792345"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61373445"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender requisitos previos
 
@@ -38,7 +38,7 @@ ms.locfileid: "60792345"
 Obtenga información sobre las licencias y otros requisitos para aprovisionar y usar [Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
-Cualquiera de estas licencias le da acceso a Microsoft 365 Defender características de Microsoft 365 Defender portal sin costo adicional:
+Cualquiera de estas licencias le ofrece acceso a Microsoft 365 Defender a través del portal de Microsoft 365 Defender sin costo adicional:
 
 - Microsoft 365 E5 o A5
 - Microsoft 365 E3 con el Seguridad de Microsoft 365 E5 complemento
@@ -49,7 +49,7 @@ Cualquiera de estas licencias le da acceso a Microsoft 365 Defender característ
 - Office 365 E5 o A5
 - Microsoft Defender para punto de conexión
 - Microsoft Defender for Identity 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Defender para Office 365 (Plan 2)
 
 Para obtener más información, [vea el Microsoft 365 Enterprise de servicio](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
@@ -69,11 +69,8 @@ Debe ser un administrador **global o** **un** administrador de seguridad en Azur
 Acceda Microsoft 365 Defender en el portal de Microsoft 365 Defender con Microsoft Edge, Internet Explorer 11 o cualquier explorador web compatible con HTML 5.
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilidad para estados GCC, GCC High y otras instituciones gubernamentales de EE. UU.
-Actualmente, Microsoft 365 Defender *no está* disponible para:
-- Us Government Community Cloud High (GCC High)
-- Departamento de Defensa de ESTADOS UNIDOS
-- Todas las instituciones gubernamentales de ESTADOS UNIDOS con licencias comerciales
 
+Para obtener información relacionada con los clientes del gobierno de estados unidos, [vea Microsoft 365 Defender para los clientes del gobierno de ESTADOS UNIDOS](usgov.md).
 
 Actualmente, Microsoft Defender para Office 365 integración en las características de Microsoft 365 Defender unificadas no están disponibles para los clientes en las siguientes ubicaciones Office 365 centro de datos:
 

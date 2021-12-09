@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Obtenga información sobre cómo agregar licencias a o ampliar su suscripción con una clave de producto.
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: a3d6f2d87952a9601a422854c1df2f96f497efdf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e9fed54eb7006906e7d54888709c14cdbff8a903
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194722"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370961"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Agregar licencias a o extender una suscripción pagada por usar una clave de producto
 
@@ -40,12 +40,6 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -66,12 +60,6 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

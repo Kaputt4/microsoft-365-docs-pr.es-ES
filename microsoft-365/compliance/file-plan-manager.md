@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 47f9c3646968dc54aaa9b2d78182585560a8ba1f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5154a5347fa22e5315abd148327d8eab5508f0d3
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555097"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372773"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Use el plan de archivos para administrar las etiquetas de retención
 
@@ -135,7 +135,11 @@ En el plan de archivos, puede importar en masa nuevas etiquetas de retención me
 
    ![Opción para descargar una plantilla de plan de archivos en blanco](../media/file-plan-blank-template-option.png)
 
-3. Después de descargar la plantilla, agregue una fila por cada etiqueta y guarde el archivo. Vea la [siguiente sección](#information-about-the-label-properties-for-import) para obtener información que describe las propiedades y los valores válidos de cada propiedad. 
+3. Después de descargar la plantilla, agregue una fila por cada etiqueta y guarde el archivo. Vea la [siguiente sección](#information-about-the-label-properties-for-import) para obtener información que describe las propiedades y los valores válidos de cada propiedad.
+    
+    Ejemplo de una plantilla rellenada:
+    
+    ![Plantilla del plan de archivos con información rellenada.](../media/file-plan-filled-out-template.png)
 
 4. Seleccione **Cargar un archivo** para cargar la plantilla rellenada.
     

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo crear y administrar Advanced eDiscovery casos. El primer paso es crear un caso y empezar a usar Advanced eDiscovery características y funcionalidades.
-ms.openlocfilehash: 9969f0afa63094f2a7bf49df921f61dd0d3da2a3
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: f647421dcaba3d50f1cb8b7a6b1e58a792f23403
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137140"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372725"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Crear y administrar un Advanced eDiscovery caso
 
@@ -97,7 +97,7 @@ Para empezar a usar Advanced eDiscovery, este es un flujo de trabajo básico que
 
    - [Ver documentos](view-documents-in-review-set.md). Esto incluye ver los metadatos de cada documento en un conjunto de revisión y ver el documento en su versión nativa o versión de texto.
 
-   - [Crear consultas y filtros](review-set-search.md). Puede crear consultas de búsqueda con varios criterios de búsqueda (incluida la capacidad de buscar todas las propiedades de metadatos de [archivo)](document-metadata-fields-in-advanced-ediscovery.md)para refinar y limitar aún más los datos de caso a lo que es más relevante para el caso. También puede usar filtros de conjunto de revisión para aplicar rápidamente otras condiciones a los resultados de una consulta de búsqueda para refinar aún más esos resultados. 
+   - [Crear consultas y filtros](review-set-search.md). Las consultas de búsqueda se crean con varios [](document-metadata-fields-in-advanced-ediscovery.md) criterios de búsqueda (incluida la capacidad de buscar todas las propiedades de metadatos de archivos para refinar y limitar aún más los datos de caso a lo que es más relevante para el caso. También puede usar filtros de conjunto de revisión para aplicar rápidamente otras condiciones a los resultados de una consulta de búsqueda para refinar aún más esos resultados. 
 
    - [Crear y usar etiquetas](tagging-documents.md). Puede aplicar etiquetas a documentos de un conjunto de revisión para identificar cuáles responden (o no responden al caso) y, a continuación, usar esas etiquetas al crear consultas de búsqueda para incluir o excluir los documentos etiquetados. También puede etiquetar para determinar qué documentos exportar.
 

@@ -14,16 +14,16 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: Obtenga información sobre cómo Microsoft usa la tecnología de cifrado para proteger los datos de los clientes en Microsoft Dynamics 365 mientras está en reposo en una base de datos de Microsoft y mientras está en tránsito.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fc07bba7ceccdfd2b215e29ef48dbd1f23c0cdf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba3dbef73b7674364f19e83befdbb8cdfe417ad6
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206078"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61372389"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Cifrado en Microsoft Dynamics 365
 
-Microsoft usa la tecnología de cifrado para proteger los datos de los clientes en Dynamics 365 mientras está en reposo en una base de datos de Microsoft y mientras está en tránsito entre los dispositivos de usuario y nuestros centros de datos. Las conexiones establecidas entre clientes y centros de datos de Microsoft están cifradas y todos los puntos de conexión públicos se protegen mediante TLS estándar del sector. TLS establece eficazmente una conexión de explorador a servidor mejorada en seguridad para ayudar a garantizar la confidencialidad e integridad de los datos entre escritorios y centros de datos. Después de activar el cifrado de datos, no se puede desactivar. Para obtener más información, vea [Field-level data encryption](/previous-versions/dynamicscrm-2016/developers-guide/dn481562(v=crm.8)).
+Microsoft usa la tecnología de cifrado para proteger los datos de los clientes en Dynamics 365 mientras está en reposo en un centro de datos de Microsoft y mientras está en tránsito entre los dispositivos de usuario y nuestros centros de datos. Las conexiones establecidas entre clientes y centros de datos de Microsoft están cifradas y todos los puntos de conexión públicos se protegen mediante TLS estándar del sector. TLS establece eficazmente una conexión de explorador a servidor mejorada en seguridad para ayudar a garantizar la confidencialidad e integridad de los datos entre escritorios y centros de datos. Después de activar el cifrado de datos, no se puede desactivar. Para obtener más información, vea [Field-level data encryption](/previous-versions/dynamicscrm-2016/developers-guide/dn481562(v=crm.8)).
 
 Dynamics 365 usa el cifrado Microsoft SQL Server nivel de celda estándar para un conjunto de atributos de entidad predeterminados que contienen información confidencial, como nombres de usuario y contraseñas de correo electrónico. Esta característica puede ayudar a las organizaciones a cumplir los requisitos de cumplimiento asociados con FIPS 140-2. El cifrado de datos a nivel de campo es especialmente importante en escenarios que aprovechan el enrutador de correo electrónico de [Microsoft Dynamics CRM](/previous-versions/dynamicscrm-2016/administering-dynamics-365/hh699800(v=crm.8)), que debe almacenar nombres de usuario y contraseñas para habilitar la integración entre una instancia de Dynamics 365 y un servicio de correo electrónico.
 
