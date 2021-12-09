@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 ms.localizationpriority: medium
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eba87b3e4f31e8812346b56bc6eba7f42f93ff42
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86b3d2eded39b92ee2375953c4c6af7fa449212a
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200874"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61368009"
 ---
 # <a name="contact-support-for-japan"></a>Póngase en contacto con el soporte técnico de Japón
 
-[Buscar otro país o región](../../business-video/get-help-support.md).
+[Buscar otro país o región](../get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0120 996 680 (Office 365 Enterprise)
