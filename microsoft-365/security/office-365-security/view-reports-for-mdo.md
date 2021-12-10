@@ -22,12 +22,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 26d883984dedae52285a343d573e0aa2cad0c005
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8270c6050f640b1c49b4f82c361812a019ae44d1
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372353"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401353"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -118,6 +118,10 @@ En la página de informe principal, el ![ icono Exportar.](../../media/m365-cc-s
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
 El **informe de estado** de protección contra amenazas es una única vista que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) y Microsoft Defender para Office 365. Para obtener más información, vea [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
+
+## <a name="top-senders-and-recipients-report"></a>Informe de remitentes y destinatarios principales
+
+En **el informe Principales remitentes y** destinatarios se muestran los destinatarios principales de EOP y Defender para Office 365 de protección. Para obtener más información, vea [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## <a name="url-protection-report"></a>Informe de protección de direcciones URL
 

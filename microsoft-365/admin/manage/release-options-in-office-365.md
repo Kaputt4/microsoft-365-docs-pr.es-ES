@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento para nuevas actualizaciones de productos y características en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: d053530b5b3ec0500783679ceb1823ce93992fae
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e3cf1987d6b3c22ed1414bd8e352da7acf49e60
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173060"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401203"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones de versión estándar o dirigida
 
@@ -47,7 +47,7 @@ Cualquier nueva versión primero se prueba y valida por el equipo de caracterís
 Para actualizaciones significativas, los clientes son notificados inicialmente por [el Microsoft 365 guía básica](https://products.office.com/business/office-365-roadmap). A medida que una actualización está más cerca de implementarse, se comunica a través Microsoft 365 [centro de mensajes](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> Necesita una cuenta Microsoft 365 o azure AD para tener acceso a su Centro de mensajes a través del [Centro de administración.](/office365/admin/admin-overview/about-the-admin-center) Microsoft 365 usuarios del plan principal no tienen un centro de administración.
+> Necesita una cuenta Microsoft 365 o Azure AD para acceder a su Centro de mensajes a través del [Centro de administración.](/office365/admin/admin-overview/about-the-admin-center) Microsoft 365 usuarios del plan principal no tienen un centro de administración.
 
 
 ## <a name="standard-release"></a>Versión estándar
@@ -64,7 +64,8 @@ Una buena práctica es dejar a  la mayoría de los usuarios  en la versión est�
 Con esta opción, usted y sus usuarios pueden ser los primeros en ver las últimas actualizaciones y ayudar a dar forma al producto al proporcionar comentarios anticipados. Puede elegir que los individuos o toda la organización reciban actualizaciones anticipadas.
   
 > [!IMPORTANT]
-> Las actualizaciones complejas o de gran tamaño pueden tardar más que otras para que los usuarios no se vean afectados negativamente. No hay ninguna garantía de la cronología exacta de un lanzamiento. 
+> - Las actualizaciones complejas o de gran tamaño pueden tardar más que otras para que los usuarios no se vean afectados negativamente. No hay ninguna garantía de la cronología exacta de un lanzamiento.
+> - Actualmente, la versión dirigida no está disponible para los clientes con el plan Office 365 GCC o el plan Office 365 GCC High y DoD.
   
 ### <a name="targeted-release-for-entire-organization"></a>Versión dirigida para toda la organización
 
@@ -107,7 +108,7 @@ Puede cambiar el modo en que su organización recibe Microsoft 365 actualizacion
     
 9. Cuando haya terminado de agregar usuarios, seleccione **Guardar cambios**.
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Descubra cómo administrar [mensajes en](/office365/admin/manage/message-center) su centro de [Microsoft 365 mensajes](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) para obtener notificaciones acerca de las próximas Microsoft 365 actualizaciones y versiones.
 

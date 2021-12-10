@@ -19,12 +19,12 @@ description: Los administradores pueden obtener información sobre los informes 
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b73410170b0a869010f0c0c40b9363eed7475e6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f742fc9f19d7b360e9402c9bc6331a84d2622979
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370925"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401345"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de & cumplimiento
 
@@ -87,62 +87,17 @@ Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://prot
 
 ## <a name="top-senders-and-recipients-report"></a>Informe de remitentes y destinatarios principales
 
-El **informe Principales remitentes y destinatarios** es un gráfico circular que muestra los principales remitentes y destinatarios de correo electrónico.
+The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Principales \>  **remitentes y destinatarios.** Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
+Para ver el informe, abra el Centro de seguridad & cumplimiento en , vaya al Panel de informes y seleccione Principales <https://protection.office.com>  \>  **remitentes y destinatarios.** Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
-![Widget Principales remitentes y destinatarios en el panel Informes.](../../media/top-senders-and-recipients-widget.png)
+- Defender para Office 365:<https://protection.office.com/TopSenderRecipientsATP>
+- EOP: <https://protection.office.com/TopSenderRecipients>
 
-### <a name="report-view-for-the-top-senders-and-recipient-report"></a>Vista Informe para el informe de destinatarios y remitentes principales
+![Widget Principales remitentes y destinatarios en el panel Informes.](../../media/scc-top-senders-and-recipients-widget.png)
 
-Los gráficos siguientes están disponibles en la vista informe:
-
-- **Mostrar datos para \> los principales remitentes de correo**
-- **Mostrar datos para \> los principales destinatarios de correo**
-- **Mostrar datos para los \> principales destinatarios de correo no deseado**
-- **Mostrar datos para \> Principales destinatarios de malware** (EOP)
-- **Mostrar datos para \> los destinatarios principales de malware (Defender para Office 365)**
-
-La composición del gráfico circular cambia en función de estas selecciones.
-
-Al pasar el mouse sobre una cuña en el gráfico circular, puede ver un recuento de mensajes enviados o recibidos.
-
-Si hace clic **en Filtros** en una vista de informe, puede especificar un intervalo de fechas con Fecha **de inicio** y Fecha **de finalización.**
-
-![Gráfico circular en la vista Informe del informe Principales remitentes y destinatarios.](../../media/top-senders-and-recipients-report-view.png)
-
-### <a name="details-table-view-for-the-top-senders-and-recipient-report"></a>Vista de tabla Detalles para el informe de destinatarios y remitentes principales
-
-Si hace clic **en Ver tabla de detalles,** la información que se muestra depende del gráfico que estaba mirando:
-
-- **Mostrar datos para \> los principales remitentes de correo**
-
-  - **Principales remitentes de correo**
-  - **Count**
-
-- **Mostrar datos para \> los principales destinatarios de correo**
-
-  - **Principales destinatarios de correo**
-  - **Count**
-
-- **Mostrar datos para los \> principales destinatarios de correo no deseado**
-
-  - **Principales destinatarios de correo no deseado**
-  - **Count**
-
-- **Mostrar datos para \> Principales destinatarios de malware** (EOP)
-
-  - **Principales destinatarios de malware**
-  - **Count**
-
-- **Mostrar datos para \> los destinatarios principales de malware (Defender para Office 365)**
-
-  - **Principales destinatarios de malware (Defender para Office 365)**
-  - **Count**
-
-Si hace clic **en Filtros en** una vista de tabla de detalles, puede especificar un intervalo de fechas con Fecha de **inicio** y Fecha **de finalización.**
-
-Para volver a la vista informe, haga clic **en Ver informe**.
+> [!NOTE]
+> Aunque hacer clic en el widget para este informe en el Centro de seguridad y cumplimiento de & le lleva a una página de protection.office.com, el contenido de la página es del portal de Microsoft 365 Defender web. Para obtener más información sobre el informe, vea [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 

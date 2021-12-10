@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 94f679599ada05ea7c012a34d5b189fd7b3b3fb9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cb4bbc8d8fff5d73ac8b56aa73528f6704804da5
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111392"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401455"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Novedades de Microsoft Defender para Endpoint en Android
 
@@ -32,6 +32,10 @@ ms.locfileid: "61111392"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
+
+El 2 de noviembre de 2021, anunciamos la versión preliminar pública de la administración de amenazas y vulnerabilidades en Android e iOS. Para obtener más información, [vea la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Próximos cambios de permisos para Microsoft Defender para endpoint que ejecute Android 11 o posterior (noviembre de 2021)
 

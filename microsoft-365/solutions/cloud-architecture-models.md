@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b036c6ca93310e6f88dee78171749c09056de84b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f7c2d35cbc8343779f9ccfb2cc369da9b4d7db4a
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373697"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401503"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos de TI
 
@@ -51,7 +51,7 @@ Lo que los arquitectos de TI necesitan saber sobre la seguridad en las plataform
   
 | Elemento | Descripción |
 |:-----|:-----|
-|[![Miniatura del modelo de seguridad en la nube de Microsoft para arquitectos empresariales.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Actualizado en noviembre de 2021 | Este modelo contiene lo siguiente: <ul><li>Responsabilidades de seguridad de Microsoft y clientes</li><li>Acceso de dispositivos e identidades</li><li>Protección contra amenazas</li><li>Protección de la información </ul><br/>|
+|[![Miniatura del modelo de seguridad en la nube de Microsoft para arquitectos empresariales.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Actualizado en diciembre de 2021 | Este modelo contiene lo siguiente: <ul><li>Responsabilidades de seguridad de Microsoft y clientes</li><li>Acceso de dispositivos e identidades</li><li>Protección contra amenazas</li><li>Protección de la información </li><li>Protección de aplicaciones en la nube </li></ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>Redes en la nube de Microsoft para arquitectos de TI

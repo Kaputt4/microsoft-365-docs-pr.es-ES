@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f9be6475143f887fb0a4ec3a5f441962bb7eac31
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 079228cb10c00246f37cb4f34f156ca36595e9ae
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372365"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401371"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -600,7 +600,7 @@ En la vista Ver  **datos por malware de \> correo** electrónico y desglose de g
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
@@ -916,7 +916,7 @@ Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** 
 
 Al pasar el mouse sobre una cuña en el gráfico circular, puede ver el nombre de un tipo de malware y cuántos mensajes se detectaron como que tienen ese malware.
 
-En la **página Informe de malware superior,** se muestra una versión más grande del gráfico circular en la página del informe. La tabla de detalles debajo del gráfico muestra la siguiente información:
+En la **página Informe de malware superior,** se muestra una versión más grande del gráfico circular. La tabla de detalles debajo del gráfico muestra la siguiente información:
 
 - **Malware superior**
 - **Count**
@@ -926,6 +926,45 @@ Si hace clic **en Filtrar**, puede especificar un intervalo de fechas con Fecha 
 En la página de informe principal, el ![ icono Crear programación.](../../media/m365-cc-sc-create-icon.png) **[Crear programación](#schedule-report)** y ![ exportar icono.](../../media/m365-cc-sc-download-icon.png) **[Los botones](#export-report)** de exportación están disponibles.
 
 ![Vista de informe de malware superior.](../../media/top-malware-report-view.png)
+
+## <a name="top-senders-and-recipients-report"></a>Informe de remitentes y destinatarios principales
+
+El informe de destinatarios y **remitentes** principales está disponible en EOP y Defender para Office 365; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre los principales destinatarios de malware, correo no deseado y suplantación de identidad (suplantación de identidad), pero no información sobre el malware detectado por los datos adjuntos de [Caja fuerte](safe-attachments.md) o la suplantación de identidad detectados por la protección de suplantación [.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+
+The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features. De forma predeterminada, el informe muestra los datos de la última semana, pero los datos están disponibles durante los últimos 90 días.
+
+Para ver el informe en el portal de Microsoft 365 Defender en , vaya a Informes de correo electrónico & <https://security.microsoft.com>  \> **colaboración** Correo & \> **informes de colaboración**. En la **página Informes de colaboración &** correo electrónico, busque El informe de **remitentes** y destinatarios principales y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra una de las siguientes direcciones URL:
+
+- Defender para Office 365:<https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
+
+![Widget Principales remitentes y destinatarios en el panel Informes.](../../media/top-senders-and-recipients-widget.png)
+
+Al pasar el mouse sobre una cuña en el gráfico circular, puede ver el número de mensajes para el remitente o el destinatario.
+
+En la **página Principales remitentes y** destinatarios, se muestra una versión más grande del gráfico circular. Los siguientes gráficos están disponibles:
+
+- **Mostrar datos para los principales remitentes de correo** (esta es la vista predeterminada)
+- **Mostrar datos para los principales destinatarios de correo**
+- **Mostrar datos para los principales destinatarios de correo no deseado**
+- **Mostrar datos para los principales destinatarios de malware** (EOP)
+- **Mostrar datos para los principales destinatarios de suplantación de identidad**
+- **Mostrar datos para los principales destinatarios de malware (MDO)**
+- **Mostrar datos para los principales destinatarios de phishing (MDO)**
+
+Los datos cambian en función de la selección.
+
+Al pasar el mouse sobre una cuña en el gráfico circular, puede ver el recuento de mensajes para ese remitente o destinatario específico.
+
+La tabla de detalles debajo del gráfico muestra los remitentes o destinatarios y los recuentos de mensajes en función de la vista seleccionada.
+
+Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **Filtrar** y seleccionando **Fecha de inicio** y Fecha de **finalización.**
+
+Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Cancelar** o **Borrar filtros**.
+
+En la página de informe principal, el ![ icono Exportar.](../../media/m365-cc-sc-download-icon.png) **El** botón Exportar está disponible.
+
+![Mostrar los datos de la vista Principales remitentes de correo en el informe Principales remitentes y destinatarios.](../../media/top-senders-and-recipients-report-view.png)
 
 ## <a name="url-protection-report"></a>Informe de protección de direcciones URL
 

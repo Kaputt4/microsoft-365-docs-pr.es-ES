@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: 1fd04bf22038a14b9051fc25109051e227ba1db6
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: ec09fd2c139b90b37811eea2467b275864ec9a06
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785599"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401479"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
 Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 para importar datos de recursos humanos (RRHH) relacionados con eventos como la dimisión de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la solución de administración de riesgos [insider](insider-risk-management.md) puede usar los datos de recursos humanos para generar indicadores de riesgo que puedan ayudarle a identificar posibles actividades malintencionadas o robo de datos por parte de los usuarios de su organización.
 
-La configuración de un conector para datos de recursos humanos que las directivas de administración de riesgos internas pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de recursos humanos, crear una aplicación en Azure Active Directory que se use para la autenticación, crear un conector de datos de RRHH en el Centro de cumplimiento de Microsoft 365 y, a continuación, ejecutar una  script (de forma programada) que ingieren los datos de recursos humanos en archivos CSV a la nube de Microsoft para que esté disponible para la solución de administración de riesgos insider.
+La configuración de un conector para datos de recursos humanos que las directivas de administración de riesgos internas pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de recursos humanos, crear una aplicación en Azure Active Directory que se use para la autenticación, crear un conector de datos de RRHH en el Centro de cumplimiento de Microsoft 365 , y, a continuación, ejecutar un script (de forma programada) que ingieren los datos de RECURSOS humanos en archivos CSV a la nube de Microsoft para que esté disponible para la solución de administración de riesgos insider.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -44,27 +44,31 @@ La configuración de un conector para datos de recursos humanos que las directiv
 
 El primer paso es crear un archivo CSV que contenga los datos de recursos humanos que el conector importará a Microsoft 365. La solución de riesgo insider usará estos datos para generar indicadores de riesgo potenciales. Los datos de los siguientes escenarios de recursos humanos se pueden importar a Microsoft 365:
 
-- Dimisión de los empleados. Información sobre los usuarios que han dejado la organización.
+- Dimisión de los empleados. Información sobre los empleados que han dejado la organización.
 
-- Cambios en el nivel de trabajo. Información sobre los cambios en el nivel de trabajo para los usuarios, como promociones y degradaciones.
+- Cambios en el nivel de trabajo. Información sobre los cambios en el nivel de trabajo para los empleados, como promociones y bajadas de nivel.
 
-- Revisiones de rendimiento. Información sobre el rendimiento del usuario.
+- Revisiones de rendimiento. Información sobre el rendimiento de los empleados.
 
-- Planes de mejora del rendimiento. Información sobre los planes de mejora de rendimiento para los usuarios.
+- Planes de mejora del rendimiento. Información sobre los planes de mejora de rendimiento para los empleados.
+
+- Perfil de empleado (versión preliminar). Información general sobre un empleado.
 
 El tipo de datos de recursos humanos que se importarán depende de la directiva de administración de riesgos insider y de la plantilla de directiva correspondiente que desee implementar. En la tabla siguiente se muestra qué tipo de datos de RECURSOS humanos es necesario para cada plantilla de directiva:
 
 |  Plantilla de directiva |  Tipo de datos HR |
-|:-----------------------------------------------|:---------------------------------------------------------------------|
-| Robo de datos por parte de los usuarios que abandonan la organización                   | Dimisiones de empleados                                                 |
-| Filtraciones de datos generales                              | No aplicable                                                        |
-| Filtraciones de datos por parte de usuarios prioritarios                    | No aplicable                                                        |
-| Filtraciones de datos por parte de usuarios inconformes                 | Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento |
-| Infracciones generales de la directiva de seguridad              | No aplicable                                                        |
-| Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización   | Dimisiones de empleados                                                 |
-| Infracciones de la directiva de seguridad por parte de los usuarios prioritarios    | No aplicable                                                        |
-| Infracciones de la directiva de seguridad por parte de usuarios inconformes | Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento |
-| Lenguaje ofensivo en el correo electrónico                     | No aplicable                                                        |
+|:------------------------------|:--------------------------------|
+| Robo de datos por parte de los usuarios que abandonan la organización | Dimisiones de empleados|
+| Filtraciones de datos generales                             | No aplicable|
+| Filtraciones de datos por parte de usuarios prioritarios                   | No aplicable |
+| Filtraciones de datos por parte de usuarios inconformes                | Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento|
+| Infracciones generales de la directiva de seguridad             | No aplicable |
+| Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización  | Dimisiones de empleados|
+| Infracciones de la directiva de seguridad por parte de los usuarios prioritarios   | No aplicable|
+| Infracciones de la directiva de seguridad por parte de usuarios inconformes| Cambios en el nivel de trabajo, revisiones de rendimiento, planes de mejora del rendimiento |
+| Lenguaje ofensivo en el correo electrónico                    | No aplicable |
+| Directiva de salud| Perfil de empleado |
+|||
 
 Para obtener más información acerca de las plantillas de directiva para la administración de riesgos de [insider,](insider-risk-management-policies.md#policy-templates)vea Insider risk management policies .
 
@@ -154,8 +158,43 @@ En la tabla siguiente se describe cada columna del archivo CSV para los datos de
 | **EmailAddress**  | Especifica la dirección de correo electrónico del usuario (UPN).|
 | **EffectiveDate** | Especifica la fecha en la que se informó oficialmente al usuario sobre su plan de mejora del rendimiento. Debe usar el siguiente formato de fecha: , que es el formato de fecha y hora `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Comentarios**| Especifica los comentarios que el evaluador ha proporcionado sobre el plan de mejora del rendimiento. Se trata de un parámetro de texto con un límite de 200 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV. |
-| **Clasificación**| Especifica cualquier clasificación u otra información relacionada con la revisión de rendimiento. plan de mejora del rendimiento. Se trata de un parámetro de texto y puede contener cualquier texto de formulario libre que su organización use para reconocer la evaluación. Por ejemplo, "3 Expectativas cumplidas" o "2 Por debajo de la media". Se trata de un parámetro de texto con un límite de 25 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
+| **Clasificación**| Especifica cualquier clasificación u otra información relacionada con la revisión de rendimiento. Se trata de un parámetro de texto y puede contener cualquier texto de formulario libre que su organización use para reconocer la evaluación. Por ejemplo, "3 Expectativas cumplidas" o "2 Por debajo de la media". Se trata de un parámetro de texto con un límite de 25 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
 |||
+
+### <a name="csv-file-for-employee-profile-data-preview"></a>Archivo CSV para datos de perfil de empleado (versión preliminar)
+
+> [!NOTE]
+> La capacidad de crear un conector de recursos humanos para datos de perfil de empleado está en versión preliminar pública. Para crear un conector de recursos humanos  que admita datos de perfil de empleado, vaya a la página Conectores de datos del Centro de cumplimiento de Microsoft 365, seleccione la pestaña Conectores y, a continuación, haga clic en Agregar **un** conector HR   >  **(versión preliminar).** Siga los pasos para crear un conector en [step 3: Create the HR connector](#step-3-create-the-hr-connector).
+
+Este es un ejemplo de un archivo CSV para los datos de los datos de perfil de empleado.
+
+```text
+EmailAddress,UserName,EmployeeFirstName,EmployeeLastName,EmployeeAddLine1,EmployeeAddLine2,EmployeeCity,EmployeeState,EmployeeZipCode,EmployeeDept,EmployeeType,EmployeeRole
+jackq@contoso.com,jackq,jack,qualtz,50 Oakland Ave,#206,City,Florida,32104,Orthopaedic,Regular,Nurse
+```
+
+En la tabla siguiente se describe cada columna del archivo CSV para los datos de perfil de empleado.
+
+|  Columna |  Descripción |
+|:----------|:---------------|
+| EmailAddress<sup>*</sup>    | El nombre principal de usuario (UPN) o la dirección de correo electrónico del empleado.|
+| EmployeeFirstName<sup>*</sup>   | Nombre del empleado.|
+| EmployeeLastName<sup>*</sup>   | Apellido del empleado.|
+| EmployeeAddressLine1<sup>*</sup>    | Dirección postal del empleado.|
+| EmployeeAddressLine2   | Información de dirección secundaria, como el número de departamento, para empleados.|
+| EmployeeCity | Ciudad de residencia para empleados.|
+| EmployeeState | Estado de residencia de los empleados.|
+| EmployeeZipCode<sup>*</sup>  | Código postal de residencia para empleados. |
+| EmployeeCountry| País de residencia para empleados.|
+| EmployeeDepartment | Departamento de empleados de la organización.|
+| EmployeeType |Tipo de empleo para empleados, como Regular, Exempt o Contractor.|
+| EmployeeRole |Rol, designación o puesto de trabajo de los empleados en la organización.|
+|||
+
+> [!NOTE]
+> <sup>*</sup> Esta columna es obligatoria. Si falta una columna obligatoria, el archivo CSV no se validará y no se importarán otros datos del archivo.
+
+Se recomienda crear un conector de recursos humanos que solo importe datos de perfil de empleado. Para este conector, asegúrese de actualizar con frecuencia los datos de perfil de empleado, preferiblemente cada 15 a 20 días. Los registros de perfil de empleado se eliminarán si no se han actualizado en los últimos 30 días.
 
 ### <a name="determining-how-many-csv-files-to-use-for-hr-data"></a>Determinación del número de archivos CSV que se usarán para los datos de RECURSOS HUMANOS
 
@@ -175,7 +214,7 @@ Estos son los requisitos para configurar un archivo CSV con varios tipos de dato
 
 - Debe agregar las columnas necesarias (y opcionales si las usa) para cada tipo de datos y el nombre de columna correspondiente en la fila de encabezado. Si un tipo de datos no corresponde a una columna, puede dejar el valor en blanco.
 
-- Para usar un archivo CSV con varios tipos de datos de recursos humanos, el conector de recursos humanos debe saber qué filas del archivo CSV contienen los datos de HR de tipo. Esto se logra agregando una columna **HRScenario adicional** al archivo CSV. Los valores de esta columna identifican el tipo de datos de recursos humanos de cada fila. Por ejemplo, los valores que corresponden a los cuatro escenarios de recursos humanos pueden ser \` Resignation \` , Job level \` \` change, Performance review y Performance \` improvement plan \` \` \` .
+- Para usar un archivo CSV con varios tipos de datos de recursos humanos, el conector de recursos humanos debe saber qué filas del archivo CSV contienen los datos de HR de tipo. Esto se logra agregando una columna **HRScenario adicional** al archivo CSV. Los valores de esta columna identifican el tipo de datos de recursos humanos de cada fila. Por ejemplo, los valores que corresponden a los cuatro escenarios de recursos humanos pueden ser \` Resignation \` , Job level change , Performance review , Performance improvement plan y \` Employee profile \` \` \` \` \` \` \` .
 
 - Si tiene varios archivos CSV que contienen una columna HRScenario**, asegúrese de que cada archivo usa el mismo nombre de columna y los mismos valores que identifican los escenarios de RECURSOS específicos.
 
@@ -228,11 +267,13 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
    1. Escriba o pegue el Azure AD de aplicación de la aplicación de Azure que creó en el paso 2.
 
-   1. Escriba un nombre para el conector de RECURSOS HUMANOS.
+   2. Escriba un nombre para el conector de RECURSOS HUMANOS.
 
 5. En la página Escenarios de recursos humanos, seleccione uno o varios escenarios de recursos humanos para los que desea importar datos y, a continuación, haga clic en **Siguiente**.
 
-6. En la página método de asignación de archivos, seleccione una de las siguientes opciones y, a continuación, haga clic en **Siguiente**.
+   ![Seleccione uno o varios escenarios de recursos humanos.](../media/HRConnectorScenarios.png)
+
+6. En la página método de asignación de archivos, seleccione un tipo de archivo si es necesario y, a continuación, seleccione una de las siguientes opciones y, a continuación, haga clic en **Siguiente**.
 
    - **Upload un archivo de ejemplo**. Si selecciona esta opción, haga clic Upload **archivo de ejemplo** para cargar el archivo CSV que preparó en el paso 1. Esta opción permite seleccionar rápidamente los nombres de columna en el archivo CSV de una lista desplegable para asignarlos a los tipos de datos de los escenarios de RECURSOS humanos que seleccionó anteriormente.
 
