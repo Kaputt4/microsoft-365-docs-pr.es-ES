@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f685e1aaa7b88cd2a86b2c4d7af4c9015edc225
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372173"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401335"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -168,11 +168,9 @@ Para ayudar a que los mensajes de la lista de distribución de correo pasen las 
 
   - Cree reglas de buzón en el cliente de correo para mover mensajes a la Bandeja de entrada. También puede pedir a sus administradores que configuren reemplazos tal y como se describe en [Información de la inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md) y [Administrar la lista de permitidos o bloqueados del espacio empresarial](tenant-allow-block-list.md).
 
-  - Cree un vale de soporte con Microsoft 365 para crear una invalidación de la lista de distribución de correo y usarla como legítima. Para obtener más información, consulte [Ponerse en contacto con el soporte técnico para productos empresariales: ayuda para administradores](../../admin/get-help-support.md).
+  - Use la lista de Permitir/Bloquear inquilinos para invalidar que la lista de distribución de correo la trate como legítima. Para obtener más información, vea [Agregar permisos en la lista Permitir/Bloquear inquilinos](manage-tenant-allows.md).
 
 Si todos los demás falla, puede notificar el mensaje como falso positivo a Microsoft. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
-
-También puede contactar con el administrador que puede crear una incidencia de soporte técnico para Microsoft. El equipo de ingeniería de Microsoft investigará por qué el mensaje se marcó como una suplantación de identidad.
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Consideraciones para la protección contra la suplantación de identidad
 
