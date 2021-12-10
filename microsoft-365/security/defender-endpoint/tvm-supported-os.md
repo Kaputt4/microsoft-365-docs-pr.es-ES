@@ -1,7 +1,7 @@
 ---
 title: Plataformas y capacidades de sistemas operativos compatibles
 description: Asegúrese de que cumple los requisitos del sistema operativo o de la plataforma para Administración de amenazas y vulnerabilidades, de modo que las actividades de todos los dispositivos se tienen en cuenta correctamente.
-keywords: threat & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, mac soporte técnico
+keywords: threat & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, Compatibilidad con mac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8135ce430773eae051f1214e685638073ef07809
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: dffae27148d91ccedfd0009b1ce2942f75430824
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899729"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164207"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para Administración de amenazas y vulnerabilidades
 
@@ -29,7 +29,7 @@ ms.locfileid: "60899729"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -46,9 +46,9 @@ En la tabla siguiente, "Sí" indica que se admite una funcionalidad Administraci
 
 Sistema operativo o plataforma compatibles|Vulnerabilidades del sistema operativo|Vulnerabilidades de productos de software|Evaluación de configuración del sistema operativo|Evaluación de configuración de controles de seguridad|Evaluación de configuración de productos de software
 :---|:---|:---|:---|:---|:---
-Windows 7|Sí|No compatible|No se admite|No se admite|No compatible
+Windows 7|Sí|No compatible|No compatible|No compatible|No compatible
 Windows 8.1|Sí|Sí|Sí|Sí|Sí
-Windows 10, versiones 1607-1703|Sí|No se admite|No se admite|No se admite|No se admite
+Windows 10, versiones 1607-1703|Sí|No compatible|No compatible|No compatible|No compatible
 Windows 10, versión 1709 o posterior|Sí|Sí|Sí|Sí|Sí
 Windows 11|Sí|Sí|Sí|Sí|Sí
 Windows Server 2008 R2|Sí|Sí|Sí|Sí|Sí
@@ -63,8 +63,8 @@ Ubuntu 16,04 LTS o superior LTS|Sí|Sí|Sí|Sí|Sí
 Oracle Linux 7.2 o posterior|Sí|Sí|Sí|Sí|Sí
 SUSE Linux Enterprise Server 12 o posterior|Sí|Sí|Sí|Sí|Sí
 Linux Debian 9 o posterior (en versión preliminar)|Sí|Sí|Sí|Sí|Sí
-Android 6.0 o posterior (en versión preliminar)|Sí|Sí|No se admite|No se admite|No se admite
-iOS 12.0 o posterior (en versión preliminar)|Sí|No se admite|No se admite|No se admite|No se admite
+Android 6.0 o posterior (en versión preliminar)|Sí|Sí|No compatible|No compatible|No compatible
+iOS 12.0 o posterior (en versión preliminar)|Sí|No compatible|No compatible|No compatible|No compatible
 
 > [!NOTE]
 > Algunas características no están disponibles para el sistema operativo de nivel inferior, consulte el portal de Microsoft 365 Defender para obtener más información sobre el sistema operativo compatible.

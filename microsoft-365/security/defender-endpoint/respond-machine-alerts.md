@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a992f457bab54ff53f3b134cfeba44f50b66af6e
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 6e2a55fb1dc924ba278510f6a379240cb9fba39e
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587414"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164795"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
@@ -109,17 +109,17 @@ El paquete contiene las siguientes carpetas:
 
 ****
 
-|Folder|Descripción|
+|Folder|Description|
 |---|---|
 |Autoruns|Contiene un conjunto de archivos que cada uno representa el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: el sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, [vea Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad a direcciones URL sospechosas, la infraestructura de comando y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La memoria caché ARP puede revelar otros hosts de una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haber sido usados para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la memoria caché de resolución de cliente DNS, que incluye entradas precargadas del archivo hosts locales y registros de recursos obtenidos recientemente para las consultas de nombre resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul><p><div class="alert"><b>NOTA:</b> El archivo pfirewall.log debe existir en %windir%\system32\logfiles\firewall\pfirewall.log, por lo que se incluirá en el paquete de investigación. Para obtener más información sobre cómo crear el archivo de registro de firewall, vea [Configure the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
-|Archivos de prefetch|Windows Los archivos prefetch están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haber sido eliminadas, pero que aún se pueden encontrar en la lista de archivos de prefetch. <ul><li>Carpeta Prefetch: contiene una copia de los archivos de prefetch de `%SystemRoot%\Prefetch` . NOTA: Se recomienda descargar un visor de archivos de prefetch para ver los archivos de prefetch.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento si hubo algún error de copia en la carpeta de captura previa.</li></ul>|
+|Archivos de prefetch|Windows archivos prefetch están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haber sido eliminadas, pero que aún se pueden encontrar en la lista de archivos de prefetch. <ul><li>Carpeta Prefetch: contiene una copia de los archivos de prefetch de `%SystemRoot%\Prefetch` . NOTA: Se recomienda descargar un visor de archivos de prefetch para ver los archivos de prefetch.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento si hubo algún error de copia en la carpeta de captura previa.</li></ul>|
 |Procesos|Contiene un .CSV que enumera los procesos en ejecución y proporciona la capacidad de identificar los procesos actuales que se ejecutan en el dispositivo. Esto puede ser útil al identificar un proceso sospechoso y su estado.|
 |Tareas programadas|Contiene un archivo .CSV que enumera las tareas programadas, que se pueden usar para identificar rutinas realizadas automáticamente en un dispositivo elegido para buscar código sospechoso que se estableció para ejecutarse automáticamente.|
 |Registro de eventos de seguridad|Contiene el registro de eventos de seguridad, que contiene registros de actividad de inicio de sesión o cierre de sesión, u otros eventos relacionados con la seguridad especificados por la directiva de auditoría del sistema. <p><div class="alert"><b>NOTA:</b> Abra el archivo de registro de eventos con el Visor de eventos.</div>|
 |Servicios|Contiene un .CSV que enumera los servicios y sus estados.|
-|Windows Sesiones de bloque de mensajes de servidor (SMB)|Enumera el acceso compartido a archivos, impresoras y puertos serie y comunicaciones diversas entre nodos de una red. Esto puede ayudar a identificar la exfiltración de datos o el movimiento lateral. <p> Contiene archivos para SMBInboundSessions y SMBOutboundSession. <p> <div class="alert"><b>NOTA:</b> Si no hay sesiones (entrantes o salientes), se obtiene un archivo de texto que le dirá que no se han encontrado sesiones SMB.</div>|
+|Windows bloque de mensajes de servidor (SMB)|Enumera el acceso compartido a archivos, impresoras y puertos serie y comunicaciones diversas entre nodos de una red. Esto puede ayudar a identificar la exfiltración de datos o el movimiento lateral. <p> Contiene archivos para SMBInboundSessions y SMBOutboundSession. <p> <div class="alert"><b>NOTA:</b> Si no hay sesiones (entrantes o salientes), se obtiene un archivo de texto que le dirá que no se han encontrado sesiones SMB.</div>|
 |Información del sistema|Contiene un SystemInformation.txt que enumera información del sistema, como la versión del sistema operativo y las tarjetas de red.|
 |Directorios temporales|Contiene un conjunto de archivos de texto que enumera los archivos ubicados en %Temp% para todos los usuarios del sistema. <p> Esto puede ayudar a realizar un seguimiento de los archivos sospechosos que un atacante puede haber eliminado en el sistema. <p> <div class="alert"><b>NOTA:</b> Si el archivo contiene el siguiente mensaje: "El sistema no puede encontrar la ruta de acceso especificada", significa que no hay ningún directorio temporal para este usuario y puede deberse a que el usuario no ha iniciar sesión en el sistema.</div>|
 |Usuarios y grupos|Proporciona una lista de archivos que cada uno representa a un grupo y sus miembros.|
@@ -224,7 +224,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, fecha 
 
 ![Imagen del centro de acción con información.](images/action-center-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manuales en Microsoft Defender para endpoint plan 1 (versión preliminar)](defender-endpoint-plan-1.md#manual-response-actions)

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5136da918480d2ae9b9543b410e8ae45ade9dc7d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: a2a8ae2197b957299277bae3eeeee8383d1bda00
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755608"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165227"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -28,7 +28,7 @@ ms.locfileid: "60755608"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -96,7 +96,7 @@ Elija si desea generar una alerta en el evento de bloqueo de archivos y definir 
 - El título de alerta
 - Gravedad de la alerta
 - Categoría
-- Descripción
+- Description
 - Acciones recomendadas
 
 ![Configuración de alertas para indicadores de archivo.](images/indicators-generate-alert.png)
@@ -171,7 +171,7 @@ Las características de aplicación vulnerables de bloqueo de amenazas y adminis
 |Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir|
 |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

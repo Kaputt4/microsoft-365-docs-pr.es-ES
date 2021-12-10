@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: 9ac6d422de569bf990528af6b25bf57a6c0f3ba1
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 6109498aed5522e0ad7c128208463f33f99eeba2
+ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61312028"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61370037"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
@@ -48,7 +48,7 @@ Comience por [comprobar el estado actual de los servicios](../enterprise/view-se
 
 Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con el soporte técnico.
 
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje notificando que no tiene permiso para acceder a esta página o realizar esta acción, entonces no es un administrador. Para más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](../business-video/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje que indica que no tiene permiso para acceder a esta página o realizar esta acción, esto quiere decir que usted no es administrador. Para obtener más información, consulte [¿Quién tiene permisos de administrador en mi empresa?] ([Información general del Centro de administración de Microsoft 365](../admin/admin-overview/admin-center-overview.md).
 2. En la parte inferior derecha de la página, seleccione **Ayuda y soporte técnico**.
 3. Escriba una pregunta o palabra clave en el cuadro de texto. Si aparece una lista desplegable, seleccione la que más se acerque a su pregunta, o siga escribiendo su pregunta, y luego pulse **Aceptar**.
 4. Si los resultados no ayudan, en la parte inferior, seleccione **Ponerse en contacto con el soporte técnico**.
@@ -216,34 +216,6 @@ Para ver la disponibilidad de características entre planes de Office 365, consu
 Digitalice este código QR para seguirnos en WeChat y obtener las actualizaciones más recientes para Office 365 ofrecido por 21Vianet.
 
 ![Código QR para las actualizaciones de Office 365 operado por 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Este artículo se aplica a los clientes de Office 365 Alemania, que tiene los dominios que terminan en onmicrosoft.de. Para obtener más información, vea [Obtenga información sobre Office 365 Alemania](../admin/admin-overview/learn-about-office-365-germany.md).
-
-Como administrador de Office 365 Alemania, puede contactar de forma gratuita con nuestros agentes de soporte para que le ayuden a resolver problemas técnicos y le ofrezcan soporte de preventas, cuentas y facturación. También puede contactar con el soporte técnico en nombre de los usuarios de Office 365 de su organización.
-
-> [!NOTE]
-> Todas las opciones de soporte técnico siguientes son para Microsoft Cloud Germany. Para obtener más información sobre cómo Microsoft usa los datos proporcionados al contactar con el soporte técnico de Microsoft, consulte la [declaración de privacidad](https://go.microsoft.com/fwlink/p/?LinkId=512132).
-
-## <a name="get-assisted-support"></a>Obtener soporte asistido
-
-Las opciones de soporte asistido son solo para administradores de organizaciones suscritas a Office 365 Alemania. Si usa Office 365 Alemania en su trabajo o escuela pero no es administrador, puede obtener soporte en los foros de la comunidad o contactando con el administrador o departamento de TI.
-
-- **Abra una solicitud en línea.** Ahorre tiempo iniciando su solicitud de servicio en línea. En el centro de administración, seleccione **Soporte técnico** \> **Nueva solicitud de servicio.** Le ayudaremos a encontrar una solución o le pondremos en contacto con un experto que se pondrá en contacto con usted por correo electrónico o por teléfono.
-
-- **Llamar al soporte técnico.** Estamos aquí para hablar. Administradores, tengan los datos de su cuenta preparados cuando llamen al soporte.
-
-| Región | Número de teléfono | Horas |
-|-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Alemania | 0800&nbsp;589&nbsp;2330 | Soporte de facturación: <ul><li>Alemán: Berlín, de lunes a viernes de 9:00 a 17:00</li><li>Inglés: Berlín, de lunes a viernes de 9:00 a 17:00</li></ul><br />Soporte técnico: <ul><li>Alemán: 24 horas al día, 7 días a la semana</li><li>Inglés: 24 horas al día, 7 días a la semana</li></ul><br />Número de teléfono alternativo: 069 380 789 305 (se aplicarán tarifas de llamada local) |
-| Todos los demás mercados dentro del Espacio Económico Europeo | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Soporte de facturación: <ul><li>Alemán: Berlín (UTC+1), de lunes a viernes de 9:00 a 17:00</li><li>Inglés: Berlín (UTC+1), de lunes a viernes de 9:00 a 17:00</li></ul><br />Soporte técnico: <ul><li>Alemán: 24 horas al día, 7 días a la semana</li><li>Inglés: 24 horas al día, 7 días a la semana</li></ul><br />El soporte telefónico está disponible a través de llamadas internacionales a Alemania. Se aplicarán tarifas de llamada internacional. Las tarifas de llamada pueden evitarse enviando un vale de soporte a través del centro de administración. |
-
-## <a name="let-our-community-help"></a>Deje que nuestra comunidad le ayude
-
-También puede [buscar en los foros de la comunidad de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=518605) para encontrar problemas conocidos y temas destacados, o publicar una pregunta nueva. Los foros de la comunidad están supervisados por agentes de soporte técnico de Microsoft cualificados que pueden ayudarle a solucionar el problema.
 
 ::: moniker-end
 

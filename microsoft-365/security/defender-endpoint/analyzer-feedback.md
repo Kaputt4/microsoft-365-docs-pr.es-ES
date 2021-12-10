@@ -18,17 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 957bf2479a4c9d49532b072a3c18d73b9b5e6966
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 774bad728b8cac0eadf71c3b97ceff0b1f9aabc8
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554989"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165191"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Proporcionar comentarios sobre la herramienta del analizador de cliente de Microsoft Defender para endpoints
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Si tiene comentarios o sugerencias que nos ayudarán a mejorar el analizador de cliente de Microsoft Defender para endpoints, use cualquiera de estas opciones para enviar comentarios:
 

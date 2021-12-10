@@ -15,19 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 575df186af15628ec4d7d4162d100ea0d1974146
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: debb16afb5e9edbdac0b31916bf39fc72dd38220
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111404"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167891"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para las características de Endpoint en Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>Acceso condicional con Defender para endpoint en Android
@@ -81,7 +82,7 @@ Usa los siguientes pasos para habilitar **la evaluación de** vulnerabilidades d
 
    - **Nombre:** escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderTVMPrivacyMode**
-   - Tipo de datos: seleccione Integer en la lista desplegable.
+   - Tipo de datos: seleccione Entero en la lista desplegable.
    - Valor: escriba 0 para deshabilitar la configuración de privacidad (de forma predeterminada, el valor es 1)
 
 4. Haz **clic en Siguiente** y asigna este perfil a dispositivos o usuarios dirigidos.
@@ -120,7 +121,7 @@ Siga estos pasos para activarlo para los usuarios de destino:
 
    - **Nombre:** escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
-   - Tipo de datos: seleccione Integer en la lista desplegable.
+   - Tipo de datos: seleccione Entero en la lista desplegable.
    - Valor: escriba 1 para habilitar la configuración de privacidad (de forma predeterminada, el valor es 0)
 
 4. Haz **clic en Siguiente** y asigna este perfil a dispositivos o usuarios dirigidos.

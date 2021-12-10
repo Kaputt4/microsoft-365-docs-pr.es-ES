@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3bc58ec36775065b03ab368b65b833bc4ccaad5c
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 6a587c0de131cd92ee3126688702763bac8dd340
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217083"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165599"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Solucionar problemas de acceso a la suscripción y al portal
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
@@ -37,12 +38,12 @@ Si recibe un mensaje de error, Microsoft 365 Defender proporcionará una explica
 
 ## <a name="no-subscriptions-found"></a>No se encontraron suscripciones
 
-Si al acceder Microsoft 365 Defender recibe un mensaje **No se** encontró suscripciones, significa que el Azure Active Directory (Azure AD) usado para iniciar sesión en el usuario en el portal, no tiene una licencia de Microsoft Defender para endpoint.
+Si al acceder a Microsoft 365 Defender recibe un mensaje **No se** encontró suscripciones, significa que el Azure Active Directory (Azure AD) usado para iniciar sesión en el usuario en el portal, no tiene una licencia de Microsoft Defender para endpoint.
 
 Posibles razones:
 
 - Las licencias de Windows E5 y Office E5 son licencias separadas.
-- La licencia se compró pero no se aprovisionó en esta instancia de Azure AD.
+- La licencia se compró pero no se aprovisionó en esta Azure AD instancia.
   - Podría ser un problema de aprovisionamiento de licencias.
   - Podría ser que aprovisionó la licencia de forma involuntaria a un Microsoft Azure AD diferente al que se usa para la autenticación en el servicio.
 

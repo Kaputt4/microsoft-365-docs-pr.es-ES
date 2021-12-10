@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Los Office 365 clientes deben enviar una solicitud antes de la fecha límite para que su país pueda mover sus datos de servicios Microsoft 365 a su nueva ubicación geográfica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 18e21343eacaf9201ac65c4c1ff9c5b935d2c3fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1c8bd46de424175c524a62bc7ebca8c9385d7845
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163281"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165503"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -33,19 +33,20 @@ Los Microsoft 365 pueden solicitar la migración de los datos principales de cli
 
 | Clientes con país de registro en | Comienza el período de solicitud | Fecha límite de solicitud |
 |:-----|:-----|:-----|
-|Japón  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Australia, Nueva Zelanda, Fiyi  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|India  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Canadá  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Reino Unido  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Corea del Sur  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Francia  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
-|Emiratos Árabes Unidos  <br/> |15 de julio de 2019  <br/> |30 de junio de 2020  <br/> |
-|Sudáfrica  <br/> |25 de julio de 2019  <br/> |30 de junio de 2020  <br/> |
-|Suiza, Liechtenstein  <br/> |10 de diciembre de 2019  <br/> |30 de junio de 2020  <br/> |
-|Noruega  <br/> |15 de abril de 2020  <br/> |31 de octubre de 2020  <br/> |
-|Alemania  <br/> |1 de noviembre de 2020  <br/> |30 de abril de 2021  <br/> |
-|Brasil  <br/> |18 de noviembre de 2020  <br/> |31 de mayo de 2021  <br/> |
+|Japón  | |Período de solicitud cerrado  |
+|Australia, Nueva Zelanda, Fiyi  | |Período de solicitud cerrado  |
+|India  | |Período de solicitud cerrado  |
+|Canadá  | |Período de solicitud cerrado  |
+|Reino Unido  | |Período de solicitud cerrado  |
+|Corea del Sur  | |Período de solicitud cerrado  |
+|Francia  | |Período de solicitud cerrado  |
+|Emiratos Árabes Unidos  | |Período de solicitud cerrado  |
+|Sudáfrica  | |Período de solicitud cerrado  |
+|Suiza, Liechtenstein  | |Período de solicitud cerrado  |
+|Noruega  | |Período de solicitud cerrado  |
+|Alemania  | |Período de solicitud cerrado  |
+|Brasil  | |Período de solicitud cerrado  |
+|Suecia  |16 de noviembre de 2021  |31 de mayo de 2022  |
 
 ## <a name="how-to-request-a-move"></a>Cómo solicitar un movimiento
 

@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 08d3a70ad9456af8d26bf76cffbbc38f31d6b023
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 4a3bab27a4e2efd6b196167754303f35d5553de6
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60555469"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164735"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Solucionar problemas de respuesta en directo de Microsoft Defender para puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -68,6 +69,6 @@ La respuesta en directo aprovecha el registro del sensor defender para puntos de
 
 Consulte los artículos siguientes para comprender completamente el comportamiento y los requisitos del servicio WpnService:
 
-- [Windows Introducción Notification Services inserción (WNS)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Enterprise Configuraciones de firewall y proxy para admitir tráfico de WNS](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows introducción Notification Services push (WNS)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise de firewall y proxy para admitir tráfico WNS](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Intervalos ip públicos del Servicio de notificaciones de inserción de Microsoft (MPNS)](https://www.microsoft.com/download/details.aspx?id=44535)

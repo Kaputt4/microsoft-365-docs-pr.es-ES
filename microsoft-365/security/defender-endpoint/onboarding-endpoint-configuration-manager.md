@@ -18,19 +18,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0a2923f9e80a5ea5ee92110181af69a874d7fd25
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: a4668969982563bdc050a8e71b00980d52a7e6ff
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963424"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166187"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -117,7 +117,7 @@ En esta sección se le guía en la configuración de las siguientes funcionalida
 - [**Protección de última generación**](#next-generation-protection)
 - [**Reducción de la superficie expuesta a ataques**](#attack-surface-reduction)
 
-### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
+### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 y Windows 11
 

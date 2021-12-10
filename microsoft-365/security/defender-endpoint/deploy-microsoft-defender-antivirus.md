@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 466254b9c59e1a005b588c1b61de236c37f3aa9f
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 9baa4fe5318bf21d73b3c79e719895fb9c492ea7
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60882350"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164123"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Implementación y habilitación en el Antivirus de Windows Defender
 
@@ -29,11 +29,12 @@ ms.locfileid: "60882350"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Según la herramienta de administración que use, es posible que deba habilitar o configurar específicamente la protección Antivirus de Microsoft Defender administración. 
 
-Consulte la tabla de [Implementar,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) administrar e informar sobre Antivirus de Microsoft Defender para obtener instrucciones sobre cómo habilitar la protección con Microsoft Intune, Microsoft Endpoint Configuration Manager, directiva de grupo, Active Directory, Microsoft Azure, cmdlets de PowerShell e instrucción de administración de Windows (WMI).
+Vea la tabla [de Deploy, manage, and report on Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md#ref2) para obtener instrucciones sobre cómo habilitar la protección con Microsoft Intune, Microsoft Endpoint Configuration Manager, Directiva de grupo, Active Directory, Microsoft Azure, cmdlets de PowerShell e instrucciones Windows administración (WMI).
 
 Algunos escenarios requieren más instrucciones sobre cómo implementar o configurar correctamente la protección Antivirus de Microsoft Defender, como Infraestructura de escritorio virtual (VDI).
 

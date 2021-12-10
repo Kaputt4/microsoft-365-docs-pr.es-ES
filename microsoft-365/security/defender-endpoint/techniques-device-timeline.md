@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cee924ea4529b45635f5df16bc3868d09ec3929e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 897a8691bc7cbc3c03adcbf5befc2a2da8b12294
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174620"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165794"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Técnicas en la escala de tiempo del dispositivo
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Puedes obtener más información en una investigación analizando los eventos que sucedieron en un dispositivo específico. En primer lugar, selecciona el dispositivo de interés de la [lista Dispositivos](machines-view-overview.md). En la página del dispositivo, puedes seleccionar la pestaña **Escala** de tiempo para ver todos los eventos que se produjeron en el dispositivo.
 
@@ -90,7 +90,7 @@ Para ver solo eventos o técnicas, selecciona **Filtros en** la escala de tiempo
 
 ![Filtra la captura de pantalla.](images/device-timeline-filters.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Ver y organizar la lista de dispositivos](machines-view-overview.md)
 - [Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión](device-timeline-event-flag.md)

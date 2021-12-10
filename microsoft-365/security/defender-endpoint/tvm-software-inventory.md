@@ -1,7 +1,7 @@
 ---
 title: Inventario de software en Administración de amenazas y vulnerabilidades
 description: La página de inventario de software de Microsoft Defender para el Administración de amenazas y vulnerabilidades muestra cuántas debilidades y vulnerabilidades se han detectado en el software.
-keywords: Administración de amenazas y vulnerabilidades, Microsoft Defender para Endpoint, Inventario de software de Microsoft Defender para Endpoint, Microsoft Defender para endpoint threat & administración de vulnerabilidades, Microsoft Defender for Endpoint threat & administración de vulnerabilidades software inventory, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
+keywords: Administración de amenazas y vulnerabilidades, Microsoft Defender para endpoint, inventario de software de Microsoft Defender para endpoint, Microsoft Defender para el inventario de amenazas de punto de conexión & administración de vulnerabilidades, Microsoft Defender para endpoints & administración de vulnerabilidades de software, inventario de software de Microsoft Defender para Endpoint tvm, inventario de software de tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 63af06a3d7565ede3fb703ccb5aeaacc77d3612d
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: b0e32fe31b69149bac4bac1796a0260763e9a078
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883838"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164243"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventario de software: Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -36,7 +36,7 @@ ms.locfileid: "60883838"
 
 El inventario de software en Administración de amenazas y vulnerabilidades es una lista de software conocido en su organización con enumeraciones de plataforma [común (CPE) oficiales.](https://nvd.nist.gov/products/cpe) Los productos de software sin un CPE oficial no tienen vulnerabilidades publicadas. También incluye detalles como el nombre del proveedor, el número de debilidades, las amenazas y el número de dispositivos expuestos.
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 En el campo de la detección, estamos aprovechando el mismo conjunto de señales responsables de la detección y evaluación de vulnerabilidades en Microsoft Defender para la detección de puntos de conexión y las capacidades [de respuesta.](overview-endpoint-detection-response.md)
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8da23203a7ab2f8faf86603f6a68700b65cc83e5
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: fb60bbd8172c54a7fa6ef9a5c0dce708f5506e3a
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111560"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165695"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para endpoint y otras soluciones de Microsoft
 
@@ -27,7 +27,7 @@ ms.locfileid: "61111560"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -36,7 +36,7 @@ ms.locfileid: "61111560"
 
 Microsoft Defender para endpoint se integra directamente con varias soluciones de Microsoft.
 
-### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender para la nube
+### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender for Cloud
 
 Microsoft Defender para endpoint proporciona una solución completa de protección de servidores, que incluye detección y respuesta de puntos de conexión (EDR) en Windows servidores.
 
@@ -71,7 +71,7 @@ Las actividades sospechosas son procesos que se ejecutan en un contexto de usuar
 
 La Skype Empresarial permite a los analistas comunicarse con un usuario o propietario de dispositivo potencialmente comprometido a través de un botón sencillo del portal.
 
-## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
+## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
 Con Microsoft 365 Defender, Microsoft Defender para endpoint y varias soluciones de seguridad de Microsoft forman un conjunto de aplicaciones de defensa empresarial unificado previo y posterior a la infracción que se integra de forma nativa en puntos de conexión, identidad, correo electrónico y aplicaciones para detectar, prevenir, investigar y responder automáticamente a ataques sofisticados.
 

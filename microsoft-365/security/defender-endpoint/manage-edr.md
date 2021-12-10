@@ -18,17 +18,19 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.openlocfilehash: 843a818ffd3507b55cff3c16d881c5e086efe90d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cba3594fb70db560f2463dbf0fe778091a61e2b3
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151988"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166115"
 ---
 # <a name="manage-endpoint-detection-and-response-capabilities"></a>Administrar detección y respuesta de puntos de conexión capacidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Se aplica a:**
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Administrar la cola de alertas, investigar los dispositivos de la lista de dispositivos, realizar acciones de respuesta y buscar posibles amenazas en su organización mediante la búsqueda avanzada.
 

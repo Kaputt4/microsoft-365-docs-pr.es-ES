@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c43135ff2743282f4588cbccc0d8a80d17de93bf
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: d54d8ecf2d0c365168ae636cbe85ef1da9cfb6b1
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883094"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164387"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario
 
@@ -29,8 +29,8 @@ ms.locfileid: "60883094"
 
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Puede usar la directiva de grupo para impedir que los usuarios de los puntos de conexión vean la interfaz Antivirus de Microsoft Defender usuario. También puede evitar que pauten los exámenes.
 

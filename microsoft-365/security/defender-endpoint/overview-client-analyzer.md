@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7f816c9762fd884431deb6fd61beeb02657e300b
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6386ea1e0cd25db1b13d763d618b4ced315b858b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554569"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168071"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solucionar problemas de estado del sensor con Microsoft Defender para endpoint client Analyzer
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender para Endpoint Client Analyzer (MDECA) puede ser útil [](/microsoft-365/security/defender-endpoint/onboard-configure) al diagnosticar problemas de estado o confiabilidad del sensor en dispositivos integrados que ejecutan Windows, Linux o macOS. Por ejemplo, es posible que desee ejecutar el analizador en una máquina que parezca no estar en buen estado según el estado de mantenimiento del sensor mostrado (Inactivo, Sin datos de [sensor](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) o Comunicaciones deficientes) en el portal de seguridad.
 
@@ -51,7 +51,7 @@ Para obtener más información acerca de la Exchange de archivos seguros, vea [H
 
 Para obtener más información acerca de nuestra declaración de privacidad, vea [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 - Antes de ejecutar el analizador, se recomienda asegurarse de que la configuración de proxy o firewall permita el acceso a las direcciones URL de servicio de [Microsoft Defender para puntos de conexión.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 

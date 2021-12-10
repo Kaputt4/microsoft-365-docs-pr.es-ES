@@ -16,19 +16,19 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 13c8591d03bd0c4c6649f6afbdb383ad54089499
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: f6429afa9b5e038b44a60c35754a0a3db93c4c2b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883562"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164939"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -52,7 +52,7 @@ La protección de red Windows 10 Pro o Enterprise y Antivirus de Microsoft Defen
 
 |Versión de Windows|Antivirus de Microsoft Defender|
 |---|---|
-|Windows 10 versión 1709 o posterior <p> Windows 11 <p> Windows Servidor 1803 o posterior|[Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas|
+|Windows 10 versión 1709 o posterior <p> Windows 11 <p> Windows Server 1803 o posterior|[Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas|
 |
 
 Después de habilitar los servicios, es posible que deba configurar la red o firewall para permitir las conexiones entre los servicios y los dispositivos (también denominados puntos de conexión).
@@ -112,7 +112,7 @@ Este es un ejemplo de cómo funciona:
 
 1. Supongamos que un usuario intenta acceder a un sitio web en su dispositivo. El sitio se hospeda en un dominio peligroso y la protección de red debe bloquearlo.  
 
-2. Comienza el protocolo de enlace triple a través de TCP/IP. Antes de que se complete, se registra una acción `NetworkConnectionEvents` y su aparece como `ActionType` `ConnectionSuccess` . Sin embargo, tan pronto como se complete el proceso de protocolo de enlace triple, la protección de red bloquea el acceso al sitio. Todo esto sucede muy rápidamente. Se produce un proceso similar con [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); es cuando se completa el protocolo de enlace triple que se determina y se bloquea o se permite el acceso a un sitio.
+2. Comienza el protocolo de enlace triple a través de TCP/IP. Antes de que se complete, se registra una acción `NetworkConnectionEvents` y su aparece como `ActionType` `ConnectionSuccess` . Sin embargo, tan pronto como se complete el proceso de protocolo de enlace triple, la protección de red bloquea el acceso al sitio. Todo esto sucede muy rápidamente. Un proceso similar se produce [con SmartScreen de Microsoft Defender;](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)es cuando se completa el protocolo de enlace triple que se determina y se bloquea o se permite el acceso a un sitio.
 
 3. En el portal Microsoft 365 Defender, una alerta aparece en la cola [de alertas](alerts-queue.md). Los detalles de esa alerta incluyen ambos `NetworkConnectionEvents` y `AlertEvents` . Puede ver que el sitio se bloqueó, aunque también tenga un `NetworkConnectionEvents` elemento con actiontype de `ConnectionSuccess` .
 
@@ -148,7 +148,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Evaluar la protección de](evaluate-network-protection.md) red | Realice un escenario rápido que demuestre cómo funciona la característica y qué eventos se crearían normalmente.
 - [Habilitar la protección de](enable-network-protection.md) red | Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.

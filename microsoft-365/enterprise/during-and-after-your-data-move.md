@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve los servicios y los datos asociados del inquilino a un nuevo centro de datos geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68c73d8931f0f1813ebecfa0415b037f91065626
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1fcb62897f1feabe0ca8c447c51e61c7d752138c
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189158"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164639"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -32,7 +32,7 @@ Los movimientos de datos son una operación back-end con un impacto mínimo para
   
 Vea el Centro Microsoft 365 mensajes para obtener confirmación cuando se mueva para cada Exchange Online, SharePoint Online y Teams servicio de chat completo. Como se muestra en la tabla siguiente, puede tardar hasta 24 meses después del final del período de inscripción para completar los datos principales del cliente en reposo se mueve al nuevo centro de datos geográfico.   
 
-|**Clientes con país de registro en**|**Todos los movimientos completados por**|
+| Clientes con país de registro en | Todos los movimientos completados por |
 |:-----|:-----|
 |Australia, Nueva Zelanda, Fiyi  <br/> |1 de julio de 2022  <br/> |
 |Japón  <br/> |1 de julio de 2022  <br/> |
@@ -47,6 +47,7 @@ Vea el Centro Microsoft 365 mensajes para obtener confirmación cuando se mueva 
 |Noruega  <br/> |1 de noviembre de 2022  <br/> |
 |Alemania  <br/> |1 de mayo de 2023  <br/> |
 |Brasil  <br/> |1 de junio de 2023  <br/> |
+|Suecia  <br/> |1 de junio de 2024  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -56,7 +57,7 @@ Dado que se tarda tiempo en mover cada usuario a la nueva ubicación geográfica
 
 Algunos usuarios abren una carpeta de correo compartida desde otro buzón (en el que el usuario tiene permisos de lectura o escritura) en Outlook Web Access mediante la característica "Carpeta compartida". En la tabla siguiente se describe cómo funciona el acceso a carpetas compartidas durante un movimiento de buzón. Tenga en cuenta que los usuarios con permisos completos para un buzón compartido pueden abrir el buzón mediante Outlook Web Access durante el movimiento. 
   
-|**Configuración**|**Descripción**|
+| Configuración | Description |
 |:-----|:-----|
 |El usuario tiene permiso de carpeta de buzón de correo para otro buzón  <br/> |Potencialmente limitado.  <br/> Si el usuario A y el buzón B no están en la misma ubicación geográfica durante el movimiento del inquilino, el usuario A no puede abrir la carpeta del buzón B en Outlook Web Access si el usuario A solo tiene permiso para una carpeta específica en el buzón B.  <br/> Para agregar una carpeta compartida, haga clic con el botón secundario en el nombre de usuario del panel de navegación izquierdo y seleccione **Agregar carpeta compartida.**  <br/> |
 |Usuario con permiso de buzón completo para otro buzón  <br/> |Totalmente compatible.  <br/> Si el usuario A tiene permiso de "Acceso total" al buzón B, el usuario A puede hacer clic en la carpeta compartida en el panel de navegación izquierdo de Outlook Web Access para abrir una ventana que muestre el buzón B.  Un usuario puede abrir un buzón compartido mediante Outlook Web Access durante el movimiento sin ningún impacto adverso. La limitación solo se aplica al uso compartido de nivel de carpeta en un buzón.           |
@@ -67,7 +68,7 @@ Cuando SharePoint Online se mueve, también se mueven los datos de los siguiente
   
 - OneDrive para la Empresa
     
-- Microsoft 365 Servicios de vídeo
+- Microsoft 365 video
     
 - Office en un explorador
     
@@ -77,7 +78,7 @@ Cuando SharePoint Online se mueve, también se mueven los datos de los siguiente
     
 Una vez que hayamos completado el movimiento de SharePoint datos en línea, es posible que veas algunos de los siguientes efectos.
   
-### <a name="microsoft-365-video-services"></a>Microsoft 365 Servicios de vídeo
+### <a name="microsoft-365-video-services"></a>Microsoft 365 Video Services
 
 - El movimiento de datos del vídeo tarda más tiempo que los movimientos del resto del contenido en SharePoint Online.
     

@@ -15,20 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3b2094be06dd9d5f2543738082f9f76bb292609d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: f08cf9ddc80e35d1c070fae5eef783496d38f208
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754970"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164711"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -207,7 +207,7 @@ Defender for Endpoint admite directivas de configuración de dispositivos para d
 
    :::image type="content" alt-text="Imagen del perfil de configuración de dispositivos Crear." source="images/1autosetupofvpn.png":::
 
-2. **Configuración Configuración** Proporcione un **nombre y** una **descripción para** identificar de forma única el perfil de configuración.
+2. **Configuración Configuración** proporcione un **nombre** y una **descripción para** identificar de forma única el perfil de configuración.
 
    :::image type="content" alt-text="Imagen del perfil de configuración de dispositivos Nombre y descripción." source="images/2autosetupofvpn.png":::
 

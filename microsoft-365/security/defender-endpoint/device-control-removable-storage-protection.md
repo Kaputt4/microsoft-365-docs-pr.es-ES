@@ -14,14 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf57eb6e08278625ac8887985a39d355266f47d5
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cc1c2a5fc05b795c0fc69ebc8a3b50dbf556960b
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962932"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165479"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender para Endpoint Device Control Removable Storage Protection
+
+
+**Se aplica a:**
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 La protección de almacenamiento extraíble del control de dispositivos en Microsoft Defender para extremo impide que los usuarios, los puntos de conexión o ambos utilicen medios de almacenamiento extraíbles no autorizados.
 
@@ -96,7 +103,7 @@ Microsoft Defender para Endpoint Device Control Removable Storage Protection le 
 
 <br/><br/>
 
-|Nombre de la propiedad|Directivas aplicables|Se aplica a sistemas operativos|Descripción|
+|Nombre de la propiedad|Directivas aplicables|Se aplica a sistemas operativos|Description|
 |---|---|---|---|
 |Clase device|[Cómo controlar dispositivos USB y otros medios extraíbles con Microsoft Defender para endpoint](control-usb-devices-using-intune.md)|Windows|Para obtener información acerca de los formatos de id. de dispositivo, consulta [clase de configuración del dispositivo](/windows-hardware/drivers/install/overview-of-device-setup-classes). Los dos vínculos siguientes proporcionan la lista completa de clases de configuración de dispositivos. Las clases de "Uso del sistema" se refieren principalmente a dispositivos que vienen con un equipo o máquina de fábrica, mientras que las clases de "Proveedor" se refieren principalmente a dispositivos que podrían conectarse a un equipo o máquina existentes: Clases de configuración de dispositivos definidas por el sistema disponibles para proveedores - controladores de Windows y clases de configuración de dispositivos definidas por el sistema [reservadas](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors) para el uso del sistema [- controladores Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). **Nota:** La instalación del dispositivo se puede aplicar a cualquier dispositivo, no solo al almacenamiento extraíble.|
 |Id. principal|[Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)|Windows|El identificador principal incluye almacenamiento extraíble y CD/DVD y Windows dispositivo portátil/WPD.|

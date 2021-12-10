@@ -15,19 +15,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0681144d09a430d0f4e4a2349f24ba442382cd14
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1d8f11d6d3dc3301444b7e188c220683ac7015d2
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110576"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168083"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Incorporación Windows de varias sesiones en Azure Virtual Desktop
 
 6 minutos para leer
 
-Se aplica a:
-
+**Se aplica a:**
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows varias sesiones que se ejecutan en Azure Virtual Desktop (AVD)
 
 Microsoft Defender para endpoint admite la supervisión de sesiones de VDI y Azure Virtual Desktop. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Azure Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.

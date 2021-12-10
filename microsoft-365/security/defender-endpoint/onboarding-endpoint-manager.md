@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e631bc8f35a49ab87237ddfb952af00c68645e9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 49ee01e5bd9cb71b685bc8dcbe290f13f5a3e915
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109904"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61164507"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -81,9 +81,9 @@ Para obtener más información Microsoft Endpoint Manager, consulte estos recurs
 En esta sección, crearemos un grupo de prueba para asignar las configuraciones.
 
 > [!NOTE]
-> Intune usa Azure Active Directory (Azure AD) para administrar dispositivos y usuarios. Como administrador de Intune, puede configurar grupos que se adapten a sus necesidades organizativas.
+> Intune usa grupos de Azure Active Directory (AD) para administrar dispositivos y usuarios. Como administrador de Intune, puede configurar los grupos de modo que satisfagan sus necesidades organizativas.
 >
-> Para más información, vea [Agregar grupos para organizar usuarios y dispositivos](/mem/intune/fundamentals/groups-add).
+> Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](/mem/intune/fundamentals/groups-add).
 
 ### <a name="create-a-group"></a>Crear un grupo
 

@@ -1,7 +1,7 @@
 ---
 title: 'Requisitos & permisos: Administración de amenazas y vulnerabilidades'
 description: Antes de empezar a usar Administración de amenazas y vulnerabilidades, asegúrese de que tiene las configuraciones y permisos pertinentes.
-keywords: requisitos previos de permisos de & administración de vulnerabilidades, requisitos previos de Administración de amenazas y vulnerabilidades permisos, requisitos previos de permisos de Microsoft Defender para Endpoint TVM, administración de vulnerabilidades
+keywords: requisitos previos de permisos de & administración de vulnerabilidades, requisitos previos Administración de amenazas y vulnerabilidades permisos, requisitos previos de permisos de Microsoft Defender para Endpoint TVM, administración de vulnerabilidades
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3684d8b13020605fbca20e67093c28d3e782da2
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 343a5fd1033a6d954c7cd62e2558a4b401f69b20
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60881749"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61165551"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Requisitos & permisos: Administración de amenazas y vulnerabilidades
 
@@ -27,7 +27,7 @@ ms.locfileid: "60881749"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,12 +41,12 @@ Asegúrese de que los dispositivos:
 
 - Haga que las siguientes actualizaciones obligatorias se instalen e implementen en la red para aumentar las tasas de detección de la evaluación de vulnerabilidades:
 
-  > Release | Número y vínculo kb de actualización de seguridad
+  > Versión | Número y vínculo kb de actualización de seguridad
   > :---|:---
-  > Windows 10 Versión 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) y [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-  > Windows 10 Versión 1803 | [KB4493464](https://support.microsoft.com/help/4493464) y [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
-  > Windows 10 Versión 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
-  > Windows 10 Versión 1903 | [Kb 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+  > Windows 10 versión 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) y [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+  > Windows 10 versión 1803 | [KB4493464](https://support.microsoft.com/help/4493464) y [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+  > Windows 10 versión 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+  > Windows 10 versión 1903 | [Kb 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
 - Se incorpora a [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) para ayudar a corregir las amenazas encontradas por Administración de amenazas y vulnerabilidades. Si usa Configuration Manager, actualice la consola a la versión más reciente.
 

@@ -28,15 +28,21 @@
           href: ./office-365-security/mcas-saas-access-policies.md
         - name: Evaluación continua del acceso
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
-    - name: Microsoft 365 Defender
-      href: ./defender/index.yml
-    - name: Microsoft Defender para Office 365
-      href: ./office-365-security/index.yml
-    - name: Microsoft Defender para punto de conexión
-      href: ./defender-endpoint/index.yml
-    - name: Microsoft Defender for Identity
-      href: /defender-for-identity
-    - name: Microsoft 365 para Empresas
+    - name: Documentos de Microsoft 365 Defender
+      items:
+        - name: Microsoft 365 Defender
+          href: ./defender/index.yml
+        - name: Defender para Office 365
+          href: ./office-365-security/index.yml
+        - name: Defender para punto de conexión
+          href: ./defender-endpoint/index.yml
+        - name: Defender for Identity
+          href: /defender-for-identity
+        - name: Defender for Cloud Apps
+          href: /cloud-app-security
+        - name: Defender para Empresas
+          href: ./defender-business/index.yml
+    - name: Microsoft 365 Enterprise
       href: ../enterprise/index.yml
     - name: Microsoft 365 para empresas
       href: ./index.yml
