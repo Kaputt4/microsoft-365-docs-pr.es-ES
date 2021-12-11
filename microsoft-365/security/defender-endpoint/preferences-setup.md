@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aa6c7b8b0235be3304e7f941864e4a0928eb4ab6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b1f30947fc86ce94054f2bc0fc6de6a8309b9109
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196842"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61168467"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>Configurar Centro de seguridad de Microsoft Defender configuración
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-prefsettings-abovefoldlink)
@@ -38,7 +39,7 @@ Use el **menú Configuración** para modificar la configuración general, las ca
 Tema | Descripción
 :---|:---
 Configuración general | Modifique la configuración general que se definió anteriormente como parte del proceso de incorporación.
-Permisos | Administrar el acceso al portal mediante RBAC, así como grupos de dispositivos.
+Permissions | Administrar el acceso al portal mediante RBAC, así como grupos de dispositivos.
 API | Habilitar la integración de intel e SIEM de amenazas.
 Rules | Configurar reglas de supresión y opciones de automatización.
 Administración de dispositivos | Dispositivos integrados y fuera de la pantalla.

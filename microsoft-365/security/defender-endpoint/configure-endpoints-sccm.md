@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: bbaf1dbee85ac02c1ad44cff78a7434b611e3c20
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: b506cf15e2d08568633533ba29af5e2f809c2134
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962596"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166523"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Incorporación Windows dispositivos con Configuration Manager
 
@@ -29,7 +29,8 @@ ms.locfileid: "60962596"
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager rama actual
 - Administrador de configuración de System Center 2012 R2

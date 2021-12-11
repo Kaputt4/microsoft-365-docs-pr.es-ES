@@ -18,12 +18,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d674e5d2724dc25652ddb8d9c0aa8c528665df39
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: fbbac9e2b2c30748158cf245cdf55aa6a1a82333
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129545"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163391"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Mejor juntos: Antivirus de Microsoft Defender y Office 365
 
@@ -31,7 +31,8 @@ ms.locfileid: "61129545"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 - Microsoft 365
 
@@ -85,7 +86,7 @@ La protección contra ransomware es una gran razón para poner los archivos en O
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
-## <a name="want-to-learn-more-see-these-resources"></a>¿Quiere obtener más información? Vea estos recursos:
+## <a name="want-to-learn-more-see-these-resources"></a>¿Quiere obtener más información? Consulte estos recursos:
 
 - [OneDrive](/onedrive)
 

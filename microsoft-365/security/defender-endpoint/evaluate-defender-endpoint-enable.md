@@ -21,14 +21,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0f8105c9acf921f024ead3f241f850d58de47ee0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 39af377ce71cf1ba8e5e19e8fa786ef9498ab96f
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111464"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61167831"
 ---
 # <a name="pilot-mde-evaluation"></a>Evaluación piloto de MDE
+
+**Se aplica a:**
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > [!NOTE]
 > Con el fin de guiarlo a través de una implementación típica, este escenario solo abarcará el uso de Microsoft Endpoint Configuration Manager. Defender for Endpoint admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulta [Incorporación de dispositivos a Microsoft Defender para Endpoint](onboard-configure.md).
@@ -67,7 +70,7 @@ En la tabla siguiente se enumeran las herramientas disponibles en función del e
 
 |Punto de conexión|Opciones de herramientas|
 |---|---|
-|**Windows**|[Script local (hasta 10 dispositivos)](../defender-endpoint/configure-endpoints-script.md) <p> [Directiva de grupo](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [Scripts VDI](../defender-endpoint/configure-endpoints-vdi.md) <p> [Integración con Microsoft Defender para la nube](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
+|**Windows**|[Script local (hasta 10 dispositivos)](../defender-endpoint/configure-endpoints-script.md) <p> [Directiva de grupo](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [Scripts VDI](../defender-endpoint/configure-endpoints-vdi.md) <p> [Integración con Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[Scripts locales](../defender-endpoint/mac-install-manually.md) <p> [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md) <p> [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md) <p> [Administración de dispositivos móviles](../defender-endpoint/mac-install-with-other-mdm.md)|
 |**Servidor Linux**|[Script local](../defender-endpoint/linux-install-manually.md) <p> [Puppet](../defender-endpoint/linux-install-with-puppet.md) <p> [Ansible](../defender-endpoint/linux-install-with-ansible.md)|
 |**iOS**|[Basado en aplicaciones](../defender-endpoint/ios-install.md)|

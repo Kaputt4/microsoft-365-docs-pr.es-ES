@@ -14,14 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: c19189ab33fca3c537347c0d20d14d602fe99da3
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 41e027f910f46ec7aacbda7a34dac2ce8c171160
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109040"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61163355"
 ---
 # <a name="threat-protection"></a>Protección contra amenazas
+
+**Se aplica a**
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración y la respuesta e investigación automatizadas. Defender for Endpoint protege los puntos de conexión frente a amenazas cibernéticas, detecta ataques avanzados e infracciones de datos, automatiza los incidentes de seguridad y mejora la posición de seguridad.
 
@@ -134,7 +137,7 @@ Integre Microsoft Defender para punto de conexión en los flujos de trabajo exis
 - Intune
 - Microsoft Defender para Office 365
 - Microsoft Defender for Identity
-- Microsoft Defender para la nube
+- Microsoft Defender for Cloud
 - Skype Empresarial
 - Microsoft Defender for Cloud Apps
 

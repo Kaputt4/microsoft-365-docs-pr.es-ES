@@ -15,19 +15,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 44492fb0f763f81a743baf5cce72e9f19f86da48
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 61b275e5e42a10743eee744ab44bce48a25fa2eb
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111368"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61166487"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Asegurarse de que los dispositivos estén configurados de manera adecuada
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
@@ -60,7 +61,7 @@ La administración de configuración de dispositivos funciona estrechamente con 
 Antes de garantizar que los dispositivos estén configurados correctamente, inscríbalos en la administración de Intune. La inscripción de Intune es sólida y tiene varias opciones de inscripción para Windows dispositivos. Para obtener más información acerca de las opciones de inscripción de Intune, lea acerca de cómo configurar la inscripción [para Windows dispositivos](/intune/windows-enroll).
 
 > [!NOTE]
-> Para inscribir Windows dispositivos en Intune, los administradores ya deben tener asignadas licencias. [Lea acerca de la asignación de licencias para la inscripción de dispositivos.](/intune/licenses-assign)
+> Para inscribir Windows dispositivos en Intune, los administradores ya deben tener asignadas licencias. [Obtenga información sobre la asignación de licencias para la inscripción de dispositivos](/intune/licenses-assign).
 
 > [!TIP]
 > Para optimizar la administración de dispositivos a través de Intune, [conecte Intune a Defender para endpoint](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
