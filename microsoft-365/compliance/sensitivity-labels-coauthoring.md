@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 8670bdf0c1cefbddadb88a08c6aecf82fc52aa80
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 57e86f1e41d3b4974a0f148c27be35adcb637714
+ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373073"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401419"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -66,6 +66,11 @@ Debido a estos cambios, no habilite este valor si tiene aplicaciones, servicios,
 Consulte en la siguiente sección una lista de aplicaciones y servicios compatibles con esta configuración y los cambios en los metadatos de etiquetado.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
+> [!IMPORTANT]
+> Esta característica requiere que todos los usuarios tengan Aplicaciones de Microsoft 365 para empresas. El soporte técnico para esta característica de coautoría aún no está disponible con el Canal semestral para empresas para las actualizaciones de Office. Si usa este canal de actualización para las aplicaciones de Office, cámbielo a Canal actual o Canal mensual para empresas.
+> 
+> Para obtener más información, vea [Cómo configurar y administrar los canales de actualización](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels).
 
 Asegúrese de entender los siguientes requisitos previos antes de activar esta característica.
 
