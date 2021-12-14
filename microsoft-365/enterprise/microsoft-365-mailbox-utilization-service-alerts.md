@@ -13,16 +13,18 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 f1.keywords:
 - NOCSH
 description: Use alertas de servicio de uso de buzones para supervisar los buzones en espera que están alcanzando su cuota de buzón.
-ms.openlocfilehash: c131ef58cbad2e2f57c1e97de6c2da6b3b52a707
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 311be4159d45b19ce1123baa840eebdf844840ec
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177308"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421371"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertas de servicio para el uso de buzones en la supervisión de Exchange Online
 
@@ -99,7 +101,7 @@ En la siguiente lista se describe cada columna de la tabla anterior.
    Get-RetentionPolicy <GUID> | FL
    ```
 
-   El valor de la **propiedad Name** es el nombre de la directiva de retención que se muestra en la página **Directivas** de retención en el centro Exchange administración.
+   El valor de la **propiedad Name** es el nombre de la directiva de retención que se muestra en la página **Directivas** de retención del centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange.</a>
 
 - **MailboxType:** especifica el tipo de buzones a los que está asignada la directiva. Los valores *incluyen Primary* (buzones sin archivo) o *PrimaryWithArchive* (buzones con un archivo). Si el valor de esta columna es *Primario*, debe habilitar  el archivo para los buzones (la columna Buzón indica el número de estos buzones) a los que se asigna la directiva. De lo contrario, una directiva de archivo o una etiqueta de archivo personal no funcionarán porque no hay un archivo al que mover elementos.
 

@@ -15,16 +15,17 @@ ms.collection:
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar auditoría básica para que pueda empezar a buscar actividades de auditoría realizadas por usuarios y administradores de su organización.
-ms.openlocfilehash: 9190383fdfab8e4207186ca93895ec9ce23ec6d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e4ae5901c9a4f400e2a01659395d27947ad433c2
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200322"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423625"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>Configurar auditoría básica en Microsoft 365
 
@@ -48,7 +49,7 @@ Para obtener una lista de los requisitos de suscripción y licencias para audito
 
 ## <a name="step-2-assign-permissions-to-search-the-audit-log"></a>Paso 2: Asignar permisos para buscar en el registro de auditoría
 
-A los administradores y miembros de los equipos de investigación se les debe asignar el rol View-Only registros de auditoría o registros de auditoría en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
+A los administradores y miembros de los equipos de investigación se les debe asignar el rol View-Only registros de auditoría o registros de auditoría en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **Permisos** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
 
 En la siguiente captura de pantalla se muestran los dos roles relacionados con la auditoría asignados al grupo de roles administración de la organización en el centro Exchange administración.
 

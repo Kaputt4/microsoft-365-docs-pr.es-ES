@@ -11,19 +11,19 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity.'
-ms.openlocfilehash: 79beabad5b588ae47d9de70cb8a9cce6862a1c1d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 11b84fbd10d2a7180637d377c219502e6ffb00aa
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208198"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423868"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>¿Por qué necesita usar PowerShell para Microsoft 365?
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Con el Centro de administración de Microsoft 365, puede administrar sus Microsoft 365 cuentas de usuario y licencias. También puede administrar los servicios Microsoft 365, como Exchange Online, Teams y SharePoint Online. Si en su lugar usa PowerShell para administrar estos servicios, puede y aprovechar el entorno de línea de comandos y lenguaje de scripting para la velocidad, automatización y capacidades adicionales.
 
@@ -256,14 +256,14 @@ El Centro de administración de Microsoft 365 proporciona varias formas de filtr
 
 ![Ejemplo de realizar una búsqueda avanzada en el Centro de administración de Microsoft 365 para la lista de buzones de todos los usuarios que viven en la ciudad de Bloomington.](../media/o365-powershell-advanced-search.png)
 
-El Centro de administración de Exchange también le permite combinar criterios de filtro. Por ejemplo, puede encontrar los buzones de todas las personas que viven en Bloomington y trabajan en el departamento de Finanzas.
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración también</a> le permite combinar criterios de filtro. Por ejemplo, puede encontrar los buzones de todas las personas que viven en Bloomington y trabajan en el departamento de Finanzas.
 
 Pero hay limitaciones en lo que puede hacer en el centro de administración Exchange administración. Por ejemplo, no se podían encontrar fácilmente los buzones de las personas que viven en *Bloomington* o San Diego, ni los buzones de todas las personas que no viven en Bloomington.
 
 Puede usar el siguiente comando de PowerShell para Microsoft 365 para obtener una lista de buzones para todas las personas que viven en Bloomington o San Diego:
 
 ```powershell
-Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox&quot; -and ($_.City -eq &quot;San Diego&quot; -or $_.City -eq &quot;Bloomington")} | Select DisplayName, City
+Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
 ```
 
 Este es un ejemplo de los resultados:
@@ -344,7 +344,7 @@ Este es un ejemplo de los resultados:
 
 ![Ejemplo de una tabla importada a una hoja de Excel para Skype Empresarial de usuario en línea que se guardó en un archivo de valores separados por comas.](../media/o365-powershell-data-in-excel.png)
 
-La interpretación de este comando de PowerShell es: Obtener todos los usuarios de Skype Empresarial Online en la suscripción Microsoft 365 actual (**Get-CsOnlineUser**); obtener solo el nombre de usuario, UPN y ubicación (**Seleccione DisplayName, UserPrincipalName, UsageLocation**); y, a continuación, guarde esa información en un archivo CSV denominado C: \\ Logs \\SfBUsers.csv (**Export-Csv -Path "C: \\ Logs \\SfBUsers.csv" -NoTypeInformation**).
+La interpretación de este comando de PowerShell es: Obtener todos los usuarios de Skype Empresarial Online en la suscripción Microsoft 365 actual (**Get-CsOnlineUser**); obtener solo el nombre de usuario, UPN y la ubicación (**Seleccione DisplayName, UserPrincipalName, UsageLocation**); y luego guarde esa información en un archivo CSV denominado C: \\ LogsSfBUsers.csv ( \\ **Export-Csv -Path "C: \\ Logs: Logs \\ SfBUsers.csv" -NoTypeInformation**).
 
 También puede usar opciones para guardar esta lista como un archivo XML o una página HTML. De hecho, con comandos de PowerShell adicionales, podría guardarlo directamente como un archivo Excel, con cualquier formato personalizado que desee.
 
@@ -358,7 +358,7 @@ Y este es el aspecto que tendrá el documento impreso:
 
 ![Ejemplo de un documento impreso que era el resultado de un comando de PowerShell enviado directamente a la impresora predeterminada en Windows.](../media/o365-powershell-printed-data.png)
 
-La interpretación de este comando de PowerShell es: Obtener todos los usuarios de Skype Empresarial Online en la suscripción Microsoft 365 actual; obtener solo el nombre de usuario, UPN y ubicación; y, a continuación, envíe esa información a la impresora Windows predeterminada (**Out-Printer**).
+La interpretación de este comando de PowerShell es: obtener todos los usuarios de Skype Empresarial Online en la suscripción Microsoft 365 actual; obtener solo el nombre de usuario, UPN y ubicación y, a continuación, enviar esa información a la impresora Windows predeterminada ( Fuera **de** impresora ).
 
 El documento impreso tiene el mismo formato simple que la pantalla en la ventana de comandos de PowerShell. Para obtener una copia impresa, simplemente agregue **| Out-Printer** al final del comando.
 
@@ -378,7 +378,7 @@ Suponga que quiere crear un informe que muestre la información siguiente de tod
 
 - Si el usuario está habilitado en Skype Empresarial Online
 
-No puede producir fácilmente un informe de este tipo en el Centro de administración de Microsoft 365. En su lugar, tendría que crear un documento independiente para almacenar la información, como una hoja Excel hoja de cálculo. A continuación, obtenga todos los nombres de usuario y la información de licencias de Centro de administración de Microsoft 365, obtenga información del buzón del Centro de administración de Exchange, obtenga información de Skype Empresarial Online desde el Centro de administración en línea de Skype Empresarial y, a continuación, combine esa información.
+No puede producir fácilmente un informe de este tipo en el Centro de administración de Microsoft 365. En su lugar, tendría que crear un documento independiente para almacenar la información, como una hoja Excel hoja de cálculo. A continuación, obtenga todos los nombres de usuario y la información de licencias de Centro de administración de Microsoft 365, obtenga información de buzones del Centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange,</a>obtenga Skype Empresarial información en línea de la Skype Empresarial  Centro de administración en línea y, a continuación, combine esa información.
 
 La alternativa es usar un script de PowerShell para compilar el informe por usted.
 
@@ -424,7 +424,7 @@ La interpretación de este script de PowerShell es:
 1. Agregue una nueva propiedad a la información del usuario denominada *EnabledForSfB*. Estabózcalo en el valor de la propiedad Enabled de la información de Skype Empresarial Online del usuario (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**).
 1. Mostrar la lista de usuarios, pero incluir solo su nombre, si tienen licencia y las dos nuevas propiedades que indican si su buzón está habilitado y si están habilitados para Skype Empresarial Online (**$x | Seleccione DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 

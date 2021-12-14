@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Aprenda a convertir un buzón privado en un buzón compartido al que puedan tener acceso varias personas en lugar de solo una persona. '
-ms.openlocfilehash: 48799e99bca316dd3a5a073be2c24f1057a07151
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 45ed21e1638bfee2d13ee59193a542bd4f70e05b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165057"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422272"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 

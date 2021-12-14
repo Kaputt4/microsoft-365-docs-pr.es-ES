@@ -18,14 +18,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 3e2c575cbb4bf0019e537fc1ffaaaaeb9e67bfd8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 079e392a234339493fb293406d6e85d4ddb7c5f6
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177380"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423064"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -219,7 +221,7 @@ Tenga en cuenta que las excepciones se consideran condiciones y todas estas cond
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Sugerencias de directiva en el Centro Exchange administración frente al Centro de &amp; cumplimiento de seguridad
 
-Las sugerencias de directivas pueden funcionar con directivas DLP y reglas de flujo de correo creadas en el centro de administración de Exchange o con directivas DLP creadas en el Centro de cumplimiento de seguridad, pero no &amp; ambas. Esto se debe a que estas directivas se almacenan en distintas ubicaciones, pero las sugerencias de directivas solo pueden dibujarse desde una sola ubicación.
+Las sugerencias de directivas pueden funcionar con directivas DLP y reglas de flujo de correo creadas en el Centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>o con directivas DLP creadas en el Centro de cumplimiento de seguridad, pero no &amp; ambas. Esto se debe a que estas directivas se almacenan en distintas ubicaciones, pero las sugerencias de directivas solo pueden dibujarse desde una sola ubicación.
 
 Si ha configurado sugerencias de directivas en el Centro de administración de Exchange, las sugerencias de directiva que configure en el Centro de cumplimiento de seguridad no aparecerán para los usuarios de Outlook en la Web y Outlook 2013 y posteriores hasta que desactive las sugerencias en el Centro de administración de &amp; Exchange. Esto garantiza que las reglas Exchange flujo de correo actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que elija cambiar al Centro de cumplimiento &amp; de seguridad.
 
@@ -246,7 +248,7 @@ Cuando los usuarios trabajan con contenido confidencial en las versiones de escr
 Office programas de escritorio sincronizan automáticamente directivas DLP directamente desde Office 365 y, a continuación, analizan los documentos para asegurarse de que no entren en conflicto con las directivas DLP y mostrar sugerencias de directivas en tiempo real.
 
 > [!NOTE]
-> Office aplicaciones de escritorio digitalizar documentos por sí mismas para determinar si se deben mostrar sugerencias de directiva DLP; no muestran sugerencias de directiva que SharePoint sitios en línea o OneDrive para la Empresa ya determinados deben mostrarse en un archivo. Como resultado, es posible que no siempre veas una sugerencia de directiva DLP en las aplicaciones de escritorio que veas en los sitios de SharePoint Online o OneDrive para la Empresa web. En cambio, las aplicaciones Office web solo muestran sugerencias de directiva DLP que SharePoint Sitios en línea o OneDrive para la Empresa sitios ya determinados deben mostrarse.
+> Office aplicaciones de escritorio analizan documentos por sí mismas para determinar si se deben mostrar sugerencias de directiva DLP; no muestran sugerencias de directiva que los sitios SharePoint Online o OneDrive para la Empresa ya determinados deben mostrarse en un archivo. Como resultado, es posible que no siempre veas una sugerencia de directiva DLP en las aplicaciones de escritorio que veas en los sitios de SharePoint Online o OneDrive para la Empresa web. En cambio, las aplicaciones Office web solo muestran sugerencias de directiva DLP que SharePoint Sitios en línea o OneDrive para la Empresa sitios ya determinados deben mostrarse.
 
 En función de cómo se configuran las sugerencias de directiva en la directiva DLP, los usuarios pueden optar por simplemente ignorar la sugerencia de directiva, invalidar la directiva con o sin una justificación del negocio o informar de un falso positivo.
 
@@ -281,7 +283,7 @@ Puede personalizar el texto de las sugerencias de directiva de forma independien
 ## <a name="more-information"></a>Más información
 
 - [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
-- [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
+- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
 - [Condiciones de directiva DLP, excepciones y acciones (versión preliminar)](./dlp-microsoft-teams.md)
 - [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)

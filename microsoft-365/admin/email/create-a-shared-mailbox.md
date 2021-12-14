@@ -18,23 +18,24 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: a2c4480d443874c99cf014570e01845708d18d88
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 19e27510b9ffd28aaae739c6d4da4299bca1a4fb
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371153"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422308"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
 > [!NOTE]
-> Si su organización usa un entorno híbrido de Exchange, debe usar el Centro de administración de Exchange (EAC) local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el centro de administración de Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+> Si su organización usa un entorno Exchange híbrido, debe usar <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">el Centro de administración de Exchange</a> local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el centro de administración de Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
 > Si no está seguro de si debería crear un buzón compartido o un grupo de Microsoft 365 para Outlook, vea [Comparar grupos](../create-groups/compare-groups.md) para tener más clara su decisión. Tenga en cuenta que no es posible migrar un buzón compartido a un grupo de Microsoft 365 en este momento. Si esto le interesaría, indíquelo [votando aquí](https://go.microsoft.com/fwlink/?linkid=871518).
 
@@ -90,7 +91,7 @@ Puede usar los siguientes permisos con un buzón compartido:
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Usar el EAC para editar la delegación de buzones compartidos
 
-1. En el EAC, vaya a **Destinatarios** \> **Compartidos**. Seleccione el buzón de correo compartido y, después, **Editar** ![Icono de edición](../../media/ITPro-EAC-EditIcon.png).
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>, vaya a **Destinatarios** \> **Compartidos**. Seleccione el buzón de correo compartido y, después, **Editar** ![Icono de edición](../../media/ITPro-EAC-EditIcon.png).
 
 2. Seleccione **Delegación de buzón**.
 

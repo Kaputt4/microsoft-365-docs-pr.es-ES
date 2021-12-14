@@ -15,13 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: 5b6bbab9ff6ad54440fc84213d3e810c863ebef4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53c6cae76327c7a8fb8ca89de464ad8a63e75d6a
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200190"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422560"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
@@ -364,9 +365,9 @@ En las secciones siguientes se enumeran los partners de Microsoft (y los orígen
 
 - NEONetwork
 
-- Microsoft 365 Dedicado a Lync
+- Microsoft 365 Lync Dedicado
 
-- Microsoft 365 Mensajería instantánea compartida
+- Microsoft 365 mensajería instantánea compartida
 
 - Pinterest
 
@@ -475,9 +476,9 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
 
  **Complete estas tareas en el Centro de administración de Microsoft 365**
 
-1. Cree una cuenta de usuario y asígnele una licencia Exchange Online plan 2; vea [Agregar usuarios a Microsoft 365](../admin/add-users/add-users.md). Se requiere una licencia de plan 2 para colocar el buzón en retención por juicio o habilitar un buzón de archivo con una cuota de almacenamiento de hasta 1,5 TB.
+1. Cree una cuenta de usuario y asígnele una Exchange Online de plan 2; vea [Agregar usuarios a Microsoft 365](../admin/add-users/add-users.md). Se requiere una licencia de plan 2 para colocar el buzón en retención por juicio o habilitar un buzón de archivo con una cuota de almacenamiento de hasta 1,5 TB.
 
-2. Agregue la cuenta de usuario del buzón de datos de terceros al rol de administrador Exchange **de** administrador en Microsoft 365; vea [Asignar roles de administrador en Microsoft 365](../admin/add-users/assign-admin-roles.md).
+2. Agregue la cuenta de usuario del buzón  de datos de terceros al rol de administrador de Exchange en Microsoft 365; vea Asignar roles de [administrador en Microsoft 365](../admin/add-users/assign-admin-roles.md).
 
     > [!TIP]
     > Escriba las credenciales para esta cuenta de usuario. Necesitará proporcionárselas a su socio, tal como se describe en el paso 4.
@@ -490,7 +491,7 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. Asigne el **permiso FullAccess** al buzón de datos de terceros para que los administradores o responsables de cumplimiento puedan abrir el buzón de datos de terceros en el Outlook de escritorio; vea [Manage permissions for recipients](https://go.microsoft.com/fwlink/p/?LinkId=692104).
+2. Asigne el permiso **FullAccess** al buzón de datos de terceros para que los administradores o [responsables](https://go.microsoft.com/fwlink/p/?LinkId=692104)de cumplimiento puedan abrir el buzón de datos de terceros en el cliente de escritorio de Outlook; vea Administrar permisos para destinatarios .
 
 3. Habilite las siguientes características relacionadas con el cumplimiento para el buzón de datos de terceros:
 
@@ -500,21 +501,21 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
 
       - [Poner un buzón en retención por juicio](./create-a-litigation-hold.md)
 
-      - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
+      - [Más información sobre las directivas y las etiquetas de retención](retention.md)
 
     - Habilitar el registro de auditoría de buzones de correo para el acceso de propietario, delegado y administrador al buzón de datos de terceros; vea [Enable mailbox auditing](enable-mailbox-auditing.md). Esto le permite auditar toda la actividad realizada por cualquier usuario que tenga acceso al buzón de datos de terceros.
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>Paso 3: Configurar los buzones de usuario para los datos de terceros
 
-El paso siguiente es configurar los buzones de usuario para que admitan los datos de terceros. Complete estas tareas mediante el centro Exchange administración o mediante el uso de los cmdlets Windows PowerShell correspondientes.
+El paso siguiente es configurar los buzones de usuario para que admitan los datos de terceros. Complete estas tareas mediante el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administración</a> o mediante los cmdlets Windows PowerShell correspondientes.
 
 1. Habilitar el buzón de archivo para cada usuario; vea [Habilitar buzones de archivo](enable-archive-mailboxes.md) y Habilitar el archivado de [expansión automática.](enable-autoexpanding-archiving.md)
 
-2. Colocar buzones de usuario en retención por juicio o aplicar una Microsoft 365 de retención; vea uno de los siguientes temas:
+2. Colocar buzones de usuario en retención por juicio o aplicar una directiva Microsoft 365 de retención; vea uno de los siguientes temas:
 
     - [Poner un buzón en retención por juicio](./create-a-litigation-hold.md)
 
-    - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
+    - [Más información sobre las directivas y las etiquetas de retención](retention.md)
 
     Como ya se ha indicado, al poner los buzones en retención, puede determinar durante cuánto tiempo deben retenerse los elementos del origen de datos de terceros o puede optar por retener los elementos indefinidamente.
 
@@ -561,7 +562,7 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
 
 - Tal como se ha explicado, los elementos de orígenes de datos de terceros se importan a los buzones de Exchange como mensajes de correo electrónico. El conector de asociado importa el elemento mediante un esquema requerido por la API Microsoft 365 usuario. En la tabla siguiente se describen las propiedades del mensaje de un elemento de un origen de datos de terceros después de que este se importe a un buzón de Exchange como un mensaje de correo electrónico. La tabla también indica si la propiedad del mensaje es obligatoria. Las propiedades obligatorias deben rellenarse. Si a un elemento le falta una propiedad obligatoria, no se importará a Microsoft 365. El proceso de importación devuelve un mensaje de error que explica por qué no se importó un elemento y qué propiedad falta.<br/><br/>
 
-    |**Propiedad del mensaje**|**¿Es obligatoria?**|**Descripción**|**Valor de ejemplo**|
+    |**Propiedad del mensaje**|**¿Es obligatoria?**|**Description**|**Valor de ejemplo**|
     |:-----|:-----|:-----|:-----|
     |**FROM** <br/> |Sí  <br/> |El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector de partners intenta asignar el identificador de usuario del elemento de origen (por ejemplo, un identificador de Twitter) a una cuenta de usuario para todos los participantes (usuarios en los campos FROM y TO). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario, el elemento se importará al buzón de archivado de terceros en Microsoft 365.  <br/> <br/> El participante identificado como el remitente del elemento debe tener un buzón activo en la organización a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |Sí  <br/> |El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.  <br/> | `bob@contoso.com` <br/> |

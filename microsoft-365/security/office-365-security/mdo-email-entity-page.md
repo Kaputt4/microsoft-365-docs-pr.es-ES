@@ -15,14 +15,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 description: Los clientes de Microsoft Defender Office 365 E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: 6a742653f5c249da356b9295572085733ecec5bf
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 037ab81dd0c657906c59cf485c9da25c58804dab
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960651"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423280"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -112,7 +114,7 @@ Los usuarios verán detalles enriquecidos de detonación para datos adjuntos mal
 
 *Detalles del correo* electrónico: detalles necesarios para una comprensión más detallada del correo electrónico disponible en la *pestaña* Análisis.
 
-- Exchange de transporte (también conocidas como reglas de flujo de correo o *ETR):* estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad (phish) y correo no deseado. Solo se pueden crear y modificar en el centro de administración de Exchange, pero si algún ETR se aplica a un mensaje, el nombre etr y el GUID se mostrarán aquí. Información valiosa para fines de seguimiento.
+- Exchange de transporte (también conocidas como reglas de flujo de correo o *ETR):* estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad (phish) y correo no deseado. Solo se pueden crear y modificar en el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange,</a>pero si algún ETR se aplica a un mensaje, aquí se mostrarán el nombre etr y el GUID. Información valiosa para fines de seguimiento.
 
 - *Invalidaciones del* sistema: este es un medio para hacer excepciones a la ubicación de entrega destinada a un mensaje al invalidar la ubicación de entrega dada por el sistema (según la tecnología de amenazas y detección).
 

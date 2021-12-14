@@ -12,27 +12,28 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 33d411abb13e1fe50365b353c59c61a53158bc48
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fe3f65e2545b71f8cfbaea76dfd34fd2720a790f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207240"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423028"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrar búsquedas y retenciones de exhibición de documentos electrónicos heredados a la Centro de cumplimiento de Microsoft 365
 
-El Centro de cumplimiento de Microsoft 365 proporciona una experiencia mejorada para el uso de exhibición de documentos electrónicos, que incluye: mayor confiabilidad, mejor rendimiento y muchas características adaptadas a flujos de trabajo de exhibición de documentos electrónicos, incluidos los casos para organizar el contenido por asunto, conjuntos de revisión para revisar contenido y análisis para ayudar a eliminar datos para su revisión, como agrupaciones casi duplicadas, subprocesos de correo electrónico, análisis de temas y codificación predictiva .
+El Centro de cumplimiento de Microsoft 365 proporciona una experiencia mejorada para el uso de exhibición de documentos electrónicos, que incluye: mayor confiabilidad, mejor rendimiento y muchas características adaptadas a flujos de trabajo de exhibición de documentos electrónicos, incluidos los casos para organizar el contenido por asunto, conjuntos de revisión para revisar contenido y análisis para ayudar a eliminar datos para su revisión, como agrupaciones casi duplicadas, subprocesos de correo electrónico, análisis de temas y predictivos  codificación.
 
-Para ayudar a los clientes a aprovechar la funcionalidad nueva y mejorada, en este artículo se proporcionan instrucciones básicas sobre cómo migrar las búsquedas y retenciones de exhibición de documentos electrónicos In-Place desde el Centro de administración de Exchange a la Centro de cumplimiento de Microsoft 365.
+Para ayudar a los clientes a aprovechar la funcionalidad nueva y mejorada, en este artículo se proporcionan instrucciones básicas sobre cómo migrar las búsquedas y retenciones de exhibición de documentos electrónicos In-Place desde el Centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> al centro de administración Centro de cumplimiento de Microsoft 365.
 
 > [!NOTE]
 > Dado que hay muchos escenarios diferentes, este artículo proporciona instrucciones generales para realizar la transición de búsquedas y retenciones a un caso principal de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. El uso de casos de exhibición de documentos electrónicos no siempre es necesario, pero agregan una capa adicional de seguridad al permitirle asignar permisos para controlar quién tiene acceso a los casos de exhibición de documentos electrónicos en su organización.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 para ejecutar los comandos de PowerShell descritos en este artículo. También debe ser miembro del grupo de roles Administración de detección en el centro Exchange administración.
+- Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 para ejecutar los comandos de PowerShell descritos en este artículo. También debe ser miembro del grupo de roles Administración de detección en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro Exchange administración.</a>
 
 - En este artículo se proporcionan instrucciones sobre cómo crear una retención de exhibición de documentos electrónicos. La directiva de retención se aplicará a los buzones a través de un proceso asincrónico. Al crear una retención de exhibición de documentos electrónicos, debe crear una CaseHoldPolicy y CaseHoldRule, de lo contrario, no se creará la retención y las ubicaciones de contenido no se colocarán en espera.
 
@@ -134,7 +135,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 Para asegurarse de que todo está configurado correctamente, vaya al Centro de cumplimiento de Microsoft 365 en , y haga clic en [https://compliance.microsoft.com](https://compliance.microsoft.com) **eDiscovery > Core**.
 
-![Microsoft 365 Exhibición de documentos electrónicos del Centro de cumplimiento.](../media/MigrateLegacyeDiscovery7.png)
+![Microsoft 365 eDiscovery del Centro de cumplimiento.](../media/MigrateLegacyeDiscovery7.png)
 
 El caso que creó en el paso 3 aparece en la **página eDiscovery** principal. Abra el caso y, a continuación, observe la retención que creó en el paso 4 en la lista en la **pestaña** Retención. Puede seleccionar la retención para ver detalles en la página desplegable, incluido el número de buzones a los que se aplica la retención y el estado de distribución.
 
@@ -148,7 +149,7 @@ Si migra una búsqueda In-Place exhibición de documentos electrónicos pero no 
 
 ## <a name="more-information"></a>Más información
 
-- Para obtener más información acerca In-Place las & de exhibición de documentos electrónicos en el Centro Exchange administración, vea:
+- Para obtener más información sobre In-Place de exhibición de documentos electrónicos & en el Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">de</a>administración de Exchange, vea:
   
   - [Exhibición de documentos electrónicos en contexto](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 

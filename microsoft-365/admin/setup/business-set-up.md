@@ -32,12 +32,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Descubra los pasos de configuración para Microsoft 365 Empresa Premium, como agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: 9fd4189754f11983770a01f8a9eb3e4858f55dec
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: adfb65a5dcbba398ea398a17f605e12c17375c5c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128045"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422092"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurar Microsoft 365 Empresa Premium en el Asistente para configuración
 
@@ -56,7 +56,7 @@ Vea este vídeo para obtener información general sobre Microsoft 365 Empresa Pr
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Agregar el dominio, los usuarios y configurar directivas
 
-Al comprar Microsoft 365 Empresa Premium, tiene la opción de usar un dominio de su propiedad o de comprar uno durante [el registro.](../../business-video/sign-up.md)
+Al comprar Microsoft 365 Empresa Premium, tiene la opción de usar un dominio de su propiedad o de comprar uno durante [el registro.](../admin-overview/sign-up-for-office-365.md)
 
 - Si compró uno nuevo cuando se registró, el dominio estará configurado y podrá proceder a [Agregar usuarios y asignar licencias](#add-users-and-assign-licenses).
 

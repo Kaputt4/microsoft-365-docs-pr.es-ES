@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centro de administración de Microsoft 365- learn about the features that were added this month.
-ms.openlocfilehash: 31ae9f1b1c4bf8255ef1105089ffe2637dc36e0b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d2573180fd254063da5450acbdeeb78aa99d6367
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374393"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422776"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -400,9 +400,9 @@ Novedades de la serie de vídeos de **Microsoft 365:** este mes, tratamos sugere
 #### <a name="for-admins-and-business-owners"></a>Para administradores y propietarios de empresas
 
 - [Potencie su pequeña empresa con el trabajo a distancia](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Ejecutar una pequeña empresa remota](../business-video/sign-up.md)
-- [Registrarse en Microsoft Business Basic](../business-video/sign-up.md)
-- [Configuración del inicio de sesión en dos factores](../business-video/sign-up.md)
+- [Ejecutar una pequeña empresa remota](admin-overview/sign-up-for-office-365.md)
+- [Registrarse en Microsoft Business Basic]()
+- [Configuración del inicio de sesión en dos factores](admin-overview/sign-up-for-office-365.md)
 
 ## <a name="march-2020"></a>Marzo 2020
 

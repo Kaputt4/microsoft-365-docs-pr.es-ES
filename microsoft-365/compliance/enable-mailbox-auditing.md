@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominada auditoría de buzones predeterminada o auditoría de buzones de correo activada de forma predeterminada). Esto significa que determinadas acciones realizadas por propietarios de buzones, delegados y administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: 4487defd4c971b5decda3442739730adcafac453
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 06386651c163fa3e4408f2e7a918fe30030ede06
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207312"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423412"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -68,7 +70,7 @@ En la tabla siguiente se muestran los tipos de buzones que actualmente son compa
 |---|:---:|
 |Buzones de usuario|![Marca de verificación.](../media/checkmark.png)|
 |Buzones compartidos|![Marca de verificación.](../media/checkmark.png)|
-|Microsoft 365 Buzones de grupo|![Marca de verificación.](../media/checkmark.png)|
+|Microsoft 365 buzones de grupo|![Marca de verificación.](../media/checkmark.png)|
 |Buzones de recursos||
 |Buzones de carpetas públicas||
 |
@@ -346,7 +348,7 @@ El valor **True** indica que el registro de auditoría de buzones se omite para 
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) para buscar usuarios específicos en el registro de auditoría de buzones.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) para buscar usuarios específicos en el registro de auditoría del buzón y enviar los resultados por correo electrónico a destinatarios especificados.
 
-  - Use el Exchange de administración (EAC) de Exchange Online para realizar las siguientes acciones:
+  - Use el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración (EAC)</a> de Exchange Online para realizar las siguientes acciones:
     - [Exportar registros de auditoría de buzones](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
     - [Ejecutar un informe de acceso al buzón de correo del que no se es propietario](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 

@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Use el Asistente para la instalación para agregar el dominio Microsoft 365 en el Centro de administración de Microsoft 365 agregando un registro DNS en el host DNS.
-ms.openlocfilehash: 7bb853e777ee0377ac0fb6ec6f7de453d4c4d4c7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d3ddcd9b0eb97b568650a28e360f2e5b296cda54
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373241"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426332"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "61373241"
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para agregar, modificar o quitar dominios, **debe ser** administrador **global** de un plan empresarial [o empresarial.](https://products.office.com/business/office) Estos cambios afectan a todo el espacio empresarial; *Los administradores personalizados* *o* los usuarios normales no podrán realizar estos cambios.
+Para agregar, modificar o quitar  dominios, debe ser **administrador** de nombres de dominio o administrador **global** de un plan empresarial [o empresarial.](https://products.office.com/business/office) Estos cambios afectan a todo el espacio empresarial; *Los administradores personalizados* *o* los usuarios normales no podrán realizar estos cambios.
 
 ## <a name="watch-add-a-domain"></a>Watch: Add a domain
 
@@ -112,7 +112,7 @@ Siga los pasos siguientes para agregar un registro personalizado para un sitio w
 
 5. Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="registrars-with-domain-connect"></a>Registradores con dominio Conectar
 
@@ -145,5 +145,8 @@ Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ah
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Preguntas más frecuentes](domains-faq.yml) sobre dominios (artículo) [¿Qué es un dominio?](../get-help-with-domains/what-is-a-domain.md) (artículo) [Comprar un nombre de dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artículo)\
-[Agregar registros DNS para conectar el dominio](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (artículo) Cambiar servidores de nombres para configurar Microsoft 365 con cualquier registrador de [dominio](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (artículo)
+[Preguntas más frecuentes sobre dominios](domains-faq.yml) (artículo)</br>
+[¿Qué es un dominio?](../get-help-with-domains/what-is-a-domain.md) (artículo)</br>
+[Comprar un nombre de dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artículo)</br>
+[Agregar registros DNS para conectar el dominio](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (artículo)</br>
+[Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (artículo)

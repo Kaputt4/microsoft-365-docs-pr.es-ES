@@ -7,17 +7,18 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.custom: admindeeplinkEXCHANGE
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden aprender a usar el widget Colas en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar el flujo de correo fallido a sus organizaciones locales o asociadas a través de conectores salientes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4652cfda1010fc0b3a416c0be7f68095b11e4ad4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 59974eca9512fc634701e932610f07239f89f038
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162163"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423172"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Información sobre colas en el Centro de seguridad & cumplimiento
 
@@ -81,7 +82,7 @@ Incluso si el volumen de mensajes en cola no ha superado el  umbral y ha [](mail
 Si hace clic en el número de mensajes del widget, aparecerá un **control** flotante Mensajes en cola con la siguiente información:
 
 - **Número de mensajes en cola**
-- **Nombre del conector:** haga clic en el nombre del conector para administrar el conector en el centro Exchange administración (EAC).
+- **Nombre del conector:** seleccione el nombre del conector para administrar el conector en el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administración (EAC).</a>
 - **Hora de inicio de cola**
 - **Mensajes más antiguos expirados**
 - **Servidor de destino**
@@ -95,6 +96,6 @@ Se muestra el mismo menú desplegable después de hacer clic en **Ver cola** en 
 
 ![Los mensajes se han retrasado en los detalles de alerta en el Centro de seguridad & cumplimiento.](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

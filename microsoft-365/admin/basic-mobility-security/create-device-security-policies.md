@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 description: Usa Movilidad y seguridad básicas para crear directivas de dispositivo que protejan la información de la organización.
-ms.openlocfilehash: aabac06a8936728ad1b37ee69fa22cc74e1a712e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c0fa9cec0b9029d2cd55aace0c758e6c81e265b0
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166137"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421839"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Crear directivas de seguridad de dispositivos en Movilidad y seguridad básicas
 
@@ -41,7 +42,7 @@ Puedes usar Movilidad y seguridad básicas para crear directivas de dispositivo 
 - Antes de implementar directivas, haga que su organización conozca los posibles impactos de inscribir un dispositivo en Movilidad y seguridad básicas. En función de cómo configure las directivas, se puede bloquear el acceso a los dispositivos que no sean compatibles con Microsoft 365 y los datos, incluidas las aplicaciones instaladas, las fotos y la información personal de un dispositivo inscrito, y los datos se pueden eliminar.
 
 > [!NOTE]
-> Las directivas y las reglas de acceso creadas en Basic Mobility and Security for Microsoft 365 Empresa Estándar override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. Una vez que un dispositivo se inscribe en Movilidad básica y seguridad para Microsoft 365 Empresa Estándar, se omite cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivos Exchange ActiveSync aplicación al dispositivo. Para obtener más información sobre Exchange ActiveSync, vea [Exchange ActiveSync en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Directivas y reglas de acceso creadas en Basic Mobility and Security for Microsoft 365 Empresa Estándar override Exchange ActiveSync mobile device mailbox policies and device access rules created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Una vez que un dispositivo se inscribe en Movilidad básica y seguridad para Microsoft 365 Empresa Estándar, se omite cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivos Exchange ActiveSync aplicación al dispositivo. Para obtener más información sobre Exchange ActiveSync, vea [Exchange ActiveSync en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Paso 1: Crear una directiva de dispositivo e implementarla en un grupo de pruebas
 

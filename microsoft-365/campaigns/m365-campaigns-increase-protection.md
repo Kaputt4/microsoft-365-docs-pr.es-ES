@@ -19,17 +19,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga ayuda para aumentar el nivel de protección en Microsoft 365
-ms.openlocfilehash: 42acbae868a3d451add0b93a0b7c21d46893010d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 454f5dbc1103fce384f7a42398ef6062e79ed6f5
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172784"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422668"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentar la protección contra amenazas para Microsoft 365 suscripción
 
@@ -83,7 +84,7 @@ Para crear una regla de transporte de correo:
 
 6. Haga clic en **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Cualquier dato adjunto . . . extensión de archivo coincide con . . .|
@@ -91,7 +92,7 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
 |Proporcionar texto del mensaje|No abra estos tipos de archivos de personas que no conoce porque pueden contener macros con código malintencionado.|
 
-Para más información vea:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -115,9 +116,9 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
 
 6. Haga clic en **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
-|Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
+|Name|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
 |Agregar condición|Las propiedades del mensaje . . . incluir el tipo de mensaje . . . Reenvío automático|
 |Haga lo siguiente...|Bloquear el mensaje . . . rechazar el mensaje e incluir una explicación.|
@@ -212,7 +213,7 @@ Para obtener más información, vea [Set up anti-phishing policies in Defender f
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>Configurar vínculos Caja fuerte en el Centro de seguridad & cumplimiento
 
-Los hackers a veces ocultan sitios web malintencionados en vínculos de correo electrónico u otros archivos. Caja fuerte Los vínculos, que forman parte de Microsoft Defender para Office 365, pueden ayudar a proteger su organización proporcionando la comprobación con tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos Office usuario. La protección se define a través de Caja fuerte de vínculos.
+Los hackers a veces ocultan sitios web malintencionados en vínculos de correo electrónico u otros archivos. Caja fuerte Links, parte de Microsoft Defender para Office 365, puede ayudar a proteger su organización proporcionando la comprobación con tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos Office. La protección se define a través de Caja fuerte de vínculos.
 
 Se recomienda hacer lo siguiente:
 
@@ -257,7 +258,7 @@ Para obtener más información, [vea Caja fuerte Links in Defender for Office 36
 
 Después de activar la búsqueda del registro de auditoría en el Centro de seguridad & cumplimiento, puede conservar el administrador y otra actividad de usuario en el registro y buscarlo.
 
-Debe tener asignado el rol Registros de auditoría en Exchange Online activar o desactivar la búsqueda del registro de auditoría en su suscripción Microsoft 365 auditoría. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento y Administración de la organización en la página Permisos del centro Exchange administración. Los administradores globales de Microsoft 365 son miembros de este grupo de forma predeterminada.
+Debe tener asignado el rol Registros de auditoría en Exchange Online activar o desactivar la búsqueda del registro de auditoría en su suscripción Microsoft 365 auditoría. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento y Administración de la organización en la página Permisos del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro Exchange administración.</a> Los administradores globales de Microsoft 365 son miembros de este grupo de forma predeterminada.
 
 1. Para activar la búsqueda del registro de auditoría, vaya al Centro de administración en y, a continuación, elija Seguridad en Centros de <https://admin.microsoft.com> **administración** en la navegación izquierda. 
 2. En la **página Microsoft 365 Seguridad,** elija **Más** recursos y, a continuación, Abra en la tarjeta Office 365 seguridad & **centro de cumplimiento.** 

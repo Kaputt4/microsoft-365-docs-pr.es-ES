@@ -21,15 +21,16 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: material de referencia de prevención de pérdida de datos
-ms.openlocfilehash: cce8aa10f0ae84daa3a89881b689b93a212ef472
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 85fa08419b964555ce036b96a78f8c3fe6bab3a1
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204424"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422872"
 ---
 # <a name="data-loss-prevention-reference"></a>Referencia de prevención de pérdida de datos
 
@@ -528,7 +529,7 @@ DLP evalúa el contenido que se puede indexar. Para obtener más información so
 
 Cuando se crea una directiva DLP que incluye Exchange Online como ubicación, la directiva se sincroniza desde el Centro de seguridad y cumplimiento de Office 365 con Exchange Online y, después, desde Exchange Online con Outlook en la Web y Outlook.
 
-Cuando se redacta un mensaje en Outlook, el usuario puede ver sugerencias de directiva mientras el contenido creado se evalúa según las directivas DLP. Y cuando se envía un mensaje, este se evalúa según las directivas DLP como una parte normal del flujo de correo, junto con las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y las directivas DLP creadas en el centro de administración de Exchange. Las directivas DLP escanean tanto el mensaje como los archivos adjuntos.
+Cuando se redacta un mensaje en Outlook, el usuario puede ver sugerencias de directiva mientras el contenido creado se evalúa según las directivas DLP. Y después de enviar un mensaje, se evalúa con las directivas DLP como una parte normal del flujo de correo, junto con las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y las directivas DLP creadas en el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>. Las directivas DLP escanean tanto el mensaje como los archivos adjuntos.
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Evaluación de la directiva en los programas de escritorio de Office
 

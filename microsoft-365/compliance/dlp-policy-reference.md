@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 3c1b98c3825d783685976d2e56583eccb7ba96b4
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4588ef4ead22ebae147ea7fdae1d3dafaa3ca1dc
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111008"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426440"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -161,15 +161,17 @@ Las reglas son la lógica empresarial de las directivas DLP. Constan de:
 
 ### <a name="the-priority-by-which-rules-are-processed"></a>Prioridad por la que se procesan las reglas
 
-A cada regla se le asigna una prioridad en el orden en que se crea. Esto significa que la regla creada primero tiene primera prioridad, la regla creada en segundo lugar tiene la segunda prioridad, y así sucesivamente. 
+#### <a name="hosted-service-workloads"></a>Cargas de trabajo de servicio hospedado
+
+Para las cargas de trabajo del servicio hospedado, como Exchange Online, SharePoint Online y OneDrive para la Empresa, a cada regla se le asigna una prioridad en el orden en que se crea. Esto significa que la regla creada primero tiene primera prioridad, la regla creada en segundo lugar tiene la segunda prioridad, y así sucesivamente. 
   
 ![Reglas en orden de prioridad](../media/dlp-rules-in-priority-order.png)
 
-Cuando se evalúa el contenido frente a reglas, estas se procesan en orden de prioridad. Si el contenido coincide con varias reglas, se aplica la primera regla que tiene la acción más restrictiva. Por ejemplo, si el contenido coincide con todas las reglas siguientes, se aplica la Regla 3 porque es la regla más restrictiva y con mayor prioridad:
+Cuando se evalúa el contenido frente a reglas, estas se procesan en orden de prioridad. Si el contenido coincide con varias reglas, se aplica la primera regla que tiene la *acción* más restrictiva. Por ejemplo, si el contenido coincide con todas las reglas siguientes, se aplica la regla *3* porque es la regla más restrictiva y de mayor prioridad:
   
 - Regla 1: solo notifica a los usuarios
 - Regla 2: notifica a los usuarios, restringe el acceso y permite invalidaciones de usuario
-- Regla 3: notifica a los usuarios, restringe el acceso y no permite invalidaciones de usuario
+- *Regla 3: notifica a los usuarios, restringe el acceso y no permite invalidaciones de usuario*
 - Regla 4: restringe el acceso
 
 Las reglas 1, 2 y 4 se evaluarían, pero no se aplicarían. En este ejemplo, las coincidencias de todas las reglas se registran en los registros de auditoría y se muestran en los informes DLP, aunque solo se aplique la regla más restrictiva.
@@ -179,6 +181,21 @@ Puede usar una regla para satisfacer un requisito de protección específico y d
 Por ejemplo, podría tener una directiva DLP que ayude a detectar la presencia de información sujeta a la Ley de transferencia y responsabilidad de seguros de salud (HIPAA). Esta directiva DLP podría ayudar a proteger los datos HIPAA (el qué) en todos los sitios de SharePoint Online y OneDrive para la Empresa (el dónde) al buscar cualquier documento que contenga información confidencial y que se comparte con personas de fuera de la organización (las condiciones) y, a continuación, bloquear el acceso al documento y enviar una notificación (las acciones). Estos requisitos se almacenan como reglas individuales y se agrupan de forma conjunta como directiva DLP para simplificar la administración y la creación de informes.
   
 ![El diagrama muestra que la directiva DLP contiene ubicaciones y reglas](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+
+#### <a name="for-endpoints"></a>Para puntos de conexión
+
+La prioridad de las reglas en los puntos de conexión también se asigna según el orden en que se crea. Esto significa que la regla creada primero tiene primera prioridad, la regla creada en segundo lugar tiene la segunda prioridad, y así sucesivamente. 
+
+Cuando un archivo de un extremo coincide con varias directivas DLP, la primera regla habilitada con restricciones es la que se aplica al contenido. Por ejemplo, si el contenido coincide con todas las reglas siguientes, se aplica la regla *2* porque es la regla de mayor prioridad que está configurada con una restricción .
+  
+- Regla 1: solo notifica a los usuarios
+- *Regla 2: notifica a los usuarios, restringe el acceso y permite invalidaciones de usuario*
+- Regla 3: notifica a los usuarios, restringe el acceso y no permite invalidaciones de usuario
+- Regla 4: restringe el acceso
+
+Las reglas 1, 3 y 4 se evaluarían, pero no se aplicarían. En este ejemplo, las coincidencias de todas las reglas se registran en los registros de auditoría y se muestran en los informes DLP, aunque solo se aplique la primera regla con una restricción.
+
+Para las reglas que se aplican a los puntos de conexión, puede aprovechar la capacidad de volver a ordenar la prioridad de regla para asegurarse de que se aplican las restricciones que desea aplicar.
 
 ### <a name="conditions"></a>Condiciones
 
@@ -375,7 +392,7 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 
 La ubicación de los dispositivos proporciona muchas subactividades (condiciones) y acciones. Para obtener más información, vea Actividades de extremo en las [que puede supervisar y realizar acciones en](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
-#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender para aplicaciones en la nube:
+#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Restringir aplicaciones de terceros
@@ -470,7 +487,7 @@ Si seleccionaste Solo dispositivos, recibirás todas las mismas opciones que est
 
 Puede personalizar el título y el cuerpo del texto con estos parámetros. El texto del cuerpo admite lo siguiente:
 
-|Nombre común  |Parameter  |Ejemplo
+|Nombre común  |Parámetro  |Ejemplo
 |---------|---------|---------|
 |nombre de archivo     |%%FileName%% | Contoso doc 1 |
 |nombre del proceso     |%%ProcessName%% | Word |
@@ -579,7 +596,7 @@ DLP examina el correo electrónico de forma diferente que SharePoint online o On
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

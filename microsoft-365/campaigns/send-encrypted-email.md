@@ -20,17 +20,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar correo electrónico cifrado Outlook.
-ms.openlocfilehash: 0fed17340cb3ad6c049a3d242604c63f50509450
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 15f5b87fb238d4a872f13c11f1e88892f628a255
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189698"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422584"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifre o etiquete su correo electrónico confidencial
 
@@ -57,7 +58,7 @@ Puede obtener información sobre cómo configurar el cifrado de correo electrón
 
 Los administradores pueden crear reglas de flujo de correo para proteger automáticamente los mensajes de correo electrónico que se envían y reciben de la campaña. Configure reglas para cifrar los mensajes de correo electrónico salientes y quite el cifrado de los mensajes cifrados procedentes de dentro de la organización o de las respuestas a los mensajes cifrados enviados desde su organización.
 
-Se crean reglas de flujo de correo para cifrar los mensajes de correo electrónico con las nuevas Cifrado de mensajes de Office 365 (OME). Defina reglas de flujo de correo para desencadenar el cifrado de mensajes con las nuevas funcionalidades de OME mediante el Exchange de administración (EAC). 
+Se crean reglas de flujo de correo para cifrar los mensajes de correo electrónico con las nuevas Cifrado de mensajes de Office 365 (OME). Definir reglas de flujo de correo para desencadenar el cifrado de mensajes con las nuevas funcionalidades de OME mediante <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">el Exchange de administración (EAC).</a> 
 
 1. En un explorador web, con una cuenta de trabajo o escuela a la que se han concedido permisos de administrador global, inicie sesión.
 2. Elija el icono Administrador.

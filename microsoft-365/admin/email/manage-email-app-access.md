@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 - MOE150
@@ -21,19 +23,19 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtén información sobre cómo elegir qué aplicaciones móviles pueden usar los usuarios para acceder al correo electrónico, el calendario y los contactos.
-ms.openlocfilehash: 44991f9d84b421b77dd9923377b2db50b2772687
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e3a7999900e85bde1bee7bf220b46a74a1151f57
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164973"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422248"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Administrar el acceso a la aplicación de correo electrónico en el Centro de administración de Microsoft 365
 
 Usa la configuración de acceso de correo electrónico móvil para elegir qué aplicaciones móviles pueden usar los usuarios de tu organización para acceder a su cuenta laboral o educativa para acceder al correo electrónico, el calendario y los contactos.
   
 > [!IMPORTANT]
-> Tu organización tendrá acceso a esta configuración a menos que estés usando Microsoft Intune o hayas configurado la configuración de administración de dispositivos móviles en el centro Exchange administración. 
+> Tu organización tendrá acceso a esta configuración a menos que estés usando Microsoft Intune o hayas configurado la configuración de administración de dispositivos móviles en el centro de administración Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">dispositivos móviles.</a> 
   
 ## <a name="manage-email-app-options"></a>Administrar opciones de aplicación de correo electrónico
 

@@ -1,13 +1,13 @@
 ---
-title: Tutoriales y simulaciones en Microsoft Defender para empresas
-description: Obtenga información sobre varios tutoriales que le ayudarán a empezar a usar Defender para empresas
+title: Tutoriales y simulaciones en Microsoft Defender para empresas (versión preliminar)
+description: Obtenga información sobre varios tutoriales que le ayudarán a empezar a usar Defender para empresas (versión preliminar)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,38 +16,38 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: cfb98e3276025fbd9c75466de3c82339243e2f3b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ff1a50a0ba04880680e663d1f960d3f10582d628
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375319"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423472"
 ---
-# <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Tutoriales y simulaciones en Microsoft Defender para empresas
+# <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Tutoriales y simulaciones en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
 
-Si acaba de configurar Microsoft Defender para empresas, puede que se pregunte dónde empezar a aprender sobre cómo funciona Defender for Business. En este artículo se describen los escenarios de vista previa que se van a probar y varios tutoriales y simulaciones disponibles para Defender para empresas. Estos recursos están diseñados para ayudarle a ver cómo Defender for Business puede funcionar para su empresa.
+Si acaba de terminar de configurar Microsoft Defender para empresas (versión preliminar), puede que se pregunte dónde empezar a aprender sobre cómo funciona Defender for Business (versión preliminar). En este artículo se describen los escenarios de vista previa que se van a probar y varios tutoriales y simulaciones que están disponibles para Defender para empresas (versión preliminar). Estos recursos están diseñados para ayudarle a ver cómo Defender para empresas (versión preliminar) puede funcionar para su empresa.
 
 ## <a name="try-these-preview-scenarios"></a>Pruebe estos escenarios de vista previa
 
-En la tabla siguiente se resumen varios escenarios para probar durante la vista previa de Defender para empresas. 
+En la tabla siguiente se resumen varios escenarios para probar durante la vista previa de Defender para empresas (versión preliminar). 
 <br/><br/>
 
 
 | Escenario  | Descripción  |
 |---------|---------|
-| Incorporar dispositivos con un script local     | En Defender para empresas, puedes incorporar Windows 10 y 11 dispositivos mediante un script que descargues y ejecutes en cada dispositivo. El script crea una confianza con Azure Active Directory (Azure AD) e inscribe el dispositivo con Microsoft Intune. Para obtener más información, consulta [Incorporación de un dispositivo con un script local en Defender para empresas](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business).         |
+| Incorporar dispositivos con un script local     | En Defender para empresas (versión preliminar), puedes incorporar Windows 10 y 11 dispositivos mediante un script que descargues y ejecutes en cada dispositivo. El script crea una confianza con Azure Active Directory (Azure AD) e inscribe el dispositivo con Microsoft Intune. Para obtener más información, consulta [Incorporación de un dispositivo con un script local en Defender para empresas (versión preliminar).](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business)         |
 | Incorporar dispositivos con Microsoft Intune     | Si ya usaste Microsoft Intune obtener Defender for Endpoint, puedes usar Microsoft Intune para incorporar dispositivos. Prueba a incorporar dispositivos macOS, iOS, Linux y Android con Microsoft Intune. Para obtener más información, consulta [Inscripción de dispositivos en Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
-| Editar directivas y configuraciones de seguridad     | Si estás administrando las directivas de seguridad y la configuración en Defender para empresas, usa la página **Configuración** del dispositivo para ver y editar las directivas. Para obtener más información, vea [Ver o editar directivas en Microsoft Defender para empresas.](mdb-view-edit-policies.md)        |
-| Ejecutar un ataque simulado   | Hay varios tutoriales y simulaciones disponibles en Defender para empresas. Estos tutoriales y simulaciones están diseñados para mostrar de primera mano cómo las características de protección contra amenazas de Defender for Business pueden funcionar para su empresa. Para probar uno o varios de los tutoriales, vea [Tutoriales recomendados para Microsoft Defender para empresas](#recommended-tutorials-for-defender-for-business).         |
-| Ver incidentes en Microsoft 365 Lighthouse     | Si es un partner de Microsoft que usa Microsoft 365 Lighthouse, puede ver incidentes en los inquilinos de sus clientes en su portal Microsoft 365 Lighthouse cliente. Para obtener más información, [vea Microsoft 365 Lighthouse y Microsoft Defender para empresas](mdb-lighthouse-integration.md).       |
+| Editar directivas y configuraciones de seguridad     | Si estás administrando las directivas de seguridad y la configuración en Defender para empresas (versión preliminar), usa la página **Configuración** del dispositivo para ver y editar las directivas. Para obtener más información, vea [Ver o editar directivas en Microsoft Defender para empresas (versión preliminar).](mdb-view-edit-policies.md)        |
+| Ejecutar un ataque simulado   | Hay varios tutoriales y simulaciones disponibles en Defender para empresas (versión preliminar). Estos tutoriales y simulaciones están diseñados para mostrar de primera mano cómo las características de protección contra amenazas de Defender para empresas (versión preliminar) pueden funcionar para su empresa. Para probar uno o varios de los tutoriales, vea [Tutoriales recomendados para Microsoft Defender para empresas (versión preliminar).](#recommended-tutorials-for-defender-for-business)         |
+| Ver incidentes en Microsoft 365 Lighthouse     | Si es un partner de Microsoft que usa Microsoft 365 Lighthouse, puede ver incidentes en los inquilinos de sus clientes en su portal Microsoft 365 Lighthouse cliente. Para obtener más información, [vea Microsoft 365 Lighthouse y Microsoft Defender para empresas (versión preliminar).](mdb-lighthouse-integration.md)       |
 
 
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Tutoriales recomendados para Defender para empresas
 
-En la tabla siguiente se describen los tutoriales recomendados para los clientes de Defender para empresas:
+En la tabla siguiente se describen los tutoriales recomendados para clientes de Defender para empresas (versión preliminar):
 <br/><br/>
 
 
@@ -60,7 +60,7 @@ En la tabla siguiente se describen los tutoriales recomendados para los clientes
 Cada tutorial incluye un documento de tutorial que explica el escenario, cómo funciona y qué hacer.
 
 > [!TIP]
-> Verá referencias a Microsoft Defender para Endpoint en los documentos del tutorial. Los tutoriales enumerados en este artículo se pueden usar con Defender para Endpoint o Defender para empresas.
+> Verá referencias a Microsoft Defender para Endpoint en los documentos del tutorial. Los tutoriales enumerados en este artículo se pueden usar con Defender para Endpoint o Defender para empresas (versión preliminar).
 
 ## <a name="how-to-access-the-tutorials"></a>Cómo obtener acceso a los tutoriales
 
@@ -76,10 +76,10 @@ Cada tutorial incluye un documento de tutorial que explica el escenario, cómo f
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Administrar dispositivos en Microsoft Defender para empresas](mdb-manage-devices.md)
+- [Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)](mdb-manage-devices.md)
 
-- [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md)
+- [Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)](mdb-view-manage-incidents.md)
 
-- [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
+- [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

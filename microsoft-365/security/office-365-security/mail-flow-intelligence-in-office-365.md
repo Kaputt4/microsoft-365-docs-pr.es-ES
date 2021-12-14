@@ -7,6 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
+ms.custom: admindeeplinkEXCHANGE
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -14,12 +15,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocidos como inteligencia de flujo de correo).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 84029f2f3387913b810c6886a2ac546e587aaca7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0ebc48a39294bb3487d157f76000f545a00f27bb
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169496"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423796"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
@@ -74,7 +75,7 @@ Normalmente, este error significa Microsoft 365 un error de conexión cuando int
 
 - Si no se deben entregar más mensajes en  el entorno local, haga clic en Corregir ahora en la alerta para que Microsoft 365 pueda rechazar inmediatamente los mensajes con destinatarios no válidos. Esto reducirá el riesgo de exceder la cuota de la organización para destinatarios no válidos, lo que podría afectar a la entrega normal de mensajes. O bien, puede usar las siguientes instrucciones para solucionar manualmente el problema:
 
-  - En el [Centro Exchange administración (EAC),](/Exchange/exchange-admin-center)deshabilite o elimine el conector que entrega correo electrónico de Microsoft 365 al entorno de correo electrónico local:
+  - En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración</a>local, deshabilite o elimine el conector que entrega correo electrónico de Microsoft 365 al entorno de correo electrónico local:
 
     1. En el EAC, vaya a **Flujo de correo** \> **Conectores**.
 

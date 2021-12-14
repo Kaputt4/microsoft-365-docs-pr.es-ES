@@ -19,14 +19,16 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueve automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: b6d0a9fdfa18d34eac2624f7c83f0ee5993f666b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eff76a5d06b975e161a4d12302ac8bd1f20e612e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175124"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423712"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
@@ -98,7 +100,7 @@ En este paso, creará las tres etiquetas de retención personalizadas descritas 
 
 - Elementos eliminados de Alpine House 5 años Eliminar y permitir la recuperación (etiqueta personalizada para la carpeta Elementos eliminados)
 
-Para crear nuevas etiquetas de retención, usará el Centro Exchange administración (EAC) de su Exchange Online organización. Asegúrese de usar la versión clásica del EAC.
+Para crear nuevas etiquetas de retención, usará el Centro Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración (EAC)</a> de su Exchange Online organización. Asegúrese de usar la versión clásica del EAC.
   
 1. Vaya a [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) e inicie sesión con sus credenciales.
   

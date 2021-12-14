@@ -15,18 +15,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: ec09fd2c139b90b37811eea2467b275864ec9a06
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 80038c649d17b3a75896422d4c68880f1ef6a962
+ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401479"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61436685"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
 Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 para importar datos de recursos humanos (RRHH) relacionados con eventos como la dimisión de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la solución de administración de riesgos [insider](insider-risk-management.md) puede usar los datos de recursos humanos para generar indicadores de riesgo que puedan ayudarle a identificar posibles actividades malintencionadas o robo de datos por parte de los usuarios de su organización.
 
 La configuración de un conector para datos de recursos humanos que las directivas de administración de riesgos internas pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de recursos humanos, crear una aplicación en Azure Active Directory que se use para la autenticación, crear un conector de datos de RRHH en el Centro de cumplimiento de Microsoft 365 , y, a continuación, ejecutar un script (de forma programada) que ingieren los datos de RECURSOS humanos en archivos CSV a la nube de Microsoft para que esté disponible para la solución de administración de riesgos insider.
+
+> [!IMPORTANT]
+> Una nueva versión del conector de RECURSOS humanos ya está disponible para la versión preliminar pública. Para crear un nuevo conector de [](#csv-file-for-employee-profile-data-preview) recursos humanos o importar datos para el nuevo escenario  de perfil de empleado para el escenario  de directiva de salud para la administración de riesgos de insider, vaya a la página Conectores de datos de Centro de cumplimiento de Microsoft 365, seleccione la pestaña Conectores y, a continuación, haga clic en Agregar un conector **> HR (versión preliminar)** para iniciar la configuración. Los conectores de RECURSOS humanos existentes seguirán funcionando sin interrupciones.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -259,9 +262,9 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
 1. Vaya a la Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Conectores de datos**</a>.
 
-2. En la **página Conectores de datos** en **HR,** haga clic **en Ver**.
+2. En la **página Conectores de datos,** haga clic **en HR (vista previa).**
 
-3. En la **página Hr Custom,** haga clic **en Agregar conector**.
+3. En la **página HR (versión preliminar),** haga clic **en Agregar conector**.
 
 4. En la **página Configurar la conexión,** haga lo siguiente y, a continuación, haga clic **en Siguiente**:
 
@@ -425,6 +428,6 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
 ## <a name="existing-hr-connectors"></a>Conectores de RECURSOS existentes
 
-El 20 de julio de 2020, lanzamos escenarios adicionales compatibles con conectores de recursos humanos. Estos son los escenarios de recursos humanos que se describen anteriormente en este artículo. Cualquier conector de RECURSOS humanos creado antes de esta fecha solo admite el escenario de dimisión de empleados. Si creó un conector de recursos humanos antes del 20 de julio de 2020, lo hemos migrado para que siga migrando los datos de recursos humanos a la nube de Microsoft. No tiene que hacer nada para mantener esta funcionalidad. Puede seguir usando el conector sin interrupciones.
+El 13 de diciembre de 2021, lanzamos el escenario de datos de perfil de empleado para conectores de recursos humanos. Si creó un conector de recursos humanos antes de esta fecha, migraremos las instancias existentes o los conectores de recursos humanos de la organización para que los datos de RECURSOS humanos continúen importándose a la nube de Microsoft. No tiene que hacer nada para mantener esta funcionalidad. Puede seguir usando estos conectores sin interrupciones.
 
-Si desea implementar escenarios de recursos humanos adicionales, cree un nuevo conector de recursos humanos y configúrelo para los escenarios de RECURSOS adicionales que se publicaron. También tendrás que crear uno o varios archivos CSV nuevos que contengan los datos para admitir los escenarios de recursos humanos adicionales. Después de crear un nuevo conector de recursos humanos, ejecute el script con el identificador de trabajo del nuevo conector y los archivos CSV con los datos de los escenarios de RECURSOS adicionales.
+Si desea implementar el escenario de datos de perfil de empleado, cree un nuevo conector de recursos humanos y configúrelo según sea necesario. Después de crear un nuevo conector de recursos humanos, ejecute el [](#csv-file-for-employee-profile-data-preview) script con el identificador de trabajo del nuevo conector y los archivos CSV con los datos de perfil de empleado descritos anteriormente en este artículo.

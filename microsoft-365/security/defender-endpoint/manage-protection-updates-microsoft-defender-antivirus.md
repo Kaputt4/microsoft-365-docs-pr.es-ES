@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2636756a3a91156041843c1375211a8640c5e701
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5124b517592fb7561925b0cbd5e5045d4c1ecc9b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168515"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423808"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -28,8 +28,8 @@ ms.locfileid: "61168515"
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -48,7 +48,7 @@ En este artículo se describe cómo especificar desde dónde deben descargarse l
 
 ## <a name="fallback-order"></a>Orden de reserva
 
-Normalmente, los puntos de conexión se configuran para descargar actualizaciones individualmente de un origen principal seguidos de otros orígenes en orden de prioridad, en función de la configuración de red. Las actualizaciones se obtienen de orígenes en el orden especificado. Si un origen no está disponible, el siguiente origen de la lista se usa inmediatamente.
+Normalmente, los puntos de conexión se configuran para descargar actualizaciones individualmente de un origen principal seguidos de otros orígenes en orden de prioridad, en función de la configuración de red. Las actualizaciones se obtienen de orígenes en el orden especificado. Si las actualizaciones del origen actual están des actualizadas, el siguiente origen de la lista se usa inmediatamente.
 
 Cuando se publican actualizaciones, se aplica cierta lógica para minimizar el tamaño de la actualización. En la mayoría de los casos, solo se descargan y aplican las diferencias entre la actualización más reciente y la actualización que está instalada actualmente (esto se conoce como delta) en el dispositivo. Sin embargo, el tamaño del delta depende de dos factores principales:
 

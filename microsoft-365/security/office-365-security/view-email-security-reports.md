@@ -19,14 +19,15 @@ description: Los administradores pueden aprender a buscar y usar los informes de
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079228cb10c00246f37cb4f34f156ca36595e9ae
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 3e5e7ba4688f4ec4a54856bc5b4e8e3c14aed090
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401371"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421767"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -43,7 +44,7 @@ Hay una variedad de informes disponibles en el portal de Microsoft 365 Defender 
 >
 > Algunos de los informes de la página Informes de **colaboración & correo** electrónico requieren Microsoft Defender para Office 365. Para obtener información acerca de estos informes, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 >
-> Los informes relacionados con el flujo de correo se encuentran ahora en el Centro Exchange administración (EAC). Para obtener más información acerca de estos informes, vea Informes de flujo de correo [en el nuevo centro Exchange administración.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> Los informes relacionados con el flujo de correo están ahora en <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">el centro Exchange administración.</a> Para obtener más información acerca de estos informes, vea Informes de flujo de correo [en el nuevo centro Exchange administración.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="compromised-users-report"></a>Informe de usuarios comprometidos
 
@@ -321,9 +322,7 @@ El **informe de latencia de** correo en Defender para Office 365 contiene inform
 
 El **informe Detecciones** de suplantación muestra información sobre los mensajes bloqueados o permitidos debido a la suplantación. Para obtener más información acerca de la suplantación, vea Protección contra la suplantación [en EOP](anti-spoofing-protection.md).
 
-La vista de agregado del informe permite 45 días de filtrado, mientras que la vista de detalles solo permite <sup>\*</sup> diez días de filtrado.
-
-<sup>\*</sup> Con el tiempo, podrás usar hasta 90 días de filtrado.
+La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles solo permite diez días de filtrado.
 
 Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque **Detecciones** de suplantación de suplantación y, a continuación, haga clic **en Ver detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpoofMailReportV2> .
 
@@ -600,7 +599,7 @@ En la vista Ver  **datos por malware de \> correo** electrónico y desglose de g
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**

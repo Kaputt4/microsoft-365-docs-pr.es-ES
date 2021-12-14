@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ad945c9e1c3ab5d680aa873d3447527e13cb4979
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 3c9ce07007d67c3a65acec607056cc8a5bb965e0
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375720"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423052"
 ---
-# <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para empresas con Microsoft 365 Empresa Premium
+# <a name="compare-microsoft-defender-for-business-preview-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para empresas (versión preliminar) con Microsoft 365 Empresa Premium
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
@@ -36,7 +36,7 @@ Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, inclu
 - [Comparar Defender para empresas con ofertas empresariales de Microsoft Defender para Endpoint](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
 
 
-**No tienes que tener una suscripción Microsoft 365 para comprar y usar Microsoft Defender para empresas.** Microsoft Defender para empresas es una solución de seguridad independiente para pequeñas y medianas empresas. Si ya tienes otra suscripción (como Microsoft 365 Empresa Básico o Standard), considera la posibilidad de agregar Microsoft Defender para empresas para obtener capacidades adicionales de protección contra amenazas. 
+**No tienes que tener una suscripción Microsoft 365 para comprar y usar Microsoft Defender para empresas (versión preliminar).** Microsoft Defender para empresas (versión preliminar) es una solución de seguridad independiente para pequeñas y medianas empresas. Si ya tienes otra suscripción (como Microsoft 365 Empresa Básico o Standard), considera la posibilidad de agregar Microsoft Defender para empresas para obtener capacidades adicionales de protección contra amenazas. 
 
 > [!TIP]
 > Si su empresa es una pequeña o mediana empresa (300 o menos usuarios) y desea registrarse en el programa de vista previa de Microsoft Defender para empresas, visite [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) . Para obtener más información, [vea Get Microsoft Defender for Business](get-defender-business.md).
@@ -44,11 +44,11 @@ Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, inclu
 ## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar las características de seguridad de Microsoft Defender para empresas con Microsoft 365 Empresa Premium
 
 > [!NOTE]
-> Este artículo está diseñado para proporcionar una descripción general de alto nivel de las características de protección contra amenazas incluidas en Microsoft Defender para empresas y Microsoft 365 Empresa Premium. Este artículo no está diseñado para servir como una descripción del servicio o un documento de contrato de licencia. Para obtener más información, [vea Microsoft 365 de licencias para el cumplimiento de & seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> Este artículo está diseñado para proporcionar una descripción general de alto nivel de las características de protección contra amenazas incluidas en Microsoft Defender para empresas (versión preliminar) y Microsoft 365 Empresa Premium. Este artículo no está diseñado para servir como una descripción del servicio o un documento de contrato de licencia. Para obtener más información, [vea Microsoft 365 de licencias para el cumplimiento de & seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 En la tabla siguiente se comparan las funciones y características de seguridad de Defender para empresas con Microsoft 365 Empresa Premium mientras Defender para empresas está en versión preliminar. Cuando Defender para empresas esté disponible en general, se incluirá en Microsoft 365 Empresa Premium. <br/><br/>
 
-| Característica/funcionalidad | [Microsoft Defender para empresas](mdb-overview.md) | [Microsoft 365 Empresa Premium](../../business/microsoft-365-business-overview.md) |
+| Característica/funcionalidad | [Microsoft Defender para empresas](mdb-overview.md) (versión preliminar) | [Microsoft 365 Empresa Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
 | Protección de correo electrónico | Sí ([análisis de correo](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) electrónico en Antivirus de Microsoft Defender) | Sí ([Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)) |
 | Protección contra correo no deseado | Sí (para dispositivos) | Sí (para Microsoft 365 de correo electrónico, como mensajes y datos adjuntos) |
@@ -65,9 +65,9 @@ En la tabla siguiente se comparan las funciones y características de seguridad 
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2"></a>Comparar Microsoft Defender para empresas con Microsoft Defender para los planes de punto de conexión 1 y 2
 
-Defender para empresas ofrece capacidades empresariales de Defender for Endpoint a pequeñas y medianas empresas. En la tabla siguiente se comparan las características y capacidades de seguridad de Defender para empresas con los planes de punto de conexión 1 y 2 de Microsoft Defender. <br/><br/>
+Defender para empresas (versión preliminar) ofrece funcionalidades de grado empresarial de Defender for Endpoint a pequeñas y medianas empresas. En la tabla siguiente se comparan las funciones y características de seguridad de Defender para empresas (versión preliminar) con Microsoft Defender para los planes de extremo 1 y 2. <br/><br/>
 
-| Característica/funcionalidad | [Defender para empresas](mdb-overview.md) | [Plan 1 de Defender para punto de conexión](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
+| Característica/funcionalidad | [Defender para empresas](mdb-overview.md) (versión preliminar) | [Plan 1 de Defender para punto de conexión](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
 |:---|:---|:---|
 | [Administración centralizada](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup> | Sí | Sí | Sí |
 | [Configuración de cliente simplificada](mdb-simplified-configuration.md) | Sí | No | No |
@@ -91,6 +91,6 @@ Defender para empresas ofrece capacidades empresariales de Defender for Endpoint
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Consulta los requisitos de Microsoft Defender para empresas](mdb-requirements.md)
+- [Consulta los requisitos de Microsoft Defender para empresas (versión preliminar)](mdb-requirements.md)
 
-- [Obtenga información sobre cómo configurar y configurar Microsoft Defender para empresas](mdb-setup-configuration.md) 
+- [Obtenga información sobre cómo configurar y configurar Microsoft Defender para empresas (versión preliminar)](mdb-setup-configuration.md) 

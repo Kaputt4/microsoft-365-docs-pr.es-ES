@@ -15,18 +15,20 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante Cifrado de mensajes de Office 365.
-ms.openlocfilehash: 73ff2ae12d6d0857760909c43cf12c4bbd84c13b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c546c151b7bcb1720f9903d43b8d310650f92d35
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206150"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421695"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico
 
-Como administrador que administra Exchange Online, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para ayudar a proteger los mensajes de correo electrónico que envíe y reciba. Puede configurar reglas para cifrar los mensajes de correo electrónico salientes y quitar el cifrado de los mensajes cifrados procedentes de dentro de la organización o de las respuestas a los mensajes cifrados enviados desde su organización. Puede usar el Centro Exchange administración (EAC) o Exchange Online PowerShell para crear estas reglas. Además de las reglas de cifrado generales, puede habilitar o deshabilitar opciones de cifrado de mensajes individuales para los usuarios finales.
+Como administrador que administra Exchange Online, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para ayudar a proteger los mensajes de correo electrónico que envíe y reciba. Puede configurar reglas para cifrar los mensajes de correo electrónico salientes y quitar el cifrado de los mensajes cifrados procedentes de dentro de la organización o de las respuestas a los mensajes cifrados enviados desde su organización. Puede usar el Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administración (EAC)</a> o Exchange Online PowerShell para crear estas reglas. Además de las reglas de cifrado generales, puede habilitar o deshabilitar opciones de cifrado de mensajes individuales para los usuarios finales.
 
 No puede cifrar el correo entrante de remitentes externos a su organización.
 

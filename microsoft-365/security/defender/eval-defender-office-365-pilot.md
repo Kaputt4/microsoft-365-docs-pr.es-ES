@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-evalutatemtp
+ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 5d0a864a70603e3d38c903a6799d0a9a5bddd4a0
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4dc32ba44f97ef65a727c24409db6c96531daca6
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110660"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421635"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloto de Microsoft Defender para Office 365
 
@@ -52,7 +53,7 @@ Puede que no sea evidente por qué "Standard" y "Strict" son los términos usado
 Los grupos de distribución se pueden crear y definir directamente en Exchange Online o sincronizarse desde Active Directory local.
 
 1. Inicie sesión Exchange centro de administración (EAC) con una cuenta a la que se le haya concedido el rol De administrador de destinatarios o se le hayan delegado permisos de administración de grupos.
-2. En el menú de navegación, expanda *Destinatarios y* seleccione *Grupos*.
+2. En el menú de navegación, expanda **Destinatarios y** seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Grupos**</a>.
 
    :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Exchange centro de administración en el menú de navegación (inicio rápido) con una flecha que apunta a Grupos. Haga clic en Grupos.":::
 

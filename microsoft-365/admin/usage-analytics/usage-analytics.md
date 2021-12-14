@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: dce31c0787ab85898dc48cc94cefb54ac19b1304
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a3c77fe9a4e6d26e62525c6267ab32a81c78289b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374333"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422824"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 
@@ -217,4 +217,4 @@ Sí, vea [Convertir los datos recopilados en anónimos.](enable-usage-analytics.
 
 [Habilitar análisis de uso de Microsoft 365](enable-usage-analytics.md) (artículo)\
 [Navegue y use los informes de Microsoft 365 análisis de uso](navigate-and-utilize-reports.md) (artículo)\
-[Revisar informes de uso en Microsoft 365](../../business-video/act-on-report.md) (vídeo)
+[Microsoft 365 informes en el Centro de administración](../activity-reports/activity-reports.md) (vídeo)

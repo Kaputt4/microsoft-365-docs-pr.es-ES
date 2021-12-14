@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,21 +16,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d4c064623cd00a45dec189aa55a19ab51b26d01b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c397bd1cee5392ce0f9de45f63d6bd11cb40b29f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375429"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423880"
 ---
-# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Administrar las reglas personalizadas para directivas de firewall en Microsoft Defender para empresas
+# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business-preview"></a>Administrar las reglas personalizadas para directivas de firewall en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
 
-Microsoft Defender para empresas incluye directivas de firewall que ayudan a proteger los dispositivos del tráfico de red no deseado. Puede usar reglas personalizadas para definir excepciones para las directivas de firewall. Es decir, puede usar reglas personalizadas para bloquear o permitir conexiones específicas.
+Microsoft Defender para empresas (versión preliminar) incluye directivas de firewall que ayudan a proteger los dispositivos del tráfico de red no deseado. Puede usar reglas personalizadas para definir excepciones para las directivas de firewall. Es decir, puede usar reglas personalizadas para bloquear o permitir conexiones específicas.
 
-Para obtener más información sobre las directivas y la configuración de firewall, vea [Firewall in Microsoft Defender for Business](mdb-firewall.md).
+Para obtener más información sobre las directivas y la configuración de firewall, vea [Firewall in Microsoft Defender for Business (versión preliminar).](mdb-firewall.md)
 
 **En este artículo se describe cómo**:
 
@@ -102,8 +102,8 @@ Para obtener más información sobre las directivas y la configuración de firew
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md)
+- [Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)](mdb-view-manage-incidents.md)
 
-- [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
+- [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

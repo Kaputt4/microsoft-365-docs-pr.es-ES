@@ -17,13 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Obtenga información sobre cómo DLP en el Centro de seguridad & cumplimiento funciona con dlp y reglas de flujo de correo (reglas de transporte) en el centro Exchange administración.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05010248e5cd4dd9cad84e02092511f3737430ba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 90706b3dad55ff84d274656673f9a60dbd71e35f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172328"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423688"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>Cómo funciona DLP entre el Centro de Microsoft 365 cumplimiento y Exchange de administración
 
@@ -31,7 +33,7 @@ En Microsoft 365, puede crear una directiva de prevención de pérdida de datos 
   
 - En el Centro de cumplimiento de **Microsoft 365,** puede crear una única directiva DLP para ayudar a proteger el contenido de SharePoint, OneDrive, Exchange, Teams y ahora Dispositivos de punto de conexión. Se recomienda crear una directiva DLP aquí. Para obtener más información, vea [Data Loss Prevention reference](data-loss-prevention-policies.md).
     
-- En el **Centro Exchange administración,** puede crear una directiva DLP para ayudar a proteger el contenido solo en Exchange. Esta directiva puede usar Exchange de flujo de correo electrónico (también conocidas como reglas de transporte), por lo que tiene más opciones específicas para controlar el correo electrónico. Para obtener más información, vea [DLP en el centro Exchange administración.](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+- En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro Exchange administración,</a>puede crear una directiva DLP para ayudar a proteger el contenido solo en Exchange. Esta directiva puede usar Exchange de flujo de correo electrónico (también conocidas como reglas de transporte), por lo que tiene más opciones específicas para controlar el correo electrónico. Para obtener más información, vea [DLP en el centro Exchange administración.](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
     
 Las directivas DLP creadas en estos centros de administración funcionan en paralelo: en este tema se explica cómo hacerlo.
   
@@ -39,7 +41,7 @@ Las directivas DLP creadas en estos centros de administración funcionan en para
   
 ## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>Cómo funciona DLP en el Centro de & seguridad con DLP y reglas de flujo de correo en el Centro de administración de Exchange administración
 
-Después de crear una directiva DLP en el Centro de seguridad & cumplimiento, la directiva se implementa en todas las ubicaciones incluidas en la directiva. Si la directiva incluye Exchange Online, la directiva se sincroniza allí y se aplica exactamente de la misma manera que una directiva DLP creada en el centro de administración Exchange administración. 
+Después de crear una directiva DLP en el Centro de seguridad & cumplimiento, la directiva se implementa en todas las ubicaciones incluidas en la directiva. Si la directiva incluye Exchange Online, la directiva se sincroniza allí y se aplica exactamente de la misma manera que una directiva DLP creada en el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange.</a> 
   
 Si ha creado directivas DLP en el Centro de administración de Exchange, estas directivas seguirán funcionando en paralelo con las directivas de correo electrónico que cree en el Centro de seguridad & cumplimiento. Pero tenga en cuenta que las reglas creadas en Exchange centro de administración tienen prioridad. Todas Exchange flujo de correo se procesan primero y, a continuación, se procesan las reglas DLP del Centro de seguridad & cumplimiento.
   
@@ -55,7 +57,7 @@ Tenga en cuenta también que Exchange reglas de flujo de correo que usan la acci
   
 ## <a name="policy-tips-in-the-security--compliance-center-vs-the-exchange-admin-center"></a>Sugerencias de directiva en el Centro de & seguridad frente al Centro de Exchange administración
 
-Las sugerencias de directivas pueden funcionar con directivas DLP y reglas de flujo de correo creadas en el Centro de administración de Exchange o con directivas DLP creadas en el Centro de seguridad & cumplimiento, pero no ambas. Esto se debe a que estas directivas se almacenan en distintas ubicaciones, pero las sugerencias de directivas solo pueden dibujarse desde una sola ubicación.
+Las sugerencias de directivas pueden funcionar con directivas DLP y reglas de flujo de correo creadas en el Centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>o con directivas DLP creadas en el Centro de seguridad & cumplimiento, pero no ambas. Esto se debe a que estas directivas se almacenan en distintas ubicaciones, pero las sugerencias de directivas solo pueden dibujarse desde una sola ubicación.
   
 Si ha configurado las sugerencias de directiva en el Centro de administración de Exchange, las sugerencias de directiva que configure en el Centro de seguridad y cumplimiento de & no aparecerán para los usuarios de Outlook en la Web y Outlook 2013 y posteriores hasta que desactive las sugerencias en el Centro de administración de Exchange. Esto garantiza que las reglas Exchange flujo de correo actuales seguirán funcionando hasta que elija cambiar al Centro de seguridad & cumplimiento.
   

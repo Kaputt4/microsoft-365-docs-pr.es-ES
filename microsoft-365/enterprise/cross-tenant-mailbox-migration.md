@@ -13,14 +13,15 @@ ms.reviewer: georgiah
 ms.custom:
 - it-pro
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 1948a426e7f7088af92f734385d3b47565537151
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 03b1924e32eb1a02842da38655739d8d36ea83ac
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137176"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422980"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -356,7 +357,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 >
 > [Para ver un archivo CSV de ejemplo, haga clic aquí](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
-El envío por lotes de migración también se admite desde el nuevo Centro Exchange administración al seleccionar la opción entre inquilinos.
+El envío por lotes de migración también se admite desde el nuevo <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro Exchange administración</a> al seleccionar la opción entre inquilinos.
 
 ### <a name="update-on-premises-mailusers"></a>Actualizar MailUsers local
 

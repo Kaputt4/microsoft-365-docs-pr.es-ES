@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas
+title: Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Obtenga información sobre los tipos exactos de información confidencial basada en coincidencias de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552d86e4c460ee0195ec83d88965592298a17d90
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: d6b8b2bb5387257bf016e751713b9cba61de9691
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914885"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426476"
 ---
-# <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas
+# <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos
 
 [](sensitive-information-type-learn-about.md) Los tipos de información confidencial se usan para ayudar a identificar elementos confidenciales de modo que pueda evitar que se compartan de forma involuntaria o inapropiada, para ayudar a localizar datos relevantes en la exhibición de documentos electrónicos y para aplicar acciones de gobierno a determinados tipos de información. Defina un tipo de información confidencial personalizado (SIT) en función de:
 
@@ -71,7 +71,7 @@ El esquema es un archivo xml que define:
 
 ### <a name="sensitive-information-source-table"></a>Tabla de origen de información confidencial
 
-Tabla de origen confidencial que contiene los valores de información confidencial que buscará EDM SIT. Está hecho de columnas y corsés. Los encabezados de columna son los nombres de campo, las filas son una instancia de datos y cada celda contiene los valores de esa instancia para ese campo.
+La tabla de origen confidencial contiene los valores de información confidencial que buscará EDM SIT. Está hecho de columnas y filas. Los encabezados de columna son los nombres de campo, las filas son una instancia de datos y cada celda contiene los valores de esa instancia para ese campo.
 
 Este es un ejemplo sencillo de una tabla de origen de información confidencial.
 
@@ -110,5 +110,5 @@ EDM busca coincidencias comparando el contenido que encuentra con una tabla de d
 
 ## <a name="see-also"></a>Consulte también
 
-- [Introducción a tipos exactos de información confidencial basada en coincidencias de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
+- [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
    

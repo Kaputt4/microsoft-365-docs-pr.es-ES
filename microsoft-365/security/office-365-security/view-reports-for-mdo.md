@@ -20,14 +20,15 @@ description: Los administradores pueden aprender a buscar y usar defender para O
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8270c6050f640b1c49b4f82c361812a019ae44d1
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: dc969995d90ff3a4c95ba0481d75543002d88093
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401353"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421623"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para obtener Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -59,7 +60,7 @@ Microsoft Defender para organizaciones Office 365 (por ejemplo, suscripciones Mi
 >
 > Los informes de seguridad de correo electrónico que no requieren Defender para Office 365 se describen en Ver informes de seguridad de correo electrónico [en el portal Microsoft 365 Defender correo](view-email-security-reports.md)electrónico .
 >
-> Los informes relacionados con el flujo de correo se encuentran ahora en el Centro Exchange administración (EAC). Para obtener más información acerca de estos informes, vea Informes de flujo de correo [en el nuevo centro Exchange administración.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> Los informes relacionados con el flujo de correo están ahora en <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">el centro Exchange administración.</a> Para obtener más información acerca de estos informes, vea Informes de flujo de correo [en el nuevo centro Exchange administración.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="safe-attachments-file-types-report"></a>Caja fuerte de tipos de archivo adjuntos
 

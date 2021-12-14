@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración Microsoft 365 Empresa Premium para campañas u otras empresas
-ms.openlocfilehash: 272f4728214feaf3868b6861cdf990ea87442fad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 166651879e66025b9c48e9a0701062d4c7793b94
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173828"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422608"
 ---
 # <a name="set-up-microsoft-365"></a>Configurar Microsoft 365
 
@@ -44,7 +44,7 @@ En el siguiente diagrama se describe cómo los administradores se Microsoft 365.
 
 Para las campañas que califican para precios especiales, empezar solicitando una invitación de [Microsoft](https://m365forcampaigns.microsoft.com/)y, a continuación, registrarse [para Microsoft 365 campañas](m365-campaigns-sign-up.md). Para completar la instalación, [ejecute el Asistente para la](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) instalación para configurar la configuración principal.
 
-Para todas las demás organizaciones, después de que te hayas registrado en [Microsoft 365 Empresa Premium](../business-video/sign-up.md), completa la configuración ejecutando el Asistente para la instalación [para](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) configurar la configuración principal.
+Para todas las demás organizaciones, después de que te hayas registrado en [Microsoft 365 Empresa Premium](../admin/admin-overview/sign-up-for-office-365.md)), completa la configuración ejecutando el Asistente para la instalación [para](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) configurar la configuración principal.
 
 Para todas las organizaciones, aumente la protección de seguridad [mediante:](m365-campaigns-protect-admin-accounts.md)proteger las cuentas de [administrador,](m365-campaigns-conditional-access.md)proteger el acceso al correo y los datos y aumentar [la protección contra amenazas.](m365-campaigns-increase-protection.md)
 

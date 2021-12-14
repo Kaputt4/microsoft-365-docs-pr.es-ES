@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la herramienta Advanced eDiscovery administración de custodia para acceder fácilmente a la actividad y buscar en los custodios de su caso.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 561744ac803c99d06f811eb625db9ce4ab623fd2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom:
+- seo-marvel-mar2020
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: d0ea6e94bd48c055cac23d8a96477e036369dd5c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200238"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423388"
 ---
 # <a name="view-custodian-audit-activity"></a>Ver la actividad de auditoría de custodio
 
@@ -30,7 +32,7 @@ ms.locfileid: "60200238"
 
 ## <a name="get-permissions"></a>Obtener permisos
 
-Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página depermisosdel centro de administración de Exchange. Para dar a un usuario la capacidad de buscar en el registro de auditoría de exhibición avanzada de documentos electrónicos con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol Registros de auditoría de solo visualización o Registros de auditoría y luego agregar el usuario como un miembro del nuevo grupo de roles. Para obtener más información, consulteAdministrar grupos de roles en Exchange en línea.
+Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles Administración de cumplimiento y Administración de la organización en la página Permisos del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro Exchange administración.</a> Para dar a un usuario la capacidad de buscar en el registro de auditoría de exhibición avanzada de documentos electrónicos con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol Registros de auditoría de solo visualización o Registros de auditoría y luego agregar el usuario como un miembro del nuevo grupo de roles. Para obtener más información, consulteAdministrar grupos de roles en Exchange en línea.
 
 > [!IMPORTANT]
 > Si asigna a un usuario el rol de Registros de auditoría o Registros de auditoría de solo lectura en la página de Permisos del Centro de cumplimiento de Microsoft 365, no podrán buscar en el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
@@ -45,7 +47,7 @@ Usted debe tener asignado el rol de Registros de auditoría o Registros de audit
 
     Se muestra la página de búsqueda de actividades de custodia. Tenga en cuenta que el custodio seleccionado en el paso anterior se muestra en **el** cuadro desplegable Custodian. Puede seleccionar diferentes custodios en el cuadro desplegable, pero solo puede buscar actividades para un custodio a la vez.
 
-    ![Página de búsqueda de actividades de custodia.](../media/AeDCustodianActivities1.png)
+    ![Página de búsqueda de actividades de custodio.](../media/AeDCustodianActivities1.png)
    
 4. Configurar los siguientes criterios de búsqueda: 
       

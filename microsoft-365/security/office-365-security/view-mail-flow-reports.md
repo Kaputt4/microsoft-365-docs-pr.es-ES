@@ -16,15 +16,15 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel Informes del Centro de seguridad & cumplimiento.
-ms.custom: ''
+ms.custom: admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f742fc9f19d7b360e9402c9bc6331a84d2622979
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 5445a55fad5d580aa1af02271a50d4494f866ec4
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401345"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422320"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de & cumplimiento
 
@@ -37,7 +37,7 @@ ms.locfileid: "61401345"
 
 > [!NOTE]
 >
-> La mayoría de los informes de este artículo también están disponibles en el portal de Microsoft 365 Defender o en el centro Exchange administración (EAC). Para obtener más información, consulte los siguientes temas:
+> La mayoría de los informes de este artículo también están disponibles en el portal de Microsoft 365 Defender o en el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administración.</a> Para obtener más información, consulte los siguientes temas:
 >
 > - [Informes de flujo de correo en el nuevo centro Exchange administración](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico](view-email-security-reports.md)

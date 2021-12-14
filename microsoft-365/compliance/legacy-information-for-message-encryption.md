@@ -18,13 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 description: Comprenda cómo realizar la transición de archivos heredados a Cifrado de mensajes de Office 365 (OME) para su organización.
-ms.openlocfilehash: b21522b16a5bca6c5271149927b16dea5fd238e4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 972bee1b9dda5b1fef1f29b65626a916c507dcd9
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201870"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423400"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -70,7 +71,7 @@ Para obtener más información acerca de cómo crear Exchange de flujo de correo
 
 2. Elija el **icono** Administrador.
 
-3. En el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), elija **Centros de administración** \> **Exchange**.
+3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. En el EAC, vaya a **Flujo de correo Reglas** \> **y** seleccione **Nuevo** ![ icono Nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Crear una nueva regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
@@ -126,7 +127,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 2. Elija el **icono** Administrador.
 
-3. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, elija **Centros de administración** \> **Exchange**.
+3. En el >Centro de administración de Microsoft 365, elija **Centros de administración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. En el EAC, vaya a **Flujo de correo Reglas** \> **y** seleccione **Nuevo** ![ icono Nuevo.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Crear una nueva regla**. Para obtener más información acerca del uso del EAC, vea [Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center).
 
@@ -226,7 +227,7 @@ En la tabla siguiente se proporcionan detalles técnicos para el servicio Cifrad
 |Tipos de mensaje admitidos  <br/> |Solo se admite el cifrado de mensajes de Office 365 para los elementos que tienen un identificador de clase de mensaje de **IPM.Note**. Para obtener más información, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).  <br/> |
 |Límites de tamaño de mensaje  <br/> |El Cifrado de mensajes de Office 365 es capaz de cifrar mensajes de hasta 25 megabytes. Para obtener más información acerca de los límites de tamaño del [mensaje, vea Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).  <br/> |
 |Exchange Online de retención de correo electrónico  <br/> |Exchange Online no almacena los mensajes cifrados.  <br/> |
-|Compatibilidad de idiomas en el cifrado de mensajes de Office 365  <br/> | Office 365 El cifrado de mensajes admite Microsoft 365 idiomas, como se indica a continuación:  <br/>  Los mensajes de correo electrónico entrantes y los archivos HTML adjuntos se localizan en función de la configuración de idioma del remitente.  <br/>  El portal de visualización se localiza en función de la configuración del explorador del destinatario.  <br/>  El cuerpo (contenido) del mensaje cifrado no se localiza.  <br/> |
+|Compatibilidad de idiomas en el cifrado de mensajes de Office 365  <br/> | Office 365 cifrado de mensajes admite Microsoft 365 idiomas, como se indica a continuación:  <br/>  Los mensajes de correo electrónico entrantes y los archivos HTML adjuntos se localizan en función de la configuración de idioma del remitente.  <br/>  El portal de visualización se localiza en función de la configuración del explorador del destinatario.  <br/>  El cuerpo (contenido) del mensaje cifrado no se localiza.  <br/> |
 |Información de privacidad del Portal OME y la aplicación Visor OME  <br/> |El vínculo [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) proporciona más información sobre el uso de su información privada por parte de Microsoft.  <br/> |
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Preguntas más frecuentes sobre la OME heredada

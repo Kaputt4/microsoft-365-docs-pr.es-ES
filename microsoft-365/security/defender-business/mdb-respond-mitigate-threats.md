@@ -1,5 +1,5 @@
 ---
-title: Responder y mitigar amenazas en Microsoft Defender para empresas
+title: Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)
 description: A medida que se detectan amenazas, puede tomar medidas para responder y mitigar esas amenazas.
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ebea313507e2cfc336ad8cb42be3938a00aeb5e3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: cbd05b701c5276644e98671c9f07b4fbcf27c682
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375380"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421131"
 ---
-# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Responder y mitigar amenazas en Microsoft Defender para empresas
+# <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
@@ -56,6 +56,6 @@ El portal Microsoft 365 Defender permite al equipo de seguridad responder y miti
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 
-- [Administrar dispositivos en Microsoft Defender para empresas](mdb-manage-devices.md)
+- [Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)](mdb-manage-devices.md)
 
-- [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md)
+- [Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)](mdb-view-manage-incidents.md)

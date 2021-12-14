@@ -1,5 +1,5 @@
 ---
-title: Regístrate para Aplicaciones Microsoft 365 para negocios
+title: Registrarse en Microsoft 365 Apps para empresas
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Regístrate para Aplicaciones Microsoft 365 para negocios.
-ms.openlocfilehash: 1a647f86fd98ed865772aa7d9117ba965c987e50
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 4b0dab60a8deaa5b8e2b945877906bfc6331f044
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254568"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421575"
 ---
 # <a name="sign-up-for-a-microsoft-365-apps-for-business-subscription"></a>Registrarse para una suscripción Aplicaciones Microsoft 365 para negocios suscripción
 
@@ -41,7 +41,7 @@ Hay un par de formas de empezar:
 Para registrarse y comprar Aplicaciones Microsoft 365 para negocios, siga estos pasos.
 
 > [!IMPORTANT]
-> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulte [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
+> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulta [Asignar roles de administrador](../add-users/assign-admin-roles.md) para obtener más información.
 
 1. En la [página Para empresas,](https://go.microsoft.com/fwlink/?linkid=2181424)vea lo que se incluye en Microsoft 365. En Aplicaciones Microsoft 365 para negocios, seleccione **Comprar ahora**.
 2. En la **página You've selected Aplicaciones Microsoft 365 para negocios,** escriba una dirección de correo electrónico que ya use. Puede ser cualquier dirección que quiera que Microsoft use para comunicarse con usted durante la instalación. También es la dirección a la que le enviaremos información sobre su factura y renovaciones. A continuación, **seleccione Configurar cuenta**.

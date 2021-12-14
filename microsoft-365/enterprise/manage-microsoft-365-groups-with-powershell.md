@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 - MOE150
@@ -22,21 +23,20 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: En este artículo, obtenga información sobre cómo realizar tareas de administración comunes para Microsoft 365 en PowerShell.
-ms.openlocfilehash: 603d28ce04515d70633894cab7baab62a5f1581e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aed6af15889d7a0923207be5ea4220b3c3d6937c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150791"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422116"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Administrar Microsoft 365 grupos con PowerShell
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 En este artículo se proporcionan los pasos para realizar tareas de administración comunes para grupos en Microsoft PowerShell. También enumera los cmdlets de PowerShell para grupos. Para obtener información sobre cómo administrar SharePoint sitios web, [vea Manage SharePoint Online sites using PowerShell](/sharepoint/manage-team-and-communication-sites-in-powershell).
 
 ## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>Vínculo a las directrices de uso Microsoft 365 grupos de usuarios
-<a name="BK_LinkToGuideLines"> </a>
 
 Cuando los [usuarios crean o editan](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)un grupo en Outlook , puede mostrarles un vínculo a las directrices de uso de la organización. Por ejemplo, si necesita agregar un prefijo o sufijo específicos a un nombre de grupo.
 
@@ -47,7 +47,6 @@ Use powershell Azure Active Directory (Azure AD) para apuntar a los usuarios a l
 ![Haga clic en Directrices de uso de grupos para ver las directrices Office 365 grupos de organizaciones.](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
 
 ## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>Permitir que los usuarios envíen como grupo Microsoft 365 usuario
-<a name="BK_LinkToGuideLines"> </a>
 
 Si desea habilitar los grupos de Microsoft 365 para "Enviar como", use los cmdlets [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission) y [Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) para configurar esto. Una vez que habilite esta configuración, Microsoft 365 usuarios del grupo pueden usar Outlook o Outlook en la Web para enviar y responder al correo electrónico como grupo Microsoft 365 grupo. Los usuarios pueden ir al grupo, crear un nuevo correo electrónico y cambiar el campo "Enviar como" a la dirección de correo electrónico del grupo.
 
@@ -113,7 +112,6 @@ Una vez habilitada esta configuración, el propietario del grupo podrá elegir u
 ![Elija Microsoft 365 de grupo.](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
 
 ## <a name="hide-microsoft-365-groups-from-the-global-address-list"></a>Ocultar Microsoft 365 grupos de direcciones de la lista global de direcciones.
-<a name="BKMK_CreateClassification"> </a>
 
 Puede especificar si un grupo Microsoft 365 aparece en la lista global de direcciones (GAL) y otras listas de la organización. Por ejemplo, si tiene un grupo de departamento legal que no desea que aparezca en la lista de direcciones, puede impedir que ese grupo aparezca en la GAL. Ejecute el cmdlet Set-Unified Group para ocultar el grupo de la lista de direcciones como esta:
 
@@ -122,7 +120,6 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 ```
 
 ## <a name="allow-only-internal-users-to-send-message-to-microsoft-365-groups"></a>Permitir que solo los usuarios internos envíen mensajes a Microsoft 365 grupos
-<a name="BKMK_CreateClassification"> </a>
 
 Si no desea que los usuarios de otras organizaciones envíen correos electrónicos a un grupo de Microsoft 365, puede cambiar la configuración de ese grupo. Solo permitirá que los usuarios internos envíen un correo electrónico a su grupo. Si un usuario externo intenta enviar un mensaje a ese grupo, se rechazará.
 
@@ -133,7 +130,6 @@ Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationE
 ```
 
 ## <a name="add-mailtips-to-microsoft-365-groups"></a>Agregar sugerencias de correo electrónico a Microsoft 365 grupos
-<a name="BKMK_CreateClassification"> </a>
 
 Siempre que un remitente intente enviar un correo electrónico a un grupo de Microsoft 365, se les puede mostrar una sugerencia de correo electrónico.
 
@@ -151,16 +147,15 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Cambiar el nombre para mostrar del Microsoft 365 grupo
 
-El nombre para mostrar especifica el nombre del Microsoft 365 grupo. Puede ver este nombre en el Centro de administración de Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">o</a>Centro de administración de Microsoft 365 . Puede editar el nombre para mostrar del grupo o asignar un nombre para mostrar a un grupo de Microsoft 365 existente ejecutando el comando Set-UnifiedGroup usuario:
+El nombre para mostrar especifica el nombre del Microsoft 365 grupo. Puede ver este nombre en el centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración Exchange o</a> en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Puede editar el nombre para mostrar del grupo o asignar un nombre para mostrar a un grupo de Microsoft 365 existente ejecutando el comando Set-UnifiedGroup usuario:
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 ```
 
 ## <a name="change-the-default-setting-of-microsoft-365-groups-for-outlook-to-public-or-private"></a>Cambiar la configuración predeterminada de Microsoft 365 grupos de Outlook a Público o Privado
-<a name="BKMK_CreateClassification"> </a>
 
-Microsoft 365 Los grupos Outlook se crean como Privados de forma predeterminada. Si su organización desea que Microsoft 365 grupos se cree como Public de forma predeterminada (o de vuelta a Private), use esta sintaxis de cmdlet de PowerShell:
+Microsoft 365 los grupos de Outlook se crean como Privados de forma predeterminada. Si su organización desea que Microsoft 365 grupos se cree como Public de forma predeterminada (o de vuelta a Private), use esta sintaxis de cmdlet de PowerShell:
 
  `Set-OrganizationConfig -DefaultGroupAccessType Public`
 
@@ -174,7 +169,7 @@ Para comprobar la configuración:
 
 Para obtener más información, [vea Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) y [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
 
-## <a name="microsoft-365-groups-cmdlets"></a>Microsoft 365 Cmdlets de grupos
+## <a name="microsoft-365-groups-cmdlets"></a>Microsoft 365 de grupos de Microsoft 365
 
 Los siguientes cmdlets se pueden usar con Microsoft 365 grupos.
 

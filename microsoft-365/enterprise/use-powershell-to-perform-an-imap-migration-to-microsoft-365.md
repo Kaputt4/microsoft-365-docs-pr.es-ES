@@ -13,24 +13,26 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: Obtenga información sobre cómo usar PowerShell para realizar una migración del Protocolo de acceso a correo de Internet (IMAP) a Microsoft 365.
-ms.openlocfilehash: 08cffcbe3a08031df05da68358da062200eb99c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0c546782e81a399f092c8c7878b52c419adee799
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163245"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423040"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración de IMAP a Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Como parte del proceso de implementación de Microsoft 365, puede elegir migrar el contenido de los buzones de usuario de un servicio de correo electrónico del Protocolo de acceso a correo de Internet (IMAP) a Microsoft 365. Este artículo le guiará a través de las tareas para migrar el correo electrónico IMAP con Exchange Online PowerShell.
 
 > [!NOTE]
-> También puede usar el centro de administración de Exchange para realizar una migración IMAP. Vea [Migrar los buzones IMAP](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
+> También puede usar el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administración para</a> realizar una migración imap. Vea [Migrar los buzones IMAP](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -78,7 +80,6 @@ En las migraciones IMAP existen las restricciones siguientes:
     Para el valor del parámetro **Puerto**, es normal usar 143 para las conexiones no cifradas o de Seguridad de la capa de transporte (TLS) y 993 para las conexiones SSL.
 
 ### <a name="step-2-create-a-csv-file-for-an-imap-migration-batch"></a>Paso 2: Crear un archivo CSV para un lote de migración IMAP
-<a name="BK_Step2"> </a>
 
 Identifique el grupo de usuarios cuyos buzones de correo quiere migrar en un lote de migración de IMAP. Cada fila del archivo CSV contiene la información necesaria para conectar a un buzón del sistema de mensajería de IMAP.
 
@@ -150,7 +151,6 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ```
 
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>Paso 3: Crear un extremo de migración IMAP
-<a name="BK_Step3"> </a>
 
 Para migrar correo electrónico correctamente, Microsoft 365 debe conectarse al sistema de correo electrónico de origen y comunicarse con él. Para ello, Microsoft 365 un extremo de migración. El extremo de migración también define el número de buzones que se migrará simultáneamente y el número de buzones que se sincronizará simultáneamente durante la sincronización incremental, que se hace una vez cada 24 horas. Para crear un extremo de migración para la migración IMAP, primero debe [Conectarse a Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -181,7 +181,6 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 ```
 
 ### <a name="step-4-create-and-start-an-imap-migration-batch"></a>Paso 4: Crear e iniciar un lote de migración IMAP
-<a name="BK_Step4"> </a>
 
 Puede usar el cmdlet [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) para crear un lote de migración para una migración IMAP. Puede crear un lote de migración e iniciarlo automáticamente mediante la inclusión del parámetro _AutoStart_. Como alternativa, puede crear el lote de migración y, luego, iniciarlo posteriormente con el cmdlet [Start-MigrationBatch](/powershell/module/exchange/start-migrationbatch).
 
@@ -206,7 +205,6 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>Paso 5: Enrutar el correo electrónico a Microsoft 365
-<a name="BK_Step5"> </a>
 
 Los sistemas de correo electrónico utilizan un registro DNS denominado registro MX para averiguar dónde entregar los correos electrónicos. Durante el proceso de migración del correo electrónico, el registro MX apuntaba al sistema de correo electrónico de origen. Ahora que la migración de correo electrónico Microsoft 365 se ha completado, es el momento de apuntar el registro MX a Microsoft 365. Esto ayuda a asegurarse de que el correo electrónico se entrega a los buzones Microsoft 365 correo electrónico. Al mover el registro MX, también puede desactivar el sistema de correo electrónico antiguo cuando esté listo.
 
@@ -215,7 +213,6 @@ Para muchos proveedores de DNS, hay instrucciones específicas para Cambiar el r
 Los sistemas de correo electrónico de sus clientes y socios pueden tardar hasta 72 horas en reconocer el registro MX cambiado. Espere al menos 72 horas antes de continuar con la tarea siguiente: Paso 6: Eliminar el lote de migración IMAP.
 
 ### <a name="step-6-delete-imap-migration-batch"></a>Paso 6: Eliminar el lote de migración IMAP
-<a name="BK_Step6"> </a>
 
 Después de cambiar el registro MX y comprobar que todo el correo electrónico se enruta Microsoft 365 buzones de correo, notifique a los usuarios que su correo se va a Microsoft 365. Después, puede eliminar el lote de migración IMAP. Compruebe lo siguiente antes de eliminar el lote de migración.
 

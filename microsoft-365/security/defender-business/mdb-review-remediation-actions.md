@@ -1,5 +1,5 @@
 ---
-title: Revisar acciones de corrección en Microsoft Defender para empresas
+title: Revisar acciones de corrección en Microsoft Defender para empresas (versión preliminar)
 description: Ver las correcciones que se tomaron automáticamente o que están a la espera de su aprobación en el Centro de acciones
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5550892a1d16ff8872d2a634f8a7560932cef6e0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 314bb913a161e21ef61c09568cd87aad61ccd10e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375683"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421875"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Revisar acciones de corrección en el Centro de acciones
 
@@ -49,7 +49,7 @@ A medida que se detectan las amenazas, las acciones de corrección se reproducen
 
 ## <a name="remediation-actions"></a>Acciones de corrección
 
-Microsoft Defender para empresas incluye varias acciones de corrección. Estas acciones incluyen acciones de respuesta manual, acciones tras investigación automatizada y acciones de respuesta en directo.
+Microsoft Defender para empresas (versión preliminar) incluye varias acciones de corrección. Estas acciones incluyen acciones de respuesta manual, acciones tras investigación automatizada y acciones de respuesta en directo.
 
 En la tabla siguiente se enumeran las acciones de corrección disponibles:
 
@@ -61,6 +61,6 @@ En la tabla siguiente se enumeran las acciones de corrección disponibles:
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
+- [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
 
-- [Administrar dispositivos en Microsoft Defender para empresas](mdb-manage-devices.md)
+- [Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)](mdb-manage-devices.md)

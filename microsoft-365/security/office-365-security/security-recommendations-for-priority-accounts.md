@@ -17,17 +17,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-protecthve
+ms.custom: admindeeplinkEXCHANGE
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para cuentas de prioridad en Microsoft 365 organizaciones.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 07cd37c97711b2f80ddc2f0914ef7429c5ea9310
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 17143da7310542a4f77074ee83562f2626d28aa5
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211866"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422296"
 ---
-# <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365
+# <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas prioritarias en Microsoft 365
 
 No todas las cuentas de usuario tienen acceso a la misma información de la compañía. Algunas cuentas tienen acceso a información confidencial, como datos financieros, información de desarrollo de productos, acceso de asociados a sistemas de compilación críticos, etc. Si se pone en peligro, las cuentas que tienen acceso a información altamente confidencial representan una amenaza grave. Llamamos a estos tipos de cuentas _cuentas de prioridad._ Las cuentas de prioridad incluyen (pero no están limitadas a) directores ejecutivos, OSC, CFO, cuentas de administrador de infraestructura, crear cuentas del sistema y mucho más.
 
@@ -103,7 +104,7 @@ Después de proteger y etiquetar a los usuarios prioritarios, puede usar los inf
 |Explorador <p> Detecciones en tiempo real|En **el Explorador** (Defender para Office 365 Plan 2) o detecciones en tiempo real (Defender para Office 365 Plan 1), las etiquetas de usuario están **visibles** en la vista Cuadrícula de correo electrónico y en el control desplegable Detalles de correo electrónico. Las etiquetas de usuario también están disponibles como una propiedad filtrable. Para obtener más información, vea  [Tags in Explorer](threat-explorer.md#tags-in-threat-explorer).|
 |Vistas de campañas|Las etiquetas de usuario son una de las muchas propiedades que se pueden filtrar en Vistas de campaña en Microsoft Defender para Office 365 Plan 2. Para obtener más información, vea [Vistas de campaña](campaigns.md).|
 |Informe de estado de protección contra amenazas|En prácticamente todas las vistas y tablas de detalles del informe **de** estado de protección contra amenazas, puede filtrar los resultados por **cuentas de prioridad.** Para obtener más información, vea [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).|
-|Informes de problemas de correo electrónico para cuentas de prioridad|El **informe Problemas de** correo electrónico para cuentas de prioridad en el Centro de administración de Exchange (EAC) contiene información sobre los mensajes no entregados y retrasados para cuentas de **prioridad.** Para obtener más información, vea [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
+|Informes de problemas de correo electrónico para cuentas de prioridad|El **informe Problemas de correo electrónico** para cuentas de prioridad en el Centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> contiene información sobre los mensajes no entregados y retrasados para cuentas **de prioridad.** Para obtener más información, vea [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 |
 
 ## <a name="train-users"></a>Entrenar a los usuarios
@@ -118,10 +119,10 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 
 ****
 
-|Concepto|Recursos|Descripción|
+|Concepto|Resources|Descripción|
 |---|---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/)|Estos recursos pueden ayudarle a crear formación para los usuarios de su organización.|
-|Centro de seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
+|Seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
 |Autenticación multifactor|[Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
 |Aprendizaje de simulación de ataque|[Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)|El aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2 permite al administrador configurar, iniciar y realizar un seguimiento de ataques de suplantación de identidad simulados contra grupos específicos de usuarios.|
 
@@ -131,6 +132,6 @@ Además, Microsoft recomienda que los usuarios tomen las acciones descritas en e
 - Protección de dispositivos
 - Habilitar características de seguridad en Windows y equipos Mac (para dispositivos no administrados)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Anuncio de protección de cuenta de prioridad en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

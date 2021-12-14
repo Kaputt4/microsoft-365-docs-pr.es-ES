@@ -20,12 +20,12 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo eliminar resultados de búsqueda de exhibición de documentos electrónicos duplicados para que solo se exporte una copia de un mensaje de correo electrónico.
-ms.openlocfilehash: 792726062576f6e17adb5a10cc544e7efdb02e03
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21f992aca12da53b758b72366ecda0312777d872
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153083"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426392"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
@@ -39,7 +39,7 @@ Las herramientas de exhibición de documentos electrónicos usan una combinació
   
 - **InternetMessageId:** esta propiedad especifica el identificador de mensaje de Internet de un mensaje de correo electrónico, que es un identificador único global que hace referencia a una versión específica de un mensaje específico. Este identificador lo genera el programa de cliente de correo electrónico del remitente o el sistema de correo electrónico host que envía el mensaje. Si una persona envía un mensaje a más de un destinatario, el identificador de mensaje de Internet será el mismo para cada instancia del mensaje. Las revisiones posteriores del mensaje original recibirán un identificador de mensaje diferente. 
 
-- **ConversationTopic:** esta propiedad especifica el asunto del subproceso de conversación de un mensaje. El valor de la **propiedad ConversationTopic** es la cadena que describe el tema general de la conversación. Una conservación consta de un mensaje inicial y todos los mensajes enviados en respuesta al mensaje inicial. Los mensajes de la misma conversación tienen el mismo valor para la **propiedad ConversationTopic.** El valor de esta propiedad suele ser la línea Subject del mensaje inicial que generó la conversación. 
+- **ConversationTopic:** esta propiedad especifica el asunto del subproceso de conversación de un mensaje. El valor de la **propiedad ConversationTopic** es la cadena que describe el tema general de la conversación. Una conversación consta de un mensaje inicial y todos los mensajes enviados en respuesta al mensaje inicial. Los mensajes de la misma conversación tienen el mismo valor para la **propiedad ConversationTopic.** El valor de esta propiedad suele ser la línea Subject del mensaje inicial que generó la conversación. 
 
 - **BodyTagInfo:** se trata de una propiedad Exchange store interna. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar diferencias en el cuerpo de los mensajes. 
 

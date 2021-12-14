@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Obtenga información sobre cómo actualizar una o varias listas de distribución Microsoft 365 grupos en Outlook y cómo usar PowerShell para actualizar varias listas de distribución simultáneamente.
-ms.openlocfilehash: 93abd5c329e61e5a8088fb276cbb7d8b32d4e302
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf68d5c0e9c00536013e89a690e5708ca79739fe
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157235"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422512"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Actualizar listas de distribución a Grupos de Microsoft 365 en Outlook
 
@@ -40,7 +41,7 @@ Debe ser un administrador global o un administrador Exchange para actualizar un 
 
 ### <a name="use-the-new-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Use el nuevo EAC para actualizar uno o varios grupos de listas de distribución a Microsoft 365 grupos de Outlook
 
-1. Vaya al nuevo centro [Exchange de administración](https://admin.exchange.microsoft.com)y vaya a Grupos **de** \> **destinatarios**.
+1. Vaya al nuevo centro Exchange de administración > **de destinatarios** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>.
 
 2. Seleccione el grupo de lista de distribución (también denominado grupo de **distribución)** que desea actualizar a Microsoft 365 en la **página** Grupos.
 
@@ -49,23 +50,21 @@ Debe ser un administrador global o un administrador Exchange para actualizar un 
 4. En el cuadro de diálogo **¿Listo para actualizar?**, haga clic en **Actualizar**. El proceso comienza inmediatamente. Según el tamaño y el número de grupos de listas de distribución que actualice, el proceso puede tardar minutos u horas.
 
 > [!NOTE]
-> Un banner en la parte superior indica la actualización, por ejemplo, los grupos de distribución *se han actualizado. Los cambios tardarán 5 minutos. Filtrar por Microsoft 365 para ver los grupos de distrrución actualizados*.
+> Un banner en la parte superior indica la actualización, por ejemplo, los grupos de distribución *se han actualizado. Los cambios tardarán 5 minutos. Filtrar por Microsoft 365 para ver los grupos de distribución actualizados*.
 
 ### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Use el EAC clásico para actualizar uno o varios grupos de listas de distribución a Microsoft 365 grupos de Outlook
 
-1. Vaya al Centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración Exchange clásico.</a>
+1. Vaya al Centro Exchange de administración > **de destinatarios** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>.<br/>Verá un aviso que indica que tiene listas de distribución (también denominadas grupos de **distribución)** que son aptas para actualizarse a Microsoft 365 grupos.<br/> ![Seleccione el botón Introducción.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-2. En el Centro Exchange administración, vaya a **Grupos de** \> **destinatarios**.<br/>Verá un aviso que indica que tiene listas de distribución (también denominadas grupos de **distribución)** que son aptas para actualizarse a Microsoft 365 grupos.<br/> ![Seleccione el botón Introducción.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+1. Seleccione una o más listas de distribución (también denominadas **grupos de distribución)** en la **página grupos.**<br/>![Seleccione un grupo de distribución.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-3. Seleccione una o más listas de distribución (también denominadas **grupos de distribución)** en la **página grupos.**<br/>![Seleccione un grupo de distribución.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+1. Seleccione el icono de actualización.<br/>![Actualizar a Microsoft 365 de grupos.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-4. Seleccione el icono de actualización.<br/>![Actualizar a Microsoft 365 de grupos.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+1. En el cuadro de diálogo información, seleccione **Sí** para confirmar la actualización. El proceso comienza inmediatamente. Según el tamaño y el número de direcciones URL que actualice, el proceso puede tardar minutos u horas.<br/>Si la lista de distribución no se puede actualizar, aparece un cuadro de diálogo que lo dice. Vea [¿Qué listas de distribución no se pueden actualizar?](#which-distribution-lists-cant-be-upgraded).
 
-5. En el cuadro de diálogo información, seleccione **Sí** para confirmar la actualización. El proceso comienza inmediatamente. Según el tamaño y el número de direcciones URL que actualice, el proceso puede tardar minutos u horas.<br/>Si la lista de distribución no se puede actualizar, aparece un cuadro de diálogo que lo dice. Vea [¿Qué listas de distribución no se pueden actualizar?](#which-distribution-lists-cant-be-upgraded).
+1. Si va a actualizar varias listas de distribución, use la lista desplegable para filtrar qué listas de distribución se han actualizado. Si la lista no está completa, espere un tiempo más y, a continuación, seleccione **Actualizar** para ver lo que se ha actualizado correctamente.<br/>No hay ningún aviso que le indique cuándo se ha completado el proceso de actualización para todas las direcciones URL que seleccionó. Para averiguarlo, vea lo que aparece en **Disponible para actualización** o Direcciones DLL **actualizadas.**
 
-6. Si va a actualizar varias listas de distribución, use la lista desplegable para filtrar qué listas de distribución se han actualizado. Si la lista no está completa, espere un tiempo más y, a continuación, seleccione **Actualizar** para ver lo que se ha actualizado correctamente.<br/>No hay ningún aviso que le indique cuándo se ha completado el proceso de actualización para todas las direcciones URL que seleccionó. Para averiguarlo, vea lo que aparece en **Disponible para actualización** o Direcciones DLL **actualizadas.**
-
-7. Si seleccionó un archivo DL para la actualización, pero aún aparece en la página como Disponible para actualizar, no se pudo actualizar. Consulte [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
+1. Si seleccionó un archivo DL para la actualización, pero aún aparece en la página como Disponible para actualizar, no se pudo actualizar. Consulte [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
 > Si estás recibiendo los mensajes de correo electrónico de resumen de grupos, es posible que observes en la parte inferior que a veces te permitirá actualizar las listas de distribución elegibles de las que seas propietario. Consulta [Tener una conversación en grupo en Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) para obtener más información acerca de los correos electrónicos de resumen.

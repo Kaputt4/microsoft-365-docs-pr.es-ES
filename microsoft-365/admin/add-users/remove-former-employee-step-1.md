@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Bloquear el acceso a los servicios Microsoft 365 un antiguo empleado.
-ms.openlocfilehash: 326188e0000d3c59eb411222d3e3c47177b383ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5643c12f46fb09f76f16dc2632baf1538d358dd5
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161695"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421347"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Paso 1: impedir que un antiguo empleado inicia sesión y bloquee el acceso a Microsoft 365 servicios
 
@@ -64,15 +65,14 @@ Para obtener más información sobre cuánto se tarda en quitar a un usuario del
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Bloquear el acceso de un antiguo empleado al correo electrónico (Exchange Online)
 
-Si tiene correo electrónico como parte de su suscripción Microsoft 365, inicie sesión en el Centro de administración de Exchange y siga estos pasos para impedir que el antiguo empleado tenga acceso a su correo electrónico.
+Si tiene correo electrónico como parte de su suscripción Microsoft 365, inicie sesión en el Centro de administración de Exchange y siga estos pasos para impedir que el antiguo empleado tenga acceso <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">a</a> su correo electrónico.
   
-1. Vaya al <a href="https://admin.exchange.microsoft.com/" target="_blank">Centro de administración de Exchange</a>.
-2. En el Centro de administración de Exchange, vaya a **Destinatarios** \> **Buzones**.
-3. Seleccione el buzón de usuario de la lista y, a continuación, en el Panel de detalles *(a* la derecha), seleccione Administrar la configuración de aplicaciones **de** correo electrónico en Aplicaciones de **correo electrónico**. Desactivar **el** control deslizante de todas las opciones; **Mobile (Exchange ActiveSync),** **Outlook en la Web**, **Outlook escritorio (MAPI),** Exchange **web services**, **POP3** e **IMAP**.
-4. Seleccione **Guardar**.
+1. Vaya al Centro Exchange administración > **buzones** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">de destinatarios</a>.
+1. Seleccione el buzón de usuario de la lista y, a continuación, en el Panel de detalles *(a* la derecha), seleccione Administrar la configuración de aplicaciones **de** correo electrónico en Aplicaciones de **correo electrónico**. Desactivar **el** control deslizante de todas las opciones; **Mobile (Exchange ActiveSync),** **Outlook en la Web**, **Outlook escritorio (MAPI),** Exchange **web services**, **POP3** e **IMAP**.
+1. Seleccione **Guardar**.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center)
+[Exchange de administración en Exchange Online](/exchange/exchange-admin-center) (artículo)\
 
-[Restaurar un usuario](restore-user.md)
+[Restaurar un usuario](restore-user.md) (artículo)

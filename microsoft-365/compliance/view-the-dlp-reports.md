@@ -15,14 +15,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Use los informes DLP de Office 365 para ver el número de coincidencias de directivas DLP, invalidaciones o falsos positivos y ver si van hacia arriba o hacia abajo con el tiempo.
-ms.openlocfilehash: 711ed74ca53ec09be6b2fd5738246dffab332307
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: cbf03a4d981d4b37bd22db8fa08c728b77318ddf
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264941"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423628"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
@@ -78,17 +80,17 @@ Los informes pueden mostrar información y recomendaciones en las que puede hace
 
 Para ver los informes DLP en el Centro de seguridad & cumplimiento, debe tener asignado lo siguiente:
 
-- **Rol lector de** seguridad en el centro Exchange administración. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Lector de seguridad en el centro Exchange administración.
+- **Rol lector de** seguridad en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Lector de seguridad en el centro Exchange administración.
 
 - **Rol Administración de cumplimiento DLP de solo** vista en el Centro de seguridad & cumplimiento. De forma predeterminada, este rol se asigna a los grupos de roles Administrador de cumplimiento, Administración de la organización, Administrador de seguridad y Lector de seguridad en el Centro de seguridad & cumplimiento.
 
-- **Rol Destinatarios de solo vista** en el centro Exchange administración. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento, Administración de la organización y administración de View-Only en el centro de administración de Exchange cumplimiento.
+- **Función Destinatarios de solo vista** en el centro Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración</a>. De forma predeterminada, este rol se asigna a los grupos de roles Administración de cumplimiento, Administración de la organización y administración de View-Only en el centro de administración de Exchange cumplimiento.
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Buscar los cmdlets de los informes DLP
 
 Para usar la mayoría de los cmdlets para el Centro de seguridad y cumplimiento, necesita:
   
-1. [Conectar al Centro de cumplimiento &amp; de seguridad con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
+1. [Conectar a la seguridad &amp; Centro de cumplimiento con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
     
 2. Use cualquiera de estos [ &amp; cmdlets del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell)
     

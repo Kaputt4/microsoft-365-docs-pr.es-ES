@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use una vista simplificada en Microsoft 365 para administrar tareas comunes o la vista de panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: b5b1bf2c82e61bbaad227511925700e817b7b175
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c6443ef9406f49fe8f27aa5977aac1e046583587
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375359"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421815"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -192,4 +192,6 @@ El Centro de administración de Microsoft 365 está totalmente localizado en 40 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[¿Qué es un administrador de Microsoft 365?](../../business-video/what-is-admin.md) (vídeo) [Agregar un administrador](../../business-video/add-admin.md) (vídeo) [Personalizar el Microsoft 365 de la organización](../setup/customize-your-organization-theme.md) (artículo)
+[¿Qué es un administrador de Microsoft 365?](../add-users/about-admin-roles.md) (video)\
+[Asignar roles de administrador](../add-users/assign-admin-roles.md) (vídeo)\
+[Personalizar el tema Microsoft 365 para la sua organización (artículo)](../setup/customize-your-organization-theme.md)

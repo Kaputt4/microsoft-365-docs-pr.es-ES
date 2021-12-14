@@ -1,5 +1,5 @@
 ---
-title: Ver y administrar incidentes en Microsoft Defender para empresas
+title: Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)
 description: Obtenga información sobre cómo ver & administrar alertas, responder a amenazas, administrar dispositivos y revisar acciones de corrección
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 4927d57d0e549c1cc5e15c427f9d28abbd3dd856
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 48d50e3f1d661dfb96792688b6ff167cc7473044
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375659"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423496"
 ---
-# <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Ver y administrar incidentes en Microsoft Defender para empresas
+# <a name="view-and-manage-incidents-in-microsoft-defender-for-business-preview"></a>Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
@@ -49,24 +49,24 @@ A medida que se detectan amenazas y se desencadenan alertas, se crean incidentes
 3. En el panel desplegable, puede ver el título de la alerta, ver una lista de activos (como puntos de conexión o cuentas de usuario) que se vieron afectados, realizar acciones disponibles y usar vínculos para ver más información e incluso abrir la página de detalles de la alerta seleccionada. 
 
 > [!TIP]
-> Microsoft Defender para empresas está diseñado para ayudarle a solucionar las amenazas detectadas ofreciendo acciones recomendadas. Cuando vea una alerta, busque las acciones recomendadas que debe realizar. También tome nota de la gravedad de la alerta, que se determina no solo en función de la gravedad de la amenaza, sino también en el nivel de riesgo para su empresa. 
+> Microsoft Defender para empresas (versión preliminar) está diseñado para ayudarle a solucionar las amenazas detectadas ofreciendo acciones recomendadas. Cuando vea una alerta, busque las acciones recomendadas que debe realizar. También tome nota de la gravedad de la alerta, que se determina no solo en función de la gravedad de la amenaza, sino también en el nivel de riesgo para su empresa. 
 
 ## <a name="alert-severity"></a>Gravedad de alerta
 
 Cuando Antivirus de Microsoft Defender asigna una gravedad de alerta en función de la gravedad absoluta de una amenaza detectada (malware) y el riesgo potencial para un extremo individual (si está infectado).
-Microsoft Defender para empresas asigna una gravedad de alerta en función de la gravedad del comportamiento detectado, el riesgo real para un punto de conexión (dispositivo) y, lo que es más importante, el riesgo potencial para su empresa. En la tabla siguiente se enumeran algunos ejemplos: <br/><br/>
+Microsoft Defender para empresas (versión preliminar) asigna una gravedad de alerta en función de la gravedad del comportamiento detectado, el riesgo real para un punto de conexión (dispositivo) y, lo que es más importante, el riesgo potencial para su empresa. En la tabla siguiente se enumeran algunos ejemplos: <br/><br/>
 
 | Escenario | Gravedad de alerta | Reason |
 |:---|:---|:---|
 | Antivirus de Microsoft Defender detecta y detiene una amenaza antes de hacer cualquier daño. | Informativo | La amenaza se detuvo antes de que se realizara cualquier daño. |
 | Antivirus de Microsoft Defender detecta malware que se estaba ejecutando en su empresa. El malware se detiene y se corrige. | Bajo | Aunque es posible que se hayan causado algunos daños a un punto de conexión individual, el malware ahora no representa ninguna amenaza para su empresa. |
-| Microsoft Defender para empresas detecta el malware que se está ejecutando. El malware se bloquea casi inmediatamente. | Medio o alto | El malware representa una amenaza para puntos de conexión individuales y para su empresa. |
+| El malware que se está ejecutando lo detecta Microsoft Defender para empresas (versión preliminar). El malware se bloquea casi inmediatamente. | Medio o alto | El malware representa una amenaza para puntos de conexión individuales y para su empresa. |
 | Se detecta un comportamiento sospechoso, pero aún no se han realizado acciones de corrección. | Bajo, Medio o Alto | La gravedad depende del grado en que el comportamiento representa una amenaza para su empresa. |
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
+- [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 
-- [Ver o editar directivas de dispositivos en Microsoft Defender para empresas](mdb-view-edit-policies.md)
+- [Ver o editar directivas de dispositivos en Microsoft Defender para empresas (versión preliminar)](mdb-view-edit-policies.md)

@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 proteger los datos confidenciales frente a la suplantación de identidad(phishing), malware y otras amenazas.
-ms.openlocfilehash: 3aa65b31c3995e39164b6bd5d7aa3aa07e7f6009
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 7b19f73a08dc34821f755a64cd0dda502ef4a144
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128681"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421323"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -217,7 +217,7 @@ Se recomienda hacer lo siguiente:
 
 - Agregue una nueva directiva dirigida a todos los destinatarios de su dominio.
 
-Para configurar vínculos Caja fuerte, vea [este breve vídeo](../../business-video/safe-links.md)de aprendizaje o siga estos pasos:
+Para configurar los Caja fuerte, siga estos pasos:
 
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta de administrador.
 
@@ -243,7 +243,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Caja fuerte de vínculos para todos los destinatarios del dominio|
+|Name|Caja fuerte de vínculos para todos los destinatarios del dominio|
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes|Seleccionar Activado: las direcciones URL se reescribirán y comprobarán en una lista de **vínculos malintencionados** conocidos cuando el usuario haga clic en el vínculo .|
 |Usar Caja fuerte datos adjuntos para examinar el contenido descargable|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|

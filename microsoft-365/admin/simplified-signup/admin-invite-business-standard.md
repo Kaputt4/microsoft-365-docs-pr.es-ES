@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Invitar a los usuarios a unirse Microsoft 365 Empresa Estándar organización
-ms.openlocfilehash: 263eb41ec12b527c4f70e6694206a480e28bebae
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: bdf5c9e0f5957c07a024b14384fa825858618ba4
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254422"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421419"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Invitar a los usuarios a Microsoft 365 Empresa Estándar (administrador)
 
@@ -35,7 +35,7 @@ Como administrador de una suscripción Microsoft 365 Empresa Estándar, puede in
 - Obtén ayuda en cualquier momento con soporte telefónico y web las 24 horas de Microsoft.
 
 > [!Note]
-> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulte [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
+> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulta [Asignar roles de administrador](../add-users/assign-admin-roles.md) para obtener más información.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

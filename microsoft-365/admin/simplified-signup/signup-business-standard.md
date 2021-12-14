@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Compre Microsoft 365 Empresa Estándar y configure su organización.
-ms.openlocfilehash: 37543ff91f9c3d46c73a07b9bb9110294b250ae2
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: b966bcdf799ab97135cb350fb154723c97d06964
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311729"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422860"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Registrarse para una suscripción a Microsoft 365 Empresa Estándar
 
@@ -41,7 +41,7 @@ Hay un par de formas de empezar:
 Para registrarse y comprar Microsoft 365 Empresa Estándar, siga estos pasos.
 
 > [!IMPORTANT]
-> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulte [Agregar un administrador](../../business-video/add-admin.md) para obtener más información.
+> La persona que se suscribe a Microsoft 365 para empresas (normalmente el propietario de la empresa) se convierte automáticamente en el administrador técnico de la organización. Puede agregar a otras personas como administradores si desea obtener ayuda para administrar los servicios de Microsoft 365. Consulta [Asignar roles de administrador](../add-users/assign-admin-roles.md) para obtener más información.
 
 1. En la [página Microsoft 365 para empresas,](https://go.microsoft.com/fwlink/?linkid=2109654)seleccione **Ver planes & precios**.
 2. En la página siguiente, descubra el costo mensual y, a continuación, desplácese hacia abajo por la página para obtener más información sobre lo que se incluye en Microsoft 365. En Microsoft 365 Empresa Estándar, seleccione **Comprar ahora**.

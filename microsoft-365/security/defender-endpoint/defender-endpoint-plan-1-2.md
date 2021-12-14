@@ -8,19 +8,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 12/09/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c0c776d7e00ee890a8cafbc15db02b45a1474b24
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c9a1d35a4de97174a49d7a69ec7776f31528376e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371873"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422500"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Plan 1 y Plan 2 de Microsoft Defender para Endpoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "61371873"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas. Defender for Endpoint proporciona protección contra amenazas avanzada que incluye antivirus, antimalware, mitigación de ransomware y mucho más, junto con la administración centralizada y los informes. Próximamente, estarán disponibles dos planes:   
+Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas. Defender for Endpoint proporciona protección contra amenazas avanzada que incluye antivirus, antimalware, mitigación de ransomware y mucho más, junto con la administración centralizada y los informes. Hay dos planes disponibles:   
  
 - [Plan 1 de Microsoft Defender para endpoints;](defender-endpoint-plan-1.md) y 
 - [Microsoft Defender para endpoint plan 2](microsoft-defender-endpoint.md), anteriormente conocido como [Microsoft Defender para endpoint](microsoft-defender-endpoint.md).

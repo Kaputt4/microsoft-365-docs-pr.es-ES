@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,19 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d0753b5833ec2bdcff0f790a605e5caed72fc9c9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a79b9591a8954cd6609faedc816adbc469e66dee
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375490"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423016"
 ---
-# <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para empresas
+# <a name="get-microsoft-defender-for-business-preview"></a>Obtener Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
 
-Microsoft Defender para empresas está disponible en versión preliminar. Participar en el programa de vista previa te permite probar Defender para empresas antes de que esté disponible en general. El programa de vista previa está disponible para:
+Microsoft Defender para empresas (versión preliminar) está disponible en versión preliminar. Participar en el programa de vista previa te permite probar Defender para empresas antes de que esté disponible en general. El programa de vista previa está disponible para:
 
 - Partners de Microsoft que proporcionan servicios de IT a pequeñas y medianas empresas
 - Pequeñas y medianas empresas (hasta 300 empleados)
@@ -60,6 +60,6 @@ Si se te acepta, el correo electrónico contendrá un código de licencia que us
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Consulta el proceso de configuración y configuración de Microsoft Defender para empresas](mdb-setup-configuration.md)
+- [Consulta el proceso de configuración y configuración de Microsoft Defender para empresas (versión preliminar)](mdb-setup-configuration.md)
 
-- [Obtenga información sobre cómo obtener ayuda y soporte técnico para Microsoft Defender para empresas](mdb-get-help.md)
+- [Obtenga información sobre cómo obtener ayuda y soporte técnico para Microsoft Defender para empresas (versión preliminar)](mdb-get-help.md)

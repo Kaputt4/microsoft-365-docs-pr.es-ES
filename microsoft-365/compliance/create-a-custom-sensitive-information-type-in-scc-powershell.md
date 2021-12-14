@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: 7ac39c068060fec945d04137688e6d9bb4b81655
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 4139a7cd8f2a87bf8db25e9b23201132e321b31d
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220997"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422572"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -431,7 +431,7 @@ En este ejemplo, se define un validador de fecha para una parte regex de la que 
   
 ## <a name="changes-for-exchange-online"></a>Cambios para Exchange Online
 
-Anteriormente, puede que haya usado PowerShell de Exchange Online para importar los tipos de información confidencial personalizados para DLP. Ahora, los tipos de información confidencial personalizados se pueden usar tanto en el Centro de administración de Exchange como en el Centro de cumplimiento. Como parte de esta mejora, debe usar PowerShell del Centro de cumplimiento para importar los tipos de información confidencial personalizados (ya no se pueden importar desde PowerShell de Exchange). Los tipos de información confidencial personalizados seguirán funcionando como hasta ahora; sin embargo, puede que los cambios realizados en los tipos de información confidencial personalizados del Centro de cumplimiento tarden hasta una hora en aparecer en el Centro de administración de Exchange.
+Antes se podía usar PowerShell de Exchange Online para importar tipos de información confidencial personalizados para DLP. Ahora los tipos de información confidencial personalizados se pueden usar en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración</a> Exchange y en el Centro de cumplimiento. Como parte de esta mejora, necesita usar PowerShell del Centro de cumplimiento para importar los tipos de información confidencial personalizados (ya no se pueden importar desde Exchange PowerShell). Los tipos de información confidencial personalizados seguirán funcionando como hasta ahora, pero los cambios realizados en los tipos de información confidencial personalizados en el Centro de cumplimiento pueden tardar hasta una hora en mostrarse en el Centro de administración de Exchange.
   
 Tenga en cuenta que, en el Centro de seguridad y cumplimiento, se usa el cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** para cargar un paquete de reglas (anteriormente, en el Centro de administración de Exchange, se usaba el cmdlet ClassificationRuleCollection). (Antes, en el Centro de administración de Exchange, usó el cmdlet **ClassificationRuleCollection**). 
   

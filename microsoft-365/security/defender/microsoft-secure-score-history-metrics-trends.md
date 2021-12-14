@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c04d7eed5957fbb5633710ec07af28ca66809356
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: e60ab6c42a48a0eb69a3a643b6c0a502b56f93b3
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724804"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423824"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir objetivos
 
@@ -60,7 +60,7 @@ En la **pestaña Métricas & tendencias,** hay varios gráficos y gráficos para
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Comparar la puntuación con organizaciones como la tuyo
 
-Hay dos lugares para ver cómo se compara su puntuación con las organizaciones que son similares a usted. En ambos gráficos, puede seleccionar Administrar **comparaciones** para ver y editar la información de su organización. También puede crear una comparación personalizada basada en la industria, el tamaño de la organización, las licencias y las regiones.
+Hay dos lugares para ver cómo se compara su puntuación con las organizaciones que son similares a la de usted.
 
 #### <a name="comparison-bar-chart"></a>Gráfico de barras de comparación
 
@@ -75,15 +75,6 @@ El gráfico de barras de comparación es la **pestaña Información** general. M
     4. Los productos de Microsoft usados son un 80 % similares
     5. Oportunidad (puntuación máxima que puede obtener la licencia actual) dentro de un intervalo del 20 % desde el espacio empresarial
 
-- **Comparación personalizada:** debe configurarse seleccionando Administrar **comparación** en función de los siguientes criterios:
-    1. Sectores seleccionados
-    2. Tamaño o tamaños de organización seleccionados
-    3. Regiones seleccionadas
-    4. Licencias seleccionadas
-    5. Los productos de Microsoft usados son un 80 % similares
-    6. Oportunidad (puntuación máxima que puede obtener la licencia actual) dentro de un intervalo del 20 % desde el espacio empresarial
-
-Si ha realizado una selección personalizada pero los resultados tienen menos de otros cinco inquilinos con los que podemos comparar, verá "No disponible debido a datos limitados".
 
 #### <a name="comparison-trend"></a>Tendencia de comparación
 

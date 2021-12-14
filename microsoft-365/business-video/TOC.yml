@@ -126,19 +126,11 @@
         - name: Información general sobre la seguridad en Microsoft 365 Empresa Premium
           href: overview-m365-security.md
         - name: Proteger las cuentas de los empleados con autenticación multifactor
-          href: turn-on-mfa.md
+          href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: Configurar el inicio de sesión en dos fases en el teléfono
           href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
-        - name: Activar la detección de malware
-          href: anti-malware.md
-        - name: Crear reglas de correo electrónico para protegerse contra ransomware
-          href: prevent-ransom-in-email.md
-        - name: Configurar directivas contra suplantación de identidad
-          href: setup-anti-phishing.md
         - name: Administrar datos adjuntos seguros
           href: safe-attachments.md
-        - name: Administrar vínculos seguros
-          href: safe-links.md
         - name: Prevenir la pérdida de datos
           href: set-up-dlp.md
         - name: Cree etiquetas de confidencialidad

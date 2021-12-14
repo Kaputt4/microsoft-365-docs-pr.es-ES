@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Obtenga información sobre cómo permitir que los miembros del grupo envíen correo electrónico como Microsoft 365 grupo o envíen correo electrónico en nombre de un Microsoft 365 grupo.
-ms.openlocfilehash: 54fe4691f4523934e1850ebbf0711efaa3eb6034
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: a21e30ef613f557d1206ada5bc9ab4be8a083834
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064068"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421587"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Permitir que los miembros envíen como o envíen en nombre de un grupo
 
@@ -43,9 +44,9 @@ El **permiso Enviar en nombre** permite que un usuario envíe correo electrónic
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Permitir que los miembros envíen correo electrónico como grupo
 
-En esta sección se explica cómo permitir a [](https://go.microsoft.com/fwlink/p/?linkid=2059104) los usuarios enviar correo electrónico como grupo en el Centro de administración de Exchange (EAC) en Exchange Online.
+En esta sección se explica cómo permitir a los usuarios enviar correo electrónico como grupo en el Centro de administración de Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC)</a> en Exchange Online.
   
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.
+1. En el centro Exchange administración, vaya a **Grupos de** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**destinatarios**</a>.
     
 2. Seleccione **Editar icono** editar ![ grupo.  ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) en el grupo que desea permitir que los usuarios envíen como. 
     
@@ -61,9 +62,9 @@ En esta sección se explica cómo permitir a [](https://go.microsoft.com/fwlink/
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Permitir que los miembros envíen correo electrónico en nombre de un grupo
 
-En esta sección se explica cómo permitir a los usuarios enviar correo electrónico en nombre de un grupo en el Centro de administración de Exchange (EAC) en Exchange Online.
+En esta sección se explica cómo permitir a los usuarios enviar correo electrónico en nombre de un grupo en el Centro de administración de Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC)</a> en Exchange Online.
   
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.
+1. En el centro Exchange administración, vaya a **Grupos de** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**destinatarios**</a>.
     
 2. Seleccione **Editar icono** editar ![ grupo.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) en el grupo que desea permitir que los usuarios envíen como. 
     

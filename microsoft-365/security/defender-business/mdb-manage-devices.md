@@ -1,13 +1,13 @@
 ---
-title: Administrar dispositivos en Microsoft Defender para empresas
-description: Obtenga información sobre cómo administrar dispositivos en Microsoft Defender para empresas
+title: Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)
+description: Obtenga información sobre cómo administrar dispositivos en Microsoft Defender para empresas (versión preliminar)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,24 +16,24 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 33087884da4b3f6e011963535784b14f9c2e9175
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5bb36ecb0ca2d382ce64a6746b1c6bfcfceff22b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375520"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421143"
 ---
-# <a name="manage-devices-in-microsoft-defender-for-business"></a>Administrar dispositivos en Microsoft Defender para empresas
+# <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
 
-En Microsoft Defender para empresas, puedes administrar dispositivos de la siguiente manera:
+En Microsoft Defender para empresas (versión preliminar), puedes administrar dispositivos de la siguiente manera:
 
 - [Ver una lista de dispositivos incorporados](#view-the-list-of-onboarded-devices) para ver su nivel de riesgo, nivel de exposición y estado de mantenimiento
 - [Realizar acciones en un dispositivo que](#take-action-on-a-device-that-has-threat-detections) tenga detecciones de amenazas
-- [Incorporación de un dispositivo a Defender para empresas](#onboard-a-device)  
-- [Offboard a device from Defender for Business](#offboard-a-device)
+- [Incorporación de un dispositivo a Defender para empresas (versión preliminar)](#onboard-a-device)  
+- [Offboard a device from Defender for Business (preview)](#offboard-a-device)
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Ver la lista de dispositivos incorporados
 
@@ -45,7 +45,7 @@ En Microsoft Defender para empresas, puedes administrar dispositivos de la sigui
 
 3. Selecciona un dispositivo para abrir su panel desplegable, donde puedes obtener más información sobre su estado y tomar medidas. 
 
-   Si aún no tienes ningún dispositivo en la lista, incorpora dispositivos [a Microsoft Defender para empresas](mdb-onboard-devices.md)
+   Si aún no tienes ningún dispositivo en la lista, incorpora dispositivos [a Microsoft Defender para empresas (versión preliminar)](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>Realizar acciones en un dispositivo que tenga detecciones de amenazas
 
@@ -61,7 +61,7 @@ En Microsoft Defender para empresas, puedes administrar dispositivos de la sigui
 
 ## <a name="onboard-a-device"></a>Incorporación de un dispositivo
 
-Consulta [Incorporación de dispositivos a Microsoft Defender para empresas.](mdb-onboard-devices.md)
+Consulta [Incorporación de dispositivos a Microsoft Defender para empresas (versión preliminar).](mdb-onboard-devices.md)
 
 ## <a name="offboard-a-device"></a>Fuera de un dispositivo
 
@@ -69,9 +69,9 @@ Consulta [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md)
+- [Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)](mdb-view-manage-incidents.md)
 
-- [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
+- [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 

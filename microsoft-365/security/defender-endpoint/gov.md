@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 846a1007a63164807b3667cb7c06fe5ea260a10a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ccecccb7b2d846bc14dafd8585947b926b23ad0c
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370721"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421155"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -194,4 +194,3 @@ Estas son las diferencias conocidas:
 |Detección de redes|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Informes: Reducción de superficie de ataque, Control de dispositivos, Estado del dispositivo, Firewall|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Filtrado de contenido web|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Integraciones: Microsoft Power Automate & Azure Logic Apps|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|

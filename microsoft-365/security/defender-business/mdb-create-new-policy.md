@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,22 +16,22 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: caa6013a68ab8ed50b16d26dcc24e91ac7d55616
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 663ecf1b998658829e604fd5c9160b4bf0cd09ae
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375430"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421107"
 ---
-# <a name="create-a-new-policy-in-microsoft-defender-for-business"></a>Crear una nueva directiva en Microsoft Defender para empresas
+# <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>Crear una nueva directiva en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
 
-Microsoft Defender para empresas incluye directivas predeterminadas que usan la configuración recomendada para proteger los dispositivos de la empresa desde el primer día. Por ejemplo, tiene directivas de protección **de** última generación y directivas de **firewall** integradas con la configuración de seguridad recomendada. Pero no está limitado a las directivas predeterminadas. También puede crear nuevas directivas, como se describe en este artículo.
+Microsoft Defender para empresas (versión preliminar) incluye directivas predeterminadas que usan la configuración recomendada para proteger los dispositivos de la empresa desde el primer día. Por ejemplo, tiene directivas de protección **de** última generación y directivas de **firewall** integradas con la configuración de seguridad recomendada. Pero no está limitado a las directivas predeterminadas. También puede crear nuevas directivas, como se describe en este artículo.
 
 > [!TIP]
-> Si desea editar una directiva existente, vea Ver o editar directivas [en Microsoft Defender para empresas](mdb-view-edit-policies.md).
+> Si desea editar una directiva existente, vea Ver o editar directivas [en Microsoft Defender para empresas (versión preliminar).](mdb-view-edit-policies.md)
 
 ## <a name="create-a-new-policy"></a>Crear una nueva directiva
 
@@ -58,7 +58,7 @@ Microsoft Defender para empresas incluye directivas predeterminadas que usan la 
 
    Para obtener más información sobre los grupos de dispositivos, consulta . 
 
-8. En la **pestaña Configuración,** especifique la configuración de la directiva y, a continuación, elija **Siguiente**. Para obtener más información acerca de las opciones individuales, vea [Configuración de Microsoft Defender para empresas.](mdb-next-gen-configuration-settings.md)
+8. En la **pestaña Configuración,** especifique la configuración de la directiva y, a continuación, elija **Siguiente**. Para obtener más información acerca de las opciones individuales, vea [Configuración de Microsoft Defender para empresas (versión preliminar).](mdb-next-gen-configuration-settings.md)
 
 9. En la **pestaña Revisar la directiva,** revise la información general, los dispositivos de destino y las opciones de configuración. 
 
@@ -69,7 +69,7 @@ Microsoft Defender para empresas incluye directivas predeterminadas que usan la 
 
 Elija una o varias de las siguientes tareas:
 
-- [Introducción al uso de Defender para empresas](mdb-get-started.md)
+- [Introducción al uso de Defender para empresas (versión preliminar)](mdb-get-started.md)
 
 - [Ver o editar directivas](mdb-view-edit-policies.md)
 

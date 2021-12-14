@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -20,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange administradores en línea administran el correo electrónico y los buzones de su organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario.
-ms.openlocfilehash: 2362731a3837950ecbf0f3fea5e6887311e94d97
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f889b2c482734518d1a73802c3422c13bc5c4a59
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162019"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421395"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del Exchange Online de administración
 
-Para ayudarle a administrar Microsoft 365, [](assign-admin-roles.md) puede asignar permisos a los usuarios para administrar el correo electrónico y los buzones de su organización desde el centro de administración de [Exchange.](/exchange/exchange-admin-center) Para ello, debe asignarlos al rol de administrador de Exchange.
+Para ayudarle a administrar Microsoft 365, [](assign-admin-roles.md) puede asignar permisos a los usuarios para administrar el correo electrónico y los buzones de su organización desde el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange.</a> Para ello, debe asignarlos al rol de administrador de Exchange.
   
  **Sugerencia:** Al asignar a alguien al Exchange de administración, asígnele también el rol de administrador de servicio. De esta forma, pueden ver información importante en el Centro de administración de Microsoft 365, como el estado del servicio Exchange Online, y las notificaciones de cambio y lanzamiento.
 

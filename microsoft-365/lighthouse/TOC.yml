@@ -48,6 +48,8 @@
   items:
     - name: Introducción a la página de administración de amenazas
       href: m365-lighthouse-threat-management-page-overview.md
+    - name: Mitigar amenazas con Antivirus de Microsoft Defender
+      href: m365-lighthouse-mitigate-threats.md
 - name: Obtener ayuda y soporte técnico
   items:
     - name: Obtener ayuda y soporte técnico

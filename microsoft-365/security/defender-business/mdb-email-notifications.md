@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: c99184fe90e5bbce8e878d15fae3ded8a14285b6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 60d0c58edba42b8a32062c2f7adaf417fd8c7203
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375340"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421083"
 ---
 # <a name="set-up-email-notifications"></a>Configurar notificaciones por correo electrónico
 
@@ -48,9 +48,9 @@ Al configurar las notificaciones por correo electrónico, puede elegir entre dos
 > [!TIP]
 > Las notificaciones por correo electrónico no son la única forma en que el equipo de **seguridad puede averiguar sobre nuevas alertas o vulnerabilidades.**
 > 
-> Las notificaciones por correo electrónico son una forma cómoda de ayudar a mantener informado a su equipo de seguridad en tiempo real. Pero hay otros. Por ejemplo, siempre que el equipo de seguridad inicia sesión en el portal de Microsoft 365 Defender ( ), verá tarjetas que resaltan nuevas [https://security.microsoft.com](https://security.microsoft.com) amenazas, alertas y vulnerabilidades. Defender para empresas está diseñado para resaltar información importante que le importa al equipo de seguridad tan pronto como inicie sesión.
+> Las notificaciones por correo electrónico son una forma cómoda de ayudar a mantener informado a su equipo de seguridad en tiempo real. Pero hay otros. Por ejemplo, siempre que el equipo de seguridad inicia sesión en el portal de Microsoft 365 Defender ( ), verá tarjetas que resaltan nuevas [https://security.microsoft.com](https://security.microsoft.com) amenazas, alertas y vulnerabilidades. Defender para empresas (versión preliminar) está diseñado para resaltar información importante que le importa al equipo de seguridad tan pronto como inicie sesión.
 > 
-> El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para obtener más información, [vea Ver y administrar incidentes en Microsoft Defender para empresas.](mdb-view-manage-incidents.md)
+> El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para obtener más información, [vea Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar).](mdb-view-manage-incidents.md)
 
 ## <a name="view-and-edit-email-notifications"></a>Ver y editar notificaciones de correo electrónico
 
@@ -72,5 +72,5 @@ Para ver o editar la configuración de notificaciones por correo electrónico de
 
 Continúe con:
 
-- [Paso 4: Incorporar dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md)
+- [Paso 4: Incorporar dispositivos a Microsoft Defender para empresas (versión preliminar)](mdb-onboard-devices.md)
 

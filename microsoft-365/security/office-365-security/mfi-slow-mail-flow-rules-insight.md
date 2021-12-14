@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Los administradores pueden aprender a usar la información corregir reglas de flujo de correo lento en el Centro de seguridad y cumplimiento de & para identificar y corregir reglas de flujo de correo ineficaces o rotas (también conocidas como reglas de transporte) en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c26e19c732b33ea8c51b17eb592964cecd1c234d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0781ba01504751c1c612e46ed8cf214a732a05f8
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176444"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422524"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corregir la información de reglas de flujo de correo lento en el Centro de seguridad & cumplimiento
 
@@ -47,7 +48,7 @@ Puede usar esta notificación para ayudarle a identificar y ajustar las reglas d
 
 Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con más información:
 
-- **Regla:** puede pasar el puntero sobre el resumen para ver todas las condiciones, excepciones y acciones de la regla. Puede hacer clic en el resumen para editar la regla en el Centro Exchange administración (EAC).
+- **Regla:** puede pasar el puntero sobre el resumen para ver todas las condiciones, excepciones y acciones de la regla. Puede hacer clic en el resumen para editar la regla en el Centro Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración (EAC).</a>
 - **Número de mensajes evaluados:** puede hacer clic [](message-trace-scc.md) en Ver mensajes de ejemplo para ver los resultados del seguimiento de mensajes de una muestra de los mensajes que se vieron afectados por la regla. 
 - **Tiempo promedio invertido en cada mensaje**
 - **Mediana de tiempo invertido en un mensaje:** el valor intermedio que separa la mitad superior de los datos de la mitad inferior del tiempo.

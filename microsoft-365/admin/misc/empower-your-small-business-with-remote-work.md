@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Encuentre la información de instrucciones más reciente, sugerencias, recursos y instrucciones sobre el trabajo remoto para empresas que usan Microsoft 365.
-ms.openlocfilehash: 2fb23bc74034bc3f8f27bc6aa06bf42311ee8bb8
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 673d323a64687b9f2413993d7ddd386529e1ffc8
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370853"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422380"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Potencie su pequeña empresa con el trabajo a distancia
 
@@ -71,7 +71,7 @@ Solo unos pocos pasos pueden ayudarle a mantener su empresa segura, incluso con 
 
 Usa la autenticación multifactor para proteger tus datos y dispositivos.
 
-Para obtener más información, [vea Activar la autenticación multifactor](../../business-video/turn-on-mfa.md).
+Para obtener más información, [vea Activar la autenticación multifactor](../security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### <a name="secure-your-devices"></a>Proteger sus dispositivos
 

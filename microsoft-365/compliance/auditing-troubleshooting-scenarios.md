@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo usar la herramienta de Microsoft 365 de búsqueda de registro de auditoría para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
-ms.openlocfilehash: 0ac1bbb2ff0a9c09b661abd8f60fd960d33fd774
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: f44902f22c3c7144bf46b9dc6bb95cd534480755
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478582"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421827"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de soporte técnico comunes
 
@@ -43,7 +44,7 @@ Cada uno de los escenarios de solución de problemas descritos en este artículo
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Permisos necesarios para usar la herramienta de búsqueda de registro de auditoría
 
-Debe tener asignado el rol View-Only registros de auditoría o registros de auditoría en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
+Debe tener asignado el rol View-Only registros de auditoría o registros de auditoría en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **Permisos** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
 
 ### <a name="running-audit-log-searches"></a>Ejecución de búsquedas de registro de auditoría
 

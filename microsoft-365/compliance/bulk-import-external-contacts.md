@@ -14,13 +14,14 @@ search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
+ms.custom: admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo los administradores pueden usar Exchange Online PowerShell y un archivo CSV para importar contactos externos de forma masiva a la lista global de direcciones.
-ms.openlocfilehash: 399534a74a7245ebb71624b390343c81e692925e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fbb2d9bb93d9275e662872d945254d6bf27deb92
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170864"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423916"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importar contactos externos de forma masiva a Exchange Online
 
@@ -73,7 +74,7 @@ El siguiente paso es usar el archivo CSV que creó en los pasos 1 y PowerShell p
   
 1.  Conectar PowerShell a su Exchange Online organización. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Asegúrese de usar el nombre de usuario y la contraseña para su cuenta de administrador global al conectarse a Exchange Online PowerShell. 
     
-2. Después de conectar PowerShell a Exchange Online, vaya a la carpeta de escritorio donde guardó el archivo CSV en el paso 1; por ejemplo `C:\Users\Administrator\desktop` .
+2. Después de conectar PowerShell a Exchange Online, vaya a la carpeta de escritorio donde guardó el archivo CSV en el paso 1; por `C:\Users\Administrator\desktop` ejemplo.
     
 3. Ejecute el siguiente comando para crear los contactos externos:
 
@@ -83,7 +84,7 @@ El siguiente paso es usar el archivo CSV que creó en los pasos 1 y PowerShell p
 
     Puede tardar un tiempo en crear los nuevos contactos, en función de cuántos importes. Cuando el comando termina de ejecutarse, PowerShell muestra una lista de los nuevos contactos que se crearon. 
     
-4. Para ver los nuevos contactos externos, vaya al Centro Exchange administración (EAC) y, a continuación, haga clic en **Contactos de** \> **destinatarios**. 
+4. Para ver los nuevos contactos externos, vaya al Centro Exchange administración (EAC) y, a continuación, haga clic en **Contactos de** \> <a href="https://go.microsoft.com/fwlink/?linkid=2182970" target="_blank">**destinatarios**</a>. 
     
     > [!TIP]
     > Para obtener instrucciones para conectarse al EAC, [vea Exchange centro de administración en Exchange Online](/exchange/exchange-admin-center). 

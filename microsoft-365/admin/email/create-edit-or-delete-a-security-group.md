@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Aprenda a crear, editar o eliminar un grupo de seguridad.
-ms.openlocfilehash: b97b16856e48c81773c8b8e039dfa6b9469a4efb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f054842abc5111c654b8da02afc418c36f7db11
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165021"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422284"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el Centro de administración de Microsoft 365
 
@@ -79,7 +80,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Grupos de Exchange Online y SharePoint Online
 
-Si desea crear grupos de usuarios para que pueda enviarles correo electrónico a todos al mismo tiempo,  puede hacerlo en el Centro de administración de Exchange yendo Exchange Grupos de destinatarios \>  \>  \> . A continuación, **seleccione Nuevo** ![ agregar. y seleccione el tipo de grupo ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) que desea crear: 
+Si desea crear grupos de usuarios para que pueda enviarles correo electrónico a todos al mismo tiempo,  puede hacerlo en el Centro de administración de Exchange yendo Exchange Grupos de destinatarios \>  \>  \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>. A continuación, **seleccione Nuevo** ![ agregar. y seleccione el tipo de grupo ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) que desea crear: 
   
 - **Grupo de distribución**: se usa para distribuir mensajes a un grupo de usuarios. También se denomina grupo de *distribución habilitado* para correo o, una lista *de distribución.* Para más información, vea [Administrar grupos de distribución](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
     
@@ -87,7 +88,7 @@ Si desea crear grupos de usuarios para que pueda enviarles correo electrónico a
     
 - **Grupo de distribución dinámico**: un tipo de grupo de distribución cuya lista de destinatarios se vuelve a calcular cada vez que se envía un mensaje en función de filtros y condiciones definidos. Para obtener más información, vea [Administrar grupos de distribución dinámica](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
     
-Después de crear grupos de distribución y grupos de seguridad habilitados para correo en el centro de administración de Exchange, sus nombres y listas de usuarios aparecen en la **página Grupos de** seguridad. Puede eliminar estos grupos en ambas ubicaciones, pero solamente puede modificarlos en el Centro de administración de Exchange. Los grupos de distribución dinámicos no se muestran en la **página Grupos de** seguridad. 
+Después de crear grupos de distribución y grupos de seguridad habilitados para correo en el Centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange,</a>sus nombres y listas de usuarios aparecen en la **página Grupos de** seguridad. Puede eliminar estos grupos en ambas ubicaciones, pero solamente puede modificarlos en el Centro de administración de Exchange. Los grupos de distribución dinámicos no se muestran en la **página Grupos de** seguridad. 
   
  Los grupos de SharePoint se crean automáticamente al crear una colección de sitios. Los grupos predeterminados usan los niveles de permisos predeterminados de SharePoint (a veces llamados roles de SharePoint) para conceder permisos y acceso a los usuarios. Para obtener más información, vea [Default SharePoint groups in SharePoint Online](/sharepoint/default-sharepoint-groups).
   

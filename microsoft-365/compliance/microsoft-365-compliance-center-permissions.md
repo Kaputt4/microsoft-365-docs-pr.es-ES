@@ -11,13 +11,15 @@ ms.topic: article
 ms.localizationpriority: medium
 description: Obtenga información sobre la administración de permisos en el Centro de cumplimiento de Microsoft 365.
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b19e0ce095fe4b0eb25f8fbf81b3f3e739271e1e
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 45540713452b91da171f6fc52eef8210fa256c4e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786439"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423700"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365
 
@@ -27,7 +29,7 @@ Para ver  la pestaña Permisos en el Centro de cumplimiento de Microsoft 365, lo
 
 ![Página permisos en Centro de cumplimiento de Microsoft 365.](../media/m365-compliance-center-permissions.png)
 
-Los permisos de la Centro de cumplimiento de Microsoft 365 se basan en el modelo de permisos de control de acceso basado en roles (RBAC). RBAC es el mismo modelo de permisos que usa la mayoría de los servicios de Microsoft 365, por lo que si está familiarizado con la estructura de permisos de estos servicios, la concesión de permisos en el Centro de cumplimiento de Microsoft 365 será familiar. Es importante recordar que los permisos administrados en el Centro de cumplimiento de Microsoft 365 no cubren la administración de todos los permisos necesarios en cada servicio individual. Todavía tendrá que administrar ciertos permisos específicos del servicio en el Centro de administración para el servicio específico. Por ejemplo, si necesita asignar permisos para las directivas de archivado, auditoría y retención de MRM, deberá administrar estos permisos en el Centro de administración de Exchange administración.
+Los permisos de la Centro de cumplimiento de Microsoft 365 se basan en el modelo de permisos de control de acceso basado en roles (RBAC). RBAC es el mismo modelo de permisos que usa la mayoría de los servicios de Microsoft 365, por lo que si está familiarizado con la estructura de permisos de estos servicios, la concesión de permisos en el Centro de cumplimiento de Microsoft 365 será familiar. Es importante recordar que los permisos administrados en el Centro de cumplimiento de Microsoft 365 no cubren la administración de todos los permisos necesarios en cada servicio individual. Todavía tendrá que administrar ciertos permisos específicos del servicio en el Centro de administración para el servicio específico. Por ejemplo, si necesita asignar permisos para las directivas de archivado, auditoría y retención de MRM, deberá administrar estos permisos en el Centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>.
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relación de los miembros, los roles y los grupos de roles
 
@@ -41,7 +43,7 @@ Un grupo de roles es un conjunto de roles que permiten a los usuarios realizar s
 
 Para ver todos los grupos de roles predeterminados que están disponibles en el Centro de cumplimiento de Microsoft 365 y los roles [asignados](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)a los grupos de roles de forma predeterminada, vea permisos en el Centro de seguridad & cumplimiento .
 
-La administración de permisos en el Centro de cumplimiento de Microsoft 365 solo proporciona a los usuarios acceso a las características de cumplimiento que están disponibles en el Centro de cumplimiento de Microsoft 365. Si desea conceder permisos a otras características que no están en el Centro de cumplimiento de Microsoft 365, como las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), deberá usar el Centro de administración de Exchange.
+La administración de permisos en el Centro de cumplimiento de Microsoft 365 solo proporciona a los usuarios acceso a las características de cumplimiento que están disponibles en el Centro de cumplimiento de Microsoft 365. Si desea conceder permisos a otras características que no están en el Centro de cumplimiento de Microsoft 365, como las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), deberá usar el Centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>.
 
 ## <a name="azure-roles-in-the-microsoft-365-compliance-center"></a>Roles de Azure en el Centro de cumplimiento de Microsoft 365
 

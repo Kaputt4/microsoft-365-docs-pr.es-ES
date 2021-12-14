@@ -16,15 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Use detecciones en tiempo real y explorador en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96004add9efe4fac033518f32b357044bdb7588f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0b4509b02d03a487554463921cd4202765e20b30
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196518"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422812"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -295,14 +297,14 @@ Podrá ver tanto el GUID como el nombre de las reglas de transporte que se aplic
 > - Solo EXO: prevención de pérdida de datos: todos
 > - EXO Only - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory o EXO: administrador de seguridad: todo
-> - AAD o EXO: lector de seguridad: todos
+> - AAD o EXO- Lector de seguridad: Todo
 > - Solo EXO: reglas de transporte: todas
 > - Solo EXO: View-Only configuración: todo
 >
 > Dentro de la cuadrícula de correo electrónico, el control desplegable Detalles y csv exportado, los ETR se presentan con un Nombre/GUID como se muestra a continuación.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange Reglas de transporte.](../../media/ETR_Details.png)
+> > ![Exchange de transporte.](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Conectores de entrada
 
@@ -549,7 +551,7 @@ Para ver y usar detecciones en tiempo real o explorador, debe tener los permisos
   - Administrador de seguridad (se puede asignar en el centro Azure Active Directory de administración ( <https://aad.portal.azure.com> )
   - Lector de seguridad
 
-- Por Exchange Online, debe tener uno de los siguientes roles asignados en el Centro de administración de Exchange ( ) o <https://admin.protection.outlook.com/ecp/> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
+- Por Exchange Online, debe tener uno de los siguientes roles <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a> asignados en el centro de administración de Exchange o [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Administración de la organización
   - Administración de la organización de solo visualización

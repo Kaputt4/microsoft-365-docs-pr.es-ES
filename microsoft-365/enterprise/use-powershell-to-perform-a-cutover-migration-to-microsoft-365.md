@@ -12,26 +12,28 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Obtenga información sobre cómo usar PowerShell para mover el contenido de un sistema de correo electrónico de origen a la vez realizando una migración total a Microsoft 365.
-ms.openlocfilehash: 00cad52ee04c3799dc3c1ea1b4725203e977a7f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65f48d95a73742a0ba4e5225361ecfb0fbf66c40
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194326"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61423136"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Usar PowerShell para realizar una migración total a Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Puede migrar el contenido de los buzones de usuario de un sistema de correo electrónico de origen Microsoft 365 todo a la vez mediante una migración total. Este artículo le guiará a través de las tareas para una migración total del correo electrónico con Exchange Online PowerShell.
 
 Al revisar el tema, Lo que necesita saber acerca de una migración de correo electrónico a [Microsoft 365,](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration)puede obtener una introducción al proceso de migración. Cuando se sienta cómodo con el contenido de ese artículo, úselo para empezar a migrar los buzones de un sistema de correo electrónico a otro.
 
 > [!NOTE]
-> También puede usar el centro de administración de Exchange para realizar una migración total. Vea [Realizar una migración de correo electrónico](/Exchange/mailbox-migration/cutover-migration-to-office-365)a Microsoft 365 .
+> También puede usar el centro Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración para</a> realizar una migración de recorte. Vea [Realizar una migración de correo electrónico](/Exchange/mailbox-migration/cutover-migration-to-office-365)a Microsoft 365 .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -156,7 +158,6 @@ Get-MigrationBatch | Format-List
 ```
 
 ### <a name="step-4-start-the-cutover-migration-batch"></a>Paso 4: Iniciar el lote de migración total
-<a name="BK_Step4"> </a>
 
 Para iniciar el lote de migración en Exchange Online PowerShell, ejecute el comando siguiente. Esto creará un lote de migración denominado "CutoverBatch".
 
@@ -173,16 +174,14 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>Paso 5: Enrutar el correo electrónico a Microsoft 365
-<a name="BK_Step5"> </a>
 
 Los sistemas de correo electrónico utilizan un registro DNS denominado registro MX para averiguar dónde entregar los correos electrónicos. Durante el proceso de migración del correo electrónico, el registro MX apuntaba al sistema de correo electrónico de origen. Ahora que la migración de correo electrónico Microsoft 365 se ha completado, es el momento de apuntar el registro MX a Microsoft 365. Esto ayuda a asegurarse de que el correo electrónico se entrega a los buzones Microsoft 365 correo electrónico. Al mover el registro MX, también puede desactivar el sistema de correo electrónico antiguo cuando esté listo.
 
 Para muchos proveedores de DNS, hay instrucciones específicas para Cambiar el registro MX. Si su proveedor de DNS no está incluido o si desea hacerse una idea de las orientaciones generales, también ofrecemos las [instrucciones generales de registro MX](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx).
 
-Los sistemas de correo electrónico de sus clientes y socios pueden tardar hasta 72 horas en reconocer el registro MX cambiado. Espere al menos 72 horas antes de continuar con la tarea siguiente: [Paso 6: Eliminar el lote de migración total](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md#Bk_step6).
+Los sistemas de correo electrónico de sus clientes y socios pueden tardar hasta 72 horas en reconocer el registro MX cambiado. Espere al menos 72 horas antes de continuar con la tarea siguiente: [Paso 6: Eliminar el lote de migración total](#step-6-delete-the-cutover-migration-batch).
 
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>Paso 6: Eliminar el lote de migración total
-<a name="Bk_step6"> </a>
 
 Después de cambiar el registro MX y comprobar que todo el correo electrónico se enruta Microsoft 365 buzones de correo, notifique a los usuarios que su correo se va a Microsoft 365. Después, puede eliminar el lote de migración total. Compruebe lo siguiente antes de eliminar el lote de migración.
 
@@ -197,12 +196,10 @@ Remove-MigrationBatch -Identity CutoverBatch
 ```
 
 ### <a name="section-7-assign-user-licenses"></a>Sección 7: Asignar licencias de usuario
-<a name="BK_Step7"> </a>
 
  **Active Microsoft 365 de usuario para las cuentas migradas mediante la asignación de licencias.** Si no asigna una licencia, el buzón se deshabilitará cuando finalice el periodo de gracia (30 días). Para asignar una licencia en el Centro de administración de Microsoft 365, vea [Asignar o desasignación de licencias](../admin/manage/assign-licenses-to-users.md).
 
 ### <a name="step-8-complete-post-migration-tasks"></a>Paso 8: Finalizar las tareas posteriores a la migración
-<a name="BK_Step8"> </a>
 
 - **Cree un registro DNS de Detección automática para que los usuarios puedan acceder fácilmente a sus buzones.** Después de migrar todos los buzones locales a Microsoft 365, puede configurar un registro DNS de detección automática para su organización de Microsoft 365 para permitir a los usuarios conectarse fácilmente a sus nuevos buzones de Microsoft 365 con clientes Outlook y móviles. Este nuevo registro DNS de detección automática debe usar el mismo espacio de nombres que está usando para su Microsoft 365 organización. Por ejemplo, si el espacio de nombres basado en la nube es cloud.contoso.com, el registro DNS de Detección automática que se debe crear es autodiscover.cloud.contoso.com.
 

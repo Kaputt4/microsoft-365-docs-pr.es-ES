@@ -20,12 +20,13 @@ description: Asigne los permisos necesarios para realizar tareas relacionadas co
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 040d47123c789fba7aacc1b120eecdab8a7f210e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 426430f705fa85be440df39c6a40f8872d7024ad
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61106667"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422788"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365
 
@@ -81,7 +82,7 @@ En **la** página Permisos de la Centro de cumplimiento de Microsoft 365, tambi�
 
 En la tabla siguiente se enumeran los roles RBAC relacionados con la exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365 e indica los grupos de roles integrados a los que se asigna cada función de forma predeterminada.
   
-| Función | Administrador de cumplimiento | Administrador de eDiscovery & administrador | Administración de la organización | Reviewer |
+| Role | Administrador de cumplimiento | Administrador de eDiscovery & administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
 |Comunicación <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -199,7 +200,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange no se admiten Microsoft 365 de distribución y grupos de distribución. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell ejecutando `New-DistributionGroup -Type Security` . También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Puede tardar hasta 60 minutos después de crearlo para que un nuevo grupo de seguridad habilitado para correo esté disponible para agregarlo al grupo de roles Administradores de exhibición de documentos electrónicos.
+    Exchange no se admiten Microsoft 365 de distribución y grupos de distribución. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell ejecutando `New-DistributionGroup -Type Security` . También puede crear un grupo de seguridad habilitado para <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a> correo (y agregar miembros) en el centro de administración de Exchange o en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Puede tardar hasta 60 minutos después de crearlo para que un nuevo grupo de seguridad habilitado para correo esté disponible para agregarlo al grupo de roles Administradores de exhibición de documentos electrónicos.
 
     También como se ha indicado anteriormente, no puede convertir un grupo de seguridad habilitado para correo como administrador de exhibición de documentos electrónicos mediante el cmdlet **Add-eDiscoveryCaseAdmin** en PowerShell del Centro de seguridad & cumplimiento. Solo puede agregar usuarios individuales como administradores de exhibición de documentos electrónicos.
 

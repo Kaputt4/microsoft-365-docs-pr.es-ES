@@ -11,6 +11,7 @@ ms.topic: article
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
@@ -22,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5d2fee0e8714e2cff51a2c763caa659bf226adff
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 33970df6b108cd5538f14e7bb6c9c7f235d55ca1
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61240989"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421971"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-content-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de contenido inadecuado para Microsoft Teams, Exchange y Yammer comunicaciones
 
@@ -174,7 +175,7 @@ Deben crear un nuevo grupo para incluir a todos los usuarios de Contoso, por lo 
 
     ![Grupos.](../media/communication-compliance-case-all-employees.png)
 
-3. Una vez creado el nuevo grupo, necesitan agregar todos los usuarios de Contoso al nuevo grupo. Abren el centro **Exchange de administración** [ https://outlook.office365.com/ecp) (](https://outlook.office365.com/ecp) y navegan a **Exchange grupos** de destinatarios del Centro de  >    >  **administración**. Los administradores de TI de Contoso  seleccionan el área Pertenencia y el nuevo grupo Todos los empleados que crearon y seleccionan el **control** Editar para agregar todos los usuarios de Contoso al nuevo grupo en el asistente.
+3. Una vez creado el nuevo grupo, necesitan agregar todos los usuarios de Contoso al nuevo grupo. Abren el centro **Exchange de administración** [ https://outlook.office365.com/ecp) (](https://outlook.office365.com/ecp) y navegan a **Exchange grupos** de destinatarios del Centro de  >    >  <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**administración**</a>. Los administradores de TI de Contoso  seleccionan el área Pertenencia y el nuevo grupo Todos los empleados que crearon y seleccionan el **control** Editar para agregar todos los usuarios de Contoso al nuevo grupo en el asistente.
 
     ![Exchange de administración.](../media/communication-compliance-case-eac.png)
 

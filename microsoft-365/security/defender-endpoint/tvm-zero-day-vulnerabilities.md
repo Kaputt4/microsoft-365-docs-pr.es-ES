@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3a5fe0f04249a5d9573e74fa4f8ad6b81fe5395
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f4a3e227dd43a812bea64e227e315d207eb6fc7b
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167651"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421455"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Mitigar vulnerabilidades de día cero: Administración de amenazas y vulnerabilidades
 
@@ -29,13 +29,13 @@ ms.locfileid: "61167651"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Una vulnerabilidad de día cero es una vulnerabilidad divulgada públicamente para la que no se han publicado revisiones oficiales ni actualizaciones de seguridad. Las vulnerabilidades de día cero suelen tener niveles de gravedad altos y se aprovechan activamente.
+Una vulnerabilidad de día cero es un defecto en el software para el que no se ha publicado ninguna actualización de seguridad o revisión oficial. Un proveedor de software puede o no estar al tanto de la vulnerabilidad y no hay información pública sobre este riesgo disponible. Las vulnerabilidades de día cero suelen tener niveles de gravedad altos y se aprovechan activamente.
 
 Las amenazas administración de vulnerabilidades solo mostrarán vulnerabilidades de día cero de las que tenga información.
 

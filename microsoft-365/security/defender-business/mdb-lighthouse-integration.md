@@ -1,13 +1,13 @@
 ---
-title: Microsoft 365 Lighthouse y Microsoft Defender para empresas
-description: Obtenga información sobre cómo Se integra Microsoft Defender para empresas con Microsoft 365 Lighthouse
+title: Microsoft 365 Lighthouse y Microsoft Defender para empresas (versión preliminar)
+description: Obtenga información sobre cómo Se integra Microsoft Defender para empresas (versión preliminar) con Microsoft 365 Lighthouse
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,28 +16,28 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a801ffd8eb1261c877d8eed4b03c93e247e22e6e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 142092feac4e37871d0bd0ebeb358870e90881ed
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375587"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421887"
 ---
-# <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 Lighthouse y Microsoft Defender para empresas
+# <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business-preview"></a>Microsoft 365 Lighthouse y Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
 
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender para empresas se integra con Microsoft 365 Lighthouse
 
-Si usas Microsoft 365 Lighthouse para administrar la seguridad de pequeñas y medianas empresas, Microsoft Defender para empresas se integra con Microsoft 365 Lighthouse. Con esta integración, puede ver incidentes de seguridad entre inquilinos en su portal de Microsoft 365 Lighthouse ( [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) ). 
+Si usas Microsoft 365 Lighthouse para administrar la seguridad de pequeñas y medianas empresas, Microsoft Defender para empresas (versión preliminar) se integra con Microsoft 365 Lighthouse. Con esta integración, puede ver incidentes de seguridad entre inquilinos en su portal de Microsoft 365 Lighthouse ( [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) ). 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="captura de pantalla de la lista de incidentes en Microsoft 365 Lighthouse":::
 
 Para obtener acceso a la lista de incidentes, en Microsoft 365 Lighthouse, en la página principal, busque la tarjeta Incidentes **de** seguridad y, a continuación, seleccione Ver **todos los incidentes**.
 
 > [!IMPORTANT]
-> Durante la versión preliminar, Microsoft 365 Lighthouse solo extraerá incidentes de seguridad de Defender para empresas cuando se usan con inquilinos de clientes que también tienen Microsoft 365 Empresa Premium.
+> Durante la vista previa, Microsoft 365 Lighthouse solo extraerá incidentes de seguridad de Defender para empresas (versión preliminar) cuando se usan con inquilinos de clientes que también tienen Microsoft 365 Empresa Premium.
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>Obtenga más información sobre Microsoft 365 Lighthouse
 
