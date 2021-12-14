@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 03b1924e32eb1a02842da38655739d8d36ea83ac
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 4fadefe8ae55aff79a749188631e69c9bf263263
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422980"
+ms.locfileid: "61426500"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -206,7 +206,10 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
        New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
-
+   
+> [!NOTE]
+> El identificador de inquilino que escriba como el $sourceTenantId y $targetTenantId es el GUID y no el nombre de dominio del espacio empresarial. Para obtener un ejemplo de un identificador de inquilino e información acerca de cómo encontrar el identificador de inquilino, vea [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id).
+   
 ### <a name="how-do-i-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Puede comprobar la configuración de migración de buzones entre inquilinos ejecutando el cmdlet [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) en el extremo de migración entre inquilinos que creó en el inquilino de destino.

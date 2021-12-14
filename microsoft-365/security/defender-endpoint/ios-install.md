@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4e1952c4760fad75c5aaf0edd39fec259164a1b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c492d106e84eb01d36f26aa9db333ddf9b5db7c5
+ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423524"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61436697"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -79,7 +79,7 @@ Implemente Defender para endpoint en iOS mediante Portal de empresa de Intune.
 
 Los administradores pueden configurar automáticamente el perfil de VPN. Esto configurará automáticamente el perfil de DEFENDER para ENDPOINT VPN sin que el usuario lo haga durante la incorporación. Tenga en cuenta que la VPN se usa para proporcionar la característica de Protección web. No se trata de una VPN normal y es una VPN local o auto-looping que no toma tráfico fuera del dispositivo.
 
-Este paso simplifica el proceso de incorporación configurando el perfil de VPN. Para obtener una experiencia de incorporación silenciosa o sin contacto, consulte la siguiente sección: [Incorporación sin contacto.](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)
+Este paso simplifica el proceso de incorporación configurando el perfil de VPN. Para obtener una experiencia de incorporación silenciosa o sin contacto, consulte la siguiente sección: [Incorporación sin contacto.](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview)
 
 1. En [el Centro de administración de Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a **Perfiles**  ->  **de configuración de dispositivos** Crear  ->  **perfil**.
 1. Elija **Plataforma** como **iOS/iPadOS** y **Tipo de perfil** como **VPN.** Haga clic en **Crear**.
@@ -99,7 +99,12 @@ Este paso simplifica el proceso de incorporación configurando el perfil de VPN.
 1. Haga clic en Siguiente y asigne el perfil a los usuarios de destino.
 1. En la *sección Revisar + Crear,* compruebe que toda la información especificada es correcta y, a continuación, **seleccione Crear**.
 
-## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint"></a>Incorporación sin contacto de Microsoft Defender para endpoint
+## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview"></a>Incorporación sin contacto de Microsoft Defender para endpoint (versión preliminar)
+
+
+> [!IMPORTANT]
+> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+
 
 Los administradores pueden configurar Microsoft Defender para endpoint para implementar y activar de forma silenciosa. En este flujo, simplemente se notifica al usuario de la instalación. Defender for Endpoint se instala automáticamente sin necesidad de que el usuario abra la aplicación. Siga los pasos que se indican a continuación para configurar la implementación silenciosa o táctil de Defender para Endpoint en dispositivos iOS inscritos:
 

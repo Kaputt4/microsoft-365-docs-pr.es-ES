@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05e09bbd07bb8b4d15ce9bb82b64f49b49d88ffd
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 024759362cd2e329655935c784a77a1789603f37
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239965"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426344"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -310,7 +310,7 @@ Los documentos de Office sin cifrar asociados al correo electrónico heredan aut
 
 En Word, PowerPoint y Excel, cuando un usuario aplica una etiqueta de confidencialidad que le permite asignar permisos a un documento, se le pedirá que especifique la elección de usuarios y permisos cuando se aplique el cifrado.
 
-Por ejemplo, con el cliente de etiquetas unificado de Azure Information Protection, los usuarios pueden:
+Por ejemplo, con el cliente de etiquetas unificado de Azure Information Protection, a menos que la [co-autoría esté habilitada](sensitivity-labels-coauthoring.md), los usuarios pueden:
 
 - Seleccionar un nivel de permisos, como Visor (que asigna el permiso de solo vista) o Co-autoría (que asigna los permisos de vista, edición, copia e impresión). 
 - Seleccionar organizaciones, usuarios o grupos. Esto puede incluir usuarios dentro o fuera de su organización.
@@ -318,11 +318,14 @@ Por ejemplo, con el cliente de etiquetas unificado de Azure Information Protecti
 
 ![Opciones de protección para el usuario con permisos personalizados.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-Para las etiquetas integradas, los usuarios verán el mismo cuadro de diálogo si seleccionan lo siguiente:
+Para el etiquetado integrado y para el cliente de etiquetado unificado de Azure Information Protection cuando la [co-autoría está habilitada](sensitivity-labels-coauthoring.md), los usuarios ven el mismo cuadro de diálogo que si seleccionan lo siguiente:
 
 - Windows: pestaña **Archivo** > **Información** > **Proteger documento** > **Restringir accesso** > **Accesso restringido**
 
 - MacOS: pestaña **Revisar** > **Protección** > **Permisos** > **Acceso restringido**
+
+> [!TIP]
+> Si los usuarios estaban familiarizados con la configuración de permisos personalizados con el cliente de etiquetado unificado de Azure Information Protection antes de [habilitar la co-autoría](sensitivity-labels-coauthoring.md), puede resultar útil revisar la asignación de niveles de permisos a derechos de uso individuales: [Derechos incluidos en los niveles de permisos](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Configuraciones de ejemplo para la configuración de cifrado
 

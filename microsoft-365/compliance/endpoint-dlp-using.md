@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 892f151234aee8daee0cac12622d08cd39f27769
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d595e931e364aa04c0e4dd72dc996e1f93c7ab05
+ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372917"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426404"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -43,9 +43,9 @@ O bien
   > [!div class="mx-imgBorder"]
   > ![Configuración DLP](../media/endpoint-dlp-1-using-dlp-settings.png).
 
-### <a name="endpoint-dlp-windows-10-and-macos-settings"></a>Configuración de Windows 10 DLP de punto de conexión y macOS
+### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Configuración de Windows 10/11 DLP de punto de conexión y macOS
 
-|Setting |Windows 10, 1809 y versiones posteriores  |macOS Catalina 10.15 o posterior (versión preliminar)  |Notas  |
+|Setting |Windows 10, 1809 y versiones posteriores, Windows 11  |macOS Catalina 10.15 o posterior (versión preliminar)  |Notas  |
 |---------|---------|---------|---------|
 |Exclusiones de ruta de archivo     |Compatible         |Compatible         |macOS incluye una lista recomendada de exclusiones que está predeterminada          |
 |Aplicaciones no permitidas     |Compatible         |Compatible         |         |
@@ -53,6 +53,9 @@ O bien
 |Restricciones de explorador y dominio a los elementos confidenciales      |Compatible         |Compatible         |         |
 |Configuración adicional para DLP de punto de conexión     |Compatible         |Compatible         |Solo se admiten las justificaciones empresariales predeterminadas para dispositivos macOS         |
 |Auditar siempre la actividad de archivos para dispositivos     |Compatible         |Compatible         |         |
+|Archivo de cuarentena automática de aplicaciones no permitidas | Compatible | No se admite| |
+|Clasificación avanzada | Compatible | No se admite| |
+|Justificaciones empresariales en sugerencias de directivas | Compatible | Compatible| |
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Escaneo y protección de clasificación avanzada
 
@@ -139,6 +142,7 @@ Al igual que los dispositivos Windows, ahora podrá impedir que las aplicaciones
 > Tenga en cuenta que las aplicaciones entre plataformas deben especificarse con sus rutas de acceso únicas respectivas al sistema operativo en el que se ejecutan.
 
 Para encontrar la ruta de acceso completa de las aplicaciones de Mac:
+
 1. En el dispositivo macOS, abra **Monitor de actividad**. Buscar y hacer doble clic en el proceso que desea restringir
 
 2. Elija la pestaña **Abrir Archivos y Puertos**.
@@ -169,7 +173,15 @@ Restrinja el uso compartido de los archivos confidenciales que coincidan con las
 
 #### <a name="unallowed-browsers"></a>Exploradores no permitidos
 
-Agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
+Para los dispositivos de Windows, agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Microsoft Edge.
+
+Para dispositivos macOS, debe agregar la ruta de acceso de archivo completa. Para encontrar la ruta de acceso completa de las aplicaciones de Mac:
+
+1. En el dispositivo macOS, abra **Monitor de actividad**. Buscar y hacer doble clic en el proceso que desea restringir
+
+2. Elija la pestaña **Abrir Archivos y Puertos**.
+  
+3. El nombre de la aplicación se encuentra al final de la ruta de acceso completa.
 
 #### <a name="service-domains"></a>Dominios de servicio
 
@@ -220,7 +232,7 @@ La actividad de archivo se auditará siempre en los dispositivos integrados, ind
 
 Con la DLP de los puntos de conexión y el Explorador web Edge Chromium, puede restringir el uso compartido no intencionado de elementos confidenciales a las aplicaciones y servicios en la nube no permitidos. Edge Chromium comprende cuándo un elemento está restringido por una directiva DLP de los puntos de conexión y aplica las restricciones de acceso.
 
-Cuando usa la DLP de los puntos de conexión como una ubicación en una directiva DLP configurada correctamente y en el explorador Edge Chromium, los exploradores no permitidos que haya definido en esta configuración no tendrán acceso a los elementos confidenciales que coincidan con los controles de la directiva DLP. En su lugar, se redirigirá a los usuarios para que usen Edge Chromium que, con su comprensión de las restricciones impuestas por DLP, puede bloquear o restringir las actividades cuando se cumplan las condiciones de la directiva DLP.
+Cuando usa la DLP de los puntos de conexión como una ubicación en una directiva DLP configurada correctamente y en el explorador Microsoft Edge, los exploradores no permitidos que haya definido en esta configuración no tendrán acceso a los elementos confidenciales que coincidan con los controles de la directiva DLP. En su lugar, se redirigirá a los usuarios para que usen Microsoft Edge que, con su comprensión de las restricciones impuestas por DLP, puede bloquear o restringir las actividades cuando se cumplan las condiciones de la directiva DLP.
 
 Para usar esta restricción, tendrá que configurar tres partes importantes:
 
