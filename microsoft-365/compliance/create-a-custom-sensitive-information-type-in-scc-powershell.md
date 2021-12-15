@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: 4139a7cd8f2a87bf8db25e9b23201132e321b31d
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a8a085d29ee3d4552091e11d154900a79de7b45e
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422572"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507319"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -307,7 +307,7 @@ Además del atributo confidenceLevel de cada elemento Pattern, el elemento Entit
 
 Si el equipo de cumplimiento usa el Centro de cumplimiento de Microsoft 365 para crear directivas en distintas configuraciones regionales y diferentes idiomas, puede proporcionar versiones localizadas del nombre y la descripción del tipo de información confidencial personalizado. Cuando el equipo de cumplimiento use Microsoft 365 en un idioma admitido, verán el nombre localizado en la interfaz de usuario.
   
-![Opciones de recuento de instancias y precisión de coincidencia.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Recuento de instancias y configuración de precisión de coincidencia.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 El elemento Rules necesita contener un elemento LocalizedStrings, que contiene un elemento Resource que hace referencia al GUID de la entidad personalizada. A su vez, cada elemento Resource contiene uno o más elementos Name y Description, y cada uno usa el atributo langcode para especificar una cadena localizada para un idioma específico.
   
@@ -487,8 +487,8 @@ Para cargar un paquete de reglas, siga este procedimiento:
 Al cargar un archivo XML de paquete de reglas, el sistema valida el código XML y comprueba si hay patrones incorrectos conocidos y problemas de rendimiento obvios. Estos son algunos de los problemas conocidos (la validación comprueba las expresiones regulares):
   
 - Las aserciones lookbehind o lookahead en la expresión regular deben ser de longitud fija solamente. Las aserciones de longitud variable producirán errores.
-    
-  Por ejemplo, "(?<=^|\s| )" no pasará la validación porque la primera opción de esta es '^' que es de longitud cero mientras que las opciones de _tow ('\s'_ y ' ') son de longitud uno. Una forma alternativa de tener esta expresión regular es "(?:^| (?<=\s|_)"
+
+    Por ejemplo, esta expresión regex no pasará la validación porque la primera opción de esta es que tiene una longitud cero mientras que las dos siguientes opciones y `"(?<=^|\s|_)"`  tienen una longitud de `^` `\s` `_` una.  Una forma alternativa de escribir esta expresión regular para que se valide es `"(?:^|(?<=\s|_))"` .
   
 - No puede empezar ni terminar con el alternador "|", que coincide con todo, ya que se considera una coincidencia vacía.
     

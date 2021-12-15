@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3c9ce07007d67c3a65acec607056cc8a5bb965e0
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 42cd947dec6e954ae675cda233dc4126c2bb2b39
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423052"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507439"
 ---
 # <a name="compare-microsoft-defender-for-business-preview-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para empresas (versión preliminar) con Microsoft 365 Empresa Premium
 
 > [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, incluidos varios planes diferentes para pequeñas y medianas empresas. Por ejemplo, [Microsoft 365 Empresa Premium](../../business/microsoft-365-business-overview.md) funciones de administración de dispositivos y seguridad, junto con características de productividad, como Office aplicaciones. 
 
@@ -89,7 +91,7 @@ Defender para empresas (versión preliminar) ofrece funcionalidades de grado emp
 
 (<a id="fn3">3</a>) Durante el programa de vista previa, Windows dispositivos cliente se admiten en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulta los requisitos de Microsoft Defender para empresas (versión preliminar)](mdb-requirements.md)
 

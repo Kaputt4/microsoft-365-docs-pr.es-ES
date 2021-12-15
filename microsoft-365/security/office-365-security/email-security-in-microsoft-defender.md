@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9eb12db41e48fce814c2c0cb1c934d3fa388086f
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 38bf13f02a1641147a6b76ba381afb6f0e282892
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962872"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507303"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Seguridad de correo electrónico con el Explorador de amenazas en Microsoft Defender para Office 365
 
@@ -64,6 +64,23 @@ Para ver el malware detectado en el correo electrónico ordenado Microsoft 365 t
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="tecnología de detección seleccionada.":::
 
    El informe se actualiza para mostrar los resultados que el malware detectó en el correo electrónico, mediante la opción de tecnología seleccionada. Desde aquí, puede realizar más análisis.
+
+### <a name="report-a-message-as-clean-in-explorer"></a>Notificar un mensaje como limpio en el Explorador
+
+Puede usar la opción **Informe limpio** en el Explorador para notificar un mensaje como falso positivo. 
+
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico & explorador de colaboración y, **a** continuación, en la lista desplegable Ver, compruebe que \>  **la suplantación** de identidad está seleccionada. 
+
+2. Compruebe que está en  la pestaña Correo electrónico y, a continuación, en la lista de mensajes notificados, seleccione el que desea informar como limpio. 
+
+3. Haga **clic en** Acciones para expandir la lista de opciones.
+
+4. Desplácese hacia abajo en la lista de opciones para ir a la **sección Iniciar nuevo envío** y, a continuación, seleccione Informe **limpio**. Aparece un desplegable.
+
+   > [!div class="mx-imgBorder"]
+   > ![Opción Informar de limpieza en el Explorador.](../../media/report-clean-option-explorer.png) 
+
+5. Alterna el control deslizante a **On**. En la lista desplegable, especifique el número de días que desea que se quite el mensaje, agregue una nota si es necesario y, a continuación, **seleccione Enviar**. 
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Ver la dirección URL de suplantación de identidad (phishing) y hacer clic en datos de veredicto
 

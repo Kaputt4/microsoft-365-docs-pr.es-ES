@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a79b9591a8954cd6609faedc816adbc469e66dee
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 49303198f14bada675dd7acec987557427f33377
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423016"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61508268"
 ---
 # <a name="get-microsoft-defender-for-business-preview"></a>Obtener Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 Microsoft Defender para empresas (versión preliminar) está disponible en versión preliminar. Participar en el programa de vista previa te permite probar Defender para empresas antes de que esté disponible en general. El programa de vista previa está disponible para:
 
@@ -58,7 +60,7 @@ Si se te acepta, el correo electrónico contendrá un código de licencia que us
 > Si es socio, después de haber sido aceptado en el programa de vista previa, debe hacer que cada cliente complete el proceso descrito en la sección Registrarse para el programa [de vista previa](#sign-up-for-the-preview-program). Asegúrese de que el cliente especifica el nombre del partner de Microsoft en el **cuadro** Otros.
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulta el proceso de configuración y configuración de Microsoft Defender para empresas (versión preliminar)](mdb-setup-configuration.md)
 

@@ -21,13 +21,14 @@ ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
-ms.openlocfilehash: 1e92c3c8a4c19aa33124b930574f9646ac5bfabe
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 33bbb0987779f7810d797d7cb5a6255c32c34c75
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374309"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422344"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
@@ -38,7 +39,7 @@ El archivado en Microsoft 365 (también llamado *archivado local*) proporciona a
 
 ## <a name="get-the-necessary-permissions"></a>Obtener los permisos necesarios
 
-Debe tener asignado el rol de Destinatarios de correo de Exchange Online para habilitar o deshabilitar los buzones de archivo. De manera predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en la página **Permisos** del centro de administración de Exchange. Si no ve la página **Archivo** en el Centro de cumplimiento de Microsoft 365, pida al administrador que le asigne los permisos necesarios.
+Debe tener asignado el rol de Destinatarios de correo de Exchange Online para habilitar o deshabilitar los buzones de archivo. De forma predeterminada, este rol se asigna a los grupos de roles Administración de destinatarios y Administración de la organización en la página **Permisos** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Si no ve la página **Archivo** en el Centro de cumplimiento de Microsoft 365, pida al administrador que le asigne los permisos necesarios.
 
 ## <a name="enable-an-archive-mailbox"></a>Habilitación de un buzón de archivo
 

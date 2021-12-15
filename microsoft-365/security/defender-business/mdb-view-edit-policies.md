@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 482d29f84675c7e2c4213498ff2e513280b84cb6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: aed09fd10f3381b4d167ea31e303fc2cbce7e8f3
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421095"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61508340"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>Ver o editar directivas en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 En Microsoft Defender para empresas (versión preliminar), la configuración de seguridad se configura mediante directivas. Hay dos tipos principales de directivas en Defender para empresas (versión preliminar):
 
@@ -85,7 +87,7 @@ En Microsoft Defender para empresas (versión preliminar), la configuración de 
    - Cuando esté listo para continuar, elija **Actualizar directiva**.
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Elija una o varias de las siguientes tareas:
 

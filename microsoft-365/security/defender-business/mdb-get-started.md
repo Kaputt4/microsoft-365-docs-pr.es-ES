@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5370a820a912b382ff23a8533d64ae88b182cb04
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 3762afe07c045649211197b188e5c4eef035018c
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421851"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61506706"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Introducción al uso de Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 Una vez completado el proceso de configuración y configuración para su empresa, la mejor manera de empezar a usar Microsoft Defender para empresas (versión preliminar) es visitando su portal de Microsoft 365 Defender ( ) y iniciando sesión con su cuenta de usuario para [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365. 
 
@@ -42,7 +44,7 @@ Tómese un momento para familiarizarse con su Microsoft 365 Defender portal.
 
 Use la barra de navegación de la parte izquierda de la pantalla para obtener acceso a los incidentes, ver informes y administrar las directivas y la configuración de seguridad. En la tabla siguiente se describen los elementos que verá en la barra de navegación.
 
-| Item | Descripción |
+| Item | Description |
 |:---|:---|
 | **Inicio** | Te lleva a la página principal en Microsoft 365 Defender. La página principal incluye tarjetas que resaltan las amenazas activas que se detectaron, junto con recomendaciones para ayudar a proteger los datos y dispositivos de la empresa. <br/><br/>Recomendaciones se incluyen en Defender for Business (versión preliminar) puede ahorrar tiempo y esfuerzo al equipo de seguridad. Recomendaciones se basan en los procedimientos recomendados del sector. Para obtener más información sobre las recomendaciones, vea [Security recommendations - Administración de amenazas y vulnerabilidades](../defender-endpoint/tvm-security-recommendation.md). |
 | **Incidentes** | Le lleva a la lista de incidentes recientes. A medida que se desencadenan las alertas, se crean incidentes. Un incidente puede incluir varias alertas. Asegúrese de revisar los incidentes con regularidad. <br/><br/>Para obtener más información acerca de los incidentes, vea Ver y administrar incidentes [en Microsoft Defender para empresas (versión preliminar).](mdb-view-manage-incidents.md)|
@@ -68,7 +70,7 @@ Vea el módulo de aprendizaje, [Detectar y responder a problemas de seguridad,](
 > [!NOTE]
 > Aunque el módulo de aprendizaje[(](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)Detectar y responder a problemas de seguridad ) es realmente para Microsoft Defender para Endpoint, los conceptos básicos y el flujo general son similares a lo que verá en Defender para empresas (versión preliminar).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que tienes una introducción a Defender para empresas (versión preliminar), prueba una o varias de las siguientes tareas:
 

@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   audience: Admin
   ms.topic: overview
-  ms.date: 12/10/2021
+  ms.date: 12/13/2021
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -17,15 +17,14 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: e5943399452b07f7e0a2a03c1ae6b6242e859d2e
-  ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+  ms.openlocfilehash: cbeb8bf616cad027265e7f5bc6df10ac04d22277
+  ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/13/2021
-  ms.locfileid: "61422080"
+  ms.lasthandoff: 12/14/2021
+  ms.locfileid: "61506730"
 title: Solución de problemas de Microsoft Defender para empresas (versión preliminar)
-summary: >
-  Use este artículo como guía para resolver problemas que puedan surgir en Microsoft Defender para empresas (versión preliminar).
+summary: "Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.\n\nParte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí.\n\nUse este artículo como guía para resolver problemas que puedan surgir en Microsoft Defender para empresas (versión preliminar). \n"
 sections:
 - name: General
   questions:
@@ -38,7 +37,7 @@ sections:
   - question: Algo salió mal con los dispositivos de incorporación en el portal Microsoft 365 Defender web
     answer: "\nAl incorporar dispositivos en el portal de Microsoft 365 Defender ( ), es posible que algo haya salido mal y se muestre un mensaje [https://security.microsoft.com](https://security.microsoft.com) de error. En concreto, este problema puede producirse si estás incorporando dispositivos con un paquete de incorporación descargable para Microsoft Endpoint Manager, directiva de grupo, System Center Configuration Manager o administración de dispositivos móviles en Defender para empresas (versión preliminar). \n\nMicrosoft Defender para empresas (versión preliminar) usa una funcionalidad denominada Administración de *seguridad para Microsoft Defender para endpoint*. Si se produce un error en la incorporación en Defender para empresas (versión preliminar), lo más probable es que la causa tenga que ver con administración de seguridad para Defender para endpoint. Para resolver el problema, consulte los artículos siguientes:\n\n- [Solucionar problemas de incorporación relacionados con administración de seguridad para Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)\n\n- [Ejecute Microsoft Defender para Endpoint Client Analyzer en Windows](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)\n"
 additionalContent: >-
-  ## <a name="see-also"></a>Consulte también
+  ## <a name="see-also"></a>Vea también
 
 
   - [Microsoft Defender para empresas (versión preliminar): preguntas y respuestas más frecuentes](mdb-faq.yml)

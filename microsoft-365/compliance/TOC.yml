@@ -541,6 +541,8 @@
               href: archive-rogers-network-archiver-data.md
             - name: Archivador de Signal
               href: archive-signal-archiver-data.md
+            - name: Archivador de red de StarHub (versión preliminar)
+              href: archive-starhub-network-archiver-data.md
             - name: Archivador de Telegram
               href: archive-telegram-archiver-data.md
             - name: Red TELUS

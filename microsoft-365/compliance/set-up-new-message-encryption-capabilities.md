@@ -20,12 +20,13 @@ description: Obtenga más información sobre las nuevas funcionalidades de cifra
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: d76b350736ead1620f2dc52bfed607ec2c9f7893
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+- admindeeplinkEXCHANGE
+ms.openlocfilehash: 006bef8a78a50e3cc47bfcfe7910621a3fa9ef85
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188102"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422992"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
 
@@ -125,7 +126,7 @@ Para conocer los pasos para crear reglas de flujo de correo para OME, vea [Defin
 
 Para actualizar las reglas existentes para poder usar las nuevas funcionalidades de OME:
 
-1. En el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), vaya a **Centros de administración > Exchange**.
+1. En el Centro de administración de Microsoft 365, vaya a **Centros de administración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 2. En el centro de administración de Exchange, vaya a **Flujo de correo > Reglas**.
 3. Para cada regla, en **Hacer lo siguiente**:
     - Seleccione **Modificar la seguridad de los mensajes**.

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 8f36d64b14dccdb445f1c4115811f571b55e49b8
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 18b259278f7f6053cdd7629eea114c3f61c82bb0
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423256"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61508352"
 ---
 # <a name="configure-your-security-settings-and-policies-in-microsoft-defender-for-business-preview"></a>Configurar las directivas y las opciones de seguridad en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 Después de incorporar los dispositivos de la empresa a Microsoft Defender para empresas (versión preliminar), el siguiente paso es ver y, si es necesario, editar la configuración de seguridad y las directivas. 
 
@@ -60,7 +62,7 @@ Para ver la configuración de seguridad y las directivas, use uno de los procedi
 | Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) | 1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión. <br/><br/>2. En el panel de navegación, elija **Configuración del dispositivo**. Las directivas se organizan por sistema operativo y tipo de directiva.<br/><br/>3. Seleccione una pestaña del sistema operativo (por **ejemplo, Windows clientes**).<br/><br/>4. Expanda una categoría (como Protección de **última** generación o **Firewall)** para ver la lista de directivas.<br/><br/>5. Seleccione una directiva para ver más detalles sobre la directiva. Para realizar cambios o obtener más información sobre la configuración de directivas, consulte los artículos siguientes: <br/>- [Ver o editar directivas de dispositivos](mdb-view-edit-policies.md)<br/>- [Comprender las opciones de configuración de próxima generación](mdb-next-gen-configuration-settings.md)<br/>- [Configuración del firewall](mdb-firewall.md)  |
 | Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) | 1. Vaya a [https://endpoint.microsoft.com](https://endpoint.microsoft.com) e inicie sesión. Ahora estás en el Centro de administración Microsoft Endpoint Manager administración.<br/><br/>2. Seleccione Seguridad **del extremo**.<br/><br/>3. Seleccione una categoría, como **Antivirus,** **Firewall,** Detección y respuesta de extremos **o** **Reducción** de superficie de ataque para ver las directivas de esa categoría. <br/><br/>Para obtener ayuda para administrar la configuración de seguridad en Microsoft Endpoint Manager, empiece por Administrar la seguridad de puntos de conexión [en Microsoft Intune](/mem/intune/protect/endpoint-security). |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con una o varias de las siguientes tareas:
 

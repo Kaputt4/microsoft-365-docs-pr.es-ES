@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: e1c46f89a9a1a8d354facbc6c3f1d095e42b3f5e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4094df4d465256475e09f8bbaf706c90bbebe34e
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373769"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61422332"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -42,17 +42,17 @@ Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para super
 
 Microsoft DLP para punto de conexión permite auditar y administrar los siguientes tipos de actividades que los usuarios realizan en elementos confidenciales almacenados físicamente en dispositivos Windows 10, Windows 11 y macOS.
 
-|Actividad |Descripción  | Auditable/restringible|
-|---------|---------|---------|
-|cargar en el servicio en la nube o acceso por exploradores no permitidos    | Detecta cuándo un usuario intenta cargar un elemento en un dominio de servicio restringido o tener acceso a un elemento con un explorador.  Si usa un explorador que se muestra en DLP como un explorador que no es el permitido, la actividad de carga se bloqueará y se redirigirá al usuario para usar la arista de cromo. Por último, cromo puede permitir o bloquear la carga o el acceso en función de la configuración de la Directiva DLP.         |auditable y restringible|
-|copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. Esta actividad no detecta la copia y el pegado de información dentro de la misma aplicación, proceso o elemento.         | auditable y restringible|
-|copiar en un medio extraíble USB |Detecta cuando un usuario intenta copiar un elemento o información en un medio extraíble o un dispositivo USB.         | auditable y restringible|
-|Copiar en un recurso compartido de red    |Detecta cuando un usuario intenta copiar un elemento en un recurso compartido de red o en una unidad de red asignada         |auditable y restringible|
-|imprimir un documento    |Detecta cuando un usuario intenta imprimir un elemento protegido en una impresora local o de red.| auditable y restringible         |
-|copiar a una sesión remota|Detecta cuando un usuario intenta copiar un elemento a una sesión de escritorio remoto |  auditable y restringible|
-|copiar en un dispositivo Bluetooth|Detecta cuando un usuario intenta copiar un elemento en una aplicación Bluetooth no permitida (según se define en la lista de aplicaciones de Bluetooth no permitidas en la configuración del punto de conexión DLP).| auditable y restringible|
-|crear un elemento|Detecta cuándo un usuario crea un elemento| auditable|
-|cambiar el nombre de un elemento|Detecta cuando un usuario cambia el nombre de un elemento| auditable|
+|Actividad |Descripción  |Windows 10 1809 y versiones posteriores/Windows 11| macOS Catalina 10.15 (versión preliminar) | Auditable/restringible|
+|---------|---------|---------|---------|---------|
+|cargar en el servicio en la nube o acceso por exploradores no permitidos    | Detecta cuándo un usuario intenta cargar un elemento en un dominio de servicio restringido o tener acceso a un elemento con un explorador.  Si usa un explorador que se muestra en DLP como un explorador que no es el permitido, la actividad de carga se bloqueará y se redirigirá al usuario para usar la arista de Microsoft Edge. Por último, Microsoft Edge puede permitir o bloquear la carga o el acceso en función de la configuración de la directiva DLP.         |compatible | compatible|auditable y restringible|
+|copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. Esta actividad no detecta la copia y el pegado de información dentro de la misma aplicación, proceso o elemento.|compatible|compatible         | auditable y restringible|
+|copiar en un medio extraíble USB |Detecta cuando un usuario intenta copiar un elemento o información en un medio extraíble o un dispositivo USB.|compatible|compatible         | auditable y restringible|
+|Copiar en un recurso compartido de red    |Detecta cuando un usuario intenta copiar un elemento en un recurso compartido de red o en una unidad de red asignada |compatible|compatible         |auditable y restringible|
+|imprimir un documento    |Detecta cuando un usuario intenta imprimir un elemento protegido en una impresora local o de red.|compatible|compatible|auditable y restringible         |
+|copiar a una sesión remota|Detecta cuando un usuario intenta copiar un elemento a una sesión de escritorio remoto |compatible|no compatible|  auditable y restringible|
+|copiar en un dispositivo Bluetooth|Detecta cuando un usuario intenta copiar un elemento en una aplicación Bluetooth no permitida (según se define en la lista de aplicaciones de Bluetooth no permitidas en la configuración del punto de conexión DLP).|compatible|no compatible| auditable y restringible|
+|crear un elemento|Detecta cuándo un usuario crea un elemento|compatible | |auditable|
+|cambiar el nombre de un elemento|Detecta cuando un usuario cambia el nombre de un elemento|compatible | |auditable|
 
 ## <a name="monitored-files"></a>Archivos supervisados
 

@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ff1a50a0ba04880680e663d1f960d3f10582d628
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 8f1f1f9f3879b7e44f7c718b026d3daba55d7c62
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423472"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507361"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Tutoriales y simulaciones en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 Si acaba de terminar de configurar Microsoft Defender para empresas (versión preliminar), puede que se pregunte dónde empezar a aprender sobre cómo funciona Defender for Business (versión preliminar). En este artículo se describen los escenarios de vista previa que se van a probar y varios tutoriales y simulaciones que están disponibles para Defender para empresas (versión preliminar). Estos recursos están diseñados para ayudarle a ver cómo Defender para empresas (versión preliminar) puede funcionar para su empresa.
 
@@ -51,7 +53,7 @@ En la tabla siguiente se describen los tutoriales recomendados para clientes de 
 <br/><br/>
 
 
-| Tutorial  | Descripción  |
+| Tutorial  | Description  |
 |---------|---------|
 | **El documento deja atrás la puerta trasera**     | Simular un ataque que introduce malware basado en archivos en un dispositivo de prueba. En el tutorial se describe cómo obtener y usar el archivo de simulación y qué se debe buscar en el portal Microsoft 365 Defender simulación. <br/><br/>Este tutorial requiere Microsoft Word instalar en el dispositivo de prueba.   |
 | **Tutorial de respuesta en directo**     | Aprende a usar comandos básicos y avanzados con Live Response. Obtén información sobre cómo localizar un archivo sospechoso, corregir el archivo y recopilar información en un dispositivo.   |
@@ -74,7 +76,7 @@ Cada tutorial incluye un documento de tutorial que explica el escenario, cómo f
    - **Tutorial de respuesta en directo**
    - **Administración & vulnerabilidad de amenazas (escenarios principales)**
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)](mdb-manage-devices.md)
 

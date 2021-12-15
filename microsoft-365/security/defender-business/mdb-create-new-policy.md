@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,20 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 663ecf1b998658829e604fd5c9160b4bf0cd09ae
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: aaeb816b833a15e5ea7bf5d7577b062f8b5dbc6b
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421107"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61508282"
 ---
 # <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>Crear una nueva directiva en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
+
 
 Microsoft Defender para empresas (versión preliminar) incluye directivas predeterminadas que usan la configuración recomendada para proteger los dispositivos de la empresa desde el primer día. Por ejemplo, tiene directivas de protección **de** última generación y directivas de **firewall** integradas con la configuración de seguridad recomendada. Pero no está limitado a las directivas predeterminadas. También puede crear nuevas directivas, como se describe en este artículo.
 
@@ -65,7 +68,7 @@ Microsoft Defender para empresas (versión preliminar) incluye directivas predet
    - Realice los cambios necesarios seleccionando **Editar**.
    - Cuando esté listo para continuar, elija **Crear directiva**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Elija una o varias de las siguientes tareas:
 

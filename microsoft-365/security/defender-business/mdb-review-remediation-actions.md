@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 314bb913a161e21ef61c09568cd87aad61ccd10e
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0b71088421b71f117eff4521eee1d8f5ef87971a
+ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421875"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "61507385"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Revisar acciones de corrección en el Centro de acciones
 
 > [!IMPORTANT]
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. En este artículo se incluyen vínculos al contenido en línea que podrían describir algunas características que no se incluyen en Microsoft Defender para empresas (versión preliminar).
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> 
+> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 A medida que se detectan las amenazas, las acciones de corrección se reproducen. Según la amenaza en particular y la configuración de la configuración de seguridad, las acciones de corrección pueden realizarse automáticamente o solo después de su aprobación. Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo a la cuarentena, la detención de la ejecución de un proceso y la eliminación de una tarea programada. Todas las acciones de corrección se realiza un seguimiento en el Centro de acciones.
 
@@ -59,7 +61,7 @@ En la tabla siguiente se enumeran las acciones de corrección disponibles:
 | [Acciones de respuesta manuales](../defender-endpoint/respond-machine-alerts.md)   | - Ejecutar examen antivirus <br/>- Aislar dispositivo <br/>- Detener y poner en cuarentena <br/>- Agregar un indicador para bloquear o permitir un archivo       |
 | [Respuesta en directo](../defender-endpoint/live-response.md)   | - Recopilar datos forenses <br/>- Analizar un archivo <br/>- Ejecutar un script <br/>- Enviar una entidad sospechosa a Microsoft para su análisis <br/>- Corregir un archivo <br/>- Búsqueda proactiva de amenazas         |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
 

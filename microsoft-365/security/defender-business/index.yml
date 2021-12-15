@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Microsoft Defender para empresas
-summary: Documentación de Microsoft Defender para empresas
+title: Microsoft Defender para Empresas
+summary: Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán para solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un conjunto inicial de escenarios y agregaremos funcionalidades con regularidad.
 metadata:
   title: Documentación de Microsoft Defender para empresas
   description: Obtener información general y de configuración para Microsoft Defender para empresas
@@ -12,13 +12,13 @@ metadata:
   - M365-security-compliance
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 12/08/2021
-  ms.openlocfilehash: 882536032df80721881c27f87d99c606063c35f0
-  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  ms.date: 12/13/2021
+  ms.openlocfilehash: 4b6e48f130b3cf89d097b552f8d536df989a867e
+  ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/09/2021
-  ms.locfileid: "61375611"
+  ms.lasthandoff: 12/14/2021
+  ms.locfileid: "61508315"
 landingContent:
 - title: Información general
   linkLists:
@@ -98,7 +98,7 @@ landingContent:
     links:
     - text: Cómo obtener ayuda o ponerse en contacto con el soporte técnico
       url: mdb-get-help.md
-    - text: Preguntas más frecuentes
+    - text: Preguntas frecuentes
       url: mdb-faq.yml
     - text: Solución de problemas
       url: mdb-troubleshooting.yml
