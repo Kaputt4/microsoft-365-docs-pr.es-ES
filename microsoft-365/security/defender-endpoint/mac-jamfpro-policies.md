@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fbd57bb648c2d1d4c1ed08ae4abaa12e834cea04
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 093b8235c1b6506c7df1c8d21c52e40129c9d5cd
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171562"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530240"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -30,8 +30,8 @@ ms.locfileid: "61171562"
 
 **Se aplica a:**
 - [Defender para endpoint en Mac](microsoft-defender-endpoint-mac.md)
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Esta página le guiará a través de los pasos que debe seguir para configurar directivas de macOS en Jamf Pro.
 
@@ -51,7 +51,7 @@ Deberá seguir los pasos siguientes:
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Paso 1: Obtener el paquete de incorporación de Microsoft Defender para endpoint
 
-1. En [Centro de seguridad de Microsoft Defender](https://securitycenter.microsoft.com), vaya **a Configuración > Onboarding**.
+1. En [Microsoft 365 Defender](https://security.microsoft.com), vaya **a Configuración > Onboarding**.
 
 2. Seleccione macOS como sistema operativo y Administración de dispositivos móviles /Microsoft Intune como método de implementación.
 
@@ -209,7 +209,7 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     - archive_bomb
     - cloudService
     - automaticSampleSubmission
-    - tags
+    - etiquetas
     - hideStatusMenuIcon
 
      Para obtener información, vea [Lista de propiedades para el perfil de configuración completa de JAMF](mac-preferences.md#property-list-for-jamf-full-configuration-profile).

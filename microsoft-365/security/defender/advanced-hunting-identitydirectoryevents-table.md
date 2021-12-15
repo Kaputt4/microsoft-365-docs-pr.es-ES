@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1254fd3396db7a4df9b5c5cb81a0b5f13dc6f2d9
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b7d880e0865ebeaf09e40fc543abba37566d2081
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704368"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531815"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -31,40 +31,40 @@ ms.locfileid: "60704368"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La tabla del esquema de búsqueda avanzada contiene eventos que implican un controlador de `IdentityDirectoryEvents` dominio local que ejecuta Active Directory (AD). [](advanced-hunting-overview.md) Esta tabla captura varios eventos relacionados con la identidad, como cambios de contraseña, expiración de contraseña y cambios de nombre principal de usuario (UPN). También captura eventos del sistema en el controlador de dominio, como la programación de tareas y la actividad de PowerShell. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad.
+> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en Defender para la nube.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
-| `Application` | string | Aplicación que realizó la acción grabada |
-| `TargetAccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |
-| `TargetAccountDisplayName` | cadena | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
-| `TargetDeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
-| `DestinationDeviceName` | cadena | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationPort` | cadena | Puerto de destino de la actividad |
-| `Protocol` | cadena | Protocolo usado durante la comunicación |
-| `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountDomain` | cadena | Dominio de la cuenta |
-| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
-| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
-| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure Active Directory |
-| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
-| `IPAddress` | string | Dirección IP asignada al dispositivo durante la comunicación |
-| `Port` | cadena | Puerto TCP usado durante la comunicación |
-| `Location` | cadena | Ciudad, país u otra ubicación geográfica asociada al evento |
-| `ISP` | cadena | Proveedor de servicios de Internet asociado con la dirección IP |
-| `ReportId` | largo | Identificador único del evento |
-| `AdditionalFields` | string | Información adicional sobre la entidad o el evento |
+| `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
+| `ActionType` | `string` | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
+| `Application` | `string` | Aplicación que realizó la acción grabada |
+| `TargetAccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |
+| `TargetAccountDisplayName` | `string` | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
+| `TargetDeviceName` | `string` | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
+| `DestinationDeviceName` | `string` | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationIPAddress` | `string` | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationPort` | `string` | Puerto de destino de la actividad |
+| `Protocol` | `string` | Protocolo usado durante la comunicación |
+| `AccountName` | `string` | Nombre de usuario de la cuenta |
+| `AccountDomain` | `string` | Dominio de la cuenta |
+| `AccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta |
+| `AccountSid` | `string` | Identificador de seguridad (SID) de la cuenta |
+| `AccountObjectId` | `string` | Identificador único de la cuenta en Azure Active Directory |
+| `AccountDisplayName` | `string` | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `DeviceName` | `string` | Nombre de dominio completo (FQDN) del dispositivo |
+| `IPAddress` | `string` | Dirección IP asignada al dispositivo durante la comunicación |
+| `Port` | `string` | Puerto TCP usado durante la comunicación |
+| `Location` | `string` | Ciudad, país u otra ubicación geográfica asociada al evento |
+| `ISP` | `string` | Proveedor de servicios de Internet asociado con la dirección IP |
+| `ReportId` | `long` | Identificador único del evento |
+| `AdditionalFields` | `string` | Información adicional sobre la entidad o el evento |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

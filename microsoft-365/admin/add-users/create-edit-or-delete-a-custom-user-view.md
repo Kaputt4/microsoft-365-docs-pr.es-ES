@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Aprenda a usar filtros para crear, editar o eliminar la vista de usuario personalizada en Microsoft 365.
-ms.openlocfilehash: 74c5e15e8d7735edcba145ea9b10a6bec7e7def7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 479f6c566cea407e75c6fb14f76db418c127aeb4
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370289"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530192"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Crear, editar o eliminar una vista de usuario personalizada
 
@@ -118,7 +118,7 @@ También puede filtrar por detalles de perfil de usuario adicionales usados en s
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Overview of the Centro de administración de Microsoft 365]([Overview of the Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) (video)\
+[Overview of the Centro de administración de Microsoft 365](Overview of the Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md) (vídeo)\
 [Acerca de los roles de administrador](../add-users/about-admin-roles.md) (vídeo)\
 [Personalizar el tema Microsoft 365 para la sua organización (artículo)](../setup/customize-your-organization-theme.md)
 

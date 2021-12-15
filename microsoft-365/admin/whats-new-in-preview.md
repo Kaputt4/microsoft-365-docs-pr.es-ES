@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centro de administración de Microsoft 365- learn about the features that were added this month.
-ms.openlocfilehash: d2573180fd254063da5450acbdeeb78aa99d6367
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7d01786878c9bb87347d9207b0863593842e526b
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422776"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531914"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades de la Centro de administración de Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "61422776"
 
 ::: moniker-end
 
-Estamos agregando continuamente nuevas características a [el Centro de administración de Microsoft 365]( Información general sobre la[Centro de administración de Microsoft 365,](admin-overview/admin-center-overview.md)solucionar problemas que aprendemos y realizar cambios en función de sus comentarios. Echa un vistazo a continuación para ver lo que está disponible para ti hoy. Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, intente agregarse a [la versión dirigida](manage/release-options-in-office-365.md).
+Estamos agregando continuamente nuevas características a [el Centro de administración de Microsoft 365](Información general de Centro de administración de Microsoft 365](admin-overview/admin-center-overview.md), solucionando problemas que aprendemos y realizando cambios en función de sus comentarios. Echa un vistazo a continuación para ver lo que está disponible para ti hoy. Algunas características se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, intente agregarse a [la versión dirigida](manage/release-options-in-office-365.md).
 
 Y si quiere saber las novedades de otros servicios en la nube de Microsoft:
 
@@ -404,7 +404,7 @@ Novedades de la serie de vídeos de **Microsoft 365:** este mes, tratamos sugere
 - [Registrarse en Microsoft Business Basic]()
 - [Configuración del inicio de sesión en dos factores](admin-overview/sign-up-for-office-365.md)
 
-## <a name="march-2020"></a>Marzo 2020
+## <a name="march-2020"></a>Marzo de 2020
 
 ### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Corrección de comentarios destacados: mejorar la confiabilidad de "agregar usuario" para licencias
 

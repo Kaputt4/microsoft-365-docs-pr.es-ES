@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar un modelo publicado a una SharePoint de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: f8e6cc20b010df5deafe478bbd718946f328a6af
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 6f5cee5bc5896ebe5e9a26bef73103fb94bf3d1d
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245734"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531751"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 
@@ -72,6 +72,24 @@ Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 Después de aplicar el modelo a la biblioteca de documentos, puede iniciar la carga de documentos en el sitio y ver los resultados.
 
 El modelo identifica los archivos y carpetas con el tipo de contenido asociado del modelo y los enumera en la vista. Si el modelo tiene extractores, la vista muestra las columnas de los datos que va a extraer de cada archivo o carpeta.
+
+## <a name="sync-changes-to-one-or-more-libraries"></a>Sincronizar cambios en una o varias bibliotecas
+
+Cuando publica un modelo en varias bibliotecas de documentos y, a continuación, actualiza el modelo, como agregar o quitar un extractor, debe insertar la actualización en todas las bibliotecas que se ha aplicado el modelo.
+
+Para sincronizar los cambios en todas las bibliotecas aplicadas:
+
+1. En la página principal del modelo, en la sección **Dónde se** aplica el modelo, seleccione **Sincronizar todo**.
+
+    ![Captura de pantalla que muestra la sección Dónde se aplica el modelo y el botón Sincronizar todo resaltado.](../media/content-understanding/sync-all-button.png) 
+
+Para sincronizar los cambios en una o solo bibliotecas seleccionadas:
+
+1. En la página principal del modelo, en la sección Dónde **se** aplica el modelo, seleccione la biblioteca o bibliotecas a las que desea aplicar los cambios.
+
+2. Seleccione **Sincronizar**.
+
+    ![Captura de pantalla que muestra la sección Dónde se aplica el modelo y el botón Sincronizar resaltado.](../media/content-understanding/sync-button.png) 
 
 ## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>Aplicar el modelo a archivos y contenido de carpetas que ya están en la biblioteca de documentos
 

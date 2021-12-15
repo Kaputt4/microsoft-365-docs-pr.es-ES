@@ -18,17 +18,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: aa6a8745ad8e9369b81f1f035d5755ff3efec515
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6d9c0c215d37458eab1deaf19f5818f07c1a9f3a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121104"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531500"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > La tabla está actualmente en versión beta y se ofrece a corto plazo para permitirle buscar a través de Azure Active Directory `AADSpnSignInEventsBeta` (AAD) eventos de inicio de sesión. Los clientes necesitan tener una Azure Active Directory Premium P2 para recopilar y ver las actividades de esta tabla. Microsoft finalmente moverá toda la información del esquema de inicio de sesión a la `IdentityLogonEvents` tabla.
@@ -43,27 +43,27 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 
 ****
 
-|Nombre de columna|Tipo de datos|Descripción|
+|Nombre de columna|Tipo de datos|Description|
 |---|---|---|
-|`Timestamp`|datetime|Fecha y hora en que se generó el registro|
-|`Application`|cadena|Aplicación que realizó la acción grabada|
-|`ApplicationId`|cadena|Identificador único de la aplicación|
-|`IsManagedIdentity`|booleano|Indica si el inicio de sesión se inició mediante una identidad administrada|
-|`ErrorCode`|Entero|Contiene el código de error si se produce un error de inicio de sesión. Para encontrar una descripción de un código de error específico, visite <https://aka.ms/AADsigninsErrorCodes> .|
-|`CorrelationId`|cadena|Identificador único del evento de inicio de sesión|
-|`ServicePrincipalName`|cadena|Nombre de la entidad de servicio que inició el inicio de sesión|
-|`ServicePrincipalId`|cadena|Identificador único de la entidad de servicio que inició el inicio de sesión|
-|`ResourceDisplayName`|cadena|Nombre para mostrar del recurso al que se ha accedido|
-|`ResourceId`|cadena|Identificador único del recurso al que se ha accedido|
-|`ResourceTenantId`|cadena|Identificador único del inquilino del recurso al que se ha accedido|
-|`IPAddress`|cadena|Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas|
-|`Country`|cadena|Código de dos letras que indica el país donde se geolocalización de la dirección IP del cliente|
-|`State`|cadena|Estado en el que se produjo el inicio de sesión, si está disponible|
-|`City`|cadena|Ciudad donde se encuentra el usuario de la cuenta|
-|`Latitude`|cadena|Las coordenadas de norte a sur de la ubicación de inicio de sesión|
-|`Longitude`|cadena|Las coordenadas de este a oeste de la ubicación de inicio de sesión|
-|`RequestId`|cadena|Identificador único de la solicitud|
-|`ReportId`|cadena|Identificador único del evento|
+|`Timestamp`|`datetime`|Fecha y hora en que se generó el registro|
+|`Application`|`string`|Aplicación que realizó la acción grabada|
+|`ApplicationId`|`string`|Identificador único de la aplicación|
+|`IsManagedIdentity`|`boolean`|Indica si el inicio de sesión se inició mediante una identidad administrada|
+|`ErrorCode`|`int`|Contiene el código de error si se produce un error de inicio de sesión. Para encontrar una descripción de un código de error específico, visite <https://aka.ms/AADsigninsErrorCodes> .|
+|`CorrelationId`|`string`|Identificador único del evento de inicio de sesión|
+|`ServicePrincipalName`|`string`|Nombre de la entidad de servicio que inició el inicio de sesión|
+|`ServicePrincipalId`|`string`|Identificador único de la entidad de servicio que inició el inicio de sesión|
+|`ResourceDisplayName`|`string`|Nombre para mostrar del recurso al que se ha accedido|
+|`ResourceId`|`string`|Identificador único del recurso al que se ha accedido|
+|`ResourceTenantId`|`string`|Identificador único del inquilino del recurso al que se ha accedido|
+|`IPAddress`|`string`|Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas|
+|`Country`|`string`|Código de dos letras que indica el país donde se geolocalización de la dirección IP del cliente|
+|`State`|`string`|Estado en el que se produjo el inicio de sesión, si está disponible|
+|`City`|`string`|Ciudad donde se encuentra el usuario de la cuenta|
+|`Latitude`|`string`|Las coordenadas de norte a sur de la ubicación de inicio de sesión|
+|`Longitude`|`string`|Las coordenadas de este a oeste de la ubicación de inicio de sesión|
+|`RequestId`|`string`|Identificador único de la solicitud|
+|`ReportId`|`string`|Identificador único del evento|
 ||||
 
 ## <a name="related-articles"></a>Artículos relacionados

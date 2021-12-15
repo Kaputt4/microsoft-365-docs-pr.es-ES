@@ -15,19 +15,19 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: e8124e9f2445ad2bf2b9fd6f5c56869d5feaaa07
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b5aaad7363b42e18a0ca21e4d56d118218cec1a9
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164471"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531803"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Informes de firewalls de host en Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Si es administrador, ahora puede hospedar informes de firewall en el [portal Microsoft 365 Defender .](https://security.microsoft.com) Esta característica le permite ver Windows 10, Windows 11, Windows Server 2019 y Windows Server 2022 desde una ubicación centralizada.
@@ -70,7 +70,7 @@ También se puede obtener acceso a estos informes yendo a **Informes** de dispos
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>De "Equipos con una conexión bloqueada" al dispositivo
 
-Las tarjetas admiten objetos interactivos. Puedes profundizar en la actividad de un dispositivo haciendo clic en el nombre del dispositivo, que se iniciará en una nueva pestaña, y te llevará directamente a la pestaña Escala <https://securitycenter.microsoft.com> **de tiempo del** dispositivo.
+Las tarjetas admiten objetos interactivos. Puedes profundizar en la actividad de un dispositivo haciendo clic en el nombre del dispositivo, que iniciará el portal de Microsoft 365 Defender en una pestaña nueva y te llevará directamente a la pestaña Escala de tiempo **del** dispositivo.
 
 > [!div class="mx-imgBorder"]
 > ![Equipos con una conexión bloqueada.](\images\firewall-reporting-blocked-connection.png)

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c60f9ff0b302948d5fd2d8c450e33a12768e8db0
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b82a079a476ee6ed3d5465b52bca381cd49746b5
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665532"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530920"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -31,19 +31,19 @@ ms.locfileid: "60665532"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Usa la función de las consultas de búsqueda avanzadas para obtener rápidamente las direcciones IP más recientes que se han `AssignedIPAddresses()` asignado a un dispositivo. [](advanced-hunting-overview.md) Si especifica un argumento de marca de tiempo, esta función obtiene las direcciones IP más recientes en el momento especificado. 
 
 Esta función devuelve una tabla con las siguientes columnas:
 
-| Columna | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Description |
 |------------|-------------|-------------|
-| `Timestamp` | datetime | Última hora en la que se observó el dispositivo con la dirección IP |
-| `IPAddress` | cadena | Dirección IP usada por el dispositivo |
-| `IPType` | cadena | Indica si la dirección IP es una dirección pública o privada |
-| `NetworkAdapterType` | Entero | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | Entero | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (público, privado o dominio), una descripción y una marca que indica si está conectada públicamente a Internet |
+| `Timestamp` | `datetime` | Última hora en la que se observó el dispositivo con la dirección IP |
+| `IPAddress` | `string` | Dirección IP usada por el dispositivo |
+| `IPType` | `string` | Indica si la dirección IP es una dirección pública o privada |
+| `NetworkAdapterType` | `int` | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | `int` | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (público, privado o dominio), una descripción y una marca que indica si está conectada públicamente a Internet |
 
 ## <a name="syntax"></a>Sintaxis
 

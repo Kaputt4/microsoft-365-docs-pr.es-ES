@@ -21,12 +21,12 @@ search.appverid:
 description: Obtenga información sobre cómo usar el cmdlet De PowerShell AllowSelfServicePurchase para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 31ef425bf82f40d9720eec0a65b3278e63186ba9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4c4272b532fd40f1062404716614f8a7ee4a5230
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172580"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531902"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce
 
@@ -38,7 +38,7 @@ Puede usar el módulo **MSCommerce** PowerShell para:
 - Ver una lista de productos aplicables y si la compra de autoservicio está habilitada o deshabilitada
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Para usar el **módulo de PowerShell de MSCommerce,** necesita:
 
@@ -100,14 +100,18 @@ En la tabla siguiente se enumeran los productos disponibles y **su ProductId**.
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (independiente) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Project Plan 1 | CFQ7TTC0KXND |
-| Project Plan 3 | CFQ7TTC0KXNC |
-| Visio Plan 1 | CFQ7TTC0KXN9 |
-| Visio Plan 2 | CFQ7TTC0KXN8 |
+| Project Plan 1* | CFQ7TTC0HDB1 |
+| Project Plan 3* | CFQ7TTC0HDB0 |
+| Visio Plan 1* | CFQ7TTC0HD33 |
+| Visio Plan 2* | CFQ7TTC0HD32 |
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Empresa con Windows ventaja híbrida | CFQ7TTC0HX99 |
+
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Ver o establecer el estado de AllowSelfServicePurchase
+
+>[!NOTE] 
+> Estos IDs han cambiado. Si anteriormente bloqueaste los productos con los antiguos IDs, se bloquean automáticamente con los nuevos IDs. No se requiere trabajo adicional.
 
 Después de ver la lista de productos disponibles para la compra de autoservicio, puede ver o modificar la configuración de un producto específico.
 

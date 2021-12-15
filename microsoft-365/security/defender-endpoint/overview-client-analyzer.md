@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6386ea1e0cd25db1b13d763d618b4ced315b858b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9b4363b529ce9087e640c9bfaa32c8d21f410710
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168071"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531068"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solucionar problemas de estado del sensor con Microsoft Defender para endpoint client Analyzer
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender para Endpoint Client Analyzer (MDECA) puede ser útil [](/microsoft-365/security/defender-endpoint/onboard-configure) al diagnosticar problemas de estado o confiabilidad del sensor en dispositivos integrados que ejecutan Windows, Linux o macOS. Por ejemplo, es posible que desee ejecutar el analizador en una máquina que parezca no estar en buen estado según el estado de mantenimiento del sensor mostrado (Inactivo, Sin datos de [sensor](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) o Comunicaciones deficientes) en el portal de seguridad.
 
@@ -60,4 +60,4 @@ Para obtener más información acerca de nuestra declaración de privacidad, vea
 - Para Windows dispositivos, si ejecuta el analizador directamente en máquinas específicas y no de forma remota a través de [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log), sysInternals [PsExec.exe](/sysinternals/downloads/psexec) debe poder ejecutarse (al menos temporalmente). El analizador llama a PsExec.exe herramienta para ejecutar comprobaciones de conectividad en la nube como Sistema local y emular el comportamiento del servicio SENSE.
 
     > [!NOTE]
-    > En dispositivos Windows, si usas la regla Reducción de superficie de ataque (ASR) Bloquear creaciones de proceso que se originen a partir de comandos PSExec y [WMI,](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)es posible que quieras deshabilitar temporalmente la regla o configurar una exclusión en la regla [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para permitir que el analizador ejecute comprobaciones de conectividad en la nube según lo esperado.
+    > En dispositivos Windows, si usas la regla Reducción de superficie de ataque (ASR) Bloquear creaciones de proceso que se originen a partir de comandos PSExec y [WMI,](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)es posible que quieras deshabilitar temporalmente la regla o configurar una exclusión en la regla [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para permitir que el analizador ejecute comprobaciones de conectividad en la nube según lo esperado.

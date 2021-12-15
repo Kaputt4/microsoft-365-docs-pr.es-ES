@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: Obtenga información sobre cómo restablecer la contraseña y enviar un correo electrónico a un nuevo Microsoft 365 usuario.
-ms.openlocfilehash: bc7504970da6e3844c359fe0652b051c0f9d0225
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 83b1dd5a82189947dae42a2c659032f97d17a256
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370601"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530180"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Volver a enviar la contraseña de un usuario: ayuda para administradores
 
@@ -33,7 +33,7 @@ En este artículo se explica cómo reenviar el correo electrónico de notificaci
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] ([Información general de la Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md).
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] (Introducción a la Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md).
 
 Debe ser administrador global o administrador [de contraseñas](about-admin-roles.md) para realizar estos pasos.
 

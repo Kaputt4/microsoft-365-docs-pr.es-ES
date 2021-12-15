@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.date: 12/06/2021
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 362414da07fbc71520c390c8dab45fc85b7a0872
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 848002d94d36d00e90942df5424b111f6630288f
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426452"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530528"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -36,7 +36,7 @@ ms.locfileid: "61426452"
 
 [Las reglas de reducción de superficie de](attack-surface-reduction.md) ataque (reglas ASR) ayudan a evitar acciones que el malware suele abusar de dispositivos y redes.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Características de reducción de superficie de ataque en Windows versiones
 
@@ -127,7 +127,7 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 
 ## <a name="mem"></a>MEM
 
-Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR personalizadas. El siguiente procedimiento usa la regla Bloquear el uso indebido de controladores [firmados vulnerables](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) explotados para el ejemplo.
+Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR personalizadas. El siguiente procedimiento usa la regla Bloquear el uso indebido de controladores [firmados vulnerables](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) explotados para el ejemplo.
 
 1. Abra el centro Microsoft Endpoint Manager administración de Microsoft Endpoint Manager (MEM). En el **menú Inicio,** haga clic **en Dispositivos**, seleccione **Perfiles de configuración** y, a continuación, haga clic en Crear **perfil.**
 
@@ -158,7 +158,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
 
    - En **Nombre**, escriba un nombre para la regla.
    - En **Descripción**, escriba una breve descripción.
-   - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar. Consulte la sección MEM anterior de este artículo para que OMA-URI se use para esta regla de ejemplo. Para obtener GUID de regla de reducción de superficie de ataque, consulta [Descripciones](attack-surface-reduction-rules.md#per-rule-descriptions) por regla en el tema: Reglas de reducción de superficie de ataque.
+   - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar. Consulte la sección MEM anterior de este artículo para que OMA-URI se use para esta regla de ejemplo. Para obtener GUID de regla de reducción de superficie de ataque, consulta [Descripciones](attack-surface-reduction-rules-reference.md#per-rule-descriptions) por regla en el tema: Reglas de reducción de superficie de ataque.
    - En **Tipo de datos**, seleccione **Cadena**.
    - En **Value**, escriba o pegue el valor GUID, el signo y el valor State sin espacios \= (_GUID=StateValue_). Donde:
      
@@ -214,7 +214,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
 
 Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) (CSP) para habilitar y establecer individualmente el modo de cada regla.
 
-A continuación se muestra un ejemplo de referencia, con valores GUID para las [reglas de reducción de superficie de ataque.](attack-surface-reduction-rules.md)
+A continuación se muestra un ejemplo de referencia, con valores GUID para la referencia de reglas de reducción [de superficie de ataque.](attack-surface-reduction-rules-reference.md)
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 
@@ -290,7 +290,7 @@ Ejemplo:
 
 1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**.
 
-2. Escriba uno de los cmdlets siguientes. (Consulte [Reglas de reducción de superficie de ataque](attack-surface-reduction-rules.md) para obtener más información, como id. de regla).
+2. Escriba uno de los cmdlets siguientes. (Consulte Referencia [de reglas de reducción de](attack-surface-reduction-rules-reference.md) superficie de ataque para obtener más detalles, como id. de regla).
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -348,6 +348,6 @@ Ejemplo:
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction-rules.md)
+- [Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md)
 - [Evaluar la reducción de superficie de ataque](evaluate-attack-surface-reduction.md)
 - [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)

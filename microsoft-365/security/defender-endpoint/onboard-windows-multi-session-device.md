@@ -15,19 +15,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d8f11d6d3dc3301444b7e188c220683ac7015d2
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 71c1768a3cb5cc96f68818def7e9a582d5e258ac
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168083"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530204"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Incorporación Windows de varias sesiones en Azure Virtual Desktop
 
 6 minutos para leer
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows varias sesiones que se ejecutan en Azure Virtual Desktop (AVD)
 
 Microsoft Defender para endpoint admite la supervisión de sesiones de VDI y Azure Virtual Desktop. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Azure Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.
@@ -109,7 +109,7 @@ Si planea administrar las máquinas con una herramienta de administración, pued
 Para obtener más información, vea [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> Si tienes previsto usar reglas de reducción de superficie de [ataque,](attack-surface-reduction-rules.md)ten en cuenta que no se debe usar la regla " Bloquear creaciones de proceso que se originen a partir de comandos[PSExec](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI", ya que dicha regla es incompatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
+> Si tiene previsto usar la referencia de reglas de reducción de superficie de [ataque,](attack-surface-reduction-rules-reference.md)tenga en cuenta que no se debe usar la regla " Bloquear creaciones de procesos que se originen a partir de comandos[PSExec](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI", ya que dicha regla es incompatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
 
 > [!TIP]
 > Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que el dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.

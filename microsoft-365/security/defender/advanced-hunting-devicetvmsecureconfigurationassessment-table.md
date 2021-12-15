@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3487ced09cfd0bbd3a25f8e8124f84a05368d290
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 43f44458cde7d466d1097034e7bcc9d0e3072745
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035975"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530708"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -41,20 +41,20 @@ Puede unir esta tabla a la tabla [DeviceTvmSecureConfigurationAssessmentKB](adva
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea [la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificador único del dispositivo en el servicio |
-| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
-| `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7.|
-| `Timestamp` | datetime | Fecha y hora en que se generó el registro |
-| `ConfigurationId` | cadena | Identificador único para una configuración específica |
-| `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
-| `ConfigurationSubcategory` | string | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, la cadena describe funciones o características específicas. |
-| `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
-| `IsCompliant` | booleano | Indica si la configuración o la directiva está configurada correctamente |
-| `IsApplicable` | Booleano | Indica si la configuración o directiva se aplica al dispositivo |
-| `Context` | string | Información contextual adicional sobre la configuración o la directiva |
-| `IsExpectedUserImpact` | booleano | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
+| `DeviceId` | `string` | Identificador único del dispositivo en el servicio |
+| `DeviceName` | `string` | Nombre de dominio completo (FQDN) del dispositivo |
+| `OSPlatform` | `string` | Plataforma del sistema operativo que se ejecuta en el dispositivo. Indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7.|
+| `Timestamp` | `datetime` | Fecha y hora en que se generó el registro |
+| `ConfigurationId` | `string` | Identificador único para una configuración específica |
+| `ConfigurationCategory` | `string` | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
+| `ConfigurationSubcategory` | `string` | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, la cadena describe funciones o características específicas. |
+| `ConfigurationImpact` | `string` | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
+| `IsCompliant` | `boolean` | Indica si la configuración o la directiva está configurada correctamente |
+| `IsApplicable` | `boolean` | Indica si la configuración o directiva se aplica al dispositivo |
+| `Context` | `string` | Información contextual adicional sobre la configuración o la directiva |
+| `IsExpectedUserImpact` | `boolean` | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
 
 Puede probar esta consulta de ejemplo para devolver información sobre dispositivos con configuraciones antivirus no compatibles junto con los metadatos de configuración relevantes de la `DeviceTvmSecureConfigurationAssessmentKB` tabla:
 

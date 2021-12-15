@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c6cae9e8d4d043ced17129b49493a95e13bc8fc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 10a184e6ce36129a84197cc02caae3b96625e39a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661088"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530924"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -45,18 +45,18 @@ La tabla del esquema de búsqueda avanzada contiene el inventario de administrac
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea [la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificador único para el equipo en servicio |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
-| `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el equipo. |
-| `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
-| `SoftwareVendor` | cadena | Nombre del proveedor de software |
-| `SoftwareName` | cadena | Nombre del producto de software |
-| `SoftwareVersion` | cadena | Número de versión del producto de software |
-| `EndOfSupportStatus` | cadena | Indica la fase de ciclo de vida del producto de software en relación con la fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) especificada |
-| `EndOfSupportDate` | cadena | Fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) del producto de software |
+| `DeviceId` | `string` | Identificador único para el equipo en servicio |
+| `DeviceName` | `string` | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
+| `OSPlatform` | `string` | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
+| `OSVersion` | `string` | Versión del sistema operativo que se ejecuta en el equipo. |
+| `OSArchitecture` | `string` | Arquitectura del sistema operativo que se ejecuta en el equipo. |
+| `SoftwareVendor` | `string` | Nombre del proveedor de software |
+| `SoftwareName` | `string` | Nombre del producto de software |
+| `SoftwareVersion` | `string` | Número de versión del producto de software |
+| `EndOfSupportStatus` | `string` | Indica la fase de ciclo de vida del producto de software en relación con la fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) especificada |
+| `EndOfSupportDate` | `string` | Fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) del producto de software |
 
 
 

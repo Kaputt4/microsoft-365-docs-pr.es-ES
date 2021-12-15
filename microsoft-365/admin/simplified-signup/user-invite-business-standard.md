@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Aceptar invitación para unirse a una Microsoft 365 Empresa Estándar organización
-ms.openlocfilehash: e73d46686e59bb34c1e33565f8c8784788f54431
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c29c51dc378debef566746c734b74e08f3b3b3ff
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372449"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530828"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Aceptar una invitación de correo electrónico a Microsoft 365 Empresa Estándar suscripción (usuario)
 
@@ -60,7 +60,7 @@ Siga los pasos de la suscripción Migrar datos a mi [Microsoft 365 Empresa Está
 
 Descargar y empezar a usar [Office aplicaciones para empresas](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>¿No he recibido un correo electrónico de actualización?
 
@@ -95,7 +95,7 @@ No, aún puede iniciar sesión de la misma manera que antes.
 
 Cuando inicie Microsoft Outlook con su nueva cuenta de negocio, el nuevo buzón se configurará automáticamente.
 
-1. En primer lugar: [Configurar Outlook correo electrónico empresarial]( Configurar Outlook para Microsoft 365 correo electrónico[empresarial](../setup/setup-outlook.md).
+1. En primer lugar: [Configurar Outlook correo electrónico empresarial](Configurar Outlook para Microsoft 365 correo electrónico empresarial](.. /setup/setup-outlook.md).
 2. A continuación, siga: [Cree y envíe correo electrónico en Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 ### <a name="how-can-i-leave-this-business-and-stop-using-this-license"></a>¿Cómo puedo dejar esta empresa (y dejar de usar esta licencia)?

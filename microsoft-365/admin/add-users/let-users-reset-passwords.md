@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva para permitir a los usuarios restablecer sus propias contraseñas mediante la herramienta de restablecimiento de contraseñas de autoservicio.
-ms.openlocfilehash: 7a284e4b24fb21ff100e1be99998103026e320ca
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 486fd0b22c93d233897963a8295bf2048b01aa6c
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370265"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530216"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -57,7 +57,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 - **Si usa un Active Directory local,** no se aplican los dos puntos anteriores. En su lugar, puede configurar esto, pero requiere una suscripción de pago **para Azure AD Premium**.
 
-Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] ([Introducción a la Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md)
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] (Introducción a la Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md)
 
 Debe ser administrador global o administrador [de contraseñas](about-admin-roles.md) para realizar estos pasos.
 

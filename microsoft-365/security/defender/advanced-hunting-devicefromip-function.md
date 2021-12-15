@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c2482c83eef315c390e2748e371ddf26dcb3c012
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4a1f1198c247aefbcbb093d1a5f5105704255692
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705356"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531584"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -31,7 +31,7 @@ ms.locfileid: "60705356"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
@@ -41,10 +41,10 @@ Usa la función de las consultas de búsqueda avanzadas para obtener rápidament
 
 Esta función devuelve una tabla con las siguientes columnas:
 
-| Columna | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Description |
 |------------|-------------|-------------|
-| `IP` | string | Dirección IP  |
-| `DeviceId` | string | Identificador único del dispositivo en el servicio |
+| `IP` | `string` | Dirección IP  |
+| `DeviceId` | `string` | Identificador único del dispositivo en el servicio |
 
 
 ## <a name="syntax"></a>Sintaxis
@@ -60,7 +60,7 @@ Esta función se invoca como parte de una consulta.
 - **x**: el primer parámetro suele ser ya una columna de la consulta. En este caso, es la columna denominada , la dirección IP para la que desea ver una lista de dispositivos que se le han `IP` asignado. Debe ser una dirección IP local. No se admiten direcciones IP externas.
 - **y**— Un segundo parámetro opcional es el , que indica a la función que obtenga los `Timestamp` dispositivos asignados más recientes a partir de una hora específica. Si no se especifica, la función devuelve los registros disponibles más recientes.
 
-## <a name="example"></a>Ejemplo:
+## <a name="example"></a>Ejemplo
 
 
 ### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Obtener los dispositivos más recientes a los que se han asignado direcciones IP específicas

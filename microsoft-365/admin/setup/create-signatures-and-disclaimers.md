@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administrar firmas de correo electrónico, incluidas declinaciones de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: fe23d3c316750d1db02b2d4aff5872479889509b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d2e8b93825b98724bfd2698d95b93289dee30e00
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373457"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531188"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 
@@ -122,5 +122,5 @@ Para obtener información acerca del uso de PowerShell, vea Avisos de declinaci�
 
 [Migrar correo electrónico y contactos a Microsoft 365](migrate-email-and-contacts-admin.md) (vídeo)\
 [Configuración de correo electrónico del](../email/office-365-user-email-settings.md) usuario (artículo)\
-[Overview of the Centro de administración de Microsoft 365]([Overview of the Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) (video)
+[Overview of the Centro de administración de Microsoft 365](Overview of the Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md) (vídeo)
 

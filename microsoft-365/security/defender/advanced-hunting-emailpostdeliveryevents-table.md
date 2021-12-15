@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3f3338639ed0db6b11a2796def8ec4eb209a9824
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 59d611ae89aeedf386cd0dcad5939a9510f0820e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646888"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530674"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -31,32 +31,32 @@ ms.locfileid: "60646888"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La tabla del esquema de búsqueda avanzada contiene información sobre las acciones posteriores a la entrega realizadas en los mensajes de correo electrónico procesados `EmailPostDeliveryEvents` por Microsoft 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad.
+> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en Defender para la nube.
 
 Para obtener más información acerca de los mensajes de correo electrónico individuales, también puede usar [`EmailEvents`](advanced-hunting-emailevents-table.md) las tablas , y [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) . Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
-| `InternetMessageId` | cadena | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
-| `Action` | cadena | Acción realizada en la entidad |
-| `ActionType` | cadena | Tipo de actividad que desencadenó el evento: Corrección manual, PHISH ZAP, MALWARE ZAP |
-| `ActionTrigger` | cadena | Indica si un administrador desencadenó una acción (manualmente o mediante la aprobación de una acción automatizada pendiente) o por algún mecanismo especial, como un ZAP o una entrega dinámica |
-| `ActionResult` | cadena | Resultado de la acción |
-| `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
-| `DeliveryLocation` | cadena | Ubicación en la que se entregó el correo electrónico: bandeja de entrada / carpeta, local / externo, correo no deseado, cuarentena, erróneo, descartado, elementos eliminados. |
-| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
-| `ThreatTypes` | cadena | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
-| `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
+| `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
+| `NetworkMessageId` | `string` | Identificador único del correo electrónico, generado por Microsoft 365 |
+| `InternetMessageId` | `string` | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
+| `Action` | `string` | Acción realizada en la entidad |
+| `ActionType` | `string` | Tipo de actividad que desencadenó el evento: Corrección manual, PHISH ZAP, MALWARE ZAP |
+| `ActionTrigger` | `string` | Indica si un administrador desencadenó una acción (manualmente o mediante la aprobación de una acción automatizada pendiente) o por algún mecanismo especial, como un ZAP o una entrega dinámica |
+| `ActionResult` | `string` | Resultado de la acción |
+| `RecipientEmailAddress` | `string` | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
+| `DeliveryLocation` | `string` | Ubicación en la que se entregó el correo electrónico: bandeja de entrada / carpeta, local / externo, correo no deseado, cuarentena, erróneo, descartado, elementos eliminados. |
+| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
+| `ThreatTypes` | `string` | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `DetectionMethods` | `string` | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
 
 ## <a name="supported-event-types"></a>Tipos de eventos admitidos
 En esta tabla se capturan eventos con los siguientes `ActionType` valores:

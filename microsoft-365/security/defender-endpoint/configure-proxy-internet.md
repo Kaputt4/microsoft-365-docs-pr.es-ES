@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 07eb8847b21d9c6444cbd55d2e84e17282fb4c52
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: b84f458649a79583f384621739f37e5880179e28
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221429"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531212"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -174,7 +174,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 <br>
 
 **** 
-|Hoja de cálculo de la lista de dominios|Descripción|
+|Hoja de cálculo de la lista de dominios|Description|
 |---|---|
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
@@ -280,7 +280,7 @@ Si al menos una de las opciones de conectividad devuelve un estado (200), el cli
 Pero si los resultados de la comprobación de conectividad indican un error, se mostrará un error HTTP (vea los códigos de estado HTTP). A continuación, puede usar las direcciones URL de la tabla que se muestra en Habilitar el acceso a las direcciones URL del servicio defender para puntos de conexión [en el servidor proxy](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Las direcciones URL que usará dependerán de la región seleccionada durante el procedimiento de incorporación.
 
 > [!NOTE]
-> Las comprobaciones de conectividad en la nube de la herramienta Analizador de conectividad no son compatibles con la regla reducción de superficie de ataque Bloquear creaciones de proceso originadas a partir [de comandos PSExec y WMI](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands). Tendrá que deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad. Como alternativa, puede agregar temporalmente [exclusiones de ASR](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) al ejecutar el analizador.
+> Las comprobaciones de conectividad en la nube de la herramienta Analizador de conectividad no son compatibles con la regla reducción de superficie de ataque Bloquear creaciones de proceso originadas a partir [de comandos PSExec y WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). Tendrá que deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad. Como alternativa, puede agregar temporalmente [exclusiones de ASR](customize-attack-surface-reduction.md#exclude-files-and-folders) al ejecutar el analizador.
 >
 > Cuando se establece TelemetryProxyServer, en el Registro o a través de la directiva de grupo, Defender for Endpoint volverá a dirigirse si no puede tener acceso al proxy definido.
 

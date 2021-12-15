@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo establecer requisitos de contraseñas seguras para los usuarios mediante Windows PowerShell.
-ms.openlocfilehash: 25e0db3da797fbcaa78dbf91bd81abce0104d725
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5932f01c2f17a72f4f6a20a6457d263bed7dd85e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370589"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530492"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Desactivar los requisitos de contraseña segura para los usuarios
 
@@ -34,7 +34,7 @@ En este artículo se explica cómo desactivar los requisitos de contraseña segu
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está para personas que administran la directiva de contraseñas para una empresa, escuela o organización sin ánimo de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] ([Información general sobre la Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) Debe ser administrador global o administrador de [contraseñas](about-admin-roles.md) para realizar estos pasos.
+Este artículo está para personas que administran la directiva de contraseñas para una empresa, escuela o organización sin ánimo de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] (Introducción a la Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md) Debe ser administrador [global](about-admin-roles.md) o administrador de contraseñas para realizar estos pasos.
 
 También debe conectarse a Microsoft 365 con PowerShell.
 

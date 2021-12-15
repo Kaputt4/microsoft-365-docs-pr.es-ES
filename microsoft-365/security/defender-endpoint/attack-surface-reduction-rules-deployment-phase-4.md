@@ -1,5 +1,5 @@
 ---
-title: 'Fase 4 de implementación de reglas ASR: operationalize'
+title: 'Fase 4 de implementación de reglas de ASR: hacer operativo'
 description: Proporciona instrucciones para implementar las reglas de reducción de superficie de ataque.
 keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7c06be427df2425a2160201324a6ed267d88d0fd
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 01556e67738ffac18a46c09c85bc2e70d1f5f29e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218339"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531695"
 ---
 # <a name="attack-surface-reduction-rules-deployment-phase-4-operationalize"></a>Fase 4 de implementación de reglas de reducción de superficie de ataque: operationalize
 
@@ -38,7 +38,7 @@ La revisión periódica y coherente de los informes es un aspecto esencial para 
 
 ## <a name="hunting"></a>Búsqueda
 
-Una de las características más eficaces de [Microsoft 365 Defender](https://securitycenter.microsoft.com) es la búsqueda avanzada. Si no estás familiarizado con la búsqueda avanzada, consulta: [Búsqueda proactiva de amenazas con búsqueda avanzada.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+Una de las características más eficaces de [Microsoft 365 Defender](https://security.microsoft.com) es la búsqueda avanzada. Si no estás familiarizado con la búsqueda avanzada, consulta: [Búsqueda proactiva de amenazas con búsqueda avanzada.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender búsqueda avanzada](images/asr-defender365-advanced-hunting2.png)
@@ -78,8 +78,8 @@ Para obtener más información acerca de las opciones de búsqueda, vea: [Desmit
 
 [Guía de implementación de reglas ASR: información general](attack-surface-reduction-rules-deployment.md)
 
-[Fase 1 de implementación de reglas ASR: plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Fase 1 de implementación de reglas de ASR: planificar](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Fase 2 de implementación de reglas ASR: prueba](attack-surface-reduction-rules-deployment-phase-2.md)
+[Fase 2 de implementación de reglas de ASR: probar](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Fase 3 de implementación de reglas ASR: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
+[Fase 3 de implementación de reglas de ASR: implementar](attack-surface-reduction-rules-deployment-phase-3.md)

@@ -14,12 +14,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3965b02e4bf4e4b6bce35a6abaf368dc4f47be83
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 992c8802f3a4f44b1558004e2ee27ddbedf70a1a
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218291"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531176"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personalizar las reglas de la reducción de superficie expuesta a ataques
 
@@ -71,31 +71,7 @@ Solo se aplica una exclusión cuando se inicia la aplicación o servicio excluid
 La reducción de superficie de ataque admite variables de entorno y caracteres comodín. Para obtener información acerca del uso de caracteres comodín, vea usar caracteres comodín en las listas de exclusión de extensión o ruta de acceso de [carpeta y nombre de archivo.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 Si tiene problemas con las reglas que detectan archivos que cree que no deben detectarse, use el modo de auditoría [para probar la regla](evaluate-attack-surface-reduction.md).
 
-<br>
-
-****
-
-|Descripción de la regla|GUID|
-|---|---|
-|Bloquear el uso indebido de controladores firmados vulnerables explotados|`56a863a9-875e-4185-98a7-b882c64b5ce5`|
-|Impedir que Adobe Reader cree procesos secundarios|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|
-|Bloquear todas Office aplicaciones de creación de procesos secundarios|`d4f940ab-401b-4efc-aadc-ad5f3c50688a`|
-|Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|
-|Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web|`be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`|
-|Bloquear la ejecución de archivos ejecutables a menos que cumplan con criterios de prevalencia, antigüedad o lista de confianza|`01443614-cd74-433a-b99e-2ecdc07bfc25`|
-|Bloquear la ejecución de scripts potencialmente ofuscados|`5beb7efe-fd9a-4556-801d-275e5ffc04cc`|
-|Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|`d3e037e1-3eb8-44c8-a917-57927947596d`|
-|Bloquear Office aplicaciones de creación de contenido ejecutable|`3b576869-a4ec-4529-8536-b80a7769e899`|
-|Bloquear Office aplicaciones para que no inyecten código en otros procesos|`75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`|
-|Bloquear Office aplicaciones de comunicación para que no creen procesos secundarios|`26190899-1602-49e8-8b27-eb1d0a1ce869`|
-|Bloquear la persistencia a través de la suscripción de eventos WMI|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|
-|Bloquear creaciones de proceso que se originen en comandos PSExec y WMI|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|
-|Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|
-|Bloquear llamadas a la API de Win32 desde Office macro|`92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`|
-|Usar protección avanzada contra ransomware|`c1db55ab-c21a-4637-bb3f-a12568109d35`|
-|
-
-Consulta el tema [de reducción de](attack-surface-reduction.md) superficie de ataque para obtener más información sobre cada regla.
+Consulta el tema [de referencia de reglas de reducción de](attack-surface-reduction-rules-reference.md) superficie de ataque para obtener más información sobre cada regla.
 
 ### <a name="use-group-policy-to-exclude-files-and-folders"></a>Usar la directiva de grupo para excluir archivos y carpetas
 

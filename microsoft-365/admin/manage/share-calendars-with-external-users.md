@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Habilite el uso compartido de calendarios en el Centro de administración de Microsoft 365 para que los usuarios puedan compartir sus calendarios con cualquier persona dentro o fuera de la organización.
-ms.openlocfilehash: c7b7e13dd0472cdd8d61bb7a28c067eadb1b00cc
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 00ae4b96c54ae6b1471a90f598b9f96821947db3
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370541"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530456"
 ---
 # <a name="share-calendars-with-external-users"></a>Compartir calendarios con usuarios externos
 
@@ -47,6 +47,14 @@ Puede habilitar el uso compartido de calendarios para todos los usuarios de la o
 
 4. Elija qué tipo de información de calendario desea que esté disponible para los usuarios. Puede permitir toda la información o limitarla solo a tiempo o solo tiempo, asunto y ubicación.
 
+## <a name="external-sharing-sync-interval"></a>Intervalo de sincronización de uso compartido externo
+
+Actualmente, no se admite la sincronización instantánea para compartir fuera del espacio empresarial. Aunque puede compartir en estas configuraciones, la sincronización se realizará periódicamente. Hay dos tipos de uso compartido entre inquilinos:
+
+1. **Microsoft 365 a otro usuario Microsoft 365 (si** el uso compartido externo está habilitado): se crea un calendario totalmente compartido, pero la sincronización se realizará aproximadamente cada tres horas. La sincronización instantánea se habilitará finalmente para esta configuración.
+
+2. **Microsoft 365 a un usuario Outlook.com:** si el uso compartido externo está deshabilitado, el uso compartido con otro usuario Microsoft 365 también entra en este grupo. Al compartir, se genera una dirección URL de ICS, que el destinatario puede usar para agregar a cualquier servicio de calendario. Con una suscripción a ICS, el servicio de calendario del destinatario elige cuándo sincronizar la suscripción a ICS para recibir nuevas actualizaciones. Si el destinatario es un Outlook.com o un Microsoft 365, la sincronización se realizará aproximadamente cada tres horas.
+
 ## <a name="invite-people-to-access-calendars"></a>Invitar a personas a acceder a los calendarios
 
 Una vez habilitado el uso compartido, los propietarios del calendario pueden extender invitaciones a usuarios específicos. Para obtener instrucciones, consulte [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
@@ -54,5 +62,6 @@ Una vez habilitado el uso compartido, los propietarios del calendario pueden ext
 ## <a name="related-content"></a>Contenido relacionado
 
 [Activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site) (artículo)\
-[Overview of the Centro de administración de Microsoft 365]([Overview of the Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) (video)\
+[Información general sobre Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) (vídeo)\
 [Administrar el correo electrónico y los calendarios](/admin) (página de vínculos)
+

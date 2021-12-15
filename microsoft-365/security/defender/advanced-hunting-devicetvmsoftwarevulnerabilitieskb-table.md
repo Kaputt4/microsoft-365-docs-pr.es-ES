@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d6a6da54fea668eefc200247bd4f9879ba8fcb03
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 545e2a3ba12924d364facda14a7a564ead212f30
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665414"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531096"
 ---
 # <a name="devicetvmsoftwarevulnerabilitieskb"></a>DeviceTvmSoftwareVulnerabilitiesKB
 
@@ -40,16 +40,16 @@ La tabla `DeviceTvmSoftwareVulnerabilitiesKB` en el esquema de búsqueda avanzad
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, consulte la [referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `CveId` | string | Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE) |
-| `CvssScore` | string | La puntuación de gravedad asignada a la vulnerabilidad de seguridad por debajo de sistema de puntuación de vulnerabilidades común (CVSS) |
-| `IsExploitAvailable` | boolean | Indica si el código que aprovecha la vulnerabilidad está disponible para el público |
-| `VulnerabilitySeverityLevel` | string | Nivel de gravedad asignado a la vulnerabilidad de seguridad basada en la puntuación CVSS y los factores dinámicos influidos por el panorama de amenazas |
-| `LastModifiedTime` | datetime | Fecha y hora en que se modificó por última vez el elemento o los metadatos relacionados |
-| `PublishedDate` | datetime | Fecha en que se ha divulgado la vulnerabilidad al público |
-| `VulnerabilityDescription` | string | Descripción de vulnerabilidad y riesgos asociados |
-| `AffectedSoftware` | string | Lista de todos los productos de software afectados por la vulnerabilidad |
+| `CveId` | `string` | Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE) |
+| `CvssScore` | `string` | La puntuación de gravedad asignada a la vulnerabilidad de seguridad por debajo de sistema de puntuación de vulnerabilidades común (CVSS) |
+| `IsExploitAvailable` | `boolean` | Indica si el código que aprovecha la vulnerabilidad está disponible para el público |
+| `VulnerabilitySeverityLevel` | `string` | Nivel de gravedad asignado a la vulnerabilidad de seguridad basada en la puntuación CVSS y los factores dinámicos influidos por el panorama de amenazas |
+| `LastModifiedTime` | `datetime` | Fecha y hora en que se modificó por última vez el elemento o los metadatos relacionados |
+| `PublishedDate` | `datetime` | Fecha en que se ha divulgado la vulnerabilidad al público |
+| `VulnerabilityDescription` | `string` | Descripción de vulnerabilidad y riesgos asociados |
+| `AffectedSoftware` | `string` | Lista de todos los productos de software afectados por la vulnerabilidad |
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f810929d254056ee261defa0a7f2a1458145f8f0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ac3e7aeff6778709f68aa1da74446cf55a1a6c06
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753064"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531308"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -31,7 +31,7 @@ ms.locfileid: "60753064"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La tabla del esquema de búsqueda avanzada contiene información acerca de los datos adjuntos de los correos electrónicos procesados por `EmailAttachmentInfo` Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
@@ -40,23 +40,23 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
-| `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
-| `SenderDisplayName` | cadena | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre determinado, una inicial intermedia y un apellido o apellido |
-| `SenderObjectId` | cadenas | Identificador único de la cuenta del remitente en Azure AD |
-| `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
-| `RecipientObjectId` | cadena | Identificador único para el destinatario de correo electrónico en Azure AD |
-| `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
-| `FileType` | cadena | Tipo de extensión de archivo |
-| `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
-| `ThreatTypes` | cadena | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
-| `ThreatNames` | cadenas | Nombre de detección de malware u otras amenazas encontradas |
-| `DetectionMethods` | cadenas | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
-| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
-| `FileSize` | cadenas | Tamaño del archivo en bytes |
+| `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
+| `NetworkMessageId` | `string` | Identificador único del correo electrónico, generado por Microsoft 365 |
+| `SenderFromAddress` | `string` | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
+| `SenderDisplayName` | `string` | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre determinado, una inicial intermedia y un apellido o apellido |
+| `SenderObjectId` | `string` | Identificador único de la cuenta del remitente en Azure AD |
+| `RecipientEmailAddress` | `string` | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
+| `RecipientObjectId` | `string` | Identificador único para el destinatario de correo electrónico en Azure AD |
+| `FileName` | `string` | Nombre del archivo donde se aplicó la acción registrada |
+| `FileType` | `string` | Tipo de extensión de archivo |
+| `SHA256` | `string` | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `ThreatTypes` | `string` | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `ThreatNames` | `string` | Nombre de detección de malware u otras amenazas encontradas |
+| `DetectionMethods` | `string` | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
+| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
+| `FileSize` | `string` | Tamaño del archivo en bytes |
 
 ## <a name="related-topics"></a>Temas relacionados
 

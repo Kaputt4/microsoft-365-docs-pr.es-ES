@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51182f87eae4a26153b08c934c3f77e0164f4b8b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d0c9a8f1456aaeedbc8d296a1f738d0b2c57a156
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702066"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531548"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -31,19 +31,19 @@ ms.locfileid: "60702066"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La tabla del esquema de búsqueda avanzada contiene información sobre las direcciones URL de los correos electrónicos y los datos adjuntos procesados por `EmailUrlInfo` Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla. 
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
-| `Url` | cadena | Dirección URL completa en el asunto, el cuerpo o en los datos adjuntos del mensaje de correo electrónico |
-| `UrlDomain` | cadena | Nombre de dominio o nombre de host de la dirección URL |
-| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
+| `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
+| `NetworkMessageId` | `string` | Identificador único del correo electrónico, generado por Microsoft 365 |
+| `Url` | `string` | Dirección URL completa en el asunto, el cuerpo o en los datos adjuntos del mensaje de correo electrónico |
+| `UrlDomain` | `string` | Nombre de dominio o nombre de host de la dirección URL |
+| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

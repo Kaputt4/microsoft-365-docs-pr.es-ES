@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e8febbf47e8aa7c6d4e78bd783c5274f2b20c9af
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: a6588134ba2cdf166a465998cd0b1a4fd7134dbb
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121703"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531536"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -44,20 +44,20 @@ La tabla del esquema de búsqueda avanzada contiene la lista de & de vulnerabili
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea [la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificador único para el equipo en servicio |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
-| `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el equipo. |
-| `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
-| `SoftwareVendor` | cadena | Nombre del editor de software |
-| `SoftwareName` | cadena | Nombre del producto de software |
-| `SoftwareVersion` | cadena | Número de versión del producto de software |
-| `CveId` | cadena | Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE) |
-| `VulnerabilitySeverityLevel` | cadena | Nivel de gravedad asignado a la vulnerabilidad de seguridad basada en la puntuación CVSS y los factores dinámicos influidos por el panorama de amenazas |
-| `RecommendedSecurityUpdate` | cadena | Nombre o descripción de la actualización de seguridad proporcionada por el editor de software para solucionar la vulnerabilidad |
-| `RecommendedSecurityUpdateId` | cadena | Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes |
+| `DeviceId` | `string` | Identificador único para el equipo en servicio |
+| `DeviceName` | `string` | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
+| `OSPlatform` | `string` | Plataforma del sistema operativo que se ejecuta en el equipo. Indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 11, Windows 10 y Windows 7. |
+| `OSVersion` | `string` | Versión del sistema operativo que se ejecuta en el equipo. |
+| `OSArchitecture` | `string` | Arquitectura del sistema operativo que se ejecuta en el equipo. |
+| `SoftwareVendor` | `string` | Nombre del editor de software |
+| `SoftwareName` | `string` | Nombre del producto de software |
+| `SoftwareVersion` | `string` | Número de versión del producto de software |
+| `CveId` | `string` | Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE) |
+| `VulnerabilitySeverityLevel` | `string` | Nivel de gravedad asignado a la vulnerabilidad de seguridad basada en la puntuación CVSS y los factores dinámicos influidos por el panorama de amenazas |
+| `RecommendedSecurityUpdate` | `string` | Nombre o descripción de la actualización de seguridad proporcionada por el editor de software para solucionar la vulnerabilidad |
+| `RecommendedSecurityUpdateId` | `string` | Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes |
 
 
 

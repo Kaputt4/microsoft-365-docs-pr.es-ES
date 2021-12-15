@@ -1,5 +1,5 @@
 ---
-title: Implementar reglas de reducción de superficie de ataque (ASR)
+title: Implementar reglas de la reducción de la superficie expuesta a ataques (ASR)
 description: Proporciona instrucciones para implementar reglas de reducción de superficie de ataque.
 keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 92c8b601e9c1c766ae128f1ba290cfe9b9799644
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 9b9ef111fe704e1d65176dd90222d404d684e87e
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217883"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531328"
 ---
 # <a name="attack-surface-reduction-rules-deployment-guide"></a>Guía de implementación de reglas de reducción de superficie de ataque
 
@@ -43,7 +43,7 @@ Durante la preparación inicial, es fundamental que comprenda las capacidades de
 >[!IMPORTANT]
 >En esta guía se proporcionan imágenes y ejemplos que le ayudarán a decidir cómo configurar reglas ASR; es posible que estas imágenes y ejemplos no reflejen las mejores opciones de configuración para el entorno.
 
-Antes de empezar, revisa [Información](overview-attack-surface-reduction.md)general sobre la reducción de superficie de ataque y Desmitificando las reglas de reducción de superficie de ataque: parte [1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) para obtener información básica. Para comprender las áreas de cobertura y posible impacto, familiarícese con el conjunto actual de reglas ASR; vea [Reglas de reducción de superficie de ataque](attack-surface-reduction-rules.md).
+Antes de empezar, revisa [Información](overview-attack-surface-reduction.md)general sobre la reducción de superficie de ataque y Desmitificando las reglas de reducción de superficie de ataque: parte [1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) para obtener información básica. Para comprender las áreas de cobertura y posible impacto, familiarícese con el conjunto actual de reglas ASR; consulta [Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md).
 
 Las reglas ASR son solo una funcionalidad de las capacidades de reducción de superficie de ataque dentro de Microsoft Defender para endpoint. En este documento se detallarán más detalles sobre cómo implementar las reglas ASR de forma eficaz para detener amenazas avanzadas como ransomware operado por humanos y otras amenazas.  
 
@@ -122,13 +122,13 @@ Al igual que con cualquier implementación nueva a gran escala que podría afect
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Fase 1 de implementación de reglas ASR: plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Fase 1 de implementación de reglas de ASR: planificar](attack-surface-reduction-rules-deployment-phase-1.md)
 
 [Fase de implementación de ASR 2: prueba](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Fase 3 de implementación de reglas ASR: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
+[Fase 3 de implementación de reglas de ASR: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Fase 4 de implementación de reglas ASR: operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Fase 4 de implementación de reglas de ASR: hacer operativo](attack-surface-reduction-rules-deployment-phase-4.md)
 
 ## <a name="reference"></a>Referencia
 
@@ -150,7 +150,7 @@ Al igual que con cualquier implementación nueva a gran escala que podría afect
 
 [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
 
-[Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction-rules.md)
+[Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md)
 
 [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)
 

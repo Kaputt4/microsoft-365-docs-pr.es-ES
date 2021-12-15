@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 51762f9a2273817f926a55f8fef630cbfd7d2df1
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 34e8b1f97319e4881175c7d79629dbed83730738
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372521"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531707"
 ---
 # <a name="enable-corelight-data-integration"></a>Habilitar la integración de datos de Corelight
 
@@ -66,10 +66,12 @@ Para habilitar la integración de Corelight, deberá seguir los siguientes pasos
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>Paso 3: Configurar el dispositivo Corelight para enviar datos a Microsoft 365 Defender
 
-**Se aplica a**: Corelight Sensor software v23.2 y versiones posteriores
-
 > [!NOTE]
-> Para habilitar una versión anterior que admita el envío de datos, primero debe ejecutar: `corelight-client configuration update --enable.adfiot 1` .
+>  La integración será pública en corelight Sensor software v24 y versiones posteriores. 
+
+Para obtener una vista previa en v23 o v22.1, debe ejecutar para habilitar la sección `corelight-client configuration update --enable.adfiot 1` de configuración en la GUI.
+
+Además de esto, la validación de la GUI requiere que un agente esté configurado en la sección de configuración en todas las versiones de v23.  El agente que proporciones es necesario, pero no se usará realmente. Escriba `127.0.0.1:1234` en el campo agente _kafka_ para garantizar la validación correcta antes de seguir los pasos siguientes para habilitar el envío de datos a Microsoft 365 Defender.
 
 > [!NOTE]
 > Necesitarás conectividad a Internet para que el sensor llegue a los servicios en la nube de Defender y Corelight para que la solución funcione.
@@ -112,6 +114,6 @@ Para configurar solo el envío del conjunto mínimo de registros:
 
 La lista de registros que fluyen a Microsoft puede expandirse con el tiempo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Preguntas más frecuentes sobre la detección de dispositivo](device-discovery-faq.md)

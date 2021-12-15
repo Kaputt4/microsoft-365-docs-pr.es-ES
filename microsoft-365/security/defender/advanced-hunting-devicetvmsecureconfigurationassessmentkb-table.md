@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bf65634e38d7676eaef20386b3effa828aa46f4b
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.openlocfilehash: 81f03a665a0c825388335c925cb908f3b931a918
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61035987"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531560"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -43,18 +43,18 @@ Por ejemplo, al consultar la tabla, es posible que desee ver las configuraciones
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea [la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Descripción |
+| Nombre de columna | Tipo de datos | Description |
 |-------------|-----------|-------------|
-| `ConfigurationId` | string | Identificador único para una configuración específica |
-| `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
-| `ConfigurationName` | string | Nombre para mostrar de la configuración |
-| `ConfigurationDescription` | string | Descripción de la configuración |
-| `RiskDescription` | string | Descripción del riesgo asociado |
-| `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|
-| `ConfigurationSubcategory` | string |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
-| `ConfigurationBenchmarks` | string | Lista de bancos de pruebas del sector que recomiendan la misma configuración u otra similar |
-| `Tags` | string | Etiquetas que representan varios atributos usados para identificar o clasificar una configuración de seguridad |
-| `RemediationOptions` | string | Acciones recomendadas para reducir o solucionar los riesgos asociados |
+| `ConfigurationId` | `string` | Identificador único para una configuración específica |
+| `ConfigurationImpact` | `string` | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
+| `ConfigurationName` | `string` | Nombre para mostrar de la configuración |
+| `ConfigurationDescription` | `string` | Descripción de la configuración |
+| `RiskDescription` | `string` | Descripción del riesgo asociado |
+| `ConfigurationCategory` | `string` | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|
+| `ConfigurationSubcategory` | `string` |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
+| `ConfigurationBenchmarks` | `string` | Lista de bancos de pruebas del sector que recomiendan la misma configuración u otra similar |
+| `Tags` | `string` | Etiquetas que representan varios atributos usados para identificar o clasificar una configuración de seguridad |
+| `RemediationOptions` | `string` | Acciones recomendadas para reducir o solucionar los riesgos asociados |
 
 Puede probar esta consulta de ejemplo para devolver metadatos de configuración relevantes junto con información sobre dispositivos con configuraciones antivirus no compatibles de la `DeviceTvmSecureConfigurationAssessment` tabla:
 

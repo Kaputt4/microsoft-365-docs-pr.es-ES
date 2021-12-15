@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee45db291cef56784f254ea1af481d873d2810ca
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: a091608f7741b279b06a6289fb97b521976fc9ea
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914577"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61531890"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -59,20 +59,31 @@ Hay dos formas de crear un tipo de información confidencial:
 Use este procedimiento para crear un nuevo tipo de información confidencial y definirlo usted mismo por completo. 
 
 1. En el Centro de cumplimiento, vaya a **Clasificación** de datos Tipos de \> **información confidencial** y elija Crear tipo de información **confidencial.**
+
 2. Rellene los valores de **Nombre** y **Descripción** y elija **Siguiente**.
+
 3. Elija **Crear patrón**. Puede crear varios patrones, cada uno con diferentes elementos y niveles de confianza, a medida que defina el nuevo tipo de información confidencial.
+
 4. Elija el valor predeterminado del Nivel de confianza para el patrón. Los valores son **Confianza baja**, **Confianza media** y **Confianza alta**.
+
 5. Elegir y definir el **Elemento principal**. El elemento principal puede ser una **Expresión regular** con un validador opcional, una **lista de palabras clave**, un **diccionario de palabras clave** o una de las **funciones preconfiguradas**. Para obtener más información sobre las funciones DLP, vea [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md). Para obtener más información sobre la fecha y los validadores de suma de comprobación, vea [More information on regular expression validators](#more-information-on-regular-expression-validators).
+
 6. Rellene un valor para **Proximidad de caracteres**.
+
 7. (Opcional) Si los tiene, agregue elementos de soporte. Los elementos de soporte pueden ser una expresión regular con un validador opcional, una lista de palabras clave, un diccionario de palabras clave o una de las funciones predefinidas. Los elementos de soporte pueden tener su propia **configuración de proximidad de** caracteres. 
+
 8. (Opcional) Agregar [**comprobaciones adicionales**](#more-information-on-additional-checks) de la lista de comprobaciones disponibles.
+
 9. Seleccione **Crear**.
+
 10. Elija **Siguiente**.
+
 11. Elija el **nivel de confianza recomendado** de este tipo de información confidencial.
+
 12. Revise la configuración y elija **Enviar**.
 
-> [!IMPORTANT]
-> Microsoft 365 usa el rastreador de búsqueda para identificar y clasificar información confidencial en los sitios de SharePoint Online y OneDrive para la Empresa. Para identificar el nuevo tipo de información confidencial personalizado en el contenido existente, se necesita volver a rastrear el contenido. El contenido se rastrea en función de una programación, pero puede volver a rastrear de forma manual el contenido de una colección de sitios, lista o biblioteca. Para obtener más información, vea [Solicitar manualmente el rastreo y una nueva indexación de un sitio, una biblioteca o una lista](/sharepoint/crawl-site-content).
+    > [!IMPORTANT]
+    > Microsoft 365 usa el rastreador de búsqueda para identificar y clasificar información confidencial en los sitios de SharePoint Online y OneDrive para la Empresa. Para identificar el nuevo tipo de información confidencial personalizado en el contenido existente, se necesita volver a rastrear el contenido. El contenido se rastrea en función de una programación, pero puede volver a rastrear de forma manual el contenido de una colección de sitios, lista o biblioteca. Para obtener más información, vea [Solicitar manualmente el rastreo y una nueva indexación de un sitio, una biblioteca o una lista](/sharepoint/crawl-site-content).
 
 13. En la **clasificación de datos**, verá todos los tipos de información confidencial. Elija **Actualizar** y luego encuentre el tipo de información confidencial que ha creado con la herramienta de búsqueda o explorando.
 
@@ -81,13 +92,34 @@ Use este procedimiento para crear un nuevo tipo de información confidencial y d
 Puede probar cualquier tipo de información confidencial en la lista. Le recomendamos que pruebe todos los tipos de información confidencial que cree antes de usarlos en una directiva.
 
 1. Prepare dos archivos, por ejemplo documentos de Word. Uno debe tener contenido que coincida con los elementos especificados en el tipo de información confidencial y el otro elementos que no coincidan.
+
 2. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial de la lista para abrir el panel de detalles y elija **Probar**.
+
 3. Cargue un archivo y elija **Probar**.
+
 4. En la página **Resultados de coincidencia**, revise los resultados y, después, seleccione **Finalizar**.
+
+## <a name="custom-sensitive-information-types-limits"></a>Límites de tipos de información confidencial personalizados
+
+Para garantizar un alto rendimiento y una latencia inferior, existen limitaciones en las configuraciones de SIT personalizadas.
+
+|Límite|Valor|
+|--------|--------|
+|número máximo de SIT personalizados creados a través del Centro de cumplimiento| 500 |
+|longitud máxima de expresión regular| 1024 caracteres|
+|longitud máxima de un término determinado en una lista de palabras clave| 50 caracteres|
+|número máximo de términos en la lista de palabras clave| 2048|
+|número máximo de regexes distintos por tipo de información confidencial| 20|
+|tamaño máximo de un diccionario de palabras clave (compresión posterior)| 1 MB (~1.000.000 caracteres)|
+|número máximo de SIT basados en diccionario de palabras clave en un inquilino|50 |
+
+> [!NOTE] 
+> Si tienes una empresa que necesita crear más de 500 SIT personalizados, genera un vale de soporte técnico.
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modificar tipos personalizados de información confidencial en el Centro de cumplimiento
 
 1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial de la lista que desee modificar y seleccione **Editar**.
+
 2. Puede agregar otros patrones, con elementos únicos principales y compatibles, niveles de confianza, proximidad de caracteres y [**comprobaciones adicionales**](#more-information-on-additional-checks), o editar o quitar los existentes.
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Quitar tipos personalizados de información confidencial en el Centro de cumplimiento 
@@ -99,6 +131,7 @@ Puede probar cualquier tipo de información confidencial en la lista. Le recomen
 > Antes de quitar un tipo personalizado de información confidencial, asegúrese de que ninguna de las directivas DLP o reglas de flujo del correo de Exchange (también conocidas como reglas de transporte) hagan referencia al tipo de información confidencial.
 
 1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial de la lista que desee quitar.
+
 2. En el menú desplegable que se abre, elija **Eliminar**.
 
 ## <a name="copy-and-modify-a-sensitive-information-type"></a>Copiar y modificar un tipo de información confidencial existente
@@ -106,18 +139,31 @@ Puede probar cualquier tipo de información confidencial en la lista. Le recomen
 Use este procedimiento para crear un nuevo tipo de información confidencial que se base en un tipo de información confidencial existente. 
 
 1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial que desee copiar.
+
 2. En el menú flotante, elija **Copiar**.
+
 3. En la lista de tipos de información confidencial, seleccione **Actualizar** y examine o busque la copia que acaba de hacer. Se admite la búsqueda de cadenas parciales, por lo que puede buscar `copy` y la búsqueda le devolverá todos los tipos de información confidencial con la cadena `copy` en el nombre. 
+
 4. Rellene los valores de **Nombre** y **Descripción** y elija **Siguiente**.
+
 5. Elija su copia del tipo de información confidencial y seleccione **Editar**. 
+
 6. Asigne al tipo de información confidencial un **Nombre** y **Descripción** nuevos.
+
 7. Puede elegir editar o quitar los patrones existentes y agregar otros nuevos. Elija el valor predeterminado del Nivel de confianza para el nuevo patrón. Los valores son **Confianza baja**, **Confianza media** y **Confianza alta**.
+
 8. Elegir y definir el **Elemento principal**. El elemento principal puede ser una **Expresión regular**, una **lista de palabras clave**, un **diccionario de palabras clave** o una de las **funciones preconfiguradas**. Consulte [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md).
+
 9. Rellene un valor para **Proximidad de caracteres**.
+
 10. (Opcional) Si tiene **Elementos de apoyo** o [**Controles adicionales**](#more-information-on-additional-checks), agruégelos. Si es necesario, puede agrupar los **Elementos de apoyo**.
+
 11. Seleccione **Crear**.
+
 12. Elija **Siguiente**.
+
 13. Elija el **nivel de confianza recomendado** de este tipo de información confidencial.
+
 14. Revise la configuración y elija **Enviar**.
 
 > [!NOTE]
@@ -134,7 +180,7 @@ Use este procedimiento para crear un nuevo tipo de información confidencial que
 
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## <a name="more-information-on-regular-expression-validators"></a>Más información sobre validadores de expresiones regulares
 
@@ -142,7 +188,14 @@ También puede crear tipos de información confidencial con PowerShell y usar la
 
 Si necesita ejecutar una suma de comprobación en un dígito de una expresión regular, puede usar el *validador de suma de comprobación*. Por ejemplo, diga que necesita crear un SIT para un número de licencia de ocho dígitos donde el último dígito es un dígito de suma de comprobación que se valida con un cálculo mod 9. Ha configurado el algoritmo de suma de comprobación de este tipo:
 
-Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
+```console
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
+Mod value = Sum % 9
+If Mod value == digit 8
+    Account number is valid
+If Mod value != digit 8
+    Account number is invalid
+```
 
 1. Defina el elemento principal con esta expresión regular:
 
@@ -151,12 +204,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
    ```
 
 2. A continuación, agregue el validador de suma de comprobación.
+
 3. Agregue los valores de peso separados por comas, la posición del dígito de comprobación y el valor mod. Para obtener más información sobre la operación Modulo, vea [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
 
-> [!NOTE]
-> Si el dígito de comprobación no forma parte del cálculo de suma de comprobación, use 0 como el peso del dígito de comprobación. Por ejemplo, en el caso anterior, el peso 8 será igual a 0 si el dígito de comprobación no se va a usar para calcular el dígito de comprobación.  Modulo_operation).
+   > [!NOTE]
+   > Si el dígito de comprobación no forma parte del cálculo de suma de comprobación, use 0 como el peso del dígito de comprobación. Por ejemplo, en el caso anterior, el peso 8 será igual a 0 si el dígito de comprobación no se va a usar para calcular el dígito de comprobación.  Modulo_operation).
 
-![captura de pantalla del validador de suma de comprobación configurado.](../media/checksum-validator.png)
+   :::image type="content" alt-text="captura de pantalla del validador de suma de comprobación configurado." source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
 
 ### <a name="date-validator"></a>Validador de fechas
 
@@ -169,9 +223,10 @@ Si un valor de fecha incrustado en la expresión regular forma parte  de un nuev
    ```
 
 2. A continuación, agregue el validador de fecha.
+
 3. Seleccione el formato de fecha y el desplazamiento de inicio. Dado que la cadena de fecha es los seis primeros dígitos, el desplazamiento es `0` .
 
-![captura de pantalla del validador de fecha configurado.](../media/date-validator.png)
+   :::image type="content" alt-text="captura de pantalla del validador de fecha configurado." source="../media/date-validator.png" lightbox="../media/date-validator.png":::
 
 ### <a name="functional-processors-as-validators"></a>Procesadores funcionales como validadores
 

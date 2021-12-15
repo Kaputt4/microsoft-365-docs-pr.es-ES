@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8955c3d28b8d29a23af1def673fc3bdcfbcc8c71
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 73323e58cbb30243b0e90bdd1f45989d238d5c37
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370385"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61530960"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurar y configurar Microsoft Defender para el plan de extremo 1
 
@@ -100,7 +100,7 @@ Microsoft recomienda asignar a los usuarios solo el nivel de permiso que necesit
 
 En la tabla siguiente se describen los roles clave que se deben tener en cuenta para Defender for Endpoint en su organización: <br/><br/>
 
-| Función | Descripción |
+| Role | Descripción |
 |:---|:---|
 | Administradores globales (también denominados administradores globales) <br/><br/> *Como práctica recomendada, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que se ha registrado en su empresa para Microsoft 365 o para Microsoft Defender para el plan de extremo 1 es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos Microsoft 365 portales, como: <br/>- El Centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) <br/>- Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>- Microsoft Endpoint Manager centro de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  |
 | Administradores de seguridad (también denominados administradores de seguridad) | Los administradores de seguridad pueden realizar tareas de operador de seguridad más las siguientes tareas: <br/>- Supervisar directivas relacionadas con la seguridad <br/>- Administrar alertas y amenazas de seguridad <br/>- Ver informes |
@@ -147,7 +147,7 @@ Para configurar la protección de próxima generación en Microsoft Endpoint Man
 
 La reducción de superficie de ataque se trata de reducir los lugares y formas en que la organización está abierta al ataque. Defender for Endpoint Plan 1 incluye varias características y funcionalidades que te ayudarán a reducir las superficies de ataque en todos los puntos de conexión. Estas características y funcionalidades se enumeran en la tabla siguiente: <br/><br/>
 
-| Característica/funcionalidad | Descripción |
+| Característica/funcionalidad | Description |
 |:---|:---|
 | [Reglas de la reducción de la superficie expuesta a ataques](#attack-surface-reduction-rules) | Configure las reglas de reducción de superficie de ataque para restringir los comportamientos de riesgo basados en software y ayudar a mantener la organización segura. Las reglas de reducción de superficie de ataque se aplican a determinados comportamientos de software, como<br/>- Iniciar archivos ejecutables y scripts que intentan descargar o ejecutar archivos <br/>- Ejecución de scripts ofuscados o sospechosos <br/>- Realizar comportamientos que las aplicaciones normalmente no inician durante el trabajo diario normal <br/><br/>Estos comportamientos de software a veces se ven en aplicaciones legítimas. Sin embargo, estos comportamientos suelen considerarse riesgosos porque los atacantes suelen abusar de ellos a través del malware.  |
 | [Mitigación de ransomware](#ransomware-mitigation) | Configure la mitigación de ransomware configurando el acceso controlado a carpetas, lo que ayuda a proteger los datos valiosos de su organización frente a amenazas y aplicaciones malintencionadas, como ransomware. | 
@@ -188,7 +188,7 @@ Las reglas de reducción de superficie de ataque están disponibles en dispositi
 > [!TIP]
 > Para obtener más información sobre las reglas de reducción de superficie de ataque, consulta los siguientes recursos:
 > - [Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware](attack-surface-reduction.md)
-> - [Ver la lista de reglas de reducción de superficie de ataque](attack-surface-reduction-rules.md)
+> - [Ver la lista de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md)
 > - [Personalizar las reglas de la reducción de superficie expuesta a ataques](customize-attack-surface-reduction.md)
 
 ### <a name="ransomware-mitigation"></a>Mitigación de ransomware
