@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 59a761a9f6925816946cb655e71f5e418d6ca8de
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 4b67ab279a1d125c03df81941388626369d2cb8b
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111380"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521009"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simular un ataque de suplantación de identidad en Defender para Office 365
 
@@ -231,17 +231,27 @@ Cuando termine, haga clic en **Siguiente**.
 
 En la **página Página de** aterrizaje, se configura la página web a la que se va a llevar el usuario si abre la carga en la simulación.
 
+Las páginas de aterrizaje seleccionadas por Microsoft están disponibles en 12 idiomas: chino (simplificado), chino (tradicional), inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso, español y neerlandés.
+
 - **Seleccionar preferencia de página de aterrizaje:** los valores disponibles son:
   - **Usar la página de aterrizaje predeterminada de Microsoft:** este es el valor predeterminado que tiene las siguientes opciones asociadas para configurar:
     - **Seleccionar diseño de página de aterrizaje:** seleccione una de las plantillas disponibles.
-    - **Agregar logotipo:** haga clic **en Examinar** para buscar y seleccionar un .png, .jpeg o .gif archivo.
-    - **Agregar indicadores de carga al correo** electrónico: seleccione esta configuración para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
+    - **Agregar logotipo:** haga clic **en Examinar** para buscar y seleccionar un .png, .jpeg o .gif archivo. Para quitar el logotipo, haga clic en **Quitar**.
+    - **Agregar indicadores de carga al** correo electrónico: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o Vincular a **malware** en la [página Seleccionar](#select-a-social-engineering-technique) técnica.
+
+      Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
 
     Para obtener una vista previa de los resultados, haga clic en el **botón Abrir panel** de vista previa en la parte inferior de la página.
 
-  - **Usar una dirección URL** personalizada: si selecciona este valor, debe agregar la dirección URL en el cuadro Escriba la dirección **URL** de la página de aterrizaje personalizada que aparece. No hay otras opciones disponibles en la página.
+  - **Usar una dirección URL** personalizada: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o Vincular a **malware** en la página [Seleccionar técnica.](#select-a-social-engineering-technique)
+
+    Si selecciona **Usar una dirección URL** personalizada, debe agregar la dirección URL en el cuadro Escribir la dirección **URL** de la página de aterrizaje personalizada que aparece. No hay otras opciones disponibles en la página.
+
   - **Crear su propia página de aterrizaje:** este valor tiene las siguientes opciones asociadas para configurar:
-    - **Agregar indicadores de carga al correo** electrónico: seleccione esta configuración para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
+    - **Agregar indicadores de carga al** correo electrónico: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o Vincular a **malware** en la [página Seleccionar](#select-a-social-engineering-technique) técnica.
+
+      Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
+
     - Contenido de la página: hay dos pestañas disponibles:
       - **Texto:** hay disponible un editor de texto enriquecido para crear la página de aterrizaje. Además de la configuración típica de fuente y formato, están disponibles las siguientes opciones:
         - **Etiqueta dinámica:** seleccione entre las siguientes etiquetas:

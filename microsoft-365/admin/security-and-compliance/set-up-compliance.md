@@ -23,23 +23,34 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y ayudar a proteger la información confidencial de sus clientes y sus clientes.
-ms.openlocfilehash: 09e9e0fda6969cc89a4eb6b5a106e7db5166e869
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 69960c4f158a30d9d47d749ed1e7eb2d2d74f430
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178100"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521047"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
 Su Microsoft 365 Empresa Premium incluye características para proteger sus datos y dispositivos y ayudarle a mantener la información confidencial de sus clientes y sus clientes seguros.
 
-## <a name="set-up-dlp-features"></a>Configurar características de DLP
+## <a name="watch-set-up-dlp-features"></a>Ver: Configurar características de DLP
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
+
+Las directivas de prevención de pérdida de datos ayudan a identificar y proteger la información confidencial de su empresa, como números de seguridad social o registros médicos.
+
+1. Para empezar, vaya al Centro [de administración](https://admin.microsoft.com)y seleccione **Configurar**.
+1. Desplácese hacia abajo **hasta Configurar la prevención de pérdida de datos** y, a continuación, seleccione **Ver** y, a continuación, **Administrar**.
+1. Para editar una directiva, selecciónelo, elija **Editar directiva** y, a continuación, seleccione qué cambiar. Por ejemplo, seleccione **Ubicaciones** para cambiar lo que se examina.
+1. Para crear una nueva directiva, seleccione **Crear una directiva**.
+1. Puede crear una directiva personalizada o empezar con una plantilla. Por ejemplo, para crear una directiva HIPAA, seleccione la **plantilla** Médica y de salud y, a continuación, seleccione Ley de seguros de salud **(HIPAA)** de Estados Unidos . Seleccione **Siguiente**.
+1. Revise la configuración y seleccione **Crear**. Después de que la directiva entre en vigor, el correo electrónico que contiene la información confidencial descrita se bloquea y el remitente que intentó enviar esa información ve un mensaje de advertencia.
 
 Vea [Crear una directiva DLP a partir](../../compliance/create-a-dlp-policy-from-a-template.md) de una plantilla para obtener un ejemplo sobre cómo configurar una directiva para proteger contra la pérdida de datos personales. 
   
-DLP viene con muchas plantillas de directiva listas para usar para muchas configuraciones regionales diferentes. Por ejemplo, Australia Financial Data, Canada Personal Information Act, U.S. Financial Data, y así sucesivamente. Consulta [Qué incluyen las plantillas de directiva DLP](../../compliance/what-the-dlp-policy-templates-include.md) para obtener una lista completa. Todas estas plantillas se pueden habilitar de forma similar al ejemplo de plantilla pii. 
-  
+DLP viene con muchas plantillas de directiva listas para usar para muchas configuraciones regionales diferentes. Por ejemplo, Australia Financial Data, Canada Personal Information Act, U.S. Financial Data, y así sucesivamente. Consulta [Qué incluyen las plantillas de directiva DLP](../../compliance/what-the-dlp-policy-templates-include.md) para obtener una lista completa. Todas estas plantillas se pueden habilitar de forma similar al ejemplo de plantilla pii.
+ 
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurar la retención de correo electrónico con Archivado de Exchange Online
 
  **Archivado de Exchange Online** características de licencia ayudan a mantener el cumplimiento y los estándares normativos al conservar el contenido de correo electrónico para la exhibición de documentos electrónicos. También ayuda a reducir el riesgo si hay una demanda y proporciona una forma de recuperar datos después de una infracción de seguridad o cuando necesita recuperar elementos eliminados. Puede usar la retención por juicio para conservar todo el contenido de un usuario o usar directivas de retención para personalizar lo que desea conservar.
@@ -58,13 +69,22 @@ Para colocar un buzón en retención por juicio, en el Centro de administración
     
 **Retención:** Puede habilitar directivas de retención personalizadas, por ejemplo, para conservar durante un período de tiempo específico o eliminar contenido de forma permanente al final del período de retención. Para obtener más información, vea [Overview of retention policies](../../compliance/retention.md).
 
-## <a name="set-up-sensitivity-labels"></a>Configurar etiquetas de confidencialidad
+## <a name="watch-set-up-sensitivity-labels"></a>Ver: Configurar etiquetas de confidencialidad
 
 Las etiquetas de confidencialidad vienen con el Plan 1 de Azure Information Protection (AIP) y le ayudan a clasificar y, opcionalmente, proteger sus documentos y correos electrónicos mediante la aplicación de etiquetas. Los administradores que definen reglas y condiciones pueden aplicar automáticamente las etiquetas, manualmente por los usuarios o mediante una combinación en la que se les dan recomendaciones a los usuarios.
 
-Para configurar etiquetas de confidencialidad, vea [crear y administrar el vídeo de etiquetas de](../../business-video/create-sensitivity-labels.md) confidencialidad.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3VRGT?autoplay=false]
 
+1. En el [Centro de administración,](https://admin.microsoft.com)seleccione el **Centro de administración** de cumplimiento.
+1. Seleccione **Clasificación** y, a continuación, **Etiquetas de confidencialidad.**
+1. Seleccione **Crear una etiqueta** y, cuando aparezca la advertencia, seleccione **Sí**.
+1. Revise la configuración y seleccione **Crear**. Se ha creado la etiqueta. Repita este proceso para las etiquetas adicionales que desee.
+1. De forma predeterminada, las etiquetas aparecen Office aplicaciones en este orden: **Confidencial**, **Interna** y **Pública**. Para cambiar el orden, para cada etiqueta, seleccione los tres puntos (más acciones) y, a continuación, mueva la etiqueta hacia arriba o hacia abajo. Normalmente, los permisos se enumeran del nivel más bajo al más alto de permisos.
+1. Revise la configuración y, a continuación, **seleccione Publicar**.
 
+Para que las etiquetas funcionen, cada usuario debe descargar el cliente de etiquetado unificado de Azure Information Protection. Busque en la **webAzinfoProtection_UL.exe** y, a continuación, descárbala desde el Centro de descarga de Microsoft y la ejecute en los equipos de los usuarios.
+
+La próxima vez que abra un Aplicación de Office como Word, verá las etiquetas de confidencialidad que se crearon. Para cambiar o aplicar una etiqueta, seleccione Confidencialidad y elija una etiqueta.
 
 ### <a name="install-the-azure-information-protection-client-manually"></a>Instalar el cliente de Azure Information Protection manualmente
 

@@ -17,18 +17,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Dé a un usuario el derecho de acceder al buzón de otro, lo que le permite leer y enviar correos electrónicos desde el buzón del otro usuario.
-ms.openlocfilehash: ec014a744f47b97dd0a65b432510c2e90dea17e4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0b3871b57f9c486ca5eea6a5d121821c203f7a20
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370277"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421563"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Conceder permisos de buzón a otro usuario: Ayuda para administradores
 
@@ -111,7 +112,7 @@ Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acc
 
 
 > [!NOTE]
-> Los permisos de **Lectura** y **Administración** se llaman de **Acceso completo** cuando se otorgan en el Centro de administración de Exchange. Este permiso permite al buzón del usuario asignado leer y administrar correos electrónicos en el buzón del usuario al que se asigna el permiso. El permiso de acceso total no concede los permisos de **Enviar como** o **Enviar en nombre de**.
+> Los permisos de **Lectura** y **Administración** se llaman **Acceso completo** cuando se otorgan en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Este permiso permite al buzón del usuario asignado leer y administrar correos electrónicos en el buzón del usuario al que se asigna el permiso. El permiso de acceso total no concede los permisos de **Enviar como** o **Enviar en nombre de**.
 
 ::: moniker-end
 

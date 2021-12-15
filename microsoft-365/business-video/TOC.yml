@@ -55,8 +55,6 @@
           href: /microsoftteams/guest-experience
         - name: Chatear con empleados y clientes
           href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
-        - name: Información general sobre las reuniones en línea
-          href: overview-online-meetings.md
         - name: Programar una reunión con invitados
           href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: Unirse a una reunión con invitados
@@ -81,10 +79,6 @@
       items:
         - name: Información general sobre Bookings
           href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
-        - name: Realizar un seguimiento de la información de la empresa con Microsoft Lists
-          href: track-info-lists.md
-        - name: Planear un evento
-          href: plan-event.md
     - name: Administrar servicios
       items:
         - name: ¿Qué es un administrador?
@@ -129,17 +123,9 @@
           href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
         - name: Configurar el inicio de sesión en dos fases en el teléfono
           href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
-        - name: Administrar datos adjuntos seguros
-          href: safe-attachments.md
-        - name: Prevenir la pérdida de datos
-          href: set-up-dlp.md
-        - name: Cree etiquetas de confidencialidad
-          href: create-sensitivity-labels.md
     - name: Soporte técnico
       items:
         - name: Buscar documentos y entrenamiento
-          href: find-help-answers.md
-        - name: Configuración rápida para empleados
-          href: employee-quick-setup.md
+          href: ../admin/index.yml
     - name: Cambiar de Google Workspace
       href: moveto-microsoft-365/move-from-google-workspace-overview.md

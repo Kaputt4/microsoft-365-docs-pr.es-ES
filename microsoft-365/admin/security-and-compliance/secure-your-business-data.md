@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Cómo proteger el correo electrónico y los datos de su empresa de ciberamenazas, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: e0f2595bc6717fde3dc9d0d31e285ec2ae0a7767
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 9fbb327ff38d2de46f70c9aaa33b5217ed3c1c02
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421191"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521071"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
@@ -48,7 +48,7 @@ Microsoft 365 Empresa Premium proporciona características de protección contra
 
 Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que se aplican al plan de servicio.
 
-|*Number*|Tarea|Microsoft 365 Empresa Estándar|Microsoft 365 Empresa Premium|
+|*Number*|Task|Microsoft 365 Empresa Estándar|Microsoft 365 Empresa Premium|
 |---|---|---|---|
 |1|[Configurar la autenticación multifactor](#1-set-up-multi-factor-authentication)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Proporcionar formación a los usuarios](#2-train-your-users)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -162,7 +162,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 
 6. Seleccione **Guardar**.
     
-| Setting | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
+| Configuración | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla anti ransomware: advertir a los usuarios  <br/> |Regla anti ransomware: bloquear tipos de archivo  <br/> |
 |Aplique esta regla si . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |
@@ -173,7 +173,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 > [!TIP]
 > También puede agregar los archivos que desea bloquear a la lista Antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para más información, vea:
+Para obtener más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -197,7 +197,7 @@ Para crear una regla de transporte de correo:
 
 6. Seleccione **Guardar**.
 
-|Setting|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
+|Configuración|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
@@ -276,7 +276,7 @@ Para obtener más información, vea [Set up anti-phishing policies in Defender f
 
 Las personas envían, reciben y comparten datos adjuntos con regularidad, como documentos, presentaciones, hojas de cálculo y mucho más. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados con solo mirar un mensaje de correo electrónico. Microsoft Defender para Office 365 incluye Caja fuerte de datos adjuntos, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
 
-Para crear una directiva Caja fuerte datos adjuntos, vea un [breve vídeo de](../../business-video/safe-attachments.md)aprendizaje o siga estos pasos:
+Para crear una directiva Caja fuerte datos adjuntos, vea un [breve vídeo de](increase-threat-protection.md)aprendizaje o siga estos pasos:
 
 1. Ve a <https://protection.office.com> e inicia sesión con tu cuenta de administrador.
 

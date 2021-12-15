@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Informes en el Centro de administración: Microsoft 365 grupos'
+title: 'Microsoft 365 informes en el Centro de administración: Microsoft 365 grupos'
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe Microsoft 365 grupos para conocer los grupos y sus actividades.
-ms.openlocfilehash: 6ef375e1aab13f4ec01514967a90ce726680efbc
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4e6963f5026e62b03d95a4f499277259a6773cdb
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648872"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520853"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Informes en el Centro de administración: Microsoft 365 grupos
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 informes en el Centro de administración: Microsoft 365 grupos
 
 El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe Microsoft 365 grupos, puede obtener información sobre la actividad de los grupos de su organización y ver cuántos grupos se crean y usan.
   
@@ -58,7 +58,7 @@ El **informe** de grupos se puede ver para ver las tendencias de los últimos 7 
 |Deleted |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true. |
 |Propietario del grupo |Nombre del propietario del grupo. |
 |Fecha de última actividad (UTC) |La última fecha en la que el grupo recibió un mensaje. Es la última fecha en que hubo actividad en una conversación de correo electrónico, Yammer o el sitio. |
-|Type |Tipo de grupo. Puede ser un grupo público o privado. |
+|Tipo |Tipo de grupo. Puede ser un grupo público o privado. |
 |Correos electrónicos recibidos en Exchange |El número de mensajes recibidos por el grupo.|
 |Correos electrónicos en Exchange (total) |El número total de elementos en el buzón del grupo. |
 |Almacenamiento de buzones usado para Exchange (MB) |El almacenamiento usado por el buzón del grupo. |
@@ -75,6 +75,6 @@ El **informe** de grupos se puede ver para ver las tendencias de los últimos 7 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Microsoft 365 informes en el Centro de administración](activity-reports.md) (artículo)\
-[Informes en el Centro de & seguridad](../../compliance/reports-in-security-and-compliance.md) (artículo)\
+[Informes e información inteligentes en el Centro](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) de seguridad y & cumplimiento (artículo)\
 [Microsoft 365 informes en el centro de administración : Usuarios activos](../../admin/activity-reports/active-users-ww.md) (artículo)
 

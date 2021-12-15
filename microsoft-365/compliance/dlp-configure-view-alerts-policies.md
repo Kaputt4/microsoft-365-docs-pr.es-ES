@@ -21,18 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo definir y administrar alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 629f0e84b1118313d6968a07a24d4e27b12f0bce
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 9b8ee897502f76dbdb63e3fbac99e4223f378a1a
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785455"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521034"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurar y ver alertas para las directivas de prevención de pérdida de datos
 
 Las directivas de prevención de pérdida de datos (DLP) pueden realizar acciones de protección para evitar el uso compartido involuntario de elementos confidenciales. Cuando se hace una acción en un elemento confidencial, se le puede notificar configurando alertas para DLP. En este artículo se muestra cómo definir directivas de alerta enriquecciones vinculadas a las directivas de prevención de pérdida de datos (DLP). Verá cómo usar el nuevo panel de administración de alertas DLP en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> para ver alertas, eventos y metadatos asociados para infracciones de directivas DLP.
-
-<!-- LEFT OFF HERE-->
 
 ## <a name="features"></a>Características
 
@@ -92,11 +90,22 @@ Si es elegible para opciones de configuración de alerta [agregadas,](#licensing
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Captura de pantalla que muestra las opciones de los informes de incidentes para los usuarios que son aptos para opciones de configuración de alerta agregadas." border="false":::
 
-Puede usar estas opciones de configuración de alertas para configurar una configuración que defina la frecuencia con la que se puede producir una coincidencia de reglas DLP antes de que se desencadene una alerta. Esta configuración permite configurar una directiva para generar una alerta cada vez que una actividad coincide con las condiciones de la directiva o cuando se supera un umbral determinado, en función del número de actividades o en función del volumen de datos exfiltrados.
+Esta configuración permite configurar una directiva para generar una alerta:
 
-Si es elegible para las [opciones](#licensing-for-alert-configuration-options)de configuración de alertas de un solo evento, verá la siguiente opción de configuración de alertas en la experiencia de creación de directivas DLP. Use esta opción para crear una alerta que se genera cada vez que se produce una coincidencia de regla DLP debido a una actividad del usuario.
+- cada vez que una actividad coincide con las condiciones de la directiva
+- cuando se cumple o se supera el umbral definido
+- en función del número de actividades
+- en función del volumen de datos exfiltrados
 
-:::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="Captura de pantalla que muestra las opciones de los informes de incidentes para los usuarios que son aptos para opciones de configuración de alertas de un solo evento." border="false":::
+Para evitar una inundación de mensajes de correo electrónico de notificación, todas las coincidencias que se producen en una ventana de tiempo de un minuto y son para la misma regla DLP y en la misma ubicación se agrupan en la misma alerta. La característica de ventana de tiempo de agregación de un minuto está disponible en: 
+
+- Una suscripción A5 o G5
+- Una suscripción E1, F1 o G1 o una suscripción A3 o G3 que incluye una de las siguientes características:
+    - Protección contra amenazas avanzada de Office 365 (plan 2)
+    - Cumplimiento de Microsoft 365 E5
+    - Microsoft 365 de complementos de eDiscovery y Audit
+ 
+Para las organizaciones que tienen una suscripción A1, F1 o G1 o una suscripción A3 o G3, la ventana de tiempo de agregación es de 15 minutos.
 
 ## <a name="dlp-alert-management-dashboard"></a>Panel de administración de alertas DLP
 

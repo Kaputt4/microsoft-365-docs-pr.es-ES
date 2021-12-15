@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo identificar los diferentes tipos de retención que se pueden colocar en un buzón Exchange Online en Microsoft 365.
-ms.openlocfilehash: 708d6e18428d090a6ba5291aea95e1a690dac556
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 669f1543bddfe88d89b6ec046afd82f4ec11791a
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422536"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520985"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -169,16 +169,19 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 
 ## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>Identificación de buzones en espera porque se ha aplicado una etiqueta de retención a una carpeta o elemento
 
-Cada vez que un usuario aplica una etiqueta de retención configurada para retener contenido o retener y, a continuación, eliminar contenido a cualquier carpeta o elemento de su buzón, la propiedad de buzón *ComplianceTagHoldApplied* se establece en **True**. Cuando esto sucede, se considera que el buzón está en espera, como si se hubiera colocado en retención por juicio o se hubiera asignado a una directiva Microsoft 365 retención. Cuando la *propiedad ComplianceTagHoldApplied* se establece en **True**, pueden ocurrir lo siguiente:
+Cada vez que un usuario aplica una  etiqueta  de retención configurada para retener o conservar y, a continuación, eliminar contenido en cualquier carpeta o elemento de su buzón, la propiedad de buzón *ComplianceTagHoldApplied* se establece en **True**. Cuando esto sucede, el buzón se trata de forma similar a si se colocó en espera, como cuando se asigna a una directiva de retención de Microsoft 365 o se coloca en retención por juicio, sin embargo, con algunas advertencias. Cuando la *propiedad ComplianceTagHoldApplied* está establecida en **True**, se producen las siguientes cosas:
 
-- Si se elimina el buzón o la cuenta de usuario del usuario, el buzón se convierte en [un buzón inactivo.](inactive-mailboxes-in-office-365.md)
+- Si se elimina el buzón o la cuenta Microsoft 365 del usuario, el buzón se convierte en [un buzón inactivo.](inactive-mailboxes-in-office-365.md)
 - No puede deshabilitar el buzón (ya sea el buzón principal o el buzón de archivo, si está habilitado).
-- Los elementos del buzón pueden conservarse más tiempo del esperado. Esto se debe a que el buzón está en espera y, por lo tanto, no se elimina ningún elemento de forma permanente (purgado).
+- Los elementos que se han eliminado del buzón seguirán un proceso diferente al de cuando no se aplica ninguna retención:
+    - **Los elementos sin etiqueta** se conservarán inicialmente ligeramente más tiempo que si no se aplicara ninguna retención al buzón.  El tiempo que tardan estos elementos en eliminarse [](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) permanentemente viene determinado por la configuración de retención de elementos eliminados y el tiempo que tarda el elemento en llegar a la subcarpeta Purgas de la carpeta elementos [recuperables](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder).
+    - **Los elementos etiquetados** se conservarán y, a continuación, se eliminarán del mismo modo que lo serían si se aplicara una directiva de retención Microsoft 365, pero en el nivel de elemento individual.  Si varios elementos tienen etiquetas  diferentes  que están configuradas para conservar o conservar y, a continuación, eliminar contenido a intervalos diferentes, cada elemento se conservará en función de la configuración de la etiqueta aplicada.
+- Otras retenciones, como las directivas de retención Microsoft 365, las retenciones de exhibición de documentos electrónicos o la retención por juicio pueden extender cuánto tiempo se conservan los elementos [etiquetados](retention.md#the-principles-of-retention-or-what-takes-precedence)en función de las entidades de seguridad de retención .
 
-Para ver el valor de la *propiedad ComplianceTagHoldApplied,* ejecute el siguiente comando en Exchange Online PowerShell:
+Para ver el valor de la *propiedad ComplianceTagHoldApplied* para un único buzón, ejecute el siguiente comando en Exchange Online PowerShell:
 
 ```powershell
-Get-Mailbox <username> |FL ComplianceTagHoldApplied
+Get-Mailbox <username> | FL ComplianceTagHoldApplied
 ```
 
 Para obtener más información acerca de las etiquetas de retención, vea [retention labels](retention.md#retention-labels).
@@ -205,7 +208,7 @@ Para quitar la retención de retraso antes de que expire, puede ejecutar uno (o 
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -219,7 +222,7 @@ Para quitar la retención de retraso en un buzón inactivo, ejecute uno de los s
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied

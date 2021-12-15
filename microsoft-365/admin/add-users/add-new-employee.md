@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Agregue nuevos empleados a Microsoft 365 para empresas para correo electrónico, Skype y Office aplicaciones.
-ms.openlocfilehash: 83565c6db281ee9366d9ba383ead2c3a0ba1ee1b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 870339abe3f06d9ed819836993e6fdb7a772084b
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161995"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520841"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Agregar un nuevo empleado a Microsoft 365
 
@@ -73,11 +73,11 @@ Al igual que Facebook, Amazon o Gmail, el empleado inicia sesión para usar Micr
 ## <a name="step-4-help-your-employee-get-started"></a>Paso 4: Ayudar a su empleado a empezar
 
 
-Comparta con ellos la [configuración rápida employee Microsoft 365](../../business-video/employee-quick-setup.md) para iniciar sesión, instalar software, configurar el correo electrónico y mucho más. 
+Comparta con ellos la [configuración rápida employee Microsoft 365](../setup/employee-quick-setup.md) para iniciar sesión, instalar software, configurar el correo electrónico y mucho más. 
   
 Y esta es una referencia rápida para ayudarles a empezar:
   
-|**Tarea**|**Buscar los detalles**|
+|**Task**|**Buscar los detalles**|
 |:-----|:-----|
 |Iniciar sesión en Office  <br/> |Vaya a [https://www.office.com](https://www.office.com) , seleccione Iniciar **sesión** y, a continuación, escriba su id. de usuario y contraseña.  <br/> |
 |Instala Office aplicaciones en el equipo.  <br/><br/> |Al iniciar sesión, la página principal tiene un vínculo para descargar e instalar aplicaciones como Word y Outlook.  Seleccione **Instalar Office**.         Para obtener instrucciones, [vea How to install Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |
@@ -85,7 +85,7 @@ Y esta es una referencia rápida para ayudarles a empezar:
 |Configure Skype Empresarial para que pueda conectarse con compañeros de trabajo o socios comerciales de su empresa o de todo el mundo. Puedes iniciar conversaciones con llamadas de mensajería instantánea, de voz o de vídeo.  <br/> |[Instale Skype Empresarial en el equipo](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb).  <br/> <br/>Para obtener información sobre cómo usar Skype Empresarial, [vea un vídeo.](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>¿Has configurado Skype Empresarial para que tus empleados puedan ponerse en contacto con personas externas a tu empresa que usan la aplicación Skype gratuita? Si no es así, informe a su nuevo empleado para que sepa qué esperar al usar Skype Empresarial.  <br/> |
 |Instala aplicaciones en tu dispositivo móvil si quieres recibir correo electrónico o usar Skype Empresarial en el teléfono.  <br/> |Si quieres configurar la aplicación Outlook móvil para que puedas obtener correo electrónico a través de tu teléfono. Para obtener instrucciones, [consulta iOS](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234), [Android](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872), [Windows Phone](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>Si quieres usar Skype Empresarial en el dispositivo móvil, descarga e instala la aplicación móvil. Para obtener instrucciones, [consulta iOS](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android), [Windows Phone](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |Complete el OneDrive para la Empresa para ayudarle a aprender a almacenar y organizar sus documentos, presentaciones y hojas de cálculo en la nube.  <br/> |Mantenga los documentos relacionados con la empresa en la nube mediante OneDrive para la Empresa. Siempre puedes acceder al contenido, incluso si has iniciado sesión en Microsoft 365 en un equipo diferente. [Vea un vídeo para aprender a usar su OneDrive para la Empresa](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Formación: OneDrive para la Empresa** [aprendizaje](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (Seleccione OneDrive para la Empresa).  <br/> |
-|Complete el SharePoint online para ayudarle a colaborar con compañeros de trabajo y compartir contenido.  <br/> |El mejor lugar para conservar documentos a los que también tendrán acceso sus compañeros de trabajo es en SharePoint Online.  <br/> <br/>**Formación:** [Vídeo: Colaborar con el contenido del equipo mediante SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Descóye:** Cómo usa su organización SharePoint Online y qué tipo de documentos se almacenan allí. Además, qué documentos se almacenan en OneDrive para la Empresa.  <br/> |
+|Complete el SharePoint online para ayudarle a colaborar con compañeros de trabajo y compartir contenido.  <br/> |El mejor lugar para conservar documentos a los que también tendrán acceso sus compañeros de trabajo es en SharePoint Online.  <br/> <br/>**Formación:** [Vídeo: Colaborar con el contenido del equipo mediante SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Descúbrelo:** Cómo usa su organización SharePoint Online y qué tipo de documentos se almacenan allí. Además, qué documentos se almacenan en OneDrive para la Empresa.  <br/> |
 
 ## <a name="related-content"></a>Contenido relacionado
 

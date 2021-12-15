@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar una etiqueta de confidencialidad a un modelo en SharePoint Syntex.
-ms.openlocfilehash: 006b3bf8973e7ce2772c20d1766f054e7b38cc9d
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 624b441084b418d2bcfc3ab6b623da0f5a969fe8
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792369"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61521119"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Aplicar una etiqueta de confidencialidad a un modelo en Microsoft SharePoint Syntex
 
@@ -29,7 +29,7 @@ Las etiquetas de confidencialidad permiten aplicar cifrado a los documentos que 
 Puede aplicar una etiqueta de confidencialidad preexistente al modelo en la página principal del modelo. Para que esté disponible en la selección desde la configuración del modelo, la etiqueta ya debe haberse publicado.
 
 > [!Important]
-> Para que las etiquetas de confidencialidad estén disponibles para aplicarlas a su modelo de comprensión mediante documentos, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](../business-video/create-sensitivity-labels.md).
+> Para que las etiquetas de confidencialidad estén disponibles para aplicarlas a su modelo de comprensión mediante documentos, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](../admin/security-and-compliance/set-up-compliance.md).
 
 ## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>Agregar una etiqueta de confidencialidad a un modelo de comprensión mediante documentos
 
@@ -76,7 +76,7 @@ Por ejemplo, en todos los documentos financieros que identifique el modelo tambi
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../business-video/create-sensitivity-labels.md).
+> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../admin/security-and-compliance/set-up-compliance.md).
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: a6612a14a4a583cf3b61cf7b678fbdc1d1055dc6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c427bdbe26c93e8f8854c5357bb218d0728904b6
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60662224"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520805"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatización de la simulación para el aprendizaje de simulación de ataques
 
@@ -77,7 +77,7 @@ Si selecciona **Randomize**, no hay nada que configurar en esta página, por lo 
 Si selecciona **Manualmente,** debe seleccionar una o más cargas de la lista. Se muestran los siguientes detalles para ayudarle a elegir:
 
 - **Nombre de carga**
-- **Técnica:** debe seleccionar como una carga por técnica que seleccionó en la página anterior.
+- **Técnica:** debe seleccionar al menos una carga por técnica seleccionada en la página anterior.
 - **Language:** el idioma del contenido de carga. El catálogo de carga útil (global) de Microsoft proporciona cargas en más de 10 idiomas que también se pueden filtrar.
 - **Tasa de clics:** cuántas personas han hecho clic en esta carga.
 - **Tasa de compromiso predicho:** datos históricos de la carga en Microsoft 365 que predice el porcentaje de personas que se verán comprometidas por esta carga.
@@ -93,7 +93,7 @@ Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
   - **Alta**
 - **Source:** indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores admitidos son:
   - **Global**
-  - **Tenant**
+  - **Espacio empresarial**
   - **Todo**
 - **Idioma**: Los valores disponibles son: **inglés** **,** español , alemán , japonés **,** francés **,** portugués **,** neerlandés **,** **italiano** **,** sueco , chino **(simplificado)** **,** noruego **Bokmål**, polaco **,** ruso **,** finlandés **,** coreano **,** turco **,** húngaro **,** hebreo , **tailandés**, **árabe**, **vietnamita**, eslovaco  ****, **Griego**, **indonesio**, **rumano**, **esloveno**, **croata,** **catalán** y **otros**.
 - **Agregar etiquetas**
@@ -226,12 +226,58 @@ Cuando termine, haga clic en **Siguiente**.
 
 ### <a name="landing-page"></a>Página de aterrizaje
 
-En la **página Página de aterrizaje,** configura la página de aterrizaje de aprendizaje que los usuarios ven. Estas son las opciones de configuración disponibles:
+En la **página Página de** aterrizaje, se configura la página web a la que se va a llevar el usuario si abre la carga en la simulación.
 
-- **Header**
-- **Cuerpo**
+- **Seleccionar preferencia de página de aterrizaje:** los valores disponibles dependen de las selecciones anteriores en la página [Seleccionar cargas,](#select-payloads) como se describe en la tabla siguiente:
 
-Puede aceptar los valores predeterminados o personalizarlos.
+  <br>
+
+  ****
+
+  |Selección en la página Seleccionar cargas|Valores disponibles para Seleccionar preferencia de página de aterrizaje|
+  |---|---|
+  |Selección manual|Usar la página de aterrizaje predeterminada de Microsoft <p> Crear su propia página de aterrizaje <p> Usar una dirección URL personalizada <p> **Nota:** El **valor Usar una dirección URL** personalizada no está disponible si seleccionó previamente Datos [adjuntos](#select-one-or-more-social-engineering-techniques) de **malware** o Vincular a **malware** en la página Seleccionar técnicas de ingeniería social.|
+  |Randomize|Usar la página de aterrizaje predeterminada de Microsoft|
+  |
+
+  En la siguiente lista **se** describen los valores de preferencia seleccionar página de aterrizaje disponibles y su configuración asociada:
+
+  - **Use la página de aterrizaje predeterminada de Microsoft**. Este es el valor predeterminado y da como resultado una acción de indicador de carga, logotipo y plantilla predeterminada de Microsoft que se aplica a todas las cargas.
+
+    Debe configurar las siguientes opciones adicionales en la página **Página de** aterrizaje:
+
+    - **Seleccionar diseño de página de aterrizaje:** seleccione una de las 5 plantillas de página de aterrizaje disponibles.
+    - **Agregar logotipo:** **haga** clic en Examinar para buscar y seleccionar un archivo .png, .jpeg o .gif para agregar a todas las cargas seleccionadas por Microsoft. Para quitar el logotipo, haga clic en **Quitar**.
+    - **Indicadores de carga:** esta configuración no está disponible si seleccionó previamente Datos [adjuntos](#select-one-or-more-social-engineering-techniques) de **malware** o Vincular a **malware** en la página Seleccionar técnicas de ingeniería social.
+
+      Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
+
+    Puede obtener una vista previa de los resultados haciendo clic en el **botón Abrir panel** de vista previa en el centro de la página. En el menú desplegable de vista previa que aparece, puedes usar Seleccionar carga **para** obtener una vista previa para ver cómo es cada carga.
+
+  - **Crear su propia página de aterrizaje:** este valor da como resultado una acción de indicador de carga única que se aplica a las cargas seleccionadas.
+
+    Debe configurar las siguientes opciones adicionales en la página **Página de** aterrizaje:
+
+    - **Indicadores de carga:** esta configuración no está disponible si seleccionó previamente Datos [adjuntos](#select-one-or-more-social-engineering-techniques) de **malware** o Vincular a **malware** en la página Seleccionar técnicas de ingeniería social.
+
+      Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
+
+    - Contenido de la página: hay dos pestañas disponibles:
+
+      - **Texto:** hay disponible un editor de texto enriquecido para crear la página de aterrizaje. Además de la configuración típica de fuente y formato, están disponibles las siguientes opciones:
+        - **Etiqueta dinámica:** seleccione entre las siguientes etiquetas:
+          - **Username**
+          - **Nombre del remitente de correo electrónico**
+          - **Dirección de correo electrónico del remitente**
+          - **Asunto del correo electrónico**
+          - **Contenido de correo electrónico**
+        - **Usar de forma predeterminada:** seleccione una de las 5 plantillas de página de aterrizaje disponibles para empezar. Puede modificar el texto y el diseño en el área de edición. Para restablecer la página de aterrizaje al texto predeterminado y el diseño de la plantilla, haga clic **en Restablecer a valor predeterminado**.
+        - **Vínculo de aprendizaje:** en el cuadro de diálogo Dirección **URL** de aprendizaje  de nombre que aparece, escriba un título de vínculo para el vínculo de aprendizaje y, a continuación, haga clic en Confirmar para agregar el vínculo a la página de aterrizaje.
+      - **Código:** puede ver y modificar el código HTML directamente.
+
+      Puede obtener una vista previa de los resultados haciendo clic en el **botón Abrir panel** de vista previa en el centro de la página. En el menú desplegable de vista previa que aparece, puedes usar Seleccionar carga **para** obtener una vista previa para ver cómo es cada carga.
+
+  - **Usar una dirección URL** personalizada: agregue la dirección URL en el cuadro **Escribir la dirección URL de** la página de aterrizaje personalizada que aparece. No hay otras opciones disponibles en la página.
 
 Cuando termine, haga clic en **Siguiente**.
 
@@ -281,7 +327,7 @@ En la **página Detalles del** inicio, configure las siguientes opciones adicion
 - **Infractores reincidentes de destino:** de forma predeterminada, esta configuración no está seleccionada. Si lo selecciona, configure la siguiente configuración que aparece:
   - **Escriba el número máximo de veces que un** usuario puede ser dirigido dentro de esta automatización: escriba un valor de 1 a 10.
 - **Enviar correo electrónico de simulación** en función de la configuración de zona horaria actual del usuario desde Outlook aplicación web: de forma predeterminada, esta configuración no está seleccionada.
-- Mostrar la página de datos **intersticiales** de la técnica de unidad por : esta configuración solo está disponible si seleccionó dirección **URL** de unidad por en la página Seleccionar una o más técnicas de ingeniería **[social.](#select-one-or-more-social-engineering-techniques)** De forma predeterminada, la configuración está en ( ![ Icono Activar. ](../../media/scc-toggle-on.png) ).
+- Mostrar la página de datos **intersticiales** de la técnica de unidad por : esta configuración solo está disponible si seleccionó dirección **URL** de unidad por en la página Seleccionar técnicas de ingeniería **[social.](#select-one-or-more-social-engineering-techniques)** De forma predeterminada, la configuración está en ( ![ Icono Activar. ](../../media/scc-toggle-on.png) ).
 
 ## <a name="review-simulation-automation"></a>Revisar la automatización de simulación
 

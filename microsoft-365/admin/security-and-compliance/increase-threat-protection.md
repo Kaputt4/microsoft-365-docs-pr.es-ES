@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 proteger los datos confidenciales frente a la suplantación de identidad(phishing), malware y otras amenazas.
-ms.openlocfilehash: 7b19f73a08dc34821f755a64cd0dda502ef4a144
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 20e939b0717e73e3148b3bbaf93e3190414609d4
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421323"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520997"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -98,7 +98,7 @@ Para crear una regla de transporte de correo:
 
 6. Seleccione **Guardar**.
 
-|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Cualquier dato adjunto . . . extensión de archivo coincide con . . .|
@@ -106,7 +106,7 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
 |Proporcionar texto del mensaje|No abra estos tipos de archivos de personas que no conoce porque pueden contener macros con código malintencionado.|
 
-Para más información, vea:
+Para obtener más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -130,7 +130,7 @@ Para crear una regla de transporte de correo, siga estos pasos:
 
 6. Seleccione **Guardar**.
 
-|Setting|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
+|Configuración|Advertir a los usuarios antes de abrir datos adjuntos Office archivos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
@@ -169,11 +169,24 @@ Se recomienda empezar a usar esta protección mediante la creación de una direc
 |Agregar dominios y remitentes de confianza|Aquí puede agregar su propio dominio o cualquier otro dominio de confianza.|
 |Aplicado a|Seleccione **El dominio del destinatario es**. En **Cualquiera de estos**, seleccione **Elegir**. Seleccione **+ Agregar**. Active la casilla situada junto al nombre del dominio, por ejemplo, *contoso. <span> <span> com*, en la lista y, a continuación, **seleccione Agregar**. Seleccione **Listo**.|
 
-## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Proteger contra archivos adjuntos y archivos malintencionados con Caja fuerte adjuntos
+## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Watch: Protect against malicious attachments and files with Caja fuerte Attachments
 
-Las personas envían, reciben y comparten datos adjuntos con regularidad, como documentos, presentaciones, hojas de cálculo y mucho más. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados con solo mirar un mensaje de correo electrónico. Microsoft Defender para Office 365 incluye Caja fuerte de datos adjuntos, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
+Las personas envían, reciben y comparten datos adjuntos con regularidad, como documentos, presentaciones, hojas de cálculo y mucho más. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados con solo mirar un mensaje de correo electrónico. Microsoft Defender para Office 365, anteriormente denominado ATP Microsoft 365, o Protección contra amenazas avanzada, incluye Caja fuerte protección de datos adjuntos, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
 
-Para crear una directiva Caja fuerte datos adjuntos, vea [este breve vídeo](../../business-video/safe-attachments.md)o complete los pasos siguientes:
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
+
+1. Vaya al Centro [de administración](https://admin.microsoft.com)y seleccione **Configurar**.
+1. Desplácese hacia abajo **hasta Aumentar la protección contra amenazas avanzadas.** Seleccione **Ver**, **Administrar** y, a continuación, **Datos adjuntos seguros de ATP.**
+1. Seleccione la regla de datos adjuntos seguros y, a continuación, elija el **icono** Editar.
+1. Seleccione **la configuración** y, a continuación, compruebe que Bloque está seleccionado.
+1. Desplácese hacia abajo. Elija **Habilitar redireccionamiento** y escriba su dirección de correo electrónico o la dirección de la persona a la que desea revisar los datos adjuntos bloqueados.
+1. Seleccione **aplicado a** y, a continuación, seleccione el nombre de dominio.
+1. Elija los dominios adicionales que posee (como el dominio onmicrosoft.com) a los que quiera que se aplique la regla. Seleccione **agregar** y, a continuación, **Aceptar**.
+1. Seleccione **Guardar**.
+
+Se ha actualizado la regla de datos adjuntos seguros de ATP. Ahora que la protección está en su lugar, no podrá abrir un archivo malintencionado desde Outlook, OneDrive, SharePoint o Teams. Los archivos afectados tendrán escudos rojos junto a ellos. Si alguien intenta abrir un archivo bloqueado, recibirá un mensaje de advertencia.
+
+Después de que la directiva haya estado en su lugar durante un tiempo, visite la página Informes para ver lo que se ha analizado.
 
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta de administrador.
 
@@ -243,7 +256,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Name|Caja fuerte de vínculos para todos los destinatarios del dominio|
+|Nombre|Caja fuerte de vínculos para todos los destinatarios del dominio|
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes|Seleccionar Activado: las direcciones URL se reescribirán y comprobarán en una lista de **vínculos malintencionados** conocidos cuando el usuario haga clic en el vínculo .|
 |Usar Caja fuerte datos adjuntos para examinar el contenido descargable|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|

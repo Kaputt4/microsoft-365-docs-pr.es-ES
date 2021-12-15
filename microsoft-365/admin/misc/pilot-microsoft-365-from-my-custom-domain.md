@@ -14,17 +14,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: c428d070d0d4c20034a5a2a6ab94c8896549ea90
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bde6daacba3e7adad1a69748074638e651445d8f
+ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176132"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61421335"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -136,7 +137,7 @@ Asegúrese de que ha realizado lo siguiente en Microsoft 365 u Office 365:
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurar un conector desde Microsoft 365 u Office 365 hacia su servidor de correo electrónico
 
-Para crear un conector en Microsoft 365 u Office 365, haga clic en **admin** y, a continuación, haga clic en **Exchange** para ir al Centro de administración de Exchange. A continuación, haga clic en **flujo de correo** y, a continuación, haga clic en **conectores**.
+Para crear un conector en Microsoft 365 u Office 365, seleccione **Administrador** > **Exchange** para ir al Centro de administración de Exchange. A continuación, seleccione **flujo de correo** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**conectores**</a>.
 
 Configure los conectores con el asistente.
 

@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d4e0cb56d6aad0b26bea145439b806080982dfe5
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: ca7c19066847b3a1aa5ad5a971315e3962fc08b7
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907936"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520913"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "60907936"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Las directivas para configurar las opciones de protección contra suplantación de identidad están disponibles en organizaciones de Microsoft 365 con buzones de Exchange Online, organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online y Microsoft Defender para Office 365 organizaciones.
+Las directivas para configurar la configuración de protección contra suplantación de identidad están disponibles en organizaciones de Microsoft 365 con buzones de Exchange Online, organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online y Microsoft Defender para Office 365 organizaciones.
 
 Algunos ejemplos de Microsoft Defender para Office 365 organizaciones incluyen:
 
@@ -100,7 +100,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
 
 - **Habilitar la inteligencia de suplantación:** activa o desactiva la inteligencia de suplantación. Le recomendamos que lo deje activado.
 
-  Cuando la inteligencia de suplantación de identidad está habilitada, la información de inteligencia suplantada muestra remitentes suplantados que se detectaron y permitieron o bloquearon automáticamente mediante la inteligencia de suplantación de identidad.  Puede invalidar manualmente el veredicto de suplantación de identidad para permitir o bloquear los remitentes suplantados detectados desde dentro de la información. Pero, cuando lo hace, el remitente suplantado desaparece de la información de  inteligencia suplantada y ahora solo está visible en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados en la lista de inquilinos permitidos o bloqueados. Para obtener más información, consulte los siguientes artículos:
+  Cuando la inteligencia de suplantación de identidad está habilitada, la información de inteligencia suplantada muestra remitentes suplantados que se detectaron y permitieron o bloquearon automáticamente mediante la inteligencia de suplantación de identidad.  Puede invalidar manualmente el veredicto de suplantación de identidad para permitir o bloquear los remitentes suplantados detectados desde dentro de la información. Pero, cuando lo hace, el remitente suplantado desaparece de la información de  inteligencia suplantada y ahora solo está visible en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del espacio empresarial. También puede crear manualmente entradas de permitir o bloquear para remitentes suplantados en la lista de inquilinos permitidos o bloqueados. Para más información, consulte los siguientes artículos:
 
   - [Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md)
   - [Administrar la lista de inquilinos permitidos o bloqueados en EOP](tenant-allow-block-list.md)
@@ -108,7 +108,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
   > [!NOTE]
   >
   > - La protección contra la suplantación de identidad está habilitada de forma predeterminada en la directiva contra suplantación de identidad predeterminada y en cualquier nueva directiva contra suplantación de identidad personalizada que cree.
-  > - No es necesario deshabilitar la protección contra la suplantación si el registro MX no apunta a Microsoft 365; habilitar el filtrado mejorado para conectores en su lugar. Para obtener instrucciones, consulte [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > - No es necesario deshabilitar la protección contra la suplantación si el registro MX no apunta a Microsoft 365; en su lugar, habilita el filtrado mejorado para conectores. Para obtener instrucciones, consulte [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   > - Deshabilitar la protección contra la suplantación solo deshabilita la protección de suplantación implícita de las comprobaciones de [autenticación](email-validation-and-authentication.md#composite-authentication) compuesta.  Si el remitente produce un error _en las_ comprobaciones [de DMARC](use-dmarc-to-validate-email.md) explícitas en las que la directiva está establecida en cuarentena o rechazada, el mensaje sigue en cuarentena o rechazado.
 
 - **Notificaciones de remitente no autenticadas:** estas notificaciones solo están disponibles cuando la inteligencia de suplantación de identidad está activada. Vea la información en la sección siguiente.
@@ -125,7 +125,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
 
 Las notificaciones de remitente no autenticados [](#spoof-settings) forman parte de la configuración de suplantación de identidad que están disponibles en las directivas contra suplantación de identidad en EOP y Defender para Office 365 como se describe en la sección anterior. La siguiente configuración solo está disponible cuando la inteligencia de suplantación está activada:
 
-- **Mostrar (?)** para remitentes no autenticados para suplantación de identidad: Esta notificación agrega un signo de interrogación se agrega a  la foto del remitente en el cuadro De si el mensaje no pasa comprobaciones SPF o DKIM y el mensaje no pasa dmarc o autenticación compuesta [.](email-validation-and-authentication.md#composite-authentication) Cuando esta configuración está desactivada, el signo de interrogación no se agrega a la foto del remitente.
+- **Mostrar (?)** para remitentes no autenticados para suplantación de identidad: esta notificación agrega un signo de interrogación a la  foto del remitente en el cuadro De si el mensaje no pasa comprobaciones SPF o DKIM y el mensaje no pasa dmarc o autenticación compuesta [.](email-validation-and-authentication.md#composite-authentication) Cuando esta configuración está desactivada, el signo de interrogación no se agrega a la foto del remitente.
 
 - **Mostrar etiqueta "via":** esta notificación agrega la etiqueta via (chris@contoso.com a través de <u>fabrikam.com)</u> en el cuadro De si el dominio de la dirección De (el remitente del mensaje que se muestra en los clientes de correo electrónico) es diferente del dominio de la firma DKIM o la dirección **MAIL FROM.** Para obtener más información acerca de estas direcciones, vea [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
@@ -168,7 +168,7 @@ En esta sección se describe la configuración de directiva que solo está dispo
 La suplantación es donde el remitente o el dominio de correo electrónico del remitente en un mensaje tiene un aspecto similar al de un remitente o dominio real:
 
 - Un ejemplo de suplantación del dominio contoso.com es ćóntoso.com.
-- Un ejemplo de suplantación del usuario michelle@contoso.com es michele@contoso.com.
+- La suplantación de usuario es la combinación del nombre para mostrar y la dirección de correo electrónico del usuario. Por ejemplo, Valeria Barrios (vbarrios@contoso.com) podría suplantarse como Valeria Barrios, pero con una dirección de correo electrónico completamente diferente.
 
 > [!NOTE]
 > La protección de suplantación busca dominios similares. Por ejemplo, si el dominio es contoso.com, buscamos diferentes dominios de nivel superior (.com, .biz, etc.) como intentos de suplantación, pero también dominios que son incluso algo similares. Por ejemplo, contosososo.com o contoabcdef.com pueden verse como intentos de suplantación de contoso.com.
