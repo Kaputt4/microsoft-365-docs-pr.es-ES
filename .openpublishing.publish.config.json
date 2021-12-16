@@ -4,7 +4,7 @@
       "docset_name": "Microsoft-365-docs",
       "build_source_folder": "microsoft-365",
       "build_output_subfolder": "Microsoft-365-docs",
-      "locale": "es-es",
+      "locale": "es-ES",
       "monikers": [],
       "moniker_ranges": [
         "o365-21vianet",
@@ -38,7 +38,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.es-es",
+      "url": "https://github.com/Microsoft/templates.docs.msft.es-ES",
       "branch": "master",
       "branch_mapping": {}
     },
