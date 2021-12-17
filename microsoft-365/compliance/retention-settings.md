@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 049181657dd74639fb4c4a22e371015830baf19a
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 81a5219826fc1f8e4bc43a54d0687306738a57da
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282986"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520937"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -158,23 +158,30 @@ Para ejecutar una consulta con PowerShell:
 
 1. [Conectarse a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) usando una cuenta con [permisos de administrador de Exchange Online adecuados](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet)
 
-2. Use [Get-Recipient](/powershell/module/exchange/get-recipient) o [Get-Mailbox](/powershell/module/exchange/get-mailbox) con el parámetro *-Filter* y la [consulta OPATH](/powershell/exchange/filter-properties) para el ámbito adaptable entre corchetes (`{`, `}`). Si los valores de atributo incluyen espacios, escríbalos entre comillas dobles o simples. 
+2. Use [Get-Recipient](/powershell/module/exchange/get-recipient) o [Get-Mailbox](/powershell/module/exchange/get-mailbox) con el parámetro *-Filter* y la [consulta OPATH](/powershell/exchange/filter-properties) para el ámbito adaptable entre corchetes (`{`, `}`). Si los valores de atributo son cadenas, escríbalos entre comillas dobles o simples.  
 
-    Si va a validar un ámbito de **usuario**, incluya `-RecipientTypeDetails UserMailbox` en el comando, para los ámbitos de **grupo de Microsoft 365**, incluya `-RecipientTypeDetails GroupMailbox`.
+    Puede determinar si desea usar `Get-Mailbox` o `Get-Recipient` para la validación mediante la identificación del cmdlet que admite la [propiedad OPATH](/powershell/exchange/filter-properties) que elija para su consulta.
 
-    > [!TIP]
-    > Puede determinar si se va a validar mediante`Get-Mailbox` o `Get-Recipient` en función de en qué cmdlets decida usar las [propiedades de OPATH](/powershell/exchange/filter-properties) en la compatibilidad con consultas.
+    > [!IMPORTANT]
+    > `Get-Mailbox` no admite el tipo de destinatario *MailUser*, por lo que `Get-Recipient` debe usarse para validar consultas que incluyan buzones locales en un entorno híbrido.
+
+    Para validar un ámbito de **usuario**, use cualquiera de las dos opciones:
+    - `Get-Mailbox` con `-RecipientTypeDetails UserMailbox` o
+    - `Get-Recipient` con `-RecipientTypeDetails UserMailbox,MailUser`
+    
+    Para validar un ámbito de **grupo de Microsoft 365**, use:
+    - `Get-Mailbox` o `Get-Recipient` con `-RecipientTypeDetails GroupMailbox`
 
     Por ejemplo, para validar un ámbito de **usuario,** puede usar:
     
     ````PowerShell
-    Get-Recipient -RecipientTypeDetails UserMailbox -Filter {Department -eq "Sales and Marketing"} -ResultSize Unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox,MailUser -Filter {Department -eq "Marketing"} -ResultSize Unlimited
     ````
     
     Para validar un **grupo de Microsoft 365**, puede usar:
     
     ```PowerShell
-    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Sales and Marketing"} -ResultSize Unlimited
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
 
 3. Compruebe que el resultado coincide con los usuarios o grupos previstos en el ámbito adaptable. Si no es así, compruebe la consulta y los valores con el administrador correspondiente para Azure AD o Exchange.

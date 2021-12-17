@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: 50ee497d57438994a4a5f839ff5a2afb103cd59b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f84c9e93c92c40ce40cc2835100ef2786a23a69d
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174032"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520877"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
@@ -133,7 +133,7 @@ Si almacena documentos físicos con datos personales, asegúrese de que no sean 
 Si decide almacenar datos personales en la nube, como a través de Microsoft 365, cuenta con características de seguridad como la capacidad de ayudarle a administrar permisos para archivos y carpetas, ubicaciones seguras centralizadas para guardar los archivos (bibliotecas de documentos de OneDrive o SharePoint) y cifrado de datos al enviar o recuperar los archivos. 
 
 #### <a name="microsoft-365-features-that-can-help"></a>Características de Microsoft 365 que pueden ayudar
-Puede usar la [Prevención de pérdida de datos (DLP) de Microsoft](/microsoft-365/business-video/set-up-dlp) para ayudar a proteger la información confidencial de su empresa. Puede [configurar una directiva DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) que use la [Plantilla del RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+Puede usar [Configurar las características DLP](set-up-compliance.md#watch-set-up-dlp-features) para ayudar a proteger la información confidencial de su empresa. Puede [configurar una directiva DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) que use la [Plantilla del RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>Paso 5: Mantener documentación sobre sus actividades de procesamiento de datos
 

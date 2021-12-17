@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: 2be324661fa80ed58b9f9e5dc351726ad0c9f69a
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0e76dc387ac8522948a113129316a2eb36b5fb80
+ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422032"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61520901"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
@@ -221,6 +221,6 @@ Digitalice este código QR para seguirnos en WeChat y obtener las actualizacione
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Buscar documentos y aprendizaje](../business-video/find-help-answers.md) (artículo)\ 
-[Configuración rápida para empleados](../business-video/employee-quick-setup.md) (artículo)\
+[Buscar documentos y entrenamiento](index.yml) (página de vínculo)\
+[Configuración rápida para empleados](setup/employee-quick-setup.md) (artículo)\
 [Información general sobre Microsoft 365 Empresa Premium](setup/plan-your-setup.md) (vídeo)
