@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: c427bdbe26c93e8f8854c5357bb218d0728904b6
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 13edbb7ea06e9666c6c318cb3fa19072f369e3bc
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520805"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560809"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatización de la simulación para el aprendizaje de simulación de ataques
 
@@ -280,6 +280,71 @@ En la **página Página de** aterrizaje, se configura la página web a la que se
   - **Usar una dirección URL** personalizada: agregue la dirección URL en el cuadro **Escribir la dirección URL de** la página de aterrizaje personalizada que aparece. No hay otras opciones disponibles en la página.
 
 Cuando termine, haga clic en **Siguiente**.
+
+## <a name="select-end-user-notification"></a>Seleccionar notificación de usuario final
+
+En la **página Seleccionar notificación de usuario final,** seleccione una de las siguientes opciones de notificación:
+
+- **No entregar notificaciones: haga clic** **en Continuar** en el cuadro de diálogo de alerta que aparece. Si seleccionas esta opción, te llevaremos a la página [programación de Simulation](#simulation-schedule) al hacer clic en **Siguiente**.
+
+- **Notificación predeterminada de Microsoft (recomendada):** la siguiente configuración adicional está disponible en la página:
+  - **Seleccionar idioma predeterminado:** Los valores disponibles son: chino **(simplificado),** chino **(tradicional),** inglés , francés **,** alemán **,** italiano **,** **japonés,** **coreano,** **portugués,** **ruso,** español y **neerlandés.**  
+  - De forma predeterminada, la única notificación disponible para seleccionar es la notificación de refuerzo **positivo de Microsoft**. La siguiente información está disponible para la notificación:
+    - **Notificaciones** (nombre): el valor es notificación **de refuerzo positivo predeterminada de Microsoft**.
+    - **Idioma:** si la notificación contiene varias traducciones, los dos primeros idiomas se muestran directamente. Para ver los idiomas restantes, mantenga el mouse sobre el icono numérico (por ejemplo, **+10**).
+    - **Tipo**: El valor es **Refuerzo positivo**.
+    - **Preferencias de** entrega: seleccione entre los siguientes valores:
+      - **No entregar**
+      - **Entrega después de que finalice la campaña**
+      - **Entregar durante la campaña**
+    - **Entregar a**: El valor no **es aplicable**.
+    - **Acciones:** si hace clic en el ![ icono Ver.](../../media/m365-cc-sc-view-icon.png) **Icono** ver, aparece **la página Revisar** notificación con la siguiente información:
+      - **Pestaña Vista** previa: ver el mensaje de notificación. Para ver el mensaje en diferentes idiomas, use el **cuadro Seleccionar idioma.**
+      - **Ficha Detalles:** Ver detalles sobre la notificación:
+        - **Descripción de notificación**
+        - **Source:** para las notificaciones integradas, el valor es **Global**. Para las notificaciones personalizadas, el valor es **Tenant**.
+        - **Tipo de notificación**
+        - **Modificado por**
+        - **Última modificación**
+
+        Cuando haya terminado, haga clic en **Cerrar**.
+
+  Si seleccionas esta opción, te llevaremos a la página [programación de Simulation](#simulation-schedule) al hacer clic en **Siguiente**.
+
+- Notificaciones de usuario final **personalizadas:** al hacer clic  en **Siguiente,** se le envía a la página Notificación de refuerzo positivo, tal como se describe en la siguiente sección, donde puede seleccionar entre notificaciones existentes o crear nuevas notificaciones.
+
+Cuando termine, haga clic en **Siguiente**.
+
+### <a name="positive-reinforcement-notification"></a>Notificación de refuerzo positivo
+
+La **página Notificación de refuerzo** positivo solo está disponible si seleccionó Notificaciones **personalizadas del** usuario final en la página anterior.
+
+- **Preferencias de** entrega: seleccione uno de los siguientes valores:
+  - **No entregar**
+  - **Entregar después de que el usuario informa de que finaliza una campaña y suplantación de identidad**
+  - **Entregar inmediatamente después de que el usuario informe de una suplantación de identidad**
+
+- **Seleccione una notificación de refuerzo positivo:** puede seleccionar una notificación existente o crear una nueva notificación de tipo Notificación de refuerzo **positivo** para usar:
+  - Para seleccionar una notificación existente, haga clic en el área en blanco junto al nombre de la notificación. Si hace clic en el nombre de la notificación, la notificación se selecciona y aparece un menú desplegable de vista previa. Para anular la selección de la notificación, desactive la casilla situada junto a la notificación.
+  - Para buscar una notificación existente, use el ![ icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro** de búsqueda para buscar el nombre.
+  - Para crear una nueva notificación, haga clic ![ en Crear nuevo icono.](../../media/m365-cc-sc-create-icon.png) **Crear nuevo**.
+  - Para modificar una notificación personalizada existente, selecciónelo y, a continuación, haga clic ![ en Editar icono de notificación.](../../media/m365-cc-sc-edit-icon.png) **Editar notificación**.
+
+#### <a name="create-new-notification-wizard"></a>Crear nuevo asistente para notificaciones
+
+Si ha hecho clic en ![ Crear nuevo icono.](../../media/m365-cc-sc-create-icon.png) **Crear nuevo** en la página **Notificación de refuerzo** positivo, se abre un asistente para creación de notificaciones.
+
+Los pasos de creación son idénticos como se describe [en Create end-user notifications](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications).
+
+> [!NOTE]
+> En la **página Definir detalles,** asegúrese de seleccionar el valor Notificación de refuerzo **positivo** para Seleccionar tipo **de notificación**. No seleccione La notificación **de Simulación**.
+
+Cuando haya terminado, volverá a la  página Notificación de refuerzo positivo, donde la notificación que acaba de crear aparecerá ahora en la lista Seleccionar una notificación **de refuerzo** positiva.
+
+- Para crear una nueva notificación, haga clic en ![Crear nuevo icono.](../../media/m365-cc-sc-create-icon.png).
+- Para modificar la notificación o agregar traducciones adicionales, seleccione la notificación de la lista y, a continuación, haga clic ![ en Editar icono de notificación.](../../media/m365-cc-sc-edit-icon.png) **Edit notification** to start the notification wizard as previously described (with most values already filled in). Si la notificación ya tiene traducciones para los 12 idiomas admitidos, no puede agregar más traducciones.
+
+Seleccione la notificación que desea usar y, a continuación, haga clic en **Siguiente**.
 
 ## <a name="simulation-schedule"></a>Programación de simulación
 

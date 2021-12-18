@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/16/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3437ee8aeb07750032a4df1aa565a2c2cf173ffe
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: d05f22f38e3195348a5f4601c77e2cce6c6a44e2
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507259"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560725"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business-preview"></a>Microsoft 365 Lighthouse y Microsoft Defender para empresas (versión preliminar)
 
@@ -32,18 +32,18 @@ ms.locfileid: "61507259"
 
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender para empresas se integra con Microsoft 365 Lighthouse
 
-Si usas Microsoft 365 Lighthouse para administrar la seguridad de pequeñas y medianas empresas, Microsoft Defender para empresas (versión preliminar) se integra con Microsoft 365 Lighthouse. Con esta integración, puede ver incidentes de seguridad entre inquilinos en su portal de Microsoft 365 Lighthouse ( [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) ). 
+Si usas Microsoft 365 Lighthouse para administrar la seguridad de pequeñas y medianas empresas, Microsoft Defender para empresas (versión preliminar) se integra con Microsoft 365 Lighthouse. Cuando estas funcionalidades estén disponibles, podrá ver incidentes de seguridad entre inquilinos en su portal de Microsoft 365 Lighthouse ( [https://lighthouse.microsoft.com](https://lighthouse.microsoft.com) ). 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="captura de pantalla de la lista de incidentes en Microsoft 365 Lighthouse":::
 
 Para obtener acceso a la lista de incidentes, en Microsoft 365 Lighthouse, en la página principal, busque la tarjeta Incidentes **de** seguridad y, a continuación, seleccione Ver **todos los incidentes**.
 
 > [!IMPORTANT]
-> Durante la vista previa, Microsoft 365 Lighthouse solo extraerá incidentes de seguridad de Defender para empresas (versión preliminar) cuando se usan con inquilinos de clientes que también tienen Microsoft 365 Empresa Premium.
+> Durante la vista previa, Microsoft 365 Lighthouse solo extraerá incidentes de seguridad de Defender para empresas (versión preliminar) cuando se usan con inquilinos de clientes que también tienen Microsoft 365 Empresa Premium. Esta funcionalidad se está implementando gradualmente en Microsoft 365 Lighthouse (versión preliminar) y Defender para empresas (versión preliminar0, y puede que no esté disponible inmediatamente como escenario de prueba).
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>Obtenga más información sobre Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse permite a los partners de Microsoft que son proveedores de servicios administrados proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas que tienen una de las siguientes suscripciones:
+Microsoft 365 Lighthouse permite a los proveedores de Microsoft Cloud Service proteger y administrar dispositivos, datos y usuarios a escala para los clientes de pequeñas y medianas empresas que usan una de las siguientes suscripciones:
 
 - [Microsoft 365 Empresa Premium](../../admin/admin-overview/what-is-microsoft-365.md)
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (que ahora incluye [Microsoft Defender para el plan de extremo 1)](../defender-endpoint/defender-endpoint-plan-1.md)

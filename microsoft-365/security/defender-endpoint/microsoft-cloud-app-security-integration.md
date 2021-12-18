@@ -1,5 +1,5 @@
 ---
-title: Introducción a la integración de Microsoft Defender para Cloud Apps
+title: Introducción a la integración de Microsoft Defender for Cloud Apps
 ms.reviewer: ''
 description: Microsoft Defender para endpoint se integra con Defender for Cloud Apps reenviando todas las actividades de red de aplicaciones en la nube.
 keywords: nube, aplicación, redes, visibilidad, uso
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: a107cd297c7ca80ff7cd740a8195d57badbc4df4
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 8260903ba8031bae76f420a7b010ed73df1c833d
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111116"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560391"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>Introducción a Microsoft Defender para aplicaciones en la nube en Defender para endpoint
 
@@ -30,7 +30,8 @@ ms.locfileid: "61111116"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -59,4 +60,4 @@ Para obtener más información acerca de la detección en la nube, consulta [Tra
 
 ## <a name="related-topic"></a>Tema relacionado
 
-- [Configurar la integración de Microsoft Defender para Aplicaciones en la nube](microsoft-cloud-app-security-config.md)
+- [Configurar la integración de Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-config.md)

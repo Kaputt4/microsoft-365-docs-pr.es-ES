@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/13/2021
+ms.date: 12/16/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0c36d0e1f1c4ced84bbc914a3c0a4ce61e699b28
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 054016a9db24c508c5eb9418b8e7d049b30389ce
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426380"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560041"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -84,18 +84,27 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> Noviembre-2021 (Plataforma: 4.18.2111.X| Motor: 1.1.18800.4)</summary>
+<summary>Noviembre-2021 (plataforma: 4.18.2111.5| Motor: 1.1.18800.4)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.353.3.0**<br/>
+&ensp;Versión de actualización de inteligencia de seguridad: **1.355.2.0**<br/>
 &ensp;Publicado: **9 de diciembre de 2021**<br/>
-&ensp;Plataforma: **4.18.2111.X**<br/>
+&ensp;Plataforma: **4.18.2111.5**<br/>
 &ensp;Motor: **1.1.18800.4**<br/>
 &ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
 
-Versión del motor: 1.1.18800.4 Versión de actualización de inteligencia de seguridad: 1.353.3.0
+Versión del motor: 1.1.18800.4 Versión de actualización de inteligencia de seguridad: 1.355.2.0
 
 ### <a name="whats-new"></a>Novedades
-Sin características nuevas
+
+- Eficiencia de uso de CPU mejorada de determinados escenarios intensivos en Exchange servidores
+- Se agregaron nuevos campos de estado de control de dispositivo en Get-MpComputerStatus módulo de PowerShell de Defender. Para obtener más información, consulta [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
+- Se ha corregido un error en el que no se podía quitar el valor `SharedSignatureRoot` cuando se configuraba con PowerShell
+- Se ha corregido un error [en](prevent-changes-to-security-settings-with-tamper-protection.md) el que la protección contra manipulaciones no se habilitaba, aunque Microsoft Defender para endpoint indicaba que la protección contra manipulaciones estaba activada
+- Se agregó compatibilidad y correcciones de errores al analizador de rendimiento para Antivirus de Microsoft Defender herramienta. Para obtener más información, vea [Analizador de rendimiento para Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md).   
+   - Compatibilidad con POWERShell ISE agregada para `New-MpPerformanceRecording`
+   - Se han corregido errores de error para `Get-MpPerformanceReport -TopFilesPerProcess`
+   - Se ha corregido la pérdida de sesión de grabación de rendimiento al usar `New-MpPerformanceRecording` en PowerShell 7.x, sesiones remotas y PowerShell ISE
+
 
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
@@ -651,7 +660,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.347.891.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
 - Ninguno
@@ -665,10 +674,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2107.02</summary>
@@ -679,10 +688,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2106.01</summary>
@@ -693,10 +702,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -707,10 +716,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -721,10 +730,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.335.232.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -738,7 +747,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 - Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -749,7 +758,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
 - Ninguno
@@ -763,10 +772,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -777,10 +786,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
@@ -791,7 +800,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.658.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
 - Firmas Antivirus de Microsoft Defender actualización
@@ -805,10 +814,10 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.344.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
-- None
+- Ninguno
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
@@ -819,7 +828,7 @@ Para obtener más información, vea [Actualización de Microsoft Defender para o
 &ensp;Versión de firma: **1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correcciones
-- None
+- Ninguno
 
 ### <a name="additional-information"></a>Información adicional
 - Se agregó compatibilidad con Windows 10 imágenes de instalación del sistema operativo RS1 o versiones posteriores.

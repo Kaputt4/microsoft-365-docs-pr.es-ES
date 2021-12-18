@@ -17,20 +17,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 52c99b4c43f17a551929cb657fb4eb9ea3420d51
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2affbe19484348a511487930d034da6799ca348c
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111290"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560235"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -97,7 +96,7 @@ El primer paso es seleccionar un dispositivo que realizará los exámenes de red
     > [!NOTE]
     > No todas las direcciones URL se especifican en la lista documentada Defender for Endpoint de la colección de datos permitida.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en Defender**. Para encontrar el permiso, vaya a **Configuración** \> **Roles**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
 

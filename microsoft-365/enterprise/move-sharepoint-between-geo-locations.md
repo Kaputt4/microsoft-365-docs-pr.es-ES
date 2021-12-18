@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo mover un SharePoint a una ubicación geográfica diferente dentro de su entorno multige geográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 44f6b8323f99419706378ff963259cf5c5fa85e9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: adfa96822e31dce43b95a6eebc54b5f4698bdcca
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209674"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560749"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -28,8 +28,8 @@ Con el movimiento geográfico de sitios de SharePoint, puede mover dichos sitios
 
 Los siguientes tipos de sitios pueden moverse entre ubicaciones geográficas:
 
-- Microsoft 365 Sitios conectados a grupos, incluidos los asociados con Microsoft Teams
-- Sitios modernos sin ninguna asociación con los Grupos de Microsoft 365
+- Microsoft 365 sitios conectados a grupos, incluidos los sitios asociados con Microsoft Teams
+- Sitios modernos sin una asociación Microsoft 365 grupo
 - Sitios clásicos de SharePoint
 - Sitios de comunicación
 
@@ -80,7 +80,7 @@ Por ejemplo, si la dirección URL del sitio es , conéctese a la dirección URL 
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint Ventana Shell de administración en línea que muestra Connect-SPOService comando.](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint ventana del Shell de administración en línea que muestra Connect-SPOService comando.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>Validación del entorno
 
@@ -102,13 +102,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 Esto devolverá *Success* si el sitio está listo para moverse o *Fail* si hay algunas condiciones bloqueadas.
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Iniciar un movimiento geográfico de sitios de SharePoint con sitios sin ninguna asociación con los Grupos de Microsoft 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Iniciar un SharePoint de ubicación geográfica de un sitio sin ningún grupo Microsoft 365 asociado
 
 De forma predeterminada, se cambiará la dirección URL inicial del sitio a la dirección URL de la ubicación geográfica de destino. Por ejemplo:
 
 <https://Contoso.sharepoint.com/sites/projectx> a <https://ContosoEUR.sharepoint.com/sites/projectx>
 
-Los sitios sin ninguna asociación con los Grupos de Microsoft 365, también pueden cambiar el nombre mediante el parámetro `-DestinationUrl`. Por ejemplo:
+Para los sitios sin Microsoft 365 asociación de grupo, también puede cambiar el nombre del sitio mediante el `-DestinationUrl` parámetro. Por ejemplo:
 
 <https://Contoso.sharepoint.com/sites/projectx> a <https://ContosoEUR.sharepoint.com/sites/projecty>
 
@@ -120,11 +120,11 @@ Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <Dest
 
 ![Captura de pantalla de la ventana de PowerShell que muestra Start-SPOSiteContentMove cmdlet.](../media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Iniciar el movimiento geográfico de sitios de SharePoint para un sitio conectado a Grupos de Microsoft 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Iniciar un SharePoint de ubicación geográfica de un sitio Microsoft 365 un sitio conectado a un grupo
 
-Para mover un sitio conectado a Grupos de Office 365, primero el administrador global o administrador de SharePoint debe cambiar el atributo de ubicación de datos preferida (PDL) del Grupo de Office 365.
+Para mover un sitio conectado Microsoft 365 grupo, el administrador global o el administrador de SharePoint primero deben cambiar el atributo Ubicación de datos preferida (PDL) para el grupo Microsoft 365 grupo.
 
-Para establecer la PDL de un Grupo de Microsoft 365:
+Para establecer la PDL para un Microsoft 365 grupo:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -199,9 +199,12 @@ El cliente de win32 de OneNote y la aplicación UWP (Universal) detectarán auto
 - OneNote UWP: versión 16.0.8431.1006 (y versiones posteriores)
 - Aplicación móvil de OneNote (versión 16.0.8431.1011 y versiones posteriores)
 
-### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (se aplica a los sitios conectados al Grupo de Microsoft 365)
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (aplicable a Microsoft 365 sitios conectados a grupos)
 
-Cuando se complete el movimiento geográfico de sitios de SharePoint, los usuarios tendrán acceso a sus archivos de sitio de Grupo de Microsoft 365 en la aplicación de Teams. Además, los archivos compartidos mediante chat de Teams desde el sitio, antes del movimiento geográfico, seguirán funcionando tras completar el mismo.
+Cuando se complete SharePoint movimiento geográfico del sitio, los usuarios tendrán acceso a sus Microsoft 365 de sitio de grupo en la aplicación Teams usuario. Además, los archivos compartidos mediante chat de Teams desde el sitio, antes del movimiento geográfico, seguirán funcionando tras completar el mismo.
+
+SharePoint movimiento geográfico del sitio no admite mover canales privados de una ubicación geográfica a otra. Los canales privados permanecen en la ubicación geográfica original.
+  
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>Aplicación móvil de SharePoint para Android y iOS
 

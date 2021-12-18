@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: a8a085d29ee3d4552091e11d154900a79de7b45e
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: d4d41ef638ecdc54e99fa6d52d9212189b0bc231
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507319"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559789"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -486,9 +486,9 @@ Para cargar un paquete de reglas, siga este procedimiento:
 
 Al cargar un archivo XML de paquete de reglas, el sistema valida el código XML y comprueba si hay patrones incorrectos conocidos y problemas de rendimiento obvios. Estos son algunos de los problemas conocidos (la validación comprueba las expresiones regulares):
   
-- Las aserciones lookbehind o lookahead en la expresión regular deben ser de longitud fija solamente. Las aserciones de longitud variable producirán errores.
+- Las aserciones de lookbehind en la expresión regular deben ser de longitud fija solamente. Las aserciones de longitud variable producirán errores.
 
-    Por ejemplo, esta expresión regex no pasará la validación porque la primera opción de esta es que tiene una longitud cero mientras que las dos siguientes opciones y `"(?<=^|\s|_)"`  tienen una longitud de `^` `\s` `_` una.  Una forma alternativa de escribir esta expresión regular para que se valide es `"(?:^|(?<=\s|_))"` .
+    Por ejemplo, esta expresión regex no pasará la validación porque la primera opción de esta es que tiene una longitud cero mientras que las dos siguientes opciones y `"(?<=^|\s|_)"`  tienen una longitud de `^` `\s` `_` una.  Una forma alternativa de escribir esta expresión regular es `"(?:^|(?<=\s|_))"` .
   
 - No puede empezar ni terminar con el alternador "|", que coincide con todo, ya que se considera una coincidencia vacía.
     

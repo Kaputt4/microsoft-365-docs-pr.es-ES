@@ -17,24 +17,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c575cc6b235f82c02404f29d33712731609322a2
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 83871a547aa2f644d70ada5cb121d3b32a6d9bdb
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646934"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560365"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender para endpoint- Mobile Threat Defense
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Defender para endpoint en Android e iOS es nuestra solución de defensa contra amenazas **móviles (MTD).** Normalmente, las empresas son proactivas para proteger los equipos de vulnerabilidades y ataques, mientras que los dispositivos móviles a menudo no se supervisan y no se protegen. Cuando las plataformas móviles tienen protección integrada, como el aislamiento de aplicaciones y almacenes de aplicaciones de consumidores, estas plataformas siguen siendo vulnerables a ataques basados en web u otros ataques sofisticados. A medida que más empleados usan dispositivos para trabajar y obtener acceso a información confidencial, es imperativo que las empresas implemente una solución MTD para proteger los dispositivos y sus recursos de ataques cada vez más sofisticados en dispositivos móviles.
+Microsoft Defender para endpoint en Android e iOS es nuestra solución de defensa contra amenazas **móviles (MTD).** Normalmente, las empresas toman la iniciativa de proteger sus PC frente a vulnerabilidades y ataques, pero a menudo no supervisan sus dispositivos móviles y quedan desprotegidos. Cuando las plataformas móviles tienen protección integrada, como el aislamiento de aplicaciones y almacenes de aplicaciones de consumidores, estas plataformas siguen siendo vulnerables a ataques basados en web u otros ataques sofisticados. A medida que más empleados usan dispositivos para trabajar y obtener acceso a información confidencial, es imperativo que las empresas implemente una solución MTD para proteger los dispositivos y sus recursos de ataques cada vez más sofisticados en dispositivos móviles.
 
 ## <a name="key-capabilities"></a>Principales funcionalidades
 

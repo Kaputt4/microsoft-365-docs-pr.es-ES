@@ -14,14 +14,17 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 81b11caa5663677499d7a6fb78d8b48e5ffdebf6
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 419ebd04b7c83c2d0545efcc3ff6da7161c30c6b
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373841"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560581"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Introducción al Plan 1 de Microsoft Defender para endpoints
+
+**Se aplica a:**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 El portal de Microsoft 365 Defender ( ) le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, tomar las medidas necesarias en las amenazas detectadas y administrar [https://security.microsoft.com](https://security.microsoft.com) dispositivos. El Microsoft 365 Defender es donde puede empezar a interactuar con las capacidades de protección contra amenazas que obtiene con Defender for Endpoint Plan 1. En las secciones siguientes se describe cómo empezar:
 
@@ -95,7 +98,7 @@ Usa las **pestañas**  Alertas, **Dispositivos** y Usuarios para ver más inform
 > [!TIP]
 > Para obtener más información sobre el uso de **la vista** Incidentes, vea [Administrar incidentes](manage-incidents.md).
 
-## <a name="manage-devices"></a>Administrar dispositivos
+## <a name="manage-devices"></a>Administración de dispositivos
 
 Para ver y administrar los dispositivos de la organización, en la barra de navegación, en **Extremos**, seleccione **Inventario de dispositivos**. Verás una lista de dispositivos como se muestra en la siguiente imagen:
 
@@ -165,7 +168,7 @@ Desplácese hacia abajo para ver todas las vistas del informe de protección web
 > [!TIP]
 > Para obtener más información, vea [Protección web](web-protection-overview.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Administrar Microsoft Defender para el plan de extremo 1](mde-p1-maintenance-operations.md)
 - [Microsoft Defender para punto de conexión](microsoft-defender-endpoint.md)

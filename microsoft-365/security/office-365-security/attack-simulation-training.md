@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 4b67ab279a1d125c03df81941388626369d2cb8b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 9e33da3aa34c30f273581de97cd27c2ca534e3d3
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521009"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560793"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simular un ataque de suplantación de identidad en Defender para Office 365
 
@@ -269,6 +269,71 @@ Cuando termine, haga clic en **Siguiente**.
 
 > [!NOTE]
 > Ciertas marcas comerciales, logotipos, símbolos, insignias y otros identificadores de origen reciben una protección mayor en virtud de leyes y leyes locales, estatales y federales. El uso no autorizado de estos indicadores puede someter a los usuarios a sanciones, incluidas las multas penales. Aunque no es una lista extensa, esto incluye los precintos presidencial, vicepresidenta y congresional, la CIA, el FBI, la Seguridad Social, Medicare y Medicaid, el Servicio de Ingresos Internos de estados Unidos y los Juegos Olímpicos. Más allá de estas categorías de marcas comerciales, el uso y modificación de cualquier marca comercial de terceros conlleva una cantidad inherente de riesgo. Usar sus propias marcas comerciales y logotipos en una carga sería menos arriesgado, especialmente cuando su organización permite el uso. Si tiene más preguntas sobre lo que es o no es apropiado usar al crear o configurar una carga, consulte con sus asesores legales.
+
+## <a name="select-end-user-notification"></a>Seleccionar notificación de usuario final
+
+En la **página Seleccionar notificación de usuario final,** seleccione una de las siguientes opciones de notificación:
+
+- **No entregar notificaciones: haga clic** **en Continuar** en el cuadro de diálogo de alerta que aparece. Si selecciona esta opción, se le va a la página [Detalles de](#launch-details) inicio al hacer clic en **Siguiente**.
+
+- **Notificación predeterminada de Microsoft (recomendada):** la siguiente configuración adicional está disponible en la página:
+  - **Seleccionar idioma predeterminado:** Los valores disponibles son: chino **(simplificado),** chino **(tradicional),** inglés , francés **,** alemán **,** italiano **,** **japonés,** **coreano,** **portugués,** **ruso,** español y **neerlandés.**  
+  - De forma predeterminada, la única notificación disponible para seleccionar es la notificación de refuerzo **positivo de Microsoft**. La siguiente información está disponible para la notificación:
+    - **Notificaciones** (nombre): el valor es notificación **de refuerzo positivo predeterminada de Microsoft**.
+    - **Idioma:** si la notificación contiene varias traducciones, los dos primeros idiomas se muestran directamente. Para ver los idiomas restantes, mantenga el mouse sobre el icono numérico (por ejemplo, **+10**).
+    - **Tipo**: El valor es **Refuerzo positivo**.
+    - **Preferencias de** entrega: seleccione entre los siguientes valores:
+      - **No entregar**
+      - **Entrega después de que finalice la campaña**
+      - **Entregar durante la campaña**
+    - **Entregar a**: El valor no **es aplicable**.
+    - **Acciones:** si hace clic en el ![ icono Ver.](../../media/m365-cc-sc-view-icon.png) **Icono** ver, aparece **la página Revisar** notificación con la siguiente información:
+      - **Pestaña Vista** previa: ver el mensaje de notificación. Para ver el mensaje en diferentes idiomas, use el **cuadro Seleccionar idioma.**
+      - **Ficha Detalles:** Ver detalles sobre la notificación:
+        - **Descripción de notificación**
+        - **Source:** para las notificaciones integradas, el valor es **Global**. Para las notificaciones personalizadas, el valor es **Tenant**.
+        - **Tipo de notificación**
+        - **Modificado por**
+        - **Última modificación**
+
+        Cuando haya terminado, haga clic en **Cerrar**.
+
+  Si selecciona esta opción, se le va a la página [Detalles de](#launch-details) inicio al hacer clic en **Siguiente**.
+
+- Notificaciones de usuario final **personalizadas:** al hacer clic  en **Siguiente,** se le envía a la página Notificación de refuerzo positivo, tal como se describe en la siguiente sección, donde puede seleccionar entre notificaciones existentes o crear nuevas notificaciones.
+
+Cuando termine, haga clic en **Siguiente**.
+
+### <a name="positive-reinforcement-notification"></a>Notificación de refuerzo positivo
+
+La **página Notificación de refuerzo** positivo solo está disponible si seleccionó Notificaciones **personalizadas del** usuario final en la página anterior.
+
+- **Preferencias de** entrega: seleccione uno de los siguientes valores:
+  - **No entregar**
+  - **Entregar después de que el usuario informa de que finaliza una campaña y suplantación de identidad**
+  - **Entregar inmediatamente después de que el usuario informe de una suplantación de identidad**
+
+- **Seleccione una notificación de refuerzo positivo:** puede seleccionar una notificación existente o crear una nueva notificación de tipo Notificación de refuerzo **positivo** para usar:
+  - Para seleccionar una notificación existente, haga clic en el área en blanco junto al nombre de la notificación. Si hace clic en el nombre de la notificación, la notificación se selecciona y aparece un menú desplegable de vista previa. Para anular la selección de la notificación, desactive la casilla situada junto a la notificación.
+  - Para buscar una notificación existente, use el ![ icono Buscar.](../../media/m365-cc-sc-search-icon.png) **Cuadro** de búsqueda para buscar el nombre.
+  - Para crear una nueva notificación, haga clic ![ en Crear nuevo icono.](../../media/m365-cc-sc-create-icon.png) **Crear nuevo**.
+  - Para modificar una notificación personalizada existente, selecciónelo y, a continuación, haga clic ![ en Editar icono de notificación.](../../media/m365-cc-sc-edit-icon.png) **Editar notificación**.
+
+#### <a name="create-new-notification-wizard"></a>Crear nuevo asistente para notificaciones
+
+Si ha hecho clic en ![ Crear nuevo icono.](../../media/m365-cc-sc-create-icon.png) **Crear nuevo** en la página **Notificación de refuerzo** positivo, se abre un asistente para creación de notificaciones.
+
+Los pasos de creación son idénticos como se describe [en Create end-user notifications](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications).
+
+> [!NOTE]
+> En la **página Definir detalles,** asegúrese de seleccionar el valor Notificación de refuerzo **positivo** para Seleccionar tipo **de notificación**. No seleccione La notificación **de Simulación**.
+
+Cuando haya terminado, volverá a la  página Notificación de refuerzo positivo, donde la notificación que acaba de crear aparecerá ahora en la lista Seleccionar una notificación **de refuerzo** positiva.
+
+- Para crear una nueva notificación, haga clic en ![Crear nuevo icono.](../../media/m365-cc-sc-create-icon.png).
+- Para modificar la notificación o agregar traducciones adicionales, seleccione la notificación de la lista y, a continuación, haga clic ![ en Editar icono de notificación.](../../media/m365-cc-sc-edit-icon.png) **Edit notification** to start the notification wizard as previously described (with most values already filled in). Si la notificación ya tiene traducciones para los 12 idiomas admitidos, no puede agregar más traducciones.
+
+Seleccione la notificación que desea usar y, a continuación, haga clic en **Siguiente**.
 
 ## <a name="launch-details"></a>Detalles del inicio
 

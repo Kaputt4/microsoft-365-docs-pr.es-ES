@@ -16,17 +16,18 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 11/29/2021
 ms.technology: mde
-ms.openlocfilehash: f37d7cf1cbf7916e2f3a4d8417a83470cad0b1d5
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 050605dd764fdd5a17bbf4514a19d6f8d65e65e7
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220913"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560713"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Cambiar a Microsoft Defender para endpoint
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +50,7 @@ Si estás pensando en moverte a Defender para Endpoint, tenemos instrucciones pa
 
 Háganos saber lo que piensa. Envíe sus comentarios en la parte inferior de la página. Tomaremos en cuenta sus comentarios a medida que sigamos mejorando y agregando a nuestra guía de migración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection)
 - [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-atp)

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los comentarios que los usuarios pueden enviar a Microsoft sobre los productos de Microsoft.
-ms.openlocfilehash: b276c82687481267a9c1de3a1261786bf2027254
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 46acfef3af37ae98e2f9d014ffc48a168665219a
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907837"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559993"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Información sobre los comentarios de Microsoft para su organización
 
@@ -32,8 +32,8 @@ En este tema, encontrará información sobre qué tipos de comentarios existen, 
 
 Como administrador, puede administrar la señal de comentarios de su organización. Estamos presentando un nuevo conjunto de configuraciones de directiva para ayudarle a administrar la recopilación de comentarios de los usuarios dentro de las Microsoft 365 de la organización. Esta configuración de directiva le ayudará a dirigirse Azure Active Directory grupos y configurar la experiencia de recopilación de comentarios para su organización. Los comentarios de los usuarios van directamente a nuestros ingenieros y nos ayudan a definir el futuro de los productos y servicios de Microsoft para todos nuestros usuarios. Puede obtener más información sobre esta configuración de directiva, a qué aplicaciones se aplican y procedimientos recomendados en Administrar comentarios de [Microsoft para su organización.](../manage/manage-feedback-ms-org.md)
 
-<!--> [!IMPORTANT]
-> Te recomendamos que confirmes que los comentarios se envían desde un origen en el que confías. Asegúrese de que los nombres de usuario o los id. de usuario coincidan con los usuarios reales de la organización.-->
+> [!IMPORTANT]
+> Te recomendamos que confirmes que los comentarios se envían desde un origen en el que confías. Asegúrese de que los nombres de usuario o los id. de usuario coincidan con los usuarios reales de la organización.
 
 ## <a name="feedback-types"></a>Tipos de comentarios
 
@@ -91,6 +91,7 @@ Cuando un usuario envía comentarios, la información de la aplicación suele re
 - **Idioma de la aplicación**   Idioma del producto de Microsoft que se capturó en el envío.
 - **Datos adjuntos**   Si hay datos adjuntos (es decir, screenshots, files) collected as part of the feedback? (Sí/No).
 - **TenantId**   Si se envían comentarios desde una cuenta Azure Active Directory, que TenantId estaba asociado.
+- **Módulo de aplicación** Información sobre módulos de aplicaciones que pueden haber causado un bloqueo reciente, cuando corresponda.
 
 ## <a name="how-can-i-see-my-users-feedback"></a>¿Cómo puedo ver los comentarios de mi usuario?
 

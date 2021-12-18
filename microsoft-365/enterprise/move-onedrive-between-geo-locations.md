@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Encuentre información sobre cómo mover un sitio OneDrive a una ubicación geográfica diferente, incluido cómo programar los movimientos del sitio y comunicar las expectativas a los usuarios.
-ms.openlocfilehash: 232654ac0cea95fee6dfef036ecb87768e5768d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd601c135ec59a51a413cb4867e567d5dd269752
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195358"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560821"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover un sitio de OneDrive a otra ubicación geográfica 
 
@@ -62,7 +62,7 @@ Al usar los cmdlets de movimiento geográfico, conéctese al servicio SPO en la 
 
 Por ejemplo: para mover OneDrive de usuario "Matt@contosoenergy.onmicrosoft.com", conéctese al Centro de administración de EUR SharePoint ya que la ubicación OneDrive del usuario se encuentra en la ubicación geográfica eur:
 
-`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![Captura de pantalla de la ventana de PowerShell que muestra el cmdlet connect-sposervice.](../media/move-onedrive-between-geo-locations-image1.png)
 
@@ -193,7 +193,7 @@ El cliente OneNote win32 y la aplicación UWP (Universal) detectarán automátic
 
 Tras la finalización de la transferencia geográfica de OneDrive, los usuarios tendrán acceso a sus archivos de OneDrive en la aplicación de Teams. Además, los archivos compartidos a través de chats de Teams desde su instancia de OneDrive anteriores a la transferencia geográfica seguirán funcionando tras completar el movimiento.
 
-### <a name="onedrive-mobile-app-ios"></a>OneDrive Aplicación móvil (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDrive Mobile App (iOS) 
 
 Tras la finalización de la transferencia geográfica de OneDrive, el usuario tendría que cerrar sesión e iniciarla de nuevo en la aplicación para dispositivos móviles iOS a fin de sincronizarla con la nueva ubicación de OneDrive.
 
@@ -201,6 +201,6 @@ Tras la finalización de la transferencia geográfica de OneDrive, el usuario te
 
 Los sitios y grupos seguidos se mostrarán en el sitio del OneDrive independientemente de su ubicación geográfica. Los sitios y grupos hospedados en otra ubicación geográfica se abrirán en una pestaña independiente.
 
-### <a name="delve-geo-url-updates"></a>Delve Actualizaciones de direcciones URL geográficas
+### <a name="delve-geo-url-updates"></a>Delve url geográfica
 
 Los usuarios se enviarán a la Delve correspondiente a su PDL solo después de que su OneDrive se haya movido a la nueva ubicación geográfica.

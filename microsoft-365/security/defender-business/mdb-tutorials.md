@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/10/2021
+ms.date: 12/16/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 8f1f1f9f3879b7e44f7c718b026d3daba55d7c62
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 154f67645062f6816ebdbfa24a2935c779f48c72
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507361"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559861"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Tutoriales y simulaciones en Microsoft Defender para empresas (versión preliminar)
 
@@ -44,7 +44,7 @@ En la tabla siguiente se resumen varios escenarios para probar durante la vista 
 | Incorporar dispositivos con Microsoft Intune     | Si ya usaste Microsoft Intune obtener Defender for Endpoint, puedes usar Microsoft Intune para incorporar dispositivos. Prueba a incorporar dispositivos macOS, iOS, Linux y Android con Microsoft Intune. Para obtener más información, consulta [Inscripción de dispositivos en Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Editar directivas y configuraciones de seguridad     | Si estás administrando las directivas de seguridad y la configuración en Defender para empresas (versión preliminar), usa la página **Configuración** del dispositivo para ver y editar las directivas. Para obtener más información, vea [Ver o editar directivas en Microsoft Defender para empresas (versión preliminar).](mdb-view-edit-policies.md)        |
 | Ejecutar un ataque simulado   | Hay varios tutoriales y simulaciones disponibles en Defender para empresas (versión preliminar). Estos tutoriales y simulaciones están diseñados para mostrar de primera mano cómo las características de protección contra amenazas de Defender para empresas (versión preliminar) pueden funcionar para su empresa. Para probar uno o varios de los tutoriales, vea [Tutoriales recomendados para Microsoft Defender para empresas (versión preliminar).](#recommended-tutorials-for-defender-for-business)         |
-| Ver incidentes en Microsoft 365 Lighthouse     | Si es un partner de Microsoft que usa Microsoft 365 Lighthouse, puede ver incidentes en los inquilinos de sus clientes en su portal Microsoft 365 Lighthouse cliente. Para obtener más información, [vea Microsoft 365 Lighthouse y Microsoft Defender para empresas (versión preliminar).](mdb-lighthouse-integration.md)       |
+| Ver incidentes en Microsoft 365 Lighthouse     | Si es un [Proveedor de soluciones en la nube de Microsoft](/partner-center/enrolling-in-the-csp-program) con Microsoft 365 Lighthouse, podrá ver los incidentes en los inquilinos de sus clientes en el portal de Microsoft 365 Lighthouse próximamente. Para obtener más información, [vea Microsoft 365 Lighthouse y Microsoft Defender para empresas (versión preliminar).](mdb-lighthouse-integration.md)       |
 
 
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Tutoriales recomendados para Defender para empresas
@@ -53,7 +53,7 @@ En la tabla siguiente se describen los tutoriales recomendados para clientes de 
 <br/><br/>
 
 
-| Tutorial  | Description  |
+| Tutorial  | Descripción  |
 |---------|---------|
 | **El documento deja atrás la puerta trasera**     | Simular un ataque que introduce malware basado en archivos en un dispositivo de prueba. En el tutorial se describe cómo obtener y usar el archivo de simulación y qué se debe buscar en el portal Microsoft 365 Defender simulación. <br/><br/>Este tutorial requiere Microsoft Word instalar en el dispositivo de prueba.   |
 | **Tutorial de respuesta en directo**     | Aprende a usar comandos básicos y avanzados con Live Response. Obtén información sobre cómo localizar un archivo sospechoso, corregir el archivo y recopilar información en un dispositivo.   |

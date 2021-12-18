@@ -9,21 +9,21 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7beb080045c5c1e6db0c04ae1a19134e550e2a1f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ab1383d6385fb4129804721670c0602c1d35be3
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166721"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560545"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
-Puedes enviar vales de soporte técnico o solicitudes de comentarios a Microsoft mediante el portal Escritorio administrado de Microsoft administración. Las solicitudes de soporte técnico siempre se priorizan sobre los envíos de comentarios. Las solicitudes de soporte técnico se triagen y se administran según la gravedad tal como se describe en la tabla de definición [de gravedad](#sev). Se revisan los comentarios y se proporciona una respuesta cuando se solicita.
+Puede enviar vales de soporte técnico o solicitudes de comentarios a Microsoft mediante el portal de administración de escritorio administrado de Microsoft. Las solicitudes de soporte técnico siempre se priorizan sobre los envíos de comentarios. Las solicitudes de soporte técnico se triagen y se administran según la gravedad tal como se describe en la tabla de definición [de gravedad](#sev). Se revisan los comentarios y se proporciona una respuesta cuando se solicita.
 
 ## <a name="open-a-new-support-request"></a>Abrir una nueva solicitud de soporte técnico
 
 1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **Administración de inquilinos.**
-2. Busque la sección Escritorio administrado de Microsoft y, a continuación, seleccione **Solicitudes de servicio**.
+2. Busque la sección Escritorio administrado de Microsoft y, a continuación, **seleccione Solicitudes de servicio**.
 3. En la **hoja Solicitudes de servicio,** seleccione **+ Nueva solicitud de soporte técnico**.
 4. Seleccione el **tipo de solicitud** que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones.
 5. Seleccione el **nivel de gravedad.** Para obtener más información, vea [Support request severity definitions](#sev).
@@ -33,9 +33,9 @@ Puedes enviar vales de soporte técnico o solicitudes de comentarios a Microsoft
 
 Tipo de solicitud de soporte técnico|Cuándo usarlo
 ---|---
-Incidente|El equipo de Escritorio administrado de Microsoft operations debe investigar un problema de usuario causado por, por ejemplo, un impacto generalizado de un cambio o una interrupción del servicio.
-Solicitud de información|Está planeando un cambio en las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo Escritorio administrado de Microsoft operaciones al comunicar un cambio dentro de la organización.
-Solicitud de cambio|Es necesario que el equipo Escritorio administrado de Microsoft operaciones realice un cambio, como mover dispositivos entre grupos de actualización.
+Incidente|Es necesario que el equipo de Operaciones de escritorio administrado de Microsoft investigue un problema de usuario causado por, por ejemplo, un impacto generalizado de un cambio o interrupción del servicio.
+Solicitud de información|Está planeando un cambio en las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo de Operaciones de escritorio administrado de Microsoft al comunicar un cambio dentro de la organización.
+Solicitud de cambio|Es necesario que el equipo de Operaciones de escritorio administrado de Microsoft realice un cambio, como mover dispositivos entre grupos de actualización.
 
 > [!IMPORTANT]
 > Cuando cree una solicitud de soporte técnico, deberá enumerar un contacto principal, responsable de trabajar con nuestros ingenieros de servicio para resolver el problema o responder a cualquier pregunta sobre un cambio solicitado. También es necesario que [](../get-started/add-admin-contacts.md) haya configurado previamente un contacto de administrador que se copiará en todas las notificaciones de caso para su área de enfoque relevante y que se le pida que se haga cargo de un caso si el contacto principal de un caso es inaccesible.
@@ -54,18 +54,20 @@ Aunque el correo electrónico es el enfoque recomendado para interactuar con nue
 
 ### <a name="edit-case-details"></a>Editar detalles del caso
 
-Si necesita editar los detalles de un caso, por ejemplo, actualizar el contacto principal del caso, deberá seguir estos pasos:
+Si necesita editar los detalles de un caso, por ejemplo, actualizar el contacto principal del caso o cambiar la gravedad, deberá seguir estos pasos:
 
 1. En la hoja Solicitudes de  servicio, en el menú Administración de **inquilinos** de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), use la barra de búsqueda o los filtros para encontrar el caso que le interesa editar.
 2. Seleccione el caso para abrir los detalles de la solicitud
 3. Desplácese hasta la parte inferior de los detalles de la solicitud y seleccione **Editar**.
 4. Actualice la información editable, agregue datos adjuntos al caso o agregue una nota para el equipo de Ingeniería de servicios y, a continuación, **seleccione Guardar**.
 
+Una vez resuelto un caso, ya no se puede editar. Si una solicitud se ha resuelto durante menos de 24 horas, verá la opción de **reactivarse** en lugar de Editar y, una vez reactivada, podrá volver a editar la solicitud.  
+
 ### <a name="provide-feedback"></a>Enviar comentarios
 
 Agradecemos sus comentarios y los usamos para mejorar la experiencia de soporte técnico del administrador.
 
-Cuando sea el contacto principal de una solicitud de soporte técnico, recibirá un correo electrónico de Escritorio administrado de Microsoft Operations preguntando sobre su experiencia después de que se haya resuelto el problema. Los comentarios se supervisan y comparten activamente con la ingeniería para mejorar el servicio y priorizar las características futuras. Asegúrese de centrarse en su experiencia y no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, vea la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+Cuando sea el contacto principal de una solicitud de soporte técnico, recibirá un correo electrónico de Operaciones de escritorio administrado de Microsoft que le preguntará sobre su experiencia después de que se haya resuelto el problema. Los comentarios se supervisan y comparten activamente con la ingeniería para mejorar el servicio y priorizar las características futuras. Asegúrese de centrarse en su experiencia y no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, vea la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 <span id="sev" />
 
@@ -74,7 +76,7 @@ Cuando sea el contacto principal de una solicitud de soporte técnico, recibirá
 El tiempo de respuesta inicial es el período desde el que envía la solicitud de soporte técnico hasta cuando un ingeniero de Escritorio administrado de Microsoft se pone en contacto con usted y comienza a trabajar en la solicitud de soporte técnico. El tiempo de respuesta inicial varía según el impacto empresarial de la solicitud, en función de la gravedad de la solicitud.
 
 > [!NOTE]
-> En esta tabla, "horas de soporte técnico para administradores" significa que Escritorio administrado de Microsoft soporte técnico para administradores está disponible, para la mayoría de los países, las 24 horas del día de lunes a **viernes.** La gravedad A se puede trabajar las 24 horas del día los siete días de la semana.
+> En esta tabla, "horas de soporte técnico para administradores" significa que la compatibilidad de Escritorio administrado de Microsoft para administradores está disponible, para la mayoría de los países, las 24 horas del día de lunes a **viernes.** La gravedad A se puede trabajar las 24 horas del día los siete días de la semana.
 
 Nivel de gravedad|Situación|Tiempo de respuesta inicial|Respuesta esperada de usted
 ---|---|---|---
@@ -89,6 +91,6 @@ Nivel de gravedad|Situación|Tiempo de respuesta inicial|Respuesta esperada de u
 
 ## <a name="more-resources"></a>Más recursos
 
-- [Compatibilidad de usuario con Escritorio administrado de Microsoft](end-user-support.md).
-- [Compatibilidad con Escritorio administrado de Microsoft](../service-description/support.md).
-- Si ya se suscribe a Escritorio administrado de Microsoft, encontrará procedimientos detallados, flujos de proceso, instrucciones de trabajo y  preguntas frecuentes en la Guía de  administración de Escritorio administrado de Microsoft en la página Recursos en línea en la sección **Escritorio administrado de Microsoft** del menú Administración de inquilinos de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+- [Compatibilidad de usuario con Microsoft Managed Desktop](end-user-support.md).
+- [Compatibilidad con Microsoft Managed Desktop](../service-description/support.md).
+- Si ya se suscribe a Microsoft Managed Desktop, encontrará procedimientos detallados, flujos de proceso, instrucciones  de trabajo y preguntas frecuentes en  la Guía de administración de Escritorio administrado de Microsoft en la página Recursos en línea en la sección Escritorio administrado de **Microsoft** del menú Administración de inquilinos de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).

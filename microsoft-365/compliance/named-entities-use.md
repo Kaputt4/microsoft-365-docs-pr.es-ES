@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos
-ms.openlocfilehash: eec82365e6fb4af4b6ca23896addd491637ec022
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 75a203b578217c5bbc1e8f67cf04b8d564735bd0
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110816"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560437"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
 
@@ -43,7 +43,7 @@ Debe tener una de estas suscripciones
 
 Para obtener información completa sobre las licencias, [vea la descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
-### <a name="permissions"></a>Permisos
+### <a name="permissions"></a>Permissions
 
 La cuenta que use para crear y editar directivas de prevención de pérdida de datos (DLP), debe tener los permisos del rol Administración de cumplimiento **dlp.** Para obtener más información, vea [Dar acceso a los usuarios al Centro de Office 365 cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
@@ -55,10 +55,11 @@ Puede usar SITs de entidad con nombre y directivas mejoradas para detectar y pro
 - Sitios de SharePoint
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
+- Dispositivos (Windows 10 dispositivos de punto de conexión)
 
 No se admiten los SIT de entidad con nombre ni las directivas mejoradas para:
 
-- Dispositivos (Windows 10 dispositivos de punto de conexión)
+
 - Repositorios locales
 
 ## <a name="create-and-edit-enhanced-policies"></a>Crear y editar directivas mejoradas
@@ -106,12 +107,13 @@ Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar 
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-|Problema  |Impacto  |
+|Incidencia  |Impacto  |
 |---------|---------|
 |Sugerencias de directiva DLP (OWA, Outlook, Office clientes win32)     |   Las sugerencias de directiva con condición de entidad darán como resultado "no coincidir"      |
 | Compatibilidad con el idioma asiático para el nombre de la persona (chino, japonés, coreano)    | Entidades con nombre admitidas solo para el conjunto de caracteres basado en latinos (es decir, kanji no es compatible) para el nombre de la persona        |
-|Carga de trabajo de dispositivos (punto de conexión)     | No se admite como carga de trabajo: no se permitirá la directiva de creación con entidades con nombre        |
 |Repositorios locales    | No se admite como carga de trabajo|
+
+<!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
 ## <a name="for-further-information"></a>Para obtener más información
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->

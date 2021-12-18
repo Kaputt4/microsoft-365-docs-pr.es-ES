@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Use el Asistente para la instalación para agregar el dominio Microsoft 365 en el Centro de administración de Microsoft 365 agregando un registro DNS en el host DNS.
-ms.openlocfilehash: d3ddcd9b0eb97b568650a28e360f2e5b296cda54
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 390cb4cfff2b895902449e34134538a768d03aa1
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426332"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559933"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -142,6 +142,22 @@ En el asistente, solo confirmaremos que es el propietario del dominio y, a conti
 Después de finalizar la instalación, el registro MX del dominio se actualiza para que apunte a Microsoft 365 y todo el correo electrónico de su dominio empezará a llegar a Microsoft 365. Asegúrese de que ha agregado usuarios y configurado buzones en Microsoft 365 para todos los usuarios que reciban correo electrónico en su dominio.
   
 Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ahora. Los pasos Conectar configuración del dominio no afectan al sitio web.
+
+### <a name="add-an-onmicrosoftcom-domain"></a>Agregar un dominio onmicrosoft.com usuario
+
+Cada Microsoft 365 organización puede tener hasta tres onmicrosoft.com dominios.
+
+> [!NOTE]
+> Debe ser un administrador global o un administrador de nombre de dominio para agregar un dominio.
+
+
+Para agregar un onmicrosoft.com de usuario:
+
+1. Vaya al Centro de administración de Microsoft, **Configuración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+
+2. En la **pestaña Información** general, seleccione Agregar **onmicrosoft.com dominio**.
+
+Puede establecer cualquier dominio que sea de su propiedad como su dominio predeterminado.
 
 ## <a name="related-content"></a>Contenido relacionado
 

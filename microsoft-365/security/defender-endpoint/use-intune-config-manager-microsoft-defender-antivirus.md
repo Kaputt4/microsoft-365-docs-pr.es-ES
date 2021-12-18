@@ -10,19 +10,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/16/2021
 ms.reviewer: phuijbr, oogunrinde
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 74814304460c33b108b6216db853504f1956e59b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1eb126481cc9872c42906e0311d1c771da44c693
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168383"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560225"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>Use Microsoft Endpoint Manager para configurar y administrar Antivirus de Microsoft Defender
 
@@ -31,8 +31,8 @@ ms.locfileid: "61168383"
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Puede usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para configurar los Antivirus de Microsoft Defender digitalizaciones. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Configuration Manager](/mem/configmgr/core/understand/introduction) ahora forman parte de Endpoint Manager.
 
@@ -50,9 +50,12 @@ Puede usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para con
 
 6. Junto a **Opciones de configuración**, elija **Editar**.
 
+   > [!IMPORTANT]
+   > Las opciones de antivirus AllowOnAccessProtection y AllowIntrusionPreventionSystem están oficialmente en desuso y, como tal, no se pueden configurar. 
+
 7. Expanda la **sección** Examinar y revise o edite la configuración del examen.
 
-8. Elija **Revisar y guardar**
+8. Elija **Revisar y guardar**.
 
 > [!TIP]
 > ¿Necesita ayuda? Consulte [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).

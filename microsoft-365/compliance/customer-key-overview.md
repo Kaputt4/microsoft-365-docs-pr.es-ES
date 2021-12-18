@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá cómo funciona el cifrado de servicio con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: 009907ea9ef7be532618846484a40c6fd10ffc5d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7e81c6eb7e6ce6f7ac2ea2f8a61f15084032e955
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370373"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560173"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 
@@ -52,7 +52,6 @@ Una directiva de cifrado de datos (DEP) define la jerarquía de cifrado. El serv
 - Teams de estado
 - Información de usuario y señal para Exchange Online
 - Exchange Online buzones de correo que no están cifrados por los DEP de buzones
-- Almacenamiento unificado de registros de auditoría
 - Microsoft Information Protection:
 
   - Datos exactos de coincidencia de datos (EDM), incluidos los esquemas de archivo de datos, los paquetes de reglas y las sales usadas para hash de los datos confidenciales. Para EDM y Microsoft Teams, el DEP de varias cargas de trabajo cifra los nuevos datos desde el momento en que asigna el DEP al inquilino. Por Exchange Online, clave de cliente cifra todos los datos existentes y nuevos.

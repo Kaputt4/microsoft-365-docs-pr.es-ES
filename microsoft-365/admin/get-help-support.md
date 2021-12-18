@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener soporte técnico en línea o por teléfono para su suscripción Microsoft 365 para empresas. Debe ser el administrador de una suscripción de empresa para poder usar el soporte técnico.
-ms.openlocfilehash: 0e76dc387ac8522948a113129316a2eb36b5fb80
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 1da14a8cd017ce9b1a63a00ff042271b0582e6ed
+ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520901"
+ms.locfileid: "61530648"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
@@ -48,7 +48,7 @@ Comience por [comprobar el estado actual de los servicios](../enterprise/view-se
 
 Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con el soporte técnico.
 
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje que indica que no tiene permiso para acceder a esta página o realizar esta acción, esto quiere decir que usted no es administrador. Para obtener más información, consulte [¿Quién tiene permisos de administrador en mi empresa?] ([Información general del Centro de administración de Microsoft 365](../admin/admin-overview/admin-center-overview.md).
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje que indica que no tiene permiso para acceder a esta página o realizar esta acción, esto quiere decir que usted no es administrador. Para obtener más información, consulte [¿Quién tiene permisos de administrador en mi empresa?] (Información general del Centro de administración de Microsoft 365](../admin/admin-overview/admin-center-overview.md).
 2. En la parte inferior derecha de la página, seleccione **Ayuda y soporte técnico**.
 3. Escriba una pregunta o palabra clave en el cuadro de texto. Si aparece una lista desplegable, seleccione la que más se acerque a su pregunta, o siga escribiendo su pregunta, y luego pulse **Aceptar**.
 4. Si los resultados no ayudan, en la parte inferior, seleccione **Ponerse en contacto con el soporte técnico**.
