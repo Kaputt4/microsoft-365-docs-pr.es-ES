@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3e833d4115eb71d766d33666f6da36cbdad99d02
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 3daa63ace419ed1a73511647c28b8fab9ac12d0d
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560761"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566464"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -48,7 +48,7 @@ La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y
 
 :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Configuración de protección contra virus y amenazas en Seguridad de Windows aplicación.":::
 
-1. Abra la aplicación Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio **de Defender for Cloud**.
+1. Abra la aplicación Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio para **Seguridad de Windows**.
 
 2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
@@ -97,9 +97,9 @@ En las secciones siguientes se describe cómo realizar algunas de las tareas má
 
 2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
-3. En Administrar **configuración,** seleccione **Virus & configuración de protección contra amenazas**.
+3. En **Configuración de antivirus y protección contra amenazas**, seleccione **Administrar la configuración**.
 
-4. En la **configuración Exclusiones,** seleccione **Agregar o quitar exclusiones**.
+4. En **Exclusiones,** seleccione **Agregar o quitar exclusiones**.
 
 5. Seleccione el icono más ( **+** ) para elegir el tipo y establecer las opciones para cada exclusión.
 

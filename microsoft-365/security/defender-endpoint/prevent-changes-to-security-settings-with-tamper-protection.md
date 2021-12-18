@@ -17,14 +17,14 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/02/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 21a7d111d27042d8085ca196ef679b06c2c9f1a3
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 6259cafb34922d170c1c22429e3a06805f0cc0e3
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282770"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566704"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -35,6 +35,8 @@ La protección contra alteraciones está disponible para dispositivos que ejecut
 
 - Windows 10
 - Windows 11
+- Sesión múltiple de Windows 10 Enterprise
+- Windows 11 Enterprise varias sesiones 
 - Windows Server 2019
 - Windows Server 2022
 - Windows server, versión 1803 o posterior
@@ -56,6 +58,7 @@ Con la protección contra manipulaciones, las aplicaciones malintencionadas no p
 - Deshabilitar antivirus (como IOfficeAntivirus (IOAV))
 - Deshabilitar la protección entregada en la nube
 - Eliminación de actualizaciones de inteligencia de seguridad
+- Deshabilitar acciones automáticas en amenazas detectadas
 
 ### <a name="how-it-works"></a>Cómo funciona
 
@@ -69,9 +72,7 @@ La protección contra alteraciones no le impide ver la configuración de segurid
 
 ### <a name="what-do-you-want-to-do"></a>¿Qué quiere hacer?
 
-<br>
-
-****
+<br/><br/>
 
 |Para realizar esta tarea...|Vea esta sección...|
 |---|---|
@@ -82,22 +83,18 @@ La protección contra alteraciones no le impide ver la configuración de segurid
 |Ver detalles sobre intentos de manipulación en dispositivos|[Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts)|
 |Revisar las recomendaciones de seguridad|[Revisar recomendaciones de seguridad](#review-your-security-recommendations)|
 |Revisar la lista de preguntas más frecuentes (preguntas frecuentes)|[Examinar las preguntas frecuentes](#view-information-about-tampering-attempts)|
-|
 
 Según el método o la herramienta de administración que use para habilitar la protección contra manipulaciones, puede haber una dependencia de la protección entregada en la nube.
 
 En la tabla siguiente se proporcionan detalles sobre los métodos, herramientas y dependencias.
 
-<br>
-
-****
+<br/><br/>
 
 |Cómo se habilita la protección contra manipulaciones|Dependencia de la protección entregada en la nube (MAPS)|
 |---|---|
 |Microsoft Intune|No|
 |Microsoft Endpoint Configuration Manager + agregado de inquilino|No|
 |Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) )|Sí|
-|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Administrar la protección contra alteraciones de la organización mediante el portal de Microsoft 365 Defender datos
 
@@ -116,6 +113,7 @@ La protección contra alteraciones puede estar activada o desactivada para el in
 - Debe tener [asignados los permisos adecuados,](/microsoft-365/security/defender-endpoint/assign-portal-access) como el administrador global, el administrador de seguridad o las operaciones de seguridad.
 
 - Los dispositivos Windows deben ejecutar una de las siguientes versiones de Windows:
+  
   - Windows 10
   - Windows 11
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
@@ -125,7 +123,6 @@ La protección contra alteraciones puede estar activada o desactivada para el in
   - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 Para obtener más información acerca de las [versiones, vea Windows 10 información de la versión](/windows/release-health/release-information).
-
 
 - Los dispositivos deben [incorporarse a Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
@@ -151,7 +148,7 @@ Si forma parte del equipo de seguridad de su organización y la suscripción inc
 
 - Debe tener [asignados los permisos adecuados,](/microsoft-365/security/defender-endpoint/assign-portal-access) como el administrador global, el administrador de seguridad o las operaciones de seguridad.
 
-- Su organización usa [Intune para administrar dispositivos](/intune/fundamentals/what-is-device-management). ([Las licencias de Intune](/intune/fundamentals/licenses) son necesarias; Intune se incluye en Microsoft 365 E5).)
+- Su organización usa [Intune para administrar dispositivos](/intune/fundamentals/what-is-device-management). ([Las licencias de Intune](/intune/fundamentals/licenses) son necesarias; Intune se incluye en Microsoft 365 E5/E3, Enterprise Mobility + Security E5/E3, Microsoft 365 Empresa Premium, Microsoft 365 F1/F3, Microsoft 365 Government G5/G3 y Intune para Educación).
 
 - Los dispositivos Windows deben ejecutarse Windows 11 o Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) o posterior. (Para obtener más información acerca de las versiones, [vea Windows 10 información de la versión](/windows/release-health/release-information)).)
 

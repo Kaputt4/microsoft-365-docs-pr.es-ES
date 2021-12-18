@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a7d91adf6e511c9eada8a45f166442e279e6d55b
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 1f6479f3bbf6f636298858d50938846cfddca101
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531356"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566644"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Evaluar las reglas de la reducción de la superficie expuesta a ataques
 
@@ -40,12 +40,13 @@ Establecer reglas de reducción de superficie de ataque para dispositivos que ej
 - Windows 10 Enterprise, versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows server, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
--  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 - Windows Server 2022
 
-> [!WARNING]
-> La habilitación de reglas de reducción de servicios de ataque Windows Server 2016 provocar resultados inesperados y afectar al rendimiento del servidor. No se recomienda habilitar o implementar reglas de reducción de superficie de ataque en plataformas no admitidas.
+> [!Note]
+> Las reglas de reducción de superficie de ataque Windows Server 2012 R2 y Windows Server 2016 están disponibles con el paquete de soluciones unificado moderno. Para obtener más información, vea New [functionality in the modern unified solution for Windows 2012 R2 and 2016 Preview](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) en el tema Onboard Windows servers to the Microsoft Defender for Endpoint [service](configure-server-endpoints.md).
+Vea también [Microsoft Defender para Endpoint: Defender Windows Server 2012 R2 y 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
 
 Aprende a evaluar las reglas de reducción de superficie de ataque habilitando el modo [de](audit-windows-defender.md) auditoría para probar la característica directamente en tu organización.
 

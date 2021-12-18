@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c9ab46c5f801a9069f4b1614f6b04161ee431d5b
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 18751128d4804cfb3a61377caefba1478b7bd515
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531779"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560293"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
@@ -63,8 +63,6 @@ Tiene que llevar a cabo el paso 1 solo una sola vez para importar los archivos P
     > Puede crear un nuevo grupo de roles en Exchange Online que está pensado específicamente para la importación de archivos PST. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de Importación y exportación de buzón de correo y de Destinatarios de correo al nuevo grupo de roles y, a continuación, agregue a los miembros.
   
 - El único método admitido para importar archivos PST a Microsoft 365 es usar la herramienta AzCopy, como se describe en este artículo. No puede usar el Explorador de Azure Storage para cargar archivos PST directamente en el área de Azure Storage.
-
-- Debe almacenar los archivos PST que quiere importar a Microsoft 365 en un servidor de archivos o en una carpeta compartida de la organización. Actualmente no es compatible copiar archivos PST desde la cuenta de Azure Storage de la organización a la ubicación de Azure Storage que usa el Servicio de importación de Microsoft 365. En el paso 2, ejecutará la herramienta AzCopy que cargará en Microsoft 365 los archivos PST que están almacenados en un servidor de archivos o carpeta compartida.
 
 - Es posible que los archivos PST de gran tamaño afecten al rendimiento del proceso de importación de PST. Por lo tanto, le recomendamos que cada archivo PST que cargue en la ubicación de  Azure Storage en el paso 2 no sea superior a 20 GB.
 

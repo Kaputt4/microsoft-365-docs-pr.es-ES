@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Para direcciones IP de destino y direcciones URL para Microsoft 365 tráfico, use esta lista de artículos para los puntos de conexión de Internet de las distintas Microsoft 365 nubes.
-ms.openlocfilehash: 56e67304998a4031244fdbad63848f556fe94039
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba2cb102bfee3ab49a563b0816b754788dec1015
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197322"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566656"
 ---
 # <a name="microsoft-365-endpoints"></a>Puntos de conexión de Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Los puntos de conexión son el conjunto de direcciones IP de destino, nombres de dominio DNS y direcciones URL para Microsoft 365 tráfico en Internet. 
 
@@ -44,7 +44,6 @@ Actualmente hay cinco nubes Microsoft 365 diferentes. Esta tabla le lleva a la l
 | [Puntos de conexión de DoD de Estados Unidos](microsoft-365-u-s-government-dod-endpoints.md) | Puntos de conexión para las suscripciones del Department of Defense (DoD) de Estados Unidos. |
 | [Puntos de conexión de GCC High de Estados Unidos](microsoft-365-u-s-government-gcc-high-endpoints.md) | Puntos de conexión para suscripciones a Government Community Cloud High (GCC High) de Estados Unidos. |
 | [Microsoft 365 operado por 21 puntos de conexión deVianet](urls-and-ip-address-ranges-21vianet.md) | Los puntos de conexión para Microsoft 365 operados por 21Vianet, que está diseñado para satisfacer las necesidades de Microsoft 365 en China. |
-| [Microsoft 365 Puntos de conexión de Alemania](microsoft-365-germany-endpoints.md) | Puntos de conexión de una nube independiente en Europa para los clientes con más regulaciones en Alemania, la Unión Europea (UE) y la Asociación Europea de Libre Comercio (AELC). |
 |||
 
 Para automatizar la obtención de la lista más reciente de puntos de conexión para la nube Microsoft 365, consulte el Office 365 [dirección IP y el servicio web url](microsoft-365-ip-web-service.md).

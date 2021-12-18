@@ -16,12 +16,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4941f2aa207cfedffdb7dc9687023c3bdaa47ab2
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 64dbfb4c569c6ae388c0149789ead38ceddad0f4
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531933"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566500"
 ---
 # <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
@@ -253,13 +253,7 @@ Dependencias: MDAV
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza
 
-Esta regla bloquea el inicio de archivos ejecutables, como .exe, .dll o .scr, a menos que se cumple cualquiera de las siguientes condiciones:
-
-- Prevalencia: los archivos ejecutables se encuentran en más de 1.000 puntos de conexión
-- Edad: los archivos ejecutables se publicaron hace más de 24 horas
-- Ubicación: los archivos ejecutables se incluyen en una lista de confianza o una lista de exclusión
-
-El inicio de archivos ejecutables desconocidos o no de confianza puede ser arriesgado, ya que podría no estar claro inicialmente si los archivos son malintencionados.
+Esta regla bloquea el inicio de archivos ejecutables, como .exe, .dll o .scr. Por lo tanto, iniciar archivos ejecutables desconocidos o no de confianza puede ser arriesgado, ya que es posible que no esté claro inicialmente si los archivos son malintencionados.
 
 > [!IMPORTANT]
 > Debe habilitar [la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) para usar esta regla.

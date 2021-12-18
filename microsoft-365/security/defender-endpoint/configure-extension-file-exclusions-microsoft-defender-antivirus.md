@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 12/06/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ab6f9d617e2d1ac91aa084286673af49eaeb7e2f
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 616dde760ab24d12efe5c4621a1ee1829cb1798f
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320736"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566668"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -138,7 +138,7 @@ El formato de los cmdlets es el siguiente:
 
 En la tabla siguiente se enumeran los cmdlets que puede usar en la `<cmdlet>` parte del cmdlet de PowerShell:
 
-<br/>
+<br/><br/>
 
 |Acción de configuración|Cmdlet de PowerShell|
 |:---|:---|
@@ -148,7 +148,7 @@ En la tabla siguiente se enumeran los cmdlets que puede usar en la `<cmdlet>` pa
 
 En la tabla siguiente se enumeran los valores que puede usar en la `<exclusion list>` parte del cmdlet de PowerShell:
 
-<br/>
+<br/><br/>
 
 |Tipo de exclusión|Parámetro de PowerShell|
 |---|---|
@@ -203,7 +203,7 @@ Puede usar el asterisco, el signo de interrogación o las variables de entorno (
     
 En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y se proporcionan algunos ejemplos.
 
-<br/>
+<br/><br/>
 
 |Carácter comodín|Ejemplos|
 |---|---|
@@ -224,7 +224,7 @@ En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y
 
 En la tabla siguiente se enumeran y describen las variables de entorno de cuentas del sistema.
 
-<br/>
+<br/><br/>
 
 |Esta variable de entorno del sistema...|Redirige a esto|
 |---|---|
@@ -316,12 +316,12 @@ Para comprobar las exclusiones con la herramienta de línea de [comandos ](./com
 ```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.2110-6.0 (Where 4.18.2110-6.0 is this month's Microsoft Defender Antivirus "Platform Update".)
+cd 4.18.2111-5.0 (Where 4.18.2111-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La comprobación de exclusiones con MpCmdRun requiere Antivirus de Microsoft Defender versión 4.18.2110-6.0 de CAMP (publicada en noviembre de 2021) o posterior.
+> La comprobación de exclusiones con MpCmdRun requiere Antivirus de Microsoft Defender versión 4.18.2111-5.0 de CAMP (publicada en diciembre de 2021) o posterior.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Revise la lista de exclusiones junto con el resto de Antivirus de Microsoft Defender preferencias mediante PowerShell
 
@@ -382,7 +382,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

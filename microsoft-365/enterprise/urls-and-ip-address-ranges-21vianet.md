@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: En este artículo se enumeran las direcciones URL y los intervalos de direcciones IP Office 365 cuando 21Vianet lo opera en China.
 hideEdit: true
-ms.openlocfilehash: 79bd6f023828bc6ac3bdb33b29a1dbc37f26ff89
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e96226ff9db25eb8b46edc07bde1ec738f2e427b
+ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150575"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61566680"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>Direcciones URL e intervalos de direcciones IP para Office 365 operado por 21Vianet
 
@@ -34,7 +34,7 @@ ms.locfileid: "60150575"
 
 **Resumen**: los siguientes puntos de conexión (FQDN, puertos, direcciones URL, IPv4 y prefijos de IPv6) se aplican a Office 365 operado por 21Vianet y están diseñados para ofrecer servicios de productividad para las organizaciones que usan solo estos planes.
   
- **Puntos de conexión de Office 365:** [mundial (incluido GCC)](urls-and-ip-address-ranges.md)  | *Office 365 operado por 21Vianet* | [Office 365 Germany](microsoft-365-germany-endpoints.md)  |  [Office 365 Administración Pública de Estados Unidos (DoD)](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 Administración Pública de Estados Unidos (GCC High)](microsoft-365-u-s-government-gcc-high-endpoints.md) |
+ Office 365 de **conexión:** Office 365 mundial [(incluido GCC)](urls-and-ip-address-ranges.md)operado por   |  *21 Office 365* Dedo del Gobierno de los Estados Unidos  |  [](microsoft-365-u-s-government-dod-endpoints.md)  |  [Office 365](microsoft-365-u-s-government-gcc-high-endpoints.md) high de administración GCC Estados Unidos |
   
 **Última actualización:** 28/09/2021 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Suscripción de registro de cambios](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
