@@ -21,16 +21,16 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: e49cae704e9ee62801af7423ba10b45e0b13574d
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: a2a94a47ca9f19087bfa5cf9b8d027ae2c551641
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220973"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560089"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
-¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? De ser así, puede usar la herramienta de búsqueda del registro de auditoría en el Centro de cumplimiento de Microsoft 365 para buscar el registro de auditoría unificado para ver la actividad de los usuarios y administradores en su organización. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los usuarios de la organización pueden usar la herramienta de búsqueda de registro de auditoría para buscar, ver y exportar (a un archivo CSV) los registros de auditoría de estas operaciones.
+¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? De ser así, puede usar la herramienta de búsqueda del registro de auditoría en el Centro de cumplimiento de Microsoft 365 para buscar el registro de auditoría unificado para ver la actividad de los usuarios y administradores en su organización. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los usuarios de tu organización pueden usar la herramienta de búsqueda de registro de auditoría para buscar, ver y exportar (a un archivo CSV) los registros de auditoría de estas operaciones.
 
 ## <a name="microsoft-365-services-that-support-auditing"></a>Servicios de Microsoft 365 que admiten la auditoría
 

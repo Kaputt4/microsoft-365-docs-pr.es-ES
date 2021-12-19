@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: 3be5e7f0710155cb8e5e8e60e19577cf423190eb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f3322af11f724920e5833182128346c1bc4c41c5
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165203"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559873"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -80,22 +80,24 @@ Una etiqueta de retención estándar tiene opciones de retención y acciones, pe
 |Acción| Etiqueta de retención |Registro: bloqueado| Registro: desbloqueado| Registro normativo |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Editar contenidos|Permitido | **Bloqueado** | Permitido | **Bloqueado**|
-|Editar propiedades, incluido cambiar nombre|Permitido |Permitido | Permitido| **Bloqueado**|
-|Eliminar|Permitido<sup>1</sup> |**Bloqueado** |**Bloqueado**| **Bloqueado**|
+|Editar propiedades, incluido cambiar nombre|Permitido |Permitido<sup>1</sup> | Permitido | **Bloqueado**|
+|Eliminar|Permitido <sup>2</sup> |**Bloqueado** |**Bloqueado**| **Bloqueado**|
 |Copiar|Permitido |Permitido | Permitido| Permitido|
-|Moverse dentro del contenedor<sup>2</sup>|Permitido |Permitido | Permitido| Permitido|
-|Moverse entre contenedores<sup>2</sup>|Permitido |Permitido si nunca se desbloquea | **Bloqueado** | **Bloqueado**|
+|Mover dentro del contenedor <sup>3</sup>|Permitido |Permitido | Permitido| Permitido|
+|Moverse a través de contenedores <sup>3</sup>|Permitido |Permitido si nunca se desbloquea | **Bloqueado** | **Bloqueado**|
 |Abrir y leer|Permitido |Permitido | Permitido| Permitido|
 |Cambiar etiqueta|Permitido |Permitido: solo administradores del contenedor | Permitido: solo administradores del contenedor| **Bloqueado**
 |Quitar etiqueta|Permitido |Permitido: solo administradores del contenedor | Permitido: solo administradores del contenedor| **Bloqueado**
 
 Notas al pie:
 
-<sup>1</sup> Para SharePoint y OneDrive, se puede bloquear como una configuración de espacio empresarial en el Centro de cumplimiento de Microsoft 365 > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Eliminación de elementos**
+<sup>1</sup> Permitido de forma predeterminada, pero puede ser bloqueado por una configuración de inquilino para archivos de más de 0 bytes: Vaya al nodo **Administración de registros** en el centro de cumplimiento de Microsoft 365 > **Configuración de administración de registros** > **Etiquetas de retención** > **Permita la edición de propiedades de registro** y, a continuación, desactive la configuración **Permitir usuarios para editar las propiedades del registro**.
+
+<sup>2</sup> Para SharePoint y OneDrive, se puede bloquear como una configuración de espacio empresarial en el Centro de cumplimiento de Microsoft 365 > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Eliminación de elementos**
 
 Cuando se aplica una etiqueta de retención a un elemento de lista que tiene datos adjuntos de documento, ese documento no hereda la configuración de retención y se puede eliminar del elemento de lista. En cambio, si se declara un registro con una etiqueta de retención, los datos adjuntos del documento heredarán la configuración de retención y no se podrán eliminar.
 
-<sup>2</sup> Los contenedores incluyen librerías de documentos de SharePoint, cuentas de OneDrive y buzones de Exchange.
+<sup>3 </sup> Los contenedores incluyen bibliotecas de documentos de SharePoint, cuentas de OneDrive y buzones de Exchange.
 
 > [!IMPORTANT]
 > La diferencia más importante que supone un registro normativo es que, una vez que se aplica al contenido, nadie, ni siquiera un administrador global, puede quitar la etiqueta.

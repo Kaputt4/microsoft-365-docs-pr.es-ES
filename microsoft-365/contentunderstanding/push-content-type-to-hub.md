@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-ms.openlocfilehash: 6dcd4bae638a9193e1fba2c0719339a5ddedc18d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7e5acdde2d60db88b68273d0f1158ae1694a523e
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372857"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61559957"
 ---
 # <a name="push-content-types-to-a-hub"></a>Insertar tipos de contenido en un centro
 
@@ -43,6 +43,6 @@ Insertar tipos de contenido en un centro
 
 Al insertar un tipo de contenido en un centro existente y sus sitios asociados existentes por primera vez, pueden tardar hasta una hora desde el momento en que se visitan el centro o los sitios asociados para que la configuración se actualice en el sitio. Las nuevas asociaciones al centro no requerirán esta espera y tendrán la configuración reflejada en unos minutos.
 
-Una vez actualizada la configuración, el tipo de contenido con estas opciones de configuración estará disponible en cualquier sitio recientemente asociado con el centro en cuestión de minutos. La vista de biblioteca predeterminada se cambiará a una de estas vistas creadas automáticamente. Después, el tipo de contenido se agregará automáticamente a las nuevas listas o bibliotecas creadas unos minutos después de la creación. Un tipo de contenido insertado se agregará a una biblioteca de documentos solo si se deriva directa o indirectamente del tipo de contenido de documento, y un tipo de contenido se agregará a una lista solo si no deriva de forma directa o indirecta del tipo de contenido del documento.
+Una vez actualizada la configuración, el tipo de contenido con estas opciones de configuración estará disponible en cualquier sitio recientemente asociado con el centro en cuestión de minutos. La vista de biblioteca predeterminada se cambiará a una de estas vistas creadas automáticamente. Si hay varios tipos de contenido que se insertan en la misma biblioteca, el último (según el orden de la acción de insertar esos tipos de contenido en el concentrador al que pertenece esta biblioteca) es lo que se establecerá como la vista predeterminada.  Después, el tipo de contenido se agregará automáticamente a las nuevas listas o bibliotecas creadas unos minutos después de la creación. Un tipo de contenido insertado se agregará a una biblioteca de documentos solo si se deriva directa o indirectamente del tipo de contenido de documento, y un tipo de contenido se agregará a una lista solo si no deriva de forma directa o indirecta del tipo de contenido del documento.
 
 ## <a name="see-also"></a>Consulte también

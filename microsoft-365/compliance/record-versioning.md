@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros en Microsoft 365.
-ms.openlocfilehash: 77a6cb185b599c6e96f3ff19331b233c9f28a318
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2d08a6a29d2bb4a32b0669bed8d97cda3767538a
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177392"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560005"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive
 
@@ -30,6 +30,8 @@ ms.locfileid: "60177392"
 
 > [!NOTE]
 > Dado que los registros reglamentarios bloquean la edición, el control de versiones de registros no está disponible para los registros reglamentarios.
+>
+> También puede impedir el control de versiones de registros para el inquilino, incluso si no usa registros normativos: vaya al nodo de **Administración de registros** en el centro de cumplimiento de Microsoft 365 > **Configuración de administración de registros** > **Etiquetas de retención** > **Configurar el control de versiones de registros** y, a continuación, desactive la configuración para **Habilitar el control de versiones de registros**.
 
 La capacidad de marcar un documento como [registro](records-management.md#records) y restringir las acciones que se pueden realizar en el registro es un objetivo esencial para cualquier solución de administración de registros. Sin embargo, también puede ser necesaria la colaboración para que los usuarios creen versiones posteriores.
 
@@ -53,14 +55,14 @@ El control de versiones de registros está disponible automáticamente para cual
 Cuando el documento esté desbloqueado, todos los usuarios con permisos de edición estándar podrán editar el archivo. Sin embargo, los usuarios no pueden eliminar el archivo porque aún es un registro. Cuando termine de editar, el usuario puede cambiar el **Estado de registro** de **Desbloqueado** a **Bloqueado**, lo que impide que se realicen otras modificaciones mientras se encuentre en este estado.
 <br/><br/>
 
-![Propiedad de estado de registro en un documento etiquetado como registro.](../media/recordversioning8.png)
+:::image type="content" alt-text="Propiedad de estado de registro en un documento etiquetado como registro." source="../media/recordversioning8.png" lightbox="../media/recordversioning8.png":::
 
 ## <a name="locking-and-unlocking-a-record"></a>Bloquear y desbloquear un registro
 
 Cuando se aplica a un documento una etiqueta de retención que marca contenido como un registro, cualquier usuario con permisos de contribución o un nivel de permisos más limitado puede desbloquear un registro o bloquear un registro desbloqueado.
 <br/><br/>
 
-![Estado del registro muestra que el documento de registro está desbloqueado.](../media/recordversioning9.png)
+:::image type="content" alt-text="Estado del registro muestra que el documento de registro está desbloqueado." source="../media/recordversioning9.png" lightbox="../media/recordversioning9.png":::
 
 Cuando un usuario desbloquea un registro, tienen lugar las siguientes acciones:
 
@@ -81,7 +83,7 @@ Cuando un usuario bloquea un registro, no se puede editar el documento original.
 Cada vez que un usuario desbloquea un registro, la versión más reciente se copia en la biblioteca de conservación de documentos y esa versión contiene el valor del **Registro** en el campo **Comentarios** del historial de versiones.
 <br/><br/>
 
-![Registro que se muestra en la biblioteca de suspensión para conservación.](../media/recordversioning10.png)
+:::image type="content" alt-text="Registro que se muestra en la biblioteca de suspensión para conservación." source="../media/recordversioning10.png" lightbox="../media/recordversioning10.png":::
 
 Para ver el historial de versiones, seleccione un documento de la biblioteca de documentos y, a continuación, haga clic en **Historial de versiones** en el menú elemento.
 

@@ -162,6 +162,8 @@
               href: attack-simulation-training-simulation-automations.md
             - name: Automatizaciones de carga en el aprendizaje de simulación de ataques
               href: attack-simulation-training-payload-automations.md
+            - name: Notificaciones del usuario final para el aprendizaje de simulación de ataques
+              href: attack-simulation-traning-end-user-notifications.md
             - name: Conclusiones e informes en el aprendizaje de simulación de ataques
               href: attack-simulation-training-insights.md
             - name: 'Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  '

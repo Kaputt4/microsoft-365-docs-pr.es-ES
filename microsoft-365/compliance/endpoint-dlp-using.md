@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: d595e931e364aa04c0e4dd72dc996e1f93c7ab05
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: e6ab91d8baf3182cd857e7e6002f61b57a8f101e
+ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426404"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61560605"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -59,11 +59,13 @@ O bien
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Escaneo y protección de clasificación avanzada
 
-#### <a name="get-registered"></a>Registrarse
+<!--#### Get registered
 
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea [registrarse para la compatibilidad de Microsoft 365 en macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
 
-Cuando está habilitada, **la protección y el examen de clasificación avanzada** permiten al servicio de clasificación de datos basado en la nube más avanzado de Microsoft 365 examinar elementos, clasificarlos y devolver los resultados a la máquina local. Esto significa que puede aprovechar la clasificación [exacta de coincidencia de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), técnicas de clasificación de entidades [con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) en las directivas DLP.
+When enabled,--> 
+
+La protección y el examen de clasificación avanzada permiten que el servicio de clasificación de datos basado en la nube Microsoft 365 más avanzado examine los elementos, los clasifique y devuelva los resultados al equipo local. Esto significa que puede aprovechar la clasificación [exacta de coincidencia de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), técnicas de clasificación de entidades [con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) en las directivas DLP.
 
 En la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso del ancho de banda es una preocupación, puede establecer un límite en esta configuración global que se aplica por dispositivo en cuanto se puede usar en un período de 24 horas. Si estableces un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube y la clasificación de datos continuará localmente en el dispositivo. Cuando el uso del ancho de banda acumulado se encuentra por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
 
@@ -196,6 +198,14 @@ Si el modo de lista está configurado en **Permitir**, los usuarios podrán carg
 
 > [!IMPORTANT]
 > Cuando el modo de restricción del servicio esté establecido en "Permitir", debe tener al menos un dominio de servicio configurado antes de que las restricciones se apliquen.
+
+Usar el formato FQDN del dominio de servicio sin el final `.` 
+
+Por ejemplo:
+
+ `www.contoso.com` 
+
+No se admiten los caracteres comodín.
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Configuración adicional para DLP de punto de conexión
 
