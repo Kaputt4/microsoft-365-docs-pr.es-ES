@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
-ms.openlocfilehash: 1197d54206abaa42b59f7c3b81365065191904cf
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+ms.openlocfilehash: 27f3ada633f7af37b657e59cce64ef1c8e102177
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61137114"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578162"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams
 
@@ -42,9 +42,9 @@ Un requisito previo para administrar el contenido Teams en Advanced eDiscovery e
 ||Ubicación de mensajes y publicaciones de chat  |Ubicación de archivos y datos adjuntos |
 |:---------|:---------|:---------|
 |Teams chats 1:1     |Los mensajes en chats 1:1 se almacenan en el Exchange Online de todos los participantes de chat. |Los archivos compartidos en un chat 1:1 se almacenan en la OneDrive para la Empresa de la persona que compartió el archivo. |
-|Teams chats de grupo     |Los mensajes de los chats de grupo se almacenan en el Exchange Online de todos los participantes de chat. |Los archivos compartidos en chats de grupo se almacenan en la OneDrive para la Empresa de la persona que compartió el archivo. |
+|Teams chats de grupo     |Los mensajes de los chats de grupo se almacenan en el Exchange Online de todos los participantes de chat. |Los archivos compartidos en chats de grupo se almacenan OneDrive para la Empresa cuenta de la persona que compartió el archivo. |
 |Canales de Teams     |Todos los mensajes y publicaciones de canal se almacenan en el Exchange Online de correo asociado con el equipo.|Los archivos compartidos en un canal se almacenan en el sitio SharePoint online asociado con el equipo.           |
-|Canales Teams privados     |Los mensajes enviados en un canal privado se almacenan Exchange Online buzones de todos los miembros del canal privado.|Los archivos compartidos en un canal privado se almacenan en un sitio SharePoint online asociado con el canal privado.|
+|Canales Teams privados     |Los mensajes enviados en un canal privado se almacenan Exchange Online buzones de todos los miembros del canal privado.|Los archivos compartidos en un canal privado se almacenan en un sitio SharePoint online dedicado asociado con el canal privado.|
 ||||
 
 ## <a name="create-a-case-for-teams-content"></a>Crear un caso para el Teams contenido
@@ -261,7 +261,7 @@ En conjuntos de revisión grandes con miles o millones de elementos, puede ser d
 
 En la tabla siguiente se describen las propiedades de metadatos Teams contenido.
 
-|Metadata (propiedad)  |Descripción  |
+|Metadata (propiedad)  |Description  |
 |:---------|:---------|
 |ContainsEditedMessage      | Indica si un archivo de transcripción contiene un mensaje editado. Los mensajes editados se identifican al ver el archivo de transcripción.|
 |ConversationId|GUID que identifica la conversación a la que está asociado el elemento. Los archivos de transcripción y los datos adjuntos de la misma conversación tienen el mismo valor para esta propiedad.|
@@ -296,3 +296,11 @@ Estos son algunos consejos y procedimientos recomendados para ver Teams contenid
 - Las columnas útiles que le ayudarán a revisar Teams contenido incluyen **custodia,** **destinatarios** y **tipo de archivo** o tipo de **mensaje**.
 
 - Use [filtros](review-set-search.md) para Teams propiedades relacionadas con el usuario para mostrar rápidamente Teams contenido. Hay filtros para la mayoría de las propiedades de metadatos descritas en la sección anterior.
+
+## <a name="reference-guide"></a>Guía de referencia
+
+Esta es una guía de referencia rápida para usar Advanced eDiscovery para Microsoft Teams. En esta guía se resumen los puntos clave para usar Advanced eDiscovery conservar, recopilar, revisar y exportar contenido de Microsoft Teams.
+
+![Miniatura para la guía de referencia para usar Advanced eDiscovery para Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
+
+[Descargar como archivo PDF](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)

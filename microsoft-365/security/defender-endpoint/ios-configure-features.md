@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1953dfe4c4c9f1e8303448f1d29aa9a8c4273102
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: d4052ef2e73b7b81630c8013e17cad533383b215
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218423"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578536"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -85,6 +85,27 @@ Para obtener más información sobre mam o directiva de protección de aplicacio
 Microsoft Defender para endpoint en iOS habilita el escenario de directiva de protección de aplicaciones y está disponible en la Tienda de aplicaciones de Apple.
 
 Los usuarios finales deben instalar la versión más reciente de la aplicación directamente desde la Tienda de aplicaciones de Apple.
+
+## <a name="privacy-controls"></a>Controles de privacidad
+
+> [!IMPORTANT]
+> Los controles de privacidad de Microsoft Defender para endpoint en iOS están en versión preliminar. La siguiente información se refiere al producto predefinido que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+
+### <a name="configure-privacy-in-phish-alert-report"></a>Configurar la privacidad en el informe de alerta de suplantación de identidad
+
+Los clientes ahora pueden habilitar el control de privacidad para el informe de suplantación de identidad enviado por Microsoft Defender para Endpoint en iOS. Esto garantizará que el nombre de dominio no se envíe como parte de la alerta de suplantación de identidad siempre que un sitio web de suplantación de identidad sea detectado y bloqueado por Microsoft Defender para endpoint.
+
+Siga estos pasos para habilitar la privacidad y no recopilar el nombre de dominio como parte del informe de alertas de suplantación de identidad.
+
+1. En [Microsoft Endpoint Manager centro de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración de **aplicaciones**  >  **Agregar**  >    >  **dispositivos administrados.**
+1. Asigne a la directiva un nombre, **Platform > iOS/iPadOS**, seleccione el tipo de perfil.
+1. Selecciona **Microsoft Defender para Endpoint** como la aplicación de destino.
+1. En Configuración, seleccione Usar diseñador **de** configuraciones y agregue **DefenderExcludeURLInReport** como clave y tipo de valor como **booleano**
+   - Para habilitar la privacidad y no recopilar el nombre de dominio, escriba el valor como `true` y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en `false` .
+   - Para los usuarios con el conjunto de claves como , la alerta de phish no contendrá la información de nombre de dominio siempre que Defender for Endpoint detecte y bloquee un sitio `true` malintencionado.
+1. Haz **clic en Siguiente** y asigna este perfil a dispositivos o usuarios dirigidos.
+
+Activar o desactivar los controles de privacidad anteriores no afectará a la comprobación de cumplimiento del dispositivo ni al acceso condicional.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Configurar la directiva de cumplimiento en dispositivos con jailbreak
 

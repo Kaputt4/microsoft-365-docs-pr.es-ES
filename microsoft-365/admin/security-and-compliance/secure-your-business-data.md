@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Cómo proteger el correo electrónico y los datos de su empresa de ciberamenazas, incluidos ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 9fbb327ff38d2de46f70c9aaa33b5217ed3c1c02
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 92d2e4defbaf5cf92443f432eae63f87b68478c0
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521071"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578212"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
@@ -63,20 +63,22 @@ Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que s
 
 Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../../campaigns/index.md). Esta guía se desarrolló en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de pequeñas empresas contra ciberamenazas lanzadas por sofisticados hackers.
 
-Antes de empezar, compruebe el Microsoft 365 [puntuación segura](../../security/defender/microsoft-secure-score.md) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>. Desde un panel centralizado, puede supervisar y mejorar la seguridad de su Microsoft 365 identidades, datos, aplicaciones, dispositivos e infraestructura. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Con información adicional y más visibilidad de un conjunto más amplio de productos y servicios de Microsoft, puede tener confianza en los informes sobre el estado de seguridad de su organización.
+Antes de empezar, compruebe el Microsoft 365 [puntuación segura](../../security/defender/microsoft-secure-score.md) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>. Desde un panel centralizado, puede supervisar y mejorar la seguridad de su Microsoft 365 identidades, datos, aplicaciones, dispositivos e infraestructura. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Con información agregada y más visibilidad de un conjunto más amplio de productos y servicios de Microsoft, puede tener confianza en los informes sobre el estado de seguridad de su organización.
 
 ![Captura de pantalla de Puntuación segura de Microsoft.](../../media/secure-score.png)
 
 ## <a name="1-set-up-multi-factor-authentication"></a>1: Configurar la autenticación multifactor
 
-El uso de la autenticación multifactor es una de las formas más sencillas y eficaces de aumentar la seguridad de la organización. Es más fácil de lo que parece: al iniciar sesión, la autenticación multifactor significa que escribirás un código desde el teléfono para obtener acceso a Microsoft 365. Esto puede impedir que los piratas informáticos se alopen si conocen tu contraseña. La autenticación multifactor también se denomina verificación en 2 pasos. Los individuos pueden agregar la comprobación de 2 pasos a la mayoría de las cuentas fácilmente, por ejemplo, a sus cuentas de Google o Microsoft. Este es el procedimiento para [agregar la comprobación en dos pasos a su cuenta personal de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+
+El uso de la autenticación multifactor es una de las formas más sencillas y eficaces de aumentar la seguridad de la organización. Es más fácil de lo que parece: al iniciar sesión, la autenticación multifactor significa que escribirás un código desde el teléfono para obtener acceso a Microsoft 365. Este paso adicional puede impedir que los piratas informáticos se alopen si conocen tu contraseña. La autenticación multifactor también se denomina verificación de 2 pasos. Los individuos pueden agregar la comprobación de 2 pasos a la mayoría de las cuentas fácilmente, por ejemplo, a sus cuentas de Google o Microsoft. Este es el procedimiento para [agregar la comprobación en dos pasos a su cuenta personal de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
 Para las empresas que usan Microsoft 365, agregue una configuración que requiera que los usuarios inicien sesión con la autenticación multifactor. Al realizar este cambio, se pedirá a los usuarios que configuren su teléfono para la autenticación en dos fases la próxima vez que inicien sesión.
 Para ver un vídeo de aprendizaje sobre cómo configurar MFA y cómo los usuarios completan la configuración, consulte [Configurar MFA](set-up-multi-factor-authentication.md) y configurar [el usuario](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
+
 Para configurar la autenticación multifactor, activa los valores predeterminados de seguridad:
 
-En la mayoría de las organizaciones, los valores predeterminados de seguridad ofrecen un buen nivel de seguridad adicional de inicio de sesión. Para obtener más información, vea [¿Qué son los valores predeterminados de seguridad?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Para la mayoría de las organizaciones, los valores predeterminados de seguridad ofrecen un buen nivel de seguridad de inicio de sesión agregado. Para obtener más información, vea [¿Qué son los valores predeterminados de seguridad?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 Si la suscripción es nueva, es posible que los valores predeterminados de seguridad ya estén activados automáticamente.
 
@@ -84,7 +86,7 @@ Puede habilitar o deshabilitar los valores predeterminados de seguridad en el pa
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con credenciales de administrador global.
 2. En el panel de navegación izquierdo, elija **Mostrar todo** y, en **Centros de administración**, elija **Azure Active Directory**.
-3. En el **Centro de administración de Azure Active Directory** elija **Azure Active Directory** > **Propiedades**.
+3. En el **Centro Azure Active Directory administración,** **elija Azure Active Directory**  >  **Propiedades**.
 4. En la parte inferior de la página, elija **Administrar los valores predeterminados de seguridad**.
 5. Elija **Sí** para habilitar los valores predeterminados de seguridad y **No** para deshabilitar los valores predeterminados de seguridad; a continuación, elija **Guardar**.
 
@@ -96,7 +98,7 @@ Para obtener información completa y recomendaciones completas, consulte [Config
 
 El Manual [](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la campaña de ciberseguridad de la Escuela Kennedy de Harvard proporciona excelentes instrucciones para establecer una cultura sólida de concienciación de seguridad en su organización, incluida la formación de los usuarios para identificar los ataques de suplantación de identidad.
 
-Además de esta guía, Microsoft recomienda que los usuarios tomen las acciones descritas en este artículo: Proteger su cuenta y dispositivos de [los piratas informáticos y malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Entre estas acciones se incluyen:
+Además, Microsoft recomienda que los usuarios tomen las acciones descritas en este artículo: Proteger su cuenta y dispositivos de [los piratas informáticos y malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Entre estas acciones se incluyen:
 
 - Uso de contraseñas seguras
 
@@ -124,17 +126,15 @@ Las cuentas administrativas que usa para administrar el entorno Microsoft 365 in
 
 El Microsoft 365 incluye protección contra malware, pero puede aumentar esta protección bloqueando los datos adjuntos con tipos de archivo que se usan habitualmente para malware. Para proteger contra malware en el correo electrónico, vea un [breve vídeo de aprendizaje](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail)o siga estos pasos:
 
-1. Ve a <https://protection.office.com> e inicia sesión con las credenciales de tu cuenta de administrador.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas \>  \>  \> **Directivas antimalware** en la **sección** Directivas.
 
-2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración** de amenazas, elija **Directiva** \> **antimalware**.
+2. En la **página Antimalware,** haga doble clic en **Predeterminado (predeterminado).** Aparece un desplegable. 
 
-3. Haga doble clic en la directiva predeterminada para editar esta directiva en toda la empresa.
+3. Seleccione **Editar configuración de protección** en la parte inferior del control desplegable. 
 
-4. Seleccione **Configuración**.
+4. En la página siguiente, en **Configuración de protección,** active la casilla situada junto **a Habilitar el filtro de datos adjuntos comunes.** Los tipos de archivo bloqueados aparecen directamente debajo de esta opción. Para agregar o eliminar tipos de archivo, seleccione **Personalizar tipos de archivo** al final de la lista. 
 
-5. En **Filtro de tipos de datos adjuntos** comunes, seleccione **En**. Los tipos de archivo bloqueados se enumeran en la ventana directamente debajo de este control. Puede agregar o eliminar tipos de archivo más adelante, si es necesario.
-
-6. Seleccione **Guardar.**
+5. Seleccione **Guardar**. 
 
 Para obtener más información, vea [Protección contra malware en EOP](../../security/office-365-security/anti-malware-protection.md).
 
@@ -158,11 +158,11 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 
 4. Seleccione **** en la parte inferior del cuadro de diálogo para ver el conjunto completo de opciones.
 
-5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiar estos valores.
+5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de la configuración en el valor predeterminado, a menos que desee cambiarlos.
 
 6. Seleccione **Guardar**.
     
-| Configuración | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
+| Setting | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla anti ransomware: advertir a los usuarios  <br/> |Regla anti ransomware: bloquear tipos de archivo  <br/> |
 |Aplique esta regla si . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |
@@ -173,7 +173,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 > [!TIP]
 > También puede agregar los archivos que desea bloquear a la lista Antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para obtener más información, vea:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -181,7 +181,7 @@ Para obtener más información, vea:
 
 ## <a name="6-stop-auto-forwarding-for-email"></a>6: Detener el reenvío automático de correo electrónico
 
-Los hackers que obtienen acceso al buzón de un usuario pueden filtrar el correo configurando el buzón para reenviar automáticamente el correo electrónico. Esto puede ocurrir incluso sin el reconocimiento del usuario. Puede evitar que esto suceda configurando una regla de flujo de correo.
+Los hackers que obtienen acceso al buzón de un usuario pueden filtrar el correo configurando el buzón para reenviar automáticamente el correo electrónico. Este problema puede ocurrir incluso sin el conocimiento del usuario. Puede evitar que esto suceda configurando una regla de flujo de correo.
 
 Para crear una regla de transporte de correo:
 
@@ -197,7 +197,7 @@ Para crear una regla de transporte de correo:
 
 6. Seleccione **Guardar**.
 
-|Configuración|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
+|Setting|Rechazar mensajes de correo electrónico de reenvío automático a dominios externos|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
@@ -216,7 +216,7 @@ Office cifrado de mensajes proporciona dos opciones de protección al enviar cor
 
 - Cifrar
 
-Es posible que la organización haya configurado opciones adicionales que aplican una etiqueta al correo electrónico, como Confidencial.
+Es posible que la organización haya configurado otras opciones que aplican una etiqueta al correo electrónico, como Confidencial.
 
 ### <a name="to-send-protected-email"></a>Para enviar correo electrónico protegido
 
@@ -242,26 +242,22 @@ Si ha configurado uno o varios dominios personalizados para su entorno Microsoft
 
 Se recomienda empezar a usar esta protección mediante la creación de una directiva para proteger a los usuarios más importantes y al dominio personalizado.
 
-![Crear una directiva contra la suplantación de identidad en Microsoft Defender para Office 365.](../../media/security-and-compliance-center.png)
-
 Para crear una directiva contra la suplantación de identidad en Defender para Office 365, vea un breve [vídeo](increase-threat-protection.md#protect-your-email-from-phishing-attacks)de aprendizaje o siga estos pasos:
 
-1. Ve a <https://protection.office.com>.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** seleccione **Directiva**.
+2. Vaya a **Correo & directivas** de colaboración & reglas de amenazas Directivas contra \>  \>  \> **suplantación** de identidad en la **sección** Directivas.
 
-3. En la página Directiva, seleccione **Anti-phishing**.
+3. En la página Anti-phishing, seleccione **+ Crear**. Se inicia un asistente que le permite definir la directiva contra suplantación de identidad.
 
-4. En la página Anti-phishing, seleccione **+ Crear**. Se inicia un asistente que le permite definir la directiva contra suplantación de identidad.
+4. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en el siguiente gráfico. Para obtener más información, vea [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
-5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en el siguiente gráfico. Consulta [Más información sobre la directiva contra la suplantación](../../security/office-365-security/set-up-anti-phishing-policies.md) de identidad en Microsoft Defender para obtener Office 365 opciones para obtener más información.
-
-6. Después de revisar la configuración, seleccione **Crear esta directiva** o **Guardar**, según corresponda.
+5. Después de revisar la configuración, seleccione **Crear esta directiva** o **Guardar**, según corresponda.
 
 |Configuración u opción|Valor recomendado|
 |---|---|
 |Nombre|Personal de la campaña más valioso y de dominio|
-|Descripción|Asegúrese de que el personal más importante y nuestro dominio no se suplanten.|
+|Description|Asegúrese de que el personal más importante y nuestro dominio no se suplanten.|
 |Agregar usuarios que proteger|Seleccione **+ Agregar una condición, El destinatario es**. Escriba nombres de usuario o escriba la dirección de correo electrónico del candidato, el jefe de campaña y otros miembros importantes del personal. Puede agregar hasta 20 direcciones internas y externas que desea proteger de la suplantación.|
 |Agregar dominios que proteger|Seleccione **+ Agregar una condición, El dominio de destinatario es**. Escriba el dominio personalizado asociado con su Microsoft 365 suscripción, si ha definido uno. Puede escribir más de un dominio.|
 |Elegir acciones|Si un usuario suplantado envía correo electrónico: seleccione Redirigir mensaje a otra dirección de correo electrónico y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, securityadmin@contoso.com. <br/> Si un dominio suplantado envía correo electrónico: seleccione **Mensaje en cuarentena**.|
@@ -278,24 +274,20 @@ Las personas envían, reciben y comparten datos adjuntos con regularidad, como d
 
 Para crear una directiva Caja fuerte datos adjuntos, vea un [breve vídeo de](increase-threat-protection.md)aprendizaje o siga estos pasos:
 
-1. Ve a <https://protection.office.com> e inicia sesión con tu cuenta de administrador.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal e</a>inicie sesión con su cuenta de administrador.
 
-2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** seleccione **Directiva**.
+2. Vaya a **Correo & directivas** de colaboración & reglas de amenazas \>  \> **Directivas** \> **antimalware** en la **sección** Directivas.
 
-3. En la página Directiva, seleccione **Caja fuerte datos adjuntos**.
+3. Seleccione **+ Crear** para crear una nueva directiva.
 
-4. En la página Caja fuerte datos adjuntos, aplique esta protección de forma general activando la casilla Activar ATP para **SharePoint,** OneDrive y Microsoft Teams protección.
+4. Aplique la configuración en la tabla siguiente.
 
-5. Seleccione **+** esta opción para crear una nueva directiva.
-
-6. Aplique la configuración en la tabla siguiente.
-
-7. Después de revisar la configuración, seleccione **Crear esta directiva** o **Guardar**, según corresponda.
+5. Después de revisar la configuración, seleccione **Crear esta directiva** o **Guardar**, según corresponda.
 
 |Configuración u opción|Valor recomendado|
 |---|---|
 |Nombre|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
-|Descripción|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
+|Description|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
 |Guardar datos adjuntos respuesta de malware desconocido|Seleccione **Bloquear: bloquee los correos electrónicos y** los datos adjuntos actuales y futuros con malware detectado.|
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
@@ -307,7 +299,7 @@ Para obtener más información, vea [Set up anti-phishing policies in Defender f
 
 Los hackers a veces ocultan sitios web malintencionados en vínculos de correo electrónico u otros archivos. Caja fuerte Links, parte de Microsoft Defender para Office 365, puede ayudar a proteger su organización proporcionando la comprobación con tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos Office. La protección se define a través de Caja fuerte de vínculos.
 
-Se recomienda hacer lo siguiente:
+Haga lo siguiente para protegerse contra ataques:
 
 - Modifique la directiva predeterminada para aumentar la protección.
 
@@ -315,29 +307,19 @@ Se recomienda hacer lo siguiente:
 
 Para obtener acceso Caja fuerte, vea un [breve vídeo de aprendizaje](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links)o siga estos pasos:
 
-1. Ve a <https://protection.office.com> e inicia sesión con tu cuenta de administrador.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal e</a>inicie sesión con su cuenta de administrador.
 
-2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** seleccione **Directiva**.
+2. Vaya a **Correo & directivas** de colaboración & reglas de amenazas \>  \> **Directivas** \> **antimalware** en la **sección** Directivas.
 
-3. En la página Directiva, seleccione **Caja fuerte vínculos**.
+3. Seleccione **+ Crear** para crear una nueva directiva o modifique la directiva predeterminada.
 
 Para modificar la directiva predeterminada:
 
-1. En la página Caja fuerte, en Directivas que se **aplican a** toda la organización, haga doble clic en la **directiva** predeterminada.
+1. Haga doble clic en la **directiva** predeterminada. Aparece un desplegable. 
 
-2. En **Configuración que se aplican** al contenido de Office 365 , escriba una dirección URL que se va a bloquear, como _example.com_ y seleccione **+** .
+2. Seleccione **Editar configuración de protección** en la parte inferior del control desplegable.
 
-3. En **Configuración** que se aplican al contenido excepto el correo electrónico , seleccione Office 365 **aplicaciones**, No realizar un seguimiento cuando los usuarios hacen clic en vínculos seguros y No permitir que los usuarios hagan clic a través de vínculos seguros **a** la dirección **URL original.**
-
-4. Seleccione **Guardar**.
-
-Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
-
-1. En la página Caja fuerte, en Directivas que se aplican a destinatarios **específicos,** seleccione **+** para crear una nueva directiva.
-
-2. Aplique la configuración que se muestra en la tabla siguiente.
-
-3. Seleccione **Guardar**.
+3. Después de modificar la directiva predeterminada, seleccione **Guardar**.
 
 |Configuración u opción|Valor recomendado|
 |---|---|

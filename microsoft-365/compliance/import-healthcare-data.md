@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros de salud electrónicos (EHR) desde su sistema de salud a Microsoft 365. Esto le permite usar datos EHR en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
-ms.openlocfilehash: e6c2387154108d54b429ec436c959925758a897b
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: 119ab63fd88df421a6a6707def8c6e6f924cff2d
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234560"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578236"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurar un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
 
@@ -66,7 +66,7 @@ El siguiente paso es crear un archivo de texto que contenga información sobre e
 
 En la tabla siguiente se enumeran los campos necesarios para habilitar escenarios de administración de riesgos de insider. Un subconjunto de estos campos es obligatorio. Estos campos se resaltan con un asterisco (*). Si falta alguno de los campos obligatorios en el archivo de texto, el archivo no se validará y los datos del archivo no se importarán.
 
-|Campo|Categoría|
+|Field|Categoría|
 |:----|:----------|
 | Nombre del evento *<br/> de hora de creación*<br/>Id. de estación de trabajo<br/>Sección de eventos<br/>Categoría del evento |Estos campos se usan para identificar eventos de actividad de acceso en el sistema EHR de salud.|
 | Id. de reg del paciente<br/>Nombre del paciente *<br/> Apellido del paciente Segundo nombre <br/> del paciente* <br/>Línea de dirección del paciente 1* <br/>Línea de dirección del paciente 2<br/>Ciudad del paciente* <br/>Código postal del paciente*  <br/>Estado del paciente <br/>País del paciente <br/>Departamento del paciente              | Estos campos se usan para identificar la información del perfil del paciente.|
@@ -99,7 +99,7 @@ El siguiente paso es crear un conector de atención médica en el Centro de cump
 
    - **Upload un archivo de ejemplo**. Si selecciona esta opción, haga clic Upload **archivo de ejemplo** para cargar el archivo que preparó en el paso 2. Esta opción permite seleccionar rápidamente nombres de columna en el archivo de texto de una lista desplegable para asignar las columnas al esquema necesario para el conector de atención médica. 
 
-    O bien:
+    O bien
 
    - **Proporcione manualmente los detalles de asignación**. Si selecciona esta opción, debe escribir el nombre de las columnas del archivo de texto para asignar las columnas al esquema necesario para el conector de atención médica.
 
@@ -107,7 +107,7 @@ El siguiente paso es crear un conector de atención médica en el Centro de cump
 
    - Use las listas desplegables para asignar las columnas del archivo de ejemplo a cada campo necesario para el conector de atención médica.
 
-    O bien:
+    O bien
 
    - Para cada campo, escriba el nombre de columna del archivo que preparó en el paso 2 que corresponde al campo del conector de atención médica.
 
@@ -136,7 +136,7 @@ El último paso para configurar un conector de atención médica es ejecutar un 
 > [!NOTE]
 > Como se ha indicado anteriormente, el tamaño máximo del archivo de texto que contiene los datos de auditoría es de 3 GB. El número máximo de filas es de 5 millones. El script que ejecute en este paso llevará entre 30 y 40 minutos importar los datos de auditoría de archivos de texto grandes. Además, el script dividirá archivos de texto grandes en bloques más pequeños de filas de 100K y, a continuación, importará esos bloques secuencialmente.
 
-1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió.
+1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió. También puede obtener acceso al script [aquí](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
 2. Haga clic en **el botón** Sin procesar para mostrar el script en la vista de texto.
 
@@ -156,7 +156,7 @@ El último paso para configurar un conector de atención médica es ejecutar un 
 
 En la tabla siguiente se describen los parámetros que se deben usar con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-|Parámetro  |Descripción|
+|Parámetro  |Description|
 |:----------|:----------|
 |tenantId|Este es el identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del centro Azure AD administración. Esto se usa para identificar la organización.|
 |appId|Este es el identificador Azure AD aplicación para la aplicación que creaste en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización.|

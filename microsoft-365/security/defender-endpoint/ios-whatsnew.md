@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: b529f5dcbe444ef86c90be163d714695e68c9d8c
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: ad37c15c16edb03dddf7c9899d160eaca435e53e
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217475"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578494"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para endpoint en iOS
 
@@ -37,6 +37,12 @@ ms.locfileid: "61217475"
 ## <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
 El 2 de noviembre de 2021, anunciamos la versión preliminar pública de la administración de amenazas y vulnerabilidades en Android e iOS. Para obtener más información, [vea la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
+
+## <a name="1123250104"></a>1.1.23250104
+
+- Optimizaciones de rendimiento: pruebe el rendimiento de la batería con esta versión y háganos saber sus comentarios.
+- Incorporación sin contacto para dispositivos **iOS** inscritos: con esta versión, se ha agregado la versión preliminar de Zero-touch onboard para dispositivos inscritos a través de Microsoft Endpoint Manager (Intune). Para obtener más información, consulte esta [documentación para](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) obtener más información sobre la configuración y la configuración.
+- **Controles de privacidad:** configure los controles de privacidad para el informe de alertas de suplantación de identidad. Para obtener más información, vea [Configure iOS features](ios-configure-features.md).
 
 ## <a name="1123010101"></a>1.1.23010101
 

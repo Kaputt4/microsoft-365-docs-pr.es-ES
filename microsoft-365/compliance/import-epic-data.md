@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros electrónicos de salud (EHR) desde el sistema épico de su organización para Microsoft 365. Esto le permite usar datos de EHR épicos en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
-ms.openlocfilehash: 147519db433396376a406c5ce558fe4ad0f8428c
-ms.sourcegitcommit: aacf895ba20ecec4312a447ff4432e257e41edee
+ms.openlocfilehash: 0b879ade76e5273fe51c12a7471a17c0956cbb70
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61234548"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578348"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurar un conector para importar datos de auditoría de Épico EHR (versión preliminar)
 
@@ -123,7 +123,7 @@ El último paso para configurar un conector de Epic es ejecutar un script de eje
 > [!NOTE]
 > Como se ha indicado anteriormente, el tamaño máximo del archivo de texto que contiene los datos de auditoría es de 3 GB. El número máximo de filas es de 5 millones. El script que ejecute en este paso llevará entre 30 y 40 minutos importar los datos de auditoría de archivos de texto grandes. Además, el script dividirá archivos de texto grandes en bloques más pequeños de filas de 100K y, a continuación, importará esos bloques secuencialmente.
 
-1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió.
+1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió. También puede obtener acceso al script [aquí](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
 2. Haga clic en **el botón** Sin procesar para mostrar el script en la vista de texto.
 
@@ -143,7 +143,7 @@ El último paso para configurar un conector de Epic es ejecutar un script de eje
 
 En la tabla siguiente se describen los parámetros que se deben usar con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-|Parámetro  |Descripción|
+|Parámetro  |Description|
 |:----------|:----------|
 |tenantId|Este es el identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del centro Azure AD administración. Esto se usa para identificar la organización.|
 |appId|Este es el identificador Azure AD aplicación para la aplicación que creaste en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización.|

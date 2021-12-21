@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: 80038c649d17b3a75896422d4c68880f1ef6a962
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: 1146af75f2128468207fa470ce261be767643eb1
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436685"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61578188"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -316,7 +316,7 @@ También puede hacer clic en **Editar** para cambiar el identificador de aplicac
 
 El último paso para configurar un conector de recursos humanos es ejecutar un script de ejemplo que cargará los datos de RECURSOS humanos en el archivo CSV (que creó en el paso 1) en la nube de Microsoft. En concreto, el script carga los datos en el conector de recursos humanos. Después de ejecutar el script, el conector de RECURSOS humanos que creó en el paso 3 importa los datos de recursos humanos a la organización de Microsoft 365 a la que pueden tener acceso otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Vea [Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió. También puede obtener acceso al script [aquí](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1).
+1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió. También puede obtener acceso al script [aquí](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
 2. Haga clic en **el botón** Sin procesar para mostrar el script en la vista de texto.
 
@@ -331,24 +331,24 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 7. Ejecute el siguiente comando para cargar los datos de RECURSOS humanos del archivo CSV en la nube de Microsoft; por ejemplo:
 
     ```powershell
-    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -csvFilePath '<csvFilePath>'
+    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -filePath '<filePath>'
     ```
 
    En la tabla siguiente se describen los parámetros que se deben usar con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-   | Parámetro | Descripción |
+   | Parámetro | Description |
    |:-----|:-----|:-----|
    |`tenantId`|Este es el identificador de la Microsoft 365 que obtuvo en el paso 2. También puede obtener el identificador de  inquilino de su organización en la hoja Información general del centro Azure AD administración. Esto se usa para identificar la organización.|
    |`appId` |Este es el identificador Azure AD aplicación para la aplicación que creaste en Azure AD paso 2. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización. | 
    |`appSecret`|Este es el secreto Azure AD aplicación para la aplicación que creaste en Azure AD paso 2. También se usa para la autenticación.|
    |`jobId`|Este es el identificador de trabajo para el conector de RRHH que creó en el paso 3. Esto se usa para asociar los datos de recursos humanos que se cargan en la nube de Microsoft con el conector de recursos humanos.|
-   |`csvFilePath`|Esta es la ruta de acceso de archivo del archivo CSV (almacenado en el mismo sistema que el script) que creó en el paso 1. Intente evitar espacios en la ruta de acceso del archivo; de lo contrario, use comillas simples.|
+   |`filePath`|Esta es la ruta de acceso del archivo (almacenado en el mismo sistema que el script) que creó en el paso 1. Intente evitar espacios en la ruta de acceso del archivo; de lo contrario, use comillas simples.|
    |||
 
    Este es un ejemplo de la sintaxis del script del conector de RECURSOS humanos con valores reales para cada parámetro:
 
    ```powershell
-    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
+    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
    Si la carga se realiza correctamente, el script muestra **el Upload correcto.**
@@ -410,7 +410,7 @@ Puedes usar la aplicación Programador de tareas en Windows para ejecutar autom�
 
    1. En el **cuadro Programa/script,** haga clic en **Examinar** y vaya a la siguiente ubicación y selecciónelo para que la ruta de acceso se muestre en el cuadro: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
-   1. En el **cuadro Agregar argumentos (opcional),** pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. En el **cuadro Agregar argumentos (opcional),** pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    1. En el **cuadro Inicio en (opcional),** pegue la ubicación de carpeta del script que ejecutó en el paso 4. Por ejemplo, `C:\Users\contosoadmin\Desktop\Scripts`.
 
