@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector nativo para importar datos de Twitter a Microsoft 365.
-ms.openlocfilehash: ff29ebf19f292a2d052c7172f31779ca48cae428
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0be302a3e26b92ff08941720fad57b811922de3c
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201918"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586574"
 ---
-# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configurar un conector para archivar datos de Twitter (versión preliminar)
+# <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Configurar un conector de Microsoft para archivar datos de Twitter (versión preliminar)
 
 Use un conector en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de Twitter a Microsoft 365. Después de configurar y configurar el conector, se conecta a la cuenta de Twitter de su organización (de forma programada), convierte el contenido de un elemento en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo en Microsoft 365.
 
@@ -57,9 +57,9 @@ Para obtener instrucciones paso a paso, consulta [Crear una aplicación en Azure
 
 Durante la finalización de este paso (siguiendo las instrucciones paso a paso), guardará la siguiente información en un archivo de texto. Estos valores se usarán en pasos posteriores del proceso de implementación.
 
-- Id. de aplicación de AAD
+- AAD de aplicación
 
-- Secreto de aplicación de AAD
+- AAD secreto de aplicación
 
 - Identificador de inquilino
 
@@ -115,9 +115,9 @@ Durante la finalización de este paso (siguiendo las instrucciones paso a paso),
 
 - Secreto de token de acceso de Twitter (obtenido en el paso 3)
 
-- Azure Active Directory de aplicación (el identificador de aplicación de AAD obtenido en el paso 1)
+- Azure Active Directory de aplicación (el AAD de aplicación obtenido en el paso 1)
 
-- Azure Active Directory secreto de aplicación (el secreto de aplicación de AAD obtenido en el paso 1)
+- Azure Active Directory secreto de aplicación (el secreto AAD de aplicación obtenido en el paso 1)
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Paso 5: Configurar un conector de Twitter en el Centro de cumplimiento de Microsoft 365
 

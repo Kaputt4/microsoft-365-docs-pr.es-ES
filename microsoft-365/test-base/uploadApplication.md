@@ -3,7 +3,7 @@ title: Subir un paquete
 description: Cómo cargar la aplicación, los archivos binarios y las dependencias en Test Base
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2bda97c9168f7d3162c07ece4629dad795645638
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 99b25757b3f7b0b3d4fcd43f97bab2ac303de6fa
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154139"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586186"
 ---
 # <a name="step-2-uploading-a-package"></a>Paso 2: Cargar un paquete
 
@@ -76,9 +76,9 @@ Los pasos siguientes proporcionan una guía sobre cómo rellenar los detalles de
 
     En la lista desplegable de selección múltiple, seleccione las versiones del sistema operativo Windows en las que se instalará el paquete.
 
-    - Para probar el paquete solo en Windows sistemas operativos cliente, seleccione las 11 versiones del sistema operativo correspondientes Windows en la lista de menús.
+    - Para probar el paquete solo en Windows sistemas operativos cliente, seleccione las versiones Windows sistema operativo cliente aplicables en la lista de menús.
     - Para probar el paquete solo en sistemas operativos Windows Server, seleccione las versiones Windows sistema operativo de servidor aplicables en la lista de menús.
-    - Para probar el paquete solo con Windows cliente y Windows de servidor, seleccione todos los sistemas operativos aplicables en la lista de menús.
+    - Para probar el paquete con Windows los sistemas operativos cliente Windows servidor, seleccione todos los sistemas operativos aplicables en la lista de menús.
 
     > [!NOTE]
     > Si selecciona probar el paquete con los sistemas operativo de servidor y cliente, asegúrese de que el paquete es compatible y puede ejecutarse en ambos SISTEMAS

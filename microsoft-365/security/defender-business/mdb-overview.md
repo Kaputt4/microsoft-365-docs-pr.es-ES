@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/21/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1793e487b3d58e2ae608249c64d32635f18b02e0
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: e61bf570c8e239d8379704d57e0fbdd988a4562d
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508216"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586562"
 ---
 # <a name="overview-of-microsoft-defender-for-business-preview"></a>Información general sobre Microsoft Defender para empresas (versión preliminar)
 
@@ -35,6 +35,9 @@ Microsoft Defender para empresas (versión preliminar) es una nueva solución de
 En este artículo se describe lo que se incluye en Defender para empresas (versión preliminar), con vínculos para obtener más información sobre estas características y funcionalidades.
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Características y funcionalidades de Microsoft Defender para empresas (versión preliminar).":::
+
+> [!NOTE]
+> No todas las funcionalidades están disponibles durante la vista previa.
 
 Con Defender para empresas (versión preliminar), puedes ayudar a proteger los dispositivos y los datos con los que tu empresa usa:
 
@@ -63,13 +66,14 @@ Con Defender para empresas (versión preliminar), puedes ayudar a proteger los d
 
 - **Ayuda para empezar a usar Defender para empresas (versión preliminar),** empezando por el portal Microsoft 365 Defender web 
    - [Navegue por el portal Microsoft 365 Defender web](mdb-get-started.md)
+   - [Probar escenarios de vista previa, tutoriales y simulaciones](mdb-tutorials.md)
 
 - **Proporcionar instrucciones sobre cómo administrar dispositivos y directivas y configuraciones de seguridad**
    - [Administrar dispositivos](mdb-manage-devices.md)
    - [Ver o editar directivas de seguridad](mdb-view-edit-policies.md)
    - [Administrar reglas personalizadas para directivas de firewall](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga más información sobre el proceso de configuración simplificado en Microsoft Defender para empresas (versión preliminar)](mdb-simplified-configuration.md)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 3d190db3b3df060075f55adbb2eeaf4cabf64284
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 03251d9f3b09f0c6a54b76298e16957c32737f44
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61071443"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586680"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -382,41 +382,6 @@ Para obtener más información sobre los cmdlets de PowerShell que son compatibl
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
-
-## <a name="recent-enhancements-for-auto-labeling-policies"></a>Mejoras recientes para las directivas de etiquetado automático.
-
-Las recientes mejoras para las directivas de etiquetado automático para OneDrive y SharePoint tienen las siguientes mejoras con respecto a la versión anterior:
-
-- Máximo de 100 directivas de etiquetado automático por espacio empresarial en lugar de 10.
-
-- Compatibilidad con todos los sitios de OneDrive y SharePoint (el valor predeterminado para las nuevas directivas) y la capacidad de seleccionar sitios de SharePoint disponibles en lugar de tener que escribir cada sitio por dirección URL. Cuando usa el nuevo valor predeterminado de **Todos**, todos los sitios de SharePoint y las cuentas de OneDrive existentes en su espacio empresarial y cualquier sitio y cuenta recién creados se incluyen automáticamente en la directiva. Si selecciona **Elegir sitios** para SharePoint, puede seguir escribiendo manualmente los sitios por su dirección URL si es necesario.
-
-- Cuando especifica sitios individuales en una directiva de etiquetado automático, se admitirán hasta 100 sitios en lugar de 10.
-
-- Máximo de 1 000 000 de archivos coincidentes por directiva de etiquetado automático en modo de simulación. Si coinciden más de este número de archivos durante la simulación, no podrá activar la directiva. Vuelva a configurar la directiva de etiquetado automático para que coincida con un número menor de archivos y vuelva a ejecutar la simulación.
-
-- Mejoras de simulación:
-  - La ejecución de la directiva de etiquetado automático en modo de simulación se completa en 12 horas en lugar de hasta 48 horas.
-  - Mejor rendimiento al proporcionar hasta 100 archivos coincidentes muestreados aleatoriamente para su revisión para cada sitio (OneDrive o SharePoint) en lugar de todos los elementos coincidentes para su revisión.
-  - Una vez completada la simulación, se envía una notificación por correo electrónico al usuario configurado para recibir [alertas de actividad](alert-policies.md).
-
-- Mejoras para ayudarle a revisar los elementos coincidentes:
-  - Información de metadatos adicional para los elementos coincidentes muestreados.
-  - Capacidad de exportar información sobre los elementos coincidentes, como el nombre del sitio de SharePoint y el propietario del archivo. Puede usar esta información para dinamizar y analizar los archivos coincidentes, y delegar a los propietarios de archivos para su revisión si es necesario.
-
-> [!TIP]
-> Para aprovechar el mayor número de directivas y sitios admitidos, use PowerShell para crear de forma eficaz nuevas directivas y agregar sitios adicionales a las directivas existentes. Para obtener más información, vea la sección [Usar PowerShell para las directivas de etiquetado automático](#use-powershell-for-auto-labeling-policies) en esta página.
-
-### <a name="how-to-determine-whether-your-tenant-has-the-new-enhancements"></a>Cómo determinar si el espacio empresarial tiene las nuevas mejoras
-
-Cuando su espacio empresarial tenga las nuevas mejoras, verá la siguiente notificación en la pestaña **Etiquetado automático**:
-
-![Banner para confirmar que espacio empresarial tiene las nuevas mejoras.](../media/auto-labeling-updatedbanner.png)
-
-> [!NOTE]
-> Si tenía directivas de etiquetado automático que estaban en modo de simulación cuando el espacio empresarial recibió las nuevas mejoras, debe volver a ejecutar la simulación. Si este escenario se aplica a usted, se le pedirá que seleccione **reiniciar simulación** al revisar la simulación. Si no reinicia la simulación, no se completará.
->
-> Sin embargo, las mejoras siguen aplicándose a cualquier directiva de etiquetado automático que se ejecute sin simulación y a todas las nuevas directivas de etiquetado automático que cree.
 
 ## <a name="tips-to-increase-labeling-reach"></a>Sugerencias para aumentar el alcance del etiquetado
 

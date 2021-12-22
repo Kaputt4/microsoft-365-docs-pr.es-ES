@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6b4e915a41c6c9dd04452fa968df2e23401b39d3
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 13221dbe9abcb4a7f40391f14232950c7561b87a
+ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327525"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61586154"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -236,7 +236,7 @@ Se agregaron los siguientes artículos nuevos:
 - [Diagrama de flujo para determinar cuándo se](retention-flowchart.md) conservará o eliminará permanentemente un elemento para complementar los conceptos y ejemplos de los principios de retención.
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-- Mejoras en las directivas de etiquetado automático que incluyen números [admitidos](apply-sensitivity-label-automatically.md#recent-enhancements-for-auto-labeling-policies) más altos para sitios y directivas, compatibilidad con todos los sitios de OneDrive y SharePoint y la capacidad de seleccionar sitios SharePoint disponibles en lugar de tener que escribir cada sitio por dirección URL y mejoras de simulación.
+- Mejoras en las directivas de etiquetado automático que incluyen números [admitidos](apply-sensitivity-label-automatically.md) más altos para sitios y directivas, compatibilidad con todos los sitios de OneDrive y SharePoint y la capacidad de seleccionar sitios SharePoint disponibles en lugar de tener que escribir cada sitio por dirección URL y mejoras de simulación.
 - El etiquetado automático en Office como una configuración de etiqueta de confidencialidad ahora admite [Exact Data Match (EDM).](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)
 - Las etiquetas predeterminadas ahora se [extienden Power BI (en versión preliminar).](/power-bi/admin/service-security-sensitivity-label-default-label-policy)
 - Los eventos de auditoría de [](data-classification-activity-explorer-available-events.md) Outlook en la Web que se encuentran en el explorador de actividades ahora están completamente desarrollados, lo que significa que la actividad del usuario para las etiquetas integradas ya está disponible para todas las aplicaciones Office en toda la plataforma.
