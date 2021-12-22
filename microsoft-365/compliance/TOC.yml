@@ -144,6 +144,8 @@
   items:
     - name: 'Conocer sus datos, proteger sus datos, evitar la pérdida de datos'
       href: information-protection.md
+    - name: Implementar una solución de MIP
+      href: information-protection-solution.md
     - name: Etiquetas y directivas predeterminadas para Microsoft Information Protection
       href: mip-easy-trials.md
     - name: Tipos de información confidencial

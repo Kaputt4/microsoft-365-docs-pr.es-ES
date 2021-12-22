@@ -17,36 +17,37 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
-ms.openlocfilehash: 45448ee509b580a5fbd35388b95f130b684325d4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Implemente las capacidades de Microsoft Information Protection (MIP) para ayudarle a proteger la información confidencial dondequiera que viva o viaje.
+ms.openlocfilehash: b3c7fc80f3735452ece4361ae3031ef6aa8f6bfc
+ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369689"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61577786"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
 >*[Licencias para el Centro de seguridad y cumplimiento de Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implemente Microsoft Information Protection (MIP) para descubrir, clasificar y proteger la información confidencial donde esta resida o hacia donde se transfiera.
+Implemente las capacidades de Microsoft Information Protection (MIP) para descubrir, clasificar y proteger la información confidencial donde esta resida o hacia donde se transfiera.
 
 Las características de MIP se incluyen con el Centro de cumplimiento de Microsoft 365 y proporcionan las herramientas necesarias para [conocer](#know-your-data), [proteger](#protect-your-data) y [evitar la pérdida](#prevent-data-loss) de sus datos.
 
 ![Imagen de cómo MIP le ayuda a descubrir, clasificar y proteger los datos confidenciales.](../media/powered-by-intelligent-platform.png)
 
+Para obtener instrucciones prescriptivas con las que implementar una solución de MIP para su organización, vea [Implementar una solución de Microsoft Information Protection](information-protection-solution.md).
+
 Para obtener información sobre la gobernanza de los datos, consulte [Gobernanza de información de Microsoft en Microsoft 365](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Conocer los datos
 
-Para tener una visión general de sus datos e identificar aquellos más importantes en todo su entorno híbrido, utilice las funciones siguientes:
+Para tener una visión general de sus datos e identificar aquellos confidenciales en todo su entorno híbrido, utilice las funciones siguientes:
 
 |Funcionalidad|¿Qué problemas se solucionan?|Introducción|
 |:------|:------------|:--------------------|
 |[Tipos de información confidencial](sensitive-information-type-learn-about.md)| Identifica datos confidenciales mediante expresiones regulares integradas o personalizadas, o con una función. Las pruebas confirmatorias incluyen palabras clave, niveles de confianza y proximidad.| [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)|
 |[Clasificadores que se pueden entrenar](classifier-learn-about.md)| Identifica datos confidenciales mediante ejemplos de los datos que le interesan, en lugar de identificar elementos dentro del elemento (coincidencia de patrones). Puede usar clasificadores predefinidos o entrenar un clasificador con su propio contenido.| [Introducción a los clasificadores que se pueden entrenar](classifier-get-started-with.md) |
 |[Clasificación de datos](data-classification-overview.md) | Una identificación gráfica de los elementos de la organización que tienen una etiqueta de confidencialidad, una etiqueta de retención o que se han clasificado. También puede usar esta información para obtener información sobre las acciones que los usuarios están llevando a cabo en estos elementos. | [Introducción al explorador de contenido](data-classification-content-explorer.md) <p> [Introducción al explorador de actividad](data-classification-activity-explorer.md) |
-|[Azure Purview](/azure/purview/overview) |Identifica datos confidenciales y aplica el etiquetado automático a cualquier contenido de los recursos de Azure Purview tales como Azure Blob Storage, Azure Files, Azure Data Lake Storage y orígenes de datos de varias nubes. |[Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label) |
 
 ## <a name="protect-your-data"></a>Proteger los datos
 
@@ -63,6 +64,7 @@ Para aplicar acciones de protección flexibles entre las que se incluyen el cifr
 [Conector de administración de derechos](/azure/information-protection/deploy-rms-connector) |Modo de solo protección para implementaciones locales existentes que usan Exchange o SharePoint Server, o servidores de archivos que ejecutan Windows Server y la Infraestructura de Clasificación de Archivos (FCI). | [Pasos para implementar el conector RMS](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Escáner de etiquetas unificadas de Azure Information Protection](/azure/information-protection/deploy-aip-scanner)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos locales. | [Configuración e instalación del escáner de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos en la nube. | [Descubrir, clasificar, etiquetar y proteger la información regulada y confidencial almacenada en la nube](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Azure Purview](/azure/purview/overview) |Identifica datos confidenciales y aplica el etiquetado automático al contenido de los recursos de Azure Purview. Estos incluyen archivos en el almacenamiento, como Azure Data Lake y Azure Files, y datos esquematizados como columnas en Azure SQL DB y Cosmos DB. |[Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label) |
 |[SDK de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|Amplía las etiquetas de confidencialidad a los servicios y aplicaciones de terceros. <p> Escenario de ejemplo: [Establecer y obtener una etiqueta de confidencialidad (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Instalación y configuración del SDK de Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip)|
 
 
