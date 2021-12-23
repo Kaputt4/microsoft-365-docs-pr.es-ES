@@ -267,11 +267,7 @@
 ### [Informes de firewalls de host en Microsoft Defender para punto de conexión](host-firewall-reporting.md)
 
 ### [Reducción de la superficie expuesta a ataques]()
-#### [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
-#### [Configurar capacidades de reducción de superficie de ataques](configure-attack-surface-reduction.md)
-#### [Usar el modo de auditoría para ataques a la reducción de superficie](audit-windows-defender.md)
-#### [Ver eventos de la reducción de la superficie expuesta a ataques](event-views.md)
-#### [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)
+#### [Comprender las reglas de reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
 #### [Reglas de la reducción de la superficie expuesta a ataques (ASR)]()
 ##### [Información acerca de las reglas de ASR](attack-surface-reduction.md)
 ##### [Implementar reglas de ASR](attack-surface-reduction-rules-deployment.md)
@@ -283,6 +279,7 @@
 ##### [Evaluar reglas de ASR](evaluate-attack-surface-reduction.md)
 ##### [Habilitar reglas de ASR](enable-attack-surface-reduction.md)
 ##### [Personalizar reglas de ASR](customize-attack-surface-reduction.md)
+#### [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)
 
 ### Protección de última generación
 #### [Información sobre los servicios de protección de última generación](next-generation-protection.md)
