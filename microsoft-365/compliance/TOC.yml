@@ -513,6 +513,8 @@
               href: archive-symphony-data.md
             - name: Texto delimitado
               href: archive-text-delimited-data.md
+            - name: Twitter (versión preliminar)
+              href: archive-veritas-twitter-data.md
             - name: Teams de Webex
               href: archive-webexteams-data.md
             - name: Páginas web
