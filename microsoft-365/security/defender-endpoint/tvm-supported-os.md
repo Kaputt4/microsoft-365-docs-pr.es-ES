@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dffae27148d91ccedfd0009b1ce2942f75430824
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 215c98cde0cf526eeca62d4d0cb5644d0c406421
+ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164207"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "61597596"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para Administración de amenazas y vulnerabilidades
 
@@ -29,7 +29,7 @@ ms.locfileid: "61164207"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,7 +52,7 @@ Windows 10, versiones 1607-1703|Sí|No compatible|No compatible|No compatible|No
 Windows 10, versión 1709 o posterior|Sí|Sí|Sí|Sí|Sí
 Windows 11|Sí|Sí|Sí|Sí|Sí
 Windows Server 2008 R2|Sí|Sí|Sí|Sí|Sí
-Windows Server 2012 R2|Sí|Sí|Sí|Sí|Sí
+Windows Server 2012 R2|Sí|Sí|Sí|Sí|Sí
 Windows Server 2016|Sí|Sí|Sí|Sí|Sí
 Windows Server 2019|Sí|Sí|Sí|Sí|Sí
 Windows Server 2022|Sí|Sí|Sí|Sí|Sí
@@ -62,7 +62,7 @@ CentOS 7.2 o superior|Sí|Sí|Sí|Sí|Sí
 Ubuntu 16,04 LTS o superior LTS|Sí|Sí|Sí|Sí|Sí
 Oracle Linux 7.2 o posterior|Sí|Sí|Sí|Sí|Sí
 SUSE Linux Enterprise Server 12 o posterior|Sí|Sí|Sí|Sí|Sí
-Linux Debian 9 o posterior (en versión preliminar)|Sí|Sí|Sí|Sí|Sí
+Linux Debian 9 o posterior|Sí|Sí|Sí|Sí|Sí
 Android 6.0 o posterior (en versión preliminar)|Sí|Sí|No compatible|No compatible|No compatible
 iOS 12.0 o posterior (en versión preliminar)|Sí|No compatible|No compatible|No compatible|No compatible
 
