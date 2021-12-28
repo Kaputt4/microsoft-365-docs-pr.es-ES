@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: b88aabd96f89f175ae09df1102ba3aff45af27f2
-ms.sourcegitcommit: 96618d21ad0424b7b51090afad5079ad0e955c21
+ms.openlocfilehash: 0cfa6c1b672dabcbe5d5418461a0a55ea42867ab
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60251117"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612625"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -65,14 +65,11 @@ La Auditoría avanzada proporciona los siguientes eventos:
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
 - [Otros eventos de Auditoría avanzada en Microsoft 365](#other-advanced-audit-events-in-microsoft-365)
-
-> [!NOTE]
-> <sup>*</sup> En estos momentos, este evento no está disponible en los entornos para la administración pública de Office 365 y Microsoft 365 GCC y DoD.
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 

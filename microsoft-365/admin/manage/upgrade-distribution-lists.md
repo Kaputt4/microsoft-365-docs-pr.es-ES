@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Obtenga información sobre cómo actualizar una o varias listas de distribución Microsoft 365 grupos en Outlook y cómo usar PowerShell para actualizar varias listas de distribución simultáneamente.
-ms.openlocfilehash: bf68d5c0e9c00536013e89a690e5708ca79739fe
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 7a6e0eff49958b99df9ca59702b814b364aefb46
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422512"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612577"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Actualizar listas de distribución a Grupos de Microsoft 365 en Outlook
 
@@ -73,9 +73,11 @@ Debe ser un administrador global o un administrador Exchange para actualizar un 
 
 Las listas de distribución que no se pueden actualizar permanecen sin cambios.
 
-Si una o más listas **de** distribución elegibles no se pueden actualizar, abra un [vale de soporte](../../business-video/get-help-support.md)técnico . El problema tendrá que escalarse al equipo de ingeniería de grupos para que puedan averiguar el problema.
+Si una o más **listas de** distribución elegibles no se pueden actualizar, 
 
-Es posible que la lista de distribución no se haya actualizado debido a una interrupción del servicio, pero es poco probable. Si lo desea, espere un tiempo y vuelva a intentar actualizar la DL.
+1. Use [este script](https://aka.ms/DLToM365Group) para buscar posibles problemas que puedan impedir que la lista de distribución se actualice Microsoft 365 un grupo, solucione los problemas notificados por el script e intente actualizar la lista de distribución una vez más. 
+
+2. Si el script anterior no ayuda o si el problema persiste, abra un [vale de soporte técnico](../../business-video/get-help-support.md). El problema tendrá que escalarse al equipo de ingeniería de grupos para que puedan averiguar el problema.
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Cómo usar PowerShell para actualizar varias listas de distribución al mismo tiempo
 
@@ -185,6 +187,11 @@ Hay algunos casos en los que, aunque DL es apto pero no se pudo actualizar. La D
 - Cuando el administrador **ha** aplicado la directiva de direcciones de correo electrónico de grupo para los grupos de una organización y tratan de actualizar direcciones DLL que no cumplen los criterios, la DL no se actualiza
 
 - Las DLs **con MemberJoinRestriction** o **MemberDepartRestriction** establecidas en **Closed**, no se pudieron actualizar
+
+- La Microsoft 365 de grupo solo se permite a pocos usuarios, mediante los pasos de [este artículo](/microsoft-365/solutions/manage-creation-of-groups). En este escenario, si el propietario de la lista de distribución no tiene permiso para crear Microsoft 365 grupo, la lista de distribución no se actualizará a Microsoft 365 grupo. Solución alternativa: Use una de las siguientes soluciones alternativas para el escenario anterior:
+1)  Asegúrese de que todos los usuarios mencionados como propietarios de la DL tienen permiso para crear M365 Group, es decir, son miembros del grupo de seguridad que está permitido para M365 Group.
+OR
+2)  Reemplace temporalmente al propietario de la DL que no puede crear el grupo M365 por un usuario que pueda crear el grupo M365
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>¿Qué sucede con la DL si se produce un error en la actualización desde EAC?
 

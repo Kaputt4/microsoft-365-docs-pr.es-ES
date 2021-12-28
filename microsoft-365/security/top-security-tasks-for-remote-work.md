@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Proteja el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, como ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 2d68f65a711e5fc3b78f535a7125fb381475dbec
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: aa0c127f661e0f4f7e6a694e04e45fe1741436e5
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301383"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612649"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -42,7 +42,7 @@ Para los clientes que usan nuestros planes de empresa, Microsoft recomienda comp
 
 ****
 
-|Paso|Tarea|Todos Office 365 Enterprise planes|Microsoft 365 E3|Microsoft 365 E5|
+|Paso|Task|Todos Office 365 Enterprise planes|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
 |1|[Habilitar Azure AD multifactor authentication (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Protección contra amenazas](#2-protect-against-threats)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -122,7 +122,7 @@ Deberá trabajar con el administrador de Exchange Online y el administrador de S
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: Activar Microsoft 365 Defender
 
-Ahora que tienes configurado Microsoft Defender para Office 365 y Microsoft Defender para identity, puedes ver las señales combinadas de estas funciones en un panel. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) reúne alertas, incidentes, investigación y respuesta automatizadas y búsqueda avanzada entre cargas de trabajo (Microsoft Defender para la identidad, Defender para Office 365, Microsoft Defender para endpoint y Microsoft Cloud App Security) en un único panel <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en el Microsoft 365 Defender portal</a>.
+Ahora que tienes configurado Microsoft Defender para Office 365 y Microsoft Defender para identity, puedes ver las señales combinadas de estas funciones en un panel. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) reúne alertas, incidentes, investigación y respuesta automatizadas y búsqueda avanzada entre cargas de trabajo (Microsoft Defender para la identidad, Defender para Office 365, Microsoft Defender para endpoint y Microsoft Defender para aplicaciones en la nube) en un único panel de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 ![Ilustración del panel MTP.](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
@@ -210,10 +210,10 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 
 ****
 
-|Concepto|Resources|
+|Concepto|Recursos|
 |---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/) <p>Estos recursos pueden ayudarle a crear formación para los usuarios finales de su organización|
-|Seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
+|Centro de seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
 |Autenticación multifactor|[Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
 |
 
@@ -248,7 +248,7 @@ Microsoft 365 incluye varias formas de supervisar el estado y realizar las accio
 - [Introducción al portal de Microsoft 365 Defender web](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [Vea los portales de seguridad en Microsoft 365](./defender/portals.md)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 ¡Enhorabuena! Ha implementado rápidamente algunas de las protecciones de seguridad más importantes y su organización es mucho más segura. Ahora estás listo para ir aún más lejos con las capacidades de protección contra amenazas (incluido Microsoft Defender para Endpoint), las capacidades de clasificación y protección de datos y la protección de cuentas administrativas. Para obtener un conjunto más profundo y metódico de recomendaciones de seguridad para Microsoft 365, vea [Microsoft 365 Security for Business Decision Makers (BDMs).](Microsoft-365-security-for-bdm.md)
 

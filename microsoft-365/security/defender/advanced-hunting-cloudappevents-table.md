@@ -1,7 +1,7 @@
 ---
 title: Tabla CloudAppEvents en el esquema de búsqueda avanzada
 description: Obtenga información sobre eventos de servicios y aplicaciones en la nube en la tabla CloudAppEvents del esquema de búsqueda avanzado
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, CloudAppEvents, Cloud App Security, MCAS
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, CloudAppEvents, Defender para aplicaciones en la nube
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 128d4f9ce80bff6192771ee1806f708d0d15c00f
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: daed3fb87aab498cdf91247a59e48af685aed010
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531140"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612541"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -43,14 +43,14 @@ La tabla del esquema de búsqueda avanzada contiene información sobre las activ
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Description |
+| Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
 | `ActionType` | `string` | Tipo de actividad que desencadenó el evento |
 | `Application` | `string` | Aplicación que realizó la acción grabada |
 | `ApplicationId` | `string` | Identificador único de la aplicación |
 | `AccountObjectId` | `string` | Identificador único de la cuenta en Azure Active Directory |
-| `AccountId` | `string` | Identificador de la cuenta tal como se encuentra Microsoft Cloud App Security. Podría ser Azure Active Directory, nombre principal de usuario u otros identificadores. |
+| `AccountId` | `string` | Identificador de la cuenta que encontró Microsoft Defender para aplicaciones en la nube. Podría ser Azure Active Directory, nombre principal de usuario u otros identificadores. |
 | `AccountDisplayName` | `string` | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
 | `IsAdminOperation` | `string` | Indica si la actividad la realizó un administrador |
 | `DeviceType` | `string` | Tipo de dispositivo basado en propósitos y funciones, como "Dispositivo de red", "Estación de trabajo", "Servidor", "Móvil", "Consola de juegos" o "Impresora" | 

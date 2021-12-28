@@ -18,15 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar las características de alertas en el portal de Microsoft 365 Defender para ver y administrar alertas, incluida la administración de alertas avanzadas.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4562f200cadec2f12de10dd28246e2f8b1cf69ca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 82f7120d59635b71fc94b2a98e4522856403b884
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176588"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612601"
 ---
 # <a name="alerts-in-the-microsoft-365-defender-portal"></a>Alertas en el portal Microsoft 365 Defender web
 
@@ -36,17 +38,17 @@ ms.locfileid: "60176588"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-Use las características de alertas del portal de Microsoft 365 Defender para ver y administrar alertas para su organización, incluida la administración de alertas avanzadas como parte de [Microsoft Cloud App Security información general.](/cloud-app-security/what-is-cloud-app-security)
+Use las características de alertas del portal de Microsoft 365 Defender para ver y administrar alertas para su organización, incluida la administración de alertas avanzadas como parte de La información general de [Microsoft Defender para aplicaciones en la nube.](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="how-to-get-to-the-alerts-features"></a>Cómo llegar a las características de alertas
 
-Las alertas se encuentran en Microsoft 365 Defender portal ( <https://security.microsoft.com> ). Este es el modo de llegar a la página:
+Las alertas se <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">encuentran en Microsoft 365 Defender portal</a>. Este es el modo de llegar a la página:
 
-En el **portal Microsoft 365 Defender,** vaya a **Alertas**. O bien, para ir directamente a la **página Alertas,** use <https://security.microsoft.com/alerts> .
+En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>vaya a **Alertas**. O bien, para ir directamente a la **página Alertas,** use <https://security.microsoft.com/alerts> .
 
 ## <a name="alerts-features"></a>Características de alertas
 
-En la tabla siguiente se describen las herramientas disponibles en **Alerts** in the Microsoft 365 Defender portal.
+En la tabla siguiente se describen las herramientas disponibles en **Alerts** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 <br>
 
@@ -55,5 +57,5 @@ En la tabla siguiente se describen las herramientas disponibles en **Alerts** in
 |Herramienta|Descripción|
 |---|---|
 |[Administrar alertas](../../compliance/create-activity-alerts.md)|Use alertas de actividad para enviar notificaciones por correo electrónico a usted u otros administradores cuando los usuarios realicen actividades específicas en Microsoft 365. Las alertas de actividad son similares a buscar eventos en el registro de auditoría, excepto que se le enviará un mensaje de correo electrónico cuando se produzca un evento para el que haya creado una alerta.|
-|[Administrar alertas avanzadas](/cloud-app-security/what-is-cloud-app-security)|Use la **característica Administrar alertas** avanzadas de Microsoft 365 Cloud App Security para configurar directivas que puedan alertar sobre actividades sospechosas y anómalas en Microsoft 365. Después de recibir una alerta, puede investigar situaciones potencialmente problemáticas y, si es necesario, tomar medidas para solucionar problemas de seguridad.|
+|[Administrar alertas avanzadas](/cloud-app-security/what-is-cloud-app-security)|Usa la **característica Administrar alertas** avanzadas de Microsoft Defender para aplicaciones en la nube para configurar directivas que puedan alertar sobre actividades sospechosas y anómalas en Microsoft 365. Después de recibir una alerta, puede investigar situaciones potencialmente problemáticas y, si es necesario, tomar medidas para solucionar problemas de seguridad.|
 |

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de datos CellTrust SL2 para importar y archivar datos de comunicaciones móviles.
-ms.openlocfilehash: 4d54e424f326c42ac92ec5f0fc71a22e06351b7a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d412f00fda12a44fc9d09d9c61d5c59ea17cb8a2
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158435"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612565"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archivar datos de CellTrust SL2 a Microsoft 365
 
@@ -61,7 +61,7 @@ El primer paso es crear un conector de datos en el Centro de cumplimiento de Mic
 
 3. Haga **clic en CellTrust SL2 (versión preliminar).**
 
-4. En la **página de descripción del producto CellTrust SL2 (versión preliminar),** haga clic en Agregar **conector**.
+4. En la **página Descripción del producto CellTrust SL2 (versión** preliminar), haga clic en Agregar **conector**.
 
 5. En la **página Términos de** servicio, haga clic **en Aceptar**.
 
@@ -109,6 +109,6 @@ Consulte la página de soporte al cliente de [CellTrust](https://www.celltrust.c
 
 - Para probar el nuevo conector, envíe un mensaje de texto con la aplicación móvil SL2 o desde el portal sl2. Vaya a su buzón Microsoft 365 y abra la **carpeta CellTrust SL2** en la Bandeja de entrada. Los mensajes de texto pueden tardar unos minutos en aparecer en el buzón.
 
-- Muchas leyes y reglamentos requieren que la comunicación electrónica se conserve de forma que, cuando se solicite, se pueda producir como prueba. La detección electrónica (eDiscovery) se usa para cumplir con la producción de comunicaciones electrónicas. Enterprise Las soluciones de archivado de información (EIA) están diseñadas para realizar exhibición de documentos electrónicos y proporcionan características como la administración de directivas de retención, la clasificación de datos y la supervisión de contenido. Microsoft 365 ofrece una solución de retención a largo plazo para el cumplimiento de los reglamentos y estándares que afectan a su organización.
+- Muchas leyes y reglamentos requieren que la comunicación electrónica se conserve de forma que, cuando se solicite, se pueda producir como prueba. La detección electrónica (eDiscovery) se usa para cumplir con la producción de comunicaciones electrónicas. Enterprise de archivado de información (EIA) están diseñadas para realizar exhibición de documentos electrónicos y proporcionar características como administración de directivas de retención, clasificación de datos y supervisión de contenido. Microsoft 365 ofrece una solución de retención a largo plazo para el cumplimiento de los reglamentos y estándares que afectan a su organización.
 
 - El término *archivado tal* como se usa en este documento hace referencia al archivado en el contexto de uso dentro de una Enterprise de archivado de información (EIA). Las soluciones EIA tienen características de exhibición de documentos electrónicos que producen documentos para procedimientos legales, litigios, auditorías e investigaciones. El archivado en el contexto de copia de seguridad y restauración que se usa para la recuperación ante desastres y la continuidad empresarial no es el uso previsto del término dentro de este documento.

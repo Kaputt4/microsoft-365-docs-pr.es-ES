@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 12/27/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: aaeb816b833a15e5ea7bf5d7577b062f8b5dbc6b
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: bb6ec4c3488eff847933935ce7cf84ec5194c3cc
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508282"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612517"
 ---
 # <a name="create-a-new-policy-in-microsoft-defender-for-business-preview"></a>Crear una nueva directiva en Microsoft Defender para empresas (versión preliminar)
 
@@ -59,7 +59,7 @@ Microsoft Defender para empresas (versión preliminar) incluye directivas predet
    - Cuando configuras el grupo de dispositivos, especificas determinados criterios, como la versión del sistema operativo. Los dispositivos que cumplen los criterios se incluyen en ese grupo de dispositivos, a menos que los excluyas. 
    - Todos los grupos de dispositivos, incluidos los grupos de dispositivos predeterminados y personalizados que definas, se almacenan en Azure Active Directory (Azure AD).
 
-   Para obtener más información sobre los grupos de dispositivos, consulta . 
+   Para obtener más información sobre los grupos de dispositivos, consulta [Grupos de dispositivos en Defender para empresas (versión preliminar).](mdb-create-edit-device-groups.md)
 
 8. En la **pestaña Configuración,** especifique la configuración de la directiva y, a continuación, elija **Siguiente**. Para obtener más información acerca de las opciones individuales, vea [Configuración de Microsoft Defender para empresas (versión preliminar).](mdb-next-gen-configuration-settings.md)
 
@@ -68,7 +68,7 @@ Microsoft Defender para empresas (versión preliminar) incluye directivas predet
    - Realice los cambios necesarios seleccionando **Editar**.
    - Cuando esté listo para continuar, elija **Crear directiva**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Elija una o varias de las siguientes tareas:
 
