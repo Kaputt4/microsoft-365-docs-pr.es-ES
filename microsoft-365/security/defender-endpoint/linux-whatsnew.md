@@ -16,19 +16,23 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: a9d5b274b5d5c3414206c5770be043cc2a543ce7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d70579c3e1b89fa220edbacd92a61f8fbbebe14d
+ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166271"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609138"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
+
+- Se agregó una funcionalidad para detectar los jars de log4j vulnerables en uso por Java aplicaciones. La máquina se inspecciona periódicamente para ejecutar procesos Java con tarros log4j cargados. La información se notifica al back-end de Microsoft Defender para endpoint y se expone en el área de administración de vulnerabilidades del portal.
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 
