@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 22b129d148a6e42a9b0f72b48f1e1188f4864d64
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 319e8414d9d78eaa4735864f7e47ff146d2b9734
+ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241121"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61612637"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -271,6 +271,19 @@ No tiene que elegir entre usar solo directivas de retención o solo etiquetas de
 2. Puede crear y configurar una etiqueta de retención que mantenga el contenido para siempre y agregarla a una directiva de etiquetas que publique en todas las cuentas de OneDrive. Debe explicar a los usuarios cómo aplicar manualmente esta etiqueta a documentos específicos que se deban excluir de la eliminación automática si no se modifican después de cinco años.
 
 Para obtener más información acerca de cómo funcionan las directivas de retención y las etiquetas de retención conjuntamente y cómo determinar el resultado combinado, vea la siguiente sección en la que se explican los principios de la retención y las prioridades.
+
+## <a name="how-long-it-takes-for-retention-settings-to-apply"></a>Cuánto tiempo tarda la configuración de retención en aplicarse
+
+Al enviar directivas de retención para que las cargas de trabajo y las directivas de etiquetas apliquen automáticamente una etiqueta de retención, espere hasta 7 días para que la configuración de retención se aplique al contenido:
+
+- [Tiempo que tardan en aplicarse las directivas de retención](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- [Tiempo que tardan las etiquetas de retención en aplicarse](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)
+
+Del mismo modo, espere hasta 7 días para que las etiquetas de retención sean visibles en las aplicaciones después de publicar las etiquetas:
+
+- [Cuando las etiquetas de retención estén disponibles para aplicarlas](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)
+
+A menudo, las directivas surtirán efecto y las etiquetas estarán visibles en menos de 7 días. Pero habiendo muchas variables potenciales que pueden afectar a este proceso, es mejor planear el máximo de 7 días.
 
 ## <a name="adaptive-or-static-policy-scopes-for-retention"></a>Ámbitos de directiva adaptables o estáticos para la retención
 

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo identificar los diferentes tipos de retención que se pueden colocar en un buzón Exchange Online en Microsoft 365.
-ms.openlocfilehash: 669f1543bddfe88d89b6ec046afd82f4ec11791a
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 2f8b846744a52bde755e778cfcf5150e838c1de7
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520985"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61620437"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -84,7 +84,7 @@ En la tabla siguiente se describe cómo identificar diferentes tipos de retencio
 | Excluido de una directiva de retención de Microsoft 365 toda la organización  | `-mbxe9b52bf7ab3b46a286308ecb29624696`                                                         | Si se excluye un buzón de una directiva de retención de Microsoft 365 en toda la organización, el GUID de la directiva de retención de la que se excluye el buzón se muestra en la propiedad InPlaceHolds y se identifica mediante el `-mbx` prefijo.                                                                                                     |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
-Si la *propiedad InPlaceHolds* está vacía al ejecutar el cmdlet **Get-Mailbox,** puede haber una o más directivas de retención de Microsoft 365 toda la organización aplicadas al buzón. Ejecute el siguiente comando en Exchange Online PowerShell para obtener una lista de GUID para las directivas de retención Microsoft 365 organización.
+Si la *propiedad InPlaceHolds* está vacía al ejecutar el cmdlet **Get-Mailbox,** puede haber una o más directivas de retención de Microsoft 365 toda la organización aplicadas al buzón. Ejecute el siguiente comando en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para obtener una lista de GUID para las directivas de retención Microsoft 365 organización.
 
 ```powershell
 Get-OrganizationConfig | FL InPlaceHolds
@@ -130,7 +130,7 @@ Después de obtener el GUID de una retención que se aplica a un buzón, el sigu
 
 Ejecute los siguientes comandos en PowerShell del Centro de seguridad & cumplimiento para identificar una retención de exhibición de documentos electrónicos que se aplica al buzón. Use el GUID (sin incluir el prefijo UniH) para la retención de exhibición de documentos electrónicos que identificó en el paso 1. 
 
-Para conectarse a PowerShell & Centro de seguridad y cumplimiento, vea [Conectar a Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Para conectarse a PowerShell del Centro de seguridad y cumplimiento, vea [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 El primer comando crea una variable que contiene información sobre la retención. Esta variable se usa en los demás comandos. El segundo comando muestra el nombre del caso de exhibición de documentos electrónicos al que está asociada la retención. El tercer comando muestra el nombre de la retención y una lista de los buzones a los que se aplica la retención.
 
@@ -161,7 +161,7 @@ Si el GUID de la In-Place hold comienza por el prefijo, asegúrese de incluir `c
 
 ### <a name="microsoft-365-retention-policies"></a>Microsoft 365 de retención
 
-Ejecute el siguiente comando en PowerShell del Centro de seguridad & cumplimiento para identificar la directiva de retención de Microsoft 365 (ubicación específica o de toda la organización) que se aplica al buzón. Use el GUID (sin incluir el prefijo mbx, skp o grp o el sufijo de acción) que identificó en el paso 1.
+Conectar a [PowerShell](/powershell/exchange/connect-to-scc-powershell) del Centro de seguridad & cumplimiento y ejecute el siguiente comando para identificar la directiva de retención de Microsoft 365 (ubicación específica o de toda la organización) que se aplica al buzón. Use el GUID (sin incluir el prefijo mbx, skp o grp o el sufijo de acción) que identificó en el paso 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
@@ -178,7 +178,7 @@ Cada vez que un usuario aplica una  etiqueta  de retención configurada para ret
     - **Los elementos etiquetados** se conservarán y, a continuación, se eliminarán del mismo modo que lo serían si se aplicara una directiva de retención Microsoft 365, pero en el nivel de elemento individual.  Si varios elementos tienen etiquetas  diferentes  que están configuradas para conservar o conservar y, a continuación, eliminar contenido a intervalos diferentes, cada elemento se conservará en función de la configuración de la etiqueta aplicada.
 - Otras retenciones, como las directivas de retención Microsoft 365, las retenciones de exhibición de documentos electrónicos o la retención por juicio pueden extender cuánto tiempo se conservan los elementos [etiquetados](retention.md#the-principles-of-retention-or-what-takes-precedence)en función de las entidades de seguridad de retención .
 
-Para ver el valor de la *propiedad ComplianceTagHoldApplied* para un único buzón, ejecute el siguiente comando en Exchange Online PowerShell:
+Para ver el valor de la *propiedad ComplianceTagHoldApplied* para un único buzón, ejecute el siguiente comando [en Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Get-Mailbox <username> | FL ComplianceTagHoldApplied
@@ -196,7 +196,7 @@ Después de quitar cualquier tipo de retención de un buzón, se aplica *una ret
 
 Cuando se coloca una retención de retraso en el buzón (cuando cualquiera de las propiedades anteriores se establece en **True),** el buzón se considera aún en espera durante una duración de retención ilimitada, como si el buzón se encontraba en retención por juicio. Después de 30 días, la retención de retraso expira y Microsoft 365 intentará quitar automáticamente la retención de retraso (estableciendo la propiedad DelayHoldApplied o DelayReleaseHoldApplied en **False)** para que se quite la retención. Después de establecer cualquiera de estas propiedades en **False**, los elementos correspondientes marcados para la eliminación se purgan la próxima vez que el Asistente para carpetas administradas procese el buzón.
 
-Para ver los valores de las propiedades DelayHoldApplied y DelayReleaseHoldApplied para un buzón, ejecute el siguiente comando en Exchange Online PowerShell.
+Para ver los valores de las propiedades DelayHoldApplied y DelayReleaseHoldApplied para un buzón, ejecute el siguiente comando [en Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ```powershell
 Get-Mailbox <username> | FL *HoldApplied*
@@ -286,11 +286,11 @@ Use la tabla siguiente para ayudarle a comprender cada uno de los valores anteri
 
 Cuando ya no se aplique una directiva de retención a un buzón, se realizará una retención de retraso temporal en el usuario para evitar la depuración de contenido. Una retención retrasada se puede deshabilitar ejecutando el `Set-Mailbox -RemoveDelayHoldApplied` comando.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de identificar las retenciones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la retención, quitar temporal o permanentemente la retención o excluir un buzón inactivo de una directiva de retención de Microsoft 365. Para obtener más información acerca de cómo realizar tareas relacionadas con las retenciones, vea uno de los temas siguientes:
 
-- Ejecute el comando [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox> ](/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell del Centro de seguridad & cumplimiento para excluir un buzón de una directiva de retención Microsoft 365 toda la organización. Este comando solo se puede usar para directivas de retención donde el valor de la *propiedad ExchangeLocation* es igual `All` a .
+- Ejecute el comando [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox> ](/powershell/module/exchange/set-retentioncompliancepolicy) en [PowerShell](/powershell/exchange/connect-to-scc-powershell) del Centro de seguridad & cumplimiento para excluir un buzón de una directiva de retención Microsoft 365 toda la organización. Este comando solo se puede usar para directivas de retención donde el valor de la *propiedad ExchangeLocation* es igual `All` a .
 
 - [Cambiar la duración de retención para un buzón inactivo](change-the-hold-duration-for-an-inactive-mailbox.md)
 

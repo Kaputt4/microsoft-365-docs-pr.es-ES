@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e22a237a5e8369093a83063f784fdba3ed75401c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: f7c41ff83bffaa6c0e982f4dc0dd3c36e614c0fb
+ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300819"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61620461"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -46,6 +46,9 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="december-2021"></a>Diciembre de 2021
+- (Versión preliminar) `DeviceTvmSoftwareEvidentBeta` tabla se agregó en búsqueda avanzada para permitir ver evidencias de dónde se detectó un software específico en un dispositivo. 
+ 
 ## <a name="november-2021"></a>Noviembre de 2021
 
 - (Versión preliminar) La característica de complemento de gobierno de aplicaciones para Defender para Aplicaciones en la nube ya está disponible en Microsoft 365 Defender. El gobierno de aplicaciones proporciona una funcionalidad de administración de directivas y seguridad diseñada para aplicaciones habilitadas para OAuth que tienen acceso a Microsoft 365 a través de las API Graph Microsoft. La gobernanza de aplicaciones ofrece visibilidad, corrección y gobernanza completas sobre cómo estas aplicaciones y sus usuarios acceden, usan y comparten sus datos confidenciales almacenados en Microsoft 365 a través de información útil, y alertas y acciones de directivas automatizadas. [Obtenga más información sobre el gobierno de aplicaciones](/cloud-app-security/app-governance-manage-app-governance).
