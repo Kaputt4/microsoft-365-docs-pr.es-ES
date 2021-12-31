@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 0cfa6c1b672dabcbe5d5418461a0a55ea42867ab
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 5f132f5e17f92f4a155a68d2f0151588034d3a9d
+ms.sourcegitcommit: 678e827a1c3bc9f4edfc48003f9b29f7bbf20ab5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612625"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649528"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -136,7 +136,7 @@ También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiated
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-De forma similar a la búsqueda de elementos del buzón, el evento SearchQueryInitiatedSharePoint se activa cuando una persona busca elementos en SharePoint. Los eventos se activan cuando se realizan búsquedas en los siguientes sitios de tipos de SharePoint:
+De forma similar a la búsqueda de elementos del buzón, el evento SearchQueryInitiatedSharePoint se activa cuando una persona busca elementos en SharePoint. Los eventos se desencadenan cuando se realizan búsquedas en la página raíz o predeterminada de los siguientes tipos de sitios de SharePoint:
 
 - Sitios principales
 
