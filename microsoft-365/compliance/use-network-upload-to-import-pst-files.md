@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 18751128d4804cfb3a61377caefba1478b7bd515
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b189be60efb48af33d26ea459bbee77878d4a93c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560293"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643873"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
@@ -49,15 +49,9 @@ Tiene que llevar a cabo el paso 1 solo una sola vez para importar los archivos P
 
 ## <a name="before-you-import-pst-files"></a>Antes de importar archivos PST
   
-- Debe tener asignado el rol de exportación e importación de buzón en Exchange para importar archivos PST en buzones de Microsoft 365. De manera predeterminada, este rol no está asignado a ningún grupo de rol en Exchange Online. Puede agregar el rol de exportación e importación de buzón en el grupo de rol de administración de la organización. O puede crear un nuevo grupo de rol, asignar el rol de exportación e importación de buzón y, después, agregarse o agregar a otros usuarios como miembro. Para obtener más información, consulte las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
+- Debe tener asignado el rol de Importación y exportación de buzones en Exchange Online para crear trabajos de importación en el Centro de cumplimiento de Microsoft 365 e importar archivos PST a los buzones de usuario. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. También puede crear un grupo de roles, asignarle el rol Mailbox Import Export y agregarse a sí mismo como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
 
-    Además, para crear trabajos de importación en el Centro de cumplimiento de Microsoft 365, debe cumplirse uno de estos requisitos:
-
-  - Debe tener asignado el rol de Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles de Administración de la organización y Administración de destinatarios.
-
-    O bien:
-
-  - Necesita ser administrador global en su organización.
+    Además del rol de Importación y exportación de buzones de correo, también debe tener asignado el rol Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online.
 
     > [!TIP]
     > Puede crear un nuevo grupo de roles en Exchange Online que está pensado específicamente para la importación de archivos PST. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de Importación y exportación de buzón de correo y de Destinatarios de correo al nuevo grupo de roles y, a continuación, agregue a los miembros.

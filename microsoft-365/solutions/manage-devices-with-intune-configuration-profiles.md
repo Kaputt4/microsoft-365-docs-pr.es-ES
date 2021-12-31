@@ -6,22 +6,22 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Introducción a los perfiles de configuración para aplicar una configuración segura en los dispositivos que usan Intune para realizar la transición de estos controles de seguridad a la nube.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Configuration profiles
+- Windows security baselines for Intune
+- customize configuration profiles
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 4f0847c70f5293a50cdaf80e657be5b5ac8753b4
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 0cb966e16d30619cb6666cc73020189532abba8f
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301347"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645055"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Paso 5. Implementar perfiles de dispositivo en Microsoft Intune
 
@@ -44,13 +44,13 @@ Para implementar las líneas base de seguridad de Windows para Intune, disponibl
 
 Por ahora, solo tienes que implementar las líneas base de seguridad de MDM más adecuadas. Consulta [Gestionar perfiles de líneas base de seguridad en Microsoft Intune ](/mem/intune/protect/security-baselines-configure) para crear el perfil y elegir la versión de las líneas base.
 
-Más adelante, cuando Microsoft Defender para punto de conexión esté configurado y hayas conectado Intune, implementa las líneas base de Defender para punto de conexión. Esto se trata en el siguiente artículo de esta serie: [Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad](manage-devices-with-intune-monitor-risk.md).
+Más adelante, cuando Microsoft Defender para punto de conexión esté configurado y hayas conectado Intune, implementa las líneas base de Defender para punto de conexión. Este tema se trata en el siguiente artículo de esta serie: [Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad](manage-devices-with-intune-monitor-risk.md).
 
 Es importante comprender que estas líneas base de seguridad no son compatibles con CIS o NIST, sino que reflejan estrechamente sus recomendaciones. Para obtener más información, consulta [¿Cumplen las líneas base de seguridad de Intune con CIS o NIST](/mem/intune/protect/security-baselines)?
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Personalizar perfiles de configuración para su organización
 
-Además de implementar las líneas base preconfiguradas, muchas organizaciones de escala empresarial implementan perfiles de configuración para un control más pormenorizado. Esto ayuda a reducir la dependencia de los objetos de directivas de grupo en el entorno de Active Directory local y a mover los controles de seguridad a la nube. 
+Además de implementar las líneas base preconfiguradas, muchas organizaciones de escala empresarial implementan perfiles de configuración para un control más pormenorizado. Esta configuración ayuda a reducir la dependencia de los objetos de directivas de grupo en el entorno de Active Directory local y a mover los controles de seguridad a la nube. 
 
 Las muchas opciones que puedes configurar mediante perfiles de configuración se pueden agrupar en cuatro categorías, como se muestra a continuación.
 
