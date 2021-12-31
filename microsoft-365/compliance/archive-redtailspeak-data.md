@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Voz de cola roja de Veritas a Microsoft 365. Este conector permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: e47166695e7dce5c4c286ef5d312d40b3ea58b76
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bce266bebd38e49e8ad756dc4100050694bc5d8c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175424"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643617"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configurar un conector para archivar datos de Redtail Speak
 
@@ -46,6 +46,8 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 - En el paso 2, debe especificar el servidor SFTP de la organización. Este paso es necesario para que Veritas Merge1 pueda ponerse en contacto con él para recopilar datos de Redtail Speak a través de SFTP.
 
 - El usuario que crea el conector del importador de redtail speak en el paso 1 (y lo completa en el paso 3) debe asignarse al rol De importación de buzones de correo en Exchange Online. Este rol es necesario para agregar conectores en la página Conectores de datos de la Centro de cumplimiento de Microsoft 365. Esta función no se asigna a ningún grupo de roles Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+
+- Este conector de datos de Veritas se encuentra en versión preliminar pública en GCC entornos de la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-the-redtail-speak-connector"></a>Paso 1: Configurar el conector Redtail Speak
 

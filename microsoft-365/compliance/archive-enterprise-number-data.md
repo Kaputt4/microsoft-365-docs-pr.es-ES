@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos SMS y MMS de TeleMessage Enterprise Archivo de números. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: be9bb382752fbfd1dfe37666b8b9e0b17a2b5e3f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 01c72b630c61ff0fda764971872b2a776617c3d2
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167515"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61644263"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configurar un conector para archivar datos Enterprise número
 
@@ -29,7 +29,7 @@ Después de almacenar los datos del conector del archivador de números de TeleM
 
 En la siguiente introducción se explica el proceso de uso de un conector para archivar Enterprise de red en Microsoft 365.
 
-![Enterprise Flujo de trabajo de archivado de números.](../media/EnterpriseNumberConnectorWorkflow.png)
+![Enterprise de archivado de números.](../media/EnterpriseNumberConnectorWorkflow.png)
 
 1. Su organización trabaja con TeleMessage para configurar un conector Enterprise archivo de números. Para obtener más información, consulte [aquí](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
 
@@ -49,7 +49,7 @@ Algunos de los pasos de implementación necesarios para archivar Enterprise dato
 
 - Al usuario que crea un Enterprise de archivador de números de correo se le debe asignar el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
-- Este conector de datos está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos de TeleMessage está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="create-an-enterprise-number-archiver-connector"></a>Crear un conector Enterprise archivo de números
 

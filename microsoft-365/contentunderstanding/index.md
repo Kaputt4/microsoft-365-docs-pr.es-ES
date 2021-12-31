@@ -6,7 +6,9 @@ manager: pamgreen
 ms.reviewer: ssquires, toresing
 audience: admin
 ms.topic: landing-page
-ms.custom: intro-hub-or-landing
+ms.custom:
+- intro-overview
+- intro-get-started
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
@@ -14,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo encontrar recursos de Microsoft SharePoint Syntex.
-ms.openlocfilehash: 32f4b4a35cb3cbc66cd5ae575dbdedd9f58bb592
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
+ms.openlocfilehash: 1e0959a5772d88afae43e09028d3d65ffe82b3de
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61153693"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645129"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introducción a Microsoft SharePoint Syntex
 

@@ -14,12 +14,13 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 419ebd04b7c83c2d0545efcc3ff6da7161c30c6b
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.custom: intro-get-started
+ms.openlocfilehash: 24ad63d5f49154a8a167b90a08d7d838655dc65d
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560581"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645087"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Introducción al Plan 1 de Microsoft Defender para endpoints
 
@@ -98,7 +99,7 @@ Usa las **pestañas**  Alertas, **Dispositivos** y Usuarios para ver más inform
 > [!TIP]
 > Para obtener más información sobre el uso de **la vista** Incidentes, vea [Administrar incidentes](manage-incidents.md).
 
-## <a name="manage-devices"></a>Administración de dispositivos
+## <a name="manage-devices"></a>Administrar dispositivos
 
 Para ver y administrar los dispositivos de la organización, en la barra de navegación, en **Extremos**, seleccione **Inventario de dispositivos**. Verás una lista de dispositivos como se muestra en la siguiente imagen:
 

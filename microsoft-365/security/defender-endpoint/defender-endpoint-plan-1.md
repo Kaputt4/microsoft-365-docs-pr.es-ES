@@ -14,12 +14,13 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bd0270ae5fdffe5335666fa1ae9c74143bff7658
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.custom: intro-overview
+ms.openlocfilehash: 0025abb9aa900da4b6e22b7ecf1a48014f25552a
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371885"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645547"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Información general sobre Microsoft Defender para el plan 1 de punto de conexión
 
@@ -75,8 +76,8 @@ Las acciones de respuesta manual son acciones que el equipo de seguridad puede r
 
 | Archivo/dispositivo | Acción | Descripción |
 |:---|:---|:---|
-| Device | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
-| Device | Aislar el dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
+| Dispositivo | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
+| Dispositivo | Aislar el dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
 | Archivo | Detener y poner en cuarentena un archivo |Impide que los procesos se ejecuten y ponga en cuarentena los archivos asociados. |
 | Archivo | Agregar un indicador para bloquear o permitir un archivo | Los indicadores de bloqueo impiden que los archivos ejecutables portátiles se lean, escriban o ejecuten en dispositivos. <p>Los indicadores allow impiden que los archivos se bloqueen o corrijan. |
 
@@ -192,7 +193,7 @@ La mayoría de las organizaciones usan varios dispositivos y sistemas operativos
 - iOS
 - Sistema operativo Android
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Comparar Microsoft Defender para el plan de extremo 1 con el plan 2](defender-endpoint-plan-1-2.md)
 - [Configurar y configurar Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)

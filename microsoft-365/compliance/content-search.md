@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: d1636885e03544a78432516e77bfabb8cd52575d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 68270466625cc5f9b76359ae7697536956c727aa
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754906"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643389"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 
@@ -46,7 +46,7 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
 
 ## <a name="before-you-run-a-search"></a>Antes de ejecutar una búsqueda
 
-- Para acceder a la herramienta de búsqueda de contenido en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> (para buscar, obtener una vista previa o exportar los resultados de búsqueda), es necesario que un administrador, responsable de cumplimento normativo o administrador de eDiscovery sea miembro del grupo de roles de administradores de eDiscovery en el Centro de cumplimiento de Microsoft 365. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
+- Para acceder a la página de herramienta de Búsqueda de contenido en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> (para ejecutar búsquedas y obtener una vista previa de los resultados y exportar resultados), un administrador, responsable de cumplimiento o administrador de exhibición de documentos electrónicos debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Para más información, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
 - En una implementación de Exchange híbrida, no puede usar la herramienta de búsqueda de contenido para buscar buzones locales. Solo puede usar la herramienta para buscar buzones basados en la nube.
 
@@ -57,9 +57,6 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
 2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Búsqueda de contenido**.
 
 3. En la página **Búsqueda de contenido**, haga clic en **Nueva búsqueda**.
-
-   > [!NOTE]
-   > La opción **Buscar por lista de id.** le permite buscar mensajes de correo específicos y otros elementos del buzón con una lista de Id. de Exchange. Para crear una búsqueda por lista de id., debe enviar un archivo CSV que identifique los elementos de buzón específicos que desee buscar. Para sabe cómo hacerlo, consulte [Preparar un archivo CSV para una búsqueda por lista de id.](csv-file-for-an-id-list-content-search.md)
 
 4. Escriba un nombre y una descripción opcional que le ayude a identificar la búsqueda. El nombre de la búsqueda debe ser único en la organización.
 

@@ -6,22 +6,22 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Use Intune y Autopilot para inscribir dispositivos en la administración con el fin de asegurarse de que las aplicaciones que se ejecutan en ellos son compatibles y para evitar pérdidas de datos corporativos.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- enroll devices into management
+- enroll devices with Intune
+- Intune mobile device platforms
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 5091aa197727602a550030bb462cc2e85d21c88d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 56226aee898dad607d3dd85641b7736e764b2be2
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301335"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645613"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>Paso 2. Inscripción de dispositivos para la administración con Intune
 
@@ -31,7 +31,7 @@ Tanto si un dispositivo es un dispositivo BYOD de propiedad personal como un dis
 
 El proceso de inscripción de dispositivos establece una relación entre el usuario, el dispositivo y el servicio Microsoft Intune. El uso de Microsoft Intune como un servicio independiente le permite usar una única consola de administración basada en la Web para administrar equipos Windows, macOS y las plataformas de dispositivos móviles más populares.
 
-En este artículo, se recomiendan métodos para inscribir dispositivos en la administración mediante Intune. Para obtener más información sobre estos métodos y cómo implementar cada uno de ellos, consulte [Guía de implementación: Inscribir dispositivos en Microsoft Intune](/microsoft-365/security/defender/eval-overview?view=o365-worldwide).
+En este artículo, se recomiendan métodos para inscribir dispositivos en la administración mediante Intune. Para obtener más información sobre estos métodos y cómo implementar cada uno de ellos, consulte [Guía de implementación: Inscribir dispositivos en Microsoft Intune](/microsoft-365/security/defender/eval-overview).
 
 ![Pasos para administrar dispositivos](../media/devices/intune-mdm-steps-1.png#lightbox)
 

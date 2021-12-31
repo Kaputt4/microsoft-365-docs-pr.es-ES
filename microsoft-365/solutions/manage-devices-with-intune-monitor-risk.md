@@ -6,22 +6,23 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Obtenga información sobre cómo conectar Microsoft Intune a Defender para punto de conexión y supervisar el riesgo del dispositivo como una condición de acceso.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Connect Intune to Defender
+- monitor device risk
+- monitor device compliance
+- deploy security baselines
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 2e04b19879584cb0000ff05f8633412f7301bd9b
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 067608134caeafd9a07fbe692de037e96063b4dd
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301227"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645405"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
 

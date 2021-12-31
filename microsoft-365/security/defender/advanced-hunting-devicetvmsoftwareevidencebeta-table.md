@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dd71e4b3554b2cd45b648300f84ec96a73e5116b
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: 7fd064b906e4afe5e337df85d9dc6f174edc99cf
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620553"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645843"
 ---
 # <a name="devicetvmsoftwareevidencebeta"></a>DeviceTvmSoftwareEvidenceBeta
 
@@ -35,7 +35,8 @@ ms.locfileid: "61620553"
 - Microsoft Defender para punto de conexión
 
 > [!IMPORTANT]
-> La tabla está actualmente en versión beta y se le ofrece para permitirle buscar rápidamente evidencias que indiquen la existencia de `DeviceTvmSoftwareEvidenceBeta` software en un dispositivo.
+> La `DeviceTvmSoftwareEvidenceBeta` tabla está actualmente en beta. Una vez que deja beta, el nombre de la tabla final cambiará y los nombres de columna también pueden cambiar. A continuación, es probable que las modificaciones rompan las consultas que siguen usando nombres anteriores. Se recomienda a los usuarios revisar y ajustar sus consultas cuando se haya finalizado esta tabla. 
+
 
 La tabla del esquema de búsqueda avanzada contiene datos de `DeviceTvmSoftwareEvidenceBeta` [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) relacionados con la sección de [pruebas de software](/microsoft-365/security/defender-endpoint/tvm-software-inventory#software-evidence). Esta tabla te permite ver evidencias de dónde se detectó un software específico en un dispositivo. Puede usar esta tabla, por ejemplo, para identificar las rutas de acceso a archivos de software específico. Use esta referencia para crear consultas que devuelvan información de la tabla.
 

@@ -10,18 +10,18 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- endpoint dlp
+- data loss prevention
+- dlp policies
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: f07a820de887179e89024a35cda3801c86fc1416
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+description: Implemente DLP para punto de conexión trabajando con el equipo de gobernanza y protección de la información para crear directivas DLP para su organización.
+ms.openlocfilehash: e041e03b1318553937f094868e4e40675b06d47e
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300159"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645831"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Paso 7. Implementar la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
 

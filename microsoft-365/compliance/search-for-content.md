@@ -10,17 +10,17 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en Centro de cumplimiento de Microsoft 365 para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial .
-ms.openlocfilehash: 6a49dffccb701958912fb0185eec4a8312f22429
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar rápidamente correo electrónico en buzones de correo de Exchange, documentos en sitios de SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial.
+ms.openlocfilehash: 298a9f371d652a1da547ba91b437aa0300c1621b
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203008"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645933"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Buscar contenido con la herramienta de búsqueda de contenido
 
-Use la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar rápidamente correo electrónico en buzones de correo de Exchange, documentos en sitios de SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial. Puede usar la herramienta de búsqueda de contenido para buscar conversaciones de correo electrónico, documentos y mensajería instantánea en herramientas de colaboración como Microsoft Teams y Microsoft 365 grupos.
+Use la herramienta Búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para encontrar rápidamente correos electrónicos en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial. Puede usar la herramienta Búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en herramientas de colaboración como Microsoft Teams y Grupos de Microsoft 365.
   
 ## <a name="search-for-content"></a>Buscar contenido
 
@@ -33,8 +33,6 @@ El primer paso es empezar a usar la herramienta de búsqueda de contenido para e
 - [Crear consultas de búsqueda y usar condiciones para](keyword-queries-and-search-conditions.md) restringir la búsqueda
 
 - [Configurar el filtrado de permisos de búsqueda](permissions-filtering-for-content-search.md) para que un administrador de exhibición de documentos electrónicos solo pueda buscar subconjunto de buzones o sitios de su organización
-
-- [Ejecutar una búsqueda de lista de identificadores](csv-file-for-an-id-list-content-search.md) para buscar mensajes de correo electrónico específicos
 
 - [Buscar buzones de correo basados en la nube](search-cloud-based-mailboxes-for-on-premises-users.md) para usuarios locales en Microsoft 365
 

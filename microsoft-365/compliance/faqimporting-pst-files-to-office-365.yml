@@ -18,12 +18,12 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: Este artículo contiene respuestas a algunas preguntas más frecuentes para los administradores acerca de la importación de archivos PST a Microsoft 365 el servicio de Office 365 importación.
-  ms.openlocfilehash: e6baaf6125817956bdc09048e852e1eca2e66d88
-  ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+  ms.openlocfilehash: 400fd5873bc074c6d27adc76630e0cca49cf7ae0
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/06/2021
-  ms.locfileid: "60804622"
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "61643253"
 title: Preguntas frecuentes sobre la importación de archivos PST
 summary: >
   **Este artículo está para administradores. ¿Desea importar archivos PST a su propio buzón? Consulta [Importar correo electrónico, contactos y calendario desde un Outlook archivo .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
@@ -42,17 +42,10 @@ sections:
   - question: >
       ¿Qué permisos son necesarios para crear trabajos de importación en el servicio de importación de Office 365?
     answer: >
-      Debe tener asignado el rol importación y exportación de buzón de Exchange Online para importar archivos PST a los buzones de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. O puede crear un nuevo grupo de rol, asignar el rol de exportación e importación de buzón y, después, agregarse o agregar a otros usuarios como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles en Exchange Online](/Exchange/permissions-exo/role-groups).
+      Debe tener asignado el rol Importar exportación de buzones en Exchange Online para crear trabajos de importación en el Centro de cumplimiento de Microsoft 365 importar archivos PST a buzones de usuario. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. O puede crear un nuevo grupo de rol, asignar el rol de exportación e importación de buzón y, después, agregarse o agregar a otros usuarios como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles en Exchange Online](/Exchange/permissions-exo/role-groups).
 
 
-      Adicionalmente, para crear trabajos de importación en el Centro de cumplimiento de Microsoft 365, debe cumplirse uno de estos requisitos:
-
-
-      - Debe tener asignado el rol de Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles de Administración de la organización y Administración de destinatarios.
-
-          O bien:
-
-      - Necesita ser administrador global en su organización.
+      Además del rol Exportar importación de buzones, también debe tener asignado el rol Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online.
 
 
       > [!TIP]
@@ -63,7 +56,7 @@ sections:
     answer: >
       La carga en la red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Alemania, Suiza, Noruega, Europa, India, Asia Oriental, Sudeste asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos. La carga de red estará disponible en más regiones en el futuro.
   - question: >
-      What is the pricing for importing PST files by using network upload?
+      ¿Cuál es el precio de la importación de archivos PST mediante carga de red?
     answer: >
       Using network upload to import PST files is free.
 
@@ -134,18 +127,9 @@ sections:
   - question: >
       ¿Qué permisos son necesarios para crear trabajos de importación en el servicio de importación de Office 365?
     answer: >
-      Debe tener asignado el rol Importación o exportación de buzón para poder importar archivos PST a los buzones de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. O puede crear un nuevo grupo de rol, asignar el rol de exportación e importación de buzón y, después, agregarse o agregar a otros usuarios como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles en Exchange Online](/Exchange/permissions-exo/role-groups).
+      Debe tener asignado el rol Importar exportación de buzones en Exchange Online para crear trabajos de importación en el Centro de cumplimiento de Microsoft 365 importar archivos PST a buzones de usuario. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. O puede crear un nuevo grupo de rol, asignar el rol de exportación e importación de buzón y, después, agregarse o agregar a otros usuarios como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles en Exchange Online](/Exchange/permissions-exo/role-groups).
 
-
-      Adicionalmente, para crear trabajos de importación en el Centro de cumplimiento de Microsoft 365, debe cumplirse uno de estos requisitos:
-
-
-      - Debe tener asignado el rol de Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles de Administración de la organización y Administración de destinatarios.
-
-          O bien:
-
-      - Necesita ser administrador global en su organización.
-
+       Además del rol Exportar importación de buzones, también debe tener asignado el rol Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online.
 
       > [!TIP]
 

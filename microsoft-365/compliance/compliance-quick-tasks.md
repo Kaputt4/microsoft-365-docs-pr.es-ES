@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- intro-get-started
 ms.localizationpriority: medium
 description: Obtenga información sobre las tareas que le ayudarán a empezar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 621bcbdbbe38be4cbda79e5cf6afcc9846f87e0d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 028226c92c9707d852c2bde80cea6d0a3bf86adf
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111044"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643071"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -59,7 +61,7 @@ Ahora que ha determinado el estado actual de su organización y quién puede adm
 
 Ideas proporcionados por el registro de auditoría son una herramienta valiosa para ayudar a cumplir los requisitos de cumplimiento con soluciones que pueden ayudarle a administrar y supervisar las áreas de cumplimiento que necesitan mejoras. El registro de auditoría debe habilitarse antes de que se registren las actividades y antes de poder buscar en el registro de auditoría. Cuando se habilita, la actividad de usuario y administrador de su organización se registra en el registro de auditoría y se retiene durante 90 días y hasta un año, según la licencia asignada a los usuarios.
 
-Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md)
+Para obtener instrucciones paso a paso para activar la auditoría, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
 ## <a name="task-4-create-policies-to-alert-you-about-potential-compliance-issues"></a>Tarea 4: Crear directivas para alertar sobre posibles problemas de cumplimiento
 
@@ -125,7 +127,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener instrucciones paso a paso sobre cómo usar el explorador de actividades, vea [Introducción al explorador de actividades](data-classification-activity-explorer.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento de su organización, tenga en cuenta las siguientes soluciones de cumplimiento en Microsoft 365 para ayudarle a proteger la información confidencial y detectar y actuar en riesgos adicionales de insider.
 

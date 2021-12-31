@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (también denominados elementos no indexados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 5160a46e6be825dd858be030fc5cf5941734e65d
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 9d61f28e6dd2fc777fed62c1f7d4a6da1a18907c
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60586318"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645161"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigar elementos parcialmente indizados en eDiscovery
 
@@ -77,7 +77,7 @@ En los casos en que necesite examinar elementos parcialmente indizados para [](e
   
 ![Elija la segunda o tercera opción para exportar elementos parcialmente indizados.](../media/PartiallyIndexedItemsExportOptions.png)
   
-Al exportar resultados de búsqueda de exhibición de documentos electrónicos o un informe de búsqueda mediante una de estas opciones, la exportación incluye un informe denominado Unindexed Items.csv. Este informe incluye la mayor parte de la misma información que el ResultsLog.csv archivo; sin embargo, el archivo Items.csv unindexed también incluye dos campos relacionados con elementos parcialmente indizados: **Etiquetas** de error y **Propiedades de error**. Estos campos contienen información sobre el error de indización de cada elemento parcialmente indizado. El uso de la información de estos dos campos puede ayudarle a determinar si el error de indización de un determinado impacto en la investigación. Si lo hace, puede realizar una búsqueda dirigida y recuperar y exportar mensajes de correo electrónico específicos y documentos SharePoint o OneDrive para que pueda examinarlos para determinar si son relevantes para la investigación. Para obtener instrucciones paso a paso, vea [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
+Al exportar resultados de búsqueda de exhibición de documentos electrónicos o un informe de búsqueda mediante una de estas opciones, la exportación incluye un informe denominado Unindexed Items.csv. Este informe incluye la mayor parte de la misma información que el ResultsLog.csv archivo; sin embargo, el archivo Items.csv unindexed también incluye dos campos relacionados con elementos parcialmente indizados: **Etiquetas** de error y **Propiedades de error**. Estos campos contienen información sobre el error de indización de cada elemento parcialmente indizado. El uso de la información de estos dos campos puede ayudarle a determinar si el error de indización de un determinado impacto en la investigación. 
 
 > [!NOTE]
 > El archivo de Items.csv sin indizar también contiene campos **denominados Tipo de error** y **Mensaje de error**. Se trata de campos heredados que contienen información similar a la información de los campos **Etiquetas** de error y Propiedades de **error,** pero con información menos detallada. Puede omitir estos campos heredados de forma segura.

@@ -18,15 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
+- admindeeplinkDEFENDER
+- intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1d9c21b68de920b18ec5941eec7c093a64a06023
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 06413dc1d33136e5fa7fd23a0770f98bc6c6e408
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401407"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646270"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -268,7 +270,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Novedades de Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)

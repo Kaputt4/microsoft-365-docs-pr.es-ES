@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos principal.
-ms.openlocfilehash: fdf623ec56f3f40ba3316fd546f044610829bbc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 57ea95458df568de3687e1b0d38a70991b09a850
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189290"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643373"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos principal
 
@@ -39,9 +39,6 @@ Para crear una búsqueda de exhibición de documentos electrónicos principal:
 4. En la **página principal** del caso, haga clic en la **pestaña Búsquedas** y, a continuación, haga clic **en Nueva búsqueda**.
 
    ![Haga clic en Nueva búsqueda para crear una búsqueda de eDiscovery principal.](../media/CoreeDiscoverySearch1.png)
-
-   > [!NOTE]
-   > La opción **Buscar por lista de id.** le permite buscar mensajes de correo específicos y otros elementos del buzón con una lista de Id. de Exchange. Para crear una búsqueda por lista de id., debe enviar un archivo CSV que identifique los elementos de buzón específicos que desee buscar. Para sabe cómo hacerlo, consulte [Preparar un archivo CSV para una búsqueda por lista de id.](csv-file-for-an-id-list-content-search.md)
 
 5. En el **Asistente para nueva** búsqueda, escriba un nombre para la búsqueda y una descripción opcional que ayude a identificar la búsqueda. El nombre de la búsqueda debe ser único en la organización.
 
@@ -80,6 +77,6 @@ Una vez finalizada la búsqueda, puede obtener una vista previa de los resultado
 
 - Al hacer clic **en Elegir usuarios, grupos** o equipos para especificar buzones de correo en los que buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en Elegir **usuarios,** grupos o equipos , escriba un nombre (un mínimo de tres caracteres) en el cuadro de búsqueda, active la casilla situada junto al nombre y, a continuación, haga clic en **Elegir**.
 
-- Puede agregar buzones inactivos, Microsoft Teams, grupos de Yammer, grupos de Office 365 y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, Yammer grupos o grupos de Office 365, se busca en el buzón de grupo o equipo; los buzones de los miembros del grupo no se buscan.
+- Puede agregar buzones inactivos, Microsoft Teams, grupos de Yammer, grupos de Office 365 y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, grupos de Yammer o grupos de Office 365, se busca en el buzón de grupo o de grupo; no se buscarán los buzones de los miembros del grupo.
 
 - Para agregar sitios a la búsqueda, active la alternancia y, a continuación, haga clic **en Elegir sitios**. Escriba la dirección URL de cada sitio en el que desea buscar. También puede agregar la dirección URL del sitio SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo Office 365 grupo.

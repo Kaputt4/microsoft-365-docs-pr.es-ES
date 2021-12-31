@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de Cisco Jabber en Oracle para Microsoft 365.
-ms.openlocfilehash: f398c63b8af08de2c04401cb9a3de4fb77b2a9fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6d38abfbbb8380a6f7eb5bc617460a1a3b8e6e73
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195706"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643115"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Configurar un conector para archivar datos de Cisco Jabber en Oracle
 
@@ -44,6 +44,8 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 - Crear una cuenta Merge1 para conectores de Microsoft. Para ello, póngase en contacto [con el Servicio de soporte al cliente de Veritas](https://www.veritas.com/content/support/en_US). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
 - El usuario que crea el conector de Cisco Jabber en Oracle en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a ningún grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+
+- Este conector de datos de Veritas se encuentra en versión preliminar pública en GCC entornos de la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-oracle-connector"></a>Paso 1: Configurar el conector de Cisco Jabber en Oracle
 

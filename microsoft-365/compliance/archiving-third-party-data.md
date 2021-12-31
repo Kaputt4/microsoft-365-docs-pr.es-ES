@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos Microsoft 365 buzones de correo.
-ms.openlocfilehash: c1d2d293b1439c2459a35c2f92d9cce1829982b0
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: 787b4b5c48ec882692991b7c140761361f7d74d5
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620449"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645967"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
 
@@ -263,7 +263,42 @@ Para obtener más información sobre cómo crear consultas de búsqueda de exhib
 
 Algunos conectores de datos están disponibles en la nube de Us Government. Las secciones siguientes indican los entornos gubernamentales específicos que admiten conectores de datos de terceros. Para obtener más información acerca de las nubes de us government, [vea Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
 
-### <a name="telemessage-data-connectors"></a>Conectores de datos de Telemessage
+### <a name="veritas-data-connectors-in-the-us-government-cloud-preview"></a>Conectores de datos de Veritas en la nube de Us Government (versión preliminar)
+
+|Conector de datos  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust| Sí | No | No |
+|Cisco Jabber en MS SQL| Sí | No | No |
+|Cisco Jabber en Oracle| Sí | No | No |
+|Cisco Jabber en PostgreSQL| Sí | No | No |
+|EML| Sí | No | No |
+|Conectar FX| Sí | No | No |
+|Jive| Sí | No | No |
+|Base de datos SQL MS| Sí | No | No |
+|Documento principal| Sí | No | No |
+|Redtail Speak| Sí | No | No |
+|Reuters Dealing| Sí | No | No |
+|Reuters Eikon| Sí | No | No |
+|Reuters FX| Sí | No | No |
+|RingCentral| Sí | No | No |
+|Salesforce Chatter| Sí | No | No |
+|ServiceNow| Sí | No | No |
+|Skype for Business| Sí | No | No |
+|Margen de demora eDiscovery| Sí | No | No |
+|Symphony| Sí | No | No |
+|Texto delimitado| Sí | No | No |
+|Twitter| Sí | No | No |
+|Teams de Webex| Sí | No | No |
+|Páginas web| Sí | No | No |
+|Área de trabajo de Facebook| Sí | No | No |
+|XIP| Sí | No | No |
+|XSLT/XML| Sí | No | No |
+|Yieldbroker| Sí | No | No |
+|YouTube| No | No | No |
+|Reuniones de Zoom| Sí | No | No |
+|||||
+
+### <a name="telemessage-data-connectors-in-the-us-government-cloud"></a>Conectores de datos de TeleMessage en la nube de Us Government
 
 |Conector de datos  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -281,14 +316,7 @@ Algunos conectores de datos están disponibles en la nube de Us Government. Las 
 |Archivador de WhatsApp | Sí | No | No |
 |||||
 
-### <a name="celltrust-data-connectors"></a>Conectores de datos cellTrust
-
-|Conector de datos  |GCC  |GCC High  |DoD  |
-|:---------|:---------|:---------|:---------|
-|CellTrust SL2 | Sí | No | No |
-|||||
-
-### <a name="17a-4-data-connectors"></a>17a-4 conectores de datos
+### <a name="17a-4-data-connectors-in-the-us-government-cloud"></a>Conectores de datos de 17a-4 en la nube de Us Government
 
 |Conector de datos  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -310,6 +338,13 @@ Algunos conectores de datos están disponibles en la nube de Us Government. Las 
 |SQL DataParser  | Sí | No | No |
 |DataParser de Symphony | Sí | No | No |
 |Zoom DataParser | Sí | No | No |
+|||||
+
+### <a name="celltrust-data-connectors-in-the-us-government-cloud"></a>Conectores de datos de CellTrust en la nube de Us Government
+
+|Conector de datos  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust SL2 | Sí | No | No |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Trabajar con un partner de Microsoft para archivar datos de terceros

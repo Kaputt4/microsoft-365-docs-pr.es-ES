@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3762afe07c045649211197b188e5c4eef035018c
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.custom: intro-get-started
+ms.openlocfilehash: 39bab3355b518d581844604f3f38ed2858e77f2f
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61506706"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61641590"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Introducción al uso de Microsoft Defender para empresas (versión preliminar)
 
@@ -44,7 +45,7 @@ Tómese un momento para familiarizarse con su Microsoft 365 Defender portal.
 
 Use la barra de navegación de la parte izquierda de la pantalla para obtener acceso a los incidentes, ver informes y administrar las directivas y la configuración de seguridad. En la tabla siguiente se describen los elementos que verá en la barra de navegación.
 
-| Item | Description |
+| Item | Descripción |
 |:---|:---|
 | **Inicio** | Te lleva a la página principal en Microsoft 365 Defender. La página principal incluye tarjetas que resaltan las amenazas activas que se detectaron, junto con recomendaciones para ayudar a proteger los datos y dispositivos de la empresa. <br/><br/>Recomendaciones se incluyen en Defender for Business (versión preliminar) puede ahorrar tiempo y esfuerzo al equipo de seguridad. Recomendaciones se basan en los procedimientos recomendados del sector. Para obtener más información sobre las recomendaciones, vea [Security recommendations - Administración de amenazas y vulnerabilidades](../defender-endpoint/tvm-security-recommendation.md). |
 | **Incidentes** | Le lleva a la lista de incidentes recientes. A medida que se desencadenan las alertas, se crean incidentes. Un incidente puede incluir varias alertas. Asegúrese de revisar los incidentes con regularidad. <br/><br/>Para obtener más información acerca de los incidentes, vea Ver y administrar incidentes [en Microsoft Defender para empresas (versión preliminar).](mdb-view-manage-incidents.md)|

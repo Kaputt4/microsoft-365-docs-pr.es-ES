@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e61bf570c8e239d8379704d57e0fbdd988a4562d
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.custom: intro-overview
+ms.openlocfilehash: 2324bb04e388ae94e2c6b3004b9bd07e72eca4d7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586562"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643837"
 ---
 # <a name="overview-of-microsoft-defender-for-business-preview"></a>Información general sobre Microsoft Defender para empresas (versión preliminar)
 
@@ -73,7 +74,7 @@ Con Defender para empresas (versión preliminar), puedes ayudar a proteger los d
    - [Ver o editar directivas de seguridad](mdb-view-edit-policies.md)
    - [Administrar reglas personalizadas para directivas de firewall](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga más información sobre el proceso de configuración simplificado en Microsoft Defender para empresas (versión preliminar)](mdb-simplified-configuration.md)
 

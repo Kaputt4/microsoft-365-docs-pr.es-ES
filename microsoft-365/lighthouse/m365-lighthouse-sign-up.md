@@ -14,14 +14,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
+- intro-get-started
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 58721d83529fb70552d151cd0a0b19ce5ba85c28
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7eceb0ee205e7de99a7943ba05e6c07f66bd491e
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374057"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61641602"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrate para Microsoft 365 Lighthouse
 
@@ -60,7 +61,7 @@ ms.locfileid: "61374057"
     > [!NOTE]
     > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Lighthouse.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Configurar Microsoft 365 Lighthouse seguridad del portal](m365-lighthouse-configure-portal-security.md) 
 

@@ -14,14 +14,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
+- intro-overview
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de clientes en una ubicación.
-ms.openlocfilehash: 269927ee46d821c38a6ad8f6d0b92f76b7fdc64e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d7e2d67b62f8db9d767154ea6049e52a496bc4e7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373709"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645185"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Información general sobre Microsoft 365 Lighthouse
 
@@ -66,4 +67,4 @@ Lighthouse ayuda a los MSP a proteger y administrar Microsoft 365 servicios y pu
 [Microsoft 365 Lighthouse de la página Inquilinos (artículo)](m365-lighthouse-tenants-page-overview.md)   
 [Microsoft 365 Lighthouse de la página de cumplimiento de dispositivos](m365-lighthouse-device-compliance-page-overview.md) (artículo)   
 [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)   
-[Microsoft Defender para empresas](../security/defender-business/index.yml)
+[Microsoft Defender para Empresas](../security/defender-business/index.yml)

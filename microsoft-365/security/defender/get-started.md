@@ -17,16 +17,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 22dcd3345e4a58a4ee38a4e9e8f20fb4d76f3f60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 747f8e389b90e20aad7162277b3e62b0a80ae3c7
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202566"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645757"
 ---
-# <a name="get-started-with-microsoft-365-for-defender"></a>Introducción a Microsoft 365 para Defender
+# <a name="get-started-with-microsoft-365-defender"></a>Introducción a Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -59,9 +60,4 @@ Al activar Microsoft 365 Defender e implementar servicios, tendrá acceso a las 
 | Microsoft Defender para punto de conexión | Conjunto de aplicaciones de protección de puntos de conexión que se basa en sensores de comportamiento eficaces, análisis en la nube e inteligencia de amenazas |
 |Microsoft Defender para Office 365 | Protección avanzada para tus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
 | Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades comprometidas e información interna malintencionada mediante señales correlacionadas de Active Directory |
-| Microsoft Cloud App Security | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |
-
-
-
-
-
+| Microsoft Defender for Cloud Apps | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |

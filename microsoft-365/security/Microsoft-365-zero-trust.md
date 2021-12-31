@@ -6,6 +6,7 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
+description: Obtenga información sobre cómo implementar la Microsoft 365 de confianza cero en su entorno para defenderse de las amenazas y proteger los datos confidenciales.
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
@@ -13,16 +14,14 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-- m365solution-zerotrust
-- m365solution-overview
-description: Implemente los principios de confianza cero, la arquitectura y las capacidades para Microsoft 365.
-ms.openlocfilehash: ef916e576c6e7b837c46dda47cdc975fa02883f0
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+- deploy zero trust
+- zero trust strategy
+ms.openlocfilehash: a1283f3bff8586c88a1c0bdcb84c246cf3a873f8
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301691"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643333"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 

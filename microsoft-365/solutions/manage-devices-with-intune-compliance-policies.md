@@ -6,22 +6,21 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Aprenda a crear directivas de cumplimiento de dispositivos que especifiquen los requisitos mínimos para que un dispositivo acceda a su entorno.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Create compliance policies
+- Intune device compliance policy
 ms.custom: ''
 keywords: ''
-description: ''
-ms.openlocfilehash: 2207f7ef3988c83a527cbd046ad059ca225d411d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 46507c17562c7f7d60363d931fccadc6a67683f1
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301359"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61645877"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Paso 3. Configurar directivas de cumplimiento para dispositivos con Intune
 

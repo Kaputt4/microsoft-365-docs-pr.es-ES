@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f7c41ff83bffaa6c0e982f4dc0dd3c36e614c0fb
-ms.sourcegitcommit: f8fbabf1ec7421cd7ad36aa52b8856fb863cf284
+ms.openlocfilehash: 6aeb53c379c4c3eee691986d4f57ba3960c279aa
+ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61620461"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61643321"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -47,7 +47,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 ## <a name="december-2021"></a>Diciembre de 2021
-- (Versión preliminar) `DeviceTvmSoftwareEvidentBeta` tabla se agregó en búsqueda avanzada para permitir ver evidencias de dónde se detectó un software específico en un dispositivo. 
+- (GA) La tabla se agregó a corto plazo en la búsqueda avanzada para que pueda ver evidencias de dónde se detectó un software específico `DeviceTvmSoftwareEvidenceBeta` en un dispositivo. 
  
 ## <a name="november-2021"></a>Noviembre de 2021
 
