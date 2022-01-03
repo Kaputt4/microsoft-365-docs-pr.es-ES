@@ -22,12 +22,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Obtenga más información sobre las opciones para limitar o deshabilitar el uso compartido de Microsoft 365.
-ms.openlocfilehash: 9d1784e4520b59aedc53a71110f1c7ab0e9d8914
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a34a1a457ed9c53f6393d65617f8ac0d9e611209
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154163"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660171"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitar el uso compartido en Microsoft 365
 
@@ -183,13 +183,13 @@ Desactivar los vínculos de tipo *Cualquiera*
 De forma predeterminada, los miembros de un sitio pueden compartir archivos y carpetas con otras personas de su organización con un vínculo de *Personas de su organización*. Puede deshabilitar vínculos de *Personas de su organización* mediante PowerShell:
 
 ```powershell
-Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks Disabled
 ```
 
 Por ejemplo:
 
 ```powershell
-Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks Disabled
 ```
 
 ## <a name="create-sites-groups-and-teams"></a>Crear sitios, grupos y equipos
