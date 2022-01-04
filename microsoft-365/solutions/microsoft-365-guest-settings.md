@@ -19,12 +19,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: 8028258b1b5a7ec13c2a9c9e2e89e52756c97d38
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf0a85f43733ac90d55dde9ded38efd273a9c485
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202350"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660115"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -79,7 +79,7 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Permitir que los miembros del grupo de fuera de la organización tengan acceso al contenido del grupo|Activado|Si se establece en **Activado**, los invitados pueden acceder al contenido de los grupos; si se establece en **Desactivado**, no pueden hacerlo. Esta configuración debe establecerse en **Activado** para cualquier escenario en el que los invitados interactúen con grupos de Microsoft 365 o Teams.|
-|Permitir que los propietarios de grupos agreguen a usuarios ajenos a la organización a los grupos|Activado|Si está **Activado**, los propietarios de los grupos de Microsoft 365 o Teams pueden invitar a nuevos invitados al grupo. Si está **Desactivado**, los propietarios solo pueden invitar a los que ya están en el directorio.|
+|Permitir que los propietarios de grupos agreguen a usuarios ajenos a la organización a los grupos|Activado|Si está **activado**, los propietarios de los grupos de Microsoft 365 o Teams pueden invitar a nuevos invitados al grupo. Si está **desactivado**, no pueden hacerlo. Esta configuración debe estar **activada** para cualquier escenario en el que los invitados se vayan a agregar a los grupos.|
 
 Esta configuración se encuentra en el nivel de organización. Consulte [Crear configuración para un grupo específico](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) para obtener información sobre cómo cambiar esta configuración en el nivel de grupo mediante PowerShell.
 
