@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 212d6464fa471e848eb83d06004bdf2796dc0a64
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 799fc4d163b120b4197b6cd044efe4740e4a3cc7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217643"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941929"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Implementar Defender para punto de conexión en Linux con Chef
 
@@ -44,7 +44,7 @@ Después de crear el libro de recetas, cree una carpeta de archivos dentro de la
 mkdir mdatp/files
 ```
 
-Transfiera el archivo zip de incorporación de linux server que se puede descargar desde el portal de Centro de seguridad de Microsoft Defender a esta nueva carpeta de archivos.
+Transfiera el archivo zip de incorporación de linux server que se puede descargar desde el portal de Microsoft 365 Defender a esta nueva carpeta de archivos.
 
 En la estación de trabajo de Chef, vaya a la carpeta mdatp/recipes. Esta carpeta se crea cuando se generó el libro de recetas. Use el editor de texto preferido (como vi o nano) para agregar las siguientes instrucciones al final del archivo default.rb:
 

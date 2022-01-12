@@ -3,8 +3,8 @@ title: Recomendaciones de Microsoft para EOP y Defender para la configuración O
 keywords: Office 365 de seguridad, Marco de directivas de remitente, Informes y conformidad de mensajes basados en dominio, DomainKeys Identified Mail, pasos, cómo funciona, líneas base de seguridad, líneas base para EOP, líneas base para Defender para Office 365 , configurar Defender para Office 365 , configurar EOP, configurar Defender para Office 365 , configurar EOP, configuración de seguridad
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 ms.date: ''
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si quiere ser más estricto? ¿Y qué extras obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 194d255099b3847a648d083f925489abf0e22a49
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b2b894344362556200362d486853d56a2aed00b6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373685"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943117"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "61373685"
 
 **Exchange Online Protection (EOP)** es el núcleo de seguridad de las suscripciones de Microsoft 365 y ayuda a evitar que los correos electrónicos malintencionados lleguen a las bandejas de entrada de los empleados. Sin embargo, con ataques nuevos y más sofisticados que surgen cada día, a menudo se requieren protecciones mejoradas. **Microsoft Defender para Office 365** Plan 1 o Plan 2 contienen características adicionales que dan a los administradores más capas de seguridad, control e investigación.
 
-Aunque habilitamos a los administradores de seguridad para personalizar su configuración de seguridad, hay dos niveles de seguridad en EOP y Microsoft Defender para Office 365 que recomendamos: **Standard** y **Strict**. El entorno y las necesidades de cada cliente son diferentes, pero creemos que estos niveles de filtrado ayudarán a evitar que el correo no deseado llegue a la Bandeja de entrada de los empleados en la mayoría de las situaciones.
+Aunque habilitamos a los administradores de seguridad para personalizar su configuración de seguridad, hay dos niveles de seguridad en EOP y Microsoft Defender para Office 365 que recomendamos: **Standard** y **Strict**. Aunque los entornos y las necesidades de los clientes son diferentes, estos niveles de filtrado ayudarán a evitar que el correo no deseado llegue a la Bandeja de entrada de los empleados en la mayoría de las situaciones.
 
 Para aplicar automáticamente la configuración Estándar o Estricta a los usuarios, consulte [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
@@ -164,10 +164,10 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 |**Dirección de origen** <p> _CustomFromAddress_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Personalizar notificaciones para mensajes de remitentes internos**||||Esta configuración solo se usa si se selecciona Notificar a **remitentes** internos cuando los mensajes se ponen en cuarentena como malware o notificar a un administrador sobre los mensajes no entregados de **remitentes** internos.|
 |**Asunto** <p> _CustomInternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
-|**Mensaje** <p> _CustomInternalBody_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
+|**Message** <p> _CustomInternalBody_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |**Personalizar notificaciones para mensajes de remitentes externos**||||Esta configuración solo se usa si se selecciona Notificar a **remitentes externos** cuando los mensajes se ponen en cuarentena como malware o notificar a un administrador sobre los mensajes no entregados de **remitentes externos.**|
 |**Asunto** <p> _CustomExternalSubject_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
-|**Mensaje** <p> _CustomExternalBody_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
+|**Message** <p> _CustomExternalBody_|En blanco <p> `$null`|En blanco <p> `$null`|En blanco <p> `$null`||
 |
 
 ### <a name="eop-anti-phishing-policy-settings"></a>Configuración de directiva contra suplantación de identidad de EOP
@@ -178,7 +178,7 @@ Para obtener más información acerca de esta configuración, vea [Spoof setting
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Estándar|Estricto|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Protección contra & phishing**|||||
 |**Habilitar la inteligencia de suplantación** <p> _EnableSpoofIntelligence_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
@@ -231,7 +231,7 @@ Para obtener más información acerca de esta configuración, vea Configuración
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Protección contra & phishing**|||||
-|**Permitir a los usuarios proteger** (protección de usuario suplantada) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|No seleccionada <p> `$false` <p> ninguno|Seleccionado <p> `$true` <p> \<list of users\>|Seleccionado <p> `$true` <p> \<list of users\>|Se recomienda agregar usuarios (remitentes de mensajes) en roles clave. Internamente, los remitentes protegidos pueden ser su director general, director financiero y otros líderes sénior. Externamente, los remitentes protegidos podrían incluir miembros del consejo o su junta directiva.|
+|**Permitir a los usuarios proteger** (protección de usuario suplantada) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|No seleccionada <p> `$false` <p> ninguno|Seleccionado <p> `$true` <p> \<list of users\>|Seleccionado <p> `$true` <p> \<list of users\>|Se recomienda agregar usuarios (remitentes de mensajes) en roles clave. Internamente, los remitentes protegidos pueden ser su director general, director financiero y otros líderes sénior. Externamente, los remitentes protegidos podrían incluir miembros del consejo o su junta directiva. Las directivas de seguridad preestablecidas no se pueden modificar; deben deshabilitarse si desea agregar usuarios en roles clave como se sugiere.|
 |**Habilitar dominios para proteger** (protección de dominio suplantada)|No seleccionada|Seleccionado|Seleccionado||
 |**Incluir dominios de mi propiedad** <p> _EnableOrganizationDomainsProtection_|Desactivado <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |**Incluir dominios personalizados** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Desactivado <p> `$false` <p> ninguno|Seleccionado <p> `$true` <p> \<list of domains\>|Seleccionado <p> `$true` <p> \<list of domains\>|Se recomienda agregar dominios (dominios de remitente) que no posee, pero con los que interactúa con frecuencia.|
@@ -262,7 +262,7 @@ La configuración de suplantación de  dominio está interrelacionado, pero la c
 |**Protección contra & phishing**|||||
 |**Habilitar la inteligencia de suplantación** <p> _EnableSpoofIntelligence_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`||
 |**Acciones**|||||
-|**Si el mensaje se detecta como suplantación** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a remitentes suplantados que se [](learn-about-spoof-intelligence.md) bloquearon automáticamente, como se muestra en la información de inteligencia de suplantación de identidad o bloqueados manualmente en la lista de inquilinos permitidos [o bloqueados.](tenant-allow-block-list.md) <p> Si selecciona Poner en  cuarentena **el** mensaje, hay disponible un cuadro Aplicar directiva de cuarentena para seleccionar la directiva de cuarentena que define lo que los usuarios pueden hacer a los mensajes en cuarentena. Al crear una nueva directiva anti phishing, un valor en blanco significa que la directiva de cuarentena predeterminada se usa para definir las capacidades históricas de los mensajes en cuarentena suplantados (DefaultFullAccessPolicy). <p> Los administradores pueden crear y seleccionar una directiva de cuarentena personalizada que defina qué destinatarios pueden hacer con estos mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).|
+|**Si el mensaje se detecta como suplantación** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a remitentes suplantados que se [](learn-about-spoof-intelligence.md) bloquearon automáticamente, como se muestra en la información de inteligencia de suplantación de identidad o bloqueados manualmente en la lista de inquilinos permitidos [o bloqueados.](tenant-allow-block-list.md) <p> Si selecciona Poner en  cuarentena **el** mensaje, hay disponible un cuadro Aplicar directiva de cuarentena para seleccionar la directiva de cuarentena que define lo que los usuarios pueden hacer a los mensajes en cuarentena. Al crear una nueva directiva anti phishing, un valor en blanco significa que se usa la directiva de cuarentena predeterminada para definir las capacidades históricas de los mensajes en cuarentena de suplantación de identidad (DefaultFullAccessPolicy). <p> Los administradores pueden crear y seleccionar una directiva de cuarentena personalizada que defina qué destinatarios pueden hacer con estos mensajes en cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).|
 |**Mostrar el primer contacto consejo de seguridad** <p> _EnableFirstContactSafetyTips_|No seleccionada <p> `$false`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Para obtener más información, vea [First contact consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**Mostrar (?) para remitentes no autenticados para suplantación de identidad** <p> _EnableUnauthenticatedSender_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, vea [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 |**Mostrar etiqueta "via"** <p> _EnableViaTag_|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Seleccionado <p> `$true`|Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección De si es diferente del dominio en la firma DKIM o la **dirección MAIL FROM.** <p> Para obtener más información, vea [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|

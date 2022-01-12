@@ -23,14 +23,14 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 06413dc1d33136e5fa7fd23a0770f98bc6c6e408
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: d94cae13c4379061ce95b17d284e27d435cd9918
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646270"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942577"
 ---
-# <a name="microsoft-365-defender"></a>Microsoft 365 Defender
+# <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -108,7 +108,7 @@ Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilit
 - [Requisitos de licencia](prerequisites.md#licensing-requirements)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 
-## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender
+## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender incluye:
 
 El portal Microsoft 365 Defender combina protección, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">detección,</a> investigación y respuesta a las amenazas  de correo electrónico, colaboración,  *identidad,* dispositivo y aplicación, en un lugar central. 
 
@@ -201,6 +201,30 @@ Las tarjetas entran en estas categorías:
 - **Dispositivos:** obtenga información actualizada sobre alertas, actividad de infracción y otras amenazas en sus dispositivos.
 - **Aplicaciones:** obtenga información sobre cómo se usan las aplicaciones en la nube en su organización. [Obtenga más información sobre las aplicaciones detectadas en Defender para aplicaciones en la nube.](/cloud-app-security/discovered-apps)
 
+
+#### <a name="search-across-entities-preview"></a>Búsqueda entre entidades (versión preliminar)
+
+>[!IMPORTANT]
+> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+La barra de búsqueda se encuentra en la parte superior de la página. A medida que escribe, se proporcionan sugerencias para que sea más fácil encontrar entidades. La página de resultados de búsqueda mejorada centraliza los resultados de todas las entidades.
+
+Puede buscar en las siguientes entidades en Defender for Endpoint y Defender for Identity: 
+
+- **Dispositivos:** compatibles con Defender para Endpoint y Defender para Identity. Admite el uso de operadores de búsqueda. 
+- **Usuarios:** compatible con Defender for Endpoint, Defender for Identity y Defender for Cloud Apps. 
+- **Archivos, DIRECCIONES IP y direcciones URL:** las mismas capacidades que en Defender para endpoint.
+
+    >[!NOTE]
+    >Las búsquedas de DIRECCIONES IP y URL coinciden exactamente y no aparecen en la página de resultados de búsqueda: llevan directamente a la página de entidad. 
+
+- **TVM:** las mismas capacidades que en Defender for Endpoint (vulnerabilidades, software y recomendaciones). 
+
+ 
+
+
+
+
+
 ### <a name="threat-analytics-with-better-data-coverage"></a>Análisis de amenazas con mejor cobertura de datos
 
 Realice un seguimiento y responda a las amenazas emergentes con la Microsoft 365 Defender de análisis de amenazas integrada:
@@ -270,7 +294,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Novedades de Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Requerir que los trabajadores híbridos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: 586a4f1782cec2baf305b9e72cc3b4a4c732b7f3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dfcda3eb0f79003a3e09bbda9d3c53dff6ae2f8f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162079"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934830"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Paso 1. Aumentar la seguridad del inicio de sesión de los trabajadores híbridos con MFA
 
@@ -59,7 +59,7 @@ Las directivas de acceso condicional son un conjunto de reglas que especifican l
 
 Esta directiva le permite exigir MFA en función de la pertenencia a grupos, en lugar de intentar configurar cuentas de usuario individuales para MFA cuando se asignan o se quitan estos roles de administrador.
 
-También puede usar directivas de acceso condicionales para funciones más avanzadas, como requerir que el inicio de sesión se realice desde un dispositivo que cumpla las normativas, como su equipo portátil que ejecuta Windows 10.
+También puedes usar directivas de acceso condicional para funcionalidades más avanzadas, como requerir que el inicio de sesión se haga desde un dispositivo compatible, como el portátil que ejecuta Windows 11 o 10.
 
 El acceso condicional requiere licencias de Azure AD Premium P1, que se incluyen con Microsoft 365 E3 y E5.
 

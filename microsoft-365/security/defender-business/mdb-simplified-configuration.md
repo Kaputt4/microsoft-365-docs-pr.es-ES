@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e8cf2ae8e17898753be43c9e2160d8a473f8db8d
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 1771ca1bd4a3b941d7fbb22d4dfd14d56510c416
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508291"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940595"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business-preview"></a>Proceso de configuración simplificado en Microsoft Defender para empresas (versión preliminar)
 
@@ -64,6 +64,11 @@ En la tabla siguiente se describe cada experiencia:
 Defender para empresas (versión preliminar) está diseñado para proporcionar una protección segura y, al mismo tiempo, ahorrar tiempo y esfuerzo en la configuración de la configuración de seguridad. La experiencia optimizada en el portal Microsoft 365 Defender facilita la incorporación de dispositivos y su administración. Además, se incluyen directivas predeterminadas para que los dispositivos de la empresa estén protegidos tan pronto como se incorpore. Puede mantener la configuración predeterminada tal y como está o realizar cambios que se adapten a sus necesidades empresariales. También puedes agregar nuevas directivas para administrar dispositivos según sea necesario.
 
 ## <a name="next-steps"></a>Pasos siguientes
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 - [Configurar y configurar Microsoft Defender para empresas (versión preliminar)](mdb-setup-configuration.md)
 

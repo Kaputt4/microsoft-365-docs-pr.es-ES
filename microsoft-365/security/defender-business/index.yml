@@ -13,13 +13,13 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 12/13/2021
-  ms.openlocfilehash: cf805d8d05d9ca9fadc25c5ee49124020c386f68
-  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+  ms.date: 01/03/2022
+  ms.openlocfilehash: 702be8910e5d0201086de6f564a335e43af4ff7c
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/30/2021
-  ms.locfileid: "61643849"
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "61941365"
 landingContent:
 - title: Información general
   linkLists:
@@ -77,10 +77,8 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Ver y editar las directivas
-      url: mdb-view-edit-policies.md
-    - text: Crear una nueva directiva
-      url: mdb-create-new-policy.md
+    - text: Ver, editar y crear directivas
+      url: mdb-view-edit-create-policies.md
     - text: Crear grupos de dispositivos
       url: mdb-create-edit-device-groups.md
     - text: Administrar reglas para directivas de firewall
@@ -99,7 +97,7 @@ landingContent:
     links:
     - text: Cómo obtener ayuda o ponerse en contacto con el soporte técnico
       url: mdb-get-help.md
-    - text: Preguntas más frecuentes
+    - text: Preguntas frecuentes.
       url: mdb-faq.yml
     - text: Solución de problemas
       url: mdb-troubleshooting.yml

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.search: M365-security-compliance
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas con un caso de exhibición de documentos electrónicos principales en el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9f849c6a65fec83fc936876e1b024c4eeab1833
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 04d24020cd22d40d6706295ccb53578bf3aef756
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156455"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940955"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Ver estadísticas de resultados de búsqueda de exhibición de documentos electrónicos
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: babe21ec9026ac78849b86c8310b24a83bdf41c0
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 380e2ecb9ee8df7eb066eef600f796685215662f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531731"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941245"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 
@@ -90,7 +90,7 @@ Aprende a implementar Defender for Endpoint en Android en Portal de empresa de I
 
 2. Pulsa el icono de la aplicación Microsoft Defender para endpoint y sigue las instrucciones que aparecen en pantalla para completar la incorporación de la aplicación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de Android requeridos por Defender para Endpoint en Android.
 
-3. Tras la incorporación correcta, el dispositivo empezará a aparecer en la lista dispositivos de Centro de seguridad de Microsoft Defender.
+3. Tras la incorporación correcta, el dispositivo empezará a aparecer en la lista dispositivos del portal Microsoft 365 Defender dispositivos.
 
     :::image type="content" alt-text="Imagen del dispositivo en defender para el portal de punto de conexión." source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 

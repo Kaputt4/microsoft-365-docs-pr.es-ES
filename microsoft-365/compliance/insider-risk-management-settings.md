@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 4cfeeac136026d50d96dab71622df0b3622fbb3a
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: d43df547d3da290bc5a92475f3c13d799cad7a06
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241145"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941063"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -259,7 +259,7 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 | AlertType | El tipo de alerta es *Custom*.  |
 | AlertId | GUID de la alerta. Las alertas de administración de riesgos de Insider son mutables. A medida que cambia el estado de alerta, se genera un nuevo registro con el mismo AlertID. Este AlertID se puede usar para correlacionar las actualizaciones de una alerta. |
 | Categoría | La categoría de la alerta *es InsiderRiskManagement*. Esta categoría se puede usar para distinguir de estas alertas de otras alertas de seguridad & cumplimiento. |
-| Comentarios | Comentarios predeterminados para la alerta. Los valores *son Nueva alerta* (registrada cuando se crea una alerta) y Alerta *actualizada* (registrada cuando hay una actualización de una alerta). Use alertID para correlacionar las actualizaciones de una alerta. |
+| Comments | Comentarios predeterminados para la alerta. Los valores *son Nueva alerta* (registrada cuando se crea una alerta) y Alerta *actualizada* (registrada cuando hay una actualización de una alerta). Use alertID para correlacionar las actualizaciones de una alerta. |
 | Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal del usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
 | Nombre | Nombre de la directiva para la directiva de administración de riesgos insider que generó la alerta. |
 | PolicyId | GUID de la directiva de administración de riesgos insider que desencadenó la alerta. |
@@ -518,7 +518,7 @@ Según el número de usuarios asignados a grupos de roles de administración de 
 Los análisis de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Los exámenes de análisis ofrecen las siguientes ventajas para su organización:
 
 - Fácil de configurar: para empezar con los exámenes de análisis, puede seleccionar Ejecutar examen cuando se le pida la recomendación de análisis o ir a Configuración de riesgos de **Insider** Análisis y habilitar  >   análisis.
-- Requisitos mínimos de privacidad: los resultados y las perspectivas del examen se devuelven como actividad de usuario anonimizada, los revisores no identifican nombres de usuario individuales.
+- Privacidad por diseño: los resultados del examen y las perspectivas se devuelven como actividad de usuario agregada y anónima, los revisores no identifican los nombres de usuario individuales.
 - Comprender los posibles riesgos a través de información consolidada: los resultados del examen pueden ayudarle a identificar rápidamente las posibles áreas de riesgo para los usuarios y qué directiva sería mejor para ayudar a mitigar estos riesgos.
 
 Consulte el vídeo análisis de administración de riesgos de Insider para comprender cómo los análisis pueden ayudar a acelerar la identificación de posibles riesgos de [insider](https://www.youtube.com/watch?v=5c0P5MCXNXk) y ayudarle a tomar medidas rápidamente.

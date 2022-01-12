@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dc7f3a88f26ae738f3de718bd590933f44ed4906
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6abd2c26f8557277b4c1b13e5189a42fea9a60f1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167195"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943393"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>Incorporar dispositivos Windows mediante un script local
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
@@ -37,9 +37,11 @@ ms.locfileid: "61167195"
 También puedes incorporar manualmente dispositivos individuales a Defender para endpoint. Es posible que quieras hacerlo primero al probar el servicio antes de comprometerte a incorporar todos los dispositivos de la red.
 
 > [!IMPORTANT]
-> Este script se ha optimizado para su uso en hasta 10 dispositivos.
->
-> Para implementar a escala, use [otras opciones de implementación.](configure-endpoints.md) Por ejemplo, puedes implementar un script de incorporación en más de 10 dispositivos en producción con el script disponible en [Onboard Windows devices using Group Policy](configure-endpoints-gp.md).
+> Este script se ha optimizado para su uso en hasta diez dispositivos.
+> El scripting local es un método de incorporación especial para evaluar Microsoft Defender para endpoint.
+> La frecuencia de informes de datos se establece más alta que con otros métodos de incorporación al incorporar mediante un script local.
+> Esta configuración se usa con fines de evaluación y normalmente no se usa en implementaciones de producción. Por este motivo, hay preocupaciones sobre el impacto ambiental, por lo que se recomienda limitar el número de implementaciones mediante scripts locales a diez.
+> Si va a implementar en un entorno de producción como se describió anteriormente, [use](configure-endpoints.md) otras opciones de implementación como directiva de grupo o Microsoft Endpoint Configuration Manager.
 
 Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint. 
 

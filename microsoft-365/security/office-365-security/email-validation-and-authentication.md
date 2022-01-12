@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f358f6c20e6c4643a7a6aeb0ae3aae2513aad34
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c0e7bc2ddd620b454979418735fb6982b71501c3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212044"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934038"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
@@ -87,7 +87,7 @@ Depender solo de los registros de autenticación de correo electrónico para det
 
 Las autenticaciones compuestas pueden superar estas limitaciones pasando mensajes que, de otra forma, no superarían las comprobaciones de autenticación de correo electrónico.
 
-Para simplificar, los ejemplos siguientes se centran en los resultados de la autenticación de correo electrónico. Otros factores de inteligencia de back-end podrían identificar mensajes que pasan la autenticación de correo electrónico como suplantados o mensajes que la fallan como legítimos.
+Para simplificar, los ejemplos siguientes se centran en los resultados de la autenticación de correo electrónico. Otros factores de inteligencia de back-end podrían identificar mensajes que pasan la autenticación de correo electrónico como suplantados o mensajes que la pasan como legítimos.
 
 Por ejemplo, el dominio fabrikam.com no tiene registros SPF, DKIM o DMARC. Los mensajes de los remitentes del dominio fabrikam.com pueden producir un error en la autenticación compuesta (tenga en cuenta que el valor  y razón de `compauth`):
 

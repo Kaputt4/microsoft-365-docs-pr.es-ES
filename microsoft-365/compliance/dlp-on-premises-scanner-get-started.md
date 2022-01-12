@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: fabe83372822f401fdf8ddd1330bc974dc710fd2
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1154a565f286cfafb5f1f03fdefbf3740b6e9907
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787135"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942973"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local
 
@@ -46,13 +46,31 @@ Para más información sobre las licencias, vea: [Guía de licencias de Microsof
 
 ### <a name="permissions"></a>Permisos
 
-
 Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador de actividades](data-classification-activity-explorer.md). Hay cuatro roles que conceden permisos al explorador de actividad; la cuenta que use para acceder a los datos debe pertenecer a uno de ellos.
 
 - Administrador global
 - Administrador de cumplimiento
 - Administrador de seguridad
 - Administrador de datos de cumplimiento
+
+#### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+
+Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
+
+Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrador de Information Protection
+- Analista de Information Protection
+- Investigador de protección de información
+- Lector de protección de información
+
+Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protección de la información
+- Administradores de Information Protection
+- Analistas de Information Protection
+- Investigadores de Information Protection
+- Lectores de Information Protection
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Requisitos previos del examinador de DLP en el entorno local
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b3fa261f78f06089ebf110d0c20a3cd685ab3279
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e3633468ac6d730ff380efcd59c0e4e70065c4c5
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937057"
+ms.locfileid: "61993304"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para Administración de amenazas y vulnerabilidades
 
@@ -57,7 +57,7 @@ Windows Server 2016|Sí|Sí|Sí|Sí|Sí
 Windows Server 2019|Sí|Sí|Sí|Sí|Sí
 Windows Server 2022|Sí|Sí|Sí|Sí|Sí
 macOS 10.14 "Mojave" y superior|Sí|Sí|Sí|Sí|Sí 
-Red Hat Enterprise Linux 7.2 o posterior ( \* Vea el aviso "Importante" a continuación)|Sí|Sí|Sí|Sí|Sí
+Red Hat Enterprise Linux 7.2 o posterior, incluidas las versiones de EUS que coincidan ( Vea \* el aviso "Importante" a continuación)|Sí|Sí|Sí|Sí|Sí
 CentOS 7.2 o superior|Sí|Sí|Sí|Sí|Sí
 Ubuntu 16,04 LTS o superior LTS|Sí|Sí|Sí|Sí|Sí
 Oracle Linux 7.2 o posterior|Sí|Sí|Sí|Sí|Sí

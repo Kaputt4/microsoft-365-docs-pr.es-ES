@@ -19,21 +19,23 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 3bfdca63325516394c78626899c6b83e3f3f0e20
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: e38de9e864fa063e3e56dc99c1d9c671b6409023
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914373"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940931"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Con Microsoft 365 Defender, cuando [se](m365d-autoir.md) ejecuta una investigación automatizada, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los [permisos](m365d-action-center.md#required-permissions-for-action-center-tasks)necesarios, puede ver esos detalles en una vista de detalles de investigación que le proporciona el estado actualizado y la capacidad de aprobar cualquier acción pendiente. 
 
@@ -41,9 +43,9 @@ Con Microsoft 365 Defender, cuando [se](m365d-autoir.md) ejecuta una investigaci
 
 La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para endpoint y Microsoft Defender [para Office 365](../office-365-security/defender-for-office-365.md). Para acceder a la página de investigación unificada, seleccione el vínculo en el banner amarillo que verá en:
 
-- Cualquier página de investigación en el Centro Office 365 seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) )
-- Cualquier página de investigación del Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Cualquier incidente o experiencia del Centro de acciones en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Cualquier página de investigación en el Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">de Office 365 seguridad & cumplimiento</a>
+- Cualquier página de investigación en el Microsoft 365 Defender web ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Cualquier incidente o experiencia del Centro de acción <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en el portal Microsoft 365 Defender acción</a>
 
 ## <a name="open-the-investigation-details-view"></a>Abrir la vista de detalles de la investigación
 
@@ -59,7 +61,7 @@ El Centro [de acción](m365d-action-center.md) mejorado ( ) reúne acciones de c
 > [!TIP]
 > Debe tener [ciertos permisos para](m365d-action-center.md#required-permissions-for-action-center-tasks) aprobar, rechazar o deshacer acciones.
 
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal e</a> inicie sesión. 
 
 2. En el panel de navegación, elija **Centro de actividades**. 
 
@@ -75,7 +77,7 @@ El Centro [de acción](m365d-action-center.md) mejorado ( ) reúne acciones de c
 
 Use una página de detalles de un incidente para ver información detallada sobre un incidente, incluidas las alertas que contenían información acerca de cualquier dispositivo, cuenta de usuario o buzón que les afecten.
 
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal e</a> inicie sesión. 
 
 2. En el panel de navegación, elija **Incidentes &**  >  **alertas incidentes**. 
 
@@ -103,7 +105,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 | Pestaña | Descripción |
 |:--------|:--------|
 | **Gráfico de investigación** | Proporciona una representación visual de la investigación. Muestra una lista de las entidades y enumera las amenazas encontradas, junto con las alertas y si hay acciones pendientes de aprobación.<br/>Puede seleccionar un elemento en el gráfico para ver más detalles. Por ejemplo, al seleccionar el icono  **Evidencia,** te llevará a la pestaña Evidencia, donde puedes ver las entidades detectadas y sus veredictos. |
-| **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Microsoft Cloud App Security y otras características Microsoft 365 Defender usuario.|
+| **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Microsoft Defender para aplicaciones en la nube y otras características Microsoft 365 Defender usuario.|
 | **Devices** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden [al nivel de automatización de los grupos de dispositivos](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)).) |
 | **Buzones** |Enumera los buzones que se verán afectados por las amenazas detectadas.  |
 | **Users**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
@@ -112,7 +114,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |**Log** | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Historial de acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver y aprobar acciones de corrección](m365d-autoir-actions.md)
 - [Más información sobre las acciones de corrección](m365d-remediation-actions.md)

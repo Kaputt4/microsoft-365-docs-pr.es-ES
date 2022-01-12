@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b77f5e62a56cc2c8ced2fcc24bcb973857df696f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ba5bc05010aaf2ee14f16f7b57f140f063dcc50b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166883"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941137"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -29,7 +29,7 @@ ms.locfileid: "61166883"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -152,7 +152,7 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
 
   - name: Add Microsoft apt repository for MDATP
     apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/[distro]/[version]/prod [channel] main
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
       update_cache: yes
       state: present
       filename: microsoft-[channel]
@@ -281,5 +281,5 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 - [Administrar paquetes aptos](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Ver también
 - [Investigar problemas de estado del agente](health-status.md)

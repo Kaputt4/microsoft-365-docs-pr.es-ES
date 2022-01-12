@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilice los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores híbridos.
-ms.openlocfilehash: cfa2c8fa8725e96326faac4cbe4b83cd1b039641
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e1a5c277f9b5f06313fc924756dc72dbf47fad78
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110288"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934723"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Paso 3: implementar la seguridad y el cumplimiento de la normativa para los trabajadores híbridos
 
@@ -34,7 +34,7 @@ El trabajo remoto necesita los siguientes elementos de seguridad y cumplimiento:
 
 - Acceso controlado a las aplicaciones de productividad que utilizan los trabajadores híbridos, como Microsoft Teams
 - Acceso controlado y protección de los datos que los trabajadores híbridos crean y utilizan, como conversaciones de chat o archivos compartidos
-- Protección de dispositivos con Windows 10 contra malware y otros tipos de ataques cibernéticos.
+- Protección de dispositivos Windows 11 o 10 contra malware y otros tipos de ciberataques
 - Protección del correo electrónico, los archivos y el sitio con un etiquetado consistente con los niveles de confidencialidad y protección.
 - Prevención del filtrado de información
 - Cumplimiento de las regulaciones de datos regionales
@@ -87,7 +87,7 @@ Para sus trabajadores híbridos, ha implementado:
 
 - Seguridad
   - Acceso controlado a las aplicaciones y los datos que los trabajadores híbridos utilizan para comunicarse y colaborar
-  - Protección contra malware para datos de servicios en la nube, correo electrónico y dispositivos con Windows 10.
+  - Protección contra malware para datos de servicio en la nube, correo electrónico y dispositivos Windows 11 o 10
 - Cumplimiento
   - Etiquetado consistente para niveles de sensibilidad y protección
   - Políticas para prevenir la filtración de información

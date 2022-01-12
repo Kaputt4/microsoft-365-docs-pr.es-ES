@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/16/2021
+ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 264196cab7669b7c64a44a5be879e454d60685f0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ccadbb21de4e86de9bc030252cc8e54cdaa0b685
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168335"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942069"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Incorporar dispositivos Windows mediante directiva de grupo 
 
@@ -32,7 +32,7 @@ ms.locfileid: "61168335"
 **Se aplica a:**
 
 - Directiva de grupo
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
@@ -171,7 +171,7 @@ Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Attack Surface Reduction
 
-Obtener la lista actual de GUID de reducción de superficie de ataque de [Personalizar reglas de reducción de superficie de ataque](customize-attack-surface-reduction.md)
+Obtener la lista actual de GUID de reducción de superficie de ataque de [la fase 3](attack-surface-reduction-rules-deployment-phase-3.md) de implementación de reglas de reducción de superficie de ataque: implementar
 
 1. Abre la **directiva Configurar reducción de superficie de ataque.**
 
@@ -185,9 +185,9 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
    ![Imagen de configuración de reducción de superficie de ataque.](images/asr-guid.png)
 
-Policy|Configuración
----|---
-Configurar acceso controlado a carpetas| Habilitado, modo auditoría
+Policy|Ubicación|Configuración
+---|---|---
+Configurar acceso controlado a carpetas| \Windows Components\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Controlled Folder Access| Habilitado, modo auditoría
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
 
@@ -268,6 +268,8 @@ Crea una nueva directiva de grupo o agrupa esta configuración con las otras dir
 
 Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \>  \> **Antivirus de Microsoft Defender** Protección en \> **tiempo real**.
 
+ Dado que el valor de "Examinar archivos entrantes y salientes" (predeterminado) es 0, la directiva de grupo de "Configurar la supervisión de la actividad de programa y archivo entrante y saliente" para la configuración "bidireccional (acceso completo)" cambia a deshabilitada.
+
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurar la supervisión de la actividad de archivos salientes entrantes.":::
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>Configurar Windows Defender smartscreen
@@ -302,7 +304,7 @@ Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** adminis
 
 ### <a name="check-for-signature-update"></a>Buscar la actualización de firmas
 
-Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \> **Antivirus de Microsoft Defender** de \>  \> **firma**
+Vaya a **Directivas de configuración del** equipo \>  \> **Plantillas** administrativas Windows componentes \> **Antivirus de Microsoft Defender** actualizaciones \> **de** inteligencia de \> **seguridad**.
 
 :::image type="content" source="images/signature-update-1.png" alt-text="actualización de firma.":::
 

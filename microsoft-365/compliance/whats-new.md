@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 13221dbe9abcb4a7f40391f14232950c7561b87a
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: dd85c6c9875fc6e5cf596a4decffdd4fe97d7c4e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586154"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940943"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -40,6 +40,35 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365,](m
 > - [Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Y visite la [guía básica](https://www.microsoft.com/microsoft-365/roadmap) de Microsoft 365 para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se cancelaron o se publicaron anteriormente.
+
+## <a name="december-2021"></a>Diciembre de 2021
+
+### <a name="compliance-and-service-assurance"></a>Cumplimiento y garantía de servicio
+
+- [Azure, Dynamics 365](/compliance/regulatory/gdpr-breach-notification) y Windows notificación de infracción en el RGPD: se actualiza para aclarar que los clientes no necesitan usar un servicio de pago como Defender para la nube para recibir notificaciones de seguridad y privacidad
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams:](teams-workflow-in-advanced-ediscovery.md#reference-guide) se actualiza con una nueva guía de referencia rápida descargable para administrar Teams contenido en Advanced eDiscovery
+
+### <a name="information-governance"></a>Información de gobierno
+
+- [Habilitar buzones de archivo en el centro de cumplimiento:](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) sección agregada sobre la nueva herramienta de diagnóstico para buzones de archivo
+- [Usar la carga de red para importar los archivos PST](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) de la organización a Microsoft 365: la importación de PST ahora es compatible con AzCopy v10
+- [Restaurar un buzón inactivo:](restore-an-inactive-mailbox.md) procedimiento revisado para restaurar un buzón inactivo agregando primero LegacyExchangeDN de buzón inactivo al buzón de destino
+
+### <a name="information-protection"></a>Protección de la información
+
+- [Implementar una solución de MIP:](information-protection-solution.md) nueva guía paso a paso para los clientes que buscan una guía básica prescriptiva para implementar Microsoft Information Protection (MIP)
+
+### <a name="retention-and-records-management"></a>Administración de registros y retención
+
+- Nueva guía sobre [cuánto tiempo se tarda en que las directivas de retención entren en vigor](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- Nueva configuración de inquilino: una configuración de administración de registros que impide la edición de propiedades de elementos etiquetados SharePoint marcados como registro y bloqueados, y otra configuración para impedir que los usuarios desbloqueen elementos marcados como registro
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- El etiquetado obligatorio y una etiqueta predeterminada para Power BI están disponibles por lo general (GA)
 
 ## <a name="november-2021"></a>Noviembre de 2021
 
@@ -311,29 +340,3 @@ Se agregaron las páginas siguientes:
 - El etiquetado obligatorio ahora se extiende a [Power BI (en versión preliminar)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
 - Para [la co-autoría de]( sensitivity-labels-coauthoring.md)archivos cifrados con etiquetas de confidencialidad: Implementar la compatibilidad con directivas DLP que usan etiquetas de confidencialidad como condiciones y datos adjuntos no cifrados para correos electrónicos
 - Los eventos de auditoría para Outlook ya están disponibles para macOS, iOS y Android, y se están implementando para Outlook en la Web
-
-## <a name="june-2021"></a>Junio de 2021
-
-### <a name="customer-key"></a>Clave de cliente
-
-- [Cifrado de servicio con clave de cliente](customer-key-overview.md) (los DEP de nivel de inquilino de clave de cliente ahora cifran la configuración de etiquetas de confidencialidad Microsoft Information Protection).
-
-### <a name="data-connectors"></a>Conectores de datos
-
-- Hemos lanzado 17 nuevos conectores de datos en asociación con [17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) y un nuevo conector en asociación [con CellTrust](archiving-third-party-data.md#celltrust-data-connectors). También hemos lanzado conectores de datos adicionales en asociación con [Veritas](archiving-third-party-data.md#veritas-data-connectors) y [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors). Hasta la fecha, esto hace que un total de 65 conectores de datos disponibles importen y archiven datos de terceros en Microsoft 365.
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [Consultar y filtrar contenido en](review-set-search.md) un conjunto de opiniones (nueva funcionalidad de consulta y filtrado en un nuevo formato de experiencia de usuario para filtrar y buscar contenido en un conjunto de opiniones)
-- Etiquetar documentos en un conjunto de revisión de [Advanced eDiscovery](tagging-documents.md) (nueva funcionalidad de etiqueta y experiencia de usuario para hacer que los documentos de etiquetado en un conjunto de revisión sean más rápidos y fáciles; incluye nueva capacidad de etiquetar documentos mediante una consulta y usar filtros para buscar o excluir rápidamente elementos del conjunto de revisión en función de cómo se etiqueta un elemento)
-- Configurar [límites](set-up-compliance-boundaries.md) de cumplimiento para investigaciones de exhibición de documentos electrónicos (Microsoft ha quitado el requisito de ponerse en contacto con el soporte técnico de MS para solicitar que un atributo de cumplimiento esté sincronizado con cuentas de OneDrive; ahora se usa un filtro de permisos de búsqueda de buzones para aplicar los límites de cumplimiento para OneDrive)
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- El Asistente para directivas de etiquetas de confidencialidad ahora admite Outlook [opciones](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) específicas para la etiqueta predeterminada y el etiquetado obligatorio como una configuración más sencilla que la configuración avanzada de PowerShell (aún compatible).
-- Ahora se [está implementando](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) la compatibilidad con marcas dinámicas con variables para Word, Excel y PowerPoint en la Web
-- Para [las directivas de etiquetado](apply-sensitivity-label-automatically.md) automático para Exchange, si la etiqueta está configurada para el cifrado, ese cifrado no se aplica. Además, para Exchange directivas de etiquetado automático, ahora puede configurar excepciones y las siguientes condiciones nuevas: asunto, dirección de destinatario o dirección del remitente coinciden con patrones; la dirección del destinatario contiene palabras; el dominio del remitente es, el destinatario es miembro; el remitente es.
-- Al usar etiquetas de confidencialidad con equipos, grupos y sitios, puede usar Set-SPOTenant con el parámetro BlockSendLabelMismatchEmail para evitar que el correo electrónico generado automáticamente cuando se registra el evento de auditoría Desajuste de confidencialidad del documento detectado.   Para obtener más información, vea [Auditing sensitivity label activities](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities).
-- La [configuración del contexto de autenticación](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) ahora se ha implantado completamente en la vista previa de las etiquetas de confidencialidad. Además, esta configuración ahora es compatible con Microsoft Teams.
-- Los archivos etiquetados y cifrados por un nombre de principio de servicio (como Microsoft Cloud App Security) y luego cargados en SharePoint y OneDrive ahora se pueden abrir en Office para la Web cuando haya habilitado etiquetas de confidencialidad para archivos Office en [ SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-- La [co-autoría](sensitivity-labels-coauthoring.md) y autoguardado ya no se restringen a los inquilinos de prueba y ahora se admiten en producción cuando se usa la versión 2105: 18 de junio para Windows y versión 16.50+ para macOS. Ten en cuenta que esta característica aún no es compatible con iOS y Android y permanece en versión preliminar.

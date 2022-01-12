@@ -9,18 +9,18 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/18/2021
+ms.date: 01/10/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 210d2e4ff5864607a39297f08c505c491b8580b1
-ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
+ms.openlocfilehash: f4b3ef5cb8e923e3bd522c80d78e64c7be8b79de
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61597584"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941185"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activar la protección en la nube en Antivirus de Microsoft Defender
 
@@ -137,16 +137,14 @@ Para obtener más información acerca de los parámetros [permitidos, vea Window
 
 1. Abra la aplicación Seguridad de Windows mediante la selección del icono de escudo en la barra de tareas o mediante la búsqueda en el menú inicio para **Seguridad de Windows**.
 
-2. Seleccione el **icono Protección contra &** virus (o el icono de escudo de la barra de menús izquierda) y, a continuación, la etiqueta & **de** protección contra amenazas:
+2. Seleccione el **icono Protección contra &** virus (o el icono escudo de la barra de menús izquierda) y, a continuación, en Configuración de protección contra **&** virus, seleccione Administrar **configuración**.
 
-    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Captura de pantalla de la configuración de protección contra & virus":::
-
-3. Confirme que **la protección basada en la nube y** el **envío** automático de muestras se cambien a **On**.
+3. Confirme que **la protección basada en la nube y** el **envío** automático de muestras están cambiados a **On**.
 
    > [!NOTE]
    > Si el envío de ejemplo automático se ha configurado con la directiva de grupo, la configuración será gris y no estará disponible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Usar la protección en la nube de Microsoft en Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 

@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6fcb95a0a0f784a73de823c55d0a830a7faf1a9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 69e4df29817675918873e4d13b81bfe5b00b1219
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370697"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942781"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Administrar Microsoft Defender para el plan de extremo 1
 
@@ -55,6 +55,6 @@ Un falso positivo es un artefacto, como un archivo o un proceso, que se detectó
 
 Si está viendo falsos positivos/negativos en Defender para endpoint, consulte [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Vea las novedades de Microsoft Defender para endpoint](whats-new-in-microsoft-defender-endpoint.md)

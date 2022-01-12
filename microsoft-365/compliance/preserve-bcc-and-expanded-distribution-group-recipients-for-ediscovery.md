@@ -7,21 +7,21 @@ author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place de retención, retención por juicio y directivas de retención Microsoft 365 permiten conservar el contenido del buzón para cumplir los requisitos de cumplimiento normativo y exhibición de documentos electrónicos.
-ms.openlocfilehash: f034129400a47e9b72f0883ce368ecea657851a5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c157f2fb0b74e679bf1252b6f24208b77a657d8c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175136"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942169"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos
   
-Las retenciones por juicio, [](./retention.md) las retenciones de exhibición de documentos electrónicos y las directivas de retención Microsoft 365 (creadas en el Centro de cumplimiento de Microsoft 365) permiten conservar el contenido del buzón para cumplir los requisitos de cumplimiento normativo y exhibición de documentos electrónicos. La información sobre los destinatarios directamente dirigidos en los campos Para y Cc de un mensaje se incluye en todos los mensajes de forma predeterminada. Pero su organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Incluye lo siguiente:
+Las retenciones por juicio, [](./retention.md) las retenciones de exhibición de documentos electrónicos y las directivas de retención Microsoft 365 (creadas en el Centro de cumplimiento de Microsoft 365) permiten conservar el contenido del buzón para cumplir los requisitos de cumplimiento normativo y exhibición de documentos electrónicos. La información sobre los destinatarios directamente dirigidos en los campos Para y Cc de un mensaje se incluye en todos los mensajes de forma predeterminada. Pero su organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Esto incluye lo siguiente:
   
 - **Destinatarios dirigidos mediante el campo CCO de un mensaje:** Los destinatarios CCO se almacenan en el mensaje en el buzón del remitente, pero no se incluyen en los encabezados del mensaje entregado a los destinatarios. 
     
@@ -68,7 +68,7 @@ Escenario 2: Bob le envía un correo electrónico a John (Para/CC) y Jack (CCO d
 |Buzón de correo de Jack  <br/> |To/Cc:John (directamente o mediante grupo de distribución)  <br/> |Sí  <br/> |La información de Para/CC se incluye en el mensaje que se entrega a todos los destinatarios.  <br/> |
 |Buzón de correo de Jack  <br/> |Bcc:Jack (directamente o mediante grupo de distribución)  <br/> |No  <br/> |La información de CCO no se almacena en el mensaje que se entrega a los destinatarios. Debe buscar en el buzón de correo del remitente.  <br/> |
    
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
  **P. ¿Cuándo y dónde se almacena la información de destinatarios CCO?**
   
@@ -84,7 +84,7 @@ R. No. Esta información no se incluye en los encabezados del mensaje y no está
   
  **Q. ¿Cómo puedo asegurarme de que los destinatarios de grupos de distribución expandido siempre se conservan?**
   
-A. Para asegurarse de que los miembros del grupo de distribución expandido siempre se conservan con un [mensaje,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) coloque todos los buzones en espera o cree una directiva de retención Microsoft 365 organización. 
+R. Para asegurarse de que los miembros del grupo de distribución expandido siempre se conservan con un [mensaje,](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) coloque todos los buzones en espera o cree una directiva de retención Microsoft 365 organización. 
   
  **P. ¿Qué tipos de grupos se admiten?**
   

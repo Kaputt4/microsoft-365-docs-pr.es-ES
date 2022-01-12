@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 459a72d7d6e8686dfa5ec1241808c21d9b8a4cfd
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9c1eb0e7ba8f1c9388dd61f5e3433e47f9cd0cf4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372713"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940643"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -49,7 +49,7 @@ Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en l
 Para aplicar etiquetas de confidencialidad, los usuarios tienen que haber iniciado sesión en Microsoft 365 con su cuenta profesional o educativa.
 
 > [!NOTE]
-> Para espacios empresariales de la Administración gubernamental de EE. UU., las etiquetas de confidencialidad ahora son compatibles con todas las plataformas.
+> Para espacios empresariales de la Administración gubernamental de los EE. UU., las etiquetas de confidencialidad son compatibles con todas las plataformas.
 >
 > Si usa el escáner y el cliente de etiquetas unificadas de Azure Information Protection, consulte la [Descripción del servicio de Administración Pública de Azure Information Protection Premium](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 

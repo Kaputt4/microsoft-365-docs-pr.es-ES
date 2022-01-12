@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 75abd493e0ec2b80e4ff454ddec39f78169d01d9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7008b78ae5b01925e97143841b453a2c5c573fcc
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110420"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941075"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Piloto de Microsoft Defender para punto de conexión
 
@@ -83,7 +81,7 @@ Para ejecutar cualquiera de las simulaciones proporcionadas, necesita al menos [
 > [!NOTE]
 > Los archivos de simulación o scripts imitan la actividad de ataque, pero en realidad son benignos y no dañan ni comprometen el dispositivo de prueba.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 [Evaluar Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-overview.md)
 
 Vuelva a la introducción a [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)

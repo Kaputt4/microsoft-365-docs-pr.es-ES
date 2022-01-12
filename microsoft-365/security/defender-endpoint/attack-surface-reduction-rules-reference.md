@@ -16,12 +16,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 64dbfb4c569c6ae388c0149789ead38ceddad0f4
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: a0e69e73da4e8ea7d4935b86af109cd8fef032a3
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566500"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993280"
 ---
 # <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
@@ -84,25 +84,25 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 > - A menos que se indique lo contrario, la compilación mínima Windows 10 es la &nbsp; versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es &nbsp; la versión 1809 o posterior.
 >
 
-|Nombre de regla|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; server|Windows Server &nbsp; 2016|Windows Server &nbsp; 2012 R2|
-|---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Versión Y 1803 (canal semianual) o posterior |  |  |
-|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v  <br><br> |  |  |
-|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v | v <br><br> |  |  |
-|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |  |  |
-|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | v | v <br><br> | v <br><br> |  |  |
-|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |  |  |
-|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | v | v <br><br> | v <br><br> |  |  |
-|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | v <br><br> | v <br><br> |  |  |
-|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v <br><br> | v <br><br> |  |  |
-|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v <br><br> | v <br><br> |  |  |
-|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v <br><br> | v <br><br> |  |  |
-|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_No se admiten exclusiones de archivos y carpetas._ | Versión Y 1903 (compilación 18362) o posterior| v | v <br><br> versión 1903 (compilación 18362) o posterior |  |  |
-|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Versión Y 1803 o posterior | v <br><br> | v <br><br>  |  |  |
-|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v <br><br> | v <br><br> |  |  |
-|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |  |  |
-|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |  |  |
-| **Nombre de la regla** |  **Windows &nbsp; 10** | **Windows &nbsp; Server 2019** | **Windows &nbsp; server** | **Windows Server &nbsp; 2016** | **Windows Server &nbsp; 2012 R2** |
+|Nombre de regla|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; server|
+|---|:---:|:---:|:---:|
+|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Versión Y 1803 (canal semianual) o posterior | 
+|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v  <br><br> |
+|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v | v <br><br> |
+|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |
+|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | v | v <br><br> | v <br><br> |
+|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |
+|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | v | v <br><br> | v <br><br> |
+|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | v <br><br> | v <br><br> |
+|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v <br><br> | v <br><br> |
+|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v <br><br> | v <br><br> |
+|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v <br><br> | v <br><br> |
+|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_No se admiten exclusiones de archivos y carpetas._ | Versión Y 1903 (compilación 18362) o posterior| v | v <br><br> versión 1903 (compilación 18362) o posterior |
+|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Versión Y 1803 o posterior | v <br><br> | v <br><br>  |
+|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v <br><br> | v <br><br> |
+|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |
+|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |
+|  |  |  |  |
 
 ## <a name="supported-configuration-management-systems"></a>Sistemas de administración de configuración compatibles
 
@@ -126,6 +126,7 @@ Los vínculos a información sobre las versiones del sistema de administración 
 |[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v |   |v <br><br> CB 1802  | v  | v  |
 |[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | v |   | v <br><br> CB 1710  | v  |  v |
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | v |   | v <br><br> CB 1802 | v  | v  |
+|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) Puede configurar reglas de reducción de superficie de ataque por regla mediante el GUID de cualquier regla.
 

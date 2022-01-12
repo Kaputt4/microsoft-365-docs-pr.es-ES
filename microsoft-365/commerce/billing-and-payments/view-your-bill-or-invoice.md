@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 07/31/2020
-ms.openlocfilehash: bbede67dd093ad726933f25b7774b63e587dd24a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0bbcb8ac5a1b12ae781636753c734a1009dbc9ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371261"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941377"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -100,10 +100,19 @@ Puede elegir recibir una copia del extracto de facturación como datos adjuntos 
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>Cómo recibir el extracto de facturación por correo electrónico
 
+::: moniker range="o365-worldwide"
+
 1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
-    - Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notificaciones de facturación</a>.
-    - Si usa Office 365 ofrecido por 21Vianet, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notificaciones de facturación</a>.
-1. En **¿Recibir extracto de facturación como datos adjuntos de correo electrónico?**, cambie el botón de alternancia a **Activado**.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notificaciones de facturación</a>.
+    
+::: moniker-end
+
+2. En **¿Recibir extracto de facturación como datos adjuntos de correo electrónico?**, cambie el botón de alternancia a **Activado**.
 
     Puede dejar de recibir los correos electrónicos con el extracto de facturación en cualquier momento. Para ello, deberá cambiar el botón de alternancia a **Desactivado**.
 

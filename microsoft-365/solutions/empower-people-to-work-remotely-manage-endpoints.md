@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: 6033ee8f84d72aa8cfb163dc41ef03e427226790
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3d4a46a3513078b904afbe2b4f09642f338c8a81
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199302"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939430"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para sus dispositivos, PCs y otros puntos de conexión
 
@@ -40,7 +40,7 @@ Microsoft Intune es un servicio basado en la nube que se centra en la administra
 
 - **MAM:** Es posible que los trabajadores remotos no quieran que usted tenga el control total de sus dispositivos personales, conocidos también como dispositivos Bring Your Own Device (BYOD). Puede dar opciones a sus trabajadores remotos y seguir protegiendo a su organización. Por ejemplo, los trabajadores remotos pueden inscribir sus dispositivos si quieren tener acceso completo a los recursos de su organización. O bien, si estos usuarios solo quieren tener acceso al correo electrónico o a Microsoft Teams, entonces use las directivas de protección de aplicaciones que requieren la autenticación multifactor (MFA) para usar estas aplicaciones.
 
-Para obtener más información, vea esta [introducción a Microsoft Intune](/intune/fundamentals/what-is-intune).
+Para obtener más información, consulte la solución básica [Administrar puntos de conexión con Intune y Microsoft 365](manage-devices-with-intune-overview.md).
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
@@ -56,11 +56,11 @@ La administración conjunta usa las características en la nube basadas en Intun
 
 Para obtener más información, vea esta [introducción a la administración conjunta](/mem/configmgr/comanage/overview).
 
-## <a name="desktop-analytics"></a>Análisis de escritorio
+## <a name="endpoint-analytics"></a>Análisis de puntos de conexión
 
-Análisis de escritorio es un servicio basado en la nube que se integra con Configuration Manager y proporciona información e inteligencia que permiten fundamentar la toma de decisiones con respecto a los clientes de Windows. Combina datos de la organización con datos agregados de millones de dispositivos conectados a los servicios en la nube de Microsoft. 
+Análisis de puntos de conexión es un servicio basado en la nube que se integra con Configuration Manager y proporciona información e inteligencia que permiten fundamentar la toma de decisiones con respecto a los clientes de Windows. Combina datos de la organización con datos agregados de millones de dispositivos conectados a los servicios en la nube de Microsoft. 
 
-Con el análisis de escritorio, puede:
+Con Análisis de puntos de conexión, puede:
 
 - Crear un inventario de las aplicaciones que se ejecutan en la organización.
 - Evaluar la compatibilidad de aplicaciones con las últimas actualizaciones de características de Windows 10.
@@ -68,7 +68,7 @@ Con el análisis de escritorio, puede:
 - Crear grupos piloto que representen toda la aplicación y el estado del controlador a través de un conjunto mínimo de dispositivos.
 - Implementar Windows 10 en los dispositivos de prueba piloto y en producción.
 
-Para obtener más información, vea esta [introducción a Análisis de escritorio](/mem/configmgr/desktop-analytics/overview).
+Para más información, consulte esta [Información general sobre Análisis de puntos de conexión](/mem/configmgr/desktop-analytics/overview)
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

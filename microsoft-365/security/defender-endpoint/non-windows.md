@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73d814c36db44ad22d0a998c6539472095feb7e3
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: c8887f9e26c53d57aa49ec6fb65733cac6e562a9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530236"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942721"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender para punto de conexión para plataformas que no sean de Windows
 
@@ -38,7 +38,7 @@ Microsoft ha estado en un viaje para ampliar sus capacidades de seguridad de pun
 
 Las organizaciones enfrentan amenazas en una variedad de plataformas y dispositivos. Nuestros equipos se han comprometido a crear soluciones de seguridad no solo para *Microsoft,* sino también para *que* nuestros clientes puedan proteger y proteger sus entornos heterogéneos. Escuchamos los comentarios de los clientes y nos asociamos estrechamente con nuestros clientes para crear soluciones que satisfagan sus necesidades.
 
-Con Microsoft Defender para endpoint, los clientes se benefician de una vista unificada de todas las amenazas y alertas de Centro de seguridad de Microsoft Defender, en plataformas Windows y no Windows, lo que les permite obtener una visión completa de lo que sucede en su entorno, lo que les permite evaluar y responder más rápidamente a las amenazas.
+Con Microsoft Defender para endpoint, los clientes se benefician de una vista unificada de todas las amenazas y alertas en el portal de Microsoft 365 Defender, en plataformas Windows y que no son de Windows, lo que les permite obtener una visión completa de lo que sucede en su entorno, lo que les permite evaluar y responder más rápidamente a las amenazas.
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender para punto de conexión en macOS
 
@@ -55,7 +55,7 @@ Para obtener más información sobre cómo empezar, visite la documentación de 
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
-Microsoft Defender para Endpoint en Linux ofrece funcionalidades de prevención (AV), detección y respuesta de puntos de conexión (EDR) y administración de vulnerabilidades para servidores Linux. Esto incluye una experiencia completa de línea de comandos para configurar y administrar el agente, iniciar exámenes y administrar amenazas. Se admiten versiones recientes de las seis distribuciones más comunes de Linux Server: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS o superior LTS, SLES 12+, Debian 9+y Oracle Linux 7.2. Microsoft Defender para Endpoint en Linux se puede implementar y configurar con Puppet, Ansible o con la herramienta de administración de configuración de Linux existente. Para obtener información sobre las características y ventajas clave, lea nuestros [anuncios](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux).
+Microsoft Defender para Endpoint en Linux ofrece antivirus preventivo (AV), detección y respuesta de puntos de conexión (EDR) y administración de vulnerabilidades funcionalidades para servidores Linux. Esto incluye una experiencia completa de línea de comandos para configurar y administrar el agente, iniciar exámenes y administrar amenazas. Se admiten versiones recientes de las seis distribuciones más comunes de Linux Server: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS o superior LTS, SLES 12+, Debian 9+y Oracle Linux 7.2. Microsoft Defender para Endpoint en Linux se puede implementar y configurar con Puppet, Ansible o con la herramienta de administración de configuración de Linux existente. Para obtener información sobre las características y ventajas clave, lea nuestros [anuncios](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux).
 
 Para obtener más información sobre cómo empezar, visite la documentación de Microsoft Defender para Endpoint en [Linux](microsoft-defender-endpoint-linux.md).
 

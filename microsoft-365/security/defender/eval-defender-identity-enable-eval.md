@@ -17,21 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 966ccb0437f47b35c376c5ad4926464610871c92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 184ec4dcdd5601585e046ced410141047fdfa24f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181132"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942673"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Habilitar el entorno de evaluación para Microsoft Defender for Identity
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 2 de 2](eval-defender-identity-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender for Identity. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-identity-overview.md).
 
@@ -63,7 +61,7 @@ A continuación, descargue, instale y configure el sensor Defender for Identity 
 |1     | Determine cuántos sensores de Microsoft Defender para Identidad necesita.        | [Capacidad del plan para Microsoft Defender for Identity](/defender-for-identity/capacity-planning)   |
 |2     | Descargar el paquete de instalación del sensor  |  [Inicio rápido: descargar el paquete de instalación del sensor de Microsoft Defender para identidad](/defender-for-identity/install-step3)   |
 |3     | Instalar el sensor Defender for Identity    |  [Inicio rápido: instalar el sensor de Microsoft Defender para identidad](/defender-for-identity/install-step4)       |
-|4      | Configurar el sensor       |  [Configuración de Microsoft Defender para la configuración del sensor de identidad ](/defender-for-identity/install-step5)   |
+|4     | Configurar el sensor       |  [Configuración de Microsoft Defender para la configuración del sensor de identidad ](/defender-for-identity/install-step5)   |
 |   |         |         |
 
 ## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Paso 3. Configurar la configuración de proxy y registro de eventos en máquinas con el sensor
@@ -73,12 +71,12 @@ En las máquinas en las que instaló el sensor, configure la colección Windows 
 |  |Paso     |Más información  |
 |---------|---------|---------|
 |1     | Configurar Windows de registro de eventos         | [Configurar Windows event (colección)](/defender-for-identity/configure-windows-event-collection)        |
-|2     | Configurar la configuración de proxy de Internet        | [Configurar el proxy de extremo y la configuración de conectividad a Internet para el Sensor de identidad de Microsoft Defender para](/defender-for-identity/configure-proxy)        |
+|2     | Configurar la configuración de proxy de Internet        | [Configurar el proxy de punto de conexión y las opciones de conectividad a Internet para el Sensor de Microsoft Defender for Identity](/defender-for-identity/configure-proxy)        |
 |   |         |         |
 
 ## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>Paso 4. Permitir que Defender for Identity identifique administradores locales en otros equipos
 
-La detección de rutas de movimiento lateral de Microsoft Defender para identidad se basa en consultas que identifican a los administradores locales en máquinas específicas. Estas consultas se realizan con el protocolo SAM-R, mediante la cuenta defender para el servicio de identidad. 
+La detección de rutas de movimiento lateral de Microsoft Defender for Identity se basa en consultas que identifican a los administradores locales en máquinas específicas. Estas consultas se realizan con el protocolo SAM-R, mediante la cuenta defender para el servicio de identidad. 
 
 Para asegurarse de que Windows clientes y servidores permiten que la cuenta de Defender for Identity realice SAM-R, se debe realizar una modificación en la directiva de grupo para agregar la cuenta de servicio Defender for Identity además de las cuentas configuradas que aparecen en la directiva de acceso a la red. Asegúrese de aplicar directivas de grupo a todos los equipos **excepto a los controladores de dominio**.
 

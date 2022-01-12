@@ -3,7 +3,9 @@ title: Paso 4. Requerir dispositivos correctos y compatibles con Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Conditional access policy
+- Microsoft Intune
+- Intune device management
 manager: dougeby
 audience: ITPro
 description: Cree una directiva de acceso condicional en Azure AD para requerir dispositivos compatibles, manteniendo los datos corporativos seguros cuando los usuarios trabajan desde cualquier dispositivo en cualquier ubicación.
@@ -14,13 +16,15 @@ ms.collection:
 - Conditional access policy
 - Microsoft Intune
 - Intune device management
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
-ms.openlocfilehash: ff72a19c9110b8b708092ead81bf154ebe33625d
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 3549dda4551c1a1e7facad1fd665867f8339bf8f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646258"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940811"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>Paso 4. Requerir dispositivos correctos y compatibles con Intune
 

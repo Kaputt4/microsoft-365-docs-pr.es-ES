@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 45446cf3d3346df10620f5ef6020949e401e7d75
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2fa55e3bdf0ca9c06093e843e9dca4d8ed502128
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218495"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940559"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -58,7 +58,7 @@ Las aplicaciones también se pueden agregar manualmente a la lista de confianza 
 
 ## <a name="why-controlled-folder-access-is-important"></a>Por qué es importante el acceso controlado a carpetas
 
-El acceso controlado a carpetas es especialmente útil para ayudar a proteger los documentos y la información de [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). En un ataque de ransomware, los archivos pueden ser cifrados y retenidos como rehenes. Con el acceso controlado a carpetas, aparece una notificación en el equipo donde una aplicación intentó realizar cambios en un archivo de una carpeta protegida. Puede [personalizar la notificación](customize-attack-surface-reduction.md#customize-the-notification) con los detalles de la empresa y la información de contacto. También puede habilitar las reglas individualmente para personalizar las técnicas que supervisan las características.
+El acceso controlado a carpetas es especialmente útil para ayudar a proteger los documentos y la información de [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). En un ataque de ransomware, los archivos pueden ser cifrados y retenidos como rehenes. Con el acceso controlado a carpetas, aparece una notificación en el equipo donde una aplicación intentó realizar cambios en un archivo de una carpeta protegida. Puede [personalizar la notificación](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) con los detalles de la empresa y la información de contacto. También puede habilitar las reglas individualmente para personalizar las técnicas que supervisan las características.
 
 Las [carpetas protegidas](#review-controlled-folder-access-events-in-windows-event-viewer) incluyen carpetas comunes del sistema (incluidos los sectores de arranque) y puede [agregar más carpetas.](customize-controlled-folders.md#protect-additional-folders) También puedes permitir [que las aplicaciones](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) les den acceso a las carpetas protegidas.
 

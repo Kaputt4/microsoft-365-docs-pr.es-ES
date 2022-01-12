@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 03251d9f3b09f0c6a54b76298e16957c32737f44
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: 8ad336e411c5ce83129496fb10490442b43a1aeb
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586680"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936611"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -210,7 +210,7 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
 
 - Modo de simulación:
   - La auditoría de Microsoft 365 debe estar activada. Si necesita activar la auditoría o no está seguro de si ya fue activada, consulte [Activar o desactivar la Búsqueda en el registro de auditoría](turn-audit-log-search-on-or-off.md).
-  - Para ver el contenido del archivo en la vista de origen, debe tener el rol de **Visor de contenido del explorador de contenido**. Los administradores globales no tienen este rol activado de forma predeterminada. Si no tiene este permiso, no verá el panel de vista previa cuando seleccione un elemento de la pestaña **Elementos coincidentes**.
+  - Para ver el contenido del archivo o correo electrónico en la vista de origen, debe tener el rol de **Visor de contenido de clasificación de los datos**, que se incluye en el grupo de roles **Visor de contenido del explorador de contenido**, o en los grupos de roles de **Information Protection** y **Investigadores de Information Protection** (actualmente en versión preliminar). Si no tiene este rol, no verá el panel de vista previa cuando seleccione un elemento de la pestaña **Elementos coincidentes**. Los administradores globales no tienen este rol de forma predeterminada.
 
 - Para etiquetar automáticamente archivos en SharePoint y OneDrive:
   - Tiene [etiquetas de confidencialidad habilitadas para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -332,12 +332,20 @@ Puede modificar la directiva directamente desde esta interfaz:
 
     Cuando esté listo para ejecutar la directiva sin simulación, seleccione la opción **Activar directiva**.
 
-Las directivas automáticas se ejecutan de forma continua hasta que se eliminan. Por ejemplo, los documentos nuevos y modificados se incluirán en la configuración de directivas actual.
+Las directivas automáticas se ejecutan continuamente hasta que se eliminan. Por ejemplo, los archivos nuevos y modificados se incluirán en la configuración de directivas actual.
+
+### <a name="monitoring-your-auto-labeling-policy"></a>Supervisión de la directiva de etiquetado automático
+
+Después de activar la directiva de etiquetado automático, puede ver el progreso del etiquetado de los archivos en las ubicaciones de SharePoint y OneDrive elegidas. Los correos electrónicos no se incluyen en el progreso del etiquetado porque se etiquetan automáticamente a medida que se envían.
+
+El progreso del etiquetado incluye los archivos que va a etiquetar la directiva, los archivos etiquetados en los últimos 7 días y el total de archivos etiquetados. Debido al máximo de etiquetado de 25 000 archivos al día, esta información le proporciona visibilidad del progreso del etiquetado actual de la directiva y de cuántos archivos aún deben etiquetarse.
+
+La primera vez que active la directiva, verá inicialmente un valor de 0 para que los archivos se etiqueten hasta que se recuperen los datos más recientes. Esta información de progreso se actualiza cada 48 horas, por lo que puede esperar ver los datos más actuales cada dos días. Al seleccionar una directiva de etiquetado automático, puede ver más detalles sobre la directiva en un panel desplegable, que incluye el progreso del etiquetado de los 10 sitios principales. La información de este panel desplegable puede estar más actualizada que la información de directiva agregada que se muestra en la página principal **Etiquetado automático**.
 
 También puede ver los resultados de la directiva de etiquetado automático con el [explorador de contenido](data-classification-content-explorer.md) cuando tenga los [permisos](data-classification-content-explorer.md#permissions) correspondientes:
 
-- **El Visor de listas del explorador de contenido** le permite ver la etiqueta de un archivo, pero no el contenido del archivo.
-- **El Visor de contenido del explorador de contenido** le permite ver el contenido del archivo.
+- El grupo de roles **Visor de listas del explorador de contenido** le permite ver la etiqueta de un archivo, pero no el contenido del archivo.
+- El grupo de roles **Visor de contenido del Explorador de contenido** y los grupos de roles **Information Protection** y **Investigadores de Information Protection** (actualmente en versión preliminar) le permiten ver el contenido del archivo.
 
 > [!TIP]
 > También puede utilizar el explorador de contenidos para identificar las ubicaciones que tienen documentos con información confidencial, pero que no están etiquetados. Con esta información, considere la posibilidad de agregar estas ubicaciones a la directiva de etiquetado automático e incluir los tipos de información confidencial identificados como reglas.

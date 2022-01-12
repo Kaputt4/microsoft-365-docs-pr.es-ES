@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 894cd4a13ed7ff3253ea7badcd19a1649c03105b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b58e2ddd2b4282bd3abcd36147db89970e21fb19
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212142"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943297"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Microsoft 365 Defender proporciona capacidades de detección y análisis, sino que también proporciona contención y eliminación de malware. La contención incluye pasos para reducir el impacto del ataque, mientras que la eliminación garantiza que todos los seguimientos de la actividad del atacante se quiten de la red.  Microsoft 365 Defender ofrece varias acciones de corrección que [](m365d-autoir.md) se pueden configurar para corregir automáticamente según el sistema operativo y el tipo de ataque.
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender ofrece varias acciones de corrección que los analistas p
 - **Iniciar una investigación automatizada:** puedes iniciar una nueva investigación automatizada de propósito general en el dispositivo. Mientras se ejecuta una investigación, cualquier otra alerta generada desde el dispositivo se agregará a una investigación automatizada en curso hasta que se complete esa investigación. Además, si se ve la misma amenaza en otros dispositivos, estos dispositivos se agregan a la investigación.
 - **Iniciar respuesta en directo:** la respuesta en directo es una funcionalidad que te proporciona acceso instantáneo a un dispositivo mediante una conexión remota del shell. Esto le permite realizar un trabajo de investigación en profundidad y realizar acciones de respuesta inmediatas para contener rápidamente las amenazas identificadas en tiempo real. La respuesta en directo está diseñada para mejorar las investigaciones, ya que permite recopilar datos forenses, ejecutar scripts, enviar entidades sospechosas para su análisis, corregir amenazas y buscar proactivamente amenazas emergentes.
 - **Recopilar paquete de investigación:** como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Al recopilar el paquete de investigación, puedes identificar el estado actual del dispositivo y comprender aún más las herramientas y técnicas usadas por el atacante. 
-- **Consulte a** un experto en amenazas (disponible en Acciones en dispositivos y archivos): puede consultar a un experto en amenazas de Microsoft para obtener más información sobre dispositivos o dispositivos potencialmente comprometidos que ya están en peligro. Los expertos en amenazas de Microsoft pueden participar directamente desde el Centro de seguridad de Microsoft Defender para obtener una respuesta rápida y precisa. 
+- **Consulte a** un experto en amenazas (disponible en Acciones en dispositivos y archivos): puede consultar a un experto en amenazas de Microsoft para obtener más información sobre dispositivos o dispositivos potencialmente comprometidos que ya están en peligro. Los expertos en amenazas de Microsoft pueden participar directamente desde dentro Microsoft 365 Defender para obtener una respuesta rápida y precisa. 
 
 ## <a name="actions-on-files"></a>Acciones en archivos
 
@@ -64,13 +64,13 @@ Continuando con el ejemplo [de Detectar, analizar](first-incident-analyze.md#ana
 3. Asegúrese de que el archivo malintencionado se ha puesto en cuarentena SharePoint
 4. Comprobar qué puntos de conexión se vieron afectados por malware
 5. Recompilar sistemas
-6. Buscar alertas de Microsoft Cloud App Security similares para otros usuarios
+6. Buscar alertas similares de Microsoft Defender para aplicaciones en la nube para otros usuarios
 7. Crear un indicador personalizado en Microsoft Defender para endpoint para bloquear una dirección IP de Tor
-8. Cree una acción de gobierno en Microsoft Cloud App Security para este tipo de alerta, como las que se muestran en la siguiente imagen:
+8. Cree una acción de gobierno en Microsoft Defender para aplicaciones en la nube para este tipo de alerta, como las que se muestran en la siguiente imagen:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Ejemplo de acciones de gobierno en el portal Microsoft Cloud App Security web."::: 
- 
-La mayoría de las acciones de corrección se pueden aplicar y realizar un seguimiento en Microsoft 365 Defender. 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Ejemplo de acciones de gobierno en el portal de Microsoft Defender para Aplicaciones en la nube.":::
+
+La mayoría de las acciones de corrección se pueden aplicar y realizar un seguimiento en Microsoft 365 Defender.
 
 ## <a name="using-playbooks"></a>Uso de Playbooks
 
@@ -95,7 +95,7 @@ Los libros de reproducción también se pueden crear durante [la revisión poste
 
 Obtenga información sobre cómo [realizar una revisión posterior al incidente de un incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

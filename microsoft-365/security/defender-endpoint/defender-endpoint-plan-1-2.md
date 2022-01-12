@@ -8,19 +8,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/09/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c9a1d35a4de97174a49d7a69ec7776f31528376e
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: e05655aa088a1ad87b9452f255c5b44a31647315
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422500"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941197"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Plan 1 y Plan 2 de Microsoft Defender para Endpoint
 
@@ -44,7 +44,7 @@ En la tabla siguiente se describe lo que se incluye en cada plan en un nivel alt
 | [Compatibilidad con Windows 10, iOS, sistema operativo Android y dispositivos macOS](defender-endpoint-plan-1.md#cross-platform-support) | Compatibilidad con Windows (cliente y servidor) y plataformas no Windows web<br/> (macOS, iOS, Android y Linux) |
 | Para probar Defender for Endpoint Plan 1, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) . | Para probar Defender for Endpoint Plan 2, visite [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) . |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtener información general sobre Microsoft Defender para endpoint Plan 1](defender-endpoint-plan-1.md)
 - [Configurar y configurar Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 1b34ac4d8c9afead9ed72b060f8417affc2062b7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5ee5af04b399d7f7d0ba94dc3b943d259d57ff34
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179240"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942349"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -49,7 +49,7 @@ Además:
 
 - Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, todavía pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa mínima del centro de cumplimiento.
 
-- De forma predeterminada, cada persona que tiene acceso a la página **eliminación** solo ve los elementos que están asignados a revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención configuradas para revisión para eliminación: vaya a **configuración de administración de registros** > **General** > **Grupo de seguridad para administrador de registros** y seleccione y habilite un grupo de seguridad habilitado para correo que contenga las cuentas de administrador.
+- De forma predeterminada, cada persona que accede a la página **Eliminación** solo ve los elementos que tienen asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que están configuradas para la revisión para eliminación: vaya a **Configuración de administración de registros** > **Disposición** para seleccionar y, a continuación, habilitar un grupo de seguridad habilitado para correo que contenga las cuentas de administrador.
     
     Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se muestran en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para un correo nuevo, use el vínculo al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para crear el grupo nuevo. 
     
@@ -86,7 +86,7 @@ Cuando se desencadena una revisión para eliminación al final del período de r
 
 Puede personalizar el correo electrónico de notificación que reciben los revisores, incluidas las instrucciones en distintos idiomas. Para obtener compatibilidad con varios idiomas, debe especificar las traducciones usted mismo y este texto personalizado se mostrará a todos los revisores, con independencia de su configuración regional.
 
-Los usuarios reciben una notificación por correo electrónico inicial por etiqueta al final del periodo de retención del elemento, con un aviso por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir a la página **Eliminación** del Centro de cumplimiento de Microsoft 365 para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden ir directamente a la página de **Eliminación** en el centro de cumplimiento. Luego:
+Los usuarios reciben una notificación por correo electrónico inicial por etiqueta al final del periodo de retención del elemento, con un aviso por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir directamente a la página **Administración de registros** > **Disposición** en el Centro de cumplimiento de Microsoft 365 para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden navegar a la página **Disposición** en el centro de cumplimiento. Luego:
 
 - Los revisores solo ven las revisiones para eliminación que se les han asignado, mientras que los administradores agregados al grupo de seguridad del administrador de registros seleccionado ven todas las revisiones para eliminación.
 
@@ -155,11 +155,11 @@ Ejemplo de notificación de correo electrónico predeterminada que se envía a u
 
 Puede personalizar los mensajes de correo electrónico que se envían a los revisores para eliminación para la notificación inicial y los avisos.
 
-En cualquiera de las páginas de Eliminación del Centro de cumplimiento, seleccione **Configuración de administración de registros**:  
+En cualquiera de las páginas de Administración de registros en el Centro de cumplimiento, seleccione **Configuración de administración de registros**:  
 
 ![Configuración de administración de registros.](../media/record-management-settings.png)
 
-Después, seleccione la pestaña **Notificaciones de eliminación** y especifique si desea usar solo el mensaje de correo electrónico predeterminado o agregar su propio texto al mensaje predeterminado. El texto personalizado se agrega a las instrucciones de correo electrónico después de la información sobre la etiqueta de retención y antes de las instrucciones de los pasos siguientes.
+En la pestaña **Disposición**, en la sección **Notificaciones de correo electrónico para revisiones de eliminación**, seleccione y especifique si desea usar solo el mensaje de correo electrónico predeterminado o agregar su propio texto al mensaje predeterminado. El texto personalizado se agrega a las instrucciones de correo electrónico después de la información sobre la etiqueta de retención y antes de las instrucciones de los pasos siguientes.
 
 Se puede agregar texto para todos los idiomas, pero el formato y las imágenes no son compatibles. Las direcciones URL y las direcciones de correo pueden especificarse como texto y, en función del cliente de correo electrónico, mostrarse como hipervínculos o texto sin formato en el correo electrónico personalizado.
 
@@ -204,7 +204,7 @@ Durante una revisión para eliminación, el contenido nunca se mueve de su ubica
 
 ## <a name="disposition-of-records"></a>Eliminación de registros
 
-Use la pestaña **Eliminación** en la página **Administración de registros** para identificar:
+En la página principal **Administración de registros** > pestaña **Disposición**, puede identificar:
 
 - Los elementos eliminados como resultado de una revisión para eliminación.
 - Elementos marcados como un registro o un registro normativo que se eliminaron automáticamente al final de su periodo de retención.

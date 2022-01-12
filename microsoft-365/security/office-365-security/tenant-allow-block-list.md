@@ -13,15 +13,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c344f4462b258d4ffbacd94ddfb0f3afd4b7ed4
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: d7e3e56ccdaa59b39a6f65a63684b5b715db352e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914649"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942565"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -50,11 +51,11 @@ La lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Def
 - Archivos que se permiten.
 - Mensajes de correo electrónico o dominios del remitente que se permitirán.
 
-En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (PowerShell de Exchange Online para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
+En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones de correo).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList> .
 
 - Los archivos se especifican mediante el valor hash SHA256 del archivo. Para buscar el valor hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema:
 
@@ -98,7 +99,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender
 
-En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
+En el portal Microsoft 365 Defender en , vaya a Directivas & directivas de amenazas Listas de inquilinos <https://security.microsoft.com>  \>  \> **permitidos o** bloqueados en la **sección** Reglas. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList> .
 
 Para agregar todos los bloques, vea [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
 
@@ -112,7 +113,7 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Ver entradas en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
+1. En el portal Microsoft 365 Defender en , vaya a Directivas & directivas de amenazas Listas de inquilinos <https://security.microsoft.com>  \>  \> **permitidos o** bloqueados en la **sección** Reglas. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList> .
 
 2. Seleccione la pestaña que desee. Las columnas disponibles dependen de la pestaña seleccionada:
 

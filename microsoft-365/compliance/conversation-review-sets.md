@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre la característica de reconstrucción de conversación en Advanced eDiscovery (denominado subproceso de conversación) para reconstruir, revisar y exportar conversaciones de chat en Microsoft Teams y Yammer grupos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c2638b2e89169560307cd32217532d4d5ce565e8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7bd13bdb01298d0cf1f37671f044a3405a2de0b6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156527"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942409"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>Subprocesos de conversación en Advanced eDiscovery
 
@@ -48,7 +48,7 @@ Estas son algunas definiciones que le ayudarán a empezar a usar la reconstrucci
 
 - **Conversación:** Representa una agrupación de uno o varios mensajes. En diferentes aplicaciones, las conversaciones pueden representarse de diferentes maneras. En algunas aplicaciones, hay una acción explícita que resulta de responder a un mensaje existente. Las conversaciones se forman explícitamente como resultado de esta acción del usuario. Por ejemplo, esta es una captura de pantalla de una conversación de canal en Microsoft Teams.
 
-   ![Microsoft Teams Conversación de canal.](../media/threadedchat.png)
+   ![Microsoft Teams canal de conversación.](../media/threadedchat.png)
 
    En otras aplicaciones (como los mensajes de chat en grupo en Teams), no hay una cadena de respuesta formal y, en su lugar, los mensajes aparecen como un "río plano de mensajes" dentro de un único subproceso. En estos tipos de aplicaciones, las conversaciones se deducen de un grupo de mensajes que se producen en un tiempo determinado. Esta "agrupación suave" de mensajes (en lugar de una cadena de respuesta) representa la conversación "ida y vuelta" sobre un tema específico de interés.
 

@@ -15,15 +15,16 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: ''
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos rastreadores notables, para ayudar a su organización a mantenerse al tanto de los problemas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 63673247e6e818459207634d68e18c7adb019e41
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc73604d6ea24de9c8a66a8586c6bbced0113421
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154331"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942517"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -33,10 +34,10 @@ ms.locfileid: "60154331"
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Office 365 de investigación y respuesta](office-365-ti.md) de amenazas permiten al equipo de seguridad de su organización detectar y tomar medidas contra las amenazas de ciberseguridad. Office 365 Las capacidades de investigación y respuesta de amenazas incluyen características del rastreador de amenazas, incluidos los rastreadores notables. Lea este artículo para obtener información general sobre estas nuevas características y los pasos siguientes.
+[Office 365 de investigación y respuesta](office-365-ti.md) de amenazas permiten al equipo de seguridad de su organización detectar y tomar medidas contra las amenazas de ciberseguridad. Office 365 de investigación y respuesta de amenazas incluyen características del Rastreador de amenazas, incluidos los rastreadores notables. Lea este artículo para obtener información general sobre estas nuevas características y los pasos siguientes.
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence es ahora Microsoft Defender para Office 365 Plan 2, junto con capacidades adicionales de protección contra amenazas. Para obtener más información, vea [Microsoft Defender for Office 365 plans and pricing](https://products.office.com/exchange/advance-threat-protection) y microsoft defender for Office 365 Service [Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 inteligencia de amenazas es ahora Microsoft Defender para Office 365 Plan 2, junto con capacidades adicionales de protección contra amenazas. Para obtener más información, vea [Microsoft Defender for Office 365 plans and pricing](https://products.office.com/exchange/advance-threat-protection) y microsoft defender for Office 365 Service [Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 ## <a name="what-are-threat-trackers"></a>¿Qué son los rastreadores de amenazas?
 
@@ -50,7 +51,7 @@ La mayoría de las páginas de seguimiento incluyen números de tendencia que se
 
 Los rastreadores son solo algunas de las muchas características excelentes que obtienes con [Microsoft Defender para Office 365 Plan 2](office-365-ti.md). Los rastreadores de amenazas [incluyen rastreadores notables,](#noteworthy-trackers)rastreadores [de tendencias,](#trending-trackers)consultas rastreadas [y](#tracked-queries) [consultas guardadas.](#saved-queries)
 
-Para ver y usar los rastreadores de amenazas para su organización, vaya al portal de Microsoft 365 Defender ( ) y elija Correo electrónico & rastreador de amenazas <https://security.microsoft.com>  \> **de colaboración.**
+Para ver y usar los Rastreadores de amenazas para su organización, abra el portal de Microsoft 365 Defender en , y vaya a Correo electrónico & rastreador de amenazas <https://security.microsoft.com>  \> **de colaboración.** Para ir directamente a la **página Rastreador de amenazas,** use <https://security.microsoft.com/threattracker> .
 
 > [!NOTE]
 > Para usar rastreadores de amenazas, debe ser un administrador global, un administrador de seguridad o un lector de seguridad. Vea [Permisos en el portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
@@ -101,12 +102,12 @@ In today's threat-riddled world, running only traditional anti-malware scans mea
 
 El nuevo filtro de amenazas notables resalta los elementos que se detectaron recientemente a través de Caja fuerte datos adjuntos. Estas detecciones representan elementos que son nuevos archivos malintencionados, que no se han encontrado anteriormente Microsoft 365 en el flujo de correo electrónico o en el correo electrónico de otros clientes. Preste atención a los elementos del Rastreador de amenazas notables, vea quién fue el objetivo de ellos y revise los detalles de detonación que se muestran en la pestaña Análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el Explorador). Nota Solo encontrará esta pestaña en los correos electrónicos detectados por la funcionalidad de datos adjuntos de Caja fuerte: este rastreador notable incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el Explorador.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si su organización aún no tiene estas Office 365 de investigación y respuesta de amenazas, vea [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 
 - Asegúrese de que el equipo de seguridad tenga asignados los roles y permisos correctos. Debe ser un administrador global o tener asignado el rol Administrador de seguridad o Buscar y purgar en el portal de Microsoft 365 Defender seguridad. Vea [Permisos en el portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
 
-- Observe que los nuevos rastreadores se mostrarán en el Microsoft 365 local. Cuando esté disponible, encontrará los rastreadores [aquí](https://https://security.microsoft.com/). Vaya a **Correo electrónico & rastreador de amenazas** de \> **colaboración**.
+- Observe que los nuevos rastreadores se mostrarán en el Microsoft 365 local. Cuando esté disponible, encontrará los rastreadores en la página Rastreador de amenazas en el portal de Microsoft 365 Defender en  <https://security.microsoft.com/threattracker> .
 
 - Si aún no lo ha hecho, obtenga más información y configure [Microsoft Defender](defender-for-office-365.md) para Office 365 para su organización, incluidos los vínculos Caja fuerte y Caja fuerte [datos adjuntos](safe-attachments.md). [](safe-links.md)

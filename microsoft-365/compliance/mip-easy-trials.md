@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 description: Obtenga información sobre las etiquetas y directivas predeterminadas para Microsoft Information Protection (MIP) para clasificar y proteger el contenido confidencial.
-ms.openlocfilehash: dd9a2eef45e8ccb7ecb9c637a94f64ad6796a8f9
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: a0634a8f67e28d84334cfadd4be7d9694084af6c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221357"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938631"
 ---
 # <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Etiquetas y directivas predeterminadas para Microsoft Information Protection
 
@@ -59,11 +59,13 @@ Para obtener estas directivas y etiquetas preconfiguradas:
     
     Si no ve esta información mostrada con la opción de activación, actualmente no es apto para la creación automática de etiquetas y directivas de confidencialidad. Puede intentar volver a comprobarlo más tarde para ver si este estado ha cambiado o puede usar la información de configuración siguiente para crear manualmente las mismas etiquetas y directivas.
 
-3. Ahora, habilite las etiquetas de confidencialidad para SharePoint y OneDrive. Este paso adicional es un requisito previo para usar etiquetas de confidencialidad en Office para la Web y directivas de etiquetado automático para SharePoint y OneDrive.
-
-    Seleccione la pestaña **Etiquetas** y, a continuación, **Activar ahora**.
+3. Ahora, habilite las etiquetas de confidencialidad para SharePoint y OneDrive. Este paso es un requisito previo para usar etiquetas de confidencialidad en Office para la Web y directivas de etiquetado automático para SharePoint y OneDrive.
+   
+    Use el siguiente banner en la parte superior de la pestaña **Información general de Information Protection** y seleccione **Activar ahora**. Si no ve este banner, las etiquetas de confidencialidad para SharePoint y OneDrive ya se han habilitado para su espacio empresarial.
     
-    Para obtener instrucciones completas, vea [Cómo habilitar etiquetas de confidencialidad para SharePoint y OneDrive (participar)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
+    ![Banner Habilitar etiquetas de confidencialidad para SharePoint y OneDrive.](../media/turn-on-mip-labels.png)
+    
+    Para más información sobre esta funcionalidad, vea [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## <a name="default-sensitivity-labels"></a>Etiquetas de confidencialidad predeterminadas
 

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -19,14 +19,13 @@ ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibici처n de documentos electr처nicos mediante el Centro de cumplimiento de Microsoft 365.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
-ms.openlocfilehash: 426430f705fa85be440df39c6a40f8872d7024ad
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+- admindeeplinkCOMPLIANCE
+ms.openlocfilehash: 129363fe614bafef653fe65b39fa15d50a3b1c8a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422788"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942493"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Asignar permisos de exhibici처n de documentos electr처nicos en el Centro de cumplimiento de Microsoft 365
 
@@ -59,7 +58,7 @@ El grupo de roles principal relacionado con la exhibici처n de documentos electr�
   
 ## <a name="assign-ediscovery-permissions"></a>Asignar permisos de eDiscovery
 
-1. Vaya a <https://compliance.microsoft.com> e inicie sesi처n con una cuenta que pueda asignar permisos.
+1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesi처n con una cuenta que pueda asignar permisos.
   
 2. En el panel izquierdo, seleccione **Permisos**.
 

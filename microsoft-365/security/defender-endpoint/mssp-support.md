@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 161cb29c99ac442805685417195fe1dfd07fa4a2
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f29c40e9c813ec27a1d8976f53ed958cb3a8d1d4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560401"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941761"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Oportunidades de asociación de proveedores de servicios de seguridad administrados
 
@@ -42,7 +42,7 @@ Para hacer frente a esta demanda, los proveedores de servicios de seguridad admi
 
 Defender for Endpoint agrega oportunidades de asociación para este escenario y permite a los MSSP realizar las siguientes acciones:
 
-- Obtener acceso al portal de Centro de seguridad de Microsoft Defender MSSP
+- Obtener acceso al portal de Microsoft 365 Defender MSSP
 - Obtener notificaciones por correo electrónico y 
 - Capturar alertas a través de herramientas de administración de eventos y de información de seguridad (SIEM)
 

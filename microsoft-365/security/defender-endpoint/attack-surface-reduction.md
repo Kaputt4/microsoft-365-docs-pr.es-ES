@@ -18,12 +18,12 @@ ms.custom:
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9631ea450c43224e8be3c8a62dde12e9e1361504
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 07159aa287de4194956d37399c73a73d5d3882e7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531368"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943405"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 
@@ -96,7 +96,7 @@ Además, el modo de advertencia no se admite en dispositivos que ejecutan versio
 
 ## <a name="notifications-and-alerts"></a>Notificaciones y alertas
 
-Cada vez que se desencadena una regla de reducción de superficie de ataque, se muestra una notificación en el dispositivo. Puede [personalizar la notificación](customize-attack-surface-reduction.md#customize-the-notification) con los detalles de la empresa y la información de contacto.
+Cada vez que se desencadena una regla de reducción de superficie de ataque, se muestra una notificación en el dispositivo. Puede [personalizar la notificación](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) con los detalles de la empresa y la información de contacto.
 
 Además, cuando se desencadenan ciertas reglas de reducción de superficie de ataque, se generan alertas.
 

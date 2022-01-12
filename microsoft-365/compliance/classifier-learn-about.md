@@ -18,13 +18,13 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Un clasificador Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido para el etiquetado o la aplicación de directivas, ya que le proporciona ejemplos positivos y negativos que buscar.
-ms.openlocfilehash: 13e16394e9be1a2dd6b3d9cdcf4e18a736de158b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Los clasificadores capacitados pueden reconocer varios tipos de contenido para el etiquetado o la aplicación de directivas, ya que le dan ejemplos positivos y negativos que se deben analizar.
+ms.openlocfilehash: 863f30819988d5f2ecfdc7c9bac858ef357d6ede
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373781"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940655"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -32,7 +32,7 @@ Clasificar y etiquetar el contenido para que pueda protegerse y controlarse corr
 
 ## <a name="manually"></a>Manualmente
 
-Este método requiere juicio y acción humanas. Un administrador puede usar las etiquetas existentes y los tipos de información confidencial o crear las suyas propias y, a continuación, publicarlas. Los usuarios y administradores los aplican al contenido a medida que se encuentran con él. A continuación, puede proteger el contenido y administrar su eliminación.
+La clasificación manual requiere juicio y acción humanas. Los usuarios y administradores los aplican al contenido a medida que se encuentran con él. Puede usar las etiquetas preexistentes y los tipos de información confidencial o usar las creadas de forma personalizada.  A continuación, puede proteger el contenido y administrar su eliminación.
 
 ## <a name="automated-pattern-matching"></a>Coincidencia de patrones automatizada
 
@@ -47,12 +47,11 @@ Las [etiquetas](dlp-learn-about-dlp.md) de confidencialidad y retención se pued
 
 ## <a name="classifiers"></a>Clasificadores
 
-Este método de clasificación es especialmente adecuado para el contenido que no se identifica fácilmente con los métodos de coincidencia de patrones manuales o automatizados. Este método de clasificación consiste más en entrenar un clasificador para que identifique un elemento basándose en qué es el elemento y no en cuál es su contenido (coincidencia de patrones). Un clasificador aprende a identificar un tipo de contenido al ver cientos de ejemplos del contenido que le interesa clasificar. Empieza por darle ejemplos que definitivamente están en la categoría. Una vez que procesa esos ejemplos, se prueba al darle una combinación de ejemplos que coincidan y que no coincidan. A continuación, el clasificador realiza previsiones sobre si algún elemento determinado entra en la categoría que está creando. A continuación, confirme sus resultados, ordenando los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus previsiones. 
+Este método de clasificación es adecuado para el contenido que no se identifica fácilmente mediante los métodos manuales o automatizados de coincidencia de patrones. Este método de clasificación consiste más en usar un clasificador para identificar un elemento en función de lo que es el elemento, no de los elementos que están en el elemento (coincidencia de patrones). Un clasificador aprende a identificar un tipo de contenido al ver cientos de ejemplos del contenido que le interesa clasificar.
 
-Al publicar el clasificador, ordena los elementos en ubicaciones como SharePoint Online, Exchange y OneDrive, y clasifica el contenido. Después de publicar el clasificador, puede seguir entrenando con un proceso de comentarios similar al proceso de aprendizaje inicial.
+### <a name="where-you-can-use-classifiers"></a>Dónde puede usar clasificadores
 
-### <a name="where-you-can-use-trainable-classifiers"></a>Dónde puede usar clasificadores entrenables
-Tanto los clasificadores integrados como los clasificadores entrenables están disponibles como condición para el etiquetado automático de [Office](apply-sensitivity-label-automatically.md)con etiquetas de confidencialidad, [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) aplicar automáticamente la directiva de etiquetas de retención según una condición y en el cumplimiento de las comunicaciones. [](communication-compliance.md) 
+Los clasificadores están disponibles para su uso como condición para Office [etiquetas](apply-sensitivity-label-automatically.md)automáticas con etiquetas de [confidencialidad,](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) aplicar automáticamente la directiva de etiquetas de retención en función de una condición y en el cumplimiento de las [comunicaciones.](communication-compliance.md) 
 
 Las etiquetas de confidencialidad pueden usar clasificadores como condiciones, vea [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
@@ -62,7 +61,7 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones, v
 ## <a name="types-of-classifiers"></a>Tipos de clasificadores
 
 - **clasificadores previamente formados:** Microsoft ha creado y formado previamente varios clasificadores que puede empezar a usar sin entrenarlos. Estos clasificadores aparecerán con el estado de `Ready to use` .
-- **clasificadores personalizados:** si tiene necesidades de clasificación que se extienden más allá de lo que cubren los clasificadores previamente formados, puede crear y entrenar a sus propios clasificadores.
+- **clasificadores personalizados entrenables:** si tiene necesidades de clasificación que se extienden más allá de lo que cubren los clasificadores previamente formados, puede crear y entrenar a sus propios clasificadores.
 
 ### <a name="pre-trained-classifiers"></a>Clasificadores previamente formados
 
@@ -71,48 +70,25 @@ Microsoft 365 viene con varios clasificadores previamente formados:
 > [!CAUTION]
 > Estamos desaprobando el clasificador **de lenguaje ofensivo** entrenado previamente porque ha estado produciendo un gran número de falsos positivos. No lo use y, si lo está usando actualmente, debe quitar los procesos empresariales de él. Se recomienda usar los **clasificadores de** amenazas, **profanidad** y acoso **previamente** formados en su lugar.
 
-- **Resumes:** detecta elementos que son cuentas textuales de las cualificaciones personales, educativas, profesionales, experiencia laboral y otra información de identificación personal de un solicitante
-- **Código fuente:** detecta elementos que contienen un conjunto de instrucciones y instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub
-    - ActionScript
-    - C
-    - C#
-    - C++
-    - Clojure
-    - CoffeeScript
-    - Ir
-    - Haskell
-    - Java
-    - JavaScript
-    - Lua
-    - MATLAB
-    - Objective-C
-    - Perl
-    - PHP
-    - Python
-    - R
-    - Ruby
-    - Scala
-    - Consola
-    - Swift
-    - TeX
-    - Vim Script
+- **Resumes**: detecta docx, .pdf, .rtf, .txt elementos que son cuentas textuales de las calificaciones personales, educativas, profesionales, experiencia laboral y otra información de identificación personal de un solicitante
+- Código **fuente:** detecta elementos que contienen un conjunto de instrucciones y instrucciones escritas en los 25 principales lenguajes de programación de equipos usados en GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.
 
 > [!NOTE]
 > El código fuente está formado para detectar cuándo la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
 
-- **Acuerdos:** detecta contenido relacionado con acuerdos legales como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de trabajo y no competencia
-- **Discriminación:** detecta un lenguaje discriminatorio explícito y es especialmente sensible al lenguaje discriminatorio frente a las comunidades afroestadounides/negras en comparación con otras comunidades.
-- **Finanzas:** detecta contenido en las categorías de finanzas corporativas, contabilidad, economía, banca e inversión
-- **Acoso:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con conductas ofensivas dirigidas a una o varias personas en función de los siguientes rasgos: raza, origen étnico, religión, origen nacional, género, orientación sexual, edad, discapacidad
-- **Salud:** detecta contenido en aspectos de administración médica y sanitaria, como servicios médicos, diagnósticos, tratamiento, notificaciones, etc.
-- **HR:** detecta contenido en categorías relacionadas con recursos humanos de contratación, entrevista, contratación, formación, evaluación, advertencia y terminación
-- **IP:** detecta contenido en categorías relacionadas con la propiedad intelectual, como secretos comerciales e información confidencial similar
-- **IT:** detecta contenido en categorías de tecnología de la información y ciberseguridad, como la configuración de red, la seguridad de la información, el hardware y el software
-- **Asuntos legales:** detecta contenido en categorías relacionadas con asuntos legales como litigio, proceso legal, obligación legal, terminología legal, ley y legislación
-- **Adquisiciones:** detecta contenido en categorías de ofertas, cotización, compra y pago de suministro de bienes y servicios
-- **Profanidad:** detecta una categoría específica de elementos de texto de lenguaje ofensivo que contienen expresiones que ensoñan a la mayoría de las personas
-- **Impuestos:** detecta contenido de relación fiscal como planeación fiscal, formularios fiscales, declaración de impuestos, reglamentos fiscales
-- **Amenaza:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad
+- **Acuerdos:** detecta contenido relacionado con acuerdos legales, como contratos de no divulgación, declaraciones de trabajo, contratos de préstamo y arrendamiento, contratos de trabajo y no competencia. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+- **Discriminación:** detecta un lenguaje discriminatorio explícito y es sensible al lenguaje discriminatorio frente a las comunidades afroestadounides/negras en comparación con otras comunidades.
+- **Finanzas:** detecta contenido en las categorías de finanzas corporativas, contabilidad, economía, banca e inversión. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **Acoso:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con conductas ofensivas dirigidas a uno o varios individuos en función de los siguientes rasgos: raza, origen étnico, religión, origen nacional, género, orientación sexual, edad, discapacidad.
+- **Salud:** detecta contenido en aspectos de administración médica y sanitaria, como servicios médicos, diagnósticos, tratamiento, notificaciones, etc. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **HR:** detecta contenido en categorías relacionadas con recursos humanos de contratación, entrevista, contratación, formación, evaluación, advertencia y terminación. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **IP:** detecta contenido en categorías relacionadas con la propiedad intelectual, como secretos comerciales e información confidencial similar. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **IT:** detecta contenido en las categorías de tecnología de la información y ciberseguridad, como la configuración de red, la seguridad de la información, el hardware y el software. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **Asuntos legales:** detecta contenido en categorías relacionadas con asuntos legales, como litigios, procesos legales, obligaciones legales, terminología legal, ley y legislación. Detecta contenido en los archivos .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+- **Adquisiciones:** detecta contenido en categorías de ofertas, citaciones, compras y pago de suministro de bienes y servicios. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
+- **Profanidad:** detecta una categoría específica de elementos de texto de lenguaje ofensivo que contienen expresiones que avergüenzan a la mayoría de las personas.
+- **Impuestos:** detecta contenido de relación fiscal como planeación fiscal, formularios fiscales, declaración de impuestos, reglamentos fiscales. Detecta contenido en .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
+- **Amenaza:** detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para cometer violencia o hacer daño físico o daño a una persona o propiedad.
 
 Aparecen en la vista **clasificadores Centro de cumplimiento de Microsoft 365** clasificación de datos  >    >  **trainable con** el estado de `Ready to use` .
 
@@ -129,6 +105,10 @@ Los clasificadores previamente formados pueden examinar el contenido en estos id
 
 Cuando los clasificadores previamente formados no satisfacen sus necesidades, puede crear y entrenar a sus propios clasificadores. Hay mucho más trabajo implicado en la creación de los suyos, pero estarán mucho mejor adaptados a las necesidades de las organizaciones.
 
+Para empezar a crear un clasificador personalizado, alimentándolo de ejemplos que definitivamente están en la categoría. Una vez que procesa esos ejemplos, se prueba al darle una combinación de ejemplos que coincidan y que no coincidan. A continuación, el clasificador realiza previsiones sobre si algún elemento determinado entra en la categoría que está creando. A continuación, confirme sus resultados, ordenando los verdaderos positivos, verdaderos negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus previsiones. 
+
+Al publicar el clasificador, ordena los elementos en ubicaciones como SharePoint Online, Exchange y OneDrive, y clasifica el contenido. Después de publicar el clasificador, puede seguir entrenando con un proceso de comentarios similar al proceso de aprendizaje inicial.
+
 Por ejemplo, podría crear clasificadores que se puedan entrenar para:
 
 - Documentos legales, como privilegios de cliente de abogado, conjuntos de cierre, declaración de trabajo
@@ -144,11 +124,14 @@ La creación y publicación de un clasificador para su uso en soluciones de cump
 
 ### <a name="retraining-classifiers"></a>Reentrenamiento de clasificadores
 
-Puede ayudar a mejorar la precisión de todos los clasificadores personalizados y algunos clasificadores previamente formados al proporcionarles comentarios sobre la precisión de la clasificación que realizan. Esto se denomina reentrenamiento y se sigue a este flujo de trabajo.
+Puede ayudar a mejorar la precisión de todos los clasificadores personalizados y proporcionarles comentarios sobre la precisión de la clasificación que realizan. Esto se denomina reentrenamiento y se sigue a este flujo de trabajo.
+
+> [!NOTE]
+> Los clasificadores previamente formados no se pueden volver a entrenar.
 
 ![flujo de trabajo de reciclaje de clasificadores.](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](retention.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

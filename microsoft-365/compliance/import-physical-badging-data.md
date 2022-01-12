@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de protección física de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a sus edificios físicos por usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 80e92f758f12c506e89ceea48ea6facfa9c01c74
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2bdefdea4852b06b12e4053555b69b4fc4554d61
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786883"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943573"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos de badging físicos (versión preliminar)
 
@@ -66,7 +66,7 @@ El siguiente paso es crear un archivo JSON que contenga información sobre los d
 
 El archivo JSON debe cumplir con la definición de esquema requerida por el conector. A continuación se descripciones de las propiedades de esquema necesarias para el archivo JSON:
 
-|Propiedad|Descripción|Tipo de datos|
+|Propiedad|Description|Tipo de datos|
 |---|---|---|
 |UserId|Un empleado puede tener varias identidades digitales en todos los sistemas. La entrada debe tener el identificador Azure AD ya resuelto por el sistema de origen.|UPN o dirección de correo electrónico|
 |AssetId|El identificador de referencia del activo físico o punto de acceso físico.|Cadena alfanumérica|
@@ -192,7 +192,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos de pérdi
 
    En la tabla siguiente se describen los parámetros que se deben usar con este script y sus valores necesarios. La información obtenida en los pasos anteriores se usa en los valores de estos parámetros.
 
-   |Parámetro|Descripción|
+   |Parámetro|Description|
    |---|---|
    |tenantId|Este es el identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el tenantId para  su organización en la hoja Información general en el centro Azure AD administración. Esto se usa para identificar la organización.|
    |appId|Este es el identificador Azure AD aplicación para la aplicación que creaste en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización.|
@@ -224,11 +224,11 @@ Después de crear el conector de descarga física e insertar los datos de pérdi
 
    ![Página desplegable de estado para el conector de badging físico.](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. En **Última importación,** haga clic en **el vínculo** Descargar registro para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV en la nube de Microsoft.
+3. En **Última importación,** haga clic en **el vínculo** Descargar registro para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo JSON en la nube de Microsoft.
 
-   ![El archivo de registro del conector de descarga física muestra las filas de números del archivo JSON que se cargaron.](..\media\PhysicalBadgingConnectorLogFile.png)
+   ![El archivo de registro del conector de error físico muestra el número de objetos del archivo JSON que se cargaron.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   El **campo RecordsSaved** indica el número de filas del archivo CSV que se cargó. Por ejemplo, si el archivo CSV contiene cuatro filas, el valor de los campos **RecordsSaved** es 4, si el script cargó correctamente todas las filas del archivo CSV.
+   El **campo RecordsSaved** indica el número de objetos del archivo JSON que se cargó. Por ejemplo, si el archivo JSON contiene cuatro objetos, el valor de los campos **RecordsSaved** es 4, si el script cargó correctamente todos los objetos del archivo JSON.
 
 Si no ha ejecutado el script en el paso 4, se muestra un vínculo para descargar el script en **Last import**. Puede descargar el script y, a continuación, seguir los pasos del paso 4 para ejecutarlo.
 

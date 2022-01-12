@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 093b8235c1b6506c7df1c8d21c52e40129c9d5cd
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: ae3745840d8160aa896accf97540dc79194326d3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530240"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941917"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -69,7 +69,7 @@ Deberá seguir los pasos siguientes:
 
    ![Imagen del archivo WindowsDefenderATPOnboarding.](images/plist-onboarding-file.png)
 
-2. En el panel de Pro Jamf, seleccione **Nuevo**.
+2. Inicie sesión en Jamf Pro, vaya a **Perfiles** de configuración de equipos  >  y seleccione **Nuevo**.
 
     ![Imagen de creación de un nuevo panel de Pro Jamf.](images/jamf-pro-configure-profile.png)
 
@@ -83,7 +83,7 @@ Deberá seguir los pasos siguientes:
    - Método distribution: Install Automatically
    - Nivel: Nivel de equipo
 
-4. En **Application & Custom Configuración** seleccione **Configure**.
+4.  Vaya a la **página Aplicación & personalizado Configuración** y seleccione **Upload**  >  **Agregar**.
 
     ![Imagen de configuración de la aplicación y la configuración personalizada.](images/jamfpro-mac-profile.png)
 
@@ -209,7 +209,7 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     - archive_bomb
     - cloudService
     - automaticSampleSubmission
-    - etiquetas
+    - tags
     - hideStatusMenuIcon
 
      Para obtener información, vea [Lista de propiedades para el perfil de configuración completa de JAMF](mac-preferences.md#property-list-for-jamf-full-configuration-profile).
@@ -724,7 +724,7 @@ Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microso
 
 ## <a name="step-9-configure-network-extension"></a>Paso 9: Configurar extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal Centro de seguridad de Microsoft Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
@@ -751,6 +751,9 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
         Tenga en cuenta que los valores **exactos identificador**, filtro de **socket** y filtro **de** socket designados como se especifica anteriormente.
 
         ![Imagen de la configuración mdatpmdav.](images/netext-create-profile.png)
+        
+ > [!NOTE]
+ > Jamf admite la configuración de filtro de contenido integrada que se puede establecer directamente a través de la interfaz.
 
 3. Seleccione la **pestaña** Ámbito.
 

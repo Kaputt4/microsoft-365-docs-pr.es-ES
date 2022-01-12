@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: f3508db76a4a4dca9986de15517ca0df2df5ddb9
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: 68ac9febd12faa9d9ee70d97f293db80494f48f5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61586596"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936587"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -74,8 +74,10 @@ Una vez que se configura una directiva de retención para los mensajes del chat 
 
 Los mensajes permanecen en la carpeta SubstrateHolds durante al menos 1 día y, luego, si son elegibles para su eliminación, el trabajo del temporizador los elimina permanentemente la próxima vez que se ejecuta.
 
-> [!NOTE]
-> Debido al [primer principio de retención](retention.md#the-principles-of-retention-or-what-takes-precedence), la eliminación permanente siempre se suspende si el mismo elemento debe conservarse debido a otra directiva de retención o está en retención en eDiscovery por motivos legales o de investigación.
+> [!IMPORTANT]
+> Debido al [primer principio de retención](retention.md#the-principles-of-retention-or-what-takes-precedence) y dado que los mensajes de chat y del canal de Teams se almacenan en buzones de Exchange Online, la eliminación permanente de la carpeta SubstrateHolds siempre se suspenderá si el buzón se ve afectado por otra directiva de retención (incluidas las directivas aplicadas a la ubicación Exchange), suspensión, suspensión por retraso o si se aplica una retención de eDiscovery al buzón por motivos legales o de investigación.
+>
+> Aunque el buzón se incluya en una retención aplicable, los mensajes de chat y del canal de Teams que se hayan eliminado ya no estarán visibles en la aplicación de Teams, pero seguirán detectables con eDiscovery.
 
 Una vez que se configura una directiva de retención para los mensajes del chat y de los canales, las rutas que seguirá el contenido dependerán de si la directiva de retención se configura para retener y luego eliminar, solo retener, o solo eliminar.
 

@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre Caja fuerte protección de vínculos en Defender for Office 365 para proteger una organización contra la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte y vea los gráficos de los Caja fuerte links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0e8bc1dae8ff1d04c32b67ad3cd0e689a7dd264
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 76bd9d1eb0d9cb1c88cbdce5c4d0377b2dfac14b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121260"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943069"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -305,12 +305,16 @@ Para agregar entradas a la lista en directivas de vínculos de Caja fuerte nueva
   - Microsoft Teams
   - Office web
 
-  Para obtener una lista realmente universal de direcciones URL permitidas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+  Para obtener una lista realmente universal de direcciones URL permitidas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md). Sin embargo, tenga en cuenta que las direcciones URL agregadas no se excluirán de la reescritura de vínculos de Caja fuerte, como debe hacerse en una directiva de vínculos de Caja fuerte.
 
 - Considere la posibilidad de agregar direcciones URL internas usadas habitualmente a la lista para mejorar la experiencia del usuario. Por ejemplo, si tiene servicios locales, como Skype Empresarial o SharePoint, puede agregar esas direcciones URL para excluirlas del examen.
 - Si ya tiene **No volver** a escribir las siguientes entradas de direcciones URL en las directivas de vínculos de Caja fuerte, asegúrese de revisar las listas y agregar caracteres comodín según sea necesario. Por ejemplo, la lista tiene una entrada como y más adelante decide incluir `https://contoso.com/a` subpaths como `https://contoso.com/a/b` . En lugar de agregar una nueva entrada, agregue un comodín a la entrada existente para que se convierta en `https://contoso.com/a/*` .
 - Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL. Los caracteres comodín incluyen explícitamente prefijos o subdominios. Por ejemplo, la entrada no es la misma que , porque permite a los usuarios visitar subdominios y rutas de acceso `contoso.com` `*.contoso.com/*` en el dominio `*.contoso.com/*` especificado.
 - Si una dirección URL usa el redireccionamiento automático de HTTP a HTTPS (por ejemplo, redirección 302 para ) e intenta escribir entradas HTTP y HTTPS para la misma dirección URL de la lista, puede observar que la segunda entrada de dirección URL reemplaza a la primera entrada `http://www.contoso.com` `https://www.contoso.com` de dirección URL. Este comportamiento no se produce si las versiones HTTP y HTTPS de la dirección URL son completamente independientes.
+- No especifique http:// o https:// (es decir, contoso.com) para excluir las versiones HTTP y HTTPS.
+- `*.contoso.com` no **cubre** contoso.com, por lo que tendría que excluir ambos para abarcar tanto el dominio especificado como los dominios secundarios.
+- `contoso.com/*` cubre **solo** contoso.com, por lo que no es necesario excluir ambos y `contoso.com` ; `contoso.com/*` `contoso.com/*` bastaría.
+- Para excluir todas las iteraciones de un dominio, se necesitan dos entradas de exclusión; `contoso.com/*` y `*.contoso.com/*` . Se combinan para excluir HTTP y HTTPS, el dominio principal contoso.com y cualquier dominio secundario, así como cualquier parte final (por ejemplo, se tratan contoso.com y contoso.com/vdir1).
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Sintaxis de entrada para la lista "No volver a escribir las siguientes direcciones URL"
 

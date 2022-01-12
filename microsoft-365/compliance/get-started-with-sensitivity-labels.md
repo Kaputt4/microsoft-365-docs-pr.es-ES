@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 052f4d84d4e974faad75c80d18d02cbac3501196
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: e07279a2de421985b0ba6f97d2b6ad843d2ba9fa
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645955"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874033"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -65,7 +65,17 @@ De forma predeterminada, los administradores globales de su espacio empresarial 
 
 Como alternativa al uso de los roles predeterminados, puede crear un nuevo grupo de roles y agregar **administrador de etiquetas de confidencialidad** o roles de **configuración de la organización** a este grupo. Para un rol de solo lectura, use **lector de etiquetas de confidencialidad**. 
 
-Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md).
+> [!NOTE]
+> Ahora, en la versión preliminar, puede usar los siguientes grupos de roles:
+> - **Protección de información**
+> - **Administradores de Information Protection**
+> - **Analistas de Information Protection**
+> - **Investigadores de Information Protection**
+> - **Lectores de Information Protection**
+>
+> Para obtener una explicación de cada uno de ellos y de los nuevos roles que contienen, seleccione un grupo de roles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> > **Permisos y roles** > **Centro de cumplimiento** > **Roles** y, a continuación, revise la descripción en el panel desplegable. O bien, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+
+Para obtener instrucciones sobre cómo agregar usuarios al grupo de roles predeterminado, roles o crear sus propios grupos de roles, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md).
 
 Estos permisos son necesarios solo para crear y configurar etiquetas de confidencialidad y sus directivas de etiquetado. No son necesarios para aplicar las etiquetas en aplicaciones o servicios. Si se necesitan permisos adicionales para configuraciones específicas relacionadas con las etiquetas de confidencialidad, estos permisos se especificarán en las instrucciones de la documentación correspondientes.
 

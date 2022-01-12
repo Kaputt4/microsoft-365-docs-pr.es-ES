@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: aa4cda3d005d0433c56b77d30d24c789cdd70f2e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 84b7a63f61091a799978fd3d880666b81f5a5df4
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218363"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942889"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -42,7 +42,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 
 ****
 
-|Nombre del campo y Nombre del campo para mostrar|Nombre del campo que se puede buscar|Nombre del campo exportado|Descripción|
+|Nombre del campo y Nombre del campo para mostrar|Nombre del campo que se puede buscar|Nombre del campo exportado|Description|
 |---|---|---|---|
 |Id. de contenido de datos adjuntos|AttachmentContentId||Identificador de contenido de datos adjuntos del elemento.|
 |Puntuación de privilegios de cliente de abogado|AttorneyClientPrivilegeScore||Puntuación de contenido del modelo de privilegios abogado-cliente.|
@@ -72,7 +72,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Fecha de documento creada|CreatedTime|Doc_date_created|Crear fecha a partir de metadatos del documento.|
 |DocIndex*|||Índice de la familia. **-1** o **0** significa que es la raíz.|
 |Palabras clave de documento||Doc_keywords|Palabras clave de los metadatos del documento.|
-|Documento modificado por||Doc_modified_by|Fecha de última modificación de los metadatos del documento.|
+|Documento modificado por||Doc_modified_by|El usuario que modificó por última vez el documento a partir de metadatos del documento.|
 |Revisión de documentos|Doc_Version|Doc_Version|Revisión de los metadatos del documento.|
 |Asunto del documento||Doc_subject|Asunto de los metadatos del documento.|
 |Plantilla de documento||Doc_template|Plantilla de los metadatos del documento.|

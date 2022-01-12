@@ -16,15 +16,15 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel Informes del Centro de seguridad & cumplimiento.
-ms.custom: admindeeplinkEXCHANGE
+ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5445a55fad5d580aa1af02271a50d4494f866ec4
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c72e1b82a7e6336510c3b997d077c544f4169aea
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422320"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942505"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de & cumplimiento
 
@@ -37,7 +37,7 @@ ms.locfileid: "61422320"
 
 > [!NOTE]
 >
-> La mayoría de los informes de este artículo también están disponibles en el portal de Microsoft 365 Defender o en el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administración.</a> Para obtener más información, consulte los siguientes temas:
+> La mayoría de los informes de este artículo también están disponibles en el portal de Microsoft 365 Defender o en el centro Exchange administración (EAC). Para obtener más información, consulte los siguientes temas:
 >
 > - [Informes de flujo de correo en el nuevo centro Exchange administración](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico](view-email-security-reports.md)
@@ -55,14 +55,8 @@ Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-these-r
 
 ## <a name="exchange-transport-rule-report"></a>Exchange de regla de transporte
 
-El **Exchange de regla** de transporte muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
-
-Para ver el informe, abra el Centro de seguridad & cumplimiento en , vaya al Panel de informes y <https://protection.office.com> seleccione Exchange regla de  \>  **transporte**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/ETRRuleReport> .
-
-![Exchange de regla de transporte en el panel Informes.](../../media/scc-transport-rule-report-widget.png)
-
 > [!NOTE]
-> Al hacer clic en el widget de este informe en el Centro de seguridad & cumplimiento (protection.office.com) ahora le llevará al informe completo en el portal de Microsoft 365 Defender (security.microsoft.com). Para obtener más información sobre el informe, [vea Exchange de regla de transporte](view-email-security-reports.md#exchange-transport-rule-report).
+> El **Exchange de regla de transporte** ya está disponible en el EAC. Para obtener más información, [vea Exchange de reglas de transporte en el nuevo EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ## <a name="forwarding-report"></a>Informe de reenvío
 

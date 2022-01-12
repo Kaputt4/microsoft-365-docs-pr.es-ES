@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 76512d28363fc295d912ce014885614284eba90a
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: 8354693f7f748771c9b6543455cf96177afacd05
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436673"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993292"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -115,12 +115,6 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 
     ```bash
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
-    ```
-
-- Descargue y haga que se usen todos los metadatos de los repositorios de yum habilitados actualmente:
-
-    ```bash
-    yum makecache
     ```
 
 ### <a name="sles-and-variants"></a>SLES y variantes
@@ -466,6 +460,6 @@ Consulte [Problemas de instalación del registro](linux-resources.md#log-install
 
 Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Investigar problemas de estado del agente](health-status.md)

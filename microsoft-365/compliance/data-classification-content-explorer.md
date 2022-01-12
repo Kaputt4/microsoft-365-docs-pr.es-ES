@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 0332584988ab9a88ef7440f6e5fc71ef3c9cbd5d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: fb7448ffd4ed56deb41bbb1d128608b88e9617ea
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747781"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871832"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -79,6 +79,25 @@ La cuenta que use para tener acceso al explorador de contenido debe estar en uno
 También puede asignar uno o ambos roles a un grupo de roles personalizado para ajustar el acceso a Content Explorer.
 
 Un administrador global puede asignar el visor de listas del explorador de contenido cuando sea necesario y la pertenencia al grupo de funciones del visor del explorador de contenido.
+
+#### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+
+Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
+
+Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrador de Information Protection
+- Analista de Information Protection
+- Investigador de protección de información
+- Lector de protección de información
+
+Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protección de la información
+- Administradores de Information Protection
+- Analistas de Information Protection
+- Investigadores de protección de la información
+- Lectores de Information Protection
 
 ## <a name="content-explorer"></a>Explorador de contenido
 

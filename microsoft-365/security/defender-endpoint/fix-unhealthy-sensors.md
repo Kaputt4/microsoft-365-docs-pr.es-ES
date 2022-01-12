@@ -15,25 +15,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/23/2020
 ms.technology: mde
-ms.openlocfilehash: 71b0ca22a7a040aaa49fc160038a89292c20019c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e801776001b79bf1ae3e6e8a220c5e4c395896db
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167351"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941977"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corregir sensores incorrectos en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
-Los dispositivos que se clasifican como mal configurados o inactivos se pueden marcar debido a distintas causas. En esta sección se proporcionan algunas explicaciones sobre lo que podría haber provocado que un dispositivo se clasificara como inactivo o mal configurado.
+Los dispositivos se pueden clasificar como mal configurados o inactivos están marcados por distintas causas. En esta sección se proporcionan algunas explicaciones sobre lo que podría haber provocado que un dispositivo se clasificara como inactivo o mal configurado.
 
 ## <a name="inactive-devices"></a>Dispositivos inactivos
 
@@ -41,16 +41,16 @@ Un dispositivo inactivo no está marcado necesariamente debido a un problema. La
 
 ### <a name="device-is-not-in-use"></a>El dispositivo no está en uso
 
-Si el dispositivo no se ha utilizado durante más de siete días por cualquier motivo, permanecerá en estado "Inactivo" en el portal.
+Cualquier dispositivo que no esté en uso durante más de siete días conservará el estado "Inactivo" en el portal.
 
 ### <a name="device-was-reinstalled-or-renamed"></a>El dispositivo se reinstaló o cambió el nombre
-Un dispositivo reinstalado o cambiado de nombre generará una nueva entidad de dispositivo en el Centro de seguridad de Microsoft Defender. La entidad de dispositivo anterior permanecerá con el estado "Inactivo" en el portal. Si reinstalaste un dispositivo e implementaste el paquete Defender for Endpoint, busca el nuevo nombre del dispositivo para comprobar que el dispositivo está informando normalmente.
+Se genera una nueva entidad de dispositivo en Microsoft 365 Defender dispositivos reinstalados o cuyo nombre se ha cambiado. La entidad de dispositivo anterior permanece, con un estado "Inactivo" en el portal. Si reinstalaste un dispositivo e implementaste el paquete Defender for Endpoint, busca el nuevo nombre del dispositivo para comprobar que el dispositivo está informando normalmente.
 
 ### <a name="device-was-offboarded"></a>El dispositivo se ha desactivado
 Si el dispositivo se ha desactivado, seguirá apareciendo en la lista de dispositivos. Después de siete días, el estado de mantenimiento del dispositivo debe cambiar a inactivo.
 
 ### <a name="device-is-not-sending-signals"></a>El dispositivo no envía señales
-Si el dispositivo no envía ninguna señal durante más de siete días a cualquiera de los canales de Microsoft Defender para endpoint por cualquier motivo, incluidas las condiciones que se incluyen en la clasificación de dispositivos mal configurados, un dispositivo puede considerarse inactivo. 
+Si el dispositivo no envía señales a ningún canal de Microsoft Defender para endpoints durante más de siete días por cualquier motivo, se puede considerar que un dispositivo está inactivo; esto incluye condiciones que se incluyen en la clasificación de dispositivos mal configurados.
 
 ¿Esperas que un dispositivo esté en estado "Activo"? [Abra un vale de soporte](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561)técnico .
 
@@ -84,14 +84,14 @@ Siga estas acciones para corregir problemas conocidos relacionados con un dispos
   Compruebe que la configuración de proxy se haya completado correctamente, que WinHTTP pueda detectar y comunicarse a través del servidor proxy de su entorno y que el servidor proxy permita el tráfico a las direcciones URL del servicio de Microsoft Defender para puntos de conexión.
 
 - [Asegurarse de que el servicio de datos de diagnóstico está habilitado](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-Si los dispositivos no están informando correctamente, es posible que deba comprobar que el servicio de datos de diagnóstico de Windows está configurado para iniciarse automáticamente y se está ejecutando en el punto de conexión.
+Si los dispositivos no se informan correctamente, debe comprobar que el servicio de Windows de datos de diagnóstico está configurado para iniciarse automáticamente. Compruebe también que el Windows de datos de diagnóstico se está ejecutando en el punto de conexión.
 
 - [Asegúrese de que Antivirus de Microsoft Defender no está deshabilitada por la directiva](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de Defender for Endpoint necesita que el controlador antimalware de inicio anticipado (ELAM) de Antivirus de Microsoft Defender esté habilitado.
+Si los dispositivos ejecutan un cliente antimalware de terceros, el agente de Defender for Endpoint requiere que el controlador antimalware de inicio Antivirus de Microsoft Defender inicio anticipado (ELAM) esté habilitado.
 
 Si has tomado medidas correctivas y el estado del dispositivo sigue mal configurado, [abre un vale de soporte técnico.](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Ver también
 - [Comprobar el estado del sensor en Microsoft Defender para endpoint](check-sensor-status.md)
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)

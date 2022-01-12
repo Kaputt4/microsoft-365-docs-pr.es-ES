@@ -1,5 +1,5 @@
 ---
-title: Directivas de seguridad preestablecidas
+title: Directivas de seguridad predefinidas
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,15 +12,16 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8058a9165ef97c82c2e600db0c98b14616bc175
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a557afd562c2b4d0127f69afec40c1909944968e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666715"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943165"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -128,7 +129,7 @@ Por ejemplo, si existe una configuración de seguridad  en protección estándar
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Usar el portal Microsoft 365 Defender para asignar directivas de seguridad predeterminadas estándar y estrictas a los usuarios
 
-1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & Directivas de amenazas preconfiguradas en la sección \>  \>  \>  **Directivas con** plantilla.
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & Reglas de amenazas Preestablecidas Directivas de seguridad en la <https://security.microsofot.com>  \>  \>  \>  **sección Directivas con** plantilla. Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
 
 2. En la **página Directivas de seguridad preestablecidas,** haga clic en **Administrar** en las secciones **Protección estándar** **o** Protección estricta.
 
@@ -165,7 +166,7 @@ Recuerde que la directiva de seguridad preestablecida de protección integrada s
 
 Por lo tanto, normalmente no recomendamos excepciones a la **directiva de** seguridad preestablecida de protección integrada.
 
-1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & Directivas de amenazas preconfiguradas en la sección \>  \>  \>  **Directivas con** plantilla.
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & Reglas de amenazas Preestablecidas Directivas de seguridad en la <https://security.microsofot.com>  \>  \>  \>  **sección Directivas con** plantilla. Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
 
 2. En la **página Directivas de seguridad preestablecidas,** seleccione Agregar **exclusiones (no recomendadas)** en **la** sección Protección integrada.
 

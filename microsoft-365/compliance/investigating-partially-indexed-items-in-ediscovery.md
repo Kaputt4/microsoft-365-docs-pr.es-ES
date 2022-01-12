@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (también denominados elementos no indexados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: 9d61f28e6dd2fc777fed62c1f7d4a6da1a18907c
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 308b99b8bcb8d11c53759700d43651e521987948
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645161"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940979"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigar elementos parcialmente indizados en eDiscovery
 
@@ -94,7 +94,7 @@ Las etiquetas de error están hechas de dos partes de información, el error y e
   
 A continuación se muestra una lista de errores de indización y una descripción de la posible causa del error.
   
-| Etiqueta Error | Descripción |
+| Etiqueta Error | Description |
 |:-----|:-----|
 | `attachmentcount` <br/> |Un mensaje de correo electrónico tenía demasiados datos adjuntos y algunos de estos datos adjuntos no se procesaron.  <br/> |
 | `attachmentdepth` <br/> |El recuperador de contenido y el analizador de documentos encontraron demasiados niveles de datos adjuntos anidados dentro de otros datos adjuntos. Algunos de estos datos adjuntos no se procesaron.  <br/> |

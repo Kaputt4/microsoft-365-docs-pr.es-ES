@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: 295e811e6437bb931e1b735725f3c69016cfae8a
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 04c56c78ac854141e2e9c6e207745b3722537e74
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950682"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938834"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
@@ -74,6 +74,25 @@ Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-cla
 - Lector global
 - Lector de seguridad
 - Lector de informes
+
+#### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+
+Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
+
+Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrador de Information Protection
+- Analista de Information Protection
+- Investigador de protección de información
+- Lector de protección de información
+
+Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protección de la información
+- Administradores de Information Protection
+- Analistas de Information Protection
+- Investigadores de protección de la información
+- Lectores de Information Protection
 
 ### <a name="overall-installation-workflow"></a>Flujo general de trabajo de la instalación
 

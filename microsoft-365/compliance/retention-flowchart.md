@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar un diagrama de flujo para determinar el resultado cuando un elemento tenga varias directivas de retención o una etiqueta de retención y directivas de retención
-ms.openlocfilehash: b99f54178adc05987249f05c0f2d1c00194f0db0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b9c3b94dcb50499b6af72fd124da384f90d16da9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159771"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935830"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Diagrama de flujo para determinar cuándo se conservará o eliminará permanentemente un elemento
 
@@ -35,7 +35,7 @@ Este flujo lógico se usa para un elemento cuando se aplica cualquiera de las co
 - Se aplicó más de una directiva de retención
 - Hay una etiqueta de retención y una o varias directivas de retención
 
-Cuando un elemento está sujeto a una suspensión de exhibición de documentos electrónicos, siempre se conservará antes de que la decisión fluya para las directivas de retención y una etiqueta de retención.
+Cuando un elemento está sujeto a una retención de exhibición de documentos electrónicos (o las tecnologías anteriores de suspensión legal o conservación local), siempre se conservará antes de que la decisión fluya para las directivas de retención y una etiqueta de retención.
 
 Si alguno de los términos usados en este diagrama de flujo no le resulta familiar, consulte [Más información sobre las directivas de retención y las etiquetas de retención](retention.md).
 

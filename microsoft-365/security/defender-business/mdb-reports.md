@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 31f71c49bc81588db26f8c348c70a63c5567a18e
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 819a2cb286459cb6741ecd6f1da12bb2b3fa9634
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508305"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942793"
 ---
 # <a name="reports-in-microsoft-defender-for-business-preview"></a>Informes en Microsoft Defender para empresas (versión preliminar)
 
@@ -30,6 +30,16 @@ ms.locfileid: "61508305"
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. Microsoft Defender para empresas (versión preliminar) incluye varios informes como se describe en la tabla siguiente:<br/><br/>
 
+Hay varios informes disponibles en el portal Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). En este artículo se describen estos informes, cómo puede usarlos y cómo encontrarlos.
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
+
+<br/><br/>
+
+## <a name="reports-in-defender-for-business"></a>Informes en Defender para empresas
 
 |Informe  |Descripción  |
 |---------|---------|

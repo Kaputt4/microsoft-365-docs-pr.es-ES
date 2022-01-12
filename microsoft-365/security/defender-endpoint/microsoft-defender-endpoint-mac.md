@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6982d6b0140b02aa677d78120fbd2fddee47f45
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 15fbe01678a23de43d61705f2be96e7885f3b406
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560360"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941893"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -95,6 +95,7 @@ Microsoft Defender para Endpoint en Mac requiere una de las siguientes ofertas d
 - Seguridad de Microsoft 365 E5
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Enterprise E5
+- Microsoft 365 Empresa Premium
 - Windows 11 Enterprise E5
 - Microsoft Defender para punto de conexión
 
@@ -110,7 +111,7 @@ Al agregar exclusiones, tenga en cuenta los errores de [exclusión comunes para 
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL, o puede que necesite crear una regla de permitir específicamente para ellas.
 
-|Hoja de cálculo de la lista de dominios|Descripción|
+|Hoja de cálculo de la lista de dominios|Description|
 |---|---|
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de cálculo aquí: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 

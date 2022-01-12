@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 53212ec1d593f90aad7a804486b82cdf729c1643
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 52d564f631c0129dea20608aac20e77141fb0be0
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217472"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943381"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 
@@ -46,7 +46,7 @@ Si eres cliente de Defender for Endpoint, debes solicitar Expertos en amenazas d
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Aplicar para Expertos en amenazas de Microsoft: servicio de notificaciones de ataques dirigidos
 
-Si ya eres cliente de Defender for Endpoint, puedes aplicar a través del Centro de seguridad de Microsoft Defender.
+Si ya eres cliente de Defender for Endpoint, puedes aplicar a través del portal Microsoft 365 Defender endpoint.
 
 1. En el panel de navegación, vaya a Configuración > General > Características avanzadas **> Expertos en amenazas de Microsoft: Notificaciones de ataques dirigidos**.
 
@@ -94,7 +94,7 @@ Está disponible como servicio de suscripción. Si ya eres cliente de Defender f
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Consulte a un experto en amenazas de Microsoft sobre actividades de ciberseguridad sospechosas en su organización
 
-Puede asociarse con Expertos en amenazas de Microsoft que pueden participar directamente desde dentro del Centro de seguridad de Microsoft Defender para obtener una respuesta rápida y precisa. Los expertos proporcionan información para comprender mejor las amenazas complejas, las notificaciones de ataque dirigidas que recibes o si necesitas más información sobre las alertas, un dispositivo potencialmente comprometido o un contexto de inteligencia de amenazas que ves en el panel del portal.
+Puede asociarse con Expertos en amenazas de Microsoft que se pueden usar directamente desde el portal de Microsoft 365 Defender para obtener una respuesta rápida y precisa. Los expertos proporcionan información para comprender mejor las amenazas complejas, las notificaciones de ataque dirigidas que recibes o si necesitas más información sobre las alertas, un dispositivo potencialmente comprometido o un contexto de inteligencia de amenazas que ves en el panel del portal.
 
 > [!NOTE]
 >

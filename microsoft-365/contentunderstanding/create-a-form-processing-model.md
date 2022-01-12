@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un modelo de procesamiento de formularios en SharePoint Syntex.
-ms.openlocfilehash: 5ac00352c64f1403f87ff1c16f3fa44e8c737896
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53beb46c2615a4cb3634907262be07e1458ef283
+ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198594"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993434"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex
 
@@ -135,7 +135,38 @@ Debe etiquetar los documentos para enseñar al modelo a comprender los campos y 
 
     ![Listo.](../media/content-understanding/doc-lib-done.png) 
 
-## <a name="see-also"></a>Vea también
+### <a name="use-flows-to-extract-information"></a>Usar flujos para extraer información
+
+Hay dos flujos disponibles para procesar un archivo seleccionado o un lote de archivos en una biblioteca donde se ha aplicado un modelo de procesamiento de formularios.
+
+- **Extraer información de una imagen o archivo PDF** con un modelo de procesamiento de formularios: para extraer texto de una imagen seleccionada o un archivo PDF, ejecute un modelo de procesamiento de formularios. Admite un único archivo seleccionado a la vez y solo admite archivos PDF y archivos de imagen (PNG, JPG y JPEG). Para ejecutar el flujo, seleccione un archivo y, a continuación, **seleccione Automatizar la** información de  >  **extracción**.
+
+    ![Captura de pantalla que muestra el menú Automatizar con extraer información resaltada.](../media/content-understanding/automate-extract-info.png)  
+
+- **Extraer información de archivos con un modelo de** procesamiento de formularios: use con modelos de procesamiento de formularios para leer y extraer información de un lote de archivos. Procesa hasta 5.000 SharePoint a la vez. Al ejecutar este flujo, hay ciertos parámetros que puede establecer. Puede:
+
+    - Elija si desea incluir archivos procesados anteriormente (el valor predeterminado no es incluir archivos procesados anteriormente).
+    - Seleccione el número de archivos que desea procesar (el valor predeterminado es 100 archivos).
+    - Especifique el orden en que se procesarán los archivos (las opciones son por identificador de archivo, nombre de archivo, hora de creación del archivo o hora de la última modificación).
+    - Especifique cómo desea ordenar el orden (orden ascendente o descendente).
+
+    ![Captura de pantalla que muestra el panel Ejecutar flujo con opciones de parámetros resaltadas.](../media/content-understanding/run-flow-panel.png)  
+
+### <a name="classification-date-field"></a>Campo Fecha de clasificación
+
+Cuando se SharePoint Syntex un modelo de procesamiento de formularios (o un  modelo de comprensión de documentos) a una biblioteca de documentos, el campo Fecha de clasificación se incluye en el esquema de biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
+
+Cuando se marca un modelo con la fecha de **clasificación,** puede usar el proceso Enviar un correo electrónico después de **que SharePoint Syntex** procese un flujo de archivos para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
+
+Para ejecutar el flujo:
+
+1. Seleccione un archivo y, a continuación,   >  **seleccione Integrar Power Automate** Crear un  >  **flujo**.
+
+2. En el **panel Crear un flujo,** seleccione Enviar un correo **electrónico después de SharePoint Syntex procesa un archivo**.
+
+    ![Captura de pantalla que muestra la opción Crear un panel de flujo y flujo resaltadas.](../media/content-understanding/integrate-create-flow.png) 
+
+## <a name="see-also"></a>Consulte también
   
 [Documentación de Power Automate](/power-automate/)
 

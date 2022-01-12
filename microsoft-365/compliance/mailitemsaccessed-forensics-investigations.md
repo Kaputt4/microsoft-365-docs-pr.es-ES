@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: eeb52058a9937b9ba59b53c7491ccf652cac5288
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8446c933f71717e57850bbbf2cce49391e26782c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152975"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872626"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usar auditoría avanzada para investigar cuentas comprometidas
 
 Una cuenta de usuario comprometida (también denominada *adquisición de cuenta*) es un tipo de ataque en el que un atacante obtiene acceso a una cuenta de usuario y opera como el usuario. En ocasiones, estos tipos de ataques provocan más daño de lo que el atacante podría haber planeado. Al investigar cuentas de correo electrónico comprometidas, tiene que asumir que se han comprometido más datos de correo de los que se indican mediante el seguimiento de la presencia real del atacante. Según el tipo de datos de los mensajes de correo electrónico, tiene que asumir que la información confidencial se ha visto comprometida o puede enfrentarse a sanciones, a menos que pueda demostrar que la información confidencial no se ha expuesto. Por ejemplo, las organizaciones reguladas por HIPAA se enfrentan a multas considerables si hay evidencia de que la información sanitaria del paciente (PHI) se ha expuesto. En estos casos, es poco probable que los atacantes estén interesados en la PHI, pero las organizaciones deben informar de las vulneraciones de datos, a menos que puedan probar lo contrario.
 
-Para ayudarle con la investigación de las cuentas de correo electrónico, ahora estamos realizando auditorías de los accesos a los datos por parte de protocolos de correo y clientes con la acción de auditoría del buzón *MailItemsAccessed*. Esta nueva acción de auditoría ayudará a los investigadores a entender mejor las vulneraciones de datos del correo electrónico y le ayudarán a identificar el alcance de los elementos de correo específicos que se pueden ver comprometidos. El objetivo del uso de esta nueva acción de auditoría son las actividades forenses de defensa para ayudarle a confirmar que no se han comprometido los datos de un elemento de correo determinado. Si un atacante ha obtenido acceso a una parte específica del correo, Exchange Online realiza una auditoría del evento incluso aunque no haya ninguna indicación de que el elemento de correo se haya leído realmente.
+Para ayudarle con la investigación de las cuentas de correo electrónico, ahora estamos realizando auditorías de los accesos a los datos por parte de protocolos de correo y clientes con la acción de auditoría del buzón *MailItemsAccessed*. Esta nueva acción de auditoría ayudará a los investigadores a entender mejor las vulneraciones de datos del correo electrónico y le ayudarán a identificar el alcance de los elementos de correo específicos que se pueden ver comprometidos. El objetivo del uso de esta nueva acción de auditoría son las actividades forenses de defensa para ayudarle a confirmar que no se han comprometido los datos de un elemento de correo determinado. Si un atacante ha obtenido acceso a una parte específica del correo, Exchange Online realiza una auditoría del evento incluso aunque no haya ninguna indicación de que el elemento de correo se haya leído.
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>La acción de auditoría del buzón MailItemsAccessed
 
@@ -37,7 +37,7 @@ La acción de auditoría del buzón MailItemsAccessed abarca todos los protocolo
 
 ### <a name="auditing-sync-access"></a>Auditoría del acceso de sincronización
 
-Las operaciones de sincronización solo se registran cuando se obtiene acceso a un buzón mediante una versión de escritorio del cliente de Outlook para Windows o Mac. Durante la operación de sincronización, estos clientes suelen descargar un amplio conjunto de elementos de correo desde la nube a un equipo local. El volumen de auditoría para las operaciones de sincronización es inmenso. Por lo tanto, en lugar de generar un registro de auditoría para cada elemento de correo que está sincronizando, solo generamos un evento de auditoría para la carpeta de correo que contiene los elementos que se han sincronizado. Esto presupone que *todos* los elementos de correo de la carpeta sincronizada se han visto comprometidos. El tipo de acceso se registra en el campo OperationProperties del registro de auditoría.
+Las operaciones de sincronización solo se registran cuando se obtiene acceso a un buzón mediante una versión de escritorio del cliente de Outlook para Windows o Mac. Durante la operación de sincronización, estos clientes suelen descargar un amplio conjunto de elementos de correo desde la nube a un equipo local. El volumen de auditoría para las operaciones de sincronización es inmenso. Por lo tanto, en lugar de generar un registro de auditoría para cada elemento de correo que esté sincronizado, generamos un evento de auditoría para la carpeta de correo que contiene los elementos que se han sincronizado y suponemos que *todos* los elementos de correo de la carpeta sincronizada se han visto comprometidos. El tipo de acceso se registra en el campo OperationProperties del registro de auditoría.
 
 Vea el paso 2 de la sección [usar registros de auditoría de MailItemsAccessed para investigaciones forenses](#use-mailitemsaccessed-audit-records-for-forensic-investigations) para ver un ejemplo de cómo mostrar el tipo de acceso de sincronización en un registro de auditoría.
 
@@ -49,7 +49,7 @@ Vea el paso 4 de la sección [usar registros de auditoría de MailItemsAccessed 
 
 ### <a name="throttling-of-mailitemsaccessed-audit-records"></a>Limitación de registros de auditoría de MailItemsAccessed
 
-Si se generan más de 1 000 registros de auditoría de MailItemsAccessed en menos de 24 horas, Exchange Online dejará de generar registros de auditoría para actividad de MailItemsAccessed. Cuando un buzón está limitado, la actividad de MailItemsAccessed no se registrará durante 24 horas después de que se haya limitado el buzón. Si esto ocurre, es posible que se haya puesto en peligro el buzón durante este período. El registro de la actividad de MailItemsAccessed se reanudará tras un período de 24 horas.
+Si se generan más de 1 000 registros de auditoría de MailItemsAccessed en menos de 24 horas, Exchange Online dejará de generar registros de auditoría para actividad de MailItemsAccessed. Cuando un buzón está limitado, la actividad de MailItemsAccessed no se registrará durante 24 horas después de que se haya limitado el buzón. Si se limitó el buzón de curro, es posible que se haya puesto en peligro el buzón durante este período. El registro de la actividad de MailItemsAccessed se reanudará tras un período de 24 horas.
 
 Aquí se muestran algunas cosas que debe tener en cuenta sobre la limitación:
 
@@ -101,7 +101,7 @@ Estos son los pasos para usar los registros de auditoría de MailItemsAccessed p
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*IsThrottled:True*"} | FL
    ```
 
-2. Busque actividades de sincronización. Si un atacante usa un cliente de correo electrónico para descargar los mensajes de un buzón, puede desconectar el equipo de Internet y tener acceso a los mensajes de forma local sin interactuar con el servidor. Esto quiere decir que la auditoría de buzón no podría auditar estas actividades.
+2. Busque actividades de sincronización. Si un atacante usa un cliente de correo electrónico para descargar los mensajes de un buzón, puede desconectar el equipo de Internet y tener acceso a los mensajes de forma local sin interactuar con el servidor. En este caso, la auditoría de buzón no podría auditar estas actividades.
 
    Para buscar registros de MailItemsAccessed en que se accedió a los elementos de correo con una operación de sincronización, ejecute el siguiente comando:
 
@@ -129,7 +129,7 @@ Estos son los pasos para usar los registros de auditoría de MailItemsAccessed p
    |---|---|
    |ClientInfoString|Describe el protocolo, cliente (incluye la versión).|
    |ClientIPAddress|Dirección IP del equipo cliente.|
-   |SessionId|El ID. de la sesión le ayuda a diferenciar las acciones de un atacante frente a las actividades cotidianas del usuario en la misma cuenta (en el caso de una cuenta comprometida)|
+   |SessionId|El identificador de la sesión ayuda a diferenciar las acciones de un atacante frente a las actividades cotidianas del usuario en la misma cuenta (útil para cuentas comprometidas)|
    |UserId|UPN del usuario que lee el mensaje.|
    |
 
@@ -154,7 +154,7 @@ Estos son los pasos para usar los registros de auditoría de MailItemsAccessed p
    Puede usar los datos de auditoría para las operaciones de enlace de dos maneras diferentes:
 
    - Acceda o recopile todos los mensajes de correo electrónico a los que el atacante accedió mediante el InternetMessageId para buscarlos y comprobar si alguno de estos mensajes contiene información confidencial.
-   - Use el InternetMessageId para buscar registros de auditoría relacionados con un conjunto de mensajes de correo potencialmente confidenciales. Esto es útil si solo le preocupa un pequeño número de mensajes.
+   - Use el InternetMessageId para buscar registros de auditoría relacionados con un conjunto de mensajes de correo potencialmente confidenciales. Esto es útil si solo le preocupan algunos mensajes.
 
 ## <a name="filtering-of-duplicate-audit-records"></a>Filtrar registros de auditoría duplicados
 

@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 73323e58cbb30243b0e90bdd1f45989d238d5c37
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: a156b7232c20703c0f2eb320592a596e671d16f9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530960"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942733"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurar y configurar Microsoft Defender para el plan de extremo 1
 
@@ -189,7 +189,7 @@ Las reglas de reducción de superficie de ataque están disponibles en dispositi
 > Para obtener más información sobre las reglas de reducción de superficie de ataque, consulta los siguientes recursos:
 > - [Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware](attack-surface-reduction.md)
 > - [Ver la lista de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md)
-> - [Personalizar las reglas de la reducción de superficie expuesta a ataques](customize-attack-surface-reduction.md)
+> - [Fase 3 de implementación de reglas de reducción de superficie de ataque: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
 
 ### <a name="ransomware-mitigation"></a>Mitigación de ransomware
 
@@ -397,7 +397,7 @@ Para ayudarle con la planeación de la implementación de WDAC, consulte los sig
 
 - [Windows Defender de control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para endpoint. 
 
