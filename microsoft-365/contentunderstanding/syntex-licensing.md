@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Más información sobre las licencias para SharePoint Syntex
-ms.openlocfilehash: 2e252ba496d89d388b67330bd1106b5f82c9aeb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c8ed6b8b5864e0d859e0cbf8655406966e78ff3b
+ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198558"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "61660159"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>Licencias para SharePoint Syntex
 
@@ -29,7 +29,7 @@ Para usar SharePoint Syntex, su organización debe tener una suscripción a Shar
  
 ## <a name="tasks-requiring-a-license"></a>Tareas que requieren una licencia
  
-Las siguientes tareas requieren una licencia de SharePoint Syntex para que el usuario las realice:
+Las siguientes tareas requieren una [licencia de SharePoint Syntex](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex) para que el usuario las realice:
  
 - Apicar un modelo de comprensión mediante documentos a una biblioteca. (A los usuarios sin licencia se les puede conceder acceso a un centro de contenido y pueden crear modelos de comprensión mediante documentos allí, pero no pueden aplicarlos a una biblioteca de documentos).
 - Creación de un modelo de procesamiento de formularios mediante el punto de entrada en una biblioteca
