@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e27439a23d21dd95bb717104b5d87291b7e4592f
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218447"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934206"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío
 
@@ -44,11 +44,11 @@ La supervisión de la conexión de red detrás de un proxy de reenvío es posibl
 
 La protección de red se puede controlar con los siguientes modos:
 
-- **Bloquear:** se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. Podrás ver esta actividad en Centro de seguridad de Microsoft Defender.
-- **Auditoría:** los usuarios o aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. Sin embargo, seguirás teniendo esta actividad en Centro de seguridad de Microsoft Defender.
+- **Bloquear:** se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. Podrás ver esta actividad en Microsoft 365 Defender.
+- **Auditoría:** los usuarios o aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. Sin embargo, seguirás teniendo esta actividad en Microsoft 365 Defender.
 
 
-Si desactivas la protección de red, los usuarios o las aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. No verá ninguna actividad de red en Centro de seguridad de Microsoft Defender.
+Si desactivas la protección de red, los usuarios o las aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. No verá ninguna actividad de red en Microsoft 365 Defender.
 
 Si no lo configura, el bloqueo de red se desactivará de forma predeterminada.
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Obtenga información sobre cómo controlar qué usuarios pueden crear Microsoft 365 grupos.
-ms.openlocfilehash: 279c8826599bf2a41690c95c4202f81fe3206ff4
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 4280b6859358580547302ccf9497e8cd1e7ed752
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422104"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939410"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Administrar quién puede crear grupos de Microsoft 365
 
@@ -58,7 +58,7 @@ Si es miembro de uno de estos roles, puede crear grupos de Microsoft 365 para us
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Para administrar quién crea grupos, las siguientes personas necesitan Azure AD Premium licencias o Azure AD licencias EDU básicas asignadas a ellos:
+Para administrar quién crea grupos, las siguientes personas necesitan Azure AD Premium licencias asignadas a ellos:
 
 - El administrador que configura estas opciones de creación de grupos
 - Los miembros del grupo a los que se les permite crear grupos
@@ -66,7 +66,7 @@ Para administrar quién crea grupos, las siguientes personas necesitan Azure AD 
 > [!NOTE]
 > Consulte [Asignar o quitar licencias en el portal de Azure Active Directory para](/azure/active-directory/fundamentals/license-users-groups) obtener más información sobre cómo asignar licencias de Azure.
 
-Las siguientes personas no necesitan Azure AD Premium o Azure AD licencias EDU básicas asignadas:
+Las siguientes personas no necesitan Azure AD Premium licencias asignadas:
 
 - Personas que son miembros de Microsoft 365 y que no tienen la capacidad de crear otros grupos.
 

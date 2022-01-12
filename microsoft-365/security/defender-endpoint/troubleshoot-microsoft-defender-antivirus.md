@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3a6f6d9d88abec09fceb88fe2523df6a89750fb7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3d4f383730463325cf7bd6042409caabafa16194
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166655"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61884088"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -28,7 +28,7 @@ ms.locfileid: "61166655"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Si encuentra un problema con Antivirus de Microsoft Defender, puede buscar en las tablas de este tema un problema de coincidencia y una posible solución.
 
@@ -1203,7 +1203,7 @@ Acción del usuario:
 El Antivirus de Microsoft Defender encontró este error debido a problemas críticos. Es posible que el extremo no esté protegido. Revise la descripción del error y, a continuación, siga los <b>pasos de acción de usuario</b> pertinentes a continuación.
 <table>
 <tr>
-<th>Action</th>
+<th>Acción</th>
 <th>Acción del usuario</th>
 </tr>
 <tr>
@@ -1284,6 +1284,60 @@ Antivirus de Microsoft Defender cliente está en funcionamiento en un estado cor
 <td >
 <div class="alert"><b>Nota: Este evento solo se registrará si se establece la siguiente directiva: <b>ThreatFileHashLogging sin signo</b>.</div>
 <div> </div>
+</td>
+</tr>
+<tr>
+<th colspan="2">Identificador de evento: 1127</th>
+</tr>
+<tr><td>
+Nombre simbólico:
+</td>
+<td >
+<b>MALWAREPROTECTION_FOLDER_GUARD_SECTOR_BLOCK</b>
+</td>
+</tr>
+<tr>
+<td>
+Mensaje:
+</td>
+<td >
+<b>Acceso controlado a carpetas (CFA) bloqueó un proceso que no es de confianza para que no realice cambios en la memoria. </b>
+</td>
+</tr>
+<tr>
+<td>
+Descripción:
+</td>
+<td >
+Acceso controlado a carpetas ha bloqueado un proceso que no es de confianza para modificar potencialmente los sectores de disco.
+<br/> Para obtener más información acerca del registro de eventos, vea lo siguiente:
+<dl>
+<dt>EventID: &lt; EventID , por &gt; ejemplo: 1127</dt>Versión: Versión , por
+<dt> &lt; &gt; ejemplo: 0 Level:</dt>
+<dt>Level , por &lt; &gt; ejemplo: win:Warning</dt>
+<dt>TimeCreated: &lt; SystemTime &gt; ,</dt>hora en la que se creó el evento
+<dt> &lt; EventRecordID: EventRecordID &gt; ,</dt>número de índice del evento en el registro de eventos
+<dt>Execution ProcessID: &lt; Execution ProcessID &gt; ,</dt>proceso que generó el canal de eventos: Canal de eventos , por
+<dt> &lt; &gt; ejemplo: Microsoft- Windows-Windows Defender/Equipo</dt>
+<dt>operativo: &lt; &gt; </dt>Nombre del equipo Nombre de seguridad
+<dt>UserID: Seguridad &lt; UserID &gt; </dt>Nombre del producto: Nombre del producto , por
+<dt> &lt; &gt; ejemplo:</dt>Antivirus de Microsoft Defender versión del
+<dt>producto: &lt; &gt; </dt>Detección de versiones del
+<dt>producto Time: &lt; Detection Time , time when &gt; CFA blocked an untrusted process</dt>
+<dt>User: Domain &lt; &gt; \& lt; Ruta &gt; </dt>de acceso de usuario: nombre del
+<dt> &lt; &gt; dispositivo,</dt>nombre del dispositivo o disco al que se ha accedido a un proceso que no es de confianza para modificar Nombre del proceso: Ruta de acceso del proceso, el nombre de ruta de acceso del proceso que
+<dt> &lt; &gt; CFA</dt>bloqueó para acceder al dispositivo o disco para modificar la versión de inteligencia de
+<dt>seguridad: &lt; &gt; </dt>Versión del motor de inteligencia de
+<dt>seguridad: Antimalware Engine &lt; versión &gt; </dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+Acción del usuario:
+</td>
+<td >
+El usuario puede agregar el proceso bloqueado a la <i>lista Proceso</i> permitido para CFA, con Powershell o Seguridad de Windows Centro.
 </td>
 </tr>
 <tr>

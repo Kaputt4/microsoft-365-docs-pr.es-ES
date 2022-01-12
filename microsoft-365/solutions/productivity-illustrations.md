@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b49e6c98970012989bfa22f2e3c419796a47a700
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 1636d7647a6c48b44608e991e1b8411b05367fb6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372473"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867631"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -30,6 +30,16 @@ La arquitectura lógica de los servicios de productividad en Microsoft 365, una 
 | Item | Descripción |
 |:-----|:-----|
 |[![Teams póster de arquitectura lógica.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Actualizado en enero de 2021   |Microsoft proporciona un conjunto de servicios de productividad que funcionan en conjunto para proporcionar experiencias de colaboración con funcionalidades de gobierno, seguridad y cumplimiento. <br/> <br/>Esta serie de ilustraciones proporciona una vista de la arquitectura lógica de los servicios de productividad para arquitectos empresariales, que es una de las más destacadas gracias a Microsoft Teams.|
+
+## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>Comunicaciones corporativas con Microsoft 365: un caso práctico de Contoso
+La participación de los empleados contribuye de forma significativa a la satisfacción, retención y productividad del lugar de trabajo en cualquier organización. En Microsoft 365, hay varias maneras de comunicarse e interactuar con su audiencia. 
+
+Saber qué método (o combinaciones de métodos) usar y cuándo usarlos depende de la audiencia y la cultura de comunicación de la organización. 
+
+| Item | Descripción |
+|:-----|:-----|
+|[![Teams póster de arquitectura lógica.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Actualizado en enero de 2022   |En este póster se muestra cómo Contoso mantiene a los empleados informados y comprometidos en escenarios de comunicación populares. Contoso usa una variedad de aplicaciones M365, incluida una nueva oferta, Viva Connections.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Comunicaciones organizativas: guía, métodos y productos](/sharepoint/corporate-communications-overview)|
+
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Grupos en Microsoft 365 para arquitectos de TI

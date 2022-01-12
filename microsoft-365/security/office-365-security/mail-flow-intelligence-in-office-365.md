@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-ms.custom: admindeeplinkEXCHANGE
+ms.custom: ''
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocidos como inteligencia de flujo de correo).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ebc48a39294bb3487d157f76000f545a00f27bb
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 57d8a9ec9bb40961ecf0b53f52198bde00e8bc03
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423796"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933892"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
@@ -75,9 +75,9 @@ Normalmente, este error significa Microsoft 365 un error de conexión cuando int
 
 - Si no se deben entregar más mensajes en  el entorno local, haga clic en Corregir ahora en la alerta para que Microsoft 365 pueda rechazar inmediatamente los mensajes con destinatarios no válidos. Esto reducirá el riesgo de exceder la cuota de la organización para destinatarios no válidos, lo que podría afectar a la entrega normal de mensajes. O bien, puede usar las siguientes instrucciones para solucionar manualmente el problema:
 
-  - En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración</a>local, deshabilite o elimine el conector que entrega correo electrónico de Microsoft 365 al entorno de correo electrónico local:
+  - En el centro Exchange administración, deshabilite o elimine el conector que entrega correo electrónico de Microsoft 365 a su entorno de correo electrónico local:
 
-    1. En el EAC, vaya a **Flujo de correo** \> **Conectores**.
+    1. En el EAC en <https://admin.exchange.microsoft.com> , vaya a **Conectores de flujo** de \> **correo**. Para ir directamente a la **página Conectores,** use <https://admin.exchange.microsoft.com/#/connectors> .
 
     2. Seleccione el conector con los **valores From** **Office 365** **y To** value **Your organization's email server** y siga uno de los pasos siguientes:
        - Para eliminar el conector, haga clic **en Eliminar** ![ icono Eliminar.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)

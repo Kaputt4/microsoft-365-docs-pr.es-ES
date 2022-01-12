@@ -18,16 +18,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9056f1e63910ace9dfe525c45e3e549d225b2d85
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: e14cda205405b90a73689bde59fcccf22095f2df
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371165"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933832"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -39,16 +38,16 @@ ms.locfileid: "61371165"
 
 Las capacidades de investigación y respuesta de amenazas en [Microsoft Defender](defender-for-office-365.md) para Office 365 los analistas de seguridad y los administradores protegen los Microsoft 365 de su organización para los usuarios empresariales mediante:
 
-- Facilitar la identificación, supervisión y comprender los ciberataques
-- Ayudar a solucionar rápidamente las amenazas en Exchange Online, SharePoint Online, OneDrive para la Empresa y Microsoft Teams
-- Proporcionar información y conocimientos para ayudar a las operaciones de seguridad a evitar ataques cibernéticos contra su organización
-- Usar la [investigación automatizada y la respuesta en Office 365](automated-investigation-response-office.md) amenazas críticas basadas en correo electrónico
+- Facilitar la identificación, supervisión y comprender los ciberataques.
+- Ayudar a solucionar rápidamente las amenazas en Exchange Online, SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
+- Proporcionar información y conocimientos para ayudar a las operaciones de seguridad a evitar ataques cibernéticos contra su organización.
+- Usar la [investigación automatizada y la respuesta en Office 365](automated-investigation-response-office.md) amenazas críticas basadas en correo electrónico.
 
 Las capacidades de investigación y respuesta de amenazas proporcionan información sobre las amenazas y las acciones de respuesta relacionadas que están disponibles en el portal Microsoft 365 Defender amenazas. Estos conocimientos pueden ayudar al equipo de seguridad de su organización a proteger a los usuarios de ataques basados en archivos o correo electrónico. Las funcionalidades ayudan a supervisar las señales y recopilar datos de varios orígenes, como la actividad del usuario, la autenticación, el correo electrónico, los equipos en peligro y los incidentes de seguridad. Los responsables de la toma de decisiones empresariales y el equipo de operaciones de seguridad pueden usar esta información para comprender y responder a las amenazas contra su organización y proteger su propiedad intelectual.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Familiarizarse con las herramientas de investigación y respuesta de amenazas
 
-Las capacidades de investigación y respuesta de amenazas se incluyen en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">el portal Microsoft 365 Defender ,</a>como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos los siguientes:
+Las capacidades de investigación y respuesta de amenazas en Microsoft 365 Defender portal son un conjunto de herramientas y flujos de <https://security.microsoft.com> trabajo de respuesta que incluyen:
 
 - [Explorador](#explorer)
 - [Incidentes](#incidents)
@@ -61,7 +60,7 @@ Usa [el Explorador (y](threat-explorer.md) detecciones en tiempo real) para anal
 
 ![Explorador de amenazas.](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
-Para ver y usar este informe, en el portal de Microsoft 365 Defender, vaya a **Email & collaboration**  >  **Explorer**.
+Para ver y usar este informe en el portal de Microsoft 365 Defender en , vaya a Correo electrónico <https://security.microsoft.com> **& explorador de** \> **colaboración**. O bien, para ir directamente a la **página Explorador,** use <https://security.microsoft.com/threatexplorer> .
 
 ### <a name="incidents"></a>Incidentes
 
@@ -69,7 +68,7 @@ Use la lista Incidentes (esto también se denomina Investigaciones) para ver una
 
 ![Lista de incidentes de amenazas actuales en Office 365.](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-Para ver la lista de incidentes actuales de su organización, en el portal de Microsoft 365 Defender, vaya a **Incidentes**&  >  **alertas incidentes**.
+Para ver la lista de incidentes actuales de su organización en el portal de Microsoft 365 Defender en , vaya a <https://security.microsoft.com> **Incidentes &** \> **alertas incidentes**. O bien, para ir directamente a la **página Incidentes,** use <https://security.microsoft.com/incidents> .
 
 ![En el Centro de & cumplimiento, elija Revisión de administración de \> amenazas.](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -77,7 +76,7 @@ Para ver la lista de incidentes actuales de su organización, en el portal de Mi
 
 Usa el entrenamiento de simulación de ataques para configurar y ejecutar ciberataques realistas en tu organización e identificar personas vulnerables antes de que un ataque cibernético real afecte a tu empresa. Para obtener más información, vea [Simulate a phishing attack](attack-simulation-training.md).
 
-Para ver y usar esta característica en el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** formación de simulación  >  **de ataques de colaboración.**
+Para ver y usar esta característica en el portal de Microsoft 365 Defender en , vaya a Correo electrónico & aprendizaje de simulación <https://security.microsoft.com>   >  **de ataques de colaboración.** O bien, para ir directamente a la página **de aprendizaje de simulación de** ataque, use <https://security.microsoft.com/attacksimulator?viewid=overview> .
 
 ### <a name="automated-investigation-and-response"></a>Investigación y respuesta de amenazas
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Introducción a la definición y administración de alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 442929df84508d99ee9ae3d88bc2297e293ecc73
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 3c177bc75ff0f5820a07609c04bb20851a70e52a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747347"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933532"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Introducción al panel de alertas de prevención de pérdida de datos
 
@@ -70,7 +70,6 @@ Configuración de alerta de evento **único:** las organizaciones que tienen una
 
 ### <a name="roles"></a>Funciones
 
-
 Si desea ver el panel de administración de alertas DLP o editar las opciones de configuración de alertas en una directiva DLP, debe ser miembro de uno de estos grupos de roles:
 
 - Administrador de cumplimiento
@@ -93,6 +92,25 @@ Para obtener acceso a la característica de vista previa de contenido y a las ca
 - Grupo de roles visor de contenido del Explorador de contenido
 
 que tiene el rol de visor de contenido de clasificación de datos asignado previamente.
+
+### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en versión preliminar
+
+Hay roles y grupos de roles en versión preliminar que puede probar para ajustar los controles de acceso.
+
+Esta es una lista de roles Microsoft Information Protection (MIP) que están en versión preliminar. Para obtener más información sobre ellos, vea [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrador de Information Protection
+- Analista de Information Protection
+- Investigador de protección de información
+- Lector de protección de información
+
+Esta es una lista de grupos de roles de MIP que están en versión preliminar. Para obtener más información sobre los grupos de roles en [el Centro de seguridad y & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protección de la información
+- Administradores de Information Protection
+- Analistas de Information Protection
+- Investigadores de protección de la información
+- Lectores de Information Protection
 
 ## <a name="dlp-alert-configuration"></a>Configuración de alerta DLP
 
@@ -140,7 +158,7 @@ Para trabajar con el panel de administración de alertas DLP:
 - Para ver el historial de administración de flujos de trabajo, elija **Registro de administración**.
 - Después de realizar la acción necesaria para la alerta, establezca el estado de la alerta en **Resuelto**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga información sobre las alertas de prevención de pérdida de datos y el panel de alertas](dlp-alerts-dashboard-learn.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)

@@ -19,22 +19,22 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido de usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29596375263d52eb6156ddfa32330f08957ccd15
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: 5fe023391823abbde2cb289926863bbcbb98dfb2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216879"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934518"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de exhibición de documentos electrónicos
 
 Las instrucciones de este artículo se pueden aplicar al usar core eDiscovery o Advanced eDiscovery para administrar investigaciones.
 
-Los límites de cumplimiento crean límites lógicos dentro de una organización que controlan las ubicaciones de contenido de usuario (como buzones, cuentas de OneDrive y sitios SharePoint) que los administradores de exhibición de documentos electrónicos pueden buscar. Además, los límites de cumplimiento controlan quién puede acceder a los casos de exhibición de documentos electrónicos usados para administrar las investigaciones legales, de recursos humanos u otras investigaciones de su organización. La necesidad de límites de cumplimiento suele ser necesaria para las corporaciones multinacionales que tienen que respetar los reglamentos y los miembros de la directiva geográfica, así como para los gobiernos, que a menudo se dividen en diferentes organismos. En Microsoft 365, los límites de cumplimiento le ayudan a cumplir estos requisitos al realizar búsquedas de contenido y administrar investigaciones con casos de exhibición de documentos electrónicos.
+Los límites de cumplimiento crean límites lógicos dentro de una organización que controlan las ubicaciones de contenido de usuario (como buzones, cuentas de OneDrive y sitios de SharePoint) en las que los administradores de eDiscovery pueden buscar. Además, los límites de cumplimiento controlan quién puede acceder a los casos de exhibición de documentos electrónicos usados para administrar las investigaciones legales, de recursos humanos u otras investigaciones de su organización. La necesidad de límites de cumplimiento suele ser necesaria para las corporaciones multinacionales que tienen que respetar los reglamentos y los miembros de la directiva geográfica, así como para los gobiernos, que a menudo se dividen en diferentes organismos. En Microsoft 365, los límites de cumplimiento le ayudan a cumplir estos requisitos al realizar búsquedas de contenido y administrar investigaciones con casos de exhibición de documentos electrónicos.
   
 Usamos el ejemplo de la siguiente ilustración para explicar cómo funcionan los límites de cumplimiento.
   
-![Los límites de cumplimiento consisten en filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administración que controlan el acceso a casos de exhibición de documentos electrónicos.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
+![Los límites de cumplimiento constan de filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administrador que controlan el acceso a los casos de eDiscovery.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
 En este ejemplo, Contoso LTD es una organización formada por dos subsidiarias, Fourth Coffee y Coho Winery. La empresa requiere que los administradores e investigadores de exhibición de documentos electrónicos solo puedan buscar en los buzones de correo Exchange, las OneDrive y los SharePoint de su agencia. Además, los administradores e investigadores de exhibición de documentos electrónicos solo pueden ver casos de exhibición de documentos electrónicos en su agencia y solo pueden acceder a los casos de los que son miembros. Además, en este escenario, los investigadores no pueden poner ubicaciones de contenido en espera ni exportar contenido de un caso. Este es el modo en que los límites de cumplimiento cumplen estos requisitos.
   
@@ -162,7 +162,7 @@ Este es el modo en que se aplican los filtros de permisos de búsqueda para cada
 2. Una vez definidas las ubicaciones de contenido que se pueden buscar, la siguiente parte del filtro define el contenido que los administradores de exhibición de documentos electrónicos pueden buscar. El primer filtro permite a los administradores de exhibición de documentos electrónicos de cuarto café solo buscar documentos que tengan una propiedad de ruta de acceso de sitio `SiteContent` que contenga (o comience por) `https://contoso.sharepoint.com/sites/FourthCoffee` ; Los administradores de exhibición de documentos electrónicos de Coho Winery solo pueden buscar documentos que tengan una propiedad de ruta de acceso de sitio que contenga (o comience por) `https://contoso.sharepoint.com/sites/CohoWinery` . Por lo tanto, los dos `SiteContent` filtros son filtros *de* contenido porque definen el contenido que se puede buscar. En ambos filtros, los administradores de exhibición de documentos electrónicos solo pueden buscar documentos con un valor de propiedad de documento específico. Todos SharePoint filtros relacionados con el contenido son filtros de contenido porque las propiedades del sitio que se pueden buscar se marcan en todos los documentos. Para obtener más información, vea [Configure permissions filtering for eDiscovery](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
 
    > [!NOTE]
-   > Aunque el escenario de este artículo no los usa, también puede usar filtros de contenido de buzón para especificar el contenido que los administradores de exhibición de documentos electrónicos pueden buscar. La sintaxis de los filtros de contenido del buzón es `MailboxContent_<Property:value>` . Por ejemplo, puede crear filtros de contenido basados en intervalos de fechas, destinatarios o dominios. Para obtener más información acerca de los filtros de contenido de buzones de correo, vea [Configure search permissions filtering](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
+   > Aunque el escenario de este artículo no los usa, también puede usar filtros de contenido de buzón para especificar el contenido que los administradores de exhibición de documentos electrónicos pueden buscar. La sintaxis de los filtros de contenido del buzón es `"MailboxContent_<property> -<comparison operator> '<value>'"` . Puede crear filtros de contenido basados en intervalos de fechas, destinatarios y dominios o en cualquier propiedad de correo electrónico que se pueda buscar. Por ejemplo, este filtro permitiría a los administradores de exhibición de documentos electrónicos buscar solo elementos de correo enviados o recibidos por los usuarios del contoso.com: `"MailboxContent_Participants -like 'contoso.com'"` . Para obtener más información acerca de los filtros de contenido de buzones de correo, vea [Configure search permissions filtering](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
 
 3. El filtro de permisos de búsqueda se une a la consulta de búsqueda mediante el **operador booleano AND.** Esto significa que cuando un administrador de exhibición de documentos electrónicos en una de las agencias ejecuta una búsqueda de exhibición de documentos electrónicos, los elementos devueltos por la búsqueda deben coincidir con la consulta de búsqueda y las condiciones definidas en el filtro de permisos de búsqueda.
 
@@ -250,7 +250,7 @@ Tenga en cuenta lo siguiente al buscar y exportar contenido en entornos multige�
 
 - Al buscar contenido en SharePoint y OneDrive, el parámetro *Region* dirige las búsquedas a la ubicación principal o satélite donde el administrador de exhibición de documentos electrónicos llevará a cabo investigaciones de exhibición de documentos electrónicos. Si un administrador de exhibición de documentos electrónicos busca SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelven resultados de búsqueda.
 
-- Al exportar resultados de búsqueda desde eDiscovery principal, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype Empresarial, SharePoint, OneDrive y otros servicios que se pueden buscar mediante la herramienta búsqueda de contenido) se cargan en la ubicación de Azure Storage en el centro de datos que es especificado por el *parámetro Region.* Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte a través de bordes controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
+- Al exportar resultados de búsqueda desde eDiscovery principal, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype Empresarial, SharePoint, OneDrive y otros servicios que puede buscar mediante la herramienta búsqueda de contenido) se cargan en el Azure Storage  ubicación en el centro de datos especificado por el *parámetro Region.* Esto ayuda a las organizaciones a mantenerse dentro del cumplimiento al no permitir que el contenido se exporte a través de bordes controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
 
   Al exportar contenido desde Advanced eDiscovery, no se puede controlar dónde se carga el contenido mediante el *parámetro Region.* El contenido se carga en una Azure Storage en un centro de datos de la ubicación central de la organización. Para obtener una lista de ubicaciones geográficas basadas en la ubicación central, vea Microsoft 365 configuración de exhibición de documentos [electrónicos multigeós.](../enterprise/multi-geo-ediscovery-configuration.md)
 
@@ -300,7 +300,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - No se recomienda usar filtros de exclusión (como usar en un filtro de permisos de búsqueda) para un límite de cumplimiento `-not()` basado en contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indizado el contenido con atributos actualizados recientemente.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 **Quién puede crear y administrar filtros de permisos de búsqueda (con New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter cmdlets)?**
   

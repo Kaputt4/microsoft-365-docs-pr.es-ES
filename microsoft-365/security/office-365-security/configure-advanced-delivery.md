@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3de4e7a468280914854c7cc0b7f68a9cb7965632
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: bf564765b9bb896fcfcdac01961d414139199603
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072664"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934098"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -60,7 +60,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . Para ir directamente a la **página Entrega avanzada,** abra <https://security.microsoft.com/advanceddelivery> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Entrega avanzada,** abra <https://security.microsoft.com/advanceddelivery> .
 
 - Para conectarse a PowerShell del Centro de seguridad y cumplimiento, vea [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
@@ -75,7 +75,7 @@ Los mensajes identificados por la directiva de entrega avanzada no son amenazas 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Usar el portal Microsoft 365 Defender para configurar buzones de SecOps en la directiva de entrega avanzada
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **& directivas** de colaboración & Directivas de amenazas de reglas Avanzada en la \>  \>  \>  **sección** Reglas.
+1. En el portal Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & directivas de amenazas de reglas Avanzada en <https://security.microsoft.com>  \>  \>  \>  la **sección** Reglas. Para ir directamente a la **página Entrega** avanzada, use <https://security.microsoft.com/advanceddelivery> .
 
 2. En la **página Entrega avanzada,** compruebe que la pestaña buzón **de SecOps** está seleccionada y, a continuación, siga uno de los pasos siguientes:
    - Haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**.
@@ -95,7 +95,7 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Use el portal Microsoft 365 Defender para configurar simulaciones de suplantación de identidad de terceros en la directiva de entrega avanzada
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **& directivas** de colaboración & Directivas de amenazas de reglas Avanzada en la \>  \>  \>  **sección** Reglas.
+1. En el portal Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & directivas de amenazas de reglas Avanzada en <https://security.microsoft.com>  \>  \>  \>  la **sección** Reglas. Para ir directamente a la **página Entrega** avanzada, use <https://security.microsoft.com/advanceddelivery> .
 
 2. En la **página Entrega avanzada,** seleccione la pestaña **Simulación de suplantación** de identidad y, a continuación, realice uno de los siguientes pasos:
    - Haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**.

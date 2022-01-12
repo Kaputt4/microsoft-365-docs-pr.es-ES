@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1a003bc5ad0208972f03e761dbfb251c2b2509b0
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 9086831d4d220e66d4de1956e8a2c8e33c651262
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507427"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938545"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business-preview"></a>Asignar roles y permisos en Microsoft Defender para empresas (versión preliminar)
 
@@ -39,6 +39,12 @@ Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Mic
 2. [Ver o editar asignaciones de roles para el equipo de seguridad](#view-or-edit-role-assignments).
 
 3. [Continúe con los pasos siguientes](#next-steps).
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
+
 
 ## <a name="roles-in-defender-for-business"></a>Roles en Defender para empresas
 
@@ -73,7 +79,7 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
    - Para agregar un rol, elija **+ Agregar asignaciones**.
    - Para quitar un rol, elija **X Quitar asignaciones**. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Continúe con:
 

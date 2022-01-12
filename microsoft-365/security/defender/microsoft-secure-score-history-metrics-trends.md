@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 386cfaa00143ee64ff2710a913e4498813380a95
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 22a8c8cdd5ebcaa8038c37b73aeeb6c5f80d4267
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530941"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932825"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir objetivos
 
@@ -64,17 +64,13 @@ Hay dos lugares para ver cómo se compara su puntuación con las organizaciones 
 
 #### <a name="comparison-bar-chart"></a>Gráfico de barras de comparación
 
-El gráfico de barras de comparación es la **pestaña Información** general. Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación. Los datos de comparación se anonimizan, por lo que no sabemos exactamente qué otros inquilinos están en la combinación.
+El gráfico de barras de comparación está disponible en la **pestaña Información** general. Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación. 
+
+**Organizaciones como** la tuyo son una puntuación promedio de otros inquilinos de la misma región (siempre que disponen de al menos cinco o más inquilinos para comparar) con un tamaño de organización similar al tuyo.
+
+Los datos de comparación se anonimizan, por lo que no sabemos exactamente qué otros inquilinos están en la combinación.
 
 ![Gráfico de barras de las puntuaciones de una organización similar.](../../media/secure-score/secure-score-comparison-screenshot.png)
-
-- **Organizaciones como la tuyo:** una puntuación promedio de otros inquilinos (siempre que disponen de al menos cinco o más inquilinos para comparar) que cumplen los siguientes criterios:
-    1. Misma industria
-    2. Mismo tamaño de organización
-    3. Todas las regiones
-    4. Los productos de Microsoft usados son un 80 % similares
-    5. Oportunidad (puntuación máxima que puede obtener la licencia actual) dentro de un intervalo del 20 % desde el espacio empresarial
-
 
 #### <a name="comparison-trend"></a>Tendencia de comparación
 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda para permitir que los administradores de exhibición de documentos electrónicos busquen solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 190ed836c30dbb08015c662f948d6b3dc9310c94
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6310334bdbfd1a94456d5e826daebb9f2945af14
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553381"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936599"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configurar el filtrado de permisos para eDiscovery
 
@@ -113,11 +113,11 @@ El  _parámetro FilterName_ especifica el nombre del filtro de permisos. Este no
 
 El  _parámetro Filters_ especifica los criterios de búsqueda para el filtro de seguridad de cumplimiento. Puede crear tres tipos de filtros diferentes:  
 
-- **Filtrado de buzones o OneDrive de correo:** Este tipo de filtro especifica los buzones y las OneDrive que los usuarios asignados (especificados por el parámetro _Users)_ pueden buscar. Este tipo de filtro se denomina filtro *de ubicación de* contenido porque define las ubicaciones de contenido que un usuario puede buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde _MailboxPropertyName_ especifica una propiedad de buzón usada para establecer el ámbito de los buzones y OneDrive cuentas que se pueden buscar. Por ejemplo, el filtro de buzones de correo permitiría al usuario asignado este filtro buscar solo los buzones y las cuentas OneDrive que tienen el valor `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` "OttawaUsers" en la propiedad CustomAttribute10.
+- Filtrado de buzones o OneDrive **de correo:** este tipo de filtro especifica los buzones y las OneDrive que pueden buscar los usuarios asignados (especificados por el parámetro _Users)._ Este tipo de filtro se denomina filtro *de ubicación de* contenido porque define las ubicaciones de contenido que un usuario puede buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde _MailboxPropertyName_ especifica una propiedad de buzón usada para establecer el ámbito de los buzones y OneDrive cuentas que se pueden buscar. Por ejemplo, el filtro de buzones de correo permitiría al usuario asignado este filtro buscar solo los buzones y las cuentas OneDrive que tienen el valor `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` "OttawaUsers" en la propiedad CustomAttribute10.
 
   Cualquier propiedad de destinatario filtrable admitida se puede usar para la _propiedad MailboxPropertyName_ en un buzón o OneDrive filtro. En la tabla siguiente se desumo cuatro propiedades de destinatario usadas con frecuencia que se usan para crear un buzón o OneDrive filtro. La tabla también incluye un ejemplo de uso de la propiedad en un filtro.
 
-  |Nombre de la propiedad  |Ejemplo  |
+  |Nombre de propiedad  |Ejemplo  |
   |---------|---------|
   |Alias    |`"Mailbox_Alias -like 'v-'"`         |
   |Company  |`"Mailbox_Company -eq 'Contoso'"`        |
@@ -125,7 +125,7 @@ El  _parámetro Filters_ especifica los criterios de búsqueda para el filtro de
   |Departamento |`"Mailbox_Department -eq 'Finance'"`        |
   |||
 
-- **Filtrado de contenido de buzones:** Este tipo de filtro se aplica al contenido que se puede buscar. Este tipo de filtro se denomina filtro *de* contenido porque especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_** _SearchablePropertyName: value_, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro de contenido de buzón de correo permitiría al usuario asignado este filtro buscar solo los mensajes enviados a los destinatarios del  `MailboxContent_recipients:contoso.com` contoso.com correo. Para obtener una lista de propiedades de mensaje que se pueden buscar, vea Consultas de palabras clave y condiciones [de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties).
+- **Filtrado de contenido de buzones:** Este tipo de filtro se aplica al contenido que se puede buscar. Este tipo de filtro se denomina *filtro* de contenido porque especifica el contenido del buzón o las propiedades de correo electrónico que pueden buscar los usuarios asignados. La sintaxis de este tipo de filtro es MailboxContent_ **_SearchablePropertyName,** donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro de contenido de buzón de correo permitiría al usuario asignado este filtro buscar solo los mensajes enviados a los destinatarios del `"MailboxContent_Recipients  -like 'contoso.com'"` contoso.com correo. Para obtener una lista de las propiedades de correo electrónico que se pueden buscar, vea Consultas de palabras clave y condiciones [de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties).
 
   > [!IMPORTANT]
   > Un filtro de búsqueda único no puede contener un filtro de buzón y un filtro de contenido de buzón. Para combinarlos en un solo filtro, debe usar una [lista de filtros](#using-a-filters-list-to-combine-filter-types).  Pero un filtro puede contener una consulta más compleja del mismo tipo. Por ejemplo: `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`
@@ -284,9 +284,9 @@ También puede usar el parámetro _Users_ para especificar un Centro de cumplimi
 
 El  _parámetro Filters_ especifica los criterios de búsqueda para el filtro de seguridad de cumplimiento. Puede crear tres tipos de filtros diferentes:
 
-- **Filtrado de buzones OneDrive de correo:** Este tipo de filtro especifica los buzones y las OneDrive que los usuarios asignados (especificados por el parámetro _Users)_ pueden buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde  _MailboxPropertyName_ especifica una propiedad de buzón usada para establecer el ámbito de los buzones que se pueden buscar. Por ejemplo, el filtro de buzones de correo permitiría al usuario asignado a este filtro buscar solo los buzones que tienen el valor  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` "OttawaUsers" en la propiedad CustomAttribute10.  Cualquier propiedad de destinatario filtrable compatible se puede usar para la _propiedad MailboxPropertyName._ Para obtener una lista de las propiedades admitidas, vea [Filterable properties for the -RecipientFilter parameter](/powershell/exchange/recipientfilter-properties).
+- Filtrado de buzones **OneDrive de correo:** este tipo de filtro especifica los buzones y las OneDrive que los usuarios asignados (especificados por el parámetro _Users)_ pueden buscar. La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde  _MailboxPropertyName_ especifica una propiedad de buzón usada para establecer el ámbito de los buzones que se pueden buscar. Por ejemplo, el filtro de buzones de correo permitiría al usuario asignado a este filtro buscar solo los buzones que tienen el valor  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` "OttawaUsers" en la propiedad CustomAttribute10.  Cualquier propiedad de destinatario filtrable compatible se puede usar para la _propiedad MailboxPropertyName._ Para obtener una lista de las propiedades admitidas, vea [Filterable properties for the -RecipientFilter parameter](/powershell/exchange/recipientfilter-properties).
 
-- **Filtrado de contenido de buzones:** Este tipo de filtro se aplica al contenido que se puede buscar. Especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_** _SearchablePropertyName:value_, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro de contenido de buzón de correo permitiría al usuario asignado este filtro buscar solo los mensajes enviados a los destinatarios del  `MailboxContent_recipients:contoso.com` contoso.com correo.  Para obtener una lista de propiedades de mensaje que se pueden buscar, vea Consultas de palabras clave y condiciones [de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md). 
+- **Filtrado de contenido de buzones:** Este tipo de filtro se aplica al contenido que se puede buscar. Especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_**_SearchablePropertyName_, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda. Por ejemplo, el filtro de contenido de buzón de correo permitiría al usuario asignado este filtro buscar solo los mensajes enviados a los destinatarios del `"MailboxContent_Recipients  -like 'contoso.com'"` contoso.com correo.  Para obtener una lista de las propiedades de correo electrónico que se pueden buscar, vea Consultas de palabras clave y condiciones [de búsqueda para eDiscovery](keyword-queries-and-search-conditions.md).
 
 - **Filtrado de contenido de sitio y sitio:** Hay dos filtros SharePoint y OneDrive para la Empresa relacionados con el sitio que puede usar para especificar qué sitio o contenido de sitio pueden buscar los usuarios asignados:
 

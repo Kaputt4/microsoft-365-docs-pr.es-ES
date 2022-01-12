@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Cree y cale las asignaciones, cree y cura el contenido del curso y colabore en archivos en tiempo real con la nueva aplicación de interoperabilidad Microsoft OneDrive Learning Tools.
-ms.openlocfilehash: 445c12077c7b7b61269c0bef9e216db0ff1ddfb2
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 68622305e6a277b44538d4a05ee42a6b680749f3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578176"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61905630"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integrar Microsoft OneDrive LTI con Canvas
 
@@ -59,7 +59,13 @@ La integración Microsoft OneDrive LTI con Canvas es un proceso de dos pasos. El
 
 :::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Captura de pantalla que muestra la barra de navegación de la izquierda con las claves de desarrollador seleccionadas y la entrada de clave LTI seleccionada en un desplegable a la derecha de la página.":::
 
-6. En la página Configurar, en el menú desplegable Método, seleccione Pegar **JSON** como método y pegue el texto JSON que copió en el paso 5 en el campo de texto que aparece. 
+6. En la página Configurar, en la lista desplegable Método, seleccione Pegar **JSON** como método y pegue el texto JSON que copió en el paso 4 en el campo de texto que aparece. 
+
+    > [!TIP]
+    > **Paso opcional:** Si los profesores de la escuela desean controlar por sí mismos qué vínculos aparecen en la navegación de sus cursos, puede modificar el parámetro ``default`` en el JSON copiado. El parámetro se establece en automáticamente; sin embargo, cambiar el parámetro para que permita a los profesores ``default`` elegir la navegación de sus ``enabled`` ``default`` ``disabled`` propios cursos.
+    >
+    > Para obtener más información sobre cómo los formadores pueden modificar sus vínculos de navegación del curso, vea [How do I manage Course Navigation links?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
+
 7. Guarde la clave y estará disponible en Canvas en **estado Desactivado.** Active la tecla **y** copie la clave especificada en la columna **Detalles** que se usará en el paso siguiente.
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="La página Canvas con la clave establecida en estado desactivado. Tendrá que estar activada y la clave tendrá que copiarse de la columna de detalles de esta página.":::

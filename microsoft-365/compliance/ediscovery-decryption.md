@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 herramientas de exhibición de documentos electrónicos administran documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: 351a6c77d1fc0956c83661132f1111897896a724
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aa6d6a72353378f98b9e567500233b4c26f6221c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159913"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61905930"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos
 
@@ -29,7 +29,7 @@ El cifrado es una parte importante de la estrategia de protección de archivos y
 
 Para ejecutar tareas comunes de exhibición de documentos electrónicos en contenido cifrado, los administradores de exhibición de documentos electrónicos tenían que descifrar el contenido de los mensajes de correo electrónico cuando se exportaba desde búsquedas de contenido, casos principales de exhibición de documentos electrónicos y Advanced eDiscovery casos. El contenido cifrado con tecnologías de cifrado de Microsoft no estaba disponible para su revisión hasta después de exportarlo.
 
-Para facilitar la administración del contenido cifrado en el flujo de trabajo de exhibición de documentos electrónicos, Microsoft 365 las herramientas de exhibición de documentos electrónicos ahora incorporan el descifrado de archivos cifrados adjuntos a mensajes de correo electrónico y enviados Exchange Online. <sup>1</sup> Además, los documentos cifrados almacenados en SharePoint Online y OneDrive para la Empresa se descifran en Advanced eDiscovery.
+Para facilitar la administración del contenido cifrado en el flujo de trabajo de exhibición de documentos electrónicos, Microsoft 365 las herramientas de exhibición de documentos electrónicos ahora incorporan el descifrado de archivos cifrados adjuntos a mensajes de correo electrónico y enviados Exchange Online.<sup> 1</sup> Además, los documentos cifrados almacenados en SharePoint Online y OneDrive para la Empresa se descifran en Advanced eDiscovery.
 
 Antes de esta nueva funcionalidad, solo se descifraba el contenido de un mensaje de correo electrónico protegido por la administración de derechos (y no los archivos adjuntos). Los documentos cifrados SharePoint y OneDrive no se pudieron descifrar durante el flujo de trabajo de exhibición de documentos electrónicos. Ahora, los archivos cifrados con una tecnología de cifrado de Microsoft se encuentran en una cuenta de SharePoint o OneDrive que se pueden buscar y descifrar cuando los resultados de la búsqueda se preparan para la vista previa, se agregan a un conjunto de revisión de Advanced eDiscovery y se exportan. Además, se pueden buscar documentos cifrados SharePoint y OneDrive que se adjuntan a un mensaje de correo electrónico. Esta funcionalidad de descifrado permite a los administradores de exhibición de documentos electrónicos ver el contenido de los datos adjuntos de correo electrónico cifrado y los documentos del sitio al obtener una vista previa de los resultados de la búsqueda y revisarlos después de que se hayan agregado a un conjunto de revisión en Advanced eDiscovery.
 
@@ -68,6 +68,9 @@ La exhibición de documentos electrónicos no admite archivos cifrados en ShareP
 Para obtener más información acerca de estas opciones de configuración, vea la sección "Configurar la configuración de cifrado" en Restringir el acceso al contenido mediante etiquetas de confidencialidad [para aplicar cifrado.](encryption-sensitivity-labels.md#configure-encryption-settings)
 
 Los documentos cifrados con la configuración anterior aún pueden devolverse mediante una búsqueda de exhibición de documentos electrónicos. Esto puede ocurrir cuando una propiedad de documento (como el título, el autor o la fecha de modificación) coincide con los criterios de búsqueda. Aunque estos documentos pueden incluirse en los resultados de búsqueda, no se pueden obtener una vista previa ni revisarse. Estos documentos también permanecerán cifrados cuando se exporten en Advanced eDiscovery.
+
+> [!IMPORTANT]
+> El descifrado no se admite para los archivos que se cifran localmente y, a continuación, se cargan en SharePoint o OneDrive. Por ejemplo, los archivos locales cifrados por el cliente de Azure Information Protection (AIP) y, a continuación, cargados en Microsoft 365 no son compatibles. Solo los archivos cifrados en el servicio SharePoint o OneDrive se admiten para el descifrado.
 
 ## <a name="decryption-limitations-with-email-attachments"></a>Limitaciones de descifrado con datos adjuntos de correo electrónico
 

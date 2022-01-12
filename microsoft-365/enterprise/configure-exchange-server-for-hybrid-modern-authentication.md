@@ -3,7 +3,7 @@ title: Cómo configurar Exchange Server local para usar la autenticación modern
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 12/27/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar una Exchange Server local para usar la autenticación moderna híbrida (HMA), lo que le ofrece una autenticación y autorización de usuario más seguras.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5ddf30a3409c01e44fd731002cc97ef339ed9819
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: d0889008595717308695c1ad9c5d2a9f1766d1ea
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587373"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934494"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
@@ -36,9 +36,9 @@ Antes de empezar, debe estar familiarizado con algunas definiciones:
 
 - Autenticación moderna \> híbrida HMA
 
-- Exchange \> exch local
+- Exchange local \> EXCH
 
-- \>Exchange Online EXO
+- Exchange Online \> EXO
 
 Además, si un gráfico de este artículo tiene un objeto "atenuado" o atenuado, significa que el elemento que se muestra en gris no se incluye en la configuración específica de *HMA.*
 
@@ -97,9 +97,9 @@ Asegúrese de que las direcciones URL a las que pueden conectarse los clientes a
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Tome nota de (y captura de pantalla para la comparación posterior) del resultado de este comando, que debe incluir una dirección URL de https://  *autodiscover.yourdomain.com*  y  *https:// mail.yourdomain.com,* pero en su mayoría consisten en SPN que comienzan por 00000002-0000-0ff1-ce00-0000000000000000000. Si faltan https:// direcciones URL de las instalaciones locales, tendremos que agregar esos registros específicos a esta lista.
+   Tome nota de (y captura de pantalla para la comparación posterior) del resultado de este comando, que debe incluir una dirección URL y, en su mayoría, consta de `https://*autodiscover.yourdomain.com*` `https://*mail.yourdomain.com*` SPN que comienzan por `00000002-0000-0ff1-ce00-000000000000/` . Si faltan direcciones URL de las instalaciones locales, esos registros específicos deben agregarse `https://` a esta lista.
 
-3. Si no ve los registros MAPI/HTTP, EWS, ActiveSync, OAB y Autodiscover internos y externos en esta lista, debe agregarlos con el comando siguiente (las direcciones URL de ejemplo son ' ' y ' ', pero reemplazaría las direcciones URL de ejemplo por las `mail.corp.contoso.com` `owa.contoso.com` **suyas** propias ):
+3. Si no ve los registros MAPI/HTTP, EWS, ActiveSync, OAB y Autodiscover internos y externos en esta lista, debe agregarlos con el comando siguiente (las direcciones URL de ejemplo son y , pero reemplazaría las direcciones URL de ejemplo por las `mail.corp.contoso.com` `owa.contoso.com` **suyas propias**):
 
    ```powershell
    $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
@@ -108,7 +108,7 @@ Asegúrese de que las direcciones URL a las que pueden conectarse los clientes a
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. Compruebe que los nuevos registros se agregaron ejecutando el comando Get-MsolServicePrincipal desde el paso 2 de nuevo y mirando a través de la salida. Compare la lista /captura de pantalla de antes con la nueva lista de SPN. También puedes hacer una captura de pantalla de la nueva lista de los registros. Si se ha realizado correctamente, verá las dos nuevas direcciones URL de la lista. En nuestro ejemplo, la lista de SPN incluirá ahora las direcciones URL específicas  `https://mail.corp.contoso.com`  y  `https://owa.contoso.com` .
+4. Compruebe que los nuevos registros se agregaron ejecutando el comando desde el paso 2 de nuevo y mirando `Get-MsolServicePrincipal` a través de la salida. Compare la lista /captura de pantalla de antes con la nueva lista de SPN. También puedes hacer una captura de pantalla de la nueva lista de los registros. Si se ha realizado correctamente, verá las dos nuevas direcciones URL de la lista. En nuestro ejemplo, la lista de SPN incluirá ahora las direcciones URL específicas `https://mail.corp.contoso.com` y `https://owa.contoso.com` .
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Comprobar que los directorios virtuales están configurados correctamente
 
@@ -147,7 +147,7 @@ Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 El resultado debe mostrar un AuthServer del nombre EvoSts con un GUID y el estado "Habilitado" debe ser True. Si no lo ve, debe descargar y ejecutar la versión más reciente del Asistente para configuración híbrida.
 
 > [!NOTE]
-> En caso de que EXCH esté en híbrido con varios **inquilinos,** el resultado debe mostrar un AuthServer del nombre EvoSts - {GUID} para cada inquilino en híbrido con EXCH y el estado "Habilitado" debe ser True para todos estos objetos AuthServer.
+> En caso de que EXCH esté en híbrido con varios **inquilinos,** el resultado debe mostrar un AuthServer del nombre para cada inquilino en híbrido con EXCH y el estado Habilitado debe ser True para todos estos objetos `EvoSts - {GUID}`  AuthServer.
 
 > [!IMPORTANT]
 > Si está ejecutando Exchange 2010 en su entorno, no se creará el proveedor de autenticación EvoSTS.
@@ -177,19 +177,21 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 > [!NOTE]
 > En caso de que EXCH esté en híbrido con varios **inquilinos,** hay varios objetos AuthServer presentes en EXCH con dominios correspondientes a cada inquilino.  La **marca IsDefaultAuthorizationEndpoint** debe establecerse en true (mediante el cmdlet **IsDefaultAuthorizationEndpoint)** para cualquiera de estos objetos AuthServer. Esta marca no se puede establecer en true para todos los objetos Authserver y HMA se habilitaría incluso si uno de estos indicadores **IsDefaultAuthorizationEndpoint** del objeto AuthServer está establecido en true.
+> 
+> Para el **parámetro DomainName,** use el valor de dominio de inquilino, que suele tener el formato `contoso.onmicrosoft.com` .
 
 ## <a name="verify"></a>Comprobar
 
 Una vez que habilite HMA, el siguiente inicio de sesión de un cliente usará el nuevo flujo de autenticación. Ten en cuenta que al activar HMA no se desencadenará una reauthentication para ningún cliente y puede que Exchange tome tiempo elegir la nueva configuración.
 
-También debe mantener presionada la tecla CTRL al mismo tiempo que haga clic con el botón secundario en el icono del cliente de Outlook (también en la bandeja de notificaciones de Windows) y haga clic en "Estado de conexión". Busque la dirección SMTP del cliente en un tipo de "Authn" de "Portador", que representa el token de portador usado \* en OAuth.
+También debe mantener presionada la tecla CTRL al mismo tiempo que haga clic con el botón secundario en el icono del cliente de Outlook (también en la bandeja de notificaciones de Windows) y haga clic en "Estado de conexión". Busque la dirección SMTP del cliente en un tipo **de Authn** de , que representa el token de portador `Bearer\*` usado en OAuth.
 
 > [!NOTE]
 > ¿Necesita configurar Skype Empresarial con HMA? Necesitará dos artículos: uno [](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)que enumera las topologías admitidas y otro que muestra cómo [realizar la configuración](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Uso de híbridos modernos de autenticación con Outlook para iOS y Android
 
-Si es un cliente local que usa un servidor Exchange tcp 443, permita el tráfico de red de los siguientes intervalos IP:
+Si es un cliente local que usa Exchange servidor en TCP 443, permita el tráfico de red de los siguientes intervalos IP:
 
 ```console
 52.125.128.0/20

@@ -9,19 +9,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/03/2021
+ms.date: 01/04/2022
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c0bb0753c3566cf4a954c2393dd9d7533f2051ed
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 3659f0f532b14babd256f3310c4e7da8dde67e3c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311829"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938653"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
 
@@ -78,9 +78,9 @@ En la tabla siguiente se enumeran las opciones de configuración de directiva de
 |MAPAS|Configurar la invalidación de configuración local para los informes en Microsoft MAPS|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |MpEngine|Configurar la comprobación de nube extendida|[Configurar el período de espera de bloqueo en la nube](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)|
 |MpEngine|Seleccionar nivel de protección en la nube|[Especificar el nivel de protección proporcionado en la nube](specify-cloud-protection-level-microsoft-defender-antivirus.md)|
-|Sistema de inspección de red|Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red|[Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red](specify-additional-definitions-network-traffic-inspection-mdav.md)|
-|Sistema de inspección de red|Activar la retirada de definiciones|[Configurar la retirada de definiciones](turn-on-definition-retirement.md)|
-|Sistema de inspección de red|Activar el reconocimiento de protocolos|[Activar el reconocimiento de protocolos](turn-on-protocol-recognition.md)|
+|Sistema de inspección de red|Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red| No se usa (en desuso) |
+|Sistema de inspección de red|Activar la retirada de definiciones| No se usa (en desuso)|
+|Sistema de inspección de red|Activar el reconocimiento de protocolos| No se usa (en desuso)|
 |Cuarentena|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Cuarentena|Configurar la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
 |Protección en tiempo real|Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -100,7 +100,7 @@ En la tabla siguiente se enumeran las opciones de configuración de directiva de
 |Corrección|Especificar el día de la semana para ejecutar un examen completo programado para completar la corrección|[Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Corrección|Especificar la hora del día para ejecutar un examen completo programado para completar la corrección|[Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Generación de informes|Desactivar las notificaciones mejoradas|[Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
-|Raíz|Desactivar Antivirus de Microsoft Defender|No se usa (esta configuración debe establecerse en **No configurar para** garantizar que las aplicaciones antivirus de terceros instaladas funcionen correctamente)
+|Raíz|Desactivar Antivirus de Microsoft Defender|No se usa. Si está usando o planeando usar un producto antivirus que no es de Microsoft, vea Antivirus de Microsoft Defender [compatibilidad con otros productos de seguridad](microsoft-defender-antivirus-compatibility.md).|
 |Raíz|Definir direcciones para omitir el servidor proxy|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Raíz|Definir proxy autoconfig (.pac) para conectarse a la red|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Raíz|Definir servidor proxy para conectarse a la red|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
@@ -158,7 +158,7 @@ En la tabla siguiente se enumeran las opciones de configuración de directiva de
 |Amenazas|Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Temas de referencia para herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

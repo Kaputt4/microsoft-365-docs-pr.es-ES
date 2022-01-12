@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: 6e02b4010671404174c9166bd65e237295e87483
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4ab7376b234b1f2299723c39a6f9c226d2f40a00
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204400"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933484"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones de directiva DLP, excepciones y acciones
 
@@ -48,9 +48,28 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 
 ### <a name="senders"></a>Remitentes
 
-<br>
+Si usa la dirección del remitente como condición o excepción, el campo real donde se busca el valor varía según el tipo de regla que use. Para las reglas basadas en DLP, la dirección de sobre se usa como dirección del remitente. Para Exchange de transporte, la dirección de encabezado se usa como dirección del remitente.
+<!-- REMOVE COMMENTS ON 1/20/2022
+> [!NOTE]
+> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
-****
+![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
+
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+
+```PowerShell
+Set-PolicyConfig –SenderAddressLocation Envelope
+```
+
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
+
+- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
+
+- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
+
+- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
+<br>
+-->
 
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
@@ -97,7 +116,7 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 |Asunto o Cuerpo contiene palabras|condición: *SubjectOrBodyContainsWords* <br/> *excepción: ExceptIfSubjectOrBodyContainsWords*|Words|Mensajes que tienen las palabras especificadas en el campo de asunto o el cuerpo del mensaje|
 |
 
-### <a name="attachments"></a>Datos adjuntos
+### <a name="attachments"></a>Attachments
 
 <br>
 

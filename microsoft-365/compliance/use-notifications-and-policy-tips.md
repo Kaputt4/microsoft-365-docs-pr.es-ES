@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 079e392a234339493fb293406d6e85d4ddb7c5f6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 793ae9410ff40d989fffa4dfeae457ff0e61e392
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423064"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934530"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -149,6 +149,8 @@ Por ejemplo, es posible que se aplique una directiva DLP a OneDrive para la Empr
 
 3. Tercera regla: Si se detectan más de cinco instancias de información confidencial en un documento y el documento se comparte con personas externas a la organización, la acción **Bloquear el acceso al contenido** restringe los permisos para el archivo y la acción **Enviar una notificación** no permite a los usuarios invalidar las acciones de esta regla porque la información se comparte con el exterior. Bajo ninguna circunstancia las personas de su organización pueden compartir datos de PII fuera de la organización.
 
+### <a name="user-override-support"></a>Compatibilidad con invalidación de usuario
+
 Estos son algunos puntos clave para comprender el uso de una sugerencia de directiva para invalidar una regla:
 
 - La opción para invalidar es por regla y invalida todas las acciones de la regla (excepto el envío de una notificación, que no se puede invalidar).
@@ -156,6 +158,25 @@ Estos son algunos puntos clave para comprender el uso de una sugerencia de direc
 - Es posible que el contenido coincida con varias reglas de una directiva DLP, pero solo se mostrará la sugerencia de directiva de la regla más restrictiva y de mayor prioridad. Por ejemplo, una sugerencia de directiva de una regla que bloquea el acceso al contenido se mostrará por encima de una sugerencia de directiva de una regla que simplemente envía una notificación. Esto impide que las personas vean una cascada de sugerencias de directiva.
 
 - Si las sugerencias de directiva en la regla más restrictiva permite que los usuarios invaliden la regla, la invalidación de esta regla invalida también otras reglas que coinciden con el contenido.
+
+- Si la acción NotifyAllowOverride se establece con WithoutJustification, WithJustification o FlasePositives, asegúrese de que BlockAccess está establecido en true y BlockAccessScope tiene el valor adecuado. De lo contrario, aparecerá la sugerencia de directiva, pero el usuario no encontrará una opción para invalidar el correo electrónico con justificación.
+
+#### <a name="availability-of-override"></a>Disponibilidad de invalidación
+
+|Regla de notificación |Acción Notificar/Bloquear  |Invalidación disponible  |Requerir justificación  |
+|---------|---------|---------|---------|
+|Solo notificar     |Notificar         |No         |No         |
+|Notificar + AllowOverride     |Notificar         |No         |No         |
+|Notificar + AllowOverride + False positivo     |Notificar         |No         |No         |
+|Notificar + AllowOverride + Con justificación     |Notificar         |No         |No         |
+|Notificar + AllowOverride + False positivo + Sin justificación    |Notificar         |No         |No         |
+|Notificar + AllowOverride + False positivo + Con justificación     |Notificar         |No         |No         |
+|Notificar y bloquear     |Bloquear         |No         |No         |
+|Notify + Block + AllowOverride     |Bloquear         |Sí         |No         |
+|Notify + Block + AllowOverride + False positive     |Bloquear         |Sí         |No         |
+|Notificar + Bloquear + PermitirOverride + Con justificación     |Bloquear         |Sí         |Sí         |
+|Notificar + Bloquear + PermitirOverride + Falso positivo + Sin justificación     |Bloquear         |Sí         |No         |
+|Notify + Block + AllowOverride + False positive + With justification     |Bloquear         |Sí         |Sí         |
 
 
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Sugerencias de directiva en sitios de OneDrive para la Empresa y sitios de SharePoint Online

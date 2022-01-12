@@ -14,12 +14,12 @@ search.appverid:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para bloquear los mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 551e017abc864e82c9d81f710cebbd9da54595ca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 051926aa3232efb1913fdbf0a2d7022e99bab0f1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191412"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937501"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Crear listas de remitentes bloqueados en EOP
 
@@ -34,7 +34,7 @@ En Microsoft 365 Exchange Online organizaciones con buzones de correo en organiz
 
 El mejor método para bloquear remitentes varía en función del ámbito de impacto. Para un único usuario, la solución correcta podría ser Outlook remitentes bloqueados. Para muchos usuarios, una de las otras opciones sería más apropiada. Las siguientes opciones se clasifican por ámbito de impacto y amplitud. La lista va de estrecha a amplia, pero *lee los detalles para* obtener recomendaciones completa.
 
-1. Outlook Remitentes bloqueados (la lista de remitentes bloqueados que se almacena en cada buzón)
+1. Outlook remitentes bloqueados (la lista de remitentes bloqueados que se almacena en cada buzón)
 
 2. Listas de remitentes bloqueados o listas de dominios bloqueados (directivas contra correo no deseado)
 
@@ -57,7 +57,7 @@ Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre d
 
 Con frecuencia, las direcciones y son las mismas (comunicación de persona `5321.MailFrom` a `5322.From` persona). Sin embargo, cuando el correo electrónico se envía en nombre de otra persona, las direcciones pueden ser diferentes.
 
-Las listas de remitentes bloqueados y las listas de dominios bloqueados en directivas contra correo no deseado en EOP inspeccionan las `5321.MailFrom` direcciones `5322.From` y. Outlook Los remitentes bloqueados solo usan la `5322.From` dirección.
+Las listas de remitentes bloqueados y las listas de dominios bloqueados en directivas contra correo no deseado en EOP inspeccionan las `5321.MailFrom` direcciones `5322.From` y. Outlook remitentes bloqueados solo usa la `5322.From` dirección.
 
 ## <a name="use-outlook-blocked-senders"></a>Usar Outlook remitentes bloqueados
 
@@ -81,7 +81,7 @@ Si necesita bloquear los mensajes que se envían a usuarios específicos o a tod
 Independientemente de las condiciones o excepciones que use para identificar los mensajes, configure la acción para establecer el nivel de confianza de correo no deseado (SCL) del mensaje en 9, que marca el mensaje como correo no deseado de alta **confianza.** Para obtener más información, vea [Usar reglas de flujo de correo para establecer el SCL en mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 > [!IMPORTANT]
-> Es fácil crear reglas demasiado  agresivas, por lo que es importante que identifique solo los mensajes que desea bloquear usando criterios muy específicos. Además, asegúrese de habilitar la auditoría en la regla y probar los resultados de la regla para asegurarse de que todo funciona según lo esperado.
+> Es fácil crear reglas demasiado  agresivas, por lo que es importante que identifique solo los mensajes que desea bloquear con criterios muy específicos. Además, asegúrese de habilitar la auditoría en la regla y probar los resultados de la regla para asegurarse de que todo funciona según lo esperado.
 
 ## <a name="use-the-ip-block-list"></a>Usar la lista de direcciones IP bloqueados
 

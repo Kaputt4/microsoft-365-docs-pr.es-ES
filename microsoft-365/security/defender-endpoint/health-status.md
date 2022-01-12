@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 12fdabadf5c2479ff65f18f7d8bc514a26f7ddc7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 13407c78f89058efe15ed0f5d8f23272716e0237
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164495"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937369"
 ---
 # <a name="investigate-agent-health-issues"></a>Investigar problemas de estado del agente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 En la tabla siguiente se proporciona información sobre los valores devueltos al ejecutar el `mdatp health` comando y sus correspondientes descripciones.
@@ -35,7 +35,7 @@ En la tabla siguiente se proporciona información sobre los valores devueltos al
 
 ****
 
-|Valor|Description|
+|Valor|Descripción|
 |---|---|
 |automatic_definition_update_enabled|True si las actualizaciones automáticas de definiciones de antivirus están habilitadas, false de lo contrario.|
 |cloud_automatic_sample_submission_consent|Nivel de envío de ejemplo actual. Puede ser uno de los siguientes valores: <ul><li>**Ninguno:** no se envían muestras sospechosas a Microsoft.</li><li>**Caja fuerte:** solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.</li><li>**All**: Todas las muestras sospechosas se envían a Microsoft.</li></ul>|
@@ -50,7 +50,7 @@ En la tabla siguiente se proporciona información sobre los valores devueltos al
 |edr_configuration_version|EDR de configuración.|
 |edr_device_tags|Lista de etiquetas asociadas con el dispositivo.|
 |edr_group_ids|Id. de grupo al que está asociado el dispositivo.|
-|edr_machine_id|Identificador de dispositivo usado en Centro de seguridad de Microsoft Defender.|
+|edr_machine_id|Identificador de dispositivo usado en Microsoft 365 Defender.|
 |engine_version|Versión del motor antivirus.|
 |healthy|True si el producto está en buen estado, false de lo contrario.|
 |licencia|True si el dispositivo está incorporado a un inquilino, false de lo contrario.|

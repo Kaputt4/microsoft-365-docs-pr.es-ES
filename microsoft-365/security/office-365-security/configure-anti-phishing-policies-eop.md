@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas contra suplantación de identidad que están disponibles en organizaciones de Exchange Online Protection (EOP) con o sin buzones Exchange Online correo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b80a512c4428d897b8ef16c673fc47700b017e40
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 7abef6ea5872877981812bc2ad06b125147f73c6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520961"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939830"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configuración de directivas contra phishing en EOP
 
@@ -61,7 +61,7 @@ Para aumentar la eficacia de la protección contra phishing, puede crear directi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -88,7 +88,7 @@ Para aumentar la eficacia de la protección contra phishing, puede crear directi
 
 La creación de una directiva contra suplantación de identidad personalizada en el portal de Microsoft 365 Defender crea la regla contra suplantación de identidad (phishing) y la directiva contra suplantación de identidad asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & reglas directivas contra suplantación de identidad \>  \>  \>  en la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
 2. En la **página Anti-phishing,** haga clic ![ en Crear icono.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
@@ -148,7 +148,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>Usar el portal Microsoft 365 Defender para ver directivas contra suplantación de identidad
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & reglas directivas contra suplantación de identidad \>  \>  \>  en la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
 2. En la **página Anti-phishing,** las siguientes propiedades se muestran en la lista de directivas:
 
@@ -161,7 +161,7 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Usar el portal Microsoft 365 Defender para modificar directivas contra suplantación de identidad
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & reglas directivas contra suplantación de identidad \>  \>  \>  en la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
 2. En la **página Anti-phishing,** seleccione una directiva de la lista haciendo clic en el nombre.
 
@@ -175,7 +175,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 No puede deshabilitar la directiva contra suplantación de identidad predeterminada.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & reglas directivas contra suplantación de identidad \>  \>  \>  en la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
 2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
@@ -200,7 +200,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 - En el portal Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva contra suplantación de identidad después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla contra suplantación de identidad (lo que puede afectar a la prioridad de las reglas existentes).
 - Las directivas contra suplantación de identidad se procesan en el orden en que se muestran (la primera directiva tiene el **valor de prioridad** 0). La directiva contra suplantación de identidad predeterminada tiene el valor de prioridad **Lowest** y no puede cambiarla.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & reglas directivas contra suplantación de identidad \>  \>  \>  en la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
 2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
@@ -217,7 +217,7 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 
 Cuando se usa el portal de Microsoft 365 Defender para quitar una directiva de anti phishing personalizada, se eliminan tanto la regla contra suplantación de identidad (phishing) como la directiva antiphishing correspondiente. No puede quitar la directiva contra suplantación de identidad predeterminada.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & reglas directivas contra suplantación de identidad \>  \>  \>  en la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
 
 2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
@@ -469,7 +469,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Re
 
 Para comprobar que ha configurado correctamente directivas contra suplantación de identidad (phishing) en EOP, siga estos pasos:
 
-- En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & reglas directivas contra suplantación de identidad \>  \>  \>  en la **sección** Directivas. Compruebe la lista de directivas, sus **valores de** estado y sus **valores de** prioridad. Para ver más detalles, seleccione la directiva de la lista haciendo clic en el nombre y viendo los detalles en el menú desplegable que aparece.
+- En la **página Anti-phishing** del portal de Microsoft 365 Defender en , compruebe la lista de directivas, sus valores de estado <https://security.microsoft.com/antiphishing> y sus valores **de** prioridad.  Para ver más detalles, seleccione la directiva de la lista haciendo clic en el nombre y viendo los detalles en el menú desplegable que aparece.
 
 - En Exchange Online PowerShell, reemplace por el nombre de la directiva o regla, ejecute el \<Name\> siguiente comando y compruebe la configuración:
 

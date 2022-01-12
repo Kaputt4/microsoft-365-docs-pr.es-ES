@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnindexedItemsLearnMore
 ms.service: O365-seccomp
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que se ejecuta en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: c77c0f13de9d214da4cd6107d1346aa36be1fa25
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 66133f8f09ae65073ec542264c6aa2a0e1d5e514
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60646356"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874021"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos parcialmente indizados en eDiscovery
 
@@ -57,11 +57,11 @@ Determinados tipos de archivos, como mapas de bits o MP3, no incluyen contenido 
   
 Para obtener una lista de formatos de archivo compatibles y deshabilitados, vea los temas siguientes:
   
-- **Exchange**  -  [Formatos de archivo indizados por Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- **Exchange**  -  [formatos de archivo indizados por Exchange Búsqueda](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
 - **Exchange**  -  [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint**  -  [Extensiones de nombre de archivo rastreadas predeterminadas](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) y tipos de archivo analizadas en SharePoint
+- **SharePoint** Extensiones de nombre de archivo rastreadas predeterminadas y tipos de archivo  -  [analizadas en SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Los mensajes y documentos con tipos de archivo parcialmente indizados se pueden devolver en los resultados de búsqueda
 

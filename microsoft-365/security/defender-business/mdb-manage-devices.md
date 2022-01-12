@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: bf12e3f0e726745ae9064381f72a3c0cc4ccf3eb
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 53bdc9a2da917a16a27b48f1420ffbbb89cdbd47
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507750"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933328"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)
 
@@ -36,6 +36,11 @@ En Microsoft Defender para empresas (versión preliminar), puedes administrar di
 - [Realizar acciones en un dispositivo que](#take-action-on-a-device-that-has-threat-detections) tenga detecciones de amenazas
 - [Incorporación de un dispositivo a Defender para empresas (versión preliminar)](#onboard-a-device)  
 - [Offboard a device from Defender for Business (preview)](#offboard-a-device)
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Ver la lista de dispositivos incorporados
 
@@ -69,7 +74,7 @@ Consulta [Incorporación de dispositivos a Microsoft Defender para empresas (ver
 
 Consulta [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)](mdb-view-manage-incidents.md)
 

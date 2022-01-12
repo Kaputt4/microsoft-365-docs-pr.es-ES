@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 0096cb5f8c0d878ecc888de74f1548c77ed0dda9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aaf3e052e29893f0584edd730cf80bd82c34257e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196650"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61882167"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -53,7 +53,7 @@ También puede enviar [un archivo a Microsoft para el análisis de malware.](htt
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que los falsos positivos se repitan
 
-Si una alerta se desencadena mediante un uso legítimo o la alerta es inexacta, puede administrar alertas [en el portal Cloud App Security](/cloud-app-security/managing-alerts).
+Si una alerta se desencadena por uso legítimo o la alerta es inexacta, puedes administrar alertas en el portal de [Defender para Aplicaciones en la nube](/cloud-app-security/managing-alerts).
 
 Si tu organización usa [Microsoft Defender](/windows/security/threat-protection) para endpoint además de Office 365 y un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro, puedes crear un indicador personalizado con una acción ["Permitir"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)para el dispositivo .
 
@@ -82,13 +82,12 @@ Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encon
 
 En el Centro de acciones, puede ver las acciones de corrección que se realizaron y potencialmente deshacer la acción.
 
-1. Vaya al portal de Microsoft 365 Defender ( <https://security.microsoft.com> ).
-2. En el panel de navegación, seleccione **Centro de acciones**.
-3. Seleccione la **pestaña** Historial para ver la lista de acciones completadas.
-4. Seleccione un elemento. Se abre el panel desplegable.
-5. En el panel desplegable, seleccione **Deshacer**. (Solo las acciones que se pueden deshacer tendrán **un botón Deshacer).**
+1. En el Microsoft 365 Defender en , vaya al Centro <https://security.microsoft.com> de acciones seleccionando Centro de **acciones**. Para ir directamente al Centro de acciones, use <https://security.microsoft.com/action-center/> .
+2. En el Centro de acciones, seleccione la **pestaña** Historial para ver la lista de acciones completadas.
+3. Seleccione un elemento. Se abre el panel desplegable.
+4. En el panel desplegable, seleccione **Deshacer**. (Solo las acciones que se pueden deshacer tendrán **un botón Deshacer).**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Investigaciones automatizadas en Microsoft Defender para Office 365](office-365-air.md)

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo proporcionar comentarios a un clasificador que se puede entrenar en el Explorador de contenido.
-ms.openlocfilehash: 00162bcce2f8291ff151d1f8a9f692581c9ee9b2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bbc724b94997a4668115314df0c627dcfa5ddc77
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203284"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933616"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo volver a entrenar un clasificador en el explorador de contenido
 
-Un Microsoft 365 clasificador que se puede entrenar es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. Una vez formado, puede usarlo para identificar el elemento para la aplicación de etiquetas de Office de confidencialidad, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
+Un Microsoft 365 clasificador que se puede entrenar es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. Una vez formado, puede usarlo para identificar elementos para la aplicación de etiquetas de Office de confidencialidad, directivas de cumplimiento de comunicaciones y directivas de etiquetas de retención.
 
-En este artículo se muestra cómo mejorar el rendimiento de los clasificadores personalizados y algunos clasificadores previamente formados proporcionando comentarios adicionales.
+En este artículo se muestra cómo mejorar el rendimiento de los clasificadores personalizados mediante comentarios adicionales.
 
 Para obtener más información sobre los diferentes tipos de clasificadores, vea [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -36,6 +36,8 @@ Vea este vídeo para obtener un resumen rápido del proceso de ajuste y reciclaj
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
+> [!NOTE]
+> Los clasificadores preentrenados no se pueden volver a entrenar.
 
 ## <a name="permissions"></a>Permisos
 
@@ -109,7 +111,7 @@ Después de un reentrenamiento, se evalúa el rendimiento del clasificador tanto
 
 Comparamos los números de rendimiento en ambos conjuntos de elementos para el clasificador reentrenado y publicado para proporcionar una recomendación sobre si hubo mejoras para volver a publicar. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga información sobre los clasificadores entrenables](classifier-learn-about.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

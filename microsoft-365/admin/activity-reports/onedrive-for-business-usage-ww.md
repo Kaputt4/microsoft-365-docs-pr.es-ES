@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Informes en el Centro de administración: OneDrive para la Empresa de administración'
+title: 'Microsoft 365 informes en el Centro de administración: OneDrive para la Empresa uso'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Obtenga el OneDrive para la Empresa de uso para conocer el número total de archivos y almacenamiento usados en toda la organización. '
-ms.openlocfilehash: 2deff1e5438dcc6edbe5f12ecd9f428e0242b93f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3a7cf36be7d0ae12acf1a1ad6d9ace8a83afc2bd
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648848"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61918220"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365 Informes en el Centro de administración: OneDrive para la Empresa de administración
+# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365 informes en el Centro de administración: OneDrive para la Empresa uso
 
 El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
@@ -62,3 +62,6 @@ El **OneDrive para la Empresa de uso** se puede ver para ver las tendencias de l
 |Archivos activos  <br/> | El número de archivos activos dentro del período de tiempo.<br/> NOTA: Si los archivos se quitaron durante el período de tiempo especificado para el informe, el número de archivos activos que se muestran en el informe puede ser mayor que el número actual de archivos de la OneDrive. >  Los usuarios eliminados seguirán apareciendo en los informes de 180 días.  <br/> |
 |Storage usado (MB)  <br/> |La cantidad de almacenamiento que OneDrive usa en MB. |
 |||
+   
+> [!NOTE]
+> El informe solo incluye usuarios que tienen una licencia OneDrive para la Empresa válida.

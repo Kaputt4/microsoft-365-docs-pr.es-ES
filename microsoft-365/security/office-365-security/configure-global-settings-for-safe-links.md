@@ -15,15 +15,16 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: Los administradores pueden aprender a ver y configurar la configuración global (la lista "Bloquear las siguientes direcciones URL" y la protección para aplicaciones de Office 365) para Caja fuerte Vínculos en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4386f0f1b6dee2b877790b3ae715d1fb1e5f535a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 857519e93df9490ebeb178a23a44ddddbdfc83ef
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60701518"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932600"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurar la configuración global para Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -36,18 +37,18 @@ ms.locfileid: "60701518"
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si es un usuario principal que busca información sobre safelinks en Outlook, consulte [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Caja fuerte Vínculos es una característica de [Microsoft Defender](defender-for-office-365.md) para Office 365 que proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el tiempo de comprobación de clics de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, [vea Caja fuerte Links in Microsoft Defender for Office 365](safe-links.md).
+Caja fuerte Links es una característica de [Microsoft Defender para Office 365](defender-for-office-365.md) que proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el tiempo de comprobación de clics de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, [vea Caja fuerte Links in Microsoft Defender for Office 365](safe-links.md).
 
 Puede configurar la mayoría de Caja fuerte de vínculos en Caja fuerte de vínculos. Para obtener instrucciones, vea [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
 Sin embargo, Caja fuerte links también usa la siguiente configuración global que se configura fuera de las directivas de vínculos de Caja fuerte:
 
 - La **lista Bloquear las siguientes direcciones** URL. Esta configuración se aplica a todos los usuarios incluidos en las directivas de vínculos Caja fuerte activas. Para obtener más información, vea ["Bloquear las siguientes direcciones URL" para](safe-links.md#block-the-following-urls-list-for-safe-links) obtener Caja fuerte vínculos
-- Caja fuerte Vincula la protección para Office 365 aplicaciones. Esta configuración se aplica a todos los usuarios de la organización con licencia para Defender para Office 365, independientemente de si los usuarios se incluyen en directivas de vínculos de Caja fuerte activas o no. Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).
+- Caja fuerte de vínculos para Office 365 aplicaciones. Esta configuración se aplica a todos los usuarios de la organización con licencia para Defender para Office 365, independientemente de si los usuarios se incluyen en directivas de vínculos de Caja fuerte activas o no. Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).
 
 Puede configurar la configuración global de vínculos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 elegibles con buzones en Exchange Online; PowerShell de EOP independiente para sin buzones Exchange Online, pero con Microsoft Defender para Office 365 suscripciones de complementos).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Aunque no hay ninguna directiva de vínculos  Caja fuerte predeterminada, la directiva de seguridad predefinida de protección integrada proporciona protección de vínculos Caja fuerte a todos los destinatarios (usuarios que no están definidos en directivas de vínculos de Caja fuerte personalizadas). Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). También puede crear directivas de Caja fuerte para aplicar a usuarios, grupos o dominios específicos. Para obtener instrucciones, vea [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
@@ -76,7 +77,7 @@ Puede configurar la configuración global de vínculos de Caja fuerte en el port
 
 La **lista Bloquear las siguientes direcciones URL** identifica los vínculos que siempre deben bloquearse mediante el examen de vínculos Caja fuerte en aplicaciones compatibles. Para obtener más información, vea ["Bloquear las siguientes direcciones URL" para obtener Caja fuerte vínculos](safe-links.md#block-the-following-urls-list-for-safe-links).
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Caja fuerte \>  \>  \> **vínculos en** la **sección** Directivas.
+1. En el portal Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas de amenazas Caja fuerte vínculos en la <https://security.microsoft.com>  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Caja fuerte vínculos,** use <https://security.microsoft.com/safelinksv2> .
 
 2. En la **página Caja fuerte,** haga clic en **Configuración global**. En el **Caja fuerte de vínculos** de la organización que aparece, vaya al cuadro **Bloquear las siguientes direcciones URL.**
 
@@ -119,9 +120,9 @@ Puede usar el cmdlet **Get-AtpPolicyForO365** para ver las entradas existentes e
 
 ## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>Configurar Caja fuerte de vínculos para Office 365 aplicaciones en el portal Microsoft 365 Defender web
 
-Caja fuerte La protección de vínculos Office 365 aplicaciones se aplica a documentos en aplicaciones Office de escritorio, móviles y web compatibles. Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).
+Caja fuerte protección de vínculos para aplicaciones Office 365 se aplica a documentos en aplicaciones Office de escritorio, móviles y web compatibles. Para obtener más información, [consulta Caja fuerte configuración de vínculos para Office 365 aplicaciones](safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Caja fuerte \>  \>  \> **vínculos en** la **sección** Directivas.
+1. En el portal Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas de amenazas Caja fuerte vínculos en la <https://security.microsoft.com>  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Caja fuerte vínculos,** use <https://security.microsoft.com/safelinksv2> .
 
 2. En la **página Caja fuerte,** haga clic en **Configuración global**. En la **directiva Caja fuerte vínculos** de la organización que aparece, configure las siguientes opciones en la sección Configuración que se aplican al contenido de las **aplicaciones** Office 365 compatibles:
 
@@ -143,7 +144,7 @@ Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowCli
 
 En este ejemplo se configuran las siguientes opciones para la protección Caja fuerte vínculos en Office 365 aplicaciones:
 
-- Caja fuerte Los vínculos Office 365 aplicaciones están activados (no estamos usando el parámetro _EnableSafeLinksForO365Clients_ y el valor predeterminado es $true).
+- Caja fuerte vínculos para Office 365 aplicaciones está activado (no estamos usando el parámetro _EnableSafeLinksForO365Clients_ y el valor predeterminado es $true).
 - Se realiza un seguimiento de los clics de usuario relacionados con las direcciones URL bloqueadas Office 365 aplicaciones admitidas.
 - Los usuarios no pueden hacer clic en la dirección URL bloqueada original en aplicaciones Office 365 compatibles (no estamos usando el parámetro _AllowClickThrough_ y el valor predeterminado es $false).
 
@@ -157,7 +158,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 Para comprobar que ha configurado correctamente la configuración global de los vínculos de Caja fuerte (la lista Bloquear las siguientes direcciones **URL** y la configuración de protección de aplicaciones de Office 365), siga estos pasos:
 
-- En el portal de Microsoft 365 Defender, vaya a Directivas de colaboración de correo electrónico **&** & Directivas de amenazas de reglas \>  \>  \> **Caja fuerte Vínculos**  en la sección Directivas haga clic en Configuración global y compruebe la configuración del menú desplegable que \> aparece. 
+- En la **página Caja fuerte vínculos** en el portal de Microsoft 365 Defender en , haga clic en Configuración global y compruebe la configuración en el menú desplegable <https://security.microsoft.com/safelinksv2> que aparece. 
 
 - En Exchange Online PowerShell o Exchange Online Protection PowerShell, ejecute el siguiente comando y compruebe la configuración:
 

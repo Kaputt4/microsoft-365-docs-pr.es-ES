@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2600599dfd6d638736e29fef198913d32fcd60e
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 1c216a84caefc783293cc1a4ce5b76357f4353a5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241001"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935359"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -46,9 +45,9 @@ Los administradores de organizaciones con Microsoft Defender para Office 365 tam
 
 Puede ver y administrar mensajes en cuarentena en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin Exchange Online buzones de correo).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Para abrir el portal Microsoft 365 Defender, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . Para abrir directamente la página **Cuarentena**, use <https://security.microsoft.com/quarantine>.
+- Para abrir el portal de Microsoft 365 Defender, vaya a <https://security.microsoft.com>. Para ir directamente a la **página Cuarentena,** use <https://security.microsoft.com/quarantine> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -70,7 +69,8 @@ Puede ver y administrar mensajes en cuarentena en el portal de Microsoft 365 Def
 
 ### <a name="view-quarantined-email"></a>Ver correo electrónico en cuarentena
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya a Correo electrónico **& revisar** \>  \> **cuarentena**.
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com> , vaya a Correo electrónico & **revisar** \> **cuarentena** \> . Para ir directamente a la **página Cuarentena,** use <https://security.microsoft.com/quarantine> .
+
 2. En la **página Cuarentena,** compruebe que la **pestaña Correo** electrónico está seleccionada.
 
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas**  para cambiar las columnas que se muestran. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
@@ -281,7 +281,8 @@ En organizaciones con Defender para Office 365, los administradores pueden admin
 
 ### <a name="view-quarantined-files"></a>Ver archivos en cuarentena
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya a Correo electrónico **& revisar** \>  \> **cuarentena**.
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com> , vaya a Correo electrónico & **revisar** \> **cuarentena** \> . Para ir directamente a la **página Cuarentena,** use <https://security.microsoft.com/quarantine> .
+
 2. En la **página Cuarentena,** seleccione la **pestaña Archivos** (**El correo** electrónico es la pestaña predeterminada).
 
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga **clic en** Personalizar columnas para cambiar las columnas que se muestran. Las columnas predeterminadas se marcan con un asterisco ( <sup>\*</sup> ):

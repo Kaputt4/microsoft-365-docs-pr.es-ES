@@ -16,22 +16,22 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 4fadefe8ae55aff79a749188631e69c9bf263263
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 5bf8495a1acc13f74655133cdfe300b5149acb0a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426500"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936487"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
-Normalmente, durante fusiones o desinstituras, necesita la capacidad de mover el buzón de correo de Exchange Online usuario a un nuevo inquilino. La migración de buzones entre inquilinos permite a los administradores de inquilinos usar interfaces conocidas como PowerShell remoto y MRS para realizar la transición de usuarios a su nueva organización.
+Normalmente, durante fusiones o desinstituras, necesita la capacidad de mover el buzón de correo de Exchange Online usuario a un nuevo inquilino. La migración de buzones entre inquilinos permite a los administradores de inquilinos usar interfaces conocidas como Remote PowerShell y MRS para realizar la transición de usuarios a su nueva organización.
 
 Los administradores pueden usar el cmdlet New-MigrationBatch, disponible a través del rol de administración Mover buzones, para ejecutar movimientos entre inquilinos.
 
 Los usuarios que migran deben estar presentes en el inquilino de destino Exchange Online como MailUsers, marcado con atributos específicos para habilitar los movimientos entre inquilinos. El sistema producirá un error en los movimientos de los usuarios que no estén configurados correctamente en el espacio empresarial de destino.
 
-Cuando se completan los movimientos, el buzón de usuario de origen se convierte en un MailUser y el targetAddress (que se muestra como ExternalEmailAddress en Exchange) se marca con la dirección de enrutamiento al inquilino de destino. Este proceso deja el mailuser heredado en el inquilino de origen y permite un período de coexistencia y enrutamiento de correo. Cuando los procesos empresariales lo permiten, el inquilino de origen puede quitar el mailuser de origen o convertirlo en un contacto de correo.
+Cuando se completan los movimientos, el buzón de usuario de origen se convierte en un MailUser y el targetAddress (que se muestra como ExternalEmailAddress en Exchange) se marca con la dirección de enrutamiento al inquilino de destino. Este proceso deja el mailuser heredado en el inquilino de origen y permite la coexistencia y el enrutamiento de correo. Cuando los procesos empresariales lo permiten, el inquilino de origen puede quitar el mailuser de origen o convertirlo en un contacto de correo.
 
 Las migraciones entre inquilinos Exchange buzones de correo se admiten solo para inquilinos en la nube o híbrida, o cualquier combinación de los dos.
 
@@ -63,72 +63,66 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
    ![Inicio de sesión de Azure](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
-2. En Servicios de Azure, haga clic en Azure Active Directory.
+2. Haga clic en vista en Administrar Azure Active Directory.
 
-3. En la barra de navegación izquierda, seleccione Enterprise aplicaciones.
+   ![Azure Active Directory botón](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
-4. Seleccionar nueva aplicación
+3. En la barra de navegación izquierda, seleccione Registros de aplicaciones.
+
+4. Seleccione Nuevo registro
 
    ![Nueva aplicación](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. Seleccione Crear su propia aplicación
-
-   ![AAD galería](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
-
-6. Escriba un nombre para la aplicación (puede ser específico de las convenciones de nomenclatura de su organización) y seleccione registrar una aplicación para integrarla con Azure AD y, a continuación, crear.
-
-   ![Creación de aplicaciones](../media/tenant-to-tenant-mailbox-move/11dfb852b188be5a7e57f9df5836d20e.png)
-
-7. En la página Registrar una aplicación, en Tipos de cuentas compatibles, seleccione cuentas en cualquier organización directamente (cualquier directorio Azure AD - Multitenant). A continuación, en URI de redireccionamiento (opcional), seleccione Web y escriba <https://office.com> . Por último, seleccione Registrar.
+5. En la página Registrar una aplicación, en Tipos de cuentas compatibles, seleccione cuentas en cualquier organización directamente (cualquier directorio Azure AD - Multitenant). A continuación, en URI de redireccionamiento (opcional), seleccione Web y escriba <https://office.com> . Por último, seleccione Registrar.
 
    ![Registro de aplicaciones](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
-8. En la esquina superior derecha de la página, verás una notificación emergente que indica que la aplicación se creó correctamente.
+6. En la esquina superior derecha de la página, verás una notificación emergente que indica que la aplicación se creó correctamente.
 
-9. Vuelve a Inicio, Azure Active Directory y haz clic en Registros de aplicaciones.
+7. Vuelve a Inicio, Azure Active Directory y haz clic en Registros de aplicaciones.
 
-10. En Aplicaciones de propiedad, busca la aplicación que acaba de crear y haz clic en ella.
+8. En Aplicaciones de propiedad, busca la aplicación que creaste y haz clic en ella.
 
-11. En ^Essentials tendrá que copiar el identificador de aplicación (cliente), ya que lo necesitará más adelante para crear una dirección URL para el inquilino de destino.
+9. En ^Essentials, tendrá que copiar el identificador de aplicación (cliente), ya que lo necesitará más adelante para crear una dirección URL para el inquilino de destino.
 
-12. Ahora, en la barra de navegación izquierda, haga clic en Permisos de api para ver los permisos asignados a la aplicación.
+10. Ahora, en la barra de navegación izquierda, haga clic en Permisos de api para ver los permisos asignados a la aplicación.
 
-13. De forma predeterminada, los permisos User.Read se asignan a la aplicación que acaba de crear, pero no los necesitamos para las migraciones de buzones, puede quitar ese permiso.
+11. De forma predeterminada, User. Los permisos de lectura se asignan a la aplicación que creaste, pero no los necesitamos para las migraciones de buzones, puedes quitar ese permiso.
 
     ![Permisos de aplicación](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
 
-14. Ahora necesitamos agregar permisos para la migración de buzones, seleccione Agregar un permiso
+12. Ahora necesitamos agregar permisos para la migración de buzones, seleccione Agregar un permiso
 
-15. En las ventanas Solicitar permisos de API, seleccione API usuarios de mi organización y busque Office 365 Exchange Online, selecciónelo.
+13. En las ventanas Solicitar permisos de API, seleccione API usuarios de mi organización y busque Office 365 Exchange Online, selecciónelo.
 
     ![Seleccionar API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
-16. Después, seleccione Permisos de aplicación
+14. Después, seleccione Permisos de aplicación
 
-17. A continuación, en Seleccionar permisos, expanda Buzón y compruebe Mailbox.Migration y Agregar permisos en la parte inferior de la pantalla.
+15. A continuación, en Seleccionar permisos, expanda Buzón y compruebe Mailbox.Migration y Agregar permisos en la parte inferior de la pantalla.
 
     ![Establecer API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
-18. Ahora seleccione Certificados & secretos en la barra de navegación izquierda de la aplicación.
+16. Ahora seleccione Certificados & secretos en la barra de navegación izquierda de la aplicación.
 
-19. En Secretos de cliente, seleccione nuevo secreto de cliente.
+17. En Secretos de cliente, seleccione nuevo secreto de cliente.
 
     ![Secretos de cliente](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
 
-20. En la ventana Agregar un secreto de cliente, escriba una descripción y configure la configuración de expiración deseada.
+18. En la ventana Agregar un secreto de cliente, escriba una descripción y configure la configuración de expiración deseada.
 
       > [!NOTE]
       > Esta es la contraseña que se usará al crear el extremo de migración. Es extremadamente importante que copie esta contraseña en el portapapeles o copie esta contraseña en una ubicación segura y secreta. Esta es la única vez que podrá ver esta contraseña. Si de alguna manera lo pierde o necesita restablecerlo, puede volver a iniciar sesión en Azure Portal, ir a Registros de aplicaciones, buscar la aplicación de migración, seleccionar Secretos & certificados y crear un nuevo secreto para la aplicación.
 
-21. Ahora que ha creado correctamente la aplicación de migración y el secreto, tendrá que dar su consentimiento a la aplicación. Para dar su consentimiento a la aplicación, vuelva a la página de aterrizaje de Azure Active Directory, haga clic en aplicaciones de Enterprise en la navegación izquierda, busque la aplicación de migración que acaba de crear, selecciónelo y seleccione Permisos en la navegación izquierda.
+19. Ahora que ha creado correctamente la aplicación de migración y el secreto, tendrá que dar su consentimiento a la aplicación. Para dar su consentimiento a la aplicación, vuelva a la página de aterrizaje de Azure Active Directory, haga clic en aplicaciones de Enterprise en la navegación izquierda, busque la aplicación de migración que creó, selecciónelo y seleccione Permisos en la navegación izquierda.
 
-22. Haga clic en el botón Conceder consentimiento de administrador para [su inquilino].
+20. Haga clic en el botón Conceder consentimiento de administrador para [su inquilino].
 
-23. Una nueva ventana del explorador no está abierta y seleccione Aceptar.
+21. Se abrirá una nueva ventana del explorador y se seleccionará Aceptar.
 
-24. Puedes volver a la ventana del portal y seleccionar Actualizar para confirmar tu aceptación.
+22. Puedes volver a la ventana del portal y seleccionar Actualizar para confirmar tu aceptación.
 
-25. Formula la dirección URL para enviar a tu partner de confianza (administrador del espacio empresarial de origen) para que también puedan aceptar la aplicación para habilitar la migración de buzones. Este es un ejemplo de la dirección URL para proporcionarles el identificador de aplicación de la aplicación que acaba de crear:
+23. Formula la dirección URL para enviar a tu partner de confianza (administrador del espacio empresarial de origen) para que también puedan aceptar la aplicación para habilitar la migración de buzones. Este es un ejemplo de la dirección URL para proporcionarles que necesitarás el identificador de aplicación de la aplicación que creaste:
 
     ```powershell
     https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -176,7 +170,7 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
 ### <a name="prepare-the-source-current-mailbox-location-tenant-by-accepting-the-migration-application-and-configuring-the-organization-relationship"></a>Preparar el espacio empresarial de origen (ubicación actual del buzón) aceptando la aplicación de migración y configurando la relación de la organización
 
-1. Desde un explorador, vaya al vínculo url proporcionado por su partner de confianza para dar su consentimiento a la aplicación de migración de buzones. La dirección URL tendrá este aspecto:
+1. Desde un explorador, vaya al vínculo url proporcionado por su socio de confianza para dar su consentimiento a la aplicación de migración de buzones. La dirección URL tendrá este aspecto:
 
    ```powershell
    https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -227,7 +221,7 @@ Los usuarios que migran deben estar presentes en el inquilino de destino y en el
 
 ### <a name="prerequisites-for-target-user-objects"></a>Requisitos previos para objetos de usuario de destino
 
-Debe asegurarse de que los siguientes objetos y atributos se establecen en la organización de destino.
+Asegúrese de que los siguientes objetos y atributos se establecen en la organización de destino.
 
 1. Para cualquier buzón que se mueva desde una organización de origen, debe aprovisionar un objeto MailUser en la organización de destino:
 
@@ -237,7 +231,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
       - LegacyExchangeDN (flujo como proxyAddress, "x500: "): LegacyExchangeDN debe estar presente en mailuser de destino como \<LegacyExchangeDN> x500: proxyAddress. Además, también debe copiar todas las direcciones x500 del buzón de origen al usuario de correo de destino. Los procesos de movimiento no procederán si no están presentes en el objeto de destino.
       - UserPrincipalName: UPN se alineará con la nueva identidad o la compañía de destino del usuario (por ejemplo, user@northwindtraders.onmicrosoft.com).
       - SmtpAddress principal: la dirección SMTP principal se alineará con la compañía NEW del usuario (por ejemplo, user@northwind.com).
-      - TargetAddress/ExternalEmailAddress: MailUser hará referencia al buzón actual del usuario hospedado en el inquilino de origen (por ejemplo, user@contoso.onmicrosoft.com). Al asignar este valor, compruebe que también ha asignado PrimarySMTPAddress o este valor establecerá primarySMTPAddress, lo que provocará errores de movimiento.
+      - TargetAddress/ExternalEmailAddress: MailUser hará referencia al buzón actual del usuario hospedado en el inquilino de origen (por ejemplo, user@contoso.onmicrosoft.com). Al asignar este valor, compruebe que también ha asignado PrimarySMTPAddress o este valor establecerá PrimarySMTPAddress, lo que provocará errores de movimiento.
       - No puede agregar direcciones de proxy smtp heredadas desde el buzón de origen al mailuser de destino. Por ejemplo, no puede mantener contoso.com en el MEU en fabrikam.onmicrosoft.com objetos de inquilino). Los dominios están asociados con Azure AD o Exchange Online inquilino único.
 
      Objeto  MailUser de destino de ejemplo:
@@ -251,7 +245,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
      | PrimarySmtpAddress   | Lara.Newton@northwind.com                                                                                               |
      | ExternalEmailAddress | SMTP:LaraN@contoso.onmicrosoft.com                                                                                      |
      | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                    |
-     | DN de Exchange heredado     | /o=First Organization/ou=Exchange Administrative Group                                                                  |
+     | LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group                                                                  |
      |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                 |
      | EmailAddresses       | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190 |
      |                      | 7273f1f9-Lara                                                                                                           |
@@ -269,7 +263,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
      | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                           |
      | PrimarySmtpAddress   | Lara.Newton@contoso.com                                                 |
      | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                    |
-     | DN de Exchange heredado     | /o=First Organization/ou=Exchange Administrative Group                  |
+     | LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group                  |
      |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara |
      | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                      |
      |                      | SMTP:Lara.Newton@contoso.com                                            |
@@ -366,7 +360,7 @@ El envío por lotes de migración también se admite desde el nuevo <a href="htt
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto en el origen como en el destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 
@@ -440,7 +434,7 @@ Para esta implementación inicial, los usuarios tendrán que volver a generar su
 
 Hay una matriz de roles basada en la suposición de tareas delegadas al ejecutar un movimiento de buzón. Actualmente, se requieren dos roles:
 
-- El primer rol es para una tarea de configuración única que establece la autorización para mover contenido dentro o fuera del límite del espacio empresarial o de la organización. Como mover datos fuera del control de la organización es una preocupación crítica para todas las empresas, optamos por el rol asignado más alto de administrador de la organización (OrgAdmin). Este rol debe modificar o configurar un nuevo OrganizationRelationship que defina -MailboxMoveCapability con la organización remota. Solo OrgAdmin puede modificar la configuración MailboxMoveCapability, mientras que el administrador de uso compartido federado puede administrar otros atributos de OrganizationRelationship.
+- El primer rol es para una tarea de configuración única que establece la autorización para mover contenido dentro o fuera del límite del espacio empresarial o de la organización. Como mover datos fuera del control de la organización es una preocupación crítica para todas las empresas, optamos por el rol asignado más alto de administrador de la organización (OrgAdmin). Este rol debe modificar o configurar una nueva OrganizationRelationship que defina -MailboxMoveCapability con la organización remota. Solo OrgAdmin puede modificar la configuración MailboxMoveCapability, mientras que el administrador de uso compartido federado puede administrar otros atributos de OrganizationRelationship.
 
 - El rol de ejecutar los comandos de movimiento reales se puede delegar en una función de nivel inferior. El rol de Mover buzones se asigna a la capacidad de mover buzones de correo dentro o fuera de la organización.
 
@@ -524,13 +518,13 @@ Para ayudarle a planear la [](/exchange/mailbox-migration/office-365-migration-b
 
 Recuerde que esta característica está actualmente en versión preliminar y el SLA, y los niveles de servicio aplicables no se aplican a ningún problema de rendimiento o disponibilidad durante el estado de vista previa de esta característica.
 
-**Hacer que los documentos estén protegidos en el espacio empresarial de origen consumible por los usuarios del inquilino de destino.**
+**Proteger los documentos del inquilino de origen consumibles por los usuarios del inquilino de destino.**
 
-La migración entre inquilinos solo migra los datos del buzón y nada más. Hay varias otras opciones que se documentan en la siguiente entrada de blog que pueden ayudar: <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
+La migración entre inquilinos solo migra los datos del buzón y nada más. Hay varias otras opciones, que se documentan en la siguiente entrada de blog que pueden ayudar: <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
 **¿Puedo tener las mismas etiquetas en el inquilino de destino que tenía en el inquilino de origen, ya sea como el único conjunto de etiquetas o un conjunto adicional de etiquetas para los usuarios migrados en función de la alineación entre las organizaciones.**
 
-Dado que las migraciones entre inquilinos no exportan etiquetas y no hay forma de compartir etiquetas entre inquilinos, solo puede hacerlo recreando las etiquetas en el inquilino de destino.
+Dado que, las migraciones entre inquilinos no exportan etiquetas y no hay forma de compartir etiquetas entre inquilinos, solo puede hacerlo recreando las etiquetas en el inquilino de destino.
 
 **¿Es compatible con mover Microsoft 365 grupos?**
 

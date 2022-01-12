@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 13fda51ea3bd5434c44f9313dc511c0379e0f56e
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: e7d75dc0b55c945a1cc84c194609f3a48a100949
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241217"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867690"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Cambiar a Microsoft Defender para endpoint - Fase 2: Configuración
 
@@ -126,7 +126,7 @@ Puede usar la Utilidad de [protección contra Command-Line malware](command-line
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server
 
 > [!TIP]
-> Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows Server 2012 R2 y 2016. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+> Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows Server 2012 R2 y 2016. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 1. Abra el Editor del Registro y, a continuación, vaya a
 
@@ -142,6 +142,10 @@ Puede usar la Utilidad de [protección contra Command-Line malware](command-line
 > [!NOTE]
 > Después de incorporarse a Defender for Endpoint, es posible que deba establecer Antivirus de Microsoft Defender modo pasivo en Windows Server. Para validar que el modo pasivo se estableció como se esperaba, busque el evento *5007* en el registro operativo de **Microsoft-Windows-Windows Defender** (ubicado en ), y confirme que las claves del Registro `C:\Windows\System32\winevt\Logs` **ForceDefenderPassiveMode** o **PassiveMode** se han establecido en **0x1**.
 
+### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>¿Está usando Windows Server 2012 R2 o Windows Server 2016?
+
+Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows Server 2012 R2 y 2016 mediante el método anterior. Para obtener más información, vea [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
+
 ## <a name="configure-defender-for-endpoint"></a>Configuración de Defender para punto de conexión
 
 Este paso del proceso de migración implica la configuración de Antivirus de Microsoft Defender para los puntos de conexión. Se recomienda usar Intune; sin embargo, puede cualquiera de los métodos que se enumeran en la tabla siguiente:
@@ -152,7 +156,7 @@ Este paso del proceso de migración implica la configuración de Antivirus de Mi
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/><br/> **NOTA:** Intune ahora forma parte de Microsoft Endpoint Manager.|1. Vaya al Centro [Microsoft Endpoint Manager administración e](https://go.microsoft.com/fwlink/?linkid=2109431) inicie sesión.<br/><br/>2. Seleccione **Perfiles** \> **de configuración de dispositivos** y, a continuación, seleccione el tipo de perfil que desea configurar. Si aún no has creado un tipo de perfil de **restricciones** de dispositivo o quieres crear uno nuevo, consulta Configurar la configuración de restricción de dispositivo en [Microsoft Intune](/intune/device-restrictions-configure).<br/><br/>3. Seleccione **Propiedades** y, a continuación, **seleccione Configuración: Editar**<br/><br/>4. Expanda **Antivirus de Microsoft Defender**.<br/><br/>5. Habilitar la **protección entregada en la nube.**<br/><br/>6. En la lista desplegable Preguntar a **los usuarios antes del** envío de ejemplo, seleccione Enviar todos los ejemplos **automáticamente.**<br/><br/>7. En el desplegable **Detectar aplicaciones potencialmente no deseadas,** seleccione **Habilitar** o **Auditar**.<br/><br/>8. Seleccione **Revisar + guardar** y, a continuación, elija **Guardar**. <br/><br/> **SUGERENCIA:** Para obtener más información acerca de los perfiles de dispositivo de Intune, incluido cómo crear y configurar sus opciones, consulte ¿Qué Microsoft Intune [perfiles de dispositivo?](/intune/device-profiles).|
 |Microsoft Endpoint Configuration Manager|Vea [Create and deploy antimalware policies for Endpoint Protection in Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies). <br/><br/> Al crear y configurar las directivas de antimalware, asegúrese de revisar la configuración de protección en tiempo [real](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) y [habilitar el bloqueo a primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md).
 |Panel de control en Windows|Siga las instrucciones aquí: [Activar Antivirus de Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows). (Es posible que *vea Antivirus de Windows Defender* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows).|
-|[Administración de directivas de grupo avanzadas](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> Otra posibilidad: <br/><br/> [Consola de administración de directivas de grupo](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. Vaya a **Configuración del** equipo Plantillas administrativas Windows \>  \> **componentes** \> **Antivirus de Microsoft Defender**.<br/><br/>2. Busque una directiva denominada **Desactivar Antivirus de Microsoft Defender**.<br/><br/>3. Elija **Editar configuración de directiva** y asegúrese de que la directiva está deshabilitada. Esta acción permite Antivirus de Microsoft Defender. <br/>(Es posible que *vea Antivirus de Windows Defender* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows).|
+|[Administración de directivas de grupo avanzadas](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> o <br/><br/> [Consola de administración de directivas de grupo](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. Vaya a **Configuración del** equipo Plantillas administrativas Windows \>  \> **componentes** \> **Antivirus de Microsoft Defender**.<br/><br/>2. Busque una directiva denominada **Desactivar Antivirus de Microsoft Defender**.<br/><br/>3. Elija **Editar configuración de directiva** y asegúrese de que la directiva está deshabilitada. Esta acción permite Antivirus de Microsoft Defender. <br/>(Es posible que *vea Antivirus de Windows Defender* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows).|
 
 > [!TIP]
 > Puede implementar las directivas antes de que los dispositivos de la organización se incorpore.

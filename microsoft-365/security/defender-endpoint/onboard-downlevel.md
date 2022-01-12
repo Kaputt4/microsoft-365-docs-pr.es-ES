@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 39e01e614ebe2467899f179bc1ef3905ac0ca388
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 60fd10024be0b214aed4cbc7ae89d7129df99e79
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164915"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867829"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plataformas**
@@ -128,7 +128,7 @@ Una vez completado, debería ver los servidores Windows incorporados en el porta
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Incorporación de Windows a través de Microsoft Defender para la nube
 
-1. En el panel Centro de seguridad de Microsoft Defender navegación, **seleccione Configuración** Incorporación de administración  >  **de**  >  **dispositivos**.
+1. En el panel Microsoft 365 Defender navegación, **seleccione Configuración**  >  **Incorporación de administración de**  >  **dispositivos**.
 
 2. Seleccione **Windows Server 2008 R2 SP1** como sistema operativo.
 

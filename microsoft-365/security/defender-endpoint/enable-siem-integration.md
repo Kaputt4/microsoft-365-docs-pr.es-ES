@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 881f6d3691add12af8c8f4e808417bf4cef6e5ea
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 3faecae3965cfc51104a707eaa82f375ba169f84
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300184"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935638"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Habilitar la integración de SIEM en Microsoft Defender para endpoint
 
@@ -30,6 +30,9 @@ ms.locfileid: "61300184"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+
+> [!IMPORTANT]
+> La API de REST de SIEM de Microsoft Defender para extremo se retirará el 1 de marzo de 2022, como la API de alerta de extremo de Microsoft Defender para Endpoint y la API de incidentes de Microsoft 365 Defender que la reemplazan proporcionan metadatos más enriquecidos, incluidos el estado actualizado de la alerta, las entidades de evidencia relacionadas con la alerta, los comentarios introducidos por los analistas y son compatibles con la actualización del estado, assignedTo,  clasificación y campos de determinación mediante programación. **A partir de ahora, no se admite la incorporación de nuevos clientes a la API de REST de SIEM.**
 
 Habilite la integración de la información de seguridad y la administración de eventos (SIEM) para que pueda extraer detecciones de Microsoft 365 Defender. Extraer detecciones mediante la solución SIEM o mediante la conexión directa a la API de REST de detecciones.
 

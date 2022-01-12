@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fbed4f51fcd0b2154c46a88dc3d408330238ec63
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2f66106dd39b9cd1f590148addfdd2cae89748c6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217655"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938485"
 ---
 # <a name="manage-indicators"></a>Administrar indicadores
 
@@ -65,17 +65,17 @@ En la tabla siguiente se muestran los parámetros admitidos.
 Parámetro|Tipo|Descripción
 :---|:---|:---
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
-indicatorValue|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
+indicatorValue|String|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed". **Required**
 title|Cadena|Título de alerta del indicador. **Required**
 description|Cadena| Descripción del indicador. **Required**
-expirationTime|DateTimeOffset|La hora de expiración del indicador con el siguiente formato YYYY-MM-DDTHH:MM:SS.0Z. **Optional**
+expirationTime|DateTimeOffset|La hora de expiración del indicador con el siguiente formato YYYY-MM-DDTHH:MM:SS.0Z. El indicador se elimina si el tiempo de expiración pasa y lo que sucede en la hora de expiración se produce en el valor de segundos (SS). **Optional**
 severity|Enum|Gravedad del indicador. Los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
 recommendedActions|Cadena|Acciones recomendadas de alerta del indicador TI. **Optional**
 rbacGroupNames|Cadena|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
-categoría|Cadena|Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
-mitretechniques|Cadena|Código/id de técnicas MITRE (separados por comas). Para obtener más información, [vea Enterprise tácticas](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en categoría cuando se utiliza una técnica MITRE.
-GenerateAlert|Cadena|Si la alerta debe generarse o no. Los valores posibles son: True o False. **Optional**
+categoría|String|Categoría de la alerta. Algunos ejemplos son: Ejecución y acceso a credenciales. **Optional**
+mitretechniques|String|Código/id de técnicas MITRE (separados por comas). Para obtener más información, [vea Enterprise tácticas](https://attack.mitre.org/tactics/enterprise/). **Opcional** Se recomienda agregar un valor en categoría cuando se utiliza una técnica MITRE.
+GenerateAlert|String|Si la alerta debe generarse o no. Los valores posibles son: True o False. **Optional**
 
 
 
@@ -83,7 +83,7 @@ GenerateAlert|Cadena|Si la alerta debe generarse o no. Los valores posibles son:
 > No se admite Inter-Domain de enrutamiento sin clases (CIDR) para direcciones IP.
 Para obtener más información, vea Microsoft Defender para las categorías de alertas de punto de conexión ahora están alineadas con [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para los archivos](indicator-file.md)

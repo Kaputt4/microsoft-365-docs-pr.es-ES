@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre Caja fuerte documentos en Microsoft 365 E5/A5 o Microsoft 365 E5/A5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64995aca1542087682c2871f434698cc20d3ac91
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: beb34c04f93fe853678b30bcd9b5f7a621f4666b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262828"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934998"
 ---
 # <a name="safe-documents-in-microsoft-365-e5a5"></a>Caja fuerte documentos en Microsoft 365 E5/A5
 
@@ -49,7 +49,7 @@ Los usuarios no necesitan que Defender for Endpoint esté instalado en sus dispo
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . Para ir directamente a la **página Caja fuerte datos adjuntos,** use <https://security.microsoft.com/safeattachmentv2> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Caja fuerte datos adjuntos,** use <https://security.microsoft.com/safeattachmentv2> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -73,7 +73,7 @@ Los archivos enviados por Caja fuerte documentos no se conservan en Defender for
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-safe-documents"></a>Usar el portal Microsoft 365 Defender para configurar Caja fuerte documentos
 
-1. Abra el portal de Microsoft 365 Defender y vaya a Correo electrónico **&** directivas de colaboración & reglas de amenazas Caja fuerte \>  \>  \> **datos adjuntos** en la **sección** Directivas.
+1. En el portal Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas de amenazas Caja fuerte datos adjuntos en la <https://security.microsoft.com>  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Caja fuerte datos adjuntos,** use <https://security.microsoft.com/safeattachmentv2> .
 
 2. En la **página Caja fuerte datos adjuntos,** haga clic en **Configuración global**.
 

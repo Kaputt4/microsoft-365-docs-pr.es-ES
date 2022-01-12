@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: En este artículo, aprenderá a crear directivas DLP con una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: e581a395e6d817a7d6d0dc9ac79a9b2b7c0327d4
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 92c26c23461c9a03e50ea3a8f0ebb20a2b5151ba
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747243"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939110"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -36,6 +36,43 @@ Microsoft 365 incluye más de 40 plantillas listas para usar que pueden ayudarle
 Puede ajustar una plantilla modificando cualquiera de sus reglas existentes o agregando otras nuevas. Por ejemplo, puede agregar nuevos tipos de información confidencial a una regla, modificar los recuentos de una regla para que sea más difícil o más fácil desencadenar, permitir que los usuarios invaliden las acciones de una regla proporcionando una justificación empresarial o cambiar a quién se envían notificaciones e informes de incidentes. Una plantilla de directiva DLP es un punto de partida flexible para muchos escenarios de cumplimiento comunes.
 
 También puede elegir la plantilla Personalizada, que no tiene reglas predeterminadas, y configurar la directiva DLP desde cero para cumplir los requisitos de cumplimiento específicos de su organización.
+
+## <a name="permissions"></a>Permisos
+
+Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el centro de cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso a los responsables de cumplimiento y a otras personas. Siga estos pasos:
+  
+1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
+    
+2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
+
+3. Al crear el grupo de funciones, use la sección **Elegir roles** para agregar la siguiente función al grupo de roles: Administración de **cumplimiento dlp**.
+    
+4. Use la sección **Elegir miembros** para añadir el grupo de Microsoft 365 que creó antes del grupo de roles.
+
+Use el **rol Administración de cumplimiento dlp de** solo vista para crear un grupo de roles con privilegios de solo vista para las directivas DLP y los informes DLP.
+
+Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+  
+Estos permisos son necesarios para crear y aplicar una directiva DLP para no aplicar directivas.
+
+### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en versión preliminar
+
+Hay roles y grupos de roles en versión preliminar que puede probar para ajustar los controles de acceso.
+
+Esta es una lista de roles Microsoft Information Protection (MIP) que están en versión preliminar. Para obtener más información sobre ellos, vea [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrador de Information Protection
+- Analista de Information Protection
+- Investigador de protección de información
+- Lector de protección de información
+
+Esta es una lista de grupos de roles de MIP que están en versión preliminar. Para obtener más información sobre los grupos de roles en [el Centro de seguridad y & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protección de la información
+- Administradores de Information Protection
+- Analistas de Information Protection
+- Investigadores de protección de la información
+- Lectores de Information Protection
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>Crear la directiva DLP desde una plantilla
 
@@ -82,7 +119,7 @@ También puede elegir la plantilla Personalizada, que no tiene reglas predetermi
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teams Chat y mensajes de canal 
+    1. Teams chat y mensajes de canal 
 
 10. Elija **Siguiente**.
 

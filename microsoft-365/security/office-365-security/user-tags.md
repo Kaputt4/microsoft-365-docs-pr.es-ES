@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 04/21/2021
+ms.date: 12/17/2021
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -13,23 +13,18 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.custom:
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
+ms.custom: ''
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft Defender para Office 365 Plan 2. El filtrado de etiquetas está disponible en alertas, informes e investigaciones en Microsoft Defender para Office 365 identificar rápidamente a los usuarios etiquetados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47812108b925882c4d278c31c58cd29ad698a954
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f6a5262b184e5785695d73be32080adb8b44109c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559981"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934962"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft Defender para Office 365
-
-> [!NOTE]
-> La característica de etiquetas de usuario está en Versión preliminar, no está disponible para todos y está sujeta a cambios. Para obtener información acerca de la programación de lanzamiento, consulte el [mapa Microsoft 365 ruta de trabajo](https://www.microsoft.com/microsoft-365/roadmap).
 
 Las etiquetas de usuario son identificadores de grupos específicos de usuarios en [Microsoft Defender para Office 365](defender-for-office-365.md). Hay dos tipos de etiquetas de usuario:
 
@@ -51,21 +46,21 @@ Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuar
 - [Vistas de campañas](campaigns.md)
 - [Envíos de usuarios y administradores](admin-submission.md)
 - [Cuarentena](quarantine.md)
-- Para las cuentas de prioridad, puede usar el [informe](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Problemas de correo electrónico para cuentas de prioridad en el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administración.</a>
+- Para las cuentas de prioridad, puede usar el [informe](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Problemas de correo electrónico para cuentas de prioridad en el Centro Exchange administración (EAC).
 
-En este artículo se explica cómo configurar etiquetas de usuario <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en el portal Microsoft 365 Defender usuario.</a> No hay cmdlets en Microsoft 365 Defender portal para administrar etiquetas de usuario.
+En este artículo se explica cómo configurar etiquetas de usuario en el portal Microsoft 365 Defender usuario. No hay cmdlets en Microsoft 365 Defender portal para administrar etiquetas de usuario.
 
 Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayudar a proteger las cuentas de usuario de alto impacto, vea Recomendaciones de seguridad para cuentas [de prioridad en Microsoft 365](security-recommendations-for-priority-accounts.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a>. Para ir directamente a la **página Etiquetas de** usuario, abra <https://security.microsoft.com/securitysettings/userTags> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Etiquetas de** usuario, use <https://security.microsoft.com/securitysettings/userTags> .
 
 - Debe tener asignados permisos en el portal de Microsoft 365 Defender para poder realizar los procedimientos descritos en este artículo:
   - Para crear, modificar y eliminar etiquetas de usuario personalizadas, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
   - Para agregar y quitar miembros de la etiqueta Sistema de  cuenta de prioridad, debe ser miembro del administrador de seguridad y de Exchange **de** roles de administrador.
-  - Para agregar y quitar miembros de las etiquetas de usuario personalizadas existentes, debe ser miembro de los grupos de roles Administración de la **organización,** Administrador de seguridad **o** Operador de seguridad. 
-  - Para obtener acceso de solo lectura a las etiquetas de usuario, debe ser miembro de los grupos de roles **Lector global** o **Lector de** seguridad.
+  - Para agregar y quitar miembros de las etiquetas de usuario personalizadas existentes, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
+  - Para obtener acceso de solo lectura a las etiquetas de usuario, debe ser miembro de los grupos de roles Lector **global,** **Operador** de seguridad **o** Lector de seguridad.
 
   Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
@@ -81,7 +76,7 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Usar el portal Microsoft 365 Defender para crear etiquetas de usuario
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya **a** Configuración Correo \> **& etiquetas de usuario de** \> **colaboración.**
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com> , vaya **a** Configuración Correo \> **& etiquetas de usuario de** \> **colaboración.** Para ir directamente a la **página Etiquetas de** usuario, use <https://security.microsoft.com/securitysettings/userTags> .
 
 2. En la **página Etiquetas de** usuario, haga clic ![ en Crear icono de etiqueta.](../../media/m365-cc-sc-create-icon.png) **Crear etiqueta**.
 
@@ -113,7 +108,7 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Usar el portal Microsoft 365 Defender para ver etiquetas de usuario
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya **a** Configuración Correo \> **& etiquetas de usuario de** \> **colaboración.**
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com> , vaya **a** Configuración Correo \> **& etiquetas de usuario de** \> **colaboración.** Para ir directamente a la **página Etiquetas de** usuario, use <https://security.microsoft.com/securitysettings/userTags> .
 
 2. En la **página Etiquetas de** usuario, se muestran las siguientes propiedades en la lista de etiquetas de usuario:
 
@@ -126,7 +121,7 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Usar el portal Microsoft 365 Defender para modificar etiquetas de usuario
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya **a** Configuración Correo \> **& etiquetas de usuario de** \> **colaboración.**
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com> , vaya **a** Configuración Correo \> **& etiquetas de usuario de** \> **colaboración.** Para ir directamente a la **página Etiquetas de** usuario, use <https://security.microsoft.com/securitysettings/userTags> .
 
 2. En la **página Etiquetas de** usuario, seleccione la etiqueta de usuario de la lista y, a continuación, haga clic ![ en Editar icono de etiqueta.](../../media/m365-cc-sc-edit-icon.png) **Editar etiqueta**.
 
@@ -142,7 +137,7 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 > [!NOTE]
 > No puede quitar la etiqueta del sistema de cuenta de **prioridad** integrada.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya **a** Configuración Correo \> **& etiquetas de usuario de** \> **colaboración.**
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com> , vaya **a** Configuración Correo \> **& etiquetas de usuario de** \> **colaboración.** Para ir directamente a la **página Etiquetas de** usuario, use <https://security.microsoft.com/securitysettings/userTags> .
 
 2. En la **página Etiquetas de** usuario, seleccione la etiqueta de usuario de la lista y, a continuación, haga clic ![ en Eliminar icono de etiqueta.](../../media/m365-cc-sc-delete-icon.png) **Eliminar etiqueta**.
 

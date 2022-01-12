@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouse Introducción a la página de usuarios
+title: Microsoft 365 Lighthouse de la página Usuarios
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Usuarios.
-ms.openlocfilehash: 365b40e863b15b762fb391ef39eb523811981c99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d7b20d37aa9669ac6726efab19268018f5d10973
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197166"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937465"
 ---
-# <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de usuarios 
+# <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse de la página Usuarios 
 
 > [!NOTE]
 > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
@@ -50,7 +50,7 @@ La pestaña Autenticación multifactor proporciona información detallada sobre 
 
 ## <a name="password-reset-tab"></a>Pestaña Restablecimiento de contraseña
 
-La pestaña restablecimiento de contraseñas muestra información detallada sobre el estado de la habilitación de restablecimiento de contraseñas de autoservicio en todos los inquilinos.
+La pestaña restablecimiento de contraseñas muestra información detallada sobre el estado de la habilitación de restablecimiento de contraseñas de autoservicio en todos los inquilinos. También proporciona información sobre los usuarios que están habilitados pero que aún necesitan registrarse para poder restablecer su contraseña por su cuenta.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Captura de pantalla de la pestaña restablecimiento de contraseña.":::
 

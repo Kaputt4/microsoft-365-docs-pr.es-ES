@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3bce20b1b86ea569014313f345bcf7e4f6dd2cc0
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 91371583a6dde3a7fcb97037146b3eab1410e86c
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724325"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61936890"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -82,7 +82,7 @@ Actualmente hay recomendaciones para los siguientes productos:
 - Azure Active Directory
 - Microsoft Defender para punto de conexión
 - Microsoft Defender for Identity
-- Cloud App Security
+- Defender for Cloud Apps
 - Microsoft Teams
 
 Recomendaciones para otros productos de seguridad próximamente. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea base. También puede marcar las acciones de mejora según lo cubierto por una mitigación alternativa o de terceros.

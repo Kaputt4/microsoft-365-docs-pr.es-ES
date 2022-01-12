@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3f370e1a491006a5dc42df807994db97f68abcb0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cb92b67b3f19c578d12eb9673d2f80d5fadd131f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168923"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937849"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Conceder acceso al proveedor de servicios de seguridad administrado (MSSP) (versión preliminar)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
@@ -55,7 +55,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
 2. Cree roles de Defender para endpoint para niveles de acceso adecuados en Customer Defender for Endpoint.
 
-    Para habilitar RBAC en la cuenta de cliente Centro de seguridad de Microsoft Defender, acceda a **Configuración > Permissions > Roles** y "Activar roles", desde una cuenta de usuario con derechos de administrador global o administrador de seguridad.
+    Para habilitar RBAC en el portal de Microsoft 365 Defender del cliente, acceda a **Configuración > Permissions > Roles** y "Activar roles", desde una cuenta de usuario con derechos de administrador global o administrador de seguridad.
 
     ![Imagen del acceso de MSSP.](images/mssp-access.png)
 
@@ -128,7 +128,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
 2. Aprobar o denegar solicitudes en la sección **Aprobaciones** de la interfaz de usuario.
 
-    En este momento, se ha aprovisionado el acceso de analistas y cada analista debe tener acceso a la información del Centro de seguridad de Microsoft Defender:`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    En este momento, se ha aprovisionado el acceso de analistas y cada analista debe tener acceso al portal de Microsoft 365 Defender cliente:`https://security.microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>Temas relacionados
 

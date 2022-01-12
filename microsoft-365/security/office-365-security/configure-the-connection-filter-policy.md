@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear correos electrónicos de servidores de correo electrónico.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b59e7a5ed37cb4694ae72759815b46b1248c09f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fbc481468fca8562c11e89b2e6c9dfa6361126a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209002"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939818"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
@@ -36,7 +36,7 @@ ms.locfileid: "60209002"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-Si es un cliente de Microsoft 365 con buzones en Exchange Online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de correo de Exchange Online, use el filtrado de conexiones en EOP (específicamente, la directiva de filtro de conexión predeterminada) para identificar el origen bueno o malo servidores de correo electrónico por sus direcciones IP. Los componentes clave de la directiva de filtro de conexión predeterminada son:
+Si es un cliente Microsoft 365 con buzones en Exchange Online o un cliente de Exchange Online Protection independiente (EOP) sin Exchange Online  buzones de correo, use el filtrado de conexiones en EOP (específicamente, la directiva de filtro de conexión predeterminada) para identificar los servidores de correo electrónico de origen buenos o malos por sus direcciones IP. Los componentes clave de la directiva de filtro de conexión predeterminada son:
 
 - **Lista de direcciones IP permitidos:** omitir el filtrado de correo no deseado para todos los mensajes entrantes de los servidores de correo electrónico de origen que especifique por dirección IP o intervalo de direcciones IP. Para ver escenarios en los que el filtrado de correo no deseado todavía puede producirse en los mensajes de estos orígenes, vea la sección [Escenarios](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) en los que los mensajes de orígenes de la lista de direcciones IP permitidos aún se filtran más adelante en este artículo. Para obtener más información acerca de cómo la lista de direcciones IP permitidos debe caber en la estrategia general de remitentes seguros, vea [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
@@ -44,7 +44,7 @@ Si es un cliente de Microsoft 365 con buzones en Exchange Online o un cliente in
 
 - **Caja fuerte:** la *lista segura* es una lista de permitidos dinámica en el centro de datos de Microsoft que no requiere ninguna configuración del cliente. Microsoft identifica estos orígenes de correo electrónico de confianza de las suscripciones a varias listas de terceros. Habilitar o deshabilitar el uso de la lista segura; no puede configurar los servidores de correo electrónico de origen en la lista segura. El filtrado de correo no deseado se omite en los mensajes entrantes de los servidores de correo electrónico de la lista segura.
 
-En este artículo se describe cómo configurar la directiva de filtro de conexión predeterminada en el portal de Microsoft 365 Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online de correo). Para obtener más información acerca de cómo EOP usa el filtrado de conexiones forma parte de la configuración general contra correo no deseado de su [organización,](anti-spam-protection.md)vea Protección contra correo no deseado .
+En este artículo se describe cómo configurar la directiva de filtro de conexión predeterminada en el portal de Microsoft 365 Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para Microsoft 365 organizaciones con buzones en Exchange Online ; PowerShell EOP independiente para organizaciones sin Exchange Online de correo). Para obtener más información acerca de cómo EOP usa el filtrado de conexiones forma parte de la configuración general contra correo no deseado de su [organización,](anti-spam-protection.md)vea Protección contra correo no deseado .
 
 > [!NOTE]
 > La lista de direcciones IP permitidos, la lista segura y la lista de direcciones IP bloqueados son una parte de la estrategia general para permitir o bloquear el correo electrónico en su organización. Para obtener más información, vea [Crear listas de remitentes seguros](create-safe-sender-lists-in-office-365.md) y Crear listas de [remitentes bloqueados.](create-block-sender-lists-in-office-365.md)
@@ -63,7 +63,7 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
 
   **Notas**:
 
-  - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para buscar las direcciones IP de origen de los servidores de correo electrónico (remitentes) que desea permitir o bloquear, puede comprobar el campo de encabezado IP de conexión **(CIP)** en el encabezado del mensaje. Para ver un encabezado de mensaje en varios clientes de correo electrónico, vea [Ver encabezados](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)de mensajes de Internet en Outlook .
@@ -74,7 +74,7 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Usar el portal Microsoft 365 Defender para modificar la directiva de filtro de conexión predeterminada
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
 2. En la **página Directivas contra correo** no deseado, seleccione Directiva de filtro de conexión **(Predeterminada)** de la lista haciendo clic en el nombre de la directiva.
 
@@ -105,7 +105,7 @@ En este artículo se describe cómo configurar la directiva de filtro de conexi�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Usar el portal Microsoft 365 Defender para ver la directiva de filtro de conexión predeterminada
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
 2. En la **página Directivas contra correo** no deseado, se muestran las siguientes propiedades en la lista de directivas:
 
@@ -148,11 +148,11 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-HostedConnectionFilterPolicy](/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que ha modificado correctamente la directiva de filtro de conexión predeterminada, siga estos pasos:
 
-- En el portal de Microsoft 365 Defender, vaya a Directivas de colaboración de correo electrónico **&** & Reglas directivas contra correo no deseado en la sección Directivas seleccione Directiva de filtro de conexión \>  \>  \>   \> **(predeterminada)** de la lista haciendo clic en el nombre de la directiva y compruebe la configuración.
+- En la **página** Contra correo no deseado del portal de Microsoft 365 Defender en , seleccione Directiva de filtro de conexión <https://security.microsoft.com/antispam> **(Predeterminada)** de la lista haciendo clic en el nombre de la directiva y compruebe la configuración.
 
 - En Exchange Online PowerShell o PowerShell independiente de EOP, ejecute el siguiente comando y compruebe la configuración:
 

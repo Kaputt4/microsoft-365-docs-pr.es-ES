@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e5eafd86d3ce052655a72668bfc17083dff14f4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9e447f764ea8b5f5d0a44a7233812845592157ee
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166223"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873614"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -232,7 +232,7 @@ Estos son algunos ejemplos:
 
 ****
 
-|Comando|Qué hace|
+|Get-Help|Qué hace|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Inicia la descarga de un archivo *denominadosome_file.exe* en segundo plano.|
 |`fg 1234`|Devuelve una descarga con el identificador de comando *1234* en primer plano.|
@@ -345,6 +345,7 @@ Selecciona la **pestaña Registro de** comandos para ver los comandos usados en 
 
 - Las sesiones de respuesta en directo están limitadas a 25 sesiones de respuesta en directo a la vez.
 - El valor de tiempo de espera inactivo de la sesión de respuesta en directo es de 30 minutos.
+- El valor de tiempo de espera inactivo del comando Getfile es de 30 minutos. Se considera inactivo mientras el comando se ejecuta en segundo plano.
 - Un usuario puede iniciar hasta 10 sesiones simultáneas.
 - Un dispositivo solo puede estar en una sesión a la vez.
 - Se aplican los siguientes límites de tamaño de archivo:

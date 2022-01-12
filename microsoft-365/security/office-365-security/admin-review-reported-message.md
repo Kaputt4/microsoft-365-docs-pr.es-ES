@@ -10,15 +10,16 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: Aprende a revisar los mensajes que se notifican y a enviar comentarios a los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d70e26786e6028e1acf8072c40f15505fb232431
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2cb979260bde62903e97a4726083924101b8711a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786691"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932800"
 ---
 # <a name="admin-review-for-reported-messages"></a>Revisión del administrador para los mensajes de los que se informe
 
@@ -36,7 +37,7 @@ Solo podrá marcar y notificar a los usuarios los resultados de la revisión si 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
 - Para modificar la configuración de envíos de usuarios, debe ser miembro de uno de los siguientes grupos de roles:
   - Administración de la organización o Administrador de seguridad [en Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -48,7 +49,7 @@ Solo podrá marcar y notificar a los usuarios los resultados de la revisión si 
 
 ## <a name="notify-users-from-within-the-portal"></a>Notificar a los usuarios desde el portal
 
-1. En el portal Microsoft 365 Defender, vaya directamente a la **página Envíos:** [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission) .
+1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
 2. Haga **clic en Mensajes notificados por** el usuario y, a continuación, seleccione el mensaje que desea marcar y notificar.
 
@@ -61,7 +62,7 @@ El mensaje notificado se marcará como falso positivo o falso negativo, y se env
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>Personalizar los mensajes usados para notificar a los usuarios
 
-1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & reglas directivas de amenazas El usuario ha notificado la configuración del mensaje en la \>  \>  \>  **sección** Otros.
+1. En el portal de Microsoft 365 Defender en , vaya a la página Envíos de usuario en Correo electrónico & Directivas de colaboración & Directivas de amenazas de reglas El usuario ha notificado la configuración del mensaje en la sección <https://security.microsoft.com>   \>  \>  \>  Otros.  Para ir directamente a la **página Envíos de usuario,** use <https://security.microsoft.com/userSubmissionsReportMessage> .
 
 2. En la página **Envíos** de usuario, si desea especificar el nombre para mostrar del remitente **Office 365,** active la casilla Especificar una dirección de correo electrónico para usarla como remitente en la sección Notificaciones de correo electrónico para los **resultados** de la revisión de administrador y escriba el nombre que desea usar. La dirección de correo electrónico que estará visible en Outlook y todas las respuestas irán allí.
 
@@ -75,4 +76,4 @@ El mensaje notificado se marcará como falso positivo o falso negativo, y se env
     > [!div class="mx-imgBorder"]
     > ![Personalizar los mensajes enviados a los usuarios.](../../media/admin-review-customize-message.png)
 
-4. Cuando haya terminado, haga clic en **Guardar**. Para borrar estos valores, haga clic en **Descartar** en la página Envíos de usuario.
+4. Cuando haya terminado, haga clic en **Guardar**. Para borrar estos valores, haga clic en **Descartar** en la **página Envíos de** usuario.

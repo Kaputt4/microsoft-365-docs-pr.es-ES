@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: aebb528dcbd438387cdfff59011711bf8ae40401
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 818619bef6a752088e1d260171f3d2c645efa842
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121162"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938077"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -109,7 +109,7 @@ Con las nuevas funcionalidades Cifrado de mensajes de Office 365 (OME), que apro
 
 Para obtener más información, vea [Set up new Cifrado de mensajes de Office 365 capabilities](../../compliance/set-up-new-message-encryption-capabilities.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 ![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

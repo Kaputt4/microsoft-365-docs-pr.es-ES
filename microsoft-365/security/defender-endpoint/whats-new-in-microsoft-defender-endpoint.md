@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5ff5eeb85409bdcf79fa448804c86d961a2ac446
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 6ac7a16158f0b2cdeaca97dae8721c805caa7a53
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311835"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940299"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -61,6 +61,8 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 - [Novedades de Defender para Endpoint en Linux](linux-whatsnew.md)
 
 ## <a name="december-2021"></a>Diciembre de 2021
+
+- Las amenazas administración de vulnerabilidades pueden ayudar a identificar las vulnerabilidades de Log4j en aplicaciones y componentes. [Más información](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
 - Detectar dispositivos IoT (versión preliminar): [la](device-discovery.md) detección de dispositivos ahora tiene la capacidad de ayudarle a encontrar dispositivos ioT no administrados conectados a la red corporativa. Esto le ofrece una única vista unificada del inventario de IoT junto con el resto de los dispositivos de TI (estaciones de trabajo, servidores y dispositivos móviles).
 
@@ -117,7 +119,7 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 
 
 ## <a name="march-2021"></a>Marzo 2021
-- [Administrar la protección contra alteraciones mediante el Centro de seguridad de Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *tenant attach*.
+- [Administrar la protección contra alteraciones mediante el portal Microsoft 365 Defender datos](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *tenant attach*.
 
 
 ## <a name="january-2021"></a>Enero de 2021

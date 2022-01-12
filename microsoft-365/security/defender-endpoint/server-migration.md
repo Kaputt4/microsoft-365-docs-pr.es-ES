@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac8f2102424e908093484829eacb34b918326ea8
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: de39cc220c537af5d0ec5da4b404ec653ea56c1c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531572"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938221"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidor de la solución anterior de Microsoft Defender para endpoint basada en MMA
 
@@ -76,7 +76,7 @@ Pasos de migración:
    2. Desinstalar SCEP.
    3. Instale los [requisitos previos](configure-server-endpoints.md#prerequisites) cuando corresponda.
    4. Instalar Microsoft Defender para endpoint (consulte [Configure server endpoints](configure-server-endpoints.md).
-   5. Aplicar el script de incorporación **para su uso con la directiva de** grupo descargada desde [Centro de seguridad de Microsoft Defender](https://securitycenter.microsoft.com). 
+   5. Aplicar el script de incorporación **para su uso con la directiva de** grupo descargada desde [Microsoft 365 Defender](https://security.microsoft.com). 
 
    > [!TIP]
    > Puede usar el [script del instalador](server-migration.md#installer-script) como parte de la aplicación para automatizar los pasos anteriores.
@@ -95,7 +95,7 @@ Pasos de migración:
 5. Cree una aplicación para realizar las siguientes tareas:
    1. Quite la configuración del área de trabajo de MMA para Microsoft Defender para endpoint. Consulte [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage). Este paso es opcional; el sensor EDR anterior dejará de ejecutarse después de que el nuevo se active (tenga en cuenta que esto puede tardar varias horas).
    2. Instale los [requisitos previos](configure-server-endpoints.md#prerequisites) cuando corresponda.
-   3. Instale el microsoft defender para el punto de conexión para Windows Server 2012 paquete R2 y 2016 y **habilite el modo pasivo**. Consulte [Install Antivirus de Microsoft Defender using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
+   3. Instale el microsoft defender para el punto de conexión para Windows Server 2012 paquete R2 y 2016 y **habilite el modo pasivo**. Consulte [Install Antivirus de Microsoft Defender using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
    4. Aplicar el script de incorporación **para su uso con la directiva de** grupo descargada desde [Microsoft 365 Defender](https://security.microsoft.com).
 6. Aplicar actualizaciones.
 7. Quite el software antivirus que no sea de Microsoft mediante la consola antivirus que no es de Microsoft o mediante Microsoft Endpoint Configuration Manager según corresponda. Asegúrese de quitar la configuración del modo pasivo.*
@@ -119,7 +119,7 @@ Ruta de acceso: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protect
 3. Desinstalar System Center Endpoint Protection (Windows Server 2012 R2).
 4. Instale los [requisitos previos](configure-server-endpoints.md#prerequisites) cuando corresponda. 
 5. Instalar Microsoft Defender para endpoint (consulte [Configure server endpoints](configure-server-endpoints.md).)
-6. Aplicar el script de incorporación **para su uso con la directiva de** grupo descargada desde [Centro de seguridad de Microsoft Defender](https://securitycenter.microsoft.com). 
+6. Aplicar el script de incorporación **para su uso con la directiva de** grupo descargada desde [Microsoft 365 Defender](https://security.microsoft.com). 
 7. Aplicar actualizaciones.
 8. Cree y aplique directivas con la directiva de grupo, PowerShell o una solución de administración de terceros.
 
@@ -129,7 +129,7 @@ Ruta de acceso: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protect
 ### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-microsoft-defender-for-cloud-you-use-your-own-deployment-mechanism"></a>Tiene un servidor en el que desea instalar Microsoft Defender para endpoint. Tiene instalada una solución de protección de extremo que no sea de Microsoft detección y respuesta de puntos de conexión de conexión. No tiene la intención de usar Microsoft Endpoint Configuration Manager o Microsoft Defender para la nube. Use su propio mecanismo de implementación. 
 
 1. Actualice completamente el equipo, incluido Antivirus de Microsoft Defender (Windows Server 2016).
-2. Instale el paquete de Microsoft Defender para endpoint para Windows Server 2012 R2 & 2016 y **habilite el modo pasivo**. Consulte [Install Antivirus de Microsoft Defender using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
+2. Instale el paquete de Microsoft Defender para endpoint para Windows Server 2012 R2 & 2016 y **habilite el modo pasivo**. Consulte [Install Antivirus de Microsoft Defender using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
 3. Aplique el script de incorporación, apropiado para su entorno, descargado desde [Microsoft 365 Defender](https://security.microsoft.com). 
 4. Quite la protección de extremo que no es de Microsoft detección y respuesta de puntos de conexión solución y quite el modo pasivo.*
 5. Aplicar actualizaciones.

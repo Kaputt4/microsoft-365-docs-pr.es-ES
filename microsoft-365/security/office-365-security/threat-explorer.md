@@ -18,15 +18,14 @@ ms.collection:
 description: Use detecciones en tiempo real y explorador en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0b4509b02d03a487554463921cd4202765e20b30
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: de26921b0067cbcb5ad6019e0da62d6e5511d440
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422812"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934987"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -358,7 +357,13 @@ En este ejemplo se usa el Explorador de amenazas.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vista previa del encabezado de correo electrónico y descarga del cuerpo del correo electrónico
 
-Ahora puede obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico en el Explorador de amenazas. Los administradores pueden analizar los encabezados o mensajes de correo electrónico descargados en busca de amenazas. Dado que la descarga de mensajes de correo electrónico puede correr el riesgo de exponer información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *Preview*, debe agregarse a otro grupo de roles (como Operaciones de seguridad o Administrador de seguridad) para conceder la capacidad de descargar correos en la vista de mensajes de todo el correo electrónico. Sin embargo, la visualización del encabezado de correo electrónico no requiere ningún rol adicional (aparte de lo necesario para ver mensajes en el Explorador de amenazas).
+Ahora puede obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico en el Explorador de amenazas. Los administradores pueden analizar los encabezados o mensajes de correo electrónico descargados en busca de amenazas. Dado que la descarga de mensajes de correo electrónico puede correr el riesgo de exponer información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Se requiere un nuevo rol, *Vista* previa, para conceder la capacidad de descargar correos en la vista de mensajes de correo electrónico. Sin embargo, la visualización del encabezado de correo electrónico no requiere ningún rol adicional (aparte de lo necesario para ver mensajes en el Explorador de amenazas). Para crear un nuevo grupo de roles con el rol Vista previa:
+
+1. Seleccione un grupo de roles integrado que solo tenga el rol Vista previa, como Investigador de datos o Administrador de exhibición de documentos electrónicos.
+2. Seleccione **Copiar grupo de roles**.
+3. Elija un nombre y una descripción para el nuevo grupo de roles y seleccione **Siguiente**.
+4. Modifique los roles agregando y quitando roles según sea necesario, pero saliendo del rol Vista previa.
+5. Agregue miembros y, a **continuación, seleccione Crear grupo de roles**.
 
 Las detecciones en tiempo real y explorador también recibirán nuevos campos que proporcionan una imagen más completa de dónde aterrizan los mensajes de correo electrónico. Estos cambios facilitan la búsqueda de las operaciones de seguridad. Pero el resultado principal es que puede conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
 
@@ -551,7 +556,7 @@ Para ver y usar detecciones en tiempo real o explorador, debe tener los permisos
   - Administrador de seguridad (se puede asignar en el centro Azure Active Directory de administración ( <https://aad.portal.azure.com> )
   - Lector de seguridad
 
-- Por Exchange Online, debe tener uno de los siguientes roles <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a> asignados en el centro de administración de Exchange o [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
+- Por Exchange Online, debe tener uno de los siguientes roles asignados en el Centro de administración de Exchange (EAC) o [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Administración de la organización
   - Administración de la organización de solo visualización

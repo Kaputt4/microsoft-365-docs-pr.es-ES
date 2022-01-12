@@ -17,16 +17,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 description: Los administradores pueden obtener información sobre la suplantación de inteligencia en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dcb930094e084e6ffccb3a7e42305cf99d438272
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5bf0ed143f5bfb78ff1d6af4005a4b5ec64fd90e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372341"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934026"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Suplantación de información de inteligencia en EOP
 
@@ -60,7 +59,7 @@ Al permitir que los remitentes conocidos envíen mensajes falsos desde ubicacion
 
 Del mismo modo, puede revisar remitentes suplantados permitidos por la inteligencia de suplantación de identidad y bloquear manualmente a esos remitentes de la información de inteligencia suplantada.
 
-En el resto de este artículo se explica cómo usar la información de inteligencia suplantación en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> y en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones de correo).
+En el resto de este artículo se explica cómo usar la información de inteligencia suplantación en el portal de Microsoft 365 Defender y en PowerShell (powershell de Exchange Online para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones de correo).
 
 > [!NOTE]
 >
@@ -72,7 +71,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a>. Para ir directamente a la **pestaña Suplantación** en la página Lista de **inquilinos permitidos o bloqueados,** use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> . Para ir directamente a la **página Spoof intelligence insight,** use <https://security.microsoft.com/spoofintelligence> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **pestaña Suplantación** en la página Lista de **inquilinos permitidos o bloqueados,** use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> . Para ir directamente a la **página Spoof intelligence insight,** use <https://security.microsoft.com/spoofintelligence> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -93,7 +92,7 @@ En el resto de este artículo se explica cómo usar la información de inteligen
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Abra la información de inteligencia de suplantación en el portal Microsoft 365 Defender búsqueda
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender,</a>vaya a Correo electrónico **&** directivas de colaboración & Directivas de amenazas de reglas Inquilino \>  \>  \> **Permitir/Bloquear listas** en la **sección** Reglas.
+1. En el portal Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & Directivas de amenazas De inquilino Permitir o bloquear listas en la <https://security.microsoft.com>  \>  \>  \>  **sección** Reglas. Para ir directamente a la **pestaña Suplantación** en la página Lista de **inquilinos permitidos o bloqueados,** use <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> .
 
 2. En la **página Listas de permitidos o bloqueados** de inquilinos, la información de inteligencia suplantación tiene este aspecto:
 

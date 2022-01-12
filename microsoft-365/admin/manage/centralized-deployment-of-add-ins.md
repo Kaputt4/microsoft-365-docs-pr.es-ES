@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: c560ceab5fa33af19eb40196dc643f356d1cbe87
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 409a19f9e3579978eb3e3cf03d087820e494e181
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371117"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933772"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -47,7 +47,7 @@ Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-La implementación centralizada de complementos requiere que los usuarios usen licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3) (y se han iniciado sesión en Office su identificador de organización) y tener Exchange Online buzones de correo Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory.
+La implementación centralizada de complementos requiere que los usuarios usen licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3) (y se han iniciado sesión en Office su identificador de organización), licencias de Office 365 Educación (A1/A3/A5) o licencias de Microsoft 365 Educación (A3/A5) y tener buzones de correo Exchange Online y Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory.
 Puede ver requisitos específicos para Office y Exchange a continuación, o usar el Control de compatibilidad de implementación [centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:

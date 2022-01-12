@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a73a1dcaf8b30e566b665e078d061ea0a7b4cf18
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 62036779aec92b08679d1213c1605b42388760af
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508376"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940583"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business-preview"></a>Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)
 
@@ -37,6 +37,11 @@ A medida que se detectan amenazas y se desencadenan alertas, se crean incidentes
 - [Cómo supervisar los incidentes y alertas](#monitor-your-incidents--alerts)
 - [Gravedad de alerta](#alert-severity)
 - [Pasos siguientes](#next-steps)
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 ## <a name="monitor-your-incidents--alerts"></a>Supervisar las alertas de & incidentes
 
@@ -65,7 +70,7 @@ Microsoft Defender para empresas (versión preliminar) asigna una gravedad de al
 | El malware que se está ejecutando lo detecta Microsoft Defender para empresas (versión preliminar). El malware se bloquea casi inmediatamente. | Medio o alto | El malware representa una amenaza para puntos de conexión individuales y para su empresa. |
 | Se detecta un comportamiento sospechoso, pero aún no se han realizado acciones de corrección. | Bajo, Medio o Alto | La gravedad depende del grado en que el comportamiento representa una amenaza para su empresa. |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
 

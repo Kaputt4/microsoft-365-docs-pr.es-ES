@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da37abb5251a59f22f03cfb6462bc68ad4193dd7
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: db1190d72bb721dbbbd3a75bb7d8a9821d5f8ff3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217727"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873765"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
@@ -55,13 +55,13 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
     >[!NOTE]
     >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. 
 
-- Asegúrese de **que los indicadores de red personalizados** **están habilitados Centro de seguridad de Microsoft Defender > Configuración > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
+- Asegúrese de **que los indicadores de red personalizados** **están habilitados Microsoft 365 Defender > Configuración > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
 - Para obtener compatibilidad con indicadores en iOS, vea [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 > [!IMPORTANT]
 > Solo se pueden agregar direcciones IP externas a la lista de indicadores. Los indicadores no se pueden crear para ip internas.
 > Para escenarios de protección web, se recomienda usar las funciones integradas en Microsoft Edge. Microsoft Edge aprovecha [Network Protection para](network-protection.md) inspeccionar el tráfico de red y permite bloques para TCP, HTTP y HTTPS (TLS).
-> Si hay directivas de indicador de dirección URL en conflicto, se aplica la ruta de acceso más larga. Por ejemplo, la directiva de indicador de dirección URL `https:\\support.microsoft.com/office` tiene prioridad sobre la directiva de indicador de dirección URL `https:\\support.microsoft.com` .
+> Si hay directivas de indicador de dirección URL en conflicto, se aplica la ruta de acceso más larga. Por ejemplo, la directiva de indicador de dirección URL `https://support.microsoft.com/office` tiene prioridad sobre la directiva de indicador de dirección URL `https://support.microsoft.com` .
 
 > [!NOTE]
 > Para todos los demás procesos, los escenarios de protección web aprovechan la protección de red para la inspección y la aplicación:

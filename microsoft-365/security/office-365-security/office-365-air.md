@@ -20,15 +20,14 @@ description: Introducción al uso de capacidades automatizadas de investigación
 ms.custom:
 - air
 - seo-marvel-mar2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 130fb0fc09567e66c17018c45b7dcbd8785fd9e4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 469a85866f722539c35bcc0305aa1e8fc39d58be
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370685"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935106"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -115,7 +114,7 @@ Los permisos se conceden a través de determinados roles, como los que se descri
 
 ****
 
-|Tarea|Rol(s) obligatorio(s)|
+|Task|Rol(s) obligatorio(s)|
 |---|---|
 |Configurar características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el [portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)|
 |Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Uno de los siguientes roles, asignados [en Azure Active Directory](/azure/active-directory/roles/permissions-reference) o en el portal [de Microsoft 365 Defender:](permissions-microsoft-365-security-center.md) <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en [el portal Microsoft 365 Defender .](permissions-microsoft-365-security-center.md) Es posible que necesite crear un nuevo grupo de roles de **colaboración** & correo electrónico y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
@@ -134,13 +133,13 @@ Si ya estás usando funcionalidades de AIR en Microsoft Defender para Office 365
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificadas.":::
 
-El nuevo y mejorado portal de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender reúne</a> las capacidades de AIR en Microsoft Defender para [Office 365](defender-for-office-365.md) y en Microsoft Defender [para endpoint](../defender-endpoint/automated-investigations.md). Con estas actualizaciones y mejoras, su equipo de operaciones de seguridad podrá ver detalles sobre investigaciones automatizadas y acciones de corrección en todos sus correos electrónicos, contenido de colaboración, cuentas de usuario y dispositivos, todo en un mismo sitio.
+El nuevo y mejorado portal de Microsoft 365 Defender reúne las capacidades de AIR en Microsoft Defender para Office 365 y <https://security.microsoft.com> en Microsoft Defender para [endpoint](../defender-endpoint/automated-investigations.md). [](defender-for-office-365.md) Con estas actualizaciones y mejoras, su equipo de operaciones de seguridad podrá ver detalles sobre investigaciones automatizadas y acciones de corrección en todos sus correos electrónicos, contenido de colaboración, cuentas de usuario y dispositivos, todo en un mismo sitio.
 
 > [!TIP]
-> El nuevo <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender reemplaza</a> a los siguientes centros:
+> El nuevo portal Microsoft 365 Defender reemplaza a los siguientes centros de administración:
 >
 > - Centro & cumplimiento normativo ( <https://protection.office.com> )
-> - Centro de seguridad de Microsoft Defender ( <https://securitycenter.windows.com> )
+> - Microsoft 365 Defender ( <https://security.microsoft.com> )
 >
 > Además de cambiar la dirección URL, hay un nuevo aspecto, diseñado para ofrecer a su equipo de seguridad una experiencia más optimizada, con visibilidad de más detecciones de amenazas en un solo lugar.
 

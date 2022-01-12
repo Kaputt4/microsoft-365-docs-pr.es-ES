@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Inicie sesión en su cuenta Microsoft 365 administrador para establecer algunas contraseñas de usuario individuales para que nunca expiren mediante Windows PowerShell.
-ms.openlocfilehash: b98dc0612698dd3a2832e63d1c86aa4d6f9db6ce
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: f0eff70b2b95c7e318f8a7e52777d4b684dbd8bf
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530504"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61911538"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual para que nunca expire
 
@@ -36,7 +36,7 @@ En este artículo se explica cómo establecer una contraseña para que un usuari
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?] (Introducción a la Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md).
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. Vea [Overview of the Centro de administración de Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide).
 
 Debe ser administrador global o administrador [de contraseñas](about-admin-roles.md) para realizar estos pasos.
 

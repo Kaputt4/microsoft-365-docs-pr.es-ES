@@ -1,7 +1,7 @@
 ---
 title: ÚtilEs recursos de Microsoft Defender para puntos de conexión
 description: Acceso a recursos útiles, como vínculos a blogs y otros recursos relacionados con Microsoft Defender para endpoint
-keywords: Centro de seguridad de Microsoft Defender, resumen del producto, breve, funcionalidades, licencias
+keywords: Microsoft 365 Defender, breve, breve, funcionalidades, licencias
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: db844645088806551231b8d26b9825340cf3a5ab
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cfd0a95e16c07ae000a0f0dad69e44d0864a9a7d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164483"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937357"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>ÚtilEs recursos de Microsoft Defender para puntos de conexión
 
@@ -27,7 +27,7 @@ ms.locfileid: "61164483"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)

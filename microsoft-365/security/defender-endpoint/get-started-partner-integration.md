@@ -14,20 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 79c637f815ad4f31dd611d6ba05ca566806f71db
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6a4981d77c544b8d4bd0b5824f6a20a3a3731c0b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167267"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937909"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Convertirse en socio de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,11 +44,7 @@ La mejor manera de que los partners tecnológicos certifiquen que su integració
 
 Una vez que el equipo de Microsoft Defender para endpoint haya revisado y aprobado la integración, le dirigiremos a que se le incluya como socio en la Asociación de seguridad inteligente de Microsoft.
 
-## <a name="step-3-become-a--microsoft-intelligent-security-association-member"></a>Paso 3: Convertirse en miembro de la Asociación de seguridad inteligente de Microsoft
-
-[Microsoft Intelligent Security Association](https://www.microsoft.com/security/partnerships/intelligent-security-association) es un programa específicamente para los socios de seguridad de Microsoft para ayudar a enriquecer sus productos de seguridad y mejorar la capacidad de descubrimiento de los clientes de sus integraciones en los productos de seguridad de Microsoft.
-
-## <a name="step-4-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>Paso 4: Obtener una lista en el portal de aplicaciones de partners de Microsoft Defender para endpoint
+## <a name="step-3-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>Paso 3: Obtener una lista en el portal de aplicaciones de partners de Microsoft Defender para endpoint
 
 Microsoft Defender para endpoint admite la detección e [](partner-applications.md) integración de aplicaciones de terceros mediante la página de partners del producto que está incrustada en el portal de administración de Microsoft Defender para endpoints.
 

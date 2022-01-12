@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4364855120524f7b6e993a3827a03a3bd5f79d96
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 8bf51b744e294e4bb2740b3e437305629eb23c2a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170579"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934254"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender for Cloud
 
 Microsoft Defender para endpoint se puede integrar con Microsoft Defender para la nube para proporcionar una solución completa Windows protección del servidor. Con esta integración, Microsoft Defender para la nube puede usar la potencia de Defender para Endpoint para proporcionar una mejor detección de amenazas para Windows Servidores.
@@ -41,7 +41,7 @@ En esta integración se incluyen las siguientes funcionalidades:
     > La integración entre Microsoft Defender para servidores y Microsoft Defender para endpoint se ha ampliado para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows servidores supervisados por Microsoft Defender para la nube también estarán disponibles en Defender para endpoint: Microsoft Defender para la nube se conecta sin problemas al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para puntos de conexión estarán disponibles en la consola de Microsoft Defender para la nube.
-- Investigación del servidor: los clientes de Microsoft Defender para la nube pueden acceder a Centro de seguridad de Microsoft Defender realizar una investigación detallada para descubrir el ámbito de una posible infracción.
+- Investigación del servidor: los clientes de Microsoft Defender para la nube pueden acceder al portal de Microsoft 365 Defender para realizar una investigación detallada para descubrir el ámbito de una posible infracción.
 
 > [!IMPORTANT]
 > - Cuando usa Microsoft Defender para la nube para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y británicos).<br>

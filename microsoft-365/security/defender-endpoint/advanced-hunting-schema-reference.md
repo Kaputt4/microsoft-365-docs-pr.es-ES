@@ -15,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 18fddf99be6b6bd96457607ddec987ef6cc2d07d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 290d302f815de38c4cd84f417118205ed6504fe2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167915"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934266"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprender el esquema de búsqueda avanzada en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
@@ -54,7 +54,7 @@ Para obtener acceso rápidamente a la referencia de esquema, seleccione la acci�
 
 En la siguiente referencia se enumeran todas las tablas del esquema de búsqueda avanzada. Cada nombre de tabla está vinculado a una página donde se describen los nombres de las columnas de esa tabla.
 
-Los nombres de tabla y columna también se enumeran en el Centro de seguridad de Microsoft Defender, en la representación del esquema en la pantalla de búsqueda avanzada.
+Los nombres de tabla y columna también se enumeran en el portal de Microsoft 365 Defender, en la representación del esquema en la pantalla de búsqueda avanzada.
 
 <br>
 
@@ -62,7 +62,7 @@ Los nombres de tabla y columna también se enumeran en el Centro de seguridad de
 
 |Nombre de tabla|Descripción|
 |---|---|
-|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|Alertas en Centro de seguridad de Microsoft Defender|
+|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|Alertas en Microsoft 365 Defender |
 |**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|Información del dispositivo, incluida la información del sistema operativo|
 |**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|Propiedades de red de dispositivos, incluidos adaptadores, direcciones IP y MAC, así como redes y dominios conectados|
 |**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|Creación de procesos y eventos relacionados|

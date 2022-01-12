@@ -15,15 +15,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir el ataque de concesión de consentimiento ilícito en Microsoft 365.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 263bffc6eb0fc45725fa91895b7197bf40d9a956
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: db401231a2db0bddf1115cbdf14ae14cc9897f57
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202415"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935455"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones ilegales de consentimiento
 
@@ -42,7 +43,7 @@ En un ataque de concesión de consentimiento ilegal, el atacante crea una aplica
 Estos ataques aprovechan un modelo de interacción que supone que la entidad que llama a la información es la automatización y no un ser humano.
 
 > [!IMPORTANT]
-> ¿Sospecha que está experimentando problemas con las concesiones de consentimiento ilegales de una aplicación en este momento? Microsoft Cloud App Security (MCAS) tiene herramientas para detectar, investigar y corregir las aplicaciones de OAuth. Este artículo de MCAS tiene un tutorial que describe cómo investigar aplicaciones [de OAuth arriesgadas.](/cloud-app-security/investigate-risky-oauth) También puedes establecer directivas de [aplicación de OAuth](/cloud-app-security/app-permission-policy) para investigar los permisos solicitados por la aplicación, qué usuarios autorizan estas aplicaciones y aprobar o prohibir ampliamente estas solicitudes de permisos.
+> ¿Sospecha que está experimentando problemas con las concesiones de consentimiento ilegales de una aplicación en este momento? Microsoft Defender para Aplicaciones en la nube tiene herramientas para detectar, investigar y corregir las aplicaciones de OAuth. Este artículo de Defender para Aplicaciones en la nube tiene un tutorial que describe cómo investigar aplicaciones [de OAuth arriesgadas.](/cloud-app-security/investigate-risky-oauth) También puedes establecer directivas de [aplicación de OAuth](/cloud-app-security/app-permission-policy) para investigar los permisos solicitados por la aplicación, qué usuarios autorizan estas aplicaciones y aprobar o prohibir ampliamente estas solicitudes de permisos.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>¿Cómo es un ataque de concesión de consentimiento ilegal en Microsoft 365?
 
@@ -50,7 +51,7 @@ Debe buscar en el registro de **auditoría** para encontrar signos, también den
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Pasos para encontrar signos de este ataque
 
-1. Abra el **Microsoft 365 Defender en y,** <https://security.microsoft.com> a continuación, seleccione **Auditar**. O bien, para ir directamente a la página de **Auditoría**, use <https://security.microsoft.com/auditlogsearch>.
+1. Abra el Microsoft 365 Defender en <https://security.microsoft.com> y, a continuación, seleccione **Auditar**. O bien, para ir directamente a la página de **Auditoría**, use <https://security.microsoft.com/auditlogsearch>.
 
 2. En la **página Auditoría,** compruebe que la **pestaña** Buscar está seleccionada y, a continuación, configure las siguientes opciones:
    - **Intervalo de fecha y hora**
@@ -104,7 +105,7 @@ La forma más sencilla de comprobar el ataque de concesión ilegal de consentimi
 
 #### <a name="pre-requisites"></a>Requisitos previos
 
-- La biblioteca de PowerShell de Azure AD instalada.
+- La Azure AD de PowerShell instalada.
 - Derechos de administrador global en el inquilino en el que se ejecutará el script.
 - Administrador local en el equipo desde el que se ejecutarán los scripts.
 
@@ -173,5 +174,5 @@ Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de se
 - [Una aplicación inesperada en la lista de](/azure/active-directory/application-access-unexpected-application) aplicaciones guía a los administradores a través de varias acciones que pueden querer realizar después de darse cuenta de que hay aplicaciones inesperadas con acceso a datos.
 - [La integración de aplicaciones Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) es una introducción de alto nivel de permisos y consentimientos.
 - [Los problemas de desarrollo de mi aplicación](/azure/active-directory/active-directory-application-dev-development-content-map) proporcionan vínculos a diversos artículos relacionados con el consentimiento.
-- Los objetos de entidad de seguridad de aplicación y servicio [de Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) proporcionan una introducción a los objetos de entidad de seguridad de aplicación y servicio que son esenciales para el modelo de aplicaciones.
+- Los objetos de entidad de seguridad de aplicación y servicio [Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) proporcionan una introducción a los objetos de entidad de seguridad Application y Service que son fundamentales para el modelo de aplicaciones.
 - [Administrar el acceso a las aplicaciones](/azure/active-directory/active-directory-managing-access-to-apps) es una introducción a las capacidades que los administradores tienen para administrar el acceso de los usuarios a las aplicaciones.

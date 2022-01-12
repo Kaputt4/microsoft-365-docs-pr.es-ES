@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cbd10a0989d4dbae01cbcd4424da620929fd94b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: ee73e6cb8870bdab30a234af593cd036f9cde54c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521021"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935010"
 ---
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
@@ -97,7 +97,7 @@ Para las organizaciones nuevas o las organizaciones anteriores que nunca tenían
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Paso 1: Crear directivas de cuarentena en el portal de Microsoft 365 Defender web
 
-1. En el [portal Microsoft 365 Defender,](https://security.microsoft.com)vaya a Correo electrónico & sección Directivas de amenazas Sección Directivas de cuarentena y, **a** \>  \>  continuación, seleccione \>  Directivas de **cuarentena.**
+1. En el [portal de Microsoft 365 Defender,](https://security.microsoft.com)vaya a Correo electrónico **&** directivas de colaboración & directivas de amenazas de reglas en \>  \>  \>  la **sección** Reglas.
 
 2. En la **página Directiva de** cuarentena, haga clic en Agregar icono de directiva ![ personalizada.](../../media/m365-cc-sc-create-icon.png) **Agregar directiva personalizada**.
 
@@ -503,7 +503,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
 La configuración global de las directivas de cuarentena le permite personalizar las notificaciones de cuarentena que se envían a los destinatarios de mensajes en cuarentena si las notificaciones de cuarentena están activadas en la directiva de cuarentena. Para obtener más información acerca de estas notificaciones, vea [Quarantine notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **&** sección Directivas de amenazas Sección Directivas de cuarentena y, a continuación, \>  \>  \>  seleccione Directivas **de cuarentena**.
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** directivas de \> **colaboración &** reglas directivas de amenazas Directivas de cuarentena en la \>  \>  **sección** Reglas.
 
 2. En la **página Directiva de** cuarentena, seleccione Configuración **global**.
 
@@ -541,7 +541,7 @@ La configuración global de las directivas de cuarentena le permite personalizar
 
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Ver directivas de cuarentena en el Microsoft 365 Defender web
 
-1. En el [portal Microsoft 365 Defender,](https://security.microsoft.com)vaya a Correo electrónico & sección Directivas de amenazas Sección Directivas de cuarentena y, **a** \>  \>  continuación, seleccione \>  Directivas de **cuarentena.**
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** directivas de \> **colaboración &** reglas directivas de amenazas Directivas de cuarentena en la \>  \>  **sección** Reglas.
 
 2. La **página Directiva de** cuarentena muestra la lista de directivas por **Nombre** y Última **fecha actualizada.**
 
@@ -577,7 +577,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 No puede modificar las directivas de cuarentena integradas denominadas AdminOnlyAccessPolicy o DefaultFullAccessPolicy. Puede modificar la directiva integrada denominada NotificationEnabledPolicy ([si la tiene](#full-access-permissions-and-quarantine-notifications)) y las directivas de cuarentena personalizadas.
 
-1. En el [portal Microsoft 365 Defender,](https://security.microsoft.com)vaya a Correo electrónico & sección Directivas de amenazas Sección Directivas de cuarentena y, **a** \>  \>  continuación, seleccione \>  Directivas de **cuarentena.**
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** directivas de \> **colaboración &** reglas directivas de amenazas Directivas de cuarentena en la \>  \>  **sección** Reglas.
 
 2. En la **página Directivas de** cuarentena, seleccione la directiva haciendo clic en el nombre.
 
@@ -614,7 +614,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Se
 
   Si se usa la directiva de cuarentena, [reemplace la directiva](#step-2-assign-a-quarantine-policy-to-supported-features) de cuarentena asignada antes de quitarla.
 
-1. En el [portal Microsoft 365 Defender,](https://security.microsoft.com)vaya a Correo electrónico & sección Directivas de amenazas Sección Directivas de cuarentena y, **a** \>  \>  continuación, seleccione \>  Directivas de **cuarentena.**
+1. En el portal Microsoft 365 Defender, vaya a Correo electrónico **y &** directivas de \> **colaboración &** reglas directivas de amenazas Directivas de cuarentena en la \>  \>  **sección** Reglas.
 
 2. En la **página Directiva de** cuarentena, seleccione la directiva de cuarentena personalizada que desea quitar haciendo clic en el nombre.
 

@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 113fd3ec196ec6b16c49435e14ed213cd193e5db
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+description: El explorador de actividades le permite ver y filtrar las acciones que los usuarios están llevando a cabo en el contenido etiquetado.
+ms.openlocfilehash: 73e0d135112d109370aa4f3cdc75d30a8ab087a3
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264749"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874045"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
@@ -57,7 +57,26 @@ Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben
 
 ### <a name="permissions"></a>Permisos
 
- Para obtener acceso a la pestaña explorador de actividades, se debe asignar explícitamente la pertenencia a una cuenta en cualquiera de estos grupos de roles o concederla explícitamente.
+Una cuenta debe tener asignada de forma explícita la pertenencia a cualquiera de estos grupos de roles o concederla explícitamente.
+
+### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en versión preliminar
+
+Hay roles y grupos de roles en versión preliminar que puede probar para ajustar los controles de acceso.
+
+Esta es una lista de roles Microsoft Information Protection (MIP) que están en versión preliminar. Para obtener más información sobre ellos, vea [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrador de Information Protection
+- Analista de Information Protection
+- Investigador de protección de información
+- Lector de protección de información
+
+Esta es una lista de grupos de roles de MIP que están en versión preliminar. Para obtener más información sobre los grupos de roles en [el Centro de seguridad y & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protección de la información
+- Administradores de Information Protection
+- Analistas de Information Protection
+- Investigadores de protección de la información
+- Lectores de Information Protection
 
 <!--
 > [!IMPORTANT]
@@ -80,7 +99,7 @@ Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben
 
 El explorador de actividades recopila información de actividad de los registros de auditoría en varios orígenes de actividades. Para obtener información más detallada sobre qué actividad de etiquetado la convierte en explorador de actividades, vea [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
 
-**Actividades de etiquetas** de confidencialidad y actividades de etiquetado de retención de aplicaciones nativas de Office, complemento de Azure Information Protection, SharePoint Online, Exchange Online (solo etiquetas de confidencialidad) y OneDrive.  Por ejemplo:
+**Actividades de**  etiquetas de confidencialidad y actividades de etiquetado de retención de aplicaciones nativas de Office, complemento de Azure Information Protection, SharePoint Online, Exchange Online (solo etiquetas de confidencialidad) y OneDrive. Por ejemplo:
 
 - etiqueta aplicada
 - etiqueta cambiada (actualizada, degradada o eliminada)
@@ -94,7 +113,7 @@ El explorador de actividades recopila información de actividad de los registros
 - protección eliminada
 - archivos detectados 
 
-El explorador de actividades también recopila eventos de coincidencias de directivas **DLP** de Exchange Online, SharePoint Online, OneDrive, chat y canal de Teams (versión preliminar), carpetas y bibliotecas de SharePoint locales, recursos compartidos de archivos locales y dispositivos Windows 10 mediante endpoint **prevención de pérdida de datos (DLP).** Algunos ejemplos de eventos de Windows 10 dispositivos son archivos:
+El explorador de actividades también recopila eventos de coincidencias de directivas **DLP** de Exchange Online, SharePoint Online, OneDrive, chat y canal de Teams (versión preliminar), carpetas y bibliotecas de SharePoint locales, recursos compartidos de archivos locales y dispositivos Windows 10 **a través de Prevención de pérdida de datos de extremo (DLP).** Algunos ejemplos de eventos de Windows 10 dispositivos son archivos:
 
 - eliminaciones
 - creaciones
@@ -106,7 +125,7 @@ El explorador de actividades también recopila eventos de coincidencias de direc
 - copiado en el recurso compartido de red
 - a la que se accede mediante una aplicación sin alambrar 
 
-El valor de comprender qué acciones se están haciendo con el contenido etiquetado confidencial es que puede ver si los controles que ya ha puesto en marcha, como la prevención de pérdida de datos son [efectivos](dlp-learn-about-dlp.md) o no. Si no es así, o si se detecta algo inesperado, como un gran número de elementos etiquetados `highly confidential`y se degradan`general`, puede administrar las distintas directivas y llevar a cabo nuevas acciones para restringir el comportamiento no deseado.
+Comprender qué acciones se están haciendo con el contenido etiquetado confidencial le ayuda a ver si los controles que tiene en su lugar, como las directivas de prevención de pérdida de datos son [efectivos](dlp-learn-about-dlp.md) o no. Si no es así, o si se detecta algo inesperado, como un gran número de elementos etiquetados `highly confidential`y se degradan`general`, puede administrar las distintas directivas y llevar a cabo nuevas acciones para restringir el comportamiento no deseado.
 
 > [!NOTE]
 > El explorador de actividad no supervisa actualmente las actividades de retención de Exchange Online.

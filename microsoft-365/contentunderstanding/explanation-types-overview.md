@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 4f155b4a7e6aef9c12b97f56e414de9fcda88536
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 71c7379b3a9fcd71b996da5eefd18b6aaaef5016
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152831"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872542"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
 
@@ -211,6 +211,17 @@ Puede seleccionar una de las siguientes opciones para este valor:
    ![Intervalo personalizado.](../media/content-understanding/custom-file.png)
 
     En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. Para esta opción, necesita seleccionar una posición **Inicio** y una posición **Fin**. Estos valores representan el número de tokens desde el principio del documento. Aunque puede escribir los valores manualmente, es más fácil ajustarlos en el cuadro de selección en el visor.
+    
+## <a name="considerations-when-configuring-explanations"></a>Consideraciones al configurar explicaciones
+Al entrenar a un clasificador hay que tener en cuenta algunas cosas que producirán resultados más predecibles:
+
+- Entre más documentos entrenes, más preciso será el clasificador.  Cuando sea posible, use más de 5 documentos buenos y use más de 1 documento malo.  Si las bibliotecas con las que está trabajando tienen varios tipos de documentos diferentes, varios de cada tipo llevan a resultados más predecibles.
+- El etiquetado del documento desempeña un papel importante en el proceso de aprendizaje.  Se usan junto con explicaciones para entrenar el modelo.  Es posible que veas algunas anomalías al entrenar a un clasificador con documentos que no tienen mucho contenido en ellos.  Es posible que la explicación no coincida con nada del documento, pero como se ha etiquetado como un documento "bueno", puede que vea que coincide durante el entrenamiento.
+- Al crear explicaciones, usa lógica OR en combinación con la etiqueta para determinar si es una coincidencia.  La expresión regular que usa lógica AND puede ser más predecible.  Esta es una expresión regular de ejemplo para usarla en documentos reales como aprendizaje.  Tenga en cuenta que el texto resaltado en rojo es la frase o frases que estaría buscando.
+
+    <pre>(?=.*network provider)(?=.*participating providers).*</pre>
+    
+- Las etiquetas y las explicaciones funcionan juntas y se usan para entrenar el modelo.  No es una serie de reglas que se pueden desasoyr y se pueden aplicar ponderaciones precisas o de predicción a cada variable que se haya configurado.  Entre mayor sea la variación de los documentos usados en el aprendizaje, se proporcionará más precisión en el modelo.
 
 ### <a name="see-also"></a>Ver también
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/21/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-overview
-ms.openlocfilehash: 2324bb04e388ae94e2c6b3004b9bd07e72eca4d7
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 8d3802abb429c3cc64056316d81be6769c416f38
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643837"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61899312"
 ---
 # <a name="overview-of-microsoft-defender-for-business-preview"></a>Información general sobre Microsoft Defender para empresas (versión preliminar)
 
@@ -74,7 +74,12 @@ Con Defender para empresas (versión preliminar), puedes ayudar a proteger los d
    - [Ver o editar directivas de seguridad](mdb-view-edit-policies.md)
    - [Administrar reglas personalizadas para directivas de firewall](mdb-custom-rules-firewall.md)  
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 - [Obtenga más información sobre el proceso de configuración simplificado en Microsoft Defender para empresas (versión preliminar)](mdb-simplified-configuration.md)
 

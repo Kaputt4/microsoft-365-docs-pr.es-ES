@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/16/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 154f67645062f6816ebdbfa24a2935c779f48c72
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 15c596a921c38df20c40788ec3dbbf791dea79ca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559861"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61874009"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business-preview"></a>Tutoriales y simulaciones en Microsoft Defender para empresas (versión preliminar)
 
@@ -31,6 +31,11 @@ ms.locfileid: "61559861"
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 Si acaba de terminar de configurar Microsoft Defender para empresas (versión preliminar), puede que se pregunte dónde empezar a aprender sobre cómo funciona Defender for Business (versión preliminar). En este artículo se describen los escenarios de vista previa que se van a probar y varios tutoriales y simulaciones que están disponibles para Defender para empresas (versión preliminar). Estos recursos están diseñados para ayudarle a ver cómo Defender para empresas (versión preliminar) puede funcionar para su empresa.
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 ## <a name="try-these-preview-scenarios"></a>Pruebe estos escenarios de vista previa
 
@@ -76,7 +81,7 @@ Cada tutorial incluye un documento de tutorial que explica el escenario, cómo f
    - **Tutorial de respuesta en directo**
    - **Administración & vulnerabilidad de amenazas (escenarios principales)**
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)](mdb-manage-devices.md)
 

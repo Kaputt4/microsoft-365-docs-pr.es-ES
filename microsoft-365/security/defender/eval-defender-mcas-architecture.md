@@ -17,16 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 065dd43af376c16ee9e5daa332a08bc25b0d6b11
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 7e9542e152b2c218a83fd4a431588c14afecbda8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110324"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933161"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-cloud-apps"></a>Revisar los requisitos de arquitectura y los conceptos clave para Microsoft Defender para aplicaciones en la nube
 
@@ -58,7 +56,7 @@ El primer paso para administrar el uso de aplicaciones en la nube es descubrir q
 ![Arquitectura de Microsoft Defender para aplicaciones en la nube: detección en la nube.](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 En esta ilustración, hay dos métodos que se pueden usar para supervisar el tráfico de red y detectar las aplicaciones en la nube que está utilizando la organización.
-- R: Cloud App Discovery se integra con Microsoft Defender para Endpoint de forma nativa. Defender for Endpoint informa de los servicios y aplicaciones en la nube a los que se accede desde dispositivos administrados Windows 10 TI y Windows 11 dispositivos. 
+- A. Cloud App Discovery se integra con Microsoft Defender para Endpoint de forma nativa. Defender for Endpoint informa de los servicios y aplicaciones en la nube a los que se accede desde dispositivos administrados Windows 10 TI y Windows 11 dispositivos. 
 - B. Para la cobertura en todos los dispositivos conectados a una red, el recopilador de registros defender para aplicaciones en la nube se instala en firewalls y otros servidores proxy para recopilar datos de puntos de conexión. Estos datos se envían a Defender for Cloud Apps para su análisis.
 
 #### <a name="managing-cloud-apps"></a>Administración de aplicaciones en la nube

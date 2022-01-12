@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Guía básica para configurar la administración de dispositivos para Microsoft 365.
-ms.openlocfilehash: 2155d33aa57da5bb80dbc83623ac87a94a300f28
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0fef31697657b4694090ae7a1b63516920d8c71b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167379"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933352"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Guía básica de administración de dispositivos para Microsoft 365
 
@@ -49,7 +49,7 @@ Para ayudarte a evaluar mejor la opción de administración de dispositivos que 
 
 En función de tu evaluación, empieza a administrar tus dispositivos con:
 
-- [Intune](/mem/intune/fundamentals/planning-guide)
+- [Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)
 - [Movilidad y seguridad básicas](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades

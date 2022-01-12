@@ -11,17 +11,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y tratamiento de cuentas de usuario comprometidas con capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8561abc3477ccf0dd627b7d69f2761940972435d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cbc3c6c8a81d59bebbd5272e13e0f96de2257623
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962896"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937693"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Solucionar cuentas de usuario comprometidas con investigación y respuesta automatizadas
 
@@ -68,7 +68,7 @@ Cuando una cuenta de usuario está en peligro, se desencadenan alertas. Y en alg
 
 Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ejemplo, en el portal Microsoft 365 Defender, puede ir a Correo electrónico **&** \> **colaboración Revisar** \> **usuarios restringidos**. En el siguiente procedimiento se describe la navegación mediante el panel **de** alertas, que es una buena manera de ver varios tipos de alertas que podrían haber sido desencadenadas.
 
-1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender y</a> vaya a **Incidencias &** \> **alertas**. O bien, para ir directamente a la **página Alertas,** use <https://security.microsoft.com/alerts> .
+1. Abra el portal Microsoft 365 Defender y <https://security.microsoft.com> vaya a Incidentes &  \> **alertas**. O bien, para ir directamente a la **página Alertas,** use <https://security.microsoft.com/alerts> .
 
 2. En la **página Alertas,** filtre los resultados por período de tiempo y la directiva denominada Usuario restringido **para enviar correo electrónico**.
 
@@ -92,7 +92,7 @@ Para obtener más información, [vea Ver detalles de una investigación](air-vie
 
 - **No confíe en una alerta de inicio de sesión sospechosa como su único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que se pone en peligro una cuenta que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Vea [Directivas de alerta](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Revisar los permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

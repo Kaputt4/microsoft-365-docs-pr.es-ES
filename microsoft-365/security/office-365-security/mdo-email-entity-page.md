@@ -15,16 +15,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom:
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
+ms.custom: ''
 description: Los clientes de Microsoft Defender Office 365 E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: 037ab81dd0c657906c59cf485c9da25c58804dab
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 263411d6f0c9931dfd03fbf8b89fd24a86c3c9e6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423280"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939750"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -38,7 +36,7 @@ Los administradores de Microsoft Defender para Office 365 E5 y Defender para Off
 
 ## <a name="reach-the-email-entity-page"></a>Llegar a la página de entidad de correo electrónico
 
-La página de entidad de correo electrónico está disponible en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">el portal Microsoft 365 Defender correo</a> electrónico en el Explorador de &  \> **colaboración**. O bien, para ir directamente a la **página Explorador,** use <https://security.microsoft.com/threatexplorer> .
+La página de entidad de correo electrónico está disponible en el portal de Microsoft 365 Defender en correo electrónico <https://security.microsoft.com> **& explorador de** \> **colaboración**. O bien, para ir directamente a la **página Explorador,** use <https://security.microsoft.com/threatexplorer> .
 
 En **el Explorador,** seleccione el asunto de un correo electrónico que está investigando. Se mostrará una barra dorada en la parte superior del menú desplegable de correo electrónico para ese correo. En esta invitación a la nueva página, se lee "Pruebe nuestra nueva página de entidad de correo electrónico con datos enriquecidos...". Seleccione esta opción para ver la nueva página.
 
@@ -92,7 +90,7 @@ Estos detalles son específicos de los datos adjuntos y las direcciones URL de c
 
 Los usuarios verán detalles enriquecidos de detonación para datos adjuntos malintencionados conocidos o direcciones URL encontradas en sus correos electrónicos, que se detonaron para su inquilino específico. Constará de la cadena de detonación, el resumen de detonación, la captura de pantalla y los detalles del comportamiento observado para ayudar a los clientes a comprender por qué los datos adjuntos o la dirección URL se consideraron malintencionados y detonados.
 
-1. *Cadena de detonación*. Un único archivo o detonación de dirección URL puede desencadenar varias detonaciones. La cadena Detonación realiza un seguimiento de la ruta de las detonaciones, incluido el archivo malintencionado original o la dirección URL que causó el veredicto, y el resto de archivos o direcciones URL que se han producido por la detonación. Es posible que estas direcciones URL o archivos adjuntos no se presenten directamente en el correo electrónico, pero incluir ese análisis es importante para determinar por qué se encontró que el archivo o la dirección URL son malintencionados.  
+1. *Cadena de detonación*. Un único archivo o detonación de dirección URL puede desencadenar varias detonaciones. La cadena Detonación realiza un seguimiento de la ruta de las detonaciones, incluido el archivo malintencionado original o la dirección URL que causó el veredicto, y todos los demás archivos o direcciones URL afectados por la detonación. Es posible que estas direcciones URL o archivos adjuntos no se presenten directamente en el correo electrónico, pero incluir ese análisis es importante para determinar por qué se encontró que el archivo o la dirección URL son malintencionados.  
 
     > [!NOTE]
     > Esto puede mostrar solo el elemento de nivel superior si no se encontró que ninguna de las entidades vinculadas a él era problemática o se detonó.
@@ -114,7 +112,7 @@ Los usuarios verán detalles enriquecidos de detonación para datos adjuntos mal
 
 *Detalles del correo* electrónico: detalles necesarios para una comprensión más detallada del correo electrónico disponible en la *pestaña* Análisis.
 
-- Exchange de transporte (también conocidas como reglas de flujo de correo o *ETR):* estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad (phish) y correo no deseado. Solo se pueden crear y modificar en el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange,</a>pero si algún ETR se aplica a un mensaje, aquí se mostrarán el nombre etr y el GUID. Información valiosa para fines de seguimiento.
+- Exchange de transporte (también conocidas como reglas de flujo de correo o *ETR):* estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad (phish) y correo no deseado. Las reglas de flujo de correo se crean y modifican en el Centro de administración de Exchange en , pero si alguna regla de flujo de correo se aplica a un mensaje, el nombre de regla y el GUID se <https://admin.exchange.microsoft.com/#/transportrules> mostrarán aquí. Información valiosa para fines de seguimiento.
 
 - *Invalidaciones del* sistema: este es un medio para hacer excepciones a la ubicación de entrega destinada a un mensaje al invalidar la ubicación de entrega dada por el sistema (según la tecnología de amenazas y detección).
 
@@ -153,3 +151,47 @@ Los usuarios verán detalles enriquecidos de detonación para datos adjuntos mal
   - Ninguno: indica que no existe ningún registro TXT de DMARC para el dominio de envío en DNS.
 
 *Autenticación* compuesta: este es un valor usado por Microsoft 365 para combinar la autenticación de correo electrónico como SPF, DKIM y DMARC, para determinar si el mensaje es auténtico. Usa el *dominio From:* del correo como base de la evaluación.
+
+### <a name="email-summary-panel"></a>Panel de resumen de correo electrónico
+
+El panel de resumen de correo electrónico es una vista resumida de la página de entidad de correo electrónico completa. Contiene detalles estandarizados sobre el correo electrónico (por ejemplo, detecciones), así como información específica del contexto (por ejemplo, para metadatos de cuarentena o envíos). El panel de resumen de correo electrónico reemplaza a los elementos tradicionales Detecciones en tiempo real, Explorador de amenazas, Envíos e informes.
+
+> [!div class="mx-imgBorder"]
+> ![Abra el vínculo de entidad de correo electrónico.](../../media/open-email-entity-mdo.png)
+
+> [!NOTE]
+> Para ver todos los componentes, haga clic en el vínculo Abrir entidad **de correo electrónico** para abrir la página de entidad de correo electrónico completa.  
+
+El panel de resumen de correo electrónico se divide en las siguientes secciones:  
+
+- *Detalles de entrega:* contiene información sobre las amenazas y el nivel de confianza correspondiente, las tecnologías de detección y la ubicación de entrega original y más reciente.
+
+- *Detalles del correo* electrónico: contiene información sobre las propiedades de correo electrónico como el nombre del remitente, la dirección del remitente, el tiempo recibido, los detalles de autenticación y otros detalles.
+
+- *DIRECCIONES URL:* de forma predeterminada, verá 3 direcciones URL y sus amenazas correspondientes. Siempre puede hacer clic en **Ver todas las direcciones URL** para expandir y ver todas las direcciones URL y exportarlas.  
+
+- *Datos* adjuntos: de forma predeterminada, verá 3 datos adjuntos. Siempre puede hacer clic en **Ver todos los datos adjuntos** para expandir y ver todos los datos adjuntos. 
+
+Además de las secciones anteriores, también verá secciones específicas de algunas experiencias que están integradas con el panel de resumen: 
+
+- Envíos: 
+
+    - *Detalles del envío:* contiene información sobre los envíos específicos, como:
+        - Fecha enviada
+        - Subject
+        - Tipo de envío
+        - Motivo para enviar
+        - Identificador de envío
+        - Enviado por
+
+    - *Detalles del resultado:* se revisan los mensajes enviados. Puede ver el resultado del envío, así como los pasos siguientes recomendados.
+
+- Cuarentena:  
+
+    - *Detalles de cuarentena:* contiene detalles específicos de cuarentena. Para obtener más información, vea [Manage quarantined messages](manage-quarantined-messages-and-files.md#view-quarantined-message-details).
+
+        - Expira: La fecha/hora en que el mensaje se eliminará automática y permanentemente de la cuarentena.
+        - Liberado para: Todas las direcciones de correo electrónico (si corresponde) para las que el mensaje se ha liberado.
+        - Todavía no se ha liberado para: Todas las direcciones de correo electrónico (si corresponde) para las que el mensaje no se ha liberado aún.
+
+    - *Acciones de cuarentena:* para obtener más información sobre las distintas acciones de cuarentena, vea [Administrar mensajes en cuarentena.](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email)

@@ -18,16 +18,14 @@ ms.collection:
 description: Los administradores pueden aprender a buscar y usar los informes de seguridad de correo electrónico que están disponibles en el portal Microsoft 365 Defender correo electrónico.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3e5e7ba4688f4ec4a54856bc5b4e8e3c14aed090
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: fc60c0ed388a8bc30158fbf7366e16776b0b5dd5
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421767"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872098"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -44,14 +42,14 @@ Hay una variedad de informes disponibles en el portal de Microsoft 365 Defender 
 >
 > Algunos de los informes de la página Informes de **colaboración & correo** electrónico requieren Microsoft Defender para Office 365. Para obtener información acerca de estos informes, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 >
-> Los informes relacionados con el flujo de correo están ahora en <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">el centro Exchange administración.</a> Para obtener más información acerca de estos informes, vea Informes de flujo de correo [en el nuevo centro Exchange administración.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> Los informes relacionados con el flujo de correo ahora se encuentran en el centro Exchange administración. Para obtener más información acerca de estos informes, vea Informes de flujo de correo [en el nuevo centro Exchange administración.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="compromised-users-report"></a>Informe de usuarios comprometidos
 
 > [!NOTE]
 > Este informe está disponible en Microsoft 365 organizaciones con Exchange Online buzones de correo. No está disponible en organizaciones independientes Exchange Online Protection (EOP).
 
-El **informe Usuarios comprometidos** muestra el número de  cuentas  de usuario que se marcaron como Sospechosas o Restringidas en los últimos 7 días. Las cuentas en cualquiera de estos estados son problemáticas o incluso están en peligro. Con el uso frecuente, puede usar el informe para detectar picos e incluso tendencias en cuentas sospechosas o restringidas. Para obtener más información acerca de los usuarios en peligro, vea [Responder a una cuenta de correo electrónico comprometida.](responding-to-a-compromised-email-account.md)
+El **informe Usuarios comprometidos** muestra el número  de cuentas de usuario que se marcaron como Sospechosas o Restringidas **en** los últimos 7 días. Las cuentas en cualquiera de estos estados son problemáticas o incluso están en peligro. Con el uso frecuente, puede usar el informe para detectar picos e incluso tendencias en cuentas sospechosas o restringidas. Para obtener más información acerca de los usuarios en peligro, vea [Responder a una cuenta de correo electrónico comprometida.](responding-to-a-compromised-email-account.md)
 
 ![Widget Usuarios comprometidos en la página Informes de colaboración & correo electrónico.](../../media/compromised-users-report-widget.png)
 
@@ -83,13 +81,8 @@ En la página de informe principal, el ![ icono Crear programación.](../../medi
 
 ## <a name="exchange-transport-rule-report"></a>Exchange de regla de transporte
 
-El **Exchange de regla de** transporte muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
-
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** de correo electrónico & \> **colaboración** Correo & \> **informes de colaboración**. En la página **Informes de colaboración &** correo electrónico, busque Exchange de transporte **y, a** continuación, haga clic en Ver **detalles.** Para ir directamente al informe, abra <https://security.microsoft.com/reports/ETRRuleReport> .
-
-![Exchange de regla de transporte en la página Informes de colaboración de & correo electrónico.](../../media/transport-rule-report-widget.png)
-
-En la página Exchange informe de reglas de **transporte,** los gráficos y datos disponibles se describen en las secciones siguientes.
+> [!NOTE]
+> El **Exchange de regla de transporte** ya está disponible en el EAC. Para obtener más información, [vea Exchange de reglas de transporte en el nuevo EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ### <a name="chart-breakdown-by-direction"></a>Desglose del gráfico por dirección
 
@@ -246,7 +239,7 @@ En la página de informe principal, el ![ icono Crear programación.](../../medi
 
 ### <a name="mailflow-view-for-the-mailflow-status-report"></a>Vista Flujo de correo para el informe de estado de flujo de correo
 
-La **vista Flujo de** correo muestra cómo las características de protección contra amenazas de correo electrónico de Microsoft filtran el correo electrónico entrante y saliente en su organización. Esta vista usa un diagrama de flujo horizontal (conocido como diagrama _de Sankey)_ para proporcionar detalles sobre el recuento total de correo electrónico y cómo afectan a este recuento las características de protección contra amenazas configuradas, incluida la protección perimetral, antimalware, anti phishing, correo no deseado y contra la suplantación de identidad.
+La **vista Flujo de** correo muestra cómo las características de protección contra amenazas de correo electrónico de Microsoft filtran el correo electrónico entrante y saliente en su organización. Esta vista usa un diagrama de flujo horizontal (conocido como diagrama _de Sankey)_ para proporcionar detalles sobre el recuento total de correo electrónico y cómo afectan a este recuento las características de protección contra amenazas configuradas, incluida la protección perimetral, antimalware, anti phishing, correo no deseado y anti suplantación de identidad.
 
 ![Vista Flujo de correo en el informe de estado de flujo de correo.](../../media/mail-flow-status-report-mailflow-view.png)
 
@@ -539,11 +532,11 @@ En la **vista Ver datos por correo electrónico no \> deseado** **y** Desglose d
 - **Reputación malintencionada de URL**
 - **Filtro avanzado**
 - **Filtro general**
-- **Detección de análisis mixto**
-- **Coincidencia de huella digital**
+- **Detección de análisis mixta:** varios filtros contribuyeron al veredicto del mensaje.
+- **Coincidencia de huellas digitales:** el mensaje se marcó como malo debido a mensajes anteriores.
 - **Reputación de dominio**
-- **Masivo**
-- **Reputación de IP**
+- **Masivo:** elementos detectados como que superan la configuración masiva del usuario.
+- **Reputación ip:** el mensaje se consideró correo no deseado en función de la reputación de la dirección IP de envío.
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
@@ -821,7 +814,7 @@ En la **vista Ver datos por invalidación del** sistema y Desglose de gráficos 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 92834840bc020693d6edd203b04ad427ebb80045
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4f725a74d63feaffeba43dd832ed4eb1df744d7d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284174"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935407"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos y identidad de confianza cero
 
@@ -63,7 +63,7 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 
 |Nivel de protección|Directivas|Más información|Licencias|
 |---|---|---|---|
-|**Punto de partida**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
+|**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
 ||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|Microsoft 365 E3 o E5|
 ||[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Fuerza a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
 ||[Aplicar protección de datos de directivas de protección de aplicaciones (APP)](#apply-app-data-protection-policies)|Una directiva de Protección de aplicaciones de Intune por plataforma (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|
@@ -242,18 +242,16 @@ Para crear una nueva directiva de protección de aplicaciones para cada platafor
 
 ## <a name="require-approved-apps-and-app-protection"></a>Requerir aplicaciones aprobadas y protección de APLICACIONES
 
-Para aplicar las directivas de protección de APLICACIONES que aplicó en Intune, debe crear una directiva de acceso condicional para requerir aplicaciones cliente aprobadas y las condiciones establecidas en las directivas de protección de APLICACIONES.
+Para aplicar las directivas de protección de aplicaciones que aplicó en Intune, debe crear una directiva de acceso condicional para requerir aplicaciones cliente aprobadas y las condiciones establecidas en las directivas de protección de APLICACIONES.
 
-La aplicación de directivas de protección de APLICACIONES requiere un conjunto de directivas descritas en Requerir directiva de protección de aplicaciones para el acceso a aplicaciones en la nube [con acceso condicional.](/azure/active-directory/conditional-access/app-protection-based-conditional-access) Estas directivas se incluyen en este conjunto recomendado de directivas de configuración de identidad y acceso.
+La aplicación de directivas de protección de aplicaciones requiere un conjunto de directivas descritas en Requerir directiva de protección de aplicaciones para el acceso a aplicaciones en la [nube con acceso condicional.](/azure/active-directory/conditional-access/app-protection-based-conditional-access) Estas directivas se incluyen en este conjunto recomendado de directivas de configuración de identidad y acceso.
 
-Para crear la directiva de acceso condicional que requiere aplicaciones aprobadas y protección de APLICACIONES, siga el "Paso 1: Configurar una directiva de acceso condicional de Azure AD para Microsoft 365" en escenario [1:](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)las aplicaciones de Microsoft 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones , que permite Outlook para iOS y Android, pero bloquea OAuth compatible con OAuth Exchange ActiveSync clientes que se conecten a Exchange Online.
+Para crear la directiva de acceso condicional que requiere aplicaciones aprobadas y protección de aplicaciones, siga los pasos descritos en [Acceso condicional:](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection)Requerir aplicaciones cliente aprobadas o directiva de protección de aplicaciones, que solo permite que las cuentas de las aplicaciones protegidas por directivas de protección de aplicaciones accedan Microsoft 365 puntos de conexión.
 
    > [!NOTE]
-   > Esta directiva garantiza que los usuarios móviles puedan tener acceso a todos los Office con las aplicaciones aplicables.
+   > Esta directiva garantiza que los usuarios móviles puedan tener acceso a todos los Microsoft 365 con las aplicaciones aplicables.
 
-Si está habilitando el acceso móvil a Exchange Online, implemente Bloquear clientes [de ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)lo que impide que los clientes Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online. Esta directiva no se muestra en la ilustración de la parte superior de este artículo. Se describe y se muestra en [Recomendaciones de directiva para proteger el correo electrónico.](secure-email-recommended-policies.md)
-
-Para crear la directiva de acceso condicional que requiere Edge para iOS y Android, siga el "Paso 2: Configurar una directiva de acceso condicional de Azure AD para Microsoft 365" en escenario [2:](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)Las aplicaciones de explorador requieren aplicaciones aprobadas con directivas de protección de aplicaciones , que permite Edge para iOS y Android, pero bloquea que otros exploradores web de dispositivos móviles se conecten a puntos de conexión de Microsoft 365.
+Esta directiva también impide que Exchange ActiveSync clientes se conecten a Exchange Online. Sin embargo, puede crear una directiva independiente para controlar Exchange ActiveSync. Para obtener más información, vea Bloquear clientes [de ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)que impide que los Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online. Esta directiva no se muestra en la ilustración de la parte superior de este artículo. Se describe y se muestra en [Recomendaciones de directiva para proteger el correo electrónico.](secure-email-recommended-policies.md)
 
  Estas directivas aprovechan los controles de concesión Requerir aplicación [cliente aprobada](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) y Requerir directiva de protección [de aplicaciones.](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
 
@@ -351,7 +349,7 @@ Para dispositivos Enterprise de perfil de trabajo de Android:
 |Nivel de protección  |Directiva de dispositivos |Más información  |
 |---------|---------|---------|
 |Punto de inicio     |Perfil de trabajo: seguridad básica (nivel 1)      |N/D         |
-|Empresa     |Perfil de trabajo: seguridad básica (nivel 1)         |No aplicable         |
+|Empresa     |Perfil de trabajo: seguridad básica (nivel 1)         |N/D         |
 |Punto de inicio     |Totalmente administrado: seguridad mejorada (nivel 2)       |La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.         |
 |Empresa     |Totalmente administrado: seguridad mejorada (nivel 2)         |La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.         |
 |Seguridad especializada     |Seguridad alta (nivel 3)         |La configuración de directiva aplicada en el nivel 3 incluye toda la configuración de directiva recomendada para los niveles 1 y 2 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 2.         |

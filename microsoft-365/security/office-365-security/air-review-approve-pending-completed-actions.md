@@ -15,17 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom: ''
 description: Obtenga información sobre las acciones de corrección en las capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 5321f1cbe35727649c80dc17778dc843630f695e
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: bc8c99a547e4f30e10575e8353afd6ca02bf233b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962740"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932778"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar acciones de corrección en Office 365
 
@@ -40,46 +40,36 @@ A medida que las investigaciones automatizadas en el &  contenido de colaboraci�
 Estas acciones de corrección no se toman a menos que el equipo de operaciones de seguridad las apruebe. Se recomienda revisar y aprobar las acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas se completen de forma oportuna. En algunos casos, puede reconsiderar las acciones enviadas.  Debe formar parte de la función de & de depuración antes de realizar cualquier acción.
 
 ## <a name="approve-or-reject-pending-actions"></a>Aprobar (o rechazar) acciones pendientes
+
 Hay cuatro formas diferentes de buscar y realizar acciones de investigación automática:
 
 - [Cola de incidentes](https://security.microsoft.com/incidents)
-- [Centro de acciones](https://security.microsoft.com/action-center/pending)
 - Investigación en sí (a la que se accede a través de un incidente o desde una alerta)
+- [Centro de acciones](https://security.microsoft.com/action-center/pending)
 - [Cola de investigaciones de investigación y corrección](https://security.microsoft.com/airinvestigation)
 
 ## <a name="incident-queue"></a>Cola de incidentes
 
-1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
-2. En el panel de navegación, seleccione **Incidentes & alertas > incidentes**.
-3. Seleccione un nombre de incidente para abrir su página de resumen.
-4. Seleccione la **pestaña Evidencia y** respuesta.
-5. Seleccione un elemento de la lista. Se abre su panel lateral.
-6. En el panel lateral, lleve a cabo acciones de aprobación o rechazo.
-
-## <a name="investigation-queue"></a>Cola de investigación
-
-1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
-2. Navegue desde la página alertas/incidentes.
-3. En la página Investigación, vaya a la **pestaña Acciones pendientes.**
+1. En el portal Microsoft 365 Defender en , vaya a la página Incidentes en <https://security.microsoft.com> Incidentes &   \> **alertas incidentes**. Para ir directamente a la **página Incidentes,** use <https://security.microsoft.com/incidents> .
+2. En la **página Incidentes,** seleccione un nombre de incidente para abrir su página de resumen.
+3. Seleccione la **pestaña Evidencia y** respuesta.
 4. Seleccione un elemento de la lista. Se abre su panel lateral.
 5. En el panel lateral, lleve a cabo acciones de aprobación o rechazo.
 
 ## <a name="action-center"></a>Centro de actividades
 
-1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
-2. En el panel de navegación, seleccione **Centro de acciones**.
-3. En la **pestaña** Pendiente, revise la lista de acciones que están a la espera de su aprobación.
+1. En el Microsoft 365 Defender en , vaya a la página <https://security.microsoft.com> **Centro de** acciones seleccionando Centro **de acciones**. Para ir directamente a la **página Centro de acciones,** use <https://security.microsoft.com/action-center/pending> .
+2. En la **página Centro de** acciones, compruebe que la pestaña Pendiente está seleccionada y, a continuación, revise la lista de acciones que están a la espera de su aprobación. 
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
    - Seleccione **Aprobar** para iniciar una acción pendiente.
    - Seleccione **Rechazar** para evitar que se haga una acción pendiente.
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>Cola de investigaciones de investigación y corrección
 
-1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender e</a> inicie sesión.
-2. Abrir investigaciones pendientes.
-3. En la página Investigación, vaya a la **pestaña Acciones pendientes.**
-4. Seleccione un elemento de la lista. Se abre su panel lateral.
-5. En el panel lateral, lleve a cabo acciones de aprobación o rechazo.
+1. En el Microsoft 365 Defender en , vaya a la página Investigación de amenazas en <https://security.microsoft.com> **Email & collaboration**  \> **Investigations**. Para ir directamente a la **página Investigación de amenazas,** use <https://security.microsoft.com/airinvestigation> .
+2. En la **página Investigación de** amenazas, busque y un elemento de la lista cuyo estado es Pending **action**.
+3. Haga ![ clic en Abrir en el icono de nueva ventana.](../../media/m365-cc-sc-open-icon.png) **Abra en una nueva ventana** en la hora de lista (entre **ID** y **Status**).
+4. En la página que se abre, lleve a cabo acciones de aprobación o rechazo.
 
 ## <a name="change-or-undo-one-remediation-action"></a>Cambiar o deshacer una acción de corrección
 
@@ -90,24 +80,24 @@ Hay dos formas diferentes de reconsiderar las acciones enviadas:
 
 ## <a name="change-or-undo-through-the-unified-action-center"></a>Cambiar o deshacer a través del centro de acciones unificado
 
-1. Vaya al centro [de acciones unificado](https://security.microsoft.com/action-center) e inicie sesión.
-2. En la **pestaña** Historial, seleccione una acción que desee cambiar o deshacer.
+1. En el Microsoft 365 Defender en , vaya al centro de acciones <https://security.microsoft.com> unificado seleccionando **Centro de acciones**. Para ir directamente al centro de acciones unificado, use <https://security.microsoft.com/action-center/> .
+2. En la **página Centro de** acciones, seleccione la pestaña Historial y, a continuación, seleccione la acción que desea cambiar o deshacer. 
 3. En el panel de la parte derecha de la pantalla, seleccione la acción adecuada **(** mover a la bandeja de **entrada,** mover a correo no deseado **,** mover a elementos eliminados, eliminar temporalmente o eliminar de forma **permanente**).
 
 ## <a name="change-or-undo-through-the-office-action-center"></a>Cambiar o deshacer a través del centro de Office acción
 
-1. Vaya al centro [de Office acción e](https://security.microsoft.com/threatincidents) inicie sesión.
-2. Seleccione la corrección adecuada.
+1. En el portal Microsoft 365 Defender en , vaya al centro de acción de Office en Correo electrónico & centro de acciones <https://security.microsoft.com>  \>  \> **de revisión de colaboración.** Para ir directamente al centro de Office acción, use <https://security.microsoft.com/threatincidents> .
+2. En la **página Centro de** acciones, seleccione la corrección adecuada.
 3. En el panel lateral, haga clic en la entrada envíos de correo y espere a que se cargue la lista.
 4. Espere a que el botón Acción de la parte superior habilite y seleccione el botón Acción para cambiar el tipo de acción.
 5. Esto creará las acciones adecuadas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Usar el Explorador de amenazas](threat-explorer.md)
 - [Acciones de administrador /manual](remediate-malicious-email-delivered-office-365.md)
 - [Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Ver detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)

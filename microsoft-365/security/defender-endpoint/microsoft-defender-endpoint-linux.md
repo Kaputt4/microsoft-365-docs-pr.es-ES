@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aefa9c38be0ec25545b64e28514b48c91cfbcdd0
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 0556527e7eac3eed4b54a2dd948a9ca8dae76fc7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560250"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867846"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -96,6 +96,9 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
        - Para 6.8: 2.6.32-642.* 
        - Para 6.9: 2.6.32-696.* 
        - Para la 6.10: 2.6.32.754.2.1.el6.x86_64 a 2.6.32-754.41.2:
+
+ > [!NOTE]
+ > Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección solo se proporcionan para soporte técnico de actualización.
 
     Lista de versiones:
 

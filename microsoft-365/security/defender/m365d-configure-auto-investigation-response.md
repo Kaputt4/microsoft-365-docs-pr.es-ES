@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 3b724fcd11fb9acb32bd6c4cec551156f8a86cda
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 43c881d340b5832a3403a6e47f664163f10dea00
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369713"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939926"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurar las funcionalidades automatizadas de investigación y respuesta en Microsoft 365 Defender
 
@@ -59,7 +59,7 @@ A continuación, una vez configurado todo, puede ver y administrar acciones de c
 
 Si las investigaciones automatizadas se ejecutan y si las acciones de corrección se toman automáticamente o solo tras la aprobación de los dispositivos dependen de determinadas configuraciones, como las directivas de grupo de dispositivos de la organización. Revisa el nivel de automatización configurado para las directivas de grupo de dispositivos.
 
-1. Vaya al Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
 2. Vaya a **Configuración**  >  **permisos grupos** de  >  **dispositivos**.
 

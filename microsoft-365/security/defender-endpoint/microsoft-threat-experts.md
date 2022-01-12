@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f34390890f2b49c3058c50a12d3ce67454e4dd37
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 96fd95ca7f774d7aec5800f10e68fd23c10987cf
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560773"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936082"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -63,7 +63,7 @@ Expertos en amenazas de Microsoft: la notificación de ataques dirigidos proporc
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Expertos en amenazas de Microsoft: expertos a petición
 
-Los clientes pueden contratar a nuestros expertos en seguridad directamente Centro de seguridad de Microsoft Defender para obtener una respuesta rápida y precisa. Los expertos proporcionan información necesaria para comprender mejor las amenazas complejas que afectan a su organización, desde las consultas de alertas, los dispositivos potencialmente en peligro, la causa raíz de una conexión de red sospechosa, hasta la inteligencia de amenazas adicional con respecto a las campañas de amenazas persistentes avanzadas en curso. Con esta funcionalidad, puede:
+Los clientes pueden contratar a nuestros expertos en seguridad directamente Microsoft 365 Defender para obtener una respuesta rápida y precisa. Los expertos proporcionan información necesaria para comprender mejor las amenazas complejas que afectan a su organización, desde las consultas de alertas, los dispositivos potencialmente en peligro, la causa raíz de una conexión de red sospechosa, hasta la inteligencia de amenazas adicional con respecto a las campañas de amenazas persistentes avanzadas en curso. Con esta funcionalidad, puede:
 
 - Obtener aclaraciones adicionales sobre alertas, incluida la causa raíz o el ámbito del incidente
 - Obtenga claridad sobre el comportamiento sospechoso del dispositivo y los siguientes pasos si se enfrenta a un atacante avanzado

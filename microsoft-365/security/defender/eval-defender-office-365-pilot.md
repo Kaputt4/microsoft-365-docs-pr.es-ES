@@ -17,22 +17,20 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-overview
-- m365solution-evalutatemtp
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 4dc32ba44f97ef65a727c24409db6c96531daca6
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 22831163863e64347029cb9e39b5e52046fd6b3f
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421635"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61932856"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloto de Microsoft Defender para Office 365
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 3 de 3](eval-defender-office-365-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender para Office 365. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-office-365-overview.md).
 

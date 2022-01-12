@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 444e2acc789cec0c569cbd4904a40794886f40dc
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c70a3dfa873f42b110642dfc77cc877e52c6b8ca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61369677"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937705"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 
@@ -105,13 +105,13 @@ Después de iniciar la prueba, los cambios y actualizaciones pueden tardar hasta
 
 ## <a name="availability"></a>Disponibilidad
 
-La versión de prueba de Defender para Office 365 se está implementando gradualmente para clientes existentes que cumplen criterios específicos y que no tienen licencias de Plan 2 de Defender para Office 365 (incluidas en su suscripción o como complemento).
+La versión de prueba de Defender para Office 365 se está implementando gradualmente para clientes existentes que cumplen criterios específicos y que no tienen licencia de Defender para el Plan 2 de Office 365 (incluida en su suscripción o como complemento).
 
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
 Para obtener más información, vea [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="q-how-do-i-extend-the-trial"></a>P: ¿Cómo se amplía la versión de prueba?
 

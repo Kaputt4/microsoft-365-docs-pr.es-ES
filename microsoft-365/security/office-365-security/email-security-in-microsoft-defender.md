@@ -15,15 +15,14 @@ ms.collection:
 description: Ver e investigar intentos de suplantación de identidad de malware.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38bf13f02a1641147a6b76ba381afb6f0e282892
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 3ee97c54174fc7aaa2cd6d653dcd9fdd8298376d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507303"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872302"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Seguridad de correo electrónico con el Explorador de amenazas en Microsoft Defender para Office 365
 
@@ -34,7 +33,7 @@ En este artículo:
 - [Iniciar la investigación y respuesta automatizadas](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> Esto forma parte de una serie de **3** artículos sobre explorador de amenazas **(Explorer),** seguridad de correo electrónico y **conceptos** básicos de detecciones de Explorador y tiempo real (como diferencias entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son [Búsqueda](threat-hunting-in-threat-explorer.md) de amenazas en el Explorador de amenazas y explorador de amenazas y conceptos básicos de detecciones [en tiempo real.](real-time-detections.md)
+> Esto forma parte de una serie de **3** artículos sobre explorador de amenazas **(Explorer),** seguridad de correo electrónico y detecciones de Explorador y tiempo real (como **diferencias** entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son Búsqueda de [amenazas en](threat-hunting-in-threat-explorer.md) el Explorador de amenazas y explorador de amenazas y [detecciones en tiempo real.](real-time-detections.md)
 
 En este artículo se explica cómo ver e investigar los intentos de malware y suplantación de identidad detectados en el correo electrónico por Microsoft 365 de seguridad.
 
@@ -47,7 +46,9 @@ En este artículo se explica cómo ver e investigar los intentos de malware y su
 
 Para ver el malware detectado en el correo electrónico ordenado Microsoft 365 tecnología, use la vista [**\> Malware**](threat-explorer-views.md#email--malware) de correo electrónico del Explorador (o detecciones en tiempo real). El malware es la vista predeterminada, por lo que puede seleccionarse tan pronto como abra el Explorador.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>elija Correo & explorador de **colaboración** \>  (o **Detecciones en tiempo real**; En este ejemplo se usa Explorer).
+1. En el portal Microsoft 365 Defender en , vaya a Correo electrónico & colaboración y, a continuación, elija Explorador o <https://security.microsoft.com> **Detecciones en tiempo real**.   Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports> .
+
+   En este ejemplo se **usa Explorer**.
 
    A partir de aquí, comience en la vista, elija un período de tiempo determinado para investigar (si es necesario) y centre los filtros, según el recorrido [del Explorador.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 
@@ -86,8 +87,9 @@ Puede usar la opción **Informe limpio** en el Explorador para notificar un mens
 
 Puede ver los intentos de suplantación de identidad a través de direcciones URL en el correo electrónico, incluida una lista de direcciones URL permitidas, bloqueadas e invalidadas. Para identificar las direcciones URL en las que [se hizo](safe-links.md) clic, Caja fuerte deben configurarse los vínculos. Asegúrese de configurar las directivas de [vínculos](set-up-safe-links-policies.md) Caja fuerte para la protección con tiempo de clic y el registro de veredictos de clics Caja fuerte vínculos.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>elija Correo & explorador de **colaboración** \>  (o **Detecciones en tiempo real**; En este ejemplo se usa Explorer).
-, elija **Email & collaboration** \> **Explorer** (o **Detecciones en tiempo real;** En este ejemplo se usa Explorer).
+1. En el portal Microsoft 365 Defender en , vaya a Correo electrónico & colaboración y, a continuación, elija Explorador o <https://security.microsoft.com> **Detecciones en tiempo real**.   Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports> .
+
+   En este ejemplo se **usa Explorer**.
 
 2. En la **lista** desplegable Ver, elija **Email** \> **Phish**.
 

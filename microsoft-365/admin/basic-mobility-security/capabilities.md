@@ -19,38 +19,20 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad básica y la seguridad pueden ayudarle a proteger y administrar sus dispositivos móviles.
-ms.openlocfilehash: b5c2abf9fe261521d5b22a98dc56abf4885693e6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 73df4cd8aa4eb8dea8ef7c96304e48caf1f15f8a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153947"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61908014"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
 La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles como iPhones, iPads, Androides y teléfonos Windows usados por usuarios con licencia Microsoft 365 en su organización. Puedes crear directivas de administración de dispositivos móviles con configuraciones que puedan ayudar a controlar el acceso a los documentos y correo electrónico Microsoft 365 de la organización para dispositivos móviles y aplicaciones compatibles. Si un dispositivo se pierde o se lo roban, puede borrarlo de forma remota para quitar la información confidencial de la organización.
 
-## <a name="supported-devices"></a>Dispositivos admitidos
+## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
 
-Puedes usar Movilidad y seguridad básicas para proteger y administrar los siguientes dispositivos.
-
-- iOS 11.0 o versiones posteriores
-
-- Android 5.0 o versiones<sup>posteriores 3</sup>
-
-- Windows 8.1<sup>1</sup>
-
-- Windows 8.1 RT<sup>1</sup>
-
-- Windows 10<sup>2</sup>
-
-- Windows 10 Mobile<sup>2</sup>
-
-<sup>1</sup> El control de acceso Windows 8.1 dispositivos RT está limitado a Exchange ActiveSync.
-
-<sup>2</sup> El control de Windows 10 requiere una suscripción que incluya Azure AD Premium y el dispositivo debe unirse a Azure Active Directory.
-
-<sup>3</sup> Después de junio de 2020, las versiones de Android posteriores al 9 no pueden administrar la configuración de contraseña excepto en dispositivos Samsung Knox.
+Siga la Microsoft Intune de sistemas operativos para sistemas operativos compatibles para dispositivos que usan movilidad y seguridad básicas. Para obtener más información, consulta [Sistemas operativos compatibles con Intune.](/mem/intune/fundamentals/supported-devices-browsers)
 
 > [!NOTE]
 > Los dispositivos ya inscritos con versiones anteriores del sistema operativo siguen funcionando aunque las capacidades pueden cambiar sin previo aviso.
@@ -189,7 +171,7 @@ Puede establecer la siguiente configuración de directiva adicional mediante cmd
 
 ## <a name="settings-supported-by-windows"></a>Configuración compatible con Windows
 
-Puedes administrar Windows 10 dispositivos mediante la inscripción como dispositivos móviles. Una vez implementada una directiva aplicable, los usuarios con dispositivos Windows 10 tendrán que inscribirse en Movilidad básica y seguridad la primera vez que usen la aplicación de correo electrónico integrada para acceder Microsoft 365 su correo electrónico (requiere una suscripción premium de Azure AD).
+Puedes administrar Windows 10 dispositivos mediante la inscripción como dispositivos móviles. Una vez implementada una directiva aplicable, los usuarios con dispositivos Windows 10 tendrán que inscribirse en Movilidad y seguridad básicas la primera vez que usen la aplicación de correo electrónico integrada para acceder Microsoft 365 su correo electrónico Azure AD (requiere una suscripción premium).
 
 La siguiente configuración es compatible con Windows 10 que están inscritos como dispositivos móviles. Esta configuración no impedirá que los usuarios accedan a Microsoft 365 recursos.
 

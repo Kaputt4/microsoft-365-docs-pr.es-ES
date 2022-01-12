@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 898522d5305641532d3eeeec7d687d60897a2c09
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 9bff729d81a3db568560730d71ecd379fc60d5ce
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61108236"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867814"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Solucionar problemas de incorporación relacionados con administración de seguridad para Microsoft Defender para endpoint 
 
@@ -202,6 +202,9 @@ Para administración de seguridad para Microsoft Defender para endpoint en equip
     ```
 
 7.  Seleccione **Guardar** para guardar la nueva regla.
+
+> [!NOTE]
+> Después de realizar este cambio de regla, se requiere una sincronización completa de Active Directory. Para entornos grandes, se recomienda programar este cambio de regla y la sincronización completa durante períodos de silencio de Active Directory local.
 
 ## <a name="related-topic"></a>Tema relacionado
 - [Administrar Microsoft Defender para endpoint en dispositivos con Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)

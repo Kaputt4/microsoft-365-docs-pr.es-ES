@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 215c98cde0cf526eeca62d4d0cb5644d0c406421
-ms.sourcegitcommit: 1a3b79b3dff13a4895dfa4090a22bce2fcd0942b
+ms.openlocfilehash: b3fa261f78f06089ebf110d0c20a3cd685ab3279
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "61597596"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937057"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para Administración de amenazas y vulnerabilidades
 
@@ -46,9 +46,9 @@ En la tabla siguiente, "Sí" indica que se admite una funcionalidad Administraci
 
 Sistema operativo o plataforma compatibles|Vulnerabilidades del sistema operativo|Vulnerabilidades de productos de software|Evaluación de configuración del sistema operativo|Evaluación de configuración de controles de seguridad|Evaluación de configuración de productos de software
 :---|:---|:---|:---|:---|:---
-Windows 7|Sí|No compatible|No compatible|No compatible|No compatible
+Windows 7|Sí|No admitido|No admitido|No admitido|No se admite
 Windows 8.1|Sí|Sí|Sí|Sí|Sí
-Windows 10, versiones 1607-1703|Sí|No compatible|No compatible|No compatible|No compatible
+Windows 10, versiones 1607-1703|Sí|No se admite|No se admite|No se admite|No se admite
 Windows 10, versión 1709 o posterior|Sí|Sí|Sí|Sí|Sí
 Windows 11|Sí|Sí|Sí|Sí|Sí
 Windows Server 2008 R2|Sí|Sí|Sí|Sí|Sí
@@ -63,8 +63,8 @@ Ubuntu 16,04 LTS o superior LTS|Sí|Sí|Sí|Sí|Sí
 Oracle Linux 7.2 o posterior|Sí|Sí|Sí|Sí|Sí
 SUSE Linux Enterprise Server 12 o posterior|Sí|Sí|Sí|Sí|Sí
 Linux Debian 9 o posterior|Sí|Sí|Sí|Sí|Sí
-Android 6.0 o posterior (en versión preliminar)|Sí|Sí|No compatible|No compatible|No compatible
-iOS 12.0 o posterior (en versión preliminar)|Sí|No compatible|No compatible|No compatible|No compatible
+Android 6.0 o posterior|Sí|Sí|No se admite|No se admite|No se admite
+iOS 12.0 o posterior|Sí|No se admite|No se admite|No compatible|No compatible
 
 > [!NOTE]
 > Algunas características no están disponibles para el sistema operativo de nivel inferior, consulte el portal de Microsoft 365 Defender para obtener más información sobre el sistema operativo compatible.

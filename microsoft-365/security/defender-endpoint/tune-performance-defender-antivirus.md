@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec7fb61d548cd5f214a52eed5ff49b454a40a743
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6350b91a700000a5d8fecec90462d53721d2f1ca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167663"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936022"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Antivirus de Microsoft Defender
 
 **Se aplica a**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **¿Qué es Antivirus de Microsoft Defender de rendimiento?**
 
@@ -91,12 +91,12 @@ Para ver ejemplos que describen el proceso de "exportación" y "conversión" a t
 
 - **Para convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>Requisitos
 Antivirus de Microsoft Defender analizador de rendimiento tiene los siguientes requisitos previos:
 
 - Versiones Windows compatibles: Windows 10, Windows 11 y Windows Server 2016 versiones posteriores
 - Versión de la plataforma: 4.18.2108.7+
-- Versión de PowerShell: PowerShell versión 5.1
+- Versión de PowerShell: PowerShell versión 5.1, PowerShell ISE
 
 ## <a name="powershell-reference"></a>Referencia de PowerShell
 Hay dos cmdlets de PowerShell nuevos que se usan para ajustar el rendimiento de Antivirus de Microsoft Defender: 

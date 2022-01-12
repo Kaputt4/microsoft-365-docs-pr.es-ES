@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use versiones históricas en Advanced eDiscovery para recopilar contenido de todas las versiones de documentos almacenados en SharePoint y OneDrive.
-ms.openlocfilehash: 8da7b390a982b9be0a4752e167399ad633377854
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 5ecbb9c9216482223ce756aed5742e25a3b851a1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60779137"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936659"
 ---
 # <a name="set-up-historical-versions-in-advanced-ediscovery-preview"></a>Configurar versiones históricas en Advanced eDiscovery (versión preliminar)
 
@@ -83,7 +83,7 @@ Después de activar las versiones históricas de la organización, el último pa
 
 4. Repita los pasos anteriores para cada sitio que desee activar para las versiones históricas.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 **¿En qué se diferencian las versiones históricas de la opción de "recopilar todas las versiones" cuando se confirma un borrador de colección en un conjunto de revisión?**
 

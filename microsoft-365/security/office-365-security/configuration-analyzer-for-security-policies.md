@@ -15,15 +15,16 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+ms.custom: ''
 description: Los administradores pueden aprender a usar el analizador de configuración para buscar y corregir directivas de seguridad que se encuentran por debajo de la configuración en Protección estándar y Protección estricta en directivas de seguridad preestablecidas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b537da88199f9b565833c74fb94c233459970557
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0acdf6d300984c00bb1b1b060d3e36562983ebca
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197922"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61876481"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365
 
@@ -72,7 +73,7 @@ Los valores de configuración de directiva Estándar y Estricto que se usan como
 
 ## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Usar el analizador de configuración en el portal Microsoft 365 Defender configuración
 
-En el portal Microsoft 365 Defender, vaya a Email **& Collaboration** Policies & Rules Threat policies Configuration analyzer en \>  \>  \>  la **sección Templated policies.**
+En el portal Microsoft 365 Defender en , vaya a Email & Collaboration Policies & Rules Threat policies Configuration analyzer in <https://security.microsoft.com>  \>  \>  \>  the **Templated policies** section. Para ir directamente a la **página Analizador de configuración,** use <https://security.microsoft.com/configurationAnalyzer> .
 
 La **página Analizador de** configuración tiene tres pestañas principales:
 
@@ -130,7 +131,7 @@ Esta pestaña le permite realizar un seguimiento de los cambios realizados en la
 
 - **Última modificación**
 - **Modificado por**
-- **Nombre de la configuración**
+- **Nombre de configuración**
 - **Directiva:** nombre de la directiva afectada.
 - **Tipo**: Correo no deseado, Anti-phishing, Anti-malware, Caja fuerte Links o Caja fuerte Attachments.
 - **Cambio de configuración:** el valor antiguo y el nuevo valor de la configuración

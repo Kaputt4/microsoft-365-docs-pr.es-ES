@@ -16,15 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: ''
 description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0af72653a8f180728b71b05fa044627012282c8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 479963323dad613f3a17a527f94bbd5963487f76
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157703"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935470"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
@@ -56,7 +57,7 @@ Una campaña puede ser de corta duración o puede abarcar varios días, semanas 
 
 ## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Vistas de campaña en el portal de Microsoft 365 Defender campaña
 
-Las vistas de campaña están disponibles en el portal de Microsoft 365 Defender ( ) en <https://security.microsoft.com> **Email &** \> **collaboration Campaigns**, o directamente en <https://security.microsoft.com/campaigns> .
+Las vistas de campaña están disponibles en el portal Microsoft 365 Defender en <https://security.microsoft.com> **Email &** \> **collaboration Campaigns**, o directamente en <https://security.microsoft.com/campaigns> .
 
 ![Introducción a las campañas en el Microsoft 365 Defender web.](../../media/campaigns-overview.png)
 

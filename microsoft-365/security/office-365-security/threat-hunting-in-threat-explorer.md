@@ -15,15 +15,14 @@ ms.collection:
 description: Use el Explorador de amenazas o detecciones en tiempo real en el portal de Microsoft 365 Defender para investigar y responder a las amenazas de forma eficaz.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a12d83e3345936e0eb02e3d5f687dbda67715d00
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: de9121320e339ecff2b665737a6b4ccebe5e0fd0
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963208"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933784"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 
@@ -35,7 +34,7 @@ En este artículo:
 - [Mejoras en la experiencia de búsqueda de amenazas](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> Esto forma parte de una serie de **3** artículos sobre explorador de amenazas **(Explorer),** seguridad de correo electrónico y **conceptos** básicos de detecciones de Explorador y tiempo real (como diferencias entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son Seguridad de correo [electrónico con](email-security-in-microsoft-defender.md) el Explorador de amenazas y el Explorador de amenazas y [conceptos](real-time-detections.md)básicos de detecciones en tiempo real .
+> Esto forma parte de una serie de **3** artículos sobre explorador de amenazas **(Explorer),** seguridad de correo electrónico y detecciones de Explorador y tiempo real (como **diferencias** entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son Seguridad de correo [electrónico con](email-security-in-microsoft-defender.md) el Explorador de amenazas y el Explorador de amenazas y [detecciones en tiempo real.](real-time-detections.md)
 
 
 **Se aplica a**
@@ -44,7 +43,7 @@ En este artículo:
 
 Si su organización tiene [Microsoft Defender](defender-for-office-365.md)para Office 365 y tiene los [permisos,](#required-licenses-and-permissions)puede usar detecciones en tiempo **real** o **explorador** para detectar y corregir amenazas.
 
-En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya a Correo **& colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para hacerlo directamente en la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>
+En el portal Microsoft 365 Defender en , vaya a Correo electrónico & colaboración y, a continuación, elija Explorador o <https://security.microsoft.com> **Detecciones en tiempo real**.   Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports> .
 
 Con estas herramientas, puede:
 
@@ -245,11 +244,11 @@ Debe tener [Microsoft Defender para Office 365](defender-for-office-365.md) usar
 
 Para ver y usar detecciones en tiempo real o explorador, debe tener los siguientes permisos:
 
-- Para el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender:</a>
+- En el portal Microsoft 365 Defender:
   - Administración de la organización
   - Administrador de seguridad (se puede asignar en el centro Azure Active Directory de administración ( <https://aad.portal.azure.com> )
   - Lector de seguridad
-- Para Exchange Online:
+- En Exchange Online:
   - Administración de la organización
   - Administración de la organización de solo visualización
   - Destinatarios con permiso de vista
@@ -258,7 +257,7 @@ Para ver y usar detecciones en tiempo real o explorador, debe tener los siguient
 Para obtener más información sobre roles y permisos, consulte los siguientes recursos:
 
 - [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
-- [Permisos de características de Exchange Online](/exchange/permissions-exo/feature-permissions)
+- [Permisos de Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
 ## <a name="more-information"></a>Más información

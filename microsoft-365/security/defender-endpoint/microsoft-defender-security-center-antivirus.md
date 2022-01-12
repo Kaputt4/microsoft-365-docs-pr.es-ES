@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3daa63ace419ed1a73511647c28b8fab9ac12d0d
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: 5ad0d64ff2f296d0e8282afb02cbe7fc2bb21470
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566464"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938377"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -42,7 +42,7 @@ Configuración que anteriormente formaban parte del cliente de Windows Defender 
 
 Consulta el [Seguridad de Windows para obtener](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) más información sobre otras Windows de seguridad que se pueden supervisar en la aplicación.
 
-La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y posteriores. No es el portal Centro de seguridad de Microsoft Defender web que se usa para revisar y administrar [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y posteriores. No es el portal Microsoft 365 Defender web que se usa para revisar y administrar [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Revisar la configuración de protección contra virus y amenazas en la Seguridad de Windows aplicación
 

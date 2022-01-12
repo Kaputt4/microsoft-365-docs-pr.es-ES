@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48bc7302f8f5e96f35eec70039ec437f602ada2d
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 1de43dbf64709e5e38caffbe5af0a8bbf37f0d2a
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786426"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940179"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -51,7 +51,7 @@ También puede administrar detecciones personalizadas que se aplican a los datos
 Para administrar los permisos necesarios, un **administrador global** puede:
 
 - Asigne el **rol de administrador de** seguridad o operador **de** seguridad [en Centro de administración de Microsoft 365](https://admin.microsoft.com/) en **Roles**  >  **Security admin**.
-- Compruebe la configuración de RBAC para Microsoft Defender para endpoint [en Centro de seguridad de Microsoft Defender](https://securitycenter.windows.com/) en **Configuración** roles  >  **de permisos**  >  . Seleccione el rol correspondiente para asignar el **permiso administrar la configuración de** seguridad.
+- Compruebe la configuración de RBAC para Microsoft Defender para endpoint [en Microsoft 365 Defender](https://security.microsoft.com/) en **Configuración** Roles  >  **de permisos**  >  . Seleccione el rol correspondiente para asignar el **permiso administrar la configuración de** seguridad.
 
 > [!NOTE]
 > Para administrar detecciones personalizadas,  los operadores de seguridad necesitarán el permiso administrar la configuración de seguridad en Microsoft Defender para endpoint si RBAC está activado. 
@@ -231,7 +231,7 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >[!NOTE]
 >Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

@@ -19,12 +19,12 @@ ms.custom:
 ms.technology: mde
 ms.date: 12/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b13eaa93103759d072960ba0ea4e322e8f5a642c
-ms.sourcegitcommit: 5912d47da483d24cb76715e4b9894104f2a181e7
+ms.openlocfilehash: 3c6954b683287ffaaec793dfffefff25f1d4def8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61609126"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936070"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -104,7 +104,7 @@ La protección contra alteraciones puede estar activada o desactivada para el in
 
 - Cuando usa el portal de Microsoft 365 Defender para administrar la protección contra alteraciones, no tiene que usar Intune ni el método de adjuntar inquilino.
 
-- Al administrar la protección contra alteraciones en el Centro de seguridad de Microsoft Defender, la configuración se aplica en todo el espacio empresarial, lo que afecta Windows 10 todos los dispositivos que ejecutan Windows 10, Windows 10 Enterprise varias sesiones, Windows 11, Windows 11 Enterprise multi-sesión, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 o Windows Server 2022. Para ajustar la protección contra manipulaciones (por ejemplo, tener la protección contra manipulaciones en algunos dispositivos, pero desactivada para otros), use [Intune](#manage-tamper-protection-for-your-organization-using-intune) o Configuration Manager con el inquilino [adjuntado](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
+- Al administrar la protección contra alteraciones en el portal de Microsoft 365 Defender, la configuración se aplica en todo el espacio empresarial, lo que afecta Windows 10 todos los dispositivos que ejecutan Windows 10, Windows 10 Enterprise varias sesiones, Windows 11, Windows 11 Enterprise  multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 o Windows Server 2022. Para ajustar la protección contra manipulaciones (por ejemplo, tener la protección contra manipulaciones en algunos dispositivos, pero desactivada para otros), use [Intune](#manage-tamper-protection-for-your-organization-using-intune) o Configuration Manager con el inquilino [adjuntado](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
 - Si tienes un entorno híbrido, las opciones de protección contra alteraciones configuradas en Intune tienen prioridad sobre las opciones configuradas en el portal Microsoft 365 Defender usuario.
 
@@ -251,7 +251,7 @@ La protección contra alteraciones se integra [con las & de administración de v
 
 Para obtener más información sobre la administración & vulnerabilidad de amenazas, consulte [Threat & Vulnerability Management en Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 
@@ -324,7 +324,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 

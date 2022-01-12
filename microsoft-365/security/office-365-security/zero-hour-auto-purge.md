@@ -22,12 +22,12 @@ ms.custom:
 description: La purga automática de hora cero (ZAP) mueve retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta o cuarentena de correo no deseado que se encuentran como correo no deseado, suplantación de identidad o que contienen malware después de la entrega.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c2b6e8ce6d15ad652b87e6529f9fd3cb2b3878f7
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0744193e2d999cd85096d4644438dd305bcdb3da
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60556345"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934950"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purga automática de hora cero (ZAP) en Exchange Online
 
@@ -54,7 +54,7 @@ La acción ZAP es perfecta para el usuario; no se les notifica si se detecta y s
 
 ### <a name="zero-hour-auto-purge-zap-for-malware"></a>Purga automática de hora cero (ZAP) para malware
 
-Para **los mensajes leídos o no** leídos que contienen malware después de la entrega, ZAP pone en cuarentena el mensaje que contiene los datos adjuntos de malware. De forma predeterminada, solo los administradores pueden ver y administrar mensajes de malware en cuarentena. Sin embargo, los administradores pueden crear y usar directivas de cuarentena para definir lo que los usuarios pueden hacer con los mensajes que se han puesto en cuarentena como malware.  Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
+Para **los mensajes leídos o no** leídos que contienen malware después de la entrega, ZAP pone en cuarentena el mensaje que contiene los datos adjuntos de malware. De forma predeterminada, solo los administradores pueden ver y administrar mensajes de malware en cuarentena. Sin embargo, los administradores pueden crear y usar directivas de cuarentena para definir lo que los usuarios pueden hacer con los mensajes que se han puesto en cuarentena como malware.  Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
 ZAP para malware está habilitado de forma predeterminada en directivas antimalware. Para obtener más información, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 

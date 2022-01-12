@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8626b256b1e0e3d6d19ab532388ab8ba1cf5c8f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168107"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61896410"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Administrar alertas de Microsoft Defender para puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -51,7 +51,7 @@ Si aún no se ha asignado una alerta, puedes seleccionar **Asignarme** para asig
 
 ## <a name="suppress-alerts"></a>Suprimir alertas
 
-Puede haber escenarios en los que necesite suprimir las alertas para que no aparezcan en Centro de seguridad de Microsoft Defender. Defender for Endpoint te permite crear reglas de supresión para alertas específicas que se sabe que son inocuas, como herramientas o procesos conocidos de la organización.
+Puede haber escenarios en los que necesite suprimir las alertas para que no aparezcan en Microsoft 365 Defender. Defender for Endpoint te permite crear reglas de supresión para alertas específicas que se sabe que son inocuas, como herramientas o procesos conocidos de la organización.
 
 Las reglas de supresión se pueden crear a partir de una alerta existente. Se pueden deshabilitar y volver a habilitar si es necesario.
 

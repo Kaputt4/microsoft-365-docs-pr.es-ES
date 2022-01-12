@@ -13,18 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom:
-- seo-marvel-apr2020
-- admindeeplinkDEFENDER
+ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d84ce2b2ec6131419f8344976335dc681fdc002c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: d16839881f48b494d6d061d2a59c205b5e8d667c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374043"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935530"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft
 
@@ -69,9 +67,9 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Informar de contenido sospechoso a Microsoft
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, en Acciones **& envíos**, vaya a **Envíos**.
+1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
-2. En la **página Envíos,** compruebe que la pestaña **Correos** electrónicos está seleccionada, seleccione el correo electrónico que desea notificar y, a continuación, haga clic en ![ Icono de anuncio.](../../media/m365-cc-sc-create-icon.png) **Enviar a Microsoft para su análisis**.
+2. En la **página Envíos,** compruebe que la pestaña **Enviado** para el análisis está seleccionada, seleccione el correo electrónico que desea notificar y, a continuación, haga clic en Enviar a Microsoft para el ![ icono de análisis.](../../media/m365-cc-sc-create-icon.png) **Enviar a Microsoft para su análisis**.
 
 3. Use el menú desplegable Enviar a **Microsoft** para análisis que parece enviar el correo electrónico, la dirección URL o los datos adjuntos de correo electrónico, tal como se describe en las secciones siguientes.
 
@@ -80,9 +78,9 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ### <a name="notify-users-from-within-the-portal"></a>Notificar a los usuarios desde el portal
 
-1. En el portal Microsoft 365 Defender, en **Acciones & envíos,** vaya a **Envíos**.
+1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
-2. Seleccione **la pestaña Mensajes notificados** por el usuario y, a continuación, seleccione el mensaje que desea marcar y notificar.
+2. En la **página Envíos,** seleccione la pestaña **Mensajes** notificados por el usuario y, a continuación, seleccione el mensaje que desea marcar y notificar.
 
 3. Seleccione la **lista desplegable Marcar como y** notificar y, a continuación, seleccione No **se** encontraron amenazas \> **de suplantación** de identidad o correo no **deseado.**
 
@@ -147,7 +145,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Se
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Ver envíos de administrador a Microsoft
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, en Acciones **& envíos**, vaya a **Envíos**.
+1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
 2. En la **página Envíos,** compruebe que **la** pestaña Correos electrónicos, dirección **URL** o **Datos** adjuntos de correo electrónico esté seleccionada.
 
@@ -217,7 +215,7 @@ Si se encontró una invalidación, se volverá a ejecutar una detección que se 
 
 Si ha implementado el complemento Report  [Message](enable-the-report-message-add-in.md), el complemento Report [Phishing](enable-the-report-phish-add-in.md)o los usuarios usan los informes integrados en [Outlook en la Web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)puede ver qué usuarios están informando en la pestaña Mensaje notificado por el usuario.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, en Acciones **& envíos**, vaya a **Envíos**.
+1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
 2. En la **página Envíos,** seleccione la **pestaña Mensajes notificados por el** usuario.
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ca8282c70f6fd831ae4859749078701b97014e13
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 6519cf97fb35bfb0eb7b325475d4ce350ec0c3bb
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724445"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61936985"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la posición de seguridad con Puntuación segura de Microsoft
 
@@ -37,7 +37,7 @@ Para ayudarle a encontrar la información que necesita más rápidamente, las ac
 
 - Identidad (Azure Active Directory cuentas & roles)
 - Device (Microsoft Defender para endpoint, conocido como [Puntuación segura de Microsoft para dispositivos](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- Aplicaciones (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Cloud App Security)
+- Aplicaciones (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Defender para aplicaciones en la nube)
 
 >[!NOTE]
 >En la versión reciente de Puntuación segura de Microsoft, se ha publicado un modelo de puntuación mejorado que hizo que Puntuación segura de Microsoft sea temporalmente incompatible con la puntuación segura de identidad y la API Graph puntuación. [Ver detalles](microsoft-secure-score-whats-new.md)

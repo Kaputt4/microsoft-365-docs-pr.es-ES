@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 73252b604c252fea73c5269597bc68fe7a2bf6e9
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 3453645f9c28149bedf617e21f28c89d828028d6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507223"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937381"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business-preview"></a>Configurar y configurar Microsoft Defender para empresas (versión preliminar)
 
@@ -31,6 +31,11 @@ ms.locfileid: "61507223"
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 Microsoft Defender para empresas (versión preliminar) proporciona una experiencia de configuración y configuración optimizadas, diseñada especialmente para la pequeña y mediana empresa. Use este artículo como guía.
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 ## <a name="the-setup-and-configuration-process"></a>Proceso de configuración y configuración
 
@@ -44,7 +49,7 @@ Microsoft Defender para empresas (versión preliminar) proporciona una experienc
 | 4 | [Incorporar dispositivos](mdb-onboard-devices.md)     | Microsoft Defender para empresas (versión preliminar) está configurado para que puedas elegir entre varias opciones para incorporar los dispositivos de tu empresa. Consulta [Incorporación de dispositivos a Microsoft Defender para empresas (versión preliminar).](mdb-onboard-devices.md)         |
 | 5 | [Configurar las directivas y las opciones de seguridad](mdb-configure-security-settings.md) | Puede elegir entre varias opciones para configurar las directivas y las opciones de seguridad, incluido un proceso de configuración simplificado o Microsoft Endpoint Manager. Consulte [Configure your security settings and policies](mdb-configure-security-settings.md). |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Continúe con:
 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre qué eventos se registran cuando los usuarios asignados a permisos de exhibición de documentos electrónicos realizan búsquedas de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery tareas en el Centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e033864b15032e66995be439e1de750da06e988b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eb1a6f1ee0ff9c84f4dbfc7f42427ae9dda499de
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151019"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867858"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
@@ -67,7 +67,7 @@ Actualmente, debe hacer algunas cosas específicas para ver las actividades de e
 
     Se **muestra** una página desplegable Detalles que contiene las propiedades detalladas del registro de eventos. Para mostrar detalles adicionales, haga clic **en Más información**. Para obtener una descripción de estas propiedades, vea la [sección Propiedades detalladas para actividades de exhibición de documentos electrónicos.](#detailed-properties-for-ediscovery-activities)
 
-9. Si lo desea, puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, usar la característica Excel Power Query para dar formato y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md).
+9. Si lo desea, puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, usar la característica Excel Power Query para dar formato y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 
 ## <a name="ediscovery-activities"></a>Actividades de eDiscovery
 

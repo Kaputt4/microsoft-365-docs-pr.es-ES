@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager proporciona plantillas para crear evaluaciones que se alineen con las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: 4201dac3b83c73dd61f39a01f7ba2d98b6207bc4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7ea918b1273335c39866d2de684acf9a2be076b7
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60700870"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871856"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
@@ -39,7 +39,9 @@ Las plantillas se agregan al Administrador de cumplimiento a medida que se aprue
 
 ## <a name="list-of-templates-and-where-to-find-them"></a>Lista de plantillas y dónde buscarlas
 
-A continuación se muestra la lista completa de plantillas en el Administrador de cumplimiento. Los vínculos de los siguientes nombres de plantilla le llevan a la documentación relacionada sobre ese estándar, reglamento o ley.
+A continuación se muestra la lista completa de plantillas en el Administrador de cumplimiento. Los vínculos de los nombres de plantilla siguientes le llevan a la documentación relacionada cuando esté disponible sobre ese estándar, reglamento o ley.
+
+También puede seleccionar plantillas individuales en el Administrador de cumplimiento para ver más información sobre ellas, incluida una descripción del reglamento y las propiedades de la plantilla. Lea la **sección** Acerca de un resumen.
 
 ### <a name="where-to-find-your-templates"></a>Dónde buscar las plantillas
 
@@ -49,7 +51,7 @@ Para revisar las plantillas disponibles para su organización, vaya a la página
 
 Una o varias de estas plantillas estarán disponibles en función del contrato de licencia. La plantilla Línea base de protección de datos se incluye para todos los usuarios.
 
-- [Línea base de Protección de datos de Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
+- [Línea base de protección de datos de Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
 - [RGPD de la Unión Europea](/compliance/regulatory/gdpr)
 - [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs. 4 y 5

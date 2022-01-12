@@ -1,7 +1,8 @@
 ---
 title: Plan de implementación de Confianza cero de Microsoft 365
 f1.keywords:
-- CSH
+- deploy zero trust
+- zero trust strategy
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -16,12 +17,15 @@ search.appverid:
 ms.collection:
 - deploy zero trust
 - zero trust strategy
-ms.openlocfilehash: a1283f3bff8586c88a1c0bdcb84c246cf3a873f8
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+- M365-security-compliance
+- m365solution-zerotrust
+- m365solution-overview
+ms.openlocfilehash: 88abdf543ebb82e89470a0d6ac0bfe50b9952564
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643333"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934482"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
@@ -144,4 +148,6 @@ Microsoft Information Protection proporciona un marco, un proceso y capacidades 
 
 ![Microsoft Information Protection (MIP)](../media/zero-trust/mip-solution-overview.png)
 
-Para obtener más información, [vea Microsoft Information Protection en Microsoft 365](../compliance/information-protection.md). 
+Para obtener más información sobre cómo planear e implementar la protección de la información, vea [Deploy a Microsoft Information Protection solution](../compliance/information-protection-solution.md). 
+
+Si va a implementar la protección de la información para las normativas de privacidad de datos, esta guía de soluciones proporciona un marco recomendado para todo el proceso: Implementar la protección de la información para las normativas de privacidad de datos [con Microsoft 365](../solutions/information-protection-deploy.md).

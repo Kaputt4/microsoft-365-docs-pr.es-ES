@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: b76b3e647af6f43f1c8ad7364fe24c895dc86b45
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 0c9d376889d99ba9d689e30f4444f305fab22ad9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553981"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933676"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
@@ -68,7 +68,7 @@ Aunque Bookings es una característica de Microsoft 365, no todos los miembros d
     Al anular la selección de este cuadro, el personal puede tener horas personalizadas que limiten aún más el momento en que se pueden reservar. Esto es útil para escenarios en los que un miembro del personal solo puede estar en el sitio martes y miércoles, o dedican sus mañanas para un tipo de citas y sus tardes para otros tipos.
 
     > [!NOTE]
-    > Solo aparecerán los primeros 31 miembros del personal que agregue a la página de personal cuando asigne miembros del personal a un servicio.
+    > Los primeros 100 miembros del personal que agregue a la página de personal aparecerán cuando asigne miembros del personal a un servicio.
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Convertir a un usuario de Bookings en superusual sin agregarlos como personal en Bookings
 
@@ -102,7 +102,7 @@ Este es un comando de PowerShell de ejemplo para agregar Allie Bellew al buzón 
 2. A continuación, ejecute este comando:
 
     ```powershell
-    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
 **Allie Bellew** ahora tiene acceso de administrador, pero no aparece como personal que se puede reservar en Bookings.

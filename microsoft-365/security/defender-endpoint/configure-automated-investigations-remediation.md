@@ -16,19 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: f98461071de0db8179339b28b1c67c2bc9437c52
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3f51ce7c0eb45861a8b5277266b18e6d03e53178
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166511"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872494"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -42,14 +42,14 @@ Para configurar la investigación y corrección automatizadas:
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>Activar la investigación y corrección automatizadas
 
-1. Como administrador global o administrador de seguridad, vaya al Centro de seguridad de Microsoft Defender ( <https://securitycenter.windows.com> ) e inicie sesión.
+1. Como administrador global o administrador de seguridad, vaya al portal de Microsoft 365 Defender <https://security.microsoft.com> ( ) e inicie sesión.
 2. En el panel de navegación, **elija Configuración**.
 3. En la **sección General,** seleccione **Características avanzadas**.
 4. Active la investigación **automatizada y** resuelva automáticamente **las alertas**.
 
 ## <a name="set-up-device-groups"></a>Configurar grupos de dispositivos
 
-1. En la Centro de seguridad de Microsoft Defender ( ), en la <https://securitycenter.windows.com> **página Configuración,** en **Permisos**, seleccione **Grupos de dispositivos**.
+1. En el portal Microsoft 365 Defender ( ), en la <https://security.microsoft.com> **página Configuración,** en **Permisos**, seleccione **Grupos de dispositivos**.
 2. Seleccione **+ Agregar grupo de dispositivos**.
 3. Crea al menos un grupo de dispositivos de la siguiente manera:
    - Especifica un nombre y una descripción para el grupo de dispositivos.
@@ -63,6 +63,6 @@ Para configurar la investigación y corrección automatizadas:
 - [Visite el Centro de acciones para ver las acciones de corrección pendientes y completadas](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
 - [Revisar y aprobar acciones pendientes](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)

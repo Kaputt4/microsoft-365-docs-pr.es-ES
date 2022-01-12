@@ -13,23 +13,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f0828d24ddb4c02d533d0fced2389ca3cb61ce4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 61b28cc51eefed92aeb3319e8972a31c3cf310dc
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167075"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938389"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Instalación de dispositivos de control de dispositivos de Microsoft Defender para endpoint 
 
 **Se aplica a**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender para endpoint device control removable Storage Access Control permite realizar la siguiente tarea:
 
 - Impedir que las personas instalen dispositivos específicos.
-- Permitir que las personas instalen dispositivos específicos pero evitar que otros.
+- Permitir que las personas instalen dispositivos específicos pero evitar que otros dispositivos.
 
 > [!NOTE]
 > Para encontrar la diferencia entre la instalación de dispositivos y el control de acceso de almacenamiento extraíble, consulta Microsoft Defender para Endpoint [Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
@@ -271,7 +271,7 @@ DeviceEvents
 
 :::image type="content" source="../../media/block-removable-storage2.png" alt-text="almacenamiento en bloques":::
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
 
 ### <a name="how-can-i-know-whether-the-target-machine-gets-the-deployed-policy"></a>¿Cómo puedo saber si la máquina de destino obtiene la directiva implementada? 
 Puede usar la siguiente consulta para obtener la versión del cliente antimalware en el portal de seguridad Microsoft 365 web:

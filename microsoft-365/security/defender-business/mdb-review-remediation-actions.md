@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 0b71088421b71f117eff4521eee1d8f5ef87971a
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: c67746803c9b094b6a87d9b0ab6273b883ce4cd1
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507385"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936347"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Revisar acciones de corrección en el Centro de acciones
 
@@ -38,6 +38,11 @@ A medida que se detectan las amenazas, las acciones de corrección se reproducen
 
 - [Cómo usar el Centro de acciones](#how-to-use-the-action-center)
 - [Acciones de corrección](#remediation-actions)
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 ## <a name="how-to-use-the-action-center"></a>Cómo usar el Centro de acciones
 
@@ -61,7 +66,7 @@ En la tabla siguiente se enumeran las acciones de corrección disponibles:
 | [Acciones de respuesta manuales](../defender-endpoint/respond-machine-alerts.md)   | - Ejecutar examen antivirus <br/>- Aislar dispositivo <br/>- Detener y poner en cuarentena <br/>- Agregar un indicador para bloquear o permitir un archivo       |
 | [Respuesta en directo](../defender-endpoint/live-response.md)   | - Recopilar datos forenses <br/>- Analizar un archivo <br/>- Ejecutar un script <br/>- Enviar una entidad sospechosa a Microsoft para su análisis <br/>- Corregir un archivo <br/>- Búsqueda proactiva de amenazas         |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
 

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-audience: ITPro
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
@@ -16,12 +16,13 @@ description: Obtenga información sobre cómo colocar un buzón en retención po
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: b2ae9db50c171bcafd8352dba250202e07ea0d25
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+- admindeeplinkCOMPLIANCE
+ms.openlocfilehash: d105813d7e34ece7641421bc7fed10919dda618e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753134"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61871844"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
@@ -48,17 +49,15 @@ Para colocar un buzón Exchange Online en retención por juicio, se debe asignar
 
 Estos son los pasos para colocar un buzón en retención por juicio mediante el Centro de administración de Microsoft 365.
 
-1. Vaya a <https://admin.microsoft.com> e inicie sesión.
+1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Centro de administración de Microsoft 365 y,</a> a continuación, haga clic **en Usuarios**  >  **usuarios activos.**
 
-2. En el panel de navegación del Centro de administración, haga clic **en Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
+2. Seleccione el usuario que desea colocar en retención por juicio.
 
-3. Seleccione el usuario que desea colocar en retención por juicio.
-
-4. En la página desplegable propiedades, haga clic en la pestaña **Correo** y, a continuación, en **Más** acciones, haga clic **en Administrar retención por juicio.**
+3. En la página desplegable propiedades, haga clic en la pestaña **Correo** y, a continuación, en **Más** acciones, haga clic **en Administrar retención por juicio.**
 
    ![Haga clic en Administrar retención por juicio en la pestaña Correo de la página desplegable propiedades de usuario.](../media/M365AdminCenterLitHold1.png)
 
-5. En la **página Administrar** suspensión  por juicio, active la casilla Activar retención por juicio y, a continuación, escriba la siguiente información opcional:
+4. En la **página Administrar** suspensión  por juicio, active la casilla Activar retención por juicio y, a continuación, escriba la siguiente información opcional:
 
     1. **Duración de retención (días):** use este cuadro para crear una retención basada en tiempo y especificar cuánto tiempo se mantienen los elementos del buzón cuando el buzón se coloca en retención por juicio. La duración se calcula desde la fecha en que un elemento de buzón se recibe o se crea. Cuando la duración de retención expire para un elemento específico, ese elemento ya no se conservará. Si deja este cuadro en blanco, los elementos se conservan indefinidamente o hasta que se quita la retención. Use días para especificar la duración.
 
@@ -66,7 +65,7 @@ Estos son los pasos para colocar un buzón en retención por juicio mediante el 
 
     3. **Página web con más información para el** usuario: Use este cuadro para dirigir al usuario a un sitio web para obtener más información acerca de la retención por juicio. Esta dirección URL aparece en la página Información de la cuenta en el buzón del usuario si usa Outlook 2010 o posterior. Para obtener acceso a esta página, los usuarios pueden hacer clic **en Archivo** en Outlook.
 
-6. Haga **clic en Guardar cambios** en la **página** desplegable Retención por juicio para crear la suspensión.
+. Haga **clic en Guardar cambios** en la **página** desplegable Retención por juicio para crear la suspensión.
 
    El sistema muestra un banner que indica que el cambio puede tardar hasta 240 minutos en tener efecto.
 

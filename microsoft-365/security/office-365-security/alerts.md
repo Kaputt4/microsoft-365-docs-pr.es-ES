@@ -20,15 +20,14 @@ ms.collection:
 description: Obtenga información sobre cómo usar las características de alertas en el portal de Microsoft 365 Defender para ver y administrar alertas, incluida la administración de alertas avanzadas.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 82f7120d59635b71fc94b2a98e4522856403b884
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 311b11a1c6ea3ffa450a89eff596ff39e91f3827
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "61612601"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61881183"
 ---
 # <a name="alerts-in-the-microsoft-365-defender-portal"></a>Alertas en el portal Microsoft 365 Defender web
 
@@ -42,13 +41,11 @@ Use las características de alertas del portal de Microsoft 365 Defender para ve
 
 ## <a name="how-to-get-to-the-alerts-features"></a>Cómo llegar a las características de alertas
 
-Las alertas se <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">encuentran en Microsoft 365 Defender portal</a>. Este es el modo de llegar a la página:
-
-En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>vaya a **Alertas**. O bien, para ir directamente a la **página Alertas,** use <https://security.microsoft.com/alerts> .
+Las alertas están disponibles en el portal Microsoft 365 Defender en <https://security.microsoft.com> **Incidencias &** \> **alertas**. O bien, para ir directamente a la **página Alertas,** use <https://security.microsoft.com/alerts> .
 
 ## <a name="alerts-features"></a>Características de alertas
 
-En la tabla siguiente se describen las herramientas disponibles en **Alerts** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+En la tabla siguiente se describen las herramientas disponibles en la página **Alertas.**
 
 <br>
 

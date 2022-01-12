@@ -3,7 +3,9 @@ title: Paso 5. Implementar perfiles de dispositivo en Microsoft Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- configuration profiles
+- Windows security baselines for Intune
+- customize configuration profiles
 manager: dougeby
 audience: ITPro
 description: Introducción a los perfiles de configuración para aplicar una configuración segura en los dispositivos que usan Intune para realizar la transición de estos controles de seguridad a la nube.
@@ -13,15 +15,17 @@ ms.localizationpriority: high
 ms.collection:
 - Configuration profiles
 - Windows security baselines for Intune
-- customize configuration profiles
+- customize configuration profiles-
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 0cb966e16d30619cb6666cc73020189532abba8f
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 94825143349b329cf571c9735a3573f8fc65e8b8
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645055"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61939302"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Paso 5. Implementar perfiles de dispositivo en Microsoft Intune
 

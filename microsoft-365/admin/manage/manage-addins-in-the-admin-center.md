@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos para usuarios y grupos de la organización.
-ms.openlocfilehash: d619438a8fdf2eb0da2a5b2f55b43bb064d3cea4
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: d2d1c4d36bf37ad82ac5c720931146c0dfb2220d
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60552745"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61935842"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
-Office complementos le ayudarán a personalizar los documentos y simplificar la forma en que tiene acceso a la información en la web (vea Empezar a usar el complemento [Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)web ). 
+Office complementos le ayudarán a personalizar los documentos y simplificar la forma en que accede a la información en la web. Consulte [Start using your Office add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
 Después de que un administrador implemente complementos para los usuarios de una organización, el administrador puede desactivar o activar los complementos, editar, eliminar y administrar el acceso a los complementos.
 
@@ -56,7 +56,7 @@ También puede eliminar un complemento que se implementó.
 
 1. En el Centro de administración, vaya a la **página Configuración**  >  **aplicaciones integradas.**
 
-2. Seleccione el complemento implementado y, a continuación, seleccione la **pestaña** Configuración.
+2. Seleccione el complemento implementado y, a continuación, seleccione la pestaña **Configuración**.
 
 3. En el **panel** Configuración, vaya a **Advanced Configuración**  >  **Add-ins**.
 
@@ -64,7 +64,7 @@ También puede eliminar un complemento que se implementó.
 
 5. Elija **Quitar complemento**. Quite el botón del complemento en la esquina inferior derecha.
 
-6. Valide las selecciones y elija **Quitar**.
+6. Valide su selección y elija **Quitar**.
 
 ## <a name="edit-add-in-access"></a>Editar el acceso del complemento
 
@@ -74,7 +74,7 @@ Después de la implementación, los administradores también pueden administrar 
 
 2. Seleccione el complemento implementado.
 
-3. Haga clic **en Editar** en Quién **tiene Access**.
+3. Haga clic **Editar** bajo **Quién tiene acceso**.
 
 4. Guarde los cambios.
 
@@ -93,7 +93,7 @@ Como organización, es posible que quieras impedir la descarga de nuevos Office 
     
 3. Desactive la opción para permitir que los usuarios accedan a la Tienda Office.
 
-    Esto impedirá que todos los usuarios adquieran los siguientes complementos de la tienda.
+    Esto impedirá que todos los usuarios adquieran los siguientes complementos del Store.
       
     - Complementos para Word, Excel y PowerPoint 2016 desde:
         
@@ -130,7 +130,7 @@ Para evitar que un usuario inicie sesión con una cuenta de Microsoft, puede res
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Más información sobre la experiencia del usuario final con complementos
 
-Después de implementar un complemento, los usuarios finales pueden empezar a usarlo en sus aplicaciones de Office (vea [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). El complemento aparece en todas las plataformas compatibles con el complemento.
+Después de implementar un complemento, los usuarios finales pueden empezar a usarlo en sus Office aplicaciones. El complemento aparece en todas las plataformas compatibles con el complemento. Consulte [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
   
 Si el complemento es compatible con comandos de complemento, estos aparecerán en la cinta de opciones de Office. En el siguiente ejemplo, el comando **Buscar cita** aparece para el complemento **Citas**. 
 

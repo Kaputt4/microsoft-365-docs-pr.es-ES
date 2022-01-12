@@ -18,16 +18,15 @@ ms.collection:
 description: Los administradores pueden aprender a usar la directiva de inteligencia suplantada y la información de inteligencia suplantada para permitir o bloquear remitentes suplantados detectados.
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b1509a83b47b4f23ab5f99ba752b231479985269
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: bd0d5a97a917cb6f04957b078980d1a495a54795
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373829"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61872086"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Administrar remitentes suplantados con la directiva de inteligencia suplantada y la información de inteligencia suplantada en EOP
 
@@ -48,8 +47,7 @@ Puede administrar la inteligencia de suplantación en el portal de Microsoft 365
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
-  - Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -85,7 +83,7 @@ Hay dos maneras de permitir y bloquear remitentes suplantados:
 > [!IMPORTANT]
 > En este artículo se describe la experiencia de administración de remitentes suplantada anterior que se está reemplazando (la directiva de inteligencia suplantada **en** la página Directivas contra **correo** no deseado). Para obtener más información acerca  de la nueva experiencia (la pestaña Suplantación de dominio en la lista de inquilinos permitidos o bloqueados), vea [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsofot.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
 2. En la **página Directivas contra correo** no deseado, seleccione **Suplantar** la directiva de inteligencia haciendo clic en el nombre.
 

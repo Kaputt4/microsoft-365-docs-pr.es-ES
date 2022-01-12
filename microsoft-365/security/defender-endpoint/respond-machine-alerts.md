@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e2a55fb1dc924ba278510f6a379240cb9fba39e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 133bdc1e14c9e4b0c93ea190b4a6c58a529b2f16
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164795"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61940312"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
@@ -109,7 +109,7 @@ El paquete contiene las siguientes carpetas:
 
 ****
 
-|Folder|Description|
+|Folder|Descripción|
 |---|---|
 |Autoruns|Contiene un conjunto de archivos que cada uno representa el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: el sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, [vea Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
@@ -207,7 +207,7 @@ Cuando se aísla un dispositivo, se muestra la siguiente notificación para info
 
 ## <a name="consult-a-threat-expert"></a>Consultar a un experto en amenazas
 
-Puedes consultar a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente en peligro o ya comprometido. Expertos en amenazas de Microsoft puede usarse directamente desde dentro del Centro de seguridad de Microsoft Defender para una respuesta rápida y precisa. Los expertos proporcionan información no solo sobre un dispositivo potencialmente en peligro, sino también para comprender mejor las amenazas complejas, las notificaciones de ataque dirigidas que recibes o si necesitas más información sobre las alertas o un contexto de inteligencia de amenazas que veas en el panel del portal.
+Puedes consultar a un experto en amenazas de Microsoft para obtener más información sobre un dispositivo potencialmente en peligro o ya comprometido. Expertos en amenazas de Microsoft puede usarse directamente desde dentro del Microsoft 365 Defender para una respuesta rápida y precisa. Los expertos proporcionan información no solo sobre un dispositivo potencialmente en peligro, sino también para comprender mejor las amenazas complejas, las notificaciones de ataque dirigidas que recibes o si necesitas más información sobre las alertas o un contexto de inteligencia de amenazas que veas en el panel del portal.
 
 Consulte [Consulte a un experto en amenazas de Microsoft](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) para obtener más información.
 
@@ -224,7 +224,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, fecha 
 
 ![Imagen del centro de acción con información.](images/action-center-details.png)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manuales en Microsoft Defender para endpoint plan 1 (versión preliminar)](defender-endpoint-plan-1.md#manual-response-actions)

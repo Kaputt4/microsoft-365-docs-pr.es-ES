@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderás a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de la organización.
-ms.openlocfilehash: 490af48e3279147af31178e809010d6316367d7f
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: f6997a6f97aa103e6d8af2ff85fe5a39ef062050
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554785"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61938942"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -53,6 +53,25 @@ Use el **rol Administración de cumplimiento dlp de** solo vista para crear un g
 Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Estos permisos son necesarios para crear y aplicar una directiva DLP para no aplicar directivas.
+
+### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en versión preliminar
+
+Hay roles y grupos de roles en versión preliminar que puede probar para ajustar los controles de acceso.
+
+Esta es una lista de roles Microsoft Information Protection (MIP) que están en versión preliminar. Para obtener más información sobre ellos, vea [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrador de Information Protection
+- Analista de Information Protection
+- Investigador de protección de información
+- Lector de protección de información
+
+Esta es una lista de grupos de roles de MIP que están en versión preliminar. Para obtener más información sobre los grupos de roles en [el Centro de seguridad y & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protección de la información
+- Administradores de Information Protection
+- Analistas de Information Protection
+- Investigadores de protección de la información
+- Lectores de Information Protection
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Cómo dlp detecta información confidencial
 

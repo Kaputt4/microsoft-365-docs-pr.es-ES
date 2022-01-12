@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 0858f4bf59aa9c5a5eb713e50c382bdf475e5126
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 6ed538eac8d60acbd8ff2947207c79dfb7d9e482
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507235"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61937045"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business-preview"></a>Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)
 
@@ -30,7 +30,14 @@ ms.locfileid: "61507235"
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-El portal Microsoft 365 Defender permite al equipo de seguridad responder y mitigar las amenazas detectadas.
+El portal Microsoft 365 Defender permite al equipo de seguridad responder y mitigar las amenazas detectadas. Este artículo le guiará por un ejemplo de cómo puede usar Defender para empresas (versión preliminar).
+
+>
+> **¿Tiene un minuto?**
+> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
+
+## <a name="view-detected-threats"></a>Ver amenazas detectadas
 
 1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
@@ -54,7 +61,7 @@ El portal Microsoft 365 Defender permite al equipo de seguridad responder y miti
 
 6. Seleccione una acción disponible. Por ejemplo, puedes elegir **Ejecutar examen antivirus,** lo que hará Antivirus de Microsoft Defender iniciar un examen rápido en el dispositivo. O bien, puedes seleccionar **Iniciar investigación automatizada** para desencadenar una investigación automatizada en el dispositivo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 

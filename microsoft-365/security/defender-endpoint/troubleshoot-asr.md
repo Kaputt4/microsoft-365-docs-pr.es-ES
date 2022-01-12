@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cc4ffb2d2a1c60c9c58be4f6f3fe7439f1aab074
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6efb9c53bbbcd0412ab55f35e02faf4d3595694e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167687"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61884172"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solucionar problemas de reglas de reducción de superficie de ataque
 
@@ -30,8 +30,8 @@ ms.locfileid: "61167687"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -88,7 +88,7 @@ Si ha probado la regla con la herramienta de demostración y con el modo de audi
 
 Si la regla de reducción de superficie de ataque bloquea algo que no debe bloquear (también conocido como falso positivo), puedes agregar exclusiones para evitar que las reglas de reducción de superficie de ataque evalúen los archivos o carpetas excluidos.
 
-Para agregar una exclusión, consulta [Personalizar reducción de superficie de ataque](customize-attack-surface-reduction.md).
+Para agregar una exclusión, consulta [Personalizar reducción de superficie de ataque](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules).
 
 > [!IMPORTANT]
 > Puede especificar archivos y carpetas individuales que se excluirán, pero no puede especificar reglas individuales.

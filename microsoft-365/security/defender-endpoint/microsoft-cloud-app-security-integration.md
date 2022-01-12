@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 8260903ba8031bae76f420a7b010ed73df1c833d
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: d3cf5259aeb070175d5d2a4a95154974c6cd4d56
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560391"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61867834"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>Introducción a Microsoft Defender para aplicaciones en la nube en Defender para endpoint
 
@@ -52,7 +52,7 @@ La integración proporciona las siguientes mejoras importantes en la detección 
 
 - Disponible en todas partes: dado que la actividad de red se recopila directamente desde el punto de conexión, está disponible siempre que el dispositivo esté, dentro o fuera de la red corporativa, ya que ya no depende del tráfico enrutado a través del firewall de empresa o los servidores proxy.
 
-- Funciona sin necesidad de configuración: reenviar registros de tráfico en la nube a Defender para aplicaciones en la nube requiere configuración de firewall y servidor proxy. Con la integración de Defender for Endpoint y Defender for Cloud Apps, no se requiere ninguna configuración. Solo tienes que activarla en Centro de seguridad de Microsoft Defender configuración y puedes ir.\
+- Funciona sin necesidad de configuración: reenviar registros de tráfico en la nube a Defender para aplicaciones en la nube requiere configuración de firewall y servidor proxy. Con la integración de Defender for Endpoint y Defender for Cloud Apps, no se requiere ninguna configuración. Solo tienes que activarla en Microsoft 365 Defender configuración y puedes ir.
 
 - Contexto del dispositivo: los registros de tráfico en la nube carecen de contexto del dispositivo. La actividad de la red defender para puntos de conexión se notifica con el contexto del dispositivo (a qué dispositivo se ha accedido a la aplicación en la nube), por lo que puedes comprender exactamente dónde (dispositivo) se realizó la actividad de red, además de quién (usuario) la realizó.
 
