@@ -17,15 +17,16 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a quitar usuarios de la página Usuarios restringidos en el portal de Microsoft 365 Defender. Se agregan usuarios al portal de Usuarios restringidos para el envío correo no deseado saliente, normalmente porque la cuenta se ha visto comprometida.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9a4cea0a21dce8115c31f39033639c90fdd1bf0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180740"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941437"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Quitar usuarios bloqueados del portal de Usuarios restringidos en Microsoft 365
 
@@ -66,7 +67,7 @@ Los administradores pueden quitar usuarios de la página Usuarios restringidos e
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>Usar el portal de Microsoft 365 Defender para quitar un usuario de la lista de Usuarios restringidos
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración**\>**Revisar**\>**Usuarios restringidos**.
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Revisar** \> **Usuarios restringidos**. Para ir directamente a la página **Usuarios restringidos**, use <https://security.microsoft.com/restrictedusers>.
 
 2. En la página **Usuarios restringidos**, haga clic en el usuario que desea desbloquear para buscarlo y seleccionarlo.
 

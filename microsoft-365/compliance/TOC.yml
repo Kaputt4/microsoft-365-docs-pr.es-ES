@@ -218,7 +218,7 @@
           href: classifier-how-to-retrain-content-explorer.md
     - name: Clasificación de los datos
       items:
-        - name: Entender la clasificación de datos
+        - name: Obtenga información sobre la clasificación de datos.
           href: data-classification-overview.md
         - name: Introducción al explorador de contenido
           href: data-classification-content-explorer.md
@@ -309,6 +309,8 @@
           href: set-up-irm-in-sp-admin-center.md
         - name: Referencia técnica
           href: technical-reference-details-about-encryption.md
+        - name: Cadenas de cifrado de Microsoft 365
+          href: encryption-office-365-certificate-chains.md
         - name: Desuso de TLS 1.0 y 1.1 para Office 365
           href: tls-1.0-and-1.1-deprecation-for-office-365.md
         - name: Desuso de TLS 1.0 y 1.1 en Office 365 GCC High y DoD
@@ -652,12 +654,12 @@
         - name: Buscar contenido
           href: content-search.md
           items:
-            - name: Referencia de características para la búsqueda de contenido
-              href: content-search-reference.md
             - name: Consultas de palabras clave y condiciones de búsqueda
               href: keyword-queries-and-search-conditions.md
             - name: Uso del editor de KQL para crear consultas de búsqueda
               href: ediscovery-kql-editor.md
+            - name: Buscar los datos de los chats de Teams para usuarios locales
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: Configurar el filtrado de permisos de búsqueda
               href: permissions-filtering-for-content-search.md
             - name: Vista previa de los resultados de la búsqueda de eDiscovery
@@ -670,14 +672,14 @@
               href: export-a-content-search-report.md
             - name: Buscar y eliminar mensajes de correo electrónico
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: Buscar los datos de los chats de Teams para usuarios locales
-              href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: Reintentar una búsqueda errónea
               href: retry-failed-content-search.md
             - name: Conservar destinatarios CCO de la búsqueda
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: Referencia de búsqueda de contenido
           items:
+            - name: Referencia de características para la búsqueda de contenido
+              href: content-search-reference.md
             - name: Límites de búsqueda de eDiscovery
               href: limits-for-content-search.md
             - name: Contenido almacenado en buzones para eDiscovery
@@ -936,12 +938,12 @@
   items:
     - name: Cómo identificar el tipo de retención en un buzón
       href: identify-a-hold-on-an-exchange-online-mailbox.md
-    - name: Crear una retención por juicio
-      href: create-a-litigation-hold.md
     - name: Eliminar elementos de la carpeta de elementos recuperables de buzones en retención
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Aumentar la cuota de elementos recuperables para los buzones de correo en retención
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Crear una retención por juicio
+      href: create-a-litigation-hold.md
     - name: Conservar destinatarios CCO y del grupo de distribución expandido
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Administrar las auditorías y las directivas de alerta
@@ -954,12 +956,12 @@
           href: set-up-basic-audit.md
         - name: Búsquedas en el registro de auditoría
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: 'Exportar, configurar y ver registros de registro de auditoría'
+          href: export-view-audit-log-records.md
         - name: Usar un script de PowerShell para buscar en el registro de auditoría
           href: audit-log-search-script.md
         - name: Propiedades detalladas del registro de auditoría
           href: detailed-properties-in-the-office-365-audit-log.md
-        - name: 'Exportar, configurar y ver registros de registro de auditoría'
-          href: export-view-audit-log-records.md
         - name: Activar o desactivar la auditoría
           href: turn-audit-log-search-on-or-off.md
         - name: Usar el registro de auditoría para investigar problemas habituales
