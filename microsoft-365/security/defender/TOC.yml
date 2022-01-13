@@ -98,6 +98,8 @@
           href: deploy-supported-services.md
         - name: Activar las Preguntas y respuestas de Microsoft 365 Defender
           href: m365d-enable-faq.md
+        - name: Entrenar al personal de seguridad
+          href: microsoft-365-defender-train-security-staff.md
     - name: Protección contra amenazas
       items:
         - name: Puntuación de seguridad de Microsoft

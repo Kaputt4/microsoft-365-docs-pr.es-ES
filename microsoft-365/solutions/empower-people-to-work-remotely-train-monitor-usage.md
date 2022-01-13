@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Proporcione formación a los usuarios y asegúrese de que se dé respuesta a los problemas rápidamente.
-ms.openlocfilehash: 36133cab7e5fa11e311fb089f2bcbf5c1f862d08
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed2b1ab30de5c7c2a808a78ce99727e6e77e6e63
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190142"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61936791"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Paso 6: proporcione formación a sus trabajadores y dicte instrucciones mediante comentarios
 
@@ -31,7 +31,7 @@ La formación de los trabajadores híbridos abarca los siguientes aspectos:
 - Procedimientos de inicio de sesión adecuados mediante la autenticación multifactor, incluido el registro de un método de comprobación adicional.
 - El uso de dispositivos y cómo las directivas de administración de puntos de conexión pueden servir para bloquear el acceso a dispositivos no compatibles o no administrados.
 - El uso de aplicaciones permitidas y cómo se pueden usar las directivas de aplicaciones de administración de puntos de conexión para bloquear el uso de algunas aplicaciones.
-- Características de seguridad de Windows 10 Enterprise.
+- Características de seguridad de Windows 11 o 10 Enterprise.
 - Cómo usar [Teams](/microsoftteams/training-microsoft-teams-landing-page) para chatear, compartir documentos, hacer videoconferencias y tener conversaciones encadenadas.
 - Cómo usar [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) para el correo electrónico y el calendario.
 - Cómo usar los equipos o sitios de comunicaciones de [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) y las carpetas de [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) para examinar archivos que pertenezcan a una biblioteca de usuario o a un grupo y colaborar en ellos.

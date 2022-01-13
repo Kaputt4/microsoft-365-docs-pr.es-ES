@@ -16,17 +16,16 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 - intro-overview
 description: Microsoft Defender para Office 365 incluye archivos adjuntos seguros, vínculos seguros, herramientas avanzadas antiphishing, herramientas de creación de informes y funciones de inteligencia sobre amenazas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d6d237b489848870d58a8288ee787c3634072742
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 07dcc4c5d6d9758828fe2b48344a3c6ccc3b8a2e
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645625"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873542"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
@@ -97,7 +96,7 @@ La siguiente tabla es un resumen de lo que se incluye en cada plan.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurar las directivas de Microsoft Defender para Office 365
 
-Con Microsoft Defender para Office 365, el equipo de seguridad de su organización puede configurar la protección mediante la definición de directivas en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> \> **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas**).
+Con Microsoft Defender para Office 365, el equipo de seguridad de su organización puede configurar la protección mediante la definición de directivas en el portal de Microsoft 365 Defender <https://security.microsoft.com> en **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas**. O bien, puede ir directamente a la página **Directivas de amenaza** a través de<https://security.microsoft.com/threatpolicy>.
 
 Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
@@ -118,7 +117,7 @@ Las directivas definidas por la organización determinan el comportamiento y el 
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Ver informes de Microsoft Defender para Office 365
 
-Microsoft Defender para Office 365 incluye [informes](view-reports-for-mdo.md) para supervisar Defender para Office 365. Puede acceder a los informes en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> en **Informes** \> **Correo electrónico y colaboración** \> **Informes de correo electrónico y colaboración** o directamente en <https://security.microsoft.com/securityreports>.
+Microsoft Defender para Office 365 incluye [informes](view-reports-for-mdo.md) para supervisar Defender para Office 365. Puede acceder a los informes en el portal de Microsoft 365 Defender en <https://security.microsoft.com> **Informes** \> **Correo electrónico y colaboración** \> **Informes de correo electrónico y colaboración**. O bien, puede ir directamente a la página **Informes de colaboración y correo electrónico** a través de <https://security.microsoft.com/securityreports>.
 
 Los informes se actualizan en tiempo real y proporcionan los detalles más recientes. Estos informes también proporcionan recomendaciones y le avisan de amenazas inminentes. Los informes predefinidos incluyen:
 

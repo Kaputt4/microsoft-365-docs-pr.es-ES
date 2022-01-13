@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid:
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Usar supervisión de Exchange Online para obtener información sobre avisos o incidentes de correo electrónico en Microsoft 365.
-ms.openlocfilehash: e6b6749b88644b65768a04696a6e6363661ceec8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22985d1fd6e79693a526c8ec008e189593543ae6
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197334"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61933340"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Supervisión de Exchange Online para Microsoft 365
 
@@ -191,3 +191,5 @@ La supervisión se centra en los metadatos del servicio y no se supervisa el con
 - [Uso de Cuentas prioritarias en Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
 
 - [Alertas de servicio para el uso de buzones en la supervisión de Exchange Online](microsoft-365-mailbox-utilization-service-alerts.md)
+
+- [Alertas de servicio para retrasos de origen MRS en la supervisión de Exchange Online](microsoft-365-mrs-source-delays-service-alerts.md)

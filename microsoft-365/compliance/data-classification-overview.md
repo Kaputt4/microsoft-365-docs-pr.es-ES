@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: e3f621b3ab6ec6d095e5ba8687cf06734cfa0170
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3236c0edc40cf585b5e6c9e207746e066e95cb9c
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110012"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61942985"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -67,6 +67,25 @@ La clasificación de datos analizará su contenido confidencial y el contenido e
 
 > [!NOTE]
 > Como procedimiento recomendado, use siempre el rol con privilegios mínimos para conceder acceso a la clasificación de datos de Microsoft 365.
+
+#### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
+
+Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
+
+Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Administrador de Information Protection
+- Analista de Information Protection
+- Investigador de protección de información
+- Lector de protección de información
+
+Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Protección de la información
+- Administradores de Information Protection
+- Analistas de Information Protection
+- Investigadores de Information Protection
+- Lectores de Information Protection
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Tipos de información confidencial más usados en el contenido.
 

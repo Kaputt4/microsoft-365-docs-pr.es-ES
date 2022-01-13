@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros del Grupo de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
-ms.openlocfilehash: 655b90ca13631c1df7937443e37d1bf904814e14
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: f990f2c605ce72668f28831b903ebdf8ee50c5f9
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335423"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61934626"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -40,13 +40,14 @@ En la sección <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" targe
 - **Los grupos de seguridad** se usan para conceder acceso a los recursos como SharePoint.
 - **Los grupos de seguridad habilitados para correo** se usan para conceder acceso a recursos como SharePoint y enviar notificaciones por correo electrónico a estos usuarios.
 - **Los buzones compartidos** se usan cuando varios usuarios necesitan tener acceso al mismo buzón, como la dirección de correo electrónico del soporte técnico e información de la empresa.
+- Los **grupos de distribución dinámicos** se crean para acelerar el envío masivo de mensajes de correo electrónico y demás información dentro de una organización.
 
 Algunos grupos permiten la pertenencia dinámica o el correo electrónico.
 
-||Grupos de Microsoft 365|Grupos de distribución|Grupos de seguridad|Grupos de seguridad habilitados para correo|Buzones compartidos|
-|:----|:----|:----|:----|:----|:----|
-|**Habilitado para correo**|Sí|Sí|No|Sí|Sí|
-|**Pertenencia dinámica en Azure AD**|Sí|No|Sí|No|No|
+||Grupos de Microsoft 365|Grupos de distribución|Grupos de seguridad|Grupos de seguridad habilitados para correo|Buzones compartidos|Grupos de distribución dinámicos|
+|:----|:----|:----|:----|:----|:----|:----|
+|**Habilitado para correo**|Sí|Sí|No|Sí|Sí|Sí|
+|**Pertenencia dinámica en Azure AD**|Sí|No|Sí|No|No|No|
 
 Todos estos tipos de grupo se pueden usar con Power Automate.
 
@@ -75,6 +76,12 @@ Los grupos de distribución se pueden [actualizar a Grupos de Microsoft 365](../
 Los grupos de distribución se pueden agregar a un equipo en Microsoft Teams, aunque solo se agregan los miembros y no el propio grupo.
 
 Los Grupos de Microsoft 365 no pueden ser miembros de ningún grupo de distribución.
+
+## <a name="dynamic-distribution-groups"></a>Grupos de distribución dinámicos 
+
+Los [grupos de distribución dinámicos](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) son grupos habilitados para correo que se usan para enviar correos a personas con atributos específicos, como departamento o ubicación. Estos atributos se definen en el Centro de administración de Exchange en lugar de en Azure AD.
+
+A diferencia de los grupos de distribución regular, que contienen un conjunto definido de miembros, la lista de miembros para grupos de distribución dinámica se calcula cada vez que se envía un mensaje al grupo, en base a los filtros y condiciones definidos. Cuando se envía un mensaje de correo electrónico a un grupo de distribución dinámico, éste se entrega a todos los destinatarios de la organización que coincidan con los criterios definidos para ese grupo.
 
 ## <a name="security-groups"></a>Grupos de seguridad
 

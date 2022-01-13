@@ -20,12 +20,12 @@ ms.custom:
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 262ffa4cdb4aae7af0624fe3b51b10b9b088b3c6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213498"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61873494"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -72,7 +72,7 @@ Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Para abrir el portal de Microsoft 365 Defender, vaya a <https://security.microsoft.com>. Para abrir directamente la página **Cuarentena**, use <https://security.microsoft.com/quarantine>.
+- Para abrir el portal de Microsoft 365 Defender, vaya a <https://security.microsoft.com>. Para ir directamente a la página **Cuarentena**, use <https://security.microsoft.com/quarantine>.
 
 - Los administradores pueden configurar cuánto tiempo se conservan los mensajes en cuarentena antes de que se eliminen de forma permanente (directivas contra correo electrónico no deseado). Los mensajes que han expirado de la cuarentena no se pueden recuperar. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
@@ -83,7 +83,8 @@ Puede ver y administrar los mensajes en cuarentena en el portal de Microsoft 365
 > [!NOTE]
 > La capacidad de ver los mensajes en cuarentena se controla mediante la [directiva de cuarentena](quarantine-policies.md) que se aplica al tipo de mensaje en cuarentena (que podría ser la [directiva de cuarentena predeterminada para el motivo de cuarentena](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
 
-1. En el portal de Microsoft 365 Defender, vaya a **Colaboración y correos electrónicos** \> **Revisar** \> **Cuarentena**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Colaboración y correos electrónicos** \> **Revisar** \> **Cuarentena**. Para ir directamente a la página **Cuarentena**, use <https://security.microsoft.com/quarantine>.
+
 2. En la página **Cuarentena**, puede ordenar los resultados haciendo clic en un encabezado de columna disponible. Haga clic en **Personalizar columnas**  para cambiar las columnas que se muestran. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
 
    - **Hora de recepción**<sup>\*</sup>

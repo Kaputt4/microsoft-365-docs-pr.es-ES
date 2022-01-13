@@ -192,8 +192,10 @@
         - name: Supervisión de Exchange Online
           href: microsoft-365-exchange-monitoring.md
           items:
-            - name: Alertas del servicio de uso de buzones
+            - name: Alertas de servicio para el uso de buzones
               href: microsoft-365-mailbox-utilization-service-alerts.md
+            - name: Alertas de servicio para retrasos de origen MRS
+              href: microsoft-365-mrs-source-delays-service-alerts.md
         - name: Guías de configuración
           href: setup-guides-for-microsoft-365.md
     - name: Varios inquilinos
