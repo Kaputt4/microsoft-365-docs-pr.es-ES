@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: 4094df4d465256475e09f8bbaf706c90bbebe34e
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: bdcc690232678b5673950bf75d844a7e658a0c30
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422332"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61943585"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -36,7 +36,7 @@ Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para super
 > Si está buscando el control de dispositivos para el almacenamiento extraíble, consulte [Control de dispositivo de Microsoft Defender para punto de conexión extraíble en el control de acceso de almacenamiento](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 > [!NOTE]
-> En el cumplimiento de Microsoft 365, la evaluación de directivas DLP de elementos confidenciales se produce de forma centralizada, por lo que no hay retraso temporal para que las directivas y las actualizaciones de las directivas se distribuyan a dispositivos individuales. Cuando una directiva se actualiza en el centro de cumplimiento, tarda aproximadamente una hora en sincronizarse en todo el servicio. Una vez sincronizadas las actualizaciones de las directivas, los elementos de los dispositivos dirigidos se vuelve a evaluar automáticamente la próxima vez que se accede a ellos o se modifican".
+> En el cumplimiento de Microsoft 365, la evaluación de directivas DLP de elementos confidenciales se produce de forma centralizada, por lo que no hay retraso temporal para que las directivas y las actualizaciones de las directivas se distribuyan a dispositivos individuales. Cuando una directiva se actualiza en el centro de cumplimiento, tarda aproximadamente una hora en sincronizarse en todo el servicio. Una vez sincronizadas las actualizaciones de directivas, los elementos de los dispositivos de destino se vuelven a evaluar automáticamente la próxima vez que se accede a ellos o se modifican.
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Actividades en punto de conexión que puede supervisar y sobre las que puede tomar medidas
 

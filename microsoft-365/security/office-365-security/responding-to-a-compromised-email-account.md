@@ -14,21 +14,18 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-- admindeeplinkMAC
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c848a62793e6397f4cfd489c68d156a194b7911d
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: bdce44bc54c71d03e8064fa10187c06237d38b5b
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421119"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61941425"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
@@ -62,11 +59,9 @@ Es posible que los usuarios observen y notifiquen actividades inusuales en sus b
 - Se ha agregado recientemente el reenvío de correo.
 - Se ha agregado recientemente una firma inusual, como una firma de entidad bancaria falsa o una firma de recetas de medicamentos.
 
-Si un usuario informa de los síntomas anteriores, debería realizar una mayor investigación. El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a> y el portal de Azure ofrecen herramientas para ayudarle a investigar la actividad de una cuenta de usuario que sospecha que puede estar en peligro.
+Si un usuario informa de los síntomas anteriores, debería realizar una mayor investigación. El portal de Microsoft 365 Defender y el portal de Azure ofrecen herramientas para ayudarle a investigar la actividad de una cuenta de usuario que sospecha que puede estar en peligro.
 
-- **Registros de auditoría unificados en el portal de Microsoft 365 Defender**: revise todas las actividades de la cuenta sospechosa, filtre los resultados con un rango de fechas que abarque desde antes de que se produjese la actividad sospechosa hasta la fecha actual. No filtre las actividades durante la búsqueda.
-
-- **Registros de auditoría de administración en el EAC**: en Exchange Online, puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange (EAC)</a> para buscar y ver entradas del registro de auditoría de administrador. El registro de auditoría del administrador registra acciones específicas, según los cmdlets de PowerShell de Exchange Online, realizadas por administradores y usuarios que tienen asignados privilegios de administrador. Las entradas en el registro de auditoría del administrador proporcionan información acerca del cmdlet que se ejecutó, los parámetros que se usaron, el usuario que ejecutó el cmdlet y los objetos que se vieron afectados.
+- **Registros de auditoría unificados en el portal de Microsoft 365 Defender**: revise todas las actividades de la cuenta sospechosa, filtre los resultados con un rango de fechas que abarque desde antes de que se produjese la actividad sospechosa hasta la fecha actual. No filtre las actividades durante la búsqueda. Para más información, vea [Buscar en el registro de auditoría en el centro de cumplimiento](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 - **Registros de inicio de sesión de Azure AD y otros informes de riesgos en el portal de Azure AD**: examine los valores de estas columnas:
   - Revise la dirección IP
@@ -102,9 +97,9 @@ Siga los procedimientos que se describen en [Restablecer una contraseña de empr
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Paso 2 Eliminar direcciones de reenvío de correo electrónico sospechosas
 
-1. Vaya a la Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. En el Centro de administración de Microsoft 365 de <https://admin.microsoft.com>, vaya a **Usuarios**\>**Usuarios activos**. Para ir directamente a la página **Usuarios activos,** use <https://admin.microsoft.com/Adminportal/Home#/users>.
 
-2. Vaya a **Usuarios** \> **Usuarios activos**. Busque la cuenta de usuario en cuestión y seleccione el usuario (fila) sin seleccionar la casilla.
+2. En la página **Usuarios activos**, busque la cuenta de usuario en cuestión y seleccione el usuario (fila) sin activar la casilla.
 
 3. En el menú desplegable de detalles que aparece, seleccione la pestaña **Correo**.
 
@@ -131,16 +126,16 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 > [!IMPORTANT]
 > Puede bloquear la cuenta en peligro e impedir que inicie hasta que crea que es seguro volver a habilitar el acceso.
 
-1. Vaya al Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> y vaya a **Usuarios** \> **Usuarios activos**.
+1. En el Centro de administración de Microsoft 365 de <https://admin.microsoft.com>, vaya a **Usuarios**\>**Usuarios activos**. Para ir directamente a la página **Usuarios activos,** use <https://admin.microsoft.com/Adminportal/Home#/users>.
 
-2. Busque y seleccione la cuenta de usuario, haga clic en el ![icono Más](../../media/ITPro-EAC-MoreOptionsIcon.png) y luego seleccione **Editar estado de inicio de sesión**.
+2. En la página **Usuarios activos**, busque y seleccione la cuenta de usuario y haga clic en ![icono Más.](../../media/ITPro-EAC-MoreOptionsIcon.png)y, a continuación, seleccione **Editar estado de inicio de sesión**.
 
 3. En el panel **Bloquear inicio de sesión** que aparece, seleccione **Bloquear el inicio de sesión de este usuario** y luego haga clic en **Guardar cambios**.
 
-4. Abra el Centro de administración de Exchange (EAC), y vaya a **Destinatarios**\> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">**Buzones**</a>.
+4. En el Centro de administración de Exchange (EAC) en <https://admin.exchange.microsoft.com>, vaya a **Destinatarios**\>**Buzones**. Para ir directamente a la página **Buzones**, use <https://admin.exchange.microsoft.com/#/mailboxes>.
 
-5. Busque y seleccione el usuario. Se abrirá el control flotante de detalles del buzón y deberá seguir estos pasos:
-   - En la sección **Aplicaciones de correo electrónico**, bloquee todas las opciones de configuración disponibles. Para ello, mueva el botón de alternancia a la derecha ![Deshabilitar.](../../media/scc-toggle-on.png):
+5. En la página **Buzones,** busque y seleccione el usuario. En el control flotante de detalles del buzón que se abre, siga estos pasos:
+   - En la sección **Aplicaciones de correo electrónico**, seleccione **Administrar la configuración de aplicaciones de correo electrónico**. En el cootante **Administrar la configuración de las aplicaciones de correo electrónico** que aparece, bloquee todas las opciones de configuración disponibles moviendo el botón de alternancia a la derecha ![Deshabilitar.](../../media/scc-toggle-on.png):
      - **Outlook en la Web**
      - **Outlook para escritorio (MAPI)**
      - **Servicios Web de Exchange**
@@ -155,13 +150,13 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 > [!NOTE]
 > La pertenencia a grupos de roles administrativos puede restaurarse después de haber asegurado la cuenta.
 
-1. Vaya al Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> con una cuenta de administrador global y siga estos pasos:
-   1. Vaya a **Usuarios** \> **Usuarios activos**.
-   2. Busque y seleccione la cuenta de usuario, haga clic en el ![icono Más](../../media/ITPro-EAC-MoreOptionsIcon.png) y después seleccione **Administrar roles**.
+1. En el Centro de administración de Microsoft 365 en <https://admin.microsoft.com>, siga estos pasos:
+   1. Vaya a **Usuarios** \> **Usuarios activos**. Para ir directamente a la página **Usuarios activos,** use <https://admin.microsoft.com/Adminportal/Home#/users>.
+   2. En la página **Usuarios activos**, busque y seleccione la cuenta de usuario y haga clic en ![icono Más.](../../media/ITPro-EAC-MoreOptionsIcon.png)y, a continuación, seleccione **Administrar roles**.
    3. Quite todos los roles administrativos que están asignados a la cuenta. Cuando haya terminado, haga clic en **Guardar cambios**.
 
-2. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender y</a> siga estos pasos:
-   1. Vaya a **Permisos y roles** \> **Correo electrónico y roles de colaboración** \> **Roles**.
+2. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, siga estos pasos:
+   1. Vaya a **Permisos y roles** \> **Correo electrónico y roles de colaboración** \> **Roles**. Para ir directamente a la página **Permisos**, use <https://security.microsoft.com/emailandcollabpermissions>.
    2. En la página **Permisos**, seleccione cada grupo de roles de la lista y busque la cuenta de usuario en la sección **Miembros** del menú flotante de detalles que aparece. Si el grupo de roles contiene la cuenta de usuario, siga estos pasos:
       1. En la sección **Miembros**, haga clic en **Editar**.
       2. En el control flotante **Editar Elegir miembros** que aparece, haga clic en **Editar**.
@@ -170,8 +165,8 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 
          Cuando haya terminado, haga clic en **Listo**, **Guardar** y después en **Cerrar**.
 
-3. Abra el EAC y siga estos pasos:
-   1. Seleccione **Roles**\><a href="https://go.microsoft.com/fwlink/?linkid=2183234" target="_blank">**Roles de administrador**</a>.
+3. En el Centro de administración de Exchange en <https://admin.exchange.microsoft.com/>, siga estos pasos:
+   1. Seleccione **Roles** \> **Roles de administrador**. Para ir directamente a la página **Roles de administrador**, use <https://admin.exchange.microsoft.com/#/adminRoles>.
    2. En la página **Roles de administrador**, seleccione manualmente cada grupo de roles y, en el panel de detalles, seleccione la pestaña **Asignado** para comprobar las cuentas de usuario. Si el grupo de roles contiene la cuenta de usuario, siga estos pasos:
       1. Seleccione la cuenta de usuario.
       2. Haga clic en el ![icono Eliminar.](../../media/m365-cc-sc-delete-icon.png).
