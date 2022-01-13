@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: de39cc220c537af5d0ec5da4b404ec653ea56c1c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: a2fa6a6c4cbdb0ac36d62e4fa78d18a05a345f51
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938221"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009014"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Escenarios de migración de servidor de la solución anterior de Microsoft Defender para endpoint basada en MMA
 
@@ -43,7 +43,7 @@ Estas instrucciones se aplican a la nueva solución unificada y al paquete de in
 > No se admiten las actualizaciones del sistema operativo con Microsoft Defender para endpoint instalado. Por favor, desinstale antes de continuar con una actualización.
 
 > [!NOTE]
-> Durante la versión preliminar, Microsoft Endpoint Configuration Manager completa de automatización e integración para realizar una actualización automatizada estará disponible en la versión 2111 de MECM. Desde la versión 2107, puede usar el nodo Endpoint Protection para la configuración, así como la directiva de grupo, PowerShell, Microsoft Endpoint Manager de inquilino o la configuración local. Además, puede aprovechar la funcionalidad existente en Microsoft Endpoint Configuration Manager para automatizar los pasos de actualización manuales; métodos para los que se describen a continuación.
+> Durante la versión preliminar, Microsoft Endpoint Configuration Manager completa de automatización e integración para realizar una actualización automatizada estará disponible en una versión posterior de MECM. Desde la versión 2107, puede usar el nodo Endpoint Protection para la configuración, así como la directiva de grupo, PowerShell, Microsoft Endpoint Manager de inquilino o la configuración local. Además, puede aprovechar la funcionalidad existente en Microsoft Endpoint Configuration Manager para automatizar los pasos de actualización manuales; métodos para los que se describen a continuación.
 
 ## <a name="installer-script"></a>Script del instalador
 

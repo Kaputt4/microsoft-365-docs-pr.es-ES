@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 4f725a74d63feaffeba43dd832ed4eb1df744d7d
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3bb7b8135e178ac219b56afd67e466976487e3cb
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935407"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009002"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos y identidad de confianza cero
 
@@ -64,14 +64,14 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 |Nivel de protección|Directivas|Más información|Licencias|
 |---|---|---|---|
 |**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
-||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|Microsoft 365 E3 o E5|
+||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|Microsoft 365 E3 o E5|
 ||[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Fuerza a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
 ||[Aplicar protección de datos de directivas de protección de aplicaciones (APP)](#apply-app-data-protection-policies)|Una directiva de Protección de aplicaciones de Intune por plataforma (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|
 ||[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Aplica la protección de aplicaciones móviles para teléfonos y tabletas con iOS, iPadOS o Android.|Microsoft 365 E3 o E5|
 |**Empresarial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo,* *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
-||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|Microsoft 365 E3 o E5|
-||[Requerir equipos y dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune tanto para equipos (Windows o macOS) como para teléfonos o tabletas (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
-|**Seguridad especializada**|[*Requerir* siempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
+||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|Microsoft 365 E3 o E5|
+||[Requerir equipos y dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune tanto para equipos (Windows o macOS) como para teléfonos o tabletas (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
+|**Seguridad especializada**|[*Requerir* siempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Asignar directivas a grupos y usuarios
@@ -130,7 +130,7 @@ En la **sección Asignaciones:**
 
 Aplica la configuración del nivel de riesgo en función del nivel de protección al que estás destinado.
 
-|Nivel de protección|Valores de nivel de riesgo necesarios|Acción|
+|Nivel de protección|Valores de nivel de riesgo necesarios|Action|
 |---|---|---|
 |Punto de inicio|Alto, medio|Compruebe ambos.|
 |Empresa|Alto, medio, bajo|Compruebe los tres.|
@@ -139,7 +139,7 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Action|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Seleccionar|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -170,7 +170,7 @@ En la **sección Asignaciones:**
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Action|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Seleccionar|
 ||**Exigir todos los controles seleccionados**||Seleccionar|
@@ -192,7 +192,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 En la **sección Asignaciones:**
 
-|Tipo|Propiedades|Valores|Acción|
+|Tipo|Propiedades|Valores|Action|
 |---|---|---|---|
 |Usuarios|Incluir|**Todos los usuarios**|Seleccionar|
 |Riesgo de usuario|**Alto**||Seleccionar|
@@ -200,7 +200,7 @@ En la **sección Asignaciones:**
 
 En la segunda **sección Asignaciones:**
 
-|Tipo|Propiedades|Valores|Acción|
+|Tipo|Propiedades|Valores|Action|
 |---|---|---|---|
 |Acceso|**Permitir acceso**||Seleccionar|
 |||**Exigir cambio de contraseña**|Cheque|
@@ -246,14 +246,14 @@ Para aplicar las directivas de protección de aplicaciones que aplicó en Intune
 
 La aplicación de directivas de protección de aplicaciones requiere un conjunto de directivas descritas en Requerir directiva de protección de aplicaciones para el acceso a aplicaciones en la [nube con acceso condicional.](/azure/active-directory/conditional-access/app-protection-based-conditional-access) Estas directivas se incluyen en este conjunto recomendado de directivas de configuración de identidad y acceso.
 
-Para crear la directiva de acceso condicional que requiere aplicaciones aprobadas y protección de aplicaciones, siga los pasos descritos en [Acceso condicional:](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection)Requerir aplicaciones cliente aprobadas o directiva de protección de aplicaciones, que solo permite que las cuentas de las aplicaciones protegidas por directivas de protección de aplicaciones accedan Microsoft 365 puntos de conexión.
+Para crear la directiva de acceso condicional que requiere aplicaciones aprobadas y protección de APLICACIONES, siga los pasos descritos en Requerir aplicaciones cliente aprobadas o directiva de protección de aplicaciones con dispositivos [móviles,](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices)que solo permite que las cuentas dentro de aplicaciones móviles protegidas por directivas de protección de aplicaciones accedan Microsoft 365 puntos de conexión.
 
    > [!NOTE]
    > Esta directiva garantiza que los usuarios móviles puedan tener acceso a todos los Microsoft 365 con las aplicaciones aplicables.
 
-Esta directiva también impide que Exchange ActiveSync clientes se conecten a Exchange Online. Sin embargo, puede crear una directiva independiente para controlar Exchange ActiveSync. Para obtener más información, vea Bloquear clientes [de ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)que impide que los Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online. Esta directiva no se muestra en la ilustración de la parte superior de este artículo. Se describe y se muestra en [Recomendaciones de directiva para proteger el correo electrónico.](secure-email-recommended-policies.md)
+Esta directiva también bloquea que Exchange ActiveSync clientes en dispositivos móviles se conecten a Exchange Online. Sin embargo, puedes crear una directiva independiente para controlar Exchange ActiveSync todos los dispositivos. Para obtener más información, vea Bloquear clientes [de ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)que impide que los Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online. Esta directiva no se muestra en la ilustración de la parte superior de este artículo. Se describe y se muestra en [Recomendaciones de directiva para proteger el correo electrónico.](secure-email-recommended-policies.md)
 
- Estas directivas aprovechan los controles de concesión Requerir aplicación [cliente aprobada](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) y Requerir directiva de protección [de aplicaciones.](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
+ Esta directiva aprovecha los controles de concesión Requerir aplicación [cliente aprobada](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) y Requerir directiva de protección [de aplicaciones.](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
 
 Por último, el bloqueo de la autenticación heredada para otras aplicaciones cliente en dispositivos iOS y Android garantiza que estos clientes no puedan omitir las directivas de acceso condicional. Si sigue las instrucciones de este artículo, ya configuró Clientes de bloque que no [admiten la autenticación moderna.](#block-clients-that-dont-support-multi-factor)
 
@@ -362,7 +362,7 @@ Se recomiendan las siguientes opciones de configuración para equipos que ejecut
 
 Para ver las reglas de evaluación > Windows servicio de **atestación** de estado del dispositivo, consulte esta tabla.
 
-|Propiedades|Valor|Acción|
+|Propiedades|Valor|Action|
 |---|---|---|
 |Requerir BitLocker|Obligatoria|Seleccionar|
 |Requerir que el arranque seguro esté habilitado en el dispositivo|Obligatoria|Seleccionar|
@@ -375,7 +375,7 @@ Para **El cumplimiento de Configuration Manager,** seleccione **Requerir**.
 
 Para **Seguridad del sistema,** consulte esta tabla.
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |---|---|---|---|
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Seleccionar|
 ||Contraseñas sencillas|Bloquear|Seleccionar|
@@ -397,7 +397,7 @@ Para **Seguridad del sistema,** consulte esta tabla.
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |---|---|---|---|
 |Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Seleccionar|
 |

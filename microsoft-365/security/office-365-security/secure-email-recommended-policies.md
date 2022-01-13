@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 818619bef6a752088e1d260171f3d2c645efa842
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b9fb6afa9878f09871823d54d69edf677c1d65a2
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938077"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62008990"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -63,9 +63,11 @@ Si ha incluido Exchange Online y Outlook en el ámbito de las directivas al conf
 
 ## <a name="block-activesync-clients"></a>Bloquear clientes de ActiveSync
 
-Esta directiva impide que los clientes de ActiveSync omitan otras directivas de acceso condicional. La configuración de directiva solo se aplica a los clientes de ActiveSync. Al seleccionar Requerir **[directiva de protección de aplicaciones,](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** esta directiva bloquea los clientes de ActiveSync. Los detalles sobre cómo crear esta directiva se pueden encontrar en Requerir directiva de protección de aplicaciones para el acceso a aplicaciones en la nube [con acceso condicional.](/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+Exchange ActiveSync puede usarse para sincronizar la mensajería y los datos de calendario en dispositivos móviles y de escritorio.
 
-- Siga el "Paso 2: Configurar una directiva de acceso condicional de Azure AD para Exchange Online con ActiveSync (EAS)" en el escenario [1:](/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)las aplicaciones de Office 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones Exchange ActiveSync, lo que impide que los clientes que aprovechan la autenticación básica se conecten a Exchange Online.
+Para dispositivos móviles, los clientes Exchange ActiveSync modernos compatibles con la autenticación que no admiten directivas de protección de aplicaciones de Intune (o clientes compatibles que no están definidos en la directiva de protección de aplicaciones) y los clientes de Exchange ActiveSync que usan autenticación básica se bloquean en función de la directiva de acceso condicional creada en Requerir aplicaciones aprobadas y protección de [aplicaciones.](identity-access-policies.md#require-approved-apps-and-app-protection)
+
+Para bloquear Exchange ActiveSync mediante autenticación básica en otros dispositivos, siga los pasos descritos en [Bloquear Exchange ActiveSync](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices)en todos los dispositivos, lo que impide que los clientes de Exchange ActiveSync que usan autenticación básica en dispositivos no móviles se conecten a Exchange Online.
 
 También puede usar directivas de autenticación para [deshabilitar la autenticación básica,](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)lo que fuerza a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
 
@@ -109,7 +111,7 @@ Con las nuevas funcionalidades Cifrado de mensajes de Office 365 (OME), que apro
 
 Para obtener más información, vea [Set up new Cifrado de mensajes de Office 365 capabilities](../../compliance/set-up-new-message-encryption-capabilities.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 ![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Obtenga información sobre cómo permitir que los miembros del grupo envíen correo electrónico como Microsoft 365 grupo o envíen correo electrónico en nombre de un Microsoft 365 grupo.
-ms.openlocfilehash: a21e30ef613f557d1206ada5bc9ab4be8a083834
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: e3742b645d1efb2acb4bd14d109314947d781246
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421587"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009038"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Permitir que los miembros envíen como o envíen en nombre de un grupo
 
@@ -39,8 +39,8 @@ El **permiso Enviar en nombre** permite que un usuario envíe correo electrónic
 > [!IMPORTANT]
 > Puede configurar **Enviar como** o Enviar en **nombre** de un usuario determinado, pero no ambos. Si configura ambos, se establecerá de forma predeterminada **en Enviar como**.
 
-> [!TIP]
-> Consulte [Enviar correo](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) electrónico desde o en nombre de un grupo de Microsoft 365 para obtener información sobre cómo usar Outlook y Outlook en la Web para enviar correo electrónico desde un grupo.
+> [!NOTE]
+> **Enviar como** y **Enviar en nombre no** se admiten en Outlook para Mac en configuraciones Exchange híbridas.
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Permitir que los miembros envíen correo electrónico como grupo
 
@@ -79,6 +79,8 @@ En esta sección se explica cómo permitir a los usuarios enviar correo electró
     ![Escriba para buscar o seleccionar un usuario de la lista.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Artículos relacionados
+
+[Enviar correo electrónico desde o en nombre de un Microsoft 365 grupo](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
 
 [Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

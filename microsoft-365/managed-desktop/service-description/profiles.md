@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9f2d0d20d9df68cb10a5a84d6f2ba07d11a4e478
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 353bda15ee1eb5f50cf5814e06e4ccbb64e1b8d4
+ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210118"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62009026"
 ---
 # <a name="device-profiles"></a>Perfiles de dispositivo
 
@@ -31,13 +31,13 @@ Puedes pensar que los perfiles de dispositivo forman parte de una jerarquía de 
 
 :::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="Configuraciones de dispositivos que se muestran como una pirámide. A continuación se muestra la descripción.":::
 
-Fundamentalmente, cada Escritorio administrado de Microsoft dispositivo tiene una base que incluye una línea base de seguridad estándar, directivas de cumplimiento, Windows de actualización y grupos. Para trabajar con Escritorio administrado de Microsoft, todos los dispositivos deben incluir todos estos elementos, que los administradores no pueden cambiar sin una solicitud para Escritorio administrado de Microsoft.
+Fundamentalmente, todos los dispositivos de Escritorio administrado de Microsoft tienen una base que incluye una línea base de seguridad estándar, directivas de cumplimiento, Windows de actualización y grupos. Para trabajar con Microsoft Managed Desktop, todos los dispositivos deben incluir todos estos elementos, que los administradores no pueden cambiar sin una solicitud a Microsoft Managed Desktop.
 
-Los perfiles de dispositivo aparecen en el siguiente nivel superior. Cada Escritorio administrado de Microsoft dispositivo debe tener asignado un perfil (y solo uno). Los administradores pueden elegir qué perfil se asigna a un dispositivo.
+Los perfiles de dispositivo aparecen en el siguiente nivel superior. Cada dispositivo de Escritorio administrado de Microsoft debe tener asignado un perfil (y solo uno). Los administradores pueden elegir qué perfil se asigna a un dispositivo.
 
 En un nivel aún superior se encuentran [personalizaciones adicionales](customizing.md). Cada dispositivo puede tener una o varias personalizaciones (o no). Pueden modificar una capa de nivel inferior (perfiles de dispositivo o la configuración básica) o ser una solicitud totalmente nueva que está en capas encima de la configuración estándar.
 
-En la parte superior se encuentran sus propias modificaciones, como los detalles de red o las aplicaciones. Un dispositivo puede tener cualquier número de estas modificaciones, que no se administran o bloquean mediante Escritorio administrado de Microsoft.
+En la parte superior se encuentran sus propias modificaciones, como los detalles de red o las aplicaciones. Un dispositivo puede tener cualquier número de estas modificaciones, que microsoft Managed Desktop no administra ni bloquea.
 
 
 ## <a name="device-profile-details"></a>Detalles del perfil del dispositivo
@@ -51,10 +51,10 @@ En la tabla siguiente se resumen las opciones de configuración y sus valores pr
 |Característica|Datos confidenciales|Power User|Estándar|
 |---|:---:|:---:|:---:|
 |**Bloquear Storage**|Sí|Sí|No|
-|**[Nivel de bloque de nube](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|Alto|Alto|Alto|
+|**[Nivel de bloque de nube](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel)**|Alto|Alto|Alto|
 |**Deshabilitar cuentas de Microsoft**|Sí|Sí|No|
 |**Deshabilitar las OneDrive**|Sí|Sí|No|
-|**Cambiar a escritorio seguro para elevación**|No|Sí|No|
+|**[Cambiar a escritorio seguro para elevación](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation)**|No|Sí|No|
 |**Etiqueta de dispositivo de Microsoft Defender para endpoint**|M365Managed-SensitiveData|M365Managed-PowerUser|M365Managed-Standard|
 |**¿Administrador en el dispositivo?**|No|Sí|No|
 |**Perfil de Autopilot**|MMD Standard|Usuario de MMD Power|MMD Standard|
@@ -64,8 +64,8 @@ En la tabla siguiente se resumen las opciones de configuración y sus valores pr
 
 Cada perfil de dispositivo también implica estos elementos:
 
-- Un grupo de dispositivos Azure Active Directory de pertenencia dinámica (AAD)
-- Un grupo de dispositivos AAD de pertenencia estática
+- Un grupo de dispositivos Azure Active Directory (AAD) de pertenencia dinámica
+- Una pertenencia estática AAD grupo de dispositivos
 - Un Microsoft Endpoint Manager de configuración
 
 > [!IMPORTANT]
