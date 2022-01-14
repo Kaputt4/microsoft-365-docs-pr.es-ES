@@ -1,24 +1,24 @@
 ---
 title: Requisitos del dispositivo
-description: Resumen de los requisitos mínimos de hardware y software para que los dispositivos funcionen con Escritorio administrado de Microsoft
+description: Resumen de los requisitos mínimos de hardware y software para que los dispositivos funcionen con Microsoft Managed Desktop
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 1ce5f0c3782b8e8082d0e1ede53339a190b7259f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b27ad8f4781621a9517507e312feb9be0aa310a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209470"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034562"
 ---
 # <a name="device-requirements"></a>Requisitos del dispositivo
 
-Escritorio administrado de Microsoft evalúa periódicamente los requisitos del dispositivo para incluirse en el servicio. En este artículo se describen los requisitos de hardware y software que debe cumplir un dispositivo para poder trabajar con Escritorio administrado de Microsoft. Puedes revisar una lista de dispositivos específicos ya aprobados para su uso con el servicio en función de estos requisitos. Filtrar por Escritorio administrado de Microsoft en el sitio [De Windows Pro de dispositivos empresariales](https://www.microsoft.com/en-us/windows/business/devices)
+Microsoft Managed Desktop evalúa periódicamente los requisitos del dispositivo que se incluirán en el servicio. En este artículo se describen los requisitos de hardware y software que debe cumplir un dispositivo para poder trabajar con Microsoft Managed Desktop. Puedes revisar una lista de dispositivos específicos ya aprobados para su uso con el servicio en función de estos requisitos. Filtro de Escritorio administrado de Microsoft en el sitio [de Windows Pro de dispositivos empresariales](https://www.microsoft.com/en-us/windows/business/devices)
 
 > [!NOTE]
 > Estos requisitos pueden cambiar en cualquier momento, pero proporcionaremos un aviso de 30 días de cualquier cambio en los requisitos de hardware. Los requisitos modificados más recientemente se marcan con <b>\*</b> . 
@@ -29,7 +29,7 @@ Además de revisar las especificaciones del dispositivo, también puedes usar el
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
-Para inscribirse en Escritorio administrado de Microsoft, un dispositivo debe cumplir o superar todos estos requisitos.
+Para inscribirse en Microsoft Managed Desktop, un dispositivo debe cumplir o superar todos estos requisitos.
 
 ### <a name="manufacturer"></a>Fabricante
 
@@ -59,7 +59,7 @@ Los dispositivos deben tener estas capacidades:
 - Compatible con la seguridad basada en virtualización 
 - [Integridad de código protegida por hipervisor](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) compatible con el BIOS
 
-Para obtener más información sobre estas capacidades y las tecnologías relacionadas con ellas que usa el servicio, [vea Escritorio administrado de Microsoft technologies](../intro/technologies.md).
+Para obtener más información sobre estas capacidades y las tecnologías relacionadas con ellas que usa el servicio, vea [Tecnologías de Escritorio administrado de Microsoft](../intro/technologies.md).
 
 > [!NOTE]
 >- ARM procesadores no son compatibles.

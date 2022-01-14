@@ -3,28 +3,28 @@ title: Registro de diagnóstico
 description: Registros que pueden recopilarse de dispositivos durante la solución de problemas y cómo se almacenan
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 5c890ea42da4bb13c163e7b8b123080e0264d025
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 62c96c4badd9659879bad81a631a496423259754
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201534"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035647"
 ---
 # <a name="diagnostic-logs"></a>Registro de diagnóstico
 
-Cuando solucionemos un problema en un dispositivo administrado por Escritorio administrado de Microsoft, ya sea uno que haya notificado o uno identificado por nuestro servicio, es posible que tendrán que recopilar ciertos registros de diagnóstico del dispositivo sin intervención del usuario. No recopilamos ningún contenido o información generado por el usuario de directorios de usuario. Solo recopilamos datos de diagnóstico y registro que tienen que ver con el estado y el estado del dispositivo.
+Cuando solucionemos un problema en un dispositivo administrado por Microsoft Managed Desktop, ya sea uno que haya notificado o uno identificado por nuestro servicio, es posible que tendrán que recopilar determinados registros de diagnóstico del dispositivo sin intervención del usuario. No recopilamos ningún contenido o información generado por el usuario de directorios de usuario. Solo recopilamos datos de diagnóstico y registro que tienen que ver con el estado y el estado del dispositivo.
 
 Almacenamos los registros recopilados durante 28 días y, a continuación, los eliminamos. Procesamos los registros recopilados desde un dispositivo siguiendo nuestros [estándares de tratamiento de datos.](privacy-personal-data.md)
 
 ## <a name="data-collected"></a>Datos recopilados
 
-Esta lista incluye todas las carpetas, registros de eventos, ejecutables o ubicaciones del Registro de las que Escritorio administrado de Microsoft recopilar registros de diagnóstico. Los datos reales recopilados serán un subconjunto de esta lista y dependen del problema identificado.
+Esta lista incluye todas las carpetas, registros de eventos, ejecutables o ubicaciones del Registro de las que Microsoft Managed Desktop puede recopilar registros de diagnóstico. Los datos reales recopilados serán un subconjunto de esta lista y dependen del problema identificado.
 
 ### <a name="registry-keys"></a>Claves del Registro
 
@@ -93,14 +93,14 @@ Esta lista incluye todas las carpetas, registros de eventos, ejecutables o ubica
 
 - Aplicación
 - Microsoft-Windows-AppLocker/EXE y DLL
-- Microsoft-Windows-AppLocker/MSI y Script
+- Microsoft-Windows-AppLocker/MSI y script
 - Microsoft-Windows-AppLocker/Packaged app-Deployment
 - Microsoft-Windows-AppLocker/Packaged app-Execution
-- Administración de Microsoft-Windows-Bitlocker/Bitlocker
+- Administración de Microsoft-Windows-Bitlocker/BitLocker
 - Microsoft-Windows-SENSE/Operational
 - Microsoft-Windows-SenseIR/Operational
-- Configuración
-- System
+- Instalación
+- Sistema
 
 ### <a name="files"></a>Archivos
 

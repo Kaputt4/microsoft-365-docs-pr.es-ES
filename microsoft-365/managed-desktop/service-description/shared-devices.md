@@ -3,18 +3,18 @@ title: Dispositivos compartidos
 description: Cómo y cuándo usar el modo de dispositivo compartido
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 6b022551db4b3ca759ffb6d1f9eae184b64e0683
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: fd0eae34c5ca48168587a3e495d34ab329cb05a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756208"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034538"
 ---
 # <a name="shared-devices"></a>Dispositivos compartidos
 
@@ -57,7 +57,7 @@ Si tienes un socio inscribir dispositivos, sigue los pasos descritos en [Pasos](
 |Perfil de dispositivo  |Etiqueta de grupo (modo estándar)  |Etiqueta de grupo (modo de dispositivo compartido)  |
 |---------|---------|---------|
 |Fecha confidencial | Microsoft365Managed_SensitiveData        |  Microsoft365Managed_SensitiveData-Shared       |
-| Power user         | Microsoft365Managed_PowerUser        | No se admite        |
+| Power user         | Microsoft365Managed_PowerUser        | No admitido        |
 |Estándar     | Microsoft365Managed_Standard        | Microsoft365Managed_Standard-Shared  |
 
 ## <a name="consequences-of-shared-device-mode"></a>Consecuencias del modo de dispositivo compartido
@@ -79,7 +79,7 @@ El modo de dispositivo compartido quita las cuentas que no han iniciado sesión 
 
 Los dispositivos en modo de dispositivo compartido solo permiten cuentas unidas a un dominio. Si necesitas cuentas de invitado en un dispositivo, puedes presentar una solicitud de [cambio](../working-with-managed-desktop/admin-support.md) para solicitar que se habiliten.
 
-### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps para empresas
+### <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
 [Aplicaciones Microsoft 365 para empresas](/microsoft-365/managed-desktop/get-started/m365-apps) permite a un usuario determinado instalar esas aplicaciones en solo cinco dispositivos al mismo tiempo. En el modo de dispositivo compartido, las aplicaciones no cuentan con el límite, por lo que pueden usarlas mientras se roaming entre dispositivos. La implementación y las actualizaciones de Aplicaciones Microsoft 365 para empresas funcionan como de costumbre.
 

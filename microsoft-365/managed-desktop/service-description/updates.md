@@ -1,31 +1,31 @@
 ---
-title: Cómo se controlan las actualizaciones en Escritorio administrado de Microsoft
-description: Mantener Escritorio administrado de Microsoft actualizado es un equilibrio entre velocidad y estabilidad.
+title: Cómo se controlan las actualizaciones en Microsoft Managed Desktop
+description: Mantener el escritorio administrado de Microsoft actualizado es un equilibrio entre velocidad y estabilidad.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 992ad102e07dbbca5aa0e1e4243ebade268906b1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2a2b4d4b5a4b4aa2344368344168809949a48847
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211374"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035515"
 ---
-# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se controlan las actualizaciones en Escritorio administrado de Microsoft
+# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se controlan las actualizaciones en Microsoft Managed Desktop
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/update-rings); do not delete.-->
 
 <!--Update management -->
 
-Escritorio administrado de Microsoft conecta todos los dispositivos a una infraestructura moderna basada en la nube. Mantener Windows, Office, controladores, firmware y Microsoft Store para Empresas aplicaciones actualizadas es un equilibrio entre velocidad y estabilidad. Usamos grupos de actualizaciones para garantizar que las directivas y actualizaciones del sistema operativo se revierte de forma segura. Para obtener más información, vea el vídeo [Escritorio administrado de Microsoft Proceso de cambio y lanzamiento](https://www.microsoft.com/videoplayer/embed/RE4mWqP). 
+Microsoft Managed Desktop conecta todos los dispositivos a una infraestructura moderna basada en la nube. Mantener Windows, Office, controladores, firmware y Microsoft Store para Empresas aplicaciones actualizadas es un equilibrio entre velocidad y estabilidad. Usamos grupos de actualizaciones para garantizar que las directivas y actualizaciones del sistema operativo se revierte de forma segura. Para obtener más información, vea el vídeo [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP). 
 
 Las actualizaciones publicadas por Microsoft son acumulativas y se clasifican como actualizaciones de calidad o características.
 Para obtener más información, [vea Windows Update for Business: Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types). 
@@ -33,26 +33,26 @@ Para obtener más información, [vea Windows Update for Business: Update types](
 ## <a name="update-groups"></a>Actualizar grupos
 
 
-Escritorio administrado de Microsoft cuatro grupos de Azure AD para administrar actualizaciones:
+Microsoft Managed Desktop usa cuatro Azure AD para administrar actualizaciones:
 
-- **Prueba:** se usa para validar Escritorio administrado de Microsoft de directiva, actualizaciones del sistema operativo, actualizaciones de características y otros cambios que se insertan en la organización de Azure AD ("inquilino"). Lo mejor para las pruebas o los usuarios que pueden proporcionar comentarios anticipados. El grupo de prueba está exento de los acuerdos de nivel de servicio establecidos y la compatibilidad con usuarios. Este grupo está disponible para su uso para validar la compatibilidad de aplicaciones con nuevos cambios en la directiva o el sistema operativo.  
+- **Prueba:** se usa para validar los cambios de directiva de Escritorio administrado de Microsoft, las actualizaciones del sistema operativo, las actualizaciones de características y otros cambios que se insertan en la organización Azure AD ("inquilino"). Lo mejor para las pruebas o los usuarios que pueden proporcionar comentarios anticipados. El grupo de prueba está exento de los acuerdos de nivel de servicio establecidos y la compatibilidad con usuarios. Este grupo está disponible para su uso para validar la compatibilidad de aplicaciones con nuevos cambios en la directiva o el sistema operativo.  
 - **En** primer lugar: contiene los primeros usuarios y dispositivos de software que podrían estar sujetos a actualizaciones previas a la versión. Los dispositivos de este grupo pueden experimentar interrupciones si hay escenarios que no se han cubierto durante las pruebas en el anillo de prueba.
 - **Rápido:** prioriza la velocidad sobre la estabilidad. Es útil para detectar problemas de calidad antes de ofrecerlos al grupo Broad. Este grupo sirve como una siguiente capa de validación, pero normalmente es más estable que los grupos Test y First. 
-- **Broad:** último grupo que tiene actualizaciones de características y calidad disponibles. Este grupo contiene la mayoría de los usuarios de la organización de Azure AD y, por lo tanto, favorece la estabilidad sobre la velocidad de implementación. Las pruebas de aplicaciones deben realizarse aquí, ya que el entorno es más estable.
+- **Broad:** último grupo que tiene actualizaciones de características y calidad disponibles. Este grupo contiene la mayoría de los usuarios de la Azure AD y, por lo tanto, favorece la estabilidad sobre la velocidad de implementación. Las pruebas de aplicaciones deben realizarse aquí, ya que el entorno es más estable.
 
 ### <a name="moving-devices-between-update-groups"></a>Mover dispositivos entre grupos de actualización
 Es posible que quieras que algunos dispositivos reciban actualizaciones en último lugar y otros que quieras ir primero. Para mover estos dispositivos al grupo de actualización adecuado, consulte [Asignar dispositivos a un grupo de implementación.](../working-with-managed-desktop/assign-deployment-group.md)
 
-Para obtener más información sobre roles y responsabilidades dentro de estos grupos de implementación, [vea Escritorio administrado de Microsoft Roles y responsabilidades](../intro/roles-and-responsibilities.md)
+Para obtener más información sobre roles y responsabilidades dentro de estos grupos de implementación, vea [Roles y responsabilidades](../intro/roles-and-responsibilities.md) de escritorio administrado de Microsoft
 
-### <a name="using-microsoft-managed-desktop-update-groups"></a>Usar Escritorio administrado de Microsoft actualizar grupos 
+### <a name="using-microsoft-managed-desktop-update-groups"></a>Uso de grupos de actualización de Escritorio administrado de Microsoft 
 Hay partes del servicio que administras, como la implementación de aplicaciones, donde es posible que sea necesario dirigirte a todos los dispositivos administrados.
 
 ## <a name="how-update-deployment-works"></a>Cómo funciona la implementación de actualización:
-1. Escritorio administrado de Microsoft implementa una nueva característica o actualización de calidad de acuerdo con la programación especificada en la tabla siguiente.
-2. Durante la implementación, Escritorio administrado de Microsoft monitores en busca de signos de error o interrupción en función de los datos de diagnóstico y el sistema de soporte técnico del usuario. Si se detecta alguna, pausamos inmediatamente la implementación en todos los grupos actuales y futuros.
+1. Microsoft Managed Desktop implementa una nueva característica o actualización de calidad de acuerdo con la programación especificada en la tabla siguiente.
+2. Durante la implementación, Microsoft Managed Desktop supervisa si hay signos de error o interrupción en función de los datos de diagnóstico y el sistema de soporte técnico del usuario. Si se detecta alguna, pausamos inmediatamente la implementación en todos los grupos actuales y futuros.
     - Ejemplo: si se detecta un problema al implementar una actualización de calidad en el grupo First, las implementaciones de actualización a First, Fast y Broad se pausarán hasta que se mitigue el problema.
-    - Puede notificar problemas de compatibilidad mediante la presentación de un vale en el portal Escritorio administrado de Microsoft administración.
+    - Puede notificar problemas de compatibilidad mediante la presentación de un vale en el portal de administración de Escritorio administrado de Microsoft.
     - Las actualizaciones de características y calidad se pausan de forma independiente. La pausa está en vigor durante 35 días de forma predeterminada, pero puede reducirse o extenderse en función de si se mitiga el problema.
 3. Una vez que los grupos no se usan, la implementación se reanuda de acuerdo con la programación de la tabla.
 4. Los usuarios tienen la capacidad de responder a las notificaciones de reinicio durante un período establecido (conocido como fecha límite y medido desde el momento en que se ofrece la actualización al dispositivo), durante el cual el dispositivo solo se reiniciará automáticamente fuera del horario activo. Una vez expirado este período, se ha alcanzado la fecha límite y el dispositivo se reiniciará en la próxima oportunidad disponible, independientemente de las horas activas. La fecha límite para las actualizaciones de calidad es de tres días; para las actualizaciones de características es de cinco días.
@@ -73,15 +73,15 @@ Este proceso de implementación se aplica a las actualizaciones de característi
 </table>
 
 >[!NOTE]
->Estos períodos de aplazamiento están diseñados intencionadamente para garantizar altos estándares de seguridad y rendimiento para todos los usuarios. Además, basándose en los datos recopilados en todos los dispositivos Escritorio administrado de Microsoft y en el alcance y el impacto de las actualizaciones, Escritorio administrado de Microsoft se reserva flexibilidad para modificar la longitud de los períodos de aplazamiento anteriores para todos y cada uno de los grupos de implementación de forma ad hoc.
+>Estos períodos de aplazamiento están diseñados intencionadamente para garantizar altos estándares de seguridad y rendimiento para todos los usuarios. Además, en función de los datos recopilados en todos los dispositivos de Escritorio administrado de Microsoft y el alcance y el impacto de las actualizaciones, Microsoft Managed Desktop se reserva flexibilidad para modificar la longitud de los períodos de aplazamiento anteriores para todos y cada uno de los grupos de implementación de forma ad hoc.
 >
->Escritorio administrado de Microsoft realiza una evaluación independiente de cada versión Windows de características para evaluar su necesidad y utilidad para sus inquilinos administrados. Por lo tanto, Escritorio administrado de Microsoft implementar o no todas las actualizaciones Windows características. 
+>Microsoft Managed Desktop realiza una evaluación independiente de cada versión Windows de características para evaluar su necesidad y utilidad para sus inquilinos administrados. Por lo tanto, Microsoft Managed Desktop podría o no implementar todas las actualizaciones Windows características. 
 
 ## <a name="windows-insider-program"></a>Programa Windows Insider
 
-Escritorio administrado de Microsoft no admite dispositivos que forman parte del programa Windows Insider. El Windows Insider se usa para validar el software de Windows versión previa y está pensado para dispositivos que no son críticos. Aunque es una iniciativa importante de Microsoft, no está diseñada para una implementación amplia en entornos de producción. 
+Microsoft Managed Desktop no admite dispositivos que forman parte del programa Windows Insider. El Windows Insider se usa para validar el software de Windows versión previa y está pensado para dispositivos que no son críticos. Aunque es una iniciativa importante de Microsoft, no está diseñada para una implementación amplia en entornos de producción. 
 
-Los dispositivos que se encuentran con Windows compilaciones de Insider podrían colocarse en el grupo de pruebas y estarán exentos de actualizar los contratos de nivel de servicio y el soporte del usuario de Escritorio administrado de Microsoft.
+Los dispositivos que se encuentran con Windows compilaciones de Insider podrían colocarse en el grupo de pruebas y estarán exentos de actualizar los contratos de nivel de servicio y el soporte del usuario del Escritorio administrado de Microsoft.
 
 ## <a name="bandwidth-management"></a>Administración de ancho de banda
 

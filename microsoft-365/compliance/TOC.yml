@@ -78,7 +78,7 @@
           href: communication-compliance-reports-audits.md
         - name: Cumplimiento de comunicaciones con soluciones de SIEM
           href: communication-compliance-siem.md
-        - name: 'Caso práctico: Contoso configura rápidamente una directiva de contenido inapropiado'
+        - name: 'Caso práctico: Contoso configura rápidamente una directiva de texto inapropiado'
           href: communication-compliance-case-study.md
     - name: Administración de riesgos internos
       items:

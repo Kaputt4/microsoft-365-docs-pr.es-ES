@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo los administradores pueden elimina
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 89022e39aef17609774c90696e7bab54e66a95e0
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: c349166477b610e48fd3a1b63c27d4dd4188012c
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421659"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041071"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
@@ -237,7 +237,7 @@ Para ver el valor de la *propiedad ComplianceTagHoldApplied,* ejecute el siguien
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Después de identificar que un buzón está en espera porque se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar elementos etiquetados mediante la condición **Etiqueta** de retención. Para más información, vea:
+Después de identificar que un buzón está en espera porque se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar elementos etiquetados mediante la condición **Etiqueta** de retención. Para más información, consulte lo siguiente:
 
 - La sección "Uso de búsqueda de contenido para buscar todo el contenido con una etiqueta de retención específica" en Información sobre directivas de [retención y etiquetas de retención](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 
@@ -297,16 +297,14 @@ Este es un resumen del proceso para buscar y eliminar elementos en la carpeta El
 
    - **Eliminaciones:** contiene elementos eliminados temporalmente cuyo período de retención de elementos eliminados no ha expirado. Los usuarios pueden recuperar elementos eliminados temporalmente de esta subcarpeta mediante la herramienta Recuperar elementos eliminados en Outlook.
 
-   - **Purgas:** contiene elementos eliminados de forma permanente cuyo período de retención de elementos eliminados ha expirado. Los usuarios también pueden eliminar de forma permanente los elementos de su carpeta Elementos recuperables. Si el buzón está en espera, se conservan los elementos eliminados de forma permanente. Esta subcarpeta no es visible para los usuarios finales.
-
    - **DiscoveryHolds:** contiene elementos eliminados de forma permanente que se han conservado mediante una retención de exhibición de documentos electrónicos o una directiva de retención. Esta subcarpeta no es visible para los usuarios finales.
 
    - **SubstrateHolds:** contiene elementos eliminados de forma permanente de Teams y otras aplicaciones basadas en la nube que se han conservado mediante una directiva de retención u otro tipo de retención. Esta subcarpeta no es visible para los usuarios finales.
 
-3. Use el cmdlet **New-ComplianceSearch** (en PowerShell del Centro de seguridad & cumplimiento) o use la herramienta de búsqueda de contenido en el centro de cumplimiento para crear una búsqueda de contenido que devuelva elementos de la carpeta Elementos recuperables del usuario de destino. Para ello, incluya FolderId en la consulta de búsqueda de todas las subcarpetas que desee buscar. Por ejemplo, la siguiente consulta devuelve todos los mensajes de las subcarpetas Purgas y eDiscoveryHolds:
+3. Use el cmdlet **New-ComplianceSearch** (en PowerShell del Centro de seguridad & cumplimiento) o use la herramienta de búsqueda de contenido en el centro de cumplimiento para crear una búsqueda de contenido que devuelva elementos de la carpeta Elementos recuperables del usuario de destino. Para ello, incluya FolderId en la consulta de búsqueda de todas las subcarpetas que desee buscar. Por ejemplo, la siguiente consulta devuelve todos los mensajes de las subcarpetas Eliminaciones y eDiscoveryHolds:
 
    ```text
-   folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
+   folderid:<folder ID of Deletions subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
    Para obtener más información y ejemplos sobre cómo ejecutar búsquedas de contenido que usan la propiedad id. de carpeta, vea [Use a folder ID or to perform a targeted collection](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
@@ -348,7 +346,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Paso 6: Revertir el buzón a su estado anterior
 
-El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Esto incluye:
+El último paso es revertir el buzón a su configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las retenciones que quitó en el paso 3. Esto incluye lo siguiente:
   
 - Cambiar el período de retención de elementos eliminados a su valor anterior. Como alternativa, puede dejar este conjunto en 30 días, el valor máximo en Exchange Online.
 

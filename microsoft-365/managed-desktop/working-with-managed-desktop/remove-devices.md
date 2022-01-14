@@ -1,26 +1,26 @@
 ---
 title: Quitar dispositivos
-description: Quitar dispositivos de Escritorio administrado de Microsoft administración
+description: Quitar dispositivos de la administración de Escritorio administrado de Microsoft
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7da1bac830df352e776d9a9f59dc33cf5a22b8ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 79694b6c33543acc00636676891ee336bce3f8f8
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169880"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034934"
 ---
 # <a name="remove-devices"></a>Quitar dispositivos
 
-Puedes quitar dispositivos de Escritorio administrado de Microsoft administración mediante el portal de administración. Esta acción es permanente, pero puede volver a registrarlas con Escritorio administrado de Microsoft siguiendo los pasos [de registro](../get-started/register-devices-self.md).
+Puede quitar dispositivos de la administración de Escritorio administrado de Microsoft mediante el portal de administración. Esta acción es permanente, pero puede volver a registrarlas en el Escritorio administrado de Microsoft siguiendo los pasos [de registro.](../get-started/register-devices-self.md)
 
 Al quitar un dispositivo, se produce lo siguiente:
 
@@ -35,9 +35,9 @@ Cuando quitas un dispositivo, también tienes la opción de quitarlo de Azure Ac
 
 1. En [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), seleccione **Dispositivos** en el panel de navegación izquierdo.
 2. Busque la sección **Escritorio administrado de Microsoft** del menú y seleccione **Dispositivos**.
-3. En el área Escritorio administrado de Microsoft de trabajo Dispositivos, seleccione los dispositivos que desea eliminar.
+3. En el área de trabajo Dispositivos de escritorio administrados de Microsoft, seleccione los dispositivos que desea eliminar.
 4. Selecciona **Acciones de dispositivo** y, a continuación, selecciona Eliminar **dispositivo** que abre un fly-in para quitar los dispositivos.
-5. En el menú desplegable, revise los dispositivos seleccionados y, a continuación, seleccione **Quitar dispositivos**. Si también desea quitar los objetos de Azure AD e Intune al mismo tiempo, active la casilla. La eliminación del dispositivo puede tardar unos minutos en completarse.
+5. En el menú desplegable, revise los dispositivos seleccionados y, a continuación, seleccione **Quitar dispositivos**. Si también quieres quitar los objetos Azure AD Intune al mismo tiempo, activa la casilla. La eliminación del dispositivo puede tardar unos minutos en completarse.
 
 > [!NOTE]
 > No puedes quitar dispositivos que estén en un **estado de registro** pendiente.

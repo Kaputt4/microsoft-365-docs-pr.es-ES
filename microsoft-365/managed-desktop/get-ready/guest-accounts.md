@@ -3,30 +3,30 @@ title: Requisitos previos para las cuentas de invitado
 description: Directrices de configuración para cuentas de invitado y cómo ajustarlas
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: db07ca3bb7577aed7b334ba21893f6fe026819a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 64b0acabf76e1ceb12bd056b02cb2b949df9c957
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197142"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035045"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Requisitos previos para las cuentas de invitado
 
 ## <a name="external-collaboration-settings"></a>Configuración de la colaboración externa
 
-Escritorio administrado de Microsoft recomienda la siguiente configuración en la organización de Azure AD para el acceso a la cuenta de invitado. Puede ajustar esta configuración en [Azure Portal](https://portal.azure.com) en **Identidades externas / Configuración de colaboración externa:**
+Microsoft Managed Desktop recomienda la siguiente configuración en su Azure AD para el acceso a la cuenta de invitado. Puede ajustar esta configuración en [Azure Portal](https://portal.azure.com) en **Identidades externas / Configuración de colaboración externa:**
 
 -   Para **el acceso de usuarios invitados,** los usuarios invitados tienen acceso limitado a propiedades y **pertenencias de objetos de directorio**
 -   Para **la configuración de invitación de** invitado , establecer en Usuarios miembros y usuarios asignados a roles de administrador específicos pueden invitar a usuarios invitados, incluidos los **invitados con permisos de miembro**
 
-Escritorio administrado de Microsoft requiere la siguiente configuración en la organización de Azure AD para el acceso a la cuenta de invitado. Puede ajustar esta configuración en [Azure Portal](https://portal.azure.com) en **Identidades externas / Configuración de colaboración externa:**
+Microsoft Managed Desktop requiere la siguiente configuración en su Azure AD para el acceso a la cuenta de invitado. Puede ajustar esta configuración en [Azure Portal](https://portal.azure.com) en **Identidades externas / Configuración de colaboración externa:**
 
 -   **Restricciones de colaboración,** elija cualquiera de estas opciones:
     -   Si selecciona Permitir **que las invitaciones se envíen a cualquier dominio (más inclusivo),** no se requiere ninguna otra configuración.
@@ -39,7 +39,7 @@ Para obtener más información, vea [Habilitar la colaboración externa B2B y ad
 
 ## <a name="unlicensed-intune-admin"></a>Administrador de Intune sin licencia
 
-La **configuración Permitir el acceso a administradores** sin licencia debe estar habilitada. Sin esta configuración habilitada, se pueden producir errores cuando intentamos tener acceso a la organización de Azure AD para el servicio. Puede habilitar esta configuración de forma segura sin preocuparse por las implicaciones de seguridad, ya que el ámbito de acceso lo definen los roles asignados a los usuarios, incluido nuestro personal de operaciones.
+La **configuración Permitir el acceso a administradores** sin licencia debe estar habilitada. Sin esta configuración habilitada, pueden producirse errores cuando intentamos tener acceso a su Azure AD organización para el servicio. Puede habilitar esta configuración de forma segura sin preocuparse por las implicaciones de seguridad, ya que el ámbito de acceso lo definen los roles asignados a los usuarios, incluido nuestro personal de operaciones.
 
 Para habilitar esta configuración, siga estos pasos:
 
@@ -52,7 +52,7 @@ Para habilitar esta configuración, siga estos pasos:
 
 Para obtener más información, vea [Administradores sin licencia en Microsoft Intune](/mem/intune/fundamentals/unlicensed-admins).
 
-## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para El escritorio administrado de Microsoft
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
 2. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).

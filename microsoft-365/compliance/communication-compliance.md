@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 83614f0c12b58206c8b9d6f779a73c901ebbcecf
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: ab331c9e93799290348d60ede4e814f3f12675fc
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647419"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034598"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -49,6 +49,8 @@ Para obtener las últimas presentaciones de Ignite para el cumplimiento de las c
 Para obtener una introducción rápida al cumplimiento de las comunicaciones, vea el artículo Detectar acoso en el lugar de trabajo y responder con el cumplimiento de la comunicación [en Microsoft 365](https://youtu.be/z33ji7a7Zho) vídeo en el canal de [Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
 Consulte cómo [TD Securities usa](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) el cumplimiento de comunicaciones para satisfacer sus obligaciones reglamentarias y satisfacer sus necesidades de seguridad y estabilidad.
+
+Para mantenerse al día con las últimas actualizaciones de cumplimiento de comunicaciones, seleccione **Novedades** en el cumplimiento [de la comunicación](https://compliance.microsoft.com/) para su organización.
 
 ## <a name="scenarios-for-communication-compliance"></a>Situaciones para el Cumplimiento de comunicaciones
 
@@ -137,7 +139,8 @@ En este paso de flujo de trabajo, identificará los requisitos de cumplimiento y
 
 Puede elegir entre las siguientes plantillas de directiva del Centro de cumplimiento de Microsoft 365:
 
-- **Supervisar el contenido** inadecuado: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente contenido que puede considerarse inapropiado, abusivo u ofensivo.
+- **Supervisar** texto inadecuado: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente texto en mensajes que pueden considerarse inapropiados, abusivos u ofensivos.
+- **Supervisar** imágenes inapropiadas: use esta plantilla para crear rápidamente una directiva que use clasificadores integrados para detectar automáticamente contenido que contiene imágenes de adultos y rizado que pueden considerarse inadecuadas en su organización.
 - **Supervisar** la información confidencial: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones que contienen palabras clave o tipos de información confidencial definidos para asegurarse de que los datos importantes no se compartan con personas que no deberían tener acceso.
 - **Supervisar el cumplimiento normativo** financiero: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones en busca de referencias a términos financieros estándar asociados con estándares normativos.
 - **Supervisar conflictos de interés:** use esta plantilla para crear rápidamente una directiva para supervisar las comunicaciones entre dos grupos o dos usuarios para ayudar a evitar conflictos de interés.

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 4588ef4ead22ebae147ea7fdae1d3dafaa3ca1dc
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 18b56a4e427053f29dcc054ec9384b4e34307c40
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426440"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034622"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -214,9 +214,12 @@ Las condiciones son inclusivas y son donde se define lo que desea que busque la 
 
 según las [ubicación(s)](#location-support-for-how-content-can-be-defined) a las que elija aplicar la directiva. 
 
-Los SIT tienen un nivel de confianza [**predefinido**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) que puede modificar si es necesario. Para obtener más información, vea [Más información sobre los niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels). Los SIT también tienen un intervalo predefinido de repeticiones de un SIT que debe  encontrarse para que coincida con la regla, por ejemplo, si el intervalo de recuento de instancias se establece de uno a nueve, el SIT debe producirse al menos una vez y hasta nueve veces para que la regla coincida.
-
 La regla solo buscará la presencia de las etiquetas de confidencialidad y **las** etiquetas **de retención** que elija. 
+
+Los SIT tienen un nivel de confianza [**predefinido**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) que puede modificar si es necesario. Para obtener más información, vea [Más información sobre los niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+
+> [!IMPORTANT]
+> Los SIT tienen dos formas diferentes de definir los parámetros de recuento de instancias únicos máximos. Para obtener más información, consulte [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 #### <a name="condition-context"></a>Contexto de condición
 
@@ -596,7 +599,7 @@ DLP examina el correo electrónico de forma diferente que SharePoint online o On
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla. 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

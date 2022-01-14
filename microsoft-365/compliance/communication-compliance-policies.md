@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 96cce3c715cb282db2ce1718440b13e43f5145b6
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 5078943e9b2bf158a457d263b2db65e9bfca7659
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60702054"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034997"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -40,10 +40,11 @@ Las plantillas de directiva son configuraciones de directiva predefinidas que pu
 
 |**Área**|**Plantilla de directiva**|**Detalles**|
 |:-----|:-----|:-----|
-| **Contenido inadecuado** | Supervisar las comunicaciones en busca de contenido inadecuado | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 100% <br> - Condiciones: amenaza, profanidad, hostigamiento dirigido, imágenes para adultos, imágenes racy y clasificadores de imágenes gory |
-| **Información confidencial** | Supervisar las comunicaciones para obtener información confidencial | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 10% <br> - Condiciones: información confidencial, patrones de contenido y tipos integrados, opción de diccionario personalizado, datos adjuntos de más de 1 MB |
-| **Cumplimiento normativo** | Supervisar las comunicaciones para obtener información relacionada con el cumplimiento normativo financiero | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente <br> - Porcentaje de revisión: 10% <br> - Condiciones: opción de diccionario personalizado, datos adjuntos de más de 1 MB |
-| **Conflicto de intereses** | Supervisar las comunicaciones entre dos grupos o dos usuarios para ayudar a evitar conflictos de interés | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: interna <br> - Porcentaje de revisión: 100% <br> - Condiciones: Ninguna |
+| **Texto inapropiado** | Detectar texto inadecuado | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 100% <br> - Condiciones: amenazas, discriminación (versión preliminar) y clasificadores de hostigamiento dirigido |
+| **Imágenes inapropiadas** | Detectar imágenes inapropiadas | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 100% <br> - Condiciones: clasificadores de imágenes para adultos y racy |
+| **Información confidencial** | Supervisar la información confidencial | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 10% <br> - Condiciones: información confidencial, patrones de contenido y tipos integrados, opción de diccionario personalizado, datos adjuntos de más de 1 MB |
+| **Cumplimiento normativo** | Supervisar el cumplimiento normativo | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente <br> - Porcentaje de revisión: 10% <br> - Condiciones: opción de diccionario personalizado, datos adjuntos de más de 1 MB |
+| **Conflicto de intereses** | Supervisar si hay conflictos de interés | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: interna <br> - Porcentaje de revisión: 100% <br> - Condiciones: Ninguna |
 
 Las comunicaciones se examinan cada 24 horas a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de contenido inadecuado a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada 24 horas a las 11:00 a.m. al día. La edición de una directiva no cambia esta vez. Para ver la última fecha y hora de examen de una directiva, vaya a la columna Último *examen de* directivas de la **página** Directiva. Después de crear una nueva directiva, puede tardar hasta 24 horas en ver la primera fecha y hora del examen de directivas. La fecha y la hora del último examen se convierten en la zona horaria del sistema local.
 

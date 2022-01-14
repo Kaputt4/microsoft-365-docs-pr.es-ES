@@ -3,18 +3,18 @@ title: Ordenar dispositivos en Microsoft Managed Desktop
 description: Cómo pedir dispositivos
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 91c09f6048f773fa4cd3b2daac4681efa106c113
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: dba92f887899dbbf49935bd4d3b959df632e30be
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364572"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034886"
 ---
 # <a name="order-microsoft-managed-desktop-devices"></a>Ordenar dispositivos de Escritorio administrado de Microsoft
 

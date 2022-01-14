@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15fbe01678a23de43d61705f2be96e7885f3b406
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 893ec2b7acfc9eddc75d803c297dd40f3c02a674
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941893"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041116"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -78,7 +78,7 @@ Se admiten las tres versiones principales más recientes de macOS.
 > [!IMPORTANT]
 > En macOS 11 (Big Sur) y posteriores, Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en Nuevos perfiles de configuración para [macOS Catalina](mac-sysext-policies.md)y versiones más recientes de macOS .
 
-- 12 (Monterrey), 11 (Big Sur), 10,15 (Catalina), 10,14 (Mojave)
+- 12 (Monterrey), 11 (Big Sur), 10,15 (Catalina)
 - Espacio en disco: 1 GB
 
 No se admiten versiones beta de macOS.
@@ -111,7 +111,7 @@ Al agregar exclusiones, tenga en cuenta los errores de [exclusión comunes para 
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL, o puede que necesite crear una regla de permitir específicamente para ellas.
 
-|Hoja de cálculo de la lista de dominios|Description|
+|Hoja de cálculo de la lista de dominios|Descripción|
 |---|---|
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de cálculo aquí: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 

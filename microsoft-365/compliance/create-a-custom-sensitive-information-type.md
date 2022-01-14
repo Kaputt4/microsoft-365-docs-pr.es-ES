@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a091608f7741b279b06a6289fb97b521976fc9ea
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 08d3f0604516da2c31ca3a1cb6a1a3f2e2ed9dc9
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531890"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035057"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -115,6 +115,28 @@ Para garantizar un alto rendimiento y una latencia inferior, existen limitacione
 
 > [!NOTE] 
 > Si tienes una empresa que necesita crear más de 500 SIT personalizados, genera un vale de soporte técnico.
+
+### <a name="instance-count-supported-values-for-sit"></a>Valores admitidos de recuento de instancias para SIT
+
+El límite de recuento de instancias SIT se aplica cuando los SIT se usan en estas soluciones:
+
+- Directivas DLP
+- Protección de la información
+- Gobierno de la información
+- Cumplimiento de la comunicación
+- Records Management
+- Microsoft Cloud App Security
+- Administración de privacidad
+
+Para que un elemento analizado cumpla los criterios de regla, el número de instancias únicas de un SIT en cualquier elemento único debe estar entre los valores mínimo y máximo. Esto se denomina recuento **de instancias**.
+
+- **Campo** mínimo: el límite inferior (número mínimo) de instancias únicas de un SIT que se deben encontrar en un elemento para desencadenar una coincidencia. El campo min admite valores de:
+    - De 1 a 500
+- **Campo** máximo: el límite superior del número de instancias únicas de un SIT que se pueden encontrar en un elemento y que aún desencadenan una coincidencia. El campo máximo admite valores de:
+    - 1 a 500: úselo cuando desee establecer un límite superior específico de 500 o menos en el número de instancias de un SIT en un elemento.
+    - Any: se usa cuando desee que se cumplan los criterios de recuento de instancias únicos cuando se encuentra un número indefinido de instancias únicas de un SIT en un elemento analizado y ese número de instancias únicas cumple o supera el número mínimo de instancias `Any` únicas. En otras palabras, los criterios de recuento de instancias únicos se cumplen siempre que se cumpla el valor mínimo.
+
+Por ejemplo, si desea que la regla desencadene una coincidencia cuando se encuentran al menos  500 instancias únicas de un SIT en un solo elemento, establezca el valor mínimo en y el valor máximo en `500`  `Any` .
 
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modificar tipos personalizados de información confidencial en el Centro de cumplimiento
 

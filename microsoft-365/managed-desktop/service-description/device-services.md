@@ -3,18 +3,18 @@ title: Servicios de dispositivos de Escritorio administrado de Microsoft
 description: En este tema se enumeran los servicios de dispositivo y la limitación de Microsoft Managed Desktop.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 0e90d4fd51c0e25a20b6ef985d7a15edc001bfb5
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 553e9cd831271eb70f3da520f66cb056f63166fa
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364139"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034550"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Servicios de dispositivos de Escritorio administrado de Microsoft
 
@@ -36,7 +36,7 @@ Para obtener información sobre el reemplazo de dispositivos, las actualizacione
 
 Para obtener información sobre las garantías y reparaciones de Surface:
 
-- [Surface para empresas Centro de ayuda](https://support.microsoft.com/hub/4339296/surface-for-business-help)
+- [Surface para empresas centro de ayuda](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [Garantías, planes de servicio extendidos y términos y condiciones para el dispositivo](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 
 

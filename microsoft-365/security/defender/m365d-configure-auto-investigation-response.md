@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 43c881d340b5832a3403a6e47f664163f10dea00
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6b748fec72c81284a10af10752580d18b9969104
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939926"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034766"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurar las funcionalidades automatizadas de investigación y respuesta en Microsoft 365 Defender
 
@@ -52,7 +52,7 @@ A continuación, una vez configurado todo, puede ver y administrar acciones de c
 |Requisitos de red|<ul><li>[Microsoft Defender para identidad habilitado](/azure-advanced-threat-protection/what-is-atp)</li><li>[Configuración de Microsoft Defender para aplicaciones en la](/cloud-app-security/what-is-cloud-app-security) nube</li><li>[Integración de Microsoft Defender para identidades](/cloud-app-security/mdi-integration)</li></ul>|
 |Windows de dispositivos|<ul><li>Windows 11</li><li>Windows 10, versión 1709 o posterior instalada (vea [Windows de la versión )](/windows/release-information/)</li><li>Los siguientes servicios de protección contra amenazas configurados:<ul><li>[Microsoft Defender para punto de conexión](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus de Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protección del contenido de correo electrónico y Office archivos|[Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configurado|
-|Permisos|Para configurar las capacidades automatizadas de investigación y respuesta, debe tener asignado el rol Administrador global o Administrador de seguridad en Azure Active Directory ( ) o en el <https://portal.azure.com> Centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ). <p> Para obtener los permisos necesarios para trabajar con capacidades automatizadas de investigación y respuesta, como revisar, aprobar o rechazar acciones [pendientes,](m365d-action-center.md#required-permissions-for-action-center-tasks)vea Permisos necesarios para las tareas del Centro de acciones .|
+|Permissions|Para configurar las capacidades automatizadas de investigación y respuesta, debe tener asignado el rol Administrador global o Administrador de seguridad en Azure Active Directory ( ) o en el <https://portal.azure.com> Centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ). <p> Para obtener los permisos necesarios para trabajar con capacidades automatizadas de investigación y respuesta, como revisar, aprobar o rechazar acciones [pendientes,](m365d-action-center.md#required-permissions-for-action-center-tasks)vea Permisos necesarios para las tareas del Centro de acciones .|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Revisar o cambiar el nivel de automatización de los grupos de dispositivos
@@ -61,9 +61,9 @@ Si las investigaciones automatizadas se ejecutan y si las acciones de correcció
 
 1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
-2. Vaya a **Configuración**  >  **permisos grupos** de  >  **dispositivos**.
+2. Vaya a **Configuración**  >  **endpoints** Grupos  >  **de dispositivos** en **Permisos**.
 
-3. Revisa las directivas de grupo de dispositivos. En concreto, vea la columna **Nivel de corrección.** Se recomienda usar **Full- remediar las amenazas automáticamente**.  Es posible que deba crear o editar los grupos de dispositivos para obtener el nivel de automatización que desee. Para obtener ayuda con esta tarea, consulte los artículos siguientes:
+3. Revisa las directivas de grupo de dispositivos. En concreto, vea la columna **Nivel de** automatización. Se recomienda usar **Full- remediar las amenazas automáticamente**.  Es posible que deba crear o editar los grupos de dispositivos para obtener el nivel de automatización que desee. Para obtener ayuda con esta tarea, consulte los artículos siguientes:
    - [Cómo se corrigen las amenazas](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [Crear y administrar grupos de dispositivos](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
 
@@ -100,12 +100,10 @@ La configuración de seguridad Office 365 ayuda a proteger el correo electrónic
    - Si ve Incidentes **& alertas,** **búsqueda** y **centro** de acciones , Microsoft 365 Defender está activado. Consulta la [sección Revisar o cambiar el nivel de automatización para grupos de dispositivos](#review-or-change-the-automation-level-for-device-groups) de este artículo.
    - Si no ve *Incidentes,* **Centro** de **acciones** o **Búsqueda,** es posible Microsoft 365 Defender no esté activado. En este caso, [visite el Centro de acciones](m365d-action-center.md).
 
-3. En el panel de navegación, **elija Configuración**  >  **Microsoft 365 Defender**. Confirme que Microsoft 365 Defender está activado.
-
 > [!TIP]
 > ¿Necesita ayuda? Vea [Activar Microsoft 365 Defender](m365d-enable.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Acciones de corrección en Microsoft 365 Defender](m365d-remediation-actions.md)
 - [Visite el Centro de actividades](m365d-action-center.md)

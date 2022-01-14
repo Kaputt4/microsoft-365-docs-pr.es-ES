@@ -31,6 +31,14 @@ productDirectory:
   title: Introducción
   summary: 'Configure su suscripción y correo electrónico, agregue usuarios y instale aplicaciones.'
   items:
+    - title: Top 20 most-viewed admin help articles this month
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
+      summary: Consulte los artículos de ayuda más populares entre otros administradores.
+      url: top-m365-admin-articles.yml
+    - title: Biblioteca de vídeos de aprendizaje de administración
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
+      summary: Obtenga información sobre cómo configurar y administrar Microsoft 365 para su empresa con vídeos cortos.
+      url: admin-video-library.yml
     - title: Introducción
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
       summary: Suscríbase y configure Microsoft 365.

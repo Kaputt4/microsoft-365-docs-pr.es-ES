@@ -2,21 +2,21 @@
 title: Validar los dispositivos nuevos
 description: Antes de ordenar dispositivos, obtenga uno de cada modelo y pruebelo
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2b3ba016e5a205ddb6eaccc4df71bdc4ad612085
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 71f9512715caed3ad138df9eeb7d2924eb1eb8e3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364620"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035575"
 ---
 # <a name="validate-new-devices"></a>Validar los dispositivos nuevos
 

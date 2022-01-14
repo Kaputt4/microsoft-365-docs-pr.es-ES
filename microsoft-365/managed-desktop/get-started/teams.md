@@ -3,19 +3,19 @@ title: Microsoft Teams
 description: Cómo Teams se instala en dispositivos y se actualiza después
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 525dc7b89e302cdc076336daa7a98c6317855e73
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3ea75323b56941b47e8bf9826c0bfeeb7d8983f9
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212742"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034802"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -23,11 +23,11 @@ ms.locfileid: "60212742"
 
 ## <a name="initial-deployment"></a>Implementación inicial
 
-La mayoría de los proveedores de hardware aún no incluyen Teams como parte de sus imágenes, por lo que Escritorio administrado de Microsoft implementa Teams en los dispositivos mediante Microsoft Intune. Todos los dispositivos administrados [tienen el paquete Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) instalado, lo que garantiza que todos los usuarios que inician sesión en un dispositivo Microsoft Teams listo para su uso. Cuando el paquete termina de instalarse por primera vez, Teams se inicia automáticamente y agrega un acceso directo al escritorio.
+La mayoría de los proveedores de hardware aún no incluyen Teams como parte de sus imágenes, por lo que Microsoft Managed Desktop implementa Teams en los dispositivos mediante Microsoft Intune. Todos los dispositivos administrados [tienen el paquete Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) instalado, lo que garantiza que todos los usuarios que inician sesión en un dispositivo Microsoft Teams listo para su uso. Cuando el paquete termina de instalarse por primera vez, Teams se inicia automáticamente y agrega un acceso directo al escritorio.
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune cambios
 
-Escritorio administrado de Microsoft agrega dos aplicaciones a la organización de Azure AD para Microsoft Teams. Se implementan en clientes de 64 o 32 bits según corresponda para el dispositivo:  
+Microsoft Managed Desktop agrega dos aplicaciones a su Azure AD organización para Microsoft Teams. Se implementan en clientes de 64 o 32 bits según corresponda para el dispositivo:  
 
 - Modern Workplace: Teams machine wide Installer x64  
 - Modern Workplace: Teams machine wide Installer x32
@@ -36,7 +36,7 @@ Escritorio administrado de Microsoft agrega dos aplicaciones a la organización 
 
 Teams sigue una ruta de actualización independiente de Aplicaciones Microsoft 365 para empresas y el cliente de escritorio se actualiza automáticamente. Teams busca actualizaciones cada pocas horas, las descarga y, a continuación, espera a que el equipo esté inactivo antes de instalar la actualización de forma silenciosa.  
 
-El Teams de productos no permite a los administradores controlar las actualizaciones, por lo que Escritorio administrado de Microsoft el [canal de actualización automática estándar.](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)
+El Teams producto no permite a los administradores controlar las actualizaciones, por lo que Microsoft Managed Desktop usa el [canal de actualización automática estándar.](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)
 
 ### <a name="manually-updating-teams"></a>Actualización manual de Teams
 

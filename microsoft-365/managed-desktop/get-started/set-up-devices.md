@@ -3,19 +3,19 @@ title: Configurar dispositivos para Escritorio administrado de Microsoft
 description: Cómo obtener nuevos dispositivos o reutilizar los existentes que califiquen
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 98adf2e8d6faeb089b74a2ec4050b7ec53620e0f
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 41b10fe4a09a79d50973c478ebd8b6351d13cbeb
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364632"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035155"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Configurar dispositivos del Escritorio administrado por Microsoft
 

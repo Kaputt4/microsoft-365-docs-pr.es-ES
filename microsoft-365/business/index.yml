@@ -31,8 +31,8 @@ productDirectory:
       url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701'
     - title: Unirse a la serie de seminarios web de asociados
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 'Obtenga información sobre Microsoft Defender para empresas, una nueva solución de seguridad de puntos de conexión, y su valor y ventajas para asociados.'
-      url: 'https://aka.ms/DefenderforBusinessWebinar'
+      summary: 'Obtenga información sobre cómo aumentar las ventas y hacer crecer su negocio con Microsoft 365 Empresa Premium, Microsoft Defender para empresas y Microsoft 365 Lighthouse.'
+      url: 'https://aka.ms/M365MDBseries'
 conceptualContent:
   items:
     - title: ¿Qué es Microsoft 365 Empresa Premium?

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal en Microsoft 365 para conservar el contenido relevante para una investigación o un caso legal.
-ms.openlocfilehash: 0a5ac38afb649ab1972e7b7aee525dac9ab3b00e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 486abd6c47082f320a5fa743ac053f29f6591054
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195658"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034985"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -63,8 +63,8 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
   
    3. **Carpetas públicas de Exchange**: establezca la opción de alternancia en **Activado** para poner todas las carpetas públicas en su organización de Exchange Online en suspensión. No puede elegir carpetas públicas específicas para poner en suspensión. Deje el botón de alternancia desactivado si no quiere establecer una suspensión en las carpetas públicas.
 
-   > [!NOTE]
-   > Debe agregar al menos una ubicación de contenido a la retención. De lo contrario, las estadísticas de retención de exhibición de documentos electrónicos mostrarán que no hay elementos en espera.
+   > [!IMPORTANT]
+   > Al agregar Exchange buzones o SharePoint a una retención, debe agregar explícitamente al menos una ubicación de contenido a la retención. En otras palabras, si establece la alternancia en **Activar** para buzones o sitios, debe seleccionar buzones o sitios específicos para agregarlos a la retención. De lo contrario, se creará la retención de exhibición de documentos electrónicos, pero no se agregarán buzones o sitios a la retención y las estadísticas mostrarán que no hay ubicaciones de contenido ni elementos en espera.
 
 8. Cuando haya terminado de agregar ubicaciones a la retención, haga clic en **Siguiente**.
 
@@ -131,7 +131,7 @@ Las conversaciones que forman parte de un canal Microsoft Teams se almacenan en 
 Como alternativa, las conversaciones que forman parte de la lista chat de Teams (llamadas *chats 1:1* o chats de grupo *1:N)* se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en conversaciones de chat se almacenan en OneDrive cuenta del usuario que comparte el archivo. Por lo tanto, debe agregar los buzones de usuario individuales y las OneDrive a una retención de exhibición de documentos electrónicos para conservar conversaciones y archivos en la lista de chat. Es una buena idea colocar una retención en los buzones de los miembros de un equipo de Microsoft, además de poner el buzón de equipo y el sitio en espera.
 
 > [!NOTE]
-> Si su organización tiene una implementación híbrida de Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat de Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en almacenamiento basado en la nube que está asociado con un usuario local. Si un usuario local se coloca en una retención de exhibición de documentos electrónicos, se conservará el Teams de chat en el almacenamiento basado en la nube. Para obtener más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+> Si su organización tiene una implementación híbrida de Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat de Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en almacenamiento basado en la nube que está asociado con un usuario local. Si un usuario local se coloca en una retención de exhibición de documentos electrónicos, se conservará el Teams de chat en el almacenamiento basado en la nube. Para más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Para obtener más información acerca de cómo conservar Teams contenido, vea [Colocar un Microsoft Teams usuario o](/MicrosoftTeams/legal-hold)equipo en retención legal .
 
@@ -208,7 +208,7 @@ Después de quitar SharePoint buzón, sitio o OneDrive de una retención de exhi
 
    Para obtener más información, consulte [Gestionar buzón con una retención de retraso](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
-- **SharePoint y OneDrive web:** Cualquier SharePoint o OneDrive contenido que se conserva en la biblioteca de conservación no se elimina durante el período de retención de retraso de 30 días después de quitar un sitio de una retención de exhibición de documentos electrónicos. Esto es similar a lo que sucede cuando un sitio se libera de una directiva de retención. Además, no puedes eliminar manualmente este contenido en la biblioteca de conservación durante el período de retención de retraso de 30 días. 
+- SharePoint y **OneDrive:** el contenido de SharePoint o OneDrive que se conserva en la biblioteca de conservación de conservación no se elimina durante el período de retención de retraso de 30 días después de quitar un sitio de una retención de exhibición de documentos electrónicos. Esto es similar a lo que sucede cuando un sitio se libera de una directiva de retención. Además, no puedes eliminar manualmente este contenido en la biblioteca de conservación durante el período de retención de retraso de 30 días. 
 
    Para obtener más información, [vea Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
 

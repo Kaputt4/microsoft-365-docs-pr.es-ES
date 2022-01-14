@@ -3,32 +3,32 @@ title: Experiencia de primera ejecución con piloto automático y la página de 
 description: Cómo implementar la experiencia de ESP, la configuración usada y los cambios de configuración
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8c73ff558165a370e5709a1e43482d689dd7953d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4393478ca787f24d22f44cfc426bc2bcf7157f9e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178616"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034838"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
 
-Escritorio administrado de Microsoft usa Windows [Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) y la página de estado de inscripción [(ESP)](/windows/deployment/windows-autopilot/enrollment-status) de Microsoft Intune para proporcionar la mejor experiencia de primera ejecución posible a los usuarios.
+Microsoft Managed Desktop usa [Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) y la página de estado de inscripción [(ESP)](/windows/deployment/windows-autopilot/enrollment-status) de Microsoft Intune para proporcionar la mejor experiencia de primera ejecución posible a los usuarios.
 
 ## <a name="initial-deployment"></a>Implementación inicial
 
-Para proporcionar la experiencia ESP, debe registrar los dispositivos en el Escritorio administrado de Microsoft servicio. Para obtener más información sobre el registro, consulta [Registrar nuevos dispositivos](../get-started/register-devices-self.md) tú mismo o [Pasos para que los partners registren dispositivos.](../get-started/register-devices-partner.md)
-La página de estado de inscripción y Autopilot para la implementación aprovisionada previamente están habilitadas de forma predeterminada en Escritorio administrado de Microsoft.
+Para proporcionar la experiencia ESP, debe registrar dispositivos en el servicio de Escritorio administrado de Microsoft. Para obtener más información sobre el registro, consulta [Registrar nuevos dispositivos](../get-started/register-devices-self.md) tú mismo o [Pasos para que los partners registren dispositivos.](../get-started/register-devices-partner.md)
+Página de estado de inscripción y Piloto automático para la implementación aprovisionada previamente están habilitadas de forma predeterminada en Microsoft Managed Desktop.
 
 ## <a name="autopilot-profile-settings"></a>Configuración del perfil de Autopilot
 
-Escritorio administrado de Microsoft esta configuración en el perfil de Autopilot usado para los dispositivos de los usuarios:
+Microsoft Managed Desktop usa esta configuración en el perfil de Autopilot que se usa para los dispositivos de los usuarios:
 
 <br>
 
@@ -37,7 +37,7 @@ Escritorio administrado de Microsoft esta configuración en el perfil de Autopil
 |Configuración|Valor|
 |---|---|
 |Modo de implementación|Controlado por el usuario|
-|Unirse a Azure AD como|Azure AD unido|
+|Unirse a Azure AD como|Unidos a Azure AD|
 |Idioma (región)|Selección de usuario|
 |Configurar automáticamente el teclado|No|
 |Términos de licencia de software de Microsoft|Ocultar|
@@ -51,7 +51,7 @@ Escritorio administrado de Microsoft esta configuración en el perfil de Autopil
 
 ## <a name="enrollment-status-page-settings"></a>Configuración de la página de estado de inscripción
 
-Escritorio administrado de Microsoft esta configuración para la experiencia de página de estado de inscripción:
+Microsoft Managed Desktop usa esta configuración para la experiencia de la página de estado de inscripción:
 
 <br>
 
@@ -59,15 +59,15 @@ Escritorio administrado de Microsoft esta configuración para la experiencia de 
 
 |Configuración|Valor|
 |---|---|
-|Mostrar el progreso de la configuración de perfiles y aplicaciones|Sí|
-|Mostrar un error cuando la instalación tarda más de un número de minutos especificado|60|
-|Mostrar mensaje personalizado cuando se produce un error de límite de tiempo|No|
+|Mostrar el progreso de la configuración de la aplicación y del perfil|Sí|
+|Mostrar un error cuando la instalación tarda más de un número determinado de minutos|60|
+|Mostrar un mensaje personalizado cuando se produce un error de límite de tiempo|No|
 |Permitir a los usuarios recopilar registros sobre errores de instalación|Sí|
-|Solo mostrar página a dispositivos aprovisionados por la experiencia lista para usar (OOBE)|Sí|
-|Bloquear el uso de dispositivos hasta que se instalen todas las aplicaciones y perfiles|Sí|
+|Mostrar la página sólo a los dispositivos aprovisionados por la experiencia lista para usar (OOBE)|Sí|
+|Bloquear el uso del dispositivo hasta que todos los perfiles y aplicaciones estén instalados|Sí|
 |Permitir a los usuarios restablecer el dispositivo si se produce un error de instalación|Sí|
-|Permitir a los usuarios usar el dispositivo si se produce un error de instalación|Sí|
-|Bloquear el uso del dispositivo hasta que se instalen estas aplicaciones necesarias si están asignadas al usuario o dispositivo.|Lugar de trabajo moderno: corrección de tiempo|Modern Workplace: biblioteca de cliente|
+|Permitir a los usuarios utilizar el dispositivo si se produce un error de instalación|Sí|
+|Bloquear el uso del dispositivo hasta que se instalen estas aplicaciones necesarias si están asignadas al usuario/dispositivo|Lugar de trabajo moderno: corrección de tiempo|Modern Workplace: biblioteca de cliente|
 
 
 La experiencia de la página de estado de inscripción se produce en tres fases. Para obtener más información, vea [Enrollment Status Page tracking information](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
@@ -75,7 +75,7 @@ La experiencia de la página de estado de inscripción se produce en tres fases.
 La experiencia continúa de la siguiente manera:
 
 1. La experiencia de Autopilot se inicia y el usuario escribe sus credenciales.
-2. El dispositivo abre la página Estado de inscripción y continúa con las fases preparación del dispositivo y configuración del dispositivo. El tercer paso (configuración de cuenta) *se* omite actualmente en la configuración Escritorio administrado de Microsoft porque el ESP de usuario está deshabilitado. El dispositivo se reinicia.
+2. El dispositivo abre la página Estado de inscripción y continúa con las fases preparación del dispositivo y configuración del dispositivo. El tercer paso (Configuración de la cuenta) *se* omite actualmente en la configuración de Escritorio administrado de Microsoft porque el ESP de usuario está deshabilitado. El dispositivo se reinicia.
 3. Después del reinicio, el dispositivo abre la Windows inicio de sesión con **Otro usuario**.
 4. Los usuarios escriben sus credenciales de nuevo y se abre el escritorio.
 
@@ -89,7 +89,7 @@ La experiencia continúa de la siguiente manera:
 
 - El dispositivo debe tener una conexión de red cableada.
 - Si tiene dispositivos que se registraron con el portal de Escritorio administrado de Microsoft antes de agosto de 2020, des registrarlos y volver a registrarlos.
-- Los dispositivos deben tener una imagen de fábrica que incluya la actualización acumulativa de noviembre de 2020 [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) o [20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) según corresponda instalado o debe volver a crearse una imagen con la imagen Escritorio administrado de Microsoft más reciente.
+- Los dispositivos deben tener una imagen de fábrica que incluya la actualización acumulativa de noviembre de 2020 [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) o [20H1 2020.11C](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) según corresponda instalado o debe volver a crearse una imagen con la imagen de Escritorio administrado de Microsoft más reciente.
 - Los dispositivos físicos deben admitir TPM 2.0 y la atestación del dispositivo. Las máquinas virtuales no son compatibles. El proceso de aprovisionamiento previo usa Windows autoaprovisionamiento de Autopilot, por lo que se requiere TPM 2.0. El proceso de atestación de TPM también requiere acceso a un conjunto de direcciones URL HTTPS que son únicas para cada proveedor de TPM. Para obtener más información, vea la entrada para Autopilot self-deploying mode and Autopilot pre-provisioned deployment in [Windows Autopilot networking requirements](/mem/autopilot/networking-requirements#tpm).
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>Secuencia de eventos en Autopilot para la implementación aprovisionada previamente
@@ -99,7 +99,7 @@ La experiencia continúa de la siguiente manera:
 3. El administrador de TI selecciona Windows aprovisionamiento de Autopilot y, a continuación, selecciona **Continuar**. En la Windows configuración de Autopilot, se mostrará información sobre el dispositivo.
 4. El administrador de TI selecciona **Aprovisionar** para iniciar el proceso de aprovisionamiento.
 5. El dispositivo inicia ESP y pasa por las fases de preparación y configuración del dispositivo. Durante la fase de configuración del dispositivo, verás la instalación de la **aplicación x de x** mostrada (según la configuración exacta del perfil ESP).
-6. El paso de configuración de la cuenta se omite actualmente en la configuración Escritorio administrado de Microsoft, ya que deshabilitamos ESP de usuario.
+6. El paso de configuración de la cuenta se omite actualmente en la configuración de Escritorio administrado de Microsoft, ya que deshabilitamos ESP de usuario.
 7. El dispositivo se reinicia.
 
 Una vez reiniciado, el dispositivo mostrará la pantalla de estado verde, con un botón Volver a **izar.**
@@ -112,7 +112,7 @@ Una vez reiniciado, el dispositivo mostrará la pantalla de estado verde, con un
 
 ## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Cambiar a Configuración de piloto automático y página de estado de inscripción
 
-Si la configuración usada por Escritorio administrado de Microsoft no coincide exactamente con sus necesidades, puede presentar un vale de soporte técnico a través del [Portal de administración](https://portal.azure.com/). Estos son algunos ejemplos de los tipos de configuración que puede necesitar:
+Si la configuración usada por Microsoft Managed Desktop no coincide exactamente con sus necesidades, puede presentar un vale de soporte técnico a través del [Portal de administración.](https://portal.azure.com/) Estos son algunos ejemplos de los tipos de configuración que puede necesitar:
 
 ### <a name="autopilot-settings-change"></a>Cambiar la configuración de Autopilot
 
@@ -133,7 +133,7 @@ Es posible que quieras solicitar una plantilla de nombre de dispositivo diferent
 - Lo ideal es que las aplicaciones no tengan dependencias. Si tienes aplicaciones que deben *tener* dependencias, asegúrate de configurarlas, probarlas y validarlas como parte de la evaluación de ESP.
 - Microsoft Teams puede incluirse en ESP.
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Microsoft Managed Desktop
 
 1. Acceder al [portal de administrador](access-admin-portal.md).
 1. [Agregar y verificar los contactos de administración en el portal de administrador](add-admin-contacts.md).

@@ -4,21 +4,21 @@ description: En este artículo se enumeran los artículos nuevos y actualizados 
 keywords: historial de cambios
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
+author: tiaraquan
 ms.topic: article
 audience: ITPro
-manager: laurawi
+manager: dougeby
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 8a2720a4b01992396a06fc4109887bd759d539ce
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 4b3c08f23f6ba21e839501f9b7925733bbf6bbd1
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60588390"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034526"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 

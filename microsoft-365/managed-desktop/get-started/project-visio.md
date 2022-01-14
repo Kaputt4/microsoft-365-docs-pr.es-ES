@@ -1,46 +1,46 @@
 ---
-title: Instalar Microsoft Project o Microsoft Visio en Escritorio administrado de Microsoft dispositivos
-description: Información sobre la instalación de Microsoft Project o Microsoft Visio en Escritorio administrado de Microsoft dispositivos
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Microsoft Project, Microsoft Visio
+title: Instalar Microsoft Project o Microsoft Visio dispositivos de Escritorio administrado de Microsoft
+description: Información sobre cómo instalar Microsoft Project o Microsoft Visio dispositivos de Escritorio administrado de Microsoft
+keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: af5470d0993c54c1593526a7e0e3ae0b6e239065
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ebba2983e584e3b7d445d8962fb8dc0536d360f3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199794"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034586"
 ---
-# <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Instalar Microsoft Project o Microsoft Visio en Escritorio administrado de Microsoft dispositivos
+# <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Instalar Microsoft Project o Microsoft Visio dispositivos de Escritorio administrado de Microsoft
 
-Microsoft Project y Microsoft Visio requieren pasos específicos para instalarse en Escritorio administrado de Microsoft dispositivos. En este tema se documenta los requisitos previos y el proceso de instalación de estas aplicaciones.
+Microsoft Project y Microsoft Visio requieren pasos específicos para instalarse en dispositivos de Escritorio administrado de Microsoft. En este tema se documenta los requisitos previos y el proceso de instalación de estas aplicaciones.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Los administradores deben comprobar que cumplen estos requisitos previos:
-- **Cantidades de licencia:** la cantidad correcta de licencias Microsoft Project y Microsoft Visio deben estar disponibles para los usuarios. Escritorio administrado de Microsoft actualmente solo admite versiones de 64 bits de estas aplicaciones. 
+- **Cantidades de licencia:** la cantidad correcta de licencias Microsoft Project y Microsoft Visio deben estar disponibles para los usuarios. Microsoft Managed Desktop actualmente solo admite versiones de 64 bits de estas aplicaciones. 
 - **Nombres de licencia:** los nombres de licencia adecuados para estas aplicaciones son:
     - **Microsoft Project:** Project Online Professional o Project Online Premium
     - **Microsoft Visio:** Visio Online Plan 2
 - **Portal de empresa:** el Portal de empresa debe estar disponible en el espacio empresarial para que los usuarios instalen estas aplicaciones. Si el Portal de empresa no se implementa en el espacio empresarial, vea [Portal de empresa](company-portal.md).
 
-## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Implementar Project y Visio para Escritorio administrado de Microsoft dispositivos
-Escritorio administrado de Microsoft agregará Microsoft Project y Microsoft Visio como dos aplicaciones win32 en Microsoft Intune. También crearemos dos grupos en Azure Active Directory que se asignarán a la aplicación correspondiente con la intención "Disponible". 
+## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Implementar Project y Visio dispositivos de Escritorio administrado de Microsoft
+Microsoft Managed Desktop agregará Microsoft Project y Microsoft Visio como dos aplicaciones win32 en Microsoft Intune. También crearemos dos grupos en Azure Active Directory que se asignarán a la aplicación correspondiente con la intención "Disponible". 
 
-**Para implementar Project y Visio** Agregue el usuario al grupo adecuado y la aplicación estará disponible en el Portal de empresa. Puede tardar unos minutos en sincronizarse, pero los usuarios pueden instalar las aplicaciones desde Portal de empresa. 
+**Para implementar Project y Visio** Agregar el usuario al grupo adecuado y la aplicación estará disponible en el Portal de empresa. Puede tardar unos minutos en sincronizarse, pero los usuarios pueden instalar las aplicaciones desde Portal de empresa. 
 
-Nombre del grupo de Azure AD | ¿Qué usuarios asignar?   
+Azure AD de grupo | ¿Qué usuarios asignar?   
  --- | ---
 Workplace-Office-Project_Install | Usuarios que necesitan Project
 Workplace-Office-Visio_Install | Usuarios que necesitan Visio
 
 ## <a name="communicate-changes"></a>Comunicar cambios
-Es importante que los administradores de TI sepan a sus usuarios cómo instalar Project y Visio. Incluye lo siguiente: 
+Es importante que los administradores de TI sepan a sus usuarios cómo instalar Project y Visio. Esto incluye lo siguiente: 
 - Notificar a los usuarios cuando estas aplicaciones están disponibles para ellos. 
 - Instrucciones sobre cómo instalar estas aplicaciones desde el Portal de empresa.

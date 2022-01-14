@@ -3,18 +3,18 @@ title: Informe de uso de aplicaciones
 description: Cómo usar el informe de uso de la aplicación
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d738a90655ce4c24f982d60c4d7c8fc11ad0074c
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 241bb500ae7f89aac175c4b84ebd8d29ff3b6dcd
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364904"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034862"
 ---
 # <a name="app-usage-report"></a>Informe de uso de aplicaciones
 

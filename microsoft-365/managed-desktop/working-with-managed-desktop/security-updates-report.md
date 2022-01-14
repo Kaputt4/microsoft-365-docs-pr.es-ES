@@ -3,18 +3,18 @@ title: Informe de actualizaciones de seguridad de Windows
 description: Explica la información presentada en este informe
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 498330ffdf791a0688b9d6bfad432ba5ebea3b2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e02c4f47908975ff79c9443c233a700708f93b7a
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935818"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035419"
 ---
 # <a name="windows-security-updates-report"></a>Informe de actualizaciones de seguridad de Windows
 

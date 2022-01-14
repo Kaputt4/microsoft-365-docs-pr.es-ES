@@ -4,25 +4,25 @@ description: Cómo implementar Aplicaciones Microsoft 365, cómo se actualizan y
 keywords: historial de cambios
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f6df4ed3568be232927b7c427341d16eb869b7ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 675b9d32c60febd7e70dfd64f49b7869c489aa0b
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199830"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034814"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
 ## <a name="initial-deployment"></a>Implementación inicial
 
-Escritorio administrado de Microsoft garantiza que Aplicaciones Microsoft 365 para empresas (64 bits) se instalen como parte de la imagen en todos los [dispositivos del programa](../service-description/device-list.md). Todas las aplicaciones siguientes deben estar presentes en el dispositivo cuando se entregue:
+Microsoft Managed Desktop garantiza que Aplicaciones Microsoft 365 para empresas (64 bits) se instalen como parte de la imagen en todos los [dispositivos del programa.](../service-description/device-list.md) Todas las aplicaciones siguientes deben estar presentes en el dispositivo cuando se entregue:
 
 - Word
 - Excel
@@ -44,26 +44,26 @@ Si un usuario no tiene Aplicaciones Microsoft 365 en su dispositivo por cualquie
 
 ### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Aplicaciones Microsoft 365 para empresas (32 bits)
 
-Escritorio administrado de Microsoft no admite la implementación de la versión de 32 bits de M365 Apps para empresas.
+Microsoft Managed Desktop no admite la implementación de la versión de 32 bits de M365 Apps para empresas.
 
 ## <a name="updates-to-microsoft-365-apps"></a>Actualizaciones de Aplicaciones Microsoft 365
 
 Aplicaciones Microsoft 365 se establecen para actualizarse en el canal [de Enterprise mensual](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Esta práctica proporciona a los usuarios nuevas características Office cada mes, pero solo recibirán una actualización al mes en una programación de lanzamiento predecible. Las actualizaciones se lanzan el segundo martes del mes; estas actualizaciones pueden incluir actualizaciones de características, seguridad y calidad. Estas actualizaciones se producen automáticamente y se sacan directamente del Office CDN para ese canal específico.
 
-Escritorio administrado de Microsoft escalona cada versión para identificar posibles problemas en el entorno. Completamos el lanzamiento 28 días después de la versión del grupo de productos Microsoft 365 app. Escritorio administrado de Microsoft programa las versiones de actualización a diferentes grupos para permitir el tiempo de validación y pruebas de la siguiente manera: 
+Microsoft Managed Desktop escalona cada versión para identificar posibles problemas en el entorno. Completamos el lanzamiento 28 días después de la versión del grupo de productos Microsoft 365 app. Microsoft Managed Desktop programa las versiones de actualización a diferentes grupos para dar tiempo a la validación y las pruebas de la siguiente manera: 
 
 - Prueba: cero días
 - Primero: cero días
 - Rápido: 3 días
 - Ancho: 7 días
 
-Escritorio administrado de Microsoft establece una fecha límite de actualización de siete [días](/deployoffice/configure-update-settings-microsoft-365-apps) para dispositivos. Una vez que la actualización está disponible, debe instalarse en un plazo de siete días. Se [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) notifica a los usuarios que las actualizaciones son necesarias en varias ubicaciones: la aplicación, en la bandeja del sistema 12 horas antes de la fecha límite, y reciben una advertencia de 15 minutos antes de la fecha límite. Todos los Aplicaciones Microsoft 365 deben cerrarse para que se complete la actualización.
+Microsoft Managed Desktop establece una fecha límite de actualización de siete [días](/deployoffice/configure-update-settings-microsoft-365-apps) para dispositivos. Una vez que la actualización está disponible, debe instalarse en un plazo de siete días. Se [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) notifica a los usuarios que las actualizaciones son necesarias en varias ubicaciones: la aplicación, en la bandeja del sistema 12 horas antes de la fecha límite, y reciben una advertencia de 15 minutos antes de la fecha límite. Todos los Aplicaciones Microsoft 365 deben cerrarse para que se complete la actualización.
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Pausar o revertir una actualización
 
-Si necesitas pausar o revertir la actualización Microsoft 365 la aplicación por cualquier motivo, haz una solicitud de soporte técnico para [administradores](../working-with-managed-desktop/admin-support.md) a través del portal Escritorio administrado de Microsoft web.
+Si necesita pausar o revertir la actualización Microsoft 365 aplicación por cualquier motivo, abra una solicitud de soporte técnico para [administradores](../working-with-managed-desktop/admin-support.md) a través del portal de Escritorio administrado de Microsoft.
 
-Durante una versión, Escritorio administrado de Microsoft las tasas de error de todos los Aplicaciones Microsoft 365. Si observamos una diferencia significativa en la calidad entre la nueva versión y su predecesora, podríamos ponerse en contacto con usted a través del portal de administración Escritorio administrado de Microsoft administración. Dependiendo de la gravedad, le preguntaremos si desea pausar la versión o le informaremos de que hemos tomado medidas para mitigar un problema. 
+Durante una versión, Microsoft Managed Desktop supervisa las tasas de error de todos los Aplicaciones Microsoft 365. Si observamos una diferencia significativa en la calidad entre la nueva versión y su predecesora, podríamos ponerse en contacto con usted a través del portal de administración de escritorio administrado de Microsoft. Dependiendo de la gravedad, le preguntaremos si desea pausar la versión o le informaremos de que hemos tomado medidas para mitigar un problema. 
 
 ### <a name="delivery-optimization"></a>Optimización de entrega
 
@@ -71,13 +71,13 @@ Optimización de distribución es una tecnología de distribución punto a punto
 
 [Optimización de](/deployoffice/delivery-optimization) entrega está habilitada de forma predeterminada en dispositivos que ejecutan Windows 10 Enterprise o Windows 10 Education ediciones. 
 
-## <a name="settings-managed-by-microsoft-managed-desktop"></a>Configuración administrado por Escritorio administrado de Microsoft
+## <a name="settings-managed-by-microsoft-managed-desktop"></a>Configuración administrado por Microsoft Managed Desktop
 
-Microsoft administra algunas opciones de configuración como parte del servicio. Escritorio administrado de Microsoft no administra una línea base de seguridad Office, pero puede establecerla usted mismo siguiendo las instrucciones de la [sección Configuración administrar.](#settings-you-manage)
+Microsoft administra algunas opciones de configuración como parte del servicio. Microsoft Managed Desktop no administra una línea base de seguridad Office, pero puede establecer uno usted mismo siguiendo las instrucciones de la [sección Configuración administrar.](#settings-you-manage)
 
 ### <a name="update-settings"></a>Actualizar configuración
 
-Escritorio administrado de Microsoft mantiene toda la configuración [de actualización para](/deployoffice/configure-update-settings-microsoft-365-apps) dispositivos administrados y debe modificar esta configuración.
+Microsoft Managed Desktop mantiene toda la configuración [de actualización para](/deployoffice/configure-update-settings-microsoft-365-apps) dispositivos administrados y debe modificar esta configuración.
 
 ### <a name="set-updates-to-occur-automatically"></a>Establecer actualizaciones para que se produzcan automáticamente
 
@@ -93,7 +93,7 @@ La **directiva UpdateDeadline** se usa para configurar el período de gracia que
 
 ### <a name="defer-updates-on-a-device-for-a-period"></a>Aplazar actualizaciones en un dispositivo durante un período
 
-Esta directiva se configura de forma diferente para cada grupo de dispositivos de administración de actualizaciones y es necesaria para que Escritorio administrado de Microsoft cumpla sus objetivos de actualización:  
+Esta directiva se configura de forma diferente para cada grupo de dispositivos de administración de actualizaciones y es necesaria para que Microsoft Managed Desktop cumpla sus objetivos de actualización:  
 
 - Prueba: cero días
 - Primero: cero días
@@ -104,7 +104,7 @@ Esta directiva se configura de forma diferente para cada grupo de dispositivos d
 
 **Valor predeterminado**: False
 
-La configuración "ocultar notificaciones de actualización" se establece en **False** en Escritorio administrado de Microsoft dispositivos para proporcionar la mejor experiencia de actualización para los usuarios notificándolos cuando se requieren actualizaciones. [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps)
+La configuración "ocultar notificaciones de actualización" se establece en **False** en dispositivos [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) de Escritorio administrado de Microsoft para proporcionar la mejor experiencia de actualización para los usuarios notificándolos cuando se necesitan actualizaciones.
 
 ### <a name="specify-a-location-to-look-for-updates"></a>Especificar una ubicación para buscar actualizaciones
 
@@ -114,14 +114,14 @@ Se usa una combinación de **las directivas UpdatePath** y **UpdateChannel** seg
 
 ### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Especifique la versión de destino de Aplicaciones Microsoft 365
 
-La directiva versión de destino a veces se usa Escritorio administrado de Microsoft para revertir o anclar una versión específica de Office. 
+La directiva versión de destino a veces la usa Microsoft Managed Desktop para revertir o anclar una versión específica de Office. 
 
 
 ### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>Ocultar la opción para habilitar o deshabilitar Office actualizaciones automáticas
 
 **Valor predeterminado:** Habilitado
 
-Esta configuración es necesaria para que Escritorio administrado de Microsoft sus objetivos de actualización para Microsoft 365 aplicaciones. 
+Esta configuración es necesaria para que Microsoft Managed Desktop cumpla sus objetivos de actualización para Microsoft 365 aplicaciones. 
 
 ### <a name="first-run-settings"></a>Configuración de la primera ejecución 
 
@@ -131,37 +131,37 @@ Hay varias opciones de configuración que afectan al comportamiento la primera v
 
 **Valor predeterminado**: Deshabilitado
 
-La primera vez que un usuario abre una Microsoft 365, se le pedirá que acepte los términos de licencia. Si desea aceptar los términos de licencia en nombre de los usuarios, presente una solicitud de servicio al equipo de operaciones de Escritorio administrado de Microsoft solicitando que esta configuración esté habilitada. 
+La primera vez que un usuario abre una Microsoft 365, se le pedirá que acepte los términos de licencia. Si desea aceptar los términos de licencia en nombre de los usuarios, presente una solicitud de servicio al equipo de Operaciones de escritorio administrado de Microsoft que le pida que esta configuración esté habilitada. 
 
 ### <a name="suppress-outlook-mobile-check-box"></a>Suprimir Outlook casilla móvil
 
 **Valor predeterminado**: Deshabilitado
 
-La primera vez que se abre un Outlook se le pedirá que instale Outlook Móvil. Si no desea que los usuarios vean esa casilla, presente una solicitud de servicio al equipo de operaciones de Escritorio administrado de Microsoft solicitando que esta configuración esté habilitada para los dispositivos. 
+La primera vez que se abre un Outlook se le pedirá que instale Outlook Móvil. Si no desea que los usuarios vean esa casilla, presente una solicitud de servicio al equipo de Operaciones de escritorio administrado de Microsoft para solicitar que esta configuración esté habilitada para los dispositivos. 
 
 ## <a name="other-settings"></a>Otras opciones de configuración
 
-Hay otras opciones Microsoft 365 de la aplicación que Escritorio administrado de Microsoft configurar opcionalmente en su nombre. 
+Hay otras opciones Microsoft 365 aplicación que Microsoft Managed Desktop puede configurar opcionalmente en su nombre. 
 
 ### <a name="disable-personal-onedrive"></a>Deshabilitar personal OneDrive
 
 **Valor predeterminado**: Deshabilitado
 
-Algunas organizaciones están preocupadas por que los usuarios tengan acceso a archivos corporativos y personales en sus dispositivos. Puede presentar una solicitud de servicio con el equipo de Escritorio administrado de Microsoft operations que solicita que se habilite esta configuración. 
+Algunas organizaciones están preocupadas por que los usuarios tengan acceso a archivos corporativos y personales en sus dispositivos. Puede presentar una solicitud de servicio con el equipo de Operaciones de escritorio administrado de Microsoft para solicitar que esta configuración esté habilitada. 
 
 ## <a name="settings-you-manage"></a>Configuración administrar
 
-Hay muchas otras directivas que Escritorio administrado de Microsoft aún no se establecen como parte de nuestro servicio. Puede configurar estas directivas mediante el Microsoft Intune, que usa el [Office de directivas en la](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) nube. Para establecer estas directivas, siga estos pasos:
+Hay muchas otras directivas que Microsoft Managed Desktop aún no establece como parte de nuestro servicio. Puede configurar estas directivas mediante el Microsoft Intune, que usa el [Office de directivas en la](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) nube. Para establecer estas directivas, siga estos pasos:
 
-1. Inicie sesión en el centro Microsoft Endpoint Manager administración.
+1. Inicie sesión en el Centro de administración de Microsoft Endpoint Manager.
 2. Selecciona **Aplicaciones > directivas para Office aplicaciones > Crear**
 3. En la **página Crear configuración** de directiva, haga lo siguiente:
     - Escriba un nombre.
     - Proporcione una descripción (opcional).
     - En **las asignaciones,** elija si esta directiva se aplica a todos los usuarios de Aplicaciones Microsoft 365 para empresas, o simplemente a los usuarios que acceden de forma anónima a documentos mediante Office para la Web.
-    - Seleccione el grupo de seguridad basado en AAD que está asignado a la configuración de directiva. Cada configuración de directiva solo se puede asignar a un grupo y solo se puede asignar una configuración de directiva a cada grupo.
+    - Seleccione el AAD de seguridad basado en la directiva que está asignado a la configuración de directiva. Cada configuración de directiva solo se puede asignar a un grupo y solo se puede asignar una configuración de directiva a cada grupo.
     - Configure las opciones de directiva para que se incluyan en la configuración de directiva. Puede buscar en el nombre de configuración de directiva para buscar la configuración de directiva que desea configurar. También puede filtrar en la aplicación, en si la directiva es una línea base de seguridad recomendada y en si la directiva se ha configurado. La columna de plataforma indica si la directiva se aplica a Aplicaciones Microsoft 365 para empresas para Windows dispositivos, Office para la Web o todos.
 4. Después de realizar las selecciones, elija **Crear**.
 
 > [!NOTE]
-> Office Las directivas de configuración solo admiten la implementación basada en usuarios
+> Office de configuración solo admiten la implementación basada en usuarios

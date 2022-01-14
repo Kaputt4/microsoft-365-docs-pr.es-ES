@@ -3,25 +3,25 @@ title: Localizar la experiencia del usuario
 description: Cómo localización de dispositivos para usuarios
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4ff4d72f22faef32b1fabb52e10332af62e50bc7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6dae4ed7bce805dbaca712984de68fe06160bdab
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170064"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034826"
 ---
 # <a name="localize-the-user-experience"></a>Localizar la experiencia del usuario
 
-Los usuarios Escritorio administrado de Microsoft dispositivos pueden seleccionar el idioma que prefieran durante el proceso de configuración (la experiencia "fuera de la caja") o después.
+Los usuarios de dispositivos de Escritorio administrado de Microsoft pueden seleccionar el idioma que prefieran durante el proceso de configuración (la "experiencia de salida") o después.
 
 ## <a name="during-setup-the-out-of-box-experience"></a>Durante la instalación (la experiencia "fuera de la caja")
 
@@ -60,7 +60,7 @@ Para los nuevos dispositivos, el fabricante debe proporcionar imágenes de dispo
 
 Si vas a volver a usar dispositivos existentes, es posible que debas trabajar con el representante de tu cuenta microsoft para obtener las imágenes adecuadas. Para obtener más información, consulta [Imágenes del dispositivo](../service-description/device-images.md).
 
-La [imagen universal](../service-description/device-images.md#universal-image) proporcionada por Escritorio administrado de Microsoft incluye estos idiomas y para Windows 10:
+La [imagen universal proporcionada](../service-description/device-images.md#universal-image) por Microsoft Managed Desktop incluye estos idiomas y para Windows 10:
 
 - Árabe
 - Búlgaro
@@ -107,11 +107,11 @@ Si los usuarios necesitan un idioma distinto de los enumerados aquí, debe prese
 ## <a name="languages-for-support-and-operations"></a>Idiomas para soporte técnico y operaciones
 
 ### <a name="user-support"></a>Soporte al usuario
-Escritorio administrado de Microsoft solo admite en inglés. Si los usuarios eligen otro idioma en la aplicación Obtener ayuda, recibirán soporte técnico de los canales de soporte general de Microsoft, en lugar de admitir directamente desde Escritorio administrado de Microsoft. Para obtener más información, vea [Obtener ayuda para los usuarios](../working-with-managed-desktop/end-user-support.md).
+Microsoft Managed Desktop proporciona soporte técnico solo en inglés. Si los usuarios eligen otro idioma en la aplicación Obtener ayuda, recibirán soporte técnico de los canales generales de soporte técnico de Microsoft, en lugar de admitir directamente desde Microsoft Managed Desktop. Para obtener más información, vea [Obtener ayuda para los usuarios](../working-with-managed-desktop/end-user-support.md).
 
 Si los usuarios necesitan soporte técnico en otros idiomas, tendrás que proporcionarlo a través de orígenes de soporte técnico que no son de Microsoft o de tu propia organización.
 
 ### <a name="admin-support-and-operations"></a>Soporte técnico y operaciones de administración
-Escritorio administrado de Microsoft proporciona soporte técnico para administradores solo en inglés. Esto incluye el portal de administración y todas las comunicaciones con Escritorio administrado de Microsoft operaciones. Debe asumir que todas las interacciones e interfaces relacionadas con el administrador estarán en inglés, a menos que se especifique lo contrario.
+Microsoft Managed Desktop proporciona soporte técnico para administradores solo en inglés. Esto incluye el portal de administración y todas las comunicaciones con operaciones de escritorio administrado de Microsoft. Debe asumir que todas las interacciones e interfaces relacionadas con el administrador estarán en inglés, a menos que se especifique lo contrario.
 
 

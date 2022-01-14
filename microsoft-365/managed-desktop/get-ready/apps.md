@@ -3,19 +3,19 @@ title: Aplicaciones en Escritorio administrado de Microsoft
 description: Explica cómo se administran las aplicaciones, incluido cómo empaquetar, implementar y admitirlas.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e3ac937a4ff98d853ad16ef4ae5854da70fa4d99
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c53d6c03855da15e71d7d62ec6c26533e0a0db6e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213966"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035611"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Aplicaciones en Escritorio administrado de Microsoft
 
@@ -25,17 +25,17 @@ ms.locfileid: "60213966"
  
 ## <a name="apps-generally"></a>Aplicaciones en general
 
-Microsoft incluye determinadas aplicaciones clave junto con la licencia Microsoft 365 E3 o E5 necesaria para participar en Escritorio administrado de Microsoft. Sin embargo, aunque proporcionamos estas aplicaciones, aún tienes ciertas responsabilidades y acciones que completar.
+Microsoft incluye determinadas aplicaciones clave junto con la licencia Microsoft 365 E3 o E5 necesaria para participar en Microsoft Managed Desktop. Sin embargo, aunque proporcionamos estas aplicaciones, aún tienes ciertas responsabilidades y acciones que completar.
 
 También puedes implementar aplicaciones adicionales que no son de Microsoft para que los usuarios puedan autoservicio a través de la Portal de empresa o una instalación en segundo plano necesaria, todo con la canalización de implementación de Microsoft Intune. 
 
 ## <a name="apps-provided-by-microsoft"></a>Aplicaciones proporcionadas por Microsoft
 
-Se incluyen con la licencia de Escritorio administrado de Microsoft las versiones de 64 bits de las aplicaciones de Aplicaciones Microsoft 365 para empresas Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Teams y OneNote). Las versiones de hacer clic y ejecutar de Microsoft Project  y Visio no se incluyen de forma predeterminada, pero puede solicitar que se agregó. Para obtener más información acerca de estas aplicaciones, [vea Install Microsoft Project or Microsoft Visio on Escritorio administrado de Microsoft devices](../get-started/project-visio.md).
+La licencia de Escritorio administrado de Microsoft incluye versiones de 64 bits de las aplicaciones de Aplicaciones Microsoft 365 para empresas Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Teams y OneNote .) Las versiones de hacer clic y ejecutar de Microsoft Project  y Visio no se incluyen de forma predeterminada, pero puede solicitar que se agregó. Para obtener más información acerca de estas aplicaciones, [vea Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Qué hace Microsoft para admitir las aplicaciones que proporcionamos
 
-Microsoft proporcionará un servicio completo para la implementación, actualización y compatibilidad con las aplicaciones Aplicaciones Microsoft 365 para empresas incluidas. Las versiones de hacer clic y ejecutar de  Microsoft Project y Visio no se incluyen de forma predeterminada, pero Escritorio administrado de Microsoft proporcionará grupos de implementación que permiten al administrador de TI administrar licencias e implementar estas aplicaciones adecuadamente para su organización. Microsoft admitirá a los usuarios de estas aplicaciones a través Escritorio administrado de Microsoft de soporte técnico.
+Microsoft proporcionará un servicio completo para la implementación, actualización y compatibilidad con las aplicaciones Aplicaciones Microsoft 365 para empresas incluidas. Las versiones de hacer clic y ejecutar de  Microsoft Project y Visio no se incluyen de forma predeterminada, pero Microsoft Managed Desktop proporcionará grupos de implementación que permiten al administrador de TI administrar licencias e implementar estas aplicaciones de forma adecuada para su organización. Microsoft admitirá a los usuarios de estas aplicaciones a través de los canales de soporte técnico de Escritorio administrado de Microsoft.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Qué debes hacer para admitir las aplicaciones que proporcionamos
 
@@ -47,16 +47,16 @@ Todavía hay ciertas cosas que debes hacer con estas aplicaciones:
 
 ## <a name="apps-you-provide"></a>Aplicaciones que proporcionas
 
-Probablemente tenga otras aplicaciones que necesite para sus operaciones empresariales. Estas aplicaciones solo se pueden implementar en Escritorio administrado de Microsoft dispositivos mediante la canalización de Microsoft Intune de implementación de Microsoft Intune. Para obtener más información acerca de la implementación de aplicaciones, siga los pasos descritos en [Deploy apps to Escritorio administrado de Microsoft devices](../get-started/deploy-apps.md).
+Probablemente tenga otras aplicaciones que necesite para sus operaciones empresariales. Estas aplicaciones solo se pueden implementar en dispositivos de Escritorio administrado de Microsoft mediante la canalización de Microsoft Intune de implementación de microsoft. Para obtener más información acerca de la implementación de aplicaciones, siga los pasos descritos [en Implementar aplicaciones en dispositivos de Escritorio administrado de Microsoft.](../get-started/deploy-apps.md)
 
-### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Preparar tus propias aplicaciones para su inclusión en Escritorio administrado de Microsoft
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Preparar tus propias aplicaciones para su inclusión en Microsoft Managed Desktop
 Revisa tus aplicaciones y comprueba:
 
-- Ninguna de las aplicaciones está prohibida o tiene un comportamiento restringido, como se describe en [Escritorio administrado de Microsoft requisitos de la aplicación.](../service-description/mmd-app-requirements.md)
+- Ninguna de las aplicaciones está prohibida o tiene un comportamiento restringido, como se describe en [Requisitos de la](../service-description/mmd-app-requirements.md)aplicación de Escritorio administrado de Microsoft .
 - Las aplicaciones deben estar listas para la administración Microsoft Intune. Para obtener más información sobre este tema, consulta [Windows 10 implementación de aplicaciones con Microsoft Intune](/intune/apps-windows-10-app-deploy) y Agregar aplicaciones a [Microsoft Intune](/intune/apps-add).
 - Otros requisitos de empaquetado previo, como proporcionar claves de licencia, acuerdo con términos de licencia y establecer previamente conexiones de servidor.
 
-## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para Escritorio administrado de Microsoft
+## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para El escritorio administrado de Microsoft
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
 2. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).

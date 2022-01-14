@@ -1,20 +1,20 @@
 ---
-title: Implementar la configuración configurable en Escritorio administrado de Microsoft
-description: Implementar y realizar un seguimiento de los cambios de configuración configurables en Escritorio administrado de Microsoft.
+title: Implementar la configuración configurable en El escritorio administrado de Microsoft
+description: Implementar y realizar un seguimiento de los cambios de configuración configurables en Microsoft Managed Desktop.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, implementación, implementación por fases, configuración configurable
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 9a541ccf5a7bcd4197e1b24a2a6667995c08ea7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4950afb8446eb9b687749fc657a6826bb1eb7768
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177020"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035443"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de la configuración configurable: Escritorio administrado de Microsoft
 
@@ -29,7 +29,7 @@ Estado | Explicación
 Implementar | El cambio está a la espera de implementarse en este grupo.
 En curso | El cambio se aplica a los dispositivos activos de este grupo.
 Completo | El cambio completado en todos los dispositivos activos de este grupo.
-Error | El cambio no se pudo hacer en un 10 % de los dispositivos activos del grupo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con Escritorio administrado de Microsoft para solucionar problemas de la implementación.
+Error | El cambio no se pudo hacer en un 10 % de los dispositivos activos del grupo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de Escritorio administrado de Microsoft para solucionar problemas de la implementación.
 Reverted | El cambio se reviró al último cambio que se implementó correctamente en todos los grupos de implementación.
 
 ## <a name="deploy-changes"></a>Implementar cambios
@@ -39,7 +39,7 @@ Mostraremos la imagen de fondo del escritorio en estas instrucciones. Una vez qu
 **Para implementar cambios**
 
 1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**
-2. Busque la sección Escritorio administrado de Microsoft, seleccione **Configuración**.
+2. Busque la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
 3. En **área de trabajo** de estado de implementación, seleccione la configuración que desea implementar y, a continuación, seleccione la implementación por fases que desea implementar.
 4. Seleccione **Implementar** para implementar el cambio en uno de los grupos de implementación.
 
@@ -63,7 +63,7 @@ Mostraremos los pasos para revertir un cambio con la imagen en segundo plano de 
 **Para revertir un cambio**
 
 1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**
-2. Busque la sección Escritorio administrado de Microsoft, seleccione **Configuración**.
+2. Busque la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
 3. En **el área de trabajo** Estado de implementación, seleccione la configuración que desea revertir y, a continuación, seleccione la implementación por fases para revertir.
 4. En **¿Necesita revertir este cambio?**, seleccione **Revertir implementación**.
 

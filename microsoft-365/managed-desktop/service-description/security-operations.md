@@ -1,24 +1,24 @@
 ---
-title: Operaciones de seguridad en Escritorio administrado de Microsoft
+title: Operaciones de seguridad en Microsoft Managed Desktop
 description: Servicios y procesos proporcionados por el Centro de operaciones de seguridad
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b575bb506c2d70a73b858560a6fc10f931e95ba1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 078978aa84ecdd2ef3cd6b1022001feeb70d71c2
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178556"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034790"
 ---
-# <a name="security-operations-in-microsoft-managed-desktop"></a>Operaciones de seguridad en Escritorio administrado de Microsoft
+# <a name="security-operations-in-microsoft-managed-desktop"></a>Operaciones de seguridad en Microsoft Managed Desktop
 
-El Escritorio administrado de Microsoft Security Operations Center (SOC) se asocia con el personal de seguridad de la información para mantener su entorno de escritorio seguro. Nuestro equipo recibe y responde a todas las alertas de seguridad en dispositivos administrados con análisis de expertos y, cuando es necesario, impulsamos actividades de respuesta a incidentes de seguridad. Para obtener más información sobre cómo trabajar con el SOC, revise la documentación operativa en el portal de administración.
+Microsoft Managed Desktop Security Operations Center (SOC) se asocia con el personal de seguridad de la información para mantener su entorno de escritorio seguro. Nuestro equipo recibe y responde a todas las alertas de seguridad en dispositivos administrados con análisis de expertos y, cuando es necesario, impulsamos actividades de respuesta a incidentes de seguridad. Para obtener más información sobre cómo trabajar con el SOC, revise la documentación operativa en el portal de administración.
 
 El SOC ofrece cobertura 24/7/365 de empleados de tiempo completo de Microsoft con experiencia en el panorama de amenazas actual y emergente, incluidos métodos de ataque comunes a través de software, red o adversarios humanos.
 
@@ -31,8 +31,8 @@ El SOC proporciona estos servicios:
 
 ## <a name="processes"></a>Procesos
 
-- Escritorio administrado de Microsoft Las operaciones de seguridad están a cargo de empleados de Microsoft a tiempo completo en asociación con el Centro de operaciones de [Ciberdefensa de](https://www.microsoft.com/msrc/cdoc)Microsoft. 
-- Nuestro SOC usa señales colectivas de toda nuestra empresa, tanto internas como externas, para proteger sus dispositivos, incluso de cosas que todavía no hemos visto en Escritorio administrado de Microsoft.
+- Las operaciones de seguridad de escritorio administrado de Microsoft están a cargo de empleados de Microsoft a tiempo completo en asociación con el Centro de operaciones de [Ciberdefensa de](https://www.microsoft.com/msrc/cdoc)Microsoft. 
+- Nuestro SOC usa señales colectivas de toda nuestra empresa, tanto internas como externas, para proteger sus dispositivos, incluso de cosas que aún no hemos visto en El escritorio administrado de Microsoft.
 - Las soluciones de seguridad de Microsoft se alinean con muchos estándares de protección de ciberseguridad. Las operaciones de SOC se basan en la Guía de administración de respuesta a incidentes de seguridad informática del Instituto Nacional de Estándares y Tecnología (NIST 800-61 r2).
 - El proceso permite una recopilación adecuada de información y pruebas, para análisis y documentación y conocimientos posteriores a la recuperación en formas de defender mejor su entorno a través de estas fases:
     - Preparación, detección y análisis
@@ -40,5 +40,5 @@ El SOC proporciona estos servicios:
     - Erradicación
     - Recuperación
     - Actividad posterior al incidente
-- Escritorio administrado de Microsoft clientes pueden inscribirse en el servicio Expertos en amenazas de Microsoft cliente. El SOC se asocia con este servicio para comprender mejor las amenazas complejas que afectan a su organización, incluidas las consultas de alertas, los dispositivos potencialmente comprometidos, la causa raíz de una conexión de red sospechosa y otra inteligencia de amenazas con respecto a las campañas de amenazas persistentes avanzadas en curso. Para obtener más información, [vea Expertos en amenazas de Microsoft](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
+- Los clientes de Escritorio administrado de Microsoft pueden inscribirse en el servicio Expertos en amenazas de Microsoft cliente. El SOC se asocia con este servicio para comprender mejor las amenazas complejas que afectan a su organización, incluidas las consultas de alertas, los dispositivos potencialmente comprometidos, la causa raíz de una conexión de red sospechosa y otra inteligencia de amenazas con respecto a las campañas de amenazas persistentes avanzadas en curso. Para obtener más información, [vea Expertos en amenazas de Microsoft](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
 - El proceso de administración de amenazas y vulnerabilidades de SOC usa algunos de los servicios de Microsoft para ayudar a informar las recomendaciones de su organización para protegerse de las amenazas. El SOC consume datos del Centro de seguridad de Puntos de conexión de Microsoft Defender y de orígenes de datos de vulnerabilidad relevantes dentro y fuera de Microsoft para detectar vulnerabilidades y configuraciones erróneas y proporcionar informes que pueden actuar.

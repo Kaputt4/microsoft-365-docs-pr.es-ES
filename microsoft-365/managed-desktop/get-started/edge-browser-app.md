@@ -3,19 +3,19 @@ title: Nuevo Microsoft Edge
 description: Explica cómo se implementa y actualiza el nuevo explorador perimetral
 keywords: explorador, Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2534319ad890fbac20fa106216740f49eb5a3572
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ed4ec04ebe6ae0aae3a55880190b720b140252a7
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756680"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035479"
 ---
 # <a name="new-microsoft-edge-app"></a>Nueva Microsoft Edge aplicación
 
@@ -78,7 +78,7 @@ No se recomienda habilitar esta configuración, ya que permite a los usuarios vi
 
 Habilitado de forma predeterminada para ayudar a proteger a los usuarios.
 
-#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender Mensajes de SmartScreen para sitios
+#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender smartscreen solicita sitios
 
 **Valor predeterminado:** Habilitado
 

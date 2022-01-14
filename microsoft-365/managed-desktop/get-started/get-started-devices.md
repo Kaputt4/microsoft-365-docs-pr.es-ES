@@ -3,30 +3,30 @@ title: Prepare a los usuarios para que usen dispositivos
 description: Información que le ayudará a preparar a los usuarios para usar dispositivos
 keywords: Escritorio administrado de Microsoft, dispositivo, introducción, Microsoft 365
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 846efb6da0bc955ea2f93f38f71fb2f4348f2c96
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ee8e032c06587a3d8ac92f3be7ccdb5f6a5f6b1e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197118"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034970"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Prepare a los usuarios para que usen dispositivos
 
-Una vez que Escritorio administrado de Microsoft dispositivo está en manos del usuario, empezar con él es rápido y fácil. Los dispositivos vienen preconfigurados con la versión actual de Windows y las configuraciones y aplicaciones se instalan desde la nube a medida que el usuario completa la instalación. 
+Una vez que un dispositivo de Escritorio administrado de Microsoft está en manos del usuario, empezar con él es rápido y fácil. Los dispositivos vienen preconfigurados con la versión actual de Windows y las configuraciones y aplicaciones se instalan desde la nube a medida que el usuario completa la instalación. 
  
 Para que esto sea aún más fácil, ofrecemos una guía que guía a los usuarios a través de la configuración inicial y proporciona recursos de ayuda tanto para la configuración como para su uso posterior, si es necesario. Puede personalizar esta guía para incluir determinados detalles específicos de su organización. A continuación, distribuya la guía directamente a los usuarios junto con su dispositivo. 
 
 ## <a name="to-prepare-the-guide"></a>Para preparar la guía
 
-1. Descargue la guía: [Escritorio administrado de Microsoft: Introducción al dispositivo.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)
+1. Descargue la guía: [Escritorio administrado de Microsoft: Introducción a su dispositivo.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)
 2. Usa cualquier aplicación capaz de abrir archivos PDF para rellenar los detalles relevantes para tu organización:
     - El nombre de la red a la que los usuarios deben conectarse para continuar con la instalación (paso 3 de la guía)
     - El nombre de la cuenta de inquilino de Azure de su organización (paso 4 de la guía)
@@ -37,12 +37,12 @@ Para que esto sea aún más fácil, ofrecemos una guía que guía a los usuarios
 
 También proporcionamos una versión más genérica de la guía para aquellas organizaciones que no necesitan personalizarla.
 
-Basta con descargar la guía: [Escritorio administrado de Microsoft: Introducción al dispositivo (listo para usar).](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf)
+Basta con descargar la guía: Escritorio administrado de Microsoft: Introducción [al dispositivo (listo para usar).](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf)
 
 En este punto, estás listo para pasar a implementar aplicaciones:
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Microsoft Managed Desktop
 
 1. Acceder al [portal de administrador](access-admin-portal.md).
 1. [Agregar y verificar los contactos de administración en el portal de administrador](add-admin-contacts.md).

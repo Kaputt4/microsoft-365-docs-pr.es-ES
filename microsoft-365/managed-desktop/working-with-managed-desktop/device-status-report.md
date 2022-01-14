@@ -3,22 +3,22 @@ title: Informe de estado del dispositivo
 description: Explica el estado del dispositivo
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 0dea0293ffd377ba2950f1a37a66d07892612a9d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4071d3a76430dd34776b2d4df3eae2b32e350a11
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150347"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034850"
 ---
 # <a name="device-status-report"></a>Informe de estado del dispositivo
 
-Este informe agrega el estado de todos los dispositivos registrados para mostrar el uso del servicio Escritorio administrado de Microsoft usuario. Categorizamos los dispositivos en función de su actividad durante los últimos 28 días y de nuestra capacidad para mantener el dispositivo actualizado. Para ser actualizado por Windows Update tan pronto como sea posible, un dispositivo debe conectarse a Internet y no hibernar o pausarse durante un mínimo de seis horas, dos de las cuales deben ser continuas. Aunque es posible que se actualice un dispositivo que no cumpla estos requisitos, los dispositivos que los cumplan tienen la mayor probabilidad de actualizarse.
+Este informe agrega el estado de todos los dispositivos registrados para mostrar el uso del servicio de Escritorio administrado de Microsoft. Categorizamos los dispositivos en función de su actividad durante los últimos 28 días y de nuestra capacidad para mantener el dispositivo actualizado. Para ser actualizado por Windows Update tan pronto como sea posible, un dispositivo debe conectarse a Internet y no hibernar o pausarse durante un mínimo de seis horas, dos de las cuales deben ser continuas. Aunque es posible que se actualice un dispositivo que no cumpla estos requisitos, los dispositivos que los cumplan tienen la mayor probabilidad de actualizarse.
 
 :::image type="content" source="../../media/mmd-device-status.png" alt-text="Informe que muestra el gráfico de donut del estado de actividad del dispositivo en la parte superior izquierda, ver filtros en la parte superior derecha con un botón para generar el informe y tabla de detalles a lo largo de la parte inferior":::
 

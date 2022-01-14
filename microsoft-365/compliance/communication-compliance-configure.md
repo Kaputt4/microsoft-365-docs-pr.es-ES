@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 75a8c5e86d2d07a0b6a33e93029f5d650eef3f52
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: afefa32227750a70c70d2cb8b10ebfda1a2ae08e
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283022"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034670"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -309,3 +309,5 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 Después de completar estos pasos para crear la primera directiva de cumplimiento de comunicaciones, empezará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 5 de este artículo.
 
 Para obtener más información sobre cómo investigar alertas de cumplimiento de comunicaciones, vea [Investigar y corregir alertas de cumplimiento de comunicaciones.](communication-compliance-investigate-remediate.md)
+
+Para mantenerse al día con las últimas actualizaciones de cumplimiento de comunicaciones, seleccione **Novedades** en el cumplimiento [de la comunicación](https://compliance.microsoft.com/) para su organización.

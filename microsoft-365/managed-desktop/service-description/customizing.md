@@ -3,18 +3,18 @@ title: Excepciones para el plan de servicios
 description: Cómo solicitar excepciones al plan de servicio estándar
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ed071c31d4e5898d790e0a723dec8c2e332da1ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b791e20f68d16cdcda415593a9aa42cb7438c084
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60698398"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034910"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Excepciones para el plan de servicios
 
@@ -32,7 +32,7 @@ Una excepción es cualquier adición o cambio a la configuración base de Micros
 |Controladores de hardware o software     |   Controladores de dispositivo, restringidos por los [requisitos de la aplicación](mmd-app-requirements.md)      |
 |Directivas     | Windows 10 o Aplicaciones Microsoft 365 para empresas en un dispositivo administrado        |
 |Dispositivos     | Dispositivos que no están en la lista de dispositivos de Escritorio [administrado de](device-list.md) Microsoft        |
-|Otro     |  Cualquier cosa no cubierta por las otras áreas       |
+|Other     |  Cualquier cosa no cubierta por las otras áreas       |
  
 ## <a name="request-an-exception"></a>Solicitar una excepción
 

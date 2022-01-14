@@ -3,18 +3,18 @@ title: Implementar aplicaciones en dispositivos
 description: Información para agregar e implementar aplicaciones en dispositivos de Escritorio administrado de Microsoft.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 15b41681d94d8f33176d140ebc00cc74319e69ff
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: ab4f1719d03cb3bc08a265611a45544762c2de96
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60334509"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62034898"
 ---
 # <a name="deploy-apps-to-devices"></a>Implementar aplicaciones en dispositivos
 Parte de la incorporación a Microsoft Managed Desktop incluye agregar e implementar aplicaciones en los dispositivos del usuario. Una vez que estés usando el portal de Escritorio administrado de Microsoft, puedes agregar e implementar tus aplicaciones. 
@@ -67,7 +67,7 @@ Si no te has registrado con Microsoft Store para Empresas, puedes registrarte cu
 4. En **Herramientas de administración,** compruebe que Intune aparece y que el estado es **Activo**.  
     
 **Para forzar una sincronización entre Intune y Microsoft Store para Empresas**
-1. Inicie sesión en el centro [Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Conectores de administración** de  >  **inquilinos y tokens**  >  **Microsoft Store para Empresas**.
 3. Selecciona **Habilitado** para habilitar Microsoft Store para Empresas sincronización te permite acceder a aplicaciones **compradas por volumen con Intune.** 
 4. Selecciona tu idioma preferido y, a continuación, selecciona **Sincronizar** para obtener las aplicaciones que has comprado del Microsoft Store en Intune.

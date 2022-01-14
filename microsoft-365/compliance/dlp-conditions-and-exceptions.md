@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: 4ab7376b234b1f2299723c39a6f9c226d2f40a00
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7c57d3f1f4e6c05cf5fe346440d59e7c5f9daac2
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933484"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041047"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones de directiva DLP, excepciones y acciones
 
@@ -180,6 +180,7 @@ En esta tabla se describen las acciones disponibles en DLP.
 |Agregar destinatario|AddRecipients|Primera propiedad: *Field*</br>Segunda propiedad: *Addresses*|Agrega uno o varios destinatarios al campo Para/Cc/CCO del mensaje. Este parámetro usa la sintaxis: @{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
 |Agregar el administrador del remitente como destinatario|AddRecipients|Primera propiedad: *AddedManagerAction*</br>Segunda propiedad: *Field*|Agrega el administrador del remitente al mensaje como el tipo de destinatario especificado (To, Cc o Bcc) o redirige el mensaje al administrador del remitente sin notificar al remitente ni al destinatario. Esta acción solo funciona si el atributo Manager del remitente se define en Active Directory. Este parámetro usa la sintaxis: @{AddManagerAsRecipientType = "<Para \| cc \| cco>"}|
 Asunto de anteponer|PrependSubject|Cadena|Agrega el texto especificado al principio del campo Subject del mensaje. Considere la posibilidad de usar un espacio o un signo de dos puntos (:) como último carácter del texto especificado para diferenciarlo del texto del asunto original.  </br>Para evitar que se agregue la misma cadena a los mensajes que ya contienen el texto del asunto (por ejemplo, respuestas), agregue la excepción "El asunto contiene palabras" (ExceptIfSubjectContainsWords) a la regla.|
+|Modificar asunto|ModifySubject|PswsHashTable | Quite el texto de la línea de asunto que coincida con un patrón específico y reempláctelo por texto diferente. Consulte el ejemplo siguiente. Puede: </br>- **Reemplazar** todas las coincidencias del asunto por el texto de reemplazo </br>- **Anexar** para quitar todas las coincidencias del asunto e inserta el texto de reemplazo al final del asunto. </br>- **Anteponer para** quitar todas las coincidencias e insertar el texto de reemplazo al principio del asunto.|
 |Aplicar declinación de responsabilidades HTML|ApplyHtmlDisclaimer|Primera propiedad: *Text*</br>Segunda propiedad: *Location*</br>Tercera propiedad: *Acción de reserva*|Aplica la declinación de responsabilidades HTML especificada a la ubicación necesaria del mensaje.</br>Este parámetro usa la sintaxis: @{ Text = " " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }|
 |Quitar Cifrado de mensajes de Office 365 protección de derechos y derechos|RemoveRMSTemplate|No aplicable|Quita Office 365 cifrado aplicado en un correo electrónico|
 |

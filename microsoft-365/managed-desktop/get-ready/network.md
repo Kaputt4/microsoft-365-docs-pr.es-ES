@@ -3,21 +3,21 @@ title: Configuración de red para el Escritorio administrado de Microsoft
 description: Cómo configurar servidores proxy y puntos de conexión necesarios
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 206dde91faf7a5a1eac300ce753d74ed2024cd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 5d1cd56858e1950f16ed62d5dbe2c75338b928d7
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283982"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035191"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el Escritorio administrado de Microsoft
 

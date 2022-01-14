@@ -3,23 +3,23 @@ title: Usar el control de aplicaciones
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c1600381062aa61b79ba757d530afef07aca26e6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d7f4bff519fd06a9e8a43030426d7820d68f5153
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208678"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035118"
 ---
 # <a name="work-with-app-control"></a>Usar el control de aplicaciones
 
-Una vez implementado el control de la aplicación en el entorno, tanto tú como Escritorio administrado de Microsoft operaciones tienen responsabilidades continuas. Por ejemplo, es posible que quieras agregar una nueva aplicación en el entorno o agregar (o quitar) un firmante de confianza. Para mejorar la seguridad, todas las aplicaciones deben estar firmadas con código antes de liberarlas a los usuarios. Los detalles del editor de una aplicación incluyen información sobre el firmante.
+Una vez implementado el control de la aplicación en el entorno, tanto tú como las operaciones de escritorio administrado de Microsoft tienen responsabilidades continuas. Por ejemplo, es posible que quieras agregar una nueva aplicación en el entorno o agregar (o quitar) un firmante de confianza. Para mejorar la seguridad, todas las aplicaciones deben estar firmadas con código antes de liberarlas a los usuarios. Los detalles del editor de una aplicación incluyen información sobre el firmante.
 
 
 ## <a name="add-a-new-app"></a>Agregar una nueva aplicación
@@ -30,14 +30,14 @@ Para agregar una nueva aplicación, sigue estos pasos:
 2. Implementa la aplicación en cualquier dispositivo en el anillo de prueba. 
 3. Prueba la aplicación según tus procesos empresariales estándar. 
 4. Compruebe visor de eventos en Registros de aplicaciones y **servicios\Microsoft\Windows\AppLocker**, buscando cualquier **evento 8003** **o 8006.** Estos eventos indican que la aplicación se bloquearía. Para obtener más información acerca de todos los eventos de App Locker y sus significados, consulta [Using Event Viewer with AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker).
-5. Si encuentra alguno de estos eventos, abra una solicitud de firmante con Escritorio administrado de Microsoft Operations.
+5. Si encuentra alguno de estos eventos, abra una solicitud de firmante con Operaciones de escritorio administrado de Microsoft.
 
 ## <a name="add-or-remove-a-trusted-signer"></a>Agregar (o quitar) un firmante de confianza
 
 Cuando abra una solicitud de firmante, primero deberá proporcionar algunos detalles importantes del editor. A continuación, siga estos pasos:
 
 1. [Recopilar detalles del editor](#gather-publisher-details).
-2. Abra un vale con Escritorio administrado de Microsoft operaciones para solicitar la regla de firmante e incluya los siguientes detalles:  
+2. Abra un vale con Operaciones de escritorio administrado de Microsoft para solicitar la regla de firmante e incluya los siguientes detalles:  
     - Nombre de la aplicación 
     - Versión de la aplicación 
     - Descripción 
@@ -67,7 +67,7 @@ Puede pausar o revertir la implementación en cualquier momento durante el lanza
 
 Para obtener acceso a los datos del editor de una aplicación, siga estos pasos:
 
-1. Busque un Escritorio administrado de Microsoft en el anillo de prueba que tenga aplicada una directiva de modo de auditoría. 
+1. Busque un dispositivo de Escritorio administrado de Microsoft en el anillo De prueba que tenga aplicada una directiva de modo de auditoría. 
 2. Intente instalar la aplicación en el dispositivo.
 3. Abre el Visor de eventos en ese dispositivo. 
 4. En el Visor de eventos, vaya a Registros de aplicaciones y **servicios\Microsoft\Windows** y, a continuación, **seleccione AppLocker**. 

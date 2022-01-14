@@ -3,19 +3,19 @@ title: Requisitos previos del Escritorio administrado de Microsoft
 description: Licencias, cuentas de Azure, configuración de autenticación y Microsoft 365 configuración para configurar antes de inscribirse en Microsoft Managed Desktop
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: b8bba3832572b6834c46806eca048b568cc3d761
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 8b2fc786ee8887c6050dd67721f8c8a23d54e2a3
+ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284402"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62035179"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos del Escritorio administrado de Microsoft
 
