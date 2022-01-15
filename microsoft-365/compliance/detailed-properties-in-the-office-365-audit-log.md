@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: En este artículo se proporcionan descripciones de propiedades adicionales incluidas al exportar resultados de un registro Office 365 registro de auditoría.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e5b3c06a35811caf3a880988659203d508881d06
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1293cdda6ae99fc64b331b7e10cf827c62504456
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942361"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054961"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propiedades detalladas del registro de auditoría
 
@@ -85,7 +85,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (según el se
 |TeamName|Nombre de un equipo en Microsoft Teams.|Microsoft Teams|
 |UserAgent|Información sobre el explorador del usuario. Esta información la proporciona el explorador.|SharePoint|
 |UserDomain|Información de identidad sobre la organización del inquilino del usuario (actor) que realizó la acción.|Azure Active Directory|
-|UserId|El usuario que realizó la acción (especificada en la **propiedad Operation)** que hizo que se registrara el registro. Los registros de auditoría de la actividad realizada por cuentas del sistema (como SHAREPOINT\system o NT AUTHORITY\SYSTEM) también se incluyen en el registro de auditoría. Otro valor común para la propiedad UserId es app@sharepoint. Esto indica que el "usuario" que llevó a cabo esta actividad era una aplicación que tiene los permisos necesarios en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records). |Todo|
+|UserId|El usuario que realizó la acción (especificada en la **propiedad Operation)** que hizo que se registrara el registro. Los registros de auditoría de la actividad realizada por cuentas del sistema (como SHAREPOINT\system o NT AUTHORITY\SYSTEM) también se incluyen en el registro de auditoría. Otro valor común para la propiedad UserId es app@sharepoint. Esto indica que el "usuario" que llevó a cabo esta actividad era una aplicación que tiene los permisos necesarios en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. <br/><br/>Para más información, consulte lo siguiente:<br/> [El usuario \@ de sharepoint de la aplicación en registros de auditoría](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> o <br/>[Cuentas del sistema en Exchange de auditoría de buzones de correo](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Todo|
 |UserKey|Un identificador alternativo para el usuario identificado en la **propiedad UserID.** Por ejemplo, esta propiedad se rellena con el identificador único de passport (PUID) para los eventos realizados por los usuarios en SharePoint. Esta propiedad también puede especificar el mismo valor que la **propiedad UserID** para los eventos que se producen en otros servicios y eventos realizados por cuentas del sistema.|Todo|
 |UserSharedWith|El usuario con el que se compartió un recurso. Esta propiedad se incluye si el valor de la **propiedad Operation** es **SharingSet**. Este usuario también aparece en la **columna Compartido con** del informe.|SharePoint|
 |UserType|El tipo de usuario que llevó a cabo la operación. Los siguientes valores indican el tipo de usuario. <br/> <br/> **0:** un usuario normal. <br/>**2-** Un administrador de su Microsoft 365 organización.<sup> 1</sup> <br/>**3:** una cuenta de sistema de centro de datos o administrador de centros de datos de Microsoft. <br/>**4:** una cuenta del sistema. <br/>**5:** una aplicación. <br/>**6:** entidad de servicio.<br/>**7:** una directiva personalizada.<br/>**8:** una directiva del sistema.|Todo|

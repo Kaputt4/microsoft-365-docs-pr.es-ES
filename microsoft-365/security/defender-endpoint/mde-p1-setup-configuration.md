@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/14/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a156b7232c20703c0f2eb320592a596e671d16f9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 58b1ed0ab43481d8c35244efbb25d8e46c830272
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942733"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055009"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurar y configurar Microsoft Defender para el plan de extremo 1
 
@@ -51,7 +51,7 @@ En la tabla siguiente se enumeran los requisitos básicos para Defender para el 
 
 | Requisito | Descripción |
 |:---|:---|
-| Requisitos de licencias | Plan 1 de Defender para punto de conexión |
+| Requisitos de licencias | Defender for Endpoint Plan 1 (anteriormente denominado Microsoft Defender para Endpoint Lite)|
 | Requisitos de los exploradores | Microsoft Edge <br/> Versión 11 de Internet Explorer <br/> Google Chrome |
 | Sistemas operativos | Windows 10, versión 1709 o posterior <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave) <br/>iOS <br/>Sistema operativo Android  |
 | Datacenter | Una de las siguientes ubicaciones de centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |
@@ -147,7 +147,7 @@ Para configurar la protección de próxima generación en Microsoft Endpoint Man
 
 La reducción de superficie de ataque se trata de reducir los lugares y formas en que la organización está abierta al ataque. Defender for Endpoint Plan 1 incluye varias características y funcionalidades que te ayudarán a reducir las superficies de ataque en todos los puntos de conexión. Estas características y funcionalidades se enumeran en la tabla siguiente: <br/><br/>
 
-| Característica/funcionalidad | Description |
+| Característica/funcionalidad | Descripción |
 |:---|:---|
 | [Reglas de la reducción de la superficie expuesta a ataques](#attack-surface-reduction-rules) | Configure las reglas de reducción de superficie de ataque para restringir los comportamientos de riesgo basados en software y ayudar a mantener la organización segura. Las reglas de reducción de superficie de ataque se aplican a determinados comportamientos de software, como<br/>- Iniciar archivos ejecutables y scripts que intentan descargar o ejecutar archivos <br/>- Ejecución de scripts ofuscados o sospechosos <br/>- Realizar comportamientos que las aplicaciones normalmente no inician durante el trabajo diario normal <br/><br/>Estos comportamientos de software a veces se ven en aplicaciones legítimas. Sin embargo, estos comportamientos suelen considerarse riesgosos porque los atacantes suelen abusar de ellos a través del malware.  |
 | [Mitigación de ransomware](#ransomware-mitigation) | Configure la mitigación de ransomware configurando el acceso controlado a carpetas, lo que ayuda a proteger los datos valiosos de su organización frente a amenazas y aplicaciones malintencionadas, como ransomware. | 

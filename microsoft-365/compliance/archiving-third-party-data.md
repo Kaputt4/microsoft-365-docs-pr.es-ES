@@ -1,5 +1,5 @@
 ---
-title: Archivar datos de terceros
+title: Usar conectores de datos para importar y archivar datos de terceros en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,18 +21,18 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos Microsoft 365 buzones de correo.
-ms.openlocfilehash: c96e1f6d1663fd932ceb7ffd56a727cb718f5d22
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 06833acd3ea29e30d8789fbb05e0a081309c7f2b
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61874093"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055021"
 ---
-# <a name="archive-third-party-data-in-microsoft-365"></a>Archivar datos de terceros en Microsoft 365
+# <a name="learn-about-connectors-for-third-party-data"></a>Información sobre conectores para datos de terceros
 
-Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, a buzones de correo de su Microsoft 365 organización. Una ventaja principal del uso de conectores de datos para importar y archivar datos de terceros en Microsoft 365 es que puede aplicar varias soluciones de cumplimiento de Microsoft 365 después de importarlos. Esto le ayuda a asegurarse de que los datos que no son de Microsoft de su organización cumplen con las normativas y estándares que afectan a su organización.
+Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos que no son de Microsoft, de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, a buzones de correo de su Microsoft 365 organización. Una ventaja principal de usar conectores de datos para importar y archivar datos de terceros en Microsoft 365 es que puede aplicar varias soluciones de cumplimiento de Microsoft 365 a los datos después de importarlos. Esto le ayuda a asegurarse de que los datos que no son de Microsoft de su organización cumplen con las normativas y estándares que afectan a su organización.
 
-Vea esta guía interactiva que muestra cómo crear conectores de datos para archivar datos de terceros y ejemplos de aplicación de soluciones de cumplimiento a datos después de importarlos a Microsoft 365.
+Vea esta guía interactiva que muestra cómo crear conectores de datos para importar y archivar datos de terceros y ejemplos de aplicación de soluciones de cumplimiento a datos después de importarlos a Microsoft 365.
 
 > [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
 

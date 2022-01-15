@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 18b56a4e427053f29dcc054ec9384b4e34307c40
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 4fef837b053f71e2bd725f07204605d3ab0a55a1
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034622"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041175"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -372,6 +372,7 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 - Agregar el administrador del remitente como destinatario
 - Se quitó el cifrado de mensajes de O365 y la protección de derechos
 - Anteponer el asunto del correo electrónico
+- Modificar asunto de correo electrónico
 - Agregar declinación de responsabilidades HTML
 
 #### <a name="sharepoint-sites-location-actions"></a>SharePoint de ubicación de sitios:

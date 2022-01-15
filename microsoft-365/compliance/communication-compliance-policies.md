@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5078943e9b2bf158a457d263b2db65e9bfca7659
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: f27feb9a68340bdb39fa57269c4d64f0d9ea561e
+ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034997"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62041023"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -117,6 +117,9 @@ Tiene la opción de incluir tipos de información confidencial como parte de la 
 - Medicina y salud
 - Privacidad
 - Tipo de información personalizada
+
+> [!IMPORTANT]
+> Los SIT tienen dos formas diferentes de definir los parámetros de recuento de instancias únicos máximos. Para obtener más información, consulte [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 Para obtener más información acerca de los detalles de información confidencial y los patrones incluidos en los tipos predeterminados, vea [Definiciones](sensitive-information-type-entity-definitions.md)de entidad de tipo de información confidencial .
 

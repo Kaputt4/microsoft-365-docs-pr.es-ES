@@ -17,14 +17,14 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/23/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3c6954b683287ffaaec793dfffefff25f1d4def8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: eeb1111ae43ca00b7beb9350e72e3d9f62d9dd3c
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936070"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049268"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -41,7 +41,7 @@ La protección contra alteraciones está disponible para dispositivos que ejecut
 - Windows Server 2022
 - Windows server, versión 1803 o posterior
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 
 > [!NOTE]
 > La protección contra alteraciones Windows Server 2012 R2 está disponible para dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, vea [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
@@ -148,6 +148,8 @@ Si forma parte del equipo de seguridad de su organización y la suscripción inc
 
 ### <a name="requirements-for-managing-tamper-protection-in-intune"></a>Requisitos para administrar la protección contra alteraciones en Intune
 
+- Los dispositivos deben [incorporarse a Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/onboarding).
+
 - Debe tener [asignados los permisos adecuados,](/microsoft-365/security/defender-endpoint/assign-portal-access) como el administrador global, el administrador de seguridad o las operaciones de seguridad.
 
 - Su organización usa [Intune para administrar dispositivos](/intune/fundamentals/what-is-device-management). ([Las licencias de Intune](/intune/fundamentals/licenses) son necesarias; Intune se incluye en Microsoft 365 E5/E3, Enterprise Mobility + Security E5/E3, Microsoft 365 Empresa Premium, Microsoft 365 F1/F3, Microsoft 365 Government G5/G3 y Intune para Educación).
@@ -196,11 +198,11 @@ Si usa la versión [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-v
 > [!NOTE]
 > El procedimiento se puede usar para extender la protección contra alteraciones a dispositivos que ejecutan Windows 10, Windows 10 Enterprise varias sesiones, Windows 11, Windows 11 Enterprise varias sesiones, Windows Server 2019 y Windows Server 2022. Asegúrese de revisar los requisitos previos y otra información en los recursos mencionados en este procedimiento.
 
-1. Configurar la conexión de inquilino. Para obtener más información, [consulte Microsoft Endpoint Manager tenant attach: Device sync and device actions](/mem/configmgr/tenant-attach/device-sync-actions).
+1. Configurar la conexión de inquilino. Para obtener más información, vea Introducción: Crear e implementar directivas de seguridad [de extremo desde el Centro de administración.](/mem/configmgr/tenant-attach/endpoint-security-get-started)
 
 2. En el [centro Microsoft Endpoint Manager administración,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Endpoint **security** Antivirus y, a continuación, \> elija + **Crear directiva.**
 
-   - En la **lista** Plataforma, seleccione **Windows 10 y Windows Server (ConfigMgr)** o **Windows 11 y Windows Server (ConfigMgr).**
+   - En la **lista** Plataforma, **seleccione Windows 10, Windows 11 y Windows Server (ConfigMgr).**
    - En la **lista Perfil,** **seleccione Seguridad de Windows experiencia (versión preliminar).**
 
 3. Implemente la directiva en la colección de dispositivos.
@@ -251,7 +253,7 @@ La protección contra alteraciones se integra [con las & de administración de v
 
 Para obtener más información sobre la administración & vulnerabilidad de amenazas, consulte [Threat & Vulnerability Management en Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>¿En qué versiones de Windows puedo configurar la protección contra alteraciones?
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: 0c9d376889d99ba9d689e30f4444f305fab22ad9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 03ebf5c21e40d53e87067866e05fc37c2c255331
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933676"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049365"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
@@ -68,7 +68,7 @@ Aunque Bookings es una característica de Microsoft 365, no todos los miembros d
     Al anular la selección de este cuadro, el personal puede tener horas personalizadas que limiten aún más el momento en que se pueden reservar. Esto es útil para escenarios en los que un miembro del personal solo puede estar en el sitio martes y miércoles, o dedican sus mañanas para un tipo de citas y sus tardes para otros tipos.
 
     > [!NOTE]
-    > Los primeros 100 miembros del personal que agregue a la página de personal aparecerán cuando asigne miembros del personal a un servicio.
+    > Bookings admite hasta 100 miembros del personal en un calendario de bookings.
 
 ## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Convertir a un usuario de Bookings en superusual sin agregarlos como personal en Bookings
 

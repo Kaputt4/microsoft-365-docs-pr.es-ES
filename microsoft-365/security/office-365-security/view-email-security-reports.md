@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc60c0ed388a8bc30158fbf7366e16776b0b5dd5
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d8277a26ace7b2fa2fcd2eee6f622c70ad77b205
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872098"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054945"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -534,14 +534,14 @@ En la **vista Ver datos por correo electrónico no \> deseado** **y** Desglose d
 - **Filtro general**
 - **Detección de análisis mixta:** varios filtros contribuyeron al veredicto del mensaje.
 - **Coincidencia de huellas digitales:** el mensaje se marcó como malo debido a mensajes anteriores.
-- **Reputación de dominio**
+- **Reputación del** dominio: este mensaje se consideró correo no deseado en función de la reputación del dominio del remitente.
 - **Masivo:** elementos detectados como que superan la configuración masiva del usuario.
 - **Reputación ip:** el mensaje se consideró correo no deseado en función de la reputación de la dirección IP de envío.
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -643,7 +643,7 @@ En las vistas  Ver datos por **\> suplantación** de identidad de correo electr�
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -716,7 +716,7 @@ En las vistas Ver datos por correo electrónico phish **, \>** Ver datos  por co
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**

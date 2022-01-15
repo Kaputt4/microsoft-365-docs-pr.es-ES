@@ -13,14 +13,14 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6632604e426d6dad5dc7c272d343c2d6b8b59aac
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f0562040a98d2efd5cdc683dd322363c2057c991
+ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940415"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62049329"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -125,6 +125,12 @@ sc query Windefend
 ```
 
 El `sc query` comando devuelve información sobre el Antivirus de Microsoft Defender servicio. Cuando Antivirus de Microsoft Defender se está ejecutando, `STATE` el valor muestra `RUNNING` .
+
+Para ver todos los servicios que no se están ejecutando, ejecute el siguiente cmdlet de Powershell:
+
+```console
+sc query state= all
+```
 
 ## <a name="update-antimalware-security-intelligence"></a>Actualizar inteligencia de seguridad antimalware
 
