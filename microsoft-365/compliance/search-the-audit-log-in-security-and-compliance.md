@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: c59c9c06dfb8b15b6ee4bbd54cf86f54ad816e0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2b42e33bf57e2cfbc855c06ff4dfeefc9a8e9eb0
+ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937489"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62054985"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -668,7 +668,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Elementos de buzón a los que se ha accedido|MailItemsAccessed|Se han leído mensajes o se obtuvo acceso a los mensajes del buzón. Los registros de auditoría de esta actividad se activan de una de estas dos maneras: cuando un cliente de correo (por ejemplo, Outlook) realiza una operación de vinculación en mensajes o cuando los protocolos de correo (como Exchange ActiveSync o IMAP) sincronizan elementos en una carpeta de correo. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Analizar los registros de auditoría de esta actividad es útil al investigar cuentas de correo electrónico vulnerables. Para obtener más información, vea la sección "Eventos de Auditoría avanzada" en [Auditoría avanzada](advanced-audit.md#advanced-audit-events). |
-|Permisos de buzón de delegado agregados|Add-MailboxPermission|Un administrador asignó el permiso de FullAccess del buzón a un usuario (conocido como delegado) para el buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona, así como leer y administrar el contenido del buzón.|
+|Permisos de buzón de delegado agregados|Add-MailboxPermission|Un administrador asignó el permiso de FullAccess del buzón a un usuario (conocido como delegado) para el buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona, así como leer y administrar el contenido del buzón. El registro de auditoría de esta actividad también se genera cuando una cuenta del sistema del servicio Microsoft 365 realiza tareas de mantenimiento periódicamente en nombre de su organización. Una tarea común que realiza una cuenta del sistema es actualizar los permisos de los buzones del sistema. Para obtener más información, vea Cuentas del sistema en [Cuentas del sistema en los registros de auditoría del buzón de correo de Exchange](#system-accounts-in-exchange-mailbox-audit-records).|
 |Se ha agregado o quitado un usuario con acceso delegado a la carpeta calendario|UpdateCalendarDelegation|Se ha agregado o quitado un usuario como delegado hacia el calendario del buzón de otro usuario. La delegación de calendario otorga a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.|
 |Se agregaron permisos a la carpeta|AddFolderPermissions|Un permiso de la carpeta se ha cambiado. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|
 |Mensajes copiados a otra carpeta|Copiar|Se ha copiado un mensaje a otra carpeta.|
@@ -691,6 +691,12 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Usuario que ha iniciado sesión en un buzón|MailboxLogin|El usuario inició sesión en su buzón.|
 |Etiquetar mensaje como un registro||Un usuario ha aplicado una etiqueta de retención a un mensaje de correo electrónico y esa etiqueta está configurada para marcar el elemento como un registro. |
 ||||
+
+#### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Cuentas del sistema en los registros de auditoría del buzón de correo de Exchange
+
+En los registros de auditoría de algunas actividades del buzón de correo (especialmente **Add-MailboxPermissions**), puede observar que el usuario que realizó la actividad (y se identifica en los campos User y UserId) es NT AUTHORITY\SYSTEM o NT AUTHORITY\SYSTEM(Microsoft.Exchange. Servicehost). Esto indica que el “usuario” que realizó la actividad era una cuenta del sistema en el servicio Exchange en la nube de Microsoft. Esta cuenta del sistema suele realizar tareas de mantenimiento programadas en nombre de su organización. Por ejemplo, una actividad auditada común realizada por NT AUTHORITY\SYSTEM(Microsoft.Exchange. ServiceHost) es actualizar los permisos en DiscoverySearchMailbox, que es un buzón de correo del sistema. El propósito de esta actualización es comprobar que el permiso FullAccess (que es el valor predeterminado) está asignado al grupo de roles Administración de detección para DiscoverySearchMailbox. Esto garantiza que los administradores de eDiscovery puedan realizar las tareas necesarias en su organización.
+
+Otra cuenta de usuario del sistema que puede identificarse en un registro de auditoría para **Add-MailboxPermission** es Administrator@apcprd03.prod.outlook.com. Esta cuenta de servicio también se incluye en los registros de auditoría del buzón de correo relacionados con la comprobación y actualización del permiso FullAccess que se asigna al grupo de roles Administración de detección para el buzón de correo del sistema DiscoverySearchMailbox. En concreto, los registros de auditoría que identifican la cuenta Administrator@apcprd03.prod.outlook.com se desencadenan normalmente cuando el personal de soporte técnico de Microsoft ejecuta una herramienta de diagnóstico de roles RBAC en nombre de su organización.
 
 ### <a name="user-administration-activities"></a>Actividades de administración de usuarios
 
