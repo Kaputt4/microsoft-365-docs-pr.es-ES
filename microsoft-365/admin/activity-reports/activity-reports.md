@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: a881f6829d99ef8e7a47340140609cbc75d7e5c3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 36176ceee1ace993a95e661ab5d71ee062956692
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370313"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074407"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -75,7 +75,7 @@ Usuarios que tengan los permisos siguientes:
 
 - Lector de informes
 
-- Administrador de servicios de Teams
+- Administrador de Teams
 
 - Administrador de comunicaciones de Teams
     

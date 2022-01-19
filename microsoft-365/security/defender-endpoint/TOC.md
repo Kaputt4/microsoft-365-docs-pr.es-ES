@@ -76,7 +76,6 @@
 #### [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
 #### [Crear una regla de notificación de incorporación o retirada](onboarding-notification.md)
 
-#### [Términos de licencia de la aplicación](mde-terms-windows.md)
 
 
 ### [Microsoft Defender para punto de conexión en otros sistemas operativos]()
@@ -118,7 +117,7 @@
 
 ##### [Privacidad](mac-privacy.md)
 ##### [Recursos](mac-resources.md)
-##### [Términos de licencia de la aplicación](mde-terms-mac.md)
+
 
 #### [Microsoft Defender para punto de conexión en Linux]()
 ##### [Introducción a Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
@@ -185,7 +184,6 @@
 
 ###### [Privacidad](ios-privacy.md)
 
-##### [Términos de licencia de la aplicación de Microsoft Defender para punto de conexión](mde-terms-mobile.md) 
 
 ### [Administrar las opciones de configuración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager](security-config-management.md)
 
@@ -270,13 +268,14 @@
 #### [Comprender las reglas de reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
 #### [Reglas de la reducción de la superficie expuesta a ataques (ASR)]()
 ##### [Información acerca de las reglas de ASR](attack-surface-reduction.md)
-##### [Implementar reglas de ASR](attack-surface-reduction-rules-deployment.md)
-###### [Fase 1 de implementación de reglas de ASR: planificar](attack-surface-reduction-rules-deployment-phase-1.md)
-###### [Fase 2 de implementación de reglas de ASR: probar](attack-surface-reduction-rules-deployment-phase-2.md)
-###### [Fase 3 de implementación de reglas de ASR: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
-###### [Fase 4 de implementación de reglas de ASR: hacer operativo](attack-surface-reduction-rules-deployment-phase-4.md)
+##### [Guía de implementación de las reglas de ASR]()
+###### [Introducción a la implementación de reglas de ASR](attack-surface-reduction-rules-deployment.md)
+###### [Fase 1: Planificar](attack-surface-reduction-rules-deployment-phase-1.md)
+###### [Fase 2: Probar](attack-surface-reduction-rules-deployment-phase-2.md)
+###### [Fase 3: Implementar](attack-surface-reduction-rules-deployment-phase-3.md)
+###### [Fase 4: Operar](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [Referencia de reglas de ASR](attack-surface-reduction-rules-reference.md)
-##### [Habilitar métodos alternativos de reglas ASR](enable-attack-surface-reduction.md)
+##### [Habilitar métodos alternativos de configuración para las reglas de ASR](enable-attack-surface-reduction.md)
 #### [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)
 
 ### Protección de última generación
