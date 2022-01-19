@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d13c587c86874354e05422b2ff105d923e234c61
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: ff515e927affcc02d92c6fe54b38ed6faf756d9f
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054889"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074707"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -65,7 +65,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |-----------|-------:|----|----|--------|----|
 |[Aplicar, cambiar o eliminar manualmente la etiqueta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a nuevos documentos                                         | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a documentos existentes | Vista previa: [Canal Beta](https://office.com/insider) | Vista previa: [Canal Beta](https://office.com/insider) | En revisión | En revisión | Implementar: [Sí: participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do) a documentos existentes | Versión preliminar: Implementando en [Canal actual (versión preliminar)](https://office.com/insider) | Versión preliminar: Implementando en [Canal actual (versión preliminar)](https://office.com/insider) | En revisión | En revisión | Implementar: [Sí: participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Requerir una justificación para cambiar una etiqueta.](sensitivity-labels.md#what-label-policies-can-do)                     | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+  <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Proporcionar un vínculo de ayuda a una página de ayuda personalizada.](sensitivity-labels.md#what-label-policies-can-do)                       | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marcar el contenido](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -119,23 +119,25 @@ El cliente de etiquetado integrado de Office descarga las etiquetas de confidenc
 
 Para usar el cliente de etiquetado integrado de Office, debe tener una o más [directivas de etiquetado publicadas ](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)para los usuarios desde uno de los centros de administración enumerados y una [ versión compatible de Office](#support-for-sensitivity-label-capabilities-in-apps).
 
-Si se cumplen ambas condiciones, pero necesita desactivar las etiquetas integradas en las aplicaciones de Office, use la siguiente configuración de directiva de grupo:
+Si se cumplen ambas condiciones, pero necesita desactivar las etiquetas integradas en las aplicaciones de Windows Office, use la siguiente configuración de directiva de grupo:
 
 1. Navegar a **Configuración de usuario/Plantillas administrativas/Microsoft Office 2016/Configuración de seguridad**.
 
 2. Establecer **Usar la función de confidencialidad en Office para aplicar y ver las etiquetas de confidencialidad** a **0**. 
  
-Implementar esta configuración mediante la directiva de grupo o mediante el [Servicio de directiva de la nube de Office](/DeployOffice/overview-office-cloud-policy-service). La configuración tiene efecto cuando se reinician las aplicaciones de Office.
+Implementar esta configuración mediante la directiva de grupo o mediante el [Servicio de directiva de la nube de Office](/DeployOffice/overview-office-cloud-policy-service). La configuración tiene efecto cuando se reinician estas aplicaciones de Office. 
+
+Dado que esta configuración es específica de las aplicaciones de Windows Office, no tiene ningún impacto en otras aplicaciones de Windows que admiten etiquetas de confidencialidad (como Power BI) u otras plataformas (como macOS, dispositivos móviles y Office para la Web). Si no quiere que algunos o todos los usuarios vean y usen etiquetas de confidencialidad en todas las aplicaciones, en todas las plataformas, no asigne una directiva de etiquetas de confidencialidad a esos usuarios. 
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>El cliente de etiquetado integrado de Office y el cliente de Azure Information Protection
 
-Si los usuarios tienen el [Azure Information Protection cliente](/azure/information-protection/rms-client/aip-clientv2) instalado en sus equipos Windows, de forma predeterminada, las etiquetas integradas se desactivan en [Aparecen aplicaciones de Office que las admiten](#labeling-client-for-desktop-apps). Dado que las etiquetas integradas no usan un complemento de Office, tal y como las usa el cliente de Azure Information Protection, tienen la ventaja de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes, como clasificadores avanzados.
+Si los usuarios tienen el [cliente de Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2) instalado en sus equipos Windows, de forma predeterminada, las etiquetas integradas se desactivan en [Aplicaciones de Windows Office que las admiten](#labeling-client-for-desktop-apps). Dado que las etiquetas integradas no usan un complemento de Office, tal y como las usa el cliente de Azure Information Protection, tienen la ventaja de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes, como clasificadores avanzados.
 
 En lugar de desinstalar el cliente de Azure Information Protection, se recomienda evitar que el complemento de Azure Information Protection se cargue en las aplicaciones de Office. A continuación, obtendrá las ventajas del etiquetado integrado en las aplicaciones de Office y las ventajas de los archivos de etiquetado de cliente de Azure Information Protection fuera de las aplicaciones de Office. Por ejemplo, el cliente de Azure Information Protection puede etiquetar todos los tipos de archivo mediante Explorador de archivos y PowerShell. Para obtener más información sobre las características de etiquetado compatibles fuera de las aplicaciones de Office, vea [Etiquetas de confidencialidad y Azure Information Protection](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection).
 
-Para evitar que el complemento de cliente de Azure Information Protection se cargue en las aplicaciones de Office, use la configuración de directiva de grupo **Lista de complementos administrados** como se documenta en [No hay complementos cargados debido a la configuración de directiva de grupo para los programas de Office 2013 y Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+Para evitar que el complemento de cliente de Azure Information Protection se cargue en las aplicaciones de Windows Office, use la configuración de directiva de grupo **Lista de complementos administrados** como se documenta en [No hay complementos cargados debido a la configuración de directiva de grupo para los programas de Office 2013 y Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
-Para las aplicaciones de Office que admiten el etiquetado integrado, use la configuración de Microsoft Word 2016, Excel 2016, PowerPoint 2016 y Outlook 2016, especifique los siguientes identificadores de programación (ProgID) para el cliente de Azure Information Protection y establezca la opción en **0: el complemento siempre está deshabilitado (bloqueado)**
+Para las aplicaciones de Windows Office que admiten el etiquetado integrado, use la configuración de Microsoft Word 2016, Excel 2016, PowerPoint 2016 y Outlook 2016, especifique los siguientes identificadores de programación (ProgID) para el cliente de Azure Information Protection y establezca la opción en **0: el complemento siempre está deshabilitado (bloqueado)**
 
 |Aplicación  |ProgID  |
 |---------|---------|
