@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8277a26ace7b2fa2fcd2eee6f622c70ad77b205
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: 2393950b97c8f8f6a6c625d8f31487d08c9c1cb7
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054945"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083127"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -95,7 +95,7 @@ Si selecciona Desglose **de gráficos por dirección,** los siguientes gráficos
 
 La siguiente información se muestra en la tabla de detalles debajo del gráfico:
 
-- **Fecha**
+- **Date**
 - **Directiva DLP** (**Ver datos por DLP Exchange reglas de transporte)**
 - **Regla de transporte**
 - **Asunto**
@@ -451,7 +451,7 @@ Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 - **Tipo de directiva**:
   - **Todo**
   - **Antimalware**
-  - **Archivos adjuntos seguros**
+  - **Datos adjuntos seguros**
   - **Anti-phish**
   - **Contra correo no deseado**
   - **Regla de flujo de correo** (regla de transporte)
@@ -511,7 +511,7 @@ Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 - **Tipo de directiva**:
   - **Todo**
   - **Antimalware**
-  - **Archivos adjuntos seguros**
+  - **Datos adjuntos seguros**
   - **Anti-phish**
   - **Contra correo no deseado**
   - **Regla de flujo de correo** (regla de transporte)
@@ -540,8 +540,8 @@ En la **vista Ver datos por correo electrónico no \> deseado** **y** Desglose d
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
-- **Subject**
+- **Date**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -562,7 +562,7 @@ Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 - **Tipo de directiva**:
   - **Todo**
   - **Antimalware**
-  - **Archivos adjuntos seguros**
+  - **Datos adjuntos seguros**
   - **Anti-phish**
   - **Contra correo no deseado**
   - **Regla de flujo de correo** (regla de transporte)
@@ -615,7 +615,7 @@ Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 - **Tipo de directiva**:
   - **Todo**
   - **Antimalware**
-  - **Archivos adjuntos seguros**
+  - **Datos adjuntos seguros**
   - **Anti-phish**
   - **Contra correo no deseado**
   - **Regla de flujo de correo** (regla de transporte)
@@ -642,8 +642,8 @@ En las vistas  Ver datos por **\> suplantación** de identidad de correo electr�
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
-- **Subject**
+- **Date**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -683,7 +683,7 @@ Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 - **Tipo de directiva**:
   - **Todo**
   - **Antimalware**
-  - **Archivos adjuntos seguros**
+  - **Datos adjuntos seguros**
   - **Anti-phish**
   - **Contra correo no deseado**
   - **Regla de flujo de correo** (regla de transporte)
@@ -715,8 +715,8 @@ En las vistas Ver datos por correo electrónico phish **, \>** Ver datos  por co
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
-- **Subject**
+- **Date**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -756,7 +756,7 @@ Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 - **Tipo de directiva**:
   - **Todo**
   - **Antimalware**
-  - **Archivos adjuntos seguros**
+  - **Datos adjuntos seguros**
   - **Anti-phish**
   - **Contra correo no deseado**
   - **Regla de flujo de correo** (regla de transporte)
@@ -777,19 +777,23 @@ En la página de informe principal, el ![ icono Crear programación.](../../medi
 En la **vista Ver datos por \> malware** de contenido, la siguiente información se muestra en el gráfico de Microsoft Defender para Office 365 organizaciones:
 
 - **Motor antimalware:** archivos malintencionados detectados en SharePoint, OneDrive y Microsoft Teams por la detección de virus integrada en [Microsoft 365](virus-detection-in-spo.md).
-- **Detonación de archivos:** archivos malintencionados detectados por Caja fuerte datos adjuntos para [SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **Detonación de MDO:** archivos malintencionados detectados por Caja fuerte datos adjuntos para [SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **Reputación de los archivos**
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
-- **Location**
+- **Fecha (UTC)**
+- **Nombres de archivos adjuntos**
+- **Carga de trabajo**
 - **Tecnología de detección**
-- **Nombre de malware**
+- **Tamaño de archivo**
+- **Último usuario que modifica**
 
 Si hace clic **en Filtrar,** estarán disponibles los siguientes filtros:
 
 - **Fecha (UTC) Fecha** **de inicio y** fecha de **finalización**
-- **Detección:** **motor antimalware o** **detonación de archivos**
+- **Detección:** **motor antimalware,** **detonación de MDO** y **detonación de archivos**
+- **Carga** de **trabajo: Teams**, **SharePoint** y **OneDrive**
 
 Cuando haya terminado de configurar los filtros, haga clic **en Aplicar,** **Cancelar** o **Borrar filtros**.
 
@@ -852,7 +856,7 @@ En la **vista Ver datos por invalidación** del sistema y Desglose del gráfico 
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Asunto**
 - **Remitente**
 - **Destinatarios**
