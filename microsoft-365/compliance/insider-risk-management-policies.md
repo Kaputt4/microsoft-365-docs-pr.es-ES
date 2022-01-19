@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0bb25be1633ddb3f653d640a0812bf0a14344309
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: fb76ec7c64e61faccc106f3db874756867fdeddc
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374621"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62073717"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
 
@@ -39,11 +39,11 @@ El **Panel de control de la directiva** le permite ver rápidamente las directiv
 
 ![Panel de directivas de administración de riesgos de Insider.](../media/insider-risk-policy-dashboard.png)
 
-## <a name="policy-recommendations-from-analytics-preview"></a>Recomendaciones de directivas a partir de los análisis (versión preliminar)
+## <a name="policy-recommendations-from-analytics"></a>Recomendaciones de directivas de análisis
 
 Los análisis de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar.
 
-Para obtener más información sobre los análisis de riesgos internos y las recomendaciones de directivas, vea [Configuración de la administración de riesgos internos: Análisis (versión preliminar)](insider-risk-management-settings.md#analytics).
+Para obtener más información sobre el análisis de riesgos insider y las recomendaciones de directivas, consulte Configuración de administración de riesgos [de Insider: Analytics](insider-risk-management-settings.md#analytics).
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 

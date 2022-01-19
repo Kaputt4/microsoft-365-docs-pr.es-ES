@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7df7915351a4982c3f91f4835002a87493f4f79c
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 0bfd97739637365e7f04d4b824c0c9cde50a0418
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401491"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074503"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -104,7 +104,7 @@ Determina si el motor antivirus se ejecuta en modo pasivo o no. En modo pasivo:
 
 #### <a name="enabledisable-behavior-monitoring"></a>Habilitar o deshabilitar la supervisión del comportamiento 
 
-Determina si la funcionalidad de bloqueo y supervisión de comportamiento está habilitada en el dispositivo o no.Para mejorar la eficacia de la protección de seguridad, se recomienda mantener activada esta característica.
+Determina si la funcionalidad de bloqueo y supervisión de comportamiento está habilitada en el dispositivo o no. Para mejorar la eficacia de la protección de seguridad, se recomienda mantener activada esta característica.
 
 <br>
 
@@ -595,7 +595,7 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
 }
 ```
 
-  ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>Agregar etiqueta o id. de grupo al perfil de configuración
+## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>Agregar etiqueta o id. de grupo al perfil de configuración
 
 Cuando ejecute el comando por primera vez, el valor de la etiqueta y el `mdatp health` id. de grupo estará en blanco. Para agregar un identificador de etiqueta o grupo al `mdatp_managed.json` archivo, siga los pasos siguientes:
   
@@ -622,7 +622,7 @@ Cuando ejecute el comando por primera vez, el valor de la etiqueta y el `mdatp h
   > [!NOTE]
   > No olvide agregar la coma después del corchete de cierre al final del `cloudService` bloque. Además, asegúrese de que hay dos corchetes de cierre después de agregar el bloque Tag o Group ID (vea el ejemplo anterior).
   
-  ## <a name="configuration-profile-validation"></a>Validación de perfiles de configuración
+## <a name="configuration-profile-validation"></a>Validación de perfiles de configuración
 
 El perfil de configuración debe ser un archivo con formato JSON válido. Hay varias herramientas que se pueden usar para comprobar esto. Por ejemplo, si has `python` instalado en el dispositivo:
 

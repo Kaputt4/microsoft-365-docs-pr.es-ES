@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db1190d72bb721dbbbd3a75bb7d8a9821d5f8ff3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8865bf2138947238980b533b8b47ee9663fd5448
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873765"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074539"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y URL/dominios
 
@@ -39,23 +39,23 @@ Microsoft ha administrado el conjunto de datos de inteligencia de amenazas para 
 
 Al crear indicadores para direcciones IP y direcciones URL o dominios, ahora puede permitir o bloquear direcciones IP, direcciones URL o dominios basados en su propia inteligencia de amenazas. También puedes advertir a los usuarios con un mensaje si abren una aplicación arriesgada. El mensaje no les impedirá usar la aplicación, pero puedes proporcionar un mensaje personalizado y vínculos a una página de empresa que describe el uso adecuado de la aplicación. Los usuarios aún pueden omitir la advertencia y seguir usando la aplicación si lo necesitan.
 
-
 Puedes hacerlo a través de la página de configuración o por grupos de máquinas si consideras que determinados grupos están más o menos en riesgo que otros.
 
 > [!NOTE]
 > No se admite Inter-Domain de enrutamiento sin clases (CIDR) para direcciones IP.
 
 ## <a name="before-you-begin"></a>Antes de empezar
+
 Es importante comprender los siguientes requisitos previos antes de crear indicadores para IPS, direcciones URL o dominios:
 
 - La dirección URL/IP permiten y bloquean la protección de red del componente Defender for Endpoint para habilitarse en modo de bloqueo. Para obtener más información sobre la protección de red y las instrucciones de configuración, vea [Enable network protection](enable-network-protection.md).
 - La versión del cliente Antimalware debe ser 4.18.1906.x o posterior. 
 - Compatible con máquinas de Windows 10, versión 1709 o posterior, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019 y Windows Server 2022.
-   
-    >[!NOTE]
-    >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. 
 
-- Asegúrese de **que los indicadores de red personalizados** **están habilitados Microsoft 365 Defender > Configuración > características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
+    > [!NOTE]
+    > Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione.
+
+- Asegúrese de **que los indicadores de red personalizados** **están habilitados Microsoft 365 Defender** \> **Configuración** \> **características avanzadas**. Para obtener más información, vea [Características avanzadas](advanced-features.md).
 - Para obtener compatibilidad con indicadores en iOS, vea [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 > [!IMPORTANT]

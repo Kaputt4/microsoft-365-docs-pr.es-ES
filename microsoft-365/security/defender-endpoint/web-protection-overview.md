@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 503db220cc9df0d643a9ad9a0b76b34cae05e88d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d21fdd481ade59ca869d5cfe086e537c0c431228
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164723"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074647"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -28,8 +28,8 @@ ms.locfileid: "61164723"
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -148,16 +148,16 @@ Las consultas kusto en búsqueda avanzada se pueden usar para resumir los bloque
 
 ```kusto
 DeviceEvents
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
 | where Experience == "CustomBlockList"
 ```
 
 Del mismo modo, puede usar la siguiente consulta para enumerar todos los bloques WCF que se originen en Network Protection (por ejemplo, un bloque WCF en un explorador de terceros). Tenga en cuenta que ActionType se ha actualizado y "Experiencia" se ha cambiado a "ResponseCategory".
 
 ```kusto
-DeviceEvents 
+DeviceEvents
 | where ActionType == "ExploitGuardNetworkProtectionBlocked"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)

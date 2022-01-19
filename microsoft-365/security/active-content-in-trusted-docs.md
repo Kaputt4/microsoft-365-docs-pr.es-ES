@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Los administradores pueden aprender a crear directivas para bloquear el contenido activo en Office documentos
-ms.openlocfilehash: 4bf71e6032efc398e48c7679dee3fb42760d52cc
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 5bc187caaeac2fb83cb7d5a8026af2e1548c5622
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221237"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074671"
 ---
-# <a name="manage-active-content-in-office-documents"></a>Administrar contenido activo en Office documentos
+# <a name="manage-active-content-in-office-documents"></a>Administrar contenido activo en documentos de Office
 
 > [!NOTE]
 > Las características que se describen en este artículo están en Versión preliminar, no están disponibles para todos y están sujetas a cambios.
@@ -64,13 +64,13 @@ La lógica actualizada del Centro de confianza se describe en el siguiente diagr
 
 ## <a name="what-is-a-trusted-document"></a>¿Qué es un documento de confianza?
 
-Los documentos de confianza Office documentos que se abren sin avisos de seguridad para macros, ActiveX controles y otros tipos de contenido activo del documento. Vista protegida o Protección de aplicaciones no se usa para abrir el documento. Cuando los usuarios abren un documento de confianza y todo el contenido activo está habilitado.Incluso si el documento contiene nuevo contenido activo o actualizaciones del contenido activo existente, los usuarios no recibirán avisos de seguridad la próxima vez que abran el documento.
+Los documentos de confianza Office documentos que se abren sin avisos de seguridad para macros, ActiveX controles y otros tipos de contenido activo del documento. Vista protegida o Protección de aplicaciones no se usa para abrir el documento. Cuando los usuarios abren un documento de confianza y todo el contenido activo está habilitado. Incluso si el documento contiene nuevo contenido activo o actualizaciones del contenido activo existente, los usuarios no recibirán avisos de seguridad la próxima vez que abran el documento.
 
 Debido a este comportamiento, los usuarios deben confiar claramente en los documentos solo si confían en el origen del documento.
 
 Si un administrador bloquea el contenido activo mediante una directiva o si los usuarios establecen una configuración del Centro de confianza que bloquea el contenido activo, el contenido activo permanecerá bloqueado.
 
-Para obtener más información, consulte los siguientes artículos:
+Para más información, consulte los siguientes artículos:
 
 - [Documentos confiables](https://support.microsoft.com/topic/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53)
 - [Agregar, quitar o cambiar una ubicación de confianza](https://support.microsoft.com/topic/add-remove-or-change-a-trusted-location-7ee1cdc2-483e-4cbb-bcb3-4e7c67147fb4)
@@ -85,6 +85,10 @@ Los administradores tienen muchas formas de configurar Office en una organizaci�
   - ***Plantillas administrativas:*** vea las instrucciones para usar Windows 10 plantillas administrativas para configurar [plantillas administrativas](/mem/intune/configuration/administrative-templates-windows).
   - ***Configuración (versión preliminar):*** vea las instrucciones para usar el [Configuración (versión preliminar).](/mem/intune/configuration/settings-catalog)
 - **Directiva de grupo:** use Active Directory local para implementar objetos de directiva de grupo (GPO) en usuarios y equipos. Para crear un GPO para esta configuración, descargue los archivos de plantilla administrativa más recientes (ADMX/ADML) y la herramienta de personalización de Office para [Aplicaciones Microsoft 365 para empresas, Office 2019 y Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+
+## <a name="known-issues"></a>Problemas conocidos
+
+- Cuando las notificaciones de macro **vba** de directiva (Access, PowerPoint, Visio, Word) o **las** notificaciones de macro (Excel) se establecen en el valor Deshabilitar  todas excepto las macros firmadas **digitalmente,** no se muestra la barra de confianza esperada y la información de seguridad en el backstage no enumera los detalles de las macros bloqueadas, aunque la configuración funciona como se esperaba. El Office está trabajando para resolver este problema.
 
 ## <a name="admin-options-for-restricting-active-content"></a>Opciones de administración para restringir el contenido activo
 
@@ -133,7 +137,8 @@ Las tablas de las secciones siguientes describen la configuración que controla 
 |Jscript & VBScript|Outlook|Permitir scripts en formularios de uso único de Outlook|**Disabled**|No|
 |Jscript & VBScript|Outlook|No permitir que Outlook scripts del modelo de objetos se ejecuten para carpetas públicas|**Enabled**|No|
 |Jscript & VBScript|Outlook|No permitir que Outlook scripts del modelo de objetos se ejecuten para carpetas compartidas|**Enabled**|No|
-|Macros|Access <p> Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Notificación de macros de VBA Configuración|**Deshabilitar todas las macros excepto las firmadas digitalmente** <p> y <p> **Requerir que las macros las firme un editor de confianza**|**Sí** para los siguientes valores: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Macros|Excel|Notificaciones de macros|**Deshabilitar todas las macros excepto las firmadas digitalmente**|**Sí** para los siguientes valores: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
+|Macros|Access <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Notificación de macros de VBA Configuración|**Deshabilitar todas las macros excepto las firmadas digitalmente** <p> y <p> **Requerir que las macros las firme un editor de confianza**|**Sí** para los siguientes valores: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Impedir que las macros se ejecuten Office archivos de Internet|**Enabled**|**Sí** para los siguientes valores: <ul><li>**Disabled**</li><li>**Sin configurar**</li></ul>|
 |Macros|Excel|Examinar macros cifradas en Excel libros de Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
 |Macros|Office|Permitir que VBA cargue referencias de tipolib por ruta de acceso desde ubicaciones de intranet que no son de confianza|**Disabled**|No|

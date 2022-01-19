@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a2a8ae2197b957299277bae3eeeee8383d1bda00
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2ee262e2a42bcf4bd03a6d1204b60412d60740d5
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165227"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074371"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para los archivos
 
@@ -28,7 +28,7 @@ ms.locfileid: "61165227"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -46,7 +46,7 @@ Hay tres formas de crear indicadores para archivos:
 
 Es importante comprender los siguientes requisitos previos antes de crear indicadores para archivos:
 
-- Esta característica está disponible si su organización usa **Antivirus de Microsoft Defender (en** modo activo) y la **protección basada en la nube está habilitada.** Para obtener más información, vea [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Esta característica está disponible si su organización usa **Antivirus de Microsoft Defender (en** modo activo) y la **protección basada en la nube está habilitada.** Para obtener más información, vea [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior. Ver [Versiones mensuales de la plataforma y el motor](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -55,17 +55,17 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
    >[!NOTE]
     >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. 
 
-- Para empezar a bloquear archivos, primero debe activar [la característica "bloquear](advanced-features.md) o permitir" en Configuración.
+- Para empezar a bloquear archivos, primero debe activar [la característica "bloquear](advanced-features.md) o permitir" en Configuración.
 
 Esta característica está diseñada para evitar que el malware sospechoso (o los archivos potencialmente malintencionados) se descarguen de la web. Actualmente es compatible con archivos ejecutables portátiles (PE), incluidos .exe archivos .dll archivos. La cobertura se extenderá con el tiempo.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Crear un indicador para archivos desde la página de configuración
 
-1. En el panel de navegación, **seleccione Configuración** \> **indicadores** de puntos de \> **conexión** (en **Reglas**).
+1. En el panel de navegación, **seleccione Configuración** \> **indicadores** de puntos de \> **conexión** (en **Reglas**).
 
-2. Seleccione la **pestaña Hashes de**   archivo.
+2. Seleccione la **pestaña Hashes de** archivo.
 
-3. Seleccione **Agregar indicador**.
+3. Seleccione **Agregar indicador**.
 
 4. Especifique los siguientes detalles:
     - Indicador: especifique los detalles de la entidad y defina la expiración del indicador.
@@ -76,7 +76,7 @@ Esta característica está diseñada para evitar que el malware sospechoso (o lo
 
 ## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>Crear un indicador contextual desde la página de detalles del archivo
 
-Una de las opciones al realizar acciones [de respuesta en un archivo](respond-file-alerts.md)es agregar un indicador para el   archivo. Cuando agregas un hash de indicador para un archivo, puedes elegir generar una alerta y bloquear el archivo siempre que un dispositivo de la organización intente ejecutarlo.
+Una de las opciones al realizar acciones [de respuesta en un archivo](respond-file-alerts.md) es agregar un indicador para el archivo. Cuando agregas un hash de indicador para un archivo, puedes elegir generar una alerta y bloquear el archivo siempre que un dispositivo de la organización intente ejecutarlo.
 
 Los archivos bloqueados automáticamente por un indicador no aparecerán en el Centro de acciones del archivo, pero las alertas seguirán estando visibles en la cola de alertas.
 
@@ -96,7 +96,7 @@ Elija si desea generar una alerta en el evento de bloqueo de archivos y definir 
 - El título de alerta
 - Gravedad de la alerta
 - Categoría
-- Description
+- Descripción
 - Acciones recomendadas
 
 ![Configuración de alertas para indicadores de archivo.](images/indicators-generate-alert.png)
@@ -171,7 +171,7 @@ Las características de aplicación vulnerables de bloqueo de amenazas y adminis
 |Antivirus de Microsoft Defender exclusión|Permitir|Bloquear|Permitir|
 |
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)

@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 996727e59108b13f32b4138713a6e54d9192218c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c491b6843de50227497d7332335a3b4c639f5019
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940571"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074515"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-2-test"></a>Fase 2 de implementación de reglas de reducción de superficie de ataque: prueba
+# <a name="asr-rules-deployment-phase-2-test"></a>Fase 2 de implementación de reglas ASR: prueba
 
 Comience la implementación de reglas ASR con el anillo 1.
 
@@ -199,10 +199,10 @@ Id. de evento | Descripción
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Guía de implementación de reglas ASR: información general](attack-surface-reduction-rules-deployment.md)
+[Introducción a la implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
 
-[Fase 1 de implementación de reglas de ASR: planificar](attack-surface-reduction-rules-deployment-phase-1.md)
+[Fase 1: Planear](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Fase 3 de implementación de reglas de ASR: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
+[Fase 3: Implementar](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Fase 4 de implementación de reglas de ASR: hacer operativo](attack-surface-reduction-rules-deployment-phase-4.md)
+[Fase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)

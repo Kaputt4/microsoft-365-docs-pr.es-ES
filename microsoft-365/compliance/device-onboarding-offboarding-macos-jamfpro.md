@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro (versión preliminar)
-ms.openlocfilehash: 1c21251b390209d92696a36962705b9f2517a53c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 03cdf8a7aa5c35d4e207364c3f0870a66712626d
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111224"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074551"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
 
@@ -30,7 +30,7 @@ Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumpl
 
 ## <a name="get-registered"></a>Registrarse
 
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea, [registrarse para la compatibilidad Microsoft 365 macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
+Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea [registrarse para la compatibilidad de Microsoft 365 en macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 **Se aplica a:**
 
@@ -53,7 +53,7 @@ Para obtener acceso a esta característica, debe registrar el espacio empresaria
 |accesibilidad |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Filtro de red| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
-|Extensiones del sistema |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|Extensiones del sistema |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |Preferencia de MDE     |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |Preferencia MAU|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
 |Paquete de instalación     |descargado del paquete de instalación del portal **de cumplimiento**, nombre de *\* archivo wdav.pkg*\* |
@@ -178,7 +178,7 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 1. En **Perfil de extensiones del sistema,** escriba estos valores:
     - Nombre para mostrar: `Microsoft Corp. System Extensions`
-    - Tipos de extensción del sistema: `Allowed System Extensions`
+    - Tipos de extensión del sistema: `Allowed System Extensions`
     - Identificador de equipo: `UBF8T346G9`
     - Extensiones de sistema permitidas: `com.microsoft.wdav.epsext` , y `com.microsoft.wdav.netext`
 
@@ -192,13 +192,13 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 ### <a name="configure-network-extension"></a>Configurar extensión de red
 
-1.  Use el **archivo netfilter.mobileconfig**  que descargó de Github.
+1.  Use el **archivo netfilter.mobileconfig** que descargó de GitHub.
 
 2.  Upload a JAMF como se describe en Implementar perfiles de configuración [personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>Conceder acceso de accesibilidad a DLP
 
-1. Use el **archivo accessibility.mobileconfig** que descargó de Github.
+1. Use el **archivo accessibility.mobileconfig** que descargó de GitHub.
 
 2.  Upload a JAMF como se describe en Implementar perfiles de configuración [personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 

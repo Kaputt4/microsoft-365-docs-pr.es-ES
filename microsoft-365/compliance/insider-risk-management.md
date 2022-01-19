@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6a1698be8d0221987d3e70ed0004feb1148e03d2
-ms.sourcegitcommit: d40b8c506c34a661a275f756081a27ef9ad5bf4f
+ms.openlocfilehash: 8e402bf2b2135e180094187bcabac905a70e2bde
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60972065"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074383"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos internos en Microsoft 365
 
@@ -59,7 +59,7 @@ La administración de riesgos de Insider se centra en los siguientes principios:
 - **Integrado:** flujo de trabajo integrado en Microsoft 365 de cumplimiento normativo.
 - **Actionable:** proporciona información para habilitar las notificaciones de revisor, las investigaciones de datos y las investigaciones de usuario.
 
-## <a name="identifying-potential-risks-with-analytics-preview"></a>Identificación de posibles riesgos con análisis (versión preliminar)
+## <a name="identifying-potential-risks-with-analytics"></a>Identificación de posibles riesgos con análisis
 
 Los análisis de riesgos internos le permiten realizar una evaluación de los posibles riesgos internos en su organización sin necesidad de configurar ninguna directiva de riesgos internos. Esta evaluación puede ayudar a su organización a identificar áreas potenciales de mayor riesgo para los usuarios y ayudar a determinar el tipo y el alcance de las directivas de administración de riesgos internos que puede considerar configurar. Esta evaluación también puede ayudarle a determinar las necesidades de licencias adicionales o la optimización futura de las directivas de riesgos internas existentes.
 

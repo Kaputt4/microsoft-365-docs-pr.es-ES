@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 062765ce75317b604b4017610360c8d181bf9e88
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 5d10b96e1d5abfe1c9e9a87b9800dafba081c961
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282830"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074467"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Evaluación de vulnerabilidades de software de exportación por dispositivo
 
@@ -100,12 +100,12 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
-CveId|String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
+CveId|Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992
 CvssScore|Cadena|La puntuación CVSS de CVE.|6.2
 DeviceId|String|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
+DeviceName|Cadena|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com
 DiskPaths|Cadena de \[ matriz\]|Prueba en disco de que el producto está instalado en el dispositivo.|[ "C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|String|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
+ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
 FirstSeenTimestamp|Cadena|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880
 Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!
 LastSeenTimestamp|Cadena|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880
@@ -113,12 +113,12 @@ OSPlatform|Cadena|Plataforma del sistema operativo que se ejecuta en el disposit
 RbacGroupName|Cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores
 RecommendationReference|String|Una referencia al identificador de recomendación relacionado con este software.|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (opcional)|Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020
-RecommendedSecurityUpdateId (opcional)|Cadena|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
+RecommendedSecurityUpdateId (opcional)|String|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961
 RegistryPaths|Cadena de \[ matriz\]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
 SoftwareName|Cadena|Nombre del producto de software.|Chrome
-SoftwareVendor|String|Nombre del proveedor de software.|Google
+SoftwareVendor|Cadena|Nombre del proveedor de software.|Google
 SoftwareVersion|Cadena|Número de versión del producto de software.|81.0.4044.138
-VulnerabilitySeverityLevel|String|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad en función de la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Medio
 |
 
 ### <a name="16-examples"></a>1.6 Ejemplos
@@ -308,7 +308,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 Propiedad (ID)|Tipo de datos|Descripción|Ejemplo de un valor devuelto
 :---|:---|:---|:---
 Exportar archivos|cadena de \[ matriz\]|Una lista de direcciones URL de descarga de archivos que contiene la instantánea actual de la organización.|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|String|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
+GeneratedTime|Cadena|Hora en que se generó la exportación.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 Ejemplos
@@ -384,27 +384,27 @@ Cada registro devuelto contiene todos los datos de la evaluación completa de vu
 
 Propiedad (ID)|Tipo de datos|Descripción|Ejemplo del valor devuelto
 :---|:---|:---|:---
-CveId |String|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992  
-CvssScore|Cadena|La puntuación CVSS de CVE.|6.2  
-DeviceId|String|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com  
-DiskPaths|Array[string]|Prueba en disco de que el producto está instalado en el dispositivo.|["C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
+CveId |Cadena|Identificador único asignado a la vulnerabilidad de seguridad en el sistema vulnerabilidades y exposiciones comunes (CVE).|CVE-2020-15992  
+CvssScore|String|La puntuación CVSS de CVE.|6.2  
+DeviceId|Cadena|Identificador único del dispositivo en el servicio.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName|String|Nombre de dominio completo (FQDN) del dispositivo.|johnlaptop.europe.contoso.com  
+DiskPaths|Array[string]|Prueba en disco de que el producto está instalado en el dispositivo.|["C:\Archivos de programa (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
 EventTimestamp|String|Hora en que se encontró este evento delta.|2021-01-11T11:06:08.291Z
-ExploitabilityLevel|Cadena|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
-FirstSeenTimestamp|Cadena|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880  
-Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!  
-LastSeenTimestamp|Cadena|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880  
+ExploitabilityLevel|String|El nivel de vulnerabilidad de esta vulnerabilidad (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
+FirstSeenTimestamp|Cadena|Primera vez que se vio la CVE de este producto en el dispositivo.|2020-11-03 10:13:34.8476880  
+Id|Cadena|Identificador único del registro.|123ABG55_573AG&mnp!  
+LastSeenTimestamp|Cadena|La última vez que se vio CVE en el dispositivo.|2020-11-03 10:13:34.8476880  
 OSPlatform|String|Plataforma del sistema operativo que se ejecuta en el dispositivo; sistemas operativos específicos con variaciones dentro de la misma familia, como Windows 10 y Windows 11. Consulta sistemas operativos y plataformas compatibles con tvm para obtener más información.|Windows10 y Windows 11 
-RbacGroupName|Cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores  
-RecommendationReference|cadena|Una referencia al identificador de recomendación relacionado con este software.|va--microsoft--silverlight  
-RecommendedSecurityUpdate |Cadena|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020  
-RecommendedSecurityUpdateId |Cadena|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961  
-RegistryPaths |Array[string]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
-SoftwareName|Cadena|Nombre del producto de software.|Chrome  
-SoftwareVendor|String|Nombre del proveedor de software.|Google  
-SoftwareVersion|String|Número de versión del producto de software.|81.0.4044.138  
-Estado|String|**Nuevo**   (para una nueva vulnerabilidad introducida en un dispositivo)  (1) **Corregido**(si esta vulnerabilidad ya no existe en el dispositivo, lo que   significa que se corrigió). (2)  **Actualizado**   (si ha cambiado una vulnerabilidad en un dispositivo. Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Decimal
-VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad. Se basa en la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Mediano
+RbacGroupName|Cadena|Grupo de control de acceso basado en roles (RBAC). Si este dispositivo no está asignado a ningún grupo RBAC, el valor será "Unassigned". Si la organización no contiene ningún grupo RBAC, el valor será "None".|Servidores  
+RecommendationReference|string|Una referencia al identificador de recomendación relacionado con este software.|va--microsoft--silverlight  
+RecommendedSecurityUpdate |String|Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad.|Actualizaciones de seguridad de abril de 2020  
+RecommendedSecurityUpdateId |String|Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes|4550961  
+RegistryPaths |Array[string]|El Registro evidencia que el producto está instalado en el dispositivo.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
+SoftwareName|Cadena|Nombre del producto de software.|Chrome  
+SoftwareVendor|Cadena|Nombre del proveedor de software.|Google  
+SoftwareVersion|Cadena|Número de versión del producto de software.|81.0.4044.138  
+Estado|String|**Nuevo** (para una nueva vulnerabilidad introducida en un  dispositivo) (1) Corregido (si esta vulnerabilidad ya no existe en el dispositivo, lo que significa que se corrigió). (2) **Actualizado** (si ha cambiado una vulnerabilidad en un dispositivo). Los posibles cambios son: puntuación CVSS, nivel de vulnerabilidad, nivel de gravedad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Decimal
+VulnerabilitySeverityLevel|Cadena|Nivel de gravedad asignado a la vulnerabilidad de seguridad. Se basa en la puntuación de CVSS y los factores dinámicos influenciados por el panorama de amenazas.|Medio
 |
 
 #### <a name="clarifications"></a>Aclaraciones
@@ -429,155 +429,155 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.DeltaAssetVulnerability)",
-    "value": [
-        {
-            "id": "008198251234544f7dfa715e278d4cec0c16c171_chrome_87.0.4280.88__",
-            "deviceId": "008198251234544f7dfa715e278b4cec0c19c171",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_1c8fee370690ca24b6a0d3f34d193b0424943a8b8.DomainPII_0dc1aee0fa366d175e514bd91a9e7a5b2b07ee8e.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0.19042.685",
-            "osArchitecture": "x64",
-            "softwareVendor": "google",
-            "softwareName": "chrome",
-            "softwareVersion": "87.0.4280.88",
-            "cveId": null,
-            "vulnerabilitySeverityLevel": null,
-            "recommendedSecurityUpdate": null,
-            "recommendedSecurityUpdateId": null,
-            "recommendedSecurityUpdateUrl": null,
-            "diskPaths": [
-                "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
-            ],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Google Chrome"
-            ],
-            "lastSeenTimestamp": "2021-01-04 00:29:42",
-            "firstSeenTimestamp": "2020-11-06 03:12:44",
-            "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-google-_-chrome",
-            "status": "Fixed",
-            "eventTimestamp": "2021-01-11T11:06:08.291Z"
-        },
-        {
-            "id": "00e59c61234533860738ecf488eec8abf296e41e_onedrive_20.64.329.3__",
-            "deviceId": "00e56c91234533860738ecf488eec8abf296e41e",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_82c13a8ad8cf3dbaf7bf34fada9fa3aebc124116.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0.18363.1256",
-            "osArchitecture": "x64",
-            "softwareVendor": "microsoft",
-            "softwareName": "onedrive",
-            "softwareVersion": "20.64.329.3",
-            "cveId": null,
-            "vulnerabilitySeverityLevel": null,
-            "recommendedSecurityUpdate": null,
-            "recommendedSecurityUpdateId": null,
-            "recommendedSecurityUpdateUrl": null,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_USERS\\S-1-5-21-2127521184-1604012920-1887927527-24918864\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\OneDriveSetup.exe"
-            ],
-            "lastSeenTimestamp": "2020-12-11 19:49:48",
-            "firstSeenTimestamp": "2020-12-07 18:25:47",
-            "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-onedrive",
-            "status": "Fixed",
-            "eventTimestamp": "2021-01-11T11:06:08.291Z"
-        },
-        {
-            "id": "01aa8c73095bb12345918663f3f94ce322107d24_firefox_83.0.0.0_CVE-2020-26971_",
-            "deviceId": "01aa8c73065bb12345918693f3f94ce322107d24",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_42684eb981bea2d670027e7ad2caafd3f2b381a3.DomainPII_21eed80b086e76dbfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0.19042.685",
-            "osArchitecture": "x64",
-            "softwareVendor": "mozilla",
-            "softwareName": "firefox",
-            "softwareVersion": "83.0.0.0",
-            "cveId": "CVE-2020-26971",
-            "vulnerabilitySeverityLevel": "High",
-            "recommendedSecurityUpdate": "193220",
-            "recommendedSecurityUpdateId": null,
-            "recommendedSecurityUpdateUrl": null,
-            "diskPaths": [
-                "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe"
-            ],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Mozilla Firefox 83.0 (x86 en-US)"
-            ],
-            "lastSeenTimestamp": "2021-01-05 17:04:30",
-            "firstSeenTimestamp": "2020-05-06 12:42:19",
-            "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-mozilla-_-firefox",
-            "status": "Fixed",
-            "eventTimestamp": "2021-01-11T11:06:08.291Z"
-        },
-        {
-            "id": "026f0fcb12345fbd2decd1a339702131422d362e_project_16.0.13701.20000__",
-            "deviceId": "029f0fcb13245fbd2decd1a336702131422d392e",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_a5706750acba75f15d69cd17f4a7fcd268d6422c.DomainPII_f290e982685f7e8eee168b4332e0ae5d2a069cd6.corp.contoso.com",
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0.19042.685",
-            "osArchitecture": "x64",
-            "softwareVendor": "microsoft",
-            "softwareName": "project",
-            "softwareVersion": "16.0.13701.20000",
-            "cveId": null,
-            "vulnerabilitySeverityLevel": null,
-            "recommendedSecurityUpdate": null,
-            "recommendedSecurityUpdateId": null,
-            "recommendedSecurityUpdateUrl": null,
-            "diskPaths": [],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ProjectProRetail - en-us"
-            ],
-            "lastSeenTimestamp": "2021-01-03 23:38:03",
-            "firstSeenTimestamp": "2019-08-01 22:56:12",
-            "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-project",
-            "status": "Fixed",
-            "eventTimestamp": "2021-01-11T11:06:08.291Z"
-        },
-        {
-            "id": "038df381234510b357ac19d0113ef622e4e212b3_chrome_81.0.4044.138_CVE-2020-16011_",
-            "deviceId": "038df381234510d357ac19b0113ef922e4e212b3",
-            "rbacGroupName": "hhh",
-            "deviceName": "ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596a43a2ef2bbfa00f6a16c0cb1d108bc63e32.DomainPII_3c5fefd2e6fda2f36257359404f6c1092aa6d4b8.net",
-            "osPlatform": "Windows10" "Windows11",
-            "osVersion": "10.0.18363.1256",
-            "osArchitecture": "x64",
-            "softwareVendor": "google",
-            "softwareName": "chrome",
-            "softwareVersion": "81.0.4044.138",
-            "cveId": "CVE-2020-16011",
-            "vulnerabilitySeverityLevel": "High",
-            "recommendedSecurityUpdate": "ADV 200002",
-            "recommendedSecurityUpdateId": null,
-            "recommendedSecurityUpdateUrl": null,
-            "diskPaths": [
-                "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
-            ],
-            "registryPaths": [
-                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{C4EBFDFD-0C55-3E5F-A919-E3C54949024A}"
-            ],
-            "lastSeenTimestamp": "2020-12-10 22:45:41",
-            "firstSeenTimestamp": "2020-07-26 02:13:43",
-            "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-google-_-chrome",
-            "status": "Fixed",
-            "eventTimestamp": "2021-01-11T11:06:08.291Z"
-        }
-    ],
-    "@odata.nextLink": "https://wpatdadi-eus-stg.cloudapp.net/api/machines/SoftwareVulnerabilitiesTimeline?sincetime=2021-01-11&pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.DeltaAssetVulnerability)",
+    "value": [
+        {
+            "id": "008198251234544f7dfa715e278d4cec0c16c171_chrome_87.0.4280.88__",
+            "deviceId": "008198251234544f7dfa715e278b4cec0c19c171",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_1c8fee370690ca24b6a0d3f34d193b0424943a8b8.DomainPII_0dc1aee0fa366d175e514bd91a9e7a5b2b07ee8e.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0.19042.685",
+            "osArchitecture": "x64",
+            "softwareVendor": "google",
+            "softwareName": "chrome",
+            "softwareVersion": "87.0.4280.88",
+            "cveId": null,
+            "vulnerabilitySeverityLevel": null,
+            "recommendedSecurityUpdate": null,
+            "recommendedSecurityUpdateId": null,
+            "recommendedSecurityUpdateUrl": null,
+            "diskPaths": [
+                "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+            ],
+            "registryPaths": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Google Chrome"
+            ],
+            "lastSeenTimestamp": "2021-01-04 00:29:42",
+            "firstSeenTimestamp": "2020-11-06 03:12:44",
+            "exploitabilityLevel": "NoExploit",
+            "recommendationReference": "va-_-google-_-chrome",
+            "status": "Fixed",
+            "eventTimestamp": "2021-01-11T11:06:08.291Z"
+        },
+        {
+            "id": "00e59c61234533860738ecf488eec8abf296e41e_onedrive_20.64.329.3__",
+            "deviceId": "00e56c91234533860738ecf488eec8abf296e41e",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_82c13a8ad8cf3dbaf7bf34fada9fa3aebc124116.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0.18363.1256",
+            "osArchitecture": "x64",
+            "softwareVendor": "microsoft",
+            "softwareName": "onedrive",
+            "softwareVersion": "20.64.329.3",
+            "cveId": null,
+            "vulnerabilitySeverityLevel": null,
+            "recommendedSecurityUpdate": null,
+            "recommendedSecurityUpdateId": null,
+            "recommendedSecurityUpdateUrl": null,
+            "diskPaths": [],
+            "registryPaths": [
+                "HKEY_USERS\\S-1-5-21-2127521184-1604012920-1887927527-24918864\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\OneDriveSetup.exe"
+            ],
+            "lastSeenTimestamp": "2020-12-11 19:49:48",
+            "firstSeenTimestamp": "2020-12-07 18:25:47",
+            "exploitabilityLevel": "NoExploit",
+            "recommendationReference": "va-_-microsoft-_-onedrive",
+            "status": "Fixed",
+            "eventTimestamp": "2021-01-11T11:06:08.291Z"
+        },
+        {
+            "id": "01aa8c73095bb12345918663f3f94ce322107d24_firefox_83.0.0.0_CVE-2020-26971_",
+            "deviceId": "01aa8c73065bb12345918693f3f94ce322107d24",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_42684eb981bea2d670027e7ad2caafd3f2b381a3.DomainPII_21eed80b086e76dbfa178eabfa25e8de9acfa346.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0.19042.685",
+            "osArchitecture": "x64",
+            "softwareVendor": "mozilla",
+            "softwareName": "firefox",
+            "softwareVersion": "83.0.0.0",
+            "cveId": "CVE-2020-26971",
+            "vulnerabilitySeverityLevel": "High",
+            "recommendedSecurityUpdate": "193220",
+            "recommendedSecurityUpdateId": null,
+            "recommendedSecurityUpdateUrl": null,
+            "diskPaths": [
+                "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe"
+            ],
+            "registryPaths": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Mozilla Firefox 83.0 (x86 en-US)"
+            ],
+            "lastSeenTimestamp": "2021-01-05 17:04:30",
+            "firstSeenTimestamp": "2020-05-06 12:42:19",
+            "exploitabilityLevel": "NoExploit",
+            "recommendationReference": "va-_-mozilla-_-firefox",
+            "status": "Fixed",
+            "eventTimestamp": "2021-01-11T11:06:08.291Z"
+        },
+        {
+            "id": "026f0fcb12345fbd2decd1a339702131422d362e_project_16.0.13701.20000__",
+            "deviceId": "029f0fcb13245fbd2decd1a336702131422d392e",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_a5706750acba75f15d69cd17f4a7fcd268d6422c.DomainPII_f290e982685f7e8eee168b4332e0ae5d2a069cd6.corp.contoso.com",
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0.19042.685",
+            "osArchitecture": "x64",
+            "softwareVendor": "microsoft",
+            "softwareName": "project",
+            "softwareVersion": "16.0.13701.20000",
+            "cveId": null,
+            "vulnerabilitySeverityLevel": null,
+            "recommendedSecurityUpdate": null,
+            "recommendedSecurityUpdateId": null,
+            "recommendedSecurityUpdateUrl": null,
+            "diskPaths": [],
+            "registryPaths": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ProjectProRetail - en-us"
+            ],
+            "lastSeenTimestamp": "2021-01-03 23:38:03",
+            "firstSeenTimestamp": "2019-08-01 22:56:12",
+            "exploitabilityLevel": "NoExploit",
+            "recommendationReference": "va-_-microsoft-_-project",
+            "status": "Fixed",
+            "eventTimestamp": "2021-01-11T11:06:08.291Z"
+        },
+        {
+            "id": "038df381234510b357ac19d0113ef622e4e212b3_chrome_81.0.4044.138_CVE-2020-16011_",
+            "deviceId": "038df381234510d357ac19b0113ef922e4e212b3",
+            "rbacGroupName": "hhh",
+            "deviceName": "ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596a43a2ef2bbfa00f6a16c0cb1d108bc63e32.DomainPII_3c5fefd2e6fda2f36257359404f6c1092aa6d4b8.net",
+            "osPlatform": "Windows10" "Windows11",
+            "osVersion": "10.0.18363.1256",
+            "osArchitecture": "x64",
+            "softwareVendor": "google",
+            "softwareName": "chrome",
+            "softwareVersion": "81.0.4044.138",
+            "cveId": "CVE-2020-16011",
+            "vulnerabilitySeverityLevel": "High",
+            "recommendedSecurityUpdate": "ADV 200002",
+            "recommendedSecurityUpdateId": null,
+            "recommendedSecurityUpdateUrl": null,
+            "diskPaths": [
+                "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+            ],
+            "registryPaths": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{C4EBFDFD-0C55-3E5F-A919-E3C54949024A}"
+            ],
+            "lastSeenTimestamp": "2020-12-10 22:45:41",
+            "firstSeenTimestamp": "2020-07-26 02:13:43",
+            "exploitabilityLevel": "NoExploit",
+            "recommendationReference": "va-_-google-_-chrome",
+            "status": "Fixed",
+            "eventTimestamp": "2021-01-11T11:06:08.291Z"
+        }
+    ],
+    "@odata.nextLink": "https://wpatdadi-eus-stg.cloudapp.net/api/machines/SoftwareVulnerabilitiesTimeline?sincetime=2021-01-11&pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md)
 - [Exportar evaluación de configuración segura por dispositivo](get-assessment-secure-config.md)

@@ -7,18 +7,18 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: d4a8fb5cb8677acaf574eb25df6e8e32720e4628
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: feaa1743e00c515e02301090ce811afee5c26e74
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787864"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074431"
 ---
-# <a name="configure-defender-for-identity-detection-exclusions-in-microsoft-365-defender-preview"></a>Configurar Defender para exclusiones de detección de identidad en Microsoft 365 Defender (versión preliminar)
+# <a name="configure-defender-for-identity-detection-exclusions-in-microsoft-365-defender"></a>Configurar Defender para exclusiones de detección de identidad en Microsoft 365 Defender
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 - Defender for Identity
 
 En este artículo se explica cómo configurar [Microsoft Defender para exclusiones de](/defender-for-identity) detección de identidad en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).

@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 01556e67738ffac18a46c09c85bc2e70d1f5f29e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 14f1174ab52621fa7b958a5be66c30437a04b3c6
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531695"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074755"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-4-operationalize"></a>Fase 4 de implementación de reglas de reducción de superficie de ataque: operationalize
+# <a name="asr-rules-deployment-phase-4-operationalize"></a>Fase 4 de implementación de reglas ASR: operationalize
 
 Después de implementar completamente las reglas ASR, es fundamental que tenga procesos para supervisar y responder a las actividades relacionadas con ASR.
 
@@ -76,10 +76,10 @@ Para obtener más información acerca de las opciones de búsqueda, vea: [Desmit
 
 ## <a name="topics-in-this-deployment-collection"></a>Temas de esta colección de implementación
 
-[Guía de implementación de reglas ASR: información general](attack-surface-reduction-rules-deployment.md)
+[Introducción a la implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
 
-[Fase 1 de implementación de reglas de ASR: planificar](attack-surface-reduction-rules-deployment-phase-1.md)
+[Fase 1: Planear](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Fase 2 de implementación de reglas de ASR: probar](attack-surface-reduction-rules-deployment-phase-2.md)
+[Fase 2: Prueba](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Fase 3 de implementación de reglas de ASR: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
+[Fase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)

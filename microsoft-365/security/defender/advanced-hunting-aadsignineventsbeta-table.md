@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5afa98c4455387be673186854528dcd776e151f2
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: dad3ea9fe4297d93864032130e3f6d6b5f6e4e82
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531854"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074623"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,7 +34,7 @@ ms.locfileid: "61531854"
 > [!IMPORTANT]
 > La tabla está actualmente en versión beta y se ofrece a corto plazo para permitirle buscar a través de Azure Active Directory `AADSignInEventsBeta` (AAD) eventos de inicio de sesión. Los clientes necesitan tener una Azure Active Directory Premium P2 para recopilar y ver las actividades de esta tabla. Toda la información del esquema de inicio de sesión se moverá finalmente a la `IdentityLogonEvents` tabla.
 
-La tabla del esquema de búsqueda avanzada contiene información sobre Azure Active Directory inicios de sesión interactivos y no `AADSignInEventsBeta` interactivos. Obtenga más información sobre los inicios de sesión en Azure Active Directory de actividad de inicio [de sesión - versión preliminar](/azure/active-directory/reports-monitoring/concept-all-sign-ins). 
+La tabla del esquema de búsqueda avanzada contiene información sobre Azure Active Directory inicios de sesión interactivos y no `AADSignInEventsBeta` interactivos. Obtenga más información sobre los inicios de sesión en Azure Active Directory de actividad de inicio [de sesión - versión preliminar](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Use esta referencia para crear consultas que devuelvan información de la tabla. Para obtener información sobre otras tablas del esquema de búsqueda avanzada, vea la [referencia de búsqueda avanzada](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
 
@@ -42,7 +42,7 @@ Use esta referencia para crear consultas que devuelvan información de la tabla.
 
 ****
 
-|Nombre de columna|Tipo de datos|Description|
+|Nombre de columna|Tipo de datos|Descripción|
 |---|---|---|
 |`Timestamp`|`datetime`|Fecha y hora en que se generó el registro|
 |`Application`|`string`|Aplicación que realizó la acción grabada|

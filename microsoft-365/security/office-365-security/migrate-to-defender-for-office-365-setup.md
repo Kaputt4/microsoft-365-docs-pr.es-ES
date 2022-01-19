@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Realice los pasos necesarios para empezar a migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a89924fbd30631c42c9a39be7384e642c2755746
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: cc16da76f4b863800bb4f1e7573bbe2fa106b4cf
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370661"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074731"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrar a Microsoft Defender para Office 365- Fase 2: Configuración
 
@@ -104,7 +104,7 @@ La regla de flujo de correo SCL=-1 es importante durante la migración por los s
 
   Antes o durante el recorte del registro MX a Microsoft 365, deshabilitará esta regla para activar la protección completa de la pila de protección de Microsoft 365 para todos los destinatarios de la organización.
 
-Para obtener más información, vea [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](https://docs.microsoft.comexchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+Para obtener más información, vea [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 **Notas**:
 

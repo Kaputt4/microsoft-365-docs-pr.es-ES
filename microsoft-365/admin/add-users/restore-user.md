@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: En un plazo de 30 días después de eliminar una cuenta de usuario, puede restaurar la cuenta y todos los datos, y el usuario puede iniciar sesión con la misma cuenta.
-ms.openlocfilehash: 093e3d34f4f92e633fb7ece232d4f5abcc912e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc011f9589d789a7eb2faa332a104ef670cf6590
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161563"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074491"
 ---
 # <a name="restore-a-user"></a>Restaurar un usuario
    
@@ -39,7 +39,7 @@ Aquí tiene un par de sugerencias:
   
 - Asegúrese de que las licencias están disponibles para asignar a la cuenta.
     
-- Si su empresa usa Active Directory, para obtener información sobre cómo restaurar una cuenta de usuario, vea How [to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
+- Si su empresa usa Active Directory, para obtener instrucciones sobre cómo restaurar una cuenta de usuario, vea [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Restaurar una o más cuentas de usuario
 
@@ -72,9 +72,9 @@ Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a res
     
 4. Aparece un mensaje que le avisa de que se ha producido un problema al restaurar la cuenta. Realice una de las acciones siguientes:
     
-  - Cancele la restauración, cambie el nombre del usuario activo y vuelva a intentar la restauración.
+     - Cancele la restauración, cambie el nombre del usuario activo y vuelva a intentar la restauración.
     
-  - O bien, escriba una nueva dirección de correo electrónico principal para el usuario y seleccione **Restaurar**.
+     - O bien, escriba una nueva dirección de correo electrónico principal para el usuario y seleccione **Restaurar**.
     
 5. Después de revisar los resultados, seleccione **Cerrar**.
     

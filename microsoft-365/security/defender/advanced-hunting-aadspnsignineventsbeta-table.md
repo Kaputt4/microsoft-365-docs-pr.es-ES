@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6d9c0c215d37458eab1deaf19f5818f07c1a9f3a
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 77cf2d7b74dfc4ccea88661642579f5244e14089
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531500"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62073682"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -43,7 +43,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 
 ****
 
-|Nombre de columna|Tipo de datos|Description|
+|Nombre de columna|Tipo de datos|Descripción|
 |---|---|---|
 |`Timestamp`|`datetime`|Fecha y hora en que se generó el registro|
 |`Application`|`string`|Aplicación que realizó la acción grabada|

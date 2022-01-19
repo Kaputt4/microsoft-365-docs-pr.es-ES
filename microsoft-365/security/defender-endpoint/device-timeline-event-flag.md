@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 145cdf623ea3eb2c8c8268958862f0aa3fc9fafc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e6661a03043095ed2ae1ece194179d26476a703f
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167171"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074779"
 ---
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -47,9 +47,11 @@ Al navegar por la escala de tiempo del dispositivo, puedes buscar y filtrar even
 ## <a name="flag-an-event"></a>Marcar un evento
 
 1. Buscar el evento que desea marcar
-2. Haga clic en el icono de marca de la columna Marca. 
-![Imagen de la marca de escala de tiempo del dispositivo.](images/device-flags.png)
 2. Haga clic en el icono de marca de la columna Marca.
+
+   ![Imagen de la marca de escala de tiempo del dispositivo.](images/device-flags.png)
+
+3. Haga clic en el icono de marca de la columna Marca.
 
    ![Imagen de la marca de escala de tiempo del dispositivo](images/device-flags.png)
 
@@ -57,8 +59,11 @@ Al navegar por la escala de tiempo del dispositivo, puedes buscar y filtrar even
 
 1. En la sección **Filtros de** escala de tiempo, habilite **Eventos marcados**.
 2. Haga clic en **Aplicar**. Solo se muestran los eventos marcados.
-Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.  
-![Imagen de la marca de escala de tiempo del dispositivo con el filtro en.](images/device-flag-filter.png)
-2. Haga clic en **Aplicar**. Solo se muestran los eventos marcados. Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.
+
+   Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.  
+
+   ![Imagen de la marca de escala de tiempo del dispositivo con el filtro en.](images/device-flag-filter.png)
+
+3. Haga clic en **Aplicar**. Solo se muestran los eventos marcados. Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.
 
    ![Imagen de la marca de escala de tiempo del dispositivo con el filtro en](images/device-flag-filter.png)

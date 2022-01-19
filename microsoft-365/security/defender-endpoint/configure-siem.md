@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e241ae3b5250839d98d1692f38fb36333e9a69ca
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 1438e346f693ede4a54eeb7c850a2d8cd4164129
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218675"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074527"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integrar las herramientas SIEM con Microsoft Defender para endpoint
 
@@ -38,9 +38,9 @@ ms.locfileid: "61218675"
 >
 > [Microsoft Defender para alerta de](alerts.md) extremo se compone de uno o varios eventos sospechosos o malintencionados que se produjeron en el dispositivo y sus detalles relacionados. La API de alerta de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
 
-Microsoft Defender para endpoint admite la información de seguridad y las herramientas de administración de eventos (SIEM) que ingieren información del inquilino empresarial en Azure Active Directory (AAD) mediante el protocolo de autenticación OAuth 2.0 para una aplicación AAD registrada que represente la solución o conector SIEM específico instalado en el entorno. 
+Microsoft Defender para endpoint admite la información de seguridad y las herramientas de administración de eventos (SIEM) que ingieren información del inquilino empresarial en Azure Active Directory (AAD) mediante el protocolo de autenticación OAuth 2.0 para una aplicación AAD registrada que represente la solución o conector SIEM específico instalado en el entorno.
 
-Para más información, vea:
+Para más información, consulte lo siguiente:
 
 - [Licencia de Microsoft Defender para API de extremo y términos de uso](api-terms-of-use.md) 
 - [Acceder a las API de Microsoft Defender para punto de conexión](apis-intro.md)
@@ -67,21 +67,21 @@ Para obtener más información sobre la API de alertas de Microsoft Defender par
 
 ### <a name="splunk"></a>Splunk
 
-Usar el Microsoft 365 Defender complemento para Splunk que admite: 
+Usar el Microsoft 365 Defender complemento para Splunk que admite:
 
-- Ingesta de alertas de Microsoft Defender para puntos de conexión 
-- Actualización de alertas en Microsoft Defender para endpoint desde Splunk 
+- Ingesta de alertas de Microsoft Defender para puntos de conexión
+- Actualización de alertas en Microsoft Defender para endpoint desde Splunk
 
 Para obtener más información sobre Microsoft 365 Defender complemento para Splunk, vea [splunkbase](https://splunkbase.splunk.com/app/4959/).
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
-El nuevo SmartConnector para Microsoft 365 Defender ingiere incidentes que contienen alertas de todos los productos de Microsoft 365 Defender (incluidos los de Microsoft Defender para endpoint) en ArcSight y los asigna a su Marco de eventos comunes (CEF). 
+El nuevo SmartConnector para Microsoft 365 Defender ingiere incidentes que contienen alertas de todos los productos de Microsoft 365 Defender (incluidos los de Microsoft Defender para endpoint) en ArcSight y los asigna a su Marco de eventos comunes (CEF).
 
 Para obtener más información sobre el nuevo ArcSight SmartConnector para Microsoft 365 Defender, consulte [La documentación del producto de ArcSight](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
 SmartConnector reemplaza el FlexConnector anterior para Microsoft 365 Defender.
-  
+
 ### <a name="ibm-qradar"></a>IBM QRadar
 
 >[!NOTE]

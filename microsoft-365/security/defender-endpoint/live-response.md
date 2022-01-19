@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e447f764ea8b5f5d0a44a7233812845592157ee
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 42fac7b4dd76831339b5b76ea21787ae288b636a
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873614"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074695"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -64,7 +64,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **macOS:** solo aplicable a public preview, versión mínima requerida: 101.43.84 
   
   - **Linux:** solo aplicable a public preview, versión mínima requerida: 101.45.13 
-    
+
   - **Windows Server 2012 R2:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -72,10 +72,8 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **Windows Server 2019**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
-    
-  - **Windows Server 2022**
 
-       
+  - **Windows Server 2022**
 
 - **Habilitar la respuesta en directo desde la página de configuración avanzada**.
 
@@ -199,7 +197,6 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 | remediate  | Corrige una entidad en el dispositivo. La acción de corrección variará según el tipo de entidad: Archivo: eliminar Proceso: detener, eliminar archivo de imagen Servicio: detener, eliminar entrada del Registro del archivo de imagen: eliminar tarea programada: quitar elemento de carpeta inicio: eliminar archivo NOTA: Este comando tiene un comando de requisito previo. Puede usar el comando -auto junto con remediate para ejecutar automáticamente el comando de requisitos previos.  | v  | v  | v  |
 | examen  | Desconecta el dispositivo de la red mientras conserva la conectividad con el servicio Defender for Endpoint  | N  | v  | v  |
 | deshacer  | Restaura una entidad que se ha corregido.  | v  | v  | v  |
-
 
 ## <a name="use-live-response-commands"></a>Usar comandos de respuesta en directo
 

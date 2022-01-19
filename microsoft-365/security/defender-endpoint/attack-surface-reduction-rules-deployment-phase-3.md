@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5fb67e6bdd5a6ddbfa61147f1d7adba558c8cf02
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8cd03198fb94bfba582fb148b1f8f0da00beecf1
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873925"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62074767"
 ---
-# <a name="attack-surface-reduction-rules-deployment-phase-3-implement"></a>Fase 3 de implementación de reglas de reducción de superficie de ataque: implementar
+# <a name="asr-rules-deployment-phase-3-implement"></a>Fase 3 de implementación de reglas ASR: implementar
 
 La fase de implementación mueve el anillo de las pruebas al estado funcional.
 
@@ -127,10 +127,10 @@ Puedes personalizar la notificación para cuando se desencadena una regla y bloq
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Guía de implementación de reglas ASR: información general](attack-surface-reduction-rules-deployment.md)
+[Introducción a la implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
 
-[Fase 1 de implementación de reglas de ASR: planificar](attack-surface-reduction-rules-deployment-phase-1.md)
+[Fase 1: Planear](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Fase 2 de implementación de reglas de ASR: probar](attack-surface-reduction-rules-deployment-phase-2.md)
+[Fase 2: Prueba](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Fase 4 de implementación de reglas de ASR: hacer operativo](attack-surface-reduction-rules-deployment-phase-4.md)
+[Fase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
