@@ -4,12 +4,12 @@ description: archivo include
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 55b0bc3800ba31c325d9c27906e72d6dd7e9bbea
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: d4554596f4c33ce0536ad2c8e6092fd8fdc74033
+ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262861"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62079648"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -61,6 +61,10 @@ Para usar la administración de seguridad para Microsoft Defender para Endpoint,
 - Una suscripción que concede licencias para Microsoft Defender para Endpoint, como Microsoft 365, o una licencia independiente solo para Microsoft Defender para Endpoint. Para obtener información actual acerca de las opciones, vea [Requisitos mínimos de Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
 
   *Cualquier suscripción* que conceda licencias de Punto de conexión de Microsoft Defender también concede a su inquilino acceso al nodo de seguridad endpoint del centro de administración de Microsoft Endpoint Manager cliente. El nodo de seguridad de extremo es donde configurarás e implementarás directivas para administrar Microsoft Defender para Endpoint para tus dispositivos y supervisar el estado del dispositivo.
+
+>[!NOTE]
+> Actualmente, si se obtiene una suscripción de Microsoft Defender para endpoint a través del Centro de seguridad de Azure/Defender para la nube, esta licencia de Microsoft Defender para endpoints no es una licencia válida para esta característica. 
+
 
 ## <a name="architecture"></a>Arquitectura
 
