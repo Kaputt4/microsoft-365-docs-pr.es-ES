@@ -32,6 +32,8 @@
       href: apply-a-model.md
     - name: Crear un modelo de procesamiento de formularios
       href: create-a-form-processing-model.md
+    - name: Crear documentos mediante el ensamble de contenidos
+      href: content-assembly.md
     - name: Publicar y detectar un modelo
       href: model-discovery.md
     - name: Aplicar una etiqueta de retención

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff515e927affcc02d92c6fe54b38ed6faf756d9f
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 3dd46502fc4e54e298e1f3be4f776e1e325259a8
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074707"
+ms.locfileid: "62083079"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -317,7 +317,7 @@ Para estos escenarios, utilizando sus aplicaciones de Office, un usuario con eti
 ### <a name="dynamic-markings-with-variables"></a>Marcas dinámicas con variables
 
 > [!IMPORTANT]
-> Actualmente, no todas las aplicaciones de todas las plataformas admiten las marcas de contenido dinámico que puedes especificar para tus encabezados, pies de página y marcas de agua. Las aplicaciones que no admiten esta funcionalidad aplican las marcas como el texto original especificado en la configuración de la etiqueta, en lugar de resolver las variables.
+> Si sus aplicaciones de Office no admiten esta capacidad, aplican las marcas como el texto original especificado en la configuración de la etiqueta, en lugar de resolver las variables.
 > 
 > El cliente de etiquetado unificado Azure Information Protection admite marcas dinámicas. Para el etiquetado integrado en Office, consulte las tablas de la sección [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página para ver las versiones mínimas admitidas.
 
