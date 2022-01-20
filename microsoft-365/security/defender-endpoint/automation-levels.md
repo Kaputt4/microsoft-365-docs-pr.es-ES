@@ -19,24 +19,25 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 61c09938d0fece07d313898a7256bee8ed8c6e16
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: f4baefadc2fe08b7fe909a135228278c8a696f14
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171466"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156009"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveles de automatización en las funcionalidades automatizadas de investigación y corrección
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Las capacidades de investigación y corrección automatizadas (AIR) en Microsoft Defender para endpoint se pueden configurar en uno de los varios niveles de automatización. El nivel de automatización afecta a si las acciones de corrección siguientes a las investigaciones de AIR se toman automáticamente o solo después de su aprobación.
 
 - *La automatización completa* (recomendada) significa que las acciones de corrección se toman automáticamente en artefactos determinados como malintencionados.
 - *Semi-automation* means some remediation actions are taken automatically, but other remediation actions await approval before being taken. (Vea la tabla niveles [de automatización](#levels-of-automation).)
-- Todas las acciones de corrección, ya sean pendientes o completadas, se realiza un seguimiento en el Centro de acciones ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+- Todas las acciones de corrección, ya sean pendientes o completadas, se realiza un seguimiento en el Centro de acciones ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
 > [!TIP]
 > Para obtener mejores resultados, se recomienda usar la automatización completa al [configurar AIR](configure-automated-investigations-remediation.md). Los datos recopilados y analizados durante el año pasado muestran que los clientes que usan la automatización completa han quitado un 40 % más de muestras de malware de elevada confianza que los clientes que usan niveles de automatización más bajos. La automatización completa puede ayudar a liberar los recursos de las operaciones de seguridad para centrarse más en sus iniciativas estratégicas.
@@ -49,7 +50,7 @@ En la tabla siguiente se describe cada nivel de automatización y cómo funciona
 
 ****
 
-|Nivel de automatización|Description|
+|Nivel de automatización|Descripción|
 |---|---|
 |**Completa: corregir las amenazas automáticamente** <br> (también denominada automatización *completa*)|Con la automatización completa, las acciones de corrección se realizan automáticamente. Todas las acciones de corrección que se toman se pueden ver en el [Centro de acciones](auto-investigation-action-center.md) de la **pestaña** Historial. Si es necesario, se puede deshacer una acción de corrección. <p> **_Se recomienda_* la automatización completa y se selecciona de forma predeterminada para los inquilinos que se crearon el 16 de agosto de 2020 o después de él con Microsoft Defender para endpoint, sin que aún se haya definido ningún grupo de dispositivos.*|
 |**Semi: requerir aprobación para cualquier corrección** <br> (también denominada *semiauto* automatización )|Con este nivel de semi automatización, se requiere la aprobación para *cualquier* acción de corrección. Estas acciones pendientes se pueden ver y aprobar en el [Centro de acciones](auto-investigation-action-center.md), en la **pestaña** Pendiente. <p> *Este nivel de semi automatización está seleccionado de forma predeterminada para los inquilinos que se crearon antes del 16 de agosto de 2020 con Microsoft Defender para endpoint, sin que se haya definido ningún grupo de dispositivos.*|

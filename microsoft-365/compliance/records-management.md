@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: f3322af11f724920e5833182128346c1bc4c41c5
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
+ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559873"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62083064"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -51,7 +51,7 @@ Use las siguientes funciones para dar soporte a la solución de administración 
 
 Con estas funciones, puede incorporar los requisitos y las programaciones de retención de su organización en una solución de administración de registros para administrar la retención, la declaración de registros y la eliminación para dar soporte a todo el ciclo de vida del contenido.
 
-Además de la documentación en línea, es posible que le resulte útil escuchar la [grabación del seminario web](https://aka.ms/MIPC/Video-RecordsManagementWebinar) para la administración de registros y descargar la [presentación acompañante con preguntas más frecuentes](https://aka.ms/MIPC/Blog-RecordsManagementWebinar).
+Además de la documentación en línea, puede resultar útil descargar una [presentación con preguntas frecuentes](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) de un seminario web sobre la administración de registros. La grabación del seminario web real ya no está disponible.
 
 ## <a name="records"></a>Registros
 

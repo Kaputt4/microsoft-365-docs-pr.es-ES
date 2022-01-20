@@ -25,18 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Obtenga información sobre cómo un administrador puede establecer una directiva de expiración de contraseñas para su empresa, escuela u ONG en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 64c4a4503203f30d3298a09829ac8dde2af764ff
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: b46867048d4c7fa632150c67d4a90e44f2e3d152
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530600"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156021"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](Información general del Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md).
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](/microsoft-365/admin/add-users/about-admin-roles).
 
 Como administrador, puede hacer que las contraseñas de usuario expiren al cabo de un número determinado de días, o establecer que las contraseñas nunca expiren. De forma predeterminada, está establecido que no expiren nuncapara su organización.
 

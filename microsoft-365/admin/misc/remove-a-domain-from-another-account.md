@@ -1,5 +1,5 @@
 ---
-title: Realizar una toma de administración interna
+title: Quitar un dominio de otra cuenta
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -21,26 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Obtenga información sobre cómo comprobar la propiedad del dominio y el correo electrónico para asumir una cuenta no administrada creada por un usuario de autoservicio que se inscriba en Microsoft 365.
-ms.openlocfilehash: 74ba60191004e5b980621ce6a6b58feb42cdcb92
+description: Obtenga información sobre cómo unirse a una cuenta no administrada creada por un registro de usuario de autoservicio en Microsoft 365.
+ms.openlocfilehash: 23fff52a4c42da05f787bfbe8207d3e090c0105c
 ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156213"
+ms.locfileid: "62156628"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Realizar una toma de administración interna
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
-Si es un administrador y desea asumir una cuenta no administrada creada por un registro de usuario de autoservicio, puede realizar una toma de posesión de administrador interna siguiendo los pasos descritos en este artículo.
+Si es un administrador y desea asumir una cuenta no administrada creada por un registro de usuario de autoservicio, puede hacerlo realizando una toma de posesión de administrador interna.
 
 > [!NOTE]
 > Un registro de autoservicio para cualquier servicio en la nube que use Azure AD agrega al usuario a un directorio de Azure AD no administrado o "sombra" y crea una cuenta no administrada. Una cuenta no administrada es un directorio sin un administrador global. Para determinar si una cuenta está administrada o no administrada, vea [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Cuando un usuario se inscribe en Microsoft 365 con una dirección de correo electrónico, se crea automáticamente una cuenta para ellos. Si un administrador desea administrar los usuarios en la cuenta o comprar servicios Microsoft 365 adicionales, debe convertirse en administrador de la cuenta siguiendo estos pasos para realizar una toma de posesión de administrador.
+A veces no puede agregar un dominio a la cuenta de la organización porque otra persona ya se ha registrado para Microsoft 365 una dirección de correo electrónico asociada con ese nombre de dominio. Pero puede quitar el dominio de la otra cuenta no administrada y agregarlo a la cuenta administrada de la organización.
+
+Sin embargo, para poder quitar el dominio de la otra cuenta y agregarlo a su cuenta, debe unirse a la cuenta no administrada y convertirse en administrador de esa cuenta. A continuación, quitará el dominio de la cuenta no administrada, volverá a iniciar sesión en la cuenta y agregará el dominio a la cuenta administrada.
+
+Los pasos de este artículo describen solo cómo unirse a la otra cuenta (pasos 1 y 2) y seguir los pasos del Asistente para la toma de posesión de administrador para convertirse en el administrador de la cuenta no administrada (paso 3).
+
+Después de convertirse en administrador de la cuenta no administrada, puede quitar el dominio de la cuenta no administrada y agregarlo a la cuenta. 
 
 ## <a name="step-1-verify-your-email-address"></a>Paso 1: Comprobar la dirección de correo electrónico
 
@@ -57,7 +63,7 @@ Cuando un usuario se inscribe en Microsoft 365 con una dirección de correo elec
 
 1. Cuando escriba el código de verificación, se le mostrará a una página donde puede crear una nueva cuenta.
 
-2. Rellene los campos de nombre de usuario y contraseña con la cuenta que desea usar y, a continuación, siga los pasos para crear la cuenta.
+2. Rellene los campos de nombre de usuario y contraseña con la cuenta que desea usar y, a continuación, **seleccione Iniciar**.
 
 ## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>Paso 3: Comprobar la propiedad del dominio y convertirse en administrador
 
@@ -65,16 +71,13 @@ Cuando un usuario se inscribe en Microsoft 365 con una dirección de correo elec
 
     Se le redirigirá al Asistente para la toma de posesión de administrador.
 
-1. Seleccione **Siguiente** y compruebe que es el propietario del dominio que desea asumir agregando un registro TXT al registrador de dominios.
+1. Seleccione **Siguiente** y compruebe que es el propietario del dominio que desea asumir agregando un registro TXT al registrador de dominios. 
 
     El asistente le proporcionará el registro TXT que desea agregar, así como un vínculo al sitio web del registrador y un vínculo a instrucciones paso a paso.
 
 1. En la **página You're now the admin,** seleccione **Ir al Centro de administración.**
 
-    Tiene los privilegios de administrador necesarios para administrar la cuenta en el Centro de administración. Por ejemplo, puede administrar usuarios y grupos de cuentas, comprar nuevas suscripciones, realizar asignaciones de usuarios y administrar los dominios de cuenta.
-
-    Si quieres quitar el dominio de esta cuenta para poder agregarlo a otra cuenta, consulta [Quitar un dominio de otra cuenta.](remove-a-domain-from-another-account.md)
-  
+    Ahora tiene los privilegios de administrador necesarios para quitar el dominio de la otra cuenta. 
 ## <a name="related-content"></a>Contenido relacionado
 
 YouTube: [3 pasos para realizar](https://www.youtube.com/watch?v=xt5EsrQBZZk) una toma de administración de TI para Power BI y Microsoft 365 (vídeo)\

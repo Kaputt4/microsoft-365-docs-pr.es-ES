@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d4b83457fb8f8dc16891882cd8ca5c131659d35
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 231adb590bc737c646566417db1891ac96fdb455
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167555"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156477"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -29,7 +29,7 @@ ms.locfileid: "61167555"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plataformas**
@@ -65,7 +65,7 @@ Tendrás que seguir los siguientes pasos para incorporar dispositivos que no Win
 
 Para dispositivos macOS y Linux, puedes elegir salir a través de Microsoft Defender para endpoint. En el panel de navegación, **seleccione Configuración** \> **Offboard** Seleccionar sistema operativo \> **para iniciar el proceso de offboarding**.
 
-También puede desactivar la integración de terceros Windows dispositivos no integrados. Habilite la cobertura para dispositivos que ejecutan plataformas que no Windows mediante [la integración de soluciones de terceros.](https://securitycenter.windows.com/interoperability/partners) 
+También puede desactivar la integración de terceros Windows dispositivos no integrados. Habilite la cobertura para dispositivos que ejecutan plataformas que no Windows mediante [la integración de soluciones de terceros.](https://security.microsoft.com/interoperability/partners)
 
 ## <a name="related-topics"></a>Temas relacionados
 - [incorporar dispositivos Windows](configure-endpoints.md)

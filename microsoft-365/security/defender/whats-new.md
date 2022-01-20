@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9962520b08f8feee85ae1e74816fa87b2cd20923
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 862a7a746455d33bdf6779c2b74b76127bc8f010
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074611"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156465"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -64,7 +64,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 - (GA) Microsoft Defender para Office 365 datos de eventos está disponible en la API Microsoft 365 Defender streaming de eventos. Puede ver la disponibilidad y el estado de los tipos de eventos en el archivo Microsoft 365 Defender tipos de eventos [en la API de streaming.](supported-event-types.md)
 - (GA) Microsoft Defender para los Office 365 disponibles en la búsqueda avanzada ya está disponible en general.
-- (Versión preliminar) Asignar incidentes y alertas a cuentas de usuario
+- (GA) Asignar incidentes y alertas a cuentas de usuario
 
   Puede asignar un incidente y todas las alertas asociadas a él  a una cuenta de  usuario desde **Asignar a:** en el panel Administrar incidente de un incidente o en el panel Administrar alerta de una alerta.
 

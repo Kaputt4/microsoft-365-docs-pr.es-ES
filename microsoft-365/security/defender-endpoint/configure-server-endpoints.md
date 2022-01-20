@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 314699973a26820782f2ae899047029d999cdc8a
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: a284ae69ddf299256c3c91a9a63682f41f95211f
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62009050"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156501"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -168,7 +168,13 @@ Deberá descargar los paquetes de instalación **e incorporación** del portal.
 
 > [!div class="mx-imgBorder"]
 > ![Imagen del panel de incorporación](images/install-agent-onboard.png)
- 
+
+
+   > [!NOTE]
+   > En Windows Server 2012R2, Antivirus de Microsoft Defender instalará el paquete de instalación y estará activo a menos que lo establezca en modo pasivo. En Windows Server 2016, Antivirus de Microsoft Defender debe instalarse como una característica (consulte Cambiar a [MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) primero y totalmente actualizada antes de continuar con la instalación.
+   > 
+   > Si ejecuta una solución antimalware que no sea de Microsoft, asegúrese de agregar exclusiones para Antivirus de Microsoft Defender ( de esta lista de procesos de[Microsoft Defender](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)en la pestaña Procesos de Defender ) a la solución que no sea de Microsoft antes de la instalación.  También se recomienda agregar soluciones de seguridad que no son de Microsoft a la lista de exclusión de Antivirus de Defender.
+
 
 El **paquete de instalación** contiene un archivo MSI que instala el agente de Microsoft Defender para endpoints.
 
@@ -186,6 +192,8 @@ Siga estos pasos para descargar los paquetes:
 3. Seleccione **Descargar paquete de instalación** y guarde el .msi archivo. 
  
 4. Seleccione **Descargar paquete de incorporación** y guarde el .zip archivo.
+
+5. Instale el paquete de instalación con cualquiera de las opciones para instalar Antivirus de Microsoft Defender. La instalación requiere permisos administrativos.
 
 
 
@@ -228,9 +236,6 @@ El `/quiet` modificador suprime todas las notificaciones.
 
 > [!NOTE]
 > Antivirus de Microsoft Defender no pasa automáticamente al modo pasivo. Puede optar por establecer Antivirus de Microsoft Defender para que se ejecute en modo pasivo si está ejecutando una solución antivirus o antimalware que no sea de Microsoft. Para las instalaciones de línea de comandos, el opcional establece inmediatamente `FORCEPASSIVEMODE=1` el componente Antivirus de Microsoft Defender en modo pasivo para evitar interferencias. A continuación, para asegurarse de que Defender Antivirus permanece en modo pasivo después de la incorporación para admitir funcionalidades como EDR Block, establezca la clave del Registro "ForceDefenderPassiveMode".
->
-> - El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Microsoft Endpoint Manager incluye actualmente un script. Para obtener más información sobre cómo implementar scripts en Configuration Manager, vea [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
-> - Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo o Microsoft Endpoint Configuration Manager.
 
 La compatibilidad con Windows Server proporciona información más detallada sobre las actividades del servidor, la cobertura para la detección de ataques de kernel y memoria y habilita acciones de respuesta.
 
@@ -301,6 +306,9 @@ Los pasos siguientes solo son aplicables si usa una solución antimalware de ter
 Los datos recopilados por Defender para endpoint se almacenan en la ubicación geográfica del inquilino tal como se identifica durante el aprovisionamiento.
 > - Si usa Defender para endpoint antes de usar Microsoft Defender para la nube, los datos se almacenarán en la ubicación que especificó al crear el inquilino, incluso si se integra con Microsoft Defender para la nube más adelante.
 > - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, póngase en contacto con el soporte técnico de Microsoft para restablecer el espacio empresarial.
+> - El paquete de incorporación para Windows Server 2019 y Windows Server 2022 a Microsoft Endpoint Manager incluye actualmente un script. Para obtener más información sobre cómo implementar scripts en Configuration Manager, vea [Paquetes y programas en Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+> - Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo o Microsoft Endpoint Configuration Manager.
+
 
 
 ## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel y Windows Server 2019 y Windows Server 2022
@@ -352,7 +360,7 @@ Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de dete
 
 Siga los pasos descritos en Ejecutar una prueba de detección en un dispositivo recién incorporado para comprobar que el servidor está informando [a](run-detection-test.md) Defender para el servicio de extremo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de incorporar dispositivos correctamente al servicio, deberá configurar los componentes individuales de Microsoft Defender para endpoint. Siga el [orden de adopción](prepare-deployment.md#adoption-order) para guiarse en la habilitación de los distintos componentes.
 

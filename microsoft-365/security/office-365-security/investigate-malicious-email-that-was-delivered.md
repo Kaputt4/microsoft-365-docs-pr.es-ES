@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc76f546286597c12469e849eab6e62f9a58a6cc
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8b3ff937b014eae69c501812ac542f6537b25f8d
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938173"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156537"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Investigar el correo electrónico malintencionado que se entregó en Microsoft 365
 
@@ -83,7 +83,7 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 > [!NOTE]
 > Actualmente, las búsquedas predeterminadas en el Explorador no incluyen elementos entregados que se quitaron del buzón de correo en la nube mediante la purga automática de cero horas (ZAP). Esta limitación se aplica a todas las vistas (por ejemplo, las vistas **\> Malware de correo** electrónico o **\> Suplantación de identidad** de correo electrónico). Para incluir elementos eliminados por ZAP, debe agregar un conjunto de acciones **de** entrega para incluir **Removed by ZAP**. Si incluye todas las opciones, verá todos los resultados de la acción de entrega, incluidos los elementos eliminados por ZAP.
 
-1. En el portal Microsoft 365 Defender en <https://security.microsofot.com> , vaya a Correo electrónico & explorador de  \> **colaboración** . Para ir directamente a la **página Explorador,** use <https://security.microsoft.com/threatexplorer> .
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com> , vaya a Correo electrónico & explorador de  \> **colaboración** . Para ir directamente a la **página Explorador,** use <https://security.microsoft.com/threatexplorer> .
 
    En la **página Explorador,** la **columna Acciones adicionales** muestra a los administradores el resultado del procesamiento de un correo electrónico. Se **puede tener acceso** a la columna Acciones adicionales en el mismo lugar que Acción de **entrega** y Ubicación **de entrega.** Las acciones especiales pueden actualizarse al final de la escala de tiempo de correo electrónico del Explorador de amenazas, que es una nueva característica destinada a mejorar la experiencia de búsqueda para los administradores.
 

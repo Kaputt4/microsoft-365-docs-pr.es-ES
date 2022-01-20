@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada con su cuenta Microsoft 365 para empresas. '
-ms.openlocfilehash: 005b65bc8f5e34dcddec41e0d197b813a53a1c33
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 16296c9ba748ec76fef52be3ae13bba9ff8552b1
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165213"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62155974"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
   
@@ -59,6 +59,10 @@ Debe tener derechos de administrador global para agregar alias de correo electr�
   
     > [!IMPORTANT]
     > Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la consola de administración del proveedor para establecer el nuevo alias como el principal. 
+
+
+   > [!IMPORTANT]
+   >  Si recibe el mensaje de error **Este usuario se sincroniza con su Active Directory local. Algunos detalles solo** se pueden editar a través de su Active Directory local, significa que Active Directory es autoritativo para los atributos de los usuarios sincronizados, debe modificar los atributos en su Active Directory local.
   
     > [!TIP]
     > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, vea [Agregar un dominio a Microsoft 365](../setup/add-domain.md). 

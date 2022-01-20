@@ -17,21 +17,21 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49ee01e5bd9cb71b685bc8dcbe290f13f5a3e915
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0f1e9c88c003551ca74c76d6348465f52fdbd171
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164507"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156393"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -44,7 +44,7 @@ En el [tema Planeación,](deployment-strategy.md) se proporcionaron varios méto
 
 Aunque Defender para endpoint admite la incorporación de varios puntos de conexión y herramientas, este artículo no los cubre. Para obtener información sobre la incorporación general con otras herramientas y métodos de implementación compatibles, vea [Onboarding overview](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) es una plataforma de solución que unifica varios servicios. Incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) es una plataforma de solución que unifica varios servicios. Incluye [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 
 -based device management.
 
@@ -65,7 +65,7 @@ Esta guía de incorporación le ayudará a seguir los siguientes pasos básicos 
 Estos son los vínculos que necesitará para el resto del proceso:
 
 - [Portal MEM](https://aka.ms/memac)
-- [Microsoft Defender para punto de conexión](https://securitycenter.windows.com/)
+- [Microsoft 365 Defender](https://security.microsoft.com)
 - [Líneas base de seguridad de Intune](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 Para obtener más información Microsoft Endpoint Manager, consulte estos recursos:

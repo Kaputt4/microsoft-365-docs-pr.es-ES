@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3976ff16d303db93d2ae7929afe1244f8ab1dda5
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 9ef59cc47addce2a8f2171038f5894071549a40b
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121822"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156489"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -34,12 +34,11 @@ ms.locfileid: "61121822"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La administración de incidentes es fundamental para garantizar que las amenazas se contengan y se aborde.
 
-Ratulac-acrolinx-updates Puede administrar incidentes de incidentes **& alertas** > incidentes en el inicio rápido del portal de Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
-
+Puede administrar incidentes desde incidentes & **alertas > incidentes en** el inicio rápido del portal de Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -80,7 +79,7 @@ Al empezar a escribir, tiene la opción de seleccionar de una lista de etiquetas
 
 ## <a name="assign-an-incident"></a>Asignar un incidente
 
-Si aún no se ha asignado un incidente, puede seleccionar el cuadro Asignar **a** y especificar la cuenta de usuario (versión preliminar). Vuelva a asignar un incidente, quite la cuenta de asignación actual seleccionando la "x" junto al nombre de la cuenta y, a continuación, seleccione el cuadro Asignar **a.** Al asignar la propiedad de un incidente, se asigna la misma propiedad a todas las alertas asociadas.
+Si aún no se ha asignado un incidente, puede seleccionar el cuadro Asignar **a** y especificar la cuenta de usuario. Para volver a asignar un incidente, quite la cuenta de asignación actual seleccionando la "x" junto al nombre de la cuenta y, a continuación, seleccione el cuadro Asignar **a.** Al asignar la propiedad de un incidente, se asigna la misma propiedad a todas las alertas asociadas.
 
 Puede obtener una lista de incidentes asignados filtrando la cola de incidentes. 
 
@@ -106,7 +105,7 @@ Si se trataba de una alerta verdadera, también debe especificar qué tipo de am
 
 Puede agregar varios comentarios a un incidente con el **campo Comentario.** Cada comentario se agrega a los eventos históricos del incidente. Puede ver los comentarios y el historial de un incidente desde el vínculo **Comentarios e** historial en la **página Resumen.**
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para nuevos incidentes, inicie la [investigación](investigate-incidents.md).
 

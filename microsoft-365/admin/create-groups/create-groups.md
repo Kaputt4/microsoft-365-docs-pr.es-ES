@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a crear y eliminar Microsoft 365 grupos, agregar y quitar miembros del grupo y personalizar el funcionamiento del grupo.
-ms.openlocfilehash: 32a79182efc021a5f95cc4ef7f53e722c76a1df2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1e7100ead1d149edbef710c1ea183776170c261a
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165801"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62155985"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Crear un grupo en el Centro de administración de Microsoft 365
   
@@ -44,17 +44,19 @@ Aunque los usuarios pueden crear un grupo Microsoft 365 desde Outlook u otras ap
 
 2. Seleccione **Agregar un grupo**.
   
-3. En la **página Elegir un tipo de** grupo, seleccione **Office 365** y seleccione **Siguiente**.
+3. En la **página Elegir un tipo de** grupo, seleccione **Microsoft 365** y seleccione **Siguiente**.
 
 4. En la **página Conceptos básicos,** escriba un nombre para el grupo y, opcionalmente, una descripción. Seleccione **Siguiente**.
-    
-5. En la **página** Editar configuración, escriba una dirección de correo electrónico única para el grupo, elija una opción de privacidad y si desea agregar Microsoft Teams y, a continuación,**seleccione Siguiente**.
-    
-6. En los **propietarios,** elija el nombre de una o más personas que serán designadas para administrar el grupo. Todos los propietarios del grupo podrán eliminar correo electrónico de la bandeja de entrada del grupo. Los demás miembros no podrán eliminar correo electrónico de la bandeja de entrada del grupo. Seleccione **Siguiente**.
-    
-7. Después de revisar la configuración y realizar los cambios, seleccione **Crear grupo**.
 
-8. Seleccione **Cerrar**.
+5.  En la **página Propietarios,** elija el nombre de una o más personas que serán designadas para administrar el grupo. Todos los propietarios del grupo podrán eliminar correo electrónico de la bandeja de entrada del grupo. Los demás miembros no podrán eliminar correo electrónico de la bandeja de entrada del grupo. Seleccione **Siguiente**.
+
+6.  En la **página Miembros,** elija el nombre de una o más personas que se designarán como miembros del grupo. Seleccione **Siguiente**.
+
+7. En la **Configuración,** escriba una dirección de correo electrónico única para el grupo, elija una opción de privacidad y si desea agregar Microsoft Teams y, a continuación, **seleccione Siguiente**.
+    
+8. Después de revisar la configuración y realizar los cambios, seleccione **Crear grupo**.
+
+9. Seleccione **Cerrar**.
     
 ## <a name="add-members-to-the-group"></a>Agregar miembros al grupo
 

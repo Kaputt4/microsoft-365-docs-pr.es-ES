@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre Caja fuerte protección de vínculos en Defender for Office 365 para proteger una organización contra la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte y vea los gráficos de los Caja fuerte links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76bd9d1eb0d9cb1c88cbdce5c4d0377b2dfac14b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: fc043da2763bf6984062bec903e4f2df7bd6d10d
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943069"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156153"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -208,6 +208,7 @@ Caja fuerte de vínculos para Office 365 aplicaciones tiene los siguientes requi
   - Office aplicaciones en dispositivos iOS o Android.
   - Visio en Windows.
   - OneNote en un explorador web.
+  - Outlook para Windows al abrir archivos EML o MSG guardados.
 
 - Office 365 están configuradas para usar la autenticación moderna. Para obtener más información, vea How [modern authentication works for Office 2013, Office 2016 y Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 

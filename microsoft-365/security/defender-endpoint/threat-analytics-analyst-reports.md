@@ -15,19 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8523439bbcc8958c1fcb01a6db181c05263ef411
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5cd7c8da3b4d22600293959bdcb47a783a8569c3
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167711"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156242"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>El informe de analistas en análisis de amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,7 +47,7 @@ Cada sección del informe de analista está diseñada para proporcionar informac
 
 ****
 
-|Sección Informe|Description|
+|Sección Informe|Descripción|
 |---|---|
 |Resumen ejecutivo|Información general sobre la amenaza, incluso cuando se vio por primera vez, sus motivaciones, eventos notables, objetivos principales y distintas herramientas y técnicas. Puede usar esta información para evaluar aún más cómo priorizar la amenaza en el contexto de su industria, ubicación geográfica y red.|
 |Análisis|Información técnica sobre las amenazas, incluidos los detalles de un ataque y cómo los atacantes pueden usar una nueva técnica o superficie de ataque|
@@ -94,11 +95,10 @@ Aunque las detecciones permiten identificar y detener automáticamente la amenaz
 
 [La búsqueda avanzada](advanced-hunting-overview.md) proporciona una interfaz de consulta basada en kusto Query Language que simplifica la localización de indicadores sutiles de actividad de amenazas. También te permite obtener información contextual y comprobar si los indicadores están conectados a una amenaza.
 
-Los analistas de Microsoft han consultado consultas avanzadas de búsqueda en los informes de analistas y están listas para ejecutarse en el editor de consultas [de búsqueda avanzada.](https://securitycenter.windows.com/advanced-hunting) También puede usar las consultas para crear reglas de [detección personalizadas](custom-detection-rules.md) que desencadene alertas para futuras coincidencias.
+Los analistas de Microsoft han consultado consultas avanzadas de búsqueda en los informes de analistas y están listas para ejecutarse en el editor de consultas [de búsqueda avanzada.](https://security.microsoft.com/advanced-hunting) También puede usar las consultas para crear reglas de [detección personalizadas](custom-detection-rules.md) que desencadene alertas para futuras coincidencias.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Información general sobre el Análisis de amenazas](threat-analytics.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
 - [Reglas de detección personalizada](custom-detection-rules.md)
-- 

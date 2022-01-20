@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f957f1a6aa51380152441f26aaeb47b7df58e7b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 5621ce43443a3e620ef0166c4b362e9dc04becae
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171248"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156333"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Programar exámenes con Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -110,7 +110,7 @@ El código siguiente muestra el esquema que debe usar para programar un examen r
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
-            <integer>0</integer>
+            <integer>50</integer>
             <key>Weekday</key>
             <integer>5</integer>
         </dict>
@@ -132,10 +132,14 @@ El código siguiente muestra el esquema que debe usar para programar un examen r
     launchctl start <your file name>
     ```
 
-3. El examen programado se ejecutará en la fecha, hora y frecuencia definidas en la lista p. En los ejemplos anteriores, el examen se ejecuta a las 2:00 a.m. todos los viernes. 
+3. El examen programado se ejecutará en la fecha, hora y frecuencia definidas en la lista p. En los ejemplos anteriores, el examen se ejecuta a las 2:50 a.m. todos los viernes. 
 
-    El `Weekday` valor de usa un entero para indicar el quinto día de la `StartCalendarInterval` semana, o viernes.
-
+    - El `Weekday` valor de usa un entero para indicar el quinto día de la `StartCalendarInterval` semana, o viernes. El intervalo está entre 0 y 7 y 7 representa el domingo.
+    - El `Day` valor de usa un entero para indicar el tercer día del `StartCalendarInterval` mes. El intervalo está entre 1 y 31.
+    - El `Hour` valor de usa un entero para indicar la segunda hora del `StartCalendarInterval` día. El intervalo está entre 0 y 24.
+    El `Minute` valor de usa un entero para indicar cincuenta minutos de la `StartCalendarInterval` hora. El intervalo está entre 0 y 59.
+    
+    
  > [!IMPORTANT]
  > Los agentes ejecutados *con el inicio* no se ejecutarán en la hora programada mientras el dispositivo está dormido. En su lugar, se ejecutarán una vez que el dispositivo reanude el modo de suspensión.
  >

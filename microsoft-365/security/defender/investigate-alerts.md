@@ -21,19 +21,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: cdc853ff4d22708143a9f23fd9399917e7fe91f6
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 2dcc7e57182df3fe0a06bb1713b3a0786f35e144
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128010"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156141"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Las alertas son la base de todos los incidentes e indican la aparición de eventos malintencionados o sospechosos en su entorno. Las alertas suelen formar parte de un ataque más amplio y proporcionan pistas sobre un incidente.
 
@@ -108,7 +108,7 @@ Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defende
 
 | Origen de alertas | Carácter anteponer |
 | :---|:--- |
-| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
@@ -141,7 +141,7 @@ Para administrar una alerta, seleccione la alerta en la cola de alertas de su fi
 El **panel Administrar alerta** le permite ver o especificar:
 
 - Estado de alerta (Nuevo, Resuelto, En curso).
-- La cuenta de usuario a la que se ha asignado la alerta
+- Cuenta de usuario a la que se ha asignado la alerta.
 - Clasificación de la alerta (No establecido, Alerta verdadera, Alerta falsa).
 - Para la clasificación como una alerta verdadera, el tipo de amenaza de la alerta en **el campo Determinación.**
 - Un comentario sobre la alerta.
@@ -197,11 +197,11 @@ Para ver el proceso detallado paso a paso, vea el vídeo [aquí](https://www.mic
 
 En este vídeo también se describe cómo conectar power automate a Defender for Cloud Apps.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

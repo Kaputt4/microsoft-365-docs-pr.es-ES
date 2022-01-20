@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2f2cc71b13965311340dda5f8007f072d6e9220d
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3824f8e0ee2821e3f112f6e39833281b167e36e1
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935806"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156429"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Herramientas y métodos de incorporación para Windows dispositivos en Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
@@ -42,6 +43,7 @@ En general, identificarás el dispositivo Windows que estás incorporando y, a c
 ![Imagen de herramientas y métodos de incorporación](images/onboarding-config-tools.png)
 
 ## <a name="endpoint-onboarding-tools"></a>Herramientas de incorporación de puntos de conexión
+
 En función del Windows de conexión que desee incorporar, use la herramienta o el método correspondiente que se describe en la tabla siguiente.
 
 Windows dispositivo | Herramienta o método de incorporación
@@ -50,14 +52,10 @@ Windows dispositivo | Herramienta o método de incorporación
 |<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[Incorporar versiones anteriores de Windows](onboard-downlevel.md) o Microsoft Defender para la [nube](/azure/security-center/security-center-wdatp) <br><br> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
 |<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).
 
-
-
 (<a id="fn1">1</a>) Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
-
 
 >[!IMPORTANT]
 >Para poder comprar Microsoft Defender para SKU de Endpoint Server, debe haber adquirido ya un mínimo combinado de cualquiera de las siguientes licencias de suscripción, Windows E5/A5, Microsoft 365 E5/A5 o Seguridad de Microsoft 365 E5.  Para obtener más información sobre las licencias, vea [los Términos del producto](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
-
 
 Tema|Descripción
 :---|:---
@@ -68,6 +66,5 @@ Tema|Descripción
 [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)|Obtenga información sobre cómo usar el paquete de configuración para configurar dispositivos VDI.
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
-
 
 Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.

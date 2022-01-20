@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3656d864b5fe240bea7375999ad9501adf3b2a1
-ms.sourcegitcommit: c2e8a4febb019b398d549a72c489f012cfbc0b32
+ms.openlocfilehash: ab1cf8a93876c5669d561161874a1c34914b7fa3
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61265207"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156357"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
@@ -88,6 +88,14 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 - Abre **Finder > aplicaciones**. Haga clic con el botón **secundario en Microsoft Defender para endpoint > Move to Trash**.
 
+### <a name="supported-output-types"></a>Tipos de salida compatibles
+
+Admite tipos de salida de tabla y formato JSON. Para cada comando, hay un comportamiento de salida predeterminado. Puede modificar el resultado en el formato de salida preferido mediante los siguientes comandos:
+
+`-output json`
+
+`-output table`
+
 ### <a name="from-the-command-line"></a>Desde la línea de comandos
 
 - `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
@@ -96,7 +104,7 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 Las tareas importantes, como controlar la configuración del producto y desencadenar exámenes a petición, se pueden realizar desde la línea de comandos:
 
-|Grupo|Escenario|Comando|
+|Group|Escenario|Get-Help|
 |---|---|---|
 |Configuración|Activar/desactivar la protección en tiempo real|`mdatp config real-time-protection --value [enabled/disabled]`|
 |Configuración|Activar/desactivar la protección en la nube|`mdatp config cloud --value [enabled/disabled]`|
