@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: 1154a565f286cfafb5f1f03fdefbf3740b6e9907
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1586489389931b3df19a1c84f0ae49ac7ff9c099
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942973"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159494"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local
 
@@ -43,6 +43,9 @@ Antes de empezar con el examinador de DLP local, debe confirmar su [Suscripción
 
 
 Para más información sobre las licencias, vea: [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+
+> [!IMPORTANT]
+> Todos los usuarios que contribuyen a la ubicación examinada agregando archivos o consumiendo archivos deben tener una licencia, no solo el usuario del analizador.
 
 ### <a name="permissions"></a>Permisos
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: e07279a2de421985b0ba6f97d2b6ad843d2ba9fa
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 671818a3db6ed4572179fe6d43907871d977a970
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61874033"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159558"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -93,7 +93,7 @@ Todos los escenarios requieren que [Crear y configurar etiquetas de confidencial
 |Quiero...|Documentación|
 |----------------|---------------|
 |Administrar etiquetas de confidencialidad para las aplicaciones de Office para que el contenido se etiquete a medida que se crea (incluye la compatibilidad con el etiquetado manual en todas las plataformas) |[Administrar etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md)|
-|Permitir que los usuarios etiqueten y protejan archivos de equipos Windows con las aplicaciones de Office, el Explorador de archivos y PowerShell|[Cliente de etiquetado unificado de Azure Information Protection para Windows](/azure/information-protection/rms-client/aip-clientv2)|
+|Amplíe el etiquetado más allá de las aplicaciones de Office mediante Explorador de archivos y PowerShell, con características adicionales para las aplicaciones de Office en Windows (si es necesario)|[Cliente de etiquetado unificado de Azure Information Protection para Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |Cifre documentos y mensajes de correo electrónico con etiquetas de confidencialidad y restrinja quién puede tener acceso a ellos y cómo puede usar el contenido |[Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md)|
 |Habilite las etiquetas de confidencialidad para Office en la web, con soporte para coautoría, eDiscovery, la prevención de pérdida de datos y búsqueda, incluso cuando los documentos estén cifrados. | [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Usar la coautoría y guardar automáticamente en las aplicaciones de escritorio de Office cuando los documentos están cifrados | [Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md)
