@@ -71,12 +71,18 @@ conceptualContent:
         - url: 'https://www.microsoft.com/microsoft-365/partners/business'
           itemType: overview
           text: Página de asociados
-        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx'
+        - url: 'https://aka.ms/M365BPPartnerPlaybook'
           itemType: download
-          text: Presentación (enfocada en el cliente)
-        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx'
+          text: Business Premium Partner Playbook
+        - url: 'https://aka.ms/bpbdmpitchdeck'
           itemType: download
-          text: Presentación (enfocada en asociados)
+          text: Plataforma de Premium de decisión empresarial (BDM)
+        - url: 'https://aka.ms/bpitdmpitchdeck'
+          itemType: download
+          text: Plataforma Premium de lanzamiento del responsable de la toma de decisiones de IT (ITDM)
+        - url: 'https://aka.ms/bppartneropportunitydeck'
+          itemType: download
+          text: Presentación de Premium de partners
         - url: 'https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery'
           itemType: download
           text: Aspectos básicos técnicos
@@ -101,7 +107,7 @@ conceptualContent:
           itemType: how-to-guide
           text: Restablecer la contraseña de un usuario
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: Ver más
     - title: Administrar amenazas
       links:
@@ -118,7 +124,7 @@ conceptualContent:
           itemType: overview
           text: Acceso condicional
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: Ver más
     - title: Administrar datos
       links:

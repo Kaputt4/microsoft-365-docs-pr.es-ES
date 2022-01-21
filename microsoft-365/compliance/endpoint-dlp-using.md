@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: e6ab91d8baf3182cd857e7e6002f61b57a8f101e
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 85bcf25300b51e0e9f6fb4b770c748ba86d5b2ea
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560605"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159738"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -58,12 +58,6 @@ O bien
 |Justificaciones empresariales en sugerencias de directivas | Compatible | Compatible| |
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Escaneo y protección de clasificación avanzada
-
-<!--#### Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
-
-When enabled,--> 
 
 La protección y el examen de clasificación avanzada permiten que el servicio de clasificación de datos basado en la nube Microsoft 365 más avanzado examine los elementos, los clasifique y devuelva los resultados al equipo local. Esto significa que puede aprovechar la clasificación [exacta de coincidencia de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), técnicas de clasificación de entidades [con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) en las directivas DLP.
 

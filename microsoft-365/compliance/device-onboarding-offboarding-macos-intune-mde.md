@@ -14,21 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y quitar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con Microsoft Intune para clientes de MDE (versión preliminar)
-ms.openlocfilehash: a1d647fae55b091b8c12df885ce28aa4f1275a1a
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 0486c08734e049a82550c1fb596b0e3d789126b8
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963004"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159534"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)
 
 > [!IMPORTANT]
 > Use este procedimiento ***si ha implementado*** Microsoft Defender para endpoint (MDE) en los dispositivos macOS
-
-<!--## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).-->
 
 **Se aplica a:**
 
@@ -80,7 +76,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Elija el **archivo accessibility.mobileconfig** que descargó en el paso 1 como archivo de perfil de configuración.
 
-1. Elegir **siguiente**
+1. Elija **Siguiente**
 
 1. En la **pestaña Asignaciones,** agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
 

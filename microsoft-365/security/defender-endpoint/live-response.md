@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 42fac7b4dd76831339b5b76ea21787ae288b636a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: d114c7aa72c3baa5fb871fc4a52a00a22c21998e
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074695"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159606"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -64,7 +64,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **macOS:** solo aplicable a public preview, versión mínima requerida: 101.43.84 
   
   - **Linux:** solo aplicable a public preview, versión mínima requerida: 101.45.13 
-
+    
   - **Windows Server 2012 R2:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
   - **Windows Server 2016:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -72,8 +72,10 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   - **Windows Server 2019**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
-
+    
   - **Windows Server 2022**
+
+       
 
 - **Habilitar la respuesta en directo desde la página de configuración avanzada**.
 
@@ -158,24 +160,26 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 ****
 | Comando  | Descripción  | Windows y Windows server  | macOS  | Linux  |
 |---|---|---|---|---|
-| cd  | Cambia el directorio actual.  | v  | v | v |
+| cd  | Cambia el directorio actual.  | v  | v  | v  |
 | cls  | Borra la pantalla de la consola.  | v  | v  | v  |
 | connect  | Inicia una sesión de respuesta en directo al dispositivo.  | v  | v  | v  |
-| conexiones  | Muestra todas las conexiones activas.  | v  | N | N |
-| dir  | Muestra una lista de archivos y subdirectorios en un directorio.  | v  | v  |v  |
-| controladores  | Muestra todos los controladores instalados en el dispositivo.  | v |  N | N  |
+| conexiones  | Muestra todas las conexiones activas.  | v  | N  | N  |
+| dir  | Muestra una lista de archivos y subdirectorios en un directorio.  | v  | v  | v  |
+| controladores  | Muestra todos los controladores instalados en el dispositivo.  | v  | N  | N  |
 | fg `<command ID>`  | Coloque el trabajo especificado en primer plano en primer plano, lo que lo hace el trabajo actual.  NOTA: fg toma un "identificador de comando" disponible desde trabajos, no un PID  | v  | v  | v  |
-| fileinfo  | Obtener información acerca de un archivo.  |v  | v  | v  |
-| findfile  | Localiza los archivos por un nombre determinado en el dispositivo.  | v | v  | v  |
+| fileinfo  | Obtener información acerca de un archivo.  | v  | v  | v  |
+| findfile  | Localiza los archivos por un nombre determinado en el dispositivo.  | v  | v  | v  |
 | getfile <file_path>  | Descarga un archivo.  | v  | v  | v  |
-| Ayuda  | Proporciona información de ayuda para comandos de respuesta en directo.  |v  | v | v  |
-| jobs  | Muestra trabajos en ejecución, su identificador y estado.  | v  | v | v |
-| persistencia  | Muestra todos los métodos de persistencia conocidos en el dispositivo.  | v  | N | N |
+| Ayuda  | Proporciona información de ayuda para comandos de respuesta en directo.  | v  | v  | v  |
+| jobs  | Muestra trabajos en ejecución, su identificador y estado.  | v  | v  | v  |
+| persistencia  | Muestra todos los métodos de persistencia conocidos en el dispositivo.  | v  | N  | N  |
 | procesos  | Muestra todos los procesos que se ejecutan en el dispositivo.  | v  | v  | v  |
-| registro  | Muestra los valores del Registro.  | v  | N | N |
-| scheduledtasks  | Muestra todas las tareas programadas en el dispositivo.  | v | N | N |
-| servicios  | Muestra todos los servicios del dispositivo.  | v  | N | N |
-| seguimiento  | Establece el modo de registro del terminal en depuración.  | v  | v  |v  |
+| registro  | Muestra los valores del Registro.  | v  | N  | N  |
+| scheduledtasks  | Muestra todas las tareas programadas en el dispositivo.  | v  | N  | N  |
+| servicios  | Muestra todos los servicios del dispositivo.  | v  | N  | N  |
+| startupfolders  | Muestra todos los archivos conocidos en las carpetas de inicio del dispositivo.  | v  | N  | N  |
+| status  | Muestra el estado y el resultado del comando específico.  | v  | N  | N  |
+| seguimiento  | Establece el modo de registro del terminal en depuración.  | v  | v  | v  |
 
 ### <a name="advanced-commands"></a>Comandos avanzados
 
@@ -195,8 +199,9 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 | biblioteca  | Enumera los archivos que se cargaron en la biblioteca de respuestas en directo.  | v  | v  | v  |
 | putfile  | Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada.  | v  | v  | v  |
 | remediate  | Corrige una entidad en el dispositivo. La acción de corrección variará según el tipo de entidad: Archivo: eliminar Proceso: detener, eliminar archivo de imagen Servicio: detener, eliminar entrada del Registro del archivo de imagen: eliminar tarea programada: quitar elemento de carpeta inicio: eliminar archivo NOTA: Este comando tiene un comando de requisito previo. Puede usar el comando -auto junto con remediate para ejecutar automáticamente el comando de requisitos previos.  | v  | v  | v  |
-| examen  | Desconecta el dispositivo de la red mientras conserva la conectividad con el servicio Defender for Endpoint  | N  | v  | v  |
+| examen  | Ejecuta un examen antivirus (rápido) para ayudar a identificar y corregir malware.  | N  | v  | v  |
 | deshacer  | Restaura una entidad que se ha corregido.  | v  | v  | v  |
+
 
 ## <a name="use-live-response-commands"></a>Usar comandos de respuesta en directo
 
@@ -342,7 +347,6 @@ Selecciona la **pestaña Registro de** comandos para ver los comandos usados en 
 
 - Las sesiones de respuesta en directo están limitadas a 25 sesiones de respuesta en directo a la vez.
 - El valor de tiempo de espera inactivo de la sesión de respuesta en directo es de 30 minutos.
-- El valor de tiempo de espera inactivo del comando Getfile es de 30 minutos. Se considera inactivo mientras el comando se ejecuta en segundo plano.
 - Un usuario puede iniciar hasta 10 sesiones simultáneas.
 - Un dispositivo solo puede estar en una sesión a la vez.
 - Se aplican los siguientes límites de tamaño de archivo:

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro (versión preliminar)
-ms.openlocfilehash: 03cdf8a7aa5c35d4e207364c3f0870a66712626d
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 2399dd901b9c31c3cd824e35bd4db844610125c5
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074551"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159497"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
 
@@ -27,10 +27,6 @@ Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumpl
 
 > [!IMPORTANT]
 > Use este procedimiento si ***no tiene*** Microsoft Defender para endpoint (MDE) implementado en sus dispositivos macOS
-
-## <a name="get-registered"></a>Registrarse
-
-Para obtener acceso a esta característica, debe registrar el espacio empresarial con Microsoft. Vea [registrarse para la compatibilidad de Microsoft 365 en macOS](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 **Se aplica a:**
 

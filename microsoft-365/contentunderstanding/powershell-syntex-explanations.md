@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: Obtenga información sobre el trabajo con SharePoint Syntex explicaciones del modelo de descripción de documentos en PowerShell
-ms.openlocfilehash: bfb3bf237ba8f5dbc8772c974b37fe85e16e8dbf
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: Obtenga información sobre el trabajo con SharePoint Syntex explicación del modelo de documentos en PowerShell.
+ms.openlocfilehash: 06f0eb7314b85f9463689fea32667666e5e167fd
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074903"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159714"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Trabajar con las explicaciones del modelo de descripción de documentos en PowerShell
 
@@ -133,7 +133,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>Crear una explicación de lista de frases basada en un conjunto de términos
 
-En este ejemplo se muestra cómo crear una plantilla de explicación de lista de frases personalizada, tomando los valores de un conjunto de términos. Esto incluye los nombres de término preferidos y los sinónimos.
+En este ejemplo se muestra cómo crear una plantilla de explicación de lista de frases personalizada tomando los valores de un conjunto de términos. Esto incluye los nombres de término preferidos y los sinónimos.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"

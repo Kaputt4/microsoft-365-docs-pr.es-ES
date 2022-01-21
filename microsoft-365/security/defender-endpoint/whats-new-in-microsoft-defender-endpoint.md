@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ac7a16158f0b2cdeaca97dae8721c805caa7a53
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b452c0aea4932903c47f0874e839770caa2a6850
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940299"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159601"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -118,10 +118,10 @@ Para obtener más información sobre Microsoft Defender para Endpoint en otros s
 - [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para endpoint en iOS ya está disponible en general. Esto se suma a la protección de suplantación de identidad que ya existe.  Para obtener más información, consulte [Setup Conditional Access Policy based on device risk signals](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
 
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 - [Administrar la protección contra alteraciones mediante el portal Microsoft 365 Defender datos](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *tenant attach*.
 
 
 ## <a name="january-2021"></a>Enero de 2021
 
-- [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Windows Virtual Desktop.
+- [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Azure Virtual Desktop.

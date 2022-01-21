@@ -1,5 +1,5 @@
 ---
-title: Administrar SharePoint Syntex con PowerShell
+title: Administración de SharePoint Syntex con PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -12,22 +12,22 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: Obtenga información sobre cómo administrar SharePoint Syntex con PowerShell
-ms.openlocfilehash: ea3e73d007d038bffdafdc83d28f3334bc711c67
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: Obtenga información sobre cómo administrar SharePoint Syntex con PowerShell.
+ms.openlocfilehash: 5ac6defc92e986a7593936cccb9470489ee86227
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074876"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159546"
 ---
-# <a name="manage-sharepoint-syntex-with-powershell"></a>Administrar SharePoint Syntex con PowerShell
+# <a name="manage-sharepoint-syntex-with-powershell"></a>Administración de SharePoint Syntex con PowerShell
 
 > [!IMPORTANT]
 > Los SharePoint Syntex de PowerShell y todos los demás componentes pnP son herramientas de código abierto con el respaldo de una comunidad activa que les proporciona soporte técnico. Los canales oficiales de soporte técnico de Microsoft no ofrecen ningún contrato de nivel de servicio para herramientas de código abierto.
 
-Para estos escenarios, los cmdlets SharePoint Syntex en el módulo de PowerShell pnP se pueden usar para interactuar con modelos y explicaciones. Para obtener más información sobre cómo instalar este módulo, vea [ **Introducción a PnP PowerShell**](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets)
+Para estos escenarios, los cmdlets SharePoint Syntex en el módulo de PowerShell pnP se pueden usar para interactuar con modelos y explicaciones. Para obtener más información sobre cómo instalar este módulo, vea [PnP PowerShell overview](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets).
 
-Seleccione entre los siguientes temas para obtener información sobre cómo usar PowerShell para administrar Syntex:
+Seleccione entre los siguientes escenarios para obtener información sobre cómo usar PowerShell para administrar SharePoint Syntex:
 
 - [**Importar y exportar modelos**](powershell-syntex-import-export.md)
 
@@ -39,7 +39,7 @@ Seleccione entre los siguientes temas para obtener información sobre cómo usar
 
 - [**Procesamiento**](powershell-syntex-processing.md)
 
-    Comience aquí si desea aprender a usar PowerShell para desencadenar el procesamiento de la comprensión de documentos en una biblioteca de documentos
+    Comience aquí si desea aprender a usar PowerShell para desencadenar el procesamiento de la comprensión de documentos en una biblioteca de documentos.
 
 - [**Explicaciones**](powershell-syntex-explanations.md)
 

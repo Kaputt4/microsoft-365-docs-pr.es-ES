@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: normal
 description: Obtenga información sobre cómo usar PowerShell para solicitar el procesamiento por un SharePoint Syntex de comprensión de documentos.
-ms.openlocfilehash: a4bdf9b450306686d19218e13a7a708b37fdb04e
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f6e013bddbec3c0f12bb8665de538967adfff116
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074868"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159678"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Usar PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
 
@@ -42,7 +42,7 @@ Para un procesamiento de menor prioridad, también puede considerar el uso del p
 
 ## <a name="request-processing-of-all-items-in-a-library"></a>Solicitar el procesamiento de todos los elementos de una biblioteca
 
-Puede solicitar el procesamiento de todos los archivos de la biblioteca, incluso si se han clasificado previamente. Esto puede ser útil si ha actualizado un modelo o agregado otro modelo a la biblioteca.
+Puede solicitar el procesamiento de todos los archivos de la biblioteca, incluso si se han clasificado previamente. Esto puede ser útil si ha actualizado un modelo o ha agregado otro modelo a la biblioteca.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

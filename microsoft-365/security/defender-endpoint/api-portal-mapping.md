@@ -1,6 +1,6 @@
 ---
-title: Campos de alerta de Microsoft Defender para extremo
-description: Comprender cómo se asignan los campos de alerta a los valores de Microsoft Defender para endpoint
+title: Motores de protección de Microsoft Defender para punto de conexión
+description: Comprender cómo se asignan los campos de detección a los valores de Microsoft Defender para endpoint
 keywords: detecciones, campos de detecciones, campos, api, campos, detecciones de extracción, api de reposo, solicitud, respuesta
 search.appverid: met150
 ms.prod: m365-security
@@ -16,36 +16,44 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bb199a8ca0f8734da6562304b15cbf2cb4170cf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32bec44cfcc3e89dd44dbe89557a9faf2d6850b
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167423"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159618"
 ---
-# <a name="microsoft-defender-for-endpoint-alert-fields"></a>Campos de alerta de Microsoft Defender para extremo
+# <a name="microsoft-defender-for-endpoint-detection-fields"></a>Motores de protección de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
+
+> [! AVISO] La API de REST de SIEM de Microsoft Defender para extremo está planeada para el desuso, ya que la API de alerta de extremo de Microsoft Defender para Endpoint y la API de incidentes de Microsoft 365 Defender que la reemplazan proporcionan metadatos mucho más enriquecidos, incluido el estado actualizado de la alerta, todas las entidades de evidencia relacionadas con la alerta, todos los comentarios escritos por analistas y permite actualizar el estado,  assignedTo, los campos de clasificación y determinación mediante programación.
+> 
+> No se admitirá ninguna incorporación nueva a la API SIEM de Microsoft Defender para endpoint; en su lugar, vea Habilitar la integración de SIEM en [Defender para](enable-siem-integration.md) endpoint para obtener más información sobre la integración con la API de alerta de punto de conexión de Microsoft Defender para Endpoint o la API de incidentes de Microsoft 365 Defender.
+> 
+> Para obtener información sobre la integración de SIEM Tools (Splunk, ArcSight y QRadar), vea Integrar las herramientas [SIEM con Microsoft Defender para Endpoint](../defender-endpoint/configure-siem.md).
 
 Comprender qué campos de datos se exponen como parte de la API de detecciones y cómo se asignan a Microsoft 365 Defender.
 
 > [!NOTE]
 >
-> - [Defender for Endpoint Alert](alerts.md) se compone de una o más detecciones.
-> - **La detección de ATP de Microsoft Defender** se compone del evento sospechoso que se produjo en el dispositivo y sus detalles de **alerta** relacionados.
+> - [Microsoft Defender para alerta de](alerts.md) extremo se compone de una o más detecciones.
+> - **Microsoft Defender para la detección de** puntos de conexión se compone del evento sospechoso que se produjo en el dispositivo y sus detalles **de alerta** relacionados.
 > - La API de alerta de punto de conexión de Microsoft Defender es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) List [alerts](get-alerts.md).
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>Campos de API de detecciones y asignación de portal
 
 En la tabla siguiente se enumeran los campos disponibles expuestos en la carga de la API de detecciones. Muestra ejemplos de los valores rellenados y una referencia sobre cómo se reflejan los datos en el portal.
-
+> 
+> MicroFocus ArcSight FlexConnector descrito a continuación se ha reemplazado por un SmartConnector oficial que llama a la API Microsoft 365 Defender incidentes. Para obtener más información, vea [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
+> 
 La columna de campo ArcSight contiene la asignación predeterminada entre los campos Defender para endpoint y los campos integrados en ArcSight. Puede descargar el archivo de asignación del portal cuando habilite la característica de integración siem y pueda modificarlo para que coincida con las necesidades de su organización. Para obtener más información, vea [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
 
 Los números de campo coinciden con los números de las imágenes siguientes.

@@ -12,13 +12,13 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: Obtenga información sobre cómo exportar e importar modelos de comprensión de documentos con PowerShell en SharePoint Syntex
-ms.openlocfilehash: 289d802fdea50daa0261ec16ea760e9a57b0e9c5
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: Obtenga información sobre cómo exportar e importar modelos de comprensión de documentos con PowerShell en SharePoint Syntex.
+ms.openlocfilehash: 6751a66d713ada8c06445d8bfd0efdb5c3ac2fad
+ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074900"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62159510"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>Exportar e importar modelos de comprensión de documentos con PowerShell
 
@@ -27,9 +27,9 @@ ms.locfileid: "62074900"
 
 SharePoint Syntex pueden exportarse como plantillas PnP, lo que permite la reutilización entre los centros de contenido o los inquilinos.
 
-## <a name="export-all-models-in-a-content-center"></a>Exportar todos los modelos en un Centro de contenido
+## <a name="export-all-models-in-a-content-center"></a>Exportar todos los modelos en un centro de contenido
 
-Para exportar todos los modelos de un Centro de contenido a una sola plantilla PnP, use los siguientes cmdlets [de PowerShell pnP:](https://pnp.github.io/powershell/)
+Para exportar todos los modelos de un centro de contenido a una sola plantilla PnP, use los siguientes cmdlets [de PowerShell pnP:](https://pnp.github.io/powershell/)
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -39,7 +39,7 @@ Get-PnPSiteTemplate -Out MyModels.pnp -Handlers SyntexModels
 
 ## <a name="export-specific-models"></a>Exportar modelos específicos
 
-Para exportar modelos específicos de un Centro de contenido a una plantilla PnP, use los siguientes cmdlets [de PowerShell pnP:](https://pnp.github.io/powershell/)
+Para exportar modelos específicos de un centro de contenido a una plantilla PnP, use los siguientes cmdlets [de PowerShell pnP:](https://pnp.github.io/powershell/)
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -47,9 +47,9 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
 Get-PnPSiteTemplate -Out MyModels.pnp -Configuration .\extract.json
 ```
 
-El archivo extract.json define los modelos que desea exportar, lo que permite especificar el modelo por nombre o id. y, opcionalmente, configurar para no extraer datos de aprendizaje
+El archivo extract.json define los modelos que desea exportar, lo que permite especificar el modelo por nombre o id. y, opcionalmente, configurar para no extraer datos de aprendizaje.
 
-### <a name="example--specify-model-by-name"></a>Ejemplo: especificar el modelo por su nombre
+### <a name="example---specify-model-by-name"></a>Ejemplo: especificar el modelo por su nombre
 
 ```json
 {
@@ -68,7 +68,7 @@ El archivo extract.json define los modelos que desea exportar, lo que permite es
 }
 ```
 
-### <a name="example--specify-model-by-id"></a>Ejemplo: especificar el modelo por identificador
+### <a name="example---specify-model-by-id"></a>Ejemplo: especificar el modelo por identificador
 
 ```json
 {
@@ -90,7 +90,8 @@ El archivo extract.json define los modelos que desea exportar, lo que permite es
 
 Si no incluye la propiedad "includeTrainingData", el comportamiento predeterminado es incluir.
 
-> NOTA: los datos de aprendizaje son necesarios para que un modelo se pueda editar cuando se importe a un Centro de contenido de destino
+> [!NOTE]
+> Los datos de aprendizaje son necesarios para que un modelo se pueda editar cuando se importe a un centro de contenido de destino.
 
 ## <a name="import-models-to-a-content-center"></a>Importar modelos a un centro de contenido
 Los modelos de descripción de documentos que se han exportado a plantillas PnP se pueden importar a un centro de contenido de cualquier inquilino. Si la exportación incluye datos de aprendizaje, el modelo se podrá editar una vez importado.
