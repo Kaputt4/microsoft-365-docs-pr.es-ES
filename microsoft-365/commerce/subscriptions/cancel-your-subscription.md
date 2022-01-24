@@ -17,33 +17,52 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
-description: Si tiene menos de 25 licencias de usuario, puede cancelar la suscripción de prueba o de pago de Microsoft 365 para empresas en el Centro de administración.
-ms.date: 09/16/2021
-ms.openlocfilehash: e24c2bc4067f046c86af2f72e3105bc20a69b732
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.
+ms.date: 01/20/2022
+ms.openlocfilehash: f1c64090117a93d33ccf69222cbe0b7f7d06a88e
+ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373313"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62156177"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
+Puede cancelar la suscripción en cualquier momento en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 356</a>. Sin embargo, para recibir el reembolso, debe cumplir ciertos requisitos de reembolsos. Para obtener más información, consulte [Obtener información sobre los requisitos de reembolso](#understand-refund-eligibility).
+
+Si tiene varias suscripciones para el mismo producto, como Microsoft 365 Empresa Premium, la cancelación de una suscripción no afectará a las licencias o servicios adquiridos en las otras.
+
 > [!IMPORTANT]
-> Este artículo solo se aplica a las suscripciones a Microsoft 365 para empresas. Si tiene Microsoft 365 Familia o Personal, consulte [Cancelar una suscripción de Microsoft 365](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
-
-*Idoneidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas en línea en el Centro de administración de Microsoft 365 en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, puede reducirlas a menos de 25 o [llamar al soporte técnico para cancelar su suscripción](../../admin/get-help-support.md).
-
-*Reembolso:* cualquier crédito prorrateado se le devolverá en el próximo ciclo de facturación.
-
-> [!NOTE]
-> 
-> - Si tiene varias suscripciones al mismo producto, como Microsoft 365 Empresa Premium, cancelar una de ellas no afectará a las licencias o los servicios comprados dentro de las demás suscripciones.
-> - Para algunas suscripciones, solo puede cancelar durante un período de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, desactive la facturación periódica para cancelar la suscripción al final de su término.
+> Este artículo solo se aplica a las suscripciones de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas. Si tiene Microsoft 365 Familia o Personal, consulte [Cancelar una suscripción de Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Debe ser un administrador global o de facturación para realizar las tareas de este artículo. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+
+## <a name="understand-refund-eligibility"></a>Más información sobre los requisitos de reembolso
+
+### <a name="if-you-have-a-billing-profile"></a>Si tiene un perfil de facturación
+
+Debe cancelar dentro de las 72 horas siguientes al inicio de la suscripción de pago para obtener un reembolso prorrateado por el tiempo no utilizado que ya pagó. Los reembolsos no están disponibles después de 72 horas.
+
+Por ejemplo, supongamos que compró una suscripción de un año por la que paga 20 USD al mes por una sola licencia. Compró la suscripción el 1 de febrero de 2022 a las 11 a. m. UST, y decide cancelarla el 3 de febrero de 2022 a las 11 a. m. UST. Deducimos 1,43 USD durante los dos días que ha mantenido la suscripción y recibirá un reembolso prorrateado de 18,57 USD.
+
+**¿No está seguro de tener un perfil de facturación?** Para obtener información sobre cómo averiguar si tiene un perfil de facturación, consulte [Ver mis perfiles de facturación](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+
+### <a name="if-you-dont-have-a-billing-profile"></a>Si no tiene un perfil de facturación
+
+Use la siguiente tabla para determinar si puede cancelar su suscripción usted mismo.
+
+|Si su suscripción tiene  |Puede  |
+|--------------|--------------|
+|25 o menos licencias  | Cancele su suscripción de prueba o de pago en línea en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 356</a> en cualquier momento.        |
+|Más de 25 licencias   | Reduzca el número de licencias a 25 o menos e inténtelo de nuevo o [llame al soporte técnico para cancelar la suscripción](../../admin/get-help-support.md).        |
+
+En el caso de las suscripciones que no tienen un perfil de facturación, solo se puede cancelar durante un periodo de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, [desactive la facturación periódica](renew-your-subscription.md) para cancelar la suscripción al final de su término.
+
+Si cancela durante la ventana de tiempo limitado, se le devolverá cualquier crédito prorrateado en el próximo ciclo de facturación.
 
 ## <a name="steps-to-cancel-your-subscription"></a>Pasos para cancelar su suscripción
 
