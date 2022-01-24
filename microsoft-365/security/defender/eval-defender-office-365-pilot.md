@@ -17,20 +17,21 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-ms.custom: admindeeplinkEXCHANGE
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 22831163863e64347029cb9e39b5e52046fd6b3f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 456f5dae90f2a559e82599271f23bd5f3452ac12
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61932856"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172084"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloto de Microsoft Defender para Office 365
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 3 de 3](eval-defender-office-365-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender para Office 365. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-office-365-overview.md).
 
@@ -140,7 +141,7 @@ En la tabla siguiente se proporcionan referencias y instrucciones adicionales pa
 |Anti-Spoofing|Proteger a los usuarios de intentos de suplantación de suplantación de secretos y suplantación de información de inteligencia.|[Configurar la inteligencia de suplantación en Defender para Office 365](../office-365-security/learn-about-spoof-intelligence.md)|
 |Contra correo no deseado|Proteger a los usuarios contra correo no deseado de correo electrónico, incluidas las acciones que se deben realizar si se detecta correo no deseado.|[Configurar directivas contra correo no deseado en Defender para Office 365](../office-365-security/configure-your-spam-filter-policies.md)|
 |Anti-Phishing|Proteger a los usuarios de ataques de suplantación de identidad (phishing) y configurar sugerencias de seguridad en mensajes sospechosos|[Configurar directivas contra suplantación de identidad (phishing) en Defender para Office 365](../office-365-security/configure-mdo-anti-phishing-policies.md)|
-|Archivos adjuntos seguros|Proteja a los usuarios de contenido malintencionado en archivos adjuntos y archivos de correo electrónico SharePoint, OneDrive y Teams.|[Configurar directivas de datos adjuntos seguros en Defender para Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
+|Datos adjuntos seguros|Proteja a los usuarios de contenido malintencionado en archivos adjuntos y archivos de correo electrónico SharePoint, OneDrive y Teams.|[Configurar directivas de datos adjuntos seguros en Defender para Office 365](../office-365-security/set-up-safe-attachments-policies.md)|
 |Vínculos seguros|Proteja a los usuarios de abrir y compartir vínculos malintencionados en mensajes de correo electrónico o Office aplicaciones de escritorio.|[Configurar directivas de vínculos seguros en Defender para Office 365](../office-365-security/set-up-safe-links-policies.md)|
 |
 
@@ -159,7 +160,7 @@ Ahora que el piloto está configurado y configurado, resulta útil familiarizars
 |Panel de informes|En el menú de navegación izquierdo, haga clic en Informes y expanda el encabezado De & colaboración. Los informes de colaboración de Email & se trata de detectar tendencias de seguridad, algunas de las cuales le permitirán tomar medidas (a través de botones como "Ir a envíos"), y otras que mostrarán tendencias, como el resumen de estado de flujo de correo, top malware, detecciones de suplantación de correo, usuarios comprometidos, latencia de correo, vínculos de Caja fuerte e informes de datos adjuntos de Caja fuerte. Estas métricas se generan automáticamente.|[Ver informes](../office-365-security/view-email-security-reports.md)|
 |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)
 

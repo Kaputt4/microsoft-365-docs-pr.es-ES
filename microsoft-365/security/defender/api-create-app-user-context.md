@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e97ed3b7b11eeded5919e963a3175782d3a7d088
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 88b1bc6c46296e3694ef53ae733955a1491b21c7
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184382"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172204"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Crear una aplicación para obtener acceso Microsoft 365 Defender API en nombre de un usuario
 
@@ -46,13 +47,13 @@ Microsoft 365 Defender expone gran parte de sus datos y acciones a través de un
 
 En general, deberá seguir los siguientes pasos para usar estas API:
 
-- Crear una aplicación Azure Active Directory (Azure AD).
+- Cree una Azure Active Directory (Azure AD).
 - Obtener un token de acceso con esta aplicación.
 - Use el token para obtener acceso a Microsoft 365 Defender API.
 
 En este artículo se explica cómo:
 
-- Crear una aplicación Azure AD
+- Crear una aplicación de Azure AD
 - Obtener un token de acceso para Microsoft 365 Defender
 - Validar el token
 
@@ -103,7 +104,7 @@ En este artículo se explica cómo:
 
 ## <a name="get-an-access-token"></a>Obtener un token de acceso
 
-Para obtener más información sobre Azure Active Directory tokens, consulte el [tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Para obtener más información sobre Azure Active Directory tokens, vea el Azure AD [tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### <a name="get-an-access-token-using-powershell"></a>Obtener un token de acceso con PowerShell
 
@@ -151,7 +152,7 @@ En el ejemplo siguiente se muestra cómo enviar una solicitud para obtener una l
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Microsoft 365 Defender Introducción a las API](api-overview.md)
+- [Microsoft 365 Defender introducción a las API](api-overview.md)
 - [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
 - [Crear una aplicación "Hello world"](api-hello-world.md)
 - [Crear una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md)

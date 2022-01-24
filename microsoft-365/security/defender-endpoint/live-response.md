@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d114c7aa72c3baa5fb871fc4a52a00a22c21998e
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159606"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171915"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -63,6 +63,10 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   - **macOS:** solo aplicable a public preview, versión mínima requerida: 101.43.84 
   
+   > [!NOTE]
+   > Actualmente solo se admiten sistemas macOS basados en Intel.
+    
+
   - **Linux:** solo aplicable a public preview, versión mínima requerida: 101.45.13 
     
   - **Windows Server 2012 R2:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -199,7 +203,7 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 | biblioteca  | Enumera los archivos que se cargaron en la biblioteca de respuestas en directo.  | v  | v  | v  |
 | putfile  | Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada.  | v  | v  | v  |
 | remediate  | Corrige una entidad en el dispositivo. La acción de corrección variará según el tipo de entidad: Archivo: eliminar Proceso: detener, eliminar archivo de imagen Servicio: detener, eliminar entrada del Registro del archivo de imagen: eliminar tarea programada: quitar elemento de carpeta inicio: eliminar archivo NOTA: Este comando tiene un comando de requisito previo. Puede usar el comando -auto junto con remediate para ejecutar automáticamente el comando de requisitos previos.  | v  | v  | v  |
-| examen  | Ejecuta un examen antivirus (rápido) para ayudar a identificar y corregir malware.  | N  | v  | v  |
+| examen | Ejecuta un examen antivirus para ayudar a identificar y corregir malware. | N | v | v |
 | deshacer  | Restaura una entidad que se ha corregido.  | v  | v  | v  |
 
 

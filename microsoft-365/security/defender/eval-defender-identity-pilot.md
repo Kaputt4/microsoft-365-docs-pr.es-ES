@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: be297e48cd4d5569b295215ce497ef913f4aa8d7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c30e6d318801dbfb63f4bfb7b5bbaf64dad24ac0
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941557"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172120"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Piloto de Microsoft Defender para identidad
 

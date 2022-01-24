@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65288d0644fa7761e91ad08a433d42bd85016e46
-ms.sourcegitcommit: f1e227decbfdbac00dcf5aa72cf2285cecae14f7
+ms.openlocfilehash: 6f7a3404ec0ae64e3dcdc4d6a3072e7fc2936646
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61436661"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172456"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en Linux
 
@@ -47,16 +47,23 @@ Según las aplicaciones que ejecutes y las características del dispositivo, es 
 - Solo problemas de rendimiento relacionados con AV
 
 La protección en tiempo real (RTP) es una característica de Defender para Endpoint en Linux que supervisa y protege continuamente el dispositivo contra amenazas. Consiste en la supervisión de archivos y procesos y otras heurísticas.
+
 Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
+
 1. Deshabilite la protección en tiempo real con uno de los siguientes métodos y observe si el rendimiento mejora. Este enfoque ayuda a reducir si Defender for Endpoint en Linux está contribuyendo a los problemas de rendimiento.
+
     Si su organización no administra el dispositivo, la protección en tiempo real se puede deshabilitar desde la línea de comandos:
+
     ```bash
     mdatp config real-time-protection --value disabled
     ```
+
     ```Output
     Configuration property updated
     ```
+
     Si su organización administra el dispositivo, el administrador puede deshabilitar la protección en tiempo real con las instrucciones de Establecer preferencias para Defender para Endpoint [en Linux](linux-preferences.md).
+
     > [!NOTE]
     > Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser el componente detección y respuesta de puntos de conexión (EDR). En este caso, siga los pasos de la sección Solucionar problemas de rendimiento con **Microsoft Defender para** endpoint Client Analyzer de este artículo.
 
@@ -66,32 +73,47 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     > Esta característica está disponible en la versión 100.90.70 o posterior.
 
     Esta característica está habilitada de forma predeterminada en los `Dogfood` `InsiderFast` canales y. Si usa un canal de actualización diferente, esta característica se puede habilitar desde la línea de comandos:
+
     ```bash
     mdatp config real-time-protection-statistics --value enabled
     ```
+
     Esta característica requiere protección en tiempo real para habilitarse. Para comprobar el estado de la protección en tiempo real, ejecute el siguiente comando:
+
     ```bash
     mdatp health --field real_time_protection_enabled
     ```
+
     Compruebe que la `real_time_protection_enabled` entrada es `true` . De lo contrario, ejecute el siguiente comando para habilitarlo:
+
     ```bash
     mdatp config real-time-protection --value enabled
     ```
+
     ```Output
     Configuration property updated
     ```
+
     Para recopilar estadísticas actuales, ejecute:
+
     ```bash
     mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
     ```
+
     > [!NOTE]
-    > El uso (tenga en cuenta el ```--output json``` guión doble) garantiza que el formato de salida esté listo para el análisis. El resultado de este comando mostrará todos los procesos y su actividad de examen asociada.
+    > El uso (tenga en cuenta el ```--output json``` guión doble) garantiza que el formato de salida esté listo para el análisis.
+
+    El resultado de este comando mostrará todos los procesos y su actividad de examen asociada.
 
 3. En el sistema Linux, descargue el analizador python de **ejemplo high_cpu_parser.py** mediante el comando:
+
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
+
     El resultado de este comando debe ser similar al siguiente:
+
+
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
     Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
@@ -101,15 +123,20 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     Saving to: 'high_cpu_parser.py'
     100%[===========================================>] 1,020    --.-K/s   in 0s
     ```
+
 4. A continuación, escriba los siguientes comandos:
+
     ```bash
     chmod +x high_cpu_parser.py
     ```
+
     ```bash
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
+
       El resultado de lo anterior es una lista de los principales colaboradores de problemas de rendimiento. La primera columna es el identificador de proceso (PID), la segunda columna es el nombre del proceso y la última columna es el número de archivos analizados, ordenados por impacto.
     Por ejemplo, el resultado del comando será algo parecido al siguiente: 
+
     ```Output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
     27432 None 76703
@@ -123,8 +150,9 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     4764 None 228
     125  CrashPlanService 164
     ```
+
     Para mejorar el rendimiento de Defender para Endpoint en Linux, busque el que tiene el número más alto debajo de la fila y `Total files scanned` agregue una exclusión para él. Para obtener más información, vea [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
-    
+
     > [!NOTE]
     > La aplicación almacena estadísticas en la memoria y solo realiza un seguimiento de la actividad del archivo desde que se inició y se ha habilitado la protección en tiempo real. Los procesos que se iniciaron antes o durante períodos en los que la protección en tiempo real estaba desactivada no se cuentan. Además, solo se cuentan los eventos que desencadenaron exámenes.
 
@@ -132,7 +160,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
     Para más información, consulte [Configurar y validar exclusiones de Microsoft Defender para punto de conexión en Linux](linux-exclusions.md).
 
-## <a name="diagnose-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Diagnosticar problemas de rendimiento con Microsoft Defender para Endpoint Client Analyzer
+## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solucionar problemas de rendimiento con Microsoft Defender para Endpoint Client Analyzer
 
 **Se aplica a:**
 - Problemas de rendimiento de todos los componentes disponibles de Defender para endpoint, como AV y EDR  
@@ -228,6 +256,6 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Investigar problemas de estado del agente](health-status.md)

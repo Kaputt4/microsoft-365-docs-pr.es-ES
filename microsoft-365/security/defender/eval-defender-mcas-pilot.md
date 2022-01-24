@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cb3de75afef883743f3f5fd46c1a98fd5e1c7c10
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 484924d936f348fb29421b6bcc1789df4a44dc90
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933043"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172408"
 ---
 # <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>Piloto de Microsoft Defender para aplicaciones en la nube con Microsoft 365 Defender
 
@@ -81,7 +83,7 @@ Pruebe los tutoriales de Defender for Cloud Apps:
 
 Para obtener más información sobre la búsqueda avanzada en Datos de Microsoft Defender para aplicaciones en la nube, vea el [vídeo](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Investigar y responder con Microsoft 365 Defender en un entorno piloto](eval-defender-investigate-respond.md)
 

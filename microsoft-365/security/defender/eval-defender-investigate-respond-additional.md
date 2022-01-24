@@ -18,15 +18,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d5e0dce11edc0c1179c77dbf23c4495507569652
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c9f1a4c051aaf9cb542e73a7cf077c7ed1038411
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938197"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171124"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 
@@ -120,7 +122,7 @@ Aprobar (o rechazar) acciones pendientes tan pronto como sea posible para que la
 
 Para obtener más información, vea [Automated investigation and response](m365d-autoir.md) y Action [Center](m365d-action-center.md).
 
-## <a name="advanced-hunting"></a>Búsqueda avanzada
+## <a name="advanced-hunting"></a>Búsqueda avanzada de amenazas
 
 > [!NOTE]
 > Antes de ayudarle a través de la simulación de búsqueda avanzada, vea el siguiente vídeo para comprender los conceptos avanzados de búsqueda, vea dónde puede encontrarlo en el portal y sepa cómo puede ayudarle en sus operaciones de seguridad.

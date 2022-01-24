@@ -16,26 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1cacdf050c51b97f7ea6acbefcedfb2156814509
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6ea0294604d77c812661dbe410772c91df9d66c8
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121464"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171928"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>Paso 4. Definir Microsoft 365 Defender funciones, responsabilidades y supervisión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Su organización debe establecer la propiedad y la responsabilidad de las Microsoft 365 Defender, las configuraciones y la administración como tareas iniciales antes de poder definir los roles operativos. Normalmente, la propiedad de las licencias, los costos de suscripción y la administración de los servicios Microsoft 365 y Enterprise Security + Mobility (EMS) (que pueden incluir Microsoft 365 Defender) se encuentran fuera de los equipos del Centro de operaciones de seguridad (SOC). Los equipos de SOC deben trabajar con esas personas para garantizar una supervisión adecuada de Microsoft 365 Defender. 
 

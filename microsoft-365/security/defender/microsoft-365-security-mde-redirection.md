@@ -17,34 +17,34 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 30a0e3b61e004ffe6c78e3b7a2d15b7b190253d9
-ms.sourcegitcommit: cfcdb11cc5d39c6c71a34e09c03e8859cd6708d3
+ms.openlocfilehash: 64a9926253ea699fa6cc62d1ec2d80d07f25fd29
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60724660"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172286"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirigir cuentas de Microsoft Defender para endpoint a Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 - Defender para punto de conexión
 
 En línea con el enfoque entre dominios de Microsoft para la protección contra amenazas con SIEM y la detección y respuesta extendidas (XDR), hemos cambiado el nombre de Protección contra amenazas avanzada de Microsoft Defender como Microsoft Defender para endpoint y lo hemos unificado en un único portal integrado: Microsoft 365 Defender.
 
-En esta guía se explica cómo enrutar cuentas a Microsoft 365 Defender habilitando la redirección automática desde el antiguo portal de Microsoft Defender para endpoints (securitycenter.windows.com o securitycenter.microsoft.com), Microsoft 365 Defender portal (security.microsoft.com).
+En esta guía se explica cómo enrutar cuentas a Microsoft 365 Defender habilitando la redirección automática desde el antiguo portal de Microsoft Defender para endpoints (securitycenter.windows.com o securitycenter.microsoft.com), a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 > [!NOTE]
-> Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad [administrados (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el Centro de seguridad [de Microsoft Defender](./mssp-access.md).
+> Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad administrados [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el [Centro de seguridad de Microsoft Defender](./mssp-access.md).
 
 ## <a name="what-to-expect"></a>Qué esperar
 
-Una vez habilitada la redirección automática, las cuentas que tengan acceso al antiguo portal de Microsoft Defender para endpoints en securitycenter.windows.com o securitycenter.microsoft.com, se enruta automáticamente al portal de Microsoft 365 Defender en security.microsoft.com.
+Una vez habilitada la redirección automática, las cuentas que tengan acceso al portal de Microsoft Defender para endpoints en securitycenter.windows.com o securitycenter.microsoft.com, se enruta automáticamente al portal de Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><security.microsoft.com></a>.
 
 Obtenga más información sobre lo que ha cambiado: [Microsoft Defender para endpoint en Microsoft 365 Defender](microsoft-365-security-center-mde.md).
 
@@ -68,8 +68,8 @@ Consulte la tabla siguiente para obtener más información sobre los vínculos y
 |---------|---------|---------|
 | Página alerta | Página de alerta en securitycenter.windows.com | Página de alerta en security.microsoft.com |
 | Página Incidentes |Página de incidentes en securitycenter.windows.com | Página de incidentes en security.microsoft.com |
-| Página de alertas en el portal del centro de seguridad | Página de alerta en security.microsoft.com | Página de alerta en security.microsoft.com |
-| Página de incidentes en el portal del centro de seguridad | Página de incidentes en security.microsoft.com | Página de incidentes en security.microsoft.com |
+| Página de alerta en Portal de Defender para la nube | Página de alerta en security.microsoft.com | Página de alerta en security.microsoft.com |
+| Página de incidentes en Portal de Defender para la nube | Página de incidentes en security.microsoft.com | Página de incidentes en security.microsoft.com |
 
 ## <a name="when-does-this-take-effect"></a>¿Cuándo tiene efecto?
 
@@ -81,7 +81,7 @@ Para iniciar el enrutamiento de cuentas a Microsoft 365 Defender:
 
 1. Asegúrese de que es un administrador global o que tiene permisos de administrador de seguridad en Azure Active Directory.
 
-2. [Inicie sesión](https://security.microsoft.com/) en Microsoft 365 Defender.
+2. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 3. Desplácese hasta **Configuración**  >  **de Endpoints**  >  **General**  >  **Portal o** haga clic [aquí.](https://security.microsoft.com/preferences2/portal_redirection)  
 
@@ -101,7 +101,7 @@ Si algo no funciona para ti o si hay algo que no puedes completar a través de M
 
 Para volver al antiguo portal de Microsoft Defender para endpoint:
 
-1. [Inicie sesión](https://security.microsoft.com/) en Microsoft 365 Defender como administrador global o usar y cuenta con permisos de administrador de seguridad en Azure Active Directory.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> como administrador global o usar y cuenta con permisos de administrador de seguridad en Azure Active Directory.
 
 2. Vaya a **Configuración** redirección  >  **del**  >    >  **Portal** [](https://security.microsoft.com/preferences2/portal_redirection)general de puntos de conexión o abra la página aquí .  
 

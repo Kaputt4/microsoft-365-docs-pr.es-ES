@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 763add69e0512f9fe092dccf453d58cf3907118d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 03fbcb70588158919b54c9153b5d8d32d416cc75
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162391"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172144"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
@@ -105,8 +106,8 @@ lastUpdateTime|Hora en la que el incidente se actualizó por última vez en el b
 assignedTo|Propietario del incidente o *null* si no se asigna ningún propietario.|secop2@contoso.com
 classification|La especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive*|Unknown
 determinación|Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other*|NotAvailable
-detectionSource|Especifica el origen de la detección.|MCAS
-status|Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar su respuesta a incidentes.|Activa
+detectionSource|Especifica el origen de la detección.|Defender for Cloud Apps
+status|Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar su respuesta a incidentes.|Activo
 severity|Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata. <p> Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*.|Medio
 tags|Matriz de etiquetas personalizadas asociadas a un incidente, por ejemplo para marcar un grupo de incidentes con una característica común.|\[\]
 comments|Matriz de comentarios creados por secops al administrar el incidente, por ejemplo información adicional sobre la selección de clasificación.|\[\]
@@ -118,7 +119,7 @@ Nombre del campo|Descripción|Valor de ejemplo
 ---|---|---
 alertId|Identificador único para representar la alerta|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId|Identificador único para representar el incidente al que está asociada esta alerta|924565
-serviceSource|Servicio del que procede la alerta, como Microsoft Defender para endpoint, Microsoft Cloud App Security, Microsoft Defender para Identity o Microsoft Defender para Office 365.|MicrosoftCloudAppSecurity
+serviceSource|Servicio del que procede la alerta, como Microsoft Defender para endpoint, Microsoft Defender para aplicaciones en la nube, Microsoft Defender para Identidad o Microsoft Defender para Office 365.|MicrosoftCloudAppSecurity
 creationTime|Hora en la que se creó la alerta por primera vez.|2020-09-06T14:46:55.7182276Z
 lastUpdatedTime|Hora en la que se actualizó la alerta por última vez en el back-end.|2020-09-06T14:46:57.243333Z
 resolvedTime|Hora en la que se resolvió la alerta.|2020-09-10T05:22:59Z
@@ -149,7 +150,7 @@ osPlatform|La plataforma del sistema operativo que se está ejecutando el dispos
 osBuild|La versión de compilación del sistema operativo que se está ejecutando el dispositivo.|14393
 rbacGroupName|Grupo [de control de acceso basado](/azure/role-based-access-control/overview) en roles (RBAC) asociado al dispositivo.|WDATP-Ring0
 firstSeen|Hora en la que se vio el dispositivo por primera vez.|2020-02-06T14:16:01.9330135Z
-healthStatus|El estado de mantenimiento del dispositivo.|Activa
+healthStatus|El estado de mantenimiento del dispositivo.|Activo
 riskScore|La puntuación de riesgo del dispositivo.|Alto
 entidades|Todas las entidades que se han identificado para formar parte o relacionadas con una alerta determinada.|\[\] (vea los detalles de los campos de entidad a continuación)
 

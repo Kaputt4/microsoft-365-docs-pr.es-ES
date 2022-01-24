@@ -16,26 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d4ce121cf65343b83727d11571c0be5f39c9a35f
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: bb3759b673475690a49e0909e2da67644990950e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121488"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172300"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Paso 1. Planear la preparación Microsoft 365 Defender operaciones
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Independientemente del vencimiento actual de las operaciones de seguridad, es importante que se alinee con el Centro de operaciones de seguridad (SOC). Aunque no hay un solo modelo que se adapte a todas las organizaciones, hay ciertos aspectos que son más comunes que otros. 
 

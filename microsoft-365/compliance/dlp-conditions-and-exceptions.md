@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: 1b6d37356a17fcb9cd5b1aa4ec97a69790c733c0
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: a0354fe6392d739fa1b616e92625b7507cca823f
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159522"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172264"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones de directiva DLP, excepciones y acciones
 
@@ -50,26 +50,27 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 
 Si usa la dirección del remitente como condición o excepción, el campo real donde se busca el valor varía según el tipo de regla que use. Para las reglas basadas en DLP, la dirección de sobre se usa como dirección del remitente. Para Exchange de transporte, la dirección de encabezado se usa como dirección del remitente.
 
+<!--
 > [!NOTE]
-> A partir del 20 de enero de 2022, la ubicación predeterminada de la dirección del remitente se trasladará a la dirección de encabezado junto con la disponibilidad del parámetro -SenderAddressLocation para configurar el comportamiento deseado en un nivel de regla DLP.
+> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
-![imagen](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
+![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
 
-En el nivel de inquilino, puede configurar una ubicación de dirección de remitente para que se utilice en todas las reglas, a menos que se invalide mediante una sola regla. Para revertir la configuración de directiva DLP de inquilino para evaluar la dirección del remitente desde el sobre en todas las reglas, puede ejecutar el siguiente comando:
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
 ```
 
-Para configurar la ubicación de la dirección del remitente en un nivel de regla DLP, el parámetro es _SenderAddressLocation_. Los valores disponibles son los siguientes:
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
 
-- **Encabezado:** solo examine los remitentes de los encabezados del mensaje (por ejemplo, los campos **From**, **Sender** o **Reply-To).** Este es el valor predeterminado.
+- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
 
-- **Sobre:** solo examine los remitentes del sobre del mensaje (el valor **MAIL FROM** que se usó en la transmisión SMTP, que normalmente se almacena en el **campo Return-Path).**
+- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
 
-- **Encabezado o sobre** ( `HeaderOrEnvelope` ) Examine los remitentes en el encabezado del mensaje y el sobre del mensaje.
+- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 <br>
-
+-->
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
 |El remitente es|condición: *From* <br/> excepción: *ExceptIfFrom*|Direcciones|Mensajes enviados por los buzones de correo, los usuarios de correo, los contactos de correo o Microsoft 365 de la organización.|
@@ -125,7 +126,7 @@ Para configurar la ubicación de la dirección del remitente en un nivel de regl
 |---|---|---|---|
 |Los datos adjuntos están protegidos con contraseña|condición: *DocumentIsPasswordProtected* <br/> *excepción: ExceptIfDocumentIsPasswordProtected*|ninguno|Mensajes en los que un archivo adjunto está protegido por contraseña (y, por lo tanto, no se puede examinar). La detección de contraseñas solo funciona Office documentos, .zip y archivos .7z.|
 |La extensión de archivo de datos adjuntos es|condición: *ContentExtensionMatchesWords* <br/> *excepción: ExceptIfContentExtensionMatchesWords*|Words|Mensajes en los que la extensión de archivo de los datos adjuntos coincide con cualquiera de las palabras especificadas.|
-|No se pudo examinar el contenido de los datos adjuntos de correo electrónico|condición: *DocumentIsUnsupported* <br/>*excepción: ExceptIf DocumentIsUnsupported*|No aplicable|Mensajes en los que los datos adjuntos no se reconocen de forma Exchange Online.|
+|No se pudo examinar el contenido de los datos adjuntos de correo electrónico|condición: *DocumentIsUnsupported* <br/>*excepción: ExceptIf DocumentIsUnsupported*|N/D|Mensajes en los que los datos adjuntos no se reconocen de forma Exchange Online.|
 |El contenido de los datos adjuntos de correo electrónico no ha completado el examen|condición: *ProcessingLimitExceeded* <br/> *excepción: ExceptIfProcessingLimitExceeded*|N/D|Mensajes en los que el motor de reglas no pudo completar el examen de los datos adjuntos. Puede usar esta condición para crear reglas que trabajen conjuntamente para identificar y procesar mensajes en los que el contenido no pudo examinarse por completo.|
 |El nombre del documento contiene palabras|condición: *DocumentNameMatchesWords* <br/> *excepción: ExceptIfDocumentNameMatchesWords*|Words|Mensajes en los que el nombre de archivo de un archivo adjunto coincide con cualquiera de las palabras especificadas.|
 |El nombre del documento coincide con los patrones|condición: *DocumentNameMatchesPatterns* <br/> *excepción: ExceptIfDocumentNameMatchesPatterns*|Patrones|Mensajes en los que el nombre de archivo de los datos adjuntos contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
@@ -179,8 +180,10 @@ En esta tabla se describen las acciones disponibles en DLP.
 |Agregar destinatario|AddRecipients|Primera propiedad: *Field*</br>Segunda propiedad: *Addresses*|Agrega uno o varios destinatarios al campo Para/Cc/CCO del mensaje. Este parámetro usa la sintaxis: @{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
 |Agregar el administrador del remitente como destinatario|AddRecipients|Primera propiedad: *AddedManagerAction*</br>Segunda propiedad: *Field*|Agrega el administrador del remitente al mensaje como el tipo de destinatario especificado (To, Cc o Bcc) o redirige el mensaje al administrador del remitente sin notificar al remitente ni al destinatario. Esta acción solo funciona si el atributo Manager del remitente se define en Active Directory. Este parámetro usa la sintaxis: @{AddManagerAsRecipientType = "<Para \| cc \| cco>"}|
 Asunto de anteponer|PrependSubject|Cadena|Agrega el texto especificado al principio del campo Subject del mensaje. Considere la posibilidad de usar un espacio o un signo de dos puntos (:) como último carácter del texto especificado para diferenciarlo del texto del asunto original.  </br>Para evitar que se agregue la misma cadena a los mensajes que ya contienen el texto del asunto (por ejemplo, respuestas), agregue la excepción "El asunto contiene palabras" (ExceptIfSubjectContainsWords) a la regla.|
-|Modificar asunto|ModifySubject|PswsHashTable | Quite el texto de la línea de asunto que coincida con un patrón específico y reempláctelo por texto diferente. Consulte el ejemplo siguiente. Puede: </br>- **Reemplazar** todas las coincidencias del asunto por el texto de reemplazo </br>- **Anexar** para quitar todas las coincidencias del asunto e inserta el texto de reemplazo al final del asunto. </br>- **Anteponer para** quitar todas las coincidencias e insertar el texto de reemplazo al principio del asunto.|
 |Aplicar declinación de responsabilidades HTML|ApplyHtmlDisclaimer|Primera propiedad: *Text*</br>Segunda propiedad: *Location*</br>Tercera propiedad: *Acción de reserva*|Aplica la declinación de responsabilidades HTML especificada a la ubicación necesaria del mensaje.</br>Este parámetro usa la sintaxis: @{ Text = " " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }|
-|Quitar Cifrado de mensajes de Office 365 protección de derechos y derechos|RemoveRMSTemplate|N/D|Quita Office 365 cifrado aplicado en un correo electrónico|
+|Quitar Cifrado de mensajes de Office 365 protección de derechos y derechos|RemoveRMSTemplate|No aplicable|Quita Office 365 cifrado aplicado en un correo electrónico|
 |Entregar el mensaje a la cuarentena hospedada |_Quarantine_|N/D| Esta acción se encuentra actualmente en **versión preliminar pública.** Durante esta fase, los correos electrónicos puestos en cuarentena por directivas DLP mostrarán el tipo de directiva como ExchangeTransportRule.</br> Entrega el mensaje a la cuarentena en EOP. Para obtener más información, vea [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 |
+
+<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: </br>- **Replace** all matches in the subject with the replacement text </br>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. </br>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+

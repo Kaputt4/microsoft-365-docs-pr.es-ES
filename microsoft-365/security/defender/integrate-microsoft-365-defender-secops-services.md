@@ -16,26 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7053616ebee7a0c8a63394e2db98704910d1ff10
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 7c2cebc256299bd529b8dfcc23787fcc0a16d85d
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121452"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172024"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Paso 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Un Centro de operaciones de seguridad (SOC) establecido debe tener un catálogo de servicios que pueda incluir:
 
@@ -75,7 +74,7 @@ Para integrar las capacidades de Microsoft 365 Defender, deberá refinar los ser
 - [¿Qué es Microsoft Defender para punto de conexión?](/defender-endpoint/microsoft-defender-endpoint)
 - [¿Qué es Microsoft Defender for Identity?](/defender-for-identity/what-is)
 - [¿Qué es Defender para Office 365?](/office-365-security/defender-for-office-365)
-- [¿Qué es Microsoft Defender para aplicaciones en la nube?](/cloud-app-security/what-is-cloud-app-security)
+- [¿Qué es Microsoft Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="next-step"></a>Paso siguiente
 

@@ -17,13 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-ms.openlocfilehash: 9750fc75e5fc90a0f5ea0c308870a4342070a427
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 641636528d35c148ceaa41827721e841dfafd4ec
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209038"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171052"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Proporcionar acceso al proveedor de servicios de seguridad administrado (MSSP) 
 
@@ -38,7 +37,7 @@ ms.locfileid: "60209038"
 
 Para implementar una solución de acceso delegado multiinquilino, siga estos pasos:
 
-1. Habilite [el control de](/windows/security/threat-protection/microsoft-defender-atp/rbac) acceso basado en roles en Defender for Endpoint en Microsoft 365 Defender portal y conéctese con Azure Active Directory (Azure AD).
+1. Habilite [el control de](/windows/security/threat-protection/microsoft-defender-atp/rbac) acceso basado en roles para Defender for Endpoint a través del portal de Microsoft 365 Defender y conéctese con Azure Active Directory (Azure AD).
 
 2. Configurar [paquetes de acceso de gobierno](/azure/active-directory/governance/identity-governance-overview) para la solicitud de acceso y el aprovisionamiento.
 

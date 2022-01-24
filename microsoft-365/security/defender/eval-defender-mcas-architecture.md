@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7e9542e152b2c218a83fd4a431588c14afecbda8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ed36974ae0f32ebc29360ee1039e93c12b2d85c5
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933161"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171040"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-cloud-apps"></a>Revisar los requisitos de arquitectura y los conceptos clave para Microsoft Defender para aplicaciones en la nube
 
@@ -144,7 +146,7 @@ Además, Microsoft Sentinel incluye un conector de Microsoft Defender para aplic
 - [Integración de SIEM genérica](/cloud-app-security/siem)
 - [Transmitir alertas y registros de detección en la nube desde Defender para aplicaciones en la nube en Microsoft Sentinel](/azure/sentinel/connect-cloud-app-security)
 
-### <a name="next-steps"></a>Siguientes pasos
+### <a name="next-steps"></a>Pasos siguientes
 
 Paso 2 de 3: [Habilitar el entorno de evaluación para Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-enable-eval.md)
 

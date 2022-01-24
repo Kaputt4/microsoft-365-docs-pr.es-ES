@@ -16,14 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9d0418b2f183884793be3c2d8a72f571d0072a61
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4c8f0ff2ca13d7f1c0e8adfcf4e0bdf09aa1c2ac
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933149"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172048"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Habilitar el entorno de evaluación para Microsoft Defender para aplicaciones en la nube
 
@@ -94,7 +96,7 @@ El panel de detección de nube está diseñado para ofrecerte más información 
 
 Para empezar a usar el panel de detección en la nube, consulta [Trabajar con aplicaciones detectadas.](/cloud-app-security/discovered-apps)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Paso 3 de 3: [Piloto de Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-pilot.md)
 

@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b43f9548419d3bab10501aa133637b8e2c5583fd
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.custom: api
+ms.openlocfilehash: 499ab1722b2754e893361784f7ff1ce257ceb58b
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374765"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171952"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Códigos de error Microsoft 365 Defender API de REST comunes
 

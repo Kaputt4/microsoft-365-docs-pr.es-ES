@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6a4981d77c544b8d4bd0b5824f6a20a3a3731c0b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 988632e84614b49262c9cc7b8a74b493c1a48b01
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937909"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171976"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Convertirse en socio de Microsoft Defender para punto de conexión
 
@@ -30,13 +30,12 @@ ms.locfileid: "61937909"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Para convertirse en un partner de soluciones de Defender for Endpoint, deberá seguir y completar los siguientes pasos.
 
-## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-developer-license"></a>Paso 1: Suscribirse a una licencia de Microsoft Defender para endpoint developer
+## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-license"></a>Paso 1: Suscribirse a una licencia de Microsoft Defender para endpoint
 
-Suscribirse a la [licencia de Microsoft Defender para Endpoint Developer](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9). Suscribirte te permite usar un inquilino de Microsoft Defender para endpoint con hasta 10 dispositivos para desarrollar soluciones que se integren con Microsoft Defender para Endpoint.
+¿Desea experimentar Defender for Endpoint? [Registrarse para obtener una versión de prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink). Suscribirte te permite usar un inquilino de Microsoft Defender para endpoint con hasta tres dispositivos para desarrollar soluciones que se integren con Microsoft Defender para Endpoint.
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>Paso 2: Cumplir los requisitos de validación y certificación de la solución
 
@@ -74,6 +73,10 @@ Para que su empresa aparezca como partner en la página de partners del producto
    - Para obtener más información, [vea RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43).
 
 Las asociaciones con Microsoft Defender para Endpoint ayudan a nuestros clientes mutuos a simplificar, integrar y orquestar las defensas. Nos complace que haya elegido convertirse en un partner de Microsoft Defender para endpoints y lograr nuestro objetivo común de proteger eficazmente a los clientes y sus activos al impedir y responder juntos a las amenazas modernas.
+
+## <a name="misa-nomination"></a>Nominación misa 
+Los proveedores de servicios de seguridad administrados (MSSP) y los proveedores de software independientes (ISV) se pueden nominar a la Asociación de seguridad inteligente de Microsoft (MISA). Para obtener más información, vea [la página de información de MISA](https://www.microsoft.com/security/business/intelligent-security-association).
+
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 39f2fda4864e017991e323aa576d4f97d78f1d2b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1eaca5f9902b9617e47cc70d270f569d3a9dc60a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940154"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172132"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Evaluación de Información general sobre puntos de conexión de Microsoft Defender
 
@@ -48,7 +49,7 @@ En la tabla siguiente se describen los pasos de la ilustración.
  |Paso   |Descripción
 |---------|---------|
 | [Paso 1. Revisar los requisitos de arquitectura y los conceptos clave](eval-defender-endpoint-architecture.md)    | Comprenda la arquitectura de Defender for Endpoint y las capacidades disponibles para usted.       |
-|[Paso 2. Habilitar el entorno de evaluación](eval-defender-office-365-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
-|[Paso 3. Configurar el piloto ](eval-defender-office-365-pilot.md)    |    Compruebe el grupo piloto, ejecute simulaciones y familiarícese con las características y paneles clave.     |
+|[Paso 2. Habilitar el entorno de evaluación](eval-defender-endpoint-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
+|[Paso 3. Configurar el piloto ](eval-defender-endpoint-pilot.md)    |    Compruebe el grupo piloto, ejecute simulaciones y familiarícese con las características y paneles clave.     |
 
 

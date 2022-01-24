@@ -15,46 +15,47 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1a2fd580a98fc7ac9db9d6592191eb4667ae757f
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: b4225b33d814b797c97e033615423104f27714b4
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786703"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171867"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtener formación de expertos sobre la búsqueda avanzada
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
+
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
 Aumente su conocimiento de la búsqueda avanzada rápidamente con _Tracking the adversary_, una serie de difusión por web para nuevos analistas de seguridad y cazacarros de amenazas expertos. La serie le guía a través de los conceptos básicos hasta la creación de sus propias consultas sofisticadas. Empieza con el primer vídeo sobre conceptos básicos o salta a vídeos más avanzados que se adapten a tu nivel de experiencia.
 
-| Título | Descripción | Reloj | Consultas | 
+| Título | Descripción | Reloj | Consultas |
 |--|--|--|--|
 | Episodio 1: Conceptos básicos de KQL | Este episodio trata los conceptos básicos de la búsqueda avanzada en Microsoft 365 Defender. Obtenga información sobre los datos de búsqueda avanzados disponibles y la sintaxis y los operadores básicos de KQL. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | Episodio 2: Combinaciones | Siga aprendiendo sobre los datos en la búsqueda avanzada y cómo unir tablas. Obtenga información `inner` sobre , , y `outer` `unique` combinaciones, y comprenda los `semi` matices de la combinación predeterminada de Kusto. `innerunique` | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
 | Episodio 3: Resumen, pivotación y visualización de datos | Ahora que ha aprendido a filtrar, manipular y unir datos, es hora de resumir, cuantificar, pivotar y visualizar. En este episodio se analiza el operador y varios cálculos, al tiempo que se presentan tablas `summarize` adicionales en el esquema. También aprenderá a convertir conjuntos de datos en gráficos que pueden ayudarle a extraer información. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
-| Episodio 4: Vamos a cazar. Aplicación de KQL al seguimiento de incidentes | En este episodio, aprenderás a realizar un seguimiento de alguna actividad de atacante. Usamos nuestra mejor comprensión de Kusto y la búsqueda avanzada para realizar un seguimiento de un ataque. Obtenga información sobre los trucos reales usados en el campo, incluidos los ABC de ciberseguridad y cómo aplicarlos a la respuesta a incidentes. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt) 
+| Episodio 4: Vamos a cazar. Aplicación de KQL al seguimiento de incidentes | En este episodio, aprenderás a realizar un seguimiento de alguna actividad de atacante. Usamos nuestra mejor comprensión de Kusto y la búsqueda avanzada para realizar un seguimiento de un ataque. Obtenga información sobre los trucos reales usados en el campo, incluidos los ABC de ciberseguridad y cómo aplicarlos a la respuesta a incidentes. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt)
 
+Obtenga más formación de expertos con *L33TSP3AK:* Búsqueda avanzada en Microsoft 365 Defender , una serie de difusión por web para analistas que buscan expandir sus conocimientos técnicos y habilidades prácticas en la realización de investigaciones de seguridad mediante la búsqueda avanzada en Microsoft 365 Defender.
 
-Obtenga más formación de expertos con *L33TSP3AK:* Búsqueda avanzada en Microsoft 365 Defender , una serie de difusión por web para analistas que buscan expandir sus conocimientos técnicos y habilidades prácticas en la realización de investigaciones de seguridad mediante la búsqueda avanzada en Microsoft 365 Defender. 
-
-| Título | Descripción | Reloj | Consultas | 
+| Título | Descripción | Reloj | Consultas |
 |--|--|--|--|
 | Episodio 1  | En este episodio, aprenderás diferentes procedimientos recomendados para ejecutar consultas avanzadas de búsqueda. Entre los temas tratados se encuentran: cómo optimizar las consultas, usar la búsqueda avanzada para ransomware, controlar JSON como un tipo dinámico y trabajar con operadores de datos externos. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
-| Episodio 2 | En este episodio, aprenderás a investigar y responder a ubicaciones de inicio de sesión sospechosas o inusuales y a la filtración de datos a través de reglas de reenvío de bandeja de entrada. Sebastien Molendijk, jefe de programa sénior de Seguridad en la nube CxE, comparte cómo usar la búsqueda avanzada para investigar incidentes de varias fases con Microsoft Cloud App Security datos. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
+| Episodio 2 | En este episodio, aprenderás a investigar y responder a ubicaciones de inicio de sesión sospechosas o inusuales y a la filtración de datos a través de reglas de reenvío de bandeja de entrada. Sebastien Molendijk, jefe de programa sénior de Seguridad en la nube CxE, comparte cómo usar la búsqueda avanzada para investigar incidentes de varias fases con Datos de Microsoft Defender para Aplicaciones en la nube. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
 | Episodio 3 | En este episodio, se tratarán las mejoras más recientes en la búsqueda avanzada, cómo importar un origen de datos externo en la consulta y cómo usar la partición para segmentar los resultados de consultas grandes en conjuntos de resultados más pequeños para evitar alcanzar los límites de la API. | [YouTube](https://www.youtube.com/watch?v=vd5lgIJKmYs) (40:59) | [Archivo de texto](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/l33tspeak%2011%20Oct%202021%20-%20externaldata%20and%20query%20partitioning.csl)
 
-
 ## <a name="how-to-use-the-csl-file"></a>Cómo usar el archivo CSL
-Antes de iniciar un episodio, acceda al archivo de texto correspondiente [en GitHub](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts) y copie su contenido en el editor de consultas de búsqueda avanzada. Al ver un episodio, puede usar el contenido copiado para seguir el altavoz y ejecutar consultas. 
+
+Antes de iniciar un episodio, acceda al archivo de texto correspondiente [en GitHub](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts) y copie su contenido en el editor de consultas de búsqueda avanzada. Al ver un episodio, puede usar el contenido copiado para seguir el altavoz y ejecutar consultas.
 
 El siguiente fragmento de un archivo de texto que contiene las consultas muestra un conjunto completo de instrucciones marcadas como comentarios con `//` .
 
@@ -69,7 +70,7 @@ El siguiente fragmento de un archivo de texto que contiene las consultas muestra
 // - Timestamp
 ```
 
-El mismo archivo de texto incluye consultas antes y después de los comentarios como se muestra a continuación. Para ejecutar una consulta específica con [varias consultas en el editor,](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)mueva el cursor a esa consulta y seleccione Ejecutar **consulta**.   
+El mismo archivo de texto incluye consultas antes y después de los comentarios como se muestra a continuación. Para ejecutar una consulta específica con [varias consultas en el editor,](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)mueva el cursor a esa consulta y seleccione Ejecutar **consulta**.
 
 ```kusto
 DeviceLogonEvents
@@ -88,8 +89,9 @@ CloudAppEvents
 | take 100
 | sort by Timestamp desc
 ```
-     
+
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)

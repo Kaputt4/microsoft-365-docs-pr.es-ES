@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 32c40c61675ed5291093b88a6fd834bc92fcad87
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7a7e7a397f9cf9f89b75eb1f515e37a5386a73b1
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933232"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171940"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Revisar los requisitos y conceptos clave de la arquitectura de puntos de conexión de Microsoft Defender
 
@@ -63,7 +65,7 @@ Reducción de superficie de ataque | Ayuda a reducir las superficies de ataque m
 Detección y respuesta de extremos | Las capacidades de detección y respuesta de puntos de conexión proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. | [Información general sobre detección y respuesta de puntos de conexión funcionalidades](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 Bloqueo y contención del comportamiento | Las capacidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. | [Bloqueo y contención de comportamientos](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 Investigación y respuesta automatizadas | La investigación automatizada usa varios algoritmos de inspección basados en procesos que usan los analistas de seguridad y diseñados para examinar alertas y tomar medidas inmediatas para resolver infracciones. | [Usar investigaciones automatizadas para investigar y corregir amenazas](/microsoft-365/security/defender-endpoint/automated-investigations)
-Búsqueda avanzada | La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que le permite explorar hasta 30 días de datos sin procesar para que pueda inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. | [Información general sobre la búsqueda avanzada](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
+Búsqueda avanzada de amenazas | La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que le permite explorar hasta 30 días de datos sin procesar para que pueda inspeccionar de forma proactiva los eventos de la red para localizar indicadores y entidades de amenazas. | [Información general sobre la búsqueda avanzada](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
 Análisis de amenazas | El análisis de amenazas es un conjunto de informes de investigadores expertos en seguridad de Microsoft que cubren las amenazas más relevantes. | [Seguir las amenazas emergentes y responder a ellas](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 
@@ -76,7 +78,7 @@ Puedes integrar Microsoft Defender para Endpoint con Microsoft Sentinel para ana
 Microsoft Defender para endpoint también se puede integrar en otras soluciones de administración de eventos y de información de seguridad (SIEM). Para obtener más información, vea [Enable SIEM integration in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/enable-siem-integration).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 [Habilitar la evaluación](eval-defender-endpoint-enable-eval.md)
 
 Vuelva a la introducción a [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)

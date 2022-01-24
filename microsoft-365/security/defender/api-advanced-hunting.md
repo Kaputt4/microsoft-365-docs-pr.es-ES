@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a7be2c43a2ff97fddfa9db0a6d02bcc611e13173
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.custom: api
+ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264869"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172287"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
@@ -82,13 +83,13 @@ Encabezado | Valor
 Authorization | Portador {token} **Nota: obligatorio**
 Content-Type | application/json
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
 Parámetro | Tipo | Descripción
 -|-|-
-Consulta | Text | Consulta que se debe ejecutar. **Nota: obligatorio**
+Query | Text | Consulta que se debe ejecutar. **Nota: obligatorio**
 
 ## <a name="response"></a>Respuesta
 
@@ -104,7 +105,7 @@ El objeto response contiene tres propiedades de nivel superior:
 
 En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un objeto de respuesta api que contiene `Stats` , `Schema` y `Results` .
 
-### <a name="query"></a>Consulta
+### <a name="query"></a>Query
 
 ```json
 {

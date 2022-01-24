@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b4280999786cda02c183bb0eb03bea8c2c93c84
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom: api
+ms.openlocfilehash: 1c83a64c3bf1e721ea54b526c0db0c5d7c403fba
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202648"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172444"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World para la API Microsoft 365 Defender REST
 
@@ -79,7 +80,7 @@ Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo inclu
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Obtener un token con la aplicación y usar el token para obtener acceso a la API
 
-Para obtener más información sobre Azure Active Directory tokens, consulte el [tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Para obtener más información sobre Azure Active Directory tokens, vea el Azure AD [tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
 > Aunque el ejemplo de esta aplicación de demostración te anima a  pegar el valor secreto con fines de prueba, nunca debes codificar los secretos en una aplicación que se ejecute en producción. Un tercero podría usar el secreto para obtener acceso a los recursos. Puedes ayudar a proteger los secretos de la aplicación con [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Para obtener un ejemplo práctico de cómo proteger la aplicación, consulta Administrar secretos en las aplicaciones de servidor [con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
@@ -172,7 +173,7 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Microsoft 365 Defender Introducción a las API](api-overview.md)
+- [Microsoft 365 Defender introducción a las API](api-overview.md)
 - [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
 - [Crear una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md)
 - [Crear una aplicación para obtener acceso Microsoft 365 Defender API en nombre de un usuario](api-create-app-user-context.md)

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
-ms.openlocfilehash: f6aa013d20cfedcc8d61d005e21db11c58cb5f6f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 307d322c441a2f56e43e02abb947c6c9ba8cff2d
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197813"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171064"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
@@ -81,7 +81,7 @@ Puede crear hasta cuatro temas de grupo adicionales.
 
 ## <a name="logos-specify-your-theme-logos"></a>Logotipos: especifique los logotipos del tema
 
-En la **página Logotipos,** puede agregar los logotipos y especificar la dirección URL a la que navegarán los usuarios cuando seleccionen el logotipo.
+En la **página Logotipos,** puedes agregar los logotipos y especificar la dirección URL a la que los usuarios navegarán cuando seleccionen el logotipo.
 
 - **Logotipo predeterminado:** agregue una ubicación URL que apunta al logotipo. Asegúrese de que la dirección URL usa HTTPS. Agregue una dirección URL de imagen HTTPS que permita el acceso anónimo y no requiera autenticación. Para el tema predeterminado, también tienes una opción para cargar una imagen de logotipo de menos de 10 kb. El logotipo predeterminado puede estar en formato JPG, PNG, GIF o SVG. En el caso de las imágenes SVG, se cambiarán el tamaño para que se ajusten verticalmente a 24 píxeles. Las imágenes JPG, PNG y GIF se escalarán para que se ajusten a 200 x 48 píxeles. La relación de aspecto del logotipo siempre se conservará.
 - **Logotipo alternativo:** agregue una ubicación URL que apunta al logotipo. El logotipo alternativo debe optimizarse para su uso en Office temas oscuros. Los mismos requisitos que el logotipo predeterminado.
@@ -104,7 +104,7 @@ En la **página Colores,** puede establecer los colores predeterminados y elegir
 
 :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 

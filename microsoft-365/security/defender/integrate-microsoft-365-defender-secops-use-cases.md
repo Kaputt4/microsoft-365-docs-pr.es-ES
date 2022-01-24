@@ -16,26 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 52579cbe5ff3a40e402a116368b607f2381062ce
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 3019602f3b6120129243ab7a683da1d01f89bb1e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122122"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172036"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Paso 5. Desarrollar y probar casos de uso
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Los métodos recomendados para implementar Microsoft 365 Defender en el Centro de operaciones de seguridad (SOC) dependerán del conjunto actual de herramientas, procesos y conjuntos de aptitudes del equipo soc. Mantener la higiene cibernética en todas las plataformas puede ser difícil debido a la gran cantidad de datos procedentes de decenas de orígenes de seguridad, si no cientos. 
 

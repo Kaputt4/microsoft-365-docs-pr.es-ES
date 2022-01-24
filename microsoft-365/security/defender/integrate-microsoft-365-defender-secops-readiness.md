@@ -16,26 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 85798d1b01323a2fee1023bafdbeeb5ae5847e5f
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: ca58d56e9caf6aa8a359a0776fc160cca04fec8a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121476"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171795"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>Paso 2. Realizar una evaluación de preparación de integración SOC con el marco de confianza cero
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Una vez definidas las funciones principales del equipo del Centro de operaciones de seguridad (SOC), el siguiente paso para su organización es prepararse para la adopción de Microsoft 365 Defender a través de un enfoque de confianza [cero.](/security/zero-trust/) La adopción puede ayudarle a determinar los requisitos necesarios para implementar Microsoft 365 Defender con prácticas modernas líderes del sector, al tiempo que evalúa las capacidades de Microsoft 365 Defender en su entorno.
 

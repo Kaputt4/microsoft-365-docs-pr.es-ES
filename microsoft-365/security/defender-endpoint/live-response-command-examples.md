@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b1010cd245f4ed727d1792b5e08fa6337e83c1c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c91c0c5afc449d2e8fdfc415fae83fcc2c913c6a
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166235"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172324"
 ---
 # <a name="live-response-command-examples"></a>Ejemplos de comandos de respuesta en vivo
 
@@ -27,7 +27,7 @@ ms.locfileid: "61166235"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -63,8 +63,13 @@ connections json
 ## `dir`
 
 ```console
-# List files and sub-folders in the current folder
+# List files and sub-folders in the current folder (by default it will show relative paths [-relative_path])
 dir
+```
+
+```console
+# List files and sub-folders in the current folder, with their full path
+dir -full_path
 ```
 
 ```console

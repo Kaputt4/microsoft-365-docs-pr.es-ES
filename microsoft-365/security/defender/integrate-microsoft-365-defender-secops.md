@@ -16,7 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 - m365solution-m365dsecops
 - m365solution-overview
 ms.topic: conceptual
@@ -24,19 +23,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5c88d6530fe8316f0297f716d51a28a64ede72f9
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 6bfec4b38d3451d25d65c63ce46fb8df74cd6d0e
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121428"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172000"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Integración de Microsoft 365 Defender en las operaciones de seguridad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Un Centro de operaciones de seguridad (SOC) moderno es una organización adaptable basada en inteligencia que adopta la estrategia de defensa contra amenazas de mover procesos de seguridad más temprano en el proceso de implementación para que la seguridad esté integrada. Esto significa que la asignación tradicional de tecnologías y procesos aislados a analistas de seguridad únicos ya no admite el gran aumento de datos procedentes de varios orígenes. Se pide a los analistas e ingenieros de seguridad que tomen un enfoque más holístico y que usen información compartida en diferentes plataformas y disciplinas para tomar medidas eficaces.
 

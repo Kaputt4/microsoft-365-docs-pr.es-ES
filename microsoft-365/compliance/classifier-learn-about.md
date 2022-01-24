@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los clasificadores capacitados pueden reconocer varios tipos de contenido para el etiquetado o la aplicación de directivas, ya que le dan ejemplos positivos y negativos que se deben analizar.
-ms.openlocfilehash: 863f30819988d5f2ecfdc7c9bac858ef357d6ede
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 9301379e55865fc0524dbf814365239d700aa962
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940655"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172156"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Obtenga información sobre los clasificadores entrenables
 
@@ -48,6 +48,10 @@ Las [etiquetas](dlp-learn-about-dlp.md) de confidencialidad y retención se pued
 ## <a name="classifiers"></a>Clasificadores
 
 Este método de clasificación es adecuado para el contenido que no se identifica fácilmente mediante los métodos manuales o automatizados de coincidencia de patrones. Este método de clasificación consiste más en usar un clasificador para identificar un elemento en función de lo que es el elemento, no de los elementos que están en el elemento (coincidencia de patrones). Un clasificador aprende a identificar un tipo de contenido al ver cientos de ejemplos del contenido que le interesa clasificar.
+
+> [!NOTE]
+> Puede ver los clasificadores entrenables en el explorador de contenido expandiendo **Clasificadores trainables** en el panel filtros. Los clasificadores que se pueden entrenar mostrarán automáticamente el número de incidentes que se encuentran en SharePoint, Teams y OneDrive, sin necesidad de ningún etiquetado.
+> Si no desea usar esta característica, debe presentar una solicitud al Soporte técnico de Microsoft para deshabilitar la clasificación lista para usar. Esto deshabilitará el examen del contenido confidencial y etiquetado antes de crear directivas de etiquetado.
 
 ### <a name="where-you-can-use-classifiers"></a>Dónde puede usar clasificadores
 

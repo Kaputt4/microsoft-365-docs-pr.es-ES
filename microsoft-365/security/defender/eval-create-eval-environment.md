@@ -17,14 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
+- m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 8f8ef31b037709f7b5b87c888f40b1a5a3a5b438
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f294884fcae64e91d88305bccf777cee8663a0d3
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940167"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62171843"
 ---
 # <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Crear el entorno Microsoft 365 Defender evaluación
 
@@ -48,7 +50,7 @@ El segundo es configurar [el entorno de Microsoft 365 Defender de prueba](setup-
 
    :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Hay un botón &quot;Probar ahora&quot; en el panel &quot;Comprobar, confirmar el pedido&quot; (para una Office 365 E5 de prueba de un mes para 25 usuarios).":::
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Habilitar Microsoft 365 identidad](eval-defender-identity-overview.md)
 

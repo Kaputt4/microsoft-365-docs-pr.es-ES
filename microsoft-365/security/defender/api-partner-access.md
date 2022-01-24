@@ -20,12 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b3a1925a5d08b13558a312e92270f5703452aa07
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.custom: api
+ms.openlocfilehash: 8a80245f4e94ee6f5f413154cf9b6d2ea318f5e4
+ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643236"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62172432"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Crear una aplicación con acceso de asociado a Microsoft 365 Defender API
 
@@ -33,7 +34,7 @@ ms.locfileid: "60643236"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -286,7 +287,7 @@ En el ejemplo siguiente se muestra cómo enviar una solicitud para obtener una l
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Microsoft 365 Defender Introducción a las API](api-overview.md)
+- [Microsoft 365 Defender introducción a las API](api-overview.md)
 - [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
 - [Crear una aplicación "Hello world"](api-hello-world.md)
 - [Crear una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md)
