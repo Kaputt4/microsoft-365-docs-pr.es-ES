@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b27ad8f4781621a9517507e312feb9be0aa310a3
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 5fb600434c8f6d7b62e7fd7408c3567a34c0eda0
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034562"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202058"
 ---
 # <a name="device-requirements"></a>Requisitos del dispositivo
 
@@ -40,6 +40,9 @@ El dispositivo debe haber sido creado por uno de estos fabricantes:
 - Lenovo
 - Microsoft
 
+> [!NOTE] 
+> A partir del 01 de marzo de 2022, los dispositivos administrados por Microsoft Managed Desktop deben ser compatibles con el OEM. Trabaje con su OEM para averiguar cuándo los dispositivos de su cartera alcanzarán el soporte técnico de fin de vida. Los clientes serán responsables de garantizar que los dispositivos se reemplazan antes del fin de la vida útil. Cualquier dispositivo que no sea compatible con OEM seguirá siendo administrado por Microsoft Managed Desktop, pero la compatibilidad con estos dispositivos puede ser limitada, ya que están en riesgo de problemas de seguridad y rendimiento que puede que nuestro servicio no pueda mitigar.
+</b>
 
 ### <a name="installed-software"></a>Software instalado
 

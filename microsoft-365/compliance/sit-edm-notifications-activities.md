@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear notificaciones para actividades de coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1033b6cd84f84db65f49f95e008e20eada63ca64
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: e5f7c2a2d724a66aea1ce55658ff84e6e0da4738
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914601"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187394"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Crear notificaciones para actividades de coincidencia exacta de datos
 
@@ -35,7 +35,7 @@ Cuando se [crean tipos de información confidencial personalizados con coinciden
 - UploadDataCompleted
 
 > [!NOTE]
- La capacidad de crear notificaciones de actividades de EDM solo está disponible para las nubes de World Wide y GCC.
+ La capacidad de crear notificaciones de actividades de EDM está disponible para las nubes de World Wide y GCC.
 
 ## <a name="pre-requisites"></a>Requisitos previos
 

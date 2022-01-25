@@ -4,12 +4,12 @@ description: archivo include
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: d4554596f4c33ce0536ad2c8e6092fd8fdc74033
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 126454f65f8f0e92161f1d51321390ffb60c1308
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62079648"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202799"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -58,12 +58,15 @@ Las directivas de Microsoft Defender para la administración de seguridad de pun
 
 Para usar la administración de seguridad para Microsoft Defender para Endpoint, necesita:
 
-- Una suscripción que concede licencias para Microsoft Defender para Endpoint, como Microsoft 365, o una licencia independiente solo para Microsoft Defender para Endpoint. Para obtener información actual acerca de las opciones, vea [Requisitos mínimos de Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
+- Una suscripción que concede licencias para Microsoft Defender para Endpoint, como Microsoft 365, o una licencia independiente solo para Microsoft Defender para Endpoint. Una suscripción que concede licencias de Punto de conexión de Microsoft Defender también concede a su inquilino acceso al nodo de seguridad de punto de conexión del centro Microsoft Endpoint Manager administración.
 
-  *Cualquier suscripción* que conceda licencias de Punto de conexión de Microsoft Defender también concede a su inquilino acceso al nodo de seguridad endpoint del centro de administración de Microsoft Endpoint Manager cliente. El nodo de seguridad de extremo es donde configurarás e implementarás directivas para administrar Microsoft Defender para Endpoint para tus dispositivos y supervisar el estado del dispositivo.
+  > [!NOTE]  
+  > **Excepción:** si tiene acceso a Microsoft Defender para Endpoint como parte de una licencia de Solo Microsoft Defender para la nube (anteriormente Centro de seguridad de Azure), la funcionalidad administración de seguridad para Microsoft Defender para endpoint no está disponible.
 
->[!NOTE]
-> Actualmente, si se obtiene una suscripción de Microsoft Defender para endpoint a través del Centro de seguridad de Azure/Defender para la nube, esta licencia de Microsoft Defender para endpoints no es una licencia válida para esta característica. 
+El nodo de seguridad de extremo es donde configurarás e implementarás directivas para administrar Microsoft Defender para Endpoint para tus dispositivos y supervisar el estado del dispositivo.
+
+Para obtener información actual acerca de las opciones, vea [Requisitos mínimos de Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
+
 
 
 ## <a name="architecture"></a>Arquitectura
@@ -128,7 +131,7 @@ Para admitir Microsoft Defender para la administración de la configuración de 
 
    :::image type="content" source="../media/add-role.png" alt-text="Conceder permisos a los usuarios para administrar la configuración.":::
 
-4. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+4. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 5. Seleccione **Endpoint security** Microsoft Defender for  >  **Endpoint** y establezca Allow Microsoft Defender for Endpoint to enforce Endpoint Security **Configurations (Preview)** en **On**.
 
@@ -182,7 +185,7 @@ Después de crear uno o más grupos de Azure AD que contienen dispositivos admin
 >
 > Microsoft Endpoint Manager permite implementar varias instancias de cada tipo de directiva de seguridad de extremo en el mismo dispositivo, con cada instancia de directiva que recibe el dispositivo por separado. Por lo tanto, un dispositivo puede recibir configuraciones independientes para la misma configuración de diferentes directivas, lo que da como resultado un conflicto. Algunas opciones de configuración (como exclusiones de antivirus) se combinarán en el cliente y se aplicarán correctamente.
 
-1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Vaya a **Seguridad de extremo** y, a continuación, seleccione el tipo de directiva que desea configurar, ya sea Antivirus o Firewall y, a continuación, seleccione Crear **directiva**.
 

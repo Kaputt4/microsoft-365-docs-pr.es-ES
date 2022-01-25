@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a557afd562c2b4d0127f69afec40c1909944968e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 98a32a9a65106be0336837117daaec1867f90693
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943165"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202166"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -123,13 +123,13 @@ Por ejemplo, si existe una configuración de seguridad  en protección estándar
   - Para configurar directivas de seguridad preestablecidas, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
   - Para obtener acceso de solo lectura a directivas de seguridad preestablecidas, debe ser miembro del grupo de roles **Lector** global.
 
-  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Usar el portal Microsoft 365 Defender para asignar directivas de seguridad predeterminadas estándar y estrictas a los usuarios
 
-1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & Reglas de amenazas Preestablecidas Directivas de seguridad en la <https://security.microsofot.com>  \>  \>  \>  **sección Directivas con** plantilla. Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & Reglas de amenazas Preestablecidas Directivas de seguridad en la <https://security.microsoft.com>  \>  \>  \>  **sección Directivas con** plantilla. Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
 
 2. En la **página Directivas de seguridad preestablecidas,** haga clic en **Administrar** en las secciones **Protección estándar** **o** Protección estricta.
 
@@ -166,7 +166,7 @@ Recuerde que la directiva de seguridad preestablecida de protección integrada s
 
 Por lo tanto, normalmente no recomendamos excepciones a la **directiva de** seguridad preestablecida de protección integrada.
 
-1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & Reglas de amenazas Preestablecidas Directivas de seguridad en la <https://security.microsofot.com>  \>  \>  \>  **sección Directivas con** plantilla. Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
+1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & Reglas de amenazas Preestablecidas Directivas de seguridad en la <https://security.microsoft.com>  \>  \>  \>  **sección Directivas con** plantilla. Para ir directamente a la página **Directivas de seguridad preestablecidas,** use <https://security.microsoft.com/presetSecurityPolicies> .
 
 2. En la **página Directivas de seguridad preestablecidas,** seleccione Agregar **exclusiones (no recomendadas)** en **la** sección Protección integrada.
 

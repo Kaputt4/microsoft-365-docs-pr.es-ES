@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd0d5a97a917cb6f04957b078980d1a495a54795
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 62be716a9663820f90d5c4f125f4634b3b399547
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872086"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202154"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Administrar remitentes suplantados con la directiva de inteligencia suplantada y la información de inteligencia suplantada en EOP
 
@@ -83,7 +83,7 @@ Hay dos maneras de permitir y bloquear remitentes suplantados:
 > [!IMPORTANT]
 > En este artículo se describe la experiencia de administración de remitentes suplantada anterior que se está reemplazando (la directiva de inteligencia suplantada **en** la página Directivas contra **correo** no deseado). Para obtener más información acerca  de la nueva experiencia (la pestaña Suplantación de dominio en la lista de inquilinos permitidos o bloqueados), vea [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsofot.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directivas de amenazas** \> **Correo electrónico no deseado** en la sección **Directivas**. Para ir directamente a la página **Directivas contra correo no deseado**, use <https://security.microsoft.com/antispam>.
 
 2. En la **página Directivas contra correo** no deseado, seleccione **Suplantar** la directiva de inteligencia haciendo clic en el nombre.
 

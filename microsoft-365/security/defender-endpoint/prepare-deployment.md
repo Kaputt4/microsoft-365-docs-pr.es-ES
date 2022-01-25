@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 49e4fa7d283219c3eaf981184f1239cf80534e38
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 015375b1405d878019e87afbc11de4cd67d241f0
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166091"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202184"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Prepare su cuenta de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -58,7 +58,7 @@ Agregue partes interesadas a la tabla siguiente según corresponda para su organ
 
 ****
 
-|Nombre|Función|Action|
+|Nombre|Rol|Action|
 |---|---|---|
 |Escriba el nombre y el correo electrónico|**Director de seguridad de la información (CISO)** Un representante ejecutivo que actúa como patrocinador dentro de *la organización para la nueva implementación de tecnología.*|SO|
 |Escriba el nombre y el correo electrónico|Jefe del Centro de operaciones **de Ciberdefensa (CDOC)** Un representante del equipo CDOC encargado de definir cómo se alinea este cambio con los procesos del equipo de operaciones de *seguridad de clientes.*|SO|
@@ -105,7 +105,7 @@ Microsoft recomienda usar [Privileged Identity Management](/azure/active-directo
 
 Defender for Endpoint admite dos formas de administrar permisos:
 
-- **Administración de permisos básicos:** establezca los permisos en acceso completo o de solo lectura. En el caso de los usuarios de administración de permisos básicos con el rol Administrador de Globa o Administrador de seguridad en Azure Active Directory tienen acceso completo mientras que el rol lector de seguridad tiene acceso de solo lectura.
+- **Administración de permisos básicos:** establezca los permisos en acceso completo o de solo lectura. En el caso de los usuarios de administración de permisos básicos con el rol Administrador global o Administrador de seguridad en Azure Active Directory acceso completo, mientras que el rol lector de seguridad tiene acceso de solo lectura.
 
 - Control de acceso basado en roles **(RBAC):** establezca permisos granulares definiendo roles, asignando Azure AD grupos de usuarios a los roles y otorgando a los grupos de usuarios acceso a grupos de dispositivos. Para obtener más información. vea [Manage portal access using role-based access control](rbac.md).
 

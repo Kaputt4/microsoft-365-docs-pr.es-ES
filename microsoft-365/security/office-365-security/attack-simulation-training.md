@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: e1196a686cd2223327ae85e596417b051f01abd5
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7f11d1a51d00e8be40875f29a730a00fb1225fe8
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934110"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202118"
 ---
 # <a name="simulate-a-phishing-attack-in-defender-for-office-365"></a>Simular un ataque de suplantación de identidad en Defender para Office 365
 
@@ -50,7 +50,7 @@ En la **página Seleccionar** técnica, seleccione una técnica de ingeniería s
 - **Recolección de credenciales:** intenta recopilar credenciales llevando a los usuarios a un sitio web de aspecto conocido con cuadros de entrada para enviar un nombre de usuario y una contraseña.
 - **Datos adjuntos de malware:** agrega datos adjuntos malintencionados a un mensaje. Cuando el usuario abre los datos adjuntos, se ejecuta código arbitrario que ayudará al atacante a poner en peligro el dispositivo del destino.
 - **Vínculo en datos adjuntos:** un tipo de híbrido de recolección de credenciales. Un atacante inserta una dirección URL en un archivo adjunto de correo electrónico. La dirección URL dentro de los datos adjuntos sigue la misma técnica que la recolección de credenciales.
-- **Vínculo a malware:** ejecuta código arbitrario desde un archivo hospedado en un servicio de uso compartido de archivos conocido. El mensaje enviado al usuario contendrá un vínculo a este archivo malintencionado. Abrir el archivo y ayudar al atacante a poner en peligro el dispositivo del destino.
+- **Vínculo a malware:** ejecuta código arbitrario desde un archivo hospedado en un servicio de uso compartido de archivos conocido. El mensaje enviado al usuario contendrá un vínculo a este archivo malintencionado. Abrir el archivo ayudará al atacante a poner en peligro el dispositivo del destino.
 - **Dirección URL de** unidad por: la dirección URL malintencionada del mensaje lleva al usuario a un sitio web familiar que ejecuta o instala código en el dispositivo del usuario de forma silenciosa.
 
 Si hace clic **en** el vínculo Ver detalles de la descripción, se abrirá un desplegable de detalles que describe la técnica y los pasos de simulación que resultan de la técnica.

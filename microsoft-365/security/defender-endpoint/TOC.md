@@ -275,7 +275,7 @@
 ###### [Fase 3: Implementar](attack-surface-reduction-rules-deployment-phase-3.md)
 ###### [Fase 4: Operar](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [Referencia de reglas de ASR](attack-surface-reduction-rules-reference.md)
-##### [Habilitar métodos alternativos de configuración para las reglas de ASR](enable-attack-surface-reduction.md)
+##### [Habilitar métodos de configuración alternativos de reglas de ASR](enable-attack-surface-reduction.md)
 #### [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.yml)
 
 ### Protección de última generación
@@ -645,7 +645,7 @@
 
 #### [Integración de SIEM]()
 ##### [Integrar herramientas SIEM con Microsoft Defender para punto de conexión](configure-siem.md)
-##### [Motores de protección de Microsoft Defender para punto de conexión](api-portal-mapping.md)
+##### [Habilitar la integración de SIEM en Microsoft Defender para punto de conexión](enable-siem-integration.md)
 ##### [Detecciones de extracción con la API de REST de SIEM](pull-alerts-using-rest-api.md)
 ##### [Solucionar problemas de integración de la herramienta SIEM](troubleshoot-siem.md)
 

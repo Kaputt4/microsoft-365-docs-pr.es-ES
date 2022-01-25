@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sincronizar usuarios controlados por dominio con Microsoft 365 para empresas.
-ms.openlocfilehash: 9b15179a48905e6ab9f8e6a44ebd7a0d62dc2bea
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e49a3095cff77692e58d1b70ca1169dc8fd4802a
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153911"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202070"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Sincronizar usuarios del dominio con Microsoft 365
 
@@ -52,9 +52,9 @@ Para sincronizar los usuarios, grupos y contactos de Active Directory local en A
 
  1. En el [Centro de administración,](https://go.microsoft.com/fwlink/p/?linkid=2024339)seleccione **Configurar** en la navegación izquierda.
 
- 2. En **Inicio de sesión y seguridad,** elija Ver **en** Sincronizar usuarios del directorio de **su organización.**
+ 2. En **Inicio de sesión y seguridad,** seleccione Agregar o sincronizar usuarios con su cuenta **microsoft**.
 
- 3. En la página Sincronizar usuarios del directorio de la **organización,** elija **Introducción.**
+ 3. En la **página Agregar o sincronizar usuarios con su cuenta de Microsoft,** elija **Introducción.**
 
  4. En el primer paso, ejecute la herramienta IdFix para preparar la sincronización de directorios.
 
@@ -63,9 +63,9 @@ Para sincronizar los usuarios, grupos y contactos de Active Directory local en A
 
 Consulte [Configurar la sincronización de directorios Microsoft 365](../../enterprise/set-up-directory-synchronization.md) para obtener más información.
 
-Al configurar las opciones de Azure AD Conectar, se recomienda habilitar la sincronización de  **contraseñas,** el inicio de sesión único sin problemas y la característica de escritura de contraseña, que también se admite en Microsoft 365 para empresas.
+Al configurar las opciones de Azure AD Conectar, se recomienda habilitar la sincronización de contraseñas, el inicio de sesión único sin problemas y la característica de escritura escritura por contraseña, que también se admite en Microsoft 365 para empresas. 
 
 > [!NOTE]
-> Hay algunos pasos adicionales para la reescribición de contraseñas más allá de la casilla en Azure AD Conectar. Para obtener más información, vea [How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 
+> Hay algunos pasos adicionales para la reescribición de contraseñas más allá de la casilla de verificación en Azure AD Conectar. Para obtener más información, vea [How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 
 
-Si también quieres administrar dispositivos Windows 10 unidos a un dominio, consulta Habilitar dispositivos de Windows 10 unidos [a](manage-windows-devices.md) un dominio para que los administre Microsoft 365 Empresa Premium para configurar una combinación híbrida de Azure AD.
+Si también quieres administrar dispositivos de Windows 10 unidos a un dominio, consulta Habilitar dispositivos de [Windows 10](manage-windows-devices.md) unidos a un dominio para que Microsoft 365 Empresa Premium para configurar una combinación Azure AD dominio.

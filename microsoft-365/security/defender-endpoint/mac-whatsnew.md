@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 650b2a91d5ba85e2c614a40941e01d7cdd7daf51
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 8fc3bf1ae2d133e6d91d9ecb205930276f1d00a8
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041131"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202190"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -32,6 +32,19 @@ ms.locfileid: "62041131"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> A partir de finales de enero de 2022, se hará referencia a Microsoft Defender para endpoint (anteriormente conocido como ATP de Microsoft Defender) como "Microsoft Defender" entre usuarios finales que se enfrentan a experiencias MDE en macOS. 
+> 
+> Este cambio está disponible actualmente en los canales de actualización Beta (anteriormente denominado Insider Fast) y Preview (anteriormente denominado Insider Slow). La versión mínima del producto que incluye este cambio es 101.54.24.
+> 
+> Los usuarios finales observarán los siguientes cambios: 
+> - La ruta de instalación de la aplicación se ha cambiado de `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` a .
+> - Dentro de la experiencia del usuario, las repeticiones de "ATP de Microsoft Defender" se han reemplazado por "Microsoft Defender"
+> 
+> Este cambio no afecta a la herramienta `mdatp` de línea de comandos.
+>
+> **Acción necesaria:** si su empresa tiene configuraciones personalizadas que dependen del nombre del producto o de la ruta de instalación de la aplicación, estas configuraciones deben actualizarse con los nuevos valores enumerados anteriormente.
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
 

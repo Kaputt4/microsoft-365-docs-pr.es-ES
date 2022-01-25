@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implemente las capacidades de Microsoft Information Protection (MIP) para ayudarle a proteger la información confidencial dondequiera que viva o viaje.
-ms.openlocfilehash: bba0c41fd9018a6952d69a20fcc046a8b65c1e5b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 2fccdafa662bfdf8390a53ac535c571f52f673de
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/24/2022
-ms.locfileid: "62170992"
+ms.locfileid: "62187334"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
@@ -83,4 +83,4 @@ Para ayudar a evitar el uso compartido accidental de información confidencial, 
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Los requisitos de licencia para MIP dependen de los escenarios y características que use, en lugar del establecimiento de requisitos de licencia para cada funcionalidad que se muestra en esta página. Para comprender los requisitos de licencia y las opciones de MIP, consulte la sección [Information Protection: Etiquetado de confidencialidad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling) y descargue el [documento PDF relacionado](https://go.microsoft.com/fwlink/?linkid=2139145)para conocer los requisitos de licencia a nivel de características de la documentación de licencias de Microsoft 365.
+Los requisitos de licencia para MIP dependen de los escenarios y características que use, en lugar del establecimiento de requisitos de licencia para cada funcionalidad que se muestra en esta página. Para comprender los requisitos de licencia y las opciones de MIP, consulte las secciones **Information Protection** de la [Guía de seguridad y cumplimiento de Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) y las [descargas de PDF](https://go.microsoft.com/fwlink/?linkid=2139145) relacionados para los requisitos de licencia de nivel de característica.

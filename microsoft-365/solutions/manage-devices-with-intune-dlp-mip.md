@@ -21,12 +21,12 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Implemente DLP para punto de conexión trabajando con el equipo de gobernanza y protección de la información para crear directivas DLP para su organización.
-ms.openlocfilehash: 747a8ca3cd8301b83bfb98401989e21946248981
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: c38171d790ffd376c7886da0547345cf7e74e36c
+ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049292"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62202082"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Paso 7. Implementar la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
 
@@ -35,7 +35,7 @@ Si su organización ya ha puesto el tiempo en comprender los datos, desarrollar 
 
 La prevención de pérdida de datos de Microsoft Endpoint (DLP de punto de conexión) se aplica actualmente a:
 - Windows 10, Windows 11
-- MacOS
+- macOS
 
 El equipo de gobierno y protección de la información crea directivas DLP. Cada directiva DLP define qué elementos de un conjunto de datos debe buscar, como etiquetas o tipos de información confidencial, y cómo proteger estos datos. 
 
