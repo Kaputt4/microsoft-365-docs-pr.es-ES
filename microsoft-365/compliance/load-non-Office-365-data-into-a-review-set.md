@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo importar datos no Microsoft 365 a un conjunto de revisión para su análisis en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9de9c4044b9c8ba4af5112475e51e517d0c73946
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 39f91846e42bb2403c2b1faf7fd98ff3e7759182
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175148"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187430"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Cargar datos que no son de Microsoft 365 en un conjunto de revisión
 
@@ -62,9 +62,11 @@ El uso de la característica de carga no Microsoft 365 descrita en este artícul
 
 2. Haga **clic en** Conjuntos de revisión y, a continuación, seleccione el conjunto de revisión en el que se cargarán los Microsoft 365 no seleccionados.  Si no tiene un conjunto de revisión, puede crear uno. 
  
-3. En el conjunto de revisión, haga clic en **Administrar conjunto de revisión** y, después, haga clic en **Ver cargas** en el mosaico **Datos que no son de Microsoft 365**.
+3. Para abrir el conjunto de revisión, haga clic en él o selecciónelo y haga clic **en Abrir conjunto de revisión.**
 
-4. Haga clic **Cargar archivos** para iniciar el asistente para importar datos.
+4. En el conjunto de revisión, haga clic  en **Administrar** conjunto de revisión (la flecha abajo justo después de la opción Acciones) y, a continuación, haga clic en la opción No **Office 365 datos.**
+
+5. Haga clic **Cargar archivos** para iniciar el asistente para importar datos.
 
    ![Upload archivos.](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 

@@ -18,16 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1e584a252f93acfa6429c4f67c89c814c27ce4c8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c1d55718f93efd9b1053e7ab106c397e0c1d409b
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283010"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187418"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
 Antes de empezar con el cumplimiento [de](communication-compliance.md) las comunicaciones en su organización, hay importantes actividades de planeación y consideraciones que deben revisar los equipos de administración de tecnología de la información y cumplimiento. El conocimiento exhaustivo y la planeación de la implementación en las siguientes áreas ayudarán a garantizar que la implementación y el uso de las características de cumplimiento de comunicaciones se adapten a los procedimientos recomendados para la solución.
+
+> [!IMPORTANT]
+> Actualmente, el cumplimiento de la comunicación está disponible en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias de servicio de Azure. Para comprobar que el cumplimiento de las comunicaciones es compatible con su organización, consulte [Disponibilidad de dependencia de Azure por país o región.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transición desde supervisión en Office 365
 

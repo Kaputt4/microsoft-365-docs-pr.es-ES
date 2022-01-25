@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo prepararse para aprovisionar usuarios para Microsoft 365 mediante la sincronización de directorios y las ventajas a largo plazo de usar este método.
-ms.openlocfilehash: 4bd244edfa11df315f83e78c97ec7fe63b5c2d9d
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: ef0a7dd0925d1d2c8c6ffb2c161f9271194f6fc8
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60216891"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187226"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepararse para la sincronización de directorios de Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Las ventajas de la sincronización de directorios y identidad híbrida de la organización incluyen:
 
@@ -43,9 +43,9 @@ Las ventajas de la sincronización de directorios y identidad híbrida de la org
 - Habilitar opcionalmente un escenario de inicio de sesión único
 - Automatizar los cambios de cuenta en Microsoft 365
 
-Para obtener más información acerca de las ventajas de usar la sincronización de directorios, vea identidad híbrida con [Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) e identidad híbrida [para Microsoft 365](plan-for-directory-synchronization.md).
+Para obtener más información acerca de las ventajas de usar la sincronización de directorios, vea identidad híbrida con Azure Active Directory [(Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) e identidad híbrida [para Microsoft 365](plan-for-directory-synchronization.md).
 
-Sin embargo, la sincronización de directorios requiere planeación y preparación para garantizar que los Servicios de dominio de Active Directory (AD DS) se sincronicen con el inquilino de Azure AD de su suscripción Microsoft 365 con un mínimo de errores.
+Sin embargo, la sincronización de directorios requiere planeación y preparación para garantizar que los Servicios de dominio de Active Directory (AD DS) se sincronicen con el inquilino Azure AD de la suscripción Microsoft 365 con un mínimo de errores.
 
 Siga estos pasos para obtener los mejores resultados.
 
@@ -54,7 +54,7 @@ Siga estos pasos para obtener los mejores resultados.
 
 ## <a name="1-directory-cleanup-tasks"></a>1. Tareas de limpieza de directorios
 
-Antes de sincronizar su AD DS con el inquilino de Azure AD, debe limpiar su AD DS.
+Antes de sincronizar tu AD DS con tu Azure AD inquilino, debes limpiar tu AD DS.
 
 > [!IMPORTANT]
 > Si no realizas la limpieza de AD DS antes de sincronizar, puede provocar un impacto negativo significativo en el proceso de implementación. Puede tardar días o incluso semanas en pasar por el ciclo de sincronización de directorios, identificar errores y volver a sincronizar.
@@ -65,7 +65,7 @@ En AD DS, complete las siguientes tareas de limpieza para cada cuenta de usuario
 
 2. Quite los valores duplicados del **atributo proxyAddresses.**
 
-3. Si es posible, asegúrese de que el atributo **userPrincipalName** es válido y único en el objeto **de usuario del** usuario. Para obtener la mejor experiencia de sincronización, asegúrese de que el UPN de AD DS coincide con el UPN de Azure AD. Si un usuario no tiene un valor para el atributo **userPrincipalName,** el objeto **user** debe contener un valor válido y único para el atributo **sAMAccountName.** Quite los valores duplicados del **atributo userPrincipalName.**
+3. Si es posible, asegúrese de que el atributo **userPrincipalName** es válido y único en el objeto **de usuario del** usuario. Para obtener la mejor experiencia de sincronización, asegúrese de que el UPN de AD DS coincide con Azure AD UPN. Si un usuario no tiene un valor para el atributo **userPrincipalName,** el objeto **user** debe contener un valor válido y único para el atributo **sAMAccountName.** Quite los valores duplicados del **atributo userPrincipalName.**
 
 4. Para un uso óptimo de la lista global de direcciones (GAL), asegúrese de que la información de los siguientes atributos de la cuenta de usuario de AD DS sea correcta:
 
@@ -126,6 +126,7 @@ Los atributos que necesita preparar se enumeran aquí:
   - El valor del atributo no debe contener un espacio.
   - El valor del atributo debe ser único en el directorio.
   - Caracteres no válidos: \< \> ( ) ; , [ ] "
+  - Las letras con marcas diacríticos, como umlauts, acentos y tildes, son caracteres no válidos.
 
     Tenga en cuenta que los caracteres no válidos se aplican a los caracteres siguientes al delimitador de tipos y ,, de forma que SMTP:User@contso.com, pero SMTP:user:M@contoso.com no lo es.
 
@@ -191,6 +192,6 @@ Si ya ha configurado la sincronización de directorios, es posible que el UPN de
 
 Vea también [How to prepare a non-routable domain (such as .local domain) for directory synchronization](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
 Si ha realizado los pasos 1 a 5 anteriores, vea [Configurar la sincronización de directorios](set-up-directory-synchronization.md).

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro Administración de Microsoft 365 red
-ms.openlocfilehash: 63a0975b1391c2734d7933fe64094be868a34526
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: ce0878037a3741ad440d0bddeefcca86b7b62f74
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327657"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187442"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro Administración de Microsoft 365 red
 
@@ -41,7 +41,7 @@ Cuando navegue por primera vez a la página de rendimiento de la red, tendrá qu
 
 Es posible que se le pida que se una a la versión preliminar pública de esta característica en nombre de su organización. La aceptación suele ocurrir inmediatamente, después de lo cual vería la página de conectividad de red.
 
-Para obtener acceso a la página de conectividad de red, debe ser administrador de la organización en Microsoft 365. El rol administrativo Lector de informes tendrá acceso de lectura a esta información. Para configurar ubicaciones y otros elementos de conectividad de red, un administrador debe formar parte de un rol de administrador de servidor, como el rol de administrador de soporte técnico del servicio.
+Para obtener acceso a la página de conectividad de red, debe ser administrador de la organización en Microsoft 365. El rol administrativo Lector de informes tendrá acceso de lectura a esta información. Para configurar ubicaciones y otros elementos de conectividad de red, un administrador debe tener el rol Administrador de soporte técnico de servicio.
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Requisitos previos para que aparezcan las evaluaciones de conectividad de red
 

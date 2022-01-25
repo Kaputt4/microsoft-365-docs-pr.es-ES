@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante el ensamblado de contenido en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 3613b65a7505d736897e51fcc37714d3203a2b03
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 9f8a02a845afa93282158051eb746e0cb9a0171d
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083568"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187286"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Crear documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
 
@@ -152,6 +152,7 @@ Puede usar una *plantilla moderna* publicada para crear rápidamente documentos 
 > [!NOTE]
 > - Actualmente, solo Microsoft Word documentos (.docx extensión) se admiten para crear una plantilla. Antes de cargar el documento, asegúrese de que el documento de Word no tiene habilitado realizar un seguimiento de **los** cambios ni de los comentarios. Si el documento contiene marcadores de posición de texto para imágenes, asegúrese de que no están ajustados por texto.
 >- La plantilla y el documento están asociados a una biblioteca de documentos. Para usar la plantilla en otra biblioteca de documentos, deberá volver a crear la plantilla en esa biblioteca de documentos.
+>- El documento cargado que se usa para crear la plantilla moderna se guardará como una copia independiente y se colocará en el directorio /forms de la biblioteca de documentos. El archivo original del disco no se verá afectado.
 >- Solo puede crear marcadores de posición para texto. Actualmente, no se admiten imágenes, arte inteligente, tablas y listas de viñetas.
 >- Una vez que se crea un documento a partir de una plantilla, no se asocia a la plantilla.
 

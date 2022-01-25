@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8e402bf2b2135e180094187bcabac905a70e2bde
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f1911dcfa697d620e8d5d2109cc0d21e9638e5b5
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074383"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187250"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Obtenga información sobre la administración de riesgos internos en Microsoft 365
 
@@ -36,6 +36,9 @@ Vea los vídeos siguientes para obtener información sobre cómo la administraci
 
 **Flujo de trabajo de administración de riesgos de Insider:**
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+> [!IMPORTANT]
+> La administración de riesgos de Insider está disponible actualmente en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias de servicio de Azure. Para comprobar que la administración de riesgos de insider es compatible con su organización, consulte [Disponibilidad de dependencia de Azure por país o región.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 ## <a name="modern-risk-pain-points"></a>Puntos de dolor de riesgo modernos
 
@@ -131,7 +134,7 @@ Si se selecciona un caso en el panel de casos, se abre el caso para su investiga
 
 Además, el nuevo registro de [auditoría (versión preliminar)](insider-risk-management-audit-log.md) permite mantenerse informado de las acciones realizadas en las características de administración de riesgos internas. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos insider.
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez que se investigan los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas en riesgos de la organización. Si los usuarios infringen accidentalmente o inadvertidamente las condiciones de la directiva, se puede enviar un aviso simple al usuario desde plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o pueden dirigir al usuario a cursos de actualización o instrucciones para ayudar a evitar comportamientos de riesgo futuros. Para más información, consulte [plantillas de notificación de administración de riesgos internos](insider-risk-management-notices.md).
 

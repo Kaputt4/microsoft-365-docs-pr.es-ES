@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7c2cebc256299bd529b8dfcc23787fcc0a16d85d
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: f18ff452d7f268aa652af097db19f53f2002d8ae
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172024"
+ms.locfileid: "62187214"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Paso 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
 
@@ -71,7 +71,7 @@ Dado que Microsoft 365 Defender componentes y tecnologías abarcan varias funcio
 
 Para integrar las capacidades de Microsoft 365 Defender, deberá refinar los servicios SOC. Para obtener más información sobre las capacidades de Microsoft 365 Defender, vea los siguientes artículos:
 
-- [¿Qué es Microsoft Defender para punto de conexión?](/defender-endpoint/microsoft-defender-endpoint)
+- [¿Qué es Microsoft Defender para punto de conexión?](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [¿Qué es Microsoft Defender for Identity?](/defender-for-identity/what-is)
 - [¿Qué es Defender para Office 365?](/office-365-security/defender-for-office-365)
 - [¿Qué es Microsoft Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)

@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ab331c9e93799290348d60ede4e814f3f12675fc
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 24a910fee1b6a8b502e42f17f002b286e4fbf337
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034598"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187310"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -51,6 +51,9 @@ Para obtener una introducción rápida al cumplimiento de las comunicaciones, ve
 Consulte cómo [TD Securities usa](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) el cumplimiento de comunicaciones para satisfacer sus obligaciones reglamentarias y satisfacer sus necesidades de seguridad y estabilidad.
 
 Para mantenerse al día con las últimas actualizaciones de cumplimiento de comunicaciones, seleccione **Novedades** en el cumplimiento [de la comunicación](https://compliance.microsoft.com/) para su organización.
+
+> [!IMPORTANT]
+> Actualmente, el cumplimiento de la comunicación está disponible en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias de servicio de Azure. Para comprobar que el cumplimiento de las comunicaciones es compatible con su organización, consulte [Disponibilidad de dependencia de Azure por país o región.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 ## <a name="scenarios-for-communication-compliance"></a>Situaciones para el Cumplimiento de comunicaciones
 
@@ -159,7 +162,7 @@ En este paso, se profundiza en los problemas detectados como coincidencias con l
 - **Revisión del historial de** actividades de usuario: vea el historial de actividades de mensajes de usuario y acciones de corrección, como notificaciones anteriores y escalaciones, para ver las coincidencias de directivas.
 - **Filtros:** use filtros como el remitente, el destinatario, la fecha y el sujeto para limitar rápidamente las alertas de mensajes que desea revisar.
 
-### <a name="remediate"></a>Corregir
+### <a name="remediate"></a>Corrección
 
 El siguiente paso es corregir los problemas de cumplimiento de comunicaciones que ha investigado con las siguientes opciones:
 

@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9ea95245d983f14d57b15884fa8d1edbc54d5cb6
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 824a31780a377fc91d834db6d37068a425428ec8
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283202"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187238"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -90,6 +90,9 @@ Elija entre estas opciones de grupo de roles de solución al configurar y admini
 En función de cómo planee implementar directivas de administración de riesgos internas, debe tener las Microsoft 365 de licencias adecuadas y comprender y planear algunos requisitos previos de la solución.
 
 **Licencias:** La administración de riesgos de Insider está disponible como parte de una amplia selección de Microsoft 365 de licencias. Para obtener más información, consulte [el artículo Introducción a la administración de riesgos de insider.](insider-risk-management-configure.md#subscriptions-and-licensing)
+
+> [!IMPORTANT]
+> La administración de riesgos de Insider está disponible actualmente en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias de servicio de Azure. Para comprobar que la administración de riesgos de insider es compatible con su organización, consulte [Disponibilidad de dependencia de Azure por país o región.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de insider, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) a su suscripción existente o registrarse para una prueba de Microsoft 365 Enterprise E5. [](https://www.microsoft.com/microsoft-365/enterprise)
 

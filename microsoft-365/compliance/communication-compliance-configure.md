@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: afefa32227750a70c70d2cb8b10ebfda1a2ae08e
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 0825f73ed001aa67129c9024955f58df021fa22e
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034670"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187262"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -46,9 +46,12 @@ Antes de empezar con el cumplimiento de las comunicaciones, debe confirmar su [M
 Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener asignada una de las licencias anteriores.
 
 > [!IMPORTANT]
-> Cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas o adicionales características de cumplimiento.
+> Actualmente, el cumplimiento de la comunicación está disponible en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias de servicio de Azure. Para comprobar que el cumplimiento de las comunicaciones es compatible con su organización, consulte [Disponibilidad de dependencia de Azure por país o región.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar el cumplimiento de las comunicaciones, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) [a](https://www.microsoft.com/microsoft-365/enterprise) la suscripción existente o registrarse para una prueba de Office 365 Enterprise E5.
+
+> [!NOTE]
+> Cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas o adicionales características de cumplimiento.
 
 ## <a name="recommended-actions-preview"></a>Acciones recomendadas (versión preliminar)
 
@@ -304,7 +307,7 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta está correctamente resuelta.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Próximos pasos
 
 Después de completar estos pasos para crear la primera directiva de cumplimiento de comunicaciones, empezará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 5 de este artículo.
 

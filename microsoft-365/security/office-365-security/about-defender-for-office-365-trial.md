@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: c70a3dfa873f42b110642dfc77cc877e52c6b8ca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3d8d873a3e89b0ae3302eca0ab7d7c471fd94449
+ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937705"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62187322"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
 
@@ -47,7 +47,7 @@ Una prueba de Microsoft Defender para Office 365 es una forma sencilla de probar
 |Característica|Descripción|
 |---|---|
 |[Configuración exclusiva en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenga protección de suplantación de usuario, protección de suplantación de dominio, inteligencia de buzones de correo y umbrales avanzados de suplantación de identidad.|
-|[Archivos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos de correo electrónico y otros archivos en un entorno de detonación controlada para detectar malware nuevo y evasivo.|
+|[Datos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos de correo electrónico y otros archivos en un entorno de detonación controlada para detectar malware nuevo y evasivo.|
 |[Vínculos seguros](safe-links.md)|Realice comprobaciones de tiempo de clic para asegurarse de que las direcciones URL que podrían haber pasado la inspección inicial no se hayan armado.|
 |[Rastreadores de amenazas](threat-trackers.md)<sup>\*</sup>|Use widgets informativos y vistas para identificar problemas de ciberseguridad que puedan afectar a su organización.|
 |[Explorador de amenazas](threat-explorer.md)<sup>\*</sup>|Busca con información casi en tiempo real sobre amenazas en tu correo Office 365 correo electrónico.|
@@ -62,7 +62,7 @@ Una prueba de Microsoft Defender para Office 365 es una forma sencilla de probar
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurar un defender para la Office 365 prueba
 
-Una prueba permite a las organizaciones configurar y configurar fácilmente defender para Office 365 funcionalidades. Durante la instalación, las directivas que son exclusivas de Defender para Office 365 (específicamente, datos adjuntos de [Caja fuerte](safe-attachments.md)para mensajes de correo electrónico, vínculos [de Caja fuerte](safe-links.md)para mensajes de correo electrónico y Microsoft Teams y protección de suplantación en directivas contra correo no [deseado)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)se aplican con la plantilla Estándar para directivas de seguridad preestablecidas [ ](preset-security-policies.md).
+Una prueba permite a las organizaciones configurar y configurar fácilmente defender para Office 365 funcionalidades. Durante la instalación, las directivas que son exclusivas de Defender para Office 365 (específicamente, datos adjuntos de [Caja fuerte](safe-attachments.md)para mensajes de correo electrónico, vínculos [de Caja fuerte](safe-links.md)para mensajes de correo electrónico y Microsoft Teams y protección de suplantación en directivas [contra suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)de identidad ) se aplican con la plantilla Estándar para la seguridad preestablecida [ directivas](preset-security-policies.md).
 
 De forma predeterminada, estas directivas están en el ámbito de todos los usuarios de la organización, pero durante o después de la configuración de la prueba, puede cambiar la asignación de directiva a usuarios específicos.
 
@@ -111,7 +111,7 @@ La versión de prueba de Defender para Office 365 se está implementando gradual
 
 Para obtener más información, vea [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="q-how-do-i-extend-the-trial"></a>P: ¿Cómo se amplía la versión de prueba?
 
