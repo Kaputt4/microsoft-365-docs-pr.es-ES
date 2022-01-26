@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08d3f0604516da2c31ca3a1cb6a1a3f2e2ed9dc9
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 8e97edc10b92b1061a8122a1b9cd9ab5ef44b01f
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035057"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213942"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -87,6 +87,38 @@ Use este procedimiento para crear un nuevo tipo de información confidencial y d
 
 13. En la **clasificación de datos**, verá todos los tipos de información confidencial. Elija **Actualizar** y luego encuentre el tipo de información confidencial que ha creado con la herramienta de búsqueda o explorando.
 
+### <a name="copy-and-modify-a-sensitive-information-type"></a>Copiar y modificar un tipo de información confidencial existente
+
+Use este procedimiento para crear un nuevo tipo de información confidencial que se base en un tipo de información confidencial existente. 
+
+1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial que desee copiar.
+
+2. En el menú flotante, elija **Copiar**.
+
+3. En la lista de tipos de información confidencial, seleccione **Actualizar** y examine o busque la copia que acaba de hacer. Se admite la búsqueda de cadenas parciales, por lo que puede buscar `copy` y la búsqueda le devolverá todos los tipos de información confidencial con la cadena `copy` en el nombre. 
+
+4. Rellene los valores de **Nombre** y **Descripción** y elija **Siguiente**.
+
+5. Elija su copia del tipo de información confidencial y seleccione **Editar**. 
+
+6. Asigne al tipo de información confidencial un **Nombre** y **Descripción** nuevos.
+
+7. Puede elegir editar o quitar los patrones existentes y agregar otros nuevos. Elija el valor predeterminado del Nivel de confianza para el nuevo patrón. Los valores son **Confianza baja**, **Confianza media** y **Confianza alta**.
+
+8. Elegir y definir el **Elemento principal**. El elemento principal puede ser una **Expresión regular**, una **lista de palabras clave**, un **diccionario de palabras clave** o una de las **funciones preconfiguradas**. Consulte [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md).
+
+9. Rellene un valor para **Proximidad de caracteres**.
+
+10. (Opcional) Si tiene **Elementos de apoyo** o [**Controles adicionales**](#more-information-on-additional-checks), agruégelos. Si es necesario, puede agrupar los **Elementos de apoyo**.
+
+11. Seleccione **Crear**.
+
+12. Elija **Siguiente**.
+
+13. Elija el **nivel de confianza recomendado** de este tipo de información confidencial.
+
+14. Revise la configuración y elija **Enviar**.
+
 ## <a name="test-a-sensitive-information-type"></a>Cómo probar un tipo de información confidencial personalizado
 
 Puede probar cualquier tipo de información confidencial en la lista. Le recomendamos que pruebe todos los tipos de información confidencial que cree antes de usarlos en una directiva.
@@ -125,7 +157,7 @@ El límite de recuento de instancias SIT se aplica cuando los SIT se usan en est
 - Gobierno de la información
 - Cumplimiento de la comunicación
 - Records Management
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Administración de privacidad
 
 Para que un elemento analizado cumpla los criterios de regla, el número de instancias únicas de un SIT en cualquier elemento único debe estar entre los valores mínimo y máximo. Esto se denomina recuento **de instancias**.
@@ -156,38 +188,6 @@ Por ejemplo, si desea que la regla desencadene una coincidencia cuando se encuen
 
 2. En el menú desplegable que se abre, elija **Eliminar**.
 
-## <a name="copy-and-modify-a-sensitive-information-type"></a>Copiar y modificar un tipo de información confidencial existente
-
-Use este procedimiento para crear un nuevo tipo de información confidencial que se base en un tipo de información confidencial existente. 
-
-1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial que desee copiar.
-
-2. En el menú flotante, elija **Copiar**.
-
-3. En la lista de tipos de información confidencial, seleccione **Actualizar** y examine o busque la copia que acaba de hacer. Se admite la búsqueda de cadenas parciales, por lo que puede buscar `copy` y la búsqueda le devolverá todos los tipos de información confidencial con la cadena `copy` en el nombre. 
-
-4. Rellene los valores de **Nombre** y **Descripción** y elija **Siguiente**.
-
-5. Elija su copia del tipo de información confidencial y seleccione **Editar**. 
-
-6. Asigne al tipo de información confidencial un **Nombre** y **Descripción** nuevos.
-
-7. Puede elegir editar o quitar los patrones existentes y agregar otros nuevos. Elija el valor predeterminado del Nivel de confianza para el nuevo patrón. Los valores son **Confianza baja**, **Confianza media** y **Confianza alta**.
-
-8. Elegir y definir el **Elemento principal**. El elemento principal puede ser una **Expresión regular**, una **lista de palabras clave**, un **diccionario de palabras clave** o una de las **funciones preconfiguradas**. Consulte [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md).
-
-9. Rellene un valor para **Proximidad de caracteres**.
-
-10. (Opcional) Si tiene **Elementos de apoyo** o [**Controles adicionales**](#more-information-on-additional-checks), agruégelos. Si es necesario, puede agrupar los **Elementos de apoyo**.
-
-11. Seleccione **Crear**.
-
-12. Elija **Siguiente**.
-
-13. Elija el **nivel de confianza recomendado** de este tipo de información confidencial.
-
-14. Revise la configuración y elija **Enviar**.
-
 > [!NOTE]
 > Estos SIT no se pueden copiar:
 > - Número de licencia de conducir de Canadá
@@ -202,7 +202,7 @@ Use este procedimiento para crear un nuevo tipo de información confidencial que
 
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## <a name="more-information-on-regular-expression-validators"></a>Más información sobre validadores de expresiones regulares
 

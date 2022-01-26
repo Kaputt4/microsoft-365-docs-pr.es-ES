@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 015375b1405d878019e87afbc11de4cd67d241f0
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: f171bd8ce62e8e3d3b35c8dbab6740ad62b172fd
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202184"
+ms.locfileid: "62214206"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Prepare su cuenta de Microsoft Defender para punto de conexión
 
@@ -105,7 +105,7 @@ Microsoft recomienda usar [Privileged Identity Management](/azure/active-directo
 
 Defender for Endpoint admite dos formas de administrar permisos:
 
-- **Administración de permisos básicos:** establezca los permisos en acceso completo o de solo lectura. En el caso de los usuarios de administración de permisos básicos con el rol Administrador global o Administrador de seguridad en Azure Active Directory acceso completo, mientras que el rol lector de seguridad tiene acceso de solo lectura.
+- **Administración de permisos básicos:** establezca los permisos en acceso completo o de solo lectura. Los usuarios con roles de administrador global o administrador de seguridad Azure Active Directory acceso completo. El rol Lector de seguridad tiene acceso de solo lectura y no concede acceso a ver el inventario de máquinas o dispositivos.
 
 - Control de acceso basado en roles **(RBAC):** establezca permisos granulares definiendo roles, asignando Azure AD grupos de usuarios a los roles y otorgando a los grupos de usuarios acceso a grupos de dispositivos. Para obtener más información. vea [Manage portal access using role-based access control](rbac.md).
 

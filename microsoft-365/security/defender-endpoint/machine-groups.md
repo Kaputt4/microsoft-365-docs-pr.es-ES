@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ad66a651406706d0e2730f9913839540418bb02b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 951e49ddb7cb9ed0154fa70f66d54944a8aae066
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170650"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214146"
 ---
 # <a name="create-and-manage-device-groups"></a>Crear y administrar grupos de dispositivos
 
@@ -28,7 +28,7 @@ ms.locfileid: "61170650"
 **Se aplica a:**
 - Azure Active Directory
 - Office 365
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -56,7 +56,7 @@ Como parte del proceso de creación de un grupo de dispositivos, podrás:
 > [!NOTE]
 > Un grupo de dispositivos es accesible para todos los usuarios si no asigna ningún grupo Azure AD a él.
 
-## <a name="create-a-device-group"></a>Cree un grupo de dispositivos
+## <a name="create-a-device-group"></a>Crear un grupo de dispositivos
 
 1. En el panel de navegación, **seleccione Configuración** permisos de extremos Grupos de \>  \>  \> **dispositivos**.
 
@@ -65,7 +65,7 @@ Como parte del proceso de creación de un grupo de dispositivos, podrás:
 3. Escriba el nombre del grupo y la configuración de automatización y especifique la regla de coincidencia que determina qué dispositivos pertenecen al grupo. Vea [Cómo se inicia la investigación automatizada](automated-investigations.md#how-the-automated-investigation-starts).
 
     > [!TIP]
-    > Si desea agrupar dispositivos por unidad organizativa, puede configurar la clave del Registro para la afiliación de grupo. Para obtener más información sobre el etiquetado de dispositivos, consulta [Crear y administrar etiquetas de dispositivo.](machine-tags.md)
+    > Si quieres usar el etiquetado para agrupar dispositivos, consulta [Crear y administrar etiquetas de dispositivo.](machine-tags.md)
 
 4. Obtenga una vista previa de varios dispositivos que coincidirán con esta regla. Si está satisfecho con la regla, haga clic en la **pestaña Acceso de** usuario.
 

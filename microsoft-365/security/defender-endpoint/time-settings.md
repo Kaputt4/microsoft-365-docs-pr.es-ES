@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8a3f98af5251a5666a42c1f39539d557322e71e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4353bbfc0ce11c4a767ca599ecb23a1ab4f77a56
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165647"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214032"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de zona horaria
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
@@ -42,9 +42,7 @@ Las investigaciones ciberforensicas suelen basarse en marcas de tiempo para unir
 
 Microsoft Defender para endpoint puede mostrar la hora universal coordinada (UTC) o la hora local.
 
-La configuración actual de la zona horaria se muestra en el menú Microsoft Defender para endpoint. Puede cambiar la zona horaria mostrada en el **menú Zona** horaria.
-
-![Icono de configuración de zona horaria2.](images/atp-time-zone-menu.png).
+La configuración actual de zona horaria se muestra en la configuración de Microsoft Defender. Puede cambiar la zona horaria mostrada en el menú **Zona** horaria en **Configuración > Centro de seguridad**.
 
 ### <a name="utc-time-zone"></a>Zona horaria UTC
 
@@ -66,9 +64,9 @@ La zona horaria de Microsoft Defender para extremo se establece de forma predete
 
 Para establecer la zona horaria:
 
-1. Haga clic en **el icono Configuración** de zona horaria del menú Zona ![ horaria3. ](images/atp-time-zone.png) .
-2. Seleccione el **indicador UTC de zona** horaria.
-3. Seleccione **Zona horaria UTC** o la zona horaria local, por ejemplo -7:00.
+1. Haga clic **en Configuración** menú en el icono Microsoft 365 Defender configuración de zona horaria del [Portal](https://security.microsoft.com/) ![ de contenido3. ](images/atp-time-zone.png) .
+2. Seleccione **Centro de seguridad**.
+3. Seleccione **Zona horaria** y establezca la zona horaria en UTC o en la zona horaria local.
 
 ### <a name="regional-settings"></a>Configuración regional
 

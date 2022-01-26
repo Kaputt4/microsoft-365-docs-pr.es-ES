@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d29da74833bfd9b99f811bcc14de602b8e01d2c6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 61eae362d9f4e5e2777b5f917ac95d7c838e350c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300435"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214140"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -41,7 +41,7 @@ El servicio Defender for Endpoint se actualiza constantemente para incluir nueva
 Obtén información sobre las nuevas características en la versión preliminar de Defender para endpoint y sé uno de los primeros en probar las próximas características al activar la experiencia de vista previa.
 
 > [!TIP]
-> Reciba una notificación cuando se actualice esta página copiando y pegando la siguiente dirección URL en el lector de fuentes: `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> Reciba una notificación cuando se actualice esta página copiando y pegando la siguiente dirección URL en el lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md).
 

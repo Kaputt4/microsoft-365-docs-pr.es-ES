@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ca7beef297ba73f752a301859521544fd726c11c
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: ce81edf38eed82deec6e112070b7137fca21dc03
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171023"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218902"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -44,6 +44,8 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+También puede obtener actualizaciones de productos y notificaciones importantes a través del centro [de mensajes](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 ## <a name="december-2021"></a>Diciembre de 2021
 

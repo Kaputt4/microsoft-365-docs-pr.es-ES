@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eea9aca5e1c6ac791581e6fab93c768a06b0dc98
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 28ab23e46c951cd0b8bcf357f2420c0ea0804abb
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156525"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214026"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "62156525"
 En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Linux.
 
 > [!CAUTION]
-> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint en Linux lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de Defender para endpoint en Linux EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo](linux-preferences.md#enable--disable-passive-mode).
+> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint en Linux lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de Defender para endpoint en Linux EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Cómo instalar Microsoft Defender para Endpoint en Linux
 
@@ -91,51 +91,35 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
     > [!NOTE]
     > Las distribuciones y las versiones que no se enumeran explícitamente no son compatibles (incluso si se derivan de las distribuciones admitidas oficialmente).
 
+- Lista de versiones de kernel compatibles
+  - Red Hat Enterprise Linux 6 y CentOS 6:
+    - Para 6.7: 2.6.32-573.*
+    - Para 6.8: 2.6.32-642.*
+    - Para 6.9: 2.6.32-696.*
+    - Para la 6.10: 2.6.32.754.2.1.el6.x86_64 a 2.6.32-754.41.2:
+    
+        |||||
+        |--|--|--|--|
+        |2.6.32-754.2.1.el6.x86_64|2.6.32-754.17.1.el6.x86_64|2.6.32-754.29.1.el6.x86_64|2.6.32-754.3.5.el6.x86_64|
+        |2.6.32-754.18.2.el6.x86_64|2.6.32-754.29.2.el6.x86_64|2.6.32-754.6.3.el6.x86_64|2.6.32-754.22.1.el6.x86_64|
+        |2.6.32-754.30.2.el6.x86_64|2.6.32-754.9.1.el6.x86_64|2.6.32-754.23.1.el6.x86_64|2.6.32-754.33.1.el6.x86_64|
+        |2.6.32-754.10.1.el6.x86_64|2.6.32-754.24.2.el6.x86_64|2.6.32-754.35.1.el6.x86_64|2.6.32-754.11.1.el6.x86_64|
+        |2.6.32-754.24.3.el6.x86_64|2.6.32-754.39.1.el6.x86_64|2.6.32-754.12.1.el6.x86_64|2.6.32-754.25.1.el6.x86_64|
+        |2.6.32-754.41.2.el6.x86_64|2.6.32-754.14.2.el6.x86_64|2.6.32-754.27.1.el6.x86_64|2.6.32-754.15.3.el6.x86_64|
+        |2.6.32-754.28.1.el6.x86_64|
 
-    Para Red Hat Enterprise Linux 6 y CentOS 6, la lista de versiones de kernel compatibles son:
-       - Para 6.7: 2.6.32-573.* 
-       - Para 6.8: 2.6.32-642.* 
-       - Para 6.9: 2.6.32-696.* 
-       - Para la 6.10: 2.6.32.754.2.1.el6.x86_64 a 2.6.32-754.41.2:
+    > [!NOTE]
+    > Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección solo se proporcionan para soporte técnico de actualización.
 
- > [!NOTE]
- > Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección solo se proporcionan para soporte técnico de actualización.
+  - Para el resto de las distribuciones admitidas, la versión mínima del kernel necesaria es 3.10.0-327
 
-    Lista de versiones:
+- Mecanismo del proveedor de eventos
+  - Red Hat Enterprise Linux 6 y CentOS 6: `Talpa` solución basada en módulos kernel
+  - Para el resto de las distribuciones admitidas: `Fanotify`
+    - La `fanotify` opción kernel debe estar habilitada
 
-    - 2.6.32-754.2.1.el6.x86_64 
-    - 2.6.32-754.17.1.el6.x86_64
-    - 2.6.32-754.29.1.el6.x86_64
-    - 2.6.32-754.3.5.el6.x86_64 
-    - 2.6.32-754.18.2.el6.x86_64
-    - 2.6.32-754.29.2.el6.x86_64
-    - 2.6.32-754.6.3.el6.x86_64 
-    - 2.6.32-754.22.1.el6.x86_64
-    - 2.6.32-754.30.2.el6.x86_64
-    - 2.6.32-754.9.1.el6.x86_64 
-    - 2.6.32-754.23.1.el6.x86_64
-    - 2.6.32-754.33.1.el6.x86_64
-    - 2.6.32-754.10.1.el6.x86_64
-    - 2.6.32-754.24.2.el6.x86_64
-    - 2.6.32-754.35.1.el6.x86_64
-    - 2.6.32-754.11.1.el6.x86_64
-    - 2.6.32-754.24.3.el6.x86_64
-    - 2.6.32-754.39.1.el6.x86_64
-    - 2.6.32-754.12.1.el6.x86_64
-    - 2.6.32-754.25.1.el6.x86_64
-    - 2.6.32-754.41.2.el6.x86_64
-    - 2.6.32-754.14.2.el6.x86_64
-    - 2.6.32-754.27.1.el6.x86_64
-    - 2.6.32-754.15.3.el6.x86_64
-    - 2.6.32-754.28.1.el6.x86_64       
-
-
-- Versión mínima del kernel 3.10.0-327
-
-- La `fanotify` opción kernel debe estar habilitada
-
-  > [!CAUTION]
-  > No se admite la ejecución de Defender para Endpoint en Linux en paralelo con otras soluciones de seguridad `fanotify` basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
+      > [!CAUTION]
+      > No se admite la ejecución de Defender para Endpoint en Linux en paralelo con otras soluciones de seguridad `fanotify` basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
 
 - Espacio en disco: 1 GB
 

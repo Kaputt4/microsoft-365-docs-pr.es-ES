@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: dc8d03140d19c773e01f6571d69f7593e6e406e8
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: 7b98ebf38d0e2e5ab5ec086e75002d0d660cff4c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311847"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214086"
 ---
 # <a name="configure-device-discovery"></a>Configuración de la detección de dispositivo
 
@@ -38,7 +38,7 @@ ms.locfileid: "61311847"
 
 La detección se puede configurar para que esté en modo estándar o básico. Usa la opción estándar para buscar activamente dispositivos en tu red, lo que garantizará mejor la detección de puntos de conexión y proporcionará una clasificación de dispositivos más enriquecte.
 
-Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente, solo dispositivos Windows 10 y Windows 2019) o seleccionar un subconjunto o subconjunto de los dispositivos especificando sus etiquetas de dispositivo.
+Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puede habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente, Windows 10 o posterior y solo dispositivos de Windows Server 2019 o posteriores) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo.
 
 ## <a name="set-up-device-discovery"></a>Configurar la detección de dispositivos
 
@@ -122,7 +122,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general de la detección de dispositivo](device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

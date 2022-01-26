@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0adf9b74398cafb7bd326dbc9183588feb30ee13
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: a3fc1a0ce2f7d02ad8ed6804b99621f78fb859d3
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283670"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214230"
 ---
 # <a name="submit-or-update-indicator-api"></a>Enviar o actualizar API de indicadores
 
@@ -70,9 +70,9 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 Nombre|Tipo|Descripción
 :---|:---|:---
 Authorization|String|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
@@ -81,14 +81,14 @@ Parámetro|Tipo|Descripción
 indicatorValue|Cadena|Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 indicatorType|Enum|Tipo del indicador. Los valores posibles son: "FileSha1", "FileMd5", "CertificateThumbprint", "FileSha256", "IpAddress", "DomainName" y "Url". **Required**
 acción|Enum|La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock" y "Allowed". **Necesario**. El parámetro "GenerateAlert" debe establecerse en "TRUE" al crear una acción con "Audit".
-aplicación|Cadena|La aplicación asociada al indicador. Este campo solo funciona para nuevos indicadores. No actualizará el valor de un indicador existente. **Optional**
-title|String|Título de alerta del indicador. **Required**
+aplicación|String|La aplicación asociada al indicador. Este campo solo funciona para nuevos indicadores. No actualizará el valor de un indicador existente. **Optional**
+title|Cadena|Título de alerta del indicador. **Required**
 description|Cadena|Descripción del indicador. **Required**
 expirationTime|DateTimeOffset|La hora de expiración del indicador. **Optional**
-severity|Enum|Gravedad del indicador. los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
+severity|Enum|Gravedad del indicador. Los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
 recommendedActions|Cadena|Acciones recomendadas de alerta del indicador TI. **Optional**
 rbacGroupNames|String|Lista separada por comas de nombres de grupo RBAC a los que se aplicaría el indicador. **Optional**
-
+generateAlert|Enum|**True** si se requiere la generación de alertas, **False** si este indicador no debe generar una alerta.
 ## <a name="response"></a>Respuesta
 
 - Si se realiza correctamente, este método devuelve 200: código de respuesta aceptar y la entidad [Indicator](ti-indicator.md) creada o actualizada en el cuerpo de la respuesta.

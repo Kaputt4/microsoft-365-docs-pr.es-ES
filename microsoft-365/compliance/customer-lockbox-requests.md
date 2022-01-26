@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a sus datos cuando se encuentra con un problema.
-ms.openlocfilehash: 304e3266319da9c8102deff2465dc146caf4fcaa
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 13642c0bf5e21fb3bf390367147efd0eb8dec615
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373301"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218950"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de seguridad del cliente en Office 365
-
-
 
 En este artículo se proporcionan instrucciones de implementación y configuración para la caja de seguridad del cliente. La Caja de seguridad del cliente admite solicitudes para acceder a datos en Exchange Online, SharePoint Online y OneDrive para la Empresa. Para recomendar la compatibilidad con otros servicios, envíe una solicitud en [Office 365 UserVoice](https://office365.uservoice.com/).
 
@@ -108,49 +106,82 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 ## <a name="auditing-customer-lockbox-requests"></a>Solicitudes de auditoría de caja de seguridad del cliente
 
-Los registros de auditoría que corresponden a las solicitudes de caja de seguridad del cliente se registran en el registro de auditoría. Puede obtener acceso a estos registros mediante la herramienta de búsqueda de [registro](search-the-audit-log-in-security-and-compliance.md) de auditoría en el Centro de & cumplimiento. Las acciones relacionadas con aceptar o denegar una solicitud de caja de seguridad del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
+Los registros de auditoría que corresponden a solicitudes de caja de seguridad del cliente se registran en el Microsoft 365 de auditoría. Puede obtener acceso a estos registros mediante la herramienta de búsqueda de [registro](search-the-audit-log-in-security-and-compliance.md) de auditoría en el Centro de cumplimiento de Microsoft 365. Las acciones relacionadas con aceptar o denegar una solicitud de caja de seguridad del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Buscar en el registro de auditoría la actividad relacionada con las solicitudes de caja de seguridad del cliente
 
-Para poder usar el registro de auditoría para realizar un seguimiento de las solicitudes de Caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría. Para obtener más información, [vea Search the audit log in the Security & Compliance Center](/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Una vez que haya completado la configuración, siga estos pasos para crear una consulta de búsqueda de registro de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
+Antes de usar el registro de auditoría para realizar un seguimiento de las solicitudes de caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría, incluida la asignación de permisos para buscar en el registro de auditoría. Para obtener más información, vea [Set up Basic Audit in Microsoft 365](set-up-basic-audit.md). Una vez completada la instalación, siga estos pasos para crear una consulta de búsqueda de registro de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
 
-1. Vaya a [Seguridad & cumplimiento](https://protection.office.com).
+1. Ve a <https://compliance.microsoft.com>.
   
-2. Inicie sesión con su cuenta profesional o educativa.
+2. Inicie sesión con una cuenta a la que se han asignado los permisos adecuados para buscar en el registro de auditoría.
 
-3. En el panel izquierdo del Centro de seguridad & cumplimiento, elija Buscar & **búsqueda de** registro de auditoría  >  **de investigación.**
+3. En el panel izquierdo del centro de cumplimiento, elija **Auditar**.
 
-    Se **muestra la página De búsqueda del registro** de auditoría.
+    Se **muestra** la pestaña Buscar **de** la página Auditoría.
 
     ![Página de búsqueda de registro de auditoría.](../media/auditlogsearch1.png)
   
 4. Configurar los siguientes criterios de búsqueda: 
 
-    1. **Actividades:** deje este campo en blanco para que la búsqueda devuelva los registros de auditoría de todas las actividades. Esto es necesario para devolver los registros de auditoría relacionados con las solicitudes de caja de seguridad del cliente y la actividad correspondiente realizada por los ingenieros de Microsoft.
+   1. **Fecha de inicio** y **fecha de finalización**. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período.  
 
-    1. **Fecha de inicio** y **fecha de** finalización: seleccione una fecha y un intervalo de tiempo para mostrar los eventos que se produjeron en ese período.
+   2. **Actividades**. Deje este campo en blanco para que la búsqueda devuelva los registros de auditoría de todas las actividades. Esto es necesario para devolver los registros de auditoría relacionados con las solicitudes de caja de seguridad del cliente y la actividad correspondiente realizada por los ingenieros de Microsoft.
 
-    1. **Usuarios:** deje este campo en blanco.
+   3. Usuarios Deje este campo en blanco.
 
-    1. **Archivo, carpeta o sitio:** deje este campo en blanco.
+   4. **Archivo, carpeta o sitio**. Deje este campo en blanco.
 
 5. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
 
-    Los resultados de la búsqueda se cargan y, después de unos instantes, se muestran en **Resultados** en la página De búsqueda **del registro de** auditoría.
+    Los resultados de la búsqueda se muestran después de unos instantes. Se agregarán más resultados de búsqueda a la página hasta que se complete la búsqueda.
 
-6. Haga **clic en Filtrar resultados** en la página de resultados de búsqueda y realice una de las siguientes acciones:
+6. Haga clic en el encabezado de la **columna Actividad** para ordenar los resultados alfabéticamente en función de los valores de la **columna** Actividad.
 
-   - Para mostrar registros de auditoría relacionados con un aprobador de la organización que aprueba  o deniega una solicitud de caja de seguridad del cliente: en el cuadro de la columna Actividad, escriba **Set-AccessToCustomerDataRequest**.
+7. Desplácese hacia abajo y busque registros de auditoría con una actividad **de Set-AccessToCustomerDataRequest**. Los registros con esta actividad están relacionados con un aprobador de la organización que aprueba o deniega una solicitud de caja de seguridad del cliente.
 
-   - Para mostrar registros de auditoría relacionados con un ingeniero de Microsoft que realiza  acciones en respuesta a una solicitud de caja de seguridad de cliente aprobada: en el cuadro de la columna Usuario, escriba **Operador de Microsoft**. La **columna** Actividad muestra la acción realizada por el ingeniero.
+8. Como alternativa, haga clic en el encabezado de la **columna Usuario** para ordenar los resultados alfabéticamente mediante los valores de la **columna** Usuario. Busque el valor de **Operador de Microsoft**, que indica las actividades realizadas por un ingeniero de Microsoft en respuesta a una solicitud de caja de seguridad de cliente aprobada. La **columna** Actividad muestra la acción realizada por el ingeniero.
 
       ![Filtrar en "Operador de Microsoft" para mostrar registros de auditoría](../media/CustomerLockbox10.png)
 
-7. En la lista de resultados, haga clic en un registro de auditoría para mostrarlo.
+9. En la lista de resultados, haga clic en un registro de auditoría para mostrarlo.
 
-### <a name="audit-record-for-a-customer-lockbox-access-request"></a>Registro de auditoría de una solicitud de acceso de Caja de seguridad del cliente
+### <a name="export-the-audit-log-search-results"></a>Exportar los resultados de búsqueda del registro de auditoría
 
-Cuando una persona de la organización aprueba o deniega una solicitud de caja de seguridad de cliente, se registra un registro de auditoría en el registro de auditoría. Este registro contiene la siguiente información.
+También puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, abrir el archivo en Excel para usar las funciones de filtrado y ordenación para facilitar la búsqueda y visualización de registros de auditoría relacionados con una solicitud de acceso a la caja de seguridad del cliente.
+
+Para exportar registros de auditoría, siga los pasos anteriores para buscar en el registro de auditoría. Una vez completada la búsqueda, seleccione **Exportar > Descargar todos** los resultados en la parte superior de la página de resultados de búsqueda. Cuando se complete el proceso de exportación, puede descargar el archivo CSV en el equipo local. Para obtener instrucciones más detalladas, vea [Exportar, configurar y ver registros de registro de auditoría.](export-view-audit-log-records.md)
+
+Después de descargar el archivo, puede abrirlo en Excel y, a continuación, filtrar en la columna Operaciones para mostrar registros de auditoría para las actividades **Set-AccessToCustomerDataRequest.**  También puede filtrar en la columna **UserIds** (con el valor Operador de **Microsoft)** para mostrar los registros de auditoría de las actividades realizadas por los ingenieros de Microsoft.
+
+> [!NOTE]
+> Al ver registros de auditoría en el archivo CSV, se incluye información adicional en la **columna AuditData.** La información de esta columna se encuentra en un objeto JSON, que contiene varias propiedades configuradas como pares *property:value* separados por comas. Puede usar la característica de transformación JSON en el Editor de power query de Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en varias columnas para que cada propiedad tenga su propia columna. Esto facilita la interpretación de esta información. Para obtener instrucciones detalladas, vea [Format the exported audit log using the Power Query Editor](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+
+### <a name="use-powershell-to-search-and-export-audit-records"></a>Usar PowerShell para buscar y exportar registros de auditoría
+
+Una alternativa al uso de la herramienta de búsqueda de auditoría en el Centro de cumplimiento de Microsoft 365 es ejecutar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell. Una ventaja de usar PowerShell es que puede buscar específicamente actividades o actividades **set-accessToCustomerDataRequest** realizadas por ingenieros de Microsoft relacionadas con una solicitud de caja de seguridad del cliente.
+
+Después de [conectarse Exchange Online PowerShell,](/powershell/exchange/connect-to-exchange-online-powershell)ejecute uno de los siguientes comandos. Reemplace los marcadores de posición por un intervalo de fechas específico.
+
+#### <a name="search-for-set-accesstocustomerdatarequest-activities"></a>Búsqueda de Set-AccessToCustomerDataRequest actividades
+
+```powershell
+Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -Operations Set-AccessToCustomerDataRequest
+```
+
+#### <a name="search-for-activities-performed-by-microsoft-engineers"></a>Búsqueda de actividades realizadas por ingenieros de Microsoft
+
+```powershell
+Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -UserIds "Microsoft Operator"
+```
+
+Para obtener más información y ejemplos, vea [Use PowerShell to search and export audit log records](export-view-audit-log-records.md#use-powershell-to-search-and-export-audit-log-records).
+
+También hemos proporcionado un script de PowerShell que puede usar para buscar en el registro de auditoría y exportar los resultados a un archivo CSV. Para obtener más información, [vea Use a PowerShell script to search the audit log](audit-log-search-script.md).
+
+### <a name="audit-record-for-a-customer-lockbox-request"></a>Registro de auditoría de una solicitud de caja de seguridad de cliente
+
+Cuando una persona de la organización aprueba o deniega una solicitud de caja de seguridad del cliente, el registro de auditoría se registra en el registro de auditoría contiene la siguiente información.
 
 | Propiedad de registro de auditoría| Descripción|
 |:---------- |:----------|
@@ -160,12 +191,9 @@ Cuando una persona de la organización aprueba o deniega una solicitud de caja d
 | Actividad   | Set-AccessToCustomerDataRequest; esta es la actividad de auditoría que se registra cuando usted aprueba o deniega una solicitud de Caja de seguridad del cliente.                                |
 | Item       | Guid de la solicitud de caja de seguridad del cliente                             |
 
-La siguiente captura de pantalla muestra un ejemplo de un registro de registro de auditoría que corresponde a una solicitud de caja de seguridad de cliente aprobada. Si se denegó una solicitud de caja de seguridad del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
+En la siguiente captura de pantalla se muestra un ejemplo de un registro de auditoría que corresponde a una solicitud de caja de seguridad de cliente aprobada. Si se denegó una solicitud de caja de seguridad del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
 
 ![Registro de auditoría de una solicitud de caja de seguridad de cliente aprobada.](../media/CustomerLockbox9.png)
-
-> [!TIP]
-> Para mostrar información más detallada en un registro de auditoría, haga clic **en Más información**.
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Registro de auditoría de una acción realizada por un ingeniero de Microsoft
 
@@ -173,13 +201,13 @@ Las acciones que ha realizado un ingeniero de Microsoft después de aprobar una 
 
 | Propiedad de registro de auditoría| Descripción|
 |:---------- |:----------|
-| Fecha       | Fecha y hora en que se realizó la acción. Tenga en cuenta que la hora en la que se ha realizado esta acción será dentro de las 4 horas después de que se aprobara la solicitud de Caja de seguridad del cliente.              |
+| Fecha       | Fecha y hora en que se realizó la acción. El tiempo en que se realizó esta acción será dentro de las 4 horas siguientes a la aprobación de la solicitud de caja de seguridad del cliente.              |
 | Dirección IP | La dirección IP del ingeniero de Microsoft. |
-| Usuario       | Operador de Microsoft; este valor indica que este registro está relacionado con una solicitud de Caja de seguridad del cliente.                                  |
+| Usuario       | Operador de Microsoft; este valor indica que el registro está relacionado con una solicitud de caja de seguridad del cliente.                                  |
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
 | Item       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>¿Microsoft 365 a qué servicios se aplica la caja de seguridad del cliente?
 
@@ -187,7 +215,7 @@ Actualmente, la caja de seguridad del cliente es compatible Exchange Online, Sha
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>¿La caja de seguridad del cliente está disponible para todos los clientes?
 
-La caja de seguridad del cliente se incluye con las suscripciones Microsoft 365 o Office 365 E5 y se puede agregar a otros planes con una suscripción de complemento de protección y cumplimiento de la información o de cumplimiento avanzado. Vea Planes [y precios para](https://products.office.com/business/office-365-enterprise-e5-business-software) obtener más información.
+La caja de seguridad del cliente se incluye con las suscripciones Microsoft 365 o Office 365 E5 y se puede agregar a otros planes con una suscripción de complemento de protección y cumplimiento de la información o de cumplimiento avanzado. Vea [Planes y precios para](https://products.office.com/business/office-365-enterprise-e5-business-software) obtener más información.
 
 #### <a name="what-is-customer-content"></a>¿Qué es el contenido del cliente?
 
@@ -209,7 +237,7 @@ El contenido del cliente son los datos creados por los usuarios de Microsoft 365
 
 - Inferencias y todas las inferencias posteriores, si el contenido del cliente permanece
 
-Para obtener información adicional sobre el contenido del cliente en Office 365, vea [el Office 365 de confianza](https://products.office.com/business/office-365-trust-center-privacy/).
+Para obtener más información acerca del contenido del cliente en Office 365, vea [el Office 365 de confianza](https://products.office.com/business/office-365-trust-center-privacy/).
 
 #### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>Quién se notifica cuando hay una solicitud para obtener acceso a mi contenido.
 
@@ -263,7 +291,7 @@ Si un cliente rechaza una solicitud de caja de seguridad del cliente, no se prod
 
 #### <a name="how-do-i-set-up-alerts-whenever-a-request-has-been-approved"></a>¿Cómo puedo configurar alertas cada vez que se ha aprobado una solicitud?
 
-No hay ninguna opción integrada para alertar a los administradores. Sin embargo, los administradores pueden configurar alertas mediante [microsoft cloud App security](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
+No hay ninguna opción integrada para alertar a los administradores. Sin embargo, los administradores pueden configurar alertas [con Microsoft Defender para aplicaciones en la nube.](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies)
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>¿Protege la caja de seguridad del cliente contra las solicitudes de datos de los organismos de aplicación de la ley u otros terceros?
 
@@ -275,9 +303,9 @@ Consulte el [Centro de confianza](https://www.microsoft.com/trustcenter/default.
 
 Microsoft implementa amplias medidas de prevención a través de sistemas de control de acceso y medidas de detective para identificar y solucionar los intentos de eludir estos sistemas de control de acceso. Microsoft 365 funciona con los principios de privilegios mínimos y acceso justo a tiempo. Por lo tanto, ningún personal de Microsoft tiene permiso para acceder al contenido del cliente de forma continua. Si se concede permiso, es de una duración limitada. 
 
-Microsoft 365 un sistema de control de acceso denominado *Caja* de seguridad para procesar solicitudes de permisos que conceden la capacidad de realizar funciones operativas y administrativas dentro del servicio. Un operador debe solicitar acceso al contenido del cliente mediante La caja de seguridad, que luego requiere que una segunda persona tome medidas en la solicitud (por ejemplo, aprobarlo) antes de conceder el acceso. Esa segunda persona no puede ser el solicitante y debe estar designada para aprobar el acceso al contenido del cliente. Solo si la solicitud se aprueba, el operador obtiene acceso temporal al contenido del cliente. Una vez expirado el período de elevación, Lockbox revoca el acceso.
+Microsoft 365 un sistema de control de acceso denominado *Caja* de seguridad para procesar solicitudes de permisos que conceden la capacidad de realizar funciones operativas y administrativas dentro del servicio. Un operador debe solicitar acceso al contenido del cliente mediante Lockbox, que luego requiere que una segunda persona tome medidas en la solicitud (por ejemplo, aprobarlo) antes de conceder el acceso. Esa segunda persona no puede ser el solicitante y debe estar designada para aprobar el acceso al contenido del cliente. Solo si la solicitud se aprueba, el operador obtiene acceso temporal al contenido del cliente. Una vez expirado el período de elevación, Lockbox revoca el acceso.
 
-Consulte los Términos de [Servicios en línea](https://www.microsoft.com/licensing/product-licensing/products) para obtener más información sobre las prácticas de seguridad generales de Microsoft.
+Consulte los [Términos de Servicios en línea](https://www.microsoft.com/licensing/product-licensing/products) para obtener más información sobre las prácticas de seguridad generales de Microsoft.
 
 #### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>¿En qué circunstancias los ingenieros de Microsoft necesitan acceso a mi contenido?
 

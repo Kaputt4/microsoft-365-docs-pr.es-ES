@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 893ec2b7acfc9eddc75d803c297dd40f3c02a674
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: ea88381a82036af34f228725d1f8149895ad5c3f
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041116"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214122"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -38,7 +38,7 @@ ms.locfileid: "62041116"
 En este tema se describe cómo instalar, configurar, actualizar y usar Defender para Endpoint en Mac.
 
 > [!CAUTION]
-> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint en Mac lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de Defender para Endpoint en Mac EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo.](mac-preferences.md#enable--disable-passive-mode)
+> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint en Mac lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de Defender para Endpoint en Mac EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo.](mac-preferences.md#enforcement-level-for-antivirus-engine)
 
 ## <a name="whats-new-in-the-latest-release"></a>Novedades de la versión más reciente
 

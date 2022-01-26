@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8506534f1645659d051b240b77dcf96b4f9e4078
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: adcf044de78b1cecb6b7b9160a196ec102e8606c
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171706"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214158"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
@@ -29,8 +29,8 @@ ms.locfileid: "61171706"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!IMPORTANT]
 > Este artículo contiene instrucciones sobre cómo establecer las preferencias de Microsoft Defender para Endpoint en macOS en organizaciones empresariales. Para configurar Microsoft Defender para endpoint en macOS mediante la interfaz de línea de comandos, vea [Resources](mac-resources.md#configuring-from-the-command-line).
@@ -66,31 +66,19 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 |**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
 |||
 
-#### <a name="enable--disable-real-time-protection"></a>Habilitar o deshabilitar la protección en tiempo real
+#### <a name="enforcement-level-for-antivirus-engine"></a>Nivel de aplicación para el motor antivirus
 
-Especifique si se va a habilitar la protección en tiempo real, que examina los archivos a medida que se accede a ellos.
+Especifica la preferencia de cumplimiento del motor antivirus. Existen tres valores para establecer el nivel de cumplimiento:
 
-<br>
-
-****
-
-|Sección|Valor|
-|---|---|
-|**Dominio**|`com.microsoft.wdav`|
-|**Clave**|enableRealTimeProtection|
-|**Tipo de datos**|Booleano|
-|**Posibles valores**|true (valor predeterminado) <p> false|
-|||
-
-#### <a name="enable--disable-passive-mode"></a>Habilitar o deshabilitar el modo pasivo
-
-Especifique si el motor antivirus se ejecuta en modo pasivo. El modo pasivo tiene las siguientes implicaciones:
-
-- La protección en tiempo real está desactivada
-- El examen a petición está activado
-- La corrección automática de amenazas está desactivada
-- Las actualizaciones de inteligencia de seguridad están activadas
-- El icono del menú Estado está oculto
+- En tiempo real ( ): la protección en tiempo real (examinar archivos a medida que se accede `real_time` a ellos) está habilitada.
+- A petición ( `on_demand` ): los archivos se examinan solo a petición. En esto:
+  - La protección en tiempo real está desactivada.
+- Pasivo ( `passive` ): ejecuta el motor antivirus en modo pasivo. En esto:
+  - La protección en tiempo real está desactivada.
+  - El examen a petición está activado.
+  - La corrección automática de amenazas está desactivada.
+  - Las actualizaciones de inteligencia de seguridad están activadas.
+  - El icono del menú Estado está oculto.
 
 <br>
 
@@ -99,10 +87,10 @@ Especifique si el motor antivirus se ejecuta en modo pasivo. El modo pasivo tien
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
-|**Clave**|passiveMode|
-|**Tipo de datos**|Booleano|
-|**Posibles valores**|false (predeterminado) <p> true|
-|**Comments**|Disponible en Microsoft Defender para endpoint versión 100.67.60 o posterior.|
+|**Clave**|enforcementLevel|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|real_time (valor predeterminado) <p> on_demand <p> pasivo|
+|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.10.72 o posterior.|
 |||
 
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Ejecutar un examen después de actualizar las definiciones
@@ -248,7 +236,7 @@ Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracter
 
 ****
 
-|Carácter comodín|Description|Ejemplo|Coincidencias|No coincide|
+|Carácter comodín|Descripción|Ejemplo|Coincidencias|No coincide|
 |---|---|---|---|---|
 |\*|Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
 |?|Coincide con cualquier carácter|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
@@ -662,8 +650,8 @@ El siguiente perfil de configuración (o, en el caso de JAMF, una lista de propi
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>threatTypeSettings</key>
         <array>
             <dict>
@@ -741,10 +729,8 @@ El siguiente perfil de configuración (o, en el caso de JAMF, una lista de propi
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -789,10 +775,8 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
 <dict>
     <key>antivirusEngine</key>
     <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
-        <key>passiveMode</key>
-        <false/>
+        <key>enforcementLevel</key>
+        <string>real_time</string>
         <key>scanAfterDefinitionUpdate</key>
         <true/>
         <key>scanArchives</key>
@@ -904,6 +888,10 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
 ### <a name="intune-full-profile"></a>Perfil completo de Intune
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -945,10 +933,8 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
                 <true/>
                 <key>antivirusEngine</key>
                 <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
+                    <key>enforcementLevel</key>
+                    <string>real_time</string>
                     <key>scanAfterDefinitionUpdate</key>
                     <true/>
                     <key>scanArchives</key>
@@ -1055,6 +1041,8 @@ Las plantillas siguientes contienen entradas para todas las configuraciones desc
                 </dict>
             </dict>
         </array>
+    </dict>
+</plist>
 ```
 
 ## <a name="property-list-validation"></a>Validación de lista de propiedades
@@ -1101,6 +1089,6 @@ En la consola JAMF, abra **Perfiles** de configuración de equipos , vaya al per
 > [!CAUTION]
 > Debe escribir el nombre del perfil de configuración personalizado correcto; de lo contrario, Microsoft Defender no reconocerá estas preferencias para endpoint.
 
-## <a name="resources"></a>Recursos
+## <a name="resources"></a>Resources
 
 - [Referencia de los perfiles de configuración (documentación para desarrolladores de Apple)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)

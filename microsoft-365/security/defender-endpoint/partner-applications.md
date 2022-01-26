@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b98ffd747861d6aab757e3941d1a2ef4d6aeac2
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 430b087fc682eced9c20ef013b77ccc1d690187a
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301239"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214014"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones de partners en Microsoft Defender para endpoint
 
@@ -49,7 +49,7 @@ Microsoft Defender para endpoint se integra perfectamente con las soluciones de 
 
 ### <a name="security-information-and-analytics"></a>Información de seguridad y análisis
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de AttackIQ.](images/attackiq-logo.png)|[Plataforma AttackIQ](https://go.microsoft.com/fwlink/?linkid=2103502)|La plataforma AttackIQ valida que Defender for Endpoint se configura correctamente iniciando ataques continuos de forma segura en activos de producción
 ![Imagen del logotipo de Microsoft Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Transmitir alertas de Microsoft Defender para endpoint en Microsoft Sentinel
@@ -65,7 +65,7 @@ Logotipo|Nombre del partner|Description
 
 ### <a name="orchestration-and-automation"></a>Orquestación y automatización
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de CyberSponse CyOps.](images/cybersponse-logo.png)|[CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943)|CyOps se integra con Defender for Endpoint para automatizar los libros de reproducción de respuesta a incidentes de alta velocidad de los clientes
 ![Imagen del logotipo de Delta Risk ActiveEye.](images/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk, un proveedor líder de servicios de seguridad y SOC-as-a-Service, integra Defender for Endpoint con su plataforma SOAR nativa de la nube, ActiveEye.
@@ -77,7 +77,7 @@ Logotipo|Nombre del partner|Description
 
 ### <a name="threat-intelligence"></a>Inteligencia de amenazas
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de misp Malware Information Sharing Platform)..](images/misp-logo.png)|[MISP (Plataforma de uso compartido de información de malware)](https://go.microsoft.com/fwlink/?linkid=2127543)|Integrar indicadores de amenazas desde la plataforma de uso compartido de inteligencia de amenazas de código abierto en el entorno de Defender para endpoints
 ![Imagen del logotipo de Palo Alto Networks.](images/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enriquezca la protección de puntos de conexión extendiendo El autoenfoque y otras fuentes de amenazas a Defender for Endpoint con MineMeld
@@ -85,7 +85,7 @@ Logotipo|Nombre del partner|Description
 
 ### <a name="network-security"></a>Seguridad de red
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de Aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Administrador de directivas de ClearPass de Aruba](https://go.microsoft.com/fwlink/?linkid=2127544)|Asegúrese de que Defender for Endpoint está instalado y actualizado en cada extremo antes de permitir el acceso a la red
 ![Imagen del logotipo de Hexágono azul para red.](images/bluehexagon-logo.png)|[Hexágono azul para red](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon ha creado la primera plataforma de aprendizaje profundo en tiempo real de la industria para la protección contra amenazas de red
@@ -95,7 +95,7 @@ Logotipo|Nombre del partner|Description
 
 ### <a name="cross-platform"></a>Multiplataforma
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de Bitdefender.](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone es una plataforma de protección de puntos de conexión de próxima generación en capas que ofrece una protección completa contra todo el espectro de amenazas cibernéticas sofisticadas
 ![Imagen del logotipo de Better Mobile.](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|Solución MTD basada en IA para detener las amenazas móviles & phishing. Exploración privada de Internet para proteger la privacidad del usuario
@@ -106,7 +106,7 @@ Logotipo|Nombre del partner|Description
 
 ## <a name="other-integrations"></a>Otras integraciones
 
-Logotipo|Nombre del partner|Description
+Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de Cyren Web Filter.](images/cyren-logo.png)|[Filtro web de Cyren](https://go.microsoft.com/fwlink/?linkid=2108221)|Mejorar defender para el punto de conexión con filtrado web avanzado
 ![Imagen del logotipo de Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Proporciona prevención avanzada de amenazas con tecnología de defensa de destino móvil. Integra los datos forenses directamente en los paneles de WD Defender para la nube para ayudar a priorizar las alertas, determinar la puntuación de riesgo del dispositivo y visualizar la escala de tiempo completa de ataques, incluida la información de memoria interna
@@ -114,7 +114,7 @@ Logotipo|Nombre del partner|Description
 
 ## <a name="siem-integration"></a>Integración de SIEM
 
-Defender for Endpoint admite la integración de SIEM a través de varios métodos. Esto puede incluir una interfaz de sistema SIEM especializada con conectores de serie, una API de alerta genérica que habilita implementaciones personalizadas y una API de acción que habilita la administración del estado de alerta. Para obtener más información, vea [Enable SIEM integration](enable-siem-integration.md).
+Defender for Endpoint admite la integración de SIEM a través de varios métodos. Esto puede incluir una interfaz de sistema SIEM especializada con conectores de serie, una API de alerta genérica que habilita implementaciones personalizadas y una API de acción que habilita la administración del estado de alerta.
 
 ## <a name="ticketing-and-it-service-management"></a>Administración de vales y servicios de TI
 

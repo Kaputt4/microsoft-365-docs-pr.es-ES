@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 48628ce70c64e37306a346459c65fef855975778
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 36975b55d8f26ae7788495543ae42922ea404c66
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937345"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214002"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API
 
@@ -88,7 +88,7 @@ Para obtener más información, [vea Microsoft 365 Defender API de streaming](..
 
 ## <a name="siem-api"></a>SIEM API
 
-Al habilitar la integración de la información de seguridad y la administración de eventos (SIEM), permite extraer detecciones de Microsoft 365 Defender mediante la solución SIEM o mediante la conexión directa a la API rest de detecciones. Esto activa la sección detalles de acceso al conector SIEM con valores rellenados previamente y se crea una aplicación en el espacio empresarial Azure Active Directory (Azure AD). Para obtener más información, vea [Integración siem](enable-siem-integration.md).
+Al habilitar la integración de la información de seguridad y la administración de eventos (SIEM), permite extraer detecciones de Microsoft 365 Defender mediante la solución SIEM o mediante la conexión directa a la API rest de detecciones. Esto activa la sección detalles de acceso al conector SIEM con valores rellenados previamente y se crea una aplicación en el espacio empresarial Azure Active Directory (Azure AD). 
 
 ## <a name="related-topics"></a>Temas relacionados
 

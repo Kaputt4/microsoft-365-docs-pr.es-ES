@@ -42,6 +42,8 @@
   items:
     - name: Introducción a la página de cumplimiento de dispositivos
       href: m365-lighthouse-device-compliance-page-overview.md
+    - name: Comparar la configuración de directiva de cumplimiento de dispositivos
+      href: m365-lighthouse-compare-compliance-policies.md
     - name: Windows de la página 365 (equipos en la nube)
       href: m365-lighthouse-win365-page-overview.md
 - name: Administrar amenazas

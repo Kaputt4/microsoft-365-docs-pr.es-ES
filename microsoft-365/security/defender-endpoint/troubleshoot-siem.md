@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5c0f02834fe70c086ca5db7def6d9f2fed2c7543
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: b6ed0342183734d9b4feb1c20a6c4059b77e64d6
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301743"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62213996"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Solucionar problemas de integración de la herramienta SIEM
 
@@ -83,8 +83,5 @@ Si se produce un error al intentar habilitar la aplicación de conector SIEM, co
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Habilitar la integración de SIEM en Microsoft Defender para endpoint](enable-siem-integration.md)
-- [Configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Extraer detecciones a las herramientas SIEM](configure-siem.md)
-- [Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md)
-- [Extraer Microsoft Defender para detecciones de puntos de conexión mediante la API de REST](pull-alerts-using-rest-api.md)
+

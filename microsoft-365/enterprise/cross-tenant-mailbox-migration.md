@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 5bf8495a1acc13f74655133cdfe300b5149acb0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b11eef14b36bd7e7ece14cf2b55424b52a0422da
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936487"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218926"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -69,11 +69,11 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
 3. En la barra de navegación izquierda, seleccione Registros de aplicaciones.
 
-4. Seleccione Nuevo registro
+4. Seleccionar nuevo registro
 
    ![Nueva aplicación](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. En la página Registrar una aplicación, en Tipos de cuentas compatibles, seleccione cuentas en cualquier organización directamente (cualquier directorio Azure AD - Multitenant). A continuación, en URI de redireccionamiento (opcional), seleccione Web y escriba <https://office.com> . Por último, seleccione Registrar.
+5. En la página Registrar una aplicación, en Tipos de cuentas compatibles, seleccione Cuentas en cualquier directorio de la organización (Cualquier directorio Azure AD - Multitenant). A continuación, en URI de redireccionamiento (opcional), seleccione Web y escriba <https://office.com> . Por último, seleccione Registrar.
 
    ![Registro de aplicaciones](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -93,7 +93,7 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
 12. Ahora necesitamos agregar permisos para la migración de buzones, seleccione Agregar un permiso
 
-13. En las ventanas Solicitar permisos de API, seleccione API usuarios de mi organización y busque Office 365 Exchange Online, selecciónelo.
+13. En las ventanas Solicitar permisos de API, seleccione API que usa mi organización, busque Office 365 Exchange Online y selecciónelo.
 
     ![Seleccionar API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
@@ -360,7 +360,7 @@ El envío por lotes de migración también se admite desde el nuevo <a href="htt
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto en el origen como en el destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 

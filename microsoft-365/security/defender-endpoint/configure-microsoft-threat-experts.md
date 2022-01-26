@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 52d564f631c0129dea20608aac20e77141fb0be0
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f6e1bd4653318897ec82d49cd1dccfc0ab4105de
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943381"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218938"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 
@@ -122,7 +122,7 @@ Puede asociarse con Expertos en amenazas de Microsoft que se pueden usar directa
 4. Escriba la dirección de correo electrónico que desea usar para que se corresponda con Expertos en amenazas de Microsoft.
 
 > [!NOTE]
-> Si desea realizar un seguimiento del estado de los casos de expertos a petición a través del Centro de servicios de Microsoft, comunicarse con el Administrador técnico de cuentas.
+> Si desea realizar un seguimiento del estado de los casos de Expertos a petición a través del Centro de servicios de Microsoft, llegue a su Administrador de cuentas de éxito del cliente.
 
 Vea este vídeo para obtener una introducción rápida al Centro de servicios de Microsoft.
 

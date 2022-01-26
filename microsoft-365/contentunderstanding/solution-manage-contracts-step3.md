@@ -12,12 +12,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Obtenga información sobre cómo usar Power Automate para crear el flujo para procesar los contratos mediante una Microsoft 365 solución.
-ms.openlocfilehash: 205a61638f4dcca235e301111fe2028c3a74ed1c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d83fb6e5ca911cbafc6f064c615ab15ae0f570c7
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159597"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62219010"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Paso 3. Usar Power Automate para crear el flujo para procesar los contratos
 
@@ -160,7 +160,7 @@ Cuando se ha aprobado un contrato, se producen los siguientes aspectos:
     | Estado de aprobación  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['submitActionId']         |
     | Aprobado por     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responder'] ['displayName']        |
     | Fecha de aprobación     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responseTime']         |
-    | Comentario     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['data'] ['acComments']         |
+    | Comentario     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['data']? ['acComments']         |
     
     En el ejemplo siguiente se muestra cómo usar el cuadro de fórmula de Power Automate para escribir una expresión.
 
@@ -232,7 +232,7 @@ Cuando se ha aprobado un contrato, se producen los siguientes aspectos:
                         },
                         {
                             "title": "Approval comment",
-                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']}"
                         },
                         {
                             "title": " ",
@@ -328,7 +328,7 @@ El siguiente código es el JSON usado para este paso en el flujo Power Automate 
                         },
                         {
                             "title": "Comment",
-                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']}"
+                            "value": "@{body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['acComments']}"
                         },
                         {
                             "title": " ",

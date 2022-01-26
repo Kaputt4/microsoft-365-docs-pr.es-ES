@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Los administradores pueden obtener información sobre cómo administrar SharePoint y OneDrive en un entorno multige geográfico.
-ms.openlocfilehash: 347968820e297d9d88e9338af07a5eea1e72d676
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205850"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214198"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de Multi-Geo
 
@@ -33,6 +33,9 @@ El [SharePoint de administración tiene](https://admin.microsoft.com/sharepoint)
 ## <a name="audit-log-search"></a>Búsqueda de registros de auditoría
 
 En la página de búsqueda de registros de auditoría de Microsoft 365 podrá encontrar un [registro de auditoría](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado de todas las ubicaciones satélite. Puede ver todas las entradas de registro de auditoría entre ubicaciones geográficas, por ejemplo, las actividades de los usuarios de NAM y EUR se mostrarán en una vista de la organización y, después, puede aplicar filtros existentes para ver las actividades de un usuario específico.
+
+> [!NOTE]
+> Exchange eventos de auditoría de administración solo están disponibles para la ubicación predeterminada.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, Secure Store, Apps
 

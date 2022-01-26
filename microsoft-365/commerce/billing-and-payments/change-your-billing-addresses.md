@@ -20,13 +20,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Obtén información sobre cómo actualizar las direcciones de facturación o la dirección de correo electrónico usada para recibir notificaciones de facturación Microsoft 365 para empresas.
-ms.date: 04/07/2021
-ms.openlocfilehash: 839dab1c63394f76c41abb7dd784253bb636ba38
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.date: 01/24/2022
+ms.openlocfilehash: 888e371cb81475b385ecd9d5cd3a3898039a5e94
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371285"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214110"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
@@ -102,39 +102,6 @@ Para obtener más información sobre su factura o factura, vea [Ver la factura](
 
 4. En el **panel Editar dirección de uso del** servicio, actualice la dirección y, a continuación, seleccione **Guardar**.
 
-## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Cambiar la dirección de correo electrónico alternativa a la que se envían las notificaciones de facturación
-
-De forma predeterminada, las notificaciones de facturación de su organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de su organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
-  
-1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa como administrador global. [Descubra cómo iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
-
-2. Seleccione el **icono Usuario y,** a continuación, **seleccione Mi cuenta**.
-  
-3. Selecciona **Información personal**.
-  
-4. En el **cuadro Detalles de** contacto, seleccione **Editar**.
-
-5. En el **cuadro Correo electrónico** alternativo, escriba la dirección de correo electrónico alternativa que desee usar y, a continuación, seleccione **Guardar**.
-  
-## <a name="change-the-alternate-email-address-for-another-admin"></a>Cambiar la dirección de correo electrónico alternativa de otro administrador
-
-También puede cambiar la dirección de correo electrónico alternativa de otros administradores globales y de facturación de la organización.
-  
-::: moniker range="o365-worldwide"
-
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notificaciones de facturación</a>.
-
-::: moniker-end
-
-2. En la **página Notificaciones de facturación,** seleccione el administrador que desea cambiar.
-
-3. En el **panel Editar roles de** usuario, escriba la dirección de correo electrónico alternativa que desee usar y, a continuación, seleccione **Guardar**.
 
 ## <a name="related-content"></a>Contenido relacionado
 

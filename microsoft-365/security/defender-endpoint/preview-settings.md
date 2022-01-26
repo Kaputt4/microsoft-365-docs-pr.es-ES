@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1fcc8a036e646c978e18fbdbc5465c5c2da3a02d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 572794880015f53f6db0a3d449dd3d19987cae21
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167747"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214038"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Activar la experiencia de vista previa en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -48,5 +48,5 @@ Active la configuración de la experiencia de la versión preliminar para estar 
 - [Actualizar la configuración general en Microsoft Defender para endpoint](data-retention-settings.md)
 - [Activar características avanzadas en Microsoft Defender para endpoint](advanced-features.md)
 - [Configurar notificaciones de correo electrónico en Microsoft Defender para endpoint](configure-email-notifications.md)
-- [Habilitar la integración de SIEM en Microsoft Defender para endpoint](enable-siem-integration.md)
+
 

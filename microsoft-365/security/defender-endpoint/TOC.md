@@ -645,8 +645,6 @@
 
 #### [Integración de SIEM]()
 ##### [Integrar herramientas SIEM con Microsoft Defender para punto de conexión](configure-siem.md)
-##### [Habilitar la integración de SIEM en Microsoft Defender para punto de conexión](enable-siem-integration.md)
-##### [Detecciones de extracción con la API de REST de SIEM](pull-alerts-using-rest-api.md)
 ##### [Solucionar problemas de integración de la herramienta SIEM](troubleshoot-siem.md)
 
 #### [Socios y API]()

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 96fd95ca7f774d7aec5800f10e68fd23c10987cf
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f49274f6a166bd071ebec470ed26fd2ccd6763ec
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936082"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218998"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -88,7 +88,7 @@ La opción consultar **a un experto en** amenazas está disponible en varios lug
   ![Captura de pantalla de la opción de menú de acción de página de archivo MTE-EOD.](images/mte-eod-file.png)
 
 > [!NOTE]
-> Si desea realizar un seguimiento del estado de los casos de expertos a petición a través del Centro de servicios de Microsoft, comunicarse con el Administrador técnico de cuentas.
+> Si desea realizar un seguimiento del estado de los casos de Expertos a petición a través del Centro de servicios de Microsoft, llegue a su Administrador de cuentas de éxito del cliente.
 
 Vea este vídeo para obtener una introducción rápida al Centro de servicios de Microsoft.
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0bfd97739637365e7f04d4b824c0c9cde50a0418
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 210bfdec98ef4e603b5dc4e844688c9495d01a79
+ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074503"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62214170"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -64,30 +64,18 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 |**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
 |
 
-#### <a name="enable--disable-real-time-protection"></a>Habilitar o deshabilitar la protección en tiempo real
+#### <a name="enforcement-level-for-antivirus-engine"></a>Nivel de aplicación para el motor antivirus
 
-Determina si la protección en tiempo real (archivos de examen a medida que se accede a ellos) está habilitada.
+Especifica la preferencia de cumplimiento del motor antivirus. Existen tres valores para establecer el nivel de cumplimiento:
 
-<br>
-
-****
-
-|Descripción|Valor|
-|---|---|
-|**Clave**|enableRealTimeProtection|
-|**Tipo de datos**|Booleano|
-|**Posibles valores**|true (valor predeterminado) <p> false|
-|
-
-#### <a name="enable--disable-passive-mode"></a>Habilitar o deshabilitar el modo pasivo
-
-Determina si el motor antivirus se ejecuta en modo pasivo o no. En modo pasivo:
-
-- La protección en tiempo real está desactivada.
-- El examen a petición está activado.
-- La corrección automática de amenazas está desactivada.
-- Las actualizaciones de inteligencia de seguridad están activadas.
-- El icono del menú Estado está oculto.
+- En tiempo real ( ): la protección en tiempo real (examinar archivos a medida que se accede `real_time` a ellos) está habilitada.
+- A petición ( `on_demand` ): los archivos se examinan solo a petición. En esto:
+  - La protección en tiempo real está desactivada.
+- Pasivo ( `passive` ): ejecuta el motor antivirus en modo pasivo. En esto:
+  - La protección en tiempo real está desactivada.
+  - El examen a petición está activado.
+  - La corrección automática de amenazas está desactivada.
+  - Las actualizaciones de inteligencia de seguridad están activadas.
 
 <br>
 
@@ -95,10 +83,10 @@ Determina si el motor antivirus se ejecuta en modo pasivo o no. En modo pasivo:
 
 |Descripción|Valor|
 |---|---|
-|**Clave**|passiveMode|
-|**Tipo de datos**|Booleano|
-|**Posibles valores**|false (predeterminado) <p> true|
-|**Comments**|Disponible en Defender para endpoint versión 100.67.60 o posterior.|
+|**Clave**|enforcementLevel|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|real_time (valor predeterminado) <p> on_demand <p> pasivo|
+|**Comments**|Disponible en Defender para endpoint versión 101.10.72 o posterior.|
 |
 
 
@@ -504,7 +492,7 @@ El siguiente perfil de configuración será:
 {
    "antivirusEngine":{
       "behaviorMonitoring":"enabled",
-      "enableRealTimeProtection":true,
+      "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
             "key":"potentially_unwanted_application",
@@ -535,11 +523,10 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
 {
    "antivirusEngine":{
       "behaviorMonitoring":"enabled",
-      "enableRealTimeProtection":true,
+      "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
-      "passiveMode":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
