@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: eb29c2f30e19acb3733f5512f2cba7d666d3df21
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 03f99f6b883a46e0a7c87d6cbdb2abb8f5552a31
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554617"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241640"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Búsqueda proactiva de amenazas con búsqueda avanzada en Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "60554617"
 La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas que te permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar eventos de forma proactiva en su red para localizar entidades e indicadores de amenazas. El acceso flexible a los datos permite la búsqueda sin restricciones para amenazas conocidas y potenciales.
 <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
 
 Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para buscar y responder a una actividad de infracción sospechosa, máquinas mal configuradas y otras conclusiones.
 
@@ -48,12 +48,12 @@ Esta funcionalidad es similar a la búsqueda avanzada en [Microsoft Defender par
 
 - Microsoft Defender para punto de conexión
 - Microsoft Defender para Office 365
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
 Para usar la búsqueda avanzada, [active Microsoft 365 Defender](m365d-enable.md).
 
-Para obtener más información sobre la búsqueda avanzada en Microsoft Cloud App Security datos, vea el [vídeo](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
+Para obtener más información sobre la búsqueda avanzada en Datos de Microsoft Defender para aplicaciones en la nube, vea el [vídeo](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
 
 ## <a name="get-started-with-advanced-hunting"></a>Introducción a la búsqueda avanzada
 

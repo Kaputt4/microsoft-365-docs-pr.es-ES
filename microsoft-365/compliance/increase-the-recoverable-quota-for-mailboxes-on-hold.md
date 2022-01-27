@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta Elementos recuperables de un buzón en Microsoft 365.
-ms.openlocfilehash: fef1a5f77551006ed6df180185ad865c8b26b285
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 6465a86bfbf2d7f4eaf933786d15a4747b84dd5f
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335627"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241196"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
@@ -37,7 +37,7 @@ Para ayudar a reducir la posibilidad de superar este límite, la cuota de almace
 |Buzón de archivo, incluida la carpeta Elementos recuperables <sup>\*</sup> |1,5 TB |1,5 TB |
 
 > [!NOTE]
-> <sup>\*</sup>La cuota de almacenamiento inicial para el buzón de archivo es de 100 GB para los usuarios con una Exchange Online (plan 2) archivo. Sin embargo, cuando el archivado de expansión automática está activado para buzones en espera, la cuota de almacenamiento para el buzón de archivo y la carpeta Elementos recuperables aumenta a 110 GB. Se aprovisionará espacio de almacenamiento de archivo adicional (que incluye la carpeta Elementos recuperables) de hasta 1,5 TB cuando sea necesario. Para obtener más información sobre el archivado de expansión automática, vea [Overview of auto-expanding archiving](autoexpanding-archiving.md).
+> <sup>\*</sup>La cuota de almacenamiento inicial para el buzón de archivo es de 100 GB para los usuarios con una Exchange Online (plan 2) archivo. Sin embargo, cuando el archivado de expansión automática está activado para buzones en espera, la cuota de almacenamiento para el buzón de archivo y la carpeta Elementos recuperables aumenta a 110 GB. Se aprovisionará espacio de almacenamiento de archivo adicional (que incluye la carpeta Elementos recuperables) de hasta 1,5 TB cuando sea necesario. Para obtener más información sobre el archivado de expansión automática, vea [Learn about auto-expanding archiving](autoexpanding-archiving.md).
 
 Cuando la cuota de almacenamiento de la carpeta Elementos recuperables en el buzón principal de un buzón en suspensión está a punto de alcanzar su límite, puede hacer lo siguiente:
 

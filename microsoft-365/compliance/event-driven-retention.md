@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: a16daf7e360260ecbdc4e0a16e291cd3cd411838
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7e8d70d6ac535ee80e3ddb6ab719fe253836031
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158219"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241448"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
@@ -89,7 +89,7 @@ Flujo de trabajo general para la retención controlada por eventos:
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Paso 1: Crear una etiqueta cuyo período de retención se base en un evento
 
-Para crear y configurar la etiqueta de retención, consulte las instrucciones para [Crear etiquetas de retención](./create-apply-retention-labels.md#step-1-create-retention-labels). Pero específica de la retención basada en eventos, en la **Definir la configuración de retención** página del Asistente para crear etiquetas de retención, después de **Iniciar el período de retención basado en**, seleccione uno de los tipos de eventos predeterminados de la lista desplegable o cree el suyo propio seleccionando **Crear nuevo tipo de evento**:
+Para crear y configurar la etiqueta de retención, vea las instrucciones para [Crear etiquetas de retención](file-plan-manager.md#create-retention-labels) para la administración de registros o [Cómo crear etiquetas de retención para el gobierno de la información](create-retention-labels-information-governance.md). Sin embargo, específicamente para la retención basada en eventos, en la página **Definir configuración de retención** al crear la etiqueta de retención, después de **Iniciar el período de retención según**, seleccione uno de los tipos de eventos predeterminados de la lista desplegable o cree el suyo propio seleccionando **Crear nuevo tipo de evento**:
 
 ![Crear un nuevo tipo de evento para una etiqueta de retención.](../media/SPRetention6.png)
 

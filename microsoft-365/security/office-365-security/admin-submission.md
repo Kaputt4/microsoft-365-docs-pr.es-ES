@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d16839881f48b494d6d061d2a59c205b5e8d667c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 57dedee4f2502f5fd9db293fb4ea947cf50bee1d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935530"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241944"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft
 
@@ -52,7 +52,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
 
 - Para enviar mensajes y archivos a Microsoft, debe ser miembro de uno de los siguientes grupos de roles:
-  - **Administración de** la organización **o Lector de** seguridad en Microsoft 365 Defender [portal](permissions-microsoft-365-security-center.md).
+  - **Administrador de seguridad** **o lector de** seguridad en el Microsoft 365 Defender [portal](permissions-microsoft-365-security-center.md).
   
     Tenga en cuenta que la pertenencia a este grupo de roles es necesaria para ver los [envíos](#view-user-submissions-to-microsoft) de usuarios al buzón personalizado, tal como se describe más adelante en este artículo.
 
@@ -152,7 +152,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Se
    - Puede ordenar las entradas haciendo clic en un encabezado de columna disponible. Haga **clic en** Personalizar columnas para mostrar un máximo de siete columnas. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
      - **Nombre del envío**<sup>\*</sup>
      - **Remitente**<sup>\*</sup>
-     - **Recipient**
+     - **Destinatario**
      - **Fecha enviada**<sup>\*</sup>
      - **Motivo para enviar**<sup>\*</sup>
      - **Estado de reescaneo**<sup>\*</sup>
@@ -181,7 +181,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Se
      - **Identificador de envío:** valor GUID que se asigna a cada envío.
      - **Id. de mensaje de red**
      - **Sender**
-     - **Recipient**
+     - **Destinatario**
      - **Nombre**
      - **Enviado por**
 

@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: b11eef14b36bd7e7ece14cf2b55424b52a0422da
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: bff8af115f23db7fe152ed6ee06e62d128f2b9e4
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218926"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242004"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -145,6 +145,11 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
    > Necesitará el identificador de aplicación de la aplicación de migración de buzones que acaba de crear y la contraseña (el secreto) que configuró durante este proceso. También dependiendo de la Microsoft 365 de nube que use el punto de conexión puede ser diferente. Consulte la página [Microsoft 365 puntos](/microsoft-365/enterprise/microsoft-365-endpoints) de conexión y seleccione la instancia correcta para su inquilino y revise la dirección Exchange Online Optimizar requerida y reemplace según corresponda.
 
    ```powershell
+   
+   # Enable customization if tenant is dehydrated
+     $dehydrated=Get-OrganizationConfig | fl isdehydrated
+     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     
    $AppId = "[guid copied from the migrations app]"
 
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)

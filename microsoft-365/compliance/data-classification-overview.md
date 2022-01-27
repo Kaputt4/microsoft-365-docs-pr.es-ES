@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 3236c0edc40cf585b5e6c9e207746e066e95cb9c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ac51e20b786b2e21d3bb83bd7900e56fb8fac513
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942985"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241568"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -102,7 +102,7 @@ Para averiguar cuántos elementos hay en una categoría de clasificación determ
 > [!NOTE]
 > Si la tarjeta muestra el mensaje "No se encontraron datos con información confidencial" significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, consulte:
 >- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md)
->- [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md)
+>- [Introducción a la administración de registros](get-started-with-records-management.md)
 >- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Etiquetas principales de confidencialidad que se aplican al contenido
@@ -134,7 +134,7 @@ La tarjeta de etiquetas principales de retención aplicadas muestra el número d
 
 > [!NOTE]
 > Si esta tarjeta muestra el mensaje "No se detectó ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no se han aplicado etiquetas de retención a ningún contenido. Para empezar a usar las etiquetas de retención, vea:
->- [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md)
+>- [Introducción al gobierno de la información](get-started-with-information-governance.md)
 
 ## <a name="top-activities-detected"></a>Actividades principales detectadas
 

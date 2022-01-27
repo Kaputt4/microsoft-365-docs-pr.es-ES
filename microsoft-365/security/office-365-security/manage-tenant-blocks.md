@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e3af53e4cf6776627e7d8c25f41e241f37add8e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb4bdef35928a3a2672c6897676d3c90932bd7ec
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174320"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241788"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -52,6 +52,9 @@ ms.locfileid: "60174320"
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
+> [!NOTE]
+> Los correos electrónicos de estos remitentes se bloquearán como *correo no deseado.* 
+
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Crear entradas de dirección URL de bloque en la lista de inquilinos permitidos o bloqueados
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
@@ -70,6 +73,9 @@ ms.locfileid: "60174320"
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
+> [!NOTE]
+> Los correos electrónicos que contienen estas direcciones URL se bloquearán como *suplantación de identidad*. 
+
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>Crear entradas de archivo de bloque en la lista de inquilinos permitidos o bloqueados
 
 1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
@@ -87,6 +93,9 @@ ms.locfileid: "60174320"
    - **Nota opcional:** escriba texto descriptivo para las entradas.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
+
+> [!NOTE]
+> Los correos electrónicos que contienen estos archivos se bloquearán como *malware*. 
 
 ### <a name="create-spoofed-sender-block-entries"></a>Crear entradas de bloque de remitente suplantadas
 

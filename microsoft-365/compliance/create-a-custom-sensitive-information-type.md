@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e97edc10b92b1061a8122a1b9cd9ab5ef44b01f
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 5a25293740dd856d93726e5eaf27e3a92c18af56
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213942"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241932"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -294,6 +294,6 @@ Aquí tiene las definiciones y algunos ejemplos de las comprobaciones adicionale
 >     2. 機密性が高い, 机密的document y 机密的 document
 >
 > Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. A continuación le mostramos un ejemplo de regex a modo de referencia:
->    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9] {4} )
 >
 > Se recomienda utilizar una coincidencia de cadenas en lugar de una coincidencia de palabras en una lista de palabras clave.

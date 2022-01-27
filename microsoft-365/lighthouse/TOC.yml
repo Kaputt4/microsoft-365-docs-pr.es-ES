@@ -12,6 +12,8 @@
   items:
     - name: Configurar la seguridad del portal
       href: m365-lighthouse-configure-portal-security.md
+    - name: Revisar registros de auditoría
+      href: m365-lighthouse-review-audit-logs.md
 - name: Proteger clientes con líneas base
   items:
     - name: Introducción al uso de líneas base para implementar configuraciones de inquilino estándar

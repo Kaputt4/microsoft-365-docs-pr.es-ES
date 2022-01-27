@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0825f73ed001aa67129c9024955f58df021fa22e
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 43f6a5dff0a1908818714042012d0fef11ec9b51
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187262"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241752"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -61,7 +61,7 @@ Las acciones recomendadas pueden ayudar a su organización a empezar con las cap
 
 La actividad en los mensajes que [](/microsoft-365/compliance/communication-compliance-policies#classifiers) contienen contenido inadecuado se agrega mediante el tipo de clasificador de directivas existentes que usan la plantilla de contenido inadecuado o directivas personalizadas que usan clasificadores para contenido inadecuado. Investigue las alertas de estos mensajes en el panel de alertas de las directivas.
 
-La actividad relacionada [con tipos de información](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) confidencial se detecta en los mensajes que se tratan en las directivas existentes y en los mensajes que no están cubiertos por directivas existentes. Ideas se agregan para todos los tipos de información confidencial, incluidos los que su organización no ha definido anteriormente en una directiva de cumplimiento de comunicaciones existente. Use estas perspectivas para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes.
+La actividad que implica [tipos de información confidencial](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) se detecta en los mensajes que se tratan en las directivas existentes y en los mensajes que no están cubiertos por directivas existentes. Ideas se agregan para todos los tipos de información confidencial, incluidos los que su organización no ha definido previamente en una directiva de cumplimiento de comunicaciones existente. Use estas perspectivas para crear una nueva directiva de cumplimiento de comunicaciones o para actualizar las directivas existentes.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Paso 1 (obligatorio): Habilitar permisos para el cumplimiento de comunicaciones
 
@@ -95,7 +95,7 @@ Elija entre estas opciones de grupo de roles de solución al configurar y admini
 |:-----|:-----------------|
 | **Cumplimiento de comunicaciones** | Use este grupo de roles para administrar el cumplimiento de comunicaciones de su organización en un solo grupo. Al agregar todas las cuentas de usuario para administradores designados, analistas, investigadores y visores, puede configurar los permisos de cumplimiento de comunicaciones en un solo grupo. Este grupo de funciones contiene todos los roles de permisos de cumplimiento de comunicación. Esta configuración es la forma más sencilla de empezar rápidamente con el cumplimiento de las comunicaciones y es una buena opción para las organizaciones que no necesitan permisos independientes definidos para grupos independientes de usuarios. Los usuarios que creen directivas como administrador de cumplimiento de comunicaciones deben tener su buzón hospedado en Exchange Online.|
 | **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de las comunicaciones y posteriormente para segregar a los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar directivas de cumplimiento de comunicación, configuración global y asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver alertas de mensajes. Los usuarios que creen directivas como administrador de cumplimiento de comunicaciones deben tener su buzón hospedado en Exchange Online.|
-| **Analista de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver directivas en las que se les asigna como revisores, ver metadatos de mensajes (no contenido del mensaje), escalar a revisores adicionales o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
+| **Analista de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver directivas en las que están asignados como revisores, ver metadatos de mensajes (no contenido del mensaje), escalar a revisores adicionales o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
 | **Investigador de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver los metadatos y el contenido de los mensajes, escalar a revisores adicionales, escalar a un caso Advanced eDiscovery, enviar notificaciones a los usuarios y resolver la alerta. |
 | **Visor de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que administrarán informes de comunicación. Los usuarios asignados a este grupo de roles pueden tener acceso a todos los widgets de informes de la página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
 
@@ -167,7 +167,7 @@ Para administrar usuarios supervisados en organizaciones empresariales grandes, 
 1. Cree un grupo [de distribución](/powershell/module/exchange/new-distributiongroup) dedicado para la directiva de cumplimiento de comunicaciones global con las siguientes propiedades: asegúrese de que este grupo de distribución no se usa para otros fines u otros servicios Office 365 de distribución.
 
     - **MemberDepartRestriction = Closed**. Garantiza que los usuarios no puedan quitarse del grupo de distribución.
-    - **MemberJoinRestriction = Closed**. Garantiza que los usuarios no pueden agregarse al grupo de distribución.
+    - **MemberJoinRestriction = Closed**. Garantiza que los usuarios no puedan agregarse al grupo de distribución.
     - **ModerationEnabled = True**. Garantiza que todos los mensajes enviados a este grupo estén sujetos a aprobación y que el grupo no se esté utilizando para comunicarse fuera de la configuración de directiva de cumplimiento de comunicaciones.
 
     ```PowerShell
@@ -223,7 +223,7 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 
     Si elige una plantilla de directiva para crear una directiva, hará lo siguiente:
 
-    - Confirme o actualice el nombre de la directiva. Los nombres de directiva no se pueden cambiar una vez creada la directiva.
+    - Confirme o actualice el nombre de la directiva. Los nombres de las directivas no se pueden cambiar una vez se crea la directiva.
 
     - Elija los usuarios o grupos que desea supervisar, incluida la elección de usuarios o grupos que desea excluir. Al usar la plantilla de conflicto de intereses, seleccionará dos grupos o dos usuarios para supervisar las comunicaciones internas.
 
@@ -262,7 +262,24 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 
 6. La página **Se ha creado la directiva** muestra con instrucciones sobre cuándo se activará la directiva y qué comunicaciones se capturarán.
 
-## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>Paso 6 (opcional): crear plantillas de aviso y configurar el anonimización de usuarios
+## <a name="step-6-optional-update-compliance-boundaries-for-communication-compliance-policies"></a>Paso 6 (opcional): Actualizar los límites de cumplimiento para las directivas de cumplimiento de comunicaciones
+
+[Los límites](/microsoft-365/compliance/set-up-compliance-boundaries) de cumplimiento crean límites lógicos dentro de una organización que controlan las ubicaciones de contenido del usuario (como buzones, cuentas de OneDrive y sitios SharePoint) que los administradores de exhibición de documentos electrónicos pueden buscar.
+
+Si ha configurado límites de cumplimiento en su organización, debe actualizar los límites de cumplimiento para permitir que determinados usuarios puedan acceder a buzones que admitan directivas de cumplimiento de comunicaciones. Deberá permitir el acceso a los administradores de cumplimiento de comunicación y a los revisores de cumplimiento de comunicaciones para que la administración de directivas y las acciones de investigación y corrección funcionen correctamente.
+
+Para permitir el acceso a los administradores y revisores de cumplimiento de comunicaciones, ejecute los siguientes comandos de PowerShell. Solo necesita ejecutar estos comandos una vez, incluso si agrega nuevas directivas de cumplimiento de comunicaciones en el futuro:
+
+```powershell
+Import-Module ExchangeOnlineManagement
+$UserCredential = Get-Credential
+Connect-IPPSSession -Credential $UserCredential
+New-ComplianceSecurityFilter -FilterName "CC_mailbox" -Users <list your communication compliance admins and reviewers user alias or email address> -Filters "Mailbox_Name -like 'SupervisoryReview{*'" -Action All
+```
+
+Para obtener más información acerca de la sintaxis del cmdlet, [vea New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter).
+
+## <a name="step-7-optional-create-notice-templates-and-configure-user-anonymization"></a>Paso 7 (opcional): crear plantillas de aviso y configurar el anonimización de usuarios
 
 Si desea tener la opción de responder a una alerta de directiva mediante el envío de un aviso al usuario asociado, deberá crear al menos una plantilla de aviso en su organización. Los campos de plantilla de aviso son editables antes de que se envíen como parte del proceso de corrección de alertas y se recomienda crear una plantilla de aviso personalizada para cada directiva de cumplimiento de comunicaciones.
 
@@ -276,7 +293,7 @@ También puede habilitar la anonimización para los nombres de usuario mostrados
 
 4. Para habilitar la anonimización, seleccione **Mostrar versiones anónimas de nombres de usuario**.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 6. Vaya a la pestaña **Plantillas de** aviso y, a continuación, seleccione Crear plantilla **de aviso.**
 
@@ -290,7 +307,7 @@ También puede habilitar la anonimización para los nombres de usuario mostrados
 
 8. Seleccione **Guardar** para crear y guardar la plantilla de aviso.
 
-## <a name="step-7-optional-test-your-communication-compliance-policy"></a>Paso 7 (opcional): probar la directiva de cumplimiento de comunicaciones
+## <a name="step-8-optional-test-your-communication-compliance-policy"></a>Paso 8 (opcional): Probar la directiva de cumplimiento de comunicaciones
 
 Después de crear una directiva de cumplimiento de comunicaciones, es una buena idea probarla para asegurarse de que la directiva aplique correctamente las condiciones definidas. También puede probar las directivas de prevención de pérdida de datos [(DLP)](create-test-tune-dlp-policy.md) si las directivas de cumplimiento de comunicación incluyen tipos de información confidencial. Asegúrese de dar tiempo a las directivas para que se activen de modo que se capturan las comunicaciones que desea probar.
 
@@ -307,7 +324,7 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta está correctamente resuelta.
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de completar estos pasos para crear la primera directiva de cumplimiento de comunicaciones, empezará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 5 de este artículo.
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0912e496fdca1f716fa7476a4a74e46bbb26023f
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 7092b4ed30400fb559751d4d939801c1982407f8
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221345"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241980"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -36,11 +36,17 @@ ms.locfileid: "61221345"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
-La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](/azure/kusto/query/). Puede usar operadores y instrucciones kusto para crear consultas que busquen información en un esquema [especializado.](advanced-hunting-schema-tables.md) Para entender mejor estos conceptos, ejecute la primera consulta.
+La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](/azure/kusto/query/). Puede usar operadores y instrucciones kusto para crear consultas que busquen información en un esquema [especializado.](advanced-hunting-schema-tables.md) 
+
+Vea este breve vídeo para aprender algunos conceptos básicos prácticos del lenguaje de consulta kusto.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
+ 
+Para entender mejor estos conceptos, ejecute la primera consulta.
 
 ## <a name="try-your-first-query"></a>Pruebe la primera consulta
 
-En el Microsoft 365 Defender, vaya a **Hunting** para ejecutar la primera consulta. Utilice el ejemplo siguiente:
+En el Microsoft 365 Defender, vaya a **Hunting** para ejecutar la primera consulta. Utilice el ejemplo siguiente: 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download

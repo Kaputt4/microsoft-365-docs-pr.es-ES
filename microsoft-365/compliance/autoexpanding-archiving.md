@@ -1,9 +1,9 @@
 ---
-title: Información general sobre el archivado de ampliación automática
+title: Información sobre el archivado de expansión automática
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo adicional para buzones de Exchange Online.
-ms.openlocfilehash: d1833416ad4ff1d2dbb3241fde466e31bb6d8a74
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400052"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241340"
 ---
-# <a name="overview-of-auto-expanding-archiving"></a>Información general sobre el archivado de ampliación automática
+# <a name="learn-about-auto-expanding-archiving"></a>Información sobre el archivado de expansión automática
 
 En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento de buzones de correo adicional. Una vez habilitado el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzó la cuota de almacenamiento de 100 GB, las organizaciones tuvieron que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Ya no es así.
 
@@ -112,6 +112,8 @@ En esta sección se explica la funcionalidad entre el archivado de expansión au
 
 - servicio de importación de **:** Puede usar el servicio de importación de Office 365 para importar archivos PST en el archivo expandido automáticamente de un usuario. Puede importar hasta 100 GB de datos de archivos PST al buzón de archivo del usuario.
 
-## <a name="more-information"></a>Más información
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más detalles técnicos sobre el archivado de expansión automática, vea[ Microsoft 365: Preguntas más frecuentes sobre la expansión automática de archivos ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).
+
+Si quiere habilitar el archivado de expansión automática, vea [Habilitar el archivado de expansión automática](enable-autoexpanding-archiving.md).

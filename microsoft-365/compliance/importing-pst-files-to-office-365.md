@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la importación de archivos PST de su organización
+title: Obtenga información sobre la importación de archivos PST de su organización
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,14 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de cumplimiento de Microsoft 365 para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: 67488566b65648f20cf48b7ab767e95a8732da57
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b88cd9f6b12f382f8fdeb696af32c1fd95ad805d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873320"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241532"
 ---
-# <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
+# <a name="learn-about-importing-your-organizations-pst-files"></a>Obtenga información sobre la importación de archivos PST de su organización
 
 > [!NOTE]
 > Este artículo está dirigido a administradores. ¿Está intentando importar archivos PST a su propio buzón? Consulte [Importar el correo electrónico, los contactos y el calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075).
@@ -82,7 +82,7 @@ A continuación, le presentamos una ilustración y una descripción del proceso 
 
 5. **Filtrar los datos PST que se importarán a los buzones**: después de crear el trabajo de importación (y de que los archivos PST se carguen en la ubicación de Azure Storage tras el envío de la unidad), Microsoft 365 analiza los datos de los archivos PST (de forma segura) identificando la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Una vez se haya completado el análisis y los datos estén listos para la importación, tiene la opción de importar todos los datos incluidos en los archivos PST o de recortar solo algunos de ellos, estableciendo filtros para controlar los datos para importar.
 
-6. **Iniciar el trabajo de importación de PST**: después de que se inicia el trabajo de importación, Microsoft 365 usa la información del archivo de asignación para importar los archivos PST desde la ubicación de Azure Storage a los buzones de los usuarios. En la página **Importar archivos PST** del Centro de cumplimiento de Microsoft 365, se mostrará la información de estado sobre el trabajo de importación (incluida información individual de cada archivo PST importado). Cuando finalice el trabajo de importación, el estado del trabajo aparecerá como **Completado**.
+6. **Iniciar el trabajo de importación de PST**: tras iniciarse el trabajo de importación, Microsoft 365 usa la información del archivo de asignación de importación de PST para importar los archivos PST desde la ubicación Azure Storage a los buzones de los usuarios. En la página **Importar archivos PST** del Centro de cumplimiento de Microsoft 365, se mostrará la información de estado sobre el trabajo de importación (incluida información individual de cada archivo PST importado). Cuando finalice el trabajo de importación, el estado del trabajo aparecerá como **Completado**.
 
 ## <a name="why-import-email-data-to-microsoft-365"></a>¿Por qué importar datos de correo electrónico a Microsoft 365?
 

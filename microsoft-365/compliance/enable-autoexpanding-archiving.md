@@ -1,9 +1,9 @@
 ---
-title: 'Habilitar el archivado de expansión automática: Ayuda para administradores'
+title: Habilitar el archivado de ampliación automática
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,16 +19,16 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: obtenga información sobre cómo habilitar el archivado de expansión automática, lo que proporciona a los usuarios almacenamiento adicional para sus Exchange Online buzones de correo. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 865a21e27034490b7b9da476d359ce135962d604
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: c6f1514ed4bb9c12ac666b366cab91358216357a
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110888"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241628"
 ---
-# <a name="enable-auto-expanding-archiving---admin-help"></a>Habilitar el archivado de expansión automática: Ayuda para administradores
+# <a name="enable-auto-expanding-archiving"></a>Habilitar el archivado de ampliación automática
 
-Puede usar la característica de Exchange Online de archivado de expansión automática para habilitar espacio de almacenamiento adicional para buzones de archivo. Cuando se activa el archivado de expansión automática, se agrega espacio de almacenamiento adicional automáticamente al buzón de archivo de un usuario hasta que alcanza el límite de almacenamiento de 1,5 TB. Puede activar el archivado de expansión automática para todos los usuarios de la organización o solo para usuarios específicos. Para obtener más información sobre el archivado de expansión automática, vea [Overview of auto-expanding archiving](autoexpanding-archiving.md).
+Puede usar la característica de Exchange Online de archivado de expansión automática para habilitar espacio de almacenamiento adicional para buzones de archivo. Cuando se activa el archivado de expansión automática, se agrega espacio de almacenamiento adicional automáticamente al buzón de archivo de un usuario hasta que alcanza el límite de almacenamiento de 1,5 TB. Puede activar el archivado de expansión automática para todos los usuarios de la organización o solo para usuarios específicos. Para obtener más información sobre el archivado de expansión automática, vea [Learn about auto-expanding archiving](autoexpanding-archiving.md).
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>Antes de habilitar el archivado de expansión automática
 
@@ -127,7 +127,7 @@ Tenga en cuenta lo siguiente después de habilitar el archivado de expansión au
 
 - El archivado de expansión automática es compatible con buzones de archivo basados en la nube en una implementación híbrida Exchange para los usuarios que tienen un buzón principal local. Sin embargo, después de habilitar el archivado de expansión automática para un buzón de archivo basado en la nube, no podrá volver a agregar ese buzón de archivo a la organización Exchange local. El archivado de expansión automática no es compatible con buzones locales en ninguna versión de Exchange Server.
 
-- Para obtener una lista de los clientes de Outlook que los usuarios pueden usar para obtener acceso a los elementos del área de almacenamiento adicional de su buzón de archivo, vea la sección "requisitos de Outlook para obtener acceso a elementos de un archivo expandido automáticamente" en [Overview of auto-expanding archiving](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
+- Para obtener una lista de los clientes de Outlook que los usuarios pueden usar para obtener acceso a los elementos del área de almacenamiento adicional en su buzón de archivo, vea la sección "requisitos de Outlook para obtener acceso a los elementos de un archivo expandido automáticamente" en [Learn about auto-expanding archiving](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
 
 - Como se explicó anteriormente, se agregan 10 GB a la cuota de almacenamiento del buzón de archivo principal del usuario (y a la carpeta Elementos recuperables si el buzón está en espera) al ejecutar el comando **Enable-Mailbox -AutoExpandingArchive.** Esto proporciona almacenamiento adicional hasta que se aprovisiona el espacio de almacenamiento expandido automáticamente (que puede tardar hasta 30 días). Este espacio de almacenamiento adicional no se agrega al ejecutar **Set-OrganizationConfig -AutoExpandingArchive** para habilitar el archivado de expansión automática para todos los buzones de la organización. Si ha habilitado el archivado de expansión automática para toda la organización, pero necesita agregar los 10 GB adicionales de espacio de almacenamiento para un usuario específico, puede ejecutar el comando **Enable-Mailbox -AutoExpandingArchive** en ese buzón. Recibirá un error que dice que el archivado de expansión automática ya está habilitado, pero el espacio de almacenamiento adicional se agregará al buzón.
 

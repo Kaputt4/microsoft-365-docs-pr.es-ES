@@ -16,12 +16,12 @@ ms.custom:
 - intro-get-started
 ms.localizationpriority: medium
 description: Obtenga información sobre las tareas que le ayudarán a empezar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 028226c92c9707d852c2bde80cea6d0a3bf86adf
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 1fb1a94e41550e10288bc42b3900cb10e76362bc
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643071"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241376"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -77,17 +77,17 @@ Para realizar su trabajo, las personas de su organización colaboran con otras t
 
 [Las etiquetas](sensitivity-labels.md) de confidencialidad le permiten clasificar y proteger los datos de su organización, al tiempo que se asegura de que la productividad del usuario y su capacidad de colaboración no se ve obstaculizada. Use etiquetas de confidencialidad para aplicar restricciones de cifrado y uso a los marcados visuales y proteger la información en plataformas y dispositivos, locales y en la nube.
 
-Para obtener instrucciones paso a paso para configurar y usar etiquetas de confidencialidad, vea Introducción a [las etiquetas de confidencialidad.](get-started-with-sensitivity-labels.md) Para obtener información acerca de las licencias de etiquetas [de confidencialidad, vea Microsoft 365 instrucciones de](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)licencias para el cumplimiento de & seguridad.
+Para obtener instrucciones paso a paso para configurar y usar etiquetas de confidencialidad, vea Introducción a [las etiquetas de confidencialidad.](get-started-with-sensitivity-labels.md)
 
-## <a name="task-6-configure-a-retention-policy"></a>Tarea 6: Configurar una directiva de retención
+## <a name="task-6-configure-retention-policies"></a>Tarea 6: Configurar directivas de retención
 
 Una [directiva de retención](retention.md) le permite decidir de forma proactiva si desea conservar contenido, eliminar contenido o ambos: conservar y eliminar el contenido al final de un período de retención especificado. Estas acciones pueden ser necesarias para cumplir con las normativas del sector y las directivas internas, así como reducir el riesgo en caso de litigio o una infracción de seguridad.
 
 Cuando el contenido está sujeto a una directiva de retención, las personas pueden seguir editando y trabajando con el contenido como si nada hubiera cambiado. El contenido se conserva en su lugar, en su ubicación original. Pero si alguien edita o elimina contenido sujeto a la directiva de retención, se guarda una copia del contenido original en una ubicación segura donde se conserva mientras la directiva de retención de ese contenido está en vigor.
 
-Puede establecer rápidamente una directiva de retención para varias ubicaciones del entorno de Microsoft 365, como correo Exchange, sitios de SharePoint, cuentas de OneDrive y grupos Microsoft 365. No hay límites en el número de buzones o sitios que esta directiva puede incluir automáticamente. Pero si necesita ser más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluir o excluir sitios o usuarios.
+Puede establecer rápidamente directivas de retención para varios servicios en su entorno de Microsoft 365 que incluyen mensajes de Teams y Yammer, correo Exchange, sitios de SharePoint y cuentas OneDrive. No hay límites en el número de usuarios, buzones o sitios que una directiva de retención puede incluir automáticamente. Pero si necesita ser más selectivo, puede hacerlo configurando un ámbito adaptable basado en consultas para dirigirse dinámicamente a instancias específicas o un ámbito estático que especifique instancias específicas para incluir siempre o excluir siempre.
 
-Para obtener instrucciones paso a paso para configurar una directiva de retención, vea [Create and configure retention policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
+Para obtener instrucciones paso a paso para configurar directivas de retención, vea [Create and configure retention policies](create-retention-policies.md). Dado que las directivas de retención forman la base de una estrategia de gobierno de Microsoft 365, vea [Introducción al gobierno de la información.](get-started-with-information-governance.md)
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 7: Configurar la información confidencial y las directivas de lenguaje ofensivo
 
@@ -104,7 +104,7 @@ Para obtener instrucciones paso a paso para planear y configurar el cumplimiento
 Las etiquetas de confidencialidad, los tipos de información confidencial, las directivas y las etiquetas de retención y los clasificadores capacitados se pueden usar para clasificar y etiquetar elementos confidenciales en Exchange, SharePoint y OneDrive como se ha visto en las tareas anteriores. El último paso del recorrido rápido de la tarea es ver qué elementos se han etiquetado y qué acciones están llevando a cabo los usuarios en esos elementos confidenciales. [El explorador de](data-classification-content-explorer.md) contenido [y el explorador de actividades](data-classification-activity-explorer.md) proporcionan esta visibilidad.
 
 ### <a name="content-explorer"></a>Explorador de contenido
- El explorador de contenido le permite ver, en su formato nativo, todos los elementos que se han clasificado como un tipo de información confidencial o que pertenecen a una determinada clasificación por un clasificador capacitado, así como todos los elementos que tienen aplicada la etiqueta de confidencialidad o retención.
+El explorador de contenido le permite ver, en su formato nativo, todos los elementos que se han clasificado como un tipo de información confidencial o que pertenecen a una determinada clasificación por un clasificador capacitado, así como todos los elementos que tienen aplicada la etiqueta de confidencialidad o retención.
 
 Para obtener instrucciones paso a paso sobre el uso del explorador de contenido, vea [Know your data - data classification overview](data-classification-overview.md)y Get started with content [explorer](data-classification-content-explorer.md).
 
@@ -133,15 +133,11 @@ Ahora que ha configurado los conceptos básicos para la administración de cumpl
 
 ### <a name="configure-retention-labels"></a>Configurar etiquetas de retención
 
-Aunque las directivas de retención se aplican en el nivel de contenedor a ubicaciones como sitios de SharePoint y buzones de correo [Exchange,](retention.md#retention-labels) las etiquetas de retención permiten una orientación más específica para las directivas de retención y eliminación. Por ejemplo, en el nivel de documento o mensaje de correo electrónico que los usuarios finales pueden aplicar manualmente además de la aplicación automática por parte de los administradores. También puede aplicar una etiqueta de retención a una biblioteca de documentos, carpeta o conjunto de documentos en SharePoint, de modo que todos los documentos almacenados en esa ubicación hereden la etiqueta de retención predeterminada.
+Mientras que las directivas de retención se aplican automáticamente a todos los elementos del nivel de contenedor (como sitios de SharePoint, buzones de usuario, entre [otros),](retention.md#retention-labels) las etiquetas de retención se aplican a elementos individuales, como un documento SharePoint o un mensaje de correo electrónico. Puede aplicar estas etiquetas manualmente o automáticamente.
 
-Además, las etiquetas de retención admiten [la administración](records-management.md) de registros para marcar el contenido como un registro. Cuando esto sucede, la etiqueta coloca restricciones adicionales en el contenido que podrían ser necesarias para ayudar a su organización a cumplir con los requisitos normativos.
+Las etiquetas de retención se pueden usar como parte de la estrategia de información de gobierno para conservar lo que necesita y eliminar lo que no. Use estas etiquetas cuando necesite excepciones a las directivas de retención cuando determinados documentos o correos electrónicos necesiten diferentes configuraciones de retención o eliminación. Por ejemplo, la directiva SharePoint conserva todos los documentos durante tres años, pero los documentos empresariales específicos deben conservarse durante cinco años. Para obtener más información, vea [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md).
 
-Para obtener instrucciones paso a paso para crear y publicar etiquetas de retención, consulte la siguiente guía:
-- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
-- [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
-
-Para empezar con la administración de registros, vea [Introducción a la administración de registros](get-started-with-records-management.md).
+Sin embargo, las etiquetas de retención, cuando se usan con la administración de [registros,](records-management.md)proporcionan muchas más opciones de administración para admitir el ciclo de vida completo de documentos y correos electrónicos. Este nivel de administración de datos es adecuado para elementos de alto valor para los requisitos de mantenimiento de registros normativos, legales o empresariales. Para obtener más información, vea [Introducción a la administración de registros](get-started-with-records-management.md).
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identificar y definir tipos de información confidencial
 

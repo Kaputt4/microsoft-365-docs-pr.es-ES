@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar una etiqueta de retención a un modelo en SharePoint Syntex.
-ms.openlocfilehash: ed1df9a37f37bc23b11bb2d7ef24109340b253c9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 112b48af5e07d09faab61bd656c5629b449d9a1c
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195514"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241800"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Puede aplicar fácilmente una etiqueta de retención a un modelo en SharePoint Syntex.
 
@@ -36,7 +36,7 @@ Las etiquetas de retención le permiten aplicar la configuración de retención 
 Puede aplicar una etiqueta de retención preexistente al modelo en la página principal del modelo. 
 
 > [!Important]
-> Para que las etiquetas de retención estén disponibles para aplicarlas a su modelo de comprensión mediante documentos, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
+> Para que las etiquetas de retención estén disponibles para [](../compliance/file-plan-manager.md#create-retention-labels) aplicarse a los modelos de descripción de documentos, deben crearse y publicarse [en](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) el Centro de cumplimiento de Microsoft 365.
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos
 
@@ -74,7 +74,7 @@ Por ejemplo, todos los documentos de *Avisos de seguros* que su modelo identifiq
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos
 
 > [!Important]
-> Para que las etiquetas de retención estén disponibles para aplicarlas a su modelo de procesamiento de formularios, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
+> Para que las etiquetas de retención estén disponibles para [](../compliance/file-plan-manager.md#create-retention-labels) aplicarse al modelo de procesamiento de formularios, deben crearse y publicarse [en](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) el Centro de cumplimiento de Microsoft 365.
 
 Puede aplicar una etiqueta de retención a un modelo de procesamiento de formularios cuando cree el modelo, o bien aplicarlo a un modelo ya existente.
 

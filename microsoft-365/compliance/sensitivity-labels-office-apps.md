@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3b38fd7f2395533c318a8d61a499624712de41e2
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e14eec3cd24604a1aedc12683b37d12c2fb6f377
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213678"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241776"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -81,7 +81,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 
 **Notas al pie:**
 
-<sup>\*</sup> Actualmente, no incluye un texto de justificación para eliminar una etiqueta o bajar el nivel de clasificación
+<sup>\*</sup> Texto de justificación que se está implementando para quitar una etiqueta o reducir el nivel de clasificación
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Funciones de la etiqueta de confidencialidad en Outlook
 

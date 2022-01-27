@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias de su inquilino. Busca una guía para configurar un servicio o una aplicación que necesites ejecutar.
-ms.openlocfilehash: 893ee5716621d988d006f9f3a67b183da3f65b14
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: 9d8533b8a10535e79e0e42c546df72b6714d690a
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218986"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241956"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -161,6 +161,15 @@ La guía de configuración de [Microsoft Defender para Office 365](https://aka.m
 ### <a name="microsoft-defender-for-identity-setup-guide"></a>Guía de configuración de Microsoft Defender para identidades
 
 La [guía de configuración de Microsoft Defender para](https://aka.ms/DefenderforIdentitysetup) la identidad proporciona instrucciones de configuración de soluciones de seguridad para identificar, detectar e investigar amenazas avanzadas que pueden poner en peligro las identidades de los usuarios. Entre ellas se incluyen la detección de actividades de usuario sospechosas y acciones malintencionadas dirigidas a su organización. Creará una instancia de Defender for Identity, se conectará a Active Directory de su organización y, a continuación, configurará sensores, alertas, notificaciones y configurará las preferencias del portal único.
+
+### <a name="insider-risk-solutions-setup-guide"></a>Guía de configuración de soluciones de riesgo insider
+
+La guía de configuración de soluciones de riesgo de [Insider](https://aka.ms/Insiderrisksetup) le ayuda a proteger su organización contra riesgos de insider que pueden ser difíciles de identificar y difíciles de mitigar. Los riesgos de insider se producen en una variedad de áreas y pueden causar problemas importantes para las organizaciones, desde la pérdida de la propiedad intelectual hasta el acoso en el lugar de trabajo, entre otras cosas.
+
+Las soluciones de esta guía le ayudarán a obtener visibilidad de las actividades, acciones y comunicaciones del usuario con señales nativas y enriquecimientos de toda la organización:
+
+* Con la solución de cumplimiento de comunicaciones, puede identificar y actuar en función de los riesgos de comunicación de elementos como la violencia en el lugar de trabajo, el comercio interno, el acoso, el código de conducta y las infracciones de cumplimiento normativo.
+* La solución de administración de riesgos de insider le ayuda a identificar, investigar y tomar medidas sobre los riesgos de robo de propiedad intelectual, pérdidas de datos confidenciales, infracciones de seguridad, derrame de datos y violaciones de confidencialidad.
 
 ### <a name="microsoft-information-protection-setup-guide"></a>protección de la información de Microsoft de configuración
 

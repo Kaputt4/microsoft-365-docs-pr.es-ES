@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: 11251ccc964e02a656a9978170443f6492ac1deb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fbf07fbe71ccb42411f5808aa923d7179d2f13d
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165273"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241316"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -61,6 +61,8 @@ Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son alg
 - **Demasiados usuarios:** Cuando hay demasiados usuarios designados que acceden simultáneamente a un buzón compartido (no se recomienda más de 25), pueden no conectarse intermitentemente a este buzón o tener incoherencias como que los mensajes se dupliquen en la bandeja de salida. En este caso, puede considerar reducir el número de usuarios o usar una carga de trabajo diferente, como un grupo Microsoft 365 o una carpeta pública.
 
 - **Eliminación de mensajes:** Lamentablemente, no es posible impedir que los miembros eliminen los mensajes en un buzón compartido. La única manera de evitar este problema es crear un grupo de Microsoft 365 en lugar de un buzón compartido. Los grupos de Outlook son similares al buzón compartido. Para ver una comparación, consulte [Comparar grupos](../create-groups/compare-groups.md). Para obtener más información sobre los grupos, vea [Obtener más información sobre los grupos](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+
+- **Multi-Geo** En un entorno multige geográfico, los buzones compartidos deben tener una licencia del mismo modo que se concede una licencia a un buzón de usuario. Tenga en cuenta que no se admite la auditoría entre buzones de correo. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. 
 
 
 > [!NOTE]

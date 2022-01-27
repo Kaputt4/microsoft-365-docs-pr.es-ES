@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: c86c8afc219074506e7e58bb63fb0792e5116317
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: cacb269f8108d2ca4e3dbcdb15b2c157017f52f6
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241193"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241328"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -166,7 +166,7 @@ Cuando expira el período de retención y la configuración de retención incluy
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
+Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción al gobierno de la información](get-started-with-information-governance.md).
 
 Si está listo para configurar una directiva de retención o etiqueta de retención para Exchange, consulte las siguientes instrucciones:
 - [Crear y configurar directivas de retención](create-retention-policies.md)

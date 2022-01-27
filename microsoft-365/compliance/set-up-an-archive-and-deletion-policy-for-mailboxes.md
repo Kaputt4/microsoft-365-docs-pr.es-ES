@@ -1,9 +1,9 @@
 ---
-title: Configurar una directiva de archivo y eliminación de buzones en la organización
+title: Personalizar una directiva de archivo y eliminación (MRM) para buzones de su organización
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,19 +22,23 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueve automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: eff76a5d06b975e161a4d12302ac8bd1f20e612e
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Cómo crear una directiva de archivado y eliminación de administración de registros de mensajería (MRM) personalizada para mover automáticamente elementos al buzón de archivo de un usuario.
+ms.openlocfilehash: 192bed6be6c3129410f4e51144402c6c19e12d37
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61423712"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242076"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
+# <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Personalizar una directiva de archivo y eliminación para buzones de su organización
 
-En Microsoft 365, los administradores pueden crear una directiva de archivado y eliminación que mueva automáticamente los elementos al buzón de archivo de un usuario y elimine automáticamente los elementos del buzón. Para ello, el administrador crea una directiva de retención que está asignada a buzones de correo y mueve elementos al buzón de archivo de un usuario después de un período de tiempo determinado y que también elimina elementos del buzón después de alcanzar un límite de antigüedad determinado. Las reglas reales que determinan qué elementos se mueven o eliminan y cuándo se produce se denominan etiquetas de retención. Las etiquetas de retención están vinculadas a una directiva de retención, que a su vez se asigna al buzón de un usuario. Una etiqueta de retención aplica la configuración de retención a los mensajes y carpetas individuales del buzón de un usuario. Define cuánto tiempo permanece un mensaje en el buzón y qué acción se toma cuando el mensaje alcanza la antigüedad de retención especificada. Cuando un mensaje alcanza su antigüedad de retención, se mueve al buzón de archivo del usuario o se elimina.
+Microsoft 365 administradores de cumplimiento normativo pueden crear una directiva de archivado y [](archive-mailboxes.md) eliminación que mueva automáticamente los elementos al buzón de archivo de un usuario y elimine automáticamente los elementos del buzón.
+
+Para ello, cree una directiva de retención de administración de registros de mensajería (MRM) que se asigne a los buzones de correo y mueva los elementos al buzón de archivo de un usuario después de un período de tiempo determinado y que también elimine los elementos del buzón después de que alcancen un determinado límite de antigüedad. 
+
+Las reglas reales que determinan qué elementos se mueven o eliminan y cuándo se produce se denominan etiquetas de retención. Las etiquetas de retención están vinculadas a una directiva de retención de MRM, que a su vez se asigna al buzón de un usuario. Una etiqueta de retención aplica la configuración de retención a los mensajes y carpetas individuales del buzón de un usuario. Define cuánto tiempo permanece un mensaje en el buzón y qué acción se toma cuando el mensaje alcanza la antigüedad de retención especificada. Cuando un mensaje alcanza su antigüedad de retención, se mueve al buzón de archivo del usuario o se elimina.
   
-Los pasos de este artículo configurarán una directiva de archivado y retención para una organización ficticia denominada Alpine House. La configuración de esta directiva incluye las siguientes tareas:
+Los pasos de este artículo establecen una directiva de archivado y retención para una organización ficticia denominada Alpine House. La configuración de esta directiva incluye las siguientes tareas:
   
 - Habilitar un buzón de archivo para todos los usuarios de la organización. Esto proporciona a los usuarios almacenamiento de buzones de correo adicional y es necesario para que una directiva de retención pueda mover elementos al buzón de archivo. También permite que un usuario almacene información de archivo moviendo elementos a su buzón de archivo.
 
@@ -239,7 +243,7 @@ Después de aplicar la nueva directiva de retención a los buzones en el paso 4,
   
 Estos son los pasos para conectarse Exchange Online PowerShell y, a continuación, ejecutar el Asistente para carpetas administradas en todos los buzones de la organización.
 
-1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Conexión al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
   
 2. Ejecute los dos comandos siguientes para iniciar el Asistente para carpetas administradas para todos los buzones de usuario de la organización.
 
@@ -260,7 +264,7 @@ Y eso es todo. Ha configurado una directiva de archivo y eliminación para la or
 
 En el paso 4, debe asignar la nueva directiva de retención a los buzones existentes. Sin embargo, puede configurar Exchange Online para que la nueva directiva de retención se asigne a los nuevos buzones que se crean en el futuro. Para ello, use Exchange Online PowerShell para actualizar el plan de buzones predeterminado de la organización. Un *plan de buzón* de correo es una plantilla que configura automáticamente las propiedades en los buzones nuevos.  En este paso opcional, puede reemplazar la directiva de retención actual que está asignada al plan de buzones de correo (de forma predeterminada, la directiva de MRM predeterminada) por la directiva de retención que creó en el paso 3. Después de actualizar el plan de buzones, la nueva directiva de retención se asignará a nuevos buzones.
 
-1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Conexión al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Ejecute el siguiente comando para mostrar información sobre los planes de buzón de correo de la organización.
 

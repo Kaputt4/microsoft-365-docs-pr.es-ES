@@ -2,8 +2,8 @@
 title: Cambiar la duración de retención para un buzón inactivo
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/29/2017
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Después de que Office 365 buzón de correo esté inactivo, cambie la duración de la retención o Office 365 de retención asignada al buzón inactivo.
-ms.openlocfilehash: 1698a252cad4cebcb09b7c3695b2cecf3184ba1f
-ms.sourcegitcommit: a15ea6bc8f60895e791a08a5a88d346c6581ea38
+ms.openlocfilehash: bf1131aa0d14222bec7ab1c94983925cfe39e673
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61144979"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241616"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
 

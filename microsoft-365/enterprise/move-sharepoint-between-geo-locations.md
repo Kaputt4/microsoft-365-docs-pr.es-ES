@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo mover un SharePoint a una ubicación geográfica diferente dentro de su entorno multige geográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adfa96822e31dce43b95a6eebc54b5f4698bdcca
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 6ccbe708c0fcfb51c1a28b354d8438e526815cec
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560749"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242040"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -62,6 +62,7 @@ Puede programar los movimientos de sitios de SharePoint por adelantado (como se 
 
 - Puede programar un máximo de 4000 movimientos cada vez.
 - Al empezar el movimiento, puede programar más, con un máximo de 4000 movimientos pendientes en la cola y en cualquier momento.
+- El tamaño máximo de un SharePoint que se puede mover es de 1 terabyte (1 TB).
 
 Para programar un movimiento geográfico de sitio de SharePoint para un momento posterior, incluya uno de los parámetros siguiente al iniciar:
 
