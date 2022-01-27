@@ -13,14 +13,16 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 01/14/2022
-ms.collection: M365-security-compliance
-ms.openlocfilehash: f0562040a98d2efd5cdc683dd322363c2057c991
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.date: 01/26/2022
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 0ea2184720467b3756b5cde8c8973e8952d5b50c
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049329"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244708"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -57,7 +59,7 @@ El proceso de configuración y ejecución de Antivirus de Microsoft Defender en 
 
 ## <a name="enable-the-user-interface-on-windows-server"></a>Habilitar la interfaz de usuario en Windows Server
 
-De forma predeterminada, Antivirus de Microsoft Defender está instalado y funcional en Windows server. A veces, la interfaz de usuario (GUI) se instala de forma predeterminada, pero no es necesaria. Puede usar PowerShell, directiva de grupo u otros métodos para administrar Antivirus de Microsoft Defender.
+De forma predeterminada, Antivirus de Microsoft Defender está instalado y funcional en Windows server. A veces, la interfaz de usuario (GUI) está instalada de forma predeterminada, pero la GUI no es necesaria. Puede usar PowerShell, directiva de grupo u otros métodos para administrar Antivirus de Microsoft Defender.
 
 Si la GUI no está instalada en el servidor y desea instalarla, el Asistente para agregar **roles** y características o cmdlets de PowerShell.
 
@@ -102,7 +104,7 @@ Para usar PowerShell para instalar Antivirus de Microsoft Defender, ejecute el s
 Install-WindowsFeature -Name Windows-Defender
 ```
 
-Los mensajes de evento para el motor de antimalware incluidos Antivirus de Microsoft Defender pueden encontrarse en [Eventos AV de Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md).
+Los mensajes de evento del motor de antimalware incluidos con Antivirus de Microsoft Defender pueden encontrarse en [Antivirus de Microsoft Defender Eventos](troubleshoot-microsoft-defender-antivirus.md).
 
 ## <a name="verify-microsoft-defender-antivirus-is-running"></a>Comprobar Antivirus de Microsoft Defender se está ejecutando
 
@@ -126,7 +128,7 @@ sc query Windefend
 
 El `sc query` comando devuelve información sobre el Antivirus de Microsoft Defender servicio. Cuando Antivirus de Microsoft Defender se está ejecutando, `STATE` el valor muestra `RUNNING` .
 
-Para ver todos los servicios que no se están ejecutando, ejecute el siguiente cmdlet de Powershell:
+Para ver todos los servicios que no se están ejecutando, ejecute el siguiente cmdlet de PowerShell:
 
 ```console
 sc query state= all
@@ -218,7 +220,7 @@ Puede establecer el Antivirus de Microsoft Defender en modo pasivo estableciendo
 
     Si borras **Windows Defender** en la sección características de **Windows Defender,** se te pedirá que quites la **guia** de opción de interfaz para Windows Defender .
 
-    Antivirus de Microsoft Defender se ejecutará normalmente sin la interfaz de usuario, pero la interfaz de usuario no se puede habilitar si deshabilita la característica principal **Windows Defender** usuario.
+    Antivirus de Microsoft Defender se ejecutará normalmente sin la interfaz de usuario, pero la interfaz de usuario no se puede habilitar si deshabilita la característica **principal Windows Defender** usuario.
 
 ### <a name="turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell"></a>Desactivar la interfaz Antivirus de Microsoft Defender usuario con PowerShell
 
@@ -242,7 +244,7 @@ Ahora puede ejecutar Antivirus de Microsoft Defender en modo pasivo en Windows S
 | Desinstalar Antivirus de Microsoft Defender con PowerShell | Use el siguiente cmdlet de PowerShell: `Uninstall-WindowsFeature -Name Windows-Defender` |
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Antivirus de Microsoft Defender en Windows](microsoft-defender-antivirus-windows.md)
 - [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)

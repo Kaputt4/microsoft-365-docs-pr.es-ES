@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 12/13/2021
+ms.date: 01/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,13 +15,14 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 42cd947dec6e954ae675cda233dc4126c2bb2b39
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+- m365initiative-defender-business
+- m365-security-compliance
+ms.openlocfilehash: b2337ddf5367242d077fb2f75fa45eaa6262e6d9
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507439"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245116"
 ---
 # <a name="compare-microsoft-defender-for-business-preview-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para empresas (versión preliminar) con Microsoft 365 Empresa Premium
 
@@ -91,7 +92,7 @@ Defender para empresas (versión preliminar) ofrece funcionalidades de grado emp
 
 (<a id="fn3">3</a>) Durante el programa de vista previa, Windows dispositivos cliente se admiten en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulta los requisitos de Microsoft Defender para empresas (versión preliminar)](mdb-requirements.md)
 

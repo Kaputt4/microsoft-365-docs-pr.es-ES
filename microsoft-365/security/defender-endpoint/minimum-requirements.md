@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05a3505e3fb77b4286eb87445380713b2831beaf
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 3df27d3a09b5a19b4e2c4c2ecea1ab0eb8c1e157
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62041119"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245176"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -35,7 +35,7 @@ Existen algunos requisitos mínimos para incorporar dispositivos al servicio. Ob
 
 > [!TIP]
 >
-> - En este artículo se describen los requisitos mínimos para Microsoft Defender para el Plan de extremo 2. Si está buscando información sobre Defender for Endpoint Plan 1 (versión preliminar), consulte [Requirements for Defender for Endpoint Plan 1 (preview).](mde-p1-setup-configuration.md#review-the-requirements)
+> - En este artículo se describen los requisitos mínimos para Microsoft Defender para el Plan de extremo 2. Si está buscando información sobre Defender for Endpoint Plan 1, vea [Requirements for Defender for Endpoint Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
 > - Obtenga información sobre las últimas mejoras de Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demostró las capacidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
@@ -63,7 +63,7 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 
 - Windows 7 SP1 Enterprise ([Requiere ESU para admitir](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows 7 SP1 Pro ([Requiere ESU para admitir](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 8.1 Enterprise
+- Windows 8,1 Enterprise
 - Windows 8.1 Pro
 - Windows 11 Enterprise
 - Windows 11 Education
@@ -72,7 +72,7 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (o posterior)](/windows/whats-new/ltsc/)
 - Windows 10 Education
-- Windows 10 Pro
+- Windows 10 Pro
 - Windows 10 Pro Education
 - Windows servidor
   - Windows Server 2008 R2 SP1 ([Requiere ESU para ser compatible](/windows-server/get-started/extended-security-updates-deploy))

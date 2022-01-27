@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,13 +15,13 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 49303198f14bada675dd7acec987557427f33377
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+- m365-security-compliance
+ms.openlocfilehash: e99ee95e02db7e2e5c42bb5e092b7172c335eeb0
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61508268"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245128"
 ---
 # <a name="get-microsoft-defender-for-business-preview"></a>Obtener Microsoft Defender para empresas (versión preliminar)
 
@@ -60,7 +60,7 @@ Si se te acepta, el correo electrónico contendrá un código de licencia que us
 > Si es socio, después de haber sido aceptado en el programa de vista previa, debe hacer que cada cliente complete el proceso descrito en la sección Registrarse para el programa [de vista previa](#sign-up-for-the-preview-program). Asegúrese de que el cliente especifica el nombre del partner de Microsoft en el **cuadro** Otros.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulta el proceso de configuración y configuración de Microsoft Defender para empresas (versión preliminar)](mdb-setup-configuration.md)
 

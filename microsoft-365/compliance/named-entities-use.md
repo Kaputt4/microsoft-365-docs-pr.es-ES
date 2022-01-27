@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos
-ms.openlocfilehash: 75a203b578217c5bbc1e8f67cf04b8d564735bd0
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 5d81f216ddd86816148220c178b991db4e4803b0
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560437"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245104"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
 
@@ -43,7 +43,7 @@ Debe tener una de estas suscripciones
 
 Para obtener información completa sobre las licencias, [vea la descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
-### <a name="permissions"></a>Permissions
+### <a name="permissions"></a>Permisos
 
 La cuenta que use para crear y editar directivas de prevención de pérdida de datos (DLP), debe tener los permisos del rol Administración de cumplimiento **dlp.** Para obtener más información, vea [Dar acceso a los usuarios al Centro de Office 365 cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
@@ -83,7 +83,7 @@ Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar 
 |Office directiva de clientes WAC    |compatible         |
 |Sugerencia de directiva de OWA     |no compatible         |
 |Outlook de directiva     |no compatible |
-|Puntos de conexión (Windows 10 dispositivos)     |no compatible  |
+|Puntos de conexión (Windows 10 dispositivos)     |compatible  |
 |Exchange de transporte     |no compatible |
 |OneDrive para la Empresa datos en reposo     |compatible         |
 |SharePoint Online data-at-rest     |compatible         |

@@ -16,12 +16,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1771ca1bd4a3b941d7fbb22d4dfd14d56510c416
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+- m365initiative-defender-business
+ms.openlocfilehash: 221879ee28a2a358074b4ced918a8f1479ca8968
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940595"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244684"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business-preview"></a>Proceso de configuración simplificado en Microsoft Defender para empresas (versión preliminar)
 
@@ -49,7 +50,7 @@ Cuando se trata de incorporar dispositivos y configurar la configuración de seg
 En la tabla siguiente se describe cada experiencia:
 <br/><br/>
 
-| Experiencia del portal  | Description  |
+| Experiencia del portal  | Descripción  |
 |---------|---------|
 | La experiencia de configuración simplificada en el portal Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>(*Esta es la opción recomendada para la mayoría de los clientes*)  | La experiencia de configuración simplificada incluye directivas y configuraciones de seguridad predeterminadas que te ayudan a proteger los dispositivos de tu empresa desde el primer día. Con esta experiencia, el equipo de seguridad usa el portal Microsoft 365 Defender para: <br/>- Configurar y configurar Defender para empresas (versión preliminar) <br/>- Ver y administrar incidentes<br/>- Responder y mitigar amenazas<br/>- Ver informes<br/>- Revisar acciones pendientes o completadas <br/><br/> Este portal es tu tienda única para la configuración de seguridad de tu empresa y las capacidades de protección contra amenazas. Obtiene una experiencia simplificada que le ayudará a empezar de forma rápida y eficaz.  Además, puedes editar la configuración o definir nuevas directivas para que se adapten a las necesidades de tu empresa.<br/><br/>Para obtener más información, [consulta Ver o editar directivas de dispositivos en Microsoft Defender para empresas (versión preliminar).](mdb-view-edit-policies.md) |
 | El Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  | Microsoft Endpoint Manager incluye Microsoft Intune, un proveedor de administración de dispositivos móviles (MDM) basado en la nube y administración de aplicaciones móviles (MAM) para aplicaciones y dispositivos. <br/><br/>Muchas organizaciones usan Intune para administrar sus dispositivos, como teléfonos móviles, tabletas y portátiles. Para obtener más información, [consulta Microsoft Intune es un proveedor de MDM y MAM para tus dispositivos.](/mem/intune/fundamentals/what-is-intune) <br/><br/>Si ya está usando Microsoft Intune o Microsoft Endpoint Manager, puede seguir usando esa solución. |
@@ -63,7 +64,7 @@ En la tabla siguiente se describe cada experiencia:
 
 Defender para empresas (versión preliminar) está diseñado para proporcionar una protección segura y, al mismo tiempo, ahorrar tiempo y esfuerzo en la configuración de la configuración de seguridad. La experiencia optimizada en el portal Microsoft 365 Defender facilita la incorporación de dispositivos y su administración. Además, se incluyen directivas predeterminadas para que los dispositivos de la empresa estén protegidos tan pronto como se incorpore. Puede mantener la configuración predeterminada tal y como está o realizar cambios que se adapten a sus necesidades empresariales. También puedes agregar nuevas directivas para administrar dispositivos según sea necesario.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 >
 > **¿Tiene un minuto?**

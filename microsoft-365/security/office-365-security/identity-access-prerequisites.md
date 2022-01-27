@@ -19,19 +19,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 564915b6f27f0d4038f4b6c738c377c700b09ab1
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: ba9694be615f0c669ed0b9c319909551ccf02315
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121750"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244624"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Trabajo previo para implementar directivas de identidad de confianza cero y acceso a dispositivos
-
-**Se aplica a**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
-- Azure
 
 En este artículo se describen los requisitos previos que los administradores deben cumplir para usar las directivas recomendadas de acceso a dispositivos y identidades de confianza cero y para usar el acceso condicional. También analiza los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
 
@@ -104,8 +99,8 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 |Windows 8.1|Compatible|Compatible|N/D|N/D|Compatible|
 |Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
-|macOS|Compatible|Compatible|N/D|N/D|No compatible|
-|Linux|No se admite|No se admite|No se admite|No se admite|No se admite|
+|macOS|Compatible|Compatible|No aplicable|No aplicable|No compatible|
+|Linux|No compatible|No compatible|No compatible|No compatible|No compatible|
 |
 
 ### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365

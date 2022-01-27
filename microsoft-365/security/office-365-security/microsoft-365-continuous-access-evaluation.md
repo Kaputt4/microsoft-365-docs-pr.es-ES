@@ -9,7 +9,6 @@ ms.topic: article
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
@@ -19,18 +18,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f0fc824b4498e2cde0e0c024902289f056396f55
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 376b15a6faa84b26ab7e48356e54c0456da16072
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035719"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244672"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Evaluación de acceso continua para Microsoft 365
-
-**Se aplica a**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
 Los servicios en la nube modernos que usan OAuth 2.0 para la autenticación tradicionalmente dependen de la expiración del token de acceso para revocar el acceso de una cuenta de usuario. En la práctica, esto significa incluso si un administrador revoca el acceso de una cuenta de usuario, el usuario seguirá teniendo acceso hasta que expire el token de acceso, que para Microsoft 365 de forma predeterminada, solía estar hasta una hora después de que se produjese el evento de revocación inicial.
 
@@ -89,7 +84,7 @@ Los siguientes servicios Microsoft 365 actualmente admiten la evaluación contin
 |---|---|---|---|
 |**Eventos críticos:**||||
 |Revocación de usuarios|Compatible|Compatible|Compatible|
-|Riesgo de usuario|Compatible|No admitido|No se admite|
+|Riesgo de usuario|Compatible|No se admite|No compatible|
 |**Evaluación de directivas de acceso condicional:**||||
 |Directiva de ubicación de direcciones IP|Compatible|Compatible\*|Compatible|
 |
@@ -114,7 +109,7 @@ Los siguientes clientes admiten la evaluación continua de acceso en web, Win32,
 
 Para los clientes que no admiten la evaluación continua del acceso, la duración del token de acceso Microsoft 365 permanece como una hora de forma predeterminada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Evaluación continua del acceso](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 - [Documentación de acceso condicional](/azure/active-directory/conditional-access/overview)

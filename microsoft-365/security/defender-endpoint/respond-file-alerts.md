@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7cb9a37cd97a34d6e63082ad0c9f45a374bf98ae
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e3f4efb5c52acb40ecb30ac17a8b144de9eaa106
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166007"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245392"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -27,7 +27,7 @@ ms.locfileid: "61166007"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -326,4 +326,4 @@ Si encuentra un problema al intentar enviar un archivo, pruebe cada uno de los s
 
 - [Realizar acciones de respuesta en un dispositivo](respond-machine-alerts.md)
 - [Investigar archivos](investigate-files.md)
-- [Acciones de respuesta manuales en Microsoft Defender para endpoint plan 1 (versión preliminar)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Acciones de respuesta manuales en Microsoft Defender para el plan de extremo 1](defender-endpoint-plan-1.md#manual-response-actions)

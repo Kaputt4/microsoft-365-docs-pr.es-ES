@@ -13,14 +13,16 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: c2eb73b241bf49ef4f89598874a6648a3f9c8d70
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d4e585a7714bddc8c89de75ae49464da7bfe0305
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61891924"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245332"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Introducción al Plan 1 de Microsoft Defender para endpoints
 
@@ -29,7 +31,7 @@ ms.locfileid: "61891924"
 
 El portal de Microsoft 365 Defender ( ) le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, tomar las medidas necesarias en las amenazas detectadas y administrar [https://security.microsoft.com](https://security.microsoft.com) dispositivos. El Microsoft 365 Defender es donde puede empezar a interactuar con las capacidades de protección contra amenazas que obtiene con Defender for Endpoint Plan 1. En las secciones siguientes se describe cómo empezar:
 
-- [El portal de Microsoft 365 Defender incluye:](#the-microsoft-365-defender-portal)
+- [El portal de Microsoft 365 Defender](#the-microsoft-365-defender-portal)
 - [Visualización y administración de incidentes & alertas](#view-and-manage-incidents--alerts)
 - [Administración de dispositivos](#manage-devices)
 - [Visualización de informes](#view-reports)
@@ -65,7 +67,7 @@ La barra de navegación de la parte izquierda de la pantalla le permite moverse 
 | **Alertas de & incidentes** | Se expande para mostrar **incidentes** y **alertas**. |
 | **Alertas de & incidentes**  >  **Incidentes** | Navega a la **lista Incidentes.** Los incidentes se crean cuando se desencadenan alertas o se detectan amenazas. De forma predeterminada, la lista Incidentes muestra los datos de los **últimos** 30 días, con el incidente más reciente enumerado primero. <br/><br/> Para obtener más información, vea [Incidents](view-incidents-queue.md). |
 | **Alertas de & incidentes**  >  **Alertas** | Navega a la lista **alertas** (también denominada cola **de alertas**). Las alertas se desencadenan cuando se detecta un archivo, proceso o comportamiento sospechoso o malintencionado. De forma predeterminada, la **lista de** alertas muestra los datos de los últimos 30 días, con la alerta más reciente en primer lugar. <br/><br/> Para obtener más información, vea [Alerts](alerts-queue.md). |
-| **Centro de acciones** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como estas: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender for Endpoint detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, vea [Centro de acciones](auto-investigation-action-center.md). |
+| **Centro de actividades** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como estas: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender for Endpoint detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, vea [Centro de acciones](auto-investigation-action-center.md). |
 | **Puntuación de seguridad** | Muestra una representación de la posición de seguridad de la organización junto con una lista de acciones de mejora y métricas. <br/><br/> Para obtener más información, consulte [Puntuación segura de Microsoft](../defender/microsoft-secure-score.md). |
 | **Learning central** | Navega a una lista de rutas de aprendizaje a las que puede acceder para obtener más información sobre Microsoft 365 de seguridad.  |
 | **Puntos de conexión**  >  **Búsqueda** | Navega a una página donde puedes buscar dispositivos específicos por nombre de dispositivo. En la lista de resultados, puede ver detalles, como el nivel de riesgo y el estado de mantenimiento, de un vistazo. |

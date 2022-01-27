@@ -19,20 +19,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 4e028d149e74eac69389b545ea76a034589c253e
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: cf3e2eaf764dee35593b220d444dbf68bcabb037
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122062"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245164"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directiva para proteger SharePoint sitios y archivos
-
-**Se aplica a**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
-- SharePoint Online 
-
 
 En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos y identidad de confianza cero para proteger SharePoint y OneDrive para la Empresa. Esta guía se basa en las directivas [comunes de acceso a dispositivos y identidades.](identity-access-policies.md)
 

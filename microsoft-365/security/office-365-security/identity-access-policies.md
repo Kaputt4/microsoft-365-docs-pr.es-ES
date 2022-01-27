@@ -20,19 +20,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 3bb7b8135e178ac219b56afd67e466976487e3cb
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: 90bdb8dbbb90009b10015591732d0257789884cd
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62009002"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244396"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos y identidad de confianza cero
-
-**Se aplica a**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
-- Azure
 
 En este artículo se describen las directivas comunes recomendadas de acceso a dispositivos y identidades de confianza cero para proteger el acceso a los servicios en la nube de Microsoft 365, incluidas las aplicaciones locales publicadas con un proxy de aplicación Azure Active Directory (Azure AD).
 
@@ -64,14 +59,14 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 |Nivel de protección|Directivas|Más información|Licencias|
 |---|---|---|---|
 |**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
-||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|Microsoft 365 E3 o E5|
+||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|Microsoft 365 E3 o E5|
 ||[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Fuerza a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
 ||[Aplicar protección de datos de directivas de protección de aplicaciones (APP)](#apply-app-data-protection-policies)|Una directiva de Protección de aplicaciones de Intune por plataforma (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|
 ||[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Aplica la protección de aplicaciones móviles para teléfonos y tabletas con iOS, iPadOS o Android.|Microsoft 365 E3 o E5|
 |**Empresarial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo,* *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
-||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|Microsoft 365 E3 o E5|
-||[Requerir equipos y dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune tanto para equipos (Windows o macOS) como para teléfonos o tabletas (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
-|**Seguridad especializada**|[*Requerir* siempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
+||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|Microsoft 365 E3 o E5|
+||[Requerir equipos y dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune tanto para equipos (Windows o macOS) como para teléfonos o tabletas (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
+|**Seguridad especializada**|[*Requerir* siempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Asignar directivas a grupos y usuarios
@@ -130,7 +125,7 @@ En la **sección Asignaciones:**
 
 Aplica la configuración del nivel de riesgo en función del nivel de protección al que estás destinado.
 
-|Nivel de protección|Valores de nivel de riesgo necesarios|Action|
+|Nivel de protección|Valores de nivel de riesgo necesarios|Acción|
 |---|---|---|
 |Punto de inicio|Alto, medio|Compruebe ambos.|
 |Empresa|Alto, medio, bajo|Compruebe los tres.|
@@ -139,7 +134,7 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Action|
+|Configuración|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Seleccionar|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -170,7 +165,7 @@ En la **sección Asignaciones:**
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Action|
+|Configuración|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Seleccionar|
 ||**Exigir todos los controles seleccionados**||Seleccionar|
@@ -192,7 +187,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 En la **sección Asignaciones:**
 
-|Tipo|Propiedades|Valores|Action|
+|Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Usuarios|Incluir|**Todos los usuarios**|Seleccionar|
 |Riesgo de usuario|**Alto**||Seleccionar|
@@ -200,7 +195,7 @@ En la **sección Asignaciones:**
 
 En la segunda **sección Asignaciones:**
 
-|Tipo|Propiedades|Valores|Action|
+|Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Acceso|**Permitir acceso**||Seleccionar|
 |||**Exigir cambio de contraseña**|Cheque|
@@ -362,7 +357,7 @@ Se recomiendan las siguientes opciones de configuración para equipos que ejecut
 
 Para ver las reglas de evaluación > Windows servicio de **atestación** de estado del dispositivo, consulte esta tabla.
 
-|Propiedades|Valor|Action|
+|Propiedades|Valor|Acción|
 |---|---|---|
 |Requerir BitLocker|Obligatoria|Seleccionar|
 |Requerir que el arranque seguro esté habilitado en el dispositivo|Obligatoria|Seleccionar|
@@ -375,7 +370,7 @@ Para **El cumplimiento de Configuration Manager,** seleccione **Requerir**.
 
 Para **Seguridad del sistema,** consulte esta tabla.
 
-|Tipo|Propiedades|Valor|Action|
+|Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Seleccionar|
 ||Contraseñas sencillas|Bloquear|Seleccionar|
@@ -397,7 +392,7 @@ Para **Seguridad del sistema,** consulte esta tabla.
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
-|Tipo|Propiedades|Valor|Action|
+|Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
 |Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Seleccionar|
 |

@@ -16,13 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
+- m365initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 5df69a578c5f4d3db7c366a0369e7efdbf934b79
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 38c43f8b097ceff26ff0a5c354dca3f4e2c4ae2f
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61904790"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245260"
 ---
 # <a name="get-started-using-microsoft-defender-for-business-preview"></a>Introducción al uso de Microsoft Defender para empresas (versión preliminar)
 
@@ -50,11 +51,11 @@ Tómese un momento para familiarizarse con su Microsoft 365 Defender portal.
 
 Use la barra de navegación de la parte izquierda de la pantalla para obtener acceso a los incidentes, ver informes y administrar las directivas y la configuración de seguridad. En la tabla siguiente se describen los elementos que verá en la barra de navegación.
 
-| Item | Descripción |
+| Elemento | Descripción |
 |:---|:---|
 | **Inicio** | Te lleva a la página principal en Microsoft 365 Defender. La página principal incluye tarjetas que resaltan las amenazas activas que se detectaron, junto con recomendaciones para ayudar a proteger los datos y dispositivos de la empresa. <br/><br/>Recomendaciones se incluyen en Defender for Business (versión preliminar) puede ahorrar tiempo y esfuerzo al equipo de seguridad. Recomendaciones se basan en los procedimientos recomendados del sector. Para obtener más información sobre las recomendaciones, vea [Security recommendations - Administración de amenazas y vulnerabilidades](../defender-endpoint/tvm-security-recommendation.md). |
 | **Incidentes** | Le lleva a la lista de incidentes recientes. A medida que se desencadenan las alertas, se crean incidentes. Un incidente puede incluir varias alertas. Asegúrese de revisar los incidentes con regularidad. <br/><br/>Para obtener más información acerca de los incidentes, vea Ver y administrar incidentes [en Microsoft Defender para empresas (versión preliminar).](mdb-view-manage-incidents.md)|
-| **Centro de acciones** | Le lleva a la lista de acciones de respuesta, incluidas las acciones completadas o pendientes. <br/>- Seleccione la **pestaña** Historial para ver las acciones realizadas. Algunas acciones se toman automáticamente; otros se toman manualmente o se completan después de su aprobación. <br/>- Seleccione la **pestaña** Pendiente para ver las acciones que requieren aprobación para continuar. <br/><br/>Para obtener más información sobre el Centro de acciones, vea Revisar acciones [de corrección en el Centro de acciones](mdb-review-remediation-actions.md). |
+| **Centro de actividades** | Le lleva a la lista de acciones de respuesta, incluidas las acciones completadas o pendientes. <br/>- Seleccione la **pestaña** Historial para ver las acciones realizadas. Algunas acciones se toman automáticamente; otros se toman manualmente o se completan después de su aprobación. <br/>- Seleccione la **pestaña** Pendiente para ver las acciones que requieren aprobación para continuar. <br/><br/>Para obtener más información sobre el Centro de acciones, vea Revisar acciones [de corrección en el Centro de acciones](mdb-review-remediation-actions.md). |
 | **Análisis de amenazas** | Le lleva a una vista de las amenazas actuales y le proporciona una vista de un vistazo del panorama de amenazas. El análisis de amenazas también incluye informes e información de investigadores de seguridad de Microsoft. <br/><br/>Para obtener más información sobre el análisis de amenazas, consulte Seguimiento y respuesta a amenazas [emergentes a través del análisis de amenazas.](../defender-endpoint/threat-analytics.md) |
 | **Puntuación de seguridad** | Le proporciona una representación de la posición de seguridad de su empresa y ofrece sugerencias para mejorarla.<br/><br/>Para obtener más información acerca de la puntuación segura, consulte [Puntuación segura de Microsoft para dispositivos](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
 | **Learning central** | Proporciona acceso a la formación de seguridad y otros recursos a través de rutas de aprendizaje que se incluyen con la suscripción. Puedes filtrar por producto, nivel de habilidad, rol y mucho más. El centro de Learning puede ayudar a su equipo de seguridad a mejorar las características de seguridad & en Defender para empresas (versión preliminar) y más ofertas de [Microsoft,](../defender-endpoint/microsoft-defender-endpoint.md) como Microsoft Defender para endpoint y [Microsoft Defender](../office-365-security/defender-for-office-365.md)para Office 365 .  |

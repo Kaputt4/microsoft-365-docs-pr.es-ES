@@ -11,13 +11,13 @@ ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
-description: Exchange 2013 llegará a su fin de soporte técnico en abril de 2023. Use esta guía básica de planeación para prepararse para actualizar a Exchange Online o una versión más reciente de Exchange Server local.
-ms.openlocfilehash: a0596bf75f54216f0a2aa9ede26c18e7e20fbcac
-ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
+description: Exchange 2013 llegará a su fin de soporte técnico en abril de 2023. Use este plan de planeación para prepararse para actualizar a Exchange Online o a una versión posterior de Exchange Server local.
+ms.openlocfilehash: 2b949c113be16db97d68d92f2f1529245c287e48
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889894"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245140"
 ---
 # <a name="exchange-2013-end-of-support-roadmap"></a>Exchange plan de fin de soporte técnico de 2013
 
@@ -34,52 +34,50 @@ La mayoría de los productos de Microsoft tienen un ciclo de vida de soporte té
 - Correcciones de seguridad para vulnerabilidades que pueden hacer que el servidor sea vulnerable a infracciones de seguridad.
 - Actualizaciones de zona horaria.
 
-La instalación de Exchange 2013 seguirá en ejecución después de esta fecha. Pero debido a los cambios enumerados anteriormente, se recomienda encarecidamente migrar desde Exchange 2019 tan pronto como sea posible.
+La instalación de Exchange 2013 seguirá en ejecución después de esta fecha. Pero debido a los cambios mencionados anteriormente, se recomienda encarecidamente migrar de Exchange 2013 a Exchange 2019 tan pronto como sea posible.
 
 
 ## <a name="what-are-my-options"></a>¿Cuáles son mis opciones?
 
 Es un buen momento para explorar sus opciones y preparar un plan de migración. Puede:
 
-- Migre completamente a Microsoft 365. Migre los buzones mediante la migración total, híbrida mínima o híbrida completa. A continuación, quite los servidores Exchange locales y Active Directory.
-- Migre Exchange servidores de 2013 a Exchange 2019 en los servidores locales.
+- Migre a Microsoft 365. Migre buzones, carpetas públicas y otros datos mediante la migración total, híbrida mínima o híbrida completa. A continuación, quite los servidores Exchange locales y Active Directory.
+- Actualización Exchange 2013. Pase a Exchange 2019 para los servidores locales.
 
 > [!IMPORTANT]
-> Si su organización decide migrar buzones a Microsoft 365 pero planea mantener DirSync o Azure AD Conectar en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor de Microsoft Exchange local. Si quita todos los servidores Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online porque el origen de la autoridad permanece en su Active Directory local. Los cambios deben realizarse allí. En este escenario, tiene las siguientes opciones:
+> Si su organización decide migrar buzones a Microsoft 365 pero planea seguir usando Azure AD Conectar para administrar cuentas de usuario en Active Directory, debe mantener al menos un servidor de Microsoft Exchange local. Si quita todos los servidores Exchange, no podrá realizar cambios en los destinatarios Exchange en Exchange Online porque el origen de la autoridad es su Active Directory local. En este escenario, tiene las siguientes opciones:
 >
->- *Se recomienda:* Si migra los buzones a Microsoft 365 y actualiza los servidores antes del 11 de abril de 2023, use Exchange 2013 para conectarse a Microsoft 365 y migrar buzones. A continuación, Exchange 2013 a Exchange 2019 y retirar los servidores Exchange 2013.
->- Si no completa la migración de buzones de correo y la actualización del servidor local antes del 11 de abril de 2023, actualice primero los servidores locales de Exchange 2013 Exchange 2019. A continuación, Exchange 2019 para conectarse a Microsoft 365 y migrar buzones.
+>- *Se recomienda:* Migre los buzones Microsoft 365 y actualice su entorno a Exchange 2019 antes del 11 de abril de 2023. Use Exchange 2013 para conectarse a Microsoft 365 y migrar buzones. Después, actualice de Exchange 2013 a Exchange 2019 y desmantela los servidores que Exchange 2013.
+>- Si no puede completar una migración a Exchange Online y actualizar los servidores locales antes del 11 de abril de 2023, actualice primero de Exchange 2013 Exchange Exchange 2019 y, a continuación, use Exchange 2019 para migrar buzones a Microsoft 365.
 
-> [!NOTE]
-> Es un poco más complicado, pero también puede migrar buzones a Microsoft 365 mientras migra los servidores locales de Exchange 2013 a Exchange 2016.
-
-Estas son las tres rutas de acceso que puede tomar para evitar el fin de la compatibilidad Exchange Server 2010.
+Estas son las tres rutas de acceso que puede tomar para evitar el fin de la compatibilidad con Exchange Server 2013.
 
 ## <a name="migrate-to-microsoft-365"></a>Migrar a Microsoft 365
 
-Migrar el correo electrónico a Microsoft 365 es la mejor y más sencilla opción para ayudarle a retirar su Exchange implementación de 2013. Con una migración a Microsoft 365, puede realizar un solo salto de la tecnología antigua a las características actuales, incluidas:
+Migrar a Microsoft 365 es la mejor y más sencilla opción para ayudarle a retirar su Exchange de 2013. Con una migración a Microsoft 365, puede realizar un solo salto de la tecnología antigua a las características actuales, incluidas:
 
-- Capacidades de cumplimiento como directivas de retención, In-Place y retención por juicio, exhibición de documentos electrónicos local y mucho más.
-- Microsoft Teams.
-- Power BI.
-- Bandeja de entrada centrada.
-- MyAnalytics.
+- Buzones más grandes con mayor resistencia de datos;
+- Capacidades de seguridad como la protección contra correo no deseado y antimalware, 
+- Capacidades de cumplimiento como prevención de pérdida de datos, directivas de retención, In-Place y retención por juicio, exhibición de documentos electrónicos local y mucho más;
+- Integración con SharePoint Online, OneDrive, Teams, Power BI y otros servicios Microsoft 365 web;
+- Bandeja de entrada centrada; y
+- Análisis avanzado y Viva Ideas.
 
 Microsoft 365 obtiene primero nuevas características y experiencias, para que su organización pueda empezar a usarlos de inmediato. Además, no tendrá que preocuparse de:
 
-- Comprar y mantener hardware.
-- Pagar para que los servidores se calienten y se enfríen.
-- Mantenerse al día en las correcciones de seguridad, producto y zona horaria.
-- Mantener el almacenamiento y el software para admitir los requisitos de cumplimiento.
-- Actualización a una nueva versión de Exchange. Siempre estás en la versión más reciente de Exchange en Microsoft 365.
+- Comprar y mantener hardware;
+- Pagar para ejecutar y refrescar los servidores;
+- Mantener los servidores actualizados en las correcciones de seguridad, producto y zona horaria;
+- Mantener el almacenamiento del servidor y el software para admitir los requisitos de cumplimiento; o
+- Actualizar a una nueva versión de Exchange; siempre estás en la última versión con Microsoft 365.
 
 ### <a name="how-should-i-migrate-to-microsoft-365"></a>¿Cómo debo migrar a Microsoft 365?
 
 Según la organización, tiene algunas opciones para llegar a Microsoft 365. En primer lugar, debe tener en cuenta algunas cosas, como:
 
-- Número de puestos o buzones que necesita mover.
-- Cuánto tiempo desea que dure la migración.
-- Tanto si necesita una integración perfecta entre la instalación local y Microsoft 365 durante la migración.
+- El número de buzones que necesita mover;
+- Cuánto tiempo desea que dure la migración; y
+- Tanto si necesita una integración perfecta entre el entorno local y Microsoft 365 durante la migración.
 
 En esta tabla se muestran las opciones de migración y los factores más importantes que determinan qué método usar.
 
@@ -89,9 +87,9 @@ En esta tabla se muestran las opciones de migración y los factores más importa
 
 |Opción de migración|Tamaño de la organización|Duración|
 |---|---|---|
-|Migración total|Menos de 150 puestos|Una semana o menos|
-|Migración híbrida mínima|Menos de 150 puestos|Unas semanas o menos|
-|Migración híbrida completa|Más de 150 puestos|Unas semanas o más|
+|Migración total|Menos de 150 buzones|Una semana o menos|
+|Migración híbrida mínima|Menos de 150 buzones|Unas semanas o menos|
+|Migración híbrida completa|Más de 150 buzones|Unas semanas o más|
 |
 
 En las secciones siguientes se ofrece información general sobre estos métodos. Para obtener más información, vea [Decide on a migration path](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27).
@@ -156,11 +154,11 @@ Aspectos a tener en cuenta sobre la migración híbrida completa:
 - Los usuarios no necesitan configurar un nuevo perfil de Outlook en la mayoría de sus dispositivos, aunque es posible que algunos teléfonos Android más antiguos necesiten un perfil nuevo. Los usuarios no necesitarán volver a descargar su correo electrónico.
 
 > [!IMPORTANT]
-> Si su organización decide migrar buzones a Microsoft 365 pero tiene previsto mantener DirSync o Azure AD Conectar en su lugar para seguir administrando cuentas de usuario desde Active Directory local, debe mantener al menos un servidor Exchange local. Si se quitan Exchange servidores, no podrá realizar cambios en los Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en su Active Directory local y es necesario realizar los cambios allí.
+> Si su organización decide migrar buzones a Microsoft 365 pero planea mantener Azure AD Conectar para administrar cuentas de usuario en Active Directory, debe mantener al menos un servidor Exchange local. Si se quitan Exchange servidores, no podrá realizar cambios en Exchange destinatarios. Esto se debe a que el origen de la autoridad es Active Directory y es necesario realizar cambios allí.
 
 Si una migración híbrida completa suena adecuada para usted, vea los siguientes recursos útiles:
 
-- [Exchange Asistente para implementación](/exchange/exchange-deployment-assistant)
+- [Exchange de implementación](/exchange/exchange-deployment-assistant)
 - [Implementaciones híbridas de Exchange Server](/exchange/exchange-hybrid)
 - [Asistente de configuración híbrida](/exchange/hybrid-configuration-wizard)
 - [Preguntas más frecuentes acerca del asistente de configuración híbrida](/exchange/hybrid-configuration-wizard-faqs)
@@ -168,33 +166,30 @@ Si una migración híbrida completa suena adecuada para usted, vea los siguiente
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Actualizar a una versión más reciente de Exchange Server local
 
-Creemos firmemente que obtiene el mejor valor y experiencia de usuario mediante la migración completa a Microsoft 365. Pero entendemos que algunas organizaciones necesitan mantener algunos servidores Exchange locales. Esto puede deberse a requisitos normativos, para garantizar que los datos no se almacenan en un centro de datos externo, porque tiene una configuración única o requisitos que no se pueden cumplir en la nube, o porque necesita Exchange para administrar buzones en la nube porque todavía usa Active Directory local. En cualquier caso, si mantiene Exchange local, debe asegurarse de que el entorno de Exchange 2013 se actualice al menos Exchange 2016 o Exchange 2019.
+Creemos firmemente que obtiene el mejor valor y experiencia de usuario mediante la migración completa a Microsoft 365. Pero entendemos que algunas organizaciones necesitan mantener algunos servidores Exchange locales. Esto puede deberse a requisitos normativos, para garantizar que los datos no se almacenan en un centro de datos externo, porque tiene una configuración única o requisitos que no se pueden cumplir en la nube, o porque necesita Exchange para administrar buzones en la nube porque todavía usa Active Directory local. En cualquier caso, si mantiene Exchange local, debe asegurarse de que Exchange entorno de 2013 se actualice.
 
-Para obtener la mejor experiencia, se recomienda actualizar el entorno local restante a Exchange 2019. No es necesario instalar Exchange Server 2016 si desea pasar directamente de Exchange Server 2013 a Exchange Server 2019.
-
-Exchange 2019 incluye todas las características de versiones anteriores de Exchange. Coincide más estrechamente con la experiencia disponible con Microsoft 365, aunque algunas características solo están disponibles en Microsoft 365. Echa un vistazo a algunas de las cosas que te han faltado:
+Para obtener la mejor experiencia, se recomienda actualizar el entorno local restante a Exchange 2019. No es necesario instalar Exchange Server 2016 porque puede ir directamente de Exchange Server 2013 a Exchange Server 2019. Exchange 2019 coincide más estrechamente con la experiencia disponible con Microsoft 365, aunque algunas características solo están disponibles en Microsoft 365.
 
 
 
 ****
+A continuación se muestran aspectos importantes que debe saber sobre la actualización Exchange 2013:
 
-|Item|Más información|
+|Elemento|Más información|
 |---|---|
-|Fechas de finalización del soporte técnico|Al Exchange 2013, cada versión de Exchange tiene su propia fecha de fin de soporte: <p> Exchange 2013 - Abril de 2023 <p> Exchange 2016 - Octubre de 2025 <p> Cuanto antes sea la fecha de finalización de la compatibilidad, más pronto tendrá que realizar otra migración. Abril de 2023 está mucho más cerca de lo que crees.|
-|Ruta de migración a Exchange 2016 o 2019|La ruta de migración de Exchange 2013 a una versión más reciente es la misma si elige Exchange 2016 o Exchange 2019: <p> Instale Exchange 2016 o 2019 en su organización Exchange 2013. <p> Mueva servicios y otra infraestructura a Exchange 2016 o 2019. <p> Mueva buzones y carpetas públicas a Exchange 2013 o 2016 Retirar los Exchange servidores de 2013.|
-|Coexistencia de versiones|Al migrar a Exchange 2016 o Exchange 2019, puede instalar cualquiera de las versiones en una organización Exchange 2013. Esto le permite instalar uno o más servidores Exchange 2016 o Exchange 2019 y realizar la migración.|
-|Hardware de servidor|Los requisitos de hardware del servidor han cambiado Exchange 2013. Asegúrese de que el hardware es compatible. Encontrará más información sobre los requisitos de hardware para cada versión aquí: <p> - [Exchange del sistema de 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) </br> - [Exchange del sistema de 2019](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019) <p>Con las mejoras significativas en el rendimiento de Exchange y el aumento de la capacidad informática y de almacenamiento en servidores más recientes, es probable que necesite menos servidores para admitir el mismo número de buzones.|
-|Versión del sistema operativo|Las versiones mínimas admitidas del sistema operativo para cada versión son: <p>- Exchange 2016 : Windows Server 2012 </br>- Exchange 2019: Windows Server 2019 <p> Encontrará más información sobre la compatibilidad del sistema operativo [en Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
-|Nivel funcional del bosque de Active Directory|Los niveles funcionales mínimos admitidos de bosque de Active Directory para cada versión son: <p>- Exchange 2016: Windows Server 2008 R2 SP1 </br>- Exchange 2019: Windows Server 2012 servidores de Active Directory R2 <p> Encontrará más información sobre la compatibilidad de nivel funcional del bosque [en Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
-|Office cliente|Las versiones mínimas Office cliente admitidas para cada versión son: <p> Exchange 2016: Office 2010 (con las actualizaciones más recientes) <p> Encontrará más información sobre el Office cliente en [Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
+|Fechas de finalización del soporte técnico|Al Exchange 2013, cada versión de Exchange tiene su propia fecha de fin de soporte: <p> Exchange 2013 - Abril de 2023 <p> Abril de 2023 está mucho más cerca de lo que crees.|
+|Ruta de migración a Exchange 2019|La ruta de migración de Exchange 2013 a una versión más reciente es sencilla: <p> Instale Exchange 2019 en su organización Exchange 2013. <p> Mover servicios y datos de Exchange 2013 a Exchange 2019 y retirar Exchange servidores de 2013.|
+|Hardware de servidor|Los requisitos de hardware del servidor han cambiado Exchange 2013. Asegúrese de que el hardware es compatible. Encontrará más información sobre los requisitos de hardware aquí: <p> [Exchange del sistema de 2019](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019) <p>Con las mejoras significativas en el rendimiento de Exchange y el aumento de la capacidad informática y de almacenamiento en servidores más recientes, es probable que necesite menos servidores para admitir el mismo número de buzones.|
+|Versión del sistema operativo|La versión mínima del sistema operativo compatible para Exchange 2019 es Windows Server 2019. Windows compatibilidad con Server 2022 próximamente <p> Encontrará más información sobre la compatibilidad del sistema operativo [en Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
+|Nivel funcional del bosque de Active Directory|El nivel funcional mínimo compatible del bosque de Active Directory es Windows Server 2012 R2. Encontrará más información sobre la compatibilidad de nivel funcional del bosque [en Exchange Matriz de compatibilidad](/exchange/plan-and-deploy/supportability-matrix).|
+|Office cliente|La versión de cliente Office mínima admitida también se documenta en la [Exchange de compatibilidad.](/exchange/plan-and-deploy/supportability-matrix?view=exchserver-2019#clients)|
 |
 
 Use los siguientes recursos para ayudar con la migración:
 
-- [Exchange Asistente para implementación](/exchange/exchange-deployment-assistant)
-- Cambios de esquema de Active Directory para Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
-- Requisitos del sistema Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
-
+- [Exchange de implementación](/exchange/exchange-deployment-assistant)
+- Cambios en el esquema de Active Directory [para Exchange 2019](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2019)
+- Requisitos [del sistema para Exchange 2019](/exchange/plan-and-deploy/system-requirements?view=exchserver-2019)
 
 
 ## <a name="what-if-i-need-help"></a>¿Qué ocurre si necesito ayuda?

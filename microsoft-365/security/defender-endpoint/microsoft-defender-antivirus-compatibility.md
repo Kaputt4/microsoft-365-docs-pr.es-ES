@@ -15,13 +15,15 @@ ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 01/19/2022
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 81b2a366320fef5afa3be4a2255ebb0c35e83142
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 2b741f2d2e4a7bc1a4afe43a552924672aeeba99
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156513"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244660"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus de Microsoft Defender compatibilidad con otros productos de seguridad
 

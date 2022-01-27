@@ -18,13 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.date: 01/18/2022
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 6cab8e776bea3d9317794df9f96e44610948a0a1
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: dd3bbc2ef37879dd90509de35c45c8aa0c5aa9e3
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156201"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245380"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -323,7 +325,7 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Ver información sobre intentos de manipulación](#view-information-about-tampering-attempts).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Ayudar a proteger Windows equipos con Endpoint Protection para Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 

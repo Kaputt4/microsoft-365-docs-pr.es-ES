@@ -20,18 +20,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b9fb6afa9878f09871823d54d69edf677c1d65a2
-ms.sourcegitcommit: b6676f2dd7c42b0b5eb3ca2790b13e10177a5758
+ms.openlocfilehash: 5f60816754dd90699a211a8f75baf448ba490924
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62008990"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244864"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
-
-**Se aplica a**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
 En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos y identidades de confianza cero para proteger los clientes de correo electrónico y correo electrónico de la organización que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las directivas comunes de identidad y acceso a [dispositivos](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
 
@@ -111,7 +107,7 @@ Con las nuevas funcionalidades Cifrado de mensajes de Office 365 (OME), que apro
 
 Para obtener más información, vea [Set up new Cifrado de mensajes de Office 365 capabilities](../../compliance/set-up-new-message-encryption-capabilities.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 ![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

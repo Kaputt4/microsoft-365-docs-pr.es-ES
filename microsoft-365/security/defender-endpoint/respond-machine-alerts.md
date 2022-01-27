@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 133bdc1e14c9e4b0c93ea190b4a6c58a529b2f16
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f6bce3370c5b59a6c120b810446bf16cd5364634
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940312"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244720"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -224,8 +224,8 @@ También se muestran todos los demás detalles relacionados, por ejemplo, fecha 
 
 ![Imagen del centro de acción con información.](images/action-center-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
-- [Acciones de respuesta manuales en Microsoft Defender para endpoint plan 1 (versión preliminar)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Acciones de respuesta manuales en Microsoft Defender para el plan de extremo 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Imprecisión de informe](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

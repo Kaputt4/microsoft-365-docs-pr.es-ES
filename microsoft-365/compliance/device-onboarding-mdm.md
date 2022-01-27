@@ -1,5 +1,5 @@
 ---
-title: Incorporación Windows 10 y Windows 11 dispositivos con herramientas de administración de dispositivos móviles
+title: Incorporar dispositivos Windows 10 y Windows 11 con herramientas de Administración de dispositivos móviles
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -15,18 +15,18 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Usa las herramientas de administración de dispositivos móviles para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 1454afceb8537cdb88b75f99924a5d6475e117cc
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 1db4441f6411d6e3c623dbf5daa31c4028729e7e
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950922"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244900"
 ---
-# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>Incorporación Windows 10 y Windows 11 dispositivos con herramientas de administración de dispositivos móviles
+# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>Incorporar dispositivos Windows 10 y Windows 11 con herramientas de Administración de dispositivos móviles
 
 **Se aplica a:**
 
-- [Microsoft 365 prevención de pérdida de datos de punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
+- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
 - [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 Puedes usar soluciones de administración de dispositivos móviles (MDM) para configurar dispositivos. Microsoft 365 protección de la información admite MDM al proporcionar OMA-URIs para crear directivas para administrar dispositivos.
@@ -61,6 +61,8 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 5. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los administradores de red que implementarán el paquete. Debe tener un archivo denominado *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
+
+
 6. Use la Microsoft Intune de configuración personalizada para implementar la siguiente configuración de OMA-URI compatible.
 
     ```text
@@ -68,8 +70,8 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
     Date type: String
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
-
-Para obtener más información sobre Microsoft Intune configuración de directiva, [consulte Windows 10 configuración de directiva en Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+> [!NOTE]
+> Si Microsoft Defender para endpoint ya está configurado, puedes **activar** la incorporación de dispositivos y el paso 6 ya no es necesario.
 
 > [!NOTE]
 > La **directiva Estado de mantenimiento para dispositivos fuera deborde** usa propiedades de solo lectura y no se puede corregir.

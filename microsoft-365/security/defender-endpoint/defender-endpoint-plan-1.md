@@ -13,14 +13,16 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 26643ebf57b8d19499b5d8c0d0c9d0512f0d1866
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 50dbe395bee852601aae8e834514c6bbac3dd84d
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156417"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62245056"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Información general sobre Microsoft Defender para el plan 1 de punto de conexión
 
@@ -76,8 +78,8 @@ Las acciones de respuesta manual son acciones que el equipo de seguridad puede r
 
 | Archivo/dispositivo | Acción | Descripción |
 |:---|:---|:---|
-| Dispositivo | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
-| Dispositivo | Aislar el dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
+| Device | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
+| Device | Aislar el dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
 | Archivo | Detener y poner en cuarentena un archivo |Impide que los procesos se ejecuten y ponga en cuarentena los archivos asociados. |
 | Archivo | Agregar un indicador para bloquear o permitir un archivo | Los indicadores de bloqueo impiden que los archivos ejecutables portátiles se lean, escriban o ejecuten en dispositivos. <p>Los indicadores allow impiden que los archivos se bloqueen o corrijan. |
 
@@ -129,7 +131,7 @@ Para obtener más información, consulta [Controlar dispositivos USB y medios ex
 Con la protección web, puede proteger los dispositivos de su organización frente a amenazas web y contenido no deseado. La protección web incluye protección contra amenazas web y filtrado de contenido web.
 
 - [La protección contra amenazas](web-threat-protection.md) web impide el acceso a sitios de phishing, vectores de malware, sitios de vulnerabilidad, sitios que no son de confianza o de baja reputación y sitios que bloquea explícitamente.
-- [El filtrado de contenido web](web-content-filtering.md) (versión preliminar) impide el acceso a determinados sitios en función de su categoría. Las categorías pueden incluir contenido para adultos, sitios de ocio, sitios de responsabilidad legal y mucho más.
+- [El filtrado de contenido web](web-content-filtering.md) impide el acceso a determinados sitios en función de su categoría. Las categorías pueden incluir contenido para adultos, sitios de ocio, sitios de responsabilidad legal y mucho más.
 
 Para obtener más información, vea [protección web](web-protection-overview.md).
 
@@ -167,7 +169,7 @@ Con el control de acceso basado en roles (RBAC), el administrador de seguridad p
 
 Para obtener más información, vea [Manage portal access using role-based access control](rbac.md).
 
-### <a name="reporting"></a>Generación de informes
+### <a name="reporting"></a>Reporting
 
 El Microsoft 365 Defender web ( ) proporciona un acceso fácil a la información sobre las amenazas detectadas y [https://security.microsoft.com](https://security.microsoft.com) las acciones para hacer frente a dichas amenazas. 
 

@@ -20,25 +20,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: 96aeb70da1bf31ca48858bef8db08911157ece71
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 01fb2a01903eba98f9659d0fd6d85fff4507d72f
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121234"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244696"
 ---
-# <a name="zero-trust-identity-and-device-access-configurations"></a>Configuración de identidad de confianza cero y acceso a dispositivos
-
-**Se aplica a**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
-
-<!--
-The modern security perimeter of your organization now extends beyond your network to include users accessing cloud-based apps from any location with a variety of devices. Your security infrastructure needs to determine whether a given access request should be granted and under what conditions.
-
-This determination should be based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
-
---> 
+# <a name="zero-trust-identity-and-device-access-configurations"></a>Configuraciones de identidad y acceso a dispositivos de Confianza cero
 
 Las arquitecturas de seguridad que dependen de firewalls de red y redes privadas virtuales (VPN) para aislar y restringir el acceso a los recursos y servicios tecnológicos de una organización ya no son suficientes para un personal que requiere regularmente acceso a aplicaciones y recursos que existen más allá de los límites tradicionales de la red corporativa.
 
