@@ -24,13 +24,13 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
-ms.date: 07/31/2020
-ms.openlocfilehash: 0bbcb8ac5a1b12ae781636753c734a1009dbc9ef
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.date: 01/25/2022
+ms.openlocfilehash: 755c5c90fb99204f2bef932961a235a7756a4dff
+ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941377"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62218974"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -86,10 +86,9 @@ Puede enviar su solicitud de Fapiao a nuestro [sistema de administración de Fap
 ::: moniker-end
 
 > [!NOTE]
-> 
+>
 > Los servicios de Microsoft 365 no proporcionan recibos de pago.
 > Para los pagos con tarjeta de crédito, use la factura y el extracto de facturación de la tarjeta de crédito para que coincidan con el pago.
-
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Recibir una copia del extracto de facturación por correo electrónico
 
@@ -109,12 +108,24 @@ Puede elegir recibir una copia del extracto de facturación como datos adjuntos 
 ::: moniker range="o365-21vianet"
 
 1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notificaciones de facturación</a>.
-    
+
 ::: moniker-end
 
 2. En **¿Recibir extracto de facturación como datos adjuntos de correo electrónico?**, cambie el botón de alternancia a **Activado**.
 
     Puede dejar de recibir los correos electrónicos con el extracto de facturación en cualquier momento. Para ello, deberá cambiar el botón de alternancia a **Desactivado**.
+
+## <a name="run-the-unknown-charge-diagnostic"></a>Ejecutar el diagnóstico de cargos desconocidos
+
+Como administrador global de Microsoft 365, puede usar una herramienta de diagnóstico que se ejecuta en el Centro de administración de Microsoft 365 para investigar cargos inesperados de Microsoft que aparecen en el extracto de su banco o tarjeta de crédito.
+
+> [!NOTE]
+> El diagnóstico de cargos desconocidos solo está disponible para los clientes que han comprado sus productos y servicios desde Microsoft.com, incluidos Microsoft 365 Enterprise, Educación y para organizaciones sin fines de lucro.
+
+Seleccione el vínculo **Ejecutar pruebas** que aparece a continuación para abrir la herramienta de diagnóstico en el Centro de administración de Microsoft 365.
+
+>[!div class="nextstepaction"]
+>[Ejecutar pruebas: cargo desconocido](https://aka.ms/PillarUnknownCharge)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
