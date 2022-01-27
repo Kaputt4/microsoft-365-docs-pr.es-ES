@@ -16,20 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: ecb4a580eb3ada9bcb3d38a8bdfdbc12c9dc7107
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
+ms.openlocfilehash: d34d2e2348c2e2319e31410c144565108ec9ae5f
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049353"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241580"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Este escenario no se admite para [registros normativos](records-management.md#records) o etiquetas predeterminadas para una estructura de organización, como un conjunto de documentos o una biblioteca en SharePoint, o una carpeta en Exchange. Estos escenarios requieren una [directiva de etiqueta de retención publicada](create-apply-retention-labels.md#step-2-publish-retention-labels).
+> Este escenario no se admite para [registros normativos](records-management.md#records) o etiquetas predeterminadas para una estructura de organización, como un conjunto de documentos o una biblioteca en SharePoint, o una carpeta en Exchange. Estos escenarios requieren una [directiva de etiqueta de retención publicada](create-apply-retention-labels.md).
 
 Una de las características más útiles de las [etiquetas de retención](retention.md) es la capacidad de aplicarlas automáticamente a contenido que coincida con las condiciones especificadas. En ese caso, los usuarios de su organización no necesitan aplicar las etiquetas de retención. Microsoft 365 lo hace automáticamente.
   
@@ -59,59 +59,29 @@ Utilice las siguientes instrucciones para los dos pasos de administrador.
 > - Aplicar una etiqueta de retención predeterminada para SharePoint y Outlook
 > - Aplicar una etiqueta de retención al correo electrónico mediante el uso de reglas de Outlook
 >
-> Para estos escenarios, consulte [Crear y aplicar etiquetas de retención en aplicaciones](create-apply-retention-labels.md).
+> Para estos escenarios, consulte [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no va a iniciar sesión como administrador global, consulte [Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no inicia sesión como administrador global, consulte la información de permisos para la [administración de registros](get-started-with-records-management.md#permissions) o la [gobernanza de la información](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), en función de la solución que use.
+
+Asegúrese de que ha [creado las etiquetas de retención](file-plan-manager.md#create-retention-labels) que desea aplicar a los elementos.
+
+## <a name="how-to-create-an-auto-apply-retention-label-policy"></a>Cómo crear una directiva de etiqueta de retención que se aplique de forma automática
 
 Antes de crear la directiva de etiqueta de retención, decida si será **adaptable** o **estática**. Para obtener más información, vea [Ámbitos de directivas adaptables o estáticas para retención](retention.md#adaptive-or-static-policy-scopes-for-retention). Si decide usar una directiva adaptable, debe crear uno o más ámbitos adaptables antes de crear la directiva de etiqueta de retención. Luego deberá seleccionarlos durante el proceso de creación de directivas de etiqueta de retención. Para obtener instrucciones, vea [Información de configuración para ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
-
-## <a name="how-to-auto-apply-a-retention-label"></a>Cómo aplicar automáticamente una etiqueta de retención
-
-En primer lugar, cree la etiqueta de retención. A continuación, cree una directiva automática para aplicar dicha etiqueta. Si ya ha creado la etiqueta de retención, consulte [Crear una directiva automática](#step-2-create-an-auto-apply-policy).
-
-Las instrucciones de navegación dependerán de si está usando o no la [administración de registros](records-management.md). Se proporcionan instrucciones para ambos escenarios.
-
-### <a name="step-1-create-a-retention-label"></a>Paso 1: Cree una etiqueta de retención
-
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes ubicaciones:
-    
-    - Si utiliza la administración de registros:
-        - **Soluciones** > **Administración de registros** > pestaña **Plan de archivos** tab > **+ Crear una etiqueta** > **Etiqueta de retención**
-        
-    - Si no está utilizando la administración de registros:
-       - **Soluciones** > **Gobierno de información** > pestaña **Etiquetas** > + **Crear una etiqueta**
-    
-    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
-
-2. Siga las instrucciones del asistente en la configuración.
-    
-    Para obtener más información sobre la configuración de retención, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content). Sin embargo, si la etiqueta se usará para [n datos adjuntos en la nube](#auto-apply-labels-to-cloud-attachments), asegúrate de configurar el inicio del período de retención para que sea **Cuando se etiquetaron los elementos**.
-    
-    Si utiliza la administración de registros:
-    
-    - Para obtener información sobre los descriptores del plan de archivos, consulte [Usar plan de archivos para administrar etiquetas de retención](file-plan-manager.md) 
-    
-    - Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
-
-3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplique la etiqueta automáticamente o simplemente guárdela: seleccione **Aplicar esta etiqueta automáticamente a un tipo de contenido específico** y seleccione **Finalizado** 
-
-Para editar una etiqueta existente, selecciónela y seleccione la opción **Editar etiqueta** para iniciar la configuración **Editar etiqueta de retención** que le permite cambiar las descripciones de las etiquetas y cualquier [configuración válida](#updating-retention-labels-and-their-policies) del paso 2.
-
-### <a name="step-2-create-an-auto-apply-policy"></a>Paso 2: Cree una directiva de aplicación automática
 
 Cuando se crea una directiva de aplicación automática, se selecciona una etiqueta de retención para aplicarla automáticamente a contenido, en función de las condiciones especificadas.
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes locaciones:
     
-    - Si utiliza la administración de registros:**Gobierno de información**:
-        - **Soluciones** > **Administración de registros** > pestaña de **Directivas de etiquetas** > **Aplicar etiqueta automáticamente**
+    - Si utiliza la administración de registros:
+        - **Soluciones** > **Administración de registros** > > pestaña **Directivas de etiquetas** > **Aplicar automáticamente una etiqueta**
     
-    - Si no está utilizando la administración de registros:
+    - Si usa el gobierno de la información:
         - **Soluciones** > **Gobierno de información** > pestaña de **Directivas de etiquetas** > **Aplicar etiqueta automáticamente**
     
-    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
+    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**.
 
 2. Escriba un nombre y una descripción para esta directiva de etiquetado automático y, a continuación, seleccione **Siguiente**.
 
@@ -129,7 +99,7 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
 
 6. Siga las indicaciones del asistente para seleccionar una etiqueta de retención y, a continuación, revise y envíe las opciones de configuración.
 
-Para editar una directiva de aplicación automática existente, selecciónela para iniciar la configuración **Editar directiva de retención** que le permite cambiar la etiqueta de retención seleccionada y cualquier [configuración válida](#updating-retention-labels-and-their-policies) del paso 2.
+Para editar una directiva de etiqueta de retención existente (el tipo de directiva es **aplicar automáticamente**), selecciónela y, a continuación, seleccione la opción **Editar** para iniciar la configuración de **Editar directiva de retención**.
 
 Después de etiquetar el contenido con una directiva de la etiqueta de aplicación automática, la etiqueta aplicada no se puede quitar o cambiar automáticamente cambiando el contenido o la directiva, o mediante una nueva directiva de etiqueta de aplicación automática. Para obtener más información, consulte [Solo una etiqueta de retención a la vez](retention.md#only-one-retention-label-at-a-time).
 
