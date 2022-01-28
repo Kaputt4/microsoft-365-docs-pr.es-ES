@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: d3b8ab3fac4156b638a0508bbac0bebfc2dfdee6
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: dcc3cb8379dd095a110e1307819e9256d9fa84bb
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327547"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241544"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -40,7 +40,7 @@ Para obtener más información sobre las directivas de retención y cómo funcio
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-El administrador global de su organización tiene permisos totales para crear y modificar directivas de retención. Si no va a iniciar sesión como administrador global, consulte [Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+El administrador global de su organización tiene permisos totales para crear y modificar directivas de retención. Si no está iniciando sesión como administrador global, consulte la [información de permisos de gobernanza de la información](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
 
 Antes de crear la directiva de retención, decida si será **adaptable** o **estática**. Para obtener más información, vea [Ámbitos de directivas adaptables o estáticas para retención](retention.md#adaptive-or-static-policy-scopes-for-retention). Si decide usar una directiva adaptable, debe crear uno o más ámbitos adaptables antes de crear la directiva de retención. Luego deberá seleccionarlos durante el proceso de creación de directivas de retención. Para obtener instrucciones, vea [Información de configuración para ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
 
@@ -90,8 +90,8 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
         
        De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](retention-settings.md#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). Pero, antes de cambiar el valor predeterminado, tenga en cuenta las siguientes consecuencias para una directiva de retención que elimina los mensajes cuando está configurada para incluir o excluir:
         
-        - En el caso de los mensajes de los chats de grupo y los mensajes de los canales privados, como se guarda una copia de los mensajes en el buzón de cada usuario incluido en el chat, se seguirán devolviendo copias de los mensajes en los resultados de eDiscovery de los usuarios a los que no se les asignó la directiva.
-        - En el caso de los usuarios a los que no se les haya asignado la directiva, los mensajes eliminados se devolverán en los resultados de la búsqueda de Teams, pero no mostrarán el contenido del mensaje como resultado de la eliminación permanente de la directiva asignada a los usuarios.
+        - En el caso de los mensajes de chat grupales y los mensajes de canales privados, debido a que se guarda una copia de los mensajes en el buzón de cada usuario que está incluido en la conversación, se seguirán devolviendo copias de los mensajes en los resultados de eDiscovery de los usuarios a los que no se les asignó la directiva.
+        - Para los usuarios a los que no se les asignó la directiva, los mensajes eliminados como resultado de la directiva se mostrarán en los resultados de búsqueda de Teams, pero no mostrarán el contenido del mensaje.
 
 5. En la página **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
 
@@ -232,3 +232,9 @@ En primer lugar, la directiva de retención debe distribuirse a las ubicaciones 
 Cuando la configuración de la directiva de retención ya se haya aplicado al contenido, se aplicará automáticamente un cambio en la configuración de la directiva a este contenido y al contenido nuevo.
 
 Algunas opciones de configuración no se pueden cambiar después de crear y guardar la directiva, entre las que se incluyen el nombre de la directiva de retención, el tipo de ámbito (adaptable o estático) y la configuración de retención, excepto el período de retención.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Si algunos elementos de Exchange, SharePoint, OneDrive o Grupos de Microsoft 365 necesitan una configuración de retención diferente de la configuración de directiva de retención que ha configurado, [crear etiquetas de retención para estas excepciones](create-retention-labels-information-governance.md).
+
+Sin embargo, si busca la administración del ciclo de vida de elementos de gran valor para requisitos empresariales, legales o de mantenimiento de registros normativos, [use el plan de archivos para crear y administrar etiquetas de retención](file-plan-manager.md).
