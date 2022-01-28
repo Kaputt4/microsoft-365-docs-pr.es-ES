@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: f8d87ceadc3957d819931e95e6ed6359604be1b0
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: c3af2b179d5f33195ba61a7e236745d2b48c626a
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244876"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265720"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -294,7 +294,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     - En el caso de los tipos de información confidencial, puede seleccionar tipos de información integrados y personalizados.
     - En las opciones de uso compartido, puede elegir **solo con las personas de mi organización** o **con personas ajenas a mi organización**.
 
-    Si la única ubicación es **Exchange** o si selecciona **Reglas avanzadas**, hay condiciones adicionales que puede seleccionar:
+    Si la única ubicación es **Exchange** o si selecciona **Reglas avanzadas**, hay otras condiciones que puede seleccionar:
     - La dirección IP del remitente es
     - El dominio del destinatario es
     - El destinatario es
@@ -343,7 +343,7 @@ Las directivas automáticas se ejecutan continuamente hasta que se eliminan. Por
 
 ### <a name="monitoring-your-auto-labeling-policy"></a>Supervisión de la directiva de etiquetado automático
 
-Después de activar la directiva de etiquetado automático, puede ver el progreso del etiquetado de los archivos en las ubicaciones de SharePoint y OneDrive elegidas. Los correos electrónicos no se incluyen en el progreso del etiquetado porque se etiquetan automáticamente a medida que se envían.
+Después de activar la directiva de etiquetado automático, puede ver el progreso del etiquetado de los archivos en las ubicaciones de SharePoint y OneDrive elegidas. Los correos electrónicos no se incluyen en el progreso de etiquetado porque se etiquetan automáticamente a medida que se envían.
 
 El progreso del etiquetado incluye los archivos que va a etiquetar la directiva, los archivos etiquetados en los últimos 7 días y el total de archivos etiquetados. Debido al máximo de etiquetado de 25 000 archivos al día, esta información le proporciona visibilidad del progreso del etiquetado actual de la directiva y de cuántos archivos aún deben etiquetarse.
 
@@ -371,14 +371,14 @@ New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocatio
 
 Este comando crea una directiva de etiquetado automático para un sitio de SharePoint que especifique. Para una ubicación de OneDrive use en su lugar el parámetro *OneDriveLocation*.
 
-Para agregar sitios adicionales a una directiva de etiquetado automático existente:
+Para agregar más sitios a una directiva de etiquetado automático existente:
 
 ```powershell
 $spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
 Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
 
-Este comando especifica la URL de SharePoint adicional en una variable que luego se agrega a una directiva de etiquetado automático existente. Para agregar ubicaciones de OneDrive en su lugar, use el parámetro *AddOneDriveLocation* con una variable diferente, como *$OneDriveLocations*.
+Este comando especifica la nueva URL de SharePoint en una variable que luego se agrega a una directiva de etiquetado automático existente. Para agregar ubicaciones de OneDrive en su lugar, use el parámetro *AddOneDriveLocation* con una variable diferente, como *$OneDriveLocations*.
 
 Crear una nueva regla de directiva de etiquetado automático:
 
@@ -400,7 +400,7 @@ Para obtener más información sobre los cmdlets de PowerShell que son compatibl
 
 ## <a name="tips-to-increase-labeling-reach"></a>Sugerencias para aumentar el alcance del etiquetado
 
-Aunque el etiquetado automático es una de las formas más eficaces de clasificar, etiquetar y proteger los archivos de Office que posee su organización, es posible que pueda complementarlo con cualquiera de estos métodos adicionales para aumentar el alcance del etiquetado:
+Aunque el etiquetado automático es una de las formas más eficaces de clasificar, etiquetar y proteger los archivos de Office que posee su organización, compruebe si es posible que pueda complementarlo con cualquiera de estos métodos adicionales para aumentar el alcance del etiquetado:
 
 - Con SharePoint Syntex, puede [aplicar una etiqueta de confidencialidad a un modelo de comprensión de documentos](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), para que los documentos identificados en una biblioteca de SharePoint se etiqueten automáticamente.
 
