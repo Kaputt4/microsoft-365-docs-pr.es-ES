@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: d34d2e2348c2e2319e31410c144565108ec9ae5f
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 4af5d1a8dc3cb0c7f1ffc38b59556e3bd5220ac5
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241580"
+ms.locfileid: "62244912"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -131,7 +131,7 @@ Exchange:
 
 SharePoint y OneDrive:
 
-|Condición|Elementos nuevos o modificados |Elementos existentes (datos en reposo)|
+|Condición|Elementos nuevos o modificados |Elementos existentes |
 |:-----|:-----|:-----|
 |Tipos de información confidencial: integrado| Sí | Sí |
 |Tipos de información confidencial: personalizado| Sí | No |

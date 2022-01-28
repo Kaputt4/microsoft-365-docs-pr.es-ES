@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2427e2e9e162beb551d37da4280fa27bdf068069
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0f0b7a47a88fe5a94cdc37dc586ee23020723ae
+ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166751"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62244480"
 ---
 # <a name="next-generation-protection-overview"></a>Información sobre los servicios de protección de última generación
 
@@ -35,7 +35,7 @@ Microsoft Defender para punto de conexión incluye servicios de protección de �
 - [Protección dedicada y actualizaciones de productos](manage-updates-baselines-microsoft-defender-antivirus.md), que incluye actualizaciones relacionadas con mantener actualizado Antivirus de Microsoft Defender.
 
 > [!TIP]
-> La protección de última generación se incluye tanto en el plan 1 (versión preliminar) de Microsoft Defender para punto de conexión como en el plan 2. [Obtenga más información sobre Defender para punto de conexión Plan 1 (versión preliminar) y plan 2](defender-endpoint-plan-1-2.md)
+> La protección de última generación se incluye tanto en el plan 1 de Microsoft Defender para punto de conexión como en el plan 2. [Obtenga más información sobre Defender para punto de conexión Plan 1 y plan 2](defender-endpoint-plan-1-2.md)
 
 ## <a name="try-a-demo"></a>Pruebe una demostración.
 

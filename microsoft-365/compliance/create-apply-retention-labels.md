@@ -1,5 +1,5 @@
 ---
-title: Crear etiquetas de retención y aplicarlas en aplicaciones para conservar o eliminar contenido
+title: Publicar etiquetas de retención y aplicarlas en aplicaciones para conservar o eliminar contenido
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,22 +17,22 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 039a7cd1a67893c2daea5f329015c3d77e26f0b8
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+description: Instrucciones para publicar etiquetas de retención para poder aplicarlas en aplicaciones para conservar lo que necesita y eliminar lo que no.
+ms.openlocfilehash: 229d70816bff753ebacf7857cbcb773a7e958609
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327645"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62242016"
 ---
-# <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
+# <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publicar etiquetas de retención y aplicarlas en aplicaciones
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Este escenario es compatible con todas las configuraciones de la etiqueta de retención, incluyendo los [registros normativos](records-management.md#records).
 
-Utilice la siguiente información para ayudarle a crear y publicar [etiquetas de retención](retention.md) para, a continuación, aplicarlas a documentos y mensajes de correo electrónico.
+Use la siguiente información para publicar las [etiquetas de retención](retention.md) para poderlas aplicar, a continuación, a los documentos y correos electrónicos.
 
 Las etiquetas de retención le ayudan a conservar lo que necesita y a eliminar lo que no en el nivel de elemento (ya sea documento o correo electrónico). También se utilizan para declarar un elemento como registro como parte de una solución de[administración de registros](records-management.md) para sus datos de Microsoft 365.
 
@@ -48,63 +48,31 @@ Utilice las siguientes instrucciones para los dos pasos de administrador.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no va a iniciar sesión como administrador global, consulte [Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no inicia sesión como administrador global, consulte la información de permisos para la [administración de registros](get-started-with-records-management.md#permissions) o la [gobernanza de la información](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), en función de la solución que use.
+
+Asegúrese de que ha [creado las etiquetas de retención](file-plan-manager.md#create-retention-labels) que desea aplicar a los elementos.
+
+## <a name="how-to-publish-retention-labels"></a>Cómo publicar etiquetas de retención
 
 Antes de crear la directiva de etiqueta de retención, decida si será **adaptable** o **estática**. Para obtener más información, vea [Ámbitos de directivas adaptables o estáticas para retención](retention.md#adaptive-or-static-policy-scopes-for-retention). Si decide usar una directiva adaptable, debe crear uno o más ámbitos adaptables antes de crear la directiva de etiqueta de retención. Luego deberá seleccionarlos durante el proceso de creación de directivas de etiqueta de retención. Para obtener instrucciones, vea [Información de configuración para ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
-
-## <a name="how-to-create-and-publish-retention-labels"></a>Cómo crear y publicar etiquetas de retención
-
-Primero, cree sus etiquetas de retención. A continuación, cree una directiva de etiqueta para que las etiquetas estén disponibles para aplicarlas en las aplicaciones.
-
-El lugar donde se crean y configuran las etiquetas de retención depende de si se utiliza la administración de registros o no. Se proporcionan instrucciones para ambos escenarios.
-
-### <a name="step-1-create-retention-labels"></a>Paso 1: Cree etiquetas de retención
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a una de las siguientes ubicaciones:
-    
-    - Si utiliza la administración de registros:
-        - **Soluciones** > **Administración de registros** > pestaña **Plan de archivos** tab > **+ Crear una etiqueta** > **Etiqueta de retención**
-        
-    - Si no está utilizando la administración de registros:
-       - **Soluciones** > **Gobierno de información** > pestaña **Etiquetas** > + **Crear una etiqueta**
-    
-    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
-
-2. Siga las instrucciones del asistente.
-    
-    Para obtener más información sobre la configuración de retención, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
-    
-    Si utiliza la administración de registros:
-    
-    - Para obtener información sobre los descriptores del plan de archivos, consulte [Usar plan de archivos para administrar etiquetas de retención](file-plan-manager.md).
-    
-    - Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
-
-3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplicar la etiqueta automáticamente o simplemente guardar la etiqueta: seleccione **Solo guardar la etiqueta por ahora** y después seleccione **Hecho**.
-
-4. Repita estos pasos para crear más etiquetas.
-
-Para editar una etiqueta existente, selecciónela y después seleccione la opción **Editar etiqueta** para iniciar el asistente Editar retención que le permite cambiar las descripciones de las etiquetas y cualquier [configuración elegible](#updating-retention-labels-and-their-policies) del paso 2.
-
-### <a name="step-2-publish-retention-labels"></a>Paso 2: Publique etiquetas de retención
-
-Publique etiquetas de retención para que los usuarios puedan usarlas en aplicaciones como SharePoint y Outlook.
 
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a una de las siguientes ubicaciones:
     
     - Si utiliza la administración de registros:
         - **Soluciones** > **Administración de registros** > > pestaña **Directivas de etiquetas** > **Etiquetas publicadas**
     
-    - Si no está utilizando la administración de registros:
+    - Si usa la gobernanza de la información:
         - **Soluciones** > **Gobierno de información** > pestaña **Directivas de etiquetas** > **Publicar etiquetas**
     
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
 
-2. Use el vínculo para seleccionar las etiquetas de retención que desea publicar y, a continuación, seleccione **Siguiente**.
+2. Siga las indicaciones para crear la directiva de etiqueta de retención. Tenga cuidado con el nombre que elija para la directiva, ya que no se puede cambiar después de guardar la directiva.
 
-3. En la página **Elegir el tipo de directiva de retención que desea crear**, seleccione **Adaptable** o **Estática**, en función de lo que haya elegido en las instrucciones de [Antes de empezar](#before-you-begin). Si aún no ha creado ámbitos adaptables, podrá seleccionar **Adaptable**, pero no habrá ámbitos adaptables que seleccionar, por lo tanto no podrá finalizar el asistente con esta opción.
+3. Use el vínculo para seleccionar las etiquetas de retención que desea publicar y, a continuación, seleccione **Siguiente**.
 
-4. Según el ámbito seleccionado:
+4. En la página **Elegir el tipo de directiva de retención que desea crear**, seleccione **Adaptable** o **Estática**, en función de lo que haya elegido en las instrucciones de [Antes de empezar](#before-you-begin). Si aún no ha creado ámbitos adaptables, podrá seleccionar **Adaptable**, pero no habrá ámbitos adaptables que seleccionar, por lo tanto no podrá finalizar el asistente con esta opción.
+
+5. Según el ámbito seleccionado:
     
     - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **correo de Exchange** pero no **sitios de SharePoint**. 
     
@@ -112,17 +80,13 @@ Publique etiquetas de retención para que los usuarios puedan usarlas en aplicac
     
     Para obtener información sobre las opciones de ubicación, vea [Ubicaciones](retention-settings.md#locations).
 
-5.  Siga las indicaciones del asistente para asignar un nombre a la directiva, revisar y enviar las opciones de configuración.
-    
-    Para obtener información sobre las opciones de ubicación, vea [Ubicaciones](retention-settings.md#locations). 
-
-Para editar una directiva de la etiqueta de retención existente (el tipo de directiva es **Publicar**), selecciónela y, a continuación, seleccione la opción **Editar** para iniciar la directiva Editar retención. Este asistente le permite cambiar las descripciones de las directivas y los [parámetros de configuración adecuados](#updating-retention-labels-and-their-policies).
+Para editar una directiva de etiqueta de retención existente (el tipo de directiva es **Publicar**), selecciónela y, a continuación, seleccione la opción **Editar** para iniciar la configuración de **Editar directiva de retención**.
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Cuando las etiquetas de retención estén disponibles para aplicarlas
 
-Para las ubicaciones de OneDrive y SharePoint, las etiquetas publicadas suelen aparecer en uno o dos días para que los usuarios puedan seleccionarlas. Sin embargo, tenga en cuenta que pueden tardar en aparecer hasta siete días.
+Si publica etiquetas de retención en SharePoint o OneDrive, esas etiquetas suelen aparecer para que los usuarios las seleccionen en un día. Sin embargo, tenga en cuenta que pueden tardar en aparecer hasta siete días. 
 
-Para las ubicaciones de Exchange y Grupos de Microsoft 365, las etiquetas de retención publicadas pueden tardar hasta siete días en aparecer para usuarios de Outlook y el buzón debe contener al menos 10 MB de datos.
+Si publica etiquetas de retención en Exchange, las etiquetas de retención pueden tardar hasta siete días en aparecer para los usuarios y el buzón debe contener al menos 10 MB de datos.
 
 ![Diagrama de cuándo las etiquetas publicadas surten efecto.](../media/retention-labels-published-timings.png)
 
@@ -293,7 +257,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 
 ## Updating retention labels and their policies
 
-When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
+If you [edit a retention label](file-plan-manager.md#edit-retention-labels) or a retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - Names for retention labels and their policies, the scope type (adaptive or static), and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.

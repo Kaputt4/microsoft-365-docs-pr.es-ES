@@ -1,9 +1,9 @@
 ---
-title: Habilitar buzones de archivo en el Centro de cumplimiento de Microsoft 365
+title: Habilitar buzones de archivo para el cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,24 +22,25 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
-description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
-ms.openlocfilehash: 33bbb0987779f7810d797d7cb5a6255c32c34c75
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Obtenga información sobre cómo habilitar o deshabilitar buzones de archivo para que sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
+ms.openlocfilehash: be7939f11c6aea0161f76c3796ca2ff8bd515ba0
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422344"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241400"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
-El archivado en Microsoft 365 (también llamado *archivado local*) proporciona a los usuarios un espacio de almacenamiento adicional en el buzón. Después de habilitar los buzones de archivo, los usuarios pueden obtener acceso a los mensajes y almacenarlos en los buzones de archivo con Microsoft Outlook y Outlook en la Web (anteriormente denominada Outlook Web App). Los usuarios también pueden mover o copiar mensajes entre su buzón de correo principal y el buzón de archivo. También pueden recuperar elementos eliminados de la carpeta de Elementos recuperables en su buzón de archivo mediante la herramienta Recuperar elementos eliminados.
+El archivado en Microsoft 365 (también llamado *archivado local*) proporciona a los usuarios un espacio de almacenamiento adicional en el buzón. Para obtener más información, vea [Obtener información sobre los buzones de archivo](archive-mailboxes.md).
 
-> [!NOTE]
-> La función de archivado de expansión automática de Microsoft 365 proporciona almacenamiento adicional en los buzones de archivo. Cuando se activa el archivo de ampliación automática y se alcanza la cuota de almacenamiento inicial en el buzón de archivo de un usuario, Microsoft 365 agrega automáticamente espacio de almacenamiento adicional. Esto significa que los usuarios no se quedan sin espacio de almacenamiento en el buzón y que no tendrá que administrar nada después de habilitar el buzón de archivo por primera vez y activar el archivado de ampliación automática para su organización. Para obtener más información, consulte [Información general del archivado de ampliación automática](autoexpanding-archiving.md).
+Use la información de este artículo para habilitar o deshabilitar un buzón de archivo en el Centro de cumplimiento de Microsoft 365 o mediante PowerShell. Obtenga también información sobre cómo ejecutar una comprobación de diagnóstico automatizada en el buzón de archivo de un usuario para identificar los problemas y las soluciones sugeridas.
 
 ## <a name="get-the-necessary-permissions"></a>Obtener los permisos necesarios
 
-Debe tener asignado el rol de Destinatarios de correo de Exchange Online para habilitar o deshabilitar los buzones de archivo. De forma predeterminada, este rol se asigna a los grupos de roles Administración de destinatarios y Administración de la organización en la página **Permisos** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. Si no ve la página **Archivo** en el Centro de cumplimiento de Microsoft 365, pida al administrador que le asigne los permisos necesarios.
+Debe tener asignado el rol Destinatarios de correo en Exchange Online para habilitar o deshabilitar los buzones de archivo. De forma predeterminada, este rol se asigna a los grupos de roles Administración de destinatarios y Administración de la organización en la página **Permisos** del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>. 
+
+Si no ve la página **Archivo** en el Centro de cumplimiento de Microsoft 365, pida al administrador que le asigne los permisos necesarios.
 
 ## <a name="enable-an-archive-mailbox"></a>Habilitación de un buzón de archivo
 
@@ -149,24 +150,6 @@ Se abre una página de control flotante en el Centro de administración de Micro
 > [!NOTE]
 > Debe ser un administrador global de Microsoft 365 para usar la comprobación de diagnóstico del buzón de archivo. Además, esta característica no está disponible en las nubes de Microsoft 365 Government, Microsoft 365 operado por 21Vianet o Microsoft 365 Alemania.
 
-## <a name="more-information"></a>Más información
+## <a name="next-steps"></a>Pasos siguientes
 
-- Cuando un buzón de archivo está habilitado, los usuarios pueden almacenar mensajes en su buzón de archivo. Los usuarios pueden obtener acceso a los buzones de archivo mediante Microsoft Outlook y Outlook en la Web. Mediante cualquiera de estas aplicaciones cliente, los usuarios pueden visualizar mensajes en su buzón de archivo y mover o copiar mensajes entre su buzón de correo principal y el buzón de archivo. Los usuarios también pueden recuperar elementos eliminados de la carpeta de Elementos recuperables en su buzón de archivo mediante la herramienta Recuperar elementos eliminados.
-
-  Para obtener una lista de las licencias de Outlook que son compatibles con el archivado local, vea [Requisitos de licencia de Outlook para las funciones de Exchange](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99).
-
-- Los buzones de archivo permiten que usted y sus usuarios cumplan con los requisitos de retención de mensajes de la organización, eDiscovery y conservación. Por ejemplo, puede usar la directiva de retención de Exchange de su organización para mover el contenido del buzón al buzón de archivo de los usuarios. Cuando se usa la herramienta de Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar contenido específico en el buzón de un usuario, también se buscará en el buzón de archivo del usuario. Y, cuando se coloca una Retención por juicio o se aplica una directiva de retención en el buzón de un usuario, también se retienen los elementos del buzón de archivo.
-
-- Cuando se habilitan los buzones de archivo, la organización puede beneficiarse de la directiva de retención de Exchange predeterminada (también llamada directiva de Administración de registros de mensajería o MRM) que se asigna automáticamente a todos los buzones. Cuando se habilita un buzón de archivo, la directiva de retención de Exchange predeterminada hace automáticamente lo siguiente:
-
-  - Mueve los elementos que tienen dos años o más del buzón principal del usuario a su buzón de archivo.
-
-  - Mueve los elementos que tienen 14 días o más de la carpeta Elementos recuperables del buzón de correo principal del usuario a la carpeta Elementos recuperables del buzón de archivo.
-
-- Para obtener más información acerca de los buzones de archivo y las directivas de retención de Exchange, vea:
-
-  - [Etiquetas de retención y directivas de retención en Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
-
-  - [Directiva de retención predeterminada de Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
-
-  - [Configurar una directiva de archivo y eliminación de buzones en la organización](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+Considere la posibilidad de habilitar el [archivado de expansión automática](autoexpanding-archiving.md) para obtener espacio de almacenamiento adicional. Para obtener instrucciones, consulte [Habilitar el archivado de expansión automática](enable-autoexpanding-archiving.md).

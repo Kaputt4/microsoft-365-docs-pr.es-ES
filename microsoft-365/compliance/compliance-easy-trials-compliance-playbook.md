@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365.
-ms.openlocfilehash: 83e78759bb98ddf623d5a39866e2c812964225d5
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.openlocfilehash: 0da966fa23b12d4428a42eabbd102ba560c96b5f
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320796"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265708"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Cumplimiento de Microsoft 365
 
-Le damos la bienvenida al cuaderno de estrategias de prueba para soluciones de cumplimiento de Microsoft 365. Este cuaderno de estrategias le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días, ya que le permitirá a descubrir funcionalidades sólidas y completas de los productos de cumplimiento y seguridad de Microsoft 365. 
+Le damos la bienvenida al cuaderno de estrategias de prueba para soluciones de cumplimiento de Microsoft 365. Este cuaderno de estrategias le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días, ya que le permitirá a descubrir funcionalidades sólidas y completas de los productos de cumplimiento y seguridad de Microsoft 365.
 
 Probar cada solución le ayudará a tomar decisiones informadas para satisfacer las necesidades de cumplimiento de su organización.
 
@@ -42,11 +42,11 @@ Características:
 Complementos opcionales:
 
 - [Evaluaciones premium del Administrador de cumplimiento](#compliance-manager-premium-assessments)
-- [Administración de privacidad](#privacy-management)
+- [Administración de riesgo de privacidad Priva y Solicitudes de los interesados Priva](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
 ## <a name="compliance-actions-with-microsoft-365"></a>Acciones de cumplimiento con Microsoft 365
 
-Comience a probar las soluciones de cumplimiento de Microsoft de forma fácil y rápida sin cambiar los metadatos de su organización.En función de sus prioridades, puede empezar con cualquiera de estas áreas de solución para ver el valor inmediato. A continuación se muestran las cinco principales preocupaciones de la organización que comunican nuestros clientes y las soluciones recomendadas para empezar.
+Comience a probar las soluciones de cumplimiento de Microsoft de forma fácil y rápida sin cambiar los metadatos de su organización. En función de sus prioridades, puede empezar con cualquiera de estas áreas de solución para ver el valor inmediato. A continuación se muestran las cinco principales preocupaciones de la organización que comunican nuestros clientes y las soluciones recomendadas para empezar.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Acciones de cumplimiento con Microsoft 365":::
 
@@ -66,8 +66,8 @@ Las características de Auditoría avanzada, como la capacidad para registrar ev
 Configurar la auditoría avanzada para los usuarios: para comprobar que la aplicación Auditoría avanzada está asignada a los usuarios, [realice los pasos siguientes para cada usuario](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users).
 
 1. Habilitar eventos de Auditoría avanzada: [habilitar searchQueryInitiatedExchange y SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) para que se auditen para cada usuario en [PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
-1. Configurar directivas de retención de auditoría: [crear directivas de retención de registros de auditoría adicionales](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) para satisfacer los requisitos de los equipos de cumplimiento, TI y operaciones de seguridad de la organización. 
-1. Buscar eventos de auditoría avanzada: [buscar eventos cruciales de Auditoría avanzada](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) y otras actividades al realizar investigaciones forenses
+1. Configurar directivas de retención de auditoría: [crear directivas de retención de registros de auditoría adicionales](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) para satisfacer los requisitos de los equipos de cumplimiento, TI y operaciones de seguridad de la organización.
+1. Buscar eventos de auditoría avanzada: [buscar eventos cruciales de Auditoría avanzada](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) y otras actividades al realizar investigaciones forenses.
 
 ### <a name="step-2-create-new-audit-log-policies-to-specify-how-long-to-retain-audit-logs-in-your-org-for-activities-performed-by-users-and-define-priority-levels-for-your-policies"></a>Paso 2: [Crear nuevas directivas de registro de auditoría para especificar cuánto tiempo se conservarán los registros de Auditoría en la organización para las actividades realizadas por los usuarios y definir los niveles de prioridad de las directivas](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
@@ -78,7 +78,7 @@ Las directivas de retención de registros de auditoría forman parte de las nuev
 
 1. Antes de crear una directiva de retención de registros de auditoría: [aspectos clave que debe conocer](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) antes de crear la directiva.
 1. [Crear una directiva de retención de registros de auditoría](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Administrar directivas de retención de registros de auditoría en el Centro de cumplimiento de Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center): las directivas de retención de registros de Auditoría se muestran en la pestaña Directivas de retención de Auditoría (también denominada panel). Puede usar el panel para ver, editar y eliminar directivas de retención de auditoría. 
+1. [Administrar directivas de retención de registros de auditoría en el Centro de cumplimiento de Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center): las directivas de retención de registros de Auditoría se muestran en la pestaña Directivas de retención de Auditoría (también denominada panel). Puede usar el panel para ver, editar y eliminar directivas de retención de auditoría.
 1. Creación y administración de directivas de retención de registros de auditoría en PowerShell: también puede usar el Centro de seguridad y cumplimiento de PowerShell para [crear y administrar directivas de retención de registros de auditoría](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). Uno de los motivos para usar PowerShell es crear una directiva para un tipo de registro o actividad que no esté disponible en la interfaz de usuario.
 
 ## <a name="communication-compliance"></a>Cumplimiento de la comunicación
@@ -193,10 +193,10 @@ Microsoft Endpoint DLP le permite supervisar dispositivos con Windows 10 y detec
 1. Prepare los puntos de conexión: asegúrese de que los dispositivos Windows 10 y macOS en los que planea implementar DLP de punto de conexión [cumplan estos requisitos](endpoint-dlp-getting-started.md)
 1. [Incorporar dispositivos a la administración de dispositivos](endpoint-dlp-getting-started.md)  - Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
    - Escenario 1 – [Incorporación de dispositivos](endpoint-dlp-getting-started.md) que aún no se han incorporado.
-   - Escenario 2 - [En este escenario, Microsoft Defender para punto de conexión ya está implementado y existen puntos de conexión que informan.](endpoint-dlp-getting-started.md) Todos estos puntos de conexión aparecerán en la lista de dispositivos administrados. 
-1. [Configurar nuestra directiva DLP predeterminada para dispositivos](mip-easy-trials.md#dlp-for-devices) o [Definir una nueva directiva DLP para dispositivos](endpoint-dlp-learn-about.md)
-1. [Visualizar alertas de DLP del punto de conexión](dlp-configure-view-alerts-policies.md) en el panel de administración de alertas de DLP
-1. [Visualizar datos de DLP del punto de conexión](data-classification-activity-explorer.md) en el explorador de actividad
+   - Escenario 2 - [En este escenario, Microsoft Defender para punto de conexión ya está implementado y existen puntos de conexión que informan.](endpoint-dlp-getting-started.md) Todos estos puntos de conexión aparecerán en la lista de dispositivos administrados.
+1. [Configurar nuestra directiva DLP predeterminada para dispositivos](mip-easy-trials.md#dlp-for-devices) o [Definir una nueva directiva DLP para dispositivos](endpoint-dlp-learn-about.md).
+1. [Visualizar alertas de DLP del punto de conexión](dlp-configure-view-alerts-policies.md) en el panel de administración de alertas de DLP.
+1. [Visualizar datos de DLP del punto de conexión](data-classification-activity-explorer.md) en el explorador de actividad.
 
 ### <a name="step-3-expand-policies-in-scope-or-protection"></a>Paso 3: [Ampliar el ámbito o la protección de las directivas](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)
 
@@ -205,7 +205,7 @@ Tiene flexibilidad en la configuración de las directivas DLP. Puede empezar con
 1. Agregar ubicaciones
 1. Agregar etiquetas o tipos de información confidencial para proteger
 1. Agregar acciones
-   - Teams: 
+   - Teams:
       - [Evitar el acceso externo a documentos confidenciales](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [Obtener sugerencias de directiva para ayudar a educar a los usuarios e instrucciones para personalizar las sugerencias de directiva](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - Dispositivos: cambiar de solo auditoría a bloquear
@@ -252,7 +252,7 @@ Los límites de cumplimiento crean límites lógicos dentro de una organización
 
 ![Los límites de cumplimiento constan de filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administrador que controlan el acceso a los casos de eDiscovery.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
 
-Configurar los límites de cumplimiento para investigaciones de eDiscovery: 
+Configurar los límites de cumplimiento para investigaciones de eDiscovery:
 
 1. [Identifique un atributo de usuario para definir sus agencias](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
 1. [Crear un grupo de roles para cada organismo](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
@@ -278,7 +278,7 @@ Implemente Microsoft Information Protection y etiquetas de confidencialidad para
 
 Los clientes elegibles pueden activar las etiquetas y directivas predeterminadas para Microsoft Information Protection. Al habilitar la configuración predeterminada en la versión de prueba, tardará unos 2 minutos en configurar todas las directivas del inquilino y hasta 24 horas en ver los resultados de estas directivas predeterminadas.
 
-Al elegir la configuración predeterminada, con 1 clic, se configura automáticamente lo siguiente: 
+Al elegir la configuración predeterminada, con 1 clic, se configura automáticamente lo siguiente:
 
 - Etiquetas de confidencialidad y una directiva de etiquetas de confidencialidad
 - Etiquetado automático del lado cliente
@@ -306,7 +306,7 @@ Cuando crea una etiqueta de confidencialidad, puede asignar automáticamente dic
 
 ### <a name="step-3-review-and-turn-on-auto-labeling-policy"></a>Paso 3: [revisar y activar la directiva de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
-Ahora, en la página **Information Protection** > **Etiquetado automático**, verá la directiva de etiquetado automático en la sección **Simulación**. 
+Ahora, en la página **Information Protection** > **Etiquetado automático**, verá la directiva de etiquetado automático en la sección **Simulación**.
 
 Seleccione la directiva para ver los detalles de la configuración y el estado. Una vez completada la simulación, seleccione la pestaña Elementos a revisar para ver qué correos electrónicos o documentos coinciden con las reglas especificadas.
 
@@ -323,7 +323,7 @@ Aproveche la inteligencia artificial para ayudarle a identificar, evaluar y corr
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
-Hay cuatro grupos de roles que se usan para configurar permisos para administrar las características de administración de riesgos internos. 
+Hay cuatro grupos de roles que se usan para configurar permisos para administrar las características de administración de riesgos internos.
 
 [Agregue usuarios a un grupo de roles de administración de riesgos internos.](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
 
@@ -333,7 +333,7 @@ Si no puede ver los permisos, póngase en contacto con el administrador de inqui
 
 Comience rápidamente y saque el máximo partido a las funcionalidades de administración de riesgos internos con acciones recomendadas. Incluidas en la página Información general, las acciones recomendadas le guiarán por los pasos necesarios para configurar e implementar directivas, así como para realizar acciones de investigación para las acciones de usuario que generan alertas a partir de coincidencias de directivas.
 
-[Seleccione una recomendación de la lista](insider-risk-management-configure.md#recommended-actions-preview) para empezar a configurar la administración de riesgos internos. 
+[Seleccione una recomendación de la lista](insider-risk-management-configure.md#recommended-actions-preview) para empezar a configurar la administración de riesgos internos.
 
 ![Acciones recomendadas para la administración de riesgos internos.](../media/insider-risk-recommended-actions.png)
 
@@ -362,7 +362,7 @@ Use características integradas de administración de registros para automatizar
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
-Los ámbitos de directiva adaptables permiten dirigir dinámicamente una directiva a determinados usuarios, grupos o sitios en función de sus atributos de AD. 
+Los ámbitos de directiva adaptables permiten dirigir dinámicamente una directiva a determinados usuarios, grupos o sitios en función de sus atributos de AD.
 
 Los atributos de los ámbitos se pueden seleccionar en una lista o personalizarse mediante un generador de consultas avanzado.
 
@@ -381,12 +381,12 @@ Al final del período de retención, los usuarios que especifique ("revisores") 
 
 Tanto la actividad de la aplicación de etiquetas como la actividad de revisión para eliminación se pueden ver en la pantalla Información general de administración de registros.
 
-1. [Aplicar automáticamente etiquetas de retención a contenido con información confidencial](retention.md#retention-labels) 
+1. [Aplicar automáticamente etiquetas de retención a contenido con información confidencial](retention.md#retention-labels)
 1. Crear y aplicar una etiqueta de retención con [revisión para eliminación](disposition.md#disposition-reviews) al final del período de retención
 
 ### <a name="step-3-label-content-as-records-automatically-using-trainable-classifiers"></a>Paso 3: Etiquetar el contenido como registros automáticamente mediante clasificadores capacitados
 
-Cuando el contenido se declara como un registro, se aplican restricciones en el elemento en cuanto a las acciones permitidas o bloqueadas, se registran actividades adicionales sobre los elementos y se obtiene una prueba de disposición si los elementos se eliminan al final de su período de retención. 
+Cuando el contenido se declara como un registro, se aplican restricciones en el elemento en cuanto a las acciones permitidas o bloqueadas, se registran actividades adicionales sobre los elementos y se obtiene una prueba de disposición si los elementos se eliminan al final de su período de retención.
 
 Los clasificadores que se pueden entrenar son herramientas que reconocen varios tipos de contenido, en función de las muestras que se les han proporcionado. Elija entre una variedad de opciones integradas o configure un clasificador personalizado para satisfacer sus necesidades específicas.
 
@@ -404,7 +404,7 @@ Las etiquetas de retención se pueden aplicar automáticamente al contenido cuan
 
 **…y al final desechar el resto de forma segura.**
 
-Cuando se desencadena una revisión para eliminación al final del período de retención, los revisores que elija recibirán una notificación por correo electrónico de que tienen contenido para revisar. 
+Cuando se desencadena una revisión para eliminación al final del período de retención, los revisores que elija recibirán una notificación por correo electrónico de que tienen contenido para revisar.
 
 El contenido pendiente de una revisión para eliminación se elimina permanentemente solo después de que un revisor para la fase final de eliminación elija eliminar el contenido de forma permanente.
 
@@ -418,15 +418,15 @@ Ayude a su organización a evaluar los riesgos y a responder eficazmente a los r
 
 [Más información sobre la evaluación premium del Administrador de cumplimiento](compliance-easy-trials-compliance-manager-assessments.md).
 
-### <a name="privacy-management"></a>Administración de privacidad
+### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Administración de riesgo de privacidad Priva y Solicitudes de los interesados Priva
 
 **Identificar y evitar riesgos de privacidad**
 
 Identifique y proteja de forma proactiva los riesgos para la privacidad, como el acaparamiento de datos, las transferencias de datos y el uso compartido excesivo de datos, y ayude a su organización a automatizar y administrar las solicitudes de los sujetos a gran escala.
 
-[ Más información sobre la administración de privacidad para Microsoft 365](/privacy/solutions/privacymanagement/privacy-management).
+[Obtenga más información sobre Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
-[Cuaderno de estrategias de prueba: Administración de privacidad para Microsoft 365](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[Cuaderno de estrategias de prueba: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
