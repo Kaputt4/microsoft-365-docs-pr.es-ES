@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: c8e17caca15386199725627042c9d382641bfca2
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: f9583b69459d292b3fb485d09ce5ee5a8ca46620
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072265"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265510"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
@@ -71,9 +71,9 @@ Publicamos nuevas plantillas de evaluación, incluidas:
 - Australia - ASD Essential 8 Maturity Level 2
 - Australia - ASD Essential 8 Maturity Level 3
 
-### <a name="integration-with-privacy-management"></a>Integración con la administración de privacidad
+### <a name="integration-with-microsoft-priva"></a>Integración con Microsoft Priva
 
-El Administrador de cumplimiento ahora puede trabajar de la mano con la administración de privacidad, una solución que puede ayudarle a proteger los datos personales que la organización almacena en Microsoft 365. La administración de privacidad ofrece herramientas que le ayudarán a visualizar y comprender sus datos, implementar directivas para administrar escenarios de riesgo clave y administrar solicitudes de derechos del sujeto. Cuando se toman medidas en la administración de privacidad para proteger los datos personales que almacena, esto puede contribuir a las evaluaciones de privacidad en el Administrador de cumplimiento y puede ayudarle a mejorar su puntuación de cumplimiento. Para ver cómo la administración de privacidad y otras soluciones contribuyen a su  puntuación y obtener información sobre las posibles oportunidades de mejoras adicionales, consulte la pestaña Soluciones en el Administrador de cumplimiento. También puede encontrar más detalles sobre la administración de privacidad en [Learn about privacy management](/privacy/solutions/privacymanagement/privacy-management).
+El Administrador de cumplimiento ahora puede trabajar de la mano con Microsoft Priva, una solución que puede ayudarle a proteger los datos personales que su organización almacena en Microsoft 365. Priva ofrece herramientas para ayudarle a visualizar y comprender sus datos, implementar directivas para administrar escenarios de riesgo clave y administrar solicitudes de derechos de sujeto. Cuando se toman medidas en Priva para proteger los datos personales que almacena, esto puede contribuir a las evaluaciones de privacidad en el Administrador de cumplimiento y puede ayudarle a mejorar la puntuación de cumplimiento. Para ver cómo Priva y otras soluciones contribuyen a su puntuación y  obtener información sobre las posibles oportunidades de mejoras adicionales, consulte la pestaña Soluciones en el Administrador de cumplimiento. También puede encontrar más detalles sobre Priva en [Learn about Microsoft Priva](/privacy/priva).
 
 ## <a name="july-2021"></a>Julio de 2021
 
@@ -98,7 +98,7 @@ Consulte la lista completa de plantillas [de evaluación](compliance-manager-tem
 
 El Administrador de cumplimiento ya está disponible para los clientes del DoD del gobierno de Estados Unidos, además de los clientes Community (GCC) moderados y GCC high.
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 
 ### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 

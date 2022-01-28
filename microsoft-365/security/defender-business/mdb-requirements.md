@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/21/2021
+ms.date: 01/27/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365initiative-defender-business
-ms.openlocfilehash: e848fdb2625d1acc9d3d68363d71707237858c4c
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 0ee163d0b64aa0e0b3d077ee99f19102df3e2c20
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245404"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265456"
 ---
 # <a name="microsoft-defender-for-business-preview-requirements"></a>Requisitos de Microsoft Defender para empresas (versión preliminar)
 
@@ -50,7 +50,7 @@ En la tabla siguiente se enumeran los requisitos básicos para configurar y usar
 | Cuentas de usuario | Se crean cuentas de usuario<br/><br/>Se asignan licencias de Microsoft Defender para empresas (versión preliminar) <br/><br/>Para obtener ayuda con esto, vea [Agregar usuarios y asignar licencias.](../../admin/add-users/add-users.md) |
 | Permisos  | Para registrarse en Microsoft Defender para empresas (versión preliminar), debe ser administrador global.<br/><br/>Para tener acceso al portal Microsoft 365 Defender, los usuarios deben tener uno de los [siguientes roles Azure AD](mdb-roles-permissions.md) asignados: <br/>- Lector de seguridad<br/>- Administrador de seguridad<br/>- Administrador global<br/><br/>Para obtener más información, vea [Roles y permisos en Microsoft Defender para empresas (versión preliminar).](mdb-roles-permissions.md) |
 | Requisitos de los exploradores | Microsoft Edge o Google Chrome |
-| Sistema operativo | Para administrar dispositivos en Microsoft Defender para empresas (versión preliminar), los dispositivos deben ejecutarse Windows 10 Professional/Enterprise o posterior (con [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541)). <br/><br/>Si ya está administrando dispositivos en Microsoft Intune (o Microsoft Endpoint Manager) o si usa una solución de administración de dispositivos que no sea de [Microsoft,](../defender-endpoint/minimum-requirements.md)los dispositivos deben ejecutar uno de los sistemas operativos compatibles con Microsoft Defender para endpoint . |
+| Sistema operativo | Para administrar dispositivos en Microsoft Defender para empresas (versión preliminar), los dispositivos deben ejecutar uno de los siguientes sistemas operativos: <br/>- Windows 10 Business o posterior <br/>- Windows 10 Professional o posterior <br/>- Windows 10 Enterprise o posterior <br/><br/>Asegúrese de que [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) está instalado. <br/><br/>Si ya está administrando dispositivos en Microsoft Intune (o Microsoft Endpoint Manager) o si usa una solución de administración de dispositivos que no sea de [Microsoft,](../defender-endpoint/minimum-requirements.md)los dispositivos deben ejecutar uno de los sistemas operativos compatibles con Microsoft Defender para endpoint . |
 | Integración con Microsoft Endpoint Manager  |  **Durante la vista previa, puedes incorporar dispositivos con un script local,** que no requiere integración con Microsoft Endpoint Manager . Pero si planea incorporar dispositivos a Defender para empresas (versión preliminar) manualmente mediante el uso de paquetes descargables para Microsoft Endpoint Manager, directiva de grupo, System Center Configuration Manager o administración de dispositivos móviles, se deben cumplir los siguientes requisitos: <br/><br/>Los dispositivos deben Windows 10 o 11 Professional/Enterprise (con [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) aplicado). <br/><br/>Se deben cumplir los requisitos previos para [la administración de seguridad de Microsoft Defender para endpoint](/mem/intune/protect/mde-security-integration).<br/>- Azure AD debe configurarse de modo que se cree confianza entre los dispositivos de la empresa y Azure AD. <br/>- Defender para empresas (versión preliminar) debe tener habilitada la administración de seguridad en Microsoft Endpoint Manager.<br/><br/>Los dispositivos deben poder conectarse a las siguientes direcciones URL:<br/>- `enterpriseregistration.windows.net`(para el registro en Azure AD)<br/>- `login.microsoftonline.com`(para el registro en Azure AD)<br/>- `*.dm.microsoft.com` (El comodín (*) admite los puntos de conexión de servicio en la nube que se usan para la inscripción, la protección y los informes, y puede cambiar a medida que se escala el servicio). |
 
 > [!NOTE]

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 157b3166a957fb0e4ddcadcbb23121ce10dfce1c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 054a684829217676df4bb3bf7d8469dbfc53a2a3
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214218"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265696"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -36,15 +36,22 @@ ms.locfileid: "62214218"
 > [!NOTE]
 > A partir de finales de enero de 2022, se hará referencia a Microsoft Defender para endpoint (anteriormente conocido como ATP de Microsoft Defender) como "Microsoft Defender" entre usuarios finales que se enfrentan a experiencias MDE en macOS. 
 > 
-> Este cambio está disponible actualmente en los canales de actualización Beta (anteriormente denominado Insider Fast) y Preview (anteriormente denominado Insider Slow). La versión mínima del producto que incluye este cambio es 101.54.24.
-> 
-> Los usuarios finales observarán los siguientes cambios: 
-> - La ruta de instalación de la aplicación se ha cambiado de `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` a .
-> - Dentro de la experiencia del usuario, las repeticiones de "ATP de Microsoft Defender" se han reemplazado por "Microsoft Defender"
+> Este cambio está disponible actualmente en los canales de actualización Beta (anteriormente denominado Insider Fast) y Preview (anteriormente denominado Insider Slow). La versión mínima del producto que incluye este cambio es 101.56.35. Vea las notas de la versión siguientes correspondientes a esta versión para obtener más información.
 > 
 > Este cambio no afecta a la herramienta `mdatp` de línea de comandos.
 >
 > **Acción necesaria:** si su empresa tiene configuraciones personalizadas que dependen del nombre del producto o de la ruta de instalación de la aplicación, estas configuraciones deben actualizarse con los nuevos valores enumerados anteriormente.
+
+## <a name="1015635-20121121156350"></a>101.56.35 (20.121121.15635.0)
+
+- Se ha cambiado el nombre de la aplicación de "Atp de Microsoft Defender" a "Microsoft Defender". Los usuarios finales observarán los siguientes cambios:
+  - La ruta de instalación de la aplicación se ha cambiado de `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` a .
+  - Dentro de la experiencia del usuario, las repeticiones de "ATP de Microsoft Defender" se han reemplazado por "Microsoft Defender"
+- Se ha resuelto un problema por el que algunas aplicaciones VPN no se podían conectar debido al filtro de contenido de red que se distribuye con Microsoft Defender para Endpoint para Mac
+- Se ha corregido un problema detectado en macOS 12.2 beta 2 en el que el paquete de instalación no se podía abrir debido a un cambio en el sistema operativo (SO) que impide la instalación de paquetes con determinadas características. Aunque parece que este cambio del sistema operativo no se incluye en la versión final de macOS 12.2, es probable que se reintrodujo en una versión futura de macOS. Por lo tanto, animamos a todos los administradores empresariales a actualizar el paquete de Microsoft Defender para Endpoint en su consola de administración a esta versión del producto (o a una versión más reciente).
+- Se ha corregido un problema visto en algunos dispositivos M1 en los que el producto estaba atascado con definiciones de antimalware no válidas y no se podía actualizar correctamente a un conjunto de definiciones de trabajo.
+- `mdatp health` el resultado se ha extendido con un atributo adicional llamado que se puede usar para determinar si se ha concedido acceso en disco completo a `full_disk_access_enabled` todos los componentes de Microsoft Defender para Endpoint para Mac.
+- Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
 
@@ -136,7 +143,7 @@ ms.locfileid: "62214218"
 > [!NOTE]
 > La sintaxis de la herramienta de línea de comandos antigua ha quedado en desuso con esta versión. Para obtener información sobre la nueva sintaxis, vea [Resources](mac-resources.md#configuring-from-the-command-line).
 
-- Se agregó un nuevo modificador de línea de comandos para deshabilitar la extensión de red: `mdatp system-extension network-filter disable` . Este comando puede ser útil para solucionar problemas de red que podrían estar relacionados con Microsoft Defender para Endpoint en Mac
+- Se agregó un nuevo modificador de línea de comandos para deshabilitar la extensión de red: `mdatp system-extension network-filter disable`. Este comando puede ser útil para solucionar problemas de red que podrían estar relacionados con Microsoft Defender para Endpoint en Mac
 - Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -169,12 +176,12 @@ ms.locfileid: "62214218"
 
 - Esta versión del producto se validó en macOS Big Sur 11 beta 9
 
-- La nueva sintaxis de la `mdatp` herramienta de línea de comandos es ahora la predeterminada. Para obtener más información sobre la nueva sintaxis, vea [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line)
+- La nueva sintaxis de la herramienta `mdatp` de línea de comandos es ahora la predeterminada. Para obtener más información sobre la nueva sintaxis, vea [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
   > La sintaxis de la herramienta de línea de comandos antigua se quitará del producto el 1 de enero **de 2021**.
 
-- Extendido con un nuevo parámetro ( ) que permite guardar los registros de `mdatp diagnostic create` diagnóstico en un directorio `--path [directory]` diferente
+- Extendido `mdatp diagnostic create` con un nuevo parámetro (`--path [directory]`) que permite guardar los registros de diagnóstico en un directorio diferente
 - Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1010949"></a>101.09.49
@@ -185,18 +192,18 @@ ms.locfileid: "62214218"
 
 ## <a name="1010723"></a>101.07.23
 
-- Se agregaron nuevos campos a la salida de para comprobar el estado del modo pasivo y el `mdatp --health` EDR de grupo
+- Se agregaron nuevos campos a la salida de `mdatp --health` para comprobar el estado del modo pasivo y el EDR de grupo
 
   > [!NOTE]
-  > `mdatp --health` se reemplazará con `mdatp health` en una actualización futura del producto.
+  > `mdatp --health` se reemplazará con en `mdatp health` una actualización futura del producto.
 
 - Se ha corregido un error en el que el envío automático de muestra no estaba marcado como administrado en la interfaz de usuario
-- Se agregó una nueva configuración para controlar la retención de elementos en el historial de análisis del antivirus. Ahora puede especificar [el número de días para](mac-preferences.md#antivirus-scan-history-retention-in-days) conservar elementos en el historial de análisis y especificar el número máximo de elementos en el historial de [examen](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
+- Se agregó una nueva configuración para controlar la retención de elementos en el historial de análisis del antivirus. Ahora puede especificar [el número de días para](mac-preferences.md#antivirus-scan-history-retention-in-days) conservar elementos en el historial de análisis y especificar el [número máximo de elementos en el historial de examen](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
 - Correcciones de errores
 
 ## <a name="1010663"></a>101.06.63
 
-- Se ha abordado una regresión de rendimiento introducida en la versión `101.05.17` . La regresión se introdujo con la corrección para eliminar los problemas del kernel que algunos clientes han observado al acceder a recursos compartidos SMB. Hemos revertido este cambio de código y estamos investigando formas alternativas de eliminar los problemas del kernel.
+- Se ha abordado una regresión de rendimiento introducida en la versión `101.05.17`. La regresión se introdujo con la corrección para eliminar los problemas del kernel que algunos clientes han observado al acceder a recursos compartidos SMB. Hemos revertido este cambio de código y estamos investigando formas alternativas de eliminar los problemas del kernel.
 
 ## <a name="1010517"></a>101.05.17
 
@@ -257,7 +264,7 @@ ms.locfileid: "62214218"
 
 ## <a name="1008373"></a>100.83.73
 
-- Se agregaron más controles para los administradores de TI en torno a la administración de [exclusiones,](mac-preferences.md#exclusion-merge-policy)la [administración](mac-preferences.md#threat-type-settings-merge-policy)de la configuración del tipo de amenaza y las [acciones de amenazas no permitidos](mac-preferences.md#disallowed-threat-actions)
+- Se agregaron más controles para los administradores de TI en torno a la administración de [exclusiones](mac-preferences.md#exclusion-merge-policy)[, la](mac-preferences.md#threat-type-settings-merge-policy) administración de la configuración del tipo de amenaza y las [acciones de amenazas no permitidos](mac-preferences.md#disallowed-threat-actions)
 - Cuando el acceso a disco completo no está habilitado en el dispositivo, ahora se muestra una advertencia en el menú de estado
 - Mejoras de rendimiento & correcciones de errores
 

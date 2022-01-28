@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a25293740dd856d93726e5eaf27e3a92c18af56
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 049d6b4045e19f5f9d4de7f52e5e8b99bd81a2b9
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241932"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265540"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -154,11 +154,11 @@ El límite de recuento de instancias SIT se aplica cuando los SIT se usan en est
 
 - Directivas DLP
 - Protección de la información
-- Gobierno de la información
+- Gobierno de información
 - Cumplimiento de la comunicación
 - Records Management
 - Microsoft Defender for Cloud Apps
-- Administración de privacidad
+- Microsoft Priva
 
 Para que un elemento analizado cumpla los criterios de regla, el número de instancias únicas de un SIT en cualquier elemento único debe estar entre los valores mínimo y máximo. Esto se denomina recuento **de instancias**.
 
@@ -202,7 +202,7 @@ Por ejemplo, si desea que la regla desencadene una coincidencia cuando se encuen
 
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## <a name="more-information-on-regular-expression-validators"></a>Más información sobre validadores de expresiones regulares
 

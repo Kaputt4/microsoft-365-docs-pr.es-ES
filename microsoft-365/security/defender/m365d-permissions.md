@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5d18e9da81513a27786a0e53bdc296bcb353618b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8e9cacf3fb7d74acc210ac0b77ed5e68c7a93961
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666893"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265648"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Administrar el acceso a Microsoft 365 Defender con Azure Active Directory roles globales
 
@@ -33,9 +33,9 @@ ms.locfileid: "60666893"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Hay dos maneras de administrar el acceso a Microsoft 365 Defender
+Hay dos formas de administrar el acceso a Microsoft 365 Defender:
 - **Roles Azure Active Directory global (AD)**
 - **Acceso a roles personalizado**
 
@@ -48,7 +48,7 @@ Las cuentas asignadas a **los siguientes roles Azure Active Directory global (AD
 
 Para revisar las cuentas con estos roles, [vea Permisos en el portal de Microsoft 365 Defender.](https://security.microsoft.com/permissions)
 
-**El acceso** a roles personalizado es una nueva funcionalidad en Microsoft 365 Defender y le permite administrar el acceso a datos, tareas y capacidades específicos en Microsoft Defender 365. Los roles personalizados ofrecen más control que los roles Azure AD globales, lo que proporciona a los usuarios solo el acceso que necesitan con los roles menos permisivos necesarios.  Los roles personalizados se pueden crear además de los Azure AD globales. [Obtenga más información sobre los roles personalizados](custom-roles.md).
+**El acceso** a roles personalizado es una nueva funcionalidad en Microsoft 365 Defender y le permite administrar el acceso a datos, tareas y capacidades específicos en Microsoft 365 Defender. Los roles personalizados ofrecen más control que los roles Azure AD globales, lo que proporciona a los usuarios solo el acceso que necesitan con los roles menos permisivos necesarios.  Los roles personalizados se pueden crear además de los Azure AD globales. [Obtenga más información sobre los roles personalizados](custom-roles.md).
 
 > [!NOTE]
 > Este artículo solo se aplica a la administración de roles Azure Active Directory global. Para obtener más información acerca del uso del control de acceso basado en roles personalizado, vea [Roles personalizados para el control de](custom-roles.md) acceso basado en roles
@@ -64,11 +64,11 @@ El acceso Microsoft 365 Defender datos se puede controlar mediante el ámbito as
 
 Por ejemplo, si perteneces a un solo grupo de usuarios con un rol de Microsoft Defender para endpoint y ese grupo de usuarios solo tiene acceso a dispositivos de ventas, solo verás datos sobre dispositivos de ventas en Microsoft 365 Defender. [Más información sobre la configuración de RBAC en Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
-### <a name="microsoft-cloud-app-security-access-controls"></a>Controles de acceso a Microsoft Cloud App Security
-Durante la vista previa, Microsoft 365 Defender aplica controles de acceso en función de Cloud App Security configuración. El acceso a Microsoft 365 Defender datos no se ve afectado por esta configuración.
+### <a name="microsoft-defender-for-cloud-apps-access-controls"></a>Controles de acceso de Microsoft Defender para Aplicaciones en la nube
+Durante la vista previa, Microsoft 365 Defender aplica controles de acceso basados en la configuración de Defender para Aplicaciones en la nube. El acceso a Microsoft 365 Defender datos no se ve afectado por esta configuración.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Roles personalizados en el control de acceso basado en roles para Microsoft 365 Defender](custom-roles.md)
 - [Azure AD funciones integradas](/azure/active-directory/roles/permissions-reference)
 - [Rbac de Microsoft Defender para extremo](/windows/security/threat-protection/microsoft-defender-atp/rbac)
-- [Roles de Cloud App Security](/cloud-app-security/manage-admins)
+- [Roles de Defender para Aplicaciones en la nube](/cloud-app-security/manage-admins)

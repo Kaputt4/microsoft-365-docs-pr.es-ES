@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5154a5347fa22e5315abd148327d8eab5508f0d3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
+ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372773"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62241412"
 ---
-# <a name="use-file-plan-to-manage-retention-labels"></a>Use el plan de archivos para administrar las etiquetas de retención
+# <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Usar el plan de archivos para crear y administrar etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -113,6 +113,36 @@ Al seleccionar **Elegir** para cada uno de estos descriptores opcionales, puede 
 
 ![Crear nuevo descriptor de plan de archivos para aprovisionar o citar.](../media/file-plan-descriptors-create.png)
 
+## <a name="create-retention-labels"></a>Crear etiquetas de retención
+
+1. En la página **Plan de archivos**, seleccione **+ Crear una etiqueta** > **Etiqueta de retención**
+
+2. Siga las indicaciones del proceso de configuración.
+    
+    
+    
+    Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
+
+3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplicar la etiqueta automáticamente o simplemente guardar la etiqueta: seleccione **Solo guardar la etiqueta por ahora** y después seleccione **Hecho**.
+
+4. Repita estos pasos para crear más etiquetas.
+
+## <a name="edit-retention-labels"></a>Editar etiquetas de retención
+
+Para editar una etiqueta de retención existente, selecciónela en la página **Plan de archivos** y, a continuación, seleccione la opción **Editar etiqueta** para iniciar el proceso Editar etiqueta de retención, que le permite cambiar la descripción de la etiqueta y cualquier configuración elegible.
+
+Algunas opciones de configuración no se pueden cambiar después de crear y guardar la etiqueta, entre las que se incluyen:
+- El nombre de la etiqueta de retención y la configuración de retención, excepto el período de retención. Sin embargo, no se puede cambiar el período de retención cuando el período de retención se basa en cuándo se etiquetaron los elementos.
+- La opción de marcar los elementos como un registro.
+
+## <a name="delete-retention-labels"></a>Eliminar etiquetas de retención
+
+Puede eliminar las etiquetas de retención que no estén actualmente incluidas en ninguna directiva de etiquetas de retención [publicada](create-apply-retention-labels.md) o [de aplicación automática](apply-retention-labels-automatically.md), que no estén configuradas para la retención basada en eventos o que marquen elementos como registros normativos.
+
+En el caso de las etiquetas de retención que sí puede eliminar, si fueron aplicadas a los elementos, se producirá un error en la eliminación y aparece un vínculo al explorador de contenido para identificar los elementos etiquetados.
+
+Sin embargo, podría tomarle hasta dos días al explorador de contenido mostrar los elementos que están etiquetados. En este escenario, es posible que la etiqueta de retención se elimine sin mostrarle el vínculo al explorador de contenido.
+
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exportar todas las etiquetas de retención para analizar o habilitar las revisiones sin conexión
 
 Desde su administrador del plan de archivos, puede exportar los detalles de todas las etiquetas de retención a un archivo .csv, para facilitar las revisiones de cumplimiento periódicas con las partes interesadas del gobierno de datos de su organización.
@@ -186,6 +216,6 @@ Use la siguiente información para rellenar la plantilla descargada e importar n
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Para obtener más información sobre cómo crear, editar y aplicar etiquetas de retención, consulte los dos escenarios siguientes:
-- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+Ahora que ha creado etiquetas de retención, están listas para agregarse a los elementos publicando las etiquetas o aplicándolas automáticamente:
+- [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
 - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)

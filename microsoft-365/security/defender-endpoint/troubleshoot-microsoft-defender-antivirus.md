@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/19/2018
+ms.date: 01/27/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3d4f383730463325cf7bd6042409caabafa16194
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1ae02edab2028cee78c59dfe643a073f1ea493ae
+ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61884088"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62265564"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender
 
@@ -1273,16 +1273,16 @@ Descripción:
 <td >
 Antivirus de Microsoft Defender cliente está en funcionamiento en un estado correcto.
 <dl>
-<dt>Versión actual de la plataforma: &lt; Ruta de &gt; acceso de</dt>recurso de amenaza de la
-<dt> &lt; &gt; versión</dt>actual de la plataforma:
-<dt>hashes de ruta: &lt; hashes &gt; </dt>
+<dt>Versión actual de la plataforma: &lt; Versión actual de la&gt;</dt> 
+<dt>plataformaThreat Resource Path: &lt;PathHashes&gt;</dt>
+<dt>: &lt;Hashes&gt;</dt>
 </dl>
 </td>
 </tr>
 <tr>
 <td></td>
 <td >
-<div class="alert"><b>Nota: Este evento solo se registrará si se establece la siguiente directiva: <b>ThreatFileHashLogging sin signo</b>.</div>
+<div class="alert"><b>Nota: Este evento solo se registrará si se establece la siguiente directiva: <b>ThreatFileHashLogging sin firma</b>.</div>
 <div> </div>
 </td>
 </tr>
@@ -1312,23 +1312,23 @@ Descripción:
 Acceso controlado a carpetas ha bloqueado un proceso que no es de confianza para modificar potencialmente los sectores de disco.
 <br/> Para obtener más información acerca del registro de eventos, vea lo siguiente:
 <dl>
-<dt>EventID: &lt; EventID , por &gt; ejemplo: 1127</dt>Versión: Versión , por
-<dt> &lt; &gt; ejemplo: 0 Level:</dt>
-<dt>Level , por &lt; &gt; ejemplo: win:Warning</dt>
-<dt>TimeCreated: &lt; SystemTime &gt; ,</dt>hora en la que se creó el evento
-<dt> &lt; EventRecordID: EventRecordID &gt; ,</dt>número de índice del evento en el registro de eventos
-<dt>Execution ProcessID: &lt; Execution ProcessID &gt; ,</dt>proceso que generó el canal de eventos: Canal de eventos , por
-<dt> &lt; &gt; ejemplo: Microsoft- Windows-Windows Defender/Equipo</dt>
-<dt>operativo: &lt; &gt; </dt>Nombre del equipo Nombre de seguridad
-<dt>UserID: Seguridad &lt; UserID &gt; </dt>Nombre del producto: Nombre del producto , por
-<dt> &lt; &gt; ejemplo:</dt>Antivirus de Microsoft Defender versión del
-<dt>producto: &lt; &gt; </dt>Detección de versiones del
-<dt>producto Time: &lt; Detection Time , time when &gt; CFA blocked an untrusted process</dt>
-<dt>User: Domain &lt; &gt; \& lt; Ruta &gt; </dt>de acceso de usuario: nombre del
-<dt> &lt; &gt; dispositivo,</dt>nombre del dispositivo o disco al que se ha accedido a un proceso que no es de confianza para modificar Nombre del proceso: Ruta de acceso del proceso, el nombre de ruta de acceso del proceso que
-<dt> &lt; &gt; CFA</dt>bloqueó para acceder al dispositivo o disco para modificar la versión de inteligencia de
-<dt>seguridad: &lt; &gt; </dt>Versión del motor de inteligencia de
-<dt>seguridad: Antimalware Engine &lt; versión &gt; </dt>
+<dt>EventID: &lt; EventID&gt;, por ejemplo: 1127Version</dt>
+<dt>: &lt;Version&gt;,</dt> por ejemplo: 
+<dt>0Level: &lt;Level&gt;, por ejemplo: win:</dt>
+<dt>WarningTimeCreated: &lt;SystemTime&gt;,</dt> hora en la que se creó el 
+<dt>eventoEventRecordID: &lt;EventRecordID&gt;,</dt> número de índice del evento en el registro de 
+<dt>eventosExecution ProcessID: &lt;Execution ProcessID&gt;,</dt> proceso que generó el 
+<dt>eventChannel: &lt;Canal&gt; de eventos, por ejemplo: Microsoft- Windows-Windows Defender/</dt>
+<dt>OperationalComputer: &lt;Computer nameSecurity&gt;</dt> 
+<dt>UserID: &lt;Security UserIDProduct&gt;</dt> 
+<dt>Name: &lt;Product Name&gt;, for example: Antivirus de Microsoft Defender</dt> 
+<dt>Product Version: &lt;Product VersionDetection&gt;</dt>
+<dt> Time: &lt;Detection Time&gt;, time when CFA blocked an un untrusted processUser</dt>
+<dt>: &lt;Domainlt&gt;\&; UserPath&gt;</dt>
+<dt>: &lt;&gt;</dt> nombre del dispositivo, nombre del dispositivo o disco al que ha accedido un proceso que no es de confianza para la modificación Nombre de proceso: 
+<dt>Ruta de acceso del proceso, el nombre de ruta de acceso del proceso que CFA &lt;&gt;</dt> bloqueó para obtener acceso al dispositivo o disco para modificarLa versión de inteligencia de seguridadEngine 
+<dt>Versión: &lt;Antimalware Engine versión&gt;</dt>
+<dt>&lt;&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1365,9 +1365,9 @@ Descripción:
 <td >
 Antivirus de Microsoft Defender cliente está en funcionamiento en un estado correcto.
 <dl>
-<dt>Versión de la plataforma: &lt; Versión de &gt; la plataforma actual</dt>Versión de firma: Versión del motor
-<dt> &lt; de &gt; </dt>la versión de definición:
-<dt>Antimalware Engine &lt; versión &gt; </dt>
+<dt>Versión de la plataforma: &lt; Versión actual de&gt;</dt> 
+<dt>la plataformaSignature Versión: &lt;Versión de definiciónEngine&gt;</dt> 
+<dt>Versión: &lt;Antimalware Engine versión&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1405,29 +1405,29 @@ Descripción:
 <td >
 Informe de estado del cliente antivirus.
 <dl>
-<dt>Versión de la plataforma: &lt; Versión &gt; </dt>actual de la plataforma Versión del
-<dt>motor: &lt; &gt; Antimalware Engine</dt>versión del motor de inspección en tiempo real de red: Versión de firma del motor de inspección en tiempo real de red
-<dt>Versión &lt; &gt; </dt>de firma antivirus Versión de firma
-<dt> &lt; antispyware: &gt; </dt>Versión de firma antispyware Versión de firma Network
-<dt> &lt; &gt; Realtime</dt>
-<dt>Inspection: &lt; &gt;</dt>Estado RTP de la versión de firma de inspección en tiempo real de red: Estado de la OA de protección en tiempo real
-<dt> &lt; &gt; (habilitado</dt>o deshabilitado): Estado de IOAV de estado de acceso
-<dt> &lt; &gt; (habilitado</dt>o deshabilitado): Estado de E/S de descarga de
-<dt>I Outlook E y estado de datos adjuntos rápidos (habilitado o &lt; &gt; deshabilitado)</dt>Estado de la MARCA: Estado de supervisión del comportamiento (habilitado o
-<dt> &lt; &gt; deshabilitado)</dt>Antigüedad de firma del antivirus: antigüedad de firma del
-<dt> &lt; antivirus &gt;  (en días)</dt> 
-<dt>Antigüedad de firma antispyware: &lt; Antigüedad de firma antispyware &gt; (en días)</dt>Última antigüedad del examen rápido: última antigüedad del examen rápido
-<dt> &lt; &gt; (en días)</dt>Última antigüedad completa del examen: Última antigüedad completa del examen
-<dt> &lt; &gt; (en días)</dt>Tiempo de creación de firmas del
-<dt>antivirus: ? &lt; Hora de &gt; creación de firmas antivirus</dt>Tiempo de
-<dt>creación de firmas antispyware: ? &lt; Hora de creación &gt; de firmas antispyware</dt>
-<dt>Última hora de inicio del examen rápido: ? &lt; Última hora de &gt; inicio del examen rápido</dt>Última hora de finalización del examen
-<dt>rápido: ? &lt; Última &gt; hora</dt>de finalización del examen rápido Último origen de examen rápido: Último origen de examen rápido (0 = no se ha ejecutado el examen, 1 = iniciado por el
-<dt> &lt; &gt; usuario, 2 =</dt>iniciado por el sistema) Última hora de inicio completa del
-<dt>examen: ? &lt; Última hora de &gt; inicio del examen completo</dt>Última hora de finalización del examen
-<dt>completo: ? &lt; Last full scan &gt; end time</dt>
-<dt>Last full scan source: Last full scan &lt; source &gt; (0 = scan didn't run, 1 = user initiated, 2 = system initiated)</dt> 
-<dt> Product status: For internal troubleshooting
+<dt>Versión de la plataforma: &lt; &gt;Versión</dt> actual de la 
+<dt>plataformaEngine Versión: &lt;Antimalware Engine&gt;</dt> Versión del motor de inspección en tiempo real De red
+<dt>: &lt;&gt;</dt> Versión del motor de inspección en tiempo real De red Versión de firma de Antivirus Versión de 
+<dt>firmaAntispyware: &lt;Versión de firma antispywareNetwork&gt;</dt> Versión de firma de inspección en tiempo real
+<dt>: &lt;&gt;</dt>
+<dt>&lt; Network Realtime Inspection signature versionRTP&gt;</dt> 
+<dt>state: &lt;Realtime protection state&gt; (Enabled or Disabled)</dt>
+<dt>OA state: &lt;On Access state&gt; (Enabled or Disabled)</dt>
+<dt>IOAV state: &lt;IE Downloads and Outlook Express Attachments state&gt; (Enabled or Disabled)</dt>
+<dt>BM state: &lt;Behavior Monitoring state&gt; (Enabled or Disabled)</dt>
+<dt>Antivirus signature age: &lt;Antivirus signature&gt; age  (en días)</dt> 
+<dt>Antigüedad de firma antispyware: &lt; Antigüedad de firma antispyware&gt; (</dt>en días)Última antigüedad del examen rápido
+<dt>: &lt;&gt;</dt> última antigüedad del examen rápido (en días)Última antigüedad completa del examen
+<dt>: &lt;&gt;</dt> Última antigüedad completa del examen (en días)Tiempo de creación de firmas antivirus
+<dt>: ?&lt; Hora de creación de firmas antivirusAntispyware&gt;</dt> 
+<dt>hora de creación de firmas: ?&lt; Hora de creación de firmas antispywareLa&gt;</dt> 
+<dt>última hora de inicio del examen rápido: ?&lt; Última hora de inicio del examen rápidoLa&gt;</dt> 
+<dt>última hora de finalización del examen rápido: ?&lt; Last quick scan end timeLast&gt;</dt> 
+<dt>quick scan source: &lt;Last quick scan source&gt; (0 = scan didn't run, 1 = user initiated, 2 = system initiated)</dt>
+<dt>Last full scan start time: ?&lt; Last full scan start timeLast&gt;</dt> 
+<dt>full scan end time: ?&lt; Last full scan end timeLast&gt;</dt> 
+<dt>full scan source: &lt;Last full scan source&gt; (0 = scan didn't run, 1 = user initiated, 2 = system initiated)</dt>
+<dt>Product status: For internal troubleshooting
 </dl>
 </td>
 </tr>
@@ -1457,19 +1457,19 @@ Descripción:
 <td >
 Se ha actualizado la versión de firma del antivirus.
 <dl>
-<dt>Versión de firma actual: &lt; Versión de &gt; firma actual</dt>
-<dt>Versión de firma anterior: Versión de firma &lt; anterior &gt; </dt>Tipo de 
-<dt> firma: Tipo de firma , por &lt; &gt; ejemplo: <ul>
+<dt>Versión de firma actual: &lt; Versión de firma actualPrevious&gt;</dt> 
+<dt>Signature Version: &lt;Previous signature versionSignature&gt;</dt>
+<dt> Type: &lt;Signature type&gt;, for example: <ul>
 <li>Antivirus</li>
 <li>Antiespía</li>
 <li>Antimalware</li>
 <li>Sistema de inspección de red</li>
 </ul>
 </dt>
-<dt>Tipo de actualización: &lt; Tipo de &gt; actualización , Completo o Delta.</dt> 
-<dt>Usuario: &lt; Dominio &gt; \& lt; Versión &gt; </dt>
-<dt>del motor actual del usuario: versión actual del &lt; &gt; motor</dt>Versión anterior del
-<dt>motor: Versión anterior del &lt; motor &gt; </dt>
+<dt>Tipo de actualización: &lt; Tipo de actualización&gt;, Completo o Delta.</dt> 
+<dt>Usuario: &lt; Domainlt&gt;\&; Versión del motor UserCurrent&gt;</dt>
+<dt>: &lt;versión actual del motorPrevious&gt;</dt> Versión del motor
+<dt>: &lt;Versión anterior del motor&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1506,9 +1506,9 @@ Descripción:
 <td >
 Antivirus de Microsoft Defender ha encontrado un error al intentar actualizar firmas.
 <dl>
-<dt>Nueva versión de inteligencia de seguridad: &lt; Nuevo número &gt; de versión</dt>
-<dt>Versión de inteligencia de seguridad anterior: Versión &lt; &gt; anterior</dt>Update 
-<dt> Source: Update source , por &lt; &gt; ejemplo:
+<dt>Nueva versión de inteligencia de seguridad: &lt; Nuevo número de versiónPrevious&gt;</dt> 
+<dt>versión de inteligencia de seguridad: &lt;Versión anteriorActualizar&gt;</dt>
+<dt> Origen: &lt;Origen de&gt; actualización, por ejemplo:
 <ul>
 <li>Carpeta de actualización de inteligencia de seguridad</li>
 <li>Servidor de actualización de inteligencia de seguridad interna</li>
@@ -2586,6 +2586,33 @@ Antivirus de Microsoft Defender está deshabilitado el examen de virus.
 </td>
 </tr>
 <tr>
+<th colspan="2">Identificador de evento: 5013</th>
+</tr>
+<tr><td>
+Nombre simbólico:
+</td>
+<td >
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Mensaje:
+</td>
+<td >
+<b>La protección contra alteraciones bloqueó un cambio en Antivirus de Microsoft Defender.</b>
+</td>
+</tr>
+<tr>
+<td>
+Descripción:
+</td>
+<td >
+Si la protección contra alteraciones está habilitada, cualquier intento de cambiar cualquiera de las configuraciones de Defender si está bloqueada y se genera el identificador de evento 5013 que indica qué cambio de configuración se bloqueó.
+</td>
+</tr>
+<tr>
 <th colspan="2">Identificador de evento: 5100</th>
 </tr>
 <tr><td>
@@ -2662,7 +2689,7 @@ Use la información de estas tablas para ayudar a solucionar Antivirus de Micros
 <th colspan="2">Código de error: 0x80508007</th>
 </tr>
 <tr>
-<td>Mensaje</td>
+<td>Message</td>
 <td>
 <b>ERR_MP_NO_MEMORY </b>
 </td>
@@ -2688,7 +2715,7 @@ Este error indica que es posible que se haya quedo sin memoria.
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x8050800C</th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_BAD_INPUT_DATA</b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2712,7 +2739,7 @@ Nota: El tamaño del archivo de definiciones descargado del sitio puede superar 
 </tr>
 <tr>
 <th colspan="2">Código de error: 0x80508020</th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2722,7 +2749,7 @@ Este error indica que puede haber un error de configuración del motor; normalme
 <tr>
 <th colspan="2">Código de error: 0x805080211
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2732,7 +2759,7 @@ Este error indica que Antivirus de Microsoft Defender no pudo poner en cuarenten
 <tr>
 <th colspan="2">Código de error: 0x80508022
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2743,7 +2770,7 @@ Este error indica que se requiere un reinicio para completar la eliminación de 
 <th colspan="2">
 0x80508023
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2757,7 +2784,7 @@ Ejecute el <a href="https://www.microsoft.com/security/scanner/default.aspx">Exa
 <tr>
 <th colspan="2">Código de error: 0x80508024 </th></tr>
 <tr>
-<td>Mensaje</td>
+<td>Message</td>
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2771,7 +2798,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508025
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2782,7 +2809,7 @@ Siga los pasos de corrección manuales descritos en la Enciclopedia de Protecci�
 <tr>
 <th colspan="2">Código de error: 0x80508026
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2794,7 +2821,7 @@ Antivirus de Microsoft Defender no es capaz de corregir las amenazas detectadas 
 <tr>
 <th colspan="2">Código de error: 0x80508027
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2806,7 +2833,7 @@ Compruebe las amenazas detectadas y resuelvalas según sea necesario.
 <tr>
 <th colspan="2">Código de error: 0x80508029
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2818,7 +2845,7 @@ Ejecute un examen completo del sistema.
 <tr>
 <th colspan="2">Código de error: 0x80508030
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
@@ -2830,7 +2857,7 @@ Ejecute sin conexión Antivirus de Microsoft Defender. Puede leer sobre cómo ha
 <tr>
 <th colspan="2">Código de error: 0x80508031
 </th>
-</tr><tr><td>Mensaje</td>
+</tr><tr><td>Message</td>
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Posible motivo</td>
 <td>
