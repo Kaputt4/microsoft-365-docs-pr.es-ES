@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo funciona la autenticación basada en DNS SMTP de entidades con nombre (DANE) para proteger las comunicaciones de correo electrónico entre servidores de correo.
-ms.openlocfilehash: 596e1b04576edc025eda8b3486b42c5e7e0b29bc
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 32c39859d9bfdf292fd9c7a315a0ee1ee08eae2e
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214293"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272035"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Cómo funciona la autenticación basada en DNS SMTP de entidades con nombre (DANE)
 
@@ -35,7 +35,7 @@ Después de recibir el registro TLSA auténtico, el servidor de correo de envío
 
 ### <a name="tlsa-resource-record"></a>Registro de recursos TLSA
 
-El registro de autenticación TLS (TLSA) se usa para asociar el certificado X.509 o el valor de clave pública de un servidor con el nombre de dominio que contiene el registro. Los registros TLSA solo pueden ser de confianza si DNSSEC está habilitado en el dominio. Si usa un proveedor dns para hospedar el dominio, puede ser una configuración que se ofrece al configurar un dominio con ellos. Para obtener más información sobre la firma de zona DNSSEC, visite este vínculo: Información general [sobre dnssec | Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)). 
+El registro de autenticación TLS (TLSA) se usa para asociar el certificado X.509 o el valor de clave pública de un servidor con el nombre de dominio que contiene el registro. Los registros TLSA solo pueden ser de confianza si DNSSEC está habilitado en el dominio. Si usa un proveedor dns para hospedar el dominio, puede ser una configuración que se ofrece al configurar un dominio con ellos. Para obtener más información sobre la firma de zona DNSSEC, visite este vínculo: [Información general sobre dnssec | Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)). 
   
 Ejemplo de registro TLSA:
   
@@ -47,16 +47,16 @@ Hay cuatro campos configurables únicos para el tipo de registro TLSA:
 
 |Valor  |Acrónimo  |Descripción |
 |---------|---------|---------|
-|0<sup>1</sup>     |PKIX-TA          |El certificado usado es la entidad de certificación pública de anclaje de confianza de la cadena de confianza X.509.          |
-|1<sup>1</sup>     |PKIX-EE         |El certificado comprobado es el servidor de destino; Las comprobaciones DNSSEC deben comprobar su autenticidad.          |
+|01<sup></sup>     |PKIX-TA          |El certificado usado es la entidad de certificación pública de anclaje de confianza de la cadena de confianza X.509.          |
+|11<sup></sup>     |PKIX-EE         |El certificado comprobado es el servidor de destino; Las comprobaciones DNSSEC deben comprobar su autenticidad.          |
 |2     |DANE-TA         |Use la clave privada del servidor del árbol X.509 que debe validar un delimitador de confianza en la cadena de confianza. El registro TLSA especifica el delimitador de confianza que se usará para validar los certificados TLS para el dominio.         |
 |3     |DANE-EE         |Solo coincide con el certificado del servidor de destino.           |
 
-<sup>1</sup>Exchange Online sigue las instrucciones de implementación de RFC que los valores del campo de uso de certificados de 0 o 1 no deben usarse cuando DANE se implementa con SMTP.   Cuando un registro TLSA que tiene un valor de campo Uso de certificado de 0 o 1 se devuelve a Exchange Online, Exchange Online tratará como no utilizable. Si todos los registros TLSA se encuentran inutilizables, Exchange Online no realizará los pasos de validación de DANE para 0 o 1 al enviar el correo electrónico. En su lugar, debido a la presencia de un registro TLSA, Exchange Online exigirá el uso de TLS para enviar el correo electrónico, enviar el correo electrónico si el servidor de correo electrónico de destino admite TLS o colocar el correo electrónico y generar un NDR si el servidor de correo electrónico de destino no admite TLS.     
+<sup>1</sup> Exchange Online sigue las instrucciones de implementación de RFC que los valores del campo de uso de certificados de 0 o 1 no deben usarse cuando DANE se implementa con SMTP.   Cuando un registro TLSA que tiene un valor de campo Uso de certificado de 0 o 1 se devuelve a Exchange Online, Exchange Online tratará como no utilizable. Si todos los registros TLSA se encuentran inutilizables, Exchange Online no realizará los pasos de validación de DANE para 0 o 1 al enviar el correo electrónico. En su lugar, debido a la presencia de un registro TLSA, Exchange Online exigirá el uso de TLS para enviar el correo electrónico, enviar el correo electrónico si el servidor de correo electrónico de destino admite TLS o colocar el correo electrónico y generar un NDR si el servidor de correo electrónico de destino no admite TLS.     
 
 En el registro TLSA de ejemplo, el campo Uso de certificados se establece en "3", por lo que los datos de asociación de certificados ('abc123... xyz789') se coincidiría únicamente con el certificado del servidor de destino.
 
-**Campo selector:** indica qué partes del certificado del servidor de destino deben comprobarse. 
+**Campo selector**: indica qué partes del certificado del servidor de destino deben comprobarse. 
 
 |Valor  |Acrónimo  |Descripción  |
 |---------|---------|---------|
@@ -65,7 +65,7 @@ En el registro TLSA de ejemplo, el campo Uso de certificados se establece en "3"
 
 En el registro TLSA de ejemplo, el campo selector se establece en "1" para que los datos de asociación de certificados coincidan con la clave pública del certificado del servidor de destino y el algoritmo con el que se identifica la clave pública para usar.
 
-**Campo de tipo de coincidencia:** indica el formato en el que se representará el certificado en el registro TLSA. 
+**Campo de tipo de coincidencia**: indica el formato en el que se representará el certificado en el registro TLSA. 
 
 |Valor  |Acrónimo  |Descripción  |
 |---------|---------|---------|
@@ -73,11 +73,11 @@ En el registro TLSA de ejemplo, el campo selector se establece en "1" para que l
 |1     |SHA-256         |Los datos del registro TSLA son un hash SHA-256 del certificado o spki.          |
 |2     |SHA-512         |Los datos del registro TSLA son un hash SHA-512 del certificado o spki.         |
 
-En el ejemplo del registro TLSA, el campo Tipo de coincidencia se establece en "1", por lo que los datos de asociación de certificados son un hash SHA-256 de la información de clave pública del sujeto del certificado del servidor de destino
+En el registro TLSA de ejemplo, el campo Tipo de coincidencia se establece en "1", por lo que los datos de asociación de certificados son un hash SHA-256 de la información de clave pública del asunto del certificado del servidor de destino
 
 **Datos de asociación de** certificados: especifica los datos de certificado que se usan para hacer coincidir con el certificado del servidor de destino. Estos datos dependen del valor del campo selector y del valor de tipo de coincidencia.
 
-En el ejemplo del registro TLSA, los datos de asociación de certificados se establecen en 'abc123... xyz789'. Dado que el valor del campo selector del ejemplo se establece en "1", haría referencia a la clave pública del certificado del servidor de destino y al algoritmo que se identifica para su uso. Y como el valor del campo Tipo de coincidencia del ejemplo se establece en "1", haría referencia al hash SHA-256 de la información de clave pública del sujeto desde el certificado del servidor de destino.
+En el registro TLSA de ejemplo, los datos de asociación de certificados se establecen en 'abc123... xyz789'. Dado que el valor del campo selector del ejemplo se establece en "1", haría referencia a la clave pública del certificado del servidor de destino y al algoritmo que se identifica para su uso. Y como el valor del campo Tipo de coincidencia del ejemplo se establece en "1", haría referencia al hash SHA-256 de la información de clave pública del sujeto desde el certificado del servidor de destino.
 
 ## <a name="how-can-exchange-online-customers-use-smtp-dane-outbound"></a>¿Cómo Exchange Online clientes usar SMTP DANE Outbound?
 
@@ -110,14 +110,14 @@ Solo hay dos escenarios en los que un error DE DANE SMTP provocará el bloqueo d
 |Agente de transferencia de correo: la seguridad de transporte estricta **(MTA-STS)** ayuda a frustrar los ataques de degradación y man-in-the-middle al proporcionar un mecanismo para establecer directivas de dominio que especifiquen si el servidor de correo electrónico de destino admite TLS y qué hacer cuando tls no se puede negociar, por ejemplo, detener la transmisión.     |Más información sobre Exchange Online próxima compatibilidad con MTA-STS entrante y saliente se publicará a finales de este año.     [Exchange Online de transporte de Microsoft Ignite 2020 : Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699)<br /><br />[rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461) |
 |**Sender Policy Framework (SPF)** usa información IP para garantizar que los sistemas de correo electrónico de destino confíen en los mensajes enviados desde su dominio personalizado.    |   [Cómo el Marco de directivas de remitente (SPF) impide la suplantación de identidad ( Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)      |
 |**DomainKeys Identified Mail (DKIM)** usa la información del certificado X.509 para garantizar que los sistemas de correo electrónico de destino confíen en los mensajes enviados salientes desde el dominio personalizado.      | [Cómo usar DKIM para correo electrónico en el dominio personalizado - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)        |
-|La autenticación, los informes y la conformidad de mensajes basados en dominio **(DMARC)** funciona con el marco de directivas de remitente y el correo identificado con domainkeys para autenticar remitentes de correo y asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio.      |  [Usar DMARC para validar el correo electrónico, los pasos de configuración - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)       |
+|**La autenticación,** los informes y la conformidad de mensajes basados en dominio (DMARC) funciona con el marco de directivas de remitente y el correo identificado con domainkeys para autenticar remitentes de correo y asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio.      |  [Usar DMARC para validar el correo electrónico, los pasos de configuración - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)       |
 
 ## <a name="troubleshooting-sending-emails-with-smtp-dane"></a>Solución de problemas al enviar correos electrónicos con SMTP DANE
 
 Actualmente, hay cuatro códigos de error para DANE al enviar correos electrónicos con Exchange Online. Microsoft está actualizando activamente esta lista de código de error. Los errores estarán visibles en:
 1.  El Exchange del Centro de administración a través de la vista Detalles de seguimiento de mensajes.
 2.  NDR generados cuando un mensaje no se envía debido a un error DANE o DNSSEC.
-3.  Herramienta Analizador de conectividad remota [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
+3.  Herramienta analizador de conectividad remota [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
 |Código NDR  |Descripción  |
 |---------|---------|
@@ -170,13 +170,13 @@ Actualmente, hay dos métodos que un administrador de un dominio de recepción p
 1. Adoptar TLS-RPT SMTP (Informes de seguridad de la capa de transporte) introducido en [RFC8460](https://datatracker.ietf.org/doc/html/rfc8460) 
 2. Usar la herramienta Analizador de conectividad remota [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365)
 
-TLS-RPT es un mecanismo de informes para que los remitentes proporcionen detalles a los administradores de dominio de destino sobre los éxitos y errores de DANE y MTA-STS con los dominios de destino [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf.org/doc/html/rfc8460) respectivos. Para recibir informes TLS-RPT, solo necesita agregar un registro TXT en los registros DNS de su dominio que incluya la dirección de correo electrónico o el URI al que desea que se envíen los informes. Exchange Online enviará informes TLS-RPT en formato JSON. 
+TLS-RPT [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf.org/doc/html/rfc8460) es un mecanismo de informes para que los remitentes proporcionen detalles a los administradores de dominio de destino sobre los éxitos y errores de DANE y MTA-STS con los dominios de destino respectivos. Para recibir informes TLS-RPT, solo necesita agregar un registro TXT en los registros DNS de su dominio que incluya la dirección de correo electrónico o el URI al que desea que se envíen los informes. Exchange Online enviará informes TLS-RPT en formato JSON. 
 
 Registro de ejemplo:
 
 :::image type="content" source="../media/compliance-trial/example-record.png" alt-text="Registro de ejemplo" lightbox="../media/compliance-trial/example-record.png":::
 
-El segundo método consiste en usar el Analizador de conectividad remota [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365), que puede realizar las mismas comprobaciones DE DNSSEC y DANE con respecto a la configuración dns que Exchange Online realizará al enviar correo electrónico fuera del servicio. Esta es la forma más directa de solucionar errores en la configuración para recibir correo electrónico Exchange Online estos estándares. 
+El segundo método consiste en usar el Analizador de conectividad remota [de Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365), que puede realizar las mismas comprobaciones de DNSSEC y DANE con respecto a la configuración dns que Exchange Online realizará al enviar correo electrónico fuera del servicio. Esta es la forma más directa de solucionar errores en la configuración para recibir correo electrónico Exchange Online estos estándares. 
 
 Al solucionar problemas, se pueden generar los siguientes códigos de error:
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo modificar una información confidencial personalizada con PowerShell.
-ms.openlocfilehash: dfecd8ab6bf24c00e0bdc01a20f798c29f18c446
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d402586463da1bed13d15dbaa32aece6badc9c72
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60187994"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271495"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>Modificar un tipo de información confidencial personalizada con PowerShell
 
@@ -60,16 +60,16 @@ Para conectarse a PowerShell del Centro de cumplimiento, vea [Conectarse a Power
    $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
    ```
 
-3. Use el cmdlet [Set-Content](/powershell/module/microsoft.powershell.management/set-content) para exportar el paquete de reglas personalizado a un archivo XML:
+3. Use la siguiente sintaxis para exportar el paquete de reglas personalizado a un archivo XML:
 
    ```powershell
-   Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
    En este ejemplo se exporta el paquete de reglas para el archivo denominado ExportedRulePackage.xml en la carpeta C:\Mis documentos.
 
    ```powershell
-   Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
    ```
 
 #### <a name="step-2-modify-the-sensitive-information-type-in-the-exported-xml-file"></a>Paso 2: modificar el tipo de información confidencial en el archivo XML exportado
@@ -81,16 +81,13 @@ Anteriormente en este tema se describen los tipos de información confidencial e
 Para importar el archivo XML actualizado en el paquete de reglas existentes, use el cmdlet [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage):
 
 ```powershell
-Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
+Set-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\My Documents\External Sensitive Info Type Rule Collection.xml'))
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, vea [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage).
 
-
 ## <a name="more-information"></a>Más información
 
 - [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
-
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
-
 - [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)

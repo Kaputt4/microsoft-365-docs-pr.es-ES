@@ -14,18 +14,18 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Busque información y recursos para actualizar desde Lync Server 2013. El soporte técnico finaliza el 11 de abril de 2023.
-ms.openlocfilehash: a770ce6acab4320bc84e920b1c527e9c63e72bbb
-ms.sourcegitcommit: 16e3a6e6df253de1153e46d058941cd9a2bbf2b2
+ms.openlocfilehash: 6d6d3baed383e85a1e97d37726ff7f1eb355e98c
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60889904"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271627"
 ---
 # <a name="upgrading-from-lync-server-2013"></a>Actualización desde Lync Server 2013
 
 Microsoft Lync Server 2013 llegará al final de la compatibilidad el **11 de abril de 2023**. En este artículo se proporcionan recursos que le ayudarán a actualizar la implementación existente de Lync Server Microsoft Teams o Skype Empresarial local.
 
-## <a name="what-is-end-of-support"></a>¿Qué es *el fin de la compatibilidad?*
+## <a name="what-is-end-of-support"></a>¿Qué *es el fin de la compatibilidad*?
 
 La mayoría de los productos de Microsoft tienen un ciclo de vida de soporte técnico, durante el cual obtienen nuevas características, correcciones de errores, correcciones de seguridad, y así sucesivamente. Después de la fecha de finalización de la compatibilidad, el producto no deja de funcionar, pero Microsoft ya no proporciona:
 
@@ -41,7 +41,7 @@ Esto significa que no habrá más actualizaciones, revisiones o correcciones par
 
 ## <a name="plan-ahead"></a>Planear con antelación
 
-Compruebe las fechas en que finaliza la compatibilidad en el [sitio ciclo de vida del producto.](/lifecycle/products/lync-server-2013) Planee las actualizaciones o las migraciones con estas fechas en mente. Recuerde que el producto *no dejará de funcionar* en la fecha indicada. Pero como la instalación ya no se parchea después de esa fecha, querrá planear una transición sin problemas a la siguiente versión del producto. En la tabla siguiente se enumeran las opciones disponibles.
+Compruebe las fechas en que finaliza la compatibilidad en el [sitio ciclo de vida del producto](/lifecycle/products/lync-server-2013). Planee las actualizaciones o las migraciones con estas fechas en mente. Recuerde que el producto *no dejará de funcionar* en la fecha indicada. Pero como la instalación ya no se parchea después de esa fecha, querrá planear una transición sin problemas a la siguiente versión del producto. En la tabla siguiente se enumeran las opciones disponibles.
 
 |Fin del producto de soporte técnico|Compatible|Recomendado|
 |---|---|---|
@@ -58,23 +58,23 @@ Si no puede actualizar a Microsoft Teams, puede actualizar a Skype Empresarial S
 
 ### <a name="upgrade-to-microsoft-teams"></a>Actualizar a Microsoft Teams
 
-Tenemos instrucciones detalladas sobre cómo actualizar a Microsoft Teams desde la implementación local. En primer lugar, vamos a cubrir algunos requisitos técnicos clave. Deberá establecer una conectividad híbrida que le permita mover a los usuarios a Teams. [Plan hybrid connectivity](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) gives an overview of setting up hybrid. Aunque el artículo se centra en Skype Empresarial, todos los conceptos se aplican también a Lync Server 2013. Consulte la [sección requisitos de versión del](/SkypeForBusiness/hybrid/plan-hybrid-connectivity#server-version-requirements) servidor para obtener información específica de Lync Server 2013.
+Tenemos instrucciones detalladas sobre cómo actualizar a Microsoft Teams desde la implementación local. En primer lugar, vamos a cubrir algunos requisitos técnicos clave. Deberá establecer la conectividad híbrida, lo que le permitirá mover a los usuarios a Teams. [Plan hybrid connectivity](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) gives an overview of setting up a hybrid environment. Aunque el artículo se centra en Skype Empresarial, todos los conceptos se aplican también a Lync Server 2013. Consulte la [sección requisitos de versión del](/SkypeForBusiness/hybrid/plan-hybrid-connectivity#server-version-requirements) servidor para obtener información específica de Lync Server 2013.
 
 También debe asegurarse de que la implementación de Lync Server 2013 esté totalmente actualizada. Publicamos una lista de todas las actualizaciones más recientes para [Lync Server 2013](https://support.microsoft.com/topic/updates-for-lync-server-2013-a2a042ac-79f0-2665-7453-0a541fb25164) Sin embargo, la siguiente actualización es un requisito previo para una actualización a Microsoft Teams:
 
-- Actualización acumulativa de septiembre de [2021 5.0.8308.1149 para Lync Server 2013, Componentes](https://support.microsoft.com/topic/september-2021-cumulative-update-5-0-8308-1149-for-lync-server-2013-core-components-6755903a-fc9a-44d2-b835-2a6d01f14043)principales: Esta actualización reemplaza la autenticación de Live ID por el protocolo de autenticación de OAuth para el cmdlet, que se usa para mover usuarios locales `Move-CSUser` a Microsoft Teams.
+- Actualización acumulativa de septiembre de [2021 5.0.8308.1149 para Lync Server 2013, Componentes](https://support.microsoft.com/topic/september-2021-cumulative-update-5-0-8308-1149-for-lync-server-2013-core-components-6755903a-fc9a-44d2-b835-2a6d01f14043) principales: Esta actualización reemplaza la autenticación de Live ID por el protocolo de autenticación de OAuth `Move-CSUser` para el cmdlet, que se usa para mover usuarios locales a Microsoft Teams.
 
-Aunque la experiencia del usuario en Microsoft Teams es mucho más rica y superior a Lync, también es muy diferente. Por lo tanto, también tendrá que preparar su organización y los usuarios para garantizar una adopción rápida de Microsoft Teams. Tenemos una gran cantidad de información disponible sobre cómo preparar su organización, planear la actualización a Teams y garantizar una implementación correcta. 
+Aunque la experiencia del usuario en Microsoft Teams es mucho más rica y superior a Lync, también es muy diferente. Por lo tanto, también tendrá que preparar su organización y los usuarios para garantizar una adopción rápida de Microsoft Teams. Tenemos una gran cantidad de información disponible sobre cómo preparar su organización, planear la actualización a Teams y garantizar una implementación correcta.
 
-**Le recomendamos [](/MicrosoftTeams/upgrade-skype-teams)** que comience en nuestro portal de actualización de Teams donde encontrará información técnica, recursos de aprendizaje, vínculos a sesiones de Ignite, recursos de ayuda disponibles, casos prácticos y mucho más.
+**Le recomendamos [](/MicrosoftTeams/upgrade-skype-teams)** que comience en nuestro portal de actualización de Teams donde encontrará información técnica, recursos de formación, vínculos a sesiones de Ignite, recursos de ayuda disponibles, casos prácticos y mucho más.
 
 :::image type="content" source="../media/teams-upgrade-portal.png" alt-text="Captura de pantalla del portal Teams actualización":::
 
 ### <a name="upgrade-to-skype-for-business-server"></a>Actualizar a Skype Empresarial Server
 
-La ruta de Skype Empresarial Server va a ser diferente en función de la versión a la que elija actualizar. Skype Empresarial Server 2015 admite una actualización local de Lync Server 2013. Por otra parte, para actualizar a Skype Empresarial Server 2019, primero deberá introducir Skype Empresarial Server 2019 en su organización de Lync Server 2013 y, a continuación, transferir operaciones al nuevo servidor. 
+La ruta de Skype Empresarial Server va a ser diferente en función de la versión a la que elija actualizar. Skype Empresarial Server 2015 admite una actualización local de Lync Server 2013. Por otra parte, para actualizar a Skype Empresarial Server 2019, primero deberá introducir Skype Empresarial Server 2019 en la instalación de Lync Server 2013 mediante la adición de uno o más servidores nuevos y, a continuación, transferir las operaciones a los nuevos servidores de 2019 que haya agregado.
 
-Un punto importante a tener en cuenta es que la fase de soporte actual para cada producto: Skype Empresarial 2019 está en soporte estándar y Skype Empresarial 2015 está actualmente en soporte extendido.  Por lo tanto, se recomienda actualizar a Skype Empresarial Server 2019. Para obtener más información sobre la diferencia entre el soporte estándar y el soporte extendido, consulte [Fixed Lifecycle Policy](/lifecycle/policies/fixed).
+Un punto importante a tener en cuenta es que la fase de soporte actual para cada producto: Skype Empresarial 2019 está en soporte estándar y Skype Empresarial 2015 está actualmente en soporte extendido.  Por lo tanto, se recomienda actualizar a Skype Empresarial Server 2019. Para obtener más información acerca de la diferencia entre la compatibilidad general y la extendida, consulta [Directiva de ciclo de vida fijo](/lifecycle/policies/fixed).
 
 Vea los siguientes recursos para obtener información detallada acerca de cada escenario de actualización.
 

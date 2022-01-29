@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: c3af2b179d5f33195ba61a7e236745d2b48c626a
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: c2300061dbe075be31e0a70d7b1356e3606230e5
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265720"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271699"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -282,11 +282,6 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     ![Página Elegir ubicaciones para la configuración de etiquetado automático.](../media/locations-auto-labeling-wizard.png)
     
     Para especificar cuentas individuales de OneDrive, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
-    
-    > [!NOTE]
-    > Cuando se eliminan [cuentas de OneDrive](/onedrive/retention-and-deletion#the-onedrive-deletion-process) (por ejemplo, un empleado abandona la organización), la ubicación se marca como un sitio de SharePoint para admitir el acceso continuado durante el período de retención de OneDrive.
-    > 
-    > En esta fase de eliminación, los archivos de la cuenta de OneDrive no se incluirán en la configuración de **Todos** para la ubicación de las **cuentas de OneDrive**, pero se incluirán en la configuración de **Todos** para la ubicación de **sitios de SharePoint**. Cualquier archivo de estas cuentas de OneDrive eliminadas indica que SharePoint es su ubicación de origen en los resultados de simulación y los datos de auditoría.
 
 7. Para la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de las **Reglas comunes** para definir reglas que identifiquen el contenido que se va a etiquetar en todas las ubicaciones seleccionadas. Si necesita reglas diferentes por ubicación, seleccione **Reglas avanzadas**. Luego, seleccione **Siguiente**.
 

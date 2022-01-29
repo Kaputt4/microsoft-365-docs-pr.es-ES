@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderás a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de la organización.
-ms.openlocfilehash: f6997a6f97aa103e6d8af2ff85fe5a39ef062050
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cc31d067eaf2684c17a09d7b2731a5cc3500af76
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938942"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271951"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -44,7 +44,7 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
     
 2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
 
-3. Al crear el grupo de funciones, use la sección **Elegir roles** para agregar la siguiente función al grupo de roles: Administración de **cumplimiento dlp**.
+3. Al crear el grupo de roles, use la sección **Elegir roles** para agregar la siguiente función al grupo de roles: **Administración de cumplimiento dlp**.
     
 4. Use la sección **Elegir miembros** para añadir el grupo de Microsoft 365 que creó antes del grupo de roles.
 
@@ -54,23 +54,23 @@ Para más información, vea [Conceder acceso a los usuarios al Centro de cumplim
   
 Estos permisos son necesarios para crear y aplicar una directiva DLP para no aplicar directivas.
 
-### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en versión preliminar
+### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
 
-Hay roles y grupos de roles en versión preliminar que puede probar para ajustar los controles de acceso.
+Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de roles Microsoft Information Protection (MIP) que están en versión preliminar. Para obtener más información sobre ellos, vea [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de grupos de roles de MIP que están en versión preliminar. Para obtener más información sobre los grupos de roles en [el Centro de seguridad y & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, vea [Grupos de roles en el Centro de seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protección de la información
 - Administradores de Information Protection
 - Analistas de Information Protection
-- Investigadores de protección de la información
+- Investigadores de Information Protection
 - Lectores de Information Protection
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Cómo dlp detecta información confidencial
@@ -86,13 +86,13 @@ En otras palabras, DLP es lo suficientemente inteligente como para reconocer la 
 - "¿Puede pedirme un nuevo portátil. Use mi número DE VISA 1111-1111-1111-1111, expira el 11/22 y envíeme la fecha de entrega estimada cuando la tenga".
 - "Mi número de serie de portátil es 2222-2222-2222-2222 y se compró el 11/2010. Por cierto, ¿mi visa de viaje ya está aprobada?"
 
-Vea [Definiciones de entidad de tipo](sensitive-information-type-entity-definitions.md) de información confidencial que explica cómo se detecta cada tipo de información.
+Vea [Definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md) que explica cómo se detecta cada tipo de información.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Dónde empezar con la prevención de pérdida de datos
 
 Cuando los riesgos de pérdida de datos no son totalmente obvios, es difícil averiguar dónde debe empezar exactamente con la implementación de DLP. Afortunadamente, las directivas DLP se pueden ejecutar en "modo de prueba", lo que le permite medir su eficacia y precisión antes de activarlas.
 
-Las directivas DLP Exchange Online pueden administrarse a través del centro Exchange administración. Pero puede configurar directivas DLP para todas las cargas de trabajo a través del Centro de seguridad y cumplimiento de &, de modo que eso es lo que usaré para las demostraciones de este artículo. En el Centro de & cumplimiento, encontrará las directivas DLP en **Directiva de prevención de pérdida de**  >  **datos**. Elija **Crear una directiva** para iniciar.
+Las directivas DLP Exchange Online pueden administrarse a través del centro Exchange administración. Pero puede configurar directivas DLP para todas las cargas de trabajo a través del Centro de seguridad y cumplimiento de &, de modo que eso es lo que usaré para las demostraciones de este artículo. En el Centro de & cumplimiento, encontrará las directivas DLP en **Prevención de pérdida de datosPolicy** > . Elija **Crear una directiva** para iniciar.
 
 Microsoft 365 proporciona una variedad de plantillas de directiva [DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas. Supongamos que es una empresa australiana. Puede filtrar las plantillas en Australia y elegir Finanzas, Salud y Privacidad.
 
@@ -114,7 +114,7 @@ En el primer **paso de Configuración** directiva, solo acepta los valores prede
 
 ![Opciones para personalizar el tipo de contenido que se debe proteger.](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Después de hacer clic en Siguiente,** se le mostrará una página de directiva **Configuración** con más opciones de personalización. Para una directiva que solo está probando, aquí es donde puede empezar a realizar algunos ajustes.
+Después de hacer clic en Siguiente,** se le mostrará una página **de directiva Configuración** con más opciones de personalización. Para una directiva que solo está probando, aquí es donde puede empezar a realizar algunos ajustes.
 
 - Por ahora, he desactivado las sugerencias de directiva, lo que es un paso razonable si solo estás probando las cosas y no quieres mostrar nada a los usuarios todavía. Las sugerencias de directiva muestran advertencias a los usuarios de que están a punto de infringir una directiva DLP. Por ejemplo, Outlook usuario verá una advertencia de que el archivo que ha adjuntado contiene números de tarjeta de crédito y hará que su correo electrónico se rechace. El objetivo de las sugerencias de directiva es detener el comportamiento no conforme antes de que suceda.
 - También he reducido el número de instancias de 10 a 1, de modo que esta directiva detectará cualquier uso compartido de datos pii australianos, no solo el uso compartido masivo de los datos.
@@ -130,7 +130,7 @@ En la pantalla de revisión final, haga clic **en Crear** para terminar de crear
 
 ## <a name="test-a-dlp-policy"></a>Probar una directiva DLP
 
-Puede sentarse y esperar a que la directiva se desencadene por la actividad normal del usuario, o puede intentar desencadenarla usted mismo. Anteriormente me vinculé a definiciones de entidad de tipo de información confidencial, que le proporciona información sobre cómo desencadenar [coincidencias](sensitive-information-type-entity-definitions.md)dlp.
+Puede sentarse y esperar a que la directiva se desencadene por la actividad normal del usuario, o puede intentar desencadenarla usted mismo. Anteriormente he vinculado a [definiciones de](sensitive-information-type-entity-definitions.md) entidad de tipo de información confidencial, lo que proporciona información sobre cómo desencadenar coincidencias dlp.
 
 Por ejemplo, la directiva DLP que creé para este artículo detectará números de archivo fiscal australiano (TFN). Según la documentación, la coincidencia se basa en los siguientes criterios.
 
@@ -223,9 +223,9 @@ Otra opción es aumentar el número de instancias, de modo que solo se detecte u
 
 ![Opción para editar el recuento de instancias.](../media/DLP-create-test-tune-edit-instance-count.png)
 
-Además de cambiar el recuento de instancias, también puede ajustar la precisión de coincidencia (o nivel de confianza). Si el tipo de información confidencial tiene varios patrones, puede ajustar la precisión de coincidencia en la regla, de modo que la regla coincida solo con patrones específicos. Por ejemplo, para ayudar a reducir los falsos positivos, puede establecer la precisión de coincidencia de la regla para que coincida solo con el patrón con el nivel de confianza más alto. Para obtener más información sobre los niveles de confianza, vea [How to use confidence level to tune your rules](data-loss-prevention-policies.md#match-accuracy).
+Además de cambiar el recuento de instancias, también puede ajustar la precisión de coincidencia (o nivel de confianza). Si el tipo de información confidencial tiene varios patrones, puede ajustar la precisión de coincidencia en la regla, de modo que la regla coincida solo con patrones específicos. Por ejemplo, para ayudar a reducir los falsos positivos, puede establecer la precisión de coincidencia de la regla para que coincida solo con el patrón con el nivel de confianza más alto. Para obtener más información sobre los niveles de confianza, consulte [How to use confidence level to tune your rules](data-loss-prevention-policies.md#match-accuracy).
 
-Por último, si desea obtener incluso un poco más avanzado, puede personalizar cualquier tipo de información confidencial; por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave para el número de licencia de conducir de [Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), para eliminar el falso positivo desencadenado anteriormente. Para obtener información sobre cómo hacerlo mediante XML y PowerShell, vea [personalización](customize-a-built-in-sensitive-information-type.md)de un tipo de información confidencial integrada .
+Por último, si desea obtener incluso un poco más avanzado, puede personalizar cualquier tipo de información confidencial; por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave para el número de licencia de conducir de [Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), para eliminar el falso positivo desencadenado anteriormente. Para obtener información sobre cómo hacerlo mediante XML y PowerShell, consulte [personalización de un tipo de información confidencial integrada](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Activar una directiva DLP
 
@@ -233,10 +233,11 @@ Cuando esté contento de que la directiva DLP detecte de forma precisa y eficaz 
 
 ![Opción para activar la directiva.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si está esperando a ver cuándo tendrá efecto la directiva, Conectar a [PowerShell](/powershell/exchange/connect-to-scc-powershell) del Centro de seguridad & cumplimiento y ejecute el [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) para ver DistributionStatus.
+Si está esperando a ver cuándo tendrá efecto la directiva, Conectar [a PowerShell](/powershell/exchange/connect-to-scc-powershell) del Centro de seguridad de & y ejecute el [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) para ver DistributionStatus.
 
-![Cmdlet en ejecución en PowerShell.](../media/DLP-create-test-tune-PowerShell.png)
-
+ ```powershell
+ Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus
+ ```
 Después de activar la directiva DLP, debe ejecutar algunas pruebas finales propias para asegurarse de que se están produciendo las acciones de directiva esperadas. Si estás intentando probar cosas como los datos de tarjetas de crédito, hay sitios web en línea con información sobre cómo generar tarjetas de crédito de ejemplo u otra información personal que pasará sumas de comprobación y desencadenarán tus directivas.
 
 Las directivas que permiten invalidaciones de usuario presentarán esa opción al usuario como parte de la sugerencia de directiva.

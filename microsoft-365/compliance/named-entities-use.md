@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos
-ms.openlocfilehash: 5d81f216ddd86816148220c178b991db4e4803b0
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: f3dac4efa1b0cf84971ac4d07f78144b438d1161
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245104"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271519"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
 
@@ -41,11 +41,11 @@ Debe tener una de estas suscripciones
 - Office 365 E5
 - Microsoft 365 E5
 
-Para obtener información completa sobre las licencias, [vea la descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
+Para obtener información completa sobre las licencias, consulte [la descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
 ### <a name="permissions"></a>Permisos
 
-La cuenta que use para crear y editar directivas de prevención de pérdida de datos (DLP), debe tener los permisos del rol Administración de cumplimiento **dlp.** Para obtener más información, vea [Dar acceso a los usuarios al Centro de Office 365 cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+La cuenta que use para crear y editar directivas de prevención de pérdida de datos (DLP), debe tener los permisos del rol Administración de cumplimiento **dlp** . Para obtener más información, vea [Dar a los usuarios acceso al Centro de Office 365 cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
 ## <a name="supported-locations"></a>Ubicaciones admitidas
@@ -61,6 +61,7 @@ No se admiten los SIT de entidad con nombre ni las directivas mejoradas para:
 
 
 - Repositorios locales
+- Power BI
 
 ## <a name="create-and-edit-enhanced-policies"></a>Crear y editar directivas mejoradas
 
@@ -69,8 +70,8 @@ Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar 
 ## <a name="workloads-and-services-that-support-named-entities"></a>Cargas de trabajo y servicios que admiten entidades con nombre
 
 
-- La exhibición de documentos electrónicos de **Microsoft 3655** admite el uso de entidades con nombre en los servicios de substrate.
-- **Microsoft Defender para Aplicaciones en la** nube admite el uso de entidades con nombre en las directivas de Defender para Aplicaciones en la nube.
+- **La exhibición de documentos electrónicos de Microsoft 3655** admite el uso de entidades con nombre en los servicios de substrate.
+- **Microsoft Defender para Aplicaciones en la nube admite** el uso de entidades con nombre en las directivas de Defender para Aplicaciones en la nube.
 - **Insider Risk Management** admite el uso de entidades con nombre en los servicios de Substrate.
 - **El cumplimiento** de la comunicación no admite el uso de entidades con nombre en Exchange de transporte y datos en reposo.
 - **Microsoft Information Governance** (MIG) no admite el uso de entidades con nombre en Exchange de transporte y datos en reposo.
@@ -117,6 +118,6 @@ Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar 
 
 ## <a name="for-further-information"></a>Para obtener más información
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->
-- [Obtenga información sobre las entidades con nombre (versión preliminar)](named-entities-learn.md).
+- [Obtenga información sobre las entidades con nombre (versión preliminar).](named-entities-learn.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
