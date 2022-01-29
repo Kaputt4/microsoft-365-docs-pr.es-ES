@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: bdcc690232678b5673950bf75d844a7e658a0c30
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943585"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271567"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -108,7 +108,7 @@ La incorporación y la retirada se controlan mediante scripts que se descargan d
 
  Use los procedimientos descritos en [Introducción a DLP en punto de conexión de Microsoft 365](endpoint-dlp-getting-started.md) para incorporar dispositivos.
 
-Si incorporó dispositivos a través de [Protección contra amenazas avanzada de Microsoft Defender](/windows/security/threat-protection/), estos dispositivos se mostrarán automáticamente en la lista de dispositivos.
+Si incorporó dispositivos a través de [Protección contra amenazas avanzada de Microsoft Defender](/windows/security/threat-protection/), estos dispositivos se mostrarán automáticamente en la lista de dispositivos. Puede **Activar la supervisión de dispositivos** para usar DLP para punto de conexión.
 
 > [!div class="mx-imgBorder"]
 > ![lista de dispositivos administrados.](../media/endpoint-dlp-learn-about-2-device-list.png)

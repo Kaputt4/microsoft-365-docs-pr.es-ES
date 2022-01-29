@@ -360,6 +360,8 @@
               href: sit-use-exact-data-refresh-data.md
             - name: Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
               href: named-entities-use.md
+            - name: Escenarios de uso comunes para tipos de información confidencial
+              href: sit-common-scenarios.md
         - name: Referencia de tipo de información confidencial
           items:
             - name: Definiciones de entidad de tipos de información confidencial
@@ -575,8 +577,8 @@
               href: retention-policies-yammer.md
             - name: Exchange
               href: retention-policies-exchange.md
-            - name: Configuración normal para retención
-              href: retention-settings.md
+        - name: Configuración común para la retención y eliminación
+          href: retention-settings.md
         - name: Límites de retención y eliminación
           href: retention-limits.md
     - name: Información de gobierno
@@ -1046,10 +1048,6 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Seguridad en servicios energéticos y cumplimiento
           href: ../solutions/energy-secure-collaboration.md
-- name: Administración de privacidad
-  items:
-    - name: Más información acerca de la administración de privacidad
-      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Funcionalidades de cumplimiento híbrido
   items:
     - name: Cifrado de correo de Exchange Online con AD RMS
@@ -1063,5 +1061,7 @@
   href: ../security/index.yml
 - name: Aplicaciones de Microsoft 365 para negocios
   href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
 - name: Solución de problemas
   href: /office365/troubleshoot/microsoft-365-compliance-welcome

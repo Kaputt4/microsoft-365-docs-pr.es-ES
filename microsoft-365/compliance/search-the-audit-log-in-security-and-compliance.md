@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2b42e33bf57e2cfbc855c06ff4dfeefc9a8e9eb0
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: eb50ed71bad3307036621e8367c697331ffa3024
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054985"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272095"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -1167,7 +1167,7 @@ No. La canalización del servicio de auditoría está casi en tiempo real, y por
 
 **¿Se audita el flujo de datos en todo el mundo?**
 
-No. Actualmente, tenemos auditorías de canalización de implementaciones en las regiones NA (Norteamérica), EMEA (Europa, Oriente Medio y África) y APAC (Asia Pacífico). Sin embargo, es posible que flujos los datos en estas zonas para equilibrar la carga y solo durante las cuestiones de sitio en directo. Cuando realizamos estas actividades, los datos en tránsito se encriptan.
+En general, no. Actualmente, tenemos auditorías de canalización de implementaciones en las regiones NA (Norteamérica), EMEA (Europa, Oriente Medio y África) y APAC (Asia Pacífico). Sin embargo, es posible que tengamos que transferir datos entre estas regiones para el equilibrio de carga durante los problemas de sitio activo. Cuando realizamos estas actividades, los datos en tránsito se encriptan. En el caso de las organizaciones multigeográficas, los datos de auditoría recopilados de todas las regiones de la organización solo se almacenarán en la región principal de la organización.
 
 **¿Está la auditoría de datos encriptada?**
 

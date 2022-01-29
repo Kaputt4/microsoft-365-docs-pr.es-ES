@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: b1749b51367bda90945e0d8e61e9674acc5077b6
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: ca88c57739c8734f9fcdb5d3356a44dc6a72faa5
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747727"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271783"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -39,7 +39,7 @@ $rawFile = $env:TEMP + "\rule.xml"
 
 $kd = Get-DlpKeywordDictionary
 $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
-Set-Content -path $rawFile -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+[System.IO.File]::WriteAllBytes((Resolve-Path $rawFile), $ruleCollections.SerializedClassificationRuleCollection)
 $UnicodeEncoding = New-Object System.Text.UnicodeEncoding
 $FileContent = [System.IO.File]::ReadAllText((Resolve-Path $rawFile), $unicodeEncoding)
 
@@ -73,11 +73,11 @@ Remove-Item $rawFile
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Pasos básicos para crear un diccionario de palabras clave
 
 Las palabras clave del diccionario pueden provenir de varios orígenes, normalmente de un archivo (como una lista en un archivo .csv o .txt) importado en el servicio o del cmdlet de PowerShell, de una lista que escriba directamente en el cmdlet de PowerShell o de un diccionario existente. Al crear un diccionario de palabras clave, siga los mismos pasos principales:
-  
+
 1. Use el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> o conéctese al **PowerShell del Centro de seguridad &amp; cumplimiento**.
-    
+
 2. **Definir o cargar las palabras clave delde origen previsto**. Tanto el asistente como el cmdlet aceptan una lista separada por comas de palabras clave para crear un diccionario de palabras clave personalizado, por lo que este paso variará ligeramente en función de dónde procedan las palabras clave. Una vez cargados, se codifican y convierten en una matriz de bytes antes de importarlos.
-    
+
 3. **Crear el diccionario**. Elija un nombre y una descripción y cree el diccionario.
 
 ## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Cree un diccionario de palabras clave con el Centro de seguridad y cumplimiento
@@ -107,31 +107,31 @@ Siga estos pasos para crear e importar palabras clave para un diccionario person
 11. Seleccione **Agregar** y, después, seleccione **Siguiente**.
 
 12. Revise y finalice las selecciones de tipo de información confidencial y seleccione **Finalizar**.
-    
+
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Crear un diccionario de palabras clave desde un archivo con PowerShell
 
-A menudo, cuando necesita crear un diccionario grande, es usar palabras clave de un archivo o una lista exportada desde otro origen. En este caso, creará un diccionario de palabras clave que contiene una lista de idiomas inadecuados para la pantalla en el correo electrónico externo. Primero debe [Conectarse al Centro de seguridad &amp; cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
-  
+Con frecuencia, si necesita crear un diccionario de gran tamaño, puede usar palabras clave de un archivo o una lista exportada de otro origen. En este caso, creará un diccionario de palabras clave que contenga una lista de lenguaje inadecuado para supervisarlo en el correo electrónico externo. Primero, necesita [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+
 1. Copie las palabras clave en un archivo de texto y asegúrese de que cada palabra clave se encuentre en una línea separada.
-    
+
 2. Guarde el archivo de texto con codificación Unicode. En el Bloc de notas \> **Guardar como** \> **Codificación** \> **Unicode**.
-    
+
 3. Para leer el archivo en una variable, ejecute este cmdlet:
-    
+
     ```powershell
-    $fileData = Get-Content <filename> -Encoding Byte -ReadCount 0
+    $fileData = [System.IO.File]::ReadAllBytes('<filename>')
     ```
 
 4. Para crear el diccionario, ejecute este cmdlet:
-    
+
     ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
     ```
-  
+
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Usar diccionarios de palabras clave en tipos de información confidencial personalizados y directivas DLP
 
 Los diccionarios de palabras clave se pueden usar como parte de los requisitos de coincidencia para un tipo personalizado de información confidencial o como un tipo de información confidencial. Ambos requieren que se cree un [tipo personalizado de información confidencial](create-a-custom-sensitive-information-type-in-scc-powershell.md). Siga las instrucciones del artículo vinculado para crear un tipo de información confidencial. Una vez que tenga el XML, necesitará el identificador GUID para que el diccionario lo use.
-  
+
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -140,14 +140,14 @@ Los diccionarios de palabras clave se pueden usar como parte de los requisitos d
 </Entity>
 ```
 
-Para obtener la identidad del diccionario, ejecute este comando y copie el valor de la propiedad **Identity**: 
-  
+Para obtener la identidad del diccionario, ejecute este comando y copie el valor de la propiedad **Identity**:
+
 ```powershell
 Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
 El resultado del comando tiene este aspecto:
-  
+
 `RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255`
 `Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f`
 `Name              : Diseases`
@@ -157,9 +157,8 @@ El resultado del comando tiene este aspecto:
 `IsValid           : True`
 `ObjectState       : Unchanged`
 
-
 Pegue la identidad en el archivo XML del tipo de información confidencial personalizado y cárguelo. Ahora, el diccionario aparecerá en la lista de tipos de información confidencial y puede usarlo en la directiva (para hacerlo, especifique el número de palabras clave que tienen que coincidir).
-  
+
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -176,23 +175,27 @@ Pegue la identidad en el archivo XML del tipo de información confidencial perso
 
 > [!NOTE]
 > Microsoft 365 Information Protection es compatible con los idiomas del juego de caracteres de doble byte para:
+>
 > - Chino (simplificado)
 > - Chino (tradicional)
 > - Coreano
 > - Japonés
 >
->Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
+> Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Para detectar patrones que contengan caracteres chinos/japoneses y caracteres de un solo byte o para detectar patrones que contengan chino/japonés e inglés, defina dos variantes de la palabra clave o regex. 
+> Para detectar patrones que contengan caracteres chinos/japoneses y caracteres de un solo byte o para detectar patrones que contengan chino/japonés e inglés, defina dos variantes de la palabra clave o regex.
+>
 > - Por ejemplo, para detectar una palabra clave como "机密的document", utilice dos variantes de la palabra clave; una con un espacio entre el texto japonés y el inglés y otra sin espacio entre el texto japonés y el inglés. Por lo tanto, las palabras clave que deben agregarse en el SIT deben ser "机密的document" y "机密的document". Del mismo modo, para detectar la frase "東京オリンピック2020", se deben utilizar dos variantes: "東京オリンピック 2020" y "東京オリンピック2020"".
-
-> Junto con los caracteres chinos/japoneses y de dos bytes, si la lista de palabras clave o frases también contiene palabras no chinas o no japonesas (solo en inglés), se recomienda crear dos diccionarios o listas de palabras clave. Uno para las palabras clave que contienen caracteres chinos, japoneses o de dos bytes; y otro solo para inglés. 
-> - Por ejemplo, si desea crear una lista o diccionario de palabras clave con tres frases "Extremadamente confidencial", "機密性が高い" y "机密的document", deberá crear dos listas de teclado. 
+>
+> Junto con los caracteres chinos/japoneses y de dos bytes, si la lista de palabras clave o frases también contiene palabras no chinas o no japonesas (solo en inglés), se recomienda crear dos diccionarios o listas de palabras clave. Uno para las palabras clave que contienen caracteres chinos, japoneses o de dos bytes; y otro solo para inglés.
+>
+> - Por ejemplo, si desea crear una lista o diccionario de palabras clave con tres frases "Extremadamente confidencial", "機密性が高い" y "机密的document", deberá crear dos listas de teclado.
 >     1. Extremadamente confidencial
 >     2. 機密性が高い, 机密的document y 机密的 document
->     
+>
 > Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. A continuación le mostramos un ejemplo de regex a modo de referencia:
->    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
+> - `(?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}`
 >
 > Se recomienda utilizar una coincidencia de cadenas en lugar de una coincidencia de palabras en una lista de palabras clave.

@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo crear un tipo de información confidencial personalizado que le permita usar reglas que cumplan con las necesidades de su organización.
-ms.openlocfilehash: b535d24bc295a28f2aebf5152c3771cc3e999202
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8393da8e2b2607692983010783d9ae110f268f4c
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153155"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271747"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
 
-Al buscar información confidencial en el contenido, es necesario describir esa información en lo que se denomina una *regla*. Prevención de pérdida de datos (DLP) incluye reglas para los tipos de información confidencial más comunes que se pueden usar inmediatamente. Para usar estas reglas, tendrá que incluirlas en una directiva. Quizás quiera ajustar estas reglas integradas para satisfacer las necesidades específicas de su organización; para hacerlo, puede crear un tipo de información confidencial personalizado. En este tema, se muestra cómo personalizar el archivo XML que contiene la colección de reglas existente para detectar una mayor variedad de posible información de tarjetas de crédito.
+Al buscar información confidencial en el contenido, es necesario describir esa información en lo que se denomina una *regla*. La Prevención de pérdida de datos (DLP) incluye reglas para los tipos de información confidencial más comunes que se pueden usar inmediatamente. Para usar estas reglas, tendrá que incluirlas en una directiva. Quizás quiera ajustar estas reglas integradas para satisfacer las necesidades específicas de su organización; para hacerlo, puede crear un tipo de información confidencial personalizado. En este tema, se muestra cómo personalizar el archivo XML que contiene la colección de reglas existente para detectar una mayor variedad de posible información de tarjetas de crédito.
 
 Puede usar este ejemplo y aplicarlo en otros tipos de información confidencial integrados. Para obtener una lista de los tipos de información confidencial predeterminados y las definiciones XML, vea [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md).
 
@@ -47,10 +47,10 @@ Para exportar el archivo XML, necesita [conectarse al Centro de seguridad y cump
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-3. Para crear un archivo XML con formato que contenga todos los datos, escriba lo siguiente. (`Set-content` es la parte del cmdlet que escribe el código XML en el archivo).
+3. Cree un archivo XML con formato con todos esos datos escribiendo lo siguiente.
 
    ```powershell
-   Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+   [System.IO.File]::WriteAllBytes('C:\custompath\exportedRules.xml', $ruleCollections.SerializedClassificationRuleCollection)
    ```
 
    > [!IMPORTANT]
@@ -157,7 +157,7 @@ Ahora tiene algo parecido al siguiente XML. Como los paquetes de reglas y las re
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>Quitar el requisito de evidencias corroborativas de un tipo de información confidencial
 
-Ahora que tiene un tipo de información confidencial que puede cargar en el Centro de seguridad &amp; y cumplimiento, el paso siguiente es hacer que la regla sea más específica. Modifique la regla para que solo busque un número de 16 dígitos que pase la suma de comprobación, pero que no necesite evidencias (corroborativas) adicionales, como palabras clave. Para hacerlo, tiene que quitar la parte del código XML que busca la evidencia corroborativa. La evidencia corroborativa es muy útil para reducir falsos positivos. En este caso, normalmente hay determinadas palabras clave o una fecha de expiración cerca del número de tarjeta de crédito. Si quita esa evidencia, también tendrá que ajustar la confianza de que encontró un número de tarjeta de crédito; para ello, reduzca el `confidenceLevel`, que es 85 en el ejemplo.
+Ahora que tiene un tipo de información confidencial que puede cargar en el Centro de seguridad y cumplimiento, el paso siguiente es hacer que la regla sea más específica. Modifique la regla para que solo busque un número de 16 dígitos que pase la suma de comprobación, pero que no necesite evidencias (corroborativas) adicionales, como palabras clave. Para hacerlo, tiene que quitar la parte del código XML que busca la evidencia corroborativa. La evidencia corroborativa es muy útil para reducir falsos positivos. En este caso, normalmente hay determinadas palabras clave o una fecha de expiración cerca del número de tarjeta de crédito. Si quita esa evidencia, también tendrá que ajustar la confianza de que encontró un número de tarjeta de crédito; para ello, reduzca el `confidenceLevel`, que es 85 en el ejemplo.
 
 ```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
@@ -169,7 +169,7 @@ Ahora que tiene un tipo de información confidencial que puede cargar en el Cent
 
 ## <a name="look-for-keywords-that-are-specific-to-your-organization"></a>Buscar palabras clave específicas de la organización
 
-Puede que quiera exigir evidencias corroborativas, pero con palabras clave diferentes o adicionales, y quizás quiera cambiar dónde buscar esa evidencia. Puede ajustar el valor de `patternsProximity` para aumentar o reducir el radio donde se buscará la evidencia corroborativa alrededor del número de 16 dígitos. Para agregar sus propias palabras clave, necesita definir una lista de palabras clave y hacer referencia a ella en su regla. El siguiente código XML agrega las palabras clave “company card” y “Contoso card” para que los mensajes que contengan esas frases a menos de 150 caracteres de un número de tarjeta de crédito se identifiquen como un número de tarjeta de crédito.
+Quizás quiera requerir evidencia confirmativa pero con palabras claves diferentes o adicionales, y quizás quiera cambiar dónde buscar esa evidencia. Puede ajustar el valor de `patternsProximity` para aumentar o reducir el radio donde se buscará la evidencia confirmativa alrededor del número de 16 dígitos. Para agregar sus propias palabras clave, debe definir una lista de palabras clave y hacer referencia a ella en su regla. El siguiente código XML agrega las palabras clave "company card" y "Contoso card" para que los mensajes que contengan esas frases a menos de 150 caracteres de un número de tarjeta de crédito se identifiquen como número de tarjeta de crédito.
 
 ```xml
 <Rules>
@@ -206,11 +206,11 @@ Para cargar la regla, siga el procedimiento siguiente.
 3. En el símbolo del sistema de PowerShell, escriba lo siguiente.
 
    ```powershell
-   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('C:\custompath\MyNewRulePack.xml'))
    ```
 
    > [!IMPORTANT]
-   > Asegúrese de usar la ubicación del archivo donde realmente se almacene el paquete de reglas. `C:\custompath\` es un marcador de posición.
+   > Asegúrese de usar la ubicación del archivo donde se almacena realmente el paquete de reglas. `C:\custompath\` es un marcador de posición.
 
 4. Para confirmar, escriba “Y” y presione **Entrar**.
 
@@ -226,16 +226,21 @@ Para empezar a usar la nueva regla para detectar información confidencial, tien
 
 Estas son las definiciones de los términos que encontró en este procedimiento.
 
-|**Término**|**Definición**|
-|:-----|:-----|
+<br>
+
+****
+
+|Término|Definición|
+|---|---|
 |Entidad|Las entidades son lo que llamamos tipos de información confidencial, como números de tarjeta de crédito. Cada entidad tiene un GUID único como ID. Si copia un GUID y lo busca en el código XML, encontrará la definición de regla XML y todas las traducciones localizadas de esa regla XML. Para encontrar esta definición, puede buscar el GUID de la traducción y, después, buscar por ese GUID.|
-|Funciones|El archivo XML hace referencia a `Func_credit_card`, que es una función en código compilado. Las funciones se usan para ejecutar expresiones regulares complejas y verificar que las sumas de comprobación de nuestras reglas integradas coinciden). Como esto se produce en el código, algunas de las variables no aparecen en el archivo XML.|
+|Funciones|El archivo XML hace referencia a `Func_credit_card`, que es una función en código compilado. Las funciones se usan para ejecutar expresiones regulares complejas y verificar que las sumas de comprobación de nuestras reglas integradas coinciden. Como esto se produce en el código, algunas de las variables no aparecen en el archivo XML.|
 |IdMatch|Este es el identificador para el que el patrón está intentando encontrar coincidencias, por ejemplo, un número de tarjeta de crédito.|
-|Listas de palabras clave|El archivo XML también hace referencia a `keyword_cc_verification` y `keyword_cc_name`, que son listas de palabras clave en las que buscamos coincidencias dentro de `patternsProximity` para la entidad. Actualmente no se muestran en el archivo XML.|
+|Listas de palabras clave|El archivo XML también hace referencia a `keyword_cc_verification` y `keyword_cc_name`, que son listas de palabras en las que buscamos coincidencias dentro de `patternsProximity` para la entidad. Actualmente no se muestran en el archivo XML.|
 |Patrón|El patrón contiene la lista de lo que el tipo confidencial está buscando. Incluye palabras clave, regexe y funciones internas, que realizan tareas como verificar sumas de comprobación. Los tipos de información confidencial pueden tener varios patrones con confianzas únicas. Esto resulta útil para crear un tipo de información confidencial que devuelve una confianza alta si se encuentra evidencia confirmativa y una confianza menor si se encuentra poca o ninguna evidencia confirmativa.|
 |Patrón confidenceLevel|Este es el nivel de confianza en el que el motor de DLP encontró una coincidencia. Este nivel de confianza está asociado con una coincidencia del patrón si se cumplen los requisitos del patrón. Esta es la medida de la confianza que debe tener en cuenta al usar las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte).|
-|patternsProximity|Cuando encontramos lo que parece un patrón de número de tarjeta de crédito, `patternsProximity` es la proximidad alrededor de la cual buscaremos una evidencia corroborativa.|
+|patternsProximity|Cuando encontramos lo que parece un patrón de número de tarjeta de crédito, `patternsProximity` es la proximidad alrededor de la cual buscaremos una evidencia confirmativa.|
 |recommendedConfidence|Este es el nivel de confianza que le recomendamos para esta regla. La confianza recomendada se aplica a entidades y afinidades. En el caso de las entidades, este número nunca se evalúa según el valor de `confidenceLevel` del patrón. Es simplemente una sugerencia para ayudar a elegir un nivel de confianza si quiere aplicar uno. Para las afinidades, el valor de `confidenceLevel` del patrón necesita ser mayor que el número de `recommendedConfidence` para que se invoque una acción de regla de flujo de correo. El valor de `recommendedConfidence` es el nivel de confianza predeterminado que se usa en las reglas de flujo de correo que invoca una acción. Si quiere, puede cambiar manualmente la regla de flujo de correo para que, en su lugar, se invoque según el nivel de confianza del patrón.|
+|
 
 ## <a name="for-more-information"></a>Más información
 

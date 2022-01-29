@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo modificar un esquema de EDM para usar la coincidencia configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e546d90c94cc2a4ab349b3de7ba970b94f6491e3
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: cf11e60f3fce46926d297c97a44c7d494942d556
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110492"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271890"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificar el esquema de coincidencia de datos exactos para usar la coincidencia configurable
 
-La clasificación basada en la coincidencia de datos exactos le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. Cuando necesite permitir el uso de variantes de una cadena exacta, puede usar la *coincidencia configurable* para indicar a Microsoft 365 que omita mayúsculas y minúsculas y otros delimitadores. 
+La clasificación basada en la coincidencia de datos exactos le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. Cuando necesite permitir el uso de variantes de una cadena exacta, puede usar la *coincidencia configurable* para indicar a Microsoft 365 que omita mayúsculas y minúsculas y otros delimitadores.
 
 > [!IMPORTANT]
 > Use este procedimiento para modificar un esquema EDM y un archivo de datos existentes.
@@ -40,19 +40,23 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
 
 3. Autorice al agente de carga de EDM, abra la ventana del símbolo del sistema (como administrador) y ejecute el siguiente comando:
 
-   `EdmUploadAgent.exe /Authorize`
+   ```dos
+   EdmUploadAgent.exe /Authorize
+   ```
 
 4. Si no tiene una copia actual del esquema existente, debe descargar una copia del esquema existente y ejecutar este comando:
 
-    `EdmUploadAgent.exe /SaveSchema /DataStoreName <dataStoreName> [/OutputDir [Output dir location]]`
+   ```dos
+   EdmUploadAgent.exe /SaveSchema /DataStoreName <dataStoreName> [/OutputDir [Output dir location]]
+   ```
 
-5. Personalice el esquema para que todas las columnas usen “caseInsensitive” y/o “ignoredDelimiters”.  El valor predeterminado de "caseInsensitive" es "false" y de "ignoredDelimiters" es una cadena vacía. 
+5. Personalice el esquema para que todas las columnas usen “caseInsensitive” y/o “ignoredDelimiters”.  El valor predeterminado de "caseInsensitive" es "false" y de "ignoredDelimiters" es una cadena vacía.
 
     > [!NOTE]
     > El tipo de información confidencial personalizado subyacente o el tipo de información confidencial integrado que se usa para detectar el patrón de regex general debe admitir la detección de las entradas de variantes que aparecen en ignoredDelimiters. Por ejemplo, el tipo de información confidencial integrado del número de la seguridad social de Estados Unidos (SSN) puede detectar variaciones en los datos que incluyen guiones, espacios o la falta de espacios entre los números agrupados que componen el SSN. Como resultado, solo los delimitadores que son relevantes para incluir en ignoredDelimiters de EDM para los datos SSN son: guion y espacio.
-    
+
     Este es un esquema de ejemplo en el que se simula la coincidencia que no distingue mayúsculas de minúsculas creando las columnas adicionales necesarias para reconocer las variaciones de mayúsculas y minúsculas en los datos confidenciales.
-    
+
     ```xml
     <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
       <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
@@ -63,11 +67,11 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
       </DataStore>
     </EdmSchema>
     ```
-    
+
     En el ejemplo anterior, las variantes de la columna `PolicyNumber` original ya no serán necesarias si se agregan tanto `caseInsensitive` como `ignoredDelimiters`.
-    
+
     Para actualizar este esquema para que EDM use coincidencias configurables, use las marcas `caseInsensitive` y `ignoredDelimiters`. Este es el aspecto:
-    
+
     ```xml
     <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
       <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
@@ -75,7 +79,7 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
       </DataStore>
     </EdmSchema>
     ```
-    
+
     El indicador `ignoredDelimiters` admite cualquier carácter no alfanumérico. Aquí se muestran algunos ejemplos:
     - \.
     - \-
@@ -93,40 +97,41 @@ La clasificación basada en la coincidencia de datos exactos le permite crear ti
     - \\
     - \~
     - \;
-    
+
     El indicador `ignoredDelimiters` no es compatible con:
     - caracteres 0-9
     - A-Z
     - a-z
     - \"
-    - \,    
+    - \,
 
-6. Conéctese al Centro de seguridad y cumplimiento por medio de los procedimientos que se describen en [Conectar al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+6. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
     > Si su organización ha configurado [Clave de cliente para Microsoft 365 en el nivel de inquilino (versión preliminar pública)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la coincidencia exacta de datos usará automáticamente su funcionalidad de cifrado. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
 
-7. Actualice el esquema ejecutando estos cmdlets uno por vez:
+7. Actualice el esquema ejecutando el siguiente comando:
 
-    `$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
-    
-    `Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
+   ```powershell
+   Set-DlpEdmSchema -FileData ([System.IO.File]::ReadAllBytes('.\\edm.xml')) -Confirm:$true
+   ```
 
 8. Si es necesario, actualice el archivo de datos para que coincida con la nueva versión de esquema.
 
     > [!TIP]
     > De forma opcional, puede ejecutar una validación en el archivo CSV antes de cargarlo ejecutando lo siguiente:
     >
-    >`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
     >
-    >Para más información sobre todos los parámetros admitidos de EdmUploadAgent.exe >, ejecute
+    > Para más información sobre todos los parámetros compatibles con EdmUploadAgent.exe, ejecute
     >
     > `EdmUploadAgent.exe /?`
 
 9. Abra la ventana del símbolo del sistema (como administrador) y ejecute el siguiente comando para obtener el hash y cargar los datos confidenciales:
 
-    `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Salt [custom salt] /Schema [Schema file]`
-
+   ```dos
+   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Salt [custom salt] /Schema [Schema file]
+   ```
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Acerca de las pruebas de soluciones de cumplimiento.
-ms.openlocfilehash: 6a6c07ef6a0353cfe6c97381f8858e86c34121a1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 8cfa95b5998d78a2128e2e99ac6b23babf11f3ff
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665137"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271795"
 ---
 # <a name="about-the-compliance-solutions-trial"></a>Acerca de la prueba de soluciones de cumplimiento
 
@@ -33,7 +33,7 @@ Consulte los [términos y condiciones](terms-conditions.md) para obtener las pru
 
 ## <a name="set-up-a-compliance-trial"></a>Configurar una prueba de cumplimiento
 
-Para obtener una prueba, puede registrarse en el Centro de cumplimiento de Microsoft 365 mediante el vínculo **Pruebas** en el panel de navegación izquierdo.
+Puede registrarse para obtener una versión de prueba en el [Centro de cumplimiento de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2077149) mediante el vínculo **Pruebas gratuitas** del panel de navegación izquierdo.
 
 ## <a name="licensing"></a>Licencias
 
@@ -65,43 +65,44 @@ La prueba gratuita del Centro de cumplimiento de Microsoft 365 se está impleme
 
 - **Auditoría**
 
-    La Auditoría avanzada permite a las organizaciones dirigir investigaciones forenses y de cumplimiento incrementando la retención necesaria de registros de auditoría para dirigir una investigación, ofreciendo acceso a eventos fundamentales que ayuden a determinar el alcance del compromiso y agilizar el acceso a la API de Actividad de administración de Office 365. [Obtener más información acerca de Auditoría](advanced-audit.md).
+  La Auditoría avanzada permite a las organizaciones dirigir investigaciones forenses y de cumplimiento incrementando la retención necesaria de registros de auditoría para dirigir una investigación, ofreciendo acceso a eventos fundamentales que ayuden a determinar el alcance del compromiso y agilizar el acceso a la API de Actividad de administración de Office 365. [Obtener más información acerca de Auditoría](advanced-audit.md).
 
 - **Cumplimiento de comunicaciones**
 
-    El cumplimiento de comunicaciones le ayuda a superar los desafíos de cumplimiento modernos asociados a las comunicaciones internas y externas, ya que le ayuda a capturar automáticamente mensajes inadecuados, investigar posibles infracciones de directivas y tomar medidas para corregirlos. Más información sobre el [Cumplimiento de comunicaciones](communication-compliance.md)
+  El cumplimiento de comunicaciones le ayuda a superar los desafíos de cumplimiento modernos asociados a las comunicaciones internas y externas, ya que le ayuda a capturar automáticamente mensajes inadecuados, investigar posibles infracciones de directivas y tomar medidas para corregirlos. Más información sobre el [Cumplimiento de comunicaciones](communication-compliance.md)
 
 - **Administrador de cumplimiento**
 
-    El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores. [Más información sobre el Administrador de cumplimiento](compliance-manager.md).
+  El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores. [Más información sobre el Administrador de cumplimiento](compliance-manager.md).
 
 - **eDiscovery**
 
-    Aproveche un flujo de trabajo completo para conservar, recopilar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. Los equipos jurídicos también pueden administrar todo el proceso de notificaciones de suspensión legal mediante la comunicación con los custodios implicados en un caso. [Obtener más información acerca de eDiscovery](ediscovery.md)
+  Aproveche un flujo de trabajo completo para conservar, recopilar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. Los equipos jurídicos también pueden administrar todo el proceso de notificaciones de suspensión legal mediante la comunicación con los custodios implicados en un caso. [Obtener más información acerca de eDiscovery](ediscovery.md)
+
+- **Gobierno de información**
+
+  Automatice la cobertura de la directiva de retención mediante ámbitos de directiva adaptables. Esta característica le permite dirigir dinámicamente las directivas de retención a usuarios, grupos o sitios específicos. Estas directivas se actualizan automáticamente cuando se producen cambios en la organización. Además, las directivas de retención que usan ámbitos adaptables no están sujetas a límites de ubicación. [Más información sobre los ámbitos de directiva adaptables](create-retention-policies.md).
 
 - **Protección de información**
 
-    Implemente Microsoft Information Protection con [etiquetas de confidencialidad](sensitivity-labels.md) y [directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) para ayudarle a descubrir, clasificar y proteger su contenido confidencial dondequiera que este se encuentre o viaje.
-    
-    La prueba de Information Protection le proporciona etiquetas predeterminadas, etiquetado automático para documentos y correos electrónicos, y prevención de pérdida de datos para proteger los números de tarjetas de crédito compartidos en Teams y por los dispositivos. Las directivas predeterminadas que creamos para usted le permiten empezar de forma rápida, pero puede personalizarlas completamente como desee.
-    
+  Implemente Microsoft Information Protection con [etiquetas de confidencialidad](sensitivity-labels.md) y [directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) para ayudarle a descubrir, clasificar y proteger su contenido confidencial dondequiera que este se encuentre o viaje.
+
+  La prueba de Information Protection le proporciona etiquetas predeterminadas, etiquetado automático para documentos y correos electrónicos, y prevención de pérdida de datos para proteger los números de tarjetas de crédito compartidos en Teams y por los dispositivos. Las directivas predeterminadas que creamos para usted le permiten empezar de forma rápida, pero puede personalizarlas completamente como desee.
+
     Cuando finalice la prueba, recibirá un correo electrónico que le informará:
-    
-    - Todos los archivos y correos electrónicos etiquetados durante la prueba permanecen etiquetados. Puede quitar manualmente las etiquetas.
-    
-    - Se le degradará a su paquete de licencia anterior de Microsoft E3 que no admite el etiquetado automático y la prevención de pérdida de datos. Las directivas existentes permanecerán activadas a menos que las desactive.
-    
-    - Las directivas de etiquetado automático no se pueden editar después de que finalice la prueba, pero se pueden eliminar.
-    
-    - Si edita directivas DLP que incluyen las ubicaciones de Teams o Dispositivos después de que finalice la prueba, dichas ubicaciones se quitarán de la directiva.
-    
-    Para obtener más información sobre cada una de estas características preconfiguradas y cómo afectarán a los usuarios, vea [Acerca de la evaluación gratuita de Microsoft Information Protection](mip-easy-trials.md).
-    
-    Para obtener más información acerca de la gama completa de características para Microsoft Information Protection, vea [Microsoft Information Protection en Microsoft 365](information-protection.md).
+
+  - Todos los archivos y correos electrónicos etiquetados durante la prueba permanecen etiquetados. Puede quitar manualmente las etiquetas.
+  - Se le degradará a su paquete de licencia anterior de Microsoft E3 que no admite el etiquetado automático y la prevención de pérdida de datos. Las directivas existentes permanecerán activadas a menos que las desactive.
+  - Las directivas de etiquetado automático no se pueden editar después de que finalice la prueba, pero se pueden eliminar.
+  - Si edita directivas DLP que incluyen las ubicaciones de Teams o Dispositivos después de que finalice la prueba, dichas ubicaciones se quitarán de la directiva.
+
+  Para obtener más información sobre cada una de estas características preconfiguradas y cómo afectarán a los usuarios, vea [Acerca de la evaluación gratuita de Microsoft Information Protection](mip-easy-trials.md).
+
+  Para obtener más información acerca de la gama completa de características para Microsoft Information Protection, vea [Microsoft Information Protection en Microsoft 365](information-protection.md).
 
 - **Administración de riesgos internos**
 
-    Aproveche la inteligencia artificial para ayudarle a identificar, evaluar y corregir rápidamente los riesgos internos. Con los registros de Microsoft 365 y los servicios de Azure, puede definir directivas que supervisen las señales de riesgo y luego realizar acciones de corrección, como promover la formación de los usuarios o iniciar una investigación. [Obtener más información sobre la administración de riesgos internos](insider-risk-management-solution-overview.md)
+  Aproveche la inteligencia artificial para ayudarle a identificar, evaluar y corregir rápidamente los riesgos internos. Con los registros de Microsoft 365 y los servicios de Azure, puede definir directivas que supervisen las señales de riesgo y luego realizar acciones de corrección, como promover la formación de los usuarios o iniciar una investigación. [Obtener más información sobre la administración de riesgos internos](insider-risk-management-solution-overview.md)
 
 <!--
 - **privacy management**
@@ -111,4 +112,10 @@ La prueba gratuita del Centro de cumplimiento de Microsoft 365 se está impleme
 
 - **Administración de registros**
 
-    Use características integradas de administración de registros para automatizar la programación de retención para los registros normativos, legales y empresariales de la organización. Obtenga ayuda con el ciclo de vida completo del contenido, desde la creación hasta la colaboración, la declaración de registros, la retención y la eliminación. [Obtener más información sobre la administración de registros](records-management.md)
+  Use las características integradas de Administración de registros para:
+  - Clasificar el contenido como un registro para evitar que los usuarios editen, según lo requieran las normativas, las leyes o la directiva de la organización
+  - Aplicar etiquetas de retención al contenido automáticamente cuando coincida con los criterios especificados mediante directivas de etiquetas de aplicación automática
+  - Usar directivas de ámbito adaptable para dirigir dinámicamente las directivas de etiquetas de retención a ubicaciones, sin límite en el número de ubicaciones que se incluyen
+  - Obtener soporte técnico completo para el ciclo de vida del contenido, incluida la capacidad de realizar una revisión para eliminación del contenido antes de que se elimine permanentemente al final
+
+  Para más información sobre la gama completa de características de Administración de registros de Microsoft, [obtenga información sobre la Administración de registros](records-management.md)

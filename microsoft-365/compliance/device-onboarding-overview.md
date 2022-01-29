@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365
-ms.openlocfilehash: a83db434b488ce28c71df0fb7e3185be88b87b01
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: ec95fcbfca3ab41bb3a249534e5ff62721aac794
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950949"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62272083"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365 
 
@@ -78,7 +78,7 @@ Asegúrese de que los dispositivos Windows que necesite incorporar cumplan estos
 
 1. Debe ejecutarse Windows 10 x64 compilación 1809 o posterior o Windows 11.
 
-2. La versión del cliente antimalware es 4.18.2009.7 o posterior. Para comprobar la versión actual, abra la aplicación de Seguridad de Windows, seleccione el icono Configuración y, a continuación, Acerca de. El número de versión aparece en la versión del cliente antimalware. Instale Windows Update KB4052623 para actualizar a la última versión del cliente antimalware.
+2. La versión del cliente antimalware es 4.18.2110 o posterior. Para comprobar la versión actual, abra la aplicación de Seguridad de Windows, seleccione el icono Configuración y, a continuación, Acerca de. El número de versión aparece en la versión del cliente antimalware. Instale Windows Update KB4052623 para actualizar a la última versión del cliente antimalware.
 
    > [!NOTE]
    > Ningún componente de Seguridad de Windows necesita estar activo, pero[la protección en tiempo real y el monitor de comportamiento](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) ) deben estar habilitados.
@@ -98,11 +98,11 @@ Asegúrese de que los dispositivos Windows que necesite incorporar cumplan estos
    - [Unido a Azure AD híbrido ](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
    - [Registrado en AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. Para dispositivos que ejecutan Office 2016 (en lugar de cualquier otra versión de Office): KB4577063
+5. Existe una versión compatible instalada y actualizada de Microsoft Office. Para obtener la protección y la experiencia de usuario más sólidas, asegúrese de que esté instalada la versión 16.0.14701.0 o posterior de Aplicaciones de Microsoft 365.
+> [!NOTE]
+   >Si está ejecutando Office 365, necesita KB 4577063. Si está en el Canal mensual para empresas de Aplicaciones de Microsoft 365, versiones 2004-2008, debe actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](/officeupdates/update-history-microsoft365-apps-by-date) las versiones actuales. Para más información sobre este problema conocido, vea la sección Office Suite de [Notas de la versión para las versiones del canal actual en 2020](/officeupdates/current-channel#version-2010-october-27).
 
-6. Si se encuentra en el Canal mensual para empresas de Aplicaciones de Microsoft 365 versiones 2004-2008, existe un problema conocido con la clasificación de contenido Office y debe actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](/officeupdates/update-history-microsoft365-apps-by-date) las versiones actuales. Para obtener más información sobre este problema, vea la sección Office Suite de [Notas de la versión para obtener las versiones del canal actuales en 2020](/officeupdates/current-channel#version-2010-october-27).
-
-7. Si tiene puntos de conexión que usan un proxy de dispositivo para conectarse a Internet, siga los procedimientos descritos en [Configurar el proxy del dispositivo y la conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
+6. Si tiene puntos de conexión que usan un proxy de dispositivo para conectarse a Internet, siga los procedimientos descritos en [Configurar el proxy del dispositivo y la conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
 
 ## <a name="onboarding-windows-10-or-windows-11-devices"></a>Incorporación de dispositivos Windows 10 o Windows 11 
 
