@@ -1,5 +1,5 @@
 ---
-title: Crear un paquete de regla o tipo de información confidencial de coincidencia de datos exactos
+title: Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,115 +15,115 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Crear un paquete de regla o tipo de información confidencial de coincidencia de datos exactos
+description: Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7f5ed48fa588bed7cbbd22a737873c5f54a83b4
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8b28669a2791685d172889bf6486b89b9d971e36
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914905"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271927"
 ---
-# <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Crear un paquete de regla o tipo de información confidencial de coincidencia de datos exactos
+# <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 
-Puede crear el tipo de información confidencial de coincidencia exacta de datos (EDM) (SIT) con el esquema [EDM](#use-the-edm-schema-and-sit-wizard) y el asistente SIT en el Centro de cumplimiento o crear el archivo XML del paquete de reglas [manualmente.](#create-a-rule-package-manually) También puede combinar ambos mediante un método para crear el esquema y editarlo posteriormente con el otro método.
+Puede crear el tipo de información confidencial (SIT) de coincidencia exacta de datos (EDM) con el esquema [EDM](#use-the-edm-schema-and-sit-wizard) y el asistente SIT en el Centro de cumplimiento o crear manualmente el archivo XML del paquete de [reglas.](#create-a-rule-package-manually) También puede combinar ambos mediante un método para crear el esquema y editarlo posteriormente con el otro método.
 
 Si no está familiarizado con sits basado en EDM o su implementación, debe familiarizarse con:
 
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
-- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
-- [Introducción a tipos exactos de información confidencial basada en coincidencias de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 ## <a name="use-the-edm-schema-and-sit-wizard"></a>Usar el esquema EDM y el asistente sit
 
 Puede usar este asistente para crear los archivos de tipo de información confidencial (SIT) para simplificar el proceso.
 
-Un tipo de información confidencial de EDM se compone de uno o más patrones. Cada patrón describe una combinación de evidencias (campos del esquema) que se usarán para identificar contenido confidencial en un documento o correo electrónico. 
+Un tipo de información confidencial de EDM se compone de uno o más patrones. Cada patrón describe una combinación de evidencias (campos del esquema) que se usarán para identificar contenido confidencial en un documento o correo electrónico.
 
 ## <a name="pre-requisites"></a>Requisitos previos
 
 Realice los pasos descritos en estos artículos:
 
-1. [Exportar datos de origen para el tipo exacto de información confidencial basada en coincidencias de datos](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
-2. [Crear el esquema para tipos exactos de información confidencial basada en coincidencias de datos](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
-3. [Hash y cargar la tabla de origen de información confidencial para tipos de información confidencial de coincidencia de datos exactos](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
+1. [Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
+2. [Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+3. [Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
 
-- Tanto si va a crear un tipo de información confidencial de EDM con el asistente o el archivo XML del paquete de reglas a través de PowerShell, debe tener permisos de administrador global o administrador de cumplimiento para crear, probar e implementar un tipo de información confidencial personalizada a través de la interfaz de usuario. Consulte [Acerca de los roles de administrador en Office 365](/office365/admin/add-users/about-admin-roles).
+- Tanto si va a crear un tipo de información confidencial de EDM con el asistente o el archivo XML del paquete de reglas a través de PowerShell, debe tener permisos de administrador global o administrador de cumplimiento para crear, probar e implementar un tipo de información confidencial personalizada a través de la interfaz de usuario. Consulta [Acerca de los roles de administrador en Office 365](/office365/admin/add-users/about-admin-roles).
 - Identifique uno de los SIT integrados que se usarán como tipo de información confidencial de elementos primarios.
-    - Si ninguno de los tipos de información confidencial integrados coincidirá con los datos de la columna seleccionada, tendrá que crear un tipo de información confidencial personalizado que lo haga.
-    - Si seleccionó la opción Delimitadores ignorados para la columna de elemento principal del esquema, asegúrese de que el SIT personalizado que cree coincida con los datos con y sin los delimitadores seleccionados. 
-    - Si usa un SIT integrado, asegúrese de que detectará exactamente las cadenas que desea seleccionar y no incluirá caracteres circundantes ni excluirá ninguna parte válida de la cadena tal como se almacena en la tabla de información confidencial. Vea [Definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) y Introducción a tipos de información confidencial [personalizados.](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types) 
-     
+  - Si ninguno de los tipos de información confidencial integrados coincidirá con los datos de la columna seleccionada, tendrá que crear un tipo de información confidencial personalizado que lo haga.
+  - Si seleccionó la opción Delimitadores ignorados para la columna de elemento principal del esquema, asegúrese de que el SIT personalizado que cree coincida con los datos con y sin los delimitadores seleccionados.
+  - Si usa un SIT integrado, asegúrese de que detectará exactamente las cadenas que desea seleccionar y no incluirá caracteres circundantes ni excluirá ninguna parte válida de la cadena tal como se almacena en la tabla de información confidencial.
+
+Consulte [Definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) [y Introducción a tipos de información confidencial personalizados](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types).
+
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 
 1. En el Centro de cumplimiento de Microsoft 365 para su inquilino vaya a **Clasificación de datos** > **coincidencias de datos exactos**.
 
 2. Elija **Tipos de información confidencial EDM** y **Crear Tipo de información confidencial EDM** para abrir el asistente de configuración de tipos de información confidencial.
 
-3. Elija **Elegir un esquema EDM** existente y elija el esquema que creó en Crear el esquema para los tipos exactos de información confidencial basada en [coincidencias de datos.](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+3. Elija **Elegir un esquema EDM** existente y elija el esquema que creó en Crear el esquema para los tipos exactos de información confidencial basada en coincidencias [de datos](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
 4. Elija **Siguiente** y seleccione **Crear patrón**.
 
-5. Elija el **Nivel de confianza** y **Elemento primario**.  Para obtener más información sobre los niveles de confianza, vea [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
+5. Elija el **Nivel de confianza** y **Elemento primario**. Para obtener más información sobre los niveles de confianza, vea [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
 
-6.  Elija el **tipo de** información confidencial del elemento primario con el que asociarlo para definir el texto del documento que se comparará con todos los valores del campo de elemento principal. Consulte [Tipo de información confidencial según definiciones de entidades](sensitive-information-type-entity-definitions.md) para obtener más información sobre los tipos de información confidencial disponibles.
+6. Elija el **tipo de** información confidencial del elemento primario con el que asociarlo para definir el texto del documento que se comparará con todos los valores del campo de elemento principal. Consulte [Tipo de información confidencial según definiciones de entidades](sensitive-information-type-entity-definitions.md) para obtener más información sobre los tipos de información confidencial disponibles.
 
-> [!IMPORTANT]
-> Seleccione un tipo de información confidencial que coincida estrechamente con el formato del contenido que desea buscar. Seleccionar un tipo de información confidencial que coincida con contenido innecesario, como uno que coincida con todas las cadenas de texto, o todos los números, puede provocar una carga excesiva en el sistema, lo que podría provocar la pérdida de información confidencial. Vea la sección Procedimientos recomendados del artículo Introducción a la coincidencia exacta de datos de esta documentación para obtener recomendaciones sobre cómo seleccionar un tipo de información confidencial que se va a usar aquí. 
+   > [!IMPORTANT]
+   > Seleccione un tipo de información confidencial que coincida estrechamente con el formato del contenido que desea buscar. Seleccionar un tipo de información confidencial que coincida con contenido innecesario, como uno que coincida con todas las cadenas de texto, o todos los números, puede provocar una carga excesiva en el sistema, lo que podría provocar la pérdida de información confidencial. Vea la sección Procedimientos recomendados del artículo Introducción a la coincidencia exacta de datos de esta documentación para obtener recomendaciones sobre cómo seleccionar un tipo de información confidencial que se va a usar aquí.
 
 7. Elija los **elementos de soporte técnico y** las opciones de coincidencia.
 
-7. Elija **Listo** y **Siguiente**.
+8. Elija **Listo** y **Siguiente**.
 
-8. Elija su **Nivel de confianza y la proximidad de su personaje**.  Este será el valor predeterminado para todo el tipo de información confidencial de EDM.
+9. Elija su **Nivel de confianza y la proximidad de su personaje**. Este será el valor predeterminado para todo el tipo de información confidencial de EDM.
 
-9. Elige **Crear patrón** si quieres crear patrones adicionales para el tipo de información confidencial de EDM.
+10. Elige **Crear patrón** si quieres crear patrones adicionales para el tipo de información confidencial de EDM.
 
-10. Elija **Siguiente** y rellene con un **Nombre** y una **Descripción para los administradores**.
+11. Elija **Siguiente** y rellene con un **Nombre** y una **Descripción para los administradores**.
 
-11. Revise y elija **Enviar**.
+12. Revise y elija **Enviar**.
 
 ### <a name="edit-or-delete-the-sensitive-information-type-pattern"></a>Editar o eliminar el patrón de tipo de información confidencial
 
-1. Open **Compliance Center** Data  >  **classification** Exact data  >  **matches**.
+1. Open **Compliance centerData** >  **classificationExact** >  **data matches**.
 
-2. Elija **tipos de información confidencial de EDM**.
+2. Elige **tipos de información confidencial de EDM**.
 
 3. Elija el SIT de EDM que desea editar.
 
-4. Elija Editar tipo de información confidencial de **EDM** o Eliminar el tipo de información confidencial **de EDM** del control desplegable.
+4. Elija **Editar tipo de información confidencial de EDM** o Eliminar el tipo de información confidencial **de EDM** del control desplegable.
 
 ## <a name="create-a-rule-package-manually"></a>Crear un paquete de reglas manualmente
 
 Este procedimiento muestra cómo crear un archivo en formato XML denominado paquete de reglas (con codificación Unicode) y, a continuación, cargarlo en Microsoft 365 mediante cmdlets de PowerShell del Centro de cumplimiento.
 
 > [!NOTE]
-> Si la SIT a la que asigna puede detectar pruebas corroborativas de varias palabras, los elementos secundarios que defina en un paquete de reglas creado manualmente se pueden asignar al SIT. Por ejemplo, el nombre no coincidiría como un elemento secundario porque se compararía y se encontraría en el contenido por separado con el término cargado en uno de los campos, si ese campo de evidencia corroborativa no se asigna a un SIT que pueda detectar ese `John Smith` `John` `Smith` `John Smith` patrón.
-
-> [!NOTE]
-> Hay un límite de 10 paquetes de reglas en un Microsoft 365 inquilino. Dado que un paquete de reglas puede contener un número arbitrario de tipos de información confidencial, puede evitar crear un nuevo paquete de reglas cada vez que desee definir un nuevo tipo de información confidencial con este método, en su lugar exporte un paquete de reglas existente y agregue los tipos de información confidencial al XML antes de volver a cargarlo. 
-
+> Si la SIT a la que asigna puede detectar pruebas corroborativas de varias palabras, los elementos secundarios que defina en un paquete de reglas creado manualmente se pueden asignar al SIT. Por ejemplo, `John Smith` `John` `Smith` `John Smith` el nombre no coincidiría como un elemento secundario porque se compararía y se encontraría en el contenido por separado con el término cargado en uno de los campos, si ese campo de evidencia corroborativa no se asigna a un SIT que pueda detectar ese patrón.
+>
+> Hay un límite de 10 paquetes de reglas en un Microsoft 365 inquilino. Dado que un paquete de reglas puede contener un número arbitrario de tipos de información confidencial, puede evitar crear un nuevo paquete de reglas cada vez que desee definir un nuevo tipo de información confidencial con este método, en su lugar exporte un paquete de reglas existente y agregue los tipos de información confidencial al XML antes de volver a cargarlo.
 
 1. Cree un paquete de reglas en formato XML (con codificación Unicode), similar al siguiente ejemplo: (Puede copiar, modificar y usar nuestro ejemplo).
 
-Al configurar el paquete de reglas, asegúrese de hacer referencia correctamente al archivo de tabla de origen de información confidencial  delimitado .csv, .tsv o pipe (|) y al archivo de esquemaedm.xmlinformación confidencial. Puede copiar, modificar y usar nuestro ejemplo. En este xml de ejemplo, es necesario personalizar los siguientes campos para crear el tipo confidencial de EDM:
+   Al configurar el paquete de reglas, asegúrese de hacer referencia correctamente al archivo de tabla de origen de información confidencial delimitado .csv, .tsv o pipe (|) y al archivo de esquemaedm.xmlinformación **** confidencial. Puede copiar, modificar y usar nuestro ejemplo. En este xml de ejemplo, es necesario personalizar los siguientes campos para crear el tipo confidencial de EDM:
 
-- **RulePack id y ExactMatch id**: use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) para generar un GUID.
+   - **RulePack id y ExactMatch id**: use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) para generar un GUID.
 
-- **Datastore**: este campo especifica el almacén de datos de búsqueda de EDM que se va a usar. Se proporciona el nombre del origen de datos del esquema EDM configurado.
+   - **Datastore**: este campo especifica el almacén de datos de búsqueda de EDM que se va a usar. Se proporciona el nombre del origen de datos del esquema EDM configurado.
 
-- **idMatch**: este campo señala al elemento principal para EDM.
-- **Matches:** especifica el campo que se usará en la búsqueda exacta. Se proporciona un nombre de campo que se puede buscar en el esquema EDM para DataStore.
-- **Clasificación:** este campo especifica la coincidencia de tipo de información confidencial que desencadena la búsqueda de EDM. Puede usar el nombre o GUID de un tipo de información confidencial personalizada o integrada existente. 
-        
-> [!NOTE]
-> Tenga en cuenta que cualquier cadena que coincida con el SIT proporcionado se hash y se comparará con cada entrada de la tabla de origen de información confidencial. Para evitar problemas de rendimiento si elige un SIT personalizado para el elemento de clasificación, no use uno que coincida con un gran porcentaje de contenido. Por ejemplo, uno que coincida con "cualquier número" o "cualquier palabra de cinco letras". Puede diferenciarlo agregando palabras clave compatibles o incluyendo el formato en la definición de la clasificación personalizada SIT.
+   - **idMatch**: este campo señala al elemento principal para EDM.
+   - **Coincidencias**: especifica el campo que se usará en la búsqueda exacta. Se proporciona un nombre de campo que se puede buscar en el esquema EDM para DataStore.
+   - **Clasificación**: este campo especifica la coincidencia de tipo de información confidencial que desencadena la búsqueda de EDM. Puede usar el nombre o GUID de un tipo de información confidencial personalizada o integrada existente.
 
-- **Match:** este campo apunta a pruebas adicionales encontradas cerca de idMatch.
-- **Matches:** proporciona cualquier nombre de campo en el esquema de EDM para DataStore.
-- **IdRef de recursos:** Esta sección especifica el nombre y la descripción del tipo confidencial en varias configuraciones regionales
-    - Se proporciona GUID para el identificador ExactMatch.
-    - **Nombre**  &  **descripción**: personalizar según sea necesario.
+   > [!NOTE]
+   > Tenga en cuenta que cualquier cadena que coincida con el SIT proporcionado se hash y se comparará con cada entrada de la tabla de origen de información confidencial. Para evitar problemas de rendimiento si elige un SIT personalizado para el elemento de clasificación, no use uno que coincida con un gran porcentaje de contenido. Por ejemplo, uno que coincida con "cualquier número" o "cualquier palabra de cinco letras". Puede diferenciarlo agregando palabras clave compatibles o incluyendo el formato en la definición de la clasificación personalizada SIT.
+
+   - **Match**: este campo apunta a pruebas adicionales encontradas cerca de idMatch.
+   - **Coincidencias**: proporciona cualquier nombre de campo en esquema de EDM para DataStore.
+   - **IdRef de recursos:** Esta sección especifica el nombre y la descripción del tipo confidencial en varias configuraciones regionales
+     - Se proporciona GUID para el identificador ExactMatch.
+     - **Nombre** &  **descripción**: personalizar según sea necesario.
 
       ```xml
       <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -165,16 +165,15 @@ Al configurar el paquete de reglas, asegúrese de hacer referencia correctamente
       </RulePackage>
       ```
 
-2. Cargue el paquete de reglas ejecutando, uno a la vez, los siguientes cmdlets de PowerShell:
+2. Upload el paquete de reglas ejecutando el siguiente comando de PowerShell:
 
-      ```powershell
-      $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
-      New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
-      ```
+   ```powershell
+   New-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllBytes('.\\rulepack.xml'))
+   ```
 
 > [!NOTE]
-> La sintaxis del archivo de paquete de reglas es la misma que para otros tipos de información confidencial. Para obtener información completa sobre la sintaxis del archivo de paquete de reglas y las opciones de configuración adicionales, y para obtener instrucciones sobre cómo modificar y eliminar tipos de información confidencial con PowerShell, cree un tipo de información confidencial personalizado con [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md#create-a-custom-sensitive-information-type-using-powershell).
+> La sintaxis del archivo de paquete de reglas es la misma que para otros tipos de información confidencial. Para obtener detalles completos sobre la sintaxis del archivo de paquete de reglas y las opciones de configuración adicionales, y para obtener instrucciones sobre cómo modificar y eliminar tipos de información confidencial con PowerShell, cree un tipo de información confidencial personalizado con [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md#create-a-custom-sensitive-information-type-using-powershell).
 
 ## <a name="next-step"></a>Paso siguiente
 
--  [Probar un tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+- [Probar un tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)

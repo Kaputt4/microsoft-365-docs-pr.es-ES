@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar Information Rights Management (IRM) en Exchange Online usar un servidor de Active Directory Rights Management Service (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89ef25adf41c80abfd04ffdc51a32ba2cbef0c5d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f87992fc9be676b9485d6ec7a7b7ff1f3a4d39d9
+ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153191"
+ms.lasthandoff: 01/29/2022
+ms.locfileid: "62271555"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
 
 Para su uso con implementaciones locales, Information Rights Management (IRM) en Exchange Online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se implanta en el correo electrónico mediante la aplicación de una plantilla de directiva de permisos de AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea y sin conexión y dentro y fuera del firewall de la organización.
 
-En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información acerca del uso de las nuevas funcionalidades para Cifrado de mensajes de Office 365 con Azure Active Directory y Azure Rights Management, consulte las preguntas más frecuentes Cifrado de mensajes de Office 365 [de Cifrado de mensajes de Office 365 ](./ome-faq.yml).
+En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información acerca del uso de las nuevas funcionalidades para Cifrado de mensajes de Office 365 con Azure Active Directory y Azure Rights Management, vea el [ Cifrado de mensajes de Office 365 preguntas más frecuentes](./ome-faq.yml).
 
 Para obtener más información sobre IRM en Exchange Online, consulte [Information Rights Management en Exchange Online](information-rights-management-in-exchange-online.md).
 
@@ -42,7 +42,7 @@ Para obtener más información sobre IRM en Exchange Online, consulte [Informati
 
 - Para obtener información detallada sobre cómo instalar y configurar Windows PowerShell y conectarlo al servicio, vea [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, vea [Keyboard shortcuts for the Exchange admin center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, vea [Métodos abreviados](/Exchange/accessibility/keyboard-shortcuts-in-admin-center) de teclado para el centro de administración de Exchange en Exchange Online.
 
 > [!TIP]
 > ¿Tiene algún problema? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
@@ -70,7 +70,7 @@ Al importar el dominio de publicación de confianza, se almacena y se protege en
 
 4. En el panel **Acciones**, haga clic en **Exportar dominio de publicación de confianza**.
 
-5. En el cuadro **Archivo de dominio de publicación**, haga clic en **Guardar como** para guardar el archivo en una ubicación concreta del equipo local. Escriba un nombre de archivo, asegúrese de especificar la extensión de nombre de archivo  `.xml` y haga clic en **Guardar**.
+5. En el cuadro **Archivo de dominio de publicación**, haga clic en **Guardar como** para guardar el archivo en una ubicación concreta del equipo local. Escriba un nombre de archivo, asegúrese de especificar la extensión `.xml` de nombre de archivo y, a continuación, haga clic en **Guardar**.
 
 6. En los cuadros **Contraseña** y **Confirmar contraseña**, escriba una contraseña segura que se va a usar para cifrar el archivo de dominio de publicación de confianza. Tendrá que especificar esta contraseña al importar el dominio de publicación de confianza a su organización de correo electrónico basada en nube.
 
@@ -81,22 +81,22 @@ Una vez exportado el dominio de publicación de confianza a un archivo XML, tien
 Para importar el TPD, ejecute el comando siguiente en Windows PowerShell:
 
 ```powershell
-Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path <path to exported TPD file> -ReadCount 0)) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
+Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<path to exported TPD file>')) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
 ```
 
-Puede obtener los valores para los parámetros  _ExtranetLicensingUrl_ e  _IntranetLicensingUrl_ en la consola de Active Directory Rights Management Services. Seleccione el clúster AD RMS en el árbol de consola. Las direcciones URL de emisión de licencias aparecen en el panel de resultados. Los clientes de correo electrónico utilizan estas direcciones URL cuando el contenido tiene que ser descifrado y cuando Exchange Online necesita determinar qué dominio de publicación de confianza utilizar.
+Puede obtener los valores de los parámetros _ExtranetLicensingUrl_ e _IntranetLicensingUrl_ en la Active Directory Rights Management Services web. Seleccione el clúster AD RMS en el árbol de consola. Las direcciones URL de emisión de licencias aparecen en el panel de resultados. Los clientes de correo electrónico utilizan estas direcciones URL cuando el contenido tiene que ser descifrado y cuando Exchange Online necesita determinar qué dominio de publicación de confianza utilizar.
 
 Al ejecutar este comando, se solicita una contraseña. Escriba la contraseña que especificó cuando exportó el TPD desde su servidor AD RMS.
 
 Por ejemplo, el siguiente comando importa el dominio de publicación de confianza, denominado Exported TPD, utilizando el archivo XML que exportó desde su servidor AD RMS y guardó en el escritorio de la cuenta de Administrador. El parámetro Name se utiliza para especificar un nombre para el dominio de publicación de confianza.
 
 ```powershell
-Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path C:\Users\Administrator\Desktop\ExportTPD.xml -ReadCount 0)) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
+Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('C:\Users\Administrator\Desktop\ExportTPD.xml')) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Import-RMSTrustedPublishingDomain](/powershell/module/exchange/import-rmstrustedpublishingdomain).
 
-#### <a name="how-do-you-know-this-step-worked"></a>¿Cómo sabe si este paso funcionó?
+#### <a name="how-do-you-know-that-you-successfully-imported-the-tpd"></a>¿Cómo sabe que importó correctamente el TPD?
 
 Para comprobar que el dominio de publicación de confianza se haya importado correctamente, ejecute el cmdlet **Get-RMSTrustedPublishingDomain** para recuperar los dominios de publicación de confianza de su organización de Exchange Online. Para obtener detalles, consulte los ejemplos en [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain).
 
@@ -110,7 +110,7 @@ Para obtener una lista de todas las plantillas que incluye el TPD predeterminado
 Get-RMSTemplate -Type All | fl
 ```
 
-Si el valor del parámetro  _Type_ es  `Archived`, la plantilla no está visible para los usuarios. Solo las plantillas distribuidas en el TPD predeterminado están disponibles en Outlook en la Web.
+Si el valor del parámetro _Type_ es `Archived`, la plantilla no es visible para los usuarios. Solo las plantillas distribuidas en el TPD predeterminado están disponibles en Outlook en la Web.
 
 Para distribuir una plantilla, ejecute el comando siguiente:
 
@@ -126,16 +126,14 @@ Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 
 Para obtener más información acerca de la sintaxis y los parámetros, consulte [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate) y [Set-RMSTemplate](/powershell/module/exchange/set-rmstemplate).
 
-**Plantilla No reenviar**
+#### <a name="the-do-not-forward-template"></a>Plantilla No reenviar
 
 Cuando importa el dominio de publicación de confianza predeterminado desde la organización local en Exchange Online, se importa una plantilla de directiva de permisos AD RMS denominada **No reenviar**. De manera predeterminada, esta plantilla se distribuye al importar el dominio de publicación de confianza predeterminado. No puede usar el cmdlet **Set-RMSTemplate** para modificar la plantilla **No reenviar**.
 
 Cuando se aplica la plantilla **No reenviar** a un mensaje, solo los destinatarios del mensaje pueden leerlo. Además, los destinatarios no pueden hacer lo siguiente:
 
 - Reenviar el mensaje a otra persona.
-
 - Copiar el contenido del mensaje.
-
 - Imprimir el mensaje.
 
 > [!IMPORTANT]
@@ -143,7 +141,7 @@ Cuando se aplica la plantilla **No reenviar** a un mensaje, solo los destinatari
 
 Puede crear plantillas de directiva de permisos AD RMS adicionales en el servidor de AD RMS de la organización local a fin de cumplir con los requisitos de protección de IRM. Si crea plantillas de directiva de permisos AD RMS adicionales, tiene que exportar de nuevo el dominio de publicación de confianza desde el servidor local AD RMS y actualizarlo en la organización de correo electrónico basada en nube.
 
-#### <a name="how-do-you-know-this-step-worked"></a>¿Cómo sabe si este paso funcionó?
+#### <a name="how-do-you-know-that-you-successfully-distributed-the-ad-rms-rights-policy-template"></a>¿Cómo sabe que distribuyó correctamente la plantilla de directiva de derechos de AD RMS?
 
 Para comprobar que una plantilla de directiva de permisos AD RMS se distribuyó correctamente, ejecute el cmdlet **Get-RMSTemplate** para comprobar las propiedades de la plantilla. Para obtener detalles, consulte los ejemplos en [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate).
 
@@ -157,7 +155,7 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration).
 
-#### <a name="how-do-you-know-this-step-worked"></a>¿Cómo sabe si este paso funcionó?
+#### <a name="how-do-you-know-that-you-successfully-enabled-irm"></a>¿Cómo sabe que habilitó IRM correctamente?
 
 Para comprobar que IRM se haya habilitado correctamente, ejecute el cmdlet [Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration) para comprobar la configuración de IRM en la organización de Exchange Online.
 
@@ -168,4 +166,4 @@ Para comprobar si ha importado el TPD y ha habilitado IRM correctamente, haga lo
 
 - Use el cmdlet **Test-IRMConfiguration** para probar si IRM funciona. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-- Redacte un nuevo mensaje en Outlook en la Web y protegerlo  mediante la selección de la opción Establecer permisos en el menú extendido ( ![ Icono Más opciones). ](../media/ITPro-EAC-MoreOptionsIcon.gif)
+- Redacte un nuevo mensaje en Outlook en la Web y protegerlo mediante la selección de la opción Establecer permisos  en el menú extendido (![icono Más opciones).](../media/ITPro-EAC-MoreOptionsIcon.gif)
