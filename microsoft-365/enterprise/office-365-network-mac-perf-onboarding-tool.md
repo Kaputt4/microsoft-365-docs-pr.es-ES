@@ -3,7 +3,7 @@ title: Microsoft 365 de prueba de conectividad de red
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 1/18/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
-ms.openlocfilehash: 98104be3eb41b910882b4ee1c1ade8fbfc24c39f
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: bea7922baa1e92ffcaaff58678141758906ab955
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327597"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281464"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 
-La Microsoft 365 de prueba de conectividad de red se encuentra en <https://connectivity.office.com> . Es una herramienta adjunta a la evaluación de red y a las perspectivas de red disponibles en el Centro de administración de Microsoft 365 en el **servicio de mantenimiento | Menú** Conectividad.
+La Microsoft 365 de prueba de conectividad de red se encuentra en <https://connectivity.office.com>. Es una herramienta adjunta a la evaluación de red y a los conocimientos de red disponibles en el Centro de administración de Microsoft 365 en el **servicio de | Menú** Conectividad.
 
 > [!IMPORTANT]
 > Es importante iniciar sesión en el inquilino de Microsoft 365 ya que todos los informes de prueba se comparten con el administrador y se cargan en el inquilino mientras se inicia sesión.
@@ -36,7 +36,7 @@ La Microsoft 365 de prueba de conectividad de red se encuentra en <https://conne
 
 Los conocimientos de red del Centro de Administración de Microsoft 365 se basan en medidas regulares dentro del producto para el inquilino Microsoft 365, agregados cada día. En comparación, los conocimientos de red de la Microsoft 365 de conectividad de red se ejecutan localmente en la herramienta.
 
-Las pruebas en el producto son limitadas y la ejecución de pruebas locales para el usuario recopila más datos, lo que da como resultado información más detallada. Las perspectivas de red del Centro de Administración de Microsoft 365 mostrarán que hay un problema de red en una ubicación de oficina específica. La Microsoft 365 de conectividad puede ayudar a identificar la causa raíz de ese problema y proporcionar una acción de mejora del rendimiento dirigida.
+Las pruebas en el producto son limitadas y la ejecución de pruebas locales para el usuario recopila más datos, lo que da como resultado información más detallada. Las perspectivas de red del Centro Administración de Microsoft 365 mostrarán que hay un problema de red en una ubicación de oficina específica. La Microsoft 365 de conectividad puede ayudar a identificar la causa raíz de ese problema y proporcionar una acción de mejora del rendimiento dirigida.
 
 Se recomienda usar estos conocimientos juntos donde se puede evaluar el estado de la calidad de las redes para cada ubicación de oficina en el Centro de Administración de Microsoft 365 y se pueden encontrar más detalles después de la implementación de pruebas basadas en la prueba de conectividad Microsoft 365.
 
@@ -44,7 +44,7 @@ Se recomienda usar estos conocimientos juntos donde se puede evaluar el estado d
 
 ### <a name="office-location-identification"></a>Office identificación de ubicación
 
-Al hacer clic en el *botón Ejecutar prueba,* se muestra la página de prueba en ejecución e identificamos la ubicación de la oficina. Puede escribir su ubicación por ciudad, estado y país o elegir que se detecte por usted. Si detecta la ubicación de la oficina, la herramienta solicita la latitud y longitud del explorador web y limita la precisión a 300 metros por 300 metros antes de su uso. No es necesario identificar la ubicación con más precisión que el edificio para medir el rendimiento de la red.
+Al hacer clic en el *botón Ejecutar prueba* , se muestra la página de prueba en ejecución e identificamos la ubicación de la oficina. Puede escribir su ubicación por ciudad, estado y país o elegir que se detecte por usted. Si detecta la ubicación de la oficina, la herramienta solicita la latitud y longitud del explorador web y limita la precisión a 300 metros por 300 metros antes de su uso. No es necesario identificar la ubicación con más precisión que el edificio para medir el rendimiento de la red.
 
 ### <a name="javascript-tests"></a>Pruebas de JavaScript
 
@@ -54,7 +54,7 @@ Después de la identificación de ubicación de la oficina, ejecutamos una prueb
 
 A continuación, iniciamos la descarga de la aplicación cliente de pruebas avanzadas. Dependemos del usuario para iniciar la aplicación cliente y también debe tener instalado .NET Core.
 
-Hay dos partes en la prueba Microsoft 365 conectividad de red: el sitio web y una aplicación cliente Windows que ejecuta pruebas avanzadas <https://connectivity.office.com> de conectividad de red. La mayoría de las pruebas requieren que se ejecute la aplicación. Rellenará los resultados de nuevo en la página web mientras se ejecuta.
+Hay dos partes en la prueba Microsoft 365 conectividad de red: el sitio web <https://connectivity.office.com> y una aplicación cliente Windows que ejecuta pruebas avanzadas de conectividad de red. La mayoría de las pruebas requieren que se ejecute la aplicación. Rellenará los resultados de nuevo en la página web mientras se ejecuta.
 
 Se le pedirá que descargue la aplicación de prueba de cliente avanzada del sitio web una vez completadas las pruebas del explorador web. Abra y ejecute el archivo cuando se le pida.
 
@@ -131,9 +131,9 @@ Implemente la salida de red local y directa de las ubicaciones de la oficina de 
 
 #### <a name="proxy-server-information"></a>Información del servidor proxy
 
-Identificamos si los servidores proxy están configurados en el equipo local para pasar Microsoft 365 de red en la **categoría Optimizar.** Identificamos la distancia desde la ubicación de la oficina de usuario hasta los servidores proxy.
+Identificamos si los servidores proxy están configurados en el equipo local para pasar Microsoft 365 de red en la **categoría Optimizar**. Identificamos la distancia desde la ubicación de la oficina de usuario hasta los servidores proxy.
 
-La distancia se prueba primero mediante ping ICMP. Si se produce un error, se prueba con ping TCP y, por último, se busca la dirección IP del servidor proxy en una base de datos de ubicación de direcciones IP. Mostramos una información de red si el servidor proxy está a más de **500 millas** (800 kilómetros) de distancia de la ubicación de la oficina del usuario.
+La distancia se prueba primero mediante ping ICMP. Si se produce un error, se prueba con ping TCP y, por último, se busca la dirección IP del servidor proxy en una base de datos de ubicación de direcciones IP. Mostramos una información de red si el servidor proxy está a **más de 500 millas** (800 kilómetros) de distancia de la ubicación de la oficina del usuario.
 
 #### <a name="virtual-private-network-vpn-you-use-to-connect-to-your-organization"></a>Red privada virtual (VPN) que usa para conectarse a su organización
 
@@ -141,7 +141,7 @@ Esta prueba detecta si usa una VPN para conectarse a Microsoft 365. Un resultado
 
 #### <a name="vpn-split-tunnel"></a>Vpn Split Tunnel
 
-Cada **ruta** de categoría Optimizar para Exchange Online, SharePoint Online y Microsoft Teams prueba para ver si está tunelada en la VPN. Una carga de trabajo dividida evita la VPN por completo. Se envía una carga de trabajo tunelada a través de la VPN. Una carga de trabajo de túnel selectiva tiene algunas rutas enviadas a través de la VPN y otras divididas. Un resultado de paso mostrará si todas las cargas de trabajo se dividen o se tunelización selectiva.
+Cada **ruta** de categoría Optimizar para Exchange Online, SharePoint Online y Microsoft Teams se prueba para ver si está tunelada en la VPN. Una carga de trabajo dividida evita la VPN por completo. Se envía una carga de trabajo tunelada a través de la VPN. Una carga de trabajo de túnel selectiva tiene algunas rutas enviadas a través de la VPN y otras divididas. Un resultado de paso mostrará si todas las cargas de trabajo se dividen o se tunelización selectiva.
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Clientes de su área metropolitana con un mejor rendimiento
 
@@ -169,7 +169,7 @@ En esta sección se muestran los resultados de las pruebas relacionados Exchange
 
 #### <a name="exchange-service-front-door-location"></a>Exchange de la puerta principal del servicio
 
-La puerta principal del servicio Exchange en uso se identifica del mismo modo que Outlook hace esto y medimos la latencia TCP de red desde la ubicación del usuario hasta ella. Se muestra la latencia TCP y la puerta principal del servicio Exchange en uso se compara con la lista de puertas frontales de mejor servicio para la ubicación actual. Esto se muestra como una información de red si no se usa una de las mejores puertas Exchange servicio principal.
+La puerta principal del servicio Exchange en uso se identifica del mismo modo que Outlook hace esto y medimos la latencia TCP de red desde la ubicación del usuario hasta ella. Se muestra la latencia TCP y la puerta principal del servicio Exchange en uso se compara con la lista de puertas frontales de mejor servicio para la ubicación actual. Esto se muestra como una información de red si no se usa una de las mejores puertas Exchange de servicio.
 
 No usar una de las puertas frontales del mejor servicio de Exchange podría deberse al backhaul de red antes de la salida de la red corporativa, en cuyo caso se recomienda la salida de red local y directa. También podría deberse al uso de un servidor de resolución recursiva de DNS remoto, en cuyo caso se recomienda alinear el servidor de resolución recursiva DNS con la salida de red.
 
@@ -193,7 +193,7 @@ La puerta principal del servicio de SharePoint en uso se identifica de la misma 
 
 #### <a name="download-speed"></a>Velocidad de descarga
 
-Medimos la velocidad de descarga de un archivo de 15 Mb desde SharePoint puerta principal del servicio. El resultado se muestra en megabytes por segundo para indicar qué archivo de tamaño en megabytes se puede descargar de SharePoint o OneDrive **en un segundo**. El número debe ser similar a una décima parte del ancho de banda mínimo del circuito en megabits por segundo. Por ejemplo, si tiene una conexión a Internet de 100mbps, puede esperar 10 megabytes por segundo (10 MBps).
+Medimos la velocidad de descarga de un archivo de 15 Mb desde SharePoint puerta principal del servicio. El resultado se muestra en megabytes por segundo para indicar qué archivo de tamaño en megabytes se puede descargar SharePoint o OneDrive **en un segundo**. El número debe ser similar a una décima parte del ancho de banda mínimo del circuito en megabits por segundo. Por ejemplo, si tiene una conexión a Internet de 100mbps, puede esperar 10 megabytes por segundo (10 MBps).
 
 #### <a name="buffer-bloat"></a>Bloat de búfer
 
@@ -221,15 +221,15 @@ Muestra la latencia UDP medida, que debe ser inferior a **100 ms**.
 
 #### <a name="jitter"></a>Vibración
 
-Muestra el vibración UDP medido, que debe ser inferior a **30 ms.**
+Muestra el vibración UDP medido, que debe ser inferior a **30 ms**.
 
 #### <a name="connectivity"></a>Conectividad
 
-Se prueba la conectividad HTTP desde la ubicación de la oficina del usuario a todos los puntos de conexión Microsoft 365 de red necesarios. Se publican en [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md) . Se muestra una información de red para los puntos de conexión de red necesarios, a los que no se puede conectar.
+Se prueba la conectividad HTTP desde la ubicación de la oficina del usuario a todos los puntos de conexión Microsoft 365 de red necesarios. Se publican en [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). Se muestra una información de red para los puntos de conexión de red necesarios, a los que no se puede conectar.
 
 Un servidor proxy, un firewall u otro dispositivo de seguridad de red del perímetro de red empresarial pueden bloquear la conectividad. La conectividad al puerto TCP 80 se prueba con una solicitud HTTP y la conectividad al puerto TCP 443 se prueba con una solicitud HTTPS. Si no hay respuesta, el FQDN se marca como un error. Si hay un código de respuesta HTTP 407, el FQDN se marca como un error. Si hay un código de respuesta HTTP 403, comprobaremos el atributo Server de la respuesta y, si parece ser un servidor proxy, lo marcamos como un error. Puede simular las pruebas que llevamos a cabo con la Windows de línea de comandos curl.exe.
 
-Se prueba el certificado SSL en cada extremo Microsoft 365 de red que se encuentra en la categoría optimizar o permitir tal como se define en [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md) . Si alguna prueba no encuentra un certificado SSL de Microsoft, la red cifrada conectada debe haber sido interceptada por un dispositivo de red intermediario. Se muestra una información de red en los puntos de conexión de red cifrados interceptados.
+Se prueba el certificado SSL en cada extremo Microsoft 365 de red que se encuentra en la categoría optimizar o permitir tal como se define en [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). Si alguna prueba no encuentra un certificado SSL de Microsoft, la red cifrada conectada debe haber sido interceptada por un dispositivo de red intermediario. Se muestra una información de red en los puntos de conexión de red cifrados interceptados.
 
 Cuando se encuentra un certificado SSL que no proporciona Microsoft, se muestra el FQDN de la prueba y el propietario del certificado SSL en uso. Este propietario de certificado SSL puede ser un proveedor de servidores proxy o puede ser un certificado autofirmado de empresa.
 
@@ -259,7 +259,7 @@ Estas son las respuestas a algunas de nuestras preguntas más frecuentes.
 
 El cliente de prueba avanzada requiere .NET Core 3.1 Desktop Runtime. Si ejecuta el cliente de prueba avanzada sin que esté instalado, se le dirigirá a la página del instalador [de .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Asegúrese de instalar Desktop Runtime y no el SDK, ni el ASP.NET Core Runtime, que están más arriba en la página. Los permisos de administrador en el equipo son necesarios para instalar .NET Core.
 
-El cliente de prueba avanzada usa SignalR para comunicarse con la página web. Para ello, debe asegurarse de que la conectividad del puerto TCP 443 connectivity.service.signalr.net está abierta. Esta dirección URL no se publica en el porque no es necesaria la conectividad para un https://aka.ms/o365ip Microsoft 365 de la aplicación cliente.
+El cliente de prueba avanzada usa SignalR para comunicarse con la página web. Para ello, debe asegurarse de que la conectividad del puerto TCP 443 **connectivity.service.signalr.net** está abierta. Esta dirección URL no se publica en el <https://aka.ms/o365ip> porque esa conectividad no es necesaria para un Microsoft 365 de la aplicación cliente.
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>¿Qué Microsoft 365 la puerta principal del servicio?
 

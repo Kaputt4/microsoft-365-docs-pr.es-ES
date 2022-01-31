@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccecccb7b2d846bc14dafd8585947b926b23ad0c
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 6f5f737709591c266515909eeca35bad30a52c21
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421155"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281488"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -81,7 +81,7 @@ Las siguientes son las direcciones URL del portal de Microsoft Defender para pun
 |DoD|<https://securitycenter.microsoft.us>|
 |
 > [!NOTE]
-> Si es un cliente GCC y en el proceso de pasar de Microsoft Defender para endpoint comercial a GCC, use para obtener acceso a los datos comerciales de https://transition.security.microsoft.com Microsoft Defender para endpoint.
+> Si es un cliente GCC y en el proceso de pasar de Microsoft Defender para endpoint comercial a GCC, https://transition.security.microsoft.com use para obtener acceso a los datos comerciales de Microsoft Defender para endpoint.
 
 ## <a name="endpoint-versions"></a>Versiones de extremo
 
@@ -103,7 +103,7 @@ Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/45
 Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows 10, versión 1709|![No.](images/svg/check-no.svg) <br /> Nota: No se admite|![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Nota: [En desuso,](/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice|![No](images/svg/check-no.svg) <br /> Nota: No se admite
+Windows 10, versión 1709|![No.](images/svg/check-no.svg) <br /> Nota: No se admite|![Sí](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Nota: [En desuso](/lifecycle/announcements/revised-end-of-service-windows-10-1709), actualice|![No](images/svg/check-no.svg) <br /> Nota: No se admite
 Windows 10, versión 1703 y versiones anteriores|![No.](images/svg/check-no.svg) <br /> Nota: No se admite|![No](images/svg/check-no.svg) <br /> Nota: No se admite|![No](images/svg/check-no.svg) <br /> Nota: No se admite
 Windows Server 2022|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
@@ -125,13 +125,13 @@ iOS|![No.](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg)
 > [!NOTE]
 > <sup>1</sup> La revisión debe implementarse antes de la incorporación de dispositivos para configurar Defender for Endpoint en el entorno correcto.
 >
-> <sup>2</sup> Obtenga información sobre la [solución moderna unificada para Windows 2016 y 2012 R2](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview). Si ya ha incorporado los servidores con MMA, siga las instrucciones que se proporcionan en [Migración](server-migration.md) de servidores para migrar a la nueva solución.
+> <sup>2</sup> Obtenga información sobre la [solución moderna unificada para Windows 2016 y 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview). Si ya ha incorporado los servidores con MMA, siga las instrucciones que se proporcionan en [Migración](server-migration.md) de servidores para migrar a la nueva solución.
 >
-> <sup>3</sup> Cuando use [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
+> <sup>3</sup> Cuando use [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el asistente para la [instalación, o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) si usa una línea de comandos o un [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation): establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versiones del sistema operativo al usar Microsoft Defender para servidores
 
-Las siguientes versiones del sistema operativo se admiten al [usar Microsoft Defender para servidores:](/azure/security-center/security-center-wdatp)
+Las siguientes versiones del sistema operativo se admiten al [usar Microsoft Defender para servidores](/azure/security-center/security-center-wdatp):
 
 <br />
 
@@ -142,7 +142,7 @@ Versión del sistema operativo|GCC|GCC High|DoD
 Windows Server 2022|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2019|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 |
 
@@ -150,13 +150,13 @@ Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/c
 
 Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada y permite únicamente el acceso a dominios específicos, agregue los dominios que aparecen en la hoja descargable a la lista de dominios permitidos.
 
-En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Compruebe que no hay reglas de firewall o filtrado de red que denieguen el acceso *a* estas direcciones URL o creen una regla de permitido específicamente para ellas.
+En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Compruebe que no hay reglas de firewall o filtrado de red que denieguen el *acceso a estas* direcciones URL o creen una regla de permitido específicamente para ellas.
 
 Hoja de cálculo de la lista de dominios|Descripción
 :-----|:-----
 ![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
-Para obtener más información, vea [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
+Para obtener más información, consulte [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 > [!NOTE]
 > La hoja de cálculo también contiene direcciones URL comerciales, asegúrese de comprobar las pestañas "Us Gov".
@@ -165,7 +165,7 @@ Para obtener más información, vea [Configure device proxy and Internet connect
 
 ## <a name="api"></a>API
 
-En lugar de los URI públicos enumerados en nuestra [documentación de la API,](apis-intro.md)deberá usar los siguientes URI:
+En lugar de los URI públicos enumerados en nuestra [documentación de la API](apis-intro.md), deberá usar los siguientes URI:
 
 <br />
 

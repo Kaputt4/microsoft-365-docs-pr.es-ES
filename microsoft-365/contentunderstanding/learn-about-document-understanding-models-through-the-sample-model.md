@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre los modelos de comprensión de documentos a través del modelo de ejemplo en Microsoft SharePoint Syntex
+title: Importar un modelo de información de documentos de ejemplo para Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre los modelos de comprensión de documentos a través del modelo de ejemplo.
-ms.openlocfilehash: 6fffb4bf9ab30059696dc158ac9e6d91690fb83a
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
+ms.openlocfilehash: 6e7c680bcb136b52e0b3c9821471d922d43b614b
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61153729"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281175"
 ---
-# <a name="learn-about-document-understanding-models-through-the-sample-model-in-microsoft-sharepoint-syntex"></a>Obtenga información sobre los modelos de comprensión de documentos a través del modelo de ejemplo en Microsoft SharePoint Syntex
+# <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Importar un modelo de información de documentos de ejemplo para Microsoft SharePoint Syntex
 
 SharePoint Syntex le proporciona un modelo de ejemplo que puede usar para examinar, lo que le ofrece una mejor comprensión de cómo crear sus propios modelos. El modelo de ejemplo también le permite examinar los componentes del modelo, como su clasificador, extractores y explicaciones. Además, puede usar los archivos de ejemplo para entrenar el modelo.
 

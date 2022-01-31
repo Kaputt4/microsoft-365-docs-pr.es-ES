@@ -12,24 +12,27 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f66cbd3be6dea1044fc6ac9fcefb43692e1f7022
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: d367ba004af6a34d0c92badd9b711556149bd8c1
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035009"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281524"
 ---
-# <a name="reassign-profiles"></a>Reasignar perfiles
+# <a name="change-the-device-profile"></a>Cambiar el perfil del dispositivo
 
 Puedes cambiar los [perfiles de dispositivo asignados](../service-description/profiles.md) a un dispositivo mediante el Portal de administración.
 
-El perfil de dispositivo que selecciones se aplicará a todos los dispositivos que selecciones en el primer paso. Para mover dispositivos independientes a diferentes perfiles, tendrás que repetir este proceso para cada perfil de dispositivo. 
+El perfil de dispositivo seleccionado se aplicará a todos los dispositivos que selecciones en el primer paso.
 
-1. En Microsoft Endpoint Manager, seleccione **Dispositivos**   en el panel izquierdo. En la **sección Escritorio administrado** de Microsoft del menú, seleccione  **Dispositivos**.  
-2. Active las casillas de los dispositivos que desea modificar. 
-3. Seleccione **Cambiar perfil de dispositivo;** se abre un fly-in.
-4. Usa el menú desplegable para seleccionar el nuevo perfil de dispositivo.
-5. Comprueba que el control **deslizante Restablecer dispositivo** esté establecido como quieras.
-6. Seleccione **Cambiar perfil**.
+**Para cambiar el perfil del dispositivo:**
 
+1. En Microsoft Endpoint Manager, seleccione **Dispositivos** en el panel izquierdo.
+1. En la **sección Escritorio administrado de Microsoft** , seleccione **Dispositivos**.  
+1. Selecciona las casillas de los dispositivos que quieres modificar.
+1. Selecciona **Cambiar perfil de dispositivo**. Se abre un fly-in.
+1. Usa el menú desplegable para seleccionar el nuevo perfil de dispositivo.
+1. Comprueba que el control **deslizante Restablecer dispositivo** esté establecido como quieras.
+1. Seleccione **Cambiar perfil**.
 
+Para mover dispositivos independientes a diferentes perfiles, tendrás que repetir este proceso para cada perfil de dispositivo.

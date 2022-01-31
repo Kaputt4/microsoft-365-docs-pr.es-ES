@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8ba3fc2f4728162bcdf22f40db8500757139a286
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083093"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281536"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
 
@@ -50,12 +50,12 @@ ms.locfileid: "62083093"
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-Además de lo anterior, también hay una opción para recopilar los registros de soporte técnico del analizador [mediante la respuesta en directo.](troubleshoot-collect-support-log.md).
+Además de lo anterior, también hay una opción para recopilar los registros de soporte [técnico del analizador mediante la respuesta en directo](troubleshoot-collect-support-log.md).
 
 > [!NOTE]
-> En Windows 10/11, Windows Server 2019/2022 o Windows Server 2012R2/2016 con la [](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) solución unificada moderna instalada, el script del analizador de cliente llama a un archivo ejecutable llamado para ejecutar las pruebas de conectividad a direcciones URL de servicio en la `MDEClientAnalyzer.exe` nube.
+> En Windows 10/11, Windows Server 2019/2022 o Windows Server 2012R2/2016 con la solución unificada moderna instalada, el script [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` del analizador de cliente llama a un archivo ejecutable llamado para ejecutar las pruebas de conectividad a direcciones URL de servicio en la nube.
 >
-> En Windows 8.1, Windows Server 2016 o cualquier edición anterior del sistema operativo en la que se usa Microsoft Monitoring Agent (MMA) para la incorporación, el script del analizador de cliente llama a un archivo ejecutable llamado para ejecutar pruebas de conectividad para direcciones URL de comando y control (CnC) mientras también llama a `MDEClientAnalyzerPreviousVersion.exe` Microsoft Monitoring Agent de conectividad para `TestCloudConnection.exe` las direcciones URL del canal de datos cibernéticos.
+> En Windows 8.1, Windows Server 2016 o cualquier edición anterior del sistema operativo en la que se usa Microsoft Monitoring Agent (MMA) para la incorporación, el script `MDEClientAnalyzerPreviousVersion.exe` del analizador de cliente llama a un archivo ejecutable llamado para ejecutar pruebas de conectividad para direcciones URL de comando y control (CnC) mientras también llama a Microsoft Monitoring Agent de conectividad para `TestCloudConnection.exe` las direcciones URL del canal de datos cibernéticos.
 
 
 Todos los scripts y módulos de PowerShell incluidos en el analizador están firmados por Microsoft.
@@ -102,11 +102,11 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip descomprimido co
 
     - CertValidate.log
 
-      Descripción: resultado detallado de la revocación de certificado ejecutada llamando a [CertUtil](/windows-server/administration/windows-commands/certutil).
+      Descripción: resultado detallado de la revocación de certificados ejecutada llamando a [CertUtil](/windows-server/administration/windows-commands/certutil).
 
     - dsregcmd.txt
 
-      Descripción: Salida de la ejecución [de dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Esto proporciona detalles sobre el Azure AD estado de la máquina.
+      Descripción: salida de la ejecución [de dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Esto proporciona detalles sobre el Azure AD estado de la máquina.
 
     - IFEO.txt
 
