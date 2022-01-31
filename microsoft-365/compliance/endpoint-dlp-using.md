@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 85bcf25300b51e0e9f6fb4b770c748ba86d5b2ea
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 0f663ac949419c3a726a0af23eba4a0f14928515
+ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159738"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62281452"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -143,8 +143,7 @@ Para encontrar la ruta de acceso completa de las aplicaciones de Mac:
 
 2. Elija la pestaña **Abrir Archivos y Puertos**.
   
-3. El nombre de la aplicación se encuentra al final de la ruta de acceso completa.
-
+3. Para las aplicaciones de macOS, se necesita el nombre completo de la ruta de acceso, incluido el nombre de la aplicación.
 
 #### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>Protección de datos confidenciales de aplicaciones con sincronización en la nube
 
@@ -177,7 +176,7 @@ Para dispositivos macOS, debe agregar la ruta de acceso de archivo completa. Par
 
 2. Elija la pestaña **Abrir Archivos y Puertos**.
   
-3. El nombre de la aplicación se encuentra al final de la ruta de acceso completa.
+3. Para las aplicaciones de macOS, se necesita el nombre completo de la ruta de acceso, incluido el nombre de la aplicación.
 
 #### <a name="service-domains"></a>Dominios de servicio
 
