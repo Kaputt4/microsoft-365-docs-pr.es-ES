@@ -10,7 +10,7 @@
       href: difference-between-document-understanding-and-form-processing-model.md
 - name: Empezar a usar los modelos
   items:
-    - name: Obtenga información sobre los modelos mediante el modelo de ejemplo
+    - name: Importar un modelo de comprensión mediante documentos de muestra
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Crear un centro de contenido
       href: create-a-content-center.md
