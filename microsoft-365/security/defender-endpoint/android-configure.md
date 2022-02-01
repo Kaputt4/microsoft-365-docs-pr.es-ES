@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dce62691915de142183b2ccfdbf5bd93cc69d692
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 92a927bf0cb3a5e568ca2b02d60d641907bc0407
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578442"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295410"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para las características de Endpoint en Android
 
@@ -35,7 +35,7 @@ ms.locfileid: "61578442"
 
 Microsoft Defender para Endpoint en Android junto con Microsoft Intune y Azure Active Directory permite aplicar el cumplimiento de dispositivos y las directivas de acceso condicional en función de los niveles de riesgo del dispositivo. Defender for Endpoint es una solución de Mobile Threat Defense (MTD) que puedes implementar para aprovechar esta funcionalidad a través de Intune.
 
-Para obtener más información acerca de cómo configurar Defender para Endpoint en Android y acceso condicional, vea [Defender for Endpoint e Intune](/mem/intune/protect/advanced-threat-protection).
+Para obtener más información sobre cómo configurar Defender para Endpoint en Android y acceso condicional, consulta [Defender for Endpoint e Intune](/mem/intune/protect/advanced-threat-protection).
 
 ## <a name="configure-custom-indicators"></a>Configurar indicadores personalizados
 
@@ -49,24 +49,29 @@ Defender for Endpoint en Android permite a los administradores de TI configurar 
 
 > [!NOTE]
 > Defender for Endpoint en Android usaría una VPN para proporcionar la característica de Protección web. No se trata de una VPN normal y es una VPN local o auto-looping que no toma tráfico fuera del dispositivo.
-> Para obtener más información, vea [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
+> Para obtener más información, consulta [Configurar la protección web en dispositivos que ejecutan Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## <a name="privacy-controls"></a>Controles de privacidad
 
 > [!IMPORTANT]
 > Controles de privacidad para Microsoft Defender para Endpoint en Android está en versión preliminar. La siguiente información se refiere al producto predefinido que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
+Los siguientes controles de privacidad están disponibles para configurar los datos enviados por Defender para endpoint desde dispositivos Android:
+
+|Informe de amenazas     |Detalles      |
+|--------------------|-------------|
+|Informe de malware |Los administradores pueden configurar el control de privacidad para el informe de malware: si la privacidad está habilitada, Defender for Endpoint no enviará el nombre de la aplicación de malware ni otros detalles de la aplicación como parte del informe de alerta de malware |
+|Informe de suplantación de identidad |Los administradores pueden configurar el control de privacidad para el informe de phish: si la privacidad está habilitada, Defender for Endpoint no enviará el nombre de dominio ni los detalles del sitio web no seguro como parte del informe de alerta de phish |
+|Evaluación de vulnerabilidades de aplicaciones (solo Android) |De forma predeterminada, solo se envía información sobre las aplicaciones instaladas en el perfil de trabajo para la evaluación de vulnerabilidades. Los administradores pueden deshabilitar la privacidad para incluir aplicaciones personales|
+
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>Configurar la evaluación de vulnerabilidades de aplicaciones para dispositivos BYOD
 
 Desde la versión 1.0.3425.0303 de Microsoft Defender para Endpoint en Android, podrás ejecutar evaluaciones de vulnerabilidades del sistema operativo y las aplicaciones instaladas en los dispositivos móviles incorporados.
 
-> [!NOTE]
-> La evaluación de vulnerabilidades forma parte de la administración de [amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md) en Microsoft Defender para endpoint. En Android, esta característica está actualmente en versión preliminar y puede modificarse considerablemente antes de su lanzamiento comercial.
-
 **Notas sobre privacidad relacionada con aplicaciones de dispositivos personales (BYOD):**
 
 - En el Enterprise Android con un perfil de trabajo, solo se admiten las aplicaciones instaladas en el perfil de trabajo.
-- Para otros modos BYOD, de forma predeterminada, no se habilitará la evaluación de vulnerabilidades **de** las aplicaciones. Sin embargo, cuando el dispositivo está en modo de administrador, los administradores pueden habilitar explícitamente esta característica a través de Microsoft Endpoint Manager para obtener la lista de aplicaciones instaladas en el dispositivo. Visite la documentación para obtener más información.
+- Para otros modos BYOD, de forma predeterminada, no se habilitará la evaluación de vulnerabilidades **de las** aplicaciones. Sin embargo, cuando el dispositivo está en modo de administrador, los administradores pueden habilitar explícitamente esta característica a través de Microsoft Endpoint Manager para obtener la lista de aplicaciones instaladas en el dispositivo. Para obtener más información, vea los detalles a continuación.
 
 ### <a name="configure-privacy-for-device-administrator-mode"></a>Configurar la privacidad para el modo de administrador de dispositivos
 
@@ -75,16 +80,16 @@ Usa los siguientes pasos para habilitar **la evaluación de** vulnerabilidades d
 > [!NOTE]
 > De forma predeterminada, esta opción está desactivada para los dispositivos inscritos en el modo de administración de dispositivos.
 
-1. En [Microsoft Endpoint Manager de administración,](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a **Perfiles** de configuración  >  **de dispositivos** Crear  >  **perfil** y escriba la siguiente configuración:
+1. En [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** **devicesConfigurationCrear** >  >  perfil y escriba la siguiente configuración:
 
-   - **Plataforma:** seleccionar administrador de dispositivos Android
-   - **Perfil:** seleccione "Personalizado" y haga clic en Crear
+   - **Plataforma**: seleccionar administrador de dispositivos Android
+   - **Perfil**: seleccione "Personalizado" y haga clic en Crear
 
 2. En la **sección Conceptos** básicos, especifique un nombre y una descripción del perfil.
 
-3. En **configuración,** seleccione Agregar **configuración de OMA-URI:**
+3. En configuración **,** seleccione Agregar **configuración de OMA-URI** :
 
-   - **Nombre:** escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
+   - **Nombre**: escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderTVMPrivacyMode**
    - Tipo de datos: seleccione Entero en la lista desplegable.
    - Valor: escriba 0 para deshabilitar la configuración de privacidad (de forma predeterminada, el valor es 1)
@@ -95,12 +100,12 @@ Usa los siguientes pasos para habilitar **la evaluación de** vulnerabilidades d
 
 Defender for Endpoint admite la evaluación de vulnerabilidad de las aplicaciones en el perfil de trabajo. Sin embargo, en caso de que desee desactivar esta característica para usuarios dirigidos, puede seguir los siguientes pasos:
 
-1. En [Microsoft Endpoint Manager centro de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración de **aplicaciones**  >  **Agregar**  >    >  **dispositivos administrados.**
-2. Asigne un nombre a la directiva; **Plataforma > Android Enterprise;** seleccione el tipo de perfil.
+1. En [Microsoft Endpoint Manager de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración **de** >  **AppsAppAddManaged** >  >  devices.
+2. Asigne un nombre a la directiva; **Plataforma > Android Enterprise**; seleccione el tipo de perfil.
 3. Selecciona **Microsoft Defender para Endpoint** como la aplicación de destino.
 4. En Configuración, seleccione **Usar** diseñador de configuraciones y agregue **DefenderTVMPrivacyMode** como clave y tipo de valor como **Integer**
-   - Para deshabilitar la vulnerabilidad de las aplicaciones en el perfil de trabajo, escriba el valor como `1` y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en `0` .
-   - Para los usuarios con el conjunto de claves como , Defender para endpoint enviará la lista de aplicaciones desde el perfil de trabajo al servicio `0` back-end para la evaluación de vulnerabilidades.
+   - Para deshabilitar la vulnerabilidad de las aplicaciones en el perfil de trabajo, escriba el valor como `1` y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en `0`.
+   - Para los usuarios con el conjunto de claves como `0`, Defender para endpoint enviará la lista de aplicaciones desde el perfil de trabajo al servicio back-end para la evaluación de vulnerabilidades.
 5. Haz **clic en Siguiente** y asigna este perfil a dispositivos o usuarios dirigidos.
 
 Activar o desactivar los controles de privacidad anteriores no afectará a la comprobación de cumplimiento del dispositivo ni al acceso condicional.
@@ -113,16 +118,16 @@ El control de privacidad del informe de suplantación de identidad puede usarse 
 
 Siga estos pasos para activarlo para los usuarios de destino:
 
-1. En [Microsoft Endpoint Manager de administración,](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a **Perfiles** de configuración  >  **de dispositivos** Crear  >  **perfil** y escriba la siguiente configuración:
+1. En [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** **devicesConfigurationCrear** >  >  perfil y escriba la siguiente configuración:
 
-   - **Plataforma:** seleccione Administrador de dispositivos Android.
-   - **Perfil:** seleccione "Personalizado" y haga clic **en Crear**.
+   - **Plataforma**: seleccione Administrador de dispositivos Android.
+   - **Perfil**: seleccione "Personalizado" y haga clic en **Crear**.
 
 2. En la **sección Conceptos** básicos, especifique un nombre y una descripción del perfil.
 
-3. En **configuración,** seleccione Agregar **configuración de OMA-URI:**
+3. En configuración **,** seleccione Agregar **configuración de OMA-URI** :
 
-   - **Nombre:** escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
+   - **Nombre**: escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeURLInReport**
    - Tipo de datos: seleccione Entero en la lista desplegable.
    - Valor: escriba 1 para habilitar la configuración de privacidad. El valor predeterminado es 0.
@@ -135,7 +140,7 @@ El uso de este control de privacidad no afectará a la comprobación de cumplimi
 
 Siga estos pasos para activar la privacidad de los usuarios dirigidos en el perfil de trabajo:
 
-1. En [Microsoft Endpoint Manager centro de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración de **aplicaciones**  >  **Agregar**  >    >  **dispositivos administrados.**
+1. En [Microsoft Endpoint Manager de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración **de** >  **AppsAppAddManaged** >  >  devices.
 2. Asigne a la directiva un nombre, **Platform > Android Enterprise**, seleccione el tipo de perfil.
 3. Selecciona **Microsoft Defender para Endpoint** como la aplicación de destino.
 4. En Configuración, seleccione **Usar** diseñador de configuraciones y agregue **DefenderExcludeURLInReport** como clave y tipo de valor **como Integer**.
@@ -152,16 +157,16 @@ El control de privacidad del informe de amenazas de malware se puede usar para d
 
 Siga estos pasos para activarlo para los usuarios de destino:
 
-1. En [Microsoft Endpoint Manager de administración,](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a **Perfiles** de configuración  >  **de dispositivos** Crear  >  **perfil** y escriba la siguiente configuración:
+1. En [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Perfiles** **devicesConfigurationCrear** >  >  perfil y escriba la siguiente configuración:
 
-   - **Plataforma:** seleccione Administrador de dispositivos Android.
-   - **Perfil:** seleccione "Personalizado" y haga clic **en Crear**.
+   - **Plataforma**: seleccione Administrador de dispositivos Android.
+   - **Perfil**: seleccione "Personalizado" y haga clic en **Crear**.
 
 2. En la **sección Conceptos** básicos, especifique un nombre y una descripción del perfil.
 
-3. En **configuración,** seleccione Agregar **configuración de OMA-URI:**
+3. En configuración **,** seleccione Agregar **configuración de OMA-URI** :
 
-   - **Nombre:** escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
+   - **Nombre**: escriba un nombre y una descripción únicos para esta configuración de OMA-URI para que pueda encontrarlo fácilmente más adelante.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
    - Tipo de datos: seleccione Entero en la lista desplegable.
    - Valor: escriba 1 para habilitar la configuración de privacidad. El valor predeterminado es 0.
@@ -174,7 +179,7 @@ El uso de este control de privacidad no afectará a la comprobación de cumplimi
 
 Siga estos pasos para activar la privacidad de los usuarios dirigidos en el perfil de trabajo:
 
-1. En [Microsoft Endpoint Manager centro de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración de **aplicaciones**  >  **Agregar**  >    >  **dispositivos administrados.**
+1. En [Microsoft Endpoint Manager de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración **de** >  **AppsAppAddManaged** >  >  devices.
 2. Asigne a la directiva un nombre, **Platform > Android Enterprise**, seleccione el tipo de perfil.
 3. Selecciona **Microsoft Defender para Endpoint** como la aplicación de destino.
 4. En Configuración, seleccione **Usar** diseñador de configuraciones y agregue **DefenderExcludeAppInReport** como clave y tipo de valor como **Integer**

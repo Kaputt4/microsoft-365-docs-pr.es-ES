@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e3633468ac6d730ff380efcd59c0e4e70065c4c5
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.openlocfilehash: 2e9322a5fc04824482fdd764eb113d9904b3c224
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993304"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295408"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para Administración de amenazas y vulnerabilidades
 
@@ -30,7 +30,7 @@ ms.locfileid: "61993304"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -38,7 +38,7 @@ ms.locfileid: "61993304"
 Antes de comenzar, asegúrese de que cumple los siguientes requisitos del sistema operativo o la plataforma para Administración de amenazas y vulnerabilidades para que las actividades de los dispositivos se den cuenta correctamente.
 
 > [!NOTE]
-> Los sistemas y plataformas admitidos para Administración de amenazas y vulnerabilidades pueden ser diferentes de la [lista Requisitos](minimum-requirements.md) mínimos de Microsoft Defender para puntos de conexión.
+> Los sistemas y plataformas admitidos para Administración de amenazas y vulnerabilidades pueden ser diferentes de la [lista Requisitos mínimos de Microsoft Defender para endpoints](minimum-requirements.md).
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>Capacidades por sistemas operativos (SO) y plataformas compatibles
 
@@ -46,25 +46,25 @@ En la tabla siguiente, "Sí" indica que se admite una funcionalidad Administraci
 
 Sistema operativo o plataforma compatibles|Vulnerabilidades del sistema operativo|Vulnerabilidades de productos de software|Evaluación de configuración del sistema operativo|Evaluación de configuración de controles de seguridad|Evaluación de configuración de productos de software
 :---|:---|:---|:---|:---|:---
-Windows 7|Sí|No admitido|No admitido|No admitido|No se admite
+Windows 7|Sí|No compatible|No se admite|No compatible|No se admite
 Windows 8.1|Sí|Sí|Sí|Sí|Sí
 Windows 10, versiones 1607-1703|Sí|No se admite|No se admite|No se admite|No se admite
 Windows 10, versión 1709 o posterior|Sí|Sí|Sí|Sí|Sí
 Windows 11|Sí|Sí|Sí|Sí|Sí
 Windows Server 2008 R2|Sí|Sí|Sí|Sí|Sí
-Windows Server 2012 R2|Sí|Sí|Sí|Sí|Sí
+Windows Server 2012 R2|Sí|Sí|Sí|Sí|Sí
 Windows Server 2016|Sí|Sí|Sí|Sí|Sí
 Windows Server 2019|Sí|Sí|Sí|Sí|Sí
-Windows Server 2022|Sí|Sí|Sí|Sí|Sí
+Windows Server 2022|Sí|Sí|Sí|No se admite|Sí
 macOS 10.14 "Mojave" y superior|Sí|Sí|Sí|Sí|Sí 
-Red Hat Enterprise Linux 7.2 o posterior, incluidas las versiones de EUS que coincidan ( Vea \* el aviso "Importante" a continuación)|Sí|Sí|Sí|Sí|Sí
+Red Hat Enterprise Linux 7.2 o posterior, incluidas las versiones de EUS correspondientes (\* Vea el aviso "Importante" a continuación)|Sí|Sí|Sí|Sí|Sí
 CentOS 7.2 o superior|Sí|Sí|Sí|Sí|Sí
 Ubuntu 16,04 LTS o superior LTS|Sí|Sí|Sí|Sí|Sí
 Oracle Linux 7.2 o posterior|Sí|Sí|Sí|Sí|Sí
 SUSE Linux Enterprise Server 12 o posterior|Sí|Sí|Sí|Sí|Sí
 Linux Debian 9 o posterior|Sí|Sí|Sí|Sí|Sí
 Android 6.0 o posterior|Sí|Sí|No se admite|No se admite|No se admite
-iOS 12.0 o posterior|Sí|No se admite|No se admite|No compatible|No compatible
+iOS 12.0 o posterior|Sí|No se admite|No compatible|No compatible|No compatible
 
 > [!NOTE]
 > Algunas características no están disponibles para el sistema operativo de nivel inferior, consulte el portal de Microsoft 365 Defender para obtener más información sobre el sistema operativo compatible.

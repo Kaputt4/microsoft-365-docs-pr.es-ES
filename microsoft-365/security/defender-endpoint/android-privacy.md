@@ -14,29 +14,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 44b1cc75f5922d25d54cc32c7b48b13a36a9ac8a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6772539f4ca4ea819a0f8cd2a92a817fcea650f3
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164603"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295139"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender para punto de conexión en Android: información de privacidad
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint en Android recopila información de los dispositivos Android configurados y la almacena en el mismo espacio empresarial donde tiene Defender para endpoint. La información se recopila para ayudar a mantener Defender for Endpoint for Android seguro, actualizado, con el rendimiento esperado y para admitir el servicio.
 
-Para obtener más información sobre el almacenamiento de datos, vea [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
+Para obtener más información sobre el almacenamiento de datos, consulte [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
 La información se recopila para ayudar a mantener Defender for Endpoint for Android seguro, actualizado, con el rendimiento esperado y para admitir el servicio.
 
-Para obtener más información sobre las preguntas de privacidad más comunes sobre Microsoft Defender para endpoint en dispositivos móviles Android e iOS, consulta Microsoft Defender para endpoint y tu privacidad en dispositivos móviles Android e [iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
+Para obtener más información sobre las preguntas de privacidad más comunes sobre Microsoft Defender para Endpoint en dispositivos móviles Android e iOS, consulta [Microsoft Defender para](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a) endpoint y tu privacidad en dispositivos móviles Android e iOS.
 
 ## <a name="required-data"></a>Datos requeridos
 
@@ -50,9 +50,24 @@ Información sobre **paquetes de** aplicaciones android malintencionadas (APK) e
 - Storage ubicación (ruta de acceso de archivo) del APK
 - Tiempo de instalación, tamaño del APK y permisos
 
+For Android Enterprise Fully managed devices: information about Android application packages (APKs) installed on the device including
+
+- Nombre y nombre del paquete de la aplicación
+- Número de versión de la aplicación
+- Nombre de proveedor
+
+For Android Enterprise with a work profile- Information about Android application packages (APKs) installed on the Work profile of the device including
+
+- Nombre y nombre del paquete de la aplicación
+- Número de versión de la aplicación
+- Nombre de proveedor
+
+*Tu organización también puede elegir configurar Defender for Endpoint para enviar información sobre todas las aplicaciones instaladas en el dispositivo. De forma predeterminada, esta información no se envía a su organización.*
+
+
 ### <a name="web-page--network-information"></a>Página web / Información de red
 
-- Dirección URL completa del sitio web solo cuando se detecta una conexión malintencionada o una página web.
+- Dirección URL completa del sitio web solo cuando se detecta y bloquea una conexión malintencionada o una página web.
 - Información de conexión
 - Tipo de protocolo (como HTTP, HTTPS, etc.)
 

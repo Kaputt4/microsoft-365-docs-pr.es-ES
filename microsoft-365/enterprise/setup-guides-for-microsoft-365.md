@@ -21,27 +21,27 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias de su inquilino. Busca una guía para configurar un servicio o una aplicación que necesites ejecutar.
-ms.openlocfilehash: 9d8533b8a10535e79e0e42c546df72b6714d690a
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: ce81e5432c03c8cf0647bd08e815457be368ac12
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241956"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295427"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
-Microsoft 365 y Office 365 de configuración le proporcionan instrucciones y recursos personalizados para planear e implementar el espacio empresarial, las aplicaciones y los servicios. Estas guías se crean con [](https://www.microsoft.com/fasttrack/microsoft-365) los mismos procedimientos recomendados que comparten Microsoft 365 FastTrack especialistas de incorporación en interacciones individuales, y están disponibles para todos los administradores dentro del Centro de administración de Microsoft 365. Proporcionan información sobre la configuración del producto, habilitan características de seguridad, implementan herramientas de colaboración y proporcionan scripts para acelerar las implementaciones avanzadas.
+Microsoft 365 y Office 365 de configuración le proporcionan instrucciones y recursos personalizados para planear e implementar el espacio empresarial, las aplicaciones y los servicios. Estas guías se crean con los mismos procedimientos recomendados que comparten Microsoft 365 FastTrack especialistas en incorporación en interacciones individuales, y están disponibles para todos los administradores dentro del Centro de administración de Microsoft 365.[](https://www.microsoft.com/fasttrack/microsoft-365) Proporcionan información sobre la configuración del producto, habilitan características de seguridad, implementan herramientas de colaboración y proporcionan scripts para acelerar las implementaciones avanzadas.
 
 > [!NOTE]
 > Debe tener asignado un rol de administrador como Lector global para tener acceso a las Microsoft 365 de configuración. Solo los administradores con el rol Administrador global pueden usar las guías para cambiar la configuración del espacio empresarial.
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Cómo obtener acceso a las guías de configuración en el Centro de administración de Microsoft 365
 
-Se puede obtener acceso a las guías de configuración desde la página [de](https://aka.ms/setupguidance) instrucciones del programa de instalación Centro de administración de Microsoft 365. Puede realizar un seguimiento del estado del progreso y volver en cualquier momento para completar una guía. Para llegar a la **página de instrucciones del programa de** instalación:
+Se puede obtener acceso a las guías de configuración desde la página [de](https://aka.ms/setupguidance) instrucciones del programa de instalación en el Centro de administración de Microsoft 365. Puede realizar un seguimiento del estado del progreso y volver en cualquier momento para completar una guía. Para llegar a la **página de instrucciones del programa de** instalación:
 
 1. En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/), vaya a la **página** principal.
 
-2. Busque la **tarjeta guías de &** aprendizaje.
+2. Busca la **tarjeta guías & aprendizaje** .
 
    ![Tarjeta & guías de aprendizaje en el Centro de administración de Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
@@ -61,7 +61,7 @@ La [guía de configuración de correo](https://aka.ms/office365setup) electróni
 
 ### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrar contactos y elementos de calendario de Gmail
 
-Al migrar el buzón de un usuario de Gmail a Microsoft 365, los mensajes de correo electrónico se migran, pero los contactos y los elementos del calendario no lo son. El asesor de contactos y calendarios de [Gmail](https://aka.ms/gmailcontactscalendar) proporciona pasos para importar contactos de Google y elementos del calendario de Google a Microsoft 365 mediante métodos de importación y exportación con Outlook.com, el cliente Outlook o PowerShell.
+Al migrar el buzón de un usuario de Gmail a Microsoft 365, los mensajes de correo electrónico se migran, pero los contactos y los elementos del calendario no lo son. El [asesor](https://aka.ms/gmailcontactscalendar) de contactos y calendarios de Gmail proporciona pasos para importar contactos de Google y elementos de calendario de Google a Microsoft 365 mediante métodos de importación y exportación con Outlook.com, el cliente Outlook o PowerShell.
 
 ### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 de implementación
 
@@ -85,11 +85,11 @@ La Windows de configuración [de Escritorio virtual](https://aka.ms/wvdsetupguid
 
 Microsoft Edge se ha reconstruido desde cero para ofrecerte una compatibilidad y un rendimiento de primer nivel, la seguridad y privacidad que mereces y nuevas características diseñadas para ofrecerte lo mejor de la web.
 
-La guía de configuración de [Microsoft Edge](https://aka.ms/edgeadvisoradmin) le ayudará Enterprise configurar la detección de sitios para ver qué sitios a los que se accede en su organización podrían necesitar usar el modo IE, revisar y configurar características de seguridad importantes, configurar directivas de privacidad y directivas de cumplimiento para satisfacer los requisitos de su organización y administrar el acceso web en sus dispositivos. Puede descargar Microsoft Edge dispositivos individuales o le mostraremos cómo implementar en varios usuarios de su organización con directiva de grupo, Configuration Manager o Microsoft Intune.
+La [guía](https://aka.ms/edgeadvisoradmin) de configuración de Microsoft Edge le ayudará a configurar la detección de sitios de Enterprise para ver qué sitios a los que se puede tener acceso en su organización podrían necesitar usar el modo IE, revisar y configurar características de seguridad importantes, configurar directivas de privacidad y directivas de cumplimiento para satisfacer los requisitos de su organización y administrar el acceso web en sus dispositivos. Puede descargar Microsoft Edge dispositivos individuales o le mostraremos cómo implementar en varios usuarios de su organización con directiva de grupo, Configuration Manager o Microsoft Intune.
 
 ### <a name="configure-ie-mode-for-microsoft-edge"></a>Configurar el modo IE para Microsoft Edge
 
-Si ya ha implementado Microsoft Edge y solo desea configurar el modo IE, la guía Configurar el modo [IE](https://aka.ms/configureiemodeadmin) para Microsoft Edge le dará scripts para automatizar la configuración de la detección Enterprise sitio. También recibirás recomendaciones del modo IE de una herramienta basada en la nube que te ayudará a crear una lista de sitios de modo Enterprise implementar para los usuarios.
+Si ya ha implementado Microsoft Edge y solo desea configurar el modo IE, la guía Configurar el modo [IE para Microsoft Edge](https://aka.ms/configureiemodeadmin) le dará scripts para automatizar la configuración de la detección Enterprise sitios. También recibirás recomendaciones del modo IE de una herramienta basada en la nube que te ayudará a crear una lista de sitios de modo Enterprise implementar para los usuarios.
 
 ### <a name="microsoft-search-setup-guide"></a>Búsqueda de Microsoft de configuración
 
@@ -99,7 +99,7 @@ La [Búsqueda de Microsoft de](https://aka.ms/MicrosoftSearchSetup) configuraci�
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guía de configuración de administración en equipo de Intune Configuration Manager
 
-Use la guía de configuración de administración co-administración de [Intune](https://aka.ms/comanagementsetup) para los dispositivos cliente de Configuration Manager existentes y los nuevos dispositivos basados en Internet que su organización desea administrar con Microsoft Intune y Configuration Manager. Esta guía de implementación de administración en colaboración le permite administrar Windows 10 dispositivos y agrega nueva funcionalidad a los dispositivos de su organización, al tiempo que recibe las ventajas de ambas soluciones.
+Use la [guía](https://aka.ms/comanagementsetup) de configuración de administración co-administrativa de Intune Configuration Manager para los dispositivos cliente de Configuration Manager existentes y los nuevos dispositivos basados en Internet que su organización desea administrar en colaboración con Microsoft Intune y Configuration Manager. Esta guía de implementación de administración en colaboración le permite administrar Windows 10 dispositivos y agrega nueva funcionalidad a los dispositivos de su organización, al tiempo que recibe las ventajas de ambas soluciones.
 
 ## <a name="guides-for-authentication-and-access"></a>Guías para la autenticación y el acceso
 
@@ -135,11 +135,15 @@ El asesor de implementación de [AD FS](https://aka.ms/adfsguidance) le proporci
 
 ## <a name="guides-for-security-and-compliance"></a>Guías de seguridad y cumplimiento
 
+### <a name="security-analyzer"></a>Analizador de seguridad
+
+El [analizador de seguridad](https://aka.ms/securityanalyzer) analizará su enfoque de seguridad y le presentará las soluciones de seguridad y cumplimiento integradas de Microsoft que pueden mejorar su posición de seguridad. Aprenderás sobre características avanzadas, como administrar identidades y ayudar a proteger contra ataques modernos. A continuación, puede registrarse para una suscripción de prueba y apuntarse a la guía de configuración correspondiente para cada solución.
+
 ### <a name="microsoft-intune-setup-guide"></a>Microsoft Intune de configuración
 
 Configure Microsoft Intune para administrar dispositivos de su organización. Para tener un control total de los dispositivos corporativos, usarás las características de administración de dispositivos móviles (MDM) de Intune. Para administrar los datos de su organización en dispositivos compartidos y personales, puede usar las características de administración de aplicaciones móviles (MAM) de Intune.
 
-Con la [Microsoft Intune de](https://aka.ms/intunesetupguide)configuración, configurarás las directivas de cumplimiento de aplicaciones y dispositivos, asignarás directivas de protección de aplicaciones y supervisarás el estado de protección de dispositivos y aplicaciones.
+Con la [Microsoft Intune de](https://aka.ms/intunesetupguide) configuración, configurarás las directivas de cumplimiento de aplicaciones y dispositivos, asignarás directivas de protección de aplicaciones y supervisarás el estado de protección de dispositivos y aplicaciones.
 
 ### <a name="microsoft-defender-for-endpoint-setup-guide"></a>Guía de configuración de Microsoft Defender para endpoint
 
@@ -152,7 +156,7 @@ La [guía de configuración de Microsoft Defender para](https://aka.ms/mdatpsetu
 
 Microsoft Exchange Online Protection (EOP) es un servicio de filtrado de correo electrónico basado en la nube para la protección contra correo no deseado y malware, con características para proteger su organización de infracciones de directivas de mensajería.
 
-Use la guía de configuración de [Exchange Online Protection](https://aka.ms/EOPguidance) para configurar EOP seleccionando cuáles de los tres escenarios de implementación son los buzones locales, los buzones híbridos (combinación de locales y en la nube) o todos los buzones de correo en la nube que se adapten a su &mdash; &mdash; organización. La guía proporciona información y recursos para configurar y revisar las licencias del usuario, asignar permisos en el Centro de administración de Microsoft 365 y configurar las directivas contra malware y correo no deseado de la organización en el Centro de seguridad y cumplimiento de &.
+Use la guía de instalación de [Exchange Online Protection](https://aka.ms/EOPguidance) para configurar EOP seleccionando cuál de los tres escenarios de implementaciónlos buzones locales, los buzones híbridos (combinación de locales y en la nube)&mdash; o todos los buzones&mdash; de correo en la nube se adapta a su organización. La guía proporciona información y recursos para configurar y revisar las licencias del usuario, asignar permisos en el Centro de administración de Microsoft 365 y configurar las directivas contra malware y correo no deseado de la organización en el Centro de seguridad y cumplimiento de &.
 
 ### <a name="microsoft-defender-for-office-365-setup-guide"></a>Guía de configuración de Microsoft Defender para Office 365
 
@@ -164,7 +168,7 @@ La [guía de configuración de Microsoft Defender para](https://aka.ms/Defenderf
 
 ### <a name="insider-risk-solutions-setup-guide"></a>Guía de configuración de soluciones de riesgo insider
 
-La guía de configuración de soluciones de riesgo de [Insider](https://aka.ms/Insiderrisksetup) le ayuda a proteger su organización contra riesgos de insider que pueden ser difíciles de identificar y difíciles de mitigar. Los riesgos de insider se producen en una variedad de áreas y pueden causar problemas importantes para las organizaciones, desde la pérdida de la propiedad intelectual hasta el acoso en el lugar de trabajo, entre otras cosas.
+La [guía de configuración de soluciones de riesgo de Insider](https://aka.ms/Insiderrisksetup) le ayuda a proteger su organización contra riesgos de insider que pueden ser difíciles de identificar y difíciles de mitigar. Los riesgos de insider se producen en una variedad de áreas y pueden causar problemas importantes para las organizaciones, desde la pérdida de la propiedad intelectual hasta el acoso en el lugar de trabajo, entre otras cosas.
 
 Las soluciones de esta guía le ayudarán a obtener visibilidad de las actividades, acciones y comunicaciones del usuario con señales nativas y enriquecimientos de toda la organización:
 
@@ -209,7 +213,7 @@ La [Microsoft Teams para Educación de configuración proporciona](https://aka.m
 
 Para que los profesores trabajen eficazmente y los alumnos se organicen, necesitan un inicio de sesión único en un solo lugar para colaborar con todos sus materiales de aprendizaje, tareas y aplicaciones al alcance de la mano. Las aplicaciones de Interoperabilidad de Microsoft Learning Tools (LTI) aportan lo mejor de las herramientas de Microsoft directamente a su sistema de administración de aprendizaje (LMS), de modo que los alumnos y profesores puedan centrarse en el estudio, no en buscar archivos ni en crear herramientas.
 
-Si eres administrador de un LMS y quieres acceder a las herramientas de Microsoft directamente desde tu LMS, usa nuestra guía Integrar aplicaciones LTI de Microsoft con tu [LMS](https://aka.ms/lmsintegrationguide) Integrar aplicaciones LTI de Microsoft con la guía de LMS para empezar. Actualmente, estas herramientas incluyen Microsoft Teams clases y Microsoft Teams reuniones.
+Si eres administrador de un LMS y quieres acceder a las herramientas de Microsoft directamente desde tu LMS, usa nuestra guía [Integrar aplicaciones LTI de Microsoft con tu LMS](https://aka.ms/lmsintegrationguide) Integrar aplicaciones LTI de Microsoft con la guía de LMS para empezar. Actualmente, estas herramientas incluyen Microsoft Teams clases y Microsoft Teams reuniones.
 
 ### <a name="sharepoint-setup-guide"></a>SharePoint de configuración
 
@@ -221,13 +225,13 @@ Use la [OneDrive de configuración para](https://aka.ms/ODfBquickstartguide) emp
 
 ### <a name="yammer-deployment-advisor"></a>Yammer de implementación
 
-Conectar y participar en toda la organización con Yammer. El [Yammer de implementación](https://aka.ms/yammerdeploymentguide) prepara la red Yammer mediante la adición de dominios, la definición de administradores y la combinación Yammer redes. Encontrará instrucciones para implementar el Yammer y, a continuación, personalizar la apariencia, configurar la seguridad y el cumplimiento y refinar la configuración.
+Conectar y participar en toda la organización con Yammer. El [Yammer de implementación de Yammer](https://aka.ms/yammerdeploymentguide) la red mediante la adición de dominios, la definición de administradores y la combinación Yammer redes. Encontrará instrucciones para implementar el Yammer y, a continuación, personalizar la apariencia, configurar la seguridad y el cumplimiento y refinar la configuración.
 
 ## <a name="advanced-guides"></a>Guías avanzadas
 
 ### <a name="in-place-upgrade-with-configuration-manager"></a>Actualización local con Configuration Manager
 
-Use la [guía Actualización local](https://aka.ms/win10upgradedemo) con Configuration Manager al actualizar Windows 7 y Windows 8.1 a la versión más reciente de Windows 10. Usará el script proporcionado para comprobar los requisitos previos y configurar automáticamente una actualización local.
+Use la [guía Actualización local con Configuration Manager](https://aka.ms/win10upgradedemo) al actualizar Windows 7 y Windows 8.1 dispositivos a la versión más reciente de Windows 10. Usará el script proporcionado para comprobar los requisitos previos y configurar automáticamente una actualización local.
 
 ### <a name="deploy-office-to-your-users"></a>Implementar Office a los usuarios
 
@@ -237,11 +241,11 @@ Implemente Office desde la nube con la capacidad de personalizar la instalación
 
 Ahora que trabajar de forma remota es la norma, los usuarios deben recibir la configuración de Office de la organización cuando no están conectados a la red interna o cuando usan sus propios dispositivos.
 
-Use la guía Implementar [Office](https://aka.ms/officeremoteinstall) a usuarios remotos para crear una instalación de Office personalizada y, a continuación, enviar a los usuarios un script de PowerShell generado que instalará sin problemas Office con la configuración.
+Use la guía Implementar [Office](https://aka.ms/officeremoteinstall) a usuarios remotos para crear una instalación de Office personalizada y, a continuación, enviar a los usuarios un script de PowerShell generado que se instalará sin problemas Office con la configuración.
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Implementar y actualizar Aplicaciones Microsoft 365 con Configuration Manager
 
-Para las organizaciones que usan Configuration Manager, puede usar el asesor Implementar y actualizar Aplicaciones Microsoft 365 con [Configuration Manager](https://aka.ms/oppinstall) para generar un script que configurará automáticamente la implementación de Aplicaciones Microsoft 365 mediante los procedimientos recomendados por FastTrack ingenieros. Use esta guía para crear grupos de implementación, personalizar las aplicaciones y características de Office, configurar instalaciones dinámicas o lean y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos que necesita para dirigirse a la implementación.
+Para las organizaciones que usan Configuration Manager, puede usar el asesor Implementar y actualizar [Aplicaciones Microsoft 365 con Configuration Manager](https://aka.ms/oppinstall) para generar un script que configurará automáticamente la implementación de Aplicaciones Microsoft 365 mediante los procedimientos recomendados por FastTrack ingenieros. Use esta guía para crear grupos de implementación, personalizar las aplicaciones y características de Office, configurar instalaciones dinámicas o lean y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos que necesita para dirigirse a la implementación.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guía de configuración de administración en equipo de Intune Configuration Manager
 

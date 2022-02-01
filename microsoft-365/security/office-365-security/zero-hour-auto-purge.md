@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 06/22/2021
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -22,12 +22,12 @@ ms.custom:
 description: La purga automática de hora cero (ZAP) mueve retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta o cuarentena de correo no deseado que se encuentran como correo no deseado, suplantación de identidad o que contienen malware después de la entrega.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0744193e2d999cd85096d4644438dd305bcdb3da
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d511ab13bd6be4a1e526726f8011f457dfd6c765
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934950"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295367"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purga automática de hora cero (ZAP) en Exchange Online
 
@@ -50,61 +50,61 @@ Las firmas de correo no deseado y malware se actualizan diariamente en el servic
 
 La acción ZAP es perfecta para el usuario; no se les notifica si se detecta y se mueve un mensaje.
 
-[Caja fuerte listas de remitentes,](create-safe-sender-lists-in-office-365.md)reglas de flujo de correo (también conocidas como reglas de transporte), reglas de bandeja de entrada o filtros adicionales tienen prioridad sobre ZAP. De forma similar a lo que sucede en el flujo de correo, esto significa que incluso si el servicio determina que el mensaje entregado necesita ZAP, el mensaje no se actúa debido a la configuración de remitentes seguros. Este es otro motivo para tener cuidado con la configuración de mensajes para omitir el filtrado.
+[Caja fuerte listas de remitentes](create-safe-sender-lists-in-office-365.md), reglas de flujo de correo (también conocidas como reglas de transporte), reglas de bandeja de entrada o filtros adicionales tienen prioridad sobre ZAP. De forma similar a lo que sucede en el flujo de correo, esto significa que incluso si el servicio determina que el mensaje entregado necesita ZAP, el mensaje no se actúa debido a la configuración de remitentes seguros. Este es otro motivo para tener cuidado con la configuración de mensajes para omitir el filtrado.
 
 ### <a name="zero-hour-auto-purge-zap-for-malware"></a>Purga automática de hora cero (ZAP) para malware
 
-Para **los mensajes leídos o no** leídos que contienen malware después de la entrega, ZAP pone en cuarentena el mensaje que contiene los datos adjuntos de malware. De forma predeterminada, solo los administradores pueden ver y administrar mensajes de malware en cuarentena. Sin embargo, los administradores pueden crear y usar directivas de cuarentena para definir lo que los usuarios pueden hacer con los mensajes que se han puesto en cuarentena como malware.  Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+Para **los mensajes leídos o no** leídos que contienen malware después de la entrega, ZAP pone en cuarentena el mensaje que contiene los datos adjuntos de malware. De forma predeterminada, solo los administradores pueden ver y administrar mensajes de malware en cuarentena. Sin embargo, los administradores pueden crear  y usar directivas de cuarentena para definir lo que los usuarios pueden hacer con los mensajes que se han puesto en cuarentena como malware. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
 
 ZAP para malware está habilitado de forma predeterminada en directivas antimalware. Para obtener más información, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
 ### <a name="zero-hour-auto-purge-zap-for-phishing"></a>Purga automática de hora cero (ZAP) para phishing
 
-Para **los mensajes** leídos o no leídos que se identifican como suplantación de identidad (phishing) después de la entrega, el resultado de ZAP depende de la acción configurada para un veredicto de filtrado de correo electrónico de suplantación de identidad **(phishing)** en la directiva contra correo no deseado aplicable. Las acciones de veredicto de filtrado disponibles para la suplantación de identidad (phishing) y sus posibles resultados de ZAP se describen en la siguiente lista:
+Para **los mensajes** leídos o no leídos que se identifican como suplantación de identidad (phishing) después de la entrega, el resultado de ZAP depende de la acción configurada para un veredicto de filtrado de correo electrónico de suplantación de identidad ( **phishing** ) en la directiva contra correo no deseado aplicable. Las acciones de veredicto de filtrado disponibles para la suplantación de identidad (phishing) y sus posibles resultados de ZAP se describen en la siguiente lista:
 
-- **Add X-Header**, **Prepend subject line with text**, Redirect message to email **address**, **Delete message**: ZAP takes no action on the message.
+- **Agregar encabezado X**, **anteponer línea de asunto** con **texto, Redirigir** mensaje a dirección de correo electrónico, **Eliminar** mensaje: ZAP no realiza ninguna acción en el mensaje.
 
 - **Mover el mensaje a correo no** deseado: ZAP mueve el mensaje a la carpeta Correo no deseado. Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Mensaje en cuarentena:** ZAP pone en cuarentena el mensaje.
+- **Mensaje en cuarentena**: ZAP pone en cuarentena el mensaje.
 
-De forma predeterminada, ZAP para la suplantación de identidad (phishing) está habilitado en directivas contra correo no deseado y la acción predeterminada para el veredicto de filtrado de correo electrónico de suplantación de identidad **(phishing)** es el mensaje en **cuarentena,** lo que significa que ZAP para la suplantación de identidad pone en cuarentena el mensaje de forma predeterminada.
+De forma predeterminada, ZAP para phishing está habilitado en directivas contra correo no deseado y la acción predeterminada para el veredicto de filtrado de correo electrónico de suplantación de identidad ( **phishing)** es El mensaje en **cuarentena, lo** que significa que ZAP para la suplantación de identidad pone en cuarentena el mensaje de forma predeterminada.
 
 Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="zero-hour-auto-purge-zap-for-high-confidence-phishing"></a>Purga automática de hora cero (ZAP) para phishing de alta confianza
 
-Para **los mensajes leídos o no leídos** que se identifican como phishing de elevada confianza después de la entrega, ZAP pone en cuarentena el mensaje. De forma predeterminada, solo los administradores pueden ver y administrar mensajes de phishing de elevada confianza en cuarentena. Sin embargo, los administradores pueden crear y usar directivas de cuarentena para definir lo que los usuarios pueden hacer a los mensajes que se han puesto en cuarentena como phishing de elevada confianza.  Para obtener más información, vea [Directivas de cuarentena](quarantine-policies.md)
+Para **los mensajes leídos o no leídos** que se identifican como phishing de elevada confianza después de la entrega, ZAP pone en cuarentena el mensaje. De forma predeterminada, solo los administradores pueden ver y administrar mensajes de phishing de elevada confianza en cuarentena. Sin embargo, los administradores pueden crear  y usar directivas de cuarentena para definir lo que los usuarios pueden hacer a los mensajes que se han puesto en cuarentena como phishing de elevada confianza. Para obtener más información, vea [Directivas de cuarentena](quarantine-policies.md)
 
-ZAP para phishing de elevada confianza está habilitado de forma predeterminada. Para obtener más información, [vea Secure by Default en Office 365](secure-by-default.md).
+ZAP para phishing de elevada confianza está habilitado de forma predeterminada. Para obtener más información, [vea Proteger de forma predeterminada en Office 365](secure-by-default.md).
 
 ### <a name="zero-hour-auto-purge-zap-for-spam"></a>Purga automática de hora cero (ZAP) para correo no deseado
 
-Para **los mensajes no** leídos que se identifican como correo no deseado  después de la entrega, el resultado de ZAP depende de la acción configurada para el veredicto de filtrado de correo no deseado en la directiva contra correo no deseado aplicable. Las acciones de veredicto de filtrado disponibles para correo no deseado y sus posibles resultados de ZAP se describen en la siguiente lista:
+Para **los mensajes no** leídos que se identifican como correo no deseado después de la entrega, el resultado de ZAP depende de la  acción configurada para el veredicto de filtrado de correo no deseado en la directiva contra correo no deseado aplicable. Las acciones de veredicto de filtrado disponibles para correo no deseado y sus posibles resultados de ZAP se describen en la siguiente lista:
 
-- **Add X-Header**, **Prepend subject line with text**, Redirect message to email **address**, **Delete message**: ZAP takes no action on the message.
+- **Agregar encabezado X**, **anteponer línea de asunto** con **texto, Redirigir** mensaje a dirección de correo electrónico, **Eliminar** mensaje: ZAP no realiza ninguna acción en el mensaje.
 
 - **Mover el mensaje a correo no** deseado: ZAP mueve el mensaje a la carpeta Correo no deseado. Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Mensaje en cuarentena:** ZAP pone en cuarentena el mensaje. De forma predeterminada, los usuarios finales pueden ver y administrar mensajes de correo no deseado en cuarentena donde son destinatarios. Sin embargo, los administradores pueden crear y usar directivas de cuarentena para definir lo que los usuarios pueden hacer a los mensajes que se han puesto en cuarentena como correo no deseado.  Para obtener más información, vea [Directivas de cuarentena](quarantine-policies.md)
+- **Mensaje en cuarentena**: ZAP pone en cuarentena el mensaje. De forma predeterminada, los usuarios finales pueden ver y administrar mensajes de correo no deseado en cuarentena donde son destinatarios. Sin embargo, los administradores pueden crear  y usar directivas de cuarentena para definir lo que los usuarios pueden hacer a los mensajes que se han puesto en cuarentena como correo no deseado. Para obtener más información, vea [Directivas de cuarentena](quarantine-policies.md)
 
-De forma predeterminada, ZAP de correo no deseado está  habilitado en las directivas contra correo no deseado y  la acción predeterminada para el veredicto de filtrado de correo no deseado es Mover mensaje a la carpeta correo no **deseado,** lo que significa que ZAP de correo no deseado mueve mensajes no leídos a la carpeta correo no deseado de forma predeterminada.
+De forma predeterminada, ZAP de correo no deseado está habilitado en las directivas contra correo no deseado y  la acción predeterminada para el veredicto de filtrado de correo no deseado es Mover  mensaje a la carpeta correo no **deseado, lo** que significa que ZAP de correo no deseado mueve mensajes no leídos a la carpeta correo no deseado de forma predeterminada.
 
 Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="zero-hour-auto-purge-zap-considerations-for-microsoft-defender-for-office-365"></a>Consideraciones de purga automática de hora cero (ZAP) para Microsoft Defender para Office 365
 
-ZAP no pondrá en cuarentena ningún mensaje [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) que se encuentra en el proceso de entrega dinámica en el examen de directivas de datos adjuntos de Caja fuerte, o donde el filtrado de malware de EOP ya ha reemplazado los datos adjuntos por el archivo Text.txtalerta **de malware.** Si se recibe una señal de suplantación de identidad o correo no deseado para este tipo de mensajes y el veredicto de filtrado de la directiva contra correo no deseado está configurado para realizar alguna acción en el mensaje (Mover a correo no deseado, Redirigir, Eliminar o Cuarentena), ZAP establecerá de forma predeterminada una acción "Mover a la no deseado".
+ZAP no pondrá en cuarentena ningún mensaje que se encuentra en el proceso [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) de entrega dinámica en el examen de directivas de datos adjuntos de Caja fuerte, o donde el filtrado de malware de EOP ya ha reemplazado los datos adjuntos por el archivo Text.txtalerta **de malware**. Si se recibe una señal de suplantación de identidad o correo no deseado para este tipo de mensajes y el veredicto de filtrado de la directiva contra correo no deseado está configurado para realizar alguna acción en el mensaje (Mover a correo no deseado, Redirigir, Eliminar o Cuarentena), ZAP establecerá de forma predeterminada una acción "Mover a la no deseado".
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Cómo ver si ZAP movió el mensaje
 
-Para determinar si ZAP movió el [](view-email-security-reports.md#threat-protection-status-report) mensaje, puede usar el informe de estado de protección contra amenazas o el Explorador de amenazas [(y detecciones en](threat-explorer.md)tiempo real). Tenga en cuenta que, como acción del sistema, ZAP no se registra en los registros de auditoría Exchange buzón de correo.
+Para determinar si ZAP movió el mensaje, puede usar la vista Flujo de correo para el informe de estado de [flujo](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) de correo o el Explorador de amenazas [(y detecciones en tiempo real).](threat-explorer.md) Tenga en cuenta que, como acción del sistema, ZAP no se registra en los registros de auditoría Exchange buzón de correo.
 
 ## <a name="zero-hour-auto-purge-zap-faq"></a>Preguntas más frecuentes sobre purga automática de hora cero (ZAP)
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>¿Qué sucede si se mueve un mensaje legítimo a la carpeta correo no deseado?
 
-Debe seguir el proceso de informes normal para [falsos positivos](report-junk-email-messages-to-microsoft.md). La única razón por la que el mensaje se movería de la Bandeja de entrada a la carpeta Correo no deseado sería porque el servicio ha determinado que el mensaje era correo no deseado o malintencionado.
+Debe seguir el proceso normal de informes de [falsos positivos](report-junk-email-messages-to-microsoft.md). La única razón por la que el mensaje se movería de la Bandeja de entrada a la carpeta Correo no deseado sería porque el servicio ha determinado que el mensaje era correo no deseado o malintencionado.
 
 ### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>¿Qué ocurre si uso la carpeta Cuarentena en lugar de la carpeta Correo no deseado?
 
