@@ -326,7 +326,7 @@
               href: manage/servicenow-overview.md
             - name: Configurar la autenticación básica
               href: manage/servicenow-basic-authentication.md
-            - name: Configuración con el token de OAuth de AAD
+            - name: Configuración con el token de autenticación de Azure AD
               href: manage/servicenow-aad-oauth-token.md
             - name: Solo incidentes de estado y soluciones recomendadas
               href: manage/servicenow-service-health-incidents-solutions-only.md
