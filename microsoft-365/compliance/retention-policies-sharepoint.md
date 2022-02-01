@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: cacb269f8108d2ca4e3dbcdb15b2c157017f52f6
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: d9b8a0b66eb32171a0f72fbe0f380a6a98316e33
+ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241328"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62295343"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -135,6 +135,8 @@ La copia almacenada en la Biblioteca de suspensión para conservación normalmen
 ## <a name="how-retention-works-with-onenote-content"></a>Cómo funciona la retención con el contenido de OneNote
 
 Cuando se aplica una directiva de retención a una ubicación que incluye contenido de OneNote, o una etiqueta de retención a una carpeta de OneNote, en segundo plano, las distintas secciones de OneNote son archivos individuales que heredarán la configuración de retención. Esto significa que cada sección se retendrá y eliminará de forma individual, según la configuración de retención que especifique.
+
+La fecha modificada de la propia página de OneNote no cambia después de su creación.
 
 ## <a name="how-retention-works-with-document-versions"></a>Funcionamiento de una directiva de retención con versiones de documentos
 
