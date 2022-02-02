@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros de salud electrónicos (EHR) desde su sistema de salud a Microsoft 365. Esto le permite usar datos EHR en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
-ms.openlocfilehash: d814a68e49db4e8a51ad7b9abd14911b5abedf84
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 1be80dea0bd5692f07edbe34df1bf61cd85f3337
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271711"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320696"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurar un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
 
@@ -39,7 +39,7 @@ La configuración de un conector de atención médica consta de las siguientes t
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
-- Al usuario que crea el conector de atención médica en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](\Exchange\permissions-exo\role-groups#create-role-groups) grupos [](\Exchange\permissions-exo\role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- Al usuario que crea el conector de atención médica en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos [](/Exchange/permissions-exo/role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Debe determinar cómo recuperar o exportar los datos del sistema EHR de salud de su organización (diariamente) y crear un archivo de texto que se describe en el paso 2. El script que ejecute en el paso 4 insertará los datos del archivo de texto en el punto de conexión de la API.
 
@@ -66,7 +66,7 @@ El siguiente paso es crear un archivo de texto que contenga información sobre e
 
 En la tabla siguiente se enumeran los campos necesarios para habilitar escenarios de administración de riesgos de insider. Un subconjunto de estos campos es obligatorio. Estos campos se resaltan con un asterisco (*). Si falta alguno de los campos obligatorios en el archivo de texto, el archivo no se validará y los datos del archivo no se importarán.
 
-|Field|Categoría|
+|Campo|Categoría|
 |:----|:----------|
 | Nombre de *TimeEvent<br/> de creación*<br/>Id. de estación de trabajo<br/>Sección de eventos<br/>Categoría del evento |Estos campos se usan para identificar eventos de actividad de acceso en el sistema EHR de salud.|
 | Id. de reg del paciente<br/>Nombre del *pacientePatient<br/> Apellido del paciente de segundo <br/>nombre* <br/>Línea de dirección del paciente 1* <br/>Línea de dirección del paciente 2<br/>Ciudad del paciente* <br/>Código postal del paciente*  <br/>Estado del paciente <br/>País del paciente <br/>Departamento del paciente              | Estos campos se usan para identificar la información del perfil del paciente.|
@@ -99,7 +99,7 @@ El siguiente paso es crear un conector de atención médica en el Centro de cump
 
    - **Upload un archivo de ejemplo**. Si selecciona esta opción, haga clic Upload **archivo de ejemplo** para cargar el archivo que preparó en el paso 2. Esta opción permite seleccionar rápidamente nombres de columna en el archivo de texto de una lista desplegable para asignar las columnas al esquema necesario para el conector de atención médica. 
 
-    O bien:
+    O bien
 
    - **Proporcione manualmente los detalles de asignación**. Si selecciona esta opción, debe escribir el nombre de las columnas del archivo de texto para asignar las columnas al esquema necesario para el conector de atención médica.
 
@@ -107,7 +107,7 @@ El siguiente paso es crear un conector de atención médica en el Centro de cump
 
    - Use las listas desplegables para asignar las columnas del archivo de ejemplo a cada campo necesario para el conector de atención médica.
 
-    O bien:
+    O bien
 
    - Para cada campo, escriba el nombre de columna del archivo que preparó en el paso 2 que corresponde al campo del conector de atención médica.
 
@@ -174,7 +174,7 @@ Este es un ejemplo de la sintaxis del script del conector de atención médica q
 Si la carga se realiza correctamente, el script muestra el **Upload correcto**.
 
 > [!NOTE]
-> Si tiene problemas para ejecutar el comando anterior debido a las directivas de ejecución, vea [Acerca](\powershell\module\microsoft.powershell.core\about\about_execution_policies) de las directivas de ejecución y [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) para obtener instrucciones sobre cómo establecer directivas de ejecución.
+> Si tiene problemas para ejecutar el comando anterior debido a las directivas de ejecución, vea [Acerca](/powershell/module/microsoft.powershell.core/about/about_execution_policies) de las directivas de ejecución y [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) para obtener instrucciones sobre cómo establecer directivas de ejecución.
 
 ## <a name="step-5-monitor-the-healthcare-connector"></a>Paso 5: Supervisar el conector de atención médica
 

@@ -10,20 +10,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom:
 - asr
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 68bcc25d336fc7fc9c3ea76d4e150e2483f01323
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.collection: m365initiative-m365-defender
+ms.date: 1/18/2022
+ms.openlocfilehash: cba76d867b71fa941983e10b0dbe10f323ea70ef
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213846"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321056"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 
@@ -62,7 +63,7 @@ Usa [el modo de auditoría](audit-windows-defender.md) para evaluar cómo afecta
 
 ## <a name="warn-mode-for-users"></a>Modo de advertencia para usuarios
 
-(**¡NUEVO!)** Antes de las capacidades del modo de advertencia, las reglas de reducción de superficie de ataque habilitadas podrían establecerse en modo auditoría o modo de bloqueo. Con el nuevo modo de advertencia, siempre que una regla de reducción de superficie de ataque bloquee el contenido, los usuarios verán un cuadro de diálogo que indica que el contenido está bloqueado. El cuadro de diálogo también ofrece al usuario una opción para desbloquear el contenido. A continuación, el usuario puede reintentar su acción y se completa la operación. Cuando un usuario desbloquea el contenido, el contenido permanece desbloqueado durante 24 horas y, a continuación, el bloqueo se reanuda.
+(**¡NUEVO**!) Antes de las capacidades del modo de advertencia, las reglas de reducción de superficie de ataque habilitadas podrían establecerse en modo auditoría o modo de bloqueo. Con el nuevo modo de advertencia, siempre que una regla de reducción de superficie de ataque bloquee el contenido, los usuarios verán un cuadro de diálogo que indica que el contenido está bloqueado. El cuadro de diálogo también ofrece al usuario una opción para desbloquear el contenido. A continuación, el usuario puede reintentar su acción y se completa la operación. Cuando un usuario desbloquea el contenido, el contenido permanece desbloqueado durante 24 horas y, a continuación, el bloqueo se reanuda.
 
 El modo de advertencia ayuda a la organización a tener reglas de reducción de superficie de ataques sin impedir que los usuarios accedan al contenido que necesitan para realizar sus tareas.
 
@@ -76,7 +77,7 @@ El modo de advertencia se admite en dispositivos que ejecutan las siguientes ver
 
 Antivirus de Microsoft Defender debe ejecutarse con protección en tiempo real en [modo activo](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
-Además, asegúrate de [que Antivirus de Microsoft Defender actualizaciones y antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) estén instaladas.
+Además, asegúrese de [que Antivirus de Microsoft Defender y las actualizaciones de antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) están instaladas.
 
 - Requisito mínimo de versión de plataforma: `4.18.2008.9`
 - Requisito mínimo de versión del motor: `1.1.17400.5`
@@ -87,9 +88,9 @@ Para obtener más información y obtener las actualizaciones, vea [Update for Mi
 
 El modo de advertencia no se admite para tres reglas de reducción de superficie de ataque al configurarlas en Microsoft Endpoint Manager. (Si usas la directiva de grupo para configurar las reglas de reducción de superficie de ataque, se admite el modo de advertencia). Las tres reglas que no admiten el modo de advertencia al configurarlas en Microsoft Endpoint Manager son las siguientes:
 
-- [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID) `d3e037e1-3eb8-44c8-a917-57927947596d`
-- [Bloquear la persistencia a través de la suscripción de eventos WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID) `e6db77e5-3df2-4cf1-b95a-636979351e5b`
-- [Usar protección avanzada contra ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) (GUID) `c1db55ab-c21a-4637-bb3f-a12568109d35`
+- [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
+- [Bloquear la persistencia a través de la suscripción de eventos WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
+- [Usar protección avanzada contra ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`)
 
 Además, el modo de advertencia no se admite en dispositivos que ejecutan versiones anteriores de Windows. En esos casos, las reglas de reducción de superficie de ataque configuradas para ejecutarse en modo de advertencia se ejecutarán en modo de bloqueo.
 
@@ -114,7 +115,7 @@ Para obtener más información acerca de la búsqueda avanzada, vea [Proactively
 Puedes establecer reglas de reducción de superficie de ataque para dispositivos que ejecutan cualquiera de las siguientes ediciones y versiones de Windows:
 
 - Windows 10 Pro versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
-- Windows 10 Enterprise, versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
+- Windows 10 Enterprise versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows server, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
@@ -124,7 +125,7 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
   >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. 
 
 
-Aunque las reglas de reducción de superficie de ataque no requieren una licencia [Windows E5,](/windows/deployment/deploy-enterprise-licenses)si tienes Windows E5, obtienes capacidades de administración avanzadas. Las funcionalidades avanzadas, disponibles solo en Windows E5, incluyen:
+Aunque las reglas de reducción de superficie de ataque no requieren una [licencia Windows E5](/windows/deployment/deploy-enterprise-licenses), si Windows E5, obtienes capacidades de administración avanzadas. Las funcionalidades avanzadas, disponibles solo en Windows E5, incluyen:
 
 - La supervisión, el análisis y los flujos de trabajo disponibles [en Defender for Endpoint](microsoft-defender-endpoint.md)
 - Las capacidades de informes y configuración de [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
@@ -135,7 +136,7 @@ Estas funcionalidades avanzadas no están disponibles con una licencia Windows P
 
 Defender for Endpoint proporciona informes detallados para eventos y bloques como parte de escenarios de investigación de alertas.
 
-Puede consultar los datos del extremo de Defender [en Microsoft 365 Defender](microsoft-defender-security-center.md) mediante la [búsqueda avanzada](advanced-hunting-query-language.md). Si estás ejecutando el modo [de auditoría,](audit-windows-defender.md)puedes usar la búsqueda avanzada para comprender cómo pueden afectar las reglas de reducción de superficie de ataque a tu entorno.
+Puede consultar los datos del extremo de Defender [en Microsoft 365 Defender](microsoft-defender-security-center.md) mediante la [búsqueda avanzada](advanced-hunting-query-language.md). Si estás ejecutando el modo [de auditoría](audit-windows-defender.md), puedes usar la búsqueda avanzada para comprender cómo pueden afectar las reglas de reducción de superficie de ataque a tu entorno.
 
 A continuación le mostramos un ejemplo de consulta:
 
@@ -148,11 +149,11 @@ DeviceEvents
 
 Puedes revisar el registro de eventos Windows para ver los eventos generados por las reglas de reducción de superficie de ataque:
 
-1. Descargue el [paquete de evaluación](https://aka.ms/mp7z2w) y extraiga el archivo *cfa-events.xml* a una ubicación de fácil acceso en el dispositivo.
+1. Descargue el [paquete de evaluación](https://aka.ms/mp7z2w) y extraiga el archivo *cfa-events.xml* a una ubicación fácilmente accesible en el dispositivo.
 
-2. Escriba las palabras, *Visor de* eventos , en el menú Inicio para abrir el Windows de eventos.
+2. Escriba las palabras, *Visor de* eventos, en el menú Inicio para abrir el visor Windows eventos.
 
-3. En **Acciones,** seleccione **Importar vista personalizada...**.
+3. En **Acciones**, seleccione **Importar vista personalizada...**.
 
 4. Seleccione el archivo *cfa-events.xml* desde donde se extrajo. Como alternativa, [copie el XML directamente](event-views.md).
 

@@ -22,12 +22,12 @@ ms.custom:
 description: La purga automática de hora cero (ZAP) mueve retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta o cuarentena de correo no deseado que se encuentran como correo no deseado, suplantación de identidad o que contienen malware después de la entrega.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d511ab13bd6be4a1e526726f8011f457dfd6c765
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: a48f5eb1d45af16ab275c16d2965dc9a578d9312
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295367"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320948"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purga automática de hora cero (ZAP) en Exchange Online
 
@@ -98,7 +98,12 @@ ZAP no pondrá en cuarentena ningún mensaje que se encuentra en el proceso [](s
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Cómo ver si ZAP movió el mensaje
 
-Para determinar si ZAP movió el mensaje, puede usar la vista Flujo de correo para el informe de estado de [flujo](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) de correo o el Explorador de amenazas [(y detecciones en tiempo real).](threat-explorer.md) Tenga en cuenta que, como acción del sistema, ZAP no se registra en los registros de auditoría Exchange buzón de correo.
+Para determinar si ZAP movió el mensaje, tiene las siguientes opciones:
+
+- **Número de mensajes**: use la vista Flujo de correo del informe de estado de [flujo](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) de correo para ver el número de mensajes afectados por ZAP para el intervalo de fechas especificado.
+- **Detalles del** mensaje: use [el Explorador de amenazas (y](threat-explorer.md) detecciones en tiempo  real) para filtrar todos los eventos de correo electrónico por el **valor ZAP** para la **columna Acción** adicional.
+
+**Nota**: ZAP no se registra en los registros de auditoría Exchange buzón de correo como acción del sistema.
 
 ## <a name="zero-hour-auto-purge-zap-faq"></a>Preguntas más frecuentes sobre purga automática de hora cero (ZAP)
 

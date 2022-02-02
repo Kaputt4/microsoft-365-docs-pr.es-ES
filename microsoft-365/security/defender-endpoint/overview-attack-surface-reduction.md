@@ -1,5 +1,5 @@
 ---
-title: Comprender y usar la reducción de superficie de ataque
+title: Comprender las reglas de reducción de la superficie expuesta a ataques
 ms.reviewer: ''
 description: Obtenga información sobre las capacidades de reducción de superficie de ataque de Microsoft Defender para endpoint.
 keywords: asr, reducción de superficie de ataque, Microsoft Defender para endpoint, microsoft defender, antivirus, av, windows defender
@@ -12,17 +12,17 @@ ms.author: v-jweston
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/14/2021
-ms.openlocfilehash: 05650ab36833f8ea633c9f314fd438cfd0275919
-ms.sourcegitcommit: db62fce58867c7e5c8029b66966e792da3103b89
+ms.collection: m365initiative-m365-defender
+ms.date: 1/18/2022
+ms.openlocfilehash: 5878b29b5d40076cd515dde6737a4e7c7d70ab56
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61598454"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320984"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprender y usar las capacidades de reducción de superficie de ataque
 
@@ -45,27 +45,27 @@ Las superficies de ataque son todos los lugares donde su organización es vulner
 
 Para configurar la reducción de superficie de ataque en el entorno, siga estos pasos:
 
-1. [Habilitar el aislamiento basado en hardware para Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
+1. [Habilite el aislamiento basado en hardware para Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
 2. Habilitar el control de aplicaciones.
 
-   1. Revise las directivas base en Windows. Vea [Ejemplo de directivas base](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
+   1. Revise las directivas base en Windows. Consulte [Ejemplo de directivas base](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
    2. Consulte la [Windows Defender de diseño del control de aplicaciones](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
    3. Consulte [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 3. [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md).
 
-4. [Activar Protección de red](enable-network-protection.md).
+4. [Activar la protección de red](enable-network-protection.md).
 
-5. [Habilitar protección contra vulnerabilidades](enable-exploit-protection.md)de seguridad .
+5. [Habilitar la protección contra vulnerabilidades de seguridad](enable-exploit-protection.md).
 
 6. [Implementar reglas de reducción de superficie de ataque](attack-surface-reduction-rules-deployment.md).
 
 7. Configurar el firewall de red.
 
-   1. Obtenga una introducción a [Windows Defender Firewall con seguridad avanzada.](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
-   2. Use la [Windows Defender de diseño del firewall para](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) decidir cómo desea diseñar las directivas de firewall.
-   3. Use la [Windows Defender de implementación de Firewall para](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) configurar el firewall de su organización con seguridad avanzada.
+   1. Obtenga una introducción a [Windows Defender Firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Use la [Windows Defender de diseño de firewall para](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) decidir cómo desea diseñar las directivas de firewall.
+   3. Use la [Windows Defender de implementación de firewall para](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) configurar el firewall de su organización con seguridad avanzada.
 
 > [!TIP]
 > En la mayoría de los casos, al configurar las capacidades de reducción de superficie de ataque, puedes elegir entre varios métodos:
@@ -89,9 +89,9 @@ Puedes habilitar el modo de auditoría al probar cómo funcionarán las caracter
 
 Las características no bloquearán ni impedirán que se modifiquen aplicaciones, scripts o archivos. Sin embargo, el Windows de eventos registrará eventos como si las características estuvieran totalmente habilitadas. Con el modo de auditoría, puedes revisar el registro de eventos para ver qué efecto habría tenido la característica si se hubiera habilitado.
 
-Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** de \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operativo**.
+Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operativo**.
 
-Usa Defender para endpoint para obtener más detalles para cada evento. Estos detalles son especialmente útiles para investigar reglas de reducción de superficie de ataque. El uso de la consola defender para endpoint te permite investigar problemas como parte de la escala de tiempo de alerta y [los escenarios de investigación.](investigate-alerts.md)
+Usa Defender para endpoint para obtener más detalles para cada evento. Estos detalles son especialmente útiles para investigar reglas de reducción de superficie de ataque. El uso de la consola defender para endpoint te permite investigar problemas como parte de la escala de tiempo de alerta y los [escenarios de investigación](investigate-alerts.md).
 
 Puede habilitar el modo de auditoría mediante la directiva de grupo, PowerShell y los proveedores de servicios de configuración (CSP).
 
@@ -127,9 +127,9 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
     - Vista personalizada de eventos de acceso a carpetas *controladas:cfa-events.xml*
     - Vista personalizada de eventos de protección contra *vulnerabilidades:ep-events.xml*
     - Vista personalizada de eventos de reducción de superficie *de ataque:asr-events.xml*
-    - Vista personalizada de eventos de *red/protección:np-events.xml*
+    - Vista personalizada de eventos de red/ *protección:np-events.xml*
 
-2. Escriba **el visor de** eventos en el menú Inicio y abra el Visor de **eventos**.
+2. Escriba **visor de** eventos en el menú Inicio y abra **el Visor de eventos**.
 
 3. Seleccionar **acción** \> **Importar vista personalizada...**
 
@@ -144,14 +144,14 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 #### <a name="copy-the-xml-directly"></a>Copiar el XML directamente
 
-1. Escriba **el visor** de eventos en el menú Inicio y abra el Windows de **eventos**.
+1. Escriba **el visor** de eventos en el menú Inicio y abra el visor Windows **eventos**.
 
-2. En el panel izquierdo, en **Acciones,** seleccione **Crear vista personalizada...**
+2. En el panel izquierdo, en **Acciones**, seleccione **Crear vista personalizada...**
 
    > [!div class="mx-imgBorder"]
    > ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos.](images/events-create.gif)
 
-3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Seleccione **Sí**.
+3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente**. Verá una advertencia de que no puede editar la consulta mediante la pestaña Filtro si usa  la opción XML. Seleccione **Sí**.
 
 4. Pegue el código XML de la característica desde la que desea filtrar los eventos en la sección XML.
 
@@ -212,12 +212,12 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 ### <a name="list-of-attack-surface-reduction-events"></a>Lista de eventos de reducción de superficie de ataque
 
-Todos los eventos de reducción de superficie de ataque se encuentran en Registros de aplicaciones y **servicios > Microsoft > Windows** y, a continuación, la carpeta o el proveedor como se muestra en la tabla siguiente.
+Todos los eventos de reducción de superficie de ataque se encuentran en **Registros de aplicaciones y servicios > Microsoft > Windows** y, a continuación, la carpeta o el proveedor, como se muestra en la tabla siguiente.
 
 Puede tener acceso a estos eventos en Windows visor de eventos:
 
-1. Abra el **menú Inicio** y escriba visor **de eventos** y, a continuación, seleccione el resultado del **Visor de** eventos.
-2. Expanda Registros de aplicaciones y **servicios > Microsoft > Windows** y, a continuación, vaya a la carpeta que aparece en **Proveedor/origen** en la tabla siguiente.
+1. Abra el **menú Inicio** y escriba **visor de eventos** y, a continuación, seleccione el resultado **del Visor de** eventos.
+2. Expanda **Registros de aplicaciones y servicios > Microsoft > Windows** y, a continuación, vaya a la carpeta que aparece en **Proveedor/origen** en la tabla siguiente.
 3. Haga doble clic en el sub elemento para ver los eventos. Desplácese por los eventos para encontrar el que está buscando.
 
    ![Animación que se muestra con el Visor de eventos.](images/event-viewer.gif)
