@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4d1170b03d510bb0c79376d55c771311e10251c8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 1279f7271abbd4086c946492e95daa52962dbae5
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302391"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345636"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera de la máquina
 
@@ -65,7 +65,7 @@ Delegado (cuenta profesional o educativa)|Machine.Offboard|'Offboard machine'
 > Al obtener un token con credenciales de usuario:
 >
 > - El usuario necesita el rol ad "Administrador global"
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta [Crear y administrar grupos de dispositivos](machine-groups.md) para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -73,18 +73,20 @@ Delegado (cuenta profesional o educativa)|Machine.Offboard|'Offboard machine'
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
 
+El identificador del equipo se puede encontrar en la dirección URL al seleccionar el dispositivo. Por lo general, es un número alfanumérico de 40 dígitos que se puede encontrar en la dirección URL.
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 Nombre|Tipo|Descripción
 ---|---|---
-Authorization|String|Portador {token}. **Necesario**.
-Content-Type|cadena|application/json. **Necesario**.
+Authorization|Cadena|Portador {token}. **Necesario**.
+Content-Type|string|application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Description
+Parámetro|Tipo|Descripción
 ---|---|---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
 

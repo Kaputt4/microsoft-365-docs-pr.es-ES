@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec9aa659decd6815b00c9d80b2281fd8386bd082
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1cbef40696c7d2973a22ad9606c5fd99726329ae
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163199"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345968"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado
 
@@ -36,7 +36,7 @@ ms.locfileid: "61163199"
 - Windows server, versión 1803
 - Windows Server 2019
 - Windows Server 2022
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -54,7 +54,7 @@ Ejecute el siguiente script de PowerShell en un dispositivo recién incorporado 
 
    1. Vaya a **Inicio** y escriba **cmd**.
 
-   1. Haga clic con el **botón secundario en Símbolo del sistema** y seleccione Ejecutar como **administrador**.
+   1. Haga clic con el **botón secundario en Símbolo del sistema** y **seleccione Ejecutar como administrador**.
 
       ![Window menú Inicio que apunta a Ejecutar como administrador.](images/run-as-admin.png)
 
@@ -64,7 +64,7 @@ Ejecute el siguiente script de PowerShell en un dispositivo recién incorporado 
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-La ventana símbolo del sistema se cerrará automáticamente. Si se realiza correctamente, la prueba de detección se marcará como completada y aparecerá una nueva alerta en el portal del dispositivo incorporado en unos 10 minutos.
+La ventana símbolo del sistema se cerrará automáticamente. Si se realiza correctamente, aparecerá una nueva alerta en el portal para el dispositivo incorporado en unos diez minutos.
 
 ## <a name="related-topics"></a>Temas relacionados
 

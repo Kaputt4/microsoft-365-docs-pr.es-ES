@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 31b0b1c3d648a66c24b847a96a3f26b884ae4686
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 7607d5650c9a578b2c945d602d0ef3d0af0f7e88
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321452"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346536"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -158,7 +158,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
 
    - En **Nombre**, escriba un nombre para la regla.
    - En **Descripción**, escriba una breve descripción.
-   - En **OMA-URI**, escriba o pegue el vínculo OMA-URI específico para la regla que va a agregar. Consulte la sección MEM anterior de este artículo para que OMA-URI se use para esta regla de ejemplo. Para obtener GUID de regla de reducción de superficie de ataque, consulta [Descripciones por regla](attack-surface-reduction-rules-reference.md#per-rule-descriptions) en el tema: Reglas de reducción de superficie de ataque.
+   - En **OMA-URI**, escriba o pegue el vínculo OMA-URI específico para la regla que va a agregar. Consulte la sección MDM de este artículo para el OMA-URI que se va a usar para esta regla de ejemplo. Para obtener GUID de regla de reducción de superficie de ataque, consulta [Descripciones por regla](attack-surface-reduction-rules-reference.md#per-rule-descriptions) en el tema: Reglas de reducción de superficie de ataque.
    - En **Tipo de datos**, seleccione **Cadena**.
    - En **Valor**, escriba o pegue el valor GUID, \= el signo y el valor state sin espacios (_GUID=StateValue_). Donde:
      

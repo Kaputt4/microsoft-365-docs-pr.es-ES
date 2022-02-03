@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ed4ec04ebe6ae0aae3a55880190b720b140252a7
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 8546512b3b91997bb16ac77f06e26ea586bc6e49
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035479"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345920"
 ---
 # <a name="new-microsoft-edge-app"></a>Nueva Microsoft Edge aplicación
 
@@ -29,13 +29,11 @@ El [canal beta](/deployedge/microsoft-edge-channels#beta-channel) también está
 
 ## <a name="updates-to-microsoft-edge"></a>Actualizaciones de Microsoft Edge
 
-Microsoft Managed Desktop implementa el [canal estable](/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge, que se actualiza automáticamente cada seis semanas. Las actualizaciones en el [](/deployedge/microsoft-edge-update-progressive-rollout) canal estable se revierte progresivamente por el grupo de productos Microsoft Edge para garantizar la mejor experiencia para los clientes. 
+Microsoft Managed Desktop implementa el [canal estable](/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge, que se actualiza automáticamente cada seis semanas. Las actualizaciones en el canal estable se van [](/deployedge/microsoft-edge-update-progressive-rollout) Microsoft Edge grupo de productos para garantizar la mejor experiencia para los clientes.
 
 El [canal beta](/deployedge/microsoft-edge-channels#beta-channel) se implementa en dispositivos de los grupos Test y First para la validación representativa dentro de la organización. Este canal es totalmente compatible y se actualiza automáticamente con nuevas características aproximadamente cada seis semanas.
 
 Para asegurarse de que Microsoft Edge actualizaciones correctamente, no modifique las Microsoft Edge [de actualización.](/deployedge/microsoft-edge-update-policies)
-
-
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Configuración administrado por Microsoft Managed Desktop
 
@@ -43,12 +41,13 @@ Microsoft Managed Desktop ha creado un conjunto predeterminado de directivas par
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge de Microsoft Edge de datos
 
-La línea base de seguridad Microsoft Edge dispositivos de Escritorio administrado de Microsoft establece dos directivas para deshabilitar todas las extensiones de Chrome y proteger a los usuarios. Para habilitar e implementar extensiones en el entorno, consulte Configuración puede administrar. 
+La línea base de seguridad Microsoft Edge dispositivos de Escritorio administrado de Microsoft establece dos directivas para deshabilitar todas las extensiones de Chrome y proteger a los usuarios. Para habilitar e implementar extensiones en el entorno, consulte Configuración puede administrar.
 
 #### <a name="extension-installation-blocklist"></a>Lista de bloqueo de instalación de extensión
+
 **Valor predeterminado:** Todos
 
-Microsoft Managed Desktop establece esta directiva para evitar que las extensiones de Chrome se instalen en puntos de conexión administrados. Existen riesgos conocidos asociados con el modelo de extensión Chromium de datos, incluida la protección contra pérdida de datos, la privacidad y otros riesgos que pueden poner en peligro los dispositivos. 
+Microsoft Managed Desktop establece esta directiva para evitar que las extensiones de Chrome se instalen en puntos de conexión administrados. Existen riesgos conocidos asociados con el modelo de extensión Chromium de datos, incluida la protección contra pérdida de datos, la privacidad y otros riesgos que pueden poner en peligro los dispositivos.
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Permitir hosts de mensajería nativa de nivel de usuario (instalados sin permisos de administrador)
 
@@ -96,7 +95,7 @@ No se recomienda deshabilitar esta configuración, ya que permitiría a los usua
 
 **Valor predeterminado:** Deshabilitado
 
-No se recomienda usar Flash debido a los riesgos de seguridad asociados. Si todavía tiene procesos que dependen de Flash, establezca la directiva **[PluginsAllowedForUrls](/deployedge/microsoft-edge-policies#pluginsallowedforurls)** para habilitar Flash para los sitios que lo necesiten. Si no puedes mantener una lista permitida de sitios para usar Flash, presentar una solicitud de cambio para cambiar el valor a **Hacer** clic para reproducir, lo que permite a los usuarios elegir cuándo es adecuado ejecutar Flash.
+No se recomienda usar Flash debido a los riesgos de seguridad asociados. Si todavía tiene procesos que dependen de Flash, establezca la directiva **[PluginsAllowedForUrls](/deployedge/microsoft-edge-policies#pluginsallowedforurls)** para habilitar Flash para los sitios que lo necesiten. Si no puedes mantener una lista de sitios permitidos para usar Flash, presentar una solicitud de cambio para cambiar el valor a **Hacer** clic para reproducir, lo que permite a los usuarios elegir cuándo es adecuado ejecutar Flash.
 
 ### <a name="password-manager"></a>Administrador de contraseñas
 
@@ -138,10 +137,9 @@ Microsoft Managed Desktop no admite esquemas de autenticación básica o implíc
 
 #### <a name="automatically-import-another-browsers-data-and-settings-at-first-run"></a>Importar automáticamente los datos y la configuración de otro explorador en la primera ejecución
 
-**Valor predeterminado:** Importar automáticamente todos los tipos de datos y la configuración admitidos desde el explorador predeterminado 
+**Valor predeterminado:** Importe automáticamente todos los tipos de datos y la configuración admitidos desde el explorador predeterminado.
 
-Con esta directiva aplicada, la primera experiencia de ejecución omitirá la sección de importación, lo que minimizará la interacción del usuario. Los datos del explorador de versiones anteriores de Microsoft Edge se migrarán siempre silenciosamente en la primera ejecución, independientemente de esta configuración. 
-
+Con esta directiva aplicada, la primera experiencia de ejecución omitirá la sección de importación, lo que minimizará la interacción del usuario. Los datos del explorador de versiones anteriores de Microsoft Edge se migrarán siempre silenciosamente en la primera ejecución, independientemente de esta configuración.
 
 ## <a name="settings-you-manage"></a>Configuración administrar
 
@@ -149,19 +147,20 @@ Puede implementar cualquier configuración Microsoft Edge no descrita anteriorme
 
 ### <a name="enabling-specific-chrome-extensions"></a>Habilitar extensiones específicas de Chrome
 
-La plantilla administrativa ofrece una configuración para implementar extensiones de Chrome determinadas con Microsoft Intune. Puede encontrarlo en Configuración del **equipo > Microsoft Edge > extensiones > Permitir** que se instalen extensiones específicas .
+La plantilla administrativa ofrece una configuración para implementar extensiones de Chrome determinadas con Microsoft Intune. Puede encontrarlo en Configuración del **equipo > Microsoft Edge > extensiones > Permitir que se instalen extensiones específicas**.
 
 ### <a name="install-extensions-silently"></a>Instalar extensiones de forma silenciosa
 
-También puede usar la plantilla administrativa para establecer Microsoft Edge para instalar extensiones sin avisar al usuario. Puede encontrarlo en Configuración del equipo > Microsoft Edge > extensiones > Control de extensiones que **se instalan silenciosamente**.
+También puede usar la plantilla administrativa para establecer Microsoft Edge para instalar extensiones sin avisar al usuario. Puede encontrarlo en Configuración del equipo > Microsoft Edge > **extensiones > control de las extensiones que se instalan de forma silenciosa**.
 
 ### <a name="microsoft-edge-update-policies"></a>Microsoft Edge de actualización
+
 Para asegurarse de que Microsoft Edge actualizaciones correctamente, no modifique las Microsoft Edge [de actualización.](/deployedge/microsoft-edge-update-policies)
 
 ### <a name="other-common-enterprise-policies"></a>Otras directivas de empresa comunes
 
 Microsoft Edge ofrece muchas otras directivas. Estas son algunas de las más comunes:
- 
+
 - [Configurar sitios en la lista Enterprise sitio y el modo IE](/deployedge/edge-ie-mode-sitelist)
 - [Configurar la configuración de inicio, página principal y nueva página de pestañas](/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
 - [Configurar configuración de juego de surf](/deployedge/microsoft-edge-policies#allowsurfgame)

@@ -9,18 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d616b5aea5f31b19a0252bf660e47062ea0fbe42
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: e66b833a300724b59f39f36eefd5571afd146146
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034946"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345932"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Trabajar con el Escritorio administrado de Microsoft
 
-En esta sección se incluye información sobre el uso diario del servicio, como la forma en que los administradores de TI pueden obtener soporte si lo necesitan, cómo los usuarios reciben soporte técnico, la administración de las aplicaciones una vez implementadas y cómo trabajar con las opciones personalizables en los dispositivos.
-
-
+En esta sección se incluye información sobre su vida diaria con el servicio:
 
 - [Soporte técnico de administrador para Escritorio administrado de Microsoft](admin-support.md)
 - [Obtener ayuda para los usuarios](end-user-support.md)

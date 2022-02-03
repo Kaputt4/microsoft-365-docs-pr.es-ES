@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8354693f7f748771c9b6543455cf96177afacd05
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.openlocfilehash: da05d702a2cb074ece2fec74371e7b5f560cb1ed
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993292"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346099"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -51,11 +51,11 @@ En este artículo se describe cómo implementar Microsoft Defender para Endpoint
 Antes de empezar, consulte [Microsoft Defender para Endpoint en Linux](microsoft-defender-endpoint-linux.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
 
 > [!WARNING]
-> La actualización del sistema operativo a una nueva versión principal después de la instalación del producto requiere que se vuelva a instalar el producto. Debes desinstalar [el](linux-resources.md#uninstall) Defender para Endpoint existente en Linux, actualizar el sistema operativo y, a continuación, volver a configurar Defender para Endpoint en Linux siguiendo los pasos siguientes.
+> La actualización del sistema operativo a una nueva versión principal después de la instalación del producto requiere que se vuelva a instalar el producto. Debes [desinstalar el Defender](linux-resources.md#uninstall) para Endpoint existente en Linux, actualizar el sistema operativo y, a continuación, volver a configurar Defender para Endpoint en Linux siguiendo los pasos siguientes.
 
 ## <a name="configure-the-linux-software-repository"></a>Configurar el repositorio de software de Linux
 
-Defender para Endpoint en Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[canal]):* *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux. A continuación se proporcionan instrucciones para configurar el dispositivo para que use uno de estos repositorios.
+Defender para Endpoint en Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[canal]*): *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux. A continuación se proporcionan instrucciones para configurar el dispositivo para que use uno de estos repositorios.
 
 La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos *de insiders-fast* son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por *insiders-slow* y, por último, por *prod*.
 
@@ -73,7 +73,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```
 
   > [!NOTE]
-  > La distribución y la versión, e identificar la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/rhel/` .
+  > La distribución y la versión, e identificar la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/rhel/`.
 
     Use la siguiente tabla para ayudarle a localizar el paquete:
 
@@ -97,15 +97,15 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```
 
     > [!TIP]
-    > Use el comando hostnamectl para identificar información relacionada con el sistema, incluida la *versión [versión].*
+    > Use el comando hostnamectl para identificar información relacionada con el sistema, incluida la *versión [versión]*.
 
-    Por ejemplo, si ejecuta CentOS 7 y desea implementar Defender para Endpoint en Linux desde el *canal prod:*
+    Por ejemplo, si ejecuta CentOS 7 y desea implementar Defender para Endpoint en Linux desde el *canal prod* :
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
     ```
 
-    O bien, si quieres explorar nuevas características en dispositivos seleccionados, es posible que quieras implementar Microsoft Defender para Endpoint en Linux en el canal *insiders-fast:*
+    O bien, si quieres explorar nuevas características en dispositivos seleccionados, es posible que quieras implementar Microsoft Defender para Endpoint en Linux en el canal *insiders-fast* :
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
@@ -120,7 +120,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 ### <a name="sles-and-variants"></a>SLES y variantes
 
 > [!NOTE]
-> La distribución y la versión, e identificar la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/sles/` .
+> La distribución y la versión, e identificar la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/sles/`.
 
    En los siguientes comandos, reemplace *[distro]* y *[version]* por la información que haya identificado:
 
@@ -129,9 +129,9 @@ Para obtener una vista previa de las nuevas características y proporcionar come
    ```
 
    > [!TIP]
-   > Use el comando SPident para identificar información relacionada con el sistema, incluida la *versión [versión].*
+   > Use el comando SPident para identificar información relacionada con el sistema, incluida la *versión [versión]*.
 
-   Por ejemplo, si ejecuta SLES 12 y desea implementar Microsoft Defender para Endpoint en Linux desde el *canal prod:*
+   Por ejemplo, si ejecuta SLES 12 y desea implementar Microsoft Defender para Endpoint en Linux desde el *canal prod* :
 
    ```bash
    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -158,7 +158,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```
 
 > [!NOTE]
-> La distribución y la versión, e identificar la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/[distro]/` .
+> La distribución y la versión, e identificar la entrada más cercana (por mayor y, a continuación, secundaria) para ella en `https://packages.microsoft.com/config/[distro]/`.
 
    En el comando siguiente, reemplace *[distro]* y *[versión]* por la información que haya identificado:
 
@@ -167,9 +167,9 @@ Para obtener una vista previa de las nuevas características y proporcionar come
    ```
 
    > [!TIP]
-   > Use el comando hostnamectl para identificar información relacionada con el sistema, incluida la *versión [versión].*
+   > Use el comando hostnamectl para identificar información relacionada con el sistema, incluida la *versión [versión]*.
 
-   Por ejemplo, si está ejecutando Ubuntu 18.04 y desea implementar Microsoft Defender para Endpoint en Linux desde el *canal prod:*
+   Por ejemplo, si está ejecutando Ubuntu 18.04 y desea implementar Microsoft Defender para Endpoint en Linux desde el *canal prod* :
 
    ```bash
    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
@@ -181,7 +181,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
 
-    Por ejemplo, si ha elegido *canal prod:*
+    Por ejemplo, si ha elegido *canal prod* :
 
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
@@ -193,7 +193,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     sudo apt-get install gpg
     ```
 
-  Si `gpg` no está disponible, instale `gnupg` .
+  Si `gpg` no está disponible, instale `gnupg`.
 
     ```bash
     sudo apt-get install gnupg
@@ -226,7 +226,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```
 
     > [!NOTE]
-    > Si tienes varios repositorios de Microsoft configurados en el dispositivo, puedes ser específico sobre el repositorio desde el que instalar el paquete. En el ejemplo siguiente se muestra cómo instalar el paquete desde el canal si también tienes configurado el canal `production` de repositorio en este `insiders-fast` dispositivo. Esta situación puede ocurrir si usas varios productos de Microsoft en el dispositivo. Según la distribución y la versión del servidor, el alias de repositorio puede ser diferente al del ejemplo siguiente.
+    > Si tienes varios repositorios de Microsoft configurados en el dispositivo, puedes ser específico sobre el repositorio desde el que instalar el paquete. En el ejemplo siguiente se muestra cómo instalar el paquete desde el `production` canal si también `insiders-fast` tienes configurado el canal de repositorio en este dispositivo. Esta situación puede ocurrir si usas varios productos de Microsoft en el dispositivo. Según la distribución y la versión del servidor, el alias de repositorio puede ser diferente al del ejemplo siguiente.
 
     ```bash
     # list all repositories
@@ -252,7 +252,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```
 
     > [!NOTE]
-    > Si tienes varios repositorios de Microsoft configurados en el dispositivo, puedes ser específico sobre el repositorio desde el que instalar el paquete. En el ejemplo siguiente se muestra cómo instalar el paquete desde el canal si también tienes configurado el canal `production` de repositorio en este `insiders-fast` dispositivo. Esta situación puede ocurrir si usas varios productos de Microsoft en el dispositivo.
+    > Si tienes varios repositorios de Microsoft configurados en el dispositivo, puedes ser específico sobre el repositorio desde el que instalar el paquete. En el ejemplo siguiente se muestra cómo instalar el paquete desde el `production` canal si también `insiders-fast` tienes configurado el canal de repositorio en este dispositivo. Esta situación puede ocurrir si usas varios productos de Microsoft en el dispositivo.
 
     ```bash
     zypper repos
@@ -278,7 +278,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     ```
 
     > [!NOTE]
-    > Si tienes varios repositorios de Microsoft configurados en el dispositivo, puedes ser específico sobre el repositorio desde el que instalar el paquete. En el ejemplo siguiente se muestra cómo instalar el paquete desde el canal si también tienes configurado el canal `production` de repositorio en este `insiders-fast` dispositivo. Esta situación puede ocurrir si usas varios productos de Microsoft en el dispositivo.
+    > Si tienes varios repositorios de Microsoft configurados en el dispositivo, puedes ser específico sobre el repositorio desde el que instalar el paquete. En el ejemplo siguiente se muestra cómo instalar el paquete desde el `production` canal si también `insiders-fast` tienes configurado el canal de repositorio en este dispositivo. Esta situación puede ocurrir si usas varios productos de Microsoft en el dispositivo.
 
     ```bash
     cat /etc/apt/sources.list.d/*
@@ -298,9 +298,9 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 
 > [!IMPORTANT]
-> Si se pierde este paso, cualquier comando ejecutado mostrará un mensaje de advertencia que indica que el producto no tiene licencia. También el `mdatp health` comando devuelve un valor de `false` .
+> Si se pierde este paso, cualquier comando ejecutado mostrará un mensaje de advertencia que indica que el producto no tiene licencia. También el `mdatp health` comando devuelve un valor de `false`.
 
-1. En el portal Microsoft 365 Defender, vaya **a Configuración > Endpoints > Administración** de dispositivos > Incorporación .
+1. En el portal Microsoft 365 Defender, vaya **a Configuración > Endpoints > Administración de dispositivos > incorporación**.
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **Script local** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
@@ -340,15 +340,15 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 2. Ejecute MicrosoftDefenderATPOnboardingLinuxServer.py.
 
     > [!NOTE]
-    > Para ejecutar este comando, debes tener o instalar `python`  en el dispositivo según la versión y el `python3` disto. Si es necesario, consulte [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
+    > Para ejecutar este comando, debes tener `python`  o `python3` instalar en el dispositivo según la versión y el disto. Si es necesario, consulte [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
     
-    Si estás ejecutando RHEL 8.x o Ubuntu 20.04 o posterior, deberás usar `python3` .
+    Si estás ejecutando RHEL 8.x o Ubuntu 20.04 o posterior, deberás usar `python3`.
 
     ```bash
     sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-    Para el resto de distros y versiones, deberá usar `python` .
+    Para el resto de distros y versiones, deberá usar `python`.
     
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -360,20 +360,20 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
     mdatp health --field org_id
     ```
 
-4. Compruebe el estado del producto ejecutando el siguiente comando. Un valor devuelto `1` de indica que el producto funciona como se esperaba:
+4. Compruebe el estado del producto ejecutando el siguiente comando. Un valor devuelto de `1` indica que el producto funciona como se esperaba:
 
     ```bash
     mdatp health --field healthy
     ```
 
     > [!IMPORTANT]
-    > Cuando el producto se inicia por primera vez, descarga las definiciones de antimalware más recientes. Esto puede tardar hasta unos minutos en función de la conectividad de red. Durante este tiempo, el comando anterior devuelve un valor de `false` . Puede comprobar el estado de la actualización de definiciones con el siguiente comando:
+    > Cuando el producto se inicia por primera vez, descarga las definiciones de antimalware más recientes. Esto puede tardar hasta unos minutos en función de la conectividad de red. Durante este tiempo, el comando anterior devuelve un valor de `false`. Puede comprobar el estado de la actualización de definiciones con el siguiente comando:
     >
     > ```bash
     > mdatp health --field definitions_status
     > ```
     >
-    > Tenga en cuenta que es posible que también necesite configurar un proxy después de completar la instalación inicial. Consulte [Configure Defender for Endpoint on Linux para la detección de proxy estático: configuración posterior a la instalación.](linux-static-proxy-configuration.md#post-installation-configuration)
+    > Tenga en cuenta que es posible que también necesite configurar un proxy después de completar la instalación inicial. Consulte [Configure Defender for Endpoint on Linux para la detección de proxy estático: configuración posterior a la instalación](linux-static-proxy-configuration.md#post-installation-configuration).
 
 5. Ejecute una prueba de detección de ANTIVIRUS para comprobar que el dispositivo está correctamente incorporado e informando al servicio. Realice los pasos siguientes en el dispositivo recién incorporado:
 
@@ -381,6 +381,12 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 
         ```bash
         mdatp health --field real_time_protection_enabled
+        ```
+        
+      Si no está habilitado, ejecute el siguiente comando:
+      
+       ```bash
+        mdatp config real-time-protection --value enabled
         ```
 
     - Abra una ventana de Terminal y ejecute el siguiente comando:
@@ -407,7 +413,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 
 ## <a name="installer-script"></a>Script del instalador
 
-Como alternativa, puede usar un script bash del [instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado proporcionado en nuestro [repositorio GitHub público](https://github.com/microsoft/mdatp-xplat/).
+Como alternativa, puede usar un script de [bash del instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado que se proporciona en nuestro [repositorio GitHub público](https://github.com/microsoft/mdatp-xplat/).
 El script identifica la distribución y la versión, simplifica la selección del repositorio correcto, configura el dispositivo para extraer el paquete más reciente y combina los pasos de instalación e incorporación del producto.
 
 ```bash

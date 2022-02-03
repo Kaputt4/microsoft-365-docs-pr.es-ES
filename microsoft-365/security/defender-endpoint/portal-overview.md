@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 774d7df5a42fb84b4bb6a29bd2c1945059e33ea8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 40d6f8a2882f2d5b420f21000794cac129fb0984
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168151"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345622"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Información general del portal del Centro de Microsoft 365 Defender
 
@@ -30,7 +30,7 @@ ms.locfileid: "61168151"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -38,7 +38,7 @@ ms.locfileid: "61168151"
 
 Enterprise de seguridad pueden usar Microsoft 365 Defender para supervisar y ayudar a responder a las alertas de posibles infracciones de datos o actividad de amenazas persistentes avanzadas.
 
-Puede usar <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> para:
+Puede <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">usar Microsoft 365 Defender para</a>:
 
 - Ver, ordenar y clasificar alertas desde los puntos de conexión
 - Buscar más información sobre indicadores observados, como archivos y direcciones IP
@@ -46,10 +46,7 @@ Puede usar <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-Cuando abra el portal, verá:
-
-- (1) Panel de navegación (seleccione las líneas horizontales en la parte superior del panel de navegación para mostrarlo u ocultarlo)
-- (2) Búsqueda, Community, Localización, Ayuda y soporte técnico, Comentarios
+Cuando abra el portal, verá el panel de navegación (seleccione las líneas horizontales en la parte superior del panel de navegación para mostrarlo u ocultarlo).
 
  ![Portal de Microsoft Defender para endpoint.](images/mdatp-portal-overview.png)
 
@@ -60,7 +57,7 @@ Puede navegar por el portal con las opciones de menú disponibles en todas las s
 
 Área|Descripción
 :---|:---
-**(1) Panel de navegación** | Use el panel de navegación para moverse entre **Paneles**, Incidentes **,** Lista de **dispositivos** **,** Cola de alertas , Investigaciones **automatizadas** **,** Búsqueda avanzada **,** Informes , API de **&** partners, Administración de vulnerabilidades **de &,** Evaluación y **tutoriales,** Estado del **servicio,** **Administración** de configuración **y Configuración**. Seleccione las líneas horizontales en la parte superior del panel de navegación para mostrarla u ocultarla.
+**(1) Panel de navegación** | Use el panel de navegación para moverse entre **paneles, incidentes****, lista** de **dispositivos****, cola** de **alertas, investigaciones automatizadas****, búsqueda** avanzada **, informes**, API de **partners &****, administración** de vulnerabilidades de &, evaluación y **tutoriales****, estado** del servicio, **administración** de configuración **y Configuración**. Seleccione las líneas horizontales en la parte superior del panel de navegación para mostrarla u ocultarla.
 **Paneles** | Acceda a las investigaciones automatizadas activas, alertas activas, estadísticas de investigaciones automatizadas, dispositivos en riesgo, usuarios en riesgo, dispositivos con problemas de sensor, estado del servicio, orígenes de detección y paneles de informes de dispositivos diarios.
 **Incidentes** | Ver alertas que se han agregado como incidentes.
 **Lista de dispositivos** | Muestra la lista de dispositivos que están incorporados a Defender for Endpoint, información sobre ellos y sus niveles de exposición y riesgo.
@@ -74,11 +71,11 @@ Puede navegar por el portal con las opciones de menú disponibles en todas las s
 **Estado del servicio** | Proporciona información sobre el estado actual del servicio Defender for Endpoint. Podrá comprobar si el estado del servicio es correcto o si hay problemas actuales.
 **Administración de configuración** | Muestra los dispositivos abordo, la línea base de seguridad de la organización, el análisis predictivo, la cobertura de protección web y te permite realizar la administración de superficies de ataques en tus dispositivos.
 **Configuración** | Muestra la configuración que seleccionó durante la incorporación y le permite actualizar las preferencias del sector y el período de directiva de retención. También puedes establecer otras opciones de configuración como permisos, API, reglas, administración de dispositivos, administración de servicios de TI y evaluaciones de red.
-**(2) Búsqueda, Community, Localización, Ayuda y soporte técnico, Comentarios** |  Buscar por dispositivo, archivo, usuario, dirección URL, IP, vulnerabilidad, software y recomendación. La búsqueda admite el uso de formatos hash criptográficos SHA1 y SHA256. <p> **Community:** acceda al centro de Community para aprender, colaborar y compartir experiencias sobre el producto. <p> **Localización:** establecer zonas horarias. <p> **Ayuda y** soporte técnico: obtenga acceso a la guía de Defender para endpoints, soporte técnico de Microsoft y Microsoft Premier, información de licencias, simulaciones & tutoriales, laboratorio de evaluación de Defender for Endpoint, consulte a un experto en amenazas. <p> **Comentarios:** proporcione comentarios sobre lo que le gusta o lo que podemos hacer mejor.
+**(2) Búsqueda, Community, Localización, Ayuda y soporte técnico, Comentarios** |  Buscar por dispositivo, archivo, usuario, dirección URL, IP, vulnerabilidad, software y recomendación. La búsqueda admite el uso de formatos hash criptográficos SHA1 y SHA256. <p> **Community:** acceda al centro de Community para aprender, colaborar y compartir experiencias sobre el producto. <p> **Localización** : establecer zonas horarias. <p> **Ayuda y** soporte técnico: obtenga acceso a la guía de Defender para endpoints, soporte técnico de Microsoft y Microsoft Premier, información de licencias, simulaciones & tutoriales, laboratorio de evaluación de Defender for Endpoint, consulte a un experto en amenazas. <p> **Comentarios** : proporcione comentarios sobre lo que le gusta o lo que podemos hacer mejor.
 
 > [!NOTE]
 >
-> Para los dispositivos con problemas de escalado de PPP de alta resolución, consulte Windows de escalado para [dispositivos](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) de ppp altos para obtener posibles soluciones.
+> Para dispositivos con problemas de escalado de PPP de alta resolución, consulte Windows de escalado para [dispositivos de ppp altos](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) para obtener posibles soluciones.
 
 ## <a name="microsoft-defender-for-endpoint-icons"></a>Iconos de Microsoft Defender para puntos de conexión
 

@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 6eb9dbcd0bd7b9724c2278f0006a0e6e1db61112
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba2625f94411dbb00a7e56cde991957242fc2486
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196242"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345980"
 ---
 # <a name="step-1-create-a-test-base-account"></a>Paso 1: Crear una cuenta base de prueba
 
@@ -31,11 +31,11 @@ Si no tienes una suscripción a Azure, crea una [cuenta gratuita antes](https://
 
 ![Crear una imagen de búsqueda de cuenta base de prueba.](Media/CreateTestAccount1.png)
 
-2. Haga **clic en "Agregar"** para crear una cuenta base de prueba.
+2. Haga **clic en "Crear"** para crear una cuenta base de prueba.
 
 ![Al hacer clic en agregar para crear la cuenta.](Media/CreateTestAccount2.png)
 
-3.  Lea la casilla ```Terms of Use``` de verificación para confirmar su satisfacción con el archivo ```Terms of Use``` .
+3.  Lea la casilla ```Terms of Use``` de verificación para confirmar su satisfacción con ```Terms of Use```el archivo .
 
 ![Revise los términos de uso.](Media/CreateTestAccount3.png)
 
@@ -49,7 +49,7 @@ Si no tienes una suscripción a Azure, crea una [cuenta gratuita antes](https://
 
 5.  Por último, haga clic en ```Review + Create``` para validar y habilitar la cuenta recién creada.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Avance al siguiente artículo para empezar con step 2: **Learn how upload your package.**
 > [!div class="nextstepaction"]

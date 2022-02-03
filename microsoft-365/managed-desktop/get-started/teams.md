@@ -10,20 +10,20 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 3ea75323b56941b47e8bf9826c0bfeeb7d8983f9
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 21d69770fb16ac40b25cd9ff4fefd5ccf5b2f0fb
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034802"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345944"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
-[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software) es una aplicación [de](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0) mensajería para su organización que también proporciona un área de trabajo para la colaboración y comunicación en tiempo real, reuniones y uso compartido de archivos y aplicaciones.
+[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software) es una aplicación [de mensajería](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0) que también proporciona un área de trabajo para la colaboración y comunicación en tiempo real, reuniones y uso compartido de archivos y aplicaciones.
 
 ## <a name="initial-deployment"></a>Implementación inicial
 
-La mayoría de los proveedores de hardware aún no incluyen Teams como parte de sus imágenes, por lo que Microsoft Managed Desktop implementa Teams en los dispositivos mediante Microsoft Intune. Todos los dispositivos administrados [tienen el paquete Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) instalado, lo que garantiza que todos los usuarios que inician sesión en un dispositivo Microsoft Teams listo para su uso. Cuando el paquete termina de instalarse por primera vez, Teams se inicia automáticamente y agrega un acceso directo al escritorio.
+La mayoría de los proveedores de hardware aún no incluyen Teams como parte de sus imágenes. Microsoft Managed Desktop implementa Teams en los dispositivos mediante Microsoft Intune. Todos los dispositivos administrados [tienen Teams .msi paquete instalado](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works). El .msi garantiza que todos los usuarios, que inician sesión en un dispositivo, Microsoft Teams estén listos para su uso. Cuando el paquete termina de instalarse por primera vez, Teams se inicia automáticamente y agrega un acceso directo al escritorio.
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune cambios
 
@@ -34,13 +34,13 @@ Microsoft Managed Desktop agrega dos aplicaciones a su Azure AD organización pa
 
 ## <a name="updates"></a>Actualizaciones
 
-Teams sigue una ruta de actualización independiente de Aplicaciones Microsoft 365 para empresas y el cliente de escritorio se actualiza automáticamente. Teams busca actualizaciones cada pocas horas, las descarga y, a continuación, espera a que el equipo esté inactivo antes de instalar la actualización de forma silenciosa.  
+Teams sigue una ruta de actualización independiente de Aplicaciones Microsoft 365 para empresas. El cliente de escritorio se actualiza automáticamente. Teams busca actualizaciones cada pocas horas, las descarga y, a continuación, espera a que el equipo esté inactivo antes de instalar la actualización de forma silenciosa.  
 
-El Teams producto no permite a los administradores controlar las actualizaciones, por lo que Microsoft Managed Desktop usa el [canal de actualización automática estándar.](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)
+El Teams producto no permite a los administradores controlar las actualizaciones, por lo que Microsoft Managed Desktop usa el [canal de actualización automática estándar](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
 
 ### <a name="manually-updating-teams"></a>Actualización manual de Teams
 
-Los usuarios individuales también pueden descargar actualizaciones seleccionando **Buscar** actualizaciones en el menú desplegable Perfil en   la parte superior derecha de la  ****   aplicación. Si hay una actualización disponible, se descargará y se instalará silenciosamente cuando el equipo esté inactivo.
+Los usuarios individuales también pueden descargar actualizaciones. En la parte superior derecha de la aplicación, en la lista desplegable Perfil, selecciona **Buscar actualizaciones**. Si hay una actualización disponible, se descargará y se instalará silenciosamente cuando el equipo esté inactivo.
 
 ## <a name="delivery-optimization-of-updates"></a>Optimización de entrega de actualizaciones
 

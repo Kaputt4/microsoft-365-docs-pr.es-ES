@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f871d612acbc8c9fadf3a4f2e92e999ddebe9044
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e364a2cffcd1c18c3d220e0747010a855fafed2a
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214020"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345956"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -43,7 +43,7 @@ Este modo permite que todos los dispositivos integrados de Microsoft Defender pa
 
 ## <a name="can-i-disable-basic-discovery"></a>¿Puedo deshabilitar la detección básica?
 
-Tienes la opción de desactivar la detección de dispositivos a través de la [página Características avanzadas.](advanced-features.md) Sin embargo, perderás visibilidad en dispositivos no administrados en la red. Ten en cuenta que SenseNDR.exe se seguirá ejecutando en los dispositivos incorporados independientemente de que la detección esté desactivada. 
+Tienes la opción de desactivar la detección de dispositivos a través de la [página Características avanzadas](advanced-features.md) . Sin embargo, perderás visibilidad en dispositivos no administrados en la red. Ten en cuenta que SenseNDR.exe se seguirá ejecutando en los dispositivos incorporados independientemente de que la detección esté desactivada. 
 
 ## <a name="what-is-standard-discovery-mode"></a>¿Qué es el modo de detección estándar?
 
@@ -53,7 +53,7 @@ En este modo, los puntos de conexión incorporados a Microsoft Defender para End
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>¿Puedo controlar qué dispositivos realizan la detección estándar?
 
-Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente solo Windows 10 dispositivos) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. En este caso, todos los demás dispositivos se configurarán para ejecutar solo la detección básica. La configuración está disponible en la página configuración de detección de dispositivos.
+Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puede habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente Windows 10 o posterior y solo dispositivos de Windows Server 2019 o posteriores) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. En este caso, todos los demás dispositivos se configurarán para ejecutar solo la detección básica. La configuración está disponible en la página configuración de detección de dispositivos.
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>¿Puedo excluir dispositivos no administrados de la lista de inventario de dispositivos?
 
@@ -61,7 +61,7 @@ Sí, puedes aplicar filtros para excluir dispositivos no administrados de la lis
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>¿Qué dispositivos incorporados pueden realizar la detección?
 
-Los dispositivos incorporados que se Windows 10 versión 1809 o posterior, o Windows 11 pueden realizar la detección. Los servidores no pueden realizar la detección en este momento.
+Los dispositivos incorporados que se ejecutan en Windows 10 versión 1809 o posterior, Windows 11, Windows Server 2019 o Windows Server 2022 pueden realizar la detección.
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>¿Qué sucede si mis dispositivos incorporados están conectados a mi red doméstica o al punto de acceso público?
 
@@ -69,7 +69,7 @@ El motor de detección distingue entre los eventos de red que se reciben en la r
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>¿Qué protocolos está capturando y analizando?
 
-De forma predeterminada, todos los dispositivos incorporados que se ejecutan en Windows 10 versión 1809 o posterior, o Windows 11, capturan y analizan los siguientes protocolos: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados SYN), UDP (encabezados), WSD
+De forma predeterminada, todos los dispositivos incorporados que se ejecutan Windows 10 versión 1809 o posterior, Windows 11, Windows Server 2019 o Windows Server 2022 capturan y analizan los siguientes protocolos: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados SYN), UDP (encabezados), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>¿Qué protocolos usa para el sondeo activo en la detección estándar?
 Cuando un dispositivo está configurado para ejecutar la detección estándar, los servicios expuestos se sondean mediante los siguientes protocolos: ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP, LDAP
