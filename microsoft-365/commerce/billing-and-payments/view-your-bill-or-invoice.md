@@ -25,12 +25,12 @@ ms.custom:
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 01/25/2022
-ms.openlocfilehash: 755c5c90fb99204f2bef932961a235a7756a4dff
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: b7a8c6a1ec58fdeb74349f06a3a9ef25c390482d
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218974"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355013"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -70,6 +70,8 @@ Debe ser un administrador global o de facturación para realizar los pasos descr
 3. En la página de resumen, puede ver los artículos, la cantidad, el precio, el descuento y el total de todos los artículos de la factura.
 4. Para imprimir o guardar una copia en PDF de la factura, seleccione **Descargar PDF**.
 
+Si desea recibir una copia del extracto de facturación por correo electrónico, consulte [Administrar las notificaciones de facturación y los datos adjuntos de las facturas](manage-billing-notifications.md).
+
 ::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>Solicitar un Fapiao
@@ -89,31 +91,6 @@ Puede enviar su solicitud de Fapiao a nuestro [sistema de administración de Fap
 >
 > Los servicios de Microsoft 365 no proporcionan recibos de pago.
 > Para los pagos con tarjeta de crédito, use la factura y el extracto de facturación de la tarjeta de crédito para que coincidan con el pago.
-
-## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Recibir una copia del extracto de facturación por correo electrónico
-
-Puede elegir recibir una copia del extracto de facturación como datos adjuntos de correo electrónico. Si elige esta opción, tenga en cuenta lo siguiente:
-
-- Se envía un correo electrónico tanto a la dirección de correo electrónico principal como a la alternativa de cada usuario que aparezca como destinatario de notificación.
-- Recibe dos mensajes de correo electrónico independientes: en el primero se le informará de que la factura está lista y se indicarán las instrucciones de inicio sesión en el centro de administración para poder verla. El segundo contendrá el extracto de facturación como datos adjuntos.
-
-### <a name="to-receive-your-billing-statement-in-email"></a>Cómo recibir el extracto de facturación por correo electrónico
-
-::: moniker range="o365-worldwide"
-
-1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notificaciones de facturación</a>.
-
-::: moniker-end
-
-2. En **¿Recibir extracto de facturación como datos adjuntos de correo electrónico?**, cambie el botón de alternancia a **Activado**.
-
-    Puede dejar de recibir los correos electrónicos con el extracto de facturación en cualquier momento. Para ello, deberá cambiar el botón de alternancia a **Desactivado**.
 
 ## <a name="run-the-unknown-charge-diagnostic"></a>Ejecutar el diagnóstico de cargos desconocidos
 

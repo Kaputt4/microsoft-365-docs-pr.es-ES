@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: cff5ad543b2f3b007d8ed328cae552f07faaa49b
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: e0854036939e20ac362e325b14dbaaa6a36a13a6
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60704820"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355001"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -48,7 +48,7 @@ Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancar
 > [!IMPORTANT]
 > El pago a través de una cuenta bancaria no está disponible en algunos países o regiones.
 
-Puede pagar la suscripción con tarjeta de crédito/débito o cuenta bancaria. Al pagar con uno de estos métodos de pago, seguiremos cobrando con ese método de pago hasta que la suscripción expire o se cancele. Puede [administrar los métodos de pago](manage-payment-methods.md) siempre que lo necesite. También tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
+Puede pagar la suscripción con tarjeta de crédito/débito o cuenta bancaria. Al pagar con uno de estos métodos de pago, seguiremos cobrando con ese método de pago hasta que la suscripción expire o se cancele. Puede [administrar los métodos de pago](manage-payment-methods.md) siempre que lo necesite. También puede elegir [Recibir las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
 
 ## <a name="paying-by-invoice"></a>Pagar mediante factura
 
@@ -65,7 +65,7 @@ Si se requiere una comprobación de crédito, recibirá una notificación cuando
 >
 > Si lo prefiere, puede pagar mediante transferencia electrónica entre cuentas. El organismo y el número de cuenta aparecen en la parte inferior de la factura. Debe especificar el número de factura en el campo de identificación de transferencia.
 
-Si paga su suscripción mediante factura, usted recibe un correo electrónico cuando su extracto de facturación está listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). El extracto de facturación incluye información sobre las opciones de pago, y dónde enviarlo. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en su extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su orden o factura](view-your-bill-or-invoice.md).
+Si paga su suscripción mediante factura, recibirá un correo electrónico que indica que su extracto de facturación está listo. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir [recibir las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en su extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>¿Qué debo hacer si tengo un saldo pendiente?
 

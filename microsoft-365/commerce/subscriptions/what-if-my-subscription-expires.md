@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
 ms.date: 09/16/2021
-ms.openlocfilehash: 1b53b62d62a385ca8cad7367da342aa0b4184281
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0f31665c64ca3c8ffee50069b607d27ffbf48d20
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372665"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322571"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
@@ -65,7 +65,7 @@ Esto es lo que pasará con usted y sus usuarios si cancela una suscripción.
   
 - **Acceso de administrador** Los administradores aún podrán iniciar sesión y acceder al centro de administración, así como comprar otras suscripciones según sea necesario. Como administrador global o de facturación, tiene 90 días para [reactivar la suscripción](reactivate-your-subscription.md) con todos los datos intactos.
 
-- **Acceso de usuario** Los usuarios no podrán usar servicios como OneDrive para la Empresa, ni tendrán acceso a los datos de clientes, como el correo electrónico o los documentos de los sitios de grupo. Las aplicaciones de Office, como Word y Excel, pasarán al modo de solo lectura con funcionalidad reducida y mostrarán [Notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+- **Acceso de usuario** Los usuarios no podrán usar servicios como OneDrive para la Empresa, ni tendrán acceso a los datos de clientes, como el correo electrónico o los documentos de los sitios de grupo. Las aplicaciones de Office, como Word y Excel, pasarán al modo de solo lectura con funcionalidad reducida y mostrarán [Notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380).
 
 Para obtener información sobre cómo cancelar la suscripción, vea [Cancelar su suscripción](cancel-your-subscription.md).
   
@@ -111,7 +111,7 @@ Como administrador, tendrá acceso al centro de administración. No se preocupe,
 
 **Qué es lo que va a pasar:** si no reactiva la suscripción mientras esta está en estado de Expirada, la suscripción pasará a la fase de estado de Deshabilitada, que dura 90 días para casi todas las suscripciones, en la mayoría de los países y las regiones. En el caso de los productos de licencias por volumen, el estado de Deshabilitada dura 30 días.
 
-En esta fase, el acceso se limita de forma significativa. Sus usuarios no podrán iniciar sesión ni tener acceso a servicios como el correo electrónico o SharePoint Online. Además, las aplicaciones de Office pasarán al modo de solo lectura con funcionalidad limitada y mostrarán [Notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Aún podrá iniciar sesión y entrar en el centro de administración, pero no podrá asignar licencias a usuarios. Los datos de cliente, incluidos todos los datos de usuario, el correo electrónico y los archivos de los sitios de grupo, estarán disponibles solo para usted y para los demás administradores.
+En esta fase, el acceso se limita de forma significativa. Sus usuarios no podrán iniciar sesión ni tener acceso a servicios como el correo electrónico o SharePoint Online. Además, las aplicaciones de Office pasarán al modo de solo lectura con funcionalidad limitada y mostrarán [Notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). Aún podrá iniciar sesión y entrar en el centro de administración, pero no podrá asignar licencias a usuarios. Los datos de cliente, incluidos todos los datos de usuario, el correo electrónico y los archivos de los sitios de grupo, estarán disponibles solo para usted y para los demás administradores.
 
 Como administrador global o de facturación, puede [reactivar la suscripción](reactivate-your-subscription.md) y continuar usando Microsoft 365 con todos los datos de cliente intactos. Si decide no volver a activar, [realice una copia de seguridad de los datos](back-up-data-before-switching-plans.md).
 
