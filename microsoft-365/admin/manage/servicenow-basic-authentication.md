@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: f23ea7e941bd8c56815791fe3ed86e38efcf9a79
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62294977"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321488"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>Configurar la integración de soporte técnico con ServiceNow: autenticación básica
 
@@ -115,7 +115,6 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="Interfaz gráfica de usuario, descripción de tabla generada automáticamente":::
 
-
 1. \[Administrador de ServiceNow\] Vaya **a Microsoft 365 configuración de soporte &gt; técnico para** abrir el flujo de trabajo de integración.
 
     > [!NOTE]
@@ -130,10 +129,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 1. \[Administrador de ServiceNow\] Configure el entorno y el tipo de configuración.
 
     Si esta instalación se encuentra en un entorno de prueba, seleccione la opción Este es un entorno de prueba. Podrás deshabilitar rápidamente esta opción después de la configuración y de que todas las pruebas se completen más adelante.
-    Si la instancia permite la autenticación básica para las conexiones entrantes, seleccione Sí, de lo contrario, consulte la configuración [avanzada con AAD](servicenow-aad-oauth-token.md).
-
- :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
-
+    Si la instancia permite la autenticación básica para las conexiones entrantes, seleccione Sí, de lo contrario, consulte la configuración [avanzada con AAD](servicenow-aad-oauth-token.md). :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 1. \[Administrador de ServiceNow\] Escriba su Microsoft 365 inquilino.
 
@@ -143,6 +139,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
     1. Registrar la Azure Active Directory (AAD) App.
     1. Después de completar las instrucciones de la sección requisitos previos, haga clic en **Listo**. De lo contrario, siga las instrucciones del asistente para crear el registro de aplicación necesario en AAD.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+
     1. Registrar la aplicación OAuth de ServiceNow.
     1. Después de completar las instrucciones de la sección requisitos previos, seleccione el registro de la aplicación OAuth recién creada y haga clic en Siguiente. De lo contrario, siga las instrucciones para crear la entidad en ServiceNow y, a continuación, seleccione el nuevo registro de la aplicación.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-5.png" lightbox="../../media/ServiceNow-guide/snowbasic-5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
@@ -150,10 +147,14 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 1. \[Administrador de ServiceNow\] Configure Inbound settings.
     1. Configure el extremo de la API de OAuth entrante.
     1. Después de completar las instrucciones de la sección requisitos previos, seleccione el registro de la aplicación OAuth recién creada y haga clic en Listo. De lo contrario, siga las instrucciones para crear la entidad y, a continuación, seleccione el nuevo registro de extremo REST.
+     
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-6.png" lightbox="../../media/ServiceNow-guide/snowbasic-6.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+
     1. Configure el usuario de integración.
     1. Después de completar las instrucciones de la sección requisitos previos, seleccione el usuario de integración recién creado y haga clic en Siguiente. De lo contrario, siga las instrucciones para crear la entidad en ServiceNow y, a continuación, seleccione el nuevo usuario de integración.
+    
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-7.png" lightbox="../../media/ServiceNow-guide/snowbasic-7.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
+
 
 1. \[Microsoft 365 de inquilinos\] Complete la integración en el Administración de Microsoft 365 Portal.
 

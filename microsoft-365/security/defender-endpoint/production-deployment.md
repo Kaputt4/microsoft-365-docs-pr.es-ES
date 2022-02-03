@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 94d27a828d66279b2de9aa3349c804d38a7986c7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4e58cf272688a238a428fb6b15aed568b7fa51a4
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164891"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322064"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -31,7 +31,7 @@ ms.locfileid: "61164891"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -51,19 +51,19 @@ En este escenario de implementación, se le guiará a través de los pasos sigui
 - Configuración de red
 
 > [!NOTE]
-> Con el fin de guiarlo a través de una implementación típica, este escenario solo abarcará el uso de Microsoft Endpoint Configuration Manager. Defender for Endpoint admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulta [Incorporación de dispositivos a Microsoft Defender para Endpoint](onboard-configure.md).
+> Con el fin de guiarlo a través de una implementación típica, este escenario solo abarcará el uso de Microsoft Endpoint Configuration Manager. Defender for Endpoint admite el uso de otras herramientas de incorporación, pero no cubrirá esos escenarios en la guía de implementación. Para obtener más información, consulta [Incorporación de dispositivos a Microsoft Defender para endpoint](onboard-configure.md).
 
 ## <a name="check-license-state"></a>Comprobar el estado de la licencia
 
-Comprobar el estado de la licencia y si se aprovisionó correctamente, se puede realizar a través del Centro de administración o a través **del portal Microsoft Azure .**
+La comprobación del estado de la licencia y si se aprovisionó correctamente, se puede realizar a través del Centro de administración o a través **del portal Microsoft Azure usuario**.
 
-1. Para ver las licencias, vaya al **portal de** Microsoft Azure y vaya a la sección Microsoft Azure licencia [del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
+1. Para ver las licencias, vaya al portal de Microsoft Azure **y** vaya a la [sección Microsoft Azure licencia del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
    ![Imagen de la página Licencias de Azure.](images/atp-licensing-azure-portal.png)
 
-1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de** \> **facturación.**
+1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de** \> **facturación**.
 
-    En la pantalla, verá todas las licencias aprovisionadas y su estado **actual.**
+    En la pantalla, verá todas las licencias aprovisionadas y su estado **actual**.
 
     ![Imagen de las licencias de facturación.](images/atp-billing-subscriptions.png)
 
@@ -71,7 +71,7 @@ Comprobar el estado de la licencia y si se aprovisionó correctamente, se puede 
 
 Para obtener acceso a las licencias que se aprovisionan a su empresa y comprobar el estado de las licencias, vaya al Centro de administración.
 
-1. En el **portal de partners,** seleccione **Administrar servicios > Office 365**.
+1. En el **portal de partners**, seleccione **Administrar servicios > Office 365**.
 
 2. Al hacer clic en **el vínculo Portal** de partners, se abrirá la opción **Administrador** en nombre del usuario y se le dará acceso al Centro de administración de clientes.
 
@@ -93,9 +93,9 @@ El sensor de Microsoft Defender para punto de conexión requiere HTTP de Microso
   - Proxy transparente
   - Protocolo de detección automática de proxy web (WPAD)
 
-  Si se ha implementado un proxy transparente o WPAD en la topología de red, no es necesario que haya opciones de configuración especiales. Para obtener más información sobre las exclusiones de [](production-deployment.md#proxy-service-urls) url de extremo de Microsoft Defender en el proxy, consulte la sección Direcciones URL del servicio proxy de este documento para la lista de direcciones URL permitidas o en Configurar el proxy de dispositivo y la configuración de conectividad a [Internet.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+  Si se ha implementado un proxy transparente o WPAD en la topología de red, no es necesario que haya opciones de configuración especiales. Para obtener más información sobre las exclusiones de url de extremo de Microsoft Defender en el [](production-deployment.md#proxy-service-urls) proxy, vea la sección Direcciones URL del servicio proxy de este documento para la lista de direcciones URL permitidas o en Configurar el proxy de dispositivo y la configuración de [conectividad a Internet](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
-- **Configuración manual de proxy estático:**
+- **Configuración manual de proxy estático**:
   - Configuración basada en el registro
   - WinHTTP configurado mediante el comando netsh
 
@@ -105,18 +105,18 @@ El sensor de Microsoft Defender para punto de conexión requiere HTTP de Microso
 
 Configure un proxy estático basado en el Registro para permitir que solo el sensor de Microsoft Defender para endpoints informe datos de diagnóstico y se comunique con Microsoft Defender para los servicios de punto de conexión si un equipo no tiene permiso para conectarse a Internet. El proxy estático se puede configurar mediante la directiva de grupo (GP). La directiva de grupo se puede encontrar aquí:
 
-- Plantillas administrativas Windows recopilación de datos y versiones preliminares Configurar el uso de \> proxy autenticado para el servicio de telemetría y experiencia del usuario \> \> conectado
+- Plantillas administrativas \> Windows recopilación de datos y \> \> versiones preliminares Configurar el uso de proxy autenticado para el servicio de telemetría y experiencia del usuario conectado
 - Estadíla en **Habilitada** y seleccione **Deshabilitar el uso de proxy autenticado**
 
 1. Abra la Consola de administración de directivas de grupo.
 2. Cree una directiva o edite una directiva existente basada en las prácticas organizativas.
-3. Edite la directiva de grupo y vaya a Plantillas administrativas Windows Componentes de recopilación de datos y versiones preliminares Configure **\> \> \> Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
+3. Edite la directiva de grupo y vaya a **Plantillas \> administrativas Windows Componentes \> \> de recopilación de datos y versiones preliminares Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
    ![Imagen de configuración de directiva de grupo.](images/atp-gpo-proxy1.png)
 
 4. Seleccione **Habilitado**.
 5. Seleccione **Deshabilitar el uso de proxy autenticado**.
-6. Vaya a Plantillas administrativas Windows de datos componentes y versiones **\> \> preliminares \> Configure las experiencias de usuario conectadas y la telemetría**.
+6. Vaya a **Plantillas administrativas Windows \> de datos componentes \> y versiones preliminares Configure la telemetría y las experiencias \> de usuario conectadas**.
 
     ![Imagen de la configuración de directiva de grupo.](images/atp-gpo-proxy2.png)
 
@@ -125,7 +125,7 @@ Configure un proxy estático basado en el Registro para permitir que solo el sen
 
 La directiva establece dos valores del registro `TelemetryProxyServer` como REG_SZ y `DisableEnterpriseAuthProxy` como REG_DWORD en la clave del registro `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
-El valor del `TelemetryProxyServer` Registro tiene el siguiente formato de cadena:
+El valor del Registro `TelemetryProxyServer` tiene el siguiente formato de cadena:
 
 ```text
 <server name or ip>:<port>
@@ -162,21 +162,23 @@ Down-Level incluyen Windows estaciones de trabajo de Windows 8.1 y 7 SP1, así c
 
 ### <a name="proxy-service-urls"></a>Direcciones URL del servicio proxy
 
-Las direcciones URL que incluyen v20 solo son necesarias si Windows 10, versión 1803 o Windows 11 dispositivos. Por ejemplo, solo es necesario si el dispositivo está en `us-v20.events.data.microsoft.com` Windows 10 versión 1803 o Windows 11.
+Las direcciones URL que incluyen v20 solo son necesarias si Windows 10, versión 1803 o Windows 11 dispositivos. Por ejemplo, `us-v20.events.data.microsoft.com` solo es necesario si el dispositivo está en Windows 10 versión 1803 o Windows 11.
 
 Si un proxy o firewall bloquea el tráfico anónimo, ya que el sensor de Microsoft Defender para endpoint se conecta desde el contexto del sistema, asegúrese de que el tráfico anónimo está permitido en las direcciones URL enumeradas.
 
-En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Asegúrese de que no hay reglas de filtrado de red o firewall que denieguen el acceso *a* estas direcciones URL, o puede que necesite crear una regla de permitido específicamente para ellas.
+En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Asegúrese de que no hay reglas de filtrado de red o firewall que denieguen el *acceso a estas* direcciones URL, o puede que necesite crear una regla de permitido específicamente para ellas.
 
 <br>
 
 ****
 
-|Hoja de cálculo de la lista de dominios|Description|
+
+|Hoja de cálculo de la lista de dominios| Descripción|
 |---|---|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|Lista de direcciones URL de Microsoft Defender para puntos de conexión para clientes comerciales | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Lista de direcciones URL de punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 |
 
 ## <a name="next-step"></a>Paso siguiente
 
-![**Fase 3: Incorporación**.](images/onboard.png) <br> [Fase 3: Incorporación](onboarding.md)de dispositivos al servicio para que el servicio de Microsoft Defender para endpoints pueda obtener datos de sensores de ellos.
+![**Fase 3: Incorporación**.](images/onboard.png) <br> [Fase 3: Incorporación](onboarding.md) de dispositivos al servicio para que el servicio de Microsoft Defender para endpoints pueda obtener datos de sensores de ellos.

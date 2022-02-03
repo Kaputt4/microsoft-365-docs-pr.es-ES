@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 1636d7647a6c48b44608e991e1b8411b05367fb6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 89aba3f74925b4c591c523aae5aaeb1a2844b4b9
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61867631"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320492"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -38,12 +38,12 @@ Saber qué método (o combinaciones de métodos) usar y cuándo usarlos depende 
 
 | Item | Descripción |
 |:-----|:-----|
-|[![Teams póster de arquitectura lógica.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Actualizado en enero de 2022   |En este póster se muestra cómo Contoso mantiene a los empleados informados y comprometidos en escenarios de comunicación populares. Contoso usa una variedad de aplicaciones M365, incluida una nueva oferta, Viva Connections.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Comunicaciones organizativas: guía, métodos y productos](/sharepoint/corporate-communications-overview)|
+|[![Póster del escenario de comunicaciones corporativas de Contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Actualizado en enero de 2022   |En este póster se muestra cómo Contoso mantiene a los empleados informados y comprometidos en escenarios de comunicación populares. Contoso usa una variedad de aplicaciones M365, incluida una nueva oferta, Viva Connections.<br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Comunicaciones organizativas: guía, métodos y productos](/sharepoint/corporate-communications-overview)|
 
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Grupos en Microsoft 365 para arquitectos de TI
-En esta ilustración se incluye información para los arquitectos de TI sobre Microsoft 365 grupos. Para obtener información sobre cómo configurar y administrar Microsoft 365 grupos y equipos de colaboración en su organización, vea Configurar la colaboración segura con [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) y ¿Qué es el gobierno de [colaboración?](/microsoft-365/solutions/collaboration-governance-overview).
+En esta ilustración se incluye información para los arquitectos de TI sobre Microsoft 365 grupos. Para obtener información sobre cómo configurar y administrar Microsoft 365 grupos y equipos de colaboración en su organización, consulte Configurar la colaboración segura con [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) y ¿Qué es el gobierno de [colaboración?](/microsoft-365/solutions/collaboration-governance-overview).
 
 | Item | Descripción |
 |:-----|:-----|
@@ -55,7 +55,7 @@ Microsoft proporciona herramientas para migrar los recursos compartidos de archi
 
 | Item | Descripción |
 |:-----|:-----|
-|[![Póster del modelo: Migrar a Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Actualizado en marzo de 2021 |Incluye: <ul><li> Migración de recurso compartido de archivos</li><li>Migración de SharePoint Server</li></ul> <p> Para obtener más información, vea [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
+|[![Póster del modelo: Migrar a Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Actualizado en marzo de 2021 |Incluye: <ul><li> Migración de recurso compartido de archivos</li><li>Migración de SharePoint Server</li></ul> <p> Para obtener más información, vea [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 de protección de la información y cumplimiento normativo
 
@@ -107,7 +107,7 @@ Advanced eDiscovery flujo de trabajo y flujo de datos de un extremo a otro, incl
 
 | Item | Descripción |
 |:-----|:-----|
-|[![Póster del modelo: Advanced eDiscovery arquitectura en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Ver como una imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Descargar como pdf](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Descargar como un Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Flujo de trabajo completo en un único entorno</li><li>Flujo de trabajo completo en un entorno Microsoft 365 Multi-Geo </li><li>Flujo de datos completo compatible con el flujo de trabajo de EDRM</li> |
+|[![Póster del modelo: Advanced eDiscovery arquitectura en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Ver como una imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Descargar como pdf](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [Descargar como un Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Flujo de trabajo completo en un único entorno</li><li>Flujo de trabajo completo en un entorno Microsoft 365 Multi-Geo </li><li>Flujo de datos completo compatible con el flujo de trabajo de EDRM</li> |
 
 
 
@@ -125,7 +125,7 @@ Microsoft es compatible con varias opciones cuando empieza a utilizar Teams en l
 Con Microsoft 365 y otras tecnologías en la nube de Microsoft, puede proporcionar a sus trabajadores acceso seguro a la información, herramientas y recursos locales y basados en la nube de su organización desde sus hogares.
 
 [![Configure la infraestructura para el póster de trabajo híbrido.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
-[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  |  [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
+[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) |  [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
 Actualizado en junio de 2021
 
 Para obtener más información, vea el artículo de este póster: Configurar la infraestructura [para el trabajo híbrido con Microsoft 365](empower-people-to-work-remotely.md).
@@ -135,13 +135,13 @@ Para obtener más información, vea el artículo de este póster: Configurar la 
 Con Microsoft 365, puede configurar un equipo privado en Microsoft Teams y usar una configuración de seguridad del sitio SharePoint y una etiqueta de confidencialidad única para cifrar archivos para que solo los miembros del equipo puedan descifrarlos.
 
 [![Póster de aislamiento de seguridad de Microsoft Teams.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
 Actualizado en agosto de 2020
 
 Para obtener más información, vea el artículo de este póster: [Configurar un equipo con aislamiento de seguridad](secure-teams-security-isolation.md).
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Modelos de arquitectura para SharePoint, Exchange, Skype Empresarial y Lync](../enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb60bbd8172c54a7fa6ef9a5c0dce708f5506e3a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4f220b16b0402215aa1fad0681edf241b61062ed
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165695"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321236"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para endpoint y otras soluciones de Microsoft
 
@@ -27,7 +27,7 @@ ms.locfileid: "61165695"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,7 +46,7 @@ El conector de Microsoft Defender para puntos de conexión te permite transmitir
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
 
-Recientemente hemos dejado de usar la integración de Azure Information Protection, ya que nuestras capacidades DLP de punto de conexión incorporan una solución mejorada de detección y protección para datos confidenciales almacenados en dispositivos de punto de conexión que facilita una mayor visibilidad e integración entre soluciones. Esto se anunció en el [siguiente blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555). Se recomienda que los clientes pasen a usar DLP de extremo.
+Recientemente hemos dejado de usar la integración de Azure Information Protection, ya que nuestras capacidades DLP de punto de conexión incorporan una solución mejorada de detección y protección para datos confidenciales almacenados en dispositivos de punto de conexión que facilita una mayor visibilidad e integración entre soluciones. Esto se anunció en el siguiente [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555). Se recomienda que los clientes pasen a usar DLP de extremo.
 
 ### <a name="conditional-access"></a>Acceso condicional
 
@@ -80,6 +80,6 @@ Con Microsoft 365 Defender, Microsoft Defender para endpoint y varias soluciones
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Configurar la integración y otras características avanzadas](advanced-features.md)
-- [Microsoft 365 Defender introducción](/microsoft-365/security/defender/microsoft-threat-protection)
-- [Activar Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365 Defender introducción](/microsoft-365/security/defender/microsoft-365-defender)
+- [Activar Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)
 - [Proteger usuarios, datos y dispositivos con acceso condicional](conditional-access.md)

@@ -11,18 +11,19 @@ metadata:
   audience: ITPro
   author: martyav
   ms.author: dansimp
-  ms.reviewer: 
+  ms.reviewer: oogunrinde, sugamar
   manager: dansimp
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.collection: M365-security-compliance
-  ms.openlocfilehash: d7c24bc14252dc514bf8b1518a99a51d64719a5e
-  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+  ms.collection: m365initiative-m365-defender
+  ms.date: 1/18/2022
+  ms.openlocfilehash: 5448f5bae1edfce3dbbd37379e9c56461753156c
+  ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 01/12/2022
-  ms.locfileid: "61938497"
+  ms.lasthandoff: 02/02/2022
+  ms.locfileid: "62322510"
 title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -46,7 +47,7 @@ sections:
       El conjunto completo de reglas y características de ASR solo se admite si tiene una licencia de empresa para Windows 10 o Windows 11. Un número limitado de reglas puede funcionar sin una licencia de empresa. Si ha establecido Microsoft 365 empresa, establezca Antivirus de Microsoft Defender como la solución de seguridad principal y habilite las reglas a través de PowerShell. El uso de ASR sin una licencia de empresa no se admite oficialmente y no podrá usar todas las funcionalidades de ASR.
 
 
-      Para obtener más información sobre Windows licencias, consulte [Windows 10 Licensing y](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) obtenga la Guía de licencias por volumen para [Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+      Para obtener más información sobre Windows licencias, [consulte Windows 10 Licensing y](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) obtenga la [Guía de licencias por volumen para Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
   - question: >
       ¿Se admite ASR si tengo una licencia E3?
     answer: >
@@ -65,14 +66,14 @@ sections:
   - question: >
       ¿Qué reglas habilitar? ¿Todo o puedo activar reglas individuales?
     answer: >
-      Para ayudarle a averiguar qué es lo mejor para su entorno, le recomendamos que habilite las reglas ASR en el [modo de auditoría.](audit-windows-defender.md) Con este enfoque, determinará el posible efecto para su organización. Por ejemplo, las aplicaciones de línea de negocio.
+      Para ayudarle a averiguar qué es lo mejor para su entorno, le recomendamos que habilite las reglas de ASR en el [modo de auditoría](audit-windows-defender.md). Con este enfoque, determinará el posible efecto para su organización. Por ejemplo, las aplicaciones de línea de negocio.
   - question: >
       ¿Cómo funcionan las exclusiones de reglas ASR?
     answer: >
       Para las reglas ASR, si agrega una exclusión, afectará a todas las reglas ASR.
 
 
-      Las exclusiones de reglas ASR admiten caracteres comodín, rutas de acceso y variables de entorno. Para obtener más información sobre cómo usar caracteres comodín en reglas ASR, vea [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
+      Las exclusiones de reglas ASR admiten caracteres comodín, rutas de acceso y variables de entorno. Para obtener más información sobre cómo usar caracteres comodín en las reglas ASR, vea [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
 
 
       Tenga en cuenta los siguientes elementos sobre las exclusiones de reglas ASR (incluidos caracteres comodín y env. variables):
@@ -82,7 +83,7 @@ sections:
 
       - Los caracteres comodín no se pueden usar para definir una letra de unidad
 
-      - Si desea excluir más de una carpeta, en una ruta de acceso, use varias instancias de \ para indicar varias carpetas anidadas \* (por ejemplo, c:\Folder \* \* \Test)
+      - Si desea excluir más de una carpeta, en una ruta de acceso, use varias instancias de \ para indicar varias carpetas anidadas \*(por ejemplo, c:\Folder\*\*\Test)
 
       - Microsoft Endpoint Configuration Manager *admite* caracteres comodín (* o ?)
 
@@ -97,7 +98,7 @@ sections:
       Las reglas ASR diferentes tendrán flujos de protección diferentes. Piense siempre en lo que protege la regla de ASR contra la que está configurando y en cómo se desatensa el flujo de ejecución real.
 
 
-      Ejemplo: bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows Leer directamente desde el proceso del subsistema de autoridad de seguridad **local** (LSASS) puede ser un riesgo de seguridad, ya que podría exponer credenciales corporativas.
+      Ejemplo: bloquear el robo de credenciales del subsistema de autoridad de seguridad **local de Windows** Leer directamente desde el proceso del subsistema de autoridad de seguridad local (LSASS) puede ser un riesgo de seguridad, ya que puede exponer credenciales corporativas.
 
 
       Esta regla impide que los procesos que no son de confianza tengan acceso directo a la memoria de LSASS. Siempre que un proceso intente usar la función OpenProcess() para obtener acceso a LSASS, con un derecho de acceso de PROCESS_VM_READ, la regla bloqueará específicamente ese derecho de acceso.
@@ -116,7 +117,7 @@ sections:
       Se recomienda habilitar todas las reglas posibles. Sin embargo, hay algunos casos en los que no debe habilitar una regla. Por ejemplo, no recomendamos habilitar la regla Bloquear creaciones de proceso que se originen a partir de los comandos PSExec y WMI, si usa Microsoft Endpoint Configuration Manager (o, System Center Configuration Manager - SCCM) para administrar los puntos de conexión.
 
 
-      Le recomendamos encarecidamente que lea cada información o advertencias específicas de la regla, que están disponibles en nuestra [documentación pública.](/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+      Le recomendamos encarecidamente que lea cada información o advertencias específicas de la regla, que están disponibles en nuestra [documentación pública](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
 
       abarcando varios pilares de protección, como Office, credenciales, scripts, correo electrónico, etc. Todas las reglas ASR, excepto la persistencia de bloque a través de la suscripción a eventos WMI, se admiten en Windows 1709 y versiones posteriores:
 
@@ -139,7 +140,7 @@ sections:
 
       * [Usar protección avanzada contra ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
 
-      * [Bloquear el robo de credenciales del subsistema Windows autoridad de](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) seguridad local (lsass.exe)
+      * [Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
 
       * [Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 
@@ -176,11 +177,11 @@ sections:
   - question: >
       ¿ASR admite exclusiones de archivos o carpetas que incluyen variables del sistema y caracteres comodín en la ruta de acceso?
     answer: >
-      Sí. Consulte [Exclude files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para obtener más información sobre la exclusión de archivos o carpetas de reglas ASR, y Configure and validate exclusions based on file extension and folder location para obtener más información sobre cómo usar variables del sistema y caracteres comodín en rutas de acceso de archivo [excluidas.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
+      Sí. Consulte [Exclude files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para obtener más información sobre la exclusión de archivos o carpetas de reglas ASR, y [Configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) para obtener más información sobre cómo usar variables del sistema y caracteres comodín en rutas de acceso de archivo excluidas.
   - question: >
       ¿Las reglas ASR cubren todas las aplicaciones de forma predeterminada?
     answer: >
-      Depende de la regla. La mayoría de las reglas ASR cubren el comportamiento de Microsoft Office productos y servicios, como Word, Excel, PowerPoint y OneNote, o Outlook. Ciertas reglas ASR, como Bloquear la ejecución de scripts potencialmente *ofuscados,* son más generales en el ámbito.
+      Depende de la regla. La mayoría de las reglas ASR cubren el comportamiento de Microsoft Office productos y servicios, como Word, Excel, PowerPoint y OneNote, o Outlook. Ciertas reglas ASR, como *Bloquear* la ejecución de scripts potencialmente ofuscados, son más generales en el ámbito.
   - question: >
       ¿ASR admite soluciones de seguridad de terceros?
     answer: >
@@ -188,7 +189,7 @@ sections:
   - question: >
       Tengo una licencia E5 y he habilitado algunas reglas ASR junto con Defender para Endpoint. ¿Es posible que un evento ASR no se muestre en absoluto en la escala de tiempo de eventos de Defender para Endpoint?
     answer: >
-      Siempre que una regla ASR desencadena localmente una notificación, también se envía un informe sobre el evento al portal de Defender for Endpoint. Si tienes problemas para encontrar el evento, puedes filtrar la escala de tiempo de eventos mediante el cuadro de búsqueda. También puedes ver eventos ASR visitando **Ir** a la administración de superficie de ataques, desde el icono **Administración** de configuración de la barra de tareas Defender para la nube. La página de administración de superficie de ataque incluye una pestaña para detecciones de informes, que incluye una lista completa de eventos de regla ASR notificados a Defender para endpoint.
+      Siempre que una regla ASR desencadena localmente una notificación, también se envía un informe sobre el evento al portal de Defender for Endpoint. Si tienes problemas para encontrar el evento, puedes filtrar la escala de tiempo de eventos mediante el cuadro de búsqueda. También puedes ver eventos ASR visitando **Ir** a la administración de superficie de ataques, desde el icono **Administración** de configuración de la barra de tareas defender para la nube. La página de administración de superficie de ataque incluye una pestaña para detecciones de informes, que incluye una lista completa de eventos de regla ASR notificados a Defender para endpoint.
   - question: >
       He aplicado una regla con GPO. Ahora, cuando intento comprobar las opciones de indización de la regla en Microsoft Outlook, aparece un mensaje que indica "Acceso denegado".
     answer: >
@@ -220,11 +221,11 @@ sections:
   - question: >
       ¿Es una buena idea habilitar la regla, Windows "Bloquear el robo de credenciales del subsistema de autoridad de seguridad local (lsass.exe)", junto con la protección de LSA?
     answer: >
-      Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
+      Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) . Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
   - question: >
-      Vea también
+      Recursos adicionales
     answer: >-
-      * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
+      * [Introducción a la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
 
       * [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
 

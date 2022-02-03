@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 924abaff9ead40971712f5bacd9fe12438c7dff1
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: b0e3279b7a1003fa10a112a85bc1e1d83fa14937
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281512"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322498"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -111,6 +111,19 @@ Los siguientes detalles se aplican al nuevo paquete de soluciones unificado para
 - En Windows Server 2012 R2, es posible que los eventos de red no se rellenen en la escala de tiempo. Este problema requiere una actualización Windows publicada como parte del paquete acumulativo mensual del 12 de octubre de [2021 (KB5006714).](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - No se admiten actualizaciones del sistema operativo. A continuación, desinstale offboard antes de actualizar.
 - Las exclusiones automáticas de *roles* de servidor no se admiten en Windows Server 2012 R2; sin embargo, las exclusiones integradas para los archivos del sistema operativo son. Para obtener más información acerca de cómo agregar exclusiones, vea Recomendaciones de detección de virus para Enterprise equipos que ejecutan versiones compatibles actualmente [de Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
+- Actualmente, si decide quitar y desinstalar la solución moderna y unificada y volver a incorporar el sensor de EDR basado en MMA anterior, `MsSenseS.exe` puede que se repitan bloqueos. 
+
+Como solución alternativa, quite las siguientes claves del Registro si existen:
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\fdedb2b8-61e4-4a7e-8b15-abf214a08fcc`
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\c60418cc-7e07-400f-ae3b-d521c5dbd96f`
+
+Puede usar los siguientes comandos:
+
+```cmd
+reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v fdedb2b8-61e4-4a7e-8b15-abf214a08fcc /f
+reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v c60418cc-7e07-400f-ae3b-d521c5dbd96f /f
+```
+No es necesario reiniciar.
 
 
 <a name="integration-with-azure-defender"></a>
@@ -122,7 +135,7 @@ Microsoft Defender para endpoint se integra perfectamente con Microsoft Defender
 Para obtener más información, consulte [Integración con Microsoft Defender para la nube](azure-server-integration.md).
 
 > [!NOTE]
-> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Microsoft Defender for Cloud/Microsoft Defender for servers for alerting and automated deployment is not yet available. Aunque puede instalar la nueva solución en estas máquinas, no se mostrará ninguna alerta en Microsoft Defender para la nube.
+> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Microsoft Defender for Cloud/Microsoft Defender for servers for alerting and automated deployment is not yet available. Aunque puede instalar manualmente la nueva solución en estas máquinas, no se mostrará ninguna alerta en Microsoft Defender para la nube.
 
 > [!NOTE]
 > - La integración entre Microsoft Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir Windows Server 2022, [Windows Server 2019 y Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
@@ -361,7 +374,7 @@ Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de dete
 
 Siga los pasos descritos en Ejecutar una prueba de detección en un dispositivo recién incorporado para comprobar que el servidor está informando [a](run-detection-test.md) Defender para el servicio de extremo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de incorporar dispositivos correctamente al servicio, deberá configurar los componentes individuales de Microsoft Defender para endpoint. Siga el [orden de adopción](prepare-deployment.md#adoption-order) para guiarse en la habilitación de los distintos componentes.
 

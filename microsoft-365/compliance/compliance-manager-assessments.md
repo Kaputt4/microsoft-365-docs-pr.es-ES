@@ -2,8 +2,8 @@
 title: Crear y administrar evaluaciones en El Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,29 +17,29 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 7f08ec6c7e5dc34733aa3ea148c96f09916b0627
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 43f2f304be125afb57fd1ff5c09605159e16a961
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370745"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321584"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
-**En este artículo:** Obtenga información sobre cómo personalizar el Administrador de cumplimiento para su organización mediante la creación y administración **de evaluaciones.** En este artículo se explica cómo crear evaluaciones, cómo organizarlas en  **grupos,** trabajar con **controles,** aceptar actualizaciones y exportar informes de **evaluación.**
+**En este artículo:** Aprenda a personalizar el Administrador de cumplimiento para su organización mediante la creación y administración de **evaluaciones**. En este artículo se explica cómo crear evaluaciones, cómo organizarlas en **grupos, trabajar** con **controles, aceptar** actualizaciones y exportar informes de **evaluación**.
 
 ## <a name="introduction-to-assessments"></a>Introducción a las evaluaciones
 
 El Administrador de cumplimiento le ayuda a crear evaluaciones que evalúen el cumplimiento de las normativas regionales y del sector que se aplican a su organización. Las evaluaciones se basa en el marco de las plantillas de evaluación, que contienen los controles necesarios, las acciones de mejora y, en su caso, las acciones de Microsoft para completar la evaluación. Configurar las evaluaciones más relevantes para su organización puede ayudarle a implementar directivas y procedimientos operativos para limitar el riesgo de cumplimiento.
 
-Todas las evaluaciones se enumeran en la pestaña evaluaciones del Administrador de cumplimiento. Obtenga más información [sobre cómo filtrar la vista de las evaluaciones](compliance-manager-setup.md#assessments-page)e interpretar los estados de estado .
+Todas las evaluaciones se enumeran en la pestaña evaluaciones del Administrador de cumplimiento. Obtenga más información [sobre cómo filtrar la vista de las evaluaciones e interpretar los estados de estado](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> Las plantillas disponibles para su organización para realizar evaluaciones dependen del contrato de licencia. [Revisar los detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Las plantillas disponibles para su organización para realizar evaluaciones dependen del contrato de licencia. [Revise los detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="data-protection-baseline-default-assessment"></a>Evaluación predeterminada de línea base de protección de datos
 
-Para empezar, Microsoft proporciona  una evaluación predeterminada en el Administrador de cumplimiento para el Microsoft 365 línea base **de protección de datos**. Esta evaluación de línea base tiene un conjunto de controles para los reglamentos y estándares clave para la protección de datos y el gobierno general de datos. Esta línea base se basa en elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y GDPR (Reglamento general de protección de datos de la Unión Europea).
+Para empezar, Microsoft proporciona una **evaluación predeterminada en** el Administrador de cumplimiento para la línea **base Microsoft 365 protección de datos.** Esta evaluación de línea base tiene un conjunto de controles para los reglamentos y estándares clave para la protección de datos y el gobierno general de datos. Esta línea base se basa en elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y GDPR (Reglamento general de protección de datos de la Unión Europea).
 
 Esta evaluación se usa para calcular la puntuación de cumplimiento inicial la primera vez que se llega al Administrador de cumplimiento, antes de configurar cualquier otra evaluación. El Administrador de cumplimiento recopila las señales iniciales de Microsoft 365 soluciones. Verá de un vistazo el rendimiento de su organización con respecto a los estándares y normativas clave de protección de datos y verá las acciones de mejora sugeridas que deben realizarse.
 
@@ -81,7 +81,7 @@ Las plantillas de evaluación contienen los controles y las recomendaciones de a
 
 Cada plantilla, incluida o premium, existe en dos versiones: una para su uso con Microsoft 365 (u otros productos de Microsoft según esté disponible) y una versión universal que se puede personalizar para evaluar otros productos que use. Puede elegir el tipo de plantilla adecuado para el producto que desea evaluar.
 
-Para obtener más información acerca de las plantillas, vea [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
+Para obtener más información acerca de las plantillas, consulte [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
 
 ## <a name="create-assessments"></a>Crear evaluaciones
 
@@ -95,20 +95,20 @@ Para empezar a crear evaluaciones, siga estos pasos.
 1. Sepa a qué grupo asignará la evaluación o estará preparado para crear uno nuevo para esta evaluación.
 
 2. Abra el asistente para evaluación. Puede tener acceso a este panel desplegable desde uno de dos lugares:
-    - Vaya a la **página evaluaciones** del Administrador de cumplimiento y seleccione **Agregar evaluación;** o
-    - Busque la plantilla que desea usar en la pestaña plantillas **de** evaluación, vea sus detalles y seleccione **Crear evaluación.** Esto rellenará el campo de selección de plantilla del asistente.
+    - Vaya a la **página evaluaciones** del Administrador de cumplimiento y seleccione **Agregar evaluación**; o
+    - Busque la plantilla que desea usar en la pestaña plantillas **de** evaluación, vea sus detalles y seleccione **Crear evaluación**. Esto rellenará el campo de selección de plantilla del asistente.
 
-3. **Seleccione una plantilla:** si no ha elegido una plantilla en el paso 2, elija una plantilla para que sirva de base para su evaluación. Verá la lista de plantillas divididas en categorías incluidas y premium (vea [Disponibilidad de](compliance-manager-templates.md#template-availability-and-licensing) plantillas y licencias para obtener más información). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Siguiente**.
+3. **Seleccione una plantilla**: si no ha elegido una plantilla en el paso 2, elija una plantilla para que sirva de base para su evaluación. Verá la lista de plantillas divididas en categorías incluidas y premium (vea [Disponibilidad de](compliance-manager-templates.md#template-availability-and-licensing) plantillas y licencias para obtener más información). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Siguiente**.
 
 4. **Producto, nombre y grupo:** Establezca estas propiedades para identificar la evaluación, elija el producto que va a evaluar y asígnelo a un grupo.
 
-    - **Producto:** seleccione el producto al que desea que se aplique la evaluación. Si usa una plantilla de Microsoft, como una diseñada para Microsoft 365, este campo se rellenará para indicar el producto adecuado y no se puede cambiar. Si usa una plantilla universal, seleccione si está creando esta evaluación para un producto nuevo o un producto personalizado que ya haya definido en el Administrador de cumplimiento. Si elige un producto nuevo, escriba su nombre. Tenga en cuenta que no puede seleccionar un producto de Microsoft predefinido al usar una plantilla universal.
-    - **Nombre:** escriba un nombre para la evaluación en el **campo Nombre de** evaluación. Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
-    - **Grupo:** asigne la evaluación a un grupo. Puede:
+    - **Producto**: seleccione el producto al que desea que se aplique la evaluación. Si usa una plantilla de Microsoft, como una diseñada para Microsoft 365, este campo se rellenará para indicar el producto adecuado y no se puede cambiar. Si usa una plantilla universal, seleccione si está creando esta evaluación para un producto nuevo o un producto personalizado que ya haya definido en el Administrador de cumplimiento. Si elige un producto nuevo, escriba su nombre. Tenga en cuenta que no puede seleccionar un producto de Microsoft predefinido al usar una plantilla universal.
+    - **Nombre**: escriba un nombre para la evaluación en el **campo Nombre de** evaluación. Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
+    - **Grupo**: asigne la evaluación a un grupo. Puede:
         - Seleccione **Usar grupo existente** para asignarlo a un grupo que ya ha creado; o
         - Seleccione **Crear nuevo grupo** para crear un nuevo grupo y asígnele esta evaluación:
             - Determina un nombre para el grupo y escribelo en el campo debajo del botón de radio.
-            - Puede copiar **datos de un grupo existente,** como detalles y documentos de implementación y pruebas, seleccionando los cuadros correspondientes.
+            - Puede copiar **datos de un grupo existente**, como detalles y documentos de implementación y pruebas, seleccionando los cuadros correspondientes.
 
     Cuando termine, seleccione **Siguiente**.
 
@@ -116,9 +116,9 @@ Para empezar a crear evaluaciones, siga estos pasos.
 
 6. En la siguiente pantalla se confirma que ha creado correctamente la nueva evaluación. Seleccione **Listo** para cerrar el asistente y la página de detalles de la nueva evaluación aparecerá en la pantalla.
 
-Si ve una pantalla **Error de** evaluación después de seleccionar **Crear** evaluación, seleccione **Volver** a intentar volver a crear la evaluación.
+Si ve una pantalla **Error** de evaluación después de seleccionar **Crear** evaluación, seleccione **Volver** a intentar volver a crear la evaluación.
 
-Puede cambiar el nombre de la evaluación después  de crearla seleccionando el botón Editar nombre en la esquina superior derecha de la página de detalles [de la evaluación.](#monitor-assessment-progress-and-controls)
+Puede cambiar el nombre de la evaluación después de crearla seleccionando el botón Editar  nombre en la esquina superior derecha de la página de detalles [de la evaluación](#monitor-assessment-progress-and-controls).
 
 ## <a name="monitor-assessment-progress-and-controls"></a>Supervisar el progreso y los controles de evaluación
 
@@ -130,7 +130,7 @@ La pestaña información general contiene un gráfico que muestra el porcentaje 
 
 Las principales acciones de mejora para los controles de la evaluación se enumeran en orden de mayor impacto potencial para ganar puntos. El gráfico asociado detalla el estado de las pruebas agregadas de las acciones de mejora para que pueda medir rápidamente lo que se ha probado y lo que aún debe hacerse.
 
-Para obtener acceso a acciones de mejora individuales, visita la **pestaña Controles** o la pestaña Tus **acciones de** mejora.
+Para obtener acceso a acciones de mejora individuales, visita la **pestaña Controles** o **la pestaña Tus acciones de** mejora.
 
 ### <a name="controls-tab"></a>Pestaña Controles
 
@@ -139,16 +139,16 @@ La pestaña controles muestra información detallada para cada control asignado 
 Debajo del gráfico, una tabla enumera información detallada sobre cada control dentro de la evaluación. Los controles se agrupan por familia de controles. Expanda cada nombre de familia para mostrar los controles individuales que contiene. La información enumerada para cada control incluye:
 
 - **Título del control**
-- **Estado:** refleja el estado de prueba de las acciones de mejora dentro del control 
-    - **Pasado:** todas las acciones de mejora tienen un estado de prueba de "pasado", o al menos se pasa una y el resto está "fuera del ámbito"
-    -  **Error:** al menos una acción de mejora tiene un estado de prueba de "error"
-    - **Ninguno:** no se han probado todas las acciones de mejora
-    - **Fuera del ámbito:** todas las acciones de mejora están fuera del ámbito de esta evaluación
-    - **En curso:** las acciones de mejora tienen un estado distinto de los enumerados anteriormente, que podría incluir "en curso", "crédito parcial" o "no detectado"
-- **Identificador de** control: número de identificación del control, asignado por su reglamento, estándar o directiva correspondientes
-- **Puntos logrados:** el número de puntos ganados al completar acciones, del número total de puntos alcanzables 
-- **Tus acciones:** el número de acciones completadas fuera del número total de acciones que se realizarán
-- **Acciones de Microsoft:** el número de acciones completadas por Microsoft
+- **Estado**: refleja el estado de prueba de las acciones de mejora dentro del control 
+    - **Pasado** : todas las acciones de mejora tienen un estado de prueba de "pasado", o al menos se pasa una y el resto está "fuera del ámbito"
+    -  **Error** : al menos una acción de mejora tiene un estado de prueba de "error"
+    - **Ninguno** : no se han probado todas las acciones de mejora
+    - **Fuera del ámbito** : todas las acciones de mejora están fuera del ámbito de esta evaluación
+    - **En curso** : las acciones de mejora tienen un estado distinto de los enumerados anteriormente, que podría incluir "en curso", "crédito parcial" o "no detectado"
+- **Identificador de** control: el número de identificación del control, asignado por su reglamento, estándar o directiva correspondientes
+- **Puntos logrados**: el número de puntos obtenidos al completar acciones, del número total de puntos alcanzables 
+- **Tus acciones**: el número de acciones completadas del número total de acciones que se realizarán
+- **Acciones de Microsoft**: el número de acciones completadas por Microsoft
 
 Para ver los detalles de un control, selecciónelo en su fila de la tabla. La página de detalles del control muestra un gráfico que indica el estado de prueba de las acciones dentro de ese control. Una tabla debajo del gráfico muestra acciones clave de mejora para ese control.
 
@@ -156,9 +156,9 @@ Seleccione una acción de mejora de la lista para profundizar en la página de d
 
 ### <a name="your-improvement-actions-tab"></a>Pestaña Acciones de mejora
 
-La pestaña de las acciones de mejora enumera todos los controles de la evaluación que administra la organización. La barra de estado detalla el estado agregado de las acciones de mejora en la evaluación para que pueda medir rápidamente lo que se ha probado y lo que aún debe hacerse. Debajo de la barra se encuentra la lista completa de acciones de mejora y detalles clave, incluidos: estado de prueba, número de puntos potenciales y ganados, normativas y estándares asociados, solución aplicable, tipo de acción y familia de controles. Obtenga más información sobre [cómo contribuyen las acciones a la puntuación de cumplimiento](compliance-score-calculation.md#action-types-and-points).
+La pestaña de las acciones de mejora enumera todos los controles de la evaluación que administra la organización. La barra de estado detalla el estado agregado de las acciones de mejora en la evaluación para que pueda medir rápidamente lo que se ha probado y lo que aún debe hacerse. Debajo de la barra se encuentra la lista completa de acciones de mejora y detalles clave, incluidos: estado de prueba, número de puntos potenciales y ganados, normativas y estándares asociados, solución aplicable, tipo de acción y familia de controles. Obtenga más información sobre [cómo las acciones contribuyen a la puntuación de cumplimiento](compliance-score-calculation.md#action-types-and-points).
 
-Seleccione una acción de mejora para ver su página de detalles y seleccione **el** vínculo Iniciar ahora para abrir la solución para realizar acciones.
+Seleccione una acción de mejora para ver su página de detalles y **seleccione el vínculo** Iniciar ahora para abrir la solución para realizar acciones.
 
 ### <a name="microsoft-actions-tab"></a>Pestaña Acciones de Microsoft
 
@@ -172,7 +172,7 @@ Cuando una actualización esté disponible para una evaluación, verá una notif
 
 ### <a name="what-causes-an-update"></a>Qué causa una actualización
 
-Una actualización de evaluación se produce cuando hay cambios de plantilla subyacentes que afectan a la puntuación. Los cambios pueden implicar ajustar la asignación de control u otras instrucciones basadas en cambios normativos o cambios en el producto. Las actualizaciones de evaluación pueden originarse en su organización (por ejemplo, cuando se modifica una [plantilla personalizada,](compliance-manager-templates-modify.md) así como desde Microsoft.
+Una actualización de evaluación se produce cuando hay cambios de plantilla subyacentes que afectan a la puntuación. Los cambios pueden implicar ajustar la asignación de control u otras instrucciones basadas en cambios normativos o cambios en el producto. Las actualizaciones de evaluación pueden originarse en su organización (por ejemplo, cuando se modifica una [plantilla personalizada](compliance-manager-templates-modify.md) , así como desde Microsoft.
 
 Si Microsoft actualiza una plantilla del Administrador de cumplimiento que extendió, la evaluación heredará dichas actualizaciones una vez que las acepte. La evaluación conservará los atributos adicionales que aplicó a la evaluación cuando la extendió.
 
@@ -199,11 +199,11 @@ Después de seleccionar **Revisar actualización en** la página detalles de la 
 - Información general que explica la actualización
 - Detalles específicos sobre los cambios, incluido el impacto en la puntuación de cumplimiento, la cantidad de progreso hacia la finalización de la evaluación y el número específico de cambios en las acciones y controles de mejora.
 
-Al seleccionar el **vínculo Plantilla** actualizada, se descargará un archivo Excel que contenga datos de control para la versión de la plantilla con las actualizaciones pendientes. Al seleccionar el **vínculo Plantilla actual,** se descarga un archivo de la plantilla existente sin los cambios.
+Al seleccionar el **vínculo Plantilla** actualizada, se descargará un archivo Excel que contenga datos de control para la versión de la plantilla con las actualizaciones pendientes. Al seleccionar el **vínculo Plantilla actual** , se descarga un archivo de la plantilla existente sin los cambios.
 
 Para aceptar la actualización y realizar los cambios en la evaluación, seleccione **Aceptar actualización**. Los cambios aceptados son permanentes.
 
-Si selecciona **Cancelar,** la actualización no se aplicará a la evaluación. Sin embargo, seguirás consultando la notificación **De actualización** pendiente hasta que aceptes la actualización.
+Si selecciona **Cancelar**, la actualización no se aplicará a la evaluación. Sin embargo, seguirás consultando la notificación **De actualización** pendiente hasta que aceptes la actualización.
 
 **Por qué se recomienda aceptar actualizaciones**
 
@@ -229,13 +229,11 @@ Al eliminar una evaluación, se elimina de la lista de la página de evaluacione
 
 Para eliminar una evaluación, siga los pasos siguientes:
 
-1. En la **página de evaluaciones,** seleccione la evaluación que desea eliminar para abrir la página de detalles de esa evaluación.
+1. En la **página de evaluaciones** , seleccione la evaluación que desea eliminar para abrir la página de detalles de esa evaluación.
 
 2. Seleccione **Eliminar evaluación** en la esquina superior derecha de la pantalla.
 
 3. Aparecerá una ventana que le pedirá que confirme que desea eliminar permanentemente la evaluación. Seleccione **Eliminar evaluación** para cerrar la ventana. Recibirá una ventana de confirmación de que la evaluación se eliminó del Administrador de cumplimiento.
-
-Si elimina la única evaluación de un grupo, ese grupo también se elimina del Administrador de cumplimiento.
 
 > [!NOTE]
 > No puede eliminar todas las evaluaciones. Las organizaciones necesitan al menos una evaluación para que el Administrador de cumplimiento funcione correctamente. Si la evaluación que desea eliminar es la única, agregue otra evaluación antes de eliminar la otra evaluación.

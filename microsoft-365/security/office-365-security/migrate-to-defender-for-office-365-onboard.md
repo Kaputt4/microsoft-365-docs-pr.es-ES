@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Complete los pasos para migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a40ee22ee843d250c90a8b03526ab61fe3ad56f6
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 3798bdb28bb44b5148574b4c09a372ff564e47e5
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60804646"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321440"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrar a Microsoft Defender para Office 365- Fase 3: Incorporación
 
@@ -37,7 +37,7 @@ ms.locfileid: "60804646"
 |---|---|---|
 |||*¡Estás aquí!*|
 
-Bienvenido a **la fase 3: Incorporación** de la migración a Microsoft Defender para **[Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! Esta fase de migración incluye los siguientes pasos:
+Bienvenido a **la fase 3: Incorporación** de la **[migración a Microsoft Defender para Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! Esta fase de migración incluye los siguientes pasos:
 
 1. [Empezar a incorporar seguridad Teams](#step-1-begin-onboarding-security-teams)
 2. [(Opcional) Eximir a los usuarios piloto del filtrado por el servicio de protección existente](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
@@ -54,12 +54,12 @@ Si su organización tiene un equipo de respuesta de seguridad, ahora es el momen
 
 - Obtenga información sobre las nuevas herramientas e inténtelas en los flujos existentes. Por ejemplo:
   - La administración de los mensajes en cuarentena es importante. Para obtener instrucciones, consulte [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
-  - El seguimiento de mensajes le permite ver lo que sucedió con los mensajes a medida que entran o dejan Microsoft 365. Para obtener más información, vea [Seguimiento de mensajes en el centro](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)de administración Exchange moderna en Exchange Online .
+  - El seguimiento de mensajes le permite ver lo que sucedió con los mensajes a medida que entran o dejan Microsoft 365. Para obtener más información, vea [Seguimiento de mensajes en el centro de administración Exchange moderna en Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identificar los riesgos que se pueden haber dejado entrar en la organización.
 - Ajustar y personalizar [alertas para](../../compliance/alert-policies.md) procesos organizativos.
 - Administre la cola de incidentes y corrija los posibles riesgos.
 
-Si su organización ha comprado Microsoft Defender para Office 365 Plan 2, debe empezar a familiarizarse con y usar características como explorador de amenazas, búsqueda avanzada e incidentes. Para obtener cursos relevantes, vea <https://aka.ms/mdoninja> .
+Si su organización ha comprado Microsoft Defender para Office 365 Plan 2, debe empezar a familiarizarse con y usar características como explorador de amenazas, búsqueda avanzada e incidentes. Para obtener cursos relevantes, vea <https://aka.ms/mdoninja>.
 
 Si el equipo de respuesta de seguridad recopila y analiza mensajes sin filtrar, puede configurar un buzón de SecOps para recibir estos mensajes sin filtrar. Para obtener instrucciones, vea [Configure SecOps mailboxes in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -72,22 +72,22 @@ Para obtener más información acerca de la integración con SIEM/SOAR, consulte
 - [API de Búsqueda avanzada de amenazas](/microsoft-365/security/defender/api-advanced-hunting)
 - [API de incidentes](/microsoft-365/security/defender/api-incident)
 
-Si su organización no tiene un equipo de respuesta de seguridad o flujos de procesos existentes, puede usar este tiempo para familiarizarse con las características básicas de búsqueda y respuesta en Defender para Office 365. Para obtener más información, vea [Threat investigation and response](office-365-ti.md).
+Si su organización no tiene un equipo de respuesta de seguridad o flujos de procesos existentes, puede usar este tiempo para familiarizarse con las características básicas de búsqueda y respuesta en Defender para Office 365. Para obtener más información, vea [Investigación y respuesta de amenazas](office-365-ti.md).
 
 ### <a name="rbac-roles"></a>Roles RBAC
 
-Los permisos de Defender para Office 365 se basan en el control de acceso basado en roles (RBAC) y se explican en Permisos en el [portal de](permissions-microsoft-365-security-center.md)Microsoft 365 Defender . Estos son los puntos importantes a tener en cuenta:
+Los permisos de Defender para Office 365 se basan en el control de acceso basado en roles (RBAC) y se explican en Permisos en el [portal de Microsoft 365 Defender funciones](permissions-microsoft-365-security-center.md). Estos son los puntos importantes a tener en cuenta:
 
 - Azure AD roles dan permisos a **todas las** cargas de trabajo de Microsoft 365. Por ejemplo, si agrega un usuario al administrador de seguridad en Azure Portal, tienen permisos de administrador de seguridad en todas partes.
-- Los & de colaboración de correo electrónico en el portal de Microsoft 365 Defender conceden permisos al portal de Microsoft 365 Defender, al Centro de cumplimiento de Microsoft 365 y al centro de cumplimiento de & seguridad anterior. Por ejemplo, si agrega un usuario al administrador de seguridad en el  portal de Microsoft 365 Defender, solo tienen acceso de administrador de seguridad en el Portal de Microsoft 365 Defender, el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad & cumplimiento.
-- Muchas características del portal de Microsoft 365 Defender se basan en cmdlets de PowerShell de Exchange Online y, por lo tanto, requieren la pertenencia a grupos de roles en los roles correspondientes (técnicamente, grupos de roles) en Exchange Online (en particular, para obtener acceso Exchange Online Cmdlets de PowerShell).
+- Los & de colaboración de correo electrónico en el portal de Microsoft 365 Defender conceden permisos al portal de Microsoft 365 Defender, al Centro de cumplimiento de Microsoft 365 y al centro de cumplimiento de & seguridad anterior. Por ejemplo, si agrega un usuario al administrador de seguridad en el portal de Microsoft 365 Defender, solo tendrán acceso de administrador de seguridad  en el Portal de Microsoft 365 Defender, el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad & cumplimiento.
+- Muchas características del portal de Microsoft 365 Defender se basan en cmdlets de PowerShell de Exchange Online y, por lo tanto, requieren la pertenencia a grupos de roles en los roles correspondientes (técnicamente, grupos de roles) en Exchange Online (en particular, para obtener acceso Exchange Online  Cmdlets de PowerShell).
 - Hay roles de colaboración de correo electrónico & en el portal de Microsoft 365 Defender que no tienen equivalente Azure AD roles y son importantes para las operaciones de seguridad (por ejemplo, el rol Vista previa y el rol Buscar y purgar).
 
 Normalmente, solo un subconjunto de personal de seguridad necesitará derechos adicionales para descargar mensajes directamente desde los buzones de usuario. Esto requiere un permiso adicional que el Lector de seguridad no tiene de forma predeterminada.
 
 ## <a name="step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service"></a>Paso 2: (opcional) Eximir a los usuarios piloto del filtrado por el servicio de protección existente
 
-Aunque este paso no es necesario, debe considerar la posibilidad de configurar los usuarios piloto para omitir el filtrado por parte del servicio de protección existente. Esta acción permite a Defender Office 365 **controlar** todas las tareas de filtrado y protección para los usuarios piloto. Si no exime a los usuarios piloto del servicio de protección existente, Defender for Office 365 funciona de forma eficaz solo en las pérdidas del otro servicio (filtrando mensajes que ya se han filtrado).
+Aunque este paso no es necesario, debe considerar la posibilidad de configurar los usuarios piloto para omitir el filtrado por parte del servicio de protección existente. Esta acción permite a Defender **Office 365 controlar todas** las tareas de filtrado y protección para los usuarios piloto. Si no exime a los usuarios piloto del servicio de protección existente, Defender for Office 365 funciona de forma eficaz solo en las pérdidas del otro servicio (filtrando mensajes que ya se han filtrado).
 
 > [!NOTE]
 > Este paso es explícitamente necesario si el servicio de protección actual proporciona ajuste de vínculos, pero desea realizar pruebas piloto Caja fuerte vínculos. No se admite el ajuste doble de vínculos.
@@ -110,7 +110,7 @@ Después de tener suficiente tiempo para observar los resultados de la protecci�
 
 - Protección de suplantación de usuario: **ponga en cuarentena el mensaje** para Standard y Strict.
 - Protección de suplantación de dominio: **ponga en cuarentena el mensaje** para Standard y Strict.
-- Protección de inteligencia de buzones de correo: mover el mensaje a las **carpetas de correo no** deseado de los destinatarios para Standard; **Poner en cuarentena el mensaje** para Strict.
+- Protección de inteligencia de buzones de correo: **mover el mensaje a las carpetas de correo no deseado de los destinatarios** para Standard; **Poner en cuarentena el mensaje** para Strict.
 
 Cuanto más tiempo monitoree los resultados de la protección de suplantación sin actuar en los mensajes, más datos tendrá que identificar los bloqueos o los posibles bloqueos necesarios. Considere la posibilidad de usar un retraso entre activar cada protección que sea lo suficientemente importante como para permitir la observación y el ajuste.
 
@@ -119,41 +119,41 @@ Cuanto más tiempo monitoree los resultados de la protección de suplantación s
 
 ### <a name="tune-mailbox-intelligence"></a>Ajustar la inteligencia de buzones
 
-Aunque la inteligencia de buzones de correo [](impersonation-insight.md)se ha configurado para no realizar ninguna acción en los mensajes que se determinaron como intentos de suplantación, ha estado en y aprendiendo los patrones de envío y recepción de correo electrónico de los usuarios piloto. Si un usuario externo está en contacto con uno de los usuarios piloto, los mensajes de ese usuario externo no se identificarán como intentos de suplantación por parte de la inteligencia de buzones (lo que reduce los falsos positivos).
+Aunque la inteligencia de buzones de correo se ha configurado para no realizar ninguna acción en los mensajes que se determinaron como intentos de suplantación [, ha](impersonation-insight.md) estado en y aprendiendo los patrones de envío y recepción de correo electrónico de los usuarios piloto. Si un usuario externo está en contacto con uno de los usuarios piloto, los mensajes de ese usuario externo no se identificarán como intentos de suplantación por parte de la inteligencia de buzones (lo que reduce los falsos positivos).
 
 Cuando esté listo, siga estos pasos para permitir que la inteligencia de buzones actúe en los mensajes detectados como intentos de suplantación:
 
-- En la directiva contra suplantación de identidad con la configuración de protección estándar, cambie el valor de If **mailbox intelligence detects an suersonated user** to Move message to **recipients' Junk Email folders**.
+- En la directiva contra suplantación de identidad con la configuración de protección estándar, cambie el valor de Si la inteligencia de **buzones** detecta un usuario suplantado para mover el mensaje a las **carpetas** de correo no deseado de los destinatarios.
 
-- En la directiva contra suplantación de identidad con la configuración de protección estricta, cambie el valor de **If mailbox intelligence detects and suersonated user** from to Quarantine the **message**.
+- En la directiva contra suplantación de identidad con la configuración de protección estricta, cambie el valor de **If mailbox intelligence detects and suersonated user** from to **Quarantine the message**.
 
-Para modificar las directivas, vea [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+Para modificar las directivas, consulte [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 Después de haber observado los resultados y realizado los ajustes, vaya a la siguiente sección para poner en cuarentena los mensajes detectados por la suplantación de usuario.
 
 ### <a name="tune-user-impersonation-protection"></a>Ajustar la protección de suplantación de usuario
 
-En ambas directivas contra la suplantación de identidad basadas en la configuración estándar y estricta, cambie el valor de **If message is detected as an suersonated user to** Quarantine the **message**.
+En ambas directivas contra suplantación de identidad basadas en la configuración estándar y estricta, cambie el valor de **If message is detected as an suersonated user to** **Quarantine the message**.
 
 Compruebe la [información de suplantación](impersonation-insight.md) para ver lo que se está bloqueando como intentos de suplantación de usuario.
 
-Para modificar las directivas, vea [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+Para modificar las directivas, consulte [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 Después de haber observado los resultados y realizado los ajustes, vaya a la siguiente sección para poner en cuarentena los mensajes detectados por suplantación de dominio.
 
 ### <a name="tune-domain-impersonation-protection"></a>Ajustar la protección de suplantación de dominio
 
-En ambas directivas contra suplantación de identidad basadas en la configuración estándar y estricta, cambie el valor de **If message is detected as an suersonated domain** a Quarantine the **message**.
+En ambas directivas contra suplantación de identidad basadas en la configuración estándar y estricta, cambie el valor de **If message is detected as an suersonated domain** a **Quarantine the message**.
 
 Compruebe la [información de suplantación](impersonation-insight.md) para ver lo que se está bloqueando como intentos de suplantación de dominio.
 
-Para modificar las directivas, vea [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+Para modificar las directivas, consulte [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 Observe los resultados y realice los ajustes necesarios.
 
 ## <a name="step-5-use-data-from-user-submissions-to-measure-and-adjust"></a>Paso 5: Usar datos de envíos de usuarios para medir y ajustar
 
-A medida que los usuarios piloto informen de falsos positivos y falsos negativos, los mensajes aparecerán en la página Envíos del [portal de Microsoft 365 Defender.](admin-submission.md) Puede notificar los mensajes mal identificados a Microsoft para su análisis y usar la información para ajustar la configuración y las excepciones en las policías piloto según sea necesario.
+A medida que los usuarios piloto informen de falsos positivos y falsos negativos, los mensajes aparecerán en la página [Envíos del portal de Microsoft 365 Defender web](admin-submission.md). Puede notificar los mensajes mal identificados a Microsoft para su análisis y usar la información para ajustar la configuración y las excepciones en las policías piloto según sea necesario.
 
 Use las siguientes características para supervisar e iterar la configuración de protección en Defender para Office 365:
 
@@ -171,11 +171,11 @@ Si su organización usa un servicio de terceros para los informes de usuario, pu
 A medida que encuentre y solucione problemas, puede agregar más usuarios a los grupos piloto (y, en consecuencia, eximir a los nuevos usuarios piloto del examen por el servicio de protección existente según corresponda). Entre más pruebas realice ahora, menos problemas de usuario tendrá que tratar más adelante. Este enfoque de "cascada" permite ajustar con partes más grandes de la organización y da a los equipos de seguridad tiempo para ajustarse a las nuevas herramientas y procesos.
 
 - Microsoft 365 genera alertas cuando las directivas de la organización permiten mensajes de suplantación de identidad de elevada confianza. Para identificar estos mensajes, tiene las siguientes opciones:
-  - Invalidaciones en el informe [de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
+  - Invalida en el informe [de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
   - Filtra en el Explorador de amenazas para identificar los mensajes.
   - Filtra en Búsqueda avanzada para identificar los mensajes.
 
-  Notificar cualquier falso positivo a Microsoft lo antes posible a través de envíos de administrador, use la característica [Permitir espacio empresarial/Lista](tenant-allow-block-list.md) de bloqueo para configurar invalidaciones seguras para esos falsos positivos.
+  Notificar cualquier falso positivo a Microsoft lo antes posible a través de envíos de administrador, use la característica [Permitir espacio empresarial/](tenant-allow-block-list.md) Lista de bloqueo para configurar invalidaciones seguras para esos falsos positivos.
 
 - También es buena idea examinar invalidaciones innecesarias. En otras palabras, mira los veredictos que Microsoft 365 hubiera proporcionado en los mensajes. Si Microsoft365 representó el veredicto correcto, la necesidad de invalidación se reduce o elimina en gran parte.
 
@@ -210,8 +210,8 @@ Puede pausar en esta fase para obtener más optimización y registro de datos a 
 >
 > - Antes de cambiar los registros MX, compruebe que la siguiente configuración no está habilitada en el conector entrante desde el servicio de protección a Microsoft 365. Normalmente, el conector tendrá una o varias de las siguientes opciones configuradas:
 >
->   - **y requerir que el nombre de sujeto en** el certificado que el asociado usa para autenticarse con Office 365 coincide con este nombre de dominio (*RestrictDomainsToCertificate*)
->   - **Rechazar mensajes de correo electrónico si no se envían desde este intervalo de direcciones IP** (*RestrictDomainsToIPAddresses*)
+>   - **y requerir que el nombre de sujeto en** el certificado que el asociado usa para autenticar con Office 365 coincide con este nombre de dominio (*RestrictDomainsToCertificate*)
+>   - **Rechazar mensajes de correo electrónico si no se envían desde este intervalo** de direcciones IP (*RestrictDomainsToIPAddresses*)
 >
 >   Si el tipo de conector es **Partner** y cualquiera de estas opciones de configuración está activada, se producirá un error en toda la entrega de correo a los dominios después de cambiar los registros MX. Debe deshabilitar esta configuración antes de continuar. Si el conector es un conector local que se usa para híbrido, no es necesario modificar el conector local. Sin embargo, aún puede comprobar la presencia de un **conector de** partner.
 >   
@@ -223,10 +223,10 @@ No dude en pausar y evaluar aquí en cualquier momento. Pero, recuerde: una vez 
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-¡Enhorabuena! Ha completado la migración [a Microsoft Defender para Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Dado que ha seguido los pasos de esta guía de migración, los primeros días en los que el correo se entrega directamente en Microsoft 365 debe ser mucho más suave.
+¡Enhorabuena! Has completado la migración [a Microsoft Defender para Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Dado que ha seguido los pasos de esta guía de migración, los primeros días en los que el correo se entrega directamente en Microsoft 365 debe ser mucho más suave.
 
-Ahora comienza el funcionamiento normal y el mantenimiento de Defender para Office 365. Supervise y observe problemas similares a los que experimentó durante el piloto, pero a mayor escala. La [información de inteligencia](learn-about-spoof-intelligence.md) [](impersonation-insight.md) suplantación y la información de suplantación serán más útiles, pero considere la posibilidad de convertir las siguientes actividades en una repetición regular:
+Ahora comienza el funcionamiento normal y el mantenimiento de Defender para Office 365. Supervise y observe problemas similares a los que experimentó durante el piloto, pero a mayor escala. La [información de inteligencia](learn-about-spoof-intelligence.md) suplantación y [](impersonation-insight.md) la información de suplantación serán más útiles, pero considere la posibilidad de convertir las siguientes actividades en una repetición regular:
 
-- Revise los envíos de usuarios, especialmente los mensajes de [suplantación de identidad notificados por el usuario.](/microsoft-365/security/office-365-security/automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)
-- Revisar invalidaciones en el informe [de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
+- Revisar los envíos de usuarios, especialmente [los mensajes de suplantación de identidad notificados por el usuario](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)
+- Revise los reemplazos en el informe [de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
 - Usa [consultas de](/microsoft-365/security/defender/advanced-hunting-example) búsqueda avanzada para buscar oportunidades de ajuste y mensajes arriesgados.

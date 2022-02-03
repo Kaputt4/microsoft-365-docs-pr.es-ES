@@ -17,24 +17,24 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Determine las normativas de privacidad de datos, los escenarios relevantes, la preparación y los tipos de información confidencial que se encuentran en su Microsoft 365 datos.
-ms.openlocfilehash: ebad5531ddd0343bb262fde1569811fcc02b993b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f8b5844ad3db4152a6144f9506a0267fa3af8f2
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199290"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320756"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de datos e identificar elementos confidenciales con Microsoft 365
 
-Evaluar los riesgos y regulaciones de privacidad de datos a los que está sujeta su organización es un primer paso clave antes de implementar cualquier acción de mejora relacionada, incluidas las que se pueden lograr con Microsoft 365 características y servicios.
+Evaluar los riesgos y regulaciones de privacidad de datos a los que está sujeta su organización es un primer paso antes de implementar cualquier acción de mejora relacionada, incluidas las acciones alcanzables con Microsoft 365 características y servicios.
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>Normativas de privacidad de datos potencialmente aplicables
 
-Para obtener una buena referencia sobre el marco normativo más amplio para las normativas de privacidad de datos, vea [el Portal](https://servicetrust.microsoft.com/) de confianza de servicios de Microsoft y la serie de artículos sobre el reglamento del Reglamento general de protección de datos [(RGPD),](/compliance/regulatory/gdpr)así como otros materiales sobre las normativas a las que puede estar sujeto en su industria o región.
+Para obtener una buena referencia sobre el marco normativo más amplio para las normativas de privacidad de datos, vea [el Portal](https://servicetrust.microsoft.com/) de confianza de servicios de Microsoft y la serie de artículos sobre el Reglamento general de protección de datos [(RGPD](/compliance/regulatory/gdpr)). Revise también los materiales de las normativas a las que puede estar sujeto en su industria o región.
 
 ### <a name="gdpr"></a>RGPD
 
-El RGPD, el más conocido y citado de las normativas de privacidad de datos, regula la recopilación, el almacenamiento, el procesamiento y el uso compartido de los datos personales relacionados con una persona física identificada o identificable que sea residente de la Unión Europea (UE).
+El RGPD es el reglamento de privacidad de datos más conocido y citado. Regula la recopilación, el almacenamiento, el procesamiento y el uso compartido de los datos personales relacionados con una persona física identificada o identificable que sea residente de la Unión Europea (UE).
 
 Según el artículo 4 del RGPD:
 
@@ -48,7 +48,7 @@ El cumplimiento de otros estándares como ISO 27001 también ha sido reconocido 
 
 Otras normativas de privacidad de datos destacadas también especifican requisitos para el tratamiento de datos personales.
 
-En los Estados Unidos, se incluyen la Ley de protección del consumidor de California[(CCPA),](/compliance/regulatory/ccpa-faq)HIPAA-HITECH (ley de privacidad de cuidado de la salud de los Estados Unidos) y la Ley de Bliley de Graham Leach (GLBA). Las normativas adicionales específicas del estado también están en vigor o en desarrollo.
+En los Estados Unidos, se incluyen la Ley de protección del consumidor de California ([CCPA](/compliance/regulatory/ccpa-faq)), hipaa-hitech (ley de privacidad de cuidado de la salud de los Estados Unidos) y la ley de Bliley de Graham Leach (GLBA). Las normativas adicionales específicas del estado también están en vigor o en desarrollo.
 
 En todo el mundo, ejemplos adicionales incluyen la Ley de implementación del RGPD nacional de Alemania (BDSG), la Ley de protección de datos de Brasil (LGPD) y muchos otros.
 
@@ -172,13 +172,13 @@ La mayoría de las organizaciones estarán expuestas a uno de los escenarios ant
 
 ## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Paso 2: Evaluar su preparación para cumplir con las normativas de privacidad de datos
 
-Aunque son específicas del RGPD, las preguntas que se plantean en la herramienta gratuita de evaluación del RGPD de [Microsoft](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) proporcionan un buen comienzo para comprender la preparación general de la privacidad de los datos.
+Aunque son específicas del RGPD, las preguntas que se plantean en la herramienta gratuita de evaluación del [RGPD de Microsoft](https://clouddamcdnprodep.azureedge.net/gdc/1863571/original) proporcionan un buen comienzo para comprender la preparación general de la privacidad de los datos.
 
 Las organizaciones sujetas a otras normativas de privacidad de datos, como CCPA en los Estados Unidos o LGPD de Brasil, también pueden beneficiarse del inventario de preparación de esta herramienta debido a las disposiciones superpuestas con el RGPD.
 
 La evaluación del RGPD consta de estas secciones:
 
-|Section|Descripción|
+|Sección|Descripción|
 |:-------|:-----|
 |Gobierno|<ol><li>¿La directiva de privacidad establece explícitamente qué información de datos se está procesando? </li><li>¿Ejecuta periódicamente evaluaciones de impacto en la privacidad (CA)? </li><li> ¿Usa una herramienta para administrar la información personal (PI)? </li><li> ¿Tiene autoridad legal para llevar a cabo negocios con datos de PI en una determinada persona? ¿Realiza un seguimiento del consentimiento de los datos? </li><li> ¿Realiza un seguimiento, implementa y administra controles de auditoría? ¿Supervisa las pérdidas de datos? </li></ol>|
 |Eliminación y notificación|<ol><li>¿Da instrucciones explícitas sobre cómo se puede acceder a los datos de los usuarios? </li><li> ¿Tiene procesos documentados para controlar el consentimiento de no participar? </li><li> ¿Tiene un proceso de eliminación automatizada para los datos? </li><li> ¿Tiene un proceso para validar la identidad al interactuar con un cliente? </li></ol>|
@@ -192,7 +192,7 @@ Este paso implica la identificación de tipos de información confidencial espec
 
 Encontrar contenido en el entorno que contenga personal puede ser una tarea formidable, que anteriormente implicaba una combinación de usar búsqueda de cumplimiento, exhibición de documentos electrónicos, Advanced eDiscovery, DLP y auditoría.
 
-Con la  nueva solución de clasificación de datos en el [](../compliance/data-classification-content-explorer.md) Centro de administración de Cumplimiento de Microsoft, esto se ha vuelto mucho más fácil con la funcionalidad explorador de contenido, que funciona con tipos de información confidencial integrados o personalizados, incluidos los relacionados con datos personales.
+Con la nueva  solución de clasificación de datos en el Centro de administración de Cumplimiento de Microsoft, esto se [](../compliance/data-classification-content-explorer.md) ha vuelto mucho más fácil con la funcionalidad explorador de contenido, que funciona con tipos de información confidencial integrados o personalizados, incluidos los relacionados con datos personales.
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
@@ -216,7 +216,7 @@ Vea estos artículos para obtener más información:
 
 ### <a name="content-explorer"></a>Explorador de contenido
 
-Una herramienta importante que para determinar la aparición de [](../compliance/data-classification-content-explorer.md) elementos confidenciales en su entorno es el nuevo Explorador de contenido en el centro de administración Microsoft 365 cumplimiento. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción Microsoft 365 para la aparición de tipos de información confidencial y la presentación de los resultados.
+Una herramienta importante que para determinar la aparición de elementos confidenciales en su entorno es el [](../compliance/data-classification-content-explorer.md) nuevo Explorador de contenido en el centro de administración Microsoft 365 cumplimiento. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción Microsoft 365 para la aparición de tipos de información confidencial y la presentación de los resultados.
 
 La nueva herramienta explorador de contenido le permite identificar rápidamente las ubicaciones de elementos confidenciales en su entorno, con tipos de información confidencial integrados o personalizados. Esto puede implicar el establecimiento de un proceso y la responsabilidad asignada de investigar periódicamente la presencia y ubicación de elementos confidenciales.
 
@@ -226,9 +226,9 @@ Junto con los otros pasos resaltados en este artículo, esto proporciona un punt
 
 Además del Explorador de contenido, las organizaciones tienen acceso a la funcionalidad búsqueda de contenido para producir búsquedas personalizadas para buscar datos personales en su entorno, mediante criterios de búsqueda avanzados y filtros personalizados.
 
-En este artículo se proporcionan instrucciones detalladas sobre el uso de la búsqueda de contenido para la detección de [datos personales.](/compliance/regulatory/gdpr) La búsqueda de contenido y otras técnicas de detección también se exploran en [los DSR para el RGPD y el CCPA.](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs)
+En este artículo se proporcionan instrucciones detalladas sobre el uso de la búsqueda de contenido para la detección [de datos personales](/compliance/regulatory/gdpr). La búsqueda de contenido y otras técnicas de detección también se exploran en [los DSR para el RGPD y el CCPA](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs).
 
-En el artículo supervisar y responder se proporcionan información adicional sobre las técnicas de investigación y corrección de datos personales Microsoft 365 en el [artículo de supervisión y respuesta](information-protection-deploy-monitor-respond.md).
+En el artículo de supervisión y respuesta se proporcionan información adicional sobre las técnicas de investigación y corrección para los datos personales de Microsoft 365 [datos personales](information-protection-deploy-monitor-respond.md).
 
 > [!NOTE]
 > Para encontrar la información confidencial que tiene en los archivos almacenados localmente, consulte [Azure Information Protection](/azure/information-protection/quickstart-findsensitiveinfo).

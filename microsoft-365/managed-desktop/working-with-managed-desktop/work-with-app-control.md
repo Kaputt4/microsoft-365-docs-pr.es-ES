@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 89ab1bf675c3668e01b31ff380f54ee993205374
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: b87da099ace71b13b03bb9d9247bc4cbfe420dc4
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281416"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322396"
 ---
 # <a name="work-with-app-control"></a>Usar el control de aplicaciones
 
@@ -39,7 +39,6 @@ Cuando abra una solicitud de firmante, primero deberá proporcionar algunos deta
 
 1. [Recopilar detalles del editor](#gather-publisher-details).
 1. Abra un vale con Operaciones de escritorio administrado de Microsoft para solicitar la regla de firmante e incluya los siguientes detalles:  
-
     - Nombre de la aplicación
     - Versión de la aplicación
     - Descripción
@@ -72,7 +71,6 @@ Puede pausar o revertir la implementación en cualquier momento durante el lanza
 1. Abre el Visor de eventos en ese dispositivo.
 1. En el Visor de eventos, vaya **a Registros de aplicaciones y servicios\Microsoft\Windows** y, a continuación, **seleccione AppLocker**.
 1. Busque cualquier **evento 8003** **u 8006** y, a continuación, copie la información del evento:
-
     - Nombre de la aplicación
     - Versión de la aplicación
     - Descripción

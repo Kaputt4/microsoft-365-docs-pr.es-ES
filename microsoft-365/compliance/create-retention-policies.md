@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: dcc3cb8379dd095a110e1307819e9256d9fa84bb
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 3732e254d5b9dad450fd16338acf7a28e07bd8d1
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241544"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321020"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -88,10 +88,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
         - **Chats de Teams**: mensajes de chats privados 1:1, chats grupales y chats de reunión.
         - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados.
         
-       De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](retention-settings.md#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). Pero, antes de cambiar el valor predeterminado, tenga en cuenta las siguientes consecuencias para una directiva de retención que elimina los mensajes cuando está configurada para incluir o excluir:
-        
-        - En el caso de los mensajes de chat grupales y los mensajes de canales privados, debido a que se guarda una copia de los mensajes en el buzón de cada usuario que está incluido en la conversación, se seguirán devolviendo copias de los mensajes en los resultados de eDiscovery de los usuarios a los que no se les asignó la directiva.
-        - Para los usuarios a los que no se les asignó la directiva, los mensajes eliminados como resultado de la directiva se mostrarán en los resultados de búsqueda de Teams, pero no mostrarán el contenido del mensaje.
+       De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](retention-settings.md#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
 5. En la página **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
 

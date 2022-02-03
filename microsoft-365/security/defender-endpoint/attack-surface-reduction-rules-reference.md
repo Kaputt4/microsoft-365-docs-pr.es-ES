@@ -1,5 +1,5 @@
 ---
-title: Reglas de reducción de la superficie expuesta a ataques
+title: Referencia de reglas de reducción de superficie de ataque
 description: Enumera detalles sobre las reglas de reducción de superficie de ataque por regla.
 keywords: Reglas de reducción de superficie de ataque, ASR, reglas asr, hips, sistema de prevención de intrusiones de host, reglas de protección, reglas antiexploit, antiexploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR, descripción de regla ASR
 ms.prod: m365-security
@@ -16,14 +16,15 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a0e69e73da4e8ea7d4935b86af109cd8fef032a3
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
+ms.date: 1/18/2022
+ms.openlocfilehash: ce8bfd2d9b2fc7b45c1fecef69588ba1b834b91b
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993280"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320720"
 ---
-# <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
+# <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie de ataque
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -48,10 +49,10 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 
 > [!Note]
 >
-> - A menos que se indique lo contrario, la compilación mínima Windows 10 es la &nbsp; versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es &nbsp; la versión 1809 o posterior.
+> - A menos que se indique lo contrario, la compilación mínima de Windows&nbsp; 10 es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows&nbsp; Server es la versión 1809 o posterior.
 >
 
-| Nombre de regla | Windows Server &nbsp; 2016 <sup> [[1](#fn1)]<sup></sup> | Windows &nbsp; Server 2012 R2 <sup> [[1](#fn1)]<sup></sup> |
+| Nombre de regla | &nbsp;Windows Server 2016 <sup>[[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
 |[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v | v |
@@ -69,9 +70,9 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 |[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v |
 |[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | v | v |
-| **Nombre de la regla** | **Windows Server &nbsp; 2016** <sup> [[1](#fn1)]<sup></sup> | **Windows &nbsp; Server 2012 R2** <sup> [[1](#fn1)]<sup></sup> |
+| **Nombre de la regla** | **&nbsp;Windows Server 2016** <sup>[[1](#fn1)]<sup></sup> | **&nbsp;Windows Server 2012 R2** <sup>[[1](#fn1)]<sup></sup> |
 
-(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, vea [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, consulte [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 _End Public Preview: Sistemas operativos compatibles_
 
@@ -81,10 +82,10 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 
 > [!Note]
 >
-> - A menos que se indique lo contrario, la compilación mínima Windows 10 es la &nbsp; versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es &nbsp; la versión 1809 o posterior.
+> - A menos que se indique lo contrario, la compilación mínima de Windows&nbsp; 10 es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows&nbsp; Server es la versión 1809 o posterior.
 >
 
-|Nombre de regla|Windows &nbsp; 10|Windows &nbsp; Server 2019|Windows &nbsp; server|
+|Nombre de regla|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
 |[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Versión Y 1803 (canal semianual) o posterior | 
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v  <br><br> |
@@ -108,7 +109,7 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 
 Los vínculos a información sobre las versiones del sistema de administración de configuración a las que se hace referencia en esta tabla se enumeran debajo de esta tabla.
 
-|Nombre de regla | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Directiva de <sup> grupo [[1](#fn1)]<sup></sup> | PowerShell <sup> [[1](#fn1)]<sup></sup>  |
+|Nombre de regla | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Directiva de grupo<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  [compatible](images/checkmark.png) <br><br> |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
@@ -139,9 +140,9 @@ Los vínculos a información sobre las versiones del sistema de administración 
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquear el uso indebido de controladores firmados vulnerables explotados
 
-Esta regla impide que una aplicación escriba un controlador firmado vulnerable en el disco. Las aplicaciones locales que tienen privilegios suficientes para obtener acceso al kernel pueden aprovechar los controladores \- _firmados vulnerables_ en \- el medio natural. Los controladores firmados vulnerables permiten a los atacantes deshabilitar o eludir las soluciones de seguridad, lo que finalmente provoca un riesgo para el sistema.
+Esta regla impide que una aplicación escriba un controlador firmado vulnerable en el disco. Las aplicaciones locales que \- tienen privilegios suficientes para obtener acceso al kernel pueden aprovechar los controladores _firmados vulnerables_ \- en el medio natural. Los controladores firmados vulnerables permiten a los atacantes deshabilitar o eludir las soluciones de seguridad, lo que finalmente provoca un riesgo para el sistema.
 
-La regla Bloquear el uso indebido de controladores **firmados vulnerables** no bloquea la carga de un controlador que ya existe en el sistema.
+La **regla Bloquear el uso indebido de controladores firmados vulnerables** no bloquea la carga de un controlador que ya existe en el sistema.
 
 > [!NOTE]
 >
@@ -149,7 +150,7 @@ La regla Bloquear el uso indebido de controladores **firmados vulnerables** no b
 >
 > También puede configurar esta regla con [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
-> Para que se examine un controlador, use este sitio web para [enviar un controlador para su análisis.](https://www.microsoft.com/en-us/wdsi/driversubmission)
+> Para que se examine un controlador, use este sitio web para [enviar un controlador para su análisis](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 Nombre de Intune: `Block abuse of exploited vulnerable signed drivers` (aún no disponible)
 
@@ -246,7 +247,7 @@ Tipo de acción de búsqueda avanzada:
 Dependencias: MDAV
 
 > [!NOTE]
-> La regla **Bloquear contenido ejecutable del** cliente de correo electrónico y el correo web tiene las siguientes descripciones alternativas, según la aplicación que use:
+> La regla **Bloquear contenido ejecutable del cliente de correo electrónico y el correo web** tiene las siguientes descripciones alternativas, según la aplicación que use:
 >
 > - Intune (perfiles de configuración): la ejecución de contenido ejecutable (exe, dll, ps, js, vbs, etc.) se ha eliminado del correo electrónico (cliente de correo web o correo) (sin excepciones).
 > - Endpoint Manager: bloquear la descarga de contenido ejecutable de clientes de correo electrónico y correo web.
@@ -259,7 +260,7 @@ Esta regla bloquea el inicio de archivos ejecutables, como .exe, .dll o .scr. Po
 > [!IMPORTANT]
 > Debe habilitar [la protección entregada en la nube](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) para usar esta regla.
 >
-> La regla Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de **prevalencia, antigüedad** o lista de confianza con GUID es propiedad de Microsoft y los administradores no `01443614-cd74-433a-b99e-2ecdc07bfc25` los especifican. Esta regla usa la protección entregada en la nube para actualizar su lista de confianza con regularidad.
+> La regla Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia **, antigüedad** o lista de confianza con GUID `01443614-cd74-433a-b99e-2ecdc07bfc25` es propiedad de Microsoft y los administradores no los especifican. Esta regla usa la protección entregada en la nube para actualizar su lista de confianza con regularidad.
 >
 > Puede especificar archivos o carpetas individuales (con rutas de carpeta o nombres de recursos completos), pero no puede especificar a qué reglas o exclusiones se aplican.
 
@@ -360,7 +361,7 @@ Dependencias: MDAV
 
 Esta regla impide que Outlook procesos secundarios, a la vez que permite funciones Outlook legítimas.
 
-Esta regla protege contra los ataques de ingeniería social e impide que el código de explotación abuse de vulnerabilidades en Outlook. También protege contra las Outlook y las vulnerabilidades de formulario [que](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) los atacantes pueden usar cuando las credenciales de un usuario están en peligro.
+Esta regla protege contra los ataques de ingeniería social e impide que el código de explotación abuse de vulnerabilidades en Outlook. También protege contra las Outlook [y](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) las vulnerabilidades de formulario que los atacantes pueden usar cuando las credenciales de un usuario están en peligro.
 
 > [!NOTE]
 > Esta regla bloquea las sugerencias de directiva DLP y las sugerencias de herramientas en Outlook. Esta regla se aplica solo Outlook y Outlook.com.
@@ -402,10 +403,10 @@ Dependencias: MDAV, RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloquear creaciones de proceso que se originen en comandos PSExec y WMI
 
-Esta regla bloquea la ejecución de los procesos [creados a través](/sysinternals/downloads/psexec) de PsExec [y WMI.](/windows/win32/wmisdk/about-wmi) Tanto PsExec como WMI pueden ejecutar código de forma remota, por lo que existe el riesgo de que el malware abuse de esta funcionalidad con fines de comando y control, o de propagar una infección a través de la red de una organización.
+Esta regla bloquea la ejecución de los procesos [creados a través de PsExec](/sysinternals/downloads/psexec) [y WMI](/windows/win32/wmisdk/about-wmi) . Tanto PsExec como WMI pueden ejecutar código de forma remota, por lo que existe el riesgo de que el malware abuse de esta funcionalidad con fines de comando y control, o de propagar una infección a través de la red de una organización.
 
 > [!WARNING]
-> Solo usa esta regla si estás administrando tus dispositivos con [Intune](/intune) u otra solución MDM. Esta regla es incompatible con la administración a [Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
+> Solo usa esta regla si estás administrando tus dispositivos con [Intune](/intune) u otra solución MDM. Esta regla es incompatible con la administración mediante [Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
 
 Nombre de Intune: `Process creation from PSExec and WMI commands`
 
@@ -441,7 +442,7 @@ Dependencias: MDAV
 
 Esta regla impide que las macros de VBA llamen a las API de Win32.
 
-Office VBA habilita las llamadas a la API de Win32. El malware puede abusar de esta funcionalidad, como llamar a las API de [Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) para iniciar el código de shell malintencionado sin escribir nada directamente en el disco. La mayoría de las organizaciones no dependen de la capacidad de llamar a las API de Win32 en su funcionamiento diario, incluso si usan macros de otras maneras.
+Office VBA habilita las llamadas a la API de Win32. El malware puede abusar de esta funcionalidad, como llamar a las [API de Win32 para iniciar el código de shell malintencionado](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) sin escribir nada directamente en el disco. La mayoría de las organizaciones no dependen de la capacidad de llamar a las API de Win32 en su funcionamiento diario, incluso si usan macros de otras maneras.
 
 Sistemas operativos compatibles:
 

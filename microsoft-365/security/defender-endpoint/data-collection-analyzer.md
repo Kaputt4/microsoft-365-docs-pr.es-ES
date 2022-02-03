@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 07660b2d15adae7eb2534b8b9a7bcfbb6b311571
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: ab670be80c34ced9318c51e2de29a9c9226ea17a
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218219"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320828"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a> Recopilación de datos para solucionar problemas avanzados en Windows
 
@@ -33,41 +33,41 @@ ms.locfileid: "61218219"
 
 Al colaborar con profesionales de soporte técnico de Microsoft, es posible que se le pida que use el analizador de cliente para recopilar datos para solucionar problemas de escenarios más complejos. El script del analizador admite otros parámetros para ese fin y puede recopilar un conjunto de registros específico en función de los síntomas observados que deben investigarse.
 
-Ejecute '**MDEClientAnalyzer.cmd /?** para ver la lista de parámetros disponibles y su descripción:
+Ejecute '**MDEClientAnalyzer.cmd /?**' para ver la lista de parámetros disponibles y su descripción:
 
 ![Imagen de los parámetros del analizador de cliente en la línea de comandos.](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
-> Cuando se usa cualquier parámetro de solución de problemas avanzado, el analizador también llama a [MpCmdRun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance) para recopilar Antivirus de Microsoft Defender registros de soporte técnico relacionados.
+> Cuando se usa cualquier parámetro de solución de problemas avanzado, el analizador también llama a [MpCmdRun.exe] [https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus?view=o365-worldwide) para recopilar Antivirus de Microsoft Defender registros de soporte técnico relacionados.
 
-**-h:** llama a [Windows grabadora de](/windows-hardware/test/wpt/wpr-command-line-options) rendimiento para recopilar un seguimiento detallado del rendimiento general además del conjunto de registros estándar.
+**-h**: llama a [Windows grabadora de rendimiento para](/windows-hardware/test/wpt/wpr-command-line-options) recopilar un seguimiento detallado del rendimiento general además del conjunto de registros estándar.
 
-**-l:** llama al monitor de rendimiento Windows [integrado](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) para recopilar un seguimiento ligero de perfmon. Esto puede ser útil al diagnosticar problemas de degradación de rendimiento lento que se producen con el tiempo pero difíciles de reproducir a petición.
+**-l**: llama al monitor de rendimiento [Windows integrado](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) para recopilar un seguimiento ligero de perfmon. Esto puede ser útil al diagnosticar problemas de degradación de rendimiento lento que se producen con el tiempo pero difíciles de reproducir a petición.
 
-**-c:** llamadas al [monitor de procesos](/sysinternals/downloads/procmon) para la supervisión avanzada del sistema de archivos en tiempo real, el Registro y la actividad de procesos/subprocesos. Esto es especialmente útil cuando se solucionan varios escenarios de compatibilidad de aplicaciones.
+**-c** : llamadas al [monitor de procesos](/sysinternals/downloads/procmon) para la supervisión avanzada del sistema de archivos en tiempo real, el Registro y la actividad de procesos/subprocesos. Esto es especialmente útil cuando se solucionan varios escenarios de compatibilidad de aplicaciones.
 
-**-i:** llama al comando integradonetsh.exe [ para](/windows/win32/winsock/netsh-exe) iniciar un seguimiento de firewall de windows y de red que resulta útil para solucionar diversos problemas relacionados con la red.
+**-i** : llama al comando integrado [netsh.exepara iniciar](/windows/win32/winsock/netsh-exe) un seguimiento de firewall de windows y de red que resulta útil para solucionar diversos problemas relacionados con la red.
 
-**-b:** igual que '-c', pero el seguimiento del monitor de proceso se iniciará durante el siguiente arranque y se detendrán solo cuando se vuelva a usar -b.
+**-b** : igual que '-c', pero el seguimiento del monitor de proceso se iniciará durante el siguiente arranque y se detendrán solo cuando se vuelva a usar -b.
 
-**-a:** llama a [Windows Registrador](/windows-hardware/test/wpt/wpr-command-line-options) de rendimiento para recopilar un seguimiento detallado del rendimiento específico del análisis de problemas altos de CPU relacionados con el proceso antivirus (MsMpEng.exe).
+**-a**: llama a [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) para recopilar un seguimiento detallado del rendimiento específico del análisis de problemas de CPU elevada relacionados con el proceso antivirus (MsMpEng.exe).
 
-**-v:** usa antivirus [MpCmdRun.exe argumento de línea de comandos](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) con las marcas -trace más detalladas.
+**-v** : usa antivirus [MpCmdRun.exe argumento de línea de comandos](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus) con las marcas -trace más detalladas.
 
-**-t:** inicia un seguimiento detallado de todos los componentes del lado cliente relevantes para DLP de extremo. Esto es útil para escenarios en los que las [acciones DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) no se están produciendo como se esperaba para los archivos.
+**-t** : inicia un seguimiento detallado de todos los componentes del lado cliente relevantes para DLP de extremo. Esto es útil para escenarios en los que las [acciones DLP](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) no se están produciendo como se esperaba para los archivos.
 
-**-q:** llama DLPDiagnose.ps1 script desde el directorio de herramientas del analizador que valida la configuración básica y los requisitos para DLP de extremo.
+**-q** : llama DLPDiagnose.ps1 script desde el directorio de herramientas del analizador que valida la configuración básica y los requisitos para DLP de extremo.
 
-**-d:** recopila un volcado de memoria de MsSense **S**.exe (el proceso de sensor en el sistema operativo Windows Server 2016 o antiguo) y procesos relacionados.
+**-d**: recopila un volcado de memoria de MsSenseS.exe (el proceso de sensor en el sistema operativo Windows Server 2016 o antiguo) y procesos relacionados.
 
 - \* Esta marca se puede usar junto con las marcas mencionadas anteriormente.
-- \*\* La captura de un volcado de memoria de procesos protegidos por [PPL](/windows-hardware/drivers/install/early-launch-antimalware) como MsSense.exe o MsMpEng.exe no es compatible con el analizador en este momento.
+- \*\* La captura de un volcado de memoria de procesos protegidos por [PPL](/windows-hardware/drivers/install/early-launch-antimalware) , como MsSense.exe o MsMpEng.exe no es compatible con el analizador en este momento.
 
-**-z:** configura las claves del Registro en la máquina para prepararla para la colección de volcados de memoria completa de la máquina a través [de CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard). Esto sería útil para el análisis de problemas de inmovilización del equipo.
+**-z** : configura las claves del Registro en la máquina para prepararla para la colección de volcados de memoria completa a través [de CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard). Esto sería útil para el análisis de problemas de inmovilización del equipo.
 
 \* Mantenga presionada la tecla CTRL situada más a la derecha y, a continuación, presione dos veces la tecla DE BLOQUEO DE DESPLAZAMIENTO.
 
-**-k:** usa [la herramienta NotMyFault](/sysinternals/downloads/notmyfault) para forzar al sistema a bloquearse y generar un volcado de memoria de la máquina. Esto sería útil para analizar varios problemas de estabilidad del sistema operativo.
+**-k** : usa [la herramienta NotMyFault](/sysinternals/downloads/notmyfault) para forzar al sistema a bloquearse y generar un volcado de memoria de la máquina. Esto sería útil para analizar varios problemas de estabilidad del sistema operativo.
 
 El analizador y todas las marcas de escenario anteriores se pueden iniciar de forma remota ejecutando 'RemoteMDEClientAnalyzer.cmd', que también se incluye en el conjunto de herramientas del analizador:
 
@@ -81,6 +81,6 @@ El analizador y todas las marcas de escenario anteriores se pueden iniciar de fo
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >
->   - **-r:** indica que la herramienta se ejecuta desde un contexto remoto (o no interactivo)
->   - **-i:** marca de escenario para la recopilación de seguimiento de red junto con otros registros relacionados
+>   - **-r** : indica que la herramienta se ejecuta desde un contexto remoto (o no interactivo)
+>   - **-i** : marca de escenario para la recopilación de seguimiento de red junto con otros registros relacionados
 >   - **-m** \# - El número de minutos que se ejecutarán (5 minutos en el ejemplo anterior)

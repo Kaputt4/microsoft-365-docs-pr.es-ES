@@ -374,6 +374,12 @@
           href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
         - name: Dar soporte a trabajadores remotos de la Administración Pública con Teams
           href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+    - name: Venta minorista
+      items:
+        - name: Información general
+          href: retail-overview.md
+        - name: Teams para el comercio
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
 - name: Principios de diseño de arquitectura empresarial
   items:
     - name: Información general

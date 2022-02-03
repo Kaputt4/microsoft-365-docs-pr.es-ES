@@ -22,18 +22,18 @@ ms.custom:
 - AdminTemplateSet
 description: Si ha comprado Microsoft 365 Empresa Estándar desde una tienda de comercio al por menor, obtenga información sobre cómo canjear la clave de producto y activar la suscripción.
 ms.date: 11/13/2020
-ms.openlocfilehash: 149fd15529937d3d8301b90ccfeefcd3e76664e0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c45a605346945c1056d708a238b3247c360b70d8
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370109"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322148"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba la clave de producto para Microsoft 365 Empresa Estándar
 
 Si ha comprado Microsoft 365 Empresa Estándar desde una tienda de comercio al por menor, este artículo le ayudará a activar la suscripción.
   
- **¿Necesita algo más?** **Para obtener ayuda con Microsoft 365 Familia o Microsoft 365 Personal**, consulte [Uso de claves de producto con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **¿Necesita algo más?** **Para obtener ayuda con Microsoft 365 Familia o Microsoft 365 Personal**, consulte [Uso de claves de producto con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
  **¿Es un cliente de licencias por volumen?** Si ha comprado Microsoft 365 para empresas a través de un [Programa de licencias abiertas de Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298), consulte el artículo [Introducir la clave de producto adquirida en Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Activar una nueva suscripción

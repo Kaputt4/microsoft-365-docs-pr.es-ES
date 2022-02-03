@@ -16,17 +16,17 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo usar líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: 2af4c374fcbfdd7ee0e1c76e18fd749043851dde
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 23ebc0d0562cf06bd92456e18c0833a61c564673
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372641"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321944"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Introducción al uso de líneas base para implementar configuraciones de inquilino estándar 
 
 > [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplan los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, consulte [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse línea base proporcionan una forma repetible y escalable de evaluar y administrar la configuración de seguridad Microsoft 365 en varios inquilinos de clientes. Las líneas base también ayudan a supervisar las directivas de seguridad principales y los estándares de cumplimiento de inquilinos con configuraciones que protegen usuarios, dispositivos y datos.
 
@@ -42,9 +42,9 @@ Las configuraciones de línea base de la tabla siguiente vienen estándar con la
 
 | Configuración de línea base | Descripción |
 |--|--|
-| Requerir MFA para administradores | Una directiva de acceso condicional de solo informe que requiere autenticación multifactor para los administradores. Es necesario para todas las aplicaciones en la nube. |
-| Requerir MFA para usuarios finales | Una directiva de acceso condicional de solo informe que requiere autenticación multifactor para los usuarios. Es necesario para todas las aplicaciones en la nube. |
-| Bloquear la autenticación heredada | Una directiva de acceso condicional de solo informe para bloquear la autenticación de cliente heredada. |
+| Requerir MFA para administradores | Una directiva de acceso condicional que requiere autenticación multifactor para los administradores. Es necesario para todas las aplicaciones en la nube. |
+| Requerir MFA para usuarios finales | Una directiva de acceso condicional que requiere autenticación multifactor para los usuarios. Es necesario para todas las aplicaciones en la nube. |
+| Bloquear la autenticación heredada | Una directiva de acceso condicional para bloquear la autenticación de cliente heredada. |
 | Configurar la inscripción de dispositivos | Inscripción de dispositivos para permitir que los dispositivos de inquilino se inscriban en Microsoft Endpoint Manager. Para ello, configura la inscripción automática entre Azure Active Directory y Microsoft Endpoint Manager. |
 | Configurar Antivirus de Microsoft Defender para Windows 10 y versiones posteriores | Un perfil de configuración de dispositivo para Windows dispositivos con una configuración Antivirus de Microsoft Defender configuración predeterminada. |
 | Configurar una directiva de cumplimiento de dispositivos para Windows 10 y versiones posteriores | Una Windows de dispositivos con configuraciones preconfiguradas para cumplir los requisitos básicos de cumplimiento. |

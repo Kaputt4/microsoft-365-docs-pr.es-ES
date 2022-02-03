@@ -1,5 +1,5 @@
 ---
-title: Introducción a la implementación de reglas ASR
+title: Introducción a la implementación de reglas de ASR
 description: Proporciona instrucciones para implementar reglas de reducción de superficie de ataque.
 keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
@@ -11,20 +11,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: ''
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 92bc38c919a31a742ea5562f40d5d9ab2686290d
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.collection: m365solution-scenario
+ms.date: 1/18/2022
+ms.openlocfilehash: fa6558ef03aed98426cf615df6a80359ef7424bc
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074743"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320660"
 ---
-# <a name="asr-rules-deployment-overview"></a>Introducción a la implementación de reglas ASR
+# <a name="asr-rules-deployment-overview"></a>Introducción a la implementación de reglas de ASR
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -43,26 +44,26 @@ Durante la preparación inicial, es fundamental que comprenda las capacidades de
 >[!IMPORTANT]
 >En esta guía se proporcionan imágenes y ejemplos que le ayudarán a decidir cómo configurar reglas ASR; es posible que estas imágenes y ejemplos no reflejen las mejores opciones de configuración para el entorno.
 
-Antes de empezar, revisa [Información](overview-attack-surface-reduction.md)general sobre la reducción de superficie de ataque y Desmitificando las reglas de reducción de superficie de ataque: parte [1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) para obtener información básica. Para comprender las áreas de cobertura y posible impacto, familiarícese con el conjunto actual de reglas ASR; consulta [Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md).
+Antes de empezar, revisa [Información](overview-attack-surface-reduction.md) general sobre la reducción de superficie de ataque y [Desmitificando](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) las reglas de reducción de superficie de ataque: parte 1 para obtener información básica. Para comprender las áreas de cobertura y posible impacto, familiarícese con el conjunto actual de reglas ASR; consulta [Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md).
 
 Las reglas ASR son solo una funcionalidad de las capacidades de reducción de superficie de ataque dentro de Microsoft Defender para endpoint. En este documento se detallarán más detalles sobre cómo implementar las reglas ASR de forma eficaz para detener amenazas avanzadas como ransomware operado por humanos y otras amenazas.  
 
 ### <a name="rules-by-category"></a>Reglas por categoría
 
-Como se describe en Usar reglas de reducción de superficie de ataque para evitar infecciones de [malware,](attack-surface-reduction.md)hay varias reglas de reducción de superficie de ataque dentro de MDE que puedes habilitar para proteger tu organización. A continuación se descompuestos las reglas por categoría:
+Como se describe en [Usar](attack-surface-reduction.md) reglas de reducción de superficie de ataque para evitar infecciones de malware, hay varias reglas de reducción de superficie de ataque dentro de MDE que puedes habilitar para proteger tu organización. A continuación se descompuestos las reglas por categoría:
 
 <br/>
 
 | Amenazas polimórficas | Movimiento lateral & robo de credenciales | Reglas de aplicaciones de productividad |  Reglas de correo electrónico | Reglas de script | Reglas misc |
 |:---|:---|:---|:---|:---|:---|
-| Bloquear la ejecución de archivos ejecutables a menos que cumplan con una prevalencia (1000 máquinas), la antigüedad (24 horas) o los criterios de lista de confianza | Bloquear creaciones de proceso que se originen en comandos PSExec y WMI | Bloquear Office aplicaciones de creación de contenido ejecutable | Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | Bloquear código de JS/VBS/PS/macro ofuscado | Bloquear el uso indebido de controladores firmados vulnerables <sup> explotados [[1](#fn1)]<sup></sup>  |
-| Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB | Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe) <sup> [[2](#fn1)]<sup></sup>   | Bloquear Office aplicaciones para crear procesos secundarios |  Bloquear solo Office aplicaciones de comunicación para que no creen procesos secundarios | Bloquear JS/VBS para que no inicie contenido ejecutable descargado | |
+| Bloquear la ejecución de archivos ejecutables a menos que cumplan con una prevalencia (1000 máquinas), la antigüedad (24 horas) o los criterios de lista de confianza | Bloquear creaciones de proceso que se originen en comandos PSExec y WMI | Bloquear Office aplicaciones de creación de contenido ejecutable | Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | Bloquear código de JS/VBS/PS/macro ofuscado | Bloquear el uso indebido de controladores firmados vulnerables explotados <sup>[[1](#fn1)]<sup></sup>  |
+| Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB | Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Bloquear Office aplicaciones para crear procesos secundarios |  Bloquear solo Office aplicaciones de comunicación para que no creen procesos secundarios | Bloquear JS/VBS para que no inicie contenido ejecutable descargado | |
 | Usar protección avanzada contra ransomware | Bloquear la persistencia a través de la suscripción de eventos WMI | Bloquear Office aplicaciones para que no inyecten código en otros procesos | Bloquear Office aplicaciones de comunicación para que no creen procesos secundarios | | |
 | | | Impedir que Adobe Reader cree procesos secundarios | | | |
 
-(<a id="fn1">1</a>) Bloquear el uso indebido de controladores firmados _vulnerables_ explotados no está disponible actualmente en la seguridad de extremo de MEM. Puede configurar esta regla con [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
+(<a id="fn1">1</a>) El uso indebido de bloqueo de controladores firmados _vulnerables_ explotados no está disponible actualmente en la seguridad de extremo de MEM. Puede configurar esta regla con [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
 
-(<a id="fn1">2</a>) Algunas reglas ASR generan un ruido considerable, pero no bloquean la funcionalidad. Por ejemplo, si estás actualizando Chrome; Chrome accederá a lsass.exe; las contraseñas se almacenan en lsass en el dispositivo. Sin embargo, Chrome no debe tener acceso a los dispositivos lsass.exe. Si habilita la regla para bloquear el acceso a lsass, generará una gran cantidad de eventos. Estos eventos son buenos eventos porque el proceso de actualización de software no debe tener acceso a lsass.exe. Habilitar esta regla impedirá que las actualizaciones de Chrome tengan acceso a lsass, pero no impedirá que Chrome se actualice; esto también ocurre con otras aplicaciones que hacen llamadas innecesarias a lsass.exe. La regla bloquear el acceso a _lsass_ bloqueará las llamadas innecesarias a lsass, pero no bloqueará la ejecución de la aplicación.
+(<a id="fn1">2</a>) Algunas reglas ASR generan un ruido considerable, pero no bloquean la funcionalidad. Por ejemplo, si estás actualizando Chrome; Chrome accederá a lsass.exe; las contraseñas se almacenan en lsass en el dispositivo. Sin embargo, Chrome no debe tener acceso a los dispositivos lsass.exe. Si habilita la regla para bloquear el acceso a lsass, generará una gran cantidad de eventos. Estos eventos son buenos eventos porque el proceso de actualización de software no debe tener acceso a lsass.exe. Habilitar esta regla impedirá que las actualizaciones de Chrome tengan acceso a lsass, pero no impedirá que Chrome se actualice; esto también ocurre con otras aplicaciones que hacen llamadas innecesarias a lsass.exe. La _regla bloquear el acceso a lsass_ bloqueará las llamadas innecesarias a lsass, pero no bloqueará la ejecución de la aplicación.
 
 ### <a name="infrastructure-requirements"></a>Requisitos de infraestructura
 
@@ -77,7 +78,7 @@ Para aprovechar al máximo las reglas e informes de ASR, se recomienda usar una 
 
 >[!Note]
 >Existen varios métodos para configurar reglas ASR. Las reglas ASR se pueden configurar mediante: Microsoft Endpoint Manager (MEM), PowerShell, directiva de grupo, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
->Si usa una configuración de infraestructura diferente  a la que se muestra para los requisitos de infraestructura (arriba), puede obtener más información sobre cómo implementar reglas de reducción de superficie de ataque con otras configuraciones aquí: Habilitar reglas de reducción de superficie de [ataque](enable-attack-surface-reduction.md).  
+>Si usas una configuración de infraestructura diferente a la que se muestra para los requisitos de _infraestructura (arriba_ ), puedes obtener más información sobre cómo implementar reglas de reducción de superficie de ataque con otras configuraciones aquí: Habilitar reglas de reducción de superficie de [ataque](enable-attack-surface-reduction.md).  
 
 ### <a name="asr-rules-dependencies"></a>Dependencias de reglas ASR
 
@@ -104,11 +105,11 @@ Antivirus de Microsoft Defender funciona sin problemas con los servicios en la n
 
 Las siguientes Antivirus de Microsoft Defender componentes no deben tener más de dos versiones anteriores a la versión más disponible actualmente:
 
-- **Antivirus de Microsoft Defender versión de actualización de** la plataforma: Antivirus de Microsoft Defender se actualiza mensualmente.
-- **Antivirus de Microsoft Defender versión del motor:** Antivirus de Microsoft Defender motor se actualiza mensualmente.
-- **Antivirus de Microsoft Defender** inteligencia de seguridad: Microsoft actualiza continuamente la inteligencia de seguridad de Microsoft Defender (también conocida como, definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
+- **Antivirus de Microsoft Defender actualización de la plataforma:** Antivirus de Microsoft Defender se actualiza mensualmente.
+- **Antivirus de Microsoft Defender versión del motor**: Antivirus de Microsoft Defender motor se actualiza mensualmente.
+- **Antivirus de Microsoft Defender de seguridad**: Microsoft actualiza continuamente la inteligencia de seguridad de Microsoft Defender (también conocida como, definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
 
-Mantener Antivirus de Microsoft Defender versiones actuales ayuda a reducir las reglas ASR falsos resultados positivos y mejora las Antivirus de Microsoft Defender de detección. Para obtener más información sobre las versiones actuales y cómo actualizar los diferentes componentes de Antivirus de Microsoft Defender, [visite Antivirus de Microsoft Defender compatibilidad con la plataforma](manage-updates-baselines-microsoft-defender-antivirus.md).
+Mantener Antivirus de Microsoft Defender versiones actuales ayuda a reducir las reglas ASR falsos resultados positivos y mejora las Antivirus de Microsoft Defender de detección. Para obtener más información sobre las versiones actuales y cómo actualizar los distintos componentes de Antivirus de Microsoft Defender, [visite Antivirus de Microsoft Defender soporte técnico de la plataforma](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="asr-rules-deployment-phases"></a>Fases de implementación de reglas ASR
 
@@ -122,13 +123,13 @@ Al igual que con cualquier implementación nueva a gran escala que podría afect
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Fase 1: Planear](attack-surface-reduction-rules-deployment-phase-1.md)
+[Fase 1: Planificar](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Fase 2: Prueba](attack-surface-reduction-rules-deployment-phase-2.md)
+[Fase 2: Probar](attack-surface-reduction-rules-deployment-phase-2.md)
 
 [Fase 3: Implementar](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Fase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Fase 4: Operar](attack-surface-reduction-rules-deployment-phase-4.md)
 
 ## <a name="reference"></a>Referencia
 

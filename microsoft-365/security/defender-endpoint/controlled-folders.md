@@ -10,19 +10,19 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 06/10/2021
-ms.reviewer: v-maave
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 2fa55e3bdf0ca9c06093e843e9dca4d8ed502128
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: b7a91b948e7c9d8d99c6d7c1563503efc24fc8f9
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940559"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320864"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -41,10 +41,10 @@ El acceso controlado a carpetas ayuda a proteger los datos valiosos de las amena
 > [!NOTE]
 > Los motores de scripting no son de confianza y no se les puede permitir el acceso a carpetas protegidas controladas. Por ejemplo, PowerShell no es de confianza mediante el acceso controlado a carpetas, incluso si permite con indicadores de certificado [e archivo](/microsoft-365/security/defender-endpoint/indicator-certificates).
 
-El acceso controlado a carpetas funciona mejor con [Microsoft Defender para](microsoft-defender-endpoint.md)endpoint, lo que le ofrece informes detallados sobre los eventos y bloques de acceso controlado a carpetas como parte de los escenarios habituales de investigación de [alertas.](investigate-alerts.md)
+El acceso controlado a carpetas funciona mejor con [Microsoft Defender para Endpoint](microsoft-defender-endpoint.md), lo que te ofrece informes detallados sobre los eventos y bloques de acceso controlado a carpetas como parte de los escenarios habituales de investigación [de alertas](investigate-alerts.md).
 
 > [!TIP]
-> Los bloques de acceso a carpetas controladas no generan alertas en la cola [De alertas.](alerts-queue.md) Sin embargo, puedes ver información sobre los bloques de acceso controlados a carpetas en la vista de escala de tiempo del [dispositivo,](investigate-machines.md)mientras usas la búsqueda [avanzada](advanced-hunting-overview.md)o con reglas [de detección personalizadas.](custom-detection-rules.md)
+> Los bloques de acceso a carpetas controladas no generan alertas en la cola [de alertas](alerts-queue.md). Sin embargo, puedes ver información sobre los bloques de acceso controlados a carpetas en la vista de escala de tiempo del [dispositivo, mientras](investigate-machines.md) usas la búsqueda [avanzada o con](advanced-hunting-overview.md) reglas [de detección personalizadas](custom-detection-rules.md).
 
 ## <a name="how-does-controlled-folder-access-work"></a>¿Cómo funciona el acceso controlado a carpetas?
 
@@ -58,9 +58,9 @@ Las aplicaciones también se pueden agregar manualmente a la lista de confianza 
 
 ## <a name="why-controlled-folder-access-is-important"></a>Por qué es importante el acceso controlado a carpetas
 
-El acceso controlado a carpetas es especialmente útil para ayudar a proteger los documentos y la información de [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). En un ataque de ransomware, los archivos pueden ser cifrados y retenidos como rehenes. Con el acceso controlado a carpetas, aparece una notificación en el equipo donde una aplicación intentó realizar cambios en un archivo de una carpeta protegida. Puede [personalizar la notificación](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) con los detalles de la empresa y la información de contacto. También puede habilitar las reglas individualmente para personalizar las técnicas que supervisan las características.
+El acceso controlado a carpetas es especialmente útil para ayudar a proteger los documentos y la información del [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). En un ataque de ransomware, los archivos pueden ser cifrados y retenidos como rehenes. Con el acceso controlado a carpetas, aparece una notificación en el equipo donde una aplicación intentó realizar cambios en un archivo de una carpeta protegida. Puede [personalizar la notificación](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) con los detalles de la empresa y la información de contacto. También puede habilitar las reglas individualmente para personalizar las técnicas que supervisan las características.
 
-Las [carpetas protegidas](#review-controlled-folder-access-events-in-windows-event-viewer) incluyen carpetas comunes del sistema (incluidos los sectores de arranque) y puede [agregar más carpetas.](customize-controlled-folders.md#protect-additional-folders) También puedes permitir [que las aplicaciones](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) les den acceso a las carpetas protegidas.
+Las [carpetas protegidas](#review-controlled-folder-access-events-in-windows-event-viewer) incluyen carpetas comunes del sistema (incluidos los sectores de arranque) y puede [agregar más carpetas](customize-controlled-folders.md#protect-additional-folders). También puedes permitir [que las aplicaciones](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) les den acceso a las carpetas protegidas.
 
 Puede usar el [modo de auditoría para](audit-windows-defender.md) evaluar cómo el acceso controlado a carpetas afectaría a su organización si estuviera habilitado. También puede visitar el sitio web Windows Defender prueba en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
 
@@ -90,13 +90,13 @@ Windows carpetas del sistema están protegidas de forma predeterminada, junto co
 
 ## <a name="requirements-for-controlled-folder-access"></a>Requisitos para el acceso controlado a carpetas
 
-El acceso controlado a carpetas [requiere Antivirus de Microsoft Defender protección en tiempo real.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+El acceso controlado a carpetas [requiere Antivirus de Microsoft Defender protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Revisar eventos de acceso controlado a carpetas en el portal Microsoft 365 Defender web
 
-Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de investigación de [alertas](investigate-alerts.md) en el portal Microsoft 365 Defender alerta. (Vea [Microsoft Defender para Endpoint en Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).)
+Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de investigación de [alertas](investigate-alerts.md) en el portal Microsoft 365 Defender alerta. (Vea [Microsoft Defender para Endpoint en Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)).)
 
-Puede consultar datos de punto de conexión de Microsoft Defender mediante [búsqueda avanzada](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). Si usa el modo [de auditoría,](audit-windows-defender.md)puede usar la búsqueda avanzada para ver cómo la configuración de acceso controlado a carpetas afectaría al entorno si estuvieran habilitadas. [](advanced-hunting-overview.md)
+Puede consultar datos de punto de conexión de Microsoft Defender mediante [búsqueda avanzada](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-overview?view=o365-worldwide). Si usa el modo [de auditoría](audit-windows-defender.md), puede usar la búsqueda [](advanced-hunting-overview.md) avanzada para ver cómo la configuración de acceso controlado a carpetas afectaría al entorno si estuvieran habilitadas.
 
 Consulta de ejemplo:
 
@@ -109,7 +109,7 @@ DeviceEvents
 
 Puedes revisar el registro Windows eventos para ver los eventos que se crean cuando el acceso controlado a carpetas bloquea (o audita) una aplicación:You can review the Windows event log to see events that are created when controlled folder access blocks (or audits) an app:
 
-1. Descargue el [paquete de evaluación](https://aka.ms/mp7z2w) y extraiga el archivo *cfa-events.xml* a una ubicación de fácil acceso en el dispositivo.
+1. Descargue el [paquete de evaluación](https://aka.ms/mp7z2w) y extraiga el archivo *cfa-events.xml* a una ubicación fácilmente accesible en el dispositivo.
 2. Escriba **Visor de** eventos en el menú Inicio para abrir el visor Windows eventos.
 3. En el panel izquierdo, en **Acciones**, seleccione **Importar vista personalizada...**.
 4. Navegue hasta donde ha extraído *cfa-events.xml* y selecciónelo. Como alternativa, [copie el XML directamente](event-views.md).
@@ -131,11 +131,11 @@ Puedes usar la aplicación Seguridad de Windows para ver la lista de carpetas pr
 
 1. En tu Windows 10 o Windows 11 dispositivo, abre la Seguridad de Windows aplicación.
 2. Seleccione **Protección antivirus y contra amenazas**.
-3. En **Protección contra ransomware,** seleccione **Administrar protección contra ransomware**.
+3. En **Protección contra ransomware**, selecciona **Administrar protección contra ransomware**.
 4. Si el acceso controlado a carpetas está desactivado, tendrás que activarlo. Seleccione **carpetas protegidas**.
 5. Realice uno de los pasos siguientes:
-   - Para agregar una carpeta, seleccione **+ Agregar una carpeta protegida.**
-   - Para quitar una carpeta, selecciónelo y, a continuación, **seleccione Quitar**.
+   - Para agregar una carpeta, seleccione **+ Agregar una carpeta protegida**.
+   - Para quitar una carpeta, selecciónelo y, a continuación, seleccione **Quitar**.
 
 > [!NOTE]
 > [Windows las carpetas del](#windows-system-folders-are-protected-by-default) sistema están protegidas de forma predeterminada y no se pueden quitar de la lista.

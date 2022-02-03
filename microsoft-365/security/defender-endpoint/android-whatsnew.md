@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: cb4bbc8d8fff5d73ac8b56aa73528f6704804da5
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 1fca5a6762642968310b7165db09d827c06c0cbd
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401455"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321872"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Novedades de Microsoft Defender para Endpoint en Android
 
@@ -35,11 +35,11 @@ ms.locfileid: "61401455"
 
 ## <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
-El 2 de noviembre de 2021, anunciamos la versión preliminar pública de la administración de amenazas y vulnerabilidades en Android e iOS. Para obtener más información, [vea la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
+El 25 de enero de 2022, anunciamos la disponibilidad general de la administración de amenazas y vulnerabilidades en Android e iOS. Para obtener más información, [consulta la publicación techcommunity aquí](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Próximos cambios de permisos para Microsoft Defender para endpoint que ejecute Android 11 o posterior (noviembre de 2021)
 
-Compilación de la versión: 1.0.3501.0301 Mes de la versión: Noviembre de 2021 Microsoft Defender para endpoint ha publicado esta actualización requerida por [Google](https://developer.android.com/distribute/play-policies#APILevel30) para actualizar a la API de Android 30. Este cambio pedirá a los usuarios que busquen acceso a un nuevo permiso [de almacenamiento,](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)para dispositivos que ejecuten Android 11 o posterior. Los usuarios tendrán que aceptar este nuevo permiso de almacenamiento una vez que actualicen la aplicación defender con la compilación de la versión 1.0.3501.0301 o posterior. Esto garantizará que la característica de seguridad de aplicaciones de Defender for Endpoint funcione sin interrupciones. Para obtener más información, revise las secciones siguientes.
+Compilación de la versión: 1.0.3501.0301 Mes de la versión: Noviembre de 2021 Microsoft Defender para endpoint ha publicado esta actualización requerida por [Google](https://developer.android.com/distribute/play-policies#APILevel30) para actualizar a la API de Android 30. Este cambio pedirá a los usuarios que busquen acceso a [un nuevo permiso de almacenamiento](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) para dispositivos que ejecuten Android 11 o posterior. Los usuarios tendrán que aceptar este nuevo permiso de almacenamiento una vez que actualicen la aplicación defender con la compilación de la versión 1.0.3501.0301 o posterior. Esto garantizará que la característica de seguridad de aplicaciones de Defender for Endpoint funcione sin interrupciones. Para obtener más información, revise las secciones siguientes.
 
 **Cómo afectará esto a su organización:** Estos cambios afectarán, si usas Microsoft Defender para Endpoint en dispositivos que ejecutan Android 11 o versiones posteriores y actualizaste Defender para endpoint para publicar la compilación 1.0.3501.0301 o posterior.
 

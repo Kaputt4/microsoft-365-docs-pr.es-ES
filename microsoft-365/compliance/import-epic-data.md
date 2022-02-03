@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros electrónicos de salud (EHR) desde el sistema épico de su organización para Microsoft 365. Esto le permite usar datos de EHR épicos en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
-ms.openlocfilehash: b3382f47bb9ec91623c86e16394bb3452fb1619e
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 0da7386aa2b230492fedd5fdac5477d204aa63a8
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272023"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321128"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurar un conector para importar datos de auditoría de Épico EHR (versión preliminar)
 
@@ -39,7 +39,7 @@ La configuración de un conector épico consta de las siguientes tareas:
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
-- Al usuario que crea el conector épico en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](\Exchange\permissions-exo\role-groups#create-role-groups) grupos [](\Exchange\permissions-exo\role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- Al usuario que crea el conector épico en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos [](/Exchange/permissions-exo/role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Debe determinar cómo recuperar o exportar los datos del sistema Épico EHR de su organización (diariamente) y crear un archivo de texto que se describe en el paso 2. El script que ejecute en el paso 4 insertará los datos del archivo de texto en el punto de conexión de la API.
 
@@ -161,7 +161,7 @@ Este es un ejemplo de la sintaxis del script de conector de Epic que usa valores
 Si la carga se realiza correctamente, el script muestra el **Upload correcto**.
 
 > [!NOTE]
-> Si tiene problemas para ejecutar el comando anterior debido a las directivas de ejecución, vea [Acerca](\powershell\module\microsoft.powershell.core\about\about_execution_policies) de las directivas de ejecución y [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) para obtener instrucciones sobre cómo establecer directivas de ejecución.
+> Si tiene problemas para ejecutar el comando anterior debido a las directivas de ejecución, vea [Acerca](/powershell/module/microsoft.powershell.core/about/about_execution_policies) de las directivas de ejecución y [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) para obtener instrucciones sobre cómo establecer directivas de ejecución.
 
 ## <a name="step-5-monitor-the-epic-connector"></a>Paso 5: Supervisar el conector de Epic
 

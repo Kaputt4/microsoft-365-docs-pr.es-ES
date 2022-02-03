@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 48788a50fc9794265103d838b4c8bbfb50d264ab
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13ec18a89080793637db2ee3dabbb992778ad4dc
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302463"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320780"
 ---
 # <a name="run-antivirus-scan-api"></a>Ejecutar LA API de detección antivirus
 
@@ -49,7 +49,7 @@ Inicie Antivirus de Microsoft Defender examen en un dispositivo.
 > [!IMPORTANT]
 >
 > - Esta acción está disponible para dispositivos Windows 10, versión 1709 o posterior y en Windows 11.
-> - Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+> - Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Antivirus de Microsoft Defender puede estar en modo pasivo. Para obtener más información, [consulte Antivirus de Microsoft Defender compatibilidad](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide).
 
 ## <a name="permissions"></a>Permisos
 
@@ -63,8 +63,8 @@ Delegado (cuenta profesional o educativa)|Machine.Scan|'Máquina de digitalizaci
 > [!NOTE]
 > Al obtener un token con credenciales de usuario:
 >
-> - El usuario debe tener al menos el siguiente permiso de función: "Acciones de corrección activas" (vea [Crear y](user-roles.md) administrar roles para obtener más información)
-> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta Crear y administrar grupos [de dispositivos](machine-groups.md) para obtener más información)
+> - El usuario debe tener al menos el siguiente permiso de función: "Acciones de corrección activas" (vea [Crear y administrar roles](user-roles.md) para obtener más información)
+> - El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos (consulta [Crear y administrar grupos de dispositivos](machine-groups.md) para obtener más información)
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -83,15 +83,15 @@ Content-Type|string|application/json
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro|Tipo|Description
+Parámetro|Tipo|Descripción
 :---|:---|:---
 Comentario|Cadena|Comentario para asociarlo a la acción. **Necesario**.
-ScanType|String|Define el tipo de examen. **Necesario**.
+ScanType|Cadena|Define el tipo de examen. **Necesario**.
 
 **ScanType** controla el tipo de examen que se va a realizar y puede ser uno de los siguientes:
 
-- **Rápido:** realizar un examen rápido en el dispositivo
-- **Full**: Realizar un examen completo en el dispositivo
+- **Rápido**: realizar un examen rápido en el dispositivo
+- **Completo**: realizar un examen completo en el dispositivo
 
 ## <a name="response"></a>Respuesta
 

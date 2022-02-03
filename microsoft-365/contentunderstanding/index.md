@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo encontrar recursos de Microsoft SharePoint Syntex.
-ms.openlocfilehash: 1e0959a5772d88afae43e09028d3d65ffe82b3de
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 665a28c07e5405299cb88ffdce3fbafa1210415a
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645129"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322088"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introducción a Microsoft SharePoint Syntex
 
@@ -39,9 +39,9 @@ Los recursos de esta página están diseñados para ayudarle a empezar a aprende
 
 </br>
 
-## <a name="get-started"></a>Comenzar
+## <a name="get-started"></a>Introducción
 
-Los recursos de esta sección le ayudarán a obtener más información sobre los dos métodos de clasificación y extracción de datos utilizados por SharePoint Syntex: el procesamiento de formularios y la comprensión mediante documentos.
+Los recursos de esta sección le ayudarán a obtener más información sobre los tres métodos de clasificación y extracción de datos usados por SharePoint Syntex: descripción de documentos, procesamiento de formularios y reconstrucción previa.
 
 > [!NOTE]
 > Puede empezar a trabajar con SharePoint Syntex sin comprar licencias [crear un centro de contenido desde el Centro de administración de SharePoint](create-a-content-center.md). Los usuarios sin licencia pueden crear modelos de comprensión de documentos, pero no pueden aplicarlos a una biblioteca de documentos.
@@ -86,6 +86,7 @@ Los recursos de esta sección ayudan a los usuarios a aprender a crear y configu
 |Obtenga información sobre cómo trabajar con modelos|[Crear un centro de contenido](./create-a-content-center.md)<br><br>[Crear un clasificador](./create-a-classifier.md)<br><br>[Duplicar un modelo](./duplicate-a-model.md)<br><br>[Cambiar el nombre de un modelo](./rename-a-model.md)<br><br>[Crear un extractor](./create-an-extractor.md)<br><br>[Cambiar el nombre de un extractor](./rename-an-extractor.md)<br><br>[Crear un modelo de procesamiento de formularios](./create-a-form-processing-model.md)<br><br>[Tipos de explicación](./explanation-types-overview.md)<br><br>[Usar plantillas de explicación](./explanation-templates.md)<br><br>[Aplicar modelos de comprensión mediante documentos](./apply-a-model.md)<br><br>[Obtenga información sobre los modelos de comprensión mediante documentos con el modelo de ejemplo](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Aplicar una etiqueta de retención al modelo|[Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos](./apply-a-retention-label-to-a-model.md)|
 |Aplique una etiqueta de confidencialidad a su modelo|[Agregar una etiqueta de confidencialidad a un modelo de comprensión mediante documentos](./apply-a-sensitivity-label-to-a-model.md)|
+|Usar modelos precompilados para extraer información de documentos |[Usar un modelo precompilado para extraer información de facturas o recibos](./prebuilt-models.md)|
 |Usar modelos formados en otros centros de contenido |[Publicar y descubrir modelos de comprensión de documentos](./model-discovery.md)|
 |Realizar consultas basadas en metadatos en bibliotecas de documentos|[Buscar metadatos en bibliotecas de documentos](./metadata-search.md)|
 |Usar la taxonomía del almacén de términos de servicios de metadatos administrados al crear un extractor|[Aprovechar la taxonomía del almacén de términos al crear un extractor](./leverage-term-store-taxonomy.md)|

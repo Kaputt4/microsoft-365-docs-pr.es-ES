@@ -20,38 +20,38 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo activar, renovar o agregar licencias a una suscripción Microsoft 365 para empresas.
 ms.date: 10/21/2020
-ms.openlocfilehash: f5192454ad202fb5ca79c018fb7e90271d06e32c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a967bd1cebdf33850d632779835f97d6fac4cbf0
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370397"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321536"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Escriba la clave de producto comprada en Microsoft Open
 
-Si ha comprado Microsoft 365 para empresas de un Programa [de licencias abiertas](https://go.microsoft.com/fwlink/p/?LinkID=613298)de Microsoft, este artículo es para usted. Los clientes de licencias por volumen que compraron una clave de producto pueden seguir este tema para activar, renovar o agregar licencias a una suscripción.
+Si ha comprado Microsoft 365 para empresas de un Programa [de licencias abiertas de Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298), este artículo es para usted. Los clientes de licencias por volumen que compraron una clave de producto pueden seguir este tema para activar, renovar o agregar licencias a una suscripción.
   
- **¿Necesita ayuda inmediatamente?** [Llamar al soporte técnico de Microsoft](../admin/get-help-support.md). 
+ **¿Necesita ayuda inmediatamente?** [Llamar al Soporte técnico de Microsoft](../admin/get-help-support.md).
   
  **¿Necesita algo más?**
- 
- **Para obtener ayuda con Microsoft 365 Inicio o Personal,** vea [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+
+ **Para obtener ayuda con Microsoft 365 inicio o personal**, consulte [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
   
- **Para obtener ayuda Microsoft 365 Empresa Estándar comprada en una** tienda comercial, consulta Escribir la clave de [producto comprada en una tienda comercial.](enter-your-product-key.md) 
+ **Para obtener ayuda Microsoft 365 Empresa Estándar compra en una** tienda comercial, consulta Introducir la clave de producto [comprada en una tienda comercial](enter-your-product-key.md).
   
 ## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>Activar, renovar o agregar licencias a una suscripción comprada desde Microsoft Open
 
 Si compró Microsoft 365 un programa de licencias abiertas de Microsoft, el sistema escribe automáticamente la clave al activar, renovar o agregar licencias a una suscripción.
   
 1. Después de comprar una clave de un partner Microsoft 365, compruebe en la bandeja de entrada un correo electrónico de Microsoft que contenga un vínculo de activación.
-    
+
     > [!TIP]
     >  El correo se envía a la persona que aparece como administrador en línea en el contrato de licencia por volumen. Si no está seguro de quién está designado como administrador en línea, pregunte a su Microsoft 365 asociado. 
   
-2. Siga el vínculo del correo electrónico para iniciar sesión con su cuenta profesional o educativa, acepte el contrato de Open License y renueve la suscripción. Para obtener un tutorial paso a paso, descargue la guía PDF, [Activate Online Services: Microsoft 365 Subscription](https://go.microsoft.com/fwlink/p/?LinkId=618100), que trata cómo activar una nueva suscripción, renovar una suscripción existente o agregar licencias a una suscripción existente.
-    
+2. Siga el vínculo del correo electrónico para iniciar sesión con su cuenta profesional o educativa, acepte el contrato de Open License y renueve la suscripción. Para obtener un tutorial paso a paso, descargue la guía pdf [Activate Online Services: Microsoft 365 Subscription](https://go.microsoft.com/fwlink/p/?LinkId=618100), que trata cómo activar una nueva suscripción, renovar una suscripción existente o agregar licencias a una suscripción existente.
+
 > [!NOTE]
-> Los clientes de licencias por volumen también pueden optar por activar suscripciones en el [Centro de servicios de licencias por volumen.](https://go.microsoft.com/fwlink/p/?LinkID=282016) Para más información sobre cómo descargar la guía en PDF, vea [Activar servicios en línea en el Centro de servicios de licencias por volumen](https://go.microsoft.com/fwlink/p/?LinkId=618096). 
+> Los clientes de licencias por volumen también pueden optar por activar suscripciones en el [Centro de servicios de licencias por volumen](https://go.microsoft.com/fwlink/p/?LinkID=282016). Para más información sobre cómo descargar la guía en PDF, vea [Activar servicios en línea en el Centro de servicios de licencias por volumen](https://go.microsoft.com/fwlink/p/?LinkId=618096).
   
 ## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
@@ -65,4 +65,4 @@ Los partners deben consultar [Partners: usar una clave de producto para configur
   
 Los clientes de licencias por volumen pueden obtener más información visitando [Recursos y aprendizaje del Centro de servicios de licencias por volumen de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-O bien, si desea hablar con una persona, llame al [soporte técnico de Microsoft](../admin/get-help-support.md).
+O bien, si desea hablar con una persona, [llame al Soporte técnico de Microsoft](../admin/get-help-support.md).

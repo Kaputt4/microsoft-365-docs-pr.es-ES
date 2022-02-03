@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo usar la herramienta de Microsoft 365 de búsqueda de registro de auditoría para ayudar a solucionar problemas comunes de soporte técnico para cuentas de correo electrónico.
-ms.openlocfilehash: f44902f22c3c7144bf46b9dc6bb95cd534480755
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 496729c7955448519d6cb1447e08b5a4b15aa655
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421827"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321992"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de soporte técnico comunes
 
@@ -48,7 +48,7 @@ Debe tener asignado el rol View-Only registros de auditoría o registros de audi
 
 ### <a name="running-audit-log-searches"></a>Ejecución de búsquedas de registro de auditoría
 
-En esta sección se describen los conceptos básicos para crear y ejecutar búsquedas de registro de auditoría. Use estas instrucciones como punto de partida para cada escenario de solución de problemas de este artículo. Para obtener instrucciones paso a paso más detalladas, vea [Buscar en el registro de auditoría.](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)
+En esta sección se describen los conceptos básicos para crear y ejecutar búsquedas de registro de auditoría. Use estas instrucciones como punto de partida para cada escenario de solución de problemas de este artículo. Para obtener instrucciones paso a paso más detalladas, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
 1. Vaya a <https://compliance.microsoft.com/auditlogsearch> e inicie sesión con su cuenta profesional o educativa.
   
@@ -60,7 +60,7 @@ En esta sección se describen los conceptos básicos para crear y ejecutar búsq
   
    a. **Fecha de inicio** y **fecha de finalización:** seleccione una fecha y un intervalo de tiempo para mostrar los eventos que se produjeron en ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días.
 
-   b. **Actividades:** Seleccione la lista desplegable para mostrar las actividades que puede buscar. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar **Mostrar resultados para todas las actividades,** se muestran los resultados de todas las actividades que cumplen los demás criterios de búsqueda. También tendrás que dejar este campo en blanco en algunos de los escenarios de solución de problemas.
+   b. **Actividades:** Seleccione la lista desplegable para mostrar las actividades que puede buscar. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar **Mostrar resultados para todas las actividades** , se muestran los resultados de todas las actividades que cumplen los demás criterios de búsqueda. También tendrás que dejar este campo en blanco en algunos de los escenarios de solución de problemas.
   
     c. **Usuarios:** Haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios para los que mostrar los resultados de la búsqueda. Los registros de auditoría de la actividad seleccionada realizada por los usuarios seleccionados en este cuadro se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
   
@@ -82,10 +82,10 @@ La dirección IP correspondiente a una actividad realizada por cualquier usuario
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registro de auditoría para este escenario:
 
-**Actividades:** Si es relevante para su caso, seleccione una actividad específica para buscar. Para solucionar problemas de cuentas comprometidas, considere la posibilidad de seleccionar la actividad Usuario **que** ha iniciado sesión en el buzón de correo **Exchange de correo**. Esto devuelve registros de auditoría que muestran la dirección IP que se usaba al iniciar sesión en el buzón. De lo contrario, deje este campo en blanco para devolver los registros de auditoría de todas las actividades. 
+**Actividades:** Si es relevante para su caso, seleccione una actividad específica para buscar. Para solucionar problemas de cuentas comprometidas, considere la posibilidad de seleccionar la **actividad Usuario que** ha iniciado sesión en el buzón en **Exchange de buzón de correo**. Esto devuelve registros de auditoría que muestran la dirección IP que se usaba al iniciar sesión en el buzón. De lo contrario, deje este campo en blanco para devolver los registros de auditoría de todas las actividades. 
 
 > [!TIP]
-> Si deja este campo en blanco, se devolverán las actividades **UserLoggedIn,** que es una actividad Azure Active Directory que indica que alguien ha iniciado sesión en una cuenta de usuario. Use el filtrado en los resultados de la búsqueda para mostrar los registros de auditoría **UserLoggedIn.**
+> Si deja este campo en blanco, se **devolverán las actividades UserLoggedIn**, que es una actividad Azure Active Directory que indica que alguien ha iniciado sesión en una cuenta de usuario. Use el filtrado en los resultados de la búsqueda para mostrar los **registros de auditoría UserLoggedIn** .
 
 **Fecha de inicio** y **fecha de finalización:** seleccione un intervalo de fechas que sea aplicable a la investigación.
 
@@ -101,7 +101,7 @@ Cuando se configura el reenvío de correo electrónico para un buzón, los mensa
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registro de auditoría para este escenario:
 
-**Actividades:** Deje este campo en blanco para que la búsqueda devuelva los registros de auditoría de todas las actividades. Esto es necesario para devolver los registros de auditoría relacionados con el cmdlet **Set-Mailbox.**
+**Actividades:** Deje este campo en blanco para que la búsqueda devuelva los registros de auditoría de todas las actividades. Esto es necesario para devolver los registros de auditoría relacionados con el cmdlet **Set-Mailbox** .
 
 **Fecha de inicio** y **fecha de finalización:** seleccione un intervalo de fechas que sea aplicable a la investigación.
 
@@ -109,7 +109,7 @@ A continuación se muestra cómo configurar una consulta de búsqueda de registr
 
 **Archivo, carpeta o sitio:** Deje este campo en blanco.
 
-Después de ejecutar la búsqueda, seleccione **Filtrar resultados** en la página de resultados de búsqueda. En el cuadro de encabezado **de** columna Actividad, escriba **Set-Mailbox** para que solo se muestren los registros de auditoría relacionados con el cmdlet **Set-Mailbox.**
+Después de ejecutar la búsqueda, seleccione **Filtrar resultados** en la página de resultados de búsqueda. En el cuadro de encabezado **de** columna Actividad, escriba **Set-Mailbox** para que solo se muestren los registros de auditoría relacionados con el cmdlet **Set-Mailbox** .
 
 ![Filtrar los resultados de una búsqueda de registro de auditoría.](../media/emailforwarding1.png)
 
@@ -117,13 +117,13 @@ En este punto, debe ver los detalles de cada registro de auditoría para determi
 
 ![Información detallada del registro de auditoría.](../media/emailforwarding2.png)
 
-a. En el **campo ObjectId,** se muestra el alias del buzón en el que se estableció el reenvío de correo electrónico. Este buzón también se muestra en la columna **Elemento** de la página de resultados de búsqueda.
+a. En el **campo ObjectId** , se muestra el alias del buzón en el que se estableció el reenvío de correo electrónico. Este buzón también se muestra en la columna **Elemento** de la página de resultados de búsqueda.
 
-b. En el **campo Parámetros,** el valor *ForwardingSmtpAddress* indica que el reenvío de correo electrónico se estableció en el buzón. En este ejemplo, el correo se reenvía a la dirección de correo mike@contoso.com, que está fuera de la alpinehouse.onmicrosoft.com organización.
+b. En el **campo Parámetros** , el valor *ForwardingSmtpAddress* indica que el reenvío de correo electrónico se estableció en el buzón. En este ejemplo, el correo se reenvía a la dirección de correo mike@contoso.com, que está fuera de la alpinehouse.onmicrosoft.com organización.
 
-c. El valor *True* del parámetro *DeliverToMailboxAndForward* indica que una copia del  mensaje se entrega a sarad@alpinehouse.onmicrosoft.com y se reenvía a la dirección de correo electrónico especificada por el parámetro *ForwardingSmtpAddress,* que en este ejemplo es mike@contoso.com. Si el valor del parámetro *DeliverToMailboxAndForward* se establece en *False*, el correo electrónico solo se reenvía a la dirección especificada por el parámetro *ForwardingSmtpAddress.* No se entrega al buzón especificado en el **campo ObjectId.**
+c. El valor *True* del parámetro *DeliverToMailboxAndForward* indica que una copia del mensaje se entrega a sarad@alpinehouse.onmicrosoft.com y se reenvía  a la dirección de correo electrónico especificada por el parámetro *ForwardingSmtpAddress*, que en este ejemplo es mike@contoso.com. Si el valor del parámetro *DeliverToMailboxAndForward* se establece en *False*, el correo electrónico solo se reenvía a la dirección especificada por el parámetro *ForwardingSmtpAddress* . No se entrega al buzón especificado en el **campo ObjectId** .
 
-d. El **campo UserId** indica el usuario que estableció el reenvío de correo electrónico en el buzón especificado en el **campo ObjectId.** Este usuario también se muestra en la columna **Usuario** de la página de resultados de búsqueda. En este caso, parece que el propietario del buzón establece el reenvío de correo electrónico en su buzón.
+d. El **campo UserId** indica el usuario que estableció el reenvío de correo electrónico en el buzón especificado en el **campo ObjectId** . Este usuario también se muestra en la columna **Usuario** de la página de resultados de búsqueda. En este caso, parece que el propietario del buzón establece el reenvío de correo electrónico en su buzón.
 
 Si determina que el reenvío de correo electrónico no debe establecerse en el buzón de correo, puede quitarlo ejecutando el siguiente comando en Exchange Online PowerShell:
 
@@ -131,7 +131,7 @@ Si determina que el reenvío de correo electrónico no debe establecerse en el b
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-Para obtener más información acerca de los parámetros relacionados con el reenvío de correo electrónico, consulte el [artículo Set-Mailbox.](/powershell/module/exchange/set-mailbox)
+Para obtener más información acerca de los parámetros relacionados con el reenvío de correo electrónico, consulte el [artículo Set-Mailbox](/powershell/module/exchange/set-mailbox) .
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>Determinar si un usuario eliminó elementos de correo electrónico
 
@@ -141,11 +141,11 @@ Las acciones de buzón registradas de forma predeterminada incluyen las acciones
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registro de auditoría para este escenario:
 
-**Actividades:** En **Exchange de buzón** de correo, seleccione una o ambas de las siguientes actividades:
+**Actividades:** En **Exchange buzón de** correo, seleccione una o ambas de las siguientes actividades:
 
-- **Mensajes eliminados de la carpeta Elementos eliminados:** Esta actividad corresponde a la acción de auditoría del buzón **SoftDelete.** Esta actividad también se registra cuando un usuario elimina permanentemente un elemento seleccionándoselo y presionando **Mayús+Eliminar**. Después de eliminar un elemento de forma permanente, el usuario puede recuperarlo hasta que expire el período de retención de elementos eliminados.
+- **Mensajes eliminados de la carpeta Elementos eliminados:** Esta actividad corresponde a la acción de auditoría **del buzón SoftDelete** . Esta actividad también se registra cuando un usuario elimina permanentemente un elemento seleccionándoselo y presionando **Mayús+Eliminar**. Después de eliminar un elemento de forma permanente, el usuario puede recuperarlo hasta que expire el período de retención de elementos eliminados.
 
-- **Mensajes purgados del buzón:** Esta actividad corresponde a la acción de auditoría del buzón **HardDelete.** Esto se registra cuando un usuario purga un elemento de la carpeta Elementos recuperables. Los administradores pueden usar la herramienta búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar y recuperar elementos purgados hasta que expire el período de retención de elementos eliminados o más tiempo si el buzón del usuario está en espera.
+- **Mensajes purgados del buzón:** Esta actividad corresponde a la acción de auditoría **del buzón HardDelete** . Esto se registra cuando un usuario purga un elemento de la carpeta Elementos recuperables. Los administradores pueden usar la herramienta búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar y recuperar elementos purgados hasta que expire el período de retención de elementos eliminados o más tiempo si el buzón del usuario está en espera.
 
 **Fecha de inicio** y **fecha de finalización:** seleccione un intervalo de fechas que sea aplicable a la investigación.
 
@@ -153,7 +153,7 @@ A continuación se muestra cómo configurar una consulta de búsqueda de registr
 
 **Archivo, carpeta o sitio:** Deje este campo en blanco.
 
-Después de ejecutar la búsqueda, puede filtrar los resultados de la búsqueda para mostrar los registros de auditoría de elementos eliminados temporalmente o de elementos eliminados de forma permanente. Seleccione el registro de auditoría para mostrar la **página** desplegable Detalles y, a continuación, **seleccione Más información**. Se muestra información adicional sobre el elemento eliminado, como la línea de asunto y la ubicación del elemento cuando se eliminó, en el **campo AffectedItems.** En las capturas de pantalla siguientes se muestra un ejemplo del **campo AffectedItems** de un elemento eliminado temporalmente y de un elemento eliminado de forma permanente.
+Después de ejecutar la búsqueda, puede filtrar los resultados de la búsqueda para mostrar los registros de auditoría de elementos eliminados temporalmente o de elementos eliminados de forma permanente. Seleccione el registro de auditoría para mostrar la **página** desplegable Detalles y, a continuación, **seleccione Más información**. Se muestra información adicional sobre el elemento eliminado, como la línea de asunto y la ubicación del elemento cuando se eliminó, en el **campo AffectedItems** . En las capturas de pantalla siguientes se muestra un ejemplo del **campo AffectedItems** de un elemento eliminado temporalmente y de un elemento eliminado de forma permanente.
 
 **Ejemplo del campo AffectedItems para elemento eliminado temporalmente**
 
@@ -165,7 +165,7 @@ Después de ejecutar la búsqueda, puede filtrar los resultados de la búsqueda 
 
 ### <a name="recover-deleted-email-items"></a>Recuperar elementos de correo electrónico eliminados
 
-Los usuarios pueden recuperar elementos eliminados temporalmente si el período de retención de elementos eliminados no ha expirado. En Exchange Online, el período de retención predeterminado de elementos eliminados es de 14 días, pero los administradores pueden aumentar esta configuración a un máximo de 30 días. Señale a los usuarios al [artículo Recuperar elementos eliminados o correo Outlook en la Web](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) para obtener instrucciones sobre la recuperación de elementos eliminados.
+Los usuarios pueden recuperar elementos eliminados temporalmente si el período de retención de elementos eliminados no ha expirado. En Exchange Online, el período de retención predeterminado de elementos eliminados es de 14 días, pero los administradores pueden aumentar esta configuración a un máximo de 30 días. Señale a los usuarios al [artículo Recuperar elementos eliminados o correo electrónico en Outlook en la Web](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) para obtener instrucciones sobre cómo recuperar elementos eliminados.
 
 Como se explicó anteriormente, los administradores pueden recuperar elementos eliminados de forma permanente si el período de retención de elementos eliminados no ha expirado o si el buzón está en espera, en cuyo caso los elementos se mantienen hasta que expire la duración de la retención. Al ejecutar una búsqueda de contenido, los elementos eliminados temporalmente y eliminados de forma permanente en la carpeta Elementos recuperables se devuelven en los resultados de búsqueda si coinciden con la consulta de búsqueda. Para obtener más información acerca de cómo ejecutar búsquedas de contenido, vea [Búsqueda de contenido en Office 365](content-search.md).
 
@@ -181,9 +181,9 @@ Cuando los usuarios crean una regla de bandeja de entrada Exchange Online buzón
 
 A continuación se muestra cómo configurar una consulta de búsqueda de registro de auditoría para este escenario:
 
-**Actividades:** En **Exchange de buzón** de correo, seleccione una o ambas de las siguientes actividades:
+**Actividades:** En **Exchange buzón de** correo, seleccione una o ambas de las siguientes actividades:
 
-- **New-InboxRule Crear nueva regla de bandeja de** entrada a partir Outlook Web App . Esta actividad devuelve registros de auditoría cuando se crean reglas de bandeja de entrada Outlook una aplicación web o Exchange Online PowerShell.
+- **New-InboxRule Cree una nueva regla de bandeja de entrada a partir Outlook Web App**. Esta actividad devuelve registros de auditoría cuando se crean reglas de bandeja de entrada Outlook una aplicación web o Exchange Online PowerShell.
 
 - **Se han actualizado las reglas de la bandeja Outlook cliente**. Esta actividad devuelve registros de auditoría cuando se crean, modifican o quitan reglas de bandeja de entrada mediante el Outlook escritorio.
 
@@ -193,26 +193,26 @@ A continuación se muestra cómo configurar una consulta de búsqueda de registr
 
 **Archivo, carpeta o sitio:** Deje este campo en blanco.
 
-Después de ejecutar la búsqueda, los registros de auditoría de esta actividad se muestran en los resultados de la búsqueda. Seleccione un registro de auditoría para mostrar la **página** desplegable Detalles y, a continuación, **seleccione Más información**. La información sobre la configuración de la regla de bandeja de entrada se muestra en el **campo Parámetros.** La siguiente captura de pantalla y descripciones resaltan la información sobre las reglas de la bandeja de entrada.
+Después de ejecutar la búsqueda, los registros de auditoría de esta actividad se muestran en los resultados de la búsqueda. Seleccione un registro de auditoría para mostrar la **página** desplegable Detalles y, a continuación, **seleccione Más información**. La información sobre la configuración de la regla de bandeja de entrada se muestra en el **campo Parámetros** . La siguiente captura de pantalla y descripciones resaltan la información sobre las reglas de la bandeja de entrada.
 
 ![Registro de auditoría de nueva regla de bandeja de entrada.](../media/NewInboxRuleRecord.png)
 
-a. En el **campo ObjectId,** se muestra el nombre completo de la regla de bandeja de entrada. Este nombre incluye el alias del buzón del usuario (por ejemplo, SaraD) y el nombre de la regla de bandeja de entrada (por ejemplo, "Mover mensajes de administrador").
+a. En el **campo ObjectId** , se muestra el nombre completo de la regla de bandeja de entrada. Este nombre incluye el alias del buzón del usuario (por ejemplo, SaraD) y el nombre de la regla de bandeja de entrada (por ejemplo, "Mover mensajes de administrador").
 
-b. En el **campo Parámetros,** se muestra la condición de la regla de bandeja de entrada. En este ejemplo, la condición se especifica mediante el *parámetro From.* El valor definido para el *parámetro From* indica que la regla de bandeja de entrada actúa en el correo electrónico enviado por admin@alpinehouse.onmicrosoft.com. Para obtener una lista completa de los parámetros que se pueden usar para definir condiciones de reglas de bandeja de entrada, consulte el [artículo New-InboxRule.](/powershell/module/exchange/new-inboxrule)
+b. En el **campo Parámetros** , se muestra la condición de la regla de bandeja de entrada. En este ejemplo, la condición se especifica mediante el *parámetro From* . El valor definido para el *parámetro From* indica que la regla de bandeja de entrada actúa en el correo electrónico enviado por admin@alpinehouse.onmicrosoft.com. Para obtener una lista completa de los parámetros que se pueden usar para definir condiciones de reglas de bandeja de entrada, consulte el [artículo New-InboxRule](/powershell/module/exchange/new-inboxrule) .
 
 c. El *parámetro MoveToFolder* especifica la acción de la regla de bandeja de entrada. En este ejemplo, los mensajes recibidos admin@alpinehouse.onmicrosoft.com se mueven a la carpeta denominada *AdminSearch*. Vea también el [artículo New-InboxRule](/powershell/module/exchange/new-inboxrule) para obtener una lista completa de parámetros que se pueden usar para definir la acción de una regla de bandeja de entrada.
 
-d. El **campo UserId** indica el usuario que creó la regla de bandeja de entrada especificada en el **campo ObjectId.** Este usuario también se muestra en la columna **Usuario** de la página de resultados de búsqueda.
+d. El **campo UserId** indica el usuario que creó la regla de bandeja de entrada especificada en el **campo ObjectId** . Este usuario también se muestra en la columna **Usuario** de la página de resultados de búsqueda.
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Investigar por qué un usuario fuera de la organización hubo un inicio de sesión correcto
 
 Al revisar los registros de auditoría en el registro de auditoría, es posible que vea registros que indican que un usuario externo fue autenticado por Azure Active Directory inició sesión correctamente en su organización. Por ejemplo, un administrador de contoso.onmicrosoft.com puede ver un registro de auditoría que muestra que un usuario de una organización diferente (por ejemplo, fabrikam.onmicrosoft.com) ha iniciado sesión correctamente en contoso.onmicrosoft.com. Del mismo modo, es posible que vea registros de auditoría que indican que los usuarios con una cuenta de Microsoft (MSA), como Outlook.com o Live.com, iniciaron sesión correctamente en su organización. En estas situaciones, la actividad auditada es **User logged In**. 
 
-Este comportamiento es una característica del diseño de la aplicación. Azure Active Directory (Azure AD), el servicio de directorio,  permite algo denominado autenticación de paso a través cuando un usuario externo intenta obtener acceso a un sitio SharePoint o a una ubicación OneDrive de la organización. Cuando el usuario externo intenta hacerlo, se le pide que escriba sus credenciales. Azure AD las credenciales para autenticar al usuario, lo que significa Azure AD comprueba que el usuario es quien dice ser. La indicación del inicio de sesión correcto en el registro de auditoría es el resultado de Azure AD autenticación del usuario. El inicio de sesión correcto no significa que el usuario pueda tener acceso a ningún recurso o realizar otras acciones en la organización. Solo indica que el usuario se autenticó mediante Azure AD. Para que un usuario de paso a través tenga acceso a recursos SharePoint o OneDrive, un usuario de la organización tendría que compartir explícitamente un recurso con el usuario externo enviándoles una invitación para compartir o un vínculo de uso compartido anónimo. 
+Este comportamiento es una característica del diseño de la aplicación. Azure Active Directory (Azure AD), el servicio de directorio, permite algo denominado autenticación de paso a  través cuando un usuario externo intenta obtener acceso a un sitio de SharePoint o a una ubicación OneDrive de la organización. Cuando el usuario externo intenta hacerlo, se le pide que escriba sus credenciales. Azure AD las credenciales para autenticar al usuario, lo que significa Azure AD comprueba que el usuario es quien dice ser. La indicación del inicio de sesión correcto en el registro de auditoría es el resultado de Azure AD autenticación del usuario. El inicio de sesión correcto no significa que el usuario pueda tener acceso a ningún recurso o realizar otras acciones en la organización. Solo indica que el usuario se autenticó mediante Azure AD. Para que un usuario de paso a través tenga acceso a recursos SharePoint o OneDrive, un usuario de la organización tendría que compartir explícitamente un recurso con el usuario externo enviándoles una invitación para compartir o un vínculo de uso compartido anónimo. 
 
 > [!NOTE]
-> Azure AD permite la autenticación de paso a través solo para aplicaciones de primer *nivel,* como SharePoint Online y OneDrive para la Empresa. No está permitido para otras aplicaciones de terceros.
+> Azure AD permite la autenticación de paso a través solo para aplicaciones de primer *nivel, como* SharePoint Online y OneDrive para la Empresa. No está permitido para otras aplicaciones de terceros.
 
 Este es un ejemplo y descripciones de propiedades relevantes en un registro de auditoría para un evento **User logged In** que es el resultado de la autenticación de paso a través. Seleccione el registro de auditoría para mostrar la **página** desplegable Detalles y, a continuación, **seleccione Más información**.
 
@@ -228,7 +228,7 @@ Este es un ejemplo y descripciones de propiedades relevantes en un registro de a
 
    e. El **valor RecordType** de **15** indica que la actividad auditada (UserLoggedIn) es un evento de inicio de sesión del Servicio de token seguro (STS) en Azure AD.
 
-Para obtener más información acerca de las otras propiedades que se muestran en un registro de auditoría UserLoggedIn, vea la información de esquema relacionada Azure AD en Office 365 de la API de actividad [de administración.](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)
+Para obtener más información acerca de las otras propiedades que se muestran en un registro de auditoría UserLoggedIn, vea la información de esquema relacionada Azure AD en Office 365 api de actividad de [administración.](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)
 
 Estos son dos escenarios de ejemplo que darían como resultado una actividad de auditoría **de usuario** iniciada correctamente debido a la autenticación de paso a través: 
 
@@ -238,26 +238,26 @@ Estos son dos escenarios de ejemplo que darían como resultado una actividad de 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Sugerencias para investigar inicios de sesión correctos resultantes de la autenticación de paso a través
 
-- Busque en el registro de auditoría las actividades realizadas por el usuario externo identificado en el registro de auditoría **Usuario que inició** sesión. Escriba el UPN para el  usuario externo en el cuadro Usuarios y use un intervalo de fechas si es relevante para el escenario. Por ejemplo, puede crear una búsqueda con los siguientes criterios de búsqueda:
+- Busque en el registro de auditoría las actividades realizadas por el usuario externo identificado en el **registro de auditoría Usuario que inició** sesión. Escriba el UPN para el usuario externo en el  cuadro Usuarios y use un intervalo de fechas si es relevante para el escenario. Por ejemplo, puede crear una búsqueda con los siguientes criterios de búsqueda:
 
    ![Busque todas las actividades realizadas por el usuario externo.](../media/PassThroughAuth2.png)
 
-    Además de  las actividades de usuario iniciadas, se pueden devolver otros registros de auditoría, como los que indican que un usuario de su organización compartió recursos con el usuario externo y si el usuario externo tuvo acceso, modificó o descargó un documento que se compartió con ellos.
+    Además de las actividades  de usuario iniciadas, se pueden devolver otros registros de auditoría, como los que indican que un usuario de su organización compartió recursos con el usuario externo y si el usuario externo tuvo acceso, modificó o descargó un documento que se compartió con ellos.
 
-- Busque las SharePoint de uso compartido que indiquen que un archivo se ha compartido con el usuario externo identificado por un registro de auditoría **de usuario** registrado. Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).
+- Busque SharePoint de uso compartido que indiquen que un archivo se ha compartido con el usuario externo identificado por un registro de auditoría **de usuario** registrado. Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).
 
-- Exporte los resultados de búsqueda del registro de auditoría que contienen registros relevantes para la investigación, de modo que pueda usar Excel para buscar otras actividades relacionadas con el usuario externo. Para obtener más información, vea [Exportar, configurar y ver registros de registro de auditoría.](export-view-audit-log-records.md)
+- Exporte los resultados de búsqueda del registro de auditoría que contienen registros relevantes para la investigación, de modo que pueda usar Excel para buscar otras actividades relacionadas con el usuario externo. Para obtener más información, vea  [Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md).
 
 ## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>Búsqueda de actividades de buzón realizadas por usuarios con licencias que no son E5
 
-Incluso [](enable-mailbox-auditing.md) cuando la auditoría de buzones de correo activada de forma predeterminada está activada para su organización, es posible que observe que los eventos de auditoría de buzones de algunos usuarios no se encuentran en las búsquedas del registro de auditoría mediante el centro de cumplimiento, el cmdlet **Search-UnifiedAuditLog** o la API de actividad de administración de Office 365. El motivo es que los eventos de auditoría de buzones de correo solo se devolverán para los usuarios con licencias E5 cuando uno de los métodos anteriores busque en el registro de auditoría unificado.
+Incluso cuando [](enable-mailbox-auditing.md) la auditoría de buzones está activada de forma predeterminada para su organización, es posible que observe que los eventos de auditoría de buzones de algunos usuarios no se encuentran en las búsquedas del registro de auditoría mediante el centro de cumplimiento, el cmdlet **Search-UnifiedAuditLog** o la API de actividad de administración de Office 365. El motivo es que los eventos de auditoría de buzones de correo solo se devolverán para los usuarios con licencias E5 cuando uno de los métodos anteriores busque en el registro de auditoría unificado.
 
 Para recuperar registros de registro de auditoría de buzones de correo para usuarios que no son E5, puede realizar una de las siguientes soluciones alternativas:
 
 - Habilite manualmente la auditoría de buzones en buzones individuales (ejecute el `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` comando en Exchange Online PowerShell). Después de hacerlo, busque las actividades de auditoría de buzones mediante el centro de cumplimiento, el cmdlet **Search-UnifiedAuditLog** o la API de actividad de Office 365 administración.
   
   > [!NOTE]
-  > Si la auditoría de buzones ya parece estar habilitada en el buzón de correo, pero las búsquedas no devuelven ningún resultado, cambie el valor del parámetro _AuditEnabled_ a y vuelva a `$false` `$true` .
+  > Si la auditoría de buzones ya parece estar habilitada en el buzón de correo, pero las búsquedas no devuelven ningún resultado, cambie el valor del parámetro _AuditEnabled_ `$false` `$true`a y vuelva a .
   
 - Use los cmdlets siguientes en Exchange Online PowerShell:
 
@@ -267,11 +267,11 @@ Para recuperar registros de registro de auditoría de buzones de correo para usu
 
 ## <a name="search-for-mailbox-activities-performed-in-a-specific-mailbox-including-shared-mailboxes"></a>Búsqueda de actividades de buzón realizadas en un buzón específico (incluidos los buzones compartidos)
 
-Al usar  la lista desplegable Usuarios de la herramienta de búsqueda de registro de auditoría en el centro de cumplimiento o el comando **Search-UnifiedAuditLog -UserIds** en Exchange Online PowerShell, puede buscar actividades realizadas por un usuario específico. Para las actividades de auditoría de buzones de correo, este tipo de búsqueda buscará las actividades realizadas por el usuario especificado. No garantiza que todas las actividades realizadas en el mismo buzón se devuelvan en los resultados de la búsqueda. Por ejemplo, una búsqueda de registro de auditoría no devolverá registros de auditoría para las actividades realizadas por un usuario delegado porque la búsqueda de actividades de buzones realizadas por un usuario específico no devolverá las actividades realizadas por un usuario delegado al que se han asignado permisos para tener acceso al buzón de otro usuario. (Un usuario delegado es alguien al que se ha asignado el permiso de buzón SendAs, SendOnBehalf o FullAccess al buzón de otro usuario).
+Cuando se usa la  lista desplegable Usuarios en la herramienta de búsqueda del registro de auditoría en el centro de cumplimiento o el comando **Search-UnifiedAuditLog -UserIds** en Exchange Online PowerShell, puede buscar actividades realizadas por un usuario específico. Para las actividades de auditoría de buzones de correo, este tipo de búsqueda buscará las actividades realizadas por el usuario especificado. No garantiza que todas las actividades realizadas en el mismo buzón se devuelvan en los resultados de la búsqueda. Por ejemplo, una búsqueda de registro de auditoría no devolverá registros de auditoría para las actividades realizadas por un usuario delegado porque la búsqueda de actividades de buzones realizadas por un usuario específico no devolverá las actividades realizadas por un usuario delegado al que se han asignado permisos para tener acceso al buzón de otro usuario. (Un usuario delegado es alguien al que se ha asignado el permiso de buzón SendAs, SendOnBehalf o FullAccess al buzón de otro usuario).
 
-Además, el  uso de la lista desplegable Usuario en la herramienta de búsqueda del registro de auditoría o **search-unifiedAuditLog -UserIds** no devolverá resultados para las actividades realizadas en un buzón compartido.
+Además, el uso  de la lista desplegable Usuario en la herramienta de búsqueda del registro de auditoría o **search-unifiedAuditLog -UserIds no devolverá resultados** para las actividades realizadas en un buzón compartido.
 
-Para buscar las actividades realizadas en un buzón específico o para buscar actividades realizadas en un buzón compartido, use la siguiente sintaxis al ejecutar el cmdlet **Search-UnifiedAuditLog:**
+Para buscar las actividades realizadas en un buzón específico o para buscar actividades realizadas en un buzón compartido, use la siguiente sintaxis al ejecutar el cmdlet **Search-UnifiedAuditLog** :
 
 ```powershell
 Search-UnifiedAuditLog  -StartDate <date> -EndDate <date> -FreeText (Get-Mailbox <mailbox identity).ExchangeGuid

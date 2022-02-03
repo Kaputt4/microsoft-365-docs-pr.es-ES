@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d744681351bd8a0a8d9aa15f1ee5f26554aace8d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d4bdd474f126eaf6d3cda21b2fcb4a1ffc383abe
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244924"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322112"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -146,7 +146,7 @@ Defender para punto de conexión se integra directamente con varias soluciones d
 - Microsoft Defender para Office
 - Skype Empresarial
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
+**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-defende)**
 
 Con Microsoft 365 Defender, Defender para punto de conexión y varias soluciones de seguridad de Microsoft forman un conjunto unificado de defensa empresarial previa y posterior a la infracción que se integra de forma nativa en los puntos de conexión, la identidad, el correo electrónico y las aplicaciones para detectar, evitar, investigar y responder automáticamente a ataques sofisticados.
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0e2103bbb26d84ef941efbd9aaf119c64d74c6d3
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f5bfbc8f2b4b5e6a7794424f248de46c501bbfb5
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164687"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322172"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión
 
@@ -29,31 +29,31 @@ ms.locfileid: "61164687"
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Antivirus de Microsoft Defender es el componente de protección de próxima generación de [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) (Microsoft Defender para endpoint).
+Antivirus de Microsoft Defender es el componente de protección de última generación de [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) (Microsoft Defender para endpoint).
 
-Aunque puedes usar una solución antivirus que no es de Microsoft con Microsoft Defender para endpoint, hay ventajas de usar Antivirus de Microsoft Defender junto con Defender para endpoint. No solo se Antivirus de Microsoft Defender una excelente solución antivirus de próxima generación, sino [](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) que se combina con otras funcionalidades de Defender para endpoints, como detección y respuesta de puntos de conexión y la investigación y corrección [automatizadas](/microsoft-365/security/defender-endpoint/automated-investigations) , obtiene una mejor protección que se coordina en todos los productos y servicios.
+Aunque puedes usar una solución antivirus que no es de Microsoft con Microsoft Defender para endpoint, hay ventajas de usar Antivirus de Microsoft Defender junto con Defender para endpoint. No solo es Antivirus de Microsoft Defender una excelente solución antivirus de próxima generación, sino que se combina con otras funcionalidades de Defender para endpoints, como [detección y respuesta de puntos de conexión](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) y la investigación y corrección [automatizadas](/microsoft-365/security/defender-endpoint/automated-investigations) , obtiene una mejor protección que se coordina en todos los productos y servicios.
 
 ## <a name="11-reasons-to-use-microsoft-defender-antivirus-together-with-microsoft-defender-for-endpoint"></a>11 razones para usar Antivirus de Microsoft Defender junto con Microsoft Defender para endpoint
 
 |#|Ventaja|Por qué es importante|
 |--|--|--|
-|1|Uso compartido de señales antivirus|Las aplicaciones y servicios de Microsoft comparten señales en toda la organización empresarial, lo que proporciona una plataforma más sólida. Vea Ideas de la evaluación basada en CK&[MITRE ATT de Microsoft Defender para endpoint](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).|
+|1|Uso compartido de señales antivirus|Las aplicaciones y servicios de Microsoft comparten señales en toda la organización empresarial, lo que proporciona una plataforma más sólida. Consulta [Ideas la evaluación basada en CK&MITRE ATT de Microsoft Defender para Endpoint](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).|
 |2|Análisis de amenazas y puntuación para dispositivos|Antivirus de Microsoft Defender recopila los datos subyacentes del sistema usados por el análisis [de](/microsoft-365/security/defender-endpoint/threat-analytics) amenazas y [la puntuación segura de Microsoft para dispositivos](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices). Esto proporciona al equipo de seguridad de la organización información más significativa, como recomendaciones y oportunidades para mejorar la posición de seguridad de la organización.|
-|3|Rendimiento|Microsoft Defender para endpoint está diseñado para trabajar con Antivirus de Microsoft Defender, por lo que obtienes un mejor rendimiento cuando usas estas ofertas juntos. [Evaluar Antivirus de Microsoft Defender](evaluate-microsoft-defender-antivirus.md) y [Microsoft Defender para Endpoint](/microsoft-365/security/defender-endpoint/evaluate-mde).|
+|3|Rendimiento|Microsoft Defender para endpoint está diseñado para trabajar con Antivirus de Microsoft Defender, por lo que obtienes un mejor rendimiento cuando usas estas ofertas juntos. [Evalúe Antivirus de Microsoft Defender](evaluate-microsoft-defender-antivirus.md) [y Microsoft Defender para Endpoint](/microsoft-365/security/defender-endpoint/evaluate-mde).|
 |4|Detalles sobre malware bloqueado|Hay más detalles y acciones para malware bloqueado disponible con Antivirus de Microsoft Defender y Microsoft Defender para endpoint. [Comprender el malware & otras amenazas](/windows/security/threat-protection/intelligence/understanding-malware).|
 |5|Protección de red|El equipo de seguridad de su organización puede proteger su red bloqueando direcciones URL y direcciones IP específicas. [Proteger la red](/microsoft-365/security/defender-endpoint/network-protection).|
 |6 |Bloqueo de archivos|El equipo de seguridad de la organización puede bloquear archivos específicos. [Detener y poner en cuarentena los archivos de la red](/microsoft-365/security/defender-endpoint/respond-file-alerts#stop-and-quarantine-files-in-your-network).|
-|7 |Reducción de superficie de ataque|El equipo de seguridad de la organización puede reducir las vulnerabilidades (superficies de ataque), lo que ofrece a los atacantes menos formas de realizar ataques. La reducción de superficie de ataque usa protección de nube para varias reglas. [Obtenga información general sobre la reducción de superficie de ataque.](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)|
+|7 |Reducción de superficie de ataque|El equipo de seguridad de la organización puede reducir las vulnerabilidades (superficies de ataque), lo que ofrece a los atacantes menos formas de realizar ataques. La reducción de superficie de ataque usa protección de nube para varias reglas. [Obtenga información general sobre la reducción de superficie de ataque](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction).|
 |8 |Eventos de auditoría|Las señales de eventos de auditoría están [disponibles en detección y respuesta de puntos de conexión funcionalidades](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response). (Estas señales no están disponibles con soluciones antivirus que no sean de Microsoft).|
-|9 |Datos geográficos|Conforme a la norma ISO 270001 retención de datos, los datos geográficos se proporcionan de acuerdo con la soberanía geográfica seleccionada de la organización. Vea [Ofertas de cumplimiento: ISO/IEC 27001:2013 Information Security Management Standards](/microsoft-365/compliance/offering-iso-27001).|
-|10|Recuperación de archivos mediante OneDrive|Si estás usando Antivirus de Microsoft Defender junto con [Office 365](/Office365/Enterprise), y el dispositivo es atacada por ransomware, los archivos están protegidos y recuperables. [OneDrive restaurar archivos y Windows Defender protección contra ransomware un paso más allá](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
-|11|Soporte técnico|Al usar Microsoft Defender para Endpoint junto con Antivirus de Microsoft Defender, tienes una empresa para llamar al soporte técnico. [Solucionar problemas de servicio y](/microsoft-365/security/defender-endpoint/troubleshoot-mde) revisar los registros de eventos y los códigos de error con [Antivirus de Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md).|
+|9 |Datos geográficos|Conforme a la norma ISO 270001 retención de datos, los datos geográficos se proporcionan de acuerdo con la soberanía geográfica seleccionada de la organización. Consulte [Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards](/microsoft-365/compliance/offering-iso-27001).|
+|10|Recuperación de archivos mediante OneDrive|Si estás usando Antivirus de Microsoft Defender junto con [Office 365](/Office365/Enterprise), y el ransomware ataca el dispositivo, los archivos se protegen y se pueden recuperar. [OneDrive restaurar archivos y Windows Defender protección contra ransomware un paso más allá](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
+|11|Soporte técnico|Al usar Microsoft Defender para Endpoint junto con Antivirus de Microsoft Defender, tienes una empresa para llamar al soporte técnico. [Solucionar problemas de servicio](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-mdatp) y [revisar los registros de eventos y los códigos de error con Antivirus de Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md).|
 
 ## <a name="learn-more"></a>Más información
 
 [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-[Administración & vulnerabilidades de amenazas](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+[Administración de vulnerabilidades y amenazas](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)

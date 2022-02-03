@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6bce3370c5b59a6c120b810446bf16cd5364634
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: ce7eab7648285cb671ed5657e16516f5c1ed235c
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244720"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321980"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -48,9 +48,9 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
  Puedes encontrar páginas de dispositivo en cualquiera de las siguientes vistas:
 
-- **Panel de operaciones de seguridad:** seleccione un nombre de dispositivo en la tarjeta Dispositivos en riesgo.
+- **Panel de operaciones de seguridad** : seleccione un nombre de dispositivo en la tarjeta Dispositivos en riesgo.
 - **Cola de alertas**: seleccione el nombre del dispositivo junto al icono de dispositivo en la cola de alertas.
-- **Lista de dispositivos:** seleccione el título del nombre del dispositivo de la lista de dispositivos.
+- **Lista de dispositivos** : seleccione el título del nombre del dispositivo de la lista de dispositivos.
 - **Cuadro de búsqueda**: seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
 
 > [!IMPORTANT]
@@ -63,7 +63,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
 Agregar o administrar etiquetas para crear una afiliación de grupo lógico. Las etiquetas de dispositivo son compatibles con la asignación adecuada de la red, lo que permite adjuntar diferentes etiquetas para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente.
 
-Para obtener más información sobre el etiquetado de dispositivos, consulta [Crear y administrar etiquetas de dispositivo.](machine-tags.md)
+Para obtener más información sobre el etiquetado de dispositivos, consulta [Crear y administrar etiquetas de dispositivo](machine-tags.md).
 
 ## <a name="initiate-automated-investigation"></a>Iniciar investigación automatizada
 
@@ -77,7 +77,7 @@ La respuesta en directo es una funcionalidad que te proporciona acceso instantá
 
 La respuesta en directo está diseñada para mejorar las investigaciones, ya que permite recopilar datos forenses, ejecutar scripts, enviar entidades sospechosas para su análisis, corregir amenazas y buscar proactivamente amenazas emergentes.
 
-Para obtener más información sobre la respuesta en directo, vea [Investigar entidades en dispositivos con respuesta en directo.](live-response.md)
+Para obtener más información sobre la respuesta en directo, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md).
 
 ## <a name="collect-investigation-package-from-devices"></a>Recopilar paquete de investigación de dispositivos
 
@@ -113,8 +113,8 @@ El paquete contiene las siguientes carpetas:
 |---|---|
 |Autoruns|Contiene un conjunto de archivos que cada uno representa el contenido del registro de un punto de entrada de inicio automático (ASEP) conocido para ayudar a identificar la persistencia del atacante en el dispositivo. <p> <div class="alert"><b>NOTA:</b> Si no se encuentra la clave del Registro, el archivo contendrá el siguiente mensaje: "ERROR: el sistema no pudo encontrar la clave o el valor del Registro especificados".<div>|
 |Programas instalados|Este .CSV contiene la lista de programas instalados que pueden ayudar a identificar lo que está instalado actualmente en el dispositivo. Para obtener más información, [vea Win32_Product clase](https://go.microsoft.com/fwlink/?linkid=841509).|
-|Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad a direcciones URL sospechosas, la infraestructura de comando y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La memoria caché ARP puede revelar otros hosts de una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haber sido usados para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la memoria caché de resolución de cliente DNS, que incluye entradas precargadas del archivo hosts locales y registros de recursos obtenidos recientemente para las consultas de nombre resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul><p><div class="alert"><b>NOTA:</b> El archivo pfirewall.log debe existir en %windir%\system32\logfiles\firewall\pfirewall.log, por lo que se incluirá en el paquete de investigación. Para obtener más información sobre cómo crear el archivo de registro de firewall, vea [Configure the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
-|Archivos de prefetch|Windows archivos prefetch están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haber sido eliminadas, pero que aún se pueden encontrar en la lista de archivos de prefetch. <ul><li>Carpeta Prefetch: contiene una copia de los archivos de prefetch de `%SystemRoot%\Prefetch` . NOTA: Se recomienda descargar un visor de archivos de prefetch para ver los archivos de prefetch.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento si hubo algún error de copia en la carpeta de captura previa.</li></ul>|
+|Conexiones de red|Esta carpeta contiene un conjunto de puntos de datos relacionados con la información de conectividad que puede ayudar a identificar la conectividad a direcciones URL sospechosas, la infraestructura de comando y control del atacante (C&C), cualquier movimiento lateral o conexiones remotas. <ul><li>ActiveNetConnections.txt: muestra las estadísticas de protocolo y las conexiones de red TCP/IP actuales. Proporciona la capacidad de buscar conectividad sospechosa realizada por un proceso.</li><li>Arp.txt: muestra las tablas de caché del protocolo de resolución de direcciones (ARP) actuales para todas las interfaces. La memoria caché ARP puede revelar otros hosts de una red que se han visto comprometidos o sistemas sospechosos en la red que podrían haber sido usados para ejecutar un ataque interno.</il><li>DnsCache.txt: muestra el contenido de la memoria caché de resolución de cliente DNS, que incluye entradas precargadas del archivo hosts locales y registros de recursos obtenidos recientemente para las consultas de nombre resueltas por el equipo. Esto puede ayudar a identificar conexiones sospechosas.</li><li>IpConfig.txt: muestra la configuración completa de TCP/IP para todos los adaptadores. Los adaptadores pueden representar interfaces físicas, como adaptadores de red instalados o interfaces lógicas, como conexiones de acceso telefónico.</li><li>FirewallExecutionLog.txt y pfirewall.log</li></ul><p><div class="alert"><b>NOTA:</b> El archivo pfirewall.log debe existir en %windir%\system32\logfiles\firewall\pfirewall.log, por lo que se incluirá en el paquete de investigación. Para obtener más información sobre cómo crear el archivo de registro de firewall, [vea Configure the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|Archivos de prefetch|Windows archivos prefetch están diseñados para acelerar el proceso de inicio de la aplicación. Se puede usar para realizar un seguimiento de todos los archivos usados recientemente en el sistema y buscar seguimientos de aplicaciones que podrían haber sido eliminadas, pero que aún se pueden encontrar en la lista de archivos de prefetch. <ul><li>Carpeta Prefetch: contiene una copia de los archivos de prefetch de `%SystemRoot%\Prefetch`. NOTA: Se recomienda descargar un visor de archivos de prefetch para ver los archivos de prefetch.</li><li>PrefetchFilesList.txt: contiene la lista de todos los archivos copiados que se pueden usar para realizar un seguimiento si hubo algún error de copia en la carpeta de captura previa.</li></ul>|
 |Procesos|Contiene un .CSV que enumera los procesos en ejecución y proporciona la capacidad de identificar los procesos actuales que se ejecutan en el dispositivo. Esto puede ser útil al identificar un proceso sospechoso y su estado.|
 |Tareas programadas|Contiene un archivo .CSV que enumera las tareas programadas, que se pueden usar para identificar rutinas realizadas automáticamente en un dispositivo elegido para buscar código sospechoso que se estableció para ejecutarse automáticamente.|
 |Registro de eventos de seguridad|Contiene el registro de eventos de seguridad, que contiene registros de actividad de inicio de sesión o cierre de sesión, u otros eventos relacionados con la seguridad especificados por la directiva de auditoría del sistema. <p><div class="alert"><b>NOTA:</b> Abra el archivo de registro de eventos con el Visor de eventos.</div>|
@@ -133,9 +133,9 @@ Como parte del proceso de investigación o respuesta, puedes iniciar de forma re
 
 >[!IMPORTANT]
 >- Esta acción no es compatible actualmente con macOS y Linux. Use la respuesta en directo para ejecutar la acción. Para obtener más información sobre la respuesta en directo, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md)
->- Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+>- Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [consulte Antivirus de Microsoft Defender compatibilidad](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide).
 
-Uno que haya seleccionado **Ejecutar examen antivirus,** seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
+Uno que haya seleccionado **Ejecutar examen antivirus**, seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
 ![Imagen de notificación para seleccionar el examen rápido o el examen completo y agregar comentario.](images/run-antivirus.png)
 
@@ -190,7 +190,7 @@ Esta característica de aislamiento de dispositivos desconecta el dispositivo en
 En Windows 10 versión 1709 o posterior, tendrás más control sobre el nivel de aislamiento de red. También puede habilitar la conectividad Outlook, Microsoft Teams y Skype Empresarial (a.k.a 'Selective Isolation').
 
 > [!NOTE]
-> Podrás volver a conectar el dispositivo a la red en cualquier momento. El botón de la página del dispositivo cambiará a decir **Liberar** del aislamiento y, a continuación, tomarás los mismos pasos que aislar el dispositivo.
+> Podrás volver a conectar el dispositivo a la red en cualquier momento. El botón de la página del dispositivo cambiará para decir Liberar del **aislamiento y,** a continuación, realizarás los mismos pasos que aislar el dispositivo.
 
 Una vez que haya seleccionado **Aislar dispositivo** en la página del dispositivo, escriba un comentario y seleccione **Confirmar**. El Centro de acciones mostrará la información del examen y la escala de tiempo del dispositivo incluirá un nuevo evento.
 
@@ -224,7 +224,7 @@ También se muestran todos los demás detalles relacionados, por ejemplo, fecha 
 
 ![Imagen del centro de acción con información.](images/action-center-details.png)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Realizar acciones de respuesta en un archivo](respond-file-alerts.md)
 - [Acciones de respuesta manuales en Microsoft Defender para el plan de extremo 1](defender-endpoint-plan-1.md#manual-response-actions)

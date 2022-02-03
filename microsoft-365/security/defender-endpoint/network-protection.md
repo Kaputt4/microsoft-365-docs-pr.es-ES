@@ -15,13 +15,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 05881e464e390fce9155f9a173542682a35401c1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: m365initiative-m365-defender
+ms.date: ''
+ms.openlocfilehash: af7ad58002adcccc51df0e69890a5134e57d4dfe
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937225"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320778"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -37,7 +38,7 @@ ms.locfileid: "61937225"
 
 La protección de red ayuda a proteger los dispositivos de eventos basados en Internet. La protección de red es una capacidad de reducción de superficie de ataque. Ayuda a evitar que los empleados accedan a dominios peligrosos a través de aplicaciones. Los dominios que hospedan estafas de phishing, vulnerabilidades de seguridad y otro contenido malintencionado en Internet se consideran peligrosos. La protección de red expande el ámbito de [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) para bloquear todo el tráfico HTTP saliente que intente conectarse a orígenes de reputación baja (según el dominio o el nombre de host).
 
-La protección de red amplía la protección de [la protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona funcionalidad de protección web en Edge a otros exploradores compatibles y aplicaciones que no son exploradores. Además, la protección de red proporciona visibilidad y bloqueo de indicadores de peligro (IIC) cuando se usa con detección [y respuesta de extremos.](overview-endpoint-detection-response.md) Por ejemplo, la protección de red funciona con los indicadores [personalizados](manage-indicators.md) que puede usar para bloquear dominios o nombres de host específicos.
+La protección de red amplía la protección de [la protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona funcionalidad de protección web en Edge a otros exploradores compatibles y aplicaciones que no son exploradores. Además, la protección de red proporciona visibilidad y bloqueo de indicadores de peligro (IIC) cuando se usan con detección [y respuesta de puntos de conexión](overview-endpoint-detection-response.md). Por ejemplo, la protección de red funciona con los indicadores [personalizados](manage-indicators.md) que puede usar para bloquear dominios o nombres de host específicos.
 
 > [!TIP]
 > Consulta el sitio de prueba de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funciona la protección de red.
@@ -50,9 +51,9 @@ La protección de red Windows 10 Pro o Enterprise y Antivirus de Microsoft Defen
 
 ****
 
-|Versión de Windows|Antivirus de Microsoft Defender|
+|Versión de Windows|Antivirus de Microsoft Defender|
 |---|---|
-|Windows 10 versión 1709 o posterior <p> Windows 11 <p> Windows Server 1803 o posterior|[Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la protección [en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas|
+|Windows 10 versión 1709 o posterior <p> Windows 11 <p> Windows Server 1803 o posterior|[Antivirus de Microsoft Defender la protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md) y la [protección en](enable-cloud-protection-microsoft-defender-antivirus.md) la nube deben estar habilitadas|
 |
 
 Después de habilitar los servicios, es posible que deba configurar la red o firewall para permitir las conexiones entre los servicios y los dispositivos (también denominados puntos de conexión).
@@ -62,11 +63,11 @@ Después de habilitar los servicios, es posible que deba configurar la red o fir
 
 ## <a name="configuring-network-protection"></a>Configuración de la protección de red
 
-Para obtener más información acerca de cómo habilitar la protección de red, vea **[Enable network protection](enable-network-protection.md)**. Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.
+Para obtener más información acerca de cómo habilitar la protección de red, vea **[Habilitar la protección de red](enable-network-protection.md)**. Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.
 
 ## <a name="viewing-network-protection-events"></a>Visualización de eventos de protección de red
 
-La protección de red funciona mejor con [Microsoft Defender para endpoint,](microsoft-defender-endpoint.md)lo que le ofrece informes detallados sobre eventos y bloques de protección contra vulnerabilidades como parte de escenarios de [investigación de alertas.](investigate-alerts.md)
+La protección de red funciona mejor con [Microsoft Defender para](microsoft-defender-endpoint.md) endpoint, lo que le ofrece informes detallados sobre los eventos y bloques de protección contra vulnerabilidades como parte de los [escenarios de investigación de alertas](investigate-alerts.md).
 
 Cuando la protección de red bloquea una conexión, se muestra una notificación desde el Centro de acciones. El equipo de operaciones de seguridad [puede personalizar la notificación](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) con los detalles de la organización y la información de contacto. Además, las reglas de reducción de superficie de ataque individuales se pueden habilitar y personalizar para adaptarse a determinadas técnicas que se deben supervisar.
 
@@ -74,7 +75,7 @@ También puede usar el modo [de auditoría para](audit-windows-defender.md) eval
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>Revisar los eventos de protección de red en el portal de Microsoft 365 Defender web
 
-Microsoft Defender para endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de [investigación de alertas.](investigate-alerts.md) Puede ver estos detalles en el portal de Microsoft 365 Defender ( ) en la cola de alertas [https://security.microsoft.com](https://security.microsoft.com) o mediante la búsqueda [avanzada](advanced-hunting-overview.md). [](review-alerts.md) Si usa el modo [de auditoría,](audit-windows-defender.md)puede usar la búsqueda avanzada para ver cómo la configuración de protección de red afectaría al entorno si estuvieran habilitadas.
+Microsoft Defender para endpoint proporciona informes detallados sobre eventos y bloques como parte de sus [escenarios de investigación de alertas](investigate-alerts.md). Puede ver estos detalles en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) en la cola [de](review-alerts.md) alertas o mediante la [búsqueda avanzada](advanced-hunting-overview.md). Si usa el modo [de auditoría](audit-windows-defender.md), puede usar la búsqueda avanzada para ver cómo la configuración de protección de red afectaría al entorno si estuvieran habilitadas.
 
 Esta es una consulta de ejemplo para la búsqueda avanzada:
 
@@ -106,15 +107,15 @@ Este procedimiento crea una vista personalizada que filtra para mostrar solo los
 
 ## <a name="network-protection-and-the-tcp-three-way-handshake"></a>Protección de red y el protocolo de enlace triple TCP
 
-Con la protección de red, la determinación de si se permite o bloquea el acceso a un sitio se realiza después de la finalización del protocolo de enlace triple a través de [TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Por lo tanto, cuando la protección de red bloquea un sitio, es posible que vea un tipo de acción debajo en el portal de Microsoft 365 Defender, aunque el sitio se haya `ConnectionSuccess` `NetworkConnectionEvents` bloqueado realmente. `NetworkConnectionEvents` se notifican desde la capa TCP y no desde la protección de red. Una vez completado el protocolo de enlace triple, la protección de red permite o bloquea el acceso al sitio.
+Con la protección de red, la determinación de si se va a permitir o bloquear el acceso a un sitio se realiza después de la finalización del protocolo de enlace triple a través de [TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Por lo tanto, cuando la protección de red bloquea un sitio, `ConnectionSuccess` `NetworkConnectionEvents` es posible que vea un tipo de acción debajo en el portal de Microsoft 365 Defender, aunque el sitio se haya bloqueado realmente. `NetworkConnectionEvents` se notifican desde la capa TCP y no desde la protección de red. Una vez completado el protocolo de enlace triple, la protección de red permite o bloquea el acceso al sitio.
 
 Este es un ejemplo de cómo funciona:
 
 1. Supongamos que un usuario intenta acceder a un sitio web en su dispositivo. El sitio se hospeda en un dominio peligroso y la protección de red debe bloquearlo.  
 
-2. Comienza el protocolo de enlace triple a través de TCP/IP. Antes de que se complete, se registra una acción `NetworkConnectionEvents` y su aparece como `ActionType` `ConnectionSuccess` . Sin embargo, tan pronto como se complete el proceso de protocolo de enlace triple, la protección de red bloquea el acceso al sitio. Todo esto sucede muy rápidamente. Un proceso similar se produce [con SmartScreen de Microsoft Defender;](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)es cuando se completa el protocolo de enlace triple que se determina y se bloquea o se permite el acceso a un sitio.
+2. Comienza el protocolo de enlace triple a través de TCP/IP. Antes de que se complete, se `NetworkConnectionEvents` registra una acción y su aparece `ActionType` como `ConnectionSuccess`. Sin embargo, tan pronto como se complete el proceso de protocolo de enlace triple, la protección de red bloquea el acceso al sitio. Todo esto sucede muy rápidamente. Un proceso similar se produce con [SmartScreen de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); es cuando se completa el protocolo de enlace triple y se realiza una determinación y se bloquea o se permite el acceso a un sitio.
 
-3. En el portal Microsoft 365 Defender, una alerta aparece en la cola [de alertas](alerts-queue.md). Los detalles de esa alerta incluyen ambos `NetworkConnectionEvents` y `AlertEvents` . Puede ver que el sitio se bloqueó, aunque también tenga un `NetworkConnectionEvents` elemento con actiontype de `ConnectionSuccess` .
+3. En el Microsoft 365 Defender, una alerta aparece en la cola [de alertas](alerts-queue.md). Los detalles de esa alerta incluyen ambos y `NetworkConnectionEvents` `AlertEvents`. Puede ver que el sitio se bloqueó, aunque también tenga un `NetworkConnectionEvents` elemento con actiontype de `ConnectionSuccess`.
 
 ## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Consideraciones para Windows escritorio virtual que se Windows 10 Enterprise multi-sesión
 
@@ -148,7 +149,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Evaluar la protección de](evaluate-network-protection.md) red | Realice un escenario rápido que demuestre cómo funciona la característica y qué eventos se crearían normalmente.
 - [Habilitar la protección de](enable-network-protection.md) red | Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.

@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Introducción a la definición y administración de alertas para directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 3c177bc75ff0f5820a07609c04bb20851a70e52a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d295a04c27231b937ca552feb06628f857528e34
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933532"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321596"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Introducción al panel de alertas de prevención de pérdida de datos
 
 Las directivas de prevención de pérdida de datos (DLP) pueden realizar acciones de protección para evitar el uso compartido involuntario de elementos confidenciales. Cuando se hace una acción en un elemento confidencial, se le puede notificar configurando alertas para DLP. En este artículo se muestra cómo definir directivas de alerta enriquecciones vinculadas a las directivas de prevención de pérdida de datos (DLP). Verá cómo usar el panel de administración de alertas [DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> para ver alertas, eventos y metadatos asociados para infracciones de directivas DLP.
 
-Si no es nuevo en las alertas dlp, debe revisar Información sobre el panel de [alertas de](dlp-alerts-dashboard-learn.md) prevención de pérdida de datos
+Si no es nuevo en las alertas dlp, debe revisar [Información sobre el panel de alertas de prevención de pérdida de datos](dlp-alerts-dashboard-learn.md)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -44,7 +44,7 @@ Antes de comenzar, asegúrese de que tiene los requisitos previos necesarios:
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Licencias para el panel de administración de alertas DLP
 
-Todos los inquilinos elegibles para Office 365 DLP pueden acceder al panel de administración de alertas DLP. Para empezar, debes ser elegible para dlp Office 365 para Exchange Online, SharePoint Online y OneDrive para la Empresa. Para obtener más información acerca de los requisitos de licencia para Office 365 DLP, vea ¿Qué licencias proporcionan los derechos para que un usuario se beneficie [del servicio?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Todos los inquilinos elegibles para Office 365 DLP pueden acceder al panel de administración de alertas DLP. Para empezar, debes ser elegible para dlp Office 365 para Exchange Online, SharePoint Online y OneDrive para la Empresa. Para obtener más información acerca de los requisitos de licencia para Office 365 DLP, vea ¿Qué licencias proporcionan los derechos para que un usuario se [beneficie del servicio?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
 Los clientes que usan [DLP](endpoint-dlp-learn-about.md) de extremo que son elegibles para [Teams DLP](dlp-microsoft-teams.md) verán sus alertas de directiva DLP de punto de conexión y Teams de directivas DLP en el panel de administración de alertas dlp.
 
@@ -58,9 +58,9 @@ La **característica de vista previa** de contenido solo está disponible para e
 
 ### <a name="licensing-for-alert-configuration-options"></a>Licencias para opciones de configuración de alertas
 
-Configuración de alerta de evento **único:** las organizaciones que tienen una suscripción A1, F1 o G1 o una suscripción A3 o G3 solo pueden crear directivas de alerta cuando se desencadena una alerta cada vez que se produce una actividad.
+Configuración de alerta de evento **único: las** organizaciones que tienen una suscripción A1, F1 o G1 o una suscripción A3 o G3 solo pueden crear directivas de alerta cuando se desencadena una alerta cada vez que se produce una actividad.
 
-**Configuración de alerta agregada:** para configurar directivas de alerta agregadas basadas en un umbral, debe realizar una de estas configuraciones de licencias:
+**Configuración de alerta agregada**: para configurar directivas de alerta agregadas basadas en un umbral, debe tener una de estas configuraciones de licencias:
 
 - Una suscripción A5 o G5
 - Una suscripción E1, F1 o G1 o una suscripción A3 o G3 que incluye una de las siguientes características:
@@ -93,32 +93,35 @@ Para obtener acceso a la característica de vista previa de contenido y a las ca
 
 que tiene el rol de visor de contenido de clasificación de datos asignado previamente.
 
-### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en versión preliminar
+### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
 
-Hay roles y grupos de roles en versión preliminar que puede probar para ajustar los controles de acceso.
+Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de roles Microsoft Information Protection (MIP) que están en versión preliminar. Para obtener más información sobre ellos, vea [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de grupos de roles de MIP que están en versión preliminar. Para obtener más información sobre los grupos de roles en [el Centro de seguridad y & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protección de la información
 - Administradores de Information Protection
 - Analistas de Information Protection
-- Investigadores de protección de la información
+- Investigadores de Information Protection
 - Lectores de Information Protection
 
 ## <a name="dlp-alert-configuration"></a>Configuración de alerta DLP
 
-Para obtener información sobre cómo configurar una alerta en la directiva DLP, vea [Where to start with data loss prevention](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention).
+Para obtener información sobre cómo configurar una alerta en la directiva DLP, consulte [Where to start with data loss prevention](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention).
+
+> [!IMPORTANT]
+> La configuración de directiva de retención de registros de auditoría de las organizaciones controla cuánto tiempo permanece visible una alerta en la consola. Consulte Administrar [directivas de retención de registros de auditoría](audit-log-retention-policies.md#manage-audit-log-retention-policies) para obtener más información.
 
 ### <a name="aggregate-event-alert-configuration"></a>Configuración de alerta de eventos agregados
 
-Si su organización tiene licencia para [opciones de](#licensing-for-alert-configuration-options)configuración de alerta agregadas, verá estas opciones al crear o editar una directiva DLP.
+Si su organización tiene licencia para [opciones de](#licensing-for-alert-configuration-options) configuración de alerta agregadas, verá estas opciones al crear o editar una directiva DLP.
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Captura de pantalla que muestra las opciones de los informes de incidentes para los usuarios que son aptos para opciones de configuración de alerta agregadas." border="false":::
 
@@ -126,7 +129,7 @@ Esta configuración permite configurar una directiva para generar una alerta cad
 
 ### <a name="single-event-alert-configuration"></a>Configuración de alerta de evento único
 
-Si su organización tiene licencia para [opciones](#licensing-for-alert-configuration-options)de configuración de alertas de un solo evento, verá estas opciones al crear o editar una directiva DLP. Use esta opción para crear una alerta que se genera cada vez que se produce una coincidencia de reglas DLP.
+Si su organización tiene licencia [para opciones de](#licensing-for-alert-configuration-options) configuración de alertas de un solo evento, verá estas opciones al crear o editar una directiva DLP. Use esta opción para crear una alerta que se genera cada vez que se produce una coincidencia de reglas DLP.
 
 :::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="Captura de pantalla que muestra las opciones de los informes de incidentes para los usuarios que son aptos para opciones de configuración de alertas de un solo evento." border="false":::
 
@@ -140,7 +143,7 @@ Para trabajar con el panel de administración de alertas DLP:
 
 :::image type="content" source="../media/alert-details.png" alt-text="Captura de pantalla que muestra detalles de alertas en el panel de administración de alertas DLP." border="false":::
 
-4. Seleccione la **pestaña Eventos** para ver todos los eventos asociados con la alerta. Puede elegir un evento en particular para ver sus detalles. Para obtener una lista de algunos de los detalles de eventos disponibles, vea [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md).
+4. Seleccione la **pestaña Eventos** para ver todos los eventos asociados con la alerta. Puede elegir un evento en particular para ver sus detalles. Para obtener una lista de algunos de los detalles de eventos disponibles, consulte [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md).
 5. Seleccione **Detalles** para abrir la **página Información** general de la alerta. La página de información general proporciona un resumen:
     1. de lo que ocurrió
     1. quién realizó las acciones que provocaron la coincidencia de la directiva
@@ -153,12 +156,12 @@ Para trabajar con el panel de administración de alertas DLP:
 
 7. Seleccione la **pestaña Tipos de información** confidencial para ver detalles sobre los tipos de información confidencial detectados en el contenido. Los detalles incluyen confianza, recuento y el contenido que coincide con el tipo de información confidencial.
 
-8. Después de investigar la alerta, vuelva a la pestaña Información general, donde puede administrar el triage y administrar la eliminación de la alerta y agregar comentarios. 
+8. Después de investigar la alerta, vuelva a la  pestaña Información general, donde puede administrar el triage y administrar la eliminación de la alerta y agregar comentarios.
 
 - Para ver el historial de administración de flujos de trabajo, elija **Registro de administración**.
 - Después de realizar la acción necesaria para la alerta, establezca el estado de la alerta en **Resuelto**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Obtenga información sobre las alertas de prevención de pérdida de datos y el panel de alertas](dlp-alerts-dashboard-learn.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)

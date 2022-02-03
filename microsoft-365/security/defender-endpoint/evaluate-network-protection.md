@@ -13,13 +13,14 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 2db9df56a858bd069141c2c9389cf232b7feee7c
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.collection: m365solution-scenario
+ms.date: ''
+ms.openlocfilehash: 98c97afb34518f32e4d8a5da03ad35d99e5494cd
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61320748"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320804"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
@@ -41,7 +42,7 @@ Este artículo le ayuda a evaluar la protección de red habilitando la caracter�
 
 Habilite la protección de red en modo auditoría para ver qué direcciones IP y dominios se habrían bloqueado. Puedes asegurarte de que no afecta a las aplicaciones de línea de negocio u obtener una idea de la frecuencia con la que se producen los bloqueos.
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione Ejecutar como **administrador**
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón secundario **en Windows PowerShell** y seleccione **Ejecutar como administrador**
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
@@ -59,7 +60,7 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
     ![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](images/np-notif.png)
 
 > [!NOTE]
-> Las conexiones de red pueden ser correctas aunque la protección de red bloquee un sitio. Para obtener más información, vea [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
+> Las conexiones de red pueden ser correctas aunque la protección de red bloquee un sitio. Para obtener más información, consulte [Protección de red y el](network-protection.md#network-protection-and-the-tcp-three-way-handshake) protocolo de enlace triple TCP.
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
 
@@ -71,7 +72,7 @@ Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de evento
 | 1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 | 1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Protección de red](network-protection.md)
 

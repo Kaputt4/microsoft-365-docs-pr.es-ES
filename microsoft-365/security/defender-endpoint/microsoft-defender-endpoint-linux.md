@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 28ab23e46c951cd0b8bcf357f2420c0ea0804abb
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 8b7b4ca9f93811f3a1e3e036b4cee620ae639e95
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214026"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322136"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -49,7 +49,7 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft
 - Privilegios administrativos en el dispositivo (en caso de implementación manual)
 
 > [!NOTE]
-> El agente de Microsoft Defender para Endpoint en Linux es independiente [del agente OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender para endpoint se basa en su propia canalización de telemetría independiente.
+> El agente de Microsoft Defender para Endpoint en Linux es independiente del [agente OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender para endpoint se basa en su propia canalización de telemetría independiente.
 
 
 ### <a name="installation-instructions"></a>Instrucciones de instalación
@@ -58,7 +58,7 @@ Existen varios métodos y herramientas de implementación que puede usar para in
 
 En general, debe seguir los siguientes pasos:
 
-- Asegúrese de que tiene una suscripción de Microsoft Defender para endpoint y de que tiene acceso al portal de [Microsoft Defender para endpoint](microsoft-defender-security-center.md).
+- Asegúrese de que tiene una suscripción de Microsoft Defender para endpoint y de que tiene acceso al [portal de Microsoft Defender para endpoints](microsoft-defender-security-center.md).
 - Implemente Microsoft Defender para Endpoint en Linux mediante uno de los siguientes métodos de implementación:
   - La herramienta de línea de comandos:
     - [Implementación manual](linux-install-manually.md)
@@ -114,12 +114,12 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
   - Para el resto de las distribuciones admitidas, la versión mínima del kernel necesaria es 3.10.0-327
 
 - Mecanismo del proveedor de eventos
-  - Red Hat Enterprise Linux 6 y CentOS 6: `Talpa` solución basada en módulos kernel
+  - Red Hat Enterprise Linux 6 y CentOS 6: solución `Talpa` basada en módulos kernel
   - Para el resto de las distribuciones admitidas: `Fanotify`
     - La `fanotify` opción kernel debe estar habilitada
 
       > [!CAUTION]
-      > No se admite la ejecución de Defender para Endpoint en Linux en paralelo con otras soluciones de seguridad `fanotify` basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
+      > No se admite la ejecución de Defender para Endpoint en Linux en paralelo `fanotify`con otras soluciones de seguridad basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
 
 - Espacio en disco: 1 GB
 
@@ -153,10 +153,10 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
 
 Después de habilitar el servicio, es posible que deba configurar la red o el firewall para permitir conexiones salientes entre él y los puntos de conexión.
 
-- El marco de auditoría ( `auditd` ) debe estar habilitado.
+- El marco de auditoría (`auditd`) debe estar habilitado.
 
   > [!NOTE]
-  > Los eventos del sistema capturados por las reglas agregadas se agregarán a (s) y pueden afectar a la auditoría de host y `/etc/audit/rules.d/` `audit.log` a la colección ascendente. Los eventos agregados por Microsoft Defender para Endpoint en Linux se etiquetarán con `mdatp` clave.
+  > Los eventos del sistema capturados por las `/etc/audit/rules.d/` reglas agregadas se agregarán `audit.log`a (s) y pueden afectar a la auditoría de host y a la colección ascendente. Los eventos agregados por Microsoft Defender para Endpoint en Linux se etiquetarán con clave `mdatp` .
 
 ### <a name="configuring-exclusions"></a>Configuración de exclusiones
 
@@ -170,10 +170,13 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 ****
 
-|Hoja de cálculo de la lista de dominios|Descripción|
+
+|Hoja de cálculo de la lista de dominios| Descripción|
 |---|---|
-|![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de [cálculo aquí](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
-|||
+|Lista de direcciones URL de Microsoft Defender para puntos de conexión para clientes comerciales | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Lista de direcciones URL de punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|
+
 
 > [!NOTE]
 > Para obtener una lista de direcciones URL más específica, vea [Configure proxy and Internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
@@ -183,14 +186,14 @@ Defender for Endpoint puede detectar un servidor proxy mediante los siguientes m
 - Proxy transparente
 - Configuración manual de proxy estático
 
-Si un proxy o firewall bloquea el tráfico anónimo, asegúrese de que el tráfico anónimo está permitido en las direcciones URL enumeradas anteriormente. Para los servidores proxy transparentes, no se necesita ninguna configuración adicional para Defender for Endpoint. Para proxy estático, siga los pasos descritos en [Configuración manual de proxy estático.](linux-static-proxy-configuration.md)
+Si un proxy o firewall bloquea el tráfico anónimo, asegúrese de que el tráfico anónimo está permitido en las direcciones URL enumeradas anteriormente. Para los servidores proxy transparentes, no se necesita ninguna configuración adicional para Defender for Endpoint. Para proxy estático, siga los pasos descritos en [Configuración manual de proxy estático](linux-static-proxy-configuration.md).
 
 > [!WARNING]
 > Pac, WPAD y proxies autenticados no son compatibles. Asegúrese de que solo se usa un proxy estático o un proxy transparente.
 >
 > Los servidores proxy de inspección e interceptación de SSL tampoco se admiten por motivos de seguridad. Configure una excepción para la inspección SSL y el servidor proxy para pasar directamente los datos de Defender para Endpoint en Linux a las direcciones URL relevantes sin interceptación. Agregar el certificado de interceptación al almacén global no permitirá la interceptación.
 
-Para ver los pasos de solución de problemas, consulte [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
+Para ver los pasos de solución de problemas, consulte [Solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint en Linux](linux-support-connectivity.md).
 
 ## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>Cómo actualizar Microsoft Defender para endpoint en Linux
 
@@ -198,11 +201,11 @@ Microsoft publica periódicamente actualizaciones de software para mejorar el re
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Cómo configurar Microsoft Defender para punto de conexión en Linux
 
-Las instrucciones sobre cómo configurar el producto en entornos empresariales están disponibles en Establecer preferencias para [Microsoft Defender para Endpoint en Linux.](linux-preferences.md)
+Las instrucciones sobre cómo configurar el producto en entornos empresariales están disponibles en Establecer preferencias para [Microsoft Defender para Endpoint en Linux](linux-preferences.md).
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Las aplicaciones comunes para Microsoft Defender para endpoint pueden afectar
 
-Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para endpoint. Estas incluyen aplicaciones para escenarios para desarrolladores como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en [cuenta](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) los errores de exclusión Antivirus de Microsoft Defender comunes. Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre las exclusiones antivirus de aplicaciones de terceros.
+Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para endpoint. Estas incluyen aplicaciones para escenarios para desarrolladores como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en cuenta los errores de exclusión comunes [Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) en cuenta. Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre las exclusiones antivirus de aplicaciones de terceros.
 
 ## <a name="resources"></a>Recursos
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 45bd61d9eed192977485792d72eb9783c71420b8
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: b0d179a412a2e0470db844a7e9b422c8ae89db34
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242064"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62320684"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -287,9 +287,6 @@ A menudo, las directivas surtirán efecto y las etiquetas estarán visibles en m
 
 ## <a name="adaptive-or-static-policy-scopes-for-retention"></a>Ámbitos de directiva adaptables o estáticos para la retención
 
-> [!NOTE]
-> Los ámbitos de directiva adaptables como una nueva característica se encuentran actualmente en versión preliminar y están sujetos a cambios. La opción alternativa es un ámbito estático, que proporciona el mismo comportamiento antes de que se introdujesen ámbitos adaptables y se puede usar si los ámbitos adaptables no cumplen los requisitos empresariales.
-
 Al crear una directiva de retención o una directiva de etiqueta de retención, debe elegir entre adaptable y estática para definir el ámbito de la directiva.
 
 - Un **ámbito adaptable** usa una consulta que usted especifique, por lo que la pertenencia no es estática, sino dinámica, ya que se ejecuta diariamente en los atributos o propiedades que especifique para las ubicaciones seleccionadas. Puede usar varios ámbitos adaptables con una sola directiva.
@@ -330,9 +327,6 @@ Para ver un seminario web grabado (requiere registro), visite [Deep Dive on Adap
 > Actualmente, los ámbitos adaptables no admiten [Bloqueo de conservación para restringir los cambios en las directivas de retención y las directivas de etiquetas de retención](#use-preservation-lock-to-restrict-changes-to-policies).
 
 ## <a name="policy-lookup"></a>Búsqueda de directiva
-
-> [!NOTE]
-> La búsqueda de directivas está actualmente en versión preliminar y está sujeta a cambios.
 
 Puede configurar varias directivas de retención para Microsoft 365, así como varias directivas de etiquetas de retención que publique o aplique automáticamente. Para buscar las directivas de retención que se asignan a usuarios, sitios y grupos de Microsoft 365 específicos, use **búsqueda de directivas** en la solución **Información de gobierno** del Centro de cumplimiento de Microsoft 365:
 

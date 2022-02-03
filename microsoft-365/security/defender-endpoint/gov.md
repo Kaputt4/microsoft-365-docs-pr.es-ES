@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f5f737709591c266515909eeca35bad30a52c21
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 24158e4a9da9ce48382f08b6dbe701c5640972d4
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281488"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321320"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -152,9 +152,9 @@ Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Compruebe que no hay reglas de firewall o filtrado de red que denieguen el *acceso a estas* direcciones URL o creen una regla de permitido específicamente para ellas.
 
-Hoja de cálculo de la lista de dominios|Descripción
-:-----|:-----
-![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión.](images/mdatp-urls.png)|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|Hoja de cálculo de la lista de dominios| Descripción|
+|---|---|
+| Lista de direcciones URL de punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Para obtener más información, consulte [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
