@@ -14,14 +14,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 11/15/2021
+ms.date: 02/02/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ad62cb795e1cd8c0b1affe030075ec9fedc5252a
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 00c92b5d19c33a3f1c085715d0b1a6f2b4186667
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218555"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327342"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar Antivirus de Microsoft Defender exclusiones en Windows Server
 
@@ -29,7 +29,7 @@ ms.locfileid: "61218555"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Antivirus de Microsoft Defender
+- Antivirus de Microsoft Defender
 
 Antivirus de Microsoft Defender en Windows Server 2016 y Windows Server 2019 lo inscribe automáticamente en determinadas exclusiones, tal como lo define el rol de servidor especificado. Estas exclusiones no aparecen en las listas de exclusión estándar que se muestran en la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 
@@ -45,7 +45,7 @@ Tenga en cuenta los siguientes puntos importantes:
 - Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo, rápido o a petición.
 - Las exclusiones personalizadas y duplicadas no están en conflicto con las exclusiones automáticas.
 - Antivirus de Microsoft Defender usa las herramientas de administración y mantenimiento de imágenes de implementación (DISM) para determinar qué roles están instalados en el equipo.
-- Las exclusiones automáticas para roles de servidor no funcionan en Windows Server 2012 R2 a menos que dichos servidores estén incorporados a Defender para endpoint. (Consulte [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).)
+- Windows Server 2012 R2 no incluye automáticamente Antivirus de Microsoft Defender. Cuando incorpore esos servidores a Defender for Endpoint, instalará Antivirus de Windows Defender y las exclusiones para los archivos del sistema operativo se incluyen de forma predeterminada. Sin embargo, las exclusiones automáticas de roles de servidor no funcionan y debe agregar exclusiones según corresponda. Para obtener más información, consulte [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
 
 En este artículo se proporciona información general sobre las exclusiones Antivirus de Microsoft Defender en Windows Server 2016 o posterior.
 
@@ -70,10 +70,10 @@ En Windows Server 2016 o posterior, no debe definir las siguientes exclusiones:
 
 Dado Antivirus de Microsoft Defender está integrado, no requiere exclusiones para los archivos del sistema operativo en Windows Server 2016 o posterior. Además, al ejecutar Windows Server 2016 o posterior e instalar un rol, Antivirus de Microsoft Defender incluye exclusiones automáticas para el rol de servidor y los archivos que se agregan al instalar el rol.
 
-Las exclusiones del sistema operativo y las exclusiones de roles [de](microsoft-defender-security-center-antivirus.md)servidor no aparecen en las listas de exclusión estándar que se muestran en Seguridad de Windows aplicación .
+Las exclusiones del sistema operativo y las exclusiones de roles de servidor no aparecen en las listas de exclusión estándar que se muestran en [la aplicación Seguridad de Windows servidor](microsoft-defender-security-center-antivirus.md).
 
 > [!NOTE]
-> Las exclusiones automáticas de roles de servidor y archivos del sistema operativo no se aplican a Windows Server 2012. Las exclusiones automáticas pueden aplicarse si los servidores que ejecutan Windows Server 2012 R2 están incorporados a Defender for Endpoint. (Consulte [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).)
+> Las exclusiones automáticas de roles de servidor y archivos del sistema operativo no se aplican a Windows Server 2012. Las exclusiones automáticas pueden aplicarse si los servidores que ejecutan Windows Server 2012 R2 están incorporados a Defender for Endpoint. (Consulte [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md)).)
 
 
 ### <a name="the-list-of-automatic-exclusions"></a>La lista de exclusiones automáticas
@@ -145,7 +145,7 @@ En esta sección se enumeran las exclusiones predeterminadas para todos los role
 - La base de datos de replicación del sistema de archivos distribuido (DFSR) y las carpetas de trabajo. Estas carpetas se especifican mediante la clave del Registro `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
   > [!NOTE]
-  > Para las ubicaciones personalizadas, vea [Opting out of automatic exclusions](#opting-out-of-automatic-exclusions).
+  > Para las ubicaciones personalizadas, consulte [Opting out of automatic exclusions](#opting-out-of-automatic-exclusions).
 
   - `%systemdrive%\System Volume Information\DFSR\$db_normal$`
   - `%systemdrive%\System Volume Information\DFSR\FileIDTable_*`
@@ -225,7 +225,7 @@ Esta carpeta se especifica en la clave del Registro `HKEY_LOCAL_MACHINE\System\C
 
 #### <a name="dhcp-server-exclusions"></a>Exclusiones del servidor DHCP
 
-En esta sección se enumeran las exclusiones que se entregan automáticamente al instalar el rol de servidor DHCP. Las ubicaciones de archivos del servidor DHCP se especifican mediante los parámetros *DatabasePath*, *DhcpLogFilePath* y *BackupDatabasePath* en la clave del Registro. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
+En esta sección se enumeran las exclusiones que se entregan automáticamente al instalar el rol de servidor DHCP. Las ubicaciones de archivos del servidor DHCP se especifican mediante los parámetros *DatabasePath*, *DhcpLogFilePath* y *BackupDatabasePath* en la clave del Registro `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
 
 - `%systemroot%\System32\DHCP\*\*.mdb`
 - `%systemroot%\System32\DHCP\*\*.pat`
@@ -295,12 +295,12 @@ En esta sección se enumeran las exclusiones de carpetas y las exclusiones de pr
 
 ##### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a>Desactivar el examen de archivos en la carpeta Sysvol\Sysvol o en la carpeta SYSVOL_DFSR\Sysvol
 
-La ubicación actual de la carpeta or y todas las subcarpetas es el destino de reeplo de sistema de archivos `Sysvol\Sysvol` de la raíz del conjunto de `SYSVOL_DFSR\Sysvol` réplicas. Las `Sysvol\Sysvol` `SYSVOL_DFSR\Sysvol` carpetas y usan las siguientes ubicaciones de forma predeterminada:
+La ubicación actual de la `Sysvol\Sysvol` carpeta or `SYSVOL_DFSR\Sysvol` y todas las subcarpetas es el destino de reeplo de sistema de archivos de la raíz del conjunto de réplicas. Las `Sysvol\Sysvol` carpetas y `SYSVOL_DFSR\Sysvol` usan las siguientes ubicaciones de forma predeterminada:
 
 - `%systemroot%\Sysvol\Domain`
 - `%systemroot%\Sysvol_DFSR\Domain`
 
-El recurso compartido NETLOGON hace referencia a la ruta de acceso al recurso compartido NETLOGON y puede determinarse mediante el nombre del valor `SYSVOL` SysVol en la siguiente subclave: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
+El recurso `SYSVOL` compartido NETLOGON hace referencia a la ruta de acceso al recurso compartido NETLOGON y puede determinarse mediante el nombre del valor SysVol en la siguiente subclave: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
 
 Excluya los siguientes archivos de esta carpeta y todas sus subcarpetas:
 
@@ -331,7 +331,7 @@ En Windows Server 2016 y posteriores, las exclusiones predefinidas que entregan 
 > [!WARNING]
 > La exclusión automática puede afectar negativamente al rendimiento o provocar daños en los datos. Las exclusiones que se entregan automáticamente se optimizan para Windows Server 2016, Windows Server 2019 y Windows Server 2022.
 
-Dado que las exclusiones predefinidas solo excluyen las rutas predeterminadas **,** si mueve las carpetas NTDS y SYSVOL a otra unidad o ruta de acceso que sea diferente de la ruta de acceso *original,* debe agregar exclusiones manualmente. Consulte [Configure the list of exclusions based on folder name or file extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension).
+Dado que las exclusiones predefinidas solo excluyen rutas de acceso predeterminadas **, si** mueve las carpetas NTDS y SYSVOL a otra unidad o ruta de acceso que sea diferente de la ruta *de acceso original*, debe agregar exclusiones manualmente. Consulte [Configure the list of exclusions based on folder name or file extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension).
 
 Puede deshabilitar las listas de exclusión automática con la directiva de grupo, los cmdlets de PowerShell y WMI.
 
@@ -339,11 +339,11 @@ Puede deshabilitar las listas de exclusión automática con la directiva de grup
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y, a continuación, **seleccione Editar**.
 
-2. En el **Editor de administración de directivas de** grupo vaya a Configuración **del** equipo y, a continuación, seleccione **Plantillas administrativas.**
+2. En el **Editor de administración de directivas de grupo** vaya a **Configuración del** equipo y, a continuación, seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **exclusiones**.
+3. Expanda el árbol para **Windows componentes Antivirus de Microsoft Defender** \>  \> **exclusiones**.
 
-4. Haga doble clic **en Desactivar exclusiones automáticas** y establezca la opción en **Habilitado**. A continuación, seleccione **Aceptar**.
+4. Haz doble clic **en Desactivar exclusiones automáticas** y establece la opción en **Habilitado**. A continuación, seleccione **Aceptar**.
 
 ### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server"></a>Usar cmdlets de PowerShell para deshabilitar la lista de exclusiones automáticas en Windows Server
 
@@ -377,7 +377,7 @@ Si es necesario, puede agregar o quitar exclusiones personalizadas. Para ello, c
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 - [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)

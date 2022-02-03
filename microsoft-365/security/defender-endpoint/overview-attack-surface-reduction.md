@@ -17,12 +17,12 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: 5878b29b5d40076cd515dde6737a4e7c7d70ab56
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 22c90142de3b669bb4e7ba13266f04102af56fe0
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320984"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327698"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprender y usar las capacidades de reducción de superficie de ataque
 
@@ -101,7 +101,7 @@ Puede habilitar el modo de auditoría mediante la directiva de grupo, PowerShell
 | Opciones de auditoría | Cómo habilitar el modo de auditoría | Cómo ver eventos |
 |---|---|---|
 | La auditoría se aplica a todos los eventos | [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md) | [Eventos de acceso controlado a carpetas](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| La auditoría se aplica a reglas individuales | [Paso 1: Probar reglas ASR con Auditoría](attack-surface-reduction-rules-deployment-phase-2.md#step-1-test-asr-rules-using-audit) | [Paso 2: Comprender la página de informes de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-deployment-phase-2.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| La auditoría se aplica a reglas individuales | [Paso 1: Probar reglas ASR con Auditoría](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Paso 2: Comprender la página de informes de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | La auditoría se aplica a todos los eventos | [Habilitar la protección de red](enable-network-protection.md) | [Eventos de protección de red](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | La auditoría se aplica a mitigaciones individuales | [Habilitar la protección contra vulnerabilidades de seguridad](enable-exploit-protection.md) | [Eventos de protección contra vulnerabilidades](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 

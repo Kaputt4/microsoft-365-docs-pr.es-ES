@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: b66f515641e7f76b9ce1a1ef45d04e948835fc3a
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 61f5e5ab9b47aae190b0eefa74a04805ceace326
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245188"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327022"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurar y configurar Microsoft Defender para el plan de extremo 1
 
@@ -42,7 +42,7 @@ El proceso general de configuración y configuración de Defender for Endpoint P
 | 1 | [Revisar los requisitos](#review-the-requirements)  | Enumera los requisitos de licencias, explorador, sistema operativo y centro de datos   |
 | 2 | [Planear la implementación](#plan-your-deployment) | Enumera varios métodos de implementación a tener en cuenta e incluye vínculos a más recursos para ayudarle a decidir qué método usar  |
 | 3 | [Configurar el entorno de inquilino](#set-up-your-tenant-environment) | Enumera las tareas para configurar el entorno de inquilino |
-| 4 | [Asignar roles y permisos](#assign-roles-and-permissions) | Enumera los roles y permisos que se deben tener en cuenta para el equipo de seguridad <br/><br/>**SUGERENCIA:** Tan pronto como se asignan roles y permisos, el equipo de seguridad puede empezar a usar el portal Microsoft 365 Defender seguridad. Para obtener más información, vea [Introducción.](mde-plan1-getting-started.md) |
+| 4 | [Asignar roles y permisos](#assign-roles-and-permissions) | Enumera los roles y permisos que se deben tener en cuenta para el equipo de seguridad <br/><br/>**SUGERENCIA**: Tan pronto como se asignan roles y permisos, el equipo de seguridad puede empezar a usar el portal Microsoft 365 Defender seguridad. Para obtener más información, consulte [Introducción](mde-plan1-getting-started.md). |
 | 5 | [Incorporación a Defender para endpoint](#onboard-to-defender-for-endpoint) | Enumera varios métodos por sistema operativo para incorporar a Defender for Endpoint Plan 1 e incluye vínculos a información más detallada para cada método  |
 | 6  | [Configurar protección de última generación](#configure-next-generation-protection) | Describe cómo configurar las opciones de protección de próxima generación en Microsoft Endpoint Manager  |
 | 7  | [Configurar las capacidades de reducción de superficie de ataque](#configure-your-attack-surface-reduction-capabilities)        | Enumera los tipos de capacidades de reducción de superficie de ataque que puedes configurar e incluye procedimientos con vínculos a más recursos  |
@@ -88,7 +88,7 @@ La configuración del entorno de inquilino incluye tareas, como:
 - Configuración de la configuración de proxy (solo si es necesario)
 - Asegurarse de que los sensores funcionan correctamente e informar de datos a Defender para endpoint 
 
-Estas tareas se incluyen en la fase de configuración de Defender para endpoint. Consulte [Configurar Defender para endpoint](production-deployment.md).
+Estas tareas se incluyen en la fase de configuración de Defender para endpoint. Consulta [Configurar Defender para endpoint](production-deployment.md).
 
 ## <a name="assign-roles-and-permissions"></a>Asignar roles y permisos
 
@@ -104,14 +104,14 @@ En la tabla siguiente se describen los roles clave que se deben tener en cuenta 
 
 | Role | Descripción |
 |:---|:---|
-| Administradores globales (también denominados administradores globales) <br/><br/> *Como práctica recomendada, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que se ha registrado en su empresa para Microsoft 365 o para Microsoft Defender para el plan de extremo 1 es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos Microsoft 365 portales, como: <br/>- El Centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) <br/>- Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>- Microsoft Endpoint Manager centro de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  |
+| Administradores globales (también denominados administradores globales) <br/><br/> *Como práctica recomendada, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que se ha registrado en su empresa para Microsoft 365 o para Microsoft Defender para el plan de extremo 1 es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos Microsoft 365 portales, como: <br/>- El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft Endpoint Manager de administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | Administradores de seguridad (también denominados administradores de seguridad) | Los administradores de seguridad pueden realizar tareas de operador de seguridad más las siguientes tareas: <br/>- Supervisar directivas relacionadas con la seguridad <br/>- Administrar alertas y amenazas de seguridad <br/>- Ver informes |
 | Operador de seguridad | Los operadores de seguridad pueden realizar tareas de lector de seguridad además de las siguientes tareas: <br/>- Ver información sobre las amenazas detectadas <br/>- Investigar y responder a las amenazas detectadas  |
 | Lector de seguridad | Los lectores de seguridad pueden realizar las siguientes tareas: <br/>- Ver directivas relacionadas con la seguridad en Microsoft 365 servicios <br/>- Ver alertas y amenazas de seguridad <br/>- Ver informes  |
 
 
 > [!TIP]
-> Para obtener más información acerca de los roles en Azure Active Directory, vea Asignar roles de administrador y no administrador a usuarios [con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Y, más información sobre los roles de Defender para endpoint, vea [Control de acceso basado en roles](prepare-deployment.md#role-based-access-control).
+> Para obtener más información sobre los roles en Azure Active Directory, vea Asignar roles de administrador y no administrador a [usuarios con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Además, más información sobre los roles de Defender para endpoint, vea [Control de acceso basado en roles](prepare-deployment.md#role-based-access-control).
 
 ## <a name="onboard-to-defender-for-endpoint"></a>Incorporación a Defender para endpoint
 
@@ -134,9 +134,9 @@ Se recomienda usar [Microsoft Endpoint Manager](/mem) para administrar los dispo
 
 Para configurar la protección de próxima generación en Microsoft Endpoint Manager, siga estos pasos:
 
-1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
+1. Vaya al Centro Microsoft Endpoint Manager administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
 
-2. Seleccione **Endpoint security**  >  **Antivirus** y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente, cree una directiva nueva).
+2. Seleccione **Endpoint** **securityAntivirus** >  y, a continuación, seleccione una directiva existente. (Si no tiene una directiva existente, cree una directiva nueva).
 
 3. Establece o cambia las opciones de configuración del antivirus. ¿Necesita ayuda? Consulte los siguientes recursos: <br/>
 
@@ -165,67 +165,67 @@ Las reglas de reducción de superficie de ataque están disponibles en dispositi
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Reglas de reducción de superficie de ataque en Microsoft Endpoint Manager":::
 
-1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
+1. Vaya al Centro Microsoft Endpoint Manager administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
 
-2. Elija **Endpoint security** Attack surface  >  **reduction**+ Create  >  **policy**.
+2. Elija **Endpoint securityAttack** >  **surface reduction** > **+ Create policy**.
 
 3. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
 
-4. En **Perfil**, seleccione **Reglas de reducción de** superficie de ataque y, a continuación, elija **Crear**.
+4. En **Perfil**, selecciona **Reglas de reducción de superficie de ataque** y, a continuación, elige **Crear**.
 
 5. En la **pestaña Conceptos** básicos, especifique un nombre y una descripción para la directiva y, a continuación, elija **Siguiente**.
 
 6. En la **pestaña Configuración,** **expande Reglas de reducción de superficie de ataque**.
 
-7. Especifique la configuración de cada regla y, a continuación, **elija Siguiente**. (Para obtener más información acerca de lo que hace cada regla, consulte [Reglas de reducción de superficie de ataque](attack-surface-reduction.md).) 
+7. Especifique la configuración de cada regla y, a continuación, elija **Siguiente**. (Para obtener más información acerca de lo que hace cada regla, consulta [Reglas de reducción de superficie de ataque](attack-surface-reduction.md)). 
 
-8. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, **elija Siguiente**. 
+8. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, elija **Siguiente**. 
    
-   Para obtener más información acerca de las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+   Para obtener más información sobre las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-9. En la **pestaña Asignaciones,** especifique los usuarios y grupos a los que se debe aplicar la directiva y, a continuación, **elija Siguiente**. (Para obtener más información acerca de las asignaciones, consulta [Asignar perfiles](/mem/intune/configuration/device-profile-assign)de usuario y dispositivo en Microsoft Intune .)
+9. En la **pestaña Asignaciones** , especifique los usuarios y grupos a los que se debe aplicar la directiva y, a continuación, elija **Siguiente**. (Para obtener más información acerca de las asignaciones, consulta [Asignar perfiles de usuario y dispositivo en Microsoft Intune](/mem/intune/configuration/device-profile-assign)).
 
-10. En la **pestaña Revisar + crear,** revise la configuración y, a continuación, elija **Crear**.
+10. En la **pestaña Revisar y crear** , revise la configuración y, a continuación, elija **Crear**.
 
 > [!TIP]
 > Para obtener más información sobre las reglas de reducción de superficie de ataque, consulta los siguientes recursos:
 > - [Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware](attack-surface-reduction.md)
 > - [Ver la lista de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md)
-> - [Fase 3 de implementación de reglas de reducción de superficie de ataque: implementar](attack-surface-reduction-rules-deployment-phase-3.md)
+> - [Fase 3 de implementación de reglas de reducción de superficie de ataque: implementar](attack-surface-reduction-rules-deployment-implement.md)
 
 ### <a name="ransomware-mitigation"></a>Mitigación de ransomware
 
-Obtienes mitigación de ransomware a través [del acceso controlado a](controlled-folders.md#what-is-controlled-folder-access)carpetas, lo que solo permite que las aplicaciones de confianza obtengan acceso a carpetas protegidas en los puntos de conexión. 
+Obtienes mitigación de ransomware a través [del acceso controlado](controlled-folders.md#what-is-controlled-folder-access) a carpetas, lo que solo permite que las aplicaciones de confianza obtengan acceso a carpetas protegidas en los puntos de conexión. 
 
 Se recomienda usar Microsoft Endpoint Manager para configurar el acceso controlado a carpetas.
 
 :::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Directivas ASR en Microsoft Endpoint Manager":::
 
-1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión. 
+1. Vaya al Centro Microsoft Endpoint Manager administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
 
-2. Selecciona **Seguridad de punto** de conexión y, a continuación, selecciona **Reducción de superficie de ataque.**
+2. Selecciona **Seguridad de puntos** de conexión y, a continuación, **selecciona Reducción de superficie de ataque**.
 
 3. Elija **+ Crear directiva**. 
 
-4. Para **Plataforma**, seleccione **Windows 10 y posteriores,** y **para Perfil**, seleccione Reglas **de reducción de superficie de ataque**. Después, haga clic en **Crear**. 
+4. En **Plataforma**, selecciona **Windows 10 y posteriores**, y **para Perfil**, selecciona **Reglas de reducción de superficie de ataque**. Después, haga clic en **Crear**. 
 
 5. En la **pestaña Conceptos** básicos, asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**. 
 
-6. En la **pestaña Configuración,** en la sección Reglas de reducción de **superficie** de ataque, desplácese hacia abajo hasta la parte inferior. En la **lista desplegable Habilitar** protección de carpetas, seleccione **Habilitar**. Opcionalmente, puede especificar estas otras opciones:
+6. En la **pestaña Configuración,** en la sección **Reglas** de reducción de superficie de ataque, desplácese hacia abajo hasta la parte inferior. En la **lista desplegable Habilitar protección de** carpetas, seleccione **Habilitar**. Opcionalmente, puede especificar estas otras opciones:
 
    - Junto a **Lista de carpetas adicionales** que deben protegerse, seleccione el menú desplegable y, a continuación, agregue carpetas que necesiten protegerse.
    - Junto a **Lista de aplicaciones que tienen** acceso a carpetas protegidas, selecciona el menú desplegable y luego agrega aplicaciones que deben tener acceso a carpetas protegidas.
-   - Junto **a** Excluir archivos y rutas de acceso de las reglas de reducción de superficie de ataque, selecciona el menú desplegable y, a continuación, agrega los archivos y rutas de acceso que deben excluirse de las reglas de reducción de superficie de ataque.
+   - Junto **a Excluir** archivos y rutas de acceso de las reglas de reducción de superficie de ataque, selecciona el menú desplegable y, a continuación, agrega los archivos y rutas de acceso que deben excluirse de las reglas de reducción de superficie de ataque.
 
    A continuación, elija **Siguiente**.
 
-7. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, **elija Siguiente**. 
+7. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, elija **Siguiente**. 
    
-   Para obtener más información acerca de las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+   Para obtener más información sobre las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-8. En la **pestaña Asignaciones,** seleccione **Agregar todos los usuarios y** + Agregar **todos** los dispositivos y, a continuación, elija **Siguiente**. (También puede especificar grupos específicos de usuarios o dispositivos).
+8. En la **pestaña Asignaciones** , seleccione **Agregar todos los usuarios y** **+ Agregar todos los** dispositivos y, a continuación, elija **Siguiente**. (También puede especificar grupos específicos de usuarios o dispositivos).
 
-9. En la **pestaña Revisar y crear,** revise la configuración de la directiva y, a continuación, elija **Crear**. La directiva se aplicará a los puntos de conexión que se incorporaron a Defender for Endpoint en breve.
+9. En la **pestaña Revisar y crear** , revise la configuración de la directiva y, a continuación, elija **Crear**. La directiva se aplicará a los puntos de conexión que se incorporaron a Defender for Endpoint en breve.
 
 ### <a name="device-control"></a>Control de dispositivos
 
@@ -233,32 +233,32 @@ Puede configurar Defender for Endpoint para bloquear o permitir dispositivos y a
 
 :::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft Endpoint Manager administrativas":::
 
-1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión. 
+1. Vaya al Centro Microsoft Endpoint Manager administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
 
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
-3. Para **Plataforma**, seleccione **Windows 10 y posteriores,** y para Tipo de **perfil**, seleccione **Plantillas**. 
+3. Para **Plataforma**, seleccione **Windows 10 y posteriores**, y para **Tipo de perfil**, seleccione **Plantillas**. 
 
-   En **Nombre de plantilla,** seleccione **Plantillas administrativas** y, a continuación, elija **Crear**. 
+   En **Nombre de plantilla**, seleccione **Plantillas administrativas** y, a continuación, **elija Crear**. 
 
 4. En la **pestaña Conceptos** básicos, asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**. 
 
-5. En la **pestaña Configuración,** seleccione **Todos los Configuración**. A continuación, en el cuadro de búsqueda, escriba `Removable` para ver toda la configuración que pertenece a dispositivos extraíbles.
+5. En la **pestaña Configuración**, seleccione **Todos los Configuración**. A continuación, en el cuadro de búsqueda, escriba `Removable` para ver toda la configuración que pertenece a dispositivos extraíbles.
 
-6. Seleccione un elemento de la lista, como **All Removable Storage classes: Deny all access**, para abrir su panel desplegable. El control desplegable de cada configuración explica qué sucede cuando está habilitada, deshabilitada o no configurada. Seleccione una configuración y, a continuación, **elija Aceptar**. 
+6. Seleccione un elemento de la lista, como Todas las clases Storage **extraíbles:** Denegar todo el acceso para abrir su panel desplegable. El control desplegable de cada configuración explica qué sucede cuando está habilitada, deshabilitada o no configurada. Seleccione una configuración y, a continuación, **elija Aceptar**. 
 
 7. Repita el paso 6 para cada configuración que desee configurar. A continuación, elija **Siguiente**.
 
-8. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, **elija Siguiente**. 
+8. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, elija **Siguiente**. 
    
-   Para obtener más información acerca de las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+   Para obtener más información sobre las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-9. En la **pestaña Asignaciones,** seleccione **Agregar todos los usuarios y** + Agregar **todos** los dispositivos y, a continuación, elija **Siguiente**. (También puede especificar grupos específicos de usuarios o dispositivos).
+9. En la **pestaña Asignaciones** , seleccione **Agregar todos los usuarios y** **+ Agregar todos los** dispositivos y, a continuación, elija **Siguiente**. (También puede especificar grupos específicos de usuarios o dispositivos).
 
-10. En la **pestaña Revisar y crear,** revise la configuración de la directiva y, a continuación, elija **Crear**. La directiva se aplicará a los puntos de conexión que se incorporaron a Defender for Endpoint en breve.
+10. En la **pestaña Revisar y crear** , revise la configuración de la directiva y, a continuación, elija **Crear**. La directiva se aplicará a los puntos de conexión que se incorporaron a Defender for Endpoint en breve.
 
 > [!TIP]
-> Para obtener más información, [vea How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
+> Para obtener más información, [consulta How to control USB devices and other removable media using Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
 ### <a name="network-protection"></a>Protección de red
 
@@ -266,13 +266,13 @@ Con la protección de red, puede ayudar a proteger su organización contra domin
 
 :::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Perfil de protección de extremos en Microsoft Endpoint Manager":::
 
-1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión. 
+1. Vaya al Centro Microsoft Endpoint Manager administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión. 
 
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
-3. Para **Plataforma**, seleccione **Windows 10 y posteriores,** y para Tipo de **perfil**, seleccione **Plantillas**. 
+3. Para **Plataforma**, seleccione **Windows 10 y posteriores**, y para **Tipo de perfil**, seleccione **Plantillas**. 
 
-   En **Nombre de plantilla,** seleccione **Protección de extremo** y, a continuación, elija **Crear**. 
+   En **Nombre de plantilla**, seleccione **Protección de** extremo y, a continuación, **elija Crear**. 
 
 4. En la **pestaña Conceptos** básicos, asigne un nombre a la directiva y agregue una descripción. Seleccione **Siguiente**. 
 
@@ -282,71 +282,71 @@ Con la protección de red, puede ayudar a proteger su organización contra domin
 
    A continuación, elija **Siguiente**.
 
-6. En la **pestaña Asignaciones,** seleccione **Agregar todos los usuarios y** + Agregar **todos** los dispositivos y, a continuación, elija **Siguiente**. (También puede especificar grupos específicos de usuarios o dispositivos).
+6. En la **pestaña Asignaciones** , seleccione **Agregar todos los usuarios y** **+ Agregar todos los** dispositivos y, a continuación, elija **Siguiente**. (También puede especificar grupos específicos de usuarios o dispositivos).
 
-7. En la **pestaña Reglas de aplicabilidad,** configure una regla. El perfil que configures se aplicará solo a dispositivos que cumplan los criterios combinados que especifiques. 
+7. En la **pestaña Reglas de aplicabilidad** , configure una regla. El perfil que configures se aplicará solo a dispositivos que cumplan los criterios combinados que especifiques. 
 
    Por ejemplo, puede optar por asignar la directiva a puntos de conexión que solo ejecutan una determinada edición del sistema operativo.
 
    A continuación, elija **Siguiente**. 
 
-8. En la **pestaña Revisar y crear,** revise la configuración de la directiva y, a continuación, elija **Crear**. La directiva se aplicará a los puntos de conexión que se incorporaron a Defender for Endpoint en breve.
+8. En la **pestaña Revisar y crear** , revise la configuración de la directiva y, a continuación, elija **Crear**. La directiva se aplicará a los puntos de conexión que se incorporaron a Defender for Endpoint en breve.
 
 > [!TIP]
-> Puede usar otros métodos, como Windows PowerShell o directiva de grupo, para habilitar la protección de red. Para obtener más información, vea [Activar la protección de red](enable-network-protection.md).
+> Puede usar otros métodos, como Windows PowerShell o directiva de grupo, para habilitar la protección de red. Para obtener más información, consulte [Activar la protección de red](enable-network-protection.md).
 
 ### <a name="web-protection"></a>Protección web
 
-Con la protección web, puede proteger los dispositivos de su organización frente a amenazas web y contenido no deseado. La protección web incluye [protección contra amenazas web y](#configure-web-threat-protection) filtrado de contenido [web.](#configure-web-content-filtering) Configure ambos conjuntos de funcionalidades. Se recomienda usar Microsoft Endpoint Manager para configurar la configuración de la protección web.
+Con la protección web, puede proteger los dispositivos de su organización frente a amenazas web y contenido no deseado. La protección web incluye [protección contra amenazas web y](#configure-web-threat-protection) filtrado [de contenido web](#configure-web-content-filtering). Configure ambos conjuntos de funcionalidades. Se recomienda usar Microsoft Endpoint Manager para configurar la configuración de la protección web.
 
 #### <a name="configure-web-threat-protection"></a>Configurar la protección contra amenazas web
 
-1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
+1. Vaya al Centro Microsoft Endpoint Manager administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
  
-2. Elija **Endpoint security** Attack surface  >  **reduction** y, a continuación, elija + Create **policy**.
+2. Elija **Endpoint securityAttack** >  **surface reduction** y, a continuación, elija **+ Crear directiva**.
 
-3. Seleccione una plataforma, como Windows 10 y **posterior,** seleccione el perfil de protección **web** y, a continuación, **elija Crear**. 
+3. Seleccione una plataforma, como **Windows 10** y posterior, seleccione el perfil **de protección web** y, a continuación, **elija Crear**. 
 
 4. En la **pestaña Conceptos** básicos, especifique un nombre y una descripción y, a continuación, elija **Siguiente**.
 
 5. En la **pestaña Configuración,** expanda **Protección web**, especifique la configuración de la tabla siguiente y, a continuación, **elija Siguiente**. <br/><br/>
 
-   | Configuración | Recomendación |
+   | Setting | Recomendación |
    |:---|:---|
    | **Habilitar la protección de red** | Se establece en **Habilitado**. Impide que los usuarios visiten sitios o dominios malintencionados. <br/><br/>Como alternativa, puede establecer la protección de red en **modo auditoría** para ver cómo funcionará en su entorno. En el modo de auditoría, la protección de red no impide que los usuarios visiten sitios o dominios, pero sí realiza un seguimiento de las detecciones como eventos. |
    | **Requerir SmartScreen para Microsoft Edge (versión anterior)** | Se establece en **Sí**. Ayuda a proteger a los usuarios de posibles estafas de suplantación de identidad (phishing) y software malintencionado. |
    | **Bloquear el acceso a sitios malintencionados** | Se establece en **Sí**. Evita que los usuarios omitan advertencias sobre sitios potencialmente malintencionados. |
    | **Bloquear la descarga de archivos noverificados** | Se establece en **Sí**. Evita que los usuarios omitan las advertencias y descarguen archivos no registrados. |
 
-6. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, **elija Siguiente**. 
+6. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, elija **Siguiente**. 
    
-   Para obtener más información acerca de las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+   Para obtener más información sobre las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-7. En la **pestaña Asignaciones,** especifique los usuarios y dispositivos para recibir la directiva de protección web y, a continuación, elija **Siguiente**.
+7. En la **pestaña Asignaciones** , especifique los usuarios y dispositivos para recibir la directiva de protección web y, a continuación, elija **Siguiente**.
 
-8. En la **pestaña Revisar + crear,** revise la configuración de la directiva y, a continuación, elija **Crear**.
+8. En la **pestaña Revisar y crear** , revise la configuración de la directiva y, a continuación, elija **Crear**.
 
 > [!TIP]
-> Para obtener más información sobre la protección contra amenazas web, vea [Proteger su organización contra amenazas web.](web-threat-protection.md)
+> Para obtener más información acerca de la protección contra amenazas web, vea [Proteger su organización contra amenazas web](web-threat-protection.md).
 
 #### <a name="configure-web-content-filtering"></a>Configurar el filtrado de contenido web
 
-1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com/](https://security.microsoft.com/) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) e inicie sesión.
 
-2. Elija **Configuración**  >  **endpoints**.
+2. Elija **Configuración** >  **Endpoints**.
 
-3. En **Reglas**, elija **Filtrado de contenido web** y, a continuación, elija + Agregar **directiva**.
+3. En **Reglas**, elija **Filtrado de contenido web** y, a continuación, **elija + Agregar directiva**.
 
-4. En el control desplegable Agregar **directiva,** en la **pestaña General,** especifique un nombre para la directiva y, a continuación, elija **Siguiente**.
+4. En el **control desplegable Agregar directiva** , en la **ficha General** , especifique un nombre para la directiva y, a continuación, elija **Siguiente**.
 
-5. En categorías **bloqueadas,** seleccione una o varias categorías que desee bloquear y, a continuación, elija **Siguiente**.
+5. En las **categorías bloqueadas**, seleccione una o varias categorías que desee bloquear y, a continuación, elija **Siguiente**.
 
-6. En la **pestaña Ámbito,** selecciona los grupos de dispositivos que quieres recibir esta directiva y, a continuación, elige **Siguiente**.
+6. En la **pestaña Ámbito** , selecciona los grupos de dispositivos que quieres recibir esta directiva y, a continuación, elige **Siguiente**.
 
-7. En la **pestaña Resumen,** revise la configuración de la directiva y, a continuación, **elija Guardar**.
+7. En la **pestaña Resumen** , revise la configuración de la directiva y, a continuación, **elija Guardar**.
 
 > [!TIP]
-> Para obtener más información sobre cómo configurar el filtrado de contenido web, consulte [Web content filtering](web-content-filtering.md).
+> Para obtener más información sobre cómo configurar el filtrado de contenido web, consulte [Filtrado de contenido web](web-content-filtering.md).
 
 ### <a name="network-firewall"></a>Firewall de red
 
@@ -356,9 +356,9 @@ El firewall de red ayuda a reducir el riesgo de amenazas de seguridad de red. El
 
 Para configurar la configuración básica del firewall, siga estos pasos:
 
-1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
+1. Vaya al Centro Microsoft Endpoint Manager administración ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
 
-2. Elija **Firewall de seguridad**  >  **de** extremo y, a continuación, elija + Crear **directiva**.
+2. Elija **Endpoint** **securityFirewall** >  y, a continuación, **elija + Crear directiva**.
 
 3. Seleccione una plataforma, como **Windows 10** y posterior, seleccione el perfil firewall de **Microsoft Defender** y, a continuación, **elija Crear**. 
 
@@ -372,17 +372,17 @@ Para configurar la configuración básica del firewall, siga estos pasos:
    - **Activar firewall de Microsoft Defender para redes privadas**
    - **Activar firewall de Microsoft Defender para redes públicas**
    
-   Revise la lista de opciones de configuración en cada una de las redes de dominio, redes privadas y redes públicas. Puede dejarlos establecidos en **No configurados** o cambiarlos para que se adapten a las necesidades de su organización.
+   Revise la lista de opciones de configuración en cada una de las redes de dominio, redes privadas y redes públicas. Puede dejarlas establecidas en **No configuradas** o cambiarlas para que se adapten a las necesidades de su organización.
 
    A continuación, elija **Siguiente**.
 
-7. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, **elija Siguiente**. 
+7. En la **pestaña Etiquetas de** ámbito, si su organización usa etiquetas de ámbito, elija **+ Seleccionar** etiquetas de ámbito y, a continuación, seleccione las etiquetas que desee usar. A continuación, elija **Siguiente**. 
    
-   Para obtener más información acerca de las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+   Para obtener más información sobre las etiquetas de ámbito, vea [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-8. En la **pestaña Asignaciones,** seleccione **Agregar todos los usuarios y** + Agregar **todos** los dispositivos y, a continuación, elija **Siguiente**. (También puede especificar grupos específicos de usuarios o dispositivos).
+8. En la **pestaña Asignaciones** , seleccione **Agregar todos los usuarios y** **+ Agregar todos los** dispositivos y, a continuación, elija **Siguiente**. (También puede especificar grupos específicos de usuarios o dispositivos).
 
-9. En la **pestaña Revisar + crear,** revise la configuración de la directiva y, a continuación, elija **Crear**.
+9. En la **pestaña Revisar y crear** , revise la configuración de la directiva y, a continuación, elija **Crear**.
 
 > [!TIP]
 > La configuración del firewall es detallada y puede parecer compleja. Consulte [Procedimientos recomendados para configurar Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
@@ -399,7 +399,7 @@ Para ayudarle con la planeación de la implementación de WDAC, consulte los sig
 
 - [Windows Defender de control de aplicaciones en diferentes escenarios: tipos de dispositivos](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha pasado por el proceso de configuración y configuración, el siguiente paso es empezar a usar Defender para endpoint. 
 

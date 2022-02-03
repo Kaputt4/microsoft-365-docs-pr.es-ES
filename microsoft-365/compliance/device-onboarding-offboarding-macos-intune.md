@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en Microsoft 365 de cumplimiento con Microsoft Intune (versión preliminar)
-ms.openlocfilehash: 82aa3909ac7829f07a797673300cc0061bb4feef
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962716"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327394"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante Intune (versión preliminar)
 
@@ -35,8 +35,8 @@ Puedes usar Intune para incorporar dispositivos macOS en Microsoft 365 de cumpli
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Asegúrese de que los [dispositivos macOS están incorporados a Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) y están inscritos en la [aplicación Portal de empresa .](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
-- Asegúrese de tener acceso al centro [de Microsoft Endpoint Manager .](https://endpoint.microsoft.com/#home)
+- Asegúrate de que los [dispositivos macOS estén incorporados a Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) y estén inscritos en la [Portal de empresa aplicación](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- Asegúrese de tener acceso al centro [de Microsoft Endpoint Manager usuario](https://endpoint.microsoft.com/#home).
 - Esto admite macOS versión Catalina 10.15 y versiones posteriores.
 - Cree los grupos de usuarios a los que va a asignar las actualizaciones de configuración.
 - Instalar el explorador perimetral v95+ en los dispositivos macOS 
@@ -59,14 +59,14 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 |archivo necesario para |source |
 |---------|---------|
-|Paquete de incorporación    |descargado desde el paquete de incorporación **del** portal de cumplimiento, nombre de *archivoDeviceComplianceOnboarding.xml* |
+|Paquete de incorporación    |descargado desde el paquete de **incorporación del portal** de cumplimiento, nombre de *archivoDeviceComplianceOnboarding.xml* |
 |accesibilidad |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Filer de red| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
-|Extensiones del sistema |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|Extensiones del sistema |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |Preferencia de MDE     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
 |Preferencia MAU|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
-|Paquete de instalación     |descargado del paquete de instalación del portal **de cumplimiento**, nombre de *\* archivo wdav.pkg*\* |
+|Paquete de instalación     |descargado del paquete de instalación del portal **de cumplimiento**, nombre de *\*archivo wdav.pkg*\* |
 
 > [!TIP]
 > Puede descargar los archivos *.mobileconfig* individualmente o [en un único archivo combinado](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) que contenga:
@@ -140,7 +140,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 ```
 -->
 
-2. Abra el **centro Microsoft Endpoint Manager**  >  **perfiles**  >  **de configuración de dispositivos**.
+2. Abra los **Microsoft Endpoint Manager** **centerDevicesConfiguration** >  > .
 
 1. Elegir: **Crear perfil** 
 
@@ -155,9 +155,9 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Elija el **archivo accessibility.mobileconfig** que descargó en el paso 1 como archivo de perfil de configuración.
 
-1. Elegir **siguiente**
+1. Elija **Siguiente**
 
-1. En la **pestaña Asignaciones,** agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
+1. En la **pestaña Asignaciones** , agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
 
 1. Revise la configuración y elija **Crear** para implementar la configuración.
 
@@ -165,26 +165,26 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
     1. **archivo fulldisk.mobileconfig**
     1. **com.microsoft.autoupdate2.xml** archivo
     1. Archivo de **preferenciascom.microsoft.wdav.xml** MDE
-        1. establecer el motor antivirus `passive mode`  =  `true` o `false` . Se `true` usa si solo se implementa DLP. Use o no asigne un valor si implementa DLP y `false` Microsoft Defender para endpoint (MDE).
+        1. establecer el motor antivirus `passive mode` = `true` o .`false` Se `true`usa si solo se implementa DLP. Use `false` o no asigne un valor si implementa DLP y Microsoft Defender para endpoint (MDE).
     1. **netfilter.mobileconfig**
  
-1. Abra   >  **perfiles de configuración de dispositivos,** debe ver los perfiles creados allí.
+1. Abra **los perfiles devicesConfiguration** > , debe ver los perfiles creados allí.
 
-1. En la página Perfiles de configuración, elija el perfil que acaba de  crear, en este ejemplo *AccessibilityformacOS* y elija Estado del dispositivo para ver una lista de **dispositivos** y el estado de implementación del perfil de configuración.
+1. En la página Perfiles de configuración, elija el perfil que acaba de crear, en este ejemplo *AccessibilityformacOS* y  elija Estado del dispositivo para ver una lista de **dispositivos** y el estado de implementación del perfil de configuración.
 
 ### <a name="get-the-device-onboarding-package"></a>Obtener el paquete de incorporación de dispositivos
 
-1. En **el Centro de** **cumplimiento, Configuración** Incorporación de  >  **dispositivos y** elija **Incorporación.**
+1. En **el Centro de** cumplimiento **, Configuración** >  **Incorporación de dispositivos y** elija **Incorporación**.
  
-1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación,** elija **macOS**.
+1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación** , elija **macOS**.
  
-1. Para **el método Deployment,** elija Administración de dispositivos **móviles/Microsoft Intune**.
+1. Para **el método Deployment**, **elija Administración de dispositivos móviles/Microsoft Intune**.
  
 1. Elija **Descargar paquete de incorporación**. Contiene el código de incorporación en el *DeviceComplianceOnboarding.xml* archivo.
 
 ### <a name="deploy-the-onboarding-package"></a>Implementar el paquete de incorporación
 
-1. Abra el **centro Microsoft Endpoint Manager**  >  **perfiles**  >  **de configuración de dispositivos**.
+1. Abra los **Microsoft Endpoint Manager** **centerDevicesConfiguration** >  > .
 
 1. Elija: **Crear perfil**. 
 
@@ -199,15 +199,15 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Elija el *DeviceComplianceOnboarding.xml* como archivo de perfil de configuración.
 
-1. Elegir **siguiente**
+1. Elija **Siguiente**
 
-1. En la **pestaña Asignaciones,** agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
+1. En la **pestaña Asignaciones** , agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
 
 1. Revise la configuración y elija **Crear** para implementar la configuración.
 
 ### <a name="enable-system-extension"></a>Habilitar la extensión del sistema
 
-1. En el **centro Microsoft Endpoint Manager seleccione** Crear perfil **en** **Perfiles de configuración**
+1. En el **centro Microsoft Endpoint Manager seleccione** **Crear perfil en** **Perfiles de configuración**
 
 1. Elija:
     1. **Platform = macOS**
@@ -220,7 +220,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. En la **pestaña Configuración,** expanda **Extensiones del sistema**.
 
-1. En **Identificador de agrupación** e **identificador de equipo,** establezca estos valores
+1. En **Identificador de agrupación** **e identificador de equipo**, establezca estos valores
 
 |Identificador de agrupación  |Identificador de equipo  |
 |---------|---------|
@@ -228,36 +228,36 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 |**com.microsoft.wdav.netext**|**UBF8T346G9**|
 
 
-1. En la **pestaña Asignaciones,** agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
+1. En la **pestaña Asignaciones** , agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
 
 1. Elija **Siguiente para** implementar la configuración.
 
 ### <a name="get-the-installation-package"></a>Obtener el paquete de instalación
 
-1. En **el Centro de** **cumplimiento, Configuración** Incorporación de  >  **dispositivos y** elija **Incorporación.**
+1. En **el Centro de** cumplimiento **, Configuración** >  **Incorporación de dispositivos y** elija **Incorporación**.
  
-1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación,** elija **macOS**
+1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación** , elija **macOS**
  
-1. Para **el método Deployment,** **elija Administración de dispositivos móviles/Microsoft Intune**
+1. Para **el método Deployment**, **elija Administración de dispositivos móviles/Microsoft Intune**
  
-1. Elija **Descargar paquete de instalación**. Esto le dará el *archivo wdav.pkg.*
+1. Elija **Descargar paquete de instalación**. Esto le dará el *archivo wdav.pkg* .
 
 > [!IMPORTANT]
-> Antes de poder implementar *wdav.pkg.* paquete a través de Intune, debe ser reformateado con las Herramientas de ajuste de aplicaciones de Intune para *Mac* en el formato *wdav.pkg.intunemac.*
+> Antes de poder implementar *wdav.pkg.* paquete a través de Intune, debe ser reformateado con las Herramientas de ajuste de aplicaciones de *Intune para Mac* en el formato *wdav.pkg.intunemac* .
  
 
 ### <a name="deploy-the-microsoft-dlp-installation-package"></a>Implementar el paquete de instalación de Dlp de Microsoft
 
-1. Siga los procedimientos descritos en Cómo agregar aplicaciones de línea de negocio [(LOB)](/mem/intune/apps/lob-apps-macos) de macOS a Microsoft Intune para convertir el archivo *wdav.pkg* en el formato adecuado e implementarlo a través de Intune.
+1. Siga los procedimientos descritos en Cómo agregar aplicaciones de línea de negocio [(LOB) de macOS a Microsoft Intune](/mem/intune/apps/lob-apps-macos) para convertir el archivo *wdav.pkg* en el formato adecuado e implementarlo a través de Intune.
 
 ## <a name="offboard-macos-devices-using-intune"></a>Dispositivos macOS fuera de la pantalla con Intune
 
 > [!NOTE]
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán hasta seis meses.
 
-2. En **Microsoft Endpoint Manager,** abra **Perfiles** de configuración  >  **de dispositivos,** debe ver los perfiles creados allí.
+2. En **Microsoft Endpoint Manager,** abra **los perfiles DevicesConfiguration** > , debe ver los perfiles creados allí.
 
-1. En la **página Perfiles de configuración,** elija el *perfil wdav.pkg.intunemac.*
+1. En la **página Perfiles de configuración** , elija el *perfil wdav.pkg.intunemac* .
 
 1. Elija **Estado del dispositivo** para ver una lista de dispositivos y el estado de implementación del perfil de configuración
 

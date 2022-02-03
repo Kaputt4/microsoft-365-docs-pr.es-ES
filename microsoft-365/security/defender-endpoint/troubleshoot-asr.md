@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6efb9c53bbbcd0412ab55f35e02faf4d3595694e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f03fa0ac8f44acb3ce73076be4d43d913e32f969
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61884172"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326716"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solucionar problemas de reglas de reducción de superficie de ataque
 
@@ -58,7 +58,7 @@ Las reglas de reducción de superficie de ataque solo funcionarán en dispositiv
 
 - [La protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) está habilitada.
 
-- El modo auditoría no está habilitado. Use la directiva de grupo para establecer la regla en **Deshabilitado** (valor: **0**) como se describe en Habilitar reglas de reducción [de superficie de ataque](enable-attack-surface-reduction.md).
+- El modo auditoría no está habilitado. Usa la directiva de grupo para establecer la regla en **Deshabilitado** (valor: **0**) como se describe en [Habilitar reglas de reducción de superficie de ataque](enable-attack-surface-reduction.md).
 
 Si se han cumplido todos estos requisitos previos, continúe con el siguiente paso para probar la regla en modo auditoría.
 
@@ -68,11 +68,11 @@ Puedes visitar el sitio web de prueba de Windows Defender en [demo.wd.microsoft.
 
 Sigue estas instrucciones en [Use the demo tool to see how attack surface reduction rules work](evaluate-attack-surface-reduction.md) to test the specific rule you're encountering problems with.
 
-1. Habilite el modo de auditoría para la regla específica que desea probar. Use la directiva de grupo para establecer la regla en **modo auditoría** (valor: **2**) como se describe en Habilitar reglas de reducción de [superficie de ataque](enable-attack-surface-reduction.md). El modo auditoría permite que la regla informe del archivo o proceso, pero aún así le permitirá ejecutarse.
+1. Habilite el modo de auditoría para la regla específica que desea probar. Usa la directiva de grupo para establecer la regla en **modo auditoría** (valor: **2**) como se describe en [Habilitar reglas de reducción de superficie de ataque](enable-attack-surface-reduction.md). El modo auditoría permite que la regla informe del archivo o proceso, pero aún así le permitirá ejecutarse.
 
 2. Realice la actividad que está causando un problema (por ejemplo, abra o ejecute el archivo o proceso que se debe bloquear pero que se está permitido).
 
-3. [Revise los registros de eventos](attack-surface-reduction.md) de la regla de reducción de superficie de ataque para ver si la regla habría bloqueado el archivo o el proceso si la regla se hubiera establecido en **Enabled**.
+3. [Revise los registros de eventos](attack-surface-reduction.md) de la regla de reducción de superficie de ataque para ver si la regla hubiera bloqueado el archivo o el proceso si la regla se hubiera establecido en **Habilitado**.
 
 Si una regla no bloquea un archivo o proceso que espera que se bloquee, compruebe primero si el modo de auditoría está habilitado.
 
@@ -80,15 +80,15 @@ Es posible que el modo auditoría se haya habilitado para probar otra caracterí
 
 Si ha probado la regla con la herramienta de demostración y con el modo de auditoría, y las reglas de reducción de superficie de ataque funcionan en escenarios preconfigurados, pero la regla no funciona como se esperaba, continúe con cualquiera de las siguientes secciones en función de su situación:
 
-1. Si la regla de reducción de superficie de ataque bloquea algo que no debe bloquear (también conocido como falso positivo), primero puedes agregar una exclusión de regla de reducción de superficie [de ataque.](#add-exclusions-for-a-false-positive)
+1. Si la regla de reducción de superficie de ataque bloquea algo que no debe bloquear (también conocido como falso positivo), primero puedes agregar una exclusión de regla de reducción [de superficie de ataque](#add-exclusions-for-a-false-positive).
 
-2. Si la regla de reducción de superficie de ataque no bloquea algo que debería bloquear (también conocido como falso negativo), puede continuar inmediatamente con el último [paso,](#collect-diagnostic-data-for-file-submissions)recopilando datos de diagnóstico y enviando el problema a nosotros .
+2. Si la regla de reducción de superficie de ataque no bloquea algo que debe bloquear (también conocido como falso negativo), puedes continuar inmediatamente con el último [paso, recopilar](#collect-diagnostic-data-for-file-submissions) datos de diagnóstico y enviarnos el problema.
 
 ## <a name="add-exclusions-for-a-false-positive"></a>Agregar exclusiones para un falso positivo
 
 Si la regla de reducción de superficie de ataque bloquea algo que no debe bloquear (también conocido como falso positivo), puedes agregar exclusiones para evitar que las reglas de reducción de superficie de ataque evalúen los archivos o carpetas excluidos.
 
-Para agregar una exclusión, consulta [Personalizar reducción de superficie de ataque](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules).
+Para agregar una exclusión, consulta [Personalizar la reducción de superficie de ataque](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules).
 
 > [!IMPORTANT]
 > Puede especificar archivos y carpetas individuales que se excluirán, pero no puede especificar reglas individuales.
@@ -96,7 +96,7 @@ Para agregar una exclusión, consulta [Personalizar reducción de superficie de 
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Informar de un falso positivo o falso negativo
 
-Use el [Windows Defender de](https://www.microsoft.com/wdsi/filesubmission) envío basado en web de Inteligencia de seguridad para informar de un falso negativo o falso positivo para la protección de red. Con una Windows de E5, también puede proporcionar [un vínculo a cualquier alerta asociada](alerts-queue.md).
+Use el [Windows Defender de envío basado en web de Inteligencia](https://www.microsoft.com/wdsi/filesubmission) de seguridad para informar de un falso negativo o falso positivo para la protección de red. Con una Windows E5, también puedes proporcionar [un vínculo a cualquier alerta asociada](alerts-queue.md).
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Recopilar datos de diagnóstico para envíos de archivos
 
@@ -114,7 +114,7 @@ Cuando informes de un problema con las reglas de reducción de superficie de ata
    mpcmdrun -getfiles
    ```
 
-3. De forma predeterminada, se guardan en `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` . Adjunte el archivo al formulario de envío.
+3. De forma predeterminada, se guardan en `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. Adjunte el archivo al formulario de envío.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

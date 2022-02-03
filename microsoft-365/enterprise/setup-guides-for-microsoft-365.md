@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias de su inquilino. Busca una guía para configurar un servicio o una aplicación que necesites ejecutar.
-ms.openlocfilehash: ce81e5432c03c8cf0647bd08e815457be368ac12
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: afab6209211b5c80daaa300b467e255a4b1ec595
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295427"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326704"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -45,7 +45,7 @@ Se puede obtener acceso a las guías de configuración desde la página [de](htt
 
    ![Tarjeta & guías de aprendizaje en el Centro de administración de Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. Seleccione **Guías paso a paso**.
+3. Seleccione **Guías de implementación avanzadas y** , a continuación, **todas las guías**.
 
    ![Captura de pantalla de la página de instrucciones del programa de instalación en el Centro de administración de Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
@@ -63,9 +63,9 @@ La [guía de configuración de correo](https://aka.ms/office365setup) electróni
 
 Al migrar el buzón de un usuario de Gmail a Microsoft 365, los mensajes de correo electrónico se migran, pero los contactos y los elementos del calendario no lo son. El [asesor](https://aka.ms/gmailcontactscalendar) de contactos y calendarios de Gmail proporciona pasos para importar contactos de Google y elementos de calendario de Google a Microsoft 365 mediante métodos de importación y exportación con Outlook.com, el cliente Outlook o PowerShell.
 
-### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 de implementación
+### <a name="microsoft-365-setup-guide"></a>Microsoft 365 de configuración
 
-El [Microsoft 365 de implementación le](https://aka.ms/microsoft365setupguide) proporciona instrucciones al configurar herramientas de productividad, directivas de seguridad y capacidades de administración de dispositivos. Con una Microsoft 365 Empresa Premium o Microsoft 365 suscripción empresarial, puede usar este asesor para configurar y configurar los dispositivos de la organización.
+La [Microsoft 365 de configuración le](https://aka.ms/microsoft365setupguide) proporciona instrucciones al configurar herramientas de productividad, directivas de seguridad y capacidades de administración de dispositivos. Con una Microsoft 365 Empresa Premium o Microsoft 365 suscripción empresarial, puede usar este asesor para configurar y configurar los dispositivos de la organización.
 
 Recibirás instrucciones y acceso a recursos para habilitar los servicios en la nube, actualizar dispositivos a la versión compatible más reciente de Windows 10 y unir dispositivos a Azure Active Directory (Azure AD), todo en una ubicación central.
 
@@ -74,12 +74,6 @@ Recibirás instrucciones y acceso a recursos para habilitar los servicios en la 
 La [guía de configuración de](https://aka.ms/remoteworksetup) trabajo remoto proporciona a las organizaciones las sugerencias y los recursos necesarios para garantizar que los usuarios puedan trabajar correctamente de forma remota, que los datos sean seguros y que las credenciales de los usuarios estén protegidas.
 
 Recibirás instrucciones para optimizar el tráfico de dispositivos de los trabajadores remotos a los recursos de Microsoft 365 en la nube y la red de la organización, lo que reducirá la tensión en la infraestructura vpn de acceso remoto.
-
-### <a name="windows-virtual-desktop-setup-guide"></a>Windows de configuración de Escritorio virtual
-
-Windows Virtual Desktop es un servicio completo de virtualización de aplicaciones y escritorio que se ejecuta en la nube. Es la única infraestructura de escritorio virtual (VDI) que ofrece administración simplificada, Windows 10 de varias sesiones, optimizaciones para Aplicaciones Microsoft 365 y compatibilidad con entornos de Servicios de escritorio remoto (RDS). Implemente y escale sus Windows escritorios y aplicaciones en Azure en minutos y obtenga características integradas de seguridad y cumplimiento.
-
-La Windows de configuración [de Escritorio virtual](https://aka.ms/wvdsetupguide) proporciona a los administradores recursos de planeación y los requisitos previos para la implementación, la guía de configuración y otros recursos.
 
 ### <a name="microsoft-edge-setup-guide"></a>Microsoft Edge de configuración
 
@@ -97,11 +91,19 @@ Búsqueda de Microsoft ayuda a su organización a encontrar lo que necesitan par
 
 La [Búsqueda de Microsoft de](https://aka.ms/MicrosoftSearchSetup) configuración le ayuda a configurar Búsqueda de Microsoft si desea realizar pruebas piloto para un grupo de usuarios o bien para todos los usuarios de su organización. Asignarás administradores de búsqueda y editores de búsqueda y, a continuación, personalizarás la experiencia de búsqueda de los usuarios con respuestas y más opciones, como agregar la extensión de Bing a Chrome o configurar Bing como motor de búsqueda predeterminado.
 
-### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guía de configuración de administración en equipo de Intune Configuration Manager
-
-Use la [guía](https://aka.ms/comanagementsetup) de configuración de administración co-administrativa de Intune Configuration Manager para los dispositivos cliente de Configuration Manager existentes y los nuevos dispositivos basados en Internet que su organización desea administrar en colaboración con Microsoft Intune y Configuration Manager. Esta guía de implementación de administración en colaboración le permite administrar Windows 10 dispositivos y agrega nueva funcionalidad a los dispositivos de su organización, al tiempo que recibe las ventajas de ambas soluciones.
-
 ## <a name="guides-for-authentication-and-access"></a>Guías para la autenticación y el acceso
+
+### <a name="configure-multifactor-authentication-mfa"></a>Configurar la autenticación multifactor (MFA)
+
+La [guía Configurar autenticación multifactor (MFA)](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) proporciona información para proteger la organización contra infracciones debido a credenciales perdidas o robadas. MFA aumenta inmediatamente la seguridad de la cuenta al solicitar varias formas de comprobación para demostrar la identidad de un usuario cuando inicia sesión en una aplicación u otro recurso de la compañía. Este mensaje podría ser escribir un código en el dispositivo móvil del usuario o proporcionar un examen de huellas digitales. MFA se habilita mediante acceso condicional, valores predeterminados de seguridad o MFA por usuario. Esta guía proporcionará la opción de MFA recomendada para su organización, en función de las licencias y la configuración existente.
+
+### <a name="identity-security-for-teams"></a>Seguridad de identidad para Teams
+
+La [guía Seguridad de](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/teamsidentity) identidades para equipos le ayuda con algunos pasos básicos de seguridad que puede seguir para garantizar que los usuarios estén seguros y tengan el tiempo más productivo usando **Teams**.
+
+### <a name="add-or-sync-users-to-microsoft-365"></a>Agregar o sincronizar usuarios para Microsoft 365
+
+[Esta guía](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) ayudará a simplificar el proceso de configuración de las cuentas de usuario **en Microsoft 365**. En función del entorno y las necesidades, puede elegir agregar usuarios individualmente, migrar el directorio local Azure AD con una sincronización en la nube o Azure AD Conectar, o solucionar problemas de sincronización existentes cuando sea necesario.
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD de configuración
 
@@ -122,6 +124,10 @@ Actualice a un enfoque de inicio de sesión alternativo que permita a los usuari
 - Claves de seguridad
 
 Use la [guía Planear la implementación sin](https://aka.ms/passwordlesssetup) contraseña para descubrir los mejores métodos de autenticación sin contraseña para usar y recibir instrucciones sobre cómo implementarlos.
+
+### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Integrar una aplicación en la nube de terceros con Azure AD
+
+[Esta guía](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/azureadappintegration) ayuda a los administradores de TI a seleccionar y configurar la aplicación.
 
 ### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>Planear la implementación del restablecimiento de contraseñas sin servicio (SSPR)
 
@@ -193,9 +199,9 @@ La [guía de configuración de Microsoft Defender para Aplicaciones](https://aka
 
 Transforme el modo en que los empleados trabajan junto con el [panel de experiencia del empleado](https://aka.ms/EmployeeExperienceDashboard). Para trabajar en equipo sin problemas, use Microsoft 365 para crear equipos productivos y alineados y mantener a los empleados comprometidos con el liderazgo y el resto de la organización. Ayude a sus empleados a ser efectivos en todas las actividades de trabajo. Estas guías proporcionarán instrucciones sobre cómo usar SharePoint, Teams y Yammer crear colaboración en toda la organización para ayudar a impulsar la productividad.
 
-### <a name="microsoft-365-apps-deployment-advisor"></a>Aplicaciones Microsoft 365 de implementación
+### <a name="microsoft-365-apps-setup-guide"></a>Aplicaciones Microsoft 365 de configuración
 
-El [Aplicaciones Microsoft 365 de](https://aka.ms/OPPquickstartguide) implementación de Aplicaciones Microsoft 365 ayuda a obtener los dispositivos de los usuarios que ejecutan la versión más reciente de productos de Office como Word, Excel, PowerPoint y OneNote. Encontrará instrucciones sobre los distintos métodos de implementación que incluyen opciones fáciles de instalar en implementaciones empresariales con herramientas de administración. Las instrucciones le ayudarán a evaluar su entorno, averiguar sus requisitos de implementación específicos e implementar las herramientas de soporte necesarias para garantizar una instalación correcta.
+La [Aplicaciones Microsoft 365 de](https://aka.ms/OPPquickstartguide) configuración de Aplicaciones Microsoft 365 ayuda a obtener los dispositivos de los usuarios que ejecutan la versión más reciente de productos de Office como Word, Excel, PowerPoint y OneNote. Encontrará instrucciones sobre los distintos métodos de implementación que incluyen opciones fáciles de instalar en implementaciones empresariales con herramientas de administración. Las instrucciones le ayudarán a evaluar su entorno, averiguar sus requisitos de implementación específicos e implementar las herramientas de soporte necesarias para garantizar una instalación correcta.
 
 ### <a name="mobile-apps-setup-guide"></a>Guía de configuración de aplicaciones móviles
 
@@ -204,16 +210,6 @@ La [guía de configuración de](https://aka.ms/officeappguidance) aplicaciones m
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams de configuración
 
 La [guía de](https://aka.ms/teamsguidance) configuración de Microsoft Teams proporciona a su organización instrucciones para configurar áreas de trabajo de grupo que hospedan conversaciones en tiempo real a través de mensajería, llamadas y reuniones de audio o vídeo para la comunicación privada y de equipo. Use las herramientas de esta guía para configurar el acceso de invitado, establecer quién puede crear equipos y agregar miembros del equipo desde un archivo .csv, todo ello sin necesidad de abrir una sesión de PowerShell. También podrá obtener procedimientos recomendados para determinar los requisitos de red de su organización y garantizar una implementación Teams correcta.
-
-### <a name="microsoft-teams-for-education-setup-guide"></a>Microsoft Teams para Educación de configuración
-
-La [Microsoft Teams para Educación de configuración proporciona](https://aka.ms/teamsedusetup) a su escuela instrucciones que reúnen aulas de colaboración, conversaciones, reuniones, archivos y aplicaciones en un solo lugar. La guía también proporciona instrucciones para preparar, planear y configurar Teams para su escuela. Una vez completada la implementación, use herramientas integradas para configurar quién puede crear equipos y, opcionalmente, crear equipos usted mismo al rellenar miembros con un archivo .csv usuario.
-
-### <a name="integrate-microsoft-lti-apps-with-your-lms"></a>Integrar aplicaciones LTI de Microsoft con el sistema de administración del aprendizaje
-
-Para que los profesores trabajen eficazmente y los alumnos se organicen, necesitan un inicio de sesión único en un solo lugar para colaborar con todos sus materiales de aprendizaje, tareas y aplicaciones al alcance de la mano. Las aplicaciones de Interoperabilidad de Microsoft Learning Tools (LTI) aportan lo mejor de las herramientas de Microsoft directamente a su sistema de administración de aprendizaje (LMS), de modo que los alumnos y profesores puedan centrarse en el estudio, no en buscar archivos ni en crear herramientas.
-
-Si eres administrador de un LMS y quieres acceder a las herramientas de Microsoft directamente desde tu LMS, usa nuestra guía [Integrar aplicaciones LTI de Microsoft con tu LMS](https://aka.ms/lmsintegrationguide) Integrar aplicaciones LTI de Microsoft con la guía de LMS para empezar. Actualmente, estas herramientas incluyen Microsoft Teams clases y Microsoft Teams reuniones.
 
 ### <a name="sharepoint-setup-guide"></a>SharePoint de configuración
 

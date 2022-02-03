@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: b1f14944e89f94ab48e61103cdd7b9d78a3bdfea
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 5810513cd3aa4fccd8ce0100f22c708c53527c42
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049232"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62321644"
 ---
 # <a name="step-2-enroll-devices-into-management-with-intune"></a>Paso 2. Inscripción de dispositivos para la administración con Intune
 
@@ -33,7 +33,7 @@ Tanto si un dispositivo es un dispositivo BYOD de propiedad personal como un dis
 
 El proceso de inscripción de dispositivos establece una relación entre el usuario, el dispositivo y el servicio Microsoft Intune. El uso de Microsoft Intune como un servicio independiente le permite usar una única consola de administración basada en la Web para administrar equipos Windows, macOS y las plataformas de dispositivos móviles más populares.
 
-En este artículo, se recomiendan métodos para inscribir dispositivos en la administración mediante Intune. Para obtener más información sobre estos métodos y cómo implementar cada uno de ellos, consulte [Guía de implementación: Inscribir dispositivos en Microsoft Intune](/microsoft-365/security/defender/eval-overview).
+En este artículo, se recomiendan métodos para inscribir dispositivos en la administración mediante Intune. Para obtener más información sobre estos métodos y cómo implementar cada uno de ellos, consulte [Guía de implementación: Inscribir dispositivos en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Pasos para administrar dispositivos](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -45,7 +45,7 @@ Existen varias opciones para inscribir dispositivos Windows 10 y Windows 11. L
 
 Para obtener más opciones, incluida la inscripción de dispositivos Windows BYOD, consulte [Inscribir dispositivos Windows en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
 
-## <a name="iosipados-and-ipados-enrollment"></a>Inscripción de iOS/iPadOS e iPadOS
+## <a name="ios-and-ipados-enrollment"></a>Inscripción de iOS y iPadOS
 
 En el caso de los dispositivos de propiedad del usuario (BYOD), puede permitir que los usuarios inscriban sus dispositivos personales para la administración de Intune mediante uno de los métodos siguientes.
 - La inscripción de dispositivos es lo que puede considerar como una inscripción BYOD típica. Proporciona a los administradores una amplia gama de opciones de administración.

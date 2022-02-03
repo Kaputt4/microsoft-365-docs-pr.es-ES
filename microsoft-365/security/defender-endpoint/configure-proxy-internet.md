@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f78d12b323b779e0ba22c92f71f5d5fd53e7c1c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b218ab83e5d348ef458d791bb573389ab4bf6096
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320708"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326974"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -279,7 +279,7 @@ Si alguna de las opciones de conectividad devuelve un estado (200), el cliente d
 Pero si los resultados de la comprobación de conectividad indican un error, se mostrará un error HTTP (vea los códigos de estado HTTP). A continuación, puede usar las direcciones URL de la tabla que se muestra en Habilitar el acceso a las direcciones URL del servicio defender para puntos de conexión [en el servidor proxy](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Las direcciones URL disponibles para su uso dependerán de la región seleccionada durante el procedimiento de incorporación.
 
 > [!NOTE]
-> Las comprobaciones de conectividad en la nube de la herramienta Analizador de conectividad no son compatibles con la regla reducción de superficie de ataque Bloquear las creaciones de procesos que se originen a partir [de comandos PSExec y WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). Deberá deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad. Como alternativa, puede agregar temporalmente [exclusiones de ASR](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) al ejecutar el analizador.
+> Las comprobaciones de conectividad en la nube de la herramienta Analizador de conectividad no son compatibles con la regla reducción de superficie de ataque Bloquear las creaciones de procesos que se originen a partir [de comandos PSExec y WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). Deberá deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad. Como alternativa, puede agregar temporalmente [exclusiones de ASR](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) al ejecutar el analizador.
 >
 > Cuando telemetryProxyServer se establece en el Registro o a través de la directiva de grupo, Defender for Endpoint se resaltó, no se puede tener acceso al proxy definido.
 

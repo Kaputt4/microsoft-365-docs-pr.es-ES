@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a36f4ac9cceaefc52e380f28554b5cb6360c00f4
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: a65a72538afa3684cf4ad9351d30313e0dc43b8d
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335701"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327440"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>Usar informes y auditorías de cumplimiento de comunicaciones
 
@@ -37,13 +37,20 @@ Para el filtro de intervalo de fechas, la fecha y la hora de los eventos se enum
 
 El **panel informes contiene** los siguientes widgets de informe y vínculos de informes detallados:
 
-- **Widget Coincidencias de directivas** recientes: muestra el número de coincidencias por directiva activa con el tiempo.
-- **Elementos resueltos por** widget de directiva: muestra el número de alertas de coincidencia de directivas resueltas por directiva con el tiempo.
-- **Usuarios con la mayoría del** widget de coincidencia de directiva: muestra los usuarios (o nombres de usuario anonimizados) y el número de coincidencias de directiva durante un período determinado.
-- **Directiva con la mayoría de los** widgets de coincidencias: muestra las directivas y el número de coincidencias de un período determinado, clasificados de mayor a menor para las coincidencias.
-- **Escalaciones por widget de** directiva: muestra el número de escalaciones por directiva durante un tiempo determinado.
-- **Informe** detallado sobre la configuración de la directiva y el estado: proporciona una vista detallada de la configuración y la configuración de la directiva, así como el estado general de cada directiva (coincidencias y acciones) de los mensajes. Incluye información de directiva y cómo se asocian las directivas con usuarios y grupos, ubicaciones, porcentajes de revisión, revisores, estado y cuándo se modificó por última vez la directiva. Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe.
-- **Elementos y acciones por informe detallado** de directiva: Revisar y exportar elementos y acciones de corrección correspondientes por directiva. Incluye información de directivas y cómo se asocian las directivas con:
+### <a name="report-widgets"></a>Widgets de informe
+
+- **Coincidencias de directiva recientes**: muestra el número de coincidencias por directiva activa con el tiempo.
+- **Elementos resueltos por directiva**: muestra el número de alertas de coincidencia de directivas resueltas por directiva con el tiempo.
+- **Usuarios con la mayoría de las coincidencias de** directiva: muestra los usuarios (o nombres de usuario anonimizados) y el número de coincidencias de directiva durante un período determinado.
+- **Directiva con la mayoría de coincidencias**: muestra las directivas y el número de coincidencias de un período determinado, clasificados de mayor a menor para las coincidencias.
+- **Escalaciones por directiva**: muestra el número de escalaciones por directiva durante un tiempo determinado.
+
+### <a name="detailed-reports"></a>Informes detallados
+
+Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe para cualquier informe detallado.
+
+- **Configuración y** estado de la directiva: proporciona una vista detallada de la configuración y la configuración de la directiva, así como el estado general de cada una de las directivas (coincidencias y acciones) de los mensajes. Incluye información de directiva y cómo se asocian las directivas con usuarios y grupos, ubicaciones, porcentajes de revisión, revisores, estado y cuándo se modificó por última vez la directiva. Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe.
+- **Elementos y acciones por directiva**: revisar y exportar elementos y acciones de corrección correspondientes por directiva. Incluye información de directivas y cómo se asocian las directivas con:
 
     - Elementos coincidentes
     - Elementos escalados
@@ -55,8 +62,7 @@ El **panel informes contiene** los siguientes widgets de informe y vínculos de 
     - Notificación de usuario
     - Case created
 
-    Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe.
-- **Informe detallado de elementos** y acciones por ubicación: revisar y exportar elementos y acciones de corrección correspondientes por Microsoft 365 ubicación. Incluye información sobre cómo están asociadas las plataformas de carga de trabajo:
+- **Elemento y acciones por ubicación**: revisar y exportar elementos y acciones de corrección correspondientes por Microsoft 365 ubicación. Incluye información sobre cómo están asociadas las plataformas de carga de trabajo:
 
     - Elementos coincidentes
     - Elementos escalados
@@ -68,8 +74,7 @@ El **panel informes contiene** los siguientes widgets de informe y vínculos de 
     - Notificación de usuario
     - Case created
 
-    Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe.
-- **Actividad por informe detallado** del usuario: Revisar y exportar elementos y acciones de corrección correspondientes por usuario. Incluye información sobre cómo se asocian los usuarios a:
+- **Actividad por usuario**: revise y exporte elementos y acciones de corrección correspondientes por usuario. Incluye información sobre cómo se asocian los usuarios a:
 
     - Elementos coincidentes
     - Elementos escalados
@@ -81,18 +86,55 @@ El **panel informes contiene** los siguientes widgets de informe y vínculos de 
     - Notificación de usuario
     - Case created
 
-    Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe.
-
-- **Informe detallado de tipo** de información confidencial por ubicación (versión preliminar): revise y exporte información sobre la detección de tipos de información confidencial y los orígenes asociados en las directivas de cumplimiento de comunicaciones. Incluye el total general y el desglose específico de las instancias de tipo de información confidencial en los orígenes configurados en la organización. Algunos ejemplos son:
+- **Tipo de información confidencial por ubicación** (versión preliminar): revise y exporte información sobre la detección de tipos de información confidencial y los orígenes asociados en las directivas de cumplimiento de comunicaciones. Incluye el total general y el desglose específico de las instancias de tipo de información confidencial en los orígenes configurados en la organización. Los valores de cada origen de terceros se muestran en columnas independientes en el .csv archivo. Algunos ejemplos son:
 
     - **Correo** electrónico: tipos de información confidencial detectados en Exchange de correo electrónico.
-    - **Teams:** tipos de información confidencial detectados en Microsoft Teams canales y mensajes de chat.
-    - **Skype Empresarial:** tipos de información confidencial detectados en Skype para comunicaciones empresariales.
-    - **Yammer:** tipos de información confidencial detectados en Yammer bandejas de entrada, publicaciones, chats y respuestas.
-    - **Orígenes de terceros:** tipos de información confidencial detectados para actividades asociadas con conectores de terceros configurados en la organización. Para ver el desglose de orígenes de terceros para un tipo de información confidencial específico en el informe, mantenga el mouse sobre el valor del tipo de información confidencial en la columna Origen de terceros.
-    - **Otros:** tipos de información confidencial usados para el procesamiento interno del sistema. Seleccionar o anular la selección de este origen para el informe no afectará a ningún valor.
+    - **Teams**: tipos de información confidencial detectados en Microsoft Teams canales y mensajes de chat.
+    - **Skype Empresarial**: tipos de información confidencial detectados en Skype para comunicaciones empresariales.
+    - **Yammer**: tipos de información confidencial detectados en Yammer bandejas de entrada, publicaciones, chats y respuestas.
+    - **Orígenes de terceros**: tipos de información confidencial detectados para actividades asociadas con conectores de terceros configurados en la organización. Para ver el desglose de orígenes de terceros para un tipo de información confidencial específico en el informe, mantenga el mouse sobre el valor del tipo de información confidencial en la columna Origen de terceros.
+    - **Otros**: Tipos de información confidencial usados para el procesamiento interno del sistema. Seleccionar o anular la selección de este origen para el informe no afectará a ningún valor.
 
-    Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe. Los valores de cada origen de terceros se muestran en columnas independientes en el .csv archivo.
+### <a name="message-details-report-preview"></a>Informe de detalles del mensaje (versión preliminar)
+
+Cree informes personalizados y revise los detalles de los mensajes contenidos en directivas específicas en la **pestaña** Directivas. Estos informes se pueden usar para revisiones de todos los mensajes y para crear una instantánea de informe para el estado de los mensajes durante un período de tiempo personalizable. Después de crear un informe, puede ver y descargar el informe de detalles como un archivo .csv en la pestaña **Informes de detalles del** mensaje.
+
+![Informe de detalles del mensaje de cumplimiento de la comunicación.](../media/communication-compliance-message-detail-report.png)
+
+Para crear un nuevo informe de detalles del mensaje, siga estos pasos:
+
+1. Inicie sesión en el Centro de cumplimiento de Microsoft 365 con una cuenta que sea miembro del grupo de roles *Investigadores de cumplimiento de* comunicación.
+2. Vaya a la **pestaña Directivas** , seleccione una directiva y, a continuación, **seleccione Crear informe de detalles del mensaje**.
+3. En el **panel Crear informe de detalles de** mensaje, escriba un nombre para el informe en el **campo Nombre del** informe.
+4. En **Elegir un intervalo de fechas**, seleccione una *fecha de inicio y* *una fecha de finalización* para el informe.
+5. Seleccione **Crear**.
+6. Se muestra la confirmación de creación de informes.
+
+Según el número de elementos del informe, puede tardar unos minutos en horas antes de que el informe esté listo para descargarse. Puede comprobar el progreso en la pestaña Informes de detalles del mensaje. El estado del informe *es En curso* o *Listo para descargar*. Puede tener hasta 15 informes independientes procesando simultáneamente. Para descargar un informe, seleccione un informe en el estado *Listo para descargar* y seleccione **Descargar informe**.
+
+> [!NOTE]
+> Si el período de tiempo seleccionado no devuelve ningún resultado de mensaje en el informe, no hubo ningún mensaje para el período de tiempo seleccionado. El informe estará en blanco.
+
+Los informes de detalles del mensaje contienen la siguiente información para cada elemento de mensaje de la directiva:
+
+- **Identificador de** coincidencia: identificador único para el mensaje de la directiva.
+- **Remitente**: el remitente del mensaje.
+- **Destinatarios**: los destinatarios incluidos para el mensaje.
+- **Fecha de envío**: la fecha en que se envió el mensaje.
+- **Fecha de coincidencia**: la fecha en que el mensaje coincide con las condiciones de la directiva.
+- **Asunto**: el asunto del mensaje.
+- **Contiene datos** adjuntos: el estado de los datos adjuntos del mensaje. Los valores son Sí o No.
+- **Nombre de la** directiva: el nombre de la directiva asociada al mensaje. Este valor será el mismo para todos los mensajes del informe.
+- **Estado del elemento**: el estado del elemento de mensaje en la directiva. Los valores son Pendiente o Resuelto.
+- **Etiquetas**: las etiquetas asignadas al mensaje. Los valores son cuestionables, compatibles o no compatibles.
+- **Coincidencias de** palabras clave: coincidencias de palabras clave para el mensaje.
+- **Revisores**: revisores asignados al mensaje.
+- **Pendiente para (días):** el número de días que el mensaje ha estado en un estado pendiente. Para los mensajes resueltos, el valor es 0.
+- **Comentario para resuelto**: los comentarios del mensaje escritos cuando se resuelven.
+- **Fecha resuelta**: la fecha y hora en que se resolvió el mensaje.
+- **Last Updated By**: el nombre de usuario del último actualizador.
+- **Last Updated On**: la fecha y hora en que se actualizó por última vez el mensaje.
+- **Historial de comentarios**: lista de todos los comentarios de la alerta del mensaje, incluido el autor del comentario y la fecha y hora del comentario.
 
 ## <a name="audit"></a>Auditoría
 
@@ -101,25 +143,25 @@ En algunos casos, debe proporcionar información a auditores normativos o de cum
 > [!IMPORTANT]
 > La auditoría debe estar habilitada para su organización antes de que se grabe el cumplimiento de la comunicación. Para habilitar la auditoría, vea [Habilitar el registro de auditoría](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Cuando las actividades desencadenan eventos que se capturan en el registro de auditoría de Microsoft 365, pueden tardar hasta 48 horas antes de que estos eventos se puedan ver en las directivas de cumplimiento de comunicación.
 
-Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control Exportar actualizaciones **de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *Administrador global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de actualización. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
+Para ver las actividades de actualización de directivas de cumplimiento de comunicaciones, seleccione el control **Exportar actualizaciones de directivas** en la página principal de cualquier directiva. Debe tener asignados los roles *Administrador global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de actualización. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
 
 |**Field**|**Detalles**|
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de actualización en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de actualización en una directiva. |
-| **Operations** | Las operaciones de actualización realizadas en la directiva. |
+| **Operaciones** | Las operaciones de actualización realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de actualización de directivas. Todas las actividades de actualización se registran y se separan por delimitadores por comas. |
 
-Para ver las actividades de revisión de cumplimiento de comunicación de una directiva, seleccione el control **Exportar** actividades de revisión en **la** página Información general de una directiva específica. Debe tener asignados los roles Administrador *global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de revisión. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
+Para ver las actividades de revisión de cumplimiento de comunicación de una directiva, seleccione el control **Exportar** actividades de revisión **en la página** Información general de una directiva específica. Debe tener asignados los roles Administrador *global* o Administrador de cumplimiento *de* comunicaciones para exportar actividades de revisión. Esta acción genera un archivo de auditoría en el .csv que contiene la siguiente información:
 
 |**Field**|**Detalles**|
 |:-----|:-----|
 | **CreationDate** | La fecha en que se realizó la actividad de revisión en una directiva. |
 | **UserIds** | El usuario que realizó la actividad de revisión en una directiva. |
-| **Operations** | Las operaciones de revisión realizadas en la directiva. |
+| **Operaciones** | Las operaciones de revisión realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y se separan por delimitadores por comas. |
 
-También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog.](/powershell/module/exchange/search-unifiedauditlog) Para obtener más información sobre las directivas de retención de registros de auditoría, vea [Manage audit log retention policies](audit-log-retention-policies.md).
+También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) . Para obtener más información sobre las directivas de retención de registros de auditoría, vea [Administrar directivas de retención de registros de auditoría](audit-log-retention-policies.md).
 
 Por ejemplo, el siguiente ejemplo devuelve las actividades de todas las actividades de revisión de supervisión (directivas y reglas):
 

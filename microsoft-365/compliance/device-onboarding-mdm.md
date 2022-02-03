@@ -15,12 +15,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Usa las herramientas de administración de dispositivos móviles para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-ms.openlocfilehash: 1db4441f6411d6e3c623dbf5daa31c4028729e7e
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 578a1e06bf5f83f700c5db69ddc32a480d68b729
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244900"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327198"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>Incorporar dispositivos Windows 10 y Windows 11 con herramientas de Administración de dispositivos móviles
 
@@ -35,7 +35,7 @@ Puedes usar soluciones de administración de dispositivos móviles (MDM) para co
 ## <a name="before-you-begin"></a>Antes de empezar
 Si estás usando Microsoft Intune, debes tener el dispositivo MDM inscrito. De lo contrario, la configuración no se aplicará correctamente. 
 
-Para obtener más información sobre cómo habilitar MDM con Microsoft Intune, consulta [Inscripción de dispositivos (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
+Para obtener más información sobre cómo habilitar MDM con Microsoft Intune, consulta [Inscripción de dispositivos (Microsoft Intune).](/mem/intune/enrollment/device-enrollment).
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>Incorporar dispositivos con Microsoft Intune
 
@@ -51,17 +51,15 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 > [!NOTE]
 > Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
 
-1. Obtener el paquete de offboarding de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
+1. Obtenga el paquete de offboarding de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
-2. En el panel de navegación, **seleccione Configuración** Incorporación  >  **de**  >  **dispositivos offboarding**.
+2. En el panel de navegación, **seleccione Configuración** >  **Device onboardingOffboarding** > .
 
-3. En el **campo Método de** implementación, seleccione Administración de **dispositivos móviles / Microsoft Intune**.
+3. En el **campo Método de** implementación, seleccione **Administración de dispositivos móviles / Microsoft Intune**.
 
 4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
 5. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los administradores de red que implementarán el paquete. Debe tener un archivo denominado *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
-
-
 
 6. Use la Microsoft Intune de configuración personalizada para implementar la siguiente configuración de OMA-URI compatible.
 

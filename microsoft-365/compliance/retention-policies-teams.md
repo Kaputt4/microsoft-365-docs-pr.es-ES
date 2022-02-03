@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 39fb6ce1614c59bf97dbea23e6d6f3e80c7f36dd
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 7e516d78c781782e24c26ddedfa7b8996bb44fe0
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241836"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322438"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -70,7 +70,7 @@ Aunque los datos de los mensajes de canales y chats de Teams se almacenan en los
 > [!NOTE]
 > Si un usuario está incluido en una directiva de retención activa que retiene los mensajes de Teams y usted elimina el buzón de un usuario incluido en esta directiva, para retener los datos de Teams, el buzón se convierte en un [buzón inactivo](inactive-mailboxes-in-office-365.md). Si no necesita conservar estos datos de Teams para el usuario, excluya la cuenta de usuario de la directiva de retención y [espere a que este cambio surta efecto](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect) antes de eliminar su buzón.
 
-Una vez que se configura una directiva de retención para los mensajes del chat y de los canales, un trabajo de temporizador del servicio de Exchange evalúa de manera periódica los elementos de la carpeta oculta en la que se almacenan estos mensajes de Teams. El trabajo de temporizador tarda entre 1 y 7 días en ejecutarse. Cuando el período de retención de estos elementos caduca, se trasladan a la carpeta SubstrateHolds, otra carpeta oculta ubicada en cada buzón de usuario o grupo para almacenar los elementos "eliminados temporalmente" antes de que se eliminen de forma permanente. 
+Una vez que se configura una directiva de retención para los mensajes del chat y de los canales, un trabajo de temporizador del servicio de Exchange evalúa de manera periódica los elementos de la carpeta oculta del buzón en la que se almacenan estos mensajes de Teams. El trabajo de temporizador tarda entre 1 y 7 días en ejecutarse. Cuando el período de retención de estos elementos caduca, se trasladan a la carpeta SubstrateHolds, otra carpeta oculta ubicada en cada buzón de usuario o grupo para almacenar los elementos "eliminados temporalmente" antes de que se eliminen de forma permanente. 
 
 Los mensajes permanecen en la carpeta SubstrateHolds durante al menos 1 día y, luego, si son elegibles para su eliminación, el trabajo del temporizador los elimina permanentemente la próxima vez que se ejecuta.
 
@@ -94,7 +94,12 @@ Para las dos rutas en el diagrama:
 > [!NOTE]
 > Los mensajes almacenados en los buzones de correo, incluidas las carpetas ocultas, se pueden buscar mediante herramientas de eDiscovery. Hasta que los mensajes se eliminen permanentemente de la carpeta SubstrateHolds, las herramientas de eDiscovery pueden buscarlos.
 
-Cuando los mensajes se eliminan permanentemente de la carpeta SubstrateHolds, se comunica una operación de eliminación al servicio de chat de backend de Azure, que luego transmite la misma operación a la aplicación cliente de Teams. Los retrasos en esta comunicación o almacenamiento en caché pueden explicar por qué, durante un período corto de tiempo, los usuarios pueden seguir viendo estos mensajes en su aplicación de Teams, pero los datos de estos mensajes no se devuelven en las búsquedas de eDiscovery. Los mensajes visibles en la aplicación Teams no son un reflejo exacto de si se conservan o eliminan permanentemente para cumplir con los requisitos.
+Cuando los mensajes se eliminan permanentemente de la carpeta SubstrateHolds, se comunica una operación de eliminación al servicio de chat de backend de Azure, que luego transmite la misma operación a la aplicación cliente de Teams. Los retrasos en esta comunicación o almacenamiento en caché pueden explicar por qué, durante un período corto de tiempo, los usuarios a los que se les asigna la directiva pueden seguir viendo estos mensajes en su aplicación de Teams, pero los datos de estos mensajes no se devuelven en las búsquedas de eDiscovery.
+
+En este escenario, en el que el servicio de chat de Azure recibe un comando de eliminación debido a una directiva de retención, el mensaje correspondiente en la aplicación cliente de Teams se elimina para todos los usuarios de la conversación. Algunos de estos usuarios pueden ser de otra organización, tener una directiva de retención con un período de retención más largo o ninguna directiva de retención asignada a ellos. Para estos usuarios, las copias de los mensajes aún se almacenan en sus buzones y permanecen disponibles para la búsqueda en eDiscovery hasta que otra directiva de retención elimine permanentemente los mensajes.
+
+> [!IMPORTANT]
+> Los mensajes visibles en la aplicación Teams no son un reflejo exacto de si se conservan o eliminan permanentemente para cumplir con los requisitos.
 
 Cuando la directiva de retención es de solo retención, o solo eliminación, las rutas de acceso de contenido son variaciones de retener y eliminar.
 

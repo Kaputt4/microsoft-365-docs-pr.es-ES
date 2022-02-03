@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: b7a91b948e7c9d8d99c6d7c1563503efc24fc8f9
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ae9d1946f0aaa189b716c7a6b63c2bac999f7872
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320864"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62327406"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -58,7 +58,7 @@ Las aplicaciones también se pueden agregar manualmente a la lista de confianza 
 
 ## <a name="why-controlled-folder-access-is-important"></a>Por qué es importante el acceso controlado a carpetas
 
-El acceso controlado a carpetas es especialmente útil para ayudar a proteger los documentos y la información del [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). En un ataque de ransomware, los archivos pueden ser cifrados y retenidos como rehenes. Con el acceso controlado a carpetas, aparece una notificación en el equipo donde una aplicación intentó realizar cambios en un archivo de una carpeta protegida. Puede [personalizar la notificación](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) con los detalles de la empresa y la información de contacto. También puede habilitar las reglas individualmente para personalizar las técnicas que supervisan las características.
+El acceso controlado a carpetas es especialmente útil para ayudar a proteger los documentos y la información del [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). En un ataque de ransomware, los archivos pueden ser cifrados y retenidos como rehenes. Con el acceso controlado a carpetas, aparece una notificación en el equipo donde una aplicación intentó realizar cambios en un archivo de una carpeta protegida. Puede [personalizar la notificación](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) con los detalles de la empresa y la información de contacto. También puede habilitar las reglas individualmente para personalizar las técnicas que supervisan las características.
 
 Las [carpetas protegidas](#review-controlled-folder-access-events-in-windows-event-viewer) incluyen carpetas comunes del sistema (incluidos los sectores de arranque) y puede [agregar más carpetas](customize-controlled-folders.md#protect-additional-folders). También puedes permitir [que las aplicaciones](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) les den acceso a las carpetas protegidas.
 
@@ -96,7 +96,7 @@ El acceso controlado a carpetas [requiere Antivirus de Microsoft Defender protec
 
 Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de investigación de [alertas](investigate-alerts.md) en el portal Microsoft 365 Defender alerta. (Vea [Microsoft Defender para Endpoint en Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)).)
 
-Puede consultar datos de punto de conexión de Microsoft Defender mediante [búsqueda avanzada](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-overview?view=o365-worldwide). Si usa el modo [de auditoría](audit-windows-defender.md), puede usar la búsqueda [](advanced-hunting-overview.md) avanzada para ver cómo la configuración de acceso controlado a carpetas afectaría al entorno si estuvieran habilitadas.
+Puede consultar datos de punto de conexión de Microsoft Defender mediante [búsqueda avanzada](advanced-hunting-overview.md). Si usa el modo [de auditoría](audit-windows-defender.md), puede usar la búsqueda [](advanced-hunting-overview.md) avanzada para ver cómo la configuración de acceso controlado a carpetas afectaría al entorno si estuvieran habilitadas.
 
 Consulta de ejemplo:
 

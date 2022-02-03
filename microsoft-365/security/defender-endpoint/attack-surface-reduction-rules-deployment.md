@@ -18,12 +18,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: fa6558ef03aed98426cf615df6a80359ef7424bc
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: c6fe1f185567efdc5054cf490579d93eebd5069f
+ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320660"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62326986"
 ---
 # <a name="asr-rules-deployment-overview"></a>Introducción a la implementación de reglas de ASR
 
@@ -123,13 +123,13 @@ Al igual que con cualquier implementación nueva a gran escala que podría afect
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Fase 1: Planificar](attack-surface-reduction-rules-deployment-phase-1.md)
+[Fase 1: Planificar](attack-surface-reduction-rules-deployment-plan.md)
 
-[Fase 2: Probar](attack-surface-reduction-rules-deployment-phase-2.md)
+[Fase 2: Probar](attack-surface-reduction-rules-deployment-test.md)
 
-[Fase 3: Implementar](attack-surface-reduction-rules-deployment-phase-3.md)
+[Fase 3: Implementar](attack-surface-reduction-rules-deployment-implement.md)
 
-[Fase 4: Operar](attack-surface-reduction-rules-deployment-phase-4.md)
+[Fase 4: Operar](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="reference"></a>Referencia
 
