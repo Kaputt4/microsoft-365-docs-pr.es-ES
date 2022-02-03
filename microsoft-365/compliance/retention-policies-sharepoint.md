@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: d9b8a0b66eb32171a0f72fbe0f380a6a98316e33
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: a553945fdb0b0034d8f3182164749b06badfe503
+ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295343"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346086"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -78,7 +78,9 @@ Los usuarios también ven un mensaje de error si intentan eliminar un elemento e
 
 - La configuración de administración de registros que permite a los usuarios eliminar elementos etiquetados está desactivada.
     
-    Para comprobar o cambiar esta configuración, vaya al nodo de **Administración de registros** en el Centro de cumplimiento de Microsoft 365 > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Eliminación de elementos**. Hay configuraciones independientes para SharePoint y OneDrive.
+    Para comprobar o cambiar esta configuración, vaya a la solución de **Administración de registros** en el Centro de cumplimiento de Microsoft 365 > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Eliminación de elementos**. Hay configuraciones independientes para SharePoint y OneDrive.
+    
+    Como alternativa, y si no tiene acceso a la solución de **Administración de registros**, puede usar *AllowFilesWithKeepLabelToBeDeletedSPO* y *AllowFilesWithKeepLabelToBeDeletedODB* de [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) y [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
 
 - La etiqueta de retención marca los elementos como un registro y está [bloqueada](record-versioning.md).
     
@@ -134,9 +136,9 @@ La copia almacenada en la Biblioteca de suspensión para conservación normalmen
 
 ## <a name="how-retention-works-with-onenote-content"></a>Cómo funciona la retención con el contenido de OneNote
 
-Cuando se aplica una directiva de retención a una ubicación que incluye contenido de OneNote, o una etiqueta de retención a una carpeta de OneNote, en segundo plano, las distintas secciones de OneNote son archivos individuales que heredarán la configuración de retención. Esto significa que cada sección se retendrá y eliminará de forma individual, según la configuración de retención que especifique.
+Al aplicar una directiva de retención a una ubicación que incluya contenido OneNote o una etiqueta de retención en una carpeta OneNote, en segundo plano, las distintas páginas y secciones de OneNote son archivos individuales que heredan la configuración de retención. Esto significa que cada sección dentro de una página se conservará y eliminará individualmente, según la configuración de retención que especifique.
 
-La fecha modificada de la propia página de OneNote no cambia después de su creación.
+Solo las páginas y secciones se verán afectadas por la configuración de retención que especifique. Por ejemplo, aunque vea una fecha de **modificación** para cada bloc de notas individual, esta fecha no se usa en la retención de Microsoft 365.
 
 ## <a name="how-retention-works-with-document-versions"></a>Funcionamiento de una directiva de retención con versiones de documentos
 
