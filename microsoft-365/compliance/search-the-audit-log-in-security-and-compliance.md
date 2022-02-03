@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: eb50ed71bad3307036621e8367c697331ffa3024
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: fe473eba5bb2034044206eff3fb17e0249509447
+ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272095"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62322100"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -1165,9 +1165,9 @@ En la mayoría de los servicios, la auditoría se habilita de forma predetermina
 
 No. La canalización del servicio de auditoría está casi en tiempo real, y por lo tanto no es compatible con la des duplicación.
 
-**¿Se audita el flujo de datos en todo el mundo?**
+**¿Dónde se almacenan los datos de auditoría?**
 
-En general, no. Actualmente, tenemos auditorías de canalización de implementaciones en las regiones NA (Norteamérica), EMEA (Europa, Oriente Medio y África) y APAC (Asia Pacífico). Sin embargo, es posible que tengamos que transferir datos entre estas regiones para el equilibrio de carga durante los problemas de sitio activo. Cuando realizamos estas actividades, los datos en tránsito se encriptan. En el caso de las organizaciones multigeográficas, los datos de auditoría recopilados de todas las regiones de la organización solo se almacenarán en la región principal de la organización.
+Actualmente, tenemos auditorías de canalización de implementaciones en las regiones NA (Norteamérica), EMEA (Europa, Oriente Medio y África) y APAC (Asia Pacífico). Los inquilinos alojados en estas regiones tendrán sus datos de auditoría almacenados en la región. En el caso de los inquilinos multigeográficos, los datos de auditoría recopilados de todas las regiones del inquilino solo se almacenarán en la región principal del inquilino. Sin embargo, es posible que flujos los datos en estas zonas para equilibrar la carga y solo durante las cuestiones de sitio en directo. Cuando realizamos estas actividades, los datos en tránsito se encriptan. 
 
 **¿Está la auditoría de datos encriptada?**
 
