@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias de su inquilino. Busca una guía para configurar un servicio o una aplicación que necesites ejecutar.
-ms.openlocfilehash: afab6209211b5c80daaa300b467e255a4b1ec595
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 91b89eeaec3a9d0db5f191cbd10c797a633c633b
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326704"
+ms.locfileid: "62354605"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -93,9 +93,9 @@ La [Búsqueda de Microsoft de](https://aka.ms/MicrosoftSearchSetup) configuraci�
 
 ## <a name="guides-for-authentication-and-access"></a>Guías para la autenticación y el acceso
 
-### <a name="configure-multifactor-authentication-mfa"></a>Configurar la autenticación multifactor (MFA)
+### <a name="configure-multi-factor-authentication-mfa"></a>Configurar la autenticación multifactor (MFA)
 
-La [guía Configurar autenticación multifactor (MFA)](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) proporciona información para proteger la organización contra infracciones debido a credenciales perdidas o robadas. MFA aumenta inmediatamente la seguridad de la cuenta al solicitar varias formas de comprobación para demostrar la identidad de un usuario cuando inicia sesión en una aplicación u otro recurso de la compañía. Este mensaje podría ser escribir un código en el dispositivo móvil del usuario o proporcionar un examen de huellas digitales. MFA se habilita mediante acceso condicional, valores predeterminados de seguridad o MFA por usuario. Esta guía proporcionará la opción de MFA recomendada para su organización, en función de las licencias y la configuración existente.
+La [guía Configurar la autenticación multifactor (MFA)](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) proporciona información para proteger la organización contra infracciones debido a credenciales perdidas o robadas. MFA aumenta inmediatamente la seguridad de la cuenta al solicitar varias formas de comprobación para demostrar la identidad de un usuario cuando inicia sesión en una aplicación u otro recurso de la compañía. Este mensaje podría ser escribir un código en el dispositivo móvil del usuario o proporcionar un examen de huellas digitales. MFA se habilita mediante acceso condicional, valores predeterminados de seguridad o MFA por usuario. Esta guía proporcionará la opción de MFA recomendada para su organización, en función de las licencias y la configuración existente.
 
 ### <a name="identity-security-for-teams"></a>Seguridad de identidad para Teams
 

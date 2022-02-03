@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 92a927bf0cb3a5e568ca2b02d60d641907bc0407
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 22e0eed3becebdcb3dee4c31ddc7659651bac71f
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295410"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354617"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurar Defender para las características de Endpoint en Android
 
@@ -61,12 +61,15 @@ Los siguientes controles de privacidad están disponibles para configurar los da
 |Informe de amenazas     |Detalles      |
 |--------------------|-------------|
 |Informe de malware |Los administradores pueden configurar el control de privacidad para el informe de malware: si la privacidad está habilitada, Defender for Endpoint no enviará el nombre de la aplicación de malware ni otros detalles de la aplicación como parte del informe de alerta de malware |
-|Informe de suplantación de identidad |Los administradores pueden configurar el control de privacidad para el informe de phish: si la privacidad está habilitada, Defender for Endpoint no enviará el nombre de dominio ni los detalles del sitio web no seguro como parte del informe de alerta de phish |
+|Informe de suplantación de identidad |Los administradores pueden configurar el control de privacidad para el informe de phishing: si la privacidad está habilitada, Defender for Endpoint no enviará el nombre de dominio ni los detalles del sitio web no seguro como parte del informe de alerta de suplantación de identidad |
 |Evaluación de vulnerabilidades de aplicaciones (solo Android) |De forma predeterminada, solo se envía información sobre las aplicaciones instaladas en el perfil de trabajo para la evaluación de vulnerabilidades. Los administradores pueden deshabilitar la privacidad para incluir aplicaciones personales|
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>Configurar la evaluación de vulnerabilidades de aplicaciones para dispositivos BYOD
 
 Desde la versión 1.0.3425.0303 de Microsoft Defender para Endpoint en Android, podrás ejecutar evaluaciones de vulnerabilidades del sistema operativo y las aplicaciones instaladas en los dispositivos móviles incorporados.
+
+> [!NOTE]
+> La evaluación de vulnerabilidades forma parte de [la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md) en Microsoft Defender para endpoint. 
 
 **Notas sobre privacidad relacionada con aplicaciones de dispositivos personales (BYOD):**
 

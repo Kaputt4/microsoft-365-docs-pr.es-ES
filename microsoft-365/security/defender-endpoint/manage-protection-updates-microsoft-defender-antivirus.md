@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 50b2d3f5e8a4dd8ff70c826293d5af9be5541938
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: c2ebb60d3cd5514d003991d26c5070b05e89fb37
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326962"
+ms.locfileid: "62354629"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -63,9 +63,9 @@ Hay cinco ubicaciones donde puede especificar dónde debe obtener actualizacione
 - [Windows de actualización de servidor](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Recurso compartido de archivos de red](#unc-share)
-- [Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware de](https://www.microsoft.com/wdsi/defenderupdates) <sup>Microsoft [[2](#fn1)]<sup></sup>
+- [Actualizaciones de inteligencia de seguridad Antivirus de Microsoft Defender y otros antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup>de Microsoft [[2](#fn1)]<sup></sup>
 
-(<a id="fn1">1</a>) Servidor de actualización interna de definiciones de Intune: si usa SCCM/SUP para obtener actualizaciones de definiciones para Antivirus de Microsoft Defender y necesita obtener acceso a Windows Update en dispositivos cliente bloqueados, puede realizar la transición a la administración y descargar la carga de trabajo de protección de puntos de conexión en Intune. En la directiva de AntiMalware configurada en Intune hay una opción para el "servidor de actualización de definiciones internas" que se puede configurar para usar WSUS local como origen de actualización. Esto le ayuda a controlar qué actualizaciones del servidor WU oficial están aprobadas para la empresa y también ayuda a proxy y a guardar tráfico de red en la red Windows UPdates oficial.
+(<a id="fn1">1</a>) Servidor de actualización interna de definiciones de Intune: si usa SCCM/SUP para obtener actualizaciones de definiciones para Antivirus de Microsoft Defender y necesita obtener acceso a Windows Update en dispositivos cliente bloqueados, puede realizar la transición a la administración y descargar la carga de trabajo de protección de puntos de conexión en Intune. En la directiva antimalware configurada en Intune hay una opción para el "servidor de actualización de definiciones internas" que se puede configurar para usar WSUS local como origen de actualización. Esto le ayuda a controlar qué actualizaciones del servidor WU oficial están aprobadas para la empresa y también ayuda a proxy y a guardar tráfico de red en la red Windows UPdates oficial.
 
 (<a id="fn1">2</a>) La directiva y el Registro podrían tener esta lista como inteligencia de seguridad Centro de protección contra malware de Microsoft (MMPC), su nombre anterior.
 
@@ -86,7 +86,7 @@ Cada origen tiene escenarios típicos que dependen de la configuración de la re
 |Microsoft Update|Desea que los puntos de conexión se conecten directamente a Microsoft Update. Esto puede ser útil para los puntos de conexión que se conectan de forma irregular a la red empresarial, o si no usa Windows servicio de actualización de servidor para administrar las actualizaciones.|
 |Compartir archivos|Tiene dispositivos no conectados a Internet (como máquinas virtuales). Puede usar el host de vm conectado a Internet para descargar las actualizaciones en un recurso compartido de red, desde el que las máquinas virtuales pueden obtener las actualizaciones. Consulte la [guía de implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md) para obtener información sobre cómo se pueden usar recursos compartidos de archivos en entornos de infraestructura de escritorio virtual (VDI).|
 |Microsoft Endpoint Manager|Está usando Microsoft Endpoint Manager para actualizar los puntos de conexión.|
-|Actualizaciones de inteligencia de seguridad Antivirus de Microsoft Defender y otros antimalware de Microsoft (anteriormente denominadas MMPC)|[Asegúrate de que los dispositivos estén actualizados para admitir SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus de Microsoft Defender las actualizaciones de inteligencia de seguridad se entregan a través de Windows Update y, a partir del lunes 21 de octubre de 2019, las actualizaciones de inteligencia de seguridad se firmarán exclusivamente con SHA-2. <br/>Descargue las actualizaciones de protección más recientes debido a una infección reciente o para ayudar a aprovisionar una imagen base segura para la [implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md). Por lo general, esta opción solo se debe usar como origen final de reserva y no como origen principal. Solo se usará si las actualizaciones no se pueden descargar desde Windows Server Update Service o Microsoft Update durante un [número especificado de días](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
+|Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware de Microsoft (anteriormente denominada MMPC)|[Asegúrate de que los dispositivos estén actualizados para admitir SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus de Microsoft Defender las actualizaciones de inteligencia de seguridad se entregan a través de Windows Update y, a partir del lunes 21 de octubre de 2019, las actualizaciones de inteligencia de seguridad se firmarán exclusivamente con SHA-2. <br/>Descargue las actualizaciones de protección más recientes debido a una infección reciente o para ayudar a aprovisionar una imagen base segura para la [implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md). Por lo general, esta opción solo se debe usar como origen final de reserva y no como origen principal. Solo se usará si las actualizaciones no se pueden descargar desde Windows Server Update Service o Microsoft Update durante un [número especificado de días](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 Puede administrar el orden en que se usan los orígenes de actualización con la directiva de grupo, los Microsoft Endpoint Configuration Manager, los cmdlets de PowerShell y WMI.
 

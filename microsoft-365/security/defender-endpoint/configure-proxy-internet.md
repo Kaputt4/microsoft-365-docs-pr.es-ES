@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db6d7f17231fd8c2355f36310609af1e8d88160c
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: b4ae8490fadecf60d4414218f42cac83b9035270
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345992"
+ms.locfileid: "62354989"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -61,7 +61,7 @@ La configuración de WinHTTP es independiente de la configuración de proxy de e
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurar manualmente el servidor proxy mediante un proxy estático basado en el registro
 
-Configure un proxy estático basado en el Registro para que Defender for Endpoint Detection and Response (EDR) informe de datos de diagnóstico. Además, comunicarse con Defender para los servicios de extremo, si un equipo no tiene permiso para conectarse a Internet.
+Configure un proxy estático basado en el Registro para el sensor defender para la detección y respuesta de puntos de conexión (EDR) para informar de los datos de diagnóstico y comunicarse con Defender para los servicios de punto de conexión si un equipo no tiene permiso para conectarse a Internet.
 
 > [!NOTE]
 > Al usar esta opción en Windows 10, Windows 11, Windows Server 2019 o Windows Server 2022, se recomienda tener la siguiente compilación (o posterior) y el paquete acumulativo de actualizaciones acumulativas:
@@ -261,7 +261,7 @@ Compruebe que la configuración del proxy se completó correctamente. A continua
 
 5. La herramienta crea y extrae el *MDEClientAnalyzerResult.zip* en la carpeta que se usará en *HardDrivePath*.
 
-6. Abra *MDEClientAnalyzerResult.txt* y compruebe que ha realizado los pasos de configuración de proxy para habilitar la detección de servidores y el acceso a las direcciones URL de servicio.
+6. Abra *MDEClientAnalyzerResult.txt* y compruebe que ha realizado los pasos de configuración de proxy para habilitar la detección de servidores y el acceso a las direcciones URL del servicio.
 
    La herramienta comprueba la conectividad de las direcciones URL del servicio defender para puntos de conexión. Asegúrese de que el cliente de Defender for Endpoint está configurado para interactuar. La herramienta imprimirá los resultados en el archivo *MDEClientAnalyzerResult.txt* para cada dirección URL que se pueda usar potencialmente para comunicarse con defender para los servicios de extremo. Por ejemplo:
 
@@ -283,7 +283,7 @@ Pero si los resultados de la comprobación de conectividad indican un error, se 
 >
 > Cuando telemetryProxyServer se establece en el Registro o a través de la directiva de grupo, Defender for Endpoint se resaltó, no se puede tener acceso al proxy definido.
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-articles"></a>Artículos relacionados
 
 - [Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
 - [incorporar dispositivos Windows](configure-endpoints.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c96f5ee97d74dcecc1282dd5ab031ad742e67738
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 0754886d70759b4869151ad2c915a878a5ca111c
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295415"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355049"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender para endpoint- Mobile Threat Defense
 
@@ -47,7 +47,7 @@ Microsoft Defender para Endpoint en Android e iOS proporciona las siguientes fun
 |Protección web|Anti-phishing, bloqueo de conexiones de red no seguras y compatibilidad con indicadores personalizados.|
 |Protección contra malware (solo Android)|Buscar aplicaciones malintencionadas.|
 |Detección de jailbreak (solo iOS)|Detección de dispositivos con jailbreak.|
-|Administración de amenazas y vulnerabilidades (TVM)|Evaluación de vulnerabilidad de dispositivos móviles incorporados. Visita esta [página para](next-gen-threat-and-vuln-mgt.md) obtener más información sobre Administración de amenazas y vulnerabilidades en Microsoft Defender para endpoint. *Tenga en cuenta que en iOS solo se admiten vulnerabilidades del sistema operativo actualmente*|
+|Administración de amenazas y vulnerabilidades (TVM) |Evaluación de vulnerabilidad de dispositivos móviles incorporados. Visita esta [página para](next-gen-threat-and-vuln-mgt.md) obtener más información sobre Administración de amenazas y vulnerabilidades en Microsoft Defender para endpoint. *Ten en cuenta que en iOS solo se admiten vulnerabilidades del sistema operativo en esta versión preliminar.*|
 |Alertas unificadas|Alertas de todas las plataformas en la consola de seguridad unificada de M365|
 |Acceso condicional, inicio condicional|Bloquear el acceso de los dispositivos de riesgo a los recursos corporativos. Las señales de riesgo de Defender for Endpoint también se pueden agregar a las directivas de protección de aplicaciones (MAM)|
 |Controles de privacidad. En vista previa (vea la nota siguiente)|Configure la privacidad en los informes de amenazas mediante el control de los datos enviados por Microsoft Defender para Endpoint. *Ten en cuenta que actualmente los controles de privacidad solo están disponibles para los dispositivos inscritos. Los controles para dispositivos no inscritos se agregarán más adelante*|
@@ -55,8 +55,6 @@ Microsoft Defender para Endpoint en Android e iOS proporciona las siguientes fun
 
 Todas estas funcionalidades están disponibles para microsoft defender para los titulares de licencias de extremo. Para obtener más información, vea [Requisitos de licencias](minimum-requirements.md#licensing-requirements).
 
-> [!NOTE]
-> Los controles de privacidad para Android e iOS están actualmente en versión preliminar y pueden modificarse considerablemente antes de su lanzamiento comercial.
 
 ## <a name="overview-and-deploy"></a>Introducción e implementación
 
@@ -124,7 +122,7 @@ Esto ayuda a reducir los posibles problemas que podrían surgir al implementar e
 - [Configurar características de iOS](ios-configure-features.md)
 - [Configurar Web Protection sin VPN para dispositivos iOS supervisados](ios-install.md#complete-deployment-for-supervised-devices)
 
-## <a name="resources"></a>Recursos
+## <a name="resources"></a>Resources
 
 - [Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md)
 - [Microsoft Defender para punto de conexión en iOS](microsoft-defender-endpoint-ios.md)

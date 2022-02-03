@@ -1,53 +1,101 @@
-- name: Más información sobre Microsoft SharePoint Syntex
+- name: Microsoft SharePoint Syntex
+  href: index.md
+- name: Modelos personalizados
   items:
-    - name: Introducción a SharePoint Syntex
-      href: index.md
-    - name: Información general sobre la comprensión de documentos
-      href: document-understanding-overview.md
-    - name: Información general del procesamiento de formularios
-      href: form-processing-overview.md
-    - name: Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
-      href: difference-between-document-understanding-and-form-processing-model.md
-- name: Empezar a usar los modelos
+    - name: Comprensión mediante documentos
+      items:
+        - name: Información general
+          href: document-understanding-overview.md
+        - name: Diferencias entre los modelos
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: Importar un modelo de ejemplo
+          href: learn-about-document-understanding-models-through-the-sample-model.md
+        - name: Crear un centro de contenido
+          href: create-a-content-center.md
+        - name: Crear un clasificador
+          href: create-a-classifier.md
+        - name: Duplicar un modelo
+          href: duplicate-a-model.md
+        - name: Cambiar el nombre de un modelo
+          href: rename-a-model.md
+        - name: Crear un extractor
+          href: create-an-extractor.md
+        - name: Cambiar el nombre de un extractor
+          href: rename-an-extractor.md
+        - name: Tipos de explicación
+          href: explanation-types-overview.md
+        - name: Usar plantillas de explicación
+          href: explanation-templates.md
+        - name: Aplicar un modelo de comprensión mediante documentos
+          href: apply-a-model.md
+        - name: Publicar y detectar un modelo
+          href: model-discovery.md
+        - name: Aplicar una etiqueta de retención
+          href: apply-a-retention-label-to-a-model.md
+        - name: Aplicar una etiqueta de confidencialidad
+          href: apply-a-sensitivity-label-to-a-model.md
+        - name: Análisis de uso del modelo
+          href: model-usage-analytics.md
+        - name: Aprovechar la taxonomía del almacén de términos al crear un extractor
+          href: leverage-term-store-taxonomy.md
+        - name: Modo de accesibilidad de SharePoint Syntex
+          href: accessibility-mode.md
+    - name: Procesamiento de formularios
+      items:
+        - name: Información general
+          href: form-processing-overview.md
+        - name: Diferencias entre los modelos
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: Crear un modelo de procesamiento de formularios
+          href: create-a-form-processing-model.md
+        - name: Aplicar una etiqueta de retención
+          href: apply-a-retention-label-to-a-model.md
+        - name: Análisis de uso del modelo
+          href: model-usage-analytics.md
+- name: Modelos creados previamente
   items:
-    - name: Importar un modelo de comprensión mediante documentos de muestra
-      href: learn-about-document-understanding-models-through-the-sample-model.md
-    - name: Crear un centro de contenido
-      href: create-a-content-center.md
-    - name: Crear un clasificador
-      href: create-a-classifier.md
-    - name: Duplicar un modelo
-      href: duplicate-a-model.md
-    - name: Cambiar el nombre de un modelo
-      href: rename-a-model.md
-    - name: Crear un extractor
-      href: create-an-extractor.md
-    - name: Cambiar el nombre de un extractor
-      href: rename-an-extractor.md
-    - name: Tipos de explicación
-      href: explanation-types-overview.md
-    - name: Usar plantillas de explicación
-      href: explanation-templates.md
-    - name: Aplicar un modelo de comprensión mediante documentos
-      href: apply-a-model.md
-    - name: Crear un modelo de procesamiento de formularios
-      href: create-a-form-processing-model.md
-    - name: Crear documentos mediante el ensamble de contenidos
-      href: content-assembly.md
-    - name: Publicar y detectar un modelo
-      href: model-discovery.md
+    - name: Modelos de factura y recibo creados previamente
+      href: prebuilt-models.md
     - name: Aplicar una etiqueta de retención
       href: apply-a-retention-label-to-a-model.md
-    - name: Aplicar una etiqueta de confidencialidad
-      href: apply-a-sensitivity-label-to-a-model.md
-    - name: Búsqueda de metadatos en bibliotecas
+- name: Ensamble de contenidos
+  items:
+    - name: Crear documentos mediante el ensamble de contenidos
+      href: content-assembly.md
+- name: Búsqueda de metadatos
+  items:
+    - name: Búsqueda de metadatos en bibliotecas de documentos
       href: metadata-search.md
-    - name: Análisis de uso del modelo
-      href: model-usage-analytics.md
-    - name: Aprovechar la taxonomía del almacén de términos al crear un extractor
-      href: leverage-term-store-taxonomy.md
-    - name: Modo de accesibilidad de SharePoint Syntex
-      href: accessibility-mode.md
+- name: Taxonomía
+  items:
+    - name: Importar mediante SKOS
+      href: import-term-set-skos.md
+    - name: Referencia de formato SKOS
+      href: skos-format-reference.md
+    - name: Insertar tipos de contenido en un centro
+      href: push-content-type-to-hub.md
+    - name: Informes del almacén de términos
+      href: term-store-analytics.md
+- name: Configuración y administración
+  items:
+    - name: Licencias para SharePoint Syntex
+      href: syntex-licensing.md
+    - name: Configurar SharePoint Syntex
+      href: set-up-content-understanding.md
+    - name: Crear un centro de contenido
+      href: create-a-content-center.md
+    - name: "Administración de SharePoint\_Syntex con PowerShell"
+      items:
+        - name: Información general
+          href: powershell-syntex-intro.md
+        - name: Exportación e importación de modelos
+          href: powershell-syntex-import-export.md
+        - name: Publicar modelos
+          href: powershell-syntex-publishing.md
+        - name: Solicitud de procesamiento por parte de un modelo
+          href: powershell-syntex-processing.md
+        - name: Trabajar con explicaciones del modelo
+          href: powershell-syntex-explanations.md
 - name: Adopción
   items:
     - name: Introducción a la adopción
@@ -66,33 +114,5 @@
           href: solution-manage-contracts-step2.md
         - name: Paso 3. Usar Power Automate
           href: solution-manage-contracts-step3.md
-- name: Configuración y administración
-  items:
-    - name: Licencias para SharePoint Syntex
-      href: syntex-licensing.md
-    - name: Configurar SharePoint Syntex
-      href: set-up-content-understanding.md
-    - name: "Administración de SharePoint\_Syntex con PowerShell"
-      items:
-        - name: Información general
-          href: powershell-syntex-intro.md
-        - name: Exportación e importación de modelos
-          href: powershell-syntex-import-export.md
-        - name: Publicar modelos
-          href: powershell-syntex-publishing.md
-        - name: Solicitud de procesamiento por parte de un modelo
-          href: powershell-syntex-processing.md
-        - name: Trabajar con explicaciones del modelo
-          href: powershell-syntex-explanations.md
-- name: Servicios de contenido
-  items:
-    - name: Importar mediante SKOS
-      href: import-term-set-skos.md
-    - name: Referencia de formato SKOS
-      href: skos-format-reference.md
-    - name: Insertar tipos de contenido en un centro
-      href: push-content-type-to-hub.md
-    - name: Informes del almacén de términos
-      href: term-store-analytics.md
 - name: Extensibilidad
   href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

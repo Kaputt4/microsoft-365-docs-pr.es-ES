@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: En este artículo, aprenderá a crear directivas DLP con una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: 92c26c23461c9a03e50ea3a8f0ebb20a2b5151ba
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 965e5198887ec64072efffd35ffa7739c90af6a4
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939110"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62355036"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -45,7 +45,7 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
     
 2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
 
-3. Al crear el grupo de funciones, use la sección **Elegir roles** para agregar la siguiente función al grupo de roles: Administración de **cumplimiento dlp**.
+3. Al crear el grupo de roles, use la sección **Elegir roles** para agregar la siguiente función al grupo de roles: **Administración de cumplimiento dlp**.
     
 4. Use la sección **Elegir miembros** para añadir el grupo de Microsoft 365 que creó antes del grupo de roles.
 
@@ -55,30 +55,30 @@ Para más información, vea [Conceder acceso a los usuarios al Centro de cumplim
   
 Estos permisos son necesarios para crear y aplicar una directiva DLP para no aplicar directivas.
 
-### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en versión preliminar
+### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
 
-Hay roles y grupos de roles en versión preliminar que puede probar para ajustar los controles de acceso.
+Hay roles y grupos de roles en la versión preliminar que puede probar para ajustar los controles de acceso.
 
-Esta es una lista de roles Microsoft Information Protection (MIP) que están en versión preliminar. Para obtener más información sobre ellos, vea [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Aquí tiene una lista de roles Microsoft Information Protection (MIP) que están en la versión preliminar. Para obtener más información, consulte [Roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Administrador de Information Protection
 - Analista de Information Protection
 - Investigador de protección de información
 - Lector de protección de información
 
-Esta es una lista de grupos de roles de MIP que están en versión preliminar. Para obtener más información sobre los grupos de roles en [el Centro de seguridad y & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Aquí tiene una lista de grupos de roles de MIP que están en la versión preliminar. Para obtener más información, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Protección de la información
 - Administradores de Information Protection
 - Analistas de Information Protection
-- Investigadores de protección de la información
+- Investigadores de Information Protection
 - Lectores de Information Protection
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>Crear la directiva DLP desde una plantilla
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
-2. En el Centro de cumplimiento de \> navegación izquierda \> **Soluciones** \> **Prevención de pérdida de datos** \> **Directivas** + Crear \> **directiva**.
+2. En el Centro de cumplimiento de navegación izquierda \> \> **Soluciones** \> **Prevención de pérdida de datos** \> **Directivas** \> **+ Crear directiva**.
 
     ![Crear un botón de directiva.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -96,22 +96,22 @@ Esta es una lista de grupos de roles de MIP que están en versión preliminar. P
 
 6. Elija \> **Siguiente**.
  
-1. <!-->, realice una de las siguientes acciones:
+1. Realiza una de las siguientes acciones:
 
    - Elija **Todas las ubicaciones en Office 365** \> **Siguiente**.
-   - Elija **Let me choose specific locations** \> **Next**. Para este ejemplo, elija esto.
+   - Elija **Permitirme elegir ubicaciones específicas** \> **Siguiente**. Para este ejemplo, elija esto.
 
-   Para incluir o excluir una ubicación completa, como todas las Exchange correo  electrónico o todas las OneDrive, active o apague el estado de esa ubicación.
+   Para incluir o excluir una ubicación completa, como todas las Exchange correo electrónico o todas las cuentas OneDrive, active o despegar el estado de esa ubicación.
 
-   Para incluir solo sitios SharePoint específicos o cuentas OneDrive para la Empresa, cambie estado a y,  a continuación, haga clic en los vínculos en Incluir para elegir sitios o cuentas específicos.  Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha directiva se aplican automáticamente a todos los subsitios de ese sitio.
+   Para incluir solo sitios SharePoint específicos o cuentas OneDrive para la Empresa, cambie estado a y, a continuación, haga clic en los vínculos en Incluir  para elegir sitios o cuentas específicos. Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha directiva se aplican automáticamente a todos los subsitios de ese sitio.
 
-   ![Opciones de ubicaciones donde se puede aplicar una directiva DLP.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+   ![Opciones de ubicaciones donde se puede aplicar una directiva DLP.](../media/all-locations.png)
 
-   En este ejemplo, para proteger la información confidencial almacenada en  todas las cuentas de OneDrive para la Empresa, desactive el estado  de los sitios de correo electrónico y SharePoint de **Exchange** y deje el estado en para las cuentas de **OneDrive**.-->
+   En este ejemplo, para proteger la información confidencial almacenada en todas las cuentas de OneDrive para la Empresa, desactive el estado  de los sitios  de correo electrónico Exchange y **SharePoint** y deje el estado en para las **cuentas** OneDrive.
 
 7. Elija **Revisar y personalizar la configuración predeterminada de la plantilla** \> **Siguiente**.
 
-8. Una plantilla de directiva DLP contiene reglas predefinidas con condiciones y acciones que detectan y actúan sobre tipos específicos de información confidencial. Puede editar, eliminar o desactivar cualquiera de las reglas existentes o agregar otras nuevas. Cuando haya terminado, haga clic **en Siguiente**.
+8. Una plantilla de directiva DLP contiene reglas predefinidas con condiciones y acciones que detectan y actúan sobre tipos específicos de información confidencial. Puede editar, eliminar o desactivar cualquiera de las reglas existentes o agregar otras nuevas. Cuando haya terminado, haga clic en **Siguiente**.
 
     ![Reglas expandida en la plantilla de directiva DE PII de EE. UU.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
@@ -123,7 +123,7 @@ Esta es una lista de grupos de roles de MIP que están en versión preliminar. P
 
 10. Elija **Siguiente**.
 
-11. En la **página Acciones de** protección si lo desea, puede personalizar las notificaciones de sugerencias de directiva y los correos electrónicos de notificación. Habilitar Cuando el contenido coincide con las condiciones de la **directiva, mostrar** sugerencias de directiva a los usuarios y enviarles una notificación de correo electrónico y, a continuación, elija **Personalizar la sugerencia y el correo electrónico**.
+11. En la **página Acciones de** protección si lo desea, puede personalizar las notificaciones de sugerencias de directiva y los correos electrónicos de notificación. Habilitar **Cuando el contenido coincide con las condiciones de** la directiva, mostrar sugerencias de directiva a los usuarios y enviarles una notificación de correo electrónico y, a continuación, elija **Personalizar la sugerencia y el correo electrónico**.
 12. Elija **Siguiente**.
 
 

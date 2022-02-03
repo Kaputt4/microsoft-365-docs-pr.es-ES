@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para publicar etiquetas de retención para poder aplicarlas en aplicaciones para conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 229d70816bff753ebacf7857cbcb773a7e958609
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 8a190020ce79431471b446c53b584c033c44e13a
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242016"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354689"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publicar etiquetas de retención y aplicarlas en aplicaciones
 
@@ -277,8 +277,10 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 
 ## Next steps
 
-Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
+To help you track the labels applied from your published retention labeling policies:
 
-- [Start retention when an event occurs](event-driven-retention.md)
-- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-api)
-- [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)
+- [Monitoring retention labels](retention.md#monitoring-retention-labels)
+- [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [Auditing retention actions](retention.md#auditing-retention-actions)
+
+Event-based retention is another supported scenario for retention labels. For more information, see [Start retention when an event occurs](event-driven-retention.md).

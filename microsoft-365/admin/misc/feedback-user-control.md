@@ -18,28 +18,25 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los comentarios que los usuarios pueden enviar a Microsoft sobre los productos de Microsoft.
-ms.openlocfilehash: 46acfef3af37ae98e2f9d014ffc48a168665219a
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 7ed3d43ca66635040ab16880644f943e19fda899
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559993"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354641"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Información sobre los comentarios de Microsoft para su organización
 
 Los comentarios de los usuarios son una señal crítica para que Microsoft comprenda las experiencias de usuario con los productos de Microsoft. Microsoft valora las opiniones de nuestros usuarios. Los comentarios de los usuarios van directamente a nuestros ingenieros y nos ayudan a definir el futuro de los productos y servicios de Microsoft para todos nuestros usuarios.  
 En este tema, encontrará información sobre qué tipos de comentarios existen, cómo los recopilamos, qué recopilamos y cómo manejamos los datos.
 
-Como administrador, puede administrar la señal de comentarios de su organización. Estamos presentando un nuevo conjunto de configuraciones de directiva para ayudarle a administrar la recopilación de comentarios de los usuarios dentro de las Microsoft 365 de la organización. Esta configuración de directiva le ayudará a dirigirse Azure Active Directory grupos y configurar la experiencia de recopilación de comentarios para su organización. Los comentarios de los usuarios van directamente a nuestros ingenieros y nos ayudan a definir el futuro de los productos y servicios de Microsoft para todos nuestros usuarios. Puede obtener más información sobre esta configuración de directiva, a qué aplicaciones se aplican y procedimientos recomendados en Administrar comentarios de [Microsoft para su organización.](../manage/manage-feedback-ms-org.md)
-
-> [!IMPORTANT]
-> Te recomendamos que confirmes que los comentarios se envían desde un origen en el que confías. Asegúrese de que los nombres de usuario o los id. de usuario coincidan con los usuarios reales de la organización.
+Como administrador, puede administrar la señal de comentarios de su organización. Estamos presentando un nuevo conjunto de configuraciones de directiva para ayudarle a administrar la recopilación de comentarios de los usuarios dentro de las Microsoft 365 de la organización. Esta configuración de directiva le ayudará a dirigirse Azure Active Directory grupos y configurar la experiencia de recopilación de comentarios para su organización. Los comentarios de los usuarios van directamente a nuestros ingenieros y nos ayudan a definir el futuro de los productos y servicios de Microsoft para todos nuestros usuarios. Puede obtener más información sobre esta configuración de directiva, a qué aplicaciones se aplican y procedimientos recomendados en Administrar los comentarios de [Microsoft para su organización](../manage/manage-feedback-ms-org.md).
 
 ## <a name="feedback-types"></a>Tipos de comentarios
 
 ### <a name="in-product-feedback"></a>Comentarios en el producto
 
-Si los usuarios usan una de las aplicaciones de Microsoft y desean proporcionar comentarios, hay varias maneras de hacerlo desde dentro de las aplicaciones que están usando. Los usuarios pueden usar estas diferentes formas de compartir comentarios sobre productos y características con nosotros. Una de las formas más comunes de compartir comentarios a través de aplicaciones de Microsoft se encuentra en el menú Ayuda. Al seleccionar **comentarios de** ayuda de la mayoría de las aplicaciones de Microsoft, se inicia una página de comentarios, que permite a los usuarios enviar comentarios a  >   Microsoft.
+Si los usuarios usan una de las aplicaciones de Microsoft y desean proporcionar comentarios, hay varias maneras de hacerlo desde dentro de las aplicaciones que están usando. Los usuarios pueden usar estas diferentes formas de compartir comentarios sobre productos y características con nosotros. Una de las formas más comunes de compartir comentarios a través de aplicaciones de Microsoft se encuentra en el menú Ayuda. Al seleccionar **HelpFeedback**  >  en la mayoría de las aplicaciones de Microsoft, se inicia una página de comentarios, que permite a los usuarios enviar comentarios a Microsoft.
 
 #### <a name="in-product-feedback-examples"></a>Ejemplos de comentarios en el producto
 
@@ -57,7 +54,7 @@ Los usuarios pueden calificar su experiencia y proporcionar información adicion
 
 ### <a name="community-feedback"></a>Community comentarios
 
-Los usuarios pueden aprovechar el nuevo portal de [comentarios de Microsoft](https://feedbackportal.microsoft.com/feedback/) para participar en foros de la comunidad pública para todos los Microsoft 365 productos. El nuevo portal de comentarios permitirá a los usuarios examinar y enviar comentarios enviados públicamente, así como enviar nuevos comentarios de la comunidad pública para cualquiera de los productos admitidos. Los elementos de comentarios más conocidos siguen estando disponibles en el nuevo portal. Este portal también es un nuevo lienzo de respuesta para que los usuarios realicen un seguimiento de las respuestas oficiales de Microsoft e interactúen con Microsoft en los comentarios que envíen.
+Los usuarios pueden aprovechar el nuevo [portal de comentarios de Microsoft](https://feedbackportal.microsoft.com/feedback/) para participar en foros de la comunidad pública para todos los Microsoft 365 productos. El nuevo portal de comentarios permitirá a los usuarios examinar y enviar comentarios enviados públicamente, así como enviar nuevos comentarios de la comunidad pública para cualquiera de los productos admitidos. Los elementos de comentarios más conocidos siguen estando disponibles en el nuevo portal. Este portal también es un nuevo lienzo de respuesta para que los usuarios realicen un seguimiento de las respuestas oficiales de Microsoft e interactúen con Microsoft en los comentarios que envíen.
 
 :::image type="content" source="../../media/community-feedback1.png" alt-text="Captura de pantalla: Microsoft Teams del portal de comentarios":::
 
@@ -101,4 +98,4 @@ Para cumplir con las obligaciones legales de Microsoft con los clientes, estamos
 
 Sabemos que cuando usa nuestros servicios en la nube, nos confía uno de sus activos más valiosos: sus datos. Nos aseguramos de que los comentarios que recibimos se almacenan y se administran en las reglas de gobierno de Microsoft y que solo se puede acceder a ella para usos aprobados. No usamos el correo electrónico, el chat, los archivos u otro contenido personal para dirigirte a los anuncios. Cuando recopilamos datos, los usamos para mejorar sus experiencias.
 
-Para obtener más información sobre cómo protegemos la privacidad y la confidencialidad de sus datos, y cómo nos aseguramos de que se usarán solo de forma coherente con sus expectativas, revise nuestros principios de privacidad en el Centro de confianza de [Microsoft](https://www.microsoft.com/trust-center/privacy).
+Para obtener más información sobre cómo protegemos la privacidad y la confidencialidad de sus datos, y cómo nos aseguramos de que se usarán solo de forma coherente con sus expectativas, revise nuestros principios de privacidad en el [Centro](https://www.microsoft.com/trust-center/privacy) de confianza de Microsoft.
