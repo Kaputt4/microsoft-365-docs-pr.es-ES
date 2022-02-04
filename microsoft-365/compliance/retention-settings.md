@@ -1,29 +1,24 @@
 ---
 title: Configurar las opciones de retención para conservar o eliminar contenido automáticamente
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- SPO_Content
+  - M365-security-compliance
+  - SPO_Content
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 81a5219826fc1f8e4bc43a54d0687306738a57da
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520937"
 ---
+
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
@@ -53,9 +48,6 @@ Cuando haya decidido si va a usar un ámbito adaptable o estático, use la sigui
 
 ### <a name="configuration-information-for-adaptive-scopes"></a>Información de configuración para ámbitos adaptables
 
-> [!NOTE]
-> Los ámbitos adaptables son una nueva característica actualmente en versión preliminar y sujeta a cambios. La opción alternativa sería un ámbito estático, que proporciona el mismo comportamiento de antes de que se introdujesen ámbitos adaptables y que puede usarse si los ámbitos adaptables no cumplen con los requisitos empresariales.
-
 Si elige usar ámbitos adaptables, se le pedirá que seleccione qué tipo de ámbito adaptable desea. Hay tres tipos diferentes de ámbitos adaptables y cada uno admite diferentes atributos o propiedades:
 
 | Tipo de ámbito adaptable | Entre los atributos o propiedades admitidos se incluyen |
@@ -72,7 +64,9 @@ Los nombres de propiedad de los sitios se basan en propiedades administradas de 
 Los atributos y propiedades enumerados en la tabla se pueden especificar fácilmente al configurar un ámbito adaptable mediante el generador de consultas simple. Los atributos y propiedades adicionales se admiten con el generador de consultas avanzado, como se describe en la sección siguiente.
 
 > [!TIP]
-> Para obtener información adicional acerca del uso del generador de consultas avanzado, consulte el siguiente seminario web: [Creación de consultas avanzadas para usuarios y grupos con ámbitos de directiva adaptables](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> Para obtener información adicional sobre el uso del generador de consultas avanzado, consulte los siguientes seminarios web: 
+> - [Compilar consultas avanzadas para usuarios y grupos con ámbitos de directiva adaptables](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> - [Compilar consultas avanzadas para sitios SharePoint con ámbitos de directiva adaptable](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
 Una única directiva de retención puede tener uno o varios ámbitos adaptables.
 
@@ -82,10 +76,10 @@ Antes de configurar el ámbito adaptable, use la sección anterior para identifi
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes ubicaciones:
     
-    - Si utiliza la administración de registros:
+    - Si usa la solución de administración de registros:
         - **Soluciones** > **Administración de registros** > **Pestaña Ámbitos adaptables** > + **Crear ámbito**
         
-    - Si no está utilizando la administración de registros:
+    - Si usa la solución de gobernanza de la información:
        - **Soluciones** > **Gobierno de información** > **Pestaña Ámbitos adaptables** > + **Crear ámbito**
     
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
