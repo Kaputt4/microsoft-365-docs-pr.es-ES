@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: 4af5d1a8dc3cb0c7f1ffc38b59556e3bd5220ac5
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d1060bb4330c2dbb23c241cb3095f3b30869b58a
+ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244912"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62354929"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -374,5 +374,11 @@ Sin embargo, podría tomarle hasta dos días al explorador de contenido mostrar 
 Si necesita asegurarse de que nadie pueda inhabilitar la directiva, eliminar la directiva o hacer que sea menos restrictiva, consulte [Usar el Bloqueo de conservación para restringir los cambios en directivas de retención y directivas de etiquetas de retención](retention-preservation-lock.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
+
+Para ayudarle a realizar un seguimiento de las etiquetas aplicadas desde las directivas de etiquetado automático:
+
+- [Supervisar las etiquetas de retención](retention.md#monitoring-retention-labels)
+- [Usar la Búsqueda de contenido para encontrar todo el contenido relacionado con una etiqueta de retención específica](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [Auditoría de acciones de retención](retention.md#auditing-retention-actions)
 
 Consulte [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md) para obtener un escenario de ejemplo que usa una directiva de etiqueta de retención de aplicación automática con propiedades administradas en SharePoint y una retención basada en eventos para iniciar el período de retención.
