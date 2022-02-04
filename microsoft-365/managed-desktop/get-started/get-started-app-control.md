@@ -1,7 +1,7 @@
 ---
 title: Introducción al control de aplicaciones
-description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
+description: null
+keywords: 'Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación'
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
@@ -10,18 +10,15 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bafbb32d83f1b9f4381f62b41254f5666d7f3a49
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034706"
 ---
+
 # <a name="get-started-with-app-control"></a>Introducción al control de aplicaciones
 
 Antes de habilitar el control de aplicaciones en el entorno, asegúrese de revisar y comprender cómo lo implementa [Microsoft Managed Desktop](../service-description/app-control.md) y sus roles y responsabilidades.
 
-Microsoft Managed Desktop simplifica el control de aplicaciones al ocuparse de los aspectos más difíciles de obtener una directiva base segura. Los administradores de TI aún deben probar las aplicaciones en el anillo de prueba y revisar los registros en busca de advertencias o errores. Si una aplicación necesita una exención, puedes presentar una solicitud o la operación de escritorio administrado de Microsoft podría depender de quién la detecte primero.
+Microsoft Managed Desktop simplifica el control de aplicaciones al ocuparse de los aspectos más difíciles de obtener una directiva base segura.
+
+Los administradores de TI deben probar las aplicaciones en el anillo de prueba y revisar los registros en busca de advertencias o errores. Si una aplicación necesita una exención, puedes presentar una solicitud o la operación de escritorio administrado de Microsoft podría depender de quién la detecte primero.
 
 ## <a name="initial-deployment-of-apps"></a>Implementación inicial de aplicaciones
 
@@ -29,33 +26,33 @@ Al implementar aplicaciones por primera vez, Microsoft Managed Desktop debe eval
 
 ### <a name="devices-not-yet-in-use"></a>Dispositivos que aún no están en uso
 
-Si aún no tienes ningún dispositivo en uso, abre un vale de servicio con Operaciones de escritorio administrado de Microsoft solicitando que activemos el control de la aplicación. Las operaciones implementarán de forma progresiva directivas en grupos de implementación siguiendo esta programación:
+Si aún no tienes ningún dispositivo en uso, abre un vale de soporte técnico con Operaciones de escritorio administrado de Microsoft para solicitar que actives el control de aplicaciones. Las operaciones implementarán de forma progresiva directivas en grupos de implementación siguiendo esta programación:
 
-|Grupo de implementación  |Tipo de directiva  |Timing  |
-|---------|---------|---------|
-|Prueba     |  Auditoría       |  Día 0       |
-|Primero     | Enforced        | Día 1        |
-|Rápida     | Enforced        |  Día 2       |
-|Amplias     | Enforced        |  Día 3       |
+| Grupo de implementación | Tipo de directiva | Timing |
+| ------ | ------ | ------ |
+| Prueba |  Auditoría |  Día 0 |
+| Primero | Enforced | Día 1 |
+| Rápida | Enforced |  Día 2 |
+| Amplias | Enforced |  Día 3 |
 
-Siempre puede abrir otra solicitud de servicio para pausar o revertir parte de esta implementación en cualquier momento durante el lanzamiento.
+Siempre puede abrir otra solicitud de soporte técnico para pausar o revertir parte de esta implementación en cualquier momento durante el lanzamiento.
 
 ### <a name="devices-already-in-use"></a>Dispositivos que ya están en uso
 
 Si ya tiene al menos un dispositivo de Escritorio administrado de Microsoft en uso, siga estos pasos:
 
 1. Abra un vale de servicio con Microsoft Managed Desktop Operations solicitando que activemos el control de aplicaciones. Las operaciones implementarán una [directiva de auditoría](../service-description/app-control.md#audit-policy) en todos los dispositivos.
-2. [Pruebe las aplicaciones](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) para ver si se bloquearía alguna. Si se bloquearía una aplicación, abra una [solicitud de firmante](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer). 
+2. [Pruebe las aplicaciones](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) para ver si se bloquearía alguna. Si se bloquearía una aplicación, abra una [solicitud de firmante](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer).
 3. Una vez que haya completado las pruebas (independientemente de los resultados), notifique a Operaciones y notifique las solicitudes de firmante pendientes. Las operaciones implementarán de forma progresiva directivas en grupos de implementación siguiendo esta programación:
 
-|Grupo de implementación  |Tipo de directiva  |Timing  |
-|---------|---------|---------|
-|Prueba     |  Auditoría       |  Día 0       |
-|Primero     | Enforced        | Día 1        |
-|Rápida     | Enforced        |  Paused, rollout on request       |
-|Amplias     | Enforced        |  Paused, rollout on request       |
+| Grupo de implementación | Tipo de directiva | Timing |
+| ------ | ------ | ------ |
+| Prueba     | Auditoría |  Día 0 |
+| Primero     | Enforced | Día 1 |
+| Rápida     | Enforced |  Paused, rollout on request |
+| Amplias     | Enforced |  Paused, rollout on request |
 
-Siempre puede abrir otra solicitud de servicio para pausar o revertir parte de esta implementación en cualquier momento durante el lanzamiento.
+Siempre puede abrir otra solicitud de soporte técnico para pausar o revertir parte de esta implementación en cualquier momento durante el lanzamiento.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Microsoft Managed Desktop
 
@@ -70,4 +67,3 @@ Siempre puede abrir otra solicitud de servicio para pausar o revertir parte de e
 1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
 1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).
 1. Introducción al control de aplicaciones (en este artículo).
-

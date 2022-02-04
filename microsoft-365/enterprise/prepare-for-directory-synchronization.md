@@ -9,41 +9,36 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adm_O365
-- O365p_AddUsersWithDirSync
-- O365M_AddUsersWithDirSync
-- O365E_HRCSetupAADConnectAboutLM617031
-- O365E_AddUsersWithDirSync
+  - Adm_O365
+  - O365p_AddUsersWithDirSync
+  - O365M_AddUsersWithDirSync
+  - O365E_HRCSetupAADConnectAboutLM617031
+  - O365E_AddUsersWithDirSync
 ms.collection:
-- Ent_O365
-- M365-identity-device-management
+  - Ent_O365
+  - M365-identity-device-management
 search.appverid:
-- MET150
-- MOP150
-- MOE150
-- MBS150
+  - MET150
+  - MOP150
+  - MOE150
+  - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo prepararse para aprovisionar usuarios para Microsoft 365 mediante la sincronización de directorios y las ventajas a largo plazo de usar este método.
-ms.openlocfilehash: ef0a7dd0925d1d2c8c6ffb2c161f9271194f6fc8
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187226"
 ---
+
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepararse para la sincronización de directorios de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Las ventajas de la sincronización de directorios y identidad híbrida de la organización incluyen:
+Si ha elegido el modelo de identidad híbrida y configurado la protección para cuentas de administrador en el paso [2](protect-your-global-administrator-accounts.md) y cuentas de usuario en el paso [3](microsoft-365-secure-sign-in.md) de esta solución, la siguiente tarea es implementar la sincronización de directorios. Las ventajas de la sincronización de directorios para su organización incluyen:
 
 - Reducción de los programas administrativos de la organización
 - Habilitar opcionalmente un escenario de inicio de sesión único
 - Automatizar los cambios de cuenta en Microsoft 365
 
-Para obtener más información acerca de las ventajas de usar la sincronización de directorios, vea identidad híbrida con Azure Active Directory [(Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) e identidad híbrida [para Microsoft 365](plan-for-directory-synchronization.md).
+Para obtener más información acerca de las ventajas de usar la sincronización de directorios, vea [hybrid identity with Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 Sin embargo, la sincronización de directorios requiere planeación y preparación para garantizar que los Servicios de dominio de Active Directory (AD DS) se sincronicen con el inquilino Azure AD de la suscripción Microsoft 365 con un mínimo de errores.
 
@@ -51,6 +46,50 @@ Siga estos pasos para obtener los mejores resultados.
 
 > [!NOTE]
 > Los caracteres que no son ASCII no se sincronizan para ningún atributo en la cuenta de usuario de AD DS.
+
+## <a name="ad-ds-preparation"></a>Preparación de AD DS
+
+Para garantizar una transición sin problemas a Microsoft 365 mediante la sincronización, debe preparar el bosque de AD DS antes de comenzar la implementación Microsoft 365 sincronización de directorios.
+  
+La preparación del directorio debe centrarse en las siguientes tareas:
+
+- Quite los **atributos proxyAddress y** **userPrincipalName duplicados** .
+- Actualice los atributos **userPrincipalName** en blanco y no válidos con atributos **userPrincipalName** válidos.
+- Quite caracteres no válidos y cuestionables en los atributos **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname** y **userPrincipalName** . Para obtener más información acerca de la preparación de atributos, consulte [Lista de atributos sincronizados por la Azure Active Directory sync tool](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+
+    > [!NOTE]
+    > Estos son los mismos atributos que Azure AD Conectar sincroniza. 
+  
+## <a name="multi-forest-deployment-considerations"></a>Consideraciones de implementación de varios bosques
+
+Para varios bosques y opciones de SSO, use [una instalación personalizada de Azure AD Conectar](/azure/active-directory/hybrid/how-to-connect-install-custom).
+  
+Si su organización tiene varios bosques para la autenticación (bosques de inicio de sesión), se recomienda encarecidamente lo siguiente:
+  
+- **Considere la posibilidad de consolidar los bosques.** En general, hay más sobrecarga necesaria para mantener varios bosques. A menos que su organización tenga restricciones de seguridad que dicten la necesidad de bosques independientes, considere la posibilidad de simplificar el entorno local.
+- **Solo se usa en el bosque de inicio de sesión principal.** Considere la posibilidad de Microsoft 365 solo en el bosque de inicio de sesión principal para el lanzamiento inicial de Microsoft 365. 
+
+Si no puedes consolidar la implementación de AD DS de varios bosques o estás usando otros servicios de directorio para administrar identidades, es posible que puedas sincronizarlas con la ayuda de Microsoft o un partner.
+  
+Vea [Topologías para obtener Azure AD Conectar](/azure/active-directory/hybrid/plan-connect-topologies) para obtener más información.
+  
+## <a name="features-that-are-dependent-on-directory-synchronization"></a>Características que dependen de la sincronización de directorios
+  
+La sincronización de directorios es necesaria para las siguientes características y funcionalidades:
+  
+- Azure AD seamless single Sign-On (SSO)
+- Skype coexistencia
+- Exchange implementación híbrida, incluida:
+  - Lista global de direcciones (GAL) totalmente compartida entre el entorno Exchange local y Microsoft 365.
+  - Sincronización de información de GAL desde varios sistemas de correo.
+  - La capacidad de agregar usuarios a y quitar usuarios de Microsoft 365 ofertas de servicio. Esto requiere lo siguiente:
+  - La sincronización bidireccional debe configurarse durante la instalación de sincronización de directorios. De forma predeterminada, las herramientas de sincronización de directorios escriben información de directorio solo en la nube. Al configurar la sincronización bidireccional, se habilita la funcionalidad de reescribición para que un número limitado de atributos de objeto se copien de la nube y, a continuación, se vuelvan a escribir en su AD DS local. La reescribición también se conoce como Exchange modo híbrido. 
+  - Una implementación híbrida Exchange local
+  - La capacidad de mover algunos buzones de usuario a Microsoft 365 mientras se mantienen otros buzones de usuario locales.
+  - Caja fuerte remitentes y remitentes bloqueados localmente se replican en Microsoft 365.
+  - Función de delegación básica y envío en nombre de otra persona.
+  - Tiene una tarjeta inteligente local integrada o una solución de autenticación multifactor.
+- Sincronización de fotos, miniaturas, salas de conferencia y grupos de seguridad
 
 ## <a name="1-directory-cleanup-tasks"></a>1. Tareas de limpieza de directorios
 
@@ -61,11 +100,11 @@ Antes de sincronizar tu AD DS con tu Azure AD inquilino, debes limpiar tu AD DS.
 
 En AD DS, complete las siguientes tareas de limpieza para cada cuenta de usuario a la que se le asignará una Microsoft 365 licencia:
 
-1. Asegúrese de que una dirección de correo electrónico válida y única en el **atributo proxyAddresses.**
+1. Asegúrese de que una dirección de correo electrónico válida y única en el **atributo proxyAddresses** .
 
-2. Quite los valores duplicados del **atributo proxyAddresses.**
+2. Quite los valores duplicados del **atributo proxyAddresses** .
 
-3. Si es posible, asegúrese de que el atributo **userPrincipalName** es válido y único en el objeto **de usuario del** usuario. Para obtener la mejor experiencia de sincronización, asegúrese de que el UPN de AD DS coincide con Azure AD UPN. Si un usuario no tiene un valor para el atributo **userPrincipalName,** el objeto **user** debe contener un valor válido y único para el atributo **sAMAccountName.** Quite los valores duplicados del **atributo userPrincipalName.**
+3. Si es posible, asegúrese de que el atributo **userPrincipalName** es válido y único en el objeto **de usuario del** usuario. Para obtener la mejor experiencia de sincronización, asegúrese de que el UPN de AD DS coincide con Azure AD UPN. Si un usuario no tiene un valor para el atributo **userPrincipalName** , el objeto **user** debe contener un valor válido y único para el atributo **sAMAccountName** . Quite los valores duplicados del **atributo userPrincipalName** .
 
 4. Para un uso óptimo de la lista global de direcciones (GAL), asegúrese de que la información de los siguientes atributos de la cuenta de usuario de AD DS sea correcta:
 
@@ -116,7 +155,7 @@ Los atributos que necesita preparar se enumeran aquí:
   - El valor del atributo debe ser único en el directorio.
 
     > [!NOTE]
-    > Los caracteres de subrayado ("_") en el nombre sincronizado indican que el valor original de este atributo contiene caracteres no válidos. Para obtener más información sobre este atributo, [vea Exchange alias .](/powershell/module/exchange/set-mailbox)
+    > Los caracteres de subrayado ("_") en el nombre sincronizado indican que el valor original de este atributo contiene caracteres no válidos. Para obtener más información sobre este atributo, [vea Exchange alias.](/powershell/module/exchange/set-mailbox)
     >
 
 - **proxyAddresses**
@@ -147,7 +186,7 @@ Los atributos que necesita preparar se enumeran aquí:
 
 - **targetAddress**
 
-    Es necesario que el atributo **targetAddress** (por ejemplo, SMTP:tom@contoso.com) que se rellena para el usuario debe aparecer en la GAL Microsoft 365. En escenarios de migración de mensajería de terceros, esto requeriría la Microsoft 365 de esquema para AD DS. La Microsoft 365 de esquema también agregaría otros atributos útiles para administrar Microsoft 365 objetos que se rellenan mediante una herramienta de sincronización de directorios de AD DS. Por ejemplo, se agregaría **el atributo msExchHideFromAddressLists** para administrar buzones o grupos de distribución ocultos.
+    Es necesario que el atributo **targetAddress** (por ejemplo, SMTP:tom@contoso.com) que se rellena para el usuario debe aparecer en la GAL Microsoft 365. En escenarios de migración de mensajería de terceros, esto requeriría la Microsoft 365 de esquema para AD DS. La Microsoft 365 de esquema también agregaría otros atributos útiles para administrar Microsoft 365 objetos que se rellenan mediante una herramienta de sincronización de directorios de AD DS. Por ejemplo, se agregaría **el atributo msExchHideFromAddressLists para administrar buzones** o grupos de distribución ocultos.
 
   - Número máximo de caracteres: 256
   - El valor del atributo no debe contener un espacio.
@@ -157,16 +196,16 @@ Los atributos que necesita preparar se enumeran aquí:
 
 - **userPrincipalName**
 
-  - El **atributo userPrincipalName** debe tener el formato de inicio de sesión de estilo de Internet donde el nombre de usuario va seguido del signo de at (@) y un nombre de dominio: por ejemplo, user@contoso.com. Todas las direcciones del Protocolo simple de transporte de correo (SMTP) deben cumplir con los estándares de mensajería de correo electrónico.
+  - El **atributo userPrincipalName** debe tener el formato de inicio de sesión de estilo de Internet donde el nombre de usuario va seguido del signo at (@) y un nombre de dominio: por ejemplo, user@contoso.com. Todas las direcciones del Protocolo simple de transporte de correo (SMTP) deben cumplir con los estándares de mensajería de correo electrónico.
   - El número máximo de caracteres para el **atributo userPrincipalName** es 113. Se permite un número específico de caracteres antes y después del signo at (@), como se muestra a continuación:
   - Número máximo de caracteres para el nombre de usuario que está delante del signo at (@): 64
   - Número máximo de caracteres para el nombre de dominio después del signo at (@): 48
   - Caracteres no válidos: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] "
   - Caracteres permitidos: A – Z, a - z, 0 – 9, ' . - _ ! # ^ ~
   - Las letras con marcas diacríticos, como umlauts, acentos y tildes, son caracteres no válidos.
-  - El carácter @ es necesario en cada **valor userPrincipalName.**
+  - El carácter @ es necesario en cada **valor userPrincipalName** .
   - El carácter @ no puede ser el primer carácter de cada valor **userPrincipalName**.
-  - El nombre de usuario no puede terminar con un punto (.), una yand ( ), un &amp; espacio o un signo at (@).
+  - El nombre de usuario no puede terminar con un punto (.), una yand (&amp;), un espacio o un signo at (@).
   - El nombre de usuario no puede contener espacios.
   - Se deben usar dominios enrutables; por ejemplo, no se pueden usar dominios locales o internos.
   - Unicode se convierte a guiones bajos.
@@ -188,10 +227,10 @@ Para obtener más información sobre cómo agregar un sufijo UPN alternativo a A
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Hacer coincidir el UPN de AD DS Microsoft 365 UPN
 
-Si ya ha configurado la sincronización de directorios, es posible que el UPN del usuario para Microsoft 365 no coincida con el UPN de AD DS definido en su AD DS. Esto puede suceder cuando se ha asignado una licencia a un usuario antes de que se comprobara el dominio. Para corregir esto, use PowerShell para corregir UPN duplicado para actualizar el [UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730) del usuario para asegurarse de que el UPN de Microsoft 365 coincide con el nombre de usuario y el dominio corporativos. Si está actualizando el UPN en AD DS y desea que se sincronice con la identidad de Azure Active Directory, debe quitar la licencia del usuario en Microsoft 365 antes de realizar los cambios en AD DS.
+Si ya ha configurado la sincronización de directorios, es posible que el UPN del usuario para Microsoft 365 no coincida con el UPN de AD DS definido en su AD DS. Esto puede suceder cuando se ha asignado una licencia a un usuario antes de que se comprobara el dominio. Para solucionar esto, use [PowerShell para corregir upn](https://go.microsoft.com/fwlink/p/?LinkId=396730) duplicado para actualizar el UPN del usuario para asegurarse de que el UPN de Microsoft 365 coincide con el nombre de usuario corporativo y el dominio. Si está actualizando el UPN en AD DS y desea que se sincronice con la identidad de Azure Active Directory, debe quitar la licencia del usuario en Microsoft 365 antes de realizar los cambios en AD DS.
 
-Vea también [How to prepare a non-routable domain (such as .local domain) for directory synchronization](prepare-a-non-routable-domain-for-directory-synchronization.md).
+Vea también [Cómo preparar un dominio no enrutable (por ejemplo, dominio .local) para la sincronización de directorios](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-## <a name="next-steps"></a>Próximos pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Si ha realizado los pasos 1 a 5 anteriores, vea [Configurar la sincronización de directorios](set-up-directory-synchronization.md).
+Después de realizar del 1 al 5 anterior, consulte [Configurar la sincronización de directorios](set-up-directory-synchronization.md).

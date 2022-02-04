@@ -17,6 +17,6 @@
     - name: Conectar el dominio a Microsoft 365
       href: connect-domain-tom365.md
     - name: Usar el Administrador de migración para mover los datos de todos los usuarios
-      href: 'https://docs.microsoft.com/sharepointmigration/mm-google-overview'
+      href: migrate-files-migration-manager.md
     - name: Cancelar Google Workspace
       href: cancel-google.md

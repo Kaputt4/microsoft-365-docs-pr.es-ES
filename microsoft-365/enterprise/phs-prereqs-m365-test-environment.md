@@ -2,7 +2,7 @@
 title: Requisitos previos de acceso de dispositivos e identidades para la sincronización de hash de contraseña en su entorno de prueba de Microsoft 365
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,22 +10,17 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-subscription-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: Crear un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos para la autenticación de sincronización de hash de contraseña.
-ms.openlocfilehash: befdcecf2df21afdf48edff0b5b7dcbc532a6278
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208786"
 ---
+
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades para la sincronización de hash de contraseña en su entorno de prueba de Microsoft 365
 
 *Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
 
-[Las configuraciones de](../security/office-365-security/microsoft-365-policies-configurations.md) acceso de identidad y dispositivo son un conjunto de configuraciones y directivas de acceso condicional para proteger el acceso a todos los servicios de Microsoft 365 para empresas que están integrados con Azure Active Directory (Azure AD).
+[Las configuraciones de acceso a dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) y identidades son un conjunto de configuraciones y directivas de acceso condicional para proteger el acceso a todos los servicios de Microsoft 365 para empresas que están integrados con Azure Active Directory (Azure AD).
 
 En este artículo se describe cómo configurar un entorno de prueba Microsoft 365 que cumpla los requisitos del híbrido con la configuración de requisitos previos de autenticación de sincronización [de hash](../security/office-365-security/identity-access-prerequisites.md#prerequisites) de contraseña para el acceso a dispositivos y identidades.
 
@@ -38,13 +33,13 @@ Hay diez fases para configurar este entorno de prueba:
 5. Configurar el autoservicio de restablecimiento de contraseñas para todas las cuentas de usuario.
 6. Configurar la autenticación multifactor para todas las cuentas de usuario.
 7. Habilitar el registro automático de dispositivos de equipos unidos Windows dominio
-8. Configurar la protección con contraseña de Azure AD 
+8. Configurar Azure AD contraseña 
 9. Habilitar Azure AD Identity Protection
 10. Habilitar la autenticación moderna para Exchange Online y Skype Empresarial Online
 
 ## <a name="phase-1-build-out-your-simulated-enterprise-with-password-hash-sync-microsoft-365-test-environment"></a>Fase 1: Crear una empresa simulada con la sincronización de hash de contraseñas en el entorno de prueba de Microsoft 365
 
-Siga las instrucciones de la Guía del laboratorio de [pruebas](password-hash-sync-m365-ent-test-environment.md) de sincronización de hash de contraseña.
+Siga las instrucciones de [la Guía del laboratorio de pruebas de sincronización de hash](password-hash-sync-m365-ent-test-environment.md) de contraseña.
 Esta es la configuración resultante.
 
 ![La empresa simulada con el entorno de prueba de sincronización de hash de contraseña.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
@@ -91,11 +86,11 @@ Pruebe la autenticación multifactor solo para la cuenta Usuario 2.
 
 Siga [estas instrucciones para](/azure/active-directory/devices/hybrid-azuread-join-plan) habilitar el registro automático de dispositivos de equipos unidos Windows dominio.
 
-## <a name="phase-8-configure-azure-ad-password-protection"></a>Fase 8: Configurar la protección con contraseña de Azure AD 
+## <a name="phase-8-configure-azure-ad-password-protection"></a>Fase 8: Configurar la Azure AD de contraseña 
 
 Siga [estas instrucciones para](/azure/active-directory/authentication/concept-password-ban-bad) bloquear las contraseñas débiles conocidas y sus variantes.
 
-## <a name="phase-9-enable-azure-ad-identity-protection"></a>Fase 9: Habilitar Azure AD Identity Protection
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>Fase 9: Habilitar la protección Azure AD identidad
 
 Siga las instrucciones en la [Guía de laboratorio de pruebas, fase 2 de Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
@@ -129,10 +124,10 @@ Use [Directivas comunes de acceso a dispositivos e identidades](../security/offi
 
 [Guías de laboratorio de pruebas de identidad adicionales](m365-enterprise-test-lab-guides.md#identity)
 
-[Guía básica de identidad](identity-roadmap-microsoft-365.md)
+[Implementar identidad](deploy-identity-solution-overview.md)
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

@@ -1,7 +1,7 @@
 ---
 title: Configurar Microsoft Defender para la implementación de puntos de conexión
 description: Obtenga información sobre cómo configurar la implementación de Microsoft Defender para endpoint
-keywords: implementación, configuración, validación de licencias, configuración de inquilino, configuración de red
+keywords: 'implementación, configuración, validación de licencias, configuración de inquilino, configuración de red'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,19 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4e58cf272688a238a428fb6b15aed568b7fa51a4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322064"
 ---
+
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -82,6 +77,9 @@ Para obtener acceso a las licencias que se aprovisionan a su empresa y comprobar
 La incorporación a Microsoft Defender para Endpoint es fácil. En el menú de navegación, seleccione cualquier elemento en la sección Puntos de conexión o cualquier característica de Microsoft 365 Defender como Incidentes, Búsqueda, Centro de acción o Análisis de amenazas para iniciar el proceso de incorporación.
 
 Desde un explorador web, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender web</a>.
+
+## <a name="data-center-location"></a>Ubicación del centro de datos
+Microsoft Defender para endpoint almacenará y procesará datos en la [misma ubicación que usa Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). Si Microsoft 365 Defender no se ha activado aún, la incorporación a Microsoft Defender para Endpoint también activará Microsoft 365 Defender y se seleccionará automáticamente una nueva ubicación del centro de datos en función de la ubicación de los servicios de seguridad de Microsoft 365 activos. La ubicación del centro de datos seleccionada se muestra en la pantalla.
 
 ## <a name="network-configuration"></a>Configuración de red
 

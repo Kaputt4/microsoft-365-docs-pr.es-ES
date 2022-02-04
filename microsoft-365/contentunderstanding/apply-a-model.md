@@ -7,19 +7,14 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar un modelo publicado a una SharePoint de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: a761fc7d0474f8324d6bae9303fb97371672ab01
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993448"
 ---
+
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 
 </br>
@@ -38,7 +33,7 @@ Después de publicar el modelo de comprensión de documentos, puede aplicarlo a 
 
 Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
-1. En la página principal del modelo, en el icono Aplicar modelo a **bibliotecas,** seleccione **Aplicar modelo**. O bien, en la sección Dónde se aplica **el modelo,** seleccione **+Agregar biblioteca**.
+1. En la página principal del modelo, en el icono **Aplicar modelo a bibliotecas** , seleccione **Aplicar modelo**. O bien, en la **sección Dónde se aplica el modelo** , seleccione **+Agregar biblioteca**.
 
     ![Captura de pantalla de la sección Donde se aplica el modelo con la opción Agregar biblioteca resaltada.](../media/content-understanding/apply-to-library.png)
 
@@ -53,17 +48,17 @@ Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
     ![Seleccione una biblioteca de documentos.](../media/content-understanding/select-doc-library.png)
 
-4. Dado que el modelo está asociado a un tipo de contenido, al aplicarlo a la biblioteca, agregará el tipo de contenido y su vista con las etiquetas extraídas que se muestran como columnas. De forma predeterminada, esta vista es la vista predeterminada de la biblioteca. Sin embargo, si lo desea, puede optar por  no ser la vista predeterminada seleccionando Configuración avanzada y desactivando la casilla Establecer esta nueva vista **como predeterminada.**
+4. Dado que el modelo está asociado a un tipo de contenido, al aplicarlo a la biblioteca, agregará el tipo de contenido y su vista con las etiquetas extraídas que se muestran como columnas. De forma predeterminada, esta vista es la vista predeterminada de la biblioteca. Sin embargo, si lo desea, puede optar por no ser la vista predeterminada seleccionando Configuración  avanzada y desactivando la casilla Establecer esta nueva vista **como predeterminada**.
 
     ![Vista Biblioteca.](../media/content-understanding/library-view.png)
 
 5. Seleccione **Agregar** para aplicar el modelo a la biblioteca.
 
-6. En la página principal del modelo, en la sección **Dónde** se aplica el modelo, debería ver el nombre del sitio SharePoint lista.
+6. En la página principal del modelo, en  la sección Dónde se aplica el modelo, debería ver el nombre del sitio SharePoint lista.
 
-7. Vaya a la biblioteca de documentos y asegúrese de estar en la vista de biblioteca de documentos del modelo. Seleccione **Automatizar ver** modelos de descripción de  >  **documentos.**
+7. Vaya a la biblioteca de documentos y asegúrese de estar en la vista de biblioteca de documentos del modelo. Seleccione **AutomatizarVer** >  **modelos de comprensión de documentos**.
 
-8. En la **página Revisar modelos y** aplicar  nuevos, seleccione la pestaña Aplicado para ver los modelos que se aplican a la biblioteca de documentos.
+8. En la **página Revisar modelos y aplicar** nuevos, seleccione la pestaña Aplicado  para ver los modelos que se aplican a la biblioteca de documentos.
 
     ![Captura de pantalla que muestra la pestaña Aplicada seleccionada y los modelos aplicados.](../media/content-understanding/applied-models.png) 
 
@@ -72,6 +67,9 @@ Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 Después de aplicar el modelo a la biblioteca de documentos, puede iniciar la carga de documentos en el sitio y ver los resultados.
 
 El modelo identifica los archivos y carpetas con el tipo de contenido asociado del modelo y los enumera en la vista. Si el modelo tiene extractores, la vista muestra las columnas de los datos que va a extraer de cada archivo o carpeta.
+
+> [!NOTE]
+> Si se aplican dos o más modelos de comprensión de documentos a la misma biblioteca, el archivo cargado se clasifica con el modelo que tiene la puntuación de confianza media más alta. Las entidades extraídas solo serán del modelo aplicado. <br><br>Si se aplican un modelo de procesamiento de formularios personalizado y un modelo de comprensión de documentos a la misma biblioteca, el archivo se clasifica mediante el modelo de comprensión de documentos y los extractores capacitados para ese modelo. Si hay columnas vacías que coincidan con el modelo de procesamiento de formularios, las columnas se rellenarán con esos valores extraídos.
 
 ## <a name="sync-changes-to-one-or-more-libraries"></a>Sincronizar cambios en una o varias bibliotecas
 
@@ -108,23 +106,23 @@ Aunque un modelo aplicado procesa todos los archivos y el contenido de carpetas 
 
 ### <a name="classification-date-field"></a>Campo Fecha de clasificación
 
-Cuando se SharePoint Syntex un modelo de comprensión de documentos (o un  modelo de procesamiento de formularios) a una biblioteca de documentos, el campo Fecha de clasificación se incluye en el esquema de biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
+Cuando se SharePoint Syntex un modelo de comprensión de documentos (o un modelo de procesamiento de formularios) a una biblioteca de  documentos, el campo Fecha de clasificación se incluye en el esquema de biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
 
    ![Captura de pantalla de una biblioteca de documentos que muestra la columna Fecha de clasificación.](../media/content-understanding/class-date-column.png) 
 
-El campo Fecha de [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) clasificación lo usa el desencadenador Cuando un modelo de descripción de contenido clasifica un archivo para ejecutar un  flujo de Power Automate después de que un modelo haya terminado de procesar el contenido de un archivo o carpeta y haya actualizado el campo Fecha de clasificación. 
+El campo Fecha de clasificación lo usa el [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) desencadenador Cuando un modelo de descripción de contenido clasifica un archivo para ejecutar un flujo de Power Automate después de que un modelo haya terminado de procesar el contenido de un archivo o carpeta y haya actualizado  el campo Fecha de clasificación.
 
    ![Flow desencadenador.](../media/content-understanding/trigger.png)
 
 El **desencadenador When a file is classified by a content understanding model** can then be used to start a flow using any extracted information from the file or folder.
 
-Por ejemplo, cuando un modelo se marca con la fecha de **clasificación,** puede usar el proceso Enviar un correo electrónico después de **que SharePoint Syntex** procese un flujo de archivos para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
+Por ejemplo, cuando un modelo se marca con la fecha de **clasificación, puede** usar el proceso Enviar un correo electrónico después de **SharePoint Syntex** para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
 
 Para ejecutar el flujo:
 
-1. Seleccione un archivo y, a continuación,   >  **seleccione Integrar Power Automate** Crear un  >  **flujo**.
+1. Seleccione un archivo y, a continuación, **seleccione Integrar** >  **Power Automate** >  **Crear un flujo**.
 
-2. En el **panel Crear un flujo,** seleccione Enviar un correo **electrónico después de SharePoint Syntex procesa un archivo**.
+2. En el **panel Crear un flujo**, seleccione **Enviar un correo electrónico después SharePoint Syntex procesos de un archivo**.
 
     ![Captura de pantalla que muestra la opción Crear un panel de flujo y flujo resaltadas.](../media/content-understanding/integrate-create-flow.png) 
 

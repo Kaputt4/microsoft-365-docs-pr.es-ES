@@ -1,7 +1,7 @@
 ---
 title: Implementar Microsoft Defender para endpoint en características de iOS
 description: Describe cómo implementar Microsoft Defender para Endpoint en dispositivos iOS no inscritos.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, ios, configure, features, ios
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, ios, configure, features, ios'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,16 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+  - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e50139b1ef17871762e12ccd4aec1e90071033b
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218159"
 ---
+
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Implementar Microsoft Defender para endpoint en dispositivos iOS no inscritos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -38,13 +33,13 @@ ms.locfileid: "61218159"
 
 ## <a name="configure-microsoft-defender-for-endpoint-risk-signals-in-app-protection-policy-mam"></a>Configurar Microsoft Defender para señales de riesgo de extremo en la directiva de protección de aplicaciones (MAM)
 
-Microsoft Defender para Endpoint en Android, que ya protege a los usuarios empresariales en escenarios de administración de dispositivos móviles (MDM), ahora amplía la compatibilidad con Mobile App Management (MAM), para dispositivos que no están inscritos con la administración de dispositivos móviles (MDM) de Intune. También amplía esta compatibilidad a los clientes que usan otras soluciones de administración de movilidad empresarial, mientras que sigue usando Intune para la administración de aplicaciones móviles (MAM). Esta funcionalidad le permite administrar y proteger los datos de su organización dentro de una aplicación.
+Microsoft Defender para Endpoint en iOS, que ya protege a los usuarios empresariales en escenarios de administración de dispositivos móviles (MDM), ahora amplía la compatibilidad con Mobile App Management (MAM), para dispositivos que no están inscritos con la administración de dispositivos móviles (MDM) de Intune. También amplía esta compatibilidad a los clientes que usan otras soluciones de administración de movilidad empresarial, mientras que sigue usando Intune para la administración de aplicaciones móviles (MAM). Esta funcionalidad le permite administrar y proteger los datos de su organización dentro de una aplicación.
 
-Las directivas de Protección de aplicaciones de Intune aprovechan la información de las amenazas de Microsoft Defender para Endpoint en Android para proteger estas aplicaciones. Las directivas de protección de aplicaciones (APP) que garantizan los datos de la organización siguen siendo seguras o se encuentran en una aplicación administrada. Una aplicación administrada tiene directivas de protección de aplicaciones aplicadas a ella y Intune puede administrarla.  
+Las directivas de Protección de aplicaciones de Intune aprovechan la información de amenazas de Microsoft Defender para endpoint en iOS para proteger estas aplicaciones. Las directivas de protección de aplicaciones (APP) que garantizan los datos de la organización siguen siendo seguras o se encuentran en una aplicación administrada. Una aplicación administrada tiene directivas de protección de aplicaciones aplicadas a ella y Intune puede administrarla.  
 
-Microsoft Defender para Endpoint en Android admite ambas configuraciones de MAM
-- **MDM y MAM** de Intune: los administradores de TI solo pueden administrar aplicaciones con directivas de protección de aplicaciones en dispositivos inscritos con la administración de dispositivos móviles (MDM) de Intune.
-- **MAM sin inscripción de dispositivos:** MAM sin inscripción de dispositivos, [](/mem/intune/app/app-protection-policy) o MAM-WE, permite a los administradores de TI administrar aplicaciones mediante directivas de protección de aplicaciones en dispositivos que no están inscritos con MDM de Intune. Esto significa que las aplicaciones pueden administrarse mediante Intune en dispositivos inscritos con proveedores de EMM de terceros. Para administrar las aplicaciones que usan en ambas configuraciones anteriores, los clientes deben usar Intune en el [centro de administración Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431)
+Microsoft Defender para endpoint en iOS admite ambas configuraciones de MAM
+- **MDM de Intune + MAM**: los administradores de TI solo pueden administrar aplicaciones con directivas de Protección de aplicaciones en dispositivos inscritos con la administración de dispositivos móviles (MDM) de Intune.
+- **MAM sin inscripción de** dispositivos: MAM sin inscripción de dispositivos, o MAM-WE, permite a los administradores de TI administrar aplicaciones mediante directivas de protección de aplicaciones en dispositivos que no están inscritos con MDM de Intune.[](/mem/intune/app/app-protection-policy) Esto significa que las aplicaciones pueden administrarse mediante Intune en dispositivos inscritos con proveedores de EMM de terceros. Para administrar las aplicaciones que usan en ambas configuraciones anteriores, los clientes deben usar Intune en el [Centro de administración Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431)
 
 Para habilitar esta funcionalidad, un administrador debe configurar la conexión entre Microsoft Defender para Endpoint e Intune, crear la directiva de protección de aplicaciones y aplicar la directiva en dispositivos y aplicaciones de destino. 
  
@@ -52,11 +47,11 @@ Los usuarios finales también deben tomar medidas para instalar Microsoft Defend
 
 ### <a name="pre-requisites"></a>Requisitos previos
 
-1. **Compruebe que el conector está habilitado.** <br> En la [consola de seguridad unificada,](https://security.microsoft.com)vaya **a Configuración**  >  **Endpoints**  >  **Advanced Features** y asegúrese de que Microsoft Intune **conexión** está habilitada.
+1. **Compruebe que el conector está habilitado**. <br> En la [consola de seguridad unificada](https://security.microsoft.com), vaya **a Configuración** >  **EndpointsAdvanced** >  **Features** y asegúrese de que **Microsoft Intune conexión** está habilitada.
 
   ![Imagen de Defender para endpoint -Intune connector](images/enable-intune-connection.png)
   
-2. **Compruebe que el conector está habilitado en el portal de Intune**. <br> En [el Centro de administración de Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Endpoint **Security** Microsoft Defender para Endpoint y asegúrese de que el estado de conexión está  >   habilitado.
+2. **Compruebe que el conector está habilitado en el portal de Intune**. <br> En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Endpoint SecurityMicrosoft** >  **Defender para Endpoint** y asegúrese de que el estado de conexión está habilitado.
 
   ![Configuración de la aplicación](images/app-settings.png)
 
@@ -76,14 +71,14 @@ Las directivas de protección de aplicaciones (APP) que garantizan los datos de 
 Debido a que la administración de aplicaciones móviles no requiere la administración de dispositivos, puede proteger los datos de la empresa en dispositivos administrados y no administrados. La administración se centra en la identidad del usuario, lo que elimina la necesidad de administrar dispositivos. Las empresas pueden usar directivas de protección de aplicaciones con o sin MDM al mismo tiempo. Por ejemplo, piense el caso de un empleado que utiliza tanto un teléfono proporcionado por la empresa como su propia tableta personal. El teléfono de la empresa está inscrito en MDM y protegido por directivas de protección de aplicaciones mientras que el dispositivo personal está protegido solo por directivas de protección de aplicaciones.
 
     b. Seleccionar aplicaciones<br>
-    Una aplicación administrada es aquella que tiene las directivas de protección de aplicaciones aplicadas y puede administrarse mediante Intune. Cualquier aplicación que se haya integrado con [el SDK](/mem/intune/developer/app-sdk) de Intune o que se haya ajustado mediante el App Wrapping Tool [Intune](/mem/intune/developer/apps-prepare-mobile-application-management) se puede administrar mediante directivas de protección de aplicaciones de Intune. Consulte la lista oficial de [aplicaciones protegidas de Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) que se han creado con estas herramientas y están disponibles para uso público.
+    Una aplicación administrada es aquella que tiene las directivas de protección de aplicaciones aplicadas y puede ser administrada por Intune. Cualquier aplicación que se haya integrado con [el SDK de Intune](/mem/intune/developer/app-sdk) o que se haya ajustado mediante el App Wrapping Tool [Intune](/mem/intune/developer/apps-prepare-mobile-application-management) se puede administrar mediante directivas de protección de aplicaciones de Intune. Consulte la lista oficial de [aplicaciones protegidas de Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps) que se han creado con estas herramientas y están disponibles para uso público.
 
     *Ejemplo: Outlook como una aplicación administrada*
 
     ![Imagen Outlook como aplicación administrada](images/managed-app.png)
 
  3. Establezca los requisitos de seguridad de inicio de sesión para la directiva de protección. <br>
-Selecciona **Establecer > nivel máximo** de amenaza de dispositivo permitido en Condiciones del **dispositivo** y escribe un valor. A **continuación, seleccione Acción: "Bloquear acceso".** Microsoft Defender para Endpoint en Android comparte este nivel de amenaza de dispositivo.
+Selecciona **Establecer > nivel máximo de amenaza de dispositivo permitido** en **Condiciones del dispositivo** y escribe un valor. A  **continuación, seleccione Acción: "Bloquear acceso"**. Microsoft Defender para endpoint en iOS comparte este nivel de amenaza de dispositivo.
 
     ![Imagen del inicio condicional](images/conditional-launch.png)
 
@@ -91,7 +86,7 @@ Selecciona **Establecer > nivel máximo** de amenaza de dispositivo permitido en
   Seleccione **Grupos incluidos**. A continuación, agregue los grupos relevantes. 
 
 
-Para obtener más información sobre mam o directiva de protección de aplicaciones, consulta configuración de la directiva de protección [de aplicaciones de iOS](/mem/intune/apps/app-protection-policy-settings-ios).
+Para obtener más información sobre mam o directiva de protección de aplicaciones, consulta [configuración de la directiva de protección de aplicaciones de iOS](/mem/intune/apps/app-protection-policy-settings-ios).
 
 ## <a name="deploy-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Implementar Microsoft Defender para endpoint para MAM o en dispositivos no inscritos
 

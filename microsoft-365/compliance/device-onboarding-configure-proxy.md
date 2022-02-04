@@ -1,31 +1,26 @@
 ---
 title: Configurar el proxy del dispositivo y la conexión a Internet para Information Protection
 f1.keywords:
-- CSH
+  - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
-- ms.o365.cc.DLPLandingPage
+  - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-mip
-- m365initiative-compliance
+  - M365-security-compliance
+  - m365solution-mip
+  - m365initiative-compliance
 search.appverid:
-- MET150
+  - MET150
 description: Configurar el proxy del dispositivo y la conexión a Internet para Information Protection
-ms.openlocfilehash: 645bb3eca60e37db817f810992fd5022399e1249
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950925"
 ---
+
 # <a name="configure-device-proxy-and-internet-connection-settings-for-information-protection"></a>Configurar el proxy del dispositivo y la conexión a Internet para Information Protection
 
 Las tecnologías de Microsoft Endpoint utilizan Microsoft Windows HTTP (WinHTTP) para notificar datos y comunicarse con el servicio en la nube de Microsoft Endpoint. El servicio incrustado se ejecuta en el contexto del sistema mediante la cuenta LocalSystem.
@@ -137,7 +132,7 @@ Pero si los resultados de la comprobación de conectividad indican un error, se 
 
 > [!NOTE]
 >
-> [ La herramienta Analizador de conectividad no es compatible con la regla ASR ](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)Bloquear las creaciones de procesos procedentes de comandos PSExec y WMI. Tendrá que deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad.
+> La herramienta Analizador de conectividad no es compatible con la regla de reducción de la superficie expuesta a ataques [Bloquear las creaciones de procesos procedentes de comandos PSExec y WMI](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-process-creations-originating-from-psexec-and-wmi-commands). Tendrá que deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad.
 >
 > Cuando se configura TelemetryProxyServer, en el Registro o mediante la Política de grupo, Defender for Endpoint recurrirá a la función directa si no puede acceder al proxy definido. Temas relacionados:
 >

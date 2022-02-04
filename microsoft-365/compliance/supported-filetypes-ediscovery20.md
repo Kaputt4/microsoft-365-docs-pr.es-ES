@@ -1,28 +1,23 @@
 ---
 title: Tipos de archivo admitidos en Advanced eDiscovery
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
-description: Una lista de tipos de archivo admitidos en Microsoft 365 Advanced eDiscovery, incluidos los tipos de archivo de imagen admitidos por la funcionalidad OCR en Advanced eDiscovery.
+  - MOE150
+  - MET150
+description: 'Una lista de tipos de archivo admitidos en Microsoft 365 Advanced eDiscovery, incluidos los tipos de archivo de imagen admitidos por la funcionalidad OCR en Advanced eDiscovery.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7462048816f8c5962453422506116e6e88d8a54c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938605"
 ---
+
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de archivo admitidos en Advanced eDiscovery
 
 Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes. Los tipos de archivos de soporte técnico se describen en las tablas siguientes de este artículo. Esta lista no se ha finalizado y agregaremos nuevos tipos de archivo a medida que continuamos las pruebas de validación. Estas tablas indican si se admite un tipo de archivo para la extracción de texto (y reconocimiento óptico de caracteres o extracción de texto OCR para archivos de imagen), que se puede ver en el visor nativo y también se admite en el visor anotado de Advanced eDiscovery.
@@ -239,7 +234,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 |application/vnd.oasis.opendocument.text|Sí|Sí|Sí|Sí|Sí|.odt|
 |
 
-## <a name="other"></a>Other
+## <a name="other"></a>Otro
 
 <br>
 
@@ -248,6 +243,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 |Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/json|Sí|Sí|Sí|Sí|Sí|No aplicable|
+|application/octet-stream|Sí|No|No|No|No|.fluid|
 |application/vnd.ms-graph|Sí|Sí|No|No|No||
 |application/winhlp|Sí|Sí|No|No|No|.hlp|
 |application/x-tnef|Sí|Sí|No|No|No||

@@ -166,6 +166,16 @@
                   href: investigate-incidents.md
                 - name: Alertas
                   href: investigate-alerts.md
+                - name: Cuadernos de estrategias de calificación de alertas
+                  items:
+                    - name: Información general
+                      href: alert-grading-playbooks.md
+                    - name: Reenvío de correo electrónico sospechoso
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: Reglas del reenvío sospechoso desde la bandeja de entrada
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: Reglas sospechosas de manipulación de la bandeja de entrada
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                 - name: Usuarios
                   href: investigate-users.md
             - name: Cuadernos de estrategias de respuesta a incidentes

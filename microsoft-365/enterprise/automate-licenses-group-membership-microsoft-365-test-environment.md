@@ -1,7 +1,7 @@
 ---
 title: Automatizar las licencias y la pertenencia a grupos para Microsoft 365 entorno de pruebas empresariales
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -12,16 +12,11 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
-- TLG
-- Ent_TLGs
+  - TLG
+  - Ent_TLGs
 description: Configure las licencias basadas en grupos y la pertenencia a grupos dinámicos en su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 38d41ec16812517ed7db9164a7cec49cd3f5512e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207120"
 ---
+
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatizar las licencias y la pertenencia a grupos para Microsoft 365 entorno de pruebas empresariales
 
 *Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
@@ -36,7 +31,7 @@ La configuración de licencias automáticas y la pertenencia a grupos dinámicos
 ![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a [Microsoft 365 enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Crear su Microsoft 365 entorno de prueba empresarial
 
@@ -49,40 +44,40 @@ Si desea probar las licencias automatizadas y la pertenencia a grupos en una emp
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Fase 2: Configurar y probar la pertenencia dinámica a grupos y las licencias automáticas
 
-En primer lugar, cree un nuevo grupo denominado Ventas y agregue  una regla de pertenencia a grupos dinámicos para que las cuentas de usuario con el Departamento establecido en **Ventas** se unan automáticamente al grupo Ventas.
+En primer lugar, cree un nuevo grupo denominado Ventas y agregue una regla de pertenencia a grupos dinámicos para que  las cuentas de usuario con el Departamento establecido en **Ventas** se unan automáticamente al grupo Ventas.
 
-1. En una instancia privada de su explorador de Internet, inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con la cuenta de administrador global de su Microsoft 365 E5 de laboratorio de pruebas.
-2. En una pestaña independiente del explorador, vaya a Azure Portal en [https://portal.azure.com](https://portal.azure.com) .
-3. En Azure Portal, escriba **grupos en** el cuadro de búsqueda y, a continuación, **seleccione Grupos**.
-4. en el **panel Todos los** grupos, seleccione Nuevo **grupo**.
-5. En **Tipo de grupo,** **seleccione Microsoft 365**.
+1. En una instancia privada del explorador de Internet, inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con la cuenta de administrador global de la suscripción Microsoft 365 E5 laboratorio de pruebas.
+2. En una pestaña independiente del explorador, vaya a Azure Portal en [https://portal.azure.com](https://portal.azure.com).
+3. En Azure Portal, escriba **grupos en** el cuadro de búsqueda y, a continuación, seleccione **Grupos**.
+4. en el **panel Todos los** grupos, seleccione **Nuevo grupo**.
+5. En **Tipo de grupo**, **seleccione Microsoft 365**.
 6. En **Nombre del grupo**, escriba **Ventas**.
-7. En **Tipo de pertenencia,** seleccione **Usuario dinámico**.
+7. En **Tipo de pertenencia**, seleccione **Usuario dinámico**.
 8. Seleccione **Miembros de usuario dinámicos**.
-9. En el **panel Reglas de pertenencia dinámica:** 
-   - Seleccione la **propiedad department.**
-   - Seleccione el **operador Equals.**
+9. En el **panel Reglas de pertenencia dinámica** : 
+   - Seleccione la **propiedad department** .
+   - Seleccione el **operador Equals** .
    - En el **cuadro** Valor, escriba **Ventas**.
-10. Seleccione **Guardar**.
+10. Haga clic en **Guardar**.
 11. Seleccione **Crear**.
 
 A continuación, configure el grupo Ventas para que los miembros se asignen automáticamente la Microsoft 365 E5 licencia.
 
 1. Seleccione el **grupo** Ventas y, a continuación, **licencias**.
-2. En el **panel Actualizar asignaciones de** licencias, seleccione **Microsoft 365 E5** y, a continuación, **seleccione Guardar**.
+2. En el **panel Actualizar asignaciones de** licencias, **seleccione Microsoft 365 E5** y, a continuación, **seleccione Guardar**.
 3. En el explorador, cierre la pestaña Azure Portal.
 
 A continuación, pruebe la pertenencia a grupos dinámicos y las licencias automáticas en la cuenta de usuario 4:
 
 1. En la **Microsoft Office inicio** del explorador, seleccione **Administrador**.
-2. En la **Centro de administración de Microsoft 365,** seleccione **Usuarios activos**.
-3. En la **página Usuarios activos,** seleccione la **cuenta Usuario 4.**
-4. En el **panel Usuario 4,** seleccione **Editar para** licencias **de producto.**
-5. En el **panel Licencias de productos,** deshabilite **la Microsoft 365 E5** y, a continuación, **seleccione Guardar**  >  **cerrar**.
+2. En la **Centro de administración de Microsoft 365**, seleccione **Usuarios activos**.
+3. En la **página Usuarios activos** , seleccione la **cuenta Usuario 4** .
+4. En el **panel Usuario 4** , seleccione **Editar para** **licencias de productos**.
+5. En el **panel Licencias de productos**, deshabilite **la Microsoft 365 E5** licencia y, a continuación, **seleccione SaveClose** > .
 6. En las propiedades de la cuenta de usuario 4, compruebe que no se han asignado licencias de productos y que no hay pertenencias a grupos.
-7. Para **Información de contacto,** seleccione **Editar**.
-8. En el **panel Editar información de contacto,** seleccione Información de **contacto**.
-9. En el **cuadro Departamento,** escriba **Ventas** y, a continuación, **seleccione Guardar**  >  **cerrar**.
+7. Para **Información de contacto**, seleccione **Editar**.
+8. En el **panel Editar información de contacto** , seleccione **Información de contacto**.
+9. En el **cuadro Departamento**, escriba **Ventas** y, a continuación, **seleccione GuardarClose** > .
 10. Espere unos minutos y, a continuación, seleccione periódicamente el icono **Actualizar** en la esquina superior derecha del panel cuenta usuario 4.
 
 Con el tiempo, debería ver lo siguiente:
@@ -101,10 +96,10 @@ Explorar características de [identidad](m365-enterprise-test-lab-guides.md#iden
 
 ## <a name="see-also"></a>Vea también
 
-[Guía básica de identidad](identity-roadmap-microsoft-365.md)
+[Implementar identidad](deploy-identity-solution-overview.md)
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

@@ -1,7 +1,7 @@
 ---
-title: Asegurar inicios de sesión de usuario en el espacio empresarial de Microsoft 365
+title: 'Paso 3: Proteger las cuentas de usuario de Microsoft 365'
 f1.keywords:
-- NOCSH
+  - NOCSH
 author: kelleyvice-msft
 ms.author: kvice
 manager: laurawi
@@ -11,19 +11,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- m365initiative-coredeploy
-ms.custom: ''
+  - M365-security-compliance
+  - Strat_O365_Enterprise
+  - m365initiative-coredeploy
+ms.custom: null
 description: Requerir que los usuarios inicien sesión de forma segura con la autenticación multifactor (MFA) y otras características.
-ms.openlocfilehash: 9c29bddee33ee7e06fcaf24bfff8649a12320e9c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200106"
 ---
-# <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Asegurar inicios de sesión de usuario en el espacio empresarial de Microsoft 365
+
+# <a name="step-3-protect-your-microsoft-365-user-accounts"></a>Paso 3: Proteger las cuentas de usuario de Microsoft 365
 
 Para aumentar la seguridad de los inicios de sesión de los usuarios:
 
@@ -52,17 +47,15 @@ MFA requiere que los inicios de sesión de usuario estén sujetos a una comproba
 
 ![La contraseña correcta más una comprobación adicional produce un inicio de sesión correcto.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-El primer paso en el uso de MFA es que sea ***necesario para todas las cuentas de administrador***, también conocidas como cuentas con privilegios.
+El primer paso en el uso de MFA es que sea [necesario para todas las cuentas de administrador](protect-your-global-administrator-accounts.md), también conocidas como cuentas con privilegios. Después de este primer paso, Microsoft recomienda el uso de MFA para todos los usuarios.
 
-Después de este primer paso, Microsoft recomienda el uso de MFA para todos los usuarios.
-
-Existen tres maneras para requerir que los administradores o usuarios usen MFA basándose en su plan de Microsoft 365.
+Existen tres formas de requerir que los usuarios usen MFA basándose en su plan de Microsoft 365.
 
 | Plan | Recomendación |
 |---------|---------|
 |Todos los planes de Microsoft 365 (sin licencias de Azure AD Premium P1 o P2)     |[Habilitar los valores predeterminados de seguridad en Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Los valores predeterminados de seguridad en Azure AD incluyen MFA para los usuarios y administradores.   |
-|Microsoft 365 E3 (incluye las licencias de Azure AD Premium P1)     | Use [Directivas comunes de acceso condicional](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) para configurar las directivas siguientes: <br>- [Requerir MFA para los administradores](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Requerir MFA para todos los usuarios](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquear la autenticación heredada](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (incluye las licencias de Azure AD Premium P2)     | Aprovechando la protección de identidades de Azure AD Identity Protection, empiece a implementar el [conjunto recomendado de directivas de acceso condicional y relacionadas](../security/office-365-security/identity-access-policies.md) de Microsoft creando estas dos directivas:<br> - [Exigir la autenticación multifactor (MFA) cuando el riesgo de inicio de sesión es medio o alto](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Los usuarios de riesgo alto tienen que cambiar la contraseña](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E3 (incluye las licencias de Azure AD Premium P1)     | Use las [Directivas comunes de acceso condicional](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) para configurar las directivas siguientes: <br>- [Requerir MFA para los administradores](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Requerir MFA para todos los usuarios](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquear la autenticación heredada](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (incluye las licencias de Azure AD Premium P2)     | Aprovechando la protección de identidades de Azure AD Identity Protection, comience a implementar el conjunto recomendado de directivas de acceso condicional de Microsoft y relacionadas creando estas dos directivas:<br> - [Exigir la autenticación multifactor (MFA) cuando el riesgo de inicio de sesión es medio o alto](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [Los usuarios de riesgo alto tienen que cambiar la contraseña](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
@@ -106,9 +99,9 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 | **Directivas de acceso condicional** | Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad  | Especificado por el usuario durante el registro de MFA  |
 ||||
 
-## <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
+## <a name="zero-trust-identity-and-device-access-configurations"></a>Configuraciones de identidad y acceso a dispositivos de Confianza cero
 
-Las directivas y configuraciones de acceso a dispositivos e identidades son características de requisitos previos recomendadas y sus opciones de configuración combinada con el acceso condicional, Intune y directivas de Azure AD Identity Protection. Estas determinan si se debe conceder una solicitud de acceso determinada y en qué condiciones. Esta determinación se basa en la cuenta de usuario del inicio de sesión, el dispositivo que se usa, la aplicación que el usuario usa para obtener acceso, la ubicación desde la que se realiza la solicitud de acceso y una valoración del riesgo de la solicitud. Esta funcionalidad le permite garantizar que solo los usuarios y dispositivos aprobados puedan acceder a los recursos críticos.
+Las directivas y configuraciones de acceso a dispositivos e identidades de confianza cero son las características de requisitos previos recomendadas. Estas opciones de configuración, combinadas con el acceso condicional, Intune y las directivas de Azure AD Identity Protection, determinan cuándo se debe conceder una solicitud de acceso y en qué condiciones. Esta determinación se basa en la cuenta de usuario del inicio de sesión, el dispositivo que se usa, la aplicación que el usuario usa para obtener acceso, la ubicación desde la que se realiza la solicitud de acceso y una valoración del riesgo de la solicitud. Esta funcionalidad le permite garantizar que solo los usuarios y dispositivos aprobados puedan acceder a los recursos críticos.
 
 >[!Note]
 >Azure AD Identity Protection requiere licencias de Azure AD Premium P2, que se incluyen con Microsoft 365 E5.
@@ -122,7 +115,7 @@ Las directivas de acceso a dispositivos e identidades están definidas para usar
 
 Estos niveles y sus configuraciones correspondientes proporcionan niveles de protección coherentes en los datos, las identidades y los dispositivos.
 
-Microsoft recomienda encarecidamente configurar e implementar directivas de acceso de identidades y dispositivos en su organización, incluida la configuración específica de Microsoft Teams, Exchange Online y SharePoint. Para obtener más información, consulte [ Configuraciones de identidad y acceso de dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md).
+Microsoft recomienda la configuración e implementación de directivas de acceso a dispositivos e identidades de confianza cero en la organización, incluidas las configuraciones específicas para Microsoft Teams, Exchange Online y SharePoint. Para más información, consulte las [Configuraciones de acceso a dispositivos e identidades de confianza cero](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
@@ -137,18 +130,23 @@ Con Azure AD Identity Protection, puede:
 | Investigar incidentes sospechosos y solucionarlos con acciones administrativas | Puede investigar eventos de riesgo con información sobre el incidente de seguridad. Hay disponibles flujos de trabajo básicos para realizar un seguimiento de las investigaciones e iniciar acciones de corrección, como restablecimientos de contraseña. |
 |||
 
-Vea [más información sobre Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection).
+Vea [más información sobre Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
-Vea los [pasos para habilitar Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection-enable).
+Vea los [pasos para habilitar Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Recursos técnicos de administración para MFA e inicios de sesión seguros
 
 - [MFA para Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
-- [Plan de identidad para Microsoft 365](identity-roadmap-microsoft-365.md)
+- [Implementar identidad para Microsoft 365](deploy-identity-solution-overview.md)
 - [Vídeos de aprendizaje de Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configurar la directiva de registro de autenticación multi-factor de Azure AD](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Configuraciones de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Administrar las cuentas de usuario](manage-microsoft-365-accounts.md)
+![Implementación del modelo de identidad](../media/deploy-identity-solution-overview/deploy-identity-solution-identity-infrastructure.png)
+
+Continúe con el Paso 4 para implementar la infraestructura de identidad en función del modelo de identidad elegido:
+
+- [Identidad solo de nube](cloud-only-identities.md)
+- [Identidad híbrida](prepare-for-directory-synchronization.md)

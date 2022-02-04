@@ -1,31 +1,26 @@
 ---
 title: Introducción a la incorporación de dispositivos Windows 10 o Windows 11 a Microsoft 365
 f1.keywords:
-- CSH
+  - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
-- ms.o365.cc.DLPLandingPage
+  - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
-- M365-security-compliance
-- m365solution-mip
-- m365initiative-compliance
+  - M365-security-compliance
+  - m365solution-mip
+  - m365initiative-compliance
 search.appverid:
-- MET150
+  - MET150
 description: Incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365
-ms.openlocfilehash: ec95fcbfca3ab41bb3a249534e5ff62721aac794
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272083"
 ---
+
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365 
 
 **Se aplica a:**
@@ -100,7 +95,8 @@ Asegúrese de que los dispositivos Windows que necesite incorporar cumplan estos
 
 5. Existe una versión compatible instalada y actualizada de Microsoft Office. Para obtener la protección y la experiencia de usuario más sólidas, asegúrese de que esté instalada la versión 16.0.14701.0 o posterior de Aplicaciones de Microsoft 365.
 > [!NOTE]
-   >Si está ejecutando Office 365, necesita KB 4577063. Si está en el Canal mensual para empresas de Aplicaciones de Microsoft 365, versiones 2004-2008, debe actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](/officeupdates/update-history-microsoft365-apps-by-date) las versiones actuales. Para más información sobre este problema conocido, vea la sección Office Suite de [Notas de la versión para las versiones del canal actual en 2020](/officeupdates/current-channel#version-2010-october-27).
+   > - Si está ejecutando Office 365: es necesario 4577063 KB.
+   > - Si está en el Canal mensual para empresas de Aplicaciones de Microsoft 365, versiones 2004-2008, debe actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](/officeupdates/update-history-microsoft365-apps-by-date) las versiones actuales. Para más información sobre este problema conocido, vea la sección Office Suite de [Notas de la versión para las versiones del canal actual en 2020](/officeupdates/current-channel#version-2010-october-27).
 
 6. Si tiene puntos de conexión que usan un proxy de dispositivo para conectarse a Internet, siga los procedimientos descritos en [Configurar el proxy del dispositivo y la conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
 

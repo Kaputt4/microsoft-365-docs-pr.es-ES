@@ -2,7 +2,7 @@
 title: Identidad para Contoso Corporation
 author: kelleyvice-msft
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 manager: laurawi
 audience: ITPro
@@ -10,30 +10,25 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-identity-device-management
-- Strat_O365_Enterprise
-ms.custom: ''
+  - M365-identity-device-management
+  - Strat_O365_Enterprise
+ms.custom: null
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: aada3df25fefc99ddf080818ed5930dfb45ecf66
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122264"
 ---
+
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
 Microsoft proporciona Identity as a Service (IDaaS) a través de sus ofertas en la nube mediante Azure Active Directory (Azure AD). Para adoptar Microsoft 365 empresa, la solución IDaaS de Contoso tenía que usar su proveedor de identidades local e incluir la autenticación federada con sus proveedores de identidades de terceros de confianza existentes.
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>El bosque de Servicios de dominio de Active Directory de Contoso
 
-Contoso usa un único bosque de Servicios de dominio de Active Directory (AD DS) para contoso com con siete subdominios, uno para \. cada región del mundo. La sede, las oficinas regionales y las oficinas satélite contienen controladores de dominio para la autenticación y la autorización local.
+Contoso usa un único bosque de Servicios de dominio de Active Directory (AD DS) para contosocom\. con siete subdominios, uno para cada región del mundo. La sede, las oficinas regionales y las oficinas satélite contienen controladores de dominio para la autenticación y la autorización local.
 
 Este es el bosque contoso con dominios regionales para las diferentes partes del mundo que contienen concentradores regionales.
 
 :::image type="content" alt-text="Bosque y dominios de Contoso en todo el mundo." source="../media/contoso-identity/contoso-identity-fig1.png" lightbox="../media/contoso-identity/contoso-identity-fig1.png":::
  
-Contoso decidió usar las cuentas y grupos del bosque com contoso para la autenticación y autorización para sus \. Microsoft 365 cargas de trabajo y servicios.
+Contoso decidió usar las cuentas y grupos del bosque contosocom\. para la autenticación y autorización para sus Microsoft 365 cargas de trabajo y servicios.
 
 ## <a name="the-contoso-federated-authentication-infrastructure"></a>La infraestructura de autenticación federada de Contoso
 
@@ -76,11 +71,11 @@ Este es el conjunto resultante de directivas de identidad y dispositivo de acces
  
 ## <a name="next-step"></a>Paso siguiente
 
-Obtenga información sobre cómo Contoso usa su Microsoft Endpoint Configuration Manager para [implementar y](contoso-win10.md) mantener las Windows 10 Enterprise en toda su organización.
+Obtenga información sobre cómo Contoso usa su Microsoft Endpoint Configuration Manager para [implementar y](contoso-win10.md) mantener el nivel Windows 10 Enterprise toda su organización.
 
 ## <a name="see-also"></a>Vea también
 
-[Plan de identidad para Microsoft 365](identity-roadmap-microsoft-365.md)
+[Implementar identidad para Microsoft 365](deploy-identity-solution-overview.md)
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 

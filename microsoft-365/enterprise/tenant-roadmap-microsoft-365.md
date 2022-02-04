@@ -1,7 +1,7 @@
 ---
 title: Guía básica de inquilinos para Microsoft 365
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -10,20 +10,15 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- m365initiative-coredeploy
+  - M365-subscription-management
+  - m365initiative-coredeploy
 ms.custom: it-pro
 description: Guía básica para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: c5afecd62d466f38c5504c1d485651fa5a31cb30
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202744"
 ---
+
 # <a name="tenant-roadmap-for-microsoft-365"></a>Guía básica de inquilinos para Microsoft 365
 
-Su Microsoft 365 es el conjunto de servicios asignados a su organización. Normalmente, este inquilino está asociado a uno o varios de los nombres de dominio DNS públicos y actúa como un contenedor central y aislado para distintas suscripciones y las licencias que se asignan a cuentas de usuario. Para obtener más información, vea [Suscripciones, licencias, cuentas](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)e inquilinos para las ofertas en la nube de Microsoft.
+Su Microsoft 365 es el conjunto de servicios asignados a su organización. Normalmente, este inquilino está asociado a uno o varios de los nombres de dominio DNS públicos y actúa como un contenedor central y aislado para distintas suscripciones y las licencias que se asignan a cuentas de usuario. Para obtener más información, vea [Suscripciones, licencias, cuentas e inquilinos para las ofertas en la nube de Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 
 Al crear un inquilino Microsoft 365, se asigna a una ubicación geográfica específica. También puede tener un inquilino con varias ubicaciones geográficas y mover el espacio empresarial de una ubicación a otra.
 
@@ -37,9 +32,9 @@ Después de asegurarse de que las redes están optimizadas para el acceso a Micr
 
 Para planear la implementación del espacio empresarial:
 
-- [Comprender suscripciones, licencias y inquilinos Azure Active Directory (Azure AD)](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+- [Comprender suscripciones, licencias y Azure Active Directory (Azure AD) inquilinos](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Comprender cómo usar certificados SSL de terceros](plan-for-third-party-ssl-certificates.md)
-- [Comprender las formas en que un inquilino Microsoft 365 está integrado con los servicios de Azure AD](integrated-apps-and-azure-ads.md)
+- [Comprender las formas en que un Microsoft 365 empresarial está integrado con Azure AD servicios](integrated-apps-and-azure-ads.md)
 - [Planear la compatibilidad con aplicaciones cliente](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determinar cómo usar la autenticación moderna híbrida](hybrid-modern-auth-overview.md)
 - [Planear las actualizaciones Office 2007 y Office 2010](plan-upgrade-previous-versions-office.md)
@@ -51,7 +46,7 @@ Para implementar el espacio empresarial:
 
 - Agregue los [dominios DNS](../admin/setup/add-domain.md) de la organización.
 - Use las [guías de configuración de la Centro de administración de Microsoft 365](setup-guides-for-microsoft-365.md).
-- Cree su infraestructura [de identidad y](identity-roadmap-microsoft-365.md) proteja los [inicios de sesión de usuario.](microsoft-365-secure-sign-in.md)
+- Cree su infraestructura [de identidad.](deploy-identity-solution-overview.md)
 
 ### <a name="move-a-tenants-geographic-locations"></a>Mover las ubicaciones geográficas de un inquilino
 
@@ -78,4 +73,4 @@ Si tiene varios inquilinos Microsoft 365, vea estos artículos para obtener más
 
 ## <a name="next-step"></a>Paso siguiente
 
-Inicie la planeación del espacio empresarial [con suscripciones, licencias, cuentas e inquilinos.](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+Inicie la planeación del espacio empresarial [con suscripciones, licencias, cuentas e inquilinos](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).

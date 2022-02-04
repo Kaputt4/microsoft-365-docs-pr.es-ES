@@ -1,7 +1,7 @@
 ---
 title: Privacidad de Microsoft Defender para Endpoint en Mac
-description: Controles de privacidad, cómo configurar las opciones de directiva que afectan a la privacidad y a la información sobre los datos de diagnóstico recopilados en Microsoft Defender para Endpoint en Mac.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, privacidad, diagnóstico
+description: 'Controles de privacidad, cómo configurar las opciones de directiva que afectan a la privacidad y a la información sobre los datos de diagnóstico recopilados en Microsoft Defender para Endpoint en Mac.'
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, privacidad, diagnóstico'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,23 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+  - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ca6e57fdbb8e2e197d3f57d07ec70694748a48
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170986"
 ---
+
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacidad de Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,9 +44,9 @@ Algunos datos de diagnóstico son necesarios, mientras que otros son opcionales.
 
 Hay dos niveles de datos de diagnóstico para el software cliente de Microsoft Defender para endpoint entre los que puede elegir:
 
-- **Obligatorio:** los datos mínimos necesarios para ayudar a mantener Microsoft Defender para endpoint seguro, actualizado y con el rendimiento esperado en el dispositivo en el que está instalado.
+- **Obligatorio**: los datos mínimos necesarios para ayudar a mantener Microsoft Defender para endpoint seguro, actualizado y con el rendimiento esperado en el dispositivo en el que está instalado.
 
-- **Opcional:** datos adicionales que ayudan a Microsoft a realizar mejoras en el producto y proporcionan información mejorada para ayudar a detectar, diagnosticar y corregir problemas.
+- **Opcional**: datos adicionales que ayudan a Microsoft a realizar mejoras en el producto y proporcionan información mejorada para ayudar a detectar, diagnosticar y corregir problemas.
 
 De forma predeterminada, solo se envían los datos de diagnóstico necesarios a Microsoft.
 
@@ -71,7 +66,7 @@ Cuando esta característica está habilitada y es probable que el ejemplo recopi
 
 Si es administrador de TI, es posible que desee configurar estos controles en el nivel de empresa.
 
-Los controles de privacidad de los distintos tipos de datos descritos en la sección anterior se describen detalladamente en Establecer preferencias para Microsoft Defender para endpoint [en macOS.](mac-preferences.md)
+Los controles de privacidad de los distintos tipos de datos descritos en la sección anterior se describen detalladamente en Establecer preferencias para [Microsoft Defender para endpoint en macOS](mac-preferences.md).
 
 Al igual que con cualquier configuración de directiva nueva, debe probarlas cuidadosamente en un entorno limitado y controlado para asegurarse de que la configuración que configure tenga el efecto deseado antes de implementar la configuración de directiva más ampliamente en su organización.
 
@@ -85,7 +80,7 @@ Hay cierta información acerca de los eventos que es común a todos, independien
 
 Los siguientes campos se consideran comunes para todos los eventos:
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |plataforma|La clasificación general de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas se puede producir un problema para que se pueda priorizar correctamente.|
 |machine_guid|Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados.|
@@ -95,7 +90,7 @@ Los siguientes campos se consideran comunes para todos los eventos:
 |product_guid|Identificador único del producto. Permite a Microsoft diferenciar los problemas que afectan a diferentes sabores del producto.|
 |app_version|Versión de Microsoft Defender para endpoint en la aplicación macOS. Permite a Microsoft identificar qué versiones del producto muestran un problema para que se pueda priorizar correctamente.|
 |sig_version|Versión de la base de datos de inteligencia de seguridad. Permite a Microsoft identificar qué versiones de la inteligencia de seguridad muestran un problema para que se pueda priorizar correctamente.|
-|supported_compressions|Lista de algoritmos de compresión admitidos por la aplicación, por ejemplo `['gzip']` . Permite a Microsoft comprender qué tipos de compresión se pueden usar cuando se comunica con la aplicación.|
+|supported_compressions|Lista de algoritmos de compresión admitidos por la aplicación, por ejemplo `['gzip']`. Permite a Microsoft comprender qué tipos de compresión se pueden usar cuando se comunica con la aplicación.|
 |release_ring|Anillo al que está asociado el dispositivo (por ejemplo, Insider Fast, Insider Slow, Production). Permite a Microsoft identificar en qué anillo de lanzamiento puede producirse un problema para que se pueda priorizar correctamente.|
 
 ### <a name="required-diagnostic-data"></a>Datos de diagnósticos necesarios
@@ -106,11 +101,11 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 #### <a name="software-setup-and-inventory-data-events"></a>Eventos de datos de inventario y configuración de software
 
-**Instalación y desinstalación de Microsoft Defender** para endpoint:
+**Instalación y desinstalación de Microsoft Defender para endpoint**:
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Campo|Description|
+|Field|Descripción|
 |---|---|
 |correlation_id|Identificador único asociado a la instalación.|
 |version|Versión del paquete.|
@@ -118,11 +113,11 @@ Se recopilan los campos siguientes:
 |código|Código que describe la operación.|
 |text|Información adicional asociada a la instalación del producto.|
 
-**Configuración de Microsoft Defender para puntos de conexión:**
+**Configuración de Microsoft Defender para puntos de conexión**:
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Campo|Description|
+|Field|Descripción|
 |---|---|
 |antivirus_engine.enable_real_time_protection|Si la protección en tiempo real está habilitada en el dispositivo o no.|
 |antivirus_engine.passive_mode|Si el modo pasivo está habilitado en el dispositivo o no.|
@@ -136,15 +131,15 @@ Se recopilan los campos siguientes:
 |edr.early_preview|Si el dispositivo debe ejecutarse EDR características de vista previa anticipada.|
 |edr.group_id|Identificador de grupo usado por el componente de detección y respuesta.|
 |edr.tags|Etiquetas definidas por el usuario.|
-|características. \[ nombre de característica opcional\]|Lista de características de vista previa, junto con si están habilitadas o no.|
+|características.\[ nombre de característica opcional\]|Lista de características de vista previa, junto con si están habilitadas o no.|
 
 #### <a name="product-and-service-usage-data-events"></a>Eventos de datos de uso de productos y servicios
 
 **Informe de actualización de inteligencia de seguridad**:
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |from_version|Versión original de inteligencia de seguridad.|
 |to_version|Nueva versión de inteligencia de seguridad.|
@@ -155,13 +150,13 @@ Se recopilan los campos siguientes:
 
 #### <a name="product-and-service-performance-data-events-for-required-diagnostic-data"></a>Eventos de datos de rendimiento de productos y servicios para datos de diagnóstico necesarios
 
-**Salida inesperada de la aplicación (bloqueo):**
+**Salida inesperada de la aplicación (bloqueo):**:
 
 Recopila información del sistema y el estado de una aplicación cuando una aplicación se cierra inesperadamente.
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |v1_crash_count|Número de veces que el proceso del motor V1 se bloquea cada hora en el equipo cliente|
 |v2_crash_count|Número de veces que el proceso del motor V2 se bloquea cada hora en el equipo cliente|
@@ -169,9 +164,9 @@ Se recopilan los campos siguientes:
 
 **Estadísticas de extensión de kernel**:
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |version|Versión de Microsoft Defender para endpoint en macOS.|
 |instance_id|Identificador único generado en el inicio de extensión de kernel.|
@@ -183,7 +178,7 @@ Se recopilan los campos siguientes:
 
 #### <a name="support-data"></a>Datos de soporte técnico
 
-**Registros de diagnóstico:**
+**Registros de diagnóstico**:
 
 Los registros de diagnóstico solo se recopilan con el consentimiento del usuario como parte de la característica de envío de comentarios. Los siguientes archivos se recopilan como parte de los registros de soporte técnico:
 
@@ -203,11 +198,11 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 #### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>Eventos de datos de inventario y configuración de software para datos de diagnóstico opcionales
 
-**Configuración de Microsoft Defender para puntos de conexión:**
+**Configuración de Microsoft Defender para puntos de conexión**:
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |connection_retry_timeout|Tiempo de espera de reintento de conexión cuando se comunica con la nube.|
 |file_hash_cache_maximum|Tamaño de la memoria caché del producto.|
@@ -225,11 +220,11 @@ Se recopilan los campos siguientes:
 |edr.latency_mode|Modo de latencia usado por el componente de detección y respuesta.|
 |edr.proxy_address|Dirección de proxy usada por el componente de detección y respuesta.|
 
-**Configuración de Actualización automática de Microsoft:**
+**Configuración de Actualización automática de Microsoft**:
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Field|Description|
+|Campo|Descripción|
 |---|---|
 |how_to_check|Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales).|
 |channel_name|Actualizar canal asociado al dispositivo.|
@@ -240,20 +235,21 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Informe de carga iniciada del registro de diagnóstico
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
 |size|Tamaño del registro de soporte técnico.|
 |original_path|Ruta de acceso al registro de soporte técnico (siempre en */Library/Application Support/Microsoft/Defender/wdavdiag/*).|
 |format|Formato del registro de soporte técnico.|
+|metadatos|Información sobre el contenido del registro de soporte técnico.|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |request_id|Identificador de correlación para la solicitud de carga del registro de soporte técnico.|
 |sha256|Identificador SHA256 del registro de soporte técnico.|
@@ -261,15 +257,15 @@ Se recopilan los campos siguientes:
 
 #### <a name="product-and-service-performance-data-events-for-product-and-service-usage"></a>Eventos de datos de rendimiento de productos y servicios para el uso de productos y servicios
 
-**Salida inesperada de la aplicación (bloqueo):**
+**Salida inesperada de la aplicación (bloqueo):**:
 
 Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocurre.
 
 **Estadísticas de extensión de kernel**:
 
-Se recopilan los campos siguientes:
+Se recopilan los campos siguientes: 
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |pkt_ack_timeout|Las siguientes propiedades son valores numéricos agregados, que representan el recuento de eventos que se han producido desde el inicio de la extensión del kernel.|
 |pkt_ack_conn_timeout||

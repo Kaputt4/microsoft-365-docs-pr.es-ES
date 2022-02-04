@@ -7,19 +7,14 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un modelo de procesamiento de formularios en SharePoint Syntex.
-ms.openlocfilehash: 53beb46c2615a4cb3634907262be07e1458ef283
-ms.sourcegitcommit: 7c6379d8b71c8b7596cba267da1269046d8e78c1
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993434"
 ---
+
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex
 
 </br>
@@ -135,15 +130,18 @@ Debe etiquetar los documentos para enseñar al modelo a comprender los campos y 
 
     ![Listo.](../media/content-understanding/doc-lib-done.png) 
 
+> [!NOTE]
+> Si se aplican un modelo de procesamiento de formularios personalizado y un modelo de comprensión de documentos a la misma biblioteca, el archivo se clasifica mediante el modelo de comprensión de documentos y los extractores capacitados para ese modelo. Si hay columnas vacías que coincidan con el modelo de procesamiento de formularios, las columnas se rellenarán con esos valores extraídos.
+
 ### <a name="use-flows-to-extract-information"></a>Usar flujos para extraer información
 
 Hay dos flujos disponibles para procesar un archivo seleccionado o un lote de archivos en una biblioteca donde se ha aplicado un modelo de procesamiento de formularios.
 
-- **Extraer información de una imagen o archivo PDF** con un modelo de procesamiento de formularios: para extraer texto de una imagen seleccionada o un archivo PDF, ejecute un modelo de procesamiento de formularios. Admite un único archivo seleccionado a la vez y solo admite archivos PDF y archivos de imagen (PNG, JPG y JPEG). Para ejecutar el flujo, seleccione un archivo y, a continuación, **seleccione Automatizar la** información de  >  **extracción**.
+- **Extraer información de una imagen o archivo PDF** con un modelo de procesamiento de formularios: para extraer texto de una imagen seleccionada o un archivo PDF, ejecute un modelo de procesamiento de formularios. Admite un único archivo seleccionado a la vez y solo admite archivos PDF y archivos de imagen (PNG, JPG y JPEG). Para ejecutar el flujo, seleccione un archivo y, a continuación, **seleccione** **AutomateExtract** >  info.
 
     ![Captura de pantalla que muestra el menú Automatizar con extraer información resaltada.](../media/content-understanding/automate-extract-info.png)  
 
-- **Extraer información de archivos con un modelo de** procesamiento de formularios: use con modelos de procesamiento de formularios para leer y extraer información de un lote de archivos. Procesa hasta 5.000 SharePoint a la vez. Al ejecutar este flujo, hay ciertos parámetros que puede establecer. Puede:
+- **Extraer información de archivos con un modelo de procesamiento de formularios** : use con modelos de procesamiento de formularios para leer y extraer información de un lote de archivos. Procesa hasta 5.000 SharePoint a la vez. Al ejecutar este flujo, hay ciertos parámetros que puede establecer. Puede:
 
     - Elija si desea incluir archivos procesados anteriormente (el valor predeterminado no es incluir archivos procesados anteriormente).
     - Seleccione el número de archivos que desea procesar (el valor predeterminado es 100 archivos).
@@ -154,19 +152,19 @@ Hay dos flujos disponibles para procesar un archivo seleccionado o un lote de ar
 
 ### <a name="classification-date-field"></a>Campo Fecha de clasificación
 
-Cuando se SharePoint Syntex un modelo de procesamiento de formularios (o un  modelo de comprensión de documentos) a una biblioteca de documentos, el campo Fecha de clasificación se incluye en el esquema de biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
+Cuando se SharePoint Syntex un modelo de procesamiento de formularios (o un modelo de comprensión de documentos) a una biblioteca  de documentos, el campo Fecha de clasificación se incluye en el esquema de biblioteca. De forma predeterminada, este campo está vacío. Sin embargo, cuando un modelo procesa y clasifica documentos, este campo se actualiza con una marca de fecha y hora de finalización. 
 
-Cuando se marca un modelo con la fecha de **clasificación,** puede usar el proceso Enviar un correo electrónico después de **que SharePoint Syntex** procese un flujo de archivos para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
+Cuando se marca un modelo con la fecha de **clasificación, puede** usar el proceso Enviar un correo electrónico después de **que SharePoint Syntex** procese un flujo de archivos para notificar a los usuarios que un modelo ha procesado y clasificado un nuevo archivo en la biblioteca de documentos de SharePoint.
 
 Para ejecutar el flujo:
 
-1. Seleccione un archivo y, a continuación,   >  **seleccione Integrar Power Automate** Crear un  >  **flujo**.
+1. Seleccione un archivo y, a continuación, **seleccione Integrar** >  **Power Automate** >  **Crear un flujo**.
 
-2. En el **panel Crear un flujo,** seleccione Enviar un correo **electrónico después de SharePoint Syntex procesa un archivo**.
+2. En el **panel Crear un flujo**, seleccione **Enviar un correo electrónico después SharePoint Syntex procesos de un archivo**.
 
     ![Captura de pantalla que muestra la opción Crear un panel de flujo y flujo resaltadas.](../media/content-understanding/integrate-create-flow.png) 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
   
 [Documentación de Power Automate](/power-automate/)
 

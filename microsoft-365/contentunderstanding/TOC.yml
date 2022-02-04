@@ -54,10 +54,14 @@
           href: model-usage-analytics.md
 - name: Modelos creados previamente
   items:
+    - name: Información general
+      href: prebuilt-overview.md
     - name: Modelos de factura y recibo creados previamente
       href: prebuilt-models.md
     - name: Aplicar una etiqueta de retención
       href: apply-a-retention-label-to-a-model.md
+    - name: Análisis de uso del modelo
+      href: model-usage-analytics.md
 - name: Ensamble de contenidos
   items:
     - name: Crear documentos mediante el ensamble de contenidos

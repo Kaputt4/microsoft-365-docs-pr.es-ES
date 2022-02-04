@@ -1,7 +1,7 @@
 ---
 title: Microsoft OneDrive
 description: Cómo configura Microsoft Managed Desktop OneDrive dispositivos inscritos
-keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
+keywords: 'Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB'
 ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
@@ -9,13 +9,8 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: e2d1a6d2817d4e117bb80c737e71958c7a80ce75
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346295"
 ---
+
 # <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
 Microsoft Managed Desktop usa [OneDrive para la Empresa](/onedrive/plan-onedrive-enterprise) como servicio de almacenamiento en la nube para todos los dispositivos de Escritorio administrado de Microsoft. Se asegura de que los dispositivos sean tan sin estado como sea posible. Los usuarios podrán encontrar sus archivos independientemente del dispositivo en el que inicien sesión. Por ejemplo, si reemplazas un dispositivo de Escritorio administrado de Microsoft por uno nuevo, los archivos se sincronizarán automáticamente con el nuevo dispositivo.
@@ -33,12 +28,15 @@ Configuramos automáticamente estas opciones de configuración de forma predeter
 Cuando los usuarios de Escritorio administrado de Microsoft reciben un nuevo dispositivo, pasan por una experiencia de primera ejecución, especificando sus credenciales de Azure y configurando el dispositivo. Una vez completado este proceso, pueden acceder a su escritorio y tener la OneDrive experiencia.
 
 1. El sistema indica a los usuarios OneDrive se han configurado y que han iniciado sesión automáticamente en OneDrive.
+
 :::image type="content" source="media/onedrive-sync.png" alt-text="La lectura de notificaciones que ahora está sincronizando OneDrive puede editar archivos en OneDrive. Haga clic aquí para ver los archivos.":::
 
 2. El sistema indica a los usuarios OneDrive se ha configurado el movimiento de carpetas conocidos para ellos.
+
 :::image type="content" source="media/onedrive-folders.png" alt-text="Notificación en la que el departamento de TI ha copiado de seguridad de las carpetas importantes. Las carpetas ahora se copian de seguridad OneDrive y están disponibles desde otros dispositivos.":::
 
 3. Para evitar iconos duplicados en el escritorio cuando los dispositivos se restablecen o se restablecen, el sistema quita automáticamente Microsoft Edge y Microsoft Teams iconos de la Sincronización de OneDrive. Esta información se muestra en el Explorador de archivos.
+
 :::image type="content" source="media/onedrive-teams.png" alt-text="Explorador de archivos que muestra Teams y listas perimetrales con casillas desactivadas y texto activando la lectura Excluido de la sincronización.":::
 
 ## <a name="onedrive-sync-restrictions"></a>Sincronización de OneDrive restricciones

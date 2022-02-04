@@ -7,24 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear y configurar un modelo precompilado en SharePoint Syntex.
-ms.openlocfilehash: bb557c9b98a265516da93e6e661caabf91994486
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322683"
 ---
+
 # <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>Usar un modelo precompilado para extraer información de facturas o recibos en Microsoft SharePoint Syntex
 
 Los modelos precompilados están previamente entrenados para reconocer documentos y la información estructurada de los documentos. En lugar de tener que crear un nuevo modelo personalizado desde cero, puede iterar en un modelo preentrenado existente para agregar campos específicos que se ajusten a las necesidades de su organización. 
-
-Los modelos precompilado usan el reconocimiento óptico de caracteres (OCR) combinado con modelos de aprendizaje profundo para identificar y extraer campos de datos y texto predefinidos comunes a tipos de documentos específicos. Para empezar, analice uno de los archivos en el modelo precompilado. A continuación, seleccione los campos detectados que tienen sentido para su propósito. Si el modelo no detecta los campos que necesita, puede analizar de nuevo mediante un archivo diferente.
 
 Actualmente, hay dos modelos precompilado disponibles: factura y recibo.
 

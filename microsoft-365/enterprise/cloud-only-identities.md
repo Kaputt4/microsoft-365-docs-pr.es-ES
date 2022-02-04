@@ -9,35 +9,32 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adm_O365
-- O365p_AddUsersWithDirSync
-- O365M_AddUsersWithDirSync
-- O365E_HRCSetupAADConnectAboutLM617031
-- O365E_AddUsersWithDirSync
+  - Adm_O365
+  - O365p_AddUsersWithDirSync
+  - O365M_AddUsersWithDirSync
+  - O365E_HRCSetupAADConnectAboutLM617031
+  - O365E_AddUsersWithDirSync
 ms.collection:
-- Ent_O365
-- M365-identity-device-management
+  - Ent_O365
+  - M365-identity-device-management
 search.appverid:
-- MET150
-- MOP150
-- MOE150
-- MBS150
+  - MET150
+  - MOP150
+  - MOE150
+  - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo crear usuarios y grupos cuando la suscripción Microsoft 365 está usando la identidad de solo nube.
-ms.openlocfilehash: 55c836b4508399a86144c677e2fe28fc529a935a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190586"
 ---
+
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identidad de solo nube
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Con la identidad de solo nube, todos los usuarios, grupos y contactos se almacenan en el inquilino de Azure Active Directory (Azure AD) de su Microsoft 365 suscripción. Estos son los componentes básicos de la identidad de solo nube.
+Si ha elegido el modelo de identidad de solo nube, ya tiene un inquilino de Azure Active Directory (Azure AD) para que su suscripción Microsoft 365 almacene todos los usuarios, grupos y contactos. Después de configurar la protección para cuentas de administrador en el paso [2](protect-your-global-administrator-accounts.md) y cuentas de usuario en el paso [3](microsoft-365-secure-sign-in.md) de esta solución, ya está listo para empezar a crear las nuevas cuentas y grupos que necesita su organización.
+
+Estos son los componentes básicos de la identidad de solo nube.
  
 ![Los componentes básicos de la identidad de solo nube.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
@@ -51,12 +48,12 @@ Hacer un balance de los tipos de usuarios de la organización. ¿Cuáles son las
 
 Además, algunos servicios en la nube se pueden compartir con usuarios externos a la organización sin cuentas de usuario. También necesitará identificar estos grupos de usuarios.
 
-Puede usar grupos en Azure AD para varios fines que simplifican la administración del entorno en la nube. Por ejemplo, con los grupos de Azure AD, puede:
+Puede usar grupos en Azure AD para varios fines que simplifican la administración de su entorno en la nube. Por ejemplo, con Azure AD grupos, puede:
 
 - Use licencias basadas en grupos para asignar licencias de Microsoft 365 a sus cuentas de usuario automáticamente en cuanto se agregan como miembros.
 - Agregue cuentas de usuario a grupos específicos dinámicamente en función de los atributos de cuenta de usuario, como el nombre del departamento.
 - Aprovisionar automáticamente a los usuarios para aplicaciones de Software como Servicio (SaaS) y proteger el acceso a esas aplicaciones con autenticación multifactor (MFA) y otras directivas de acceso condicional.
-- Aprovisione permisos y niveles de acceso para SharePoint de grupo en línea.
+- Aprovisionar permisos y niveles de acceso para los equipos y SharePoint de grupo en línea.
 
 ## <a name="next-steps-for-cloud-only-identity"></a>Pasos siguientes para la identidad de solo nube
 

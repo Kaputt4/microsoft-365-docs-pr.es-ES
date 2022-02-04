@@ -1,8 +1,8 @@
 ---
 title: Establecer preferencias para Microsoft Defender para endpoint en Linux
-ms.reviewer: ''
+ms.reviewer: null
 description: Describe cómo configurar Microsoft Defender para Endpoint en Linux en empresas.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,16 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+  - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 210bfdec98ef4e603b5dc4e844688c9495d01a79
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214170"
 ---
+
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -45,7 +40,7 @@ En este artículo se describe la estructura de este perfil (incluido un perfil r
 
 El perfil de configuración es un archivo .json que consta de entradas identificadas por una clave (que indica el nombre de la preferencia), seguido de un valor, que depende de la naturaleza de la preferencia. Los valores pueden ser simples, como un valor numérico o complejos, como una lista anidada de preferencias.
 
-Normalmente, se usa una herramienta de administración de configuración para insertar un archivo con el nombre ```mdatp_managed.json``` en la ubicación ```/etc/opt/microsoft/mdatp/managed/``` .
+Normalmente, se usa una herramienta de administración de configuración para insertar un archivo con el nombre en ```mdatp_managed.json``` la ubicación ```/etc/opt/microsoft/mdatp/managed/```.
 
 El nivel superior del perfil de configuración incluye las preferencias de todo el producto y las entradas para las subáreas del producto, que se explican con más detalle en las secciones siguientes.
 
@@ -68,10 +63,10 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 
 Especifica la preferencia de cumplimiento del motor antivirus. Existen tres valores para establecer el nivel de cumplimiento:
 
-- En tiempo real ( ): la protección en tiempo real (examinar archivos a medida que se accede `real_time` a ellos) está habilitada.
-- A petición ( `on_demand` ): los archivos se examinan solo a petición. En esto:
+- En tiempo real (`real_time`): la protección en tiempo real (archivos de examen a medida que se accede a ellos) está habilitada.
+- A petición (`on_demand`): los archivos se examinan solo a petición. En esto:
   - La protección en tiempo real está desactivada.
-- Pasivo ( `passive` ): ejecuta el motor antivirus en modo pasivo. En esto:
+- Pasivo (`passive`): ejecuta el motor antivirus en modo pasivo. En esto:
   - La protección en tiempo real está desactivada.
   - El examen a petición está activado.
   - La corrección automática de amenazas está desactivada.
@@ -156,7 +151,7 @@ Especifica el grado de paralelismo de los exámenes a petición. Esto correspond
 
 #### <a name="exclusion-merge-policy"></a>Directiva de combinación de exclusión
 
-Especifica la directiva de combinación para exclusiones. Puede ser una combinación de exclusiones definidas por el administrador y definidas por el usuario ( ) o solo `merge` exclusiones definidas por el administrador ( `admin_only` ). Esta configuración se puede usar para restringir que los usuarios locales definan sus propias exclusiones.
+Especifica la directiva de combinación para exclusiones. Puede ser una combinación de exclusiones definidas por el administrador y definidas por el usuario (`merge`) o solo exclusiones definidas por el administrador (`admin_only`). Esta configuración se puede usar para restringir que los usuarios locales definan sus propias exclusiones.
 
 <br>
 
@@ -251,7 +246,7 @@ Se usa para excluir contenido del examen por extensión de archivo.
 
 ##### <a name="process-excluded-from-the-scan"></a>Proceso excluido del examen*
 
-Especifica un proceso para el que se excluye toda la actividad de archivo del examen. El proceso se puede especificar por su nombre (por ejemplo, ) o la ruta de acceso `cat` completa (por ejemplo, `/bin/cat` ).
+Especifica un proceso para el que se excluye toda la actividad de archivo del examen. El proceso se puede especificar por su nombre (por ejemplo, `cat`) o la ruta de acceso completa (por ejemplo, `/bin/cat`).
 
 <br>
 
@@ -329,9 +324,9 @@ Tipo de amenaza para la que se configura el comportamiento.
 
 Acción que se debe realizar al encontrarse con una amenaza del tipo especificado en la sección anterior. Puede ser:
 
-- **Auditoría:** el dispositivo no está protegido contra este tipo de amenaza, pero se registra una entrada sobre la amenaza.
-- **Bloquear:** el dispositivo está protegido contra este tipo de amenaza y se te notificará en la consola de seguridad.
-- **Desactivado:** el dispositivo no está protegido contra este tipo de amenaza y no se registra nada.
+- **Auditoría**: el dispositivo no está protegido contra este tipo de amenaza, pero se registra una entrada sobre la amenaza.
+- **Bloquear**: el dispositivo está protegido contra este tipo de amenaza y se te notificará en la consola de seguridad.
+- **Desactivado**: el dispositivo no está protegido contra este tipo de amenaza y no se registra nada.
 
 <br>
 
@@ -346,7 +341,7 @@ Acción que se debe realizar al encontrarse con una amenaza del tipo especificad
 
 #### <a name="threat-type-settings-merge-policy"></a>Directiva de combinación de configuración de tipo de amenaza
 
-Especifica la directiva de combinación para la configuración del tipo de amenaza. Puede ser una combinación de opciones definidas por el administrador y definidas por el usuario ( ) o solo opciones definidas `merge` por el administrador ( `admin_only` ). Esta configuración se puede usar para restringir que los usuarios locales definan su propia configuración para diferentes tipos de amenazas.
+Especifica la directiva de combinación para la configuración del tipo de amenaza. Puede ser una combinación de opciones definidas por el administrador y definidas por el usuario (`merge`) o solo opciones definidas por el administrador (`admin_only`). Esta configuración se puede usar para restringir que los usuarios locales definan su propia configuración para diferentes tipos de amenazas.
 
 <br>
 
@@ -441,9 +436,9 @@ Los datos de diagnóstico se usan para mantener Defender for Endpoint seguro y a
 
 Determina si se envían muestras sospechosas (que probablemente contengan amenazas) a Microsoft. Existen tres niveles para controlar el envío de muestra:
 
-- **Ninguno:** no se envían muestras sospechosas a Microsoft.
-- **Caja fuerte:** solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.
-- **All**: todas las muestras sospechosas se envían a Microsoft.
+- **Ninguno**: no se envían muestras sospechosas a Microsoft.
+- **Caja fuerte**: solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.
+- **Todos**: todas las muestras sospechosas se envían a Microsoft.
 
 <br>
 
@@ -483,7 +478,7 @@ El siguiente perfil de configuración será:
   - **Las bomba de archivo** (archivo con una tasa de compresión alta) se auditan en los registros del producto
 - Habilitar actualizaciones automáticas de inteligencia de seguridad
 - Habilitar la protección proporcionada en la nube
-- Habilitar el envío automático de muestra en `safe` el nivel
+- Habilitar el envío automático de muestra en el `safe` nivel
 - Habilitar la supervisión del comportamiento
 
 ### <a name="sample-profile"></a>Perfil de ejemplo
@@ -508,7 +503,7 @@ El siguiente perfil de configuración será:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true,
-      "proxy":"http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
@@ -577,47 +572,52 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true,
-      "proxy": "http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
 
 ## <a name="add-tag-or-group-id-to-the-configuration-profile"></a>Agregar etiqueta o id. de grupo al perfil de configuración
 
-Cuando ejecute el comando por primera vez, el valor de la etiqueta y el `mdatp health` id. de grupo estará en blanco. Para agregar un identificador de etiqueta o grupo al `mdatp_managed.json` archivo, siga los pasos siguientes:
+Cuando ejecute el comando `mdatp health` por primera vez, el valor de la etiqueta y el id. de grupo estará en blanco. Para agregar un identificador de etiqueta o grupo al `mdatp_managed.json` archivo, siga los pasos siguientes:
   
-  1. Abra el perfil de configuración desde la ruta de acceso `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json` .
+  1. Abra el perfil de configuración desde la ruta de acceso `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
   2. Vaya a la parte inferior del archivo, donde se `cloudService` encuentra el bloque.
-  3. Agregue la etiqueta o el identificador de grupo requeridos como ejemplo siguiente al final del corchete de cierre para `cloudService` .
+  3. Agregue la etiqueta o el identificador de grupo requeridos como ejemplo siguiente al final del corchete de cierre para .`cloudService`
 
   ```JSON
     },
-     "cloudService":{
-        "enabled":true,
-        "diagnosticLevel":"optional",
-        "automaticSampleSubmissionConsent":"safe",
-        "automaticDefinitionUpdateEnabled":true,
-        "proxy": "http://proxy.server:port/"
-     },
-     "edr":{
-          "groupIds":"GroupIdExample",
-          "tags":"MDETagExample"
-          }
+    "cloudService": {
+      "enabled": true,
+      "diagnosticLevel": "optional",
+      "automaticSampleSubmissionConsent": "safe",
+      "automaticDefinitionUpdateEnabled": true,
+      "proxy": "http://proxy.server:port/"
+  },
+  "edr": {
+    "groupIds":"GroupIdExample",
+    "tags": [
+              {
+              "key": "GROUP",
+              "value": "Tag"
+              }
+            ]
+        }
   }
   ```
 
   > [!NOTE]
-  > No olvide agregar la coma después del corchete de cierre al final del `cloudService` bloque. Además, asegúrese de que hay dos corchetes de cierre después de agregar el bloque Tag o Group ID (vea el ejemplo anterior).
+  > No olvide agregar la coma después del corchete de cierre al final del `cloudService` bloque. Además, asegúrese de que hay dos corchetes de cierre después de agregar el bloque Tag o Group ID (vea el ejemplo anterior). Por el momento, el único nombre de clave admitido para las etiquetas es `GROUP`. 
   
 ## <a name="configuration-profile-validation"></a>Validación de perfiles de configuración
 
-El perfil de configuración debe ser un archivo con formato JSON válido. Hay varias herramientas que se pueden usar para comprobar esto. Por ejemplo, si has `python` instalado en el dispositivo:
+El perfil de configuración debe ser un archivo con formato JSON válido. Hay varias herramientas que se pueden usar para comprobar esto. Por ejemplo, si has instalado `python` en el dispositivo:
 
 ```bash
 python -m json.tool mdatp_managed.json
 ```
 
-Si el JSON está bien formado, el comando anterior lo devuelve al Terminal y devuelve un código de salida de `0` . De lo contrario, se muestra un error que describe el problema y el comando devuelve un código de salida de `1` .
+Si el JSON está bien formado, el comando anterior lo devuelve al Terminal y devuelve un código de salida de `0`. De lo contrario, se muestra un error que describe el problema y el comando devuelve un código de salida de `1`.
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Comprobar que el archivo mdatp_managed.json funciona de la forma esperada
 
@@ -630,8 +630,8 @@ Para comprobar que el /etc/opt/microsoft/mdatp/managed/mdatp_managed.json funcio
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> Para que mdatp_managed.json entre en vigor, no es necesario reiniciar el `mdatp` deamon.
+> Para que mdatp_managed.json entre en vigor, no `mdatp` es necesario reiniciar el deamon.
 
 ## <a name="configuration-profile-deployment"></a>Implementación de perfiles de configuración
 
-Una vez que haya creado el perfil de configuración para su empresa, puede implementarlo a través de la herramienta de administración que usa su empresa. Defender para Endpoint en Linux lee la configuración administrada del archivo */etc/opt/microsoft/mdatp/managed/mdatp_managed.json.*
+Una vez que haya creado el perfil de configuración para su empresa, puede implementarlo a través de la herramienta de administración que usa su empresa. Defender para Endpoint en Linux lee la configuración administrada del archivo */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* .
