@@ -1,33 +1,28 @@
 ---
 title: Cancelar su suscripción
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: 'jkinma, jmueller'
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- M365-subscription-management
-- Adm_O365
+  - M365-subscription-management
+  - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
-- commerce_subscriptions
-- AdminTemplateSet
-- admindeeplinkMAC
+  - AdminSurgePortfolio
+  - commerce_subscriptions
+  - AdminTemplateSet
+  - admindeeplinkMAC
 search.appverid: MET150
-description: Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.
+description: 'Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.'
 ms.date: 01/20/2022
-ms.openlocfilehash: 21d7e6f2ff644861b1a8096511144b5343dc2a25
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345434"
 ---
+
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
 Puede cancelar la suscripción en cualquier momento en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Sin embargo, para recibir el reembolso, debe cumplir ciertos requisitos de reembolsos. Para obtener más información, consulte [Obtener información sobre los requisitos de reembolso](#understand-refund-eligibility).
@@ -57,7 +52,7 @@ Use la siguiente tabla para determinar si puede cancelar su suscripción usted m
 
 |Si su suscripción tiene  |Puede  |
 |--------------|--------------|
-|25 o menos licencias  | Cancele su suscripción de prueba o de pago en línea en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 356</a> en cualquier momento.        |
+|25 o menos licencias  | Cancele su suscripción de prueba o de pago en línea en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> en cualquier momento.        |
 |Más de 25 licencias   | Reduzca el número de licencias a 25 o menos e inténtelo de nuevo o [llame al soporte técnico para cancelar la suscripción](../../admin/get-help-support.md).        |
 
 En el caso de las suscripciones que no tienen un perfil de facturación, solo se puede cancelar durante un periodo de tiempo limitado después de comprar o renovar la suscripción. Si la ventana de cancelación ha pasado, [desactive la facturación periódica](renew-your-subscription.md) para cancelar la suscripción al final de su término.

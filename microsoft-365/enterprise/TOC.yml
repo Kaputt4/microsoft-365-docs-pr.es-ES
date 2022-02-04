@@ -271,18 +271,16 @@
           href: eu-data-storage-locations.md
 - name: Identidad
   items:
-    - name: Guía básica
-      href: identity-roadmap-microsoft-365.md
-    - name: Plan
+    - name: Información general
+      href: deploy-identity-solution-overview.md
+    - name: Paso 1. Determinar el modelo de identidad
+      href: deploy-identity-solution-identity-model.md
+    - name: Paso 2. Proteger las cuentas con privilegios
+      href: protect-your-global-administrator-accounts.md
+    - name: Paso 3. Proteger sus cuentas de usuario
+      href: microsoft-365-secure-sign-in.md
+    - name: Paso 4. Implementar su modelo de identidad
       items:
-        - name: Modelos de identidad
-          href: about-microsoft-365-identity.md
-        - name: Identidad híbrida
-          href: plan-for-directory-synchronization.md
-    - name: Implementar
-      items:
-        - name: Proteger las cuentas de administrador global
-          href: protect-your-global-administrator-accounts.md
         - name: Identidad solo de nube
           href: cloud-only-identities.md
         - name: Identidad híbrida
@@ -318,8 +316,6 @@
                       href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
                 - name: Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
                   href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
-        - name: Inicios de sesión de usuario seguros
-          href: microsoft-365-secure-sign-in.md
     - name: Administrar
       items:
         - name: Cuentas de usuario
