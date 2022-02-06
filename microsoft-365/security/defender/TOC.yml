@@ -170,7 +170,7 @@
                   items:
                     - name: Información general
                       href: alert-grading-playbooks.md
-                    - name: Reenvío de correo electrónico sospechoso
+                    - name: Actividad de reenvío de correo electrónico sospechoso
                       href: alert-grading-playbook-email-forwarding.md
                     - name: Reglas del reenvío sospechoso desde la bandeja de entrada
                       href: alert-grading-playbook-inbox-forwarding-rules.md

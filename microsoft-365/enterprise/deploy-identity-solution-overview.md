@@ -33,6 +33,12 @@ Revise este póster de dos páginas para aumentar rápidamente los conceptos de 
 
 Puede descargar [este póster y](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) imprimirlo en formato carta, legal o tabloide (11 x 17).
 
+Esta solución es el primer paso para crear la Microsoft 365 de implementación de confianza cero.
+
+![La Microsoft 365 de implementación de confianza cero](../media/deploy-identity-solution-overview/zero-trust-deployment-stack.png)
+
+Para obtener más información, vea [el Microsoft 365 de implementación de confianza cero](/microsoft-365/security/microsoft-365-zero-trust).
+
 ## <a name="whats-in-this-solution"></a>Acerca de esta solución
 
 Esta solución le ayuda a implementar una infraestructura de identidad para su inquilino Microsoft 365 proporcionar acceso a los empleados y protección contra ataques basados en identidades.

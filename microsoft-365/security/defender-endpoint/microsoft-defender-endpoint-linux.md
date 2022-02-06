@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender para punto de conexión en Linux
-ms.reviewer: ''
+ms.reviewer: null
 description: Describe cómo instalar y usar Microsoft Defender para Endpoint en Linux.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,17 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b7b4ca9f93811f3a1e3e036b4cee620ae639e95
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322136"
 ---
+
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -98,15 +93,32 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
     - Para 6.9: 2.6.32-696.*
     - Para la 6.10: 2.6.32.754.2.1.el6.x86_64 a 2.6.32-754.41.2:
     
-        |||||
-        |--|--|--|--|
-        |2.6.32-754.2.1.el6.x86_64|2.6.32-754.17.1.el6.x86_64|2.6.32-754.29.1.el6.x86_64|2.6.32-754.3.5.el6.x86_64|
-        |2.6.32-754.18.2.el6.x86_64|2.6.32-754.29.2.el6.x86_64|2.6.32-754.6.3.el6.x86_64|2.6.32-754.22.1.el6.x86_64|
-        |2.6.32-754.30.2.el6.x86_64|2.6.32-754.9.1.el6.x86_64|2.6.32-754.23.1.el6.x86_64|2.6.32-754.33.1.el6.x86_64|
-        |2.6.32-754.10.1.el6.x86_64|2.6.32-754.24.2.el6.x86_64|2.6.32-754.35.1.el6.x86_64|2.6.32-754.11.1.el6.x86_64|
-        |2.6.32-754.24.3.el6.x86_64|2.6.32-754.39.1.el6.x86_64|2.6.32-754.12.1.el6.x86_64|2.6.32-754.25.1.el6.x86_64|
-        |2.6.32-754.41.2.el6.x86_64|2.6.32-754.14.2.el6.x86_64|2.6.32-754.27.1.el6.x86_64|2.6.32-754.15.3.el6.x86_64|
-        |2.6.32-754.28.1.el6.x86_64|
+       - 2.6.32-754.10.1.el6.x86_64
+       - 2.6.32-754.11.1.el6.x86_64
+       - 2.6.32-754.12.1.el6.x86_64
+       - 2.6.32-754.14.2.el6.x86_64
+       - 2.6.32-754.15.3.el6.x86_64
+       - 2.6.32-754.17.1.el6.x86_64
+       - 2.6.32-754.18.2.el6.x86_64
+       - 2.6.32-754.2.1.el6.x86_64
+       - 2.6.32-754.22.1.el6.x86_64
+       - 2.6.32-754.23.1.el6.x86_64
+       - 2.6.32-754.24.2.el6.x86_64
+       - 2.6.32-754.24.3.el6.x86_64
+       - 2.6.32-754.25.1.el6.x86_64
+       - 2.6.32-754.27.1.el6.x86_64
+       - 2.6.32-754.28.1.el6.x86_64
+       - 2.6.32-754.29.1.el6.x86_64
+       - 2.6.32-754.29.2.el6.x86_64
+       - 2.6.32-754.3.5.el6.x86_64
+       - 2.6.32-754.30.2.el6.x86_64
+       - 2.6.32-754.33.1.el6.x86_64
+       - 2.6.32-754.35.1.el6.x86_64
+       - 2.6.32-754.39.1.el6.x86_64
+       - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.6.3.el6.x86_64
+       - 2.6.32-754.9.1.el6.x86_64
+
 
     > [!NOTE]
     > Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección solo se proporcionan para soporte técnico de actualización.

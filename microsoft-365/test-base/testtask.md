@@ -11,16 +11,11 @@ ms.date: 07/06/2021
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
-ms.custom: ''
+ms.custom: null
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: a113f5d5f1906cf483e6f8b6cd0f3c7b6aa1deb0
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241013"
 ---
+
 # <a name="step-4-the-tasks-tab"></a>Paso 4: pestaña Tareas
 
 En la pestaña tareas, se espera que proporcione las rutas de acceso a los scripts de prueba que se encuentran en la carpeta zip que ha cargado en la pestaña archivos binarios.
@@ -28,7 +23,7 @@ En la pestaña tareas, se espera que proporcione las rutas de acceso a los scrip
   - **Scripts de pruebas sin formato:** Escriba las rutas de acceso relativas a los scripts de instalación, inicio, cierre y desinstalación. También tiene la opción de seleccionar opciones adicionales para el script de instalación.
   - **Scripts de prueba funcionales:** Escriba la ruta de acceso relativa a cada script de prueba funcional cargado. Se pueden agregar scripts de prueba funcionales adicionales con el ```Add Script``` botón. Necesita un mínimo de un script (1) y puede agregar hasta ocho (8) scripts de prueba funcionales. 
   
-    Los scripts se ejecutan en secuencia de carga y un error en un script determinado impedirá que se ejecuten scripts posteriores.
+    Los scripts se ejecutan en la secuencia que se enumeran. Un error en un script determinado impide que se ejecuten scripts posteriores.
     También tiene la opción de seleccionar opciones adicionales para cada script proporcionado.
 
 ## <a name="set-script-path"></a>Establecer ruta de acceso de script

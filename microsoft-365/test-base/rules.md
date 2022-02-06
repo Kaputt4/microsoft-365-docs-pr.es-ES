@@ -7,19 +7,13 @@ ms.author: ancsibi
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
-ms.date: 07/06/2021
+ms.date: 02/04/2022
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
-ms.custom: ''
+ms.custom: null
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 66f5557f6183cb3691982079c4afd97b1b5dfe85
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156598"
 ---
 # <a name="applicationtest-rules"></a>Reglas de aplicación y prueba
 
@@ -29,6 +23,7 @@ Todas las aplicaciones o pruebas de Test Base deben cumplir las siguientes regla
 
 La infraestructura base de prueba usa las siguientes carpetas:
 * %SYSTEMDRIVE%\USL
+* %SYSTEMDRIVE%\EtlExport
 * %SYSTEMDRIVE%\Ffmpeg
 * %SYSTEMDRIVE%\Monitoring
 * %SYSTEMDRIVE%\powershell-yaml
@@ -41,7 +36,7 @@ La infraestructura base de prueba usa las siguientes carpetas:
 * %SYSTEMDRIVE%\WULogs
 
 > [!IMPORTANT]
-> **Evite lo siguiente:**
+> **Evite lo siguiente**:
 > * Bloquear la ejecución de cualquier proceso de estas carpetas. Si la aplicación es un software antimalware, configure la instalación de la aplicación para permitir la ejecución sin intervención de todos los procesos de estas carpetas.
 > * Manipulación de cualquiera de estas carpetas.
 

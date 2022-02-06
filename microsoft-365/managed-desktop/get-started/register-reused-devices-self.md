@@ -32,9 +32,9 @@ Microsoft Managed Desktop puede funcionar con dispositivos nuevos o puede reutil
 
 ### <a name="obtain-the-hardware-hash"></a>Obtener el hash de hardware
 
-**Para obtener el hash de hardware:**
+Microsoft Managed Desktop identifica cada dispositivo de forma única haciendo referencia a su hash de hardware. Tienes cuatro opciones para obtener esta información de los dispositivos que ya estás usando.
 
-Microsoft Managed Desktop identifica cada dispositivo de forma única haciendo referencia a su hash de hardware. Tienes cuatro opciones para obtener esta información de los dispositivos que ya estás usando:
+**Para obtener el hash de hardware:**
 
 - Pida a su proveedor OEM el archivo de registro de AutoPilot, que incluirá los hashes de hardware.
 - Recopilar información en [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager).

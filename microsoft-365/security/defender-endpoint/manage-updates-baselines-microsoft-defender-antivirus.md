@@ -1,7 +1,7 @@
 ---
 title: Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 description: Administrar cómo Antivirus de Microsoft Defender la protección y las actualizaciones de productos.
-keywords: actualizaciones, líneas base de seguridad, protección, actualizaciones de programación, actualizaciones de fuerza, actualizaciones móviles, wsus
+keywords: 'actualizaciones, líneas base de seguridad, protección, actualizaciones de programación, actualizaciones de fuerza, actualizaciones móviles, wsus'
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,20 +12,15 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska
+ms.reviewer: 'pahuijbr, mkaminska'
 manager: dansimp
 ms.technology: mde
-ms.date: 02/02/2022
+ms.date: 02/04/2022
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: ba3fc94db46696b3cb382a078d61a4d73ccf0d3e
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346510"
+  - M365-security-compliance
+  - m365initiative-defender-endpoint
 ---
+
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
 **Se aplica a:**
@@ -632,6 +627,20 @@ Se recomienda actualizar las ediciones Windows 10 (Enterprise, Pro y Home), Wind
 Para obtener más información, consulta [Actualización de Microsoft Defender para obtener Windows de instalación del sistema operativo](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220203.1</summary>
+
+&ensp;Versión del paquete: **20220203.1**<br/>
+&ensp;Versión de plataforma: **4.18.2111.5**<br/>
+&ensp;Versión del motor: **1.1.18900.2**<br/>
+&ensp;Versión de firma: **1.357.32.0**<br/>
+
+### <a name="fixes"></a>Correcciones
+- Ninguno
+
+### <a name="additional-information"></a>Información adicional
+- Ninguno
+<br/>
+</details><details>
 <summary>20220105.1</summary>
 
 &ensp;Versión del paquete: **20220105.1**<br/>

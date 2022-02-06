@@ -1,45 +1,39 @@
 ---
 title: Investigar alertas en Microsoft 365 Defender
-description: Investigar las alertas que se ven en dispositivos, usuarios y buzones.
-keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
+description: 'Investigar las alertas que se ven en dispositivos, usuarios y buzones.'
+keywords: 'incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-- MOE150
+  - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 2dcc7e57182df3fe0a06bb1713b3a0786f35e144
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156141"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Las alertas son la base de todos los incidentes e indican la aparición de eventos malintencionados o sospechosos en su entorno. Las alertas suelen formar parte de un ataque más amplio y proporcionan pistas sobre un incidente.
 
 En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para formar [incidentes](incidents-overview.md). Los incidentes siempre proporcionarán el contexto más amplio de un ataque, sin embargo, el análisis de alertas puede ser útil cuando se requiere un análisis más profundo. 
 
-La **cola De alertas** muestra el conjunto actual de alertas. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a>.
+La **cola De alertas** muestra el conjunto actual de alertas. Puede acceder a la cola de **alertas desde Incidentes & alertas > alertas en** el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender web</a>.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas en Microsoft 365 Defender portal.":::
 
@@ -47,16 +41,20 @@ Las alertas de diferentes soluciones de seguridad de Microsoft como Microsoft De
 
 De forma predeterminada, la cola de alertas del portal de Microsoft 365 Defender muestra las alertas nuevas y en curso de los últimos 30 días. La alerta más reciente está en la parte superior de la lista para que pueda verla primero. 
 
-En la cola de alertas predeterminada, puede seleccionar Filtros **para** ver un panel **Filtros,** desde el que puede especificar un subconjunto de las alertas. Por ejemplo:
+En la cola de alertas predeterminada, puede seleccionar **Filtrar** para ver un panel **Filtro** , desde el que puede especificar un subconjunto de las alertas. Por ejemplo:
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Ejemplo del panel de filtros para la cola de alertas en el portal Microsoft 365 Defender web.":::
+
+<!--
+UPDATE SCREENSHOT
+--> 
 
 Puede filtrar alertas según estos criterios:
 
 - Severity
 - Estado
 - Orígenes del servicio
-- Activos afectados
+- Entidades (los activos afectados)
 - Estado de investigación automatizada
 
 ## <a name="required-roles-for-defender-for-office-365-alerts"></a>Roles necesarios para Defender para Office 365 alertas
@@ -89,7 +87,7 @@ Para ver la página de alerta principal, seleccione el nombre de la alerta. Por 
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en Microsoft 365 Defender portal.":::
 
-También puede seleccionar la acción **Abrir la página de alerta** principal en el panel **Administrar** alerta.
+También puede seleccionar la acción **Abrir la página de alerta** principal en el **panel Administrar** alerta.
 
 Una página de alerta se compone de estas secciones: 
 
@@ -109,7 +107,7 @@ Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defende
 | Origen de alertas | Carácter anteponer |
 | :---|:--- |
 | Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
-| Microsoft Defender para punto de conexión | `da` o `ed` para alertas de detección personalizadas <br> |
+| Microsoft Defender para punto de conexión | `da` o para `ed` alertas de detección personalizadas <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
@@ -117,7 +115,7 @@ Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defende
 
 La **sección Acciones realizadas** tiene una lista de activos afectados, como buzones, dispositivos y usuarios afectados por esta alerta. 
 
-También puede seleccionar Ver **en el centro** de  acciones para ver la pestaña Historial del centro de acciones en el portal Microsoft 365 Defender acción.  
+También puede seleccionar Ver **en el centro de** acciones para ver  la pestaña Historial del  centro de acciones en el portal Microsoft 365 Defender acción. 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Seguimiento del rol de una alerta en el artículo de alerta
 
@@ -134,7 +132,7 @@ Una vez que haya seleccionado una entidad de interés, la página de detalles ca
 
 ## <a name="manage-alerts"></a>Administrar alertas
 
-Para administrar una alerta, seleccione la alerta en la cola de alertas de su fila para ver un **panel Administrar alertas.** Por ejemplo:
+Para administrar una alerta, seleccione la alerta en la cola de alertas de su fila para ver un **panel Administrar alertas** . Por ejemplo:
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Ejemplo del panel de resumen de una alerta en el portal Microsoft 365 Defender web.":::
 
@@ -143,7 +141,7 @@ El **panel Administrar alerta** le permite ver o especificar:
 - Estado de alerta (Nuevo, Resuelto, En curso).
 - Cuenta de usuario a la que se ha asignado la alerta.
 - Clasificación de la alerta (No establecido, Alerta verdadera, Alerta falsa).
-- Para la clasificación como una alerta verdadera, el tipo de amenaza de la alerta en **el campo Determinación.**
+- Para la clasificación como una alerta verdadera, el tipo de amenaza de la alerta en **el campo Determinación** .
 - Un comentario sobre la alerta.
 
 > [!NOTE]
@@ -167,7 +165,7 @@ La lista de acciones adicionales depende del tipo de alerta.
 
 ## <a name="resolve-an-alert"></a>Resolver una alerta
 
-Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al  panel Administrar alerta de la alerta y marque el estado de la alerta como Resuelto y clasifique como alerta **False** o **Alerta True**. Para las alertas true, especifique el tipo de amenaza de la alerta en el **campo Determinación.**
+Una vez que haya terminado de analizar una alerta y se pueda resolver, vaya al panel Administrar  alerta de la alerta y marque el estado como **Resuelto** y clasifique como alerta **False** o **Alerta True**. Para las alertas true, especifique el tipo de amenaza de la alerta en el **campo Determinación** .
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
 
@@ -187,9 +185,9 @@ Si ambos son true, SecOps marca la alerta como viaje legítimo y la resuelve. Un
 
 Para crear la automatización, necesitarás un token de API antes de conectarte Power Automate a Microsoft Defender para aplicaciones en la nube.
 
-1. Haga **clic Configuración**, seleccione Extensiones de **seguridad** y, a continuación, haga clic en **Agregar token** en la pestaña Tokens de **API.**
+1. Haga **Configuración**, seleccione **Extensiones de seguridad** y, a continuación, haga clic **en Agregar token** en la pestaña **Tokens de API**.
 
-2. Proporcione un nombre para el token y, a continuación, haga clic **en Generar**. Guarde el token como lo necesitará más adelante.
+2. Proporcione un nombre para el token y, a continuación, haga clic en **Generar**. Guarde el token como lo necesitará más adelante.
 
 ### <a name="create-an-automated-flow"></a>Crear un flujo automatizado
 
@@ -197,11 +195,11 @@ Para ver el proceso detallado paso a paso, vea el vídeo [aquí](https://www.mic
 
 En este vídeo también se describe cómo conectar power automate a Defender for Cloud Apps.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

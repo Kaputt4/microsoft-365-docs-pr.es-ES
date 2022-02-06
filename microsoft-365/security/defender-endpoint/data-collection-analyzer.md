@@ -1,30 +1,25 @@
 ---
-title: " Recopilación de datos para solucionar problemas avanzados en Windows"
+title: ' Recopilación de datos para solucionar problemas avanzados en Windows'
 description: Obtenga información sobre cómo usar el analizador de cliente para recopilar datos para escenarios complejos de solución de problemas
-keywords: analzyer, recopilar datos, solucionar problemas de mdeclientanalyzer, solución de problemas avanzada
+keywords: 'analzyer, recopilar datos, solucionar problemas de mdeclientanalyzer, solución de problemas avanzada'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ab670be80c34ced9318c51e2de29a9c9226ea17a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320828"
 ---
+
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a> Recopilación de datos para solucionar problemas avanzados en Windows
 
 **Se aplica a:**
@@ -38,7 +33,7 @@ Ejecute '**MDEClientAnalyzer.cmd /?**' para ver la lista de parámetros disponib
 ![Imagen de los parámetros del analizador de cliente en la línea de comandos.](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
-> Cuando se usa cualquier parámetro de solución de problemas avanzado, el analizador también llama a [MpCmdRun.exe] [https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus?view=o365-worldwide) para recopilar Antivirus de Microsoft Defender registros de soporte técnico relacionados.
+> Cuando se usa cualquier parámetro de solución de problemas avanzado, el analizador también llama a [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) para recopilar Antivirus de Microsoft Defender registros de soporte técnico relacionados.
 
 **-h**: llama a [Windows grabadora de rendimiento para](/windows-hardware/test/wpt/wpr-command-line-options) recopilar un seguimiento detallado del rendimiento general además del conjunto de registros estándar.
 

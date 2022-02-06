@@ -1,7 +1,7 @@
 ---
 title: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
@@ -10,18 +10,13 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365.
-ms.openlocfilehash: 0da966fa23b12d4428a42eabbd102ba560c96b5f
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265708"
 ---
+
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Cumplimiento de Microsoft 365
 
 Le damos la bienvenida al cuaderno de estrategias de prueba para soluciones de cumplimiento de Microsoft 365. Este cuaderno de estrategias le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días, ya que le permitirá a descubrir funcionalidades sólidas y completas de los productos de cumplimiento y seguridad de Microsoft 365.
@@ -417,6 +412,8 @@ El contenido pendiente de una revisión para eliminación se elimina permanentem
 Ayude a su organización a evaluar los riesgos y a responder eficazmente a los requisitos nacionales, regionales e industriales que rigen la recopilación y el uso de datos.
 
 [Más información sobre la evaluación premium del Administrador de cumplimiento](compliance-easy-trials-compliance-manager-assessments.md).
+
+[Cuaderno de estrategias: evaluaciones premium del Administrador de cumplimiento de Microsoft](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Administración de riesgo de privacidad Priva y Solicitudes de los interesados Priva
 

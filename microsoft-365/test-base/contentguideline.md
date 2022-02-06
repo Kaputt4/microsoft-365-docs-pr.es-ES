@@ -7,19 +7,13 @@ ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
-ms.date: 07/06/2021
+ms.date: 02/04/2022
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
-ms.custom: ''
+ms.custom: null
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 156122ad2b5d92a4a093e92c64b55219238c8ee0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211782"
 ---
 # <a name="test-package-guidelines"></a>Directrices del paquete de prueba
 
@@ -27,7 +21,7 @@ ms.locfileid: "60211782"
 
 Al cargar un archivo .zip en el portal, descomprimimos todo el contenido de ese archivo en una carpeta raíz. No es necesario escribir ningún código para realizar esta operación inicial de descomprimir. También puede hacer referencia a cualquier archivo dentro del .zip mediante la ruta de acceso relativa al archivo zip cargado.
 
-En el ejemplo siguiente, se muestra cómo puede hacer referencia a los archivos binarios o scripts desde el campo de entrada en la pestaña Tareas. El texto en azul debe especificarse en el **campo Ruta** de acceso script sin **las comillas.**
+En el ejemplo siguiente, se muestra cómo puede hacer referencia a los archivos binarios o scripts desde el campo de entrada en la pestaña Tareas. El texto en azul debe especificarse en el **campo Ruta de acceso** script **sin las comillas.**
 
 Es importante que conozca el contenido del archivo zip antes de cargarlo. A menudo, al comprimir una carpeta, el equipo local creará una carpeta principal debajo del archivo zip. En este caso, la referencia será como se muestra en negrita **a** continuación:
 
@@ -75,7 +69,7 @@ Otras veces, el archivo zip puede tener los archivos o el contenido justo debajo
 
 **Pruebas funcionales:** El paquete de aplicación debe contener al menos un script de PowerShell. Cuando se proporciona más de un script, los scripts se ejecutan en secuencia de carga y un error en un script determinado impedirá la ejecución de scripts posteriores.
 
-### <a name="script-requirements"></a>Requisitos de script
+### <a name="script-requirements"></a> Requisitos de script
 
 - PowerShell versión 5.1+
 - Ejecución desatendida
@@ -97,11 +91,11 @@ La validación es necesaria para diagnosticar correctamente dónde se producen e
 
 ## <a name="3-log-collection"></a>3. Colección de registros
 
-Cada script debe generar los registros que genere en una carpeta denominada `logs` . Todas las carpetas del directorio denominado `logs` se copiarán y se presentarán para su descarga en la `Test Results` página.
+Cada script debe generar los registros que genere en una carpeta denominada `logs`. Todas las carpetas del directorio denominado `logs` se copiarán y se presentarán para su descarga en la `Test Results` página.
 
-Por ejemplo, el script de instalación (que puede encontrarse en el directorio **App/scripts/install)** puede generar sus registros en: **logs/install.log**, de modo que el registro final esté en: **Apps/scripts/install/logs/install.log**
+Por ejemplo, el script de instalación (que puede encontrarse en el directorio **App/scripts/install** ) puede generar sus registros en: **logs/install.log**, de modo que el registro final estará en: **Apps/scripts/install/logs/install.log**
 
-El sistema recogerá el archivo junto con otros archivos dentro de otras `install.log` `logs` carpetas y lo intercalará para su descarga.
+El sistema recogerá el archivo `install.log` junto con otros archivos dentro de `logs` otras carpetas y lo intercalará para su descarga.
 
 ## <a name="4-application-binaries"></a>4. Archivos binarios de aplicación
 
@@ -111,6 +105,10 @@ Estos archivos binarios deben incluir todo lo necesario para la instalación de 
 
 > [!NOTE]
 > El archivo zip cargado no puede tener espacios ni caracteres especiales en su nombre
+
+## <a name="5-applicationtest-rules"></a>5. Reglas de aplicación y prueba
+
+Para que las aplicaciones o pruebas se ejecuten correctamente en la infraestructura base de pruebas, deben cumplir las reglas descritas en [Reglas de aplicación y prueba ](rules.md). 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

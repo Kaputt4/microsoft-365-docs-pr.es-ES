@@ -1,7 +1,7 @@
 ---
 title: Configurar dispositivos para Escritorio administrado de Microsoft
 description: Cómo obtener nuevos dispositivos o reutilizar los existentes que califiquen
-keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
+keywords: 'Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación'
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
@@ -10,39 +10,39 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 41b10fe4a09a79d50973c478ebd8b6351d13cbeb
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035155"
 ---
+
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Configurar dispositivos del Escritorio administrado por Microsoft
 
 Puedes usar dispositivos nuevos y existentes en Microsoft Managed Desktop.
 
-## <a name="to-obtain-new-devices"></a>Para obtener nuevos dispositivos
+## <a name="obtain-new-devices"></a>Obtener nuevos dispositivos
 
-Se recomienda trabajar con uno de nuestros partners de dispositivos aprobados. Puedes trabajar con el contacto de tu cuenta Microsoft para obtener más ayuda para configurar una asociación de dispositivos. Sin embargo, en esencia, el proceso es así:
+Se recomienda trabajar con uno de nuestros partners de dispositivos aprobados. Puedes trabajar con el contacto de tu cuenta Microsoft para obtener más ayuda para configurar una asociación de dispositivos.
 
-1. Revise la lista de dispositivos recomendados actualmente mediante el filtrado de Escritorio administrado de Microsoft en el sitio [De Windows Pro dispositivos empresariales.](https://www.microsoft.com/windows/business/devices)
-2. Ordena uno o algunos ejemplos de los dispositivos que quieres usar con una imagen compatible. La ordenación puede requerir [pasos de ordenación específicos.](../service-description/device-images.md)
-3. [Valide](validate-device.md) los dispositivos de ejemplo.
-5. Después de validar correctamente, ordena los dispositivos, trabajando con un partner de dispositivos aprobado.
-6. Una vez que lleguen, realice una de las siguientes acciones:
-    - [Registre nuevos dispositivos usted mismo](register-devices-self.md)
-    - Trabajar con un partner para registrar los dispositivos
-7. [Preparar a los usuarios para](get-started-devices.md) usar dispositivos de Escritorio administrado de Microsoft
+**Para obtener nuevos dispositivos:**
 
-## <a name="to-reuse-existing-devices"></a>Para reutilizar dispositivos existentes
+1. Revise la lista de dispositivos recomendados actualmente mediante el filtrado de Escritorio administrado de Microsoft en el sitio [De Windows Pro dispositivos empresariales](https://www.microsoft.com/windows/business/devices).
+1. Ordena uno o algunos ejemplos de los dispositivos que quieres usar con una imagen compatible. La ordenación puede requerir [pasos de ordenación específicos](../service-description/device-images.md).
+1. [Valide](validate-device.md) los dispositivos de ejemplo.
+1. Después de validar correctamente, ordena los dispositivos, trabajando con un partner de dispositivos aprobado.
+1. Una vez que lleguen, haga lo siguiente:
+    - [Registre los nuevos dispositivos usted mismo](register-devices-self.md).
+    - Trabajar con un partner para registrar los dispositivos.
+1. [Prepare a los usuarios para](get-started-devices.md) usar dispositivos de Escritorio administrado de Microsoft.
 
-1. Compruebe que los dispositivos existentes cumplen con nuestros [requisitos de dispositivo](../service-description/device-requirements.md). También puedes usar el control de [evaluación](../get-ready/readiness-assessment-downloadable.md) de preparación descargable para comprobar que un dispositivo determinado cumple los requisitos necesarios. 
-2. Si vuelves a usar un dispositivo existente, es posible que debas volver a crear una imagen de él. Para obtener opciones de imagen, consulta [Imágenes del dispositivo](../service-description/device-images.md).
-3. Seleccione uno o algunos ejemplos de los dispositivos que desea volver a usar y, a continuación, [valide .](validate-device.md)
-4. Después de la validación correcta, realice una de las siguientes acciones:
-    - [Registre dispositivos existentes usted mismo](register-reused-devices-self.md)
-    - Trabajar con un partner para registrar los dispositivos
-5. [Preparar a los usuarios para](get-started-devices.md) usar dispositivos de Escritorio administrado de Microsoft
+## <a name="reuse-existing-devices"></a>Reutilizar dispositivos existentes
+
+> [!IMPORTANT]
+>Comprueba que los dispositivos existentes cumplan con nuestros [requisitos de dispositivo](../service-description/device-requirements.md). También puedes usar el control [de evaluación de](../get-ready/readiness-assessment-downloadable.md) preparación descargable para comprobar que un dispositivo determinado cumple los requisitos necesarios. <br><br>Si vuelves a usar un dispositivo existente, es posible que debas volver a crear una imagen de él. Para obtener opciones de imagen, consulta [Imágenes de dispositivo](../service-description/device-images.md).
+
+**Para reutilizar los dispositivos existentes:**
+
+1. Selecciona uno o algunos ejemplos de los dispositivos que quieres reutilizar y, a continuación, [validalos](validate-device.md).
+1. Después de validar correctamente, haga lo siguiente:
+    - [Registre los dispositivos existentes usted mismo](register-reused-devices-self.md).
+    - Trabajar con un partner para registrar los dispositivos.
+1. [Prepare a los usuarios para](get-started-devices.md) usar dispositivos de Escritorio administrado de Microsoft.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Microsoft Managed Desktop
 

@@ -1,6 +1,6 @@
 ---
 title: Introducción al control de aplicaciones
-description: null
+description: En este artículo se describe cómo habilitar el control de aplicaciones
 keywords: 'Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación'
 ms.service: m365-md
 author: tiaraquan

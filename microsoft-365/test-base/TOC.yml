@@ -10,7 +10,7 @@
       href: createAccount.md
     - name: Cargar un paquete
       href: uploadApplication.md
-    - name: Upload Dependencias de & binarios
+    - name: Upload archivos binarios & dependencias
       href: binaries.md
     - name: Establecer tareas de prueba
       href: testtask.md
@@ -20,6 +20,8 @@
       href: review.md
     - name: Guía del paquete
       href: contentguideline.md
+    - name: Reglas de aplicación y prueba
+      href: rules.md
 - name: Guías de procedimientos
   items:
     - name: Pruebas de aplicaciones de servidor

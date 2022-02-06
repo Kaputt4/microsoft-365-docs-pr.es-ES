@@ -25,8 +25,6 @@ Página de estado de inscripción y Piloto automático para la implementación a
 
 Microsoft Managed Desktop usa esta configuración en el perfil de Autopilot que se usa para los dispositivos de los usuarios:
 
-****
-
 | Configuración | Valor |
 | ----- | ----- |
 | Modo de implementación | Controlado por el usuario |
@@ -45,10 +43,8 @@ Microsoft Managed Desktop usa esta configuración en el perfil de Autopilot que 
 
 Microsoft Managed Desktop usa esta configuración para la experiencia de la página de estado de inscripción:
 
-****
-
 | Configuración | Valor |
-| ----- | ----- |
+| ------ | ------ |
 | Mostrar el progreso de la configuración de la aplicación y del perfil | Sí |
 | Mostrar un error cuando la instalación tarda más de un número determinado de minutos | 60 |
 | Mostrar un mensaje personalizado cuando se produce un error de límite de tiempo | No |
@@ -57,7 +53,7 @@ Microsoft Managed Desktop usa esta configuración para la experiencia de la pág
 | Bloquear el uso del dispositivo hasta que todos los perfiles y aplicaciones estén instalados | Sí |
 | Permitir a los usuarios restablecer el dispositivo si se produce un error de instalación | Sí |
 | Permitir a los usuarios utilizar el dispositivo si se produce un error de instalación | Sí |
-| Bloquear el uso del dispositivo hasta que se instalen estas aplicaciones necesarias si están asignadas al usuario o dispositivo.|Lugar de trabajo moderno: corrección de tiempo | Modern Workplace: biblioteca de cliente |
+| Bloquear el uso del dispositivo hasta que se instalen estas aplicaciones necesarias si están asignadas al usuario o dispositivo. <ul><li> Lugar de trabajo moderno: corrección de tiempo</li><li>Modern Workplace: biblioteca de cliente</li></ul> | Sí |
 
 La experiencia de la página de estado de inscripción se produce en tres fases. Para obtener más información, consulte [Enrollment Status Page tracking information](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
 

@@ -8,19 +8,14 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: null
 ms.collection:
-- enabler-strategic
-- m365initiative-syntex
+  - enabler-strategic
+  - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre la comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: fe09298e32ce76cab3c8ea16e3d1075a0925f60f
-ms.sourcegitcommit: b51bfed24a9e3b7adf82d4918b76462cd40dffaf
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61153705"
 ---
+
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
 
 
@@ -110,6 +105,13 @@ Los modelos de comprensión mediante documentos admiten los siguientes tipos de 
 - xls
 - xlsx
 
+### <a name="supported-languages"></a>Idiomas admitidos
+
+Los modelos de descripción de documentos admiten los siguientes idiomas:
+- Francés
+- Alemán
+- Italiano
+- Español
 
 
 ## <a name="see-also"></a>Consulte también

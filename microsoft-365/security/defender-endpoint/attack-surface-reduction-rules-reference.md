@@ -1,7 +1,7 @@
 ---
 title: Referencia de reglas de reducción de superficie de ataque
 description: Enumera detalles sobre las reglas de reducción de superficie de ataque por regla.
-keywords: Reglas de reducción de superficie de ataque, ASR, reglas asr, hips, sistema de prevención de intrusiones de host, reglas de protección, reglas antiexploit, antiexploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR, descripción de regla ASR
+keywords: 'Reglas de reducción de superficie de ataque, ASR, reglas asr, hips, sistema de prevención de intrusiones de host, reglas de protección, reglas antiexploit, antiexploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR, descripción de regla ASR'
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,20 +10,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: 'oogunrinde, sugamar, jcedola'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: ce8bfd2d9b2fc7b45c1fecef69588ba1b834b91b
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320720"
+ms.date: 02/04/2022
 ---
+
+
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie de ataque
 
 **Se aplica a:**
@@ -76,7 +72,7 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 
 _End Public Preview: Sistemas operativos compatibles_
 
-## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
+## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 
 En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas que actualmente se liberan a disponibilidad general. Las reglas se enumeran en orden alfabético.
 
@@ -212,6 +208,9 @@ LSASS autentica a los usuarios que inician sesión en un Windows equipo. Credent
 
 > [!NOTE]
 > En algunas aplicaciones, el código enumera todos los procesos en ejecución e intenta abrirlos con permisos exhaustivos. Esta regla deniega la acción de apertura del proceso de la aplicación y registra los detalles en el registro de eventos de seguridad. Esta regla puede generar mucho ruido. Si tienes una aplicación que simplemente enumera LSASS, pero no tiene ningún impacto real en la funcionalidad, no es necesario agregarla a la lista de exclusión. Por sí mismo, esta entrada de registro de eventos no indica necesariamente una amenaza malintencionada.
+  
+> [!IMPORTANT]
+> El estado predeterminado de la regla de reducción de superficie de ataque (ASR) Windows "Bloquear el robo de credenciales del subsistema de autoridad de seguridad local (lsass.exe)" cambiará de No configurado  a Configurado y  el modo predeterminado establecido en **Bloquear**. Todas las demás reglas ASR permanecerán en su estado predeterminado: **No configurado**. La lógica de filtrado adicional ya se ha incorporado en la regla para reducir las notificaciones del usuario final. Los clientes pueden configurar la regla en **los modos Auditoría**, **Advertencia** o Deshabilitado, lo que invalidará el modo predeterminado. La funcionalidad de esta regla es la misma, tanto si la regla está configurada en el modo predeterminado, como si habilita manualmente el modo de bloqueo.  
 
 Nombre de Intune: `Flag credential stealing from the Windows local security authority subsystem`
 

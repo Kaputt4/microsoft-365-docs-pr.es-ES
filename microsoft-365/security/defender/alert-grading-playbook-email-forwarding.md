@@ -1,32 +1,26 @@
 ---
 title: Clasificación de alertas para actividad de reenvío de correo electrónico sospechosa
 description: Clasificación de alertas para la actividad de reenvío de correo electrónico sospechoso para revisar las alertas y realizar acciones recomendadas para corregir el ataque y proteger la red.
-keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
+keywords: 'incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-- MOE150
+  - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 83e8061d2c9473c274d615c8905b2918e1b72d17
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355210"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Clasificación de alertas para actividad de reenvío de correo electrónico sospechosa
 
@@ -39,7 +33,7 @@ Los actores de amenazas pueden usar cuentas de usuario comprometidas para varios
 
 Los correos electrónicos se pueden reenviar manualmente o automáticamente mediante reglas de reenvío. El reenvío automático se puede implementar de varias maneras, como reglas de bandeja de entrada, Exchange de transporte (ETR) y reenvío SMTP. Aunque el reenvío manual requiere una acción directa de los usuarios, es posible que no conozcan todos los correos electrónicos reenviados automáticamente. En Microsoft 365, se genera una alerta cuando un usuario reenvía automáticamente un correo electrónico a una dirección de correo electrónico potencialmente malintencionada.
 
-Este libro de juegos te ayuda a investigar las alertas de reenvío de correo electrónico sospechoso y calificarlas rápidamente como verdadero positivo (TP) o falso positivo (FP). A continuación, puede realizar las acciones recomendadas para las alertas de TP para corregir el ataque.
+Este libro de juegos te ayuda a investigar alertas de actividad de reenvío de correo electrónico sospechosos y calificarlas rápidamente como un verdadero positivo (TP) o un falso positivo (FP). A continuación, puede realizar las acciones recomendadas para las alertas de TP para corregir el ataque.
 
 Para obtener información general sobre la calificación de alertas para Microsoft Defender para Office 365 y Microsoft Defender para aplicaciones en la nube, consulte el [artículo de introducción](alert-grading-playbooks.md).
 
@@ -53,9 +47,9 @@ Los resultados del uso de este libro de juegos son:
 
 ## <a name="email-forwarding-rules"></a>Reglas de reenvío de correo electrónico
 
-La regla de reenvío de correo electrónico permite a los usuarios configurar una regla para reenviar los mensajes de correo electrónico enviados al buzón de un usuario al buzón de otro usuario dentro o fuera de la organización. Algunos usuarios de correo electrónico, especialmente los que tienen varios buzones, configuran reglas de reenvío para mover los correos electrónicos de los empleadores a sus cuentas de correo electrónico privadas. El reenvío de correo electrónico es una característica útil, pero también puede suponer un riesgo de seguridad debido a la posible divulgación de información. Los atacantes pueden usar esta información para atacar a su organización o a sus asociados.
+Las reglas de reenvío de correo electrónico permiten a los usuarios crear una regla para reenviar los mensajes de correo electrónico enviados al buzón de un usuario al buzón de otro usuario dentro o fuera de la organización. Algunos usuarios de correo electrónico, especialmente los que tienen varios buzones, configuran reglas de reenvío para mover los correos electrónicos de los empleadores a sus cuentas de correo electrónico privadas. El reenvío de correo electrónico es una característica útil, pero también puede suponer un riesgo de seguridad debido a la posible divulgación de información. Los atacantes pueden usar esta información para atacar a su organización o a sus asociados.
 
-### <a name="suspicious-email-forwarding-rules"></a>Reglas de reenvío de correo electrónico sospechosas
+### <a name="suspicious-email-forwarding-activity"></a>Actividad de reenvío de correo electrónico sospechoso
 
 Los atacantes pueden configurar reglas de correo electrónico para ocultar los correos electrónicos entrantes en el buzón de usuario comprometido para ocultar sus actividades malintencionadas del usuario. También pueden establecer reglas en el buzón de usuario comprometido para eliminar correos electrónicos, mover los correos electrónicos a otra carpeta menos perceptible, como una carpeta RSS, o reenviar correos electrónicos a una cuenta externa.  
 
@@ -71,7 +65,7 @@ Para obtener más información, consulta estas entradas de blog:
 
 ## <a name="alert-details"></a>Detalles de la alerta
 
-Para revisar la alerta específica, abra la página **Alertas** para ver la sección **Lista de** actividades. Por ejemplo:
+Para revisar la alerta Actividad de reenvío de correo electrónico sospechoso, abra la **página Alertas** para ver la sección **Lista de** actividades. Por ejemplo:
  
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="Lista de actividades relacionadas con la alerta" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -178,12 +172,6 @@ Para usar [consultas](advanced-hunting-overview.md) avanzadas de búsqueda para 
 
 - IdentityLogonEvents: contiene información de inicio de sesión para todos los usuarios.
 
-Por ejemplo:
-
-:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png" alt-text="Ejemplo de la página Búsqueda avanzada" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png":::
-
-Use consultas para recopilar información sobre las siguientes preguntas.
-
 >[!Note]
 >Ciertos parámetros son únicos para la organización o la red. Rellene estos parámetros específicos como se indica en cada consulta.
 >
@@ -288,9 +276,9 @@ Una vez que determine que las actividades asociadas convierten esta alerta en Tr
 
 4. Compruebe si hay actividades adicionales originadas por cuentas afectadas, direcciones IP y remitentes sospechosos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Información general sobre la clasificación de alertas](alert-grading-playbooks.md)
-- [Reglas de reenvío de bandeja de entrada sospechosas](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Reglas del reenvío sospechoso desde la bandeja de entrada](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Reglas sospechosas de manipulación de la bandeja de entrada](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigar alertas](investigate-alerts.md)

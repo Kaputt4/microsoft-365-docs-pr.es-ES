@@ -2,7 +2,7 @@
 title: Paso 1. Configurar las líneas base de seguridad
 author: JoeDavies-MSFT
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 manager: dansimp
 audience: ITPro
@@ -10,20 +10,15 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- ransomware
-- m365solution-ransomware
+  - M365-security-compliance
+  - Strat_O365_Enterprise
+  - ransomware
+  - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, ransomware operado por humanos, ransomware operado por seres humanos, HumOR, ataque de extorsión, ataque ransomware, cifrado, criptovirología, confianza cero
-description: Use las líneas base de seguridad para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: bd988f70dacc1ad2a7645b09c9d9994315b5a4df
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60667799"
+keywords: 'ransomware, ransomware operado por humanos, ransomware operado por seres humanos, HumOR, ataque de extorsión, ataque ransomware, cifrado, criptovirología, confianza cero'
+description: "Use las líneas base de seguridad para proteger los recursos de Microsoft\_365 frente a ataques de ransomware."
 ---
+
 # <a name="step-1-configure-security-baselines"></a>Paso 1. Configurar las líneas base de seguridad
 
 Como primer paso para combatir a los atacantes de ransomware, debe configurar las siguientes líneas base de seguridad definidas por Microsoft:
@@ -38,7 +33,7 @@ Estas líneas base contienen opciones de configuración y reglas conocidas por l
 
 En primer lugar, evalúe y mida su posición de seguridad mediante la [Puntuación de seguridad de Microsoft](/microsoft-365/security/defender/microsoft-secure-score) y siga las instrucciones para mejorarla según sea necesario.
 
-A continuación, use las [reglas de reducción de la superficie expuesta a ataques](/microsoft-365/security/defender-endpoint/attack-surface-reduction) para ayudar a bloquear la actividad sospechosa y el contenido vulnerable. Estas reglas incluyen la prevención de lo siguiente:
+A continuación, use las [reglas de reducción de la superficie expuesta a ataques](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) para ayudar a bloquear la actividad sospechosa y el contenido vulnerable. Estas reglas incluyen la prevención de lo siguiente:
 
 - Las aplicaciones de Office creen procesos secundarios
 - El contenido ejecutable del cliente de correo electrónico y el correo web

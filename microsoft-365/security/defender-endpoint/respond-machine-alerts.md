@@ -1,7 +1,7 @@
 ---
 title: Realizar acciones de respuesta en un dispositivo en Microsoft Defender para endpoint
-description: Realiza acciones de respuesta en un dispositivo como aislar dispositivos, recopilar un paquete de investigación, administrar etiquetas, ejecutar análisis antivirus y restringir la ejecución de aplicaciones.
-keywords: responder, aislar, aislar el dispositivo, recopilar paquete de investigación, centro de acción, restringir, administrar etiquetas, av scan, restringir la aplicación
+description: 'Realiza acciones de respuesta en un dispositivo como aislar dispositivos, recopilar un paquete de investigación, administrar etiquetas, ejecutar análisis antivirus y restringir la ejecución de aplicaciones.'
+keywords: 'responder, aislar, aislar el dispositivo, recopilar paquete de investigación, centro de acción, restringir, administrar etiquetas, av scan, restringir la aplicación'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,13 +14,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ce7eab7648285cb671ed5657e16516f5c1ed235c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321980"
 ---
+
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -133,7 +128,7 @@ Como parte del proceso de investigación o respuesta, puedes iniciar de forma re
 
 >[!IMPORTANT]
 >- Esta acción no es compatible actualmente con macOS y Linux. Use la respuesta en directo para ejecutar la acción. Para obtener más información sobre la respuesta en directo, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md)
->- Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [consulte Antivirus de Microsoft Defender compatibilidad](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-worldwide).
+>- Un Antivirus de Microsoft Defender (Antivirus de Microsoft Defender) puede ejecutarse junto con otras soluciones antivirus, independientemente de si Antivirus de Microsoft Defender es la solución antivirus activa o no. Microsoft Defender AV puede estar en modo pasivo. Para obtener más información, [consulte Antivirus de Microsoft Defender compatibilidad](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 Uno que haya seleccionado **Ejecutar examen antivirus**, seleccione el tipo de examen que desea ejecutar (rápido o completo) y agregue un comentario antes de confirmar el examen.
 
