@@ -1,32 +1,27 @@
 ---
 title: Iniciar la retención cuando se produzca un evento
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+  - M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 ms.custom:
-- seo-marvel-apr2020
-- seo-marvel-may2020
-- seo-marvel-jun2020
-description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: c7e8d70d6ac535ee80e3ddb6ab719fe253836031
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241448"
+  - seo-marvel-apr2020
+  - seo-marvel-may2020
+  - seo-marvel-jun2020
+description: 'Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.'
 ---
+
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -171,7 +166,7 @@ Por último, seleccione la fecha en que se produjo el evento; esta fecha se usar
 
 Después de crear un evento, la configuración de retención surte efecto para el contenido que ya está etiquetado e indexado. Si se agrega la etiqueta de retención a contenido nuevo tras crear el evento, deberá crear un nuevo evento con los mismos detalles.
 
-Al eliminar un evento, no se cancela la configuración de retención que está vigente en el contenido que ya está etiquetado. Para ello, cree un nuevo evento con los mismos detalles, pero deje la fecha en blanco. 
+Al eliminar un evento, no se cancela la configuración de retención que está vigente en el contenido que ya está etiquetado. Actualmente, no se pueden cancelar eventos después de que se desencadenen.
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Usar Búsqueda de contenido para encontrar todo el contenido que tenga aplicada una etiqueta o id. de activo específicos
 
