@@ -1,7 +1,7 @@
 ---
 title: Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
-description: En este tema se describen los cambios que se deben realizar para beneficiarse de las extensiones del sistema, que sustituyen las extensiones de kernel en macOS Catalina y las versiones más recientes de macOS.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, kernel, system, extensions, catalina
+description: 'En este tema se describen los cambios que se deben realizar para beneficiarse de las extensiones del sistema, que sustituyen las extensiones de kernel en macOS Catalina y las versiones más recientes de macOS.'
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, kernel, system, extensions, catalina'
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,25 +14,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
-ROBOTS: noindex,nofollow
+ROBOTS: 'noindex,nofollow'
 ms.technology: mde
-ms.openlocfilehash: 374bd7b6f31cfb555e8f6189a01b4946980c0fc6
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171526"
 ---
+
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -47,10 +42,10 @@ Si has implementado Microsoft Defender para Endpoint en macOS en un entorno admi
 
 Para aprobar las extensiones del sistema, cree la siguiente carga:
 
-1. En **Equipos > de configuración seleccione** Opciones > Extensiones del **sistema**.
-2. Seleccione **Extensiones de sistema permitidas en** la lista desplegable Tipos **de** extensión del sistema.
+1. En **Equipos > de configuración seleccione** **Opciones > extensiones del sistema**.
+2. Seleccione **Extensiones de sistema permitidas en** la **lista desplegable Tipos de** extensión del sistema.
 3. Usa **UBF8T346G9 para** id. de equipo.
-4. Agregue los siguientes identificadores de agrupación a la **lista Extensiones de sistema permitidas:**
+4. Agregue los siguientes identificadores de agrupación a la **lista Extensiones de sistema permitidas** :
 
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
@@ -61,10 +56,10 @@ Para aprobar las extensiones del sistema, cree la siguiente carga:
 
 Agregue la siguiente carga de JAMF para conceder acceso en disco completo a Microsoft Defender para endpoint security extension. Esta directiva es un requisito previo para ejecutar la extensión en el dispositivo.
 
-1. Seleccione **Opciones Control de** directiva de \> **preferencias de privacidad**.
-2. Se `com.microsoft.wdav.epsext` usa como identificador **y** como tipo `Bundle ID` de **agrupación**.
+1. Seleccione **Opciones Control** \> **de directiva de preferencias de privacidad**.
+2. Se `com.microsoft.wdav.epsext` **usa como identificador** y `Bundle ID` como **tipo de agrupación**.
 3. Establecer el requisito de código en `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
-4. Establezca **Aplicación o servicio en** **SystemPolicyAllFiles** y acceso a **Permitir**.
+4. Establece **La aplicación o el servicio** en **SystemPolicyAllFiles** y el acceso a **Allow**.
 
     ![Control de directiva de preferencias de privacidad.](images/mac-system-extension-privacy.png)
 
@@ -76,7 +71,7 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
 > JAMF no tiene compatibilidad integrada con directivas de filtrado de contenido, que son un requisito previo para habilitar las extensiones de red que Microsoft Defender para Endpoint en macOS instala en el dispositivo. Además, JAMF a veces cambia el contenido de las directivas que se implementan.
 > Por lo tanto, los siguientes pasos proporcionan una solución alternativa que implica firmar el perfil de configuración.
 
-1. Guarde el siguiente contenido en el dispositivo como `com.microsoft.network-extension.mobileconfig` si usara un editor de texto:
+1. Guarde el siguiente contenido en el dispositivo como si usara `com.microsoft.network-extension.mobileconfig` un editor de texto:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -91,7 +86,7 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
             <key>PayloadIdentifier</key>
             <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
             <key>PayloadDisplayName</key>
-            <string>Microsoft Defender ATP Network Extension</string>
+            <string>Microsoft Defender Network Extension</string>
             <key>PayloadDescription</key>
             <string/>
             <key>PayloadVersion</key>
@@ -124,7 +119,7 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
                     <key>FilterType</key>
                     <string>Plugin</string>
                     <key>UserDefinedName</key>
-                    <string>Microsoft Defender ATP Network Extension</string>
+                    <string>Microsoft Defender Network Extension</string>
                     <key>PluginBundleID</key>
                     <string>com.microsoft.wdav</string>
                     <key>FilterSockets</key>
@@ -151,7 +146,7 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
 
-    Compruebe que el comando genera `OK` .
+    Compruebe que el comando genera `OK`.
 
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
@@ -179,8 +174,8 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
 
 Para aprobar las extensiones del sistema:
 
-1. En Intune, abra **Administrar configuración** \> **de dispositivo.** Seleccione **Administrar** \> **perfiles Crear** \> **perfil**.
-2. Elija un nombre para el perfil. Cambiar **Platform=macOS** a **Profile type=Extensions**. Seleccione **Crear**.
+1. En Intune, abra **Administrar configuración** \> **de dispositivo**. Seleccione **Administrar** \> **perfiles Crear** \> **perfil**.
+2. Elija un nombre para el perfil. Cambie **Platform=macOS** a **Profile type=Extensions**. Seleccione **Crear**.
 3. En la `Basics` pestaña, asigne un nombre a este nuevo perfil.
 4. En la `Configuration settings` pestaña, agregue las siguientes entradas en la `Allowed system extensions` sección:
 
@@ -196,7 +191,7 @@ Para aprobar las extensiones del sistema:
 
    ![Captura de pantalla de perfiles de configuración del sistema.](images/mac-system-extension-intune2.png)
 
-5. En la `Assignments` pestaña, asigne este perfil a **Todos los usuarios & Todos los dispositivos**.
+5. En la `Assignments` pestaña, asigne este perfil a **Todos los usuarios & todos los dispositivos**.
 6. Revise y cree este perfil de configuración.
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>Crear e implementar el perfil de configuración personalizado
@@ -218,7 +213,7 @@ Guarde el siguiente contenido en un archivo denominado **sysext.xml**:
         <key>PayloadIdentifier</key>
         <string>7E53AC50-B88D-4132-99B6-29F7974EAA3C</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP System Extensions</string>
+        <string>Microsoft Defender System Extensions</string>
         <key>PayloadDescription</key>
         <string/>
         <key>PayloadVersion</key>
@@ -251,7 +246,7 @@ Guarde el siguiente contenido en un archivo denominado **sysext.xml**:
                 <key>FilterType</key>
                 <string>Plugin</string>
                 <key>UserDefinedName</key>
-                <string>Microsoft Defender ATP Network Extension</string>
+                <string>Microsoft Defender Network Extension</string>
                 <key>PluginBundleID</key>
                 <string>com.microsoft.wdav</string>
                 <key>FilterSockets</key>
@@ -302,7 +297,7 @@ Guarde el siguiente contenido en un archivo denominado **sysext.xml**:
 </plist>
 ```
 
-Compruebe que el archivo anterior se copió correctamente. Desde el Terminal, ejecute el siguiente comando y compruebe que emite `OK` :
+Compruebe que el archivo anterior se copió correctamente. Desde el Terminal, ejecute el siguiente comando y compruebe que emite `OK`:
 
 ```bash
 $ plutil -lint sysext.xml
@@ -311,12 +306,12 @@ sysext.xml: OK
 
 Para implementar este perfil de configuración personalizado:
 
-1. En Intune, abra **Administrar configuración** \> **de dispositivo.** Seleccione **Administrar** \> **perfiles Crear** \> **perfil**.
+1. En Intune, abra **Administrar configuración** \> **de dispositivo**. Seleccione **Administrar** \> **perfiles Crear** \> **perfil**.
 2. Elija un nombre para el perfil. Cambiar **Platform=macOS** y **Profile type=Custom**. Seleccione **Configurar**.
 3. Abra el perfil de configuración y cargue **sysext.xml**. Este archivo se creó en el paso anterior.
 4. Seleccione **Aceptar**.
 
     ![Extensión del sistema en la captura de pantalla de Intune.](images/mac-system-extension-intune.png)
 
-5. En la `Assignments` pestaña, asigne este perfil a **Todos los usuarios & Todos los dispositivos**.
+5. En la `Assignments` pestaña, asigne este perfil a **Todos los usuarios & todos los dispositivos**.
 6. Revise y cree este perfil de configuración.

@@ -1,8 +1,8 @@
 ---
-title: Comprender las reglas de reducción de la superficie expuesta a ataques
-ms.reviewer: ''
+title: Comprender y usar la reducción de superficie de ataque (ASR)
+ms.reviewer: null
 description: Obtenga información sobre las capacidades de reducción de superficie de ataque de Microsoft Defender para endpoint.
-keywords: asr, reducción de superficie de ataque, Microsoft Defender para endpoint, microsoft defender, antivirus, av, windows defender
+keywords: 'asr, reducción de superficie de ataque, Microsoft Defender para endpoint, microsoft defender, antivirus, av, windows defender'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,13 +17,8 @@ ms.topic: conceptual
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: 22c90142de3b669bb4e7ba13266f04102af56fe0
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327698"
 ---
+
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprender y usar las capacidades de reducción de superficie de ataque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

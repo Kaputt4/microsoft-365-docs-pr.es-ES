@@ -1,7 +1,7 @@
 ---
-title: 'Implementación de reglas de reducción de superficie de ataque Fase 3: implementar'
+title: Implementar la implementación de reglas de reducción de superficie de ataque (ASR)
 description: Proporciona instrucciones para implementar la implementación de reglas de reducción de superficie de ataque.
-keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
+keywords: 'Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR'
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,23 +11,18 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: 74eb07481358de99cd6f78563e1fb37266ebd1e3
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62329023"
 ---
-# <a name="phase-3---implement"></a>Fase 3: implementar
 
-La fase de implementación mueve el anillo de las pruebas al estado funcional.
+# <a name="step-3-implement-asr-rules"></a>Paso 3: Implementar reglas ASR
+
+La implementación de reglas de reducción de superficie de ataque (ASR) mueve el primer anillo de prueba a un estado funcional y habilitado.
 
 > [!div class="mx-imgBorder"]
 > ![Pasos de implementación de reglas ASR](images/asr-rules-implementation-steps.png)
@@ -128,10 +123,10 @@ Puedes personalizar la notificación para cuando se desencadena una regla y bloq
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Introducción a la implementación de reglas de ASR](attack-surface-reduction-rules-deployment.md)
+[Requisitos previos de implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
 
-[Fase 1: Planificar](attack-surface-reduction-rules-deployment-plan.md)
+[Paso 1: Planear la implementación de reglas ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Fase 2: Probar](attack-surface-reduction-rules-deployment-test.md)
+[Paso 2: Probar reglas ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Fase 4: Operar](attack-surface-reduction-rules-deployment-operationalize.md)
+[Paso 4: Operacionalizar reglas ASR](attack-surface-reduction-rules-deployment-operationalize.md)

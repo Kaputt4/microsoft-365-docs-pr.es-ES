@@ -1,6 +1,6 @@
 ---
 title: Configurar y configurar Microsoft Defender para el plan de extremo 1
-description: Obtenga información sobre cómo configurar y configurar Defender for Endpoint Plan 1. Revise los requisitos, planee su implementación y configure el entorno.
+description: 'Obtenga información sobre cómo configurar y configurar Defender for Endpoint Plan 1. Revise los requisitos, planee su implementación y configure el entorno.'
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -14,15 +14,10 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 61f5e5ab9b47aae190b0eefa74a04805ceace326
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327022"
+  - M365-security-compliance
+  - m365initiative-defender-endpoint
 ---
+
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Configurar y configurar Microsoft Defender para el plan de extremo 1
 
 **Se aplica a:**
@@ -191,7 +186,7 @@ Las reglas de reducción de superficie de ataque están disponibles en dispositi
 > Para obtener más información sobre las reglas de reducción de superficie de ataque, consulta los siguientes recursos:
 > - [Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware](attack-surface-reduction.md)
 > - [Ver la lista de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md)
-> - [Fase 3 de implementación de reglas de reducción de superficie de ataque: implementar](attack-surface-reduction-rules-deployment-implement.md)
+> - [Implementación de reglas de reducción de superficie de ataque Paso 3: Implementar reglas ASR](attack-surface-reduction-rules-deployment-implement.md)
 
 ### <a name="ransomware-mitigation"></a>Mitigación de ransomware
 
@@ -311,7 +306,7 @@ Con la protección web, puede proteger los dispositivos de su organización fren
 
 5. En la **pestaña Configuración,** expanda **Protección web**, especifique la configuración de la tabla siguiente y, a continuación, **elija Siguiente**. <br/><br/>
 
-   | Setting | Recomendación |
+   | Configuración | Recomendación |
    |:---|:---|
    | **Habilitar la protección de red** | Se establece en **Habilitado**. Impide que los usuarios visiten sitios o dominios malintencionados. <br/><br/>Como alternativa, puede establecer la protección de red en **modo auditoría** para ver cómo funcionará en su entorno. En el modo de auditoría, la protección de red no impide que los usuarios visiten sitios o dominios, pero sí realiza un seguimiento de las detecciones como eventos. |
    | **Requerir SmartScreen para Microsoft Edge (versión anterior)** | Se establece en **Sí**. Ayuda a proteger a los usuarios de posibles estafas de suplantación de identidad (phishing) y software malintencionado. |

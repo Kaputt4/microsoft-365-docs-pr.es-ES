@@ -1,7 +1,7 @@
 ---
 title: Ejemplos de directivas de control de dispositivos para Intune
 description: Obtenga información sobre cómo usar directivas de control de dispositivos con ejemplos que se pueden usar con Intune.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, device, control, usb, removable, media, intune
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, device, control, usb, removable, media, intune'
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -12,24 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13aa99264d6e7adc5cfc5cb82df11830f01bfd59
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166211"
 ---
+
 # <a name="examples-of-device-control-policies-for-intune"></a>Ejemplos de directivas de control de dispositivos para Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,7 +33,7 @@ Este documento contiene ejemplos de directivas de control de dispositivos que pu
 
 ## <a name="restrict-access-to-all-removable-media"></a>Restringir el acceso a todos los medios extraíbles
 
-En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. Tenga en cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones `none` de archivos.
+En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. Tenga en `none` cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones de archivos.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -54,9 +49,9 @@ En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. T
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -77,7 +72,7 @@ En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. T
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -104,7 +99,7 @@ En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. T
 
 ## <a name="set-all-removable-media-to-be-read-only"></a>Establecer todos los medios extraíbles como de solo lectura
 
-En el ejemplo siguiente se configura todos los medios extraíbles para que sean de solo lectura. Tenga en cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones de `read` escritura y ejecución.
+En el ejemplo siguiente se configura todos los medios extraíbles para que sean de solo lectura. Tenga en `read` cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones de escritura y ejecución.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -120,9 +115,9 @@ En el ejemplo siguiente se configura todos los medios extraíbles para que sean 
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -143,7 +138,7 @@ En el ejemplo siguiente se configura todos los medios extraíbles para que sean 
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -170,7 +165,7 @@ En el ejemplo siguiente se configura todos los medios extraíbles para que sean 
 
 ## <a name="disallow-program-execution-from-removable-media"></a>No permitir la ejecución del programa de medios extraíbles
 
-En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecución del programa desde medios extraíbles. Tenga en `read` cuenta los permisos y que se aplican en el nivel superior de la `write` directiva.
+En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecución del programa desde medios extraíbles. Tenga en `read` cuenta los `write` permisos y que se aplican en el nivel superior de la directiva.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -186,9 +181,9 @@ En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecució
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -209,7 +204,7 @@ En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecució
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -237,7 +232,7 @@ En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecució
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>Restringir todos los dispositivos de proveedores específicos
 
-En el ejemplo siguiente se restringen todos los dispositivos de proveedores específicos (en este caso identificados por `fff0` y `4525` ). El resto de dispositivos no estarán restringidos, ya que el permiso definido en el nivel superior de la directiva enumera todos los permisos posibles (lectura, escritura y ejecución).
+En el ejemplo siguiente se restringen todos los dispositivos de proveedores específicos (en este caso identificados por `fff0` y `4525`). El resto de dispositivos no estarán restringidos, ya que el permiso definido en el nivel superior de la directiva enumera todos los permisos posibles (lectura, escritura y ejecución).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -253,9 +248,9 @@ En el ejemplo siguiente se restringen todos los dispositivos de proveedores espe
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -276,7 +271,7 @@ En el ejemplo siguiente se restringen todos los dispositivos de proveedores espe
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>
@@ -322,7 +317,7 @@ En el ejemplo siguiente se restringen todos los dispositivos de proveedores espe
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restringir dispositivos específicos identificados por id. de proveedor, id. de producto y número de serie
 
-En el ejemplo siguiente se restringen dos dispositivos específicos, identificados por el identificador de proveedor, el id. de producto `fff0` y los números de serie y `1000` `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . En todos los demás niveles de la directiva, los permisos incluyen todos los valores posibles (lectura, escritura y ejecución), lo que significa que todos los demás dispositivos no estarán restringidos.
+En el ejemplo siguiente se restringen dos dispositivos específicos, identificados por el identificador de `fff0`proveedor, el id. `1000`de producto y los números de serie `04ZSSMHI2O7WBVOA` y `04ZSSMHI2O7WBVOB`. En todos los demás niveles de la directiva, los permisos incluyen todos los valores posibles (lectura, escritura y ejecución), lo que significa que todos los demás dispositivos no estarán restringidos.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -338,9 +333,9 @@ En el ejemplo siguiente se restringen dos dispositivos específicos, identificad
         <key>PayloadIdentifier</key>
         <string>com.microsoft.wdav</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
+        <string>Microsoft Defender settings</string>
         <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
+        <string>Microsoft Defender configuration settings</string>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
@@ -361,7 +356,7 @@ En el ejemplo siguiente se restringen dos dispositivos específicos, identificad
                 <key>PayloadIdentifier</key>
                 <string>com.microsoft.wdav</string>
                 <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
+                <string>Microsoft Defender configuration settings</string>
                 <key>PayloadDescription</key>
                 <string/>
                 <key>PayloadVersion</key>

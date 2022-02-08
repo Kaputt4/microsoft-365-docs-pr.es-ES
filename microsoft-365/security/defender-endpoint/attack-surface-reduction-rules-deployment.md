@@ -1,7 +1,7 @@
 ---
-title: Introducción a la implementación de reglas de ASR
-description: Proporciona instrucciones para implementar reglas de reducción de superficie de ataque.
-keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
+title: Requisitos previos de implementación de reglas ASR
+description: Proporciona información general y instrucciones de requisitos previos sobre la implementación de reglas de reducción de superficie de ataque (ASR).
+keywords: 'Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR'
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,21 +11,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: c6fe1f185567efdc5054cf490579d93eebd5069f
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326986"
 ---
-# <a name="asr-rules-deployment-overview"></a>Introducción a la implementación de reglas de ASR
+
+# <a name="asr-rules-deployment-prerequisites"></a>Requisitos previos de implementación de reglas ASR
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -39,7 +34,7 @@ Las reglas ASR se aplican a determinados comportamientos de software, como:
 
 Al reducir las distintas superficies de ataque, puedes ayudar a evitar que los ataques se sucedan en primer lugar.
 
-Durante la preparación inicial, es fundamental que comprenda las capacidades de los sistemas que va a poner en marcha. Comprender las capacidades le ayudará a determinar qué reglas de ASR son más importantes para proteger su organización.
+Durante la preparación inicial, es fundamental que comprenda las capacidades de los sistemas que va a poner en marcha. Comprender las capacidades le ayudará a determinar qué reglas de ASR son más importantes para proteger su organización. Además, hay varios requisitos previos a los que debe atender para preparar la implementación de ASR.
 
 >[!IMPORTANT]
 >En esta guía se proporcionan imágenes y ejemplos que le ayudarán a decidir cómo configurar reglas ASR; es posible que estas imágenes y ejemplos no reflejen las mejores opciones de configuración para el entorno.
@@ -111,7 +106,7 @@ Las siguientes Antivirus de Microsoft Defender componentes no deben tener más d
 
 Mantener Antivirus de Microsoft Defender versiones actuales ayuda a reducir las reglas ASR falsos resultados positivos y mejora las Antivirus de Microsoft Defender de detección. Para obtener más información sobre las versiones actuales y cómo actualizar los distintos componentes de Antivirus de Microsoft Defender, [visite Antivirus de Microsoft Defender soporte técnico de la plataforma](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-## <a name="asr-rules-deployment-phases"></a>Fases de implementación de reglas ASR
+## <a name="asr-rules-deployment-steps"></a>Pasos de implementación de reglas ASR
 
 Al igual que con cualquier implementación nueva a gran escala que podría afectar potencialmente a las operaciones de línea de negocio, es importante ser metódico en la planeación y la implementación. Debido a las potentes capacidades de las reglas ASR para evitar malware, es necesario planear e implementar cuidadosamente estas reglas para garantizar que funcionen mejor para los flujos de trabajo de clientes únicos. Para trabajar en su entorno, debe planear, probar, implementar y poner en funcionamiento cuidadosamente las reglas ASR.  
 

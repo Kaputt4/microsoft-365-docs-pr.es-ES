@@ -6,16 +6,11 @@ ms.author: pshelton
 manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 1/21/2021
+ms.date: 2/4/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: c104f5bdc28966d080318ce0559dfe5acbfec8ea
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187274"
 ---
+
 # <a name="office-tls-certificate-changes"></a>Cambios en el certificado TLS de Office
 
 Microsoft 365 actualiza servicios que powering messaging, meetings, telephony, voice y video para usar certificados TLS de un conjunto diferente de autoridades de certificación raíz (CA). Este cambio se realiza porque la ca raíz actual expirará en mayo de 2025.
@@ -37,7 +32,13 @@ Los puntos de conexión afectados incluyen (pero no están limitados a):
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-Este cambio no afectará a los certificados, dominios o servicios usados en las instancias de nube nacionales de Estados Unidos, China o Alemania de Microsoft 365.
+Además, los Skype Empresarial online en las instancias de nube nacionales del Gobierno de estados unidos de Microsoft 365 realizarán el mismo cambio, lo que afectará a puntos de conexión como:
+- *.online.dod.skypeforbusiness.us
+- *.online.gov.skypeforbusiness.us
+- *.um-dod.office365.us
+- *.um.office365.us
+
+Este cambio no afectará a otros certificados, dominios o servicios usados en las instancias de nube nacionales de Estados Unidos, China o Alemania de Microsoft 365.
 
 Toda la información de certificado de este artículo se proporcionó anteriormente en [Microsoft 365 cadenas](./encryption-office-365-certificate-chains.md) de cifrado a más tardar en octubre de 2020.
 
@@ -79,26 +80,26 @@ con una de las siguientes CA intermedias:
 
 ## <a name="will-this-change-affect-me"></a>¿Me afectará este cambio?
 
-La CA raíz "DigiCert Global Root G2" es ampliamente de confianza para los sistemas operativos, incluidos Windows, macOS, Android e iOS y por exploradores como Microsoft Edge, Chrome, Safari y Firefox. Esperamos que la **mayoría Microsoft 365 clientes no se verán afectados.** 
+La CA raíz "DigiCert Global Root G2" es ampliamente de confianza para los sistemas operativos, incluidos Windows, macOS, Android e iOS y por exploradores como Microsoft Edge, Chrome, Safari y Firefox. Esperamos que la **mayoría Microsoft 365 clientes no se verán afectados**. 
 
-Sin embargo, la aplicación puede resultar afectada si especifica explícitamente una lista de **CA aceptables.** Esta práctica se conoce como "anclado de certificado". Los clientes que no tengan las nuevas CA raíz en su lista de CA aceptables recibirán errores de validación de certificados, lo que puede afectar a la disponibilidad o función de la aplicación.
+Sin embargo, **la aplicación puede resultar afectada si especifica explícitamente una lista de CA aceptables**. Esta práctica se conoce como "anclado de certificado". Los clientes que no tengan las nuevas CA raíz en su lista de CA aceptables recibirán errores de validación de certificados, lo que puede afectar a la disponibilidad o función de la aplicación.
 
 Estas son algunas maneras de detectar si la aplicación puede estar afectada:
 
 - Busque en el código fuente la huella digital, el nombre común u otras propiedades de cualquiera de las CA intermedias que se encuentran [aquí](https://www.microsoft.com/pki/mscorp/cps/default.htm). Si hay una coincidencia, la aplicación se verá afectada. Para resolver este problema, actualice el código fuente para agregar las propiedades de las nuevas CA. Como práctica recomendada, asegúrese de que las CA se pueden agregar o editar con un breve aviso. Las normativas del sector requieren que los certificados de ca se reemplacen en un plazo de siete días en algunas circunstancias, por lo que las aplicaciones que implementan la fijación de certificados deben reaccionar rápidamente a estos cambios.
 
-- .NET expone las funciones y las funciones de devolución de llamada, que permiten a los desarrolladores usar lógica personalizada para determinar si los certificados son válidos en lugar de confiar en el almacén de certificados `System.Net.ServicePointManager.ServerCertificateValidationCallback` `System.Net.HttpWebRequest.ServerCertificateValidationCallback` Windows estándar. Un desarrollador puede agregar lógica que busca un nombre común específico o huella digital o solo permite una CA raíz específica como "Raíz de CyberTrust de Baltimore". Si la aplicación usa estas funciones de devolución de llamada, debe asegurarse de que acepta tanto las CA raíz y intermedias antiguas como las nuevas.
+- .NET expone las `System.Net.ServicePointManager.ServerCertificateValidationCallback` `System.Net.HttpWebRequest.ServerCertificateValidationCallback` funciones y las funciones de devolución de llamada, que permiten a los desarrolladores usar lógica personalizada para determinar si los certificados son válidos en lugar de confiar en el almacén de certificados Windows estándar. Un desarrollador puede agregar lógica que busca un nombre común específico o huella digital o solo permite una CA raíz específica como "Raíz de CyberTrust de Baltimore". Si la aplicación usa estas funciones de devolución de llamada, debe asegurarse de que acepta tanto las CA raíz y intermedias antiguas como las nuevas.
 
-- Las aplicaciones nativas pueden usar `WINHTTP_CALLBACK_STATUS_SENDING_REQUEST` , lo que permite a las aplicaciones nativas implementar lógica de validación de certificados personalizada. El uso de esta notificación es poco común y requiere una cantidad significativa de código personalizado para implementar. De forma similar a lo anterior, asegúrese de que la aplicación acepta tanto las ca raíz antiguas como las nuevas y las intermedias. 
+- Las aplicaciones nativas pueden usar `WINHTTP_CALLBACK_STATUS_SENDING_REQUEST`, lo que permite a las aplicaciones nativas implementar lógica de validación de certificados personalizada. El uso de esta notificación es poco común y requiere una cantidad significativa de código personalizado para implementar. De forma similar a lo anterior, asegúrese de que la aplicación acepta tanto las ca raíz antiguas como las nuevas y las intermedias. 
 
 - Si usa una aplicación que se integra con las API de Microsoft Teams, Skype, Skype Empresarial Online o Microsoft Dynamics y no está seguro de si usa la fijación de certificados, consulte con el proveedor de aplicaciones.
 
 - Los diferentes sistemas operativos y tiempos de ejecución de idioma que se comunican con los servicios de Azure pueden requerir otros pasos para crear y validar correctamente las nuevas cadenas de certificados:
-   - **Linux:** muchas distribuciones requieren que agregue CA a `/etc/ssl/certs` . Para obtener instrucciones específicas, consulte la documentación de la distribución.
-   - **Java:** asegúrese de que el Java de claves contiene las CA enumeradas anteriormente.
-   - Windows en **entornos desconectados:** los sistemas que se ejecutan en entornos desconectados tendrán que agregar las nuevas CA raíz a su almacén y las nuevas CA intermedias a su `Trusted Root Certification Authorities` `Intermediate Certification Authorities` almacén.
-   - **Android:** comprueba la documentación del dispositivo y la versión de Android.
-   - **IoT o dispositivos** incrustados: los dispositivos incrustados, como los cuadros superiores de los televisores, suelen enviarse con un conjunto limitado de certificados de entidad de certificación raíz y no tienen una forma fácil de actualizar el almacén de certificados. Si escribe código para o administra implementaciones de dispositivos personalizados incrustados o ioT, asegúrese de que los dispositivos confían en las nuevas CA raíz. Es posible que deba ponerse en contacto con el fabricante del dispositivo.
+   - **Linux**: muchas distribuciones requieren que agregue CA a `/etc/ssl/certs`. Para obtener instrucciones específicas, consulte la documentación de la distribución.
+   - **Java**: asegúrese de que el Java de claves contiene las CA enumeradas anteriormente.
+   - **Windows en entornos desconectados**: los sistemas que se ejecutan en entornos desconectados tendrán que agregar las nuevas CA raíz a su almacén y las nuevas CA intermedias `Trusted Root Certification Authorities` `Intermediate Certification Authorities` a su almacén.
+   - **Android**: comprueba la documentación del dispositivo y la versión de Android.
+   - **IoT o dispositivos** incrustados: los dispositivos incrustados, como los cuadros superiores de los televisores, suelen enviarse con un conjunto limitado de certificados de entidad raíz y no tienen una forma fácil de actualizar el almacén de certificados. Si escribe código para o administra implementaciones de dispositivos personalizados incrustados o ioT, asegúrese de que los dispositivos confían en las nuevas CA raíz. Es posible que deba ponerse en contacto con el fabricante del dispositivo.
 
 - Si tiene un entorno donde las reglas de firewall permiten llamadas salientes solo a puntos de conexión específicos, permita las siguientes direcciones URL de lista de revocación de certificados (CRL) o protocolo de estado de certificado en línea (OCSP):
    - `http://crl3.digicert.com`

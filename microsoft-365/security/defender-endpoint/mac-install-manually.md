@@ -1,7 +1,7 @@
 ---
 title: Implementación manual para Microsoft Defender para endpoint en macOS
-description: Instale Microsoft Defender para Endpoint en macOS manualmente, desde la línea de comandos.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, catalina, mojave, high sierra
+description: 'Instale Microsoft Defender para Endpoint en macOS manualmente, desde la línea de comandos.'
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, catalina, mojave, high sierra'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,28 +12,23 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f6524589146bd6daebbf77611cc637f0cc9e79d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171274"
 ---
+
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Registrarse para obtener una versión de prueba gratuita](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
+> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
 
 En este tema se describe cómo implementar Microsoft Defender para endpoint en macOS manualmente. Una implementación correcta requiere la finalización de todos los pasos siguientes:
 
@@ -44,13 +39,13 @@ En este tema se describe cómo implementar Microsoft Defender para endpoint en m
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
-Antes de empezar, consulta la página principal de Microsoft Defender para Endpoint [en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
+Antes de empezar, consulta la página principal de [Microsoft Defender para Endpoint en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
 
 ## <a name="download-installation-and-onboarding-packages"></a>Descargar paquetes de instalación e incorporación
 
 Descargue los paquetes de instalación e incorporación de Microsoft 365 Defender portal:
 
-1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>vaya **a Configuración > Endpoints > Administración de dispositivos > incorporación**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, vaya **a Configuración > Endpoints > Administración de dispositivos > incorporación**.
 2. En la sección 1 de la página, establezca el sistema operativo en **macOS** y el método Deployment en **Script local**.
 3. En la sección 2 de la página, seleccione **Descargar paquete de instalación**. Guárdelo como wdav.pkg en un directorio local.
 4. En la sección 2 de la página, seleccione **Descargar paquete de incorporación**. Guárdelo WindowsDefenderATPOnboardingPackage.zip en el mismo directorio.
@@ -67,7 +62,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
     ![Captura de pantalla de instalación de la aplicación1.](images/mdatp-28-appinstall.png)
 
-2. Seleccione **Continuar,** acepte los términos de licencia y escriba la contraseña cuando se le pida.
+2. Seleccione **Continuar**, acepte los términos de licencia y escriba la contraseña cuando se le pida.
 
     ![Captura de pantalla de instalación de la aplicación2.](images/mdatp-29-appinstalllogin.png)
 
@@ -76,14 +71,14 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
    ![Captura de pantalla de instalación de la aplicación3.](images/mdatp-30-systemextension.png)
 
-3. Seleccione **Abrir preferencias de seguridad** o Abrir preferencias del sistema > Seguridad & **privacidad**. Seleccione **Permitir**:
+3. Seleccione **Abrir preferencias de seguridad** o **Abrir preferencias del sistema > Seguridad & privacidad**. Seleccione **Permitir**:
 
     ![Captura de pantalla de la ventana seguridad y privacidad.](images/mdatp-31-securityprivacysettings.png)
 
    La instalación continúa.
 
    > [!CAUTION]
-   > Si no selecciona **Permitir,** la instalación continuará después de 5 minutos. Microsoft Defender para endpoint se cargará, pero algunas características, como la protección en tiempo real, se deshabilitarán. Consulte [Solucionar problemas de extensión del kernel](mac-support-kext.md) para obtener información sobre cómo resolver esto.
+   > Si no selecciona **Permitir, la** instalación continuará después de 5 minutos. Microsoft Defender para endpoint se cargará, pero algunas características, como la protección en tiempo real, se deshabilitarán. Consulte [Solucionar problemas de extensión del kernel](mac-support-kext.md) para obtener información sobre cómo resolver esto.
 
 > [!NOTE]
 > macOS puede solicitar reiniciar el dispositivo tras la primera instalación de Microsoft Defender para endpoint. La protección en tiempo real no estará disponible hasta que se reinicie el dispositivo.
@@ -96,13 +91,13 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
     ![Captura de pantalla de instalación de la aplicación4.](images/monterey-install-1.png)
 
-2. Seleccione **Continuar,** acepte los términos de licencia y escriba la contraseña cuando se le pida.
+2. Seleccione **Continuar**, acepte los términos de licencia y escriba la contraseña cuando se le pida.
 
 3. Al final del proceso de instalación, se te promocionará para aprobar las extensiones del sistema usadas por el producto. Seleccione **Abrir preferencias de seguridad**.
 
     ![Aprobación de extensión del sistema.](images/monterey-install-2.png)
 
-4. En la **ventana Seguridad & privacidad,** seleccione **Permitir**.
+4. En la **ventana Seguridad & privacidad** , seleccione **Permitir**.
 
     ![Preferencias de seguridad de extensión del sistema1.](images/monterey-install-3.png)
 
@@ -112,7 +107,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
     ![Preferencias de seguridad de extensión del sistema2.](images/monterey-install-4.png)
 
-7. Abra **System Preferences** Security & Privacidad y vaya a la pestaña Privacidad. Conceda permiso de acceso en disco completo a Atp de Microsoft Defender y Extensión de seguridad de punto de conexión de ATP de Microsoft \>  **Defender.**   
+7. Abra **System Preferences** \> **Security & Privacidad** y vaya a la pestaña Privacidad. Conceda permiso de  acceso en disco completo a **Microsoft Defender** y **Microsoft Defenders Endpoint Security Extension**.
 
     ![Acceso en disco completo.](images/monterey-install-5.png)
 
@@ -148,7 +143,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 > [!CAUTION]
 > macOS 10.15 (Catalina) contiene nuevas mejoras de seguridad y privacidad. A partir de esta versión, de forma predeterminada, las aplicaciones no pueden acceder a determinadas ubicaciones del disco (como Documentos, Descargas, Escritorio, etc.) sin consentimiento explícito. En ausencia de este consentimiento, Microsoft Defender para Endpoint no puede proteger completamente el dispositivo.
 
-1. Para conceder el consentimiento, abra **Preferencias** del \> **sistema Seguridad & Privacidad** \> **Acceso** completo al \> **disco**. Haga clic en el icono de bloqueo para realizar cambios (parte inferior del cuadro de diálogo). Seleccione Microsoft Defender para Endpoint.
+1. Para conceder el consentimiento, abra **System Preferences** \> **Security & Privacy** \> **Full** \> **Disk Access**. Haga clic en el icono de bloqueo para realizar cambios (parte inferior del cuadro de diálogo). Seleccione Microsoft Defender para Endpoint.
 
 2. Ejecute una prueba de detección de ANTIVIRUS para comprobar que el dispositivo está correctamente incorporado e informando al servicio. Realice los pasos siguientes en el dispositivo recién incorporado:
 
@@ -174,7 +169,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
    1. En el explorador, como Microsoft Edge para Mac o Safari.
 
-   1. Descargue MDATP MacOS DIY.zip https://aka.ms/mdatpmacosdiy y extraiga.
+   1. Descargue MDATP MacOS DIY.zip y https://aka.ms/mdatpmacosdiy extraiga.
 
       Es posible que se le pida lo siguiente:
 
@@ -192,7 +187,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
    >
    > > **"MDATP MacOS DIY" no se puede abrir porque el desarrollador no puede ser verificador.**<br/>
    > > macOS no puede comprobar que esta aplicación está libre de malware.<br/>
-   > > **\[ Pasar a \] Cancelar papelera** **\[ \]**
+   > > **\[Pasar a Cancelar papelera\]** **\[\]**
 
 7. Haga clic en **Cancelar**.
 
@@ -214,7 +209,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
     En unos minutos se debe generar una alerta denominada "macOS EDR Test Alert".
 
-11. Vaya a Microsoft 365 Defender portal ( https://security.microsoft.com/) .
+11. Vaya a Microsoft 365 Defender portal (https://security.microsoft.com/).
 
 12. Vaya a la cola de alertas.
 

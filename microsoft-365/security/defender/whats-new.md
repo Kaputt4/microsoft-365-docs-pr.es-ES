@@ -1,7 +1,7 @@
 ---
 title: Novedades de Microsoft 365 Defender
 description: Enumera las nuevas características y funcionalidades de Microsoft 365 Defender
-keywords: novedades de Microsoft 365 Defender, ga, generalmente disponible, capacidades, disponible, nuevo
+keywords: 'novedades de Microsoft 365 Defender, ga, generalmente disponible, capacidades, disponible, nuevo'
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,16 +14,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+  - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ce81edf38eed82deec6e112070b7137fca21dc03
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218902"
 ---
+
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -43,13 +38,13 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender para Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
-- [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+- [Novedades de Microsoft Defender para aplicaciones en la nube](/cloud-app-security/release-notes)
 
 También puede obtener actualizaciones de productos y notificaciones importantes a través del centro [de mensajes](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 ## <a name="december-2021"></a>Diciembre de 2021
 
-- (GA) La tabla se agregó a corto plazo en la búsqueda avanzada para que pueda ver evidencias de dónde se detectó un software específico `DeviceTvmSoftwareEvidenceBeta` en un dispositivo.
+- (GA) La `DeviceTvmSoftwareEvidenceBeta` tabla se agregó a corto plazo en la búsqueda avanzada para que pueda ver evidencias de dónde se detectó un software específico en un dispositivo.
 
 ## <a name="november-2021"></a>Noviembre de 2021
 
@@ -59,25 +54,25 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 ## <a name="october-2021"></a>Octubre de 2021
 
-- (GA) En la búsqueda avanzada, se agregaron más columnas en la [tabla CloudAppEvents.](advanced-hunting-cloudappevents-table.md) Ahora puede incluir `AccountType` , , , , y a sus `IsExternalUser` `IsImpersonated` `IPTags` `IPCategory` `UserAgentTags` consultas.
+- (GA) En la búsqueda avanzada, se agregaron más columnas en la [tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md) . Ahora puede incluir `AccountType`, `IsExternalUser`, `IsImpersonated`, `IPTags`, `IPCategory`y a `UserAgentTags` sus consultas.
 
 ## <a name="september-2021"></a>Septiembre de 2021
 
-- (GA) Microsoft Defender para Office 365 datos de eventos está disponible en la API Microsoft 365 Defender streaming de eventos. Puede ver la disponibilidad y el estado de los tipos de eventos en el archivo Microsoft 365 Defender tipos de eventos [en la API de streaming.](supported-event-types.md)
+- (GA) Microsoft Defender para Office 365 datos de eventos está disponible en la API Microsoft 365 Defender streaming de eventos. Puede ver la disponibilidad y el estado de los tipos de eventos en la API Microsoft 365 Defender [eventos admitidos en la API de streaming](supported-event-types.md).
 - (GA) Microsoft Defender para los Office 365 disponibles en la búsqueda avanzada ya está disponible en general.
 - (GA) Asignar incidentes y alertas a cuentas de usuario
 
-  Puede asignar un incidente y todas las alertas asociadas a él  a una cuenta de  usuario desde **Asignar a:** en el panel Administrar incidente de un incidente o en el panel Administrar alerta de una alerta.
+  Puede asignar un incidente y todas las alertas asociadas a él a una cuenta de usuario desde **Asignar a:** en el  panel Administrar incidente de un incidente o en  el panel Administrar alerta de una alerta.
 
 ## <a name="august-2021"></a>Agosto de 2021
 
 - (Versión preliminar) Microsoft Defender para obtener Office 365 disponibles en la búsqueda avanzada
 
-  Las nuevas columnas de las tablas de correo electrónico pueden proporcionar más información sobre las amenazas basadas en correo electrónico para realizar investigaciones más exhaustivas mediante la búsqueda avanzada. Ahora puede incluir la `AuthenticationDetails` columna en [EmailEvents](./advanced-hunting-emailevents-table.md), `FileSize` en [EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)y en las tablas `ThreatTypes` `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md)
+  Las nuevas columnas de las tablas de correo electrónico pueden proporcionar más información sobre las amenazas basadas en correo electrónico para realizar investigaciones más exhaustivas mediante la búsqueda avanzada. Ahora puede incluir la columna `AuthenticationDetails` en [EmailEvents](./advanced-hunting-emailevents-table.md), `FileSize` [en EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)`ThreatTypes` y en `DetectionMethods` las tablas [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md).
 
 - (Versión preliminar) Gráfico de incidentes
 
-  Una nueva **pestaña Graph** en  la pestaña Resumen de un incidente muestra el ámbito completo del ataque, cómo se extendió el ataque a través de la red con el tiempo, dónde se inició y hasta dónde llegó el atacante.
+  Una nueva **pestaña Graph** en la pestaña Resumen de  un incidente muestra el ámbito completo del ataque, cómo se extendió el ataque a través de la red con el tiempo, dónde se inició y hasta dónde llegó el atacante.
 
 ## <a name="july-2021"></a>Julio de 2021
 
@@ -97,11 +92,11 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 - (Versión preliminar) [Tomar medidas en la búsqueda avanzada](advanced-hunting-take-action.md)
 
-  Contienen rápidamente amenazas o abordan activos en peligro que se encuentran en la [búsqueda avanzada.](advanced-hunting-overview.md)
+  Contiene rápidamente amenazas o aborda los activos en peligro que encuentras en la [búsqueda avanzada](advanced-hunting-overview.md).
 
 - (Versión preliminar) [Referencia de esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)
 
-  Obtenga información sobre tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia incluye tipos de eventos admitidos `ActionType` (valores) y consultas de ejemplo.
+  Obtenga información sobre tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia incluye tipos de eventos admitidos (`ActionType` valores) y consultas de ejemplo.
 
 - (Versión preliminar) [Función DeviceFromIP()](advanced-hunting-devicefromip-function.md)
 
@@ -135,6 +130,6 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 ## <a name="february-2021"></a>Febrero de 2021
 
-- (Versión preliminar) El portal [de Microsoft 365 Defender https://security.microsoft.com) mejorado (](https://security.microsoft.com) ahora está disponible en versión preliminar pública. Esta nueva experiencia lleva a Defender for Endpoint and Defender para Office 365 al centro. [Más información sobre los cambios](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+- (Versión preliminar) El portal [de Microsoft 365 Defender mejorado (https://security.microsoft.com)](https://security.microsoft.com) ahora está disponible en versión preliminar pública. Esta nueva experiencia lleva a Defender for Endpoint and Defender para Office 365 al centro. [Más información sobre los cambios](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-- **[(Versión preliminar) Microsoft 365 Defender](api-overview.md)** API: las API de Microsoft 365 Defender de nivel superior le permitirán automatizar los flujos de trabajo en función de las tablas de búsqueda avanzada y de incidentes compartidos.
+- **[(Versión preliminar) Microsoft 365 Defender](api-overview.md)** API: las API de Microsoft 365 Defender de nivel superior le permitirán automatizar flujos de trabajo basados en el incidente compartido y las tablas avanzadas de búsqueda.

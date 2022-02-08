@@ -1,7 +1,7 @@
 ---
-title: 'Implementación de reglas de reducción de superficie de ataque Fase 4: operativa'
+title: Implementar la implementación de reglas de reducción de superficie de ataque (ASR)
 description: Proporciona instrucciones para implementar las reglas de reducción de superficie de ataque.
-keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
+keywords: 'Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR'
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,25 +11,20 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
-ms.openlocfilehash: 567a6b8c2793853fc5240a271e510bae6a561ba2
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327611"
 ---
-# <a name="phase-4---operationalize"></a>Fase 4: operativa
 
-Después de implementar completamente las reglas ASR, es fundamental que tenga procesos para supervisar y responder a las actividades relacionadas con ASR.
+# <a name="step-4-operationalize-asr-rules"></a>Paso 4: Operacionalizar reglas ASR
 
-## <a name="manage-false-positives"></a>Administrar falsos positivos
+Después de implementar completamente las reglas de reducción de superficie de ataque (ASR), es fundamental que haya procesos para supervisar y responder a las actividades relacionadas con ASR.
+
+## <a name="managing-false-positives"></a>Administración de falsos positivos
 
 Los falsos positivos/negativos pueden producirse con cualquier solución de protección contra amenazas. Los falsos positivos son casos en los que se detecta e identifica una entidad (como un archivo o un proceso) como malintencionada, aunque la entidad no es realmente una amenaza. En cambio, un falso negativo es una entidad que no se detectó como una amenaza pero que es malintencionada. Para obtener más información sobre falsos positivos y falsos negativos, vea: [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 
@@ -77,10 +72,10 @@ Para obtener más información acerca de las opciones de búsqueda, consulta: [D
 
 ## <a name="topics-in-this-deployment-collection"></a>Temas de esta colección de implementación
 
-[Introducción a la implementación de reglas de ASR](attack-surface-reduction-rules-deployment.md)
+[Requisitos previos de implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
 
-[Fase 1: Planificar](attack-surface-reduction-rules-deployment-plan.md)
+[Paso 1: Planear la implementación de reglas ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Fase 2: Probar](attack-surface-reduction-rules-deployment-test.md)
+[Paso 2: Probar reglas ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Fase 3: Implementar](attack-surface-reduction-rules-deployment-implement.md)
+[Paso 3: Implementar reglas ASR](attack-surface-reduction-rules-deployment-implement.md)

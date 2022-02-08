@@ -72,8 +72,8 @@ Deberá seguir los pasos siguientes:
 
    **General**:
 
-   - Nombre: incorporación de MDATP para macOS
-   - Descripción: MDATP EDR incorporación para macOS
+   - Nombre: incorporación de MDE para macOS
+   - Descripción: MDE EDR incorporación para macOS
    - Categoría: Ninguna
    - Método distribution: Install Automatically
    - Nivel: Nivel de equipo
@@ -106,7 +106,7 @@ Deberá seguir los pasos siguientes:
 
     ![Imagen de destinos.](images/jamfpro-targets.png)
 
-10. Haga clic en **Guardar**.
+10. Seleccione **Guardar**.
 
     ![Imagen de los equipos de destino de implementación.](images/jamfpro-deployment-target.png)
 
@@ -359,7 +359,7 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     >
     >![Imagen de la carga de archivos de Intune de configuración.](images/8e69f867664668796a3b2904896f0436.png)
 
-11. Haga clic en **Guardar**.
+11. Seleccione **Guardar**.
 
     ![Imagen de configuración Guardar imagen.](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -501,7 +501,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     ![Imagen de configuración de configuración uplimg.](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. Haga clic en **Guardar**.
+11. Seleccione **Guardar**.
 
     ![Imagen de la configuración saveimg.](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -600,7 +600,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
 15. Seleccione **Agregar**.
 
-16. Haga clic en **Guardar**.
+16. Seleccione **Guardar**.
 
 17. Seleccione **Listo**.
 
@@ -654,7 +654,7 @@ Como alternativa, puede descargar [fulldisk.mobileconfig](https://github.com/mic
 
     ![La imagen de las opciones de configuración agrega imágenes.](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. Haga clic en **Guardar**.
+9. Seleccione **Guardar**.
 
     ![Imagen de la configuración saveimag.](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -709,7 +709,7 @@ Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microso
 
    ![Imagen de addima de configuración de configuración.](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. Haga clic en **Guardar**.
+9. Seleccione **Guardar**.
 
    ![Imagen del ámbito sysext de configuración.](images/sysext-scope.png)
 
@@ -728,14 +728,14 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 2. Haga **clic en** Nuevo y escriba los siguientes detalles para **Opciones**:
 
     - Ficha **General**:
-        - **Nombre**: Extensión de red atp de Microsoft Defender
+        - **Nombre**: Extensión de red de Microsoft Defender
         - **Descripción**: macOS 10.15 (Catalina) o posterior
         - **Categoría**: Ninguno *(predeterminado)*
         - **Método Distribution**: Instalar automáticamente *(valor predeterminado)*
         - **Nivel**: Nivel de equipo *(predeterminado)*
 
     - Filtro **de contenido de pestaña**:
-        - **Nombre del filtro**: Filtro de contenido de ATP de Microsoft Defender
+        - **Nombre del filtro**: filtro de contenido de Microsoft Defender
         - **Identificador**: `com.microsoft.wdav`
         - Dejar **en blanco dirección de** servicio, **organización**, **nombre de usuario**, **contraseña**, **certificado** (**incluir** *no está* seleccionado)
         - **Orden de filtro**: Inspector
@@ -762,7 +762,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     ![Imagen de configuración adim.](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. Haga clic en **Guardar**.
+7. Seleccione **Guardar**.
 
     ![Imagen de configuración de savimg netextscop.](images/netext-scope.png)
 
@@ -820,7 +820,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para endpo
 
      ![Imagen de la pestaña de limitación de configuración.](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 
-8. Haga clic en **Guardar**. El paquete se carga en Jamf Pro.
+8. Seleccione **Guardar**. El paquete se carga en Jamf Pro.
 
    ![Imagen del paquete de configuración upl jamf pro.](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -847,7 +847,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para endpo
 
     ![Imagen de la comprobación de la configuración.](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-13. Haga clic en **Guardar**.
+13. Seleccione **Guardar**.
 
 14. Seleccione **Paquetes > Configurar**.
 
@@ -857,7 +857,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para endpo
 
     ![Imagen de las opciones de configuración MDATP y MDA add.](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. Haga clic en **Guardar**.
+16. Seleccione **Guardar**.
 
     ![Imagen de configuraciónsavimg.](images/9d6e5386e652e00715ff348af72671c6.png)
 

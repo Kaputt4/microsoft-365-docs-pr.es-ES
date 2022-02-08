@@ -1,7 +1,7 @@
 ---
 title: Incorporación Windows dispositivos a Microsoft Defender para endpoint a través de la directiva de grupo
 description: Use la directiva de grupo para implementar el paquete de configuración Windows dispositivos para que se incorpore al servicio.
-keywords: configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo
+keywords: 'configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,13 +16,8 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 7881a09c0530da09880c0fa1c8c2d73ed0c83000
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327574"
 ---
+
 # <a name="onboard-windows-devices-using-group-policy"></a>Incorporar dispositivos Windows mediante directiva de grupo 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -125,7 +120,7 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Policy|Setting
+Policy|Configuración
 ---|---
 Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -133,7 +128,7 @@ Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muest
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Policy|Setting
+Policy|Configuración
 ---|---
 Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, Block
 
@@ -141,7 +136,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, B
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Policy|Setting
+Policy|Configuración
 ---|---
 Unirse a Microsoft MAPS|Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -150,7 +145,7 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Real-time Protection
 
-Policy|Setting
+Policy|Configuración
 ---|---
 Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
@@ -163,7 +158,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Policy|Setting
+Policy|Configuración
 ---|---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -171,7 +166,7 @@ Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Attack Surface Reduction
 
-Obtén la lista actual de GUID de reglas de reducción de superficie de ataque de la fase 3 de implementación de reglas de reducción de superficie [de ataque: implementar](attack-surface-reduction-rules-deployment-implement.md). Para obtener más información sobre las reglas, consulta [Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md)
+Obtén la lista actual de GUID de reglas de reducción de superficie de ataque de la implementación de reglas de reducción de superficie de [ataque Paso 3: Implementar reglas ASR](attack-surface-reduction-rules-deployment-implement.md). Para obtener más información sobre las reglas, consulta [Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md)
 
 1. Abre la **directiva Configurar reducción de superficie de ataque** .
 
@@ -185,7 +180,7 @@ Obtén la lista actual de GUID de reglas de reducción de superficie de ataque d
 
    ![Imagen de configuración de reducción de superficie de ataque.](images/asr-guid.png)
 
-Policy|Ubicación|Setting
+Policy|Ubicación|Configuración
 ---|---|---
 Configurar acceso controlado a carpetas| \Windows Components\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Controlled Folder Access| Habilitado, modo auditoría
 

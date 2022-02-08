@@ -173,10 +173,10 @@ sections:
         answer: |
           Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) . Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
       - question: |
-          Recursos adicionales
+          Vea también
         answer: |
           * [Introducción a la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
           * [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
-          * [Fase 3 de implementación de reglas de reducción de superficie de ataque: implementar](attack-surface-reduction-rules-deployment-implement.md)
+          * [Implementación de reglas de reducción de superficie de ataque Paso 3: Implementar reglas ASR](attack-surface-reduction-rules-deployment-implement.md)
           * [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
           * [Compatibilidad de Antivirus de Microsoft Defender con otros antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

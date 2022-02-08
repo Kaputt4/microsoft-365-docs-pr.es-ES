@@ -1,7 +1,7 @@
 ---
 title: Novedades de Microsoft Defender para Endpoint en Mac
 description: Obtenga información sobre los cambios principales de versiones anteriores de Microsoft Defender para Endpoint en Mac.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, installation, macos, whatsnew
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, installation, macos, whatsnew'
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 054a684829217676df4bb3bf7d8469dbfc53a2a3
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265696"
 ---
+
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,19 +28,14 @@ ms.locfileid: "62265696"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!NOTE]
-> A partir de finales de enero de 2022, se hará referencia a Microsoft Defender para endpoint (anteriormente conocido como ATP de Microsoft Defender) como "Microsoft Defender" entre usuarios finales que se enfrentan a experiencias MDE en macOS. 
-> 
-> Este cambio está disponible actualmente en los canales de actualización Beta (anteriormente denominado Insider Fast) y Preview (anteriormente denominado Insider Slow). La versión mínima del producto que incluye este cambio es 101.56.35. Vea las notas de la versión siguientes correspondientes a esta versión para obtener más información.
-> 
-> Este cambio no afecta a la herramienta `mdatp` de línea de comandos.
->
-> **Acción necesaria:** si su empresa tiene configuraciones personalizadas que dependen del nombre del producto o de la ruta de instalación de la aplicación, estas configuraciones deben actualizarse con los nuevos valores enumerados anteriormente.
+## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0)
+
+- Correcciones de errores
 
 ## <a name="1015635-20121121156350"></a>101.56.35 (20.121121.15635.0)
 
 - Se ha cambiado el nombre de la aplicación de "Atp de Microsoft Defender" a "Microsoft Defender". Los usuarios finales observarán los siguientes cambios:
-  - La ruta de instalación de la aplicación se ha cambiado de `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app` a .
+  - La ruta de instalación de la aplicación se ha cambiado de `/Application/Microsoft Defender ATP.app` a `/Applications/Microsoft Defender.app`.
   - Dentro de la experiencia del usuario, las repeticiones de "ATP de Microsoft Defender" se han reemplazado por "Microsoft Defender"
 - Se ha resuelto un problema por el que algunas aplicaciones VPN no se podían conectar debido al filtro de contenido de red que se distribuye con Microsoft Defender para Endpoint para Mac
 - Se ha corregido un problema detectado en macOS 12.2 beta 2 en el que el paquete de instalación no se podía abrir debido a un cambio en el sistema operativo (SO) que impide la instalación de paquetes con determinadas características. Aunque parece que este cambio del sistema operativo no se incluye en la versión final de macOS 12.2, es probable que se reintrodujo en una versión futura de macOS. Por lo tanto, animamos a todos los administradores empresariales a actualizar el paquete de Microsoft Defender para Endpoint en su consola de administración a esta versión del producto (o a una versión más reciente).
@@ -61,7 +51,7 @@ ms.locfileid: "62265696"
 
 ## <a name="1014925-20121092149250"></a>101.49.25 (20.121092.14925.0)
 
-- Se agregó un nuevo modificador a la herramienta de línea de comandos para controlar si los archivos se examinan durante los exámenes a petición. Esto se puede configurar a través `mdatp config scan-archives --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
+- Se agregó un nuevo modificador a la herramienta de línea de comandos para controlar si los archivos se examinan durante los exámenes a petición. Esto se puede configurar a través de `mdatp config scan-archives --value [enabled/disabled]`. De forma predeterminada, se establece en `enabled`.
 - Correcciones de errores
 
 ## <a name="1014727-20121082147270"></a>101.47.27 (20.121082.14727.0)
@@ -76,8 +66,8 @@ ms.locfileid: "62265696"
 ## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0)
 
 - Se agregaron nuevos modificadores a la herramienta de línea de comandos:
-  - Controlar el grado de paralelismo de los exámenes a petición. Esto se puede configurar a través `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` de . De forma predeterminada, se usa un grado de paralelismo `2` de.
-  - Controlar si los exámenes después de las actualizaciones de inteligencia de seguridad están habilitados o deshabilitados. Esto se puede configurar a través `mdatp config scan-after-definition-update --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
+  - Controlar el grado de paralelismo de los exámenes a petición. Esto se puede configurar a través de `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. De forma predeterminada, se usa un grado de paralelismo `2` de.
+  - Controlar si los exámenes después de las actualizaciones de inteligencia de seguridad están habilitados o deshabilitados. Esto se puede configurar a través de `mdatp config scan-after-definition-update --value [enabled/disabled]`. De forma predeterminada, se establece en `enabled`.
 - Cambiar el nivel de registro de producto ahora requiere elevación
 - Mejoras de rendimiento & correcciones de errores
 
@@ -153,7 +143,7 @@ ms.locfileid: "62265696"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0)
 
 - Se mejoró la confiabilidad del agente al ejecutarse en macOS 11 Big Sur
-- Se agregó un nuevo modificador de línea de comandos ( `--ignore-exclusions` ) para omitir las exclusiones av durante los exámenes personalizados ( `mdatp scan custom` )
+- Se agregó un nuevo modificador de línea de comandos (`--ignore-exclusions`) para omitir las exclusiones av durante los exámenes personalizados (`mdatp scan custom`)
 - Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
@@ -311,6 +301,6 @@ ms.locfileid: "62265696"
   > El mecanismo para conceder este consentimiento depende de cómo implementó Microsoft Defender para endpoint:
   >
   > - Para las implementaciones manuales, vea las instrucciones actualizadas en el [tema Implementación](mac-install-manually.md#how-to-allow-full-disk-access) manual.
-  > - Para las implementaciones administradas, vea las instrucciones actualizadas en los temas de implementación basada en [JAMF](mac-install-with-jamf.md) [y Microsoft Intune de implementación](mac-install-with-intune.md#create-system-configuration-profiles) basada en JAMF.
+  > - Para las implementaciones administradas, vea las instrucciones actualizadas en los temas de implementación basada en [JAMF](mac-install-with-jamf.md) [y Microsoft Intune de implementación basada en](mac-install-with-intune.md#create-system-configuration-profiles) JAMF.
 
 - Mejoras de rendimiento & correcciones de errores

@@ -1,7 +1,7 @@
 ---
 title: Implementar actualizaciones para Microsoft Defender para Endpoint en Mac
 description: Controle las actualizaciones de Microsoft Defender para Endpoint en Mac en entornos empresariales.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, actualizaciones, implementar
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, actualizaciones, implementar'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ee8ea26c53bf5ae56c558f7aaa956974474dd101
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171442"
 ---
+
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -31,8 +26,8 @@ ms.locfileid: "61171442"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -47,7 +42,7 @@ Si decide implementar actualizaciones mediante las herramientas de distribución
 
 ## <a name="use-msupdate"></a>Usar msupdate
 
-MAU incluye una herramienta de línea de comandos, denominada *msupdate*, que está diseñada para los administradores de TI para que tengan un control más preciso sobre cuándo se aplican las actualizaciones. Las instrucciones para usar esta herramienta se pueden encontrar en [Actualizar Office para Mac mediante msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
+MAU incluye una herramienta de línea de comandos, denominada *msupdate*, diseñada para los administradores de TI para que tengan un control más preciso sobre cuándo se aplican las actualizaciones. Las instrucciones para usar esta herramienta se pueden encontrar en [Actualizar Office para Mac mediante msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
 En MAU, el identificador de aplicación de Microsoft Defender para Endpoint en macOS es *WDAV00*. Para descargar e instalar las actualizaciones más recientes de Microsoft Defender para Endpoint en macOS, ejecute el siguiente comando desde una ventana de Terminal:
 
@@ -61,19 +56,19 @@ En esta sección se describen las preferencias más comunes que se pueden usar p
 
 ### <a name="set-the-channel-name"></a>Establecer el nombre del canal
 
-El canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen a través de MAU. Los `Beta` dispositivos pueden probar nuevas características antes de que los dispositivos `Preview` en `Current` y .
+El canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen a través de MAU. Los dispositivos `Beta` pueden probar nuevas características antes de que los dispositivos en `Preview` y `Current`.
 
 El `Current` canal contiene la versión más estable del producto.
 
 > [!IMPORTANT]
 > Antes de Microsoft AutoUpdate versión 4.29, los canales tenían nombres diferentes:
 >
-> - `Beta` se `InsiderFast` denominaba (Insider Fast)
-> - `Preview` se `External` denominaba (Insider Slow)
+> - `Beta` se denominaba `InsiderFast` (Insider Fast)
+> - `Preview` se denominaba `External` (Insider Slow)
 > - `Current` se nombraba `Production`
 
 > [!TIP]
-> Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
+> Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview`.
 
 <br>
 
@@ -91,7 +86,7 @@ El `Current` canal contiene la versión más estable del producto.
 > Esta configuración cambia el canal de todas las aplicaciones que se actualizan a través de Microsoft AutoUpdate. Para cambiar el canal solo para Microsoft Defender para Endpoint en macOS, ejecute el siguiente comando después de reemplazar `[channel-name]` por el canal deseado:
 >
 > ```bash
-> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
+> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
 
 ### <a name="set-update-check-frequency"></a>Establecer frecuencia de comprobación de actualización
@@ -189,7 +184,7 @@ El siguiente perfil de configuración se usa para:
 > La siguiente configuración es una configuración de ejemplo y no debe usarse en producción sin la revisión adecuada de la configuración y la adaptación de las configuraciones.
 
 > [!TIP]
-> Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview` .
+> Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa en `Beta` o `Preview`.
 
 ### <a name="jamf"></a>JAMF
 
@@ -276,7 +271,7 @@ El siguiente perfil de configuración se usa para:
 
 Para configurar MAU, puede implementar este perfil de configuración desde la herramienta de administración que usa su empresa:
 
-- Desde JAMF, cargue este perfil de configuración y establezca el dominio de preferencia en *com.microsoft.autoupdate2*.
+- En JAMF, cargue este perfil de configuración y establezca el dominio de preferencia en *com.microsoft.autoupdate2*.
 - Desde Intune, cargue este perfil de configuración y establezca el nombre del perfil de configuración personalizado en *com.microsoft.autoupdate2*.
 
 ## <a name="resources"></a>Recursos
