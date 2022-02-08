@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f5b1d0f79f9d85ab433aa91c043104362fb8f766
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1ec2694fa974cde3f8316f4ad0937fc686d16c63
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167867"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444658"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -65,7 +65,7 @@ Antivirus de Microsoft Defender usa varias tecnologías de detección y prevenci
 
 - En muchos casos, este proceso puede reducir el tiempo de respuesta para el nuevo malware de horas a segundos.
 
-- Puede [especificar durante cuánto tiempo debe impedirse la ejecución del archivo](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) mientras el servicio de protección basado en la nube analiza el archivo. Además, puede [personalizar el mensaje que aparece en los escritorios de los usuarios ](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md)cuando se bloquea un archivo. Puede cambiar el nombre de la empresa, la información de contacto y la dirección URL de mensajes.
+- Puede [especificar durante cuánto tiempo debe impedirse la ejecución del archivo](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) mientras el servicio de protección basado en la nube analiza el archivo. Además, puede [personalizar el mensaje que aparece en los escritorios de los usuarios ](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information)cuando se bloquea un archivo. Puede cambiar el nombre de la empresa, la información de contacto y la dirección URL de mensajes.
 
 ## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Activar el bloqueo a primera vista con Microsoft Intune
 

@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 5f8bdec9dd7a6a784ff9eb6e91ab44ffd97fcda0
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: fc7e82880cec01f7d3fd0051f75600948e51cdcc
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754894"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444454"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
-**En este artículo:** Este artículo le ayuda a configurar el Administrador de cumplimiento. Obtenga información sobre cómo **obtener acceso al** Administrador de cumplimiento, establecer roles y permisos y configurar **pruebas automáticas** **de acciones de mejora.** Pase por **el panel del Administrador de cumplimiento** y comprenda las páginas principales: la página de acciones de mejora, la página de soluciones, la página de evaluaciones y la página de plantillas de evaluación.
+**En este artículo:** Este artículo le ayuda a configurar el Administrador de cumplimiento. Obtenga información sobre cómo **obtener acceso al** Administrador de cumplimiento, **establecer roles y permisos y configurar pruebas automáticas** **de acciones de mejora**. Pase por **el panel del Administrador de cumplimiento** y comprenda las páginas principales: la página de acciones de mejora, la página de soluciones, la página de evaluaciones y la página de plantillas de evaluación.
 
 ## <a name="who-can-access-compliance-manager"></a>Quién puede tener acceso al Administrador de cumplimiento
 
@@ -42,7 +42,7 @@ El Microsoft 365 global de la organización probablemente será el primer usuari
 1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e **inicie sesión** con su Microsoft 365 de administrador global.
 2. Seleccione **Administrador de cumplimiento** en el panel de navegación izquierdo. Llegarás al panel del Administrador [de cumplimiento](#understand-the-compliance-manager-dashboard).
 
-El vínculo directo para acceder al Administrador de cumplimiento es [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) .
+El vínculo directo para acceder al Administrador de cumplimiento es [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager).
 
 ## <a name="set-user-permissions-and-assign-roles"></a>Establecer permisos de usuario y asignar roles
 
@@ -61,7 +61,7 @@ Para establecer permisos y asignar roles en el Centro de cumplimiento de Microso
 
 2. En la lista **desplegable Centro de** cumplimiento, seleccione **Roles**.
 
-3. Busque el grupo de roles al que desea agregar uno o varios usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la [lista de roles y funciones relacionadas a continuación.](#role-types) Los nombres de los grupos de roles imitan el nombre del rol).
+3. Busque el grupo de roles al que desea agregar uno o varios usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la [lista de roles y funciones relacionadas a continuación](#role-types). Los nombres de los grupos de roles imitan el nombre del rol).
 
 4. En el panel desplegable de ese grupo, seleccione **Editar en** el **encabezado** Miembros.
 
@@ -75,33 +75,53 @@ Para establecer permisos y asignar roles en el Centro de cumplimiento de Microso
 
 #### <a name="more-about-azure-ad"></a>Más información sobre Azure AD
 
-Para asignar roles y establecer permisos en Azure AD, vea [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+Para asignar roles y establecer permisos en Azure AD, vea Asignar roles de administrador y no administrador a usuarios [con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 Los usuarios con Azure AD identidades que no tienen Office 365 o Microsoft 365 suscripciones no podrán acceder al Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365. Para obtener ayuda para obtener acceso al Administrador de cumplimiento, póngase en [contacto cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### <a name="role-types"></a>Tipos de función
 
-En la tabla siguiente se muestran las funciones permitidas por cada rol en el Administrador de cumplimiento. En la tabla también se muestra [cómo cada Azure AD de roles se](/azure/active-directory/roles/permissions-reference) asigna a roles del Administrador de cumplimiento. Los usuarios necesitarán al menos el rol de lector administrador de cumplimiento, o Azure AD de lector global, para tener acceso al Administrador de cumplimiento.
-
+En la tabla siguiente se muestran las funciones permitidas por cada rol en el Administrador de cumplimiento. En la tabla también se muestra [cómo se Azure AD función a](/azure/active-directory/roles/permissions-reference) roles del Administrador de cumplimiento. Los usuarios necesitarán al menos el rol de lector administrador de cumplimiento, o Azure AD de lector global, para tener acceso al Administrador de cumplimiento.
 
 | El usuario puede: | Rol Administrador de cumplimiento | Azure AD rol | 
 | :------------- | :-------------: | :------------: |
-| **Leer pero no editar datos**| Lector de Administrador de cumplimiento  | Azure AD Lector global, lector de seguridad | 
-| **Editar datos**| Contribución del administrador de cumplimiento | Administrador de cumplimiento | 
-| **Editar resultados de pruebas**| Evaluador de Administrador de cumplimiento | Administrador de cumplimiento | 
-| **Administrar evaluaciones y datos de plantilla e inquilino**| Administración del administrador de cumplimiento | Administrador de cumplimiento, administrador de datos de cumplimiento, administrador de seguridad  | 
-| **Asignar usuarios**| Administrador global | Administrador global | 
+| **Leer pero no editar datos**| Lector de Administrador de cumplimiento  | Azure AD lector global, lector de seguridad |
+| **Editar datos**| Contribución del administrador de cumplimiento | Administrador de cumplimiento |
+| **Editar resultados de pruebas**| Evaluador de Administrador de cumplimiento | Administrador de cumplimiento |
+| **Administrar evaluaciones y datos de plantilla e inquilino**| Administración del administrador de cumplimiento | Administrador de cumplimiento, administrador de datos de cumplimiento, administrador de seguridad  |
+| **Asignar usuarios**| Administrador global | Administrador global |
+
+## <a name="start-a-premium-assessments-trial"></a>Iniciar una prueba de evaluaciones premium
+
+La prueba de evaluaciones premium del Administrador de cumplimiento es una excelente manera de configurar rápidamente las evaluaciones más relevantes para su organización. Nuestra biblioteca de más de 300 plantillas se corresponden con las normativas gubernamentales y los estándares del sector en todo el mundo.
+Obtenga más información sobre la [prueba de evaluaciones premium](compliance-easy-trials-compliance-manager-assessments.md).
+
+Puede iniciar la prueba directamente desde el Administrador de cumplimiento y configurar las evaluaciones recomendadas siguiendo estos pasos:
+
+1. En la página **Información general del** Administrador de cumplimiento, seleccione **Iniciar prueba**. Escribirá un asistente de activación de prueba que hará preguntas para ayudarnos a recomendar evaluaciones para su organización.
+
+2. En la **página Activar prueba****, seleccione Siguiente** para comenzar la prueba gratuita de evaluaciones premium de 90 días y continuar con la creación de evaluaciones.
+
+3. Seleccione uno o más sectores que identifiquen su organización y, a continuación, **seleccione Siguiente**.
+
+4. Seleccione una o varias regiones para la ubicación de su organización y, a continuación, seleccione **Siguiente**.
+
+5. En la **pantalla Elegir evaluaciones** , seleccione la flecha desplegable junto a **Plantillas** recomendadas para ver la lista de evaluaciones que creemos que se aplican a su organización. Active las casillas situadas junto a las plantillas que desea usar para crear evaluaciones y, a continuación, seleccione **Siguiente**.
+
+6. Revise las selecciones finales y **seleccione Agregar evaluaciones recomendadas** para crear sus nuevas evaluaciones.
+
+Para obtener más información sobre cómo empezar con las evaluaciones, visite la sección [de la página Evaluaciones](#assessments-page) que se muestra a continuación.
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>Configuración para pruebas automatizadas e historial de usuarios
 
 La configuración del Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365 permite habilitar y deshabilitar las pruebas automáticas de las acciones de mejora. La configuración también le permite administrar los datos de los usuarios asociados a acciones de mejora, incluida la capacidad de reasignar acciones de mejora a un usuario diferente.  Solo las personas con un rol de administrador global o administrador de cumplimiento pueden acceder a la configuración del Administrador de cumplimiento.
 
 > [!NOTE]
-> La característica de prueba automatizada no está disponible para los clientes en GCC entornos high y doD porque la puntuación segura no está disponible en estos entornos. GCC Los clientes altos y doD tendrán que implementar manualmente y probar sus acciones de mejora.
+> La característica de prueba automatizada no está disponible para los clientes en GCC entornos high y doD porque la puntuación segura no está disponible en estos entornos. GCC los clientes de High y DoD tendrán que implementar y probar manualmente sus acciones de mejora.
 
 ### <a name="set-up-automated-testing"></a>Configurar pruebas automatizadas
 
-Algunas acciones de mejora en el Administrador de cumplimiento también son supervisadas por [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Puede configurar pruebas automatizadas de acciones que se supervisan conjuntamente, lo que significa que cuando una acción se prueba y actualiza en Puntuación segura, esos resultados se sincronizan con las mismas acciones en el Administrador de cumplimiento y cuentan para su puntuación de cumplimiento.
+Microsoft Secure Score también supervisa algunas acciones de mejora en el Administrador [de cumplimiento](../security/defender/microsoft-secure-score.md). Puede configurar pruebas automatizadas de acciones que se supervisan conjuntamente, lo que significa que cuando una acción se prueba y actualiza en Puntuación segura, esos resultados se sincronizan con las mismas acciones en el Administrador de cumplimiento y cuentan para su puntuación de cumplimiento.
 
 Las pruebas automáticas están activadas de forma predeterminada para organizaciones nuevas en el Administrador de cumplimiento. La primera vez que implemente Microsoft 365 o Office 365, la puntuación segura tarda aproximadamente siete días en recopilar completamente los datos y tener en cuenta la puntuación de cumplimiento.  Cuando las pruebas automatizadas están activadas, la fecha de prueba de la acción no se actualizará, pero su estado de prueba se actualizará. Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente las puntuaciones de control de Microsoft y la integración de puntuación segura.
 
@@ -111,13 +131,13 @@ El administrador global de su organización puede cambiar la configuración de l
 
 1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
-2. En la página configuración, seleccione **Administrador de cumplimiento**.
+2. En la página de configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **Pruebas automatizadas** en la navegación izquierda.
 
 4. Selecciona el botón aplicable para activar las pruebas automáticas de todas las acciones de mejora, desactivarla para todas las acciones o activarla por acción individual.
 
-5. Si selecciona Activar **por acción de mejora,** una lista mostrará todas las acciones de mejora disponibles para elegir.  Active la casilla situada junto a cualquier acción que desee probar automáticamente.
+5. Si selecciona Activar **por acción de mejora**, una lista mostrará todas las acciones de mejora disponibles para elegir.  Active la casilla situada junto a cualquier acción que desee probar automáticamente.
 
 6. Seleccione **Guardar** para guardar la configuración. Recibirás un mensaje de confirmación en la parte superior de la pantalla que indica que la selección se guardó. Si recibe un aviso de error, inténtelo de nuevo.
 
@@ -133,25 +153,25 @@ La configuración del historial de usuarios también le permite reasignar todas 
 
 1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
-2. En la página configuración, seleccione **Administrador de cumplimiento**.
+2. En la página de configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **Administrar el historial de usuarios** en la navegación izquierda.
 
 La **página Administrar historial de** usuarios muestra una lista de todos los usuarios por dirección de correo electrónico que están asignados a una acción de mejora. Use el **botón Buscar** para buscar rápidamente un usuario específico escribiendo su dirección de correo electrónico.
 
-A la derecha de la dirección  de correo electrónico de cada usuario, el menú desplegable Seleccionar proporciona opciones para exportar un informe, reasignar acciones de mejora o eliminar el historial. Consulta cada sección a continuación para obtener más información sobre cada opción.
+A la derecha de la dirección de correo electrónico de cada usuario, el menú desplegable Seleccionar proporciona opciones para exportar un informe, reasignar acciones de mejora o eliminar el historial. Consulta cada sección a continuación para obtener más información sobre cada opción.
 
 #### <a name="export-a-report-of-user-history-data"></a>Exportar un informe de datos de historial de usuarios
 
 Puede exportar un archivo Excel que contenga una lista de acciones de mejora asignadas actualmente a un usuario.  El informe también enumera los archivos de evidencia cargados por ese usuario. Esta información puede ayudarle a reasignar acciones de mejora abiertas.
 
-El informe refleja el estado de la acción de mejora a partir de su fecha de creación. No es un informe histórico de todos los cambios anteriores en su estado o asignación (obtenga información sobre cómo exportar un [informe desde la](compliance-manager-improvement-actions.md#export-a-report)página de acciones de mejora ).
+El informe refleja el estado de la acción de mejora a partir de su fecha de creación. No es un informe histórico de todos los cambios anteriores en su estado o asignación (obtenga información sobre cómo exportar un [informe desde la página de acciones de mejora](compliance-manager-improvement-actions.md#export-a-report)).
 
 **Siga los pasos siguientes para exportar un informe por usuario:**
 
 1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
-2. En la página configuración, seleccione **Administrador de cumplimiento**.
+2. En la página de configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **Administrar el historial de usuarios** en la navegación a la izquierda.
 
@@ -161,7 +181,7 @@ El informe refleja el estado de la acción de mejora a partir de su fecha de cre
 
 6. Una vez Excel el archivo del informe, puede abrirlo y guardarlo en el equipo local.
 
-#### <a name="reassign-improvement-actions-to-another-user"></a>Reasignar acciones de mejora a otro usuario
+#### <a name="reassign-improvement-actions-to-another-user"></a>Asignar acciones de mejora a otro usuario
 
 Puede reasignar acciones de mejora de un usuario a otro. Al reasignar una acción, el historial de carga del documento no cambia, pero el nombre del usuario que carió originalmente la documentación ya no aparece en la acción de mejora.
 
@@ -169,17 +189,17 @@ Puede reasignar acciones de mejora de un usuario a otro. Al reasignar una acció
 
 1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
-2. En la página configuración, seleccione **Administrador de cumplimiento**.
+2. En la página de configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **Administrar el historial de usuarios** en la navegación a la izquierda.
 
 4. Busque un usuario buscando en las direcciones de correo electrónico de lista o **seleccionando Buscar** y especificando la dirección de correo electrónico de ese usuario.
 
-5. En el **menú** desplegable Seleccionar, elija **Reasignar acciones de mejora.** Aparecerá el panel desplegable **Reasignar** acciones de mejora.
+5. En el **menú** desplegable Seleccionar, elija **Reasignar acciones de mejora**. Aparecerá **el panel desplegable Reasignar** acciones de mejora.
 
-6. En el **campo Buscar usuarios,** escriba el nombre o la dirección de correo electrónico del usuario al que desea asignar las acciones de *mejora a*.
+6. En el **campo Buscar usuarios** , escriba el nombre o la dirección de correo electrónico del usuario al que desea asignar las acciones de *mejora*.
 
-7. Cuando vea el nombre del usuario previsto en **Acciones** de mejora se asignará a , seleccione el usuario y, a continuación, **seleccione Asignar acciones**.
+7. Cuando vea el nombre del usuario previsto en **Acciones** de mejora se asignarán a, seleccione el usuario y, a continuación, **seleccione Asignar acciones**.
 
 8. Una vez completada la reasignación, verá un mensaje de confirmación en el panel desplegable que confirma que todas las acciones de mejora del usuario anterior se han reasignado al nuevo usuario. Si recibe un aviso de error de reasignación, cierre la ventana e inténtelo de nuevo. Para cerrar el panel desplegable, seleccione **Listo**.
 
@@ -196,7 +216,7 @@ Para eliminar el historial de un usuario, siga estos pasos:
 
 1. Seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Configuración**</a> en el Centro de cumplimiento de Microsoft 365.
 
-2. En la página configuración, seleccione **Administrador de cumplimiento**.
+2. En la página de configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **Administrar el historial de usuarios** en la navegación a la izquierda.
 
@@ -206,21 +226,21 @@ Para eliminar el historial de un usuario, siga estos pasos:
 
 6. Aparece una ventana que le pide que confirme la eliminación permanente del historial del usuario. Para continuar con la eliminación, seleccione **Eliminar historial**. Para salir sin eliminar el historial, seleccione **Cancelar**.
 
-7. Volverás a la  página Administrar historial de usuarios con un mensaje de confirmación en la parte superior que indica que se eliminó el historial del usuario.
+7. Volverás a la página Administrar historial  de usuarios con un mensaje de confirmación en la parte superior que indica que se eliminó el historial del usuario.
 
 ## <a name="understand-the-compliance-manager-dashboard"></a>Comprender el panel del Administrador de cumplimiento
 
 El panel del Administrador de cumplimiento está diseñado para proporcionarle una vista de un vistazo de su posición de cumplimiento actual.
 
-:::image type="content" alt-text="Administrador de cumplimiento: panel." source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
+:::image type="content" alt-text="Panel del Administrador de cumplimiento." source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
 ### <a name="overall-compliance-score"></a>Puntuación de cumplimiento global
 
 La puntuación de cumplimiento aparece destacadamente en la parte superior. Muestra un porcentaje basado en puntos alcanzables para completar acciones de mejora que abordan estándares y normativas clave de protección de datos. Los puntos [de las acciones de Microsoft](compliance-manager-assessments.md#microsoft-actions-tab), que se administran en Microsoft, también cuentan para la puntuación de cumplimiento.
 
-Cuando se llega al Administrador de cumplimiento por primera vez, la puntuación inicial se basa en la línea Microsoft 365 [base de protección de datos](compliance-manager-assessments.md#data-protection-baseline-default-assessment). Esta evaluación de línea base, que está disponible para todas las organizaciones, es un conjunto de controles que incluye normativas y estándares comunes del sector. El Administrador de cumplimiento examina las soluciones Microsoft 365 existentes y le ofrece una evaluación inicial basada en la configuración actual de privacidad y seguridad. A medida que agrega evaluaciones que son relevantes para su organización, la puntuación se vuelve más significativa para usted.
+Cuando llega al Administrador de cumplimiento por primera vez, la puntuación inicial se basa en la línea base [Microsoft 365 protección de datos](compliance-manager-assessments.md#data-protection-baseline-default-assessment). Esta evaluación de línea base, que está disponible para todas las organizaciones, es un conjunto de controles que incluye normativas y estándares comunes del sector. El Administrador de cumplimiento examina las soluciones Microsoft 365 existentes y le ofrece una evaluación inicial basada en la configuración actual de privacidad y seguridad. A medida que agrega evaluaciones que son relevantes para su organización, la puntuación se vuelve más significativa para usted.
 
-**Más información: Comprender** [cómo se calcula la puntuación de cumplimiento](compliance-score-calculation.md).
+**Obtenga más información:** [Comprenda cómo se calcula la puntuación de cumplimiento](compliance-score-calculation.md).
 
 ### <a name="key-improvement-actions"></a>Acciones de mejora claves
 
@@ -234,8 +254,8 @@ En esta sección se destacan las soluciones que contienen acciones de mejora que
 
 Esta sección le ofrece una vista más detallada de la puntuación de dos maneras diferentes:
 
-- **Categorías:** muestra el porcentaje de la puntuación general dentro de las categorías de protección de datos, como "proteger la información" o "administrar dispositivos".
-- **Evaluaciones:** muestra el porcentaje de su progreso en la administración de evaluaciones para estándares, reglamentos o leyes específicos de cumplimiento y protección de datos, como RGPD o NIST 800-53.
+- **Categorías**: muestra el porcentaje de la puntuación general dentro de las categorías de protección de datos, como "proteger la información" o "administrar dispositivos".
+- **Evaluaciones**: muestra el porcentaje de su progreso en la administración de evaluaciones para estándares, reglamentos o leyes específicos de cumplimiento y protección de datos, como RGPD o NIST 800-53.
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrar la vista de panel
 
@@ -244,14 +264,14 @@ Puede filtrar la vista del panel para ver solo los elementos relacionados con de
 Para aplicar filtros:
 
 1. Seleccione **Filtrar** en la parte superior derecha del panel.
-2. Seleccione los criterios de filtro en **el** panel desplegable Filtros y, a continuación, **seleccione Aplicar**.
+2. Seleccione los criterios de filtro **en el panel** desplegable Filtros y, a continuación, **seleccione Aplicar**.
 
 Después de aplicar un filtro, verás la puntuación ajustada en tiempo real. El porcentaje de puntuación de cumplimiento y la información de desglose, y las acciones y soluciones de mejora, ahora solo pertenecen a los datos cubiertos por los criterios de filtro. Si inicia sesión en el Administrador de cumplimiento, la vista filtrada permanece al iniciar sesión de nuevo.
 
 Para quitar filtros:
 
 - En el **encabezado Filtros aplicados** encima de la puntuación de cumplimiento, seleccione **la X** junto al filtro individual que desea quitar; o
-- Seleccione **Filtrar** en la parte superior derecha del  panel y, a continuación, en el panel desplegable Filtros, seleccione **Borrar filtros**.
+- Seleccione **Filtrar** en la parte superior derecha del panel y, a continuación,  en el panel desplegable Filtros, seleccione **Borrar filtros**.
 
 ## <a name="improvement-actions-page"></a>Página Acciones de mejora
 
@@ -263,37 +283,37 @@ El panel del Administrador de cumplimiento muestra las **principales acciones de
 
 La página acciones de mejora muestra todas las acciones de mejora administradas por la organización. Las acciones administradas por Microsoft se pueden ver en cada evaluación (obtenga más información sobre [las acciones de Microsoft](compliance-manager-assessments.md#microsoft-actions-tab)).
 
-Si tiene una larga lista de acciones en la página de acciones de mejora, puede resultar útil filtrar la vista. Seleccione **Filtrar** en la esquina superior derecha de la lista de acciones. Cuando aparezca **el** panel desplegable Filtros, seleccione los criterios según las normativas y los estándares, la solución y el grupo. También puede personalizar la vista **seleccionando** Grupo en la esquina superior derecha. En el menú desplegable, seleccione para ver por grupo, solución, categoría, tipo de acción o estado.
+Si tiene una larga lista de acciones en la página de acciones de mejora, puede resultar útil filtrar la vista. Seleccione **Filtrar** en la esquina superior derecha de la lista de acciones. Cuando aparezca **el** panel desplegable Filtros, seleccione los criterios según las normativas y los estándares, la solución y el grupo. También puede personalizar la vista **seleccionando Grupo** en la esquina superior derecha. En el menú desplegable, seleccione para ver por grupo, solución, categoría, tipo de acción o estado.
 
-La vista predeterminada de esta página no muestra acciones de mejora con un estado de prueba de **Passed**. Para ver las acciones que han pasado las pruebas, active la casilla **Pasado** en el panel desplegable Filtros. Solo las acciones con un estado de prueba de **Pasado** cuentan para la puntuación. Algunas acciones pueden mostrar una **etiqueta de actualización pendiente.** Obtenga más información sobre [las actualizaciones de las acciones de mejora](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
+La vista predeterminada de esta página no muestra acciones de mejora con el estado de prueba **Pasado**. Para ver las acciones que han pasado las pruebas, active la casilla **Pasado** en el panel desplegable Filtros. Solo las acciones con un estado de prueba de **Pasado** cuentan para la puntuación. Algunas acciones pueden mostrar una **etiqueta de actualización pendiente.** Obtenga más información sobre [las actualizaciones de las acciones de mejora](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
 La página de acciones de mejora muestra los siguientes puntos de datos para cada acción de mejora:
 
-- **Puntos logrados:** el número de puntos obtenidos fuera del total disponible al completar la acción
-- **Reglamentos:** los reglamentos o estándares relacionados con la acción
-- **Group**: el grupo al que asignó la acción
-- **Soluciones:** la solución a la que puede ir para realizar la acción
-- **Evaluaciones:** las evaluaciones que contienen la acción
-- **Categorías:** la categoría de protección de datos relacionada (por ejemplo, proteger la información, administrar dispositivos, etc.)
-- **Estado de la prueba:**
-    - **Ninguno:** no se registró ninguna actualización de estado
+- **Puntos logrados**: el número de puntos obtenidos fuera del total disponible al completar la acción
+- **Reglamentos**: los reglamentos o estándares relacionados con la acción
+- **Grupo**: el grupo al que asignó la acción
+- **Soluciones**: la solución a la que puede ir para realizar la acción
+- **Evaluaciones**: las evaluaciones que contienen la acción
+- **Categorías**: categoría de protección de datos relacionada (por ejemplo, proteger información, administrar dispositivos, etc.)
+- **Estado de la prueba**:
+    - **Ninguno** : no se registró ninguna actualización de estado
     - **No evaluado:** las pruebas no se han iniciado
     - **Pasado:** implementación probada correctamente
-    - **Riesgo bajo con error:** error en las pruebas, bajo riesgo
-    - **Riesgo medio fallido:** error en las pruebas, riesgo medio
-    - **Alto riesgo de error:** error en las pruebas, alto riesgo
-    - **Fuera del ámbito:** la acción no está en el ámbito de la evaluación y no afecta a la puntuación
-    - **Para ser detectado:** para la prueba manual, indica que se ha implementado una acción pero no se ha probado; para la prueba automatizada, indica que una acción está esperando el resultado de automatización
-    - **No se pudo detectar:** no se puede determinar el estado automatizado
+    - **Riesgo bajo con error** : error en las pruebas, bajo riesgo
+    - **Riesgo medio fallido** : error en las pruebas, riesgo medio
+    - **Alto riesgo de error** : error en las pruebas, alto riesgo
+    - **Fuera del ámbito** : la acción no está en el ámbito de la evaluación y no afecta a la puntuación
+    - **Para ser detectado** : para la prueba manual, indica que se ha implementado una acción pero no se ha probado; para la prueba automatizada, indica que una acción está esperando el resultado de automatización
+    - **No se pudo detectar** : no se puede determinar el estado automatizado
     - **Prueba parcial:** puntuación automatizada que otorga puntos parciales
 
-**Más información: Vea** [cómo asignar y realizar trabajos en acciones de mejora.](compliance-manager-improvement-actions.md)
+**Más información: Vea** [cómo asignar y realizar el trabajo en acciones de mejora](compliance-manager-improvement-actions.md).
 
 ## <a name="solutions-page"></a>Página Soluciones
 
 La página de soluciones muestra el porcentaje de puntos ganados y potenciales organizados por solución. Ver los puntos restantes y las acciones de mejora desde esta vista le ayuda a comprender qué soluciones necesitan una atención más inmediata.
 
-Para buscar la página de soluciones, seleccione la **pestaña Soluciones** en el panel del Administrador de cumplimiento. También puede seleccionar Ver todas **las soluciones debajo** de Soluciones que afectan a su **puntuación** en la sección superior derecha del panel.
+Para buscar la página de soluciones, seleccione la **pestaña Soluciones** en el panel del Administrador de cumplimiento. También puede seleccionar Ver todas **las soluciones debajo** de **Soluciones que afectan a su puntuación** en la sección superior derecha del panel.
 
 ### <a name="filtering-your-solutions-view"></a>Filtrar la vista soluciones
 
@@ -303,7 +323,7 @@ Para filtrar la vista de soluciones:
 2. En el **panel** desplegable Filtros, coloque una comprobación junto a los criterios deseados (estándares y reglamentos, solución, tipo de acción, grupo administrador de cumplimiento, categoría).
 3. Seleccione el **botón** Aplicar. El panel de filtro se cerrará y verá la vista filtrada.
 
-También puede modificar la vista para ver las evaluaciones por grupo, producto o  regulación seleccionando el tipo de agrupación en el menú desplegable Grupo encima de la lista de evaluaciones.
+También puede modificar la vista para ver las evaluaciones por grupo, producto o regulación seleccionando el tipo de agrupación en el menú  desplegable Grupo encima de la lista de evaluaciones.
 
 ### <a name="taking-action-from-the-solution-page"></a>Realizar acciones desde la página de solución
 
@@ -311,9 +331,9 @@ La página soluciones muestra las soluciones de su organización que están cone
 
 Hay dos maneras de tomar medidas desde esta pantalla:
 
-1. En la fila de la solución prevista, en la columna **Acciones restantes,** seleccione el número de hipervínculo. Verás una vista filtrada de la pantalla de acciones de mejora que muestra acciones de mejora sin probar para esa solución.
+1. En la fila de la solución prevista, en la columna **Acciones restantes** , seleccione el número de hipervínculo. Verás una vista filtrada de la pantalla de acciones de mejora que muestra acciones de mejora sin probar para esa solución.
 
-2. En la fila de la solución prevista, en la **columna Abrir solución,** seleccione **Abrir**. Verá la solución o la ubicación en los centros de Microsoft 365 y Office 365 seguridad y cumplimiento donde puede realizar la acción recomendada.
+2. En la fila de la solución prevista, en la columna **Abrir solución** , seleccione **Abrir**. Verá la solución o la ubicación en los centros de Microsoft 365 y Office 365 seguridad y cumplimiento donde puede realizar la acción recomendada.
 
 ## <a name="assessments-page"></a>Página Evaluaciones
 
@@ -323,18 +343,18 @@ El **contador de plantillas** activadas cerca de la parte superior de la página
 
 La página de evaluaciones resume la información clave sobre cada evaluación:
 
-- **Evaluación:** nombre de la evaluación
+- **Evaluación**: nombre de la evaluación
 - **Estado**:
-  - **Completado:** todos los controles tienen el estado "pasado", o al menos se pasa uno y el resto está "fuera del ámbito"
-  - **Incompleto:** al menos un control tiene el estado de "error"
-  - **Ninguno:** no se han probado todos los controles
-  - **En curso:** las acciones de mejora tienen cualquier otro estado, incluidos "en curso", "crédito parcial" o "sin detectar"
+  - **Completado** : todos los controles tienen el estado "pasado", o al menos se pasa uno y el resto está "fuera del ámbito"
+  - **Incompleto** : al menos un control tiene el estado de "error"
+  - **Ninguno** : no se han probado todos los controles
+  - **En curso** : las acciones de mejora tienen cualquier otro estado, incluidos "en curso", "crédito parcial" o "sin detectar"
 - **Progreso de la** evaluación: el porcentaje del trabajo realizado hasta la finalización, medido por el número de controles probados correctamente
-- **Acciones de mejora:** el número de acciones completadas para satisfacer la implementación de los controles
-- **Acciones de Microsoft:** el número de acciones completadas para satisfacer la implementación de los controles de Microsoft
-- **Grupo:** nombre del grupo al que pertenece la evaluación
-- **Producto:** producto asociado, como Microsoft 365 u otro producto definido para evaluación
-- **Reglamento:** el estándar normativo, la directiva o la ley que se aplica a la evaluación
+- **Acciones de mejora**: el número de acciones completadas para satisfacer la implementación de los controles
+- **Acciones de Microsoft**: el número de acciones completadas para satisfacer la implementación de los controles de Microsoft
+- **Grupo**: nombre del grupo al que pertenece la evaluación
+- **Producto**: producto asociado, como Microsoft 365 u otro producto definido para evaluación
+- **Reglamento**: el estándar normativo, la directiva o la ley que se aplica a la evaluación
 
 ### <a name="filtering-your-assessments-view"></a>Filtrar la vista de evaluaciones
 
@@ -344,7 +364,7 @@ Para filtrar la vista de las evaluaciones:
 2. En el **panel** desplegable Filtros, compruebe los criterios que desee.
 3. Seleccione el **botón** Aplicar. El panel de filtro se cerrará y verá la vista filtrada.
 
-También puede modificar la vista para ver las evaluaciones por grupo, producto o  regulación seleccionando el tipo de agrupación en el menú desplegable Grupo encima de la lista de evaluaciones.
+También puede modificar la vista para ver las evaluaciones por grupo, producto o regulación seleccionando el tipo de agrupación en el menú  desplegable Grupo encima de la lista de evaluaciones.
 
 ### <a name="default-assessment"></a>Evaluación predeterminada
 
@@ -358,7 +378,7 @@ El **contador de plantillas** activadas cerca de la parte superior de la página
 
 Seleccione una plantilla de su fila para mostrar su página de detalles, que contiene una descripción de la plantilla y más información sobre los detalles de certificación, ámbito y controles. En esta página puede seleccionar los botones adecuados para crear una evaluación, exportar los datos de plantilla a Excel o modificar la plantilla.
 
-**Obtenga más información:** [Lea cómo trabajar con plantillas de evaluación.](compliance-manager-templates.md)
+**Más información: Lea** [cómo trabajar con plantillas de evaluación](compliance-manager-templates.md).
 
 ## <a name="next-step"></a>Paso siguiente
 

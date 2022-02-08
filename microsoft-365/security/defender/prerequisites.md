@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d36fa53266245ea99f93c12eda14817b39d3eafa
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5281df5fe500907af6bb54384bb44b5a29534460
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936839"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444598"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender requisitos previos
 
@@ -35,7 +35,7 @@ ms.locfileid: "61936839"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Obtenga información sobre las licencias y otros requisitos para aprovisionar y usar [Microsoft 365 Defender](microsoft-365-defender.md).
+Obtenga información sobre las licencias y otros requisitos para aprovisionar y [usar Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 Cualquiera de estas licencias le ofrece acceso a Microsoft 365 Defender a través del portal de Microsoft 365 Defender sin costo adicional:
@@ -53,7 +53,7 @@ Cualquiera de estas licencias le ofrece acceso a Microsoft 365 Defender a travé
 - Microsoft Defender for Cloud Apps
 - Defender para Office 365 (Plan 2)
 
-Para obtener más información, [vea el Microsoft 365 Enterprise de servicio](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
+Para obtener más información, [vea los Microsoft 365 Enterprise de servicio.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
 > ¿Todavía no tiene licencia? [Probar o comprar una suscripción a Microsoft 365](../../commerce/try-or-buy-microsoft-365.md)
 
@@ -61,10 +61,10 @@ Para obtener más información, [vea el Microsoft 365 Enterprise de servicio](ht
 Vaya a Centro de administración de Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com/)) para ver las licencias existentes. En el Centro de administración, vaya a **Facturación** > **Licencias**.
 
 >[!NOTE]
-> Debe tener asignado el  rol  Administrador de facturación o Lector global [en Azure AD](/azure/active-directory/roles/permissions-reference) para poder ver la información de licencia. Si tiene problemas de acceso, póngase en contacto con un administrador global.
+> Debe tener asignado el rol Administrador de  facturación o  Lector global [en Azure AD](/azure/active-directory/roles/permissions-reference) para poder ver la información de licencia. Si tiene problemas de acceso, póngase en contacto con un administrador global.
 
 ## <a name="required-permissions"></a>Permisos necesarios
-Debe ser un administrador **global o** **un** administrador de seguridad en Azure Active Directory para activar Microsoft 365 Defender. Para obtener la lista de roles necesarios para usar Microsoft 365 Defender información sobre cómo se regula el acceso a los datos, lea acerca de cómo administrar el acceso a [Microsoft 365 Defender](m365d-permissions.md).
+Debe ser un administrador **global o** **un administrador** de seguridad en Azure Active Directory para activar Microsoft 365 Defender. Para obtener la lista de roles necesarios para usar Microsoft 365 Defender información sobre cómo se regula el acceso a los datos, lea acerca de cómo administrar el acceso a [Microsoft 365 Defender](m365d-permissions.md).
 
 ## <a name="browser-requirements"></a>Requisitos de los exploradores
 Acceda Microsoft 365 Defender en el portal de Microsoft 365 Defender con Microsoft Edge, Internet Explorer 11 o cualquier explorador web compatible con HTML 5.
@@ -75,14 +75,11 @@ Para obtener información relacionada con los clientes del gobierno de estados u
 
 Actualmente, Microsoft Defender para Office 365 integración en las características de Microsoft 365 Defender unificadas no están disponibles para los clientes en las siguientes ubicaciones Office 365 centro de datos:
 
-- Brasil 
-- Alemania 
 - Noruega 
-- Singapur 
-- Sudáfrica
-- Suecia
-- Suiza 
+- Sudáfrica 
 - Emiratos Árabes Unidos 
+- Suecia 
+- Singapur 
 
 
 ## <a name="related-topics"></a>Temas relacionados

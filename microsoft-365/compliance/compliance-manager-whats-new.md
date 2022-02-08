@@ -17,16 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: f9583b69459d292b3fb485d09ce5ee5a8ca46620
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: a5489241b223b076e3ef44432fd934afb732b38f
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265510"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444418"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
+
+## <a name="february-2022"></a>Febrero de 2022
+
+### <a name="try-recommended-assessment-templates-for-your-organization"></a>Pruebe las plantillas de evaluación recomendadas para su organización
+
+Su organización ahora puede recibir recomendaciones del Administrador de cumplimiento sobre qué evaluaciones pueden ser más relevantes para usted, con un proceso de configuración rápido para 2013. Para obtener más información sobre las recomendaciones y cómo probar las plantillas de evaluación premium antes de comprar una licencia, consulte [Start a premium assessments trial](compliance-manager-setup.md#start-a-premium-assessments-trial).
 
 ## <a name="november-2021"></a>Noviembre de 2021
 
@@ -73,7 +79,7 @@ Publicamos nuevas plantillas de evaluación, incluidas:
 
 ### <a name="integration-with-microsoft-priva"></a>Integración con Microsoft Priva
 
-El Administrador de cumplimiento ahora puede trabajar de la mano con Microsoft Priva, una solución que puede ayudarle a proteger los datos personales que su organización almacena en Microsoft 365. Priva ofrece herramientas para ayudarle a visualizar y comprender sus datos, implementar directivas para administrar escenarios de riesgo clave y administrar solicitudes de derechos de sujeto. Cuando se toman medidas en Priva para proteger los datos personales que almacena, esto puede contribuir a las evaluaciones de privacidad en el Administrador de cumplimiento y puede ayudarle a mejorar la puntuación de cumplimiento. Para ver cómo Priva y otras soluciones contribuyen a su puntuación y  obtener información sobre las posibles oportunidades de mejoras adicionales, consulte la pestaña Soluciones en el Administrador de cumplimiento. También puede encontrar más detalles sobre Priva en [Learn about Microsoft Priva](/privacy/priva).
+El Administrador de cumplimiento ahora puede trabajar de la mano con Microsoft Priva, una solución que puede ayudarle a proteger los datos personales que su organización almacena en Microsoft 365. Priva ofrece herramientas para ayudarle a visualizar y comprender sus datos, implementar directivas para administrar escenarios de riesgo clave y administrar solicitudes de derechos de sujeto. Cuando se toman medidas en Priva para proteger los datos personales que almacena, esto puede contribuir a las evaluaciones de privacidad en el Administrador de cumplimiento y puede ayudarle a mejorar la puntuación de cumplimiento. Para ver cómo Priva y otras soluciones contribuyen a su puntuación y obtener información sobre las posibles oportunidades de mejoras adicionales,  consulte la pestaña Soluciones en el Administrador de cumplimiento. También puede encontrar más detalles sobre Priva en [Learn about Microsoft Priva](/privacy/priva).
 
 ## <a name="july-2021"></a>Julio de 2021
 
@@ -98,7 +104,7 @@ Consulte la lista completa de plantillas [de evaluación](compliance-manager-tem
 
 El Administrador de cumplimiento ya está disponible para los clientes del DoD del gobierno de Estados Unidos, además de los clientes Community (GCC) moderados y GCC high.
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 
 ### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 

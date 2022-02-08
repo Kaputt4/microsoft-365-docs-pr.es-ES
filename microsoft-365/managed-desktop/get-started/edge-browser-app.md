@@ -1,7 +1,7 @@
 ---
-title: Nuevo Microsoft Edge
-description: Explica cómo se implementa y actualiza el nuevo Microsoft Edge explorador
-keywords: 'explorador, Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación'
+title: Microsoft Edge
+description: Explica cómo se implementa Microsoft Edge y se actualiza el explorador
+keywords: explorador, Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
@@ -10,26 +10,29 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: aab02ec260f0131ab32d28834152f50b84abce21
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444610"
 ---
+# <a name="microsoft-edge"></a>Microsoft Edge
 
+[Microsoft Edge](https://www.microsoft.com/edge) proporciona un rendimiento y un valor de clase mundial con:
 
-# <a name="new-microsoft-edge-app"></a>Nueva Microsoft Edge aplicación
+- Más privacidad y protección frente a amenazas externas.
+- Más productividad y acceso rápido a Office aplicaciones, archivos, sitios y aplicaciones integradas Búsqueda de Microsoft.
+- Experiencia sin problemas mediante la sincronización entre dispositivos con perfiles y soporte multiplataforma.
 
-El nuevo [Microsoft Edge ofrece](https://www.microsoft.com/edge) un rendimiento de clase mundial con más privacidad, más productividad y más valor mientras explora. Microsoft Managed Desktop ofrece una vista previa pública de la implementación del nuevo explorador Microsoft Edge en su entorno.
-
-## <a name="initial-deployment"></a>Implementación inicial
-
-Para migrar los dispositivos de Escritorio administrado de Microsoft al nuevo explorador de Microsoft Edge, file an IT Support Ticket through the Microsoft Managed Desktop Portal.
-
-Implementaremos el canal estable Microsoft Edge en el grupo de prueba al presentar el vale. A continuación, lo implementamos en cada grupo de implementación posterior cada 24 horas. Para pausar la implementación, file another ticket asking Operations to hold.
-
-El [canal beta](/deployedge/microsoft-edge-channels#beta-channel) también está disponible a petición de validación representativa en su organización. Microsoft Managed Desktop implementará la aplicación según sea necesario en los grupos Test y First para que todos esos usuarios tengan el Canal Beta además del canal estable. Para cualquier otro usuario que necesite acceso al canal beta, agrégrelos al grupo **Modern Workplace - Edge Beta Users** y haga que lo instalen desde el Portal de empresa
+> [!IMPORTANT]
+> La aplicación de escritorio de Internet Explorer 11 se retirará y se retirará del soporte técnico el 15 de junio de 2022 (para obtener una lista de lo que está en el ámbito, vea las preguntas más [frecuentes](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/internet-explorer-11-desktop-app-retirement-faq/ba-p/2366549). Las mismas aplicaciones y sitios de IE11 que usa hoy pueden abrirse en Microsoft Edge con el modo de Internet Explorer. [Obtenga más información aquí](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
 
 ## <a name="updates-to-microsoft-edge"></a>Actualizaciones de Microsoft Edge
 
-Microsoft Managed Desktop implementa el [canal estable](/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge, que se actualiza automáticamente aproximadamente cada seis semanas. Las actualizaciones en el canal estable se van [](/deployedge/microsoft-edge-update-progressive-rollout) a implantar progresivamente por el grupo Microsoft Edge producto para garantizar la mejor experiencia para los clientes.
+Microsoft Managed Desktop implementa el canal [estable extendido](/deployedge/microsoft-edge-channels#extended-stable-channel) de Microsoft Edge, que se actualiza automáticamente cada ocho semanas. Las actualizaciones del canal estable extendido se extienden [](/deployedge/microsoft-edge-update-progressive-rollout) progresivamente por el grupo de Microsoft Edge productos para garantizar la mejor experiencia para los clientes.
 
-El [canal beta](/deployedge/microsoft-edge-channels#beta-channel) se implementa en dispositivos de los grupos Test y First para la validación representativa dentro de la organización. Este canal es totalmente compatible y se actualiza automáticamente con nuevas características aproximadamente cada seis semanas.
+El [canal beta](/deployedge/microsoft-edge-channels#beta-channel) se implementa en dispositivos del grupo De prueba para la validación representativa dentro de la organización. Este canal es totalmente compatible y se actualiza automáticamente con nuevas características aproximadamente cada cuatro semanas.
 
 > [!IMPORTANT]
 > Para asegurarse de que Microsoft Edge actualizaciones correctamente, no modifique las Microsoft Edge [de actualización.](/deployedge/microsoft-edge-update-policies)
@@ -45,14 +48,14 @@ La línea base de seguridad Microsoft Edge dispositivos de Escritorio administra
 | Configuración | Valor predeterminado | Descripción |
 | ------ | ------ | ------ |
 | Lista de bloqueo de instalación de extensión | Todo | Microsoft Managed Desktop establece esta directiva para evitar que las extensiones de Chrome se instalen en puntos de conexión administrados. Existen riesgos conocidos asociados con el modelo de extensión Chromium de datos, incluida la protección contra pérdida de datos, la privacidad y otros riesgos que pueden poner en peligro los dispositivos. |
-| Permitir hosts de mensajería nativa de nivel de usuario (instalados sin permisos de administrador) | Deshabilitada | Al deshabilitar esta directiva, Microsoft Edge solo usará hosts de mensajería nativos instalados en el nivel del sistema. Los hosts de mensajería nativa forman parte de las extensiones de Chrome, que permiten que el explorador interactúe con otras partes del extremo del usuario, lo que crea varios problemas de seguridad. |
+| Permitir hosts de mensajería nativa de nivel de usuario (instalados sin permisos de administrador) | Deshabilitado | Al deshabilitar esta directiva, Microsoft Edge solo usará hosts de mensajería nativos instalados en el nivel del sistema. Los hosts de mensajería nativa forman parte de las extensiones de Chrome, que permiten que el explorador interactúe con otras partes del extremo del usuario, lo que crea varios problemas de seguridad. |
 
 ### <a name="secure-sockets-layer-tlsssl"></a>Capa de sockets seguros (TLS/SSL)
 
 | Configuración | Valor predeterminado | Descripción
 | ------ | ------ | ------ |
 | Versión mínima de TLS | Tls 1.2 mínimo compatible | Si desea usar la TLS 1.1 menos segura, puede presentar una solicitud para hacerlo. |
-| Permitir que los usuarios continúen desde la página de advertencia ssl | Deshabilitada | No se recomienda habilitar esta configuración, ya que permite a los usuarios visitar sitios con errores de TSL. |
+| Permitir que los usuarios continúen desde la página de advertencia ssl | Deshabilitado | No se recomienda habilitar esta configuración, ya que permite a los usuarios visitar sitios con errores de TSL. |
 
 ### <a name="microsoft-defender-smartscreen"></a>SmartScreen de Microsoft Defender
 
@@ -66,17 +69,17 @@ La línea base de seguridad Microsoft Edge dispositivos de Escritorio administra
 
 | Configuración | Valor predeterminado | Descripción
 | ------ | ------ | ------ |
-| Configuración predeterminada de Adobe Flash | Deshabilitada | No se recomienda usar Flash debido a los riesgos de seguridad asociados. <br><br> Si todavía tiene procesos que dependen de Flash, establezca la directiva **[PluginsAllowedForUrls](/deployedge/microsoft-edge-policies#pluginsallowedforurls)** para habilitar Flash para los sitios que lo necesiten. Si no puedes mantener una lista de sitios permitidos para usar Flash, presentar una solicitud de cambio para cambiar el valor a **Hacer** clic para reproducir, lo que permite a los usuarios elegir cuándo es adecuado ejecutar Flash. |
+| Configuración predeterminada de Adobe Flash | Deshabilitado | No se recomienda usar Flash debido a los riesgos de seguridad asociados. <br><br> Si todavía tiene procesos que dependen de Flash, establezca la directiva **[PluginsAllowedForUrls](/deployedge/microsoft-edge-policies#pluginsallowedforurls)** para habilitar Flash para los sitios que lo necesiten. Si no puedes mantener una lista de sitios permitidos para usar Flash, presentar una solicitud de cambio para cambiar el valor a **Hacer** clic para reproducir, lo que permite a los usuarios elegir cuándo es adecuado ejecutar Flash. |
 
 ### <a name="password-manager"></a>Administrador de contraseñas
 
 | Configuración | Valor predeterminado | Descripción
 | ------ | ------ | ------ |
-| Habilitar el guardado de contraseñas en el administrador de contraseñas | Deshabilitada | El administrador de contraseñas está deshabilitado de forma predeterminada. Si desea habilitar esta característica, presente una solicitud de soporte técnico y nuestros ingenieros de servicio pueden habilitar la configuración en su entorno. |
+| Habilitar el guardado de contraseñas en el administrador de contraseñas | Deshabilitado | El administrador de contraseñas está deshabilitado de forma predeterminada. Si desea habilitar esta característica, presente una solicitud de soporte técnico y nuestros ingenieros de servicio pueden habilitar la configuración en su entorno. |
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Modo internet Explorer en Microsoft Edge
 
-El modo IE en Microsoft Edge facilita el uso de todos los sitios que su organización necesita en un solo explorador. Usa el motor de Chromium integrado para sitios que son compatibles con el Chromium de representación. Microsoft Edge el motor MSHTML trident de Internet Explorer 11 (IE11) para sitios que no son o tienen dependencias de la funcionalidad de IE. [Obtener más información](/DeployEdge/edge-ie-mode)
+El modo IE en Microsoft Edge facilita el uso de todos los sitios que su organización necesita en un solo explorador. Usa el motor de Chromium integrado para sitios que son compatibles con el Chromium de representación. Microsoft Edge el motor MSHTML trident de Internet Explorer 11 (IE11) para sitios que no son o tienen dependencias de la funcionalidad de IE. [Más información](/DeployEdge/edge-ie-mode)
 
 Microsoft Managed Desktop habilita el modo Internet Explorer para los dispositivos de forma predeterminada.
 

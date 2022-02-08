@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 43f2f304be125afb57fd1ff5c09605159e16a961
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 950178b638b020e9d44301db3a335c73bbb55311
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321584"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444549"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -85,25 +85,35 @@ Para obtener más información acerca de las plantillas, consulte [Trabajar con 
 
 ## <a name="create-assessments"></a>Crear evaluaciones
 
-Para crear una evaluación, usará un asistente para seleccionar la plantilla que debe usar y establecer las propiedades de la evaluación.
-
 > [!NOTE]
 > Solo los usuarios que tienen un rol de administrador global, administración del administrador de cumplimiento o evaluador de administrador de cumplimiento pueden crear y modificar evaluaciones. Obtenga más información [sobre roles y permisos](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-Para empezar a crear evaluaciones, siga estos pasos.
+Antes de comenzar, asegúrese de saber a qué grupo lo asignará o esté preparado para crear un nuevo grupo para esta evaluación. Lea detalles sobre [grupos y evaluaciones](#understand-groups-before-creating-assessments).
 
-1. Sepa a qué grupo asignará la evaluación o estará preparado para crear uno nuevo para esta evaluación.
+Para crear una evaluación, usará un proceso guiado para seleccionar una plantilla y designar el producto asociado. En la **página Evaluaciones, le recomendamos** que empiece por Agregar evaluaciones **recomendadas**, lo que le ayudará a identificar y configurar rápidamente las evaluaciones más relevantes para su organización a la vez. También puede configurar evaluaciones de una en una seleccionando **Agregar evaluación**. Siga los pasos siguientes para empezar a crear evaluaciones.
 
-2. Abra el asistente para evaluación. Puede tener acceso a este panel desplegable desde uno de dos lugares:
-    - Vaya a la **página evaluaciones** del Administrador de cumplimiento y seleccione **Agregar evaluación**; o
-    - Busque la plantilla que desea usar en la pestaña plantillas **de** evaluación, vea sus detalles y seleccione **Crear evaluación**. Esto rellenará el campo de selección de plantilla del asistente.
+#### <a name="create-assessments-based-on-recommendations-for-your-org-type"></a>Crear evaluaciones basadas en recomendaciones para el tipo de organización
 
-3. **Seleccione una plantilla**: si no ha elegido una plantilla en el paso 2, elija una plantilla para que sirva de base para su evaluación. Verá la lista de plantillas divididas en categorías incluidas y premium (vea [Disponibilidad de](compliance-manager-templates.md#template-availability-and-licensing) plantillas y licencias para obtener más información). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Siguiente**.
+El Administrador de cumplimiento puede indicar qué evaluaciones pueden ser más relevantes para su organización. Cuando proporcione información básica sobre el sector y las ubicaciones de su organización, le recomendamos qué plantillas usar de nuestra biblioteca de más de 300 plantillas. Simplemente elija entre las plantillas recomendadas para configurar rápidamente varias evaluaciones a la vez. 
+
+Para crear una o más evaluaciones basadas en nuestras recomendaciones, seleccione Agregar evaluaciones **recomendadas** en la página Evaluaciones y siga estos pasos:
+   - Seleccione uno o varios sectores que identifiquen su organización y, a continuación, seleccione **Siguiente**
+   - Seleccione una o varias regiones para la ubicación de su organización y, a continuación, seleccione **Siguiente**
+   - En la **pantalla Elegir evaluación** , seleccione la flecha desplegable junto a **Plantillas** recomendadas para ver la lista de evaluaciones que creemos que se aplican a su organización. Active las casillas situadas junto a las plantillas que desea usar para crear evaluaciones y, a continuación, seleccione **Siguiente**.
+   - Revise las selecciones finales y **seleccione Agregar evaluaciones recomendadas** para crear sus nuevas evaluaciones.
+
+#### <a name="create-an-assessment-using-a-guided-process"></a>Crear una evaluación mediante un proceso guiado
+
+1. En la **página Evaluaciones** , seleccione **Agregar evaluación**. Esto le colocará en el asistente para la creación de evaluaciones.
+
+2. En la **pantalla Plantilla base** , seleccione **Seleccionar plantilla** para elegir la plantilla para su evaluación.
+
+3. En el panel desplegable, elija la plantilla para el reglamento o la certificación en la que basar la evaluación. La lista de plantillas divididas en categorías incluidas y premium ([obtener detalles](compliance-manager-templates.md#template-availability-and-licensing)). El **contador De plantillas** activadas/con licencia en la parte superior del panel desplegable muestra cómo pueden usarse las plantillas fuera del número total disponible o la organización para usar (más [información](compliance-manager-templates.md#active-and-inactive-templates)). Seleccione el botón de radio junto a la plantilla elegida y, a continuación, **seleccione Guardar**. Volverás a la pantalla **de la plantilla base** , donde podrás revisar los detalles de la plantilla y, a continuación, selecciona **Siguiente**.
 
 4. **Producto, nombre y grupo:** Establezca estas propiedades para identificar la evaluación, elija el producto que va a evaluar y asígnelo a un grupo.
 
     - **Producto**: seleccione el producto al que desea que se aplique la evaluación. Si usa una plantilla de Microsoft, como una diseñada para Microsoft 365, este campo se rellenará para indicar el producto adecuado y no se puede cambiar. Si usa una plantilla universal, seleccione si está creando esta evaluación para un producto nuevo o un producto personalizado que ya haya definido en el Administrador de cumplimiento. Si elige un producto nuevo, escriba su nombre. Tenga en cuenta que no puede seleccionar un producto de Microsoft predefinido al usar una plantilla universal.
-    - **Nombre**: escriba un nombre para la evaluación en el **campo Nombre de** evaluación. Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
+    - **Nombre de la** evaluación: escriba un nombre para la evaluación en el **campo Nombre de** evaluación. Los nombres de evaluación deben ser únicos dentro de los grupos. Si el nombre de la evaluación coincide con el nombre de otra evaluación en un grupo determinado, recibirá un error que le pedirá que cree un nombre diferente.
     - **Grupo**: asigne la evaluación a un grupo. Puede:
         - Seleccione **Usar grupo existente** para asignarlo a un grupo que ya ha creado; o
         - Seleccione **Crear nuevo grupo** para crear un nuevo grupo y asígnele esta evaluación:
@@ -112,9 +122,9 @@ Para empezar a crear evaluaciones, siga estos pasos.
 
     Cuando termine, seleccione **Siguiente**.
 
-5. **Revisar y finalizar:** La última pantalla del asistente muestra la plantilla, el nombre y el grupo elegidos para la evaluación. Puede editar cualquiera de estas opciones desde los vínculos de la pantalla, que le llevan de nuevo a los pasos relevantes del asistente. Cuando esté listo, seleccione **Crear evaluación**.
+5. **Revisar y finalizar:** Revise las selecciones y realice las modificaciones necesarias. Cuando esté listo, seleccione **Crear evaluación**.
 
-6. En la siguiente pantalla se confirma que ha creado correctamente la nueva evaluación. Seleccione **Listo** para cerrar el asistente y la página de detalles de la nueva evaluación aparecerá en la pantalla.
+La siguiente pantalla confirma que se creó la evaluación. Cuando seleccione **Listo**, se le mostrará a la página de detalles de la nueva evaluación.
 
 Si ve una pantalla **Error** de evaluación después de seleccionar **Crear** evaluación, seleccione **Volver** a intentar volver a crear la evaluación.
 

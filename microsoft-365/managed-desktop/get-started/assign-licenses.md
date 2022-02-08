@@ -3,29 +3,28 @@ title: Asignar licencias
 description: Como parte de la inscripción, debe asignar licencias que ya ha obtenido a los usuarios
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 28a29f0e1b8160995b8bbccdae868a86135a0577
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 454bc457603b64916bfdaf947d867404bd6569db
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211542"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444466"
 ---
 # <a name="assign-licenses"></a>Asignar licencias
 
-Como parte de la preparación para inscribirse en Escritorio administrado de Microsoft, deberá asegurarse de haber obtenido las licencias necesarias. Si aún no ha obtenido las licencias, vea [Más](../get-ready/prerequisites.md#more-about-licenses) información sobre las licencias para obtener más información sobre exactamente qué licencias necesita.
+En la preparación para inscribirse en Microsoft Managed Desktop, debe asegurarse de haber obtenido las licencias necesarias. Para obtener más información acerca de las licencias, consulta [Más información sobre las licencias](../get-ready/prerequisites.md#more-about-licenses) para las licencias que necesitarás.
 
+Cuando tenga las licencias adecuadas, asígnelas a los usuarios. Para asignar licencias, se recomienda aprovechar la característica de licencias basadas [](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) en grupos de Azure Active Directory.
 
-Si todas las licencias están alineadas, es el momento de asignarlas a los usuarios. Para asignar licencias, se recomienda aprovechar [](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) la característica de licencias basadas en grupos de Azure Active Directory.
+Si tiene alguna dificultad con la asignación de licencias, póngase en contacto con el soporte [técnico de administración](../working-with-managed-desktop/admin-support.md).
 
-Si tiene alguna dificultad con la asignación de licencias, póngase en contacto con el soporte [técnico de administración.](../working-with-managed-desktop/admin-support.md)
-
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Escritorio administrado de Microsoft
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Microsoft Managed Desktop
 
 1. Acceder al [portal de administrador](access-admin-portal.md).
 1. [Agregar y verificar los contactos de administración en el portal de administrador](add-admin-contacts.md).

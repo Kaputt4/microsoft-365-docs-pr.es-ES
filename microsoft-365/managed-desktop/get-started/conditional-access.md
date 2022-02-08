@@ -9,39 +9,41 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: a9d218c40d7aafef7de293381b639515c84439f8
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 86e2645891afef2523fb8dc80ec0d9a59b094fc4
+ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034658"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62444541"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Ajustar la configuración después de la inscripción
 
 Después de completar la inscripción en Microsoft Managed Desktop, es posible que deba ajustarse alguna configuración de administración. Para comprobar y ajustar si es necesario, siga estos pasos:
 
 1. Revise la Microsoft Intune y Azure Active Directory de configuración descritas en la siguiente sección.
-2. Si alguno de los elementos se aplica al entorno, realice los ajustes descritos.
-3. Si desea comprobar que todas las configuraciones son correctas, puede volver a ejecutar la herramienta de evaluación de preparación para asegurarse de que nada entre en conflicto con el Escritorio administrado de Microsoft. [](https://aka.ms/mmdart)
+2. Si alguno de los elementos se aplica al entorno, realice los ajustes como se describe.
+3. Si desea comprobar que todas las configuraciones son correctas, puede volver a ejecutar la herramienta [](https://aka.ms/mmdart) de evaluación de preparación para asegurarse de que nada entre en conflicto con Microsoft Managed Desktop.
 
 > [!NOTE]
 > A medida que las operaciones continúen en los meses siguientes, si realiza cambios después de la inscripción en directivas de Microsoft Intune, Azure Active Directory o Microsoft 365 que afectan al Escritorio administrado de Microsoft, es posible que Microsoft Managed Desktop deje de funcionar correctamente. Para evitar problemas con el servicio, compruebe la configuración específica que se describe en [Corregir](../get-ready/readiness-assessment-fix.md) problemas encontrados por la herramienta de evaluación de preparación antes de cambiar las directivas enumeradas allí. También puede volver a ejecutar la herramienta de evaluación de preparación en cualquier momento.
 
-
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune configuración
 
-- Perfil de implementación de Autopilot: si usa alguna directiva de Autopilot, actualice cada una de ellas para excluir el grupo Dispositivos modernos de workplace **-All** Azure AD usuario. Para actualizarlos,  en la sección Grupos **excluidos** de Asignaciones, seleccione el grupo Modern **Workplace Devices -All** Azure AD que se creó durante la inscripción de Microsoft Managed Desktop. Microsoft Managed Desktop también habrá creado un perfil de Autopilot, que tendrá "Modern Workplace" en el nombre (el perfil de **Modern Workplace Autopilot**). Cuando actualices tus propios perfiles de  **Autopilot,** asegúrate de no excluir el grupo Modern **Workplace Devices -All** Azure AD del Perfil de Autopilot de Modern Workplace creado por Microsoft Managed Desktop.
-
-- Directivas de acceso condicional: si crea nuevas directivas de acceso condicional relacionadas con Azure AD, Microsoft Intune o Microsoft Defender para Endpoint después de la inscripción de Microsoft Managed Desktop, excluya el grupo Cuentas de servicio modernas del lugar de trabajo **Azure AD** de ellas. Para ver los pasos, [vea Acceso condicional: Usuarios y grupos](/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop mantiene directivas de acceso condicional independientes para restringir el acceso a estas cuentas. Para revisar la directiva de acceso condicional de Microsoft Managed Desktop (**Modern Workplace – Secure Workstation**), vaya a Microsoft Endpoint Manager y vaya a Acceso **condicional** en **Endpoint Security**. No modifique ninguna directiva de Azure AD de acceso condicional creada por Microsoft Managed Desktop que tenga "Modern Workplace" en el nombre.
-
-- Autenticación multifactor: si crea nuevos requisitos de autenticación multifactor en las directivas de acceso condicional relacionadas con Azure AD, Intune o Microsoft Defender para Endpoint después de la inscripción de Microsoft Managed Desktop, excluya el grupo Cuentas de servicio modernas del lugar de trabajo **Azure AD** de ellos. Para ver los pasos, [vea Acceso condicional: Usuarios y grupos](/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop mantiene directivas de acceso condicional independientes para restringir el acceso a los miembros de este grupo. Para revisar la directiva de acceso condicional de Microsoft Managed Desktop (**Modern Workplace -**), vaya a Microsoft Endpoint Manager y vaya a Acceso **condicional** en **Endpoint Security**. 
-
-- Windows 10 anillo de actualización: para cualquier Windows 10 de anillo de actualización que haya creado, excluya el grupo **Modern Workplace Devices -All** Azure AD de cada directiva. Para ver los pasos, [vea Crear y asignar anillos de actualización.](/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) Microsoft Managed Desktop también habrá creado algunas directivas de anillo de actualización, todas las cuales tendrán "Modern Workplace" en el nombre (por ejemplo, Modern Workplace **Update Policy [Broad]**, **Modern Workplace Update Policy [Fast]**, **Modern Workplace Update Policy [First]** y **Modern Workplace Update Policy [Test]**). Al actualizar sus propias directivas,  asegúrese de no excluir el grupo **Modern Workplace Devices -All** Azure AD de los que creó Microsoft Managed Desktop.
-
+| Configuración | Descripción |
+| ------ | ------ |
+| Perfil de implementación de Autopilot | Si usas alguna directiva de Autopilot, actualiza cada una para excluir el grupo **Modern Workplace Devices -All** Azure AD. <br><br> **Para actualizar las directivas de Autopilot:** <br><br> En **Asignaciones**, en **los** grupos excluidos, seleccione el grupo **Modern Workplace Devices -All** Azure AD que se creó durante la inscripción de Microsoft Managed Desktop. <br><br> Microsoft Managed Desktop también habrá creado un perfil de Autopilot, que tendrá "Modern Workplace" en el nombre (el Perfil de **Piloto automático de Modern Workplace**). Al actualizar sus propios perfiles de Autopilot, asegúrese de  que no excluya el grupo Modern **Workplace Devices -All** Azure AD del Perfil de **Autopilot de Modern Workplace** creado por Microsoft Managed Desktop. |
+| Directivas de acceso condicional | Si crea nuevas directivas de acceso condicional relacionadas con Azure AD, Microsoft Intune o Microsoft 365 Defender para Endpoint después de la inscripción de Microsoft Managed Desktop, excluya el grupo Cuentas de servicio modernas del lugar de **trabajo Azure AD de** ellos. Para obtener más información, vea [Acceso condicional: usuarios y grupos](/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop mantiene directivas de acceso condicional independientes para restringir el acceso a estas cuentas. <br><br> **Para revisar la directiva de acceso condicional de Microsoft Managed Desktop (Modern Workplace – Secure Workstation):** <br><br> Vaya a Microsoft Endpoint Manager y vaya a **Acceso condicional en** **Endpoint Security**. No modifique ninguna directiva de Azure AD de acceso condicional creada por Microsoft Managed Desktop que tenga "Modern Workplace" en el nombre. |
+| Autenticación multifactor | Si crea nuevos requisitos de autenticación multifactor en las directivas de acceso condicional relacionadas con Azure AD, Intune o Microsoft 365 Defender para Endpoint después de la inscripción en Microsoft Managed Desktop, excluya el grupo Cuentas de servicio modernas del lugar de **trabajo Azure AD de** ellos. Para obtener más información, vea [Acceso condicional: usuarios y grupos](/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop mantiene directivas de acceso condicional independientes para restringir el acceso a los miembros de este grupo. <br><br> **Para revisar la directiva de acceso condicional de Microsoft Managed Desktop (Modern Workplace -):** <br><br> Vaya a Microsoft Endpoint Manager y vaya a **Acceso condicional en** **Endpoint Security**.
+| Windows 10 de actualización | Para cualquier Windows 10 anillo de actualización que haya creado, excluya el grupo **Modern Workplace Devices -All** Azure AD de cada directiva. Para obtener más información, vea [Crear y asignar anillos de actualización](/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings). <br><br> Microsoft Managed Desktop también habrá creado algunas directivas de anillo de actualización, todas las cuales tendrán "Modern Workplace" en el nombre. Por ejemplo: <ul><li>Directiva de actualización moderna de workplace [Broad]</li><li>Directiva de actualización moderna de Workplace [Rápido]</li><li>Directiva de actualización moderna de workplace [First]</li><li>Directiva de actualización moderna del lugar de trabajo [Prueba]</li></ul> <br>Cuando actualice sus propias directivas, asegúrese de que  no excluya el grupo **Modern Workplace Devices -All** Azure AD de los que creó Microsoft Managed Desktop. |
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory configuración
 
-Restablecimiento de contraseñas de autoservicio: si usa el restablecimiento de contraseñas de autoservicio para todos los usuarios, ajuste la asignación para excluir las cuentas de servicio de Escritorio administrado de Microsoft. Para ajustar esta asignación, cree un grupo dinámico Azure AD todos los usuarios excepto las cuentas de servicio de *Escritorio* administrado de Microsoft y, a continuación, use ese grupo para la asignación en lugar de "todos los usuarios".
+Restablecimiento de contraseñas de autoservicio: si usa el restablecimiento de contraseñas de autoservicio para todos los usuarios, ajuste la asignación para excluir las cuentas de servicio de Escritorio administrado de Microsoft.
+
+**Para ajustar esta asignación:**
+
+1. Crear un grupo Azure AD dinámico para todos los usuarios *excepto cuentas* de servicio de Escritorio administrado de Microsoft
+1. Use ese grupo para la asignación en lugar de "todos los usuarios".
 
 Para ayudarle a buscar y excluir las cuentas de servicio, este es un ejemplo de una consulta dinámica que puede usar:
 
@@ -49,9 +51,7 @@ Para ayudarle a buscar y excluir las cuentas de servicio, este es un ejemplo de 
 (user.objectID -ne null) and (user.userPrincipalName -ne "MSADMIN@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSADMININT@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_SOC_RO@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_WDGSOC@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSTEST@TENANT.onmicrosoft.com")
 ```
 
-En esta consulta, reemplace @TENANT por el nombre de dominio del espacio empresarial.
-
-
+En esta consulta, reemplace por `@TENANT` el nombre de dominio del inquilino.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar con Microsoft Managed Desktop
 
