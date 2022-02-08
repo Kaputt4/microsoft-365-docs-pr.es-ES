@@ -1,30 +1,25 @@
 ---
 title: Configuración de las directivas de filtro de correo no deseado
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: null
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: high
 search.appverid:
-- MET150
+  - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
-- M365-security-compliance
-ms.custom: ''
-description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
+  - M365-security-compliance
+ms.custom: null
+description: 'Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29e21c53ef7fa7456b8e38433006b1eab210f610
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873566"
 ---
+
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -79,6 +74,10 @@ Para aumentar la eficacia del filtrado de correo no deseado, puede crear directi
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para saber la configuración recomendada para las directivas contra correo electrónico no deseado, consulte [Configuración de la directiva de correo no deseado de EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+
+- No puede deshabilitar por completo el filtrado de spam, pero puede utilizar una regla de flujo de correo (también conocida como regla de transporte) para evitar la mayor parte del filtrado de spam en los mensajes entrantes (por ejemplo, si redirige el correo electrónico a través de un servicio o dispositivo de protección de terceros antes de entregarlo a Microsoft 365). Para obtener más información, vea [Usar reglas de flujo de mensajes para establecer el nivel de confianza de spam (SCL) en los mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+  - Los mensajes de phishing de confianza elevada aún se filtran. Otras características de EOP no se ven afectadas (por ejemplo, los mensajes siempre se examinan en busca de malware).
+  - Si necesita eludir los filtros de spam para los buzones de SecOps o las simulaciones de phishing, no use las reglas de flujo de correo. Para obtener más información, vea [Configurar la entrega de simulaciones de phishing de terceros a los usuarios y de mensajes no filtrados a los buzones de SecOps](configure-advanced-delivery.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>Usar el portal de Microsoft 365 Defender para crear directivas contra correo no deseado
 

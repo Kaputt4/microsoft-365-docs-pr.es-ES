@@ -1,7 +1,7 @@
 ---
 title: Restringir el acceso al contenido utilizando etiquetas de confidencialidad para aplicar la cifrado
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,19 +10,14 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+  - M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 024759362cd2e329655935c784a77a1789603f37
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426344"
 ---
+
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -440,7 +435,7 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Si se agrega una etiqueta que aplica el cifrado a través de una aplicación de Office, cuando el documento está [extraído en SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) y el usuario descarta la desprotección, el documento permanece etiquetado y cifrado.
 
-- Las siguientes acciones para archivos cifrados no son compatibles con las aplicaciones de Office (Windows, Mac, Android e iOS) y los usuarios ven un mensaje de error que indica que se ha producido un problema. Sin embargo, se puede usar la funcionalidad de SharePoint como alternativa:
+- A menos que [haya habilitado la coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md), las siguientes acciones para archivos cifrados no son compatibles con aplicaciones de Office (Windows, Mac, Android e iOS) y los usuarios ven un mensaje de error que indica que algo salió mal. Sin embargo, la funcionalidad de SharePoint se puede usar como alternativa:
 
   - Ver, restaurar y guardar copias de versiones anteriores. Como alternativa, los usuarios pueden realizar estas acciones con Office en la web cuando [permitir y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Cambie el nombre o la ubicación de los archivos. Como alternativa, los usuarios pueden [renombre un archivo, carpeta o vínculo en una biblioteca de documentos](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) en SharePoint.
