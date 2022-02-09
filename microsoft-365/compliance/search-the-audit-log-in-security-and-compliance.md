@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: fe473eba5bb2034044206eff3fb17e0249509447
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 84fee7a24c23fb9b7e0b7ba7151538ea79409ce2
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322100"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464885"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -1109,15 +1109,13 @@ En la tabla siguiente se enumeran las actividades de los informes de uso que se 
 El proceso de registro de auditoría del administrador de Exchange (que está habilitado de manera predeterminada en Microsoft 365) registra un evento en el registro de auditoría cuando un administrador (o un usuario al que se le han asignado permisos administrativos) realiza un cambio en la organización de Exchange Online. Los cambios que se han realizado mediante el Centro de administración de Exchange o mediante la ejecución de un cmdlet en PowerShell en Exchange en línea se registran en el registro de auditoría del administrador de Exchange. Los cmdlets que comienzan con el verbo **Get-**, **Search-** o **Test-**, no se registran en el registro de auditoría. Para obtener más información detallada sobre el registro de auditoría del administrador en Exchange, consulte [Registro de auditoría de administrador](/exchange/administrator-audit-logging-exchange-2013-help).
 
 > [!IMPORTANT]
-> Algunos cmdlets de Exchange Online que no se archivan en el registro de auditoría de administración de Exchange (o en el registro de auditoría). Muchos de estos cmdlets se relacionan con el mantenimiento del servicio de Exchange en línea y los ejecuta el personal del centro de datos de Microsoft o las cuentas de servicio. Estos cmdlets no se registran porque darían un gran número de eventos de auditoría "ruidosos". Si hay un cmdlet de Exchange Online que no se está auditando, envíe una sugerencia al [foro Security & Compliance User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance) y solicite que se habilite para la auditoría. También puede enviar una solicitud de cambio de diseño (DCR) al Soporte técnico de Microsoft.
+> Algunos cmdlets de Exchange Online que no se archivan en el registro de auditoría de administración de Exchange (o en el registro de auditoría). Muchos de estos cmdlets se relacionan con el mantenimiento del servicio de Exchange en línea y los ejecuta el personal del centro de datos de Microsoft o las cuentas de servicio. Estos cmdlets no se registran porque darían un gran número de eventos de auditoría "ruidosos". Si hay un cmdlet de Exchange Online que no se está auditando, envíe una solicitud de cambio de diseño (DCR) a Soporte técnico de Microsoft.
 
 Aquí se muestran algunas sugerencias para buscar actividades de administrador de Exchange al buscar en el registro de auditoría:
 
 - Para devolver las entradas del registro de auditoría de administrador Exchange, tiene que seleccionar **Mostrar resultados para todas las actividades** en la lista **Actividades**. Use los cuadros de intervalo de fecha y la lista de **Usuarios** para restringir los resultados de búsqueda para los cmdlets que se ejecutan mediante un administrador de Exchange específico dentro de un rango de fecha específico.
 
-- Para mostrar los eventos del registro de auditoría de administración de Exchange, filtre los resultados de búsqueda y escriba un **-** (guion) en el cuadro de filtro **Actividad**. Esto mostrará los nombres de los cmdlet, que se muestran en la columna **Actividad** de los eventos de administración de Exchange. Luego usted puede ordenar los nombres de cmdlet en orden alfabético.
-
-  ![Escriba un guión en el cuadro de actividades para filtrar los eventos de la administración de Exchange.](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+- Para mostrar eventos del registro de auditoría de administración de Exchange, haga clic en la columna **Actividad** para ordenar los nombres de cmdlet en orden alfabético.
 
 - Para obtener información sobre qué cmdlet se ha ejecutado, qué parámetros y valores de parámetro se han usado y qué objetos se han visto afectados, tendrá que exportar los resultados de búsqueda y seleccionar la opción **Descargar todos los resultados**. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 
