@@ -16,16 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre Advanced eDiscovery en Microsoft 365 idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
-ms.openlocfilehash: 8a2ed33c75fabfa92f8ddd8f6fc8a704a2e8a15f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4c1871eb49754ba93d762989e3cff9c53950d2c6
+ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942181"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62487328"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Compatibilidad con lenguaje CJK para Advanced eDiscovery
 
-Advanced eDiscovery admite idiomas de juego de caracteres de doble byte (estos incluyen chino simplificado, chino tradicional, japonés y coreano, que se conocen colectivamente como *idiomas CJK)* para los siguientes escenarios avanzados de un conjunto de opiniones:
+Advanced eDiscovery admite idiomas de juego de caracteres de doble byte (entre los que se incluyen chino simplificado, chino tradicional, japonés y coreano, que se conocen colectivamente como idiomas *CJK*) para los siguientes escenarios avanzados de un conjunto de opiniones:
 
 - Al consultar [los datos de un conjunto de revisión](review-set-search.md).
 
@@ -33,13 +33,13 @@ Advanced eDiscovery admite idiomas de juego de caracteres de doble byte (estos i
 
 - Al analizar [los datos de casos en un conjunto de revisión](analyzing-data-in-review-set.md) mediante la detección casi duplicada, el subproceso de correo electrónico y el análisis de temas.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes.
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Cómo puedo crear una búsqueda para recopilar elementos que contengan caracteres CJK?**
 
-Puede usar caracteres CJK para [búsquedas](building-search-queries.md#keyword-searches)de palabras clave, consultas [de](keyword-queries-and-search-conditions.md) palabras clave y condiciones de búsqueda al buscar contenido en Advanced eDiscovery. También se admite la búsqueda de caracteres CJK al buscar contenido en la exhibición de documentos electrónicos principal y la búsqueda de contenido.
+Puede usar caracteres CJK [para búsquedas](building-search-queries.md#keyword-searches) de palabras clave, consultas [de palabras clave](keyword-queries-and-search-conditions.md) y condiciones de búsqueda al buscar contenido en Advanced eDiscovery. También se admite la búsqueda de caracteres CJK al buscar contenido en la exhibición de documentos electrónicos principal y la búsqueda de contenido.
 
-Proporcionamos compatibilidad con CJK para todos [los](keyword-queries-and-search-conditions.md#search-operators) operadores de búsqueda y las condiciones de [búsqueda,](keyword-queries-and-search-conditions.md#search-conditions)incluidos los operadores **booleanos AND**, **OR**, **NOT** y **NEAR**.
+Proporcionamos compatibilidad con CJK para [todos los operadores](keyword-queries-and-search-conditions.md#search-operators) de búsqueda y las condiciones de [búsqueda,](keyword-queries-and-search-conditions.md#search-conditions) incluidos los operadores **booleanos AND**, **OR**, **NOT** y **NEAR**.
 
 Si está seguro de que las ubicaciones de contenido o los elementos contienen caracteres CJK, pero las búsquedas no devuelven ningún resultado, haga clic en el icono idioma-país o región de la consulta ![Icono de idioma-país o región de consulta en búsqueda de contenido.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccione el valor de código de referencia cultural idioma-país correspondiente para la búsqueda. Por defecto, la versión del idioma/región es la neutra.
 
@@ -49,17 +49,17 @@ Depende del escenario de búsqueda.
 
 - Al consultar [datos en un conjunto de revisión](review-set-search.md) Advanced eDiscovery, puede buscar varios idiomas.
 
-- Al crear [una búsqueda para recopilar datos,](create-search-to-collect-data.md)cree una búsqueda independiente para cada idioma de destino. Por ejemplo, si está buscando un documento que contenga chino y coreano, seleccione Chino para la primera consulta y seleccione Coreano para la segunda consulta.
+- Al crear [una búsqueda para recopilar datos](create-draft-collection.md), cree colecciones independientes para cada idioma de destino. Por ejemplo, si está buscando un documento que contenga chino y coreano, seleccione Chino para la primera colección y seleccione Coreano para la segunda colección.
 
 **No veo el icono de idioma-país o región de consulta para seleccionar un idioma para las consultas de un conjunto de revisión. ¿Cómo puedo especificar un idioma de consulta en una búsqueda de conjunto de revisión?**
 
 Para las consultas de conjunto de revisión, no es necesario especificar un idioma del documento. Advanced eDiscovery detecta automáticamente los idiomas de los documentos al agregar contenido a un conjunto de revisión. Esto le ayuda a optimizar los resultados de la consulta en un conjunto de revisión.
 
-**¿Puedo ver idiomas detectados en metadatos [de archivo?](view-documents-in-review-set.md#file-metadata)**
+**¿Puedo ver los idiomas detectados en los [metadatos de archivos](view-documents-in-review-set.md#file-metadata)?**
 
 No, no puede ver los idiomas detectados en los metadatos de archivo.
 
-**¿Puedo filtrar por idiomas de documento en un conjunto de revisión?**
+**¿Puedo filtrar por idiomas de documento en un conjunto de revisión**?
 
 No, no puede filtrar, ordenar o buscar por idiomas de documento en un conjunto de revisión.
 
@@ -69,13 +69,13 @@ No, ninguna de las búsquedas y conjuntos de revisión existentes cambiará. No 
 
 **¿Cómo puedo cambiar mi idioma de presentación a chino, japonés o coreano?**
 
-Para obtener información sobre cómo cambiar el idioma para mostrar y la zona [horaria,](/office365/troubleshoot/access-management/set-language-and-region)vea How to set language and region settings for Office 365 .
+Para obtener información sobre cómo cambiar el idioma para mostrar y la zona horaria, vea [How to set language and region settings for Office 365](/office365/troubleshoot/access-management/set-language-and-region).
 
 ## <a name="known-issues"></a>Problemas conocidos
 
 - OCR no admite caracteres CJK de archivos de imagen
 
-- Los archivos de correo electrónico (como *.eml y *.msg) en la vista Anotación no son compatibles con los idiomas CJK. [](view-documents-in-review-set.md#annotate-view)
+- Los archivos de correo electrónico (como *.eml y *.msg[](view-documents-in-review-set.md#annotate-view)) en la vista Anotación no son compatibles con los idiomas CJK.
 
 - El resaltado de resultados de búsqueda en [la vista](view-documents-in-review-set.md#text-view) Texto no es compatible con los idiomas CJK.
 

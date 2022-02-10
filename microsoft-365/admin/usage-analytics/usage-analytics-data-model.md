@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Obtenga información sobre cómo el análisis de uso se conecta a una API y proporciona una tendencia mensual de uso de varios Microsoft 365 servicios.  '
-ms.openlocfilehash: 986a7c7b7f07fca9275f4d7d2d4171ae464158c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 013fdd75063ad8ad2489ebe43c9091f05f94c14c
+ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191120"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62487280"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modelo de datos de análisis de uso de Microsoft 365
 
@@ -68,12 +68,12 @@ Esta tabla proporciona detalles de nivel de usuario para todos los usuarios que 
 |UPN  <br/> |Nombre principal de usuario que identifica de forma única al usuario para poder unirse a otros orígenes de datos externos.  <br/> |
 |DisplayName  <br/> |El nombre para mostrar del usuario.  <br/> |
 |IDType  <br/> |El tipo de identificador se establece en 1 si el usuario es un usuario de Yammer que se conecta mediante su identificador de Yammer o 0 si se conecta a Yammer mediante su identificador de Microsoft 365.  <br/> El valor es 1 para representar que este usuario se conecta a Yammer con su identificador de Yammer y no con su Microsoft 365 de Microsoft 365 usuario  <br/> |
-|HasLicenseEXO  <br/> |Se establece en "true" si un usuario tiene asignada una licencia habilitada para usar Exchange.  <br/> |
-|HasLicenseODB  <br/> |Se establece en "true" si el usuario tiene asignada una licencia habilitada para usar OneDrive para la Empresa.  <br/> |
-|HasLicenseSPO  <br/> |Se establece en "true" si un usuario tiene asignada una licencia habilitada para usar SharePoint Online.  <br/> |
-|HasLicenseYAM  <br/> |Se establece en "true" si un usuario tiene asignada una licencia habilitada para usar Yammer.  <br/> |
-|HasLicenseSFB  <br/> |Se establece en "true" si un usuario tiene asignada una licencia habilitada para usar Skype Empresarial.  <br/> |
-|HasLicenseTeams  <br/> |Se establece en true si se asigna una licencia al usuario y se habilita para usar Microsoft Teams.  <br/> |
+|HasLicenseEXO  <br/> |Se establece en true si el usuario tiene asignada una licencia y está habilitado para usar Exchange el último día del mes.  <br/> |
+|HasLicenseODB  <br/> |Se establece en true si el usuario tiene asignada una licencia y está habilitado para usar OneDrive para la Empresa el último día del mes.  <br/> |
+|HasLicenseSPO  <br/> |Se establece en true si el usuario tiene asignada una licencia y está habilitado para usar SharePoint Online el último día del mes.  <br/> |
+|HasLicenseYAM  <br/> |Se establece en true si el usuario tiene asignada una licencia y está habilitado para usar Yammer el último día del mes.  <br/> |
+|HasLicenseSFB  <br/> |Se establece en true si el usuario tiene asignada una licencia y está habilitado para usar Skype For Business en el último día del mes.  <br/> |
+|HasLicenseTeams  <br/> |Se establece en true si al usuario se le asigna una licencia y se le permite usar Microsoft Teams el último día del mes.  <br/> |
 |Company  <br/> |Los datos de la compañía representados en Azure Active Directory para el usuario.  <br/> |
 |Department  <br/> |Los datos de departamento representados en Azure Active Directory para el usuario.  <br/> |
 |LocationCity  <br/> |Los datos de ciudad representados en Azure Active Directory para el usuario.  <br/> |
@@ -215,8 +215,8 @@ Esta tabla consiste en los datos de resumen de mes a mes sobre el uso o la activ
 |DocumentCount  <br/> |Número total de documentos que existían en el sitio al final del período de tiempo.  <br/> |
 |Diplansed  <br/> |Suma del total de almacenamiento usado en todos los sitios al final del período de tiempo.  <br/> |
 |ActivityType  <br/> |Número de sitios que registraron los diferentes tipos de actividad de archivos (cualquiera/archivos activos/archivos compartidos ext. o int./archivos sincronizados).  <br/> Representa cualquier actividad de archivo que se realizó.  <br/> |
-|SitesWithOwnerActivities  <br/> |Número de sitios activos donde el propietario del sitio realizó una actividad de archivos específica en sus propios sitios. Puede obtener el propietario del sitio desde el comando de PowerShell **get-sposite**. Esta es la persona responsable del sitio.   <br/> |
-|SitesWithNonOwnerActivities  <br/> |Número de sitios activos sumados del mes donde los usuarios distintos al propietario del sitio realizaron una actividad de archivos específica en los sitios. Puede obtener el propietario del sitio desde el comando de PowerShell **get-sposite**. Esta es la persona responsable del sitio. <br/> |
+|SitesWithOwnerActivities  <br/> |Número de sitios activos donde el propietario del sitio realizó una actividad de archivos específica en sus propios sitios. Puede obtener el propietario del sitio desde el **comando de PowerShell get-sposite**. Esta es la persona responsable del sitio.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Número de sitios activos sumados del mes donde los usuarios distintos al propietario del sitio realizaron una actividad de archivos específica en los sitios. Puede obtener el propietario del sitio desde el **comando de PowerShell get-sposite**. Esta es la persona responsable del sitio. <br/> |
 |ActivityTotalSites  <br/> |Número de sitios donde se registró una actividad durante el período de tiempo. Aunque un sitio tuviera actividad anteriormente en el período de tiempo y se eliminara al final del período de tiempo, seguiría contabilizándose en el total de sitios activos para ese período de tiempo.  <br/> |
 |Timeframe  <br/> |Esta columna tiene el valor de fecha. Se usa como una relación de varios a uno para la tabla Calendario.  <br/> |
 |ContentDate  <br/> |Si en el período de tiempo se muestra el mes actual, este valor representará la fecha más reciente del mes actual para los que están disponibles los datos.  <br/> Si en el período de tiempo se muestra el mes anterior, este valor representará la última fecha del mes del período de tiempo.  <br/> |
