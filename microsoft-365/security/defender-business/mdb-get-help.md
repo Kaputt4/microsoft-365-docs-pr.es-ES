@@ -15,18 +15,18 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
 description: Obtenga información sobre cómo obtener ayuda o ponerse en contacto con el soporte técnico en Microsoft Defender para empresas (versión preliminar)
-ms.date: 01/06/2022
-ms.openlocfilehash: 63873d5713e6f41ead43cfbb9cbc37fd4ba6567e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.date: 02/07/2022
+ms.openlocfilehash: 70810b62dc896fa5c080b32ca1c0adf5a6ed6427
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938557"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520504"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business-preview"></a>Obtener ayuda y soporte técnico para Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -38,7 +38,7 @@ Si no ve la respuesta a su pregunta, puede abrir un vale de soporte técnico.
 
 >
 > **¿Tiene un minuto?**
-> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
 >
 
 ## <a name="see-also"></a>Vea también

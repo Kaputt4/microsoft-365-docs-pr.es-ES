@@ -1,7 +1,7 @@
 ---
 title: Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 description: Administrar cómo Antivirus de Microsoft Defender la protección y las actualizaciones de productos.
-keywords: 'actualizaciones, líneas base de seguridad, protección, actualizaciones de programación, actualizaciones de fuerza, actualizaciones móviles, wsus'
+keywords: actualizaciones, líneas base de seguridad, protección, actualizaciones de programación, actualizaciones de fuerza, actualizaciones móviles, wsus
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,15 +12,20 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 'pahuijbr, mkaminska'
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 02/04/2022
+ms.date: 02/09/2022
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-endpoint
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.openlocfilehash: 5d464fe0b43aa4395b81723d945019d5450a7fc0
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520432"
 ---
-
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
 **Se aplica a:**
@@ -66,7 +71,7 @@ Para obtener más información, vea [Manage the sources for Antivirus de Microso
 > - Las actualizaciones mensuales se lanzan por fases, lo que da como resultado varios paquetes visibles en [los Servicios de actualización de Windows Server](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 > - En este artículo se enumeran los cambios que se incluyen en el canal de versión general. [Consulta la versión más reciente del canal general aquí](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - Para obtener más información sobre el proceso de implementación gradual y para obtener más información acerca de la próxima versión, consulte [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
-> - Para obtener más información acerca de las actualizaciones de inteligencia de seguridad, vea Actualizaciones de inteligencia de seguridad [para Antivirus de Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/wdsi/defenderupdates).
+> - Para obtener más información acerca de las actualizaciones de inteligencia de seguridad, vea Actualizaciones de inteligencia de seguridad [para Antivirus de Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 > - Si está buscando una lista de procesos de Microsoft Defender, descargue el libro **[mde-urls](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)** y, a continuación, seleccione la hoja de cálculo **Procesos de Microsoft Defender** . El libro mde-urls también enumera los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse, tal como se describe en Habilitar el acceso a las direcciones URL del servicio De extremo de [Microsoft Defender en el servidor proxy](configure-proxy-internet.md).
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versiones mensuales de plataforma y motor
@@ -80,11 +85,11 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Enero-2022 (Plataforma: 4.18.2201.x | Motor: 1.1.18900.2)</summary>
+<summary>Enero-2022 (Plataforma: 4.18.2201.10 | Motor: 1.1.18900.2)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.357.8.0**<br/>
-&ensp;Publicado: **2 de febrero de 2022**<br/>
-&ensp;Plataforma: **4.18.2201.x**<br/>
+&ensp;Publicado: **9 de febrero de 2022**<br/>
+&ensp;Plataforma: **4.18.2201.10**<br/>
 &ensp;Motor: **1.1.18900.2**<br/>
 &ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
 
@@ -94,6 +99,12 @@ Versión de actualización de inteligencia de seguridad: 1.357.8.0 <br/>
 ### <a name="whats-new"></a>Novedades
 
 - Mejoras en la supervisión del comportamiento en el rendimiento del filtrado
+- Endurecimiento de TrustedInstaller
+- Mejoras en la protección contra alteraciones
+- Se `ScanScheduleTime` reemplaza por un `ScanScheduleOffest` nuevo cmdlet [en Set-MpPreference](/powershell/module/defender/set-mppreference). Esta directiva configura el número de minutos después de la medianoche para realizar un examen programado.
+- Se agregó la `-ServiceHealthReportInterval` configuración a [Set-MpPreference](/powershell/module/defender/set-mppreference). Esta directiva configura el intervalo de tiempo (en minutos) para realizar un examen programado.
+- Se agregó la `AllowSwitchToAsyncInspection` configuración a [Set-MpPreference](/powershell/module/defender/set-mppreference). Esta directiva permite una optimización del rendimiento, que permite que los flujos de red inspeccionados sincrónicamente, cambien a inspección asincrónica una vez que se hayan comprobado y validado.
+- Actualizaciones del Analizador de rendimiento v2: Se ha agregado compatibilidad con PowerShell remoto y PowerShell 7.x. Consulte [Analizador de rendimiento para Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md).
 
 ### <a name="known-issues"></a>Problemas conocidos
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 02/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,18 +16,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
-ms.openlocfilehash: 91478d467fa0f7e3a0b5f6b67aeaf2fe5b34f497
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+- m365-initiative-defender-business
+ms.openlocfilehash: 143617fc3669b4a531bafe7fbbb9f2919a9ab295
+ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244564"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62520516"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -40,14 +40,14 @@ En Microsoft Defender para empresas (versión preliminar), puedes administrar di
 
 >
 > **¿Tiene un minuto?**
-> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
 >
 
 ## <a name="view-the-list-of-onboarded-devices"></a>Ver la lista de dispositivos incorporados
 
 :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Captura de pantalla del inventario de dispositivos":::
 
-1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. En el panel de navegación, elija **Inventario de dispositivos**.
 
@@ -59,17 +59,17 @@ En Microsoft Defender para empresas (versión preliminar), puedes administrar di
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Captura de pantalla de un dispositivo seleccionado con detalles y acciones disponibles":::
 
-1. En el portal Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ), en el panel de navegación, elija Inventario de **dispositivos**. 
+1. En el Microsoft 365 Defender web ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, elija **Inventario de dispositivos**. 
 
 2. Selecciona un dispositivo para abrir el panel desplegable y revisa la información que se muestra.
 
 3. Seleccione los puntos suspensivos (**...**) para abrir el menú de acciones. 
 
-4. Seleccione una acción, como Ejecutar examen **antivirus** o **Iniciar investigación automatizada.** 
+4. Seleccione una acción, como Ejecutar examen **antivirus** o **Iniciar investigación automatizada**. 
 
 ## <a name="onboard-a-device"></a>Incorporación de un dispositivo
 
-Consulta [Incorporación de dispositivos a Microsoft Defender para empresas (versión preliminar).](mdb-onboard-devices.md)
+Consulta [Incorporar dispositivos a Microsoft Defender para empresas (versión preliminar).](mdb-onboard-devices.md)
 
 ## <a name="offboard-a-device"></a>Fuera de un dispositivo
 
