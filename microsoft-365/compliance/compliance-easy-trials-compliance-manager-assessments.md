@@ -2,8 +2,8 @@
 title: Acerca de la prueba de evaluación premium del Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Acerca de las pruebas de evaluación premium del Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: ec7dec74e8f90b13bd68eb8a6e13917d9fe18b0d
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: b7eaa963a3978a38db8511f30aa663670e7168c7
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063302"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465176"
 ---
 # <a name="about-the-free-trial-for-microsoft-compliance-manager-premium-assessments"></a>Acerca de la prueba gratuita para las evaluaciones premium del Administrador de cumplimiento de Microsoft
 
 El Administrador de cumplimiento le ayuda a administrar los requisitos de cumplimiento de su organización y a evaluar y mejorar la puntuación de cumplimiento. Las evaluaciones que cree se basan en plantillas que se corresponden con normativas gubernamentales y estándares del sector en todo el mundo.  
 
-El contrato de licencia para usar el Administrador de cumplimiento puede incluir una o varias plantillas integradas. También puede elegir entre una amplia biblioteca de plantillas de evaluación premium para que pueda crear evaluaciones específicas para las necesidades de su organización. Para probar estas plantillas antes de comprar licencias, regístrese para obtener la prueba de evaluación premium gratuita.
+El contrato de licencia para usar el Administrador de cumplimiento puede incluir una o varias plantillas integradas para crear evaluaciones. También hay disponible una amplia biblioteca de plantillas de evaluación premium para crear evaluaciones específicas de las necesidades de su organización. Para probar estas plantillas antes de comprar licencias, regístrese para obtener la prueba gratuita de evaluaciones premium del Administrador de cumplimiento.
 
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
@@ -44,15 +44,15 @@ El acceso total a las características del Administrador de cumplimiento puede d
 
 ## <a name="template-licensing"></a>Licencias de plantilla
 
-Iniciar la prueba de una sola vez para evaluaciones premium le otorga el derecho de usar 25 plantillas premium de su elección de forma gratuita durante 90 días. Puede crear tantas evaluaciones como desee con estas 25 plantillas.
+Iniciar la prueba de una sola vez para evaluaciones premium le otorga el derecho de usar 25 plantillas premium de su elección de forma gratuita durante 90 días. Puede crear tantas evaluaciones como desee a partir de las 25 plantillas.
 
 Después de iniciar la prueba, vaya a la pestaña **Evaluaciones** en el Administrador de cumplimiento y vea el contador **Plantillas activadas o con licencia** para ver cuántas plantillas están disponibles y en uso. Este contador mostrará las 25 plantillas con licencia. A medida que cree evaluaciones con estas plantillas, se actualizará el número activado. El uso de plantillas se cuenta en función de la certificación subyacente, lo que significa que varias evaluaciones basadas en la misma plantilla, o en versiones diferentes de la misma plantilla que admiten distintos productos, contarán como un uso de la plantilla.
 
-Para obtener más información sobre cómo usar y administrar plantillas del Administrador de cumplimiento, consulte [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
+Para obtener más información sobre cómo usar y administrar plantillas del Administrador de cumplimiento, vea [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
 
 ## <a name="permissions"></a>Permisos
 
-Cualquier persona de su organización con acceso al Administrador de cumplimiento puede registrarse para obtener la versión de prueba de la plantilla de evaluación.
+Cualquier usuario de su organización con permisos para acceder al Administrador de cumplimiento puede registrarse para obtener la evaluación premium. Obtenga más información sobre los [permisos y roles necesarios para el Administrador de cumplimiento](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## <a name="during-your-trial"></a>Durante la prueba
 
@@ -60,7 +60,7 @@ A lo largo de la prueba, puede revisar la sección **Resumen de prueba** de la p
 
 ## <a name="after-the-trial"></a>Después de la prueba
 
-Una vez finalizada la prueba, las plantillas de evaluación seleccionadas dejarán de recibir actualizaciones automáticas y pueden quedar obsoletas con cualquier cambio normativo. Se recomienda eliminar las evaluaciones basadas en plantillas que no pretende comprar.
+Una vez finalizada la versión de prueba, las plantillas que usó no recibirán actualizaciones automáticas y pueden quedar obsoletas con cualquier cambio normativo. Se recomienda eliminar las evaluaciones creadas a partir de plantillas que no pretende comprar.
 
 ## <a name="learn-more-about-compliance"></a>Más información sobre el cumplimiento
 
