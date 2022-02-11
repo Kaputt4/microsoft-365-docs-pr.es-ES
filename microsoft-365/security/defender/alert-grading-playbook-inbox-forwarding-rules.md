@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9680c9c45441bc654103c11ea28c13f85859ee43
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: dee9c4a51175f9fbeac8b6d21f29490081258ba0
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355291"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524242"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Clasificación de alertas para reglas de reenvío de bandeja de entrada sospechosas
 
@@ -53,7 +53,7 @@ Los resultados del uso de este libro de juegos son:
 
 Configure las reglas de la bandeja de entrada para administrar automáticamente los mensajes de correo electrónico en función de criterios predefinidos. Por ejemplo, puede crear una regla de bandeja de entrada para mover todos los mensajes del administrador a otra carpeta o reenviar los mensajes que reciba a otra dirección de correo electrónico.
 
-### <a name="suspicious-inbox-forwarding-rules"></a>Reglas de reenvío de bandeja de entrada sospechosas
+### <a name="suspicious-inbox-forwarding-rules"></a>Reglas del reenvío sospechoso desde la bandeja de entrada
 
 Después de obtener acceso a los buzones de los usuarios, los atacantes suelen crear una regla de bandeja de entrada que les permite filtrar datos confidenciales a una dirección de correo electrónico externa y usarlos con fines malintencionados. 
 
@@ -130,6 +130,7 @@ let user_id = ""; // enter here the user id
 CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
+| where Application == @"Microsoft Exchange Online"
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```

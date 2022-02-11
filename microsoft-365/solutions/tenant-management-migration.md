@@ -1,8 +1,8 @@
 ---
 title: Paso 4. Migración de su Microsoft 365 para inquilinos empresariales
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Migre Windows dispositivos, Office aplicaciones cliente y Office servidores para sus Microsoft 365 inquilinos.
-ms.openlocfilehash: 86f244ba8d28c242b59296a4de8b63b4a07b50ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1892ae3da900f1c940866a2b2a3c70c1d6cb5db3
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176193"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524254"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 4. Migración de su Microsoft 365 para inquilinos empresariales
 
@@ -29,7 +29,7 @@ La mayoría de las organizaciones empresariales tienen un entorno heterogéneo q
 
 Para maximizar el valor empresarial de la Microsoft 365 de productos integrados para empresas, comience a planear e implementar una estrategia para migrar estas versiones:
 
-| De | To |
+| From | To |
 |:-------|:-----|
 | Windows 7 y Windows 8.1 | Windows 10 Enterprise |
 | Office de cliente instalados en los dispositivos del trabajador | Aplicaciones de Microsoft 365 para empresas |
@@ -38,9 +38,9 @@ Para maximizar el valor empresarial de la Microsoft 365 de productos integrados 
 
 ## <a name="migrating-to-windows-10"></a>Migrar a Windows 10
 
-Cada Microsoft 365 licencia de empresa incluye una licencia para Windows 10 Enterprise. Para migrar los dispositivos que se Windows 7 o Windows 8.1, puede realizar una actualización local. La compatibilidad finalizó Windows 7 de enero *de 2020.* 
+Cada Microsoft 365 licencia de empresa incluye una licencia para Windows 10 Enterprise. Para migrar los dispositivos que se Windows 7 o Windows 8.1, puede realizar una actualización local. La compatibilidad finalizó Windows 7 de *enero de 2020*. 
 
-Para obtener métodos adicionales de Windows 10 Enterprise más allá de una actualización local, [vea Windows 10 escenarios de implementación](/windows/deployment/windows-10-deployment-scenarios). También puede [planear la implementación de Windows 10](/windows/deployment/planning/) por su cuenta.
+Para obtener métodos adicionales de Windows 10 Enterprise más allá de una actualización local, [vea Windows 10 escenarios de implementación.](/windows/deployment/windows-10-deployment-scenarios) También puede [planear la implementación de Windows 10](/windows/deployment/planning/) por su cuenta.
 
 ## <a name="migrating-to-microsoft-365-apps-for-enterprise"></a>Migrar a Aplicaciones Microsoft 365 para empresas
 

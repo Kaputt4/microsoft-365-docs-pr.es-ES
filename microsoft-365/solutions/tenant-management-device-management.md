@@ -1,8 +1,8 @@
 ---
 title: Paso 5. Administración de dispositivos y aplicaciones para Microsoft 365 para inquilinos empresariales
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente la opción correcta para la administración de dispositivos y aplicaciones para Microsoft 365 inquilinos.
-ms.openlocfilehash: 03126b373efcd3badb37590548c77889cb98391f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 09fd96977fbde0f546049d24b1705d27b4c92080
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174164"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524170"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 5. Administración de dispositivos y aplicaciones para Microsoft 365 para inquilinos empresariales
 
@@ -52,7 +52,7 @@ Microsoft proporciona un conjunto de configuraciones para el acceso a identidade
 
 - Directivas de acceso condicional de Azure AD
 - Microsoft Intune de cumplimiento de dispositivos y protección de aplicaciones
-- Directivas de riesgo de usuario de Azure AD Identity Protection
+- Azure AD de riesgo de usuario de Identity Protection
 - Directivas adicionales de aplicaciones en la nube
 
 Este es un ejemplo de la aplicación de estas directivas y configuraciones para validar y restringir a los usuarios, sus dispositivos y su uso de aplicaciones de productividad locales y en la nube, como Microsoft Teams.

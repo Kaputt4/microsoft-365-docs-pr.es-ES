@@ -1,8 +1,8 @@
 ---
 title: Paso 1. Su Microsoft 365 para inquilinos empresariales
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente y administre una o varias Microsoft 365 inquilinos, con opciones para ubicaciones multige geográficas y en movimiento.
-ms.openlocfilehash: 149dd4274e43d085f2c454774c4499a12561b766
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 305d7683413d5682c0dddda418e87de0a0a682b7
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206438"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524122"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Paso 1. Su Microsoft 365 para inquilinos empresariales
 
-Una de las primeras decisiones del inquilino es cuántas deben tener. Cada Microsoft 365 inquilino es distinto, único y independiente del resto de Microsoft 365 inquilinos. Su inquilino de Azure AD correspondiente también es distinto, único y independiente del resto de Microsoft 365 inquilinos.
+Una de las primeras decisiones del inquilino es cuántas deben tener. Cada Microsoft 365 inquilino es distinto, único y independiente del resto de Microsoft 365 inquilinos. Su inquilino Azure AD es diferente, único y independiente del resto de Microsoft 365 inquilinos.
 
 ## <a name="single-tenant"></a>Inquilino único
-Tener un único inquilino simplifica muchos aspectos del uso de la organización de Microsoft 365. Un único inquilino significa un único inquilino de Azure AD con un único conjunto de cuentas, grupos y directivas. Los permisos y el uso compartido de recursos en toda la organización se pueden realizar a través de este proveedor de identidades central.
+Tener un único inquilino simplifica muchos aspectos del uso de la organización de Microsoft 365. Un único inquilino significa un único Azure AD inquilino con un único conjunto de cuentas, grupos y directivas. Los permisos y el uso compartido de recursos en toda la organización se pueden realizar a través de este proveedor de identidades central.
 
 Un único inquilino proporciona la experiencia de productividad y colaboración más enriquección de características y simplificada para los usuarios.
 
-Este es un ejemplo que muestra la ubicación predeterminada y el inquilino de Azure AD de un Microsoft 365 inquilino.
+Este es un ejemplo que muestra la ubicación predeterminada y Azure AD inquilino de un Microsoft 365 inquilino.
 
-![Un único Microsoft 365 inquilino con su inquilino de Azure AD.](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Un único Microsoft 365 con su Azure AD inquilino.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## <a name="multiple-tenants"></a>Varios inquilinos
 
@@ -47,9 +47,9 @@ Hay muchas razones por las que su organización podría tener varios inquilinos:
 - Separación clara de personal de marca para organizaciones conglomerados
 - Inquilinos de preproducción, prueba o espacio aislado
 
-Este es un ejemplo de una organización que tiene dos inquilinos (inquilino A y inquilino B) en la misma ubicación geográfica predeterminada del centro de datos. Cada inquilino como inquilino de Azure AD independiente.
+Este es un ejemplo de una organización que tiene dos inquilinos (inquilino A y inquilino B) en la misma ubicación geográfica predeterminada del centro de datos. Cada espacio empresarial como un espacio Azure AD inquilino independiente.
 
-![Varios Microsoft 365 inquilinos con sus propios inquilinos de Azure AD.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![Varios Microsoft 365 con sus propios Azure AD inquilinos.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
 Cuando tiene varios inquilinos, hay restricciones y consideraciones adicionales al administrarlos y proporcionar servicios a los usuarios.
 
@@ -57,7 +57,7 @@ Cuando tiene varios inquilinos, hay restricciones y consideraciones adicionales 
 
 Si desea que los usuarios colaboren de forma más eficaz en distintos inquilinos de Microsoft 365 de forma segura, las opciones de colaboración entre inquilinos incluyen usar una ubicación central para archivos y conversaciones, compartir calendarios, usar mensajería instantánea, llamadas de audio y vídeo para la comunicación y proteger el acceso a recursos y aplicaciones.
 
-Para obtener más información, [vea Microsoft 365 colaboración entre inquilinos.](../enterprise/microsoft-365-inter-tenant-collaboration.md)
+Para obtener más información, [vea Microsoft 365 colaboración entre inquilinos](../enterprise/microsoft-365-inter-tenant-collaboration.md).
 
 ### <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -75,21 +75,21 @@ Este es el inquilino de destino (inquilino A) después de la migración de buzon
 
 En esta ilustración, un único inquilino tiene dominios y ambos conjuntos de Exchange buzones de correo.
 
-Para obtener más información, vea [Migración de buzones entre inquilinos.](../enterprise/cross-tenant-mailbox-migration.md)
+Para obtener más información, vea [Migración de buzones entre inquilinos](../enterprise/cross-tenant-mailbox-migration.md).
 
 ### <a name="tenant-to-tenant-migrations"></a>Migraciones de espacio empresarial a espacio empresarial
 
 Existen varios enfoques arquitectónicos para fusiones, adquisiciones, desinstituras y otros escenarios que pueden llevar a migrar un inquilino de Microsoft 365 existente a un nuevo inquilino. 
 
-Para obtener instrucciones detalladas, [vea Microsoft 365 de inquilino a inquilino.](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)
+Para obtener instrucciones detalladas, [vea Microsoft 365 de inquilino a inquilino](../enterprise/microsoft-365-tenant-to-tenant-migrations.md).
 
 ## <a name="multi-geo-for-a-tenant"></a>Multi-Geo para un inquilino
 
 Con Microsoft 365 Multi-Geo, puede aprovisionar y almacenar datos en reposo en las otras ubicaciones geográficas del centro de datos que haya elegido para cumplir los requisitos de residencia de datos y, al mismo tiempo, desbloquear el lanzamiento global de experiencias de productividad modernas a sus trabajadores.
 
-En un entorno Multi-Geo, el inquilino Microsoft 365 consiste en una ubicación central o predeterminada donde se creó originalmente la suscripción Microsoft 365 y una o más ubicaciones satélite. En un inquilino multige geográfico, la información sobre ubicaciones geográficas, grupos e información de usuario se masterizó en un inquilino global de Azure AD. Dado que la información del inquilino se masterizó de forma centralizada y se sincroniza en cada ubicación geográfica, las experiencias de colaboración que implican a cualquier persona de su empresa se comparten en todas las ubicaciones.
+En un entorno Multi-Geo, el inquilino Microsoft 365 consiste en una ubicación central o predeterminada donde se creó originalmente la suscripción Microsoft 365 y una o más ubicaciones satélite. En un inquilino multige geográfico, la información acerca de las ubicaciones geográficas, los grupos y la información del usuario se masterizó en un espacio empresarial Azure AD global. Dado que la información del inquilino se masterizó de forma centralizada y se sincroniza en cada ubicación geográfica, las experiencias de colaboración que implican a cualquier persona de su empresa se comparten en todas las ubicaciones.
 
-Este es un ejemplo de una organización que tiene su ubicación predeterminada en Europa y una ubicación satélite en Norteamérica. Ambas ubicaciones comparten el mismo inquilino global de Azure AD para el único Microsoft 365 inquilino.
+Este es un ejemplo de una organización que tiene su ubicación predeterminada en Europa y una ubicación satélite en Norteamérica. Ambas ubicaciones comparten el mismo espacio Azure AD para el inquilino Microsoft 365 único.
 
 ![Ejemplo de un espacio empresarial multige Microsoft 365 geo.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
@@ -137,7 +137,7 @@ En esta ilustración, el inquilino tiene:
 - Ubicación predeterminada que corresponde a una ubicación geográfica Microsoft 365 centro de datos.
 - Un conjunto de productos y licencias.
 - El conjunto de aplicaciones de productividad en la nube, algunas de las cuales son específicas de los productos.
-- Un inquilino de Azure AD que contiene cuentas de administrador global y un nombre de dominio DNS inicial.
+- Un Azure AD que contiene cuentas de administrador global y un nombre de dominio DNS inicial.
 
 A medida que avancemos por los pasos adicionales de esta solución, crearemos esta figura.
 

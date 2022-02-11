@@ -2,9 +2,9 @@
 title: Guías del entorno de pruebas para soluciones y escenarios
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: Use Guías del laboratorio de pruebas para crear Microsoft 365 soluciones y escenarios en un entorno de desarrollo y pruebas.
-ms.openlocfilehash: 414630779d888e242cc14ccf4691e48b15cbe807
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: febcb9e3c1a870bfa85468b56f4b2a45774f3070
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208858"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524134"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guías del entorno de pruebas para soluciones y escenarios
 
@@ -36,4 +36,4 @@ Las TLG también le permiten crear entornos representativos para desarrollo y pr
 
 Pruebe [esta Guía del laboratorio de pruebas](team-security-isolation-dev-test.md) para configurar un equipo con aislamiento de seguridad.
 
-Para obtener guías adicionales para Microsoft 365 y configuración, consulte Microsoft 365 para guías de laboratorio [de pruebas empresariales.](../enterprise/m365-enterprise-test-lab-guides.md)
+Para obtener guías adicionales Microsoft 365 características y configuración, [consulte Microsoft 365 guías de laboratorio de pruebas empresariales](../enterprise/m365-enterprise-test-lab-guides.md).

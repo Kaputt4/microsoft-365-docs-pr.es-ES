@@ -374,10 +374,6 @@
           href: virus-detection-in-spo.md
         - name: ¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
           href: what-s-the-difference-between-junk-email-and-bulk-email.md
-        - name: Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
-          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-        - name: Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
-          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: Documentos de Microsoft 365 Defender
       items:
         - name: Microsoft 365 Defender

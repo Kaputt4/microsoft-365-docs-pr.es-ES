@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 102731beb6da535e91ad197379a08d4d0f7cddfe
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: e1bfb37ebf88ffd67a7fcfaddde46141583fb717
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355255"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524098"
 ---
 # <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>Clasificación de alertas para reglas de manipulación de bandeja de entrada sospechosas
 
@@ -143,6 +143,7 @@ let user_id = ""; // enter here the user id
 CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
+| where Application == @"Microsoft Exchange Online"
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```
@@ -192,9 +193,9 @@ CloudAppEvents
 3. Busque otras actividades malintencionadas realizadas por la cuenta de usuario afectada.
 4. Compruebe si hay otra actividad sospechosa en el inquilino que se originó desde la misma IP o desde el mismo ISP (si el ISP es poco común) para encontrar otras cuentas de usuario comprometidas.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre la clasificación de alertas](alert-grading-playbooks.md)
 - [Actividad de reenvío de correo electrónico sospechoso](alert-grading-playbook-email-forwarding.md)
-- [Reglas de reenvío de bandeja de entrada sospechosas](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Reglas del reenvío sospechoso desde la bandeja de entrada](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Investigar alertas](investigate-alerts.md)

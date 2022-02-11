@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: c04ce53ba29d693f79b45c7d81fe04f0801aa50a
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 9b37e353af74b7a01c0647f99b149f5fac0ae8a3
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520564"
+ms.locfileid: "62524182"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
@@ -53,7 +53,7 @@ En la ilustración:
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype). 
 -->
 
-Para obtener más información acerca de La confianza cero, consulte Centro de orientación [**de confianza cero de**](/security/zero-trust) Microsoft.
+Para obtener más información acerca de La confianza cero, consulte Centro de orientación [_**de confianza cero de**_](/security/zero-trust) Microsoft.
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>Implementación de cero confianza para Microsoft 365
 
@@ -78,7 +78,7 @@ El primer paso es crear la base de confianza cero mediante la configuración de 
 
 
 
-Ve a [**Identidad de confianza cero y protección de acceso a dispositivos**](office-365-security/microsoft-365-policies-configurations.md) para obtener instrucciones prescriptivas para lograrlo. En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos y identidades y un conjunto de directivas de acceso condicional de Azure Active Directory (Azure AD), Microsoft Intune y otras directivas para proteger el acceso a Microsoft 365  para servicios y aplicaciones de nube empresariales, otros servicios SaaS y aplicaciones locales publicadas con Azure AD proxy de aplicación.
+Ve a [**_Identidad de confianza cero y protección de acceso a dispositivos_**](office-365-security/microsoft-365-policies-configurations.md) para obtener instrucciones prescriptivas para lograrlo. En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos y identidades y un conjunto de directivas de acceso condicional de Azure Active Directory (Azure AD), Microsoft Intune y otras directivas para proteger el acceso a Microsoft 365  para servicios y aplicaciones de nube empresariales, otros servicios SaaS y aplicaciones locales publicadas con Azure AD proxy de aplicación.
 
 
 
@@ -100,7 +100,7 @@ A continuación, inscriba sus dispositivos en la administración y comience a pr
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Administrar puntos de conexión con Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
 
-Ve a [**Administrar dispositivos con Intune**](../solutions/manage-devices-with-intune-overview.md) para obtener instrucciones prescriptivas para lograrlo. 
+Ve a [**_Administrar dispositivos con Intune_**](../solutions/manage-devices-with-intune-overview.md) para obtener instrucciones prescriptivas para lograrlo. 
 
 
 |Incluye  |Requisitos previos  |No incluye  |
@@ -114,7 +114,7 @@ Con los dispositivos inscritos en la administración, ahora puedes implementar e
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Directivas de acceso y identidad de confianza cero con administración de dispositivos" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-Vuelva a [**Directivas comunes de identidad y acceso a**](office-365-security/identity-access-policies.md) dispositivos y agregue las directivas en el Enterprise dispositivo.  
+Vuelva a [**_Directivas comunes de identidad y acceso a_**](office-365-security/identity-access-policies.md) dispositivos y agregue las directivas en el Enterprise dispositivo.  
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Directivas de acceso y identidad de confianza cero: Enterprise nivel (recomendado)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
@@ -124,7 +124,7 @@ Microsoft 365 Defender es una solución de detección y respuesta extendida (XDR
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Agregar Microsoft 365 Defender a la arquitectura de confianza cero" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
-Vaya a [**Evaluate and pilot Microsoft 365 Defender**](defender/eval-overview.md) para obtener una guía metónica para pilotar e implementar Microsoft 365 Defender componentes. 
+Vaya a [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) para obtener una guía metónica para pilotar e implementar Microsoft 365 Defender componentes. 
 
 |Incluye  |Requisitos previos  |No incluye  |
 |---------|---------|---------|
@@ -146,6 +146,6 @@ Microsoft Information Protection proporciona un marco, un proceso y capacidades 
 
 ![Microsoft Information Protection (MIP)](../media/zero-trust/mip-solution-overview.png)
 
-Para obtener más información sobre cómo planear e implementar la protección de la información, vea [**Deploy a Microsoft Information Protection solution**](../compliance/information-protection-solution.md). 
+Para obtener más información sobre cómo planear e implementar la protección de la información, vea [**_Deploy a Microsoft Information Protection solution_**](../compliance/information-protection-solution.md). 
 
-Si va a implementar la protección de la información para las normativas de privacidad de datos, esta guía de soluciones proporciona un marco recomendado para todo el proceso: Implementar la protección de la información para las normativas de privacidad de [**datos con Microsoft 365**](../solutions/information-protection-deploy.md).
+Si va a implementar la protección de la información para las normativas de privacidad de datos, esta guía de soluciones proporciona un marco recomendado para todo el proceso: Implementar la protección de la información para las normativas de privacidad de [**_datos con Microsoft 365_**](../solutions/information-protection-deploy.md).

@@ -1,26 +1,32 @@
 ---
 title: Clasificación de alertas para actividad de reenvío de correo electrónico sospechosa
 description: Clasificación de alertas para la actividad de reenvío de correo electrónico sospechoso para revisar las alertas y realizar acciones recomendadas para corregir el ataque y proteger la red.
-keywords: 'incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365'
+keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-  - MOE150
+- MOE150
 ms.technology: m365d
+ms.openlocfilehash: fe4a5e97704cbf1d4851484397e7c4424c099d3c
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524194"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Clasificación de alertas para actividad de reenvío de correo electrónico sospechosa
 
@@ -238,7 +244,8 @@ CloudAppEvents
 Ejecute esta consulta para averiguar si hubo algún evento de inicio de sesión anómalo de este usuario. Por ejemplo: IP desconocidas, nuevas aplicaciones, países poco comunes, varios eventos LogonFailed.
 
 ```kusto
-let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder IdentityLogonEvents
+let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder 
+IdentityLogonEvents
 | where AccountUpn == sender
 ```
 
@@ -276,7 +283,7 @@ Una vez que determine que las actividades asociadas convierten esta alerta en Tr
 
 4. Compruebe si hay actividades adicionales originadas por cuentas afectadas, direcciones IP y remitentes sospechosos.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre la clasificación de alertas](alert-grading-playbooks.md)
 - [Reglas del reenvío sospechoso desde la bandeja de entrada](alert-grading-playbook-inbox-forwarding-rules.md)

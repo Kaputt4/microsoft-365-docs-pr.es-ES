@@ -1,8 +1,8 @@
 ---
 title: Paso 2. Redes óptimas para su Microsoft 365 para inquilinos empresariales
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimice el acceso de red a Microsoft 365 inquilinos.
-ms.openlocfilehash: 963ffb40bbcdcaa4607f594389f84e2cee00cbcc
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 2ee0f5cd784112909cbba465b94031ac2429963f
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327621"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524230"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 2. Redes óptimas para su Microsoft 365 para inquilinos empresariales
 
@@ -84,7 +84,7 @@ En esta ilustración, Microsoft 365 tráfico debe tomar una ruta indirecta a tra
 
 Con el túnel dividido, puede configurar el cliente VPN para excluir determinados tipos de tráfico de la conexión VPN a la red de la organización.
 
-Para optimizar el acceso a los recursos en la nube de Microsoft 365, configure los clientes VPN de túnel dividido para excluir el tráfico a los puntos de conexión de Microsoft 365 de la categoría **Optimizar** por la conexión VPN. Para obtener más información, [vea Office 365 de puntos de](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) conexión y las listas de puntos de conexión de categorías Optimizar para túnel dividido. [](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)
+Para optimizar el acceso a los recursos en la nube de Microsoft 365, configure los clientes VPN de túnel dividido para excluir el tráfico a los puntos de conexión de Microsoft 365 de la categoría **Optimizar** por la conexión VPN. Para obtener más información, vea [Office 365 de puntos de conexión y](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) las [listas de puntos](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) de conexión de categorías Optimizar para túnel dividido.
 
 Este es el flujo de tráfico resultante para el túnel dividido, en el que la mayoría del tráfico que se Microsoft 365 aplicaciones en la nube omiten la conexión VPN.
 
@@ -121,7 +121,7 @@ Para obtener más información, [vea Microsoft 365 Network Ideas](../enterprise/
 
 Una configuración basada en la nube Content Delivery Network (CDN) permite reducir los tiempos de carga, ahorrar ancho de banda y acelerar la capacidad de respuesta. Una CDN mejora el rendimiento al almacenar en caché activos estáticos, como archivos gráficos o de vídeo, más cerca de los exploradores que los solicitan, lo que ayuda a acelerar las descargas y reducir la latencia. Puede usar el Office 365 Content Delivery Network integrado (CDN), incluido con SharePoint en Microsoft 365 E3 y E5, para hospedar activos estáticos para proporcionar un mejor rendimiento para sus SharePoint páginas.
 
-La CDN de Office 365 se compone de varias redes CDN que permite hospedar archivos estáticos en varias ubicaciones u _orígenes_ y a realizar la entrega desde redes de alta velocidad globales. Según el tipo de contenido que desee hospedar en el  Office 365 CDN, puede agregar orígenes públicos,  orígenes privados o ambos.
+La CDN de Office 365 se compone de varias redes CDN que permite hospedar archivos estáticos en varias ubicaciones u _orígenes_ y a realizar la entrega desde redes de alta velocidad globales. Según el tipo de contenido que desee hospedar en el Office 365 CDN, puede agregar orígenes  públicos **, orígenes** privados o ambos.
 
 Cuando se implementa y configura, el Office 365 CDN carga activos de orígenes públicos y privados y los pone a disposición para un acceso rápido a los usuarios ubicados en Internet.
 
@@ -133,7 +133,7 @@ Para obtener más información, vea [Use the Office 365 CDN with SharePoint Onli
 
 Para que los clientes locales, los dispositivos perimetrales y los servicios de análisis de paquetes basados en la nube omitan el procesamiento del tráfico de Microsoft 365 de confianza, debe configurarlos con el conjunto de puntos de conexión (intervalos de direcciones IP y nombres DNS) correspondientes a los servicios Microsoft 365. Estos puntos de conexión se pueden configurar manualmente en firewalls y otros dispositivos de seguridad perimetral, archivos PAC para que los equipos cliente omitan servidores proxy o dispositivos SD-WAN en sucursales. Sin embargo, los puntos de conexión cambian con el tiempo, lo que requiere un mantenimiento manual continuo de las listas de puntos de conexión en estas ubicaciones.
 
-Para automatizar la lista y la administración de cambios para los puntos de conexión Microsoft 365 en los archivos PAC de cliente y dispositivos de red, use el servicio web basado en REST de dirección IP y url de [Office 365.](../enterprise/microsoft-365-ip-web-service.md) Este servicio le ayuda a identificar y diferenciar mejor Microsoft 365 de red, lo que facilita la evaluación, la configuración y la actualización con los cambios más recientes.
+Para automatizar la lista y la administración de cambios para los puntos de conexión Microsoft 365 en los archivos PAC de cliente y dispositivos de red, use el servicio web basado en REST de dirección IP y dirección [URL](../enterprise/microsoft-365-ip-web-service.md) de Office 365. Este servicio le ayuda a identificar y diferenciar mejor Microsoft 365 de red, lo que facilita la evaluación, la configuración y la actualización con los cambios más recientes.
 
 Puede usar PowerShell, Python u otros idiomas para determinar los cambios en los puntos de conexión con el tiempo y configurar los archivos PAC y los dispositivos de red perimetral.
 

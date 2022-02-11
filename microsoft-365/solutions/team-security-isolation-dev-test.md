@@ -1,10 +1,10 @@
 ---
 title: Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
-author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkCOMPLIANCE
 description: Configure la infraestructura y seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: b7c96cac2820f5ace71f18287e1d4b3e74e4444f
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 602bec66eec26551ae6d98bafdb99466747d8fa9
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786403"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524086"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
 

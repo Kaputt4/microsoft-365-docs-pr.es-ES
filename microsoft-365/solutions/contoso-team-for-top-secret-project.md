@@ -2,9 +2,9 @@
 title: Equipo aislado para un proyecto secreto de Contoso Corporation
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: dansimp
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: cómo Contoso usó un equipo con aislamiento de seguridad para un proyecto secreto para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: c789e74bc54183f16f7de7801ecc77b76f4913f6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5b6bc72a6476301cf3239aeb7f68486f15ebbac8
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191282"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62523930"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto secreto de Contoso Corporation
 
@@ -36,15 +36,15 @@ Debido a su naturaleza confidencial, el acceso a estos archivos era:
 - Restringido a Project miembros del equipo 2X y altos directivos.
 - Cifrados y protegidos con permisos para permitir el acceso solo Project miembros del equipo 2X y altos directivos, incluso si los archivos se distribuyeron fuera de sus carpetas protegidas.
 
-El personal de TI de Contoso usó un [equipo con](secure-teams-security-isolation.md) aislamiento de seguridad Project 2X y estos pasos.
+El personal de TI de Contoso usó un [equipo con aislamiento de](secure-teams-security-isolation.md) seguridad para Project 2X y estos pasos.
 
 ## <a name="step-1-created-a-private-team"></a>Paso 1: Crear un equipo privado
 
-En primer lugar, para proteger el acceso al sitio SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las directivas SharePoint [de acceso](../security/office-365-security/sharepoint-file-access-policies.md).
+En primer lugar, para proteger el acceso al sitio SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las directivas SharePoint [de acceso.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 A continuación, un administrador de TI de Contoso creó un nuevo equipo privado denominado Project 2X y agregó las cuentas de usuario de Project personal 2X como miembros. También configuraron el equipo para que solo Project propietarios de equipos 2X puedan crear canales privados.
 
-Para obtener los detalles de configuración, vea [Create a private team](secure-teams-security-isolation.md#create-a-private-team).
+Para obtener los detalles de configuración, consulte [Create a private team](secure-teams-security-isolation.md#create-a-private-team).
 
 ## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>Paso 2: Crear una etiqueta de confidencialidad para el equipo Project 2X
 
@@ -55,20 +55,20 @@ Los administradores de Contoso crearon una nueva etiqueta de **confidencialidad 
 - Permisos de visor permitidos para el grupo de liderazgo sénior.
 - Acceso bloqueado a dispositivos no administrados.
 
-Los archivos de **la sección** Documentos del Project sitio SharePoint 2X estaban protegidos por:
+Los archivos de la **sección** Documentos del Project sitio SharePoint 2X estaban protegidos por:
 
 - Permisos de sitio, que solo permiten permisos completos a los miembros del grupo Project 2X Microsoft 365 y permisos de lectura para el grupo de liderazgo sénior.
 - La Project de confidencialidad 2X, con cifrado y permisos que viajan con el archivo si se mueve o copia del sitio.
 
-Para obtener los detalles de configuración, vea [Create a sensitivity label](secure-teams-security-isolation.md#create-a-sensitivity-label).
+Para obtener más información sobre la configuración, consulte [Crear una etiqueta de confidencialidad](secure-teams-security-isolation.md#create-a-sensitivity-label).
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Paso 3: Configurar el sitio SharePoint subyacente
 
-En primer lugar, para proteger el acceso al sitio SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las directivas SharePoint [de acceso](../security/office-365-security/sharepoint-file-access-policies.md).
+En primer lugar, para proteger el acceso al sitio SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las directivas SharePoint [de acceso.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 A continuación, configuraron opciones de permisos adicionales para el sitio:
 
-- Para evitar Project miembros del grupo 2X compartan el acceso al sitio. Para obtener los detalles de configuración, [vea SharePoint configuración de un equipo con aislamiento de seguridad](secure-teams-security-isolation.md#sharepoint-settings).
+- Para evitar Project miembros del grupo 2X compartan el acceso al sitio. Para obtener más información sobre la [configuración, consulte SharePoint configuración de un equipo con aislamiento de seguridad](secure-teams-security-isolation.md#sharepoint-settings).
 - Para permisos de lectura para el grupo de liderazgo sénior.
 
 A continuación, configuraron opciones de permisos adicionales para el sitio para evitar que Project miembros del grupo 2X compartan el acceso al sitio. 

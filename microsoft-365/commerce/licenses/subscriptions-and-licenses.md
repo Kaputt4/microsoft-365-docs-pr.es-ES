@@ -22,16 +22,16 @@ ms.custom:
 search.appverid: MET150
 description: Las aplicaciones y servicios que reciba dependen del producto Microsoft 365 que haya comprado, como Aplicaciones Microsoft 365 para negocios.
 ms.date: 07/01/2020
-ms.openlocfilehash: 29a56ecfc1cb2f3cbe3afebec552fff29905675b
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: e380ac61033435a86118f7178da9e014d13ad436
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756569"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524050"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprender las suscripciones y licencias en Microsoft 365 para empresas
 
-Cuando compras una suscripción a Microsoft 365 para empresas, te registras para un conjunto de aplicaciones y servicios que pagas mensualmente o anualmente. Las aplicaciones y servicios que recibe como parte de la suscripción dependen del producto que haya comprado, como Aplicaciones Microsoft 365 para negocios o Microsoft 365 Empresa Estándar. Puede ver lo que incluye cada producto en la [Microsoft 365 para pequeñas y medianas empresas.](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)
+Cuando compras una suscripción a Microsoft 365 para empresas, te registras para un conjunto de aplicaciones y servicios que pagas mensualmente o anualmente. Las aplicaciones y servicios que recibe como parte de la suscripción dependen del producto que haya comprado, como Aplicaciones Microsoft 365 para negocios o Microsoft 365 Empresa Estándar. Puede ver lo que incluye cada producto en la [Microsoft 365 para pequeñas y medianas empresas](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
 
 Cuando compra una suscripción, debe especificar el número de licencias que necesita, en función de cuántos usuarios tiene en su organización. Después de comprar una suscripción, crea cuentas para los usuarios de la organización y, a continuación, asigna una licencia a cada persona. A medida que cambien las necesidades de la organización, puede comprar más licencias para dar cabida a personas nuevas o reasignar licencias a otros usuarios cuando alguien abandone la organización.
 
@@ -43,7 +43,7 @@ Si la suscripción incluye cualquiera de los siguientes productos, cada persona 
 
 :::row:::
    :::column span="":::
-        - Aplicaciones Microsoft 365 para negocios - Aplicaciones Microsoft 365 para empresas - Microsoft 365 Empresa Estándar - Microsoft 365 Empresa Premium - Microsoft 365 A3 - Microsoft 365 A5
+        - Aplicaciones Microsoft 365 para negocios - Aplicaciones Microsoft 365 para empresas - Microsoft 365 Empresa Estándar - Microsoft 365 Empresa Premium       - Microsoft 365 A3 - Microsoft 365 A5
    :::column-end:::
    :::column span="":::
         - Microsoft 365 E3 - Microsoft 365 E5 - Office 365 A1 Plus - Office 365 A3 - Office 365 A5 - Office 365 E3 - Office 365 E5
@@ -56,10 +56,10 @@ En la tabla siguiente, se muestra una lista con lo que sucede automáticamente a
   
 |**Si la suscripción tiene este servicio**|**Esto sucede automáticamente**|
 |:-----|:-----|
-|Exchange Online  <br/> |Se crea un buzón para el usuario. <br/> Para obtener información sobre el SLA para que esta tarea se complete, vea ["Setting up..." mensajes de la Centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
+|Exchange Online  <br/> |Se crea un buzón para el usuario. <br/> Para obtener información sobre el SLA para que esta tarea se complete, vea ["Setting up..." mensajes en el Centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.  <br/> |
 |Skype Empresarial Online  <br/> |La persona tiene acceso a las características asociadas con la licencia.  <br/> |
-|Microsoft 365 Apps para empresas  <br/> |La persona puede descargar Office aplicaciones en hasta cinco Mac o PC, cinco tabletas y cinco smartphones.  <br/> |
+|Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para negocios  <br/> |La persona puede descargar Office aplicaciones en hasta cinco Mac o PC, cinco tabletas y cinco smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Información sobre las licencias para los buzones que no son de usuario
 

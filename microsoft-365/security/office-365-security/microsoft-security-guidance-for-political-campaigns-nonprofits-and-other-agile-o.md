@@ -22,12 +22,12 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Resumen: instrucciones de planeamiento e implementación para organizaciones rápidas con un mayor perfil de amenaza.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290da11f8fc93d92e1d86a8067142e99d5e25c28
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 03816f13bb22eeab29b8799f1e767b86a0347115
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210466"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524146"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles
 
@@ -52,20 +52,6 @@ Estas instrucciones explican cómo implementar un entorno de nube seguro. Las in
 |**Guía de seguridad de Microsoft para campañas políticas** <br> [![Miniatura de conjunto de minipósteres.](../../media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx)|En esta guía, se usa una organización de campaña política como ejemplo. Use esta guía como punto inicial para cualquier entorno.|
 |**Guía de seguridad de Microsoft para ONG** <br> [![Miniatura de archivo descargable.](../../media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx)|Estas Instrucciones se han modificado ligeramente para las organizaciones sin ánimo de lucro. Por ejemplo, hacen referencia a los planes sin ánimo de lucro de Office 365. Las instrucciones técnicas son las mismas que las de campaña política.|
 |
-
-## <a name="test-lab-guides"></a>Guías del entorno de pruebas
-
-Para crear un entorno de desarrollo y pruebas para esta solución, siga estas guías del entorno de pruebas:
-
-- [Configurar grupos y usuarios en un entorno de desarrollo y pruebas de campaña política](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
-
-  Cree suscripciones de prueba para Office 365 y EMS y, después, cree grupos y usuarios para una campaña política de un representante.
-
-- [Crear sitios de grupo en un entorno de desarrollo y pruebas de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md)
-
-  Cree cuatro sitios de grupo de SharePoint Online con niveles de seguridad “Interno”, “Privado”, “Confidencial” y “Altamente confidencial”.
-
-Para obtener características de seguridad adicionales como demostración o prueba de concepto, vea [Guías del entorno de pruebas de Office 365](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md).
 
 ## <a name="see-also"></a>Vea también
 

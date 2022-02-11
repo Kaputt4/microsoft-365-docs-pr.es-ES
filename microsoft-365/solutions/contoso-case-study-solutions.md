@@ -1,10 +1,10 @@
 ---
 title: Soluciones de Microsoft 365 para Contoso Corporation
-author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: dansimp
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia, aunque representativa, ha implementado soluciones de Microsoft 365.
-ms.openlocfilehash: fc1ecec2cf543d9559516da5674764e1c5d1ed8c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5154dfb0aead04eb5a580dfc6bb9a60d96a517fd
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203716"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524158"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluciones de Microsoft 365 para Contoso Corporation
 

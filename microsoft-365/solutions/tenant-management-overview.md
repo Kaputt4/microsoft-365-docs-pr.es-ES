@@ -1,8 +1,8 @@
 ---
 title: Administración de inquilinos para Microsoft 365 para empresas
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Información general sobre la planeación, la implementación y el funcionamiento continuo de los Microsoft 365 inquilinos.
-ms.openlocfilehash: 915f71e6a8ab1f6f346940fccc0e15c5f8ce8d65
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a9545800c3f5f08b8094290c4173b4368caff4d
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176168"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524218"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Administración de inquilinos para Microsoft 365 para empresas
 
@@ -43,17 +43,17 @@ Pero primero, tomemos un momento para comprender lo que es un inquilino y cómo 
 
 Un inquilino Microsoft 365 es una instancia dedicada de los servicios de Microsoft 365 y los datos de la organización almacenados en una ubicación predeterminada específica, como Europa o Norteamérica. Esta ubicación se especifica al crear el espacio empresarial para la organización. Cada Microsoft 365 inquilino es distinto, único y independiente del resto de Microsoft 365 inquilinos. Se crea un inquilino Microsoft 365 al comprar uno o varios productos de Microsoft, como Microsoft 365 E3 o E5, y un conjunto de licencias para cada uno.
 
-El Microsoft 365 también incluye un inquilino de Azure Active Directory (Azure AD), que es una instancia dedicada de Azure AD para cuentas de usuario, grupos y otros objetos. Cada inquilino de Azure AD es distinto, único y independiente del resto de inquilinos de Azure AD. Aunque su organización puede tener varios inquilinos de Azure AD que puede configurar con suscripciones de Azure, los inquilinos de Microsoft 365 solo pueden usar un único inquilino de Azure AD, el que se creó al crear el inquilino.
+El inquilino Microsoft 365 también incluye un inquilino Azure Active Directory (Azure AD), que es una instancia dedicada de Azure AD cuentas de usuario, grupos y otros objetos. Cada Azure AD es distinto, único y independiente del resto de Azure AD inquilinos. Aunque su organización puede tener varios inquilinos de Azure AD que puede configurar con suscripciones de Azure, los inquilinos de Microsoft 365 solo pueden usar un único inquilino de Azure AD, el que se creó al crear el espacio empresarial.
 
 A continuación le mostramos un ejemplo:
 
-![Un ejemplo Microsoft 365 inquilino con su inquilino de Azure AD.](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Un ejemplo Microsoft 365 inquilino con su Azure AD inquilino.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 *La administración de* inquilinos es la planeación, la implementación y el funcionamiento continuo de los Microsoft 365 inquilinos.
 
 ## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>Atributos de un inquilino bien diseñado y operativo
 
-Más allá del nombre y la ubicación correctos para el inquilino, hay elementos adicionales para planear, implementar y administrar para garantizar que las experiencias de usuario con aplicaciones de productividad en la nube como Microsoft Teams y Exchange Online sean eficaces, seguras y &mdash; &mdash; eficaces.
+Más allá del nombre y la ubicación correctos para el inquilino, hay elementos adicionales para planear,&mdash; implementar y administrar para garantizar que las experiencias de usuario con aplicaciones de productividad en la nube como Microsoft Teams y Exchange Online&mdash; sean eficaces, seguras y eficaces.
 
 Estos son los elementos:
 
@@ -65,7 +65,7 @@ Estos son los elementos:
   - Para las redes empresariales, ha optimizado el tráfico de red a la red de Microsoft para los trabajadores en el sitio.
   - Ha optimizado el tráfico de red para los trabajadores remotos que usan un cliente VPN.
 - Has sincronizado tus cuentas, grupos y otros objetos de Servicios de dominio de Active Directory (AD DS).
-  - Las cuentas de inquilino de Azure AD se asignan a Exchange Online buzones de correo con los dominios DNS correctos para las direcciones de correo electrónico.
+  - Las Azure AD de inquilino se asignan a Exchange Online buzones de correo con los dominios DNS correctos para las direcciones de correo electrónico.
   - A las cuentas de usuario se les han asignado las licencias correctas de los productos comprados correctos (como Microsoft 365 E3 o E5).
 - Ha configurado una administración segura de identidades y acceso.
   - Necesita el inicio de sesión seguro del usuario con autenticación sin contraseña o multifactor (MFA).
@@ -84,7 +84,7 @@ En esta ilustración, el Microsoft 365 incluye:
 - Productos y licencias para Microsoft 365 E3 y E5.
 - Microsoft 365 aplicaciones de productividad.
 - Intune con dispositivos inscritos y directivas de dispositivos y aplicaciones.
-- Un inquilino de Azure AD que tiene una cuenta de usuario sincronizada (no se muestran grupos ni otros objetos de directorio), dominios y directivas de acceso condicional.
+- Un Azure AD que tiene una cuenta de usuario sincronizada (no se muestran grupos ni otros objetos de directorio), dominios y directivas de acceso condicional.
 
 ## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>Capacidades de inquilino para Microsoft 365 para empresas
 
@@ -112,7 +112,7 @@ En las siguientes secciones y tabla se indican las funciones clave y las licenci
 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
-|Sincronizar los Servicios de dominio de Active Directory locales (AD DS) con el inquilino de Azure AD|Aproveche el proveedor de identidades local para cuentas de usuario, grupos y otros objetos.|Microsoft 365 E3 o E5|
+|Sincronizar los Servicios de dominio de Active Directory (AD DS) locales con el inquilino Azure AD local|Aproveche el proveedor de identidades local para cuentas de usuario, grupos y otros objetos.|Microsoft 365 E3 o E5|
 |MFA aplicada en los valores predeterminados de seguridad|Protege frente a ataques a identidades y dispositivos, pues obliga a usar una segunda forma de autenticación para iniciar sesión. Los valores predeterminados de seguridad requieren MFA para todas las cuentas de usuario.|Microsoft 365 E3 o E5|
 |MFA aplicada con acceso condicional|Requerir MFA en función de los atributos del inicio de sesión con directivas de acceso condicional.|Microsoft 365 E3 o E5|
 |MFA aplicada con Acceso condicional basado en los riesgos|Requerir la MFA según el riesgo de inicio de sesión del usuario con Microsoft Defender for Identity.|Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2|
@@ -128,7 +128,7 @@ En las siguientes secciones y tabla se indican las funciones clave y las licenci
 |Migrar servidores y datos locales a Microsoft 365|Migre Exchange buzones de correo, SharePoint web y Skype Empresarial Online a Microsoft 365 servicios en la nube.|Microsoft 365 E3 o E5|
 ||||
 
-### <a name="device-and-app-management"></a>Datos de administración de dispositivos y aplicaciones
+### <a name="device-and-app-management"></a>Administración de dispositivos y aplicaciones
 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
@@ -150,4 +150,4 @@ Siga estos pasos para configurar y administrar sus Microsoft 365 inquilinos.
 
 Cada paso describe las opciones de implementación, resume los resultados y las tareas de mantenimiento en curso.
 
-Para comprender cómo una organización multinacionales ficticia pero representativa implementó los elementos de su Microsoft 365 inquilino, vea el [caso práctico de Contoso](../enterprise/contoso-case-study.md).
+Para comprender cómo una organización multinacionales ficticia pero representativa implementó los elementos de su Microsoft 365 inquilino, consulte el [caso práctico de Contoso](../enterprise/contoso-case-study.md).
