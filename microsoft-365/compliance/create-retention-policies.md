@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 3732e254d5b9dad450fd16338acf7a28e07bd8d1
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 115dcce1e99583ab0c3345da683be0b826b24ff7
+ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321020"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62524074"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -73,7 +73,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 ### <a name="retention-policy-for-teams-locations"></a>Directiva de retención para ubicaciones de Teams
 
-1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención**.
+1. Desde el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Información de gobernanza** > **Directivas de retención**.
 
 2. Seleccione **Nueva directiva de retención** para iniciar la configuración de **Crear directiva de retención** y asigne un nombre a la nueva directiva de retención.
 
@@ -131,7 +131,7 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
-1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención**.
+1. Desde el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Información de gobernanza** > **Directivas de retención**.
 
 2. Seleccione **Nueva directiva de retención** para crear una nueva directiva de retención.
 
@@ -184,7 +184,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 - Grupos de Microsoft 365
 - Skype Empresarial
 
-1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención**.
+1. Desde el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Información de gobernanza** > **Directivas de retención**.
 
 2. Seleccione **Nueva directiva de retención** para iniciar la configuración de **Crear directiva de retención** y asigne un nombre a la nueva directiva de retención.
 
